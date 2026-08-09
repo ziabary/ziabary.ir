@@ -16,34 +16,29 @@
     : $page.url.pathname.startsWith('/es')
       ? 'es'
       : 'fa';
+  $: isPersianHome = locale === 'fa' && $page.url.pathname === '/';
 
   const copies = {
     fa: {
-      home: 'صفحه اصلی', thought: 'اندیشه', writings: 'نوشته‌ها', guides: 'راهنماهای فنی',
-      media: 'رسانه', slides: 'اسلایدها', gallery: 'گالری', resume: 'رزومه',
+      home: 'صفحه اصلی', thought: 'اندیشه', writings: 'نوشته‌ها', guides: 'فنی‌جات',
+      media: 'بازتاب‌ها', slides: 'اسلایدها', resume: 'رزومه',
       admin: 'مدیریت محتوا',
       search: 'جستجو', placeholder: 'جستجو در نوشته‌ها، راهنماها و اسلایدها…',
-      noResult: 'نتیجه‌ای پیدا نشد.', explore: 'مرور سایت', follow: 'دنبال کردن',
-      footer: 'این سایت، فقط معرفی من نیست؛ آرشیوی از چیزهایی است که ساخته‌ام، نوشته‌ام و آموزش داده‌ام.',
-      note: 'محتوا در حال تکمیل و بازبینی است.', copyright: '© ۱۴۰۵ مهران ضیابری'
+      noResult: 'نتیجه‌ای پیدا نشد.', copyright: '© ۱۴۰۵ مهران ضیابری'
     },
     en: {
       home: 'Home', thought: 'About', writings: 'Writing', guides: 'Technical notes',
-      media: 'Media', slides: 'Slides', gallery: 'Gallery', resume: 'Résumé',
+      media: 'Media', slides: 'Slides', resume: 'Résumé',
       admin: 'Content editor',
       search: 'Search', placeholder: 'Search writing, technical notes and slides…',
-      noResult: 'No results found.', explore: 'Explore', follow: 'Follow',
-      footer: 'Not just a profile: an archive of what I have built, written and taught.',
-      note: 'Selected English content is in progress.', copyright: '© 2026 Mehran Ziabary'
+      noResult: 'No results found.', copyright: '© 2026 Mehran Ziabary'
     },
     es: {
       home: 'Inicio', thought: 'Acerca de', writings: 'Artículos', guides: 'Notas técnicas',
-      media: 'Medios', slides: 'Diapositivas', gallery: 'Galería', resume: 'Currículum',
+      media: 'Medios', slides: 'Diapositivas', resume: 'Currículum',
       admin: 'Editor de contenido',
       search: 'Buscar', placeholder: 'Buscar artículos, notas y diapositivas…',
-      noResult: 'No se encontraron resultados.', explore: 'Explorar', follow: 'Seguir',
-      footer: 'No es solo un perfil: es un archivo de lo que he creado, escrito y enseñado.',
-      note: 'El contenido en español está en preparación.', copyright: '© 2026 Mehran Ziabary'
+      noResult: 'No se encontraron resultados.', copyright: '© 2026 Mehran Ziabary'
     }
   } as const;
 
@@ -89,18 +84,22 @@
 </script>
 
 <header class="site-header">
-  <div class="wrap nav-wrap">
-    <a href={locale === 'fa' ? '/' : `/${locale}/`} class="brand" aria-label={t.home}>
-      <b>{locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}</b><span>MEHRAN ZIABARY</span>
-    </a>
+  <div class="wrap nav-wrap" class:landing-nav={isPersianHome}>
+    {#if isPersianHome}
+      <span class="brand-spacer" aria-hidden="true"></span>
+    {:else}
+      <a href={locale === 'fa' ? '/' : `/${locale}/`} class="brand" aria-label={t.home}>
+        <b>{locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}</b>
+        {#if locale !== 'fa'}<span>MEHRAN ZIABARY</span>{/if}
+      </a>
+    {/if}
     <button class="menu-button" onclick={() => (menu = !menu)} aria-label="Menu">☰</button>
     <nav class:open={menu}>
       <a href={localHref('/thought/', 'about')}>{t.thought}</a>
       <a href={localHref('/articles/', 'writing')}>{t.writings}</a>
       <a href={localHref('/guides/', 'writing')}>{t.guides}</a>
-      <a href={localHref('/media/', 'media')}>{t.media}</a>
       <a href={localHref('/slides/', 'slides')}>{t.slides}</a>
-      <a href={localHref('/gallery/', 'gallery')}>{t.gallery}</a>
+      <a href={localHref('/media/', 'media')}>{t.media}</a>
       <a href={localHref('/resume/', 'resume')}>{t.resume}</a>
     </nav>
     <div class="nav-tools">
@@ -113,21 +112,29 @@
 
 <slot />
 
-<footer>
-  <div class="wrap footer-lead">
-    <div><p>{t.footer}</p><a href={localHref('/articles/', 'writing')}>{t.explore} ←</a></div>
-    <div class="social-row">
-      {#each socialLinks.slice(0, 3) as social}
-        <a href={social.url} target="_blank" rel="noreferrer"><small>{social.label}</small><b>{social.value}</b><span>↗</span></a>
+<footer class="site-footer">
+  <div class="wrap footer-main">
+    <div class="footer-identity">
+      <b>{locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}</b>
+      <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a>
+    </div>
+    <nav class="footer-nav" aria-label={locale === 'fa' ? 'پیوندهای پایین صفحه' : 'Footer navigation'}>
+      <a href={localHref('/thought/', 'about')}>{t.thought}</a>
+      <a href={localHref('/articles/', 'writing')}>{t.writings}</a>
+      <a href={localHref('/guides/', 'writing')}>{t.guides}</a>
+      <a href={localHref('/slides/', 'slides')}>{t.slides}</a>
+      <a href={localHref('/media/', 'media')}>{t.media}</a>
+      <a href={localHref('/resume/', 'resume')}>{t.resume}</a>
+    </nav>
+    <div class="footer-socials">
+      {#each socialLinks as social}
+        <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label} title={social.label}>
+          <i class={social.icon} aria-hidden="true"></i>
+        </a>
       {/each}
     </div>
   </div>
-  <div class="wrap footer-bottom">
-    <div><b>{t.explore}</b><a href={localHref('/articles/', 'writing')}>{t.writings}</a><a href={localHref('/slides/', 'slides')}>{t.slides}</a><a href={localHref('/gallery/', 'gallery')}>{t.gallery}</a><a href={localHref('/resume/', 'resume')}>{t.resume}</a></div>
-    <div><b>{t.follow}</b>{#each socialLinks as social}<a href={social.url} target="_blank" rel="noreferrer">{social.label} ↗</a>{/each}</div>
-    <div class="footer-sign"><a href={locale === 'fa' ? '/' : `/${locale}/`} class="brand light"><b>{locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}</b><span>MEHRAN ZIABARY</span></a><p>{t.note}</p></div>
-  </div>
-  <div class="wrap footnote"><span>{t.copyright}</span><span><a href="/admin/">{t.admin}</a> · FA · EN · ES</span></div>
+  <div class="wrap footer-meta"><span>{t.copyright}</span><span><a href="/">FA</a> · <a href="/en/">EN</a> · <a href="/es/">ES</a></span></div>
 </footer>
 
 {#if searchOpen}
