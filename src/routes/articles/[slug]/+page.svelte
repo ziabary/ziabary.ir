@@ -12,7 +12,7 @@
   <article>
     <header class="article-header wrap"><div class="article-meta"><span>{data.article.category}</span><span class="fa-num">{data.article.faDate}</span><span class="fa-num">{data.article.readTime}</span></div><h1>{data.article.title}</h1><p>{data.article.excerpt}</p><ArticleActions title={data.article.title} /></header>
     {#if data.article.cover}
-      <figure class="article-cover has-image"><img src={data.article.cover} alt={data.article.title} /></figure>
+      <figure class="article-cover has-image"><img src={data.article.cover} alt={data.article.title} />{#if data.article.coverCredit}<figcaption>{data.article.coverCredit}</figcaption>{/if}</figure>
     {:else}
       <div class="article-cover"><div><span>{data.article.category}</span><b>{data.article.slug.includes('secure') ? 'ZTAI' : 'AI / SYSTEMS'}</b></div></div>
     {/if}
