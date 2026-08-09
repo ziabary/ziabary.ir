@@ -22,6 +22,13 @@ The related frontmatter field is ordered and manual. Individual article URLs
 remain independent. The article page automatically reveals the first two
 related items and leaves the next one behind an explicit continue link.
 
+## Admin editor
+
+`/admin/` is a static, local-first authoring utility rather than a hosted CMS.
+It can receive clipboard images and drag-and-drop files, produce the expected
+frontmatter, and—after explicit directory permission—write content into the
+local repository. It does not commit or push and it does not contain secrets.
+
 ## Courses and slide decks
 
 The current prototype stores course metadata in src/lib/data.ts. When real

@@ -21,6 +21,7 @@
     fa: {
       home: 'صفحه اصلی', thought: 'اندیشه', writings: 'نوشته‌ها', guides: 'راهنماهای فنی',
       media: 'رسانه', slides: 'اسلایدها', gallery: 'گالری', resume: 'رزومه',
+      admin: 'مدیریت محتوا',
       search: 'جستجو', placeholder: 'جستجو در نوشته‌ها، راهنماها و اسلایدها…',
       noResult: 'نتیجه‌ای پیدا نشد.', explore: 'مرور سایت', follow: 'دنبال کردن',
       footer: 'این سایت، فقط معرفی من نیست؛ آرشیوی از چیزهایی است که ساخته‌ام، نوشته‌ام و آموزش داده‌ام.',
@@ -29,6 +30,7 @@
     en: {
       home: 'Home', thought: 'About', writings: 'Writing', guides: 'Technical notes',
       media: 'Media', slides: 'Slides', gallery: 'Gallery', resume: 'Résumé',
+      admin: 'Content editor',
       search: 'Search', placeholder: 'Search writing, technical notes and slides…',
       noResult: 'No results found.', explore: 'Explore', follow: 'Follow',
       footer: 'Not just a profile: an archive of what I have built, written and taught.',
@@ -37,6 +39,7 @@
     es: {
       home: 'Inicio', thought: 'Acerca de', writings: 'Artículos', guides: 'Notas técnicas',
       media: 'Medios', slides: 'Diapositivas', gallery: 'Galería', resume: 'Currículum',
+      admin: 'Editor de contenido',
       search: 'Buscar', placeholder: 'Buscar artículos, notas y diapositivas…',
       noResult: 'No se encontraron resultados.', explore: 'Explorar', follow: 'Seguir',
       footer: 'No es solo un perfil: es un archivo de lo que he creado, escrito y enseñado.',
@@ -124,7 +127,7 @@
     <div><b>{t.follow}</b>{#each socialLinks as social}<a href={social.url} target="_blank" rel="noreferrer">{social.label} ↗</a>{/each}</div>
     <div class="footer-sign"><a href={locale === 'fa' ? '/' : `/${locale}/`} class="brand light"><b>{locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}</b><span>MEHRAN ZIABARY</span></a><p>{t.note}</p></div>
   </div>
-  <div class="wrap footnote"><span>{t.copyright}</span><span>FA · EN · ES</span></div>
+  <div class="wrap footnote"><span>{t.copyright}</span><span><a href="/admin/">{t.admin}</a> · FA · EN · ES</span></div>
 </footer>
 
 {#if searchOpen}
