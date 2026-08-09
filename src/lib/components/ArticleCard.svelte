@@ -5,9 +5,12 @@
 </script>
 
 <article class:featured class="article-card">
-  <div class="card-art">
+  <div class:has-image={Boolean(article.cover)} class="card-art">
+    {#if article.cover}
+      <img src={article.cover} alt="" loading="lazy" />
+    {/if}
     <span>{article.category}</span>
-    <i>{article.slug.includes('ai') ? 'AI' : '⌁'}</i>
+    {#if !article.cover}<i>{article.slug.includes('ai') ? 'AI' : '⌁'}</i>{/if}
   </div>
   <div class="card-body">
     <p>{article.faDate} · {article.readTime}</p>

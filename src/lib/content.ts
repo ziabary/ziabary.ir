@@ -8,6 +8,7 @@ export type ArticleMeta = {
   excerpt: string;
   readTime: string;
   related: string[];
+  cover?: string;
   external?: string;
   draft?: boolean;
 };
