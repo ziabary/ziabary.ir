@@ -15,13 +15,7 @@
       detail: 'سامانه‌های پردازش زبان طبیعی و زیرساخت‌های پردازش سریع هوش مصنوعی'
     },
     {
-      organization: 'ترجمیار و ترنج',
-      role: 'هم‌بنیان‌گذار و مدیر اجرایی',
-      period: '۱۳۹۵ تاکنون',
-      detail: 'دستیار ترجمه و سکوی ترجمه مبتنی بر هوش مصنوعی؛ برگزیده معاونت علمی در حوزه هوش مصنوعی'
-    },
-    {
-      organization: 'نصر تهران',
+      organization: 'سازمان نظام صنفی استان تهران',
       role: 'رئیس کمیسیون هوش مصنوعی و علم‌داده',
       period: '۱۴۰۴ تاکنون',
       detail: 'رئیس کارگروه حکمرانی داده و زیرساخت‌های هوش مصنوعی از ۱۳۹۹ تاکنون'
@@ -30,8 +24,8 @@
 
   const experience = [
     {
-      organization: 'کمیسیون هوش مصنوعی و علم‌داده نصر تهران',
-      role: 'نایب‌رئیس و دبیر کمیسیون',
+      organization: 'سازمان نظام صنفی استان تهران',
+      role: 'نایب‌رئیس و دبیر کمیسیون هوش مصنوعی و علم‌داده',
       period: 'نایب‌رئیس ۱۴۰۳ تا ۱۴۰۴؛ دبیر ۱۳۹۷ تا ۱۴۰۳'
     },
     {
@@ -52,15 +46,15 @@
   ];
 
   const publications = [
-    'Introducing E4MT and LMBNC: Persian pre-processing utilities',
-    "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior",
-    'AUT Document Alignment Framework for BUCC Workshop Shared Task — ۲۰۱۵',
-    'Developing an open-domain English-Farsi translation system using AFEC — ۲۰۱۲',
-    'Semi-human instinctive artificial intelligence (SHI-AI) — ۲۰۰۶',
-    'A Novel Approach to Semi-Human Instinctive Artificial Intelligence — ۲۰۰۵',
-    "VBScript programmer's guide — ۲۰۰۲",
-    'Inter-Function Communication (IFC) — ۲۰۰۱',
-    'Design of a Cost Effective Supercomputer — ۲۰۰۱'
+    'Introducing E4MT and LMBNC: Persian pre-processing utilities, 2023',
+    "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior, 2015",
+    'AUT Document Alignment Framework for BUCC Workshop Shared Task — 2015',
+    'Developing an open-domain English-Farsi translation system using AFEC — 2012',
+    'Semi-human instinctive artificial intelligence (SHI-AI) — 2006',
+    'A Novel Approach to Semi-Human Instinctive Artificial Intelligence — 2005',
+    "VBScript programmer's guide — 2002",
+    'Inter-Function Communication (IFC) — 2001',
+    'Design of a Cost Effective Supercomputer — 2001'
   ];
 
   const awards = [
