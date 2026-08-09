@@ -183,16 +183,6 @@
     line-height: 1.95;
   }
 
-  .thought-opening::before {
-    content: '«';
-    position: absolute;
-    inset-inline-start: -44px;
-    top: 20px;
-    color: color-mix(in srgb, var(--teal) 35%, transparent);
-    font-size: 78px;
-    line-height: 1;
-  }
-
   .thought-axes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -299,10 +289,6 @@
     .thought-layout--manifesto {
       grid-template-columns: 180px minmax(0, 1fr);
       gap: 42px;
-    }
-
-    .thought-opening::before {
-      display: none;
     }
 
     .thought-chapter > p,

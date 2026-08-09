@@ -17,7 +17,7 @@
     {/if}
     <div class="prose">
       {#if Content}<svelte:component this={Content} />{/if}
-      {#if data.article.external}<a class="original-link" href={data.article.external} target="_blank" rel="noreferrer">مشاهده نسخه اصلی در ویرگول ↗</a>{/if}
+      {#if data.article.external}<a class="original-link" href={data.article.external} target="_blank" rel="noreferrer">مطالعه نسخه کامل در {data.article.source ?? 'ویرگول'} ↗</a>{/if}
     </div>
   </article>
   <RelatedStream related={data.article.related} />

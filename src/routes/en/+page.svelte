@@ -42,11 +42,11 @@
           >Why adopting AI may require redesigning the organisation—not
           decorating old processes.</span
         ></a
-      ><a href="/articles/architecture-is-governance/"
-        ><small>ARCHITECTURE</small><b>Architecture is not merely technical</b
+      ><a href="/articles/national-ai-platform/"
+        ><small>TECHNOLOGY POLICY</small><b>A launch cannot replace architecture</b
         ><span
-          >Infrastructure choices distribute control, risk and the future cost
-          of change.</span
+          >A critique of the national open-source AI platform and its policy
+          choices.</span
         ></a
       >
     </div>
