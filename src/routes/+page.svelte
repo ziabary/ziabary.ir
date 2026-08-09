@@ -15,7 +15,6 @@
     <div class="hero-copy">
       <p class="eyebrow">فناوری، حکمرانی و ساختن</p>
       <h1>مهران ضیابری</h1>
-      <p class="official-name">نام رسمی: سید محمد محمدزاده ضیابری</p>
       <p class="hero-lead">مدیر فناوری و پژوهشگر هوش مصنوعی؛ با تمرکز بر معماری سامانه‌ها، تصمیم‌گیری سازمانی و حکمرانی فناوری.</p>
       <div class="hero-roles">
         <div class="hero-role-card commission-role">
