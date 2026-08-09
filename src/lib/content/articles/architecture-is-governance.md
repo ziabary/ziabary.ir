@@ -11,7 +11,7 @@ related:
   - secure-rag-agent
   - investment-in-ai
   - national-ai-platform
-draft: false
+draft: true
 ---
 
 ## هر انتخاب، یک قفل آینده

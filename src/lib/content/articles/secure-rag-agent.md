@@ -11,7 +11,7 @@ related:
   - architecture-is-governance
   - ai-cosmetic-surgery-or-chemotherapy
   - third-revolution-in-warfare
-draft: false
+draft: true
 ---
 
 ## پیش از بازیابی
