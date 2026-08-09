@@ -5,19 +5,23 @@
   const featured = articles.slice(0, 3);
 </script>
 
-<svelte:head><title>مهران ضیابری</title></svelte:head>
+<svelte:head>
+  <title>مهران ضیابری | سید محمد محمدزاده ضیابری</title>
+  <meta name="description" content="سید محمد محمدزاده ضیابری، شناخته‌شده با نام مهران ضیابری؛ مدیر فناوری، کارآفرین و پژوهشگر هوش مصنوعی." />
+</svelte:head>
 
 <main>
   <section class="hero wrap">
     <div class="hero-copy">
       <p class="eyebrow">فناوری، حکمرانی و ساختن</p>
       <h1>مهران ضیابری</h1>
+      <p class="official-name">نام رسمی: سید محمد محمدزاده ضیابری</p>
       <p class="hero-lead">مدیر فناوری و پژوهشگر هوش مصنوعی؛ در نقطه‌ای که معماری فنی، تصمیم مدیریتی و اثر اجتماعی به هم می‌رسند.</p>
-      <div class="hero-role"><b>مدیرعامل ترجمان</b><span>رئیس کمیسیون هوش مصنوعی و داده نصر تهران</span><a href="/resume/">سایر مسئولیت‌ها و سوابق ←</a></div>
+      <div class="hero-role"><b>مدیرعامل ترجمان</b><span>رئیس کمیسیون هوش مصنوعی و علم‌داده نصر تهران</span><a href="/resume/">سایر مسئولیت‌ها و سوابق ←</a></div>
       <div class="actions"><a class="button primary" href="/articles/">خواندن نوشته‌ها</a><a class="button ghost" href="/resume/">رزومه و سوابق</a></div>
     </div>
     <figure class="portrait-card">
-      <img src="https://peivast.com/wp-content/uploads/DSC01627.jpg" alt="مهران ضیابری" />
+      <img src="/images/profile/mehran-ziabary-formal.png" alt="پرتره رسمی مهران ضیابری" />
       <figcaption><b>بیش از ۲۰ سال تجربه</b><span>از الکترونیک و رباتیک تا امنیت شبکه و هوش مصنوعی</span></figcaption>
     </figure>
   </section>

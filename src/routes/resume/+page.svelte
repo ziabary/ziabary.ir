@@ -1,3 +1,160 @@
-<script lang="ts">import PageHero from '$lib/components/PageHero.svelte';</script>
-<svelte:head><title>رزومه | مهران ضیابری</title></svelte:head>
-<main class="resume-page"><PageHero eyebrow="سوابق حرفه‌ای" title="رزومه" lead="نسخهٔ وبِ کوتاه و قابل مرور از مسئولیت‌ها، تجربه‌ها و حوزه‌های تخصصی؛ بدون تکرار صفحهٔ اندیشه."/><section class="wrap resume-intro"><div class="resume-photo"><img src="https://peivast.com/wp-content/uploads/%D8%B6%DB%8C%D8%A7%D8%A8%D8%B1%DB%8C-e1732539846612-1-e1742572947983.jpg" alt="مهران ضیابری"/></div><div><p class="eyebrow">خلاصه حرفه‌ای</p><h2>مدیر فناوری با پیشینه‌ای از سخت‌افزار تا هوش مصنوعی</h2><p>بیش از ۲۰ سال تجربه حرفه‌ای در الکترونیک دیجیتال، رباتیک، امنیت شبکه، معماری نرم‌افزار و هوش مصنوعی. تمرکز امروز من بر ساخت محصولات زبانی، حکمرانی سازمانی هوش مصنوعی و پیوند تصمیم فنی با مدل کسب‌وکار است.</p><button class="button ghost" disabled>دریافت رزومه PDF — پس از تکمیل محتوا</button></div></section><section class="wrap resume-sections"><section><p class="eyebrow">مسئولیت‌های فعلی</p><div class="resume-rows"><div><span>ترجمان</span><b>مدیرعامل</b><small>محصولات و زیرساخت‌های پردازش زبان فارسی</small></div><div><span>نصر تهران</span><b>رئیس کمیسیون هوش مصنوعی و داده</b><small>گفت‌وگوی صنفی، سیاست‌گذاری و توسعه زیست‌بوم</small></div><div><span>سرمایه‌گذاری فناوری</span><b>مدیر فنی و مشاور</b><small>ارزیابی محصول، معماری و ظرفیت اجرای تیم‌های هوش مصنوعی</small></div></div></section><section><p class="eyebrow">حوزه‌های تخصصی</p><div class="expertise-list"><span>هوش مصنوعی و مدل‌های زبانی</span><span>معماری سامانه‌های نرم‌افزاری</span><span>حکمرانی و امنیت هوش مصنوعی</span><span>الکترونیک دیجیتال و رباتیک</span><span>امنیت شبکه</span><span>ارزیابی فنی سرمایه‌گذاری</span></div></section><section><p class="eyebrow">مسیر تجربه</p><div class="resume-timeline"><div><small>آغاز مسیر</small><b>الکترونیک دیجیتال</b><p>طراحی مدار، ساخت سامانه‌های فیزیکی و تجربه عملی تولید.</p></div><div><small>گام بعد</small><b>رباتیک، شبکه و امنیت</b><p>حرکت از اجزای سخت‌افزاری به معماری سیستم‌های پیچیده.</p></div><div><small>امروز</small><b>هوش مصنوعی، محصول و حکمرانی</b><p>ساخت محصول و صورت‌بندی تصمیم‌های مدیریتی پیرامون AI.</p></div></div></section><section><p class="eyebrow">تحصیلات</p><div class="resume-rows"><div><span>دانشگاهی</span><b>کارشناسی ارشد هوش مصنوعی</b><small>جزئیات دانشگاه و سال، پس از بازبینی رزومه اضافه می‌شود.</small></div></div></section></section></main>
+<script lang="ts">
+  import PageHero from '$lib/components/PageHero.svelte';
+
+  const currentRoles = [
+    {
+      organization: 'هومص',
+      role: 'معاون فنی',
+      period: '۱۴۰۴ تاکنون',
+      detail: 'شرکت تسهیلگران صادرات هوش مصنوعی صنعتی؛ سرمایه‌گذاری بر استارتاپ‌های هوش مصنوعی در صنعت و معدن'
+    },
+    {
+      organization: 'پردازش هوشمند ترگمان',
+      role: 'هم‌بنیان‌گذار و مدیرعامل',
+      period: 'هم‌بنیان‌گذار از ۱۳۹۴؛ مدیرعامل از ۱۳۹۶ تاکنون',
+      detail: 'سامانه‌های پردازش زبان طبیعی و زیرساخت‌های پردازش سریع هوش مصنوعی'
+    },
+    {
+      organization: 'ترجمیار و ترنج',
+      role: 'هم‌بنیان‌گذار و مدیر اجرایی',
+      period: '۱۳۹۵ تاکنون',
+      detail: 'دستیار ترجمه و سکوی ترجمه مبتنی بر هوش مصنوعی؛ برگزیده معاونت علمی در حوزه هوش مصنوعی'
+    },
+    {
+      organization: 'نصر تهران',
+      role: 'رئیس کمیسیون هوش مصنوعی و علم‌داده',
+      period: '۱۴۰۴ تاکنون',
+      detail: 'رئیس کارگروه حکمرانی داده و زیرساخت‌های هوش مصنوعی از ۱۳۹۹ تاکنون'
+    }
+  ];
+
+  const experience = [
+    {
+      organization: 'کمیسیون هوش مصنوعی و علم‌داده نصر تهران',
+      role: 'نایب‌رئیس و دبیر کمیسیون',
+      period: 'نایب‌رئیس ۱۴۰۳ تا ۱۴۰۴؛ دبیر ۱۳۹۷ تا ۱۴۰۳'
+    },
+    {
+      organization: 'وزارت ارتباطات و فناوری اطلاعات',
+      role: 'مشاور معاون وزیر',
+      period: 'رصد و پایش شبکه ملی اطلاعات، ۱۴۰۰ تا ۱۴۰۲'
+    },
+    {
+      organization: 'وزارت ارتباطات و فناوری اطلاعات',
+      role: 'مشاور و مجری طرح آزادرسانی جویشگر',
+      period: '۱۳۹۶ تا ۱۳۹۸'
+    },
+    {
+      organization: 'دلتاگلوبال',
+      role: 'مهندس ارشد، معاون فنی و مدیر فنی',
+      period: 'مدیر فنی ۱۳۸۵ تا ۱۳۸۸؛ معاون فنی ۱۳۸۸ تا ۱۳۹۳؛ مهندس ارشد ۱۳۹۳ تا ۱۳۹۵'
+    }
+  ];
+
+  const publications = [
+    'Introducing E4MT and LMBNC: Persian pre-processing utilities',
+    "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior",
+    'AUT Document Alignment Framework for BUCC Workshop Shared Task — ۲۰۱۵',
+    'Developing an open-domain English-Farsi translation system using AFEC — ۲۰۱۲',
+    'Semi-human instinctive artificial intelligence (SHI-AI) — ۲۰۰۶',
+    'A Novel Approach to Semi-Human Instinctive Artificial Intelligence — ۲۰۰۵',
+    "VBScript programmer's guide — ۲۰۰۲",
+    'Inter-Function Communication (IFC) — ۲۰۰۱',
+    'Design of a Cost Effective Supercomputer — ۲۰۰۱'
+  ];
+
+  const awards = [
+    ['مقام چهارم مسابقات بین‌المللی روبوکاپ', 'IranOpen 2008 · قزوین · ۱۳۸۷'],
+    ['مقام دوم مسابقات بین‌المللی روبوکاپ', 'RoboCup 2006 · برمن، آلمان · ۱۳۸۵'],
+    ['مقام هشتم مسابقات بین‌المللی روبوکاپ', 'RoboCup 2005 · اوزاکا، ژاپن · ۱۳۸۴'],
+    ['مقام اول مسابقات ربات‌های جنگجو', 'دانشگاه آزاد تهران مرکزی · ۱۳۸۳']
+  ];
+</script>
+
+<svelte:head>
+  <title>رزومه سید محمد محمدزاده ضیابری | مهران ضیابری</title>
+  <meta name="description" content="رزومه سید محمد محمدزاده ضیابری، شناخته‌شده با نام مهران ضیابری؛ سوابق حرفه‌ای، تحصیلات، آثار و افتخارات." />
+</svelte:head>
+
+<main class="resume-page">
+  <PageHero
+    eyebrow="سوابق حرفه‌ای"
+    title="رزومه"
+    lead="نام کامل و رسمی من «سید محمد محمدزاده ضیابری» است و در فضای حرفه‌ای و رسانه‌ای با نام «مهران ضیابری» شناخته می‌شوم."
+  />
+
+  <section class="wrap resume-intro">
+    <div class="resume-photo">
+      <img src="/images/gallery/mehran-ziabary-headshot.jpg" alt="مهران ضیابری" />
+    </div>
+    <div>
+      <p class="eyebrow">خلاصه حرفه‌ای</p>
+      <h2>سید محمد محمدزاده ضیابری <span>«مهران ضیابری»</span></h2>
+      <p>مدیر فناوری، کارآفرین و پژوهشگر هوش مصنوعی با بیش از ۲۰ سال تجربه؛ از الکترونیک دیجیتال، رباتیک و امنیت شبکه تا پردازش زبان طبیعی، ساخت محصول و حکمرانی هوش مصنوعی.</p>
+      <div class="resume-contact">
+        <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a>
+        <a href="https://www.linkedin.com/in/mehranziabary" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+      <a class="button primary" href="/downloads/seyed-mohammad-mohammadzadeh-ziabary-cv-fa.pdf" download>دریافت رزومه PDF</a>
+    </div>
+  </section>
+
+  <section class="wrap resume-sections">
+    <section>
+      <div><p class="eyebrow">مسئولیت‌های فعلی</p><small class="section-hint">به‌روزرسانی: ۱۴۰۵</small></div>
+      <div class="resume-rows">
+        {#each currentRoles as item}
+          <div><span>{item.organization}</span><b>{item.role}</b><small><strong>{item.period}</strong>{item.detail}</small></div>
+        {/each}
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">سوابق پیشین</p>
+      <div class="resume-rows">
+        {#each experience as item}
+          <div><span>{item.organization}</span><b>{item.role}</b><small>{item.period}</small></div>
+        {/each}
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">تحصیلات</p>
+      <div class="resume-rows education-rows">
+        <div><span>۱۳۸۸ تا ۱۳۹۲</span><b>کارشناسی ارشد هوش مصنوعی</b><small><strong>دانشگاه صنعتی امیرکبیر</strong>پایان‌نامه: طراحی و توسعه مترجم ماشینی مبتنی بر شبیه‌سازی عملکرد مغز کودکان دوزبانه</small></div>
+        <div><span>۱۳۷۶ تا ۱۳۸۸</span><b>کارشناسی مهندسی نرم‌افزار</b><small><strong>دانشگاه آزاد اسلامی واحد تهران مرکزی</strong>پایان‌نامه: طراحی و توسعه ابررایانه مبتنی بر استفاده از رایانه‌های از رده خارج</small></div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">حوزه‌های تخصصی</p>
+      <div class="expertise-list">
+        <span>هوش مصنوعی و پردازش زبان طبیعی</span><span>معماری سامانه‌های نرم‌افزاری</span>
+        <span>حکمرانی داده و هوش مصنوعی</span><span>امنیت شبکه و داده</span>
+        <span>الکترونیک دیجیتال و رباتیک</span><span>ارزیابی فنی سرمایه‌گذاری</span>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">آثار و مقالات</p>
+      <ol class="publication-list">
+        {#each publications as publication, index}<li><span>{String(index + 1).padStart(2, '0')}</span><b dir="ltr">{publication}</b></li>{/each}
+      </ol>
+    </section>
+
+    <section>
+      <p class="eyebrow">افتخارات</p>
+      <div class="award-grid">
+        {#each awards as award}<div><b>{award[0]}</b><span>{award[1]}</span></div>{/each}
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">زبان‌ها</p>
+      <div class="language-list">
+        <span><b>فارسی</b> زبان مادری</span><span><b>انگلیسی</b> حرفه‌ای</span><span><b>اسپانیایی</b> حرفه‌ای</span>
+        <span><b>ترکی استانبولی</b> پایه</span><span><b>ایتالیایی</b> پایه</span><span><b>عربی</b> پایه</span>
+      </div>
+    </section>
+  </section>
+</main>

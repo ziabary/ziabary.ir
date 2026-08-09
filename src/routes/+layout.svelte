@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>مهران ضیابری | Mehran Ziabary</title>
-  <meta name="description" content="وب‌سایت شخصی مهران ضیابری؛ درباره هوش مصنوعی، حکمرانی، فناوری و تجربه‌های فنی." />
+  <title>مهران ضیابری | سید محمد محمدزاده ضیابری</title>
+  <meta name="description" content="وب‌سایت شخصی سید محمد محمدزاده ضیابری، شناخته‌شده با نام مهران ضیابری؛ درباره هوش مصنوعی، حکمرانی، فناوری و تجربه‌های فنی." />
 </svelte:head>
 
 <SiteShell>
