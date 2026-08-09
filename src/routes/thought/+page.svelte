@@ -120,10 +120,8 @@
       </section>
 
       <div class="thought-coda">
-        <span>یک پرسش برای باز ماندن پنجره</span>
-        <p>این نگاه قرار نیست به مکتب، قبیله یا پاسخ نهایی تبدیل شود؛ چون همان لحظه خودش به زندانی تازه بدل خواهد شد. هدف، نابود کردن مدل، ساختار یا تخصص نیست؛ فقط نباید فراموش کرد که هرکدام یکی از راه‌های دیدن‌اند، نه خود جهان.</p>
-        <strong>آیا راه دیگری برای دیدن این مسئله وجود دارد؟</strong>
-        <p class="thought-final">لازم نیست باورت را عوض کنی؛ فقط مطمئن شو هنوز می‌توانی عوضش کنی.</p>
+        <p>برای من، آنچه این پنج اصل را به هم پیوند می‌دهد، آمادگی برای بازبینی است. مدل، تخصص و ساختار برای فهمیدن و ساختن لازم‌اند؛ اما هیچ‌کدام نباید چنان با ما یکی شوند که تغییرشان در برابر واقعیت، شکست به نظر برسد.</p>
+        <strong class="thought-final">لازم نیست باورت را عوض کنی؛ فقط مطمئن شو هنوز می‌توانی عوضش کنی.</strong>
       </div>
     </div>
   </section>
@@ -277,38 +275,22 @@
     border-top: 5px solid #24b5ad;
   }
 
-  .thought-coda > span {
-    display: block;
-    margin-bottom: 22px;
-    color: #8edbd5;
-    font-size: 11px;
-    font-weight: 700;
-  }
-
-  .thought-coda > p:not(.thought-final) {
-    margin: 0 0 36px;
+  .thought-coda > p {
+    margin: 0 0 34px;
     color: #d0dfdd;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 2.2;
-  }
-
-  .thought-coda strong {
-    display: block;
-    margin-bottom: 34px;
-    color: #fff;
-    font-size: clamp(25px, 3.2vw, 36px);
-    line-height: 1.75;
   }
 
   .thought-coda .thought-final {
     display: block;
     margin: 0;
-    padding-top: 26px;
+    padding-top: 28px;
     border-top: 1px solid rgba(142, 219, 213, 0.38);
-    color: #f3fbfa;
-    font-size: clamp(17px, 2vw, 21px);
+    color: #fff;
+    font-size: clamp(23px, 3vw, 33px);
     font-weight: 800;
-    line-height: 1.9;
+    line-height: 1.85;
   }
 
   @media (max-width: 980px) {
