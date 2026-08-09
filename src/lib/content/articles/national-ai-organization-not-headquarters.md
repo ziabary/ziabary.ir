@@ -7,6 +7,8 @@ faDate: ۲۸ اردیبهشت ۱۴۰۴
 category: سیاست‌گذاری
 excerpt: نقدی بر تشکیل ستاد توسعه فناوری و کاربرد هوش مصنوعی و توضیح اینکه چرا هماهنگی فرادستگاهی، سرمایه‌گذاری در لایه‌های بنیادین و مشارکت بخش خصوصی به نهادی مستقل و اجرایی نیاز دارد.
 readTime: ۵ دقیقه
+cover: /images/articles/national-ai-organization-not-headquarters/cover.webp
+coverCredit: تصویر مرتبط با گزارش خبرگزاری فارس
 external: https://farsnews.ir/ziabary/1747598555488842511
 source: خبرگزاری فارس
 showInMedia: true

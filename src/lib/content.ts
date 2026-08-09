@@ -9,6 +9,7 @@ export type ArticleMeta = {
   readTime: string;
   related: string[];
   cover?: string;
+  coverCredit?: string;
   external?: string;
   source?: string;
   showInMedia?: boolean;
