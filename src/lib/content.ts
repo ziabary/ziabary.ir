@@ -10,6 +10,9 @@ export type ArticleMeta = {
   related: string[];
   cover?: string;
   external?: string;
+  source?: string;
+  showInMedia?: boolean;
+  mediaKind?: string;
   draft?: boolean;
 };
 
