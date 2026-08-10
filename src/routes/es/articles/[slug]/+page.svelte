@@ -18,7 +18,7 @@
       <div class="article-meta"><span>{data.article.category}</span><span>{data.article.faDate}</span><span>{data.article.readTime}</span></div>
       <h1>{data.article.title}</h1>
       <p>{data.article.excerpt}</p>
-      <ArticleActions title={data.article.title} locale="en" />
+      <ArticleActions title={data.article.title} locale="es" />
     </header>
 
     {#if data.article.cover}
@@ -27,15 +27,15 @@
         {#if data.article.coverCredit}<figcaption>{data.article.coverCredit}</figcaption>{/if}
       </figure>
     {:else}
-      <div class="article-cover"><div><span>SOFT'N HARD WARE · RESTORED</span><b>{data.article.category.toUpperCase()}</b></div></div>
+      <div class="article-cover"><div><span>EDICIÓN INTERNACIONAL</span><b>{data.article.category.toUpperCase()}</b></div></div>
     {/if}
 
     <div class="prose">
       {#if Content}<svelte:component this={Content} />{/if}
       {#if data.article.external}
-        <a class="original-link" href={data.article.external} target="_blank" rel="noreferrer">View the original at {data.article.source ?? 'the source archive'} ↗</a>
+        <a class="original-link" href={data.article.external} target="_blank" rel="noreferrer">Ver el original en {data.article.source ?? 'el archivo de origen'} ↗</a>
       {/if}
-      <ArticleActions title={data.article.title} locale="en" />
+      <ArticleActions title={data.article.title} locale="es" />
     </div>
   </article>
 </main>

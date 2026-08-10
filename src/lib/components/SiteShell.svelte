@@ -16,7 +16,7 @@
     : $page.url.pathname.startsWith('/es')
       ? 'es'
       : 'fa';
-  $: isPersianHome = locale === 'fa' && $page.url.pathname === '/';
+  $: isLandingHome = $page.url.pathname === (locale === 'fa' ? '/' : `/${locale}/`);
 
   const copies = {
     fa: {
@@ -27,14 +27,14 @@
       noResult: 'نتیجه‌ای پیدا نشد.', copyright: '© ۱۴۰۵ مهران ضیابری'
     },
     en: {
-      home: 'Home', thought: 'About', writings: 'Writing', guides: 'Technical notes',
+      home: 'Home', thought: 'Thought', writings: 'Writing', guides: 'Technical notes',
       media: 'Media', slides: 'Slides', resume: 'Résumé',
       admin: 'Content editor',
       search: 'Search', placeholder: 'Search writing, technical notes and slides…',
       noResult: 'No results found.', copyright: '© 2026 Mehran Ziabary'
     },
     es: {
-      home: 'Inicio', thought: 'Acerca de', writings: 'Artículos', guides: 'Notas técnicas',
+      home: 'Inicio', thought: 'Pensamiento', writings: 'Artículos', guides: 'Notas técnicas',
       media: 'Medios', slides: 'Diapositivas', resume: 'Currículum',
       admin: 'Editor de contenido',
       search: 'Buscar', placeholder: 'Buscar artículos, notas y diapositivas…',
@@ -43,13 +43,14 @@
   } as const;
 
   $: t = copies[locale];
+  $: visibleSocialLinks = locale === 'fa' ? socialLinks : socialLinks.filter((social) => social.label !== 'Virgool');
   $: searchItems = [
     ...articles
       .filter((article) => article.lang === locale)
       .map((article) => ({
         title: article.title,
         excerpt: article.excerpt,
-        href: locale === 'en' ? `/en/articles/${article.slug}/` : `/articles/${article.slug}/`,
+        href: locale === 'fa' ? `/articles/${article.slug}/` : `/${locale}/articles/${article.slug}/`,
         type: article.category
       })),
     ...(locale === 'fa' ? courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' })) : [])
@@ -60,9 +61,10 @@
         .slice(0, 8)
     : searchItems.slice(0, 5);
 
-  function localHref(fa: string, anchor: string) {
-    if (locale === 'en' && fa === '/articles/') return '/en/articles/';
-    return locale === 'fa' ? fa : `/${locale}/#${anchor}`;
+  function localHref(fa: string, _anchor: string) {
+    if (locale === 'fa') return fa;
+    const path = fa.replace(/^\//, '').replace(/\/$/, '');
+    return `/${locale}/${path}/`;
   }
 
   function toggleTheme() {
@@ -92,8 +94,8 @@
 </script>
 
 <header class="site-header">
-  <div class="wrap nav-wrap" class:landing-nav={isPersianHome}>
-    {#if isPersianHome}
+  <div class="wrap nav-wrap" class:landing-nav={isLandingHome}>
+    {#if isLandingHome}
       <span class="brand-spacer" aria-hidden="true"></span>
     {:else}
       <a href={locale === 'fa' ? '/' : `/${locale}/`} class="brand" aria-label={t.home}>
@@ -135,7 +137,7 @@
       <!-- <a href={localHref('/resume/', 'resume')}>{t.resume}</a> -->
     </nav>
     <div class="footer-socials">
-      {#each socialLinks as social}
+      {#each visibleSocialLinks as social}
         <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label} title={social.label}>
           <i class={social.icon} aria-hidden="true"></i>
         </a>
