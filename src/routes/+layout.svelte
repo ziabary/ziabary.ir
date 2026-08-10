@@ -2,6 +2,7 @@
   import '../app.css';
   import '../refinement.css';
   import SiteShell from '$lib/components/SiteShell.svelte';
+  import ImageLightbox from '$lib/components/ImageLightbox.svelte';
   export let data;
 </script>
 
@@ -13,3 +14,4 @@
 <SiteShell locale={data.locale} pathname={data.pathname}>
   <slot />
 </SiteShell>
+<ImageLightbox />

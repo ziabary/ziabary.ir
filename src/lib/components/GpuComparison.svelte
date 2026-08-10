@@ -163,8 +163,10 @@
 
   $: sortMarks = new Map(sorts.map((rule, index) => [rule.key, `${fa.format(index + 1)} ${rule.direction === 'desc' ? '↓' : '↑'}`]));
 
-  function sortMark(key: SortKey) {
-    return sortMarks.get(key) ?? '—';
+  function sortMark(key: SortKey, currentSorts: SortRule[]) {
+    const index = currentSorts.findIndex((rule) => rule.key === key);
+    if (index < 0) return '—';
+    return `${fa.format(index + 1)} ${currentSorts[index].direction === 'desc' ? '↓' : '↑'}`;
   }
 
   function sortValue(record: GpuRecord, key: SortKey): string | number | null {
@@ -290,12 +292,12 @@
     <table><thead><tr>
       <th class="pick">مقایسه</th>
       <th class="detail-head">جزئیات</th>
-      <th class="model"><button class="sort-button" class:active={sortMarks.has('model')} on:click={() => toggleSort('model')}>مدل <i>{sortMark('model')}</i></button></th>
+      <th class="model"><button class="sort-button" class:active={sortMarks.has('model')} on:click={() => toggleSort('model')}>مدل <i>{sortMark('model', sorts)}</i></button></th>
       {#each activeColumns as column}
         {@const sortKey = sortableColumn[column]}
         <th class="hideable" class:cores={column === 'generalCore' || column === 'matrixCore'} class:precision={['fp4','fp8','bf16','fp16','int8','int4'].includes(column)}>
           <div class="th-inner">
-            {#if sortKey}<button class="sort-button" class:active={sortMarks.has(sortKey)} type="button" on:click={() => toggleSort(sortKey)}>{columnLabel[column]} {#if columnUnit[column]}<small>{columnUnit[column]}</small>{/if}<i>{sortMark(sortKey)}</i></button>{:else}<span>{columnLabel[column]}</span>{/if}
+            {#if sortKey}<button class="sort-button" class:active={sortMarks.has(sortKey)} type="button" on:click={() => toggleSort(sortKey)}>{columnLabel[column]} {#if columnUnit[column]}<small>{columnUnit[column]}</small>{/if}<i>{sortMark(sortKey, sorts)}</i></button>{:else}<span>{columnLabel[column]}</span>{/if}
             <button class="hide-column" type="button" on:click|stopPropagation={() => hideColumn(column)} aria-label={`پنهان‌کردن ستون ${columnLabel[column]}`}>×</button>
           </div>
         </th>

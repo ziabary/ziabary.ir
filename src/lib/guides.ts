@@ -136,13 +136,70 @@ export const guideCollections: GuideCollection[] = [
   },
   {
     slug: 'secure-operating-system',
-    title: 'سیستم‌عامل امن',
-    subtitle: 'از کاهش سطح حمله تا تفکیک، کنترل دسترسی و سخت‌سازی',
+    title: 'امنیت و حاکمیت لینوکس سازمانی',
+    subtitle: 'از مدل تهدید و انتخاب توزیع تا محیط ایزوله، کانتینر، GPU، استاندارد و Legacy',
     eyebrow: 'امنیت زیرساخت',
     image: '/images/guides/secure-operating-system.webp',
     imageAlt: 'هستهٔ محاسباتی محافظت‌شده در لایه‌های جدا و کنترل‌شده',
-    intro: 'سیستم‌عامل امن محصول یک تنظیم جادویی نیست؛ حاصل مجموعه‌ای از تصمیم‌ها دربارهٔ کمینه‌سازی، تفکیک، سطح دسترسی، زنجیرهٔ تأمین و امکان مشاهده و پاسخ است.',
-    items: []
+    intro: 'امنیت لینوکس محصول یک تنظیم جادویی یا چک‌لیست واحد نیست؛ از شناخت کاربری و تهدید آغاز می‌شود و به انتخاب زیست‌بوم، کنترل تغییر، مرزهای کانتینر، امنیت GPU، انطباق و ادارهٔ ریسک سامانه‌های قدیمی می‌رسد.',
+    items: [
+      {
+        id: 'one-linux-hardening-policy-does-not-fit-all',
+        title: 'یک سیاست ایمن‌سازی برای همهٔ لینوکس‌ها وجود ندارد',
+        subtitle: 'چرا نوع کاربری، سطح مواجهه و مأموریت باید پیش از انتخاب پروفایل سخت‌سازی مشخص شود.',
+        kind: 'article',
+        href: '/articles/one-linux-hardening-policy-does-not-fit-all/'
+      },
+      {
+        id: 'linux-distribution-as-security-governance',
+        title: 'انتخاب توزیع لینوکس، یک تصمیم امنیتی و حاکمیتی است',
+        subtitle: 'انتخاب چرخهٔ تغییر، زنجیرهٔ تصمیم، مدل اعتماد و هزینهٔ بازگشت؛ نه فقط مجموعه‌ای از بسته‌ها.',
+        kind: 'article',
+        href: '/articles/linux-distribution-as-security-governance/'
+      },
+      {
+        id: 'air-gap-moves-trust-boundary',
+        title: 'آفلاین‌بودن، امنیت نیست؛ مرز اعتماد را جابه‌جا می‌کند',
+        subtitle: 'ریشهٔ اعتماد، TPM، بوت امن، بوت اندازه‌گیری‌شده و مسیر کنترل‌شدهٔ ورود وصله‌ها.',
+        kind: 'article',
+        href: '/articles/air-gap-moves-trust-boundary/'
+      },
+      {
+        id: 'configuration-drift-attestation-and-rollback',
+        title: 'ثباتی که قابل اثبات و بازگشت نیست، امنیت نیست',
+        subtitle: 'رانش پیکربندی، وضعیت اعلامی، Attestation، Snapshot و رفتار سامانه پس از شکست.',
+        kind: 'article',
+        href: '/articles/configuration-drift-attestation-and-rollback/'
+      },
+      {
+        id: 'containers-are-not-security-boundaries',
+        title: 'کانتینر، مرز امنیتی مستقل نیست',
+        subtitle: 'کرنل مشترک، تغییرناپذیری، زنجیرهٔ ساخت، eBPF، هویت سرویس و مدیریت اسرار.',
+        kind: 'article',
+        href: '/articles/containers-are-not-security-boundaries/'
+      },
+      {
+        id: 'ai-infrastructure-security-starts-with-kernel-and-gpu',
+        title: 'امنیت زیرساخت هوش مصنوعی از کرنل و GPU آغاز می‌شود',
+        subtitle: 'ABI، درایور، runtime، کانتینر، داده، مدل و شتاب‌دهنده به‌عنوان یک زنجیرهٔ اعتبارسنجی.',
+        kind: 'article',
+        href: '/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/'
+      },
+      {
+        id: 'from-stig-cis-to-rbac',
+        title: 'از STIG و CIS تا RBAC؛ تفاوت استاندارد، کنترل و مکانیزم',
+        subtitle: 'چرا درصد انطباق جای مدل تهدید را نمی‌گیرد و SELinux یا AppArmor خودِ کنترل نیستند.',
+        kind: 'article',
+        href: '/articles/from-stig-cis-to-rbac/'
+      },
+      {
+        id: 'legacy-migration-does-not-remove-risk',
+        title: 'مهاجرت، ریسک سامانه‌های Legacy را حذف نمی‌کند',
+        subtitle: 'تفکیک دارایی‌های قابل بازاستقرار، حساس و نیازمند انزوا، و غیرقابل ارتقا.',
+        kind: 'article',
+        href: '/articles/legacy-migration-does-not-remove-risk/'
+      }
+    ]
   },
   {
     slug: 'ai-operator',
