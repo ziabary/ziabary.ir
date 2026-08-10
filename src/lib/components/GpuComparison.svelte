@@ -32,6 +32,14 @@
   const computeColumns: ColumnKey[] = ['generalCore', 'matrixCore', 'fp8', 'fp16', 'fp32', 'fp64'];
   const extendedComputeColumns: ColumnKey[] = ['fp4', 'bf16', 'int8', 'int4'];
   const infraColumns: ColumnKey[] = ['architecture', 'formFactor', 'hostInterface', 'interconnect', 'cooling', 'software', 'partitioning'];
+  const sortableColumn: Partial<Record<ColumnKey, SortKey>> = {
+    segment: 'segment', status: 'status', memory: 'memoryGB', bandwidth: 'bandwidthTBs', power: 'powerW',
+    generalCore: 'generalCoreCount', matrixCore: 'matrixCoreCount', fp4: 'fp4', fp8: 'fp8', bf16: 'bf16', fp16: 'fp16', fp32: 'fp32', fp64: 'fp64', int8: 'int8', int4: 'int4',
+    architecture: 'architecture', formFactor: 'formFactor', interconnect: 'interconnect', software: 'software'
+  };
+  const columnUnit: Partial<Record<ColumnKey, string>> = {
+    memory: 'GB', bandwidth: 'TB/s', power: 'W', fp4: 'TFLOPS', fp8: 'TFLOPS', bf16: 'TFLOPS', fp16: 'TFLOPS', fp32: 'TFLOPS', fp64: 'TFLOPS', int8: 'TOPS', int4: 'TOPS'
+  };
 
   let query = '';
   let selectedVendors: GpuVendor[] = [];
@@ -54,8 +62,7 @@
   const format = (value: number | null, suffix = '') => value == null ? '—' : `${fa.format(value)}${suffix}`;
   const brandLogo = (gpu: GpuRecord) => `/images/brands/${gpu.vendor.toLowerCase()}.svg`;
   const brandName = (gpu: GpuRecord) => gpu.vendor === 'AMD' && gpu.model.includes('Instinct') ? 'INSTINCT' : gpu.vendor;
-  const columnVisible = (key: ColumnKey) => !hiddenColumns.includes(key);
-  const hideColumn = (key: ColumnKey) => { hiddenColumns = [...hiddenColumns, key]; };
+  const hideColumn = (key: ColumnKey) => { if (!hiddenColumns.includes(key)) hiddenColumns = [...hiddenColumns, key]; };
   const restoreColumn = (key: ColumnKey) => { hiddenColumns = hiddenColumns.filter((item) => item !== key); };
   const showAllColumns = () => { hiddenColumns = []; showCompute = true; showExtendedCompute = true; showInfra = true; };
   const disclosureLabel = {
@@ -76,7 +83,7 @@
   };
   const measuredText = (gpu: GpuRecord, key: 'memoryGB' | 'bandwidthTBs' | 'powerW') => {
     const value = gpu[key];
-    if (gpu.dataDisclosure?.[key] && gpu.dataDisclosure[key] !== 'published') return baseDisclosureText(gpu, key);
+    if (gpu.dataDisclosure?.[key] && !['published', 'derived'].includes(gpu.dataDisclosure[key] ?? 'published')) return baseDisclosureText(gpu, key);
     return value == null ? disclosureLabel['not-published'] : format(value);
   };
   const measuredWithUnit = (gpu: GpuRecord, key: 'memoryGB' | 'bandwidthTBs' | 'powerW', unit: string) => {
@@ -84,6 +91,12 @@
     const state = gpu.dataDisclosure?.[key] ?? 'published';
     return typeof gpu[key] === 'number' && (state === 'published' || state === 'derived') ? `${text} ${unit}` : text;
   };
+  const fullRateText = (gpu: GpuRecord, key: 'fp4' | 'fp8' | 'bf16' | 'fp16' | 'int8' | 'int4') => {
+    const rate = gpu[key];
+    if (rate?.dense == null) return disclosureText(gpu, key);
+    return `${format(rate.dense)} dense${rate.sparse != null ? ` / ${format(rate.sparse)} sparse` : ''}`;
+  };
+  const coreText = (gpu: GpuRecord, key: 'generalCoreCount' | 'matrixCoreCount', label: string) => `${scalarText(gpu, key)} — ${label}`;
 
   const specGroups = ['تراشه', 'محاسبات', 'حافظه', 'ارتباط و شبکه', 'توان و مکانیک', 'نرم‌افزار و مجازی‌سازی', 'رسانه', 'عرضه و منبع'] as const;
   function fullSpecs(gpu: GpuRecord) {
@@ -93,16 +106,17 @@
       { group: 'تراشه', label: 'نوع محصول', value: productKind(gpu) },
       { group: 'تراشه', label: 'معماری', value: gpu.architecture },
       { group: 'تراشه', label: 'سال معرفی', value: String(gpu.year) },
-      { group: 'تراشه', label: gpu.generalCoreLabel, value: scalarText(gpu, 'generalCoreCount') },
-      { group: 'تراشه', label: gpu.matrixCoreLabel, value: scalarText(gpu, 'matrixCoreCount') },
-      { group: 'محاسبات', label: 'FP4 / MXFP4', value: rateText(gpu, 'fp4') },
-      { group: 'محاسبات', label: 'FP8', value: rateText(gpu, 'fp8') },
-      { group: 'محاسبات', label: 'BF16', value: rateText(gpu, 'bf16') },
-      { group: 'محاسبات', label: 'FP16', value: rateText(gpu, 'fp16') },
+      { group: 'تراشه', label: 'هستهٔ عمومی', value: coreText(gpu, 'generalCoreCount', gpu.generalCoreLabel) },
+      { group: 'تراشه', label: 'هسته/موتور ماتریسی', value: coreText(gpu, 'matrixCoreCount', gpu.matrixCoreLabel) },
+      { group: 'محاسبات', label: 'FP4 / MXFP4', value: fullRateText(gpu, 'fp4') },
+      { group: 'محاسبات', label: 'FP8', value: fullRateText(gpu, 'fp8') },
+      { group: 'محاسبات', label: 'BF16', value: fullRateText(gpu, 'bf16') },
+      { group: 'محاسبات', label: 'FP16', value: fullRateText(gpu, 'fp16') },
       { group: 'محاسبات', label: 'FP32 برداری', value: scalarText(gpu, 'fp32') },
       { group: 'محاسبات', label: 'FP64 برداری', value: scalarText(gpu, 'fp64') },
-      { group: 'محاسبات', label: 'INT8', value: rateText(gpu, 'int8') },
-      { group: 'محاسبات', label: 'INT4', value: rateText(gpu, 'int4') },
+      { group: 'محاسبات', label: 'INT8', value: fullRateText(gpu, 'int8') },
+      { group: 'محاسبات', label: 'INT4', value: fullRateText(gpu, 'int4') },
+      { group: 'محاسبات', label: 'تعریف و مبنای محاسبات', value: gpu.computeFootnote ?? gpu.compute },
       { group: 'حافظه', label: 'ظرفیت', value: gpu.memoryDisplay ? `${gpu.memoryDisplay} GB` : measuredWithUnit(gpu, 'memoryGB', 'GB') },
       { group: 'حافظه', label: 'نوع / ECC', value: gpu.memoryType },
       { group: 'حافظه', label: 'پهنای‌باند', value: measuredWithUnit(gpu, 'bandwidthTBs', 'TB/s') },
@@ -114,6 +128,9 @@
       { group: 'نرم‌افزار و مجازی‌سازی', label: 'پشته', value: gpu.software },
       { group: 'نرم‌افزار و مجازی‌سازی', label: 'تقسیم‌پذیری / مجازی‌سازی بومی سازنده', value: gpu.partitioning },
       ...(gpu.sharedService ? [{ group: 'نرم‌افزار و مجازی‌سازی', label: 'ارائهٔ اشتراکی روی سکوی دماوند', value: gpu.sharedService }] : []),
+      { group: 'عرضه و منبع', label: 'کاربردهای ثبت‌شده', value: gpu.workloads.join('، ') },
+      { group: 'عرضه و منبع', label: 'مناسب برای', value: gpu.bestFit },
+      { group: 'عرضه و منبع', label: 'ملاحظهٔ خرید', value: gpu.caution },
       { group: 'عرضه و منبع', label: 'وضعیت', value: statusLabel[gpu.status] },
       { group: 'عرضه و منبع', label: 'سطح منبع', value: gpu.sourceTier ?? 'سازنده' },
       { group: 'عرضه و منبع', label: 'منبع', value: gpu.sourceLabel },
@@ -205,14 +222,23 @@
     return a.model.localeCompare(b.model, 'en');
   });
   $: comparison = compared.map((id) => gpuRecords.find((g) => g.id === id)).filter(Boolean) as GpuRecord[];
+  $: comparisonGroups = specGroups.map((group) => ({
+    group,
+    rows: Array.from(new Set(comparison.flatMap((gpu) => specsFor(gpu, group).map((spec) => spec.label)))).map((label) => ({
+      label,
+      values: comparison.map((gpu) => specsFor(gpu, group).filter((spec) => spec.label === label))
+    }))
+  })).filter((group) => group.rows.length);
   $: maxMemory = visible.length ? Math.max(...visible.filter((g) => g.dataDisclosure?.memoryGB !== 'not-published').map((g) => g.memoryGB)) : 0;
   $: maxBandwidth = visible.length ? Math.max(...visible.filter((g) => g.dataDisclosure?.bandwidthTBs !== 'not-published').map((g) => g.bandwidthTBs)) : 0;
   $: lowestPower = visible.filter((g) => g.powerW != null).sort((a,b) => (a.powerW ?? Infinity) - (b.powerW ?? Infinity))[0];
-  $: totalColumns = 3
-    + baseColumns.filter(columnVisible).length
-    + (showCompute ? computeColumns.filter(columnVisible).length : 0)
-    + (showExtendedCompute ? extendedComputeColumns.filter(columnVisible).length : 0)
-    + (showInfra ? infraColumns.filter(columnVisible).length : 0);
+  $: activeColumns = [
+    ...baseColumns,
+    ...(showCompute ? computeColumns : []),
+    ...(showExtendedCompute ? extendedComputeColumns : []),
+    ...(showInfra ? infraColumns : [])
+  ].filter((column) => !hiddenColumns.includes(column));
+  $: totalColumns = 3 + activeColumns.length;
 </script>
 
 <section class="explorer" aria-labelledby="gpu-table-title">
@@ -246,7 +272,15 @@
   <div class="summary" aria-live="polite"><div><small>نتیجه</small><b>{fa.format(visible.length)}</b><span>از {fa.format(gpuRecords.length)} مدل</span></div><div><small>بیشترین حافظه</small><b>{format(maxMemory)}</b><span>GB</span></div><div><small>بیشترین پهنای‌باند</small><b>{format(maxBandwidth)}</b><span>TB/s؛ با حفظ نوع حافظه</span></div><div><small>کم‌مصرف‌ترین</small><b>{lowestPower ? format(lowestPower.powerW) : 'ثبت نشده'}</b><span>{lowestPower?.model ?? 'توان رسمی در این فیلتر وجود ندارد'}</span></div></div>
 
   {#if comparison.length}
-    <section class="compare"><header><div><small>مقایسهٔ رو در رو</small><b>{fa.format(comparison.length)} از ۴ مدل</b></div><button on:click={() => compared = []}>حذف همه</button></header><div>{#each comparison as gpu}<article><button class="remove" aria-label={`حذف ${gpu.model}`} on:click={() => toggleCompare(gpu.id)}>×</button><div class="brand-mark"><img src={brandLogo(gpu)} alt="" /><span>{brandName(gpu)}</span></div><h3 dir="ltr">{gpu.model}</h3><dl><div><dt>حافظه</dt><dd>{measuredWithUnit(gpu,'memoryGB','GB')}</dd></div><div><dt>FP8 dense</dt><dd>{rateText(gpu,'fp8')}</dd></div><div><dt>FP16 dense</dt><dd>{rateText(gpu,'fp16')}</dd></div><div><dt>FP32</dt><dd>{scalarText(gpu,'fp32')}</dd></div></dl></article>{/each}</div></section>
+    <section class="compare">
+      <header><div><small>مقایسهٔ کامل رو در رو</small><b>{fa.format(comparison.length)} از ۴ مدل؛ همهٔ مشخصات ثبت‌شده</b></div><button type="button" on:click={() => compared = []}>حذف همه</button></header>
+      <div class="compare-shell" role="region" aria-label="مقایسهٔ کامل مشخصات شتاب‌دهنده‌های انتخاب‌شده">
+        <table class="compare-matrix">
+          <thead><tr><th class="compare-label">مشخصه</th>{#each comparison as gpu}<th><button class="remove" type="button" aria-label={`حذف ${gpu.model}`} on:click={() => toggleCompare(gpu.id)}>×</button><div class="brand-mark"><img src={brandLogo(gpu)} alt="" /><span>{brandName(gpu)}</span></div><b dir="ltr">{gpu.model}</b><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">منبع اصلی ↗</a></th>{/each}</tr></thead>
+          <tbody>{#each comparisonGroups as group}<tr class="compare-group"><th colspan={comparison.length + 1}>{group.group}</th></tr>{#each group.rows as row}<tr><th class="compare-label">{row.label}</th>{#each row.values as specs}<td>{#if specs.length}{#each specs as spec, index}{#if index}<hr />{/if}<span>{spec.value}</span>{#if 'basis' in spec && spec.basis}<small>{spec.basis}</small>{/if}{/each}{:else}<span class="not-recorded">ثبت نشده</span>{/if}</td>{/each}</tr>{/each}{/each}</tbody>
+        </table>
+      </div>
+    </section>
   {/if}
 
   <div class="toolbar"><div class="toolbar-copy"><p>عنوان هر ستون را بزنید: نزولی، صعودی، خاموش. علامت — یعنی ستون در مرتب‌سازی دخیل نیست؛ ↑ و ↓ جهت و عدد کنار آن اولویت مرتب‌سازی چندمعیاره را نشان می‌دهد.</p>{#if hiddenColumns.length}<div class="hidden-columns"><span>ستون‌های پنهان:</span>{#each hiddenColumns as key}<button on:click={() => restoreColumn(key)}>+ {columnLabel[key]}</button>{/each}<button class="restore-all" on:click={showAllColumns}>بازگردانی همه</button></div>{/if}</div><div><button on:click={() => sorts = []}>حذف مرتب‌سازی</button><button class="export" on:click={exportCsv}>دریافت CSV کامل</button></div></div>
@@ -256,72 +290,48 @@
       <th class="pick">مقایسه</th>
       <th class="detail-head">جزئیات</th>
       <th class="model"><button class="sort-button" on:click={() => toggleSort('model')}>مدل <i>{sortMark('model')}</i></button></th>
-      {#if columnVisible('kind')}<th class="hideable"><div class="th-inner"><span>نوع</span><button class="hide-column" on:click={() => hideColumn('kind')} aria-label="پنهان‌کردن ستون نوع">×</button></div></th>{/if}
-      {#if columnVisible('segment')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('segment')}>رده <i>{sortMark('segment')}</i></button><button class="hide-column" on:click={() => hideColumn('segment')} aria-label="پنهان‌کردن ستون رده">×</button></div></th>{/if}
-      {#if columnVisible('status')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('status')}>وضعیت <i>{sortMark('status')}</i></button><button class="hide-column" on:click={() => hideColumn('status')} aria-label="پنهان‌کردن ستون وضعیت">×</button></div></th>{/if}
-      {#if columnVisible('memory')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('memoryGB')}>حافظه <small>GB</small> <i>{sortMark('memoryGB')}</i></button><button class="hide-column" on:click={() => hideColumn('memory')} aria-label="پنهان‌کردن ستون حافظه">×</button></div></th>{/if}
-      {#if columnVisible('bandwidth')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('bandwidthTBs')}>پهنای‌باند <small>TB/s</small> <i>{sortMark('bandwidthTBs')}</i></button><button class="hide-column" on:click={() => hideColumn('bandwidth')} aria-label="پنهان‌کردن ستون پهنای‌باند">×</button></div></th>{/if}
-      {#if columnVisible('power')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('powerW')}>توان <small>W</small> <i>{sortMark('powerW')}</i></button><button class="hide-column" on:click={() => hideColumn('power')} aria-label="پنهان‌کردن ستون توان">×</button></div></th>{/if}
-      {#if showCompute}
-        {#if columnVisible('generalCore')}<th class="cores hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('generalCoreCount')}>هستهٔ عمومی <i>{sortMark('generalCoreCount')}</i></button><button class="hide-column" on:click={() => hideColumn('generalCore')} aria-label="پنهان‌کردن ستون هستهٔ عمومی">×</button></div></th>{/if}
-        {#if columnVisible('matrixCore')}<th class="cores hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('matrixCoreCount')}>هسته/موتور ماتریسی <i>{sortMark('matrixCoreCount')}</i></button><button class="hide-column" on:click={() => hideColumn('matrixCore')} aria-label="پنهان‌کردن ستون هستهٔ ماتریسی">×</button></div></th>{/if}
-        {#if columnVisible('fp8')}<th class="precision hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('fp8')}>FP8 <small>TFLOPS</small> <i>{sortMark('fp8')}</i></button><button class="hide-column" on:click={() => hideColumn('fp8')} aria-label="پنهان‌کردن ستون FP8">×</button></div></th>{/if}
-        {#if columnVisible('fp16')}<th class="precision hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('fp16')}>FP16 <small>TFLOPS</small> <i>{sortMark('fp16')}</i></button><button class="hide-column" on:click={() => hideColumn('fp16')} aria-label="پنهان‌کردن ستون FP16">×</button></div></th>{/if}
-        {#if columnVisible('fp32')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('fp32')}>FP32 <small>TFLOPS</small> <i>{sortMark('fp32')}</i></button><button class="hide-column" on:click={() => hideColumn('fp32')} aria-label="پنهان‌کردن ستون FP32">×</button></div></th>{/if}
-        {#if columnVisible('fp64')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('fp64')}>FP64 <small>TFLOPS</small> <i>{sortMark('fp64')}</i></button><button class="hide-column" on:click={() => hideColumn('fp64')} aria-label="پنهان‌کردن ستون FP64">×</button></div></th>{/if}
-      {/if}
-      {#if showExtendedCompute}
-        {#if columnVisible('fp4')}<th class="precision hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('fp4')}>FP4 / MXFP4 <small>TFLOPS</small> <i>{sortMark('fp4')}</i></button><button class="hide-column" on:click={() => hideColumn('fp4')} aria-label="پنهان‌کردن ستون FP4">×</button></div></th>{/if}
-        {#if columnVisible('bf16')}<th class="precision hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('bf16')}>BF16 <small>TFLOPS</small> <i>{sortMark('bf16')}</i></button><button class="hide-column" on:click={() => hideColumn('bf16')} aria-label="پنهان‌کردن ستون BF16">×</button></div></th>{/if}
-        {#if columnVisible('int8')}<th class="precision hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('int8')}>INT8 <small>TOPS</small> <i>{sortMark('int8')}</i></button><button class="hide-column" on:click={() => hideColumn('int8')} aria-label="پنهان‌کردن ستون INT8">×</button></div></th>{/if}
-        {#if columnVisible('int4')}<th class="precision hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('int4')}>INT4 <small>TOPS</small> <i>{sortMark('int4')}</i></button><button class="hide-column" on:click={() => hideColumn('int4')} aria-label="پنهان‌کردن ستون INT4">×</button></div></th>{/if}
-      {/if}
-      {#if columnVisible('workloads')}<th class="hideable"><div class="th-inner"><span>کاربردها</span><button class="hide-column" on:click={() => hideColumn('workloads')} aria-label="پنهان‌کردن ستون کاربردها">×</button></div></th>{/if}
-      {#if showInfra}
-        {#if columnVisible('architecture')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('architecture')}>معماری / سال <i>{sortMark('architecture')}</i></button><button class="hide-column" on:click={() => hideColumn('architecture')} aria-label="پنهان‌کردن ستون معماری">×</button></div></th>{/if}
-        {#if columnVisible('formFactor')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('formFactor')}>فرم‌فکتور <i>{sortMark('formFactor')}</i></button><button class="hide-column" on:click={() => hideColumn('formFactor')} aria-label="پنهان‌کردن ستون فرم‌فکتور">×</button></div></th>{/if}
-        {#if columnVisible('hostInterface')}<th class="hideable"><div class="th-inner"><span>رابط میزبان</span><button class="hide-column" on:click={() => hideColumn('hostInterface')} aria-label="پنهان‌کردن ستون رابط میزبان">×</button></div></th>{/if}
-        {#if columnVisible('interconnect')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('interconnect')}>اتصال چندشتاب‌دهنده <i>{sortMark('interconnect')}</i></button><button class="hide-column" on:click={() => hideColumn('interconnect')} aria-label="پنهان‌کردن ستون اتصال">×</button></div></th>{/if}
-        {#if columnVisible('cooling')}<th class="hideable"><div class="th-inner"><span>خنک‌کاری</span><button class="hide-column" on:click={() => hideColumn('cooling')} aria-label="پنهان‌کردن ستون خنک‌کاری">×</button></div></th>{/if}
-        {#if columnVisible('software')}<th class="hideable"><div class="th-inner"><button class="sort-button" on:click={() => toggleSort('software')}>پشته <i>{sortMark('software')}</i></button><button class="hide-column" on:click={() => hideColumn('software')} aria-label="پنهان‌کردن ستون پشته">×</button></div></th>{/if}
-        {#if columnVisible('partitioning')}<th class="hideable"><div class="th-inner"><span>تقسیم‌پذیری / اشتراک</span><button class="hide-column" on:click={() => hideColumn('partitioning')} aria-label="پنهان‌کردن ستون تقسیم‌پذیری">×</button></div></th>{/if}
-      {/if}
+      {#each activeColumns as column}
+        {@const sortKey = sortableColumn[column]}
+        <th class="hideable" class:cores={column === 'generalCore' || column === 'matrixCore'} class:precision={['fp4','fp8','bf16','fp16','int8','int4'].includes(column)}>
+          <div class="th-inner">
+            {#if sortKey}<button class="sort-button" type="button" on:click={() => toggleSort(sortKey)}>{columnLabel[column]} {#if columnUnit[column]}<small>{columnUnit[column]}</small>{/if}<i>{sortMark(sortKey)}</i></button>{:else}<span>{columnLabel[column]}</span>{/if}
+            <button class="hide-column" type="button" on:click|stopPropagation={() => hideColumn(column)} aria-label={`پنهان‌کردن ستون ${columnLabel[column]}`}>×</button>
+          </div>
+        </th>
+      {/each}
     </tr></thead><tbody>
       {#each visible as gpu}
         <tr class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
           <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={!compared.includes(gpu.id) && compared.length >= 4} on:change={() => toggleCompare(gpu.id)} aria-label={`مقایسه ${gpu.model}`} /></td>
           <td class="detail-cell"><button class:open={expanded.includes(gpu.id)} on:click={() => toggleExpanded(gpu.id)} aria-label={`جزئیات ${gpu.model}`}>⌄</button></td>
           <td class="model"><div class="model-cell"><div class="brand-mark"><img src={brandLogo(gpu)} alt="" /><span>{brandName(gpu)}</span></div><b dir="ltr">{gpu.model}</b><small class:preliminary={gpu.status === 'announced'}>{statusLabel[gpu.status]}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">منبع رسمی ↗</a></div></td>
-          {#if columnVisible('kind')}<td><span class="kind">{productKind(gpu)}</span></td>{/if}
-          {#if columnVisible('segment')}<td><span class="segment">{segmentLabel[gpu.gpuClass]}</span></td>{/if}
-          {#if columnVisible('status')}<td class="text"><b>{statusLabel[gpu.status]}</b><small>{gpu.sourceTier ?? 'سازنده'}</small></td>{/if}
-          {#if columnVisible('memory')}<td class="num"><b>{gpu.memoryDisplay ?? measuredText(gpu, 'memoryGB')}</b><small>{gpu.memoryType.replace(' ECC','')}</small></td>{/if}
-          {#if columnVisible('bandwidth')}<td class="num"><b>{measuredText(gpu, 'bandwidthTBs')}</b><small>{gpu.dataDisclosure?.bandwidthTBs === 'not-published' ? 'مقدار عمومی ندارد' : 'TB/s'}</small></td>{/if}
-          {#if columnVisible('power')}<td class="num"><b>{measuredText(gpu, 'powerW')}</b><small>{gpu.dataDisclosure?.powerW === 'not-published' || gpu.powerW == null ? 'مقدار مستقل ندارد' : 'W'}</small></td>{/if}
-          {#if showCompute}
-            {#if columnVisible('generalCore')}<td class="core-cell"><b>{scalarText(gpu, 'generalCoreCount')}</b><small>{gpu.generalCoreLabel}</small></td>{/if}
-            {#if columnVisible('matrixCore')}<td class="core-cell"><b>{scalarText(gpu, 'matrixCoreCount')}</b><small>{gpu.matrixCoreLabel}</small></td>{/if}
-            {#if columnVisible('fp8')}<td class="rate"><b>{rateText(gpu, 'fp8')}</b>{#if gpu.fp8.dense != null}<small>dense</small>{/if}{#if gpu.fp8.sparse != null}<span>{format(gpu.fp8.sparse)} sparse</span>{/if}</td>{/if}
-            {#if columnVisible('fp16')}<td class="rate"><b>{rateText(gpu, 'fp16')}</b>{#if gpu.fp16.dense != null}<small>dense</small>{/if}{#if gpu.fp16.sparse != null}<span>{format(gpu.fp16.sparse)} sparse</span>{/if}</td>{/if}
-            {#if columnVisible('fp32')}<td class="num"><b>{scalarText(gpu, 'fp32')}</b><small>{gpu.fp32 == null ? disclosureText(gpu, 'fp32') : 'vector'}</small></td>{/if}
-            {#if columnVisible('fp64')}<td class="num"><b>{scalarText(gpu, 'fp64')}</b><small>{gpu.fp64 == null ? disclosureText(gpu, 'fp64') : 'vector'}</small></td>{/if}
-          {/if}
-          {#if showExtendedCompute}
-            {#if columnVisible('fp4')}<td class="rate"><b>{rateText(gpu, 'fp4')}</b>{#if gpu.fp4?.dense != null}<small>dense / قالب سازنده</small>{/if}{#if gpu.fp4?.sparse != null}<span>{format(gpu.fp4.sparse)} sparse</span>{/if}</td>{/if}
-            {#if columnVisible('bf16')}<td class="rate"><b>{rateText(gpu, 'bf16')}</b>{#if gpu.bf16?.dense != null}<small>dense</small>{/if}{#if gpu.bf16?.sparse != null}<span>{format(gpu.bf16.sparse)} sparse</span>{/if}</td>{/if}
-            {#if columnVisible('int8')}<td class="rate"><b>{rateText(gpu, 'int8')}</b>{#if gpu.int8?.dense != null}<small>dense</small>{/if}{#if gpu.int8?.sparse != null}<span>{format(gpu.int8.sparse)} sparse</span>{/if}</td>{/if}
-            {#if columnVisible('int4')}<td class="rate"><b>{rateText(gpu, 'int4')}</b>{#if gpu.int4?.dense != null}<small>dense</small>{/if}{#if gpu.int4?.sparse != null}<span>{format(gpu.int4.sparse)} sparse</span>{/if}</td>{/if}
-          {/if}
-          {#if columnVisible('workloads')}<td class="uses">{#each gpu.workloads as item}<span>{item}</span>{/each}</td>{/if}
-          {#if showInfra}
-            {#if columnVisible('architecture')}<td class="text"><b>{gpu.architecture}</b><small>{fa.format(gpu.year)}</small></td>{/if}
-            {#if columnVisible('formFactor')}<td class="text">{gpu.formFactor}</td>{/if}
-            {#if columnVisible('hostInterface')}<td class="text">{gpu.hostInterface}</td>{/if}
-            {#if columnVisible('interconnect')}<td class="text">{gpu.interconnect}</td>{/if}
-            {#if columnVisible('cooling')}<td class="text">{gpu.cooling}</td>{/if}
-            {#if columnVisible('software')}<td class="text" dir="ltr">{gpu.software}</td>{/if}
-            {#if columnVisible('partitioning')}<td class="text"><b>{gpu.partitioning}</b>{#if gpu.sharedService}<small class="damavand">{gpu.sharedService}</small>{/if}</td>{/if}
-          {/if}
+          {#each activeColumns as column}
+            {#if column === 'kind'}<td><span class="kind">{productKind(gpu)}</span></td>
+            {:else if column === 'segment'}<td><span class="segment">{segmentLabel[gpu.gpuClass]}</span></td>
+            {:else if column === 'status'}<td class="text"><b>{statusLabel[gpu.status]}</b><small>{gpu.sourceTier ?? 'سازنده'}</small></td>
+            {:else if column === 'memory'}<td class="num"><b>{gpu.memoryDisplay ?? measuredText(gpu, 'memoryGB')}</b><small>{gpu.memoryType.replace(' ECC','')}</small></td>
+            {:else if column === 'bandwidth'}<td class="num"><b>{measuredText(gpu, 'bandwidthTBs')}</b><small>{gpu.dataDisclosure?.bandwidthTBs === 'not-published' ? 'مقدار عمومی ندارد' : 'TB/s'}</small></td>
+            {:else if column === 'power'}<td class="num"><b>{measuredText(gpu, 'powerW')}</b><small>{gpu.dataDisclosure?.powerW === 'not-published' || gpu.powerW == null ? 'مقدار مستقل ندارد' : 'W'}</small></td>
+            {:else if column === 'generalCore'}<td class="core-cell"><b>{scalarText(gpu, 'generalCoreCount')}</b><small>{gpu.generalCoreLabel}</small></td>
+            {:else if column === 'matrixCore'}<td class="core-cell"><b>{scalarText(gpu, 'matrixCoreCount')}</b><small>{gpu.matrixCoreLabel}</small></td>
+            {:else if column === 'fp8'}<td class="rate"><b>{rateText(gpu, 'fp8')}</b>{#if gpu.fp8.dense != null}<small>dense</small>{/if}{#if gpu.fp8.sparse != null}<span>{format(gpu.fp8.sparse)} sparse</span>{/if}</td>
+            {:else if column === 'fp16'}<td class="rate"><b>{rateText(gpu, 'fp16')}</b>{#if gpu.fp16.dense != null}<small>dense</small>{/if}{#if gpu.fp16.sparse != null}<span>{format(gpu.fp16.sparse)} sparse</span>{/if}</td>
+            {:else if column === 'fp32'}<td class="num"><b>{scalarText(gpu, 'fp32')}</b><small>{gpu.fp32 == null ? disclosureText(gpu, 'fp32') : 'vector'}</small></td>
+            {:else if column === 'fp64'}<td class="num"><b>{scalarText(gpu, 'fp64')}</b><small>{gpu.fp64 == null ? disclosureText(gpu, 'fp64') : 'vector'}</small></td>
+            {:else if column === 'fp4'}<td class="rate"><b>{rateText(gpu, 'fp4')}</b>{#if gpu.fp4?.dense != null}<small>dense / قالب سازنده</small>{/if}{#if gpu.fp4?.sparse != null}<span>{format(gpu.fp4.sparse)} sparse</span>{/if}</td>
+            {:else if column === 'bf16'}<td class="rate"><b>{rateText(gpu, 'bf16')}</b>{#if gpu.bf16?.dense != null}<small>dense</small>{/if}{#if gpu.bf16?.sparse != null}<span>{format(gpu.bf16.sparse)} sparse</span>{/if}</td>
+            {:else if column === 'int8'}<td class="rate"><b>{rateText(gpu, 'int8')}</b>{#if gpu.int8?.dense != null}<small>dense</small>{/if}{#if gpu.int8?.sparse != null}<span>{format(gpu.int8.sparse)} sparse</span>{/if}</td>
+            {:else if column === 'int4'}<td class="rate"><b>{rateText(gpu, 'int4')}</b>{#if gpu.int4?.dense != null}<small>dense</small>{/if}{#if gpu.int4?.sparse != null}<span>{format(gpu.int4.sparse)} sparse</span>{/if}</td>
+            {:else if column === 'workloads'}<td class="uses">{#each gpu.workloads as item}<span>{item}</span>{/each}</td>
+            {:else if column === 'architecture'}<td class="text"><b>{gpu.architecture}</b><small>{fa.format(gpu.year)}</small></td>
+            {:else if column === 'formFactor'}<td class="text">{gpu.formFactor}</td>
+            {:else if column === 'hostInterface'}<td class="text">{gpu.hostInterface}</td>
+            {:else if column === 'interconnect'}<td class="text">{gpu.interconnect}</td>
+            {:else if column === 'cooling'}<td class="text">{gpu.cooling}</td>
+            {:else if column === 'software'}<td class="text" dir="ltr">{gpu.software}</td>
+            {:else if column === 'partitioning'}<td class="text"><b>{gpu.partitioning}</b>{#if gpu.sharedService}<small class="damavand">{gpu.sharedService}</small>{/if}</td>
+            {/if}
+          {/each}
         </tr>
         {#if expanded.includes(gpu.id)}<tr class="detail-row"><td colspan={totalColumns}><div class="detail-wrap"><div class="detail-summary"><article><small>مناسب برای</small><p>{gpu.bestFit}</p></article><article class="caution"><small>ملاحظهٔ خرید</small><p>{gpu.caution}</p></article><article><small>تعریف محاسبات</small><p>{gpu.computeFootnote ?? gpu.compute}</p></article><article><small>اصل داده</small><p>«اعلام‌نشده» با صفر یا عدم پشتیبانی یکی نیست. اعداد استخراج‌شده از سامانه یا محاسبهٔ مستقل صریحاً با منبع نمایش داده می‌شوند.</p></article></div><div class="spec-groups">{#each specGroups as group}{#if specsFor(gpu, group).length}<section><h4>{group}</h4><dl>{#each specsFor(gpu, group) as spec}<div><dt>{spec.label}</dt><dd>{spec.value}{#if 'basis' in spec && spec.basis}<small class:derived={spec.basis === 'استخراج‌شده از سامانه'}>{spec.basis}</small>{/if}</dd></div>{/each}</dl></section>{/if}{/each}</div><div class="detail-sources"><a class="detail-source" href={gpu.sourceUrl} target="_blank" rel="noreferrer">{gpu.sourceLabel} — منبع اصلی ↗</a>{#if gpu.matrixSourceUrl}<a class="detail-source secondary" href={gpu.matrixSourceUrl} target="_blank" rel="noreferrer">{gpu.matrixSourceLabel} — Matrix Performance ↗</a>{/if}</div></div></td></tr>{/if}
       {:else}<tr class="empty"><td colspan={totalColumns}>با این ترکیب فیلتر، مدلی پیدا نشد. محدودیت حافظه، توان، دقت یا کاربرد را تغییر دهید.</td></tr>{/each}
@@ -332,19 +342,19 @@
 </section>
 
 <style>
-  .explorer{margin-top:34px;border-top:1px solid var(--line);padding-top:38px}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px;max-width:820px;margin-left:auto}.heading>div>small{color:var(--teal);font-size:13px;font-weight:800}.heading h2{margin:7px 0 12px;font-size:clamp(30px,4vw,48px);line-height:1.35;letter-spacing:-1.4px}.heading p{max-width:850px;margin:0;color:var(--muted);font-size:16px;line-height:2}.heading strong{color:var(--ink)}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:12px}.stamp b{font-size:17px}.rules{max-width:820px;margin:24px 0 0 auto;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;max-width:820px;margin-left:auto;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}.scope strong{color:var(--ink)}
+  .explorer{margin-top:0;border-top:1px solid var(--line);padding-top:34px}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px}.heading>div>small{color:var(--teal);font-size:12px;font-weight:800}.heading h2{margin:7px 0 10px;font-size:clamp(28px,3vw,38px);line-height:1.45;letter-spacing:-1px}.heading p{max-width:1050px;margin:0;color:var(--muted);font-size:14px;line-height:2}.heading strong{color:var(--ink)}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:11px}.stamp b{font-size:16px}.rules{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}.scope strong{color:var(--ink)}
   .presets{display:flex;gap:7px;overflow-x:auto;padding:17px 0 9px}.presets button,.filter-actions button,.toolbar button,.compare button{border:1px solid var(--line);background:var(--paper);color:var(--muted);font:inherit;cursor:pointer}.presets button{flex:0 0 auto;border-radius:99px;padding:7px 13px;font-size:12px}.presets button:hover,.presets button.active{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--paper))}
   .filters{border:1px solid var(--line);background:color-mix(in srgb,var(--paper) 94%,var(--soft))}.filters summary{display:flex;justify-content:space-between;padding:12px 15px;font-size:14px;font-weight:800;cursor:pointer}.filters summary span{color:var(--teal);font-weight:600}.filter-grid{padding:14px 15px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;border-top:1px solid var(--line)}.filter-grid label,.filter-grid fieldset{min-width:0;margin:0;padding:0;border:0}.filter-grid label>span,.filter-grid legend{display:block;margin-bottom:5px;color:var(--muted);font-size:12px}.filter-grid input[type=search],.filter-grid select{box-sizing:border-box;width:100%;height:38px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:0 10px;font:inherit;font-size:13px}.search{grid-column:auto}.checks{display:flex;flex-wrap:wrap;gap:5px}.checks label{position:relative}.checks input{position:absolute;opacity:0}.checks label span{display:block;margin:0;border:1px solid var(--line);border-radius:5px;padding:6px 9px;color:var(--muted);font-size:11px;cursor:pointer}.checks input:checked+span{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,var(--paper))}.filter-actions{display:flex;justify-content:space-between;align-items:center;padding:10px 15px;border-top:1px solid var(--line)}.filter-actions>button{border:0;color:var(--teal);font-size:12px}.filter-actions>div{display:flex;align-items:center;flex-wrap:wrap;gap:14px}.filter-actions>div>span{color:var(--muted);font-size:11px}.filter-actions label{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}.filter-actions .show-all{border:1px solid var(--teal);border-radius:99px;padding:4px 9px;color:var(--teal);font-size:11px}
   .summary{margin:16px 0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.summary>div{padding:11px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 9px;align-items:baseline}.summary>div+div{border-inline-start:1px solid var(--line)}.summary small{color:var(--muted);font-size:12px}.summary b{justify-self:end;color:var(--teal);font-size:21px}.summary span{grid-column:1/-1;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .compare{margin:16px 0;border:1px solid color-mix(in srgb,var(--teal) 45%,var(--line));background:color-mix(in srgb,var(--teal) 4%,var(--paper))}.compare>header{padding:10px 14px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}.compare header div{display:flex;gap:8px}.compare header small{color:var(--teal);font-size:11px}.compare header b{font-size:13px}.compare header button{border:0;font-size:11px}.compare>div{display:grid;grid-template-columns:repeat(4,1fr)}.compare article{position:relative;min-width:0;padding:14px}.compare article+article{border-inline-start:1px solid var(--line)}.compare h3{min-height:34px;margin:8px 0 10px;font-size:15px;line-height:1.5;text-align:right}.compare dl{margin:0;display:grid;gap:5px}.compare dl div{display:flex;justify-content:space-between;gap:8px;font-size:12px}.compare dt{color:var(--muted)}.compare dd{margin:0;text-align:left}.remove{position:absolute;inset-inline-end:8px;top:8px;width:24px;height:24px;border-radius:50%}
+  .compare{margin:16px 0;border:1px solid color-mix(in srgb,var(--teal) 45%,var(--line));background:color-mix(in srgb,var(--teal) 4%,var(--paper))}.compare>header{padding:10px 14px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}.compare header div{display:flex;gap:8px}.compare header small{color:var(--teal);font-size:11px}.compare header b{font-size:13px}.compare header button{border:0;font-size:11px}.compare>.compare-shell{display:block;max-height:72vh;overflow:auto;scrollbar-width:thin}.compare-matrix{width:100%;min-width:max-content;border-collapse:separate;border-spacing:0;table-layout:auto}.compare-matrix th,.compare-matrix td{box-sizing:border-box;min-width:240px;max-width:360px;height:auto;padding:10px 12px;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper);color:var(--ink);text-align:right;vertical-align:top;white-space:normal}.compare-matrix thead th{position:sticky;top:0;z-index:3;height:92px;background:var(--navy);color:#d7e7e5}.compare-matrix thead th:not(.compare-label){position:sticky}.compare-matrix thead th>b{display:block;margin-top:8px;font-size:13px;text-align:left}.compare-matrix thead th>a{display:block;margin-top:5px;color:#78d6cd;font-size:9px}.compare-matrix .compare-label{position:sticky;right:0;z-index:2;min-width:180px;width:180px;max-width:180px;color:var(--muted);font-size:11px}.compare-matrix thead .compare-label{z-index:5;display:grid;align-content:center;color:#d7e7e5}.compare-matrix tbody td{font-size:11px;line-height:1.75}.compare-matrix tbody td span{display:block}.compare-matrix tbody td small{display:block;margin-top:3px;color:#b77718;font-size:9px}.compare-matrix tbody td hr{margin:7px 0;border:0;border-top:1px dashed var(--line)}.compare-matrix .not-recorded{color:var(--muted)}.compare-matrix .compare-group th{position:relative;right:auto;z-index:1;min-width:0;width:auto;max-width:none;padding:7px 12px;background:color-mix(in srgb,var(--teal) 12%,var(--paper));color:var(--teal);font-size:11px}.remove{position:absolute;inset-inline-end:8px;top:8px;width:24px;height:24px;border-radius:50%}
   .brand-mark{display:flex;align-items:center;gap:7px;width:max-content;direction:ltr}.brand-mark img{width:26px;height:26px;object-fit:contain}.brand-mark span{font:800 10px/1.1 Arial,sans-serif;letter-spacing:.7px;color:var(--muted)}.kind{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:3px 8px;color:var(--ink);font-size:10px;white-space:nowrap}
   .toolbar{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin:14px 0 8px}.toolbar-copy{display:grid;gap:7px}.toolbar p{max-width:760px;margin:0;color:var(--muted);font-size:12px;line-height:1.8}.toolbar>div:last-child{display:flex;gap:6px;flex:0 0 auto}.toolbar button{padding:7px 10px;font-size:11px}.toolbar .export{border-color:var(--teal);color:var(--teal)}.hidden-columns{display:flex;flex-wrap:wrap;align-items:center;gap:5px}.hidden-columns span{color:var(--muted);font-size:11px}.hidden-columns button{border-radius:99px;padding:4px 8px;color:var(--teal);font-size:10px}.hidden-columns .restore-all{border-color:var(--teal)}
   .table-shell{max-height:78vh;overflow:auto;border:1px solid var(--line);background:var(--paper);scrollbar-width:thin}table{width:max-content;min-width:100%;border-collapse:separate;border-spacing:0;font-size:13px}th,td{box-sizing:border-box;min-width:94px;max-width:210px;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 8px;text-align:right;vertical-align:middle}th{position:sticky;top:0;z-index:4;height:52px;background:var(--navy);color:#d7e7e5;font-size:12px;white-space:nowrap}.th-inner{display:flex;align-items:center;justify-content:space-between;gap:6px}.sort-button{display:flex;align-items:center;gap:5px;min-width:0;flex:1;border:0;background:transparent;color:inherit;padding:0;font:inherit;cursor:pointer}.hide-column{display:grid;place-items:center;flex:0 0 auto;width:19px;height:19px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:transparent;color:#91aaa7;padding:0;font:700 13px/1 Arial,sans-serif;cursor:pointer}.hide-column:hover,.hide-column:focus-visible{border-color:#78d6cd;color:#78d6cd}.sort-button i{min-width:20px;color:#78d6cd;font-style:normal;font-size:10px;text-align:center}.sort-button small{color:#91aaa7;font-size:10px}td{height:66px;background:var(--paper)}tr:hover td{background:color-mix(in srgb,var(--teal) 5%,var(--paper))}tr.selected td{background:color-mix(in srgb,var(--teal) 9%,var(--paper))}tr.roadmap td{background-image:linear-gradient(135deg,transparent 0 48%,color-mix(in srgb,var(--teal) 4%,transparent) 48% 52%,transparent 52%);background-size:9px 9px}.pick{position:sticky;right:0;z-index:7;min-width:54px;width:54px;max-width:54px;text-align:center;background:var(--paper)}th.pick{z-index:10;background:var(--navy)}.pick input{width:15px;height:15px;accent-color:var(--teal)}.detail-head,.detail-cell{position:sticky;right:54px;z-index:7;min-width:62px;width:62px;max-width:62px;text-align:center;background:var(--paper)}th.detail-head{z-index:10;background:var(--navy)}.model{position:sticky;right:116px;z-index:7;min-width:195px;max-width:195px;background:var(--paper);box-shadow:-8px 0 14px rgba(0,0,0,.06)}th.model{z-index:10;background:var(--navy)}.model-cell{display:grid;grid-template-columns:auto 1fr;gap:4px 8px;align-items:center}.model-cell b{grid-column:1/-1;font-size:14px;text-align:left}.model-cell>small{font-size:10px;color:var(--muted)}.model-cell>small.preliminary{color:#b77718}.model-cell a{justify-self:end;color:var(--teal);font-size:10px}.segment{color:var(--muted);font-size:11px}.num{text-align:center;direction:ltr}.num b,.core-cell b,.rate b{display:block;color:var(--ink);font-size:14px;line-height:1.35}.num b:only-child,.core-cell b:only-child,.rate b:only-child{font-size:11px;color:var(--muted)}.num small,.core-cell small,.rate small,.text small{display:block;margin-top:2px;color:var(--muted);font-size:10px}.text{color:var(--muted);font-size:11px;line-height:1.65}.text b{color:var(--ink)}.text small.damavand{margin-top:5px;color:var(--teal);line-height:1.55}.uses{min-width:165px}.uses span{display:inline-block;margin:2px;border:1px solid var(--line);border-radius:99px;padding:3px 7px;color:var(--muted);font-size:10px;white-space:nowrap}.cores{min-width:135px}.precision{min-width:125px}.core-cell{min-width:135px;text-align:center;direction:ltr}.core-cell small{white-space:normal}.rate{min-width:125px;text-align:center;direction:ltr}.rate span{display:block;margin-top:3px;color:var(--teal);font-size:10px}.detail-cell button{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--teal);cursor:pointer;transition:transform .2s,background .2s}.detail-cell button.open{transform:rotate(180deg);background:var(--soft)}.detail-row td{height:auto;padding:0;background:color-mix(in srgb,var(--soft) 40%,var(--paper))}.detail-wrap{position:sticky;right:0;box-sizing:border-box;width:calc(100vw - 424px);padding:20px}.detail-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.detail-summary article{min-height:72px;border-top:1px solid var(--line);padding-top:8px}.detail-summary article.caution{border-top-color:#b76f5d}.detail-summary small{color:var(--teal);font-size:11px}.detail-summary .caution small{color:#b76f5d}.detail-summary p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.85}.spec-groups{margin-top:18px;column-count:4;column-gap:12px}.spec-groups section{display:inline-block;width:100%;margin:0 0 12px;border:1px solid var(--line);background:var(--paper);break-inside:avoid}.spec-groups h4{margin:0;padding:9px 11px;border-bottom:1px solid var(--line);color:var(--teal);font-size:12px}.spec-groups dl{margin:0}.spec-groups dl>div{display:grid;grid-template-columns:minmax(92px,.7fr) 1.3fr;gap:8px;padding:7px 10px;border-bottom:1px solid var(--line)}.spec-groups dl>div:last-child{border-bottom:0}.spec-groups dt{color:var(--muted);font-size:10px}.spec-groups dd{margin:0;color:var(--ink);font-size:11px;line-height:1.6}.spec-groups dd small{display:block;margin-top:2px;color:var(--muted);font-size:9px}.spec-groups dd small.derived{color:#b77718}.detail-sources{display:flex;flex-wrap:wrap;gap:14px}.detail-source{display:inline-flex;margin-top:14px;color:var(--teal);font-size:11px;font-weight:700}.detail-source.secondary{color:#b77718}.empty td{padding:36px;text-align:center;color:var(--muted)}
   .model{min-width:195px;max-width:195px}
-  .method{max-width:820px;margin:20px 0 0 auto;display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line)}.method article{padding:18px}.method article+article{border-inline-start:1px solid var(--line)}.method h3{margin:0 0 7px;font-size:14px}.method p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}
+  .method{margin:24px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.method article{padding:18px}.method article+article{border-inline-start:1px solid var(--line)}.method h3{margin:0 0 7px;font-size:14px}.method p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}
   @media(max-width:1250px){.filter-grid{grid-template-columns:repeat(4,1fr)}.spec-groups{column-count:3}}
   @media(max-width:980px){.detail-wrap{width:calc(100vw - 396px)}}
-  @media(max-width:920px){.filter-grid{grid-template-columns:repeat(2,1fr)}.compare>div{grid-template-columns:repeat(2,1fr)}.detail-summary{grid-template-columns:repeat(2,1fr)}.spec-groups{column-count:2}.method{grid-template-columns:1fr}.method article+article{border-inline-start:0;border-top:1px solid var(--line)}}
+  @media(max-width:920px){.filter-grid{grid-template-columns:repeat(2,1fr)}.detail-summary{grid-template-columns:repeat(2,1fr)}.spec-groups{column-count:2}.method{grid-template-columns:1fr}.method article+article{border-inline-start:0;border-top:1px solid var(--line)}}
   @media(max-width:700px){.detail-wrap{width:calc(100vw - 28px)}}
-  @media(max-width:650px){.explorer{padding-top:28px}.heading{grid-template-columns:1fr;gap:18px}.stamp{max-width:240px}.rules{grid-template-columns:1fr}.rules article+article{border-inline-start:0;border-top:1px solid var(--line)}.scope{grid-template-columns:1fr;gap:4px}.filter-grid{grid-template-columns:1fr}.search{grid-column:auto}.filter-actions{align-items:flex-start;gap:10px;flex-direction:column}.filter-actions>div{display:grid;gap:5px}.summary{grid-template-columns:repeat(2,1fr)}.summary>div:nth-child(3){border-inline-start:0;border-top:1px solid var(--line)}.summary>div:nth-child(4){border-top:1px solid var(--line)}.compare>div{grid-template-columns:1fr}.compare article+article{border-inline-start:0;border-top:1px solid var(--line)}.detail-summary{grid-template-columns:1fr}.spec-groups{column-count:1}.toolbar{align-items:flex-start;flex-direction:column}.model{min-width:180px;max-width:180px}.table-shell{max-height:70vh}table{font-size:11px}}
+  @media(max-width:650px){.explorer{padding-top:28px}.heading{grid-template-columns:1fr;gap:18px}.stamp{max-width:240px}.rules{grid-template-columns:1fr}.rules article+article{border-inline-start:0;border-top:1px solid var(--line)}.scope{grid-template-columns:1fr;gap:4px}.filter-grid{grid-template-columns:1fr}.search{grid-column:auto}.filter-actions{align-items:flex-start;gap:10px;flex-direction:column}.filter-actions>div{display:grid;gap:5px}.summary{grid-template-columns:repeat(2,1fr)}.summary>div:nth-child(3){border-inline-start:0;border-top:1px solid var(--line)}.summary>div:nth-child(4){border-top:1px solid var(--line)}.compare>header{align-items:flex-start;gap:8px}.compare>header div{display:grid}.compare-matrix th,.compare-matrix td{min-width:220px}.compare-matrix .compare-label{min-width:140px;width:140px;max-width:140px}.detail-summary{grid-template-columns:1fr}.spec-groups{column-count:1}.toolbar{align-items:flex-start;flex-direction:column}.model{min-width:180px;max-width:180px}.table-shell{max-height:70vh}table{font-size:11px}}
 </style>

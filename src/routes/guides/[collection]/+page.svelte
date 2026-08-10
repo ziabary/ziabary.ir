@@ -49,7 +49,9 @@
 </svelte:head>
 
 <main>
-  <PageHero eyebrow={`فنی‌جات / ${collection.eyebrow}`} title={collection.title} lead={collection.subtitle} />
+  <div class:gpu-page-hero={isGpuCollection}>
+    <PageHero eyebrow={`فنی‌جات / ${collection.eyebrow}`} title={collection.title} lead={collection.subtitle} />
+  </div>
 
   <section class="wrap guide-series-layout" class:gpu-collection={isGpuCollection}>
     <aside class="guide-series-navigation" aria-label="فهرست مجموعه">
@@ -67,21 +69,23 @@
     </aside>
 
     <div class="guide-series-body">
-      <figure class="guide-series-cover">
-        <img src={collection.image} alt={collection.imageAlt} width="1600" height="900" />
-      </figure>
+      <div class="guide-series-overview">
+        <figure class="guide-series-cover">
+          <img src={collection.image} alt={collection.imageAlt} width="1600" height="900" />
+        </figure>
 
-      <div class="guide-series-intro">
-        <div>
-          <small>دربارهٔ این مجموعه</small>
-          <p>{collection.intro}</p>
+        <div class="guide-series-intro">
+          <div>
+            <small>دربارهٔ این مجموعه</small>
+            <p>{collection.intro}</p>
+          </div>
+          <dl>
+            <div><dt>مقاله‌ها</dt><dd>{persianNumber.format(articleCount(collection))}</dd></div>
+            <div><dt>محتوای زنده</dt><dd>{persianNumber.format(nonArticleCount(collection))}</dd></div>
+            <div><dt>ترتیب</dt><dd>دستی</dd></div>
+            <div><dt>به‌روزرسانی</dt><dd>پیوسته</dd></div>
+          </dl>
         </div>
-        <dl>
-          <div><dt>مقاله‌ها</dt><dd>{persianNumber.format(articleCount(collection))}</dd></div>
-          <div><dt>محتوای زنده</dt><dd>{persianNumber.format(nonArticleCount(collection))}</dd></div>
-          <div><dt>ترتیب</dt><dd>دستی</dd></div>
-          <div><dt>به‌روزرسانی</dt><dd>پیوسته</dd></div>
-        </dl>
       </div>
 
       {#if collection.items.length}
@@ -131,6 +135,24 @@
     gap: 24px;
   }
 
+  .gpu-page-hero {
+    width: calc(100% - 412px);
+    margin-right: 224px;
+    margin-left: 188px;
+  }
+  .gpu-page-hero :global(.page-hero) {
+    width: 100%;
+    padding-block: 42px 34px;
+    text-align: right;
+  }
+  .gpu-page-hero :global(.page-hero h1) {
+    max-width: 920px;
+    margin-bottom: 12px;
+    font-size: clamp(36px, 4.2vw, 58px);
+    line-height: 1.25;
+  }
+  .gpu-page-hero :global(.page-hero > p:last-child) { max-width: 900px; font-size: 15px; }
+
   .guide-series-navigation {
     position: sticky;
     top: 105px;
@@ -175,9 +197,17 @@
   .back-link { color: var(--teal); font-size: 10px; font-weight: 700; }
 
   .guide-series-body { min-width: 0; }
+  .guide-series-overview { display: contents; }
   .guide-series-cover { margin: 0; aspect-ratio: 16 / 8.5; overflow: hidden; border-radius: 15px; background: var(--navy); }
   .guide-series-cover img { width: 100%; height: 100%; display: block; object-fit: cover; }
-  .gpu-collection .guide-series-cover { max-width: 820px; margin-left: auto; }
+  .gpu-collection .guide-series-overview {
+    display: grid;
+    grid-template-columns: minmax(420px, 1.2fr) minmax(330px, .8fr);
+    gap: 28px;
+    align-items: stretch;
+    padding: 30px 0 38px;
+  }
+  .gpu-collection .guide-series-cover { max-width: none; min-height: 300px; margin: 0; aspect-ratio: auto; }
 
   .guide-series-intro {
     display: grid;
@@ -187,7 +217,16 @@
     padding: 38px 0 48px;
     border-bottom: 1px solid var(--line);
   }
-  .gpu-collection .guide-series-intro { max-width: 820px; margin-left: auto; }
+  .gpu-collection .guide-series-intro {
+    max-width: none;
+    margin: 0;
+    padding: 26px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-content: end;
+    border: 1px solid var(--line);
+  }
+  .gpu-collection .guide-series-intro dl { max-width: none; }
 
   .guide-series-intro small { color: var(--teal); font-size: 9px; }
   .guide-series-intro p { margin: 11px 0 0; color: color-mix(in srgb, var(--ink) 80%, var(--muted)); font-size: 14px; line-height: 2.1; }
@@ -222,6 +261,9 @@
   @media (max-width: 980px) {
     .guide-series-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 38px; }
     .guide-series-layout.gpu-collection { width: calc(100% - 180px); margin-right: 10px; margin-left: 170px; grid-template-columns: 170px minmax(0, 1fr); gap: 28px; }
+    .gpu-page-hero { width: calc(100% - 378px); margin-right: 208px; margin-left: 170px; }
+    .gpu-collection .guide-series-overview { grid-template-columns: 1fr; }
+    .gpu-collection .guide-series-cover { min-height: 0; aspect-ratio: 16 / 8.5; }
     .guide-series-intro { grid-template-columns: 1fr; gap: 24px; }
     .guide-series-intro dl { max-width: 360px; }
   }
@@ -229,6 +271,9 @@
   @media (max-width: 700px) {
     .guide-series-layout { grid-template-columns: 1fr; gap: 24px; }
     .guide-series-layout.gpu-collection { width: min(100% - 28px, 1500px); margin-inline: auto; grid-template-columns: 1fr; }
+    .gpu-page-hero { width: min(100% - 28px, 1500px); margin-inline: auto; }
+    .gpu-page-hero :global(.page-hero) { padding-block: 34px 28px; }
+    .gpu-page-hero :global(.page-hero h1) { font-size: 36px; }
     .guide-series-navigation {
       position: static;
       overflow-x: auto;
