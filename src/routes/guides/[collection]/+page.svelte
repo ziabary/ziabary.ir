@@ -265,6 +265,9 @@
   .guide-article-prose :global(a) { color: var(--teal); text-decoration: underline; text-underline-offset: 4px; }
   .guide-article-prose :global(img) { display: block; max-width: 100%; height: auto; margin: 30px auto; border-radius: 10px; }
   .guide-article-prose :global(blockquote) { margin: 32px 0; padding: 8px 20px; border-inline-start: 3px solid var(--teal); background: var(--soft); }
+  .guide-article-prose :global(table) { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 28px 0; font-size: 12px; line-height: 1.9; }
+  .guide-article-prose :global(th), .guide-article-prose :global(td) { min-width: 150px; padding: 11px 13px; border: 1px solid var(--line); text-align: right; vertical-align: top; }
+  .guide-article-prose :global(th) { background: var(--soft); color: var(--ink); font-weight: 700; }
   .standalone-link { margin-top: 32px !important; padding: 9px 13px; border: 1px solid var(--line); border-radius: 99px; }
 
   .guide-empty {

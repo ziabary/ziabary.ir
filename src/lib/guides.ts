@@ -81,15 +81,15 @@ export const guideCollections: GuideCollection[] = [
       },
       {
         id: 'dgx-and-standard-gpu-servers',
-        title: 'سرورهای DGX و سرورهای معمولی GPU',
-        subtitle: 'تفاوت سرورهای مخصوص SXM و سرورهای PCIe در انتخاب شاسی و پیکربندی.',
+        title: 'DGX، HGX یا سرور معمولی GPU؟',
+        subtitle: 'مرز میان محصول کامل NVIDIA، سکوی هشت‌GPU سازندگان سرور و شاسی‌های انعطاف‌پذیر PCIe.',
         kind: 'article',
         href: '/articles/dgx-and-standard-gpu-servers/'
       },
       {
         id: 'pcie-gpu-server-selection',
-        title: 'انتخاب سرور برای کارت‌های GPU با رابط PCIe',
-        subtitle: 'ملاحظات سازگاری، ارتفاع و خنک‌سازی در سرورهای PCIe با کارت‌های صنعتی و RTX.',
+        title: 'چگونه سرور بهینه برای GPU انتخاب کنیم؟',
+        subtitle: 'از نسل PCIe و توپولوژی اسلات تا ابعاد کارت، توان، خنک‌کاری، NUMA و BOM نهایی.',
         kind: 'article',
         href: '/articles/pcie-gpu-server-selection/'
       }

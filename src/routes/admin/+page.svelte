@@ -12,6 +12,8 @@
   let lang: 'fa' | 'en' | 'es' = 'fa';
   let date = new Date().toISOString().slice(0, 10);
   let faDate = '';
+  let updated = '';
+  let faUpdated = '';
   let category = 'یادداشت';
   let excerpt = '';
   let readTime = '۸ دقیقه';
@@ -63,6 +65,8 @@
       `lang: ${lang}`,
       `date: ${date}`,
       `faDate: ${yaml(faDate || 'تاریخ فارسی')}`,
+      ...(updated ? [`updated: ${updated}`] : []),
+      ...(updated && faUpdated.trim() ? [`faUpdated: ${yaml(faUpdated)}`] : []),
       `category: ${yaml(category)}`,
       `excerpt: ${yaml(excerpt || 'خلاصه مقاله')}`,
       `readTime: ${yaml(readTime)}`,
@@ -263,6 +267,10 @@
       const key = line.slice(0, separator).trim();
       const value = line.slice(separator + 1).trim();
       if (key === 'related') {
+        if (value.startsWith('[') && value.endsWith(']')) {
+          related.push(...value.slice(1, -1).split(',').map((item) => parseScalar(item.trim())).filter(Boolean));
+          continue;
+        }
         readingRelated = true;
         continue;
       }
@@ -274,6 +282,8 @@
     lang = values.lang === 'en' || values.lang === 'es' ? values.lang : 'fa';
     date = values.date ?? date;
     faDate = values.faDate ?? '';
+    updated = values.updated ?? '';
+    faUpdated = values.faUpdated ?? '';
     category = values.category ?? 'یادداشت';
     excerpt = values.excerpt ?? '';
     readTime = values.readTime ?? '۸ دقیقه';
@@ -387,6 +397,8 @@
           <label><span>زبان</span><select bind:value={lang}><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option></select></label>
           <label><span>تاریخ میلادی</span><input bind:value={date} type="date" dir="ltr" /></label>
           <label><span>تاریخ نمایشی</span><input bind:value={faDate} placeholder="۱۸ مرداد ۱۴۰۵" /></label>
+          <label><span>آخرین بازبینی (اختیاری)</span><input bind:value={updated} type="date" dir="ltr" /></label>
+          <label><span>نمایش آخرین بازبینی</span><input bind:value={faUpdated} placeholder="۱۹ مرداد ۱۴۰۵" disabled={!updated} /></label>
           <label><span>دسته</span><input bind:value={category} list="categories" /></label>
           <datalist id="categories"><option value="یادداشت"></option><option value="تحلیل"></option><option value="راهنمای فنی"></option><option value="حکمرانی هوش مصنوعی"></option></datalist>
           <label><span>زمان مطالعه</span><input bind:value={readTime} /></label>

@@ -15,7 +15,7 @@
 
 <svelte:head><title>نوشته‌ها | مهران ضیابری</title></svelte:head>
 <main>
-  <PageHero eyebrow="آرشیو" title="نوشته‌ها و یادداشت‌ها" lead="تحلیل‌های فنی و مدیریتی؛ مرتب‌شده بر اساس زمان و قابل جستجو بر اساس موضوع." />
+  <PageHero eyebrow="آرشیو" title="نوشته‌ها و یادداشت‌ها" lead="تحلیل‌های فنی و مدیریتی؛ مرتب‌شده بر اساس آخرین انتشار یا بازبینی و قابل جستجو بر اساس موضوع." />
   <section class="wrap archive-tools"><label>⌕<input bind:value={query} placeholder="جستجو در عنوان و خلاصه…" /></label><div>{#each categories as item}<button class:active={category === item} onclick={() => (category = item)}>{item}</button>{/each}</div></section>
   <section class="wrap">
     <PaginatedArchive items={filtered} pageClass="archive-list" resetKey={`${category}:${query}`}>
