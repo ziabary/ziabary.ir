@@ -9,6 +9,8 @@
     resetKey?: string;
     pageSize?: number;
     estimatedPageHeight?: number;
+    emptyLabel?: string;
+    statusLabel?: (first: number, last: number, total: number) => string;
   };
 
   let {
@@ -17,7 +19,9 @@
     pageClass,
     resetKey = '',
     pageSize = 10,
-    estimatedPageHeight = 1800
+    estimatedPageHeight = 1800,
+    emptyLabel = 'موردی با این انتخاب پیدا نشد.',
+    statusLabel = (first, last, total) => `نمایش موارد ${first} تا ${last} از ${total}`
   }: Props = $props();
 
   let page = $state(0);
@@ -110,7 +114,7 @@
 
   <div class={pageClass} bind:this={pageElement}>
     {#if items.length === 0}
-      <p class="virtual-empty">موردی با این انتخاب پیدا نشد.</p>
+      <p class="virtual-empty">{emptyLabel}</p>
     {:else}
       {#each visibleItems as current, index (`${resetKey}:${start + index}`)}
         {@render item(current, start + index)}
@@ -122,6 +126,6 @@
   <div class="virtual-spacer" style:height="{bottomSpace}px" aria-hidden="true"></div>
 
   <span class="screen-reader-only" aria-live="polite">
-    نمایش موارد {firstVisible} تا {lastVisible} از {items.length}
+    {statusLabel(firstVisible, lastVisible, items.length)}
   </span>
 </div>
