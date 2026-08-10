@@ -1,5 +1,5 @@
 <script lang="ts">
-  import VirtualArchive from '$lib/components/VirtualArchive.svelte';
+  import PaginatedArchive from '$lib/components/PaginatedArchive.svelte';
   import { articles } from '$lib/content';
 
   const englishArticles = articles.filter((article) => article.lang === 'en');
@@ -35,12 +35,15 @@
   </section>
 
   <section class="wrap">
-    <VirtualArchive
+    <PaginatedArchive
       items={filtered}
       pageClass="archive-list"
       resetKey={`${category}:${query}`}
-      estimatedPageHeight={1750}
+      locale="en"
       emptyLabel="No articles match this selection."
+      previousLabel="Previous"
+      nextLabel="Next"
+      navigationLabel="Article pages"
       statusLabel={(first, last, total) => `Showing items ${first} to ${last} of ${total}`}
     >
       {#snippet item(article)}
@@ -54,6 +57,6 @@
           </div>
         </article>
       {/snippet}
-    </VirtualArchive>
+    </PaginatedArchive>
   </section>
 </main>
