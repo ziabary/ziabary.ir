@@ -127,8 +127,10 @@
 
   $: sortMarks = new Map(sorts.map((rule, index) => [rule.key, `${fa.format(index + 1)} ${rule.direction === 'desc' ? '↓' : '↑'}`]));
 
-  function sortMark(key: SortKey) {
-    return sortMarks.get(key) ?? '—';
+  function sortMark(key: SortKey, currentSorts: SortRule[]) {
+    const index = currentSorts.findIndex((rule) => rule.key === key);
+    if (index < 0) return '—';
+    return `${fa.format(index + 1)} ${currentSorts[index].direction === 'desc' ? '↓' : '↑'}`;
   }
 
   function sortValue(record: ServerRecord, key: SortKey): string | number | null {
@@ -349,8 +351,8 @@
 
   <div class="table-shell" role="region" aria-label="جدول سرورهای GPU">
     <table><thead><tr>
-      <th class="pick">مقایسه</th><th class="detail-head">جزئیات</th><th class="model"><button class="sort-button" class:active={sortMarks.has('model')} type="button" on:click={() => toggleSort('model')}>مدل <i>{sortMark('model')}</i></button></th>
-      {#each activeColumns as column}<th class:wide={['cpu','memory','storage','expansion','power','validated'].includes(column)}><div class="th-inner"><button class="sort-button" class:active={sortableColumn[column] && sortMarks.has(sortableColumn[column]!)} type="button" on:click={() => sortableColumn[column] && toggleSort(sortableColumn[column]!)}>{columnLabel[column]} <i>{sortableColumn[column] ? sortMark(sortableColumn[column]!) : '—'}</i></button><button class="hide-column" type="button" aria-label={`پنهان‌کردن ستون ${columnLabel[column]}`} on:click={() => hideColumn(column)}>×</button></div></th>{/each}
+      <th class="pick">مقایسه</th><th class="detail-head">جزئیات</th><th class="model"><button class="sort-button" class:active={sortMarks.has('model')} type="button" on:click={() => toggleSort('model')}>مدل <i>{sortMark('model', sorts)}</i></button></th>
+      {#each activeColumns as column}<th class:wide={['cpu','memory','storage','expansion','power','validated'].includes(column)}><div class="th-inner"><button class="sort-button" class:active={sortableColumn[column] && sortMarks.has(sortableColumn[column]!)} type="button" on:click={() => sortableColumn[column] && toggleSort(sortableColumn[column]!)}>{columnLabel[column]} <i>{sortableColumn[column] ? sortMark(sortableColumn[column]!, sorts) : '—'}</i></button><button class="hide-column" type="button" aria-label={`پنهان‌کردن ستون ${columnLabel[column]}`} on:click={() => hideColumn(column)}>×</button></div></th>{/each}
     </tr></thead><tbody>
       {#each visible as record}<tr class:selected={compared.includes(record.id)}>
         <td class="pick"><input type="checkbox" checked={compared.includes(record.id)} disabled={!compared.includes(record.id) && compared.length >= 4} aria-label={`افزودن ${record.model} به مقایسه`} on:change={() => toggleCompare(record.id)} /></td>
