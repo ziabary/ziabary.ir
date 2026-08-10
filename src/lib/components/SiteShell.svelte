@@ -49,7 +49,7 @@
       .map((article) => ({
         title: article.title,
         excerpt: article.excerpt,
-        href: locale === 'en' ? `/en/articles/${article.slug}/` : `/articles/${article.slug}/`,
+        href: locale === 'fa' ? `/articles/${article.slug}/` : `/${locale}/articles/${article.slug}/`,
         type: article.category
       })),
     ...(locale === 'fa' ? courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' })) : [])
@@ -61,7 +61,7 @@
     : searchItems.slice(0, 5);
 
   function localHref(fa: string, anchor: string) {
-    if (locale === 'en' && fa === '/articles/') return '/en/articles/';
+    if (locale !== 'fa' && fa === '/articles/') return `/${locale}/articles/`;
     return locale === 'fa' ? fa : `/${locale}/#${anchor}`;
   }
 

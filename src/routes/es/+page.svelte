@@ -9,7 +9,7 @@
       el impacto social.
     </p>
     <div class="intl-actions">
-      <a class="button primary" href="#writing">Artículos seleccionados</a>
+      <a class="button primary" href="/es/articles/">Artículos en español</a>
       <a class="button ghost" href="#resume">Currículum</a>
     </div>
   </section>
@@ -24,23 +24,24 @@
 
   <section class="wrap intl-section" id="writing">
     <p class="eyebrow">Artículos</p>
-    <h2>Las ediciones internacionales no serán simples traducciones.</h2>
+    <h2>Ensayos persas seleccionados, adaptados a un contexto más amplio.</h2>
     <p>
-      Publicaré textos originales seleccionados en español e inglés. Esta primera versión
-      presenta los temas y enlaza al archivo persa.
+      El archivo reúne ediciones cuidadas de textos cuyo argumento conserva valor fuera de
+      Irán. El contexto local se explica; la experiencia y la tesis permanecen intactas.
     </p>
     <div class="intl-cards">
-      <a href="/articles/ai-cosmetic-surgery-or-chemotherapy/">
-        <small>GOBERNANZA DE IA</small>
-        <b>IA: ¿cirugía estética o quimioterapia?</b>
-        <span>Adoptar IA puede exigir rediseñar la organización, no decorar procesos antiguos.</span>
+      <a href="/es/articles/construir-targoman-sin-padrinos/">
+        <small>IA · EXPERIENCIA</small>
+        <b>Construir Targoman sin padrinos</b>
+        <span>Ocho años de cambios técnicos, contratos públicos difíciles y un servicio real.</span>
       </a>
-      <a href="/articles/national-ai-platform/">
-        <small>POLÍTICA TECNOLÓGICA</small>
-        <b>Un lanzamiento no sustituye a la arquitectura</b>
-        <span>Una crítica a la plataforma nacional de IA y a sus decisiones de política.</span>
+      <a href="/es/articles/cuando-un-otp-por-sms-reduce-la-seguridad/">
+        <small>SEGURIDAD · ARQUITECTURA</small>
+        <b>Cuando un OTP por SMS reduce la seguridad</b>
+        <span>Un código temporal no convierte por sí solo la posesión en un segundo factor.</span>
       </a>
     </div>
+    <a class="text-link" href="/es/articles/">Ver el archivo completo en español →</a>
   </section>
 
   <section class="wrap intl-split" id="media">

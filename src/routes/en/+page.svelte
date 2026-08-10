@@ -29,24 +29,23 @@
   </section>
   <section class="wrap intl-section" id="writing">
     <p class="eyebrow">Selected writing</p>
-    <h2>Ideas do not need to be translations.</h2>
+    <h2>Selected Persian essays, rewritten for their wider context.</h2>
     <p>
-      Restored technical field notes from my former English blog now sit beside
-      new original essays. The archive keeps their historical context instead
-      of presenting old commands as current instructions.
+      The international archive now brings together restored technical field notes
+      and carefully adapted editions of Persian essays whose arguments travel beyond Iran.
     </p>
     <div class="intl-cards">
-      <a href="/en/articles/install-tbs6980-tbs6981-linux/"
-        ><small>LINUX · HARDWARE</small><b>Installing TBS6980/TBS6981 cards on Linux</b
+      <a href="/en/articles/building-targoman-without-patronage/"
+        ><small>AI · FIELD NOTES</small><b>Building Targoman without patronage</b
         ><span
-          >A restored 2011 guide for the DVB-S/S2 cards that became a reference
-          for hardware users and vendors.</span
+          >Eight years of changing architectures, difficult public contracts and
+          turning a Persian MT prototype into a real service.</span
         ></a
-      ><a href="/en/articles/install-nupic-opensuse/"
-        ><small>ARTIFICIAL INTELLIGENCE</small><b>Running NuPIC 1.7.1 on openSUSE</b
+      ><a href="/en/articles/sms-otp-security-design/"
+        ><small>SECURITY · ARCHITECTURE</small><b>When an SMS one-time password weakens security</b
         ><span
-          >A historical note from early experiments with Hierarchical Temporal
-          Memory and the Numenta platform.</span
+          >Why replacing a memorised secret with possession of a phone is not
+          automatically two-factor authentication.</span
         ></a
       >
     </div>
