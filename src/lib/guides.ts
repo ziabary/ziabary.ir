@@ -37,7 +37,7 @@ export const guideCollections: GuideCollection[] = [
     imageAlt: 'چند شتاب‌دهندهٔ محاسباتی با اندازه و ظرفیت متفاوت در یک معماری هوش مصنوعی',
     intro: 'انتخاب GPU از مقایسهٔ نام مدل‌ها آغاز نمی‌شود؛ بار کاری، حافظه، دقت محاسبات، توپولوژی و محدودیت‌های استقرار تعیین می‌کنند کدام گزینه واقعاً مناسب است.',
     items: [
-            {
+      {
         id: 'gpu-comparison-table',
         title: 'جدول تعاملی انتخاب GPU و شتاب‌دهندهٔ هوش مصنوعی',
         subtitle: 'مقایسهٔ زندهٔ حافظه، پهنای‌باند، توان، فرم‌فکتور، اتصال، تقسیم‌پذیری و تناسب کاربردی',
@@ -59,11 +59,18 @@ export const guideCollections: GuideCollection[] = [
         href: '/articles/pcie-vs-sxm-for-ai/'
       },
       {
-        id: 'dgx-and-standard-gpu-servers',
-        title: 'سرورهای DGX و سرورهای معمولی GPU',
-        subtitle: 'تفاوت سرورهای مخصوص SXM و سرورهای PCIe در انتخاب شاسی و پیکربندی.',
+        id: 'choosing-gpu-for-ai',
+        title: 'نحوه انتخاب پردازنده گرافیکی برای هوش مصنوعی',
+        subtitle: 'انتخاب بر پایهٔ بار کاری، نسبت کارایی به هزینه و محدودیت واقعی استقرار.',
         kind: 'article',
-        href: '/articles/dgx-and-standard-gpu-servers/'
+        href: '/articles/choosing-gpu-for-ai/'
+      },
+      {
+        id: 'server-comparison-table',
+        title: 'جدول تعاملی مقایسه سرورهای GPU',
+        subtitle: 'مقایسهٔ نسل PCIe، تعداد و عرض کارت، توان، ارتفاع، خنک‌کاری و پلتفرم با منابع رسمی سازندگان.',
+        kind: 'interactive',
+        href: '#server-comparison-table'
       },
       {
         id: 'gpu-server-platform-components',
@@ -73,18 +80,18 @@ export const guideCollections: GuideCollection[] = [
         href: '/articles/gpu-server-platform-components/'
       },
       {
+        id: 'dgx-and-standard-gpu-servers',
+        title: 'سرورهای DGX و سرورهای معمولی GPU',
+        subtitle: 'تفاوت سرورهای مخصوص SXM و سرورهای PCIe در انتخاب شاسی و پیکربندی.',
+        kind: 'article',
+        href: '/articles/dgx-and-standard-gpu-servers/'
+      },
+      {
         id: 'pcie-gpu-server-selection',
         title: 'انتخاب سرور برای کارت‌های GPU با رابط PCIe',
         subtitle: 'ملاحظات سازگاری، ارتفاع و خنک‌سازی در سرورهای PCIe با کارت‌های صنعتی و RTX.',
         kind: 'article',
         href: '/articles/pcie-gpu-server-selection/'
-      },
-     {
-        id: 'server-comparison-table',
-        title: 'جدول تعاملی مقایسه سرورهای GPU',
-        subtitle: 'مقایسهٔ پلتفرم، توان، سیستم خنک‌کننده و سازگاری سرورها با خانواده‌های GPU',
-        kind: 'interactive',
-        href: '#server-comparison-table'
       }
     ]
   },

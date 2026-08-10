@@ -6,8 +6,8 @@ date: 2025-05-19
 faDate: "۲۹ اردیبهشت ۱۴۰۴"
 category: زیرساخت هوش مصنوعی
 excerpt: "تفکیک سرورهای DGX مبتنی بر SXM از سرورهای معمولی مبتنی بر PCIe."
-source: TPD-DMV-GEN-001.v1
-draft: true
+readTime: "۳ دقیقه"
+related: ["pcie-vs-sxm-for-ai", "gpu-server-platform-components", "pcie-gpu-server-selection"]
 ---
 
 ### انواع سرورها

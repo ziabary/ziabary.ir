@@ -3,6 +3,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
+  import { getArticleModule } from '$lib/content';
   import { articleCount, guideKindLabels, nonArticleCount } from '$lib/guides';
 
   export let data;
@@ -11,6 +12,7 @@
   const persianNumber = new Intl.NumberFormat('fa-IR');
   const isGpuCollection = collection.slug === 'gpu-selection';
   let activeSection = collection.items[0]?.id ?? 'overview';
+  const articleContent = (slug: string) => getArticleModule(slug)?.default;
 
   onMount(() => {
     const sections = Array.from(document.querySelectorAll<HTMLElement>('.guide-entry[id]'));
@@ -101,13 +103,16 @@
                 <ServerComparison />
               </div>
             {:else}
-              <article id={item.id} class="guide-entry">
+              <article id={item.id} class="guide-entry guide-article">
                 <header>
                   <small>{persianNumber.format(index + 1).padStart(2, '۰')}</small>
                   <div><span>{guideKindLabels[item.kind]}</span><h2>{item.title}</h2></div>
                 </header>
                 <p>{item.subtitle}</p>
-                {#if item.href}<a href={item.href}>مشاهده محتوا ←</a>{/if}
+                {#if item.kind === 'article' && articleContent(item.id)}
+                  <div class="guide-article-prose"><svelte:component this={articleContent(item.id)} /></div>
+                {/if}
+                {#if item.href}<a class="standalone-link" href={item.href}>بازکردن نسخهٔ مستقل مقاله ←</a>{/if}
               </article>
             {/if}
           {/each}
@@ -249,6 +254,18 @@
   .guide-entry > p { margin: 14px 74px 0 0; color: var(--muted); font-size: 13px; line-height: 2; }
   .guide-entry > a { display: inline-block; margin: 20px 74px 0 0; color: var(--teal); font-size: 10px; font-weight: 700; }
   .gpu-table-entry { padding-top: 0; border-bottom: 0; }
+  .guide-article { padding-block: 64px; }
+  .guide-article-prose { max-width: 820px; margin: 34px 74px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
+  .guide-article-prose :global(h2), .guide-article-prose :global(h3), .guide-article-prose :global(h4), .guide-article-prose :global(h5) { scroll-margin-top: 110px; line-height: 1.7; }
+  .guide-article-prose :global(h2) { margin: 42px 0 12px; font-size: 27px; }
+  .guide-article-prose :global(h3) { margin: 38px 0 10px; font-size: 22px; }
+  .guide-article-prose :global(h4), .guide-article-prose :global(h5) { margin: 32px 0 8px; font-size: 18px; }
+  .guide-article-prose :global(p), .guide-article-prose :global(li) { color: color-mix(in srgb, var(--ink) 86%, var(--muted)); font-size: 15px; line-height: 2.2; }
+  .guide-article-prose :global(ul), .guide-article-prose :global(ol) { padding-inline-start: 24px; }
+  .guide-article-prose :global(a) { color: var(--teal); text-decoration: underline; text-underline-offset: 4px; }
+  .guide-article-prose :global(img) { display: block; max-width: 100%; height: auto; margin: 30px auto; border-radius: 10px; }
+  .guide-article-prose :global(blockquote) { margin: 32px 0; padding: 8px 20px; border-inline-start: 3px solid var(--teal); background: var(--soft); }
+  .standalone-link { margin-top: 32px !important; padding: 9px 13px; border: 1px solid var(--line); border-radius: 99px; }
 
   .guide-empty {
     min-height: 230px;
@@ -297,7 +314,7 @@
     .guide-series-cover { aspect-ratio: 16 / 10; }
     .guide-series-intro { padding-top: 26px; }
     .guide-entry header { grid-template-columns: 48px 1fr; }
-    .guide-entry > p, .guide-entry > a { margin-inline: 0; }
+    .guide-entry > p, .guide-entry > a, .guide-article-prose { margin-inline: 0; }
     .guide-empty { grid-template-columns: 70px 1fr; gap: 15px; }
     .guide-empty > span { font-size: 42px; }
   }
