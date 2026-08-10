@@ -123,9 +123,10 @@
   }
 
   .guide-series-layout.gpu-collection {
-    width: min(1500px, calc(100% - 48px));
-    grid-template-columns: 210px minmax(0, 1fr);
-    gap: 52px;
+    width: calc(100% - 24px);
+    max-width: none;
+    grid-template-columns: 188px minmax(0, 1fr);
+    gap: 24px;
   }
 
   .guide-series-navigation {
