@@ -1,11 +1,12 @@
 <script lang="ts">
   import type { GuideCollection } from '$lib/guides';
-  import { articleCount } from '$lib/guides';
+  import { articleCount, nonArticleCount } from '$lib/guides';
 
   export let collection: GuideCollection;
 
   const persianNumber = new Intl.NumberFormat('fa-IR');
   $: count = articleCount(collection);
+  $: extraCount = nonArticleCount(collection);
 </script>
 
 <a class="guide-collection-card" href={`/guides/${collection.slug}/`} aria-label={collection.title}>
@@ -16,7 +17,10 @@
     <h2>{collection.title}</h2>
     <p>{collection.subtitle}</p>
     <div class="guide-card-meta">
-      <span>{persianNumber.format(count)} مقاله</span>
+      <span>
+        {persianNumber.format(count)} مقاله
+        {#if extraCount} · {persianNumber.format(extraCount)} محتوای تعاملی{/if}
+      </span>
       <i aria-hidden="true">←</i>
     </div>
   </div>
