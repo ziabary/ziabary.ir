@@ -22,6 +22,8 @@ export type GpuComputeSpec = {
   int8?: GpuComputeRate;
   int4?: GpuComputeRate;
   computeFootnote?: string;
+  matrixSourceUrl?: string;
+  matrixSourceLabel?: string;
   disclosure?: Partial<Record<'generalCoreCount' | 'matrixCoreCount' | 'fp4' | 'fp8' | 'bf16' | 'fp16' | 'fp32' | 'fp64' | 'int8' | 'int4', 'published' | 'derived' | 'not-published' | 'not-supported' | 'not-applicable'>>;
 };
 
@@ -51,6 +53,7 @@ export type GpuBaseRecord = {
   compute: string;
   interconnect: string;
   partitioning: string;
+  sharedService?: string;
   software: string;
   workloads: GpuWorkload[];
   bestFit: string;
@@ -515,17 +518,17 @@ const computeSpecs: Record<string, GpuComputeSpec> = {
   },
   'nvidia-rubin': {
     generalCoreCount: null, generalCoreLabel: 'CUDA Core', matrixCoreCount: null, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 17500 }, fp16: { dense: 4000 }, fp32: 130, fp64: 33,
+    fp8: { dense: 17500 }, fp16: { dense: 4000 }, bf16: { dense: 4000 }, fp32: 130, fp64: 33,
     computeFootnote: 'مشخصات اولیه و تا سقف اعلامی هر GPU؛ FP8/FP6 برای آموزش و به‌صورت dense است.'
   },
   'nvidia-b300': {
     generalCoreCount: 20480, generalCoreLabel: 'CUDA Core (تا)', matrixCoreCount: 640, matrixCoreLabel: 'Tensor Core (تا)',
-    fp8: { dense: 4500, sparse: 9000 }, fp16: { dense: 2250, sparse: 4500 }, fp32: 75, fp64: null,
+    fp8: { dense: 4500, sparse: 9000 }, fp16: { dense: 2250, sparse: 4500 }, bf16: { dense: 2250, sparse: 4500 }, fp32: 75, fp64: null,
     computeFootnote: 'تعداد هسته از پیکربندی کامل ۱۶۰ SM به‌دست می‌آید و با SKU تغییر می‌کند؛ نرخ‌های FP از HGX هشت‌GPU محاسبه شده‌اند.'
   },
   'nvidia-b200': {
     generalCoreCount: null, generalCoreLabel: 'CUDA Core', matrixCoreCount: null, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 4500, sparse: 9000 }, fp16: { dense: 2250, sparse: 4500 }, fp32: 75, fp64: 37,
+    fp8: { dense: 4500, sparse: 9000 }, fp16: { dense: 2250, sparse: 4500 }, bf16: { dense: 2250, sparse: 4500 }, fp32: 75, fp64: 37,
     computeFootnote: 'نرخ‌های هر GPU از مشخصات رسمی HGX B200 هشت‌GPU استخراج شده‌اند؛ تعداد هسته در برگهٔ SKU اعلام نشده است.'
   },
   'amd-mi355x': {
@@ -546,11 +549,13 @@ const computeSpecs: Record<string, GpuComputeSpec> = {
   },
   'nvidia-h200-sxm': {
     generalCoreCount: 16896, generalCoreLabel: 'CUDA Core', matrixCoreCount: 528, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 1979, sparse: 3958 }, fp16: { dense: 989.5, sparse: 1979 }, fp32: 67, fp64: 34
+    fp8: { dense: 1979, sparse: 3958 }, fp16: { dense: 989.5, sparse: 1979 }, bf16: { dense: 989.5, sparse: 1979 }, fp32: 67, fp64: 34,
+    int8: { dense: 1979, sparse: 3958 }, disclosure: { fp4: 'not-supported', int4: 'not-supported' }
   },
   'nvidia-h200-nvl': {
     generalCoreCount: 14592, generalCoreLabel: 'CUDA Core', matrixCoreCount: 456, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 1670.5, sparse: 3341 }, fp16: { dense: 835.5, sparse: 1671 }, fp32: 60, fp64: 30
+    fp8: { dense: 1670.5, sparse: 3341 }, fp16: { dense: 835.5, sparse: 1671 }, bf16: { dense: 835.5, sparse: 1671 }, fp32: 60, fp64: 30,
+    int8: { dense: 1670.5, sparse: 3341 }, disclosure: { fp4: 'not-supported', int4: 'not-supported' }
   },
   'intel-gaudi3-pcie': {
     generalCoreCount: 64, generalCoreLabel: 'TPC', matrixCoreCount: 8, matrixCoreLabel: 'MME',
@@ -559,24 +564,29 @@ const computeSpecs: Record<string, GpuComputeSpec> = {
   },
   'nvidia-h100-nvl': {
     generalCoreCount: 14592, generalCoreLabel: 'CUDA Core', matrixCoreCount: 456, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 1670.5, sparse: 3341 }, fp16: { dense: 835.5, sparse: 1671 }, fp32: 60, fp64: 30
+    fp8: { dense: 1670.5, sparse: 3341 }, fp16: { dense: 835.5, sparse: 1671 }, bf16: { dense: 835.5, sparse: 1671 }, fp32: 60, fp64: 30,
+    int8: { dense: 1670.5, sparse: 3341 }, disclosure: { fp4: 'not-supported', int4: 'not-supported' }
   },
   'nvidia-rtx-pro-6000-server': {
     generalCoreCount: 24064, generalCoreLabel: 'CUDA Core', matrixCoreCount: 752, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 1000, sparse: 2000 }, fp16: { dense: 500, sparse: 1000 }, fp32: 120, fp64: 1.9,
+    fp4: { dense: 2000, sparse: 4000 }, fp8: { dense: 1000, sparse: 2000 }, fp16: { dense: 500, sparse: 1000 }, bf16: { dense: 500, sparse: 1000 }, fp32: 120, fp64: 1.9,
+    int8: { dense: 1000, sparse: 2000 }, int4: { dense: 2000, sparse: 4000 },
     computeFootnote: 'نرخ‌های Tensor به‌صورت dense/sparse نمایش داده شده‌اند؛ FP64 برای سازگاری است و ۱/۶۴ نرخ FP32 است.'
   },
   'nvidia-h100-sxm': {
     generalCoreCount: 16896, generalCoreLabel: 'CUDA Core', matrixCoreCount: 528, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 1979, sparse: 3958 }, fp16: { dense: 989.5, sparse: 1979 }, fp32: 67, fp64: 34
+    fp8: { dense: 1979, sparse: 3958 }, fp16: { dense: 989.5, sparse: 1979 }, bf16: { dense: 989.5, sparse: 1979 }, fp32: 67, fp64: 34,
+    int8: { dense: 1979, sparse: 3958 }, disclosure: { fp4: 'not-supported', int4: 'not-supported' }
   },
   'nvidia-a100-sxm': {
     generalCoreCount: 6912, generalCoreLabel: 'CUDA Core', matrixCoreCount: 432, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: null }, fp16: { dense: 312, sparse: 624 }, fp32: 19.5, fp64: 9.7
+    fp8: { dense: null }, fp16: { dense: 312, sparse: 624 }, bf16: { dense: 312, sparse: 624 }, fp32: 19.5, fp64: 9.7,
+    int8: { dense: 624, sparse: 1248 }, int4: { dense: 1248, sparse: 2496 }, disclosure: { fp8: 'not-supported', fp4: 'not-supported' }
   },
   'nvidia-a100-pcie': {
     generalCoreCount: 6912, generalCoreLabel: 'CUDA Core', matrixCoreCount: 432, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: null }, fp16: { dense: 312, sparse: 624 }, fp32: 19.5, fp64: 9.7
+    fp8: { dense: null }, fp16: { dense: 312, sparse: 624 }, bf16: { dense: 312, sparse: 624 }, fp32: 19.5, fp64: 9.7,
+    int8: { dense: 624, sparse: 1248 }, int4: { dense: 1248, sparse: 2496 }, disclosure: { fp8: 'not-supported', fp4: 'not-supported' }
   },
   'amd-mi210': {
     generalCoreCount: 6656, generalCoreLabel: 'Stream Processor', matrixCoreCount: null, matrixCoreLabel: 'Matrix Core',
@@ -584,12 +594,17 @@ const computeSpecs: Record<string, GpuComputeSpec> = {
   },
   'nvidia-l40s': {
     generalCoreCount: 18176, generalCoreLabel: 'CUDA Core', matrixCoreCount: 568, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 733, sparse: 1466 }, fp16: { dense: 362.1, sparse: 733 }, fp32: 91.6, fp64: null
+    fp8: { dense: 733, sparse: 1466 }, fp16: { dense: 362.05, sparse: 733 }, bf16: { dense: 362.05, sparse: 733 }, fp32: 91.6, fp64: 1.43,
+    int8: { dense: 733, sparse: 1466 }, int4: { dense: 733, sparse: 1466 },
+    matrixSourceUrl: 'https://www.techpowerup.com/gpu-specs/l40s.c4173', matrixSourceLabel: 'TechPowerUp GPU Database — L40S',
+    computeFootnote: 'کارایی Matrix با تفکیک دقت و dense/sparse ثبت شده است؛ منبع مکمل TechPowerUp برای محاسبات نظری و منبع رسمی NVIDIA برای نرخ‌های دیتاسنتری استفاده شده‌اند.'
   },
   'nvidia-rtx6000-ada': {
     generalCoreCount: 18176, generalCoreLabel: 'CUDA Core', matrixCoreCount: 568, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 728.5, sparse: 1457 }, fp16: { dense: 364, sparse: 728 }, fp32: 91.1, fp64: 1.4,
-    computeFootnote: 'FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ برای HPC دو‌دقتی مناسب نیست.'
+    fp8: { dense: 728.5, sparse: 1457 }, fp16: { dense: 364, sparse: 728 }, bf16: { dense: 182, sparse: 364 }, fp32: 91.1, fp64: 1.4,
+    int8: { dense: 728.5, sparse: 1457 }, int4: { dense: 1457, sparse: 2914 },
+    matrixSourceUrl: 'https://www.techpowerup.com/gpu-specs/rtx-6000-ada-generation.c3933', matrixSourceLabel: 'TechPowerUp GPU Database — RTX 6000 Ada',
+    computeFootnote: 'FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ نرخ‌های Matrix محاسبهٔ نظری TechPowerUp هستند و sparse برابر دو برابر مقدار پایه نمایش داده شده است.'
   },
   'amd-r9700': {
     generalCoreCount: 4096, generalCoreLabel: 'Stream Processor', matrixCoreCount: 128, matrixCoreLabel: 'AI Accelerator',
@@ -597,13 +612,17 @@ const computeSpecs: Record<string, GpuComputeSpec> = {
   },
   'nvidia-rtx5090': {
     generalCoreCount: 21760, generalCoreLabel: 'CUDA Core', matrixCoreCount: 680, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 838, sparse: 1676 }, fp16: { dense: 419, sparse: 838 }, fp32: 104.8, fp64: 1.6,
-    computeFootnote: 'FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ اعداد Tensor بر مبنای FP16 accumulate هستند.'
+    fp4: { dense: 1676, sparse: 3352 }, fp8: { dense: 838, sparse: 1676 }, fp16: { dense: 419, sparse: 838 }, bf16: { dense: 419, sparse: 838 }, fp32: 104.8, fp64: 1.6,
+    int8: { dense: 838, sparse: 1676 }, int4: { dense: 1676, sparse: 3352 },
+    matrixSourceUrl: 'https://www.techpowerup.com/gpu-specs/geforce-rtx-5090.c4216', matrixSourceLabel: 'TechPowerUp GPU Database — GeForce RTX 5090',
+    computeFootnote: 'FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ نرخ‌های Matrix بر مبنای مشخصات نظری مرجع و با تفکیک dense/sparse ثبت شده‌اند.'
   },
   'nvidia-rtx4090': {
     generalCoreCount: 16384, generalCoreLabel: 'CUDA Core', matrixCoreCount: 512, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 660.6, sparse: 1321.2 }, fp16: { dense: 330.3, sparse: 660.6 }, fp32: 82.6, fp64: 1.3,
-    computeFootnote: 'FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ اعداد Tensor بر مبنای FP16 accumulate هستند.'
+    fp8: { dense: 660.6, sparse: 1321.2 }, fp16: { dense: 330.3, sparse: 660.6 }, bf16: { dense: 165.2, sparse: 330.3 }, fp32: 82.58, fp64: 1.29,
+    int8: { dense: 660.6, sparse: 1321.2 }, int4: { dense: 1321.2, sparse: 2642.4 },
+    matrixSourceUrl: 'https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889', matrixSourceLabel: 'TechPowerUp GPU Database — GeForce RTX 4090',
+    computeFootnote: 'Matrix Performance از TechPowerUp: INT4 برابر ۱۳۲۱٫۲ TOPS، INT8 و FP8 برابر ۶۶۰٫۶، FP16 برابر ۳۳۰٫۳ و BF16 برابر ۱۶۵٫۲؛ Sparse Matrix تا دو برابر throughput پایه است.'
   }
 };
 
@@ -612,5 +631,12 @@ const emptyCompute: GpuComputeSpec = {
   fp4: { dense: null }, fp8: { dense: null }, bf16: { dense: null }, fp16: { dense: null }, fp32: null, fp64: null, int8: { dense: null }, int4: { dense: null }
 };
 
-export const gpuRecords: GpuRecord[] = rows.map((row) => ({ ...row, ...emptyCompute, ...computeSpecs[row.id] }));
+const damavandSharedService = 'قابل ارائه به‌صورت خدمت اشتراکی روی سکوی دماوند؛ مستقل از پشتیبانی رسمی vGPU یا MIG در خود کارت.';
+
+export const gpuRecords: GpuRecord[] = rows.map((row) => ({
+  ...row,
+  ...emptyCompute,
+  ...computeSpecs[row.id],
+  ...(row.vendor === 'NVIDIA' ? { sharedService: damavandSharedService } : {})
+}));
 export const gpuWorkloads: GpuWorkload[] = ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'هوش مصنوعی محلی', 'HPC', 'گرافیک و رندر', 'چندمستاجری'];

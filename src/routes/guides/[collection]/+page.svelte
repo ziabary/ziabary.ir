@@ -123,8 +123,10 @@
   }
 
   .guide-series-layout.gpu-collection {
-    width: calc(100% - 24px);
+    width: calc(100% - 200px);
     max-width: none;
+    margin-right: 12px;
+    margin-left: 188px;
     grid-template-columns: 188px minmax(0, 1fr);
     gap: 24px;
   }
@@ -175,6 +177,7 @@
   .guide-series-body { min-width: 0; }
   .guide-series-cover { margin: 0; aspect-ratio: 16 / 8.5; overflow: hidden; border-radius: 15px; background: var(--navy); }
   .guide-series-cover img { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .gpu-collection .guide-series-cover { max-width: 820px; margin-left: auto; }
 
   .guide-series-intro {
     display: grid;
@@ -184,6 +187,7 @@
     padding: 38px 0 48px;
     border-bottom: 1px solid var(--line);
   }
+  .gpu-collection .guide-series-intro { max-width: 820px; margin-left: auto; }
 
   .guide-series-intro small { color: var(--teal); font-size: 9px; }
   .guide-series-intro p { margin: 11px 0 0; color: color-mix(in srgb, var(--ink) 80%, var(--muted)); font-size: 14px; line-height: 2.1; }
@@ -217,14 +221,14 @@
 
   @media (max-width: 980px) {
     .guide-series-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 38px; }
-    .guide-series-layout.gpu-collection { grid-template-columns: 170px minmax(0, 1fr); gap: 28px; }
+    .guide-series-layout.gpu-collection { width: calc(100% - 180px); margin-right: 10px; margin-left: 170px; grid-template-columns: 170px minmax(0, 1fr); gap: 28px; }
     .guide-series-intro { grid-template-columns: 1fr; gap: 24px; }
     .guide-series-intro dl { max-width: 360px; }
   }
 
   @media (max-width: 700px) {
     .guide-series-layout { grid-template-columns: 1fr; gap: 24px; }
-    .guide-series-layout.gpu-collection { width: min(100% - 28px, 1500px); grid-template-columns: 1fr; }
+    .guide-series-layout.gpu-collection { width: min(100% - 28px, 1500px); margin-inline: auto; grid-template-columns: 1fr; }
     .guide-series-navigation {
       position: static;
       overflow-x: auto;
