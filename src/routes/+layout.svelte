@@ -2,6 +2,7 @@
   import '../app.css';
   import '../refinement.css';
   import SiteShell from '$lib/components/SiteShell.svelte';
+  export let data;
 </script>
 
 <svelte:head>
@@ -9,6 +10,6 @@
   <meta name="description" content="وب‌سایت شخصی سید محمد محمدزاده ضیابری، شناخته‌شده با نام مهران ضیابری؛ درباره هوش مصنوعی، حکمرانی، فناوری و تجربه‌های فنی." />
 </svelte:head>
 
-<SiteShell>
+<SiteShell locale={data.locale} pathname={data.pathname}>
   <slot />
 </SiteShell>
