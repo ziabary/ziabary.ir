@@ -103,7 +103,36 @@ export const guideCollections: GuideCollection[] = [
     image: '/images/guides/zero-trust-ai.webp',
     imageAlt: 'هستهٔ هوش مصنوعی در میان چند مرز امنیتی و دروازهٔ کنترل دسترسی',
     intro: 'امنیت هوش مصنوعی فقط حفاظت از سرور و شبکه نیست؛ رفتار مدل، مسیر داده، زمینهٔ کاربر و مجوز اجرای هر عمل باید در لحظه کنترل شود.',
-    items: []
+    items: [
+      {
+        id: 'from-zero-trust-to-zero-trust-ai',
+        title: 'از معماری بدون اعتماد تا هوش مصنوعی بدون اعتماد',
+        subtitle: 'چرا ZTA برای هوش مصنوعی کافی نیست و داده، مدل، خروجی و چرخهٔ حیات چه تهدیدهای تازه‌ای می‌سازند.',
+        kind: 'article',
+        href: '/articles/from-zero-trust-to-zero-trust-ai/'
+      },
+      {
+        id: 'mlops-foundation-of-zero-trust-ai',
+        title: 'MLOps؛ بستر پیاده‌سازی هوش مصنوعی بدون اعتماد',
+        subtitle: 'چرخهٔ قابل ردیابی داده، کد، آزمایش، مدل و استقرار به‌عنوان پیش‌نیاز اجرای کنترل‌های ZTAI.',
+        kind: 'article',
+        href: '/articles/mlops-foundation-of-zero-trust-ai/'
+      },
+      {
+        id: 'zero-trust-ai-maturity-model',
+        title: 'مدل بلوغ هوش مصنوعی بدون اعتماد؛ از سطح صفر تا چهار',
+        subtitle: 'گذار از فرآیند دستی و پراکنده به خودکارسازی کامل و امکان حذف دسترسی مستقیم انسان به دادهٔ حساس.',
+        kind: 'article',
+        href: '/articles/zero-trust-ai-maturity-model/'
+      },
+      {
+        id: 'zero-trust-ai-principles-and-controls',
+        title: 'اصول و کنترل‌های عملی هوش مصنوعی بدون اعتماد',
+        subtitle: 'راستی‌آزمایی، کمترین دسترسی، فرض نفوذ و کنترل‌های داده، مدل، زیرساخت و خروجی.',
+        kind: 'article',
+        href: '/articles/zero-trust-ai-principles-and-controls/'
+      }
+    ]
   },
   {
     slug: 'secure-operating-system',
