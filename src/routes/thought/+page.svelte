@@ -183,6 +183,14 @@
     line-height: 1.95;
   }
 
+  /* The opening used to carry a decorative guillemet that rendered as “A” with
+     some cached font/CSS combinations. Keep the block deliberately typographic. */
+  .thought-opening::before,
+  .thought-opening::after {
+    content: none !important;
+    display: none !important;
+  }
+
   .thought-axes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
