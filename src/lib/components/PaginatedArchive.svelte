@@ -8,7 +8,7 @@
     pageClass: string;
     resetKey?: string;
     pageSize?: number;
-    locale?: 'fa' | 'en';
+    locale?: 'fa' | 'en' | 'es';
     emptyLabel?: string;
     previousLabel?: string;
     nextLabel?: string;
@@ -106,7 +106,7 @@
                 class:active={entry === page}
                 class:fa-num={locale === 'fa'}
                 aria-current={entry === page ? 'page' : undefined}
-                aria-label={`${locale === 'fa' ? 'صفحه' : 'Page'} ${entry + 1}`}
+                aria-label={`${locale === 'fa' ? 'صفحه' : locale === 'es' ? 'Página' : 'Page'} ${entry + 1}`}
                 onclick={() => goToPage(entry)}
               >{entry + 1}</button>
             {:else}
