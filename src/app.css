@@ -6,6 +6,8 @@
 .article-page .article-cover.has-image{display:block;background:var(--soft)}
 .article-page .article-cover.has-image:before,.article-page .article-cover.has-image:after{display:none}
 .article-page .article-cover.has-image img{width:100%;height:100%;display:block;object-fit:cover}
+.article-page .article-cover.has-image figcaption{position:absolute;inset-inline:14px auto;bottom:12px;z-index:2;background:rgba(4,24,29,.76);backdrop-filter:blur(6px);color:#dce9e7;border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:3px 8px;font-size:9px}
+.article-page .article-cover.has-image:has(figcaption):after{display:block;content:"";position:absolute;inset:55% 0 0;width:auto;height:auto;border:0;border-radius:0;background:linear-gradient(180deg,transparent,rgba(3,22,27,.45))}
 .article-page .prose h3{font-size:22px;margin:42px 0 10px}
 .article-page .prose h4{font-size:18px;margin:34px 0 8px}
 .article-page .prose li{font-size:16px;line-height:2.25;color:color-mix(in srgb,var(--ink) 86%,var(--muted))}
