@@ -1,6 +1,7 @@
 <script lang="ts">
   import ArticleCard from '$lib/components/ArticleCard.svelte';
   import PageHero from '$lib/components/PageHero.svelte';
+  import VirtualArchive from '$lib/components/VirtualArchive.svelte';
   import { articles } from '$lib/content';
   let query = '';
   let category = 'همه';
@@ -15,5 +16,11 @@
 <main>
   <PageHero eyebrow="آرشیو" title="نوشته‌ها و یادداشت‌ها" lead="تحلیل‌های فنی و مدیریتی؛ مرتب‌شده بر اساس زمان و قابل جستجو بر اساس موضوع." />
   <section class="wrap archive-tools"><label>⌕<input bind:value={query} placeholder="جستجو در عنوان و خلاصه…" /></label><div>{#each categories as item}<button class:active={category === item} onclick={() => (category = item)}>{item}</button>{/each}</div></section>
-  <section class="wrap archive-list">{#each filtered as article}<ArticleCard {article} />{/each}</section>
+  <section class="wrap">
+    <VirtualArchive items={filtered} pageClass="archive-list" resetKey={`${category}:${query}`} estimatedPageHeight={1750}>
+      {#snippet item(article)}
+        <ArticleCard {article} />
+      {/snippet}
+    </VirtualArchive>
+  </section>
 </main>
