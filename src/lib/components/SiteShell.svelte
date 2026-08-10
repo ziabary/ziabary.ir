@@ -100,7 +100,7 @@
       <a href={localHref('/guides/', 'writing')}>{t.guides}</a>
       <a href={localHref('/slides/', 'slides')}>{t.slides}</a>
       <a href={localHref('/media/', 'media')}>{t.media}</a>
-      <a href={localHref('/resume/', 'resume')}>{t.resume}</a>
+      <!-- <a href={localHref('/resume/', 'resume')}>{t.resume}</a> -->
     </nav>
     <div class="nav-tools">
       <button onclick={() => (searchOpen = true)} aria-label={t.search}>⌕ <kbd>⌘K</kbd></button>
@@ -124,7 +124,7 @@
       <a href={localHref('/guides/', 'writing')}>{t.guides}</a>
       <a href={localHref('/slides/', 'slides')}>{t.slides}</a>
       <a href={localHref('/media/', 'media')}>{t.media}</a>
-      <a href={localHref('/resume/', 'resume')}>{t.resume}</a>
+      <!-- <a href={localHref('/resume/', 'resume')}>{t.resume}</a> -->
     </nav>
     <div class="footer-socials">
       {#each socialLinks as social}
