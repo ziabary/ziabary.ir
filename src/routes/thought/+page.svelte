@@ -177,7 +177,7 @@
     margin: 0 0 44px;
     padding: 36px 0;
     border-block: 2px solid var(--ink);
-    font-size: clamp(23px, 2.7vw, 33px);
+    font-size: clamp(18px, 2.2vw, 28px);
     line-height: 1.95;
   }
 
