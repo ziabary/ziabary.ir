@@ -36,7 +36,15 @@ export const guideCollections: GuideCollection[] = [
     image: '/images/guides/gpu-selection.webp',
     imageAlt: 'چند شتاب‌دهندهٔ محاسباتی با اندازه و ظرفیت متفاوت در یک معماری هوش مصنوعی',
     intro: 'انتخاب GPU از مقایسهٔ نام مدل‌ها آغاز نمی‌شود؛ بار کاری، حافظه، دقت محاسبات، توپولوژی و محدودیت‌های استقرار تعیین می‌کنند کدام گزینه واقعاً مناسب است.',
-    items: []
+    items: [
+      {
+        id: 'gpu-comparison-table',
+        title: 'جدول تعاملی انتخاب GPU و شتاب‌دهندهٔ هوش مصنوعی',
+        subtitle: 'مقایسهٔ زندهٔ حافظه، پهنای‌باند، توان، فرم‌فکتور، اتصال، تقسیم‌پذیری و تناسب کاربردی',
+        kind: 'interactive',
+        href: '#gpu-comparison-table'
+      }
+    ]
   },
   {
     slug: 'zero-trust-ai',
@@ -86,6 +94,10 @@ export function getGuideCollection(slug: string) {
 
 export function articleCount(collection: GuideCollection) {
   return collection.items.filter((item) => item.kind === 'article').length;
+}
+
+export function nonArticleCount(collection: GuideCollection) {
+  return collection.items.filter((item) => item.kind !== 'article').length;
 }
 
 export const guideKindLabels: Record<GuideItemKind, string> = {

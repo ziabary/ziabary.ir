@@ -1,12 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import PageHero from '$lib/components/PageHero.svelte';
-  import { articleCount, guideKindLabels } from '$lib/guides';
+  import GpuComparison from '$lib/components/GpuComparison.svelte';
+  import { articleCount, guideKindLabels, nonArticleCount } from '$lib/guides';
 
   export let data;
 
   const collection = data.collection;
   const persianNumber = new Intl.NumberFormat('fa-IR');
+  const isGpuCollection = collection.slug === 'gpu-selection';
   let activeSection = collection.items[0]?.id ?? 'overview';
 
   onMount(() => {
@@ -49,7 +51,7 @@
 <main>
   <PageHero eyebrow={`فنی‌جات / ${collection.eyebrow}`} title={collection.title} lead={collection.subtitle} />
 
-  <section class="wrap guide-series-layout">
+  <section class="wrap guide-series-layout" class:gpu-collection={isGpuCollection}>
     <aside class="guide-series-navigation" aria-label="فهرست مجموعه">
       <a class="back-link" href="/guides/">همهٔ فنی‌جات ←</a>
       <span>در این مجموعه</span>
@@ -76,6 +78,7 @@
         </div>
         <dl>
           <div><dt>مقاله‌ها</dt><dd>{persianNumber.format(articleCount(collection))}</dd></div>
+          <div><dt>محتوای زنده</dt><dd>{persianNumber.format(nonArticleCount(collection))}</dd></div>
           <div><dt>ترتیب</dt><dd>دستی</dd></div>
           <div><dt>به‌روزرسانی</dt><dd>پیوسته</dd></div>
         </dl>
@@ -84,14 +87,20 @@
       {#if collection.items.length}
         <div class="guide-entry-list">
           {#each collection.items as item, index}
-            <article id={item.id} class="guide-entry">
-              <header>
-                <small>{persianNumber.format(index + 1).padStart(2, '۰')}</small>
-                <div><span>{guideKindLabels[item.kind]}</span><h2>{item.title}</h2></div>
-              </header>
-              <p>{item.subtitle}</p>
-              {#if item.href}<a href={item.href}>مشاهده محتوا ←</a>{/if}
-            </article>
+            {#if item.id === 'gpu-comparison-table'}
+              <div id={item.id} class="guide-entry gpu-table-entry">
+                <GpuComparison />
+              </div>
+            {:else}
+              <article id={item.id} class="guide-entry">
+                <header>
+                  <small>{persianNumber.format(index + 1).padStart(2, '۰')}</small>
+                  <div><span>{guideKindLabels[item.kind]}</span><h2>{item.title}</h2></div>
+                </header>
+                <p>{item.subtitle}</p>
+                {#if item.href}<a href={item.href}>مشاهده محتوا ←</a>{/if}
+              </article>
+            {/if}
           {/each}
         </div>
       {:else}
@@ -111,6 +120,12 @@
     grid-template-columns: 230px minmax(0, 820px);
     gap: 70px;
     align-items: start;
+  }
+
+  .guide-series-layout.gpu-collection {
+    width: min(1500px, calc(100% - 48px));
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 52px;
   }
 
   .guide-series-navigation {
@@ -171,7 +186,7 @@
 
   .guide-series-intro small { color: var(--teal); font-size: 9px; }
   .guide-series-intro p { margin: 11px 0 0; color: color-mix(in srgb, var(--ink) 80%, var(--muted)); font-size: 14px; line-height: 2.1; }
-  .guide-series-intro dl { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); }
+  .guide-series-intro dl { margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
   .guide-series-intro dl > div { padding: 12px 10px; display: grid; gap: 4px; }
   .guide-series-intro dl > div + div { border-inline-start: 1px solid var(--line); }
   .guide-series-intro dt { color: var(--muted); font-size: 8px; }
@@ -184,6 +199,7 @@
   .guide-entry h2 { margin: 5px 0 0; font-size: 28px; line-height: 1.6; }
   .guide-entry > p { margin: 14px 74px 0 0; color: var(--muted); font-size: 13px; line-height: 2; }
   .guide-entry > a { display: inline-block; margin: 20px 74px 0 0; color: var(--teal); font-size: 10px; font-weight: 700; }
+  .gpu-table-entry { padding-top: 0; border-bottom: 0; }
 
   .guide-empty {
     min-height: 230px;
@@ -200,12 +216,14 @@
 
   @media (max-width: 980px) {
     .guide-series-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 38px; }
+    .guide-series-layout.gpu-collection { grid-template-columns: 170px minmax(0, 1fr); gap: 28px; }
     .guide-series-intro { grid-template-columns: 1fr; gap: 24px; }
     .guide-series-intro dl { max-width: 360px; }
   }
 
   @media (max-width: 700px) {
     .guide-series-layout { grid-template-columns: 1fr; gap: 24px; }
+    .guide-series-layout.gpu-collection { width: min(100% - 28px, 1500px); grid-template-columns: 1fr; }
     .guide-series-navigation {
       position: static;
       overflow-x: auto;
