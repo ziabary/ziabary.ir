@@ -1,20 +1,32 @@
 <script lang="ts">
-  import { gpuLastReviewed, gpuRecords, gpuUseCases, type GpuRecord, type GpuSegment, type GpuStatus, type GpuUseCase, type GpuVendor } from '$lib/gpu-data';
+  import { gpuLastReviewed, gpuRecords, gpuWorkloads, type GpuRecord, type GpuStatus, type GpuVendor, type GpuClass, type GpuWorkload } from '$lib/gpu-data';
 
-  type SortKey = 'model' | 'segment' | 'status' | 'year' | 'architecture' | 'memoryGB' | 'memoryType' | 'bandwidthGBs' | 'powerW' | 'fp32Tflops' | 'denseAiTflops' | 'software' | 'formFactor';
+  type GpuSegment = 'مصرفی' | 'حرفه‌ای' | 'مرکز داده' | 'مقیاس رک';
+  type SortKey = 'model' | 'segment' | 'status' | 'year' | 'architecture' | 'memoryGB' | 'memoryType' | 'bandwidthTBs' | 'powerW' | 'software' | 'formFactor' | 'interconnect';
   type SortRule = { key: SortKey; direction: 'asc' | 'desc' };
   const fa = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 1 });
   const vendors: GpuVendor[] = ['NVIDIA', 'AMD', 'Intel'];
   const segments: GpuSegment[] = ['مصرفی', 'حرفه‌ای', 'مرکز داده', 'مقیاس رک'];
-  const statuses: GpuStatus[] = ['نسل جاری', 'نسل قبل', 'مشخصات اولیه'];
-  const precisions = ['FP64','FP32','TF32','FP16','BF16','FP8','FP6','FP4','INT8'];
+  const statuses: GpuStatus[] = ['current', 'system-only', 'announced', 'legacy'];
+  const statusLabel: Record<GpuStatus, string> = {
+    current: 'نسل جاری',
+    'system-only': 'فقط سیستم',
+    announced: 'مشخصات اولیه',
+    legacy: 'نسل قبل'
+  };
+  const segmentLabel: Record<GpuClass, GpuSegment> = {
+    consumer: 'مصرفی',
+    workstation: 'حرفه‌ای',
+    datacenter: 'مرکز داده',
+    'server-pcie': 'مقیاس رک',
+    frontier: 'مقیاس رک'
+  };
 
   let query = '';
   let selectedVendors: GpuVendor[] = [];
   let selectedSegments: GpuSegment[] = [];
   let selectedStatuses: GpuStatus[] = [];
-  let useCase: GpuUseCase | '' = '';
-  let precision = '';
+  let useCase: GpuWorkload | '' = '';
   let minMemory = 0;
   let maxPower = 0;
   let preset = 'all';
@@ -27,21 +39,25 @@
 
   function reset() {
     query = ''; selectedVendors = []; selectedSegments = []; selectedStatuses = [];
-    useCase = ''; precision = ''; minMemory = 0; maxPower = 0; preset = 'all';
+    useCase = ''; minMemory = 0; maxPower = 0; preset = 'all';
   }
 
   function usePreset(value: string) {
     reset(); preset = value;
-    if (value === 'current') selectedStatuses = ['نسل جاری'];
-    if (value === 'local') { selectedSegments = ['مصرفی', 'حرفه‌ای']; useCase = 'مدل محلی'; minMemory = 24; }
-    if (value === 'efficient') { useCase = 'استنتاج کم‌مصرف'; maxPower = 200; }
+    if (value === 'current') selectedStatuses = ['current'];
+    if (value === 'local') { selectedSegments = ['مصرفی', 'حرفه‌ای']; useCase = 'هوش مصنوعی محلی'; minMemory = 24; }
+    if (value === 'efficient') { useCase = 'استنتاج سازمانی'; maxPower = 200; }
     if (value === 'enterprise') useCase = 'استنتاج سازمانی';
-    if (value === 'frontier') useCase = 'مدل‌های مرزی';
+    if (value === 'frontier') selectedSegments = ['مقیاس رک'];
   }
 
   function toggleSort(key: SortKey) {
     const rule = sorts.find((item) => item.key === key);
-    if (!rule) { sorts = [...sorts, { key, direction: 'desc' }].slice(-3); return; }
+    if (!rule) {
+      const newRule: SortRule = { key, direction: 'desc' };
+      sorts = [...sorts, newRule].slice(-3);
+      return;
+    }
     if (rule.direction === 'desc') sorts = sorts.map((item) => item.key === key ? { ...item, direction: 'asc' } : item);
     else sorts = sorts.filter((item) => item.key !== key);
   }
@@ -52,11 +68,19 @@
   }
 
   function compareRows(a: GpuRecord, b: GpuRecord, rule: SortRule) {
-    const av = a[rule.key], bv = b[rule.key];
+    const getValue = (record: GpuRecord) => {
+      if (rule.key === 'segment') return segmentLabel[record.gpuClass];
+      return record[rule.key as keyof GpuRecord];
+    };
+
+    const av = getValue(a);
+    const bv = getValue(b);
     if (av == null && bv == null) return 0;
     if (av == null) return 1;
     if (bv == null) return -1;
-    const result = typeof av === 'number' && typeof bv === 'number' ? av - bv : String(av).localeCompare(String(bv), 'fa');
+    const result = typeof av === 'number' && typeof bv === 'number'
+      ? av - bv
+      : String(av).localeCompare(String(bv), 'fa');
     return rule.direction === 'asc' ? result : -result;
   }
 
@@ -67,8 +91,26 @@
 
   function csvCell(value: string | number | null) { return `"${String(value ?? '').replaceAll('"', '""')}"`; }
   function exportCsv() {
-    const head = ['سازنده','مدل','رده','وضعیت','سال','معماری','حافظه GB','نوع حافظه','پهنای‌باند GB/s','توان W','فرم‌فکتور','رابط','نرم‌افزار','تقسیم‌پذیری','FP32 TFLOPS','AI Dense TFLOPS','دقت Dense','اوج اعلامی','کاربردها','منبع'];
-    const body = visible.map((g) => [g.vendor,g.model,g.segment,g.status,g.year,g.architecture,g.memoryGB,g.memoryType,g.bandwidthGBs,g.powerW,g.formFactor,g.hostInterface,g.software,g.partitioning,g.fp32Tflops,g.denseAiTflops,g.denseAiPrecision,g.advertisedAi,g.useCases.join(' | '),g.sourceUrl]);
+    const head = ['سازنده','مدل','رده','وضعیت','سال','معماری','حافظه GB','نوع حافظه','پهنای‌باند TB/s','توان W','فرم‌فکتور','رابط','ارتباط','نرم‌افزار','تقسیم‌پذیری','کاربردها','منبع'];
+    const body = visible.map((g) => [
+      g.vendor,
+      g.model,
+      segmentLabel[g.gpuClass],
+      statusLabel[g.status],
+      g.year,
+      g.architecture,
+      g.memoryGB,
+      g.memoryType,
+      g.bandwidthTBs,
+      g.powerW,
+      g.formFactor,
+      g.hostInterface,
+      g.interconnect,
+      g.software,
+      g.partitioning,
+      g.workloads.join(' | '),
+      g.sourceUrl
+    ]);
     const content = '\ufeff' + [head, ...body].map((row) => row.map(csvCell).join(',')).join('\n');
     const url = URL.createObjectURL(new Blob([content], { type: 'text/csv;charset=utf-8' }));
     const link = document.createElement('a'); link.href = url; link.download = `gpu-comparison-${gpuLastReviewed.iso}.csv`; link.click(); URL.revokeObjectURL(url);
@@ -79,10 +121,9 @@
     const text = `${g.vendor} ${g.model} ${g.architecture} ${g.memoryType} ${g.software} ${g.formFactor}`.toLocaleLowerCase('fa');
     return (!needle || text.includes(needle))
       && (!selectedVendors.length || selectedVendors.includes(g.vendor))
-      && (!selectedSegments.length || selectedSegments.includes(g.segment))
+      && (!selectedSegments.length || selectedSegments.includes(segmentLabel[g.gpuClass]))
       && (!selectedStatuses.length || selectedStatuses.includes(g.status))
-      && (!useCase || g.useCases.includes(useCase))
-      && (!precision || g.precisions.includes(precision))
+      && (!useCase || g.workloads.includes(useCase))
       && g.memoryGB >= minMemory
       && (!maxPower || (g.powerW != null && g.powerW <= maxPower));
   });
@@ -92,7 +133,7 @@
   });
   $: comparison = compared.map((id) => gpuRecords.find((g) => g.id === id)).filter(Boolean) as GpuRecord[];
   $: maxMemory = visible.length ? Math.max(...visible.map((g) => g.memoryGB)) : 0;
-  $: maxBandwidth = visible.length ? Math.max(...visible.map((g) => g.bandwidthGBs)) : 0;
+  $: maxBandwidth = visible.length ? Math.max(...visible.map((g) => g.bandwidthTBs)) : 0;
   $: lowestPower = visible.filter((g) => g.powerW != null).sort((a,b) => (a.powerW ?? Infinity) - (b.powerW ?? Infinity))[0];
 </script>
 
@@ -115,39 +156,38 @@
       <label class="search"><span>مدل، معماری یا پشته</span><input bind:value={query} type="search" placeholder="مثلاً H200، Blackwell یا ROCm" /></label>
       <fieldset><legend>سازنده</legend><div class="checks">{#each vendors as item}<label><input type="checkbox" checked={selectedVendors.includes(item)} on:change={() => { selectedVendors = toggle(selectedVendors, item); preset = 'custom'; }} /><span dir="ltr">{item}</span></label>{/each}</div></fieldset>
       <fieldset><legend>ردهٔ استقرار</legend><div class="checks">{#each segments as item}<label><input type="checkbox" checked={selectedSegments.includes(item)} on:change={() => { selectedSegments = toggle(selectedSegments, item); preset = 'custom'; }} /><span>{item}</span></label>{/each}</div></fieldset>
-      <fieldset><legend>وضعیت</legend><div class="checks">{#each statuses as item}<label><input type="checkbox" checked={selectedStatuses.includes(item)} on:change={() => { selectedStatuses = toggle(selectedStatuses, item); preset = 'custom'; }} /><span>{item}</span></label>{/each}</div></fieldset>
-      <label><span>کاربرد غالب</span><select bind:value={useCase} on:change={() => preset = 'custom'}><option value="">همهٔ کاربردها</option>{#each gpuUseCases as item}<option value={item}>{item}</option>{/each}</select></label>
-      <label><span>دقت سخت‌افزاری</span><select bind:value={precision} on:change={() => preset = 'custom'}><option value="">همهٔ دقت‌ها</option>{#each precisions as item}<option value={item}>{item}</option>{/each}</select></label>
+      <fieldset><legend>وضعیت</legend><div class="checks">{#each statuses as item}<label><input type="checkbox" checked={selectedStatuses.includes(item)} on:change={() => { selectedStatuses = toggle(selectedStatuses, item); preset = 'custom'; }} /><span>{statusLabel[item]}</span></label>{/each}</div></fieldset>
+      <label><span>کاربرد غالب</span><select bind:value={useCase} on:change={() => preset = 'custom'}><option value="">همهٔ کاربردها</option>{#each gpuWorkloads as item}<option value={item}>{item}</option>{/each}</select></label>
       <label><span>حداقل حافظه</span><select bind:value={minMemory} on:change={() => preset = 'custom'}><option value={0}>بدون محدودیت</option><option value={16}>۱۶ GB</option><option value={24}>۲۴ GB</option><option value={48}>۴۸ GB</option><option value={80}>۸۰ GB</option><option value={128}>۱۲۸ GB</option><option value={192}>۱۹۲ GB</option><option value={256}>۲۵۶ GB</option></select></label>
       <label><span>حداکثر توان</span><select bind:value={maxPower} on:change={() => preset = 'custom'}><option value={0}>بدون محدودیت</option><option value={100}>۱۰۰ W</option><option value={200}>۲۰۰ W</option><option value={350}>۳۵۰ W</option><option value={600}>۶۰۰ W</option><option value={1000}>۱۰۰۰ W</option></select></label>
     </div>
     <footer><button on:click={reset}>پاک‌کردن فیلترها</button><label><input type="checkbox" bind:checked={advanced} /> نمایش ستون‌های تخصصی</label></footer>
   </details>
 
-  <div class="summary" aria-live="polite"><div><small>نتیجه</small><b>{fa.format(visible.length)}</b><span>از {fa.format(gpuRecords.length)} مدل</span></div><div><small>بیشترین حافظه</small><b>{format(maxMemory)}</b><span>GB</span></div><div><small>بیشترین پهنای‌باند</small><b>{format(maxBandwidth / 1000)}</b><span>TB/s</span></div><div><small>کم‌مصرف‌ترین</small><b>{lowestPower ? format(lowestPower.powerW) : '—'}</b><span>{lowestPower?.model ?? 'نامشخص'}</span></div></div>
+  <div class="summary" aria-live="polite"><div><small>نتیجه</small><b>{fa.format(visible.length)}</b><span>از {fa.format(gpuRecords.length)} مدل</span></div><div><small>بیشترین حافظه</small><b>{format(maxMemory)}</b><span>GB</span></div><div><small>بیشترین پهنای‌باند</small><b>{format(maxBandwidth)}</b><span>TB/s</span></div><div><small>کم‌مصرف‌ترین</small><b>{lowestPower ? format(lowestPower.powerW) : '—'}</b><span>{lowestPower?.model ?? 'نامشخص'}</span></div></div>
 
   {#if comparison.length}
-    <section class="compare"><header><div><small>مقایسهٔ رو در رو</small><b>{fa.format(comparison.length)} از ۴ مدل</b></div><button on:click={() => compared = []}>حذف همه</button></header><div>{#each comparison as gpu}<article><button class="remove" aria-label={`حذف ${gpu.model}`} on:click={() => toggleCompare(gpu.id)}>×</button><i class={`vendor ${gpu.vendor.toLowerCase()}`}>{gpu.vendor}</i><h3 dir="ltr">{gpu.model}</h3><dl><div><dt>حافظه</dt><dd>{format(gpu.memoryGB,' GB')}</dd></div><div><dt>پهنای‌باند</dt><dd>{format(gpu.bandwidthGBs/1000,' TB/s')}</dd></div><div><dt>توان</dt><dd>{format(gpu.powerW,' W')}</dd></div><div><dt>پشته</dt><dd>{gpu.software}</dd></div></dl></article>{/each}</div></section>
+    <section class="compare"><header><div><small>مقایسهٔ رو در رو</small><b>{fa.format(comparison.length)} از ۴ مدل</b></div><button on:click={() => compared = []}>حذف همه</button></header><div>{#each comparison as gpu}<article><button class="remove" aria-label={`حذف ${gpu.model}`} on:click={() => toggleCompare(gpu.id)}>×</button><i class={`vendor ${gpu.vendor.toLowerCase()}`}>{gpu.vendor}</i><h3 dir="ltr">{gpu.model}</h3><dl><div><dt>حافظه</dt><dd>{format(gpu.memoryGB,' GB')}</dd></div><div><dt>پهنای‌باند</dt><dd>{format(gpu.bandwidthTBs,' TB/s')}</dd></div><div><dt>توان</dt><dd>{format(gpu.powerW,' W')}</dd></div><div><dt>پشته</dt><dd>{gpu.software}</dd></div></dl></article>{/each}</div></section>
   {/if}
 
   <div class="toolbar"><p>عنوان هر ستون را بزنید؛ کلیک اول نزولی، دوم صعودی و سوم خاموش است. تا سه معیار هم‌زمان حفظ می‌شود و عدد کنار عنوان اولویت آن را نشان می‌دهد.</p><div><button on:click={() => sorts = []}>حذف مرتب‌سازی</button><button class="export" on:click={exportCsv}>دریافت CSV</button></div></div>
 
-  <div class="table-shell" tabindex="0" role="region" aria-label="جدول مقایسه GPU؛ افقی پیمایش کنید">
+  <section class="table-shell" aria-label="جدول مقایسه GPU؛ افقی پیمایش کنید">
     <table><thead><tr>
-      <th class="pick">مقایسه</th><th class="model"><button on:click={() => toggleSort('model')}>مدل <i>{sortMark('model')}</i></button></th><th><button on:click={() => toggleSort('segment')}>رده <i>{sortMark('segment')}</i></button></th><th><button on:click={() => toggleSort('memoryGB')}>حافظه <small>GB</small> <i>{sortMark('memoryGB')}</i></button></th><th><button on:click={() => toggleSort('bandwidthGBs')}>پهنای‌باند <small>GB/s</small> <i>{sortMark('bandwidthGBs')}</i></button></th><th><button on:click={() => toggleSort('powerW')}>توان <small>W</small> <i>{sortMark('powerW')}</i></button></th><th><button on:click={() => toggleSort('formFactor')}>فرم‌فکتور <i>{sortMark('formFactor')}</i></button></th><th>مناسب برای</th>
-      {#if advanced}<th><button on:click={() => toggleSort('architecture')}>معماری / سال <i>{sortMark('architecture')}</i></button></th><th><button on:click={() => toggleSort('memoryType')}>نوع حافظه <i>{sortMark('memoryType')}</i></button></th><th><button on:click={() => toggleSort('fp32Tflops')}>FP32 <small>TFLOPS</small> <i>{sortMark('fp32Tflops')}</i></button></th><th><button on:click={() => toggleSort('denseAiTflops')}>AI متراکم <small>TFLOPS</small> <i>{sortMark('denseAiTflops')}</i></button></th><th>اوج اعلامی</th><th><button on:click={() => toggleSort('software')}>پشته <i>{sortMark('software')}</i></button></th><th>تقسیم‌پذیری</th>{/if}
+      <th class="pick">مقایسه</th><th class="model"><button on:click={() => toggleSort('model')}>مدل <i>{sortMark('model')}</i></button></th><th><button on:click={() => toggleSort('segment')}>رده <i>{sortMark('segment')}</i></button></th><th><button on:click={() => toggleSort('memoryGB')}>حافظه <small>GB</small> <i>{sortMark('memoryGB')}</i></button></th><th><button on:click={() => toggleSort('bandwidthTBs')}>پهنای‌باند <small>TB/s</small> <i>{sortMark('bandwidthTBs')}</i></button></th><th><button on:click={() => toggleSort('powerW')}>توان <small>W</small> <i>{sortMark('powerW')}</i></button></th><th><button on:click={() => toggleSort('formFactor')}>فرم‌فکتور <i>{sortMark('formFactor')}</i></button></th><th>مناسب برای</th>
+      {#if advanced}<th><button on:click={() => toggleSort('architecture')}>معماری / سال <i>{sortMark('architecture')}</i></button></th><th><button on:click={() => toggleSort('memoryType')}>نوع حافظه <i>{sortMark('memoryType')}</i></button></th><th><button on:click={() => toggleSort('interconnect')}>ارتباط <i>{sortMark('interconnect')}</i></button></th><th><button on:click={() => toggleSort('software')}>پشته <i>{sortMark('software')}</i></button></th><th>تقسیم‌پذیری</th>{/if}
     </tr></thead><tbody>
       {#each visible as gpu}
-        <tr class:roadmap={gpu.status === 'مشخصات اولیه'} class:selected={compared.includes(gpu.id)}>
+        <tr class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
           <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={!compared.includes(gpu.id) && compared.length >= 4} on:change={() => toggleCompare(gpu.id)} aria-label={`مقایسه ${gpu.model}`} /></td>
-          <td class="model"><div class="model-cell"><i class={`vendor ${gpu.vendor.toLowerCase()}`}>{gpu.vendor}</i><b dir="ltr">{gpu.model}</b><small class:preliminary={gpu.status === 'مشخصات اولیه'}>{gpu.status}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">منبع رسمی ↗</a></div></td>
-          <td><span class="segment">{gpu.segment}</span></td><td class="num"><b>{format(gpu.memoryGB)}</b><small>{gpu.memoryType.replace(' ECC','')}</small></td><td class="num"><b>{format(gpu.bandwidthGBs)}</b><small>{format(gpu.bandwidthGBs/1000)} TB/s</small></td><td class="num"><b>{format(gpu.powerW)}</b>{#if gpu.powerW == null}<small>اعلام نشده</small>{/if}</td><td class="text">{gpu.formFactor}</td><td class="uses">{#each gpu.useCases.slice(0,3) as item}<span>{item}</span>{/each}</td>
-          {#if advanced}<td class="text"><b>{gpu.architecture}</b><small>{fa.format(gpu.year)}</small></td><td class="text">{gpu.memoryType}</td><td class="num"><b>{format(gpu.fp32Tflops)}</b></td><td class="num"><b>{format(gpu.denseAiTflops)}</b><small dir="ltr">{gpu.denseAiPrecision}</small></td><td class="claim" dir="ltr">{gpu.advertisedAi}</td><td class="text" dir="ltr">{gpu.software}</td><td class="text">{gpu.partitioning}</td>{/if}
+          <td class="model"><div class="model-cell"><i class={`vendor ${gpu.vendor.toLowerCase()}`}>{gpu.vendor}</i><b dir="ltr">{gpu.model}</b><small class:preliminary={gpu.status === 'announced'}>{statusLabel[gpu.status]}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">منبع رسمی ↗</a></div></td>
+          <td><span class="segment">{segmentLabel[gpu.gpuClass]}</span></td><td class="num"><b>{format(gpu.memoryGB)}</b><small>{gpu.memoryType.replace(' ECC','')}</small></td><td class="num"><b>{format(gpu.bandwidthTBs)}</b><small>TB/s</small></td><td class="num"><b>{format(gpu.powerW)}</b>{#if gpu.powerW == null}<small>اعلام نشده</small>{/if}</td><td class="text">{gpu.formFactor}</td><td class="uses">{#each gpu.workloads.slice(0,3) as item}<span>{item}</span>{/each}</td>
+          {#if advanced}<td class="text"><b>{gpu.architecture}</b><small>{fa.format(gpu.year)}</small></td><td class="text">{gpu.memoryType}</td><td class="text">{gpu.interconnect}</td><td class="text" dir="ltr">{gpu.software}</td><td class="text">{gpu.partitioning}</td>{/if}
         </tr>
-        {#if gpu.note}<tr class="note"><td></td><td colspan={advanced ? 14 : 7}><b>یادداشت</b> {gpu.note}</td></tr>{/if}
-      {:else}<tr class="empty"><td colspan={advanced ? 15 : 8}>با این ترکیب فیلتر، مدلی پیدا نشد. محدودیت حافظه، توان یا کاربرد را تغییر دهید.</td></tr>{/each}
+        {#if gpu.compute}<tr class="note"><td></td><td colspan={advanced ? 13 : 8}><b>یادداشت</b> {gpu.compute}</td></tr>{/if}
+      {:else}<tr class="empty"><td colspan={advanced ? 13 : 8}>با این ترکیب فیلتر، مدلی پیدا نشد. محدودیت حافظه، توان یا کاربرد را تغییر دهید.</td></tr>{/each}
     </tbody></table>
-  </div>
+  </section>
 
   <footer class="method"><article><h3>چرا CUDA Core ستون اصلی نیست؟</h3><p>تعداد هسته فقط داخل یک خانواده و با احتیاط معنا دارد. معماری، فرکانس، Tensor/Matrix Engine، حافظه و نرم‌افزار نتیجه را عوض می‌کنند و نام هسته‌های سه سازنده معادل هم نیست.</p></article><article><h3>چرا قیمت فعلاً نیست؟</h3><p>قیمت واقعی به SKU، خنک‌کاری، پارت‌نامبر OEM، قرارداد پشتیبانی و بازار ایران وابسته است. قیمت و موجودی در راهنمای خرید و ترکیب سرور جداگانه بررسی می‌شود.</p></article><article><h3>روال بازبینی ماهانه</h3><p>صفحات رسمی، وضعیت عرضه، حافظه، پهنای‌باند، توان و پشتیبانی نرم‌افزاری کنترل می‌شوند. نتایج آزمایشگاه‌ها بعداً لایهٔ مستقلی خواهند بود تا مشخصات نظری با کارایی واقعی مخلوط نشود.</p></article></footer>
 </section>
