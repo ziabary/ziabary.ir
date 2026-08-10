@@ -1,22 +1,18 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { page } from '$app/stores';
   import { articles } from '$lib/content';
   import { courses, socialLinks } from '$lib/data';
+
+  type Locale = 'fa' | 'en' | 'es';
+  export let locale: Locale;
+  export let pathname: string;
 
   let searchOpen = false;
   let query = '';
   let dark = false;
   let menu = false;
 
-  type Locale = 'fa' | 'en' | 'es';
-  let locale: Locale = 'fa';
-  $: locale = $page.url.pathname.startsWith('/en')
-    ? 'en'
-    : $page.url.pathname.startsWith('/es')
-      ? 'es'
-      : 'fa';
-  $: isLandingHome = $page.url.pathname === (locale === 'fa' ? '/' : `/${locale}/`);
+  $: isLandingHome = pathname === '/' || pathname === `/${locale}/`;
 
   const copies = {
     fa: {
@@ -43,6 +39,14 @@
   } as const;
 
   $: t = copies[locale];
+  $: navigation = [
+    { label: t.thought, href: locale === 'fa' ? '/thought/' : `/${locale}/thought/` },
+    { label: t.writings, href: locale === 'fa' ? '/articles/' : `/${locale}/articles/` },
+    { label: t.guides, href: locale === 'fa' ? '/guides/' : `/${locale}/guides/` },
+    { label: t.slides, href: locale === 'fa' ? '/slides/' : `/${locale}/slides/` },
+    { label: t.media, href: locale === 'fa' ? '/media/' : `/${locale}/media/` },
+    { label: t.resume, href: locale === 'fa' ? '/resume/' : `/${locale}/resume/` }
+  ];
   $: visibleSocialLinks = locale === 'fa' ? socialLinks : socialLinks.filter((social) => social.label !== 'Virgool');
   $: searchItems = [
     ...articles
@@ -60,12 +64,6 @@
         .filter((item) => `${item.title} ${item.excerpt} ${item.type}`.toLowerCase().includes(query.trim().toLowerCase()))
         .slice(0, 8)
     : searchItems.slice(0, 5);
-
-  function localHref(fa: string, _anchor: string) {
-    if (locale === 'fa') return fa;
-    const path = fa.replace(/^\//, '').replace(/\/$/, '');
-    return `/${locale}/${path}/`;
-  }
 
   function toggleTheme() {
     dark = !dark;
@@ -105,12 +103,7 @@
     {/if}
     <button class="menu-button" onclick={() => (menu = !menu)} aria-label="Menu">☰</button>
     <nav class:open={menu}>
-      <a href={localHref('/thought/', 'about')}>{t.thought}</a>
-      <a href={localHref('/articles/', 'writing')}>{t.writings}</a>
-      <a href={localHref('/guides/', 'writing')}>{t.guides}</a>
-      <a href={localHref('/slides/', 'slides')}>{t.slides}</a>
-      <a href={localHref('/media/', 'media')}>{t.media}</a>
-      <a href={localHref('/resume/', 'resume')}>{t.resume}</a>
+      {#each navigation as item}<a href={item.href}>{item.label}</a>{/each}
     </nav>
     <div class="nav-tools">
       <button onclick={() => (searchOpen = true)} aria-label={t.search}>⌕ <kbd>⌘K</kbd></button>
@@ -129,12 +122,7 @@
       <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a>
     </div>
     <nav class="footer-nav" aria-label={locale === 'fa' ? 'پیوندهای پایین صفحه' : 'Footer navigation'}>
-      <a href={localHref('/thought/', 'about')}>{t.thought}</a>
-      <a href={localHref('/articles/', 'writing')}>{t.writings}</a>
-      <a href={localHref('/guides/', 'writing')}>{t.guides}</a>
-      <a href={localHref('/slides/', 'slides')}>{t.slides}</a>
-      <a href={localHref('/media/', 'media')}>{t.media}</a>
-      <a href={localHref('/resume/', 'resume')}>{t.resume}</a>
+      {#each navigation as item}<a href={item.href}>{item.label}</a>{/each}
     </nav>
     <div class="footer-socials">
       {#each visibleSocialLinks as social}
