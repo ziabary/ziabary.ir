@@ -6,8 +6,8 @@ date: 2025-05-19
 faDate: "۲۹ اردیبهشت ۱۴۰۴"
 category: زیرساخت هوش مصنوعی
 excerpt: "ملاحظات پردازنده مرکزی، حافظه سیستم، ذخیره‌سازی و شبکه در سرورهای پردازش GPU."
-source: TPD-DMV-GEN-001.v1
-draft: true
+readTime: "۹ دقیقه"
+related: ["pcie-gpu-server-selection", "dgx-and-standard-gpu-servers", "choosing-gpu-for-ai"]
 ---
 
 ## سرورهای مناسب کارت‌های گرافیکی
