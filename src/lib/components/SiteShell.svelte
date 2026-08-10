@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { articles } from '$lib/content';
   import { courses, socialLinks } from '$lib/data';
+  import { guideCollections } from '$lib/guides';
 
   type Locale = 'fa' | 'en' | 'es';
   export let locale: Locale;
@@ -57,7 +58,8 @@
         href: locale === 'fa' ? `/articles/${article.slug}/` : `/${locale}/articles/${article.slug}/`,
         type: article.category
       })),
-    ...(locale === 'fa' ? courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' })) : [])
+    ...(locale === 'fa' ? courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' })) : []),
+    ...(locale === 'fa' ? guideCollections.map((collection) => ({ title: collection.title, excerpt: collection.subtitle, href: `/guides/${collection.slug}/`, type: 'فنی‌جات' })) : [])
   ];
   $: results = query.trim()
     ? searchItems
