@@ -44,8 +44,15 @@
 
   $: t = copies[locale];
   $: searchItems = [
-    ...articles.map((article) => ({ title: article.title, excerpt: article.excerpt, href: `/articles/${article.slug}/`, type: article.category })),
-    ...courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' }))
+    ...articles
+      .filter((article) => article.lang === locale)
+      .map((article) => ({
+        title: article.title,
+        excerpt: article.excerpt,
+        href: locale === 'en' ? `/en/articles/${article.slug}/` : `/articles/${article.slug}/`,
+        type: article.category
+      })),
+    ...(locale === 'fa' ? courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' })) : [])
   ];
   $: results = query.trim()
     ? searchItems
@@ -54,6 +61,7 @@
     : searchItems.slice(0, 5);
 
   function localHref(fa: string, anchor: string) {
+    if (locale === 'en' && fa === '/articles/') return '/en/articles/';
     return locale === 'fa' ? fa : `/${locale}/#${anchor}`;
   }
 

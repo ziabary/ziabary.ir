@@ -1,5 +1,6 @@
 <script lang="ts">
   export let title: string;
+  export let locale: 'fa' | 'en' = 'fa';
 
   let copied = false;
   let resetTimer: ReturnType<typeof setTimeout>;
@@ -40,7 +41,7 @@
   }
 </script>
 
-<div class="article-actions" aria-label="اشتراک‌گذاری نوشته">
-  <button type="button" onclick={shareArticle}><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>اشتراک‌گذاری</span></button>
-  <button type="button" class:copied onclick={copyLink}><i class={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} aria-hidden="true"></i><span>{copied ? 'لینک کپی شد' : 'کپی لینک'}</span></button>
+<div class="article-actions" aria-label={locale === 'fa' ? 'اشتراک‌گذاری نوشته' : 'Article sharing'}>
+  <button type="button" onclick={shareArticle}><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>{locale === 'fa' ? 'اشتراک‌گذاری' : 'Share'}</span></button>
+  <button type="button" class:copied onclick={copyLink}><i class={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} aria-hidden="true"></i><span>{copied ? (locale === 'fa' ? 'لینک کپی شد' : 'Link copied') : (locale === 'fa' ? 'کپی لینک' : 'Copy link')}</span></button>
 </div>

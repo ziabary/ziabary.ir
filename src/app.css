@@ -59,4 +59,27 @@
 .media-local-nav a.active:after{transform:scaleX(1)}
 .media-hub-section,.media-video-band{scroll-margin-top:154px}
 
+/* Defensive reset: an older page stylesheet rendered a broken decorative quote as “A”. */
+.thought-opening::before,.thought-opening::after{content:none!important;display:none!important}
+
+.intl-archive,.intl-article{direction:ltr;text-align:left}
+.intl-archive-hero{padding-block:92px 64px;border-bottom:1px solid var(--line)}
+.intl-archive-hero h1{font-size:clamp(48px,7vw,84px);line-height:1.02;letter-spacing:-3px;margin:0 0 18px}
+.intl-archive-hero>p:last-child{max-width:720px;color:var(--muted);font-size:17px}
+.intl-archive .archive-tools input{margin:0 0 0 8px}
+.intl-card .card-art{align-items:flex-start}
+.intl-card .card-art i{font-size:24px;letter-spacing:2px}
+.intl-card .card-body>p{font-size:10px;letter-spacing:.5px;text-transform:uppercase}
+.intl-card .card-body h3{line-height:1.35;margin:12px 0}
+.intl-card .card-body>span{line-height:1.75}
+.intl-article .article-header h1{line-height:1.12;letter-spacing:-1.5px}
+.intl-article .article-header>p{line-height:1.75}
+.intl-article .article-meta{direction:ltr}
+.intl-article .prose{font-family:"Segoe UI",Arial,sans-serif}
+.intl-article .prose p,.intl-article .prose li{line-height:1.85}
+.intl-article .prose h2{line-height:1.25}
+.intl-article .prose pre{direction:ltr;text-align:left;background:#0c1c20;color:#e5f2f0;padding:18px;border-radius:10px;overflow:auto}
+.intl-article .prose code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em}
+.archive-note{border:1px solid var(--line);border-left:4px solid var(--teal);background:var(--soft);padding:18px 20px;border-radius:8px;margin:0 0 38px;color:var(--muted);font-size:13px;line-height:1.75}
+
 @media(max-width:680px){.media-source-logo{width:40px;height:40px}.media-list a{grid-template-columns:26px 1fr 16px;gap:12px}.media-index{font-size:18px}.media-list h2{font-size:19px}.article-header .article-actions{margin-top:18px}.prose>.article-actions{justify-content:center}.media-local-nav{top:66px}.media-local-nav .wrap{gap:22px;min-height:52px}.media-hub-section,.media-video-band{scroll-margin-top:130px}}

@@ -14,7 +14,7 @@
       social impact meet.
     </p>
     <div class="intl-actions">
-      <a class="button primary" href="#writing">Selected writing</a><a
+      <a class="button primary" href="/en/articles/">English writing</a><a
         class="button ghost"
         href="#resume">Résumé</a
       >
@@ -31,25 +31,26 @@
     <p class="eyebrow">Selected writing</p>
     <h2>Ideas do not need to be translations.</h2>
     <p>
-      The international editions will contain selected original essays in
-      English and Spanish. For now, these cards introduce the subject areas and
-      link to the Persian archive.
+      Restored technical field notes from my former English blog now sit beside
+      new original essays. The archive keeps their historical context instead
+      of presenting old commands as current instructions.
     </p>
     <div class="intl-cards">
-      <a href="/articles/ai-cosmetic-surgery-or-chemotherapy/"
-        ><small>AI GOVERNANCE</small><b>AI: cosmetic surgery or chemotherapy?</b
+      <a href="/en/articles/install-tbs6980-tbs6981-linux/"
+        ><small>LINUX · HARDWARE</small><b>Installing TBS6980/TBS6981 cards on Linux</b
         ><span
-          >Why adopting AI may require redesigning the organisation—not
-          decorating old processes.</span
+          >A restored 2011 guide for the DVB-S/S2 cards that became a reference
+          for hardware users and vendors.</span
         ></a
-      ><a href="/articles/national-ai-platform/"
-        ><small>TECHNOLOGY POLICY</small><b>A launch cannot replace architecture</b
+      ><a href="/en/articles/install-nupic-opensuse/"
+        ><small>ARTIFICIAL INTELLIGENCE</small><b>Running NuPIC 1.7.1 on openSUSE</b
         ><span
-          >A critique of the national open-source AI platform and its policy
-          choices.</span
+          >A historical note from early experiments with Hierarchical Temporal
+          Memory and the Numenta platform.</span
         ></a
       >
     </div>
+    <a class="text-link" href="/en/articles/">Browse the complete English archive →</a>
   </section>
   <section class="wrap intl-split" id="media">
     <div>
