@@ -3,10 +3,11 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import VirtualArchive from '$lib/components/VirtualArchive.svelte';
   import { articles } from '$lib/content';
+  const faArticles = articles.filter((article) => article.lang === 'fa');
   let query = '';
   let category = 'همه';
-  const categories = ['همه', ...new Set(articles.map((article) => article.category))];
-  $: filtered = articles.filter((article) =>
+  const categories = ['همه', ...new Set(faArticles.map((article) => article.category))];
+  $: filtered = faArticles.filter((article) =>
     (category === 'همه' || article.category === category) &&
     `${article.title} ${article.excerpt}`.includes(query)
   );
