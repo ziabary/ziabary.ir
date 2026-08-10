@@ -76,7 +76,7 @@ footer{padding-top:0}.footer-lead{display:grid;grid-template-columns:.8fr 1.2fr;
 .thought-navigation a.active:before{height:22px}
 .thought-body--manifesto{max-width:780px}
 .thought-body--manifesto .thought-opening{position:relative;margin:0 0 44px;padding:36px 0;border-block:2px solid var(--ink);font-size:clamp(23px,2.7vw,33px);line-height:1.95}
-.thought-body--manifesto .thought-opening:before{content:"Â«";position:absolute;inset-inline-start:-44px;top:20px;color:color-mix(in srgb,var(--teal) 35%,transparent);font-size:78px;line-height:1}
+.thought-body--manifesto .thought-opening:before{content:"«";position:absolute;inset-inline-start:-44px;top:20px;color:color-mix(in srgb,var(--teal) 35%,transparent);font-size:78px;line-height:1}
 .thought-axes{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line);margin-bottom:65px}
 .thought-axes>div{display:grid;gap:3px;padding:18px 20px 22px}
 .thought-axes>div+div{border-inline-start:1px solid var(--line)}
