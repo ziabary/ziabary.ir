@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import PageHero from '$lib/components/PageHero.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
+  import ServerComparison from '$lib/components/ServerComparison.svelte';
   import { articleCount, guideKindLabels, nonArticleCount } from '$lib/guides';
 
   export let data;
@@ -94,6 +95,10 @@
             {#if item.id === 'gpu-comparison-table'}
               <div id={item.id} class="guide-entry gpu-table-entry">
                 <GpuComparison />
+              </div>
+            {:else if item.id === 'server-comparison-table'}
+              <div id={item.id} class="guide-entry gpu-table-entry">
+                <ServerComparison />
               </div>
             {:else}
               <article id={item.id} class="guide-entry">
