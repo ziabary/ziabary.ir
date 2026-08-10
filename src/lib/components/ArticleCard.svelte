@@ -17,7 +17,11 @@
     {#if !article.cover}<i>{article.slug.includes('ai') ? 'AI' : '⌁'}</i>{/if}
   </div>
   <div class="card-body">
-    <p>{article.faDate} · {article.readTime}</p>
+    <p>
+      انتشار {article.faDate}
+      {#if article.updated && article.faUpdated} · بازبینی {article.faUpdated}{/if}
+      · {article.readTime}
+    </p>
     <h3><a href="{base}/{article.slug}/">{article.title}</a></h3>
     <span>{article.excerpt}</span>
     <a class="text-link" href="{base}/{article.slug}/">{readMore}</a>

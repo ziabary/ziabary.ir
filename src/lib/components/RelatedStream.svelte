@@ -1,28 +1,14 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { articles } from '$lib/content';
   export let related: string[] = [];
+  export let currentSlug = '';
 
-  let shown = 0;
-  let sentinel: HTMLDivElement;
-  $: items = related
-    .slice(0, shown)
+  $: resolved = related
+    .filter((slug) => slug !== currentSlug)
     .map((slug) => articles.find((article) => article.slug === slug))
     .filter(Boolean);
-  $: next = articles.find((article) => article.slug === related[2]);
-
-  onMount(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0]?.isIntersecting && shown < Math.min(2, related.length)) {
-          shown += 1;
-        }
-      },
-      { rootMargin: '240px' }
-    );
-    observer.observe(sentinel);
-    return () => observer.disconnect();
-  });
+  $: items = resolved.slice(0, 2);
+  $: next = resolved[2];
 </script>
 
 <section class="related-stream">
@@ -36,12 +22,11 @@
         <small>پیشنهاد {index + 1}</small>
         <h2>{article.title}</h2>
         <p>{article.excerpt}</p>
-        <a class="button ghost" href="/articles/{article.slug}/">خواندن این نوشته</a>
+        <a class="button ghost" href={`/articles/${article.slug}/`}>خواندن این نوشته</a>
       </article>
     {/if}
   {/each}
-  <div bind:this={sentinel}></div>
-  {#if shown >= 2 && next}
-    <a class="stream-more" href="/articles/{next.slug}/">ادامه مسیر با «{next.title}» ←</a>
+  {#if next}
+    <a class="stream-more" href={`/articles/${next.slug}/`}>ادامه مسیر با «{next.title}» ←</a>
   {/if}
 </section>

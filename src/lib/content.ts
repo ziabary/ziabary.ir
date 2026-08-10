@@ -4,6 +4,8 @@ export type ArticleMeta = {
   lang: 'fa' | 'en' | 'es';
   date: string;
   faDate: string;
+  updated?: string;
+  faUpdated?: string;
   category: string;
   excerpt: string;
   readTime: string;
@@ -31,7 +33,10 @@ export const articleModules = modules;
 export const articles = Object.values(modules)
   .map((module) => module.metadata)
   .filter((article) => !article.draft)
-  .sort((a, b) => b.date.localeCompare(a.date));
+  .sort((a, b) => {
+    const effectiveDate = (article: ArticleMeta) => article.updated ?? article.date;
+    return effectiveDate(b).localeCompare(effectiveDate(a)) || b.date.localeCompare(a.date);
+  });
 
 export function getArticle(slug: string) {
   return articles.find((article) => article.slug === slug);

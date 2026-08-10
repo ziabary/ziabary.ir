@@ -12,6 +12,9 @@
 .article-page .prose h4{font-size:18px;margin:34px 0 8px}
 .article-page .prose li{font-size:16px;line-height:2.25;color:color-mix(in srgb,var(--ink) 86%,var(--muted))}
 .article-page .prose ul,.article-page .prose ol{padding-inline-start:24px}
+.article-page .prose table{display:block;width:100%;overflow-x:auto;border-collapse:collapse;margin:28px 0;font-size:12px;line-height:1.9}
+.article-page .prose th,.article-page .prose td{min-width:150px;padding:11px 13px;border:1px solid var(--line);text-align:right;vertical-align:top}
+.article-page .prose th{background:var(--soft);color:var(--ink);font-weight:700}
 .article-page .prose a:not(.original-link){color:var(--teal);text-decoration:underline;text-underline-offset:4px}
 .article-page .prose img{display:block;max-width:100%;height:auto;margin:32px auto;border-radius:10px}
 .article-page .prose figure{margin:38px 0}
