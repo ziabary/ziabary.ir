@@ -1,6 +1,13 @@
 <script lang="ts">
   export let title: string;
-  export let locale: 'fa' | 'en' = 'fa';
+  export let locale: 'fa' | 'en' | 'es' = 'fa';
+
+  const copies = {
+    fa: { label: 'اشتراک‌گذاری نوشته', share: 'اشتراک‌گذاری', copy: 'کپی لینک', copied: 'لینک کپی شد' },
+    en: { label: 'Article sharing', share: 'Share', copy: 'Copy link', copied: 'Link copied' },
+    es: { label: 'Compartir artículo', share: 'Compartir', copy: 'Copiar enlace', copied: 'Enlace copiado' }
+  } as const;
+  $: copy = copies[locale];
 
   let copied = false;
   let resetTimer: ReturnType<typeof setTimeout>;
@@ -41,7 +48,7 @@
   }
 </script>
 
-<div class="article-actions" aria-label={locale === 'fa' ? 'اشتراک‌گذاری نوشته' : 'Article sharing'}>
-  <button type="button" onclick={shareArticle}><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>{locale === 'fa' ? 'اشتراک‌گذاری' : 'Share'}</span></button>
-  <button type="button" class:copied onclick={copyLink}><i class={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} aria-hidden="true"></i><span>{copied ? (locale === 'fa' ? 'لینک کپی شد' : 'Link copied') : (locale === 'fa' ? 'کپی لینک' : 'Copy link')}</span></button>
+<div class="article-actions" aria-label={copy.label}>
+  <button type="button" onclick={shareArticle}><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>{copy.share}</span></button>
+  <button type="button" class:copied onclick={copyLink}><i class={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} aria-hidden="true"></i><span>{copied ? copy.copied : copy.copy}</span></button>
 </div>
