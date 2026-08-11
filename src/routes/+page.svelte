@@ -3,6 +3,7 @@
   import { articles } from '$lib/content';
   import { courses, mediaItems, mediaSources } from '$lib/data';
   const featured = articles.slice(0, 3);
+  const latestMedia = [...mediaItems].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
 </script>
 
 <svelte:head>
@@ -53,5 +54,5 @@
     <div><p class="eyebrow">اسلایدها و دوره‌ها</p><h2>{courses[0].title}</h2><p>{courses[0].summary}</p><div class="metrics"><span><b>۱۶</b> ساعت</span><span><b>۶</b> بخش</span><span><b>DBA</b> مدیران</span></div><a class="button primary" href="/slides/{courses[0].slug}/">مشاهده و دریافت اسلایدها</a></div>
   </section>
 
-  <section class="media-strip"><div class="wrap"><div class="section-head"><div><p class="eyebrow">بازتاب‌ها</p><h2>نوشته‌ها و گفت‌وگوهای منتشرشده</h2></div><a class="text-link" href="/media/">همه موارد ←</a></div><div class="media-row">{#each mediaItems.slice(0, 3) as item}<a href={item.url} target="_blank" rel="noreferrer"><span class="media-row-source">{#if mediaSources[item.source]}<img src={mediaSources[item.source].logo} alt="" loading="lazy" />{/if}<strong>{item.source}</strong><small>{item.kind}</small></span><b>{item.title}</b><span>{item.summary}</span></a>{/each}</div></div></section>
+  <section class="media-strip"><div class="wrap"><div class="section-head"><div><p class="eyebrow">بازتاب‌ها</p><h2>نوشته‌ها و گفت‌وگوهای منتشرشده</h2></div><a class="text-link" href="/media/">همه موارد ←</a></div><div class="media-row">{#each latestMedia as item}<a href={item.url} target="_blank" rel="noreferrer"><span class="media-row-source">{#if mediaSources[item.source]}<img src={mediaSources[item.source].logo} alt="" loading="lazy" />{/if}<strong>{item.source}</strong><small>{item.kind}</small></span><b>{item.title}</b><span>{item.summary}</span></a>{/each}</div></div></section>
 </main>
