@@ -26,6 +26,10 @@
           <img src="/images/organizations/targoman-logo.png" alt="نشان شرکت پردازش هوشمند ترگمان" />
           <div><b>هم‌بنیان‌گذار و مدیرعامل</b><span>شرکت دانش‌بنیان پردازش هوشمند ترگمان</span></div>
         </div>
+        <div class="hero-role-card hoomas-role">
+          <img src="/images/organizations/hoomas-logo.png" alt="نشان شرکت تسهیلگران صادرات هوش مصنوعی" />
+          <div><b>معاون فنی</b><span>شرکت تسهیلگران صادرات هوش مصنوعی (هومص)</span></div>
+        </div>
       </div>
       <div class="actions"><a class="button primary" href="/articles/">خواندن نوشته‌ها</a><a class="button ghost" href="/resume/">رزومه</a></div>
     </div>

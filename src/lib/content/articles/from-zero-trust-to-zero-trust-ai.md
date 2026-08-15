@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت هوش مصنوعی
+cover: "/images/articles/from-zero-trust-to-zero-trust-ai/cover.png"
 excerpt: "چرا امن‌کردن شبکه برای هوش مصنوعی کافی نیست و ZTAI چگونه اصل «هرگز اعتماد نکنید، همیشه تأیید بگیرید» را به داده، مدل و چرخهٔ حیات هوش مصنوعی گسترش می‌دهد."
 readTime: "۱۵ دقیقه"
 related: ["mlops-foundation-of-zero-trust-ai", "zero-trust-ai-maturity-model", "zero-trust-ai-principles-and-controls"]

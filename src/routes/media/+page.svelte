@@ -75,7 +75,7 @@
 <svelte:head><title>بازتاب‌ها | مهران ضیابری</title></svelte:head>
 
 <main>
-  <PageHero eyebrow="نوشته، گفت‌وگو و تصویر" title="بازتاب‌ها" lead="ردپای فعالیت‌های حرفه‌ای در رسانه‌ها و رویدادها؛ محتوای تکراری و بازنشرها حذف شده‌اند و هر بخش آرشیو مستقل خود را دارد."/>
+  <PageHero eyebrow="نوشته، گفت‌وگو و تصویر" title="بازتاب‌ها" lead=""/>
 
   <div class="media-tabs-shell">
     <div class="wrap media-tabs" role="tablist" aria-label="بخش‌های صفحه بازتاب‌ها" tabindex="-1" onkeydown={handleTabKey}>
@@ -101,7 +101,6 @@
     <div id="media-panel-published" role="tabpanel" aria-labelledby="media-tab-published" class="wrap media-hub-section">
       <div class="media-hub-heading">
         <div><p class="eyebrow">۰۱</p><h2>نوشته‌ها و گفت‌وگوها</h2></div>
-        <p>مطالب تألیفی، مصاحبه‌ها و گزارش‌هایی که محتوای مستقل دارند؛ هر خبر فقط یک‌بار و با ارجاع به کامل‌ترین منبع آمده است.</p>
       </div>
       <div class="filter-row">
         {#each kinds as item}<button class:active={item === kind} onclick={() => (kind = item)}>{item}</button>{/each}
@@ -127,7 +126,6 @@
     <div id="media-panel-videos" role="tabpanel" aria-labelledby="media-tab-videos" class="wrap media-hub-section media-video-panel">
       <div class="media-hub-heading">
         <div><p class="eyebrow">۰۲</p><h2>ویدئوها</h2></div>
-        <p>گفت‌وگوهای بلند، سخنرانی‌ها، برنامه‌های رادیویی و چند کلیپ منتخب؛ نسخه‌های تکراری یک گفت‌وگو در شبکه‌های مختلف حذف شده‌اند.</p>
       </div>
       <div class="video-archive">
         {#each videoItems as item}
@@ -154,7 +152,6 @@
     <div id="media-panel-photos" role="tabpanel" aria-labelledby="media-tab-photos" class="wrap media-hub-section">
       <div class="media-hub-heading">
         <div><p class="eyebrow">۰۳</p><h2>تصاویر منتخب</h2></div>
-        <p>چند تصویر برای معرفی حرفه‌ای، رسانه‌ای و رویدادها؛ بدون امتداد آرشیو تصویری در همان صفحه.</p>
       </div>
       <div class="media-gallery media-gallery--all">
         {#each galleryItems as photo}

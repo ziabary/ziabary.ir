@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت سیستم‌عامل
+cover: "/images/articles/containers-are-not-security-boundaries/cover.png"
 excerpt: "کانتینر محل ریسک را از نمونهٔ در حال اجرا به image، زنجیرهٔ ساخت، runtime و کرنل میزبان منتقل می‌کند؛ اما سخت‌سازی میزبان را حذف نمی‌کند."
 readTime: "۱۸ دقیقه"
 related: ["configuration-drift-attestation-and-rollback", "ai-infrastructure-security-starts-with-kernel-and-gpu", "from-stig-cis-to-rbac", "one-linux-hardening-policy-does-not-fit-all"]

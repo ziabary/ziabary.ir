@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت سیستم‌عامل
+cover: "/images/articles/linux-distribution-as-security-governance/cover.png"
 excerpt: "انتخاب توزیع یعنی انتخاب چرخهٔ تغییر، زنجیرهٔ تصمیم، مدل اعتماد و هزینهٔ بازگشت؛ نه صرفاً انتخاب مجموعه‌ای از بسته‌ها پیرامون یک کرنل مشترک."
 readTime: "۱۸ دقیقه"
 related: ["one-linux-hardening-policy-does-not-fit-all", "air-gap-moves-trust-boundary", "configuration-drift-attestation-and-rollback", "legacy-migration-does-not-remove-risk"]

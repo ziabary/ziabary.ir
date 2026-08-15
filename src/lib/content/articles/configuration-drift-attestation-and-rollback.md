@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت سیستم‌عامل
+cover: "/images/articles/configuration-drift-attestation-and-rollback/cover.png"
 excerpt: "از رانش پیکربندی و وضعیت اعلامی تا Attestation، Snapshot و بازگشت‌پذیری؛ چرا سالم‌بودن امروز برای اعتماد فردا کافی نیست."
 readTime: "۱۷ دقیقه"
 related: ["air-gap-moves-trust-boundary", "linux-distribution-as-security-governance", "containers-are-not-security-boundaries", "legacy-migration-does-not-remove-risk"]

@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: حاکمیت زیرساخت
+cover: "/images/articles/legacy-migration-does-not-remove-risk/legacy-complexity.png"
 excerpt: "پیش از انتخاب مقصد باید دارایی‌ها را به قابل بازاستقرار، حساس و نیازمند انزوا، و غیرقابل ارتقا تقسیم کرد؛ هر گروه منطق تصمیم متفاوتی دارد."
 readTime: "۱۹ دقیقه"
 related: ["linux-distribution-as-security-governance", "configuration-drift-attestation-and-rollback", "from-stig-cis-to-rbac", "containers-are-not-security-boundaries"]
@@ -14,10 +15,6 @@ related: ["linux-distribution-as-security-governance", "configuration-drift-atte
 
 زیرساخت واقعی معمولاً محصول طراحی یکپارچه نیست. در طول سال‌ها، نیاز فوری، تغییر مدیر، محدودیت بودجه و تصمیم‌های مقطعی چند توزیع، نسخه، روش نصب و سیاست امنیتی متفاوت ساخته‌اند. هر تصمیم در زمان خود شاید منطقی بوده، اما مجموعهٔ آن‌ها به ناهمگونی، فرسودگی و نبود حاکمیت عملیاتی منجر شده است.
 
-<figure>
-  <img src="/images/articles/legacy-migration-does-not-remove-risk/legacy-complexity.png" alt="زیرساخت قدیمی و پیچیده با وابستگی‌های درهم‌تنیده و مسیر گذار نامشخص" />
-  <figcaption>مسئلهٔ Legacy فقط سن فناوری نیست؛ وابستگی‌های پنهان، نبود مالک و ناتوانی در اصلاح رفتار امنیتی است.</figcaption>
-</figure>
 
 ## ناهمگونی آگاهانه با ناهمگونی ناخواسته فرق دارد
 
