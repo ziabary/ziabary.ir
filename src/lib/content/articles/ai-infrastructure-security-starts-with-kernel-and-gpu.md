@@ -7,6 +7,7 @@ faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت زیرساخت هوش مصنوعی
 excerpt: "پشتهٔ AI زنجیره‌ای از کرنل، درایور، runtime، کانتینر، داده، مدل و شتاب‌دهنده است؛ شکست سازگاری یا اعتماد در هر حلقه کل بار کاری را تهدید می‌کند."
 readTime: "۱۸ دقیقه"
+cover: "/images/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/ai-compute-stack.png"
 related: ["containers-are-not-security-boundaries", "from-zero-trust-to-zero-trust-ai", "zero-trust-ai-principles-and-controls", "gpu-server-platform-components", "pcie-gpu-server-selection"]
 ---
 
@@ -14,10 +15,6 @@ related: ["containers-are-not-security-boundaries", "from-zero-trust-to-zero-tru
 
 امنیت این زیرساخت نیز از همین زنجیره پیروی می‌کند. اگر کرنل، درایور GPU، runtime کانتینر و ابزار تخصیص منابع با هم سازگار و قابل ممیزی نباشند، کنترل‌های لایهٔ مدل بر بستری شکننده اجرا می‌شوند. از این منظر، امنیت AI از کرنل و GPU آغاز می‌شود، هرچند به آن‌ها محدود نمی‌ماند.
 
-<figure>
-  <img src="/images/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/ai-compute-stack.png" alt="زنجیرهٔ زیرساخت هوش مصنوعی از کانتینر و سیستم‌عامل میزبان تا GPU و مدل" />
-  <figcaption>مدل روی یک پشتهٔ به‌هم‌پیوسته اجرا می‌شود؛ کرنل، درایور، runtime و GPU اجزای مستقل و قابل تعویضِ بی‌اثر نیستند.</figcaption>
-</figure>
 
 ## سازگاری خاموش، از شکست آشکار خطرناک‌تر است
 

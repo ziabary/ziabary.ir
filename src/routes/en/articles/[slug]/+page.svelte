@@ -3,8 +3,11 @@
   import { getArticleModule } from '$lib/content';
 
   export let data;
-  const module = getArticleModule(data.article.slug);
-  const Content = module?.default;
+
+  let currentSlug = data.article.slug;
+  $: currentSlug = data.article.slug;
+  $: module = getArticleModule(currentSlug);
+  $: Content = module?.default;
 </script>
 
 <svelte:head>
@@ -31,7 +34,11 @@
     {/if}
 
     <div class="prose">
-      {#if Content}<svelte:component this={Content} />{/if}
+      {#if Content}
+        {#key currentSlug}
+          <svelte:component this={Content} />
+        {/key}
+      {/if}
       {#if data.article.external}
         <a class="original-link" href={data.article.external} target="_blank" rel="noreferrer">View the original at {data.article.source ?? 'the source archive'} ↗</a>
       {/if}

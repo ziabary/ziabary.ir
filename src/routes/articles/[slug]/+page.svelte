@@ -2,9 +2,13 @@
   import RelatedStream from '$lib/components/RelatedStream.svelte';
   import ArticleActions from '$lib/components/ArticleActions.svelte';
   import { getArticleModule } from '$lib/content';
+
   export let data;
-  const module = getArticleModule(data.article.slug);
-  const Content = module?.default;
+
+  let currentSlug = data.article.slug;
+  $: currentSlug = data.article.slug;
+  $: module = getArticleModule(currentSlug);
+  $: Content = module?.default;
 </script>
 
 <svelte:head><title>{data.article.title} | مهران ضیابری</title><meta name="description" content={data.article.excerpt} /></svelte:head>
@@ -17,7 +21,11 @@
       <div class="article-cover"><div><span>{data.article.category}</span><b>{data.article.slug.includes('secure') ? 'ZTAI' : 'AI / SYSTEMS'}</b></div></div>
     {/if}
     <div class="prose">
-      {#if Content}<svelte:component this={Content} />{/if}
+      {#if Content}
+        {#key currentSlug}
+          <svelte:component this={Content} />
+        {/key}
+      {/if}
       {#if data.article.external}<a class="original-link" href={data.article.external} target="_blank" rel="noreferrer">مطالعه نسخه کامل در {data.article.source ?? 'ویرگول'} ↗</a>{/if}
       <ArticleActions title={data.article.title} />
     </div>

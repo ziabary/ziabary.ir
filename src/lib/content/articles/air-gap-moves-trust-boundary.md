@@ -6,6 +6,7 @@ date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت سیستم‌عامل
 excerpt: "در محیط ایزوله، اینترنت حذف می‌شود اما تهدید از رسانه، زنجیرهٔ تأمین، دسترسی فیزیکی، بوت و مسیر ورود وصله‌ها بازمی‌گردد."
+cover: "/images/articles/air-gap-moves-trust-boundary/air-gap-update-path.png"
 readTime: "۱۷ دقیقه"
 related: ["one-linux-hardening-policy-does-not-fit-all", "linux-distribution-as-security-governance", "configuration-drift-attestation-and-rollback", "from-stig-cis-to-rbac"]
 ---
@@ -14,10 +15,6 @@ related: ["one-linux-hardening-policy-does-not-fit-all", "linux-distribution-as-
 
 رسانهٔ قابل حمل، لپ‌تاپ مهندسی، زنجیرهٔ تأمین، firmware، دسترسی فیزیکی، فرآیند بوت و بستهٔ به‌روزرسانی، همگی می‌توانند نقش دروازهٔ بیرونی را بازی کنند. از آن مهم‌تر، محیط آفلاین معمولاً امکان پایش برخط، واکنش فوری و دریافت سریع اصلاحات را ندارد. بنابراین همان کنترلی که سطح مواجههٔ شبکه‌ای را کم می‌کند، اگر با معماری اعتماد و تغییر همراه نشود، می‌تواند زمان ماندگاری تهدید را افزایش دهد.
 
-<figure>
-  <img src="/images/articles/air-gap-moves-trust-boundary/air-gap-update-path.png" alt="مسیر کنترل‌شدهٔ ورود وصله از اینترنت به ناحیه دریافت، staging و شبکهٔ ایزوله" />
-  <figcaption>در محیط ایزوله، هر بستهٔ ورودی یک رویداد حاکمیتی است؛ نه یک دانلود معمولی.</figcaption>
-</figure>
 
 ## فرض تهدید در محیط ایزوله متفاوت است
 
