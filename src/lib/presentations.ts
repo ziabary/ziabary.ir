@@ -215,7 +215,7 @@ export const presentations: Presentation[] = [
     slideCount: 22,
     version: 'نسخه ۱',
     cover: '/slides/llm-persian-culture/cover.png',
-    pdf: '/slides/llm-persian-culture/LLMPersianCulture.pdf',
+    pdf: '/slides/llm-persian-culture/LLM-PersianCulture.pdf',
     topics: [  ]
   }
 ];

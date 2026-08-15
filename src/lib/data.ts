@@ -108,41 +108,95 @@ export const socialLinks = [
   { label: 'Virgool', value: '@mehran.ziabary', url: 'https://virgool.io/@mehran.ziabary', icon: 'fa-solid fa-pen-nib' }
 ];
 
-export const galleryItems = [
+export type GalleryImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+export type GalleryItem = {
+  id: string;
+  title: string;
+  caption: string;
+  date: string;
+  faDate: string;
+  images: GalleryImage[];
+};
+
+const galleryEntries: GalleryItem[] = [
   {
-    src: '/images/gallery/itrc-president.jpg',
-    alt: 'بازدید رئیس جمهوری از مرکز تحقیقات فناوری اطلاعات و ارتباطات',
+    id: 'itrc-president-visit',
     title: 'ارایه گزارش به رئیس جمهوری',
-    caption: 'بازدید رئیس جمهوری از مرکز تحقیقات فناوری اطلاعات و ارتباطات و ارائه گزارش درباره پروژه‌های هوش مصنوعی و دست‌آوردهای شبکه ملی اطلاعات.'
+    caption: 'بازدید رئیس جمهوری از مرکز تحقیقات فناوری اطلاعات و ارتباطات و ارائه گزارش درباره پروژه‌های هوش مصنوعی و دست‌آوردهای شبکه ملی اطلاعات.',
+    date: '2023-05-17',
+    faDate: '۲۷ اردیبهشت ۱۴۰۲',
+    images: [
+      {
+        src: '/images/gallery/itrc-president.jpg',
+        alt: 'بازدید رئیس جمهوری از مرکز تحقیقات فناوری اطلاعات و ارتباطات'
+      }
+    ]
   },
   {
-    src: '/images/gallery/bonyad-dehghan.jpeg',
-    alt: 'بازدید سردار دکتر دهقان از غرفه ترگمان در نمایشگاه هوش مصنوعی بنیاد مستضعفان',
+    id: 'bonyad-ai-event',
     title: 'ارایه در نمایشگاه',
-    caption: 'بازدید سردار دکتر دهقان از غرفه ترگمان در نمایشگاه هوش مصنوعی بنیاد مستضعفان و ارایه ویژگی‌های سکوی هوش مصنوعی امن دماوند.'
+    caption: 'نمایشگاه و رویداد تجربه‌محور هوش مصنوعی در صنعت بنیاد مستضعفان؛ معرفی سکوی هوش مصنوعی امن دماوند و سخنرانی درباره کاربردهای صنعتی هوش مصنوعی.',
+    date: '2024-01-30',
+    faDate: '۱۰ بهمن ۱۴۰۲',
+    images: [
+      {
+        src: '/images/gallery/bonyad-dehghan.jpeg',
+        alt: 'بازدید سردار دکتر دهقان از غرفه ترگمان در نمایشگاه هوش مصنوعی بنیاد مستضعفان',
+        caption: 'معرفی ویژگی‌های سکوی هوش مصنوعی امن دماوند در جریان بازدید دکتر حسین دهقان.'
+      },
+      {
+        src: '/images/gallery/bonyad-1.jpeg',
+        alt: 'سخنرانی درباره هوش مصنوعی در بنیاد مستضعفان',
+        caption: 'سخنرانی تخصصی درباره هوش مصنوعی و کاربردهای آن در صنعت.'
+      }
+    ]
   },
   {
-    src: '/images/gallery/bonyad-1.jpeg',
-    alt: 'سخنرانی در حوزه هوش مصنوعی در بنیاد مستضعفان',
+    id: 'imam-hossein-ai-governance',
     title: 'ارائه و سخنرانی تخصصی',
-    caption: 'در حال ارایه گزارش و سخنرانی تخصصی درباره هوش مصنوعی و کاربردهای آن در بنیاد مستضعفان.'
+    caption: 'سخنرانی تخصصی درباره حکمرانی هوش مصنوعی در دانشگاه امام حسین.',
+    date: '2025-01-08',
+    faDate: '۱۹ دی ۱۴۰۳',
+    images: [
+      {
+        src: '/images/gallery/imamhossein.jpg',
+        alt: 'سخنرانی در حوزه حکمرانی هوش مصنوعی در دانشگاه امام حسین'
+      }
+    ]
   },
   {
-    src: '/images/gallery/imamhossein.jpg',
-    alt: 'سخنرانی در حوزه هوش مصنوعی در دانشگاه امام حسین',
+    id: 'imidro-digital-transformation',
     title: 'ارائه و سخنرانی تخصصی',
-    caption: ' سخنرانی تخصصی درباره حکمرانی هوش مصنوعی در دانشگاه امام حسین.'
+    caption: 'ارایه سکوی هوش مصنوعی امن دماوند در همایش تحول دیجیتال معادن و صنایع معدنی.',
+    date: '2025-02-26',
+    faDate: '۸ اسفند ۱۴۰۳',
+    images: [
+      {
+        src: '/images/gallery/imidro.jpg',
+        alt: 'ارایه سکوی دماوند در همایش تحول دیجیتال معادن و صنایع معدنی'
+      }
+    ]
   },
   {
-    src: '/images/gallery/imidro.jpg',
-    alt: 'ارایه سکوی دماوند در همایش تحول دیجیتال معادن و صنایع معدنی',
+    id: 'filoger-ai-governance-panel',
     title: 'ارائه و سخنرانی تخصصی',
-    caption: 'ارایه سکوی هوش مصنوعی امن دماوند در همایش تحول دیجیتال معادن و صنایع معدنی.'
-  },
-  {
-    src: '/images/gallery/filoger.jpeg',
-    alt: 'پنل حکمرانی هوش مصنوعی در دانشگاه تهران',
-    title: 'ارائه و سخنرانی تخصصی',
-    caption: 'پنل تخصصی درباره حکمرانی هوش مصنوعی در دانشگاه تهران.'
+    caption: 'پنل «راهبرد ایران در عصر هوش مصنوعی از نگاه تصمیم‌گیران» در رویداد AI Summit 2025 دانشگاه تهران.',
+    date: '2025-11-18',
+    faDate: '۲۷ آبان ۱۴۰۴',
+    images: [
+      {
+        src: '/images/gallery/filoger.jpeg',
+        alt: 'پنل حکمرانی هوش مصنوعی در دانشگاه تهران'
+      }
+    ]
   }
 ];
+
+// Gallery chronology is data-driven so new entries never need to be inserted
+// at a particular array position. ISO dates make the ordering deterministic.
+export const galleryItems = [...galleryEntries].sort((a, b) => b.date.localeCompare(a.date));

@@ -32,7 +32,7 @@
   <div class="media-local-nav"><div class="wrap"><a href="#published">{copy.writing}</a><a href="#videos">{copy.video}</a><a href="#photos">{copy.photos}</a></div></div>
   <section id="published" class="wrap media-hub-section"><div class="media-hub-heading"><div><p class="eyebrow">01</p><h2>{copy.writing}</h2></div><p>{copy.writingNote}</p></div><div class="archive-list">{#each writing as article}<ArticleCard {article} {locale} />{/each}</div></section>
   <section id="videos" class="media-video-band"><div class="wrap media-video-grid"><div><p class="eyebrow">02</p><h2>{copy.video}</h2><p>{copy.videoNote}</p></div><div class="video-placeholder"><i class="fa-solid fa-play" aria-hidden="true"></i><span>{copy.videoEmpty}</span></div></div></section>
-  <section id="photos" class="wrap media-hub-section"><div class="media-hub-heading"><div><p class="eyebrow">03</p><h2>{copy.photos}</h2></div></div><div class="media-gallery">{#each galleryItems.slice(0,3) as photo,index}<figure><img src={photo.src} alt={copy.captions[index]} /><figcaption>{copy.captions[index]}</figcaption></figure>{/each}</div></section>
+  <section id="photos" class="wrap media-hub-section"><div class="media-hub-heading"><div><p class="eyebrow">03</p><h2>{copy.photos}</h2></div></div><div class="media-gallery">{#each galleryItems.slice(0,3) as photo,index}<figure><img src={photo.images[0].src} alt={copy.captions[index]} /><figcaption>{copy.captions[index]}</figcaption></figure>{/each}</div></section>
 </main>
 
 <style>.localized-media :global(.page-hero),.localized-media :global(.media-hub-section),.localized-media :global(.media-video-band){text-align:left}</style>

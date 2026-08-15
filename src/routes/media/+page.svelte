@@ -4,6 +4,7 @@
   import PaginatedArchive from '$lib/components/PaginatedArchive.svelte';
   import { articles } from '$lib/content';
   import { galleryItems, mediaItems, mediaSources, videoItems } from '$lib/data';
+  import GalleryCollection from '$lib/components/GalleryCollection.svelte';
 
   type MediaTab = 'published' | 'videos' | 'photos';
 
@@ -153,11 +154,7 @@
       <div class="media-hub-heading">
         <div><p class="eyebrow">۰۳</p><h2>تصاویر منتخب</h2></div>
       </div>
-      <div class="media-gallery media-gallery--all">
-        {#each galleryItems as photo}
-          <figure><img src={photo.src} alt={photo.alt}/><figcaption><b>{photo.title}</b><span>{photo.caption}</span></figcaption></figure>
-        {/each}
-      </div>
+      <GalleryCollection items={galleryItems} compact />
     </div>
   {/if}
 </main>
