@@ -4,7 +4,7 @@ slug: from-stig-cis-to-rbac
 lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
-category: ح
+category: حاکمیت امنیت
 cover: "/images/articles/from-stig-cis-to-rbac/cover.png"
 excerpt: "استاندارد می‌گوید چه نتیجه‌ای باید قابل دفاع باشد، کنترل هدف امنیتی را تعریف می‌کند و مکانیزم‌هایی مانند SELinux و AppArmor آن را اجرا می‌کنند."
 readTime: "۱۷ دقیقه"

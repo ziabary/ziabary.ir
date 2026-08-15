@@ -6,6 +6,7 @@ date: 2025-05-19
 faDate: "۲۹ اردیبهشت ۱۴۰۴"
 updated: 2026-08-10
 faUpdated: "۱۹ مرداد ۱۴۰۵"
+cover: "/images/articles/choosing-gpu-for-ai/cover.png"
 category: زیرساخت هوش مصنوعی
 excerpt: "انتخاب GPU بر پایهٔ نسبت کارایی به هزینه، نوع بار کاری، محدودیت سرور و تنوع سبد پردازشی."
 readTime: "۷ دقیقه"

@@ -1,12 +1,12 @@
 import { error } from '@sveltejs/kit';
-import { courses } from '$lib/data';
+import { findPresentation, presentations } from '$lib/presentations';
 
 export function entries() {
-  return courses.map((course) => ({ slug: course.slug }));
+  return presentations.map((presentation) => ({ slug: presentation.slug }));
 }
 
 export function load({ params }) {
-  const course = courses.find((item) => item.slug === params.slug);
-  if (!course) error(404, 'Course not found');
-  return { course };
+  const presentation = findPresentation(params.slug);
+  if (!presentation) error(404, 'Presentation not found');
+  return { presentation };
 }

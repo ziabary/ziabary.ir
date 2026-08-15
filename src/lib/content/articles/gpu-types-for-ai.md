@@ -7,6 +7,7 @@ faDate: "۲۹ اردیبهشت ۱۴۰۴"
 updated: 2026-08-10
 faUpdated: "۱۹ مرداد ۱۴۰۵"
 category: زیرساخت هوش مصنوعی
+cover: "/images/articles/gpu-types-for-ai/cover.png"
 excerpt: "تفکیک کارت‌های عمومی، گرافیکی حرفه‌ای و صنعتی برای کاربردهای هوش مصنوعی."
 readTime: "۶ دقیقه"
 related: ["pcie-vs-sxm-for-ai", "choosing-gpu-for-ai", "gpu-server-platform-components"]

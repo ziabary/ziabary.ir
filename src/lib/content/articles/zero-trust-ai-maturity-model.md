@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت هوش مصنوعی
+cover: "/images/articles/zero-trust-ai-maturity-model/cover.png"
 excerpt: "مسیر تدریجی گذار از فرایندهای دستی و پراکنده به چرخهٔ خودکار، قابل ردیابی و بدون دسترسی مستقیم انسان به داده‌های حساس."
 readTime: "۲۲ دقیقه"
 related: ["mlops-foundation-of-zero-trust-ai", "zero-trust-ai-principles-and-controls", "from-zero-trust-to-zero-trust-ai"]
