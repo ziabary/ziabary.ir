@@ -7,6 +7,7 @@ faDate: "۲۹ اردیبهشت ۱۴۰۴"
 updated: 2026-08-10
 faUpdated: "۱۹ مرداد ۱۴۰۵"
 category: زیرساخت هوش مصنوعی
+cover: "/images/articles/dgx-and-standard-gpu-servers/cover.png"
 excerpt: "تحلیل تفاوت DGX، HGX و سرور PCIe و اینکه چرا بیشتر سازمان‌های ایرانی از مزیت اضافه‌ای که بابت DGX می‌پردازند استفاده نمی‌کنند."
 readTime: "۱۰ دقیقه"
 related: ["pcie-vs-sxm-for-ai", "pcie-gpu-server-selection", "gpu-server-platform-components"]

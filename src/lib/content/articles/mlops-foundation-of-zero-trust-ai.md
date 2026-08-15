@@ -4,7 +4,7 @@ slug: mlops-foundation-of-zero-trust-ai
 lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
-category: ا
+category: امنیت هوش مصنوعی
 cover: "/images/articles/mlops-foundation-of-zero-trust-ai/cover.png"
 excerpt: "چرا بدون مدیریت و ردیابی چرخهٔ حیات داده، کد و مدل، اصول ZTAI از سطح سیاست فراتر نمی‌روند."
 readTime: "۹ دقیقه"

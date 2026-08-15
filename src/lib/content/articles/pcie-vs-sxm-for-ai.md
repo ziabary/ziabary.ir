@@ -7,6 +7,7 @@ faDate: "۲۹ اردیبهشت ۱۴۰۴"
 updated: 2026-08-10
 faUpdated: "۱۹ مرداد ۱۴۰۵"
 category: زیرساخت هوش مصنوعی
+cover: "/images/articles/pcie-vs-sxm-for-ai/cover.png"
 excerpt: "مقایسهٔ PCIe و SXM از منظر مقیاس، انعطاف‌پذیری، توان، کاربرد و کارایی به هزینه."
 readTime: "۹ دقیقه"
 related: ["gpu-types-for-ai", "dgx-and-standard-gpu-servers", "pcie-gpu-server-selection"]

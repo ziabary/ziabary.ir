@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت سیستم‌عامل
+cover: "/images/articles/one-linux-hardening-policy-does-not-fit-all/linux-workload-landscape.png"
 excerpt: "چرا نوع کاربری، سطح مواجهه و مأموریت هر سامانه باید پیش از انتخاب توزیع، الگوی به‌روزرسانی و پروفایل سخت‌سازی مشخص شود."
 readTime: "۱۵ دقیقه"
 related: ["linux-distribution-as-security-governance", "air-gap-moves-trust-boundary", "from-stig-cis-to-rbac", "ai-infrastructure-security-starts-with-kernel-and-gpu"]
@@ -14,10 +15,6 @@ related: ["linux-distribution-as-security-governance", "air-gap-moves-trust-boun
 
 اعمال یک سیاست یکنواخت نه عملی است و نه الزاماً امن. چنین سیاستی یا در کاربری‌های پرریسک به اندازهٔ کافی سخت‌گیر نیست، یا پایداری و قابلیت بهره‌برداری سامانه‌های دیگر را مختل می‌کند. رویکرد درست آن است که ابتدا سامانه‌ها بر اساس نوع کاربری و سطح مواجهه دسته‌بندی شوند و سپس پروفایل متناسب با هر دسته انتخاب شود؛ پروفایلی که میان امنیت، عملکرد، پایداری و قابلیت نگهداری تعادل برقرار کند.
 
-<figure>
-  <img src="/images/articles/one-linux-hardening-policy-does-not-fit-all/linux-workload-landscape.png" alt="دسته‌بندی کاربری‌های متفاوت لینوکس در سازمان، از سرویس‌های عمومی تا بارهای کاری هوش مصنوعی و محیط‌های ایزوله" />
-  <figcaption>نوع کاربری و محیط اجرا، نقطهٔ آغاز سیاست ایمن‌سازی‌اند؛ نه نام توزیع یا فهرست ابزارها.</figcaption>
-</figure>
 
 ## خط پایهٔ مشترک، پروفایل‌های متفاوت
 

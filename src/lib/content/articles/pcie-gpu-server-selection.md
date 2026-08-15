@@ -7,6 +7,7 @@ faDate: "۲۹ اردیبهشت ۱۴۰۴"
 updated: 2026-08-10
 faUpdated: "۱۹ مرداد ۱۴۰۵"
 category: زیرساخت هوش مصنوعی
+cover: "/images/articles/pcie-gpu-server-selection/cover.png"
 excerpt: "راهنمای انتخاب سرور از روی SKU کارت، توپولوژی PCIe، ابعاد، توان، خنک‌کاری، BOM و آزمون پذیرش."
 readTime: "۱۱ دقیقه"
 related: ["gpu-server-platform-components", "pcie-vs-sxm-for-ai", "dgx-and-standard-gpu-servers"]

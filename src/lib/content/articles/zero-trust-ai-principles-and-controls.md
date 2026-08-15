@@ -5,6 +5,7 @@ lang: fa
 date: 2026-08-10
 faDate: "۱۹ مرداد ۱۴۰۵"
 category: امنیت هوش مصنوعی
+cover: "/images/articles/zero-trust-ai-principles-and-controls/cover.png"
 excerpt: "از راستی‌آزمایی و کمترین دسترسی تا امنیت داده، مدل، زیرساخت و خروجی؛ کنترل‌هایی که ZTAI را از یک شعار امنیتی به معماری عملی تبدیل می‌کنند."
 readTime: "۱۸ دقیقه"
 related: ["zero-trust-ai-maturity-model", "from-zero-trust-to-zero-trust-ai", "mlops-foundation-of-zero-trust-ai"]

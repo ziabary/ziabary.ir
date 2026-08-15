@@ -7,6 +7,7 @@ faDate: "۲۹ اردیبهشت ۱۴۰۴"
 updated: 2026-08-10
 faUpdated: "۱۹ مرداد ۱۴۰۵"
 category: زیرساخت هوش مصنوعی
+cover: "/images/articles/gpu-server-platform-components/cover.png"
 excerpt: "ملاحظات پردازندهٔ مرکزی، حافظهٔ سیستم، ذخیره‌سازی و شبکه در سرورهای پردازش GPU."
 readTime: "۸ دقیقه"
 related: ["pcie-gpu-server-selection", "dgx-and-standard-gpu-servers", "choosing-gpu-for-ai"]
