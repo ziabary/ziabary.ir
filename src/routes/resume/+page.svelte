@@ -79,7 +79,7 @@
 
   <section class="wrap resume-intro">
     <div class="resume-photo">
-      <img src="/images/gallery/mehran-ziabary-headshot.jpg" alt="مهران ضیابری" />
+      <img src="/images/profile/mehran-ziabary.jpg" alt="مهران ضیابری" />
     </div>
     <div>
       <p class="eyebrow">خلاصه حرفه‌ای</p>
