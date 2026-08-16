@@ -1,6 +1,7 @@
 <script lang="ts">
   import RelatedStream from '$lib/components/RelatedStream.svelte';
   import ArticleActions from '$lib/components/ArticleActions.svelte';
+  import ArticleSeo from '$lib/components/ArticleSeo.svelte';
   import { getArticleModule } from '$lib/content';
 
   export let data;
@@ -11,7 +12,7 @@
   $: Content = module?.default;
 </script>
 
-<svelte:head><title>{data.article.title} | مهران ضیابری</title><meta name="description" content={data.article.excerpt} /></svelte:head>
+<ArticleSeo article={data.article} />
 <main class="article-page">
   <article>
     <header class="article-header wrap"><div class="article-meta"><span>{data.article.category}</span><span class="fa-num">انتشار: {data.article.faDate}</span>{#if data.article.updated && data.article.faUpdated}<span class="fa-num">آخرین بازبینی: {data.article.faUpdated}</span>{/if}<span class="fa-num">{data.article.readTime}</span></div><h1>{data.article.title}</h1><p>{data.article.excerpt}</p><ArticleActions title={data.article.title} /></header>
