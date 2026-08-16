@@ -55,7 +55,7 @@ AI Planet با نام بلژیک در نمایشگاه حاضر شده بود، 
 
 <figure>
   <img src="/images/articles/gitex-2025-analytical-travelogue/Gitex-2025-north-star.jpeg" alt="سالن نورث‌استار" />
-  <figcaption>معماری مرسوم و سنتی امنیت شبکه</figcaption>
+  <figcaption>سالن North Star مخصوص استارتاپ‌ها</figcaption>
 </figure>
 
 ## وقتی همه‌چیز به Agent تبدیل می‌شود

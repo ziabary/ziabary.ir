@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "deploy:s3": "bash scripts/deploy-object-storage.sh",
+    "deploy": "bash scripts/deploy-object-storage.sh",
     "prepare": "svelte-kit sync"
   },
   "devDependencies": {
