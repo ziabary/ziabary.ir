@@ -3,7 +3,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
-  import { getArticleModule } from '$lib/content';
+  import { getArticle, getArticleModule } from '$lib/content';
   import { articleCount, guideKindLabels, nonArticleCount } from '$lib/guides';
 
   export let data;
@@ -104,6 +104,15 @@
               </div>
             {:else}
               <article id={item.id} class="guide-entry guide-article">
+                {#if item.kind === 'article'}
+                  <a class:missing-cover={!getArticle(item.id)?.cover} class="guide-article-cover" href={item.href} aria-label={`مشاهدهٔ ${item.title}`}>
+                    {#if getArticle(item.id)?.cover}
+                      <img src={getArticle(item.id)?.cover} alt={`تصویر کاور ${item.title}`} loading="lazy" />
+                    {:else}
+                      <span aria-hidden="true">{item.id.includes('ai') ? 'AI' : '⌁'}</span>
+                    {/if}
+                  </a>
+                {/if}
                 <header>
                   <small>{persianNumber.format(index + 1).padStart(2, '۰')}</small>
                   <div><span>{guideKindLabels[item.kind]}</span><h2>{item.title}</h2></div>
@@ -255,6 +264,27 @@
   .guide-entry > a { display: inline-block; margin: 20px 74px 0 0; color: var(--teal); font-size: 10px; font-weight: 700; }
   .gpu-table-entry { padding-top: 0; border-bottom: 0; }
   .guide-article { padding-block: 64px; }
+  .guide-article-cover {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 34px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: var(--navy);
+  }
+  .guide-article-cover img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .35s ease, filter .35s ease;
+  }
+  .guide-article-cover:hover img { transform: scale(1.018); filter: saturate(1.04) brightness(1.03); }
+  .guide-article-cover:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+  .guide-article-cover.missing-cover { display: grid; place-items: center; background: linear-gradient(135deg, var(--navy), #17636a); }
+  .guide-article-cover.missing-cover span { color: rgba(255,255,255,.72); font-size: clamp(42px, 8vw, 78px); font-weight: 800; letter-spacing: .08em; }
   .guide-article-prose { max-width: 820px; margin: 34px 74px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
   .guide-article-prose :global(h2), .guide-article-prose :global(h3), .guide-article-prose :global(h4), .guide-article-prose :global(h5) { scroll-margin-top: 110px; line-height: 1.7; }
   .guide-article-prose :global(h2) { margin: 42px 0 12px; font-size: 27px; }
