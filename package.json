@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "svelte-kit sync && vite dev",
     "build": "vite build",
+    "build:verify-stable": "bash scripts/verify-stable-assets.sh",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "deploy:s3": "bash scripts/deploy-object-storage.sh",
