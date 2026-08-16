@@ -14,7 +14,6 @@ export type GuideCollection = {
   subtitle: string;
   eyebrow: string;
   image: string;
-  socialImage: string;
   imageAlt: string;
   intro: string;
   items: GuideItem[];
@@ -35,7 +34,6 @@ export const guideCollections: GuideCollection[] = [
     subtitle: 'از حافظه و پهنای‌باند تا توان مصرفی، مقیاس و هزینه',
     eyebrow: 'زیرساخت محاسباتی',
     image: '/images/guides/gpu-selection.webp',
-    socialImage: '/images/guides/gpu-selection-og.jpg',
     imageAlt: 'چند شتاب‌دهندهٔ محاسباتی با اندازه و ظرفیت متفاوت در یک معماری هوش مصنوعی',
     intro: 'انتخاب GPU از مقایسهٔ نام مدل‌ها آغاز نمی‌شود؛ بار کاری، حافظه، دقت محاسبات، توپولوژی و محدودیت‌های استقرار تعیین می‌کنند کدام گزینه واقعاً مناسب است.',
     items: [
@@ -103,7 +101,6 @@ export const guideCollections: GuideCollection[] = [
     subtitle: 'اعتماد صفر برای داده، مدل، بازیابی، عامل و عمل',
     eyebrow: 'امنیت هوش مصنوعی',
     image: '/images/guides/zero-trust-ai.webp',
-    socialImage: '/images/guides/zero-trust-ai-og.jpg',
     imageAlt: 'هستهٔ هوش مصنوعی در میان چند مرز امنیتی و دروازهٔ کنترل دسترسی',
     intro: 'امنیت هوش مصنوعی فقط حفاظت از سرور و شبکه نیست؛ رفتار مدل، مسیر داده، زمینهٔ کاربر و مجوز اجرای هر عمل باید در لحظه کنترل شود.',
     items: [
@@ -143,7 +140,6 @@ export const guideCollections: GuideCollection[] = [
     subtitle: 'از مدل تهدید و انتخاب توزیع تا محیط ایزوله، کانتینر، GPU، استاندارد و Legacy',
     eyebrow: 'امنیت زیرساخت',
     image: '/images/guides/secure-operating-system.webp',
-    socialImage: '/images/guides/secure-operating-system-og.jpg',
     imageAlt: 'هستهٔ محاسباتی محافظت‌شده در لایه‌های جدا و کنترل‌شده',
     intro: 'امنیت لینوکس محصول یک تنظیم جادویی یا چک‌لیست واحد نیست؛ از شناخت کاربری و تهدید آغاز می‌شود و به انتخاب زیست‌بوم، کنترل تغییر، مرزهای کانتینر، امنیت GPU، انطباق و ادارهٔ ریسک سامانه‌های قدیمی می‌رسد.',
     items: [
@@ -211,7 +207,6 @@ export const guideCollections: GuideCollection[] = [
     subtitle: 'مدل کسب‌وکار، معماری، تنظیم‌گری و مرزهای مسئولیت',
     eyebrow: 'زیرساخت و سیاست‌گذاری',
     image: '/images/guides/ai-operator.webp',
-    socialImage: '/images/guides/ai-operator-og.jpg',
     imageAlt: 'چند سازمان مستقل متصل به یک لایهٔ هماهنگ‌کنندهٔ توزیع‌شده',
     intro: 'اپراتور هوش مصنوعی پیش از آنکه یک عنوان یا مجوز باشد، مدلی برای توزیع قابلیت، مسئولیت، زیرساخت و قدرت تصمیم میان بازیگران مختلف است.',
     items: []
@@ -222,7 +217,6 @@ export const guideCollections: GuideCollection[] = [
     subtitle: 'از داده و مدل تا استقرار، پایش، امنیت و عملیات',
     eyebrow: 'معماری سازمانی',
     image: '/images/guides/ai-platform.webp',
-    socialImage: '/images/guides/ai-platform-og.jpg',
     imageAlt: 'ماژول‌های داده، مدل، استقرار و امنیت روی یک سکوی معماری مشترک',
     intro: 'سکوی هوش مصنوعی یک مدل زبانی یا خوشهٔ GPU نیست؛ مجموعه‌ای از قابلیت‌های هم‌بسته است که مسیر ساخت، ارزیابی، استقرار و ادارهٔ سامانه‌های هوشمند را تکرارپذیر می‌کند.',
     items: []
