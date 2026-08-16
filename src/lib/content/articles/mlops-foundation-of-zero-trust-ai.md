@@ -2,8 +2,8 @@
 title: "MLOps؛ بستر پیاده‌سازی هوش مصنوعی بدون اعتماد"
 slug: mlops-foundation-of-zero-trust-ai
 lang: fa
-date: 2026-08-10
-faDate: "۱۹ مرداد ۱۴۰۵"
+date: 2026-02-24
+faDate: "۱۴ بهمن ۱۴۰۵"
 category: امنیت هوش مصنوعی
 cover: "/images/articles/mlops-foundation-of-zero-trust-ai/cover.png"
 excerpt: "چرا بدون مدیریت و ردیابی چرخهٔ حیات داده، کد و مدل، اصول ZTAI از سطح سیاست فراتر نمی‌روند."

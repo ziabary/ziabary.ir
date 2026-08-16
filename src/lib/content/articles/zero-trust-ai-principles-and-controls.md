@@ -2,8 +2,8 @@
 title: "اصول و کنترل‌های عملی هوش مصنوعی بدون اعتماد"
 slug: zero-trust-ai-principles-and-controls
 lang: fa
-date: 2026-08-10
-faDate: "۱۹ مرداد ۱۴۰۵"
+date: 2025-05-13
+faDate: "۲۳ اردیبهشت ۱۴۰۴"
 category: امنیت هوش مصنوعی
 cover: "/images/articles/zero-trust-ai-principles-and-controls/cover.png"
 excerpt: "از راستی‌آزمایی و کمترین دسترسی تا امنیت داده، مدل، زیرساخت و خروجی؛ کنترل‌هایی که ZTAI را از یک شعار امنیتی به معماری عملی تبدیل می‌کنند."
