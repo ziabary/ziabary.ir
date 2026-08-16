@@ -1,10 +1,19 @@
 <script lang="ts">
+  import PageSeo from '$lib/components/PageSeo.svelte';
   export let data;
   $: item = data.presentation;
   const faNumber = (value: number) => value.toLocaleString('fa-IR');
 </script>
 
-<svelte:head><title>{item.title} | مهران ضیابری</title></svelte:head>
+<PageSeo
+  title={`${item.title} | مهران ضیابری`}
+  description={item.summary}
+  path={`/slides/${item.slug}/`}
+  image={item.cover ?? '/slides/enterprise-ai-governance-dba/cover.jpg'}
+  imageAlt={`اسلاید نخست ارائه ${item.title}`}
+  imageWidth={1600}
+  imageHeight={900}
+/>
 
 <main>
   <section class="course-hero">
