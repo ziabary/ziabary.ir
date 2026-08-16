@@ -21,6 +21,7 @@ footer{padding-top:0}.footer-lead{display:grid;grid-template-columns:.8fr 1.2fr;
 .hero-role-card span{font-size:10px;line-height:1.7;color:var(--muted)}
 .commission-role{border-top:3px solid #35683c}
 .targoman-role{border-top:3px solid #332264}.targoman-role img { filter: none;} :root[data-theme="dark"] .targoman-role img { filter: brightness(0) invert(1); opacity: 0.92;}
+.hoomas-role{border-top:3px solid #44b2e5}.hoomas-role img { filter: none;} :root[data-theme="dark"] .hoomas-role img { filter: brightness(0) invert(1); opacity: 0.92;}
 .statement-grid blockquote{font-size:clamp(20px,2.5vw,30px);line-height:1.9}
 
 
