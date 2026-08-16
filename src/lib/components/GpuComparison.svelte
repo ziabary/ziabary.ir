@@ -246,12 +246,12 @@
 
 <section class="explorer" aria-labelledby="gpu-table-title">
   <header class="heading">
-    <div><small>دانشنامهٔ زندهٔ شتاب‌دهنده‌های هوش مصنوعی</small><h2 id="gpu-table-title">هیچ مشخصه‌ای حذف نمی‌شود؛ مبنای آن روشن می‌شود</h2><p>این صفحه کارت، ماژول، پردازنده و سامانهٔ شتاب‌دهنده را—even اگر واحدها و معماری‌شان هم‌سنخ نباشد—در یک مرجع نگه می‌دارد. <strong>هر عدد با دقت، dense/sparse بودن، سطح کارت یا سامانه و وضعیت افشای سازنده</strong> خوانده می‌شود. جدول برای مقایسهٔ سریع است و شناسنامهٔ بازشوندهٔ هر ردیف همهٔ داده‌های ثبت‌شده را نشان می‌دهد.</p></div>
+    <div><small>دانشنامهٔ زندهٔ شتاب‌دهنده‌های هوش مصنوعی</small><h2 id="gpu-table-title">انتخاب GPU یک انتخاب ساده نیست. با دانش انتخاب کنیم.</h2><p> این جدول انواع مختلف کارت، ماژول، پردازنده و سامانهٔ شتاب‌دهنده مناسب برای هوش مصنوعی را ارایه می‌دهد. </p></div>
     <div class="stamp"><span>آخرین بازبینی داده‌ها</span><b>{gpuLastReviewed.fa}</b><small>{gpuLastReviewed.gregorian}</small></div>
   </header>
 
   <div class="rules"><article><span>۰۱</span><b>حافظه تعیین می‌کند مدل جا می‌شود یا نه</b></article><article><span>۰۲</span><b>پهنای‌باند برای LLM اغلب حیاتی است</b></article><article><span>۰۳</span><b>هسته و FLOPS فقط روی مبنای هم‌سنخ معنا دارند</b></article></div>
-  <div class="scope"><b>قاعدهٔ خواندن</b><span>سطح هر ردیف در ستون «نوع محصول» مشخص است: کارت، ماژول، پردازنده، سامانه یا سرویس ابری. در FP8 و FP16 عدد اول <strong>dense</strong> و عدد دوم—اگر وجود داشته باشد—<strong>sparse</strong> است. FP32 و FP64 نرخ برداری/عمومی‌اند، نه نرخ Tensor/Matrix؛ بنابراین ستون‌ها عمداً به‌جای یک «عدد AI» مبهم از هم جدا شده‌اند.</span></div>
+  <div class="scope"><b>قاعدهٔ جدول</b><span>«نوع محصول» در هر ردیف مشخص می‌کند که با کارت گرافیک، ماژول، پردازنده، سامانه کامل یا سرویس ابری روبه‌رو هستیم. در ستون‌های FP8 و FP16، عدد نخست توان پردازشی عادی و عدد دوم، در صورت درج، توان پردازشی با استفاده از محاسبات تنک (Sparse) است. اعداد FP32 و FP64 نیز توان پردازش عمومی را نشان می‌دهند و مستقیماً با توان محاسبات هوش مصنوعی در واحدهای Tensor/Matrix قابل مقایسه نیستند؛ به همین دلیل، این شاخص‌ها در ستون‌های جداگانه آمده‌اند.</span></div>
 
   <div class="presets" role="navigation" aria-label="فیلترهای سریع">
     <button class:active={preset === 'all'} on:click={() => usePreset('all')}>همه</button><button class:active={preset === 'current'} on:click={() => usePreset('current')}>نسل جاری</button><button class:active={preset === 'local'} on:click={() => usePreset('local')}>مدل محلی ۲۴GB+</button><button class:active={preset === 'efficient'} on:click={() => usePreset('efficient')}>استنتاج تا ۲۰۰ وات</button><button class:active={preset === 'enterprise'} on:click={() => usePreset('enterprise')}>استقرار سازمانی</button><button class:active={preset === 'frontier'} on:click={() => usePreset('frontier')}>مدل‌های مرزی</button>

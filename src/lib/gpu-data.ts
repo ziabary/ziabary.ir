@@ -72,7 +72,7 @@ export type GpuRecord = GpuBaseRecord & GpuComputeSpec;
 export const gpuLastReviewed = {
   iso: '2026-08-10',
   fa: '۱۹ مرداد ۱۴۰۵',
-  gregorian: '۱۰ اوت ۲۰۲۶'
+  gregorian: '10 August 2026'
 };
 
 const rows: GpuBaseRecord[] = [

@@ -89,7 +89,7 @@
         <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a>
         <a href="https://www.linkedin.com/in/mehranziabary" target="_blank" rel="noreferrer">LinkedIn ↗</a>
       </div>
-      <a class="button primary" href="/downloads/seyed-mohammad-mohammadzadeh-ziabary-cv-fa.pdf" download>دریافت رزومه PDF</a>
+      <a class="button primary" href-disabled="/downloads/seyed-mohammad-mohammadzadeh-ziabary-cv-fa.pdf" download  aria-disabled>دریافت رزومه PDF</a>
     </div>
   </section>
 
