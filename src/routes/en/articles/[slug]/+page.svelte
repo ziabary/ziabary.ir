@@ -1,5 +1,6 @@
 <script lang="ts">
   import ArticleActions from '$lib/components/ArticleActions.svelte';
+  import ArticleSeo from '$lib/components/ArticleSeo.svelte';
   import { getArticleModule } from '$lib/content';
 
   export let data;
@@ -10,10 +11,7 @@
   $: Content = module?.default;
 </script>
 
-<svelte:head>
-  <title>{data.article.title} | Mehran Ziabary</title>
-  <meta name="description" content={data.article.excerpt} />
-</svelte:head>
+<ArticleSeo article={data.article} />
 
 <main class="article-page intl-article" dir="ltr">
   <article>
