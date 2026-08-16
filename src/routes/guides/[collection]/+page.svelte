@@ -51,7 +51,7 @@
   title={`${collection.title} | فنی‌جات مهران ضیابری`}
   description={`${collection.subtitle} — ${collection.intro}`}
   path={`/guides/${collection.slug}/`}
-  image={collection.socialImage}
+  image={collection.image}
   imageAlt={collection.imageAlt}
   imageWidth={1600}
   imageHeight={900}
