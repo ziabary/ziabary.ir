@@ -2,8 +2,8 @@
 title: "ثباتی که قابل اثبات و بازگشت نیست، امنیت نیست"
 slug: configuration-drift-attestation-and-rollback
 lang: fa
-date: 2026-08-10
-faDate: "۱۹ مرداد ۱۴۰۵"
+date: 2026-02-26
+faDate: "۱۶ بهمن ۱۴۰۵"
 category: امنیت سیستم‌عامل
 cover: "/images/articles/configuration-drift-attestation-and-rollback/cover.png"
 excerpt: "از رانش پیکربندی و وضعیت اعلامی تا Attestation، Snapshot و بازگشت‌پذیری؛ چرا سالم‌بودن امروز برای اعتماد فردا کافی نیست."

@@ -2,8 +2,8 @@
 title: "مدل بلوغ هوش مصنوعی بدون اعتماد؛ از سطح صفر تا چهار"
 slug: zero-trust-ai-maturity-model
 lang: fa
-date: 2026-08-10
-faDate: "۱۹ مرداد ۱۴۰۵"
+date: 2025-05-13
+faDate: "۲۳ اردیبهشت ۱۴۰۴"
 category: امنیت هوش مصنوعی
 cover: "/images/articles/zero-trust-ai-maturity-model/cover.png"
 excerpt: "مسیر تدریجی گذار از فرایندهای دستی و پراکنده به چرخهٔ خودکار، قابل ردیابی و بدون دسترسی مستقیم انسان به داده‌های حساس."

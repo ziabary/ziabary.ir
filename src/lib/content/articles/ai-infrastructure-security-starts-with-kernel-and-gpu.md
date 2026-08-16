@@ -2,8 +2,8 @@
 title: "امنیت زیرساخت هوش مصنوعی از کرنل و GPU آغاز می‌شود"
 slug: ai-infrastructure-security-starts-with-kernel-and-gpu
 lang: fa
-date: 2026-08-10
-faDate: "۱۹ مرداد ۱۴۰۵"
+date: 2026-02-26
+faDate: "۱۶ بهمن ۱۴۰۵"
 category: امنیت زیرساخت هوش مصنوعی
 excerpt: "پشتهٔ AI زنجیره‌ای از کرنل، درایور، runtime، کانتینر، داده، مدل و شتاب‌دهنده است؛ شکست سازگاری یا اعتماد در هر حلقه کل بار کاری را تهدید می‌کند."
 readTime: "۱۸ دقیقه"
