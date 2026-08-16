@@ -3,6 +3,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
+  import PageSeo from '$lib/components/PageSeo.svelte';
   import { getArticle, getArticleModule } from '$lib/content';
   import { articleCount, guideKindLabels, nonArticleCount } from '$lib/guides';
 
@@ -46,10 +47,15 @@
   });
 </script>
 
-<svelte:head>
-  <title>{collection.title} | فنی‌جات مهران ضیابری</title>
-  <meta name="description" content={collection.intro} />
-</svelte:head>
+<PageSeo
+  title={`${collection.title} | فنی‌جات مهران ضیابری`}
+  description={`${collection.subtitle} — ${collection.intro}`}
+  path={`/guides/${collection.slug}/`}
+  image={collection.image}
+  imageAlt={collection.imageAlt}
+  imageWidth={1600}
+  imageHeight={900}
+/>
 
 <main>
   <div class:gpu-page-hero={isGpuCollection}>
