@@ -4,7 +4,7 @@ slug: from-zero-trust-to-zero-trust-ai
 lang: fa
 date: 2026-02-26
 faDate: "۱۶ بهمن ۱۴۰۵"
-category: امنیت هوش مصنوعی
+category: امنیت
 cover: "/images/articles/from-zero-trust-to-zero-trust-ai/cover.png"
 excerpt: "چرا امن‌کردن شبکه برای هوش مصنوعی کافی نیست و ZTAI چگونه اصل «هرگز اعتماد نکنید، همیشه تأیید بگیرید» را به داده، مدل و چرخهٔ حیات هوش مصنوعی گسترش می‌دهد."
 readTime: "۱۵ دقیقه"

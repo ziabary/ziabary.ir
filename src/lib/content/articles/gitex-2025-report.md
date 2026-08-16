@@ -4,7 +4,7 @@ slug: gitex-2025-analytical-travelogue
 lang: fa
 date: 2025-10-17
 faDate: "۲۵ مهر ۱۴۰۴"
-category: "سفرنامه فناوری"
+category: "سفرنامه"
 excerpt: "روایتی از یک هفته جست‌وجو میان هزاران غرفه جیتکس؛ جایی که هوش مصنوعی روی تقریباً همه تابلوها دیده می‌شد، اما زیر بسیاری از آن‌ها چیزی بیش از یک چت‌بات، یک گردش‌کار شبیه n8n یا همان نرم‌افزار قدیمی با برچسب AI وجود نداشت."
 readTime: "۱۸ دقیقه"
 cover: "/images/articles/gitex-2025-analytical-travelogue/cover.jpeg"

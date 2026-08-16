@@ -4,7 +4,7 @@ slug: one-linux-hardening-policy-does-not-fit-all
 lang: fa
 date: 2026-02-24
 faDate: "۱۴ بهمن ۱۴۰۵"
-category: امنیت سیستم‌عامل
+category: امنیت
 cover: "/images/articles/one-linux-hardening-policy-does-not-fit-all/linux-workload-landscape.png"
 excerpt: "چرا نوع کاربری، سطح مواجهه و مأموریت هر سامانه باید پیش از انتخاب توزیع، الگوی به‌روزرسانی و پروفایل سخت‌سازی مشخص شود."
 readTime: "۱۵ دقیقه"

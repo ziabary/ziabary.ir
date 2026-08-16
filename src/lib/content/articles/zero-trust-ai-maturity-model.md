@@ -4,7 +4,7 @@ slug: zero-trust-ai-maturity-model
 lang: fa
 date: 2025-05-13
 faDate: "۲۳ اردیبهشت ۱۴۰۴"
-category: امنیت هوش مصنوعی
+category: امنیت
 cover: "/images/articles/zero-trust-ai-maturity-model/cover.png"
 excerpt: "مسیر تدریجی گذار از فرایندهای دستی و پراکنده به چرخهٔ خودکار، قابل ردیابی و بدون دسترسی مستقیم انسان به داده‌های حساس."
 readTime: "۲۲ دقیقه"
