@@ -58,6 +58,7 @@ await concurrently(localFiles, 8, async ({ path, key }) => {
       ContentType: contentType,
       ContentEncoding: contentEncoding,
       CacheControl: cacheControl(key),
+      ACL: 'public-read',
       Metadata: { sha256: checksum }
     })
   );
