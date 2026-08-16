@@ -3,7 +3,7 @@ title: "کانتینر، مرز امنیتی مستقل نیست"
 slug: containers-are-not-security-boundaries
 lang: fa
 date: 2026-02-26
-faDate: "۱۶ بهمن ۱۴۰۵"
+faDate: "۱۶ بهمن ۱۴۰۴ "
 category: امنیت
 cover: "/images/articles/containers-are-not-security-boundaries/cover.png"
 excerpt: "کانتینر محل ریسک را از نمونهٔ در حال اجرا به image، زنجیرهٔ ساخت، runtime و کرنل میزبان منتقل می‌کند؛ اما سخت‌سازی میزبان را حذف نمی‌کند."
