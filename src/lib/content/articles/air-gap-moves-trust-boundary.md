@@ -4,7 +4,7 @@ slug: air-gap-moves-trust-boundary
 lang: fa
 date: 2026-02-26
 faDate: "۱۶ بهمن ۱۴۰۵"
-category: امنیت سیستم‌عامل
+category: امنیت
 excerpt: "در محیط ایزوله، اینترنت حذف می‌شود اما تهدید از رسانه، زنجیرهٔ تأمین، دسترسی فیزیکی، بوت و مسیر ورود وصله‌ها بازمی‌گردد."
 cover: "/images/articles/air-gap-moves-trust-boundary/air-gap-update-path.png"
 readTime: "۱۷ دقیقه"

@@ -4,7 +4,7 @@ slug: linux-distribution-as-security-governance
 lang: fa
 date: 2026-02-26
 faDate: "۱۶ بهمن ۱۴۰۵"
-category: امنیت سیستم‌عامل
+category: امنیت
 cover: "/images/articles/linux-distribution-as-security-governance/cover.png"
 excerpt: "انتخاب توزیع یعنی انتخاب چرخهٔ تغییر، زنجیرهٔ تصمیم، مدل اعتماد و هزینهٔ بازگشت؛ نه صرفاً انتخاب مجموعه‌ای از بسته‌ها پیرامون یک کرنل مشترک."
 readTime: "۱۸ دقیقه"
