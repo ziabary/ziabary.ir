@@ -3,7 +3,7 @@ title: "مهاجرت، ریسک سامانه‌های Legacy را حذف نمی�
 slug: legacy-migration-does-not-remove-risk
 lang: fa
 date: 2026-02-26
-faDate: "۱۶ بهمن ۱۴۰۵"
+faDate: "۱۶ بهمن ۱۴۰۴ "
 category: حاکمیت زیرساخت
 cover: "/images/articles/legacy-migration-does-not-remove-risk/legacy-complexity.png"
 excerpt: "پیش از انتخاب مقصد باید دارایی‌ها را به قابل بازاستقرار، حساس و نیازمند انزوا، و غیرقابل ارتقا تقسیم کرد؛ هر گروه منطق تصمیم متفاوتی دارد."

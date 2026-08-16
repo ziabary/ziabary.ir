@@ -3,7 +3,7 @@ title: "انتخاب توزیع لینوکس، یک تصمیم امنیتی و �
 slug: linux-distribution-as-security-governance
 lang: fa
 date: 2026-02-26
-faDate: "۱۶ بهمن ۱۴۰۵"
+faDate: "۱۶ بهمن ۱۴۰۴ "
 category: امنیت
 cover: "/images/articles/linux-distribution-as-security-governance/cover.png"
 excerpt: "انتخاب توزیع یعنی انتخاب چرخهٔ تغییر، زنجیرهٔ تصمیم، مدل اعتماد و هزینهٔ بازگشت؛ نه صرفاً انتخاب مجموعه‌ای از بسته‌ها پیرامون یک کرنل مشترک."

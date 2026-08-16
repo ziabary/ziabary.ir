@@ -30,7 +30,7 @@ export type GuideCollection = {
 export const guideCollections: GuideCollection[] = [
   {
     slug: 'gpu-selection',
-    title: 'راهنمای انتخاب GPU برای کاربست‌های هوش مصنوعی',
+    title: 'راهنمای انتخاب GPU برای کاربردهای هوش مصنوعی',
     subtitle: 'از حافظه و پهنای‌باند تا توان مصرفی، مقیاس و هزینه',
     eyebrow: 'زیرساخت محاسباتی',
     image: '/images/guides/gpu-selection.webp',

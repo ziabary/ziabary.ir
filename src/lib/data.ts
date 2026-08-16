@@ -251,16 +251,16 @@ const galleryEntries: GalleryItem[] = [
         src: '/images/gallery/sabanoor-1.jpg',
         alt: 'ماکت گنداله‌سازی صبانور'
       }, {
-        src: '/images/gallery/sabanoor-1.jpg',
+        src: '/images/gallery/sabanoor-2.jpg',
         alt: 'کوره واحد گنداله‌سازی'
       }, {
-        src: '/images/gallery/sabanoor-1.jpg',
+        src: '/images/gallery/sabanoor-3.jpg',
         alt: 'ورودی به کوره گنداله‌سازی'
       }, {
-        src: '/images/gallery/sabanoor-1.jpg',
+        src: '/images/gallery/sabanoor-4.jpg',
         alt: 'واحد پوکه‌سازی'
       }, {
-        src: '/images/gallery/sabanoor-1.jpg',
+        src: '/images/gallery/sabanoor-5.jpg',
         alt: 'ماکت گنداله‌سازی صبانور'
       }
     ]
@@ -310,8 +310,8 @@ const galleryEntries: GalleryItem[] = [
     id: 'imidro-digital-transformation',
     title: 'ارائه و سخنرانی تخصصی',
     caption: 'نشست هم‌افزایی شرکت‌های هوش مصنوعی و صنعتی در معاونت علمی، فناوری و اقتصاد دانش‌بنیان ریاست‌جمهوری',
-    date: '2025-02-26',
-    faDate: '۸ اسفند ۱۴۰۳',
+    date: '2026-01-26',
+    faDate: 'دی ۱۴۰۴',
     images: [
       {
         src: '/images/gallery/isti-1404.jpeg',
