@@ -16,6 +16,45 @@
   $: ogLocale = locale === 'fa' ? 'fa_IR' : locale === 'es' ? 'es_ES' : 'en_US';
   $: imageExtension = imageUrl.split('?')[0].split('.').pop()?.toLowerCase();
   $: imageType = imageExtension === 'png' ? 'image/png' : imageExtension === 'webp' ? 'image/webp' : 'image/jpeg';
+  $: structuredData = JSON.stringify(
+    type === 'article'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: title,
+          description,
+          url: canonicalUrl,
+          image: [imageUrl],
+          author: {
+            '@type': 'Person',
+            name: 'Mehran Ziabary',
+            url: siteUrl
+          },
+          publisher: {
+            '@type': 'Person',
+            name: 'Mehran Ziabary',
+            url: siteUrl
+          }
+        }
+      : {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: title,
+          description,
+          url: canonicalUrl,
+          image: imageUrl,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'Mehran Ziabary',
+            url: siteUrl
+          },
+          about: {
+            '@type': 'Person',
+            name: 'Mehran Ziabary',
+            url: siteUrl
+          }
+        }
+  );
 </script>
 
 <svelte:head>
@@ -41,4 +80,6 @@
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={imageUrl} />
   <meta name="twitter:image:alt" content={imageAlt} />
+
+  <script type="application/ld+json">{structuredData}</script>
 </svelte:head>
