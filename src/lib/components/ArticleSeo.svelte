@@ -17,6 +17,9 @@
   imageAlt={article.title}
   locale={article.lang}
   type="article"
+  publishedDate={article.date}
+  updatedDate={article.updated}
+  articleSection={article.category}
 />
 
 <svelte:head>
