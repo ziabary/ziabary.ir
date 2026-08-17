@@ -8,6 +8,9 @@
   export let imageAlt: string = title;
   export let imageWidth: number | undefined = undefined;
   export let imageHeight: number | undefined = undefined;
+  export let publishedDate: string | undefined = undefined;
+  export let updatedDate: string | undefined = undefined;
+  export let articleSection: string | undefined = undefined;
 
   const siteUrl = 'https://ziabary.ir';
   $: canonicalUrl = new URL(path, siteUrl).href;
@@ -20,40 +23,60 @@
     type === 'article'
       ? {
           '@context': 'https://schema.org',
-          '@type': 'Article',
+          '@type': 'BlogPosting',
           headline: title,
           description,
           url: canonicalUrl,
+          mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
           image: [imageUrl],
-          author: {
-            '@type': 'Person',
-            name: 'Mehran Ziabary',
-            url: siteUrl
-          },
-          publisher: {
-            '@type': 'Person',
-            name: 'Mehran Ziabary',
-            url: siteUrl
-          }
+          author: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl },
+          publisher: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl },
+          ...(publishedDate ? { datePublished: publishedDate } : {}),
+          ...(updatedDate ? { dateModified: updatedDate } : {}),
+          ...(articleSection ? { articleSection } : {})
         }
-      : {
-          '@context': 'https://schema.org',
-          '@type': 'WebPage',
-          name: title,
-          description,
-          url: canonicalUrl,
-          image: imageUrl,
-          isPartOf: {
-            '@type': 'WebSite',
-            name: 'Mehran Ziabary',
-            url: siteUrl
-          },
-          about: {
-            '@type': 'Person',
-            name: 'Mehran Ziabary',
-            url: siteUrl
+      : path === '/'
+        ? {
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'Person',
+                '@id': `${siteUrl}/#person`,
+                name: 'Mehran Ziabary',
+                alternateName: 'سید محمد محمدزاده ضیابری',
+                url: siteUrl,
+                image: imageUrl,
+                jobTitle: 'AI and technology executive'
+              },
+              {
+                '@type': 'WebSite',
+                '@id': `${siteUrl}/#website`,
+                name: 'Mehran Ziabary',
+                url: siteUrl,
+                inLanguage: locale,
+                publisher: { '@id': `${siteUrl}/#person` }
+              },
+              {
+                '@type': 'WebPage',
+                '@id': canonicalUrl,
+                name: title,
+                description,
+                url: canonicalUrl,
+                isPartOf: { '@id': `${siteUrl}/#website` },
+                about: { '@id': `${siteUrl}/#person` }
+              }
+            ]
           }
-        }
+        : {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: title,
+            description,
+            url: canonicalUrl,
+            image: imageUrl,
+            isPartOf: { '@type': 'WebSite', name: 'Mehran Ziabary', url: siteUrl },
+            about: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl }
+          }
   );
 </script>
 
