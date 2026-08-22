@@ -12,7 +12,7 @@
   const siteUrl = 'https://ziabary.ir';
   $: canonicalUrl = new URL(path, siteUrl).href;
   $: imageUrl = new URL(image, siteUrl).href;
-  $: siteName = locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary';
+  $: shareTitle = title.includes('|') ? title.split('|')[0].trim() : title;
   $: ogLocale = locale === 'fa' ? 'fa_IR' : locale === 'es' ? 'es_ES' : 'en_US';
   $: imageExtension = imageUrl.split('?')[0].split('.').pop()?.toLowerCase();
   $: imageType = imageExtension === 'png' ? 'image/png' : imageExtension === 'webp' ? 'image/webp' : 'image/jpeg';
@@ -24,9 +24,8 @@
   <link rel="canonical" href={canonicalUrl} />
 
   <meta property="og:type" content={type} />
-  <meta property="og:site_name" content={siteName} />
   <meta property="og:locale" content={ogLocale} />
-  <meta property="og:title" content={title} />
+  <meta property="og:title" content={shareTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={imageUrl} />
@@ -37,7 +36,7 @@
   {#if imageHeight}<meta property="og:image:height" content={`${imageHeight}`} />{/if}
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
+  <meta name="twitter:title" content={shareTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={imageUrl} />
   <meta name="twitter:image:alt" content={imageAlt} />

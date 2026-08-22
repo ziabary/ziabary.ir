@@ -73,6 +73,10 @@
     localStorage.setItem('ziabary-theme', dark ? 'dark' : 'light');
   }
 
+  function closeMenu() {
+    menu = false;
+  }
+
   onMount(() => {
     dark = localStorage.getItem('ziabary-theme') === 'dark';
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
@@ -105,7 +109,7 @@
     {/if}
     <button class="menu-button" onclick={() => (menu = !menu)} aria-label="Menu">☰</button>
     <nav class:open={menu}>
-      {#each navigation as item}<a href={item.href}>{item.label}</a>{/each}
+      {#each navigation as item}<a href={item.href} onclick={closeMenu}>{item.label}</a>{/each}
     </nav>
     <div class="nav-tools">
       <button onclick={() => (searchOpen = true)} aria-label={t.search}>⌕ <kbd>⌘K</kbd></button>
