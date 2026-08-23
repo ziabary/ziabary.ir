@@ -10,6 +10,8 @@ export type MediaItem = {
 
 export const mediaSources: Record<string, { logo: string }> = {
   'پیوست': { logo: 'https://peivast.com/wp-content/uploads/logo-1.png' },
+  'اکوموتیو': { logo: 'https://ecomotive.ir/wp-content/uploads/2018/09/cropped-fav-192x192.png' },
+  'توسعه برند': { logo: 'https://tosebrand.ir/wp-content/uploads/2022/06/cropped-TOSE-BRAND-AVATAR.png' },
   'تسنیم': { logo: 'https://upload.wikimedia.org/wikipedia/commons/3/35/Tasnim_News_Agency_logo_2color_rounded_square.png' },
   'دیجیاتو': { logo: 'https://digiato.com/wp-content/themes/digiato/assets/img/svg/mini-logo.svg' },
   'همشهری': { logo: 'https://www.hamshahrionline.ir/resources/theme/hamshahri/img/nastooh-logo.png' },
