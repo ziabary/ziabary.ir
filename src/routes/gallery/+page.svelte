@@ -1,7 +1,7 @@
 <script lang="ts">
   import PageHero from '$lib/components/PageHero.svelte';
   import GalleryCollection from '$lib/components/GalleryCollection.svelte';
-  import { galleryItems } from '$lib/data';
+  import { galleryItems } from '$lib/gallery';
 </script>
 
 <svelte:head><title>گالری | مهران ضیابری</title></svelte:head>

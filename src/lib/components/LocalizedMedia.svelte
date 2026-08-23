@@ -2,7 +2,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import ArticleCard from '$lib/components/ArticleCard.svelte';
   import { articles } from '$lib/content';
-  import { galleryItems } from '$lib/data';
+  import { galleryItems } from '$lib/gallery';
   export let locale: 'en' | 'es';
   $: writing = articles.filter((article) => article.lang === locale && ['building-targoman-without-patronage','sms-otp-security-design','construir-targoman-sin-padrinos','cuando-un-otp-por-sms-reduce-la-seguridad'].includes(article.slug));
   const copies = {

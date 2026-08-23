@@ -1,7 +1,8 @@
 <script lang="ts">
   import ArticleCard from '$lib/components/ArticleCard.svelte';
   import { articles } from '$lib/content';
-  import { courses, mediaItems, mediaSources } from '$lib/data';
+  import { courses } from '$lib/data';
+  import { mediaItems, mediaSources } from '$lib/news';
   const featured = articles.slice(0, 3);
   const latestMedia = [...mediaItems].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
 </script>

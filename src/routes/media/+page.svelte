@@ -3,7 +3,9 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import PaginatedArchive from '$lib/components/PaginatedArchive.svelte';
   import { articles } from '$lib/content';
-  import { galleryItems, mediaItems, mediaSources, videoItems } from '$lib/data';
+  import { galleryItems } from '$lib/gallery';
+  import { mediaItems, mediaSources } from '$lib/news';
+  import { videoItems } from '$lib/videos';
   import GalleryCollection from '$lib/components/GalleryCollection.svelte';
 
   type MediaTab = 'published' | 'videos' | 'photos';

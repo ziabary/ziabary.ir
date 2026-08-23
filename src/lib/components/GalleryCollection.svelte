@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import type { GalleryItem } from '$lib/data';
+  import type { GalleryItem } from '$lib/gallery';
 
   export let items: GalleryItem[];
   export let compact = false;
