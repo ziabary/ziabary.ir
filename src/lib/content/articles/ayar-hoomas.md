@@ -12,7 +12,7 @@ related:
   - investment-in-ai
   - startup-investment-readiness
   - industrial-ai
-draft: true
+draft: false
 ---
 
 

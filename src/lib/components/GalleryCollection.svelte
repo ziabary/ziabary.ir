@@ -8,8 +8,10 @@
   let activeItem: GalleryItem | null = null;
   let activeIndex = 0;
   let zoom = 1;
+  let imageDimensions: { width: number; height: number } | null = null;
 
   $: activeImage = activeItem?.images[activeIndex];
+  $: if (activeImage) imageDimensions = null;
 
   function open(item: GalleryItem, index = 0) {
     activeItem = item;
@@ -32,6 +34,11 @@
 
   function changeZoom(delta: number) {
     zoom = Math.min(3, Math.max(1, Number((zoom + delta).toFixed(1))));
+  }
+
+  function readImageDimensions(event: Event) {
+    const image = event.currentTarget as HTMLImageElement;
+    imageDimensions = { width: image.naturalWidth, height: image.naturalHeight };
   }
 
   onMount(() => {
@@ -82,19 +89,28 @@
           <button type="button" on:click={close} aria-label="بستن"><i class="fa-solid fa-xmark"></i></button>
         </div>
       </header>
-      <div class="lightbox-stage">
+      <div class:single-image={activeItem.images.length === 1} class="lightbox-stage">
         {#if activeItem.images.length > 1}
           <button class="nav previous" type="button" on:click={() => move(-1)} aria-label="تصویر قبلی"><i class="fa-solid fa-chevron-right"></i></button>
         {/if}
         <div class="image-viewport">
-          <img src={activeImage.src} alt={activeImage.alt} style={`transform: scale(${zoom})`} />
+          <img src={activeImage.src} alt={activeImage.alt} style={`transform: scale(${zoom})`} on:load={readImageDimensions} />
         </div>
         {#if activeItem.images.length > 1}
           <button class="nav next" type="button" on:click={() => move(1)} aria-label="تصویر بعدی"><i class="fa-solid fa-chevron-left"></i></button>
         {/if}
       </div>
       <footer>
-        <p>{activeImage.caption ?? activeItem.caption} <span class="fa-num">— {activeItem.faDate}</span></p>
+        <div class="image-details">
+          <p>{activeImage.caption ?? activeItem.caption} <span class="fa-num">— {activeItem.faDate}</span></p>
+          {#if imageDimensions}
+            <span class="image-dimensions fa-num">
+              ابعاد اصلی:
+              <b dir="ltr">{imageDimensions.width.toLocaleString('fa-IR')} × {imageDimensions.height.toLocaleString('fa-IR')}</b>
+              پیکسل
+            </span>
+          {/if}
+        </div>
         {#if activeItem.images.length > 1}
           <div class="lightbox-thumbs">
             {#each activeItem.images as image, index}
@@ -135,11 +151,14 @@
   .lightbox-tools{display:flex;align-items:center;gap:6px}.lightbox-tools button,.nav{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);color:#fff;cursor:pointer}
   .lightbox-tools button{width:35px;height:35px;border-radius:8px}.lightbox-tools button:disabled{opacity:.35;cursor:not-allowed}.lightbox-tools>span{min-width:47px;text-align:center}
   .lightbox-stage{position:relative;min-height:0;display:grid;grid-template-columns:52px minmax(0,1fr) 52px;align-items:center;padding:12px}
-  .image-viewport{height:100%;min-height:0;overflow:auto;display:grid;place-items:center}
-  .image-viewport img{max-width:100%;max-height:100%;object-fit:contain;transition:transform .18s;transform-origin:center}
+  .lightbox-stage.single-image{grid-template-columns:minmax(0,1fr)}
+  .image-viewport{position:relative;width:100%;height:100%;min-width:0;min-height:0;overflow:auto}
+  .image-viewport img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .18s;transform-origin:center}
   .nav{width:42px;height:60px;border-radius:10px;z-index:2}.previous{justify-self:start}.next{justify-self:end}
-  .lightbox-panel footer{padding:12px 18px 15px;border-top:1px solid rgba(255,255,255,.12);display:flex;gap:18px;justify-content:space-between;align-items:center}
-  .lightbox-panel footer p{margin:0;font-size:10px;color:#c8d8d7;line-height:1.8}
-  .lightbox-thumbs{display:flex;gap:7px;flex:0 0 auto}.lightbox-thumbs button{width:62px;height:45px;padding:0;border:2px solid transparent;border-radius:7px;overflow:hidden;opacity:.55;background:transparent;cursor:pointer}.lightbox-thumbs button.active{border-color:#4cc0ba;opacity:1}.lightbox-thumbs img{width:100%;height:100%;object-fit:cover}
-  @media(max-width:680px){.gallery-collection{grid-template-columns:1fr;padding:35px 0}.gallery-cover>img{height:280px}.lightbox{padding:0}.lightbox-panel{width:100%;height:100%;border:0;border-radius:0}.lightbox-panel header{align-items:start}.lightbox-panel header>div:first-child span{display:block}.lightbox-stage{grid-template-columns:38px minmax(0,1fr) 38px;padding:6px}.nav{width:34px;height:50px}.lightbox-panel footer{display:grid}.lightbox-thumbs{overflow-x:auto;max-width:100%}.zoom-hint{display:none}}
+  .lightbox-panel footer{min-width:0;padding:12px 18px 15px;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:12px}
+  .image-details{display:flex;gap:12px 24px;justify-content:space-between;align-items:baseline;min-width:0}
+  .image-details p{margin:0;font-size:10px;color:#c8d8d7;line-height:1.8}
+  .image-dimensions{flex:0 0 auto;color:#9fc4c2;font-size:9px;white-space:nowrap}.image-dimensions b{font-weight:500;color:#c8d8d7}
+  .lightbox-thumbs{display:flex;gap:7px;max-width:100%;overflow-x:auto;padding-block-end:2px}.lightbox-thumbs button{flex:0 0 auto;width:62px;height:45px;padding:0;border:2px solid transparent;border-radius:7px;overflow:hidden;opacity:.55;background:transparent;cursor:pointer}.lightbox-thumbs button.active{border-color:#4cc0ba;opacity:1}.lightbox-thumbs img{width:100%;height:100%;object-fit:cover}
+  @media(max-width:680px){.gallery-collection{grid-template-columns:1fr;padding:35px 0}.gallery-cover>img{height:280px}.lightbox{padding:0}.lightbox-panel{width:100%;height:100%;border:0;border-radius:0}.lightbox-panel header{align-items:start}.lightbox-panel header>div:first-child span{display:block}.lightbox-stage{grid-template-columns:38px minmax(0,1fr) 38px;padding:6px}.nav{width:34px;height:50px}.image-details{display:grid;gap:4px}.zoom-hint{display:none}}
 </style>
