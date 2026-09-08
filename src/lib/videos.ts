@@ -1,6 +1,6 @@
 import type { MediaItem } from './news';
 
-export type VideoItem = MediaItem & {
+export type VideoItem = Omit<MediaItem, 'coverImage' | 'coverImageAlt' | 'editorialNote'> & {
   thumbnail?: string;
   icon: string;
 };

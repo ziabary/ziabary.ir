@@ -28,7 +28,9 @@
       summary: article.excerpt,
       url: article.external!,
       date: article.date,
-      faDate: article.faDate
+      faDate: article.faDate,
+      coverImage: article.cover ?? null,
+      coverImageAlt: article.title
     }));
 
   const publishedItems = [...authoredMedia, ...mediaItems].sort((a, b) => b.date.localeCompare(a.date));
@@ -117,8 +119,21 @@
                 {#if mediaSources[item.source]}<span class="media-source-logo"><img src={mediaSources[item.source].logo} alt="" loading="lazy" /></span>{/if}
                 <span><strong>{item.source}</strong><small><span>{item.kind}</span><span class="fa-num">{item.faDate}</span></small></span>
               </div>
-              <h2>{item.title}</h2>
-              <p>{item.summary}</p>
+              <div class="media-entry-content">
+                {#if item.coverImage}
+                  <img
+                    class="media-cover"
+                    src={item.coverImage}
+                    alt={item.coverImageAlt ?? ''}
+                    loading="lazy"
+                    decoding="async"
+                    width="160"
+                    height="120"
+                  />
+                {/if}
+                <h2>{item.title}</h2>
+                <p>{item.summary}</p>
+              </div>
             </div>
             <i>↗</i>
           </a>
@@ -160,3 +175,28 @@
     </div>
   {/if}
 </main>
+
+<style>
+  .media-entry-content {
+    display: flow-root;
+  }
+
+  .media-cover {
+    float: left;
+    width: 160px;
+    height: 120px;
+    margin: 14px 20px 12px 0;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--soft);
+  }
+
+  @media (max-width: 680px) {
+    .media-cover {
+      width: 96px;
+      height: 72px;
+      margin-right: 12px;
+    }
+  }
+</style>

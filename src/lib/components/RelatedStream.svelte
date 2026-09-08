@@ -14,7 +14,6 @@
 <section class="related-stream">
   <div class="stream-label">
     <span>مسیر پیشنهادی مطالعه</span>
-    <small>ارتباط‌ها به‌صورت دستی انتخاب شده‌اند</small>
   </div>
   {#each items as article, index}
     {#if article}
