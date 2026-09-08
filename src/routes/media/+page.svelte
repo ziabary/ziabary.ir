@@ -151,9 +151,8 @@
             <div class="video-card-visual" class:has-thumbnail={Boolean(item.thumbnail)}>
               {#if item.thumbnail}
                 <img src={item.thumbnail} alt="" loading="lazy" />
-              {:else}
-                <i class={item.icon} aria-hidden="true"></i>
               {/if}
+              <i class={item.kind === 'صوت' || item.kind === 'پادکست' ? 'fa-solid fa-headphones' : 'fa-solid fa-play'} aria-hidden="true"></i>
               <span>{item.kind}</span>
             </div>
             <div class="video-card-body">
