@@ -273,6 +273,9 @@
   .guide-article-cover {
     position: relative;
     display: block;
+    box-sizing: border-box;
+    width: calc(100% - 74px);
+    max-width: 820px;
     aspect-ratio: 16 / 9;
     margin-bottom: 34px;
     overflow: hidden;
@@ -354,6 +357,7 @@
     .guide-series-intro { padding-top: 26px; }
     .guide-entry header { grid-template-columns: 48px 1fr; }
     .guide-entry > p, .guide-entry > a, .guide-article-prose { margin-inline: 0; }
+    .guide-article-cover { width: 100%; }
     .guide-empty { grid-template-columns: 70px 1fr; gap: 15px; }
     .guide-empty > span { font-size: 42px; }
   }
