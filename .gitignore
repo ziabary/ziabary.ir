@@ -6,3 +6,7 @@ build
 !.env.example
 .DS_Store
 npm-debug.log*
+
+# Large media assets are maintained locally, outside Git.
+/static/slides/
+/static/images/gallery/
