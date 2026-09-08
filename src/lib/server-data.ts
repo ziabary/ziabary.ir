@@ -46,9 +46,9 @@ export type ServerRecord = {
 };
 
 export const serverLastReviewed = {
-  iso: '2026-08-10',
-  fa: '۱۹ مرداد ۱۴۰۵',
-  gregorian: '10 August 2026'
+  iso: '2026-09-08',
+  fa: '۱۷ شهریور ۱۴۰۵',
+  gregorian: '8 September 2026'
 };
 
 export const serverGpuProfiles: ServerGpuProfile[] = [
@@ -91,10 +91,10 @@ export const serverRecords: ServerRecord[] = [
     id: 'hpe-dl380a-gen12', vendor: 'HPE', model: 'ProLiant Compute DL380a Gen12', status: 'current', acceleratorForm: 'pcie-card',
     heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 10, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
     cardCooling: ['passive'], systemCooling: ['air', 'dlc'], cpu: '۲× Intel Xeon 6؛ تا ۱۴۴ هسته برای هر پردازنده', memory: 'DDR5 HPE Smart Memory؛ ظرفیت دقیق وابسته به CPU/BOM',
-    storage: 'چند پیکربندی NVMe/SAS/SATA طبق QuickSpecs', expansion: 'PCIe Gen5؛ پیکربندی‌های ۰/۱/۲/۴/۸/۱۰ GPU', power: 'PSUهای ۲۴۰۰ یا ۳۲۰۰ وات برای GPUهای ۶۰۰ وات؛ چند دامنهٔ تغذیه',
+    storage: 'NVMe/SAS/SATA طبق QuickSpecs؛ برای کنترلر ذخیره‌سازی، باتری ۹۶W Smart Storage یا Smart Hybrid Capacitor مطابق BOM لازم است', expansion: 'PCIe Gen5؛ پیکربندی‌های ۰/۱/۲/۴/۸/۱۰ GPU', power: 'PSUهای ۲۴۰۰ یا ۳۲۰۰ وات برای GPUهای ۶۰۰ وات؛ چند دامنهٔ تغذیه',
     validatedGpuIds: ['h200-nvl', 'h100-nvl', 'rtx-pro-6000-bse', 'l40s', 'l4'], acceleratorSummary: 'تا ۱۰ کارت دو اسلات؛ تعداد و توان به enablement kit وابسته است',
     bestFor: 'بیشترین تراکم کارت PCIe در سبد OEM سازمانی همراه با iLO و گزینهٔ DLC.', caution: 'عدد ۱۰ سقف خانواده است؛ برخی kitها فقط ۸ کارت را فعال می‌کنند و Bridge/PSU نیز کارت‌به‌کارت فرق دارد.',
-    sourceLabel: 'HPE DL380a Gen12 QuickSpecs', sourceUrl: 'https://www.hpe.com/us/en/collaterals/collateral.a00047453enw.html', sourceTier: 'راهنمای فنی سازنده'
+    sourceLabel: 'HPE DL380a Gen12 QuickSpecs — V20, 8 September 2026', sourceUrl: 'https://www.hpe.com/us/en/collaterals/collateral.a00047453enw.html', sourceTier: 'راهنمای فنی سازنده'
   },
   {
     id: 'hpe-dl380a-gen11', vendor: 'HPE', model: 'ProLiant DL380a Gen11', status: 'current', acceleratorForm: 'pcie-card',
@@ -119,17 +119,17 @@ export const serverRecords: ServerRecord[] = [
     heightU: 3, depthMm: 892, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: 8, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
     cardCooling: ['passive', 'active'], systemCooling: ['air', 'dlc'], cpu: 'تا ۲× AMD EPYC 9005/9004؛ تا ۱۶۰ هسته', memory: '۲۴ اسلات DDR5؛ تا ۶ ترابایت و ۶۴۰۰ MT/s',
     storage: '۸× ۲٫۵ اینچ یا ۶× E1.S یا ۴× E3.S، وابسته به shuttle', expansion: 'GPUها روی PCIe Gen5 x16؛ تا ۶ شیار Gen5 تکمیلی و OCP 3.0', power: 'PSUهای ۱۸۰۰ یا ۲۴۰۰ وات؛ طول شاسی با PSU تغییر می‌کند',
-    validatedGpuIds: ['h200-nvl', 'rtx-pro-6000-bse', 'l40s'], acceleratorSummary: 'تا ۸ کارت FHFL دو اسلات ۶۰۰ وات؛ همچنین نسخهٔ HGX چهار GPU',
-    bestFor: 'تراکم ۸ کارت Gen5 در ۳U و انتخاب میان PCIe و HGX در یک خانواده.', caution: 'front shuttle تعیین می‌کند مدل ۴-DW، ۸-DW یا SXM باشد؛ این سه BOM قابل‌جایگزینی ذهنی نیستند.',
+    validatedGpuIds: ['h200-nvl', 'rtx-pro-6000-bse', 'l40s'], acceleratorSummary: 'تا ۸ کارت FHFL دو اسلات ۶۰۰ وات؛ گزینهٔ HGX/SXM5 از عرضه خارج شده',
+    bestFor: 'تراکم ۸ کارت PCIe Gen5 در ۳U؛ پیکربندی‌های جاری PCIe را از مدل‌های قدیمی HGX جدا کنید.', caution: 'نوع front shuttle و BOM تعداد GPU را تعیین می‌کند؛ گزینهٔ SXM5 و برد HGX H200 چهارGPU در ۲۸ ژوئیهٔ ۲۰۲۶ از عرضه خارج شده‌اند.',
     sourceLabel: 'Lenovo ThinkSystem SR675 V3 Product Guide', sourceUrl: 'https://lenovopress.lenovo.com/lp1611-thinksystem-sr675-v3-server', sourceTier: 'راهنمای فنی سازنده'
   },
   {
     id: 'lenovo-sr655-v3', vendor: 'Lenovo', model: 'ThinkSystem SR655 V3', status: 'current', acceleratorForm: 'pcie-card',
     heightU: 2, depthMm: null, pcieGeneration: 5, gpuTopology: 'direct', maxDoubleWidthGpus: 3, maxSingleWidthGpus: 8, maxTripleWidthGpus: 0, maxGpuPowerW: null,
     cardCooling: ['passive', 'active'], systemCooling: ['air'], cpu: '۱× AMD EPYC 9005/9004؛ تا ۱۶۰ هسته', memory: '۱۲ اسلات DDR5؛ تا ۳ ترابایت و ۶۴۰۰ MT/s',
-    storage: 'تا ۴۰× ۲٫۵ اینچ با ترکیب bayهای جلو/میانی/عقب', expansion: 'PCIe Gen5؛ تا ۳ DW یا ۸ SW', power: 'وابسته به riser، GPU و configurator لنوو',
+    storage: 'تا ۴۰× ۲٫۵ اینچ؛ پیکربندی backplane دوازده‌درایوی ۳٫۵ اینچ B8LT از عرضه خارج شده است', expansion: 'PCIe Gen5؛ تا ۳ DW یا ۸ SW', power: 'وابسته به riser، GPU و configurator لنوو',
     validatedGpuIds: ['l40s', 'l4', 'a10', 'rtx-6000-ada'], acceleratorSummary: '۳ کارت دو اسلات یا ۸ کارت تک‌اسلات',
-    bestFor: 'گره ۲U تک‌سوکت با تمرکز هم‌زمان بر GPU و ذخیره‌سازی متراکم.', caution: 'اعلام قدیمی ۶ کارت DW به پیکربندی‌های نخستین مربوط بود؛ راهنمای جاری سقف ۳ DW را اعلام می‌کند.',
+    bestFor: 'گره ۲U تک‌سوکت با تمرکز هم‌زمان بر GPU و ذخیره‌سازی متراکم.', caution: 'سقف جاری ۳ کارت DW است. هنگام افزودن GPU، تمام شیارهای خالی DIMM باید پرکننده داشته باشند تا جریان هوا حفظ شود؛ افزودن GPU صرفاً نصب کارت نیست.',
     sourceLabel: 'Lenovo ThinkSystem SR655 V3 Product Guide', sourceUrl: 'https://lenovopress.lenovo.com/lp1610-thinksystem-sr655-v3-server', sourceTier: 'راهنمای فنی سازنده'
   },
   {
@@ -214,13 +214,13 @@ export const serverRecords: ServerRecord[] = [
     sourceLabel: 'Fujitsu PRIMERGY Server Portfolio', sourceUrl: 'https://www.fujitsu.com/es/products/computing/servers/', sourceTier: 'سازنده'
   },
   {
-    id: 'qct-d75t-7u', vendor: 'QCT', model: 'QuantaGrid D75T-7U', status: 'announced', acceleratorForm: 'pcie-card',
-    heightU: 7, depthMm: null, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
-    cardCooling: ['passive'], systemCooling: ['air'], cpu: '۲× AMD EPYC 9005', memory: '۲۴ اسلات DDR5؛ تا ۳ ترابایت در اطلاعات اولیه',
-    storage: 'اطلاعات نهایی محصول در انتظار انتشار', expansion: '۸× PCIe Gen5 x16 برای GPU دو اسلات', power: 'اطلاعات نهایی در انتظار انتشار',
-    validatedGpuIds: [], acceleratorSummary: 'تا ۸ کارت DW ششصدوات؛ محصول در وضعیت coming soon',
-    bestFor: 'رصد گزینه‌های جدید QCT برای نسل PCIe 5، نه خرید فوری بدون datasheet نهایی.', caution: 'این محصول هنوز «coming soon» است؛ تا انتشار datasheet و configurator نباید مبنای سفارش قطعی قرار گیرد.',
-    sourceLabel: 'QCT GPGPU Server Portfolio', sourceUrl: 'https://www.qct.io/product/index/Server/rackmount-server/GPGPU-Xeon-Phi', sourceTier: 'سازنده'
+    id: 'qct-d75t-7u', vendor: 'QCT', model: 'QuantaGrid D75T-7U', status: 'current', acceleratorForm: 'integrated',
+    heightU: 7, depthMm: 950, pcieGeneration: 5, gpuTopology: 'baseboard', maxDoubleWidthGpus: 0, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: null,
+    cardCooling: [], systemCooling: ['air'], cpu: '۲× AMD EPYC 9005', memory: '۲۴ اسلات DDR5-6400؛ تا ۳ ترابایت',
+    storage: '۱۸× ۲٫۵ اینچ NVMe hot-plug + دو M.2 2280 اختیاری برای بوت', expansion: '۸× MI325X روی UBB 2.0 یا ۸× H200 SXM5؛ شیارهای PCIe تکمیلی برای شبکه و I/O', power: '۶× ۴۰۰۰ وات Titanium؛ افزونگی ۴+۲',
+    validatedGpuIds: [], acceleratorSummary: '۸× AMD MI325X یا NVIDIA H200 SXM5 یکپارچه در ۷U',
+    bestFor: 'آموزش و استنتاج با سامانهٔ هشت‌شتاب‌دهندهٔ یکپارچهٔ AMD یا NVIDIA.', caution: 'GPUها روی baseboard هستند؛ شیارهای توسعهٔ PCIe به معنی پشتیبانی از هشت کارت GPU مستقل نیست. BOM و موجودی را با QCT تأیید کنید.',
+    sourceLabel: 'QCT QuantaGrid D75T-7U specifications', sourceUrl: 'https://www.qct.io/product/index/Server/rackmount-server/GPGPU-Xeon-Phi/QuantaGrid-D75T-7U', sourceTier: 'سازنده'
   },
   {
     id: 'gigabyte-g495-db1-am1', vendor: 'GIGABYTE', model: 'G495-DB1-AM1', status: 'announced', acceleratorForm: 'pcie-card',
@@ -325,18 +325,18 @@ export const serverRecords: ServerRecord[] = [
     id: 'lenovo-sr680a-v4', vendor: 'Lenovo', model: 'ThinkSystem SR680a V4', status: 'current', acceleratorForm: 'integrated',
     heightU: 8, depthMm: null, pcieGeneration: 5, gpuTopology: 'baseboard', maxDoubleWidthGpus: 0, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: null,
     cardCooling: [], systemCooling: ['air'], cpu: '۲× Intel Xeon 6', memory: 'DDR5؛ طبق Product Guide',
-    storage: 'NVMe؛ طبق Product Guide', expansion: '۸× NVIDIA B300 HGX', power: 'زیرساخت برق پرتوان؛ طبق Product Guide',
+    storage: 'NVMe؛ طبق Product Guide', expansion: '۸× NVIDIA B300 HGX', power: '۶ یا ۸ PSU از نوع ۳۲۰۰W AC یا ۳۸۰۰W HVAC/HVDC؛ N+N فقط با ۸ منبع ۳۸۰۰W و ورودی بالاتر از ۲۴۹VAC یا ۲۶۰VDC',
     validatedGpuIds: [], acceleratorSummary: '۸× B300 HGX یکپارچه در ۸U air-cooled',
-    bestFor: 'Blackwell Ultra در مرکزی که خنک‌کاری مایع ندارد.', caution: 'سامانهٔ air-cooled هشت‌یونیتی است و برای کارت PCIe مستقل طراحی نشده است.',
+    bestFor: 'Blackwell Ultra در مرکزی که خنک‌کاری مایع ندارد.', caution: 'ارتقای میدانی از PSUهای ۳۲۰۰ به ۳۸۰۰ وات به‌دلیل تفاوت معماری برق پشتیبانی نمی‌شود؛ نوع تغذیه باید هنگام سفارش تعیین شود. سامانه برای کارت PCIe مستقل نیست.',
     sourceLabel: 'Lenovo ThinkSystem SR680a V4 Product Guide', sourceUrl: 'https://lenovopress.lenovo.com/lp2264-thinksystem-sr680a-v4-server', sourceTier: 'راهنمای فنی سازنده'
   },
   {
-    id: 'lenovo-sr680a-v3', vendor: 'Lenovo', model: 'ThinkSystem SR680a V3', status: 'current', acceleratorForm: 'integrated',
-    heightU: 8, depthMm: null, pcieGeneration: 5, gpuTopology: 'baseboard', maxDoubleWidthGpus: 0, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 1000,
+    id: 'lenovo-sr680a-v3', vendor: 'Lenovo', model: 'ThinkSystem SR680a V3 (H100/H200)', status: 'legacy', acceleratorForm: 'integrated',
+    heightU: 8, depthMm: null, pcieGeneration: 5, gpuTopology: 'baseboard', maxDoubleWidthGpus: 0, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 700,
     cardCooling: [], systemCooling: ['air'], cpu: '۲× نسل پنجم Intel Xeon Scalable', memory: 'DDR5؛ طبق Product Guide',
-    storage: 'NVMe؛ طبق Product Guide', expansion: '۸× H100/H200 یا B200 HGX، وابسته به مدل', power: 'زیرساخت برق پرتوان؛ طبق Product Guide',
+    storage: 'NVMe؛ طبق Product Guide', expansion: '۸× H100/H200 HGX', power: 'زیرساخت برق پرتوان؛ طبق Product Guide',
     validatedGpuIds: [], acceleratorSummary: '۸ شتاب‌دهندهٔ HGX یکپارچه در ۸U air-cooled',
-    bestFor: 'H100/H200/B200 با پلتفرم سازمانی Lenovo.', caution: 'نسخهٔ B200 راهنمای محصول جدا دارد؛ پیکربندی‌ها را قابل تبدیل ساده فرض نکنید.',
+    bestFor: 'سامانه‌های موجود H100/H200 با پلتفرم سازمانی Lenovo.', caution: 'راهنمای این مدل از ۴ ژوئن ۲۰۲۶ وضعیت withdrawn from marketing دارد؛ برای سفارش جدید جایگزین را بررسی کنید. نسخهٔ B200 راهنمای جداگانه دارد.',
     sourceLabel: 'Lenovo ThinkSystem SR680a V3 Product Guide', sourceUrl: 'https://lenovopress.lenovo.com/lp1909-thinksystem-sr680a-v3-server', sourceTier: 'راهنمای فنی سازنده'
   },
   {

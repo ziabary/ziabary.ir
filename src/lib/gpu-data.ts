@@ -70,12 +70,39 @@ export type GpuBaseRecord = {
 export type GpuRecord = GpuBaseRecord & GpuComputeSpec;
 
 export const gpuLastReviewed = {
-  iso: '2026-08-10',
-  fa: '۱۹ مرداد ۱۴۰۵',
-  gregorian: '10 August 2026'
+  iso: '2026-09-08',
+  fa: '۱۷ شهریور ۱۴۰۵',
+  gregorian: '8 September 2026'
 };
 
 const rows: GpuBaseRecord[] = [
+  {
+    id: 'intel-crescent-island', vendor: 'Intel', model: 'Crescent Island', status: 'announced', gpuClass: 'server-pcie', architecture: 'Xe3P', year: 2026,
+    memoryGB: 480, memoryType: 'LPDDR5X؛ تا ظرفیت اعلامی', bandwidthTBs: 0, powerW: 350, formFactor: 'کارت PCIe؛ ابعاد نهایی اعلام نشده', hostInterface: 'PCIe؛ نسل و عرض لینک در خبر مشخص نیست', cooling: 'هواخنک؛ نوع فن در خبر مشخص نیست',
+    compute: '۳۲ Xe Core و ۲۵۶ XMX؛ نرخ TFLOPS/TOPS در خبر Hot Chips درج نشده است.', interconnect: 'جزئیات اعلام نشده', partitioning: 'جزئیات اعلام نشده', software: 'پشتهٔ نرم‌افزاری Intel؛ نسخه‌های پشتیبانی‌شده نیازمند تأیید نهایی',
+    workloads: ['استنتاج سازمانی'], bestFit: 'رصد استنتاج مدل‌های پرحافظه در دیتاسنترهای هواخنک موجود.', caution: 'مشخصات اعلام‌شده در Hot Chips اوت ۲۰۲۶ هستند؛ خبر، زمان عرضهٔ عمومی و QPL سرور را تأیید نمی‌کند.', serverReady: true,
+    sourceUrl: 'https://www.intel.de/content/www/de/de/newsroom/news/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026.html', sourceLabel: 'Intel Hot Chips 2026 — Crescent Island', productKind: 'کارت', sourceTier: 'سازنده', dataDisclosure: { bandwidthTBs: 'not-published' }
+  },
+  {
+    id: 'nvidia-groq3-lpx', vendor: 'NVIDIA', model: 'Groq 3 LPX', status: 'system-only', gpuClass: 'frontier', architecture: 'Groq 3 LPU؛ SRAM با مدیریت کامپایلر', year: 2026,
+    memoryGB: 0, memoryType: 'SRAM توزیع‌شده در رک؛ ۵۰۰MB در هر LPU', bandwidthTBs: 0, powerW: null, formFactor: 'رک LPX با ۲۵۶ LPU', hostInterface: 'پلتفرم Vera Rubin', cooling: 'وابسته به طراحی رک',
+    compute: '۳۱۵ PFLOPS توان استنتاج در سطح رک؛ در ستون نرخ یک GPU ثبت نشده است.', interconnect: '۶۴۰ TB/s پهنای‌باند scale-up در سطح رک', partitioning: 'زمان‌بندی و جانمایی حافظه توسط کامپایلر', software: 'پشتهٔ استنتاج NVIDIA Vera Rubin / Groq',
+    workloads: ['استنتاج سازمانی'], bestFit: 'تولید توکن کم‌تأخیر برای عامل‌ها، در کنار GPUهای Rubin.', caution: 'رک مکمل Rubin است؛ ۱۲۸GB SRAM و ۴۰PB/s مجموع رک را نباید VRAM و پهنای‌باند یک GPU فرض کرد. تولید کامل در ۲۴ اوت اعلام شده؛ دسترسی سرویس تابع ارائه‌دهنده است.', serverReady: true,
+    sourceUrl: 'https://www.nvidia.com/en-us/data-center/lpx/', sourceLabel: 'NVIDIA Groq 3 LPX', productKind: 'سامانه', sourceTier: 'سازنده', dataDisclosure: { memoryGB: 'not-applicable', bandwidthTBs: 'not-applicable', powerW: 'not-published' },
+    extraSpecs: [
+      { group: 'حافظه', label: 'SRAM کل رک', value: '۱۲۸GB روی ۲۵۶ LPU؛ ۵۰۰MB در هر LPU', basis: 'رسمی' },
+      { group: 'حافظه', label: 'پهنای‌باند SRAM کل رک', value: '۴۰ PB/s', basis: 'رسمی' },
+      { group: 'محاسبات', label: 'توان استنتاج کل رک', value: '۳۱۵ PFLOPS؛ عدد سطح رک', basis: 'رسمی' }
+    ]
+  },
+  {
+    id: 'amd-mi430x', vendor: 'AMD', model: 'Instinct MI430X', status: 'announced', gpuClass: 'frontier', architecture: 'CDNA 5', year: 2027,
+    memoryGB: 432, memoryType: 'HBM4', bandwidthTBs: 23.3, powerW: null, formFactor: 'شتاب‌دهندهٔ سامانه‌های HPC؛ جزئیات نهایی اعلام نشده', hostInterface: 'وابسته به سامانهٔ OEM', cooling: 'وابسته به سامانهٔ OEM',
+    compute: 'تا ۲۸۸ TFLOPS سخت‌افزاری FP64؛ مشخصات مهندسی اولیه.', interconnect: 'جزئیات نهایی وابسته به سامانه', partitioning: 'اعلام نشده', software: 'AMD ROCm',
+    workloads: ['HPC', 'آموزش مدل‌های بزرگ', 'استنتاج سازمانی'], bestFit: 'برنامه‌ریزی سامانه‌های علمی با نیاز هم‌زمان به FP64 و AI.', caution: 'AMD عرضه را برای ۲۰۲۷ پیش‌بینی کرده است؛ اعداد اولیه‌اند و خبر انتخاب در LUMI-AI به معنی عرضهٔ عمومی امروز نیست.', serverReady: true,
+    sourceUrl: 'https://www.amd.com/en/products/accelerators/instinct/mi400/mi430x.html', sourceLabel: 'AMD Instinct MI430X', productKind: 'ماژول', sourceTier: 'سازنده', dataDisclosure: { powerW: 'not-published' },
+    extraSpecs: [{ group: 'محاسبات', label: 'FP4 / MXFP4 اعلامی', value: 'تا ۹٫۲ PFLOPS؛ تفکیک dense/sparse در صفحهٔ عمومی مشخص نیست', basis: 'رسمی' }]
+  },
   {
     id: 'google-tpu7x', vendor: 'Google', model: 'Cloud TPU7x (Ironwood)', status: 'current', gpuClass: 'frontier', architecture: 'Ironwood؛ دو chiplet', year: 2026,
     memoryGB: 192, memoryType: 'HBM؛ ۹۶GB برای هر chiplet', bandwidthTBs: 7.38, powerW: null, formFactor: 'Cloud TPU؛ برش ۴ تا ۹٬۲۱۶ تراشه', hostInterface: 'PCIe به میزبان چهار‌تراشه‌ای', cooling: 'مدیریت‌شده در Google Cloud',
@@ -273,22 +300,23 @@ const rows: GpuBaseRecord[] = [
   {
     id: 'amd-mi455x', vendor: 'AMD', model: 'Instinct MI455X', status: 'system-only', gpuClass: 'frontier', architecture: 'CDNA 5', year: 2026,
     memoryGB: 432, memoryType: 'HBM4', bandwidthTBs: 23.3, powerW: null, formFactor: 'EAM / Helios', hostInterface: 'سیستم Helios', cooling: 'مایع در سطح سیستم',
-    compute: 'شتاب‌دهندهٔ نسل CDNA 5؛ اعداد دقیق همهٔ دقت‌ها را فقط در اسناد سیستم مقایسه کنید.', interconnect: 'Infinity Fabric در Helios', partitioning: 'در سطح پلتفرم', software: 'ROCm',
+    compute: 'تا ۴۰٫۳ PFLOPS از نوع OCP MXFP4 و ۵ PFLOPS متراکم BF16/FP16 در هر GPU.', interconnect: 'UALoE دوطرفه ۳٫۶ TB/s برای scale-up؛ UALink دوطرفه ۶۰۰ GB/s برای scale-out', partitioning: 'SR-IOV؛ وابسته به پلتفرم و پشتهٔ نرم‌افزار', software: 'ROCm',
     workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC'], bestFit: 'خوشه‌های مرزی که از ابتدا برای Helios طراحی می‌شوند.', caution: 'کارت PCIe مستقل نیست؛ توان هر ماژول در صفحهٔ عمومی محصول اعلام نشده است.', serverReady: true,
-    sourceUrl: 'https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html', sourceLabel: 'AMD Instinct MI455X'
+    sourceUrl: 'https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html', sourceLabel: 'AMD Instinct MI455X', productKind: 'ماژول', sourceTier: 'سازنده', dataDisclosure: { powerW: 'not-published' }
   },
   {
-    id: 'nvidia-rubin', vendor: 'NVIDIA', model: 'Rubin GPU', status: 'announced', gpuClass: 'frontier', architecture: 'Rubin', year: 2026,
+    id: 'nvidia-rubin', vendor: 'NVIDIA', model: 'Rubin GPU', status: 'system-only', gpuClass: 'frontier', architecture: 'Rubin', year: 2026,
     memoryGB: 288, memoryType: 'HBM4', bandwidthTBs: 22, powerW: null, formFactor: 'HGX / Vera Rubin NVL72', hostInterface: 'پلتفرم Vera Rubin', cooling: 'مایع در سطح رک',
     compute: 'مشخصات اولیه: تا ۴ PFLOPS متراکم BF16؛ با اعداد پراکنده یا سطح رک مخلوط نشود.', interconnect: 'NVLink تا ۳٫۶ TB/s', partitioning: 'اعلام نهایی نشده', software: 'CUDA / NVIDIA AI Enterprise',
-    workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC'], bestFit: 'برنامه‌ریزی نسل بعدی AI Factory، نه خرید فوری کارت.', caution: 'محصول آینده با مشخصات اولیه است؛ در زمان عرضه،‌ پیکربندی نهایی را دوباره بررسی کنید.', serverReady: true,
-    sourceUrl: 'https://www.nvidia.com/en-us/data-center/hgx/', sourceLabel: 'NVIDIA HGX Platform'
+    workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC'], bestFit: 'آموزش و استنتاج در سامانه‌های HGX Rubin NVL8 و Vera Rubin NVL72.', caution: 'عرضهٔ تولیدی پلتفرم آغاز شده؛ کارت PCIe مستقل نیست. مشخصات HGX همچنان اولیه و وابسته به پیکربندی OEM هستند.', serverReady: true,
+    sourceUrl: 'https://www.nvidia.com/en-us/data-center/hgx/', sourceLabel: 'NVIDIA HGX Platform', productKind: 'ماژول', sourceTier: 'سازنده', dataDisclosure: { powerW: 'not-published' },
+    extraSpecs: [{ group: 'عرضه و منبع', label: 'وضعیت عرضه', value: 'شروع تحویل تولیدی در اوت ۲۰۲۶ طبق گزارش ۲۶ اوت NVIDIA؛ زمان تحویل سامانه تابع OEM است', basis: 'رسمی' }]
   },
   {
     id: 'nvidia-b300', vendor: 'NVIDIA', model: 'Blackwell Ultra B300', status: 'current', gpuClass: 'frontier', architecture: 'Blackwell Ultra', year: 2025,
-    memoryGB: 288, memoryType: 'HBM3e', bandwidthTBs: 8, powerW: 1400, formFactor: 'SXM / HGX', hostInterface: 'HGX B300', cooling: 'مایع',
+    memoryGB: 288, memoryType: 'HBM3e', bandwidthTBs: 8, powerW: 1400, formFactor: 'SXM / HGX', hostInterface: 'HGX B300', cooling: 'هوا یا مایع؛ وابسته به سامانه و سقف توان',
     compute: 'توان ماتریسی وابسته به دقت؛ برای مقایسه، dense و sparse را جدا نگه دارید.', interconnect: 'NVLink نسل پنجم', partitioning: 'MIG', software: 'CUDA / NVIDIA AI Enterprise',
-    workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC', 'چندمستاجری'], bestFit: 'مدل‌های بسیار بزرگ و استنتاج reasoning با حافظهٔ زیاد.', caution: 'توان و زیرساخت مایع، طراحی رک و برق را تعیین می‌کند.', serverReady: true,
+    workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC', 'چندمستاجری'], bestFit: 'مدل‌های بسیار بزرگ و استنتاج reasoning با حافظهٔ زیاد.', caution: 'نوع خنک‌کاری و سقف توان را از BOM سامانه بگیرید؛ مدل‌های هواخنک هم وجود دارند. نرخ INT8 و پشتیبانی کرنل آن با FP8 یکسان نیست.', serverReady: true,
     sourceUrl: 'https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/', sourceLabel: 'NVIDIA Blackwell Ultra Architecture'
   },
   {
@@ -1046,6 +1074,23 @@ const rows: GpuBaseRecord[] = [
 ];
 
 const computeSpecs: Record<string, GpuComputeSpec> = {
+  'intel-crescent-island': {
+    generalCoreCount: 32, generalCoreLabel: 'Xe Core', matrixCoreCount: 256, matrixCoreLabel: 'XMX Engine',
+    fp8: { dense: null }, fp16: { dense: null }, fp32: null, fp64: null,
+    computeFootnote: 'شمار Xe Core با CUDA Core یا Stream Processor قابل قیاس مستقیم نیست؛ نرخ محاسباتی در منبع اعلام نشده است.'
+  },
+  'nvidia-groq3-lpx': {
+    generalCoreCount: null, generalCoreLabel: 'LPU', matrixCoreCount: null, matrixCoreLabel: 'Matrix Engine',
+    fp8: { dense: null }, fp16: { dense: null }, fp32: null, fp64: null,
+    matrixSourceUrl: 'https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform', matrixSourceLabel: 'NVIDIA Groq 3 LPX architecture',
+    computeFootnote: 'این رکورد یک رک کامل است؛ مقادیر محاسباتی رک به نرخ یک GPU تبدیل نشده‌اند.',
+    disclosure: { fp4: 'not-applicable', fp8: 'not-applicable', bf16: 'not-applicable', fp16: 'not-applicable', fp32: 'not-applicable', fp64: 'not-applicable', int8: 'not-applicable', int4: 'not-applicable' }
+  },
+  'amd-mi430x': {
+    generalCoreCount: 256, generalCoreLabel: 'WGP', matrixCoreCount: null, matrixCoreLabel: 'Matrix Core',
+    fp8: { dense: null }, fp16: { dense: null }, fp32: null, fp64: 288,
+    computeFootnote: 'FP64 سخت‌افزاری و اولیه است؛ عدد FP4 بدون تفکیک dense/sparse در مشخصات تکمیلی آمده است.'
+  },
   'google-tpu7x': {
     generalCoreCount: 4, generalCoreLabel: 'SparseCore', matrixCoreCount: 2, matrixCoreLabel: 'TensorCore',
     fp4: { dense: null }, fp8: { dense: 4614 }, bf16: { dense: 2307 }, fp16: { dense: null }, fp32: null, fp64: null, int8: { dense: null }, int4: { dense: null },
@@ -1132,18 +1177,20 @@ const computeSpecs: Record<string, GpuComputeSpec> = {
   },
   'amd-mi455x': {
     generalCoreCount: 256, generalCoreLabel: 'WGP', matrixCoreCount: null, matrixCoreLabel: 'Matrix Core',
-    fp8: { dense: 20100 }, fp16: { dense: 5000, sparse: 10100 }, fp32: 315, fp64: 5,
-    computeFootnote: 'FP8 از نوع OCP است؛ AMD تعداد Stream Processor یا Matrix Core را برای این SKU اعلام نکرده است.'
+    fp4: { dense: 40300 }, fp8: { dense: 20100 }, fp16: { dense: 5000, sparse: 10100 }, bf16: { dense: 5000, sparse: 10100 }, int8: { dense: 5000, sparse: 10100 }, fp32: 315, fp64: 5,
+    computeFootnote: 'FP4 از نوع OCP MXFP4 و FP8 از نوع OCP است؛ مقادیر هر GPU از جدول رسمی SKU هستند. شمار Stream Processor یا Matrix Core اعلام نشده است.'
   },
   'nvidia-rubin': {
     generalCoreCount: null, generalCoreLabel: 'CUDA Core', matrixCoreCount: null, matrixCoreLabel: 'Tensor Core',
-    fp8: { dense: 17500 }, fp16: { dense: 4000 }, bf16: { dense: 4000 }, fp32: 130, fp64: 33,
-    computeFootnote: 'مشخصات اولیه و تا سقف اعلامی هر GPU؛ FP8/FP6 برای آموزش و به‌صورت dense است.'
+    fp4: { dense: null, sparse: 50000 }, fp8: { dense: 17500 }, fp16: { dense: 4000 }, bf16: { dense: 4000 }, int8: { dense: 250 }, fp32: 130, fp64: 33,
+    computeFootnote: 'مشخصات اولیهٔ هر GPU؛ FP4 sparse استنتاج ۵۰ PFLOPS است. FP4 dense آموزش ۳۵ PFLOPS است و به‌عنوان dense استنتاج ثبت نشده؛ FP8/FP6 آموزشی و INT8 متراکم‌اند.'
   },
   'nvidia-b300': {
     generalCoreCount: 20480, generalCoreLabel: 'CUDA Core (تا)', matrixCoreCount: 640, matrixCoreLabel: 'Tensor Core (تا)',
-    fp8: { dense: 4500, sparse: 9000 }, fp16: { dense: 2250, sparse: 4500 }, bf16: { dense: 2250, sparse: 4500 }, fp32: 75, fp64: null,
-    computeFootnote: 'تعداد هسته از پیکربندی کامل ۱۶۰ SM به‌دست می‌آید و با SKU تغییر می‌کند؛ نرخ‌های FP از HGX هشت‌GPU محاسبه شده‌اند.'
+    fp4: { dense: 13500, sparse: 18000 }, fp8: { dense: 4500, sparse: 9000 }, fp16: { dense: 2250, sparse: 4500 }, bf16: { dense: 2250, sparse: 4500 }, int8: { dense: 187.5, sparse: 375 }, fp32: 75, fp64: null,
+    matrixSourceUrl: 'https://www.nvidia.com/en-us/data-center/hgx/', matrixSourceLabel: 'NVIDIA HGX B300 specifications',
+    computeFootnote: 'تعداد هسته از پیکربندی کامل ۱۶۰ SM استخراج شده است؛ نرخ‌های FP4 و INT8 از مجموع هشت‌GPU HGX به‌دست آمده‌اند. INT8 متراکم: ۳ POPS ÷ ۲ ÷ ۸ = ۱۸۷٫۵ TOPS؛ این عدد تضمین وجود کرنل مناسب در موتور استنتاج نیست.',
+    disclosure: { generalCoreCount: 'derived', matrixCoreCount: 'derived', fp4: 'derived', int8: 'derived' }
   },
   'nvidia-b200': {
     generalCoreCount: null, generalCoreLabel: 'CUDA Core', matrixCoreCount: null, matrixCoreLabel: 'Tensor Core',
@@ -1561,6 +1608,6 @@ export const gpuRecords: GpuRecord[] = rows.map((row) => ({
   ...row,
   ...emptyCompute,
   ...computeSpecs[row.id],
-  ...(row.vendor === 'NVIDIA' ? { sharedService: damavandSharedService } : {})
+  ...(row.vendor === 'NVIDIA' && row.productKind !== 'سامانه' ? { sharedService: damavandSharedService } : {})
 }));
 export const gpuWorkloads: GpuWorkload[] = ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'هوش مصنوعی محلی', 'HPC', 'گرافیک و رندر', 'چندمستاجری'];
