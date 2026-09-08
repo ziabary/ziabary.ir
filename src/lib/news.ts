@@ -12,6 +12,7 @@ export type MediaItem = {
 };
 
 export const mediaSources: Record<string, { logo: string }> = {
+  'راه پرداخت': { logo: '/images/news-agencies/way2pay.jpg' },
   'پیوست': { logo: '/images/news-agencies/peivast.png' },
   'اکوموتیو': { logo: '/images/news-agencies/ecomotive.png' },
   'توسعه برند': { logo: '/images/news-agencies/tosebrand.png' },
@@ -31,6 +32,30 @@ export const mediaSources: Record<string, { logo: string }> = {
 // Reports, interviews and other coverage about or quoting Mehran. Authored
 // pieces live in article frontmatter and are merged into the media page there.
 export const mediaItems: MediaItem[] = [
+{
+  "title": "سازمان ملی هوش مصنوعی نباید توسعه این حوزه را به نقطه شروع برگرداند",
+  "source": "راه پرداخت",
+  "kind": "گزارش",
+  "summary": "گزارش راه پرداخت از نشست بررسی ساختار حکمرانی هوش مصنوعی در خانه اندیشه‌ورزان، به جایگاه سازمان ملی، هماهنگی میان دستگاه‌ها، نقش بخش خصوصی و دسترسی به داده می‌پردازد. ضیابری در این نشست بر کارکرد ساختار جدید، کاهش پراکندگی تصمیم‌ها و پرهیز از بروکراسی تأکید می‌کند. دیگر سخنرانان نیز درباره حفظ مسیرهای طی‌شده، جلوگیری از توقف پروژه‌های جاری و روشن‌شدن اختیارات سازمان سخن می‌گویند.",
+  "url": "https://way2pay.ir/ai-governance-iran/",
+  "date": "2026-09-07",
+  "faDate": "۱۶ شهریور ۱۴۰۵",
+  "coverImage": "/images/news/way2pay-532363.jpg",
+  "coverImageAlt": "تصویر منتشرشده در گزارش راه پرداخت درباره ساختار حکمرانی هوش مصنوعی",
+  "editorialNote": null
+},
+{
+  "title": "چهار سال اجرای قانون جهش تولید دانش‌بنیان؛ چه آموختیم و چه باید اصلاح شود؟",
+  "source": "مرکز نوآوری قوه مقننه",
+  "kind": "گزارش",
+  "summary": "گزارش مرکز نوآوری قوه مقننه از پنل بررسی تجربه اجرای قانون جهش تولید دانش‌بنیان در فروم حکمرانی و قانون‌گذاری اینوتکس ۲۰۲۶، با حضور مهران ضیابری و نمایندگان مجلس، معاونت علمی و بخش خصوصی. محورهای معرفی‌شده در این گزارش شامل ظرفیت‌های مالی و حمایتی قانون، تکالیف دستگاه‌های اجرایی و فاصله میان امکانات قانونی و استفاده عملی فعالان زیست‌بوم است. ضرورت آموزش، اطلاع‌رسانی و تسهیل دسترسی به این ظرفیت‌ها نیز در نشست مطرح شده است.",
+  "url": "https://www.instagram.com/lcih_ir/p/Dc6Dmo5KNbR/",
+  "date": "2026-09-05",
+  "faDate": "۱۴ شهریور ۱۴۰۵",
+  "coverImage": "/images/news/lcih-Dc6Dmo5KNbR.jpg",
+  "coverImageAlt": "تصویر پنل اجرای قانون جهش تولید دانش‌بنیان در اینوتکس، منتشرشده توسط مرکز نوآوری قوه مقننه",
+  "editorialNote": null
+},
   {
   "title": "هوش مصنوعی برای توسعه به ساختاری چابک و فرادستگاهی نیاز دارد",
   "source": "پیوست",
