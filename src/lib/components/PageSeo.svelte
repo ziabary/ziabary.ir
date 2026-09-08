@@ -77,7 +77,7 @@
             isPartOf: { '@type': 'WebSite', name: 'Mehran Ziabary', url: siteUrl },
             about: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl }
           }
-  );
+  ).replace(/</g, '\\u003c');
 </script>
 
 <svelte:head>
@@ -103,5 +103,5 @@
   <meta name="twitter:image" content={imageUrl} />
   <meta name="twitter:image:alt" content={imageAlt} />
 
-  <script type="application/ld+json">{structuredData}</script>
+  {@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
