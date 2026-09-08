@@ -37,6 +37,24 @@
   tabs[0].count = publishedItems.length;
   const kinds = ['همه', ...new Set(publishedItems.map((item) => item.kind))];
   const persianNumber = new Intl.NumberFormat('fa-IR');
+  const videoPlatforms: Record<string, string> = {
+    'instagram.com': 'اینستاگرام',
+    'telewebion.net': 'تلوبیون',
+    'telewebion.com': 'تلوبیون',
+    'youtube.com': 'یوتیوب',
+    'youtu.be': 'یوتیوب',
+    'linkedin.com': 'لینکدین',
+    'radio.iranseda.ir': 'ایران‌صدا',
+    'radiotehran.ir': 'رادیو تهران',
+    'hamshahrionline.ir': 'همشهری آنلاین',
+    'shows.acast.com': 'اکست'
+  };
+
+  function videoPlatform(url: string, source: string): string {
+    const hostname = new URL(url).hostname.replace(/^www\./, '');
+    return videoPlatforms[hostname] ?? source;
+  }
+
   $: filtered = kind === 'همه' ? publishedItems : publishedItems.filter((item) => item.kind === kind);
 
   function isMediaTab(value: string): value is MediaTab {
@@ -159,7 +177,7 @@
               <p><strong>{item.source}</strong><span class="fa-num">{item.faDate}</span></p>
               <h2>{item.title}</h2>
               <div>{item.summary}</div>
-              <b>{item.kind === 'صوت' || item.kind === 'پادکست' ? 'شنیدن در منبع اصلی' : 'مشاهده در منبع اصلی'} <i>↗</i></b>
+              <b>{item.kind === 'صوت' || item.kind === 'پادکست' ? 'شنیدن' : 'مشاهده'} در {videoPlatform(item.url, item.source)} <i>↗</i></b>
             </div>
           </a>
         {/each}
