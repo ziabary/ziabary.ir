@@ -12,7 +12,7 @@
 
   const tabs: Array<{ id: MediaTab; label: string; count: number }> = [
     { id: 'published', label: 'نوشته‌ها و گفت‌وگوها', count: 0 },
-    { id: 'videos', label: 'ویدئوها', count: videoItems.length },
+    { id: 'videos', label: 'صوت و ویدئو', count: videoItems.length },
     { id: 'photos', label: 'تصاویر منتخب', count: galleryItems.length }
   ];
 
@@ -143,7 +143,7 @@
   {:else if activeTab === 'videos'}
     <div id="media-panel-videos" role="tabpanel" aria-labelledby="media-tab-videos" class="wrap media-hub-section media-video-panel">
       <div class="media-hub-heading">
-        <div><p class="eyebrow">۰۲</p><h2>ویدئوها</h2></div>
+        <div><p class="eyebrow">۰۲</p><h2>صوت و ویدئو</h2></div>
       </div>
       <div class="video-archive">
         {#each videoItems as item}
@@ -160,7 +160,7 @@
               <p><strong>{item.source}</strong><span class="fa-num">{item.faDate}</span></p>
               <h2>{item.title}</h2>
               <div>{item.summary}</div>
-              <b>مشاهده در منبع اصلی <i>↗</i></b>
+              <b>{item.kind === 'صوت' || item.kind === 'پادکست' ? 'شنیدن در منبع اصلی' : 'مشاهده در منبع اصلی'} <i>↗</i></b>
             </div>
           </a>
         {/each}
