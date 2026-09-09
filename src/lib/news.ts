@@ -12,6 +12,7 @@ export type MediaItem = {
 };
 
 export const mediaSources: Record<string, { logo: string }> = {
+  'زاویه': { logo: '/images/news-agencies/zavieh.svg' },
   'راه پرداخت': { logo: '/images/news-agencies/way2pay.jpg' },
   'پیوست': { logo: '/images/news-agencies/peivast.png' },
   'اکوموتیو': { logo: '/images/news-agencies/ecomotive.png' },
