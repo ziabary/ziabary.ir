@@ -12,8 +12,8 @@ external: "https://virgool.io/targoman/%DA%A9%D9%84%D8%A7%D9%87%D8%A8%D8%B1%D8%A
 source: "Virgool (Persian original)"
 related:
   - building-targoman-without-patronage
-  - apache-mod-jk-lock-errors
-draft: false
+  - apache-mod-jk-log-lock
+draft: true
 ---
 
 > **Context.** This article was written during Iran's 2019 rollout of mandatory one-time passwords for online card payments. The banking details are local and historical; the security-design mistake is neither.
@@ -22,7 +22,7 @@ In late 2019, Iranian banks began replacing the static “second password” use
 
 The problem was not that one-time passwords are inherently unsafe. It was that the implementation removed a secret the customer knew and replaced it with access to a device the customer possessed. That is not two-factor authentication. It is a change of factor—and for some users and threat models, a weaker one.
 
-The provocative title of the original Persian article described “fraud in two steps.” It was a warning, not a tutorial. The routes described here existed whether or not they were made visible. Concealing a threat model protects the flawed design, not the people exposed to it.
+The provocative title of the [original Persian article](/articles/dynamic-password-fraud/) described “fraud in two steps.” It was a warning, not a tutorial. The routes described here existed whether or not they were made visible. Concealing a threat model protects the flawed design, not the people exposed to it.
 
 <figure>
 <img src="/images/articles/dynamic-password-fraud/cover.jpg" alt="An illustration for the original Persian article about SMS one-time passwords" />

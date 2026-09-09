@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit sync && vite dev",
-    "build": "vite build && node scripts/generate-sitemap.mjs && node scripts/verify-structured-data.mjs",
+    "build": "vite build && node scripts/generate-sitemap.mjs && npm run verify:sitemap && node scripts/verify-structured-data.mjs",
+    "verify:sitemap": "node scripts/verify-sitemap.mjs",
+    "test:sitemap": "node --test tests/sitemap.test.mjs",
     "test:seo": "node --test tests/page-seo.test.mjs",
     "build:verify-stable": "bash scripts/verify-stable-assets.sh",
     "preview": "vite preview",

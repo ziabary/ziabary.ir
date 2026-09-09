@@ -16,9 +16,9 @@
 .article-page .prose th,.article-page .prose td{min-width:150px;padding:11px 13px;border:1px solid var(--line);text-align:right;vertical-align:top}
 .article-page .prose th{background:var(--soft);color:var(--ink);font-weight:700}
 .article-page .prose a:not(.original-link){color:var(--teal);text-decoration:underline;text-underline-offset:4px}
-.article-page .prose img{display:block;max-width:100%;height:auto;margin:32px auto;border-radius:10px}
-.article-page .prose figure{margin:38px 0}
-.article-page .prose figure img{margin-bottom:10px}
+.prose img{display:block;max-width:100%;height:auto;margin:32px auto;border-radius:10px}
+.prose figure{margin:38px 0}
+.prose figure img{margin-bottom:10px}
 .article-page .prose figcaption{text-align:center;color:var(--muted);font-size:11px}
 .article-page .prose blockquote{margin:36px 0;padding:8px 20px;border-inline-start:3px solid var(--teal);background:var(--soft)}
 .article-page .prose hr{border:0;border-top:1px solid var(--line);margin:50px 0}

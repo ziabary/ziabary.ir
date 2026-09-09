@@ -14,15 +14,15 @@
 </script>
 
 <svelte:head>
-  <title>Writing | Mehran Ziabary</title>
-  <meta name="description" content="English technical writing from Mehran Ziabary, including restored articles from the Soft'nHard ware archive." />
+  <title>Articles | Mehran Ziabary</title>
+  <meta name="description" content="English articles by Mehran Ziabary on AI infrastructure, GPU and server selection, software architecture and security." />
 </svelte:head>
 
 <main class="intl-archive" dir="ltr">
   <header class="wrap intl-archive-hero">
-    <p class="eyebrow">WRITING ARCHIVE</p>
-    <h1>Writing</h1>
-    <p>Original essays and technical field notes. The first collection restores useful articles from my former English blog, preserved by the Internet Archive.</p>
+    <p class="eyebrow">ARTICLE ARCHIVE</p>
+    <h1>Articles</h1>
+    <p>Articles on AI infrastructure, GPU and server selection, software architecture and security, alongside selected essays and historical technical notes.</p>
   </header>
 
   <section class="wrap archive-tools">
@@ -50,7 +50,8 @@
         <article class="article-card intl-card">
           <div class="card-art" class:has-image={Boolean(article.cover)}>
             {#if article.cover}<img src={article.cover} alt="" />{/if}
-            <span>{article.category}</span><i>{article.source ? 'EDITION' : 'ARCHIVE'}</i>
+            <span>{article.category}</span>
+            {#if !article.cover}<i>{article.source ? 'EDITION' : 'ARCHIVE'}</i>{/if}
           </div>
           <div class="card-body">
             <p>{article.faDate} · {article.readTime}</p>

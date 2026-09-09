@@ -1,8 +1,9 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { articles } from '$lib/content';
-  import { courses, socialLinks } from '$lib/data';
+  import { socialLinks } from '$lib/data';
   import { guideCollections } from '$lib/guides';
+  import { localizePresentation, presentations } from '$lib/presentations';
 
   type Locale = 'fa' | 'en' | 'es';
   export let locale: Locale;
@@ -24,10 +25,10 @@
       noResult: 'نتیجه‌ای پیدا نشد.', copyright: '© ۱۴۰۵ مهران ضیابری'
     },
     en: {
-      home: 'Home', thought: 'Thought', writings: 'Writing', guides: 'Technical notes',
+      home: 'Home', thought: 'Thought', writings: 'Articles', guides: 'Technical notes',
       media: 'Media', slides: 'Slides', resume: 'Résumé',
       admin: 'Content editor',
-      search: 'Search', placeholder: 'Search writing, technical notes and slides…',
+      search: 'Search', placeholder: 'Search articles, technical notes and slides…',
       noResult: 'No results found.', copyright: '© 2026 Mehran Ziabary'
     },
     es: {
@@ -58,7 +59,15 @@
         href: locale === 'fa' ? `/articles/${article.slug}/` : `/${locale}/articles/${article.slug}/`,
         type: article.category
       })),
-    ...(locale === 'fa' ? courses.map((course) => ({ title: course.title, excerpt: course.summary, href: `/slides/${course.slug}/`, type: 'اسلاید و دوره' })) : []),
+    ...presentations.map((presentation) => {
+      const item = localizePresentation(presentation, locale);
+      return {
+        title: item.title,
+        excerpt: item.summary,
+        href: `${locale === 'fa' ? '' : `/${locale}`}/slides/${item.slug}/`,
+        type: t.slides
+      };
+    }),
     ...(locale === 'fa' ? guideCollections.map((collection) => ({ title: collection.title, excerpt: collection.subtitle, href: `/guides/${collection.slug}/`, type: 'فنی‌جات' })) : [])
   ];
   $: results = query.trim()

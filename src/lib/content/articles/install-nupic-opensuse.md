@@ -16,6 +16,8 @@ source: Internet Archive
 
 <div class="archive-note"><strong>Archive note.</strong> NuPIC 1.7.1 and Python 2.x are obsolete. The library-symlink workaround below is preserved as part of my early work with Hierarchical Temporal Memory, not recommended for a current or security-sensitive system.</div>
 
+The accompanying [HTM reading list](/en/articles/htm-papers-and-books/) records the research background; [accessing legacy Numenta content](/en/articles/accessing-legacy-numenta-content/) explains why some original installation references disappeared.
+
 Early NuPIC binaries were linked against Python 2.5.4. During a project on a 64-bit openSUSE system, the installed Python was 2.6.2 and downgrading the distribution's interpreter was not a sensible option. I tested a compatibility workaround by exposing the available Python libraries under the names expected by NuPIC.
 
 After installing NuPIC according to Numenta's then-current Linux instructions, I created the following symbolic links.

@@ -80,3 +80,4 @@ ls /dev/dvb
 
 Each dual-tuner card should contribute two adapters. If the expected devices are missing, check the kernel log before repeating the installation: a missing firmware file, an object built for the wrong architecture, or a mismatch between kernel headers and the running kernel is more informative than simply rebuilding the same tree.
 
+For another historical example of separating device detection, driver loading and firmware errors, see [installing DGTechnics Smart HDTV/FM on Linux](/en/articles/install-dgtechnics-smart-hdtv-linux/).

@@ -17,7 +17,9 @@ source: Internet Archive
 
 <div class="archive-note"><strong>Archive note.</strong> I assembled this bibliography in 2011 while preparing a report on modelling children's second-language learning with HTM. It represents the literature I could locate then, not a current survey. The old blog mirrored some files for continuity; this restoration lists the works but does not republish third-party PDFs.</div>
 
-At the time there were relatively few publications directly concerned with Hierarchical Temporal Memory. The list below became a working map of the field: the ideas that preceded NuPIC, Numenta's own technical material, adjacent memory models and the first application studies.
+The later [note on accessing legacy Numenta content](/en/articles/accessing-legacy-numenta-content/) explains the gaps in the surviving source material.
+
+At the time there were relatively few publications directly concerned with Hierarchical Temporal Memory. The list below became a working map of the field: the ideas that preceded [NuPIC](/en/articles/install-nupic-opensuse/), Numenta's own technical material, adjacent memory models and the first application studies.
 
 ## Foundations
 
@@ -48,6 +50,8 @@ At the time there were relatively few publications directly concerned with Hiera
 - A. Nouri and H. Nikmehr, “Hierarchical Bayesian Reservoir Memory” (2009).
 
 ## Early HTM applications
+
+For a broader view of the language-recognition work represented below, see the contemporary [language-identification reading list](/en/articles/language-identification-reading-list/).
 
 - J. van Doremalen, “Hierarchical Temporal Memory Networks for Spoken Digit Recognition” (2007).
 - B. Bobier, “Handwritten Digit Recognition Using Hierarchical Temporal Memory” (2007).

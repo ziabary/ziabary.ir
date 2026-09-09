@@ -40,3 +40,4 @@ Format the assembled device—not either member disk—with the selected filesys
 
 Before relying on the setup, reboot during a maintenance window and verify all three stages independently: the array is assembled, the filesystem is recognised, and the mount is present. Also check that a degraded array produces an alert. Persistence without monitoring merely makes a silent failure survive a reboot.
 
+For a contrasting failure that initially looked like a disk-capacity problem, see [Apache’s “No space left on device” and mod_jk_log_lock](/en/articles/apache-mod-jk-log-lock/). That incident concerned kernel semaphores rather than storage capacity.

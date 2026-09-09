@@ -88,7 +88,7 @@ draft: false
 راستی قصه ترگمان رو هم قبلا نوشتم دوست‌داشتید بخونید
 
 <figure>
-<a href="/articles/targoman-without-rent/">https://blog.targoman.ir/%D9%82%D8%B5%D9%87-%D8%AA%D8%B1%DA%AF%D9%85%D8%A7%D9%86-%D8%A8%D8%AF%D9%88%D9%86-%D8%B1%D8%A7%D9%86%D8%AA-%D9%87%D9%85-%D9%85%DA%AF%D8%B1-%D9%85%DB%8C%D8%B4%D9%88%D8%AF-rqbt1zut3uri</a>
+<a href="/articles/targoman-without-rent/">قصه ترگمان: بدون رانت هم مگر می‌شود؟</a>
 </figure>
 
 

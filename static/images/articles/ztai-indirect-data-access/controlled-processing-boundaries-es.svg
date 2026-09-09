@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img" viewBox="0 0 1400 880"><title id="title">Procesamiento controlado con admisión y publicación independientes</title><desc id="desc">La admisión del código, la ejecución confidencial, la entrega condicional de claves y la puerta de salida protegida tienen gobernanza independiente de la carga de trabajo.</desc>
+<defs><marker id="arrow" markerHeight="10" markerWidth="10" orient="auto" refX="8" refY="5"><path d="M1 1L9 5L1 9Z" fill="#128b91" /></marker></defs>
+<rect fill="#f8fbff" height="880" rx="20" width="1400" />
+<g fill="#153d68" font-family="Arial, Helvetica, sans-serif">
+<text fill="#153d68" font-size="32" font-weight="bold" text-anchor="middle" x="700" y="48">Procesamiento controlado: código, entorno y salida</text>
+<text fill="#153d68" font-size="21" font-weight="normal" text-anchor="middle" x="700" y="82">Arquitectura conceptual para restringir el acceso directo e indirecto a los datos</text>
+<rect fill="#e9f4f8" height="395" rx="12" stroke="#82b3c9" stroke-dasharray="8 5" stroke-width="2" width="400" x="495" y="160" />
+<text fill="#153d68" font-size="19" font-weight="bold" text-anchor="middle" x="695" y="194">EJECUCIÓN CONFIDENCIAL</text>
+<rect fill="#e7f5f1" height="395" rx="12" stroke="#82b9ac" stroke-dasharray="8 5" stroke-width="2" width="255" x="920" y="160" />
+<text fill="#153d68" font-size="15.4" font-weight="bold" text-anchor="middle" x="1047" y="194">PUBLICACIÓN PROTEGIDA</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="195" x="30" y="300" /><text fill="#153d68" font-size="21" font-weight="bold" text-anchor="middle" x="127.5" y="332">Definir proceso</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="127.5" y="360">Código y tarea</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="127.5" y="383">especificados</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="190" x="265" y="300" /><text fill="#153d68" font-size="19.6" font-weight="bold" text-anchor="middle" x="360.0" y="332">Admitir ejecución</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="360.0" y="360">Versión y alcance</text><text fill="#153d68" font-size="16.0" font-weight="normal" text-anchor="middle" x="360.0" y="383">aceptados</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="325" x="530" y="300" /><text fill="#153d68" font-size="21" font-weight="bold" text-anchor="middle" x="692.5" y="332">Ejecución limitada</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="692.5" y="360">Acceso y recursos limitados</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="215" x="940" y="300" /><text fill="#153d68" font-size="15.3" font-weight="bold" text-anchor="middle" x="1047.5" y="332">Puerta de salida</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="1047.5" y="360">Fuera de la autoridad</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="1047.5" y="383">de la carga de trabajo</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="165" x="1210" y="300" /><text fill="#153d68" font-size="16.4" font-weight="bold" text-anchor="middle" x="1292.5" y="332">Resultado permitido</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="1292.5" y="360">Destinatario</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="1292.5" y="383">especificado</text>
+<path d="M225 350L265 350" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M455 350L530 350" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M855 350L940 350" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M1155 350L1210 350" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="260" x="560" y="425" /><text fill="#153d68" font-size="21" font-weight="bold" text-anchor="middle" x="690.0" y="457">Datos y modelo</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="690.0" y="485">Dentro de la frontera protegida</text>
+<path d="M690 425L690 400" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="390" x="30" y="455" /><text fill="#153d68" font-size="14.6" font-weight="bold" text-anchor="middle" x="225.0" y="487">Servicio de entrega de claves</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="225.0" y="515">Entrega solo después de aceptar la evidencia</text>
+<path d="M530 375L420 495" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<text fill="#153d68" font-size="15.1" font-weight="normal" text-anchor="middle" x="463" y="420">Evidencia</text>
+<path d="M420 525L530 395" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<text fill="#153d68" font-size="16" font-weight="normal" text-anchor="middle" x="482" y="533">Clave por canal seguro</text>
+<rect fill="#fff4de" height="70" rx="12" stroke="#d6b474" stroke-dasharray="" stroke-width="2" width="225" x="935" y="450" />
+<text fill="#153d68" font-size="19" font-weight="bold" text-anchor="middle" x="1047" y="478">Salida rechazada</text>
+<text fill="#153d68" font-size="14.7" font-weight="normal" text-anchor="middle" x="1047" y="503">Cuarentena; sin publicación</text>
+<path d="M1047 400L1047 450" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<rect fill="#153d68" height="120" rx="12" stroke="#153d68" stroke-dasharray="" stroke-width="2" width="1345" x="30" y="590" />
+<text fill="#fff" font-size="24.4" font-weight="bold" text-anchor="middle" x="700" y="630">Gobernanza independiente de políticas, admisión, claves y publicación</text>
+<text fill="#d5edf3" font-size="21" font-weight="normal" text-anchor="middle" x="700" y="668">El permiso para desarrollar o ejecutar no incluye el de cambiar estas reglas.</text>
+<text fill="#153d68" font-size="21" font-weight="normal" text-anchor="middle" x="700" y="759">Registros, archivos, modelos y respuestas del servicio pasan por los controles de salida.</text>
+<text fill="#153d68" font-size="21" font-weight="bold" text-anchor="middle" x="700" y="798">Incumplir la política no autoriza una alternativa menos protegida.</text>
+<text fill="#153d68" font-size="18" font-weight="normal" text-anchor="middle" x="700" y="840">La implementación debe definir la confianza en el hardware, la gestión de claves y la protección de los canales.</text>
+</g></svg>

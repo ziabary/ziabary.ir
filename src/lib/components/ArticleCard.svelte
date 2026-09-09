@@ -6,6 +6,11 @@
 
   $: base = locale === 'fa' ? '/articles' : `/${locale}/articles`;
   $: readMore = locale === 'fa' ? 'ادامه مطلب ←' : locale === 'es' ? 'Leer artículo →' : 'Read article →';
+  $: labels = locale === 'fa' ? { published: 'انتشار', updated: 'بازبینی' }
+    : locale === 'es' ? { published: 'Publicado', updated: 'Actualizado' }
+    : { published: 'Published', updated: 'Updated' };
+  $: dateFormat = new Intl.DateTimeFormat(locale === 'es' ? 'es-ES' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const localizedDate = (date: string) => dateFormat.format(new Date(date));
 </script>
 
 <article class:featured class="article-card">
@@ -18,8 +23,8 @@
   </div>
   <div class="card-body">
     <p>
-      انتشار {article.faDate}
-      {#if article.updated && article.faUpdated} · بازبینی {article.faUpdated}{/if}
+      {labels.published} {locale === 'fa' ? article.faDate : localizedDate(article.date)}
+      {#if article.updated && (locale !== 'fa' || article.faUpdated)} · {labels.updated} {locale === 'fa' ? article.faUpdated : localizedDate(article.updated)}{/if}
       · {article.readTime}
     </p>
     <h3><a href="{base}/{article.slug}/">{article.title}</a></h3>

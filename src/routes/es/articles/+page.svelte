@@ -22,7 +22,7 @@
   <header class="wrap intl-archive-hero">
     <p class="eyebrow">ARCHIVO EN ESPAÑOL</p>
     <h1>Artículos</h1>
-    <p>Ediciones internacionales de experiencias y ensayos cuyo argumento conserva valor fuera de su contexto iraní.</p>
+    <p>Artículos sobre infraestructura de IA, selección de GPU y servidores, arquitectura de software y seguridad, junto con ensayos y experiencias profesionales.</p>
   </header>
 
   <section class="wrap archive-tools">
@@ -50,7 +50,8 @@
         <article class="article-card intl-card">
           <div class="card-art" class:has-image={Boolean(article.cover)}>
             {#if article.cover}<img src={article.cover} alt="" />{/if}
-            <span>{article.category}</span><i>EDICIÓN</i>
+            <span>{article.category}</span>
+            {#if !article.cover}<i>EDICIÓN</i>{/if}
           </div>
           <div class="card-body">
             <p>{article.faDate} · {article.readTime}</p>

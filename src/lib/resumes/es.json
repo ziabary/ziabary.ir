@@ -1,0 +1,170 @@
+{
+  "title": "Currículum",
+  "eyebrow": "Trayectoria profesional",
+  "lead": "Liderazgo tecnológico, infraestructura de IA segura e investigación convertida en productos.",
+  "name": "Mehran Ziabary",
+  "legalName": "Seyed Mohammad Mohammadzadeh Ziabary",
+  "summaryLabel": "Perfil profesional",
+  "motto": "DO WHAT SEEMS IMPOSSIBLE.",
+  "summary": [
+    "Este lema refleja mi manera de abordar la ingeniería: cuestionar los supuestos de un problema difícil, construir una solución y contrastarla con la evidencia.",
+    "Soy directivo tecnológico, emprendedor e investigador en inteligencia artificial, con casi tres décadas de experiencia en electrónica y robótica, seguridad de redes, procesamiento del lenguaje natural e infraestructura de IA. Mi trabajo se centra en diseñar sistemas seguros y escalables, incluidos sistemas de IA de confianza cero (Zero Trust AI, ZTAI) y computación de alto rendimiento (HPC), transformar la investigación en productos y dirigir empresas tecnológicas.",
+    "Paralelamente a mi actividad técnica, contribuyo a la gobernanza de la IA y los datos mediante funciones de liderazgo sectorial y asesoramiento en políticas públicas. Aporto una perspectiva de ingeniería a estas decisiones, examinando cómo la arquitectura, la infraestructura y las decisiones institucionales afectan a la seguridad, la rendición de cuentas y la competencia. Tanto al desarrollar un producto como al proponer una política, me centro en los resultados prácticos y en preservar la capacidad de tomar decisiones informadas."
+  ],
+  "email": "mehran.ziabary@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/mehranziabary",
+  "download": "/downloads/SMMZ-CV-ATS-2026-ES.pdf",
+  "downloadLabel": "Descargar CV en español (PDF)",
+  "experienceLabel": "Trayectoria profesional y asociativa seleccionada",
+  "educationLabel": "Formación académica",
+  "publicationsLabel": "Publicaciones científicas, autoría y traducción",
+  "updated": "CV 2026",
+  "experience": [
+    {
+      "company": "Hoomas Co",
+      "title": "Director de tecnología (CTO)",
+      "dates": "Septiembre de 2025",
+      "description": "Inversión en startups de IA industrial.",
+      "highlights": []
+    },
+    {
+      "company": "RAQI.ai Co",
+      "title": "Cofundador y director de tecnología (CTO)",
+      "dates": "Agosto de 2025–actualidad",
+      "description": "Dirijo la visión tecnológica y el desarrollo de plataformas de una empresa de soluciones de IA para organizaciones, centrada en Oriente Medio y el norte de África (MENA) y especializada en los sectores industrial, financiero y público.",
+      "highlights": [
+        "ZakiLab (ZakiLab AutoML & Platform): Diseño de la arquitectura central de AutoML y de la plataforma de aprendizaje automático para aplicaciones de IA en entornos reales, como mantenimiento predictivo, sensores virtuales (soft sensors) y optimización de la producción.",
+        "Zakitam (ZakiTam ZeroTrust AI Platform): Responsable del diseño e implementación de la arquitectura Zero Trust AI (ZTAI). Desarrollo de una plataforma de seguridad y soberanía de los datos, con despliegues en instalaciones propias, híbridos y físicamente aislados de redes externas (air-gapped), esenciales para sectores sensibles."
+      ]
+    },
+    {
+      "company": "ZEKITAM SMART SOLUTIONS YAZILIM LIMITED SIRKETI",
+      "title": "Fundador y director general (CEO)",
+      "dates": "Desde 2021",
+      "description": "Fundé y dirijo esta empresa de soluciones de software, dedicada al desarrollo y despliegue de infraestructura de IA de alta seguridad para operaciones críticas de clientes empresariales y gubernamentales internacionales.",
+      "highlights": []
+    },
+    {
+      "company": "Targoman Intelligent Processing Co. Pvt.",
+      "title": "Cofundador y CEO desde 2019; anteriormente, director general adjunto",
+      "dates": "Abril de 2014–actualidad",
+      "description": "",
+      "highlights": [
+        "Targoman: Plataforma nacional de traducción automática (SMT/HLMT/NMT).",
+        "Tarjomyar: Aplicación web de traducción asistida por ordenador (CAT).",
+        "Toranj: Plataforma de traducción de nueva generación.",
+        "DLaaS: Aprendizaje profundo como servicio.",
+        "GCaaS: Computación con GPU como servicio.",
+        "Damavand: Plataforma de computación de alto rendimiento (HPC) basada en ZTAI."
+      ]
+    },
+    {
+      "company": "DeltaGlobal Co. Pvt.",
+      "title": "Ingeniero principal desde 2015; anteriormente, responsable técnico",
+      "dates": "Agosto de 2006–abril de 2017",
+      "description": "",
+      "highlights": [
+        "PACO: Solución integral en la nube para el análisis de contenidos de Internet y el control parental.",
+        "HFS: Sistema de almacenamiento de archivos a una velocidad cercana a la capacidad máxima de la red.",
+        "IPCAP: Herramienta de inspección profunda de paquetes (DPI) para redes de 1G/10G/40G.",
+        "PIR: Clasificador de imágenes y vídeos con contenido para adultos.",
+        "WCP: Analizador y clasificador de contenidos web de alta precisión."
+      ]
+    },
+    {
+      "company": "Persian Gulf Robotic Team",
+      "title": "Miembro del equipo y responsable de IA y control de robots",
+      "dates": "Septiembre de 2004–agosto de 2006",
+      "description": "Participación en fútbol robótico en la Middle Size League (MSL) de RoboCup.",
+      "highlights": [
+        "2.º puesto mundial en el desafío técnico de RoboCup 2006 — Bremen, Alemania.",
+        "8.º puesto mundial en el desafío técnico de RoboCup 2005 — Osaka, Japón.",
+        "1.er puesto nacional en MSL en IranOpen 2006 — Teherán, Irán."
+      ]
+    },
+    {
+      "company": "Organización Iraní de Investigación Científica y Tecnológica (IROST)",
+      "title": "Colaborador del proyecto nacional de control de motores",
+      "dates": "Septiembre de 2002–marzo de 2003",
+      "description": "Diseño y desarrollo de controladores de motores industriales.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica Amirkabir",
+      "degree": "Máster en Ciencias (M.Sc.), Inteligencia Artificial",
+      "thesis": "Tesis: Prueba de concepto de traducción automática inspirada en la actividad cerebral de niños bilingües."
+    },
+    {
+      "institution": "Universidad Islámica Azad, Sede de Teherán Central",
+      "degree": "Grado universitario en Ingeniería de Software (B.Sc.)",
+      "thesis": "Proyecto de fin de carrera: Diseño y desarrollo de un superordenador a partir de ordenadores obsoletos."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Introducing E4MT and LMBNC: Persian Pre-processing Utilities",
+      "year": 2022,
+      "authors": "Z. Shakeri, M. Ziabary, B. Vedadian, F. Azadi, S. Torabzadeh y A. Atefi.",
+      "venue": "12th International Conference on Computer and Knowledge Engineering (ICCKE), pp. 246–252. IEEE.",
+      "doi": ""
+    },
+    {
+      "title": "HLMT: Human-Like Machine Translation, Inspired by Bilinguals’ Cortex Activity and Translation Behavior",
+      "year": 2015,
+      "authors": "S. M. M. Ziabary y S. Khadivi.",
+      "venue": "ResearchGate.",
+      "doi": "10.13140/RG.2.1.1086.0002"
+    },
+    {
+      "title": "AUT Document Alignment Framework for BUCC Workshop Shared Task",
+      "year": 2015,
+      "authors": "A. Zafarian, A. Aghasadeghi, F. Azadi, S. Ghiasifard, Z. Alipanahloo, S. Bakhshaei y S. M. Mohammadzadeh Ziabary.",
+      "venue": "Proceedings of the Eighth Workshop on Building and Using Comparable Corpora, pp. 79–87. Association for Computational Linguistics.",
+      "doi": ""
+    },
+    {
+      "title": "Developing an Open-domain English-Farsi Translation System Using AFEC: Amirkabir Bilingual Farsi-English Corpus",
+      "year": 2012,
+      "authors": "F. Jabbari, S. Bakhshaei, S. M. Mohammadzadeh Ziabary y S. Khadivi.",
+      "venue": "Fourth Workshop on Computational Approaches to Arabic-Script-based Languages, pp. 17–23. Association for Machine Translation in the Americas.",
+      "doi": ""
+    },
+    {
+      "title": "Semi-Human Instinctive Artificial Intelligence (SHI-AI)",
+      "year": 2006,
+      "authors": "A. Norouzi, S. M. Mohammadzadeh Ziabary, M. Mousakhani y S. M. R. Shoaei.",
+      "venue": "",
+      "doi": "10.1145/1232425.1232446"
+    },
+    {
+      "title": "A Novel Approach to Semi-Human Instinctive Artificial Intelligence",
+      "year": 2005,
+      "authors": "A. Norouzi y S. M. Mohammadzadeh Ziabary.",
+      "venue": "Fourth Computer Engineering Students Conference.",
+      "doi": ""
+    },
+    {
+      "title": "Guía de programación en VBScript",
+      "year": 2002,
+      "authors": "S. M. Mohammadzadeh Ziabary (autor y traductor) y Pejman Masnavee.",
+      "venue": "Editorial Naghus. Libro en persa.",
+      "doi": ""
+    },
+    {
+      "title": "Inter-Function Communication (IFC)",
+      "year": 2002,
+      "authors": "S. M. Mohammadzadeh Ziabary y Mina Yaychi.",
+      "venue": "Congreso Nacional de Estudiantes de Informática, Universidad Islámica Azad, Sede de Teherán Central. En persa.",
+      "doi": ""
+    },
+    {
+      "title": "Diseño de un superordenador de bajo coste",
+      "year": 2001,
+      "authors": "S. M. Mohammadzadeh Ziabary y Mina Yaychi.",
+      "venue": "Congreso Nacional de Estudiantes de Informática, Universidad de Isfahán. En persa.",
+      "doi": ""
+    }
+  ]
+}

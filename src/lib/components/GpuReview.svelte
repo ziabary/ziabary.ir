@@ -1,0 +1,166 @@
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import PageHero from '$lib/components/PageHero.svelte';
+  import GpuComparison from '$lib/components/GpuComparison.svelte';
+  import ServerComparison from '$lib/components/ServerComparison.svelte';
+  import { getArticleModule } from '$lib/content';
+  import type { GpuReviewCollection, GpuReviewLocale } from '$lib/gpu-review';
+
+  export let collection: GpuReviewCollection;
+  export let locale: GpuReviewLocale = 'en';
+  const copies = {
+    en: { draft: 'English draft', preview: 'English draft · Local preview', back: '← All technical notes', contents: 'Contents', inCollection: 'IN THIS COLLECTION', using: 'Using this collection', paths: 'Suggested reading paths', choosePath: 'Which path fits my needs?', articles: 'articles', tables: 'interactive tables', cover: 'cover illustration', imageNeeded: 'English image needed.', related: 'Related articles', continue: 'Continue reading', standalone: 'Open the standalone draft →', article: 'Read article →' },
+    es: { draft: 'Borrador en español', preview: 'Borrador en español · Vista previa local', back: '← Todas las notas técnicas', contents: 'Índice', inCollection: 'EN ESTA COLECCIÓN', using: 'Cómo utilizar esta colección', paths: 'Recorridos de lectura sugeridos', choosePath: '¿Qué recorrido se ajusta a mis necesidades?', articles: 'artículos', tables: 'tablas interactivas', cover: 'ilustración de portada', imageNeeded: 'Se necesita una imagen traducida.', related: 'Artículos relacionados', continue: 'Seguir leyendo', standalone: 'Abrir el borrador del artículo →', article: 'Leer artículo →' }
+  };
+  $: copy = copies[locale];
+  let activeSection = collection.items[0]?.id ?? 'overview';
+
+  onMount(() => {
+    const sections = Array.from(document.querySelectorAll<HTMLElement>('.gpu-review .guide-entry[id]'));
+    if (!sections.length) return;
+    let frame = 0;
+
+    const update = () => {
+      const readingLine = window.innerHeight * 0.34;
+      let current = sections[0].id;
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= readingLine) current = section.id;
+        else break;
+      }
+      activeSection = current;
+      frame = 0;
+    };
+    const scheduleUpdate = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
+    return () => {
+      window.removeEventListener('scroll', scheduleUpdate);
+      window.removeEventListener('resize', scheduleUpdate);
+      cancelAnimationFrame(frame);
+    };
+  });
+</script>
+
+<svelte:head>
+  <title>{collection.title} — {copy.draft}</title>
+  <meta name="robots" content="noindex,nofollow" />
+</svelte:head>
+
+{#snippet readingPaths()}
+  <ol>
+    {#each collection.paths as path}
+      <li><h3>{path.title}</h3><p>{path.description}</p><a href={`#${path.id}`}>{path.label} →</a></li>
+    {/each}
+  </ol>
+{/snippet}
+
+<main class="gpu-review" dir="ltr">
+  <div class="wrap review-note"><strong>{copy.preview}</strong><a href={`/${locale}/guides/`}>{copy.back}</a></div>
+  <PageHero eyebrow={collection.eyebrow} title={collection.title} lead={collection.subtitle} />
+  <div class="collection-layout">
+    <nav class="collection-nav" aria-label={copy.contents}>
+      <small>{copy.inCollection}</small>
+      {#each collection.items as item, index}
+        <a href={`#${item.id}`} class:active={activeSection === item.id} aria-current={activeSection === item.id ? 'location' : undefined}><span>{String(index + 1).padStart(2, '0')}</span>{item.title}</a>
+      {/each}
+    </nav>
+    <div class="collection-main">
+      <div class="collection-overview">
+        <img class="collection-cover" src={collection.image} alt={collection.imageAlt} width="1600" height="900" />
+        <section class="start" aria-labelledby="start-title">
+          <small>{copy.using}</small>
+          <h2 id="start-title">{collection.startTitle}</h2><p>{collection.startIntro}</p>
+          <nav class="desktop-paths" aria-label={copy.paths}>{@render readingPaths()}</nav>
+          <details class="mobile-paths"><summary>{copy.choosePath}</summary><nav aria-label={copy.paths}>{@render readingPaths()}</nav></details>
+          <footer><span>{collection.items.filter(item => item.kind === 'article').length} {copy.articles}</span><span>2 {copy.tables}</span></footer>
+        </section>
+      </div>
+      <p class="collection-intro">{collection.intro}</p>
+      {#each collection.items as item}
+        {#if item.id === 'gpu-comparison-table'}
+          <section id={item.id} class="guide-entry"><GpuComparison {locale} /></section>
+        {:else if item.id === 'server-comparison-table'}
+          <section id={item.id} class="guide-entry"><ServerComparison {locale} /></section>
+        {:else if item.kind === 'article'}
+          {@const module = getArticleModule(item.id)}
+          {@const article = module?.metadata}
+          {@const imageNote = collection.imageReview.find(note => note.article === item.id)}
+          {#if module && article}
+            <article id={item.id} class="guide-entry article-entry">
+              {#if article.cover}<img class="article-image" src={article.cover} alt={`${article.title} — ${copy.cover}`} loading="lazy" />{/if}
+              {#if imageNote && false}<aside class="image-note"><strong>{copy.imageNeeded}</strong> {imageNote?.note}</aside>{/if}
+              <header><small>{article.category} · {article.readTime}</small><h2>{article.title}</h2><p>{article.excerpt}</p></header>
+              <div class="prose review-prose"><svelte:component this={module.default} /></div>
+              <nav class="related" aria-label={copy.related}>
+                <strong>{copy.continue}</strong>
+                <ul>{#each article.related as slug}<li><a href={`/${locale}/articles/${slug}/`}>{getArticleModule(slug)?.metadata.title}</a></li>{/each}</ul>
+              </nav>
+              <a class="standalone-link" href={`/${locale}/articles/${item.id}/`}>{article.draft ? copy.standalone : copy.article}</a>
+            </article>
+          {/if}
+        {/if}
+      {/each}
+    </div>
+  </div>
+</main>
+
+<style>
+  .gpu-review { --hardware-content-width: calc(100vw - 316px); }
+  nav { display: block; position: static; inset: auto; width: auto; min-width: 0; margin: 0; padding: 0; gap: 0; border: 0; background: transparent; }
+  nav a { white-space: normal; }
+  .review-note { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 18px; color: var(--teal); font-size: 13px; }
+  .gpu-review :global(.page-hero) { padding-block: 40px; }
+  .gpu-review :global(.page-hero h1) { font-size: clamp(32px, 4vw, 52px); }
+  .collection-layout { display: grid; grid-template-columns: 224px minmax(0,1fr); gap: 32px; padding: 0 28px 80px; }
+  .collection-nav { position: sticky; top: 105px; align-self: start; max-height: calc(100dvh - 125px); overflow-y: auto; border-inline-start: 1px solid var(--line); font-size: 13px; }
+  .collection-nav > small { display: block; padding: 0 14px 16px; color: var(--muted); }
+  .collection-nav a { display: flex; gap: 10px; padding: 11px 14px; border-inline-start: 2px solid transparent; color: var(--muted); line-height: 1.6; }
+  .collection-nav a.active { border-color: var(--teal); color: var(--teal); font-weight: 700; }
+  .collection-nav a span, a, header small, .start small { color: var(--teal); }
+  .collection-main { min-width: 0; }
+  .collection-overview { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(300px,1fr); align-items: start; gap: 24px; }
+  .collection-cover { width: 100%; height: auto; border-radius: 14px; }
+  .start { padding: 24px; border: 1px solid var(--line); background: var(--soft); }
+  .start h2 { margin: 8px 0 14px; font-size: 26px; line-height: 1.4; }
+  .start p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
+  .start ol { margin: 22px 0 0; padding: 0; list-style: none; }
+  .start li { padding: 18px 0; border-top: 1px solid var(--line); }
+  .start h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.6; }
+  .start li p { font-size: 12px; }
+  .start li a { display: inline-block; margin-top: 8px; font-size: 13px; }
+  .start footer { display: flex; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); font-size: 11px; }
+  .mobile-paths { display: none; }
+  .collection-intro { max-width: 820px; margin: 32px 0; color: var(--muted); line-height: 1.9; }
+  .guide-entry { scroll-margin-top: 105px; margin: 72px 0; }
+  .article-entry { max-width: 820px; border-top: 1px solid var(--line); padding-top: 32px; }
+  .article-image { width: 100%; height: auto; max-height: 460px; object-fit: contain; border-radius: 14px; }
+  .article-entry header { margin: 22px 0; }
+  .article-entry h2 { font-size: 32px; line-height: 1.35; margin: 10px 0 18px; }
+  .article-entry header p { color: var(--muted); line-height: 1.9; }
+  .review-prose { width: 100%; max-width: 100%; margin: 0; padding: 20px 0 0; border-top: 1px solid var(--line); }
+  .review-prose :global(figure) { margin-inline: 0; }
+  .review-prose :global(table) { display: block; overflow-x: auto; max-width: 100%; }
+  .related { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 18px; font-size: 14px; }
+  .related ul { padding-inline-start: 20px; }
+  .related li { margin-block: 10px; }
+  .standalone-link { display: inline-block; margin-top: 20px; }
+  .image-note { margin: 14px 0; border-inline-start: 3px solid var(--teal); background: var(--soft); padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.8; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+  @media(max-width: 1100px) { .collection-overview { grid-template-columns: minmax(0,1fr); } }
+  @media(max-width: 760px) {
+    .gpu-review { --hardware-content-width: calc(100vw - 32px); }
+    .collection-layout { grid-template-columns: minmax(0,1fr); padding: 0 16px 40px; gap: 24px; }
+    .collection-nav { position: static; display: grid; grid-template-columns: 1fr 1fr; max-height: none; overflow: visible; font-size: 12px; }
+    .collection-nav > small { grid-column: 1 / -1; }
+    .collection-nav a { padding: 8px 12px; }
+    .desktop-paths { display: none; }
+    .mobile-paths { display: block; margin: 20px 0; border-top: 1px solid var(--line); }
+    .mobile-paths summary { cursor: pointer; padding-top: 14px; color: var(--teal); font-size: 14px; }
+    .guide-entry { margin: 48px 0; }
+    .article-entry h2 { font-size: 27px; }
+  }
+</style>

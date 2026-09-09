@@ -56,3 +56,4 @@ That restored service on this particular host, but it treated the symptom. The n
 
 The incident is a useful reminder that Unix error text often describes the exhausted interface, not the physical resource we first associate with the words. Before deleting files in response to `ENOSPC`, inspect inodes, shared memory and IPC limits as well as filesystem capacity.
 
+A separate storage example, [making a software RAID array persistent on openSUSE](/en/articles/software-raid-opensuse/), follows the disk, array and mount path. The failure here required checking IPC resources instead.

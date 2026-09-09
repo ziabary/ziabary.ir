@@ -26,6 +26,13 @@ do not assume every article has a translation.
 - Images live under static/images/articles/<slug>/.
 - Slide PDFs live under static/slides/<course-slug>/.
 - Draft content must set draft: true.
+- Translations retain the original article's publication `date`; format the
+  displayed date for the target language. Do not replace it with translation day.
+- The personal phone number must appear only inside downloadable CV files,
+  never in page content, client data, contact links or structured data.
+- Résumé editions are editorially independent. English and Spanish content in
+  `src/lib/resumes/en.json` and `es.json` follows each language's CV PDF in
+  `static/downloads/`; do not synchronize their roles or dates with Persian.
 
 ## Required checks
 
@@ -35,3 +42,9 @@ Before committing:
     npm run build
 
 Both commands must pass with zero errors.
+
+Every production update must use `npm run build`: it generates the sitemap
+from the newly prerendered pages and validates it before the build succeeds.
+Do not maintain a manual `static/sitemap.xml` or skip sitemap validation.
+Draft/noindex pages must remain excluded. `npm run deploy` rebuilds first;
+the deployment script also validates the sitemap before any remote operation.

@@ -1,0 +1,170 @@
+{
+  "title": "Résumé",
+  "eyebrow": "Professional record",
+  "lead": "Technology leadership, secure AI infrastructure and research translated into products.",
+  "name": "Mehran Ziabary",
+  "legalName": "Seyed Mohammad Mohammadzadeh Ziabary",
+  "summaryLabel": "Professional summary",
+  "motto": "DO WHAT SEEMS IMPOSSIBLE.",
+  "summary": [
+    "This motto reflects how I approach engineering: question the assumptions behind a difficult problem, build a solution, and test it against evidence.",
+    "I am a technology executive, entrepreneur and AI researcher with nearly three decades of experience spanning electronics and robotics, network security, natural language processing and AI infrastructure. My core work involves designing secure, scalable systems, including Zero Trust AI (ZTAI) and high-performance computing (HPC), translating research into products, and leading technology businesses.",
+    "Alongside this technical work, I contribute to AI and data governance through industry leadership and policy advisory roles. I bring an engineering perspective to these decisions, examining how architecture, infrastructure and institutional choices affect security, accountability and competition. Whether developing a product or proposing a policy, I focus on practical results while preserving the ability to make informed choices."
+  ],
+  "email": "mehran.ziabary@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/mehranziabary",
+  "download": "/downloads/SMMZ-CV-ATS-2026.pdf",
+  "downloadLabel": "Download English CV (PDF)",
+  "experienceLabel": "Selected professional and association roles",
+  "educationLabel": "Education",
+  "publicationsLabel": "Research papers and books",
+  "updated": "2026 CV",
+  "experience": [
+    {
+      "company": "Hoomas Co",
+      "title": "CTO",
+      "dates": "September 2025",
+      "description": "Investment in industrial AI startups.",
+      "highlights": []
+    },
+    {
+      "company": "RAQI.ai Co",
+      "title": "Co-founder and CTO",
+      "dates": "August 2025–present",
+      "description": "Leading the technological vision and platform development for an enterprise AI solution provider focused on the MENA region, specializing in industrial, financial and government sectors.",
+      "highlights": [
+        "ZakiLab (ZakiLab AutoML & Platform): Architecting the core AutoML and machine learning platform for real-world AI applications, including predictive maintenance, soft sensors and production optimization.",
+        "Zakitam (ZakiTam ZeroTrust AI Platform): Designing and implementing the Zero Trust AI (ZTAI) architecture for security and data sovereignty, supporting on-premises, hybrid and air-gapped deployments in sensitive sectors."
+      ]
+    },
+    {
+      "company": "ZEKITAM SMART SOLUTIONS YAZILIM LIMITED SIRKETI",
+      "title": "Founder and CEO",
+      "dates": "Since 2021",
+      "description": "Founded and lead a software solutions company developing and deploying highly secure, mission-critical AI infrastructure for international enterprise and government clients.",
+      "highlights": []
+    },
+    {
+      "company": "Targoman Intelligent Processing Co. Pvt.",
+      "title": "Co-founder; CEO since 2019, formerly deputy CEO",
+      "dates": "April 2014–present",
+      "description": "",
+      "highlights": [
+        "Targoman: National machine translation framework (SMT/HLMT/NMT).",
+        "Tarjomyar: Computer-aided translation web application.",
+        "Toranj: Next-generation translation framework.",
+        "DLaaS: Deep Learning as a Service.",
+        "GCaaS: GPU Computing as a Service.",
+        "Damavand: ZTAI-based HPC platform."
+      ]
+    },
+    {
+      "company": "DeltaGlobal Co. Pvt.",
+      "title": "Principal Engineer since 2015, formerly technical manager",
+      "dates": "August 2006–April 2017",
+      "description": "",
+      "highlights": [
+        "PACO: Cloud-based Internet content analysis and parental-control solution.",
+        "HFS: Near wire-speed file storage.",
+        "IPCAP: 1G/10G/40G deep packet inspection tool.",
+        "PIR: Adult image/video classifier.",
+        "WCP: Web content analyzer and classifier."
+      ]
+    },
+    {
+      "company": "Persian Gulf Robotic Team",
+      "title": "Team member; Robot AI and Control Manager",
+      "dates": "September 2004–August 2006",
+      "description": "RoboCup Middle Size League (MSL) robot soccer competitor.",
+      "highlights": [
+        "Second place worldwide in the RoboCup 2006 technical challenge — Bremen, Germany.",
+        "Eighth place worldwide in the RoboCup 2005 technical challenge — Osaka, Japan.",
+        "First place nationally in MSL at IranOpen 2006 — Tehran, Iran."
+      ]
+    },
+    {
+      "company": "Iranian Research Organization of Science and Technology (IROST)",
+      "title": "National Motor Control project collaborator",
+      "dates": "September 2002–March 2003",
+      "description": "Design and development of industrial motor controllers.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Amirkabir University of Technology",
+      "degree": "Master of Science (M.Sc.), Artificial Intelligence",
+      "thesis": "Thesis: A proof-of-concept machine translation system inspired by brain activity in bilingual children."
+    },
+    {
+      "institution": "Islamic Azad University, Central Tehran Branch",
+      "degree": "Bachelor of Science (B.Sc.), Computer Software Engineering",
+      "thesis": "Thesis: Design and development of a supercomputer based on outdated computers."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Introducing E4MT and LMBNC: Persian Pre-processing Utilities",
+      "year": 2022,
+      "authors": "Z. Shakeri, M. Ziabary, B. Vedadian, F. Azadi, S. Torabzadeh, and A. Atefi.",
+      "venue": "12th International Conference on Computer and Knowledge Engineering (ICCKE), pp. 246–252. IEEE.",
+      "doi": ""
+    },
+    {
+      "title": "HLMT: Human-Like Machine Translation, Inspired by Bilinguals’ Cortex Activity and Translation Behavior",
+      "year": 2015,
+      "authors": "S. M. M. Ziabary and S. Khadivi.",
+      "venue": "ResearchGate.",
+      "doi": "10.13140/RG.2.1.1086.0002"
+    },
+    {
+      "title": "AUT Document Alignment Framework for BUCC Workshop Shared Task",
+      "year": 2015,
+      "authors": "A. Zafarian, A. Aghasadeghi, F. Azadi, S. Ghiasifard, Z. Alipanahloo, S. Bakhshaei, and S. M. Mohammadzadeh Ziabary.",
+      "venue": "Proceedings of the Eighth Workshop on Building and Using Comparable Corpora, pp. 79–87. Association for Computational Linguistics.",
+      "doi": ""
+    },
+    {
+      "title": "Developing an Open-domain English-Farsi Translation System Using AFEC: Amirkabir Bilingual Farsi-English Corpus",
+      "year": 2012,
+      "authors": "F. Jabbari, S. Bakhshaei, S. M. Mohammadzadeh Ziabary, and S. Khadivi.",
+      "venue": "Fourth Workshop on Computational Approaches to Arabic-Script-based Languages, pp. 17–23. Association for Machine Translation in the Americas.",
+      "doi": ""
+    },
+    {
+      "title": "Semi-Human Instinctive Artificial Intelligence (SHI-AI)",
+      "year": 2006,
+      "authors": "A. Norouzi, S. M. Mohammadzadeh Ziabary, G. Rezaei, and S. M. R. Shoaei.",
+      "venue": "",
+      "doi": "10.1145/1232425.1232446"
+    },
+    {
+      "title": "A Novel Approach to Semi-Human Instinctive Artificial Intelligence",
+      "year": 2005,
+      "authors": "A. Norouzi and S. M. Mohammadzadeh Ziabary.",
+      "venue": "Fourth Computer Engineering Students Conference.",
+      "doi": ""
+    },
+    {
+      "title": "VBScript learning book",
+      "year": 2002,
+      "authors": "S. M. Mohammadzadeh Ziabary (author and translator), Pejman Masnavee.",
+      "venue": "Naghus Publications. Book in Persian.",
+      "doi": ""
+    },
+    {
+      "title": "Inter-Function Communication (IFC)",
+      "year": 2002,
+      "authors": "S. M. Mohammadzadeh Ziabary and Mina Yaychi.",
+      "venue": "National Student Conference on Computer, Islamic Azad University, Central Tehran Branch. In Persian.",
+      "doi": ""
+    },
+    {
+      "title": "Design of a Cost Effective Supercomputer",
+      "year": 2001,
+      "authors": "S. M. Mohammadzadeh Ziabary and Mina Yaychi.",
+      "venue": "National Student Conference on Computer, University of Isfahan. In Persian.",
+      "doi": ""
+    }
+  ]
+}

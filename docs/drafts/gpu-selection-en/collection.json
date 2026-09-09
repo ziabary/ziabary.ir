@@ -1,0 +1,52 @@
+{
+  "draft": true,
+  "lang": "en",
+  "slug": "gpu-selection",
+  "title": "GPUs and AI servers: what to choose, and why?",
+  "subtitle": "Compare accelerators and servers, check software support and assess performance per cost, based on real workloads.",
+  "eyebrow": "Technical notes / Compute infrastructure",
+  "image": "/images/guides/gpu-selection.webp",
+  "imageAlt": "Illustrated GPU cards, accelerator modules and server platforms",
+  "intro": "Start with the workload: the model's memory requirements, numerical format, communication pattern and service targets. Use the tables to compare hardware, then follow the guides to assess software compatibility, host resources and the full cost of deployment.",
+  "startTitle": "Where should I start?",
+  "startIntro": "Begin with the work the system needs to do. The tables help you compare options; the articles explain what the differences mean. Choose the path that matches your decision.",
+  "paths": [
+    {
+      "id": "gpu-comparison-table",
+      "title": "I have not chosen a GPU yet",
+      "description": "Compare memory, compute capability and deployment requirements.",
+      "label": "Compare accelerators"
+    },
+    {
+      "id": "pcie-gpu-server-selection-en",
+      "title": "I have a GPU in mind and need the right server",
+      "description": "Check the chassis, topology, power and cooling against the exact card.",
+      "label": "Choose a compatible server"
+    },
+    {
+      "id": "int8-or-fp8-real-gpu-support-en",
+      "title": "I need to verify software compatibility before buying",
+      "description": "Check the model version, numerical format and the kernel that actually runs.",
+      "label": "Check INT8 and FP8 support"
+    }
+  ],
+  "items": [
+    { "id": "gpu-comparison-table", "kind": "interactive", "title": "Compare GPUs and AI accelerators" },
+    { "id": "gpu-types-for-ai-en", "kind": "article", "title": "GPU types for AI" },
+    { "id": "pcie-vs-sxm-for-ai-en", "kind": "article", "title": "PCIe or SXM?" },
+    { "id": "choosing-gpu-for-ai-en", "kind": "article", "title": "Choosing a GPU for the workload" },
+    { "id": "int8-or-fp8-real-gpu-support-en", "kind": "article", "title": "INT8 or FP8: real GPU support" },
+    { "id": "server-comparison-table", "kind": "interactive", "title": "Compare GPU servers" },
+    { "id": "gpu-server-platform-components-en", "kind": "article", "title": "CPU, memory, storage and networking" },
+    { "id": "dgx-and-standard-gpu-servers-en", "kind": "article", "title": "DGX, HGX or a PCIe GPU server?" },
+    { "id": "pcie-gpu-server-selection-en", "kind": "article", "title": "Selecting a PCIe GPU server" }
+  ],
+  "imageReview": [
+    {
+      "article": "pcie-gpu-server-selection-en",
+      "path": "/images/articles/pcie-gpu-server-selection/cover.png",
+      "status": "replacement-requested",
+      "note": "This cover contains Persian checklist labels. An English version is needed before publication. The original is retained here for editorial review."
+    }
+  ]
+}

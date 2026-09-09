@@ -76,3 +76,4 @@ Once the device was placed in capture mode, VLC, OpenCV, MATLAB or another Video
 
 The broader lesson was simple: with unsupported hardware, a successful installation is a chain of observable states. Treating the whole chain as one opaque “driver problem” makes it much harder to locate the actual failure.
 
+The [TBS6980/TBS6981 installation note](/en/articles/install-tbs6980-tbs6981-linux/) follows a similar driver-and-firmware diagnostic process for a different receiver family. Its device-specific files and commands are not interchangeable with those above.

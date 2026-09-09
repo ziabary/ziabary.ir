@@ -12,7 +12,7 @@ external: "https://virgool.io/targoman/%DA%A9%D9%84%D8%A7%D9%87%D8%A8%D8%B1%D8%A
 source: "Virgool (original en persa)"
 related:
   - construir-targoman-sin-padrinos
-draft: false
+draft: true
 ---
 
 > **Contexto.** Escribí este artículo durante la implantación obligatoria de contraseñas de un solo uso para pagos con tarjeta en Irán, en 2019. Los detalles bancarios son locales e históricos; el error de diseño de seguridad no lo es.
@@ -21,7 +21,7 @@ A finales de 2019, los bancos iraníes comenzaron a sustituir la «segunda contr
 
 El problema no era que las contraseñas de un solo uso fueran inseguras por naturaleza. La implementación eliminó un secreto que el cliente **sabía** y lo sustituyó por acceso a un dispositivo que el cliente **tenía**. Eso no es autenticación de dos factores: es cambiar un factor por otro. Para ciertos usuarios y modelos de amenaza, además, el nuevo factor era más débil.
 
-El título provocador del original persa hablaba de «fraude en dos pasos». Era una advertencia, no un manual. Esas rutas existían tanto si se describían como si no. Ocultar el modelo de amenaza protege el diseño defectuoso, no a las personas expuestas.
+El título provocador del [original persa](/articles/dynamic-password-fraud/) hablaba de «fraude en dos pasos». Era una advertencia, no un manual. Esas rutas existían tanto si se describían como si no. Ocultar el modelo de amenaza protege el diseño defectuoso, no a las personas expuestas.
 
 <figure>
 <img src="/images/articles/dynamic-password-fraud/cover.jpg" alt="Ilustración del artículo original sobre contraseñas de un solo uso por SMS" />

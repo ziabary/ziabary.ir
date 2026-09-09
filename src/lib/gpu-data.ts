@@ -996,7 +996,7 @@ const rows: GpuBaseRecord[] = [
       "architecture": "Hopper",
       "year": 2022,
       "memoryGB": 80,
-      "memoryType": "HBM2e/HBM3 ECC؛ وابسته به SKU",
+      "memoryType": "HBM2e ECC",
       "bandwidthTBs": 2,
       "powerW": 350,
       "formFactor": "PCIe FHFL دو اسلات",

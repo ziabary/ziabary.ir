@@ -2,6 +2,7 @@
   import ArticleActions from '$lib/components/ArticleActions.svelte';
   import ArticleSeo from '$lib/components/ArticleSeo.svelte';
   import { getArticleModule } from '$lib/content';
+  import { getLocalizedGuideCollections } from '$lib/localized-guide-collections';
 
   export let data;
 
@@ -9,13 +10,23 @@
   $: currentSlug = data.article.slug;
   $: module = getArticleModule(currentSlug);
   $: Content = module?.default;
+  $: collection = getLocalizedGuideCollections('es').find(guide => guide.items.some(item => item.id === currentSlug));
 </script>
 
 <ArticleSeo article={data.article} />
+<svelte:head>
+  {#if data.article.draft}<meta name="robots" content="noindex,nofollow" />{/if}
+</svelte:head>
 
 <main class="article-page intl-article" dir="ltr">
   <article>
     <header class="article-header wrap">
+      {#if collection}
+        <p><a href={`/es/guides/${collection.slug}/#${currentSlug}`}>Parte de {collection.title} →</a></p>
+      {/if}
+      {#if data.article.draft}
+        <p><strong>Borrador en español · Vista previa local</strong> · <a href={`/es/guides/gpu-selection/#${currentSlug}`}>Volver a la colección de GPU →</a></p>
+      {/if}
       <div class="article-meta"><span>{data.article.category}</span><span>{data.article.faDate}</span><span>{data.article.readTime}</span></div>
       <h1>{data.article.title}</h1>
       <p>{data.article.excerpt}</p>

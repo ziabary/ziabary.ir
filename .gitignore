@@ -10,3 +10,6 @@ npm-debug.log*
 # Large media assets are maintained locally, outside Git.
 /static/slides/
 /static/images/gallery/
+
+# Generated English GPU editorial review; source drafts and generator are tracked.
+/docs/drafts/gpu-selection-en/review/

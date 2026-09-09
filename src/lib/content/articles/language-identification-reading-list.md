@@ -56,3 +56,4 @@ That observation shaped the tool I was building. A benchmark on long news articl
 
 This bibliography predates modern multilingual transformers, but the evaluation questions remain current: What exactly counts as a language sample? Which languages are allowed? How short can the text be? How does the system behave when its closed-world assumption is false?
 
+The contemporary [HTM bibliography](/en/articles/htm-papers-and-books/) includes work on spoken-language identification. For the later product and engineering context of my language-technology work, see [Building Targoman without patronage](/en/articles/building-targoman-without-patronage/).

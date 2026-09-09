@@ -18,7 +18,7 @@
   {#each items as article, index}
     {#if article}
       <article class="stream-item">
-        <small>پیشنهاد {index + 1}</small>
+        <small class="fa-num">پیشنهاد {index + 1}</small>
         <h2>{article.title}</h2>
         <p>{article.excerpt}</p>
         <a class="button ghost" href={`/articles/${article.slug}/`}>خواندن این نوشته</a>

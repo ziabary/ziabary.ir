@@ -1,3 +1,5 @@
+import { getArticle } from '$lib/content';
+
 export type GuideItemKind = 'article' | 'interactive' | 'checklist' | 'tool';
 
 export type GuideItem = {
@@ -17,6 +19,11 @@ export type GuideCollection = {
   imageAlt: string;
   intro: string;
   items: GuideItem[];
+  translations?: Partial<Record<'en' | 'es', {
+    title: string;
+    subtitle: string;
+    eyebrow: string;
+  }>>;
 };
 
 /**
@@ -27,11 +34,23 @@ export type GuideCollection = {
  * table, checklist or tool. Those entries belong here without being published
  * in the general articles archive.
  */
-export const guideCollections: GuideCollection[] = [
+const editorialGuideCollections: GuideCollection[] = [
   {
     slug: 'gpu-selection',
-    title: 'راهنمای انتخاب GPU برای کاربردهای هوش مصنوعی',
-    subtitle: 'از حافظه و پهنای‌باند تا توان مصرفی، مقیاس و هزینه',
+    translations: {
+      en: {
+        title: 'GPUs and AI servers: what to choose, and why?',
+        subtitle: 'Compare accelerators and servers, check software support and assess performance per cost—based on real workloads.',
+        eyebrow: 'Compute infrastructure'
+      },
+      es: {
+        title: 'GPU y servidores de IA: ¿qué elegir y por qué?',
+        subtitle: 'Comparación de aceleradores y servidores, compatibilidad de software y relación entre rendimiento y coste, a partir de cargas de trabajo reales.',
+        eyebrow: 'Infraestructura de cómputo'
+      }
+    },
+    title: 'GPU و سرور هوش مصنوعی؛ چه انتخاب کنیم و چرا؟',
+    subtitle: 'مقایسهٔ شتاب‌دهنده‌ها و سرورها، بررسی پشتیبانی نرم‌افزاری و ارزیابی کارایی به هزینه؛ بر پایهٔ بار کاری واقعی.',
     eyebrow: 'زیرساخت محاسباتی',
     image: '/images/guides/gpu-selection.webp',
     imageAlt: 'چند شتاب‌دهندهٔ محاسباتی با اندازه و ظرفیت متفاوت در یک معماری هوش مصنوعی',
@@ -66,6 +85,13 @@ export const guideCollections: GuideCollection[] = [
         href: '/articles/choosing-gpu-for-ai/'
       },
       {
+        id: 'int8-or-fp8-real-gpu-support',
+        title: 'INT8 یا FP8؛ پشتیبانی واقعی GPU در اجرای مدل‌های زبانی',
+        subtitle: 'تفاوت قالب مدل با مسیر اجرای آن؛ نقش کرنل، حافظه و کیفیت در انتخاب زیرساخت استنتاج.',
+        kind: 'article',
+        href: '/articles/int8-or-fp8-real-gpu-support/'
+      },
+      {
         id: 'server-comparison-table',
         title: 'جدول تعاملی مقایسه سرورهای GPU',
         subtitle: 'مقایسهٔ نسل PCIe، تعداد و عرض کارت، توان، ارتفاع، خنک‌کاری و پلتفرم با منابع رسمی سازندگان.',
@@ -97,6 +123,18 @@ export const guideCollections: GuideCollection[] = [
   },
   {
     slug: 'zero-trust-ai',
+    translations: {
+      en: {
+        title: 'Zero Trust AI (ZTAI)',
+        subtitle: 'Zero trust for data, models, retrieval, agents and actions.',
+        eyebrow: 'AI security'
+      },
+      es: {
+        title: 'IA de confianza cero (ZTAI)',
+        subtitle: 'Confianza cero para datos, modelos, recuperación de información, agentes y acciones.',
+        eyebrow: 'Seguridad de la IA'
+      }
+    },
     title: 'هوش مصنوعی امن (ZTAI)',
     subtitle: 'اعتماد صفر برای داده، مدل، بازیابی، عامل و عمل',
     eyebrow: 'امنیت هوش مصنوعی',
@@ -131,11 +169,30 @@ export const guideCollections: GuideCollection[] = [
         subtitle: 'راستی‌آزمایی، کمترین دسترسی، فرض نفوذ و کنترل‌های داده، مدل، زیرساخت و خروجی.',
         kind: 'article',
         href: '/articles/zero-trust-ai-principles-and-controls/'
+      },
+      {
+        id: 'ztai-indirect-data-access',
+        title: 'وقتی انسان داده را نمی‌بیند؛ آیا واقعاً دسترسی او حذف شده است؟',
+        subtitle: 'کنترل مسیرهای غیرمستقیم دسترسی به دادهٔ محرمانه؛ از اختیار تغییر کد تا خروج اطلاعات و مدیریت زیرساخت.',
+        kind: 'article',
+        href: '/articles/ztai-indirect-data-access/'
       }
     ]
   },
   {
     slug: 'secure-operating-system',
+    translations: {
+      en: {
+        title: 'Enterprise Linux security and governance',
+        subtitle: 'From threat models and distribution selection to isolated environments, containers, GPUs, standards and legacy systems.',
+        eyebrow: 'Infrastructure security'
+      },
+      es: {
+        title: 'Seguridad y gobernanza de Linux empresarial',
+        subtitle: 'Del modelo de amenazas y la elección de distribución a entornos aislados, contenedores, GPU, estándares y sistemas heredados.',
+        eyebrow: 'Seguridad de la infraestructura'
+      }
+    },
     title: 'امنیت و حاکمیت لینوکس سازمانی',
     subtitle: 'از مدل تهدید و انتخاب توزیع تا محیط ایزوله، کانتینر، GPU، استاندارد و Legacy',
     eyebrow: 'امنیت زیرساخت',
@@ -203,6 +260,18 @@ export const guideCollections: GuideCollection[] = [
   },
   {
     slug: 'ai-operator',
+    translations: {
+      en: {
+        title: 'The AI operator',
+        subtitle: 'Business models, architecture, regulation and boundaries of responsibility.',
+        eyebrow: 'Infrastructure and policy'
+      },
+      es: {
+        title: 'El operador de IA',
+        subtitle: 'Modelo de negocio, arquitectura, regulación y límites de responsabilidad.',
+        eyebrow: 'Infraestructura y políticas públicas'
+      }
+    },
     title: 'اپراتور هوش مصنوعی',
     subtitle: 'مدل کسب‌وکار، معماری، تنظیم‌گری و مرزهای مسئولیت',
     eyebrow: 'زیرساخت و سیاست‌گذاری',
@@ -213,6 +282,18 @@ export const guideCollections: GuideCollection[] = [
   },
   {
     slug: 'ai-platform',
+    translations: {
+      en: {
+        title: 'The AI platform',
+        subtitle: 'From data and models to deployment, monitoring, security and operations.',
+        eyebrow: 'Enterprise architecture'
+      },
+      es: {
+        title: 'La plataforma de IA',
+        subtitle: 'De los datos y modelos al despliegue, la supervisión, la seguridad y las operaciones.',
+        eyebrow: 'Arquitectura empresarial'
+      }
+    },
     title: 'سکوی هوش مصنوعی',
     subtitle: 'از داده و مدل تا استقرار، پایش، امنیت و عملیات',
     eyebrow: 'معماری سازمانی',
@@ -222,6 +303,13 @@ export const guideCollections: GuideCollection[] = [
     items: []
   }
 ];
+
+// Keep the editorial position of drafts without exposing their content, links or
+// counts in public guides. Publishing the article makes this entry visible too.
+export const guideCollections: GuideCollection[] = editorialGuideCollections.map((collection) => ({
+  ...collection,
+  items: collection.items.filter((item) => item.kind !== 'article' || Boolean(getArticle(item.id)))
+}));
 
 export function getGuideCollection(slug: string) {
   return guideCollections.find((collection) => collection.slug === slug);

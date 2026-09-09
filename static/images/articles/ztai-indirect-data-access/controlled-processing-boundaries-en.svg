@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 880" role="img" aria-labelledby="title desc"><title id="title">Controlled processing with independent admission and output authority</title><desc id="desc">Code admission, confidential execution, conditional key release and a protected output gate are governed independently from the workload.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1L9 5L1 9Z" fill="#128b91"/></marker></defs>
+<rect width="1400" height="880" rx="20" fill="#f8fbff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#153d68">
+<text x="700" y="48" font-size="32" font-weight="bold" text-anchor="middle" fill="#153d68">Controlled processing: code, environment and output</text>
+<text x="700" y="82" font-size="21" font-weight="normal" text-anchor="middle" fill="#153d68">A conceptual architecture for restricting direct and indirect data access</text>
+<rect x="495" y="160" width="400" height="395" rx="12" fill="#e9f4f8" stroke="#82b3c9" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="695" y="194" font-size="19" font-weight="bold" text-anchor="middle" fill="#153d68">CONFIDENTIAL EXECUTION</text>
+<rect x="920" y="160" width="255" height="395" rx="12" fill="#e7f5f1" stroke="#82b9ac" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1047" y="194" font-size="18" font-weight="bold" text-anchor="middle" fill="#153d68">PROTECTED RELEASE</text>
+<rect x="30" y="300" width="195" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="127.5" y="332" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Define processing</text><text x="127.5" y="360" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Specified code</text><text x="127.5" y="383" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">and task</text>
+<rect x="265" y="300" width="190" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="360.0" y="332" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Admit execution</text><text x="360.0" y="360" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Version and scope</text><text x="360.0" y="383" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">accepted</text>
+<rect x="530" y="300" width="325" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="692.5" y="332" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Bounded execution</text><text x="692.5" y="360" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Limited access and resources</text>
+<rect x="940" y="300" width="215" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="1047.5" y="332" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Output gate</text><text x="1047.5" y="360" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Outside the authority</text><text x="1047.5" y="383" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">of the workload</text>
+<rect x="1210" y="300" width="165" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="1292.5" y="332" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Allowed result</text><text x="1292.5" y="360" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Specified</text><text x="1292.5" y="383" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">recipient</text>
+<path d="M225 350L265 350" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M455 350L530 350" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M855 350L940 350" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1155 350L1210 350" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="560" y="425" width="260" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="690.0" y="457" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Data and model</text><text x="690.0" y="485" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Within the protected boundary</text>
+<path d="M690 425L690 400" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="30" y="455" width="390" height="100" rx="12" fill="#fff" stroke="#b8cedf" stroke-width="2" stroke-dasharray=""/><text x="225.0" y="487" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Key-release service</text><text x="225.0" y="515" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Releases only after evidence is accepted</text>
+<path d="M530 375L420 495" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="463" y="420" font-size="16" font-weight="normal" text-anchor="middle" fill="#153d68">Evidence</text>
+<path d="M420 525L530 395" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="482" y="533" font-size="16" font-weight="normal" text-anchor="middle" fill="#153d68">Key via secure channel</text>
+<rect x="935" y="450" width="225" height="70" rx="12" fill="#fff4de" stroke="#d6b474" stroke-width="2" stroke-dasharray=""/>
+<text x="1047" y="478" font-size="19" font-weight="bold" text-anchor="middle" fill="#153d68">Rejected output</text>
+<text x="1047" y="503" font-size="17" font-weight="normal" text-anchor="middle" fill="#153d68">Quarantine; no release</text>
+<path d="M1047 400L1047 450" fill="none" stroke="#128b91" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="30" y="590" width="1345" height="120" rx="12" fill="#153d68" stroke="#153d68" stroke-width="2" stroke-dasharray=""/>
+<text x="700" y="630" font-size="26" font-weight="bold" text-anchor="middle" fill="#fff">Independent governance of policy, admission, keys and release</text>
+<text x="700" y="668" font-size="21" font-weight="normal" text-anchor="middle" fill="#d5edf3">Authority to develop or run a job does not include authority to change these rules.</text>
+<text x="700" y="759" font-size="21" font-weight="normal" text-anchor="middle" fill="#153d68">Logs, files, model artifacts and service responses all pass through output controls.</text>
+<text x="700" y="798" font-size="21" font-weight="bold" text-anchor="middle" fill="#153d68">Failure to meet policy does not authorize a less protected fallback.</text>
+<text x="700" y="840" font-size="18" font-weight="normal" text-anchor="middle" fill="#153d68">Implementation must define hardware trust, key management and the protection of every connecting channel.</text>
+</g></svg>

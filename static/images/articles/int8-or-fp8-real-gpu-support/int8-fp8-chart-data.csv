@@ -1,0 +1,4 @@
+gpu,fp8_dense_tflops,int8_dense_tops,source,basis,fp8_to_int8_rate_ratio,source_checked
+H200 SXM,1979,1979,https://www.nvidia.com/en-us/data-center/h200/,SXM; published sparse rates divided by two,1.0,2026-09-08
+HGX B200,4500,4500,https://resources.nvidia.com/en-us-blackwell-architecture/blackwell-architecture-technical-brief,Technical Brief Table 3; per GPU; dense,1.0,2026-09-08
+HGX B300,4500,150,https://resources.nvidia.com/en-us-blackwell-architecture/blackwell-architecture-technical-brief,Technical Brief Table 3; per GPU; dense; not GB300 NVL72,30.0,2026-09-08

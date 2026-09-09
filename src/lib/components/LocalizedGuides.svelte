@@ -1,43 +1,48 @@
 <script lang="ts">
   import PageHero from '$lib/components/PageHero.svelte';
-  import ArticleCard from '$lib/components/ArticleCard.svelte';
-  import { articles } from '$lib/content';
+  import GuideCollectionsGrid from '$lib/components/GuideCollectionsGrid.svelte';
+  import { guideCollections } from '$lib/guides';
+  import { getLocalizedGuideCollection } from '$lib/localized-guide-collections';
+
   export let locale: 'en' | 'es';
 
-  const excluded = new Set(['building-targoman-without-patronage', 'sms-otp-security-design', 'construir-targoman-sin-padrinos', 'cuando-un-otp-por-sms-reduce-la-seguridad']);
-  $: guides = articles.filter((article) => article.lang === locale && !excluded.has(article.slug));
   const copies = {
     en: {
-      eyebrow: 'From field work to implementation', title: 'Technical notes',
-      lead: 'Practical notes for readers who want to see the architecture, constraints and historical context behind a technical instruction.',
-      principle: 'A useful guide should improve a decision.',
-      intro: 'This archive restores the durable parts of my former English technical blog. Historical commands are clearly marked as historical instead of being presented as current instructions.',
-      empty: 'No additional technical notes have been prepared in English yet.'
+      eyebrow: 'Technical knowledge for better decisions',
+      title: 'Technical notes',
+      lead: 'Connected collections of articles, guides, interactive tables and tools.',
+      label: 'Technical collections',
+      description: 'Technical collections by Mehran Ziabary on AI infrastructure, security, enterprise Linux, AI operators and AI platforms.'
     },
     es: {
-      eyebrow: 'De la experiencia a la implementación', title: 'Notas técnicas',
-      lead: 'Notas prácticas para quienes quieren ver la arquitectura, las limitaciones y el contexto que hay detrás de una instrucción técnica.',
-      principle: 'Una buena guía debe ayudar a tomar una decisión.',
-      intro: 'Solo publicaré aquí notas técnicas completas y revisadas en español. No enviaré al lector a una página persa para rellenar un archivo todavía vacío.',
-      empty: 'Todavía no hay notas técnicas completas en español.'
+      eyebrow: 'Conocimiento técnico para decidir mejor',
+      title: 'Notas técnicas',
+      lead: 'Colecciones de artículos, guías, tablas interactivas y herramientas.',
+      label: 'Colecciones técnicas',
+      description: 'Colecciones técnicas de Mehran Ziabary sobre infraestructura de IA, seguridad, Linux empresarial, operadores y plataformas de IA.'
     }
   } as const;
+
   $: copy = copies[locale];
+  // Prefer an edition's published collection; retain introductions for the rest.
+  $: collections = guideCollections.flatMap((collection) => {
+    const published = getLocalizedGuideCollection(locale, collection.slug);
+    if (published) return [published];
+    const translation = collection.translations?.[locale];
+    return translation ? [{ ...collection, ...translation, items: [] }] : [];
+  });
 </script>
 
-<svelte:head><title>{copy.title} | Mehran Ziabary</title></svelte:head>
-<main class="localized-page" dir="ltr">
+<svelte:head>
+  <title>{copy.title} | Mehran Ziabary</title>
+  <meta name="description" content={copy.description} />
+</svelte:head>
+
+<main class="localized-guides" dir="ltr">
   <PageHero eyebrow={copy.eyebrow} title={copy.title} lead={copy.lead} />
-  <section class="wrap guide-intro"><b>{copy.principle}</b><p>{copy.intro}</p></section>
-  {#if guides.length}
-    <section class="wrap archive-list">{#each guides as article}<ArticleCard {article} {locale} />{/each}</section>
-  {:else}
-    <section class="wrap localized-empty"><span>00</span><p>{copy.empty}</p></section>
-  {/if}
+  <GuideCollectionsGrid {collections} {locale} label={copy.label} />
 </main>
 
 <style>
-  .localized-page :global(.page-hero),.localized-page :global(.guide-intro){text-align:left}
-  .localized-empty{min-height:260px;border-block:1px solid var(--line);display:grid;grid-template-columns:100px 1fr;align-items:center;margin-block:35px 90px}
-  .localized-empty span{font-size:50px;color:var(--line)}.localized-empty p{font-size:19px;color:var(--muted)}
+  .localized-guides :global(.page-hero) { text-align: left; }
 </style>

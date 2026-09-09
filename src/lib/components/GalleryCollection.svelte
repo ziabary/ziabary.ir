@@ -1,9 +1,21 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import type { GalleryItem } from '$lib/gallery';
+  import type { GalleryItem, GalleryLocale } from '$lib/gallery';
 
   export let items: GalleryItem[];
   export let compact = false;
+  export let locale: GalleryLocale = 'fa';
+
+  const copies = {
+    fa: { zoom: 'بزرگ‌نمایی', zoomOut: 'کوچک‌نمایی', close: 'بستن', closeView: 'بستن نمایش تصویر', images: 'تصویر', previous: 'تصویر قبلی', next: 'تصویر بعدی', original: 'ابعاد اصلی:', pixels: 'پیکسل', image: 'تصویر' },
+    en: { zoom: 'Zoom in', zoomOut: 'Zoom out', close: 'Close', closeView: 'Close image viewer', images: 'images', previous: 'Previous image', next: 'Next image', original: 'Original dimensions:', pixels: 'pixels', image: 'Image' },
+    es: { zoom: 'Ampliar', zoomOut: 'Reducir', close: 'Cerrar', closeView: 'Cerrar visor de imágenes', images: 'imágenes', previous: 'Imagen anterior', next: 'Imagen siguiente', original: 'Dimensiones originales:', pixels: 'píxeles', image: 'Imagen' }
+  };
+  $: copy = copies[locale];
+  $: numberFormat = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale);
+  $: percentFormat = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale, { style: 'percent' });
+  $: dateFormat = new Intl.DateTimeFormat(locale === 'es' ? 'es-ES' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const dateLabel = (item: GalleryItem) => locale === 'fa' ? item.faDate : dateFormat.format(new Date(`${item.date}T00:00:00Z`));
 
   let activeItem: GalleryItem | null = null;
   let activeIndex = 0;
@@ -45,8 +57,8 @@
     const handleKey = (event: KeyboardEvent) => {
       if (!activeItem) return;
       if (event.key === 'Escape') close();
-      if (event.key === 'ArrowLeft') move(1);
-      if (event.key === 'ArrowRight') move(-1);
+      if (event.key === 'ArrowLeft') move(locale === 'fa' ? 1 : -1);
+      if (event.key === 'ArrowRight') move(locale === 'fa' ? -1 : 1);
       if (event.key === '+' || event.key === '=') changeZoom(0.25);
       if (event.key === '-') changeZoom(-0.25);
     };
@@ -58,63 +70,63 @@
   });
 </script>
 
-<div class:compact class="gallery-collection">
+<div class:compact class="gallery-collection" dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   {#each items as item}
     <figure>
-      <button class="gallery-cover" type="button" on:click={() => open(item)} aria-label={`بزرگ‌نمایی ${item.title}`}>
+      <button class="gallery-cover" type="button" on:click={() => open(item)} aria-label={`${copy.zoom}: ${item.title}`}>
         <img src={item.images[0].src} alt={item.images[0].alt} loading="lazy" />
-        <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i> بزرگ‌نمایی</span>
+        <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i> {copy.zoom}</span>
         {#if item.images.length > 1}
-          <span class="image-count"><i class="fa-regular fa-images" aria-hidden="true"></i> {item.images.length.toLocaleString('fa-IR')} تصویر</span>
+          <span class="image-count"><i class="fa-regular fa-images" aria-hidden="true"></i> {numberFormat.format(item.images.length)} {copy.images}</span>
         {/if}
       </button>
       <figcaption>
-        <div><b>{item.title}</b><time class="fa-num" datetime={item.date}>{item.faDate}</time></div>
-        <p>{item.caption} <span class="caption-date fa-num">— {item.faDate}</span></p>
+        <div><b>{item.title}</b><time class:fa-num={locale === 'fa'} datetime={item.date}>{dateLabel(item)}</time></div>
+        <p>{item.caption} <span class="caption-date" class:fa-num={locale === 'fa'}>— {dateLabel(item)}</span></p>
       </figcaption>
     </figure>
   {/each}
 </div>
 
 {#if activeItem && activeImage}
-  <div class="lightbox" role="dialog" aria-modal="true" aria-label={activeItem.title}>
-    <button class="lightbox-backdrop" type="button" on:click={close} aria-label="بستن نمایش تصویر"></button>
+  <div class="lightbox" dir={locale === 'fa' ? 'rtl' : 'ltr'} role="dialog" aria-modal="true" aria-label={activeItem.title}>
+    <button class="lightbox-backdrop" type="button" on:click={close} aria-label={copy.closeView}></button>
     <div class="lightbox-panel">
       <header>
-        <div><b>{activeItem.title}</b><span class="fa-num">{activeItem.faDate}</span></div>
+        <div><b>{activeItem.title}</b><span class:fa-num={locale === 'fa'}>{dateLabel(activeItem)}</span></div>
         <div class="lightbox-tools">
-          <button type="button" on:click={() => changeZoom(-0.25)} disabled={zoom <= 1} aria-label="کوچک‌نمایی"><i class="fa-solid fa-minus"></i></button>
-          <span class="fa-num">{Math.round(zoom * 100).toLocaleString('fa-IR')}٪</span>
-          <button type="button" on:click={() => changeZoom(0.25)} disabled={zoom >= 3} aria-label="بزرگ‌نمایی"><i class="fa-solid fa-plus"></i></button>
-          <button type="button" on:click={close} aria-label="بستن"><i class="fa-solid fa-xmark"></i></button>
+          <button type="button" on:click={() => changeZoom(-0.25)} disabled={zoom <= 1} aria-label={copy.zoomOut}><i class="fa-solid fa-minus"></i></button>
+          <span class:fa-num={locale === 'fa'}>{percentFormat.format(zoom)}</span>
+          <button type="button" on:click={() => changeZoom(0.25)} disabled={zoom >= 3} aria-label={copy.zoom}><i class="fa-solid fa-plus"></i></button>
+          <button type="button" on:click={close} aria-label={copy.close}><i class="fa-solid fa-xmark"></i></button>
         </div>
       </header>
       <div class:single-image={activeItem.images.length === 1} class="lightbox-stage">
         {#if activeItem.images.length > 1}
-          <button class="nav previous" type="button" on:click={() => move(-1)} aria-label="تصویر قبلی"><i class="fa-solid fa-chevron-right"></i></button>
+          <button class="nav previous" type="button" on:click={() => move(-1)} aria-label={copy.previous}><i class={locale === 'fa' ? 'fa-solid fa-chevron-right' : 'fa-solid fa-chevron-left'}></i></button>
         {/if}
         <div class="image-viewport">
           <img src={activeImage.src} alt={activeImage.alt} style={`transform: scale(${zoom})`} on:load={readImageDimensions} />
         </div>
         {#if activeItem.images.length > 1}
-          <button class="nav next" type="button" on:click={() => move(1)} aria-label="تصویر بعدی"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav next" type="button" on:click={() => move(1)} aria-label={copy.next}><i class={locale === 'fa' ? 'fa-solid fa-chevron-left' : 'fa-solid fa-chevron-right'}></i></button>
         {/if}
       </div>
       <footer>
         <div class="image-details">
-          <p>{activeImage.caption ?? activeItem.caption} <span class="fa-num">— {activeItem.faDate}</span></p>
+          <p>{activeImage.caption ?? activeItem.caption} <span class:fa-num={locale === 'fa'}>— {dateLabel(activeItem)}</span></p>
           {#if imageDimensions}
-            <span class="image-dimensions fa-num">
-              ابعاد اصلی:
-              <b dir="ltr">{imageDimensions.width.toLocaleString('fa-IR')} × {imageDimensions.height.toLocaleString('fa-IR')}</b>
-              پیکسل
+            <span class="image-dimensions" class:fa-num={locale === 'fa'}>
+              {copy.original}
+              <b dir="ltr">{numberFormat.format(imageDimensions.width)} × {numberFormat.format(imageDimensions.height)}</b>
+              {copy.pixels}
             </span>
           {/if}
         </div>
         {#if activeItem.images.length > 1}
           <div class="lightbox-thumbs">
             {#each activeItem.images as image, index}
-              <button class:active={index === activeIndex} type="button" on:click={() => { activeIndex = index; zoom = 1; }} aria-label={`تصویر ${index + 1}`}>
+              <button class:active={index === activeIndex} type="button" on:click={() => { activeIndex = index; zoom = 1; }} aria-label={`${copy.image} ${numberFormat.format(index + 1)}`}>
                 <img src={image.src} alt="" />
               </button>
             {/each}
@@ -155,7 +167,7 @@
   .image-viewport{position:relative;width:100%;height:100%;min-width:0;min-height:0;overflow:auto}
   .image-viewport img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .18s;transform-origin:center}
   .nav{width:42px;height:60px;border-radius:10px;z-index:2}.previous{justify-self:start}.next{justify-self:end}
-  .lightbox-panel footer{min-width:0;padding:12px 18px 15px;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:12px}
+  .lightbox-panel footer{min-width:0;margin:0;background:transparent;padding:12px 18px 15px;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:12px}
   .image-details{display:flex;gap:12px 24px;justify-content:space-between;align-items:baseline;min-width:0}
   .image-details p{margin:0;font-size:10px;color:#c8d8d7;line-height:1.8}
   .image-dimensions{flex:0 0 auto;color:#9fc4c2;font-size:9px;white-space:nowrap}.image-dimensions b{font-weight:500;color:#c8d8d7}

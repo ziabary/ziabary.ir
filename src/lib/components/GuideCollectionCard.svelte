@@ -3,13 +3,19 @@
   import { articleCount, nonArticleCount } from '$lib/guides';
 
   export let collection: GuideCollection;
+  export let locale: 'fa' | 'en' | 'es' = 'fa';
+  export let href: string | null | undefined = undefined;
+  export let preview = false;
 
   const persianNumber = new Intl.NumberFormat('fa-IR');
+  $: target = href === undefined ? `/guides/${collection.slug}/` : href;
+  $: unpublished = locale === 'es' ? 'Contenido aún no publicado en español' : 'Content not yet published in English';
   $: count = articleCount(collection);
   $: extraCount = nonArticleCount(collection);
 </script>
 
-<a class="guide-collection-card" href={`/guides/${collection.slug}/`} aria-label={collection.title}>
+<svelte:element this={target ? 'a' : 'article'} class="guide-collection-card" class:linked={Boolean(target)}
+  href={target ?? undefined} aria-label={collection.title} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   <img src={collection.image} alt="" loading="lazy" width="1600" height="900" />
   <span class="guide-card-shade" aria-hidden="true"></span>
   <div class="guide-card-copy">
@@ -17,20 +23,35 @@
     <h2>{collection.title}</h2>
     <p>{collection.subtitle}</p>
     <div class="guide-card-meta">
+      {#if target}
+      {#if preview}
+        <span>{locale === 'es' ? 'Ver borrador en español' : 'Preview English draft'}</span>
+      {:else}
       <span>
+        {#if locale === 'fa'}
         {persianNumber.format(count)} مقاله
         {#if extraCount} · {persianNumber.format(extraCount)} محتوای تعاملی{/if}
+        {:else}
+        {count} {locale === 'en' ? (count === 1 ? 'article' : 'articles') : (count === 1 ? 'artículo' : 'artículos')}
+        {#if extraCount} · {extraCount} {locale === 'en' ? 'interactive resources' : 'recursos interactivos'}{/if}
+        {/if}
       </span>
-      <i aria-hidden="true">←</i>
+      {/if}
+      <i aria-hidden="true">{locale === 'fa' ? '←' : '→'}</i>
+      {:else}
+        <span>{unpublished}</span>
+      {/if}
     </div>
   </div>
-</a>
+</svelte:element>
 
 <style>
   .guide-collection-card {
     position: relative;
     isolation: isolate;
     display: block;
+    min-width: 0;
+    width: 100%;
     aspect-ratio: 16 / 10;
     min-height: 330px;
     overflow: hidden;
@@ -70,7 +91,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-end;
-    text-align: right;
+    text-align: start;
   }
 
   small {
@@ -121,12 +142,12 @@
     transition: transform 0.2s;
   }
 
-  .guide-collection-card:hover img {
+  .guide-collection-card.linked:hover img {
     transform: scale(1.035);
     filter: saturate(1.08) brightness(1.05);
   }
 
-  .guide-collection-card:hover .guide-card-meta i {
+  .guide-collection-card.linked:hover .guide-card-meta i {
     transform: translateX(-6px);
   }
 
@@ -134,6 +155,11 @@
     outline: 3px solid var(--teal);
     outline-offset: 4px;
   }
+
+  .guide-collection-card[dir='ltr'] { display: flex; flex-direction: column; }
+  .guide-collection-card[dir='ltr'] .guide-card-copy { width: min(100%, 690px); height: auto; flex: 1; }
+  .guide-collection-card[dir='ltr'] small { align-self: flex-start; }
+  .guide-collection-card[dir='ltr'].linked:hover .guide-card-meta i { transform: translateX(6px); }
 
   @media (max-width: 680px) {
     .guide-collection-card {

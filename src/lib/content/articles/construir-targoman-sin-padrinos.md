@@ -15,7 +15,7 @@ related:
 draft: false
 ---
 
-> **Sobre esta edición.** Esta es una traducción adaptada para lectores internacionales de un artículo publicado originalmente en persa en 2019. Mantengo fechas, instituciones y cifras porque forman parte de la evidencia; añado contexto cuando una particularidad iraní podría ocultar la lección general.
+> **Sobre esta edición.** Esta es una traducción adaptada para lectores internacionales de [un artículo publicado originalmente en persa en 2019](/articles/targoman-without-rent/). Mantengo fechas, instituciones y cifras porque forman parte de la evidencia; añado contexto cuando una particularidad iraní podría ocultar la lección general.
 
 A menudo me preguntan cómo nació [Targoman](https://targoman.ir/), nuestro sistema de traducción automática para el persa, cuánto apoyo público recibió y por qué. Creo que, cuando hay dinero público de por medio, la transparencia no es un favor: es una obligación. No deberíamos esperar a que alguien pregunte para explicar lo ocurrido.
 

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import GuideStart from '$lib/components/GuideStart.svelte';
   import PageHero from '$lib/components/PageHero.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
@@ -83,6 +84,9 @@
           <img src={collection.image} alt={collection.imageAlt} width="1600" height="900" />
         </figure>
 
+        {#if isGpuCollection}
+          <GuideStart {collection} />
+        {:else}
         <div class="guide-series-intro">
           <div>
             <small>دربارهٔ این مجموعه</small>
@@ -95,6 +99,7 @@
             <div><dt>به‌روزرسانی</dt><dd>پیوسته</dd></div>
           </dl>
         </div>
+        {/if}
       </div>
 
       {#if collection.items.length}
@@ -227,12 +232,12 @@
   .guide-series-cover img { width: 100%; height: 100%; display: block; object-fit: cover; }
   .gpu-collection .guide-series-overview {
     display: grid;
-    grid-template-columns: minmax(420px, 1.2fr) minmax(330px, .8fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
     gap: 28px;
-    align-items: stretch;
+    align-items: start;
     padding: 30px 0 38px;
   }
-  .gpu-collection .guide-series-cover { max-width: none; min-height: 300px; margin: 0; aspect-ratio: auto; }
+  .gpu-collection .guide-series-cover { max-width: none; min-height: 0; margin: 0; aspect-ratio: 16 / 9; }
 
   .guide-series-intro {
     display: grid;
@@ -242,16 +247,6 @@
     padding: 38px 0 48px;
     border-bottom: 1px solid var(--line);
   }
-  .gpu-collection .guide-series-intro {
-    max-width: none;
-    margin: 0;
-    padding: 26px;
-    grid-template-columns: 1fr;
-    gap: 24px;
-    align-content: end;
-    border: 1px solid var(--line);
-  }
-  .gpu-collection .guide-series-intro dl { max-width: none; }
 
   .guide-series-intro small { color: var(--teal); font-size: 9px; }
   .guide-series-intro p { margin: 11px 0 0; color: color-mix(in srgb, var(--ink) 80%, var(--muted)); font-size: 14px; line-height: 2.1; }
@@ -321,6 +316,10 @@
   .guide-empty > span { color: var(--line); font-size: 58px; }
   .guide-empty b { display: block; margin-bottom: 7px; font-size: 18px; }
   .guide-empty p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.9; }
+
+  @media (min-width: 981px) and (max-width: 1200px) {
+    .gpu-collection .guide-series-overview { grid-template-columns: 1fr; }
+  }
 
   @media (max-width: 980px) {
     .guide-series-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 38px; }

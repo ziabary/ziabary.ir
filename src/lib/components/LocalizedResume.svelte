@@ -1,111 +1,106 @@
 <script lang="ts">
   import PageHero from '$lib/components/PageHero.svelte';
+  import englishResume from '$lib/resumes/en.json';
+  import spanishResume from '$lib/resumes/es.json';
+
   export let locale: 'en' | 'es';
-
-  const sharedPublications = [
-    'Introducing E4MT and LMBNC: Persian pre-processing utilities',
-    "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior",
-    'AUT Document Alignment Framework for BUCC Workshop Shared Task — 2015',
-    'Developing an open-domain English–Farsi translation system using AFEC — 2012',
-    'Semi-human instinctive artificial intelligence (SHI-AI) — 2006',
-    'A Novel Approach to Semi-Human Instinctive Artificial Intelligence — 2005',
-    "VBScript programmer's guide — 2002",
-    'Inter-Function Communication (IFC) — 2001',
-    'Design of a Cost Effective Supercomputer — 2001'
-  ];
-
-  const copies = {
-    en: {
-      title: 'Résumé', eyebrow: 'Professional record',
-      lead: 'My full legal name is Seyed Mohammad Mohammadzadeh Ziabary. I am known professionally and in the media as Mehran Ziabary.',
-      summaryLabel: 'Professional summary',
-      summary: 'Technology executive, entrepreneur and AI researcher with more than twenty years of experience—from digital electronics, robotics and network security to natural-language processing, product development and AI governance.',
-      currentLabel: 'Current responsibilities', previousLabel: 'Previous experience', educationLabel: 'Education', expertiseLabel: 'Areas of expertise', publicationsLabel: 'Publications and works', awardsLabel: 'Awards', languagesLabel: 'Languages', updated: 'Updated: 2026',
-      current: [
-        ['Hoomas', 'Vice President of Technology', '2025–present', 'Industrial AI investment and venture development across industry and mining.'],
-        ['Targoman Intelligent Processing', 'Co-founder and CEO', 'Co-founder since 2015; CEO since 2017', 'Natural-language processing systems and high-performance AI infrastructure.'],
-        ['Tarjomyar and Toranj', 'Co-founder and Executive Director', '2016–present', 'AI-assisted translation products and platforms.'],
-        ['Tehran ICT Guild', 'Chair, AI & Data Commission', '2025–present', 'Chair of the AI Infrastructure and Data Governance working group since 2020.']
-      ],
-      previous: [
-        ['AI & Data Commission, Tehran ICT Guild', 'Vice-chair and Secretary', 'Vice-chair 2024–2025; Secretary 2018–2024'],
-        ['Ministry of ICT', 'Advisor to the Deputy Minister', 'National Information Network monitoring, 2021–2023'],
-        ['Ministry of ICT', 'Advisor and project lead', 'Open-access search programme, 2017–2019'],
-        ['Delta Global', 'Senior Engineer, Technical Deputy and CTO', 'CTO 2006–2009; Technical Deputy 2009–2014; Senior Engineer 2014–2016']
-      ],
-      education: [
-        ['2009–2013', 'MSc in Artificial Intelligence', 'Amirkabir University of Technology', 'Thesis: Design and development of a machine translator inspired by the behaviour of bilingual children.'],
-        ['1997–2008', 'BSc in Software Engineering', 'Islamic Azad University, Central Tehran Branch', 'Thesis: Design and development of a supercomputer using decommissioned computers.']
-      ],
-      expertise: ['Artificial intelligence and NLP','Software systems architecture','Data and AI governance','Network and data security','Digital electronics and robotics','Technical investment assessment'],
-      awards: [
-        ['Fourth place, international RoboCup competition', 'IranOpen 2008 · Qazvin'],
-        ['Second place, international RoboCup competition', 'RoboCup 2006 · Bremen, Germany'],
-        ['Eighth place, international RoboCup competition', 'RoboCup 2005 · Osaka, Japan'],
-        ['First place, combat robotics competition', 'Central Tehran · 2004']
-      ],
-      languages: [['Persian','Native'],['English','Professional'],['Spanish','Professional'],['Turkish','Basic'],['Italian','Basic'],['Arabic','Basic']]
-    },
-    es: {
-      title: 'Currículum', eyebrow: 'Trayectoria profesional',
-      lead: 'Mi nombre legal completo es Seyed Mohammad Mohammadzadeh Ziabary. En el ámbito profesional y en los medios se me conoce como Mehran Ziabary.',
-      summaryLabel: 'Resumen profesional',
-      summary: 'Directivo tecnológico, emprendedor e investigador de inteligencia artificial con más de veinte años de experiencia: desde electrónica digital, robótica y seguridad de redes hasta procesamiento del lenguaje natural, desarrollo de producto y gobernanza de IA.',
-      currentLabel: 'Responsabilidades actuales', previousLabel: 'Experiencia anterior', educationLabel: 'Formación', expertiseLabel: 'Áreas de especialidad', publicationsLabel: 'Publicaciones y obras', awardsLabel: 'Reconocimientos', languagesLabel: 'Idiomas', updated: 'Actualizado: 2026',
-      current: [
-        ['Hoomas', 'Vicepresidente de Tecnología', '2025–actualidad', 'Inversión y desarrollo de empresas de IA industrial para industria y minería.'],
-        ['Targoman Intelligent Processing', 'Cofundador y director ejecutivo', 'Cofundador desde 2015; director ejecutivo desde 2017', 'Sistemas de procesamiento del lenguaje natural e infraestructura de IA de alto rendimiento.'],
-        ['Tarjomyar y Toranj', 'Cofundador y director ejecutivo', '2016–actualidad', 'Productos y plataformas de traducción asistida por inteligencia artificial.'],
-        ['Gremio TIC de Teherán', 'Presidente de la Comisión de IA y Datos', '2025–actualidad', 'Responsable del grupo de infraestructura de IA y gobernanza de datos desde 2020.']
-      ],
-      previous: [
-        ['Comisión de IA y Datos, Gremio TIC de Teherán', 'Vicepresidente y secretario', 'Vicepresidente 2024–2025; secretario 2018–2024'],
-        ['Ministerio de TIC', 'Asesor del viceministro', 'Seguimiento de la Red Nacional de Información, 2021–2023'],
-        ['Ministerio de TIC', 'Asesor y director de proyecto', 'Programa de acceso abierto a buscadores, 2017–2019'],
-        ['Delta Global', 'Ingeniero sénior, subdirector técnico y director técnico', 'Director técnico 2006–2009; subdirector 2009–2014; ingeniero sénior 2014–2016']
-      ],
-      education: [
-        ['2009–2013', 'Máster en Inteligencia Artificial', 'Universidad Tecnológica Amirkabir', 'Tesis: Diseño y desarrollo de un traductor automático inspirado en el comportamiento de niños bilingües.'],
-        ['1997–2008', 'Ingeniería de Software', 'Universidad Islámica Azad, sede central de Teherán', 'Tesis: Diseño y desarrollo de un supercomputador mediante ordenadores retirados.']
-      ],
-      expertise: ['Inteligencia artificial y PLN','Arquitectura de sistemas de software','Gobernanza de datos e IA','Seguridad de redes y datos','Electrónica digital y robótica','Evaluación técnica de inversiones'],
-      awards: [
-        ['Cuarto puesto en competición internacional RoboCup', 'IranOpen 2008 · Qazvin'],
-        ['Segundo puesto en competición internacional RoboCup', 'RoboCup 2006 · Bremen, Alemania'],
-        ['Octavo puesto en competición internacional RoboCup', 'RoboCup 2005 · Osaka, Japón'],
-        ['Primer puesto en competición de robots de combate', 'Teherán Central · 2004']
-      ],
-      languages: [['Persa','Nativo'],['Inglés','Profesional'],['Español','Profesional'],['Turco','Básico'],['Italiano','Básico'],['Árabe','Básico']]
-    }
-  } as const;
-  $: copy = copies[locale];
+  // Independent editorial editions sourced from their respective CV PDFs.
+  // Sharing the view does not imply that either résumé mirrors Persian.
+  const resumes = { en: englishResume, es: spanishResume };
+  $: copy = resumes[locale];
 </script>
 
-<svelte:head><title>{copy.title} | Mehran Ziabary</title><meta name="description" content={copy.summary} /></svelte:head>
+<svelte:head>
+  <title>{copy.title} | Mehran Ziabary</title>
+  <meta name="description" content={copy.summary[1]} />
+</svelte:head>
 
 <main class="resume-page localized-resume" dir="ltr">
   <PageHero eyebrow={copy.eyebrow} title={copy.title} lead={copy.lead} />
   <section class="wrap resume-intro">
-    <div class="resume-photo"><img src="/images/gallery/mehran-ziabary-headshot.jpg" alt="Mehran Ziabary" /></div>
+    <div class="resume-photo"><img src="/images/profile/mehran-ziabary.jpg" alt={copy.name} /></div>
     <div>
       <p class="eyebrow">{copy.summaryLabel}</p>
-      <h2>Seyed Mohammad Mohammadzadeh Ziabary <span>“Mehran Ziabary”</span></h2>
-      <p>{copy.summary}</p>
-      <div class="resume-contact"><a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a><a href="https://www.linkedin.com/in/mehranziabary" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      <h2>{copy.name}<span>{copy.legalName}</span></h2>
+      <p class="motto" lang="en">“{copy.motto}”</p>
+      {#each copy.summary as paragraph}<p>{paragraph}</p>{/each}
+      <div class="resume-contact">
+        <a href={`mailto:${copy.email}`}>{copy.email}</a>
+        <a href={copy.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+      <a class="button primary cv-download" href={copy.download} download>{copy.downloadLabel}</a>
     </div>
   </section>
-  <section class="wrap resume-sections">
-    <section><div><p class="eyebrow">{copy.currentLabel}</p><small class="section-hint">{copy.updated}</small></div><div class="resume-rows">{#each copy.current as item}<div><span>{item[0]}</span><b>{item[1]}</b><small><strong>{item[2]}</strong>{item[3]}</small></div>{/each}</div></section>
-    <section><p class="eyebrow">{copy.previousLabel}</p><div class="resume-rows">{#each copy.previous as item}<div><span>{item[0]}</span><b>{item[1]}</b><small>{item[2]}</small></div>{/each}</div></section>
-    <section><p class="eyebrow">{copy.educationLabel}</p><div class="resume-rows education-rows">{#each copy.education as item}<div><span>{item[0]}</span><b>{item[1]}</b><small><strong>{item[2]}</strong>{item[3]}</small></div>{/each}</div></section>
-    <section><p class="eyebrow">{copy.expertiseLabel}</p><div class="expertise-list">{#each copy.expertise as item}<span>{item}</span>{/each}</div></section>
-    <section><p class="eyebrow">{copy.publicationsLabel}</p><ol class="publication-list">{#each sharedPublications as publication, index}<li><span>{String(index + 1).padStart(2,'0')}</span><b>{publication}</b></li>{/each}</ol></section>
-    <section><p class="eyebrow">{copy.awardsLabel}</p><div class="award-grid">{#each copy.awards as award}<div><b>{award[0]}</b><span>{award[1]}</span></div>{/each}</div></section>
-    <section><p class="eyebrow">{copy.languagesLabel}</p><div class="language-list">{#each copy.languages as language}<span><b>{language[0]}</b> {language[1]}</span>{/each}</div></section>
-  </section>
+  <div class="wrap resume-sections">
+    <section aria-labelledby="experience-heading">
+      <div><h2 class="eyebrow" id="experience-heading">{copy.experienceLabel}</h2><small class="section-hint">{copy.updated}</small></div>
+      <div class="experience-list">
+        {#each copy.experience as role}
+          <article class="experience-entry">
+            <p class="dates">{role.dates}</p>
+            <div>
+              <h3>{role.company}</h3>
+              <p class="role-title">{role.title}</p>
+              {#if role.description}<p>{role.description}</p>{/if}
+              {#if role.highlights.length}<ul>{#each role.highlights as highlight}<li>{highlight}</li>{/each}</ul>{/if}
+            </div>
+          </article>
+        {/each}
+      </div>
+    </section>
+    <section aria-labelledby="education-heading">
+      <h2 class="eyebrow" id="education-heading">{copy.educationLabel}</h2>
+      <div class="education-list">
+        {#each copy.education as education}
+          <article><h3>{education.institution}</h3><p class="role-title">{education.degree}</p><p>{education.thesis}</p></article>
+        {/each}
+      </div>
+    </section>
+    <section aria-labelledby="publications-heading">
+      <h2 class="eyebrow" id="publications-heading">{copy.publicationsLabel}</h2>
+      <ol class="cv-publications">
+        {#each copy.publications as publication}
+          <li>
+            <span class="publication-year">{publication.year}</span>
+            <div>
+              <h3>{publication.title}</h3>
+              <p>{publication.authors}</p>
+              {#if publication.venue}<p>{publication.venue}</p>{/if}
+              {#if publication.doi}<a href={`https://doi.org/${publication.doi}`} target="_blank" rel="noreferrer">DOI: {publication.doi} ↗</a>{/if}
+            </div>
+          </li>
+        {/each}
+      </ol>
+    </section>
+  </div>
 </main>
 
 <style>
-  .localized-resume :global(.page-hero),.localized-resume :global(.resume-intro),.localized-resume :global(.resume-sections){text-align:left}
-  .localized-resume :global(.resume-rows>div),.localized-resume :global(.education-rows>div){direction:ltr}
+  .localized-resume { text-align: left; }
+  .resume-intro { align-items: start; }
+  .resume-intro h2 { overflow-wrap: anywhere; }
+  .resume-intro h2 span { font-size: 16px; line-height: 1.7; }
+  .resume-intro .motto { color: var(--ink); font-weight: 700; }
+  .resume-contact { flex-wrap: wrap; }
+  .cv-download { max-width: 100%; box-sizing: border-box; white-space: normal; text-align: center; }
+  .resume-sections h2 { margin: 0; font-size: 13px; line-height: 1.8; }
+  .experience-list, .education-list, .cv-publications { min-width: 0; }
+  .experience-entry { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; padding-block: 24px; border-bottom: 1px solid var(--line); }
+  .experience-entry:first-child, .education-list article:first-child, .cv-publications li:first-child { padding-top: 0; }
+  .experience-entry h3, .education-list h3, .cv-publications h3 { font-size: 17px; line-height: 1.6; margin: 0 0 8px; overflow-wrap: anywhere; }
+  .experience-entry p, .experience-entry li, .education-list p { color: var(--muted); font-size: 14px; line-height: 1.9; }
+  .experience-entry p, .education-list p { margin: 8px 0; }
+  .experience-entry .dates { font-size: 12px; margin-top: 3px; color: var(--teal); }
+  .experience-entry .role-title, .education-list .role-title { color: var(--ink); font-weight: 600; }
+  .experience-entry ul { padding-inline-start: 20px; margin: 12px 0 0; }
+  .experience-entry li { margin-block: 8px; }
+  .education-list article { padding-block: 22px; border-bottom: 1px solid var(--line); }
+  .cv-publications { padding: 0; margin: 0; list-style: none; }
+  .cv-publications li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 18px; padding-block: 22px; border-bottom: 1px solid var(--line); }
+  .publication-year { color: var(--teal); font-size: 12px; padding-top: 3px; }
+  .cv-publications h3 { font-size: 15px; }
+  .cv-publications p { font-size: 13px; line-height: 1.8; color: var(--muted); margin: 6px 0; }
+  .cv-publications a { display: inline-block; font-size: 12px; color: var(--teal); overflow-wrap: anywhere; }
+  @media(max-width: 980px) { .experience-entry { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+  @media(max-width: 680px) { .resume-intro { padding-block: 36px; } .resume-photo { max-width: 320px; height: 360px; } }
 </style>

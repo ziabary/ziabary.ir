@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img" viewBox="0 0 1200 560"><title id="title">La lectura está bloqueada, pero la información puede salir</title><desc id="desc">La facultad de cambiar el código, combinada con el acceso a resultados, puede reconstruir el acceso a datos confidenciales.</desc>
+<defs><marker id="arrow" markerHeight="10" markerWidth="10" orient="auto" refX="8" refY="5"><path d="M1 1L9 5L1 9Z" fill="#128b91" /></marker></defs>
+<rect fill="#f8fbff" height="560" rx="20" width="1200" />
+<g fill="#153d68" font-family="Arial, Helvetica, sans-serif">
+<text fill="#153d68" font-size="30" font-weight="bold" text-anchor="middle" x="600" y="48">Lectura bloqueada; una vía indirecta sigue abierta</text>
+<text fill="#153d68" font-size="20" font-weight="normal" text-anchor="middle" x="600" y="82">Dos permisos pueden combinarse: cambiar el programa y recibir sus resultados</text>
+<rect fill="#e9f4f8" height="350" rx="12" stroke="#82b3c9" stroke-dasharray="8 5" stroke-width="2" width="540" x="340" y="122" />
+<text fill="#153d68" font-size="15.5" font-weight="bold" text-anchor="middle" x="610" y="154">FRONTERA DE DATOS CONFIDENCIALES</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="270" x="470" y="182" /><text fill="#153d68" font-size="21" font-weight="bold" text-anchor="middle" x="605.0" y="214">Datos sensibles</text><text fill="#153d68" font-size="17" font-weight="normal" text-anchor="middle" x="605.0" y="242">Entrada para la máquina</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="230" x="40" y="340" /><text fill="#153d68" font-size="15.4" font-weight="bold" text-anchor="middle" x="155.0" y="372">Desarrollador</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="155.0" y="400">Puede cambiar código</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="245" x="385" y="340" /><text fill="#153d68" font-size="21" font-weight="bold" text-anchor="middle" x="507.5" y="372">Proceso autorizado</text><text fill="#153d68" font-size="15.9" font-weight="normal" text-anchor="middle" x="507.5" y="400">Comportamiento modificable</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="230" x="700" y="340" /><text fill="#153d68" font-size="18.3" font-weight="bold" text-anchor="middle" x="815.0" y="372">Informe o archivo</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="815.0" y="400">Puede incluir datos en bruto</text>
+<rect fill="#fff" height="100" rx="12" stroke="#b8cedf" stroke-dasharray="" stroke-width="2" width="180" x="990" y="340" /><text fill="#153d68" font-size="16.7" font-weight="bold" text-anchor="middle" x="1080.0" y="372">Destinatario</text><text fill="#153d68" font-size="14" font-weight="normal" text-anchor="middle" x="1080.0" y="400">Mismo desarrollador</text>
+<path d="M270 390L385 390" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M630 390L700 390" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M930 390L990 390" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M550 282L550 340" fill="none" marker-end="url(#arrow)" stroke="#128b91" stroke-width="3" />
+<path d="M155 340V230H470" fill="none" stroke="#c9841a" stroke-dasharray="8 5" stroke-width="3" />
+<text fill="#986014" font-size="16.9" font-weight="bold" text-anchor="middle" x="290" y="212">Lectura directa: BLOQUEADA</text>
+<text fill="#153d68" font-size="22" font-weight="bold" text-anchor="middle" x="600" y="505">Eliminar el permiso de lectura no hace seguros el código y la salida sin restricciones.</text>
+</g></svg>

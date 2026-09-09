@@ -16,7 +16,7 @@ related:
 draft: false
 ---
 
-> **About this edition.** This is a translated and lightly edited international edition of a Persian article first published in 2019. Dates, institutions and financial details are retained because they are part of the evidence; short explanations have been added where the Iranian context would otherwise obscure the larger lesson.
+> **About this edition.** This is a translated and lightly edited international edition of [a Persian article first published in 2019](/articles/targoman-without-rent/). Dates, institutions and financial details are retained because they are part of the evidence; short explanations have been added where the Iranian context would otherwise obscure the larger lesson. The [Spanish edition](/es/articles/construir-targoman-sin-padrinos/) is also available.
 
 People often ask how [Targoman](https://targoman.ir/), our Persian machine-translation system, was born, how much public support it received, and why. I believe that when public money is involved, transparency is not a favour. It is an obligation. We should not wait to be questioned before explaining what happened.
 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">INT8 و FP8؛ از قالب مدل تا اجرای GPU</title>
+  <desc id="desc">سه مرحلهٔ مدل، کرنل و GPU برای بررسی پشتیبانی محاسبات هشت‌بیتی، بدون نمایش نتیجهٔ بنچمارک</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1c24"/><stop offset="1" stop-color="#15494c"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#77b4b5" stroke-opacity=".08"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 1 8 4-8 4" fill="none" stroke="#91cfca" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="190" fill="#f4f7f5" font-size="96" font-weight="700">INT8 / FP8</text>
+    <text x="800" y="255" fill="#b9d5d6" font-size="30" letter-spacing="3">MODEL → KERNEL → GPU</text>
+    <g fill="#112d36" stroke="#588a8f" stroke-width="2">
+      <rect x="120" y="350" width="360" height="300" rx="28"/>
+      <rect x="620" y="350" width="360" height="300" rx="28"/>
+      <rect x="1120" y="350" width="360" height="300" rx="28"/>
+    </g>
+    <g stroke="#91cfca" stroke-width="3" marker-end="url(#arrow)"><path d="M500 500H594"/><path d="M980 500H1094"/></g>
+    <g fill="#90d4cb" font-size="24" letter-spacing="3"><text x="300" y="410">01 / MODEL</text><text x="800" y="410">02 / KERNEL</text><text x="1300" y="410">03 / GPU</text></g>
+    <g fill="#f4f7f5" font-size="48" font-weight="700"><text x="300" y="510">W8A8</text><text x="800" y="510">GEMM</text><text x="1300" y="510">Tensor Core</text></g>
+    <g fill="#b9d5d6" font-size="24"><text x="300" y="590">Format + scales</text><text x="800" y="590">Implementation + version</text><text x="1300" y="590">Architecture + instructions</text></g>
+    <text x="800" y="775" fill="#dfb786" font-size="28">Verify the complete execution path</text>
+  </g>
+</svg>
