@@ -1,0 +1,6 @@
+@import 'katex/dist/katex.min.css';
+
+.math-inline { display: inline-block; direction: ltr; unicode-bidi: isolate; }
+.math-display { direction: ltr; unicode-bidi: isolate; max-width: 100%; overflow-x: auto; padding-block: 6px; }
+.math-display .katex-display { margin-block: 1em; }
+.math-display .katex-display > .katex { display: inline-block; min-width: 100%; }

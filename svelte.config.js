@@ -3,11 +3,21 @@ import { mdsvex } from 'mdsvex';
 import markdownImages from './scripts/markdown-images.mjs';
 import markdownHeadings from './scripts/markdown-headings.mjs';
 import markdownLinks from './scripts/markdown-links.mjs';
+import remarkMath from 'remark-math';
+import markdownMath from './scripts/markdown-math.mjs';
 import packageJson from './package.json' with { type: 'json' };
+
+const markdownOptions = { extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages], rehypePlugins: [markdownLinks] };
+const markdown = mdsvex(markdownOptions);
+const mathMarkdown = mdsvex({ ...markdownOptions, remarkPlugins: [remarkMath, markdownHeadings, markdownMath, markdownImages] });
 
 export default {
   extensions: ['.svelte', '.svx', '.md'],
-  preprocess: [mdsvex({ extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages], rehypePlugins: [markdownLinks] })],
+  preprocess: [{ markup(options) {
+    // Opt in explicitly so dollar amounts and shell examples in older articles stay literal.
+    const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(options.content)?.[1] ?? '';
+    return (/^math:\s*true\s*$/m.test(frontmatter) ? mathMarkdown : markdown).markup(options);
+  } }],
   kit: {
     // SvelteKit otherwise uses Date.now() as the version name. That timestamp is
     // embedded in the client runtime and gives unchanged JS files a new hash on

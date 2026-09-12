@@ -1,0 +1,134 @@
+[
+  {
+    "lang": "fa",
+    "kind": "article",
+    "width": 1440,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(93, 112, 116)",
+    "bodyColor": "color(srgb 0.10502 0.213255 0.242431)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "fa",
+    "kind": "article",
+    "width": 390,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(165, 184, 182)",
+    "bodyColor": "color(srgb 0.889882 0.934039 0.926196)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "fa",
+    "kind": "guide",
+    "width": 1440,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(93, 112, 116)",
+    "bodyColor": "color(srgb 0.10502 0.213255 0.242431)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "fa",
+    "kind": "guide",
+    "width": 390,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(165, 184, 182)",
+    "bodyColor": "color(srgb 0.889882 0.934039 0.926196)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "en",
+    "kind": "article",
+    "width": 1440,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(93, 112, 116)",
+    "bodyColor": "color(srgb 0.10502 0.213255 0.242431)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "en",
+    "kind": "article",
+    "width": 390,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(165, 184, 182)",
+    "bodyColor": "color(srgb 0.889882 0.934039 0.926196)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "en",
+    "kind": "guide",
+    "width": 1440,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(93, 112, 116)",
+    "bodyColor": "color(srgb 0.10502 0.213255 0.242431)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "en",
+    "kind": "guide",
+    "width": 390,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(165, 184, 182)",
+    "bodyColor": "color(srgb 0.889882 0.934039 0.926196)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "es",
+    "kind": "article",
+    "width": 1440,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(93, 112, 116)",
+    "bodyColor": "color(srgb 0.10502 0.213255 0.242431)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "es",
+    "kind": "article",
+    "width": 390,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(165, 184, 182)",
+    "bodyColor": "color(srgb 0.889882 0.934039 0.926196)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "es",
+    "kind": "guide",
+    "width": 1440,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(93, 112, 116)",
+    "bodyColor": "color(srgb 0.10502 0.213255 0.242431)",
+    "align": "center",
+    "overflow": false
+  },
+  {
+    "lang": "es",
+    "kind": "guide",
+    "width": 390,
+    "captionSize": "13px",
+    "bodySize": "16px",
+    "color": "rgb(165, 184, 182)",
+    "bodyColor": "color(srgb 0.889882 0.934039 0.926196)",
+    "align": "center",
+    "overflow": false
+  }
+]

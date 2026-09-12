@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '$lib/math.css';
   import { imageAttributes } from '$lib/images';
   import { onMount, tick } from 'svelte';
   import type { Component } from 'svelte';

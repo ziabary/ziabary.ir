@@ -1646,6 +1646,38 @@
       }
     ]
   },
+  "/images/articles/gpu-inference-latency-throughput/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2342012,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/21513327b01957ef-320.webp",
+        "bytes": 11524
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/21513327b01957ef-640.webp",
+        "bytes": 33254
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/21513327b01957ef-960.webp",
+        "bytes": 61606
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/21513327b01957ef-1440.webp",
+        "bytes": 113542
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/21513327b01957ef-1672.webp",
+        "bytes": 138132
+      }
+    ]
+  },
   "/images/articles/gpu-server-platform-components/cover.png": {
     "width": 1672,
     "height": 941,

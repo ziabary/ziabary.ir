@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '$lib/math.css';
   import { imageAttributes } from '$lib/images';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import PageHero from '$lib/components/PageHero.svelte';

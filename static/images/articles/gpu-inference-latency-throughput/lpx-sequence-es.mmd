@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant C as Solicitud
+    participant G as GPU
+    participant L as LPU
+    C->>G: Entrada
+    G->>G: Prefill y creación de caché KV
+    G-->>C: Primer token
+    loop Tokens posteriores
+        loop Capas del modelo
+            G->>G: Atención de decode con caché KV
+            G->>L: Activaciones intermedias
+            L->>L: FFN o expertos MoE
+            L-->>G: Resultado del componente delegado
+        end
+        G-->>C: Siguiente token
+    end

@@ -68,11 +68,11 @@ test(`${locale} rejects missing translations instead of leaking Persian text`, (
   assert.equal(hardwareText('شرح فارسی', 'fa'), 'شرح فارسی');
 });
 
-test(`the ${locale} collection and its seven articles are published`, async () => {
+test(`the ${locale} collection and its eight articles are published`, async () => {
   const collection = JSON.parse(await read(`docs/drafts/gpu-selection-${locale}/collection.json`));
   assert.equal(collection.draft, false);
   const articleItems = collection.items.filter((item) => item.kind === 'article');
-  assert.equal(articleItems.length, 7);
+  assert.equal(articleItems.length, 8);
   assert.equal(collection.items.filter((item) => item.kind === 'interactive').length, 2);
   const ids = new Set(articleItems.map((item) => item.id));
   for (const item of articleItems) {
@@ -135,6 +135,7 @@ test('Spanish preserves the reviewed English sources, figures and editorial rela
     const urls = (source) => [...source.matchAll(/https?:\/\/[^\s)"<>]+/g)].map(match => match[0]).sort();
     const images = (source) => [...source.matchAll(/(?:src="|\]\()(\/images\/[^"\s)]+)/g)].map(match => match[1]).sort();
     assert.deepEqual(urls(translation), urls(original), item.id);
-    assert.deepEqual(images(translation), images(original), item.id);
+    const translatedImages = images(original).map(path => path.replace(/-en\.(svg|mmd)$/, '-es.$1'));
+    assert.deepEqual(images(translation), translatedImages, item.id);
   }
 });

@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant C as Request
+    participant G as GPU
+    participant L as LPU
+    C->>G: Input
+    G->>G: Prefill and build KV cache
+    G-->>C: First token
+    loop Subsequent tokens
+        loop Model layers
+            G->>G: Decode attention with KV cache
+            G->>L: Intermediate activations
+            L->>L: FFN or MoE experts
+            L-->>G: Result of offloaded component
+        end
+        G-->>C: Next token
+    end

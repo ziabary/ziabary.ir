@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '$lib/math.css';
   import { imageAttributes } from '$lib/images';
   import type { Component } from 'svelte';
   import type { ArticleMeta } from '$lib/content';

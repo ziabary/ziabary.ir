@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant C as درخواست
+    participant G as GPU
+    participant L as LPU
+    C->>G: ورودی
+    G->>G: Prefill و ساخت KV cache
+    G-->>C: نخستین توکن
+    loop توکن‌های بعدی
+        loop لایه‌های مدل
+            G->>G: Decode attention با KV cache
+            G->>L: فعال‌سازی میانی
+            L->>L: FFN یا خبرگان MoE
+            L-->>G: نتیجهٔ بخش واگذارشده
+        end
+        G-->>C: توکن بعدی
+    end

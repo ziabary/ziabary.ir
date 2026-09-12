@@ -21,6 +21,7 @@
     { "id": "pcie-vs-sxm-for-ai-es", "kind": "article", "title": "¿PCIe o SXM?" },
     { "id": "choosing-gpu-for-ai-es", "kind": "article", "title": "Elegir la GPU según la carga" },
     { "id": "int8-or-fp8-real-gpu-support-es", "kind": "article", "title": "INT8 o FP8: soporte real de la GPU" },
+    { "id": "gpu-inference-latency-throughput-es", "kind": "article", "title": "Por qué la GPU más rápida no siempre ofrece la respuesta más rápida" },
     { "id": "server-comparison-table", "kind": "interactive", "title": "Comparar servidores de GPU" },
     { "id": "gpu-server-platform-components-es", "kind": "article", "title": "CPU, memoria, almacenamiento y red" },
     { "id": "dgx-and-standard-gpu-servers-es", "kind": "article", "title": "¿DGX, HGX o un servidor PCIe?" },

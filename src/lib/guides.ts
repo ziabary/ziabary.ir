@@ -95,6 +95,13 @@ const editorialGuideCollections: GuideCollection[] = [
         href: '/articles/int8-or-fp8-real-gpu-support/'
       },
       {
+        id: 'gpu-inference-latency-throughput',
+        title: 'چرا سریع‌ترین GPU لزوماً سریع‌ترین پاسخ را نمی‌دهد؟',
+        subtitle: 'از TTFT و سرعت تولید توکن تا حافظه، همزمانی و ارتباطات؛ سنجش ظرفیت واقعی سرویس استنتاج.',
+        kind: 'article',
+        href: '/articles/gpu-inference-latency-throughput/'
+      },
+      {
         id: 'server-comparison-table',
         title: 'جدول تعاملی مقایسه سرورهای GPU',
         subtitle: 'مقایسهٔ نسل PCIe، تعداد و عرض کارت، توان، ارتفاع، خنک‌کاری و پلتفرم با منابع رسمی سازندگان.',
