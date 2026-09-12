@@ -1,0 +1,165 @@
+{
+  "results": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "expertise": [
+        "Artificial intelligence and natural language processing",
+        "Software systems architecture",
+        "Data and AI governance",
+        "Network and data security",
+        "Digital electronics and robotics",
+        "Technical assessment of investments"
+      ],
+      "languages": [
+        {
+          "name": "Persian",
+          "level": "Native"
+        },
+        {
+          "name": "English",
+          "level": "Professional proficiency"
+        },
+        {
+          "name": "Spanish",
+          "level": "Professional proficiency"
+        },
+        {
+          "name": "Turkish",
+          "level": "Basic"
+        },
+        {
+          "name": "Italian",
+          "level": "Basic"
+        },
+        {
+          "name": "Arabic",
+          "level": "Basic"
+        }
+      ],
+      "overflow": false,
+      "language": "en"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "expertise": [
+        "Artificial intelligence and natural language processing",
+        "Software systems architecture",
+        "Data and AI governance",
+        "Network and data security",
+        "Digital electronics and robotics",
+        "Technical assessment of investments"
+      ],
+      "languages": [
+        {
+          "name": "Persian",
+          "level": "Native"
+        },
+        {
+          "name": "English",
+          "level": "Professional proficiency"
+        },
+        {
+          "name": "Spanish",
+          "level": "Professional proficiency"
+        },
+        {
+          "name": "Turkish",
+          "level": "Basic"
+        },
+        {
+          "name": "Italian",
+          "level": "Basic"
+        },
+        {
+          "name": "Arabic",
+          "level": "Basic"
+        }
+      ],
+      "overflow": false,
+      "language": "en"
+    },
+    {
+      "locale": "es",
+      "width": 1440,
+      "expertise": [
+        "Inteligencia artificial y procesamiento del lenguaje natural",
+        "Arquitectura de sistemas de software",
+        "Gobernanza de datos e inteligencia artificial",
+        "Seguridad de redes y datos",
+        "Electrónica digital y robótica",
+        "Evaluación técnica de inversiones"
+      ],
+      "languages": [
+        {
+          "name": "Persa",
+          "level": "Nativo"
+        },
+        {
+          "name": "Inglés",
+          "level": "Nivel profesional"
+        },
+        {
+          "name": "Español",
+          "level": "Nivel profesional"
+        },
+        {
+          "name": "Turco",
+          "level": "Básico"
+        },
+        {
+          "name": "Italiano",
+          "level": "Básico"
+        },
+        {
+          "name": "Árabe",
+          "level": "Básico"
+        }
+      ],
+      "overflow": false,
+      "language": "es"
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "expertise": [
+        "Inteligencia artificial y procesamiento del lenguaje natural",
+        "Arquitectura de sistemas de software",
+        "Gobernanza de datos e inteligencia artificial",
+        "Seguridad de redes y datos",
+        "Electrónica digital y robótica",
+        "Evaluación técnica de inversiones"
+      ],
+      "languages": [
+        {
+          "name": "Persa",
+          "level": "Nativo"
+        },
+        {
+          "name": "Inglés",
+          "level": "Nivel profesional"
+        },
+        {
+          "name": "Español",
+          "level": "Nivel profesional"
+        },
+        {
+          "name": "Turco",
+          "level": "Básico"
+        },
+        {
+          "name": "Italiano",
+          "level": "Básico"
+        },
+        {
+          "name": "Árabe",
+          "level": "Básico"
+        }
+      ],
+      "overflow": false,
+      "language": "es"
+    }
+  ],
+  "errors": []
+}

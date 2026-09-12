@@ -17,6 +17,8 @@
   "downloadLabel": "Download English CV (PDF)",
   "experienceLabel": "Selected professional and association roles",
   "educationLabel": "Education",
+  "expertiseLabel": "Areas of expertise",
+  "languagesLabel": "Languages",
   "publicationsLabel": "Research papers and books",
   "updated": "2026 CV",
   "experience": [
@@ -101,6 +103,22 @@
       "degree": "Bachelor of Science (B.Sc.), Computer Software Engineering",
       "thesis": "Thesis: Design and development of a supercomputer based on outdated computers."
     }
+  ],
+  "expertise": [
+    "Artificial intelligence and natural language processing",
+    "Software systems architecture",
+    "Data and AI governance",
+    "Network and data security",
+    "Digital electronics and robotics",
+    "Technical assessment of investments"
+  ],
+  "languages": [
+    { "name": "Persian", "level": "Native" },
+    { "name": "English", "level": "Professional proficiency" },
+    { "name": "Spanish", "level": "Professional proficiency" },
+    { "name": "Turkish", "level": "Basic" },
+    { "name": "Italian", "level": "Basic" },
+    { "name": "Arabic", "level": "Basic" }
   ],
   "publications": [
     {

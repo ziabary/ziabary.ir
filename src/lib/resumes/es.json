@@ -17,6 +17,8 @@
   "downloadLabel": "Descargar CV en español (PDF)",
   "experienceLabel": "Trayectoria profesional y asociativa seleccionada",
   "educationLabel": "Formación académica",
+  "expertiseLabel": "Áreas de especialización",
+  "languagesLabel": "Idiomas",
   "publicationsLabel": "Publicaciones científicas, autoría y traducción",
   "updated": "CV 2026",
   "experience": [
@@ -101,6 +103,22 @@
       "degree": "Grado universitario en Ingeniería de Software (B.Sc.)",
       "thesis": "Proyecto de fin de carrera: Diseño y desarrollo de un superordenador a partir de ordenadores obsoletos."
     }
+  ],
+  "expertise": [
+    "Inteligencia artificial y procesamiento del lenguaje natural",
+    "Arquitectura de sistemas de software",
+    "Gobernanza de datos e inteligencia artificial",
+    "Seguridad de redes y datos",
+    "Electrónica digital y robótica",
+    "Evaluación técnica de inversiones"
+  ],
+  "languages": [
+    { "name": "Persa", "level": "Nativo" },
+    { "name": "Inglés", "level": "Nivel profesional" },
+    { "name": "Español", "level": "Nivel profesional" },
+    { "name": "Turco", "level": "Básico" },
+    { "name": "Italiano", "level": "Básico" },
+    { "name": "Árabe", "level": "Básico" }
   ],
   "publications": [
     {

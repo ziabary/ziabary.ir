@@ -1,16 +1,16 @@
 # English GPU collection — editorial review
 
-Prepared on 9 September 2026. **Not published.** A Spanish draft is now available alongside this review; see [its review notes](../gpu-selection-es/README.md).
+Prepared on 9 September 2026. Publication status corrected on 12 September 2026 following the site owner’s confirmation: **the English and Spanish collections are published.** See [the Spanish review notes](../gpu-selection-es/README.md).
 
 The seven standalone English articles now have `draft: false` and appear in
 `/en/articles/`, the static build and sitemap. The same applies to the seven
-Spanish articles in `/es/articles/`. Online deployment remains deferred.
+Spanish articles in `/es/articles/`. This correction updates the local build; it does not deploy other pending changes.
 
-For local collection review, run `npm run dev` and open `/en/guides/`. The GPU
-card opens `/en/guides/gpu-selection/`, including both interactive tables and
-the seven articles. The collection route itself remains development-only with
-`noindex`; it is excluded from production and the sitemap. Other unpublished
-articles remain excluded from the public archives.
+For local collection review, run `npm run build` and `npm run preview:local`, then open
+`http://127.0.0.1:4186/en/guides/gpu-selection/`. The collection includes both interactive
+tables and all seven articles. It is registered in the technical guides, search index
+and sitemap, with canonical and language alternate links and no draft label. Other
+unpublished articles remain excluded from the public archives.
 
 Open [the collection preview](review/index.html). It includes seven articles, two working comparison tables, and links to seven standalone article previews. Images, charts, logos, CSS and JavaScript are local; reading and using the tables does not require the original publishers to be online. Source links still open the original websites.
 
@@ -25,7 +25,7 @@ The generated `review/` directory is ignored by Git and is outside both `static/
 ## Editorial decisions
 
 - Seven English Markdown files are in `src/lib/content/articles`, with unique `-en` slugs, `lang: en` and `draft: false`. This avoids collisions with Persian slugs in the existing content loader. They have standalone article routes and sitemap entries in the production build.
-- `collection.json` records the English introduction, reading paths and manual collection order. It is a draft manifest, not a public guide registration.
+- `collection.json` records the English introduction, reading paths and manual collection order. It has `draft: false` and supplies the published guide registration; its existing path is retained for the editorial review tools.
 - Iran-specific recommendations have been reframed around budget constraints, open-weight model deployments, incremental expansion, support eligibility, activation, returns and service coverage. The articles do not generalize one market's circumstances to all organizations.
 - The INT8/FP8 quality discussion now covers multilingual and domain-specific documents, including extraction, negation, conditions and structured output.
 - Editorial notes about correcting earlier versions have been replaced with direct explanations. Historical benchmark screenshots retain their context and are explicitly separated from current purchasing advice.

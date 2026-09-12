@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { equivalentPages } from '$lib/editions';
   export let title: string;
   export let description: string;
   export let path: string;
@@ -11,9 +12,11 @@
   export let publishedDate: string | undefined = undefined;
   export let updatedDate: string | undefined = undefined;
   export let articleSection: string | undefined = undefined;
+  export let noindex = false;
 
   const siteUrl = 'https://ziabary.ir';
   $: canonicalUrl = new URL(path, siteUrl).href;
+  $: alternatePages = noindex ? [] : equivalentPages(path);
   $: imageUrl = new URL(image, siteUrl).href;
   $: shareTitle = title.includes('|') ? title.split('|')[0].trim() : title;
   $: ogLocale = locale === 'fa' ? 'fa_IR' : locale === 'es' ? 'es_ES' : 'en_US';
@@ -84,6 +87,8 @@
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
+  {#if noindex}<meta name="robots" content="noindex,follow" />{/if}
+  {#each alternatePages as alternate}<link rel="alternate" hreflang={alternate.locale} href={new URL(alternate.href, siteUrl).href} />{/each}
 
   <meta property="og:type" content={type} />
   <meta property="og:locale" content={ogLocale} />

@@ -1,4 +1,5 @@
 import { getArticle } from '$lib/content';
+import { collectionState } from './publication.mjs';
 
 export type GuideItemKind = 'article' | 'interactive' | 'checklist' | 'tool';
 
@@ -12,6 +13,7 @@ export type GuideItem = {
 
 export type GuideCollection = {
   slug: string;
+  status: 'planned' | 'published';
   title: string;
   subtitle: string;
   eyebrow: string;
@@ -37,6 +39,7 @@ export type GuideCollection = {
 const editorialGuideCollections: GuideCollection[] = [
   {
     slug: 'gpu-selection',
+    status: 'published',
     translations: {
       en: {
         title: 'GPUs and AI servers: what to choose, and why?',
@@ -123,6 +126,7 @@ const editorialGuideCollections: GuideCollection[] = [
   },
   {
     slug: 'zero-trust-ai',
+    status: 'published',
     translations: {
       en: {
         title: 'Zero Trust AI (ZTAI)',
@@ -181,6 +185,7 @@ const editorialGuideCollections: GuideCollection[] = [
   },
   {
     slug: 'secure-operating-system',
+    status: 'published',
     translations: {
       en: {
         title: 'Enterprise Linux security and governance',
@@ -260,6 +265,7 @@ const editorialGuideCollections: GuideCollection[] = [
   },
   {
     slug: 'ai-operator',
+    status: 'planned',
     translations: {
       en: {
         title: 'The AI operator',
@@ -273,7 +279,7 @@ const editorialGuideCollections: GuideCollection[] = [
       }
     },
     title: 'اپراتور هوش مصنوعی',
-    subtitle: 'مدل کسب‌وکار، معماری، تنظیم‌گری و مرزهای مسئولیت',
+    subtitle: 'مدل فعالیت، معماری و مرز مسئولیت اپراتورهای هوش مصنوعی.',
     eyebrow: 'زیرساخت و سیاست‌گذاری',
     image: '/images/guides/ai-operator.webp',
     imageAlt: 'چند سازمان مستقل متصل به یک لایهٔ هماهنگ‌کنندهٔ توزیع‌شده',
@@ -282,6 +288,7 @@ const editorialGuideCollections: GuideCollection[] = [
   },
   {
     slug: 'ai-platform',
+    status: 'planned',
     translations: {
       en: {
         title: 'The AI platform',
@@ -295,7 +302,7 @@ const editorialGuideCollections: GuideCollection[] = [
       }
     },
     title: 'سکوی هوش مصنوعی',
-    subtitle: 'از داده و مدل تا استقرار، پایش، امنیت و عملیات',
+    subtitle: 'از داده و مدل تا استقرار، امنیت و بهره‌برداری از سکوی هوش مصنوعی.',
     eyebrow: 'معماری سازمانی',
     image: '/images/guides/ai-platform.webp',
     imageAlt: 'ماژول‌های داده، مدل، استقرار و امنیت روی یک سکوی معماری مشترک',
@@ -308,7 +315,7 @@ const editorialGuideCollections: GuideCollection[] = [
 // counts in public guides. Publishing the article makes this entry visible too.
 export const guideCollections: GuideCollection[] = editorialGuideCollections.map((collection) => ({
   ...collection,
-  items: collection.items.filter((item) => item.kind !== 'article' || Boolean(getArticle(item.id)))
+  ...collectionState(collection, getArticle) as Pick<GuideCollection, 'status' | 'items'>
 }));
 
 export function getGuideCollection(slug: string) {

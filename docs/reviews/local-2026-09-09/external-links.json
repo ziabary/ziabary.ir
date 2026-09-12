@@ -1,0 +1,197 @@
+[
+  {
+    "url": "https://web.archive.org/web/20130127090058id_/http://blog.mohammadzadeh.info/index.php/how-to-access-legacy-numenta",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/227864",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/266294",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/245351",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://www.tasnimnews.ir/fa/news/1405/05/06/3658430/",
+    "status": 403,
+    "result": "unverifiable"
+  },
+  {
+    "url": "https://web.archive.org/web/20130127092329id_/http://blog.mohammadzadeh.info/index.php/apache-no-space-left-on",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%D9%82%D8%B5%D9%87-%D8%AA%D8%B1%DA%AF%D9%85%D8%A7%D9%86-%D8%A8%D8%AF%D9%88%D9%86-%D8%B1%D8%A7%D9%86%D8%AA-%D9%87%D9%85-%D9%85%DA%AF%D8%B1-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-rqbt1zut3uri",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/@mehran.ziabary/%D8%B3%D9%81%D8%B1%D9%86%D8%A7%D9%85%D9%87-%DA%86%DB%8C%D9%86-%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84-%D8%A7%D9%85%D8%A7%D9%86-%D8%A7%D8%B2-%DA%86%DB%8C%D9%86%DB%8C%D9%87%D8%A7%DB%8C-%D8%B2%D8%A8%D8%A7%D9%86%D9%86%D9%81%D9%87%D9%85-wpj6kn2qrps8",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/@mehran.ziabary/%D8%B3%D9%81%D8%B1%D9%86%D8%A7%D9%85%D9%87-%DA%86%DB%8C%D9%86-%D9%82%D8%B3%D9%85%D8%AA-%D8%AF%D9%88%D9%85-%D8%AA%D9%88%D8%B1%DB%8C%D8%B3%D8%AA%DB%8C-%DA%A9%D9%87-%D8%AA%D9%88%D8%B1%DB%8C%D8%B3%D8%AA-%D9%86%D8%A8%D8%A7%D8%B4%D8%AF-%D8%AA%D9%88%D8%B1%DB%8C%D8%B3%D8%AA-%D9%86%DB%8C%D8%B3%D8%AA-iwkw4txjbgp9",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/@mehran.ziabary/%D8%A8%D9%87%DB%8C%D9%86%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%B3%D9%88%D8%AF-%D8%B3%D8%A8%D8%AF%DA%AF%D8%B1%D8%AF%D8%A7%D9%86%DB%8C-%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%DA%A9%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA%D9%88-feyrwbcyrxu9",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/233066",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/232800",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/233685",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/233321",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%DA%A9%D9%84%D8%A7%D9%87%D8%A8%D8%B1%D8%AF%D8%A7%D8%B1%DB%8C-%D8%A8%D8%A7-%D8%B1%D9%85%D8%B2-%D9%BE%D9%88%DB%8C%D8%A7-%D8%AF%D8%B1-%D8%AF%D9%88-%DA%AF%D8%A7%D9%85-xogucr6uuatn",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/236691",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%D9%85%D8%A7%D8%AC%D8%B1%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%DA%AF%D9%88%DA%AF%D9%84-%D8%A7%D8%B2-%D8%AA%D8%B1%DA%AF%D9%85%D8%A7%D9%86-wrpomhzongqu",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://web.archive.org/web/20130820231210id_/http://blog.mohammadzadeh.info/index.php/hierarchical-temporal-memory-related-papers",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://web.archive.org/web/20130424020836id_/http://blog.mohammadzadeh.info/index.php/how-to-install-dgtechnics-smart",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://web.archive.org/web/20121108012028id_/http://blog.mohammadzadeh.info/index.php/install-nupic-v1-7-1",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://web.archive.org/web/20130120064544id_/http://blog.mohammadzadeh.info/index.php/step-by-step-guide-to",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/226544",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/226849",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/227166",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/235542",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/235847",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://web.archive.org/web/20120525095211id_/http://blog.mohammadzadeh.info/index.php/language-detection-related-documents",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/@mehran.ziabary/%D8%B1%DA%A9%D9%88%D8%B1%D8%AF-%D8%B7%D9%88%D9%84%D8%A7%D9%86%DB%8C%D8%AA%D8%B1%DB%8C%D9%86-%D8%AF%D9%88%D8%B1%D9%87-%D9%84%DB%8C%D8%B3%D8%A7%D9%86%D8%B3-lq5sw9wwylxc",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://zaviehmag.ir/?p=35128",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://farsnews.ir/ziabary/1747598555488842511",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://digiato.com/iran-technology-news/critique-of-national-artificial-intelligence-platform-unveiling",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%D8%B3%D8%AE%D9%86%DB%8C-%DA%86%D9%86%D8%AF-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%A8-%D8%B7%D8%B1%D8%AD-%D9%86%D9%88%D8%A2%D9%81%D8%B1%DB%8C%D9%86-qdjfyz5susjm",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%DB%B7%DB%B0-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%DA%A9%D9%84%D9%85%D9%87-%D8%AA%D8%B1%D8%AC%D9%85%D9%87-%D8%AF%D8%B1-%D8%B1%D9%88%D8%B2-rlbhzqsaayuc",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/212551",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://web.archive.org/web/20121109230827id_/http://blog.mohammadzadeh.info/index.php/how-to-make-raid-permanent",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%AA%D8%B1%D8%AC%D9%85%D9%87-%D9%85%D8%A7%D8%B4%DB%8C%D9%86%DB%8C-%D8%AA%D8%B1%DA%AF%D9%85%D8%A7%D9%86-%D8%A8%D9%87-%D8%B1%D9%88%D8%B2-%D8%B4%D8%AF-n8iqt9rhsckk",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://peivast.com/p/235682",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/@mehran.ziabary/%DA%86%D9%87-%D9%86%DB%8C%D8%A7%D8%B2%DB%8C-%D8%A8%D9%87-%D8%B4%D9%85%D8%B3%D8%A7-%D8%AF%D8%A7%D8%B1%DB%8C%D9%85-bgzfilxc9jdj",
+    "status": 200,
+    "result": "reachable"
+  },
+  {
+    "url": "https://virgool.io/targoman/%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C%D8%A7%D8%AA%DB%8C-%D8%A8%D9%84%D8%A7%DB%8C-%D8%AC%D8%A7%D9%86-xaas-%DA%86%D9%87-%D8%A8%D8%A7%DB%8C%D8%AF-%DA%A9%D8%B1%D8%AF-c5q5m3kfzhnm",
+    "status": 200,
+    "result": "reachable"
+  }
+]

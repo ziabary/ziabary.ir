@@ -364,6 +364,7 @@
 
 <svelte:head>
   <title>مدیریت محتوا | مهران ضیابری</title>
+  <link rel="canonical" href="https://ziabary.ir/admin/" />
   <meta name="robots" content="noindex,nofollow" />
 </svelte:head>
 

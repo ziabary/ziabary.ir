@@ -1,18 +1,18 @@
 # Colección de GPU en español — revisión editorial
 
-Preparada el 9 de septiembre de 2026. **Borrador; no publicado.**
+Preparada el 9 de septiembre de 2026. Estado corregido el 12 de septiembre de 2026, tras la confirmación del propietario: **las colecciones española e inglesa están publicadas.**
 
-Ejecute `npm run dev` y abra `/es/guides/`. La tarjeta de GPU, marcada
-«Ver borrador en español», abre `/es/guides/gpu-selection/`. Incluye siete
-artículos, dos tablas interactivas y enlaces a los siete artículos individuales.
-Los cambios en el Markdown y las traducciones aparecen en el servidor local.
+Ejecute `npm run build` y `npm run preview:local` y abra
+`http://127.0.0.1:4186/es/guides/gpu-selection/`. Incluye siete artículos,
+dos tablas interactivas y enlaces a los siete artículos individuales. La colección
+aparece en las guías técnicas, el buscador y el sitemap, sin etiqueta de borrador.
 
 ## Alcance de la adaptación
 
 - Los siete artículos tienen `lang: es`, `draft: false` y slugs terminados
   en `-es`. Aparecen en `/es/articles/`, en el HTML de producción y en el sitemap.
-  El despliegue en línea sigue pendiente. Solo la colección completa permanece
-  como vista previa de desarrollo con `noindex`, fuera del sitemap.
+  La colección también tiene `draft: false`, HTML estático, canonical y enlaces
+  entre idiomas. Esta corrección local no despliega los demás cambios pendientes.
 - La versión inglesa sirve de base editorial. Las recomendaciones se organizan
   por carga de trabajo, presupuesto, ampliación, compatibilidad y cobertura de
   soporte, sin atribuir esas circunstancias a un país concreto.

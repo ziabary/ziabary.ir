@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import { localizePresentation, presentations } from '$lib/presentations';
   export let locale: 'fa' | 'en' | 'es' = 'fa';
   // Every language features the same newest upload and its translated introduction.
@@ -20,7 +21,7 @@
   <section class="wrap section teaching-preview latest-presentation" dir={locale === 'fa' ? 'rtl' : 'ltr'}>
     <a class="presentation-preview-cover" href={`${base}/slides/${item.slug}/`} aria-label={`${copy.view}: ${title}`} hreflang={locale}>
       {#if item.cover}
-        <img src={item.cover} alt={`${copy.cover} «${title}»`} loading="lazy" width="1600" height="900" />
+        <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${title}»`} loading="lazy" width="1600" height="900" />
       {:else}
         <i class="fa-regular fa-file-pdf" aria-hidden="true"></i><span>{title}</span>
       {/if}

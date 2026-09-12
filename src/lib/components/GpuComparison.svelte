@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import { hardwareText, hardwareGpus, type HardwareLocale } from '$lib/i18n/gpu';
 
 
@@ -55,9 +56,9 @@
   let minMemory = 0;
   let maxPower = 0;
   let preset = 'all';
-  let showCompute = true;
-  let showExtendedCompute = true;
-  let showInfra = true;
+  let showCompute = false;
+  let showExtendedCompute = false;
+  let showInfra = false;
   let sorts: SortRule[] = [{ key: 'memoryGB', direction: 'desc' }];
   let compared: string[] = [];
   let expanded: string[] = [];
@@ -148,6 +149,8 @@
   function reset() {
     query = ''; selectedVendors = []; selectedSegments = []; selectedStatuses = [];
     useCase = ''; precision = ''; minMemory = 0; maxPower = 0; preset = 'all';
+    showCompute = false; showExtendedCompute = false; showInfra = false; hiddenColumns = [];
+    sorts = [{ key: 'memoryGB', direction: 'desc' }]; compared = []; expanded = [];
   }
 
   function usePreset(value: string) {
@@ -259,10 +262,10 @@
   <div class="scope"><b>{t("قاعدهٔ جدول")}</b><span>{t("«نوع محصول» در هر ردیف مشخص می‌کند که با کارت گرافیک، ماژول، پردازنده، سامانه کامل یا سرویس ابری روبه‌رو هستیم. در ستون‌های FP8 و FP16، عدد نخست توان پردازشی عادی و عدد دوم، در صورت درج، توان پردازشی با استفاده از محاسبات تنک (Sparse) است. اعداد FP32 و FP64 نیز توان پردازش عمومی را نشان می‌دهند و مستقیماً با توان محاسبات هوش مصنوعی در واحدهای Tensor/Matrix قابل مقایسه نیستند؛ به همین دلیل، این شاخص‌ها در ستون‌های جداگانه آمده‌اند.")}</span></div>
 
   <div class="presets" role="navigation" aria-label={t("فیلترهای سریع")}>
-    <button class:active={preset === 'all'} on:click={() => usePreset('all')}>{t("همه")}</button><button class:active={preset === 'current'} on:click={() => usePreset('current')}>{t("نسل جاری")}</button><button class:active={preset === 'local'} on:click={() => usePreset('local')}>{t("مدل محلی ۲۴GB+")}</button><button class:active={preset === 'efficient'} on:click={() => usePreset('efficient')}>{t("استنتاج تا ۲۰۰ وات")}</button><button class:active={preset === 'enterprise'} on:click={() => usePreset('enterprise')}>{t("استقرار سازمانی")}</button><button class:active={preset === 'frontier'} on:click={() => usePreset('frontier')}>{t("مدل‌های مرزی")}</button>
+    <button aria-pressed={preset === 'all'} class:active={preset === 'all'} on:click={() => usePreset('all')}>{t("همه")}</button><button aria-pressed={preset === 'current'} class:active={preset === 'current'} on:click={() => usePreset('current')}>{t("نسل جاری")}</button><button aria-pressed={preset === 'local'} class:active={preset === 'local'} on:click={() => usePreset('local')}>{t("مدل محلی ۲۴GB+")}</button><button aria-pressed={preset === 'efficient'} class:active={preset === 'efficient'} on:click={() => usePreset('efficient')}>{t("استنتاج تا ۲۰۰ وات")}</button><button aria-pressed={preset === 'enterprise'} class:active={preset === 'enterprise'} on:click={() => usePreset('enterprise')}>{t("استقرار سازمانی")}</button><button aria-pressed={preset === 'frontier'} class:active={preset === 'frontier'} on:click={() => usePreset('frontier')}>{t("مدل‌های مرزی")}</button>
   </div>
 
-  <details class="filters" open>
+  <details class="filters">
     <summary>{t("فیلتر دقیق")} <span>{t(numbers.format(visible.length))} {t("نتیجه")}</span></summary>
     <div class="filter-grid">
       <label class="search"><span>{t("مدل، معماری یا پشته")}</span><input bind:value={query} type="search" placeholder={t("مثلاً H200، Blackwell یا ROCm")} /></label>
@@ -274,7 +277,7 @@
       <label><span>{t("حداقل حافظه")}</span><select bind:value={minMemory} on:change={() => preset = 'custom'}><option value={0}>{t("بدون محدودیت")}</option><option value={16}>{t("۱۶ GB")}</option><option value={24}>{t("۲۴ GB")}</option><option value={48}>{t("۴۸ GB")}</option><option value={80}>{t("۸۰ GB")}</option><option value={128}>{t("۱۲۸ GB")}</option><option value={192}>{t("۱۹۲ GB")}</option><option value={256}>{t("۲۵۶ GB")}</option></select></label>
       <label><span>{t("حداکثر توان")}</span><select bind:value={maxPower} on:change={() => preset = 'custom'}><option value={0}>{t("بدون محدودیت")}</option><option value={100}>{t("۱۰۰ W")}</option><option value={200}>{t("۲۰۰ W")}</option><option value={350}>{t("۳۵۰ W")}</option><option value={600}>{t("۶۰۰ W")}</option><option value={1000}>{t("۱۰۰۰ W")}</option></select></label>
     </div>
-    <div class="filter-actions"><button on:click={reset}>{t("پاک‌کردن فیلترها")}</button><div><span>{t("گروه ستون‌ها:")}</span><label><input type="checkbox" bind:checked={showCompute} /> {t("محاسبات پایه")}</label><label><input type="checkbox" bind:checked={showExtendedCompute} /> {t("دقت‌های تکمیلی")}</label><label><input type="checkbox" bind:checked={showInfra} /> {t("زیرساخت و نرم‌افزار")}</label><button class="show-all" on:click={showAllColumns}>{t("نمایش همهٔ ستون‌ها")}</button></div></div>
+    <div class="filter-actions"><button on:click={reset}>{locale === 'fa' ? 'بازنشانی کامل' : locale === 'en' ? 'Reset all' : 'Restablecer todo'}</button><div><span>{t("گروه ستون‌ها:")}</span><label><input type="checkbox" bind:checked={showCompute} /> {t("محاسبات پایه")}</label><label><input type="checkbox" bind:checked={showExtendedCompute} /> {t("دقت‌های تکمیلی")}</label><label><input type="checkbox" bind:checked={showInfra} /> {t("زیرساخت و نرم‌افزار")}</label><button class="show-all" on:click={showAllColumns}>{t("نمایش همهٔ ستون‌ها")}</button></div></div>
   </details>
 
   <div class="summary" aria-live="polite"><div><small>{t("نتیجه")}</small><b>{t(numbers.format(visible.length))}</b><span>{t("از")} {t(numbers.format(gpuRecords.length))} {locale === 'en' ? 'models' : locale === 'es' ? 'modelos' : t("مدل")}</span></div><div><small>{t("بیشترین حافظه")}</small><b>{t(format(maxMemory))}</b><span>GB</span></div><div><small>{t("بیشترین پهنای‌باند")}</small><b>{t(format(maxBandwidth))}</b><span>{t("TB/s؛ با حفظ نوع حافظه")}</span></div><div><small>{t("کم‌مصرف‌ترین")}</small><b>{t(lowestPower ? format(lowestPower.powerW) : 'ثبت نشده')}</b><span>{t(lowestPower?.model ?? 'توان رسمی در این فیلتر وجود ندارد')}</span></div></div>
@@ -284,7 +287,7 @@
       <header><div><small>{t("مقایسهٔ کامل رو در رو")}</small><b>{t(numbers.format(comparison.length))} {t("از ۴ مدل؛ همهٔ مشخصات ثبت‌شده")}</b></div><button type="button" on:click={() => compared = []}>{t("حذف همه")}</button></header>
       <div class="compare-shell" role="region" aria-label={t("مقایسهٔ کامل مشخصات شتاب‌دهنده‌های انتخاب‌شده")}>
         <table class="compare-matrix">
-          <thead><tr><th class="compare-label">{t("مشخصه")}</th>{#each comparison as gpu}<th><button class="remove" type="button" aria-label={`${t("حذف")} ${gpu.model}`} on:click={() => toggleCompare(gpu.id)}>×</button><div class="brand-mark"><img src={brandLogo(gpu)} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t("منبع اصلی ↗")}</a></th>{/each}</tr></thead>
+          <thead><tr><th class="compare-label">{t("مشخصه")}</th>{#each comparison as gpu}<th><button class="remove" type="button" aria-label={`${t("حذف")} ${gpu.model}`} on:click={() => toggleCompare(gpu.id)}>×</button><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t("منبع اصلی ↗")}</a></th>{/each}</tr></thead>
           <tbody>{#each comparisonGroups as group}<tr class="compare-group"><th colspan={comparison.length + 1}>{t(group.group)}</th></tr>{#each group.rows as row}<tr><th class="compare-label">{t(row.label)}</th>{#each row.values as specs}<td>{#if specs.length}{#each specs as spec, index}{#if index}<hr />{/if}<span>{t(spec.value)}</span>{#if 'basis' in spec && spec.basis}<small>{t(spec.basis)}</small>{/if}{/each}{:else}<span class="not-recorded">{t("ثبت نشده")}</span>{/if}</td>{/each}</tr>{/each}{/each}</tbody>
         </table>
       </div>
@@ -293,7 +296,8 @@
 
   <div class="toolbar"><div class="toolbar-copy"><p>{t("عنوان هر ستون را بزنید: نزولی، صعودی، خاموش. علامت — یعنی ستون در مرتب‌سازی دخیل نیست؛ ↑ و ↓ جهت و عدد کنار آن اولویت مرتب‌سازی چندمعیاره را نشان می‌دهد.")}</p>{#if hiddenColumns.length}<div class="hidden-columns"><span>{t("ستون‌های پنهان:")}</span>{#each hiddenColumns as key}<button on:click={() => restoreColumn(key)}>+ {t(columnLabel[key])}</button>{/each}<button class="restore-all" on:click={showAllColumns}>{t("بازگردانی همه")}</button></div>{/if}</div><div><button on:click={() => sorts = []}>{t("حذف مرتب‌سازی")}</button><button class="export" on:click={exportCsv}>{t("دریافت CSV کامل")}</button></div></div>
 
-  <div class="table-shell" role="region" aria-label={t("جدول مقایسه GPU؛ افقی پیمایش کنید")}>
+  <!-- svelte-ignore a11y_no_noninteractive_tabindex (Scrollable data region needs keyboard focus for horizontal navigation.) -->
+  <div class="table-shell" role="region" tabindex="0" aria-label={t("جدول مقایسه GPU؛ افقی پیمایش کنید")}>
     <table><thead><tr>
       <th class="pick">{t("مقایسه")}</th>
       <th class="detail-head">{t("جزئیات")}</th>
@@ -311,8 +315,8 @@
       {#each visible as gpu}
         <tr class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
           <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={!compared.includes(gpu.id) && compared.length >= 4} on:change={() => toggleCompare(gpu.id)} aria-label={`${t("مقایسه")} ${gpu.model}`} /></td>
-          <td class="detail-cell"><button class:open={expanded.includes(gpu.id)} on:click={() => toggleExpanded(gpu.id)} aria-label={`${t("جزئیات")} ${gpu.model}`}>⌄</button></td>
-          <td class="model"><div class="model-cell"><div class="brand-mark"><img src={brandLogo(gpu)} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t("منبع رسمی ↗")}</a></div></td>
+          <td class="detail-cell"><button class:open={expanded.includes(gpu.id)} on:click={() => toggleExpanded(gpu.id)} aria-label={`${t("جزئیات")} ${gpu.model}`} aria-expanded={expanded.includes(gpu.id)}>⌄</button></td>
+          <td class="model"><div class="model-cell"><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t("منبع رسمی ↗")}</a></div></td>
           {#each activeColumns as column}
             {#if column === 'kind'}<td><span class="kind">{t(productKind(gpu))}</span></td>
             {:else if column === 'segment'}<td><span class="segment">{t(segmentLabel[gpu.gpuClass])}</span></td>
@@ -349,7 +353,7 @@
 </section>
 
 <style>
-  .explorer{min-width:0;margin-top:0;border-top:1px solid var(--line);padding-top:34px}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px}.heading>div>small{color:var(--teal);font-size:12px;font-weight:800}.heading h2{margin:7px 0 10px;font-size:clamp(28px,3vw,38px);line-height:1.45;letter-spacing:-1px}.heading p{max-width:1050px;margin:0;color:var(--muted);font-size:14px;line-height:2}.heading strong{color:var(--ink)}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:11px}.stamp b{font-size:16px}.rules{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}.scope strong{color:var(--ink)}
+  .explorer{min-width:0;margin-top:0;border-top:1px solid var(--line);padding-top:34px}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px}.heading>div>small{color:var(--teal);font-size:12px;font-weight:800}.heading h2{margin:7px 0 10px;font-size:clamp(28px,3vw,38px);line-height:1.45;letter-spacing:-1px}.heading p{max-width:1050px;margin:0;color:var(--muted);font-size:14px;line-height:2}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:11px}.stamp b{font-size:16px}.rules{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}
   .presets{display:flex;gap:7px;overflow-x:auto;padding:17px 0 9px}.presets button,.filter-actions button,.toolbar button,.compare button{border:1px solid var(--line);background:var(--paper);color:var(--muted);font:inherit;cursor:pointer}.presets button{flex:0 0 auto;border-radius:99px;padding:7px 13px;font-size:12px}.presets button:hover,.presets button.active{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--paper))}
   .filters{border:1px solid var(--line);background:color-mix(in srgb,var(--paper) 94%,var(--soft))}.filters summary{display:flex;justify-content:space-between;padding:12px 15px;font-size:14px;font-weight:800;cursor:pointer}.filters summary span{color:var(--teal);font-weight:600}.filter-grid{padding:14px 15px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;border-top:1px solid var(--line)}.filter-grid label,.filter-grid fieldset{min-width:0;margin:0;padding:0;border:0}.filter-grid label>span,.filter-grid legend{display:block;margin-bottom:5px;color:var(--muted);font-size:12px}.filter-grid input[type=search],.filter-grid select{box-sizing:border-box;width:100%;height:38px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:0 10px;font:inherit;font-size:13px}.search{grid-column:auto}.checks{display:flex;flex-wrap:wrap;gap:5px}.checks label{position:relative}.checks input{position:absolute;opacity:0}.checks label span{display:block;margin:0;border:1px solid var(--line);border-radius:5px;padding:6px 9px;color:var(--muted);font-size:11px;cursor:pointer}.checks input:checked+span{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,var(--paper))}.filter-actions{display:flex;justify-content:space-between;align-items:center;padding:10px 15px;border-top:1px solid var(--line)}.filter-actions>button{border:0;color:var(--teal);font-size:12px}.filter-actions>div{display:flex;align-items:center;flex-wrap:wrap;gap:14px}.filter-actions>div>span{color:var(--muted);font-size:11px}.filter-actions label{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}.filter-actions .show-all{border:1px solid var(--teal);border-radius:99px;padding:4px 9px;color:var(--teal);font-size:11px}
   .summary{margin:16px 0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.summary>div{padding:11px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 9px;align-items:baseline}.summary>div+div{border-inline-start:1px solid var(--line)}.summary small{color:var(--muted);font-size:12px}.summary b{justify-self:end;color:var(--teal);font-size:21px}.summary span{grid-column:1/-1;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

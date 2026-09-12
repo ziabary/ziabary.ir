@@ -5,7 +5,7 @@ lang: fa
 date: 2018-06-17
 faDate: "۲۷ خرداد ۱۳۹۷"
 category: "سفرنامه"
-excerpt: "در قسمت اول"
+excerpt: "از مترو و مسیرهای پیاده‌روی پکن تا دوچرخه‌ها، نظافت خیابان‌ها و رسیدن به محل کنفرانس ACL؛ بخش دوم سفرنامهٔ چین، روایت برخوردهای روزمره با شهر و دشواری پیدا کردن مسیر در میان تفاوت‌های زبانی است."
 readTime: "۸ دقیقه"
 external: "https://virgool.io/@mehran.ziabary/%D8%B3%D9%81%D8%B1%D9%86%D8%A7%D9%85%D9%87-%DA%86%DB%8C%D9%86-%D9%82%D8%B3%D9%85%D8%AA-%D8%AF%D9%88%D9%85-%D8%AA%D9%88%D8%B1%DB%8C%D8%B3%D8%AA%DB%8C-%DA%A9%D9%87-%D8%AA%D9%88%D8%B1%DB%8C%D8%B3%D8%AA-%D9%86%D8%A8%D8%A7%D8%B4%D8%AF-%D8%AA%D9%88%D8%B1%DB%8C%D8%B3%D8%AA-%D9%86%DB%8C%D8%B3%D8%AA-iwkw4txjbgp9"
 related:

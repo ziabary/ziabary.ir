@@ -1,0 +1,15 @@
+{
+  "baselineCommit": "8422e90",
+  "localOnly": true,
+  "productionPreview": "http://127.0.0.1:4186/",
+  "draftPreview": "http://127.0.0.1:5180/",
+  "tests": 47,
+  "browserScenarios": 12,
+  "visualScenarios": 44,
+  "articleCounts": {
+    "fa": 54,
+    "en": 21,
+    "es": 13
+  },
+  "indexablePages": 161
+}

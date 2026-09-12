@@ -1,11 +1,13 @@
 import { getArticle } from '$lib/content';
-import type { GuideCollection } from '$lib/guides';
+import { guideCollections, type GuideCollection } from '$lib/guides';
+import { gpuReviews } from '$lib/gpu-review';
 
 // Each edition has its own editorial selection and order. An introduction alone
 // does not make a translated collection publishable.
 const englishCollections: GuideCollection[] = [
   {
     slug: 'zero-trust-ai',
+    status: 'published',
     title: 'Zero Trust AI (ZTAI)',
     subtitle: 'Secure the data, models and workflows of AI, from development to controlled execution and output release.',
     eyebrow: 'AI security',
@@ -25,6 +27,7 @@ const englishCollections: GuideCollection[] = [
 const spanishCollections: GuideCollection[] = [
   {
     slug: 'zero-trust-ai',
+    status: 'published',
     title: 'IA de confianza cero (ZTAI)',
     subtitle: 'Proteja los datos, modelos y flujos de trabajo de IA, desde el desarrollo hasta la ejecución controlada y la publicación de resultados.',
     eyebrow: 'Seguridad de IA',
@@ -42,10 +45,26 @@ const spanishCollections: GuideCollection[] = [
 ];
 
 export function getLocalizedGuideCollections(locale: 'en' | 'es'): GuideCollection[] {
-  return (locale === 'en' ? englishCollections : spanishCollections).map(collection => ({
+  const gpu = gpuReviews[locale];
+  const gpuCollections: GuideCollection[] = gpu.draft ? [] : [{
+    ...gpu,
+    status: 'published',
+    items: gpu.items.map(item => ({
+      ...item,
+      kind: item.kind === 'article' ? 'article' : 'interactive',
+      subtitle: getArticle(item.id)?.excerpt ?? '',
+      href: item.kind === 'article' ? `/${locale}/articles/${item.id}/` : `#${item.id}`
+    }))
+  }];
+  const published = [...gpuCollections, ...(locale === 'en' ? englishCollections : spanishCollections)].map(collection => ({
     ...collection,
     items: collection.items.filter(item => item.kind !== 'article' || getArticle(item.id)?.lang === locale)
   })).filter(collection => collection.items.length > 0);
+  const planned = guideCollections.filter(collection => collection.slug !== 'gpu-selection' && !published.some(item => item.slug === collection.slug)).flatMap(collection => {
+    const translation = collection.translations?.[locale];
+    return translation ? [{ ...collection, ...translation, intro: translation.subtitle, items: [], status: 'planned' as const }] : [];
+  });
+  return [...published, ...planned];
 }
 
 export function getLocalizedGuideCollection(locale: 'en' | 'es', slug: string) {

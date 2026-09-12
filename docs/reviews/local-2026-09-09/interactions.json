@@ -1,0 +1,53 @@
+{
+  "results": [
+    {
+      "name": "real archive HTML, refresh and page-1/out-of-range/legacy redirects in all editions",
+      "passed": true
+    },
+    {
+      "name": "independent article language menu and keyboard return focus",
+      "passed": true
+    },
+    {
+      "name": "different article slugs use reciprocal real translations",
+      "passed": true
+    },
+    {
+      "name": "planned cards, useful destination, noindex and search exclusion",
+      "passed": true
+    },
+    {
+      "name": "search is loaded on demand, Persian equivalence returns real article, Escape restores focus",
+      "passed": true
+    },
+    {
+      "name": "archive search state survives article visit, back, and direct refresh",
+      "passed": true
+    },
+    {
+      "name": "desktop ToC position, active heading, direct fragment and sticky in RTL/LTR",
+      "passed": true
+    },
+    {
+      "name": "collection disclosure, continuous reading and old chapter fragment",
+      "passed": true
+    },
+    {
+      "name": "GPU and server presets and complete reset preserve tools and defaults",
+      "passed": true
+    },
+    {
+      "name": "media summary expansion, independent internal/source links and gallery redirect",
+      "passed": true
+    },
+    {
+      "name": "mobile ToC starts closed and 200% equivalent layout has no page overflow",
+      "passed": true
+    },
+    {
+      "name": "JavaScript disabled: article body, ToC targets and real page links remain in HTML",
+      "passed": true
+    }
+  ],
+  "exceptions": []
+}

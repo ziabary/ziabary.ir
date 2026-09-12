@@ -1,0 +1,255 @@
+
+> ziabary-platform@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: optional translations: independent, two editions, distinct slugs, draft/future, conflicts
+ok 1 - optional translations: independent, two editions, distinct slugs, draft/future, conflicts
+  ---
+  duration_ms: 7.882723
+  ...
+# Subtest: publication state changes card discovery and usable count from one decision
+ok 2 - publication state changes card discovery and usable count from one decision
+  ---
+  duration_ms: 0.257291
+  ...
+# Subtest: calendar date and local display do not depend on server/reader timezone
+ok 3 - calendar date and local display do not depend on server/reader timezone
+  ---
+  duration_ms: 424.584626
+  ...
+# Subtest: archive edge cases and same-date stable ordering
+ok 4 - archive edge cases and same-date stable ordering
+  ---
+  duration_ms: 0.712792
+  ...
+# Subtest: equivalent Persian spellings find the same real published articles
+ok 5 - equivalent Persian spellings find the same real published articles
+  ---
+  duration_ms: 252.121026
+  ...
+# Subtest: Markdown IDs: repeated Persian headings, explicit old anchors and collection namespaces
+ok 6 - Markdown IDs: repeated Persian headings, explicit old anchors and collection namespaces
+  ---
+  duration_ms: 21.404863
+  ...
+# Subtest: Persian gallery retains all images and existing content
+ok 7 - Persian gallery retains all images and existing content
+  ---
+  duration_ms: 0.649144
+  ...
+# Subtest: album translation cannot publish an image without its own caption
+ok 8 - album translation cannot publish an image without its own caption
+  ---
+  duration_ms: 0.341985
+  ...
+# Subtest: only eligible photos are returned; first eligible photo becomes the cover
+ok 9 - only eligible photos are returned; first eligible photo becomes the cover
+  ---
+  duration_ms: 0.162434
+  ...
+# Subtest: English and Spanish publication are independent, with no fallback
+ok 10 - English and Spanish publication are independent, with no fallback
+  ---
+  duration_ms: 0.09771
+  ...
+# Subtest: removing the last caption removes an album from that language only
+ok 11 - removing the last caption removes an album from that language only
+  ---
+  duration_ms: 0.107025
+  ...
+# Subtest: existing localized gallery preserves order and contains no Persian copy
+ok 12 - existing localized gallery preserves order and contains no Persian copy
+  ---
+  duration_ms: 0.482236
+  ...
+# Subtest: Persian data is returned unchanged and neither localization mutates it
+ok 13 - Persian data is returned unchanged and neither localization mutates it
+  ---
+  duration_ms: 2.661846
+  ...
+# Subtest: en retains every numeric value, null, boolean and source URL
+ok 14 - en retains every numeric value, null, boolean and source URL
+  ---
+  duration_ms: 3.450865
+  ...
+# Subtest: en translates all hardware strings, including internal enum labels
+ok 15 - en translates all hardware strings, including internal enum labels
+  ---
+  duration_ms: 1.864986
+  ...
+# Subtest: en rejects missing translations instead of leaking Persian text
+ok 16 - en rejects missing translations instead of leaking Persian text
+  ---
+  duration_ms: 0.319816
+  ...
+# Subtest: the en collection and its seven articles are published
+ok 17 - the en collection and its seven articles are published
+  ---
+  duration_ms: 144.762718
+  ...
+# Subtest: es retains every numeric value, null, boolean and source URL
+ok 18 - es retains every numeric value, null, boolean and source URL
+  ---
+  duration_ms: 2.5704
+  ...
+# Subtest: es translates all hardware strings, including internal enum labels
+ok 19 - es translates all hardware strings, including internal enum labels
+  ---
+  duration_ms: 1.525922
+  ...
+# Subtest: es rejects missing translations instead of leaking Persian text
+ok 20 - es rejects missing translations instead of leaking Persian text
+  ---
+  duration_ms: 0.186498
+  ...
+# Subtest: the es collection and its seven articles are published
+ok 21 - the es collection and its seven articles are published
+  ---
+  duration_ms: 135.274782
+  ...
+# Subtest: localization caches and dictionaries are independent for English and Spanish
+ok 22 - localization caches and dictionaries are independent for English and Spanish
+  ---
+  duration_ms: 4.967797
+  ...
+# Subtest: Spanish preserves the reviewed English sources, figures and editorial relationships
+ok 23 - Spanish preserves the reviewed English sources, figures and editorial relationships
+  ---
+  duration_ms: 97.681265
+  ...
+# Subtest: guide SSR emits real WebPage JSON with its canonical URL
+ok 24 - guide SSR emits real WebPage JSON with its canonical URL
+  ---
+  duration_ms: 1.53301
+  ...
+# Subtest: article SSR includes BlogPosting dates, author and image
+ok 25 - article SSR includes BlogPosting dates, author and image
+  ---
+  duration_ms: 0.554736
+  ...
+# Subtest: home SSR emits the Person, WebSite and WebPage graph
+ok 26 - home SSR emits the Person, WebSite and WebPage graph
+  ---
+  duration_ms: 0.27714
+  ...
+# Subtest: quotes, Persian text and closing script strings round-trip without HTML injection
+ok 27 - quotes, Persian text and closing script strings round-trip without HTML injection
+  ---
+  duration_ms: 0.232988
+  ...
+# Subtest: all locales use the Persian archive order, counts and original assets
+ok 28 - all locales use the Persian archive order, counts and original assets
+  ---
+  duration_ms: 1.107005
+  ...
+# Subtest: every presentation has complete English and Spanish descriptions and metadata
+ok 29 - every presentation has complete English and Spanish descriptions and metadata
+  ---
+  duration_ms: 0.310869
+  ...
+# Subtest: localization preserves the Persian source and cannot replace shared assets
+ok 30 - localization preserves the Persian source and cannot replace shared assets
+  ---
+  duration_ms: 0.245543
+  ...
+# Validated sitemap.xml against 4 indexable pages and robots.txt.
+# Subtest: indexes published language routes and excludes admin, errors and noindex pages
+ok 31 - indexes published language routes and excludes admin, errors and noindex pages
+  ---
+  duration_ms: 18.405102
+  ...
+# Subtest: rejects missing maps and detects added, removed and newly noindex pages
+ok 32 - rejects missing maps and detects added, removed and newly noindex pages
+  ---
+  duration_ms: 3.862233
+  ...
+# Subtest: rejects corrupted XML, duplicates and a missing robots sitemap directive
+ok 33 - rejects corrupted XML, duplicates and a missing robots sitemap directive
+  ---
+  duration_ms: 2.073352
+  ...
+# Subtest: encodes URLs and XML characters without generating build-time modification dates
+ok 34 - encodes URLs and XML characters without generating build-time modification dates
+  ---
+  duration_ms: 1.097875
+  ...
+# Subtest: rejects an empty or incomplete build
+ok 35 - rejects an empty or incomplete build
+  ---
+  duration_ms: 0.635854
+  ...
+# Subtest: every previously published article URL still has real static HTML
+ok 36 - every previously published article URL still has real static HTML
+  ---
+  duration_ms: 0.772691
+  ...
+# Subtest: archive pages contain each language’s published articles exactly once
+ok 37 - archive pages contain each language’s published articles exactly once
+  ---
+  duration_ms: 1.200172
+  ...
+# Subtest: real translated slugs survive the complete build pipeline; independent/draft editions have none
+ok 38 - real translated slugs survive the complete build pipeline; independent/draft editions have none
+  ---
+  duration_ms: 2.324013
+  ...
+# Subtest: planned collections are useful and excluded from sitemap and search in each edition
+ok 39 - planned collections are useful and excluded from sitemap and search in each edition
+  ---
+  duration_ms: 8.292929
+  ...
+# Subtest: published GPU editions include their chapters, tables, discovery links and language alternates
+ok 40 - published GPU editions include their chapters, tables, discovery links and language alternates
+  ---
+  duration_ms: 3.358187
+  ...
+# Subtest: slide PDF sizes reflect the actual retained files
+ok 41 - slide PDF sizes reflect the actual retained files
+  ---
+  duration_ms: 0.414215
+  ...
+# Subtest: en ZTAI has five published articles in manual reading order
+ok 42 - en ZTAI has five published articles in manual reading order
+  ---
+  duration_ms: 36.137018
+  ...
+# Subtest: missing, draft or wrong-language articles cannot expose a collection link or count
+ok 43 - missing, draft or wrong-language articles cannot expose a collection link or count
+  ---
+  duration_ms: 19.585264
+  ...
+# Subtest: translated articles retain local figures, valid internal destinations and original external references
+ok 44 - translated articles retain local figures, valid internal destinations and original external references
+  ---
+  duration_ms: 180.770722
+  ...
+# Subtest: es ZTAI has five published articles in manual reading order
+ok 45 - es ZTAI has five published articles in manual reading order
+  ---
+  duration_ms: 7.384361
+  ...
+# Subtest: missing, draft or wrong-language articles cannot expose a collection link or count
+ok 46 - missing, draft or wrong-language articles cannot expose a collection link or count
+  ---
+  duration_ms: 10.954375
+  ...
+# Subtest: translated articles retain local figures, valid internal destinations and original external references
+ok 47 - translated articles retain local figures, valid internal destinations and original external references
+  ---
+  duration_ms: 167.640072
+  ...
+# Subtest: Spanish retains English references, figures and editorial relationships
+ok 48 - Spanish retains English references, figures and editorial relationships
+  ---
+  duration_ms: 1.843335
+  ...
+1..48
+# tests 48
+# suites 0
+# pass 48
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1063.997474

@@ -11,7 +11,7 @@ await mkdir(scratchRoot, { recursive: true });
 const temporary = await mkdtemp(join(scratchRoot, 'page-seo-test-'));
 after(() => rm(temporary, { recursive: true, force: true }));
 const filename = fileURLToPath(new URL('../src/lib/components/PageSeo.svelte', import.meta.url));
-const source = await readFile(filename, 'utf8');
+const source = (await readFile(filename, 'utf8')).replace("import { equivalentPages } from '$lib/editions';", 'const equivalentPages = () => [];');
 const compiled = compile(source, { filename, generate: 'server' });
 const modulePath = join(temporary, 'PageSeo.mjs');
 await writeFile(modulePath, compiled.js.code);

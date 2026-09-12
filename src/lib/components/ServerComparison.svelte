@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import { hardwareText, hardwareServers, hardwareGpuProfiles, type HardwareLocale } from '$lib/i18n/gpu';
 
 
@@ -61,7 +62,8 @@
   let onlyValidated = false;
   let allowDownshift = false;
   let showCompatibility = true;
-  let showPlatform = true;
+  let showPlatform = false;
+  let preset = 'all';
   let hiddenColumns: ColumnKey[] = [];
   let sorts: SortRule[] = [{ key: 'gpuCount', direction: 'desc' }, { key: 'heightU', direction: 'asc' }];
   let compared: string[] = [];
@@ -98,6 +100,8 @@
     query = ''; selectedVendors = []; selectedStatuses = []; acceleratorForm = 'pcie-card'; selectedProfileId = '';
     requiredPcieGeneration = 0; requiredGpuCount = 0; cardWidth = 'any'; cardCooling = 'any'; requiredGpuPower = 0;
     maxHeightU = 0; maxDepthMm = 0; systemCooling = 'any'; topology = 'any'; onlyValidated = false; allowDownshift = false;
+    preset = 'all'; showCompatibility = true; showPlatform = false; hiddenColumns = [];
+    sorts = [{ key: 'gpuCount', direction: 'desc' }, { key: 'heightU', direction: 'asc' }]; compared = []; expanded = [];
   }
 
   function applyProfile(profileId: string) {
@@ -110,7 +114,7 @@
   }
 
   function usePreset(value: string) {
-    reset();
+    reset(); preset = value;
     if (value === 'pcie4-8') { requiredPcieGeneration = 4; requiredGpuCount = 8; cardWidth = 'double'; }
     if (value === 'pcie5-8') { requiredPcieGeneration = 5; requiredGpuCount = 8; cardWidth = 'double'; requiredGpuPower = 600; }
     if (value === 'compact') { maxHeightU = 2; requiredGpuCount = 1; }
@@ -293,17 +297,17 @@
   <div class="scope"><b>{t("مرز اطمینان")}</b><span>{t("«تأیید سازنده» فقط وقتی نمایش داده می‌شود که همان مدل GPU در صفحه، QuickSpecs یا QPL رسمی آن سرور آمده باشد. تطابق ابعاد و توان بدون نام‌بردن رسمی کارت، «نیازمند تأیید BOM» است.")}</span></div>
 
   <div class="presets" aria-label={t("سناریوهای سریع")}>
-    <button type="button" on:click={() => reset()}>{t("همهٔ PCIe")}</button>
-    <button type="button" on:click={() => usePreset('pcie4-8')}>{t("۸ کارت PCIe 4 دو اسلات")}</button>
-    <button type="button" on:click={() => usePreset('pcie5-8')}>{t("۸ کارت PCIe 5 تا ۶۰۰W")}</button>
-    <button type="button" on:click={() => usePreset('compact')}>{t("حداکثر ۲U")}</button>
-    <button type="button" on:click={() => usePreset('rtx5090')}>RTX 5090</button>
-    <button type="button" on:click={() => usePreset('rtx4090')}>RTX 4090</button>
-    <button type="button" on:click={() => usePreset('legacy')}>{t("سرور PCIe 4 نسل قبل")}</button>
-    <button type="button" on:click={() => usePreset('integrated')}>{t("HGX / SXM / OAM یکپارچه")}</button>
+    <button type="button" aria-pressed={preset === 'all'} class:active={preset === 'all'} on:click={() => reset()}>{t("همهٔ PCIe")}</button>
+    <button type="button" aria-pressed={preset === 'pcie4-8'} class:active={preset === 'pcie4-8'} on:click={() => usePreset('pcie4-8')}>{t("۸ کارت PCIe 4 دو اسلات")}</button>
+    <button type="button" aria-pressed={preset === 'pcie5-8'} class:active={preset === 'pcie5-8'} on:click={() => usePreset('pcie5-8')}>{t("۸ کارت PCIe 5 تا ۶۰۰W")}</button>
+    <button type="button" aria-pressed={preset === 'compact'} class:active={preset === 'compact'} on:click={() => usePreset('compact')}>{t("حداکثر ۲U")}</button>
+    <button type="button" aria-pressed={preset === 'rtx5090'} class:active={preset === 'rtx5090'} on:click={() => usePreset('rtx5090')}>RTX 5090</button>
+    <button type="button" aria-pressed={preset === 'rtx4090'} class:active={preset === 'rtx4090'} on:click={() => usePreset('rtx4090')}>RTX 4090</button>
+    <button type="button" aria-pressed={preset === 'legacy'} class:active={preset === 'legacy'} on:click={() => usePreset('legacy')}>{t("سرور PCIe 4 نسل قبل")}</button>
+    <button type="button" aria-pressed={preset === 'integrated'} class:active={preset === 'integrated'} on:click={() => usePreset('integrated')}>{t("HGX / SXM / OAM یکپارچه")}</button>
   </div>
 
-  <details class="filters" open>
+  <details class="filters">
     <summary>{t("فیلترهای انتخاب و سازگاری")} <span>{t(numbers.format(visible.length))} {t("نتیجه")}</span></summary>
     <div class="filter-grid">
       <label class="search"><span>{t("جست‌وجو")}</span><input type="search" bind:value={query} placeholder={t("سازنده، مدل، CPU یا GPU")} /></label>
@@ -322,7 +326,7 @@
       <fieldset><legend>{t("وضعیت محصول")}</legend><div class="checks">{#each Object.entries(statusLabel) as [status, label]}<label><input type="checkbox" checked={selectedStatuses.includes(status as ServerStatus)} on:change={() => selectedStatuses = toggle(selectedStatuses, status as ServerStatus)} /><span>{t(label)}</span></label>{/each}</div></fieldset>
     </div>
     <div class="filter-actions">
-      <button type="button" on:click={reset}>{t("پاک‌کردن فیلترها")}</button>
+      <button type="button" on:click={reset}>{locale === 'fa' ? 'بازنشانی کامل' : locale === 'en' ? 'Reset all' : 'Restablecer todo'}</button>
       <div>
         {#if selectedProfileId}<label><input type="checkbox" bind:checked={onlyValidated} /> {t("فقط تأیید صریح سازنده")}</label><label><input type="checkbox" bind:checked={allowDownshift} /> {t("نمایش شیار نسل پایین‌تر با هشدار افت سرعت")}</label>{/if}
         <label><input type="checkbox" bind:checked={showCompatibility} /> {t("ستون‌های سازگاری")}</label>
@@ -346,7 +350,7 @@
   {#if comparison.length}
     <section class="compare" aria-label={t("مقایسهٔ کامل سرورها")}>
       <header><div><small>{t("مقایسهٔ کامل")}</small><b>{t(numbers.format(comparison.length))} {t("سرور کنار هم")}</b></div><button type="button" on:click={() => compared = []}>{t("پاک‌کردن انتخاب‌ها")}</button></header>
-      <div class="compare-shell"><table class="compare-matrix"><thead><tr><th class="compare-label">{t("مشخصه")}</th>{#each comparison as record}<th><button class="remove" type="button" on:click={() => toggleCompare(record.id)}>×</button><span class="brand-mark"><img src={brandLogo(record.vendor)} alt="" /><small>{t(record.vendor)}</small></span><b>{t(record.model)}</b><a href={record.sourceUrl} target="_blank" rel="noreferrer">{t("منبع رسمی ↗")}</a></th>{/each}</tr></thead><tbody>{#each comparisonGroups as group}<tr class="compare-group"><th colspan={comparison.length + 1}>{t(group.group)}</th></tr>{#each group.rows as row}<tr><th class="compare-label">{t(row.label)}</th>{#each row.values as value}<td>{t(value)}</td>{/each}</tr>{/each}{/each}</tbody></table></div>
+      <div class="compare-shell"><table class="compare-matrix"><thead><tr><th class="compare-label">{t("مشخصه")}</th>{#each comparison as record}<th><button class="remove" type="button" on:click={() => toggleCompare(record.id)}>×</button><span class="brand-mark"><img {...imageAttributes(brandLogo(record.vendor), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><small>{t(record.vendor)}</small></span><b>{t(record.model)}</b><a href={record.sourceUrl} target="_blank" rel="noreferrer">{t("منبع رسمی ↗")}</a></th>{/each}</tr></thead><tbody>{#each comparisonGroups as group}<tr class="compare-group"><th colspan={comparison.length + 1}>{t(group.group)}</th></tr>{#each group.rows as row}<tr><th class="compare-label">{t(row.label)}</th>{#each row.values as value}<td>{t(value)}</td>{/each}</tr>{/each}{/each}</tbody></table></div>
     </section>
   {/if}
 
@@ -355,7 +359,8 @@
     <div><button class="export" type="button" on:click={exportCsv}>{t("خروجی CSV")}</button></div>
   </div>
 
-  <div class="table-shell" role="region" aria-label={t("جدول سرورهای GPU")}>
+  <!-- svelte-ignore a11y_no_noninteractive_tabindex (Scrollable data region needs keyboard focus for horizontal navigation.) -->
+  <div class="table-shell" role="region" tabindex="0" aria-label={t("جدول سرورهای GPU")}>
     <table><thead><tr>
       <th class="pick">{t("مقایسه")}</th><th class="detail-head">{t("جزئیات")}</th><th class="model"><button class="sort-button" class:active={sortMarks.has('model')} type="button" on:click={() => toggleSort('model')}>{t("مدل")} <i>{t(sortMark('model', sorts))}</i></button></th>
       {#each activeColumns as column}<th class:wide={['cpu','memory','storage','expansion','power','validated'].includes(column)}><div class="th-inner"><button class="sort-button" class:active={sortableColumn[column] && sortMarks.has(sortableColumn[column]!)} type="button" on:click={() => sortableColumn[column] && toggleSort(sortableColumn[column]!)}>{t(columnLabel[column])} <i>{t(sortableColumn[column] ? sortMark(sortableColumn[column]!, sorts) : '—')}</i></button><button class="hide-column" type="button" aria-label={`${t("پنهان‌کردن ستون")} ${t(columnLabel[column])}`} on:click={() => hideColumn(column)}>×</button></div></th>{/each}
@@ -363,7 +368,7 @@
       {#each visible as record}<tr class:selected={compared.includes(record.id)}>
         <td class="pick"><input type="checkbox" checked={compared.includes(record.id)} disabled={!compared.includes(record.id) && compared.length >= 4} aria-label={`افزودن ${record.model} به مقایسه`} on:change={() => toggleCompare(record.id)} /></td>
         <td class="detail-cell"><button class:open={expanded.includes(record.id)} type="button" aria-label={`${t("جزئیات")} ${record.model}`} aria-expanded={expanded.includes(record.id)} on:click={() => expanded = toggle(expanded, record.id)}>⌄</button></td>
-        <td class="model"><div class="model-cell"><span class="brand-mark"><img src={brandLogo(record.vendor)} alt="" /><small>{t(record.vendor)}</small></span><b>{t(record.model)}</b><small class:preliminary={record.status === 'announced'}>{t(statusLabel[record.status])}</small>{#if selectedProfileId && compatibility(record)}<span class:validated={compatibility(record) === 'validated'} class:review={compatibility(record) === 'review'} class:bad={compatibility(record) === 'incompatible'}>{t(compatibilityLabel[compatibility(record)!])}</span>{/if}</div></td>
+        <td class="model"><div class="model-cell"><span class="brand-mark"><img {...imageAttributes(brandLogo(record.vendor), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><small>{t(record.vendor)}</small></span><b>{t(record.model)}</b><small class:preliminary={record.status === 'announced'}>{t(statusLabel[record.status])}</small>{#if selectedProfileId && compatibility(record)}<span class:validated={compatibility(record) === 'validated'} class:review={compatibility(record) === 'review'} class:bad={compatibility(record) === 'incompatible'}>{t(compatibilityLabel[compatibility(record)!])}</span>{/if}</div></td>
         {#each activeColumns as column}<td class:num={['interface','capacity','gpuPower','dimensions'].includes(column)} class:text={!['interface','capacity','gpuPower','dimensions'].includes(column)}>{#if column === 'source'}<a href={record.sourceUrl} target="_blank" rel="noreferrer">{t(record.sourceLabel)} ↗</a>{:else}{t(cellText(record, column))}{/if}</td>{/each}
       </tr>
       {#if expanded.includes(record.id)}<tr class="detail-row"><td colspan={totalColumns}><div class="detail-wrap"><div class="detail-summary"><article><small>{t("مناسب برای")}</small><p>{t(record.bestFor)}</p></article><article class="caution"><small>{t("هشدار خرید")}</small><p>{t(record.caution)}</p></article><article><small>{t("ظرفیت شتاب‌دهنده")}</small><p>{t(record.acceleratorSummary)}</p></article><article><small>{t("قاعدهٔ نهایی")}</small><p>{t("خرید باید با model/SKU دقیق، riser، کابل برق، PSU، firmware و فهرست قطعات تأییدشده بسته شود.")}</p></article></div><div class="spec-groups">{#each specGroups as group}<section><h4>{t(group)}</h4><dl>{#each specs(record).filter((item) => item.group === group) as spec}<div><dt>{t(spec.label)}</dt><dd>{t(spec.value)}</dd></div>{/each}</dl></section>{/each}</div><a class="detail-source" href={record.sourceUrl} target="_blank" rel="noreferrer">{t(record.sourceLabel)} {t("— منبع رسمی ↗")}</a></div></td></tr>{/if}
@@ -380,7 +385,7 @@
 
 <style>
   .explorer{min-width:0;margin-top:0;border-top:1px solid var(--line);padding-top:34px;color:var(--ink)}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px}.heading>div>small{color:var(--teal);font-size:12px;font-weight:800}.heading h2{margin:7px 0 10px;font-size:clamp(28px,3vw,38px);line-height:1.45;letter-spacing:-1px}.heading p{max-width:1050px;margin:0;color:var(--muted);font-size:14px;line-height:2}.heading strong{color:var(--ink)}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:11px}.stamp b{font-size:16px}.rules{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}
-  .presets{display:flex;gap:7px;overflow-x:auto;padding:17px 0 9px}.presets button,.filter-actions button,.toolbar button,.compare button{border:1px solid var(--line);background:var(--paper);color:var(--muted);font:inherit;cursor:pointer}.presets button{flex:0 0 auto;border-radius:99px;padding:7px 13px;font-size:12px}.presets button:hover{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--paper))}
+  .presets{display:flex;gap:7px;overflow-x:auto;padding:17px 0 9px}.presets button,.filter-actions button,.toolbar button,.compare button{border:1px solid var(--line);background:var(--paper);color:var(--muted);font:inherit;cursor:pointer}.presets button{flex:0 0 auto;border-radius:99px;padding:7px 13px;font-size:12px}.presets button:hover,.presets button.active{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--paper))}
   .filters{border:1px solid var(--line);background:color-mix(in srgb,var(--paper) 94%,var(--soft))}.filters summary{display:flex;justify-content:space-between;padding:12px 15px;font-size:14px;font-weight:800;cursor:pointer}.filters summary span{color:var(--teal);font-weight:600}.filter-grid{padding:14px 15px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;border-top:1px solid var(--line)}.filter-grid label,.filter-grid fieldset{min-width:0;margin:0;padding:0;border:0}.filter-grid label>span,.filter-grid legend{display:block;margin-bottom:5px;color:var(--muted);font-size:12px}.filter-grid input[type=search],.filter-grid select{box-sizing:border-box;width:100%;height:38px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:0 10px;font:inherit;font-size:13px}.checks{display:flex;flex-wrap:wrap;gap:5px}.checks label{position:relative}.checks input{position:absolute;opacity:0}.checks label span{display:block;margin:0;border:1px solid var(--line);border-radius:5px;padding:6px 9px;color:var(--muted);font-size:11px;cursor:pointer}.checks input:checked+span{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,var(--paper))}.filter-actions{display:flex;justify-content:space-between;align-items:center;padding:10px 15px;border-top:1px solid var(--line)}.filter-actions>button{border:0;color:var(--teal);font-size:12px}.filter-actions>div{display:flex;align-items:center;flex-wrap:wrap;gap:14px}.filter-actions label{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}.filter-actions .show-all{border:1px solid var(--teal);border-radius:99px;padding:4px 9px;color:var(--teal);font-size:11px}.profile-note{margin-top:10px;padding:12px 15px;display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;gap:18px;border:1px solid color-mix(in srgb,#b77718 45%,var(--line));background:color-mix(in srgb,#b77718 5%,var(--paper))}.profile-note div{display:grid;gap:3px}.profile-note b{font-size:13px}.profile-note span,.profile-note p{margin:0;color:var(--muted);font-size:11px;line-height:1.8}
   .summary{margin:16px 0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.summary>div{padding:11px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 9px;align-items:baseline}.summary>div+div{border-inline-start:1px solid var(--line)}.summary small{color:var(--muted);font-size:12px}.summary b{justify-self:end;color:var(--teal);font-size:21px}.summary span{grid-column:1/-1;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .compare{margin:16px 0;border:1px solid color-mix(in srgb,var(--teal) 45%,var(--line));background:color-mix(in srgb,var(--teal) 4%,var(--paper))}.compare>header{padding:10px 14px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}.compare header div{display:flex;gap:8px}.compare header small{color:var(--teal);font-size:11px}.compare header b{font-size:13px}.compare header button{border:0;font-size:11px}.compare-shell{display:block;max-height:72vh;overflow:auto}.compare-matrix{width:100%;min-width:max-content;border-collapse:separate;border-spacing:0}.compare-matrix th,.compare-matrix td{box-sizing:border-box;min-width:240px;max-width:360px;padding:10px 12px;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper);text-align:start;vertical-align:top;white-space:normal}.compare-matrix thead th{position:sticky;top:0;z-index:3;height:112px;background:var(--navy);color:#d7e7e5}.compare-matrix thead th>b{display:block;margin-top:8px;font-size:13px;text-align:left}.compare-matrix thead th>a{display:block;margin-top:5px;color:#78d6cd;font-size:9px}.compare-matrix .compare-label{position:sticky;inset-inline-start:0;z-index:2;min-width:180px;width:180px;max-width:180px;color:var(--muted);font-size:11px}.compare-matrix thead .compare-label{z-index:5;color:#d7e7e5}.compare-matrix tbody td{font-size:11px;line-height:1.75}.compare-matrix .compare-group th{position:relative;right:auto;z-index:1;min-width:0;width:auto;max-width:none;padding:7px 12px;background:color-mix(in srgb,var(--teal) 12%,var(--paper));color:var(--teal);font-size:11px}.remove{position:absolute;inset-inline-end:8px;top:8px;width:24px;height:24px;border-radius:50%}

@@ -1,0 +1,102 @@
+<html lang="en" dir="ltr" data-theme="light"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:4185/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:4185/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://127.0.0.1:4185/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/fonts/fontawesome/v6.2.0/all.min.css">
+  <link rel="stylesheet" href="/fonts/IranSansX/fontiran.css">
+  <link href="../../../_app/immutable/entry/start.dHg2i_qi.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/B1RXh9i_.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/m7xve2R7.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DkrwcU2O.js" rel="modulepreload">
+		<link href="../../../_app/immutable/entry/app.DLNgS91j.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DruLvp79.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/1GlRvXkZ.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/Df4tzn9h.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/MgnNHOO_.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DX53GisO.js" rel="modulepreload">
+		<link href="../../../_app/immutable/nodes/0.Ddg4QVbf.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DIhns57N.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DBeB0fQh.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/CrQ1heKH.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/Ck9aPgfX.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DRmWV1eU.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/x_4_cKm2.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DN9c1s-H.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/CpmQGL8N.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/pckfvWRH.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DLIvr8pO.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/B-xMXJsV.js" rel="modulepreload">
+		<link href="../../../_app/immutable/nodes/8.C3O5opoC.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/GzlLhF5P.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/Dyv8RKZH.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DrohOCyb.js" rel="modulepreload">
+		<!--[-1--><!--]--><!----><meta property="article:published_time" content="2013-01-04T00:00:00.000Z"> <!--[-1--><!--]--> <meta property="article:section" content="Linux &amp; Servers"><!----><meta name="description" content="A troubleshooting record in which Apache reported a full device despite ample disk space; the actual limit was an accumulation of System V semaphore locks left behind by failed restarts."> <link rel="canonical" href="https://ziabary.ir/en/articles/apache-mod-jk-log-lock/"> <meta property="og:type" content="article"> <meta property="og:locale" content="en_US"> <meta property="og:title" content="Apache “No space left on device” and mod_jk_log_lock"> <meta property="og:description" content="A troubleshooting record in which Apache reported a full device despite ample disk space; the actual limit was an accumulation of System V semaphore locks left behind by failed restarts."> <meta property="og:url" content="https://ziabary.ir/en/articles/apache-mod-jk-log-lock/"> <meta property="og:image" content="https://ziabary.ir/images/profile/mehran-ziabary-formal.png"> <meta property="og:image:secure_url" content="https://ziabary.ir/images/profile/mehran-ziabary-formal.png"> <meta property="og:image:type" content="image/png"> <meta property="og:image:alt" content="Apache “No space left on device” and mod_jk_log_lock"> <!--[-1--><!--]--> <!--[-1--><!--]--> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Apache “No space left on device” and mod_jk_log_lock"> <meta name="twitter:description" content="A troubleshooting record in which Apache reported a full device despite ample disk space; the actual limit was an accumulation of System V semaphore locks left behind by failed restarts."> <meta name="twitter:image" content="https://ziabary.ir/images/profile/mehran-ziabary-formal.png"> <meta name="twitter:image:alt" content="Apache “No space left on device” and mod_jk_log_lock"> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apache “No space left on device” and mod_jk_log_lock | Mehran Ziabary","description":"A troubleshooting record in which Apache reported a full device despite ample disk space; the actual limit was an accumulation of System V semaphore locks left behind by failed restarts.","url":"https://ziabary.ir/en/articles/apache-mod-jk-log-lock/","mainEntityOfPage":{"@type":"WebPage","@id":"https://ziabary.ir/en/articles/apache-mod-jk-log-lock/"},"image":["https://ziabary.ir/images/profile/mehran-ziabary-formal.png"],"author":{"@type":"Person","name":"Mehran Ziabary","url":"https://ziabary.ir"},"publisher":{"@type":"Person","name":"Mehran Ziabary","url":"https://ziabary.ir"},"datePublished":"2013-01-04T00:00:00.000Z","articleSection":"Linux & Servers"}</script><!----><!----><title>Apache “No space left on device” and mod_jk_log_lock | Mehran Ziabary</title>
+		<link href="../../../_app/immutable/assets/0.ARrjxVM7.css" rel="stylesheet">
+<link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:4185/_app/immutable/nodes/1.CSOseQVp.js"><script async="" data-google-analytics="true" src="https://www.googletagmanager.com/gtag/js?id=G-67799BZ3DC"></script></head>
+
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents"><!--[--><!--[0--><!--[--><!--[-1--><!--]--> <header class="site-header"><div class="wrap nav-wrap"><!--[-1--><a href="/en/" class="brand" aria-label="Home"><b>Mehran Ziabary</b> <!--[0--><span>MEHRAN ZIABARY</span><!--]--></a><!--]--> <button class="menu-button" aria-label="Menu">☰</button> <nav><!--[--><a href="/en/thought/">Thought</a><a href="/en/articles/">Articles</a><a href="/en/guides/">Technical notes</a><a href="/en/slides/">Slides</a><a href="/en/media/">Media</a><a href="/en/resume/">Résumé</a><!--]--></nav> <div class="nav-tools"><button aria-label="Search">⌕ <kbd>⌘K</kbd></button> <button aria-label="Theme">◐</button> <div class="lang"><span>EN⌄</span><div><a href="/">فارسی</a><a href="/en/">English</a><a href="/es/">Español</a></div></div></div></div></header> <!--[--><!--[--><!--[--><!----> <main class="article-page intl-article" dir="ltr"><article><header class="article-header wrap"><!--[-1--><!--]--> <!--[-1--><!--]--> <div class="article-meta"><span>Linux &amp; Servers</span><span>January 4, 2013</span><span>5 min read</span></div> <h1>Apache “No space left on device” and mod_jk_log_lock</h1> <p>A troubleshooting record in which Apache reported a full device despite ample disk space; the actual limit was an accumulation of System V semaphore locks left behind by failed restarts.</p> <div class="article-actions" aria-label="Article sharing"><button type="button"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>Share</span></button> <button type="button"><i class="fa-solid fa-link" aria-hidden="true"></i><span>Copy link</span></button></div><!----></header> <!--[-1--><div class="article-cover"><div><span>SOFT'N HARD WARE · RESTORED</span><b>LINUX &amp; SERVERS</b></div></div><!--]--> <div class="prose"><!--[0--><!----><!--[--><div class="archive-note"><strong>Archive note.</strong> This incident involved an older Apache/mod_jk installation and a SysV init script. Do not automate semaphore deletion on a modern or shared host without identifying ownership and understanding the effect on running processes.</div> <p>Google Webmaster Tools warned me that the blog was unreachable. Apache had stopped; restarting it restored the site, but only for a few hours. A minute-by-minute monitoring script could detect the outage, yet eventually even the script could not bring the service back.</p> <p>The Apache log contained the useful clue:</p> <pre class="language-text"><!----><code class="language-text">[crit] (28)No space left on device: mod_jk: could not create jk_log_lock
+Configuration Failed</code><!----></pre> <p>The phrase “No space left on device” suggested a filesystem problem, but <code>df</code> showed only 27 percent of the main filesystem in use. The error was about a finite kernel resource, not disk blocks.</p> <h2>Check semaphore usage</h2> <p>System V semaphores can be inspected with:</p> <pre class="language-bash"><!----><code class="language-bash">ipcs <span class="token parameter variable">-s</span></code><!----></pre> <p>The server had accumulated more than 250 semaphore sets owned by the Apache user. Failed or incomplete restarts were not releasing them, and mod_jk could no longer create its lock. Removing a confirmed orphaned semaphore with <code>ipcrm -s &lt;SEMAPHORE_ID&gt;</code> allowed Apache to start.</p> <p>The monitoring script was then changed to stop Apache, identify its stale semaphore IDs, remove them and start the service again:</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token shebang important">#!/bin/sh</span>
+
+<span class="token keyword">if</span> <span class="token operator">!</span> /etc/init.d/httpd status <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> running<span class="token punctuation">;</span> <span class="token keyword">then</span>
+  /etc/init.d/httpd stop
+  <span class="token assign-left variable">SemIDs</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>ipcs <span class="token parameter variable">-s</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'$3 == "apache" { print $2 }'</span><span class="token variable">)</span></span>
+  <span class="token keyword">for</span> <span class="token for-or-select variable">ID</span> <span class="token keyword">in</span> <span class="token variable">$SemIDs</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+    ipcrm <span class="token parameter variable">-s</span> <span class="token string">"<span class="token variable">$ID</span>"</span>
+  <span class="token keyword">done</span>
+  /etc/init.d/httpd start
+<span class="token keyword">fi</span></code><!----></pre> <p>That restored service on this particular host, but it treated the symptom. The next questions should be why clean shutdown was failing, whether mod_jk and Apache were current, and whether the host’s semaphore limits and process lifecycle were configured correctly.</p> <p>The incident is a useful reminder that Unix error text often describes the exhausted interface, not the physical resource we first associate with the words. Before deleting files in response to <code>ENOSPC</code>, inspect inodes, shared memory and IPC limits as well as filesystem capacity.</p> <p>A separate storage example, <a href="/en/articles/software-raid-opensuse/">making a software RAID array persistent on openSUSE</a>, follows the disk, array and mount path. The failure here required checking IPC resources instead.</p><!--]--><!----><!--]--> <!--[0--><a class="original-link" href="https://web.archive.org/web/20130127092329id_/http://blog.mohammadzadeh.info/index.php/apache-no-space-left-on" target="_blank" rel="noreferrer">View the original at Internet Archive ↗</a><!--]--> <div class="article-actions" aria-label="Article sharing"><button type="button"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>Share</span></button> <button type="button"><i class="fa-solid fa-link" aria-hidden="true"></i><span>Copy link</span></button></div><!----></div></article></main><!--]--><!--]--><!--]--> <footer class="site-footer"><div class="wrap footer-main"><div class="footer-identity"><b>Mehran Ziabary</b> <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a></div> <nav class="footer-nav" aria-label="Footer navigation"><!--[--><a href="/en/thought/">Thought</a><a href="/en/articles/">Articles</a><a href="/en/guides/">Technical notes</a><a href="/en/slides/">Slides</a><a href="/en/media/">Media</a><a href="/en/resume/">Résumé</a><!--]--></nav> <div class="footer-socials"><!--[--><a href="https://x.com/ziabary" target="_blank" rel="noreferrer" aria-label="X / Twitter" title="X / Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a><a href="https://ir.linkedin.com/in/mehranziabary" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://github.com/ziabary" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a><!--]--></div></div> <div class="wrap footer-meta"><span>© 2026 Mehran Ziabary</span><span><a href="/">FA</a> · <a href="/en/">EN</a> · <a href="/es/">ES</a></span></div></footer> <!--[-1--><!--]--><!----> <!--[-1--><!--]--><!----><!--]--><!--]--> <!--[-1--><div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0; top: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px"><!----></div><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1vzi1g = {
+						base: new URL("../../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../../_app/immutable/entry/start.dHg2i_qi.js"),
+						import("../../../_app/immutable/entry/app.DLNgS91j.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-67799BZ3DC');
+
+    function loadGoogleAnalytics() {
+      if (document.querySelector('script[data-google-analytics]')) return;
+      const script = document.createElement('script');
+      script.async = true;
+      script.dataset.googleAnalytics = 'true';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-67799BZ3DC';
+      document.head.appendChild(script);
+    }
+
+    window.addEventListener('load', () => {
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadGoogleAnalytics, { timeout: 3000 });
+      } else {
+        window.setTimeout(loadGoogleAnalytics, 0);
+      }
+    }, { once: true });
+  </script>
+
+
+</body></html>

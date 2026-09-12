@@ -3,10 +3,9 @@ export const trailingSlash = 'always';
 
 export function load({ url }) {
   const pathname = url.pathname;
-  const hostname = url.hostname.toLowerCase();
-  const locale = pathname.startsWith('/es')
+  const locale = /^\/es(?:\/|$)/.test(pathname)
     ? 'es'
-    : pathname.startsWith('/en') || hostname === 'ziabary.info' || hostname === 'www.ziabary.info'
+    : /^\/en(?:\/|$)/.test(pathname)
       ? 'en'
       : 'fa';
 

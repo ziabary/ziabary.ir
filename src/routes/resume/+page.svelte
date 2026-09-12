@@ -1,68 +1,16 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
+  import resume from '$lib/resumes/fa.json';
+  const { currentRoles, experience, publications, awards } = resume;
   import PageHero from '$lib/components/PageHero.svelte';
 
-  const currentRoles = [
-    {
-      organization: 'هومص',
-      role: 'معاون فنی',
-      period: '۱۴۰۴ تاکنون',
-      detail: 'شرکت تسهیلگران صادرات هوش مصنوعی صنعتی؛ سرمایه‌گذاری بر استارتاپ‌های هوش مصنوعی در صنعت و معدن'
-    },
-    {
-      organization: 'پردازش هوشمند ترگمان',
-      role: 'هم‌بنیان‌گذار و مدیرعامل',
-      period: 'هم‌بنیان‌گذار از ۱۳۹۴؛ مدیرعامل از ۱۳۹۶ تاکنون',
-      detail: 'سامانه‌های پردازش زبان طبیعی و زیرساخت‌های پردازش سریع هوش مصنوعی'
-    },
-    {
-      organization: 'سازمان نظام صنفی استان تهران',
-      role: 'رئیس کمیسیون هوش مصنوعی و علم‌داده',
-      period: '۱۴۰۴ تاکنون',
-      detail: 'رئیس کارگروه حکمرانی داده و زیرساخت‌های هوش مصنوعی از ۱۳۹۹ تاکنون'
-    }
-  ];
 
-  const experience = [
-    {
-      organization: 'سازمان نظام صنفی استان تهران',
-      role: 'نایب‌رئیس و دبیر کمیسیون هوش مصنوعی و علم‌داده',
-      period: 'نایب‌رئیس ۱۴۰۳ تا ۱۴۰۴؛ دبیر ۱۳۹۷ تا ۱۴۰۳'
-    },
-    {
-      organization: 'وزارت ارتباطات و فناوری اطلاعات',
-      role: 'مشاور معاون وزیر',
-      period: 'رصد و پایش شبکه ملی اطلاعات، ۱۴۰۰ تا ۱۴۰۲'
-    },
-    {
-      organization: 'وزارت ارتباطات و فناوری اطلاعات',
-      role: 'مشاور و مجری طرح آزادرسانی جویشگر',
-      period: '۱۳۹۶ تا ۱۳۹۸'
-    },
-    {
-      organization: 'دلتاگلوبال',
-      role: 'مهندس ارشد، معاون فنی و مدیر فنی',
-      period: 'مدیر فنی ۱۳۸۵ تا ۱۳۸۸؛ معاون فنی ۱۳۸۸ تا ۱۳۹۳؛ مهندس ارشد ۱۳۹۳ تا ۱۳۹۵'
-    }
-  ];
 
-  const publications = [
-    'Introducing E4MT and LMBNC: Persian pre-processing utilities, 2023',
-    "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior, 2015",
-    'AUT Document Alignment Framework for BUCC Workshop Shared Task — 2015',
-    'Developing an open-domain English-Farsi translation system using AFEC — 2012',
-    'Semi-human instinctive artificial intelligence (SHI-AI) — 2006',
-    'A Novel Approach to Semi-Human Instinctive Artificial Intelligence — 2005',
-    "VBScript programmer's guide — 2002",
-    'Inter-Function Communication (IFC) — 2001',
-    'Design of a Cost Effective Supercomputer — 2001'
-  ];
 
-  const awards = [
-    ['مقام چهارم مسابقات بین‌المللی روبوکاپ', 'IranOpen 2008 · قزوین · ۱۳۸۷'],
-    ['مقام دوم مسابقات بین‌المللی روبوکاپ', 'RoboCup 2006 · برمن، آلمان · ۱۳۸۵'],
-    ['مقام هشتم مسابقات بین‌المللی روبوکاپ', 'RoboCup 2005 · اوزاکا، ژاپن · ۱۳۸۴'],
-    ['مقام اول مسابقات ربات‌های جنگجو', 'دانشگاه آزاد تهران مرکزی · ۱۳۸۳']
-  ];
+
+
+
+
 </script>
 
 <svelte:head>
@@ -79,12 +27,12 @@
 
   <section class="wrap resume-intro">
     <div class="resume-photo">
-      <img src="/images/profile/mehran-ziabary.jpg" alt="مهران ضیابری" />
+      <img {...imageAttributes('/images/profile/mehran-ziabary.jpg', '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="مهران ضیابری" />
     </div>
     <div>
       <p class="eyebrow">خلاصه حرفه‌ای</p>
       <h2>سید محمد محمدزاده ضیابری <span>«مهران ضیابری»</span></h2>
-      <p>مدیر فناوری، کارآفرین و پژوهشگر هوش مصنوعی با بیش از ۲۰ سال تجربه؛ از الکترونیک دیجیتال، رباتیک و امنیت شبکه تا پردازش زبان طبیعی، ساخت محصول و حکمرانی هوش مصنوعی.</p>
+      <p>مدیر فناوری، کارآفرین و پژوهشگر هوش مصنوعی با تجربه در توسعهٔ فناوری و ساخت محصول؛ از الکترونیک دیجیتال، رباتیک و امنیت شبکه تا پردازش زبان طبیعی، ساخت محصول و حکمرانی هوش مصنوعی.</p>
       <div class="resume-contact">
         <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a>
         <a href="https://www.linkedin.com/in/mehranziabary" target="_blank" rel="noreferrer">LinkedIn ↗</a>

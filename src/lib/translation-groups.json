@@ -1,0 +1,72 @@
+{
+  "targoman-without-patronage": {
+    "fa": "targoman-without-rent",
+    "en": "building-targoman-without-patronage",
+    "es": "construir-targoman-sin-padrinos"
+  },
+  "gpu-types": {
+    "fa": "gpu-types-for-ai",
+    "en": "gpu-types-for-ai-en",
+    "es": "gpu-types-for-ai-es"
+  },
+  "gpu-interconnect": {
+    "fa": "pcie-vs-sxm-for-ai",
+    "en": "pcie-vs-sxm-for-ai-en",
+    "es": "pcie-vs-sxm-for-ai-es"
+  },
+  "gpu-selection": {
+    "fa": "choosing-gpu-for-ai",
+    "en": "choosing-gpu-for-ai-en",
+    "es": "choosing-gpu-for-ai-es"
+  },
+  "gpu-precision": {
+    "fa": "int8-or-fp8-real-gpu-support",
+    "en": "int8-or-fp8-real-gpu-support-en",
+    "es": "int8-or-fp8-real-gpu-support-es"
+  },
+  "gpu-platform": {
+    "fa": "gpu-server-platform-components",
+    "en": "gpu-server-platform-components-en",
+    "es": "gpu-server-platform-components-es"
+  },
+  "gpu-servers": {
+    "fa": "dgx-and-standard-gpu-servers",
+    "en": "dgx-and-standard-gpu-servers-en",
+    "es": "dgx-and-standard-gpu-servers-es"
+  },
+  "pcie-server-selection": {
+    "fa": "pcie-gpu-server-selection",
+    "en": "pcie-gpu-server-selection-en",
+    "es": "pcie-gpu-server-selection-es"
+  },
+  "zero-trust-ai": {
+    "fa": "from-zero-trust-to-zero-trust-ai",
+    "en": "from-zero-trust-to-zero-trust-ai-en",
+    "es": "from-zero-trust-to-zero-trust-ai-es"
+  },
+  "ztai-mlops": {
+    "fa": "mlops-foundation-of-zero-trust-ai",
+    "en": "mlops-foundation-of-zero-trust-ai-en",
+    "es": "mlops-foundation-of-zero-trust-ai-es"
+  },
+  "ztai-maturity": {
+    "fa": "zero-trust-ai-maturity-model",
+    "en": "zero-trust-ai-maturity-model-en",
+    "es": "zero-trust-ai-maturity-model-es"
+  },
+  "ztai-controls": {
+    "fa": "zero-trust-ai-principles-and-controls",
+    "en": "zero-trust-ai-principles-and-controls-en",
+    "es": "zero-trust-ai-principles-and-controls-es"
+  },
+  "ztai-indirect-access": {
+    "fa": "ztai-indirect-data-access",
+    "en": "ztai-indirect-data-access-en",
+    "es": "ztai-indirect-data-access-es"
+  },
+  "sms-otp-security": {
+    "fa": "dynamic-password-fraud",
+    "en": "sms-otp-security-design",
+    "es": "cuando-un-otp-por-sms-reduce-la-seguridad"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "viewport": 1425,
+      "overflow": false,
+      "hero": {
+        "x": 188,
+        "y": 78,
+        "width": 1013,
+        "right": 1201
+      },
+      "overview": {
+        "x": 188,
+        "y": 414.796875,
+        "width": 1013,
+        "right": 1201
+      },
+      "cover": {
+        "x": 610,
+        "y": 444.796875,
+        "width": 591,
+        "right": 1201
+      },
+      "start": {
+        "x": 188,
+        "y": 444.796875,
+        "width": 394,
+        "right": 582
+      },
+      "navigation": {
+        "x": 1225,
+        "y": 414.796875,
+        "width": 188,
+        "right": 1413
+      },
+      "main": {
+        "x": 188,
+        "y": 414.796875,
+        "width": 1013,
+        "right": 1201
+      },
+      "gpu": {
+        "x": 188,
+        "y": 2033.234375,
+        "width": 1013,
+        "right": 1201
+      },
+      "server": {
+        "x": 188,
+        "y": 4515.796875,
+        "width": 1013,
+        "right": 1201
+      },
+      "closedChapters": 7,
+      "closedMobileMenu": true
+    },
+    {
+      "width": 1920,
+      "viewport": 1905,
+      "overflow": false,
+      "hero": {
+        "x": 188,
+        "y": 78,
+        "width": 1493,
+        "right": 1681
+      },
+      "overview": {
+        "x": 188,
+        "y": 414.796875,
+        "width": 1493,
+        "right": 1681
+      },
+      "cover": {
+        "x": 802,
+        "y": 444.796875,
+        "width": 879,
+        "right": 1681
+      },
+      "start": {
+        "x": 188,
+        "y": 444.796875,
+        "width": 586,
+        "right": 774
+      },
+      "navigation": {
+        "x": 1705,
+        "y": 414.796875,
+        "width": 188,
+        "right": 1893
+      },
+      "main": {
+        "x": 188,
+        "y": 414.796875,
+        "width": 1493,
+        "right": 1681
+      },
+      "gpu": {
+        "x": 188,
+        "y": 1926.5625,
+        "width": 1493,
+        "right": 1681
+      },
+      "server": {
+        "x": 188,
+        "y": 4382.75,
+        "width": 1493,
+        "right": 1681
+      },
+      "closedChapters": 7,
+      "closedMobileMenu": true
+    },
+    {
+      "width": 1280,
+      "viewport": 1265,
+      "overflow": false,
+      "hero": {
+        "x": 188,
+        "y": 78,
+        "width": 853,
+        "right": 1041
+      },
+      "overview": {
+        "x": 188,
+        "y": 404.203125,
+        "width": 853,
+        "right": 1041
+      },
+      "cover": {
+        "x": 546,
+        "y": 434.203125,
+        "width": 495,
+        "right": 1041
+      },
+      "start": {
+        "x": 188,
+        "y": 434.203125,
+        "width": 330,
+        "right": 518
+      },
+      "navigation": {
+        "x": 1065,
+        "y": 404.203125,
+        "width": 188,
+        "right": 1253
+      },
+      "main": {
+        "x": 188,
+        "y": 404.203125,
+        "width": 853,
+        "right": 1041
+      },
+      "gpu": {
+        "x": 188,
+        "y": 2125.515625,
+        "width": 853,
+        "right": 1041
+      },
+      "server": {
+        "x": 188,
+        "y": 4713.5625,
+        "width": 853,
+        "right": 1041
+      },
+      "closedChapters": 7,
+      "closedMobileMenu": true
+    },
+    {
+      "width": 768,
+      "viewport": 753,
+      "overflow": false,
+      "hero": {
+        "x": 24,
+        "y": 78,
+        "width": 705,
+        "right": 729
+      },
+      "overview": {
+        "x": 16,
+        "y": 442.578125,
+        "width": 721,
+        "right": 737
+      },
+      "cover": {
+        "x": 16,
+        "y": 442.578125,
+        "width": 721,
+        "right": 737
+      },
+      "start": {
+        "x": 16,
+        "y": 872.140625,
+        "width": 721,
+        "right": 737
+      },
+      "navigation": {
+        "x": 16,
+        "y": 324.984375,
+        "width": 721,
+        "right": 737
+      },
+      "main": {
+        "x": 16,
+        "y": 442.578125,
+        "width": 721,
+        "right": 737
+      },
+      "gpu": {
+        "x": 16,
+        "y": 2440.75,
+        "width": 721,
+        "right": 737
+      },
+      "server": {
+        "x": 16,
+        "y": 4999.796875,
+        "width": 721,
+        "right": 737
+      },
+      "closedChapters": 7,
+      "closedMobileMenu": true
+    },
+    {
+      "width": 390,
+      "viewport": 375,
+      "overflow": false,
+      "hero": {
+        "x": 14,
+        "y": 66,
+        "width": 347,
+        "right": 361
+      },
+      "overview": {
+        "x": 16,
+        "y": 506.171875,
+        "width": 343,
+        "right": 359
+      },
+      "cover": {
+        "x": 16,
+        "y": 506.171875,
+        "width": 343,
+        "right": 359
+      },
+      "start": {
+        "x": 16,
+        "y": 723.109375,
+        "width": 343,
+        "right": 359
+      },
+      "navigation": {
+        "x": 16,
+        "y": 388.578125,
+        "width": 343,
+        "right": 359
+      },
+      "main": {
+        "x": 16,
+        "y": 506.171875,
+        "width": 343,
+        "right": 359
+      },
+      "gpu": {
+        "x": 16,
+        "y": 2433.5625,
+        "width": 343,
+        "right": 359
+      },
+      "server": {
+        "x": 16,
+        "y": 5850.6875,
+        "width": 343,
+        "right": 359
+      },
+      "closedChapters": 7,
+      "closedMobileMenu": true
+    }
+  ],
+  "errors": [],
+  "interactions": "chapter toggle, continuous reading, active subsections, direct heading URL and mobile navigation passed"
+}

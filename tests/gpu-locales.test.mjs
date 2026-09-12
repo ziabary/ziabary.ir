@@ -68,9 +68,9 @@ test(`${locale} rejects missing translations instead of leaking Persian text`, (
   assert.equal(hardwareText('شرح فارسی', 'fa'), 'شرح فارسی');
 });
 
-test(`the ${locale} collection remains a preview while its seven articles are publishable`, async () => {
+test(`the ${locale} collection and its seven articles are published`, async () => {
   const collection = JSON.parse(await read(`docs/drafts/gpu-selection-${locale}/collection.json`));
-  assert.equal(collection.draft, true);
+  assert.equal(collection.draft, false);
   const articleItems = collection.items.filter((item) => item.kind === 'article');
   assert.equal(articleItems.length, 7);
   assert.equal(collection.items.filter((item) => item.kind === 'interactive').length, 2);

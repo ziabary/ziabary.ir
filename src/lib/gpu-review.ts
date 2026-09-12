@@ -3,7 +3,7 @@ import spanishCollection from '../../docs/drafts/gpu-selection-es/collection.jso
 
 export type GpuReviewLocale = 'en' | 'es';
 export type GpuReviewCollection = typeof englishCollection;
-// These manifests remain separate from the published guide registrations.
+// The localized guide registry uses each manifest's editorial publication state.
 export const gpuReviews = { en: englishCollection, es: spanishCollection };
 export const isGpuReviewArticle = (slug: string, locale: GpuReviewLocale) =>
   gpuReviews[locale].items.some((item) => item.kind === 'article' && item.id === slug);

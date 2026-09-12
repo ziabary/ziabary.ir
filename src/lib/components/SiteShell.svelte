@@ -1,16 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { articles } from '$lib/content';
   import { socialLinks } from '$lib/data';
-  import { guideCollections } from '$lib/guides';
-  import { localizePresentation, presentations } from '$lib/presentations';
+  import LanguageSwitcher from './LanguageSwitcher.svelte';
+  import SearchDialog from './SearchDialog.svelte';
 
   type Locale = 'fa' | 'en' | 'es';
   export let locale: Locale;
   export let pathname: string;
 
   let searchOpen = false;
-  let query = '';
   let dark = false;
   let menu = false;
 
@@ -50,32 +48,6 @@
     { label: t.resume, href: locale === 'fa' ? '/resume/' : `/${locale}/resume/` }
   ];
   $: visibleSocialLinks = locale === 'fa' ? socialLinks : socialLinks.filter((social) => social.label !== 'Virgool');
-  $: searchItems = [
-    ...articles
-      .filter((article) => article.lang === locale)
-      .map((article) => ({
-        title: article.title,
-        excerpt: article.excerpt,
-        href: locale === 'fa' ? `/articles/${article.slug}/` : `/${locale}/articles/${article.slug}/`,
-        type: article.category
-      })),
-    ...presentations.map((presentation) => {
-      const item = localizePresentation(presentation, locale);
-      return {
-        title: item.title,
-        excerpt: item.summary,
-        href: `${locale === 'fa' ? '' : `/${locale}`}/slides/${item.slug}/`,
-        type: t.slides
-      };
-    }),
-    ...(locale === 'fa' ? guideCollections.map((collection) => ({ title: collection.title, excerpt: collection.subtitle, href: `/guides/${collection.slug}/`, type: 'فنی‌جات' })) : [])
-  ];
-  $: results = query.trim()
-    ? searchItems
-        .filter((item) => `${item.title} ${item.excerpt} ${item.type}`.toLowerCase().includes(query.trim().toLowerCase()))
-        .slice(0, 8)
-    : searchItems.slice(0, 5);
-
   function toggleTheme() {
     dark = !dark;
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
@@ -94,7 +66,7 @@
         event.preventDefault();
         searchOpen = true;
       }
-      if (event.key === 'Escape') searchOpen = false;
+      if (event.key === 'Escape' && menu) { menu = false; document.querySelector<HTMLButtonElement>('.menu-button')?.focus(); }
     };
     window.addEventListener('keydown', keyHandler);
     return () => window.removeEventListener('keydown', keyHandler);
@@ -116,14 +88,14 @@
         {#if locale !== 'fa'}<span>MEHRAN ZIABARY</span>{/if}
       </a>
     {/if}
-    <button class="menu-button" onclick={() => (menu = !menu)} aria-label="Menu">☰</button>
-    <nav class:open={menu}>
+    <button class="menu-button" onclick={() => (menu = !menu)} aria-label={locale === 'fa' ? 'منوی اصلی' : 'Menu'} aria-expanded={menu} aria-controls="main-navigation">☰</button>
+    <nav id="main-navigation" class:open={menu}>
       {#each navigation as item}<a href={item.href} onclick={closeMenu}>{item.label}</a>{/each}
     </nav>
     <div class="nav-tools">
       <button onclick={() => (searchOpen = true)} aria-label={t.search}>⌕ <kbd>⌘K</kbd></button>
-      <button onclick={toggleTheme} aria-label="Theme">{dark ? '☀' : '◐'}</button>
-      <div class="lang"><span>{locale.toUpperCase()}⌄</span><div><a href="/">فارسی</a><a href="/en/">English</a><a href="/es/">Español</a></div></div>
+      <button onclick={toggleTheme} aria-label={locale === 'fa' ? 'تغییر حالت روشن و تیره' : 'Toggle light and dark theme'}>{dark ? '☀' : '◐'}</button>
+      <LanguageSwitcher {locale} {pathname} />
     </div>
   </div>
 </header>
@@ -147,17 +119,7 @@
       {/each}
     </div>
   </div>
-  <div class="wrap footer-meta"><span>{t.copyright}</span><span><a href="/">FA</a> · <a href="/en/">EN</a> · <a href="/es/">ES</a></span></div>
+  <div class="wrap footer-meta"><span>{t.copyright}</span></div>
 </footer>
 
-{#if searchOpen}
-  <div class="search-layer" role="presentation" onclick={(event) => { if (event.target === event.currentTarget) searchOpen = false; }}>
-    <section class="search-box">
-      <div class="search-input"><span>⌕</span><input bind:value={query} placeholder={t.placeholder} /><button onclick={() => (searchOpen = false)}>ESC</button></div>
-      <div class="search-results">
-        {#each results as item}<a href={item.href}><small>{item.type}</small><b>{item.title}</b><span>{item.excerpt}</span></a>{/each}
-        {#if !results.length}<p>{t.noResult}</p>{/if}
-      </div>
-    </section>
-  </div>
-{/if}
+{#if searchOpen}<SearchDialog {locale} onclose={() => searchOpen = false} />{/if}

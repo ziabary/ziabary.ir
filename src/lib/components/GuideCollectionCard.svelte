@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import type { GuideCollection } from '$lib/guides';
   import { articleCount, nonArticleCount } from '$lib/guides';
 
@@ -12,11 +13,12 @@
   $: unpublished = locale === 'es' ? 'Contenido aún no publicado en español' : 'Content not yet published in English';
   $: count = articleCount(collection);
   $: extraCount = nonArticleCount(collection);
+  $: planned = collection.status === 'planned';
 </script>
 
 <svelte:element this={target ? 'a' : 'article'} class="guide-collection-card" class:linked={Boolean(target)}
   href={target ?? undefined} aria-label={collection.title} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
-  <img src={collection.image} alt="" loading="lazy" width="1600" height="900" />
+  <img {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" width="1600" height="900" />
   <span class="guide-card-shade" aria-hidden="true"></span>
   <div class="guide-card-copy">
     <small>{collection.eyebrow}</small>
@@ -24,7 +26,10 @@
     <p>{collection.subtitle}</p>
     <div class="guide-card-meta">
       {#if target}
-      {#if preview}
+      {#if planned}
+        <span class="planned-badge">{locale === 'fa' ? 'در برنامهٔ نگارش' : locale === 'en' ? 'Planned' : 'En planificación'}</span>
+        <span>{locale === 'fa' ? 'دربارهٔ این مجموعه' : locale === 'en' ? 'About this collection' : 'Acerca de esta colección'}</span>
+      {:else if preview}
         <span>{locale === 'es' ? 'Ver borrador en español' : 'Preview English draft'}</span>
       {:else}
       <span>
@@ -46,6 +51,7 @@
 </svelte:element>
 
 <style>
+  .planned-badge { display: inline-block; padding: 4px 10px; border: 1px solid #8bb8b3; border-radius: 5px; background: rgba(12, 61, 65, .85); color: #e7f5f3; font-size: 12px; }
   .guide-collection-card {
     position: relative;
     isolation: isolate;

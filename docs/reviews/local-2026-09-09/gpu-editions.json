@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "locale": "en",
+      "title": "GPUs and AI servers: what to choose, and why? — English draft",
+      "language": "en",
+      "text": "Mehran Ziabary\nMEHRAN ZIABARY\nThought\nArticles\nTechnical notes\nSlides\nMedia\nRésumé\n⌕ ⌘K\n◐\nEnglish\n⌄\nEnglish draft · Loca",
+      "articleLinks": [
+        "/en/articles/",
+        "/en/articles/choosing-gpu-for-ai-en/",
+        "/en/articles/pcie-gpu-server-selection-en/",
+        "/en/articles/pcie-vs-sxm-for-ai-en/",
+        "/en/articles/gpu-server-platform-components-en/",
+        "/en/articles/gpu-types-for-ai-en/",
+        "/en/articles/dgx-and-standard-gpu-servers-en/",
+        "/en/articles/int8-or-fp8-real-gpu-support-en/",
+        "/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/",
+        "/images/articles/int8-or-fp8-real-gpu-support/int8-fp8-chart-data.csv"
+      ],
+      "overflow": false,
+      "brokenImages": [],
+      "tables": 9
+    },
+    {
+      "locale": "es",
+      "title": "GPU y servidores de IA: ¿qué elegir y por qué? — Borrador en español",
+      "language": "es",
+      "text": "Mehran Ziabary\nMEHRAN ZIABARY\nPensamiento\nArtículos\nNotas técnicas\nDiapositivas\nMedios\nCurrículum\n⌕ ⌘K\n◐\nEspañol\n⌄\nBorra",
+      "articleLinks": [
+        "/es/articles/",
+        "/es/articles/choosing-gpu-for-ai-es/",
+        "/es/articles/pcie-gpu-server-selection-es/",
+        "/es/articles/pcie-vs-sxm-for-ai-es/",
+        "/es/articles/gpu-server-platform-components-es/",
+        "/es/articles/gpu-types-for-ai-es/",
+        "/es/articles/dgx-and-standard-gpu-servers-es/",
+        "/es/articles/int8-or-fp8-real-gpu-support-es/",
+        "/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/",
+        "/images/articles/int8-or-fp8-real-gpu-support/int8-fp8-chart-data.csv"
+      ],
+      "overflow": false,
+      "brokenImages": [],
+      "tables": 9
+    }
+  ],
+  "exceptions": []
+}

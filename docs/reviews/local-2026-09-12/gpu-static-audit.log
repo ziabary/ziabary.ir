@@ -1,0 +1,5 @@
+
+> ziabary-platform@0.1.0 verify:local
+> python3 scripts/verify-local-build.py
+
+{"pages": 173, "errors": 0, "fragmentIssues": 0}

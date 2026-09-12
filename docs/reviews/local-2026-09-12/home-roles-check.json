@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "columns": "340px 340px",
+      "overflow": false,
+      "cards": [
+        {
+          "x": 962.5,
+          "y": 411.1875,
+          "width": 340,
+          "height": 94
+        },
+        {
+          "x": 612.5,
+          "y": 411.1875,
+          "width": 340,
+          "height": 94
+        },
+        {
+          "x": 962.5,
+          "y": 515.1875,
+          "width": 340,
+          "height": 94
+        }
+      ],
+      "brokenImages": 0
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "columns": "340px 340px",
+      "overflow": false,
+      "cards": [
+        {
+          "x": 962.5,
+          "y": 411.1875,
+          "width": 340,
+          "height": 94
+        },
+        {
+          "x": 612.5,
+          "y": 411.1875,
+          "width": 340,
+          "height": 94
+        },
+        {
+          "x": 962.5,
+          "y": 515.1875,
+          "width": 340,
+          "height": 94
+        }
+      ],
+      "brokenImages": 0
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "columns": "347px",
+      "overflow": false,
+      "cards": [
+        {
+          "x": 14,
+          "y": 342.1875,
+          "width": 347,
+          "height": 94
+        },
+        {
+          "x": 14,
+          "y": 446.1875,
+          "width": 347,
+          "height": 94
+        },
+        {
+          "x": 14,
+          "y": 550.1875,
+          "width": 347,
+          "height": 94
+        }
+      ],
+      "brokenImages": 0
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "columns": "347px",
+      "overflow": false,
+      "cards": [
+        {
+          "x": 14,
+          "y": 342.1875,
+          "width": 347,
+          "height": 94
+        },
+        {
+          "x": 14,
+          "y": 446.1875,
+          "width": 347,
+          "height": 94
+        },
+        {
+          "x": 14,
+          "y": 550.1875,
+          "width": 347,
+          "height": 94
+        }
+      ],
+      "brokenImages": 0
+    }
+  ],
+  "runtimeErrors": 0
+}

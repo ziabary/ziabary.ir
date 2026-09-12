@@ -1,12 +1,7 @@
 <script lang="ts">
-  import PageHero from '$lib/components/PageHero.svelte';
-  import GalleryCollection from '$lib/components/GalleryCollection.svelte';
-  import { galleryItems } from '$lib/gallery';
+  import PageSeo from '$lib/components/PageSeo.svelte';
+  import { onMount } from 'svelte';
+  onMount(() => window.location.replace('/media/#photos'));
 </script>
-
-<svelte:head><title>گالری | مهران ضیابری</title></svelte:head>
-
-<main>
-  <PageHero eyebrow="رویدادها و کلاس‌ها" title="گالری" lead="تصاویر منتخب از گفت‌وگوها، کلاس‌ها، ارائه‌ها و حضورهای حرفه‌ای." />
-  <section class="wrap"><GalleryCollection items={galleryItems} /></section>
-</main>
+<PageSeo locale="fa" title="تصاویر منتخب | مهران ضیابری" description="تصاویر منتخب در بازتاب‌ها" path="/media/" image="/images/profile/mehran-ziabary-formal.png" noindex />
+<main class="wrap"><h1>تصاویر منتخب</h1><p><a href="/media/#photos">دیدن تصاویر در بازتاب‌ها ←</a></p></main>

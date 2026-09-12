@@ -1,0 +1,1341 @@
+{
+  "results": [
+    {
+      "locale": "fa",
+      "width": 1440,
+      "dpr": 1,
+      "images": [
+        {
+          "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+          "current": "http://localhost:5173/images/responsive/805b6a0fe4cb7b94-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1060,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+          "current": "http://localhost:5173/images/responsive/934a756a4973c9ae-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1080,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+          "current": "http://localhost:5173/images/responsive/3e3686ae20b558c8-1440.webp",
+          "sizes": "(min-width: 1228px) 963px, (min-width: 681px) calc((50vw - 35px) * 1.6630434782608696), calc((100vw - 30px) * 1.6630434782608696)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 962.9021739130435,
+          "maxAvailable": 1920,
+          "ratio": 1.4954790206237936
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+          "current": "http://localhost:5173/images/responsive/77ad3dbb92f6d8b7-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 651.7823639774859,
+          "maxAvailable": 800,
+          "ratio": 1.2274035693724812
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+          "current": "http://localhost:5173/images/responsive/660f373f3c371266-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 651.7823639774859,
+          "maxAvailable": 800,
+          "ratio": 1.2274035693724812
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+          "current": "http://localhost:5173/images/responsive/d4378a141e737590-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.375,
+          "maxAvailable": 1920,
+          "ratio": 1.4738054116292458
+        },
+        {
+          "original": "/images/gallery/sabanoor-1.jpg",
+          "current": "http://localhost:5173/images/responsive/0d6c53f3b3d670a8-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1020,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/isti-1404.jpeg",
+          "current": "http://localhost:5173/images/responsive/24c1942bdef70e6f-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 965,
+          "maxAvailable": 1920,
+          "ratio": 1.4922279792746114
+        },
+        {
+          "original": "/images/gallery/foolad-kashan-1.jpg",
+          "current": "http://localhost:5173/images/responsive/49f955d77536a604-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1080,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/filoger.jpeg",
+          "current": "http://localhost:5173/images/responsive/5face37c44af2e81-1000.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1000,
+          "required": 965,
+          "maxAvailable": 1000,
+          "ratio": 1.0362694300518134
+        },
+        {
+          "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+          "current": "http://localhost:5173/images/responsive/58d6c67500e486a3-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 843,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/asalooyeh-3.jpg",
+          "current": "http://localhost:5173/images/responsive/4b323f165129029d-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1280,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1404-1.jpeg",
+          "current": "http://localhost:5173/images/responsive/e62af7f2c0dc5a37-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1020,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/imidro.jpg",
+          "current": "http://localhost:5173/images/responsive/9f49ec26c9507f89-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 965,
+          "maxAvailable": 1920,
+          "ratio": 1.4922279792746114
+        },
+        {
+          "original": "/images/gallery/jahad-daneshgahi.jpg",
+          "current": "http://localhost:5173/images/responsive/b42a27d448a90f4a-960.webp",
+          "sizes": "(min-width: 1228px) 653px, (min-width: 681px) calc((50vw - 35px) * 1.1260997067448681), calc((100vw - 30px) * 1.1260997067448681)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 652.0117302052786,
+          "maxAvailable": 1024,
+          "ratio": 1.4723661485319517
+        },
+        {
+          "original": "/images/gallery/1402-12.jpeg",
+          "current": "http://localhost:5173/images/responsive/d8c64bba50ea4953-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.375,
+          "maxAvailable": 1500,
+          "ratio": 1.4738054116292458
+        },
+        {
+          "original": "/images/gallery/bonyad-dehghan.jpeg",
+          "current": "http://localhost:5173/images/responsive/a32507147e2e925d-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1000,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/itrc-president.jpg",
+          "current": "http://localhost:5173/images/responsive/e4f0ffd91348464a-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.1244377811094453), calc((100vw - 30px) * 1.1244377811094453)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.0494752623688,
+          "maxAvailable": 1000,
+          "ratio": 1.4745423143350604
+        }
+      ],
+      "overflow": false,
+      "broken": 0
+    },
+    {
+      "locale": "fa",
+      "width": 1440,
+      "dpr": 2,
+      "images": [
+        {
+          "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+          "current": "http://localhost:5173/images/responsive/805b6a0fe4cb7b94-1060.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1060,
+          "required": 1158,
+          "maxAvailable": 1060,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+          "current": "http://localhost:5173/images/responsive/934a756a4973c9ae-1080.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1080,
+          "required": 1158,
+          "maxAvailable": 1080,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+          "current": "http://localhost:5173/images/responsive/3e3686ae20b558c8-1920.webp",
+          "sizes": "(min-width: 1228px) 963px, (min-width: 681px) calc((50vw - 35px) * 1.6630434782608696), calc((100vw - 30px) * 1.6630434782608696)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1920,
+          "required": 1925.804347826087,
+          "maxAvailable": 1920,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+          "current": "http://localhost:5173/images/responsive/77ad3dbb92f6d8b7-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 1303.5647279549719,
+          "maxAvailable": 800,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+          "current": "http://localhost:5173/images/responsive/660f373f3c371266-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 1303.5647279549719,
+          "maxAvailable": 800,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+          "current": "http://localhost:5173/images/responsive/d4378a141e737590-1440.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 1302.75,
+          "maxAvailable": 1920,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/sabanoor-1.jpg",
+          "current": "http://localhost:5173/images/responsive/0d6c53f3b3d670a8-1020.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1020,
+          "required": 1158,
+          "maxAvailable": 1020,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/isti-1404.jpeg",
+          "current": "http://localhost:5173/images/responsive/24c1942bdef70e6f-1920.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1920,
+          "required": 1930,
+          "maxAvailable": 1920,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/foolad-kashan-1.jpg",
+          "current": "http://localhost:5173/images/responsive/49f955d77536a604-1080.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1080,
+          "required": 1158,
+          "maxAvailable": 1080,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/filoger.jpeg",
+          "current": "http://localhost:5173/images/responsive/5face37c44af2e81-1000.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1000,
+          "required": 1930,
+          "maxAvailable": 1000,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+          "current": "http://localhost:5173/images/responsive/58d6c67500e486a3-843.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 843,
+          "required": 1158,
+          "maxAvailable": 843,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/asalooyeh-3.jpg",
+          "current": "http://localhost:5173/images/responsive/4b323f165129029d-1280.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1280,
+          "required": 1158,
+          "maxAvailable": 1280,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1404-1.jpeg",
+          "current": "http://localhost:5173/images/responsive/e62af7f2c0dc5a37-1020.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1020,
+          "required": 1158,
+          "maxAvailable": 1020,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/imidro.jpg",
+          "current": "http://localhost:5173/images/responsive/9f49ec26c9507f89-1920.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1920,
+          "required": 1930,
+          "maxAvailable": 1920,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/jahad-daneshgahi.jpg",
+          "current": "http://localhost:5173/images/responsive/b42a27d448a90f4a-1024.webp",
+          "sizes": "(min-width: 1228px) 653px, (min-width: 681px) calc((50vw - 35px) * 1.1260997067448681), calc((100vw - 30px) * 1.1260997067448681)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1024,
+          "required": 1304.0234604105572,
+          "maxAvailable": 1024,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/1402-12.jpeg",
+          "current": "http://localhost:5173/images/responsive/d8c64bba50ea4953-1440.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 1302.75,
+          "maxAvailable": 1500,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/bonyad-dehghan.jpeg",
+          "current": "http://localhost:5173/images/responsive/a32507147e2e925d-1000.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1000,
+          "required": 1158,
+          "maxAvailable": 1000,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/itrc-president.jpg",
+          "current": "http://localhost:5173/images/responsive/e4f0ffd91348464a-1000.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.1244377811094453), calc((100vw - 30px) * 1.1244377811094453)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1000,
+          "required": 1302.0989505247376,
+          "maxAvailable": 1000,
+          "ratio": 1
+        }
+      ],
+      "overflow": false,
+      "broken": 0
+    },
+    {
+      "locale": "fa",
+      "width": 768,
+      "dpr": 2,
+      "images": [
+        {
+          "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+          "current": "http://localhost:5173/images/responsive/805b6a0fe4cb7b94-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1060,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+          "current": "http://localhost:5173/images/responsive/934a756a4973c9ae-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1080,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+          "current": "http://localhost:5173/images/responsive/3e3686ae20b558c8-1440.webp",
+          "sizes": "(min-width: 1228px) 963px, (min-width: 681px) calc((50vw - 35px) * 1.6630434782608696), calc((100vw - 30px) * 1.6630434782608696)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 1440,
+          "required": 1135.858695652174,
+          "maxAvailable": 1920,
+          "ratio": 1.2677633278787357
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+          "current": "http://localhost:5173/images/responsive/77ad3dbb92f6d8b7-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 800,
+          "required": 768.8555347091932,
+          "maxAvailable": 800,
+          "ratio": 1.0405075646656907
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+          "current": "http://localhost:5173/images/responsive/660f373f3c371266-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 800,
+          "required": 768.8555347091932,
+          "maxAvailable": 800,
+          "ratio": 1.0405075646656907
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+          "current": "http://localhost:5173/images/responsive/d4378a141e737590-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 768.375,
+          "maxAvailable": 1920,
+          "ratio": 1.2493899463152758
+        },
+        {
+          "original": "/images/gallery/sabanoor-1.jpg",
+          "current": "http://localhost:5173/images/responsive/0d6c53f3b3d670a8-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1020,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/isti-1404.jpeg",
+          "current": "http://localhost:5173/images/responsive/24c1942bdef70e6f-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 1440,
+          "required": 1138.3333333333333,
+          "maxAvailable": 1920,
+          "ratio": 1.2650073206442167
+        },
+        {
+          "original": "/images/gallery/foolad-kashan-1.jpg",
+          "current": "http://localhost:5173/images/responsive/49f955d77536a604-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1080,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/filoger.jpeg",
+          "current": "http://localhost:5173/images/responsive/5face37c44af2e81-1000.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 1000,
+          "required": 1138.3333333333333,
+          "maxAvailable": 1000,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+          "current": "http://localhost:5173/images/responsive/58d6c67500e486a3-843.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 843,
+          "required": 683,
+          "maxAvailable": 843,
+          "ratio": 1.2342606149341142
+        },
+        {
+          "original": "/images/gallery/asalooyeh-3.jpg",
+          "current": "http://localhost:5173/images/responsive/4b323f165129029d-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1280,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/elecomp-1404-1.jpeg",
+          "current": "http://localhost:5173/images/responsive/e62af7f2c0dc5a37-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1020,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/imidro.jpg",
+          "current": "http://localhost:5173/images/responsive/9f49ec26c9507f89-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 1440,
+          "required": 1138.3333333333333,
+          "maxAvailable": 1920,
+          "ratio": 1.2650073206442167
+        },
+        {
+          "original": "/images/gallery/jahad-daneshgahi.jpg",
+          "current": "http://localhost:5173/images/responsive/b42a27d448a90f4a-960.webp",
+          "sizes": "(min-width: 1228px) 653px, (min-width: 681px) calc((50vw - 35px) * 1.1260997067448681), calc((100vw - 30px) * 1.1260997067448681)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 769.1260997067449,
+          "maxAvailable": 1024,
+          "ratio": 1.2481698389458273
+        },
+        {
+          "original": "/images/gallery/1402-12.jpeg",
+          "current": "http://localhost:5173/images/responsive/d8c64bba50ea4953-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 768.375,
+          "maxAvailable": 1500,
+          "ratio": 1.2493899463152758
+        },
+        {
+          "original": "/images/gallery/bonyad-dehghan.jpeg",
+          "current": "http://localhost:5173/images/responsive/a32507147e2e925d-960.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 683,
+          "maxAvailable": 1000,
+          "ratio": 1.4055636896046853
+        },
+        {
+          "original": "/images/gallery/itrc-president.jpg",
+          "current": "http://localhost:5173/images/responsive/e4f0ffd91348464a-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.1244377811094453), calc((100vw - 30px) * 1.1244377811094453)",
+          "width": 341.5,
+          "height": 256.125,
+          "selected": 960,
+          "required": 767.9910044977511,
+          "maxAvailable": 1000,
+          "ratio": 1.2500146412884334
+        }
+      ],
+      "overflow": false,
+      "broken": 0
+    },
+    {
+      "locale": "fa",
+      "width": 390,
+      "dpr": 3,
+      "images": [
+        {
+          "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+          "current": "http://localhost:5173/images/responsive/805b6a0fe4cb7b94-1060.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1060,
+          "required": 1035,
+          "maxAvailable": 1060,
+          "ratio": 1.0241545893719808
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+          "current": "http://localhost:5173/images/responsive/934a756a4973c9ae-1080.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1080,
+          "required": 1035,
+          "maxAvailable": 1080,
+          "ratio": 1.0434782608695652
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+          "current": "http://localhost:5173/images/responsive/3e3686ae20b558c8-1920.webp",
+          "sizes": "(min-width: 1228px) 963px, (min-width: 681px) calc((50vw - 35px) * 1.6630434782608696), calc((100vw - 30px) * 1.6630434782608696)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1920,
+          "required": 1721.25,
+          "maxAvailable": 1920,
+          "ratio": 1.1154684095860568
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+          "current": "http://localhost:5173/images/responsive/77ad3dbb92f6d8b7-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 800,
+          "required": 1165.1031894934333,
+          "maxAvailable": 800,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+          "current": "http://localhost:5173/images/responsive/660f373f3c371266-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 800,
+          "required": 1165.1031894934333,
+          "maxAvailable": 800,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+          "current": "http://localhost:5173/images/responsive/d4378a141e737590-1440.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1440,
+          "required": 1164.375,
+          "maxAvailable": 1920,
+          "ratio": 1.2367149758454106
+        },
+        {
+          "original": "/images/gallery/sabanoor-1.jpg",
+          "current": "http://localhost:5173/images/responsive/0d6c53f3b3d670a8-1020.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1020,
+          "required": 1035,
+          "maxAvailable": 1020,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/isti-1404.jpeg",
+          "current": "http://localhost:5173/images/responsive/24c1942bdef70e6f-1920.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1920,
+          "required": 1725,
+          "maxAvailable": 1920,
+          "ratio": 1.1130434782608696
+        },
+        {
+          "original": "/images/gallery/foolad-kashan-1.jpg",
+          "current": "http://localhost:5173/images/responsive/49f955d77536a604-1080.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1080,
+          "required": 1035,
+          "maxAvailable": 1080,
+          "ratio": 1.0434782608695652
+        },
+        {
+          "original": "/images/gallery/filoger.jpeg",
+          "current": "http://localhost:5173/images/responsive/5face37c44af2e81-1000.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1000,
+          "required": 1725,
+          "maxAvailable": 1000,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+          "current": "http://localhost:5173/images/responsive/58d6c67500e486a3-843.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 843,
+          "required": 1035,
+          "maxAvailable": 843,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/asalooyeh-3.jpg",
+          "current": "http://localhost:5173/images/responsive/4b323f165129029d-1280.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1280,
+          "required": 1035,
+          "maxAvailable": 1280,
+          "ratio": 1.2367149758454106
+        },
+        {
+          "original": "/images/gallery/elecomp-1404-1.jpeg",
+          "current": "http://localhost:5173/images/responsive/e62af7f2c0dc5a37-1020.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1020,
+          "required": 1035,
+          "maxAvailable": 1020,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/imidro.jpg",
+          "current": "http://localhost:5173/images/responsive/9f49ec26c9507f89-1920.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1920,
+          "required": 1725,
+          "maxAvailable": 1920,
+          "ratio": 1.1130434782608696
+        },
+        {
+          "original": "/images/gallery/jahad-daneshgahi.jpg",
+          "current": "http://localhost:5173/images/responsive/b42a27d448a90f4a-1024.webp",
+          "sizes": "(min-width: 1228px) 653px, (min-width: 681px) calc((50vw - 35px) * 1.1260997067448681), calc((100vw - 30px) * 1.1260997067448681)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1024,
+          "required": 1165.5131964809384,
+          "maxAvailable": 1024,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/1402-12.jpeg",
+          "current": "http://localhost:5173/images/responsive/d8c64bba50ea4953-1440.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1440,
+          "required": 1164.375,
+          "maxAvailable": 1500,
+          "ratio": 1.2367149758454106
+        },
+        {
+          "original": "/images/gallery/bonyad-dehghan.jpeg",
+          "current": "http://localhost:5173/images/responsive/a32507147e2e925d-1000.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1000,
+          "required": 1035,
+          "maxAvailable": 1000,
+          "ratio": 1
+        },
+        {
+          "original": "/images/gallery/itrc-president.jpg",
+          "current": "http://localhost:5173/images/responsive/e4f0ffd91348464a-1000.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.1244377811094453), calc((100vw - 30px) * 1.1244377811094453)",
+          "width": 345,
+          "height": 258.75,
+          "selected": 1000,
+          "required": 1163.7931034482758,
+          "maxAvailable": 1000,
+          "ratio": 1
+        }
+      ],
+      "overflow": false,
+      "broken": 0
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "dpr": 1,
+      "images": [
+        {
+          "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+          "current": "http://localhost:5173/images/responsive/805b6a0fe4cb7b94-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1060,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+          "current": "http://localhost:5173/images/responsive/934a756a4973c9ae-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1080,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+          "current": "http://localhost:5173/images/responsive/3e3686ae20b558c8-1440.webp",
+          "sizes": "(min-width: 1228px) 963px, (min-width: 681px) calc((50vw - 35px) * 1.6630434782608696), calc((100vw - 30px) * 1.6630434782608696)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 962.9021739130435,
+          "maxAvailable": 1920,
+          "ratio": 1.4954790206237936
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+          "current": "http://localhost:5173/images/responsive/77ad3dbb92f6d8b7-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 651.7823639774859,
+          "maxAvailable": 800,
+          "ratio": 1.2274035693724812
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+          "current": "http://localhost:5173/images/responsive/660f373f3c371266-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 651.7823639774859,
+          "maxAvailable": 800,
+          "ratio": 1.2274035693724812
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+          "current": "http://localhost:5173/images/responsive/d4378a141e737590-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.375,
+          "maxAvailable": 1920,
+          "ratio": 1.4738054116292458
+        },
+        {
+          "original": "/images/gallery/sabanoor-1.jpg",
+          "current": "http://localhost:5173/images/responsive/0d6c53f3b3d670a8-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1020,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/isti-1404.jpeg",
+          "current": "http://localhost:5173/images/responsive/24c1942bdef70e6f-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 965,
+          "maxAvailable": 1920,
+          "ratio": 1.4922279792746114
+        },
+        {
+          "original": "/images/gallery/foolad-kashan-1.jpg",
+          "current": "http://localhost:5173/images/responsive/49f955d77536a604-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1080,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/filoger.jpeg",
+          "current": "http://localhost:5173/images/responsive/5face37c44af2e81-1000.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1000,
+          "required": 965,
+          "maxAvailable": 1000,
+          "ratio": 1.0362694300518134
+        },
+        {
+          "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+          "current": "http://localhost:5173/images/responsive/58d6c67500e486a3-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 843,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/asalooyeh-3.jpg",
+          "current": "http://localhost:5173/images/responsive/4b323f165129029d-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1280,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1404-1.jpeg",
+          "current": "http://localhost:5173/images/responsive/e62af7f2c0dc5a37-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1020,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/imidro.jpg",
+          "current": "http://localhost:5173/images/responsive/9f49ec26c9507f89-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 965,
+          "maxAvailable": 1920,
+          "ratio": 1.4922279792746114
+        },
+        {
+          "original": "/images/gallery/jahad-daneshgahi.jpg",
+          "current": "http://localhost:5173/images/responsive/b42a27d448a90f4a-960.webp",
+          "sizes": "(min-width: 1228px) 653px, (min-width: 681px) calc((50vw - 35px) * 1.1260997067448681), calc((100vw - 30px) * 1.1260997067448681)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 652.0117302052786,
+          "maxAvailable": 1024,
+          "ratio": 1.4723661485319517
+        },
+        {
+          "original": "/images/gallery/1402-12.jpeg",
+          "current": "http://localhost:5173/images/responsive/d8c64bba50ea4953-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.375,
+          "maxAvailable": 1500,
+          "ratio": 1.4738054116292458
+        },
+        {
+          "original": "/images/gallery/bonyad-dehghan.jpeg",
+          "current": "http://localhost:5173/images/responsive/a32507147e2e925d-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1000,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/itrc-president.jpg",
+          "current": "http://localhost:5173/images/responsive/e4f0ffd91348464a-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.1244377811094453), calc((100vw - 30px) * 1.1244377811094453)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.0494752623688,
+          "maxAvailable": 1000,
+          "ratio": 1.4745423143350604
+        }
+      ],
+      "overflow": false,
+      "broken": 0
+    },
+    {
+      "locale": "es",
+      "width": 1440,
+      "dpr": 1,
+      "images": [
+        {
+          "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+          "current": "http://localhost:5173/images/responsive/805b6a0fe4cb7b94-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1060,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+          "current": "http://localhost:5173/images/responsive/934a756a4973c9ae-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1080,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+          "current": "http://localhost:5173/images/responsive/3e3686ae20b558c8-1440.webp",
+          "sizes": "(min-width: 1228px) 963px, (min-width: 681px) calc((50vw - 35px) * 1.6630434782608696), calc((100vw - 30px) * 1.6630434782608696)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 962.9021739130435,
+          "maxAvailable": 1920,
+          "ratio": 1.4954790206237936
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+          "current": "http://localhost:5173/images/responsive/77ad3dbb92f6d8b7-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 651.7823639774859,
+          "maxAvailable": 800,
+          "ratio": 1.2274035693724812
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+          "current": "http://localhost:5173/images/responsive/660f373f3c371266-800.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125703564727955), calc((100vw - 30px) * 1.125703564727955)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 800,
+          "required": 651.7823639774859,
+          "maxAvailable": 800,
+          "ratio": 1.2274035693724812
+        },
+        {
+          "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+          "current": "http://localhost:5173/images/responsive/d4378a141e737590-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.375,
+          "maxAvailable": 1920,
+          "ratio": 1.4738054116292458
+        },
+        {
+          "original": "/images/gallery/sabanoor-1.jpg",
+          "current": "http://localhost:5173/images/responsive/0d6c53f3b3d670a8-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1020,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/isti-1404.jpeg",
+          "current": "http://localhost:5173/images/responsive/24c1942bdef70e6f-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 965,
+          "maxAvailable": 1920,
+          "ratio": 1.4922279792746114
+        },
+        {
+          "original": "/images/gallery/foolad-kashan-1.jpg",
+          "current": "http://localhost:5173/images/responsive/49f955d77536a604-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1080,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/filoger.jpeg",
+          "current": "http://localhost:5173/images/responsive/5face37c44af2e81-1000.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1000,
+          "required": 965,
+          "maxAvailable": 1000,
+          "ratio": 1.0362694300518134
+        },
+        {
+          "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+          "current": "http://localhost:5173/images/responsive/58d6c67500e486a3-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 843,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/asalooyeh-3.jpg",
+          "current": "http://localhost:5173/images/responsive/4b323f165129029d-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1280,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/elecomp-1404-1.jpeg",
+          "current": "http://localhost:5173/images/responsive/e62af7f2c0dc5a37-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1020,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/imidro.jpg",
+          "current": "http://localhost:5173/images/responsive/9f49ec26c9507f89-1440.webp",
+          "sizes": "(min-width: 1228px) 965px, (min-width: 681px) calc((50vw - 35px) * 1.6666666666666667), calc((100vw - 30px) * 1.6666666666666667)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 1440,
+          "required": 965,
+          "maxAvailable": 1920,
+          "ratio": 1.4922279792746114
+        },
+        {
+          "original": "/images/gallery/jahad-daneshgahi.jpg",
+          "current": "http://localhost:5173/images/responsive/b42a27d448a90f4a-960.webp",
+          "sizes": "(min-width: 1228px) 653px, (min-width: 681px) calc((50vw - 35px) * 1.1260997067448681), calc((100vw - 30px) * 1.1260997067448681)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 652.0117302052786,
+          "maxAvailable": 1024,
+          "ratio": 1.4723661485319517
+        },
+        {
+          "original": "/images/gallery/1402-12.jpeg",
+          "current": "http://localhost:5173/images/responsive/d8c64bba50ea4953-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.125), calc((100vw - 30px) * 1.125)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.375,
+          "maxAvailable": 1500,
+          "ratio": 1.4738054116292458
+        },
+        {
+          "original": "/images/gallery/bonyad-dehghan.jpeg",
+          "current": "http://localhost:5173/images/responsive/a32507147e2e925d-640.webp",
+          "sizes": "(min-width: 1228px) 579px, (min-width: 681px) calc((50vw - 35px) * 1), calc((100vw - 30px) * 1)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 640,
+          "required": 579,
+          "maxAvailable": 1000,
+          "ratio": 1.1053540587219344
+        },
+        {
+          "original": "/images/gallery/itrc-president.jpg",
+          "current": "http://localhost:5173/images/responsive/e4f0ffd91348464a-960.webp",
+          "sizes": "(min-width: 1228px) 652px, (min-width: 681px) calc((50vw - 35px) * 1.1244377811094453), calc((100vw - 30px) * 1.1244377811094453)",
+          "width": 579,
+          "height": 434.25,
+          "selected": 960,
+          "required": 651.0494752623688,
+          "maxAvailable": 1000,
+          "ratio": 1.4745423143350604
+        }
+      ],
+      "overflow": false,
+      "broken": 0
+    }
+  ],
+  "comparison": [
+    {
+      "original": "/images/gallery/1405/06/andishe/خانه اندیشه‌ورزان-3.jpg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/elecomp-1405/inotex/1.jpg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/elecomp-1405/ai-ds/1.jpg",
+      "before": 320,
+      "after": 1440
+    },
+    {
+      "original": "/images/gallery/elecomp-1405/anjoman/1.jpeg",
+      "before": 320,
+      "after": 800
+    },
+    {
+      "original": "/images/gallery/elecomp-1405/anjoman/2.jpeg",
+      "before": 320,
+      "after": 800
+    },
+    {
+      "original": "/images/gallery/elecomp-1405/nsr/elecomp-1405-1.jpg",
+      "before": 320,
+      "after": 960
+    },
+    {
+      "original": "/images/gallery/sabanoor-1.jpg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/isti-1404.jpeg",
+      "before": 320,
+      "after": 1440
+    },
+    {
+      "original": "/images/gallery/foolad-kashan-1.jpg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/filoger.jpeg",
+      "before": 320,
+      "after": 1000
+    },
+    {
+      "original": "/images/gallery/mashhad-hokmrani-1.jpg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/asalooyeh-3.jpg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/elecomp-1404-1.jpeg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/imidro.jpg",
+      "before": 320,
+      "after": 1440
+    },
+    {
+      "original": "/images/gallery/jahad-daneshgahi.jpg",
+      "before": 320,
+      "after": 960
+    },
+    {
+      "original": "/images/gallery/1402-12.jpeg",
+      "before": 320,
+      "after": 960
+    },
+    {
+      "original": "/images/gallery/bonyad-dehghan.jpeg",
+      "before": 320,
+      "after": 640
+    },
+    {
+      "original": "/images/gallery/itrc-president.jpg",
+      "before": 320,
+      "after": 960
+    }
+  ],
+  "originalViewer": "passed",
+  "thumbnailNavigation": "passed",
+  "errors": []
+}

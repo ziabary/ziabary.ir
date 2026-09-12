@@ -1,11 +1,15 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import { onMount } from 'svelte';
   import PageHero from '$lib/components/PageHero.svelte';
+  import PageSeo from '$lib/components/PageSeo.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
-  import { getArticleModule } from '$lib/content';
+  import { getArticle, allArticleMetadata } from '$lib/content';
+  import type { Component } from 'svelte';
   import type { GpuReviewCollection, GpuReviewLocale } from '$lib/gpu-review';
 
+  export let chapters: Record<string, Component<{headingPrefix?: string}>> = {};
   export let collection: GpuReviewCollection;
   export let locale: GpuReviewLocale = 'en';
   const copies = {
@@ -45,10 +49,9 @@
   });
 </script>
 
-<svelte:head>
-  <title>{collection.title} — {copy.draft}</title>
-  <meta name="robots" content="noindex,nofollow" />
-</svelte:head>
+<PageSeo title={`${collection.title} | ${collection.draft ? copy.draft : 'Mehran Ziabary'}`}
+  description={collection.subtitle} path={`/${locale}/guides/${collection.slug}/`}
+  image={collection.image} imageAlt={collection.imageAlt} {locale} noindex={collection.draft} />
 
 {#snippet readingPaths()}
   <ol>
@@ -59,7 +62,7 @@
 {/snippet}
 
 <main class="gpu-review" dir="ltr">
-  <div class="wrap review-note"><strong>{copy.preview}</strong><a href={`/${locale}/guides/`}>{copy.back}</a></div>
+  <div class="wrap review-note">{#if collection.draft}<strong>{copy.preview}</strong>{/if}<a href={`/${locale}/guides/`}>{copy.back}</a></div>
   <PageHero eyebrow={collection.eyebrow} title={collection.title} lead={collection.subtitle} />
   <div class="collection-layout">
     <nav class="collection-nav" aria-label={copy.contents}>
@@ -70,7 +73,7 @@
     </nav>
     <div class="collection-main">
       <div class="collection-overview">
-        <img class="collection-cover" src={collection.image} alt={collection.imageAlt} width="1600" height="900" />
+        <img class="collection-cover" {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={collection.imageAlt} width="1600" height="900" />
         <section class="start" aria-labelledby="start-title">
           <small>{copy.using}</small>
           <h2 id="start-title">{collection.startTitle}</h2><p>{collection.startIntro}</p>
@@ -86,18 +89,18 @@
         {:else if item.id === 'server-comparison-table'}
           <section id={item.id} class="guide-entry"><ServerComparison {locale} /></section>
         {:else if item.kind === 'article'}
-          {@const module = getArticleModule(item.id)}
-          {@const article = module?.metadata}
+          {@const Content = chapters[item.id]}
+          {@const article = allArticleMetadata.find(article => article.slug === item.id)}
           {@const imageNote = collection.imageReview.find(note => note.article === item.id)}
-          {#if module && article}
+          {#if Content && article}
             <article id={item.id} class="guide-entry article-entry">
-              {#if article.cover}<img class="article-image" src={article.cover} alt={`${article.title} — ${copy.cover}`} loading="lazy" />{/if}
+              {#if article.cover}<img class="article-image" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${article.title} — ${copy.cover}`} loading="lazy" />{/if}
               {#if imageNote && false}<aside class="image-note"><strong>{copy.imageNeeded}</strong> {imageNote?.note}</aside>{/if}
               <header><small>{article.category} · {article.readTime}</small><h2>{article.title}</h2><p>{article.excerpt}</p></header>
-              <div class="prose review-prose"><svelte:component this={module.default} /></div>
+              <div class="prose review-prose"><Content headingPrefix={`${item.id}--`} /></div>
               <nav class="related" aria-label={copy.related}>
                 <strong>{copy.continue}</strong>
-                <ul>{#each article.related as slug}<li><a href={`/${locale}/articles/${slug}/`}>{getArticleModule(slug)?.metadata.title}</a></li>{/each}</ul>
+                <ul>{#each article.related as slug}<li><a href={`/${locale}/articles/${slug}/`}>{getArticle(slug)?.title}</a></li>{/each}</ul>
               </nav>
               <a class="standalone-link" href={`/${locale}/articles/${item.id}/`}>{article.draft ? copy.standalone : copy.article}</a>
             </article>

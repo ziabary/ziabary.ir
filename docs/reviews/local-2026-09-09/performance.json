@@ -1,0 +1,1441 @@
+{
+  "environment": "Same Chrome, 1440×1000, local static HTTP, cache disabled, analytics blocked, single run; timings are indicative, not Lighthouse scores.",
+  "results": [
+    {
+      "phase": "before",
+      "path": "/",
+      "totals": {
+        "other": {
+          "requests": 5,
+          "decodedBytes": 562536,
+          "transferredBytes": 564036
+        },
+        "javascript": {
+          "requests": 28,
+          "decodedBytes": 1360333,
+          "transferredBytes": 1368733
+        },
+        "images": {
+          "requests": 7,
+          "decodedBytes": 2376903,
+          "transferredBytes": 2379003
+        },
+        "fonts": {
+          "requests": 4,
+          "decodedBytes": 508120,
+          "transferredBytes": 509320
+        }
+      },
+      "htmlBytes": 27470,
+      "domContentLoadedMs": 60,
+      "fcpMs": 124,
+      "lcpMs": 124,
+      "resources": [
+        {
+          "url": "/fonts/fontawesome/v6.2.0/all.min.css",
+          "bytes": 500629
+        },
+        {
+          "url": "/fonts/IranSansX/fontiran.css",
+          "bytes": 3061
+        },
+        {
+          "url": "/_app/immutable/entry/start.dHg2i_qi.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/B1RXh9i_.js",
+          "bytes": 28717
+        },
+        {
+          "url": "/_app/immutable/chunks/m7xve2R7.js",
+          "bytes": 27177
+        },
+        {
+          "url": "/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644
+        },
+        {
+          "url": "/_app/immutable/chunks/DkrwcU2O.js",
+          "bytes": 366
+        },
+        {
+          "url": "/_app/immutable/chunks/1GlRvXkZ.js",
+          "bytes": 1816
+        },
+        {
+          "url": "/_app/immutable/entry/app.DLNgS91j.js",
+          "bytes": 12015
+        },
+        {
+          "url": "/_app/immutable/chunks/DruLvp79.js",
+          "bytes": 8759
+        },
+        {
+          "url": "/_app/immutable/chunks/Df4tzn9h.js",
+          "bytes": 362
+        },
+        {
+          "url": "/_app/immutable/chunks/MgnNHOO_.js",
+          "bytes": 438
+        },
+        {
+          "url": "/_app/immutable/chunks/DX53GisO.js",
+          "bytes": 1838
+        },
+        {
+          "url": "/_app/immutable/nodes/0.Ddg4QVbf.js",
+          "bytes": 16494
+        },
+        {
+          "url": "/_app/immutable/chunks/DIhns57N.js",
+          "bytes": 407
+        },
+        {
+          "url": "/_app/immutable/chunks/DBeB0fQh.js",
+          "bytes": 512
+        },
+        {
+          "url": "/_app/immutable/chunks/CrQ1heKH.js",
+          "bytes": 4257
+        },
+        {
+          "url": "/_app/immutable/chunks/Ck9aPgfX.js",
+          "bytes": 7345
+        },
+        {
+          "url": "/_app/immutable/chunks/DRmWV1eU.js",
+          "bytes": 990
+        },
+        {
+          "url": "/_app/immutable/chunks/DN9c1s-H.js",
+          "bytes": 754
+        },
+        {
+          "url": "/_app/immutable/chunks/x_4_cKm2.js",
+          "bytes": 1111473
+        },
+        {
+          "url": "/_app/immutable/chunks/DLIvr8pO.js",
+          "bytes": 197
+        },
+        {
+          "url": "/_app/immutable/chunks/CpmQGL8N.js",
+          "bytes": 13729
+        },
+        {
+          "url": "/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471
+        },
+        {
+          "url": "/_app/immutable/chunks/B-xMXJsV.js",
+          "bytes": 3774
+        },
+        {
+          "url": "/_app/immutable/nodes/2.CtB7btjl.js",
+          "bytes": 5932
+        },
+        {
+          "url": "/_app/immutable/chunks/DQFJJLeC.js",
+          "bytes": 2518
+        },
+        {
+          "url": "/_app/immutable/chunks/BOUzL0H-.js",
+          "bytes": 7778
+        },
+        {
+          "url": "/_app/immutable/chunks/P0mNpWnq.js",
+          "bytes": 70017
+        },
+        {
+          "url": "/_app/immutable/assets/home-previews.q4_KImq6.css",
+          "bytes": 2781
+        },
+        {
+          "url": "/_app/immutable/assets/0.ARrjxVM7.css",
+          "bytes": 55802
+        },
+        {
+          "url": "/images/organizations/nezamsenfi-ai.png",
+          "bytes": 33549
+        },
+        {
+          "url": "/images/organizations/targoman-logo.png",
+          "bytes": 186293
+        },
+        {
+          "url": "/images/organizations/hoomas-logo.png",
+          "bytes": 67002
+        },
+        {
+          "url": "/images/profile/mehran-ziabary-formal.png",
+          "bytes": 414019
+        },
+        {
+          "url": "/site.webmanifest",
+          "bytes": 263
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-Regular.woff",
+          "bytes": 39284
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-Bold.woff",
+          "bytes": 42468
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/webfonts/fa-brands-400.woff2",
+          "bytes": 108332
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/webfonts/fa-solid-900.woff2",
+          "bytes": 318036
+        },
+        {
+          "url": "/images/articles/ai-data-confidentiality-safe-processing/cover.jpg",
+          "bytes": 183797
+        },
+        {
+          "url": "/images/articles/national-ai-organization-from-law-to-impact/cover.webp",
+          "bytes": 73834
+        },
+        {
+          "url": "/images/articles/ztai-indirect-data-access/cover.png",
+          "bytes": 1418409
+        },
+        {
+          "url": "/_app/immutable/nodes/1.CSOseQVp.js",
+          "bytes": 470
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "path": "/articles/",
+      "totals": {
+        "other": {
+          "requests": 4,
+          "decodedBytes": 559755,
+          "transferredBytes": 560955
+        },
+        "javascript": {
+          "requests": 28,
+          "decodedBytes": 1282244,
+          "transferredBytes": 1290644
+        },
+        "fonts": {
+          "requests": 4,
+          "decodedBytes": 508120,
+          "transferredBytes": 509320
+        },
+        "images": {
+          "requests": 12,
+          "decodedBytes": 18809102,
+          "transferredBytes": 18812702
+        }
+      },
+      "htmlBytes": 39677,
+      "domContentLoadedMs": 20,
+      "fcpMs": 56,
+      "lcpMs": 56,
+      "resources": [
+        {
+          "url": "/fonts/IranSansX/fontiran.css",
+          "bytes": 3061
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/all.min.css",
+          "bytes": 500629
+        },
+        {
+          "url": "/_app/immutable/entry/start.dHg2i_qi.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644
+        },
+        {
+          "url": "/_app/immutable/chunks/m7xve2R7.js",
+          "bytes": 27177
+        },
+        {
+          "url": "/_app/immutable/chunks/B1RXh9i_.js",
+          "bytes": 28717
+        },
+        {
+          "url": "/_app/immutable/chunks/DkrwcU2O.js",
+          "bytes": 366
+        },
+        {
+          "url": "/_app/immutable/chunks/1GlRvXkZ.js",
+          "bytes": 1816
+        },
+        {
+          "url": "/_app/immutable/chunks/Df4tzn9h.js",
+          "bytes": 362
+        },
+        {
+          "url": "/_app/immutable/entry/app.DLNgS91j.js",
+          "bytes": 12015
+        },
+        {
+          "url": "/_app/immutable/chunks/DruLvp79.js",
+          "bytes": 8759
+        },
+        {
+          "url": "/_app/immutable/chunks/MgnNHOO_.js",
+          "bytes": 438
+        },
+        {
+          "url": "/_app/immutable/chunks/DX53GisO.js",
+          "bytes": 1838
+        },
+        {
+          "url": "/_app/immutable/nodes/0.Ddg4QVbf.js",
+          "bytes": 16494
+        },
+        {
+          "url": "/_app/immutable/chunks/DIhns57N.js",
+          "bytes": 407
+        },
+        {
+          "url": "/_app/immutable/chunks/DBeB0fQh.js",
+          "bytes": 512
+        },
+        {
+          "url": "/_app/immutable/chunks/CrQ1heKH.js",
+          "bytes": 4257
+        },
+        {
+          "url": "/_app/immutable/chunks/DRmWV1eU.js",
+          "bytes": 990
+        },
+        {
+          "url": "/_app/immutable/chunks/Ck9aPgfX.js",
+          "bytes": 7345
+        },
+        {
+          "url": "/_app/immutable/chunks/x_4_cKm2.js",
+          "bytes": 1111473
+        },
+        {
+          "url": "/_app/immutable/chunks/DN9c1s-H.js",
+          "bytes": 754
+        },
+        {
+          "url": "/_app/immutable/assets/0.ARrjxVM7.css",
+          "bytes": 55802
+        },
+        {
+          "url": "/_app/immutable/chunks/DLIvr8pO.js",
+          "bytes": 197
+        },
+        {
+          "url": "/_app/immutable/chunks/B-xMXJsV.js",
+          "bytes": 3774
+        },
+        {
+          "url": "/_app/immutable/nodes/4.BlZhz_ec.js",
+          "bytes": 1895
+        },
+        {
+          "url": "/_app/immutable/chunks/CpmQGL8N.js",
+          "bytes": 13729
+        },
+        {
+          "url": "/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471
+        },
+        {
+          "url": "/_app/immutable/chunks/DQFJJLeC.js",
+          "bytes": 2518
+        },
+        {
+          "url": "/_app/immutable/chunks/bErE0jyc.js",
+          "bytes": 481
+        },
+        {
+          "url": "/_app/immutable/chunks/Xj72mPIP.js",
+          "bytes": 3262
+        },
+        {
+          "url": "/site.webmanifest",
+          "bytes": 263
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-Bold.woff",
+          "bytes": 42468
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-Regular.woff",
+          "bytes": 39284
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/webfonts/fa-brands-400.woff2",
+          "bytes": 108332
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/webfonts/fa-solid-900.woff2",
+          "bytes": 318036
+        },
+        {
+          "url": "/images/articles/national-ai-organization-from-law-to-impact/cover.webp",
+          "bytes": 73834
+        },
+        {
+          "url": "/images/articles/ai-data-confidentiality-safe-processing/cover.jpg",
+          "bytes": 183797
+        },
+        {
+          "url": "/images/articles/ztai-indirect-data-access/cover.png",
+          "bytes": 1418409
+        },
+        {
+          "url": "/images/articles/int8-or-fp8-real-gpu-support/cover.png",
+          "bytes": 2191328
+        },
+        {
+          "url": "/images/articles/ayar-hoomas/cover.jpg",
+          "bytes": 133972
+        },
+        {
+          "url": "/images/gallery/elecomp-1405/ai-ds/35.jpg",
+          "bytes": 179746
+        },
+        {
+          "url": "/images/articles/choosing-gpu-for-ai/cover.png",
+          "bytes": 2376900
+        },
+        {
+          "url": "/images/articles/dgx-and-standard-gpu-servers/cover.png",
+          "bytes": 2276666
+        },
+        {
+          "url": "/images/articles/gpu-server-platform-components/cover.png",
+          "bytes": 2588856
+        },
+        {
+          "url": "/images/articles/pcie-vs-sxm-for-ai/cover.png",
+          "bytes": 2802703
+        },
+        {
+          "url": "/images/articles/gpu-types-for-ai/cover.png",
+          "bytes": 2445922
+        },
+        {
+          "url": "/images/articles/pcie-gpu-server-selection/cover.png",
+          "bytes": 2136969
+        },
+        {
+          "url": "/_app/immutable/nodes/1.CSOseQVp.js",
+          "bytes": 470
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "path": "/guides/gpu-selection/",
+      "totals": {
+        "other": {
+          "requests": 6,
+          "decodedBytes": 612093,
+          "transferredBytes": 613893
+        },
+        "javascript": {
+          "requests": 28,
+          "decodedBytes": 1788693,
+          "transferredBytes": 1797093
+        },
+        "images": {
+          "requests": 25,
+          "decodedBytes": 966613,
+          "transferredBytes": 974113
+        },
+        "fonts": {
+          "requests": 6,
+          "decodedBytes": 592900,
+          "transferredBytes": 594700
+        }
+      },
+      "htmlBytes": 465522,
+      "domContentLoadedMs": 211,
+      "fcpMs": 176,
+      "lcpMs": 176,
+      "resources": [
+        {
+          "url": "/fonts/fontawesome/v6.2.0/all.min.css",
+          "bytes": 500629
+        },
+        {
+          "url": "/fonts/IranSansX/fontiran.css",
+          "bytes": 3061
+        },
+        {
+          "url": "/_app/immutable/entry/start.dHg2i_qi.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/B1RXh9i_.js",
+          "bytes": 28717
+        },
+        {
+          "url": "/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644
+        },
+        {
+          "url": "/_app/immutable/chunks/DkrwcU2O.js",
+          "bytes": 366
+        },
+        {
+          "url": "/_app/immutable/chunks/1GlRvXkZ.js",
+          "bytes": 1816
+        },
+        {
+          "url": "/_app/immutable/chunks/m7xve2R7.js",
+          "bytes": 27177
+        },
+        {
+          "url": "/_app/immutable/chunks/Df4tzn9h.js",
+          "bytes": 362
+        },
+        {
+          "url": "/_app/immutable/entry/app.DLNgS91j.js",
+          "bytes": 12015
+        },
+        {
+          "url": "/_app/immutable/chunks/DruLvp79.js",
+          "bytes": 8759
+        },
+        {
+          "url": "/_app/immutable/chunks/MgnNHOO_.js",
+          "bytes": 438
+        },
+        {
+          "url": "/_app/immutable/chunks/DX53GisO.js",
+          "bytes": 1838
+        },
+        {
+          "url": "/_app/immutable/chunks/DIhns57N.js",
+          "bytes": 407
+        },
+        {
+          "url": "/_app/immutable/chunks/DBeB0fQh.js",
+          "bytes": 512
+        },
+        {
+          "url": "/_app/immutable/nodes/0.Ddg4QVbf.js",
+          "bytes": 16494
+        },
+        {
+          "url": "/_app/immutable/chunks/CrQ1heKH.js",
+          "bytes": 4257
+        },
+        {
+          "url": "/_app/immutable/chunks/Ck9aPgfX.js",
+          "bytes": 7345
+        },
+        {
+          "url": "/_app/immutable/chunks/DRmWV1eU.js",
+          "bytes": 990
+        },
+        {
+          "url": "/_app/immutable/chunks/DN9c1s-H.js",
+          "bytes": 754
+        },
+        {
+          "url": "/_app/immutable/chunks/DLIvr8pO.js",
+          "bytes": 197
+        },
+        {
+          "url": "/_app/immutable/chunks/B-xMXJsV.js",
+          "bytes": 3774
+        },
+        {
+          "url": "/_app/immutable/chunks/CpmQGL8N.js",
+          "bytes": 13729
+        },
+        {
+          "url": "/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471
+        },
+        {
+          "url": "/_app/immutable/nodes/28.f5eulHN3.js",
+          "bytes": 11105
+        },
+        {
+          "url": "/_app/immutable/chunks/x_4_cKm2.js",
+          "bytes": 1111473
+        },
+        {
+          "url": "/_app/immutable/assets/0.ARrjxVM7.css",
+          "bytes": 55802
+        },
+        {
+          "url": "/_app/immutable/assets/ServerComparison.BFU5Nbcw.css",
+          "bytes": 40025
+        },
+        {
+          "url": "/_app/immutable/chunks/GzlLhF5P.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/bErE0jyc.js",
+          "bytes": 481
+        },
+        {
+          "url": "/_app/immutable/chunks/lyhQHtvl.js",
+          "bytes": 502936
+        },
+        {
+          "url": "/_app/immutable/assets/28.Cqs82R3u.css",
+          "bytes": 12313
+        },
+        {
+          "url": "/images/guides/gpu-selection.webp",
+          "bytes": 95182
+        },
+        {
+          "url": "/images/brands/intel.svg",
+          "bytes": 1336
+        },
+        {
+          "url": "/images/brands/amd.svg",
+          "bytes": 618
+        },
+        {
+          "url": "/images/brands/nvidia.svg",
+          "bytes": 932
+        },
+        {
+          "url": "/images/brands/google.svg",
+          "bytes": 674
+        },
+        {
+          "url": "/images/brands/qualcomm.svg",
+          "bytes": 283
+        },
+        {
+          "url": "/images/brands/huawei.svg",
+          "bytes": 1029
+        },
+        {
+          "url": "/images/brands/aws.svg",
+          "bytes": 712
+        },
+        {
+          "url": "/images/brands/tenstorrent.svg",
+          "bytes": 290
+        },
+        {
+          "url": "/images/brands/cerebras.svg",
+          "bytes": 338
+        },
+        {
+          "url": "/images/brands/groq.svg",
+          "bytes": 365
+        },
+        {
+          "url": "/images/articles/pcie-vs-sxm-for-ai/10000000000006400000031AF9F958DF.png",
+          "bytes": 419328
+        },
+        {
+          "url": "/images/articles/pcie-vs-sxm-for-ai/10000001000003950000025042D71F05.png",
+          "bytes": 37081
+        },
+        {
+          "url": "/images/articles/choosing-gpu-for-ai/100000010000063C000005D17A54F86E.png",
+          "bytes": 207490
+        },
+        {
+          "url": "/images/articles/choosing-gpu-for-ai/10000001000004620000024FADFE4917.png",
+          "bytes": 66661
+        },
+        {
+          "url": "/images/articles/choosing-gpu-for-ai/10000001000004620000024F5C538DDA.png",
+          "bytes": 67782
+        },
+        {
+          "url": "/images/articles/choosing-gpu-for-ai/100000010000046200000249EA59A2F7.png",
+          "bytes": 63455
+        },
+        {
+          "url": "/images/server-brands/asrock.svg",
+          "bytes": 388
+        },
+        {
+          "url": "/images/server-brands/dell.svg",
+          "bytes": 383
+        },
+        {
+          "url": "/images/server-brands/gigabyte.svg",
+          "bytes": 282
+        },
+        {
+          "url": "/images/server-brands/supermicro.svg",
+          "bytes": 398
+        },
+        {
+          "url": "/images/server-brands/hpe.svg",
+          "bytes": 395
+        },
+        {
+          "url": "/images/server-brands/lenovo.svg",
+          "bytes": 366
+        },
+        {
+          "url": "/images/server-brands/asus.svg",
+          "bytes": 379
+        },
+        {
+          "url": "/images/server-brands/fujitsu.svg",
+          "bytes": 466
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-Regular.woff",
+          "bytes": 39284
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-Bold.woff",
+          "bytes": 42468
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-ExtraBold.woff",
+          "bytes": 42292
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff/IRANSansX-DemiBold.woff",
+          "bytes": 42488
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/webfonts/fa-brands-400.woff2",
+          "bytes": 108332
+        },
+        {
+          "url": "/fonts/fontawesome/v6.2.0/webfonts/fa-solid-900.woff2",
+          "bytes": 318036
+        },
+        {
+          "url": "/site.webmanifest",
+          "bytes": 263
+        },
+        {
+          "url": "/_app/immutable/nodes/1.CSOseQVp.js",
+          "bytes": 470
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "path": "/",
+      "totals": {
+        "other": {
+          "requests": 5,
+          "decodedBytes": 67219,
+          "transferredBytes": 68719
+        },
+        "javascript": {
+          "requests": 31,
+          "decodedBytes": 1572967,
+          "transferredBytes": 1582267
+        },
+        "images": {
+          "requests": 7,
+          "decodedBytes": 117874,
+          "transferredBytes": 119974
+        },
+        "fonts": {
+          "requests": 4,
+          "decodedBytes": 66136,
+          "transferredBytes": 67336
+        }
+      },
+      "htmlBytes": 35374,
+      "domContentLoadedMs": 30,
+      "fcpMs": 32,
+      "lcpMs": 40,
+      "resources": [
+        {
+          "url": "/fonts/icons/icons.css",
+          "bytes": 1651
+        },
+        {
+          "url": "/fonts/IranSansX/fontiran.css",
+          "bytes": 3097
+        },
+        {
+          "url": "/_app/immutable/entry/start.urcSx_nX.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/D8rWbVJC.js",
+          "bytes": 28458
+        },
+        {
+          "url": "/_app/immutable/chunks/BjCKQkh9.js",
+          "bytes": 635
+        },
+        {
+          "url": "/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644
+        },
+        {
+          "url": "/_app/immutable/chunks/CqOlZx7g.js",
+          "bytes": 27186
+        },
+        {
+          "url": "/_app/immutable/chunks/DlY6YilW.js",
+          "bytes": 365
+        },
+        {
+          "url": "/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232
+        },
+        {
+          "url": "/_app/immutable/chunks/D5pihBWL.js",
+          "bytes": 3765
+        },
+        {
+          "url": "/_app/immutable/chunks/BF0SY9zK.js",
+          "bytes": 5338
+        },
+        {
+          "url": "/_app/immutable/entry/app.CeX7jagx.js",
+          "bytes": 12662
+        },
+        {
+          "url": "/_app/immutable/chunks/DbYP5l4O.js",
+          "bytes": 1812
+        },
+        {
+          "url": "/_app/immutable/chunks/CeZe5otI.js",
+          "bytes": 438
+        },
+        {
+          "url": "/_app/immutable/chunks/yLVHHb93.js",
+          "bytes": 2365
+        },
+        {
+          "url": "/_app/immutable/chunks/C9tDXhxB.js",
+          "bytes": 732
+        },
+        {
+          "url": "/_app/immutable/nodes/0.DWIvqxFO.js",
+          "bytes": 19936
+        },
+        {
+          "url": "/_app/immutable/chunks/CdmhHItq.js",
+          "bytes": 8438
+        },
+        {
+          "url": "/_app/immutable/chunks/BNwwj1S-.js",
+          "bytes": 12390
+        },
+        {
+          "url": "/_app/immutable/chunks/C9A8JUBX.js",
+          "bytes": 989
+        },
+        {
+          "url": "/_app/immutable/chunks/Bh-UWLhh.js",
+          "bytes": 920
+        },
+        {
+          "url": "/_app/immutable/chunks/DqClLhch.js",
+          "bytes": 17986
+        },
+        {
+          "url": "/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471
+        },
+        {
+          "url": "/_app/immutable/chunks/Chxur1b9.js",
+          "bytes": 1251312
+        },
+        {
+          "url": "/_app/immutable/chunks/DLIvr8pO.js",
+          "bytes": 197
+        },
+        {
+          "url": "/_app/immutable/chunks/BAg-XF_k.js",
+          "bytes": 3393
+        },
+        {
+          "url": "/_app/immutable/chunks/BNduQa3-.js",
+          "bytes": 2594
+        },
+        {
+          "url": "/_app/immutable/nodes/2.C-YhGYkR.js",
+          "bytes": 5853
+        },
+        {
+          "url": "/_app/immutable/chunks/BTbcJ11p.js",
+          "bytes": 50409
+        },
+        {
+          "url": "/_app/immutable/chunks/BoPg16qy.js",
+          "bytes": 6524
+        },
+        {
+          "url": "/_app/immutable/assets/home-previews.q4_KImq6.css",
+          "bytes": 2781
+        },
+        {
+          "url": "/_app/immutable/assets/0.CKqdpeiy.css",
+          "bytes": 59427
+        },
+        {
+          "url": "/images/responsive/6285f902a56adf07-640.webp",
+          "bytes": 8432
+        },
+        {
+          "url": "/images/responsive/2bba13f6e7b088f0-640.webp",
+          "bytes": 16296
+        },
+        {
+          "url": "/images/responsive/05b60fd3baaa6eb8-611.webp",
+          "bytes": 17460
+        },
+        {
+          "url": "/_app/immutable/chunks/B5QK8Osm.js",
+          "bytes": 4313
+        },
+        {
+          "url": "/_app/immutable/chunks/P0mNpWnq.js",
+          "bytes": 70017
+        },
+        {
+          "url": "/images/responsive/9d9e69f174533248-640.webp",
+          "bytes": 23972
+        },
+        {
+          "url": "/site.webmanifest",
+          "bytes": 263
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772
+        },
+        {
+          "url": "/fonts/icons/brands.woff2",
+          "bytes": 1528
+        },
+        {
+          "url": "/fonts/icons/solid.woff2",
+          "bytes": 1904
+        },
+        {
+          "url": "/images/responsive/384504c9cc335357-640.webp",
+          "bytes": 14362
+        },
+        {
+          "url": "/images/responsive/5467c8b39703f5dd-640.webp",
+          "bytes": 18936
+        },
+        {
+          "url": "/images/responsive/9f5c79a66ae34d22-640.webp",
+          "bytes": 18416
+        },
+        {
+          "url": "/_app/immutable/nodes/1.D3JNX3am.js",
+          "bytes": 510
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "path": "/articles/",
+      "totals": {
+        "other": {
+          "requests": 5,
+          "decodedBytes": 66353,
+          "transferredBytes": 67853
+        },
+        "javascript": {
+          "requests": 30,
+          "decodedBytes": 1494809,
+          "transferredBytes": 1503809
+        },
+        "fonts": {
+          "requests": 4,
+          "decodedBytes": 66136,
+          "transferredBytes": 67336
+        },
+        "images": {
+          "requests": 9,
+          "decodedBytes": 101536,
+          "transferredBytes": 104236
+        }
+      },
+      "htmlBytes": 32860,
+      "domContentLoadedMs": 25,
+      "fcpMs": 28,
+      "lcpMs": 28,
+      "resources": [
+        {
+          "url": "/fonts/icons/icons.css",
+          "bytes": 1651
+        },
+        {
+          "url": "/fonts/IranSansX/fontiran.css",
+          "bytes": 3097
+        },
+        {
+          "url": "/_app/immutable/entry/start.urcSx_nX.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/CqOlZx7g.js",
+          "bytes": 27186
+        },
+        {
+          "url": "/_app/immutable/chunks/D8rWbVJC.js",
+          "bytes": 28458
+        },
+        {
+          "url": "/_app/immutable/chunks/BjCKQkh9.js",
+          "bytes": 635
+        },
+        {
+          "url": "/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644
+        },
+        {
+          "url": "/_app/immutable/chunks/DlY6YilW.js",
+          "bytes": 365
+        },
+        {
+          "url": "/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232
+        },
+        {
+          "url": "/_app/immutable/entry/app.CeX7jagx.js",
+          "bytes": 12662
+        },
+        {
+          "url": "/_app/immutable/chunks/D5pihBWL.js",
+          "bytes": 3765
+        },
+        {
+          "url": "/_app/immutable/chunks/BF0SY9zK.js",
+          "bytes": 5338
+        },
+        {
+          "url": "/_app/immutable/chunks/DbYP5l4O.js",
+          "bytes": 1812
+        },
+        {
+          "url": "/_app/immutable/chunks/CeZe5otI.js",
+          "bytes": 438
+        },
+        {
+          "url": "/_app/immutable/chunks/yLVHHb93.js",
+          "bytes": 2365
+        },
+        {
+          "url": "/_app/immutable/chunks/BNwwj1S-.js",
+          "bytes": 12390
+        },
+        {
+          "url": "/_app/immutable/nodes/0.DWIvqxFO.js",
+          "bytes": 19936
+        },
+        {
+          "url": "/_app/immutable/chunks/C9tDXhxB.js",
+          "bytes": 732
+        },
+        {
+          "url": "/_app/immutable/chunks/CdmhHItq.js",
+          "bytes": 8438
+        },
+        {
+          "url": "/_app/immutable/chunks/Chxur1b9.js",
+          "bytes": 1251312
+        },
+        {
+          "url": "/_app/immutable/chunks/C9A8JUBX.js",
+          "bytes": 989
+        },
+        {
+          "url": "/_app/immutable/chunks/DqClLhch.js",
+          "bytes": 17986
+        },
+        {
+          "url": "/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471
+        },
+        {
+          "url": "/_app/immutable/chunks/DLIvr8pO.js",
+          "bytes": 197
+        },
+        {
+          "url": "/_app/immutable/chunks/Bh-UWLhh.js",
+          "bytes": 920
+        },
+        {
+          "url": "/_app/immutable/nodes/4.iBXeRggK.js",
+          "bytes": 587
+        },
+        {
+          "url": "/_app/immutable/chunks/BsggWaT_.js",
+          "bytes": 8987
+        },
+        {
+          "url": "/_app/immutable/chunks/Dr0UTSVU.js",
+          "bytes": 141
+        },
+        {
+          "url": "/_app/immutable/chunks/D7wNF4iO.js",
+          "bytes": 508
+        },
+        {
+          "url": "/_app/immutable/chunks/B5QK8Osm.js",
+          "bytes": 4313
+        },
+        {
+          "url": "/_app/immutable/chunks/BTbcJ11p.js",
+          "bytes": 50409
+        },
+        {
+          "url": "/_app/immutable/assets/ArticleArchive.DORf8r4N.css",
+          "bytes": 1915
+        },
+        {
+          "url": "/_app/immutable/assets/0.CKqdpeiy.css",
+          "bytes": 59427
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772
+        },
+        {
+          "url": "/fonts/icons/brands.woff2",
+          "bytes": 1528
+        },
+        {
+          "url": "/fonts/icons/solid.woff2",
+          "bytes": 1904
+        },
+        {
+          "url": "/images/responsive/5467c8b39703f5dd-320.webp",
+          "bytes": 4944
+        },
+        {
+          "url": "/images/responsive/384504c9cc335357-320.webp",
+          "bytes": 5640
+        },
+        {
+          "url": "/images/responsive/9f5c79a66ae34d22-320.webp",
+          "bytes": 6924
+        },
+        {
+          "url": "/images/responsive/c40aa78edc0ff566-320.webp",
+          "bytes": 18588
+        },
+        {
+          "url": "/images/responsive/ff4d45cca5f9e92e-320.webp",
+          "bytes": 15426
+        },
+        {
+          "url": "/images/responsive/fd4f553c37b90c7e-320.webp",
+          "bytes": 15006
+        },
+        {
+          "url": "/images/responsive/6e36df90449e8249-320.webp",
+          "bytes": 8908
+        },
+        {
+          "url": "/images/responsive/44b45a0531866f31-320.webp",
+          "bytes": 11160
+        },
+        {
+          "url": "/images/responsive/630f0bc304c218fc-320.webp",
+          "bytes": 14940
+        },
+        {
+          "url": "/site.webmanifest",
+          "bytes": 263
+        },
+        {
+          "url": "/_app/immutable/nodes/1.D3JNX3am.js",
+          "bytes": 510
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "path": "/guides/gpu-selection/",
+      "totals": {
+        "other": {
+          "requests": 5,
+          "decodedBytes": 109745,
+          "transferredBytes": 111245
+        },
+        "javascript": {
+          "requests": 29,
+          "decodedBytes": 1998929,
+          "transferredBytes": 2007629
+        },
+        "images": {
+          "requests": 19,
+          "decodedBytes": 66484,
+          "transferredBytes": 72184
+        },
+        "fonts": {
+          "requests": 6,
+          "decodedBytes": 131680,
+          "transferredBytes": 133480
+        }
+      },
+      "htmlBytes": 298781,
+      "domContentLoadedMs": 86,
+      "fcpMs": 60,
+      "lcpMs": 96,
+      "resources": [
+        {
+          "url": "/fonts/icons/icons.css",
+          "bytes": 1651
+        },
+        {
+          "url": "/fonts/IranSansX/fontiran.css",
+          "bytes": 3097
+        },
+        {
+          "url": "/_app/immutable/entry/start.urcSx_nX.js",
+          "bytes": 83
+        },
+        {
+          "url": "/_app/immutable/chunks/CqOlZx7g.js",
+          "bytes": 27186
+        },
+        {
+          "url": "/_app/immutable/chunks/D8rWbVJC.js",
+          "bytes": 28458
+        },
+        {
+          "url": "/_app/immutable/chunks/BjCKQkh9.js",
+          "bytes": 635
+        },
+        {
+          "url": "/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644
+        },
+        {
+          "url": "/_app/immutable/chunks/DlY6YilW.js",
+          "bytes": 365
+        },
+        {
+          "url": "/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232
+        },
+        {
+          "url": "/_app/immutable/entry/app.CeX7jagx.js",
+          "bytes": 12662
+        },
+        {
+          "url": "/_app/immutable/chunks/BF0SY9zK.js",
+          "bytes": 5338
+        },
+        {
+          "url": "/_app/immutable/chunks/D5pihBWL.js",
+          "bytes": 3765
+        },
+        {
+          "url": "/_app/immutable/chunks/CeZe5otI.js",
+          "bytes": 438
+        },
+        {
+          "url": "/_app/immutable/chunks/DbYP5l4O.js",
+          "bytes": 1812
+        },
+        {
+          "url": "/_app/immutable/chunks/yLVHHb93.js",
+          "bytes": 2365
+        },
+        {
+          "url": "/_app/immutable/nodes/0.DWIvqxFO.js",
+          "bytes": 19936
+        },
+        {
+          "url": "/_app/immutable/chunks/C9tDXhxB.js",
+          "bytes": 732
+        },
+        {
+          "url": "/_app/immutable/chunks/CdmhHItq.js",
+          "bytes": 8438
+        },
+        {
+          "url": "/_app/immutable/chunks/BNwwj1S-.js",
+          "bytes": 12390
+        },
+        {
+          "url": "/_app/immutable/chunks/DqClLhch.js",
+          "bytes": 17986
+        },
+        {
+          "url": "/_app/immutable/chunks/C9A8JUBX.js",
+          "bytes": 989
+        },
+        {
+          "url": "/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471
+        },
+        {
+          "url": "/_app/immutable/chunks/Chxur1b9.js",
+          "bytes": 1251312
+        },
+        {
+          "url": "/_app/immutable/chunks/Bh-UWLhh.js",
+          "bytes": 920
+        },
+        {
+          "url": "/_app/immutable/chunks/DLIvr8pO.js",
+          "bytes": 197
+        },
+        {
+          "url": "/_app/immutable/nodes/33.C-1JJmDv.js",
+          "bytes": 1012
+        },
+        {
+          "url": "/_app/immutable/chunks/Dr0UTSVU.js",
+          "bytes": 141
+        },
+        {
+          "url": "/_app/immutable/chunks/CVmTLwU6.js",
+          "bytes": 516995
+        },
+        {
+          "url": "/_app/immutable/assets/GuidePage.CmmFuA3O.css",
+          "bytes": 45307
+        },
+        {
+          "url": "/_app/immutable/assets/0.CKqdpeiy.css",
+          "bytes": 59427
+        },
+        {
+          "url": "/images/brands/intel.svg",
+          "bytes": 1336
+        },
+        {
+          "url": "/images/responsive/6cb5da495728bcd5-960.webp",
+          "bytes": 56850
+        },
+        {
+          "url": "/_app/immutable/chunks/D7wNF4iO.js",
+          "bytes": 508
+        },
+        {
+          "url": "/_app/immutable/chunks/BTbcJ11p.js",
+          "bytes": 50409
+        },
+        {
+          "url": "/images/brands/amd.svg",
+          "bytes": 618
+        },
+        {
+          "url": "/images/brands/nvidia.svg",
+          "bytes": 932
+        },
+        {
+          "url": "/images/brands/google.svg",
+          "bytes": 674
+        },
+        {
+          "url": "/images/brands/qualcomm.svg",
+          "bytes": 283
+        },
+        {
+          "url": "/images/brands/huawei.svg",
+          "bytes": 1029
+        },
+        {
+          "url": "/images/brands/aws.svg",
+          "bytes": 712
+        },
+        {
+          "url": "/images/brands/tenstorrent.svg",
+          "bytes": 290
+        },
+        {
+          "url": "/images/brands/cerebras.svg",
+          "bytes": 338
+        },
+        {
+          "url": "/images/brands/groq.svg",
+          "bytes": 365
+        },
+        {
+          "url": "/images/server-brands/asrock.svg",
+          "bytes": 388
+        },
+        {
+          "url": "/images/server-brands/dell.svg",
+          "bytes": 383
+        },
+        {
+          "url": "/images/server-brands/supermicro.svg",
+          "bytes": 398
+        },
+        {
+          "url": "/images/server-brands/gigabyte.svg",
+          "bytes": 282
+        },
+        {
+          "url": "/images/server-brands/hpe.svg",
+          "bytes": 395
+        },
+        {
+          "url": "/images/server-brands/lenovo.svg",
+          "bytes": 366
+        },
+        {
+          "url": "/images/server-brands/asus.svg",
+          "bytes": 379
+        },
+        {
+          "url": "/images/server-brands/fujitsu.svg",
+          "bytes": 466
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-ExtraBold.woff2",
+          "bytes": 32692
+        },
+        {
+          "url": "/fonts/IranSansX/fonts/woff2/IRANSansX-DemiBold.woff2",
+          "bytes": 32852
+        },
+        {
+          "url": "/fonts/icons/brands.woff2",
+          "bytes": 1528
+        },
+        {
+          "url": "/fonts/icons/solid.woff2",
+          "bytes": 1904
+        },
+        {
+          "url": "/site.webmanifest",
+          "bytes": 263
+        },
+        {
+          "url": "/_app/immutable/nodes/1.D3JNX3am.js",
+          "bytes": 510
+        }
+      ]
+    }
+  ]
+}

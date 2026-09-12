@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import PageHero from '$lib/components/PageHero.svelte';
   import { localizePresentation, presentations, type PresentationLocale } from '$lib/presentations';
   import { presentationCopy } from '$lib/presentation-copy';
@@ -25,7 +26,7 @@
       <a class="deck-card" href={`${base}/slides/${item.slug}/`}>
         <div class="deck-cover" class:empty={!item.cover}>
           {#if item.cover}
-            <img src={item.cover} alt={`${copy.cover} «${item.title}»`} loading="lazy" width="1600" height="900" />
+            <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${item.title}»`} loading="lazy" width="1600" height="900" />
           {:else}
             <span>{numbers.format(item.slideCount)}</span><small>{copy.slides}</small>
           {/if}

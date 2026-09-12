@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "locale": "fa",
+      "defaultColumns": 3,
+      "firstPage": 12,
+      "secondPage": 12,
+      "filtered": 1,
+      "pagination": "passed",
+      "persistence": "passed",
+      "filters": "passed"
+    },
+    {
+      "locale": "en",
+      "defaultColumns": 3,
+      "firstPage": 12,
+      "secondPage": 9,
+      "filtered": 7,
+      "pagination": "passed",
+      "persistence": "passed",
+      "filters": "passed"
+    },
+    {
+      "locale": "es",
+      "defaultColumns": 3,
+      "firstPage": 12,
+      "secondPage": 1,
+      "filtered": 7,
+      "pagination": "passed",
+      "persistence": "passed",
+      "filters": "passed"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "layouts": "passed"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "layouts": "passed"
+    }
+  ],
+  "blockedStorage": "passed",
+  "errors": []
+}

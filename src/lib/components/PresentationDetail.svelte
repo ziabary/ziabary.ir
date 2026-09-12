@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
+  import pdfSizes from '$lib/generated/pdf-sizes.json';
   import PageSeo from '$lib/components/PageSeo.svelte';
   import { onDestroy } from 'svelte';
   import { localizePresentation, type Presentation, type PresentationLocale } from '$lib/presentations';
@@ -8,7 +10,7 @@
   export let locale: PresentationLocale = 'fa';
   $: item = localizePresentation(presentation, locale);
   $: copy = presentationCopy[locale];
-  $: numbers = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale);
+  $: numbers = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale, { maximumFractionDigits: 2 });
   $: base = locale === 'fa' ? '' : `/${locale}`;
 
   let copied = false;
@@ -54,7 +56,7 @@
 
 <PageSeo
   {locale}
-  title={`${item.title} | ${copy.name}`}
+  title={`${item.title} — ${item.event ?? item.venue} | ${copy.name}`}
   description={item.summary}
   path={`${base}/slides/${item.slug}/`}
   image={item.cover ?? '/slides/enterprise-ai-governance-dba/cover.jpg'}
@@ -69,6 +71,12 @@
       <p class="eyebrow"><a href={`${base}/slides/`}>{copy.title}</a> / {item.kind}</p>
       <h1>{item.title}</h1>
       <p>{item.summary}</p>
+      {#if item.pdf}
+        <div class="intro-download">
+          <a class="button primary" href={item.pdf} hreflang="fa" type="application/pdf">{copy.download}</a>
+          <span>{locale === 'fa' ? 'فایل فارسی' : locale === 'en' ? 'PDF in Persian' : 'PDF en persa'}{item.version ? ` · ${copy.version} ${item.version}` : ''} · {numbers.format((pdfSizes as Record<string, number>)[item.pdf] / 1048576)} MiB</span>
+        </div>
+      {/if}
     </div>
   </section>
 
@@ -76,7 +84,7 @@
     <div>
       <div class:empty={!item.cover} class="presentation-cover">
         {#if item.cover}
-          <img src={item.cover} alt={`${copy.cover} «${item.title}»`} width="1600" height="900" />
+          <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${item.title}»`} width="1600" height="900" />
         {:else}
           <span>{numbers.format(item.slideCount)}</span>
           <small>{copy.slides}</small>
@@ -128,6 +136,8 @@
 </main>
 
 <style>
+  .intro-download { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
+  .intro-download span { font-size: 13px; color: var(--muted); }
   .slide-language-note { border-top: 1px solid var(--line); padding-top: 18px; margin-bottom: 20px; }
   .slide-language-note h3 { color: var(--teal); font-size: 14px; margin: 0 0 8px; }
   .slide-language-note p { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0; }

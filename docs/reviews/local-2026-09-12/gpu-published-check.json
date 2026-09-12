@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "title": "GPUs and AI servers: what to choose, and why? | Mehran Ziabary",
+      "language": "en",
+      "draftLabel": false,
+      "robots": "",
+      "alternates": [
+        "en",
+        "es",
+        "fa"
+      ],
+      "chapters": 7,
+      "tables": 2,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "title": "GPUs and AI servers: what to choose, and why? | Mehran Ziabary",
+      "language": "en",
+      "draftLabel": false,
+      "robots": "",
+      "alternates": [
+        "en",
+        "es",
+        "fa"
+      ],
+      "chapters": 7,
+      "tables": 2,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "locale": "es",
+      "width": 1440,
+      "title": "GPU y servidores de IA: ¿qué elegir y por qué? | Mehran Ziabary",
+      "language": "es",
+      "draftLabel": false,
+      "robots": "",
+      "alternates": [
+        "en",
+        "es",
+        "fa"
+      ],
+      "chapters": 7,
+      "tables": 2,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "title": "GPU y servidores de IA: ¿qué elegir y por qué? | Mehran Ziabary",
+      "language": "es",
+      "draftLabel": false,
+      "robots": "",
+      "alternates": [
+        "en",
+        "es",
+        "fa"
+      ],
+      "chapters": 7,
+      "tables": 2,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "locale": "en",
+      "devArchive": {
+        "draftLabel": false,
+        "card": "Technical notes / Compute infrastructure\nGPUs and AI servers: what to choose, and why?\n\nCompare accelerators and servers, check software support and assess performance per cost, based on real workloads.\n\n7 articles · 2 interactive resources\n→"
+      }
+    },
+    {
+      "locale": "es",
+      "devArchive": {
+        "draftLabel": false,
+        "card": "Notas técnicas / Infraestructura de cómputo\nGPU y servidores de IA: ¿qué elegir y por qué?\n\nComparar aceleradores y servidores, comprobar el soporte de software y evaluar el rendimiento por coste a partir de cargas de trabajo reales.\n\n7 artículos · 2 recursos interactivos\n→"
+      }
+    }
+  ],
+  "errors": []
+}

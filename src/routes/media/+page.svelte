@@ -1,9 +1,11 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import { onMount } from 'svelte';
   import PageHero from '$lib/components/PageHero.svelte';
   import PaginatedArchive from '$lib/components/PaginatedArchive.svelte';
   import { articles } from '$lib/content';
   import { galleryItems } from '$lib/gallery';
+  import MediaEntry from '$lib/components/MediaEntry.svelte';
   import { mediaItems, mediaSources } from '$lib/news';
   import { videoItems } from '$lib/videos';
   import GalleryCollection from '$lib/components/GalleryCollection.svelte';
@@ -27,6 +29,7 @@
       kind: article.mediaKind ?? 'یادداشت',
       summary: article.excerpt,
       url: article.external!,
+      internalUrl: `/articles/${article.slug}/`,
       date: article.date,
       faDate: article.faDate,
       coverImage: article.cover ?? null,
@@ -113,7 +116,7 @@
           class:active={activeTab === tab.id}
           onclick={() => selectTab(tab.id)}
         >
-          <span>{tab.label}</span>
+          <span id={tab.id}>{tab.label}</span>
           <small class="fa-num">{persianNumber.format(tab.count)}</small>
         </button>
       {/each}
@@ -130,31 +133,7 @@
       </div>
       <PaginatedArchive items={filtered} pageClass="media-list" resetKey={kind}>
         {#snippet item(item, index)}
-          <a href={item.url} target="_blank" rel="noreferrer">
-            <span class="media-index fa-num">{String(index + 1).padStart(2, '0')}</span>
-            <div class="media-entry">
-              <div class="media-source">
-                {#if mediaSources[item.source]}<span class="media-source-logo"><img src={mediaSources[item.source].logo} alt="" loading="lazy" /></span>{/if}
-                <span><strong>{item.source}</strong><small><span>{item.kind}</span><span class="fa-num">{item.faDate}</span></small></span>
-              </div>
-              <div class="media-entry-content">
-                {#if item.coverImage}
-                  <img
-                    class="media-cover"
-                    src={item.coverImage}
-                    alt={item.coverImageAlt ?? ''}
-                    loading="lazy"
-                    decoding="async"
-                    width="160"
-                    height="120"
-                  />
-                {/if}
-                <h2>{item.title}</h2>
-                <p>{item.summary}</p>
-              </div>
-            </div>
-            <i>↗</i>
-          </a>
+          <MediaEntry {item} {index} />
         {/snippet}
       </PaginatedArchive>
     </div>
@@ -168,7 +147,7 @@
           <a class="video-card" href={item.url} target="_blank" rel="noreferrer">
             <div class="video-card-visual" class:has-thumbnail={Boolean(item.thumbnail)}>
               {#if item.thumbnail}
-                <img src={item.thumbnail} alt="" loading="lazy" />
+                <img {...imageAttributes(item.thumbnail, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" />
               {/if}
               <i class={item.kind === 'صوت' || item.kind === 'پادکست' ? 'fa-solid fa-headphones' : 'fa-solid fa-play'} aria-hidden="true"></i>
               <span>{item.kind}</span>
@@ -192,28 +171,3 @@
     </div>
   {/if}
 </main>
-
-<style>
-  .media-entry-content {
-    display: flow-root;
-  }
-
-  .media-cover {
-    float: left;
-    width: 160px;
-    height: 120px;
-    margin: 14px 20px 12px 0;
-    object-fit: cover;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--soft);
-  }
-
-  @media (max-width: 680px) {
-    .media-cover {
-      width: 96px;
-      height: 72px;
-      margin-right: 12px;
-    }
-  }
-</style>

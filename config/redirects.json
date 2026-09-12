@@ -1,0 +1,6 @@
+[
+  { "from": "/gallery/", "to": "/media/#photos", "status": 308 },
+  { "from": "/articles/page/1/", "to": "/articles/", "status": 308 },
+  { "from": "/en/articles/page/1/", "to": "/en/articles/", "status": 308 },
+  { "from": "/es/articles/page/1/", "to": "/es/articles/", "status": 308 }
+]

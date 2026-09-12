@@ -1,4 +1,10 @@
+import { compareArticles, dateOnly, isPublished } from './publication.mjs';
 export type ArticleMeta = {
+  id?: string;
+  translationGroup?: string;
+  toc?: 'auto' | boolean;
+  headings?: Array<{ id: string; title: string; depth: number }>;
+  legacyAnchors?: string[];
   title: string;
   slug: string;
   lang: 'fa' | 'en' | 'es';
@@ -7,6 +13,9 @@ export type ArticleMeta = {
   updated?: string;
   faUpdated?: string;
   category: string;
+  topic?: string;
+  format?: string;
+  project?: string;
   excerpt: string;
   readTime: string;
   related: string[];
@@ -17,33 +26,32 @@ export type ArticleMeta = {
   showInMedia?: boolean;
   mediaKind?: string;
   draft?: boolean;
+  status?: 'planned' | 'published';
 };
 
 type MarkdownModule = {
-  default: Component;
+  default: Component<{ headingPrefix?: string }>;
   metadata: ArticleMeta;
 };
 
-const modules = import.meta.glob<MarkdownModule>('/src/lib/content/articles/*.md', {
-  eager: true
+const metadata = import.meta.glob<ArticleMeta>('/src/lib/content/articles/*.md', {
+  eager: true, import: 'metadata'
 });
 
-export const articleModules = modules;
+export const allArticleMetadata = Object.values(metadata).map(article => ({
+  ...article, id: article.id ?? `${article.lang}:${article.slug}`, date: dateOnly(article.date),
+  ...(article.updated ? { updated: dateOnly(article.updated) } : {})
+}));
+export const articles = allArticleMetadata.filter(article => isPublished(article)).sort(compareArticles);
 
-export const articles = Object.values(modules)
-  .map((module) => module.metadata)
-  .filter((article) => !article.draft)
-  .sort((a, b) => {
-    const effectiveDate = (article: ArticleMeta) => article.updated ?? article.date;
-    return effectiveDate(b).localeCompare(effectiveDate(a)) || b.date.localeCompare(a.date);
-  });
-
-export function getArticle(slug: string) {
-  return articles.find((article) => article.slug === slug);
+export function getArticle(slug: string, locale?: string) {
+  return articles.find((article) => article.slug === slug && (!locale || article.lang === locale));
 }
 
-export function getArticleModule(slug: string) {
-  const entry = Object.entries(modules).find(([, module]) => module.metadata.slug === slug);
-  return entry?.[1];
+const modules = import.meta.glob<MarkdownModule>('/src/lib/content/articles/*.md');
+export const articleModules = modules;
+export async function getArticleModule(slug: string, locale?: string) {
+  const path = Object.keys(metadata).find(path => metadata[path].slug === slug && (!locale || metadata[path].lang === locale));
+  return path ? modules[path]() : undefined;
 }
 import type { Component } from 'svelte';

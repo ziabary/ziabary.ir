@@ -1,0 +1,365 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "name": "home",
+      "title": "مهران ضیابری | سید محمد محمدزاده ضیابری",
+      "path": "/",
+      "overflow": false,
+      "bytes": 21951,
+      "headings": 4
+    },
+    {
+      "width": 390,
+      "name": "archive",
+      "title": "نوشته‌ها | مهران ضیابری",
+      "path": "/articles/",
+      "overflow": false,
+      "bytes": 32245,
+      "headings": 0
+    },
+    {
+      "width": 390,
+      "name": "article-fa",
+      "title": "سازمان ملی هوش مصنوعی؛ از تأسیس قانونی تا اثرگذاری ملی | مهران ضیابری",
+      "path": "/articles/national-ai-organization-from-law-to-impact/",
+      "overflow": false,
+      "bytes": 30032,
+      "headings": 9
+    },
+    {
+      "width": 390,
+      "name": "article-en",
+      "title": "Apache “No space left on device” and mod_jk_log_lock | Mehran Ziabary",
+      "path": "/en/articles/apache-mod-jk-log-lock/",
+      "overflow": false,
+      "bytes": 15290,
+      "headings": 1
+    },
+    {
+      "width": 390,
+      "name": "translation",
+      "title": "When people cannot see the data, has their access really been removed? | Mehran Ziabary",
+      "path": "/en/articles/ztai-indirect-data-access-en/",
+      "overflow": false,
+      "bytes": 34246,
+      "headings": 11
+    },
+    {
+      "width": 390,
+      "name": "planned",
+      "title": "اپراتور هوش مصنوعی | فنی‌جات مهران ضیابری",
+      "path": "/guides/ai-operator/",
+      "overflow": false,
+      "bytes": 11762,
+      "headings": 0
+    },
+    {
+      "width": 390,
+      "name": "gpu",
+      "title": "GPU و سرور هوش مصنوعی؛ چه انتخاب کنیم و چرا؟ | فنی‌جات مهران ضیابری",
+      "path": "/guides/gpu-selection/",
+      "overflow": false,
+      "bytes": 403302,
+      "headings": 21
+    },
+    {
+      "width": 390,
+      "name": "media",
+      "title": "بازتاب‌ها | مهران ضیابری",
+      "path": "/media/",
+      "overflow": false,
+      "bytes": 53910,
+      "headings": 31
+    },
+    {
+      "width": 390,
+      "name": "presentation",
+      "title": "حکمرانی هوش مصنوعی سازمانی | مهران ضیابری",
+      "path": "/slides/enterprise-ai-governance-dba/",
+      "overflow": false,
+      "bytes": 13135,
+      "headings": 2
+    },
+    {
+      "width": 390,
+      "name": "resume",
+      "title": "رزومه سید محمد محمدزاده ضیابری | مهران ضیابری",
+      "path": "/resume/",
+      "overflow": false,
+      "bytes": 14226,
+      "headings": 1
+    },
+    {
+      "width": 768,
+      "name": "home",
+      "title": "مهران ضیابری | سید محمد محمدزاده ضیابری",
+      "path": "/",
+      "overflow": false,
+      "bytes": 21951,
+      "headings": 4
+    },
+    {
+      "width": 768,
+      "name": "archive",
+      "title": "نوشته‌ها | مهران ضیابری",
+      "path": "/articles/",
+      "overflow": false,
+      "bytes": 32245,
+      "headings": 0
+    },
+    {
+      "width": 768,
+      "name": "article-fa",
+      "title": "سازمان ملی هوش مصنوعی؛ از تأسیس قانونی تا اثرگذاری ملی | مهران ضیابری",
+      "path": "/articles/national-ai-organization-from-law-to-impact/",
+      "overflow": false,
+      "bytes": 30032,
+      "headings": 9
+    },
+    {
+      "width": 768,
+      "name": "article-en",
+      "title": "Apache “No space left on device” and mod_jk_log_lock | Mehran Ziabary",
+      "path": "/en/articles/apache-mod-jk-log-lock/",
+      "overflow": false,
+      "bytes": 15290,
+      "headings": 1
+    },
+    {
+      "width": 768,
+      "name": "translation",
+      "title": "When people cannot see the data, has their access really been removed? | Mehran Ziabary",
+      "path": "/en/articles/ztai-indirect-data-access-en/",
+      "overflow": false,
+      "bytes": 34246,
+      "headings": 11
+    },
+    {
+      "width": 768,
+      "name": "planned",
+      "title": "اپراتور هوش مصنوعی | فنی‌جات مهران ضیابری",
+      "path": "/guides/ai-operator/",
+      "overflow": false,
+      "bytes": 11762,
+      "headings": 0
+    },
+    {
+      "width": 768,
+      "name": "gpu",
+      "title": "GPU و سرور هوش مصنوعی؛ چه انتخاب کنیم و چرا؟ | فنی‌جات مهران ضیابری",
+      "path": "/guides/gpu-selection/",
+      "overflow": false,
+      "bytes": 403302,
+      "headings": 21
+    },
+    {
+      "width": 768,
+      "name": "media",
+      "title": "بازتاب‌ها | مهران ضیابری",
+      "path": "/media/",
+      "overflow": false,
+      "bytes": 53910,
+      "headings": 31
+    },
+    {
+      "width": 768,
+      "name": "presentation",
+      "title": "حکمرانی هوش مصنوعی سازمانی | مهران ضیابری",
+      "path": "/slides/enterprise-ai-governance-dba/",
+      "overflow": false,
+      "bytes": 13135,
+      "headings": 2
+    },
+    {
+      "width": 768,
+      "name": "resume",
+      "title": "رزومه سید محمد محمدزاده ضیابری | مهران ضیابری",
+      "path": "/resume/",
+      "overflow": false,
+      "bytes": 14226,
+      "headings": 1
+    },
+    {
+      "width": 1280,
+      "name": "home",
+      "title": "مهران ضیابری | سید محمد محمدزاده ضیابری",
+      "path": "/",
+      "overflow": false,
+      "bytes": 21951,
+      "headings": 4
+    },
+    {
+      "width": 1280,
+      "name": "archive",
+      "title": "نوشته‌ها | مهران ضیابری",
+      "path": "/articles/",
+      "overflow": false,
+      "bytes": 32245,
+      "headings": 0
+    },
+    {
+      "width": 1280,
+      "name": "article-fa",
+      "title": "سازمان ملی هوش مصنوعی؛ از تأسیس قانونی تا اثرگذاری ملی | مهران ضیابری",
+      "path": "/articles/national-ai-organization-from-law-to-impact/",
+      "overflow": false,
+      "bytes": 30032,
+      "headings": 9
+    },
+    {
+      "width": 1280,
+      "name": "article-en",
+      "title": "Apache “No space left on device” and mod_jk_log_lock | Mehran Ziabary",
+      "path": "/en/articles/apache-mod-jk-log-lock/",
+      "overflow": false,
+      "bytes": 15290,
+      "headings": 1
+    },
+    {
+      "width": 1280,
+      "name": "translation",
+      "title": "When people cannot see the data, has their access really been removed? | Mehran Ziabary",
+      "path": "/en/articles/ztai-indirect-data-access-en/",
+      "overflow": false,
+      "bytes": 34246,
+      "headings": 11
+    },
+    {
+      "width": 1280,
+      "name": "planned",
+      "title": "اپراتور هوش مصنوعی | فنی‌جات مهران ضیابری",
+      "path": "/guides/ai-operator/",
+      "overflow": false,
+      "bytes": 11762,
+      "headings": 0
+    },
+    {
+      "width": 1280,
+      "name": "gpu",
+      "title": "GPU و سرور هوش مصنوعی؛ چه انتخاب کنیم و چرا؟ | فنی‌جات مهران ضیابری",
+      "path": "/guides/gpu-selection/",
+      "overflow": false,
+      "bytes": 403302,
+      "headings": 21
+    },
+    {
+      "width": 1280,
+      "name": "media",
+      "title": "بازتاب‌ها | مهران ضیابری",
+      "path": "/media/",
+      "overflow": false,
+      "bytes": 53910,
+      "headings": 31
+    },
+    {
+      "width": 1280,
+      "name": "presentation",
+      "title": "حکمرانی هوش مصنوعی سازمانی | مهران ضیابری",
+      "path": "/slides/enterprise-ai-governance-dba/",
+      "overflow": false,
+      "bytes": 13135,
+      "headings": 2
+    },
+    {
+      "width": 1280,
+      "name": "resume",
+      "title": "رزومه سید محمد محمدزاده ضیابری | مهران ضیابری",
+      "path": "/resume/",
+      "overflow": false,
+      "bytes": 14226,
+      "headings": 1
+    },
+    {
+      "width": 1440,
+      "name": "home",
+      "title": "مهران ضیابری | سید محمد محمدزاده ضیابری",
+      "path": "/",
+      "overflow": false,
+      "bytes": 21951,
+      "headings": 4
+    },
+    {
+      "width": 1440,
+      "name": "archive",
+      "title": "نوشته‌ها | مهران ضیابری",
+      "path": "/articles/",
+      "overflow": false,
+      "bytes": 32245,
+      "headings": 0
+    },
+    {
+      "width": 1440,
+      "name": "article-fa",
+      "title": "سازمان ملی هوش مصنوعی؛ از تأسیس قانونی تا اثرگذاری ملی | مهران ضیابری",
+      "path": "/articles/national-ai-organization-from-law-to-impact/",
+      "overflow": false,
+      "bytes": 30032,
+      "headings": 9
+    },
+    {
+      "width": 1440,
+      "name": "article-en",
+      "title": "Apache “No space left on device” and mod_jk_log_lock | Mehran Ziabary",
+      "path": "/en/articles/apache-mod-jk-log-lock/",
+      "overflow": false,
+      "bytes": 15290,
+      "headings": 1
+    },
+    {
+      "width": 1440,
+      "name": "translation",
+      "title": "When people cannot see the data, has their access really been removed? | Mehran Ziabary",
+      "path": "/en/articles/ztai-indirect-data-access-en/",
+      "overflow": false,
+      "bytes": 34246,
+      "headings": 11
+    },
+    {
+      "width": 1440,
+      "name": "planned",
+      "title": "اپراتور هوش مصنوعی | فنی‌جات مهران ضیابری",
+      "path": "/guides/ai-operator/",
+      "overflow": false,
+      "bytes": 11762,
+      "headings": 0
+    },
+    {
+      "width": 1440,
+      "name": "gpu",
+      "title": "GPU و سرور هوش مصنوعی؛ چه انتخاب کنیم و چرا؟ | فنی‌جات مهران ضیابری",
+      "path": "/guides/gpu-selection/",
+      "overflow": false,
+      "bytes": 403302,
+      "headings": 21
+    },
+    {
+      "width": 1440,
+      "name": "media",
+      "title": "بازتاب‌ها | مهران ضیابری",
+      "path": "/media/",
+      "overflow": false,
+      "bytes": 53910,
+      "headings": 31
+    },
+    {
+      "width": 1440,
+      "name": "presentation",
+      "title": "حکمرانی هوش مصنوعی سازمانی | مهران ضیابری",
+      "path": "/slides/enterprise-ai-governance-dba/",
+      "overflow": false,
+      "bytes": 13135,
+      "headings": 2
+    },
+    {
+      "width": 1440,
+      "name": "resume",
+      "title": "رزومه سید محمد محمدزاده ضیابری | مهران ضیابری",
+      "path": "/resume/",
+      "overflow": false,
+      "bytes": 14226,
+      "headings": 1
+    }
+  ],
+  "events": []
+}

@@ -31,7 +31,7 @@
     '/es/thought/': { title: 'Perspectiva | Mehran Ziabary', description: 'La perspectiva de Mehran Ziabary sobre tecnología, IA, arquitectura y gobernanza.', image: '/images/profile/mehran-ziabary-formal.png', locale: 'es' }
   };
 
-  $: defaultSeo = defaultPages[data.pathname];
+  $: defaultSeo = (/\/articles\/$/.test(data.pathname) || data.pathname === '/gallery/') ? undefined : defaultPages[data.pathname];
 </script>
 
 {#if defaultSeo}

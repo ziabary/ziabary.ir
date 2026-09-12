@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import PageHero from '$lib/components/PageHero.svelte';
   import englishResume from '$lib/resumes/en.json';
   import spanishResume from '$lib/resumes/es.json';
@@ -6,6 +7,7 @@
   export let locale: 'en' | 'es';
   // Independent editorial editions sourced from their respective CV PDFs.
   // Sharing the view does not imply that either résumé mirrors Persian.
+  // Languages and expertise were explicitly adapted from Persian at the owner's request.
   const resumes = { en: englishResume, es: spanishResume };
   $: copy = resumes[locale];
 </script>
@@ -18,7 +20,7 @@
 <main class="resume-page localized-resume" dir="ltr">
   <PageHero eyebrow={copy.eyebrow} title={copy.title} lead={copy.lead} />
   <section class="wrap resume-intro">
-    <div class="resume-photo"><img src="/images/profile/mehran-ziabary.jpg" alt={copy.name} /></div>
+    <div class="resume-photo"><img {...imageAttributes('/images/profile/mehran-ziabary.jpg', '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={copy.name} /></div>
     <div>
       <p class="eyebrow">{copy.summaryLabel}</p>
       <h2>{copy.name}<span>{copy.legalName}</span></h2>
@@ -56,6 +58,12 @@
         {/each}
       </div>
     </section>
+    <section id="expertise" aria-labelledby="expertise-heading">
+      <h2 class="eyebrow" id="expertise-heading">{copy.expertiseLabel}</h2>
+      <ul class="cv-expertise">
+        {#each copy.expertise as area}<li>{area}</li>{/each}
+      </ul>
+    </section>
     <section aria-labelledby="publications-heading">
       <h2 class="eyebrow" id="publications-heading">{copy.publicationsLabel}</h2>
       <ol class="cv-publications">
@@ -71,6 +79,12 @@
           </li>
         {/each}
       </ol>
+    </section>
+    <section id="languages" aria-labelledby="languages-heading">
+      <h2 class="eyebrow" id="languages-heading">{copy.languagesLabel}</h2>
+      <dl class="cv-languages">
+        {#each copy.languages as language}<div><dt>{language.name}</dt><dd>{language.level}</dd></div>{/each}
+      </dl>
     </section>
   </div>
 </main>
@@ -95,6 +109,13 @@
   .experience-entry ul { padding-inline-start: 20px; margin: 12px 0 0; }
   .experience-entry li { margin-block: 8px; }
   .education-list article { padding-block: 22px; border-bottom: 1px solid var(--line); }
+  .cv-expertise, .cv-languages { min-width: 0; display: grid; gap: 1px; padding: 0; margin: 0; background: var(--line); border: 1px solid var(--line); }
+  .cv-expertise { grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; }
+  .cv-expertise li { padding: 20px; background: var(--paper); font-size: 14px; line-height: 1.8; }
+  .cv-languages { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cv-languages > div { padding: 16px; background: var(--paper); }
+  .cv-languages dt { font-size: 14px; font-weight: 600; }
+  .cv-languages dd { margin: 4px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
   .cv-publications { padding: 0; margin: 0; list-style: none; }
   .cv-publications li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 18px; padding-block: 22px; border-bottom: 1px solid var(--line); }
   .publication-year { color: var(--teal); font-size: 12px; padding-top: 3px; }
@@ -102,5 +123,5 @@
   .cv-publications p { font-size: 13px; line-height: 1.8; color: var(--muted); margin: 6px 0; }
   .cv-publications a { display: inline-block; font-size: 12px; color: var(--teal); overflow-wrap: anywhere; }
   @media(max-width: 980px) { .experience-entry { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
-  @media(max-width: 680px) { .resume-intro { padding-block: 36px; } .resume-photo { max-width: 320px; height: 360px; } }
+  @media(max-width: 680px) { .resume-intro { padding-block: 36px; } .resume-photo { max-width: 320px; height: 360px; } .cv-expertise, .cv-languages { grid-template-columns: minmax(0, 1fr); } }
 </style>

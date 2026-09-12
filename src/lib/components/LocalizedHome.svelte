@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import ArticleCard from '$lib/components/ArticleCard.svelte';
   import { articles } from '$lib/content';
   import HomeTopics from '$lib/components/HomeTopics.svelte';
@@ -66,13 +67,13 @@
       <small class="official-name">{copy.official}</small>
       <p class="hero-lead">{copy.lead}</p>
       <div class="hero-roles">
-        <div class="hero-role-card commission-role"><img src="/images/organizations/nezamsenfi-ai.png" alt="" /><div><b>{copy.commissionRole}</b><span>{copy.commissionOrg}</span></div></div>
-        <div class="hero-role-card targoman-role"><img src="/images/organizations/targoman-logo.png" alt="" /><div><b>{copy.targomanRole}</b><span>{copy.targomanOrg}</span></div></div>
-        <div class="hero-role-card hoomas-role"><img src="/images/organizations/hoomas-logo.png" alt="" /><div><b>{copy.hoomasRole}</b><span>{copy.hoomasOrg}</span></div></div>
+        <div class="hero-role-card commission-role"><img {...imageAttributes('/images/organizations/nezamsenfi-ai.png', '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><div><b>{copy.commissionRole}</b><span>{copy.commissionOrg}</span></div></div>
+        <div class="hero-role-card targoman-role"><img {...imageAttributes('/images/organizations/targoman-logo.png', '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><div><b>{copy.targomanRole}</b><span>{copy.targomanOrg}</span></div></div>
+        <div class="hero-role-card hoomas-role"><img {...imageAttributes('/images/organizations/hoomas-logo.png', '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><div><b>{copy.hoomasRole}</b><span>{copy.hoomasOrg}</span></div></div>
       </div>
       <div class="actions"><a class="button primary" href="{base}/articles/">{copy.writingButton}</a><a class="button ghost" href="{base}/resume/">{copy.resumeButton}</a></div>
     </div>
-    <figure class="portrait-card"><img src="/images/profile/mehran-ziabary-formal.png" alt="Mehran Ziabary" /><figcaption><b>{copy.experience}</b><span>{copy.experienceLine}</span></figcaption></figure>
+    <figure class="portrait-card"><img {...imageAttributes('/images/profile/mehran-ziabary-formal.png', '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="Mehran Ziabary" /><figcaption><b>{copy.experience}</b><span>{copy.experienceLine}</span></figcaption></figure>
   </section>
 
   <section class="statement-section"><div class="wrap statement-grid"><p class="section-no">{copy.thoughtNo}</p><div><blockquote>{copy.statement}</blockquote><a class="text-link" href="{base}/thought/">{copy.thoughtLink}</a></div></div></section>

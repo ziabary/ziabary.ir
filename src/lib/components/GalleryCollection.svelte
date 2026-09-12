@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
   import { onMount } from 'svelte';
   import type { GalleryItem, GalleryLocale } from '$lib/gallery';
 
@@ -16,6 +17,20 @@
   $: percentFormat = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale, { style: 'percent' });
   $: dateFormat = new Intl.DateTimeFormat(locale === 'es' ? 'es-ES' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
   const dateLabel = (item: GalleryItem) => locale === 'fa' ? item.faDate : dateFormat.format(new Date(`${item.date}T00:00:00Z`));
+
+  function previewAttributes(src: string, thumbnail = false) {
+    const attributes = imageAttributes(src);
+    const ratio = attributes.width && attributes.height ? attributes.width / attributes.height : 4 / 3;
+    if (thumbnail) return { ...attributes, sizes: `${Math.ceil(Math.max(58, 41 * ratio))}px` };
+
+    // Cover cropping can scale a wide photo beyond the element's visible width.
+    // Match the two-column gallery inside .wrap, and its single-column mobile layout.
+    const scale = Math.max(1, ratio / (4 / 3));
+    const desktop = compact ? `${Math.ceil(579 * scale)}px` : `max(579px, ${Math.ceil(390 * ratio)}px)`;
+    const tablet = compact ? `calc((50vw - 35px) * ${scale})` : `max(calc(50vw - 35px), ${Math.ceil(390 * ratio)}px)`;
+    const mobile = compact ? `calc((100vw - 30px) * ${scale})` : `max(calc(100vw - 30px), ${Math.ceil(280 * ratio)}px)`;
+    return { ...attributes, sizes: `(min-width: 1228px) ${desktop}, (min-width: 681px) ${tablet}, ${mobile}` };
+  }
 
   let activeItem: GalleryItem | null = null;
   let activeIndex = 0;
@@ -74,7 +89,7 @@
   {#each items as item}
     <figure>
       <button class="gallery-cover" type="button" on:click={() => open(item)} aria-label={`${copy.zoom}: ${item.title}`}>
-        <img src={item.images[0].src} alt={item.images[0].alt} loading="lazy" />
+        <img {...previewAttributes(item.images[0].src)} alt={item.images[0].alt} loading="lazy" />
         <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i> {copy.zoom}</span>
         {#if item.images.length > 1}
           <span class="image-count"><i class="fa-regular fa-images" aria-hidden="true"></i> {numberFormat.format(item.images.length)} {copy.images}</span>
@@ -127,7 +142,7 @@
           <div class="lightbox-thumbs">
             {#each activeItem.images as image, index}
               <button class:active={index === activeIndex} type="button" on:click={() => { activeIndex = index; zoom = 1; }} aria-label={`${copy.image} ${numberFormat.format(index + 1)}`}>
-                <img src={image.src} alt="" />
+                <img {...previewAttributes(image.src, true)} alt="" />
               </button>
             {/each}
           </div>

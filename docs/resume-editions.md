@@ -14,6 +14,13 @@ When a CV is replaced, review that edition's JSON and PDF download link together
 Keep intentional differences between editions. Do not infer missing dates,
 language proficiency, awards or association roles from the other résumé.
 
+On 12 September 2026, the owner explicitly requested English and Spanish
+versions of the Persian page's six areas of expertise and six languages.
+Those two sections now use editorial translations of the Persian entries,
+including the same native, professional and basic proficiency levels.
+They are stored in each edition's JSON; this addition does not change the
+independent sources for experience, dates, education or publications.
+
 The personal phone number belongs only in the downloadable CV files. Do not
 copy it into résumé JSON, page content, contact links or structured data; public
 web pages use email and LinkedIn instead.

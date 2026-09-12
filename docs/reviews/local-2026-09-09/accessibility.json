@@ -1,0 +1,114 @@
+{
+  "contrastSamples": [
+    {
+      "theme": "light",
+      "path": "/articles/",
+      "ratios": [
+        {
+          "selector": ".archive-row p",
+          "color": "rgb(93, 112, 116)",
+          "ratio": 4.81
+        },
+        {
+          "selector": ".row-meta",
+          "color": "rgb(8, 115, 111)",
+          "ratio": 5.26
+        },
+        {
+          "selector": ".text-link",
+          "color": "rgb(8, 115, 111)",
+          "ratio": 5.26
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "path": "/media/",
+      "ratios": [
+        {
+          "selector": ".media-row p",
+          "color": "rgb(93, 112, 116)",
+          "ratio": 4.81
+        },
+        {
+          "selector": ".entry-actions a",
+          "color": "rgb(8, 115, 111)",
+          "ratio": 5.26
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "path": "/articles/",
+      "ratios": [
+        {
+          "selector": ".archive-row p",
+          "color": "rgb(165, 184, 182)",
+          "ratio": 8.72
+        },
+        {
+          "selector": ".row-meta",
+          "color": "rgb(118, 201, 195)",
+          "ratio": 9.39
+        },
+        {
+          "selector": ".text-link",
+          "color": "rgb(118, 201, 195)",
+          "ratio": 9.39
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "path": "/media/",
+      "ratios": [
+        {
+          "selector": ".media-row p",
+          "color": "rgb(165, 184, 182)",
+          "ratio": 8.72
+        },
+        {
+          "selector": ".entry-actions a",
+          "color": "rgb(118, 201, 195)",
+          "ratio": 9.39
+        }
+      ]
+    }
+  ],
+  "keyboard": [
+    {
+      "id": "gpu-comparison-table",
+      "left": 0,
+      "width": 331,
+      "scrollWidth": 1277,
+      "focused": true,
+      "after": -40,
+      "passed": true
+    },
+    {
+      "id": "server-comparison-table",
+      "left": 0,
+      "width": 331,
+      "scrollWidth": 1525,
+      "focused": true,
+      "after": -40,
+      "passed": true
+    }
+  ],
+  "csv": [
+    {
+      "id": "gpu-comparison-table",
+      "count": 2,
+      "equal": true,
+      "length": 48997,
+      "rows": 62
+    },
+    {
+      "id": "server-comparison-table",
+      "count": 2,
+      "equal": true,
+      "length": 13761,
+      "rows": 23
+    }
+  ]
+}

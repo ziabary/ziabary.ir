@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { imageAttributes } from '$lib/images';
+  import resume from '$lib/resumes/fa.json';
+  const roles = ['commission', 'targoman', 'hoomas'].map(id => resume.currentRoles.find(role => role.id === id)!);
   import ArticleCard from '$lib/components/ArticleCard.svelte';
   import { articles } from '$lib/content';
   import HomeTopics from '$lib/components/HomeTopics.svelte';
@@ -21,24 +24,18 @@
       <h1>مهران ضیابری</h1>
       <p class="hero-lead">مدیر فناوری و پژوهشگر هوش مصنوعی؛ با تمرکز بر معماری سامانه‌ها، تصمیم‌گیری سازمانی و حکمرانی فناوری.</p>
       <div class="hero-roles">
-        <div class="hero-role-card commission-role">
-          <img src="/images/organizations/nezamsenfi-ai.png" alt="نشان کمیسیون هوش مصنوعی و علم‌داده نصر تهران" />
-          <div><b>رئیس کمیسیون هوش مصنوعی و علم‌داده</b><span>سازمان نظام صنفی رایانه‌ای استان تهران</span></div>
-        </div>
-        <div class="hero-role-card targoman-role">
-          <img src="/images/organizations/targoman-logo.png" alt="نشان شرکت پردازش هوشمند ترگمان" />
-          <div><b>هم‌بنیان‌گذار و مدیرعامل</b><span>شرکت دانش‌بنیان پردازش هوشمند ترگمان</span></div>
-        </div>
-        <div class="hero-role-card hoomas-role">
-          <img src="/images/organizations/hoomas-logo.png" alt="نشان شرکت تسهیلگران صادرات هوش مصنوعی" />
-          <div><b>معاون فنی</b><span>شرکت تسهیلگران صادرات هوش مصنوعی (هومص)</span></div>
-        </div>
+        {#each roles as role}
+          <div class="hero-role-card {role.id}-role">
+            <img {...imageAttributes(role.logo, '(min-width: 980px) 580px, calc(100vw - 32px)')} alt={`نشان ${role.organization}`} width="58" height="58" />
+            <div><b>{role.role}</b><span>{role.organization}</span></div>
+          </div>
+        {/each}
       </div>
       <div class="actions"><a class="button primary" href="/articles/">خواندن نوشته‌ها</a><a class="button ghost" href="/resume/">رزومه</a></div>
     </div>
     <figure class="portrait-card">
-      <img src="/images/profile/mehran-ziabary-formal.png" alt="پرتره رسمی مهران ضیابری" />
-      <figcaption><b>بیش از ۲۸ سال تجربه</b><span>از الکترونیک و رباتیک تا امنیت شبکه، هوش مصنوعی و حکمرانی فناوری</span></figcaption>
+      <img {...imageAttributes('/images/profile/mehran-ziabary-formal.png', '(min-width: 980px) 580px, calc(100vw - 32px)')} alt="پرتره رسمی مهران ضیابری" />
+      <figcaption><b>{resume.experienceLabel}</b><span>از الکترونیک و رباتیک تا امنیت شبکه، هوش مصنوعی و حکمرانی فناوری</span></figcaption>
     </figure>
   </section>
 
@@ -60,15 +57,15 @@
           <a href={item.url} target="_blank" rel="noreferrer">
             <div class="home-media-cover" class:source-cover={!item.coverImage}>
               {#if item.coverImage}
-                <img src={item.coverImage} alt={item.coverImageAlt ?? item.title} loading="lazy" width="640" height="360" />
+                <img {...imageAttributes(item.coverImage, '(min-width: 980px) 580px, calc(100vw - 32px)')} alt={item.coverImageAlt ?? item.title} loading="lazy" width="640" height="360" />
               {:else if mediaSources[item.source]}
-                <img src={mediaSources[item.source].logo} alt={`نشان ${item.source}`} loading="lazy" width="160" height="160" />
+                <img {...imageAttributes(mediaSources[item.source].logo, '(min-width: 980px) 580px, calc(100vw - 32px)')} alt={`نشان ${item.source}`} loading="lazy" width="160" height="160" />
               {:else}
                 <i class="fa-regular fa-newspaper" aria-hidden="true"></i>
               {/if}
             </div>
             <div class="home-media-copy">
-              <span class="media-row-source">{#if mediaSources[item.source]}<img src={mediaSources[item.source].logo} alt="" loading="lazy" />{/if}<strong>{item.source}</strong><small>{item.kind}</small></span>
+              <span class="media-row-source">{#if mediaSources[item.source]}<img {...imageAttributes(mediaSources[item.source].logo, '(min-width: 980px) 580px, calc(100vw - 32px)')} alt="" loading="lazy" />{/if}<strong>{item.source}</strong><small>{item.kind}</small></span>
               <b>{item.title}</b>
               <p class="home-media-summary">{item.summary}</p>
               <div class="home-media-meta"><time datetime={item.date}>{item.faDate}</time><span>خواندن در {item.source} ↗</span></div>

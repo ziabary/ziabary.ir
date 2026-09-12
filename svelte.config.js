@@ -1,10 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
+import markdownImages from './scripts/markdown-images.mjs';
+import markdownHeadings from './scripts/markdown-headings.mjs';
 import packageJson from './package.json' with { type: 'json' };
 
 export default {
   extensions: ['.svelte', '.svx', '.md'],
-  preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
+  preprocess: [mdsvex({ extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages] })],
   kit: {
     // SvelteKit otherwise uses Date.now() as the version name. That timestamp is
     // embedded in the client runtime and gives unchanged JS files a new hash on

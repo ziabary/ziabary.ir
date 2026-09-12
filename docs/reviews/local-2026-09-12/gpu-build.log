@@ -1,0 +1,829 @@
+
+> ziabary-platform@0.1.0 build
+> npm run prepare:content && vite build && node scripts/generate-sitemap.mjs && npm run verify:sitemap && node scripts/verify-structured-data.mjs
+
+
+> ziabary-platform@0.1.0 prepare:content
+> npm run prepare:assets && node scripts/generate-search-index.mjs
+
+
+> ziabary-platform@0.1.0 prepare:assets
+> node scripts/prepare-assets.mjs
+
+Prepared 346 raster originals; 11 PDF sizes. Originals retained.
+Search fa: 68 published entries.
+Search en: 34 published entries.
+Search es: 26 published entries.
+vite v7.3.6 building ssr environment for production...
+transforming...
+✓ 394 modules transformed.
+rendering chunks...
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/accessing-legacy-numenta-content.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-cosmetic-surgery-or-chemotherapy.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-data-confidentiality-safe-processing.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-from-gitex-to-parliament.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-infrastructure-security-starts-with-kernel-and-gpu.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-operator-model-private-sector.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/air-gap-moves-trust-boundary.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/apache-mod-jk-log-lock.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/architecture-is-governance.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ayar-hoomas.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/building-targoman-without-patronage.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/china-travelogue-part-1.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/china-travelogue-part-2.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/choosing-gpu-for-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/choosing-gpu-for-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/choosing-gpu-for-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/configuration-drift-attestation-and-rollback.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/construir-targoman-sin-padrinos.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/containers-are-not-security-boundaries.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/crypto-shared-portfolio-profit.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/cuando-un-otp-por-sms-reduce-la-seguridad.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-ecosystem-regulation-players.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-regulation-balance.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-regulation-intergroup-conflicts.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-regulation-intragroup-conflicts.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dgx-and-standard-gpu-servers-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dgx-and-standard-gpu-servers-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dgx-and-standard-gpu-servers.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dynamic-password-fraud.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/elecomp-29-from-technology-to-synergy.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-stig-cis-to-rbac.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-zero-trust-to-zero-trust-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-zero-trust-to-zero-trust-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-zero-trust-to-zero-trust-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gitex-2025-report.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/global-data-regulation-experiences.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/google-used-targoman.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-server-platform-components-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-server-platform-components-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-server-platform-components.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-types-for-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-types-for-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-types-for-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/htm-papers-and-books.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/install-dgtechnics-smart-hdtv-linux.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/install-nupic-opensuse.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/install-tbs6980-tbs6981-linux.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/int8-or-fp8-real-gpu-support-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/int8-or-fp8-real-gpu-support-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/int8-or-fp8-real-gpu-support.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/investment-in-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-ai-ranking-analysis.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-ai-top-ten-roadmap.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-israel-war-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-third-generation-warfare.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/language-identification-reading-list.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/legacy-migration-does-not-remove-risk.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/linux-distribution-as-security-governance.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/longest-bachelors-degree.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/mlops-foundation-of-zero-trust-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/mlops-foundation-of-zero-trust-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/mlops-foundation-of-zero-trust-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/national-ai-organization-from-law-to-impact.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/national-ai-organization-not-headquarters.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/national-ai-platform.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/noafarin-plan.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/one-linux-hardening-policy-does-not-fit-all.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-gpu-server-selection-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-gpu-server-selection-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-gpu-server-selection.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-vs-sxm-for-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-vs-sxm-for-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-vs-sxm-for-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/secure-rag-agent.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/seventy-million-words-a-day.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/slow-ai-in-iran.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/sms-otp-security-design.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/software-raid-opensuse.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/targoman-transformer-update.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/targoman-without-rent.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/third-revolution-in-warfare.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/why-shamsa.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/xaas-tax-laws.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-maturity-model-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-maturity-model-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-maturity-model.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-principles-and-controls-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-principles-and-controls-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-principles-and-controls.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ztai-indirect-data-access-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ztai-indirect-data-access-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ztai-indirect-data-access.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 443 modules transformed.
+rendering chunks...
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/accessing-legacy-numenta-content.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-cosmetic-surgery-or-chemotherapy.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-data-confidentiality-safe-processing.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-from-gitex-to-parliament.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-infrastructure-security-starts-with-kernel-and-gpu.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ai-operator-model-private-sector.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/air-gap-moves-trust-boundary.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/apache-mod-jk-log-lock.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/architecture-is-governance.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ayar-hoomas.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/building-targoman-without-patronage.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/china-travelogue-part-1.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/china-travelogue-part-2.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/choosing-gpu-for-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/choosing-gpu-for-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/choosing-gpu-for-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/configuration-drift-attestation-and-rollback.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/construir-targoman-sin-padrinos.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/containers-are-not-security-boundaries.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/crypto-shared-portfolio-profit.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/cuando-un-otp-por-sms-reduce-la-seguridad.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-ecosystem-regulation-players.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-regulation-balance.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-regulation-intergroup-conflicts.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/data-regulation-intragroup-conflicts.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dgx-and-standard-gpu-servers-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dgx-and-standard-gpu-servers-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dgx-and-standard-gpu-servers.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/dynamic-password-fraud.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/elecomp-29-from-technology-to-synergy.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-stig-cis-to-rbac.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-zero-trust-to-zero-trust-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-zero-trust-to-zero-trust-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/from-zero-trust-to-zero-trust-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gitex-2025-report.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/global-data-regulation-experiences.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/google-used-targoman.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-server-platform-components-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-server-platform-components-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-server-platform-components.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-types-for-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-types-for-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/gpu-types-for-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/htm-papers-and-books.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/install-dgtechnics-smart-hdtv-linux.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/install-nupic-opensuse.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/install-tbs6980-tbs6981-linux.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/int8-or-fp8-real-gpu-support-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/int8-or-fp8-real-gpu-support-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/int8-or-fp8-real-gpu-support.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/investment-in-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-ai-ranking-analysis.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-ai-top-ten-roadmap.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-israel-war-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/iran-third-generation-warfare.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/language-identification-reading-list.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/legacy-migration-does-not-remove-risk.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/linux-distribution-as-security-governance.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/longest-bachelors-degree.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/mlops-foundation-of-zero-trust-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/mlops-foundation-of-zero-trust-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/mlops-foundation-of-zero-trust-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/national-ai-organization-from-law-to-impact.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/national-ai-organization-not-headquarters.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/national-ai-platform.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/noafarin-plan.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/one-linux-hardening-policy-does-not-fit-all.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-gpu-server-selection-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-gpu-server-selection-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-gpu-server-selection.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-vs-sxm-for-ai-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-vs-sxm-for-ai-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/pcie-vs-sxm-for-ai.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/secure-rag-agent.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/seventy-million-words-a-day.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/slow-ai-in-iran.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/sms-otp-security-design.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/software-raid-opensuse.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/targoman-transformer-update.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/targoman-without-rent.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/third-revolution-in-warfare.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/why-shamsa.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/xaas-tax-laws.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-maturity-model-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-maturity-model-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-maturity-model.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-principles-and-controls-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-principles-and-controls-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/zero-trust-ai-principles-and-controls.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ztai-indirect-data-access-en.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ztai-indirect-data-access-es.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+[plugin vite:reporter] 
+(!) /home/user/Projects/ziabary-platform-sveltekit/src/lib/content/articles/ztai-indirect-data-access.md is dynamically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts but also statically imported by /home/user/Projects/ziabary-platform-sveltekit/src/lib/content.ts, dynamic import will not move module into another chunk.
+
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                                                  0.02 kB │ gzip:   0.04 kB
+.svelte-kit/output/client/.vite/manifest.json                                               32.18 kB │ gzip:   3.31 kB
+.svelte-kit/output/client/_app/immutable/assets/LocalizedGuides.Dp3LD5hG.css                 0.06 kB │ gzip:   0.08 kB
+.svelte-kit/output/client/_app/immutable/assets/LocalizedMedia.ClwciWag.css                  0.88 kB │ gzip:   0.39 kB
+.svelte-kit/output/client/_app/immutable/assets/34.Dw0vUMdv.css                              1.34 kB │ gzip:   0.55 kB
+.svelte-kit/output/client/_app/immutable/assets/LocalizedHome.BHC6PeEJ.css                   1.50 kB │ gzip:   0.45 kB
+.svelte-kit/output/client/_app/immutable/assets/ArticlePage.Dkd_BMFQ.css                     1.72 kB │ gzip:   0.68 kB
+.svelte-kit/output/client/_app/immutable/assets/ArticleArchive.DORf8r4N.css                  1.92 kB │ gzip:   0.67 kB
+.svelte-kit/output/client/_app/immutable/assets/SlidesArchive.CWa9YuCj.css                   2.26 kB │ gzip:   0.72 kB
+.svelte-kit/output/client/_app/immutable/assets/home-previews.q4_KImq6.css                   2.78 kB │ gzip:   0.91 kB
+.svelte-kit/output/client/_app/immutable/assets/LocalizedResume.BYt8q1PJ.css                 3.08 kB │ gzip:   0.74 kB
+.svelte-kit/output/client/_app/immutable/assets/PresentationDetail.Buxdb_P9.css              3.28 kB │ gzip:   0.85 kB
+.svelte-kit/output/client/_app/immutable/assets/GuideCollectionsGrid.C1oZwAkp.css            3.30 kB │ gzip:   1.11 kB
+.svelte-kit/output/client/_app/immutable/assets/LocalizedThought.B-0QfIm9.css                3.72 kB │ gzip:   0.96 kB
+.svelte-kit/output/client/_app/immutable/assets/38.CsMVIeCr.css                              4.30 kB │ gzip:   1.05 kB
+.svelte-kit/output/client/_app/immutable/assets/LocalizedArticleCollection.BdRWKubE.css      5.04 kB │ gzip:   1.29 kB
+.svelte-kit/output/client/_app/immutable/assets/gallery.DgYAhUom.css                         5.92 kB │ gzip:   1.54 kB
+.svelte-kit/output/client/_app/immutable/assets/GuidePage.CmmFuA3O.css                      45.31 kB │ gzip:   6.07 kB
+.svelte-kit/output/client/_app/immutable/assets/0.BJikuJSl.css                              59.42 kB │ gzip:  11.98 kB
+.svelte-kit/output/client/_app/immutable/entry/start.urcSx_nX.js                             0.08 kB │ gzip:   0.09 kB
+.svelte-kit/output/client/_app/immutable/chunks/Dr0UTSVU.js                                  0.14 kB │ gzip:   0.12 kB
+.svelte-kit/output/client/_app/immutable/nodes/36.C2uO2LOD.js                                0.15 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/nodes/11.CexBvBdR.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/13.DNuTL21Y.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/14.vMmqg4vR.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/15.BVxCFDn3.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/17.0rRNWoO5.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/19.CzPgDE8N.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/23.DtcZjFan.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/25.CvOubwa3.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/26.CHaZL05B.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/27.BLflSkVK.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/29.B-BvHkP4.js                                0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/nodes/7.BDpuHcLv.js                                 0.16 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/chunks/DLIvr8pO.js                                  0.20 kB │ gzip:   0.14 kB
+.svelte-kit/output/client/_app/immutable/chunks/BZJqXEh9.js                                  0.20 kB │ gzip:   0.17 kB
+.svelte-kit/output/client/_app/immutable/chunks/DlY6YilW.js                                  0.37 kB │ gzip:   0.26 kB
+.svelte-kit/output/client/_app/immutable/chunks/CeZe5otI.js                                  0.44 kB │ gzip:   0.29 kB
+.svelte-kit/output/client/_app/immutable/chunks/D7wNF4iO.js                                  0.51 kB │ gzip:   0.33 kB
+.svelte-kit/output/client/_app/immutable/nodes/1.D3JNX3am.js                                 0.51 kB │ gzip:   0.33 kB
+.svelte-kit/output/client/_app/immutable/nodes/16.Byau2hVv.js                                0.51 kB │ gzip:   0.35 kB
+.svelte-kit/output/client/_app/immutable/nodes/28.B-Eewngr.js                                0.51 kB │ gzip:   0.35 kB
+.svelte-kit/output/client/_app/immutable/nodes/37.B-CJ_gyP.js                                0.51 kB │ gzip:   0.35 kB
+.svelte-kit/output/client/_app/immutable/nodes/18.u6HLyZ8-.js                                0.53 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/nodes/39.CrJ0Vhk2.js                                0.53 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/nodes/30.yJPrmLsU.js                                0.54 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/nodes/20.gMc5a1Wm.js                                0.59 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/nodes/4.1q3vg7yR.js                                 0.59 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/nodes/8.BsEr4bDV.js                                 0.59 kB │ gzip:   0.36 kB
+.svelte-kit/output/client/_app/immutable/nodes/10.D4gfLUn4.js                                0.63 kB │ gzip:   0.39 kB
+.svelte-kit/output/client/_app/immutable/nodes/22.BIGEJQWN.js                                0.63 kB │ gzip:   0.39 kB
+.svelte-kit/output/client/_app/immutable/nodes/6.DrXDO6pK.js                                 0.63 kB │ gzip:   0.39 kB
+.svelte-kit/output/client/_app/immutable/chunks/BjCKQkh9.js                                  0.64 kB │ gzip:   0.40 kB
+.svelte-kit/output/client/_app/immutable/chunks/OA8UcISh.js                                  0.64 kB │ gzip:   0.39 kB
+.svelte-kit/output/client/_app/immutable/chunks/C9tDXhxB.js                                  0.73 kB │ gzip:   0.47 kB
+.svelte-kit/output/client/_app/immutable/nodes/31.DW7jq509.js                                0.75 kB │ gzip:   0.48 kB
+.svelte-kit/output/client/_app/immutable/nodes/5.Dbx1LT04.js                                 0.85 kB │ gzip:   0.50 kB
+.svelte-kit/output/client/_app/immutable/nodes/9.z21jHbDM.js                                 0.85 kB │ gzip:   0.51 kB
+.svelte-kit/output/client/_app/immutable/nodes/21.DLFl4tNR.js                                0.86 kB │ gzip:   0.52 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bh-UWLhh.js                                  0.92 kB │ gzip:   0.55 kB
+.svelte-kit/output/client/_app/immutable/chunks/C9A8JUBX.js                                  0.99 kB │ gzip:   0.51 kB
+.svelte-kit/output/client/_app/immutable/nodes/32.BtgsfJ-m.js                                0.99 kB │ gzip:   0.61 kB
+.svelte-kit/output/client/_app/immutable/nodes/33.C5k8oneC.js                                1.01 kB │ gzip:   0.59 kB
+.svelte-kit/output/client/_app/immutable/chunks/PPVm8Dsz.js                                  1.23 kB │ gzip:   0.72 kB
+.svelte-kit/output/client/_app/immutable/chunks/wbPk3Yxo.js                                  1.37 kB │ gzip:   0.66 kB
+.svelte-kit/output/client/_app/immutable/nodes/12.DUVZp7YY.js                                1.43 kB │ gzip:   0.70 kB
+.svelte-kit/output/client/_app/immutable/nodes/24.CvBhdEvL.js                                1.44 kB │ gzip:   0.70 kB
+.svelte-kit/output/client/_app/immutable/chunks/FS3KPxww.js                                  1.63 kB │ gzip:   0.82 kB
+.svelte-kit/output/client/_app/immutable/chunks/DbYP5l4O.js                                  1.81 kB │ gzip:   0.85 kB
+.svelte-kit/output/client/_app/immutable/chunks/BULfQ5YM.js                                  1.88 kB │ gzip:   0.98 kB
+.svelte-kit/output/client/_app/immutable/chunks/yLVHHb93.js                                  2.37 kB │ gzip:   1.17 kB
+.svelte-kit/output/client/_app/immutable/chunks/BNduQa3-.js                                  2.59 kB │ gzip:   1.30 kB
+.svelte-kit/output/client/_app/immutable/chunks/BAg-XF_k.js                                  3.39 kB │ gzip:   1.41 kB
+.svelte-kit/output/client/_app/immutable/chunks/CbjRZJXL.js                                  3.51 kB │ gzip:   1.50 kB
+.svelte-kit/output/client/_app/immutable/chunks/D5pihBWL.js                                  3.77 kB │ gzip:   1.88 kB
+.svelte-kit/output/client/_app/immutable/chunks/DI-g9iSJ.js                                  4.17 kB │ gzip:   1.68 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bp_4AlGl.js                                  4.31 kB │ gzip:   1.74 kB
+.svelte-kit/output/client/_app/immutable/chunks/vg5h8VRC.js                                  4.75 kB │ gzip:   2.31 kB
+.svelte-kit/output/client/_app/immutable/chunks/B5YSA-MG.js                                  4.98 kB │ gzip:   2.17 kB
+.svelte-kit/output/client/_app/immutable/chunks/BF0SY9zK.js                                  5.34 kB │ gzip:   2.39 kB
+.svelte-kit/output/client/_app/immutable/nodes/35.CgNFK7JF.js                                5.61 kB │ gzip:   2.25 kB
+.svelte-kit/output/client/_app/immutable/nodes/2.BIRo0SrE.js                                 5.85 kB │ gzip:   2.57 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bs-Px4Mn.js                                  6.52 kB │ gzip:   2.82 kB
+.svelte-kit/output/client/_app/immutable/chunks/D4nPby4V.js                                  8.44 kB │ gzip:   3.34 kB
+.svelte-kit/output/client/_app/immutable/chunks/BriZVz5_.js                                  8.99 kB │ gzip:   3.85 kB
+.svelte-kit/output/client/_app/immutable/chunks/BqgJd2z2.js                                  9.05 kB │ gzip:   3.57 kB
+.svelte-kit/output/client/_app/immutable/chunks/CYRc5AYB.js                                  9.34 kB │ gzip:   3.60 kB
+.svelte-kit/output/client/_app/immutable/chunks/wTJRGqnQ.js                                  9.46 kB │ gzip:   3.43 kB
+.svelte-kit/output/client/_app/immutable/chunks/BjAecCu1.js                                 11.38 kB │ gzip:   4.70 kB
+.svelte-kit/output/client/_app/immutable/chunks/BNwwj1S-.js                                 12.39 kB │ gzip:   5.53 kB
+.svelte-kit/output/client/_app/immutable/entry/app.DAUWvF_P.js                              12.66 kB │ gzip:   3.95 kB
+.svelte-kit/output/client/_app/immutable/nodes/38.CACwS9tK.js                               13.82 kB │ gzip:   4.60 kB
+.svelte-kit/output/client/_app/immutable/nodes/3.CrWN2f7Z.js                                16.38 kB │ gzip:   6.71 kB
+.svelte-kit/output/client/_app/immutable/chunks/KAEmUhJQ.js                                 16.55 kB │ gzip:   6.99 kB
+.svelte-kit/output/client/_app/immutable/nodes/0.BqCHzGVs.js                                19.94 kB │ gzip:   7.25 kB
+.svelte-kit/output/client/_app/immutable/chunks/BKc3SgJe.js                                 21.01 kB │ gzip:   7.37 kB
+.svelte-kit/output/client/_app/immutable/chunks/VZlUzLVU.js                                 23.61 kB │ gzip:   7.50 kB
+.svelte-kit/output/client/_app/immutable/nodes/34.BLaHt5hM.js                               26.85 kB │ gzip:   8.35 kB
+.svelte-kit/output/client/_app/immutable/chunks/CqOlZx7g.js                                 27.19 kB │ gzip:  10.48 kB
+.svelte-kit/output/client/_app/immutable/chunks/D8rWbVJC.js                                 28.46 kB │ gzip:  11.06 kB
+.svelte-kit/output/client/_app/immutable/chunks/pckfvWRH.js                                 31.47 kB │ gzip:   8.94 kB
+.svelte-kit/output/client/_app/immutable/chunks/BTbcJ11p.js                                 50.41 kB │ gzip:   9.69 kB
+.svelte-kit/output/client/_app/immutable/chunks/P0mNpWnq.js                                 70.02 kB │ gzip:  16.61 kB
+.svelte-kit/output/client/_app/immutable/chunks/6kSYW_56.js                                 79.88 kB │ gzip:   9.33 kB
+.svelte-kit/output/client/_app/immutable/chunks/C68Tvhwa.js                                517.00 kB │ gzip: 138.00 kB
+.svelte-kit/output/client/_app/immutable/chunks/BKX1hMEu.js                              1,251.31 kB │ gzip: 361.16 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.22s
+.svelte-kit/output/server/.vite/manifest.json                                               29.17 kB
+.svelte-kit/output/server/_app/immutable/assets/LocalizedGuides.Dp3LD5hG.css                 0.06 kB
+.svelte-kit/output/server/_app/immutable/assets/LocalizedMedia.ClwciWag.css                  0.88 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.Dw0vUMdv.css                           1.34 kB
+.svelte-kit/output/server/_app/immutable/assets/LocalizedHome.BHC6PeEJ.css                   1.50 kB
+.svelte-kit/output/server/_app/immutable/assets/ArticlePage.Dkd_BMFQ.css                     1.72 kB
+.svelte-kit/output/server/_app/immutable/assets/ArticleArchive.DORf8r4N.css                  1.92 kB
+.svelte-kit/output/server/_app/immutable/assets/SlidesArchive.CWa9YuCj.css                   2.26 kB
+.svelte-kit/output/server/_app/immutable/assets/home-previews.q4_KImq6.css                   2.78 kB
+.svelte-kit/output/server/_app/immutable/assets/LocalizedResume.BYt8q1PJ.css                 3.08 kB
+.svelte-kit/output/server/_app/immutable/assets/GuideCollectionsGrid.Dz3kY4HO.css            3.26 kB
+.svelte-kit/output/server/_app/immutable/assets/PresentationDetail.Buxdb_P9.css              3.28 kB
+.svelte-kit/output/server/_app/immutable/assets/LocalizedThought.B-0QfIm9.css                3.72 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.CsMVIeCr.css                           4.30 kB
+.svelte-kit/output/server/_app/immutable/assets/LocalizedArticleCollection.BdRWKubE.css      5.04 kB
+.svelte-kit/output/server/_app/immutable/assets/gallery.Cg9KY_tq.css                         5.85 kB
+.svelte-kit/output/server/_app/immutable/assets/GuidePage.CmmFuA3O.css                      45.31 kB
+.svelte-kit/output/server/_app/immutable/assets/_layout.DMn63y6k.css                        57.82 kB
+.svelte-kit/output/server/chunks/false.js                                                    0.04 kB
+.svelte-kit/output/server/entries/pages/slides/_slug_/_page.ts.js                            0.11 kB
+.svelte-kit/output/server/entries/pages/en/slides/_slug_/_page.ts.js                         0.11 kB
+.svelte-kit/output/server/entries/pages/es/slides/_slug_/_page.ts.js                         0.11 kB
+.svelte-kit/output/server/entries/pages/articles/_page.ts.js                                 0.13 kB
+.svelte-kit/output/server/entries/pages/en/articles/_page.ts.js                              0.13 kB
+.svelte-kit/output/server/entries/pages/es/articles/_page.ts.js                              0.13 kB
+.svelte-kit/output/server/chunks/html.js                                                     0.14 kB
+.svelte-kit/output/server/chunks/index-server.js                                             0.18 kB
+.svelte-kit/output/server/entries/pages/slides/_page.svelte.js                               0.18 kB
+.svelte-kit/output/server/entries/pages/en/_page.svelte.js                                   0.20 kB
+.svelte-kit/output/server/entries/pages/es/_page.svelte.js                                   0.20 kB
+.svelte-kit/output/server/entries/pages/en/media/_page.svelte.js                             0.20 kB
+.svelte-kit/output/server/entries/pages/es/media/_page.svelte.js                             0.20 kB
+.svelte-kit/output/server/entries/pages/en/guides/_page.svelte.js                            0.20 kB
+.svelte-kit/output/server/entries/pages/en/resume/_page.svelte.js                            0.20 kB
+.svelte-kit/output/server/entries/pages/en/slides/_page.svelte.js                            0.20 kB
+.svelte-kit/output/server/entries/pages/es/guides/_page.svelte.js                            0.20 kB
+.svelte-kit/output/server/entries/pages/es/resume/_page.svelte.js                            0.20 kB
+.svelte-kit/output/server/entries/pages/es/slides/_page.svelte.js                            0.20 kB
+.svelte-kit/output/server/entries/pages/en/thought/_page.svelte.js                           0.21 kB
+.svelte-kit/output/server/entries/pages/es/thought/_page.svelte.js                           0.21 kB
+.svelte-kit/output/server/entries/pages/topics/_topic_/_page.ts.js                           0.22 kB
+.svelte-kit/output/server/entries/pages/en/topics/_topic_/_page.ts.js                        0.22 kB
+.svelte-kit/output/server/entries/pages/es/topics/_topic_/_page.ts.js                        0.22 kB
+.svelte-kit/output/server/env.js                                                             0.23 kB
+.svelte-kit/output/server/entries/pages/articles/page/_page_/_page.ts.js                     0.24 kB
+.svelte-kit/output/server/entries/pages/en/articles/page/_page_/_page.ts.js                  0.24 kB
+.svelte-kit/output/server/entries/pages/es/articles/page/_page_/_page.ts.js                  0.24 kB
+.svelte-kit/output/server/chunks/LocalizedSlides.js                                          0.30 kB
+.svelte-kit/output/server/entries/pages/_layout.ts.js                                        0.30 kB
+.svelte-kit/output/server/entries/hooks.server.js                                            0.32 kB
+.svelte-kit/output/server/internal.js                                                        0.36 kB
+.svelte-kit/output/server/entries/pages/topics/_topic_/_page.svelte.js                       0.37 kB
+.svelte-kit/output/server/entries/pages/en/topics/_topic_/_page.svelte.js                    0.37 kB
+.svelte-kit/output/server/entries/pages/es/topics/_topic_/_page.svelte.js                    0.37 kB
+.svelte-kit/output/server/entries/pages/articles/_slug_/_page.svelte.js                      0.40 kB
+.svelte-kit/output/server/entries/pages/guides/_collection_/_page.svelte.js                  0.40 kB
+.svelte-kit/output/server/entries/pages/en/articles/_slug_/_page.svelte.js                   0.41 kB
+.svelte-kit/output/server/entries/pages/es/articles/_slug_/_page.svelte.js                   0.41 kB
+.svelte-kit/output/server/chunks/archive.js                                                  0.42 kB
+.svelte-kit/output/server/chunks/topic-pages.js                                              0.42 kB
+.svelte-kit/output/server/entries/pages/slides/_slug_/_page.svelte.js                        0.42 kB
+.svelte-kit/output/server/entries/pages/en/slides/_slug_/_page.svelte.js                     0.43 kB
+.svelte-kit/output/server/entries/pages/es/slides/_slug_/_page.svelte.js                     0.43 kB
+.svelte-kit/output/server/chunks/presentation-pages.js                                       0.44 kB
+.svelte-kit/output/server/entries/pages/articles/_page.svelte.js                             0.45 kB
+.svelte-kit/output/server/entries/pages/en/articles/_page.svelte.js                          0.45 kB
+.svelte-kit/output/server/entries/pages/es/articles/_page.svelte.js                          0.45 kB
+.svelte-kit/output/server/chunks/PageHero.js                                                 0.45 kB
+.svelte-kit/output/server/entries/pages/articles/page/_page_/_page.svelte.js                 0.46 kB
+.svelte-kit/output/server/entries/pages/en/articles/page/_page_/_page.svelte.js              0.46 kB
+.svelte-kit/output/server/entries/pages/es/articles/page/_page_/_page.svelte.js              0.46 kB
+.svelte-kit/output/server/entries/pages/articles/_slug_/_page.ts.js                          0.54 kB
+.svelte-kit/output/server/entries/pages/en/articles/_slug_/_page.ts.js                       0.55 kB
+.svelte-kit/output/server/entries/pages/es/articles/_slug_/_page.ts.js                       0.56 kB
+.svelte-kit/output/server/entries/fallbacks/error.svelte.js                                  0.62 kB
+.svelte-kit/output/server/chunks/server.js                                                   0.62 kB
+.svelte-kit/output/server/entries/pages/gallery/_page.svelte.js                              0.66 kB
+.svelte-kit/output/server/entries/pages/en/guides/_collection_/_page.svelte.js               0.77 kB
+.svelte-kit/output/server/chunks/archive-pages.js                                            0.78 kB
+.svelte-kit/output/server/entries/pages/guides/_collection_/_page.ts.js                      0.80 kB
+.svelte-kit/output/server/entries/pages/es/guides/_collection_/_page.svelte.js               0.82 kB
+.svelte-kit/output/server/chunks/client.js                                                   0.96 kB
+.svelte-kit/output/server/entries/pages/en/guides/_collection_/_page.ts.js                   1.07 kB
+.svelte-kit/output/server/entries/pages/es/guides/_collection_/_page.ts.js                   1.07 kB
+.svelte-kit/output/server/chunks/utils.js                                                    1.09 kB
+.svelte-kit/output/server/entries/pages/guides/_page.svelte.js                               1.21 kB
+.svelte-kit/output/server/chunks/TopicPage.js                                                1.46 kB
+.svelte-kit/output/server/chunks/LocalizedGuides.js                                          2.36 kB
+.svelte-kit/output/server/chunks/ArticleCard.js                                              2.89 kB
+.svelte-kit/output/server/chunks/fa.js                                                       3.66 kB
+.svelte-kit/output/server/chunks/GalleryCollection.js                                        4.03 kB
+.svelte-kit/output/server/chunks/presentation-copy.js                                        4.09 kB
+.svelte-kit/output/server/chunks/SlidesArchive.js                                            4.30 kB
+.svelte-kit/output/server/chunks/internal.js                                                 4.68 kB
+.svelte-kit/output/server/chunks/LocalizedMedia.js                                           4.78 kB
+.svelte-kit/output/server/chunks/topics.js                                                   5.12 kB
+.svelte-kit/output/server/chunks/GuideCollectionsGrid.js                                     5.63 kB
+.svelte-kit/output/server/entries/pages/resume/_page.svelte.js                               6.26 kB
+.svelte-kit/output/server/chunks/exports.js                                                  7.02 kB
+.svelte-kit/output/server/entries/pages/_page.svelte.js                                      7.22 kB
+.svelte-kit/output/server/chunks/home-previews.js                                            7.54 kB
+.svelte-kit/output/server/chunks/PresentationDetail.js                                       8.49 kB
+.svelte-kit/output/server/chunks/LocalizedHome.js                                            9.64 kB
+.svelte-kit/output/server/chunks/LocalizedArticleCollection.js                               9.85 kB
+.svelte-kit/output/server/chunks/ArticleArchive.js                                          11.03 kB
+.svelte-kit/output/server/chunks/ArticlePage.js                                             11.81 kB
+.svelte-kit/output/server/entries/pages/admin/_page.svelte.js                               11.84 kB
+.svelte-kit/output/server/chunks/localized-guide-collections.js                             12.25 kB
+.svelte-kit/output/server/chunks/PageSeo.js                                                 12.52 kB
+.svelte-kit/output/server/entries/pages/thought/_page.svelte.js                             13.70 kB
+.svelte-kit/output/server/chunks/guides.js                                                  16.34 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js                                   16.96 kB
+.svelte-kit/output/server/chunks/LocalizedThought.js                                        18.28 kB
+.svelte-kit/output/server/chunks/LocalizedResume.js                                         23.24 kB
+.svelte-kit/output/server/entries/pages/media/_page.svelte.js                               26.22 kB
+.svelte-kit/output/server/chunks/utils2.js                                                  34.21 kB
+.svelte-kit/output/server/remote-entry.js                                                   36.81 kB
+.svelte-kit/output/server/chunks/presentations.js                                           37.16 kB
+.svelte-kit/output/server/chunks/index.js                                                   41.53 kB
+.svelte-kit/output/server/chunks/images.js                                                  58.97 kB
+.svelte-kit/output/server/chunks/news.js                                                    73.28 kB
+.svelte-kit/output/server/chunks/root.js                                                    87.56 kB
+.svelte-kit/output/server/chunks/gallery.js                                                 91.32 kB
+.svelte-kit/output/server/index.js                                                         130.89 kB
+.svelte-kit/output/server/chunks/GuidePage.js                                              558.08 kB
+.svelte-kit/output/server/chunks/content.js                                              1,316.86 kB
+✓ built in 5.84s
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+  ✔ done
+Generated sitemap.xml with 163 URLs.
+
+> ziabary-platform@0.1.0 verify:sitemap
+> node scripts/verify-sitemap.mjs
+
+Validated sitemap.xml against 163 indexable pages and robots.txt.
+Validated 172 JSON-LD blocks across 172 HTML pages.

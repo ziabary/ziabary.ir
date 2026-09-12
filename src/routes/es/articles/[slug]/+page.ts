@@ -7,9 +7,9 @@ export function entries() {
   return articles.filter((article) => article.lang === 'es').map((article) => ({ slug: article.slug }));
 }
 
-export function load({ params }) {
+export async function load({ params }) {
   const article = getArticle(params.slug) ??
-    (dev && isGpuReviewArticle(params.slug, 'es') ? getArticleModule(params.slug)?.metadata : undefined);
+    (dev && isGpuReviewArticle(params.slug, 'es') ? (await getArticleModule(params.slug))?.metadata : undefined);
   if (!article || article.lang !== 'es') error(404, 'Artículo no encontrado');
-  return { article };
+  return { article, Content: (await getArticleModule(params.slug, 'es'))!.default };
 }

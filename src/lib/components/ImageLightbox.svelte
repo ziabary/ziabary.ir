@@ -5,7 +5,7 @@
     '.article-page .article-cover img',
     '.article-page .prose img',
     '.guide-article-prose img',
-    '.guide-series-cover img'
+    '.guide-series-cover img', '.guide-prose img', '.chapter-cover'
   ].join(', ');
 
   let activeSrc = '';
@@ -13,7 +13,7 @@
   let previousOverflow = '';
 
   function open(image: HTMLImageElement) {
-    activeSrc = image.currentSrc || image.src;
+    activeSrc = image.dataset.originalSrc || image.src;
     activeAlt = image.alt || 'نمایش بزرگ تصویر';
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';

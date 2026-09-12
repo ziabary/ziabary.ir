@@ -147,3 +147,27 @@ footer{padding-top:0}.footer-lead{display:grid;grid-template-columns:.8fr 1.2fr;
   .thought-body--manifesto .thought-chapter-head small{font-size:29px}.thought-body--manifesto .thought-chapter>p,.thought-body--manifesto p.thought-pull{margin-inline:0}
   .thought-body--manifesto p.thought-pull{font-size:17px;padding:20px 8px}.thought-coda{padding:34px 26px}
 }
+
+/* Reading comfort across static editions. */
+.page-hero { padding-block: 42px 28px; }
+.page-hero h1, .course-hero h1 { font-size: clamp(30px, 3.4vw, 46px); line-height: 1.5; margin-block: 8px 16px; }
+.course-hero { padding-block: 42px 28px; }
+.media-hub-section { padding-block: 36px; }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+input:focus-visible + span { outline: 2px solid var(--teal); outline-offset: 3px; }
+:where(h2,h3,h4,[id]) { scroll-margin-top: 110px; }
+.prose :where(pre,code) { direction: ltr; unicode-bidi: isolate; }
+.prose pre { text-align: left; overflow-x: auto; }
+.prose table { display: block; max-width: 100%; overflow-x: auto; }
+@media(min-width:981px) { .nav-wrap nav a { font-size: 14px; min-height: 44px; display: inline-flex; align-items: center; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto !important; } *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; } }
+
+.article-page .article-header { padding-block: 38px 24px; max-width: 1040px; }
+.article-page .article-header h1 { font-size: clamp(28px, 3.5vw, 44px); line-height: 1.65; letter-spacing: 0; margin-block: 10px 16px; }
+.article-page .article-header > p { font-size: 16px; line-height: 2; margin-block: 12px; }
+.article-page .article-cover { width: min(1040px, calc(100% - 32px)); height: auto; aspect-ratio: 16 / 7; margin: 0 auto 32px; }
+.article-page .article-cover.has-image img { height: 100%; object-fit: contain; }
+
+:root { --link-ink: var(--teal-deep); }
+:root[data-theme="dark"] { --link-ink: #76c9c3; }
+.article-archive .text-link, .prose a { color: var(--link-ink); }

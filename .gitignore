@@ -13,3 +13,6 @@ npm-debug.log*
 
 # Generated English GPU editorial review; source drafts and generator are tracked.
 /docs/drafts/gpu-selection-en/review/
+
+# Search indexes are rebuilt from published content for dev and production.
+/static/search/

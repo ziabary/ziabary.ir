@@ -6,7 +6,7 @@
 </script>
 
 {#if data.kind === 'published'}
-  <LocalizedArticleCollection collection={data.collection} locale="es" />
+  <LocalizedArticleCollection collection={data.collection} chapters={data.chapters} locale="es" />
 {:else}
-  <GpuReview collection={data.collection} locale="es" />
+  <GpuReview collection={data.collection} chapters={data.chapters} locale="es" />
 {/if}
