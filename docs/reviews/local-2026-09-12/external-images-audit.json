@@ -1,0 +1,834 @@
+{
+  "public": [
+    {
+      "page": "https://ziabary.ir/articles/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ai-cosmetic-surgery-or-chemotherapy/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ai-data-confidentiality-safe-processing/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ai-from-gitex-to-parliament/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ai-operator-model-private-sector/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/air-gap-moves-trust-boundary/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ayar-hoomas-assistant-for-startups-and-investors/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/china-travelogue-part-1/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/china-travelogue-part-2/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/choosing-gpu-for-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/configuration-drift-attestation-and-rollback/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/containers-are-not-security-boundaries/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/crypto-shared-portfolio-profit/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/data-ecosystem-regulation-players/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/data-regulation-balance/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/data-regulation-intergroup-conflicts/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/data-regulation-intragroup-conflicts/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/dgx-and-standard-gpu-servers/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/dynamic-password-fraud/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/elecomp-29-from-technology-to-synergy/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/from-stig-cis-to-rbac/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/from-zero-trust-to-zero-trust-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/gitex-2025-analytical-travelogue/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/global-data-regulation-experiences/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/google-used-targoman/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/gpu-inference-latency-throughput/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/gpu-server-platform-components/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/gpu-types-for-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/int8-or-fp8-real-gpu-support/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/investment-in-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/iran-ai-ranking-analysis/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/iran-ai-top-ten-roadmap/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/iran-israel-war-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/iran-third-generation-warfare/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/legacy-migration-does-not-remove-risk/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/linux-distribution-as-security-governance/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/longest-bachelors-degree/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/mlops-foundation-of-zero-trust-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/national-ai-organization-from-law-to-impact/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/national-ai-organization-not-headquarters/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/national-ai-platform/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/noafarin-plan/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/one-linux-hardening-policy-does-not-fit-all/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/page/2/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/page/3/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/page/4/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/page/5/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/pcie-gpu-server-selection/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/pcie-vs-sxm-for-ai/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/seventy-million-words-a-day/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/slow-ai-in-iran/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/targoman-transformer-update/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/targoman-without-rent/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/third-revolution-in-warfare/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/why-shamsa/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/xaas-tax-laws/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/zero-trust-ai-maturity-model/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/zero-trust-ai-principles-and-controls/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/articles/ztai-indirect-data-access/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/accessing-legacy-numenta-content/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/apache-mod-jk-log-lock/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/building-targoman-without-patronage/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/choosing-gpu-for-ai-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/dgx-and-standard-gpu-servers-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/from-zero-trust-to-zero-trust-ai-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/gpu-inference-latency-throughput-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/gpu-server-platform-components-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/gpu-types-for-ai-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/htm-papers-and-books/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/install-dgtechnics-smart-hdtv-linux/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/install-nupic-opensuse/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/install-tbs6980-tbs6981-linux/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/int8-or-fp8-real-gpu-support-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/language-identification-reading-list/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/mlops-foundation-of-zero-trust-ai-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/page/2/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/pcie-gpu-server-selection-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/pcie-vs-sxm-for-ai-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/software-raid-opensuse/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/zero-trust-ai-maturity-model-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/zero-trust-ai-principles-and-controls-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/articles/ztai-indirect-data-access-en/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/en/media/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/choosing-gpu-for-ai-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/construir-targoman-sin-padrinos/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/dgx-and-standard-gpu-servers-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/from-zero-trust-to-zero-trust-ai-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/gpu-inference-latency-throughput-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/gpu-server-platform-components-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/gpu-types-for-ai-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/int8-or-fp8-real-gpu-support-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/mlops-foundation-of-zero-trust-ai-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/page/2/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/pcie-gpu-server-selection-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/pcie-vs-sxm-for-ai-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/zero-trust-ai-maturity-model-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/zero-trust-ai-principles-and-controls-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/articles/ztai-indirect-data-access-es/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/es/media/",
+      "externalImages": []
+    },
+    {
+      "page": "https://ziabary.ir/media/",
+      "externalImages": []
+    }
+  ],
+  "local": [
+    {
+      "page": "build/articles/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ai-cosmetic-surgery-or-chemotherapy/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ai-data-access-ito-action/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ai-data-confidentiality-safe-processing/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ai-from-gitex-to-parliament/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ai-operator-model-private-sector/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/air-gap-moves-trust-boundary/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ayar-hoomas-assistant-for-startups-and-investors/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/china-travelogue-part-1/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/china-travelogue-part-2/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/choosing-gpu-for-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/configuration-drift-attestation-and-rollback/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/containers-are-not-security-boundaries/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/crypto-shared-portfolio-profit/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/data-ecosystem-regulation-players/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/data-regulation-balance/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/data-regulation-intergroup-conflicts/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/data-regulation-intragroup-conflicts/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/dgx-and-standard-gpu-servers/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/dynamic-password-fraud/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/elecomp-29-from-technology-to-synergy/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/from-stig-cis-to-rbac/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/from-zero-trust-to-zero-trust-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/gitex-2025-analytical-travelogue/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/global-data-regulation-experiences/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/google-used-targoman/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/gpu-inference-latency-throughput/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/gpu-server-platform-components/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/gpu-types-for-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/int8-or-fp8-real-gpu-support/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/investment-in-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/iran-ai-ranking-analysis/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/iran-ai-top-ten-roadmap/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/iran-israel-war-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/iran-third-generation-warfare/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/legacy-migration-does-not-remove-risk/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/linux-distribution-as-security-governance/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/longest-bachelors-degree/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/mlops-foundation-of-zero-trust-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/national-ai-organization-from-law-to-impact/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/national-ai-organization-not-headquarters/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/national-ai-platform/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/noafarin-plan/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/one-linux-hardening-policy-does-not-fit-all/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/page/2/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/page/3/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/page/4/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/page/5/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/pcie-gpu-server-selection/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/pcie-vs-sxm-for-ai/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/seventy-million-words-a-day/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/slow-ai-in-iran/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/targoman-transformer-update/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/targoman-without-rent/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/third-revolution-in-warfare/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/why-shamsa/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/xaas-tax-laws/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/zero-trust-ai-maturity-model/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/zero-trust-ai-principles-and-controls/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/articles/ztai-indirect-data-access/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/accessing-legacy-numenta-content/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/apache-mod-jk-log-lock/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/building-targoman-without-patronage/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/choosing-gpu-for-ai-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/dgx-and-standard-gpu-servers-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/from-zero-trust-to-zero-trust-ai-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/gpu-inference-latency-throughput-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/gpu-server-platform-components-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/gpu-types-for-ai-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/htm-papers-and-books/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/install-dgtechnics-smart-hdtv-linux/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/install-nupic-opensuse/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/install-tbs6980-tbs6981-linux/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/int8-or-fp8-real-gpu-support-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/language-identification-reading-list/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/mlops-foundation-of-zero-trust-ai-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/page/2/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/pcie-gpu-server-selection-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/pcie-vs-sxm-for-ai-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/software-raid-opensuse/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/zero-trust-ai-maturity-model-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/zero-trust-ai-principles-and-controls-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/articles/ztai-indirect-data-access-en/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/en/media/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/choosing-gpu-for-ai-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/construir-targoman-sin-padrinos/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/dgx-and-standard-gpu-servers-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/from-zero-trust-to-zero-trust-ai-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/gpu-inference-latency-throughput-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/gpu-server-platform-components-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/gpu-types-for-ai-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/int8-or-fp8-real-gpu-support-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/mlops-foundation-of-zero-trust-ai-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/page/2/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/pcie-gpu-server-selection-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/pcie-vs-sxm-for-ai-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/zero-trust-ai-maturity-model-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/zero-trust-ai-principles-and-controls-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/articles/ztai-indirect-data-access-es/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/es/media/index.html",
+      "externalImages": []
+    },
+    {
+      "page": "build/media/index.html",
+      "externalImages": []
+    }
+  ]
+}

@@ -47,7 +47,8 @@ test('removing the last caption removes an album from that language only', () =>
 test('existing localized gallery preserves order and contains no Persian copy', () => {
   for (const locale of ['en', 'es']) {
     const result = localizeGallery(galleryItems, locale);
-    assert.deepEqual(result.map(i => i.id), galleryItems.map(i => i.id));
+    const eligibleAlbums = galleryItems.filter(item => item.images.some(image => image.translations?.[locale]?.caption?.trim()));
+    assert.deepEqual(result.map(i => i.id), eligibleAlbums.map(i => i.id));
     for (const item of result) {
       const copy = [item.title, item.caption, ...item.images.flatMap(i => [i.caption, i.alt])].join(' ');
       assert.ok(!/[\u0600-\u06ff]/u.test(copy));

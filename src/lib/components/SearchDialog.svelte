@@ -1,10 +1,10 @@
 <script context="module" lang="ts">
   import type { SearchItem } from '$lib/search.mjs';
-  const cache = new Map<string, SearchItem[]>();
 </script>
 <script lang="ts">
   import { onMount } from 'svelte';
   import { searchItems } from '$lib/search.mjs';
+  import { loadSearchIndex } from '$lib/search-index.mjs';
   export let locale: 'fa' | 'en' | 'es';
   export let onclose: () => void;
   let dialog: HTMLDialogElement;
@@ -20,12 +20,7 @@
     const controller = new AbortController();
     const load = async () => {
       try {
-        if (!cache.has(locale)) {
-          const response = await fetch(`/search/${locale}.json`, { signal: controller.signal });
-          if (!response.ok) throw new Error('Search index unavailable');
-          cache.set(locale, await response.json());
-        }
-        items = cache.get(locale) ?? [];
+        items = await loadSearchIndex(locale, controller.signal);
       } catch (error) { if (!controller.signal.aborted) failed = true; }
       finally { loading = false; }
     };

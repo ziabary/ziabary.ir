@@ -63,6 +63,50 @@
       }
     ]
   },
+  "/images/articles/ai-data-access-ito-action/cover.jpg": {
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 210869,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/7e0636017c5a8453-320.webp",
+        "bytes": 14584
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/7e0636017c5a8453-640.webp",
+        "bytes": 44082
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/7e0636017c5a8453-960.webp",
+        "bytes": 80436
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/7e0636017c5a8453-1280.webp",
+        "bytes": 120072
+      }
+    ]
+  },
+  "/images/articles/ai-data-access-ito-action/protected-processing.webp": {
+    "width": 481,
+    "height": 271,
+    "originalBytes": 69180,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/f51df6547970a94d-320.webp",
+        "bytes": 5638
+      },
+      {
+        "width": 481,
+        "src": "/images/responsive/f51df6547970a94d-481.webp",
+        "bytes": 9444
+      }
+    ]
+  },
   "/images/articles/ai-data-confidentiality-safe-processing/cover.jpg": {
     "width": 1672,
     "height": 941,
@@ -3695,6 +3739,198 @@
         "width": 682,
         "src": "/images/responsive/3620e74fc55c5234-682.webp",
         "bytes": 179686
+      }
+    ]
+  },
+  "/images/gallery/drilling-analysis.jpg": {
+    "width": 2560,
+    "height": 1707,
+    "originalBytes": 585440,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/ac0091da2eb987e3-320.webp",
+        "bytes": 15588
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/ac0091da2eb987e3-640.webp",
+        "bytes": 41110
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/ac0091da2eb987e3-960.webp",
+        "bytes": 70276
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/ac0091da2eb987e3-1440.webp",
+        "bytes": 129580
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/ac0091da2eb987e3-1920.webp",
+        "bytes": 218214
+      }
+    ]
+  },
+  "/images/gallery/drilling-group.jpg": {
+    "width": 2560,
+    "height": 1174,
+    "originalBytes": 441875,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/549f9b983f991c1a-320.webp",
+        "bytes": 15468
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/549f9b983f991c1a-640.webp",
+        "bytes": 43418
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/549f9b983f991c1a-960.webp",
+        "bytes": 78556
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/549f9b983f991c1a-1440.webp",
+        "bytes": 139282
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/549f9b983f991c1a-1920.webp",
+        "bytes": 202740
+      }
+    ]
+  },
+  "/images/gallery/drilling-jury.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "originalBytes": 538971,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/77876ab65ee4b68f-320.webp",
+        "bytes": 10890
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/77876ab65ee4b68f-640.webp",
+        "bytes": 29334
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/77876ab65ee4b68f-960.webp",
+        "bytes": 50120
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/77876ab65ee4b68f-1440.webp",
+        "bytes": 83226
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/77876ab65ee4b68f-1920.webp",
+        "bytes": 117052
+      }
+    ]
+  },
+  "/images/gallery/drilling-teams.jpg": {
+    "width": 2560,
+    "height": 1707,
+    "originalBytes": 605930,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/5b99bf4a1c85166e-320.webp",
+        "bytes": 14962
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/5b99bf4a1c85166e-640.webp",
+        "bytes": 38182
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/5b99bf4a1c85166e-960.webp",
+        "bytes": 68530
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/5b99bf4a1c85166e-1440.webp",
+        "bytes": 130138
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/5b99bf4a1c85166e-1920.webp",
+        "bytes": 232218
+      }
+    ]
+  },
+  "/images/gallery/drilling-workshop1.jpg": {
+    "width": 1707,
+    "height": 2560,
+    "originalBytes": 514996,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/ac193a6a825a43bc-320.webp",
+        "bytes": 14896
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/ac193a6a825a43bc-640.webp",
+        "bytes": 46552
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/ac193a6a825a43bc-960.webp",
+        "bytes": 106516
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/ac193a6a825a43bc-1440.webp",
+        "bytes": 212520
+      },
+      {
+        "width": 1707,
+        "src": "/images/responsive/ac193a6a825a43bc-1707.webp",
+        "bytes": 300310
+      }
+    ]
+  },
+  "/images/gallery/drilling-workshop2.jpg": {
+    "width": 1707,
+    "height": 2560,
+    "originalBytes": 595437,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/a3a86ad93b8e30f1-320.webp",
+        "bytes": 15114
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/a3a86ad93b8e30f1-640.webp",
+        "bytes": 49038
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/a3a86ad93b8e30f1-960.webp",
+        "bytes": 126184
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/a3a86ad93b8e30f1-1440.webp",
+        "bytes": 296398
+      },
+      {
+        "width": 1707,
+        "src": "/images/responsive/a3a86ad93b8e30f1-1707.webp",
+        "bytes": 434844
       }
     ]
   },
@@ -7654,6 +7890,33 @@
         "width": 1200,
         "src": "/images/responsive/dafbb526f9712ee3-1200.webp",
         "bytes": 107678
+      }
+    ]
+  },
+  "/images/gallery/pishgaman2.webp": {
+    "width": 1024,
+    "height": 628,
+    "originalBytes": 73284,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/92d25ce3833b06a4-320.webp",
+        "bytes": 17538
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/92d25ce3833b06a4-640.webp",
+        "bytes": 50162
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/92d25ce3833b06a4-960.webp",
+        "bytes": 88762
+      },
+      {
+        "width": 1024,
+        "src": "/images/responsive/92d25ce3833b06a4-1024.webp",
+        "bytes": 81718
       }
     ]
   },

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import PageHero from './PageHero.svelte';
@@ -8,28 +8,60 @@
   import ArticleCard from './ArticleCard.svelte';
   import type { ArticleMeta } from '$lib/content';
   import type { Locale } from '$lib/editions';
-  import { availableTopics, classification } from '$lib/topics';
+  import { availableTopics, classification, topics } from '$lib/topics';
   import { PAGE_SIZE, archivePath, pageCount } from '$lib/archive.mjs';
   import { searchItems } from '$lib/search.mjs';
+  import { loadSearchIndex } from '$lib/search-index.mjs';
   import { formatDate } from '$lib/publication.mjs';
   export let locale: Locale;
   export let records: ArticleMeta[];
   export let currentPage = 1;
   let mounted = false;
   let query = '';
+  let indexBodies = new Map<string, string>();
+  let indexLocale: string | undefined;
+  let indexReady = false;
+  let indexFailed = false;
+  let indexController: AbortController | undefined;
+  async function loadIndex(language: Locale) {
+    indexController?.abort();
+    const controller = new AbortController();
+    indexController = controller;
+    indexLocale = language;
+    indexReady = false;
+    indexFailed = false;
+    indexBodies = new Map();
+    try {
+      const entries = await loadSearchIndex(language, controller.signal);
+      if (!controller.signal.aborted) {
+        indexBodies = new Map(entries.map(item => [item.href, item.body ?? '']));
+        indexReady = true;
+      }
+    } catch {
+      if (!controller.signal.aborted) indexFailed = true;
+    }
+  }
+  onDestroy(() => indexController?.abort());
+  $: if (mounted && indexLocale !== locale) loadIndex(locale);
+  $: waitingForSearch = Boolean(query.trim()) && !indexReady;
+
   let category = '';
   let view: 'grid' | 'list' = 'grid';
   const viewStorageKey = 'ziabary-archive-view';
   const copies = {
-    fa: { title: 'نوشته‌ها و یادداشت‌ها', lead: 'تحلیل‌های فنی و مدیریتی؛ گاهی هم سفرنامه و دلنوشته.', archive: 'آرشیو', search: 'جستجو در عنوان و خلاصه', all: 'همهٔ موضوع‌ها و دسته‌ها', previous: 'قبلی', next: 'بعدی', pages: 'صفحه‌های آرشیو', empty: 'نوشته‌ای با این انتخاب پیدا نشد.', page: 'صفحه', read: 'خواندن نوشته', view: 'نمایش آرشیو', grid: 'نمایش شبکه‌ای', list: 'نمایش فهرستی' },
-    en: { title: 'Articles', lead: 'Technical articles, essays and historical notes, selected for English readers.', archive: 'Archive', search: 'Search titles and summaries', all: 'All topics and categories', previous: 'Previous', next: 'Next', pages: 'Archive pages', empty: 'No articles match this selection.', page: 'Page', read: 'Read article', view: 'Archive layout', grid: 'Grid view', list: 'List view' },
-    es: { title: 'Artículos', lead: 'Artículos técnicos y ensayos seleccionados para lectores en español.', archive: 'Archivo', search: 'Buscar títulos y resúmenes', all: 'Todos los temas y categorías', previous: 'Anterior', next: 'Siguiente', pages: 'Páginas del archivo', empty: 'No hay artículos que coincidan.', page: 'Página', read: 'Leer artículo', view: 'Vista del archivo', grid: 'Vista de cuadrícula', list: 'Vista de lista' }
+    fa: { title: 'نوشته‌ها و یادداشت‌ها', lead: 'تحلیل‌های فنی و مدیریتی؛ گاهی هم سفرنامه و دلنوشته.', archive: 'آرشیو', search: 'جستجو در عنوان، متن و دسته‌بندی', loading: 'در حال آماده‌سازی جستجو…', failed: 'دریافت متن مقالات برای جستجو ممکن نشد.', retry: 'تلاش دوباره', all: 'همهٔ موضوع‌ها و دسته‌ها', previous: 'قبلی', next: 'بعدی', pages: 'صفحه‌های آرشیو', empty: 'نوشته‌ای با این انتخاب پیدا نشد.', page: 'صفحه', read: 'خواندن نوشته', view: 'نمایش آرشیو', grid: 'نمایش شبکه‌ای', list: 'نمایش فهرستی' },
+    en: { title: 'Articles', lead: 'Technical articles, essays and historical notes, selected for English readers.', archive: 'Archive', search: 'Search titles, full text and categories', loading: 'Preparing search…', failed: 'Could not load articles for search.', retry: 'Try again', all: 'All topics and categories', previous: 'Previous', next: 'Next', pages: 'Archive pages', empty: 'No articles match this selection.', page: 'Page', read: 'Read article', view: 'Archive layout', grid: 'Grid view', list: 'List view' },
+    es: { title: 'Artículos', lead: 'Artículos técnicos y ensayos seleccionados para lectores en español.', archive: 'Archivo', search: 'Buscar títulos, texto completo y categorías', loading: 'Preparando la búsqueda…', failed: 'No se pudieron cargar los artículos para buscar.', retry: 'Reintentar', all: 'Todos los temas y categorías', previous: 'Anterior', next: 'Siguiente', pages: 'Páginas del archivo', empty: 'No hay artículos que coincidan.', page: 'Página', read: 'Leer artículo', view: 'Vista del archivo', grid: 'Vista de cuadrícula', list: 'Vista de lista' }
   };
   $: copy = copies[locale];
   $: numbers = new Intl.NumberFormat(locale);
   $: categories = [...new Set(records.map(article => article.category))];
   $: if (mounted) { query = $page.url.searchParams.get('q') ?? ''; category = $page.url.searchParams.get('category') ?? ''; }
-  $: selected = records.filter(article => !category || (category.startsWith('topic:') ? classification(article).topic === category.slice(6) : article.category === category)).map(article => ({ ...article, href: `${locale === 'fa' ? '' : `/${locale}`}/articles/${article.slug}/` }));
+  $: selected = records.filter(article => !category || (category.startsWith('topic:') ? classification(article).topic === category.slice(6) : article.category === category)).map(article => {
+    const href = `${locale === 'fa' ? '' : `/${locale}`}/articles/${article.slug}/`;
+    const topic = topics.find(item => item.locale === locale && item.slug === classification(article).topic);
+    return { ...article, href, body: indexBodies.get(href), tags: topic?.title ?? '' };
+  });
   $: filtered = searchItems(selected, query);
   $: filtering = Boolean(query || category);
   $: totalPages = pageCount(filtered.length);
@@ -78,6 +110,11 @@
     </div>
   </section>
   <section class="wrap archive-results" class:archive-rows={view === 'list'} aria-label={copy.title}>
+    {#if waitingForSearch}
+      <p class="archive-status" role="status" aria-busy={!indexFailed}>{indexFailed ? copy.failed : copy.loading}
+        {#if indexFailed}<button type="button" onclick={() => loadIndex(locale)}>{copy.retry}</button>{/if}
+      </p>
+    {:else}
     <p class="archive-status" aria-live="polite">{copy.page} {numbers.format(resultPage)} / {numbers.format(totalPages)} · {numbers.format(filtered.length)} {locale === 'fa' ? 'نوشته' : locale === 'en' ? 'articles' : 'artículos'}</p>
     <div id="archive-items" class="archive-items" class:archive-grid={view === 'grid'}>
     {#each visible as article}
@@ -97,6 +134,7 @@
       {#each Array(totalPages) as _, index}<a href={destination(index + 1)} aria-current={resultPage === index + 1 ? 'page' : undefined} aria-label={`${copy.page} ${numbers.format(index + 1)}`}>{numbers.format(index + 1)}</a>{/each}
       {#if resultPage < totalPages}<a href={destination(resultPage + 1)} rel="next">{copy.next}</a>{/if}
     </nav>{/if}
+    {/if}
   </section>
 </main>
 

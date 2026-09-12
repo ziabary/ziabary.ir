@@ -22,6 +22,59 @@ export type GalleryItem = {
   }>>;
 };
 const galleryEntries: GalleryItem[] = [
+{
+  "id": "hoomas-pishgaman2",
+  "title": "دومین دوره پیشگامان نوآوری صنعت و معدن",
+  "caption": "تصاویر منتشرشده در هومص؛ تاریخ درج‌شده، تاریخ انتشار گزارش است.",
+  "date": "2025-11-05",
+  "faDate": "۱۴ آبان ۱۴۰۴",
+  "images": [
+    {
+      "src": "/images/gallery/pishgaman2.webp",
+      "alt": "دومین دوره پیشگامان نوآوری صنعت و معدن",
+      "caption": "دومین دوره پیشگامان نوآوری صنعت و معدن؛ منبع: هومص."
+    }
+  ]
+},
+{
+  "id": "hoomas-drilling-hackathon",
+  "title": "هکاتون حفاری بهینه با هوش مصنوعی",
+  "caption": "تصاویر منتشرشده در هومص؛ تاریخ درج‌شده، تاریخ انتشار گزارش است.",
+  "date": "2025-12-27",
+  "faDate": "۶ دی ۱۴۰۴",
+  "images": [
+    {
+      "src": "/images/gallery/drilling-group.jpg",
+      "alt": "هکاتون حفاری بهینه با هوش مصنوعی",
+      "caption": "هکاتون حفاری بهینه با هوش مصنوعی؛ منبع: هومص."
+    },
+    {
+      "src": "/images/gallery/drilling-workshop1.jpg",
+      "alt": "کارگاه آموزشی هوش‌آز در هکاتون حفاری",
+      "caption": "کارگاه آموزشی هوش‌آز در هکاتون حفاری؛ منبع: هومص."
+    },
+    {
+      "src": "/images/gallery/drilling-workshop2.jpg",
+      "alt": "آموزش کاربرد هوش مصنوعی در تحلیل داده‌های معدنی",
+      "caption": "آموزش کاربرد هوش مصنوعی در تحلیل داده‌های معدنی؛ منبع: هومص."
+    },
+    {
+      "src": "/images/gallery/drilling-teams.jpg",
+      "alt": "فعالیت تیم‌ها در هکاتون حفاری",
+      "caption": "فعالیت تیم‌ها در هکاتون حفاری؛ منبع: هومص."
+    },
+    {
+      "src": "/images/gallery/drilling-analysis.jpg",
+      "alt": "تحلیل داده‌های معدنی در جریان رقابت",
+      "caption": "تحلیل داده‌های معدنی در جریان رقابت؛ منبع: هومص."
+    },
+    {
+      "src": "/images/gallery/drilling-jury.jpg",
+      "alt": "مرحله ارائه و داوری هکاتون",
+      "caption": "مرحله ارائه و داوری هکاتون؛ منبع: هومص."
+    }
+  ]
+},
   {
     id: 'itrc-president-visit',
     title: 'ارایه گزارش به رئیس جمهوری',

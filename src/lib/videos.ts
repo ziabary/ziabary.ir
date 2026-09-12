@@ -8,6 +8,17 @@ export type VideoItem = Omit<MediaItem, 'coverImage' | 'coverImageAlt' | 'editor
 // Long-form recordings and selected clips. Duplicate mirrors and social
 // reposts are deliberately omitted in favour of the most complete source.
 export const videoItems: VideoItem[] = [
+{
+  "title": "گزارش تصویری دومین دوره پیشگامان نوآوری صنعت و معدن",
+  "source": "هومص",
+  "kind": "ویدئوی رویداد",
+  "summary": "صفحه گزارش ویدیویی دومین دوره پیشگامان با حضور مهران محمدزاده ضیابری در هیئت داوری فنی. فایل ویدیوی تعبیه‌شده در منبع، هنگام بررسی در ۲۱ شهریور ۱۴۰۵ در دسترس نبود؛ پیوند به صفحه رسمی گزارش می‌رود. تاریخ درج‌شده، تاریخ انتشار گزارش است.",
+  "url": "https://hoomas.ai/event/pishgaman2/",
+  "date": "2025-11-05",
+  "faDate": "۱۴ آبان ۱۴۰۴",
+  "thumbnail": "/images/gallery/pishgaman2.webp",
+  "icon": "fa-solid fa-play"
+},
   { title: "گفت‌وگو با مهران ضیابری در الکامپ ۲۹", source: "هومص", kind: "گفت‌وگوی ویدئویی", summary: "مصاحبه با مهران ضیابری، معاون فنی صندوق سرمایه‌گذاری هومص، در الکامپ ۲۹. این ویدئو در صفحه رسمی هومص در لینکدین منتشر شده است.", url: "https://www.linkedin.com/posts/hoomas_مصاحبه-با-مهران-ضیابری-معاون-فنی-صندوق-سرمایهگذاری-activity-7502684269819916289-uz0r/", date: "2026-09-07", faDate: "۱۶ شهریور ۱۴۰۵", thumbnail: "/images/media-covers/linkedin-7502684269819916289.jpg", icon: "fa-brands fa-linkedin" },
   { title: 'هوش مصنوعی؛ حفظ یا حذف زبان‌های محلی', source: 'رادیو تهران', kind: 'صوت', summary: 'برنامه «چراغ» درباره نسبت هوش مصنوعی با زبان‌های محلی و پرسش حفظ یا حذف آن‌ها، با اجرای هدی فلاح. این برنامه ۸۰ دقیقه‌ای در ۱۴ شهریور ۱۴۰۵ پخش شده و قطعات آن در آرشیو ایران‌صدا قابل شنیدن است.', url: 'http://radio.iranseda.ir/epgarchivePart/?VALID=TRUE&ch=20&e=153952809', date: '2026-09-05', faDate: '۱۴ شهریور ۱۴۰۵', thumbnail: '/images/media-covers/cheragh-104121.jpg', icon: 'fa-solid fa-headphones' },
   { title: "نشست خبری رونمایی از عیار هومص", source: "هومص", kind: "ویدئو", summary: "ویدئوی منتشرشده در صفحه رسمی هومص از نشست خبری رونمایی دستیار هوشمند عیار با حضور اهالی رسانه. این نشست در اول شهریور ۱۴۰۵ برگزار شده است.", url: "https://www.instagram.com/reel/DcjTg2eowqD/", date: "2026-08-27", faDate: "۵ شهریور ۱۴۰۵", thumbnail: "/images/media-covers/instagram-DcjTg2eowqD.jpg", icon: "fa-brands fa-instagram" },

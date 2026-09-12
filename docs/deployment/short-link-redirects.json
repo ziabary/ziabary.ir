@@ -12,6 +12,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aadaia",
+    "destination": "https://ziabary.ir/articles/ai-data-access-ito-action/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aadcsp",
     "destination": "https://ziabary.ir/articles/ai-data-confidentiality-safe-processing/",
     "status": 301,
