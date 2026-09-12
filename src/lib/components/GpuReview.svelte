@@ -1,5 +1,6 @@
 <script lang="ts">
   import '$lib/math.css';
+  import ArticleActions from './ArticleActions.svelte';
   import { imageAttributes } from '$lib/images';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import PageHero from '$lib/components/PageHero.svelte';
@@ -85,6 +86,7 @@
               {#if article.cover}<img class="article-image" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${article.title} — ${copy.cover}`} loading="lazy" />{/if}
               {#if imageNote && false}<aside class="image-note"><strong>{copy.imageNeeded}</strong> {imageNote?.note}</aside>{/if}
               <header><small>{article.category} · {article.readTime}</small><h2>{article.title}</h2><p>{article.excerpt}</p></header>
+              <ArticleActions title={article.title} {locale} href={`/${locale}/guides/${collection.slug}/#${item.id}`} />
               <div class="prose review-prose"><Content headingPrefix={`${item.id}--`} /></div>
               <nav class="related" aria-label={copy.related}>
                 <strong>{copy.continue}</strong>
@@ -137,7 +139,6 @@
   .article-entry header p { color: var(--muted); line-height: 1.9; }
   .review-prose { width: 100%; max-width: 100%; margin: 0; padding: 20px 0 0; border-top: 1px solid var(--line); }
   .review-prose :global(figure) { margin-inline: 0; }
-  .review-prose :global(table) { display: block; overflow-x: auto; max-width: 100%; }
   .related { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 18px; font-size: 14px; }
   .related ul { padding-inline-start: 20px; }
   .related li { margin-block: 10px; }

@@ -1,0 +1,43 @@
+{
+  "httpDestinations": 202,
+  "results": [
+    {
+      "lang": "fa",
+      "width": 1440,
+      "code": "ggsiofrgs",
+      "target": "/guides/gpu-selection/#int8-or-fp8-real-gpu-support",
+      "canonical": "https://ziabary.ir/guides/gpu-selection/",
+      "copied": true,
+      "redirectStatus": 301
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "code": "eggsiofrgse",
+      "target": "/en/guides/gpu-selection/#int8-or-fp8-real-gpu-support-en",
+      "canonical": "https://ziabary.ir/en/guides/gpu-selection/",
+      "copied": true,
+      "redirectStatus": 301
+    },
+    {
+      "lang": "es",
+      "width": 390,
+      "code": "eggsiofrgse2",
+      "target": "/es/guides/gpu-selection/#int8-or-fp8-real-gpu-support-es",
+      "canonical": "https://ziabary.ir/es/guides/gpu-selection/",
+      "copied": true,
+      "redirectStatus": 301
+    },
+    {
+      "lang": "fa",
+      "width": 390,
+      "code": "ggsiofrgs",
+      "target": "/guides/gpu-selection/#int8-or-fp8-real-gpu-support",
+      "canonical": "https://ziabary.ir/guides/gpu-selection/",
+      "copied": true,
+      "redirectStatus": 301
+    }
+  ],
+  "browserFallback": true,
+  "invalidCodeNotice": true
+}

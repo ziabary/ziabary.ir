@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run prepare:content && svelte-kit sync && vite dev",
-    "build": "npm run prepare:content && vite build && node scripts/generate-sitemap.mjs && npm run verify:sitemap && node scripts/verify-structured-data.mjs",
+    "build": "npm run prepare:content && vite build && node scripts/generate-sitemap.mjs && npm run verify:sitemap && node scripts/verify-structured-data.mjs && npm run verify:short-links",
     "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "test:sitemap": "node --test tests/sitemap.test.mjs",
     "test:seo": "node --test tests/page-seo.test.mjs",
@@ -14,12 +14,14 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "deploy": "npm run build && node scripts/deploy-object-storage.mjs",
     "prepare": "svelte-kit sync",
-    "prepare:content": "npm run prepare:assets && npm run prepare:icons && node scripts/generate-search-index.mjs",
+    "prepare:content": "npm run prepare:assets && npm run prepare:icons && node scripts/generate-search-index.mjs && npm run prepare:short-links",
     "prepare:icons": "node scripts/prepare-icons.mjs",
     "prepare:assets": "node scripts/prepare-assets.mjs",
     "preview:local": "node scripts/serve-local.mjs",
     "test": "node --test tests/*.test.mjs",
-    "verify:local": "python3 scripts/verify-local-build.py"
+    "verify:local": "python3 scripts/verify-local-build.py",
+    "prepare:short-links": "node scripts/generate-short-links.mjs",
+    "verify:short-links": "node scripts/verify-short-links.mjs"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1111.0",

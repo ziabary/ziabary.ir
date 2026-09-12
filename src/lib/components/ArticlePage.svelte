@@ -29,7 +29,7 @@
     <header class="article-header wrap">
       <a class="archive-back" href={`${base}/articles/`}>{locale === 'fa' ? 'همهٔ نوشته‌ها' : locale === 'en' ? 'All articles' : 'Todos los artículos'}</a>
       <div class="article-meta"><span>{article.category}</span><time datetime={article.date}>{displayedDate}</time>{#if article.updated}<time datetime={article.updated}>{locale === 'fa' ? 'بازبینی: ' : ''}{formatDate(article.updated, locale)}</time>{/if}<span>{article.readTime}</span></div>
-      <h1>{article.title}</h1><p>{article.excerpt}</p><ArticleActions title={article.title} {locale} />
+      <h1>{article.title}</h1><p>{article.excerpt}</p><ArticleActions title={article.title} {locale} href={`${base}/articles/${article.slug}/`} />
     </header>
     {#if article.cover}<figure class="article-cover has-image"><img {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={article.title} fetchpriority="high" />{#if article.coverCredit}<figcaption>{article.coverCredit}</figcaption>{/if}</figure>{/if}
     <div class="article-reading-layout" class:with-toc={hasToc} use:readingPosition={{ ids: headingIds, onChange: followHeading }}>
@@ -37,7 +37,7 @@
       <div class="prose article-body">
         {#key article.slug}<Content />{/key}
         {#if article.external}<a class="original-link" href={article.external} target="_blank" rel="noreferrer">{locale === 'fa' ? 'مطالعه نسخه کامل در' : locale === 'en' ? 'Published at' : 'Publicado en'} {article.source ?? 'Source'} ↗</a>{/if}
-        <ArticleActions title={article.title} {locale} />
+        <ArticleActions title={article.title} {locale} href={`${base}/articles/${article.slug}/`} />
       </div>
     </div>
   </article>

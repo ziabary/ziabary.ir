@@ -1,8 +1,10 @@
 import { createServer } from 'node:http';
+import { resolveShortLink } from '../src/lib/short-links.mjs';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve(process.env.LOCAL_BUILD_DIR ?? 'build');
 const port = Number(process.env.PORT ?? 4186);
+const shortLinks = JSON.parse(await readFile(`${root}/short-links.json`, 'utf8'));
 const redirects = JSON.parse(await readFile(new URL('../config/redirects.json', import.meta.url), 'utf8'));
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.pdf': 'application/pdf', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain; charset=utf-8' };
 await stat(`${root}/index.html`);
@@ -12,6 +14,12 @@ createServer(async (req, res) => {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
     let pathname;
     try { pathname = decodeURIComponent(url.pathname); } catch { res.writeHead(400).end(); return; }
+    if (pathname === '/' && url.searchParams.has('t')) {
+      const target = resolveShortLink(url.search, shortLinks);
+      if (target) res.writeHead(301, { Location: target, 'Cache-Control': 'public,max-age=300' }).end();
+      else res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }).end('Short link not found');
+      return;
+    }
     const redirect = redirects.find(rule => pathname === rule.from || pathname + '/' === rule.from);
     if (redirect) { res.writeHead(redirect.status, { Location: redirect.to }).end(); return; }
     // Compatibility for old page queries; filter combinations stay client-side and noindex.

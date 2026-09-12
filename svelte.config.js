@@ -3,11 +3,12 @@ import { mdsvex } from 'mdsvex';
 import markdownImages from './scripts/markdown-images.mjs';
 import markdownHeadings from './scripts/markdown-headings.mjs';
 import markdownLinks from './scripts/markdown-links.mjs';
+import markdownTables from './scripts/markdown-tables.mjs';
 import remarkMath from 'remark-math';
 import markdownMath from './scripts/markdown-math.mjs';
 import packageJson from './package.json' with { type: 'json' };
 
-const markdownOptions = { extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages], rehypePlugins: [markdownLinks] };
+const markdownOptions = { extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages], rehypePlugins: [markdownLinks, markdownTables] };
 const markdown = mdsvex(markdownOptions);
 const mathMarkdown = mdsvex({ ...markdownOptions, remarkPlugins: [remarkMath, markdownHeadings, markdownMath, markdownImages] });
 

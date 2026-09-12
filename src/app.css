@@ -13,6 +13,9 @@
 .article-page .prose li{font-size:16px;line-height:2.25;color:color-mix(in srgb,var(--ink) 86%,var(--muted))}
 .article-page .prose ul,.article-page .prose ol{padding-inline-start:24px}
 .prose table{display:block;width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;margin:28px 0;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.85;scrollbar-width:thin;scrollbar-color:var(--muted) var(--paper)}
+.prose-table-scroll{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid var(--line);border-radius:10px;margin:28px 0;background:var(--paper);scrollbar-width:thin;scrollbar-color:var(--muted) var(--paper)}
+.prose .prose-table-scroll>table{display:table;width:100%;max-width:none;margin:0;border:0;border-radius:0;overflow:visible}
+.prose-table-scroll:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
 .prose th,.prose td{min-width:130px;padding:13px 16px;border:0;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
 .prose tr>:last-child{border-inline-end:0}
 .prose tbody tr:last-child>*{border-bottom:0}
@@ -105,3 +108,7 @@
 .archive-note{border:1px solid var(--line);border-left:4px solid var(--teal);background:var(--soft);padding:18px 20px;border-radius:8px;margin:0 0 38px;color:var(--muted);font-size:13px;line-height:1.75}
 
 @media(max-width:680px){.media-source-logo{width:40px;height:40px}.media-list a{grid-template-columns:26px 1fr 16px;gap:12px}.media-index{font-size:18px}.media-list h2{font-size:19px}.article-header .article-actions{margin-top:18px}.prose>.article-actions{justify-content:center}.media-local-nav{top:66px}.media-local-nav .wrap{gap:22px;min-height:52px}.media-hub-section,.media-video-band{scroll-margin-top:130px}.pagination-footer{align-items:flex-start;flex-direction:column}.pagination{width:100%;justify-content:space-between;gap:4px}.pagination button{min-width:32px;padding-inline:7px}.pagination span{min-width:12px}}
+
+.short-link-notice{padding:18px 24px;background:var(--soft);border-bottom:2px solid var(--teal);color:var(--ink);font-size:14px;text-align:center}
+.short-link-notice a{text-decoration:underline;color:var(--teal)}
+.guide-entry>.article-actions{justify-content:flex-start;margin:14px 0 22px}

@@ -1,5 +1,6 @@
 <script lang="ts">
   import '$lib/math.css';
+  import ArticleActions from './ArticleActions.svelte';
   import { imageAttributes } from '$lib/images';
   import { onMount, tick } from 'svelte';
   import type { Component } from 'svelte';
@@ -82,6 +83,7 @@
               {@const Content = chapters[item.id]}
               <header><small>{new Intl.NumberFormat(locale).format(index + 1)}</small><h2><a href={item.href}>{item.title}</a></h2></header>
               <p class="chapter-intro">{item.subtitle}</p>
+              <ArticleActions title={item.title} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} />
               {#each article?.legacyAnchors ?? [] as anchor}{#if legacyOwners.get(anchor) === item.id}<span id={anchor} class="legacy-anchor"></span>{/if}{/each}
               {#if Content}
                 <details class="chapter-details">

@@ -10,6 +10,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/fonts/IranSansX/fontiran.css" />
+  <script>
+    if (location.pathname === '/' && new URLSearchParams(location.search).has('t')) {
+      const redirect = document.createElement('script');
+      redirect.type = 'module';
+      redirect.src = '/short-links.js';
+      document.head.appendChild(redirect);
+    }
+  </script>
   %sveltekit.head%
 </head>
 

@@ -1,4 +1,5 @@
 import { verifySitemap } from './verify-sitemap.mjs';
+import { verifyShortLinks } from './verify-short-links.mjs';
 import { createHash } from 'node:crypto';
 import { createReadStream, readFileSync } from 'node:fs';
 import { readdir, stat } from 'node:fs/promises';
@@ -17,6 +18,7 @@ const envPath = process.env.DEPLOY_ENV_FILE || join(projectRoot, '.env.deploy');
 
 // Validate the artifact even when deployment is invoked directly.
 await verifySitemap(buildRoot);
+await verifyShortLinks(buildRoot);
 
 loadEnvFile(envPath);
 

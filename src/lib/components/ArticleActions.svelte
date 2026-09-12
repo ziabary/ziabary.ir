@@ -1,4 +1,8 @@
 <script lang="ts">
+  import registry from '$lib/generated/short-links.json';
+  import { shortLinkFor } from '$lib/short-links.mjs';
+  import { onDestroy } from 'svelte';
+  export let href: string | undefined = undefined;
   export let title: string;
   export let locale: 'fa' | 'en' | 'es' = 'fa';
 
@@ -12,8 +16,11 @@
   let copied = false;
   let resetTimer: ReturnType<typeof setTimeout>;
 
+  onDestroy(() => clearTimeout(resetTimer));
+  const sharingUrl = () => shortLinkFor(new URL(href ?? window.location.href, window.location.origin).href, registry);
+
   async function copyLink() {
-    const url = window.location.href;
+    const url = sharingUrl();
 
     try {
       await navigator.clipboard.writeText(url);
@@ -37,7 +44,7 @@
   async function shareArticle() {
     if (navigator.share) {
       try {
-        await navigator.share({ title, url: window.location.href });
+        await navigator.share({ title, url: sharingUrl() });
         return;
       } catch (error) {
         if (error instanceof DOMException && error.name === 'AbortError') return;
