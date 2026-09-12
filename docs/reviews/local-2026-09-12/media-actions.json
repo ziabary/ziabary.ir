@@ -1,0 +1,85 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "theme": "light",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "items": 30,
+      "inline": true,
+      "sourceOnOwnLine": true,
+      "keyboard": true,
+      "expanded": true,
+      "collapsed": true
+    }
+  ],
+  "exceptions": []
+}

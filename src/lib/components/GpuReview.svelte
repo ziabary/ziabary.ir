@@ -1,6 +1,6 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
-  import { onMount } from 'svelte';
+  import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import PageHero from '$lib/components/PageHero.svelte';
   import PageSeo from '$lib/components/PageSeo.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
@@ -17,36 +17,11 @@
     es: { draft: 'Borrador en español', preview: 'Borrador en español · Vista previa local', back: '← Todas las notas técnicas', contents: 'Índice', inCollection: 'EN ESTA COLECCIÓN', using: 'Cómo utilizar esta colección', paths: 'Recorridos de lectura sugeridos', choosePath: '¿Qué recorrido se ajusta a mis necesidades?', articles: 'artículos', tables: 'tablas interactivas', cover: 'ilustración de portada', imageNeeded: 'Se necesita una imagen traducida.', related: 'Artículos relacionados', continue: 'Seguir leyendo', standalone: 'Abrir el borrador del artículo →', article: 'Leer artículo →' }
   };
   $: copy = copies[locale];
-  let activeSection = collection.items[0]?.id ?? 'overview';
-
-  onMount(() => {
-    const sections = Array.from(document.querySelectorAll<HTMLElement>('.gpu-review .guide-entry[id]'));
-    if (!sections.length) return;
-    let frame = 0;
-
-    const update = () => {
-      const readingLine = window.innerHeight * 0.34;
-      let current = sections[0].id;
-      for (const section of sections) {
-        if (section.getBoundingClientRect().top <= readingLine) current = section.id;
-        else break;
-      }
-      activeSection = current;
-      frame = 0;
-    };
-    const scheduleUpdate = () => {
-      if (!frame) frame = requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener('scroll', scheduleUpdate, { passive: true });
-    window.addEventListener('resize', scheduleUpdate);
-    return () => {
-      window.removeEventListener('scroll', scheduleUpdate);
-      window.removeEventListener('resize', scheduleUpdate);
-      cancelAnimationFrame(frame);
-    };
-  });
+  let activeTarget = '';
+  const followHeading = (id: string) => activeTarget = id;
+  $: navigationItems = collection.items.map(item => ({ ...item, headings: allArticleMetadata.find(article => article.slug === item.id)?.headings ?? [] }));
+  $: targetIds = navigationItems.flatMap(item => [item.id, ...item.headings.map(heading => `${item.id}--${heading.id}`)]);
+  $: activeSection = collection.items.find(item => activeTarget === item.id || activeTarget.startsWith(`${item.id}--`))?.id ?? '';
 </script>
 
 <PageSeo title={`${collection.title} | ${collection.draft ? copy.draft : 'Mehran Ziabary'}`}
@@ -65,13 +40,25 @@
   <div class="wrap review-note">{#if collection.draft}<strong>{copy.preview}</strong>{/if}<a href={`/${locale}/guides/`}>{copy.back}</a></div>
   <PageHero eyebrow={collection.eyebrow} title={collection.title} lead={collection.subtitle} />
   <div class="collection-layout">
-    <nav class="collection-nav" aria-label={copy.contents}>
+    <nav class="collection-nav" aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>
       <small>{copy.inCollection}</small>
-      {#each collection.items as item, index}
-        <a href={`#${item.id}`} class:active={activeSection === item.id} aria-current={activeSection === item.id ? 'location' : undefined}><span>{String(index + 1).padStart(2, '0')}</span>{item.title}</a>
+      {#each navigationItems as item, index}
+        <div class="collection-nav-item">
+          <a href={`#${item.id}`} class:active={activeSection === item.id} aria-current={activeTarget === item.id ? 'location' : undefined}><span>{String(index + 1).padStart(2, '0')}</span>{item.title}</a>
+          {#if activeSection === item.id}<ul class="subsections">{#each headingSections(item.headings) as heading}
+            {@const id = `${item.id}--${heading.id}`}
+            {@const inSection = activeTarget === id || heading.children.some(child => activeTarget === `${item.id}--${child.id}`)}
+            <li><a href={`#${id}`} class:active={inSection} aria-current={activeTarget === id ? 'location' : undefined}>{heading.title}</a>
+              {#if inSection && heading.children.length}<ul class="subsections">{#each heading.children as child}
+                {@const childId = `${item.id}--${child.id}`}
+                <li><a href={`#${childId}`} aria-current={activeTarget === childId ? 'location' : undefined}>{child.title}</a></li>
+              {/each}</ul>{/if}
+            </li>
+          {/each}</ul>{/if}
+        </div>
       {/each}
     </nav>
-    <div class="collection-main">
+    <div class="collection-main" use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
       <div class="collection-overview">
         <img class="collection-cover" {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={collection.imageAlt} width="1600" height="900" />
         <section class="start" aria-labelledby="start-title">
@@ -123,6 +110,9 @@
   .collection-nav > small { display: block; padding: 0 14px 16px; color: var(--muted); }
   .collection-nav a { display: flex; gap: 10px; padding: 11px 14px; border-inline-start: 2px solid transparent; color: var(--muted); line-height: 1.6; }
   .collection-nav a.active { border-color: var(--teal); color: var(--teal); font-weight: 700; }
+  .collection-nav a[aria-current] { border-color: var(--link-ink); color: var(--link-ink); background: var(--soft); font-weight: 700; }
+  .subsections { list-style: none; margin: 0; padding: 0; padding-inline-start: 12px; }
+  .collection-nav .subsections a { display: block; padding: 7px 12px; font-size: 12px; }
   .collection-nav a span, a, header small, .start small { color: var(--teal); }
   .collection-main { min-width: 0; }
   .collection-overview { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(300px,1fr); align-items: start; gap: 24px; }

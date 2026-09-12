@@ -1,9 +1,17 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
   import { mediaSources } from '$lib/news';
+  import { externalLinkAttributes } from '$lib/external-links.mjs';
   export let item: { title: string; source: string; kind: string; summary: string; url: string; faDate?: string; coverImage?: string | null; coverImageAlt?: string | null; internalUrl?: string };
   export let index: number;
   let expanded = false;
+  const previewWordLimit = 45;
+  $: summaryWords = item.summary.trim().split(/\s+/);
+  $: canExpand = summaryWords.length > previewWordLimit;
+  $: visibleWords = expanded || !canExpand ? summaryWords : summaryWords.slice(0, previewWordLimit);
+  $: summaryStart = visibleWords.slice(0, -1).join(' ');
+  $: summaryEnd = visibleWords.at(-1) ?? '';
+  $: sourceName = item.source.replace(/^خبرگزاری\s+/, '');
 </script>
 
 <article class="media-row">
@@ -15,13 +23,11 @@
     </div>
     <div class="media-entry-content">
       {#if item.coverImage}<img class="media-cover" {...imageAttributes(item.coverImage, '180px')} alt={item.coverImageAlt ?? ''} loading="lazy" width="160" height="120" />{/if}
-      <h2><a href={item.internalUrl ?? item.url}>{item.title}</a></h2>
-      <p class:expanded>{item.summary}</p>
+      <h2><a href={item.internalUrl ?? item.url} {...externalLinkAttributes(item.internalUrl ?? item.url)}>{item.title}</a></h2>
+      <p id={`media-summary-${index}`} class="media-summary">{summaryStart}{' '}<span class="summary-tail">{summaryEnd}{canExpand && !expanded ? '…' : ''}{#if canExpand}{' '}<button class="summary-toggle" type="button" aria-expanded={expanded} aria-controls={`media-summary-${index}`} onclick={() => expanded = !expanded}>{expanded ? 'خلاصه‌تر' : 'ادامهٔ خلاصه'}</button>{/if}</span></p>
     </div>
     <div class="entry-actions">
-      <button type="button" aria-expanded={expanded} onclick={() => expanded = !expanded}>{expanded ? 'خلاصه‌تر' : 'ادامهٔ خلاصه'}</button>
-      {#if item.internalUrl}<a href={item.internalUrl}>خواندن در سایت ←</a>{/if}
-      <a href={item.url} target="_blank" rel="noreferrer">انتشار در رسانه ↗</a>
+      <a href={item.url} target="_blank" rel="noreferrer">مشاهده در {sourceName} ↗</a>
     </div>
   </div>
 </article>
@@ -35,10 +41,12 @@
   .media-row { display: flex; gap: 24px; padding-block: 28px; border-top: 1px solid var(--line); }
   .media-index { color: var(--link-ink); font-size: 13px; } .media-entry { flex: 1; min-width: 0; }
   h2 { font-size: 22px; line-height: 1.7; margin-block: 12px; }
-  p { font-size: 15px; margin: 0; color: var(--muted); line-height: 1.95; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
-  p.expanded { display: block; }
-  .entry-actions { clear: both; display: flex; flex-wrap: wrap; gap: 12px 24px; padding-top: 16px; font-size: 13px; color: var(--link-ink); }
-  button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; padding: 0; min-height: 44px; }
-  .entry-actions a { display: inline-flex; align-items: center; min-height: 44px; }
+  .media-summary { font-size: 15px; margin: 0; color: var(--muted); line-height: 1.95; }
+  .summary-tail { white-space: nowrap; }
+  .summary-toggle { display: inline; font: inherit; color: var(--link-ink); border: 0; background: none; cursor: pointer; padding: 0; text-underline-offset: 4px; }
+  .summary-toggle:hover { text-decoration: underline; }
+  .summary-toggle:focus-visible { outline: 2px solid var(--link-ink); outline-offset: 3px; border-radius: 2px; }
+  .entry-actions { clear: both; display: flex; flex-direction: column; align-items: flex-start; padding-top: 12px; font-size: 13px; color: var(--link-ink); }
+  .entry-actions a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; }
   @media(max-width:680px) { .media-row { gap: 12px; } h2 { font-size: 19px; } }
 </style>

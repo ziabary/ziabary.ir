@@ -1,0 +1,1230 @@
+{
+  "origin": "http://127.0.0.1:4186",
+  "results": [
+    {
+      "width": 320,
+      "theme": "light",
+      "grid": "277px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 219.703125,
+          "width": 277,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 330.484375,
+          "width": 277,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.265625,
+          "width": 277,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.046875,
+          "width": 277,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": true,
+      "axesOverflow": false
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "grid": "317px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 220.015625,
+          "width": 317,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 330.796875,
+          "width": 317,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.578125,
+          "width": 317,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.359375,
+          "width": 317,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": true,
+      "axesOverflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "grid": "347px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 220.421875,
+          "width": 347,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 331.203125,
+          "width": 347,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.984375,
+          "width": 347,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.765625,
+          "width": 347,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 480,
+      "theme": "light",
+      "grid": "437px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 220.234375,
+          "width": 437,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 331.015625,
+          "width": 437,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.796875,
+          "width": 437,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.578125,
+          "width": 437,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 680,
+      "theme": "light",
+      "grid": "637px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 219.953125,
+          "width": 637,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 330.734375,
+          "width": 637,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.515625,
+          "width": 637,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.296875,
+          "width": 637,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 681,
+      "theme": "light",
+      "grid": "132px 132px 132px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 288,
+          "y": 220.140625,
+          "width": 132,
+          "height": 128.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 156,
+          "y": 220.140625,
+          "width": 132,
+          "height": 128.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 220.140625,
+          "width": 132,
+          "height": 128.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 288,
+          "y": 348.921875,
+          "width": 132,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "grid": "161px 161px 161px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 346,
+          "y": 220.046875,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 185,
+          "y": 220.046875,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 220.046875,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 346,
+          "y": 330.828125,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 980,
+      "theme": "light",
+      "grid": "231.656px 231.672px 231.672px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 487.34375,
+          "y": 219.734375,
+          "width": 231.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 255.671875,
+          "y": 219.734375,
+          "width": 231.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 219.734375,
+          "width": 231.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 487.34375,
+          "y": 330.515625,
+          "width": 231.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 981,
+      "theme": "light",
+      "grid": "209.328px 209.328px 209.328px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 442.671875,
+          "y": 219.859375,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 233.34375,
+          "y": 219.859375,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24.015625,
+          "y": 219.859375,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 442.671875,
+          "y": 330.640625,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "grid": "223.656px 223.672px 223.672px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 471.34375,
+          "y": 220.484375,
+          "width": 223.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 247.671875,
+          "y": 220.484375,
+          "width": 223.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 220.484375,
+          "width": 223.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 471.34375,
+          "y": 331.265625,
+          "width": 223.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "grid": "260px 260px 260px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 752.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 492.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 232.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 752.5,
+          "y": 330.328125,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "grid": "260px 260px 260px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 992.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 732.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 472.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 992.5,
+          "y": 330.328125,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "grid": "277px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 219.703125,
+          "width": 277,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 330.484375,
+          "width": 277,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.265625,
+          "width": 277,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.046875,
+          "width": 277,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": true,
+      "axesOverflow": false
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "grid": "317px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 220.015625,
+          "width": 317,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 330.796875,
+          "width": 317,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.578125,
+          "width": 317,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.359375,
+          "width": 317,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": true,
+      "axesOverflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "grid": "347px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 220.421875,
+          "width": 347,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 331.203125,
+          "width": 347,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.984375,
+          "width": 347,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.765625,
+          "width": 347,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 480,
+      "theme": "dark",
+      "grid": "437px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 220.234375,
+          "width": 437,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 331.015625,
+          "width": 437,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.796875,
+          "width": 437,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.578125,
+          "width": 437,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 680,
+      "theme": "dark",
+      "grid": "637px",
+      "columns": 1,
+      "rows": 4,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 14,
+          "y": 219.953125,
+          "width": 637,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 14,
+          "y": 330.734375,
+          "width": 637,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "اختیار",
+          "x": 14,
+          "y": 442.515625,
+          "width": 637,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        },
+        {
+          "label": "ساختن",
+          "x": 14,
+          "y": 554.296875,
+          "width": 637,
+          "height": 111.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "1px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 681,
+      "theme": "dark",
+      "grid": "132px 132px 132px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 288,
+          "y": 220.140625,
+          "width": 132,
+          "height": 128.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 156,
+          "y": 220.140625,
+          "width": 132,
+          "height": 128.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 220.140625,
+          "width": 132,
+          "height": 128.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 288,
+          "y": 348.921875,
+          "width": 132,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "grid": "161px 161px 161px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 346,
+          "y": 220.046875,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 185,
+          "y": 220.046875,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 220.046875,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 346,
+          "y": 330.828125,
+          "width": 161,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 980,
+      "theme": "dark",
+      "grid": "231.656px 231.672px 231.672px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 487.34375,
+          "y": 219.734375,
+          "width": 231.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 255.671875,
+          "y": 219.734375,
+          "width": 231.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 219.734375,
+          "width": 231.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 487.34375,
+          "y": 330.515625,
+          "width": 231.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 981,
+      "theme": "dark",
+      "grid": "209.328px 209.328px 209.328px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 442.671875,
+          "y": 219.859375,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 233.34375,
+          "y": 219.859375,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24.015625,
+          "y": 219.859375,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 442.671875,
+          "y": 330.640625,
+          "width": 209.328125,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "grid": "223.656px 223.672px 223.672px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 471.34375,
+          "y": 220.484375,
+          "width": 223.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 247.671875,
+          "y": 220.484375,
+          "width": 223.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 24,
+          "y": 220.484375,
+          "width": 223.671875,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 471.34375,
+          "y": 331.265625,
+          "width": 223.65625,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "grid": "260px 260px 260px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 752.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 492.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 232.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 752.5,
+          "y": 330.328125,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "grid": "260px 260px 260px",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        {
+          "label": "مسئله",
+          "x": 992.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "0px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "واقعیت",
+          "x": 732.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "اختیار",
+          "x": 472.5,
+          "y": 219.546875,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        },
+        {
+          "label": "ساختن",
+          "x": 992.5,
+          "y": 330.328125,
+          "width": 260,
+          "height": 110.78125,
+          "overflow": false,
+          "borderInlineStart": "1px",
+          "borderTop": "0px"
+        }
+      ],
+      "viewportOverflow": false,
+      "axesOverflow": false
+    }
+  ],
+  "exceptions": []
+}

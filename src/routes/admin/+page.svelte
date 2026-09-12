@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onDestroy, tick } from 'svelte';
+  import { externalLinksHtml } from '$lib/external-links.mjs';
 
   type PendingImage = {
     file: File;
@@ -309,7 +310,7 @@
     output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+|\/[^)]+)\)/g, '<a href="$2">$1</a>');
     output = output.replace(/`([^`]+)`/g, '<code>$1</code>');
     output = output.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    return output;
+    return externalLinksHtml(output);
   }
 
   function renderMarkdown(value: string) {

@@ -1,0 +1,186 @@
+{
+  "results": [
+    {
+      "locale": "fa",
+      "width": 1440,
+      "theme": "light",
+      "buttons": [
+        {
+          "label": "نمایش شبکه‌ای",
+          "title": "نمایش شبکه‌ای",
+          "pressed": "true",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        },
+        {
+          "label": "نمایش فهرستی",
+          "title": "نمایش فهرستی",
+          "pressed": "false",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        }
+      ],
+      "selectCount": 0,
+      "grid": true,
+      "fontLoaded": true,
+      "keyboardList": true,
+      "articlesPreserved": true,
+      "choicePersisted": true,
+      "keyboardGrid": true
+    },
+    {
+      "locale": "fa",
+      "width": 1440,
+      "theme": "dark",
+      "buttons": [
+        {
+          "label": "نمایش شبکه‌ای",
+          "title": "نمایش شبکه‌ای",
+          "pressed": "true",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        },
+        {
+          "label": "نمایش فهرستی",
+          "title": "نمایش فهرستی",
+          "pressed": "false",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        }
+      ],
+      "selectCount": 0,
+      "grid": true,
+      "fontLoaded": true,
+      "keyboardList": true,
+      "articlesPreserved": true,
+      "choicePersisted": true,
+      "keyboardGrid": true
+    },
+    {
+      "locale": "fa",
+      "width": 390,
+      "theme": "light",
+      "buttons": [
+        {
+          "label": "نمایش شبکه‌ای",
+          "title": "نمایش شبکه‌ای",
+          "pressed": "true",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        },
+        {
+          "label": "نمایش فهرستی",
+          "title": "نمایش فهرستی",
+          "pressed": "false",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        }
+      ],
+      "selectCount": 0,
+      "grid": true,
+      "fontLoaded": true,
+      "keyboardList": true,
+      "articlesPreserved": true,
+      "choicePersisted": true,
+      "keyboardGrid": true
+    },
+    {
+      "locale": "fa",
+      "width": 390,
+      "theme": "dark",
+      "buttons": [
+        {
+          "label": "نمایش شبکه‌ای",
+          "title": "نمایش شبکه‌ای",
+          "pressed": "true",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        },
+        {
+          "label": "نمایش فهرستی",
+          "title": "نمایش فهرستی",
+          "pressed": "false",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        }
+      ],
+      "selectCount": 0,
+      "grid": true,
+      "fontLoaded": true,
+      "keyboardList": true,
+      "articlesPreserved": true,
+      "choicePersisted": true,
+      "keyboardGrid": true
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "theme": "light",
+      "buttons": [
+        {
+          "label": "Grid view",
+          "title": "Grid view",
+          "pressed": "true",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        },
+        {
+          "label": "List view",
+          "title": "List view",
+          "pressed": "false",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        }
+      ],
+      "selectCount": 0,
+      "grid": true,
+      "fontLoaded": true,
+      "keyboardList": true,
+      "articlesPreserved": true,
+      "choicePersisted": true,
+      "keyboardGrid": true
+    },
+    {
+      "locale": "es",
+      "width": 1440,
+      "theme": "dark",
+      "buttons": [
+        {
+          "label": "Vista de cuadrícula",
+          "title": "Vista de cuadrícula",
+          "pressed": "true",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        },
+        {
+          "label": "Vista de lista",
+          "title": "Vista de lista",
+          "pressed": "false",
+          "width": 44,
+          "height": 44,
+          "icon": "\"\""
+        }
+      ],
+      "selectCount": 0,
+      "grid": true,
+      "fontLoaded": true,
+      "keyboardList": true,
+      "articlesPreserved": true,
+      "choicePersisted": true,
+      "keyboardGrid": true
+    }
+  ],
+  "filterPreserved": true,
+  "exceptions": 0
+}

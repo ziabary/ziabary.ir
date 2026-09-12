@@ -4,7 +4,7 @@ const results=[];const origin='http://127.0.0.1:4186';
 await call('Emulation.setDeviceMetricsOverride',{width:390,height:900,deviceScaleFactor:1,mobile:false});
 for(const theme of ['light','dark'])for(const [path,selectors] of [['/articles/',['.archive-row p','.row-meta','.text-link']],['/media/',['.media-row p','.entry-actions a']]]){
  await call('Page.navigate',{url:origin+path});await pause(500);await evaluate(`document.documentElement.dataset.theme='${theme}'`);
- if(path==='/articles/')await evaluate("(()=>{const select=document.querySelector('.archive-view select');select.value='list';select.dispatchEvent(new Event('change',{bubbles:true}));})()");
+ if(path==='/articles/')await evaluate("document.querySelector('.archive-view button[value=list]').click()");
  const ratios=await evaluate(`(()=>{const pixel=color=>{const c=document.createElement('canvas');c.width=c.height=1;const x=c.getContext('2d');x.fillStyle=color;x.fillRect(0,0,1,1);return [...x.getImageData(0,0,1,1).data]};const lum=rgb=>rgb.slice(0,3).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);const background=pixel(getComputedStyle(document.documentElement).getPropertyValue('--bg'));return ${JSON.stringify(selectors)}.map(selector=>{const el=document.querySelector(selector);const color=getComputedStyle(el).color;const a=lum(pixel(color)),b=lum(background);return {selector,color,ratio:Number(((Math.max(a,b)+.05)/(Math.min(a,b)+.05)).toFixed(2))}})})()`);
  results.push({theme,path,ratios});
 }

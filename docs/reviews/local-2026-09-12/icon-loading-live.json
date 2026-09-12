@@ -1,0 +1,48 @@
+{
+  "origin": "https://ziabary.ir",
+  "legacyFilesBlocked": false,
+  "results": [
+    {
+      "path": "/articles/",
+      "width": 1440,
+      "theme": "dark",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "none",
+          "font": "SiteIcons-solid",
+          "width": 0
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "none",
+          "font": "SiteIcons-solid",
+          "width": 0
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [
+        "https://ziabary.ir/fonts/icons/icons.css"
+      ],
+      "legacyRequests": [
+        "https://ziabary.ir/fonts/icons/icons.css",
+        "https://ziabary.ir/fonts/icons/brands.woff2",
+        "https://ziabary.ir/fonts/icons/solid.woff2"
+      ]
+    }
+  ],
+  "exceptions": []
+}

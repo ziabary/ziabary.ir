@@ -8489,6 +8489,33 @@
       }
     ]
   },
+  "/images/news/nsr-tehran-3521636.jpg": {
+    "width": 1280,
+    "height": 960,
+    "originalBytes": 108420,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/2dcce86fbe78adf6-320.webp",
+        "bytes": 8448
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/2dcce86fbe78adf6-640.webp",
+        "bytes": 22906
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/2dcce86fbe78adf6-960.webp",
+        "bytes": 42404
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/2dcce86fbe78adf6-1280.webp",
+        "bytes": 64024
+      }
+    ]
+  },
   "/images/news/peivast-001.jpg": {
     "width": 683,
     "height": 1024,

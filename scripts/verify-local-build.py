@@ -12,11 +12,16 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.path, self.ids, self.links, self.assets, self.alternates = path, [], [], [], []
         self.canonical, self.noindex, self.lang, self.direction = [], False, None, None
+        self.external_links = []
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if a.get('id'): self.ids.append(a['id'])
         if tag == 'html': self.lang, self.direction = a.get('lang'), a.get('dir')
         if tag == 'a' and a.get('href'): self.links.append(a['href'])
+        if tag == 'a' and a.get('href'):
+            href = urlsplit(a['href'])
+            if (href.scheme in ['http', 'https'] or not href.scheme and href.netloc) and href.hostname not in ['ziabary.ir', 'www.ziabary.ir']:
+                self.external_links.append(a)
         if tag in ['img', 'script'] and a.get('src'): self.assets.append(a['src'])
         if tag == 'img' and a.get('srcset'): self.assets += [v.strip().split(' ')[0] for v in a['srcset'].split(',')]
         if tag == 'link' and a.get('rel') == 'stylesheet': self.assets.append(a['href'])
@@ -33,6 +38,8 @@ redirects = {r['from']:r['to'] for r in json.loads(Path('config/redirects.json')
 for url, page in pages.items():
     expected = url.split('/')[1] if url.split('/')[1] in ['en','es'] else 'fa'
     if page.lang != expected or page.direction != ('rtl' if expected == 'fa' else 'ltr'): errors.append([url, 'html language/direction'])
+    for link in page.external_links:
+        if link.get('target') != '_blank': errors.append([url, 'external link must open a new tab', link['href']])
     if len(page.canonical) != 1: errors.append([url, 'canonical count', len(page.canonical)])
     elif url != '/gallery/' and page.canonical[0] != 'https://ziabary.ir' + url: errors.append([url,'canonical mismatch',page.canonical[0]])
     duplicates = sorted({id for id in page.ids if page.ids.count(id) > 1})
@@ -53,7 +60,7 @@ for url, page in pages.items():
             fragment_issues.append([url, href])
     if page.noindex and 'https://ziabary.ir' + url + '</loc>' in (root/'sitemap.xml').read_text(): errors.append([url, 'noindex in sitemap'])
 
-report = {'pages':len(pages), 'errors':errors, 'fragmentIssues':fragment_issues, 'languages':{lang:sum(p.lang==lang for p in pages.values()) for lang in ['fa','en','es']}}
+report = {'pages':len(pages), 'externalLinks':sum(len(page.external_links) for page in pages.values()), 'errors':errors, 'fragmentIssues':fragment_issues, 'languages':{lang:sum(p.lang==lang for p in pages.values()) for lang in ['fa','en','es']}}
 output = Path('docs/reviews/local-2026-09-09/static-audit.json'); output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'pages':len(pages),'errors':len(errors),'fragmentIssues':len(fragment_issues)}))
 sys.exit(1 if errors or fragment_issues else 0)

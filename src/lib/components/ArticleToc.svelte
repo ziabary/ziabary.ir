@@ -1,34 +1,12 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { headingSections, keepCurrentVisible } from '$lib/contents-navigation';
   export let headings: Array<{ id: string; title: string; depth: number }> = [];
   export let locale: 'fa' | 'en' | 'es' = 'fa';
   export let prefix = '';
-  let active = headings.find(item => item.depth === 2)?.id ?? '';
+  export let active = '';
   $: title = locale === 'fa' ? 'در این نوشته' : locale === 'en' ? 'In this article' : 'En este artículo';
-  $: sections = headings.filter(item => item.depth === 2).map(item => {
-    const start = headings.indexOf(item) + 1;
-    const next = headings.slice(start).findIndex(heading => heading.depth === 2);
-    return { ...item, children: headings.slice(start, next < 0 ? undefined : start + next) };
-  });
+  $: sections = headingSections(headings);
   $: activeParent = sections.find(item => item.id === active || item.children.some(child => child.id === active))?.id;
-
-  onMount(() => {
-    const nodes = headings.map(item => document.getElementById(prefix + item.id)).filter((node): node is HTMLElement => Boolean(node));
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-      if (visible[0]) active = visible[0].target.id.slice(prefix.length);
-      else for (const entry of entries) {
-        if (entry.boundingClientRect.top < 100) active = entry.target.id.slice(prefix.length);
-      }
-    }, { rootMargin: '-100px 0px -55% 0px', threshold: 0 });
-    nodes.forEach(node => observer.observe(node));
-    const fromHash = () => {
-      const id = decodeURIComponent(location.hash.slice(1));
-      if (nodes.some(node => node.id === id)) active = id.slice(prefix.length);
-    };
-    fromHash(); window.addEventListener('hashchange', fromHash);
-    return () => { observer.disconnect(); window.removeEventListener('hashchange', fromHash); };
-  });
 </script>
 
 {#snippet links()}
@@ -45,8 +23,8 @@
 {/snippet}
 
 <aside class="article-toc" aria-label={title}>
-  <details class="desktop-toc" open><summary>{title}</summary><nav aria-label={title}>{@render links()}</nav></details>
-  <details class="mobile-toc"><summary>{title}</summary><nav aria-label={title}>{@render links()}</nav></details>
+  <details class="desktop-toc" open><summary>{title}</summary><nav aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
+  <details class="mobile-toc"><summary>{title}</summary><nav aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
 </aside>
 
 <style>
@@ -56,6 +34,7 @@
   ol { list-style: none; padding: 0; margin: 0; }
   a { display: block; border-inline-start: 2px solid var(--line); padding: 7px 12px; color: var(--muted); white-space: normal; overflow-wrap: anywhere; font-size: inherit; }
   a.active, a[aria-current] { border-color: var(--link-ink); color: var(--link-ink); font-weight: 700; }
+  a[aria-current] { background: var(--soft); }
   ol ol { margin-inline-start: 12px; font-size: 12px; }
   .mobile-toc { display: none; }
   @media (max-width: 1199px) { .desktop-toc { display: none; } .mobile-toc { display: block; border-block: 1px solid var(--line); } nav { max-height: 50vh; } }

@@ -1,0 +1,217 @@
+{
+  "origin": "http://127.0.0.1:4186",
+  "legacyFilesBlocked": true,
+  "results": [
+    {
+      "path": "/articles/",
+      "width": 1440,
+      "theme": "light",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [],
+      "legacyRequests": []
+    },
+    {
+      "path": "/articles/",
+      "width": 390,
+      "theme": "dark",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [],
+      "legacyRequests": []
+    },
+    {
+      "path": "/en/articles/",
+      "width": 1440,
+      "theme": "light",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [],
+      "legacyRequests": []
+    },
+    {
+      "path": "/en/articles/",
+      "width": 390,
+      "theme": "dark",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [],
+      "legacyRequests": []
+    },
+    {
+      "path": "/es/articles/",
+      "width": 1440,
+      "theme": "light",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [],
+      "legacyRequests": []
+    },
+    {
+      "path": "/es/articles/",
+      "width": 390,
+      "theme": "dark",
+      "icons": [
+        {
+          "class": "fa-solid fa-table-cells svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        },
+        {
+          "class": "fa-solid fa-list-ul svelte-1i00yms",
+          "content": "\"\"",
+          "font": "SiteIcons-solid",
+          "width": 18
+        }
+      ],
+      "fonts": [
+        {
+          "family": "SiteIcons-solid",
+          "status": "loaded"
+        },
+        {
+          "family": "SiteIcons-regular",
+          "status": "unloaded"
+        },
+        {
+          "family": "SiteIcons-brands",
+          "status": "loaded"
+        }
+      ],
+      "legacyStyles": [],
+      "legacyRequests": []
+    }
+  ],
+  "exceptions": []
+}

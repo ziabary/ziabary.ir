@@ -4,6 +4,7 @@
   import type { Component } from 'svelte';
   import type { GuideCollection } from '$lib/guides';
   import { getArticle } from '$lib/content';
+  import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import PageHero from './PageHero.svelte';
   import PageSeo from './PageSeo.svelte';
   import GuideStart from './GuideStart.svelte';
@@ -14,7 +15,8 @@
   export let locale: 'fa' | 'en' | 'es' = 'fa';
   let main: HTMLElement;
   let continuous = false;
-  let active = '';
+  let activeTarget = '';
+  const followHeading = (id: string) => activeTarget = id;
   const copies = {
     fa: { contents: 'در این مجموعه', back: 'دیدن دیگر راهنماهای فنی', planned: 'در برنامهٔ نگارش', empty: 'هنوز یادداشتی در این مجموعه منتشر نشده است.', read: 'مطالعهٔ فصل', standalone: 'بازکردن نسخهٔ مستقل مقاله', continuous: 'مطالعهٔ پیوستهٔ فصل‌ها', collapse: 'جمع‌کردن متن فصل‌ها', about: 'دربارهٔ این مجموعه' },
     en: { contents: 'In this collection', back: 'Explore other technical guides', planned: 'Planned', empty: 'No articles have been published in this collection yet.', read: 'Read chapter', standalone: 'Open the standalone article', continuous: 'Read chapters continuously', collapse: 'Collapse chapter texts', about: 'About this collection' },
@@ -24,30 +26,30 @@
   $: base = locale === 'fa' ? '' : `/${locale}`;
   $: planned = collection.status === 'planned';
   $: hasTools = collection.items.some(item => item.kind !== 'article');
+  $: targetIds = collection.items.flatMap(item => [item.id, ...(getArticle(item.id)?.headings ?? []).map(heading => `${item.id}--${heading.id}`)]);
+  $: active = collection.items.find(item => activeTarget === item.id || activeTarget.startsWith(`${item.id}--`))?.id ?? '';
   $: legacyOwners = new Map(collection.items.flatMap(item => (getArticle(item.id)?.legacyAnchors ?? []).map(anchor => [anchor, item.id] as const)).reverse());
 
   function toggleContinuous() {
     continuous = !continuous;
     main.querySelectorAll<HTMLDetailsElement>('.chapter-details').forEach(details => details.open = continuous);
   }
+  async function revealFragment(id: string) {
+    if (!id) return;
+    const legacyOwner = legacyOwners.get(id);
+    const target = document.getElementById(legacyOwner ? `${legacyOwner}--${id}` : id) ?? document.getElementById(id);
+    const entry = target?.closest('.guide-entry');
+    const details = entry?.querySelector<HTMLDetailsElement>('.chapter-details');
+    if (details) details.open = true;
+    await tick();
+    if (target) { activeTarget = target.id; requestAnimationFrame(() => target.scrollIntoView()); }
+  }
   onMount(() => {
-    const revealFragment = async () => {
-      const id = decodeURIComponent(location.hash.slice(1));
-      if (!id) return;
-      const legacyOwner = legacyOwners.get(id);
-      const target = document.getElementById(legacyOwner ? `${legacyOwner}--${id}` : id) ?? document.getElementById(id);
-      const entry = target?.closest('.guide-entry');
-      const details = entry?.querySelector<HTMLDetailsElement>('.chapter-details');
-      if (details) details.open = true;
-      await tick();
-      if (target) { active = entry?.id ?? id; requestAnimationFrame(() => target.scrollIntoView()); }
+    const fromHash = () => {
+      try { revealFragment(decodeURIComponent(location.hash.slice(1))); } catch { /* Ignore malformed fragments. */ }
     };
-    const observer = new IntersectionObserver(entries => {
-      for (const entry of entries) if (entry.isIntersecting) active = entry.target.id;
-    }, { rootMargin: '-100px 0px -65% 0px' });
-    main.querySelectorAll('.guide-entry').forEach(entry => observer.observe(entry));
-    revealFragment(); window.addEventListener('hashchange', revealFragment);
-    return () => { observer.disconnect(); window.removeEventListener('hashchange', revealFragment); };
+    fromHash(); window.addEventListener('hashchange', fromHash);
+    return () => window.removeEventListener('hashchange', fromHash);
   });
 </script>
 
@@ -60,11 +62,11 @@
   {:else}
     <div class="wrap guide-layout" class:has-tools={hasTools}>
       <aside class="guide-navigation">
-        <details class="guide-desktop-toc" open><summary>{copy.contents}</summary><nav aria-label={copy.contents}>{@render contents()}</nav></details>
-        <details class="guide-mobile-toc"><summary>{copy.contents}</summary><nav aria-label={copy.contents}>{@render contents()}</nav></details>
+        <details class="guide-desktop-toc" open><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
+        <details class="guide-mobile-toc"><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
         <a class="guide-back" href={`${base}/guides/`}>{copy.back}</a>
       </aside>
-      <div class="guide-main">
+      <div class="guide-main" use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
         <div class="guide-overview">
           <img class="guide-cover" {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={collection.imageAlt} width="1600" height="900" />
           {#if collection.slug === 'gpu-selection' && locale === 'fa'}<GuideStart {collection} />{:else}<div><small>{copy.about}</small><p>{collection.intro}</p></div>{/if}
@@ -98,10 +100,18 @@
 
 {#snippet contents()}
   <ol>{#each collection.items as item}
-    {@const headings = getArticle(item.id)?.headings ?? []}
-    {@const sectionDepth = headings.some(heading => heading.depth === 2) ? 2 : 3}
-    <li><a href={`#${item.id}`} aria-current={active === item.id ? 'location' : undefined}>{item.title}</a>
-    {#if active === item.id}<ul>{#each headings.filter(heading => heading.depth === sectionDepth) as heading}<li><a href={`#${item.id}--${heading.id}`}>{heading.title}</a></li>{/each}</ul>{/if}
+    {@const sections = headingSections(getArticle(item.id)?.headings ?? [])}
+    <li><a href={`#${item.id}`} class:active-parent={active === item.id} aria-current={activeTarget === item.id ? 'location' : undefined} onclick={() => revealFragment(item.id)}>{item.title}</a>
+    {#if active === item.id}<ul>{#each sections as heading}
+      {@const id = `${item.id}--${heading.id}`}
+      {@const inSection = activeTarget === id || heading.children.some(child => activeTarget === `${item.id}--${child.id}`)}
+      <li><a href={`#${id}`} class:active-parent={inSection} aria-current={activeTarget === id ? 'location' : undefined} onclick={() => revealFragment(id)}>{heading.title}</a>
+        {#if inSection && heading.children.length}<ul>{#each heading.children as child}
+          {@const childId = `${item.id}--${child.id}`}
+          <li><a href={`#${childId}`} aria-current={activeTarget === childId ? 'location' : undefined} onclick={() => revealFragment(childId)}>{child.title}</a></li>
+        {/each}</ul>{/if}
+      </li>
+    {/each}</ul>{/if}
   </li>{/each}</ol>
 {/snippet}
 
@@ -114,7 +124,8 @@
   nav { display: block; position: static; inset: auto; padding: 0; margin: 0; background: transparent; border: 0; max-height: calc(100dvh - 220px); overflow: auto; }
   nav ol, nav ul { list-style: none; padding: 0; margin: 0; } nav ul { padding-inline-start: 12px; }
   nav a { display: block; font-size: 12px; line-height: 1.8; white-space: normal; padding: 8px 12px; border-inline-start: 2px solid var(--line); color: var(--muted); }
-  nav a[aria-current] { color: var(--link-ink); border-color: var(--link-ink); font-weight: 700; }
+  nav a.active-parent, nav a[aria-current] { color: var(--link-ink); border-color: var(--link-ink); font-weight: 700; }
+  nav a[aria-current] { background: var(--soft); }
   summary { padding-block: 12px; cursor: pointer; font-weight: 700; } .guide-mobile-toc { display: none; }
   .guide-back, .standalone-link { display: inline-block; color: var(--link-ink); font-size: 13px; margin-top: 16px; }
   .guide-overview { display: grid; gap: 24px; } .has-tools .guide-overview { grid-template-columns: 1fr 1fr; }

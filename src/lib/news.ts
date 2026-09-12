@@ -12,6 +12,7 @@ export type MediaItem = {
 };
 
 export const mediaSources: Record<string, { logo: string }> = {
+  'نصر تهران': { logo: '/images/organizations/nezamsenfi-ai.png' },
   'زاویه': { logo: '/images/news-agencies/zavieh.svg' },
   'راه پرداخت': { logo: '/images/news-agencies/way2pay.jpg' },
   'پیوست': { logo: '/images/news-agencies/peivast.png' },
@@ -33,6 +34,18 @@ export const mediaSources: Record<string, { logo: string }> = {
 // Reports, interviews and other coverage about or quoting Mehran. Authored
 // pieces live in article frontmatter and are merged into the media page there.
 export const mediaItems: MediaItem[] = [
+{
+  "title": "آیین‌نامه فعلی اپراتورهای هوش مصنوعی مخل فضای کسب‌وکار هوش مصنوعی است",
+  "source": "نصر تهران",
+  "kind": "گفت‌وگو",
+  "summary": "مجوز اپراتوری هوش مصنوعی چگونه می‌تواند زیرساخت این حوزه را توسعه دهد، بی‌آنکه راه فعالیت شرکت‌های کوچک و متوسط را ببندد؟ نصر تهران در گفت‌وگو با سید محمد محمدزاده ضیابری، رئیس کمیسیون هوش مصنوعی سازمان، نقدهای او به شرایط صدور پروانه را بررسی می‌کند. ضیابری میان ضرورت ایجاد اپراتور و چارچوب پیشنهادی مجوز تفاوت می‌گذارد و الزام ظرفیت پردازشی ۲۰۰ پتافلاپس، حق پروانه ۵۰ میلیارد تومانی و رشد سالانه ظرفیت را از موانع ورود بخش بزرگی از شرکت‌ها می‌داند.\n\nبحث تنها بر سر هزینه مجوز نیست؛ گسترش دامنه اپراتوری از زیرساخت به کاربردهای تخصصی و محدودکردن قراردادهای دولتی به دارندگان پروانه نیز می‌تواند بازار را در اختیار چند بازیگر بزرگ قرار دهد. ضیابری در این گفت‌وگو از توقف فعلی صدور پروانه خبر می‌دهد و پیشنهاد می‌کند مجوزها در دو سطح، متناسب با ظرفیت شرکت‌های بزرگ و کوچک، طراحی شوند. گزارش توضیح می‌دهد چرا بازنگری این چارچوب برای حفظ تنوع زیست‌بوم و امکان رقابت شرکت‌های مستقل اهمیت دارد.",
+  "url": "https://tehran.irannsr.org/fa/news/3521636-%D8%A2%DB%8C%DB%8C%D9%86.html",
+  "date": "2026-09-12",
+  "faDate": "۲۱ شهریور ۱۴۰۵",
+  "coverImage": "/images/news/nsr-tehran-3521636.jpg",
+  "coverImageAlt": "تصویر منتشرشده در نصر تهران از سید محمد محمدزاده ضیابری",
+  "editorialNote": null
+},
 {
   "title": "کلاف سردرگم حکمرانی هوش مصنوعی در ایران؛ از موازی‌کاری ساختاری تا بیم سلب فرصت در مسابقه جهانی",
   "source": "خبرگزاری هوشیو",

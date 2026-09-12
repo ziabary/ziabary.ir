@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "name": "article H2/H3 tracking, reverse scroll and direct fragment: fa",
+      "passed": true
+    },
+    {
+      "name": "article H2/H3 tracking, reverse scroll and direct fragment: en",
+      "passed": true
+    },
+    {
+      "name": "article H2/H3 tracking, reverse scroll and direct fragment: es",
+      "passed": true
+    },
+    {
+      "name": "article navigation refreshes the observed heading elements",
+      "passed": true
+    },
+    {
+      "name": "a standalone article with H3-only sections has a working contents menu",
+      "passed": true
+    },
+    {
+      "name": "collapsible guide tracks H2/H3, ignores closed chapters and reopens the same fragment",
+      "passed": true
+    },
+    {
+      "name": "GPU collection subsection tracking and article boundaries: fa",
+      "passed": true
+    },
+    {
+      "name": "GPU collection subsection tracking and article boundaries: en",
+      "passed": true
+    },
+    {
+      "name": "GPU collection subsection tracking and article boundaries: es",
+      "passed": true
+    },
+    {
+      "name": "mobile menus retain their closed default and track the current subsection",
+      "passed": true
+    }
+  ],
+  "exceptions": []
+}

@@ -1,0 +1,64 @@
+{
+  "origin": "http://127.0.0.1:4186",
+  "results": [
+    {
+      "name": "/articles/targoman-transformer-update/",
+      "count": 15,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/en/articles/from-zero-trust-to-zero-trust-ai-en/",
+      "count": 4,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/es/articles/from-zero-trust-to-zero-trust-ai-es/",
+      "count": 4,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/guides/gpu-selection/",
+      "count": 98,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/en/guides/gpu-selection/",
+      "count": 97,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/es/guides/gpu-selection/",
+      "count": 97,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/media/",
+      "count": 55,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/media/ page 2",
+      "count": 44,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "/media/#videos",
+      "count": 29,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "editor preview: external and internal link behavior",
+      "passed": true
+    }
+  ],
+  "exceptions": []
+}

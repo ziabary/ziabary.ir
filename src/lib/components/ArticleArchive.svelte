@@ -21,9 +21,9 @@
   let view: 'grid' | 'list' = 'grid';
   const viewStorageKey = 'ziabary-archive-view';
   const copies = {
-    fa: { title: 'نوشته‌ها و یادداشت‌ها', lead: 'تحلیل‌های فنی و مدیریتی؛ گاهی هم سفرنامه و دلنوشته.', archive: 'آرشیو', search: 'جستجو در عنوان و خلاصه', all: 'همهٔ موضوع‌ها و دسته‌ها', previous: 'قبلی', next: 'بعدی', pages: 'صفحه‌های آرشیو', empty: 'نوشته‌ای با این انتخاب پیدا نشد.', page: 'صفحه', read: 'خواندن نوشته', view: 'نمایش آرشیو', grid: 'سه‌ستونی', list: 'تک‌ستونی' },
-    en: { title: 'Articles', lead: 'Technical articles, essays and historical notes, selected for English readers.', archive: 'Archive', search: 'Search titles and summaries', all: 'All topics and categories', previous: 'Previous', next: 'Next', pages: 'Archive pages', empty: 'No articles match this selection.', page: 'Page', read: 'Read article', view: 'Archive layout', grid: 'Three columns', list: 'Single column' },
-    es: { title: 'Artículos', lead: 'Artículos técnicos y ensayos seleccionados para lectores en español.', archive: 'Archivo', search: 'Buscar títulos y resúmenes', all: 'Todos los temas y categorías', previous: 'Anterior', next: 'Siguiente', pages: 'Páginas del archivo', empty: 'No hay artículos que coincidan.', page: 'Página', read: 'Leer artículo', view: 'Vista del archivo', grid: 'Tres columnas', list: 'Una columna' }
+    fa: { title: 'نوشته‌ها و یادداشت‌ها', lead: 'تحلیل‌های فنی و مدیریتی؛ گاهی هم سفرنامه و دلنوشته.', archive: 'آرشیو', search: 'جستجو در عنوان و خلاصه', all: 'همهٔ موضوع‌ها و دسته‌ها', previous: 'قبلی', next: 'بعدی', pages: 'صفحه‌های آرشیو', empty: 'نوشته‌ای با این انتخاب پیدا نشد.', page: 'صفحه', read: 'خواندن نوشته', view: 'نمایش آرشیو', grid: 'نمایش شبکه‌ای', list: 'نمایش فهرستی' },
+    en: { title: 'Articles', lead: 'Technical articles, essays and historical notes, selected for English readers.', archive: 'Archive', search: 'Search titles and summaries', all: 'All topics and categories', previous: 'Previous', next: 'Next', pages: 'Archive pages', empty: 'No articles match this selection.', page: 'Page', read: 'Read article', view: 'Archive layout', grid: 'Grid view', list: 'List view' },
+    es: { title: 'Artículos', lead: 'Artículos técnicos y ensayos seleccionados para lectores en español.', archive: 'Archivo', search: 'Buscar títulos y resúmenes', all: 'Todos los temas y categorías', previous: 'Anterior', next: 'Siguiente', pages: 'Páginas del archivo', empty: 'No hay artículos que coincidan.', page: 'Página', read: 'Leer artículo', view: 'Vista del archivo', grid: 'Vista de cuadrícula', list: 'Vista de lista' }
   };
   $: copy = copies[locale];
   $: numbers = new Intl.NumberFormat(locale);
@@ -49,7 +49,7 @@
   }
   function updateView(value: string) {
     view = value === 'list' ? 'list' : 'grid';
-    try { localStorage.setItem(viewStorageKey, view); } catch { /* Keep the selector usable when storage is unavailable. */ }
+    try { localStorage.setItem(viewStorageKey, view); } catch { /* Keep the view buttons usable when storage is unavailable. */ }
   }
   onMount(() => {
     try { view = localStorage.getItem(viewStorageKey) === 'list' ? 'list' : 'grid'; } catch { /* Use the default layout. */ }
@@ -69,7 +69,13 @@
   <section class="wrap archive-controls" aria-label={copy.search}>
     <label><span>{copy.search}</span><input type="search" bind:value={query} oninput={event => { query = event.currentTarget.value; updateFilters(); }} /></label>
     <label><span>{copy.all}</span><select bind:value={category} onchange={event => { category = event.currentTarget.value; updateFilters(); }}><option value="">{copy.all}</option>{#each availableTopics(locale) as topic}<option value={`topic:${topic.slug}`}>{topic.title}</option>{/each}{#each categories as item}<option value={item}>{item}</option>{/each}</select></label>
-    <label class="archive-view"><span>{copy.view}</span><select value={view} onchange={event => updateView(event.currentTarget.value)} aria-controls="archive-items" disabled={!mounted}><option value="grid">{copy.grid}</option><option value="list">{copy.list}</option></select></label>
+    <div class="archive-view">
+      <span id="archive-view-label">{copy.view}</span>
+      <div class="archive-view-buttons" role="group" aria-labelledby="archive-view-label">
+        <button type="button" value="grid" aria-label={copy.grid} title={copy.grid} aria-pressed={view === 'grid'} aria-controls="archive-items" disabled={!mounted} onclick={() => updateView('grid')}><i class="fa-solid fa-table-cells" aria-hidden="true"></i></button>
+        <button type="button" value="list" aria-label={copy.list} title={copy.list} aria-pressed={view === 'list'} aria-controls="archive-items" disabled={!mounted} onclick={() => updateView('list')}><i class="fa-solid fa-list-ul" aria-hidden="true"></i></button>
+      </div>
+    </div>
   </section>
   <section class="wrap archive-results" class:archive-rows={view === 'list'} aria-label={copy.title}>
     <p class="archive-status" aria-live="polite">{copy.page} {numbers.format(resultPage)} / {numbers.format(totalPages)} · {numbers.format(filtered.length)} {locale === 'fa' ? 'نوشته' : locale === 'en' ? 'articles' : 'artículos'}</p>
@@ -97,7 +103,14 @@
 <style>
   .archive-controls { display: flex; flex-wrap: wrap; gap: 20px; align-items: end; margin-bottom: 26px; }
   label { display: grid; gap: 6px; font-size: 12px; color: var(--muted); flex: 1; min-width: 220px; }
-  .archive-view { flex: 0 1 185px; min-width: 160px; }
+  .archive-view { display: grid; gap: 6px; flex: 0 0 auto; font-size: 12px; color: var(--muted); }
+  .archive-view-buttons { display: flex; gap: 6px; }
+  .archive-view button { display: inline-flex; align-items: center; justify-content: center; width: 44px; min-height: 44px; padding: 0; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--muted); cursor: pointer; }
+  .archive-view button:hover:not(:disabled) { border-color: var(--teal-deep); color: var(--ink); }
+  .archive-view button[aria-pressed="true"] { border-color: var(--teal-deep); background: var(--teal-deep); color: white; }
+  .archive-view button[aria-pressed="true"]:hover:not(:disabled) { color: white; }
+  .archive-view button:disabled { cursor: default; opacity: .55; }
+  .archive-view i { font-size: 18px; }
   input, select { min-height: 44px; border: 1px solid var(--line); border-radius: 7px; padding: 8px 12px; color: var(--ink); background: var(--paper); font: inherit; width: 100%; }
   .archive-rows { max-width: 1000px; } .archive-status { color: var(--muted); font-size: 13px; }
   .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
@@ -112,5 +125,5 @@
   .archive-pagination a { display: inline-flex; justify-content: center; align-items: center; min-width: 44px; min-height: 44px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px; }
   a[aria-current] { background: var(--teal-deep); color: white; }
   @media (max-width: 980px) { .archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 680px) { .archive-grid { grid-template-columns: minmax(0, 1fr); } .archive-view { flex: 1; } .archive-row { gap: 14px; } .archive-thumbnail { flex-basis: 88px; } img { width: 88px; height: 88px; } h2 { font-size: 18px; } .archive-row p { font-size: 13px; } }
+  @media (max-width: 680px) { .archive-grid { grid-template-columns: minmax(0, 1fr); } .archive-row { gap: 14px; } .archive-thumbnail { flex-basis: 88px; } img { width: 88px; height: 88px; } h2 { font-size: 18px; } .archive-row p { font-size: 13px; } }
 </style>

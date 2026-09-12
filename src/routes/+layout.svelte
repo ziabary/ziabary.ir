@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '$lib/generated/icons.css';
   import '../app.css';
   import '../refinement.css';
   import SiteShell from '$lib/components/SiteShell.svelte';
