@@ -15,13 +15,19 @@
       id: 'pcie-gpu-server-selection',
       title: 'GPU مشخص است؛ سرور مناسب می‌خواهم',
       description: 'انتخاب شاسی، توپولوژی، برق و خنک‌کاری متناسب با کارت',
-      label: 'انتخاب سرور مناسب'
+      label: 'انتخاب سرور'
     },
     {
-      id: 'int8-or-fp8-real-gpu-support',
-      title: 'پیش از خرید، سازگاری را بررسی می‌کنم',
-      description: 'نسخهٔ مدل، قالب عددی و پشتیبانی واقعی کرنل',
-      label: 'بررسی پشتیبانی نرم‌افزاری'
+      id: 'gpu-types-for-ai',
+      title: 'کارت گیمینگ برای هوش مصنوعی کافی است؟',
+      description: 'تفاوت کارت‌های گیمینگ، حرفه‌ای و دیتاسنتری؛ از کجا شروع کنیم؟',
+      label: 'شناخت انواع GPU'
+    },
+    {
+      id: 'gpu-server-platform-components',
+      title: 'چه چیزی GPU قدرتمند شما را معطل می‌کند؟',
+      description: 'نقش CPU، رم، ذخیره‌سازی و شبکه در سرعت پردازش',
+      label: 'شناخت اجزای سرور'
     }
   ];
   $: availablePaths = paths.filter((path) => collection.items.some((item) => item.id === path.id));
@@ -35,8 +41,10 @@
         <span class="path-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, '۰')}</span>
         <div>
           <h3>{path.title}</h3>
-          <p>{path.description}</p>
-          <a href={`#${path.id}`}>{path.label} <span aria-hidden="true">←</span></a>
+          <div class="path-summary">
+            <p>{path.description}</p>
+            <a class="path-button" href={`#${path.id}`}>{path.label} <span aria-hidden="true">←</span></a>
+          </div>
         </div>
       </li>
     {/each}
@@ -68,20 +76,21 @@
 </section>
 
 <style>
-  .guide-start { min-width: 0; align-self: start; padding: 28px; border: 1px solid var(--line); background: var(--soft); }
+  .guide-start { min-width: 0; align-self: start; padding: 24px; border: 1px solid var(--line); background: var(--soft); }
   header small { color: var(--teal); font-size: 11px; }
-  h2 { margin: 12px 0 16px; font-size: 26px; line-height: 1.6; }
+  h2 { margin: 10px 0 12px; font-size: 26px; line-height: 1.6; }
   header p { margin: 0; color: var(--muted); font-size: 14px; line-height: 2.1; }
   nav { display: block; position: static; inset: auto; width: 100%; margin: 0; padding: 0; border: 0; background: transparent; }
-  .start-paths { list-style: none; margin: 24px 0 0; padding: 0; }
-  .start-paths li { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 12px; padding: 20px 0; border-top: 1px solid var(--line); }
+  .start-paths { list-style: none; margin: 18px 0 0; padding: 0; }
+  .start-paths li { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
   .path-number { padding-top: 3px; color: var(--teal); font-size: 12px; }
   h3 { margin: 0; font-size: 15px; line-height: 1.9; }
-  li p { margin: 8px 0; color: var(--muted); font-size: 12px; line-height: 2; }
-  li a { display: inline-block; white-space: normal; padding-block: 6px; color: var(--teal); font-size: 12px; font-weight: 700; }
-  a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .path-summary { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 6px; }
+  .path-summary p { flex: 1 1 180px; min-width: 0; margin: 0; color: var(--muted); font-size: 12px; line-height: 2; }
+  .path-button { display: inline-flex; flex-shrink: 0; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 6px 10px; border: 1px solid var(--teal); border-radius: 6px; background: var(--paper); color: var(--link-ink); font-size: 11px; font-weight: 700; line-height: 1.8; white-space: nowrap; }
+  .path-button:hover { background: var(--teal); color: var(--paper); }
   a:focus-visible, summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 5px; border-radius: 2px; }
-  footer { display: flex; flex-wrap: wrap; gap: 12px 20px; margin: 4px 0 0; padding: 20px 0 0; background: transparent; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.9; }
+  footer { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 0; padding: 14px 0 0; background: transparent; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.9; }
   .mobile-paths { display: none; }
   @media (max-width: 700px) {
     .guide-start { padding: 22px; }

@@ -1,0 +1,32 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "Article is public in the local build with one title, canonical URL, loaded local cover, nine external references opening in a new tab, working heading anchors and a 9×6 comparison table.",
+    "Comparison table scrolls within its frame at 320/390 pixels in both themes; no page overflow.",
+    "Published archive and generated sitemap both include the new article."
+  ],
+  "screenshots": [
+    "desktop-dark-cover.png",
+    "desktop-dark-table.png",
+    "desktop-light-cover.png",
+    "desktop-light-table.png",
+    "mobile-390-dark-table.png",
+    "mobile-390-light-table.png",
+    "mobile-390-cover.png",
+    "mobile-320-dark-table.png",
+    "mobile-320-light-table.png",
+    "mobile-320-cover.png"
+  ],
+  "cover": {
+    "src": "/images/responsive/f9a7c21d51d250c7-960.webp",
+    "currentSrc": "http://127.0.0.1:4189/images/responsive/f9a7c21d51d250c7-960.webp",
+    "width": 740,
+    "height": 416
+  },
+  "headingLinks": 12,
+  "related": [
+    "/articles/ai-data-confidentiality-safe-processing/",
+    "/articles/ztai-indirect-data-access/"
+  ],
+  "runtimeErrors": []
+}

@@ -1,0 +1,730 @@
+
+> ziabary-platform@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: preview links preserve filters and fragments and replace an existing draft flag
+ok 1 - preview links preserve filters and fragments and replace an existing draft flag
+  ---
+  duration_ms: 1.825612
+  ...
+# Subtest: preview navigation leaves external, published, unwritten and fragment links alone
+ok 2 - preview navigation leaves external, published, unwritten and fragment links alone
+  ---
+  duration_ms: 0.201071
+  ...
+# Subtest: the two backdated articles remain drafts even after their dates have passed
+ok 3 - the two backdated articles remain drafts even after their dates have passed
+  ---
+  duration_ms: 122.082789
+  ...
+# Subtest: built draft routes expose a noindex gate instead of the article body
+ok 4 - built draft routes expose a noindex gate instead of the article body
+  ---
+  duration_ms: 0.489681
+  ...
+# Subtest: drafts stay out of public sitemap, search, short links and archive HTML
+ok 5 - drafts stay out of public sitemap, search, short links and archive HTML
+  ---
+  duration_ms: 6.870607
+  ...
+# Subtest: optional translations: independent, two editions, distinct slugs, draft/future, conflicts
+ok 6 - optional translations: independent, two editions, distinct slugs, draft/future, conflicts
+  ---
+  duration_ms: 9.539267
+  ...
+# Subtest: publication state changes card discovery and usable count from one decision
+ok 7 - publication state changes card discovery and usable count from one decision
+  ---
+  duration_ms: 0.430544
+  ...
+# Subtest: calendar date and local display do not depend on server/reader timezone
+ok 8 - calendar date and local display do not depend on server/reader timezone
+  ---
+  duration_ms: 513.434467
+  ...
+# Subtest: archive edge cases and same-date stable ordering
+ok 9 - archive edge cases and same-date stable ordering
+  ---
+  duration_ms: 1.231722
+  ...
+# Subtest: equivalent Persian spellings find the same real published articles
+ok 10 - equivalent Persian spellings find the same real published articles
+  ---
+  duration_ms: 355.858502
+  ...
+# Subtest: Markdown IDs: repeated Persian headings, explicit old anchors and collection namespaces
+ok 11 - Markdown IDs: repeated Persian headings, explicit old anchors and collection namespaces
+  ---
+  duration_ms: 36.79515
+  ...
+# Subtest: external HTTP, HTTPS and protocol-relative links use a new tab; site links and mail keep their behavior
+ok 12 - external HTTP, HTTPS and protocol-relative links use a new tab; site links and mail keep their behavior
+  ---
+  duration_ms: 1.771554
+  ...
+# Subtest: literal HTML keeps attributes, link destinations and rel metadata while replacing existing targets
+ok 13 - literal HTML keeps attributes, link destinations and rel metadata while replacing existing targets
+  ---
+  duration_ms: 0.719334
+  ...
+# Subtest: the real Markdown pipeline covers inline links, references, autolinks and raw HTML, but leaves code alone
+ok 14 - the real Markdown pipeline covers inline links, references, autolinks and raw HTML, but leaves code alone
+  ---
+  duration_ms: 37.73227
+  ...
+# Subtest: Persian gallery retains all images and existing content
+ok 15 - Persian gallery retains all images and existing content
+  ---
+  duration_ms: 1.284028
+  ...
+# Subtest: album translation cannot publish an image without its own caption
+ok 16 - album translation cannot publish an image without its own caption
+  ---
+  duration_ms: 0.630301
+  ...
+# Subtest: only eligible photos are returned; first eligible photo becomes the cover
+ok 17 - only eligible photos are returned; first eligible photo becomes the cover
+  ---
+  duration_ms: 0.279186
+  ...
+# Subtest: English and Spanish publication are independent, with no fallback
+ok 18 - English and Spanish publication are independent, with no fallback
+  ---
+  duration_ms: 0.178674
+  ...
+# Subtest: removing the last caption removes an album from that language only
+ok 19 - removing the last caption removes an album from that language only
+  ---
+  duration_ms: 0.209825
+  ...
+# Subtest: existing localized gallery preserves order and contains no Persian copy
+ok 20 - existing localized gallery preserves order and contains no Persian copy
+  ---
+  duration_ms: 0.965287
+  ...
+# Subtest: Persian data is returned unchanged and neither localization mutates it
+ok 21 - Persian data is returned unchanged and neither localization mutates it
+  ---
+  duration_ms: 2.59297
+  ...
+# Subtest: en retains every numeric value, null, boolean and source URL
+ok 22 - en retains every numeric value, null, boolean and source URL
+  ---
+  duration_ms: 3.37418
+  ...
+# Subtest: en translates all hardware strings, including internal enum labels
+ok 23 - en translates all hardware strings, including internal enum labels
+  ---
+  duration_ms: 2.199989
+  ...
+# Subtest: en rejects missing translations instead of leaking Persian text
+ok 24 - en rejects missing translations instead of leaking Persian text
+  ---
+  duration_ms: 0.437949
+  ...
+# Subtest: the en collection and its eight articles are published
+ok 25 - the en collection and its eight articles are published
+  ---
+  duration_ms: 199.471423
+  ...
+# Subtest: es retains every numeric value, null, boolean and source URL
+ok 26 - es retains every numeric value, null, boolean and source URL
+  ---
+  duration_ms: 2.541396
+  ...
+# Subtest: es translates all hardware strings, including internal enum labels
+ok 27 - es translates all hardware strings, including internal enum labels
+  ---
+  duration_ms: 1.774542
+  ...
+# Subtest: es rejects missing translations instead of leaking Persian text
+ok 28 - es rejects missing translations instead of leaking Persian text
+  ---
+  duration_ms: 0.213531
+  ...
+# Subtest: the es collection and its eight articles are published
+ok 29 - the es collection and its eight articles are published
+  ---
+  duration_ms: 184.287323
+  ...
+# Subtest: localization caches and dictionaries are independent for English and Spanish
+ok 30 - localization caches and dictionaries are independent for English and Spanish
+  ---
+  duration_ms: 5.015888
+  ...
+# Subtest: Spanish preserves the reviewed English sources, figures and editorial relationships
+ok 31 - Spanish preserves the reviewed English sources, figures and editorial relationships
+  ---
+  duration_ms: 154.051655
+  ...
+# Subtest: draft preview accepts only the exact true query value
+ok 32 - draft preview accepts only the exact true query value
+  ---
+  duration_ms: 0.779668
+  ...
+# Subtest: the draft has six sections, seven data views, versioned research rows and the required taxonomies
+ok 33 - the draft has six sections, seven data views, versioned research rows and the required taxonomies
+  ---
+  duration_ms: 47.851988
+  ...
+# Subtest: all three general start presets begin without hidden exclusions
+ok 34 - all three general start presets begin without hidden exclusions
+  ---
+  duration_ms: 0.200999
+  ...
+# Subtest: writing plans retain fourteen entries and available manuscripts remain drafts
+ok 35 - writing plans retain fourteen entries and available manuscripts remain drafts
+  ---
+  duration_ms: 0.630519
+  ...
+# Subtest: every internal URL and stored anchor maps to an existing published Persian article
+ok 36 - every internal URL and stored anchor maps to an existing published Persian article
+  ---
+  duration_ms: 6.233974
+  ...
+# Subtest: filtering normalizes Persian, composes AND/OR, handles missing and sorts real zero correctly
+ok 37 - filtering normalizes Persian, composes AND/OR, handles missing and sorts real zero correctly
+  ---
+  duration_ms: 0.607332
+  ...
+# Subtest: side-by-side accepts differences while calculations obey axis and common-condition rules
+ok 38 - side-by-side accepts differences while calculations obey axis and common-condition rules
+  ---
+  duration_ms: 0.352834
+  ...
+# Subtest: test-only fixture validates and canonical adapters populate all eight views with scoped sources
+ok 39 - test-only fixture validates and canonical adapters populate all eight views with scoped sources
+  ---
+  duration_ms: 4.387246
+  ...
+# Subtest: engine and hardware controlled comparisons work; incompatible conditions block calculations only
+ok 40 - engine and hardware controlled comparisons work; incompatible conditions block calculations only
+  ---
+  duration_ms: 1.860687
+  ...
+# Subtest: registered user population remains separate from active concurrency
+ok 41 - registered user population remains separate from active concurrency
+  ---
+  duration_ms: 0.10433
+  ...
+# Subtest: provenance validation catches artifact attribution and missing precise locators
+ok 42 - provenance validation catches artifact attribution and missing precise locators
+  ---
+  duration_ms: 5.001361
+  ...
+# Subtest: the synthetic fixture is test-only and has no import path from production source
+ok 43 - the synthetic fixture is test-only and has no import path from production source
+  ---
+  duration_ms: 2.057406
+  ...
+# Subtest: prerendered public HTML contains only the noindex gate, never draft content
+ok 44 - prerendered public HTML contains only the noindex gate, never draft content
+  ---
+  duration_ms: 4.319262
+  ...
+# Subtest: dataset preserves numeric semantics, known notes, N/A and source provenance
+ok 45 - dataset preserves numeric semantics, known notes, N/A and source provenance
+  ---
+  duration_ms: 10.617398
+  ...
+# Subtest: unreviewed capabilities and unknown or false language claims do not grant suitability
+ok 46 - unreviewed capabilities and unknown or false language claims do not grant suitability
+  ---
+  duration_ms: 31.510252
+  ...
+# Subtest: real snapshot family, size and evidence filters retain unknown semantics
+ok 47 - real snapshot family, size and evidence filters retain unknown semantics
+  ---
+  duration_ms: 53.192364
+  ...
+# Subtest: documented applications survive an unknown outcome but never survive missing evidence
+ok 48 - documented applications survive an unknown outcome but never survive missing evidence
+  ---
+  duration_ms: 18.004722
+  ...
+# Subtest: table reading plans point to planned entries and do not invent published article routes
+ok 49 - table reading plans point to planned entries and do not invent published article routes
+  ---
+  duration_ms: 0.268546
+  ...
+# Subtest: Persian parameter sizes retain numeric filtering values and unambiguous units
+ok 50 - Persian parameter sizes retain numeric filtering values and unambiguous units
+  ---
+  duration_ms: 22.847103
+  ...
+# Subtest: editorial suggestions require both a reason and a source; primary purpose is separately justified
+ok 51 - editorial suggestions require both a reason and a source; primary purpose is separately justified
+  ---
+  duration_ms: 15.282716
+  ...
+# Subtest: every positive matrix cell has an explicitly sourced assessment and empty applications stay empty
+ok 52 - every positive matrix cell has an explicitly sourced assessment and empty applications stay empty
+  ---
+  duration_ms: 11.900014
+  ...
+# Subtest: publisher scores without tested commits stay with named models and cannot populate exact executions
+ok 53 - publisher scores without tested commits stay with named models and cannot populate exact executions
+  ---
+  duration_ms: 115.277101
+  ...
+# Subtest: published-result validator rejects wrong model names, missing evidence and fabricated deployment attribution
+ok 54 - published-result validator rejects wrong model names, missing evidence and fabricated deployment attribution
+  ---
+  duration_ms: 139.40292
+  ...
+# Subtest: Qwen scores, dimensions and provenance preserve the publisher table without inventing an evaluation date
+ok 55 - Qwen scores, dimensions and provenance preserve the publisher table without inventing an evaluation date
+  ---
+  duration_ms: 0.335825
+  ...
+# Subtest: component counts are visible but do not enter logical-total filters; context keeps raw numeric data
+ok 56 - component counts are visible but do not enter logical-total filters; context keeps raw numeric data
+  ---
+  duration_ms: 26.852158
+  ...
+# Subtest: release, review and partial dates are distinct in rendering, filtering and sorting
+ok 57 - release, review and partial dates are distinct in rendering, filtering and sorting
+  ---
+  duration_ms: 1.624247
+  ...
+# Subtest: empty columns are hidden from the whole snapshot and remain selectable, without moving filtered layouts
+ok 58 - empty columns are hidden from the whole snapshot and remain selectable, without moving filtered layouts
+  ---
+  duration_ms: 0.254436
+  ...
+# Subtest: software keeps conditional support and needs explicit throughput scenario evidence
+ok 59 - software keeps conditional support and needs explicit throughput scenario evidence
+  ---
+  duration_ms: 18.890543
+  ...
+# Subtest: model release-date filtering uses release evidence, including month-only and year-only precision
+ok 60 - model release-date filtering uses release evidence, including month-only and year-only precision
+  ---
+  duration_ms: 11.143645
+  ...
+# Subtest: all catalog models have distinct sourced profiles, practical guidance, downloads and run paths
+ok 61 - all catalog models have distinct sourced profiles, practical guidance, downloads and run paths
+  ---
+  duration_ms: 0.60236
+  ...
+# Subtest: default usage guide explains all RAG roles without an experimental outcome
+ok 62 - default usage guide explains all RAG roles without an experimental outcome
+  ---
+  duration_ms: 14.924625
+  ...
+# Subtest: optional usage matrix contains only generators and retains known text-only limitations
+ok 63 - optional usage matrix contains only generators and retains known text-only limitations
+  ---
+  duration_ms: 13.575912
+  ...
+# Subtest: verified GGUF download links work without a base revision and preserve exact experimental artifacts
+ok 64 - verified GGUF download links work without a base revision and preserve exact experimental artifacts
+  ---
+  duration_ms: 33.489497
+  ...
+# Subtest: BGE download authority and execution paths do not conflate embedding with chat or all M3 outputs
+ok 65 - BGE download authority and execution paths do not conflate embedding with chat or all M3 outputs
+  ---
+  duration_ms: 0.162668
+  ...
+# Subtest: download and use-guidance validators reject wrong identity, broken sums and fake outcomes
+ok 66 - download and use-guidance validators reject wrong identity, broken sums and fake outcomes
+  ---
+  duration_ms: 28.669482
+  ...
+# Subtest: Persian context display never mixes Persian digits with K
+ok 67 - Persian context display never mixes Persian digits with K
+  ---
+  duration_ms: 21.349272
+  ...
+# Subtest: profile presentation removes repeated introductions without dropping task conditions or sources
+ok 68 - profile presentation removes repeated introductions without dropping task conditions or sources
+  ---
+  duration_ms: 1.167575
+  ...
+# Subtest: shared run notes preserve engine scope, commands and engine-specific restrictions
+ok 69 - shared run notes preserve engine scope, commands and engine-specific restrictions
+  ---
+  duration_ms: 1.026898
+  ...
+# Subtest: an official run link needs identity and evidence, but no placeholder instruction paragraph
+ok 70 - an official run link needs identity and evidence, but no placeholder instruction paragraph
+  ---
+  duration_ms: 69.827703
+  ...
+# Subtest: usage matrix leaves unsupported editorial suggestions empty while keeping known input limits
+ok 71 - usage matrix leaves unsupported editorial suggestions empty while keeping known input limits
+  ---
+  duration_ms: 13.739179
+  ...
+# Subtest: supplement preserves the base, exact identities, independent evidence and deduplicated quality
+ok 72 - supplement preserves the base, exact identities, independent evidence and deduplicated quality
+  ---
+  duration_ms: 1.175092
+  ...
+# Subtest: all planning weight versions resolve to a model profile and pinned exact download files
+ok 73 - all planning weight versions resolve to a model profile and pinned exact download files
+  ---
+  duration_ms: 18.842653
+  ...
+# Subtest: all supplied GPU and CPU planning cells recompute from real weight bytes, KV and per-device reserve
+ok 74 - all supplied GPU and CPU planning cells recompute from real weight bytes, KV and per-device reserve
+  ---
+  duration_ms: 4.120326
+  ...
+# Subtest: context, concurrent requests, CPU dtype and multi-GPU conditions change the actual budget
+ok 75 - context, concurrent requests, CPU dtype and multi-GPU conditions change the actual budget
+  ---
+  duration_ms: 19.750901
+  ...
+# Subtest: all 40 performances stay in their report groups and metrics retain distinct units and scope
+ok 76 - all 40 performances stay in their report groups and metrics retain distinct units and scope
+  ---
+  duration_ms: 53.471549
+  ...
+# Subtest: real filters narrow model, quant, engine, task, GPU architecture, provider and currency
+ok 77 - real filters narrow model, quant, engine, task, GPU architecture, provider and currency
+  ---
+  duration_ms: 41.325037
+  ...
+# Subtest: Repository identifiers and source references
+ok 78 - Repository identifiers and source references
+  ---
+  duration_ms: 18.750591
+  ...
+# Subtest: Original model coverage retained
+ok 79 - Original model coverage retained
+  ---
+  duration_ms: 7.250276
+  ...
+# Subtest: All download filter results have matching packages
+ok 80 - All download filter results have matching packages
+  ---
+  duration_ms: 1.863352
+  ...
+# Subtest: Faceted counts equal real results with query and other selections
+ok 81 - Faceted counts equal real results with query and other selections
+  ---
+  duration_ms: 72.815436
+  ...
+# Subtest: Persian language search resolves Persian / فارسی / fa aliases
+ok 82 - Persian language search resolves Persian / فارسی / fa aliases
+  ---
+  duration_ms: 1.303679
+  ...
+# Subtest: Unknown factual values never satisfy numeric filters
+ok 83 - Unknown factual values never satisfy numeric filters
+  ---
+  duration_ms: 0.334737
+  ...
+# Subtest: Software backend filters no longer depend on empty deployment experiments
+ok 84 - Software backend filters no longer depend on empty deployment experiments
+  ---
+  duration_ms: 0.14086
+  ...
+# Subtest: Generative matrix contains sourced task guidance and explicit text-only input limits
+ok 85 - Generative matrix contains sourced task guidance and explicit text-only input limits
+  ---
+  duration_ms: 15.745474
+  ...
+# Subtest: Specialized models expose task facts and vector-memory semantics
+ok 86 - Specialized models expose task facts and vector-memory semantics
+  ---
+  duration_ms: 0.130494
+  ...
+# Subtest: Exact Ollama tags exclude cloud aliases and wrong DeepSeek lineage
+ok 87 - Exact Ollama tags exclude cloud aliases and wrong DeepSeek lineage
+  ---
+  duration_ms: 0.178762
+  ...
+# Subtest: Download byte sums and pinned file links
+ok 88 - Download byte sums and pinned file links
+  ---
+  duration_ms: 0.561752
+  ...
+# Subtest: Memory planning changes with context and concurrency, rejects invalid context
+ok 89 - Memory planning changes with context and concurrency, rejects invalid context
+  ---
+  duration_ms: 0.163545
+  ...
+# Subtest: File-footprint mode covers models without applying incompatible KV formulas
+ok 90 - File-footprint mode covers models without applying incompatible KV formulas
+  ---
+  duration_ms: 19.559222
+  ...
+# Subtest: Every documented deployment route links back to a named model or existing scoped source
+ok 91 - Every documented deployment route links back to a named model or existing scoped source
+  ---
+  duration_ms: 4.626083
+  ...
+# Subtest: Published result attribution preserves variants, units and unique identities
+ok 92 - Published result attribution preserves variants, units and unique identities
+  ---
+  duration_ms: 0.498695
+  ...
+# Subtest: Qwen paper columns preserve thinking and non-thinking for the same small model
+ok 93 - Qwen paper columns preserve thinking and non-thinking for the same small model
+  ---
+  duration_ms: 0.19042
+  ...
+# Subtest: Gemma grounded-generation results are IT scores with a scoped RAG application
+ok 94 - Gemma grounded-generation results are IT scores with a scoped RAG application
+  ---
+  duration_ms: 0.167026
+  ...
+# Subtest: gpt-oss tool access and reasoning effort are separate conditions
+ok 95 - gpt-oss tool access and reasoning effort are separate conditions
+  ---
+  duration_ms: 0.182696
+  ...
+# Subtest: Persian retrieval, mixed representations and reranking remain distinct
+ok 96 - Persian retrieval, mixed representations and reranking remain distinct
+  ---
+  duration_ms: 0.123868
+  ...
+# Subtest: Published scales and embedding dimensions do not collapse into percentages
+ok 97 - Published scales and embedding dimensions do not collapse into percentages
+  ---
+  duration_ms: 0.169569
+  ...
+# Subtest: Visible quality cells contain a sourced score and its selection conditions
+ok 98 - Visible quality cells contain a sourced score and its selection conditions
+  ---
+  duration_ms: 0.07379
+  ...
+# Subtest: All performance groups and relevant metrics are accessible
+ok 99 - All performance groups and relevant metrics are accessible
+  ---
+  duration_ms: 21.885732
+  ...
+# Subtest: all default columns in the four main views have content and model brands are local
+ok 100 - all default columns in the four main views have content and model brands are local
+  ---
+  duration_ms: 0.974303
+  ...
+# Subtest: math renders statically with MathML and survives Svelte compilation
+ok 101 - math renders statically with MathML and survives Svelte compilation
+  ---
+  duration_ms: 52.743707
+  ...
+# Subtest: existing dollar amounts and fenced code remain literal
+ok 102 - existing dollar amounts and fenced code remain literal
+  ---
+  duration_ms: 12.426556
+  ...
+# Subtest: invalid formulas fail the build instead of publishing broken notation
+ok 103 - invalid formulas fail the build instead of publishing broken notation
+  ---
+  duration_ms: 1.079005
+  ...
+# Subtest: the GPU latency article includes all 19 formulas and a rendered diagram
+ok 104 - the GPU latency article includes all 19 formulas and a rendered diagram
+  ---
+  duration_ms: 103.932923
+  ...
+# Subtest: the GPU latency article-en includes all 19 formulas and a rendered diagram
+ok 105 - the GPU latency article-en includes all 19 formulas and a rendered diagram
+  ---
+  duration_ms: 55.886615
+  ...
+# Subtest: the GPU latency article-es includes all 19 formulas and a rendered diagram
+ok 106 - the GPU latency article-es includes all 19 formulas and a rendered diagram
+  ---
+  duration_ms: 47.29977
+  ...
+# Subtest: guide SSR emits real WebPage JSON with its canonical URL
+ok 107 - guide SSR emits real WebPage JSON with its canonical URL
+  ---
+  duration_ms: 1.68898
+  ...
+# Subtest: article SSR includes BlogPosting dates, author and image
+ok 108 - article SSR includes BlogPosting dates, author and image
+  ---
+  duration_ms: 0.56501
+  ...
+# Subtest: home SSR emits the Person, WebSite and WebPage graph
+ok 109 - home SSR emits the Person, WebSite and WebPage graph
+  ---
+  duration_ms: 0.248716
+  ...
+# Subtest: quotes, Persian text and closing script strings round-trip without HTML injection
+ok 110 - quotes, Persian text and closing script strings round-trip without HTML injection
+  ---
+  duration_ms: 0.266335
+  ...
+# Subtest: all locales use the Persian archive order, counts and original assets
+ok 111 - all locales use the Persian archive order, counts and original assets
+  ---
+  duration_ms: 1.932468
+  ...
+# Subtest: every presentation has complete English and Spanish descriptions and metadata
+ok 112 - every presentation has complete English and Spanish descriptions and metadata
+  ---
+  duration_ms: 0.638289
+  ...
+# Subtest: localization preserves the Persian source and cannot replace shared assets
+ok 113 - localization preserves the Persian source and cannot replace shared assets
+  ---
+  duration_ms: 0.396802
+  ...
+# Subtest: Persian letter, hamza, diacritic and whitespace variants are equivalent
+ok 114 - Persian letter, hamza, diacritic and whitespace variants are equivalent
+  ---
+  duration_ms: 4.143886
+  ...
+# Subtest: category, topic, summary and full-text matches are searchable with title ranked first
+ok 115 - category, topic, summary and full-text matches are searchable with title ranked first
+  ---
+  duration_ms: 0.268052
+  ...
+# Subtest: spaces do not change matches or ranking, and field boundaries do not create words
+ok 116 - spaces do not change matches or ranking, and field boundaries do not create words
+  ---
+  duration_ms: 0.302125
+  ...
+# Subtest: real governance articles match through their full text and category/topic index
+ok 117 - real governance articles match through their full text and category/topic index
+  ---
+  duration_ms: 109.751918
+  ...
+# Subtest: redirect begins before the body exists, without a network request or load event
+ok 118 - redirect begins before the body exists, without a network request or load event
+  ---
+  duration_ms: 2.024158
+  ...
+# Subtest: normal home and other paths receive no hiding, notices or navigation
+ok 119 - normal home and other paths receive no hiding, notices or navigation
+  ---
+  duration_ms: 2.407734
+  ...
+# Subtest: unknown, empty, duplicate and malicious codes show an accessible error and noindex
+ok 120 - unknown, empty, duplicate and malicious codes show an accessible error and noindex
+  ---
+  duration_ms: 3.636168
+  ...
+# Subtest: the inline registry cannot close the script element or add an external destination
+ok 121 - the inline registry cannot close the script element or add an external destination
+  ---
+  duration_ms: 1.048978
+  ...
+# Subtest: codes use the first letter of every path and fragment word
+ok 122 - codes use the first letter of every path and fragment word
+  ---
+  duration_ms: 0.791557
+  ...
+# Subtest: collisions never overwrite or reassign an existing or retired code
+ok 123 - collisions never overwrite or reassign an existing or retired code
+  ---
+  duration_ms: 0.233079
+  ...
+# Subtest: resolver accepts one registered code and preserves the exact fragment
+ok 124 - resolver accepts one registered code and preserves the exact fragment
+  ---
+  duration_ms: 0.337147
+  ...
+# Subtest: unregistered anchors retain the full link and external destinations are rejected
+ok 125 - unregistered anchors retain the full link and external destinations are rejected
+  ---
+  duration_ms: 0.21176
+  ...
+# Validated sitemap.xml against 4 indexable pages and robots.txt.
+# Subtest: indexes published language routes and excludes admin, errors and noindex pages
+ok 126 - indexes published language routes and excludes admin, errors and noindex pages
+  ---
+  duration_ms: 18.490132
+  ...
+# Subtest: rejects missing maps and detects added, removed and newly noindex pages
+ok 127 - rejects missing maps and detects added, removed and newly noindex pages
+  ---
+  duration_ms: 6.923978
+  ...
+# Subtest: rejects corrupted XML, duplicates and a missing robots sitemap directive
+ok 128 - rejects corrupted XML, duplicates and a missing robots sitemap directive
+  ---
+  duration_ms: 3.627923
+  ...
+# Subtest: encodes URLs and XML characters without generating build-time modification dates
+ok 129 - encodes URLs and XML characters without generating build-time modification dates
+  ---
+  duration_ms: 1.529543
+  ...
+# Subtest: rejects an empty or incomplete build
+ok 130 - rejects an empty or incomplete build
+  ---
+  duration_ms: 0.869496
+  ...
+# Subtest: every previously published article URL still has real static HTML
+ok 131 - every previously published article URL still has real static HTML
+  ---
+  duration_ms: 1.062967
+  ...
+# Subtest: archive pages contain each language’s published articles exactly once
+ok 132 - archive pages contain each language’s published articles exactly once
+  ---
+  duration_ms: 1.34836
+  ...
+# Subtest: real translated slugs survive the complete build pipeline; independent/draft editions have none
+ok 133 - real translated slugs survive the complete build pipeline; independent/draft editions have none
+  ---
+  duration_ms: 2.119373
+  ...
+# Subtest: planned collections are useful and excluded from sitemap and search in each edition
+ok 134 - planned collections are useful and excluded from sitemap and search in each edition
+  ---
+  duration_ms: 13.4138
+  ...
+# Subtest: published GPU editions include their chapters, tables, discovery links and language alternates
+ok 135 - published GPU editions include their chapters, tables, discovery links and language alternates
+  ---
+  duration_ms: 4.027513
+  ...
+# Subtest: slide PDF sizes reflect the actual retained files
+ok 136 - slide PDF sizes reflect the actual retained files
+  ---
+  duration_ms: 0.371297
+  ...
+# Subtest: en ZTAI has five published articles in manual reading order
+ok 137 - en ZTAI has five published articles in manual reading order
+  ---
+  duration_ms: 40.271507
+  ...
+# Subtest: missing, draft or wrong-language articles cannot expose a collection link or count
+ok 138 - missing, draft or wrong-language articles cannot expose a collection link or count
+  ---
+  duration_ms: 21.811476
+  ...
+# Subtest: translated articles retain local figures, valid internal destinations and original external references
+ok 139 - translated articles retain local figures, valid internal destinations and original external references
+  ---
+  duration_ms: 267.289431
+  ...
+# Subtest: es ZTAI has five published articles in manual reading order
+ok 140 - es ZTAI has five published articles in manual reading order
+  ---
+  duration_ms: 8.329723
+  ...
+# Subtest: missing, draft or wrong-language articles cannot expose a collection link or count
+ok 141 - missing, draft or wrong-language articles cannot expose a collection link or count
+  ---
+  duration_ms: 11.607582
+  ...
+# Subtest: translated articles retain local figures, valid internal destinations and original external references
+ok 142 - translated articles retain local figures, valid internal destinations and original external references
+  ---
+  duration_ms: 184.445443
+  ...
+# Subtest: Spanish retains English references, figures and editorial relationships
+ok 143 - Spanish retains English references, figures and editorial relationships
+  ---
+  duration_ms: 1.646667
+  ...
+1..143
+# tests 143
+# suites 0
+# pass 143
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2244.220133

@@ -1,0 +1,14 @@
+﻿software_release_id,version,released_on,roles,license,maintenance,evidence_ids
+software-release:ollama-v0-34-0,v0.34.0,2026-09-05,inference-engine-library;api-server;model-manager,MIT,active,evidence:software-ollama-release;evidence:software-ollama-overview;evidence:software-ollama-license
+software-release:vllm-v0-29-0,v0.29.0,2026-09-09,inference-engine-library;api-server,Apache-2.0,active,evidence:software-vllm-release;evidence:software-vllm-overview;evidence:software-vllm-license
+software-release:sglang-v0-5-19,v0.5.19,2026-09-05,inference-engine-library;api-server,Apache-2.0,active,evidence:software-sglang-release;evidence:software-sglang-overview;evidence:software-sglang-license
+software-release:llama-cpp-v0-4-1,v0.4.1,2026-09-14,inference-engine-library;api-server,MIT,active,evidence:software-llama-cpp-release;evidence:software-llama-cpp-overview;evidence:software-llama-cpp-license
+software-release:tensorrt-llm-v1-2-1,v1.2.1,2026-04-20,inference-engine-library;api-server,Apache-2.0,active,evidence:software-tensorrt-llm-release;evidence:software-tensorrt-llm-overview;evidence:software-tensorrt-llm-license
+software-release:triton-v2-72-0,v2.72.0,2026-08-31,api-server;deployment-manager,BSD-3-Clause,active,evidence:software-triton-release;evidence:software-triton-overview;evidence:software-triton-license
+software-release:tei-v1-9-3,v1.9.3,2026-03-23,inference-engine-library;api-server,Apache-2.0,active,evidence:software-tei-release;evidence:software-tei-overview;evidence:software-tei-license
+software-release:airllm-v4-0-0,v4.0.0,2026-09-05,inference-engine-library,Apache-2.0,active,evidence:software-airllm-release;evidence:software-airllm-overview;evidence:software-airllm-license
+software-release:transformers-v5-17-0,v5.17.0,2026-09-09,inference-engine-library;api-server,Apache-2.0,active,evidence:software-transformers-release;evidence:software-transformers-overview;evidence:software-transformers-license
+software-release:litellm-v1-101-0,v1.101.0,2026-09-15,gateway;api-server,MIT,active,evidence:software-litellm-release;evidence:software-litellm-overview;evidence:software-litellm-license
+software-release:open-webui-v0-11-3,v0.11.3,2026-08-31,user-interface,Open WebUI License,active,evidence:software-open-webui-release;evidence:software-open-webui-overview;evidence:software-open-webui-license
+software-release:tgi-v3-3-7,v3.3.7,2025-12-19,inference-engine-library;api-server,Apache-2.0,maintenance,evidence:software-tgi-release;evidence:software-tgi-overview;evidence:software-tgi-license;evidence:software-tgi-maintenance
+software-release:lm-studio-0-4-24-build-1,0.4.24 Build 1,2026-09-09,user-interface;model-manager;api-server,LM Studio Terms of Use,active,evidence:software-lm-studio-release;evidence:software-lm-studio-docs;evidence:software-lm-studio-license

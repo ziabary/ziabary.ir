@@ -1,0 +1,61 @@
+
+> ziabary-platform@0.1.0 verify:llm
+> node scripts/validate-llm-dataset.mjs
+
+{
+  "testedOn": "2026-09-15",
+  "typescriptVersion": "5.9.3",
+  "schemaSha256": "9166dcc133d3f4ab0b5c89fa2f24159f09f956b5fbab823031d2ecb9e5ef0d82",
+  "scope": "Strict dataset types + original repository validator + adapter row generation + semantic integrity. No GPU run, browser test or full SvelteKit build.",
+  "checks": {
+    "strictSchema": true,
+    "installedTypedModulesEqualJson": true,
+    "strictInstalledTypedModules": true,
+    "originalValidator": true,
+    "claimValuesMatchFields": true,
+    "knownDatumsHaveEvidence": true,
+    "artifactByteSums": true,
+    "exactArtifactRevision": true,
+    "negativeReferenceControl": true,
+    "negativeClaimControl": true,
+    "adapterRows": true,
+    "stagingSeparated": true
+  },
+  "counts": {
+    "families": 15,
+    "models": 59,
+    "artifacts": 59,
+    "softwareProducts": 13,
+    "softwareReleases": 13,
+    "engines": 0,
+    "servingStacks": 0,
+    "deploymentConfigurations": 0,
+    "softwareCapabilities": 74,
+    "apiCompatibility": 16,
+    "hardwareConfigurations": 0,
+    "workloads": 9,
+    "qualityEvaluations": 0,
+    "applicationAssessments": 136,
+    "executionFeasibility": 0,
+    "deploymentCompatibility": 0,
+    "benchmarkRuns": 0,
+    "costScenarios": 0,
+    "specializedAssessments": 9,
+    "claims": 1136,
+    "evidence": 589,
+    "publishedEvaluations": 37,
+    "modelProfiles": 59,
+    "modelUseGuidance": 69,
+    "artifactListings": 111
+  },
+  "viewRows": {
+    "model-catalog": 59,
+    "model-suitability": 59,
+    "hardware-feasibility": 0,
+    "software-products": 13,
+    "deployment-compatibility": 0,
+    "benchmarks": 0,
+    "economics": 0,
+    "specialized-models": 9
+  }
+}

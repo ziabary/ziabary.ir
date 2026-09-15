@@ -1,0 +1,39 @@
+[
+  {
+    "id": "issue:gpustack-qwen35-denominator",
+    "sourceIds": [
+      "gpustack-qwen35-h200"
+    ],
+    "scope": "Throughput Profile log",
+    "observation": "128000 output tokens / 40.37 s = 3170.67 output tokens/s, but the displayed output throughput is 4178.94. The page uses a guidellm wrapper; measurement-window/denominator mapping is not established.",
+    "action": "Keep the published throughput figures out of normalized cross-source cost and speed rankings until its denominator is resolved; documented engine recipes remain usable."
+  },
+  {
+    "id": "issue:qwen32-command",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ],
+    "scope": "2. Quantization in TensorRT-LLM",
+    "observation": "Section says TensorRT-LLM but its command invokes SGLang.",
+    "action": "Do not import that ambiguous intermediate result. The explicit trtllm-serve baseline and chunked-prefill result are retained."
+  },
+  {
+    "id": "issue:aya32-context",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q4-k-m-header"
+    ],
+    "scope": "selected bartowski GGUF",
+    "observation": "GGUF context_length is 8192; original Aya Expanse 32B model card declares 128K.",
+    "action": "The selected artifact has 4K/8K planning rows; do not automatically inherit 128K from the original model."
+  },
+  {
+    "id": "issue:dbmart-commentary",
+    "sourceIds": [
+      "4090-vllm-report"
+    ],
+    "scope": "provider commentary versus numeric tables",
+    "observation": "Narrative attributes shorter online output to resource management without enough evidence; EOS/stopping conditions are not resolved.",
+    "action": "Use only explicit offline numeric observations with their workload, not the provider universal recommendation to avoid models above 8B."
+  }
+]

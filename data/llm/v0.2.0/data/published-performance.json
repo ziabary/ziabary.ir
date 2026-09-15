@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "performance:cuda-rtx-5090",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX 5090",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "8cf6b42",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/8cf6b42d467d05fa7d9776d2bcc69974ecce6900",
+    "reporter": "@totaldev",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 14970.15,
+      "prefillReportedPlusMinus": 381.06,
+      "decode128TokensPerSecond": 300.4,
+      "decodeReportedPlusMinus": 0.28
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-rtx-pro-6000-blackwell",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX PRO 6000 Blackwell",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "5143fa8",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/5143fa895e7725c5bd2135daf7d8f793d98fa91c",
+    "reporter": "@Tom94",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 16618.98,
+      "prefillReportedPlusMinus": 20.66,
+      "decode128TokensPerSecond": 281.11,
+      "decodeReportedPlusMinus": 0.41
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-h100-80-gb",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "H100 80 GB",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "5143fa8",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/5143fa895e7725c5bd2135daf7d8f793d98fa91c",
+    "reporter": "@Hedede",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 11263.29,
+      "prefillReportedPlusMinus": 98.34,
+      "decode128TokensPerSecond": 280.74,
+      "decodeReportedPlusMinus": 1.17
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-rtx-4090",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX 4090",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "2241453",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/2241453252147bb7362a286977ee9f9a92130062",
+    "reporter": "@lhl",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 14770.63,
+      "prefillReportedPlusMinus": 102.93,
+      "decode128TokensPerSecond": 188.96,
+      "decodeReportedPlusMinus": 0.05
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-rtx-6000-ada",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX 6000 Ada",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "b8e09f0",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/b8e09f08b9a91c0401bc67d17a17c90756420346",
+    "reporter": "@Hedede",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 10576.85,
+      "prefillReportedPlusMinus": 530.21,
+      "decode128TokensPerSecond": 179.47,
+      "decodeReportedPlusMinus": 0.32
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-rtx-3090",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX 3090",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "c76b420",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/c76b420e4ce06f7b7cdfbb0b85d02c90e5cc5a3a",
+    "reporter": "@m18coppola",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 5560.06,
+      "prefillReportedPlusMinus": 16.28,
+      "decode128TokensPerSecond": 161.89,
+      "decodeReportedPlusMinus": 0.18
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-rtx-a6000",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX A6000",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "4795c91",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/4795c91c32fec7165a1364763d4d4f0c93abf933",
+    "reporter": "@Hedede",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 5662.39,
+      "prefillReportedPlusMinus": 13.87,
+      "decode128TokensPerSecond": 144.87,
+      "decodeReportedPlusMinus": 0.18
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-rtx-3060",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "RTX 3060",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "baa9255",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/baa9255a45105d2d3b4ec432af13b7a6eda3ff35",
+    "reporter": "@QuantiusBenignus",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 2407.67,
+      "prefillReportedPlusMinus": 3.73,
+      "decode128TokensPerSecond": 76.92,
+      "decodeReportedPlusMinus": 0.03
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-tesla-p40",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "Tesla P40",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "c76b420",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/c76b420e4ce06f7b7cdfbb0b85d02c90e5cc5a3a",
+    "reporter": "@m18coppola",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 1079.66,
+      "prefillReportedPlusMinus": 0.18,
+      "decode128TokensPerSecond": 53.73,
+      "decodeReportedPlusMinus": 0.05
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:cuda-tesla-t4",
+    "publicationGroup": "llamacpp-llama2-7b-q4-fa",
+    "modelRepository": "TheBloke/Llama-2-7B-GGUF",
+    "artifactName": "llama-2-7b.Q4_0.gguf",
+    "hardwareLabel": "Tesla T4",
+    "gpuCount": 1,
+    "engine": "llama.cpp CUDA",
+    "engineRevision": "d32e03f",
+    "engineRevisionUrl": "https://github.com/ggml-org/llama.cpp/commit/d32e03f4495d3efa1c5126f53b449f1d429c5664",
+    "reporter": "@pt13762104",
+    "weightFormat": "GGUF Q4_0",
+    "flashAttention": true,
+    "gpuLayers": 99,
+    "metrics": {
+      "prefill512TokensPerSecond": 1309.73,
+      "prefillReportedPlusMinus": 1.02,
+      "decode128TokensPerSecond": 44.03,
+      "decodeReportedPlusMinus": 0.57
+    },
+    "protocol": {
+      "prefillTokens": 512,
+      "generatedTokens": 128,
+      "mode": "llama-bench separate pp512 and tg128 tests"
+    },
+    "comparisonScope": "shared microbenchmark; differing builds/hosts; no universal GPU ranking",
+    "sourceIds": [
+      "cuda-scoreboard"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-0-6b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-0.6B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 154.82,
+      "reportedGpuMemoryMB": 2066
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-0-6b-fp8",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-0.6B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "FP8",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 73.96,
+      "reportedGpuMemoryMB": 1943
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-1-7b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-1.7B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 238.53,
+      "reportedGpuMemoryMB": 4213
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-1-7b-fp8",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-1.7B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "FP8",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 90.87,
+      "reportedGpuMemoryMB": 3462
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-4b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-4B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 159.95,
+      "reportedGpuMemoryMB": 8860
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-4b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-4B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 183.04,
+      "reportedGpuMemoryMB": 3881
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-8b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-8B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 146.12,
+      "reportedGpuMemoryMB": 16811
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-8b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-8B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 163.23,
+      "reportedGpuMemoryMB": 7113
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-14b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 108.52,
+      "reportedGpuMemoryMB": 29495
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-14b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 128.08,
+      "reportedGpuMemoryMB": 11020
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-32b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 51.41,
+      "reportedGpuMemoryMB": 64583
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-32b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 68.71,
+      "reportedGpuMemoryMB": 20795
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-30b-a3b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-30B-A3B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 7.45,
+      "reportedGpuMemoryMB": 59037
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:qwen-h20-qwen3-30b-a3b-fp8",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-30B-A3B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "Transformers",
+    "engineVersion": "4.51.3",
+    "weightFormat": "FP8",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 1.77,
+      "reportedGpuMemoryMB": 30872
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "memoryUnitAsPrinted": "MB; binary vs decimal not asserted",
+      "torch": "2.6.0; AWQ path 2.6.0+cu124",
+      "flashAttention": "2.7.4 (non-AutoAWQ path)",
+      "autoAwq": "0.2.9 for AWQ",
+      "autoAwqKernels": "0.0.9 for AWQ"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen14-h100-1",
+    "publicationGroup": "gpustack-qwen14-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "vLLM",
+    "engineVersion": "0.11.0",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 63.53,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201648.0,
+      "requestsPerSecond": 15.74,
+      "outputTokensPerSecond": 3173.92,
+      "combinedInputOutputTokensPerSecond": 6595.66,
+      "meanTtftMs": 22141.21,
+      "p99TtftMs": 31156.86,
+      "meanTpotMs": 226.03,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Choosing the Inference Engine; result block 1",
+    "servingCommandAsPublished": "vllm serve Qwen/Qwen3-14B",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen14-h100-2",
+    "publicationGroup": "gpustack-qwen14-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.5.5.post1",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 49.86,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201628.0,
+      "requestsPerSecond": 20.06,
+      "outputTokensPerSecond": 4043.89,
+      "combinedInputOutputTokensPerSecond": 8403.97,
+      "meanTtftMs": 9230.85,
+      "p99TtftMs": 19581.07,
+      "meanTpotMs": 235.33,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Choosing the Inference Engine; result block 2",
+    "servingCommandAsPublished": "python3 -m sglang.launch_server --model-path Qwen/Qwen3-14B",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen14-h100-3",
+    "publicationGroup": "gpustack-qwen14-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "TensorRT-LLM",
+    "engineVersion": "1.2.0rc1",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 50.39,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201612.0,
+      "requestsPerSecond": 19.84,
+      "outputTokensPerSecond": 4000.99,
+      "combinedInputOutputTokensPerSecond": 8315.15,
+      "meanTtftMs": 10230.91,
+      "p99TtftMs": 24363.57,
+      "meanTpotMs": 161.58,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Choosing the Inference Engine; result block 3",
+    "servingCommandAsPublished": "trtllm-serve Qwen/Qwen3-14B",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen14-h100-4",
+    "publicationGroup": "gpustack-qwen14-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.5.5.post1",
+    "weightFormat": "FP8",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 40.21,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201833.0,
+      "requestsPerSecond": 24.87,
+      "outputTokensPerSecond": 5019.64,
+      "combinedInputOutputTokensPerSecond": 10426.27,
+      "meanTtftMs": 7320.6,
+      "p99TtftMs": 13187.08,
+      "meanTpotMs": 251.67,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 2. Quantization in SGLang; result block 4",
+    "servingCommandAsPublished": "python3 -m sglang.launch_server --model-path Qwen/Qwen3-14B-FP8",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen32-h100-1",
+    "publicationGroup": "gpustack-qwen32-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "vLLM",
+    "engineVersion": "0.11.0",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 178.01,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201422.0,
+      "requestsPerSecond": 5.62,
+      "outputTokensPerSecond": 1131.55,
+      "combinedInputOutputTokensPerSecond": 2352.82,
+      "meanTtftMs": 78118.74,
+      "p99TtftMs": 153161.51,
+      "meanTpotMs": 88.09,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Choosing the Inference Engine; result block 1",
+    "servingCommandAsPublished": "vllm serve Qwen/Qwen3-32B",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen32-h100-2",
+    "publicationGroup": "gpustack-qwen32-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.5.5.post1",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 247.94,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201826.0,
+      "requestsPerSecond": 4.03,
+      "outputTokensPerSecond": 814.03,
+      "combinedInputOutputTokensPerSecond": 1690.84,
+      "meanTtftMs": 115690.3,
+      "p99TtftMs": 230503.32,
+      "meanTpotMs": 57.86,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Choosing the Inference Engine; result block 2",
+    "servingCommandAsPublished": "python3 -m sglang.launch_server --model-path Qwen/Qwen3-32B",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen32-h100-3",
+    "publicationGroup": "gpustack-qwen32-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "TensorRT-LLM",
+    "engineVersion": "1.2.0rc1",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 157.59,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201723.0,
+      "requestsPerSecond": 6.35,
+      "outputTokensPerSecond": 1280.04,
+      "combinedInputOutputTokensPerSecond": 2659.5,
+      "meanTtftMs": 65281.52,
+      "p99TtftMs": 133106.5,
+      "meanTpotMs": 61.9,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Choosing the Inference Engine; result block 3",
+    "servingCommandAsPublished": "trtllm-serve Qwen/Qwen3-32B",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-qwen32-h100-5",
+    "publicationGroup": "gpustack-qwen32-h100-sharegpt",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1,
+    "engine": "TensorRT-LLM",
+    "engineVersion": "1.2.0rc1",
+    "weightFormat": "FP8",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 97.74,
+      "totalInputTokens": 217393.0,
+      "totalOutputTokens": 201376.0,
+      "requestsPerSecond": 10.23,
+      "outputTokensPerSecond": 2060.4,
+      "combinedInputOutputTokensPerSecond": 4284.68,
+      "meanTtftMs": 31208.75,
+      "p99TtftMs": 72827.99,
+      "meanTpotMs": 158.64,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 3. Enable Chunked Prefill in TensorRT-LLM; result block 5",
+    "servingCommandAsPublished": "trtllm-serve Qwen/Qwen3-32B-FP8 --max_seq_len=40960 --enable_chunked_prefill",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ]
+  },
+  {
+    "id": "performance:gpustack-deepseek-h200-1",
+    "publicationGroup": "gpustack-deepseek-h200-sharegpt",
+    "modelRepository": "deepseek-ai/DeepSeek-V3.2",
+    "hardwareLabel": "H200 SXM 141GB",
+    "gpuCount": 8,
+    "engine": "vLLM",
+    "engineVersion": "0.13.0",
+    "weightFormat": "publisher checkpoint default; FP8/mixed",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 72.75,
+      "totalInputTokens": 219111.0,
+      "totalOutputTokens": 196599.0,
+      "requestsPerSecond": 13.75,
+      "outputTokensPerSecond": 2702.26,
+      "combinedInputOutputTokensPerSecond": 5713.95,
+      "meanTtftMs": 13054.63,
+      "p99TtftMs": 22754.42,
+      "meanTpotMs": 275.03,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Baseline of the Inference Engine; result block 1",
+    "servingCommandAsPublished": "vllm serve deepseek-ai/DeepSeek-V3.2 -tp 8 --tokenizer-mode deepseek_v32 --reasoning-parser deepseek_v3",
+    "sourceIds": [
+      "gpustack-deepseek-h200"
+    ]
+  },
+  {
+    "id": "performance:gpustack-deepseek-h200-2",
+    "publicationGroup": "gpustack-deepseek-h200-sharegpt",
+    "modelRepository": "deepseek-ai/DeepSeek-V3.2",
+    "hardwareLabel": "H200 SXM 141GB",
+    "gpuCount": 8,
+    "engine": "SGLang",
+    "engineVersion": "0.5.6.post2",
+    "weightFormat": "publisher checkpoint default; FP8/mixed",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 138.25,
+      "totalInputTokens": 219111.0,
+      "totalOutputTokens": 197337.0,
+      "requestsPerSecond": 7.23,
+      "outputTokensPerSecond": 1427.44,
+      "combinedInputOutputTokensPerSecond": 3012.37,
+      "meanTtftMs": 11470.15,
+      "p99TtftMs": 22363.9,
+      "meanTpotMs": 1103.96,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 1. Baseline of the Inference Engine; result block 2",
+    "servingCommandAsPublished": "python3 -m sglang.launch_server --model-path deepseek-ai/DeepSeek-V3.2 --host 0.0.0.0 --port 8000 \\\n--chat-template ./tool_chat_template_deepseekv32.jinja \\\n--tp-size 8",
+    "sourceIds": [
+      "gpustack-deepseek-h200"
+    ]
+  },
+  {
+    "id": "performance:gpustack-deepseek-h200-9",
+    "publicationGroup": "gpustack-deepseek-h200-sharegpt",
+    "modelRepository": "deepseek-ai/DeepSeek-V3.2",
+    "hardwareLabel": "H200 SXM 141GB",
+    "gpuCount": 8,
+    "engine": "SGLang",
+    "engineVersion": "0.5.6.post2",
+    "weightFormat": "publisher checkpoint default; FP8/mixed",
+    "metrics": {
+      "successfulRequests": 1000.0,
+      "durationSeconds": 56.62,
+      "totalInputTokens": 219111.0,
+      "totalOutputTokens": 197116.0,
+      "requestsPerSecond": 17.66,
+      "outputTokensPerSecond": 3481.55,
+      "combinedInputOutputTokensPerSecond": 7351.59,
+      "meanTtftMs": 7815.0,
+      "p99TtftMs": 12928.46,
+      "meanTpotMs": 287.86,
+      "observedPeakConcurrency": 1000.0
+    },
+    "protocol": {
+      "dataset": "anon8231489123/ShareGPT_Vicuna_unfiltered / ShareGPT_V3_unfiltered_cleaned_split.json",
+      "submittedRequests": 1000,
+      "benchmarkTool": "vllm bench serve",
+      "requestMode": "saturation / benchmark load; peak concurrency is not interactive SLA capacity"
+    },
+    "sourceLocator": "Experiment Results > 3. Optimizing SGLang > Parallelism: TP+DP+DP Attention; result block 9",
+    "servingCommandAsPublished": "python3 -m sglang.launch_server --model-path deepseek-ai/DeepSeek-V3.2 --host 0.0.0.0 --port 8000 \\\n--chat-template ./tool_chat_template_deepseekv32.jinja \\\n--tp-size 8 --dp-size 8 --enable-dp-attention",
+    "sourceIds": [
+      "gpustack-deepseek-h200"
+    ]
+  },
+  {
+    "id": "performance:dbmart-deepseek-r1-distill-qwen-1-5b",
+    "publicationGroup": "dbmart-4090-offline-100-600",
+    "modelRepository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "hardwareLabel": "RTX 4090 24GB",
+    "gpuCount": 1,
+    "engine": "vLLM",
+    "weightFormat": "16-bit; FP16/BF16 not distinguished in report",
+    "metrics": {
+      "outputTokensPerSecond": 8310.77,
+      "inputTokensPerSecond": 1385.13,
+      "requestsPerSecond": 13.85
+    },
+    "protocol": {
+      "inputTokensPerRequest": 100,
+      "outputTokensPerRequest": 600,
+      "submittedRequests": 300,
+      "mode": "offline batched throughput"
+    },
+    "sourceIds": [
+      "4090-vllm-report"
+    ]
+  },
+  {
+    "id": "performance:dbmart-deepseek-r1-distill-qwen-7b",
+    "publicationGroup": "dbmart-4090-offline-100-600",
+    "modelRepository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "hardwareLabel": "RTX 4090 24GB",
+    "gpuCount": 1,
+    "engine": "vLLM",
+    "weightFormat": "16-bit; FP16/BF16 not distinguished in report",
+    "metrics": {
+      "outputTokensPerSecond": 3576.69,
+      "inputTokensPerSecond": 596.11,
+      "requestsPerSecond": 5.96
+    },
+    "protocol": {
+      "inputTokensPerRequest": 100,
+      "outputTokensPerRequest": 600,
+      "submittedRequests": 300,
+      "mode": "offline batched throughput"
+    },
+    "sourceIds": [
+      "4090-vllm-report"
+    ]
+  },
+  {
+    "id": "performance:synthetic-llama-3-8b-architecture-rtx-4090-modified-48gb",
+    "publicationGroup": "main-horse-gpt-fast-synthetic",
+    "modelLabel": "Llama-3-8B architecture",
+    "weightInitialization": "random; not published trained checkpoint",
+    "hardwareLabel": "RTX 4090 modified 48GB",
+    "gpuCount": 1,
+    "engine": "gpt-fast / compiled PyTorch",
+    "weightFormat": "BF16",
+    "metrics": {
+      "decodeTokensPerSecond": 61.01,
+      "reportedMemoryGB": 16.43
+    },
+    "protocol": {
+      "batchSize": 1,
+      "inputTokens": 6,
+      "generatedTokens": 200
+    },
+    "publishedOn": "2024-12-25",
+    "sourceIds": [
+      "4090-48gb-report"
+    ]
+  },
+  {
+    "id": "performance:synthetic-llama-2-13b-architecture-rtx-4090-modified-48gb",
+    "publicationGroup": "main-horse-gpt-fast-synthetic",
+    "modelLabel": "Llama-2-13B architecture",
+    "weightInitialization": "random; not published trained checkpoint",
+    "hardwareLabel": "RTX 4090 modified 48GB",
+    "gpuCount": 1,
+    "engine": "gpt-fast / compiled PyTorch",
+    "weightFormat": "BF16",
+    "metrics": {
+      "decodeTokensPerSecond": 36.22,
+      "reportedMemoryGB": 26.67
+    },
+    "protocol": {
+      "batchSize": 1,
+      "inputTokens": 6,
+      "generatedTokens": 200
+    },
+    "publishedOn": "2024-12-25",
+    "sourceIds": [
+      "4090-48gb-report"
+    ]
+  },
+  {
+    "id": "performance:synthetic-llama-2-13b-architecture-rtx-6000-ada-48gb",
+    "publicationGroup": "main-horse-gpt-fast-synthetic",
+    "modelLabel": "Llama-2-13B architecture",
+    "weightInitialization": "random; not published trained checkpoint",
+    "hardwareLabel": "RTX 6000 Ada 48GB",
+    "gpuCount": 1,
+    "engine": "gpt-fast / compiled PyTorch",
+    "weightFormat": "BF16",
+    "metrics": {
+      "decodeTokensPerSecond": 32.45,
+      "reportedMemoryGB": 26.67
+    },
+    "protocol": {
+      "batchSize": 1,
+      "inputTokens": 6,
+      "generatedTokens": 200
+    },
+    "publishedOn": "2024-12-25",
+    "sourceIds": [
+      "4090-48gb-report"
+    ]
+  }
+]

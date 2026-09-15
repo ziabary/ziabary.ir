@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-15",
+  "corrections": [
+    {
+      "reason": "Removed stale affirmative offline-operation claims whose referenced fields are explicitly unknown in the supplied final software records. The unknown records and all sources are retained.",
+      "removedClaims": [
+        {
+          "id": "claim:v03-software-release-vllm-v0-29-0-offlineoperation-value",
+          "subjectId": "software-release:vllm-v0-29-0",
+          "fieldPath": "offlineOperation.value",
+          "value": true,
+          "nature": "publisher-report",
+          "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
+          "evidenceIds": [
+            "evidence:v03-35033e16a1d60d3c67"
+          ]
+        },
+        {
+          "id": "claim:v03-software-release-sglang-v0-5-19-offlineoperation-value",
+          "subjectId": "software-release:sglang-v0-5-19",
+          "fieldPath": "offlineOperation.value",
+          "value": true,
+          "nature": "publisher-report",
+          "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
+          "evidenceIds": [
+            "evidence:v03-d893b03330e0b793dd"
+          ]
+        },
+        {
+          "id": "claim:v03-software-release-llama-cpp-v0-4-1-offlineoperation-value",
+          "subjectId": "software-release:llama-cpp-v0-4-1",
+          "fieldPath": "offlineOperation.value",
+          "value": true,
+          "nature": "publisher-report",
+          "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
+          "evidenceIds": [
+            "evidence:v03-ec0e3cc03ba69e5003"
+          ]
+        }
+      ]
+    }
+  ]
+}

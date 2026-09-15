@@ -10,3 +10,16 @@ export function withDraftPreview(path) {
   const separator = pathname.includes('?') ? '&' : '?';
   return `${pathname}${separator}show-drafts=true${hash ? `#${hash}` : ''}`;
 }
+
+/** Keep preview navigation local and opt in only for drafts that actually exist. */
+/** @param {string} href @param {string[]} draftSlugs */
+export function draftReadingHref(href, draftSlugs) {
+  if (!href || href.startsWith('#')) return href;
+  let url;
+  try { url = new URL(href, 'https://ziabary.ir'); } catch { return href; }
+  if (url.origin !== 'https://ziabary.ir') return href;
+  const article = /^\/articles\/([^/]+)\/?$/.exec(url.pathname);
+  if (!/^\/guides\/llm\/?$/.test(url.pathname) && !(article && draftSlugs.includes(article[1]))) return href;
+  url.searchParams.set('show-drafts', 'true');
+  return `${url.pathname}${url.search}${url.hash}`;
+}

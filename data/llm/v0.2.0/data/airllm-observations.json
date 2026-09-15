@@ -1,0 +1,50 @@
+[
+  {
+    "id": "airllm:qwen-qwen3-8-27b",
+    "modelRepository": "Qwen/Qwen3.8-27B",
+    "engineVersion": "4.0.0 documentation snapshot",
+    "reportedOn": "2026-08",
+    "reportedDatePrecision": "month",
+    "hardwareAsReported": "RTX 3090",
+    "reportedVramGB": 3.33,
+    "memoryScope": "publisher report; complete workload not specified",
+    "method": "layer-wise loading / streaming",
+    "dependenciesAsReported": "Transformers >=5.8",
+    "userSummaryFa": "گزارش حافظه برای اجرای لایه‌ای؛ با اجرای تمام وزن‌ها در VRAM متفاوت است.",
+    "sourceIds": [
+      "airllm"
+    ]
+  },
+  {
+    "id": "airllm:qwen-qwen3-8-flash-next",
+    "modelRepository": "Qwen/Qwen3.8-Flash-Next",
+    "engineVersion": "4.0.0 documentation snapshot",
+    "reportedOn": "2026-08",
+    "reportedDatePrecision": "month",
+    "hardwareAsReported": "RTX 4090",
+    "reportedVramGB": 5.95,
+    "memoryScope": "publisher report; complete workload not specified",
+    "method": "layer-wise loading / streaming",
+    "dependenciesAsReported": "Transformers with qwen4_exp support",
+    "userSummaryFa": "RAM میزبان ۶۴GB و حدود ۳۶۰GB دیسک checkpoint در README ذکر شده است؛ جدول n-gram در میزبان نگاشت می‌شود.",
+    "sourceIds": [
+      "airllm"
+    ]
+  },
+  {
+    "id": "airllm:deepseek-ai-deepseek-v3",
+    "modelRepository": "deepseek-ai/DeepSeek-V3",
+    "engineVersion": "4.0.0 documentation snapshot",
+    "reportedOn": "2026-06",
+    "reportedDatePrecision": "month",
+    "hardwareAsReported": null,
+    "reportedVramGB": 12,
+    "memoryScope": "publisher report; complete workload not specified",
+    "method": "layer-wise loading / streaming",
+    "dependenciesAsReported": "model-specific Transformers support",
+    "userSummaryFa": "عدد تقریبی اعلامی برای مسیر FP8 و بارگذاری لایه‌ای.",
+    "sourceIds": [
+      "airllm"
+    ]
+  }
+]

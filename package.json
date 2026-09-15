@@ -16,12 +16,14 @@
     "prepare": "svelte-kit sync",
     "prepare:content": "npm run prepare:assets && npm run prepare:icons && node scripts/generate-search-index.mjs && npm run prepare:short-links",
     "prepare:icons": "node scripts/prepare-icons.mjs",
-    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "prepare:assets": "node scripts/prepare-svg-fonts.mjs && node scripts/prepare-assets.mjs",
     "preview:local": "node scripts/serve-local.mjs",
     "test": "node --test tests/*.test.mjs",
     "verify:local": "python3 scripts/verify-local-build.py",
     "prepare:short-links": "node scripts/generate-short-links.mjs",
-    "verify:short-links": "node scripts/verify-short-links.mjs"
+    "verify:short-links": "node scripts/verify-short-links.mjs",
+    "verify:llm": "node scripts/validate-llm-dataset.mjs",
+    "generate:llm": "python3 scripts/generate-llm-dataset.py"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1111.0",

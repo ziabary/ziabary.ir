@@ -1,0 +1,80 @@
+{
+  "taskPreset": {
+    "preview": true,
+    "note": "مسیر شروع فعال: انتخاب از کاربرد، بدون حذف نوع‌های مدل",
+    "checkedFilters": 0,
+    "state": "همهٔ ردیف‌ها"
+  },
+  "softwarePreset": {
+    "before": {
+      "note": "مسیر شروع فعال: انتخاب نرم‌افزار از نوع نیاز، محیط و نقش",
+      "checkedFilters": 0,
+      "state": "همهٔ ردیف‌ها"
+    },
+    "selected": 1
+  },
+  "memoryPreset": {
+    "preview": true,
+    "note": "مسیر شروع فعال: بررسی مدل، کوانت و همهٔ مسیرهای اجرای کم‌حافظه",
+    "checkedFilters": 0,
+    "state": "همهٔ ردیف‌ها"
+  },
+  "routeReset": {
+    "preview": true,
+    "presetNote": false,
+    "checkedFilters": 0,
+    "state": "همهٔ ردیف‌ها"
+  },
+  "initial": {
+    "dir": "rtl",
+    "viewCount": 8,
+    "rowCounts": {
+      "model-catalog": 2,
+      "model-suitability": 1,
+      "hardware-feasibility": 3,
+      "software-products": 3,
+      "deployment-compatibility": 3,
+      "benchmarks": 3,
+      "economics": 2,
+      "specialized-models": 1
+    },
+    "sharedRowId": "hardware-feasibility:18malt7",
+    "longPersian": true,
+    "longLatin": true,
+    "pageOverflow": false,
+    "tableScroll": true
+  },
+  "hardwareDetails": {
+    "cellA": "۲ نتیجه: full-gpu، hybrid شرح این خانه feasibility:synthetic-a-ha full-gpu  Deploymentdeployment:synthetic-a-hardware-a سخت‌افزارGPU مصنوعی A تنظیمات مؤثر{\"temperature\":0} VRAM اوج۷ GiB RAM اوج۴ GiB فضای checkpoint / اضافه / موقت۴ GiB / ۰ GiB / ۰ GiB محدودیتقابل‌اعمال نیست  شاهد ثبت نشده: evidence:synthetic-directfeasibility:synthetic-a-ha-repeat hybrid  Deploymentdeployment:synthetic-a-hardware-a سخت‌افزارGPU مصنوعی A تنظیمات مؤثر{\"temperature\":0} VRAM اوج۶٫۵ GiB RAM اوج۵ GiB فضای checkpoint / اضافه / موقت۴ GiB / ۰ GiB / ۰ GiB محدودیتنتیجهٔ تکراری مستقل برای آزمون عدم overwrite  شاهد ثبت نشده: evidence:synthetic-direct شاهد ثبت نشده: evidence:synthetic-direct",
+    "cellB": "full-gpu شرح این خانه Deploymentdeployment:synthetic-a-hardware-b سخت‌افزارGPU مصنوعی B تنظیمات مؤثر{\"temperature\":0} VRAM اوج۷ GiB RAM اوج۴ GiB فضای checkpoint / اضافه / موقت۴ GiB / نامعلوم / ۰ GiB محدودیتقابل‌اعمال نیست  شاهد ثبت نشده: evidence:synthetic-direct",
+    "rowDetail": "VRAM هر GPU / مجموعGPU مصنوعی A: هر کارت ۲۴ GiB / مجموع ۲۴ GiB، GPU مصنوعی A: هر کارت ۲۴ GiB / مجموع ۲۴ GiB، GPU مصنوعی B: هر کارت ۲۴ GiB / مجموع ۲۴ GiB RAM در دسترسGPU مصنوعی A: ۶۴ GiB، GPU مصنوعی A: ۶۴ GiB، GPU مصنوعی B: ۶۴ GiB checkpoint / فضای اضافه / اوج موقتGPU مصنوعی A: checkpoint ۴ GiB / اضافه ۰ GiB / موقت ۰ GiB، GPU مصنوعی A: checkpoint ۴ GiB / اضافه ۰ GiB / موقت ۰ GiB، GPU مصنوعی B: checkpoint ۴ GiB / اضافه نامعلوم / موقت ۰ GiB زمینه / batch / همزمانیزمینه: ۱٬۰۲۴ توکن · batch: 2 · هم‌زمانی: 4 مسیر و هزینهٔ offloadfull-gpu · غیرمجاز حدود نتیجهGPU مصنوعی A: نتیجهٔ تکراری مستقل برای آزمون عدم overwrite  منابع و دامنهٔ شواهدشاهد ثبت نشده: evidence:synthetic-direct"
+  },
+  "comparison": {
+    "selected": 2,
+    "audit": "محاسبهٔ ساختاری مجاز شرایط ساختاری لازم ثبت شده‌اند؛ هر فرمول همچنان باید واحد، ورودی و شاهد خود را داشته باشد. نسبت: مجاز · رتبه‌بندی: مجاز · ادعای برتری: مجاز ۲ تفاوت آشکارServingStackbackend   ",
+    "differences": "۲ تفاوت آشکارServingStackbackend"
+  },
+  "filtering": {
+    "match": {
+      "rows": 1,
+      "empty": ""
+    },
+    "none": {
+      "rows": 0,
+      "empty": "با این ترکیب فیلتر نتیجه‌ای پیدا نشد."
+    },
+    "reset": {
+      "rows": 2,
+      "empty": ""
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "theme": "dark",
+    "dir": "rtl",
+    "pageOverflow": false,
+    "tableScroll": true,
+    "detailsVisible": true,
+    "comparisonVisible": true
+  }
+}

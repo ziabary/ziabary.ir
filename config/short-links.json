@@ -201,5 +201,12 @@
   "slpc": "/slides/llm-persian-culture/",
   "sn": "/slides/nlp4eas/",
   "t": "/thought/",
-  "aadaia": "/articles/ai-data-access-ito-action/"
+  "aadaia": "/articles/ai-data-access-ito-action/",
+  "azdmewra": "/articles/ztai-data-model-engineering-without-raw-access/",
+  "adcpa": "/articles/data-confidentiality-public-apis/",
+  "arckftit": "/articles/rag-cag-kag-fine-tuning-instruction-tuning/",
+  "earckftite": "/en/articles/rag-cag-kag-fine-tuning-instruction-tuning-en/",
+  "earckftite2": "/es/articles/rag-cag-kag-fine-tuning-instruction-tuning-es/",
+  "eadcpae": "/en/articles/data-confidentiality-public-apis-en/",
+  "eadcpae2": "/es/articles/data-confidentiality-public-apis-es/"
 }

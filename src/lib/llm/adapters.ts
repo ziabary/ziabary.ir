@@ -1,4 +1,5 @@
 import { applications, guideParameterBands } from './guide';
+import { llmLabel, sourceDateValue, sourceDateRange } from './presentation';
 import type {
   Datum,
   DeploymentConfiguration,
@@ -6,6 +7,8 @@ import type {
   LlmGuideRepository,
   MemoryUnit,
   ModelVersion,
+  ModelApplicationAssessment,
+  PublishedEvaluation,
   SoftwareCapability
 } from './schema';
 import type { LlmMatrixCell, LlmMatrixCellResult, LlmViewId, LlmViewRow, ViewValue } from './views';
@@ -21,7 +24,7 @@ const known = (
   canonicalNumber?: number,
   canonicalUnit?: string,
   evidenceIds?: readonly string[]
-): ViewValue => ({
+): Extract<ViewValue, { state: 'known' }> => ({
   state: 'known', display,
   ...(raw !== undefined ? { raw } : {}),
   ...(canonicalNumber !== undefined ? { canonicalNumber } : {}),
@@ -41,12 +44,22 @@ function datum<T, Unit extends string>(
   format: (item: T, unit?: Unit) => string = (item, unit) => `${String(item)}${unit ? ` ${unit}` : ''}`,
   canonical?: (item: T, unit?: Unit) => { number: number; unit: string } | undefined
 ): ViewValue {
-  if (!value || value.state !== 'known') return unknown(value?.state ?? 'unknown', value?.note);
+  if (!value || value.state !== 'known') return { ...unknown(value?.state ?? 'unknown', value?.note), ...(value?.evidenceIds?.length ? { evidenceIds: [...value.evidenceIds] } : {}) };
   const converted = canonical?.(value.value, value.unit);
   const raw = typeof value.value === 'string' || typeof value.value === 'number' || typeof value.value === 'boolean'
     ? value.value
     : format(value.value, value.unit);
-  return known(format(value.value, value.unit), raw, converted?.number, converted?.unit, value.evidenceIds);
+  return { ...known(format(value.value, value.unit), raw, converted?.number, converted?.unit, value.evidenceIds), ...(value.note ? { note: value.note } : {}) };
+}
+
+function licenseDetails(license: ModelVersion['license']): Record<string, ViewValue> {
+  const url = datum(license.url);
+  return {
+    license: datum(license.name),
+    'license-url': url.state === 'known' && /^https?:\/\//.test(String(url.raw)) ? { ...url, href: String(url.raw) } : url,
+    'commercial-use': datum(license.commercialUse, (value) => ({ allowed: 'مجاز با رعایت شروط', restricted: 'مشروط / محدود', prohibited: 'ممنوع', unknown: 'نامعلوم' }[value] ?? value)),
+    'license-restrictions': license.restrictions?.length ? list(license.restrictions, license.evidenceIds) : unknown('unknown', 'شرط اضافی در این رکورد ثبت نشده؛ متن مجوز ملاک است.')
+  };
 }
 
 function list(items: Array<string | undefined>, evidenceIds?: readonly string[]) {
@@ -67,8 +80,9 @@ function memoryToGiB(value: number, unit?: MemoryUnit) {
 }
 
 function modelSizeBand(model: ModelVersion) {
-  if (model.totalParametersB.state !== 'known') return unknown(model.totalParametersB.state);
-  const value = model.totalParametersB.value;
+  const declared = model.totalParametersB.state === 'known' ? model.totalParametersB : model.parameterCounts?.find(item => item.scope === 'nominal')?.value;
+  if (declared?.state !== 'known') return unknown();
+  const value = declared.value;
   const band = guideParameterBands.find((item) => value >= item.minInclusive && (item.maxExclusive === null || value < item.maxExclusive));
   return band ? known(band.label, band.id) : unknown();
 }
@@ -89,7 +103,7 @@ function baseComparison(dimensions: Record<string, ViewValue>, limitations: stri
 }
 
 function formatParameter(value: Datum<number, 'billion-parameters'>) {
-  return datum(value, (number) => `${numbers.format(number)}B`, (number) => ({ number, unit: 'B' }));
+  return datum(value, (number) => `${numbers.format(number)} میلیارد`, (number) => ({ number, unit: 'B' }));
 }
 
 function formatToken(value: Datum<number, 'token'>) {
@@ -105,13 +119,65 @@ function formatGenericNumber<Unit extends string>(value: Datum<number, Unit>, fa
     (number, unit) => ({ number, unit: unit ?? fallbackUnit ?? 'number' }));
 }
 
-function formatMoneyValue(value: Datum<{ amount: number; currency: string; market: string; observedOn: string; evidenceIds: EvidenceId[] }>) {
-  return datum(value, (money) => `${numbers.format(money.amount)} ${money.currency}`,
-    (money) => ({ number: money.amount, unit: money.currency }));
-}
 
 function applicationLabel(id: string) {
   return applications.find((item) => item.id === id)?.label ?? id;
+}
+
+const compactToken = (value: Datum<number, 'token'>) => datum(value, number => `${numbers.format(number)} توکن`, number => ({ number, unit: 'token' }));
+const copyValue = (text: string): ViewValue => ({ ...known(text, text), copyText: text });
+
+function modelParameterSummary(model: ModelVersion): ViewValue {
+  const total = formatParameter(model.totalParametersB);
+  const nominal = model.parameterCounts?.find(item => item.scope === 'nominal' && item.value.state === 'known');
+  const parts = total.state === 'known' ? [`${model.parameterCounts?.some(item => item.scope === 'total' && item.approximate) ? 'حدود ' : ''}${total.display}`] : nominal?.value.state === 'known' ? [`${nominal.approximate ? 'حدود ' : ''}${numbers.format(nominal.value.value)} میلیارد اسمی`] : [];
+  if (model.activeParametersB.state === 'known') parts.push(`${viewText(formatParameter(model.activeParametersB))} فعال`);
+  else for (const count of model.parameterCounts ?? []) if (count.scope === 'active' && count.value.state === 'known') {
+    parts.push(`${numbers.format(count.value.value)} میلیارد ${count.label}`);
+  }
+  for (const count of model.parameterCounts ?? []) if (['effective', 'language-component', 'other'].includes(count.scope) && count.value.state === 'known') {
+    parts.push(`${count.approximate ? 'حدود ' : ''}${numbers.format(count.value.value)} میلیارد ${count.label}`);
+  }
+  if (!parts.length) return total;
+  return { ...known(parts.join(' · '), total.state === 'known' ? total.raw : undefined,
+    total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds),
+    caveat: total.state !== 'known' ? 'شمار کل تأیید نشده' : undefined };
+}
+
+function modelContextSummary(model: ModelVersion): ViewValue {
+  const context = compactToken(model.declaredContext);
+  if (context.state !== 'known') return context;
+  return { ...context, note: undefined,
+    caveat: [model.contextCondition, model.contextExtension?.capacity.state === 'known'
+      ? `تا ${viewText(compactToken(model.contextExtension.capacity))} با ${model.contextExtension.condition}` : undefined].filter(Boolean).join('؛ ') || undefined };
+}
+
+function reportedResults(repository: LlmGuideRepository, modelId: string, applicationId?: string) {
+  return (repository.publishedEvaluations ?? []).filter(result => result.modelVersionId === modelId &&
+    (!applicationId || result.applicationIds.includes(applicationId as ModelApplicationAssessment['applicationId'])) &&
+    result.evidenceIds.some(id => repository.evidence.some(source => source.id === id)));
+}
+
+function publishedSummary(result: PublishedEvaluation): ViewValue {
+  return { ...known(`${result.benchmark} · ${result.metric}: ${numbers.format(result.value)}${result.unit === 'percent' ? '٪' : ''}`, result.value,
+    result.value, `${result.benchmark}|${result.metric}|${result.unit}`, result.evidenceIds),
+    badge: `${result.reportingRelationship === 'publisher' ? 'گزارش ناشر' : result.reportingRelationship === 'independent' ? 'ارزیابی مستقل' : 'گزارش منتشرشده'}: ${result.reporter}`,
+    caveat: [result.language === 'multilingual' ? 'چندزبانه؛ امتیاز فارسی نیست' : result.language,
+      result.settings['بازیاب اولیه'] ? `۱۰۰ نامزد از ${result.settings['بازیاب اولیه']}` : undefined].filter(Boolean).join('؛ ') };
+}
+
+export function documentedAssessmentValue(item: ModelApplicationAssessment, repository: LlmGuideRepository): ViewValue {
+  const hasSource = item.evidenceIds.some(id => repository.evidence.some(source => source.id === id));
+  if (!hasSource || item.basis === 'insufficient-evidence') return unknown('unknown', 'شاهد کافی برای این کاربرد ثبت نشده است.');
+  if (item.basis === 'declared-capability') return {
+    ...known(item.summary || 'سازنده این کاربرد را ذکر کرده', item.basis, undefined, undefined, item.evidenceIds),
+    badge: item.primaryPurpose && item.rationale ? 'هدف اصلی مدل' : item.summary ? 'طبق معرفی سازنده' : undefined,
+    caveat: item.importantConditions?.join('؛ ')
+  };
+  if (item.basis === 'editorial-recommendation') return item.rationale?.trim()
+    ? { ...known(item.summary || 'پیشنهاد راهنما', item.basis, undefined, undefined, item.evidenceIds), badge: 'پیشنهاد راهنما', caveat: item.importantConditions?.join('؛ ') }
+    : unknown('unknown', 'دلیل مستند پیشنهاد ثبت نشده است.');
+  return datum(item.outcome, llmLabel);
 }
 
 export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
@@ -119,46 +185,59 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
     const family = repository.families.find((item) => item.id === model.familyId);
     const total = formatParameter(model.totalParametersB);
     const active = formatParameter(model.activeParametersB);
-    const evidenceIds = [...new Set([...(family?.evidenceIds ?? []), ...model.evidenceIds])];
+    const size = modelParameterSummary(model);
+    const evaluations = reportedResults(repository, model.id);
+    const evidenceIds = [...new Set([...(family?.evidenceIds ?? []), ...model.evidenceIds, ...evaluations.flatMap(item => item.evidenceIds), ...repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).flatMap((artifact) => artifact.evidenceIds)])];
+    const uses = repository.applicationAssessments.filter(item => item.modelVersionId === model.id && !item.artifactId && documentedAssessmentValue(item, repository).state === 'known');
+    const modalities = known(`${model.inputModalities.map(llmLabel).join('، ')} ← ${model.outputModalities.map(value => value === 'embedding' ? 'بردار' : llmLabel(value)).join('، ')}`, undefined, undefined, undefined, model.evidenceIds);
     return {
-      id: model.id,
-      label: model.exactName,
-      searchText: [model.id, model.exactName, model.version, model.publisher, family?.name, ...(model.aliases ?? [])].join(' '),
+      id: model.id, label: model.exactName,
+      searchText: [model.id, model.exactName, model.version, model.publisher, family?.name, ...(model.aliases ?? []), ...uses.map(item => item.summary)].join(' '),
       cells: {
-        model: known(`${model.exactName} · ${model.id}`, model.id, undefined, undefined, model.evidenceIds),
+        model: known(model.exactName, model.exactName, undefined, undefined, model.evidenceIds),
         'family-publisher': known(`${family?.name ?? 'نامعلوم'} · ${model.publisher}`, family?.name ?? model.publisher, undefined, undefined, evidenceIds),
-        'kind-stage': known(`${model.kind} · ${model.stage}`, `${model.kind}|${model.stage}`, undefined, undefined, model.evidenceIds),
-        parameters: known(`کل: ${total.state === 'known' ? total.display : 'نامعلوم'} · فعال: ${active.state === 'known' ? active.display : 'نامعلوم'}`, undefined,
-          total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds),
-        architecture: known(model.architecture, model.architecture, undefined, undefined, model.evidenceIds),
-        context: known(`اعلام: ${viewText(formatToken(model.declaredContext))} · ارزیابی: ${viewText(formatToken(model.evaluatedContext))}`, undefined,
-          model.evaluatedContext.state === 'known' ? model.evaluatedContext.value : model.declaredContext.state === 'known' ? model.declaredContext.value : undefined,
-          'token', model.evidenceIds),
-        review: known(`${model.releaseStatus} · ${model.lastReviewedOn}`, model.lastReviewedOn, undefined, undefined, model.evidenceIds)
+        'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
+        parameters: size,
+        'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : 'شمار پارامتر ثبت نشده' },
+        architecture: known(llmLabel(model.architecture), model.architecture),
+        modalities, context: modelContextSummary(model),
+        applications: list([...new Set(uses.map(item => item.summary || applicationLabel(item.applicationId)))], uses.flatMap(item => item.evidenceIds)),
+        license: datum(model.license.name),
+        'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
+        review: known(llmLabel(model.releaseStatus), model.releaseStatus)
       },
       facets: {
         family: known(family?.name ?? model.familyId, family?.name ?? model.familyId),
-        publisher: known(model.publisher, model.publisher), 'model-kind': known(model.kind, model.kind),
-        'model-stage': known(model.stage, model.stage), 'total-parameters': total, 'active-parameters': active,
-        'size-band': modelSizeBand(model), architecture: known(model.architecture, model.architecture),
-        'input-modality': model.inputModalities.map((value) => known(value, value)),
-        'output-modality': model.outputModalities.map((value) => known(value, value)),
-        application: model.applications.map((value) => known(applicationLabel(value), value)),
-        language: model.languages.map((value) => known(value.language, value.language)),
-        'persian-evidence': known(model.persianEvidenceStatus, model.persianEvidenceStatus),
-        'context-length': model.evaluatedContext.state === 'known' ? formatToken(model.evaluatedContext) : formatToken(model.declaredContext),
-        license: datum(model.license.name), 'review-status': known(model.releaseStatus, model.releaseStatus),
-        'last-reviewed': known(model.lastReviewedOn, model.lastReviewedOn)
+        'model-version': known(`${model.exactName} · ${model.version.slice(0, 12)}`, model.version),
+        publisher: known(model.publisher, model.publisher), 'model-kind': known(llmLabel(model.kind), model.kind),
+        'model-stage': known(llmLabel(model.stage), model.stage), 'total-parameters': total, 'active-parameters': active,
+        'size-band': modelSizeBand(model), architecture: known(llmLabel(model.architecture), model.architecture),
+        'input-modality': model.inputModalities.map((value) => known(llmLabel(value), value)),
+        'output-modality': model.outputModalities.map((value) => known(llmLabel(value), value)),
+        application: uses.map((value) => known(applicationLabel(value.applicationId), value.applicationId)),
+        language: model.languages.filter((value) => (value.declared.state === 'known' && value.declared.value) || (value.independentEvaluationIds?.some((id) => repository.qualityEvaluations.some((evaluation) => evaluation.id === id)) ?? false)).map((value) => known(value.language, value.language)),
+        'persian-evidence': known(llmLabel(model.persianEvidenceStatus), model.persianEvidenceStatus),
+        'context-length': formatToken(model.declaredContext),
+        license: datum(model.license.name), 'review-status': known(llmLabel(model.releaseStatus), model.releaseStatus),
+        'last-reviewed': sourceDateValue(model.lastReviewedOn), 'released-on': sourceDateValue(model.releasedOn, model.evidenceIds)
       },
       details: {
-        lineage: list([model.baseModelId ? `پایه: ${model.baseModelId}` : undefined, model.distilledFromModelId ? `distilled از: ${model.distilledFromModelId}` : undefined]),
-        modalities: known(`ورودی: ${model.inputModalities.join('، ')} · خروجی: ${model.outputModalities.join('، ')}`),
-        applications: list(model.applications.map(applicationLabel)),
-        languages: list(model.languages.map((language) => `${language.language}: ${language.declared.state}`)),
-        license: datum(model.license.name), dates: list([model.announcedOn, model.releasedOn, model.lastReviewedOn]),
-        sources: idList(evidenceIds)
+        'model-id': copyValue(model.id), revision: copyValue(model.version),
+        'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`),
+        lineage: list([model.baseModelId ? `پایه: ${model.baseModelId}` : undefined, model.distilledFromModelId ? `تقطیر از: ${model.distilledFromModelId}` : undefined]),
+        modalities, applications: list(uses.map(item => item.summary || applicationLabel(item.applicationId))),
+        languages: model.languages.length ? list(model.languages.map((language) => `${language.language}${language.declared.state === 'known' && language.declared.value ? '' : ' (در دامنهٔ اعلام ناشر نیست)'}`)) : unknown('unknown', 'زبان مشخصی ثبت نشده؛ نبود برچسب زبان به معنی ناتوانی مدل در آن زبان نیست.'),
+        ...licenseDetails(model.license),
+        'total-parameters': total, 'active-parameters': active,
+        'parameter-scope': list((model.parameterCounts ?? []).map(item => `${item.label}: ${item.approximate ? 'حدود ' : ''}${viewText(formatParameter(item.value))}${item.value.note ? '؛ ' + item.value.note : ''}`)),
+        'declared-context': formatToken(model.declaredContext), 'evaluated-context': formatToken(model.evaluatedContext),
+        'context-extension': model.contextExtension ? { ...compactToken(model.contextExtension.capacity), note: model.contextExtension.condition } : unknown('unknown', 'افزایش مستند زمینه در این رکورد ثبت نشده است.'),
+        'weight-files': list(repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).map((artifact) => `${artifact.weightPrecision.toUpperCase()}: ${viewText(formatMemory(artifact.size))} روی دیسک`)),
+        'weight-caveat': known('حجم فایل وزن، حداقل VRAM کل اجرا نیست؛ KV cache، ورودی، حافظهٔ موقت و روش offload جداگانه محاسبه می‌شوند.'),
+        'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
+        'last-reviewed': sourceDateValue(model.lastReviewedOn), sources: idList(evidenceIds)
       },
-      sourceIds: evidenceIds,
+      publishedResults: evaluations, sourceIds: evidenceIds,
       comparison: baseComparison({
         model: known(model.id, model.id), 'model-kind': known(model.kind, model.kind), stage: known(model.stage, model.stage),
         metric: known('total-parameters', 'total-parameters'), unit: known('B', 'B'),
@@ -178,59 +257,60 @@ export function adaptModelSuitability(repository: LlmGuideRepository): LlmViewRo
     const first = assessments[0];
     const model = repository.models.find((item) => item.id === first.modelVersionId);
     const artifact = first.artifactId ? repository.artifacts.find((item) => item.id === first.artifactId) : undefined;
-    const allEvidence = [...new Set(assessments.flatMap((item) => item.evidenceIds))];
+    // Named-model publisher results are never inherited by a quantized artifact.
+    const evaluations = first.artifactId ? [] : reportedResults(repository, first.modelVersionId);
+    const allEvidence = [...new Set([...assessments.flatMap(item => item.evidenceIds), ...evaluations.flatMap(item => item.evidenceIds)])];
     const matrixCells: Record<string, LlmMatrixCell> = {};
     for (const application of applications) {
-      const matches = assessments.filter((item) => item.applicationId === application.id);
-      if (!matches.length) {
-        matrixCells[application.id] = { value: unknown('not-measured') };
-        continue;
-      }
-      const item = matches[0];
-      matrixCells[application.id] = {
-        value: datum(item.outcome, (value) => `${item.basis} · ${value}`),
+      const matches = assessments.filter(item => item.applicationId === application.id);
+      if (!matches.length) { matrixCells[application.id] = { value: unknown('unknown', 'اطلاعات کافی در منابع ثبت‌شده نداریم.') }; continue; }
+      const results = matches.map(item => ({
+        id: item.id, value: documentedAssessmentValue(item, repository),
         details: [
-          { label: 'نوع ارزیابی', value: known(item.basis, item.basis, undefined, undefined, item.evidenceIds) },
+          { label: 'نوع شاهد', value: known(llmLabel(item.basis), item.basis) },
+          { label: 'دلیل و دامنهٔ کاربرد', value: item.rationale ? known(item.rationale) : unknown() },
+          { label: 'نتیجهٔ آزمون سناریو', value: datum(item.outcome, llmLabel) },
           { label: 'زبان', value: item.language ? known(item.language, item.language) : unknown() },
-          { label: 'نسخهٔ آزمون', value: item.testedVersion ? known(item.testedVersion, item.testedVersion) : unknown() },
+          { label: 'نسخهٔ واقعی آزمون', value: item.testedVersion ? copyValue(item.testedVersion) : unknown() },
+          { label: 'نتیجهٔ منتشرشدهٔ مرتبط', value: list(evaluations.filter(result => result.applicationIds.includes(application.id)).map(result => viewText(publishedSummary(result)))) },
+          { label: 'شرایط مهم', value: list(item.importantConditions ?? []) },
           { label: 'محدودیت', value: list(item.limitations ?? []) }
-        ],
-        sourceIds: item.evidenceIds
-      };
+        ], sourceIds: item.evidenceIds
+      }));
+      const informative = results.filter(item => item.value.state === 'known');
+      matrixCells[application.id] = { value: results.length === 1 ? results[0].value : informative.length ? list(informative.map(item => viewText(item.value))) : unknown(),
+        details: results.length === 1 ? results[0].details : undefined, sourceIds: [...new Set(matches.flatMap(item => item.evidenceIds))], results };
     }
     const total = model ? formatParameter(model.totalParametersB) : unknown();
+    const usable = assessments.filter(item => documentedAssessmentValue(item, repository).state === 'known');
     return {
-      id: `suitability:${key}`, label: `${model?.exactName ?? first.modelVersionId}${artifact ? ` · ${artifact.id}` : ''}`,
-      searchText: `${key} ${model?.exactName ?? ''} ${artifact?.repositoryRevision ?? ''}`,
-      cells: {
-        'model-artifact': known(`${model?.exactName ?? first.modelVersionId}${artifact ? ` · ${artifact.id}` : ''}`),
-        'evaluation-version': known(first.modelRevision, first.modelRevision)
-      },
+      id: `suitability:${key}`, label: `${model?.exactName ?? first.modelVersionId}${artifact ? ` · ${artifact.weightPrecision.toUpperCase()}` : ''}`,
+      searchText: `${key} ${model?.exactName ?? ''} ${assessments.map(item => item.summary ?? '').join(' ')}`,
+      cells: { 'model-artifact': known(`${model?.exactName ?? first.modelVersionId}${artifact ? ` · ${artifact.weightPrecision.toUpperCase()}` : ''}`) },
       matrixCells,
       facets: {
-        application: assessments.map((item) => known(applicationLabel(item.applicationId), item.applicationId)),
-        'assessment-basis': assessments.map((item) => known(item.basis, item.basis)),
-        'total-parameters': total, 'model-kind': model ? known(model.kind, model.kind) : unknown(),
-        subapplication: assessments.map((item) => item.subapplicationId ? known(item.subapplicationId, item.subapplicationId) : unknown()),
-        language: assessments.map((item) => item.language ? known(item.language, item.language) : unknown()),
-        'tested-version': assessments.map((item) => item.testedVersion ? known(item.testedVersion, item.testedVersion) : unknown()),
+        application: usable.map(item => known(applicationLabel(item.applicationId), item.applicationId)),
+        'assessment-basis': assessments.map(item => known(llmLabel(item.basis), item.basis)),
+        'total-parameters': total, 'model-kind': model ? known(llmLabel(model.kind), model.kind) : unknown(),
+        subapplication: assessments.map(item => item.subapplicationId ? known(item.subapplicationId, item.subapplicationId) : unknown()),
+        language: assessments.map(item => item.language ? known(item.language, item.language) : unknown()),
+        'tested-version': assessments.map(item => item.testedVersion ? known(item.testedVersion, item.testedVersion) : unknown()),
         'evidence-kind': evidenceKinds(repository, allEvidence)
       },
       details: {
-        'assessment-basis': list(assessments.map((item) => item.basis)),
-        subapplication: list(assessments.map((item) => item.subapplicationId)),
-        language: list(assessments.map((item) => item.language)),
-        'quality-evaluation': list(assessments.map((item) => item.qualityEvaluationId)),
-        limitations: list(assessments.flatMap((item) => item.limitations ?? [])), sources: idList(allEvidence)
+        revision: copyValue(first.modelRevision), 'assessment-basis': list(assessments.map(item => llmLabel(item.basis))),
+        subapplication: list(assessments.map(item => item.subapplicationId)), language: list(assessments.map(item => item.language)),
+        'quality-evaluation': list(assessments.map(item => item.qualityEvaluationId)),
+        limitations: list(assessments.flatMap(item => item.limitations ?? [])), sources: idList(allEvidence)
       },
-      sourceIds: allEvidence,
+      publishedResults: evaluations, sourceIds: allEvidence,
       comparison: baseComparison({
         model: known(key, key), application: assessments.length === 1 ? known(first.applicationId, first.applicationId) : unknown(),
         language: first.language ? known(first.language, first.language) : unknown(), dataset: first.qualityEvaluationId ? known(first.qualityEvaluationId, first.qualityEvaluationId) : unknown(),
         'test-version': first.testedVersion ? known(first.testedVersion, first.testedVersion) : unknown(),
         metric: first.qualityEvaluationId ? known('quality-evaluation', 'quality-evaluation') : unknown(), unit: unknown(),
         need: known(first.applicationId, first.applicationId), workload: unknown(), 'quality-floor': unknown(), 'latency-target': unknown()
-      }, assessments.flatMap((item) => item.limitations ?? []), Boolean(first.testedVersion && first.qualityEvaluationId))
+      }, assessments.flatMap(item => item.limitations ?? []), Boolean(first.testedVersion && first.qualityEvaluationId))
     };
   });
 }
@@ -452,33 +532,38 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
     const sourceIds = [...new Set([...release.evidenceIds, ...claims.flatMap((item) => item.evidenceIds), ...apiClaims.flatMap((item) => item.evidenceIds)])];
     const supported = (capabilities: SoftwareCapability[]) => claims.filter((item) => capabilities.includes(item.capability));
     const summary = (items: typeof claims) => items.length
-      ? list(items.map((item) => `${item.capability}: ${item.status} (${item.provision})${item.statusReason ? `؛ ${item.statusReason}` : ''}`))
+      ? list(items.map((item) => `${llmLabel(item.capability)}: ${llmLabel(item.status)} (${llmLabel(item.provision)})${item.statusReason ? `؛ ${item.statusReason}` : ''}`), items.flatMap(item => item.evidenceIds))
       : noReviewRecord();
     const needTypes = [
       ...(release.roles.includes('user-interface') || release.roles.includes('model-manager') ? ['local-interactive'] : []),
       ...(release.roles.includes('api-server') || release.roles.includes('gateway') ? ['team-api'] : []),
-      ...(claims.some((item) => ['continuous-batching', 'admission-control', 'queueing'].includes(item.capability)) ? ['high-throughput'] : []),
-      ...(claims.some((item) => ['task-embedding', 'task-reranking', 'task-classification'].includes(item.capability)) ? ['specialized-task'] : []),
+      ...(release.targetScenario?.state === 'known' && release.documentedNeeds?.includes('high-throughput') ? ['high-throughput'] : []),
+      ...(claims.some((item) => ['supported', 'conditional'].includes(item.status) && ['task-embedding', 'task-reranking', 'task-classification'].includes(item.capability)) ? ['specialized-task'] : []),
       ...(release.roles.some((role) => ['gateway', 'user-interface', 'deployment-manager'].includes(role)) ? ['composite-service'] : [])
     ];
+    const documented = claims.filter(item => ['supported', 'conditional'].includes(item.status) && item.evidenceIds.some(id => repository.evidence.some(source => source.id === id)));
+    const important = documented.slice(0, 4);
+    const highlights = list(important.map(item => `${llmLabel(item.capability)}${item.provision !== 'native' ? ` (${llmLabel(item.provision)})` : item.status === 'conditional' ? ' (مشروط)' : ''}`), important.flatMap(item => item.evidenceIds));
     return [{
       id: release.id, label: `${product.name} ${release.version}`,
       searchText: [release.id, product.name, release.version, ...(product.aliases ?? []), ...release.roles, ...backends.map((item) => item?.name)].join(' '),
       cells: {
         'software-version': known(`${product.name} · ${release.version}`, release.id, undefined, undefined, release.evidenceIds),
-        roles: list(release.roles, release.evidenceIds),
-        'environment-backend': list([...release.environments, ...backends.map((item) => item ? `${item.name} ${item.version}` : undefined)], sourceIds),
-        interfaces: apiClaims.length
-          ? list(apiClaims.map((item) => `${item.protocol} ${item.endpoint}: ${item.capability} (${item.status})${item.statusReason ? `؛ ${item.statusReason}` : ''}`), apiClaims.flatMap((item) => item.evidenceIds))
-          : noReviewRecord(),
-        'service-features': summary(claims),
-        'maintenance-review': known(`${release.maintenanceStatus} · ${release.lastReviewedOn}`, release.lastReviewedOn, undefined, undefined, release.evidenceIds),
-        'evidence-limitations': known(`${sourceIds.length} شاهد · ${claims.flatMap((item) => item.limitations ?? []).length} محدودیت`)
+        roles: list(release.roles.map(llmLabel), release.evidenceIds),
+        scenario: datum(release.targetScenario),
+        'start-docs': { ...known('راهنمای شروع', product.officialUrl), href: product.officialUrl },
+        'backend-summary': datum(release.backendSummary),
+        platform: list(release.operatingSystems.length || release.hardwareKinds.length ? [...release.operatingSystems, ...release.hardwareKinds] : release.environments.map(llmLabel), release.evidenceIds),
+        'environment-backend': list([...release.environments.map(llmLabel), ...backends.map(item => item ? `${item.name} ${item.version}` : undefined)], sourceIds),
+        interfaces: apiClaims.length ? list(apiClaims.map(item => `${item.protocol} ${item.endpoint}: ${llmLabel(item.capability)} (${llmLabel(item.status)})`), apiClaims.flatMap(item => item.evidenceIds)) : noReviewRecord(),
+        'service-features': highlights.state === 'known' ? { ...highlights, caveat: release.selectionCaveat } : highlights,
+        maintenance: release.maintenanceStatus === 'unknown' ? unknown() : known(llmLabel(release.maintenanceStatus), release.maintenanceStatus, undefined, undefined, release.evidenceIds),
+        'released-on': sourceDateValue(release.releasedOn, release.evidenceIds)
       },
       facets: {
         'need-type': needTypes.map((value) => known(value, value)), environment: release.environments.map((value) => known(value, value)),
         'software-role': release.roles.map((value) => known(value, value)), 'software-product': known(product.name, product.id.replace('software-product:', '')),
-        'software-version': known(release.version, release.version), backend: backends.length ? backends.filter(Boolean).map((item) => known(`${item!.name} ${item!.version}`)) : unknown(),
+        'software-version': known(release.version, release.version), backend: (release.documentedBackends?.length ? release.documentedBackends.map(name => known(name, name)) : backends.length ? backends.filter(Boolean).map((item) => known(`${item!.name} ${item!.version}`)) : release.backendSummary?.state === 'known' ? [datum(release.backendSummary)] : unknown()),
         'operating-system': release.operatingSystems.length ? release.operatingSystems.map((value) => known(value, value)) : unknown(),
         'hardware-family': release.hardwareKinds.length ? release.hardwareKinds.map((value) => known(value, value)) : unknown(),
         'local-cloud': release.localOrCloud.map((value) => known(value, value)), offline: datum(release.offlineOperation, (value) => value ? 'بله' : 'خیر'),
@@ -488,23 +573,25 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
         })),
         provision: claims.length ? claims.map((item) => known(item.provision, item.provision)) : unknown(),
         'software-license': datum(release.license.name), maintenance: known(release.maintenanceStatus, release.maintenanceStatus),
-        'last-reviewed': known(release.lastReviewedOn, release.lastReviewedOn)
+        'last-reviewed': sourceDateValue(release.lastReviewedOn), 'released-on': sourceDateValue(release.releasedOn, release.evidenceIds)
       },
       details: {
         'os-hardware': list([...release.operatingSystems, ...release.hardwareKinds]),
-        'local-cloud-offline': known(`${release.localOrCloud.join('، ')} · offline: ${release.offlineOperation.state === 'known' ? release.offlineOperation.value : release.offlineOperation.state}`),
+        'local-cloud-offline': known(`${release.localOrCloud.map(llmLabel).join('، ')} · بدون اتصال: ${viewText(datum(release.offlineOperation, value => value ? 'بله' : 'خیر'))}`),
+        backends: datum(release.backendSummary), 'released-on': sourceDateValue(release.releasedOn, release.evidenceIds),
+        'last-reviewed': sourceDateValue(release.lastReviewedOn), 'all-capabilities': summary(claims),
         tasks: summary(supported(capabilityFacetMap.tasks)),
         'request-control': summary(supported(['queueing', 'concurrency', 'continuous-batching', 'admission-control'])),
         'model-lifecycle': summary(supported(['model-load-unload', 'multi-model', 'cold-start-control'])),
         'inference-optimizations': summary(supported(['prefix-caching', 'speculative-decoding', 'cpu-gpu-offload', 'kv-cache-offload', 'layer-wise-loading'])),
         'multi-gpu': summary(supported(['multi-gpu-sharding', 'independent-replicas'])),
         'output-tools': summary(supported(['streaming', 'structured-output', 'tool-use', 'reasoning-control'])),
-        'model-scopes': list(claims.flatMap((item) => [item.scope.modelTemplate, item.scope.parser, ...item.scope.conditions])),
+        'model-scopes': list([...new Set(claims.flatMap((item) => [item.scope.modelTemplate, item.scope.parser, ...item.scope.conditions]))]),
         'operations-security': summary(supported(['monitoring', 'metrics', 'health-check', 'authentication', 'rate-limiting'])),
         'api-compatibility': apiClaims.length
-          ? list(apiClaims.map((item) => `${item.protocol} ${item.endpoint} / ${item.capability}: ${item.status} (${item.provision})${item.statusReason ? `؛ ${item.statusReason}` : ''}`))
+          ? list(apiClaims.map((item) => `${item.protocol} ${item.endpoint} / ${llmLabel(item.capability)}: ${llmLabel(item.status)} (${llmLabel(item.provision)})${item.statusReason ? `؛ ${item.statusReason}` : ''}`))
           : noReviewRecord(),
-        license: datum(release.license.name), sources: idList(sourceIds)
+        ...licenseDetails(release.license), sources: idList(sourceIds)
       },
       sourceIds,
       comparison: baseComparison({
@@ -665,106 +752,56 @@ export function adaptBenchmarks(repository: LlmGuideRepository): LlmViewRow[] {
   });
 }
 
-export function adaptEconomics(repository: LlmGuideRepository): LlmViewRow[] {
-  return repository.costScenarios.flatMap((cost): LlmViewRow[] => {
-    const context = deploymentContext(repository, cost.deploymentConfigId);
-    if (!context) return [];
-    const { deployment, model, stack, hardware, workload } = context;
-    const sourceIds = [...new Set([...deployment.evidenceIds, ...cost.evidenceIds, ...cost.priceInputs.flatMap((item) => item.evidenceIds)])];
-    const currencies = [...new Set(cost.priceInputs.map((item) => item.currency))];
-    const markets = [...new Set(cost.priceInputs.map((item) => item.market))];
-    const observations = [...new Set(cost.priceInputs.map((item) => item.observedOn))];
-    const period = cost.calculationPeriod.state === 'known' ? cost.calculationPeriod.unit ?? 'period' : undefined;
-    return [{
-      id: cost.id, label: cost.name,
-      searchText: [cost.id, cost.name, model?.exactName, stack?.name, hardware?.name, workload?.name, cost.acquisitionMode].join(' '),
-      cells: {
-        'scenario-deployment': known(`${cost.name} · ${deployment.id}`),
-        'need-slo': known(`${workload?.name ?? deployment.workloadId} · ${cost.qualityFloor.metric} ≥ ${cost.qualityFloor.minimum}`),
-        acquisition: known(cost.acquisitionMode, cost.acquisitionMode),
-        basis: known(`${currencies.join('، ') || 'ارز نامعلوم'} · ${cost.calculationBasisDate}`, cost.calculationBasisDate),
-        tco: formatMoneyValue(cost.tco), 'accepted-request-cost': formatMoneyValue(cost.acceptedRequestCost),
-        'break-even': formatGenericNumber(cost.breakEvenPoint)
-      },
-      facets: {
-        application: workload ? known(applicationLabel(workload.applicationId), workload.applicationId) : unknown(),
-        acquisition: known(cost.acquisitionMode, cost.acquisitionMode),
-        'calculation-period': cost.calculationPeriod.state === 'known' ? known(String(cost.calculationPeriod.unit ?? ''), cost.calculationPeriod.unit ?? '') : unknown(cost.calculationPeriod.state),
-        model: known(`${model?.exactName ?? deployment.modelVersionId} ${deployment.id}`),
-        'software-product': stack ? stack.components.map((component) => {
-          const release = repository.softwareReleases.find((item) => item.id === component.softwareReleaseId);
-          return known(component.softwareReleaseId, release?.productId.replace('software-product:', '') ?? component.softwareReleaseId);
-        }) : unknown(),
-        hardware: known(hardware?.name ?? deployment.hardwareConfigId, hardwareTargetId(hardware?.gpuRecordId, hardware?.gpuCount ?? 0)),
-        currency: currencies.length ? currencies.map((value) => known(value, value)) : unknown(),
-        market: markets.length ? markets.map((value) => known(value, value)) : unknown(),
-        'price-observed': observations.length ? observations.map((value) => known(value, value)) : unknown(),
-        'calculation-basis-date': known(cost.calculationBasisDate, cost.calculationBasisDate),
-        traffic: formatGenericNumber(cost.traffic), 'operating-hours': formatGenericNumber(cost.operatingHours),
-        'license-cost-state': known(cost.licenseCost.state, cost.licenseCost.state),
-        'evidence-kind': evidenceKinds(repository, sourceIds)
-      },
-      details: {
-        'traffic-hours': known(`ترافیک: ${cost.traffic.state} · ساعات: ${cost.operatingHours.state} · کاربران ثبت‌نام‌شده: ${workload?.registeredUsers?.state ?? 'ثبت نشده'}`),
-        'price-observations': list(cost.priceInputs.map((item) => `${numbers.format(item.amount)} ${item.currency} · ${item.market} · مشاهده ${item.observedOn}`)),
-        'software-costs': known(`راه‌اندازی: ${cost.softwareLifecycleCosts.initialSetup.state} · آماده‌سازی: ${cost.softwareLifecycleCosts.modelPreparation.state} · بارگذاری: ${cost.softwareLifecycleCosts.modelLoadOperations.state} · نگه‌داری: ${cost.softwareLifecycleCosts.ongoingMaintenance.state} · منابع: ${cost.softwareLifecycleCosts.supportingResources.state}`),
-        'system-operations': known(`سامانه: ${cost.totalSystemCost.state} · عملیات: ${cost.operatingCost.state}`),
-        'utilization-redundancy': known(`استفاده: ${cost.utilization.state} · افزونگی: ${cost.redundancy.state}`),
-        period: datum(cost.calculationPeriod), 'license-cost': known(cost.licenseCost.state, cost.licenseCost.state),
-        'token-cost': known(`${cost.tokenCost.state} · ${cost.tokenCostDefinition ?? 'تعریف نشده'}`),
-        roi: cost.roi ? known(`${cost.roi.state} · ارزش: ${cost.economicValueAssumption?.state ?? 'تعریف نشده'}`) : unknown('not-applicable'),
-        derivation: list(sourceIds.map((id) => repository.evidence.find((item) => item.id === id)?.derivation?.method)), sources: idList(sourceIds)
-      },
-      sourceIds,
-      comparison: baseComparison({
-        deployment: known(deployment.id, deployment.id), acquisition: known(cost.acquisitionMode, cost.acquisitionMode),
-        need: workload ? known(workload.applicationId, workload.applicationId) : unknown(), workload: known(deployment.workloadId, deployment.workloadId),
-        'quality-floor': known(`${cost.qualityFloor.metric}:${cost.qualityFloor.minimum}`),
-        'latency-target': known(JSON.stringify(cost.latencyTargets)), currency: currencies.length === 1 ? known(currencies[0], currencies[0]) : unknown(),
-        market: markets.length === 1 ? known(markets[0], markets[0]) : unknown(), 'basis-date': known(cost.calculationBasisDate, cost.calculationBasisDate),
-        period: period ? known(period, period) : unknown(), unit: currencies.length === 1 ? known(currencies[0], currencies[0]) : unknown()
-      }, [], currencies.length === 1 && Boolean(period))
-    }];
-  });
-}
-
 export function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.specializedAssessments.map((assessment) => {
-    const model = repository.models.find((item) => item.id === assessment.modelVersionId);
-    const workload = repository.workloads.find((item) => item.id === assessment.workloadId);
+    const model = repository.models.find(item => item.id === assessment.modelVersionId);
+    const workload = repository.workloads.find(item => item.id === assessment.workloadId);
     const total = model ? formatParameter(model.totalParametersB) : unknown();
-    const evidenceIds = assessment.evidenceIds;
+    const specs = model?.specializedSpecs;
+    const evaluations = assessment.artifactId ? [] : reportedResults(repository, assessment.modelVersionId);
+    const selected = evaluations[0];
+    const evidenceIds = [...new Set([...assessment.evidenceIds, ...(model?.evidenceIds ?? []), ...evaluations.flatMap(item => item.evidenceIds)])];
     return {
-      id: assessment.id, label: `${model?.exactName ?? assessment.modelVersionId} · ${assessment.kind}`,
-      searchText: [assessment.id, model?.exactName, assessment.kind, assessment.applicationId, assessment.metricName, assessment.metricUnit].join(' '),
+      id: assessment.id, label: model?.exactName ?? assessment.modelVersionId,
+      searchText: [assessment.id, model?.exactName, assessment.kind, assessment.applicationId, ...evaluations.map(item => item.benchmark)].join(' '),
       cells: {
-        'model-kind': known(`${model?.exactName ?? assessment.modelVersionId} · ${assessment.kind}`),
-        task: known(`${applicationLabel(assessment.applicationId)} · ${workload?.subapplicationId ?? ''}`),
-        parameters: total,
-        'quality-metric': datum(assessment.metricValue, (value) => `${numbers.format(value)} ${assessment.metricUnit}`,
-          (value) => ({ number: value, unit: assessment.metricUnit })),
-        'work-rate': unknown('not-measured'), evidence: known(`${evidenceIds.length} شاهد`)
+        'model-kind': known(model?.exactName ?? assessment.modelVersionId),
+        task: specs ? datum(specs.task) : known(llmLabel(assessment.kind)),
+        parameters: model ? modelParameterSummary(model) : unknown(),
+        'input-limit': model ? modelContextSummary(model) : unknown(),
+        output: specs ? datum(specs.output) : unknown(),
+        features: specs ? datum(specs.features) : unknown(),
+        'quality-metric': selected ? publishedSummary(selected) : datum(assessment.metricValue, value => `${numbers.format(value)} ${assessment.metricUnit}`, value => ({ number: value, unit: assessment.metricUnit })),
+        'work-rate': unknown('not-measured'),
+        'released-on': sourceDateValue(model?.releasedOn, evidenceIds)
       },
       facets: {
-        kind: known(assessment.kind, assessment.kind), application: known(applicationLabel(assessment.applicationId), assessment.applicationId),
+        kind: known(llmLabel(assessment.kind), assessment.kind), application: known(applicationLabel(assessment.applicationId), assessment.applicationId),
         'total-parameters': total, 'size-band': model ? modelSizeBand(model) : unknown(),
         subapplication: workload?.subapplicationId ? known(workload.subapplicationId, workload.subapplicationId) : unknown(),
-        metric: known(assessment.metricName, assessment.metricName), 'metric-unit': known(assessment.metricUnit, assessment.metricUnit),
-        language: workload?.language ? known(workload.language, workload.language) : unknown(),
+        metric: evaluations.length ? evaluations.map(item => known(`${item.benchmark} · ${item.metric}`, item.metric)) : assessment.metricValue.state === 'known' ? known(assessment.metricName, assessment.metricName) : unknown('not-measured'),
+        'metric-unit': evaluations.length ? evaluations.map(item => known(item.unit, item.unit)) : assessment.metricValue.state === 'known' ? known(assessment.metricUnit, assessment.metricUnit) : unknown('not-measured'),
+        language: model?.languages.length ? model.languages.filter(item => item.declared.state === 'known' && item.declared.value).map(item => known(item.language, item.language)) : workload?.language ? known(workload.language, workload.language) : specs ? datum(specs.languages) : unknown(),
         'evidence-kind': evidenceKinds(repository, evidenceIds)
       },
       details: {
+        pooling: specs ? datum(specs.poolingOrScoring) : unknown(), dimensions: specs ? datum(specs.embeddingDimensions, value => numbers.format(value), value => ({ number: value, unit: 'dimension' })) : unknown(),
+        'adjustable-dimensions': specs ? datum(specs.adjustableDimensions) : unknown('not-applicable'),
+        languages: specs ? datum(specs.languages) : unknown(),
         'language-dataset': workload?.language ? known(workload.language) : unknown(),
-        'artifact-execution': assessment.artifactId ? known(`${assessment.artifactId} · ${assessment.modelRevision}`) : known(assessment.modelRevision),
+        'artifact-execution': assessment.artifactId ? copyValue(`${assessment.artifactId} · ${assessment.modelRevision}`) : copyValue(assessment.modelRevision),
+        'parameter-scope': model ? list((model.parameterCounts ?? []).map(item => `${item.label}: ${viewText(formatParameter(item.value))}`)) : unknown(),
+        'released-on': sourceDateValue(model?.releasedOn, evidenceIds),
         workload: known(`${workload?.name ?? assessment.workloadId} · ${assessment.metricUnit}`),
         'generative-alternative': assessment.alternativeToGenerativeModelId ? known(assessment.alternativeToGenerativeModelId) : unknown('not-applicable'),
         limitations: list(assessment.limitations ?? []), sources: idList(evidenceIds)
       },
-      sourceIds: evidenceIds,
+      publishedResults: evaluations, sourceIds: evidenceIds,
       comparison: baseComparison({
         model: known(`${assessment.modelVersionId}|${assessment.artifactId ?? ''}`), task: known(assessment.applicationId, assessment.applicationId),
         dataset: unknown(), language: workload?.language ? known(workload.language, workload.language) : unknown(),
-        metric: known(assessment.metricName, assessment.metricName), unit: known(assessment.metricUnit, assessment.metricUnit),
+        metric: assessment.metricValue.state === 'known' ? known(assessment.metricName, assessment.metricName) : unknown(),
+        unit: assessment.metricValue.state === 'known' ? known(assessment.metricUnit, assessment.metricUnit) : unknown(),
         workload: known(assessment.workloadId, assessment.workloadId), need: known(assessment.applicationId, assessment.applicationId),
         'quality-floor': workload?.qualityFloor ? known(`${workload.qualityFloor.metric}:${workload.qualityFloor.minimum}`) : unknown(),
         'latency-target': workload?.serviceLevel ? known(JSON.stringify(workload.serviceLevel)) : unknown()
@@ -773,30 +810,96 @@ export function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewR
   });
 }
 
+export const modelUseRoleLabels: Record<string, string> = {
+  retrieval: 'بازیابی سند', reranking: 'بازرتبه‌بندی سند', 'grounded-generation': 'تولید پاسخ از سند',
+  'text-generation': 'تولید متن', coding: 'برنامه‌نویسی', 'tool-use': 'فراخوانی ابزار',
+  reasoning: 'استدلال', vision: 'درک تصویر', 'structured-output': 'استخراج ساخت‌یافته'
+};
+
+function profileRow(repository: LlmGuideRepository, row: LlmViewRow, modelId: string): LlmViewRow {
+  const profile = repository.modelProfiles.find(item => item.modelVersionId === modelId);
+  if (!profile) return row;
+  const uses = repository.modelUseGuidance.filter(item => item.modelVersionId === modelId);
+  const downloads = repository.artifactListings.filter(item => item.modelVersionId === modelId);
+  const model = repository.models.find(item => item.id === modelId)!;
+  return { ...row, modelId, modelUrl: profile.officialUrl,
+    downloadLinks: [...new Map(downloads.map(item => [`${item.format}:${item.repositoryUrl}`, {
+      label: `${item.format.toUpperCase()} · ${item.authority === 'official' ? 'رسمی' : 'ثالث'}`, href: item.repositoryUrl
+    }])).values()],
+    searchText: `${row.searchText} ${profile.introduction} ${uses.map(item => item.summary).join(' ')} ${profile.runGuides.map(item => item.engine).join(' ')} ${downloads.map(item => `${item.format} ${item.variant} ${item.publisher}`).join(' ')}`,
+    cells: { ...row.cells, 'primary-use': known(profile.roleSummary), applications: known(profile.roleSummary),
+      downloads: known([...new Set(downloads.map(item => item.format.toUpperCase()))].join(' · ')),
+      introduction: known(profile.introduction), role: list([...new Set(uses.map(item => modelUseRoleLabels[item.role]))]),
+      'use-condition': list(uses.flatMap(item => item.conditions)),
+      model: known(model.exactName), 'model-artifact': known(model.exactName) },
+    facets: { ...row.facets, 'model-size': formatParameter(model.totalParametersB.state === 'known' ? model.totalParametersB : model.parameterCounts?.find(item => item.scope === 'nominal')?.value ?? { state: 'unknown' }), application: uses.map(item => known(applicationLabel(item.applicationId), item.applicationId)),
+      'run-engine': [...new Set(profile.runGuides.map(item => item.engine).filter(engine => !engine.includes('مسیر اجرای ناشر')))].map(engine => known(engine, engine)),
+      'download-format': [...new Set(downloads.map(item => item.format))].map(format => known(format, format)),
+      'download-authority': [...new Set(downloads.map(item => item.authority))].map(authority => known(authority, authority)),
+      'use-role': uses.map(item => known(modelUseRoleLabels[item.role], item.role)) },
+    sourceIds: [...new Set([...row.sourceIds, ...profile.evidenceIds, ...uses.flatMap(item => item.evidenceIds)])]
+  };
+}
+
+/** Editorial guidance is not an experimental outcome or a family-wide capability. */
+export function adaptModelUseGuidance(repository: LlmGuideRepository): LlmViewRow[] {
+  return adaptModelCatalog(repository)
+    .filter(row => repository.modelUseGuidance.some(item => item.modelVersionId === row.id))
+    .map(row => profileRow(repository, { ...row, id: `use:${row.id}` }, row.id));
+}
+
+export function adaptModelUseMatrix(repository: LlmGuideRepository): LlmViewRow[] {
+  return adaptModelUseGuidance(repository).filter(row => {
+    const kind = repository.models.find(model => model.id === row.modelId)?.kind;
+    return kind === 'generative' || kind === 'vision-language';
+  }).map(row => {
+    const model = repository.models.find(model => model.id === row.modelId)!;
+    const guidance = repository.modelUseGuidance.filter(item => item.modelVersionId === row.modelId);
+    const matrixCells: Record<string, LlmMatrixCell> = {};
+    for (const item of guidance) matrixCells[item.applicationId] = {
+      value: { ...known(item.summary, item.applicationId), badge: modelUseRoleLabels[item.role] },
+      details: [
+        { label: 'کاربرد و ویژگی مدل', value: known(item.description) },
+        ...(item.conditions.length ? [{ label: 'شرط استفاده', value: known(item.conditions.join('؛ ')) }] : []),
+        { label: 'مبنای راهنما', value: known(item.basis === 'publisher-summary' ? 'خلاصهٔ مستندات ناشر' : 'جمع‌بندی فنی بر پایهٔ مستندات') }
+      ], sourceIds: item.evidenceIds
+    };
+    if (model.inputModalities.length === 1 && model.inputModalities[0] === 'text') matrixCells['document-vision'] = {
+      value: known('ورودی متنی'),
+      details: [{ label: 'کار با تصویر سند', value: known('این نسخه فقط متن می‌گیرد؛ سند اسکن‌شده ابتدا باید با ابزار OCR به متن تبدیل شود.') }],
+      sourceIds: model.evidenceIds
+    };
+    return { ...row, matrixCells };
+  });
+}
+
 export function buildLlmViewRows(repository: LlmGuideRepository): Record<LlmViewId, LlmViewRow[]> {
   return {
-    'model-catalog': adaptModelCatalog(repository),
-    'model-suitability': adaptModelSuitability(repository),
+    'model-catalog': adaptModelCatalog(repository).map(row => profileRow(repository, row, row.id)),
+    'model-suitability': repository.modelUseGuidance.length ? adaptModelUseGuidance(repository) : adaptModelSuitability(repository),
     'hardware-feasibility': adaptHardwareFeasibility(repository),
     'software-products': adaptSoftwareProducts(repository),
     'deployment-compatibility': adaptDeploymentCompatibility(repository),
     benchmarks: adaptBenchmarks(repository),
-    economics: adaptEconomics(repository),
-    'specialized-models': adaptSpecializedModels(repository)
+    'specialized-models': adaptSpecializedModels(repository).map(row => {
+      const assessment = repository.specializedAssessments.find(item => item.id === row.id);
+      return assessment ? profileRow(repository, row, assessment.modelVersionId) : row;
+    })
   };
 }
 
 function validateIds(repository: LlmGuideRepository, errors: string[]) {
   const collections: Array<[string, Array<{ id: string }>]> = [
+    ['artifactListings', repository.artifactListings], ['modelProfiles', repository.modelProfiles], ['modelUseGuidance', repository.modelUseGuidance],
     ['families', repository.families], ['models', repository.models], ['artifacts', repository.artifacts],
     ['softwareProducts', repository.softwareProducts], ['softwareReleases', repository.softwareReleases],
     ['engines', repository.engines], ['servingStacks', repository.servingStacks],
     ['deploymentConfigurations', repository.deploymentConfigurations], ['softwareCapabilities', repository.softwareCapabilities],
     ['apiCompatibility', repository.apiCompatibility], ['hardwareConfigurations', repository.hardwareConfigurations],
-    ['workloads', repository.workloads], ['qualityEvaluations', repository.qualityEvaluations],
+    ['workloads', repository.workloads], ['qualityEvaluations', repository.qualityEvaluations], ['publishedEvaluations', repository.publishedEvaluations],
     ['applicationAssessments', repository.applicationAssessments], ['executionFeasibility', repository.executionFeasibility],
     ['deploymentCompatibility', repository.deploymentCompatibility], ['benchmarkRuns', repository.benchmarkRuns],
-    ['costScenarios', repository.costScenarios], ['specializedAssessments', repository.specializedAssessments],
+    ['specializedAssessments', repository.specializedAssessments],
     ['claims', repository.claims], ['evidence', repository.evidence]
   ];
   const all = new Set<string>();
@@ -822,7 +925,33 @@ export function validateLlmRepository(repository: LlmGuideRepository) {
     quality: new Set(repository.qualityEvaluations.map((item) => item.id)), evidence: new Set(repository.evidence.map((item) => item.id))
   };
 
+  for (const collection of [repository.artifactListings, repository.modelProfiles, repository.modelUseGuidance]) for (const item of collection) {
+    requireRef(errors, item.id, 'modelVersionId', item.modelVersionId, sets.models);
+    if (!item.evidenceIds.length) errors.push(`${item.id} needs evidence`);
+    for (const evidenceId of item.evidenceIds) requireRef(errors, item.id, 'evidenceIds', evidenceId, sets.evidence);
+  }
+  for (const item of repository.modelUseGuidance) {
+    if (!applications.some(app => app.id === item.applicationId)) errors.push(`${item.id} invalid application`);
+    if (!item.summary.trim() || !item.description.trim() || !item.conditions.length) errors.push(`${item.id} incomplete guidance`);
+    if ('outcome' in item) errors.push(`${item.id} guidance must not carry an experimental outcome`);
+  }
+  for (const item of repository.artifactListings) {
+    const model = repository.models.find(model => model.id === item.modelVersionId);
+    if (!model?.aliases?.includes(item.baseModelRepository)) errors.push(`${item.id} base model identity does not match`);
+    if (!item.repositoryUrl.startsWith('https://') || !item.filesUrl.startsWith('https://')) errors.push(`${item.id} invalid download URL`);
+    if (item.format !== 'ollama' && !item.files.length) errors.push(`${item.id} missing verified files`);
+    if (item.totalBytes !== undefined && item.files.every(file => file.bytes !== undefined) && item.totalBytes !== item.files.reduce((sum, file) => sum + file.bytes!, 0)) errors.push(`${item.id} inconsistent file sizes`);
+  }
+  for (const profile of repository.modelProfiles) {
+    if (!profile.introduction.trim() || !profile.roleSummary.trim() || !profile.runGuides.length) errors.push(`${profile.id} incomplete profile`);
+    for (const run of profile.runGuides) {
+      if (!run.href.startsWith('https://') || !run.engine.trim() || !run.label.trim() || !run.evidenceIds.length ||
+        (run.instructions !== undefined && !run.instructions.trim()) || run.conditions.some(condition => !condition.trim())) errors.push(`${profile.id} incomplete run path`);
+      for (const id of run.evidenceIds) requireRef(errors, profile.id, 'runGuide.evidence', id, sets.evidence);
+    }
+  }
   for (const model of repository.models) {
+    if (model.releasedOn && !sourceDateRange(model.releasedOn)) errors.push(`${model.id}.releasedOn is not a valid source date`);
     requireRef(errors, model.id, 'familyId', model.familyId, sets.families);
     if (model.baseModelId) requireRef(errors, model.id, 'baseModelId', model.baseModelId, sets.models);
     if (model.distilledFromModelId) requireRef(errors, model.id, 'distilledFromModelId', model.distilledFromModelId, sets.models);
@@ -857,7 +986,22 @@ export function validateLlmRepository(repository: LlmGuideRepository) {
     }
     if (assessment.qualityEvaluationId) requireRef(errors, assessment.id, 'qualityEvaluationId', assessment.qualityEvaluationId, sets.quality);
   }
-  for (const release of repository.softwareReleases) requireRef(errors, release.id, 'productId', release.productId, sets.products);
+  for (const result of repository.publishedEvaluations) {
+    requireRef(errors, result.id, 'modelVersionId', result.modelVersionId, sets.models);
+    const model = repository.models.find(item => item.id === result.modelVersionId);
+    if (model && ![model.exactName, ...(model.aliases ?? [])].includes(result.reportedModelName)) errors.push(`${result.id} reportedModelName does not identify the named model`);
+    if (!result.evidenceIds.length || !result.reporter.trim() || !result.benchmark.trim() || !result.metric.trim() || !result.unit.trim() || !Number.isFinite(result.value)) errors.push(`${result.id} published result lacks a source or a meaningful metric`);
+    for (const field of ['artifactId', 'artifactRevision', 'deploymentConfigId', 'hardwareConfigId']) {
+      if (field in result) errors.push(`${result.id} cannot bind a PublishedEvaluation to ${field}; use the exact-execution contract`);
+    }
+    for (const [field, value] of Object.entries({ evaluatedOn: result.evaluatedOn, publishedOn: result.publishedOn, accessedOn: result.accessedOn })) {
+      if (value && !sourceDateRange(value)) errors.push(`${result.id}.${field} is not a valid source date`);
+    }
+  }
+  for (const release of repository.softwareReleases) {
+    requireRef(errors, release.id, 'productId', release.productId, sets.products);
+    if (release.releasedOn && !sourceDateRange(release.releasedOn)) errors.push(`${release.id}.releasedOn is not a valid source date`);
+  }
   for (const stack of repository.servingStacks) {
     const componentIds = new Set(stack.components.map((item) => item.id));
     if (componentIds.size !== stack.components.length) errors.push(`${stack.id} has duplicate component ids`);
@@ -908,14 +1052,13 @@ export function validateLlmRepository(repository: LlmGuideRepository) {
     }
   }
   for (const run of repository.benchmarkRuns) requireRef(errors, run.id, 'deploymentConfigId', run.deploymentConfigId, sets.deployments);
-  for (const cost of repository.costScenarios) requireRef(errors, cost.id, 'deploymentConfigId', cost.deploymentConfigId, sets.deployments);
   for (const assessment of repository.specializedAssessments) {
     requireRef(errors, assessment.id, 'modelVersionId', assessment.modelVersionId, sets.models);
     requireRef(errors, assessment.id, 'workloadId', assessment.workloadId, sets.workloads);
     if (assessment.artifactId) requireRef(errors, assessment.id, 'artifactId', assessment.artifactId, sets.artifacts);
   }
   for (const evidence of repository.evidence) {
-    if (!evidence.locator.trim()) errors.push(`${evidence.id}.locator is empty`);
+        if (!evidence.locator.trim()) errors.push(`${evidence.id}.locator is empty`);
     if (evidence.derivation) {
       if (!evidence.derivation.inputs.length || !evidence.derivation.formulaOrProcedure || !evidence.derivation.rounding) errors.push(`${evidence.id}.derivation is incomplete`);
       for (const input of evidence.derivation.inputs) {

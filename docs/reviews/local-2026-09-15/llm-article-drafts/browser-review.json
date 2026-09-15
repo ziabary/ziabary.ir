@@ -1,0 +1,44 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "Only exact show-drafts=true reveals either article; canonical and noindex are unique.",
+    "Both editorial dates, local WebP covers, tables, KaTeX and external links work.",
+    "LLM reading plans open the drafts; client navigation between drafts preserves preview; published RAG stays indexable.",
+    "320px and 390px tables scroll within the page in both themes."
+  ],
+  "screenshots": [
+    "desktop-1-cover.png",
+    "desktop-1-table.png",
+    "desktop-memory-formula.png",
+    "mobile-390-1-cover.png",
+    "mobile-390-1-table.png",
+    "mobile-320-1-cover.png",
+    "mobile-320-1-table.png",
+    "desktop-2-cover.png",
+    "desktop-2-table.png",
+    "mobile-390-2-cover.png",
+    "mobile-390-2-table.png",
+    "mobile-320-2-cover.png",
+    "mobile-320-2-table.png",
+    "guide-draft-links.png"
+  ],
+  "articles": [
+    {
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+      "date": "2026-08-26",
+      "faDate": "۴ شهریور ۱۴۰۵",
+      "math": true,
+      "tables": 3,
+      "cover": "http://127.0.0.1:4189/images/responsive/8dd877bbf0675bf5-960.webp"
+    },
+    {
+      "slug": "right-model-size-for-the-task",
+      "date": "2026-08-31",
+      "faDate": "۹ شهریور ۱۴۰۵",
+      "math": false,
+      "tables": 2,
+      "cover": "http://127.0.0.1:4189/images/responsive/89503f519202787e-960.webp"
+    }
+  ],
+  "runtimeErrors": []
+}

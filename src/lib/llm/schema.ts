@@ -20,8 +20,8 @@ export type ExecutionConfigId = DeploymentConfigId;
 export type HardwareConfigId = EntityId<'hardware'>;
 export type WorkloadId = EntityId<'workload'>;
 export type QualityEvaluationId = EntityId<'quality'>;
+export type PublishedEvaluationId = EntityId<'published-evaluation'>;
 export type BenchmarkRunId = EntityId<'benchmark'>;
-export type CostScenarioId = EntityId<'cost'>;
 export type EvidenceId = EntityId<'evidence'>;
 export type ClaimId = EntityId<'claim'>;
 export type SoftwareCapabilityClaimId = EntityId<'software-capability'>;
@@ -162,6 +162,13 @@ export interface ModelVersion {
   architecture: ModelArchitecture;
   totalParametersB: Datum<number, ParameterUnit>;
   activeParametersB: Datum<number, ParameterUnit>;
+  /** Additional declared counts never substitute for the whole-model total in filters. */
+  parameterCounts?: Array<{
+    scope: 'nominal' | 'total' | 'active' | 'effective' | 'language-component' | 'vision-component' | 'stored' | 'other';
+    label: string;
+    value: Datum<number, ParameterUnit>;
+    approximate: boolean;
+  }>;
   kind: ModelKind;
   inputModalities: Modality[];
   outputModalities: Modality[];
@@ -170,8 +177,21 @@ export interface ModelVersion {
   persianEvidenceStatus: PersianEvidenceStatus;
   declaredContext: Datum<number, TokenUnit>;
   evaluatedContext: Datum<number, TokenUnit>;
+  contextExtension?: { capacity: Datum<number, TokenUnit>; condition: string };
+  /** Short condition affecting selection; methodological notes belong in evidence. */
+  contextCondition?: string;
+  specializedSpecs?: {
+    task: Datum<string>;
+    output: Datum<string>;
+    embeddingDimensions?: Datum<number>;
+    adjustableDimensions?: Datum<string>;
+    poolingOrScoring: Datum<string>;
+    features: Datum<string>;
+    languages: Datum<string>;
+  };
   releaseStatus: ReviewStatus;
   announcedOn?: string;
+  /** Source date, preserving precision: YYYY, YYYY-MM or YYYY-MM-DD. Never review day. */
   releasedOn?: string;
   lastReviewedOn: string;
   license: LicenseRecord;
@@ -221,6 +241,69 @@ export interface ModelArtifact {
   authority: ArtifactAuthority;
   /** Evaluations must target this exact artifact; no BF16 inheritance. */
   artifactQualityEvaluationIds?: QualityEvaluationId[];
+  evidenceIds: EvidenceId[];
+}
+
+/** A verified distribution listing is not an exact execution artifact. */
+export interface ArtifactListing {
+  id: EntityId<'artifact-listing'>;
+  modelVersionId: ModelVersionId;
+  baseModelRepository: string;
+  baseRevision?: string;
+  publisher: string;
+  authority: ArtifactAuthority;
+  format: ArtifactFormat | 'ollama';
+  variant: string;
+  quantizationMethod?: string;
+  precision?: string;
+  repositoryUrl: string;
+  filesUrl: string;
+  repositoryRevision?: string;
+  files: Array<{ path: string; url: string; bytes?: number }>;
+  totalBytes?: number;
+  sizeDescription?: string;
+  scopeNote?: string;
+  verifiedOn: string;
+  evidenceIds: EvidenceId[];
+}
+
+export interface ModelRunGuide {
+  label: string;
+  engine: string;
+  href: string;
+  instructions?: string;
+  conditions: string[];
+  code?: string;
+  codeLanguage?: 'python' | 'bash';
+  evidenceIds: EvidenceId[];
+}
+
+/** Editorial introduction and task-correct starting instructions for one exact model. */
+export interface ModelProfile {
+  id: EntityId<'model-profile'>;
+  modelVersionId: ModelVersionId;
+  introduction: string;
+  roleSummary: string;
+  distinguishingFeatures: string[];
+  languageSummary?: string;
+  officialUrl: string;
+  runGuides: ModelRunGuide[];
+  downloadSearchNote?: string;
+  evidenceIds: EvidenceId[];
+}
+
+export type ModelUseRole = 'retrieval' | 'reranking' | 'grounded-generation' | 'text-generation' | 'coding' | 'tool-use' | 'reasoning' | 'vision' | 'structured-output';
+/** A sourced use explanation; it never implies a successful quality/SLA test. */
+export interface ModelUseGuidance {
+  id: EntityId<'model-use'>;
+  modelVersionId: ModelVersionId;
+  applicationId: ApplicationId;
+  role: ModelUseRole;
+  summary: string;
+  description: string;
+  distinguishingFeature: string;
+  conditions: string[];
+  basis: 'publisher-summary' | 'editorial-analysis';
   evidenceIds: EvidenceId[];
 }
 
@@ -330,6 +413,13 @@ export interface SoftwareRelease {
   offlineOperation: Datum<boolean>;
   license: LicenseRecord;
   maintenanceStatus: SoftwareMaintenanceStatus;
+  targetScenario?: Datum<string>;
+  /** Explicitly documented target needs; queue/batching alone do not establish throughput. */
+  documentedNeeds?: string[];
+  backendSummary?: Datum<string>;
+  /** Documented compute libraries or upstream APIs; not an experimental stack. */
+  documentedBackends?: string[];
+  selectionCaveat?: string;
   evidenceIds: EvidenceId[];
 }
 
@@ -487,7 +577,7 @@ export interface HardwareConfiguration {
   evidenceIds: EvidenceId[];
 }
 
-/** Exact deployable combination; all benchmark/cost/compatibility rows bind here. */
+/** Exact deployable combination; all benchmark/compatibility rows bind here. */
 export interface DeploymentConfiguration {
   id: DeploymentConfigId;
   modelVersionId: ModelVersionId;
@@ -524,6 +614,11 @@ export interface ModelApplicationAssessment {
   applicationId: ApplicationId;
   subapplicationId?: string;
   basis: AssessmentBasis;
+  /** Documented use or editorial rationale, independent of test outcome. */
+  summary?: string;
+  rationale?: string;
+  primaryPurpose?: boolean;
+  importantConditions?: string[];
   outcome: Datum<'meets' | 'partially-meets' | 'does-not-meet'>;
   language?: string;
   testedVersion?: string;
@@ -549,6 +644,38 @@ export interface QualityEvaluation {
   testedContext?: Datum<number, TokenUnit>;
   publishedOn?: string;
   limitations?: string[];
+  evidenceIds: EvidenceId[];
+}
+
+/**
+ * A result reported for an explicitly named model. Source-document revision and
+ * evaluated-weight revision are independent. This is never a deployment run;
+ * absent tested commits do not prevent faithful publication of the report.
+ */
+export interface PublishedEvaluation {
+  /** Report-defined comparison group and reasoning mode; neither is an artifact revision. */
+  comparisonGroup?: string;
+  mode?: string;
+  id: PublishedEvaluationId;
+  modelVersionId: ModelVersionId;
+  reportedModelName: string;
+  evaluatedRevision?: string;
+  sourceDocumentRevision?: string;
+  reporter: string;
+  reportingRelationship: 'publisher' | 'independent' | 'third-party';
+  benchmark: string;
+  benchmarkVersion?: string;
+  metric: string;
+  value: number;
+  unit: string;
+  settings: Record<string, string | number | boolean>;
+  reportedPrecision?: string;
+  language?: string;
+  applicationIds: ApplicationId[];
+  evaluatedOn?: string;
+  publishedOn?: string;
+  accessedOn: string;
+  limitations: string[];
   evidenceIds: EvidenceId[];
 }
 
@@ -664,62 +791,6 @@ export interface BenchmarkRun {
   evidenceIds: EvidenceId[];
 }
 
-export type AcquisitionMode = 'existing' | 'purchase' | 'rent' | 'api';
-
-export interface Money {
-  amount: number;
-  currency: string;
-  market: string;
-  /** Date this price was observed; not the scenario calculation date. */
-  observedOn: string;
-  evidenceIds: EvidenceId[];
-}
-
-export interface LicenseCostAssumption {
-  state: 'included' | 'excluded-not-free' | 'free' | 'unknown' | 'not-applicable';
-  amount?: Money;
-  note?: string;
-  evidenceIds?: EvidenceId[];
-}
-
-export interface SoftwareLifecycleCosts {
-  initialSetup: Datum<Money>;
-  modelPreparation: Datum<Money>;
-  modelLoadOperations: Datum<Money>;
-  ongoingMaintenance: Datum<Money>;
-  supportingResources: Datum<Money>;
-}
-
-export interface CostScenario {
-  id: CostScenarioId;
-  name: string;
-  deploymentConfigId: DeploymentConfigId;
-  acquisitionMode: AcquisitionMode;
-  qualityFloor: QualityTarget;
-  latencyTargets: ServiceLevelObjective;
-  traffic: Datum<number, 'request/day' | 'request/month' | 'token/month'>;
-  operatingHours: Datum<number, 'h/day' | 'h/month'>;
-  /** Common date to which calculations are normalized. */
-  calculationBasisDate: string;
-  priceInputs: Money[];
-  softwareLifecycleCosts: SoftwareLifecycleCosts;
-  totalSystemCost: Datum<Money>;
-  operatingCost: Datum<Money>;
-  utilization: Datum<number, 'percent'>;
-  redundancy: Datum<string>;
-  calculationPeriod: Datum<number, 'month' | 'year'>;
-  licenseCost: LicenseCostAssumption;
-  acceptedRequestCost: Datum<Money>;
-  tokenCost: Datum<Money>;
-  tokenCostDefinition?: string;
-  tco: Datum<Money>;
-  breakEvenPoint: Datum<number, 'request' | 'token' | 'month'>;
-  /** ROI exists only with an explicit economic-value assumption. */
-  roi?: Datum<number, 'percent'>;
-  economicValueAssumption?: Datum<Money>;
-  evidenceIds: EvidenceId[];
-}
-
 export interface SpecializedModelAssessment {
   id: EntityId<'specialized-assessment'>;
   modelVersionId: ModelVersionId;
@@ -758,6 +829,9 @@ export interface LlmGuideRepository {
   families: ModelFamily[];
   models: ModelVersion[];
   artifacts: ModelArtifact[];
+  artifactListings: ArtifactListing[];
+  modelProfiles: ModelProfile[];
+  modelUseGuidance: ModelUseGuidance[];
   softwareProducts: SoftwareProduct[];
   softwareReleases: SoftwareRelease[];
   engines: ExecutionEngine[];
@@ -768,11 +842,11 @@ export interface LlmGuideRepository {
   hardwareConfigurations: HardwareConfiguration[];
   workloads: WorkloadScenario[];
   qualityEvaluations: QualityEvaluation[];
+  publishedEvaluations: PublishedEvaluation[];
   applicationAssessments: ModelApplicationAssessment[];
   executionFeasibility: ExecutionFeasibility[];
   deploymentCompatibility: DeploymentCompatibility[];
   benchmarkRuns: BenchmarkRun[];
-  costScenarios: CostScenario[];
   specializedAssessments: SpecializedModelAssessment[];
   claims: ClaimRecord[];
   evidence: Evidence[];

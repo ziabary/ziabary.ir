@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "kind": "research-supplement; not a replacement for repository.v1.json",
+  "snapshotDate": "2026-09-15",
+  "counts": {
+    "artifacts": 28,
+    "hardware": 15,
+    "workloads": 4,
+    "memory-scenarios": 108,
+    "hardware-fit-matrix": 1620,
+    "published-performance": 40,
+    "published-quality": 64,
+    "compatibility": 54,
+    "quantization-hardware-support": 12,
+    "airllm-observations": 3,
+    "published-memory-claims": 2,
+    "specialized-models": 6,
+    "internal-links": 8,
+    "task-starting-points": 10,
+    "source-review-notes": 4,
+    "cpu-profiles": 5,
+    "cpu-fit-matrix": 540,
+    "slm-cpu-planning": 6,
+    "software-guidance": 11,
+    "model-aliases": 4
+  },
+  "sourceCount": 97,
+  "datesPolicy": "snapshot date is shown once; source updated, report publication and exact release dates remain different fields",
+  "noWebsiteChanges": true,
+  "localChanges": [
+    "2026-09-15: removed rental pricing, economics, compute-cost examples and their exclusive sources at the site owner’s request."
+  ]
+}

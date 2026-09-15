@@ -1,0 +1,38 @@
+[
+  {
+    "lang": "fa",
+    "file": "src/lib/content/articles/rag-cag-kag-fine-tuning-instruction-tuning.md",
+    "sections": 12,
+    "paragraphs": 31,
+    "tableRows": 5,
+    "tableColumns": 5,
+    "referenceLinks": 12,
+    "practicalExamples": 5,
+    "sources": 6,
+    "date": "2026-06-15"
+  },
+  {
+    "lang": "en",
+    "file": "src/lib/content/articles/rag-cag-kag-fine-tuning-instruction-tuning-en.md",
+    "sections": 12,
+    "paragraphs": 31,
+    "tableRows": 5,
+    "tableColumns": 5,
+    "referenceLinks": 12,
+    "practicalExamples": 5,
+    "sources": 6,
+    "date": "2026-06-15"
+  },
+  {
+    "lang": "es",
+    "file": "src/lib/content/articles/rag-cag-kag-fine-tuning-instruction-tuning-es.md",
+    "sections": 12,
+    "paragraphs": 31,
+    "tableRows": 5,
+    "tableColumns": 5,
+    "referenceLinks": 12,
+    "practicalExamples": 5,
+    "sources": 6,
+    "date": "2026-06-15"
+  }
+]

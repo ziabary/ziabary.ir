@@ -1,0 +1,1532 @@
+[
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-32b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-32b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-32b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-32b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-32b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-8b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-8b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-8b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-8b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-aya-expanse-8b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-tiny-aya-global",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-tiny-aya-global",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-tiny-aya-global",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-tiny-aya-global",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:coherelabs-tiny-aya-global",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-135m-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-135m-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-135m-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-135m-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-135m-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-360m-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-360m-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-360m-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-360m-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm2-360m-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm3-3b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm3-3b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm3-3b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm3-3b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:huggingfacetb-smollm3-3b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-0-6b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-0-6b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-0-6b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-0-6b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-0-6b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-1-7b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-1-7b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-1-7b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-1-7b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-1-7b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-14b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-14b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-14b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-14b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-14b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-30b-a3b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-30b-a3b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-30b-a3b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-30b-a3b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-30b-a3b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-32b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-32b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-32b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-32b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-4b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-4b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-4b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-4b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-4b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-2b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-2b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-2b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-2b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-2b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-2b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-35b-a3b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-35b-a3b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-35b-a3b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-35b-a3b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-35b-a3b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-4b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-4b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-4b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-4b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-4b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-4b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-9b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-9b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-9b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-9b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-9b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-5-9b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8-27b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8-27b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8-27b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8-27b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:qwen-qwen3-8-27b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:allenai-olmo-3-7b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:allenai-olmo-3-7b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:allenai-olmo-3-7b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:allenai-olmo-3-7b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:allenai-olmo-3-7b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v3-2",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v3-2",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v3-2",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v3-2",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v3-2",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-12b-it",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-12b-it",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-12b-it",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-12b-it",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-12b-it",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-12b-it",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-1b-it",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-1b-it",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-1b-it",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-1b-it",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-1b-it",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-27b-it",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-27b-it",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-27b-it",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-27b-it",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-27b-it",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-27b-it",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-4b-it",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-4b-it",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-4b-it",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-4b-it",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-4b-it",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-3-4b-it",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-26b-a4b-it",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-26b-a4b-it",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-26b-a4b-it",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-26b-a4b-it",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-26b-a4b-it",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-e2b-it",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-e2b-it",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-e2b-it",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-e2b-it",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-e2b-it",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:google-gemma-4-e2b-it",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-70b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-70b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-70b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-70b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-70b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-8b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-8b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-8b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-8b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-1-8b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-1b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-1b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-1b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-1b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-1b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-3b-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-3b-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-3b-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-3b-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:meta-llama-llama-3-2-3b-instruct",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:microsoft-phi-4-mini-instruct",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:microsoft-phi-4-mini-instruct",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:microsoft-phi-4-mini-instruct",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:microsoft-phi-4-mini-instruct",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:microsoft-phi-4-mini-instruct",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "applicationId": "document-vision",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-120b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-120b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-120b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-120b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-120b",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-20b",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-20b",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-20b",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-20b",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:openai-gpt-oss-20b",
+    "applicationId": "agents-tools",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:zai-org-glm-4-7-flash",
+    "applicationId": "text-work",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:zai-org-glm-4-7-flash",
+    "applicationId": "enterprise-rag",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:zai-org-glm-4-7-flash",
+    "applicationId": "structured-extraction",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:zai-org-glm-4-7-flash",
+    "applicationId": "coding-assistant",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  },
+  {
+    "modelVersionId": "model:zai-org-glm-4-7-flash",
+    "applicationId": "reasoning-analysis",
+    "status": "needs-editorial-review",
+    "reason": "رابطهٔ کاربردی اختصاصی با شرح و شرایط کافی هنوز تدوین نشده است."
+  }
+]

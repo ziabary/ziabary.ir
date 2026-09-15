@@ -1,0 +1,45 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "All five paths have a button alongside the description; footer still shows dynamic model/software/table counts.",
+    "Buttons sit alongside the description at all three desktop widths and reduce total box height by at least 20%.",
+    "Each of the five reading links and both footer links navigates to the intended populated table; software view switches correctly.",
+    "Mobile accordion opens and navigates correctly at 320/390 pixels in both themes, with no page overflow or clipped links."
+  ],
+  "screenshots": [
+    "desktop-dark.png",
+    "desktop-light.png",
+    "desktop-2156-dark.png",
+    "desktop-1600-dark.png",
+    "desktop-1100-dark.png",
+    "mobile-390-dark-closed.png",
+    "mobile-390-dark-open.png",
+    "mobile-390-light-closed.png",
+    "mobile-390-light-open.png",
+    "mobile-320-dark-closed.png",
+    "mobile-320-dark-open.png",
+    "mobile-320-light-closed.png",
+    "mobile-320-light-open.png"
+  ],
+  "dimensions": [
+    {
+      "width": 2156,
+      "before": 1000.53125,
+      "after": 736.5625,
+      "reductionPercent": 26
+    },
+    {
+      "width": 1600,
+      "before": 1000.53125,
+      "after": 736.5625,
+      "reductionPercent": 26
+    },
+    {
+      "width": 1100,
+      "before": 971.140625,
+      "after": 707.171875,
+      "reductionPercent": 27
+    }
+  ],
+  "runtimeErrors": []
+}

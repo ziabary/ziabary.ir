@@ -1,0 +1,2162 @@
+[
+  {
+    "modelId": "model:coherelabs-aya-expanse-32b",
+    "publisherNominalParametersB": 32.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 59.605,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-32b",
+    "publisherNominalParametersB": 32.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 29.802,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-32b",
+    "publisherNominalParametersB": 32.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-tiny-aya-global",
+    "publisherNominalParametersB": 3.35,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 6.24,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-tiny-aya-global-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-tiny-aya-global",
+    "publisherNominalParametersB": 3.35,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 3.12,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-tiny-aya-global-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-tiny-aya-global",
+    "publisherNominalParametersB": 3.35,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.56,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:coherelabs-tiny-aya-global-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "publisherNominalParametersB": 1.7,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 3.166,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-1-7b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "publisherNominalParametersB": 1.7,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 1.583,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-1-7b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "publisherNominalParametersB": 1.7,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.792,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-1-7b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-135m-instruct",
+    "publisherNominalParametersB": 0.135,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 0.251,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-135m-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-135m-instruct",
+    "publisherNominalParametersB": 0.135,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.126,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-135m-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-135m-instruct",
+    "publisherNominalParametersB": 0.135,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.063,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-135m-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-360m-instruct",
+    "publisherNominalParametersB": 0.36,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 0.671,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-360m-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-360m-instruct",
+    "publisherNominalParametersB": 0.36,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.335,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-360m-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-360m-instruct",
+    "publisherNominalParametersB": 0.36,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.168,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-360m-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm3-3b",
+    "publisherNominalParametersB": 3.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 5.588,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm3-3b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm3-3b",
+    "publisherNominalParametersB": 3.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 2.794,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm3-3b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm3-3b",
+    "publisherNominalParametersB": 3.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.397,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm3-3b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 1.118,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.559,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.279,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-1-7b",
+    "publisherNominalParametersB": 1.7,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 3.166,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-1-7b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-1-7b",
+    "publisherNominalParametersB": 1.7,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 1.583,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-1-7b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-1-7b",
+    "publisherNominalParametersB": 1.7,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.792,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-1-7b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-14b",
+    "publisherNominalParametersB": 14.8,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 27.567,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-14b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-14b",
+    "publisherNominalParametersB": 14.8,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 13.784,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-14b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-14b",
+    "publisherNominalParametersB": 14.8,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 6.892,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-14b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-30b-a3b",
+    "publisherNominalParametersB": 30.5,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 56.811,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-30b-a3b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-30b-a3b",
+    "publisherNominalParametersB": 30.5,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 28.405,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-30b-a3b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-30b-a3b",
+    "publisherNominalParametersB": 30.5,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 14.203,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-30b-a3b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-32b",
+    "publisherNominalParametersB": 32.8,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 61.095,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-32b",
+    "publisherNominalParametersB": 32.8,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 30.547,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-32b",
+    "publisherNominalParametersB": 32.8,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 15.274,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-8b",
+    "publisherNominalParametersB": 8.2,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 15.274,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-8b",
+    "publisherNominalParametersB": 8.2,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 7.637,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-8b",
+    "publisherNominalParametersB": 8.2,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.818,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "publisherNominalParametersB": 30.5,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 56.811,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-coder-30b-a3b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "publisherNominalParametersB": 30.5,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 28.405,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-coder-30b-a3b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "publisherNominalParametersB": 30.5,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 14.203,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-coder-30b-a3b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 1.118,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.559,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.279,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 1.118,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.559,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-0-6b",
+    "publisherNominalParametersB": 0.6,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.279,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-0-6b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-4b",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-4b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:allenai-olmo-3-7b-instruct",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 13.039,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:allenai-olmo-3-7b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:allenai-olmo-3-7b-instruct",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 6.519,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:allenai-olmo-3-7b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:allenai-olmo-3-7b-instruct",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.26,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:allenai-olmo-3-7b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "publisherNominalParametersB": 70.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 130.385,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "publisherNominalParametersB": 70.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 65.193,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "publisherNominalParametersB": 70.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 32.596,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "publisherNominalParametersB": 1.5,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 2.794,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "publisherNominalParametersB": 1.5,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 1.397,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "publisherNominalParametersB": 1.5,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.698,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "publisherNominalParametersB": 14.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 26.077,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "publisherNominalParametersB": 14.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 13.039,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "publisherNominalParametersB": 14.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 6.519,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "publisherNominalParametersB": 32.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 59.605,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "publisherNominalParametersB": 32.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 29.802,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "publisherNominalParametersB": 32.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 13.039,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 6.519,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.26,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-12b-it",
+    "publisherNominalParametersB": 12.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 22.352,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-12b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-12b-it",
+    "publisherNominalParametersB": 12.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 11.176,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-12b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-12b-it",
+    "publisherNominalParametersB": 12.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 5.588,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-12b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-1b-it",
+    "publisherNominalParametersB": 1.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-1b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-1b-it",
+    "publisherNominalParametersB": 1.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.931,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-1b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-1b-it",
+    "publisherNominalParametersB": 1.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.466,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-1b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-27b-it",
+    "publisherNominalParametersB": 27.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 50.291,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-27b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-27b-it",
+    "publisherNominalParametersB": 27.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 25.146,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-27b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-27b-it",
+    "publisherNominalParametersB": 27.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 12.573,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-27b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-4b-it",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-4b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-4b-it",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-4b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-4b-it",
+    "publisherNominalParametersB": 4.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:google-gemma-3-4b-it-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "publisherNominalParametersB": 2.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:ibm-granite-granite-3-3-2b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "publisherNominalParametersB": 2.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:ibm-granite-granite-3-3-2b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "publisherNominalParametersB": 2.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.931,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:ibm-granite-granite-3-3-2b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-70b-instruct",
+    "publisherNominalParametersB": 70.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 130.385,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-70b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-70b-instruct",
+    "publisherNominalParametersB": 70.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 65.193,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-70b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-70b-instruct",
+    "publisherNominalParametersB": 70.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 32.596,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-70b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-8b-instruct",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 14.901,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-8b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-8b-instruct",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 7.451,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-8b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-8b-instruct",
+    "publisherNominalParametersB": 8.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.725,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-8b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-1b-instruct",
+    "publisherNominalParametersB": 1.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 1.863,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-1b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-1b-instruct",
+    "publisherNominalParametersB": 1.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 0.931,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-1b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-1b-instruct",
+    "publisherNominalParametersB": 1.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 0.466,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-1b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-3b-instruct",
+    "publisherNominalParametersB": 3.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 5.588,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-3b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-3b-instruct",
+    "publisherNominalParametersB": 3.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 2.794,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-3b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-3b-instruct",
+    "publisherNominalParametersB": 3.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.397,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-3b-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:microsoft-phi-4-mini-instruct",
+    "publisherNominalParametersB": 3.8,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 7.078,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:microsoft-phi-4-mini-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:microsoft-phi-4-mini-instruct",
+    "publisherNominalParametersB": 3.8,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 3.539,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:microsoft-phi-4-mini-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:microsoft-phi-4-mini-instruct",
+    "publisherNominalParametersB": 3.8,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 1.77,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:microsoft-phi-4-mini-instruct-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "publisherNominalParametersB": 24.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 44.703,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-devstral-small-2-24b-instruct-2512-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "publisherNominalParametersB": 24.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 22.352,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-devstral-small-2-24b-instruct-2512-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "publisherNominalParametersB": 24.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 11.176,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-devstral-small-2-24b-instruct-2512-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 13.039,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-mistral-7b-instruct-v0-3-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 6.519,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-mistral-7b-instruct-v0-3-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "publisherNominalParametersB": 7.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 3.26,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-mistral-7b-instruct-v0-3-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "publisherNominalParametersB": 24.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 44.703,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-mistral-small-3-1-24b-instruct-2503-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "publisherNominalParametersB": 24.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 22.352,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-mistral-small-3-1-24b-instruct-2503-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "publisherNominalParametersB": 24.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 11.176,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:mistralai-mistral-small-3-1-24b-instruct-2503-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "publisherNominalParametersB": 9.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 16.764,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:nvidia-nvidia-nemotron-nano-9b-v2-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "publisherNominalParametersB": 9.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 8.382,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:nvidia-nvidia-nemotron-nano-9b-v2-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "publisherNominalParametersB": 9.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 4.191,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:nvidia-nvidia-nemotron-nano-9b-v2-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-120b",
+    "publisherNominalParametersB": 117.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 217.929,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-120b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-120b",
+    "publisherNominalParametersB": 117.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 108.965,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-120b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-120b",
+    "publisherNominalParametersB": 117.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 54.482,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-120b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-20b",
+    "publisherNominalParametersB": 21.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 39.116,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-20b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-20b",
+    "publisherNominalParametersB": 21.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 19.558,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-20b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-20b",
+    "publisherNominalParametersB": 21.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 9.779,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-20b-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:zai-org-glm-4-7-flash",
+    "publisherNominalParametersB": 30.0,
+    "hypotheticalUniformBitsPerParameter": 16,
+    "idealizedWeightGiB": 55.879,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:zai-org-glm-4-7-flash-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:zai-org-glm-4-7-flash",
+    "publisherNominalParametersB": 30.0,
+    "hypotheticalUniformBitsPerParameter": 8,
+    "idealizedWeightGiB": 27.94,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:zai-org-glm-4-7-flash-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  },
+  {
+    "modelId": "model:zai-org-glm-4-7-flash",
+    "publisherNominalParametersB": 30.0,
+    "hypotheticalUniformBitsPerParameter": 4,
+    "idealizedWeightGiB": 13.97,
+    "formula": "publisher_nominal_B * 1e9 * hypothetical_bits / 8 / 2**30",
+    "evidenceIds": [
+      "evidence:zai-org-glm-4-7-flash-parameters"
+    ],
+    "status": "illustration-not-feasibility",
+    "limitations": [
+      "شمار معرفی مدل تقریب و گاه گرد‌شده است؛ این عدد حتی کران دقیق حافظه نیست.",
+      "KV cache، activation، workspace، runtime، padding، metadata و quantization scales حذف شده‌اند.",
+      "وجود artifact یا kernel این دقت، افت کیفیت و اجرا روی GPU خاص اثبات نشده است."
+    ]
+  }
+]

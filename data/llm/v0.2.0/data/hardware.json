@@ -1,0 +1,218 @@
+[
+  {
+    "id": "hardware:rtx3060-12",
+    "name": "RTX 3060 12GB",
+    "nominalVramGBPerGpu": 12,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 12,
+    "gpuPowerLimitWPerCard": 170,
+    "architecture": "Ampere",
+    "interconnect": "PCIe; no NVLink",
+    "sourceIds": [
+      "nvidia-3060"
+    ]
+  },
+  {
+    "id": "hardware:rtx4060ti-16",
+    "name": "RTX 4060 Ti 16GB",
+    "nominalVramGBPerGpu": 16,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 16,
+    "gpuPowerLimitWPerCard": 165,
+    "architecture": "Ada",
+    "interconnect": "PCIe; no NVLink",
+    "sourceIds": [
+      "nvidia-4060"
+    ]
+  },
+  {
+    "id": "hardware:rtx3090-24",
+    "name": "RTX 3090 24GB",
+    "nominalVramGBPerGpu": 24,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 24,
+    "gpuPowerLimitWPerCard": 350,
+    "architecture": "Ampere",
+    "interconnect": "NVLink bridge available for paired cards",
+    "sourceIds": [
+      "nvidia-3090"
+    ]
+  },
+  {
+    "id": "hardware:rtx4090-24",
+    "name": "RTX 4090 24GB",
+    "nominalVramGBPerGpu": 24,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 24,
+    "gpuPowerLimitWPerCard": 450,
+    "architecture": "Ada",
+    "interconnect": "PCIe; no NVLink",
+    "sourceIds": [
+      "nvidia-4090"
+    ],
+    "gpuRecordId": "nvidia-rtx4090"
+  },
+  {
+    "id": "hardware:rtx4090-mod-48",
+    "name": "RTX 4090 اصلاح‌شدهٔ 48GB",
+    "nominalVramGBPerGpu": 48,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 48,
+    "gpuPowerLimitWPerCard": null,
+    "architecture": "Ada",
+    "interconnect": "board-dependent PCIe; no standard NVLink",
+    "sourceIds": [
+      "trooper-4090"
+    ],
+    "modification": true,
+    "notesFa": [
+      "ظرفیت ۴۸GB مربوط به عرضهٔ اصلاح‌شده است؛ مشخصات برق، کولر و ضمانت همان برد باید ثبت شود."
+    ]
+  },
+  {
+    "id": "hardware:2x-rtx4090-24",
+    "name": "2 × RTX 4090 24GB",
+    "nominalVramGBPerGpu": 24,
+    "gpuCount": 2,
+    "nominalAggregateVramGB": 48,
+    "gpuPowerLimitWPerCard": 450,
+    "architecture": "Ada",
+    "interconnect": "PCIe; model sharding or separate replicas",
+    "sourceIds": [
+      "nvidia-4090"
+    ],
+    "gpuRecordId": "nvidia-rtx4090"
+  },
+  {
+    "id": "hardware:rtx5090-32",
+    "name": "RTX 5090 32GB",
+    "nominalVramGBPerGpu": 32,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 32,
+    "gpuPowerLimitWPerCard": 575,
+    "architecture": "Blackwell",
+    "interconnect": "PCIe; no NVLink",
+    "sourceIds": [
+      "nvidia-5090"
+    ],
+    "gpuRecordId": "nvidia-rtx5090"
+  },
+  {
+    "id": "hardware:rtxa6000-48",
+    "name": "RTX A6000 48GB (Ampere)",
+    "nominalVramGBPerGpu": 48,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 48,
+    "gpuPowerLimitWPerCard": 300,
+    "architecture": "Ampere",
+    "interconnect": "2-way NVLink supported",
+    "sourceIds": [
+      "nvidia-a6000"
+    ],
+    "memoryECC": true
+  },
+  {
+    "id": "hardware:rtx6000-ada-48",
+    "name": "RTX 6000 Ada 48GB",
+    "nominalVramGBPerGpu": 48,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 48,
+    "gpuPowerLimitWPerCard": 300,
+    "architecture": "Ada",
+    "interconnect": "PCIe",
+    "sourceIds": [
+      "nvidia-6000-ada"
+    ],
+    "memoryECC": true,
+    "gpuRecordId": "nvidia-rtx6000-ada"
+  },
+  {
+    "id": "hardware:h100-sxm-80",
+    "name": "H100 SXM 80GB",
+    "nominalVramGBPerGpu": 80,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 80,
+    "gpuPowerLimitWPerCard": 700,
+    "architecture": "Hopper",
+    "interconnect": "HGX/NVLink",
+    "sourceIds": [
+      "nvidia-h100"
+    ],
+    "gpuRecordId": "nvidia-h100-sxm",
+    "memoryBandwidthGBps": 3350
+  },
+  {
+    "id": "hardware:h100-nvl-94",
+    "name": "H100 NVL 94GB",
+    "nominalVramGBPerGpu": 94,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 94,
+    "gpuPowerLimitWPerCard": 400,
+    "architecture": "Hopper",
+    "interconnect": "PCIe/NVLink bridge",
+    "sourceIds": [
+      "nvidia-h100"
+    ],
+    "gpuRecordId": "nvidia-h100-nvl",
+    "memoryBandwidthGBps": 3900
+  },
+  {
+    "id": "hardware:h200-sxm-141",
+    "name": "H200 SXM 141GB",
+    "nominalVramGBPerGpu": 141,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 141,
+    "gpuPowerLimitWPerCard": 700,
+    "architecture": "Hopper",
+    "interconnect": "HGX/NVLink",
+    "sourceIds": [
+      "nvidia-h200"
+    ],
+    "gpuRecordId": "nvidia-h200-sxm",
+    "memoryBandwidthGBps": 4800
+  },
+  {
+    "id": "hardware:h200-nvl-141",
+    "name": "H200 NVL 141GB",
+    "nominalVramGBPerGpu": 141,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 141,
+    "gpuPowerLimitWPerCard": 600,
+    "architecture": "Hopper",
+    "interconnect": "PCIe/NVLink bridge",
+    "sourceIds": [
+      "nvidia-h200"
+    ],
+    "gpuRecordId": "nvidia-h200-nvl",
+    "memoryBandwidthGBps": 4800
+  },
+  {
+    "id": "hardware:8x-h200-sxm",
+    "name": "8 × H200 SXM 141GB",
+    "nominalVramGBPerGpu": 141,
+    "gpuCount": 8,
+    "nominalAggregateVramGB": 1128,
+    "gpuPowerLimitWPerCard": 700,
+    "architecture": "Hopper",
+    "interconnect": "single-node SXM; topology as documented by host",
+    "sourceIds": [
+      "nvidia-h200"
+    ]
+  },
+  {
+    "id": "hardware:rtxpro6000-server-96",
+    "name": "RTX PRO 6000 Blackwell Server 96GB",
+    "nominalVramGBPerGpu": 96,
+    "gpuCount": 1,
+    "nominalAggregateVramGB": 96,
+    "gpuPowerLimitWPerCard": 600,
+    "architecture": "Blackwell",
+    "interconnect": "PCIe",
+    "sourceIds": [
+      "nvidia-pro6000"
+    ],
+    "memoryECC": true,
+    "gpuRecordId": "nvidia-rtx-pro-6000-server",
+    "memoryBandwidthGBps": 1597
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "kernel:ampere-awq",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ampere",
+    "implementation": "AWQ",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ampere-gptq",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ampere",
+    "implementation": "GPTQ",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ampere-marlin-gptq-awq-fp8-fp4",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ampere",
+    "implementation": "Marlin (GPTQ/AWQ/FP8/FP4)",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ampere-llm-compressor-fp8-w8a8",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ampere",
+    "implementation": "llm-compressor FP8 (W8A8)",
+    "supported": false,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ada-awq",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ada",
+    "implementation": "AWQ",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ada-gptq",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ada",
+    "implementation": "GPTQ",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ada-marlin-gptq-awq-fp8-fp4",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ada",
+    "implementation": "Marlin (GPTQ/AWQ/FP8/FP4)",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:ada-llm-compressor-fp8-w8a8",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Ada",
+    "implementation": "llm-compressor FP8 (W8A8)",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:hopper-awq",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Hopper",
+    "implementation": "AWQ",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:hopper-gptq",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Hopper",
+    "implementation": "GPTQ",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:hopper-marlin-gptq-awq-fp8-fp4",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Hopper",
+    "implementation": "Marlin (GPTQ/AWQ/FP8/FP4)",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  },
+  {
+    "id": "kernel:hopper-llm-compressor-fp8-w8a8",
+    "engine": "vLLM",
+    "engineVersion": "0.29.0",
+    "architecture": "Hopper",
+    "implementation": "llm-compressor FP8 (W8A8)",
+    "supported": true,
+    "scope": "implementation-level support table; not all formats for every model architecture",
+    "sourceIds": [
+      "vllm-quantization-v029"
+    ]
+  }
+]

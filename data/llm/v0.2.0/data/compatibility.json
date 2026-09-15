@@ -1,0 +1,797 @@
+[
+  {
+    "id": "compatibility:qwen-qwen3-0-6b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-0.6B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-0-6b-gguf-files",
+      "qwen-qwen3-0-6b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-0-6b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-1-7b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-1.7B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-1-7b-gguf-files",
+      "qwen-qwen3-1-7b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-1-7b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-4b-gguf-q4-k-m",
+    "modelScope": "Qwen/Qwen3-4B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-4b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-4B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-8b-gguf-q4-k-m",
+    "modelScope": "Qwen/Qwen3-8B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-8b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-8B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-14b-gguf-q4-k-m",
+    "modelScope": "Qwen/Qwen3-14B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-14b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-14B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-30b-a3b-gguf-q4-k-m",
+    "modelScope": "Qwen/Qwen3-30B-A3B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-30b-a3b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-30B-A3B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-32b-gguf-q4-k-m",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-32b-gguf-q8-0",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "qwen-llamacpp",
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0",
+    "modelScope": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-card",
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m",
+    "modelScope": "meta-llama/Llama-3.1-70B-Instruct",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-card",
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0",
+    "modelScope": "meta-llama/Llama-3.1-70B-Instruct",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-card",
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m",
+    "modelScope": "meta-llama/Llama-3.1-8B-Instruct",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-card",
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0",
+    "modelScope": "meta-llama/Llama-3.1-8B-Instruct",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-card",
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-aya-expanse-32b-gguf-q4-k-m",
+    "modelScope": "CohereLabs/aya-expanse-32b",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-aya-expanse-32b-gguf-card",
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-aya-expanse-32b-gguf-q8-0",
+    "modelScope": "CohereLabs/aya-expanse-32b",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-aya-expanse-32b-gguf-card",
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-aya-expanse-8b-gguf-q4-k-m",
+    "modelScope": "CohereLabs/aya-expanse-8b",
+    "engine": "llama.cpp",
+    "weightFormat": "Q4_K_M",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-aya-expanse-8b-gguf-card",
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q4-k-m-header"
+    ],
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q4-k-m",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:bartowski-aya-expanse-8b-gguf-q8-0",
+    "modelScope": "CohereLabs/aya-expanse-8b",
+    "engine": "llama.cpp",
+    "weightFormat": "Q8_0",
+    "status": "documented-route",
+    "userSummaryFa": "اجرای محلی GGUF روی CPU/GPU؛ حافظه بر اساس زمینهٔ انتخابی",
+    "sourceIds": [
+      "bartowski-aya-expanse-8b-gguf-card",
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q8-0-header"
+    ],
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q8-0",
+    "scopeLevel": "artifact-documented-route; not an exact local benchmark"
+  },
+  {
+    "id": "compatibility:qwen-qwen3-8b-vllm",
+    "modelScope": "Qwen/Qwen3-8B",
+    "engine": "vLLM",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-vllm"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-8b-sglang",
+    "modelScope": "Qwen/Qwen3-8B",
+    "engine": "SGLang",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-sglang"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-8b-ollama",
+    "modelScope": "Qwen/Qwen3-8B",
+    "engine": "Ollama",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-ollama"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-32b-vllm",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "vLLM",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-vllm"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-32b-sglang",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "SGLang",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-sglang"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-32b-ollama",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "Ollama",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-ollama"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-30b-a3b-vllm",
+    "modelScope": "Qwen/Qwen3-30B-A3B",
+    "engine": "vLLM",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-vllm"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-30b-a3b-sglang",
+    "modelScope": "Qwen/Qwen3-30B-A3B",
+    "engine": "SGLang",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-sglang"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-qwen3-30b-a3b-ollama",
+    "modelScope": "Qwen/Qwen3-30B-A3B",
+    "engine": "Ollama",
+    "weightFormat": "backend-appropriate checkpoint/quantization",
+    "status": "documented-route",
+    "userSummaryFa": "مسیر مستند اجرای Qwen3؛ قالب گفت‌وگو و حالت thinking تنظیم شود",
+    "sourceIds": [
+      "qwen-ollama"
+    ],
+    "scopeLevel": "named-model-family documentation",
+    "conditionsFa": [
+      "پشتیبانی از قالب وزن منتخب و حافظهٔ سناریو جدا کنترل شود."
+    ]
+  },
+  {
+    "id": "compatibility:qwen-embedding-0-6b-tei",
+    "modelScope": "Qwen/Qwen3-Embedding-0.6B",
+    "engine": "TEI",
+    "weightFormat": "safetensors",
+    "status": "documented-route",
+    "userSummaryFa": "سرویس embedding روی CPU یا GPU با image متناسب معماری",
+    "sourceIds": [
+      "tei-models"
+    ],
+    "engineVersion": "1.9.3",
+    "task": "embedding"
+  },
+  {
+    "id": "compatibility:qwen-reranker-0-6b-transformers",
+    "modelScope": "Qwen/Qwen3-Reranker-0.6B",
+    "engine": "Transformers",
+    "weightFormat": "safetensors",
+    "status": "documented-route",
+    "userSummaryFa": "امتیازدهی query/document با دستور و قالب مخصوص reranker",
+    "sourceIds": [
+      "qwen-reranker"
+    ],
+    "task": "reranking"
+  },
+  {
+    "id": "compatibility:qwen-embedding-4b-tei",
+    "modelScope": "Qwen/Qwen3-Embedding-4B",
+    "engine": "TEI",
+    "weightFormat": "safetensors",
+    "status": "documented-route",
+    "userSummaryFa": "سرویس embedding روی CPU یا GPU با image متناسب معماری",
+    "sourceIds": [
+      "tei-models"
+    ],
+    "engineVersion": "1.9.3",
+    "task": "embedding"
+  },
+  {
+    "id": "compatibility:qwen-reranker-4b-transformers",
+    "modelScope": "Qwen/Qwen3-Reranker-4B",
+    "engine": "Transformers",
+    "weightFormat": "safetensors",
+    "status": "documented-route",
+    "userSummaryFa": "امتیازدهی query/document با دستور و قالب مخصوص reranker",
+    "sourceIds": [
+      "qwen-reranker"
+    ],
+    "task": "reranking"
+  },
+  {
+    "id": "compatibility:qwen-embedding-8b-tei",
+    "modelScope": "Qwen/Qwen3-Embedding-8B",
+    "engine": "TEI",
+    "weightFormat": "safetensors",
+    "status": "documented-route",
+    "userSummaryFa": "سرویس embedding روی CPU یا GPU با image متناسب معماری",
+    "sourceIds": [
+      "tei-models"
+    ],
+    "engineVersion": "1.9.3",
+    "task": "embedding"
+  },
+  {
+    "id": "compatibility:qwen-reranker-8b-transformers",
+    "modelScope": "Qwen/Qwen3-Reranker-8B",
+    "engine": "Transformers",
+    "weightFormat": "safetensors",
+    "status": "documented-route",
+    "userSummaryFa": "امتیازدهی query/document با دستور و قالب مخصوص reranker",
+    "sourceIds": [
+      "qwen-reranker"
+    ],
+    "task": "reranking"
+  },
+  {
+    "id": "compatibility:gpustack-qwen14-h100-1",
+    "modelScope": "Qwen/Qwen3-14B",
+    "engine": "vLLM",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ],
+    "engineVersion": "0.11.0",
+    "performanceId": "performance:gpustack-qwen14-h100-1",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen14-h100-2",
+    "modelScope": "Qwen/Qwen3-14B",
+    "engine": "SGLang",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ],
+    "engineVersion": "0.5.5.post1",
+    "performanceId": "performance:gpustack-qwen14-h100-2",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen14-h100-3",
+    "modelScope": "Qwen/Qwen3-14B",
+    "engine": "TensorRT-LLM",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ],
+    "engineVersion": "1.2.0rc1",
+    "performanceId": "performance:gpustack-qwen14-h100-3",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen14-h100-4",
+    "modelScope": "Qwen/Qwen3-14B",
+    "engine": "SGLang",
+    "weightFormat": "FP8",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ],
+    "engineVersion": "0.5.5.post1",
+    "performanceId": "performance:gpustack-qwen14-h100-4",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen32-h100-1",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "vLLM",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ],
+    "engineVersion": "0.11.0",
+    "performanceId": "performance:gpustack-qwen32-h100-1",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen32-h100-2",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "SGLang",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ],
+    "engineVersion": "0.5.5.post1",
+    "performanceId": "performance:gpustack-qwen32-h100-2",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen32-h100-3",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "TensorRT-LLM",
+    "weightFormat": "publisher checkpoint default (BF16)",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ],
+    "engineVersion": "1.2.0rc1",
+    "performanceId": "performance:gpustack-qwen32-h100-3",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-qwen32-h100-5",
+    "modelScope": "Qwen/Qwen3-32B",
+    "engine": "TensorRT-LLM",
+    "weightFormat": "FP8",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 1 × H100 SXM 80GB",
+    "sourceIds": [
+      "gpustack-qwen32-h100"
+    ],
+    "engineVersion": "1.2.0rc1",
+    "performanceId": "performance:gpustack-qwen32-h100-5",
+    "hardwareLabel": "H100 SXM 80GB",
+    "gpuCount": 1
+  },
+  {
+    "id": "compatibility:gpustack-deepseek-h200-1",
+    "modelScope": "deepseek-ai/DeepSeek-V3.2",
+    "engine": "vLLM",
+    "weightFormat": "publisher checkpoint default; FP8/mixed",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 8 × H200 SXM 141GB",
+    "sourceIds": [
+      "gpustack-deepseek-h200"
+    ],
+    "engineVersion": "0.13.0",
+    "performanceId": "performance:gpustack-deepseek-h200-1",
+    "hardwareLabel": "H200 SXM 141GB",
+    "gpuCount": 8
+  },
+  {
+    "id": "compatibility:gpustack-deepseek-h200-2",
+    "modelScope": "deepseek-ai/DeepSeek-V3.2",
+    "engine": "SGLang",
+    "weightFormat": "publisher checkpoint default; FP8/mixed",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 8 × H200 SXM 141GB",
+    "sourceIds": [
+      "gpustack-deepseek-h200"
+    ],
+    "engineVersion": "0.5.6.post2",
+    "performanceId": "performance:gpustack-deepseek-h200-2",
+    "hardwareLabel": "H200 SXM 141GB",
+    "gpuCount": 8
+  },
+  {
+    "id": "compatibility:gpustack-deepseek-h200-9",
+    "modelScope": "deepseek-ai/DeepSeek-V3.2",
+    "engine": "SGLang",
+    "weightFormat": "publisher checkpoint default; FP8/mixed",
+    "status": "published-run",
+    "userSummaryFa": "اجرای گزارش‌شده روی 8 × H200 SXM 141GB",
+    "sourceIds": [
+      "gpustack-deepseek-h200"
+    ],
+    "engineVersion": "0.5.6.post2",
+    "performanceId": "performance:gpustack-deepseek-h200-9",
+    "hardwareLabel": "H200 SXM 141GB",
+    "gpuCount": 8
+  }
+]

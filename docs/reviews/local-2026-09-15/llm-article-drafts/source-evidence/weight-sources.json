@@ -1,0 +1,200 @@
+[
+  {
+    "model": "Qwen3-4B",
+    "modelRepositoryUrl": "https://huggingface.co/Qwen/Qwen3-4B",
+    "weightPublisher": "Qwen",
+    "authority": "official",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+    "filesUrl": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/tree/bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "files": [
+      {
+        "path": "Qwen3-4B-Q4_K_M.gguf",
+        "bytes": 2497280256,
+        "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 2497280256,
+    "totalGiB": 2.3257734775543213,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "modelRepositoryUrl": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+    "weightPublisher": "bartowski",
+    "authority": "third-party",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+    "filesUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/tree/bf5b95e96dac0462e2a09145ec66cae9a3f12067",
+    "revision": "bf5b95e96dac0462e2a09145ec66cae9a3f12067",
+    "files": [
+      {
+        "path": "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+        "bytes": 4920739232,
+        "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/bf5b95e96dac0462e2a09145ec66cae9a3f12067/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 4920739232,
+    "totalGiB": 4.5827955305576324,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "aya-expanse-8b",
+    "modelRepositoryUrl": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+    "weightPublisher": "bartowski",
+    "authority": "third-party",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF",
+    "filesUrl": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF/tree/f9d62ed0c58e6f2ae17975df990b1b8a4013b596",
+    "revision": "f9d62ed0c58e6f2ae17975df990b1b8a4013b596",
+    "files": [
+      {
+        "path": "aya-expanse-8b-Q4_K_M.gguf",
+        "bytes": 5056982720,
+        "url": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF/resolve/f9d62ed0c58e6f2ae17975df990b1b8a4013b596/aya-expanse-8b-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 5056982720,
+    "totalGiB": 4.7096821665763855,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "Qwen3-14B",
+    "modelRepositoryUrl": "https://huggingface.co/Qwen/Qwen3-14B",
+    "weightPublisher": "Qwen",
+    "authority": "official",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-14B-GGUF",
+    "filesUrl": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/tree/530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "revision": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "files": [
+      {
+        "path": "Qwen3-14B-Q4_K_M.gguf",
+        "bytes": 9001752960,
+        "url": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/530227a7d994db8eca5ab5ced2fb692b614357fd/Qwen3-14B-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 9001752960,
+    "totalGiB": 8.383535742759705,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "DeepSeek-R1-Distill-Qwen-14B",
+    "modelRepositoryUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "weightPublisher": "bartowski",
+    "authority": "third-party",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF",
+    "filesUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/tree/9f5d77d401799416e0702290a691038b44012e0c",
+    "revision": "9f5d77d401799416e0702290a691038b44012e0c",
+    "files": [
+      {
+        "path": "DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf",
+        "bytes": 8988110240,
+        "url": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/resolve/9f5d77d401799416e0702290a691038b44012e0c/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 8988110240,
+    "totalGiB": 8.370829969644547,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "Qwen3-Coder-30B-A3B-Instruct",
+    "modelRepositoryUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "weightPublisher": "unsloth",
+    "authority": "third-party",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "filesUrl": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/tree/b17cb02dd882d5b6ab62fc777ad2995f19668350",
+    "revision": "b17cb02dd882d5b6ab62fc777ad2995f19668350",
+    "files": [
+      {
+        "path": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "bytes": 18556689568,
+        "url": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/b17cb02dd882d5b6ab62fc777ad2995f19668350/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 18556689568,
+    "totalGiB": 17.282263904809952,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "Qwen3-32B",
+    "modelRepositoryUrl": "https://huggingface.co/Qwen/Qwen3-32B",
+    "weightPublisher": "Qwen",
+    "authority": "official",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-32B-GGUF",
+    "filesUrl": "https://huggingface.co/Qwen/Qwen3-32B-GGUF/tree/938a7432affaec9157f883a87164e2646ae17555",
+    "revision": "938a7432affaec9157f883a87164e2646ae17555",
+    "files": [
+      {
+        "path": "Qwen3-32B-Q4_K_M.gguf",
+        "bytes": 19762149024,
+        "url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF/resolve/938a7432affaec9157f883a87164e2646ae17555/Qwen3-32B-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 19762149024,
+    "totalGiB": 18.404935508966446,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "Llama-3.1-70B-Instruct",
+    "modelRepositoryUrl": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+    "weightPublisher": "bartowski",
+    "authority": "third-party",
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "repositoryUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF",
+    "filesUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/tree/83fb6e83d0a8aada42d499259bc929d922e9a558",
+    "revision": "83fb6e83d0a8aada42d499259bc929d922e9a558",
+    "files": [
+      {
+        "path": "Meta-Llama-3.1-70B-Instruct-Q4_K_M.gguf",
+        "bytes": 42520398400,
+        "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/resolve/83fb6e83d0a8aada42d499259bc929d922e9a558/Meta-Llama-3.1-70B-Instruct-Q4_K_M.gguf"
+      }
+    ],
+    "totalBytes": 42520398400,
+    "totalGiB": 39.60020691156387,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  },
+  {
+    "model": "gpt-oss-20b",
+    "modelRepositoryUrl": "https://huggingface.co/openai/gpt-oss-20b",
+    "weightPublisher": "bartowski",
+    "authority": "third-party",
+    "format": "gguf",
+    "quantization": "MXFP4",
+    "repositoryUrl": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+    "filesUrl": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF/tree/e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+    "revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+    "files": [
+      {
+        "path": "openai_gpt-oss-20b-MXFP4.gguf",
+        "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF/resolve/e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205/openai_gpt-oss-20b-MXFP4.gguf",
+        "bytes": 12109565760
+      }
+    ],
+    "totalBytes": 12109565760,
+    "totalGiB": 11.277911961078644,
+    "accessedOn": "2026-09-15",
+    "scope": "Selected weight-file size, not observed inference memory."
+  }
+]

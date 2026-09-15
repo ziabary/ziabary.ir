@@ -1,0 +1,1179 @@
+[
+  {
+    "modelId": "model:baai-bge-m3",
+    "repositoryRevision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "configuredMaxPositionEmbeddings": 8194,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "xlm-roberta",
+    "storedTensorElementCounts": {},
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:baai-bge-m3-metadata",
+      "evidence:baai-bge-m3-config"
+    ]
+  },
+  {
+    "modelId": "model:baai-bge-reranker-v2-m3",
+    "repositoryRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "configuredMaxPositionEmbeddings": 8194,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "xlm-roberta",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "F32": 567755777
+      },
+      "total": 567755777
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:baai-bge-reranker-v2-m3-metadata",
+      "evidence:baai-bge-reranker-v2-m3-config"
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-32b",
+    "repositoryRevision": "b306ea27e360683b50c005d7fcbad6a242317910",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "F16": 32296476672
+      },
+      "total": 32296476672
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-32b-metadata"
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-aya-expanse-8b",
+    "repositoryRevision": "5062468bf9bc0c6035fd64e06274333ec127d980",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "F16": 8028033024
+      },
+      "total": 8028033024
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-8b-metadata"
+    ]
+  },
+  {
+    "modelId": "model:coherelabs-tiny-aya-global",
+    "repositoryRevision": "00590ff258ccd84a805f13efcd1c34c2a542654f",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 3349227520
+      },
+      "total": 3349227520
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:coherelabs-tiny-aya-global-metadata"
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "repositoryRevision": "31b70e2e869a7173562077fd711b654946d38674",
+    "configuredMaxPositionEmbeddings": 8192,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "llama",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 1711376384
+      },
+      "total": 1711376384
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-1-7b-instruct-metadata",
+      "evidence:huggingfacetb-smollm2-1-7b-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-135m-instruct",
+    "repositoryRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "configuredMaxPositionEmbeddings": 8192,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "llama",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 134515008
+      },
+      "total": 134515008
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-135m-instruct-metadata",
+      "evidence:huggingfacetb-smollm2-135m-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm2-360m-instruct",
+    "repositoryRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "configuredMaxPositionEmbeddings": 8192,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "llama",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 361821120
+      },
+      "total": 361821120
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-360m-instruct-metadata",
+      "evidence:huggingfacetb-smollm2-360m-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:huggingfacetb-smollm3-3b",
+    "repositoryRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "configuredMaxPositionEmbeddings": 65536,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "smollm3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 3075098624
+      },
+      "total": 3075098624
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm3-3b-metadata",
+      "evidence:huggingfacetb-smollm3-3b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-0-6b",
+    "repositoryRevision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 751632384
+      },
+      "total": 751632384
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-0-6b-metadata",
+      "evidence:qwen-qwen3-0-6b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-1-7b",
+    "repositoryRevision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 2031739904
+      },
+      "total": 2031739904
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-1-7b-metadata",
+      "evidence:qwen-qwen3-1-7b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-14b",
+    "repositoryRevision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 14768307200
+      },
+      "total": 14768307200
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-14b-metadata",
+      "evidence:qwen-qwen3-14b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-30b-a3b",
+    "repositoryRevision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_moe",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 30532122624
+      },
+      "total": 30532122624
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-30b-a3b-metadata",
+      "evidence:qwen-qwen3-30b-a3b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-32b",
+    "repositoryRevision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 32762123264
+      },
+      "total": 32762123264
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-32b-metadata",
+      "evidence:qwen-qwen3-32b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-4b",
+    "repositoryRevision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 4022468096
+      },
+      "total": 4022468096
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-4b-metadata",
+      "evidence:qwen-qwen3-4b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-8b",
+    "repositoryRevision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 8190735360
+      },
+      "total": 8190735360
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8b-metadata",
+      "evidence:qwen-qwen3-8b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "repositoryRevision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_moe",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 30532122624
+      },
+      "total": 30532122624
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-coder-30b-a3b-instruct-metadata",
+      "evidence:qwen-qwen3-coder-30b-a3b-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-0-6b",
+    "repositoryRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "configuredMaxPositionEmbeddings": 32768,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 595776512
+      },
+      "total": 595776512
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-0-6b-metadata",
+      "evidence:qwen-qwen3-embedding-0-6b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-4b",
+    "repositoryRevision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 4021774336
+      },
+      "total": 4021774336
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-4b-metadata",
+      "evidence:qwen-qwen3-embedding-4b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-embedding-8b",
+    "repositoryRevision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 7567295488
+      },
+      "total": 7567295488
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-embedding-8b-metadata",
+      "evidence:qwen-qwen3-embedding-8b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-0-6b",
+    "repositoryRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 595776512
+      },
+      "total": 595776512
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-0-6b-metadata",
+      "evidence:qwen-qwen3-reranker-0-6b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-4b",
+    "repositoryRevision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 4021784576
+      },
+      "total": 4021784576
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-4b-metadata",
+      "evidence:qwen-qwen3-reranker-4b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-reranker-8b",
+    "repositoryRevision": "77d193c791ed757ca307ee72715aa132723da912",
+    "configuredMaxPositionEmbeddings": 40960,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 8188548096
+      },
+      "total": 8188548096
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-reranker-8b-metadata",
+      "evidence:qwen-qwen3-reranker-8b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-vl-8b-instruct",
+    "repositoryRevision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_vl_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 8767123696
+      },
+      "total": 8767123696
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-vl-8b-instruct-metadata",
+      "evidence:qwen-qwen3-vl-8b-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-5-2b",
+    "repositoryRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_5_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "F32": 2592,
+        "BF16": 2274067232
+      },
+      "total": 2274069824
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-5-2b-metadata",
+      "evidence:qwen-qwen3-5-2b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-5-35b-a3b",
+    "repositoryRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_5_moe_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 35951817904,
+        "F32": 4800
+      },
+      "total": 35951822704
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-5-35b-a3b-metadata",
+      "evidence:qwen-qwen3-5-35b-a3b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-5-4b",
+    "repositoryRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_5_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 4659861248,
+        "F32": 3840
+      },
+      "total": 4659865088
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-5-4b-metadata",
+      "evidence:qwen-qwen3-5-4b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-5-9b",
+    "repositoryRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_5_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 9653100528,
+        "F32": 3840
+      },
+      "total": 9653104368
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-5-9b-metadata",
+      "evidence:qwen-qwen3-5-9b-config"
+    ]
+  },
+  {
+    "modelId": "model:qwen-qwen3-8-27b",
+    "repositoryRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3_5_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 27781427952
+      },
+      "total": 27781427952
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8-27b-metadata",
+      "evidence:qwen-qwen3-8-27b-config"
+    ]
+  },
+  {
+    "modelId": "model:allenai-olmo-3-7b-instruct",
+    "repositoryRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "configuredMaxPositionEmbeddings": 65536,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "olmo3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 7298011136
+      },
+      "total": 7298011136
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:allenai-olmo-3-7b-instruct-metadata",
+      "evidence:allenai-olmo-3-7b-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "repositoryRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 8190735360
+      },
+      "total": 8190735360
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-metadata",
+      "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "repositoryRevision": "b1c0b44b4369b597ad119a196caf79a9c40e141e",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "llama",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 70553706496
+      },
+      "total": 70553706496
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-metadata",
+      "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "repositoryRevision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen2",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 1777088000
+      },
+      "total": 1777088000
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-metadata",
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "repositoryRevision": "1df8507178afcc1bef68cd8c393f61a886323761",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen2",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 14770033664
+      },
+      "total": 14770033664
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-metadata",
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "repositoryRevision": "711ad2ea6aa40cfca18895e8aca02ab92df1a746",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen2",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 32763876352
+      },
+      "total": 32763876352
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-metadata",
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "repositoryRevision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "qwen2",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 7615616512
+      },
+      "total": 7615616512
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-metadata",
+      "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-v3-2",
+    "repositoryRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+    "configuredMaxPositionEmbeddings": 163840,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "deepseek_v32",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 3946184704,
+        "F8_E4M3": 681408069632,
+        "F32": 42667040
+      },
+      "total": 685396921376
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": {
+      "activation_scheme": "dynamic",
+      "fmt": "e4m3",
+      "quant_method": "fp8",
+      "scale_fmt": "ue8m0",
+      "weight_block_size": [
+        128,
+        128
+      ]
+    },
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-v3-2-metadata",
+      "evidence:deepseek-ai-deepseek-v3-2-config"
+    ]
+  },
+  {
+    "modelId": "model:deepseek-ai-deepseek-v4-1-flash",
+    "repositoryRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "configuredMaxPositionEmbeddings": 1048576,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "deepseek_v41_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 1976441856,
+        "F32": 42307282,
+        "F8_E4M3": 204015223296,
+        "I8": 557171343360
+      },
+      "total": 763205315794
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": {
+      "quant_method": "fp8",
+      "activation_scheme": "dynamic",
+      "weight_block_size": [
+        32,
+        32
+      ],
+      "scale_fmt": "ue8m0",
+      "expert_dtype": "fp4"
+    },
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-v4-1-flash-metadata",
+      "evidence:deepseek-ai-deepseek-v4-1-flash-config"
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-12b-it",
+    "repositoryRevision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 12187325040
+      },
+      "total": 12187325040
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:google-gemma-3-12b-it-metadata"
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-1b-it",
+    "repositoryRevision": "dcc83ea841ab6100d6b47a070329e1ba4cf78752",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 999885952
+      },
+      "total": 999885952
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:google-gemma-3-1b-it-metadata"
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-27b-it",
+    "repositoryRevision": "005ad3404e59d6023443cb575daa05336842228a",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 27432406640
+      },
+      "total": 27432406640
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:google-gemma-3-27b-it-metadata"
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-3-4b-it",
+    "repositoryRevision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 4300079472
+      },
+      "total": 4300079472
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:google-gemma-3-4b-it-metadata"
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-4-26b-a4b-it",
+    "repositoryRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "gemma4_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 25805936206
+      },
+      "total": 25805936206
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:google-gemma-4-26b-a4b-it-metadata",
+      "evidence:google-gemma-4-26b-a4b-it-config"
+    ]
+  },
+  {
+    "modelId": "model:google-gemma-4-e2b-it",
+    "repositoryRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "gemma4_text",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 5123178051
+      },
+      "total": 5123178051
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:google-gemma-4-e2b-it-metadata",
+      "evidence:google-gemma-4-e2b-it-config"
+    ]
+  },
+  {
+    "modelId": "model:ibm-granite-granite-3-3-2b-instruct",
+    "repositoryRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "granite",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 2533539840
+      },
+      "total": 2533539840
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:ibm-granite-granite-3-3-2b-instruct-metadata",
+      "evidence:ibm-granite-granite-3-3-2b-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:intfloat-multilingual-e5-small",
+    "repositoryRevision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "configuredMaxPositionEmbeddings": 512,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "bert",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "I64": 512,
+        "F32": 117653760
+      },
+      "total": 117654272
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:intfloat-multilingual-e5-small-metadata",
+      "evidence:intfloat-multilingual-e5-small-config"
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-70b-instruct",
+    "repositoryRevision": "1605565b47bb9346c5515c34102e054115b4f98b",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 70553706496
+      },
+      "total": 70553706496
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-70b-instruct-metadata"
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-1-8b-instruct",
+    "repositoryRevision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 8030261248
+      },
+      "total": 8030261248
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-8b-instruct-metadata"
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-1b-instruct",
+    "repositoryRevision": "9213176726f574b556790deb65791e0c5aa438b6",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 1235814400
+      },
+      "total": 1235814400
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-1b-instruct-metadata"
+    ]
+  },
+  {
+    "modelId": "model:meta-llama-llama-3-2-3b-instruct",
+    "repositoryRevision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "configuredMaxPositionEmbeddings": null,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": null,
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 3212749824
+      },
+      "total": 3212749824
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-2-3b-instruct-metadata"
+    ]
+  },
+  {
+    "modelId": "model:microsoft-phi-4-mini-instruct",
+    "repositoryRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "phi3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 3836021760
+      },
+      "total": 3836021760
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:microsoft-phi-4-mini-instruct-metadata",
+      "evidence:microsoft-phi-4-mini-instruct-config"
+    ]
+  },
+  {
+    "modelId": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "repositoryRevision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+    "configuredMaxPositionEmbeddings": 393216,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "ministral3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 1781550080,
+        "F8_E4M3": 22229811200
+      },
+      "total": 24011361840
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": {
+      "activation_scheme": "static",
+      "dequantize": false,
+      "modules_to_not_convert": [
+        "model.vision_tower",
+        "model.multi_modal_projector",
+        "lm_head"
+      ],
+      "quant_method": "fp8",
+      "weight_block_size": null
+    },
+    "evidenceIds": [
+      "evidence:mistralai-devstral-small-2-24b-instruct-2512-metadata",
+      "evidence:mistralai-devstral-small-2-24b-instruct-2512-config"
+    ]
+  },
+  {
+    "modelId": "model:mistralai-ministral-3-3b-instruct-2512",
+    "repositoryRevision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+    "configuredMaxPositionEmbeddings": 262144,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "ministral3",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 822899712,
+        "F8_E4M3": 3026190336
+      },
+      "total": 3849090048
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": {
+      "activation_scheme": "static",
+      "dequantize": false,
+      "modules_to_not_convert": [
+        "model.vision_tower",
+        "model.multi_modal_projector",
+        "lm_head",
+        "model.vision_tower",
+        "model.multi_modal_projector",
+        "lm_head"
+      ],
+      "quant_method": "fp8",
+      "weight_block_size": null
+    },
+    "evidenceIds": [
+      "evidence:mistralai-ministral-3-3b-instruct-2512-metadata",
+      "evidence:mistralai-ministral-3-3b-instruct-2512-config"
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-7b-instruct-v0-3",
+    "repositoryRevision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "configuredMaxPositionEmbeddings": 32768,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "mistral",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 7248023552
+      },
+      "total": 7248023552
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:mistralai-mistral-7b-instruct-v0-3-metadata",
+      "evidence:mistralai-mistral-7b-instruct-v0-3-config"
+    ]
+  },
+  {
+    "modelId": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "repositoryRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "mistral",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 24011361280
+      },
+      "total": 24011361280
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:mistralai-mistral-small-3-1-24b-instruct-2503-metadata",
+      "evidence:mistralai-mistral-small-3-1-24b-instruct-2503-config"
+    ]
+  },
+  {
+    "modelId": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "repositoryRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "nemotron_h",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 8888227328
+      },
+      "total": 8888227328
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:nvidia-nvidia-nemotron-nano-9b-v2-metadata",
+      "evidence:nvidia-nvidia-nemotron-nano-9b-v2-config"
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-120b",
+    "repositoryRevision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "gpt_oss",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 2167371072,
+        "U8": 114661785600
+      },
+      "total": 116829156672
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": {
+      "modules_to_not_convert": [
+        "model.layers.*.self_attn",
+        "model.layers.*.mlp.router",
+        "model.embed_tokens",
+        "lm_head"
+      ],
+      "quant_method": "mxfp4"
+    },
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-120b-metadata",
+      "evidence:openai-gpt-oss-120b-config"
+    ]
+  },
+  {
+    "modelId": "model:openai-gpt-oss-20b",
+    "repositoryRevision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+    "configuredMaxPositionEmbeddings": 131072,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "gpt_oss",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 1804459584,
+        "U8": 19110297600
+      },
+      "total": 20914757184
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": {
+      "modules_to_not_convert": [
+        "model.layers.*.self_attn",
+        "model.layers.*.mlp.router",
+        "model.embed_tokens",
+        "lm_head"
+      ],
+      "quant_method": "mxfp4"
+    },
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-20b-metadata",
+      "evidence:openai-gpt-oss-20b-config"
+    ]
+  },
+  {
+    "modelId": "model:zai-org-glm-4-7-flash",
+    "repositoryRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+    "configuredMaxPositionEmbeddings": 202752,
+    "contextMeaning": "Configuration value only; may include offsets/reserved positions or differ from native, usable, input and evaluated context.",
+    "textModelType": "glm4_moe_lite",
+    "storedTensorElementCounts": {
+      "parameters": {
+        "BF16": 31221485568,
+        "F32": 3008
+      },
+      "total": 31221488576
+    },
+    "storedCountMeaning": "Serialized elements, possibly duplicate weights, quantization scales, buffers and auxiliary heads; not a logical parameter total.",
+    "quantizationConfig": null,
+    "evidenceIds": [
+      "evidence:zai-org-glm-4-7-flash-metadata",
+      "evidence:zai-org-glm-4-7-flash-config"
+    ]
+  }
+]

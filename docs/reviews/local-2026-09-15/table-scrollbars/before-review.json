@@ -1,0 +1,106 @@
+{
+  "phase": "before",
+  "cases": [
+    {
+      "name": "llm-dark",
+      "direction": "rtl",
+      "color": "rgba(0, 0, 0, 0)",
+      "track": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "width": "auto",
+      "height": "auto",
+      "scrollWidth": 1174,
+      "clientWidth": 1001,
+      "scrollHeight": 13279,
+      "clientHeight": 708,
+      "overflow": false
+    },
+    {
+      "name": "llm-light",
+      "direction": "rtl",
+      "color": "rgba(0, 0, 0, 0)",
+      "track": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "width": "auto",
+      "height": "auto",
+      "scrollWidth": 1174,
+      "clientWidth": 1011,
+      "scrollHeight": 13279,
+      "clientHeight": 718,
+      "overflow": false
+    },
+    {
+      "name": "gpu-dark",
+      "direction": "rtl",
+      "color": "rgba(0, 0, 0, 0)",
+      "track": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "width": "auto",
+      "height": "auto",
+      "scrollWidth": 1292,
+      "clientWidth": 1001,
+      "scrollHeight": 6047,
+      "clientHeight": 768,
+      "overflow": false
+    },
+    {
+      "name": "server-dark",
+      "direction": "rtl",
+      "color": "rgba(0, 0, 0, 0)",
+      "track": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "width": "auto",
+      "height": "auto",
+      "scrollWidth": 1545,
+      "clientWidth": 1001,
+      "scrollHeight": 2108,
+      "clientHeight": 768,
+      "overflow": false
+    },
+    {
+      "name": "gpu-light",
+      "direction": "rtl",
+      "color": "rgba(0, 0, 0, 0)",
+      "track": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "width": "auto",
+      "height": "auto",
+      "scrollWidth": 1292,
+      "clientWidth": 1011,
+      "scrollHeight": 6047,
+      "clientHeight": 778,
+      "overflow": false
+    },
+    {
+      "name": "server-light",
+      "direction": "rtl",
+      "color": "rgba(0, 0, 0, 0)",
+      "track": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "width": "auto",
+      "height": "auto",
+      "scrollWidth": 1545,
+      "clientWidth": 1011,
+      "scrollHeight": 2108,
+      "clientHeight": 778,
+      "overflow": false
+    }
+  ],
+  "screenshots": [
+    "before-llm-dark.png",
+    "before-llm-light.png",
+    "before-gpu-dark.png",
+    "before-gpu-light.png"
+  ],
+  "guideTables": [
+    {
+      "label": "جدول مقایسه GPU؛ افقی پیمایش کنید",
+      "radius": "0px"
+    },
+    {
+      "label": "جدول سرورهای GPU",
+      "radius": "0px"
+    }
+  ],
+  "runtimeErrors": []
+}

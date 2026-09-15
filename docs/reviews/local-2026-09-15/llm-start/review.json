@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "five start paths retain valid view, preset, target and draft parameters",
+    "single start box replaces stats; desktop beside cover and mobile below",
+    "keyboard opens mobile paths; no overflow at 1600, 390 or 320 pixels"
+  ],
+  "layouts": [
+    {
+      "width": 1600,
+      "sameRow": true,
+      "below": false,
+      "overflow": false,
+      "oldBox": false,
+      "headings": 1
+    },
+    {
+      "width": 390,
+      "sameRow": false,
+      "below": true,
+      "overflow": false,
+      "oldBox": false,
+      "headings": 1
+    },
+    {
+      "width": 320,
+      "sameRow": false,
+      "below": true,
+      "overflow": false,
+      "oldBox": false,
+      "headings": 1
+    }
+  ],
+  "runtimeErrors": 0
+}

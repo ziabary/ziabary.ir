@@ -1,0 +1,158 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": {
+    "qwen": [
+      "\tمنابع و جزئیات\tQwen3-Embedding-0.6B\tبازیابی معنایی و ساخت بردار متن\t≈۰٫۶B\t۳۲K توکن\tبردار متراکم؛ ۱۰۲۴ بُعد پیش‌فرض / حداکثر\tابعاد قابل تنظیم؛ دستورپذیر؛ بازیابی متن و کد\tMTEB Multilingual · Mean (Task): ۶۴٫۳۳\nگزارش ناشر: Qwen\nچندزبانه؛ امتیاز فارسی نیست",
+      "\tمنابع و جزئیات\tQwen3-Embedding-4B\tبازیابی معنایی و ساخت بردار متن\t≈۴B\t۳۲K توکن\tبردار متراکم؛ ۲۵۶۰ بُعد پیش‌فرض / حداکثر\tابعاد قابل تنظیم؛ دستورپذیر؛ بازیابی متن و کد\tMTEB Multilingual · Mean (Task): ۶۹٫۴۵\nگزارش ناشر: Qwen\nچندزبانه؛ امتیاز فارسی نیست",
+      "\tمنابع و جزئیات\tQwen3-Embedding-8B\tبازیابی معنایی و ساخت بردار متن\t≈۸B\t۳۲K توکن\tبردار متراکم؛ ۴۰۹۶ بُعد پیش‌فرض / حداکثر\tابعاد قابل تنظیم؛ دستورپذیر؛ بازیابی متن و کد\tMTEB Multilingual · Mean (Task): ۷۰٫۵۸\nگزارش ناشر: Qwen\nچندزبانه؛ امتیاز فارسی نیست"
+    ],
+    "copiedRevision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "noRuntimeErrors": true
+  },
+  "views": {
+    "model-catalog": {
+      "rows": 59,
+      "headers": [
+        "مقایسه",
+        "جزئیات",
+        "مدل ↕",
+        "خانواده / ناشر ↕",
+        "اندازه و معماری ↕",
+        "ورودی ← خروجی",
+        "پنجرهٔ زمینه ↕",
+        "کاربردهای شاخص",
+        "مجوز ↕"
+      ],
+      "bodyOverflow": false,
+      "tableWidth": 1161
+    },
+    "model-suitability": {
+      "rows": 59,
+      "headers": [
+        "مقایسه",
+        "جزئیات",
+        "مدل ↕",
+        "گفت‌وگو و کار با متن",
+        "دستیار دانش سازمانی و RAG",
+        "استخراج اطلاعات و خروجی ساخت‌یافته",
+        "دستیار برنامه‌نویسی",
+        "عامل و استفاده از ابزار",
+        "استدلال و تحلیل",
+        "فهم سند و ورودی تصویری"
+      ],
+      "bodyOverflow": false,
+      "tableWidth": 1161
+    },
+    "software-products": {
+      "rows": 13,
+      "headers": [
+        "مقایسه",
+        "جزئیات",
+        "نام و نسخه ↕",
+        "نقش ↕",
+        "سناریوی هدف مستند",
+        "قابلیت‌های شاخص",
+        "پلتفرم",
+        "وضعیت توسعه ↕"
+      ],
+      "bodyOverflow": false,
+      "tableWidth": 1161
+    },
+    "specialized-models": {
+      "rows": 9,
+      "headers": [
+        "مقایسه",
+        "جزئیات",
+        "مدل ↕",
+        "وظیفهٔ دقیق",
+        "اندازه ↕",
+        "سقف ورودی ↕",
+        "نوع / ابعاد خروجی",
+        "ویژگی کاربردی",
+        "نتیجهٔ منتشرشدهٔ منتخب"
+      ],
+      "bodyOverflow": false,
+      "tableWidth": 1161
+    }
+  },
+  "gate": [
+    {
+      "query": "",
+      "views": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "query": "?show-drafts=false",
+      "views": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "query": "?show-drafts=1",
+      "views": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "query": "?show-drafts=TRUE",
+      "views": 0,
+      "robots": "noindex,follow"
+    }
+  ],
+  "mobile": [
+    {
+      "view": "model-catalog",
+      "theme": "light",
+      "body": 375,
+      "viewport": 390,
+      "table": 1000
+    },
+    {
+      "view": "model-suitability",
+      "theme": "light",
+      "body": 375,
+      "viewport": 390,
+      "table": 1280
+    },
+    {
+      "view": "software-products",
+      "theme": "light",
+      "body": 375,
+      "viewport": 390,
+      "table": 1000
+    },
+    {
+      "view": "specialized-models",
+      "theme": "light",
+      "body": 375,
+      "viewport": 390,
+      "table": 1140
+    },
+    {
+      "view": "model-catalog",
+      "theme": "dark",
+      "body": 375,
+      "viewport": 390,
+      "table": 1000
+    },
+    {
+      "view": "model-suitability",
+      "theme": "dark",
+      "body": 375,
+      "viewport": 390,
+      "table": 1280
+    },
+    {
+      "view": "software-products",
+      "theme": "dark",
+      "body": 375,
+      "viewport": 390,
+      "table": 1000
+    },
+    {
+      "view": "specialized-models",
+      "theme": "dark",
+      "body": 375,
+      "viewport": 390,
+      "table": 1140
+    }
+  ]
+}

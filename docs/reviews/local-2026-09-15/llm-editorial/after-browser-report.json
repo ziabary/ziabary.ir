@@ -1,0 +1,22 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "phase": "after",
+  "checks": [
+    "Qwen run command and external engine links retained; common memory condition appears once with engine scope.",
+    "All six profile panels reviewed for BGE-M3, Jina v3, Kimi K2.5 and Aya 8B; no filler, empty paragraphs/lists or broken external-link targets.",
+    "390px mobile layout, dark/light themes and local model logos pass; no document or dialog overflow.",
+    "No browser runtime exceptions."
+  ],
+  "screenshots": [
+    "after-desktop-qwen-run.png",
+    "after-desktop-qwen-overview.png",
+    "after-desktop-bge-downloads.png",
+    "after-desktop-bge-overview.png",
+    "after-desktop-bge-quality.png",
+    "after-desktop-kimi-overview.png",
+    "after-mobile-qwen-run.png",
+    "after-mobile-qwen-run-light.png",
+    "after-mobile-bge-overview.png"
+  ],
+  "qwenRunText": "مسیرهای راه‌اندازی\nراهنمای اجرای Qwen3-8B\n\nوابستگی‌ها: torch، accelerate و Transformers.\n\nبرای شروع محلی، فایل‌های رسمی Q4_K_M و Q8_0 موجودند؛ کیفیت یا حافظهٔ اجرای آن‌ها در این راهنما اندازه‌گیری نشده است.\nTransformers نسخهٔ ۴٫۵۱ یا بالاتر لازم است.\nکپی فرمان\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nmodel_id = \"Qwen/Qwen3-8B\"\ntokenizer = AutoTokenizer.from_pretrained(model_id)\nmodel = AutoModelForCausalLM.from_pretrained(model_id, device_map=\"auto\", torch_dtype=\"auto\")\nmessages = [{\"role\": \"user\", \"content\": \"Explain a Python dictionary in two sentences.\"}]\ntext = tokenizer.apply_chat_template(messages, tokenize=False,\n    add_generation_prompt=True, enable_thinking=False)\ninputs = tokenizer(text, return_tensors=\"pt\").to(model.device)\noutput = model.generate(**inputs, max_new_tokens=128)\nprint(tokenizer.decode(output[0][inputs.input_ids.shape[1]:], skip_special_tokens=True))\nراهنمای Transformers ↗\nQwen3-8B — model card · گزارش ناشر\nراه‌اندازی با vLLM\nراهنمای vLLM ↗\nQwen/Qwen3-8B — model card · گزارش ناشر\nراه‌اندازی با SGLang\nراهنمای SGLang ↗\nQwen/Qwen3-8B — model card · گزارش ناشر\nراه‌اندازی با llama.cpp\nراهنمای llama.cpp ↗\nQwen/Qwen3-8B — model card · گزارش ناشر\nدریافت و اجرای بستهٔ Ollama\nکپی فرمان\nollama pull qwen3:8b-q4_K_M\nollama run qwen3:8b-q4_K_M\nراهنمای Ollama ↗\nqwen3:8b-q4_K_M — Ollama package · گزارش ناشر\n\nvLLM، SGLang، llama.cpp، Ollama\nطول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+}

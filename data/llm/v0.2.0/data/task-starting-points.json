@@ -1,0 +1,102 @@
+[
+  {
+    "id": "task:1",
+    "taskFa": "بازنویسی و خلاصهٔ کوتاه",
+    "startingModelRepository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "guidanceFa": "SLM روی CPU یا GPU کوچک؛ کیفیت بازنویسی را با OpenRewrite-Eval معرفی کنید.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "smollm2-quality"
+    ]
+  },
+  {
+    "id": "task:2",
+    "taskFa": "دستیار عمومی با هزینهٔ پایین",
+    "startingModelRepository": "HuggingFaceTB/SmolLM3-3B",
+    "guidanceFa": "دو حالت thinking و non-thinking را جدا انتخاب کنید؛ طول پاسخ بر هزینه اثر می‌گذارد.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "smollm3-quality"
+    ]
+  },
+  {
+    "id": "task:3",
+    "taskFa": "چت و RAG روی 4090",
+    "startingModelRepository": "Qwen/Qwen3-8B",
+    "guidanceFa": "مدل ۸B نقطهٔ شروع؛ Q4/Q8 و زمینهٔ ۸K در ماتریس حافظه قابل مقایسه‌اند.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "qwen-llamacpp"
+    ]
+  },
+  {
+    "id": "task:4",
+    "taskFa": "چت چندزبانه شامل فارسی",
+    "startingModelRepository": "CohereLabs/aya-expanse-8b",
+    "guidanceFa": "Aya Expanse فارسی را صریحاً پوشش می‌دهد؛ ۸B و ۳۲B را با نیاز کار مقایسه کنید.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "aya-languages"
+    ]
+  },
+  {
+    "id": "task:5",
+    "taskFa": "استدلال و حل مسئله",
+    "startingModelRepository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "guidanceFa": "مقایسهٔ ۷B، ۱۴B و ۳۲B در یک جدول ناشر؛ بودجهٔ توکن استدلال نیز بخشی از هزینه است.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "deepseek-quality"
+    ]
+  },
+  {
+    "id": "task:6",
+    "taskFa": "کدنویسی محدود و کمک به حل مسئله",
+    "startingModelRepository": "Qwen/Qwen3-4B",
+    "guidanceFa": "امتیاز LiveCodeBench v4 موجود است؛ برای مخزن بزرگ و عامل کدنویسی آزمون همان کاربرد را ملاک قرار دهید.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "smollm3-quality"
+    ]
+  },
+  {
+    "id": "task:7",
+    "taskFa": "بازیابی اسناد",
+    "startingModelRepository": "Qwen/Qwen3-Embedding-0.6B",
+    "guidanceFa": "مدل embedding کوچک با امتیاز مستند و بردار ۱۰۲۴بعدی؛ نیاز مستقلی از مولد متن دارد.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "qwen-embedding"
+    ]
+  },
+  {
+    "id": "task:8",
+    "taskFa": "بازچینی نتایج جست‌وجو",
+    "startingModelRepository": "Qwen/Qwen3-Reranker-0.6B",
+    "guidanceFa": "ابتدا تعداد محدودی سند بازیابی و سپس rerank شود؛ مولد ۳۰B برای خود این مرحله لازم نیست.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "qwen-reranker"
+    ]
+  },
+  {
+    "id": "task:9",
+    "taskFa": "سرویس هم‌زمان مدل ۱۴B",
+    "startingModelRepository": "Qwen/Qwen3-14B",
+    "guidanceFa": "benchهای vLLM، SGLang و TensorRT-LLM روی H100 موجود است؛ throughput و TTFT را کنار هم نشان دهید.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "gpustack-qwen14-h100"
+    ]
+  },
+  {
+    "id": "task:10",
+    "taskFa": "آزمایش مدل بزرگ با VRAM کم",
+    "startingModelRepository": "Qwen/Qwen3.8-27B",
+    "guidanceFa": "AirLLM مسیر اجرا با تکیه بر RAM/دیسک را فراهم می‌کند؛ انتخاب برای بارگذاری لایه‌ای و پردازش غیرتعاملی بررسی شود.",
+    "basis": "editorial starting point supported by cited capability/benchmark",
+    "sourceIds": [
+      "airllm"
+    ]
+  }
+]

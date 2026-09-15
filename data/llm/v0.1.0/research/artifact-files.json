@@ -1,0 +1,3073 @@
+[
+  {
+    "artifactId": "artifact:baai-bge-m3-official-checkpoint",
+    "repositoryId": "BAAI/bge-m3",
+    "repositoryRevision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "colbert_linear.pt",
+        "bytes": 2100674
+      },
+      {
+        "path": "pytorch_model.bin",
+        "bytes": 2271145830
+      },
+      {
+        "path": "sparse_linear.pt",
+        "bytes": 3516
+      }
+    ],
+    "weightBytes": 2273250020,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {},
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:baai-bge-reranker-v2-m3-official-checkpoint",
+    "repositoryId": "BAAI/bge-reranker-v2-m3",
+    "repositoryRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 2271071852
+      }
+    ],
+    "weightBytes": 2271071852,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "F32": 567755777
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:coherelabs-aya-expanse-32b-official-checkpoint",
+    "repositoryId": "CohereLabs/aya-expanse-32b",
+    "repositoryRevision": "b306ea27e360683b50c005d7fcbad6a242317910",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00014.safetensors",
+        "bytes": 4898947792
+      },
+      {
+        "path": "model-00002-of-00014.safetensors",
+        "bytes": 4932553528
+      },
+      {
+        "path": "model-00003-of-00014.safetensors",
+        "bytes": 4932570024
+      },
+      {
+        "path": "model-00004-of-00014.safetensors",
+        "bytes": 4831890592
+      },
+      {
+        "path": "model-00005-of-00014.safetensors",
+        "bytes": 4932553560
+      },
+      {
+        "path": "model-00006-of-00014.safetensors",
+        "bytes": 4932553552
+      },
+      {
+        "path": "model-00007-of-00014.safetensors",
+        "bytes": 4932570048
+      },
+      {
+        "path": "model-00008-of-00014.safetensors",
+        "bytes": 4831890616
+      },
+      {
+        "path": "model-00009-of-00014.safetensors",
+        "bytes": 4932553560
+      },
+      {
+        "path": "model-00010-of-00014.safetensors",
+        "bytes": 4932553552
+      },
+      {
+        "path": "model-00011-of-00014.safetensors",
+        "bytes": 4932570048
+      },
+      {
+        "path": "model-00012-of-00014.safetensors",
+        "bytes": 4831890616
+      },
+      {
+        "path": "model-00013-of-00014.safetensors",
+        "bytes": 4932553560
+      },
+      {
+        "path": "model-00014-of-00014.safetensors",
+        "bytes": 805339584
+      }
+    ],
+    "weightBytes": 64592990632,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "F16": 32296476672
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:coherelabs-aya-expanse-8b-official-checkpoint",
+    "repositoryId": "CohereLabs/aya-expanse-8b",
+    "repositoryRevision": "5062468bf9bc0c6035fd64e06274333ec127d980",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "bytes": 4915779640
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "bytes": 4915824616
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "bytes": 4999719496
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "bytes": 1224771920
+      }
+    ],
+    "weightBytes": 16056095672,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "F16": 8028033024
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:coherelabs-tiny-aya-global-official-checkpoint",
+    "repositoryId": "CohereLabs/tiny-aya-global",
+    "repositoryRevision": "00590ff258ccd84a805f13efcd1c34c2a542654f",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4992396352
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 1706092176
+      }
+    ],
+    "weightBytes": 6698488528,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 3349227520
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:huggingfacetb-smollm2-1-7b-instruct-official-checkpoint",
+    "repositoryId": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "repositoryRevision": "31b70e2e869a7173562077fd711b654946d38674",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 3422777952
+      }
+    ],
+    "weightBytes": 3422777952,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 1711376384
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:huggingfacetb-smollm2-135m-instruct-official-checkpoint",
+    "repositoryId": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "repositoryRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 269060552
+      }
+    ],
+    "weightBytes": 269060552,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 134515008
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:huggingfacetb-smollm2-360m-instruct-official-checkpoint",
+    "repositoryId": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "repositoryRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 723674912
+      }
+    ],
+    "weightBytes": 723674912,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 361821120
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:huggingfacetb-smollm3-3b-official-checkpoint",
+    "repositoryId": "HuggingFaceTB/SmolLM3-3B",
+    "repositoryRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4966315264
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 1183919744
+      }
+    ],
+    "weightBytes": 6150235008,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 3075098624
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-0-6b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-0.6B",
+    "repositoryRevision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 1503300328
+      }
+    ],
+    "weightBytes": 1503300328,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 751632384
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-1-7b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-1.7B",
+    "repositoryRevision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 3441185608
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 622329984
+      }
+    ],
+    "weightBytes": 4063515592,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 2031739904
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-14b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-14B",
+    "repositoryRevision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00008.safetensors",
+        "bytes": 3841788544
+      },
+      {
+        "path": "model-00002-of-00008.safetensors",
+        "bytes": 3963750816
+      },
+      {
+        "path": "model-00003-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "model-00004-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "model-00005-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "model-00006-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "model-00007-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "model-00008-of-00008.safetensors",
+        "bytes": 1912371880
+      }
+    ],
+    "weightBytes": 29536665640,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 14768307200
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-30B-A3B",
+    "repositoryRevision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00016.safetensors",
+        "bytes": 3999417504
+      },
+      {
+        "path": "model-00002-of-00016.safetensors",
+        "bytes": 3999974192
+      },
+      {
+        "path": "model-00003-of-00016.safetensors",
+        "bytes": 3997360832
+      },
+      {
+        "path": "model-00004-of-00016.safetensors",
+        "bytes": 3999975056
+      },
+      {
+        "path": "model-00005-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00006-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00007-of-00016.safetensors",
+        "bytes": 3999975472
+      },
+      {
+        "path": "model-00008-of-00016.safetensors",
+        "bytes": 3997362064
+      },
+      {
+        "path": "model-00009-of-00016.safetensors",
+        "bytes": 3999975408
+      },
+      {
+        "path": "model-00010-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00011-of-00016.safetensors",
+        "bytes": 3999975408
+      },
+      {
+        "path": "model-00012-of-00016.safetensors",
+        "bytes": 3987400496
+      },
+      {
+        "path": "model-00013-of-00016.safetensors",
+        "bytes": 3997353632
+      },
+      {
+        "path": "model-00014-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00015-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00016-of-00016.safetensors",
+        "bytes": 1087928584
+      }
+    ],
+    "weightBytes": 61066575648,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 30532122624
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-32b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-32B",
+    "repositoryRevision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00017.safetensors",
+        "bytes": 3957109648
+      },
+      {
+        "path": "model-00002-of-00017.safetensors",
+        "bytes": 3900791760
+      },
+      {
+        "path": "model-00003-of-00017.safetensors",
+        "bytes": 3900791760
+      },
+      {
+        "path": "model-00004-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00005-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00006-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00007-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00008-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00009-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00010-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00011-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00012-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00013-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00014-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00015-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00016-of-00017.safetensors",
+        "bytes": 3900791800
+      },
+      {
+        "path": "model-00017-of-00017.safetensors",
+        "bytes": 3055341992
+      }
+    ],
+    "weightBytes": 65524328560,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 32762123264
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-4b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-4B",
+    "repositoryRevision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "bytes": 3957900840
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "bytes": 3987450520
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "bytes": 99630640
+      }
+    ],
+    "weightBytes": 8044982000,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 4022468096
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-8b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-8B",
+    "repositoryRevision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00005.safetensors",
+        "bytes": 3996250744
+      },
+      {
+        "path": "model-00002-of-00005.safetensors",
+        "bytes": 3993160032
+      },
+      {
+        "path": "model-00003-of-00005.safetensors",
+        "bytes": 3959604768
+      },
+      {
+        "path": "model-00004-of-00005.safetensors",
+        "bytes": 3187841392
+      },
+      {
+        "path": "model-00005-of-00005.safetensors",
+        "bytes": 1244659840
+      }
+    ],
+    "weightBytes": 16381516776,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 8190735360
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-coder-30b-a3b-instruct-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "repositoryRevision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00016.safetensors",
+        "bytes": 3998893112
+      },
+      {
+        "path": "model-00002-of-00016.safetensors",
+        "bytes": 3999974192
+      },
+      {
+        "path": "model-00003-of-00016.safetensors",
+        "bytes": 3997360832
+      },
+      {
+        "path": "model-00004-of-00016.safetensors",
+        "bytes": 3999975056
+      },
+      {
+        "path": "model-00005-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00006-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00007-of-00016.safetensors",
+        "bytes": 3999975472
+      },
+      {
+        "path": "model-00008-of-00016.safetensors",
+        "bytes": 3997362064
+      },
+      {
+        "path": "model-00009-of-00016.safetensors",
+        "bytes": 3999975408
+      },
+      {
+        "path": "model-00010-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00011-of-00016.safetensors",
+        "bytes": 3999975408
+      },
+      {
+        "path": "model-00012-of-00016.safetensors",
+        "bytes": 3987924896
+      },
+      {
+        "path": "model-00013-of-00016.safetensors",
+        "bytes": 3999975088
+      },
+      {
+        "path": "model-00014-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00015-of-00016.safetensors",
+        "bytes": 3999975400
+      },
+      {
+        "path": "model-00016-of-00016.safetensors",
+        "bytes": 1085307128
+      }
+    ],
+    "weightBytes": 61066575656,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 30532122624
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-embedding-0-6b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Embedding-0.6B",
+    "repositoryRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 1191586416
+      }
+    ],
+    "weightBytes": 1191586416,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 595776512
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-embedding-4b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Embedding-4B",
+    "repositoryRevision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4965826464
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 3077765624
+      }
+    ],
+    "weightBytes": 8043592088,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 4021774336
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-embedding-8b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Embedding-8B",
+    "repositoryRevision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "bytes": 4900037024
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "bytes": 4915959512
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "bytes": 4983067656
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "bytes": 335570376
+      }
+    ],
+    "weightBytes": 15134634568,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 7567295488
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-reranker-0-6b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Reranker-0.6B",
+    "repositoryRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 1191588280
+      }
+    ],
+    "weightBytes": 1191588280,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 595776512
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-reranker-4b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Reranker-4B",
+    "repositoryRevision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4058781760
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 3984833200
+      }
+    ],
+    "weightBytes": 8043614960,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 4021784576
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-reranker-8b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-Reranker-8B",
+    "repositoryRevision": "77d193c791ed757ca307ee72715aa132723da912",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00005.safetensors",
+        "bytes": 4027618768
+      },
+      {
+        "path": "model-00002-of-00005.safetensors",
+        "bytes": 4060268160
+      },
+      {
+        "path": "model-00003-of-00005.safetensors",
+        "bytes": 4043508680
+      },
+      {
+        "path": "model-00004-of-00005.safetensors",
+        "bytes": 3003274088
+      },
+      {
+        "path": "model-00005-of-00005.safetensors",
+        "bytes": 1242472576
+      }
+    ],
+    "weightBytes": 16377142272,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 8188548096
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-vl-8b-instruct-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3-VL-8B-Instruct",
+    "repositoryRevision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "bytes": 4902275944
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "bytes": 4915962496
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "bytes": 4999831048
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "bytes": 2716270024
+      }
+    ],
+    "weightBytes": 17534339512,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 8767123696
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-5-2b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3.5-2B",
+    "repositoryRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors-00001-of-00001.safetensors",
+        "bytes": 4548221488
+      }
+    ],
+    "weightBytes": 4548221488,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "F32": 2592,
+      "BF16": 2274067232
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-5-35b-a3b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3.5-35B-A3B",
+    "repositoryRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors-00001-of-00014.safetensors",
+        "bytes": 5368709816
+      },
+      {
+        "path": "model.safetensors-00002-of-00014.safetensors",
+        "bytes": 5368709808
+      },
+      {
+        "path": "model.safetensors-00003-of-00014.safetensors",
+        "bytes": 5368709808
+      },
+      {
+        "path": "model.safetensors-00004-of-00014.safetensors",
+        "bytes": 5368709816
+      },
+      {
+        "path": "model.safetensors-00005-of-00014.safetensors",
+        "bytes": 5368709816
+      },
+      {
+        "path": "model.safetensors-00006-of-00014.safetensors",
+        "bytes": 5368709816
+      },
+      {
+        "path": "model.safetensors-00007-of-00014.safetensors",
+        "bytes": 5368709808
+      },
+      {
+        "path": "model.safetensors-00008-of-00014.safetensors",
+        "bytes": 5368709808
+      },
+      {
+        "path": "model.safetensors-00009-of-00014.safetensors",
+        "bytes": 5255463936
+      },
+      {
+        "path": "model.safetensors-00010-of-00014.safetensors",
+        "bytes": 5368710456
+      },
+      {
+        "path": "model.safetensors-00011-of-00014.safetensors",
+        "bytes": 5368710464
+      },
+      {
+        "path": "model.safetensors-00012-of-00014.safetensors",
+        "bytes": 5368710456
+      },
+      {
+        "path": "model.safetensors-00013-of-00014.safetensors",
+        "bytes": 5367839544
+      },
+      {
+        "path": "model.safetensors-00014-of-00014.safetensors",
+        "bytes": 2224764664
+      }
+    ],
+    "weightBytes": 71903878016,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 35951817904,
+      "F32": 4800
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-5-4b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3.5-4B",
+    "repositoryRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688
+      },
+      {
+        "path": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408
+      }
+    ],
+    "weightBytes": 9319828096,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 4659861248,
+      "F32": 3840
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-5-9b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3.5-9B",
+    "repositoryRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors-00001-of-00004.safetensors",
+        "bytes": 5276436216
+      },
+      {
+        "path": "model.safetensors-00002-of-00004.safetensors",
+        "bytes": 5335161512
+      },
+      {
+        "path": "model.safetensors-00003-of-00004.safetensors",
+        "bytes": 5368717440
+      },
+      {
+        "path": "model.safetensors-00004-of-00004.safetensors",
+        "bytes": 3325995712
+      }
+    ],
+    "weightBytes": 19306310880,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 9653100528,
+      "F32": 3840
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:qwen-qwen3-8-27b-official-checkpoint",
+    "repositoryId": "Qwen/Qwen3.8-27B",
+    "repositoryRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00018.safetensors",
+        "bytes": 3966730552
+      },
+      {
+        "path": "model-00002-of-00018.safetensors",
+        "bytes": 3043080328
+      },
+      {
+        "path": "model-00003-of-00018.safetensors",
+        "bytes": 2542796952
+      },
+      {
+        "path": "model-00004-of-00018.safetensors",
+        "bytes": 3988973152
+      },
+      {
+        "path": "model-00005-of-00018.safetensors",
+        "bytes": 2099339864
+      },
+      {
+        "path": "model-00006-of-00018.safetensors",
+        "bytes": 3979553696
+      },
+      {
+        "path": "model-00007-of-00018.safetensors",
+        "bytes": 2108759344
+      },
+      {
+        "path": "model-00008-of-00018.safetensors",
+        "bytes": 3979553696
+      },
+      {
+        "path": "model-00009-of-00018.safetensors",
+        "bytes": 2108759344
+      },
+      {
+        "path": "model-00010-of-00018.safetensors",
+        "bytes": 3979553696
+      },
+      {
+        "path": "model-00011-of-00018.safetensors",
+        "bytes": 2108759344
+      },
+      {
+        "path": "model-00012-of-00018.safetensors",
+        "bytes": 3979553696
+      },
+      {
+        "path": "model-00013-of-00018.safetensors",
+        "bytes": 2108759344
+      },
+      {
+        "path": "model-00014-of-00018.safetensors",
+        "bytes": 3979553696
+      },
+      {
+        "path": "model-00015-of-00018.safetensors",
+        "bytes": 2108759344
+      },
+      {
+        "path": "model-00016-of-00018.safetensors",
+        "bytes": 3979564040
+      },
+      {
+        "path": "model-00017-of-00018.safetensors",
+        "bytes": 2108759344
+      },
+      {
+        "path": "model-00018-of-00018.safetensors",
+        "bytes": 3392197344
+      }
+    ],
+    "weightBytes": 55563006776,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 27781427952
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:allenai-olmo-3-7b-instruct-official-checkpoint",
+    "repositoryId": "allenai/Olmo-3-7B-Instruct",
+    "repositoryRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "bytes": 4969984976
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "bytes": 4981161496
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "bytes": 4644917240
+      }
+    ],
+    "weightBytes": 14596063712,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 7298011136
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-r1-0528-qwen3-8b-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "repositoryRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-000002.safetensors",
+        "bytes": 8610202930
+      },
+      {
+        "path": "model-00002-of-000002.safetensors",
+        "bytes": 7771313866
+      }
+    ],
+    "weightBytes": 16381516796,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 8190735360
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-r1-distill-llama-70b-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "repositoryRevision": "b1c0b44b4369b597ad119a196caf79a9c40e141e",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-000017.safetensors",
+        "bytes": 8946552810
+      },
+      {
+        "path": "model-00002-of-000017.safetensors",
+        "bytes": 8690800055
+      },
+      {
+        "path": "model-00003-of-000017.safetensors",
+        "bytes": 1577092016
+      },
+      {
+        "path": "model-00004-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00005-of-000017.safetensors",
+        "bytes": 8422331428
+      },
+      {
+        "path": "model-00006-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00007-of-000017.safetensors",
+        "bytes": 8422331428
+      },
+      {
+        "path": "model-00008-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00009-of-000017.safetensors",
+        "bytes": 8422331428
+      },
+      {
+        "path": "model-00010-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00011-of-000017.safetensors",
+        "bytes": 8422331428
+      },
+      {
+        "path": "model-00012-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00013-of-000017.safetensors",
+        "bytes": 8422331428
+      },
+      {
+        "path": "model-00014-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00015-of-000017.safetensors",
+        "bytes": 8422331428
+      },
+      {
+        "path": "model-00016-of-000017.safetensors",
+        "bytes": 8690767122
+      },
+      {
+        "path": "model-00017-of-000017.safetensors",
+        "bytes": 10523694303
+      }
+    ],
+    "weightBytes": 141107497606,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 70553706496
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-r1-distill-qwen-1-5b-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "repositoryRevision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 3554214621
+      }
+    ],
+    "weightBytes": 3554214621,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 1777088000
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-r1-distill-qwen-14b-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "repositoryRevision": "1df8507178afcc1bef68cd8c393f61a886323761",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-000004.safetensors",
+        "bytes": 8714116464
+      },
+      {
+        "path": "model-00002-of-000004.safetensors",
+        "bytes": 8667059663
+      },
+      {
+        "path": "model-00003-of-000004.safetensors",
+        "bytes": 8667059711
+      },
+      {
+        "path": "model-00004-of-000004.safetensors",
+        "bytes": 3491898034
+      }
+    ],
+    "weightBytes": 29540133872,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 14770033664
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-r1-distill-qwen-32b-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "repositoryRevision": "711ad2ea6aa40cfca18895e8aca02ab92df1a746",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-000008.safetensors",
+        "bytes": 8792578462
+      },
+      {
+        "path": "model-00002-of-000008.safetensors",
+        "bytes": 8776906899
+      },
+      {
+        "path": "model-00003-of-000008.safetensors",
+        "bytes": 8776906927
+      },
+      {
+        "path": "model-00004-of-000008.safetensors",
+        "bytes": 8776906927
+      },
+      {
+        "path": "model-00005-of-000008.safetensors",
+        "bytes": 8776906927
+      },
+      {
+        "path": "model-00006-of-000008.safetensors",
+        "bytes": 8776906927
+      },
+      {
+        "path": "model-00007-of-000008.safetensors",
+        "bytes": 8776906927
+      },
+      {
+        "path": "model-00008-of-000008.safetensors",
+        "bytes": 4073821536
+      }
+    ],
+    "weightBytes": 65527841532,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 32763876352
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-r1-distill-qwen-7b-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "repositoryRevision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-000002.safetensors",
+        "bytes": 8606596466
+      },
+      {
+        "path": "model-00002-of-000002.safetensors",
+        "bytes": 6624675384
+      }
+    ],
+    "weightBytes": 15231271850,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 7615616512
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-v3-2-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-V3.2",
+    "repositoryRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-000163.safetensors",
+        "bytes": 5233198531
+      },
+      {
+        "path": "model-00002-of-000163.safetensors",
+        "bytes": 4302383956
+      },
+      {
+        "path": "model-00003-of-000163.safetensors",
+        "bytes": 4302384377
+      },
+      {
+        "path": "model-00004-of-000163.safetensors",
+        "bytes": 4302121967
+      },
+      {
+        "path": "model-00005-of-000163.safetensors",
+        "bytes": 4302384146
+      },
+      {
+        "path": "model-00006-of-000163.safetensors",
+        "bytes": 4307162046
+      },
+      {
+        "path": "model-00007-of-000163.safetensors",
+        "bytes": 4312028034
+      },
+      {
+        "path": "model-00008-of-000163.safetensors",
+        "bytes": 4302384334
+      },
+      {
+        "path": "model-00009-of-000163.safetensors",
+        "bytes": 4302122175
+      },
+      {
+        "path": "model-00010-of-000163.safetensors",
+        "bytes": 4302383938
+      },
+      {
+        "path": "model-00011-of-000163.safetensors",
+        "bytes": 4302384377
+      },
+      {
+        "path": "model-00012-of-000163.safetensors",
+        "bytes": 1483135583
+      },
+      {
+        "path": "model-00013-of-000163.safetensors",
+        "bytes": 4302060527
+      },
+      {
+        "path": "model-00014-of-000163.safetensors",
+        "bytes": 4302384328
+      },
+      {
+        "path": "model-00015-of-000163.safetensors",
+        "bytes": 4302122183
+      },
+      {
+        "path": "model-00016-of-000163.safetensors",
+        "bytes": 4302383930
+      },
+      {
+        "path": "model-00017-of-000163.safetensors",
+        "bytes": 4302384375
+      },
+      {
+        "path": "model-00018-of-000163.safetensors",
+        "bytes": 4302121995
+      },
+      {
+        "path": "model-00019-of-000163.safetensors",
+        "bytes": 4302384118
+      },
+      {
+        "path": "model-00020-of-000163.safetensors",
+        "bytes": 4302384377
+      },
+      {
+        "path": "model-00021-of-000163.safetensors",
+        "bytes": 4302122373
+      },
+      {
+        "path": "model-00022-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00023-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00024-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00025-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00026-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00027-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00028-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00029-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00030-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00031-of-000163.safetensors",
+        "bytes": 4302122808
+      },
+      {
+        "path": "model-00032-of-000163.safetensors",
+        "bytes": 4302384470
+      },
+      {
+        "path": "model-00033-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00034-of-000163.safetensors",
+        "bytes": 1864917414
+      },
+      {
+        "path": "model-00035-of-000163.safetensors",
+        "bytes": 4302061105
+      },
+      {
+        "path": "model-00036-of-000163.safetensors",
+        "bytes": 4302384914
+      },
+      {
+        "path": "model-00037-of-000163.safetensors",
+        "bytes": 4302122764
+      },
+      {
+        "path": "model-00038-of-000163.safetensors",
+        "bytes": 4302384516
+      },
+      {
+        "path": "model-00039-of-000163.safetensors",
+        "bytes": 4302384961
+      },
+      {
+        "path": "model-00040-of-000163.safetensors",
+        "bytes": 4302122576
+      },
+      {
+        "path": "model-00041-of-000163.safetensors",
+        "bytes": 4302384704
+      },
+      {
+        "path": "model-00042-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00043-of-000163.safetensors",
+        "bytes": 4302122398
+      },
+      {
+        "path": "model-00044-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00045-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00046-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00047-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00048-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00049-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00050-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00051-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00052-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00053-of-000163.safetensors",
+        "bytes": 4302122808
+      },
+      {
+        "path": "model-00054-of-000163.safetensors",
+        "bytes": 4302384470
+      },
+      {
+        "path": "model-00055-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00056-of-000163.safetensors",
+        "bytes": 1864917414
+      },
+      {
+        "path": "model-00057-of-000163.safetensors",
+        "bytes": 4302061105
+      },
+      {
+        "path": "model-00058-of-000163.safetensors",
+        "bytes": 4302384914
+      },
+      {
+        "path": "model-00059-of-000163.safetensors",
+        "bytes": 4302122764
+      },
+      {
+        "path": "model-00060-of-000163.safetensors",
+        "bytes": 4302384516
+      },
+      {
+        "path": "model-00061-of-000163.safetensors",
+        "bytes": 4302384961
+      },
+      {
+        "path": "model-00062-of-000163.safetensors",
+        "bytes": 4302122576
+      },
+      {
+        "path": "model-00063-of-000163.safetensors",
+        "bytes": 4302384704
+      },
+      {
+        "path": "model-00064-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00065-of-000163.safetensors",
+        "bytes": 4302122398
+      },
+      {
+        "path": "model-00066-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00067-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00068-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00069-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00070-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00071-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00072-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00073-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00074-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00075-of-000163.safetensors",
+        "bytes": 4302122808
+      },
+      {
+        "path": "model-00076-of-000163.safetensors",
+        "bytes": 4302384470
+      },
+      {
+        "path": "model-00077-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00078-of-000163.safetensors",
+        "bytes": 1864917414
+      },
+      {
+        "path": "model-00079-of-000163.safetensors",
+        "bytes": 4302061105
+      },
+      {
+        "path": "model-00080-of-000163.safetensors",
+        "bytes": 4302384914
+      },
+      {
+        "path": "model-00081-of-000163.safetensors",
+        "bytes": 4302122764
+      },
+      {
+        "path": "model-00082-of-000163.safetensors",
+        "bytes": 4302384516
+      },
+      {
+        "path": "model-00083-of-000163.safetensors",
+        "bytes": 4302384961
+      },
+      {
+        "path": "model-00084-of-000163.safetensors",
+        "bytes": 4302122576
+      },
+      {
+        "path": "model-00085-of-000163.safetensors",
+        "bytes": 4302384704
+      },
+      {
+        "path": "model-00086-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00087-of-000163.safetensors",
+        "bytes": 4302122398
+      },
+      {
+        "path": "model-00088-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00089-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00090-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00091-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00092-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00093-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00094-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00095-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00096-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00097-of-000163.safetensors",
+        "bytes": 4302122808
+      },
+      {
+        "path": "model-00098-of-000163.safetensors",
+        "bytes": 4302384470
+      },
+      {
+        "path": "model-00099-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00100-of-000163.safetensors",
+        "bytes": 1864917414
+      },
+      {
+        "path": "model-00101-of-000163.safetensors",
+        "bytes": 4302061105
+      },
+      {
+        "path": "model-00102-of-000163.safetensors",
+        "bytes": 4302384914
+      },
+      {
+        "path": "model-00103-of-000163.safetensors",
+        "bytes": 4302122764
+      },
+      {
+        "path": "model-00104-of-000163.safetensors",
+        "bytes": 4302384516
+      },
+      {
+        "path": "model-00105-of-000163.safetensors",
+        "bytes": 4302384961
+      },
+      {
+        "path": "model-00106-of-000163.safetensors",
+        "bytes": 4302122576
+      },
+      {
+        "path": "model-00107-of-000163.safetensors",
+        "bytes": 4302384704
+      },
+      {
+        "path": "model-00108-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00109-of-000163.safetensors",
+        "bytes": 4302122398
+      },
+      {
+        "path": "model-00110-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00111-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00112-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00113-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00114-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00115-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00116-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00117-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00118-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00119-of-000163.safetensors",
+        "bytes": 4302122808
+      },
+      {
+        "path": "model-00120-of-000163.safetensors",
+        "bytes": 4302384470
+      },
+      {
+        "path": "model-00121-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00122-of-000163.safetensors",
+        "bytes": 1864917414
+      },
+      {
+        "path": "model-00123-of-000163.safetensors",
+        "bytes": 4302061105
+      },
+      {
+        "path": "model-00124-of-000163.safetensors",
+        "bytes": 4302384914
+      },
+      {
+        "path": "model-00125-of-000163.safetensors",
+        "bytes": 4302122764
+      },
+      {
+        "path": "model-00126-of-000163.safetensors",
+        "bytes": 4302384516
+      },
+      {
+        "path": "model-00127-of-000163.safetensors",
+        "bytes": 4302384961
+      },
+      {
+        "path": "model-00128-of-000163.safetensors",
+        "bytes": 4302122576
+      },
+      {
+        "path": "model-00129-of-000163.safetensors",
+        "bytes": 4302384704
+      },
+      {
+        "path": "model-00130-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00131-of-000163.safetensors",
+        "bytes": 4302122398
+      },
+      {
+        "path": "model-00132-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00133-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00134-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00135-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00136-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00137-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00138-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00139-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00140-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00141-of-000163.safetensors",
+        "bytes": 3245204828
+      },
+      {
+        "path": "model-00142-of-000163.safetensors",
+        "bytes": 4302061105
+      },
+      {
+        "path": "model-00143-of-000163.safetensors",
+        "bytes": 4302384914
+      },
+      {
+        "path": "model-00144-of-000163.safetensors",
+        "bytes": 4302122764
+      },
+      {
+        "path": "model-00145-of-000163.safetensors",
+        "bytes": 4302384516
+      },
+      {
+        "path": "model-00146-of-000163.safetensors",
+        "bytes": 4302384961
+      },
+      {
+        "path": "model-00147-of-000163.safetensors",
+        "bytes": 4302122576
+      },
+      {
+        "path": "model-00148-of-000163.safetensors",
+        "bytes": 4302384704
+      },
+      {
+        "path": "model-00149-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00150-of-000163.safetensors",
+        "bytes": 4302122398
+      },
+      {
+        "path": "model-00151-of-000163.safetensors",
+        "bytes": 4302384890
+      },
+      {
+        "path": "model-00152-of-000163.safetensors",
+        "bytes": 4302122786
+      },
+      {
+        "path": "model-00153-of-000163.safetensors",
+        "bytes": 4302384494
+      },
+      {
+        "path": "model-00154-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00155-of-000163.safetensors",
+        "bytes": 4302122598
+      },
+      {
+        "path": "model-00156-of-000163.safetensors",
+        "bytes": 4302384680
+      },
+      {
+        "path": "model-00157-of-000163.safetensors",
+        "bytes": 4302384963
+      },
+      {
+        "path": "model-00158-of-000163.safetensors",
+        "bytes": 4302122420
+      },
+      {
+        "path": "model-00159-of-000163.safetensors",
+        "bytes": 4302384870
+      },
+      {
+        "path": "model-00160-of-000163.safetensors",
+        "bytes": 5285723731
+      },
+      {
+        "path": "model-00161-of-000163.safetensors",
+        "bytes": 4305819875
+      },
+      {
+        "path": "model-00162-of-000163.safetensors",
+        "bytes": 4302384938
+      },
+      {
+        "path": "model-00163-of-000163.safetensors",
+        "bytes": 6643591758
+      }
+    ],
+    "weightBytes": 689483049129,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 3946184704,
+      "F8_E4M3": 681408069632,
+      "F32": 42667040
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:deepseek-ai-deepseek-v4-1-flash-official-checkpoint",
+    "repositoryId": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "repositoryRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00048.safetensors",
+        "bytes": 970533624
+      },
+      {
+        "path": "model-00002-of-00048.safetensors",
+        "bytes": 1323858272
+      },
+      {
+        "path": "model-00003-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00004-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00005-of-00048.safetensors",
+        "bytes": 7405953784
+      },
+      {
+        "path": "model-00006-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00007-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00008-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00009-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00010-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00011-of-00048.safetensors",
+        "bytes": 7405953784
+      },
+      {
+        "path": "model-00012-of-00048.safetensors",
+        "bytes": 7389759032
+      },
+      {
+        "path": "model-00013-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00014-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00015-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00016-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00017-of-00048.safetensors",
+        "bytes": 7405956128
+      },
+      {
+        "path": "model-00018-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00019-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00020-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00021-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00022-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00023-of-00048.safetensors",
+        "bytes": 7400713088
+      },
+      {
+        "path": "model-00024-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00025-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00026-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00027-of-00048.safetensors",
+        "bytes": 7395337384
+      },
+      {
+        "path": "model-00028-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00029-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00030-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00031-of-00048.safetensors",
+        "bytes": 7395337384
+      },
+      {
+        "path": "model-00032-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00033-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00034-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00035-of-00048.safetensors",
+        "bytes": 7395337384
+      },
+      {
+        "path": "model-00036-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00037-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00038-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00039-of-00048.safetensors",
+        "bytes": 7395337384
+      },
+      {
+        "path": "model-00040-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00041-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00042-of-00048.safetensors",
+        "bytes": 7389761368
+      },
+      {
+        "path": "model-00043-of-00048.safetensors",
+        "bytes": 1323837624
+      },
+      {
+        "path": "model-00044-of-00048.safetensors",
+        "bytes": 2652728736
+      },
+      {
+        "path": "model-00045-of-00048.safetensors",
+        "bytes": 2573998176
+      },
+      {
+        "path": "model-00046-of-00048.safetensors",
+        "bytes": 2706402896
+      },
+      {
+        "path": "model-00047-of-00048.safetensors",
+        "bytes": 101535150936
+      },
+      {
+        "path": "model-00048-of-00048.safetensors",
+        "bytes": 101537926640
+      }
+    ],
+    "weightBytes": 510296708312,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 1976441856,
+      "F32": 42307282,
+      "F8_E4M3": 204015223296,
+      "I8": 557171343360
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:google-gemma-3-12b-it-official-checkpoint",
+    "repositoryId": "google/gemma-3-12b-it",
+    "repositoryRevision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00005.safetensors",
+        "bytes": 4979902192
+      },
+      {
+        "path": "model-00002-of-00005.safetensors",
+        "bytes": 4931296592
+      },
+      {
+        "path": "model-00003-of-00005.safetensors",
+        "bytes": 4931296656
+      },
+      {
+        "path": "model-00004-of-00005.safetensors",
+        "bytes": 4931296656
+      },
+      {
+        "path": "model-00005-of-00005.safetensors",
+        "bytes": 4601000928
+      }
+    ],
+    "weightBytes": 24374793024,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 12187325040
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:google-gemma-3-1b-it-official-checkpoint",
+    "repositoryId": "google/gemma-3-1b-it",
+    "repositoryRevision": "dcc83ea841ab6100d6b47a070329e1ba4cf78752",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 1999811208
+      }
+    ],
+    "weightBytes": 1999811208,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 999885952
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:google-gemma-3-27b-it-official-checkpoint",
+    "repositoryId": "google/gemma-3-27b-it",
+    "repositoryRevision": "005ad3404e59d6023443cb575daa05336842228a",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00012.safetensors",
+        "bytes": 4854573696
+      },
+      {
+        "path": "model-00002-of-00012.safetensors",
+        "bytes": 4954792944
+      },
+      {
+        "path": "model-00003-of-00012.safetensors",
+        "bytes": 4954792976
+      },
+      {
+        "path": "model-00004-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00005-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00006-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00007-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00008-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00009-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00010-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00011-of-00012.safetensors",
+        "bytes": 4954793016
+      },
+      {
+        "path": "model-00012-of-00012.safetensors",
+        "bytes": 462476696
+      }
+    ],
+    "weightBytes": 54864980440,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 27432406640
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:google-gemma-3-4b-it-official-checkpoint",
+    "repositoryId": "google/gemma-3-4b-it",
+    "repositoryRevision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4961251752
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 3639026128
+      }
+    ],
+    "weightBytes": 8600277880,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 4300079472
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:google-gemma-4-26b-a4b-it-official-checkpoint",
+    "repositoryId": "google/gemma-4-26B-A4B-it",
+    "repositoryRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 49907246508
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 1704763408
+      }
+    ],
+    "weightBytes": 51612009916,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 25805936206
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:google-gemma-4-e2b-it-official-checkpoint",
+    "repositoryId": "google/gemma-4-E2B-it",
+    "repositoryRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 10246621918
+      }
+    ],
+    "weightBytes": 10246621918,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 5123178051
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:ibm-granite-granite-3-3-2b-instruct-official-checkpoint",
+    "repositoryId": "ibm-granite/granite-3.3-2b-instruct",
+    "repositoryRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4999999840
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 67121712
+      }
+    ],
+    "weightBytes": 5067121552,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 2533539840
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:intfloat-multilingual-e5-small-official-checkpoint",
+    "repositoryId": "intfloat/multilingual-e5-small",
+    "repositoryRevision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 470641600
+      }
+    ],
+    "weightBytes": 470641600,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "I64": 512,
+      "F32": 117653760
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:meta-llama-llama-3-1-70b-instruct-official-checkpoint",
+    "repositoryId": "meta-llama/Llama-3.1-70B-Instruct",
+    "repositoryRevision": "1605565b47bb9346c5515c34102e054115b4f98b",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00030.safetensors",
+        "bytes": 4584408808
+      },
+      {
+        "path": "model-00002-of-00030.safetensors",
+        "bytes": 4664167376
+      },
+      {
+        "path": "model-00003-of-00030.safetensors",
+        "bytes": 4999711704
+      },
+      {
+        "path": "model-00004-of-00030.safetensors",
+        "bytes": 4966157032
+      },
+      {
+        "path": "model-00005-of-00030.safetensors",
+        "bytes": 4664134408
+      },
+      {
+        "path": "model-00006-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00007-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00008-of-00030.safetensors",
+        "bytes": 4999711728
+      },
+      {
+        "path": "model-00009-of-00030.safetensors",
+        "bytes": 4966157056
+      },
+      {
+        "path": "model-00010-of-00030.safetensors",
+        "bytes": 4664134408
+      },
+      {
+        "path": "model-00011-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00012-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00013-of-00030.safetensors",
+        "bytes": 4999711728
+      },
+      {
+        "path": "model-00014-of-00030.safetensors",
+        "bytes": 4966157056
+      },
+      {
+        "path": "model-00015-of-00030.safetensors",
+        "bytes": 4664134408
+      },
+      {
+        "path": "model-00016-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00017-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00018-of-00030.safetensors",
+        "bytes": 4999711728
+      },
+      {
+        "path": "model-00019-of-00030.safetensors",
+        "bytes": 4966157056
+      },
+      {
+        "path": "model-00020-of-00030.safetensors",
+        "bytes": 4664134408
+      },
+      {
+        "path": "model-00021-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00022-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00023-of-00030.safetensors",
+        "bytes": 4999711728
+      },
+      {
+        "path": "model-00024-of-00030.safetensors",
+        "bytes": 4966157056
+      },
+      {
+        "path": "model-00025-of-00030.safetensors",
+        "bytes": 4664134408
+      },
+      {
+        "path": "model-00026-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00027-of-00030.safetensors",
+        "bytes": 4664167408
+      },
+      {
+        "path": "model-00028-of-00030.safetensors",
+        "bytes": 4999711728
+      },
+      {
+        "path": "model-00029-of-00030.safetensors",
+        "bytes": 4966173536
+      },
+      {
+        "path": "model-00030-of-00030.safetensors",
+        "bytes": 2101346432
+      }
+    ],
+    "weightBytes": 141107497872,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 70553706496
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:meta-llama-llama-3-1-8b-instruct-official-checkpoint",
+    "repositoryId": "meta-llama/Llama-3.1-8B-Instruct",
+    "repositoryRevision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "bytes": 4976698672
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "bytes": 4999802720
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "bytes": 4915916176
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "bytes": 1168138808
+      }
+    ],
+    "weightBytes": 16060556376,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 8030261248
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:meta-llama-llama-3-2-1b-instruct-official-checkpoint",
+    "repositoryId": "meta-llama/Llama-3.2-1B-Instruct",
+    "repositoryRevision": "9213176726f574b556790deb65791e0c5aa438b6",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 2471645608
+      }
+    ],
+    "weightBytes": 2471645608,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 1235814400
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:meta-llama-llama-3-2-3b-instruct-official-checkpoint",
+    "repositoryId": "meta-llama/Llama-3.2-3B-Instruct",
+    "repositoryRevision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4965799096
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 1459729952
+      }
+    ],
+    "weightBytes": 6425529048,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 3212749824
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:microsoft-phi-4-mini-instruct-official-checkpoint",
+    "repositoryId": "microsoft/Phi-4-mini-instruct",
+    "repositoryRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4903637712
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 2768428504
+      }
+    ],
+    "weightBytes": 7672066216,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 3836021760
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:mistralai-devstral-small-2-24b-instruct-2512-official-checkpoint",
+    "repositoryId": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "repositoryRevision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00006.safetensors",
+        "bytes": 4907440626
+      },
+      {
+        "path": "model-00002-of-00006.safetensors",
+        "bytes": 4996664584
+      },
+      {
+        "path": "model-00003-of-00006.safetensors",
+        "bytes": 4980946432
+      },
+      {
+        "path": "model-00004-of-00006.safetensors",
+        "bytes": 4980946416
+      },
+      {
+        "path": "model-00005-of-00006.safetensors",
+        "bytes": 4996675032
+      },
+      {
+        "path": "model-00006-of-00006.safetensors",
+        "bytes": 930386318
+      }
+    ],
+    "weightBytes": 25793059408,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 1781550080,
+      "F8_E4M3": 22229811200
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:mistralai-ministral-3-3b-instruct-2512-official-checkpoint",
+    "repositoryId": "mistralai/Ministral-3-3B-Instruct-2512",
+    "repositoryRevision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model.safetensors",
+        "bytes": 4672099184
+      }
+    ],
+    "weightBytes": 4672099184,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 822899712,
+      "F8_E4M3": 3026190336
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:mistralai-mistral-7b-instruct-v0-3-official-checkpoint",
+    "repositoryId": "mistralai/Mistral-7B-Instruct-v0.3",
+    "repositoryRevision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "bytes": 4949453792
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "bytes": 4999819336
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "bytes": 4546807800
+      }
+    ],
+    "weightBytes": 14496080928,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 7248023552
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:mistralai-mistral-small-3-1-24b-instruct-2503-official-checkpoint",
+    "repositoryId": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "repositoryRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00010.safetensors",
+        "bytes": 4883550696
+      },
+      {
+        "path": "model-00002-of-00010.safetensors",
+        "bytes": 4781593336
+      },
+      {
+        "path": "model-00003-of-00010.safetensors",
+        "bytes": 4886472224
+      },
+      {
+        "path": "model-00004-of-00010.safetensors",
+        "bytes": 4781593376
+      },
+      {
+        "path": "model-00005-of-00010.safetensors",
+        "bytes": 4781593368
+      },
+      {
+        "path": "model-00006-of-00010.safetensors",
+        "bytes": 4886472248
+      },
+      {
+        "path": "model-00007-of-00010.safetensors",
+        "bytes": 4781593376
+      },
+      {
+        "path": "model-00008-of-00010.safetensors",
+        "bytes": 4781593368
+      },
+      {
+        "path": "model-00009-of-00010.safetensors",
+        "bytes": 4886472248
+      },
+      {
+        "path": "model-00010-of-00010.safetensors",
+        "bytes": 4571866320
+      }
+    ],
+    "weightBytes": 48022800560,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 24011361280
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:nvidia-nvidia-nemotron-nano-9b-v2-official-checkpoint",
+    "repositoryId": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "repositoryRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "bytes": 4924823528
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "bytes": 4937507160
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "bytes": 4871563216
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "bytes": 3042598608
+      }
+    ],
+    "weightBytes": 17776492512,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 8888227328
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:openai-gpt-oss-120b-official-checkpoint",
+    "repositoryId": "openai/gpt-oss-120b",
+    "repositoryRevision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00000-of-00014.safetensors",
+        "bytes": 4625017896
+      },
+      {
+        "path": "model-00001-of-00014.safetensors",
+        "bytes": 4115586736
+      },
+      {
+        "path": "model-00002-of-00014.safetensors",
+        "bytes": 4625017888
+      },
+      {
+        "path": "model-00003-of-00014.safetensors",
+        "bytes": 4115586752
+      },
+      {
+        "path": "model-00004-of-00014.safetensors",
+        "bytes": 4625017896
+      },
+      {
+        "path": "model-00005-of-00014.safetensors",
+        "bytes": 4115586696
+      },
+      {
+        "path": "model-00006-of-00014.safetensors",
+        "bytes": 4625017856
+      },
+      {
+        "path": "model-00007-of-00014.safetensors",
+        "bytes": 4060267176
+      },
+      {
+        "path": "model-00008-of-00014.safetensors",
+        "bytes": 4625017896
+      },
+      {
+        "path": "model-00009-of-00014.safetensors",
+        "bytes": 4170906304
+      },
+      {
+        "path": "model-00010-of-00014.safetensors",
+        "bytes": 4625017896
+      },
+      {
+        "path": "model-00011-of-00014.safetensors",
+        "bytes": 4115586752
+      },
+      {
+        "path": "model-00012-of-00014.safetensors",
+        "bytes": 4064660808
+      },
+      {
+        "path": "model-00013-of-00014.safetensors",
+        "bytes": 4625017896
+      },
+      {
+        "path": "model-00014-of-00014.safetensors",
+        "bytes": 4115586736
+      }
+    ],
+    "weightBytes": 65248893184,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 2167371072,
+      "U8": 114661785600
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:openai-gpt-oss-20b-official-checkpoint",
+    "repositoryId": "openai/gpt-oss-20b",
+    "repositoryRevision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00000-of-00002.safetensors",
+        "bytes": 4792272488
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "bytes": 4798702184
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "bytes": 4170342232
+      }
+    ],
+    "weightBytes": 13761316904,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 1804459584,
+      "U8": 19110297600
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  },
+  {
+    "artifactId": "artifact:zai-org-glm-4-7-flash-official-checkpoint",
+    "repositoryId": "zai-org/GLM-4.7-Flash",
+    "repositoryRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+    "baseRevisionMeaning": "self: official checkpoint itself; not a claim about its historical training base",
+    "selectedFiles": [
+      {
+        "path": "model-00001-of-00048.safetensors",
+        "bytes": 1438134344
+      },
+      {
+        "path": "model-00002-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00003-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00004-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00005-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00006-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00007-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00008-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00009-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00010-of-00048.safetensors",
+        "bytes": 1270648128
+      },
+      {
+        "path": "model-00011-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00012-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00013-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00014-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00015-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00016-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00017-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00018-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00019-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00020-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00021-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00022-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00023-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00024-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00025-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00026-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00027-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00028-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00029-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00030-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00031-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00032-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00033-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00034-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00035-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00036-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00037-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00038-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00039-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00040-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00041-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00042-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00043-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00044-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00045-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00046-of-00048.safetensors",
+        "bytes": 1270648328
+      },
+      {
+        "path": "model-00047-of-00048.safetensors",
+        "bytes": 2539429936
+      },
+      {
+        "path": "model-00048-of-00048.safetensors",
+        "bytes": 1287438264
+      }
+    ],
+    "weightBytes": 62444175504,
+    "excluded": "tokenizer, config, alternative formats, downloaded caches, temporary and converted-layer storage",
+    "storedTensorElementsByDtype": {
+      "BF16": 31221485568,
+      "F32": 3008
+    },
+    "countWarning": "Stored elements are not unique/trainable/logical parameter counts."
+  }
+]

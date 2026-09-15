@@ -1,0 +1,261 @@
+[
+  {
+    "repositoryId": "Qwen/Qwen3-0.6B-GGUF",
+    "repositoryRevision": "23749fefcc72300e3a2ad315e1317431b06b590a",
+    "baseModelRepository": "Qwen/Qwen3-0.6B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-0.6B-Q8_0.gguf",
+        "bytes": 639446688
+      }
+    ],
+    "selectedWeightBytes": 639446688,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-0-6b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-1.7B-GGUF",
+    "repositoryRevision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+    "baseModelRepository": "Qwen/Qwen3-1.7B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-1.7B-Q8_0.gguf",
+        "bytes": 1834426016
+      }
+    ],
+    "selectedWeightBytes": 1834426016,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-1-7b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-14B-GGUF",
+    "repositoryRevision": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "baseModelRepository": "Qwen/Qwen3-14B",
+    "baseRevision": null,
+    "variant": "Q4_K_M",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-14B-Q4_K_M.gguf",
+        "bytes": 9001752960
+      }
+    ],
+    "selectedWeightBytes": 9001752960,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-14b-gguf-q4-k-m-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-14B-GGUF",
+    "repositoryRevision": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "baseModelRepository": "Qwen/Qwen3-14B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-14B-Q8_0.gguf",
+        "bytes": 15698533728
+      }
+    ],
+    "selectedWeightBytes": 15698533728,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-14b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-30B-A3B-GGUF",
+    "repositoryRevision": "e4d4bafdfb96a411a163846265362aceb0b9c63a",
+    "baseModelRepository": "Qwen/Qwen3-30B-A3B",
+    "baseRevision": null,
+    "variant": "Q4_K_M",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-30B-A3B-Q4_K_M.gguf",
+        "bytes": 18556685824
+      }
+    ],
+    "selectedWeightBytes": 18556685824,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-30b-a3b-gguf-q4-k-m-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-30B-A3B-GGUF",
+    "repositoryRevision": "e4d4bafdfb96a411a163846265362aceb0b9c63a",
+    "baseModelRepository": "Qwen/Qwen3-30B-A3B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-30B-A3B-Q8_0.gguf",
+        "bytes": 32483931648
+      }
+    ],
+    "selectedWeightBytes": 32483931648,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-30b-a3b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-32B-GGUF",
+    "repositoryRevision": "938a7432affaec9157f883a87164e2646ae17555",
+    "baseModelRepository": "Qwen/Qwen3-32B",
+    "baseRevision": null,
+    "variant": "Q4_K_M",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-32B-Q4_K_M.gguf",
+        "bytes": 19762149024
+      }
+    ],
+    "selectedWeightBytes": 19762149024,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-32b-gguf-q4-k-m-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-32B-GGUF",
+    "repositoryRevision": "938a7432affaec9157f883a87164e2646ae17555",
+    "baseModelRepository": "Qwen/Qwen3-32B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-32B-Q8_0.gguf",
+        "bytes": 34817718912
+      }
+    ],
+    "selectedWeightBytes": 34817718912,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-32b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-4B-GGUF",
+    "repositoryRevision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "baseModelRepository": "Qwen/Qwen3-4B",
+    "baseRevision": null,
+    "variant": "Q4_K_M",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-4B-Q4_K_M.gguf",
+        "bytes": 2497280256
+      }
+    ],
+    "selectedWeightBytes": 2497280256,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-4b-gguf-q4-k-m-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-4B-GGUF",
+    "repositoryRevision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "baseModelRepository": "Qwen/Qwen3-4B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-4B-Q8_0.gguf",
+        "bytes": 4280404704
+      }
+    ],
+    "selectedWeightBytes": 4280404704,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-4b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-8B-GGUF",
+    "repositoryRevision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "baseModelRepository": "Qwen/Qwen3-8B",
+    "baseRevision": null,
+    "variant": "Q4_K_M",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-8B-Q4_K_M.gguf",
+        "bytes": 5027783488
+      }
+    ],
+    "selectedWeightBytes": 5027783488,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8b-gguf-q4-k-m-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-8B-GGUF",
+    "repositoryRevision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "baseModelRepository": "Qwen/Qwen3-8B",
+    "baseRevision": null,
+    "variant": "Q8_0",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "Qwen3-8B-Q8_0.gguf",
+        "bytes": 8709518112
+      }
+    ],
+    "selectedWeightBytes": 8709518112,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-8b-gguf-q8-0-files"
+    ]
+  },
+  {
+    "repositoryId": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+    "repositoryRevision": "dcaee4d4dfc5ee71ad501f01f530e5652438fde0",
+    "baseModelRepository": null,
+    "baseRevision": null,
+    "variant": "FP8",
+    "authority": "official",
+    "selectedWeightFiles": [
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "bytes": 10001462368
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "bytes": 10000577408
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "bytes": 10000577448
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "bytes": 1173001360
+      }
+    ],
+    "selectedWeightBytes": 31175618584,
+    "status": "needs-base-revision",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-coder-30b-a3b-instruct-fp8-fp8-files"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "memory-claim:gptoss20",
+    "modelRepository": "openai/gpt-oss-20b",
+    "reportedMemoryGB": 16,
+    "weightFormat": "native mixed MXFP4 checkpoint",
+    "basis": "publisher memory claim",
+    "sourceIds": [
+      "gptoss-introduction"
+    ]
+  },
+  {
+    "id": "memory-claim:gptoss120",
+    "modelRepository": "openai/gpt-oss-120b",
+    "reportedMemoryGB": 80,
+    "weightFormat": "native mixed MXFP4 checkpoint",
+    "basis": "publisher memory claim",
+    "sourceIds": [
+      "gptoss-introduction"
+    ]
+  }
+]

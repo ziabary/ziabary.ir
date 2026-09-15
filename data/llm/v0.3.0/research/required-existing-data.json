@@ -1,0 +1,90 @@
+[
+  {
+    "path": "data/llm/v0.2.0/data/airllm-observations.json",
+    "sha256": "e9bf7e45e3d8be95cfc035396d4ec0da1359dd1cc3ae48564695080282b15674"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/artifacts.json",
+    "sha256": "4ef57c55a4f1934c93a68bf7adeaa54e365497d61f55c2ddf8b7dcf61791d49d"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/compatibility.json",
+    "sha256": "88e369ff1f8aa7c2acb84d797451d9424fde1e46adf8d7cb6716e3f994c954d7"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/cpu-fit-matrix.json",
+    "sha256": "723a289ece56b49587ea6fc1a3837d8cf7ec228dfb3cd8e1817b9700edfbae5d"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/cpu-profiles.json",
+    "sha256": "2c16ef1de6784162895c8a7ab4971c2f3e01828048a0d7df99b7f3d2c634c9b3"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/hardware-fit-matrix.json",
+    "sha256": "9f749c963c8164d59716bfc947302a1c58ca736d43b086695238cbb83ad25b96"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/hardware.json",
+    "sha256": "3bb4e630a95d0f95763a442e778b0d9f90fa36f71865d78669ea9068a5ea57f1"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/internal-links.json",
+    "sha256": "e8c2418dc6febe8b48d10581c40c0832c0e8bf342a33c1a1de577fae2ff05dec"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/memory-policy.json",
+    "sha256": "a4b930f1bae2ad3fd4d218e43f4568601c35b4fa0fab3900627318a6f470a2b9"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/memory-scenarios.json",
+    "sha256": "ba707c5888557cef4add3620458e49d568b8d06a16941ecdd4cb29d3738f6ad2"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/model-aliases.json",
+    "sha256": "48651204a0620e4d4a6e33b3631b5b06f9a5c8f2b8dfa56df7c2925f0501c928"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/published-memory-claims.json",
+    "sha256": "9c3aeae7fdefcc71aaf68ce813834dd9ad781b87d92cacaa56b5e99e39456b31"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/published-performance.json",
+    "sha256": "9ad006fb0643531cc15f86f545962f5614f94f5478dbb74589be0ff790b1db85"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/published-quality.json",
+    "sha256": "de337cadfd77d6f5f83e2d0b5f48ccd573c9a0687b1a231c4262c34694705e31"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/quantization-hardware-support.json",
+    "sha256": "439ce2997de851910493bb8ecc63dd085402bdad55a38140aa447424f3873d9b"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/slm-cpu-planning.json",
+    "sha256": "a5f9f77935e7bf2afb91180964111040bbb8de041d246baf38e6fc3e94cc9d0c"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/software-guidance.json",
+    "sha256": "fcfaaa178a9fffa57f49e4689fa2e73baedcc78d4afd9c0966bc3c34a7cc0a86"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/source-review-notes.json",
+    "sha256": "6505dc286e496aeae3bff0dc206897531df1d9f74790b86881bbfba41d4cb2eb"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/sources.json",
+    "sha256": "31f1ead3408cf143652915b407e386fa3cb45c5435a235b8278cdd1e6d7b0464"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/specialized-models.json",
+    "sha256": "f9db1ebc226369065c2f6bbba9e7ef5731093bf8436b50b6fd63516ffcd82dbe"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/task-starting-points.json",
+    "sha256": "1da808a0a8398878c9fc4a41b237a5355bb4126e49eb3520215fecec8cff15b0"
+  },
+  {
+    "path": "data/llm/v0.2.0/data/workloads.json",
+    "sha256": "73131c3bef5a3abfd9310ad6f867c8e5362f6d0f29f52d557ded3c38ee5bd1ca"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "specialized:qwen-embedding-0-6b",
+    "modelRepository": "Qwen/Qwen3-Embedding-0.6B",
+    "task": "embedding",
+    "declaredMaxSequenceTokens": 32768,
+    "defaultEmbeddingDimensions": 1024,
+    "dimensionsConfigurable": true,
+    "publishedMetric": "MTEB Multilingual Mean(Task)",
+    "publishedScore": 64.33,
+    "denseFloat32VectorGiBPerMillionDocuments": 3.814697265625,
+    "vectorMemoryScope": "raw dense vectors only; excludes ANN structures, metadata, model weights and runtime",
+    "sourceIds": [
+      "qwen-embedding"
+    ]
+  },
+  {
+    "id": "specialized:qwen-embedding-4b",
+    "modelRepository": "Qwen/Qwen3-Embedding-4B",
+    "task": "embedding",
+    "declaredMaxSequenceTokens": 32768,
+    "defaultEmbeddingDimensions": 2560,
+    "dimensionsConfigurable": true,
+    "publishedMetric": "MTEB Multilingual Mean(Task)",
+    "publishedScore": 69.45,
+    "denseFloat32VectorGiBPerMillionDocuments": 9.5367431640625,
+    "vectorMemoryScope": "raw dense vectors only; excludes ANN structures, metadata, model weights and runtime",
+    "sourceIds": [
+      "qwen-embedding"
+    ]
+  },
+  {
+    "id": "specialized:qwen-embedding-8b",
+    "modelRepository": "Qwen/Qwen3-Embedding-8B",
+    "task": "embedding",
+    "declaredMaxSequenceTokens": 32768,
+    "defaultEmbeddingDimensions": 4096,
+    "dimensionsConfigurable": true,
+    "publishedMetric": "MTEB Multilingual Mean(Task)",
+    "publishedScore": 70.58,
+    "denseFloat32VectorGiBPerMillionDocuments": 15.2587890625,
+    "vectorMemoryScope": "raw dense vectors only; excludes ANN structures, metadata, model weights and runtime",
+    "sourceIds": [
+      "qwen-embedding"
+    ]
+  },
+  {
+    "id": "specialized:qwen-reranker-0-6b",
+    "modelRepository": "Qwen/Qwen3-Reranker-0.6B",
+    "task": "reranking",
+    "declaredMaxSequenceTokens": 32768,
+    "publishedMetric": "MTEB-R main score; rerank top 100 from Qwen3-Embedding-0.6B",
+    "publishedScore": 65.8,
+    "sourceIds": [
+      "qwen-reranker",
+      "qwen-embedding-paper"
+    ]
+  },
+  {
+    "id": "specialized:qwen-reranker-4b",
+    "modelRepository": "Qwen/Qwen3-Reranker-4B",
+    "task": "reranking",
+    "declaredMaxSequenceTokens": 32768,
+    "publishedMetric": "MTEB-R main score; rerank top 100 from Qwen3-Embedding-0.6B",
+    "publishedScore": 69.76,
+    "sourceIds": [
+      "qwen-reranker",
+      "qwen-embedding-paper"
+    ]
+  },
+  {
+    "id": "specialized:qwen-reranker-8b",
+    "modelRepository": "Qwen/Qwen3-Reranker-8B",
+    "task": "reranking",
+    "declaredMaxSequenceTokens": 32768,
+    "publishedMetric": "MTEB-R main score; rerank top 100 from Qwen3-Embedding-0.6B",
+    "publishedScore": 69.02,
+    "sourceIds": [
+      "qwen-reranker",
+      "qwen-embedding-paper"
+    ]
+  }
+]

@@ -1,0 +1,367 @@
+{
+  "unitBytes": 1073741824,
+  "formula": "KV bytes = 2 * layers * KV heads * head dimension * bytes per element * tokens per active request * active requests",
+  "assumptions": [
+    "Input, history and output share the token budget.",
+    "All selected quantized weights and FP16/BF16 KV are GPU-resident.",
+    "No prefix sharing, KV quantization or CPU/disk offload in the Q4_K_M planning cases.",
+    "Weight-file bytes are a planning proxy; runtime packing and workspaces can differ.",
+    "2 GiB runtime reserve is an editorial planning allowance, not a measured maximum.",
+    "Nominal 24/48 GB marketing classes are approximated by 24/48 GiB planning budgets; actual free memory must replace these budgets for deployment.",
+    "No token/s, active-user capacity or SLA follows from a memory-fit result."
+  ],
+  "modelTable": [
+    {
+      "model": "Qwen3-4B",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 36,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 2.3257734775543213,
+      "kvGiB": 1.125,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 5.450773477554321,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "named-model-config; assumes unchanged architecture in official GGUF",
+      "architectureSources": [
+        {
+          "id": "qwen-qwen3-4b-gguf-files",
+          "url": "https://huggingface.co/api/models/Qwen/Qwen3-4B-GGUF/revision/bc640142c66e1fdd12af0bd68f40445458f3869b?blobs=true",
+          "title": "Qwen/Qwen3-4B-GGUF file metadata",
+          "publisher": "Qwen",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "22658c7e5a64dc4cf819d9c6206d6de41c84470bd1e090955ac79c0b5fa6a44f",
+          "documentRevision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+        },
+        {
+          "id": "qwen-qwen3-4b-config",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+          "title": "Qwen3-4B architecture configuration",
+          "publisher": "Qwen",
+          "kind": "primary-documentation",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+          "documentRevision": "1cfa9a7208912126459214e8b04321603b3df60c"
+        }
+      ]
+    },
+    {
+      "model": "Llama-3.1-8B-Instruct",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 32,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 4.5827955305576324,
+      "kvGiB": 1.0,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 7.5827955305576324,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "exact-artifact-GGUF-header",
+      "architectureSources": [
+        {
+          "id": "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+          "url": "https://huggingface.co/api/models/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF?blobs=true",
+          "title": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF file metadata",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "5d8d01aebd4bab9d168b87aea87495ecf496d09a78545536356cab600180b7e5",
+          "documentRevision": "bf5b95e96dac0462e2a09145ec66cae9a3f12067",
+          "revisionUrl": "https://huggingface.co/api/models/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/revision/bf5b95e96dac0462e2a09145ec66cae9a3f12067?blobs=true"
+        },
+        {
+          "id": "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header",
+          "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/bf5b95e96dac0462e2a09145ec66cae9a3f12067/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+          "title": "Q4_K_M GGUF header",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentRevision": "bf5b95e96dac0462e2a09145ec66cae9a3f12067",
+          "locator": "first 131072 bytes; GGUF key/value metadata",
+          "headerSha256": "b24fca4958df327502c23ea9243c84d536c910504a4abe7ff12cd33d9129e2ba",
+          "extractedMetadataSha256": "13020277a7e31fc2b3ffe4a3573f2a42d215b9e80f944749ba62a3a6acd26ffa"
+        }
+      ]
+    },
+    {
+      "model": "aya-expanse-8b",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 32,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 4.7096821665763855,
+      "kvGiB": 1.0,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 7.7096821665763855,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "exact-artifact-GGUF-header",
+      "architectureSources": [
+        {
+          "id": "bartowski--aya-expanse-8b-GGUF-meta",
+          "url": "https://huggingface.co/api/models/bartowski/aya-expanse-8b-GGUF?blobs=true",
+          "title": "bartowski/aya-expanse-8b-GGUF file metadata",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "f2b8c523e78bba677e0411246ad54bd1b38dc989c50f557e21bf3f4251ba1d5e",
+          "documentRevision": "f9d62ed0c58e6f2ae17975df990b1b8a4013b596",
+          "revisionUrl": "https://huggingface.co/api/models/bartowski/aya-expanse-8b-GGUF/revision/f9d62ed0c58e6f2ae17975df990b1b8a4013b596?blobs=true"
+        },
+        {
+          "id": "bartowski-aya-expanse-8b-gguf-q4-k-m-header",
+          "url": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF/resolve/f9d62ed0c58e6f2ae17975df990b1b8a4013b596/aya-expanse-8b-Q4_K_M.gguf",
+          "title": "Q4_K_M GGUF header",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentRevision": "f9d62ed0c58e6f2ae17975df990b1b8a4013b596",
+          "locator": "first 131072 bytes; GGUF key/value metadata",
+          "headerSha256": "78ac5ccbc62050d939c19a481a8c7d7de7b07742a0679759654c2a1f21e7fc1a",
+          "extractedMetadataSha256": "a65c75d6e983c55589d10b139e5d8d7d5c51515eb9672de6638573b8bfa2b98a"
+        }
+      ]
+    },
+    {
+      "model": "Qwen3-14B",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 40,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 8.383535742759705,
+      "kvGiB": 1.25,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 11.633535742759705,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "named-model-config; assumes unchanged architecture in official GGUF",
+      "architectureSources": [
+        {
+          "id": "qwen-qwen3-14b-gguf-files",
+          "url": "https://huggingface.co/api/models/Qwen/Qwen3-14B-GGUF/revision/530227a7d994db8eca5ab5ced2fb692b614357fd?blobs=true",
+          "title": "Qwen/Qwen3-14B-GGUF file metadata",
+          "publisher": "Qwen",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "db2cf7d471d913cdbed17d29464015bcfcd0e07bf0be0cd5ecf4b3946df7bdb6",
+          "documentRevision": "530227a7d994db8eca5ab5ced2fb692b614357fd"
+        },
+        {
+          "id": "qwen-qwen3-14b-config",
+          "url": "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/config.json",
+          "title": "Qwen3-14B architecture configuration",
+          "publisher": "Qwen",
+          "kind": "primary-documentation",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "e73c3664ca09b10a673fef0c22e8a6b456201d49bd4713c9691f775720e8857a",
+          "documentRevision": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+        }
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Qwen-14B",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 48,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 8.370829969644547,
+      "kvGiB": 1.5,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 11.870829969644547,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "exact-artifact-GGUF-header",
+      "architectureSources": [
+        {
+          "id": "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+          "url": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF?blobs=true",
+          "title": "bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF file metadata",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "1600c291ee749f922fbdf590ce45d86e6e1cd0c6db03f8afc674d4a45e786ec1",
+          "documentRevision": "9f5d77d401799416e0702290a691038b44012e0c",
+          "revisionUrl": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/revision/9f5d77d401799416e0702290a691038b44012e0c?blobs=true"
+        },
+        {
+          "id": "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header",
+          "url": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/resolve/9f5d77d401799416e0702290a691038b44012e0c/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf",
+          "title": "Q4_K_M GGUF header",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentRevision": "9f5d77d401799416e0702290a691038b44012e0c",
+          "locator": "first 131072 bytes; GGUF key/value metadata",
+          "headerSha256": "7b4f88c8a4b404159023a38f206ad9e6de2373efa0928ebf596937ca5ddb2e5d",
+          "extractedMetadataSha256": "c1bfce1b4c3c6f89257b330fcb784bc11eede1352f9e632e49f259d9f872a709"
+        }
+      ]
+    },
+    {
+      "model": "Qwen3-Coder-30B-A3B-Instruct",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 48,
+      "kvHeads": 4,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 17.282263904809952,
+      "kvGiB": 0.75,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 20.032263904809952,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+      "architectureSources": [
+        {
+          "id": "v03-planning-a741640d4d1da99d",
+          "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/raw/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+          "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct — memory planning specification",
+          "publisher": "Qwen / Alibaba Cloud",
+          "accessedOn": "2026-09-15",
+          "kind": "model-configuration",
+          "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+        },
+        {
+          "id": "v03-planning-0ee810b7aac3ad46",
+          "url": "https://huggingface.co/api/models/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF?blobs=true",
+          "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct — memory planning specification",
+          "publisher": "unsloth",
+          "accessedOn": "2026-09-15",
+          "kind": "artifact-metadata",
+          "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+        }
+      ]
+    },
+    {
+      "model": "Qwen3-32B",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 64,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 18.404935508966446,
+      "kvGiB": 2.0,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 22.404935508966446,
+      "withinNominal24GiB": true,
+      "withinNominal48GiB": true,
+      "architectureBasis": "named-model-config; assumes unchanged architecture in official GGUF",
+      "architectureSources": [
+        {
+          "id": "qwen-qwen3-32b-gguf-files",
+          "url": "https://huggingface.co/api/models/Qwen/Qwen3-32B-GGUF/revision/938a7432affaec9157f883a87164e2646ae17555?blobs=true",
+          "title": "Qwen/Qwen3-32B-GGUF file metadata",
+          "publisher": "Qwen",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "2a8caf45701c4905f64039929395a3c41fa8cec4cc1efe8badaefb95f5fd6d4d",
+          "documentRevision": "938a7432affaec9157f883a87164e2646ae17555"
+        },
+        {
+          "id": "qwen-qwen3-32b-config",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+          "title": "Qwen3-32B architecture configuration",
+          "publisher": "Qwen",
+          "kind": "primary-documentation",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb",
+          "documentRevision": "9216db5781bf21249d130ec9da846c4624c16137"
+        }
+      ]
+    },
+    {
+      "model": "Llama-3.1-70B-Instruct",
+      "basis": "Calculated memory planning, not a speed benchmark",
+      "tokensPerActiveSequence": 8192,
+      "activeSequences": 1,
+      "layers": 80,
+      "kvHeads": 8,
+      "headDim": 128,
+      "kvBytesPerElement": 2,
+      "weightFileGiB": 39.60020691156387,
+      "kvGiB": 2.5,
+      "editorialRuntimeReserveGiB": 2,
+      "plannedGiB": 44.10020691156387,
+      "withinNominal24GiB": false,
+      "withinNominal48GiB": true,
+      "architectureBasis": "exact-artifact-GGUF-header",
+      "architectureSources": [
+        {
+          "id": "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+          "url": "https://huggingface.co/api/models/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF?blobs=true",
+          "title": "bartowski/Meta-Llama-3.1-70B-Instruct-GGUF file metadata",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentSha256": "5a118e638b1b26510c89b8702db91c27ae2047555a24de13d5d9075333eead35",
+          "documentRevision": "83fb6e83d0a8aada42d499259bc929d922e9a558",
+          "revisionUrl": "https://huggingface.co/api/models/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/revision/83fb6e83d0a8aada42d499259bc929d922e9a558?blobs=true"
+        },
+        {
+          "id": "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header",
+          "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/resolve/83fb6e83d0a8aada42d499259bc929d922e9a558/Meta-Llama-3.1-70B-Instruct-Q4_K_M.gguf",
+          "title": "Q4_K_M GGUF header",
+          "publisher": "bartowski",
+          "kind": "primary-artifact-metadata",
+          "accessedOn": "2026-09-15",
+          "documentRevision": "83fb6e83d0a8aada42d499259bc929d922e9a558",
+          "locator": "first 131072 bytes; GGUF key/value metadata",
+          "headerSha256": "4a57e212306895edb762bd9c8b2a6e5d2e99fcd5525640b5a9d98c5e4efaeb07",
+          "extractedMetadataSha256": "37833a6dc15f21cc15363d5be3c19a856ef00f49f5dec2117e4e5d2c7efa506b"
+        }
+      ]
+    },
+    {
+      "model": "gpt-oss-20b",
+      "basis": "Publisher deployment claim and compressed-weight artifact; compatible execution path required",
+      "publisherStatedMemoryGB": 16,
+      "source": "https://huggingface.co/openai/gpt-oss-20b",
+      "weightFileGiB": 11.277911961078644,
+      "scope": "Publisher claim is not an 8K-context benchmark or a per-engine memory guarantee. No dense/full-attention KV formula applied to this mixed-attention model. No claim of native FP4 Tensor Core support on RTX 4090."
+    }
+  ],
+  "coderExample": {
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+    "rows": [
+      {
+        "tokensPerRequest": 8192,
+        "oneRequestGiB": 0.75,
+        "fourRequestsGiB": 3.0
+      },
+      {
+        "tokensPerRequest": 32768,
+        "oneRequestGiB": 3.0,
+        "fourRequestsGiB": 12.0
+      },
+      {
+        "tokensPerRequest": 65536,
+        "oneRequestGiB": 6.0,
+        "fourRequestsGiB": 24.0
+      }
+    ],
+    "fourRequests32kWeightPlusKVGiB": 29.282263904809952,
+    "runtimeReserveIncludedInLastValue": false
+  }
+}

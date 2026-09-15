@@ -1,0 +1,17 @@
+{
+  "id": "memory-policy:gguf-fp16-kv-v1",
+  "weightMemoryProxy": "sum of selected GGUF file bytes; includes file metadata; runtime repacking can differ",
+  "kvCachePrecision": "FP16",
+  "kvBytesPerElement": 2,
+  "formula": "kvBytes = 2 * layers * kvHeads * headDim * totalContextTokens * activeSequences * 2",
+  "gpuReserveGiBPerDevice": 2,
+  "cpuReserveGiB": 4,
+  "reserveBasis": "editorial planning assumption, not a measured allocation or universal upper bound",
+  "gpuCapacityBasis": "nominal memory class treated as GiB planning budget; replace with runtime-reported free MiB for exact deployment",
+  "notesFa": [
+    "زمینه شامل ورودی، تاریخچه و خروجی است.",
+    "برای برنامه‌ریزی اجرای متن با llama.cpp؛ پیش‌فرض سرویس پرظرفیت vLLM نیست.",
+    "آستانهٔ حافظه، کیفیت پاسخ یا ظرفیت سرویس را تعیین نمی‌کند.",
+    "در دو کارت، مجموع حافظه فقط غربال اولیه است؛ سهم هر کارت و روش تقسیم جدا کنترل می‌شود."
+  ]
+}

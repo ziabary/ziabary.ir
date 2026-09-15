@@ -47,7 +47,7 @@
     { label: t.media, href: locale === 'fa' ? '/media/' : `/${locale}/media/` },
     { label: t.resume, href: locale === 'fa' ? '/resume/' : `/${locale}/resume/` }
   ];
-  $: visibleSocialLinks = locale === 'fa' ? socialLinks : socialLinks.filter((social) => social.label !== 'Virgool');
+  $: visibleSocialLinks = locale === 'fa' ? socialLinks : socialLinks.filter((social) => social.label !== 'Virgool' && social.label !== 'Bale');
   function toggleTheme() {
     dark = !dark;
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
@@ -106,15 +106,23 @@
   <div class="wrap footer-main">
     <div class="footer-identity">
       <b>{locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}</b>
-      <a href="mailto:ziabary@targoman.com">ziabary@targoman.com</a>
+      {#if locale === 'fa'}
+        <a href="https://ble.ir/HoomasGov" target="_blank" rel="noreferrer" style:direction="rtl">
+          مطالب مهم را در کانال بله دنبال کنید ↗
+        </a>
+      {/if}
     </div>
     <nav class="footer-nav" aria-label={locale === 'fa' ? 'پیوندهای پایین صفحه' : 'Footer navigation'}>
       {#each navigation as item}<a href={item.href}>{item.label}</a>{/each}
     </nav>
     <div class="footer-socials">
       {#each visibleSocialLinks as social}
-        <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label} title={social.label}>
-          <i class={social.icon} aria-hidden="true"></i>
+        <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label === 'Bale' && locale === 'fa' ? 'کانال بله؛ اطلاع‌رسانی مطالب مهم' : social.label} title={social.label === 'Bale' && locale === 'fa' ? 'کانال بله' : social.label}>
+          {#if social.image}
+            <img src={social.image} alt="" width="18" height="18" />
+          {:else}
+            <i class={social.icon} aria-hidden="true"></i>
+          {/if}
         </a>
       {/each}
     </div>
@@ -123,3 +131,17 @@
 </footer>
 
 {#if searchOpen}<SearchDialog {locale} onclose={() => searchOpen = false} />{/if}
+
+<style>
+  /* Keep the brand, menu and language picker inside a 320px viewport. */
+  @media(max-width:400px){
+    .nav-wrap{gap:8px}
+    .nav-wrap .brand{min-width:0;flex:1}
+    .brand b{font-size:14px;white-space:nowrap}
+    .brand span{font-size:7px;letter-spacing:1px}
+    .menu-button{padding:4px;flex-shrink:0}
+    .nav-tools{gap:4px}
+    .nav-tools>button{padding-inline:8px}
+    .nav-wrap :global(.language-control summary){padding-inline:8px;font-size:11px;gap:5px}
+  }
+</style>

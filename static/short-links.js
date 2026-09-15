@@ -1,3 +1,4 @@
+// Compatibility for previously cached home pages. New builds redirect inline.
 import { resolveShortLink } from '/short-link-core.js';
 
 if (location.pathname === '/' && new URLSearchParams(location.search).has('t')) {

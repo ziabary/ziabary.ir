@@ -1,0 +1,378 @@
+﻿softwareReleaseId,capability,status,provision,evidenceIds,note
+software-release:ollama-v0-34-0,task-generation,conditional,native,evidence:software-ollama-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,task-embedding,conditional,native,evidence:software-ollama-task-embedding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,queueing,conditional,native,evidence:software-ollama-queueing,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,concurrency,conditional,native,evidence:software-ollama-concurrency,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,model-load-unload,conditional,native,evidence:software-ollama-model-load-unload,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,multi-model,conditional,native,evidence:software-ollama-multi-model,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,cpu-gpu-offload,conditional,native,evidence:software-ollama-cpu-gpu-offload,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,multi-gpu-sharding,conditional,native,evidence:software-ollama-multi-gpu-sharding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,streaming,conditional,native,evidence:software-ollama-streaming,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,structured-output,conditional,native,evidence:software-ollama-structured-output,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,tool-use,conditional,native,evidence:software-ollama-tool-use,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:ollama-v0-34-0,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:ollama-v0-34-0,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,task-generation,conditional,native,evidence:software-vllm-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,continuous-batching,conditional,native,evidence:software-vllm-continuous-batching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,prefix-caching,conditional,native,evidence:software-vllm-prefix-caching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,speculative-decoding,conditional,native,evidence:software-vllm-speculative-decoding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,multi-gpu-sharding,conditional,native,evidence:software-vllm-multi-gpu-sharding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,streaming,conditional,native,evidence:software-vllm-streaming,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,structured-output,conditional,native,evidence:software-vllm-structured-output,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,tool-use,conditional,native,evidence:software-vllm-tool-use,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,parser-selection,conditional,native,evidence:software-vllm-parser-selection,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:vllm-v0-29-0,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:vllm-v0-29-0,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,task-generation,conditional,native,evidence:software-sglang-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,task-embedding,conditional,native,evidence:software-sglang-task-embedding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,continuous-batching,conditional,native,evidence:software-sglang-continuous-batching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,prefix-caching,conditional,native,evidence:software-sglang-prefix-caching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,speculative-decoding,conditional,native,evidence:software-sglang-speculative-decoding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,multi-gpu-sharding,conditional,native,evidence:software-sglang-multi-gpu-sharding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,structured-output,conditional,native,evidence:software-sglang-structured-output,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:sglang-v0-5-19,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:sglang-v0-5-19,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,task-generation,conditional,native,evidence:software-llama-cpp-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,task-embedding,conditional,native,evidence:software-llama-cpp-task-embedding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,task-reranking,conditional,native,evidence:software-llama-cpp-task-reranking,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,concurrency,conditional,native,evidence:software-llama-cpp-concurrency,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,continuous-batching,conditional,native,evidence:software-llama-cpp-continuous-batching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,speculative-decoding,conditional,native,evidence:software-llama-cpp-speculative-decoding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,cpu-gpu-offload,conditional,native,evidence:software-llama-cpp-cpu-gpu-offload,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,kv-cache-offload,conditional,native,evidence:software-llama-cpp-kv-cache-offload,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,structured-output,conditional,native,evidence:software-llama-cpp-structured-output,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,tool-use,conditional,native,evidence:software-llama-cpp-tool-use,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:llama-cpp-v0-4-1,monitoring,conditional,native,evidence:software-llama-cpp-monitoring,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,metrics,conditional,native,evidence:software-llama-cpp-metrics,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,health-check,conditional,native,evidence:software-llama-cpp-health-check,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,authentication,conditional,native,evidence:software-llama-cpp-authentication,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:llama-cpp-v0-4-1,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,task-generation,conditional,native,evidence:software-tensorrt-llm-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tensorrt-llm-v1-2-1,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,continuous-batching,conditional,native,evidence:software-tensorrt-llm-continuous-batching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tensorrt-llm-v1-2-1,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,prefix-caching,conditional,native,evidence:software-tensorrt-llm-prefix-caching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tensorrt-llm-v1-2-1,speculative-decoding,conditional,native,evidence:software-tensorrt-llm-speculative-decoding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tensorrt-llm-v1-2-1,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,multi-gpu-sharding,conditional,native,evidence:software-tensorrt-llm-multi-gpu-sharding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tensorrt-llm-v1-2-1,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tensorrt-llm-v1-2-1,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,task-generation,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,concurrency,conditional,native,evidence:software-triton-concurrency,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:triton-v2-72-0,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,multi-model,conditional,native,evidence:software-triton-multi-model,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:triton-v2-72-0,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,monitoring,conditional,native,evidence:software-triton-monitoring,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:triton-v2-72-0,metrics,conditional,native,evidence:software-triton-metrics,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:triton-v2-72-0,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:triton-v2-72-0,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,task-generation,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,task-embedding,conditional,native,evidence:software-tei-task-embedding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tei-v1-9-3,task-reranking,conditional,native,evidence:software-tei-task-reranking,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tei-v1-9-3,task-classification,conditional,native,evidence:software-tei-task-classification,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tei-v1-9-3,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,monitoring,conditional,native,evidence:software-tei-monitoring,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tei-v1-9-3,metrics,conditional,native,evidence:software-tei-metrics,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tei-v1-9-3,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tei-v1-9-3,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,task-generation,conditional,native,evidence:software-airllm-task-generation,مسیر generate برای معماری پشتیبانی‌شده و نسخهٔ وابستگی صحیح؛ inference فقط، آموزش خارج از دامنهٔ این بسته.
+software-release:airllm-v4-0-0,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,layer-wise-loading,conditional,native,evidence:software-airllm-layer-wise-loading,فقط معماری‌های مشخص و وابستگی‌های سازگار در Supported Models؛ وزن و فضای تبدیل باید در دیسک/رم موجود باشد.
+software-release:airllm-v4-0-0,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:airllm-v4-0-0,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,task-generation,conditional,native,evidence:software-transformers-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:transformers-v5-17-0,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,task-classification,conditional,native,evidence:software-transformers-task-classification,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:transformers-v5-17-0,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,continuous-batching,conditional,native,evidence:software-transformers-continuous-batching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:transformers-v5-17-0,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:transformers-v5-17-0,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,task-generation,conditional,external-component,evidence:software-litellm-task-generation,ارسال درخواست به provider/backend پیکربندی‌شده؛ LiteLLM موتور محاسبهٔ وزن مدل نیست.
+software-release:litellm-v1-101-0,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,monitoring,conditional,native,evidence:software-litellm-monitoring,LiteLLM Proxy و پیکربندی ذخیره‌سازی/گزارش‌گیری لازم؛ تفکیک امکانات enterprise حفظ شود.
+software-release:litellm-v1-101-0,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:litellm-v1-101-0,authentication,conditional,native,evidence:software-litellm-authentication,LiteLLM Proxy؛ این قابلیت به صورت خودکار امنیت backend را تضمین نمی‌کند.
+software-release:litellm-v1-101-0,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,task-generation,conditional,external-component,evidence:software-open-webui-task-generation,backend محلی یا خارجی مانند Ollama/vLLM؛ Open WebUI خودش موتور اجرای وزن‌ها نیست.
+software-release:open-webui-v0-11-3,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:open-webui-v0-11-3,authentication,conditional,native,evidence:software-open-webui-authentication,پیکربندی احراز هویت و نقش‌ها مطابق این انتشار؛ امنیت backend جداست.
+software-release:open-webui-v0-11-3,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,task-generation,conditional,native,evidence:software-tgi-task-generation,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,continuous-batching,conditional,native,evidence:software-tgi-continuous-batching,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,model-load-unload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,speculative-decoding,conditional,native,evidence:software-tgi-speculative-decoding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,multi-gpu-sharding,conditional,native,evidence:software-tgi-multi-gpu-sharding,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,streaming,conditional,native,evidence:software-tgi-streaming,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,structured-output,conditional,native,evidence:software-tgi-structured-output,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,monitoring,conditional,native,evidence:software-tgi-monitoring,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,metrics,conditional,native,evidence:software-tgi-metrics,مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است.
+software-release:tgi-v3-3-7,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:tgi-v3-3-7,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,task-generation,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,task-embedding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,task-reranking,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,task-classification,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,queueing,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,concurrency,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,continuous-batching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,admission-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,model-load-unload,conditional,native,evidence:software-lm-studio-release,مدل و backend سازگار؛ انتشار 0.4.24 Build 1.
+software-release:lm-studio-0-4-24-build-1,multi-model,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,cold-start-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,prefix-caching,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,speculative-decoding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,cpu-gpu-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,kv-cache-offload,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,layer-wise-loading,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,multi-gpu-sharding,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,independent-replicas,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,streaming,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,structured-output,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,tool-use,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,reasoning-control,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,model-template-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,parser-selection,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,monitoring,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,metrics,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,health-check,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,authentication,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.
+software-release:lm-studio-0-4-24-build-1,rate-limiting,not-reviewed,,,نبود شاهد به معنی نبود قابلیت نیست.

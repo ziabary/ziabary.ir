@@ -1,0 +1,441 @@
+{
+  "reviewedOn": "2026-09-15",
+  "releaseDates": [
+    {
+      "model": "bge-m3",
+      "releasedOn": "2024-01-30",
+      "evidenceIds": [
+        "evidence:four-tables-release-bge-m3-release"
+      ]
+    },
+    {
+      "model": "bge-reranker-v2-m3",
+      "releasedOn": "2024-03-18",
+      "evidenceIds": [
+        "evidence:four-tables-release-bge-reranker-v2-release"
+      ]
+    },
+    {
+      "model": "aya-expanse-32b",
+      "releasedOn": "2024-10-24",
+      "evidenceIds": [
+        "evidence:four-tables-release-aya-expanse-release"
+      ]
+    },
+    {
+      "model": "aya-expanse-8b",
+      "releasedOn": "2024-10-24",
+      "evidenceIds": [
+        "evidence:four-tables-release-aya-expanse-release"
+      ]
+    },
+    {
+      "model": "tiny-aya-global",
+      "releasedOn": "2026-02-17",
+      "evidenceIds": [
+        "evidence:four-tables-release-tiny-aya-release"
+      ]
+    },
+    {
+      "model": "SmolLM2-1.7B-Instruct",
+      "releasedOn": null,
+      "evidenceIds": []
+    },
+    {
+      "model": "SmolLM2-135M-Instruct",
+      "releasedOn": null,
+      "evidenceIds": []
+    },
+    {
+      "model": "SmolLM2-360M-Instruct",
+      "releasedOn": null,
+      "evidenceIds": []
+    },
+    {
+      "model": "SmolLM3-3B",
+      "releasedOn": "2025-07-08",
+      "evidenceIds": [
+        "evidence:four-tables-release-smollm3-release"
+      ]
+    },
+    {
+      "model": "Qwen3-0.6B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-1.7B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-14B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-32B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-4B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-8B",
+      "releasedOn": "2025-04-29",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-Coder-30B-A3B-Instruct",
+      "releasedOn": null,
+      "evidenceIds": []
+    },
+    {
+      "model": "Qwen3-Embedding-0.6B",
+      "releasedOn": "2025-06-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-embedding-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-Embedding-4B",
+      "releasedOn": "2025-06-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-embedding-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-Embedding-8B",
+      "releasedOn": "2025-06-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-embedding-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-Reranker-0.6B",
+      "releasedOn": "2025-06-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-embedding-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-Reranker-4B",
+      "releasedOn": "2025-06-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-embedding-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-Reranker-8B",
+      "releasedOn": "2025-06-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-embedding-launch"
+      ]
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "releasedOn": "2025-10-15",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-vl-4b-and-8b-release"
+      ]
+    },
+    {
+      "model": "Qwen3.5-2B",
+      "releasedOn": "2026-03-02",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-5-small-models-release"
+      ]
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "releasedOn": "2026-02-24",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-5-medium-models-release"
+      ]
+    },
+    {
+      "model": "Qwen3.5-4B",
+      "releasedOn": "2026-03-02",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-5-small-models-release"
+      ]
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "releasedOn": "2026-03-02",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-5-small-models-release"
+      ]
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "releasedOn": "2026-08-14",
+      "evidenceIds": [
+        "evidence:four-tables-release-qwen3-8-27b-release"
+      ]
+    },
+    {
+      "model": "Olmo-3-7B-Instruct",
+      "releasedOn": "2025-11-20",
+      "evidenceIds": [
+        "evidence:four-tables-release-olmo-3-7b-instruct-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-0528-Qwen3-8B",
+      "releasedOn": "2025-05-28",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-r1-0528-qwen3-8b-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Llama-70B",
+      "releasedOn": "2025-01-20",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-r1-distilled-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "releasedOn": "2025-01-20",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-r1-distilled-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Qwen-14B",
+      "releasedOn": "2025-01-20",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-r1-distilled-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Qwen-32B",
+      "releasedOn": "2025-01-20",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-r1-distilled-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Qwen-7B",
+      "releasedOn": "2025-01-20",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-r1-distilled-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "releasedOn": "2025-12-01",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-v3-2-release"
+      ]
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "releasedOn": "2026-09-10",
+      "evidenceIds": [
+        "evidence:four-tables-release-deepseek-v4-1-flash-release"
+      ]
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "releasedOn": "2025-03-10",
+      "evidenceIds": [
+        "evidence:four-tables-release-gemma-3-release-log"
+      ]
+    },
+    {
+      "model": "gemma-3-1b-it",
+      "releasedOn": "2025-03-10",
+      "evidenceIds": [
+        "evidence:four-tables-release-gemma-3-release-log"
+      ]
+    },
+    {
+      "model": "gemma-3-27b-it",
+      "releasedOn": "2025-03-10",
+      "evidenceIds": [
+        "evidence:four-tables-release-gemma-3-release-log"
+      ]
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "releasedOn": "2025-03-10",
+      "evidenceIds": [
+        "evidence:four-tables-release-gemma-3-release-log"
+      ]
+    },
+    {
+      "model": "gemma-4-26B-A4B-it",
+      "releasedOn": "2026-03-31",
+      "evidenceIds": [
+        "evidence:four-tables-release-gemma-4-release-log"
+      ]
+    },
+    {
+      "model": "gemma-4-E2B-it",
+      "releasedOn": "2026-03-31",
+      "evidenceIds": [
+        "evidence:four-tables-release-gemma-4-release-log"
+      ]
+    },
+    {
+      "model": "granite-3.3-2b-instruct",
+      "releasedOn": "2025-04-16",
+      "evidenceIds": [
+        "evidence:four-tables-release-ibm-granite-3-3-release"
+      ]
+    },
+    {
+      "model": "multilingual-e5-small",
+      "releasedOn": "2023",
+      "evidenceIds": [
+        "evidence:four-tables-release-multilingual-e5-release-year"
+      ]
+    },
+    {
+      "model": "Llama-3.1-70B-Instruct",
+      "releasedOn": "2024-07-23",
+      "evidenceIds": [
+        "evidence:four-tables-release-llama-3-1-release"
+      ]
+    },
+    {
+      "model": "Llama-3.1-8B-Instruct",
+      "releasedOn": "2024-07-23",
+      "evidenceIds": [
+        "evidence:four-tables-release-llama-3-1-release"
+      ]
+    },
+    {
+      "model": "Llama-3.2-1B-Instruct",
+      "releasedOn": "2024-09-25",
+      "evidenceIds": [
+        "evidence:four-tables-release-llama-3-2-release"
+      ]
+    },
+    {
+      "model": "Llama-3.2-3B-Instruct",
+      "releasedOn": "2024-09-25",
+      "evidenceIds": [
+        "evidence:four-tables-release-llama-3-2-release"
+      ]
+    },
+    {
+      "model": "Phi-4-mini-instruct",
+      "releasedOn": "2025-02",
+      "evidenceIds": [
+        "evidence:four-tables-release-phi-4-mini-instruct-release"
+      ]
+    },
+    {
+      "model": "Devstral-Small-2-24B-Instruct-2512",
+      "releasedOn": "2025-12-09",
+      "evidenceIds": [
+        "evidence:four-tables-release-devstral-small-2-release"
+      ]
+    },
+    {
+      "model": "Ministral-3-3B-Instruct-2512",
+      "releasedOn": "2025-12-02",
+      "evidenceIds": [
+        "evidence:four-tables-release-ministral-3-release"
+      ]
+    },
+    {
+      "model": "Mistral-7B-Instruct-v0.3",
+      "releasedOn": "2024-05-22",
+      "evidenceIds": [
+        "evidence:four-tables-release-mistral-7b-v0-3-release"
+      ]
+    },
+    {
+      "model": "Mistral-Small-3.1-24B-Instruct-2503",
+      "releasedOn": "2025-03-17",
+      "evidenceIds": [
+        "evidence:four-tables-release-mistral-small-3-1-release"
+      ]
+    },
+    {
+      "model": "NVIDIA-Nemotron-Nano-9B-v2",
+      "releasedOn": "2025-08-18",
+      "evidenceIds": [
+        "evidence:four-tables-release-nvidia-nemotron-nano-9b-v2-release"
+      ]
+    },
+    {
+      "model": "gpt-oss-120b",
+      "releasedOn": "2025-08-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-gpt-oss-release"
+      ]
+    },
+    {
+      "model": "gpt-oss-20b",
+      "releasedOn": "2025-08-05",
+      "evidenceIds": [
+        "evidence:four-tables-release-gpt-oss-release"
+      ]
+    },
+    {
+      "model": "GLM-4.7-Flash",
+      "releasedOn": "2026-01-19",
+      "evidenceIds": [
+        "evidence:four-tables-release-glm-4-7-flash-release"
+      ]
+    }
+  ],
+  "publishedEvaluations": 37,
+  "notes": [
+    "تاریخ‌های باقی‌مانده بدون شاهد صریح خالی‌اند؛ تاریخ ایجاد Hub جایگزین نشد.",
+    "آمار دامنه‌های شمارش جداست؛ شمار کل اصلی تغییر نکرد.",
+    "نتایج ناشر به benchmarkRuns یا deployment منتقل نشده‌اند."
+  ],
+  "currentCounts": {
+    "families": 15,
+    "models": 59,
+    "artifacts": 59,
+    "softwareProducts": 13,
+    "softwareReleases": 13,
+    "engines": 0,
+    "servingStacks": 0,
+    "deploymentConfigurations": 0,
+    "softwareCapabilities": 74,
+    "apiCompatibility": 16,
+    "hardwareConfigurations": 0,
+    "workloads": 9,
+    "qualityEvaluations": 0,
+    "applicationAssessments": 136,
+    "executionFeasibility": 0,
+    "deploymentCompatibility": 0,
+    "benchmarkRuns": 0,
+    "costScenarios": 0,
+    "specializedAssessments": 9,
+    "claims": 1136,
+    "evidence": 577,
+    "publishedEvaluations": 37
+  },
+  "declaredContexts": 46
+}

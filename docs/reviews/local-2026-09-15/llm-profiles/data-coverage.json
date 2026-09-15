@@ -1,0 +1,28 @@
+{
+  "models": 59,
+  "introducedModels": 59,
+  "modelsWithGuidance": 59,
+  "modelsWithOfficialPage": 59,
+  "modelsWithVerifiedDownload": 59,
+  "modelsWithRunGuide": 59,
+  "modelsWithPublishedQuality": 12,
+  "publishedResults": 37,
+  "guidanceRelationships": 69,
+  "backlogRelationships": 255,
+  "listings": 111,
+  "listingFormats": {
+    "pytorch": 1,
+    "safetensors": 59,
+    "gguf": 50,
+    "ollama": 1
+  },
+  "ggufByAuthority": {
+    "official": 41,
+    "third-party": 9
+  },
+  "ggufModelCount": 11,
+  "runExamples": 6,
+  "localBrandEntries": 23,
+  "strictExperimentalArtifacts": 59,
+  "matrixModels": 50
+}

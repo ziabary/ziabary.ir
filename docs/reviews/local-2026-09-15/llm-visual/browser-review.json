@@ -1,0 +1,152 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "columns": [
+    {
+      "id": "model-catalog",
+      "hiddenAndRestored": "license"
+    },
+    {
+      "id": "model-suitability",
+      "hiddenAndRestored": "coding-assistant"
+    },
+    {
+      "id": "software-products",
+      "hiddenAndRestored": "maintenance"
+    },
+    {
+      "id": "specialized-models",
+      "hiddenAndRestored": "features"
+    }
+  ],
+  "mobile": [
+    {
+      "id": "model-catalog",
+      "theme": "light",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "model-suitability",
+      "theme": "light",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "software-products",
+      "theme": "light",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "specialized-models",
+      "theme": "light",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "model-catalog",
+      "theme": "dark",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "model-suitability",
+      "theme": "dark",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "software-products",
+      "theme": "dark",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    },
+    {
+      "id": "specialized-models",
+      "theme": "dark",
+      "page": 375,
+      "viewport": 390,
+      "icon": 30
+    }
+  ],
+  "card": {
+    "width": 1180,
+    "gpuWidth": 1180,
+    "title": "راهنمای انتخاب مدل زبانی",
+    "overflow": false
+  },
+  "hero": {
+    "loaded": true,
+    "src": "http://127.0.0.1:4189/images/responsive/70da4fe2f2811f91-1440.webp",
+    "width": 1173,
+    "parent": 1173
+  },
+  "reading": [
+    {
+      "id": "model-catalog",
+      "planned": 3,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    },
+    {
+      "id": "model-suitability",
+      "planned": 4,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    },
+    {
+      "id": "hardware-feasibility",
+      "planned": 3,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    },
+    {
+      "id": "software-products",
+      "planned": 3,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    },
+    {
+      "id": "benchmarks",
+      "planned": 3,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    },
+    {
+      "id": "economics",
+      "planned": 2,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    },
+    {
+      "id": "specialized-models",
+      "planned": 3,
+      "broken": 0,
+      "irrelevant": false,
+      "unwritten": false
+    }
+  ],
+  "rowHeightBefore": 75,
+  "details": {
+    "rowHeight": 75,
+    "width": 1169,
+    "shell": 1171,
+    "buttonWidth": 30,
+    "buttonText": "",
+    "text": "دستیار دانش سازمانی و RAG\nbge-m3\nبستن جزئیات\nبازیابی معنایی\nهدف اصلی مدل\nنوع شاهد\nمعرفی سازنده\nدلیل و دامنهٔ کاربرد\nکارت همین مدل صریحاً ساخت embedding یا امتیازدهی زوج query/document را هدف طراحی معرفی می‌کند.\nنتیجهٔ آزمون سناریو\nاندازه‌گیری نشده\nدر این بسته اندازه‌گیری نشده است.\nمحدودیت\nکاربرد کاندید بر پایهٔ شرح ناشر؛ حداقل کیفیت و عملکرد روی دادهٔ کاربر سنجیده نشده است.، از این ردیف توصیهٔ خرید GPU یا برتری مدل استخراج نشود.\nbge-m3 — model card · گزارش ناشر",
+    "sources": 1
+  }
+}

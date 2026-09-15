@@ -1,4 +1,5 @@
 import { gpuRecords } from '$lib/gpu-data';
+import { llmLabel } from './presentation';
 import {
   applications,
   engineCandidates,
@@ -8,7 +9,7 @@ import {
   parallelismCandidates,
   softwareProductCandidates
 } from './guide';
-import type { MissingReason } from './schema';
+import type { MissingReason, PublishedEvaluation } from './schema';
 
 export type LlmViewId =
   | 'model-catalog'
@@ -17,13 +18,20 @@ export type LlmViewId =
   | 'software-products'
   | 'deployment-compatibility'
   | 'benchmarks'
-  | 'economics'
   | 'specialized-models';
 
 export type ViewValue =
   | {
       state: 'known';
       display: string;
+      brandId?: string;
+      note?: string;
+      /** Must stay visible in the compact row because it changes selection. */
+      caveat?: string;
+      badge?: string;
+      copyText?: string;
+      dateRange?: { start: number; end: number; precision: 'day' | 'month' | 'year' };
+      href?: string;
       raw?: string | number | boolean;
       sortValue?: string | number;
       canonicalNumber?: number;
@@ -59,7 +67,13 @@ export interface LlmRowComparisonContext {
 }
 
 export interface LlmViewRow {
+  /** Scenario details stay inline; the name still opens the shared model profile. */
+  inlineDetails?: boolean;
   id: string;
+  modelId?: string;
+  modelUrl?: string;
+  downloadLinks?: Array<{ label: string; href: string }>;
+  brandId?: string;
   label: string;
   searchText: string;
   cells: Record<string, ViewValue>;
@@ -67,7 +81,10 @@ export interface LlmViewRow {
   facets: Record<string, ViewValue | ViewValue[]>;
   details: Record<string, ViewValue>;
   sourceIds: string[];
+  publishedResults?: PublishedEvaluation[];
   comparison: LlmRowComparisonContext;
+  /** Numerical ordering must stay within compatible report/metric/currency groups. */
+  sortGroup?: string;
 }
 
 export type FilterControl = 'text' | 'select' | 'multi' | 'number-range' | 'date-range' | 'boolean';
@@ -76,6 +93,7 @@ export interface FilterOption {
   value: string;
   label: string;
   note?: string;
+  count?: number;
 }
 
 export interface LlmFilterConfig {
@@ -128,7 +146,9 @@ export interface LlmViewPreset {
 }
 
 export interface LlmViewConfig {
+  layoutKey?: string;
   id: LlmViewId;
+  presentation?: 'guidance' | 'matrix';
   sectionId: string;
   sectionNumber: number;
   subviewNumber?: number;
@@ -138,8 +158,11 @@ export interface LlmViewConfig {
   referenceLinks?: Array<{ label: string; href: string }>;
   tableLabel: string;
   defaultColumns: LlmColumnConfig[];
+  optionalColumns?: LlmColumnConfig[];
   detailColumns: LlmColumnConfig[];
   matrixColumns?: MatrixColumn[];
+  compact?: boolean;
+  hideEmptyColumns?: boolean;
   filters: LlmFilterConfig[];
   presets?: LlmViewPreset[];
   comparison: ComparisonPolicy;
@@ -147,16 +170,16 @@ export interface LlmViewConfig {
   noDataMessage: string;
 }
 
-const option = (value: string, label = value, note?: string): FilterOption => ({ value, label, ...(note ? { note } : {}) });
+const option = (value: string, label = llmLabel(value), note?: string): FilterOption => ({ value, label, ...(note ? { note } : {}) });
 const options = (values: readonly string[]) => values.map((value) => option(value));
 const applicationOptions = applications.map((item) => option(item.id, item.label));
 const stageOptions = [
-  option('base', 'پایه'), option('instruct', 'Instruct'), option('reasoning', 'Reasoning'),
-  option('distilled', 'Distilled'), option('other', 'سایر')
+  option('base', 'پایه'), option('instruct', 'دستورپذیر'), option('reasoning', 'استدلالی'),
+  option('distilled', 'تقطیرشده'), option('other', 'سایر')
 ];
 const kindOptions = [
-  option('generative', 'مولد'), option('embedding', 'Embedding'), option('reranker', 'Reranker'),
-  option('encoder-classifier', 'Encoder / classifier'), option('vision-language', 'چندوجهی'), option('other', 'سایر')
+  option('generative', 'مولد'), option('embedding', 'بردارساز'), option('reranker', 'بازرتبه‌بند'),
+  option('encoder-classifier', 'رمزگذار / دسته‌بند'), option('vision-language', 'چندوجهی'), option('other', 'سایر')
 ];
 const evidenceOptions = [
   option('direct-measurement', 'اندازه‌گیری مستقیم'),
@@ -180,7 +203,7 @@ const provisionOptions = [
 ];
 const softwareRoleOptions = [
   option('inference-engine-library', 'موتور / کتابخانهٔ استنتاج'), option('api-server', 'سرور API'),
-  option('model-manager', 'مدیریت مدل'), option('gateway', 'Gateway'),
+  option('model-manager', 'مدیریت مدل'), option('gateway', 'درگاه مدل‌ها'),
   option('user-interface', 'رابط کاربری'), option('deployment-manager', 'مدیریت استقرار')
 ];
 const capabilityFilters: Array<[string, string]> = [
@@ -235,29 +258,42 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'model-catalog', sectionId: 'model-catalog', sectionNumber: 1,
     shortTitle: 'شناسنامهٔ مدل‌ها', title: 'شناسنامهٔ مدل‌ها',
-    description: 'خانواده، نسخه و نوع مدل را مستقل از artifact و نتایج اجرای آن ثبت می‌کند.',
+    description: 'مشخصات اعلام‌شدهٔ مدل‌ها، کاربردهای مستند و شروط مؤثر بر انتخاب.',
     tableLabel: 'جدول شناسنامهٔ مدل‌های زبانی',
+    compact: true, hideEmptyColumns: true,
+    optionalColumns: [{ key: 'released-on', label: 'تاریخ انتشار', sortable: true }],
     defaultColumns: [
-      { key: 'model', label: 'مدل / شناسه', sortable: true },
+      { key: 'model', label: 'مدل', sortable: true },
       { key: 'family-publisher', label: 'خانواده / ناشر', sortable: true },
-      { key: 'kind-stage', label: 'نوع / مرحله', sortable: true },
-      { key: 'parameters', label: 'پارامتر کل / فعال', sortable: true, numeric: true },
-      { key: 'architecture', label: 'معماری', sortable: true },
-      { key: 'context', label: 'زمینهٔ اعلام‌شده / ارزیابی‌شده', sortable: true, numeric: true },
-      { key: 'review', label: 'وضعیت / بازبینی', sortable: true }
+      { key: 'size-architecture', label: 'اندازه و معماری', sortable: true },
+      { key: 'modalities', label: 'ورودی ← خروجی' },
+      { key: 'context', label: 'حداکثر طول متن', sortable: true, numeric: true },
+      { key: 'applications', label: 'کاربردهای شاخص' },
+      { key: 'downloads', label: 'دریافت و اجرای مدل' }
     ],
     detailColumns: [
-      { key: 'lineage', label: 'مدل پایه / distilled از' }, { key: 'modalities', label: 'ورودی و خروجی' },
-      { key: 'applications', label: 'کاربردها' }, { key: 'languages', label: 'زبان اعلام‌شده / ارزیابی مستقل' },
-      { key: 'license', label: 'مجوز و منبع' }, { key: 'dates', label: 'تاریخ‌ها' },
+      { key: 'model-id', label: 'شناسهٔ داخلی' }, { key: 'revision', label: 'revision مدل در شناسنامه' },
+      { key: 'kind-stage', label: 'نوع و مرحله' }, { key: 'lineage', label: 'مدل پایه / تقطیر از' },
+      { key: 'total-parameters', label: 'شمار کل پارامترها' }, { key: 'active-parameters', label: 'پارامترهای فعال' },
+      { key: 'parameter-scope', label: 'دامنهٔ شمارش پارامتر' },
+      { key: 'declared-context', label: 'حداکثر طول متن (اعلام ناشر)' }, { key: 'context-extension', label: 'افزایش ظرفیت متن و تنظیم لازم' },
+      { key: 'evaluated-context', label: 'طول متن در آزمون' },
+      { key: 'languages', label: 'زبان و نوع شاهد' },
+      { key: 'weight-files', label: 'حجم فایل وزن روی دیسک' }, { key: 'weight-caveat', label: 'حافظهٔ اجرای مدل' },
+      { key: 'license-url', label: 'متن مجوز' }, { key: 'commercial-use', label: 'استفادهٔ تجاری' }, { key: 'license-restrictions', label: 'شروط مجوز' },
+      { key: 'released-on', label: 'تاریخ انتشار مدل', sortable: true }, { key: 'last-reviewed', label: 'تاریخ بازبینی رکورد' },
       { key: 'sources', label: 'منابع و محل شاهد' }
     ],
     filters: [
+      { id: 'download-format', label: 'نسخهٔ قابل دریافت', control: 'multi', level: 'main', options: options(['gguf', 'safetensors', 'pytorch', 'onnx', 'ollama']) },
+      { id: 'run-engine', label: 'مسیر راه‌اندازی مستند', control: 'multi', level: 'main', options: options(['Ollama', 'llama.cpp', 'vLLM', 'SGLang', 'Transformers', 'Sentence Transformers', 'FlagEmbedding']) },
+      { id: 'download-authority', label: 'ناشر فایل', control: 'multi', level: 'advanced', options: [option('official', 'سازندهٔ مدل'), option('third-party', 'شخص ثالث')] },
       { id: 'family', label: 'خانواده', control: 'multi', level: 'main', options: options(modelFamilyCandidates) },
       { id: 'publisher', label: 'ناشر', control: 'text', level: 'main' },
+      { id: 'model-version', label: 'مدل و نسخهٔ دقیق', control: 'select', level: 'advanced', options: [] },
       { id: 'model-kind', label: 'نوع مدل', control: 'multi', level: 'main', options: kindOptions },
       { id: 'model-stage', label: 'مرحلهٔ مدل', control: 'multi', level: 'main', options: stageOptions },
-      { id: 'total-parameters', label: 'پارامتر کل', control: 'number-range', level: 'main', canonicalUnit: 'B' },
+      { id: 'model-size', label: 'اندازهٔ اعلامی مدل', control: 'number-range', level: 'main', canonicalUnit: 'B', placeholder: 'شمار کل، یا اندازهٔ اسمی با دامنهٔ مشخص در جزئیات' },
       { id: 'active-parameters', label: 'پارامتر فعال', control: 'number-range', level: 'advanced', canonicalUnit: 'B' },
       { id: 'size-band', label: 'رده‌بندی اندازهٔ این راهنما', control: 'select', level: 'advanced', options: sizeBandOptions },
       { id: 'architecture', label: 'معماری', control: 'multi', level: 'advanced', options: options(['dense', 'moe', 'hybrid', 'other']) },
@@ -266,9 +302,10 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { id: 'application', label: 'کاربرد', control: 'multi', level: 'advanced', options: applicationOptions },
       { id: 'language', label: 'زبان', control: 'text', level: 'advanced' },
       { id: 'persian-evidence', label: 'وضعیت شاهد فارسی', control: 'select', level: 'advanced', options: options(['independently-evaluated', 'publisher-claimed', 'not-evaluated', 'unknown']) },
-      { id: 'context-length', label: 'طول زمینه', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
+      { id: 'context-length', label: 'حداکثر طول متن', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
       { id: 'license', label: 'مجوز (اختیاری)', control: 'text', level: 'advanced' },
       { id: 'review-status', label: 'وضعیت انتشار', control: 'multi', level: 'advanced', options: options(['announced', 'available', 'deprecated', 'withdrawn', 'needs-review']) },
+      { id: 'released-on', label: 'تاریخ انتشار', control: 'date-range', level: 'advanced' },
       { id: 'last-reviewed', label: 'تاریخ بازبینی', control: 'date-range', level: 'advanced' }
     ],
     comparison: comparison(
@@ -282,23 +319,25 @@ export const llmViewConfigs: LlmViewConfig[] = [
   },
   {
     id: 'model-suitability', sectionId: 'model-suitability', sectionNumber: 2,
-    shortTitle: 'مدل × کاربرد', title: 'تناسب مدل با کاربرد',
-    description: 'هر خانه نوع ارزیابی، نسخهٔ آزمون، زبان، شناسهٔ شاهد و محدودیت نتیجه را نگه می‌دارد.',
+    shortTitle: 'راهنمای کاربرد', title: 'تناسب مدل با کاربرد',
+    description: 'نقش هر مدل، ویژگی متمایز و شرایط شروع؛ معرفی کاربرد از نتیجهٔ آزمون کیفیت جداست.',
     tableLabel: 'ماتریس تناسب مدل با کاربرد',
+    compact: true, hideEmptyColumns: true,
+    optionalColumns: [],
     defaultColumns: [
-      { key: 'model-artifact', label: 'مدل / artifact', sortable: true },
-      { key: 'evaluation-version', label: 'نسخهٔ ارزیابی', sortable: true }
+      { key: 'model-artifact', label: 'مدل', sortable: true }
     ],
     matrixColumns: applications.map((item) => ({ id: item.id, label: item.label })),
     detailColumns: [
-      { key: 'assessment-basis', label: 'نوع ارزیابی' }, { key: 'subapplication', label: 'زیرکاربرد' },
-      { key: 'language', label: 'زبان آزمون' }, { key: 'quality-evaluation', label: 'ارزیابی کیفیت مرتبط' },
-      { key: 'limitations', label: 'محدودیت نتیجه' }, { key: 'sources', label: 'شناسه و محل شاهد' }
+      { key: 'revision', label: 'revision مدل در شناسنامه' },
+      { key: 'assessment-basis', label: 'نوع شاهد کاربرد' }, { key: 'subapplication', label: 'زیرکاربرد' },
+      { key: 'language', label: 'زبان آزمون' }, { key: 'quality-evaluation', label: 'ارزیابی دقیق مرتبط' },
+      { key: 'limitations', label: 'محدودیت نتیجه' }, { key: 'sources', label: 'منابع' }
     ],
     filters: [
       { id: 'application', label: 'کاربرد', control: 'multi', level: 'main', options: applicationOptions },
-      { id: 'assessment-basis', label: 'نوع ارزیابی', control: 'multi', level: 'main', options: [option('declared-capability', 'قابلیت اعلام‌شده'), option('measured-success', 'موفقیت اندازه‌گیری‌شده'), option('editorial-recommendation', 'پیشنهاد تحلیلی نویسنده'), option('insufficient-evidence', 'فاقد شواهد کافی')] },
-      { id: 'total-parameters', label: 'پارامتر کل', control: 'number-range', level: 'main', canonicalUnit: 'B' },
+      { id: 'assessment-basis', label: 'نوع ارزیابی', control: 'multi', level: 'main', options: [option('declared-capability', 'معرفی سازنده'), option('measured-success', 'موفقیت اندازه‌گیری‌شده'), option('editorial-recommendation', 'پیشنهاد تحلیلی نویسنده'), option('insufficient-evidence', 'فاقد شواهد کافی')] },
+      { id: 'model-size', label: 'اندازهٔ اعلامی مدل', control: 'number-range', level: 'main', canonicalUnit: 'B', placeholder: 'شمار کل، یا اندازهٔ اسمی با دامنهٔ مشخص در جزئیات' },
       { id: 'model-kind', label: 'نوع مدل', control: 'multi', level: 'advanced', options: kindOptions },
       { id: 'subapplication', label: 'زیرکاربرد', control: 'text', level: 'advanced' },
       { id: 'language', label: 'زبان ارزیابی', control: 'text', level: 'advanced' },
@@ -342,7 +381,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { id: 'execution-method', label: 'روش اجرا', control: 'multi', level: 'advanced', options: methodOptions },
       { id: 'engine', label: 'backend واقعی', control: 'multi', level: 'advanced', options: options(engineCandidates) },
       { id: 'quantization', label: 'کوانت وزن', control: 'text', level: 'advanced' },
-      { id: 'context-length', label: 'طول زمینه', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
+      { id: 'context-length', label: 'طول کل متن', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
       { id: 'concurrency', label: 'همزمانی', control: 'number-range', level: 'advanced' },
       { id: 'offload-allowed', label: 'اجازهٔ offload', control: 'boolean', level: 'advanced' },
       { id: 'evidence-kind', label: 'وضعیت شاهد', control: 'multi', level: 'advanced', options: evidenceOptions }
@@ -362,27 +401,29 @@ export const llmViewConfigs: LlmViewConfig[] = [
     shortTitle: 'مقایسهٔ نرم‌افزارها', title: 'مقایسهٔ نرم‌افزارها',
     description: 'انتخاب محصول و نسخه بر پایهٔ نیاز و نقش، بدون الزام به انتخاب قبلی یک مدل.',
     tableLabel: 'جدول مقایسهٔ محصول و نسخهٔ نرم‌افزارهای اجرا و سرویس‌دهی',
-    referenceLinks: softwareProductCandidates.map((item) => ({ label: item.name, href: item.officialUrl })),
+    compact: true, hideEmptyColumns: true,
+    optionalColumns: [{ key: 'released-on', label: 'تاریخ انتشار', sortable: true }],
     defaultColumns: [
       { key: 'software-version', label: 'نام و نسخه', sortable: true },
-      { key: 'roles', label: 'نقش‌ها', sortable: true },
-      { key: 'environment-backend', label: 'محیط اجرا و backend', sortable: true },
-      { key: 'interfaces', label: 'رابط‌ها و APIها', sortable: true },
-      { key: 'service-features', label: 'مدیریت مدل و سرویس‌دهی', sortable: true },
-      { key: 'maintenance-review', label: 'نگه‌داری / بازبینی', sortable: true },
-      { key: 'evidence-limitations', label: 'شواهد / محدودیت‌ها' }
+      { key: 'roles', label: 'نقش', sortable: true },
+      { key: 'scenario', label: 'سناریوی هدف مستند' },
+      { key: 'service-features', label: 'قابلیت‌های شاخص' },
+      { key: 'platform', label: 'پلتفرم' },
+      { key: 'backend-summary', label: 'وابستگی مهم اجرا' },
+      { key: 'start-docs', label: 'شروع کار' }
     ],
     detailColumns: [
+      { key: 'released-on', label: 'تاریخ انتشار نسخه', sortable: true }, { key: 'last-reviewed', label: 'تاریخ بازبینی رکورد' },
+      { key: 'backends', label: 'backendهای مستند' },
       { key: 'os-hardware', label: 'سیستم‌عامل و سخت‌افزار' }, { key: 'local-cloud-offline', label: 'محلی، ابری و بدون اتصال' },
-      { key: 'tasks', label: 'وظیفه‌ها و چندوجهی' }, { key: 'request-control', label: 'صف، هم‌زمانی، batching و پذیرش' },
-      { key: 'model-lifecycle', label: 'بارگذاری، خروج، چندمدلی و cold start' },
-      { key: 'inference-optimizations', label: 'Cache، speculative و offload' },
-      { key: 'multi-gpu', label: 'شاردینگ مدل / replica مستقل' },
-      { key: 'output-tools', label: 'Streaming، ساختاریافته، ابزار و reasoning' },
-      { key: 'model-scopes', label: 'مدل، قالب پیام و parser مؤثر' },
-      { key: 'operations-security', label: 'پایش، سلامت، احراز هویت و نرخ' },
-      { key: 'api-compatibility', label: 'سازگاری endpoint و قابلیت API' },
-      { key: 'license', label: 'مجوز نرم‌افزار' }, { key: 'sources', label: 'منبع دقیق هر ادعا' }
+      { key: 'all-capabilities', label: 'همهٔ قابلیت‌ها و وضعیت پشتیبانی' },
+      { key: 'tasks', label: 'وظیفه‌ها' }, { key: 'request-control', label: 'صف، هم‌زمانی، batching و پذیرش' },
+      { key: 'model-lifecycle', label: 'بارگذاری، خروج و چندمدلی' }, { key: 'inference-optimizations', label: 'بهینه‌سازی استنتاج و offload' },
+      { key: 'multi-gpu', label: 'تقسیم مدل / نسخه‌های مستقل' }, { key: 'output-tools', label: 'خروجی، ابزار و استدلال' },
+      { key: 'model-scopes', label: 'شرایط قابلیت، مدل، قالب پیام و تجزیه‌گر' },
+      { key: 'operations-security', label: 'پایش، سلامت و کنترل دسترسی' }, { key: 'api-compatibility', label: 'endpointها و سازگاری API' },
+      { key: 'license', label: 'مجوز' }, { key: 'license-url', label: 'متن مجوز' }, { key: 'commercial-use', label: 'استفادهٔ تجاری' },
+      { key: 'license-restrictions', label: 'شروط مجوز' }, { key: 'sources', label: 'منابع' }
     ],
     filters: [
       { id: 'need-type', label: 'نوع نیاز', control: 'multi', level: 'main', options: [option('local-interactive', 'اجرای محلی تعاملی'), option('team-api', 'API تیمی'), option('high-throughput', 'سرویس پرترافیک'), option('specialized-task', 'وظیفهٔ تخصصی'), option('composite-service', 'سرویس چندجزئی')] },
@@ -399,6 +440,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { id: 'provision', label: 'شیوهٔ تأمین قابلیت', control: 'multi', level: 'advanced', options: provisionOptions },
       { id: 'software-license', label: 'مجوز نرم‌افزار', control: 'text', level: 'advanced' },
       { id: 'maintenance', label: 'وضعیت نگه‌داری', control: 'multi', level: 'advanced', options: options(['active', 'maintenance', 'deprecated', 'unknown']) },
+      { id: 'released-on', label: 'تاریخ انتشار', control: 'date-range', level: 'advanced' },
       { id: 'last-reviewed', label: 'تاریخ بازبینی', control: 'date-range', level: 'advanced' }
     ],
     presets: [{ id: 'software-choice', label: 'انتخاب نرم‌افزار از نوع نیاز، محیط و نقش', selections: {} }],
@@ -447,7 +489,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { id: 'quantization', label: 'کوانت وزن', control: 'text', level: 'advanced' },
       { id: 'kv-cache', label: 'دقت KV cache', control: 'text', level: 'advanced' },
       { id: 'parallelism', label: 'موازی‌سازی', control: 'multi', level: 'advanced', options: parallelOptions },
-      { id: 'context-length', label: 'طول زمینه', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
+      { id: 'context-length', label: 'طول کل متن', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
       { id: 'concurrency', label: 'هم‌زمانی', control: 'number-range', level: 'advanced' },
       { id: 'peak-vram', label: 'VRAM اوج', control: 'number-range', level: 'advanced', canonicalUnit: 'GiB' },
       { id: 'peak-ram', label: 'RAM اوج', control: 'number-range', level: 'advanced', canonicalUnit: 'GiB' },
@@ -499,7 +541,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { id: 'backend', label: 'backend و نسخه', control: 'text', level: 'advanced' },
       { id: 'quantization', label: 'کوانت', control: 'text', level: 'advanced' },
       { id: 'language', label: 'زبان', control: 'text', level: 'advanced' },
-      { id: 'context-length', label: 'طول زمینه', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
+      { id: 'context-length', label: 'طول کل متن', control: 'number-range', level: 'advanced', canonicalUnit: 'token' },
       { id: 'batch-size', label: 'Batch', control: 'number-range', level: 'advanced' },
       { id: 'concurrency', label: 'همزمانی', control: 'number-range', level: 'advanced' },
       { id: 'arrival-rate', label: 'نرخ ورود', control: 'number-range', level: 'advanced', canonicalUnit: 'request/s' },
@@ -525,77 +567,33 @@ export const llmViewConfigs: LlmViewConfig[] = [
     comparisonLimit: 4, noDataMessage: 'هنوز اجرای بنچمارک تأییدشده‌ای وارد نشده است.'
   },
   {
-    id: 'economics', sectionId: 'economics', sectionNumber: 6,
-    shortTitle: 'اقتصاد سناریوها', title: 'مقایسهٔ اقتصادی سناریوها',
-    description: 'مبنای ردیف سناریو و استقرار دقیق است؛ TCO، هزینهٔ درخواست و ROI مستقل می‌مانند.',
-    tableLabel: 'جدول اقتصاد سناریوی اجرای مدل زبانی',
-    defaultColumns: [
-      { key: 'scenario-deployment', label: 'سناریو / deployment', sortable: true },
-      { key: 'need-slo', label: 'نیاز / کیفیت / زمان پاسخ', sortable: true },
-      { key: 'acquisition', label: 'موجود / خرید / اجاره / API', sortable: true },
-      { key: 'basis', label: 'مبنای ارزی و تاریخ محاسبه', sortable: true },
-      { key: 'tco', label: 'TCO', sortable: true, numeric: true },
-      { key: 'accepted-request-cost', label: 'هزینهٔ درخواست پذیرفته‌شده', sortable: true, numeric: true },
-      { key: 'break-even', label: 'نقطهٔ سربه‌سر', sortable: true, numeric: true }
-    ],
-    detailColumns: [
-      { key: 'traffic-hours', label: 'ترافیک، ساعات و کاربران ثبت‌نام‌شده' },
-      { key: 'price-observations', label: 'قیمت‌ها، بازار و تاریخ مشاهده' },
-      { key: 'software-costs', label: 'راه‌اندازی، آماده‌سازی، بارگذاری، نگه‌داری و منابع اجزا' },
-      { key: 'system-operations', label: 'سامانه و بهره‌برداری' }, { key: 'utilization-redundancy', label: 'استفاده و افزونگی' },
-      { key: 'period', label: 'دورهٔ محاسبه' }, { key: 'license-cost', label: 'فرض هزینهٔ مجوز' },
-      { key: 'token-cost', label: 'هزینهٔ توکن و تعریف' }, { key: 'roi', label: 'ROI و فرض ارزش اقتصادی' },
-      { key: 'derivation', label: 'فرمول، ورودی، فرض و گردکردن' }, { key: 'sources', label: 'شواهد قیمت و محاسبه' }
-    ],
-    filters: [
-      { id: 'application', label: 'نیاز / کاربرد', control: 'multi', level: 'main', options: applicationOptions },
-      { id: 'acquisition', label: 'روش تهیه', control: 'multi', level: 'main', options: options(['existing', 'purchase', 'rent', 'api']) },
-      { id: 'calculation-period', label: 'دورهٔ محاسبه', control: 'select', level: 'main', options: options(['month', 'year']) },
-      { id: 'model', label: 'مدل / deployment', control: 'text', level: 'advanced' },
-      { id: 'software-product', label: 'ترکیب نرم‌افزاری', control: 'multi', level: 'advanced', options: softwareProductCandidates.map((item) => option(item.id, item.name)) },
-      { id: 'hardware', label: 'سخت‌افزار', control: 'multi', level: 'advanced', options: hardwareTargets.map((item) => option(item.id, item.label)) },
-      { id: 'currency', label: 'واحد پول', control: 'text', level: 'advanced' },
-      { id: 'market', label: 'بازار', control: 'text', level: 'advanced' },
-      { id: 'price-observed', label: 'تاریخ مشاهدهٔ قیمت', control: 'date-range', level: 'advanced' },
-      { id: 'calculation-basis-date', label: 'تاریخ مبنای محاسبه', control: 'date-range', level: 'advanced' },
-      { id: 'traffic', label: 'ترافیک', control: 'number-range', level: 'advanced' },
-      { id: 'operating-hours', label: 'ساعات استفاده', control: 'number-range', level: 'advanced' },
-      { id: 'license-cost-state', label: 'وضعیت هزینهٔ مجوز', control: 'multi', level: 'advanced', options: options(['included', 'excluded-not-free', 'free', 'unknown', 'not-applicable']) },
-      { id: 'evidence-kind', label: 'نوع شاهد', control: 'multi', level: 'advanced', options: evidenceOptions }
-    ],
-    presets: [{ id: 'cost-scenario', label: 'مقایسهٔ اقتصادی با نیاز و مبنای مشترک', selections: {} }],
-    comparison: comparison(
-      'تاریخ مشاهدهٔ قیمت مانع نمایش نیست؛ محاسبه به تاریخ مبنا، ارز، بازار، دوره، نیاز و فرض‌های مشترک نیاز دارد.',
-      { deployment: 'deployment', acquisition: 'روش تهیه', need: 'نیاز', workload: 'بار کاری', 'quality-floor': 'حداقل کیفیت', 'latency-target': 'هدف پاسخ', currency: 'ارز', market: 'بازار', 'basis-date': 'تاریخ مبنا', period: 'دوره', unit: 'واحد' },
-      [{ id: 'acquisition-or-deployment', label: 'روش تهیه / راهکار', differenceDimensions: ['deployment', 'acquisition'], sharedDimensions: ['need', 'workload', 'quality-floor', 'latency-target', 'currency', 'market', 'basis-date', 'period', 'unit'] }],
-      ['need', 'workload', 'quality-floor', 'latency-target', 'currency', 'basis-date', 'period'],
-      ['currency', 'basis-date', 'period', 'unit'],
-      { allowed: 'قیمت‌های مشاهده‌شده در دو روز متفاوت کنار هم.', invalidCalculation: 'ROI بدون فرض ارزش یا نسبت قیمت با ارز نامشترک.', needsMoreData: 'هزینهٔ نگه‌داری یا مبنای زمانی نامعلوم.' }
-    ),
-    comparisonLimit: 4, noDataMessage: 'هنوز سناریوی اقتصادی مبتنی بر داده وارد نشده است.'
-  },
-  {
-    id: 'specialized-models', sectionId: 'specialized-models', sectionNumber: 7,
+    id: 'specialized-models', sectionId: 'specialized-models', sectionNumber: 6,
     shortTitle: 'مدل‌های تخصصی مکمل', title: 'مدل‌های کوچک و تخصصی مکمل',
-    description: 'Embedding، reranker، encoder/classifier و گزینه‌های کوچک با معیار متناسب با همان وظیفه سنجیده می‌شوند.',
+    description: 'وظیفه، ورودی و خروجی مدل‌های تخصصی؛ امتیازهای منتشرشده با نام گزارش‌دهنده و معیار همان آزمون.',
     tableLabel: 'جدول مدل‌های کوچک و تخصصی مکمل',
+    compact: true, hideEmptyColumns: true,
+    optionalColumns: [{ key: 'released-on', label: 'تاریخ انتشار', sortable: true }, { key: 'work-rate', label: 'نرخ کار اندازه‌گیری‌شده', sortable: true, numeric: true }],
     defaultColumns: [
-      { key: 'model-kind', label: 'مدل / نوع تخصصی', sortable: true },
-      { key: 'task', label: 'کاربرد / وظیفه', sortable: true },
-      { key: 'parameters', label: 'پارامتر کل', sortable: true, numeric: true },
-      { key: 'quality-metric', label: 'معیار کیفیت همان وظیفه', sortable: true, numeric: true },
-      { key: 'work-rate', label: 'نرخ کار متناسب', sortable: true, numeric: true },
-      { key: 'evidence', label: 'وضعیت شاهد', sortable: true }
+      { key: 'model-kind', label: 'مدل', sortable: true },
+      { key: 'task', label: 'وظیفهٔ دقیق' },
+      { key: 'parameters', label: 'اندازه', sortable: true },
+      { key: 'input-limit', label: 'سقف ورودی', sortable: true },
+      { key: 'output', label: 'نوع / ابعاد خروجی' },
+      { key: 'features', label: 'ویژگی کاربردی' },
+      { key: 'downloads', label: 'دریافت و راه‌اندازی' }
     ],
     detailColumns: [
-      { key: 'language-dataset', label: 'زبان و دادهٔ ارزیابی' }, { key: 'artifact-execution', label: 'artifact و اجرای دقیق' },
-      { key: 'workload', label: 'بار کاری و واحد اندازه‌گیری' }, { key: 'generative-alternative', label: 'نسبت با گزینهٔ مولد' },
-      { key: 'limitations', label: 'محدودیت نتیجه' }, { key: 'sources', label: 'منبع و شاهد' }
+      { key: 'pooling', label: 'روش pooling / scoring' }, { key: 'dimensions', label: 'ابعاد پیش‌فرض / حداکثر embedding' },
+      { key: 'adjustable-dimensions', label: 'ابعاد قابل تنظیم و شرط محاسبهٔ حافظه' },
+      { key: 'languages', label: 'زبان‌های مستند' }, { key: 'parameter-scope', label: 'دامنهٔ شمار پارامترها' },
+      { key: 'artifact-execution', label: 'revision مدل / artifact دقیق' }, { key: 'released-on', label: 'تاریخ انتشار مدل', sortable: true },
+      { key: 'language-dataset', label: 'زبان آزمون اختصاصی' }, { key: 'workload', label: 'برنامهٔ آزمون اختصاصی' },
+      { key: 'generative-alternative', label: 'نسبت با گزینهٔ مولد' }, { key: 'limitations', label: 'محدودیت نتیجه' }, { key: 'sources', label: 'منابع' }
     ],
     filters: [
-      { id: 'kind', label: 'نوع مدل', control: 'multi', level: 'main', options: [option('embedding', 'Embedding'), option('reranker', 'Reranker'), option('encoder-classifier', 'Encoder / classifier'), option('other', 'سایر')] },
+      { id: 'kind', label: 'نوع مدل', control: 'multi', level: 'main', options: [option('embedding', 'بردارساز'), option('reranker', 'بازرتبه‌بند'), option('encoder-classifier', 'رمزگذار / دسته‌بند'), option('other', 'سایر')] },
       { id: 'application', label: 'کاربرد', control: 'multi', level: 'main', options: applicationOptions },
-      { id: 'total-parameters', label: 'پارامتر کل', control: 'number-range', level: 'main', canonicalUnit: 'B' },
+      { id: 'model-size', label: 'اندازهٔ اعلامی مدل', control: 'number-range', level: 'main', canonicalUnit: 'B', placeholder: 'شمار کل، یا اندازهٔ اسمی با دامنهٔ مشخص در جزئیات' },
       { id: 'size-band', label: 'رده‌بندی اندازهٔ این راهنما', control: 'select', level: 'advanced', options: sizeBandOptions },
       { id: 'subapplication', label: 'وظیفهٔ تخصصی', control: 'text', level: 'advanced' },
       { id: 'metric', label: 'معیار وظیفه', control: 'text', level: 'advanced' },
@@ -622,3 +620,33 @@ export const llmGuideSections = Array.from(
     views: llmViewConfigs.filter((candidate) => candidate.sectionId === view.sectionId)
   }])).values()
 );
+
+/** Use the complete snapshot, never the filtered subset, to keep columns stable. */
+export function defaultLlmColumns(config: LlmViewConfig, rows: LlmViewRow[]) {
+  return config.hideEmptyColumns && rows.length
+    ? config.defaultColumns.filter(column => rows.some(row => row.cells[column.key]?.state === 'known'))
+    : config.defaultColumns;
+}
+
+/** The matrix is an optional presentation within the same usage view. */
+export function modelUseViewConfig(matrix = false): LlmViewConfig {
+  const base = llmViewConfigs.find(view => view.id === 'model-suitability')!;
+  return { ...base, presentation: matrix ? 'matrix' : 'guidance',
+    tableLabel: matrix ? 'ماتریس مقایسهٔ کاربرد مدل‌های مولد' : 'جدول راهنمای کاربرد مدل‌ها',
+    defaultColumns: matrix ? base.defaultColumns : [
+      { key: 'model', label: 'مدل', sortable: true },
+      { key: 'role', label: 'نقش در سامانه' },
+      { key: 'primary-use', label: 'کاربرد اصلی' },
+      { key: 'introduction', label: 'ویژگی و دلیل بررسی' },
+      { key: 'use-condition', label: 'شرط مهم استفاده' },
+      { key: 'downloads', label: 'شروع کار' }
+    ],
+    matrixColumns: matrix ? base.matrixColumns : undefined,
+    filters: base.filters.filter(filter => !['assessment-basis', 'tested-version', 'evidence-kind', 'subapplication', 'language'].includes(filter.id)).concat([
+      { id: 'use-role', label: 'نقش در سامانه', control: 'multi', level: 'main', options: [
+        option('retrieval', 'بازیابی سند'), option('reranking', 'بازرتبه‌بندی'), option('grounded-generation', 'تولید پاسخ از سند'),
+        option('text-generation', 'تولید متن'), option('coding', 'برنامه‌نویسی'), option('tool-use', 'فراخوانی ابزار'), option('vision', 'درک تصویر'), option('reasoning', 'استدلال')
+      ] }
+    ])
+  };
+}

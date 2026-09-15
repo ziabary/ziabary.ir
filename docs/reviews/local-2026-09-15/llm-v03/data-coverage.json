@@ -1,0 +1,171 @@
+{
+  "date": "2026-09-15",
+  "version": "0.3.0",
+  "counts": {
+    "families": 24,
+    "models": 87,
+    "artifacts": 59,
+    "softwareProducts": 13,
+    "softwareReleases": 13,
+    "engines": 0,
+    "servingStacks": 0,
+    "deploymentConfigurations": 0,
+    "softwareCapabilities": 124,
+    "apiCompatibility": 16,
+    "hardwareConfigurations": 0,
+    "workloads": 20,
+    "qualityEvaluations": 0,
+    "applicationAssessments": 136,
+    "executionFeasibility": 0,
+    "deploymentCompatibility": 0,
+    "benchmarkRuns": 0,
+    "costScenarios": 0,
+    "specializedAssessments": 20,
+    "claims": 3034,
+    "evidence": 2408,
+    "publishedEvaluations": 1101,
+    "modelProfiles": 87,
+    "modelUseGuidance": 389,
+    "artifactListings": 475
+  },
+  "downloadsByModel": {
+    "ollama": 62,
+    "gguf": 85,
+    "onnx": 15,
+    "safetensors": 86,
+    "pytorch": 10
+  },
+  "defaultColumns": {
+    "model-catalog": {
+      "model": {
+        "known": 87,
+        "total": 87
+      },
+      "family-publisher": {
+        "known": 87,
+        "total": 87
+      },
+      "size-architecture": {
+        "known": 87,
+        "total": 87
+      },
+      "modalities": {
+        "known": 87,
+        "total": 87
+      },
+      "context": {
+        "known": 87,
+        "total": 87
+      },
+      "applications": {
+        "known": 87,
+        "total": 87
+      },
+      "downloads": {
+        "known": 87,
+        "total": 87
+      }
+    },
+    "model-suitability": {
+      "model": {
+        "known": 87,
+        "total": 87
+      },
+      "role": {
+        "known": 87,
+        "total": 87
+      },
+      "primary-use": {
+        "known": 87,
+        "total": 87
+      },
+      "introduction": {
+        "known": 87,
+        "total": 87
+      },
+      "use-condition": {
+        "known": 87,
+        "total": 87
+      },
+      "downloads": {
+        "known": 87,
+        "total": 87
+      }
+    },
+    "software-products": {
+      "software-version": {
+        "known": 13,
+        "total": 13
+      },
+      "roles": {
+        "known": 13,
+        "total": 13
+      },
+      "research-use": {
+        "known": 13,
+        "total": 13
+      },
+      "research-benefit": {
+        "known": 13,
+        "total": 13
+      },
+      "research-condition": {
+        "known": 13,
+        "total": 13
+      },
+      "start-docs": {
+        "known": 13,
+        "total": 13
+      }
+    },
+    "specialized-models": {
+      "model-kind": {
+        "known": 20,
+        "total": 20
+      },
+      "task": {
+        "known": 20,
+        "total": 20
+      },
+      "parameters": {
+        "known": 20,
+        "total": 20
+      },
+      "input-limit": {
+        "known": 20,
+        "total": 20
+      },
+      "output": {
+        "known": 20,
+        "total": 20
+      },
+      "published-quality": {
+        "known": 20,
+        "total": 20
+      },
+      "vector-memory": {
+        "known": 20,
+        "total": 20
+      },
+      "downloads": {
+        "known": 20,
+        "total": 20
+      }
+    }
+  },
+  "defaultMemoryRows": 56,
+  "fileFootprints": {
+    "rows": 257,
+    "models": 87
+  },
+  "executionRoutes": 305,
+  "quality": {
+    "results": 1101,
+    "models": 85
+  },
+  "preservedObservations": {
+    "performance": 40,
+    "prices": 16
+  },
+  "referenceComparison": "All serialized merged-reference fields match exactly except the three stale claims documented in integration-corrections.json."
+}

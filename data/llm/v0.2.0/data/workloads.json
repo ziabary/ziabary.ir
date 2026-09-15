@@ -1,0 +1,26 @@
+[
+  {
+    "id": "workload:chat-4k-1",
+    "contextTokens": 4096,
+    "activeSequences": 1,
+    "labelFa": "چت ۴K، یک درخواست فعال"
+  },
+  {
+    "id": "workload:chat-8k-1",
+    "contextTokens": 8192,
+    "activeSequences": 1,
+    "labelFa": "چت ۸K، یک درخواست فعال"
+  },
+  {
+    "id": "workload:rag-32k-1",
+    "contextTokens": 32768,
+    "activeSequences": 1,
+    "labelFa": "زمینهٔ ۳۲K، یک درخواست فعال"
+  },
+  {
+    "id": "workload:service-8k-8",
+    "contextTokens": 8192,
+    "activeSequences": 8,
+    "labelFa": "هشت درخواست فعال با زمینهٔ ۸K برای هر درخواست"
+  }
+]

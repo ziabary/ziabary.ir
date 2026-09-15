@@ -1,0 +1,178 @@
+[
+  {
+    "sourceId": "bartowski-aya-expanse-32b-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "command-r",
+      "command-r.block_count": 40,
+      "command-r.context_length": 8192,
+      "command-r.embedding_length": 8192,
+      "command-r.attention.head_count": 64,
+      "command-r.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-aya-expanse-32b-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "command-r",
+      "command-r.block_count": 40,
+      "command-r.context_length": 8192,
+      "command-r.embedding_length": 8192,
+      "command-r.attention.head_count": 64,
+      "command-r.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-aya-expanse-8b-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "command-r",
+      "command-r.block_count": 32,
+      "command-r.context_length": 8192,
+      "command-r.embedding_length": 4096,
+      "command-r.attention.head_count": 32,
+      "command-r.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-aya-expanse-8b-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "command-r",
+      "command-r.block_count": 32,
+      "command-r.context_length": 8192,
+      "command-r.embedding_length": 4096,
+      "command-r.attention.head_count": 32,
+      "command-r.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "llama",
+      "llama.block_count": 80,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 8192,
+      "llama.attention.head_count": 64,
+      "llama.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "llama",
+      "llama.block_count": 80,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 8192,
+      "llama.attention.head_count": 64,
+      "llama.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "qwen2",
+      "qwen2.block_count": 48,
+      "qwen2.context_length": 131072,
+      "qwen2.embedding_length": 5120,
+      "qwen2.attention.head_count": 40,
+      "qwen2.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "qwen2",
+      "qwen2.block_count": 48,
+      "qwen2.context_length": 131072,
+      "qwen2.embedding_length": 5120,
+      "qwen2.attention.head_count": 40,
+      "qwen2.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "qwen2",
+      "qwen2.block_count": 64,
+      "qwen2.context_length": 131072,
+      "qwen2.embedding_length": 5120,
+      "qwen2.attention.head_count": 40,
+      "qwen2.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "qwen2",
+      "qwen2.block_count": 64,
+      "qwen2.context_length": 131072,
+      "qwen2.embedding_length": 5120,
+      "qwen2.attention.head_count": 40,
+      "qwen2.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "qwen2",
+      "qwen2.block_count": 28,
+      "qwen2.context_length": 131072,
+      "qwen2.embedding_length": 3584,
+      "qwen2.attention.head_count": 28,
+      "qwen2.attention.head_count_kv": 4
+    }
+  },
+  {
+    "sourceId": "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "qwen2",
+      "qwen2.block_count": 28,
+      "qwen2.context_length": 131072,
+      "qwen2.embedding_length": 3584,
+      "qwen2.attention.head_count": 28,
+      "qwen2.attention.head_count_kv": 4
+    }
+  },
+  {
+    "sourceId": "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "llama",
+      "llama.block_count": 80,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 8192,
+      "llama.attention.head_count": 64,
+      "llama.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "llama",
+      "llama.block_count": 80,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 8192,
+      "llama.attention.head_count": 64,
+      "llama.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header",
+    "fields": {
+      "general.architecture": "llama",
+      "llama.block_count": 32,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 4096,
+      "llama.attention.head_count": 32,
+      "llama.attention.head_count_kv": 8
+    }
+  },
+  {
+    "sourceId": "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header",
+    "fields": {
+      "general.architecture": "llama",
+      "llama.block_count": 32,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 4096,
+      "llama.attention.head_count": 32,
+      "llama.attention.head_count_kv": 8
+    }
+  }
+]

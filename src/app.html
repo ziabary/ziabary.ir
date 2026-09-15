@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <!-- short-link-bootstrap -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f7f6f2" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -10,14 +11,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/fonts/IranSansX/fontiran.css" />
-  <script>
-    if (location.pathname === '/' && new URLSearchParams(location.search).has('t')) {
-      const redirect = document.createElement('script');
-      redirect.type = 'module';
-      redirect.src = '/short-links.js';
-      document.head.appendChild(redirect);
-    }
-  </script>
   %sveltekit.head%
 </head>
 
@@ -30,6 +23,7 @@
     window.gtag('config', 'G-67799BZ3DC');
 
     function loadGoogleAnalytics() {
+      if (document.documentElement.hasAttribute('data-short-link')) return;
       if (document.querySelector('script[data-google-analytics]')) return;
       const script = document.createElement('script');
       script.async = true;

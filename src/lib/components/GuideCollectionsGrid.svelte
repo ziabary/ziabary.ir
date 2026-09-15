@@ -32,14 +32,16 @@
     gap: 18px;
   }
 
-  .guide-collections :global(.guide-collection-card:first-child) {
+  .guide-collections :global(.guide-collection-card:first-child),
+  .guide-collections :global(.guide-collection-card.featured) {
     grid-column: 1 / -1;
     aspect-ratio: 21 / 9;
   }
 
   @media (max-width: 780px) {
     .guide-collections { grid-template-columns: 1fr; }
-    .guide-collections :global(.guide-collection-card:first-child) {
+    .guide-collections :global(.guide-collection-card:first-child),
+    .guide-collections :global(.guide-collection-card.featured) {
       grid-column: auto;
       aspect-ratio: auto;
     }

@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "artifact:v03-plan-huggingfacetb-smollm2-1-7b-instruct-q4-k-m",
+    "modelRepository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF",
+    "repositoryRevision": "2d4a76a30b4af41ecd395c35725ac11688d4cfe4",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "smollm2-1.7b-instruct-q4_k_m.gguf",
+        "bytes": 1055609536,
+        "sha256": "decd2598bc2c8ed08c19adc3c8fdd461ee19ed5708679d1c54ef54a5a30d4f33"
+      }
+    ],
+    "weightFileBytes": 1055609536,
+    "architecture": "llama",
+    "layers": 24,
+    "kvHeads": 32,
+    "headDim": 64,
+    "artifactContextLimitTokens": 8192,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-5e860ef7df6e6f65",
+      "v03-planning-53fdf76bbe607b27"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-huggingfacetb-smollm2-135m-instruct-q4-k-m",
+    "modelRepository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "repository": "bartowski/SmolLM2-135M-Instruct-GGUF",
+    "repositoryRevision": "09816acd5d99df7be770d85ea30822623dab342c",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "SmolLM2-135M-Instruct-Q4_K_M.gguf",
+        "bytes": 105454432,
+        "sha256": "2e8040ceae7815abe0dcb3540b9995eaa1fa0d2ca9e797d0a635ae4433c68c2d"
+      }
+    ],
+    "weightFileBytes": 105454432,
+    "architecture": "llama",
+    "layers": 30,
+    "kvHeads": 3,
+    "headDim": 64,
+    "artifactContextLimitTokens": 8192,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-7dab6476353ac322",
+      "v03-planning-8e26b4395631595d"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-huggingfacetb-smollm2-135m-instruct-q8-0",
+    "modelRepository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "repository": "bartowski/SmolLM2-135M-Instruct-GGUF",
+    "repositoryRevision": "09816acd5d99df7be770d85ea30822623dab342c",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "SmolLM2-135M-Instruct-Q8_0.gguf",
+        "bytes": 144811360,
+        "sha256": "5a1395716f7913741cc51d98581b9b1228d80987a9f7d3664106742eb06bba83"
+      }
+    ],
+    "weightFileBytes": 144811360,
+    "architecture": "llama",
+    "layers": 30,
+    "kvHeads": 3,
+    "headDim": 64,
+    "artifactContextLimitTokens": 8192,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-7dab6476353ac322",
+      "v03-planning-8e26b4395631595d"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-huggingfacetb-smollm2-360m-instruct-q8-0",
+    "modelRepository": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "repository": "HuggingFaceTB/SmolLM2-360M-Instruct-GGUF",
+    "repositoryRevision": "593b5a2e04c8f3e4ee880263f93e0bd2901ad47f",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "smollm2-360m-instruct-q8_0.gguf",
+        "bytes": 386404992,
+        "sha256": "48ab3034d0dd401fbc721eb1df3217902fee7dab9078992d66431f09b7750201"
+      }
+    ],
+    "weightFileBytes": 386404992,
+    "architecture": "llama",
+    "layers": 32,
+    "kvHeads": 5,
+    "headDim": 64,
+    "artifactContextLimitTokens": 8192,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-7a890ff46e80323d",
+      "v03-planning-18706798b1ea1ca5"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen3-coder-30b-a3b-instruct-q4-k-m",
+    "modelRepository": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "repository": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "repositoryRevision": "b17cb02dd882d5b6ab62fc777ad2995f19668350",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "bytes": 18556689568,
+        "sha256": "fadc3e5f8d42bf7e894a785b05082e47daee4df26680389817e2093056f088ad"
+      }
+    ],
+    "weightFileBytes": 18556689568,
+    "architecture": "qwen3moe",
+    "layers": 48,
+    "kvHeads": 4,
+    "headDim": 128,
+    "artifactContextLimitTokens": 262144,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-a741640d4d1da99d",
+      "v03-planning-0ee810b7aac3ad46"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen3-coder-30b-a3b-instruct-q8-0",
+    "modelRepository": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "repository": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "repositoryRevision": "b17cb02dd882d5b6ab62fc777ad2995f19668350",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf",
+        "bytes": 32483935392,
+        "sha256": "4ff1cff607804037bf6d2168249c570baa4e1621292b159c0e06591e0d7c3066"
+      }
+    ],
+    "weightFileBytes": 32483935392,
+    "architecture": "qwen3moe",
+    "layers": 48,
+    "kvHeads": 4,
+    "headDim": 128,
+    "artifactContextLimitTokens": 262144,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-a741640d4d1da99d",
+      "v03-planning-0ee810b7aac3ad46"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
+    "modelRepository": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "repository": "bartowski/deepseek-ai_DeepSeek-R1-0528-Qwen3-8B-GGUF",
+    "repositoryRevision": "75b8e3d4ecafa21b1f9a06209712f726d0ed77bc",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "deepseek-ai_DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf",
+        "bytes": 5027783040,
+        "sha256": "e0c2f118fd59f3a16f20d18b0e7f79e960c84bc8c66d94fd71a691e05151d54f"
+      }
+    ],
+    "weightFileBytes": 5027783040,
+    "architecture": "qwen3",
+    "layers": 36,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-c72c57134034d735",
+      "v03-planning-5db930a67eb01f09"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-deepseek-ai-deepseek-r1-0528-qwen3-8b-q8-0",
+    "modelRepository": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "repository": "bartowski/deepseek-ai_DeepSeek-R1-0528-Qwen3-8B-GGUF",
+    "repositoryRevision": "75b8e3d4ecafa21b1f9a06209712f726d0ed77bc",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "deepseek-ai_DeepSeek-R1-0528-Qwen3-8B-Q8_0.gguf",
+        "bytes": 8709517696,
+        "sha256": "9144694fd6a4347d9842b20797946754fb673871b92ba966e32e51b9057fa428"
+      }
+    ],
+    "weightFileBytes": 8709517696,
+    "architecture": "qwen3",
+    "layers": 36,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-c72c57134034d735",
+      "v03-planning-5db930a67eb01f09"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-deepseek-ai-deepseek-r1-distill-qwen-1-5b-q4-k-m",
+    "modelRepository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "repository": "bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
+    "repositoryRevision": "9cc28b17e86fa2415fcb070f8ee5ec27c965aa61",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf",
+        "bytes": 1117320800,
+        "sha256": "1741e5b2d062b07acf048bf0d2c514dadf2a48f94e2b4aa0cfe069af3838ee2f"
+      }
+    ],
+    "weightFileBytes": 1117320800,
+    "architecture": "qwen2",
+    "layers": 28,
+    "kvHeads": 2,
+    "headDim": 128,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-cbbe5b842306de32",
+      "v03-planning-70f1ed61aa45e7a2"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-deepseek-ai-deepseek-r1-distill-qwen-1-5b-q8-0",
+    "modelRepository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "repository": "bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
+    "repositoryRevision": "9cc28b17e86fa2415fcb070f8ee5ec27c965aa61",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf",
+        "bytes": 1894532192,
+        "sha256": "166baa90e6a963de31a7713ff034f82317ff1fa41602f7c3ce583d3f6b551829"
+      }
+    ],
+    "weightFileBytes": 1894532192,
+    "architecture": "qwen2",
+    "layers": 28,
+    "kvHeads": 2,
+    "headDim": 128,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-cbbe5b842306de32",
+      "v03-planning-70f1ed61aa45e7a2"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-ibm-granite-granite-3-3-2b-instruct-q4-k-m",
+    "modelRepository": "ibm-granite/granite-3.3-2b-instruct",
+    "repository": "ibm-granite/granite-3.3-2b-instruct-GGUF",
+    "repositoryRevision": "7cdf86ccd1f1bb3491c9b7017b033f2e51367397",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "granite-3.3-2b-instruct-Q4_K_M.gguf",
+        "bytes": 1545303328,
+        "sha256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852"
+      }
+    ],
+    "weightFileBytes": 1545303328,
+    "architecture": "granite",
+    "layers": 40,
+    "kvHeads": 8,
+    "headDim": 64,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-63282a2e0b08bc95",
+      "v03-planning-699815c128188e4b"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-ibm-granite-granite-3-3-2b-instruct-q8-0",
+    "modelRepository": "ibm-granite/granite-3.3-2b-instruct",
+    "repository": "ibm-granite/granite-3.3-2b-instruct-GGUF",
+    "repositoryRevision": "7cdf86ccd1f1bb3491c9b7017b033f2e51367397",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "granite-3.3-2b-instruct-Q8_0.gguf",
+        "bytes": 2694120096,
+        "sha256": "39068a5bcb15f10487a49426d617b1b0f38a624d7dbdefe5ff6f26de82d97039"
+      }
+    ],
+    "weightFileBytes": 2694120096,
+    "architecture": "granite",
+    "layers": 40,
+    "kvHeads": 8,
+    "headDim": 64,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-63282a2e0b08bc95",
+      "v03-planning-699815c128188e4b"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-microsoft-phi-4-mini-instruct-q4-k-m",
+    "modelRepository": "microsoft/Phi-4-mini-instruct",
+    "repository": "bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+    "repositoryRevision": "7ff82c2aaa4dde30121698a973765f39be5288c0",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "microsoft_Phi-4-mini-instruct-Q4_K_M.gguf",
+        "bytes": 2491874688,
+        "sha256": "01999f17c39cc3074afae5e9c539bc82d45f2dd7faa3917c66cbef76fce8c0c2"
+      }
+    ],
+    "weightFileBytes": 2491874688,
+    "architecture": "phi3",
+    "layers": 32,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-2158b265bab61965",
+      "v03-planning-ced2e5744936c13b"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-microsoft-phi-4-mini-instruct-q8-0",
+    "modelRepository": "microsoft/Phi-4-mini-instruct",
+    "repository": "bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+    "repositoryRevision": "7ff82c2aaa4dde30121698a973765f39be5288c0",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "microsoft_Phi-4-mini-instruct-Q8_0.gguf",
+        "bytes": 4084611456,
+        "sha256": "a12f242c4ee379b9da91673e5d78b30bfacfe4fd86a0b2259d2ecad5d93cb6c7"
+      }
+    ],
+    "weightFileBytes": 4084611456,
+    "architecture": "phi3",
+    "layers": 32,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 131072,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-2158b265bab61965",
+      "v03-planning-ced2e5744936c13b"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-mistralai-mistral-7b-instruct-v0-3-q4-k-m",
+    "modelRepository": "mistralai/Mistral-7B-Instruct-v0.3",
+    "repository": "bartowski/Mistral-7B-Instruct-v0.3-GGUF",
+    "repositoryRevision": "61fd4167fff3ab01ee1cfe0da183fa27a944db48",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+        "bytes": 4372812000,
+        "sha256": "1270d22c0fbb3d092fb725d4d96c457b7b687a5f5a715abe1e818da303e562b6"
+      }
+    ],
+    "weightFileBytes": 4372812000,
+    "architecture": "llama",
+    "layers": 32,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-c78dc2331f4abb82",
+      "v03-planning-5dfe41dfa9a464dd"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-mistralai-mistral-7b-instruct-v0-3-q8-0",
+    "modelRepository": "mistralai/Mistral-7B-Instruct-v0.3",
+    "repository": "bartowski/Mistral-7B-Instruct-v0.3-GGUF",
+    "repositoryRevision": "61fd4167fff3ab01ee1cfe0da183fa27a944db48",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Mistral-7B-Instruct-v0.3-Q8_0.gguf",
+        "bytes": 7702565088,
+        "sha256": "404857e776114baada71a08ebd3bba79d721ec7fca99705e7e7b892ae8bc583f"
+      }
+    ],
+    "weightFileBytes": 7702565088,
+    "architecture": "llama",
+    "layers": 32,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-c78dc2331f4abb82",
+      "v03-planning-5dfe41dfa9a464dd"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen3-235b-a22b-instruct-2507-q4-k-m",
+    "modelRepository": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "repository": "bartowski/Qwen_Qwen3-235B-A22B-Instruct-2507-GGUF",
+    "repositoryRevision": "88c7cb3896a641944f1210980b3c3e7d4e4aaef6",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M/Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M-00001-of-00004.gguf",
+        "bytes": 39856336448,
+        "sha256": "dfb7479c13e3d0a88efadcb712e02afe7ab3bf884775f69ca83529f35b99f6d0"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M/Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M-00002-of-00004.gguf",
+        "bytes": 39847230560,
+        "sha256": "ac9e4decc11c7ed37258f20c512a4e9aef4b7db0a89646279ee5993358c0fff5"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M/Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M-00003-of-00004.gguf",
+        "bytes": 39847230560,
+        "sha256": "e1b516bea9a6019e38a324acd41cecb6534a651fe6afcbe71f8defbb0b97570e"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M/Qwen_Qwen3-235B-A22B-Instruct-2507-Q4_K_M-00004-of-00004.gguf",
+        "bytes": 23096107744,
+        "sha256": "0f646d53271d8c845e4d0d2d81648fdf445cfdfd0b9b7657f26258ed7bd4aeba"
+      }
+    ],
+    "weightFileBytes": 142646905312,
+    "architecture": "qwen3moe",
+    "layers": 94,
+    "kvHeads": 4,
+    "headDim": 128,
+    "artifactContextLimitTokens": 262144,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-475fc381828641e0",
+      "v03-planning-c179c1ece0f8fc98"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen3-235b-a22b-instruct-2507-q8-0",
+    "modelRepository": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "repository": "bartowski/Qwen_Qwen3-235B-A22B-Instruct-2507-GGUF",
+    "repositoryRevision": "88c7cb3896a641944f1210980b3c3e7d4e4aaef6",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00001-of-00007.gguf",
+        "bytes": 39287091328,
+        "sha256": "f95a5cc37cc998d733883199ff8a104748ed8c2047d9b3359c9d366ba3a25825"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00002-of-00007.gguf",
+        "bytes": 39672080608,
+        "sha256": "a503d29d1f03bc994c39bf50683a101721a803f2181954ca5e0fb2a60706ac34"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00003-of-00007.gguf",
+        "bytes": 39672080608,
+        "sha256": "e75aeb591e69b8ea1a9ed77a0402b321ff9a89864f1f3d6d470eed186d46543c"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00004-of-00007.gguf",
+        "bytes": 39672080608,
+        "sha256": "fdd510ef5f28dd1046fd074db6d5f7646636c34a28f7f3d5f160746ea117c493"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00005-of-00007.gguf",
+        "bytes": 39672080608,
+        "sha256": "c5e77663da5ccaf46209ce334f1425fb736f1e431b387ef8dc0f477a10822d86"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00006-of-00007.gguf",
+        "bytes": 39672080608,
+        "sha256": "9a56c50b12cf9f837c5c8ec8018ffdb2e13c90284ecb92702ddf8c1c2c64c0eb"
+      },
+      {
+        "name": "Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0/Qwen_Qwen3-235B-A22B-Instruct-2507-Q8_0-00007-of-00007.gguf",
+        "bytes": 12292611424,
+        "sha256": "8a3bd6a41f1b0db9aa5172baed16f96d6e2a5bacc378048615aa3e35310ebb72"
+      }
+    ],
+    "weightFileBytes": 249940105792,
+    "architecture": "qwen3moe",
+    "layers": 94,
+    "kvHeads": 4,
+    "headDim": 128,
+    "artifactContextLimitTokens": 262144,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-475fc381828641e0",
+      "v03-planning-c179c1ece0f8fc98"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen3-coder-480b-a35b-instruct-q4-k-m",
+    "modelRepository": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "repository": "bartowski/Qwen_Qwen3-Coder-480B-A35B-Instruct-GGUF",
+    "repositoryRevision": "50c0e081611c82a592b3917c99e98dd6b7339178",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00001-of-00008.gguf",
+        "bytes": 39276721216,
+        "sha256": "04368da89344fb449209c4c202c6c8e69b56a0d62b5418c57a38172e249cd2a2"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00002-of-00008.gguf",
+        "bytes": 39729552960,
+        "sha256": "684fe05e507fbedc126396f7f22b6dcd0a0d51d47877b852c90286ee448ac12a"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00003-of-00008.gguf",
+        "bytes": 39733509824,
+        "sha256": "86a8c8b83ec00a8e7090c755043193d16b94942696b996411bb97555f6eb3eff"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00004-of-00008.gguf",
+        "bytes": 39628888352,
+        "sha256": "a1a21558d1f0aa247ce5aa956656425661872c79e3b6933be581da373d0e4c83"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00005-of-00008.gguf",
+        "bytes": 39729552992,
+        "sha256": "ac8b0083286f4aae3e7de89c0b7b1afa5f0fe4966fb27fa43c762a27da0636eb"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00006-of-00008.gguf",
+        "bytes": 39084703424,
+        "sha256": "e9b8f7725fddcfa8a1f7762608fcc658be6f0d25101143b5a952d97ea8e45541"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00007-of-00008.gguf",
+        "bytes": 38745061408,
+        "sha256": "216cf0b1792d8d3f7246372d5fc2e219973223fc319c4e4ca244badab639d561"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q4_K_M-00008-of-00008.gguf",
+        "bytes": 14910975936,
+        "sha256": "08b9e121e1954ac8abe3ec6dd726ab0df47e0342a203941aafb853cf3022e336"
+      }
+    ],
+    "weightFileBytes": 290838966112,
+    "architecture": "qwen3moe",
+    "layers": 62,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 262144,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-a263969d106f5f7a",
+      "v03-planning-62176c481d6fa446"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen3-coder-480b-a35b-instruct-q8-0",
+    "modelRepository": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "repository": "bartowski/Qwen_Qwen3-Coder-480B-A35B-Instruct-GGUF",
+    "repositoryRevision": "50c0e081611c82a592b3917c99e98dd6b7339178",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00001-of-00014.gguf",
+        "bytes": 37634897632,
+        "sha256": "174e51e327d68f557778ddbe1f3fee45109522f7e1cf7a8ac6e923dd5d91c1c6"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00002-of-00014.gguf",
+        "bytes": 38323086016,
+        "sha256": "806e3c4d40a7eaccf61d321ec71fe8f570ec34495456f5a11513170eadbd6cda"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00003-of-00014.gguf",
+        "bytes": 38149258592,
+        "sha256": "cb0bc2ded5f1c7ebe2014a01995dca56454c5d3805afaf3188e31b063fd1239b"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00004-of-00014.gguf",
+        "bytes": 38319129216,
+        "sha256": "2e0fb2a07be8fec154489464e2e344e1a75f16af4e5d8fd8570702d3c2d31b8c"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00005-of-00014.gguf",
+        "bytes": 38323086080,
+        "sha256": "ca6a9d7c8ac80e3705495f267162b08df456dbd295ca8f5588b6d5ff21373b45"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00006-of-00014.gguf",
+        "bytes": 38149258592,
+        "sha256": "fb6cc19ce54f33741ed56fd0735ca6b93c44e304dcefbdff33f2aadc1ec637de"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00007-of-00014.gguf",
+        "bytes": 38319129216,
+        "sha256": "3c630c43c90a698183a1dae5621bc91a6062231c0dd043689b8fac3c63daede4"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00008-of-00014.gguf",
+        "bytes": 38323086080,
+        "sha256": "1a02191b94338271d34aa61e7ee612fa25a52b7cf48d1707988ed28af9accce2"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00009-of-00014.gguf",
+        "bytes": 38149258592,
+        "sha256": "4e6236bfd31f96e0fbc8d0ac3682d6fc5ccfe3114561951396eeb978fd6ed63f"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00010-of-00014.gguf",
+        "bytes": 38319129216,
+        "sha256": "493f3333cf0defab962f945f3a72ec65e33ce0eddd5386720e65362704e3bd48"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00011-of-00014.gguf",
+        "bytes": 38323086080,
+        "sha256": "1a152e09f289cfa92bd68e973ab1fc6e7a8f10520650be3d86eae4dba8bcadc3"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00012-of-00014.gguf",
+        "bytes": 38149258592,
+        "sha256": "34b477216af9774159d53e59cecac3b2a5e4b854a203677b2cd644e9a5bfdb79"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00013-of-00014.gguf",
+        "bytes": 38319129216,
+        "sha256": "e4b33e096ccc670a818f947fc68df01acbc228b9eb48bf02d67d3f83c03f0b1e"
+      },
+      {
+        "name": "Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0/Qwen_Qwen3-Coder-480B-A35B-Instruct-Q8_0-00014-of-00014.gguf",
+        "bytes": 13551085696,
+        "sha256": "1be0fe5c1b9288e0cf5d5fc0f7962a61b1a23e04c67211e8ff3b1cc09dc95dbf"
+      }
+    ],
+    "weightFileBytes": 510351878816,
+    "architecture": "qwen3moe",
+    "layers": 62,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 262144,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-a263969d106f5f7a",
+      "v03-planning-62176c481d6fa446"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-microsoft-phi-4-q4-k-m",
+    "modelRepository": "microsoft/phi-4",
+    "repository": "bartowski/phi-4-GGUF",
+    "repositoryRevision": "19cd65f97c2f1712a81c506611d3f9c94b16a1e1",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "phi-4-Q4_K_M.gguf",
+        "bytes": 9053114816,
+        "sha256": "009aba717c09d4a35890c7d35eb59d54e1dba884c7c526e7197d9c13ab5911d9"
+      }
+    ],
+    "weightFileBytes": 9053114816,
+    "architecture": "phi3",
+    "layers": 40,
+    "kvHeads": 10,
+    "headDim": 128,
+    "artifactContextLimitTokens": 16384,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-ec9523bbb243f69a",
+      "v03-planning-c3e1fae67797b9ab"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-microsoft-phi-4-q8-0",
+    "modelRepository": "microsoft/phi-4",
+    "repository": "bartowski/phi-4-GGUF",
+    "repositoryRevision": "19cd65f97c2f1712a81c506611d3f9c94b16a1e1",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "third-party",
+    "files": [
+      {
+        "name": "phi-4-Q8_0.gguf",
+        "bytes": 15580500416,
+        "sha256": "68efc525888cc34fc2cb539c2f4409653d57994e35b3a5735d2a59b871871bf3"
+      }
+    ],
+    "weightFileBytes": 15580500416,
+    "architecture": "phi3",
+    "layers": 40,
+    "kvHeads": 10,
+    "headDim": 128,
+    "artifactContextLimitTokens": 16384,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-ec9523bbb243f69a",
+      "v03-planning-c3e1fae67797b9ab"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen2-5-coder-7b-instruct-q4-k-m",
+    "modelRepository": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "repository": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+    "repositoryRevision": "13fb94bfda8c8cf22497dc57b78f391a9acb426a",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "qwen2.5-coder-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201376,
+        "sha256": "89f120544682078148c5a86117de9af3a65c339111262f2d3ff01d80d48b14be"
+      },
+      {
+        "name": "qwen2.5-coder-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "0183b3c850cfa96c31082c3af0123115300d3f62798c4448fa8f57bd0eac05e0"
+      },
+      {
+        "name": "qwen2.5-coder-7b-instruct-q4_k_m.gguf",
+        "bytes": 4683073536,
+        "sha256": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c"
+      }
+    ],
+    "weightFileBytes": 9366147200,
+    "architecture": "qwen2",
+    "layers": 28,
+    "kvHeads": 4,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-5eaca01a0f04c507",
+      "v03-planning-1d783e6b352f4d81"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen2-5-coder-7b-instruct-q8-0",
+    "modelRepository": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "repository": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+    "repositoryRevision": "13fb94bfda8c8cf22497dc57b78f391a9acb426a",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "qwen2.5-coder-7b-instruct-q8_0-00001-of-00003.gguf",
+        "bytes": 3980069280,
+        "sha256": "e2fc5918a2b579d8e03a3752ad74dd191bc0f43204c90a29070f273f5283fee1"
+      },
+      {
+        "name": "qwen2.5-coder-7b-instruct-q8_0-00002-of-00003.gguf",
+        "bytes": 3942935680,
+        "sha256": "912b7876d43dc19bbcf09368f4472f6cfea3458067a5bcaa660a68a9958276db"
+      },
+      {
+        "name": "qwen2.5-coder-7b-instruct-q8_0-00003-of-00003.gguf",
+        "bytes": 175520480,
+        "sha256": "478f6a6b37072eeda02a98a59b6ef0b1a9131c9eae9a1181b6077f5e255fa6b2"
+      },
+      {
+        "name": "qwen2.5-coder-7b-instruct-q8_0.gguf",
+        "bytes": 8098525184,
+        "sha256": "b36a4e1c3ddf2ba6fd5501b926128e5fc6430881caaff07e9629bd18f06f685f"
+      }
+    ],
+    "weightFileBytes": 16197050624,
+    "architecture": "qwen2",
+    "layers": 28,
+    "kvHeads": 4,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-5eaca01a0f04c507",
+      "v03-planning-1d783e6b352f4d81"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen2-5-coder-14b-instruct-q4-k-m",
+    "modelRepository": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "repository": "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+    "repositoryRevision": "d0a692ef765eefbf2fabb130b3cb2e8917e3d225",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "qwen2.5-coder-14b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 8000444480,
+        "sha256": "310a553a856d7b238c05ed1b0cb877c4dca5b65c2286324854a1397149a00af2"
+      },
+      {
+        "name": "qwen2.5-coder-14b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 987665920,
+        "sha256": "7a52538b39090d99ce93b1b05a406b805427171f890dbef8684c57fb28b2d96a"
+      },
+      {
+        "name": "qwen2.5-coder-14b-instruct-q4_k_m.gguf",
+        "bytes": 8988110272,
+        "sha256": "c1e659736d89ac1065fb495330fb824d94001974a4bfa78e7270e43476a8d940"
+      }
+    ],
+    "weightFileBytes": 17976220672,
+    "architecture": "qwen2",
+    "layers": 48,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-d9254d47ec0e52c0",
+      "v03-planning-63861e833e57f28e"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen2-5-coder-14b-instruct-q8-0",
+    "modelRepository": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "repository": "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+    "repositoryRevision": "d0a692ef765eefbf2fabb130b3cb2e8917e3d225",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "qwen2.5-coder-14b-instruct-q8_0-00001-of-00002.gguf",
+        "bytes": 8004181408,
+        "sha256": "957ba4cf4cbdd5bc1c1c28f7cc7a939f71d1fe2707f1d18e35a028aaf1b7c6cd"
+      },
+      {
+        "name": "qwen2.5-coder-14b-instruct-q8_0-00002-of-00002.gguf",
+        "bytes": 7697416352,
+        "sha256": "5ca3f878a3313f5ef72e7210dc9b03f1e4a4af791674d36f14e8256c8c52ee45"
+      },
+      {
+        "name": "qwen2.5-coder-14b-instruct-q8_0.gguf",
+        "bytes": 15701597632,
+        "sha256": "8180f66e3458e298830cebe7c9e8a9bde0ae6511d399fd99d3385b64324ac85d"
+      }
+    ],
+    "weightFileBytes": 31403195392,
+    "architecture": "qwen2",
+    "layers": 48,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-d9254d47ec0e52c0",
+      "v03-planning-63861e833e57f28e"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen2-5-coder-32b-instruct-q4-k-m",
+    "modelRepository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "repository": "Qwen/Qwen2.5-Coder-32B-Instruct-GGUF",
+    "repositoryRevision": "9d3053fce650fe1cdbdb75998c2a87add9d178ef",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q4_K_M",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "qwen2.5-coder-32b-instruct-q4_k_m-00001-of-00003.gguf",
+        "bytes": 7990120512,
+        "sha256": "0a9145d25318b7584094e77044cc256bc9f1374c8f168a3812119242b456f69b"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q4_k_m-00002-of-00003.gguf",
+        "bytes": 7943826304,
+        "sha256": "de1e27aa436e0856582eed095418fd3db8538b0d5d6e71b6362208b3a7f6d16f"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q4_k_m-00003-of-00003.gguf",
+        "bytes": 3917389312,
+        "sha256": "4d893bec57ae6b2c898c0f2f0f9804a5d855dc7091255b76f3671cb8787919fe"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q4_k_m.gguf",
+        "bytes": 19851335872,
+        "sha256": "4d64b316b5e6319d9613e0d97935d9ebd631fc7e334da400d00085eca749d085"
+      }
+    ],
+    "weightFileBytes": 39702672000,
+    "architecture": "qwen2",
+    "layers": 64,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-1bcacca708fe4845",
+      "v03-planning-9a4c68f6cc1f1b1a"
+    ]
+  },
+  {
+    "id": "artifact:v03-plan-qwen-qwen2-5-coder-32b-instruct-q8-0",
+    "modelRepository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "repository": "Qwen/Qwen2.5-Coder-32B-Instruct-GGUF",
+    "repositoryRevision": "9d3053fce650fe1cdbdb75998c2a87add9d178ef",
+    "baseRevision": null,
+    "format": "GGUF",
+    "quantization": "Q8_0",
+    "authority": "model-publisher",
+    "files": [
+      {
+        "name": "qwen2.5-coder-32b-instruct-q8_0-00001-of-00005.gguf",
+        "bytes": 7869714432,
+        "sha256": "00dcfb0da177f106142d38c076591909f58362d2b8b653183c9dab2e9a53080d"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q8_0-00002-of-00005.gguf",
+        "bytes": 7989308160,
+        "sha256": "4fa9fd8a9759f6ec261e9012b1d44b8cfd3667a5f5baa00d48d9be4e017db54e"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q8_0-00003-of-00005.gguf",
+        "bytes": 7922391296,
+        "sha256": "122317f46232eeb8b10e94806aedbf0206bf1f629c1c6c9b453c02b873e1d7ac"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q8_0-00004-of-00005.gguf",
+        "bytes": 7922391296,
+        "sha256": "044bb559123a5b31daa772018d319672273eca43582291d408be2e1f3ecbe719"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q8_0-00005-of-00005.gguf",
+        "bytes": 3117079968,
+        "sha256": "b6270642cd97f329a51f1356d658909b3652e71fbfa39b1462b1764740dbc9d4"
+      },
+      {
+        "name": "qwen2.5-coder-32b-instruct-q8_0.gguf",
+        "bytes": 34820884672,
+        "sha256": "ae6e5cee79233499b41502ea7270e665dc402b2c35c48d43ef2d5a0a10842725"
+      }
+    ],
+    "weightFileBytes": 69641769824,
+    "architecture": "qwen2",
+    "layers": 64,
+    "kvHeads": 8,
+    "headDim": 128,
+    "artifactContextLimitTokens": 32768,
+    "architectureBasis": "named-model-config plus converter attribution and matching GGUF architecture; assumes unchanged attention geometry; full-length FP16 KV planning",
+    "sourceIds": [
+      "v03-planning-1bcacca708fe4845",
+      "v03-planning-9a4c68f6cc1f1b1a"
+    ]
+  }
+]

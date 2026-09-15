@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+    "date": "2026-08-26",
+    "faDate": "۴ شهریور ۱۴۰۵",
+    "draft": true,
+    "sourceArchive": "llm-article-rtx4090-24gb-vs-48gb.zip",
+    "sourceArchiveSha256": "fe6e7f32d593e2e3fcf3f4dd5d60599df73c1ee8b9c94545a12fb4520e093d6f",
+    "bodyPreservedExcept": [
+      "local internal URLs",
+      "Persian thousand-token units",
+      "LTR isolation for model/package names and GiB values"
+    ],
+    "originalCoverUnchanged": true
+  },
+  {
+    "slug": "right-model-size-for-the-task",
+    "date": "2026-08-31",
+    "faDate": "۹ شهریور ۱۴۰۵",
+    "draft": true,
+    "sourceArchive": "llm-article-right-model-size.zip",
+    "sourceArchiveSha256": "e73d41d38882a9e226d3142f9baceb2f1f8aa49d686cbe9f07f5f698d6f0a353",
+    "bodyPreservedExcept": [
+      "local internal URLs",
+      "Persian thousand-token units",
+      "LTR isolation for model/package names and GiB values"
+    ],
+    "originalCoverUnchanged": true
+  }
+]

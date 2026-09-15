@@ -12,10 +12,66 @@
 .article-page .prose h4{font-size:18px;margin:34px 0 8px}
 .article-page .prose li{font-size:16px;line-height:2.25;color:color-mix(in srgb,var(--ink) 86%,var(--muted))}
 .article-page .prose ul,.article-page .prose ol{padding-inline-start:24px}
-.prose table{display:block;width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;margin:28px 0;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.85;scrollbar-width:thin;scrollbar-color:var(--muted) var(--paper)}
-.prose-table-scroll{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid var(--line);border-radius:10px;margin:28px 0;background:var(--paper);scrollbar-width:thin;scrollbar-color:var(--muted) var(--paper)}
+.prose table{display:block;width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;margin:28px 0;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.85}
+.prose-table-scroll{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid var(--line);border-radius:10px;margin:28px 0;background:var(--paper)}
 .prose .prose-table-scroll>table{display:table;width:100%;max-width:none;margin:0;border:0;border-radius:0;overflow:visible}
 .prose-table-scroll:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+
+/* Shared native scrollbars for guide tables, comparisons and Markdown tables.
+   Keep the browser's system controls in forced-colors mode. */
+@media (forced-colors: none) {
+  :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table) {
+    --table-scroll-track: color-mix(in srgb, var(--soft) 55%, var(--paper));
+    --table-scroll-thumb: color-mix(in srgb, var(--teal) 72%, var(--muted));
+    scrollbar-width: thin;
+    scrollbar-color: var(--table-scroll-thumb) var(--table-scroll-track);
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table) {
+      /* Standard non-auto properties override the rounded WebKit controls. */
+      scrollbar-width: auto;
+      scrollbar-color: auto;
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-track {
+      background: var(--table-scroll-track);
+      border-radius: 999px;
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-thumb {
+      min-width: 40px;
+      min-height: 40px;
+      border: 2px solid var(--table-scroll-track);
+      border-radius: 999px;
+      background: var(--table-scroll-thumb);
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-thumb:hover {
+      background: var(--teal);
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-thumb:active {
+      background: color-mix(in srgb, var(--teal) 70%, var(--ink));
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-corner {
+      background: var(--table-scroll-track);
+    }
+
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-button {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
 .prose th,.prose td{min-width:130px;padding:13px 16px;border:0;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
 .prose tr>:last-child{border-inline-end:0}
 .prose tbody tr:last-child>*{border-bottom:0}

@@ -1,0 +1,104 @@
+[
+  {
+    "brand": "kimi",
+    "publisher": "Moonshot AI",
+    "profileUrl": "https://huggingface.co/moonshotai",
+    "metadataUrl": "https://huggingface.co/api/organizations/moonshotai/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/641c1e77c3983aa9490f8121/X1yT2rsaIbR9cdYGEVu0X.jpeg",
+    "localPath": "/images/llm/brands/kimi.webp",
+    "sha256": "6c9ba98efd7d603b5476db9313617ebffd57a53acb0f9ef724ef4c7288a8a527",
+    "bytes": 5568,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "minimax",
+    "publisher": "MiniMax",
+    "profileUrl": "https://huggingface.co/MiniMaxAI",
+    "metadataUrl": "https://huggingface.co/api/organizations/MiniMaxAI/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/676e38ad04af5bec20bc9faf/dUd-LsZEX0H_d4qefO_g6.jpeg",
+    "localPath": "/images/llm/brands/minimax.webp",
+    "sha256": "4620fb75bcb082cf052911e3e89cb956178a9ad05509539adb8e3b46d3cf0a96",
+    "bytes": 4194,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "minilm",
+    "publisher": "Sentence Transformers",
+    "profileUrl": "https://huggingface.co/sentence-transformers",
+    "metadataUrl": "https://huggingface.co/api/organizations/sentence-transformers/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1609621322398-5eff4688ff69163f6f59e66c.png",
+    "localPath": "/images/llm/brands/minilm.webp",
+    "sha256": "ba01a220c0a1c6d4880df8ab137c72506fa0e4a407541401c6edb7c55667510d",
+    "bytes": 6398,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "jina",
+    "publisher": "Jina AI",
+    "profileUrl": "https://huggingface.co/jinaai",
+    "metadataUrl": "https://huggingface.co/api/organizations/jinaai/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/603763514de52ff951d89793/wD54VbAHHyHop3uYlJKl4.png",
+    "localPath": "/images/llm/brands/jina.webp",
+    "sha256": "403fb1457969f5d10c0f9372cf4d65304fecde1d102849b9371873d2860e8bb8",
+    "bytes": 4528,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "mixedbread",
+    "publisher": "Mixedbread",
+    "profileUrl": "https://huggingface.co/mixedbread-ai",
+    "metadataUrl": "https://huggingface.co/api/organizations/mixedbread-ai/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/643ee0870d1194da249bd7fe/voYdYlFgQH5vyMwyMNluZ.png",
+    "localPath": "/images/llm/brands/mixedbread.webp",
+    "sha256": "f3659f0e21d59cef26072b279990802ba637a3593cbdfd70ecfd8c7690e5187f",
+    "bytes": 8230,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "nomic",
+    "publisher": "Nomic AI",
+    "profileUrl": "https://huggingface.co/nomic-ai",
+    "metadataUrl": "https://huggingface.co/api/organizations/nomic-ai/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f01fe6d51620635e118e9/wy0ax27ok1-uHWoUAHSEs.png",
+    "localPath": "/images/llm/brands/nomic.webp",
+    "sha256": "27ca7351653280ba5f8f9df2cf682cf107f74a0896c3892026eaaf4a9902298a",
+    "bytes": 11080,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "modernbert",
+    "publisher": "Answer.AI",
+    "profileUrl": "https://huggingface.co/answerdotai",
+    "metadataUrl": "https://huggingface.co/api/organizations/answerdotai/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623e19ff8972a8c030af5277/KTqmARlLjdqMClfLWA-A1.png",
+    "localPath": "/images/llm/brands/modernbert.webp",
+    "sha256": "c9fe6676a7806c32d4de3eb6ccc2b5697012d294aaf052423f757fbd56b43ec5",
+    "bytes": 3860,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "ktransformers",
+    "publisher": "kvcache-ai",
+    "profileUrl": "https://github.com/kvcache-ai/ktransformers",
+    "metadataUrl": "https://api.github.com/repos/kvcache-ai/ktransformers",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/170996193?v=4",
+    "localPath": "/images/llm/brands/ktransformers.png",
+    "sha256": "2697075d7ea12c51c435e80ef3a00e9a87ff2234928e89de48492ed87daa79d4",
+    "bytes": 10074,
+    "accessedOn": "2026-09-15"
+  },
+  {
+    "brand": "e5",
+    "localPath": "/images/llm/brands/phi.webp",
+    "publisher": "Microsoft Research",
+    "attributionUrl": "https://github.com/microsoft/unilm/tree/master/e5",
+    "note": "Reuse the existing local Microsoft publisher mark; E5 is published by the Microsoft UniLM team."
+  },
+  {
+    "brand": "smolvlm",
+    "localPath": "/images/llm/brands/smollm.webp",
+    "publisher": "HuggingFaceTB",
+    "attributionUrl": "https://huggingface.co/HuggingFaceTB",
+    "note": "Reuse the existing local publisher mark for SmolVLM."
+  }
+]

@@ -1,0 +1,1737 @@
+{
+  "method": "Count displayed default cells plus the seven application cells; exclude comparison/detail controls. known means ViewValue.state=known; composite cells may contain missing subfields, reported separately. Column sets differ, so percentages alone do not measure information quality.",
+  "before": {
+    "model-catalog": {
+      "rows": 59,
+      "defaultColumns": [
+        {
+          "key": "model",
+          "label": "مدل / شناسه"
+        },
+        {
+          "key": "family-publisher",
+          "label": "خانواده / ناشر"
+        },
+        {
+          "key": "kind-stage",
+          "label": "نوع / مرحله"
+        },
+        {
+          "key": "parameters",
+          "label": "پارامتر کل / فعال"
+        },
+        {
+          "key": "architecture",
+          "label": "معماری"
+        },
+        {
+          "key": "context",
+          "label": "زمینهٔ اعلام‌شده / ارزیابی‌شده"
+        },
+        {
+          "key": "review",
+          "label": "وضعیت / بازبینی"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "lineage",
+          "label": "مدل پایه / distilled از"
+        },
+        {
+          "key": "modalities",
+          "label": "ورودی و خروجی"
+        },
+        {
+          "key": "applications",
+          "label": "کاربردها"
+        },
+        {
+          "key": "languages",
+          "label": "زبان اعلام‌شده / ارزیابی مستقل"
+        },
+        {
+          "key": "total-parameters",
+          "label": "شمار کل پارامترها"
+        },
+        {
+          "key": "active-parameters",
+          "label": "پارامترهای فعال"
+        },
+        {
+          "key": "declared-context",
+          "label": "زمینهٔ اعلام‌شده"
+        },
+        {
+          "key": "evaluated-context",
+          "label": "زمینهٔ ارزیابی‌شده"
+        },
+        {
+          "key": "revision",
+          "label": "نسخهٔ دقیق مدل"
+        },
+        {
+          "key": "weight-files",
+          "label": "فایل وزن منتخب؛ حجم دیسک"
+        },
+        {
+          "key": "license",
+          "label": "مجوز و منبع"
+        },
+        {
+          "key": "license-url",
+          "label": "متن مجوز"
+        },
+        {
+          "key": "commercial-use",
+          "label": "استفادهٔ تجاری"
+        },
+        {
+          "key": "license-restrictions",
+          "label": "شروط مجوز"
+        },
+        {
+          "key": "dates",
+          "label": "تاریخ‌ها"
+        },
+        {
+          "key": "sources",
+          "label": "منابع و محل شاهد"
+        }
+      ],
+      "optionalColumns": [],
+      "perColumn": {
+        "model": {
+          "known": 59,
+          "missing": []
+        },
+        "family-publisher": {
+          "known": 59,
+          "missing": []
+        },
+        "kind-stage": {
+          "known": 59,
+          "missing": []
+        },
+        "parameters": {
+          "known": 59,
+          "missing": []
+        },
+        "architecture": {
+          "known": 59,
+          "missing": []
+        },
+        "context": {
+          "known": 59,
+          "missing": []
+        },
+        "review": {
+          "known": 59,
+          "missing": []
+        }
+      },
+      "cells": 413,
+      "known": 413,
+      "missing": 0,
+      "mixedKnownContainingMissing": 113,
+      "percentKnown": 100
+    },
+    "model-suitability": {
+      "rows": 59,
+      "defaultColumns": [
+        {
+          "key": "model-artifact",
+          "label": "مدل / artifact"
+        },
+        {
+          "key": "evaluation-version",
+          "label": "نسخهٔ ارزیابی"
+        }
+      ],
+      "matrixColumns": [
+        {
+          "key": "text-work",
+          "label": "گفت‌وگو و کار با متن"
+        },
+        {
+          "key": "enterprise-rag",
+          "label": "دستیار دانش سازمانی و RAG"
+        },
+        {
+          "key": "structured-extraction",
+          "label": "استخراج اطلاعات و خروجی ساخت‌یافته"
+        },
+        {
+          "key": "coding-assistant",
+          "label": "دستیار برنامه‌نویسی"
+        },
+        {
+          "key": "agents-tools",
+          "label": "عامل و استفاده از ابزار"
+        },
+        {
+          "key": "reasoning-analysis",
+          "label": "استدلال و تحلیل"
+        },
+        {
+          "key": "document-vision",
+          "label": "فهم سند و ورودی تصویری"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "assessment-basis",
+          "label": "نوع ارزیابی"
+        },
+        {
+          "key": "subapplication",
+          "label": "زیرکاربرد"
+        },
+        {
+          "key": "language",
+          "label": "زبان آزمون"
+        },
+        {
+          "key": "quality-evaluation",
+          "label": "ارزیابی کیفیت مرتبط"
+        },
+        {
+          "key": "limitations",
+          "label": "محدودیت نتیجه"
+        },
+        {
+          "key": "sources",
+          "label": "شناسه و محل شاهد"
+        }
+      ],
+      "optionalColumns": [],
+      "perColumn": {
+        "model-artifact": {
+          "known": 59,
+          "missing": []
+        },
+        "evaluation-version": {
+          "known": 59,
+          "missing": []
+        }
+      },
+      "cells": 531,
+      "known": 118,
+      "missing": 413,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 22.22
+    },
+    "software-products": {
+      "rows": 13,
+      "defaultColumns": [
+        {
+          "key": "software-version",
+          "label": "نام و نسخه"
+        },
+        {
+          "key": "roles",
+          "label": "نقش‌ها"
+        },
+        {
+          "key": "environment-backend",
+          "label": "محیط اجرا و backend"
+        },
+        {
+          "key": "interfaces",
+          "label": "رابط‌ها و APIها"
+        },
+        {
+          "key": "service-features",
+          "label": "مدیریت مدل و سرویس‌دهی"
+        },
+        {
+          "key": "maintenance-review",
+          "label": "نگه‌داری / بازبینی"
+        },
+        {
+          "key": "evidence-limitations",
+          "label": "شواهد / محدودیت‌ها"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "os-hardware",
+          "label": "سیستم‌عامل و سخت‌افزار"
+        },
+        {
+          "key": "local-cloud-offline",
+          "label": "محلی، ابری و بدون اتصال"
+        },
+        {
+          "key": "tasks",
+          "label": "وظیفه‌ها و چندوجهی"
+        },
+        {
+          "key": "request-control",
+          "label": "صف، هم‌زمانی، batching و پذیرش"
+        },
+        {
+          "key": "model-lifecycle",
+          "label": "بارگذاری، خروج، چندمدلی و cold start"
+        },
+        {
+          "key": "inference-optimizations",
+          "label": "Cache، speculative و offload"
+        },
+        {
+          "key": "multi-gpu",
+          "label": "شاردینگ مدل / replica مستقل"
+        },
+        {
+          "key": "output-tools",
+          "label": "Streaming، ساختاریافته، ابزار و reasoning"
+        },
+        {
+          "key": "model-scopes",
+          "label": "مدل، قالب پیام و parser مؤثر"
+        },
+        {
+          "key": "operations-security",
+          "label": "پایش، سلامت، احراز هویت و نرخ"
+        },
+        {
+          "key": "api-compatibility",
+          "label": "سازگاری endpoint و قابلیت API"
+        },
+        {
+          "key": "license",
+          "label": "مجوز نرم‌افزار"
+        },
+        {
+          "key": "license-url",
+          "label": "متن مجوز"
+        },
+        {
+          "key": "commercial-use",
+          "label": "استفادهٔ تجاری"
+        },
+        {
+          "key": "license-restrictions",
+          "label": "شروط مجوز"
+        },
+        {
+          "key": "sources",
+          "label": "منبع دقیق هر ادعا"
+        }
+      ],
+      "optionalColumns": [],
+      "perColumn": {
+        "software-version": {
+          "known": 13,
+          "missing": []
+        },
+        "roles": {
+          "known": 13,
+          "missing": []
+        },
+        "environment-backend": {
+          "known": 13,
+          "missing": []
+        },
+        "interfaces": {
+          "known": 9,
+          "missing": [
+            "Triton Inference Server v2.72.0",
+            "AirLLM v4.0.0",
+            "LiteLLM v1.101.0",
+            "Open WebUI v0.11.3"
+          ]
+        },
+        "service-features": {
+          "known": 13,
+          "missing": []
+        },
+        "maintenance-review": {
+          "known": 13,
+          "missing": []
+        },
+        "evidence-limitations": {
+          "known": 13,
+          "missing": []
+        }
+      },
+      "cells": 91,
+      "known": 87,
+      "missing": 4,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 95.6
+    },
+    "specialized-models": {
+      "rows": 9,
+      "defaultColumns": [
+        {
+          "key": "model-kind",
+          "label": "مدل / نوع تخصصی"
+        },
+        {
+          "key": "task",
+          "label": "کاربرد / وظیفه"
+        },
+        {
+          "key": "parameters",
+          "label": "پارامتر کل"
+        },
+        {
+          "key": "quality-metric",
+          "label": "معیار کیفیت همان وظیفه"
+        },
+        {
+          "key": "work-rate",
+          "label": "نرخ کار متناسب"
+        },
+        {
+          "key": "evidence",
+          "label": "وضعیت شاهد"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "language-dataset",
+          "label": "زبان و دادهٔ ارزیابی"
+        },
+        {
+          "key": "artifact-execution",
+          "label": "artifact و اجرای دقیق"
+        },
+        {
+          "key": "workload",
+          "label": "بار کاری و واحد اندازه‌گیری"
+        },
+        {
+          "key": "generative-alternative",
+          "label": "نسبت با گزینهٔ مولد"
+        },
+        {
+          "key": "limitations",
+          "label": "محدودیت نتیجه"
+        },
+        {
+          "key": "sources",
+          "label": "منبع و شاهد"
+        }
+      ],
+      "optionalColumns": [],
+      "perColumn": {
+        "model-kind": {
+          "known": 9,
+          "missing": []
+        },
+        "task": {
+          "known": 9,
+          "missing": []
+        },
+        "parameters": {
+          "known": 6,
+          "missing": [
+            "bge-m3 · embedding",
+            "bge-reranker-v2-m3 · reranker",
+            "multilingual-e5-small · embedding"
+          ]
+        },
+        "quality-metric": {
+          "known": 0,
+          "missing": [
+            "bge-m3 · embedding",
+            "bge-reranker-v2-m3 · reranker",
+            "Qwen3-Embedding-0.6B · embedding",
+            "Qwen3-Embedding-4B · embedding",
+            "Qwen3-Embedding-8B · embedding",
+            "Qwen3-Reranker-0.6B · reranker",
+            "Qwen3-Reranker-4B · reranker",
+            "Qwen3-Reranker-8B · reranker",
+            "multilingual-e5-small · embedding"
+          ]
+        },
+        "work-rate": {
+          "known": 0,
+          "missing": [
+            "bge-m3 · embedding",
+            "bge-reranker-v2-m3 · reranker",
+            "Qwen3-Embedding-0.6B · embedding",
+            "Qwen3-Embedding-4B · embedding",
+            "Qwen3-Embedding-8B · embedding",
+            "Qwen3-Reranker-0.6B · reranker",
+            "Qwen3-Reranker-4B · reranker",
+            "Qwen3-Reranker-8B · reranker",
+            "multilingual-e5-small · embedding"
+          ]
+        },
+        "evidence": {
+          "known": 9,
+          "missing": []
+        }
+      },
+      "cells": 54,
+      "known": 33,
+      "missing": 21,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 61.11
+    }
+  },
+  "after": {
+    "model-catalog": {
+      "rows": 59,
+      "defaultColumns": [
+        {
+          "key": "model",
+          "label": "مدل"
+        },
+        {
+          "key": "family-publisher",
+          "label": "خانواده / ناشر"
+        },
+        {
+          "key": "size-architecture",
+          "label": "اندازه و معماری"
+        },
+        {
+          "key": "modalities",
+          "label": "ورودی ← خروجی"
+        },
+        {
+          "key": "context",
+          "label": "پنجرهٔ زمینه"
+        },
+        {
+          "key": "applications",
+          "label": "کاربردهای شاخص"
+        },
+        {
+          "key": "license",
+          "label": "مجوز"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "model-id",
+          "label": "شناسهٔ داخلی"
+        },
+        {
+          "key": "revision",
+          "label": "revision مدل در شناسنامه"
+        },
+        {
+          "key": "kind-stage",
+          "label": "نوع و مرحله"
+        },
+        {
+          "key": "lineage",
+          "label": "مدل پایه / تقطیر از"
+        },
+        {
+          "key": "total-parameters",
+          "label": "شمار کل پارامترها"
+        },
+        {
+          "key": "active-parameters",
+          "label": "پارامترهای فعال"
+        },
+        {
+          "key": "parameter-scope",
+          "label": "دامنهٔ شمارش پارامتر"
+        },
+        {
+          "key": "declared-context",
+          "label": "زمینهٔ اعلام‌شده"
+        },
+        {
+          "key": "context-extension",
+          "label": "افزایش زمینه و تنظیم لازم"
+        },
+        {
+          "key": "evaluated-context",
+          "label": "زمینهٔ آزموده‌شده در ارزیابی دقیق"
+        },
+        {
+          "key": "languages",
+          "label": "زبان و نوع شاهد"
+        },
+        {
+          "key": "weight-files",
+          "label": "حجم فایل وزن روی دیسک"
+        },
+        {
+          "key": "weight-caveat",
+          "label": "حافظهٔ اجرای مدل"
+        },
+        {
+          "key": "license-url",
+          "label": "متن مجوز"
+        },
+        {
+          "key": "commercial-use",
+          "label": "استفادهٔ تجاری"
+        },
+        {
+          "key": "license-restrictions",
+          "label": "شروط مجوز"
+        },
+        {
+          "key": "released-on",
+          "label": "تاریخ انتشار مدل",
+          "sortable": true
+        },
+        {
+          "key": "last-reviewed",
+          "label": "تاریخ بازبینی رکورد"
+        },
+        {
+          "key": "sources",
+          "label": "منابع و محل شاهد"
+        }
+      ],
+      "optionalColumns": [
+        {
+          "key": "released-on",
+          "label": "تاریخ انتشار",
+          "sortable": true
+        }
+      ],
+      "perColumn": {
+        "model": {
+          "known": 59,
+          "missing": []
+        },
+        "family-publisher": {
+          "known": 59,
+          "missing": []
+        },
+        "size-architecture": {
+          "known": 59,
+          "missing": []
+        },
+        "modalities": {
+          "known": 59,
+          "missing": []
+        },
+        "context": {
+          "known": 46,
+          "missing": [
+            "bge-reranker-v2-m3",
+            "SmolLM2-1.7B-Instruct",
+            "SmolLM2-135M-Instruct",
+            "SmolLM2-360M-Instruct",
+            "Olmo-3-7B-Instruct",
+            "DeepSeek-R1-0528-Qwen3-8B",
+            "DeepSeek-R1-Distill-Llama-70B",
+            "DeepSeek-R1-Distill-Qwen-1.5B",
+            "DeepSeek-R1-Distill-Qwen-14B",
+            "DeepSeek-R1-Distill-Qwen-32B",
+            "DeepSeek-R1-Distill-Qwen-7B",
+            "DeepSeek-V3.2",
+            "GLM-4.7-Flash"
+          ]
+        },
+        "applications": {
+          "known": 59,
+          "missing": []
+        },
+        "license": {
+          "known": 59,
+          "missing": []
+        }
+      },
+      "cells": 413,
+      "known": 400,
+      "missing": 13,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 96.85
+    },
+    "model-suitability": {
+      "rows": 59,
+      "defaultColumns": [
+        {
+          "key": "model-artifact",
+          "label": "مدل"
+        }
+      ],
+      "matrixColumns": [
+        {
+          "key": "text-work",
+          "label": "گفت‌وگو و کار با متن"
+        },
+        {
+          "key": "enterprise-rag",
+          "label": "دستیار دانش سازمانی و RAG"
+        },
+        {
+          "key": "structured-extraction",
+          "label": "استخراج اطلاعات و خروجی ساخت‌یافته"
+        },
+        {
+          "key": "coding-assistant",
+          "label": "دستیار برنامه‌نویسی"
+        },
+        {
+          "key": "agents-tools",
+          "label": "عامل و استفاده از ابزار"
+        },
+        {
+          "key": "reasoning-analysis",
+          "label": "استدلال و تحلیل"
+        },
+        {
+          "key": "document-vision",
+          "label": "فهم سند و ورودی تصویری"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "revision",
+          "label": "revision مدل در شناسنامه"
+        },
+        {
+          "key": "assessment-basis",
+          "label": "نوع شاهد کاربرد"
+        },
+        {
+          "key": "subapplication",
+          "label": "زیرکاربرد"
+        },
+        {
+          "key": "language",
+          "label": "زبان آزمون"
+        },
+        {
+          "key": "quality-evaluation",
+          "label": "ارزیابی دقیق مرتبط"
+        },
+        {
+          "key": "limitations",
+          "label": "محدودیت نتیجه"
+        },
+        {
+          "key": "sources",
+          "label": "منابع"
+        }
+      ],
+      "optionalColumns": [],
+      "perColumn": {
+        "model-artifact": {
+          "known": 59,
+          "missing": []
+        }
+      },
+      "cells": 472,
+      "known": 195,
+      "missing": 277,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 41.31
+    },
+    "software-products": {
+      "rows": 13,
+      "defaultColumns": [
+        {
+          "key": "software-version",
+          "label": "نام و نسخه"
+        },
+        {
+          "key": "roles",
+          "label": "نقش"
+        },
+        {
+          "key": "scenario",
+          "label": "سناریوی هدف مستند"
+        },
+        {
+          "key": "service-features",
+          "label": "قابلیت‌های شاخص"
+        },
+        {
+          "key": "platform",
+          "label": "پلتفرم"
+        },
+        {
+          "key": "maintenance",
+          "label": "وضعیت توسعه"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "released-on",
+          "label": "تاریخ انتشار نسخه",
+          "sortable": true
+        },
+        {
+          "key": "last-reviewed",
+          "label": "تاریخ بازبینی رکورد"
+        },
+        {
+          "key": "backends",
+          "label": "backendهای مستند"
+        },
+        {
+          "key": "os-hardware",
+          "label": "سیستم‌عامل و سخت‌افزار"
+        },
+        {
+          "key": "local-cloud-offline",
+          "label": "محلی، ابری و بدون اتصال"
+        },
+        {
+          "key": "all-capabilities",
+          "label": "همهٔ قابلیت‌ها و وضعیت پشتیبانی"
+        },
+        {
+          "key": "tasks",
+          "label": "وظیفه‌ها"
+        },
+        {
+          "key": "request-control",
+          "label": "صف، هم‌زمانی، batching و پذیرش"
+        },
+        {
+          "key": "model-lifecycle",
+          "label": "بارگذاری، خروج و چندمدلی"
+        },
+        {
+          "key": "inference-optimizations",
+          "label": "بهینه‌سازی استنتاج و offload"
+        },
+        {
+          "key": "multi-gpu",
+          "label": "تقسیم مدل / نسخه‌های مستقل"
+        },
+        {
+          "key": "output-tools",
+          "label": "خروجی، ابزار و استدلال"
+        },
+        {
+          "key": "model-scopes",
+          "label": "شرایط قابلیت، مدل، قالب پیام و تجزیه‌گر"
+        },
+        {
+          "key": "operations-security",
+          "label": "پایش، سلامت و کنترل دسترسی"
+        },
+        {
+          "key": "api-compatibility",
+          "label": "endpointها و سازگاری API"
+        },
+        {
+          "key": "license",
+          "label": "مجوز"
+        },
+        {
+          "key": "license-url",
+          "label": "متن مجوز"
+        },
+        {
+          "key": "commercial-use",
+          "label": "استفادهٔ تجاری"
+        },
+        {
+          "key": "license-restrictions",
+          "label": "شروط مجوز"
+        },
+        {
+          "key": "sources",
+          "label": "منابع"
+        }
+      ],
+      "optionalColumns": [
+        {
+          "key": "released-on",
+          "label": "تاریخ انتشار",
+          "sortable": true
+        }
+      ],
+      "perColumn": {
+        "software-version": {
+          "known": 13,
+          "missing": []
+        },
+        "roles": {
+          "known": 13,
+          "missing": []
+        },
+        "scenario": {
+          "known": 13,
+          "missing": []
+        },
+        "service-features": {
+          "known": 13,
+          "missing": []
+        },
+        "platform": {
+          "known": 13,
+          "missing": []
+        },
+        "maintenance": {
+          "known": 13,
+          "missing": []
+        }
+      },
+      "cells": 78,
+      "known": 78,
+      "missing": 0,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 100
+    },
+    "specialized-models": {
+      "rows": 9,
+      "defaultColumns": [
+        {
+          "key": "model-kind",
+          "label": "مدل"
+        },
+        {
+          "key": "task",
+          "label": "وظیفهٔ دقیق"
+        },
+        {
+          "key": "parameters",
+          "label": "اندازه"
+        },
+        {
+          "key": "input-limit",
+          "label": "سقف ورودی"
+        },
+        {
+          "key": "output",
+          "label": "نوع / ابعاد خروجی"
+        },
+        {
+          "key": "features",
+          "label": "ویژگی کاربردی"
+        },
+        {
+          "key": "quality-metric",
+          "label": "نتیجهٔ منتشرشدهٔ منتخب"
+        }
+      ],
+      "detailColumns": [
+        {
+          "key": "pooling",
+          "label": "روش pooling / scoring"
+        },
+        {
+          "key": "dimensions",
+          "label": "ابعاد پیش‌فرض / حداکثر embedding"
+        },
+        {
+          "key": "adjustable-dimensions",
+          "label": "ابعاد قابل تنظیم و شرط محاسبهٔ حافظه"
+        },
+        {
+          "key": "languages",
+          "label": "زبان‌های مستند"
+        },
+        {
+          "key": "parameter-scope",
+          "label": "دامنهٔ شمار پارامترها"
+        },
+        {
+          "key": "artifact-execution",
+          "label": "revision مدل / artifact دقیق"
+        },
+        {
+          "key": "released-on",
+          "label": "تاریخ انتشار مدل",
+          "sortable": true
+        },
+        {
+          "key": "language-dataset",
+          "label": "زبان آزمون اختصاصی"
+        },
+        {
+          "key": "workload",
+          "label": "برنامهٔ آزمون اختصاصی"
+        },
+        {
+          "key": "generative-alternative",
+          "label": "نسبت با گزینهٔ مولد"
+        },
+        {
+          "key": "limitations",
+          "label": "محدودیت نتیجه"
+        },
+        {
+          "key": "sources",
+          "label": "منابع"
+        }
+      ],
+      "optionalColumns": [
+        {
+          "key": "released-on",
+          "label": "تاریخ انتشار",
+          "sortable": true
+        },
+        {
+          "key": "work-rate",
+          "label": "نرخ کار اندازه‌گیری‌شده",
+          "sortable": true,
+          "numeric": true
+        }
+      ],
+      "perColumn": {
+        "model-kind": {
+          "known": 9,
+          "missing": []
+        },
+        "task": {
+          "known": 9,
+          "missing": []
+        },
+        "parameters": {
+          "known": 9,
+          "missing": []
+        },
+        "input-limit": {
+          "known": 8,
+          "missing": [
+            "bge-reranker-v2-m3"
+          ]
+        },
+        "output": {
+          "known": 9,
+          "missing": []
+        },
+        "features": {
+          "known": 9,
+          "missing": []
+        },
+        "quality-metric": {
+          "known": 7,
+          "missing": [
+            "bge-m3",
+            "bge-reranker-v2-m3"
+          ]
+        }
+      },
+      "cells": 63,
+      "known": 60,
+      "missing": 3,
+      "mixedKnownContainingMissing": 0,
+      "percentKnown": 95.24
+    }
+  },
+  "additions": {
+    "publishedResults": 37,
+    "modelDates": 55,
+    "undatedModels": [
+      "SmolLM2-1.7B-Instruct",
+      "SmolLM2-135M-Instruct",
+      "SmolLM2-360M-Instruct",
+      "Qwen3-Coder-30B-A3B-Instruct"
+    ],
+    "partialDates": [
+      {
+        "model": "multilingual-e5-small",
+        "date": "2023"
+      },
+      {
+        "model": "Phi-4-mini-instruct",
+        "date": "2025-02"
+      }
+    ],
+    "specializedSpecs": 9,
+    "softwareScenarios": 13,
+    "positiveApplications": 136
+  },
+  "addedEvidence": [
+    {
+      "id": "evidence:four-tables-release-qwen3-launch",
+      "url": "https://qwenlm.github.io/blog/qwen3/",
+      "title": "Qwen3 launch",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Publication header April 29 2025; six dense and two MoE models",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-qwen3-embedding-launch",
+      "url": "https://qwenlm.github.io/blog/qwen3-embedding/",
+      "title": "Qwen3 Embedding launch",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "June 5 2025; embedding and reranker 0.6B / 4B / 8B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-qwen3-vl-4b-and-8b-release",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "title": "Qwen3 VL 4B and 8B release",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "News: 2025.10.15; 4B and 8B Instruct and Thinking variants",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-qwen3-5-small-models-release",
+      "url": "https://github.com/QwenLM/Qwen3.5",
+      "title": "Qwen3.5 small models release",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "News: 2026.03.02; 0.8B / 2B / 4B / 9B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-qwen3-5-medium-models-release",
+      "url": "https://github.com/QwenLM/Qwen3.5",
+      "title": "Qwen3.5 medium models release",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "News: 2026.02.24; 35B-A3B / 27B / 122B-A10B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-qwen3-8-27b-release",
+      "url": "https://github.com/QwenLM/Qwen3.5",
+      "title": "Qwen3.8 27B release",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "News: 2026.08.14; Qwen3.8-27B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-aya-expanse-release",
+      "url": "https://cohere.com/blog/aya-expanse-connecting-our-world",
+      "title": "Aya Expanse release",
+      "organization": "Cohere",
+      "accessedOn": "2026-09-15",
+      "locator": "October 24 2024; 8B and 32B downloadable models",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-tiny-aya-release",
+      "url": "https://cohere.com/blog/cohere-labs-tiny-aya",
+      "title": "Tiny Aya release",
+      "organization": "Cohere",
+      "accessedOn": "2026-09-15",
+      "locator": "February 17 2026; Tiny Aya family including global",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-smollm3-release",
+      "url": "https://huggingface.co/blog/smollm3",
+      "title": "SmolLM3 release",
+      "organization": "Hugging Face",
+      "accessedOn": "2026-09-15",
+      "locator": "Publication date July 8 2025; SmolLM3-3B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-olmo-3-7b-instruct-release",
+      "url": "https://allenai.org/blog/olmo3",
+      "title": "Olmo 3 7B Instruct release",
+      "organization": "Ai2",
+      "accessedOn": "2026-09-15",
+      "locator": "November 20 2025 release; 7B Instruct, distinct from later 32B update",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-deepseek-r1-distilled-release",
+      "url": "https://api-docs.deepseek.com/news/news250120/",
+      "title": "DeepSeek R1 distilled release",
+      "organization": "DeepSeek",
+      "accessedOn": "2026-09-15",
+      "locator": "News date 2025/01/20; Bonus: six open-source distilled models",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-deepseek-r1-0528-qwen3-8b-release",
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250528/",
+      "title": "DeepSeek R1 0528 Qwen3 8B release",
+      "organization": "DeepSeek",
+      "accessedOn": "2026-09-15",
+      "locator": "2025/05/28; 深度思考能力强化 paragraph naming DeepSeek-R1-0528-Qwen3-8B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-deepseek-v3-2-release",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "title": "DeepSeek V3.2 release",
+      "organization": "DeepSeek",
+      "accessedOn": "2026-09-15",
+      "locator": "2025/12/01 release; not V3.2-Exp",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-deepseek-v4-1-flash-release",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "title": "DeepSeek V4.1 Flash release",
+      "organization": "DeepSeek",
+      "accessedOn": "2026-09-15",
+      "locator": "2026/09/10; officially release DeepSeek-V4.1-Flash",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-gemma-3-release-log",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "title": "Gemma 3 release log",
+      "organization": "Google",
+      "accessedOn": "2026-09-15",
+      "locator": "March 10 2025: Gemma 3 1B / 4B / 12B / 27B; date recorded in official release log",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-gemma-4-release-log",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "title": "Gemma 4 release log",
+      "organization": "Google",
+      "accessedOn": "2026-09-15",
+      "locator": "March 31 2026: Gemma 4 E2B / E4B / 31B / 26B A4B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-llama-3-1-release",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "title": "Llama 3.1 release",
+      "organization": "Meta",
+      "accessedOn": "2026-09-15",
+      "locator": "July 23 2024; 8B / 70B / 405B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-llama-3-2-release",
+      "url": "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/",
+      "title": "Llama 3.2 release",
+      "organization": "Meta",
+      "accessedOn": "2026-09-15",
+      "locator": "September 25 2024; lightweight 1B and 3B models",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-ministral-3-release",
+      "url": "https://mistral.ai/news/mistral-3",
+      "title": "Ministral 3 release",
+      "organization": "Mistral AI",
+      "accessedOn": "2026-09-15",
+      "locator": "December 2 2025; Ministral 3 at 3B / 8B / 14B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-devstral-small-2-release",
+      "url": "https://mistral.ai/news/devstral-2-vibe-cli",
+      "title": "Devstral Small 2 release",
+      "organization": "Mistral AI",
+      "accessedOn": "2026-09-15",
+      "locator": "December 9 2025; Devstral Small 2 24B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-mistral-small-3-1-release",
+      "url": "https://mistral.ai/news/mistral-small-3-1",
+      "title": "Mistral Small 3.1 release",
+      "organization": "Mistral AI",
+      "accessedOn": "2026-09-15",
+      "locator": "March 17 2025; Mistral Small 3.1 24B",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-gpt-oss-release",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "title": "gpt oss release",
+      "organization": "OpenAI",
+      "accessedOn": "2026-09-15",
+      "locator": "August 5 2025; gpt-oss-120b and gpt-oss-20b",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-glm-4-7-flash-release",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "GLM 4.7 Flash release",
+      "organization": "Z.ai",
+      "accessedOn": "2026-09-15",
+      "locator": "2026-01-19: GLM-4.7-Flash launch",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-bge-m3-release",
+      "url": "https://github.com/FlagOpen/FlagEmbedding",
+      "title": "BGE M3 release",
+      "organization": "BAAI",
+      "accessedOn": "2026-09-15",
+      "locator": "News: 2024/01/30 release of BGE-M3",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-bge-reranker-v2-release",
+      "url": "https://github.com/FlagOpen/FlagEmbedding",
+      "title": "BGE reranker v2 release",
+      "organization": "BAAI",
+      "accessedOn": "2026-09-15",
+      "locator": "News: 2024/03/18 new rerankers including bge-reranker-v2-m3",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-phi-4-mini-instruct-release",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "title": "Phi-4-mini-instruct release",
+      "organization": "Microsoft",
+      "accessedOn": "2026-09-15",
+      "locator": "Release date: February 2025 (month precision)",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-nvidia-nemotron-nano-9b-v2-release",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md",
+      "title": "NVIDIA-Nemotron-Nano-9B-v2 release",
+      "organization": "NVIDIA",
+      "accessedOn": "2026-09-15",
+      "locator": "Release Date: 08/18/2025",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-e5-paper",
+      "url": "https://arxiv.org/html/2402.05672v1",
+      "title": "Multilingual E5 Text Embeddings: A Technical Report",
+      "organization": "Microsoft",
+      "accessedOn": "2026-09-15",
+      "locator": "Abstract; §2; Tables 3 and 4",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "مدل‌های small/base/large منتشرشده در میانهٔ ۲۰۲۳؛ آزمون‌های گزارش ناشر",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "arXiv:2402.05672v1"
+    },
+    {
+      "id": "evidence:four-tables-release-multilingual-e5-release-year",
+      "url": "https://arxiv.org/html/2402.05672v1",
+      "title": "Multilingual E5 release year",
+      "organization": "Microsoft",
+      "accessedOn": "2026-09-15",
+      "locator": "Abstract and §2: small/base/large released in mid-2023; no inferred month/day",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-qwen-qwen3-embedding-0-6b-mteb",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+      "title": "Qwen3-Embedding-0.6B — MTEB Multilingual",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Model list; MTEB Multilingual table: exact model row, Mean (Task); source footnote",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "امتیاز تجمیعی وظایف چندزبانه؛ نه درصد موفقیت، رتبهٔ روز یا نتیجهٔ فارسی",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+    },
+    {
+      "id": "evidence:four-tables-qwen-qwen3-embedding-4b-mteb",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/blob/5cf2132abc99cad020ac570b19d031efec650f2b/README.md",
+      "title": "Qwen3-Embedding-4B — MTEB Multilingual",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Model list; MTEB Multilingual table: exact model row, Mean (Task); source footnote",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "امتیاز تجمیعی وظایف چندزبانه؛ نه درصد موفقیت، رتبهٔ روز یا نتیجهٔ فارسی",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "5cf2132abc99cad020ac570b19d031efec650f2b"
+    },
+    {
+      "id": "evidence:four-tables-qwen-qwen3-embedding-8b-mteb",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/README.md",
+      "title": "Qwen3-Embedding-8B — MTEB Multilingual",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Model list; MTEB Multilingual table: exact model row, Mean (Task); source footnote",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "امتیاز تجمیعی وظایف چندزبانه؛ نه درصد موفقیت، رتبهٔ روز یا نتیجهٔ فارسی",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af"
+    },
+    {
+      "id": "evidence:four-tables-qwen-qwen3-reranker-0-6b-mmteb-r",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/blob/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md",
+      "title": "Qwen3-Reranker-0.6B — MMTEB-R",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Evaluation: MMTEB-R column, exact model row; footnote top-100 retrieved candidates",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "زیرمجموعهٔ بازیابی MMTEB در پروتکل ناشر",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "e61197ed45024b0ed8a2d74b80b4d909f1255473"
+    },
+    {
+      "id": "evidence:four-tables-qwen-qwen3-reranker-4b-mmteb-r",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/blob/22e683669bc0f0bd69640a1354a6d0aebcfeede5/README.md",
+      "title": "Qwen3-Reranker-4B — MMTEB-R",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Evaluation: MMTEB-R column, exact model row; footnote top-100 retrieved candidates",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "زیرمجموعهٔ بازیابی MMTEB در پروتکل ناشر",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "22e683669bc0f0bd69640a1354a6d0aebcfeede5"
+    },
+    {
+      "id": "evidence:four-tables-qwen-qwen3-reranker-8b-mmteb-r",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/blob/77d193c791ed757ca307ee72715aa132723da912/README.md",
+      "title": "Qwen3-Reranker-8B — MMTEB-R",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "Evaluation: MMTEB-R column, exact model row; footnote top-100 retrieved candidates",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "زیرمجموعهٔ بازیابی MMTEB در پروتکل ناشر",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "77d193c791ed757ca307ee72715aa132723da912"
+    },
+    {
+      "id": "evidence:four-tables-release-mistral-7b-v0-3-release",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-3",
+      "title": "Mistral 7B v0.3 release",
+      "organization": "Mistral AI",
+      "accessedOn": "2026-09-15",
+      "locator": "May 22 2024; v0.3; Instruct Weights link. API retirement is separate from downloadable weights.",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-release-ibm-granite-3-3-release",
+      "url": "https://community.ibm.com/community/user/blogs/nickolus-plowden/2025/04/16/ibm-granite-33-speech-recognition-refined-reasonin",
+      "title": "IBM Granite 3.3 release",
+      "organization": "IBM",
+      "accessedOn": "2026-09-15",
+      "locator": "April 16 2025; launch announcement linking the full article listing 2B and 8B Instruct",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "تاریخ انتشار گونه‌های نام‌برده؛ تاریخ ساخت مخزن یا برداشت داده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-baai-bge-m3-size",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "title": "bge-m3 — official specifications",
+      "organization": "BAAI",
+      "accessedOn": "2026-09-15",
+      "locator": "Model table, Parameters column: 569M",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "شمار گرد‌شدهٔ مدل در جدول رسمی؛ شمار عناصر ذخیره‌شده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-baai-bge-reranker-v2-m3-size",
+      "url": "https://bge-model.com/bge/bge_reranker_v2.html",
+      "title": "bge-reranker-v2-m3 — official specifications",
+      "organization": "BAAI",
+      "accessedOn": "2026-09-15",
+      "locator": "Model table, Parameters column: 568M",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "شمار گرد‌شدهٔ مدل در جدول رسمی؛ شمار عناصر ذخیره‌شده نیست.",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-qwen-reranker-code-paper",
+      "url": "https://arxiv.org/html/2506.05176v1",
+      "title": "Qwen3 Embedding — reranker evaluation",
+      "organization": "Qwen",
+      "accessedOn": "2026-09-15",
+      "locator": "§4.2; Table 4 top-100 procedure; Table 9 caption: nDCG@10 on MTEB(Code, v1)",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "بازیابی کد با نامزدهای اولیهٔ Qwen3-Embedding-0.6B؛ نه امتیاز فارسی",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست.",
+      "versionRevisionOrCommit": "arXiv:2506.05176v1"
+    },
+    {
+      "id": "evidence:four-tables-huggingfacetb-smollm3-3b-declared-context",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+      "title": "SmolLM3-3B — declared context",
+      "organization": "Hugging Face",
+      "accessedOn": "2026-09-15",
+      "locator": "Key features; Long context processing: trained at 64k; YaRN for 128k",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "ظرفیت مستند گونهٔ نام‌برده؛ جدا از طول خروجی یک آزمون و سقف API میزبان",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-coherelabs-tiny-aya-global-declared-context",
+      "url": "https://docs.cohere.com/docs/tiny-aya",
+      "title": "tiny-aya-global — declared context",
+      "organization": "Cohere Labs",
+      "accessedOn": "2026-09-15",
+      "locator": "Model Variants table: tiny-aya-global; Context Length 8k",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "ظرفیت مستند گونهٔ نام‌برده؛ جدا از طول خروجی یک آزمون و سقف API میزبان",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-deepseek-ai-deepseek-v4-1-flash-declared-context",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+      "title": "DeepSeek-V4.1-Flash — declared context",
+      "organization": "DeepSeek",
+      "accessedOn": "2026-09-15",
+      "locator": "Introduction: contexts of up to one million tokens",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "ظرفیت مستند گونهٔ نام‌برده؛ جدا از طول خروجی یک آزمون و سقف API میزبان",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-openai-gpt-oss-20b-declared-context",
+      "url": "https://deploymentsafety.openai.com/gpt-oss/a2",
+      "title": "gpt-oss-20b — declared context",
+      "organization": "OpenAI",
+      "accessedOn": "2026-09-15",
+      "locator": "§2.2 Architecture: context length extended to 131,072 with YaRN",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "ظرفیت مستند گونهٔ نام‌برده؛ جدا از طول خروجی یک آزمون و سقف API میزبان",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-openai-gpt-oss-120b-declared-context",
+      "url": "https://deploymentsafety.openai.com/gpt-oss/a2",
+      "title": "gpt-oss-120b — declared context",
+      "organization": "OpenAI",
+      "accessedOn": "2026-09-15",
+      "locator": "§2.2 Architecture: context length extended to 131,072 with YaRN",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "ظرفیت مستند گونهٔ نام‌برده؛ جدا از طول خروجی یک آزمون و سقف API میزبان",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    },
+    {
+      "id": "evidence:four-tables-mistralai-mistral-7b-instruct-v0-3-declared-context",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-3",
+      "title": "Mistral-7B-Instruct-v0.3 — declared context",
+      "organization": "Mistral AI",
+      "accessedOn": "2026-09-15",
+      "locator": "v0.3 Instruct Weights table: Context Size 32k",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "ظرفیت مستند گونهٔ نام‌برده؛ جدا از طول خروجی یک آزمون و سقف API میزبان",
+      "limitations": [
+        "مشخصات یا نتیجهٔ گزارش‌شده؛ تضمین عملکرد در اجرای دیگر نیست."
+      ],
+      "commercialInterest": "ناشر یا پژوهشگر گزارش؛ ارزیابی مستقل سایت نیست."
+    }
+  ]
+}

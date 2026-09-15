@@ -1,0 +1,98 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "entries": [
+    {
+      "url": "https://ana.ir/fa/news/1082516",
+      "title": "برخورداری از قدرت اعمال مدیریت بر منابع، شرط موفقیت سازمان ملی هوش مصنوعی است",
+      "date": "گفت‌وگو · ۲۳ شهریور ۱۴۰۵",
+      "links": [
+        {
+          "href": "https://ana.ir/fa/news/1082516",
+          "target": "_blank"
+        },
+        {
+          "href": "https://ana.ir/fa/news/1082516",
+          "target": "_blank"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/images/news-agencies/ana.svg",
+          "width": 189
+        },
+        {
+          "src": "http://127.0.0.1:4189/images/responsive/f92871b6d4579e4e-320.webp",
+          "width": 180
+        }
+      ],
+      "collapsed": "false",
+      "summaryExpanded": true
+    },
+    {
+      "url": "https://www.instagram.com/p/DdMdLLIqQao/",
+      "title": "رشد اسمی، الزاماً رشد واقعی نیست",
+      "date": "گزارش · ۲۱ شهریور ۱۴۰۵",
+      "links": [
+        {
+          "href": "https://www.instagram.com/p/DdMdLLIqQao/",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.instagram.com/p/DdMdLLIqQao/",
+          "target": "_blank"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/images/news-agencies/lcih.jpg",
+          "width": 100
+        },
+        {
+          "src": "http://127.0.0.1:4189/images/responsive/85d09c474eeebb0a-320.webp",
+          "width": 180
+        }
+      ],
+      "collapsed": "false",
+      "summaryExpanded": true
+    },
+    {
+      "url": "https://shahraranews.ir/fa/news/442609/",
+      "title": "اینوتکس ۱۴۰۵ | قانون جهش تولید دانش‌بنیان زیر ذره‌بین؛ از «قانون خوب» تا چالش اجرای واقعی",
+      "date": "گزارش · ۱۳ شهریور ۱۴۰۵",
+      "links": [
+        {
+          "href": "https://shahraranews.ir/fa/news/442609/",
+          "target": "_blank"
+        },
+        {
+          "href": "https://shahraranews.ir/fa/news/442609/",
+          "target": "_blank"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/images/news-agencies/shahrara.jpg",
+          "width": 150
+        },
+        {
+          "src": "http://127.0.0.1:4189/images/responsive/e2b3f1c25c9dbd1e-320.webp",
+          "width": 180
+        }
+      ],
+      "collapsed": "false",
+      "summaryExpanded": true
+    }
+  ],
+  "screenshots": [
+    "desktop-1.png",
+    "desktop-2.png",
+    "desktop-3.png",
+    "mobile-390-1.png",
+    "mobile-390-2.png",
+    "mobile-390-3.png",
+    "mobile-320-1.png",
+    "mobile-320-2.png",
+    "mobile-320-3.png"
+  ],
+  "runtimeErrors": []
+}

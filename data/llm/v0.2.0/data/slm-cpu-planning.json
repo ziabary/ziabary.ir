@@ -1,0 +1,122 @@
+[
+  {
+    "id": "slm-cpu:huggingfacetb-smollm2-135m-instruct-4096",
+    "modelRepository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "repositoryRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "nativeWeightFileBytes": 269060552,
+    "nativeDeclaredDtype": "bfloat16",
+    "runtimeWeightDtypeAssumption": "FP32",
+    "weightMemoryProxy": "2 × stored BF16 file bytes, conservative proxy including duplicated file header",
+    "contextTokens": 4096,
+    "activeSequences": 1,
+    "kvDtype": "FP32",
+    "plannedRamGiB": 4.676945582032204,
+    "reserveGiB": 4,
+    "firstRamClassGiB": 8,
+    "basis": "calculated CPU planning budget; not a latency estimate",
+    "sourceIds": [
+      "huggingfacetb-smollm2-135m-instruct-native-files",
+      "huggingfacetb-smollm2-135m-instruct-native-config"
+    ]
+  },
+  {
+    "id": "slm-cpu:huggingfacetb-smollm2-135m-instruct-8192",
+    "modelRepository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "repositoryRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "nativeWeightFileBytes": 269060552,
+    "nativeDeclaredDtype": "bfloat16",
+    "runtimeWeightDtypeAssumption": "FP32",
+    "weightMemoryProxy": "2 × stored BF16 file bytes, conservative proxy including duplicated file header",
+    "contextTokens": 8192,
+    "activeSequences": 1,
+    "kvDtype": "FP32",
+    "plannedRamGiB": 4.852726832032204,
+    "reserveGiB": 4,
+    "firstRamClassGiB": 8,
+    "basis": "calculated CPU planning budget; not a latency estimate",
+    "sourceIds": [
+      "huggingfacetb-smollm2-135m-instruct-native-files",
+      "huggingfacetb-smollm2-135m-instruct-native-config"
+    ]
+  },
+  {
+    "id": "slm-cpu:huggingfacetb-smollm2-360m-instruct-4096",
+    "modelRepository": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "repositoryRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "nativeWeightFileBytes": 723674912,
+    "nativeDeclaredDtype": "bfloat16",
+    "runtimeWeightDtypeAssumption": "FP32",
+    "weightMemoryProxy": "2 × stored BF16 file bytes, conservative proxy including duplicated file header",
+    "contextTokens": 4096,
+    "activeSequences": 1,
+    "kvDtype": "FP32",
+    "plannedRamGiB": 5.66044956445694,
+    "reserveGiB": 4,
+    "firstRamClassGiB": 8,
+    "basis": "calculated CPU planning budget; not a latency estimate",
+    "sourceIds": [
+      "huggingfacetb-smollm2-360m-instruct-native-files",
+      "huggingfacetb-smollm2-360m-instruct-native-config"
+    ]
+  },
+  {
+    "id": "slm-cpu:huggingfacetb-smollm2-360m-instruct-8192",
+    "modelRepository": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "repositoryRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "nativeWeightFileBytes": 723674912,
+    "nativeDeclaredDtype": "bfloat16",
+    "runtimeWeightDtypeAssumption": "FP32",
+    "weightMemoryProxy": "2 × stored BF16 file bytes, conservative proxy including duplicated file header",
+    "contextTokens": 8192,
+    "activeSequences": 1,
+    "kvDtype": "FP32",
+    "plannedRamGiB": 5.97294956445694,
+    "reserveGiB": 4,
+    "firstRamClassGiB": 8,
+    "basis": "calculated CPU planning budget; not a latency estimate",
+    "sourceIds": [
+      "huggingfacetb-smollm2-360m-instruct-native-files",
+      "huggingfacetb-smollm2-360m-instruct-native-config"
+    ]
+  },
+  {
+    "id": "slm-cpu:huggingfacetb-smollm2-1-7b-instruct-4096",
+    "modelRepository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "repositoryRevision": "31b70e2e869a7173562077fd711b654946d38674",
+    "nativeWeightFileBytes": 3422777952,
+    "nativeDeclaredDtype": "bfloat16",
+    "runtimeWeightDtypeAssumption": "FP32",
+    "weightMemoryProxy": "2 × stored BF16 file bytes, conservative proxy including duplicated file header",
+    "contextTokens": 4096,
+    "activeSequences": 1,
+    "kvDtype": "FP32",
+    "plannedRamGiB": 11.87542074918747,
+    "reserveGiB": 4,
+    "firstRamClassGiB": 16,
+    "basis": "calculated CPU planning budget; not a latency estimate",
+    "sourceIds": [
+      "huggingfacetb-smollm2-1-7b-instruct-native-files",
+      "huggingfacetb-smollm2-1-7b-instruct-native-config"
+    ]
+  },
+  {
+    "id": "slm-cpu:huggingfacetb-smollm2-1-7b-instruct-8192",
+    "modelRepository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "repositoryRevision": "31b70e2e869a7173562077fd711b654946d38674",
+    "nativeWeightFileBytes": 3422777952,
+    "nativeDeclaredDtype": "bfloat16",
+    "runtimeWeightDtypeAssumption": "FP32",
+    "weightMemoryProxy": "2 × stored BF16 file bytes, conservative proxy including duplicated file header",
+    "contextTokens": 8192,
+    "activeSequences": 1,
+    "kvDtype": "FP32",
+    "plannedRamGiB": 13.37542074918747,
+    "reserveGiB": 4,
+    "firstRamClassGiB": 16,
+    "basis": "calculated CPU planning budget; not a latency estimate",
+    "sourceIds": [
+      "huggingfacetb-smollm2-1-7b-instruct-native-files",
+      "huggingfacetb-smollm2-1-7b-instruct-native-config"
+    ]
+  }
+]

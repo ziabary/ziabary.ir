@@ -1,0 +1,110 @@
+{
+  "fa": {
+    "path": "src/lib/content/articles/data-confidentiality-public-apis.md",
+    "words": 2706,
+    "readingMinutesAt200WordsPerMinute": 14,
+    "structure": {
+      "h2": 6,
+      "h3": 14,
+      "paragraphs": 26,
+      "quotes": 1,
+      "tableRows": 9,
+      "tableColumns": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/your-data",
+        "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "https://arxiv.org/abs/2504.05147",
+        "https://arxiv.org/abs/2508.01638",
+        "https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_nguyen.pdf",
+        "https://arxiv.org/abs/2509.18886",
+        "https://arxiv.org/abs/2601.18511",
+        "https://arxiv.org/abs/2506.23603"
+      ]
+    }
+  },
+  "en": {
+    "path": "src/lib/content/articles/data-confidentiality-public-apis-en.md",
+    "words": 2681,
+    "readingMinutesAt200WordsPerMinute": 14,
+    "structure": {
+      "h2": 6,
+      "h3": 14,
+      "paragraphs": 26,
+      "quotes": 1,
+      "tableRows": 9,
+      "tableColumns": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/your-data",
+        "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "https://arxiv.org/abs/2504.05147",
+        "https://arxiv.org/abs/2508.01638",
+        "https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_nguyen.pdf",
+        "https://arxiv.org/abs/2509.18886",
+        "https://arxiv.org/abs/2601.18511",
+        "https://arxiv.org/abs/2506.23603"
+      ]
+    }
+  },
+  "es": {
+    "path": "src/lib/content/articles/data-confidentiality-public-apis-es.md",
+    "words": 3110,
+    "readingMinutesAt200WordsPerMinute": 16,
+    "structure": {
+      "h2": 6,
+      "h3": 14,
+      "paragraphs": 26,
+      "quotes": 1,
+      "tableRows": 9,
+      "tableColumns": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/your-data",
+        "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "https://arxiv.org/abs/2504.05147",
+        "https://arxiv.org/abs/2508.01638",
+        "https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_nguyen.pdf",
+        "https://arxiv.org/abs/2509.18886",
+        "https://arxiv.org/abs/2601.18511",
+        "https://arxiv.org/abs/2506.23603"
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "qualityScoresMatchedToSourceRows": {
+    "deepseek-quality": 30,
+    "qwen-embedding": 3,
+    "qwen-reranker": 9,
+    "smollm2-quality": 4,
+    "smollm3-quality": 18
+  },
+  "total": 64,
+  "gpuStackResultsWithTokenDurationCrossCheck": 11,
+  "internalArticleLinksResponding200": 7,
+  "internalArticleLinksResponding404": 1,
+  "sourceRecordCount": 98,
+  "uniqueSourceUrlCount": 96,
+  "scope": "source row/column extraction, product identity and arithmetic verification; no model evaluation rerun"
+}

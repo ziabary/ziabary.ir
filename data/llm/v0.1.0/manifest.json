@@ -1,0 +1,49 @@
+{
+  "datasetVersion": "0.1.0",
+  "asOf": "2026-09-15",
+  "phase": "1 — model/artifact/software catalog; candidate applications; specialized retrieval roles",
+  "publicationStatus": "draft-only",
+  "canonicalEntry": "src/lib/llm/data/repository.v1.ts",
+  "canonicalJson": "data/repository.v1.json",
+  "counts": {
+    "families": 15,
+    "models": 59,
+    "artifacts": 59,
+    "softwareProducts": 13,
+    "softwareReleases": 13,
+    "engines": 0,
+    "servingStacks": 0,
+    "deploymentConfigurations": 0,
+    "softwareCapabilities": 74,
+    "apiCompatibility": 16,
+    "hardwareConfigurations": 0,
+    "workloads": 9,
+    "qualityEvaluations": 0,
+    "applicationAssessments": 136,
+    "executionFeasibility": 0,
+    "deploymentCompatibility": 0,
+    "benchmarkRuns": 0,
+    "costScenarios": 0,
+    "specializedAssessments": 9,
+    "claims": 1073,
+    "evidence": 531
+  },
+  "inputFiles": {
+    "src/lib/llm/guide.ts": "66c6ce880cc60f2e7b6c2e0ee983a6ff68300afcc725d7080760ce0798444532",
+    "src/lib/llm/schema.ts": "c0b254e21229fcd4dacc877649e16f84738cb3cfb5de19dc0dc4a7c9f1b4a9bc",
+    "src/lib/llm/adapters.ts": "ed318cb1f75f5424c324998cd5193f619295e9cd52931f30f0f3b4347cdd9fc9",
+    "src/lib/llm/views.ts": "db21ed4fac534f81fd4424c0c266b78e1ec5881e3e9b8bc6501edb55f8ac95f0"
+  },
+  "requiredGate": "/guides/llm?show-drafts=true",
+  "observedVsTested": "Catalog/references researched; no model weights downloaded, no GPU inference, no measured deployment recommendation.",
+  "missingCanonicalTables": [
+    "hardware-feasibility",
+    "deployment-compatibility",
+    "benchmarks",
+    "economics"
+  ],
+  "stagedObservationsAreNotImported": true,
+  "uniqueSourceUrls": 221,
+  "validation": "validation/checks.json",
+  "integrationPatchScope": "Data import and missing family filter options only. Source-link UI and known-value notes still require the documented Codex changes."
+}

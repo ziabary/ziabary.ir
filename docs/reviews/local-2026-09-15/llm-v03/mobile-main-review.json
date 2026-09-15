@@ -1,0 +1,29 @@
+{
+  "checks": [
+    "Four main tables, the 67-model usage matrix and 257 file-footprint rows fit 320/390px in dark/light themes.",
+    "Visible table values contain no Persian-digit B/K combinations.",
+    "The Persian BGE quality profile and source conditions fit the mobile dialog."
+  ],
+  "screenshots": [
+    "mobile-390-dark-model-catalog.png",
+    "mobile-390-dark-model-suitability.png",
+    "mobile-390-dark-software-products.png",
+    "mobile-390-dark-specialized-models.png",
+    "mobile-390-light-model-catalog.png",
+    "mobile-390-light-model-suitability.png",
+    "mobile-390-light-software-products.png",
+    "mobile-390-light-specialized-models.png",
+    "mobile-390-file-footprint.png",
+    "mobile-320-dark-model-catalog.png",
+    "mobile-320-dark-model-suitability.png",
+    "mobile-320-dark-software-products.png",
+    "mobile-320-dark-specialized-models.png",
+    "mobile-320-light-model-catalog.png",
+    "mobile-320-light-model-suitability.png",
+    "mobile-320-light-software-products.png",
+    "mobile-320-light-specialized-models.png",
+    "mobile-320-file-footprint.png",
+    "mobile-320-bge-quality.png"
+  ],
+  "runtimeErrors": []
+}

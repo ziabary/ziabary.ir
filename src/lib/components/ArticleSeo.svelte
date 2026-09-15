@@ -20,6 +20,7 @@
   publishedDate={article.date}
   updatedDate={article.updated}
   articleSection={article.category}
+  noindex={article.draft === true}
 />
 
 <svelte:head>

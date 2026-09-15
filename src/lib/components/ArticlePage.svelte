@@ -23,7 +23,6 @@
 </script>
 
 <ArticleSeo {article} />
-<svelte:head>{#if article.draft}<meta name="robots" content="noindex,follow" />{/if}</svelte:head>
 <main class="article-page" class:intl-article={locale !== 'fa'} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   <article>
     <header class="article-header wrap">
@@ -41,7 +40,7 @@
       </div>
     </div>
   </article>
-  <RelatedStream related={article.related ?? []} currentSlug={article.slug} {locale} />
+  <RelatedStream related={article.related ?? []} currentSlug={article.slug} {locale} includeDrafts={article.draft === true} />
 </main>
 
 <style>

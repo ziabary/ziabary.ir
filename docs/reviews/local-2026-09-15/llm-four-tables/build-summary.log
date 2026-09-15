@@ -1,0 +1,8 @@
+✓ built in 2.88s
+✓ built in 7.17s
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+Generated sitemap.xml with 168 URLs.
+Validated sitemap.xml against 168 indexable pages and robots.txt.
+Validated 177 JSON-LD blocks across 177 HTML pages.
+Validated 204 short-link destinations, fragments and early browser redirects against published pages.

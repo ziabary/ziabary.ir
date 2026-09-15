@@ -18,8 +18,9 @@
 </script>
 
 <svelte:element this={target ? 'a' : 'article'} class="guide-collection-card" class:linked={Boolean(target)}
+  class:featured={collection.featured}
   href={target ?? undefined} aria-label={collection.title} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
-  <img {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" width="1600" height="900" />
+  <img {...imageAttributes(collection.image, collection.featured || collection.slug === 'gpu-selection' ? '(min-width: 1200px) 1200px, calc(100vw - 32px)' : '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" width="1600" height="900" />
   <span class="guide-card-shade" aria-hidden="true"></span>
   <div class="guide-card-copy">
     <small>{collection.eyebrow}</small>

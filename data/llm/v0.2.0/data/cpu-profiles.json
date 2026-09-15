@@ -1,0 +1,27 @@
+[
+  {
+    "id": "cpu-ram:8",
+    "installedRamGiB": 8,
+    "basis": "generic capacity planning class; not a CPU speed profile"
+  },
+  {
+    "id": "cpu-ram:16",
+    "installedRamGiB": 16,
+    "basis": "generic capacity planning class; not a CPU speed profile"
+  },
+  {
+    "id": "cpu-ram:32",
+    "installedRamGiB": 32,
+    "basis": "generic capacity planning class; not a CPU speed profile"
+  },
+  {
+    "id": "cpu-ram:64",
+    "installedRamGiB": 64,
+    "basis": "generic capacity planning class; not a CPU speed profile"
+  },
+  {
+    "id": "cpu-ram:128",
+    "installedRamGiB": 128,
+    "basis": "generic capacity planning class; not a CPU speed profile"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "airllm-layer-wise-inference",
+    "statusInSuppliedSnapshot": "planned-in-guide-registry"
+  },
+  {
+    "slug": "gpu-inference-latency-throughput",
+    "statusInSuppliedSnapshot": "article-in-source-snapshot"
+  },
+  {
+    "slug": "gpu-server-platform-components",
+    "statusInSuppliedSnapshot": "article-in-source-snapshot"
+  },
+  {
+    "slug": "int8-or-fp8-real-gpu-support",
+    "statusInSuppliedSnapshot": "article-in-source-snapshot"
+  },
+  {
+    "slug": "ollama-vllm-sglang-or-llama-cpp",
+    "statusInSuppliedSnapshot": "planned-in-guide-registry"
+  },
+  {
+    "slug": "pcie-gpu-server-selection",
+    "statusInSuppliedSnapshot": "article-in-source-snapshot"
+  },
+  {
+    "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+    "statusInSuppliedSnapshot": "companion-article-authorized-by-editor"
+  },
+  {
+    "slug": "right-model-size-for-the-task",
+    "statusInSuppliedSnapshot": "planned-in-guide-registry"
+  }
+]

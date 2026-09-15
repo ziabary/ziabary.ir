@@ -1,0 +1,52 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "editions": [
+    {
+      "lang": "en",
+      "path": "/en/articles/rag-cag-kag-fine-tuning-instruction-tuning-en/",
+      "date": "15 June 2026",
+      "related": [
+        "/en/articles/mlops-foundation-of-zero-trust-ai-en/",
+        "/en/articles/gpu-inference-latency-throughput-en/"
+      ]
+    },
+    {
+      "lang": "es",
+      "path": "/es/articles/rag-cag-kag-fine-tuning-instruction-tuning-es/",
+      "date": "15 de junio de 2026",
+      "related": [
+        "/es/articles/mlops-foundation-of-zero-trust-ai-es/",
+        "/es/articles/gpu-inference-latency-throughput-es/"
+      ]
+    }
+  ],
+  "checks": [
+    "English and Spanish contain the complete 12-section article, 5×5 table and 12 reference links; local cover and same-language related articles load.",
+    "Both editions show 15 June 2026 in the page, archive, Open Graph and JSON-LD; canonical URLs and all three reciprocal hreflang links are correct.",
+    "The language picker navigates FA→EN→ES→FA; each edition appears once in the sitemap.",
+    "Both translations fit 320/390-pixel mobile screens in light and dark themes; table scrolling stays inside its frame."
+  ],
+  "screenshots": [
+    "en-desktop-dark-cover.png",
+    "en-desktop-dark-table.png",
+    "en-desktop-light-cover.png",
+    "en-desktop-light-table.png",
+    "en-mobile-390-dark-table.png",
+    "en-mobile-390-light-table.png",
+    "en-mobile-390-cover.png",
+    "en-mobile-320-dark-table.png",
+    "en-mobile-320-light-table.png",
+    "en-mobile-320-cover.png",
+    "es-desktop-dark-cover.png",
+    "es-desktop-dark-table.png",
+    "es-desktop-light-cover.png",
+    "es-desktop-light-table.png",
+    "es-mobile-390-dark-table.png",
+    "es-mobile-390-light-table.png",
+    "es-mobile-390-cover.png",
+    "es-mobile-320-dark-table.png",
+    "es-mobile-320-light-table.png",
+    "es-mobile-320-cover.png"
+  ],
+  "runtimeErrors": []
+}

@@ -1,0 +1,7 @@
+{
+  "testedOn": "2026-09-15",
+  "method": "Parsed the six numeric cells in each of five exact DeepSeek-R1-Distill publisher table rows and compared all 30 numbers with staged observations.",
+  "matchedObservations": 30,
+  "result": "passed",
+  "notClaimed": "Independent measurement or validation of publisher methodology."
+}

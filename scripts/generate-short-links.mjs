@@ -25,7 +25,7 @@ try {
   await writeFile('config/short-links.json', JSON.stringify(reservations, null, 2) + '\n');
   await writeFile('src/lib/generated/short-links.json', JSON.stringify(active, null, 2) + '\n');
   await writeFile('static/short-links.json', JSON.stringify(active) + '\n');
-  // The browser module and local preview share the same exact resolver.
+  // Keep the old module working for cached HTML; new HTML embeds the resolver.
   await writeFile('static/short-link-core.js', await readFile('src/lib/short-links.mjs', 'utf8'));
   await mkdir('docs/deployment', { recursive: true });
   const rules = Object.entries(active).map(([code, target]) => ({

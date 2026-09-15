@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "Ralriki/multilingual-e5-large-instruct-GGUF",
+    "baseRepository": "intfloat/multilingual-e5-large",
+    "reason": "No exact conversion attribution in retrieved metadata/card"
+  },
+  {
+    "repository": "bartowski/moonshotai_Kimi-K2-Instruct-0905-GGUF",
+    "baseRepository": "moonshotai/Kimi-K2-Instruct",
+    "reason": "No exact conversion attribution in retrieved metadata/card"
+  },
+  {
+    "repository": "bartowski/smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+    "baseRepository": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "reason": "No exact conversion attribution in retrieved metadata/card"
+  },
+  {
+    "repository": "cstr/gte-modernbert-base-GGUF",
+    "baseRepository": "answerdotai/ModernBERT-base",
+    "reason": "No exact conversion attribution in retrieved metadata/card"
+  }
+]

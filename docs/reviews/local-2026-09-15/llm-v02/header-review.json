@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/",
+    "client": 320,
+    "inner": 320,
+    "scroll": 320,
+    "headerLeft": 0,
+    "headerRight": 320,
+    "title": "مهران ضیابری | سید محمد محمدزاده ضیابری"
+  },
+  {
+    "path": "/articles/",
+    "client": 320,
+    "inner": 320,
+    "scroll": 320,
+    "headerLeft": 0,
+    "headerRight": 320,
+    "title": "نوشته‌ها و یادداشت‌ها | مهران ضیابری"
+  },
+  {
+    "path": "/en/articles/",
+    "client": 320,
+    "inner": 320,
+    "scroll": 320,
+    "headerLeft": 0,
+    "headerRight": 320,
+    "title": "Articles | Mehran Ziabary"
+  },
+  {
+    "path": "/es/articles/",
+    "client": 320,
+    "inner": 320,
+    "scroll": 320,
+    "headerLeft": 0,
+    "headerRight": 320,
+    "title": "Artículos | Mehran Ziabary"
+  }
+]

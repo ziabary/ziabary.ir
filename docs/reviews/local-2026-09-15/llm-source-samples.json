@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Qwen3-8B",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/b968826d9c46dd6066d109eabc6255188de91218?blobs=true",
+    "revisionMatches": true,
+    "selectedFileSizesMatch": true
+  },
+  {
+    "model": "bge-m3",
+    "url": "https://huggingface.co/api/models/BAAI/bge-m3/revision/5617a9f61b028005a4858fdac845db406aefb181?blobs=true",
+    "revisionMatches": true,
+    "selectedFileSizesMatch": true
+  },
+  {
+    "model": "SmolLM2-135M-Instruct",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M-Instruct/revision/12fd25f77366fa6b3b4b768ec3050bf629380bac?blobs=true",
+    "revisionMatches": true,
+    "selectedFileSizesMatch": true
+  },
+  {
+    "model": "gemma-4-E2B-it",
+    "url": "https://huggingface.co/api/models/google/gemma-4-E2B-it/revision/3e22461f65e89153144f8adb70e3b8c2cc9845a7?blobs=true",
+    "revisionMatches": true,
+    "selectedFileSizesMatch": true
+  }
+]

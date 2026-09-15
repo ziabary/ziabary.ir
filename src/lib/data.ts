@@ -33,7 +33,8 @@ export const courses = [
 ];
 
 export const socialLinks = [
-  { label: 'X / Twitter', value: '@ziabary', url: 'https://x.com/ziabary', icon: 'fa-brands fa-twitter' },
+  { label: 'Bale', value: '@HoomasGov', url: 'https://ble.ir/HoomasGov', image: '/images/social/bale-white.svg', icon: '' },
+  { label: 'X', value: '@ziabary', url: 'https://x.com/ziabary', image: '/images/social/x-white.svg', icon: '' },
   { label: 'LinkedIn', value: 'Mehran Ziabary', url: 'https://ir.linkedin.com/in/mehranziabary', icon: 'fa-brands fa-linkedin-in' },
   { label: 'GitHub', value: '@ziabary', url: 'https://github.com/ziabary', icon: 'fa-brands fa-github' },
   { label: 'Virgool', value: '@mehran.ziabary', url: 'https://virgool.io/@mehran.ziabary', icon: 'fa-solid fa-pen-nib' }

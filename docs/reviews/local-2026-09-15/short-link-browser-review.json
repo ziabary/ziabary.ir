@@ -1,0 +1,136 @@
+{
+  "home": {
+    "hidden": false,
+    "h1": "مهران ضیابری",
+    "display": "contents"
+  },
+  "early": {
+    "url": "http://127.0.0.1:34315/guides/gpu-selection/#int8-or-fp8-real-gpu-support",
+    "state": "loading",
+    "bodyExists": false,
+    "status": null
+  },
+  "streamed": {
+    "targetBeforeHomeBody": true,
+    "homeBodySent": false,
+    "requests": [
+      "/?t=ggsiofrgs",
+      "/guides/gpu-selection/",
+      "/fonts/IranSansX/fontiran.css",
+      "/_app/immutable/entry/start.DwoE4mhf.js",
+      "/_app/immutable/chunks/BKeAkxyH.js",
+      "/_app/immutable/chunks/D3i1Uu_-.js",
+      "/_app/immutable/chunks/Bo27gI9X.js",
+      "/_app/immutable/chunks/OA8UcISh.js",
+      "/_app/immutable/chunks/B76-Ki5K.js",
+      "/_app/immutable/assets/0.XMV9mByo.css",
+      "/_app/immutable/assets/contents-navigation.TtNV1-H2.css",
+      "/_app/immutable/assets/GuidePage.t5gYMrNQ.css",
+      "/_app/immutable/entry/app.BwwmbD_c.js",
+      "/_app/immutable/chunks/PPVm8Dsz.js",
+      "/_app/immutable/chunks/Cpvv8LVr.js",
+      "/_app/immutable/chunks/DJYynIby.js",
+      "/_app/immutable/chunks/C8LVwbiA.js",
+      "/_app/immutable/chunks/BwTbAp4_.js",
+      "/_app/immutable/chunks/BsdKGRMW.js",
+      "/_app/immutable/chunks/D6aPNxbC.js",
+      "/_app/immutable/chunks/DPUlov7N.js",
+      "/_app/immutable/chunks/HcTLAFyZ.js",
+      "/_app/immutable/nodes/0.Cc-kPn0D.js",
+      "/_app/immutable/chunks/Bdy3zrG7.js",
+      "/_app/immutable/chunks/BqD73MGD.js",
+      "/_app/immutable/chunks/Db6pyalp.js",
+      "/_app/immutable/chunks/DHWOHpZa.js",
+      "/_app/immutable/chunks/Ddv7Dbpe.js",
+      "/_app/immutable/chunks/PERWXAwh.js",
+      "/_app/immutable/chunks/pckfvWRH.js",
+      "/_app/immutable/chunks/o55VdfDY.js",
+      "/_app/immutable/chunks/DPm-NL-X.js",
+      "/_app/immutable/chunks/DLIvr8pO.js",
+      "/_app/immutable/nodes/33.kyESOu2S.js",
+      "/_app/immutable/chunks/Dr0UTSVU.js",
+      "/_app/immutable/chunks/DVGvlqJh.js",
+      "/_app/immutable/chunks/COW1S0DB.js",
+      "/_app/immutable/chunks/BpboxfJA.js",
+      "/_app/immutable/chunks/C3EKLkYr.js",
+      "/_app/immutable/chunks/DGov9tBn.js",
+      "/images/responsive/6cb5da495728bcd5-960.webp",
+      "/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+      "/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+      "/fonts/IranSansX/fonts/woff2/IRANSansX-ExtraBold.woff2",
+      "/fonts/IranSansX/fonts/woff2/IRANSansX-DemiBold.woff2",
+      "/images/brands/intel.svg",
+      "/images/brands/amd.svg",
+      "/images/brands/nvidia.svg",
+      "/images/brands/google.svg",
+      "/images/brands/qualcomm.svg",
+      "/images/brands/huawei.svg",
+      "/images/brands/aws.svg",
+      "/images/brands/tenstorrent.svg",
+      "/images/brands/cerebras.svg",
+      "/images/brands/groq.svg",
+      "/images/server-brands/asrock.svg",
+      "/images/server-brands/dell.svg",
+      "/images/server-brands/gigabyte.svg",
+      "/images/server-brands/supermicro.svg",
+      "/images/server-brands/hpe.svg",
+      "/images/server-brands/lenovo.svg",
+      "/images/server-brands/asus.svg",
+      "/images/server-brands/fujitsu.svg",
+      "/images/social/bale-white.svg",
+      "/images/social/x-white.svg",
+      "/site.webmanifest",
+      "/_app/immutable/nodes/1.DEZ8BROJ.js",
+      "/_app/immutable/assets/KaTeX_Math-Italic.t53AETM-.woff2",
+      "/_app/immutable/assets/KaTeX_Main-Regular.B22Nviop.woff2",
+      "/_app/immutable/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2"
+    ]
+  },
+  "destination": {
+    "path": "/guides/gpu-selection/",
+    "hash": "#int8-or-fp8-real-gpu-support",
+    "fragmentExists": true,
+    "canonical": "https://ziabary.ir/guides/gpu-selection/"
+  },
+  "slowTarget": {
+    "status": null,
+    "visibleHome": false
+  },
+  "invalid": [
+    {
+      "status": "invalid",
+      "notice": "لینک کوتاه پیدا نشد. کد لینک را بررسی کنید.\n\nصفحهٔ اصلی",
+      "display": "none",
+      "noindex": true
+    },
+    {
+      "status": "invalid",
+      "notice": "لینک کوتاه پیدا نشد. کد لینک را بررسی کنید.\n\nصفحهٔ اصلی",
+      "display": "none",
+      "noindex": true
+    },
+    {
+      "status": "invalid",
+      "notice": "لینک کوتاه پیدا نشد. کد لینک را بررسی کنید.\n\nصفحهٔ اصلی",
+      "display": "none",
+      "noindex": true
+    }
+  ],
+  "themes": {
+    "light": {
+      "background": "rgb(247, 246, 242)",
+      "text": "rgb(16, 45, 53)",
+      "bodyBackground": "rgba(0, 0, 0, 0)"
+    },
+    "dark": {
+      "background": "rgb(12, 24, 27)",
+      "text": "rgb(237, 247, 245)",
+      "bodyBackground": "rgba(0, 0, 0, 0)"
+    }
+  },
+  "noJavaScript": {
+    "hidden": false,
+    "h1": true
+  },
+  "exceptions": []
+}

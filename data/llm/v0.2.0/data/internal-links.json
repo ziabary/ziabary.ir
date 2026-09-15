@@ -1,0 +1,104 @@
+[
+  {
+    "slug": "choosing-gpu-for-ai",
+    "titleAsInSource": "نحوه انتخاب پردازنده گرافیکی برای هوش مصنوعی",
+    "href": "/articles/choosing-gpu-for-ai",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/choosing-gpu-for-ai",
+      "httpStatus": 200,
+      "pageTitle": "نحوه انتخاب پردازنده گرافیکی برای هوش مصنوعی | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  },
+  {
+    "slug": "gpu-inference-latency-throughput",
+    "titleAsInSource": "چرا سریع‌ترین GPU لزوماً سریع‌ترین پاسخ را نمی‌دهد؟",
+    "href": "/articles/gpu-inference-latency-throughput",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/gpu-inference-latency-throughput",
+      "httpStatus": 200,
+      "pageTitle": "چرا سریع‌ترین GPU لزوماً سریع‌ترین پاسخ را نمی‌دهد؟ | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  },
+  {
+    "slug": "gpu-server-platform-components",
+    "titleAsInSource": "اجزای سکوی سرور برای پردازش GPU",
+    "href": "/articles/gpu-server-platform-components",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/gpu-server-platform-components",
+      "httpStatus": 200,
+      "pageTitle": "اجزای سکوی سرور برای پردازش GPU | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  },
+  {
+    "slug": "pcie-vs-sxm-for-ai",
+    "titleAsInSource": "PCIe یا SXM؛ تفاوت رابط‌ها در زیرساخت هوش مصنوعی",
+    "href": "/articles/pcie-vs-sxm-for-ai",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/pcie-vs-sxm-for-ai",
+      "httpStatus": 200,
+      "pageTitle": "PCIe یا SXM؛ تفاوت رابط‌ها در زیرساخت هوش مصنوعی | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  },
+  {
+    "slug": "int8-or-fp8-real-gpu-support",
+    "titleAsInSource": "INT8 یا FP8؛ پشتیبانی واقعی GPU در اجرای مدل‌های زبانی",
+    "href": "/articles/int8-or-fp8-real-gpu-support",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/int8-or-fp8-real-gpu-support",
+      "httpStatus": 200,
+      "pageTitle": "INT8 یا FP8؛ پشتیبانی واقعی GPU در اجرای مدل‌های زبانی | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  },
+  {
+    "slug": "secure-rag-agent",
+    "titleAsInSource": "RAG و Agent امن نیستند مگر دسترسی در لحظه اجرا کنترل شود",
+    "href": "/articles/secure-rag-agent",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/secure-rag-agent",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "showAsLiveLink": false
+  },
+  {
+    "slug": "ai-data-confidentiality-safe-processing",
+    "titleAsInSource": "گره کور داده برای هوش مصنوعی؛ به دست باز کنیم یا دندان؟",
+    "href": "/articles/ai-data-confidentiality-safe-processing",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/ai-data-confidentiality-safe-processing",
+      "httpStatus": 200,
+      "pageTitle": "گره کور داده برای هوش مصنوعی؛ به دست باز کنیم یا دندان؟ | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  },
+  {
+    "slug": "mlops-foundation-of-zero-trust-ai",
+    "titleAsInSource": "MLOps؛ بستر پیاده‌سازی هوش مصنوعی بدون اعتماد",
+    "href": "/articles/mlops-foundation-of-zero-trust-ai",
+    "verification": "article file and /articles/[slug]/+page.ts route verified in supplied source; use current project visibility when integrating",
+    "liveVerification": {
+      "href": "/articles/mlops-foundation-of-zero-trust-ai",
+      "httpStatus": 200,
+      "pageTitle": "MLOps؛ بستر پیاده‌سازی هوش مصنوعی بدون اعتماد | مهران ضیابری",
+      "checkedOn": "2026-09-15"
+    },
+    "showAsLiveLink": true
+  }
+]

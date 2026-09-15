@@ -1,0 +1,18 @@
+[
+  {
+    "asPublished": "CohereForAI/aya-expanse-8b",
+    "canonical": "CohereLabs/aya-expanse-8b"
+  },
+  {
+    "asPublished": "CohereForAI/aya-expanse-32b",
+    "canonical": "CohereLabs/aya-expanse-32b"
+  },
+  {
+    "asPublished": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "canonical": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  {
+    "asPublished": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "canonical": "meta-llama/Llama-3.1-70B-Instruct"
+  }
+]

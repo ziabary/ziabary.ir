@@ -1,0 +1,45 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "shared profile, Escape, focus return and filters/preset preserved",
+    "RAG retrieval, reranking and grounded generation coexist with explicit roles",
+    "matrix contains 50 generators, text-only limitation is explicit",
+    "profile deep link and verified download/run panels",
+    "draft page and card remain gated",
+    "local logos load at equal dimensions; external links use new tabs; desktop/mobile have no page overflow"
+  ],
+  "screenshots": [
+    "desktop-hero.png",
+    "desktop-model-catalog.png",
+    "desktop-model-suitability.png",
+    "desktop-software-products.png",
+    "desktop-specialized-models.png",
+    "desktop-bge-profile.png",
+    "desktop-bge-downloads.png",
+    "desktop-rag-roles.png",
+    "desktop-use-matrix.png",
+    "desktop-gguf-qwen.png",
+    "desktop-qwen-downloads.png",
+    "desktop-run-slm.png",
+    "desktop-run-coder.png",
+    "mobile-dark-model-catalog.png",
+    "mobile-dark-model-suitability.png",
+    "mobile-dark-software-products.png",
+    "mobile-dark-specialized-models.png",
+    "mobile-dark-bge-profile.png",
+    "mobile-light-model-catalog.png",
+    "mobile-light-model-suitability.png",
+    "mobile-light-software-products.png",
+    "mobile-light-specialized-models.png",
+    "mobile-light-bge-profile.png"
+  ],
+  "hero": {
+    "width": 687,
+    "container": 1173,
+    "sameRow": true
+  },
+  "profileUrl": "http://127.0.0.1:4189/guides/llm/?show-drafts=true&view=model-suitability&preset=task-first&model=model%3Abaai-bge-m3&panel=downloads",
+  "ggufModels": 11,
+  "logoCount": 137,
+  "runtimeErrors": []
+}

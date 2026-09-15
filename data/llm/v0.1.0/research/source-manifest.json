@@ -1,0 +1,2002 @@
+[
+  {
+    "repository": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "d185603ceeba03d0c1b56e1273a463654bc788fbe734fefba1914c88bfaf7d6c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/BAAI/bge-m3?blobs=true"
+  },
+  {
+    "repository": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "0b81ccf9134e5874d620a86e6905062ea999e779c34eb1a7e65eaeb7fe00e450",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/BAAI/bge-m3/blob/5617a9f61b028005a4858fdac845db406aefb181/README.md"
+  },
+  {
+    "repository": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/BAAI/bge-m3/raw/5617a9f61b028005a4858fdac845db406aefb181/config.json"
+  },
+  {
+    "repository": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "f14357eeecb0ef5dd18c4225293fab773445ebb46b5cda3cebd82e8c36f0926a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3?blobs=true"
+  },
+  {
+    "repository": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "c887aa6dd2598f908bf0582ca7068cc816585c7a1b6a07df305b631ede0cb174",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/README.md"
+  },
+  {
+    "repository": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "13dcd6c31d9fec9d1d8e158702072f62d7fa7d312a64b9fe057bec9a08cfe41a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/raw/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json"
+  },
+  {
+    "repository": "CohereLabs/aya-expanse-32b",
+    "revision": "b306ea27e360683b50c005d7fcbad6a242317910",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "ba22c754e0110c47cabb0c5e1fdaa28dc635029b1955b40f24e06f720afbeac7",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/CohereLabs/aya-expanse-32b?blobs=true"
+  },
+  {
+    "repository": "CohereLabs/aya-expanse-32b",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "437b0add20a60931b92fe41cc6cadcd6f5b09056cead2a9eb548e6fec9b8fa23",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/CohereLabs/aya-expanse-32b"
+  },
+  {
+    "repository": "CohereLabs/aya-expanse-8b",
+    "revision": "5062468bf9bc0c6035fd64e06274333ec127d980",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "115c078de1437405a9a858d799a6f0b1c6e4b3eb6001011a35943aea34e880db",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/CohereLabs/aya-expanse-8b?blobs=true"
+  },
+  {
+    "repository": "CohereLabs/aya-expanse-8b",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "24c9dbda86ddbbbaf8bec97e75a3e5cc7a86c04f4689f8b582dc97cdd2e91636",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/CohereLabs/aya-expanse-8b"
+  },
+  {
+    "repository": "CohereLabs/tiny-aya-global",
+    "revision": "00590ff258ccd84a805f13efcd1c34c2a542654f",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "0c4c7a8509c10d841478756319c992904af587133bd29507c227f4850058f412",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/CohereLabs/tiny-aya-global?blobs=true"
+  },
+  {
+    "repository": "CohereLabs/tiny-aya-global",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "5203ad66a50418cd4a97c276d88391528e9eae5599c15a6ab79c2ef05a44f92b",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/CohereLabs/tiny-aya-global"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "31b70e2e869a7173562077fd711b654946d38674",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "9605924b59e512d3c5572586e897a7c9d875ce5fa39dba11ab23a44c3ba853ed",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-1.7B-Instruct?blobs=true"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "31b70e2e869a7173562077fd711b654946d38674",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "b00c0570dbc43674a0028d088fc72f40d83eea90f47cd987706ca2f95ed114c0",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/blob/31b70e2e869a7173562077fd711b654946d38674/README.md"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "31b70e2e869a7173562077fd711b654946d38674",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/raw/31b70e2e869a7173562077fd711b654946d38674/config.json"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "1fa4f35b75e6a1aa0252b4d89073ba17849988afcfa302e4b110b1e9c3246bfd",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M-Instruct?blobs=true"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "4f97533ad95b1b2fea15fbc075c01b94578ebdd7c8138888fa43fa3abd530dc4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/raw/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "0ab82857cb4d310e4d4ef03510925506dfe611e8c3d6efc8458f9d9a8c795347",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-360M-Instruct?blobs=true"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "6b88794416ac9da8f254ebb0bec228967a2bdd0badf9a2853863928b25facd95",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/raw/a10cc1512eabd3dde888204e902eca88bddb4951/config.json"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM3-3B",
+    "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "91e3e1ef3e0cd6fa66e9f934090b31a291591a673cf7822433922dfb1734b5ba",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B?blobs=true"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM3-3B",
+    "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md"
+  },
+  {
+    "repository": "HuggingFaceTB/SmolLM3-3B",
+    "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "c72b1031274ff4626e434d0019e88e95a767460135db9ee492eb80652b786af1",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "0547bba2c3fc4e17ab2aa3d2bb9e14ad0430d66445929a1b8aaf37dfefc2cdcf",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "1ab64a26fcb3b461423b89a433a8c858f1bf8d4086f979cbb3ff878d47cf20e9",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/c1899de289a04d12100db370d81485cdf75e47ca/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "7ccfb078c43d83f6ad77b19a4073ce72a3984182a0cdd34b54e63c6077268ac1",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "da885c902491e75e9139b3ecbebe7bf3eed9ef5f7a0ee737b27ca967e52be964",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-14B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "7ef503e68996a4e32007fedc7d8e198846e9b1f36620d38a79b89934100b1250",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "e73c3664ca09b10a673fef0c22e8a6b456201d49bd4713c9691f775720e8857a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-14B/raw/40c069824f4251a91eefaf281ebe4c544efd3e18/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-30B-A3B",
+    "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "369c3f4f4a25ea38bb388d346072af18f91acad3437a1ede8f52eb03a3b0b7b4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-30B-A3B",
+    "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "1897b7cdf7b5f45ae847b87f9b416d4635fe73228e0daac669a4e1f3e5948858",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-30B-A3B",
+    "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "2850ddb3bf7aecad20b611e2d44f3077fc8193f4827c93beddd4c02ad63c2297",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B/raw/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "79ce5d9c3a4aa2a4d3400a3bee046c04b1581c1f1cf0bbbc95e3833f0995d59e",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-32B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "0af37735eef45eb3b406f3d74952e6cbcbc180904dc68b73a31a690719a235da",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-32B/raw/9216db5781bf21249d130ec9da846c4624c16137/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "2da8fa76bea5a698fbe86e10d9efebe2a31d12d0d37082ff3de87689875208d9",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-4B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "71add1cd091c309b1cb1a6b943f2476eb2b004124b3bd1d32dcd0b24cc1abc47",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "e5fcb01c60dc43354ba3c481f594740e25b38a554758a86ea45c24365bb48d5e",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "c7168dbafec882769f90c3cf663dbb32951cc0754ad8bcdb31a271c832290b9f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-30B-A3B-Instruct?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "98e8f0e00f2d6c7f1743fc4ef2b6297dcc57bec73d71f36588aed984370ac3f3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "e2c8d8eea39471785cd93379d8b48241ad7dcda299013155dd02526e34a0de62",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/raw/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "aefa47132eb8bbd5835884148545e0535d461d3002f94003fb7d05e8cd0c0093",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/raw/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-4B",
+    "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "96f81a51f3ec01076d23540e23d8cea2971d70c495bd4b1122298be957980f47",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-4B",
+    "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "3c8dafc1e6529491fa8918cd96c62b90229b317fd83f2794cea20cda100d6122",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/blob/5cf2132abc99cad020ac570b19d031efec650f2b/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-4B",
+    "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "78d2861cbbfd80eee05839200c5a3b7ed64c789f6c1cab4fbb84cc4eae33eaf5",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/raw/5cf2132abc99cad020ac570b19d031efec650f2b/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-8B",
+    "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "3fb2a1aa098f00b953a7119e851366e7f99cc320ef612669d7342d9b512e2576",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-8B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-8B",
+    "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "1fd6f3583d642a3319efb3eb8c22b6aa6320e6ab92263447bd84fd92615206d4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Embedding-8B",
+    "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "dcccf7c7890c8debc4af8dace8d6acd8dd50bd56d50d4d8b60529381ba3de3d7",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/raw/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-0.6B",
+    "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "8de8f7730ca223dbaebc8fab5aa3afbab1c9e362207415844e719218efda20e6",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-0.6B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-0.6B",
+    "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/blob/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-0.6B",
+    "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "d479c427a9ca5295218063d4f9aca4f297ab4ac27487cca7af42c84643d51ef0",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/raw/e61197ed45024b0ed8a2d74b80b4d909f1255473/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-4B",
+    "revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "4aa3ed56f2bd61f403c8a0f7e0eab6bec8108dbdaded560e6317a66b7cedbb74",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-4B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-4B",
+    "revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "b7cf82b30d5e38cd1a02ca7cfd60c26c0e3664cb31b2c4b661550a93c9281bee",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/blob/22e683669bc0f0bd69640a1354a6d0aebcfeede5/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-4B",
+    "revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "38bff5eac700032a185745e4076eccad7aa453473cafc2a27de412cdb7b79e19",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/raw/22e683669bc0f0bd69640a1354a6d0aebcfeede5/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-8B",
+    "revision": "77d193c791ed757ca307ee72715aa132723da912",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "00d0e25c05470d6efbd23292380be7c58bbfd889f7af3a7a23859ef474ac4ddf",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-8B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-8B",
+    "revision": "77d193c791ed757ca307ee72715aa132723da912",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "5f33734e77bb56c191dfd66bd8c4c04fdba6c023cddd6052871082c411f9b608",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/blob/77d193c791ed757ca307ee72715aa132723da912/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-Reranker-8B",
+    "revision": "77d193c791ed757ca307ee72715aa132723da912",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "e87a4f50c475c7276fc642eabfc986a7c8da1c8a30a4ee34b4979048b330f2be",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/raw/77d193c791ed757ca307ee72715aa132723da912/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "58a8b8249bd5b60479f13736e082dfcce3cdd23654a0283891975b6cfa91c0ba",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-VL-8B-Instruct?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "6d5d06e0c3f069097002445d30dce9ee107db3afaf15563f09e6df49b8dcb4d7",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/raw/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "5c6b0f344fd0059527791f7bb7d3777f403bd4aae3605e282cbbe6ae6a952221",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-2B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-2B/raw/15852e8c16360a2fea060d615a32b45270f8a8fc/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-35B-A3B",
+    "revision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "91e6da998277112e0d25ee73bb84d97415c0512d64f43618b02e531b18b293ca",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-35B-A3B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-35B-A3B",
+    "revision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "71c3bbc2eadadd5980bbdbb15df958c27d42ede24821015602a021109aacf492",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-35B-A3B",
+    "revision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "5e4d7f74fec2f360eb9cfbfcd6ec0c4c76e684d3a11caaed259d9fd9bfbc7944",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/raw/59d61f3ce65a6d9863b86d2e96597125219dc754/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "fc00a28f8f67f2aa043da4c598b47a0edbc7549cc0b5beebbe0df2b82b8e7c0c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-4B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-4B/raw/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "3440bfde8b1fe845ae0f31764e09624a319fbe3d05541f88964687354bbeeb62",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-9B/raw/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json"
+  },
+  {
+    "repository": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "f58d37eab6c6538447e8fce76535dccb16285facec64ba08e1d9637c0d9cbd9c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B?blobs=true"
+  },
+  {
+    "repository": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md"
+  },
+  {
+    "repository": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B/raw/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json"
+  },
+  {
+    "repository": "allenai/Olmo-3-7B-Instruct",
+    "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "ceb40ba3b0f6ef2b1e46a59fe55b692f2c68a5e56c2db7ee2511858e6be4bc07",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/allenai/Olmo-3-7B-Instruct?blobs=true"
+  },
+  {
+    "repository": "allenai/Olmo-3-7B-Instruct",
+    "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "9c7c873ea9bd506db7800e61a0535302106bdc393d72b0d2341197330d25a7fe",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md"
+  },
+  {
+    "repository": "allenai/Olmo-3-7B-Instruct",
+    "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "6282ae812f9e494bd212e9a3233d68dc4d5f1e2569642423d2b79a3e80373ef8",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/raw/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "revision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "ed565ebd9b1513641b152d330a43d58377fdbed744d3362382c4ef0835d2beb8",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "revision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "ee003a09ddabff67a5b0d2394bea65c6ce523e4994f3208d6a58613e27834d8a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "revision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "1b1cbbba841c180e94192f7a25d2d97e21498fc1a0a0b4785942158af5eee183",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/raw/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "revision": "b1c0b44b4369b597ad119a196caf79a9c40e141e",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "25511c6dcf5b273634f3438085092084a8b3174b7737aa29e8460cc03f652fab",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Llama-70B?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "revision": "b1c0b44b4369b597ad119a196caf79a9c40e141e",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "revision": "b1c0b44b4369b597ad119a196caf79a9c40e141e",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "95ef9768e4741543dbfaf0c274f101855883ff338b235c99eca2b6a4f4abee12",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/raw/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "799cf58c7fb3205011b3251de1c61ee304b27a91d488cc464f391fc308f54ad2",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "37bd455e9679d2959536270fed49d25cc7c290a64f6e52abb97c71345a9cee41",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/raw/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "revision": "1df8507178afcc1bef68cd8c393f61a886323761",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "088c4f25d9a7e5694500fa9df925d2f55e138f8f2edd220f335064d4d5de488b",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "revision": "1df8507178afcc1bef68cd8c393f61a886323761",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/1df8507178afcc1bef68cd8c393f61a886323761/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "revision": "1df8507178afcc1bef68cd8c393f61a886323761",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "fdb89460be9a6383451437cdf632a3e087522efa682265461f33507e7069f026",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/raw/1df8507178afcc1bef68cd8c393f61a886323761/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "revision": "711ad2ea6aa40cfca18895e8aca02ab92df1a746",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "b24ae8e7843c2a57b2f7f123fa1d4d18dc5af77b9d87ba9a4621209a30fc14f1",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "revision": "711ad2ea6aa40cfca18895e8aca02ab92df1a746",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/blob/711ad2ea6aa40cfca18895e8aca02ab92df1a746/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "revision": "711ad2ea6aa40cfca18895e8aca02ab92df1a746",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "2c003fe40b13d2d1f372254d77177ed753176150f3d424d1b5ad22ff1d78a987",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/raw/711ad2ea6aa40cfca18895e8aca02ab92df1a746/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "22054936cd22d7638920c79085baa202f1dbf5cb985dc4b640d3fad64fcd750c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "8290d3c1e385e2616572eb6926f7e2745f901d1c13da95970326a8a73f6c379c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/raw/916b56a44061fd5cd7d6a8fb632557ed4f724f60/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-V3.2",
+    "revision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "7c21a5a0ddea6ad9e4de74a66f83224bce4a8bab8c3037c90a9d53eb137f37b9",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.2?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-V3.2",
+    "revision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "22b9f57e1ece2df27f9de0e71377e19481f7a6892eca8bc23e73fcdffe1d845c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-V3.2",
+    "revision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "c7fa8b191e9936d8e6a57d864baab82b792fae16a116416cdd3a75ba76bc5af1",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/raw/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/config.json"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "revision": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "660b89272118b5165e92f1d0af2f0b6a64fdc91cd7f87fd4e5ba5588dfff1a4b",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash?blobs=true"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "revision": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md"
+  },
+  {
+    "repository": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "revision": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/config.json"
+  },
+  {
+    "repository": "google/gemma-3-12b-it",
+    "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "1fcb0836b6d206e2cd3799e67023883c9d9f7b28026c05647d2fda670006a84d",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/google/gemma-3-12b-it?blobs=true"
+  },
+  {
+    "repository": "google/gemma-3-12b-it",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "d86f1d38b98a7ef49f33c0dc51a6cf3cc7cb36ef148fda64353770d9c7d97355",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-3-12b-it"
+  },
+  {
+    "repository": "google/gemma-3-1b-it",
+    "revision": "dcc83ea841ab6100d6b47a070329e1ba4cf78752",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "f12f4bbc933c4d822f5520b968c0ed6716322f34daa09318254d87f6e35093bf",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/google/gemma-3-1b-it?blobs=true"
+  },
+  {
+    "repository": "google/gemma-3-1b-it",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "dbebf2655a9964e4e1a7f8207cc64770389777f33aab0b5b7fba09673927bd3f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-3-1b-it"
+  },
+  {
+    "repository": "google/gemma-3-27b-it",
+    "revision": "005ad3404e59d6023443cb575daa05336842228a",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "4eda27539139162c39110973b829d37399d49328c642c91e8aa9d15aa3504460",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/google/gemma-3-27b-it?blobs=true"
+  },
+  {
+    "repository": "google/gemma-3-27b-it",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "8f2a25ef945e912f9f0a3a332ecc12b356dafaf2428ad21b47641cece2de9052",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-3-27b-it"
+  },
+  {
+    "repository": "google/gemma-3-4b-it",
+    "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "e5fb80f73ffc9e9ea38abe1ed5dcc80a48c83f7d3d8f51ebac28dbaafa507844",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/google/gemma-3-4b-it?blobs=true"
+  },
+  {
+    "repository": "google/gemma-3-4b-it",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "a0cfa5429edcc1d00d7438b62428fb3ada6aa39f6ed6ca5152d561738f874191",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-3-4b-it"
+  },
+  {
+    "repository": "google/gemma-4-26B-A4B-it",
+    "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "d3f712780d75cf33b37dc7e349372b4a027c384d2f99951092bb72d7c0d0f201",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it?blobs=true"
+  },
+  {
+    "repository": "google/gemma-4-26B-A4B-it",
+    "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md"
+  },
+  {
+    "repository": "google/gemma-4-26B-A4B-it",
+    "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-4-26B-A4B-it/raw/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json"
+  },
+  {
+    "repository": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "72d76ad9a0c0b96a29ea21b43f618369aa14a761f2f12b73ea0faa19c9564232",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/google/gemma-4-E2B-it?blobs=true"
+  },
+  {
+    "repository": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "3e0608a6be80e3eb040a5aa6c76707809503deb85be6360184a118fb6156526c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/README.md"
+  },
+  {
+    "repository": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "1b28f3d2c3100f6c594754b81107428bd7b822a7f48272ca681dae9d2ec38330",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/google/gemma-4-E2B-it/raw/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json"
+  },
+  {
+    "repository": "ibm-granite/granite-3.3-2b-instruct",
+    "revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "77c5e460d3d9bf50cdf1c753a77ec2284ff7ed61b0f9f2a823098e29d42da752",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/ibm-granite/granite-3.3-2b-instruct?blobs=true"
+  },
+  {
+    "repository": "ibm-granite/granite-3.3-2b-instruct",
+    "revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "dd7a9d401b703f4d6136b70b575a8070b88d173f61804dad48fccc7949afe610",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md"
+  },
+  {
+    "repository": "ibm-granite/granite-3.3-2b-instruct",
+    "revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "9202d328d8368958aab7dad89a8e6aa35c250b3a2eedd2d8850ee0bcceca65f6",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/raw/707f574c62054322f6b5b04b6d075f0a8f05e0f0/config.json"
+  },
+  {
+    "repository": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "5db2ae4c6c4513cb3851ae6e76a049fe4c4be82f0d6926dce261fc2e0c922005",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/intfloat/multilingual-e5-small?blobs=true"
+  },
+  {
+    "repository": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "0038de97aee16258cecbad7ffda4b4febd6953e747a00e0ddbc8e6ed241e9c1c",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/intfloat/multilingual-e5-small/blob/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md"
+  },
+  {
+    "repository": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "69137736cab8b8903a07fe8afaafdda25aac55415a12a55d1bffa9f581abf959",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/intfloat/multilingual-e5-small/raw/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json"
+  },
+  {
+    "repository": "meta-llama/Llama-3.1-70B-Instruct",
+    "revision": "1605565b47bb9346c5515c34102e054115b4f98b",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "0296b58ab33e011976f10dcf8ee860a992b08c3fe713be23f689d030bf9aadd2",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-70B-Instruct?blobs=true"
+  },
+  {
+    "repository": "meta-llama/Llama-3.1-70B-Instruct",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "d6083b8771dd70e3da5b050b992cc48f343cb68374598fc3790ab04655ec67b3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct"
+  },
+  {
+    "repository": "meta-llama/Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "9c9a8804f098fb5a58194097f6e22066e27c7b359a41a9b342d8c6a6480555ff",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct?blobs=true"
+  },
+  {
+    "repository": "meta-llama/Llama-3.1-8B-Instruct",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "57b8182c4288e6e470a940277456e234bd99930a68465ebe4a9de6f4b689f575",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+  },
+  {
+    "repository": "meta-llama/Llama-3.2-1B-Instruct",
+    "revision": "9213176726f574b556790deb65791e0c5aa438b6",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "7ec8c585c48a1c4936fe21ab2e846df02084bc1ac1ec0d85b652b85ec68ae518",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B-Instruct?blobs=true"
+  },
+  {
+    "repository": "meta-llama/Llama-3.2-1B-Instruct",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "590317a964d20861047aa33f6127568563e1147b9ec719cfc14ad42cf5f2b1db",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  {
+    "repository": "meta-llama/Llama-3.2-3B-Instruct",
+    "revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "630ac12409ea671f21dcee8b444a9a33464dc06008ff4f5d8050636f0498e6a0",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct?blobs=true"
+  },
+  {
+    "repository": "meta-llama/Llama-3.2-3B-Instruct",
+    "revision": null,
+    "sourceType": "model",
+    "file": "public-card.html",
+    "sha256": "146616b128963894e423df23abef72af3aa1f0d9b48aa358c21086fc05b51f41",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
+  },
+  {
+    "repository": "microsoft/Phi-4-mini-instruct",
+    "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "d7dabc40a222b4d7a4b6225629351d478fdcc2b0a2eb31bb9b6ebec7a4f93548",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/microsoft/Phi-4-mini-instruct?blobs=true"
+  },
+  {
+    "repository": "microsoft/Phi-4-mini-instruct",
+    "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md"
+  },
+  {
+    "repository": "microsoft/Phi-4-mini-instruct",
+    "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "ac65d86061d3d0d704ee2511fd0eb8713ef19eb6eedba17c3080a4165d5b933b",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/raw/cfbefacb99257ffa30c83adab238a50856ac3083/config.json"
+  },
+  {
+    "repository": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "revision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "b42c33895c02b3a8fbab848f2b2d72048ef680bf26603f3dd3ef238db85e5637",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/mistralai/Devstral-Small-2-24B-Instruct-2512?blobs=true"
+  },
+  {
+    "repository": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "revision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "e1aa7a24bc4845a11cf8defacd723a67fe5cc551ca9311e0276933d9176f55d7",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md"
+  },
+  {
+    "repository": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "revision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "8d570ae877badd9ff5442afdc726385aba07f5757ba875a7491bde9549457e72",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/raw/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/config.json"
+  },
+  {
+    "repository": "mistralai/Ministral-3-3B-Instruct-2512",
+    "revision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "1798ca261415bd480773a6e87be693ecb2b51e94cee74ed0ae5790098db6cc6f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/mistralai/Ministral-3-3B-Instruct-2512?blobs=true"
+  },
+  {
+    "repository": "mistralai/Ministral-3-3B-Instruct-2512",
+    "revision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "57623b9703d4fe40fe752b4a63f920c65ffd30cd7c281c8bccab7ee784460b67",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md"
+  },
+  {
+    "repository": "mistralai/Ministral-3-3B-Instruct-2512",
+    "revision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "a9c3658d7bb45ab5be77e660d483a9d3f8a3d54bda2c69a1c576bdfefbc16be6",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/raw/b35d4dfe56c142746f54dbd64f579faab2744308/config.json"
+  },
+  {
+    "repository": "mistralai/Mistral-7B-Instruct-v0.3",
+    "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "0b3ead3fad19eec36f56ba5cafa54c44763daab6d952f8526a95bfdbe7a10327",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3?blobs=true"
+  },
+  {
+    "repository": "mistralai/Mistral-7B-Instruct-v0.3",
+    "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "3166974023134d972368b585d730fa5f70100873684f90a10a773b20e80b30ba",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/blob/c170c708c41dac9275d15a8fff4eca08d52bab71/README.md"
+  },
+  {
+    "repository": "mistralai/Mistral-7B-Instruct-v0.3",
+    "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/raw/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json"
+  },
+  {
+    "repository": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "revision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "56a18f8bc09c801e1a3bbea19a31f2b47d7f1a40361949b31e3db10f617d13fe",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/mistralai/Mistral-Small-3.1-24B-Instruct-2503?blobs=true"
+  },
+  {
+    "repository": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "revision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "68effd5695d7053fa8153feedaaae529ce10bd6481f86dad76374a59de3592e6",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md"
+  },
+  {
+    "repository": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "revision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "ce3ec410cac74da358f786c574b73b6624c50c8bb876bcb628f06500fe07adcc",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/raw/68faf511d618ef198fef186659617cfd2eb8e33a/config.json"
+  },
+  {
+    "repository": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "ed390026d991529f003d1a9fde4b272ff6579f8f8d921a1ef0617898ee16f426",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Nano-9B-v2?blobs=true"
+  },
+  {
+    "repository": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "626593b2bdc0f473e2870d0f5e478d63348e53137c4e22f3fca3557234541042",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md"
+  },
+  {
+    "repository": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "642dc554a725ea216be55c3018d0a6f3dc9963b24779c3cc97f5a0ea21e9dcc3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/raw/6533e8de2c68e4536bf7c411d7a3ce5734111476/config.json"
+  },
+  {
+    "repository": "openai/gpt-oss-120b",
+    "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "493bd30cacf2fdbea5cbf9b4837960183a364d6c74c3fac2261b189e4d73ee75",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/openai/gpt-oss-120b?blobs=true"
+  },
+  {
+    "repository": "openai/gpt-oss-120b",
+    "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "92b0408cf5dce04e4c5e4e5f2be0361da710d3650baefd7d7519badd1c687919",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/README.md"
+  },
+  {
+    "repository": "openai/gpt-oss-120b",
+    "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "933aeb666a3fd851133ddd7686414f369bc564c4185fb5704416550879f10566",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/openai/gpt-oss-120b/raw/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json"
+  },
+  {
+    "repository": "openai/gpt-oss-20b",
+    "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "135ce7eb57bf529b3b8e851b45c9416346dac44bcb2697f8846cf3d8e1af673e",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/openai/gpt-oss-20b?blobs=true"
+  },
+  {
+    "repository": "openai/gpt-oss-20b",
+    "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "03c2fcf292549176757b85c911e7dcf527aef3e4241d64b6caec94af3ecf3ac2",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/README.md"
+  },
+  {
+    "repository": "openai/gpt-oss-20b",
+    "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "3a2a26ded679375b7928ddeca59764df7cea83220c1961035f6d6e232659e9ce",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/openai/gpt-oss-20b/raw/6cee5e81ee83917806bbde320786a8fb61efebee/config.json"
+  },
+  {
+    "repository": "zai-org/GLM-4.7-Flash",
+    "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+    "sourceType": "model",
+    "file": "meta.json",
+    "sha256": "bfac4ae865573895d591bcb5efd7170c80047aeb98a17d5b5487cec28a7df679",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/api/models/zai-org/GLM-4.7-Flash?blobs=true"
+  },
+  {
+    "repository": "zai-org/GLM-4.7-Flash",
+    "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+    "sourceType": "model",
+    "file": "README.md",
+    "sha256": "7bfcbced42741ceb3fff8809f8d6c84ada9696850e257c4e53e6c2fe9ef4f9bf",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md"
+  },
+  {
+    "repository": "zai-org/GLM-4.7-Flash",
+    "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+    "sourceType": "model",
+    "file": "config.json",
+    "sha256": "dc9b97c7c9bed726a2e6939da4234d5c43abb3edec8812068c9a1af1dbc13acb",
+    "retrievedOn": "2026-09-15",
+    "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/raw/7dd20894a642a0aa287e9827cb1a1f7f91386b67/config.json"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ollama/ollama",
+    "revision": "v0.34.0",
+    "file": "README.md",
+    "sha256": "09c456b8f3e2fca486f6961e07494f424ec6f998cfd0b23ebde099bc028a47de",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ollama/ollama/v0.34.0/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ollama/ollama",
+    "revision": "v0.34.0",
+    "file": "LICENSE",
+    "sha256": "5934ed2ce0d15154bcdb9c85203210abac0da4314af34081e36df4599f90b226",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ollama/ollama/v0.34.0/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ollama/ollama",
+    "revision": "v0.34.0",
+    "file": "release.json",
+    "sha256": "8ddbdff282db28e6e8d1d595bde16dbf2c5ff6086223abc62691c62cdfb00188",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/ollama/ollama/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "vllm-project/vllm",
+    "revision": "v0.29.0",
+    "file": "README.md",
+    "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "vllm-project/vllm",
+    "revision": "v0.29.0",
+    "file": "LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "vllm-project/vllm",
+    "revision": "v0.29.0",
+    "file": "release.json",
+    "sha256": "ab3383adf12e31d8788ecd8220a702dba13e6b960690e4cb87e07c49854a2698",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/vllm-project/vllm/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "sgl-project/sglang",
+    "revision": "v0.5.19",
+    "file": "README.md",
+    "sha256": "ee6908559f95fe54c3f6773ed23e163d76c984f4750445830a343eac6edca1d0",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/sgl-project/sglang/v0.5.19/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "sgl-project/sglang",
+    "revision": "v0.5.19",
+    "file": "LICENSE",
+    "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/sgl-project/sglang/v0.5.19/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "sgl-project/sglang",
+    "revision": "v0.5.19",
+    "file": "release.json",
+    "sha256": "06835ca6b72b488b0434dfb67232aa7edbaf969d4eca1f7cf933c43d2f462488",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/sgl-project/sglang/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ggml-org/llama.cpp",
+    "revision": "v0.4.1",
+    "file": "README.md",
+    "sha256": "e58520857253729851cc02313883c9d2a8b2ae86abe212aaf1bcbd7db8bfefb4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v0.4.1/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ggml-org/llama.cpp",
+    "revision": "v0.4.1",
+    "file": "LICENSE",
+    "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v0.4.1/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ggml-org/llama.cpp",
+    "revision": "v0.4.1",
+    "file": "release.json",
+    "sha256": "77d726fdb1d501aba0c1bb9c744f7560d8d635429077e8bd910c26cab084ca49",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "README.md",
+    "sha256": "74b02ba52916a913ee099daaba4ba2a58f5f8720b3c010f68f9520366d54baf7",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "LICENSE",
+    "sha256": "5d8f6f1a2f855c68a273674d6a3925c6349d7632d0864d089b46f94d8ea76eff",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "release.json",
+    "sha256": "e811c3b1482f022f1366a05e4f72b8faed55c541e6a2078f91c6c32c0b32d6ad",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "triton-inference-server/server",
+    "revision": "v2.72.0",
+    "file": "README.md",
+    "sha256": "4f47e0db8ef89ec053020e182f404df136006d9fb3bbb714c156e7ee1b0565a3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/triton-inference-server/server/v2.72.0/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "triton-inference-server/server",
+    "revision": "v2.72.0",
+    "file": "LICENSE",
+    "sha256": "179f37347fde9030609578b02539af12bc66b39c291de1c30d8525c6cd390036",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/triton-inference-server/server/v2.72.0/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "triton-inference-server/server",
+    "revision": "v2.72.0",
+    "file": "release.json",
+    "sha256": "a34c9f984c5d6e9e41bafce3948f78e0bb43a61af3652739613b7d312b8e597b",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/triton-inference-server/server/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-embeddings-inference",
+    "revision": "v1.9.3",
+    "file": "README.md",
+    "sha256": "bf7dbea87d507cfb507e16eb0c44d06cfd2f98733795f44a4fa41a872acb81a1",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/text-embeddings-inference/v1.9.3/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-embeddings-inference",
+    "revision": "v1.9.3",
+    "file": "LICENSE",
+    "sha256": "28216184827860ae83a60244c8868de4cf84e16357d16cdb975a46afe3afa9db",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/text-embeddings-inference/v1.9.3/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-embeddings-inference",
+    "revision": "v1.9.3",
+    "file": "release.json",
+    "sha256": "ee32c4ca7356e504df49a830fad81f3f0da414d6ffd3a33e6a19ea79e02205c5",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/huggingface/text-embeddings-inference/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "lyogavin/airllm",
+    "revision": "v4.0.0",
+    "file": "README.md",
+    "sha256": "2facb013ead201affe8bebba19f0e848c8ae8c58511fd3d0130becdbc99503b8",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/lyogavin/airllm/v4.0.0/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "lyogavin/airllm",
+    "revision": "v4.0.0",
+    "file": "LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/lyogavin/airllm/v4.0.0/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "lyogavin/airllm",
+    "revision": "v4.0.0",
+    "file": "release.json",
+    "sha256": "e151e143b2903c8d436819d89f6570088e93287edb149ec1775b37f9abf17de2",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/lyogavin/airllm/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/transformers",
+    "revision": "v5.17.0",
+    "file": "README.md",
+    "sha256": "9f745fda7e49125b047e41f99ff1bf67b1c092c34c61bdfda1c3460feaa95382",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/transformers",
+    "revision": "v5.17.0",
+    "file": "LICENSE",
+    "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/transformers",
+    "revision": "v5.17.0",
+    "file": "release.json",
+    "sha256": "4d08ac38c974f9e8e5b677c63663ebb90c0f5b4f15fdb264d17697e95e58b50f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/huggingface/transformers/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "BerriAI/litellm",
+    "revision": "v1.101.0",
+    "file": "README.md",
+    "sha256": "ca3f7884775ae73f5dda9adeb45e8d24f5d652f102fde6cd8b95fb1c22e6fce3",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/v1.101.0/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "BerriAI/litellm",
+    "revision": "v1.101.0",
+    "file": "LICENSE",
+    "sha256": "b170d6bf8e8835dd357e011681db028f4d51e2fb0ea892058f56e01fb39b8273",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/v1.101.0/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "BerriAI/litellm",
+    "revision": "v1.101.0",
+    "file": "release.json",
+    "sha256": "6b858fb46858219bb9459aa636202ced78c1e883fe6978c091a99f0ff85437cb",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/BerriAI/litellm/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "open-webui/open-webui",
+    "revision": "v0.11.3",
+    "file": "README.md",
+    "sha256": "a486231a68444cee15339ea050fe07e5e1b9b0812abcadecab5749304a81a244",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/open-webui/open-webui/v0.11.3/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "open-webui/open-webui",
+    "revision": "v0.11.3",
+    "file": "LICENSE",
+    "sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/open-webui/open-webui/v0.11.3/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "open-webui/open-webui",
+    "revision": "v0.11.3",
+    "file": "release.json",
+    "sha256": "f6124459a1500c7183581c10c28647df058d843eadb9ff3f1c7282916a832e77",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/open-webui/open-webui/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-generation-inference",
+    "revision": "v3.3.7",
+    "file": "README.md",
+    "sha256": "cc6b8a68200acc247cbd1d3cf5ca6c54b5b043040cc6193b58ff16afd80ee040",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/text-generation-inference/v3.3.7/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-generation-inference",
+    "revision": "v3.3.7",
+    "file": "LICENSE",
+    "sha256": "28216184827860ae83a60244c8868de4cf84e16357d16cdb975a46afe3afa9db",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/text-generation-inference/v3.3.7/LICENSE"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-generation-inference",
+    "revision": "v3.3.7",
+    "file": "release.json",
+    "sha256": "d6ea0096e24f7e441961e35ae9bdaa4dce9cee2c8b3de63afa10a77d384566b0",
+    "retrievedOn": "2026-09-15",
+    "url": "https://api.github.com/repos/huggingface/text-generation-inference/releases/latest"
+  },
+  {
+    "sourceType": "software",
+    "repository": "vllm-project/vllm",
+    "revision": "v0.29.0",
+    "file": "docs/serving/online_serving/openai_compatible_server.md",
+    "sha256": "cb91181078b4ba06fd4dbd4dbfe4f29ac703f7d73edef063cb6090acae940e2f",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/docs/serving/online_serving/openai_compatible_server.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "docs/source/commands/trtllm-serve/run-benchmark-with-trtllm-serve.md",
+    "sha256": "677ef7531e53df969ab4c5361285ccd5e54e936a340770899764f054cfaa5e63",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/docs/source/commands/trtllm-serve/run-benchmark-with-trtllm-serve.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "docs/source/features/disagg-serving.md",
+    "sha256": "2b0926cfbdcdfdebd4490bb95ca0db7116bcdb329e8b23be8db3296e9b7c144a",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/docs/source/features/disagg-serving.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "docs/source/torch/auto_deploy/advanced/serving_with_trtllm_serve.md",
+    "sha256": "68b9e88c9ef761be34a2eeaa83f90cc376de3b03733a7114c6539306c637c73e",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/docs/source/torch/auto_deploy/advanced/serving_with_trtllm_serve.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "docs/source/commands/trtllm-serve/index.rst",
+    "sha256": "f21419f6430579babf141afa5e25b0f2926b07c158bc20af7b709bc3f4605363",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/docs/source/commands/trtllm-serve/index.rst"
+  },
+  {
+    "sourceType": "software",
+    "repository": "NVIDIA/TensorRT-LLM",
+    "revision": "v1.2.1",
+    "file": "docs/source/commands/trtllm-serve/trtllm-serve.rst",
+    "sha256": "257f7592d22abf2923e59ee3f0ffe30ccbea565c7c47faeb6fa4f81ada324d89",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/docs/source/commands/trtllm-serve/trtllm-serve.rst"
+  },
+  {
+    "sourceType": "software",
+    "repository": "sgl-project/sglang",
+    "revision": "v0.5.19",
+    "file": "docs/docs/developer_guide/bench_serving.mdx",
+    "sha256": "c1030a38d539345ad295444b26de9a3f2520f049e187a355a14ee0b0300893c7",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/sgl-project/sglang/v0.5.19/docs/docs/developer_guide/bench_serving.mdx"
+  },
+  {
+    "sourceType": "software",
+    "repository": "sgl-project/sglang",
+    "revision": "v0.5.19",
+    "file": "docs/docs/basic_usage/openai_api_completions.mdx",
+    "sha256": "006e39cd95bc26b60ba5d7fc88727586265adc78784820ae5648e21cbf1fec3d",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/sgl-project/sglang/v0.5.19/docs/docs/basic_usage/openai_api_completions.mdx"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/text-generation-inference",
+    "revision": "main",
+    "file": "README.md",
+    "sha256": "cc6b8a68200acc247cbd1d3cf5ca6c54b5b043040cc6193b58ff16afd80ee040",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/text-generation-inference/main/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ggml-org/llama.cpp",
+    "revision": "v0.4.1",
+    "file": "tools/server/README.md",
+    "sha256": "57e27013809e4976e71a76fe83a5930779634401d6dbdf2d941fd5432889eb9e",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v0.4.1/tools/server/README.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/transformers",
+    "revision": "v5.17.0",
+    "file": "docs/source/en/serve-cli/serving.md",
+    "sha256": "a61463db77a34979afc7ebf2161706f05011d024330612dfcb66276788f1fcc4",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/docs/source/en/serve-cli/serving.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "huggingface/transformers",
+    "revision": "v5.17.0",
+    "file": "docs/source/ko/serving.md",
+    "sha256": "3787f0c9db7f70399b80a53b47612db365ad017410528555f13c8f0229647895",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/docs/source/ko/serving.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ollama/ollama",
+    "revision": "v0.34.0",
+    "file": "docs/api.md",
+    "sha256": "469b874b7c32e407114cc4024d48eb607e3c6793e70edf98d35b294acffe4878",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ollama/ollama/v0.34.0/docs/api.md"
+  },
+  {
+    "sourceType": "software",
+    "repository": "ollama/ollama",
+    "revision": "v0.34.0",
+    "file": "docs/faq.mdx",
+    "sha256": "7fc6dd6825f927e7e9e41f4b0d3e58b979d3c03cb29783f697fdc79a1c07a4d1",
+    "retrievedOn": "2026-09-15",
+    "url": "https://raw.githubusercontent.com/ollama/ollama/v0.34.0/docs/faq.mdx"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://lmstudio.ai/download",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://lmstudio.ai/changelog/lmstudio/lmstudio-v0.4.24",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://lmstudio.ai/docs/developer",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://lmstudio.ai/terms",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://lmstudio.ai/docs/developer/openai-compat/chat-completions",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://lmstudio.ai/docs/developer/openai-compat/embeddings",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  },
+  {
+    "sourceType": "software-public-page",
+    "url": "https://github.com/huggingface/text-generation-inference",
+    "retrievedOn": "2026-09-15",
+    "revision": null,
+    "sha256": null,
+    "retrievalMethod": "web page read; raw page not bundled; current rather than commit-pinned"
+  }
+]

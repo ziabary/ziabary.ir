@@ -1,0 +1,3166 @@
+[
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "task-embedding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-task-embedding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "queueing",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-queueing"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "concurrency",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-concurrency"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "model-load-unload",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-model-load-unload"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "multi-model",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-multi-model"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "cpu-gpu-offload",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-cpu-gpu-offload"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "multi-gpu-sharding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-multi-gpu-sharding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "streaming",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-streaming"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "structured-output",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-structured-output"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "tool-use",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-ollama-tool-use"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "continuous-batching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-continuous-batching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "prefix-caching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-prefix-caching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "speculative-decoding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-speculative-decoding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "multi-gpu-sharding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-multi-gpu-sharding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "streaming",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-streaming"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "structured-output",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-structured-output"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "tool-use",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-tool-use"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "parser-selection",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-vllm-parser-selection"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:vllm-v0-29-0",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "task-embedding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-task-embedding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "continuous-batching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-continuous-batching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "prefix-caching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-prefix-caching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "speculative-decoding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-speculative-decoding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "multi-gpu-sharding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-multi-gpu-sharding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "structured-output",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-sglang-structured-output"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:sglang-v0-5-19",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "task-embedding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-task-embedding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "task-reranking",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-task-reranking"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "concurrency",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-concurrency"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "continuous-batching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-continuous-batching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "speculative-decoding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-speculative-decoding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "cpu-gpu-offload",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-cpu-gpu-offload"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "kv-cache-offload",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-kv-cache-offload"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "structured-output",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-structured-output"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "tool-use",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-tool-use"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "monitoring",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-monitoring"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "metrics",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-metrics"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "health-check",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-health-check"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "authentication",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-llama-cpp-authentication"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:llama-cpp-v0-4-1",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tensorrt-llm-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "continuous-batching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tensorrt-llm-continuous-batching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "prefix-caching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tensorrt-llm-prefix-caching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "speculative-decoding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tensorrt-llm-speculative-decoding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "multi-gpu-sharding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tensorrt-llm-multi-gpu-sharding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tensorrt-llm-v1-2-1",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "task-generation",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "concurrency",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-triton-concurrency"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "multi-model",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-triton-multi-model"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "monitoring",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-triton-monitoring"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "metrics",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-triton-metrics"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:triton-v2-72-0",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "task-generation",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "task-embedding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tei-task-embedding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "task-reranking",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tei-task-reranking"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "task-classification",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tei-task-classification"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "monitoring",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tei-monitoring"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "metrics",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tei-metrics"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tei-v1-9-3",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-airllm-task-generation"
+    ],
+    "note": "مسیر generate برای معماری پشتیبانی‌شده و نسخهٔ وابستگی صحیح؛ inference فقط، آموزش خارج از دامنهٔ این بسته."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "layer-wise-loading",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-airllm-layer-wise-loading"
+    ],
+    "note": "فقط معماری‌های مشخص و وابستگی‌های سازگار در Supported Models؛ وزن و فضای تبدیل باید در دیسک/رم موجود باشد."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:airllm-v4-0-0",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-transformers-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "task-classification",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-transformers-task-classification"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "continuous-batching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-transformers-continuous-batching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:transformers-v5-17-0",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "external-component",
+    "evidenceIds": [
+      "evidence:software-litellm-task-generation"
+    ],
+    "note": "ارسال درخواست به provider/backend پیکربندی‌شده؛ LiteLLM موتور محاسبهٔ وزن مدل نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "monitoring",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-litellm-monitoring"
+    ],
+    "note": "LiteLLM Proxy و پیکربندی ذخیره‌سازی/گزارش‌گیری لازم؛ تفکیک امکانات enterprise حفظ شود."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "authentication",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-litellm-authentication"
+    ],
+    "note": "LiteLLM Proxy؛ این قابلیت به صورت خودکار امنیت backend را تضمین نمی‌کند."
+  },
+  {
+    "softwareReleaseId": "software-release:litellm-v1-101-0",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "external-component",
+    "evidenceIds": [
+      "evidence:software-open-webui-task-generation"
+    ],
+    "note": "backend محلی یا خارجی مانند Ollama/vLLM؛ Open WebUI خودش موتور اجرای وزن‌ها نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "authentication",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-open-webui-authentication"
+    ],
+    "note": "پیکربندی احراز هویت و نقش‌ها مطابق این انتشار؛ امنیت backend جداست."
+  },
+  {
+    "softwareReleaseId": "software-release:open-webui-v0-11-3",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "task-generation",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-task-generation"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "continuous-batching",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-continuous-batching"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "model-load-unload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "speculative-decoding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-speculative-decoding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "multi-gpu-sharding",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-multi-gpu-sharding"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "streaming",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-streaming"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "structured-output",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-structured-output"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "monitoring",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-monitoring"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "metrics",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-tgi-metrics"
+    ],
+    "note": "مدل، معماری، runtime و تنظیمات لازم باید مطابق مستندات همین نسخه انتخاب شوند؛ هنوز deployment مشخصی آزموده نشده است."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:tgi-v3-3-7",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "task-generation",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "task-embedding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "task-reranking",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "task-classification",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "queueing",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "concurrency",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "continuous-batching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "admission-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "model-load-unload",
+    "status": "conditional",
+    "provision": "native",
+    "evidenceIds": [
+      "evidence:software-lm-studio-release"
+    ],
+    "note": "مدل و backend سازگار؛ انتشار 0.4.24 Build 1."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "multi-model",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "cold-start-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "prefix-caching",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "speculative-decoding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "cpu-gpu-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "kv-cache-offload",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "layer-wise-loading",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "multi-gpu-sharding",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "independent-replicas",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "streaming",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "structured-output",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "tool-use",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "reasoning-control",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "model-template-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "parser-selection",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "monitoring",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "metrics",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "health-check",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "authentication",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  },
+  {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "capability": "rate-limiting",
+    "status": "not-reviewed",
+    "provision": null,
+    "evidenceIds": [],
+    "note": "نبود شاهد به معنی نبود قابلیت نیست."
+  }
+]

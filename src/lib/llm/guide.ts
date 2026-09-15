@@ -1,3 +1,4 @@
+import { llmDataset, llmDatasetUpdatedOn } from './data/repository.v1';
 import type { GuideCollection } from '$lib/guides';
 import type {
   ApplicationTaxon,
@@ -10,19 +11,19 @@ import type {
 export const llmGuideCollection: GuideCollection = {
   slug: 'llm',
   status: 'draft',
-  title: 'انتخاب مدل زبانی؛ از کاربرد تا سخت‌افزار و هزینه',
-  subtitle: 'مقایسهٔ مدل، مسیر اجرا، ظرفیت سرویس و هزینه بر پایهٔ سناریو و شاهد.',
+  featured: true,
+  title: 'راهنمای انتخاب مدل زبانی',
+  subtitle: 'از کاربرد تا سخت‌افزار و کارایی؛ مقایسهٔ مدل‌ها و ابزارهای اجرا بر پایهٔ منابع منتشرشده.',
   eyebrow: 'پیش‌نویس · مدل و استنتاج',
   image: '/images/guides/llm.png',
-  imageAlt: 'لایه‌های مدل زبانی، سناریوی کاربرد، موتور اجرا، سخت‌افزار و هزینه',
-  intro: 'این مجموعه انتخاب را از مسئله و سخت‌افزار موجود آغاز می‌کند و مدل، کیفیت، حافظه، پاسخ‌گویی، ظرفیت و هزینه را در یک زنجیرهٔ قابل‌ممیزی کنار هم می‌گذارد.',
+  imageAlt: 'مدل‌های زبانی در اندازه‌های مختلف، متصل به کاربردهای گفت‌وگو، کدنویسی و کار با اسناد',
+  intro: 'این راهنما از مستندات سازندگان، نتایج منتشرشده و جمع‌بندی فنی استفاده می‌کند؛ شرایط و منابع هر مورد در جزئیات آمده است.',
   items: [
     { id: 'model-catalog', title: 'شناسنامهٔ مدل‌ها', subtitle: '', kind: 'interactive', href: '#model-catalog' },
     { id: 'model-suitability', title: 'تناسب مدل با کاربرد', subtitle: '', kind: 'interactive', href: '#model-suitability' },
     { id: 'hardware-feasibility', title: 'امکان اجرا روی سخت‌افزار', subtitle: '', kind: 'interactive', href: '#hardware-feasibility' },
     { id: 'serving-software', title: 'نرم‌افزارهای اجرا و سرویس‌دهی', subtitle: '', kind: 'interactive', href: '#serving-software' },
     { id: 'benchmarks', title: 'بنچمارک و شواهد', subtitle: '', kind: 'interactive', href: '#benchmarks' },
-    { id: 'economics', title: 'مقایسهٔ اقتصادی سناریوها', subtitle: '', kind: 'interactive', href: '#economics' },
     { id: 'specialized-models', title: 'مدل‌های کوچک و تخصصی مکمل', subtitle: '', kind: 'interactive', href: '#specialized-models' }
   ]
 };
@@ -96,7 +97,7 @@ export const applications: ApplicationTaxon[] = [
 /** Candidate taxonomy only; an option here is not a verified model row. */
 export const modelFamilyCandidates = [
   'Qwen', 'DeepSeek', 'Aya / Cohere', 'Gemma', 'Llama', 'Mistral', 'GLM',
-  'gpt-oss', 'Phi', 'Granite', 'Nemotron', 'OLMo', 'Kimi', 'MiniMax'
+  'gpt-oss', 'Phi', 'Granite', 'Nemotron', 'OLMo', 'Kimi', 'MiniMax', 'SmolLM', 'BGE', 'E5'
 ] as const;
 
 /**
@@ -105,11 +106,11 @@ export const modelFamilyCandidates = [
  * separate filter and field.
  */
 export const guideParameterBands = [
-  { id: 'under-3b', label: 'کمتر از ۳B', minInclusive: 0, maxExclusive: 3 },
-  { id: '3b-to-under-9b', label: 'از ۳B تا کمتر از ۹B', minInclusive: 3, maxExclusive: 9 },
-  { id: '9b-to-under-30b', label: 'از ۹B تا کمتر از ۳۰B', minInclusive: 9, maxExclusive: 30 },
-  { id: '30b-to-under-70b', label: 'از ۳۰B تا کمتر از ۷۰B', minInclusive: 30, maxExclusive: 70 },
-  { id: '70b-and-more', label: '۷۰B و بیشتر', minInclusive: 70, maxExclusive: null }
+  { id: 'under-3b', label: 'کمتر از ۳ میلیارد', minInclusive: 0, maxExclusive: 3 },
+  { id: '3b-to-under-9b', label: 'از ۳ میلیارد تا کمتر از ۹ میلیارد', minInclusive: 3, maxExclusive: 9 },
+  { id: '9b-to-under-30b', label: 'از ۹ میلیارد تا کمتر از ۳۰ میلیارد', minInclusive: 9, maxExclusive: 30 },
+  { id: '30b-to-under-70b', label: 'از ۳۰ میلیارد تا کمتر از ۷۰ میلیارد', minInclusive: 30, maxExclusive: 70 },
+  { id: '70b-and-more', label: '۷۰ میلیارد و بیشتر', minInclusive: 70, maxExclusive: null }
 ] as const;
 
 export const engineCandidates = ['vLLM', 'SGLang', 'llama.cpp', 'Transformers', 'AirLLM'] as const;
@@ -210,6 +211,12 @@ export const parallelismCandidates = [
 
 export const existingContentLinks: ExistingContentLink[] = [
   {
+    id: 'rag-cag-kag-fine-tuning-instruction-tuning',
+    title: 'RAG، CAG، KAG، Fine-tuning و Instruction tuning؛ چه تفاوتی دارند و کدام را انتخاب کنیم؟',
+    href: '/articles/rag-cag-kag-fine-tuning-instruction-tuning/',
+    roles: ['view-concept', 'guide-overview']
+  },
+  {
     id: 'gpu-types-for-ai', title: 'انواع پردازنده‌های گرافیکی برای هوش مصنوعی',
     href: '/articles/gpu-types-for-ai/', roles: ['planned-article', 'guide-overview']
   },
@@ -266,11 +273,11 @@ export const existingContentLinks: ExistingContentLink[] = [
   },
   {
     id: 'national-ai-platform', title: 'پیکان مجهز به هوش مصنوعی مدل ۱۴۰۴ تحویل فوری!',
-    href: '/articles/national-ai-platform/', roles: ['planned-article', 'guide-overview']
+    href: '/articles/national-ai-platform/', roles: ['planned-article']
   },
   {
     id: 'zero-trust-ai-principles-and-controls', title: 'اصول و کنترل‌های عملی هوش مصنوعی بدون اعتماد',
-    href: '/articles/zero-trust-ai-principles-and-controls/', roles: ['planned-article', 'guide-overview']
+    href: '/articles/zero-trust-ai-principles-and-controls/', roles: ['planned-article']
   },
   {
     id: 'ztai-indirect-data-access', title: 'وقتی انسان داده را نمی‌بیند؛ آیا واقعاً دسترسی او حذف شده است؟',
@@ -278,11 +285,11 @@ export const existingContentLinks: ExistingContentLink[] = [
   },
   {
     id: 'mlops-foundation-of-zero-trust-ai', title: 'MLOps؛ بستر پیاده‌سازی هوش مصنوعی بدون اعتماد',
-    href: '/articles/mlops-foundation-of-zero-trust-ai/', roles: ['planned-article', 'guide-overview']
+    href: '/articles/mlops-foundation-of-zero-trust-ai/', roles: ['planned-article']
   },
   {
     id: 'ai-infrastructure-security-starts-with-kernel-and-gpu', title: 'امنیت زیرساخت هوش مصنوعی از کرنل و GPU آغاز می‌شود',
-    href: '/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/', roles: ['planned-article', 'view-concept', 'guide-overview']
+    href: '/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/', roles: ['planned-article', 'view-concept']
   },
   {
     id: 'targoman-transformer-update', title: 'موتور ترجمه ماشینی ترگمان به‌روز شد',
@@ -290,21 +297,19 @@ export const existingContentLinks: ExistingContentLink[] = [
   }
 ];
 
+/** Hand-picked reading links: each published article explains a concept in that view. */
 export const viewRelatedContent: Record<string, Array<{ contentId: string; anchorId?: string }>> = {
   'model-catalog': [
-    { contentId: 'int8-or-fp8-real-gpu-support', anchorId: 'تغییر-قالب-و-ارزیابی-کیفیت' },
-    { contentId: 'national-ai-platform' }
+    { contentId: 'int8-or-fp8-real-gpu-support', anchorId: 'حافظه-وزن-ها-تمام-حافظه-مورد-نیاز-نیست' }
   ],
   'model-suitability': [
-    { contentId: 'choosing-gpu-for-ai' },
-    { contentId: 'targoman-transformer-update' }
+    { contentId: 'rag-cag-kag-fine-tuning-instruction-tuning' }
   ],
   'hardware-feasibility': [
-    { contentId: 'gpu-types-for-ai' },
+    { contentId: 'int8-or-fp8-real-gpu-support', anchorId: 'حافظه-وزن-ها-تمام-حافظه-مورد-نیاز-نیست' },
     { contentId: 'pcie-gpu-server-selection', anchorId: 'cpu-ram-ذخیره-سازی-و-شبکه-را-از-روی-جریان-داده-انتخاب-کنید' }
   ],
   'software-products': [
-    { contentId: 'mlops-foundation-of-zero-trust-ai' },
     { contentId: 'gpu-inference-latency-throughput', anchorId: 'چه-ظرفیتی-واقعا-قابل-فروش-یا-استفاده-است' }
   ],
   'deployment-compatibility': [
@@ -313,23 +318,27 @@ export const viewRelatedContent: Record<string, Array<{ contentId: string; ancho
   ],
   benchmarks: [
     { contentId: 'gpu-inference-latency-throughput', anchorId: 'وقتی-می-گوییم-سریع-چه-چیزی-را-اندازه-می-گیریم' },
-    { contentId: 'pcie-vs-sxm-for-ai' }
+    { contentId: 'int8-or-fp8-real-gpu-support', anchorId: 'تغییر-قالب-و-ارزیابی-کیفیت' }
   ],
-  economics: [
-    { contentId: 'choosing-gpu-for-ai' },
-    { contentId: 'gpu-inference-latency-throughput', anchorId: 'چه-ظرفیتی-واقعا-قابل-فروش-یا-استفاده-است' }
-  ],
-  'specialized-models': [
-    { contentId: 'ztai-indirect-data-access' },
-    { contentId: 'targoman-transformer-update' }
-  ]
+  'specialized-models': []
+};
+
+/** Planned articles link to their writing-plan entries, never to an unwritten article route. */
+export const viewPlannedArticles: Record<string, string[]> = {
+  'model-catalog': ['total-vs-active-model-parameters', 'right-model-size-for-the-task', 'open-weight-open-source-commercial-model-licenses'],
+  'model-suitability': ['right-model-size-for-the-task', 'enterprise-rag-model-embedding-reranker', 'code-completion-assistant-and-agent', 'evaluating-language-models-for-persian'],
+  'hardware-feasibility': ['llms-on-rtx-4090-24gb-vs-48gb', 'which-deepseek-on-personal-gpu', 'airllm-layer-wise-inference'],
+  'software-products': ['ollama-vllm-sglang-or-llama-cpp', 'model-engine-api-and-chat-ui-roles', 'single-user-to-enterprise-llm-serving'],
+  'deployment-compatibility': ['four-bit-model-quantization', 'airllm-layer-wise-inference', 'ollama-vllm-sglang-or-llama-cpp'],
+  benchmarks: ['single-user-to-enterprise-llm-serving', 'ollama-vllm-sglang-or-llama-cpp'],
+  'specialized-models': ['enterprise-rag-model-embedding-reranker', 'right-model-size-for-the-task', 'evaluating-language-models-for-persian']
 };
 
 export const plannedArticles: PlannedArticle[] = [
   {
     id: 'planned-article:right-model-size', slug: 'right-model-size-for-the-task', order: 1, status: 'planned',
-    title: 'برای این کار واقعاً چه اندازه مدلی لازم داریم؟ از مدل تخصصی و SLM تا LLM',
-    relatedContentIds: ['choosing-gpu-for-ai', 'gpu-types-for-ai', 'targoman-transformer-update']
+    title: 'برای هر کاربرد واقعاً چه اندازه مدلی لازم داریم؟ از مدل تخصصی و SLM تا LLM',
+    relatedContentIds: []
   },
   {
     id: 'planned-article:total-vs-active-parameters', slug: 'total-vs-active-model-parameters', order: 2, status: 'planned',
@@ -360,17 +369,17 @@ export const plannedArticles: PlannedArticle[] = [
   {
     id: 'planned-article:enterprise-rag-model-stack', slug: 'enterprise-rag-model-embedding-reranker', order: 6, status: 'planned',
     title: 'برای دستیار اسناد سازمانی، مدل زبانی، embedding و reranker را چگونه انتخاب کنیم؟',
-    relatedContentIds: ['ztai-indirect-data-access', 'zero-trust-ai-principles-and-controls', 'mlops-foundation-of-zero-trust-ai']
+    relatedContentIds: []
   },
   {
     id: 'planned-article:coding-model-needs', slug: 'code-completion-assistant-and-agent', order: 7, status: 'planned',
     title: 'تکمیل کد، دستیار کد و عامل برنامه‌نویسی؛ سه نیاز با سه معیار انتخاب',
-    relatedContentIds: ['national-ai-platform', 'gpu-inference-latency-throughput', 'zero-trust-ai-principles-and-controls']
+    relatedContentIds: []
   },
   {
     id: 'planned-article:evaluating-persian-models', slug: 'evaluating-language-models-for-persian', order: 8, status: 'planned',
     title: 'مدل خوب برای فارسی را چگونه بسنجیم؟',
-    relatedContentIds: ['targoman-transformer-update', 'choosing-gpu-for-ai']
+    relatedContentIds: []
   },
   {
     id: 'planned-article:which-deepseek', slug: 'which-deepseek-on-personal-gpu', order: 9, status: 'planned',
@@ -391,12 +400,12 @@ export const plannedArticles: PlannedArticle[] = [
   {
     id: 'planned-article:model-licenses', slug: 'open-weight-open-source-commercial-model-licenses', order: 12, status: 'planned',
     title: 'وزن‌باز، متن‌باز و قابل‌استفادهٔ تجاری؛ مجوز مدل چه اثری بر انتخاب دارد؟',
-    relatedContentIds: ['national-ai-platform', 'mlops-foundation-of-zero-trust-ai', 'ai-infrastructure-security-starts-with-kernel-and-gpu']
+    relatedContentIds: []
   },
   {
     id: 'planned-article:serving-software-selection', slug: 'ollama-vllm-sglang-or-llama-cpp', order: 13, status: 'planned',
     title: 'Ollama، vLLM، SGLang یا llama.cpp؛ برای اجرای مدل کدام را انتخاب کنیم؟',
-    relatedContentIds: ['gpu-inference-latency-throughput', 'gpu-server-platform-components', 'mlops-foundation-of-zero-trust-ai'],
+    relatedContentIds: ['gpu-inference-latency-throughput', 'gpu-server-platform-components'],
     conceptLinks: [
       { contentId: 'gpu-inference-latency-throughput', anchorId: 'چه-ظرفیتی-واقعا-قابل-فروش-یا-استفاده-است' },
       { contentId: 'gpu-server-platform-components', anchorId: 'حافظه-سیستم' }
@@ -405,19 +414,11 @@ export const plannedArticles: PlannedArticle[] = [
   {
     id: 'planned-article:serving-stack-roles', slug: 'model-engine-api-and-chat-ui-roles', order: 14, status: 'planned',
     title: 'مدل، موتور اجرا، API و رابط چت؛ هرکدام چه نقشی در سرویس هوش مصنوعی دارند؟',
-    relatedContentIds: ['mlops-foundation-of-zero-trust-ai', 'zero-trust-ai-principles-and-controls', 'ztai-indirect-data-access'],
-    conceptLinks: [
-      { contentId: 'ztai-indirect-data-access' },
-      { contentId: 'mlops-foundation-of-zero-trust-ai' }
-    ]
+    relatedContentIds: []
   }
 ];
 
-/** Empty by design until reviewed comparative content is entered. */
-export const llmRepository: LlmGuideRepository = {
-  families: [], models: [], artifacts: [], softwareProducts: [], softwareReleases: [], engines: [],
-  servingStacks: [], deploymentConfigurations: [], softwareCapabilities: [], apiCompatibility: [],
-  hardwareConfigurations: [], workloads: [], qualityEvaluations: [], applicationAssessments: [],
-  executionFeasibility: [], deploymentCompatibility: [], benchmarkRuns: [], costScenarios: [],
-  specializedAssessments: [], claims: [], evidence: []
-};
+/** Research snapshot 0.3.0; draft-only catalog, without local deployment measurements. */
+export const llmRepository: LlmGuideRepository = llmDataset;
+
+export { llmDatasetUpdatedOn };

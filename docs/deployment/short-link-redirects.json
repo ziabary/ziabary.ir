@@ -90,6 +90,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=adcpa",
+    "destination": "https://ziabary.ir/articles/data-confidentiality-public-apis/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aderp",
     "destination": "https://ziabary.ir/articles/data-ecosystem-regulation-players/",
     "status": 301,
@@ -282,6 +288,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=arckftit",
+    "destination": "https://ziabary.ir/articles/rag-cag-kag-fine-tuning-instruction-tuning/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=asmwad",
     "destination": "https://ziabary.ir/articles/seventy-million-words-a-day/",
     "status": 301,
@@ -336,6 +348,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=azdmewra",
+    "destination": "https://ziabary.ir/articles/ztai-data-model-engineering-without-raw-access/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=azida",
     "destination": "https://ziabary.ir/articles/ztai-indirect-data-access/",
     "status": 301,
@@ -368,6 +386,12 @@
   {
     "source": "https://ziabary.ir/?t=eacgfae",
     "destination": "https://ziabary.ir/en/articles/choosing-gpu-for-ai-en/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eadcpae",
+    "destination": "https://ziabary.ir/en/articles/data-confidentiality-public-apis-en/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -452,6 +476,12 @@
   {
     "source": "https://ziabary.ir/?t=eapvsfae",
     "destination": "https://ziabary.ir/en/articles/pcie-vs-sxm-for-ai-en/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=earckftite",
+    "destination": "https://ziabary.ir/en/articles/rag-cag-kag-fine-tuning-instruction-tuning-en/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -696,6 +726,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=eadcpae2",
+    "destination": "https://ziabary.ir/es/articles/data-confidentiality-public-apis-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=eadasgse2",
     "destination": "https://ziabary.ir/es/articles/dgx-and-standard-gpu-servers-es/",
     "status": 301,
@@ -746,6 +782,12 @@
   {
     "source": "https://ziabary.ir/?t=eapvsfae2",
     "destination": "https://ziabary.ir/es/articles/pcie-vs-sxm-for-ai-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=earckftite2",
+    "destination": "https://ziabary.ir/es/articles/rag-cag-kag-fine-tuning-instruction-tuning-es/",
     "status": 301,
     "preserveQueryString": false
   },

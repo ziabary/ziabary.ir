@@ -1,0 +1,184 @@
+[
+  {
+    "id": "bge",
+    "path": "/images/llm/brands/bge.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1664511063789-632c234f42c386ebd2710434.png",
+    "publisherPage": "https://huggingface.co/BAAI",
+    "verifiedOn": "2026-09-15",
+    "sha256": "d2d367e981a7db51a4ae0576d1db3c10963cecfcfb4b50de36e3dd11e5063db8"
+  },
+  {
+    "id": "cohere",
+    "path": "/images/llm/brands/cohere.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1678549441248-5e70f6048ce3c604d78fe133.png",
+    "publisherPage": "https://huggingface.co/CohereLabs",
+    "verifiedOn": "2026-09-15",
+    "sha256": "254d48df339ba25e3e499a79272037157ac4762fd40ba0119789d257d0593003"
+  },
+  {
+    "id": "smollm",
+    "path": "/images/llm/brands/smollm.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/651e96991b97c9f33d26bde6/e4VK7uW5sTeCYupD0s_ob.png",
+    "publisherPage": "https://huggingface.co/HuggingFaceTB",
+    "verifiedOn": "2026-09-15",
+    "sha256": "911349a57721ca8b3921cd5c5971f543a917f81eee7bd47e9f9c29da55e786d2"
+  },
+  {
+    "id": "qwen",
+    "path": "/images/llm/brands/qwen.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6215ca5692c0ecfba9186921/hrRM50-6XcdWgg2AKpENG.jpeg",
+    "publisherPage": "https://huggingface.co/Qwen",
+    "verifiedOn": "2026-09-15",
+    "sha256": "0c74f4f564ec24d5fd552b63efd43a9a85214ab4f6c7951e53c0d4328e5967d0"
+  },
+  {
+    "id": "olmo",
+    "path": "/images/llm/brands/olmo.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/652db071b62cf1f8463221e2/CxxwFiaomTa1MCX_B7-pT.png",
+    "publisherPage": "https://huggingface.co/allenai",
+    "verifiedOn": "2026-09-15",
+    "sha256": "044ff8965799a955a4586cb85f8aac3e355b3b95132bd067153cf488ac07c7ed"
+  },
+  {
+    "id": "deepseek",
+    "path": "/images/llm/brands/deepseek.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6538815d1bdb3c40db94fbfa/xMBly9PUMphrFVMxLX4kq.png",
+    "publisherPage": "https://huggingface.co/deepseek-ai",
+    "verifiedOn": "2026-09-15",
+    "sha256": "4cd5dd62104f4bfa1caa6bfa3a13e06b1577d24ea03bfd1e78e4c5aea8ceed9f"
+  },
+  {
+    "id": "gemma",
+    "path": "/images/llm/brands/gemma.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png",
+    "publisherPage": "https://huggingface.co/google",
+    "verifiedOn": "2026-09-15",
+    "sha256": "edc0c5c2cfc7c55342343b5d5da24fe18a4deb2f70655082155c9fae3716aa36"
+  },
+  {
+    "id": "granite",
+    "path": "/images/llm/brands/granite.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/639bcaa2445b133a4e942436/CEW-OjXkRkDNmTxSu8Egh.png",
+    "publisherPage": "https://huggingface.co/ibm-granite",
+    "verifiedOn": "2026-09-15",
+    "sha256": "b4c42cc14b9475ef087b9f6b69d4a1187ea9ae9d2e5d99815fa273ae1297816f"
+  },
+  {
+    "id": "llama",
+    "path": "/images/llm/brands/llama.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/646cf8084eefb026fb8fd8bc/oCTqufkdTkjyGodsx1vo1.png",
+    "publisherPage": "https://huggingface.co/meta-llama",
+    "verifiedOn": "2026-09-15",
+    "sha256": "b202ff7373a9f14706f9cd4afd55cbb4c513e0f53763675dd93552693a623bf8"
+  },
+  {
+    "id": "phi",
+    "path": "/images/llm/brands/phi.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png",
+    "publisherPage": "https://huggingface.co/microsoft",
+    "verifiedOn": "2026-09-15",
+    "sha256": "0013ee76ef5510baab75c1c1517c2b6cc9f5997eb043d1c10f9b863267580584"
+  },
+  {
+    "id": "mistral",
+    "path": "/images/llm/brands/mistral.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/634c17653d11eaedd88b314d/9OgyfKstSZtbmsmuG8MbU.png",
+    "publisherPage": "https://huggingface.co/mistralai",
+    "verifiedOn": "2026-09-15",
+    "sha256": "a3c07c1b431ee7e2038ab8a6d5b29ba366bc74aaf6ff30a4b32379efc9ab96ad"
+  },
+  {
+    "id": "glm",
+    "path": "/images/llm/brands/glm.webp",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62dc173789b4cf157d36ebee/i_pxzM2ZDo3Ub-BEgIkE9.png",
+    "publisherPage": "https://huggingface.co/zai-org",
+    "verifiedOn": "2026-09-15",
+    "sha256": "4e99514652b98edf65295a07269125e6eab777df376623c2e5ab1ce7d58ba72b"
+  },
+  {
+    "id": "ollama",
+    "path": "/images/llm/brands/ollama.png",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/151674099?v=4&s=128",
+    "publisherPage": "https://github.com/ollama",
+    "verifiedOn": "2026-09-15",
+    "sha256": "8fc899fce843126415f8501b8634ff2f4ccbcba32571c48ee0b882090ca4aefb"
+  },
+  {
+    "id": "llama-cpp",
+    "path": "/images/llm/brands/llama-cpp.jpg",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/134263123?v=4&s=128",
+    "publisherPage": "https://github.com/ggml-org",
+    "verifiedOn": "2026-09-15",
+    "sha256": "1f1409d0b644c35557d67679e749eb8534997b520b170e1aa91f3fe2b36d4bc6"
+  },
+  {
+    "id": "litellm",
+    "path": "/images/llm/brands/litellm.png",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/121462774?v=4&s=128",
+    "publisherPage": "https://github.com/BerriAI",
+    "verifiedOn": "2026-09-15",
+    "sha256": "ea6e49a17bafa18e79d1ebb7972e89e7a2334dbebe86ca4d31a39fa5a0971541"
+  },
+  {
+    "id": "open-webui",
+    "path": "/images/llm/brands/open-webui.png",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/158137808?v=4&s=128",
+    "publisherPage": "https://github.com/open-webui",
+    "verifiedOn": "2026-09-15",
+    "sha256": "989a32d51a81aa928dbef1c4f2313d1e5642ea9107f58b5a0be709005df58705"
+  },
+  {
+    "id": "lm-studio",
+    "path": "/images/llm/brands/lm-studio.png",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/133744619?v=4&s=128",
+    "publisherPage": "https://github.com/lmstudio-ai",
+    "verifiedOn": "2026-09-15",
+    "sha256": "79b209410bcf2a5a64efabdafc498f068861605ba129da100c4b8fe864557ed2"
+  },
+  {
+    "id": "vllm",
+    "path": "/images/llm/brands/vllm.png",
+    "sourceUrl": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/assets/logos/vllm-logo-text-light.png",
+    "publisherPage": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/assets/logos/vllm-logo-text-light.png",
+    "verifiedOn": "2026-09-15",
+    "sha256": "9c2b6739a43f617990c7245cd574be9f785557364cd948d1afca11a8700fcba9"
+  },
+  {
+    "id": "sglang",
+    "path": "/images/llm/brands/sglang.png",
+    "sourceUrl": "https://raw.githubusercontent.com/sgl-project/sglang/main/assets/logo.png",
+    "publisherPage": "https://raw.githubusercontent.com/sgl-project/sglang/main/assets/logo.png",
+    "verifiedOn": "2026-09-15",
+    "sha256": "4af0b4cbf4fe9479c1fc3675e025f2752b67bd9a7c15a0003af11110c6ee4165"
+  },
+  {
+    "id": "airllm",
+    "path": "/images/llm/brands/airllm.png",
+    "sourceUrl": "https://raw.githubusercontent.com/lyogavin/airllm/main/assets/airllm_logo_sm.png",
+    "publisherPage": "https://raw.githubusercontent.com/lyogavin/airllm/main/assets/airllm_logo_sm.png",
+    "verifiedOn": "2026-09-15",
+    "sha256": "e1cd9b757ba78184a4666bc03fd6c3a76e86027710b7da40a075fbf797578868"
+  },
+  {
+    "id": "gpt-oss",
+    "path": "/images/llm/brands/gpt-oss.png",
+    "publisherPage": "https://huggingface.co/openai",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68783facef79a05727260de3/UPX5RQxiPGA-ZbBmArIKq.png",
+    "verifiedOn": "2026-09-15",
+    "sha256": "51767fd618f19941f3f2ae5a88c526ccc4ca874a0444226f09f6ab6da7346897"
+  },
+  {
+    "id": "nemotron",
+    "path": "/images/brands/nvidia.svg",
+    "publisherPage": "https://www.nvidia.com/",
+    "sourceNote": "نشان محلی NVIDIA موجود در راهنمای GPU؛ استفادهٔ مجدد برای نرم‌افزارهای NVIDIA و Nemotron."
+  },
+  {
+    "id": "huggingface",
+    "path": "/images/llm/brands/huggingface.svg",
+    "sourceUrl": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+    "publisherPage": "https://huggingface.co",
+    "verifiedOn": "2026-09-15",
+    "sha256": "3613c73f07ccae19118bfe6d2f8cd127183d08cf99468a708e090953e116ed0a"
+  }
+]

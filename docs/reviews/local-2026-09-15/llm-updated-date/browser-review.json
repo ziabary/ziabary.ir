@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "1440-dark.png",
+      "text": "۲۴ شهریور ۱۴۰۵",
+      "dateTime": "2026-09-15",
+      "inBounds": true,
+      "rtl": "rtl",
+      "overflow": false,
+      "stats": "۸۷ مدل\n۱۳ نرم‌افزار\n۷ جدول تعاملی\nآخرین به‌روزرسانی داده‌ها:\n۲۴ شهریور ۱۴۰۵"
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "1440-light.png",
+      "text": "۲۴ شهریور ۱۴۰۵",
+      "dateTime": "2026-09-15",
+      "inBounds": true,
+      "rtl": "rtl",
+      "overflow": false,
+      "stats": "۸۷ مدل\n۱۳ نرم‌افزار\n۷ جدول تعاملی\nآخرین به‌روزرسانی داده‌ها:\n۲۴ شهریور ۱۴۰۵"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "390-dark.png",
+      "text": "۲۴ شهریور ۱۴۰۵",
+      "dateTime": "2026-09-15",
+      "inBounds": true,
+      "rtl": "rtl",
+      "overflow": false,
+      "stats": "۸۷ مدل\n۱۳ نرم‌افزار\n۷ جدول تعاملی\nآخرین به‌روزرسانی داده‌ها:\n۲۴ شهریور ۱۴۰۵"
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "screenshot": "390-light.png",
+      "text": "۲۴ شهریور ۱۴۰۵",
+      "dateTime": "2026-09-15",
+      "inBounds": true,
+      "rtl": "rtl",
+      "overflow": false,
+      "stats": "۸۷ مدل\n۱۳ نرم‌افزار\n۷ جدول تعاملی\nآخرین به‌روزرسانی داده‌ها:\n۲۴ شهریور ۱۴۰۵"
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "320-dark.png",
+      "text": "۲۴ شهریور ۱۴۰۵",
+      "dateTime": "2026-09-15",
+      "inBounds": true,
+      "rtl": "rtl",
+      "overflow": false,
+      "stats": "۸۷ مدل\n۱۳ نرم‌افزار\n۷ جدول تعاملی\nآخرین به‌روزرسانی داده‌ها:\n۲۴ شهریور ۱۴۰۵"
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "screenshot": "320-light.png",
+      "text": "۲۴ شهریور ۱۴۰۵",
+      "dateTime": "2026-09-15",
+      "inBounds": true,
+      "rtl": "rtl",
+      "overflow": false,
+      "stats": "۸۷ مدل\n۱۳ نرم‌افزار\n۷ جدول تعاملی\nآخرین به‌روزرسانی داده‌ها:\n۲۴ شهریور ۱۴۰۵"
+    }
+  ],
+  "runtimeErrors": []
+}

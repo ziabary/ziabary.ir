@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "memory:qwen-qwen3-0-6b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-0-6b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 0.5955311357975006,
+    "kvGiB": 0.4375,
+    "singleGpuBudgetGiB": 3.0330311357975006,
+    "cpuRamBudgetGiB": 5.033031135797501,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-0-6b-gguf-files",
+      "qwen-qwen3-0-6b-config"
+    ],
+    "firstMemoryClassGiB": 4
+  },
+  {
+    "id": "memory:qwen-qwen3-0-6b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-0-6b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 0.5955311357975006,
+    "kvGiB": 0.875,
+    "singleGpuBudgetGiB": 3.4705311357975006,
+    "cpuRamBudgetGiB": 5.470531135797501,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-0-6b-gguf-files",
+      "qwen-qwen3-0-6b-config"
+    ],
+    "firstMemoryClassGiB": 4
+  },
+  {
+    "id": "memory:qwen-qwen3-0-6b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-0-6b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 0.5955311357975006,
+    "kvGiB": 3.5,
+    "singleGpuBudgetGiB": 6.095531135797501,
+    "cpuRamBudgetGiB": 8.0955311357975,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-0-6b-gguf-files",
+      "qwen-qwen3-0-6b-config"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:qwen-qwen3-0-6b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-0-6b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 0.5955311357975006,
+    "kvGiB": 7.0,
+    "singleGpuBudgetGiB": 9.5955311357975,
+    "cpuRamBudgetGiB": 11.5955311357975,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-0-6b-gguf-files",
+      "qwen-qwen3-0-6b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-1-7b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-1-7b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 1.708442360162735,
+    "kvGiB": 0.4375,
+    "singleGpuBudgetGiB": 4.145942360162735,
+    "cpuRamBudgetGiB": 6.145942360162735,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-1-7b-gguf-files",
+      "qwen-qwen3-1-7b-config"
+    ],
+    "firstMemoryClassGiB": 6
+  },
+  {
+    "id": "memory:qwen-qwen3-1-7b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-1-7b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 1.708442360162735,
+    "kvGiB": 0.875,
+    "singleGpuBudgetGiB": 4.583442360162735,
+    "cpuRamBudgetGiB": 6.583442360162735,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-1-7b-gguf-files",
+      "qwen-qwen3-1-7b-config"
+    ],
+    "firstMemoryClassGiB": 6
+  },
+  {
+    "id": "memory:qwen-qwen3-1-7b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-1-7b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 1.708442360162735,
+    "kvGiB": 3.5,
+    "singleGpuBudgetGiB": 7.208442360162735,
+    "cpuRamBudgetGiB": 9.208442360162735,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-1-7b-gguf-files",
+      "qwen-qwen3-1-7b-config"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:qwen-qwen3-1-7b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-1-7b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 1.708442360162735,
+    "kvGiB": 7.0,
+    "singleGpuBudgetGiB": 10.708442360162735,
+    "cpuRamBudgetGiB": 12.708442360162735,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-1-7b-gguf-files",
+      "qwen-qwen3-1-7b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 2.3257734775543213,
+    "kvGiB": 0.5625,
+    "singleGpuBudgetGiB": 4.888273477554321,
+    "cpuRamBudgetGiB": 6.888273477554321,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 6
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 2.3257734775543213,
+    "kvGiB": 1.125,
+    "singleGpuBudgetGiB": 5.450773477554321,
+    "cpuRamBudgetGiB": 7.450773477554321,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 6
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 2.3257734775543213,
+    "kvGiB": 4.5,
+    "singleGpuBudgetGiB": 8.825773477554321,
+    "cpuRamBudgetGiB": 10.825773477554321,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 2.3257734775543213,
+    "kvGiB": 9.0,
+    "singleGpuBudgetGiB": 13.325773477554321,
+    "cpuRamBudgetGiB": 15.325773477554321,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 3.9864375293254852,
+    "kvGiB": 0.5625,
+    "singleGpuBudgetGiB": 6.548937529325485,
+    "cpuRamBudgetGiB": 8.548937529325485,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 3.9864375293254852,
+    "kvGiB": 1.125,
+    "singleGpuBudgetGiB": 7.111437529325485,
+    "cpuRamBudgetGiB": 9.111437529325485,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 3.9864375293254852,
+    "kvGiB": 4.5,
+    "singleGpuBudgetGiB": 10.486437529325485,
+    "cpuRamBudgetGiB": 12.486437529325485,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-4b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-4b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 3.9864375293254852,
+    "kvGiB": 9.0,
+    "singleGpuBudgetGiB": 14.986437529325485,
+    "cpuRamBudgetGiB": 16.986437529325485,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-4b-gguf-files",
+      "qwen-qwen3-4b-config"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.682488262653351,
+    "kvGiB": 0.5625,
+    "singleGpuBudgetGiB": 7.244988262653351,
+    "cpuRamBudgetGiB": 9.24498826265335,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.682488262653351,
+    "kvGiB": 1.125,
+    "singleGpuBudgetGiB": 7.807488262653351,
+    "cpuRamBudgetGiB": 9.80748826265335,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.682488262653351,
+    "kvGiB": 4.5,
+    "singleGpuBudgetGiB": 11.18248826265335,
+    "cpuRamBudgetGiB": 13.18248826265335,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.682488262653351,
+    "kvGiB": 9.0,
+    "singleGpuBudgetGiB": 15.68248826265335,
+    "cpuRamBudgetGiB": 17.68248826265335,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.111370831727982,
+    "kvGiB": 0.5625,
+    "singleGpuBudgetGiB": 10.673870831727982,
+    "cpuRamBudgetGiB": 12.673870831727982,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.111370831727982,
+    "kvGiB": 1.125,
+    "singleGpuBudgetGiB": 11.236370831727982,
+    "cpuRamBudgetGiB": 13.236370831727982,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.111370831727982,
+    "kvGiB": 4.5,
+    "singleGpuBudgetGiB": 14.611370831727982,
+    "cpuRamBudgetGiB": 16.61137083172798,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:qwen-qwen3-8b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-8b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.111370831727982,
+    "kvGiB": 9.0,
+    "singleGpuBudgetGiB": 19.11137083172798,
+    "cpuRamBudgetGiB": 21.11137083172798,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-8b-gguf-files",
+      "qwen-qwen3-8b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.383535742759705,
+    "kvGiB": 0.625,
+    "singleGpuBudgetGiB": 11.008535742759705,
+    "cpuRamBudgetGiB": 13.008535742759705,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.383535742759705,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 11.633535742759705,
+    "cpuRamBudgetGiB": 13.633535742759705,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.383535742759705,
+    "kvGiB": 5.0,
+    "singleGpuBudgetGiB": 15.383535742759705,
+    "cpuRamBudgetGiB": 17.383535742759705,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.383535742759705,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 20.383535742759705,
+    "cpuRamBudgetGiB": 22.383535742759705,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.620398849248886,
+    "kvGiB": 0.625,
+    "singleGpuBudgetGiB": 17.245398849248886,
+    "cpuRamBudgetGiB": 19.245398849248886,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.620398849248886,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 17.870398849248886,
+    "cpuRamBudgetGiB": 19.870398849248886,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.620398849248886,
+    "kvGiB": 5.0,
+    "singleGpuBudgetGiB": 21.620398849248886,
+    "cpuRamBudgetGiB": 23.620398849248886,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-14b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-14b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.620398849248886,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 26.620398849248886,
+    "cpuRamBudgetGiB": 28.620398849248886,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-14b-gguf-files",
+      "qwen-qwen3-14b-config"
+    ],
+    "firstMemoryClassGiB": 32
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 17.282260417938232,
+    "kvGiB": 0.375,
+    "singleGpuBudgetGiB": 19.657260417938232,
+    "cpuRamBudgetGiB": 21.657260417938232,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 17.282260417938232,
+    "kvGiB": 0.75,
+    "singleGpuBudgetGiB": 20.032260417938232,
+    "cpuRamBudgetGiB": 22.032260417938232,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 17.282260417938232,
+    "kvGiB": 3.0,
+    "singleGpuBudgetGiB": 22.282260417938232,
+    "cpuRamBudgetGiB": 24.282260417938232,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 17.282260417938232,
+    "kvGiB": 6.0,
+    "singleGpuBudgetGiB": 25.282260417938232,
+    "cpuRamBudgetGiB": 27.282260417938232,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 32
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 30.253018856048584,
+    "kvGiB": 0.375,
+    "singleGpuBudgetGiB": 32.628018856048584,
+    "cpuRamBudgetGiB": 34.628018856048584,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 30.253018856048584,
+    "kvGiB": 0.75,
+    "singleGpuBudgetGiB": 33.003018856048584,
+    "cpuRamBudgetGiB": 35.003018856048584,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 30.253018856048584,
+    "kvGiB": 3.0,
+    "singleGpuBudgetGiB": 35.253018856048584,
+    "cpuRamBudgetGiB": 37.253018856048584,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-30b-a3b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-30b-a3b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 30.253018856048584,
+    "kvGiB": 6.0,
+    "singleGpuBudgetGiB": 38.253018856048584,
+    "cpuRamBudgetGiB": 40.253018856048584,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-30b-a3b-gguf-files",
+      "qwen-qwen3-30b-a3b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.404935508966446,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 21.404935508966446,
+    "cpuRamBudgetGiB": 23.404935508966446,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.404935508966446,
+    "kvGiB": 2.0,
+    "singleGpuBudgetGiB": 22.404935508966446,
+    "cpuRamBudgetGiB": 24.404935508966446,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.404935508966446,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 28.404935508966446,
+    "cpuRamBudgetGiB": 30.404935508966446,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 32
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.404935508966446,
+    "kvGiB": 16.0,
+    "singleGpuBudgetGiB": 36.404935508966446,
+    "cpuRamBudgetGiB": 38.404935508966446,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42652761936188,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 35.42652761936188,
+    "cpuRamBudgetGiB": 37.42652761936188,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42652761936188,
+    "kvGiB": 2.0,
+    "singleGpuBudgetGiB": 36.42652761936188,
+    "cpuRamBudgetGiB": 38.42652761936188,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42652761936188,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 42.42652761936188,
+    "cpuRamBudgetGiB": 44.42652761936188,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:qwen-qwen3-32b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:qwen-qwen3-32b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42652761936188,
+    "kvGiB": 16.0,
+    "singleGpuBudgetGiB": 50.42652761936188,
+    "cpuRamBudgetGiB": 52.42652761936188,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "qwen-qwen3-32b-gguf-files",
+      "qwen-qwen3-32b-config"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020461678505,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 42.85020461678505,
+    "cpuRamBudgetGiB": 44.85020461678505,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020461678505,
+    "kvGiB": 2.5,
+    "singleGpuBudgetGiB": 44.10020461678505,
+    "cpuRamBudgetGiB": 46.10020461678505,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020461678505,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 51.60020461678505,
+    "cpuRamBudgetGiB": 53.60020461678505,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020461678505,
+    "kvGiB": 20.0,
+    "singleGpuBudgetGiB": 61.60020461678505,
+    "cpuRamBudgetGiB": 63.60020461678505,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.82595831155777,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 73.07595831155777,
+    "cpuRamBudgetGiB": 75.07595831155777,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.82595831155777,
+    "kvGiB": 2.5,
+    "singleGpuBudgetGiB": 74.32595831155777,
+    "cpuRamBudgetGiB": 76.32595831155777,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.82595831155777,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 81.82595831155777,
+    "cpuRamBudgetGiB": 83.82595831155777,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 96
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.82595831155777,
+    "kvGiB": 20.0,
+    "singleGpuBudgetGiB": 91.82595831155777,
+    "cpuRamBudgetGiB": 93.82595831155777,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 96
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.370829969644547,
+    "kvGiB": 0.75,
+    "singleGpuBudgetGiB": 11.120829969644547,
+    "cpuRamBudgetGiB": 13.120829969644547,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.370829969644547,
+    "kvGiB": 1.5,
+    "singleGpuBudgetGiB": 11.870829969644547,
+    "cpuRamBudgetGiB": 13.870829969644547,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.370829969644547,
+    "kvGiB": 6.0,
+    "singleGpuBudgetGiB": 16.370829969644547,
+    "cpuRamBudgetGiB": 18.370829969644547,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 8.370829969644547,
+    "kvGiB": 12.0,
+    "singleGpuBudgetGiB": 22.370829969644547,
+    "cpuRamBudgetGiB": 24.370829969644547,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.623252302408218,
+    "kvGiB": 0.75,
+    "singleGpuBudgetGiB": 17.37325230240822,
+    "cpuRamBudgetGiB": 19.37325230240822,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.623252302408218,
+    "kvGiB": 1.5,
+    "singleGpuBudgetGiB": 18.12325230240822,
+    "cpuRamBudgetGiB": 20.12325230240822,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.623252302408218,
+    "kvGiB": 6.0,
+    "singleGpuBudgetGiB": 22.62325230240822,
+    "cpuRamBudgetGiB": 24.62325230240822,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 14.623252302408218,
+    "kvGiB": 12.0,
+    "singleGpuBudgetGiB": 28.62325230240822,
+    "cpuRamBudgetGiB": 30.62325230240822,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 32
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.487997204065323,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 21.487997204065323,
+    "cpuRamBudgetGiB": 23.487997204065323,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.487997204065323,
+    "kvGiB": 2.0,
+    "singleGpuBudgetGiB": 22.487997204065323,
+    "cpuRamBudgetGiB": 24.487997204065323,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.487997204065323,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 28.487997204065323,
+    "cpuRamBudgetGiB": 30.487997204065323,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 32
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.487997204065323,
+    "kvGiB": 16.0,
+    "singleGpuBudgetGiB": 36.48799720406532,
+    "cpuRamBudgetGiB": 38.48799720406532,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42947566509247,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 35.42947566509247,
+    "cpuRamBudgetGiB": 37.42947566509247,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42947566509247,
+    "kvGiB": 2.0,
+    "singleGpuBudgetGiB": 36.42947566509247,
+    "cpuRamBudgetGiB": 38.42947566509247,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42947566509247,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 42.42947566509247,
+    "cpuRamBudgetGiB": 44.42947566509247,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 32.42947566509247,
+    "kvGiB": 16.0,
+    "singleGpuBudgetGiB": 50.42947566509247,
+    "cpuRamBudgetGiB": 52.42947566509247,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.36145207285881,
+    "kvGiB": 0.21875,
+    "singleGpuBudgetGiB": 6.58020207285881,
+    "cpuRamBudgetGiB": 8.58020207285881,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.36145207285881,
+    "kvGiB": 0.4375,
+    "singleGpuBudgetGiB": 6.79895207285881,
+    "cpuRamBudgetGiB": 8.79895207285881,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.36145207285881,
+    "kvGiB": 1.75,
+    "singleGpuBudgetGiB": 8.11145207285881,
+    "cpuRamBudgetGiB": 10.11145207285881,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.36145207285881,
+    "kvGiB": 3.5,
+    "singleGpuBudgetGiB": 9.86145207285881,
+    "cpuRamBudgetGiB": 11.86145207285881,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.5423392951488495,
+    "kvGiB": 0.21875,
+    "singleGpuBudgetGiB": 9.76108929514885,
+    "cpuRamBudgetGiB": 11.76108929514885,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.5423392951488495,
+    "kvGiB": 0.4375,
+    "singleGpuBudgetGiB": 9.97983929514885,
+    "cpuRamBudgetGiB": 11.97983929514885,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.5423392951488495,
+    "kvGiB": 1.75,
+    "singleGpuBudgetGiB": 11.29233929514885,
+    "cpuRamBudgetGiB": 13.29233929514885,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.5423392951488495,
+    "kvGiB": 3.5,
+    "singleGpuBudgetGiB": 13.04233929514885,
+    "cpuRamBudgetGiB": 15.04233929514885,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020691156387,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 42.85020691156387,
+    "cpuRamBudgetGiB": 44.85020691156387,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020691156387,
+    "kvGiB": 2.5,
+    "singleGpuBudgetGiB": 44.10020691156387,
+    "cpuRamBudgetGiB": 46.10020691156387,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020691156387,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 51.60020691156387,
+    "cpuRamBudgetGiB": 53.60020691156387,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 39.60020691156387,
+    "kvGiB": 20.0,
+    "singleGpuBudgetGiB": 61.60020691156387,
+    "cpuRamBudgetGiB": 63.60020691156387,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.8259608745575,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 73.0759608745575,
+    "cpuRamBudgetGiB": 75.0759608745575,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.8259608745575,
+    "kvGiB": 2.5,
+    "singleGpuBudgetGiB": 74.3259608745575,
+    "cpuRamBudgetGiB": 76.3259608745575,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 80
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.8259608745575,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 81.8259608745575,
+    "cpuRamBudgetGiB": 83.8259608745575,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 96
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 69.8259608745575,
+    "kvGiB": 20.0,
+    "singleGpuBudgetGiB": 91.8259608745575,
+    "cpuRamBudgetGiB": 93.8259608745575,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 96
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.5827955305576324,
+    "kvGiB": 0.5,
+    "singleGpuBudgetGiB": 7.0827955305576324,
+    "cpuRamBudgetGiB": 9.082795530557632,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.5827955305576324,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 7.5827955305576324,
+    "cpuRamBudgetGiB": 9.582795530557632,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-rag-32k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.5827955305576324,
+    "kvGiB": 4.0,
+    "singleGpuBudgetGiB": 10.582795530557632,
+    "cpuRamBudgetGiB": 12.582795530557632,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.5827955305576324,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 14.582795530557632,
+    "cpuRamBudgetGiB": 16.582795530557632,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.954217344522476,
+    "kvGiB": 0.5,
+    "singleGpuBudgetGiB": 10.454217344522476,
+    "cpuRamBudgetGiB": 12.454217344522476,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.954217344522476,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 10.954217344522476,
+    "cpuRamBudgetGiB": 12.954217344522476,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-rag-32k-1",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0",
+    "workloadId": "workload:rag-32k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.954217344522476,
+    "kvGiB": 4.0,
+    "singleGpuBudgetGiB": 13.954217344522476,
+    "cpuRamBudgetGiB": 15.954217344522476,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.954217344522476,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 17.954217344522476,
+    "cpuRamBudgetGiB": 19.954217344522476,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-32b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.440963238477707,
+    "kvGiB": 0.625,
+    "singleGpuBudgetGiB": 21.065963238477707,
+    "cpuRamBudgetGiB": 23.065963238477707,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-32b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.440963238477707,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 21.690963238477707,
+    "cpuRamBudgetGiB": 23.690963238477707,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 24
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-32b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 18.440963238477707,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 30.440963238477707,
+    "cpuRamBudgetGiB": 32.44096323847771,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 32
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-32b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 31.969405621290207,
+    "kvGiB": 0.625,
+    "singleGpuBudgetGiB": 34.59440562129021,
+    "cpuRamBudgetGiB": 36.59440562129021,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-32b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 31.969405621290207,
+    "kvGiB": 1.25,
+    "singleGpuBudgetGiB": 35.21940562129021,
+    "cpuRamBudgetGiB": 37.21940562129021,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-32b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-aya-expanse-32b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 31.969405621290207,
+    "kvGiB": 10.0,
+    "singleGpuBudgetGiB": 43.96940562129021,
+    "cpuRamBudgetGiB": 45.96940562129021,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-32b-GGUF-meta",
+      "bartowski-aya-expanse-32b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 48
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-8b-gguf-q4-k-m-chat-4k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q4-k-m",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.7096821665763855,
+    "kvGiB": 0.5,
+    "singleGpuBudgetGiB": 7.2096821665763855,
+    "cpuRamBudgetGiB": 9.209682166576385,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-8b-gguf-q4-k-m-chat-8k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q4-k-m",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.7096821665763855,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 7.7096821665763855,
+    "cpuRamBudgetGiB": 9.709682166576385,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 8
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-8b-gguf-q4-k-m-service-8k-8",
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q4-k-m",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 4.7096821665763855,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 14.709682166576385,
+    "cpuRamBudgetGiB": 16.709682166576385,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q4-k-m-header"
+    ],
+    "firstMemoryClassGiB": 16
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-8b-gguf-q8-0-chat-4k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q8-0",
+    "workloadId": "workload:chat-4k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.9544941782951355,
+    "kvGiB": 0.5,
+    "singleGpuBudgetGiB": 10.454494178295135,
+    "cpuRamBudgetGiB": 12.454494178295135,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-8b-gguf-q8-0-chat-8k-1",
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q8-0",
+    "workloadId": "workload:chat-8k-1",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.9544941782951355,
+    "kvGiB": 1.0,
+    "singleGpuBudgetGiB": 10.954494178295135,
+    "cpuRamBudgetGiB": 12.954494178295135,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 12
+  },
+  {
+    "id": "memory:bartowski-aya-expanse-8b-gguf-q8-0-service-8k-8",
+    "artifactId": "artifact:bartowski-aya-expanse-8b-gguf-q8-0",
+    "workloadId": "workload:service-8k-8",
+    "basis": "calculated-planning-budget",
+    "weightGiB": 7.9544941782951355,
+    "kvGiB": 8.0,
+    "singleGpuBudgetGiB": 17.954494178295135,
+    "cpuRamBudgetGiB": 19.954494178295135,
+    "memoryPolicyId": "memory-policy:gguf-fp16-kv-v1",
+    "sourceIds": [
+      "bartowski--aya-expanse-8b-GGUF-meta",
+      "bartowski-aya-expanse-8b-gguf-q8-0-header"
+    ],
+    "firstMemoryClassGiB": 24
+  }
+]

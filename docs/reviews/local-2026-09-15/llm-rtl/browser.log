@@ -1,0 +1,104 @@
+{
+  "phase": "after",
+  "checks": [
+    "Persian headers use RTL; 12 token values have the number on the right and the Persian unit on the left on one line; SVG close icons are centered. Sorting, hide and restore work.",
+    "390px and 320px layouts have no page/header overflow; dark/light themes pass; Enter closes the focused dialog button.",
+    "No browser runtime exceptions."
+  ],
+  "screenshots": [
+    "after-desktop-table.png",
+    "after-context-detail.png",
+    "after-desktop-table-sorted.png",
+    "after-desktop-profile.png",
+    "after-mobile-profile.png",
+    "after-mobile-table.png",
+    "after-mobile-table-light.png",
+    "after-mobile-320-table-light.png"
+  ],
+  "tokens": [
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۱۳۱٬۰۷۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۸٬۱۹۲ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۶۵٬۵۳۶ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۳۲٬۷۶۸ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۳۲٬۷۶۸ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    },
+    {
+      "text": "۳۲٬۷۶۸ توکن",
+      "rtl": "rtl",
+      "numberOnRight": true,
+      "inline": true,
+      "inCell": true
+    }
+  ]
+}

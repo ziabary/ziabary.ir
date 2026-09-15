@@ -1194,6 +1194,70 @@
       }
     ]
   },
+  "/images/articles/data-confidentiality-public-apis/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1648918,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/fda6c68ebe5da029-320.webp",
+        "bytes": 10930
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/fda6c68ebe5da029-640.webp",
+        "bytes": 29930
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/fda6c68ebe5da029-960.webp",
+        "bytes": 52094
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/fda6c68ebe5da029-1440.webp",
+        "bytes": 89146
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/fda6c68ebe5da029-1672.webp",
+        "bytes": 107650
+      }
+    ]
+  },
+  "/images/articles/data-confidentiality-public-apis/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 144174,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/f9a7c21d51d250c7-320.webp",
+        "bytes": 10848
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/f9a7c21d51d250c7-640.webp",
+        "bytes": 29598
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/f9a7c21d51d250c7-960.webp",
+        "bytes": 50714
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/f9a7c21d51d250c7-1440.webp",
+        "bytes": 85604
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/f9a7c21d51d250c7-1672.webp",
+        "bytes": 107324
+      }
+    ]
+  },
   "/images/articles/data-ecosystem-regulation-players/cover.webp": {
     "width": 1600,
     "height": 900,
@@ -2113,6 +2177,38 @@
       }
     ]
   },
+  "/images/articles/llms-on-rtx-4090-24gb-vs-48gb/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2259774,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/8dd877bbf0675bf5-320.webp",
+        "bytes": 15704
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/8dd877bbf0675bf5-640.webp",
+        "bytes": 48216
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/8dd877bbf0675bf5-960.webp",
+        "bytes": 91806
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/8dd877bbf0675bf5-1440.webp",
+        "bytes": 165066
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/8dd877bbf0675bf5-1672.webp",
+        "bytes": 205190
+      }
+    ]
+  },
   "/images/articles/longest-bachelors-degree/cover.jpg": {
     "width": 550,
     "height": 550,
@@ -2498,6 +2594,70 @@
         "width": 1672,
         "src": "/images/responsive/59556ff09f5d12ab-1672.webp",
         "bytes": 357306
+      }
+    ]
+  },
+  "/images/articles/rag-cag-kag-fine-tuning-instruction-tuning/cover.webp": {
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 75800,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/634005dee711f067-320.webp",
+        "bytes": 10986
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/634005dee711f067-640.webp",
+        "bytes": 29702
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/634005dee711f067-960.webp",
+        "bytes": 51798
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/634005dee711f067-1440.webp",
+        "bytes": 85982
+      },
+      {
+        "width": 1600,
+        "src": "/images/responsive/634005dee711f067-1600.webp",
+        "bytes": 87018
+      }
+    ]
+  },
+  "/images/articles/right-model-size-for-the-task/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1982459,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/89503f519202787e-320.webp",
+        "bytes": 10716
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/89503f519202787e-640.webp",
+        "bytes": 31510
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/89503f519202787e-960.webp",
+        "bytes": 61172
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/89503f519202787e-1440.webp",
+        "bytes": 113200
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/89503f519202787e-1672.webp",
+        "bytes": 140962
       }
     ]
   },
@@ -3209,6 +3369,70 @@
         "width": 1672,
         "src": "/images/responsive/bb516eaaf532c4b2-1672.webp",
         "bytes": 145092
+      }
+    ]
+  },
+  "/images/articles/ztai-data-model-engineering-without-raw-access/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1516809,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/43009a677aa7a5f9-320.webp",
+        "bytes": 8342
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/43009a677aa7a5f9-640.webp",
+        "bytes": 22562
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/43009a677aa7a5f9-960.webp",
+        "bytes": 39304
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/43009a677aa7a5f9-1440.webp",
+        "bytes": 66604
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/43009a677aa7a5f9-1672.webp",
+        "bytes": 81332
+      }
+    ]
+  },
+  "/images/articles/ztai-data-model-engineering-without-raw-access/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 81332,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/04c1f6e990aa473f-320.webp",
+        "bytes": 8350
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/04c1f6e990aa473f-640.webp",
+        "bytes": 22274
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/04c1f6e990aa473f-960.webp",
+        "bytes": 38300
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/04c1f6e990aa473f-1440.webp",
+        "bytes": 65066
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/04c1f6e990aa473f-1672.webp",
+        "bytes": 76622
       }
     ]
   },
@@ -8220,6 +8444,70 @@
       }
     ]
   },
+  "/images/llm/brands/sglang.png": {
+    "width": 2392,
+    "height": 728,
+    "originalBytes": 402692,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/4e98b164df983a1c-320.webp",
+        "bytes": 11600
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/4e98b164df983a1c-640.webp",
+        "bytes": 26500
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/4e98b164df983a1c-960.webp",
+        "bytes": 45004
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/4e98b164df983a1c-1440.webp",
+        "bytes": 78214
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/4e98b164df983a1c-1920.webp",
+        "bytes": 114994
+      }
+    ]
+  },
+  "/images/llm/brands/vllm.png": {
+    "width": 3000,
+    "height": 860,
+    "originalBytes": 89976,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/719257e656ba1ed5-320.webp",
+        "bytes": 2944
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/719257e656ba1ed5-640.webp",
+        "bytes": 5762
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/719257e656ba1ed5-960.webp",
+        "bytes": 8488
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/719257e656ba1ed5-1440.webp",
+        "bytes": 13260
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/719257e656ba1ed5-1920.webp",
+        "bytes": 19400
+      }
+    ]
+  },
   "/images/media-covers/cheragh-104121.jpg": {
     "width": 447,
     "height": 298,
@@ -8508,6 +8796,38 @@
       }
     ]
   },
+  "/images/news/ana-1082516.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 140304,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/f92871b6d4579e4e-320.webp",
+        "bytes": 15656
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/f92871b6d4579e4e-640.webp",
+        "bytes": 41570
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/f92871b6d4579e4e-960.webp",
+        "bytes": 74536
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/f92871b6d4579e4e-1440.webp",
+        "bytes": 125898
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/f92871b6d4579e4e-1672.webp",
+        "bytes": 144360
+      }
+    ]
+  },
   "/images/news/ecomotive-027.jpg": {
     "width": 1024,
     "height": 768,
@@ -8779,6 +9099,23 @@
         "width": 640,
         "src": "/images/responsive/5d85d63b93fe930d-640.webp",
         "bytes": 33390
+      }
+    ]
+  },
+  "/images/news/lcih-DdMdLLIqQao.jpg": {
+    "width": 640,
+    "height": 640,
+    "originalBytes": 32455,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/85d09c474eeebb0a-320.webp",
+        "bytes": 11182
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/85d09c474eeebb0a-640.webp",
+        "bytes": 24392
       }
     ]
   },
@@ -9344,6 +9681,33 @@
       }
     ]
   },
+  "/images/news/shahrara-442609.jpg": {
+    "width": 1200,
+    "height": 800,
+    "originalBytes": 118387,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e2b3f1c25c9dbd1e-320.webp",
+        "bytes": 14256
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e2b3f1c25c9dbd1e-640.webp",
+        "bytes": 39474
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e2b3f1c25c9dbd1e-960.webp",
+        "bytes": 71176
+      },
+      {
+        "width": 1200,
+        "src": "/images/responsive/e2b3f1c25c9dbd1e-1200.webp",
+        "bytes": 97354
+      }
+    ]
+  },
   "/images/news/tasnim-024.jpg": {
     "width": 800,
     "height": 557,
@@ -9417,6 +9781,50 @@
         "width": 1600,
         "src": "/images/responsive/bec43261aef21ba4-1600.webp",
         "bytes": 191144
+      }
+    ]
+  },
+  "/images/organizations/HoomasGov-dark.png": {
+    "width": 434,
+    "height": 405,
+    "originalBytes": 56259,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/762750182dc9b376-320.webp",
+        "bytes": 6454
+      },
+      {
+        "width": 434,
+        "src": "/images/responsive/762750182dc9b376-434.webp",
+        "bytes": 9556
+      }
+    ]
+  },
+  "/images/organizations/HoomasGov.png": {
+    "width": 1000,
+    "height": 1000,
+    "originalBytes": 221499,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/f636cec16eb192b9-320.webp",
+        "bytes": 14674
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/f636cec16eb192b9-640.webp",
+        "bytes": 40548
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/f636cec16eb192b9-960.webp",
+        "bytes": 76936
+      },
+      {
+        "width": 1000,
+        "src": "/images/responsive/f636cec16eb192b9-1000.webp",
+        "bytes": 74428
       }
     ]
   },

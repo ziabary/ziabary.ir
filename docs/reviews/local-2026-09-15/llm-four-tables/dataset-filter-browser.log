@@ -1,0 +1,22 @@
+{
+  SmolLM: 4,
+  BGE: 2,
+  E5: 1,
+  small: 9,
+  versions: { models: 60, software: 14 },
+  'model-version-filtered': 1,
+  'software-version-filtered': 1,
+  comparison: 'نیازمند اطلاعات بیشتر\n' +
+    '\n' +
+    'برای محاسبهٔ معتبر، داده یا شرایط مشترک بیشتری لازم است.\n' +
+    '\n' +
+    'نسبت: غیرفعال · رتبه‌بندی: غیرفعال · ادعای برتری: غیرفعال\n' +
+    '۱ تفاوت آشکار\n' +
+    '\n' +
+    'دادهٔ مشترک ناقص: workload، quality-floor، latency-target، معیار، واحد\n' +
+    '\n' +
+    'محدودیت‌ها: کاربرد کاندید بر پایهٔ شرح ناشر؛ حداقل کیفیت و عملکرد روی دادهٔ کاربر سنجیده نشده است.؛ از این ردیف توصیهٔ خرید GPU یا برتری مدل استخراج نشود.',
+  deployment: 0,
+  cardWithout: 0,
+  cardLinks: [ 'http://127.0.0.1:4189/guides/llm/?show-drafts=true' ]
+}

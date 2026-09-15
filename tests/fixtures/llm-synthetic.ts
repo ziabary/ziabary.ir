@@ -2,7 +2,7 @@
  * Clearly synthetic, test-only repository. This module is never imported by
  * src/ and therefore cannot become content or a public route.
  */
-import type { Datum, LlmGuideRepository, Money } from '../../src/lib/llm/schema';
+import type { Datum, LlmGuideRepository } from '../../src/lib/llm/schema';
 
 const evidenceId = 'evidence:synthetic-direct' as const;
 const derivedEvidenceId = 'evidence:synthetic-derived' as const;
@@ -13,10 +13,6 @@ function k<T, Unit extends string>(value: T, unit?: Unit): Datum<T, Unit> {
   return { state: 'known', value, ...(unit ? { unit } : {}), evidenceIds: [evidenceId] };
 }
 const missing = <T, Unit extends string = never>(state: 'unknown' | 'not-measured' | 'not-applicable'): Datum<T, Unit> => ({ state });
-const money = (amount: number, observedOn: string): Money => ({
-  amount, currency: 'SYN', market: 'synthetic-market', observedOn, evidenceIds: [evidenceId]
-});
-
 export const syntheticLlmRepository: LlmGuideRepository = {
   evidence: [
     {
@@ -40,6 +36,7 @@ export const syntheticLlmRepository: LlmGuideRepository = {
     id: 'claim:synthetic-total-parameters', subjectId: 'model:synthetic-generator', fieldPath: 'totalParametersB',
     value: 8, nature: 'publisher-report', scope: 'fixture test only', evidenceIds: [evidenceId]
   }],
+  artifactListings: [], modelProfiles: [], modelUseGuidance: [],
   families: [{ id: 'family:synthetic', name: 'خانوادهٔ مصنوعی', publisher: 'ناشر مصنوعی', aliases: ['Synthetic'], evidenceIds: [evidenceId] }],
   models: [
     {
@@ -72,6 +69,7 @@ export const syntheticLlmRepository: LlmGuideRepository = {
     weightPrecision: 'int4', activationPrecision: k('fp16'), size: k(4, 'GiB'), authority: 'third-party',
     artifactQualityEvaluationIds: ['quality:synthetic-artifact'], evidenceIds: [evidenceId]
   }],
+  publishedEvaluations: [],
   qualityEvaluations: [{
     id: 'quality:synthetic-artifact', modelVersionId: 'model:synthetic-generator', modelRevision: 'model-rev-test',
     artifactId: 'artifact:synthetic-generator-q4', artifactRevision: longArtifactRevision, dataset: 'Synthetic Persian Set',
@@ -253,21 +251,6 @@ export const syntheticLlmRepository: LlmGuideRepository = {
       peakVram: k(7, 'GiB'), peakRam: k(4, 'GiB'), energy: missing<number, 'J'>('not-measured'), warmup: k('1 request'),
       coldStart: k(2, 's'), steadyStateDuration: k(60, 's'), repetitions: k(3), qualityEvaluationId: 'quality:synthetic-artifact' as const,
       testedOn: '2026-09-15', publisher: 'Synthetic Test Lab', rawOutputUrl: k(`https://example.invalid/raw/${suffix}`), evidenceIds: [evidenceId]
-    }))
-  ],
-  costScenarios: [
-    ...(['a-hardware-a', 'b-hardware-a'] as const).map((suffix, index) => ({
-      id: `cost:synthetic-${suffix}` as const, name: `سناریوی هزینهٔ مصنوعی ${index + 1}`, deploymentConfigId: `deployment:synthetic-${suffix}` as const,
-      acquisitionMode: index ? 'rent' as const : 'purchase' as const,
-      qualityFloor: { metric: 'synthetic-score', minimum: 0.7, unit: 'score', evaluationId: 'quality:synthetic-artifact' as const },
-      latencyTargets: { ttft: k(500, 'ms') }, traffic: k(1000, 'request/month'), operatingHours: k(160, 'h/month'),
-      calculationBasisDate: '2026-09-01', priceInputs: [money(100 + index * 10, index ? '2026-08-20' : '2026-08-10')],
-      softwareLifecycleCosts: { initialSetup: k(money(10, '2026-08-10')), modelPreparation: k(money(2, '2026-08-10')), modelLoadOperations: k(money(1, '2026-08-10')), ongoingMaintenance: k(money(5, '2026-08-10')), supportingResources: k(money(3, '2026-08-10')) },
-      totalSystemCost: k(money(121 + index * 10, '2026-08-10')), operatingCost: k(money(8, '2026-08-10')),
-      utilization: k(50, 'percent'), redundancy: k('none'), calculationPeriod: k(1, 'month'),
-      licenseCost: { state: 'excluded-not-free' as const, note: 'fixture assumption', evidenceIds: [evidenceId] },
-      acceptedRequestCost: k(money(0.1 + index * 0.01, '2026-08-10')), tokenCost: missing<Money>('not-measured'), tokenCostDefinition: 'synthetic accepted output token',
-      tco: k(money(129 + index * 10, '2026-08-10')), breakEvenPoint: missing<number, 'request'>('not-measured'), evidenceIds: [evidenceId, derivedEvidenceId]
     }))
   ],
   specializedAssessments: [{

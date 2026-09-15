@@ -1,0 +1,25 @@
+{
+  "wordCountApproximate": 3267,
+  "tables": [
+    {
+      "columns": 5,
+      "dataRows": 9
+    },
+    {
+      "columns": 3,
+      "dataRows": 3
+    },
+    {
+      "columns": 3,
+      "dataRows": 5
+    }
+  ],
+  "modelRecords": 9,
+  "quantizedMemoryCalculations": 8,
+  "articleSlug": "llms-on-rtx-4090-24gb-vs-48gb",
+  "draft": true,
+  "internalArticleLinks": 8,
+  "arithmeticChecks": "passed",
+  "tableStructureChecks": "passed",
+  "liveDeployment": false
+}

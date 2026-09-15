@@ -1,0 +1,272 @@
+[
+  {
+    "id": "v03-planning-5e860ef7df6e6f65",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/raw/31b70e2e869a7173562077fd711b654946d38674/config.json",
+    "title": "HuggingFaceTB/SmolLM2-1.7B-Instruct — memory planning specification",
+    "publisher": "Hugging Face",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-53fdf76bbe607b27",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF?blobs=true",
+    "title": "HuggingFaceTB/SmolLM2-1.7B-Instruct — memory planning specification",
+    "publisher": "HuggingFaceTB",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-7dab6476353ac322",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/raw/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json",
+    "title": "HuggingFaceTB/SmolLM2-135M-Instruct — memory planning specification",
+    "publisher": "Hugging Face",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-8e26b4395631595d",
+    "url": "https://huggingface.co/api/models/bartowski/SmolLM2-135M-Instruct-GGUF?blobs=true",
+    "title": "HuggingFaceTB/SmolLM2-135M-Instruct — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-7a890ff46e80323d",
+    "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/raw/a10cc1512eabd3dde888204e902eca88bddb4951/config.json",
+    "title": "HuggingFaceTB/SmolLM2-360M-Instruct — memory planning specification",
+    "publisher": "Hugging Face",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-18706798b1ea1ca5",
+    "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-360M-Instruct-GGUF?blobs=true",
+    "title": "HuggingFaceTB/SmolLM2-360M-Instruct — memory planning specification",
+    "publisher": "HuggingFaceTB",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-a741640d4d1da99d",
+    "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/raw/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+    "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct — memory planning specification",
+    "publisher": "Qwen / Alibaba Cloud",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-0ee810b7aac3ad46",
+    "url": "https://huggingface.co/api/models/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF?blobs=true",
+    "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct — memory planning specification",
+    "publisher": "unsloth",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-c72c57134034d735",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/raw/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/config.json",
+    "title": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B — memory planning specification",
+    "publisher": "DeepSeek",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-5db930a67eb01f09",
+    "url": "https://huggingface.co/api/models/bartowski/deepseek-ai_DeepSeek-R1-0528-Qwen3-8B-GGUF?blobs=true",
+    "title": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-cbbe5b842306de32",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/raw/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/config.json",
+    "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B — memory planning specification",
+    "publisher": "DeepSeek",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-70f1ed61aa45e7a2",
+    "url": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF?blobs=true",
+    "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-63282a2e0b08bc95",
+    "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/raw/707f574c62054322f6b5b04b6d075f0a8f05e0f0/config.json",
+    "title": "ibm-granite/granite-3.3-2b-instruct — memory planning specification",
+    "publisher": "IBM",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-699815c128188e4b",
+    "url": "https://huggingface.co/api/models/ibm-granite/granite-3.3-2b-instruct-GGUF?blobs=true",
+    "title": "ibm-granite/granite-3.3-2b-instruct — memory planning specification",
+    "publisher": "ibm-granite",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-2158b265bab61965",
+    "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/raw/cfbefacb99257ffa30c83adab238a50856ac3083/config.json",
+    "title": "microsoft/Phi-4-mini-instruct — memory planning specification",
+    "publisher": "Microsoft",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-ced2e5744936c13b",
+    "url": "https://huggingface.co/api/models/bartowski/microsoft_Phi-4-mini-instruct-GGUF?blobs=true",
+    "title": "microsoft/Phi-4-mini-instruct — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-c78dc2331f4abb82",
+    "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/raw/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json",
+    "title": "mistralai/Mistral-7B-Instruct-v0.3 — memory planning specification",
+    "publisher": "Mistral AI",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-5dfe41dfa9a464dd",
+    "url": "https://huggingface.co/api/models/bartowski/Mistral-7B-Instruct-v0.3-GGUF?blobs=true",
+    "title": "mistralai/Mistral-7B-Instruct-v0.3 — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-475fc381828641e0",
+    "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/raw/ac9c66cc9b46af7306746a9250f23d47083d689e/config.json",
+    "title": "Qwen/Qwen3-235B-A22B-Instruct-2507 — memory planning specification",
+    "publisher": "Qwen / Alibaba Cloud",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-c179c1ece0f8fc98",
+    "url": "https://huggingface.co/api/models/bartowski/Qwen_Qwen3-235B-A22B-Instruct-2507-GGUF?blobs=true",
+    "title": "Qwen/Qwen3-235B-A22B-Instruct-2507 — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-a263969d106f5f7a",
+    "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/raw/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/config.json",
+    "title": "Qwen/Qwen3-Coder-480B-A35B-Instruct — memory planning specification",
+    "publisher": "Qwen / Alibaba Cloud",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-62176c481d6fa446",
+    "url": "https://huggingface.co/api/models/bartowski/Qwen_Qwen3-Coder-480B-A35B-Instruct-GGUF?blobs=true",
+    "title": "Qwen/Qwen3-Coder-480B-A35B-Instruct — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-ec9523bbb243f69a",
+    "url": "https://huggingface.co/microsoft/phi-4/raw/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/config.json",
+    "title": "microsoft/phi-4 — memory planning specification",
+    "publisher": "Microsoft",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-c3e1fae67797b9ab",
+    "url": "https://huggingface.co/api/models/bartowski/phi-4-GGUF?blobs=true",
+    "title": "microsoft/phi-4 — memory planning specification",
+    "publisher": "bartowski",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-5eaca01a0f04c507",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/raw/c03e6d358207e414f1eca0bb1891e29f1db0e242/config.json",
+    "title": "Qwen/Qwen2.5-Coder-7B-Instruct — memory planning specification",
+    "publisher": "Qwen / Alibaba Cloud",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-1d783e6b352f4d81",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF?blobs=true",
+    "title": "Qwen/Qwen2.5-Coder-7B-Instruct — memory planning specification",
+    "publisher": "Qwen",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-d9254d47ec0e52c0",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/raw/aedcc2d42b622764e023cf882b6652e646b95671/config.json",
+    "title": "Qwen/Qwen2.5-Coder-14B-Instruct — memory planning specification",
+    "publisher": "Qwen / Alibaba Cloud",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-63861e833e57f28e",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF?blobs=true",
+    "title": "Qwen/Qwen2.5-Coder-14B-Instruct — memory planning specification",
+    "publisher": "Qwen",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "v03-planning-1bcacca708fe4845",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct/raw/381fc969f78efac66bc87ff7ddeadb7e73c218a7/config.json",
+    "title": "Qwen/Qwen2.5-Coder-32B-Instruct — memory planning specification",
+    "publisher": "Qwen / Alibaba Cloud",
+    "accessedOn": "2026-09-15",
+    "kind": "model-configuration",
+    "locator": "num_hidden_layers, num_key_value_heads, head_dim or hidden_size / num_attention_heads"
+  },
+  {
+    "id": "v03-planning-9a4c68f6cc1f1b1a",
+    "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF?blobs=true",
+    "title": "Qwen/Qwen2.5-Coder-32B-Instruct — memory planning specification",
+    "publisher": "Qwen",
+    "accessedOn": "2026-09-15",
+    "kind": "artifact-metadata",
+    "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  }
+]

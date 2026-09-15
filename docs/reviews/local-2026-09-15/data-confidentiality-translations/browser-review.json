@@ -1,0 +1,52 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "editions": [
+    {
+      "lang": "en",
+      "path": "/en/articles/data-confidentiality-public-apis-en/",
+      "date": "15 September 2026",
+      "related": [
+        "/en/articles/ztai-indirect-data-access-en/",
+        "/en/articles/zero-trust-ai-principles-and-controls-en/"
+      ]
+    },
+    {
+      "lang": "es",
+      "path": "/es/articles/data-confidentiality-public-apis-es/",
+      "date": "15 de septiembre de 2026",
+      "related": [
+        "/es/articles/ztai-indirect-data-access-es/",
+        "/es/articles/zero-trust-ai-principles-and-controls-es/"
+      ]
+    }
+  ],
+  "checks": [
+    "English and Spanish contain the complete article (6 sections and 14 subsections), 9×6 table and 9 reference links; local cover and same-language related articles load.",
+    "Both editions show 15 September 2026 in the page, archive, Open Graph and JSON-LD; canonical URLs and all three reciprocal hreflang links are correct.",
+    "The language picker navigates FA→EN→ES→FA; each edition appears once in the sitemap.",
+    "Both translations fit 320/390-pixel mobile screens in light and dark themes; table scrolling stays inside its frame."
+  ],
+  "screenshots": [
+    "en-desktop-dark-cover.png",
+    "en-desktop-dark-table.png",
+    "en-desktop-light-cover.png",
+    "en-desktop-light-table.png",
+    "en-mobile-390-dark-table.png",
+    "en-mobile-390-light-table.png",
+    "en-mobile-390-cover.png",
+    "en-mobile-320-dark-table.png",
+    "en-mobile-320-light-table.png",
+    "en-mobile-320-cover.png",
+    "es-desktop-dark-cover.png",
+    "es-desktop-dark-table.png",
+    "es-desktop-light-cover.png",
+    "es-desktop-light-table.png",
+    "es-mobile-390-dark-table.png",
+    "es-mobile-390-light-table.png",
+    "es-mobile-390-cover.png",
+    "es-mobile-320-dark-table.png",
+    "es-mobile-320-light-table.png",
+    "es-mobile-320-cover.png"
+  ],
+  "runtimeErrors": []
+}

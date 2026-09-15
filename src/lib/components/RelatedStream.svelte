@@ -1,15 +1,24 @@
 <script lang="ts">
-  import { articles } from '$lib/content';
+  import { allArticleMetadata, articles } from '$lib/content';
+  import { withDraftPreview } from '$lib/draft-preview.mjs';
   export let related: string[] = [];
   export let currentSlug = '';
   export let locale: 'fa' | 'en' | 'es' = 'fa';
+  export let includeDrafts = false;
+
+  $: candidates = includeDrafts ? [...articles, ...allArticleMetadata.filter(article => article.draft === true)] : articles;
 
   $: resolved = related
     .filter((slug) => slug !== currentSlug)
-    .map((slug) => articles.find((article) => article.slug === slug))
+    .map((slug) => candidates.find((article) => article.slug === slug))
     .filter(article => article?.lang === locale);
   $: items = resolved.slice(0, 2);
   $: next = resolved[2];
+
+  function articleHref(article: { slug: string; draft?: boolean }) {
+    const path = `${locale === 'fa' ? '' : `/${locale}`}/articles/${article.slug}/`;
+    return article.draft ? withDraftPreview(path) : path;
+  }
 </script>
 
 <section class="related-stream">
@@ -19,14 +28,14 @@
   {#each items as article, index}
     {#if article}
       <article class="stream-item">
-        <small>{locale === 'fa' ? 'مطالعهٔ مرتبط' : locale === 'en' ? 'Related reading' : 'Lectura relacionada'}</small>
+        <small>{article.draft ? 'پیش‌نویس · در حال بازبینی' : locale === 'fa' ? 'مطالعهٔ مرتبط' : locale === 'en' ? 'Related reading' : 'Lectura relacionada'}</small>
         <h2>{article.title}</h2>
         <p>{article.excerpt}</p>
-        <a class="button ghost" href={`${locale === 'fa' ? '' : `/${locale}`}/articles/${article.slug}/`}>{locale === 'fa' ? 'خواندن این نوشته' : locale === 'en' ? 'Read article' : 'Leer artículo'}</a>
+        <a class="button ghost" href={articleHref(article)}>{locale === 'fa' ? 'خواندن این نوشته' : locale === 'en' ? 'Read article' : 'Leer artículo'}</a>
       </article>
     {/if}
   {/each}
   {#if next}
-    <a class="stream-more" href={`${locale === 'fa' ? '' : `/${locale}`}/articles/${next.slug}/`}>{next.title} {locale === 'fa' ? '←' : '→'}</a>
+    <a class="stream-more" href={articleHref(next)}>{next.title} {locale === 'fa' ? '←' : '→'}</a>
   {/if}
 </section>

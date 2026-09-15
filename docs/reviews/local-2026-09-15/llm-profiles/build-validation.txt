@@ -1,0 +1,12 @@
+Generated sitemap.xml with 168 URLs.
+
+> ziabary-platform@0.1.0 verify:sitemap
+> node scripts/verify-sitemap.mjs
+
+Validated sitemap.xml against 168 indexable pages and robots.txt.
+Validated 177 JSON-LD blocks across 177 HTML pages.
+
+> ziabary-platform@0.1.0 verify:short-links
+> node scripts/verify-short-links.mjs
+
+Validated 204 short-link destinations, fragments and early browser redirects against published pages.

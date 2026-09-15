@@ -1,0 +1,39 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "Article is public in the local build with one title, canonical URL, loaded local cover, twelve external reference links opening in a new tab, working heading anchors and a 5×5 comparison table.",
+    "Comparison table scrolls within its frame at 320/390 pixels in both themes; no page overflow.",
+    "Page, structured metadata and searchable archive consistently show 15 June 2026 / ۲۵ خرداد ۱۴۰۵.",
+    "LLM suitability view links to the published article and navigation works.",
+    "Published archive and generated sitemap both include the new article."
+  ],
+  "screenshots": [
+    "desktop-dark-cover.png",
+    "desktop-dark-table.png",
+    "desktop-light-cover.png",
+    "desktop-light-table.png",
+    "mobile-390-dark-table.png",
+    "mobile-390-light-table.png",
+    "mobile-390-cover.png",
+    "mobile-320-dark-table.png",
+    "mobile-320-light-table.png",
+    "mobile-320-cover.png"
+  ],
+  "structuredDates": [
+    {
+      "published": "2026-06-15"
+    }
+  ],
+  "cover": {
+    "src": "/images/responsive/634005dee711f067-960.webp",
+    "currentSrc": "http://127.0.0.1:4189/images/responsive/634005dee711f067-960.webp",
+    "width": 740,
+    "height": 416
+  },
+  "headingLinks": 24,
+  "related": [
+    "/articles/mlops-foundation-of-zero-trust-ai/",
+    "/articles/gpu-inference-latency-throughput/"
+  ],
+  "runtimeErrors": []
+}

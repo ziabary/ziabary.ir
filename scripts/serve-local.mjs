@@ -4,6 +4,8 @@ import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve(process.env.LOCAL_BUILD_DIR ?? 'build');
 const port = Number(process.env.PORT ?? 4186);
+const shortLinkMode = process.env.LOCAL_SHORT_LINK_MODE ?? 'http';
+if (!['http', 'browser'].includes(shortLinkMode)) throw new Error('LOCAL_SHORT_LINK_MODE must be http or browser');
 const shortLinks = JSON.parse(await readFile(`${root}/short-links.json`, 'utf8'));
 const redirects = JSON.parse(await readFile(new URL('../config/redirects.json', import.meta.url), 'utf8'));
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.pdf': 'application/pdf', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain; charset=utf-8' };
@@ -14,7 +16,7 @@ createServer(async (req, res) => {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
     let pathname;
     try { pathname = decodeURIComponent(url.pathname); } catch { res.writeHead(400).end(); return; }
-    if (pathname === '/' && url.searchParams.has('t')) {
+    if (shortLinkMode === 'http' && pathname === '/' && url.searchParams.has('t')) {
       const target = resolveShortLink(url.search, shortLinks);
       if (target) res.writeHead(301, { Location: target, 'Cache-Control': 'public,max-age=300' }).end();
       else res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }).end('Short link not found');
@@ -42,4 +44,4 @@ createServer(async (req, res) => {
     res.writeHead(200, headers);
     res.end(req.method === 'HEAD' ? undefined : await readFile(path));
   } catch { res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found'); }
-}).listen(port, '127.0.0.1', () => console.log(`Local static build: http://127.0.0.1:${port}/ (${root}); no SPA fallback.`));
+}).listen(port, '127.0.0.1', () => console.log(`Local static build: http://127.0.0.1:${port}/ (${root}); short links: ${shortLinkMode}; no SPA fallback.`));

@@ -21,7 +21,7 @@ const taskPreset = await evaluate(`(() => {
   return {
     preview: location.search.includes('show-drafts=true'),
     note: view?.querySelector('.preset-note')?.textContent ?? '',
-    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    checkedFilters: view?.querySelectorAll('.filter-grid input:checked').length ?? -1,
     state: view?.querySelector('.filter-actions span')?.textContent ?? ''
   };
 })()`);
@@ -35,12 +35,12 @@ const softwarePreset = await evaluate(`(async () => {
   const view = document.querySelector('#software-products');
   const before = {
     note: view?.querySelector('.preset-note')?.textContent ?? '',
-    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    checkedFilters: view?.querySelectorAll('.filter-grid input:checked').length ?? -1,
     state: view?.querySelector('.filter-actions span')?.textContent ?? ''
   };
   view?.querySelector('.filter-panel input[type="checkbox"]')?.click();
   await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
-  return { before, selected: view?.querySelectorAll('.filter-panel input:checked').length ?? -1 };
+  return { before, selected: view?.querySelectorAll('.filter-grid input:checked').length ?? -1 };
 })()`);
 assert.match(softwarePreset.before.note, /نوع نیاز، محیط و نقش/);
 assert.equal(softwarePreset.before.checkedFilters, 0);
@@ -53,7 +53,7 @@ const memoryPreset = await evaluate(`(() => {
   return {
     preview: location.search.includes('show-drafts=true'),
     note: view?.querySelector('.preset-note')?.textContent ?? '',
-    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    checkedFilters: view?.querySelectorAll('.filter-grid input:checked').length ?? -1,
     state: view?.querySelector('.filter-actions span')?.textContent ?? ''
   };
 })()`);
@@ -68,7 +68,7 @@ const routeReset = await evaluate(`(() => {
   return {
     preview: location.search.includes('show-drafts=true'),
     presetNote: Boolean(view?.querySelector('.preset-note')),
-    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    checkedFilters: view?.querySelectorAll('.filter-grid input:checked').length ?? -1,
     state: view?.querySelector('.filter-actions span')?.textContent ?? ''
   };
 })()`);

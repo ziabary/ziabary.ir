@@ -1,0 +1,1560 @@
+{
+  "checkedOn": "2026-09-15",
+  "scope": "URL accessibility, not independent verification of every claim",
+  "results": [
+    {
+      "url": "https://github.com/BerriAI/litellm/blob/v1.101.0/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/BerriAI/litellm/blob/v1.101.0/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/BerriAI/litellm/blob/v1.101.0/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/BerriAI/litellm/blob/v1.101.0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.101.0",
+      "status": 200,
+      "finalUrl": "https://github.com/BerriAI/litellm/releases/tag/v1.101.0",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/blob/v1.2.1/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/NVIDIA/TensorRT-LLM/blob/v1.2.1/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/blob/v1.2.1/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/NVIDIA/TensorRT-LLM/blob/v1.2.1/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/blob/v1.2.1/docs/source/commands/trtllm-serve/trtllm-serve.rst",
+      "status": 200,
+      "finalUrl": "https://github.com/NVIDIA/TensorRT-LLM/blob/v1.2.1/docs/source/commands/trtllm-serve/trtllm-serve.rst",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.2.1",
+      "status": 200,
+      "finalUrl": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.2.1",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/tools/server/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/tools/server/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1",
+      "status": 200,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-embeddings-inference/blob/v1.9.3/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-embeddings-inference/blob/v1.9.3/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-embeddings-inference/blob/v1.9.3/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-embeddings-inference/blob/v1.9.3/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-embeddings-inference/releases/tag/v1.9.3",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-embeddings-inference/releases/tag/v1.9.3",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-generation-inference",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-generation-inference/blob/v3.3.7/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-generation-inference/blob/v3.3.7/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-generation-inference/blob/v3.3.7/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-generation-inference/blob/v3.3.7/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/text-generation-inference/releases/tag/v3.3.7",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/text-generation-inference/releases/tag/v3.3.7",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/blob/v5.17.0/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/transformers/blob/v5.17.0/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/blob/v5.17.0/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/transformers/blob/v5.17.0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/blob/v5.17.0/docs/source/en/serve-cli/serving.md",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/transformers/blob/v5.17.0/docs/source/en/serve-cli/serving.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.17.0",
+      "status": 200,
+      "finalUrl": "https://github.com/huggingface/transformers/releases/tag/v5.17.0",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/lyogavin/airllm/blob/v4.0.0/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/lyogavin/airllm/blob/v4.0.0/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/lyogavin/airllm/blob/v4.0.0/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/lyogavin/airllm/blob/v4.0.0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/lyogavin/airllm/releases/tag/v4.0.0",
+      "status": 200,
+      "finalUrl": "https://github.com/lyogavin/airllm/releases/tag/v4.0.0",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/v0.34.0/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/ollama/ollama/blob/v0.34.0/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/v0.34.0/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/ollama/ollama/blob/v0.34.0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/v0.34.0/docs/api.md",
+      "status": 200,
+      "finalUrl": "https://github.com/ollama/ollama/blob/v0.34.0/docs/api.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/v0.34.0/docs/faq.mdx",
+      "status": 200,
+      "finalUrl": "https://github.com/ollama/ollama/blob/v0.34.0/docs/faq.mdx",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.34.0",
+      "status": 200,
+      "finalUrl": "https://github.com/ollama/ollama/releases/tag/v0.34.0",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/open-webui/open-webui/blob/v0.11.3/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/open-webui/open-webui/blob/v0.11.3/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/open-webui/open-webui/blob/v0.11.3/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/open-webui/open-webui/blob/v0.11.3/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.3",
+      "status": 200,
+      "finalUrl": "https://github.com/open-webui/open-webui/releases/tag/v0.11.3",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/sgl-project/sglang/blob/v0.5.19/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/sgl-project/sglang/blob/v0.5.19/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/sgl-project/sglang/blob/v0.5.19/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/sgl-project/sglang/blob/v0.5.19/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/sgl-project/sglang/blob/v0.5.19/docs/docs/basic_usage/openai_api_completions.mdx",
+      "status": 200,
+      "finalUrl": "https://github.com/sgl-project/sglang/blob/v0.5.19/docs/docs/basic_usage/openai_api_completions.mdx",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.19",
+      "status": 200,
+      "finalUrl": "https://github.com/sgl-project/sglang/releases/tag/v0.5.19",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/triton-inference-server/server/blob/v2.72.0/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/triton-inference-server/server/blob/v2.72.0/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/triton-inference-server/server/blob/v2.72.0/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/triton-inference-server/server/blob/v2.72.0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/triton-inference-server/server/releases/tag/v2.72.0",
+      "status": 200,
+      "finalUrl": "https://github.com/triton-inference-server/server/releases/tag/v2.72.0",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/blob/v0.29.0/LICENSE",
+      "status": 200,
+      "finalUrl": "https://github.com/vllm-project/vllm/blob/v0.29.0/LICENSE",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/blob/v0.29.0/README.md",
+      "status": 200,
+      "finalUrl": "https://github.com/vllm-project/vllm/blob/v0.29.0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/blob/v0.29.0/docs/serving/online_serving/openai_compatible_server.md",
+      "status": 200,
+      "finalUrl": "https://github.com/vllm-project/vllm/blob/v0.29.0/docs/serving/online_serving/openai_compatible_server.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+      "status": 200,
+      "finalUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/BAAI/bge-m3/blob/5617a9f61b028005a4858fdac845db406aefb181/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/BAAI/bge-m3/blob/5617a9f61b028005a4858fdac845db406aefb181/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/BAAI/bge-m3/blob/5617a9f61b028005a4858fdac845db406aefb181/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/BAAI/bge-m3/blob/5617a9f61b028005a4858fdac845db406aefb181/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/CohereLabs/aya-expanse-32b",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/CohereLabs/aya-expanse-32b",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/CohereLabs/tiny-aya-global",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/CohereLabs/tiny-aya-global",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/blob/31b70e2e869a7173562077fd711b654946d38674/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/blob/31b70e2e869a7173562077fd711b654946d38674/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/blob/31b70e2e869a7173562077fd711b654946d38674/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/blob/31b70e2e869a7173562077fd711b654946d38674/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/blob/5cf2132abc99cad020ac570b19d031efec650f2b/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/blob/5cf2132abc99cad020ac570b19d031efec650f2b/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/blob/5cf2132abc99cad020ac570b19d031efec650f2b/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/blob/5cf2132abc99cad020ac570b19d031efec650f2b/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/blob/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/blob/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/blob/e61197ed45024b0ed8a2d74b80b4d909f1255473/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/blob/e61197ed45024b0ed8a2d74b80b4d909f1255473/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/blob/22e683669bc0f0bd69640a1354a6d0aebcfeede5/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/blob/22e683669bc0f0bd69640a1354a6d0aebcfeede5/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/blob/22e683669bc0f0bd69640a1354a6d0aebcfeede5/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/blob/22e683669bc0f0bd69640a1354a6d0aebcfeede5/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/blob/77d193c791ed757ca307ee72715aa132723da912/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/blob/77d193c791ed757ca307ee72715aa132723da912/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/blob/77d193c791ed757ca307ee72715aa132723da912/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/blob/77d193c791ed757ca307ee72715aa132723da912/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/59d61f3ce65a6d9863b86d2e96597125219dc754/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/59d61f3ce65a6d9863b86d2e96597125219dc754/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/BAAI/bge-m3?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/BAAI/bge-m3?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/CohereLabs/aya-expanse-32b?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/CohereLabs/aya-expanse-32b?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/CohereLabs/aya-expanse-8b?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/CohereLabs/aya-expanse-8b?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/CohereLabs/tiny-aya-global?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/CohereLabs/tiny-aya-global?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-1.7B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-1.7B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-360M-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-360M-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-14B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-14B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-14B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-14B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-32B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-32B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-32B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-32B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-4B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-4B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-4B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-4B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B-GGUF?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-8B-GGUF?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-8B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-30B-A3B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-30B-A3B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-8B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-8B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-0.6B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-0.6B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-4B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-4B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-8B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-8B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-VL-8B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3-VL-8B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-2B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3.5-2B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-35B-A3B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3.5-35B-A3B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-4B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3.5-4B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/allenai/Olmo-3-7B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/allenai/Olmo-3-7B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Llama-70B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Llama-70B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.2?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.2?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-3-12b-it?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/google/gemma-3-12b-it?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-3-1b-it?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/google/gemma-3-1b-it?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-3-27b-it?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/google/gemma-3-27b-it?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-3-4b-it?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/google/gemma-3-4b-it?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-E2B-it?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/google/gemma-4-E2B-it?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/ibm-granite/granite-3.3-2b-instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/ibm-granite/granite-3.3-2b-instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/intfloat/multilingual-e5-small?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/intfloat/multilingual-e5-small?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-70B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/meta-llama/Llama-3.1-70B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/microsoft/Phi-4-mini-instruct?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/microsoft/Phi-4-mini-instruct?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/mistralai/Devstral-Small-2-24B-Instruct-2512?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/mistralai/Devstral-Small-2-24B-Instruct-2512?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/mistralai/Ministral-3-3B-Instruct-2512?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/mistralai/Ministral-3-3B-Instruct-2512?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/mistralai/Mistral-Small-3.1-24B-Instruct-2503?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/mistralai/Mistral-Small-3.1-24B-Instruct-2503?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Nano-9B-v2?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Nano-9B-v2?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/openai/gpt-oss-120b?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/openai/gpt-oss-120b?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/openai/gpt-oss-20b?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/openai/gpt-oss-20b?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/api/models/zai-org/GLM-4.7-Flash?blobs=true",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/api/models/zai-org/GLM-4.7-Flash?blobs=true",
+      "contentType": "application/json; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/1df8507178afcc1bef68cd8c393f61a886323761/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/1df8507178afcc1bef68cd8c393f61a886323761/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/1df8507178afcc1bef68cd8c393f61a886323761/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/1df8507178afcc1bef68cd8c393f61a886323761/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/blob/711ad2ea6aa40cfca18895e8aca02ab92df1a746/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/blob/711ad2ea6aa40cfca18895e8aca02ab92df1a746/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/blob/711ad2ea6aa40cfca18895e8aca02ab92df1a746/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/blob/711ad2ea6aa40cfca18895e8aca02ab92df1a746/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-3-12b-it",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-3-12b-it",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-3-1b-it",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-3-27b-it",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-3-27b-it",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-3-4b-it",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/intfloat/multilingual-e5-small/blob/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/intfloat/multilingual-e5-small/blob/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/intfloat/multilingual-e5-small/blob/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/intfloat/multilingual-e5-small/blob/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/blob/c170c708c41dac9275d15a8fff4eca08d52bab71/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/blob/c170c708c41dac9275d15a8fff4eca08d52bab71/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/blob/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/blob/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/config.json",
+      "status": 200,
+      "finalUrl": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/config.json",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000,
+      "retry": true
+    },
+    {
+      "url": "https://lmstudio.ai/changelog/lmstudio/lmstudio-v0.4.24",
+      "status": 200,
+      "finalUrl": "https://lmstudio.ai/changelog/lmstudio/lmstudio-v0.4.24",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://lmstudio.ai/docs/developer",
+      "status": 200,
+      "finalUrl": "https://lmstudio.ai/docs/developer",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    },
+    {
+      "url": "https://lmstudio.ai/terms",
+      "status": 200,
+      "finalUrl": "https://lmstudio.ai/app-terms",
+      "contentType": "text/html; charset=utf-8",
+      "bytesRead": 1000
+    }
+  ]
+}

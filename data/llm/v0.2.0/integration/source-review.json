@@ -1,0 +1,673 @@
+{
+  "accessedOn": "2026-09-15",
+  "retrievedSources": 90,
+  "fileMetadataChecks": 25,
+  "fileMetadataMismatches": [],
+  "networkRetrieval": [
+    {
+      "id": "4090-48gb-report",
+      "requestedUrl": "https://main-horse.github.io/posts/4090-48gb/",
+      "error": "<urlopen error Tunnel connection failed: 503 Service Unavailable>"
+    },
+    {
+      "id": "4090-vllm-report",
+      "requestedUrl": "https://www.databasemart.com/blog/vllm-gpu-benchmark-rtx4090",
+      "error": "<urlopen error Tunnel connection failed: 503 Service Unavailable>"
+    },
+    {
+      "id": "airllm",
+      "requestedUrl": "https://raw.githubusercontent.com/lyogavin/airllm/v4.0.0/README.md",
+      "error": "<urlopen error Tunnel connection failed: 503 Service Unavailable>"
+    },
+    {
+      "id": "aya-languages",
+      "requestedUrl": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "error": "<urlopen error Tunnel connection failed: 503 Service Unavailable>"
+    },
+    {
+      "id": "bartowski--DeepSeek-R1-Distill-Llama-70B-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Llama-70B-GGUF?blobs=true",
+      "error": "<urlopen error Tunnel connection failed: 503 Service Unavailable>"
+    },
+    {
+      "id": "bartowski--DeepSeek-R1-Distill-Qwen-14B-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF?blobs=true",
+      "error": "<urlopen error Tunnel connection failed: 503 Service Unavailable>"
+    },
+    {
+      "id": "bartowski--DeepSeek-R1-Distill-Qwen-32B-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF?blobs=true",
+      "status": 200,
+      "bytesRead": 11009,
+      "sha256": "b4e59781e220225ad1781180781f82ee1acbac3fd2a33f74f052db076b08f08c"
+    },
+    {
+      "id": "bartowski--DeepSeek-R1-Distill-Qwen-7B-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF?blobs=true",
+      "status": 200,
+      "bytesRead": 10335,
+      "sha256": "ecd515c669eae0d92990758eac037bafc83ffb3d08afb8a9a45ea0006a7fd782"
+    },
+    {
+      "id": "bartowski--Meta-Llama-3.1-70B-Instruct-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF?blobs=true",
+      "status": 200,
+      "bytesRead": 27193,
+      "sha256": "5a118e638b1b26510c89b8702db91c27ae2047555a24de13d5d9075333eead35"
+    },
+    {
+      "id": "bartowski--Meta-Llama-3.1-8B-Instruct-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF?blobs=true",
+      "status": 200,
+      "bytesRead": 26399,
+      "sha256": "06c6c029690323173bee9e4930863242f31422b966e04c0de4cf17b468bb7a41"
+    },
+    {
+      "id": "bartowski--aya-expanse-32b-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/aya-expanse-32b-GGUF?blobs=true",
+      "status": 200,
+      "bytesRead": 9526,
+      "sha256": "5d8bc137cf137adc4b8dc582579c034287a93a4d41a843497fd58630d098eae1"
+    },
+    {
+      "id": "bartowski--aya-expanse-8b-GGUF-meta",
+      "requestedUrl": "https://huggingface.co/api/models/bartowski/aya-expanse-8b-GGUF?blobs=true",
+      "status": 200,
+      "bytesRead": 9348,
+      "sha256": "f2b8c523e78bba677e0411246ad54bd1b38dc989c50f557e21bf3f4251ba1d5e"
+    },
+    {
+      "id": "bartowski-aya-expanse-32b-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/aya-expanse-32b-GGUF/raw/3acdc2838db0bc64d2371f6b7d0eafab50fdbb0f/README.md",
+      "status": 200,
+      "bytesRead": 10248,
+      "sha256": "669ea5b740a3a44afa470c30ab32a2965df880ac631022d0e996fb4010e06d59"
+    },
+    {
+      "id": "bartowski-aya-expanse-32b-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/aya-expanse-32b-GGUF/resolve/3acdc2838db0bc64d2371f6b7d0eafab50fdbb0f/aya-expanse-32b-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "5aebc4e76ea8fbca82da8cfef777842dc3cf47956486f596c325eba3fad1d7c2"
+    },
+    {
+      "id": "bartowski-aya-expanse-32b-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/aya-expanse-32b-GGUF/resolve/3acdc2838db0bc64d2371f6b7d0eafab50fdbb0f/aya-expanse-32b-Q8_0.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "9f7f7cc202aebc2429f841bab3407c6faf5f93aa7f9991253c2488d5285283c8"
+    },
+    {
+      "id": "bartowski-aya-expanse-8b-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF/raw/f9d62ed0c58e6f2ae17975df990b1b8a4013b596/README.md",
+      "status": 200,
+      "bytesRead": 10558,
+      "sha256": "f7e93d63ac61e68c93591ece4a6ae30c0fdc75aaf25e343ee5d1efe283745324"
+    },
+    {
+      "id": "bartowski-aya-expanse-8b-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF/resolve/f9d62ed0c58e6f2ae17975df990b1b8a4013b596/aya-expanse-8b-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "6ac61e96be26de3deb3a2c0fccd671b6d481d8b23ab5cbf2d4c2f76aa04eddbc"
+    },
+    {
+      "id": "bartowski-aya-expanse-8b-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/aya-expanse-8b-GGUF/resolve/f9d62ed0c58e6f2ae17975df990b1b8a4013b596/aya-expanse-8b-Q8_0.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "2a1550ded79c8fdd164400276f6aa37ac40fe5997ba1f8c100c96a71a04e4b2d"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-llama-70b-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Llama-70B-GGUF/raw/1842c5f7280f933ead58adf8afd078672c9f6cd0/README.md",
+      "status": 200,
+      "bytesRead": 14019,
+      "sha256": "7cb92771750fbe39d602712a1221b221e8b7bf48836f9baa505a80b68394a5de"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-llama-70b-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Llama-70B-GGUF/resolve/1842c5f7280f933ead58adf8afd078672c9f6cd0/DeepSeek-R1-Distill-Llama-70B-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "eef6c6bcee1ca21b29fb9a43e2052cb7f64784ff3359bf3029770eef99d3c60d"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-llama-70b-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Llama-70B-GGUF/resolve/1842c5f7280f933ead58adf8afd078672c9f6cd0/DeepSeek-R1-Distill-Llama-70B-Q8_0/DeepSeek-R1-Distill-Llama-70B-Q8_0-00001-of-00002.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "ce8e64a6fcf630a1eb002da9a60fb4b2e97e0668c09c6dbbcd97b2441439cf22"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-14b-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/raw/9f5d77d401799416e0702290a691038b44012e0c/README.md",
+      "status": 200,
+      "bytesRead": 14671,
+      "sha256": "6727733c3b8768eda41d682d2d823a55da50dbe5172a09b06bbc2c42c4392194"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-14b-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/resolve/9f5d77d401799416e0702290a691038b44012e0c/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "f5f9da45485fe1513befa541fcd93688f9a13bc34a14f38a1510851ef67b329c"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-14b-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/resolve/9f5d77d401799416e0702290a691038b44012e0c/DeepSeek-R1-Distill-Qwen-14B-Q8_0.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "f5f9da45485fe1513befa541fcd93688f9a13bc34a14f38a1510851ef67b329c"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-32b-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/raw/1dc8cf9ffa5dd333057ea1b09ccf4772d8726dec/README.md",
+      "status": 200,
+      "bytesRead": 14738,
+      "sha256": "2f3c131605537200b9997009ce82a962f7e9009e8b3c43d442526b9e4b788eb3"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-32b-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/resolve/1dc8cf9ffa5dd333057ea1b09ccf4772d8726dec/DeepSeek-R1-Distill-Qwen-32B-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "c0dbc6e23d939eda83b87b31762a95df1a2a449b76ba84378bb3198cfdd23efa"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-32b-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/resolve/1dc8cf9ffa5dd333057ea1b09ccf4772d8726dec/DeepSeek-R1-Distill-Qwen-32B-Q8_0.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "d25e5b71e0c780edc207a70ba578bfeda74ab2aaf30e5d5dfe9b5c6a76d4b82d"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-7b-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/raw/361004151d4f4f6b446dc5e6d46fbf4422a80d5f/README.md",
+      "status": 200,
+      "bytesRead": 14110,
+      "sha256": "108a7416cfcf69967ada8205f4e72c7725331e34c76ac4446091d6dc7c9766fe"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-7b-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/361004151d4f4f6b446dc5e6d46fbf4422a80d5f/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "7fba4073077b0eca2923f3b206987ecf8b371e413c4dd98d3d058c2c77fdbcee"
+    },
+    {
+      "id": "bartowski-deepseek-r1-distill-qwen-7b-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/361004151d4f4f6b446dc5e6d46fbf4422a80d5f/DeepSeek-R1-Distill-Qwen-7B-Q8_0.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "7fba4073077b0eca2923f3b206987ecf8b371e413c4dd98d3d058c2c77fdbcee"
+    },
+    {
+      "id": "bartowski-meta-llama-3-1-70b-instruct-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/raw/83fb6e83d0a8aada42d499259bc929d922e9a558/README.md",
+      "status": 200,
+      "bytesRead": 23427,
+      "sha256": "d2a74baa49ab09f9c27506cfcef4244f49ab741d7c523f1f89d342d2280e142e"
+    },
+    {
+      "id": "bartowski-meta-llama-3-1-70b-instruct-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/resolve/83fb6e83d0a8aada42d499259bc929d922e9a558/Meta-Llama-3.1-70B-Instruct-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "b5f0a0daa2b517c0461c41c03ca16de166841544a05e724718482bc6e4e00bdb"
+    },
+    {
+      "id": "bartowski-meta-llama-3-1-70b-instruct-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF/resolve/83fb6e83d0a8aada42d499259bc929d922e9a558/Meta-Llama-3.1-70B-Instruct-Q8_0/Meta-Llama-3.1-70B-Instruct-Q8_0-00001-of-00002.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "29bcdb9b244ff095696b829a4c8e3db0ced7e8b73e6bc60f367792eaaa130329"
+    },
+    {
+      "id": "bartowski-meta-llama-3-1-8b-instruct-gguf-card",
+      "requestedUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/raw/bf5b95e96dac0462e2a09145ec66cae9a3f12067/README.md",
+      "status": 200,
+      "bytesRead": 27669,
+      "sha256": "6eaacf655181af2b04b6583e5a338591de89cb80a4b9f6babc77e35452fd8f5e"
+    },
+    {
+      "id": "bartowski-meta-llama-3-1-8b-instruct-gguf-q4-k-m-header",
+      "requestedUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/bf5b95e96dac0462e2a09145ec66cae9a3f12067/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "40351ec1257c8dc274242655a1668de9735abf3125efbaddc81d034ddba2a06f"
+    },
+    {
+      "id": "bartowski-meta-llama-3-1-8b-instruct-gguf-q8-0-header",
+      "requestedUrl": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/bf5b95e96dac0462e2a09145ec66cae9a3f12067/Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+      "status": 206,
+      "bytesRead": 262144,
+      "sha256": "37c8f4e86be374968ca347f2ca8ce1ab69e21e21624345b795c787173193bb1c"
+    },
+    {
+      "id": "cuda-scoreboard",
+      "requestedUrl": "https://github.com/ggml-org/llama.cpp/discussions/15013",
+      "status": 200,
+      "bytesRead": 1318291,
+      "sha256": "e2b44e4991f4f39ca68dd6780a27629413b886c382744ee39791265c39ba53eb"
+    },
+    {
+      "id": "deepseek-quality",
+      "requestedUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/raw/main/README.md",
+      "status": 200,
+      "bytesRead": 15994,
+      "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f"
+    },
+    {
+      "id": "gptoss-introduction",
+      "requestedUrl": "https://openai.com/index/introducing-gpt-oss/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "gpustack-deepseek-h200",
+      "requestedUrl": "https://docs.gpustack.ai/2.1/performance-lab/deepseek-v3.2/h200/",
+      "status": 200,
+      "bytesRead": 283095,
+      "sha256": "86e5ad80f5e2c8f78ee8cfcd705db4e1e36e04659dcfaaf9ece8a915fe433f0b"
+    },
+    {
+      "id": "gpustack-qwen14-h100",
+      "requestedUrl": "https://docs.gpustack.ai/2.1/performance-lab/qwen3-14b/h100/",
+      "status": 200,
+      "bytesRead": 163982,
+      "sha256": "86d0e6464be4b42efa4e6f1f6ec41f9bb86350df009a40df2a0925a53bd8189b"
+    },
+    {
+      "id": "gpustack-qwen32-h100",
+      "requestedUrl": "https://docs.gpustack.ai/2.1/performance-lab/qwen3-32b/h100/",
+      "status": 200,
+      "bytesRead": 154563,
+      "sha256": "49cbfaaea7c0514de4b2d5b842b24ccb82c8203284c8506bd9dc248ffe906dfa"
+    },
+    {
+      "id": "gpustack-qwen35-h200",
+      "requestedUrl": "https://docs.gpustack.ai/2.1/performance-lab/qwen3.5-35b-a3b/h200/",
+      "status": 200,
+      "bytesRead": 193533,
+      "sha256": "184b6fe60a4a59497de20f678a42be4bc92ea7f546306f25d3bdd338598ede29"
+    },
+    {
+      "id": "huggingfacetb-smollm2-1-7b-instruct-native-config",
+      "requestedUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/raw/31b70e2e869a7173562077fd711b654946d38674/config.json",
+      "status": 200,
+      "bytesRead": 908,
+      "sha256": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea"
+    },
+    {
+      "id": "huggingfacetb-smollm2-1-7b-instruct-native-files",
+      "requestedUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-1.7B-Instruct/revision/31b70e2e869a7173562077fd711b654946d38674?blobs=true",
+      "status": 200,
+      "bytesRead": 9884,
+      "sha256": "261e0ffec56e87e0165b51020bb5952997ec61f75de2afa12be6a29f81df3e8c"
+    },
+    {
+      "id": "huggingfacetb-smollm2-135m-instruct-native-config",
+      "requestedUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/raw/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json",
+      "status": 200,
+      "bytesRead": 861,
+      "sha256": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a"
+    },
+    {
+      "id": "huggingfacetb-smollm2-135m-instruct-native-files",
+      "requestedUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M-Instruct/revision/12fd25f77366fa6b3b4b768ec3050bf629380bac?blobs=true",
+      "status": 200,
+      "bytesRead": 9142,
+      "sha256": "32fb1dd56c38ee17edf8958a5e028484839da1f07854fcc25beedeb869ed1529"
+    },
+    {
+      "id": "huggingfacetb-smollm2-360m-instruct-native-config",
+      "requestedUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/raw/a10cc1512eabd3dde888204e902eca88bddb4951/config.json",
+      "status": 200,
+      "bytesRead": 846,
+      "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee"
+    },
+    {
+      "id": "huggingfacetb-smollm2-360m-instruct-native-files",
+      "requestedUrl": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-360M-Instruct/revision/a10cc1512eabd3dde888204e902eca88bddb4951?blobs=true",
+      "status": 200,
+      "bytesRead": 9613,
+      "sha256": "1b7074a0d7aeb8ed2af48ed2606052bb856e90687b8db8d39cf992df097c7405"
+    },
+    {
+      "id": "nvidia-3060",
+      "requestedUrl": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-3060ti/",
+      "status": 200,
+      "bytesRead": 812532,
+      "sha256": "a3fdb38755c28cf756c3dc1fef1a391a5879938527d7d1a8f61ee4a2c874f55b"
+    },
+    {
+      "id": "nvidia-3090",
+      "requestedUrl": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090-3090ti/",
+      "status": 200,
+      "bytesRead": 1004023,
+      "sha256": "b4033a667fbf1a44d9020537d09d86148bc7f5c0ad90f8153339893624c5de51"
+    },
+    {
+      "id": "nvidia-4060",
+      "requestedUrl": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-4060ti/",
+      "status": 200,
+      "bytesRead": 785380,
+      "sha256": "bd358c2231c9d38debe74451a52231b9bd8bb72f96de2ff3c0d80061512caef4"
+    },
+    {
+      "id": "nvidia-4090",
+      "requestedUrl": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/",
+      "status": 200,
+      "bytesRead": 767686,
+      "sha256": "4d2538d02b9da292293951831bb63404bacfac1b60355dcba291c99d14bb6441"
+    },
+    {
+      "id": "nvidia-5090",
+      "requestedUrl": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+      "status": 200,
+      "bytesRead": 672805,
+      "sha256": "5ea0fca6626be1a706ed8516d44b48f962fa16fc042d6a6b672c47ffc81eb94b"
+    },
+    {
+      "id": "nvidia-6000-ada",
+      "requestedUrl": "https://www.nvidia.com/en-us/products/workstations/rtx-6000/",
+      "status": 200,
+      "bytesRead": 375872,
+      "sha256": "f00a8acd9e6fe5c57304d0ef9100f749bc0ff3571e0badda3a2993a6b3510ca0"
+    },
+    {
+      "id": "nvidia-a6000",
+      "requestedUrl": "https://www.nvidia.com/en-us/products/workstations/rtx-a6000/",
+      "status": 200,
+      "bytesRead": 726901,
+      "sha256": "62ed961de95389973d9516855b6772628789869b7957b1dd35a9e05f4f748ac3"
+    },
+    {
+      "id": "nvidia-h100",
+      "requestedUrl": "https://www.nvidia.com/en-us/data-center/h100/",
+      "status": 200,
+      "bytesRead": 287388,
+      "sha256": "9cc50dbd19132c0a1df4edb63698a220de84977755237876a513b518a1081bfa"
+    },
+    {
+      "id": "nvidia-h200",
+      "requestedUrl": "https://www.nvidia.com/en-us/data-center/h200/",
+      "status": 200,
+      "bytesRead": 279618,
+      "sha256": "a6ec546573ded1c330a75b6e8bc834be2b5fb5b4ec3bd9f3cc001755922d0a4d"
+    },
+    {
+      "id": "nvidia-pro6000",
+      "requestedUrl": "https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/",
+      "status": 200,
+      "bytesRead": 574809,
+      "sha256": "df5d9401a975c750750ff410b7dbf58b1ee5f9867b50bd09d94a520a9dab9b33"
+    },
+    {
+      "id": "qwen-embedding",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/raw/main/README.md",
+      "status": 200,
+      "bytesRead": 17237,
+      "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    },
+    {
+      "id": "qwen-embedding-paper",
+      "requestedUrl": "https://arxiv.org/html/2506.05176v1",
+      "status": 200,
+      "bytesRead": 262778,
+      "sha256": "5588571b6b5c39e1af8265d4039ab839264edb1aeca77509b490910858a45a8d"
+    },
+    {
+      "id": "qwen-llamacpp",
+      "requestedUrl": "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html",
+      "status": 200,
+      "bytesRead": 49024,
+      "sha256": "4949271cc7331a38290443639e71fb342e87db2ae7961d41f0bae3e41ce12813"
+    },
+    {
+      "id": "qwen-ollama",
+      "requestedUrl": "https://qwen.readthedocs.io/en/latest/run_locally/ollama.html",
+      "status": 200,
+      "bytesRead": 24094,
+      "sha256": "aa8cc88a3d509702adfd2ba7df9b2525712d5579f2b4f0a825c073fbd4772c7c"
+    },
+    {
+      "id": "qwen-qwen3-0-6b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/c1899de289a04d12100db370d81485cdf75e47ca/config.json",
+      "status": 200,
+      "bytesRead": 726,
+      "sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+    },
+    {
+      "id": "qwen-qwen3-0-6b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B-GGUF/revision/23749fefcc72300e3a2ad315e1317431b06b590a?blobs=true",
+      "status": 200,
+      "bytesRead": 6321,
+      "sha256": "9c3789fff1f5609a7e97f62666cc4bfd163a0d5f4a49b1766cbb1add72527e0c"
+    },
+    {
+      "id": "qwen-qwen3-1-7b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json",
+      "status": 200,
+      "bytesRead": 726,
+      "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+    },
+    {
+      "id": "qwen-qwen3-1-7b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B-GGUF/revision/90862c4b9d2787eaed51d12237eafdfe7c5f6077?blobs=true",
+      "status": 200,
+      "bytesRead": 6159,
+      "sha256": "c253b414ce18e82f10eec785a9417c676c9a13b768440bb522260172e41a61d8"
+    },
+    {
+      "id": "qwen-qwen3-14b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-14B/raw/40c069824f4251a91eefaf281ebe4c544efd3e18/config.json",
+      "status": 200,
+      "bytesRead": 728,
+      "sha256": "e73c3664ca09b10a673fef0c22e8a6b456201d49bd4713c9691f775720e8857a"
+    },
+    {
+      "id": "qwen-qwen3-14b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-14B-GGUF/revision/530227a7d994db8eca5ab5ced2fb692b614357fd?blobs=true",
+      "status": 200,
+      "bytesRead": 7027,
+      "sha256": "ddbb230aa8e93fb9aed34843be9cf6194f3c7e1ae005de7a1fb882764f4e57fd"
+    },
+    {
+      "id": "qwen-qwen3-30b-a3b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B/raw/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json",
+      "status": 200,
+      "bytesRead": 963,
+      "sha256": "2850ddb3bf7aecad20b611e2d44f3077fc8193f4827c93beddd4c02ad63c2297"
+    },
+    {
+      "id": "qwen-qwen3-30b-a3b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B-GGUF/revision/e4d4bafdfb96a411a163846265362aceb0b9c63a?blobs=true",
+      "status": 200,
+      "bytesRead": 7031,
+      "sha256": "88c0db59134ece7a840044233adabbaadc2a31dacfeae6883ebc3d89fbc96d9e"
+    },
+    {
+      "id": "qwen-qwen3-32b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-32B/raw/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+      "status": 200,
+      "bytesRead": 728,
+      "sha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb"
+    },
+    {
+      "id": "qwen-qwen3-32b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-32B-GGUF/revision/938a7432affaec9157f883a87164e2646ae17555?blobs=true",
+      "status": 200,
+      "bytesRead": 6944,
+      "sha256": "8c6af490591aa7b3487d3c34cd44a57ea6ca37c7a81e7fa0b481f7ed2081a1af"
+    },
+    {
+      "id": "qwen-qwen3-4b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+      "status": 200,
+      "bytesRead": 726,
+      "sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a"
+    },
+    {
+      "id": "qwen-qwen3-4b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-4B-GGUF/revision/bc640142c66e1fdd12af0bd68f40445458f3869b?blobs=true",
+      "status": 200,
+      "bytesRead": 7320,
+      "sha256": "c7a50954a56900d9c4c8774f5177821f19f5ba233dc550ac25364827521627ee"
+    },
+    {
+      "id": "qwen-qwen3-8b-config",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+      "status": 200,
+      "bytesRead": 728,
+      "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+    },
+    {
+      "id": "qwen-qwen3-8b-gguf-files",
+      "requestedUrl": "https://huggingface.co/api/models/Qwen/Qwen3-8B-GGUF/revision/7c41481f57cb95916b40956ab2f0b139b296d974?blobs=true",
+      "status": 200,
+      "bytesRead": 7338,
+      "sha256": "2fda2e4761c1c95fd24164e9e50f8d2b4bbff1b30aea52225dac76825ac8aeab"
+    },
+    {
+      "id": "qwen-reranker",
+      "requestedUrl": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/raw/main/README.md",
+      "status": 200,
+      "bytesRead": 14742,
+      "sha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    },
+    {
+      "id": "qwen-sglang",
+      "requestedUrl": "https://qwen.readthedocs.io/en/latest/deployment/sglang.html",
+      "status": 200,
+      "bytesRead": 38980,
+      "sha256": "12aaa92d5f5ac6a754712398e5ec51db06e8304e79ec5b6a95b04b46b70dc967"
+    },
+    {
+      "id": "qwen-speed",
+      "requestedUrl": "https://qwen.readthedocs.io/en/latest/getting_started/speed_benchmark.html",
+      "status": 200,
+      "bytesRead": 54045,
+      "sha256": "35543770ce55d2f9d7a38c38ee2a6e55eb293ce7227c2ba313dd8fb8af29d8d2"
+    },
+    {
+      "id": "qwen-vllm",
+      "requestedUrl": "https://qwen.readthedocs.io/en/latest/deployment/vllm.html",
+      "status": 200,
+      "bytesRead": 52186,
+      "sha256": "9f2883094e8cc8d356e215dcdb2e7f0da742d1d9fe66fdb2b048779b4e9bcf25"
+    },
+    {
+      "id": "smollm2-quality",
+      "requestedUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/raw/main/README.md",
+      "status": 200,
+      "bytesRead": 14928,
+      "sha256": "b00c0570dbc43674a0028d088fc72f40d83eea90f47cd987706ca2f95ed114c0"
+    },
+    {
+      "id": "smollm3-quality",
+      "requestedUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/main/README.md",
+      "status": 200,
+      "bytesRead": 17452,
+      "sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178"
+    },
+    {
+      "id": "software-guide:airllm",
+      "requestedUrl": "https://raw.githubusercontent.com/lyogavin/airllm/v4.0.0/README.md",
+      "status": 200,
+      "bytesRead": 18916,
+      "sha256": "2facb013ead201affe8bebba19f0e848c8ae8c58511fd3d0130becdbc99503b8"
+    },
+    {
+      "id": "software-guide:litellm",
+      "requestedUrl": "https://raw.githubusercontent.com/BerriAI/litellm/v1.101.0/README.md",
+      "status": 200,
+      "bytesRead": 35510,
+      "sha256": "ca3f7884775ae73f5dda9adeb45e8d24f5d652f102fde6cd8b95fb1c22e6fce3"
+    },
+    {
+      "id": "software-guide:llama-cpp",
+      "requestedUrl": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v0.4.1/README.md",
+      "status": 200,
+      "bytesRead": 7351,
+      "sha256": "e58520857253729851cc02313883c9d2a8b2ae86abe212aaf1bcbd7db8bfefb4"
+    },
+    {
+      "id": "software-guide:ollama",
+      "requestedUrl": "https://raw.githubusercontent.com/ollama/ollama/v0.34.0/README.md",
+      "status": 200,
+      "bytesRead": 19225,
+      "sha256": "09c456b8f3e2fca486f6961e07494f424ec6f998cfd0b23ebde099bc028a47de"
+    },
+    {
+      "id": "software-guide:open-webui",
+      "requestedUrl": "https://raw.githubusercontent.com/open-webui/open-webui/v0.11.3/README.md",
+      "status": 200,
+      "bytesRead": 17761,
+      "sha256": "a486231a68444cee15339ea050fe07e5e1b9b0812abcadecab5749304a81a244"
+    },
+    {
+      "id": "software-guide:sglang",
+      "requestedUrl": "https://raw.githubusercontent.com/sgl-project/sglang/v0.5.19/README.md",
+      "status": 200,
+      "bytesRead": 11952,
+      "sha256": "ee6908559f95fe54c3f6773ed23e163d76c984f4750445830a343eac6edca1d0"
+    },
+    {
+      "id": "software-guide:tei",
+      "requestedUrl": "https://raw.githubusercontent.com/huggingface/text-embeddings-inference/v1.9.3/README.md",
+      "status": 200,
+      "bytesRead": 27204,
+      "sha256": "bf7dbea87d507cfb507e16eb0c44d06cfd2f98733795f44a4fa41a872acb81a1"
+    },
+    {
+      "id": "software-guide:tensorrt-llm",
+      "requestedUrl": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/v1.2.1/README.md",
+      "status": 200,
+      "bytesRead": 23334,
+      "sha256": "74b02ba52916a913ee099daaba4ba2a58f5f8720b3c010f68f9520366d54baf7"
+    },
+    {
+      "id": "software-guide:transformers",
+      "requestedUrl": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/README.md",
+      "status": 200,
+      "bytesRead": 17182,
+      "sha256": "9f745fda7e49125b047e41f99ff1bf67b1c092c34c61bdfda1c3460feaa95382"
+    },
+    {
+      "id": "software-guide:triton",
+      "requestedUrl": "https://raw.githubusercontent.com/triton-inference-server/server/v2.72.0/README.md",
+      "status": 200,
+      "bytesRead": 14430,
+      "sha256": "4f47e0db8ef89ec053020e182f404df136006d9fb3bbb714c156e7ee1b0565a3"
+    },
+    {
+      "id": "software-guide:vllm",
+      "requestedUrl": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/README.md",
+      "status": 200,
+      "bytesRead": 5708,
+      "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026"
+    },
+    {
+      "id": "tei-models",
+      "requestedUrl": "https://raw.githubusercontent.com/huggingface/text-embeddings-inference/v1.9.3/README.md",
+      "status": 200,
+      "bytesRead": 27204,
+      "sha256": "bf7dbea87d507cfb507e16eb0c44d06cfd2f98733795f44a4fa41a872acb81a1"
+    },
+    {
+      "id": "trooper-4090",
+      "requestedUrl": "https://www.trooper.ai/gpus/rtx-4090",
+      "status": 200,
+      "bytesRead": 45680,
+      "sha256": "a78f602af5a6aba62d7919e052e150959a83f793d18178bbfdfa54bf70cc522d"
+    },
+    {
+      "id": "vllm-quantization-v029",
+      "requestedUrl": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/docs/features/quantization/README.md",
+      "status": 200,
+      "bytesRead": 9347,
+      "sha256": "acc6bb7b2d1e7bda87006987f1630867b8f0021724976a9ce5151614e03ed1d2"
+    }
+  ]
+}

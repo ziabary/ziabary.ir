@@ -1,0 +1,22 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "All five paths have a separate bold link below the description; footer shows dynamic model/software/table counts.",
+    "Each of the five reading links and both footer links navigates to the intended populated table; software view switches correctly.",
+    "Mobile accordion opens and navigates correctly at 320/390 pixels in both themes, with no page overflow or clipped links."
+  ],
+  "screenshots": [
+    "desktop-dark.png",
+    "desktop-light.png",
+    "desktop-wide-dark.png",
+    "mobile-390-dark-closed.png",
+    "mobile-390-dark-open.png",
+    "mobile-390-light-closed.png",
+    "mobile-390-light-open.png",
+    "mobile-320-dark-closed.png",
+    "mobile-320-dark-open.png",
+    "mobile-320-light-closed.png",
+    "mobile-320-light-open.png"
+  ],
+  "runtimeErrors": []
+}

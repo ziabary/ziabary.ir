@@ -1,0 +1,145 @@
+[
+  {
+    "id": "software-guidance:ollama",
+    "name": "Ollama",
+    "roleFa": "موتور اجرا، مدیریت مدل و API",
+    "startingUseFa": "شروع محلی، توسعه و سرویس کوچک",
+    "usefulFeatureFa": "دریافت و مدیریت مدل و راه‌اندازی API در یک ابزار",
+    "selectionConditionFa": "برای بار چندکاربره، طول زمینه و تعداد مدل‌های هم‌زمان را بودجه‌بندی کنید.",
+    "versionScope": "v0.34.0",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:ollama"
+    ]
+  },
+  {
+    "id": "software-guidance:llama-cpp",
+    "name": "llama.cpp / llama-server",
+    "roleFa": "موتور اجرا و سرور سبک",
+    "startingUseFa": "GGUF روی CPU، GPU و ترکیب RAM/VRAM",
+    "usefulFeatureFa": "کنترل کوانتیزاسیون، تقسیم لایه‌ها و اجرای CPU",
+    "selectionConditionFa": "اجرای جزئی روی CPU با بارگذاری لایه‌ای AirLLM یک روش واحد نیست.",
+    "versionScope": "v0.4.1",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:llama-cpp"
+    ]
+  },
+  {
+    "id": "software-guidance:vllm",
+    "name": "vLLM",
+    "roleFa": "موتور سرویس‌دهی",
+    "startingUseFa": "API مدل زبانی با درخواست‌های هم‌زمان",
+    "usefulFeatureFa": "continuous batching و مدیریت KV cache؛ API سازگار با OpenAI",
+    "selectionConditionFa": "قالب وزن، معماری مدل، parser ابزار و نسخهٔ backend باید با هم سازگار باشند.",
+    "versionScope": "v0.29.0",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:vllm"
+    ]
+  },
+  {
+    "id": "software-guidance:sglang",
+    "name": "SGLang",
+    "roleFa": "موتور سرویس‌دهی",
+    "startingUseFa": "سرویس چندکاربره و بار دارای پیشوند مشترک",
+    "usefulFeatureFa": "batching و prefix caching؛ تنظیم برای نوع بار",
+    "selectionConditionFa": "برندهٔ ثابت همهٔ مدل‌ها نیست؛ نتایج ۱۴B و ۳۲B در این بسته تفاوت دارند.",
+    "versionScope": "v0.5.19",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:sglang"
+    ]
+  },
+  {
+    "id": "software-guidance:tensorrt-llm",
+    "name": "TensorRT-LLM",
+    "roleFa": "موتور بهینهٔ NVIDIA",
+    "startingUseFa": "استقرار تخصصی روی GPUهای NVIDIA",
+    "usefulFeatureFa": "بهینه‌سازی مدل، کرنل و اجرای سرویس",
+    "selectionConditionFa": "مسیر پشتیبانی و تنظیمات برای هر نسخه و معماری متفاوت است.",
+    "versionScope": "v1.2.1",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:tensorrt-llm"
+    ]
+  },
+  {
+    "id": "software-guidance:tei",
+    "name": "Text Embeddings Inference",
+    "roleFa": "سرور تخصصی embedding",
+    "startingUseFa": "سرویس بردارسازی اسناد و پرسش‌ها",
+    "usefulFeatureFa": "batching و API برای embedding؛ imageهای CPU و GPU",
+    "selectionConditionFa": "پشتیبانی reranking برای همهٔ معماری‌ها از پشتیبانی embedding نتیجه نمی‌شود.",
+    "versionScope": "v1.9.3",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:tei"
+    ]
+  },
+  {
+    "id": "software-guidance:transformers",
+    "name": "Transformers",
+    "roleFa": "کتابخانهٔ مدل و ابزار اجرای سرویس",
+    "startingUseFa": "پژوهش، کنترل مستقیم مدل و مسیرهای سفارشی",
+    "usefulFeatureFa": "دسترسی مستقیم به مدل و منطق پردازش",
+    "selectionConditionFa": "سرعت یک مسیر سادهٔ Transformers نمایندهٔ همهٔ موتورهای همان مدل نیست.",
+    "versionScope": "v5.17.0",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:transformers"
+    ]
+  },
+  {
+    "id": "software-guidance:airllm",
+    "name": "AirLLM",
+    "roleFa": "کتابخانهٔ اجرای لایه‌ای",
+    "startingUseFa": "امکان اجرای مدل بزرگ با VRAM کم",
+    "usefulFeatureFa": "بارگذاری و تخلیهٔ لایه‌ها با تکیه بر میزبان و دیسک",
+    "selectionConditionFa": "هدف اصلی کاهش حافظهٔ GPU است؛ برای چت هم‌زمان از بنچمارک همان بار استفاده کنید.",
+    "versionScope": "v4.0.0",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:airllm"
+    ]
+  },
+  {
+    "id": "software-guidance:litellm",
+    "name": "LiteLLM",
+    "roleFa": "درگاه API و مسیریاب",
+    "startingUseFa": "مدیریت چند ارائه‌دهنده و backend",
+    "usefulFeatureFa": "API مشترک، مسیریابی و مدیریت مصرف",
+    "selectionConditionFa": "توان اجرای وزن مدل از backend می‌آید.",
+    "versionScope": "v1.101.0",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:litellm"
+    ]
+  },
+  {
+    "id": "software-guidance:open-webui",
+    "name": "Open WebUI",
+    "roleFa": "رابط کاربر",
+    "startingUseFa": "پنل گفت‌وگو و کار با backendهای مدل",
+    "usefulFeatureFa": "رابط چت برای کاربران و اتصال به موتور اجرا",
+    "selectionConditionFa": "حافظه و سرعت مدل را باید به backend متصل نسبت داد.",
+    "versionScope": "v0.11.3",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:open-webui"
+    ]
+  },
+  {
+    "id": "software-guidance:triton",
+    "name": "Triton Inference Server",
+    "roleFa": "سکوی سرویس‌دهی چند backend",
+    "startingUseFa": "مدیریت سرویس مدل‌ها و pipelineهای inference",
+    "usefulFeatureFa": "مدیریت مدل، زمان‌بندی و اتصال backendهای تخصصی",
+    "selectionConditionFa": "TensorRT-LLM یک backend/موتور است و Triton نقش سرور عمومی‌تری دارد.",
+    "versionScope": "v2.72.0",
+    "basis": "editorial synthesis of official documentation; features remain version scoped",
+    "sourceIds": [
+      "software-guide:triton"
+    ]
+  }
+]
