@@ -6,12 +6,20 @@
 
 زیرساخت `/guides/llm/` در حالت پیش‌نویس پیاده شده است. ساختار نهایی هفت بخش اصلی و هشت جدول/ماتریس دارد؛ بخش چهارم دو زیرنمای مستقل «مقایسهٔ نرم‌افزارها» و «سازگاری مدل و پیکربندی اجرا» دارد. مخزن محتوایی عمداً خالی است و هیچ مدل، بنچمارک، قیمت، رتبه‌بندی یا بدنهٔ مقالهٔ واقعی ساخته نشده است.
 
-چهار نقص گزارش قبلی به این شکل اصلاح شده‌اند:
+مرحلهٔ تثبیت محدود بعدی نیز انجام شد: presetهای محدودکننده حذف شدند، ماتریس سخت‌افزار به ردیف منطقی چندسخت‌افزاری تبدیل شد، مشترک‌بودن backend به محور مقایسه وابسته شد، قرارداد `not-reviewed` اصلاح شد و مسیر canonical تا رابط پُر با fixture مرورگری آزموده شد. هفت بخش، هشت نما، پنج مسیر شروع و ۱۴ مقالهٔ برنامه‌ریزی‌شده بدون گسترش دامنه حفظ شده‌اند.
 
-1. `comparisonSignature` حذف و با سه حالت صریح مشاهدهٔ کنارهم، آزمایش کنترل‌شده و انتخاب راهکار جایگزین شد. انتخاب ردیف دیگر به علت تفاوت مدل، نرم‌افزار یا سخت‌افزار رد نمی‌شود؛ اعتبار محاسبه جدا ارزیابی می‌شود.
-2. adapterهای واقعی canonical به هر هشت `LlmViewRow` پیاده شدند. fixture مصنوعی فقط زیر `tests/fixtures/` است و هیچ import از `src/` ندارد.
-3. ارتباط ادعا و شاهد تا سطح locator، دامنهٔ نسخه/backend/model، ورودی مشتق‌شده، واحد، فرمول، فرض و گردکردن مدل‌سازی و اعتبارسنجی شد.
-4. build بررسی شد. کد جدید typecheck و مرحلهٔ compile در Vite را می‌گذراند، اما build کامل به علت نبود دو مجموعهٔ ignored از دارایی‌های واقعی (`static/slides/` و `static/images/gallery/`) در checkout مسدود است. کنترل build تضعیف و فایل جعلی ساخته نشد.
+build کامل همچنان **BLOCKED** است. compile کل client/SSR موفق است، اما prerender به نخستین ارجاع دارایی واقعی غایب، `/slides/behind-ai-dba/cover.jpg`، با 404 می‌رسد. دو مجموعهٔ `static/slides/` و `static/images/gallery/` خارج Git هستند و منبع بازیابی read-only در checkout، شاخهٔ remote یا مستندات مخزن پیدا نشد. placeholder، حذف ارجاع، کاهش validation، deploy یا بازیابی از میزبان اجرا نشده است.
+
+## ممیزی شش اصلاح مرحلهٔ تثبیت
+
+| موضوع | رفتار پیشین و تشخیص | تغییر نهایی | آزمون یا شاهد | محدودیت باقی‌مانده |
+| --- | --- | --- | --- | --- |
+| ۱. مسیرهای شروع | اشکال در کد تأیید شد: `task-first` نوع مولد، `software-choice` نیاز API تیمی/نقش API server و `memory-constrained` فقط مسیرهای offload/layer-wise را فعال می‌کردند. | هر سه preset اکنون `selections: {}` دارند و فقط مقصد و راه شروع را توضیح می‌دهند. تغییر `config.id:presetId` تمام state فیلتر، جست‌وجو، sort، جزئیات و مقایسه را reset می‌کند؛ نمای بخش چهارم نیز با کلید view بازساخته می‌شود. | subtest «all three general start presets…» PASS؛ مرورگر برای هر سه مسیر صفر input فیلتر checked و «همهٔ ردیف‌ها» ثبت کرد، سپس یک فیلتر نرم‌افزار را فعال و بعد از رفتن به مسیر دیگر/بازگشت صفر فیلتر یافت. `show-drafts=true` در هر چهار URL باقی ماند. | preset کاربرد را از طرف کاربر حدس نمی‌زند؛ انتخاب کاربرد/نوع/کوانت عمداً با کنترل‌های موجود انجام می‌شود. |
+| ۲. ماتریس سخت‌افزار | اشکال در adapter و گزارش تأیید شد: هر feasibility متصل به deployment سخت‌افزارمند، ردیف مستقل می‌ساخت و در نتیجه ماتریس عملاً تک‌خانه‌ای می‌شد. | ردیف با کلید صریح شرایط مؤثر مشترک ساخته می‌شود؛ hardware و deployment/result ID از کلید خارج‌اند. هر خانه `results[]` مستقل با deployment، status، تنظیمات، حافظه/دیسک، محدودیت و منبع خودش دارد؛ چند نتیجه overwrite یا میانگین نمی‌شوند. | fixture دو GPU را در یک ردیف با دو خانه پُر می‌سازد؛ خانهٔ RTX 3090 دو نتیجهٔ مستقل و خانهٔ RTX 4090 deployment/source خودش را دارد. deployment با روش offload ردیف جدا می‌سازد. فیلتر hardware، ترکیب hardware+method و انتخاب دو ردیف برای مقایسه PASS هستند. مرورگر نیز دو خانه، بازشدن جزئیات و شناسهٔ منبع همان خانه را تأیید کرد. | ردیف جمع‌شده یک مشاهدهٔ عددی ترکیبی تولید نمی‌کند؛ تحلیل نسبت/برتری همچنان به شرایط و شواهد کامل نیاز دارد. |
+| ۳. backend و محور مقایسه | اشکال در policy تأیید شد: backend برای محور کلی product/release هم shared بود و مقایسهٔ خود موتورهای متفاوت را نامعتبر می‌کرد. | در نرم‌افزار، سازگاری و بنچمارک دو محور مستقل وجود دارد: `service-layer` با backend ثابت، و محور کل `software-stack`/`software` که stack و backend را متغیر می‌گیرد. سایر شرایط مؤثر همچنان shared هستند. | دو backend با hardware/workload مشترک در محور `software` معتبر و backend در differences است؛ همان دو ردیف در `service-layer` نامعتبرند. workload متفاوت `invalid` و workload نامعلوم `needs-more-data` می‌شود؛ side-by-side همچنان `display-only` و آزاد است. | انتخاب محور فقط تفاوت‌های نام‌برده را آزاد می‌کند؛ سازگاری محتوایی workload/metric هنوز به دادهٔ واقعی و review انسانی وابسته است. |
+| ۴. بررسی‌نشده و شاهد | اشکال در validator و عبارت گزارش تأیید شد: الزام evidence به همهٔ capability/API statusها، ثبت بررسی‌نشدهٔ بی‌شاهد را هم رد می‌کرد. | فقط `supported`، `conditional` و `not-supported` بدون evidence رد می‌شوند. `not-reviewed` بدون evidence مجاز است. `not-applicable` مستقل است و `statusReason` اجباری دارد. نبود کل رکورد با Datum نامعلوم و متن خنثی نمایش داده می‌شود. | fixture دارای capability و API با `not-reviewed`/بدون evidence معتبر است؛ supported بدون evidence رد می‌شود؛ N/A بدون دلیل رد می‌شود؛ adapter نبود API record را «رکورد بررسی ثبت نشده؛ نتیجهٔ مثبت یا منفی ندارد» نمایش می‌دهد. | این تسهیل فقط برای نبود ادعای factual است؛ locator و evidence ادعاهای مثبت، مشروط و منفی همچنان اجباری‌اند. |
+| ۵. آزمون رابط پُر | کمبود شاهد تأیید شد، نه الزاماً باگ UI: بررسی قبلی صفحهٔ production را با repository خالی می‌دید و مسیر canonical→adapter→کامپوننت را در مرورگر با ردیف پُر اثبات نمی‌کرد. | harness فقط‌آزمایشی، همان `LlmDataView` محصول را برای هر هشت config با خروجی `buildLlmViewRows(syntheticLlmRepository)` mount می‌کند. route عمومی ساخته نشده است. | مرورگر: شمار ردیف‌ها `2/1/3/3/3/3/2/1` در هشت نما؛ دو خانهٔ ماتریس؛ جزئیات/منابع؛ دو ردیف مقایسه و status معتبر؛ جست‌وجوی دارای نتیجه/بی‌نتیجه/reset؛ متن بلند فارسی/لاتین؛ desktop و 390×844؛ RTL؛ dark؛ table scroll؛ بدون page overflow یا exception—همه PASS. | audit دستی screen reader انجام نشده؛ داده‌ها صریحاً synthetic و برای نتیجه‌گیری محتوایی ممنوع‌اند. |
+| ۶. build و static output | مانع قبلی واقعی بود، ولی عبارت قدیمی گزارش دربارهٔ توقف `prepare-assets` دیگر دقیق نبود: اکنون پوشهٔ خالی slides وجود دارد و مرحلهٔ آماده‌سازی می‌گذرد، اما فایل‌های واقعی حاضر نیستند. | منابع محلی، `.gitignore`، `origin/main` و مستندات بررسی و build کامل دوباره اجرا شد. compile موفق بود؛ prerender روی نخستین cover غایب شکست خورد. فایل‌های generated که اجرای ناقص بازتولید کرده بود به نسخهٔ پیش از فرمان بازگردانده شد. | `npm run build`: BLOCKED/exit 1 در prerender با 404؛ `npm test`: 71 PASS، 6 FAIL وابسته به نبود `build/`/PDF، 1 SKIP؛ scan bundleهای compile‌شده هیچ marker fixture نیافت. | تا بازیابی snapshot واقعی هر دو media tree، HTML نهایی، sitemap و structured-data خروجی تازه قابل تأیید نیستند. |
 
 ## فایل‌ها و مسئولیت‌ها
 
@@ -34,6 +42,10 @@
 | `static/images/guides/llm.png` و پنج variant در `static/images/responsive/70da4fe2f2811f91-*` | ایجاد | تصویر کارت و اندازه‌های responsive موجود در قرارداد asset سایت |
 | `src/lib/generated/image-sources.json` و `image-variants.json` | تولیدشده | ثبت تصویر LLM در pipeline موجود تصویر؛ دستی hard-code نشده است |
 | `tests/fixtures/llm-synthetic.ts` | ایجاد | fixture صریحاً مصنوعی و test-only برای مسیر کامل canonical تا UI row |
+| `tests/fixtures/LlmDataViewHarness.svelte` | ایجاد | mount همان کامپوننت محصول برای هر هشت نما با repository مصنوعی؛ فقط در آزمون |
+| `tests/fixtures/llm-ui-harness.ts` | ایجاد | ورودی dynamic مرورگر برای mount/unmount کردن harness بدون route عمومی |
+| `tests/fixtures/vite.llm-ui.config.mjs` | ایجاد | پیکربندی dev test-only برای دسترسی Vite به harness زیر `tests/fixtures/` |
+| `tests/llm-guide-ui.review.mjs` | ایجاد/اصلاح | سناریوی CDP مسیرهای شروع، رابط پُر، ماتریس، جزئیات، منابع، مقایسه، فیلتر، desktop/mobile، RTL و dark |
 | `tests/llm-guide.test.mjs` | ایجاد/اصلاح | ۱۳ گروه آزمون هدفمند draft، taxonomy، adapter، فیلتر، مقایسه، provenance، روابط و خروجی استاتیک |
 | `docs/reviews/llm-guide-infrastructure-2026-09-15.md` | اصلاح | همین گزارش قابل ممیزی |
 
@@ -94,12 +106,26 @@ ServingStack (چند component + ارتباط + effective settings)
 | --- | --- | --- | --- | --- |
 | ۱. شناسنامهٔ مدل | یک `ModelVersion` | مدل/شناسه؛ خانواده/ناشر؛ نوع/مرحله؛ total/active params؛ معماری؛ context اعلام/ارزیابی؛ وضعیت/بازبینی | lineage؛ modality؛ کاربرد؛ زبان؛ مجوز؛ تاریخ؛ منبع | خانواده؛ ناشر؛ نوع؛ مرحله؛ total params |
 | ۲. مدل × کاربرد | model revision + artifact اختیاری؛ خانهٔ ماتریس یک assessment | مدل/artifact؛ نسخهٔ ارزیابی؛ هفت ستون کاربرد | basis؛ زیرکاربرد؛ زبان؛ quality evaluation؛ محدودیت؛ source locator | کاربرد؛ basis؛ total params |
-| ۳. امکان اجرا | یک feasibility برای deployment دقیق؛ خانهٔ ماتریس hardware target | artifact/method؛ workload؛ ستون‌های سخت‌افزار | VRAM؛ RAM؛ checkpoint/extra/temp disk؛ context/batch/concurrency؛ offload؛ محدودیت؛ منبع | سخت‌افزار؛ GPU count؛ feasibility status |
+| ۳. امکان اجرا | یک پیکربندی منطقی با شرایط مؤثر مشترک؛ خانهٔ ماتریس شامل deployment و یک یا چند feasibility همان hardware target | artifact/stack/method/quant؛ workload؛ ستون‌های سخت‌افزار | VRAM؛ RAM؛ checkpoint/extra/temp disk؛ context/batch/concurrency؛ offload؛ محدودیت؛ منبع هر نتیجه | سخت‌افزار؛ GPU count؛ feasibility status |
 | ۴.۱ مقایسهٔ نرم‌افزارها | یک `SoftwareRelease` | نام/نسخه؛ نقش‌ها؛ محیط/backend؛ API؛ امکانات سرویس؛ maintenance/review؛ evidence/limitations | OS/hardware تا API endpoint و مجوز؛ فهرست کامل پایین | **فقط** نوع نیاز؛ محیط اجرا؛ نقش نرم‌افزار |
 | ۴.۲ سازگاری استقرار | یک `DeploymentCompatibility` برای deployment دقیق | مدل/revision؛ artifact؛ stack/versions؛ hardware/workload؛ method/quant/parallelism؛ status | backend/settings؛ KV؛ memory؛ disk؛ AirLLM؛ startup؛ latency؛ workload؛ limitations؛ evidence | مدل/artifact؛ نرم‌افزار؛ status |
 | ۵. بنچمارک | یک `BenchmarkRun` متصل به deployment | run/model/artifact؛ stack/hardware؛ dataset/language/workload؛ TTFT؛ TPOT؛ per-request/aggregate throughput؛ goodput/SLO | revisions؛ environment؛ length distributions؛ load؛ reasoning؛ optimization؛ statistics؛ outcomes؛ resources؛ run-state؛ quality؛ raw provenance | مدل/artifact؛ سخت‌افزار؛ workload |
 | ۶. اقتصاد | scenario + deployment | scenario/deployment؛ need/quality/latency؛ acquisition؛ currency/basis date؛ TCO؛ accepted-request cost؛ break-even | traffic/hours/users؛ price observations؛ software lifecycle؛ system/operations؛ utilization/redundancy؛ period؛ license؛ token cost؛ ROI؛ derivation؛ evidence | کاربرد؛ acquisition؛ calculation period |
 | ۷. مدل تخصصی | یک `SpecializedModelAssessment` | مدل/kind؛ task؛ total params؛ task-specific quality؛ task-specific rate؛ evidence | language/dataset؛ artifact؛ workload/unit؛ generative alternative؛ limitations؛ sources | kind؛ کاربرد؛ total params |
+
+### کلید گروه‌بندی نمای سخت‌افزار
+
+`hardwareFeasibilityGroupKey()` یک serialization پایدار با ترتیب کلید قطعی از این dimensionها می‌سازد:
+
+```text
+modelVersionId + modelRevision + artifactId
++ servingStackId + backendEngineId
++ method + weightQuantization + kvCachePrecision + parallelism
++ contextLength + batchSize + concurrency + offloadAllowed
++ workloadId + effectiveSettings
+```
+
+`hardwareConfigId`، hardware target، `deployment.id`، `feasibility.id` و evidence ID عمداً در کلید نیستند؛ بنابراین فقط تفاوت سخت‌افزار، نتیجه را به ستون دیگر همان ردیف می‌برد. در مقابل artifact، کوانت، workload، method یا هر تنظیم مؤثر دیگر کلید را عوض و ردیف جدا ایجاد می‌کند. هر خانه `results[]` دارد و برای هر نتیجه `id`، `deploymentConfigId`، مقدار، جزئیات و `sourceIds` را مستقل نگه می‌دارد؛ خلاصهٔ چند نتیجه صرفاً فهرست statusهاست و جای دادهٔ اصلی، انتخاب خودکار یا میانگین را نمی‌گیرد.
 
 ### فیلترهای کامل بخش ۴.۱
 
@@ -111,7 +137,7 @@ ServingStack (چند component + ارتباط + effective settings)
 
 فیلترهای پیشرفته: محصول، نسخه، backend/version، OS، hardware family، local/cloud/hybrid، offline؛ وظیفه‌ها؛ queue؛ concurrency؛ continuous batching؛ admission control؛ load/unload؛ multi-model؛ cold start؛ prefix caching؛ speculative decoding؛ CPU/GPU و KV offload؛ multi-GPU sharding؛ independent replicas؛ streaming؛ structured output؛ tool use؛ reasoning control؛ model/template scope؛ parser scope؛ monitoring؛ metrics؛ health check؛ authentication؛ rate limiting؛ روش تأمین capability؛ مجوز نرم‌افزار؛ maintenance و review date.
 
-هر capability پنج status دارد: `supported`، `conditional`، `not-supported`، `not-reviewed` و `not-applicable`. روش تأمین جداست: `native`، `plugin`، `external-component` و `not-applicable`. سازگاری API یک boolean کلی نیست و `protocol + endpoint + capability + status + provision + scope + evidence` دارد.
+هر capability پنج status دارد: `supported`، `conditional`، `not-supported`، `not-reviewed` و `not-applicable`. سه وضعیت factual اول evidence می‌خواهند؛ `not-reviewed` بدون evidence قابل ثبت است؛ `not-applicable` با دلیل صریح `statusReason` از آن جدا می‌ماند. نبود رکورد نیز Datum نامعلوم با پیام خنثی است، نه `not-supported`. روش تأمین جداست: `native`، `plugin`، `external-component` و `not-applicable`. سازگاری API یک boolean کلی نیست و `protocol + endpoint + capability + status + provision + scope + evidence` دارد.
 
 ### فیلترهای کامل بخش ۴.۲
 
@@ -158,11 +184,13 @@ adapter فقط این داده‌ها را نمایش می‌دهد و از «م
 | شناسنامه | اندازه/مدل | kind، stage، metric، unit | مدل کوچک و بزرگ کنار هم | انتساب کیفیت artifact دیگر | پارامتر/واحد نامعلوم |
 | تناسب | مدل/artifact | application، language، dataset، test version، metric، unit | دو مدل روی آزمون فارسی واحد | جمع ستاره‌ای ادعا و اندازه‌گیری | نسخه یا زبان ناقص |
 | سخت‌افزار | hardware | artifact، stack، method، workload، context، concurrency، unit | یک deployment منطقی روی دو GPU | نسبت سرعت workload متفاوت | feasibility یا VRAM نامعلوم |
-| نرم‌افزار | product/release | need، environment، role، backend، workload/model/metric در صورت آزمون | محصولات بدون مدل منتخب کنار هم | ranking از capabilityهای ناهم‌دامنه | release/scope بررسی‌نشده |
-| سازگاری | stack/backend یا hardware | model revision، artifact، workload، method، quant، context، concurrency و شرایط غیرمحور | یک artifact روی دو stack یا GPU | تعمیم load در AirLLM به interactive service | RAM/disk/dependency ناقص |
-| بنچمارک | software، hardware یا model | سایر اجزا + workload، context، concurrency، metric، statistic، unit | دو backend روی GPU/workload یکسان | TTFT در برابر aggregate throughput یا workload دیگر | statistic/unit/settings ناقص |
+| نرم‌افزار | `service-layer` یا `software-stack` | در service-layer: backend + need/environment/role/workload/model/metric/unit؛ در software-stack همان شرایط به‌جز backend | wrapperها با backend ثابت، یا دو ترکیب/موتور با backend متفاوت | ranking از capabilityهای ناهم‌دامنه یا workload متفاوت | release/scope/شرط مشترک بررسی‌نشده |
+| سازگاری | `service-layer`، `software-stack` یا hardware | در service-layer backend مشترک؛ در software-stack، stack/backend متغیر؛ مدل/revision، artifact، workload، method، quant، KV، parallelism، context، batch، concurrency و settings غیرمحور مشترک | یک artifact روی دو stack/backend یا دو GPU | تعمیم load در AirLLM به interactive service یا اختلاف شرط غیرمحور | RAM/disk/dependency یا شرط مشترک ناقص |
+| بنچمارک | `service-layer`، software، hardware یا model | backend فقط در service-layer/hardware/model مشترک است؛ workload، method، quant، KV، context، batch، concurrency، arrival، reasoning، caching، settings، metric، statistic و unit مطابق محور کنترل می‌شوند | دو backend روی GPU/workload یکسان | TTFT در برابر aggregate throughput یا workload دیگر | statistic/unit/settings/شرط مشترک ناقص |
 | اقتصاد | acquisition/deployment | need، workload، quality، latency، currency، market، basis date، period، unit | مشاهدهٔ دو قیمت با observation date متفاوت | ROI بدون ارزش یا ارز نامشترک | maintenance/basis ناقص |
 | تخصصی | model/artifact | task، dataset، language، metric، unit، workload | دو reranker روی دادهٔ واحد | retrieval score در برابر token/s | dataset/unit نامعلوم |
+
+در هر سه نمای نرم‌افزاری، `service-layer` برای سنجش wrapper/API/gateway روی backend ثابت است؛ محور کل ترکیب، خود stack و backend را dimension متغیر می‌داند. این استثنا سایر shared dimensionها را آزاد نمی‌کند. evaluator اختلاف known در شرط مشترک را `invalid`، نبود مقدار مشترک را `needs-more-data` و مشاهدهٔ کنارهم را همیشه `display-only` می‌کند؛ سه مجوز ratio، ranking و superiority نیز جدا برگردانده می‌شوند.
 
 ## adapterها و مسیر کامل داده
 
@@ -179,10 +207,12 @@ adapter فقط این داده‌ها را نمایش می‌دهد و از «م
 
 adapterها lookupهای ID، label، search text، cell، matrix cell، facets، details، evidence IDs و comparison dimensions را از repository canonical می‌سازند. حافظهٔ MB/MiB/GB/GiB/TB/TiB برای فیلتر/sort به GiB canonical تبدیل می‌شود و display واحد اصلی را نگه می‌دارد.
 
-fixture آزمایشی سه software release، دو backend، دو ServingStack شامل gateway+server، دو سخت‌افزار، سه deployment، سه benchmark و دو cost scenario دارد. نام‌ها و URLها صریحاً synthetic/invalid هستند. آزمون این موارد را پوشش می‌دهد:
+fixture آزمایشی سه software release، دو backend، دو ServingStack شامل gateway+server، دو سخت‌افزار، چهار deployment، پنج feasibility، سه benchmark و دو cost scenario دارد. نام‌ها و URLها صریحاً synthetic/invalid هستند. آزمون این موارد را پوشش می‌دهد:
 
-- پرشدن هر هشت view و matrix cell از canonical entities؛
-- فیلتر AND/OR، sort و منبع خانه؛
+- پرشدن هر هشت view از canonical entities و شمار مرورگری `2/1/3/3/3/3/2/1`؛
+- یک ردیف سخت‌افزار با دو ستون پُر، دو نتیجهٔ مستقل در یک خانه، جزئیات و منبع scoped هر نتیجه؛
+- جداشدن deployment دارای روش اجرای متفاوت، فیلتر hardware و ترکیب AND با method؛
+- فیلتر AND/OR، sort و رفتار نتیجه/بی‌نتیجه/reset؛
 - ServingStack چندجزئی؛
 - مقایسهٔ دو backend با hardware/workload مشترک؛
 - مقایسهٔ دو hardware با محور hardware؛
@@ -191,7 +221,7 @@ fixture آزمایشی سه software release، دو backend، دو ServingStack 
 - تفاوت observation date قیمت و اشتراک calculation basis؛
 - جدا بودن registered users از concurrency.
 
-production repository در `guide.ts` برای همهٔ collectionها خالی است. جست‌وجوی source نیز تضمین می‌کند `src/` هیچ import یا متن fixture ندارد.
+production repository در `guide.ts` برای همهٔ collectionها خالی است. `LlmDataViewHarness.svelte` و ورودی mount آن فقط زیر `tests/fixtures/` هستند و route عمومی ندارند. جست‌وجوی source و scan خروجی compile‌شده نیز تضمین می‌کنند `src/` و bundle محصول هیچ import یا marker fixture ندارند.
 
 ## provenance و اعتبارسنجی علمی
 
@@ -200,7 +230,7 @@ production repository در `guide.ts` برای همهٔ collectionها خالی 
 - `ClaimRecord` مقدار factual را با `subjectId + fieldPath + value + nature + scope + evidenceIds` به شاهد متصل می‌کند.
 - هر Datum و metric observation می‌تواند evidence IDs خودش را داشته باشد؛ matrix cell نیز source IDs مستقل دارد.
 - دادهٔ مشتق‌شده `inputs[]` با field/value/unit/evidenceId/locator، formula/procedure، assumptions و rounding اجباری دارد.
-- capability و API claim بدون evidence مردود است؛ scope شامل release، backend، model، artifact، hardware، OS، endpoint، message format، template، parser و conditions است.
+- capability و API claim با statusهای factual یعنی `supported`، `conditional` و `not-supported` بدون evidence مردود است؛ `not-reviewed` ادعا نیست و بدون evidence مجاز است؛ `not-applicable` به `statusReason` نیاز دارد. scope شامل release، backend، model، artifact، hardware، OS، endpoint، message format، template، parser و conditions است.
 - validator یکتایی ID، همهٔ foreign keyها، locator، derivation input، نقش component، اتصال component، حضور backend در stack و زنجیرهٔ deployment را بررسی می‌کند.
 - quality evaluation مربوط به artifact باید همان model ID، artifact ID و artifact revision را داشته باشد. فهرست evaluation روی artifact نیز همین انتساب دقیق را کنترل می‌کند؛ کیفیت مدل پایه/BF16 یا نسخهٔ distilled خودکار منتقل نمی‌شود.
 
@@ -217,13 +247,13 @@ production repository در `guide.ts` برای همهٔ collectionها خالی 
 
 | مسیر | مقصد | preset |
 | --- | --- | --- |
-| برای کارم چه مدلی کافی است؟ | مدل × کاربرد | `task-first`؛ kind مولد، با دسترسی به بازهٔ پارامتر برای مقایسهٔ کوچک/بزرگ |
+| برای کارم چه مدلی کافی است؟ | مدل × کاربرد | `task-first`؛ بدون انتخاب اولیهٔ kind؛ کاربرد، kind و بازهٔ پارامتر با کنترل‌های موجود انتخاب می‌شوند |
 | با سخت‌افزار موجود چه می‌توانم اجرا کنم؟ | امکان اجرا | `existing-hardware`؛ کاربر سخت‌افزار خودش را انتخاب می‌کند و فرض پنهان اعمال نمی‌شود |
-| چگونه با حافظهٔ کمتر اجرا کنم؟ | سازگاری استقرار | `memory-constrained`؛ CPU/GPU offload، KV offload و layer-wise loading |
+| چگونه با حافظهٔ کمتر اجرا کنم؟ | سازگاری استقرار | `memory-constrained`؛ بدون انتخاب اولیه؛ مدل کوچک‌تر، کوانت، اجرای کامل/CPU، offload و layer-wise از کنترل‌های موجود قابل بررسی‌اند |
 | کدام پیکربندی هزینهٔ مناسب‌تری دارد؟ | اقتصاد | `cost-scenario`؛ کاربر need/basis را تعیین می‌کند و عدد فرضی اعمال نمی‌شود |
-| با چه نرم‌افزاری مدل را اجرا و سرویس‌دهی کنم؟ | مقایسهٔ نرم‌افزارها | `software-choice`؛ `need-type=team-api` و `software-role=api-server`، بدون انتخاب مدل |
+| با چه نرم‌افزاری مدل را اجرا و سرویس‌دهی کنم؟ | مقایسهٔ نرم‌افزارها | `software-choice`؛ بدون انتخاب اولیهٔ need/environment/role؛ انتخاب مدل نیز الزامی نیست |
 
-در browser test، preset پنجم دقیقاً دو chip «API تیمی» و «سرور API» را فعال کرد. `show-drafts=true` در همهٔ لینک‌های داخلی preview باقی می‌ماند.
+هر سه preset عمومی اصلاح‌شده `selections: {}` دارند. فیلترها همچنان آشکار و قابل پاک‌کردن‌اند، اما ورود اولیه چیزی را حذف نمی‌کند. در browser test، هر سه با صفر فیلتر فعال و متن «همهٔ ردیف‌ها» باز شدند؛ پس از فعال‌کردن یک فیلتر نرم‌افزار و جابه‌جایی به مسیر کم‌حافظه/بازگشت بدون preset، state قبلی باقی نماند. `show-drafts=true` در URL همهٔ این ناوبری‌ها حفظ شد.
 
 ## مقاله‌های برنامه‌ریزی‌شده و mapping
 
@@ -275,25 +305,34 @@ anchorهای ذخیره‌شده با headingهای Markdown منتشرشده آ
 | `npm run check` | PASS | صفر error و صفر warning |
 | lint/typecheck مستقل | موجود نیست | مخزن script جداگانه‌ای با نام `lint` یا `typecheck` ندارد؛ قرارداد TypeScript/Svelte با `npm run check` اجرا شد |
 | `node tests/llm-guide.test.mjs` | PASS/SKIP | ۱۲ از ۱۳ subtest هدفمند pass؛ فقط تست HTML نهایی در نبود build skip است |
-| `npm test` خارج از sandbox | FAIL وابسته به build | ۷۱ pass، ۶ fail و ۱ skip؛ هر شش failure متعلق به `static-output` و ناشی از نبود `build/` و فایل PDF واقعی است؛ سایر گروه‌ها از جمله هر ۶ آزمون `editorial-core` pass شدند |
+| `npm test` خارج از sandbox | FAIL وابسته به build | ۷۸ کل: ۷۱ PASS، ۶ FAIL و ۱ SKIP؛ هر شش failure متعلق به `static-output` و ناشی از نبود `build/`/sitemap و PDF واقعی است؛ همهٔ آزمون‌های مستقل از خروجی نهایی PASS شدند |
 | `node tests/editorial-core.test.mjs` | PASS | ۶ از ۶ |
 | `npm test` داخل sandbox | محدودیت runner | `editorial-core` به علت منع ایجاد فرایند تو‌در‌تو با `spawnSync /usr/bin/node20 EPERM` قابل اتکا نبود؛ بازاجرای خارج sandbox نتیجهٔ بالا را داد |
-| `npx vite build`، compile | PASS | client و SSR bundle ساخته شد؛ chunk مستقل `LlmGuidePage` تولید شد |
-| `npx vite build`، prerender | BLOCKED | 404 برای `/slides/behind-ai-dba/Behind-AI.pdf` و `/images/gallery/elecomp-1405/ai-ds/29.jpg`؛ سپس adapter خروجی کامل نساخت |
-| `npm run build` | BLOCKED | `prepare-assets` در `scandir static/slides` با ENOENT متوقف شد؛ مراحل sitemap/structured data/short links اجرا نشدند |
-| browser desktop | PASS | ۷ section-mounted view، هر دو tab بخش ۴، ۱۴ planned، ۵ start path، ۳ فیلتر اصلی نرم‌افزار، ۳ mode مقایسه، بدون overflow/broken image/exception |
-| browser mobile 390×844 | PASS | RTL، mobile TOC، tab grid، table scroll و بدون page overflow |
-| dark mode | PASS | `data-theme=dark` با همان بررسی mobile؛ ساختار و scroll سالم |
+| Vite compile در `npm run build` | PASS | ۴۶۷ module؛ client و SSR bundle ساخته شدند و chunk مستقل `LlmGuidePage` تولید شد |
+| prerender در `npm run build` | BLOCKED | نخستین خطا: `404 /slides/behind-ai-dba/cover.jpg (linked from /)`؛ build با exit 1 تمام شد و `build/` ساخته نشد |
+| `npm run build` کامل | BLOCKED | prepare content و compile گذشتند؛ prerender به علت media واقعی غایب متوقف شد؛ generate/verify sitemap، verify structured data و verify short links پس از build اجرا نشدند |
+| browser مسیرهای شروع | PASS | سه preset اصلاح‌شده بدون فیلتر پیش‌فرض؛ reset پس از تعویض مسیر؛ حفظ `show-drafts=true` |
+| browser fixture پُر، desktop | PASS | هر هشت نما با شمار `2/1/3/3/3/3/2/1`، دو خانهٔ سخت‌افزار، نتایج تکراری بدون overwrite، جزئیات/source، مقایسهٔ دو ردیف، filter match/no-match/reset، متن بلند و بدون exception/overflow |
+| browser fixture پُر، mobile 390×844 | PASS | RTL، dark mode، table scroll، جزئیات و پنل مقایسه؛ بدون page overflow |
 | draft query/Back/Forward | PASS | exact true، چهار مقدار نامعتبر، حذف query، back و forward |
-| خروج fixture از bundle | PASS | هیچ عبارت یا نام fixture مصنوعی در bundleهای client/server تولیدشدهٔ Vite یافت نشد |
+| خروج fixture از bundle | PASS | هیچ‌یک از markerهای fixture مصنوعی در `.svelte-kit/output/client` یا `server` مرحلهٔ compile یافت نشد |
 | `git diff --check` | PASS | خطای whitespace وجود ندارد |
-| sitemap/search/structured خروجی نهایی | BLOCKED برای بازتولید | معماری و source exclusion برقرار است، اما build کامل فعلی به دلیل assetهای ignored خروجی نهایی نساخت |
+| HTML/sitemap/search/structured خروجی نهایی | BLOCKED/SKIP | تست آماده است و به نبود `build/guides/llm/index.html` به‌درستی SKIP شد؛ source exclusion برقرار است، اما خروجی استاتیک تازه برای ادعای PASS وجود ندارد |
 
 هشدارهای Vite مربوط به `tabindex` در Markdownهای قدیمی موجود بودند و از فایل‌های LLM نبودند؛ `npm run check` برای کد فعلی صفر warning است.
 
+### تفکیک صریح نتیجه‌ها
+
+- **PASS:** `npm run check`؛ ۱۲ subtest مستقل LLM؛ مرورگر مسیرهای شروع؛ مرورگر fixture پُر در desktop/mobile/RTL/dark؛ compile client/SSR؛ scan نبود fixture؛ `git diff --check`.
+- **FAIL:** شش subtest از `tests/static-output.test.mjs`، همگی در اثر نبود خروجی build/PDF؛ failure مستقل LLM ثبت نشد.
+- **SKIP:** یک subtest LLM برای HTML/noindex/sitemap خروجی نهایی، چون `build/guides/llm/index.html` وجود ندارد.
+- **BLOCKED:** `npm run build` در prerender و در نتیجه ممیزی HTML اولیه، sitemap و structured data تازه؛ علت، media واقعی ignored و غایب است.
+
 ### تحلیل مانع دارایی‌ها
 
-`.gitignore` هر دو مسیر `/static/slides/` و `/static/images/gallery/` را به‌عنوان large media خارج Git نگه می‌دارد. `docs/adding-slides.md` فقط روش افزودن فایل واقعی را توضیح می‌دهد و دستور، backup path یا remote read-only برای بازیابی تعریف نمی‌کند. remote Git نیز این فایل‌های ignored را ندارد. deploy script فقط upload/delete با credential است و مسیر recovery نیست؛ برای جلوگیری از تغییر بیرونی یا افشای credential اجرا نشد.
+`.gitignore` هر دو مسیر `/static/slides/` و `/static/images/gallery/` را به‌عنوان large media خارج Git نگه می‌دارد. `git ls-tree origin/main` برای این دو مسیر ورودی tracked برنگرداند و جست‌وجوی فایل‌های نمونهٔ لازم (`Behind-AI.pdf` و تصویر `elecomp-1405/ai-ds/29.jpg`) در فضای محلی کاربر نتیجه‌ای نداشت. `docs/adding-slides.md` فقط روش افزودن فایل واقعی را توضیح می‌دهد و دستور، backup path یا remote read-only برای بازیابی تعریف نمی‌کند. deploy script فقط مسیر upload/delete با credential است و recovery read-only نیست؛ برای جلوگیری از اثر بیرونی یا افشای credential اجرا نشد.
+
+در اجرای نهایی این بازبینی، `prepare-assets` به‌دلیل وجود پوشهٔ خالی `static/slides/` عبور کرد و «۰ PDF» گزارش داد؛ این موفقیت به معنی وجود asset نیست. Vite هر دو bundle را ساخت و prerender در اولین ارجاع غایب، `/slides/behind-ai-dba/cover.jpg`، متوقف شد. ممکن است پس از بازیابی این فایل، ارجاع‌های غایب بعدی از gallery یا PDF نیز ظاهر شوند؛ فهرست کامل فقط با media tree واقعی قابل اثبات است.
 
 برای بازکردن gate نهایی باید snapshot واقعی هر دو پوشه از نگه‌داری محلی/پشتیبان پروژه بازیابی شود. سپس این فرمان‌ها اجرا شوند:
 
@@ -310,16 +349,18 @@ npm test
 | --- | --- | --- | --- |
 | هفت بخش/هشت جدول | `views.ts`، `LlmGuidePage.svelte` | انجام شد | هم‌زمان فقط tab فعال بخش ۴ mount می‌شود |
 | انتخاب نرم‌افزار بدون مدل | نمای `software-products` | انجام شد | دادهٔ واقعی عمداً خالی |
-| پنج مسیر شروع | `LlmGuidePage.svelte` + presets | انجام شد | دو مسیر بدون فرض عددی منتظر انتخاب کاربرند |
-| محصول/نسخه/نقش‌های چندگانه | `schema.ts` | انجام شد | capability واقعی نیازمند release و evidence است |
+| پنج مسیر شروع بدون حذف پیش‌فرض | `LlmGuidePage.svelte` + presets + reset در `LlmDataView.svelte` | انجام شد/مرورگر PASS | انتخاب معیارها عمداً به کاربر واگذار شده است |
+| ردیف منطقی ماتریس سخت‌افزار | `hardwareFeasibilityGroupKey` و `adaptHardwareFeasibility` | انجام شد/fixture+مرورگر PASS | نتیجهٔ عددی ادغام یا میانگین نمی‌شود |
+| چند نتیجه در یک خانه | `LlmMatrixCell.results[]` و UI جزئیات خانه | انجام شد/مرورگر PASS | تفسیر اختلاف نتایج نیازمند review محتوایی است |
+| محصول/نسخه/نقش‌های چندگانه | `schema.ts` | انجام شد | capability factual نیازمند release و evidence است؛ not-reviewed ادعا نیست |
 | backend واقعی و ServingStack | `schema.ts`، adapters | انجام شد | orchestration عمومی/پیچیده ساخته نشده |
 | endpoint-level API | `ApiCompatibilityClaim` | انجام شد | هیچ ادعای واقعی وارد نشده |
 | AirLLM و هزینهٔ RAM/disk | `AirLlmExecutionEvidence` | انجام شد | benchmark/install انجام نشده |
 | SLM/MoE/specialized | model schema + نماهای ۱/۲/۷ | انجام شد | رده‌بندی محلی، نه استاندارد جهانی |
-| سه حالت مقایسه | `comparison.ts` و UI | انجام شد | فرمول واقعی فقط پس از ورود محتوای ممیزی‌شده |
+| سه حالت و backend وابسته به محور | `comparison.ts`، policy سه نمای نرم‌افزاری و UI | انجام شد/آزمون PASS | فرمول واقعی فقط پس از ورود محتوای ممیزی‌شده |
 | adapter واقعی | `adapters.ts` | انجام شد | production rows صفر |
 | fixture خارج bundle | `tests/fixtures` + import scan test | انجام شد | فقط محیط test |
-| provenance دقیق | Evidence/Claim/Derivation/validator | انجام شد | تکمیل locator وظیفهٔ ورود محتواست |
+| provenance و `not-reviewed` دقیق | Evidence/Claim/Derivation/validator | انجام شد/آزمون PASS | تکمیل locator برای ادعاهای factual وظیفهٔ ورود محتواست |
 | جلوگیری از انتساب کیفیت | repository validator | انجام شد | review انسانی روش آزمون همچنان لازم است |
 | اقتصاد و lifecycle software | CostScenario | انجام شد | ماشین‌حساب/عدد فرضی ساخته نشده |
 | مجوز opt-in | model/software filters + costs | انجام شد | تحلیل حقوقی تولید نشده |
@@ -328,7 +369,7 @@ npm test
 | draft exact query | دو route + helper | انجام شد/مرورگر pass | امنیت/محرمانگی نیست؛ status میزبانی ممکن است 200 باشد |
 | noindex اولیه | route head | انجام شد | canonical بدون query است |
 | حذف از public discovery | dynamic import + عدم ثبت عمومی | انجام شد در source | بازتولید خروجی نهایی build مسدود است |
-| RTL/mobile/dark/a11y | دو component و browser review | انجام شد | audit دستی screen reader انجام نشده |
+| RTL/mobile/dark/a11y با دادهٔ پُر | component محصول + harness test-only + browser review | انجام شد/مرورگر PASS | audit دستی screen reader انجام نشده |
 | check/typecheck | script مخزن | PASS | — |
 | full build/sitemap/static HTML | pipeline مخزن | BLOCKED | media واقعی ignored در checkout موجود نیست |
 

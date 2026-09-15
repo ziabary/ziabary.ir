@@ -9,9 +9,75 @@ async function evaluate(expression) {
   return response.result.value;
 }
 
+async function navigate(path) {
+  await call('Page.navigate', { url: `${origin}${path}` });
+  await pause(1400);
+}
+
 await call('Emulation.setDeviceMetricsOverride', { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
-await call('Page.navigate', { url: `${origin}/guides/llm/?show-drafts=true` });
-await pause(1800);
+await navigate('/guides/llm/?show-drafts=true&view=model-suitability&preset=task-first#model-suitability');
+const taskPreset = await evaluate(`(() => {
+  const view = document.querySelector('#model-suitability');
+  return {
+    preview: location.search.includes('show-drafts=true'),
+    note: view?.querySelector('.preset-note')?.textContent ?? '',
+    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    state: view?.querySelector('.filter-actions span')?.textContent ?? ''
+  };
+})()`);
+assert.equal(taskPreset.preview, true);
+assert.match(taskPreset.note, /بدون حذف نوع‌های مدل/);
+assert.equal(taskPreset.checkedFilters, 0);
+assert.match(taskPreset.state, /همهٔ ردیف‌ها/);
+
+await navigate('/guides/llm/?show-drafts=true&view=software-products&preset=software-choice#serving-software');
+const softwarePreset = await evaluate(`(async () => {
+  const view = document.querySelector('#software-products');
+  const before = {
+    note: view?.querySelector('.preset-note')?.textContent ?? '',
+    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    state: view?.querySelector('.filter-actions span')?.textContent ?? ''
+  };
+  view?.querySelector('.filter-panel input[type="checkbox"]')?.click();
+  await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  return { before, selected: view?.querySelectorAll('.filter-panel input:checked').length ?? -1 };
+})()`);
+assert.match(softwarePreset.before.note, /نوع نیاز، محیط و نقش/);
+assert.equal(softwarePreset.before.checkedFilters, 0);
+assert.match(softwarePreset.before.state, /همهٔ ردیف‌ها/);
+assert.equal(softwarePreset.selected, 1);
+
+await navigate('/guides/llm/?show-drafts=true&view=deployment-compatibility&preset=memory-constrained#serving-software');
+const memoryPreset = await evaluate(`(() => {
+  const view = document.querySelector('#deployment-compatibility');
+  return {
+    preview: location.search.includes('show-drafts=true'),
+    note: view?.querySelector('.preset-note')?.textContent ?? '',
+    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    state: view?.querySelector('.filter-actions span')?.textContent ?? ''
+  };
+})()`);
+assert.equal(memoryPreset.preview, true);
+assert.match(memoryPreset.note, /مدل، کوانت و همهٔ مسیرهای اجرای کم‌حافظه/);
+assert.equal(memoryPreset.checkedFilters, 0);
+assert.match(memoryPreset.state, /همهٔ ردیف‌ها/);
+
+await navigate('/guides/llm/?show-drafts=true&view=software-products#serving-software');
+const routeReset = await evaluate(`(() => {
+  const view = document.querySelector('#software-products');
+  return {
+    preview: location.search.includes('show-drafts=true'),
+    presetNote: Boolean(view?.querySelector('.preset-note')),
+    checkedFilters: view?.querySelectorAll('.filter-panel input:checked').length ?? -1,
+    state: view?.querySelector('.filter-actions span')?.textContent ?? ''
+  };
+})()`);
+assert.equal(routeReset.preview, true);
+assert.equal(routeReset.presetNote, false);
+assert.equal(routeReset.checkedFilters, 0);
+assert.match(routeReset.state, /همهٔ ردیف‌ها/);
+
+await navigate('/guides/llm/?show-drafts=true');
 await evaluate(`(async () => {
   const harness = await import('/tests/fixtures/llm-ui-harness.ts');
   await harness.mountLlmFixture(document.body);
@@ -72,7 +138,9 @@ const comparison = await evaluate(`(async () => {
   rows[0].querySelector('.pick input').click();
   rows[1].querySelector('.pick input').click();
   view.querySelector('input[value="controlled-experiment"]').click();
+  await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
   const axis = view.querySelector('.axis-picker select');
+  if (!axis) throw new Error('محور مقایسه پس از انتخاب حالت آزمایش کنترل‌شده نمایش داده نشد.');
   axis.value = 'software';
   axis.dispatchEvent(new Event('change', { bubbles: true }));
   await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
@@ -121,6 +189,6 @@ assert.deepEqual(mobile, { width: 390, theme: 'dark', dir: 'rtl', pageOverflow: 
 
 const exceptions = events.filter((event) => event.method === 'Runtime.exceptionThrown');
 assert.equal(exceptions.length, 0, JSON.stringify(exceptions));
-console.log(JSON.stringify({ initial, hardwareDetails, comparison, filtering, mobile }, null, 2));
+console.log(JSON.stringify({ taskPreset, softwarePreset, memoryPreset, routeReset, initial, hardwareDetails, comparison, filtering, mobile }, null, 2));
 await call('Page.close');
 socket.end();
