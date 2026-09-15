@@ -14,6 +14,7 @@
   $: count = articleCount(collection);
   $: extraCount = nonArticleCount(collection);
   $: planned = collection.status === 'planned';
+  $: draft = collection.status === 'draft';
 </script>
 
 <svelte:element this={target ? 'a' : 'article'} class="guide-collection-card" class:linked={Boolean(target)}
@@ -26,23 +27,26 @@
     <p>{collection.subtitle}</p>
     <div class="guide-card-meta">
       {#if target}
-      {#if planned}
-        <span class="planned-badge">{locale === 'fa' ? 'در برنامهٔ نگارش' : locale === 'en' ? 'Planned' : 'En planificación'}</span>
-        <span>{locale === 'fa' ? 'دربارهٔ این مجموعه' : locale === 'en' ? 'About this collection' : 'Acerca de esta colección'}</span>
-      {:else if preview}
-        <span>{locale === 'es' ? 'Ver borrador en español' : 'Preview English draft'}</span>
-      {:else}
-      <span>
-        {#if locale === 'fa'}
-        {persianNumber.format(count)} مقاله
-        {#if extraCount} · {persianNumber.format(extraCount)} محتوای تعاملی{/if}
+        {#if draft}
+          <span class="planned-badge">{locale === 'fa' ? 'پیش‌نویس' : locale === 'en' ? 'Draft' : 'Borrador'}</span>
+          <span>{locale === 'fa' ? 'پیش‌نمایش مجموعه' : locale === 'en' ? 'Preview collection' : 'Vista previa de la colección'}</span>
+        {:else if planned}
+          <span class="planned-badge">{locale === 'fa' ? 'در برنامهٔ نگارش' : locale === 'en' ? 'Planned' : 'En planificación'}</span>
+          <span>{locale === 'fa' ? 'دربارهٔ این مجموعه' : locale === 'en' ? 'About this collection' : 'Acerca de esta colección'}</span>
+        {:else if preview}
+          <span>{locale === 'es' ? 'Ver borrador en español' : 'Preview English draft'}</span>
         {:else}
-        {count} {locale === 'en' ? (count === 1 ? 'article' : 'articles') : (count === 1 ? 'artículo' : 'artículos')}
-        {#if extraCount} · {extraCount} {locale === 'en' ? 'interactive resources' : 'recursos interactivos'}{/if}
+          <span>
+            {#if locale === 'fa'}
+              {persianNumber.format(count)} مقاله
+              {#if extraCount} · {persianNumber.format(extraCount)} محتوای تعاملی{/if}
+            {:else}
+              {count} {locale === 'en' ? (count === 1 ? 'article' : 'articles') : (count === 1 ? 'artículo' : 'artículos')}
+              {#if extraCount} · {extraCount} {locale === 'en' ? 'interactive resources' : 'recursos interactivos'}{/if}
+            {/if}
+          </span>
         {/if}
-      </span>
-      {/if}
-      <i aria-hidden="true">{locale === 'fa' ? '←' : '→'}</i>
+        <i aria-hidden="true">{locale === 'fa' ? '←' : '→'}</i>
       {:else}
         <span>{unpublished}</span>
       {/if}

@@ -13,7 +13,7 @@ export type GuideItem = {
 
 export type GuideCollection = {
   slug: string;
-  status: 'planned' | 'published';
+  status: 'draft' | 'planned' | 'published';
   title: string;
   subtitle: string;
   eyebrow: string;

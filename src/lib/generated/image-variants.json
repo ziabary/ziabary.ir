@@ -8124,6 +8124,38 @@
       }
     ]
   },
+  "/images/guides/llm.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1957636,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/70da4fe2f2811f91-320.webp",
+        "bytes": 9078
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/70da4fe2f2811f91-640.webp",
+        "bytes": 28444
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/70da4fe2f2811f91-960.webp",
+        "bytes": 54996
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/70da4fe2f2811f91-1440.webp",
+        "bytes": 103698
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/70da4fe2f2811f91-1672.webp",
+        "bytes": 129968
+      }
+    ]
+  },
   "/images/guides/secure-operating-system.webp": {
     "width": 1600,
     "height": 900,

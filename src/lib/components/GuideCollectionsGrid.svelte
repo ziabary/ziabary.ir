@@ -14,7 +14,13 @@
   {#each collections as collection (collection.slug)}
     {@const preview = dev && locale !== 'fa' && collection.slug === 'gpu-selection' && gpuReviews[locale].draft}
     <GuideCollectionCard {collection} {locale} {preview}
-      href={locale === 'fa' ? `/guides/${collection.slug}/` : preview || getLocalizedGuideCollection(locale, collection.slug) ? `/${locale}/guides/${collection.slug}/` : null} />
+      href={collection.status === 'draft' && locale === 'fa'
+        ? `/guides/${collection.slug}/?show-drafts=true`
+        : locale === 'fa'
+          ? `/guides/${collection.slug}/`
+          : preview || getLocalizedGuideCollection(locale, collection.slug)
+            ? `/${locale}/guides/${collection.slug}/`
+            : null} />
   {/each}
 </section>
 
