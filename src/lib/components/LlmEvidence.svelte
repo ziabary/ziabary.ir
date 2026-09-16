@@ -6,7 +6,7 @@
   $: byId = new Map(evidence.map((source) => [source.id, source]));
   $: sources = [...new Set(ids)].map((id) => ({ id, source: byId.get(id as Evidence['id']) }));
   const kinds: Record<EvidenceKind, string> = {
-    'publisher-report': 'گزارش ناشر', 'direct-measurement': 'اندازه‌گیری مستقیم',
+    'publisher-report': 'گزارش ناشر', 'third-party-report': 'گزارش شخص ثالث', 'documented-specification': 'مستندات فنی', 'direct-measurement': 'اندازه‌گیری مستقیم',
     'calculated-from-specifications': 'محاسبه از مشخصات', 'editorial-analysis': 'تحلیل تحریریه',
     'unknown-needs-review': 'نامعلوم؛ نیازمند بررسی'
   };

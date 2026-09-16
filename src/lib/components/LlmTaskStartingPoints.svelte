@@ -22,6 +22,8 @@
   $: model = researchModel(repository, item.startingModelRepository);
 </script>
 <details class="task-start"><summary>کدام مدل برای کار من مناسب است؟</summary>
+  <p>نقش مدل با بخش‌های دیگر سامانه فرق دارد: بازیاب و بازرتبه‌بند سند را انتخاب می‌کنند و مدل مولد پاسخ را می‌نویسد. برنامهٔ عامل، اجرای ابزار و دسترسی به داده را مدیریت می‌کند. در خروجی ساخت‌یافته نیز اعتبارسنجی JSON بر عهدهٔ برنامه است.</p>
+  <p>بودجهٔ ورودی شامل پرسش، تاریخچه، اسناد و تعریف ابزارهاست؛ برای مدل‌های استدلالی، توکن‌های تفکر هم به زمان و هزینهٔ پاسخ اضافه می‌شوند.</p>
   <label>کار مورد نظر<select bind:value={selected}>{#each research.startingPoints as task,index}<option value={index}>{task.taskFa.replace('۱۴B','۱۴ میلیاردی')}</option>{/each}</select></label>
   <article><header>{#if llmBrand(item.startingModelRepository)}<img src={llmBrand(item.startingModelRepository)} alt="" width="36" height="36" />{/if}<bdi>{item.startingModelRepository.split('/')[1]}</bdi><small>مدل پیشنهادی</small></header><p>{descriptions[selected]}</p>{#if model}<button type="button" on:click={() => onOpenModel(model!.id)}>معرفی، نسخه‌ها و نتایج این مدل ←</button>{/if}<LlmEvidence ids={item.sourceIds.map(researchEvidenceId)} evidence={repository.evidence} /></article>
 </details>

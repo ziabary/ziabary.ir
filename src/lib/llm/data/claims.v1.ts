@@ -2613,7 +2613,7 @@ claims.push({
   "id": "claim:model-qwen-qwen3-5-2b-architecture",
   "subjectId": "model:qwen-qwen3-5-2b",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "dense",
   "nature": "editorial-analysis",
   "scope": "شناسنامهٔ مدل؛ نوع و مرحلهٔ مدل نگاشت تحریریه از شرح ناشر است.",
   "evidenceIds": [
@@ -2712,7 +2712,7 @@ claims.push({
   "id": "claim:model-qwen-qwen3-5-35b-a3b-architecture",
   "subjectId": "model:qwen-qwen3-5-35b-a3b",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "moe",
   "nature": "editorial-analysis",
   "scope": "شناسنامهٔ مدل؛ نوع و مرحلهٔ مدل نگاشت تحریریه از شرح ناشر است.",
   "evidenceIds": [
@@ -2811,7 +2811,7 @@ claims.push({
   "id": "claim:model-qwen-qwen3-5-4b-architecture",
   "subjectId": "model:qwen-qwen3-5-4b",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "dense",
   "nature": "editorial-analysis",
   "scope": "شناسنامهٔ مدل؛ نوع و مرحلهٔ مدل نگاشت تحریریه از شرح ناشر است.",
   "evidenceIds": [
@@ -2910,7 +2910,7 @@ claims.push({
   "id": "claim:model-qwen-qwen3-5-9b-architecture",
   "subjectId": "model:qwen-qwen3-5-9b",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "dense",
   "nature": "editorial-analysis",
   "scope": "شناسنامهٔ مدل؛ نوع و مرحلهٔ مدل نگاشت تحریریه از شرح ناشر است.",
   "evidenceIds": [
@@ -3889,7 +3889,7 @@ claims.push({
   "id": "claim:model-deepseek-ai-deepseek-v4-1-flash-architecture",
   "subjectId": "model:deepseek-ai-deepseek-v4-1-flash",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "moe",
   "nature": "editorial-analysis",
   "scope": "شناسنامهٔ مدل؛ نوع و مرحلهٔ مدل نگاشت تحریریه از شرح ناشر است.",
   "evidenceIds": [
@@ -6892,11 +6892,11 @@ claims.push({
   "id": "claim:software-release-tgi-v3-3-7-maintenancestatus",
   "subjectId": "software-release:tgi-v3-3-7",
   "fieldPath": "maintenanceStatus",
-  "value": "maintenance",
+  "value": "archived",
   "nature": "publisher-report",
   "scope": "وضعیت مشاهده‌شدهٔ انتشار؛ active یعنی انتشار جاری مشاهده شده، نه تضمین پشتیبانی آینده.",
   "evidenceIds": [
-    "evidence:software-tgi-maintenance"
+    "evidence:audit-20260916-tgi-archive"
   ]
 });
 claims.push({
@@ -18574,7 +18574,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-27b-architecture",
   "subjectId": "model:qwen-qwen3-5-27b",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "dense",
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -18717,7 +18717,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-0-8b-architecture",
   "subjectId": "model:qwen-qwen3-5-0-8b",
   "fieldPath": "architecture",
-  "value": "hybrid",
+  "value": "dense",
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -27052,17 +27052,6 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-model-huggingfacetb-smollm2-135m-instruct-applications-3",
-  "subjectId": "model:huggingfacetb-smollm2-135m-instruct",
-  "fieldPath": "applications.3",
-  "value": "agents-tools",
-  "nature": "editorial-analysis",
-  "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
-  "evidenceIds": [
-    "evidence:v03-fa4d5f78d993271304"
-  ]
-});
-claims.push({
   "id": "claim:v03-model-huggingfacetb-smollm2-360m-instruct-applications-0",
   "subjectId": "model:huggingfacetb-smollm2-360m-instruct",
   "fieldPath": "applications.0",
@@ -27089,17 +27078,6 @@ claims.push({
   "subjectId": "model:huggingfacetb-smollm2-360m-instruct",
   "fieldPath": "applications.2",
   "value": "structured-extraction",
-  "nature": "editorial-analysis",
-  "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
-  "evidenceIds": [
-    "evidence:v03-c4f522374a6511e10d"
-  ]
-});
-claims.push({
-  "id": "claim:v03-model-huggingfacetb-smollm2-360m-instruct-applications-3",
-  "subjectId": "model:huggingfacetb-smollm2-360m-instruct",
-  "fieldPath": "applications.3",
-  "value": "agents-tools",
   "nature": "editorial-analysis",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [

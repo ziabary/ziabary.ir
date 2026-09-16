@@ -1,0 +1,35 @@
+TAP version 13
+# Subtest: /home/user/Projects/ziabary-platform-sveltekit/tests/llm-audit-corrections.test.mjs
+ok 1 - /home/user/Projects/ziabary-platform-sveltekit/tests/llm-audit-corrections.test.mjs
+  ---
+  duration_ms: 1651.56447
+  ...
+# Subtest: /home/user/Projects/ziabary-platform-sveltekit/tests/llm-evidence-copy.test.mjs
+ok 2 - /home/user/Projects/ziabary-platform-sveltekit/tests/llm-evidence-copy.test.mjs
+  ---
+  duration_ms: 345.686213
+  ...
+# Subtest: /home/user/Projects/ziabary-platform-sveltekit/tests/llm-guide.test.mjs
+ok 3 - /home/user/Projects/ziabary-platform-sveltekit/tests/llm-guide.test.mjs
+  ---
+  duration_ms: 2456.444381
+  ...
+# Subtest: /home/user/Projects/ziabary-platform-sveltekit/tests/llm-research.test.mjs
+ok 4 - /home/user/Projects/ziabary-platform-sveltekit/tests/llm-research.test.mjs
+  ---
+  duration_ms: 1757.291619
+  ...
+# Subtest: /home/user/Projects/ziabary-platform-sveltekit/tests/llm-upgrade.test.mjs
+ok 5 - /home/user/Projects/ziabary-platform-sveltekit/tests/llm-upgrade.test.mjs
+  ---
+  duration_ms: 1649.419363
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2462.207786

@@ -159,3 +159,42 @@ softwareProducts.push({
     "evidence:software-lm-studio-docs"
   ]
 });
+softwareProducts.push({
+  "id": "software-product:ktransformers",
+  "name": "KTransformers",
+  "officialUrl": "https://github.com/kvcache-ai/ktransformers",
+  "taxonomyRoleHints": [
+    "inference-engine-library"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-ktransformers-release",
+    "evidence:audit-20260916-ktransformers-docs",
+    "evidence:audit-20260916-ktransformers-license"
+  ]
+});
+softwareProducts.push({
+  "id": "software-product:sentence-transformers",
+  "name": "Sentence Transformers",
+  "officialUrl": "https://github.com/huggingface/sentence-transformers",
+  "taxonomyRoleHints": [
+    "inference-engine-library"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-sentence-transformers-release",
+    "evidence:audit-20260916-sentence-transformers-docs",
+    "evidence:audit-20260916-sentence-transformers-license"
+  ]
+});
+softwareProducts.push({
+  "id": "software-product:flagembedding",
+  "name": "FlagEmbedding",
+  "officialUrl": "https://github.com/FlagOpen/FlagEmbedding",
+  "taxonomyRoleHints": [
+    "inference-engine-library"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-flagembedding-release",
+    "evidence:audit-20260916-flagembedding-docs",
+    "evidence:audit-20260916-flagembedding-license"
+  ]
+});

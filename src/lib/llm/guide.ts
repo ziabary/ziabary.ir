@@ -102,7 +102,7 @@ export interface SoftwareProductCandidate {
   officialUrl: string;
   /** Navigation hints only; verified capabilities belong to versioned rows. */
   roleHints: SoftwareRole[];
-  maintenanceHint?: { status: 'maintenance'; reviewedOn: string; sourceUrl: string };
+  maintenanceHint?: { status: 'maintenance' | 'archived'; reviewedOn: string; sourceUrl: string };
 }
 
 /**
@@ -168,11 +168,16 @@ export const softwareProductCandidates: SoftwareProductCandidate[] = [
     officialUrl: 'https://github.com/huggingface/text-generation-inference',
     roleHints: ['inference-engine-library', 'api-server'],
     maintenanceHint: {
-      status: 'maintenance', reviewedOn: '2026-09-15',
+      status: 'archived', reviewedOn: '2026-09-16',
       sourceUrl: 'https://github.com/huggingface/text-generation-inference'
     }
   }
 ];
+softwareProductCandidates.push(
+  { id: 'ktransformers', name: 'KTransformers', officialUrl: 'https://github.com/kvcache-ai/ktransformers', roleHints: ['inference-engine-library'] },
+  { id: 'sentence-transformers', name: 'Sentence Transformers', officialUrl: 'https://sbert.net', roleHints: ['inference-engine-library'] },
+  { id: 'flagembedding', name: 'FlagEmbedding', officialUrl: 'https://github.com/FlagOpen/FlagEmbedding', roleHints: ['inference-engine-library'] }
+);
 export const executionMethodCandidates = [
   { id: 'full-gpu', label: 'اجرای کامل روی GPU' },
   { id: 'cpu', label: 'اجرای CPU' },

@@ -6,7 +6,7 @@
   import LlmGuideChapters from './LlmGuideChapters.svelte';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import LlmModelProfile from './LlmModelProfile.svelte';
-  import PageHero from './PageHero.svelte';
+  import GuideOpening from './GuideOpening.svelte';
   import LlmDataView from './LlmDataView.svelte';
   import LlmResearchView from './LlmResearchView.svelte';
   import LlmTaskStartingPoints from './LlmTaskStartingPoints.svelte';
@@ -115,12 +115,39 @@
   <meta name="description" content={llmGuideCollection.subtitle} />
 </svelte:head>
 
-<main class="llm-guide" dir="rtl">
+<main class="llm-guide" dir="rtl" use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
   <nav class="breadcrumbs wrap" aria-label="مسیر راهنما">
     <a href="/guides/">فنی‌جات</a><span aria-hidden="true">/</span><span aria-current="page">راهنمای مدل‌های زبانی</span>
   </nav>
 
-  <PageHero eyebrow={llmGuideCollection.eyebrow} title={llmGuideCollection.title} lead={llmGuideCollection.subtitle} />
+  <div class="llm-opening">
+    <GuideOpening title={llmGuideCollection.title} lead={llmGuideCollection.subtitle} eyebrow="LLM & SLM" image={llmGuideCollection.image} imageAlt={llmGuideCollection.imageAlt}>
+        <p>امروزه بسیاری از افراد و سازمان‌ها تمایل دارند برای کاربردهای مختلف، یک مدل زبانی محلی در اختیار داشته باشند؛ مدلی که روی رایانه یا سرور خودشان اجرا شود و برای گفت‌وگو، برنامه‌نویسی، ترجمه یا پاسخ‌گویی بر اساس اسناد از آن استفاده کنند. حفظ محرمانگی اطلاعات، استقلال از سرویس‌های خارجی و کنترل هزینه‌ها از انگیزه‌های این انتخاب است. اما تنوع مدل‌ها و روش‌های اجرای آن‌ها، تصمیم‌گیری را دشوار می‌کند: چه مدلی برای کار ما کافی است، روی سخت‌افزار موجود چه چیزی می‌توان اجرا کرد و چه زمانی ارتقای زیرساخت ضرورت دارد؟
+</p><p>
+این مجموعه برای پاسخ به همین پرسش‌ها تهیه شده است. در جدول‌های تعاملی می‌توانید مدل‌های زبانی کوچک و بزرگ، مدل‌های تخصصی مرتبط، نیازهای سخت‌افزاری و نرم‌افزارهای اجرای آن‌ها را مقایسه کنید و به منابع و لینک‌های کاربردی دسترسی داشته باشید. مقاله‌های همراه نیز توضیح می‌دهند هر انتخاب چه مزایا و محدودیت‌هایی دارد؛ تا بتوانید متناسب با کاربرد، کیفیت موردانتظار و بودجه خود تصمیم بگیرید و برای قابلیتی که به آن نیاز ندارید، هزینه نکنید.
+</p>
+    </GuideOpening>
+    <section class="start" id="start" aria-labelledby="start-title">
+          <header>
+            <small>راهنمای استفاده از مجموعه</small>
+            <h2 id="start-title">از کجا شروع کنیم؟</h2>
+            <p>برای مقایسه، جدول را باز کنید؛ برای شناخت گزینه‌ها و دلیل انتخاب، مقالهٔ همان مسیر را بخوانید.</p>
+          </header>
+          <nav class="desktop-paths" aria-label="مسیرهای پیشنهادی شروع">
+            {@render readingPaths()}
+          </nav>
+    </section>
+          <div class="collection-stats" aria-label="اطلاعات مجموعه">
+            <a href="?show-drafts=true&view=model-catalog#model-catalog">{numbers.format(llmRepository.models.length)} مدل</a>
+            <a href="?show-drafts=true&view=software-products#serving-software">{numbers.format(llmRepository.softwareProducts.length)} نرم‌افزار</a>
+            <span>{numbers.format(tableCount)} جدول تعاملی</span>
+            <a href="#llm-notes">{numbers.format(readingArticles.size)} مقالهٔ راهنما</a>
+            <span class="data-updated">
+              <span>آخرین به‌روزرسانی داده‌ها:</span>
+              <time datetime={llmDatasetUpdatedOn}>{formatDate(llmDatasetUpdatedOn)}</time>
+            </span>
+          </div>
+  </div>
 
   <div class="wrap guide-layout">
     <aside class="guide-navigation" data-reading-navigation>
@@ -131,37 +158,7 @@
       <a class="back-link" href="/guides/">دیدن مجموعه‌های فنی</a>
     </aside>
 
-    <div class="guide-main" use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
-      <div class="guide-overview">
-        <img class="collection-cover" {...imageAttributes(llmGuideCollection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={llmGuideCollection.imageAlt} width="1672" height="941" fetchpriority="high" />
-        <section class="start" id="start" aria-labelledby="start-title">
-          <header>
-            <small>راهنمای استفاده از مجموعه</small>
-            <h2 id="start-title">از کجا شروع کنیم؟</h2>
-            <p>برای مقایسه، جدول را باز کنید؛ برای شناخت گزینه‌ها و دلیل انتخاب، مقالهٔ همان مسیر را بخوانید.</p>
-          </header>
-          <nav class="desktop-paths" aria-label="مسیرهای پیشنهادی شروع">
-            {@render readingPaths()}
-          </nav>
-          <details class="mobile-paths">
-            <summary>مسیر مناسب من کدام است؟</summary>
-            <nav aria-label="مسیرهای پیشنهادی شروع">
-              {@render readingPaths()}
-            </nav>
-          </details>
-          <footer aria-label="اطلاعات مجموعه">
-            <a href="?show-drafts=true&view=model-catalog#model-catalog">{numbers.format(llmRepository.models.length)} مدل</a>
-            <a href="?show-drafts=true&view=software-products#serving-software">{numbers.format(llmRepository.softwareProducts.length)} نرم‌افزار</a>
-            <span>{numbers.format(tableCount)} جدول تعاملی</span>
-            <a href="#llm-notes">{numbers.format(readingArticles.size)} مقالهٔ راهنما</a>
-            <span class="data-updated">
-              <span>آخرین به‌روزرسانی داده‌ها:</span>
-              <time datetime={llmDatasetUpdatedOn}>{formatDate(llmDatasetUpdatedOn)}</time>
-            </span>
-          </footer>
-        </section>
-      </div>
-
+    <div class="guide-main">
       <div class="guide-navigation mobile-navigation">
       <details class="mobile-toc">
         <summary>در این مجموعه</summary>
@@ -220,7 +217,7 @@
             <a class="path-button" href={`?show-drafts=true&view=${path.view}&preset=${path.preset}#${path.section ?? path.view}`}>
               {path.label} <span aria-hidden="true">←</span>
             </a>
-              <a class="path-button article-path" href={`#${path.article}`} onclick={() => revealChapter(path.article)} aria-label={`خواندن مقاله: ${readingArticles.get(path.article)?.title}`} title={readingArticles.get(path.article)?.title}>
+              <a class="article-path" href={`#${path.article}`} onclick={() => revealChapter(path.article)} aria-label={`خواندن مقاله: ${readingArticles.get(path.article)?.title}`} title={readingArticles.get(path.article)?.title}>
                 مقالهٔ راهنما <span aria-hidden="true">←</span>
               </a>
             </div>
@@ -285,30 +282,30 @@
 {/snippet}
 
 <style>
-  .llm-guide{min-width:0}.breadcrumbs{display:flex;position:static;inset:auto;flex-direction:row;gap:8px;align-items:center;margin-inline:auto;padding:26px 0 0;border:0;background:transparent;color:var(--muted);font-size:11px}.breadcrumbs a{color:var(--link-ink)}.guide-layout{display:grid;grid-template-columns:188px minmax(0,1fr);gap:24px;width:calc(100% - 200px);max-width:none;margin-inline-start:12px;margin-inline-end:188px;padding-block:18px 80px;align-items:start}.guide-navigation{position:sticky;top:100px;min-width:0}.guide-navigation details{border-bottom:1px solid var(--line)}.guide-navigation summary{padding:11px 0;cursor:pointer;font-size:12px;font-weight:800}.guide-navigation nav{display:block;position:static;inset:auto;margin:0;padding:0;border:0;background:transparent;max-height:calc(100dvh - 210px);overflow:auto}.guide-navigation ol{list-style:none;margin:0;padding:0}.guide-navigation a{display:block;padding:8px 10px;border-inline-start:2px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7;white-space:normal}.guide-navigation a:hover,.guide-navigation a.active{border-color:var(--teal);color:var(--link-ink)}.guide-navigation .back-link{margin-top:13px;border:0;color:var(--link-ink)}.mobile-toc{display:none}.guide-main{min-width:0}.llm-guide>:global(.page-hero){width:calc(100% - 412px);margin-inline-start:224px;margin-inline-end:188px;padding-block:35px 25px;text-align:start}.llm-guide>:global(.page-hero h1){max-width:920px;font-size:clamp(34px,4vw,56px);line-height:1.35}.llm-guide>:global(.page-hero>p:last-child){max-width:850px;font-size:14px}
-  .start{min-width:0;scroll-margin-top:100px;align-self:start;padding:24px;border:1px solid var(--line);background:var(--soft)}
-  .start header small,.serving-section>header small{color:var(--teal);font-size:11px}
-  .start h2{margin:10px 0 12px;font-size:26px;line-height:1.6}
-  .start header p{margin:0;color:var(--muted);font-size:14px;line-height:2.1}
+  .llm-guide{min-width:0}.breadcrumbs{display:flex;position:static;inset:auto;flex-direction:row;gap:8px;align-items:center;margin-inline:auto;padding:26px 0 0;border:0;background:transparent;color:var(--muted);font-size:11px}.breadcrumbs a{color:var(--link-ink)}.guide-layout{display:grid;grid-template-columns:188px minmax(0,1fr);gap:24px;width:calc(100% - 200px);max-width:none;margin-inline-start:12px;margin-inline-end:188px;padding-block:18px 80px;align-items:start}.guide-navigation{position:sticky;top:100px;min-width:0}.guide-navigation details{border-bottom:1px solid var(--line)}.guide-navigation summary{padding:11px 0;cursor:pointer;font-size:12px;font-weight:800}.guide-navigation nav{display:block;position:static;inset:auto;margin:0;padding:0;border:0;background:transparent;max-height:calc(100dvh - 210px);overflow:auto}.guide-navigation ol{list-style:none;margin:0;padding:0}.guide-navigation a{display:block;padding:8px 10px;border-inline-start:2px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7;white-space:normal}.guide-navigation a:hover,.guide-navigation a.active{border-color:var(--teal);color:var(--link-ink)}.guide-navigation .back-link{margin-top:13px;border:0;color:var(--link-ink)}.mobile-toc{display:none}.guide-main{min-width:0}
+  .start{width:min(1280px,calc(100% - 48px));margin:32px auto 0;scroll-margin-top:110px}
+  .start header small,.serving-section>header small{color:var(--link-ink);font-size:12px}
+  .start h2{margin:8px 0 10px;font-size:26px;line-height:1.6}
+  .start header p{margin:0;color:var(--muted);font-size:15px;line-height:1.9}
   .start nav{display:block;position:static;inset:auto;width:100%;margin:0;padding:0;border:0;background:transparent}
-  .start-paths{list-style:none;margin:18px 0 0;padding:0}
-  .start-paths li{display:grid;grid-template-columns:25px minmax(0,1fr);gap:12px;padding:12px 0;border-top:1px solid var(--line)}
-  .path-number{color:var(--teal);font-size:12px;padding-top:3px}
-  .start-paths h3{margin:0;font-size:15px;line-height:1.9}
-  .path-summary{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:6px}
-  .path-summary p{flex:1 1 140px;min-width:0;margin:0;color:var(--muted);font-size:12px;line-height:2}
-  .path-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px}
-  .start-paths .path-button{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:6px 10px;border:1px solid var(--teal);border-radius:6px;background:var(--paper);color:var(--link-ink);font-size:11px;font-weight:700;line-height:1.8;white-space:nowrap}
-  .start-paths .article-path{border-color:var(--line);background:transparent}
+  .start-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;list-style:none;margin:20px 0 0;padding:0}
+  .start-paths li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;padding:20px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--soft) 24%,transparent)}
+  .path-number{color:var(--link-ink);font-size:13px;padding-top:3px}
+  .start-paths h3{margin:0;font-size:17px;line-height:1.8}
+  .path-summary p{margin:8px 0 16px;color:var(--muted);font-size:15px;line-height:1.9}
+  .path-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+  .path-button{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;min-height:38px;box-sizing:border-box;border:1px solid var(--teal);border-radius:6px;background:color-mix(in srgb,var(--soft) 65%,var(--paper));color:var(--link-ink);font-size:14px;font-weight:700;line-height:1.7}
   .path-button:hover{background:var(--teal);color:var(--paper)}
-  .start footer a:hover{text-decoration:underline;text-underline-offset:4px}
-  .start a:focus-visible,.mobile-paths summary:focus-visible{outline:2px solid var(--teal);outline-offset:5px;border-radius:2px}
-  .start footer{display:flex;flex-wrap:wrap;gap:8px 16px;margin:4px 0 0;padding:14px 0 0;background:transparent;border-top:1px solid var(--line);color:var(--muted);font-size:11px;line-height:1.9}
-  .start footer a{color:inherit}
-  .data-updated{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
-  .data-updated time{color:var(--ink);font-weight:600;white-space:nowrap}
-  .mobile-paths{display:none}
-  @media(max-width:700px){.start{padding:22px}.start h2{font-size:23px}.start .desktop-paths{display:none}.mobile-paths{display:block;margin-top:22px;border-top:1px solid var(--line)}.mobile-paths summary{padding:15px 0;cursor:pointer;font-size:13px;font-weight:700;color:var(--link-ink)}.mobile-paths .start-paths{margin-top:0}.start footer{justify-content:space-between;margin-top:18px;border-top:0;padding-top:0}}
+  .article-path{color:var(--link-ink);font-size:14px;text-underline-offset:4px}
+  .article-path:hover{text-decoration:underline}
+  .start a:focus-visible,.collection-stats a:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+  .collection-stats{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px;width:min(1280px,calc(100% - 48px));margin:20px auto 28px;padding-block:14px;border-block:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.9}
+  .collection-stats a{color:var(--ink)}
+  .collection-stats a:hover{text-decoration:underline;text-underline-offset:4px}
+  .data-updated{display:flex;flex-wrap:wrap;gap:4px 8px;margin-inline-start:auto}
+  .data-updated time{color:var(--ink);white-space:nowrap}
+  @media(max-width:959px){.start,.collection-stats{width:calc(100% - 32px)}}
+  @media(max-width:600px){.start-paths{grid-template-columns:minmax(0,1fr)}.start-paths li{padding:16px}.data-updated{margin-inline-start:0}.collection-stats{gap:8px 18px}}
   .guide-navigation ul{list-style:none;margin:0;padding-inline-start:9px}.guide-navigation ul a{font-size:9px}.serving-section{scroll-margin-top:90px;padding-top:42px;border-top:1px solid var(--line)}.serving-section>header h2{margin:5px 0 14px;font-size:clamp(24px,2.8vw,36px)}.subview-tabs{display:flex;position:static;inset:auto;gap:0;margin:0;border:1px solid var(--line);background:var(--paper)}.subview-tabs a{flex:1;padding:12px;color:var(--muted);font-size:11px;text-align:center}.subview-tabs a+a{border-inline-start:1px solid var(--line)}.subview-tabs a.active{background:color-mix(in srgb,var(--teal) 9%,var(--paper));color:var(--link-ink);font-weight:800}.serving-section :global(.llm-view){border-top:0}
   
   .view-reading{display:block;position:static;inset:auto;margin:-20px 0 36px;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
@@ -328,11 +325,11 @@
   @media(max-width:850px){.reading-cards{grid-template-columns:minmax(0,1fr)}}
   @media(max-width:450px){.reading-card{gap:10px;padding:10px}.reading-card img{flex-basis:64px;width:64px;height:52px}.reading-card h4{font-size:12px}.reading-card p{font-size:10px}}
   .toc-group>summary{display:flex;justify-content:space-between;color:var(--ink)}.toc-group>summary span{color:var(--teal);font-size:10px}.guide-navigation a[aria-current="location"]{border-color:var(--teal);color:var(--link-ink)}
-  .guide-overview{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:28px;align-items:start;padding-bottom:28px}.use-mode{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:28px}.use-mode button{font:inherit;font-size:13px;padding:10px 16px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);cursor:pointer}.use-mode button.active{color:var(--link-ink);background:var(--soft);border-color:var(--teal)}.use-mode span{font-size:12px;color:var(--muted);margin-inline-start:10px}.collection-cover{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;border-radius:14px;margin-bottom:28px}
+  .use-mode{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:28px}.use-mode button{font:inherit;font-size:13px;padding:10px 16px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);cursor:pointer}.use-mode button.active{color:var(--link-ink);background:var(--soft);border-color:var(--teal)}.use-mode span{font-size:12px;color:var(--muted);margin-inline-start:10px}
   @media(max-width:850px){.view-reading{padding:16px}}
 
   
-  @media(max-width:1199px){.guide-overview{grid-template-columns:1fr}.collection-cover{margin-bottom:0}.llm-guide>:global(.page-hero){width:calc(100% - 32px);margin-inline:auto}.guide-layout{display:block;width:calc(100% - 32px);margin-inline:auto}.guide-navigation{position:static;margin-bottom:20px}.desktop-toc{display:none}.mobile-toc{display:block}.guide-navigation nav{max-height:46vh}.guide-navigation .back-link{padding-inline:0}.view-reading{margin-top:-22px}}
+  @media(max-width:1199px){.guide-layout{display:block;width:calc(100% - 32px);margin-inline:auto}.guide-navigation{position:static;margin-bottom:20px}.desktop-toc{display:none}.mobile-toc{display:block}.guide-navigation nav{max-height:46vh}.guide-navigation .back-link{padding-inline:0}.view-reading{margin-top:-22px}}
   @media(max-width:700px){.breadcrumbs{padding-top:18px}.subview-tabs{display:grid}.subview-tabs a+a{border-inline-start:0;border-top:1px solid var(--line)}}
   .mobile-navigation{display:none}
   @media(max-width:1199px){aside.guide-navigation{display:none}.mobile-navigation{display:block}}

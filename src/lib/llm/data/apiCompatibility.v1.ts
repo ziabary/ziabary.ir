@@ -340,3 +340,141 @@ apiCompatibility.push({
     "evidence:api-tensorrt-llm-v1-chat-completions-chat"
   ]
 });
+apiCompatibility.push({
+  "id": "api-compatibility:audit-ollama-chat",
+  "protocol": "OpenAI-compatible HTTP JSON",
+  "endpoint": "/v1/chat/completions",
+  "capability": "chat",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "endpoints": [
+      "/v1/chat/completions"
+    ],
+    "conditions": [
+      "پشتیبانی قابلیت به مدل و endpoint وابسته است؛ هم‌ارزی کامل با API اصلی ادعا نشده است."
+    ]
+  },
+  "limitations": [
+    "مستندات بررسی‌شده در ۲۰۲۶-۰۹-۱۶؛ آزمون سرتاسری انجام نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-ollama-openai-api"
+  ]
+});
+apiCompatibility.push({
+  "id": "api-compatibility:audit-ollama-embeddings",
+  "protocol": "OpenAI-compatible HTTP JSON",
+  "endpoint": "/v1/embeddings",
+  "capability": "embeddings",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "endpoints": [
+      "/v1/embeddings"
+    ],
+    "conditions": [
+      "پشتیبانی قابلیت به مدل و endpoint وابسته است؛ هم‌ارزی کامل با API اصلی ادعا نشده است."
+    ]
+  },
+  "limitations": [
+    "مستندات بررسی‌شده در ۲۰۲۶-۰۹-۱۶؛ آزمون سرتاسری انجام نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-ollama-openai-api"
+  ]
+});
+apiCompatibility.push({
+  "id": "api-compatibility:audit-ollama-responses",
+  "protocol": "OpenAI-compatible HTTP JSON",
+  "endpoint": "/v1/responses",
+  "capability": "responses",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "endpoints": [
+      "/v1/responses"
+    ],
+    "conditions": [
+      "پشتیبانی قابلیت به مدل و endpoint وابسته است؛ هم‌ارزی کامل با API اصلی ادعا نشده است."
+    ]
+  },
+  "limitations": [
+    "مستندات بررسی‌شده در ۲۰۲۶-۰۹-۱۶؛ آزمون سرتاسری انجام نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-ollama-openai-api"
+  ]
+});
+apiCompatibility.push({
+  "id": "api-compatibility:audit-lm-studio-chat",
+  "protocol": "OpenAI-compatible HTTP JSON",
+  "endpoint": "/v1/chat/completions",
+  "capability": "chat",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "endpoints": [
+      "/v1/chat/completions"
+    ],
+    "conditions": [
+      "پشتیبانی قابلیت به مدل و endpoint وابسته است؛ هم‌ارزی کامل با API اصلی ادعا نشده است."
+    ]
+  },
+  "limitations": [
+    "مستندات بررسی‌شده در ۲۰۲۶-۰۹-۱۶؛ آزمون سرتاسری انجام نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-lm-studio-openai-api"
+  ]
+});
+apiCompatibility.push({
+  "id": "api-compatibility:audit-lm-studio-embeddings",
+  "protocol": "OpenAI-compatible HTTP JSON",
+  "endpoint": "/v1/embeddings",
+  "capability": "embeddings",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "endpoints": [
+      "/v1/embeddings"
+    ],
+    "conditions": [
+      "پشتیبانی قابلیت به مدل و endpoint وابسته است؛ هم‌ارزی کامل با API اصلی ادعا نشده است."
+    ]
+  },
+  "limitations": [
+    "مستندات بررسی‌شده در ۲۰۲۶-۰۹-۱۶؛ آزمون سرتاسری انجام نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-lm-studio-openai-api"
+  ]
+});
+apiCompatibility.push({
+  "id": "api-compatibility:audit-lm-studio-responses",
+  "protocol": "OpenAI-compatible HTTP JSON",
+  "endpoint": "/v1/responses",
+  "capability": "responses",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:lm-studio-0-4-24-build-1",
+    "endpoints": [
+      "/v1/responses"
+    ],
+    "conditions": [
+      "پشتیبانی قابلیت به مدل و endpoint وابسته است؛ هم‌ارزی کامل با API اصلی ادعا نشده است."
+    ]
+  },
+  "limitations": [
+    "مستندات بررسی‌شده در ۲۰۲۶-۰۹-۱۶؛ آزمون سرتاسری انجام نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-lm-studio-openai-api"
+  ]
+});

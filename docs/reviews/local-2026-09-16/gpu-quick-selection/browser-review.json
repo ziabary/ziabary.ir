@@ -1,0 +1,39 @@
+{
+  "title": "کارت گرافیک مناسب هوش مصنوعی؛ مقایسه و راهنمای انتخاب",
+  "description": "کارت گرافیک مناسب هوش مصنوعی را بر اساس کاربرد، حافظه و بودجه انتخاب کنید؛ مقایسه GPUهای اقتصادی، حرفه‌ای و دیتاسنتری همراه با راهنمای انتخاب سرور.",
+  "rows": 5,
+  "destinations": [
+    "#gpu-nvidia-rtx3060",
+    "#gpu-nvidia-rtx3090",
+    "#gpu-nvidia-rtx4090",
+    "#gpu-nvidia-rtx5090",
+    "#gpu-nvidia-l40s",
+    "#gpu-nvidia-a100-sxm"
+  ],
+  "filteredRowLinks": true,
+  "repeatedLink": true,
+  "directUrl": true,
+  "viewports": [
+    {
+      "width": 1600,
+      "theme": "light",
+      "layout": true
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "layout": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "layout": true
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "layout": true
+    }
+  ],
+  "runtimeErrors": 0
+}

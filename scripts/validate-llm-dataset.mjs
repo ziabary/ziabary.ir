@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import crypto from 'node:crypto';
+import { validateArtifactManifest } from './llm-artifact-manifest.mjs';
 const args=process.argv.slice(2);
 const arg=(name)=>{const i=args.indexOf(name);return i<0?undefined:args[i+1];};
 const project=path.resolve(arg('--project')??process.cwd());
@@ -92,6 +93,7 @@ for(const f of artifactFiles){
  }
 }
 for(const listing of data.artifactListings){
+ validateArtifactManifest(listing.files, listing.id);
  if(listing.totalBytes!==undefined&&listing.files.every(file=>file.bytes!==undefined)&&listing.totalBytes!==listing.files.reduce((sum,file)=>sum+file.bytes,0))throw new Error('Wrong download byte sum '+listing.id);
  for(const file of listing.files)if(!file.url.startsWith('https://'))throw new Error('Invalid download URL '+listing.id);
 }
@@ -100,6 +102,10 @@ for(const dependency of JSON.parse(fs.readFileSync(path.join(bundle,'research/re
  if(actual!==dependency.sha256)throw new Error('Research dependency changed; review and update the dependency manifest: '+dependency.path);
 }
 const research=loadTs(path.join(project,'src/lib/llm/research.ts'));
+for (const artifact of research.research.artifacts) {
+ validateArtifactManifest(artifact.files, artifact.id);
+ if (artifact.files.reduce((sum, file) => sum + file.bytes, 0) !== artifact.weightFileBytes) throw new Error('Wrong planning byte sum ' + artifact.id);
+}
 const merged=research.enrichResearchRepository(data);
 const mergedErrors=adapters.validateLlmRepository(merged);
 if(mergedErrors.length)throw new Error(JSON.stringify({mergedErrors},null,2));

@@ -1,0 +1,60 @@
+{
+  "rows": 6,
+  "columns": 2,
+  "destinations": [
+    "gpu-types-for-ai",
+    "choosing-gpu-for-ai",
+    "gpu-comparison-table",
+    "int8-or-fp8-real-gpu-support",
+    "gpu-inference-latency-throughput",
+    "pcie-vs-sxm-for-ai",
+    "dgx-and-standard-gpu-servers",
+    "pcie-gpu-server-selection",
+    "server-comparison-table"
+  ],
+  "repeatedLink": true,
+  "directUrl": true,
+  "viewports": [
+    {
+      "width": 1600,
+      "theme": "light",
+      "pageOverflow": false,
+      "tableOverflow": false,
+      "twoColumns": true,
+      "height": 320.8125
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "pageOverflow": false,
+      "tableOverflow": false,
+      "twoColumns": true,
+      "height": 320.8125
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "pageOverflow": false,
+      "tableOverflow": false,
+      "twoColumns": true,
+      "height": 320.8125
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "pageOverflow": false,
+      "tableOverflow": false,
+      "twoColumns": true,
+      "height": 489.15625
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "pageOverflow": false,
+      "tableOverflow": false,
+      "twoColumns": true,
+      "height": 495.15625
+    }
+  ],
+  "runtimeErrors": 0
+}

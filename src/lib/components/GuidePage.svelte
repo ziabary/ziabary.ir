@@ -10,6 +10,7 @@
   import PageHero from './PageHero.svelte';
   import PageSeo from './PageSeo.svelte';
   import GuideStart from './GuideStart.svelte';
+  import GuideOpening from './GuideOpening.svelte';
   import GpuComparison from './GpuComparison.svelte';
   import ServerComparison from './ServerComparison.svelte';
   export let collection: GuideCollection;
@@ -28,7 +29,10 @@
   $: base = locale === 'fa' ? '' : `/${locale}`;
   $: planned = collection.status === 'planned';
   $: hasTools = collection.items.some(item => item.kind !== 'article');
-  $: targetIds = collection.items.flatMap(item => [item.id, ...(getArticle(item.id)?.headings ?? []).map(heading => `${item.id}--${heading.id}`)]);
+  $: gpuIntro = collection.slug === 'gpu-selection' && locale === 'fa' ? [
+    { id: 'gpu-quick-selection', title: 'راهنمای مطالعه' }
+  ] : [];
+  $: targetIds = [...gpuIntro.map(item => item.id), ...collection.items.flatMap(item => [item.id, ...(getArticle(item.id)?.headings ?? []).map(heading => `${item.id}--${heading.id}`)])];
   $: active = collection.items.find(item => activeTarget === item.id || activeTarget.startsWith(`${item.id}--`))?.id ?? '';
   $: legacyOwners = new Map(collection.items.flatMap(item => (getArticle(item.id)?.legacyAnchors ?? []).map(anchor => [anchor, item.id] as const)).reverse());
 
@@ -44,7 +48,7 @@
     const details = entry?.querySelector<HTMLDetailsElement>('.chapter-details');
     if (details) details.open = true;
     await tick();
-    if (target) { activeTarget = target.id; requestAnimationFrame(() => target.scrollIntoView()); }
+    if (target) { activeTarget = target.id; requestAnimationFrame(() => target.scrollIntoView({ behavior: 'instant', block: 'start' })); }
   }
   onMount(() => {
     const fromHash = () => {
@@ -57,8 +61,16 @@
 
 <PageSeo title={`${collection.title} | ${locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}`} description={collection.subtitle}
   path={`${base}/guides/${collection.slug}/`} image={collection.image} imageAlt={collection.imageAlt} {locale} noindex={planned} />
-<main class="guide-page" class:gpu-collection={collection.slug === 'gpu-selection'} dir={locale === 'fa' ? 'rtl' : 'ltr'} bind:this={main}>
-  <PageHero eyebrow={planned ? copy.planned : collection.eyebrow} title={collection.title} lead={collection.subtitle} />
+<main class="guide-page" class:gpu-collection={collection.slug === 'gpu-selection'} dir={locale === 'fa' ? 'rtl' : 'ltr'} bind:this={main} use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
+  {#if gpuIntro.length}
+    <GuideOpening title={collection.title} lead={collection.subtitle} eyebrow={collection.eyebrow} image={collection.image} imageAlt={collection.imageAlt} introId="gpu-in-practice">
+      <p>انتخاب <strong>کارت گرافیک مناسب هوش مصنوعی</strong> به نوع کاری بستگی دارد که قرار است انجام دهد. اجرای یک مدل آماده، فاین‌تیون‌کردن آن و آموزش یک مدل بزرگ، نیازهای یکسانی ندارند. حتی برای اجرای یک مدل مشخص نیز طول ورودی، تعداد کاربران هم‌زمان و زمان پاسخ موردانتظار می‌تواند انتخاب سخت‌افزار را تغییر دهد. به همین دلیل، ظرفیت حافظه، پشتیبانی نرم‌افزاری و هزینهٔ اجرای بار کاری باید در کنار توان پردازشی بررسی شوند.</p>
+      <p>کارت‌های عمومی و گیمینگ، کارت‌های حرفه‌ای ایستگاه کاری و شتاب‌دهنده‌های مرکز داده، برای نیازهای متفاوتی طراحی شده‌اند. کارت‌های عمومی می‌توانند برای توسعه، پژوهش و بسیاری از کاربردهای استنتاج انتخاب اقتصادی مناسبی باشند؛ مدل‌های حرفه‌ای اغلب حافظه و امکانات مناسب‌تری برای کارهای سنگین‌تر فراهم می‌کنند؛ و شتاب‌دهنده‌های مرکز داده برای نیازهایی مانند پهنای باند بالای حافظه، اتصال چند GPU و استقرار متراکم اهمیت پیدا می‌کنند. ارزش این امکانات زمانی مشخص می‌شود که بار کاری از آن‌ها استفاده کند.</p>
+    </GuideOpening>
+    <GuideStart onNavigate={revealFragment} />
+  {:else}
+    <PageHero eyebrow={planned ? copy.planned : collection.eyebrow} title={collection.title} lead={collection.subtitle} />
+  {/if}
   {#if planned}
     <section class="wrap planned-intro"><p>{collection.intro}</p><p>{copy.empty}</p><a class="button ghost" href={`${base}/guides/`}>{copy.back} {locale === 'fa' ? '←' : '→'}</a></section>
   {:else}
@@ -68,11 +80,13 @@
         <details class="guide-mobile-toc"><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
         <a class="guide-back" href={`${base}/guides/`}>{copy.back}</a>
       </aside>
-      <div class="guide-main" use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
-        <div class="guide-overview">
-          <img class="guide-cover" {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={collection.imageAlt} width="1600" height="900" />
-          {#if collection.slug === 'gpu-selection' && locale === 'fa'}<GuideStart {collection} />{:else}<div><small>{copy.about}</small><p>{collection.intro}</p></div>{/if}
-        </div>
+      <div class="guide-main">
+        {#if !gpuIntro.length}
+          <div class="guide-overview">
+            <img class="guide-cover" {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={collection.imageAlt} width="1600" height="900" />
+            <div><small>{copy.about}</small><p>{collection.intro}</p></div>
+          </div>
+        {/if}
         <button class="button ghost continuous-toggle" onclick={toggleContinuous} aria-pressed={continuous}>{continuous ? copy.collapse : copy.continuous}</button>
         {#each collection.items as item, index}
           <article id={item.id} class="guide-entry">
@@ -101,7 +115,7 @@
 </main>
 
 {#snippet contents()}
-  <ol>{#each collection.items as item}
+  <ol>{#each gpuIntro as item}<li><a href={`#${item.id}`} aria-current={activeTarget === item.id ? 'location' : undefined}>{item.title}</a></li>{/each}{#each collection.items as item}
     {@const sections = headingSections(getArticle(item.id)?.headings ?? [])}
     <li><a href={`#${item.id}`} class:active-parent={active === item.id} aria-current={activeTarget === item.id ? 'location' : undefined} onclick={() => revealFragment(item.id)}>{item.title}</a>
     {#if active === item.id}<ul>{#each sections as heading}
@@ -167,7 +181,7 @@
       line-height: 1.25;
     }
     .gpu-collection > :global(.page-hero > p:last-child) { max-width: 900px; font-size: 15px; }
-    .gpu-collection .guide-overview {
+    .gpu-collection .guide-overview:not(.reading-intro) {
       grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
       gap: 28px;
       align-items: start;

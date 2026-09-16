@@ -1,64 +1,8 @@
 [
   {
-    "name": "fa",
-    "deepLink": "http://127.0.0.1:4189/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%AA%D8%B1%D8%AC%D9%85%D9%87-%D9%87%D9%85%D8%A7%D9%86-%D9%86%DB%8C%D8%A7%D8%B2-%D9%82%D8%AF%DB%8C%D9%85%DB%8C-%D8%A8%D8%A7-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%AA%D8%A7%D8%B2%D9%87",
-    "subsection": "ترجمه-همان-نیاز-قدیمی-با-موتور-تازه",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
-    "name": "en",
-    "deepLink": "http://127.0.0.1:4189/en/articles/gpu-inference-latency-throughput-en/#read-memory-figures-at-the-correct-scale",
-    "subsection": "read-memory-figures-at-the-correct-scale",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
-    "name": "es",
-    "deepLink": "http://127.0.0.1:4189/es/articles/gpu-inference-latency-throughput-es/#leer-las-cifras-de-memoria-en-la-escala-adecuada",
-    "subsection": "leer-las-cifras-de-memoria-en-la-escala-adecuada",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
     "name": "gpu",
     "deepLink": "http://127.0.0.1:4189/guides/gpu-selection/#gpu-types-for-ai--%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D9%86%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%DA%AF%D8%B1%D8%A7%D9%81%DB%8C%DA%A9%DB%8C",
     "subsection": "gpu-types-for-ai--انواع-پردازنده-های-گرافیکی",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
-    "name": "ztai",
-    "deepLink": "http://127.0.0.1:4189/guides/zero-trust-ai/#from-zero-trust-to-zero-trust-ai--%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-%DA%86%D9%87-%DA%86%DB%8C%D8%B2%DB%8C-%D8%B1%D8%A7-%D8%B9%D9%88%D8%B6-%D9%85%DB%8C-%DA%A9%D9%86%D8%AF",
-    "subsection": "from-zero-trust-to-zero-trust-ai--هوش-مصنوعی-چه-چیزی-را-عوض-می-کند",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
-    "name": "gpu-en",
-    "deepLink": "http://127.0.0.1:4189/en/guides/gpu-selection/#gpu-types-for-ai-en--consumer-gpus",
-    "subsection": "gpu-types-for-ai-en--consumer-gpus",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
-    "name": "gpu-es",
-    "deepLink": "http://127.0.0.1:4189/es/guides/gpu-selection/#gpu-types-for-ai-es--gpu-de-consumo",
-    "subsection": "gpu-types-for-ai-es--gpu-de-consumo",
-    "historyStable": true,
-    "reload": true,
-    "copyAndShare": true
-  },
-  {
-    "name": "llm",
-    "deepLink": "http://127.0.0.1:4189/guides/llm/?show-drafts=true&view=hardware-feasibility#llms-on-rtx-4090-24gb-vs-48gb--%DA%86%D9%87-%D9%85%D8%AF%D9%84-%D9%87%D8%A7%DB%8C%DB%8C-%D8%B1%D9%88%DB%8C-%DB%8C%DA%A9-4090-%D8%AC%D8%A7-%D9%85%DB%8C-%D8%B4%D9%88%D9%86%D8%AF",
-    "subsection": "llms-on-rtx-4090-24gb-vs-48gb--چه-مدل-هایی-روی-یک-4090-جا-می-شوند",
     "historyStable": true,
     "reload": true,
     "copyAndShare": true

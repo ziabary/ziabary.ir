@@ -382,3 +382,79 @@ specializedAssessments.push({
     "evidence:v03-9f4a255f17cc556d99"
   ]
 });
+specializedAssessments.push({
+  "id": "specialized-assessment:audit-intfloat-multilingual-e5-large-instruct",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "modelRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "nDCG@10",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:audit-intfloat-multilingual-e5-large-instruct",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct",
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-config",
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-files"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:audit-partai-tooka-sbert-v2-small",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "modelRevision": "8bbed87e36669387f71437c061430ba56d1b496f",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "nDCG@10",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:audit-partai-tooka-sbert-v2-small",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-config",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-files"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:audit-partai-tooka-sbert-v2-large",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "modelRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "nDCG@10",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:audit-partai-tooka-sbert-v2-large",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-config",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-files"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:audit-hooshvarelab-bert-base-parsbert-uncased",
+  "modelVersionId": "model:hooshvarelab-bert-base-parsbert-uncased",
+  "modelRevision": "d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "kind": "encoder-classifier",
+  "applicationId": "structured-extraction",
+  "metricName": "F1",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:audit-hooshvarelab-bert-base-parsbert-uncased",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased",
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-config",
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files"
+  ]
+});

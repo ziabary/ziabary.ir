@@ -13512,28 +13512,18 @@ artifactListings.push({
   "repositoryRevision": "d0a692ef765eefbf2fabb130b3cb2e8917e3d225",
   "files": [
     {
-      "path": "qwen2.5-coder-14b-instruct-q4_k_m-00001-of-00002.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/d0a692ef765eefbf2fabb130b3cb2e8917e3d225/qwen2.5-coder-14b-instruct-q4_k_m-00001-of-00002.gguf",
-      "bytes": 8000444480
-    },
-    {
-      "path": "qwen2.5-coder-14b-instruct-q4_k_m-00002-of-00002.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/d0a692ef765eefbf2fabb130b3cb2e8917e3d225/qwen2.5-coder-14b-instruct-q4_k_m-00002-of-00002.gguf",
-      "bytes": 987665920
-    },
-    {
       "path": "qwen2.5-coder-14b-instruct-q4_k_m.gguf",
       "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/d0a692ef765eefbf2fabb130b3cb2e8917e3d225/qwen2.5-coder-14b-instruct-q4_k_m.gguf",
       "bytes": 8988110272
     }
   ],
-  "verifiedOn": "2026-09-15",
+  "verifiedOn": "2026-09-16",
   "evidenceIds": [
     "evidence:v03-3fab818d8f8ed79b30",
     "evidence:v03-40c9f9ef128f73bf71"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 17976220672
+  "totalBytes": 8988110272
 });
 artifactListings.push({
   "id": "artifact-listing:v03-qwen-qwen2-5-coder-14b-instruct-gguf-qwen2-5-coder-14b-instruct-q8-0-gguf",
@@ -13549,28 +13539,18 @@ artifactListings.push({
   "repositoryRevision": "d0a692ef765eefbf2fabb130b3cb2e8917e3d225",
   "files": [
     {
-      "path": "qwen2.5-coder-14b-instruct-q8_0-00001-of-00002.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/d0a692ef765eefbf2fabb130b3cb2e8917e3d225/qwen2.5-coder-14b-instruct-q8_0-00001-of-00002.gguf",
-      "bytes": 8004181408
-    },
-    {
-      "path": "qwen2.5-coder-14b-instruct-q8_0-00002-of-00002.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/d0a692ef765eefbf2fabb130b3cb2e8917e3d225/qwen2.5-coder-14b-instruct-q8_0-00002-of-00002.gguf",
-      "bytes": 7697416352
-    },
-    {
       "path": "qwen2.5-coder-14b-instruct-q8_0.gguf",
       "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/d0a692ef765eefbf2fabb130b3cb2e8917e3d225/qwen2.5-coder-14b-instruct-q8_0.gguf",
       "bytes": 15701597632
     }
   ],
-  "verifiedOn": "2026-09-15",
+  "verifiedOn": "2026-09-16",
   "evidenceIds": [
     "evidence:v03-3fab818d8f8ed79b30",
     "evidence:v03-40c9f9ef128f73bf71"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 31403195392
+  "totalBytes": 15701597632
 });
 artifactListings.push({
   "id": "artifact-listing:v03-qwen-qwen2-5-coder-32b-instruct-gguf-qwen2-5-coder-32b-instruct-q4-k-m-gguf",
@@ -13586,33 +13566,18 @@ artifactListings.push({
   "repositoryRevision": "9d3053fce650fe1cdbdb75998c2a87add9d178ef",
   "files": [
     {
-      "path": "qwen2.5-coder-32b-instruct-q4_k_m-00001-of-00003.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q4_k_m-00001-of-00003.gguf",
-      "bytes": 7990120512
-    },
-    {
-      "path": "qwen2.5-coder-32b-instruct-q4_k_m-00002-of-00003.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q4_k_m-00002-of-00003.gguf",
-      "bytes": 7943826304
-    },
-    {
-      "path": "qwen2.5-coder-32b-instruct-q4_k_m-00003-of-00003.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q4_k_m-00003-of-00003.gguf",
-      "bytes": 3917389312
-    },
-    {
       "path": "qwen2.5-coder-32b-instruct-q4_k_m.gguf",
       "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q4_k_m.gguf",
       "bytes": 19851335872
     }
   ],
-  "verifiedOn": "2026-09-15",
+  "verifiedOn": "2026-09-16",
   "evidenceIds": [
     "evidence:v03-4cd234e23a66365d2f",
     "evidence:v03-d76c4a90fac9cdc645"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 39702672000
+  "totalBytes": 19851335872
 });
 artifactListings.push({
   "id": "artifact-listing:v03-qwen-qwen2-5-coder-32b-instruct-gguf-qwen2-5-coder-32b-instruct-q8-0-gguf",
@@ -13628,43 +13593,18 @@ artifactListings.push({
   "repositoryRevision": "9d3053fce650fe1cdbdb75998c2a87add9d178ef",
   "files": [
     {
-      "path": "qwen2.5-coder-32b-instruct-q8_0-00001-of-00005.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q8_0-00001-of-00005.gguf",
-      "bytes": 7869714432
-    },
-    {
-      "path": "qwen2.5-coder-32b-instruct-q8_0-00002-of-00005.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q8_0-00002-of-00005.gguf",
-      "bytes": 7989308160
-    },
-    {
-      "path": "qwen2.5-coder-32b-instruct-q8_0-00003-of-00005.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q8_0-00003-of-00005.gguf",
-      "bytes": 7922391296
-    },
-    {
-      "path": "qwen2.5-coder-32b-instruct-q8_0-00004-of-00005.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q8_0-00004-of-00005.gguf",
-      "bytes": 7922391296
-    },
-    {
-      "path": "qwen2.5-coder-32b-instruct-q8_0-00005-of-00005.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q8_0-00005-of-00005.gguf",
-      "bytes": 3117079968
-    },
-    {
       "path": "qwen2.5-coder-32b-instruct-q8_0.gguf",
       "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/9d3053fce650fe1cdbdb75998c2a87add9d178ef/qwen2.5-coder-32b-instruct-q8_0.gguf",
       "bytes": 34820884672
     }
   ],
-  "verifiedOn": "2026-09-15",
+  "verifiedOn": "2026-09-16",
   "evidenceIds": [
     "evidence:v03-4cd234e23a66365d2f",
     "evidence:v03-d76c4a90fac9cdc645"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 69641769824
+  "totalBytes": 34820884672
 });
 artifactListings.push({
   "id": "artifact-listing:v03-qwen-qwen2-5-coder-7b-instruct-gguf-qwen2-5-coder-7b-instruct-q4-k-m-gguf",
@@ -13680,28 +13620,18 @@ artifactListings.push({
   "repositoryRevision": "13fb94bfda8c8cf22497dc57b78f391a9acb426a",
   "files": [
     {
-      "path": "qwen2.5-coder-7b-instruct-q4_k_m-00001-of-00002.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q4_k_m-00001-of-00002.gguf",
-      "bytes": 3993201376
-    },
-    {
-      "path": "qwen2.5-coder-7b-instruct-q4_k_m-00002-of-00002.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q4_k_m-00002-of-00002.gguf",
-      "bytes": 689872288
-    },
-    {
       "path": "qwen2.5-coder-7b-instruct-q4_k_m.gguf",
       "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q4_k_m.gguf",
       "bytes": 4683073536
     }
   ],
-  "verifiedOn": "2026-09-15",
+  "verifiedOn": "2026-09-16",
   "evidenceIds": [
     "evidence:v03-6e085102b63312c25f",
     "evidence:v03-26a55611da7eb714f5"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 9366147200
+  "totalBytes": 4683073536
 });
 artifactListings.push({
   "id": "artifact-listing:v03-qwen-qwen2-5-coder-7b-instruct-gguf-qwen2-5-coder-7b-instruct-q8-0-gguf",
@@ -13717,33 +13647,18 @@ artifactListings.push({
   "repositoryRevision": "13fb94bfda8c8cf22497dc57b78f391a9acb426a",
   "files": [
     {
-      "path": "qwen2.5-coder-7b-instruct-q8_0-00001-of-00003.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q8_0-00001-of-00003.gguf",
-      "bytes": 3980069280
-    },
-    {
-      "path": "qwen2.5-coder-7b-instruct-q8_0-00002-of-00003.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q8_0-00002-of-00003.gguf",
-      "bytes": 3942935680
-    },
-    {
-      "path": "qwen2.5-coder-7b-instruct-q8_0-00003-of-00003.gguf",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q8_0-00003-of-00003.gguf",
-      "bytes": 175520480
-    },
-    {
       "path": "qwen2.5-coder-7b-instruct-q8_0.gguf",
       "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q8_0.gguf",
       "bytes": 8098525184
     }
   ],
-  "verifiedOn": "2026-09-15",
+  "verifiedOn": "2026-09-16",
   "evidenceIds": [
     "evidence:v03-6e085102b63312c25f",
     "evidence:v03-26a55611da7eb714f5"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 16197050624
+  "totalBytes": 8098525184
 });
 artifactListings.push({
   "id": "artifact-listing:v03-qwen-qwen3-vl-8b-instruct-gguf-qwen3vl-8b-instruct-f16-gguf",
@@ -17495,7 +17410,7 @@ artifactListings.push({
     }
   ],
   "verifiedOn": "2026-09-15",
-  "scopeNote": "حجم اعلام‌شده شامل فایل projector است.",
+  "scopeNote": "حجم اعلام‌شده شامل فایل projector است. در این تبدیل، expertهای FFN از نوع Q4_0 باقی مانده‌اند؛ نام کوانت به کل مدل تعمیم داده نمی‌شود.",
   "evidenceIds": [
     "evidence:v03-bb82cb9e7ee13703ac",
     "evidence:v03-0e7d8d07fb8b537168"
@@ -17603,7 +17518,7 @@ artifactListings.push({
     }
   ],
   "verifiedOn": "2026-09-15",
-  "scopeNote": "حجم اعلام‌شده شامل فایل projector است.",
+  "scopeNote": "حجم اعلام‌شده شامل فایل projector است. در این تبدیل، expertهای FFN از نوع Q4_0 باقی مانده‌اند؛ نام کوانت به کل مدل تعمیم داده نمی‌شود.",
   "evidenceIds": [
     "evidence:v03-bb82cb9e7ee13703ac",
     "evidence:v03-0e7d8d07fb8b537168"
@@ -17720,7 +17635,8 @@ artifactListings.push({
     "evidence:v03-a66428e6f48e01558f",
     "evidence:v03-530dc466b1dddaae42"
   ],
-  "totalBytes": 63387346624
+  "totalBytes": 63387346624,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-120b-gguf-openai-gpt-oss-120b-q4-k-m-openai-gpt-oss-120b-q4-k-m-gguf",
@@ -17752,7 +17668,8 @@ artifactListings.push({
     "evidence:v03-530dc466b1dddaae42"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 62841713344
+  "totalBytes": 62841713344,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-120b-gguf-openai-gpt-oss-120b-q8-0-openai-gpt-oss-120b-q8-0-gguf",
@@ -17784,7 +17701,8 @@ artifactListings.push({
     "evidence:v03-530dc466b1dddaae42"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 63387346368
+  "totalBytes": 63387346368,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-120b-gguf-openai-gpt-oss-120b-bf16-openai-gpt-oss-120b-bf16-gguf",
@@ -17815,7 +17733,8 @@ artifactListings.push({
     "evidence:v03-a66428e6f48e01558f",
     "evidence:v03-530dc466b1dddaae42"
   ],
-  "totalBytes": 65369016768
+  "totalBytes": 65369016768,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-20b-gguf-openai-gpt-oss-20b-mxfp4-gguf",
@@ -17841,7 +17760,8 @@ artifactListings.push({
     "evidence:v03-9e1277684172bb17b2",
     "evidence:v03-887adbcc06b6397b86"
   ],
-  "totalBytes": 12109565760
+  "totalBytes": 12109565760,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-20b-gguf-openai-gpt-oss-20b-q4-k-m-gguf",
@@ -17868,7 +17788,8 @@ artifactListings.push({
     "evidence:v03-887adbcc06b6397b86"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 11673418816
+  "totalBytes": 11673418816,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-20b-gguf-openai-gpt-oss-20b-q8-0-gguf",
@@ -17895,7 +17816,8 @@ artifactListings.push({
     "evidence:v03-887adbcc06b6397b86"
   ],
   "quantizationMethod": "GGUF block quantization",
-  "totalBytes": 12109566016
+  "totalBytes": 12109566016,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-openai-gpt-oss-20b-gguf-openai-gpt-oss-20b-bf16-gguf",
@@ -17921,7 +17843,8 @@ artifactListings.push({
     "evidence:v03-9e1277684172bb17b2",
     "evidence:v03-887adbcc06b6397b86"
   ],
-  "totalBytes": 13792637760
+  "totalBytes": 13792637760,
+  "scopeNote": "در این تبدیل، وزن‌های FFN از نوع MXFP4 باقی مانده‌اند؛ نام Q4/Q8 دقت یکسان همهٔ tensorها نیست."
 });
 artifactListings.push({
   "id": "artifact-listing:v03-bartowski-phi-4-gguf-phi-4-q4-k-m-gguf",
@@ -21568,4 +21491,409 @@ artifactListings.push({
   ],
   "precision": "F16",
   "repositoryRevision": "Ollama manifest display digest: 0a109f422b47"
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-qwen-qwen2-5-coder-1-5b",
+  "modelVersionId": "model:qwen-qwen2-5-coder-1-5b",
+  "baseModelRepository": "Qwen/Qwen2.5-Coder-1.5B",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "bfloat16",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B",
+  "repositoryRevision": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/tree/df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 3087467144,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/resolve/df3ce67c0e24480f20468b6ef2894622d69eb73b/model.safetensors"
+    }
+  ],
+  "totalBytes": 3087467144,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-bigcode-starcoder2-3b",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "baseModelRepository": "bigcode/starcoder2-3b",
+  "publisher": "bigcode",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "طبق فایل ناشر",
+  "repositoryUrl": "https://huggingface.co/bigcode/starcoder2-3b",
+  "repositoryRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "filesUrl": "https://huggingface.co/bigcode/starcoder2-3b/tree/733247c55e3f73af49ce8e9c7949bf14af205928",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 12121539344,
+      "url": "https://huggingface.co/bigcode/starcoder2-3b/resolve/733247c55e3f73af49ce8e9c7949bf14af205928/model.safetensors"
+    }
+  ],
+  "totalBytes": 12121539344,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-bigcode-starcoder2-3b-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-qwen-qwen3-coder-next",
+  "modelVersionId": "model:qwen-qwen3-coder-next",
+  "baseModelRepository": "Qwen/Qwen3-Coder-Next",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "bfloat16",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+  "repositoryRevision": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3-Coder-Next/tree/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "files": [
+    {
+      "path": "model-00001-of-00040.safetensors",
+      "bytes": 3999619288,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00001-of-00040.safetensors"
+    },
+    {
+      "path": "model-00002-of-00040.safetensors",
+      "bytes": 3999841816,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00002-of-00040.safetensors"
+    },
+    {
+      "path": "model-00003-of-00040.safetensors",
+      "bytes": 3999515608,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00003-of-00040.safetensors"
+    },
+    {
+      "path": "model-00004-of-00040.safetensors",
+      "bytes": 3999842032,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00004-of-00040.safetensors"
+    },
+    {
+      "path": "model-00005-of-00040.safetensors",
+      "bytes": 3999842240,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00005-of-00040.safetensors"
+    },
+    {
+      "path": "model-00006-of-00040.safetensors",
+      "bytes": 3999853248,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00006-of-00040.safetensors"
+    },
+    {
+      "path": "model-00007-of-00040.safetensors",
+      "bytes": 3999841944,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00007-of-00040.safetensors"
+    },
+    {
+      "path": "model-00008-of-00040.safetensors",
+      "bytes": 3999842032,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00008-of-00040.safetensors"
+    },
+    {
+      "path": "model-00009-of-00040.safetensors",
+      "bytes": 3999843224,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00009-of-00040.safetensors"
+    },
+    {
+      "path": "model-00010-of-00040.safetensors",
+      "bytes": 3999517840,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00010-of-00040.safetensors"
+    },
+    {
+      "path": "model-00011-of-00040.safetensors",
+      "bytes": 4000181328,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00011-of-00040.safetensors"
+    },
+    {
+      "path": "model-00012-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00012-of-00040.safetensors"
+    },
+    {
+      "path": "model-00013-of-00040.safetensors",
+      "bytes": 3999517504,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00013-of-00040.safetensors"
+    },
+    {
+      "path": "model-00014-of-00040.safetensors",
+      "bytes": 3999844016,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00014-of-00040.safetensors"
+    },
+    {
+      "path": "model-00015-of-00040.safetensors",
+      "bytes": 4000181768,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00015-of-00040.safetensors"
+    },
+    {
+      "path": "model-00016-of-00040.safetensors",
+      "bytes": 3999517280,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00016-of-00040.safetensors"
+    },
+    {
+      "path": "model-00017-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00017-of-00040.safetensors"
+    },
+    {
+      "path": "model-00018-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00018-of-00040.safetensors"
+    },
+    {
+      "path": "model-00019-of-00040.safetensors",
+      "bytes": 3999844120,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00019-of-00040.safetensors"
+    },
+    {
+      "path": "model-00020-of-00040.safetensors",
+      "bytes": 3999855064,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00020-of-00040.safetensors"
+    },
+    {
+      "path": "model-00021-of-00040.safetensors",
+      "bytes": 3999843824,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00021-of-00040.safetensors"
+    },
+    {
+      "path": "model-00022-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00022-of-00040.safetensors"
+    },
+    {
+      "path": "model-00023-of-00040.safetensors",
+      "bytes": 3999517496,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00023-of-00040.safetensors"
+    },
+    {
+      "path": "model-00024-of-00040.safetensors",
+      "bytes": 3999844296,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00024-of-00040.safetensors"
+    },
+    {
+      "path": "model-00025-of-00040.safetensors",
+      "bytes": 4000181328,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00025-of-00040.safetensors"
+    },
+    {
+      "path": "model-00026-of-00040.safetensors",
+      "bytes": 3999517504,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00026-of-00040.safetensors"
+    },
+    {
+      "path": "model-00027-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00027-of-00040.safetensors"
+    },
+    {
+      "path": "model-00028-of-00040.safetensors",
+      "bytes": 3999844016,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00028-of-00040.safetensors"
+    },
+    {
+      "path": "model-00029-of-00040.safetensors",
+      "bytes": 3999855352,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00029-of-00040.safetensors"
+    },
+    {
+      "path": "model-00030-of-00040.safetensors",
+      "bytes": 3999843704,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00030-of-00040.safetensors"
+    },
+    {
+      "path": "model-00031-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00031-of-00040.safetensors"
+    },
+    {
+      "path": "model-00032-of-00040.safetensors",
+      "bytes": 3999843912,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00032-of-00040.safetensors"
+    },
+    {
+      "path": "model-00033-of-00040.safetensors",
+      "bytes": 3999517720,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00033-of-00040.safetensors"
+    },
+    {
+      "path": "model-00034-of-00040.safetensors",
+      "bytes": 4000181528,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00034-of-00040.safetensors"
+    },
+    {
+      "path": "model-00035-of-00040.safetensors",
+      "bytes": 3999843824,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00035-of-00040.safetensors"
+    },
+    {
+      "path": "model-00036-of-00040.safetensors",
+      "bytes": 3999517504,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00036-of-00040.safetensors"
+    },
+    {
+      "path": "model-00037-of-00040.safetensors",
+      "bytes": 3999843904,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00037-of-00040.safetensors"
+    },
+    {
+      "path": "model-00038-of-00040.safetensors",
+      "bytes": 3999844296,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00038-of-00040.safetensors"
+    },
+    {
+      "path": "model-00039-of-00040.safetensors",
+      "bytes": 3999854920,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00039-of-00040.safetensors"
+    },
+    {
+      "path": "model-00040-of-00040.safetensors",
+      "bytes": 3365572528,
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/resolve/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/model-00040-of-00040.safetensors"
+    }
+  ],
+  "totalBytes": 159358031480,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-coder-next-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-intfloat-multilingual-e5-large-instruct",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "baseModelRepository": "intfloat/multilingual-e5-large-instruct",
+  "publisher": "intfloat",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "float16",
+  "repositoryUrl": "https://huggingface.co/intfloat/multilingual-e5-large-instruct",
+  "repositoryRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "filesUrl": "https://huggingface.co/intfloat/multilingual-e5-large-instruct/tree/274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 1119825680,
+      "url": "https://huggingface.co/intfloat/multilingual-e5-large-instruct/resolve/274baa43b0e13e37fafa6428dbc7938e62e5c439/model.safetensors"
+    }
+  ],
+  "totalBytes": 1119825680,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-qwen-qwen3-4b-instruct-2507",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "baseModelRepository": "Qwen/Qwen3-4B-Instruct-2507",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "bfloat16",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+  "repositoryRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/tree/cdbee75f17c01a7cc42f958dc650907174af0554",
+  "files": [
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "bytes": 3957900840,
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/model-00001-of-00003.safetensors"
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "bytes": 3987450520,
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/model-00002-of-00003.safetensors"
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "bytes": 99630640,
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/model-00003-of-00003.safetensors"
+    }
+  ],
+  "totalBytes": 8044982000,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-partai-tooka-sbert-v2-small",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "baseModelRepository": "PartAI/Tooka-SBERT-V2-Small",
+  "publisher": "PartAI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "float32",
+  "repositoryUrl": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small",
+  "repositoryRevision": "8bbed87e36669387f71437c061430ba56d1b496f",
+  "filesUrl": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small/tree/8bbed87e36669387f71437c061430ba56d1b496f",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 491643752,
+      "url": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small/resolve/8bbed87e36669387f71437c061430ba56d1b496f/model.safetensors"
+    }
+  ],
+  "totalBytes": 491643752,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-partai-tooka-sbert-v2-large",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "baseModelRepository": "PartAI/Tooka-SBERT-V2-Large",
+  "publisher": "PartAI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "وزن اصلی",
+  "precision": "float32",
+  "repositoryUrl": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large",
+  "repositoryRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "filesUrl": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large/tree/b59682efa961122cc0e4408296d5852870c82eae",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 1412202368,
+      "url": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large/resolve/b59682efa961122cc0e4408296d5852870c82eae/model.safetensors"
+    }
+  ],
+  "totalBytes": 1412202368,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:audit-hooshvarelab-bert-base-parsbert-uncased",
+  "modelVersionId": "model:hooshvarelab-bert-base-parsbert-uncased",
+  "baseModelRepository": "HooshvareLab/bert-base-parsbert-uncased",
+  "publisher": "HooshvareLab",
+  "authority": "official",
+  "format": "pytorch",
+  "variant": "وزن اصلی",
+  "precision": "طبق فایل ناشر",
+  "repositoryUrl": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased",
+  "repositoryRevision": "d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "filesUrl": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased/tree/d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "files": [
+    {
+      "path": "pytorch_model.bin",
+      "bytes": 654186735,
+      "url": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased/resolve/d73a0e2c7492c33bd5819bcdb23eba207404dd19/pytorch_model.bin"
+    }
+  ],
+  "totalBytes": 654186735,
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files"
+  ]
 });

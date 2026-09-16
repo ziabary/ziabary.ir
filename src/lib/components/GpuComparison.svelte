@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount, tick } from 'svelte';
   import { imageAttributes } from '$lib/images';
   import { hardwareText, hardwareGpus, type HardwareLocale } from '$lib/i18n/gpu';
 
@@ -63,6 +64,36 @@
   let compared: string[] = [];
   let expanded: string[] = [];
   let hiddenColumns: ColumnKey[] = [];
+  let focusedGpu = '';
+  let explorer: HTMLElement;
+
+  async function revealGpu(fragment: string) {
+    const id = fragment.startsWith('#gpu-') ? fragment.slice(5) : '';
+    if (!gpuRecords.some(gpu => gpu.id === id)) return;
+    // A direct link must also work when the reader has filtered this card out.
+    query = ''; selectedVendors = []; selectedSegments = []; selectedStatuses = [];
+    useCase = ''; precision = ''; minMemory = 0; maxPower = 0; preset = 'all';
+    focusedGpu = id;
+    await tick();
+    const row = document.getElementById(`gpu-${id}`);
+    if (!row || !explorer.contains(row)) return;
+    row.querySelector<HTMLElement>('.model')?.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' });
+    row.querySelector<HTMLButtonElement>('.detail-cell button')?.focus({ preventScroll: true });
+  }
+  onMount(() => {
+    const fromHash = () => { void revealGpu(location.hash); };
+    const repeatLink = (event: MouseEvent) => {
+      const anchor = event.target instanceof Element ? event.target.closest('a') : null;
+      if (anchor?.getAttribute('href') === location.hash) fromHash();
+    };
+    fromHash();
+    window.addEventListener('hashchange', fromHash);
+    document.addEventListener('click', repeatLink);
+    return () => {
+      window.removeEventListener('hashchange', fromHash);
+      document.removeEventListener('click', repeatLink);
+    };
+  });
 
   const toggle = <T,>(items: T[], value: T) => items.includes(value) ? items.filter((item) => item !== value) : [...items, value];
   const format = (value: number | null, suffix = '') => value == null ? '—' : `${numbers.format(value)}${suffix}`;
@@ -252,7 +283,7 @@
   $: totalColumns = 3 + activeColumns.length;
 </script>
 
-<section class="explorer" dir={locale === 'fa' ? 'rtl' : 'ltr'} aria-labelledby="gpu-table-title">
+<section class="explorer" bind:this={explorer} dir={locale === 'fa' ? 'rtl' : 'ltr'} aria-labelledby="gpu-table-title">
   <header class="heading">
     <div><small>{t("دانشنامهٔ زندهٔ شتاب‌دهنده‌های هوش مصنوعی")}</small><h2 id="gpu-table-title">{t("انتخاب GPU یک انتخاب ساده نیست. با دانش انتخاب کنیم.")}</h2><p> {t("این جدول انواع مختلف کارت، ماژول، پردازنده و سامانهٔ شتاب‌دهنده مناسب برای هوش مصنوعی را ارایه می‌دهد.")} </p></div>
     <div class="stamp"><span>{t("آخرین بازبینی داده‌ها")}</span><b>{locale === 'fa' ? gpuLastReviewed.fa : gpuLastReviewed.gregorian}</b>{#if locale === 'fa'}<small>{gpuLastReviewed.gregorian}</small>{/if}</div>
@@ -313,7 +344,7 @@
       {/each}
     </tr></thead><tbody>
       {#each visible as gpu}
-        <tr class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
+        <tr id={`gpu-${gpu.id}`} data-preserve-reading-fragment class:linked-row={focusedGpu === gpu.id} class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
           <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={!compared.includes(gpu.id) && compared.length >= 4} on:change={() => toggleCompare(gpu.id)} aria-label={`${t("مقایسه")} ${gpu.model}`} /></td>
           <td class="detail-cell"><button class:open={expanded.includes(gpu.id)} on:click={() => toggleExpanded(gpu.id)} aria-label={`${t("جزئیات")} ${gpu.model}`} aria-expanded={expanded.includes(gpu.id)}>⌄</button></td>
           <td class="model"><div class="model-cell"><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t("منبع رسمی ↗")}</a></div></td>
@@ -353,6 +384,9 @@
 </section>
 
 <style>
+  tr.linked-row td{background:var(--soft);box-shadow:inset 0 2px var(--teal),inset 0 -2px var(--teal)}
+  tr[id]{scroll-margin-top:100px}
+  .table-shell{scroll-margin-top:110px}
   .explorer{min-width:0;margin-top:0;border-top:1px solid var(--line);padding-top:34px}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px}.heading>div>small{color:var(--teal);font-size:12px;font-weight:800}.heading h2{margin:7px 0 10px;font-size:clamp(28px,3vw,38px);line-height:1.45;letter-spacing:-1px}.heading p{max-width:1050px;margin:0;color:var(--muted);font-size:14px;line-height:2}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:11px}.stamp b{font-size:16px}.rules{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}
   .presets{display:flex;gap:7px;overflow-x:auto;padding:17px 0 9px}.presets button,.filter-actions button,.toolbar button,.compare button{border:1px solid var(--line);background:var(--paper);color:var(--muted);font:inherit;cursor:pointer}.presets button{flex:0 0 auto;border-radius:99px;padding:7px 13px;font-size:12px}.presets button:hover,.presets button.active{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--paper))}
   .filters{border:1px solid var(--line);background:color-mix(in srgb,var(--paper) 94%,var(--soft))}.filters summary{display:flex;justify-content:space-between;padding:12px 15px;font-size:14px;font-weight:800;cursor:pointer}.filters summary span{color:var(--teal);font-weight:600}.filter-grid{padding:14px 15px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;border-top:1px solid var(--line)}.filter-grid label,.filter-grid fieldset{min-width:0;margin:0;padding:0;border:0}.filter-grid label>span,.filter-grid legend{display:block;margin-bottom:5px;color:var(--muted);font-size:12px}.filter-grid input[type=search],.filter-grid select{box-sizing:border-box;width:100%;height:38px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:0 10px;font:inherit;font-size:13px}.search{grid-column:auto}.checks{display:flex;flex-wrap:wrap;gap:5px}.checks label{position:relative}.checks input{position:absolute;opacity:0}.checks label span{display:block;margin:0;border:1px solid var(--line);border-radius:5px;padding:6px 9px;color:var(--muted);font-size:11px;cursor:pointer}.checks input:checked+span{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,var(--paper))}.filter-actions{display:flex;justify-content:space-between;align-items:center;padding:10px 15px;border-top:1px solid var(--line)}.filter-actions>button{border:0;color:var(--teal);font-size:12px}.filter-actions>div{display:flex;align-items:center;flex-wrap:wrap;gap:14px}.filter-actions>div>span{color:var(--muted);font-size:11px}.filter-actions label{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}.filter-actions .show-all{border:1px solid var(--teal);border-radius:99px;padding:4px 9px;color:var(--teal);font-size:11px}

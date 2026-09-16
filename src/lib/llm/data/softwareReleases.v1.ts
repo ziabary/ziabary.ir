@@ -519,7 +519,8 @@ softwareReleases.push({
     "evidence:software-triton-license",
     "evidence:v03-8c96f25dcb8de25541",
     "evidence:v03-bb574636acd9b4e368",
-    "evidence:v03-a71753d8d7dd85a324"
+    "evidence:v03-a71753d8d7dd85a324",
+    "evidence:audit-20260916-triton-272"
   ],
   "targetScenario": {
     "state": "known",
@@ -535,7 +536,7 @@ softwareReleases.push({
       "evidence:software-triton-overview"
     ]
   },
-  "selectionCaveat": "اجرای مدل زبانی به backend جداگانه و پیکربندی آن نیاز دارد.",
+  "selectionCaveat": "انتشار ۲٫۷۲٫۰ کانتینر backendِ TensorRT-LLM را همراه ندارد؛ تصویر مناسب باید جدا انتخاب شود.",
   "documentedNeeds": [
     "high-throughput"
   ],
@@ -1002,7 +1003,7 @@ softwareReleases.push({
   "productId": "software-product:tgi",
   "version": "v3.3.7",
   "releasedOn": "2025-12-19",
-  "lastReviewedOn": "2026-09-15",
+  "lastReviewedOn": "2026-09-16",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -1051,13 +1052,14 @@ softwareReleases.push({
       "evidence:software-tgi-license"
     ]
   },
-  "maintenanceStatus": "maintenance",
+  "maintenanceStatus": "archived",
   "evidenceIds": [
     "evidence:software-tgi-release",
     "evidence:software-tgi-overview",
     "evidence:software-tgi-license",
     "evidence:software-tgi-maintenance",
-    "evidence:v03-aa776ce8230ee5e3f6"
+    "evidence:v03-aa776ce8230ee5e3f6",
+    "evidence:audit-20260916-tgi-archive"
   ],
   "targetScenario": {
     "state": "known",
@@ -1073,7 +1075,7 @@ softwareReleases.push({
       "evidence:software-tgi-overview"
     ]
   },
-  "selectionCaveat": "پروژه در حالت نگه‌داری است.",
+  "selectionCaveat": "مخزن از ۲۱ مارس ۲۰۲۶ آرشیو و فقط‌خواندنی است.",
   "documentedNeeds": [
     "high-throughput"
   ],
@@ -1167,5 +1169,251 @@ softwareReleases.push({
   "documentedBackends": [
     "llama.cpp",
     "MLX"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:ktransformers-v0-7-1",
+  "productId": "software-product:ktransformers",
+  "version": "v0.7.1",
+  "releasedOn": "2026-09-15",
+  "lastReviewedOn": "2026-09-16",
+  "roles": [
+    "inference-engine-library"
+  ],
+  "environments": [
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:audit-20260916-ktransformers-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/kvcache-ai/ktransformers/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-ktransformers-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-ktransformers-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:audit-20260916-ktransformers-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "اجرای ترکیبی CPU و GPU برای مدل‌های MoE",
+    "evidenceIds": [
+      "evidence:audit-20260916-ktransformers-release",
+      "evidence:audit-20260916-ktransformers-docs",
+      "evidence:audit-20260916-ktransformers-license"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "کرنل‌های CPU برای expertها و GPU برای بخش‌های متراکم",
+    "evidenceIds": [
+      "evidence:audit-20260916-ktransformers-release",
+      "evidence:audit-20260916-ktransformers-docs",
+      "evidence:audit-20260916-ktransformers-license"
+    ]
+  },
+  "selectionCaveat": "نسخهٔ بسته، کرنل و فهرست معماری‌های پشتیبانی‌شده باید با مدل MoE انتخابی منطبق باشند.",
+  "documentedBackends": [
+    "CPU kernels",
+    "CUDA"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-ktransformers-release",
+    "evidence:audit-20260916-ktransformers-docs",
+    "evidence:audit-20260916-ktransformers-license"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:sentence-transformers-v6-0-1",
+  "productId": "software-product:sentence-transformers",
+  "version": "v6.0.1",
+  "releasedOn": "2026-08-31",
+  "lastReviewedOn": "2026-09-16",
+  "roles": [
+    "inference-engine-library"
+  ],
+  "environments": [
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/huggingface/sentence-transformers/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:audit-20260916-sentence-transformers-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "ساخت بردار، بازرتبه‌بندی و آموزش مدل‌های بازیابی",
+    "evidenceIds": [
+      "evidence:audit-20260916-sentence-transformers-release",
+      "evidence:audit-20260916-sentence-transformers-docs",
+      "evidence:audit-20260916-sentence-transformers-license"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "SentenceTransformer و CrossEncoder روی PyTorch",
+    "evidenceIds": [
+      "evidence:audit-20260916-sentence-transformers-release",
+      "evidence:audit-20260916-sentence-transformers-docs",
+      "evidence:audit-20260916-sentence-transformers-license"
+    ]
+  },
+  "selectionCaveat": "نوع prompt و pooling با مدل embedding تغییر می‌کند؛ برای Qwen3-Reranker خروجی raw logits لازم است.",
+  "documentedBackends": [
+    "PyTorch"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-sentence-transformers-release",
+    "evidence:audit-20260916-sentence-transformers-docs",
+    "evidence:audit-20260916-sentence-transformers-license"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:flagembedding-v1-4-2",
+  "productId": "software-product:flagembedding",
+  "version": "v1.4.2",
+  "releasedOn": "2026-08-24",
+  "lastReviewedOn": "2026-09-16",
+  "roles": [
+    "inference-engine-library"
+  ],
+  "environments": [
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:audit-20260916-flagembedding-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/FlagOpen/FlagEmbedding/blob/master/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-flagembedding-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-flagembedding-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:audit-20260916-flagembedding-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "اجرای خانوادهٔ BGE و بازرتبه‌بندها",
+    "evidenceIds": [
+      "evidence:audit-20260916-flagembedding-release",
+      "evidence:audit-20260916-flagembedding-docs",
+      "evidence:audit-20260916-flagembedding-license"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "خروجی‌های dense، sparse و چندبرداری BGE-M3",
+    "evidenceIds": [
+      "evidence:audit-20260916-flagembedding-release",
+      "evidence:audit-20260916-flagembedding-docs",
+      "evidence:audit-20260916-flagembedding-license"
+    ]
+  },
+  "selectionCaveat": "سه خروجی BGE-M3 مصرف و ساخت نمایهٔ متفاوت دارند؛ فقط dense را نمی‌توان جای هر سه خروجی استفاده کرد.",
+  "documentedBackends": [
+    "PyTorch"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-flagembedding-release",
+    "evidence:audit-20260916-flagembedding-docs",
+    "evidence:audit-20260916-flagembedding-license"
   ]
 });

@@ -184,6 +184,8 @@ const kindOptions = [
 const evidenceOptions = [
   option('direct-measurement', 'اندازه‌گیری مستقیم'),
   option('publisher-report', 'گزارش سازنده یا منتشرکننده'),
+  option('third-party-report', 'گزارش شخص ثالث'),
+  option('documented-specification', 'مشخصات و مستندات رسمی'),
   option('calculated-from-specifications', 'محاسبه از مشخصات'),
   option('editorial-analysis', 'قضاوت تحلیلی'),
   option('unknown-needs-review', 'نامعلوم یا نیازمند بررسی'),
@@ -258,7 +260,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'model-catalog', sectionId: 'model-catalog', sectionNumber: 1,
     shortTitle: 'شناسنامهٔ مدل‌ها', title: 'شناسنامهٔ مدل‌ها',
-    description: 'اندازه، معماری، طول متن و مجوز مدل‌ها را مقایسه کنید.',
+    description: 'مدل‌های با وزن قابل دریافت: اندازه، معماری، طول متن و مجوز؛ سرویس‌های API در این فهرست نیستند.',
     tableLabel: 'جدول شناسنامهٔ مدل‌های زبانی',
     compact: true, hideEmptyColumns: true,
     optionalColumns: [{ key: 'released-on', label: 'تاریخ انتشار', sortable: true }],
@@ -269,6 +271,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { key: 'modalities', label: 'ورودی ← خروجی' },
       { key: 'context', label: 'حداکثر طول متن', sortable: true, numeric: true },
       { key: 'applications', label: 'کاربردهای شاخص' },
+      { key: 'license', label: 'مجوز' },
       { key: 'downloads', label: 'دریافت و اجرای مدل' }
     ],
     detailColumns: [
@@ -296,7 +299,9 @@ export const llmViewConfigs: LlmViewConfig[] = [
       { id: 'model-size', label: 'اندازهٔ اعلامی مدل', control: 'number-range', level: 'main', canonicalUnit: 'B', placeholder: 'شمار کل، یا اندازهٔ اسمی با دامنهٔ مشخص در جزئیات' },
       { id: 'active-parameters', label: 'پارامتر فعال', control: 'number-range', level: 'advanced', canonicalUnit: 'B' },
       { id: 'size-band', label: 'رده‌بندی اندازهٔ این راهنما', control: 'select', level: 'advanced', options: sizeBandOptions },
-      { id: 'architecture', label: 'معماری', control: 'multi', level: 'advanced', options: options(['dense', 'moe', 'hybrid', 'other']) },
+      { id: 'architecture', label: 'ساختار پارامترها', control: 'multi', level: 'advanced', options: options(['dense', 'moe', 'hybrid', 'other']) },
+      { id: 'attention-architecture', label: 'توجه ترکیبی', control: 'select', level: 'advanced', options: [option('hybrid', 'توجه / حالت ترکیبی')] },
+      { id: 'commercial-use', label: 'استفادهٔ تجاری', control: 'select', level: 'advanced', options: [option('allowed', 'مجاز طبق مجوز'), option('restricted', 'مشروط'), option('prohibited', 'ممنوع')] },
       { id: 'input-modality', label: 'ورودی', control: 'multi', level: 'advanced', options: options(['text', 'image', 'audio', 'video', 'structured-data']) },
       { id: 'output-modality', label: 'خروجی', control: 'multi', level: 'advanced', options: options(['text', 'embedding', 'structured-data']) },
       { id: 'application', label: 'کاربرد', control: 'multi', level: 'advanced', options: applicationOptions },
@@ -439,7 +444,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
       ...capabilityFilters.map(([id, label]) => ({ id, label, control: 'multi' as const, level: 'advanced' as const, options: supportOptions })),
       { id: 'provision', label: 'شیوهٔ تأمین قابلیت', control: 'multi', level: 'advanced', options: provisionOptions },
       { id: 'software-license', label: 'مجوز نرم‌افزار', control: 'text', level: 'advanced' },
-      { id: 'maintenance', label: 'وضعیت نگه‌داری', control: 'multi', level: 'advanced', options: options(['active', 'maintenance', 'deprecated', 'unknown']) },
+      { id: 'maintenance', label: 'وضعیت نگه‌داری', control: 'multi', level: 'advanced', options: options(['active', 'maintenance', 'archived', 'deprecated', 'unknown']) },
       { id: 'released-on', label: 'تاریخ انتشار', control: 'date-range', level: 'advanced' },
       { id: 'last-reviewed', label: 'تاریخ بازبینی', control: 'date-range', level: 'advanced' }
     ],
@@ -639,13 +644,15 @@ export function modelUseViewConfig(matrix = false): LlmViewConfig {
       { key: 'primary-use', label: 'کاربرد اصلی' },
       { key: 'introduction', label: 'ویژگی و دلیل بررسی' },
       { key: 'use-condition', label: 'شرط مهم استفاده' },
+      { key: 'use-basis', label: 'مبنای پیشنهاد' },
       { key: 'downloads', label: 'شروع کار' }
     ],
     matrixColumns: matrix ? base.matrixColumns : undefined,
-    filters: base.filters.filter(filter => !['assessment-basis', 'tested-version', 'evidence-kind', 'subapplication', 'language'].includes(filter.id)).concat([
+    filters: base.filters.filter(filter => !['assessment-basis', 'tested-version', 'evidence-kind', 'subapplication'].includes(filter.id)).concat([
+      { id: 'use-basis', label: 'مبنای پیشنهاد', control: 'multi', level: 'main', options: [option('publisher-summary', 'معرفی سازنده'), option('editorial-analysis', 'تحلیل راهنما')] },
       { id: 'use-role', label: 'نقش در سامانه', control: 'multi', level: 'main', options: [
         option('retrieval', 'بازیابی سند'), option('reranking', 'بازرتبه‌بندی'), option('grounded-generation', 'تولید پاسخ از سند'),
-        option('text-generation', 'تولید متن'), option('coding', 'برنامه‌نویسی'), option('tool-use', 'فراخوانی ابزار'), option('vision', 'درک تصویر'), option('reasoning', 'استدلال')
+        option('text-generation', 'تولید متن'), option('code-completion', 'تکمیل کد / FIM'), option('coding', 'برنامه‌نویسی'), option('tool-use', 'فراخوانی ابزار'), option('vision', 'درک تصویر'), option('reasoning', 'استدلال')
       ] }
     ])
   };

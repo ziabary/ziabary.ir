@@ -5,7 +5,7 @@
     "roleFa": "موتور اجرا، مدیریت مدل و API",
     "startingUseFa": "شروع محلی، توسعه و سرویس کوچک",
     "usefulFeatureFa": "دریافت و مدیریت مدل و راه‌اندازی API در یک ابزار",
-    "selectionConditionFa": "برای بار چندکاربره، طول زمینه و تعداد مدل‌های هم‌زمان را بودجه‌بندی کنید.",
+    "selectionConditionFa": "اجرای محلی و ابری جدا هستند؛ OLLAMA_NO_CLOUD=1 مسیرهای ابری را غیرفعال می‌کند.",
     "versionScope": "v0.34.0",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [
@@ -31,7 +31,7 @@
     "roleFa": "موتور سرویس‌دهی",
     "startingUseFa": "API مدل زبانی با درخواست‌های هم‌زمان",
     "usefulFeatureFa": "continuous batching و مدیریت KV cache؛ API سازگار با OpenAI",
-    "selectionConditionFa": "قالب وزن، معماری مدل، parser ابزار و نسخهٔ backend باید با هم سازگار باشند.",
+    "selectionConditionFa": "برای GGUF، افزونهٔ vllm-gguf-plugin جدا نصب می‌شود؛ پشتیبانی این قالب آزمایشی است.",
     "versionScope": "v0.29.0",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [
@@ -44,7 +44,7 @@
     "roleFa": "موتور سرویس‌دهی",
     "startingUseFa": "سرویس چندکاربره و بار دارای پیشوند مشترک",
     "usefulFeatureFa": "batching و prefix caching؛ تنظیم برای نوع بار",
-    "selectionConditionFa": "برندهٔ ثابت همهٔ مدل‌ها نیست؛ نتایج ۱۴B و ۳۲B در این بسته تفاوت دارند.",
+    "selectionConditionFa": "پشتیبانی parser ابزار و کرنل کوانت به معماری مدل وابسته است؛ نسخه و تنظیمات هر ردیف بنچمارک را کنار نتیجه ببینید.",
     "versionScope": "v0.5.19",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [
@@ -135,7 +135,7 @@
     "roleFa": "سکوی سرویس‌دهی چند backend",
     "startingUseFa": "مدیریت سرویس مدل‌ها و pipelineهای inference",
     "usefulFeatureFa": "مدیریت مدل، زمان‌بندی و اتصال backendهای تخصصی",
-    "selectionConditionFa": "TensorRT-LLM یک backend/موتور است و Triton نقش سرور عمومی‌تری دارد.",
+    "selectionConditionFa": "انتشار ۲٫۷۲٫۰ کانتینر backendِ TensorRT-LLM را همراه ندارد.",
     "versionScope": "v2.72.0",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [

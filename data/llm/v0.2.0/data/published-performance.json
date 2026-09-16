@@ -1179,5 +1179,461 @@
     "sourceIds": [
       "4090-48gb-report"
     ]
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-0-6b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-0.6B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 1426.46
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-0.6B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-0-6b-fp8",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-0.6B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "FP8",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 1572.95
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-0.6B (SGLang), input 6144 / output 2048 / FP8"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-1-7b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-1.7B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 838.28
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-1.7B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-1-7b-fp8",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-1.7B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "FP8",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 1198.2
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-1.7B (SGLang), input 6144 / output 2048 / FP8"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-4b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-4B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 466.19
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-4B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-4b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-4B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 640.07
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids",
+      "quantBackend": "awq_marlin",
+      "vllm": "0.7.2"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-4B (SGLang), input 6144 / output 2048 / AWQ-INT4"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-8b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-8B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 296.25
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-8B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-8b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-8B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 477.89
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids",
+      "quantBackend": "awq_marlin",
+      "vllm": "0.7.2"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-8B (SGLang), input 6144 / output 2048 / AWQ-INT4"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-14b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 174.85
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-14B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-14b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-14B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 321.62
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids",
+      "quantBackend": "awq_marlin",
+      "vllm": "0.7.2"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-14B (SGLang), input 6144 / output 2048 / AWQ-INT4"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-32b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 77.82
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-32B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-32b-awq-int4",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-32B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "AWQ-INT4",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 159.99
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids",
+      "quantBackend": "awq_marlin",
+      "vllm": "0.7.2"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-32B (SGLang), input 6144 / output 2048 / AWQ-INT4"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-30b-a3b-bf16",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-30B-A3B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "BF16",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 490.1
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-30B-A3B (SGLang), input 6144 / output 2048 / BF16"
+  },
+  {
+    "id": "performance:qwen-h20-sglang-qwen3-30b-a3b-fp8",
+    "publicationGroup": "qwen-transformers-h20-6144-2048",
+    "modelRepository": "Qwen/Qwen3-30B-A3B",
+    "hardwareLabel": "NVIDIA H20 96GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "engineVersion": "0.4.6.post1",
+    "weightFormat": "FP8",
+    "metrics": {
+      "combinedInputOutputTokensPerSecond": 551.34
+    },
+    "protocol": {
+      "inputTokens": 6144,
+      "outputTokens": 2048,
+      "batchSize": 1,
+      "speedDefinition": "(input tokens + generated tokens) / elapsed time",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.51.3",
+      "sglKernel": "0.1.0",
+      "contextLength": 140000,
+      "memoryFractionStatic": 0.85,
+      "mixedChunk": true,
+      "skipTokenizerInit": true,
+      "inputMode": "input_ids"
+    },
+    "sourceIds": [
+      "qwen-speed"
+    ],
+    "reporter": "Qwen",
+    "sourceLocator": "Qwen3-30B-A3B (SGLang), input 6144 / output 2048 / FP8"
   }
 ]

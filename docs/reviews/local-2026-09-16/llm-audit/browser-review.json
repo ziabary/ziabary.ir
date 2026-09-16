@@ -1,0 +1,29 @@
+{
+  "draftGate": true,
+  "checks": [
+    "Tooka: two catalog rows, local loaded logos",
+    "Qwen3.5: MoE and 3 billion active parameters",
+    "Coder 32B Q4: 22.49 GiB at 8192 tokens, one request",
+    "specialized rows retain MIRACL Persian dense 57.7",
+    "TGI archive visible",
+    "new runtime library is visible"
+  ],
+  "viewports": [
+    {
+      "width": 1600,
+      "theme": "dark",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "pageOverflow": false
+    }
+  ],
+  "runtimeErrors": 0
+}

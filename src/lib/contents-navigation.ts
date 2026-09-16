@@ -36,6 +36,10 @@ export function readingPosition(node: HTMLElement, options: ReadingPositionOptio
     let previous = '';
     try { previous = decodeURIComponent(url.hash.slice(1)); } catch { /* Ignore malformed fragments. */ }
     const next = reachedHeading ? current : '';
+    // Keep a deliberately linked table row while its containing section is active.
+    const linkedTarget = document.getElementById(previous);
+    if (linkedTarget?.hasAttribute('data-preserve-reading-fragment')
+      && document.getElementById(next)?.contains(linkedTarget)) return;
     if (next === previous || (!next && !options.ids.includes(previous))) return;
     url.hash = next;
     // Shallow replacement preserves query parameters and router state, without

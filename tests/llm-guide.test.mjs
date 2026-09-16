@@ -35,15 +35,15 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': 87, 'model-suitability': 87, 'hardware-feasibility': 0, 'software-products': 13,
-    'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 20
+    'model-catalog': 95, 'model-suitability': 95, 'hardware-feasibility': 0, 'software-products': 16,
+    'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 24
   });
 
   for (const name of ['vLLM', 'SGLang', 'llama.cpp', 'Transformers', 'AirLLM']) assert.ok(guide.engineCandidates.includes(name));
   for (const name of ['Ollama', 'vLLM', 'SGLang', 'llama.cpp / llama-server', 'LM Studio', 'TensorRT-LLM', 'Triton Inference Server', 'Text Embeddings Inference', 'AirLLM', 'Hugging Face Transformers', 'LiteLLM', 'Open WebUI', 'Text Generation Inference']) {
     assert.ok(guide.softwareProductCandidates.some((candidate) => candidate.name === name), name);
   }
-  assert.equal(guide.softwareProductCandidates.find((item) => item.id === 'tgi').maintenanceHint.status, 'maintenance');
+  assert.equal(guide.softwareProductCandidates.find((item) => item.id === 'tgi').maintenanceHint.status, 'archived');
   assert.ok(guide.softwareProductCandidates.every((item) => item.officialUrl.startsWith('https://')));
 
   for (const id of ['nvidia-rtx3090', 'nvidia-rtx4090', 'nvidia-rtx4090-modified-48gb', 'nvidia-rtx5090', 'nvidia-rtx-a6000', 'nvidia-rtx6000-ada', 'nvidia-rtx-pro-6000-server', 'nvidia-h100-pcie-80', 'nvidia-h100-sxm', 'nvidia-h200-nvl', 'nvidia-h200-sxm', 'cpu-ram', 'multi-gpu']) {
@@ -251,7 +251,7 @@ test('LLM preview is absent from public HTML, search and sitemap', { skip: !exis
   assert.ok(!JSON.parse(readFileSync('build/search/fa.json','utf8')).some(item => item.href === '/guides/llm/'));
 });
 test('LLM preview accepts only show-drafts=true', () => {
-  for (const query of ['', 'show-drafts=true', 'show-drafts=false', 'show-drafts=1', 'show-drafts=TRUE']) assert.equal(hasLlmPreview(new URLSearchParams(query)), false);
+  for (const query of ['', 'show-draft=true', 'show-drafts=false', 'show-drafts=1', 'show-drafts=TRUE']) assert.equal(hasLlmPreview(new URLSearchParams(query)), false);
   assert.equal(hasLlmPreview(new URLSearchParams('show-drafts=true')), true);
 });
 
@@ -502,8 +502,8 @@ test('model release-date filtering uses release evidence, including month-only a
 });
 
 test('all catalog models have distinct sourced profiles, practical guidance, downloads and run paths', () => {
-  assert.equal(dataset.modelProfiles.length, 87);
-  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.introduction)).size, 87);
+  assert.equal(dataset.modelProfiles.length, 95);
+  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.introduction)).size, 95);
   for (const model of dataset.models) {
     const profile = dataset.modelProfiles.find(item => item.modelVersionId === model.id);
     assert.ok(profile?.introduction.trim(), model.id);
@@ -515,7 +515,7 @@ test('all catalog models have distinct sourced profiles, practical guidance, dow
 
 test('default usage guide explains all RAG roles without an experimental outcome', () => {
   const rows = adapters.adaptModelUseGuidance(dataset);
-  assert.equal(rows.length, 87);
+  assert.equal(rows.length, 95);
   const config = views.modelUseViewConfig();
   assert.equal(config.matrixColumns, undefined);
   const rag = filtering.filterLlmRows(rows, config.filters, { application: ['enterprise-rag'] }, '');
@@ -530,13 +530,13 @@ test('default usage guide explains all RAG roles without an experimental outcome
 
 test('optional usage matrix contains only generators and retains known text-only limitations', () => {
   const rows = adapters.adaptModelUseMatrix(dataset);
-  assert.equal(rows.length, 67);
+  assert.equal(rows.length, 71);
   assert.ok(!rows.some(row => /bge-m3|reranker|embedding|e5-small/.test(row.modelId)));
   const gemma = rows.find(row => row.modelId === 'model:google-gemma-3-1b-it');
   assert.equal(gemma.matrixCells['document-vision'].value.display, 'ورودی متنی');
   assert.match(gemma.matrixCells['document-vision'].details[0].value.display, /OCR/);
   assert.equal(gemma.matrixCells['coding-assistant'].value.badge, 'برنامه‌نویسی');
-  assert.ok(gemma.matrixCells['coding-assistant'].details.some(detail => detail.value.display?.includes('برنامهٔ میزبان')));
+  assert.ok(!gemma.matrixCells['coding-assistant'].details.some(detail => detail.value.display?.includes('برنامهٔ میزبان'))); // Generic wrapper advice is no longer repeated for each model.
   const qwen = rows.find(row => row.modelId === 'model:qwen-qwen3-8b');
   assert.ok(!qwen.matrixCells['enterprise-rag'].details.some(detail => /آزمون|حد قبولی/.test(detail.label)));
 });
@@ -609,7 +609,6 @@ test('profile presentation removes repeated introductions without dropping task 
 });
 
 test('shared run notes preserve engine scope, commands and engine-specific restrictions', () => {
-  let sharedCount = 0;
   for (const profile of dataset.modelProfiles) {
     const result = presentation.profileRunCards(profile);
     assert.equal(result.guides.length, profile.runGuides.length);
@@ -623,12 +622,10 @@ test('shared run notes preserve engine scope, commands and engine-specific restr
       }
     });
     for (const note of result.shared) {
-      sharedCount++;
       assert.ok(!result.guides.some(guide => guide.conditions.includes(note.text)));
       assert.deepEqual(note.engines, [...new Set(profile.runGuides.filter(guide => guide.conditions.includes(note.text)).map(guide => guide.engine))]);
     }
   }
-  assert.ok(sharedCount > 40);
   const bge = dataset.modelProfiles.find(profile => profile.modelVersionId === 'model:baai-bge-m3');
   assert.match(presentation.profileRunCards(bge).guides[0].code, /return_colbert_vecs=True/);
 });

@@ -9,7 +9,7 @@ const data = name => JSON.parse(fs.readFileSync(`data/llm/v0.2.0/data/${name}.js
 const close = (a,b) => assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
 
 test('supplement preserves the base, exact identities, independent evidence and deduplicated quality',()=>{
-  assert.equal(base.models.length,87);assert.equal(base.publishedEvaluations.length,1070);assert.equal(base.artifactListings.length,475);
+  assert.equal(base.models.length,95);assert.equal(base.publishedEvaluations.length,1070);assert.equal(base.artifactListings.length,483);
   assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1101);
   assert.equal(repository.evidence.length,base.evidence.length+127);
   assert.equal(r.researchModel(base,'CohereForAI/aya-expanse-32b').id,'model:coherelabs-aya-expanse-32b');
@@ -53,8 +53,8 @@ test('context, concurrent requests, CPU dtype and multi-GPU conditions change th
   const cpu=v.memoryRows(repository,{...v.defaultResearchControls,method:'cpu'});assert.equal(cpu.length,59);
   const native=cpu.find(x=>x.label==='SmolLM2-1.7B-Instruct'&&x.facets.quant.display==='FP32');close(native.cells.budget.canonicalNumber,13.37542074918747);
 });
-test('all 40 performances stay in their report groups and metrics retain distinct units and scope',()=>{
-  assert.equal(r.research.performance.length,40);
+test('all 54 performances stay in their report groups and metrics retain distinct units and scope',()=>{
+  assert.equal(r.research.performance.length,54);
   for(const run of r.research.performance){
     const metric=Object.keys(run.metrics).find(key=>v.performanceMetrics[key]);
     const result=v.performanceRows(repository,run.publicationGroup,metric).find(x=>x.id===run.id);assert.ok(result);

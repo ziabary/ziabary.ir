@@ -1,0 +1,174 @@
+{
+  "layouts": [
+    {
+      "name": "gpu",
+      "width": 1440,
+      "screenshotHeight": 1507,
+      "clientWidth": 1425,
+      "hero": {
+        "left": 72.5,
+        "right": 1352.5,
+        "top": 78,
+        "bottom": 674.25,
+        "width": 1280,
+        "height": 596.25
+      },
+      "text": {
+        "left": 608.5,
+        "right": 1352.5,
+        "top": 118,
+        "bottom": 674.25,
+        "width": 744,
+        "height": 556.25
+      },
+      "image": {
+        "left": 72.5,
+        "right": 568.5,
+        "top": 118,
+        "bottom": 397,
+        "width": 496,
+        "height": 279
+      },
+      "naturalRatio": 1.7777777777777777,
+      "titleSize": "38px",
+      "table": {
+        "left": 188,
+        "right": 1201,
+        "top": 1346.359375,
+        "bottom": 2861.46875,
+        "width": 1013,
+        "height": 1515.109375
+      },
+      "overflow": false,
+      "h1": 1
+    },
+    {
+      "name": "gpu",
+      "width": 390,
+      "screenshotHeight": 2388,
+      "clientWidth": 390,
+      "hero": {
+        "left": 16,
+        "right": 374,
+        "top": 66,
+        "bottom": 1197.59375,
+        "width": 358,
+        "height": 1131.59375
+      },
+      "text": {
+        "left": 16,
+        "right": 374,
+        "top": 94,
+        "bottom": 972.21875,
+        "width": 358,
+        "height": 878.21875
+      },
+      "image": {
+        "left": 16,
+        "right": 374,
+        "top": 996.21875,
+        "bottom": 1197.59375,
+        "width": 358,
+        "height": 201.375
+      },
+      "naturalRatio": 1.7810945273631842,
+      "titleSize": "29px",
+      "table": {
+        "left": 16,
+        "right": 374,
+        "top": 2227.515625,
+        "bottom": 4208.328125,
+        "width": 358,
+        "height": 1980.8125
+      },
+      "overflow": false,
+      "h1": 1
+    },
+    {
+      "name": "llm",
+      "width": 1440,
+      "screenshotHeight": 1497,
+      "clientWidth": 1425,
+      "hero": {
+        "left": 72.5,
+        "right": 1352.5,
+        "top": 125.59375,
+        "bottom": 699.046875,
+        "width": 1280,
+        "height": 573.453125
+      },
+      "text": {
+        "left": 608.5,
+        "right": 1352.5,
+        "top": 165.59375,
+        "bottom": 699.046875,
+        "width": 744,
+        "height": 533.453125
+      },
+      "image": {
+        "left": 72.5,
+        "right": 568.5,
+        "top": 165.59375,
+        "bottom": 444.59375,
+        "width": 496,
+        "height": 279
+      },
+      "naturalRatio": 1.7777777777777777,
+      "titleSize": "38px",
+      "table": {
+        "left": 188,
+        "right": 1201,
+        "top": 1336.3125,
+        "bottom": 2986.0625,
+        "width": 1013,
+        "height": 1649.75
+      },
+      "overflow": false,
+      "h1": 1
+    },
+    {
+      "name": "llm",
+      "width": 390,
+      "screenshotHeight": 2451,
+      "clientWidth": 390,
+      "hero": {
+        "left": 16,
+        "right": 374,
+        "top": 105.59375,
+        "bottom": 1195.578125,
+        "width": 358,
+        "height": 1089.984375
+      },
+      "text": {
+        "left": 16,
+        "right": 374,
+        "top": 133.59375,
+        "bottom": 970.203125,
+        "width": 358,
+        "height": 836.609375
+      },
+      "image": {
+        "left": 16,
+        "right": 374,
+        "top": 994.203125,
+        "bottom": 1195.578125,
+        "width": 358,
+        "height": 201.375
+      },
+      "naturalRatio": 1.7810945273631842,
+      "titleSize": "29px",
+      "table": {
+        "left": 16,
+        "right": 374,
+        "top": 2290.3125,
+        "bottom": 4467.734375,
+        "width": 358,
+        "height": 2177.421875
+      },
+      "overflow": false,
+      "h1": 1
+    }
+  ],
+  "gpuDestinations": 9,
+  "runtimeErrors": 0
+}

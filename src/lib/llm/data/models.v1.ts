@@ -1993,8 +1993,7 @@ models.push({
   "applications": [
     "text-work",
     "enterprise-rag",
-    "structured-extraction",
-    "agents-tools"
+    "structured-extraction"
   ],
   "languages": [
     {
@@ -2123,8 +2122,7 @@ models.push({
   "applications": [
     "text-work",
     "enterprise-rag",
-    "structured-extraction",
-    "agents-tools"
+    "structured-extraction"
   ],
   "languages": [
     {
@@ -4479,7 +4477,8 @@ models.push({
       "unit": "token"
     },
     "condition": "تنظیم YaRN"
-  }
+  },
+  "thinkingMode": "non-thinking-only"
 });
 models.push({
   "id": "model:qwen-qwen3-embedding-0-6b",
@@ -5645,7 +5644,7 @@ models.push({
     "Qwen/Qwen3.5-2B"
   ],
   "stage": "instruct",
-  "architecture": "hybrid",
+  "architecture": "dense",
   "totalParametersB": {
     "state": "known",
     "value": 2.0,
@@ -5786,7 +5785,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:qwen-qwen3-5-35b-a3b",
@@ -5798,7 +5798,7 @@ models.push({
     "Qwen/Qwen3.5-35B-A3B"
   ],
   "stage": "instruct",
-  "architecture": "hybrid",
+  "architecture": "moe",
   "totalParametersB": {
     "state": "known",
     "value": 35.0,
@@ -5809,10 +5809,11 @@ models.push({
     "note": "شمار گرد‌شدهٔ اعلامی ناشر."
   },
   "activeParametersB": {
-    "state": "unknown",
-    "note": "شمار فعال دقیق این گونه و فاز اجرا تأیید نشده است.",
+    "state": "known",
+    "value": 3,
+    "unit": "billion-parameters",
     "evidenceIds": [
-      "evidence:qwen-qwen3-5-35b-a3b-parameters"
+      "evidence:qwen-qwen3-5-35b-a3b-card"
     ]
   },
   "kind": "vision-language",
@@ -5859,7 +5860,7 @@ models.push({
     "state": "not-measured"
   },
   "releaseStatus": "available",
-  "lastReviewedOn": "2026-09-15",
+  "lastReviewedOn": "2026-09-16",
   "license": {
     "name": {
       "state": "known",
@@ -5950,7 +5951,8 @@ models.push({
       "unit": "token"
     },
     "condition": "افزایش زمینه با YaRN"
-  }
+  },
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:qwen-qwen3-5-4b",
@@ -5962,7 +5964,7 @@ models.push({
     "Qwen/Qwen3.5-4B"
   ],
   "stage": "instruct",
-  "architecture": "hybrid",
+  "architecture": "dense",
   "totalParametersB": {
     "state": "known",
     "value": 4.0,
@@ -6114,7 +6116,8 @@ models.push({
       "unit": "token"
     },
     "condition": "افزایش زمینه با YaRN"
-  }
+  },
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:qwen-qwen3-5-9b",
@@ -6126,7 +6129,7 @@ models.push({
     "Qwen/Qwen3.5-9B"
   ],
   "stage": "instruct",
-  "architecture": "hybrid",
+  "architecture": "dense",
   "totalParametersB": {
     "state": "known",
     "value": 9.0,
@@ -6278,7 +6281,8 @@ models.push({
       "unit": "token"
     },
     "condition": "افزایش زمینه با YaRN"
-  }
+  },
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:qwen-qwen3-8-27b",
@@ -6431,7 +6435,8 @@ models.push({
       "unit": "token"
     },
     "condition": "افزایش زمینه با YaRN"
-  }
+  },
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:allenai-olmo-3-7b-instruct",
@@ -7414,7 +7419,7 @@ models.push({
     "deepseek-ai/DeepSeek-V4.1-Flash"
   ],
   "stage": "instruct",
-  "architecture": "hybrid",
+  "architecture": "moe",
   "totalParametersB": {
     "state": "unknown",
     "note": "شمار کل با دامنهٔ یکنواخت تأیید نشده؛ شمار جزء زبانی، فعال یا ذخیره‌شده جای آن ننشسته است.",
@@ -7568,7 +7573,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:google-gemma-3-12b-it",
@@ -11874,7 +11880,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:openai-gpt-oss-120b",
@@ -13067,7 +13074,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "thinkingMode": "non-thinking-only"
 });
 models.push({
   "id": "model:qwen-qwen3-coder-480b-a35b-instruct",
@@ -13202,7 +13210,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "thinkingMode": "non-thinking-only"
 });
 models.push({
   "id": "model:qwen-qwen3-5-27b",
@@ -13214,7 +13223,7 @@ models.push({
     "Qwen/Qwen3.5-27B"
   ],
   "stage": "reasoning",
-  "architecture": "hybrid",
+  "architecture": "dense",
   "totalParametersB": {
     "state": "known",
     "value": 27.0,
@@ -13346,7 +13355,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:qwen-qwen3-5-0-8b",
@@ -13358,7 +13368,7 @@ models.push({
     "Qwen/Qwen3.5-0.8B"
   ],
   "stage": "instruct",
-  "architecture": "hybrid",
+  "architecture": "dense",
   "totalParametersB": {
     "state": "known",
     "value": 0.8,
@@ -13490,7 +13500,8 @@ models.push({
       },
       "approximate": false
     }
-  ]
+  ],
+  "attentionArchitecture": "hybrid"
 });
 models.push({
   "id": "model:qwen-qwen3-5-122b-a10b",
@@ -19264,6 +19275,1866 @@ models.push({
       "value": "زبان‌های اعلام‌شده: انگلیسی.",
       "evidenceIds": [
         "evidence:v03-9f4a255f17cc556d99"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:qwen-qwen2-5-coder-1-5b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen2.5-Coder-1.5B",
+  "publisher": "Qwen",
+  "version": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "aliases": [
+    "Qwen/Qwen2.5-Coder-1.5B"
+  ],
+  "stage": "base",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1.54,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "apache-2.0",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/blob/df3ce67c0e24480f20468b6ef2894622d69eb73b/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b",
+    "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-config",
+    "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 1.543714304,
+        "evidenceIds": [
+          "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:bigcode-starcoder2-3b",
+  "familyId": "family:starcoder2",
+  "exactName": "starcoder2-3b",
+  "publisher": "bigcode",
+  "version": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "aliases": [
+    "bigcode/starcoder2-3b"
+  ],
+  "stage": "base",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 3,
+    "evidenceIds": [
+      "evidence:audit-20260916-bigcode-starcoder2-3b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 16384,
+    "evidenceIds": [
+      "evidence:audit-20260916-bigcode-starcoder2-3b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "bigcode-openrail-m",
+      "evidenceIds": [
+        "evidence:audit-20260916-bigcode-starcoder2-3b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
+      "evidenceIds": [
+        "evidence:audit-20260916-bigcode-starcoder2-3b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:audit-20260916-bigcode-starcoder2-3b"
+      ]
+    },
+    "restrictions": [
+      "استفاده تابع شروط BigCode OpenRAIL-M است."
+    ],
+    "evidenceIds": [
+      "evidence:audit-20260916-bigcode-starcoder2-3b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-bigcode-starcoder2-3b",
+    "evidence:audit-20260916-bigcode-starcoder2-3b-config",
+    "evidence:audit-20260916-bigcode-starcoder2-3b-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 3.030371328,
+        "evidenceIds": [
+          "evidence:audit-20260916-bigcode-starcoder2-3b-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "sliding-window",
+  "contextCondition": "توجه محلی با پنجرهٔ ۴٬۰۹۶ توکنی."
+});
+models.push({
+  "id": "model:qwen-qwen3-coder-next",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3-Coder-Next",
+  "publisher": "Qwen",
+  "version": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "aliases": [
+    "Qwen/Qwen3-Coder-Next"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "totalParametersB": {
+    "state": "known",
+    "value": 80,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-coder-next"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 3,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-coder-next"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-coder-next"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "apache-2.0",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-coder-next"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-coder-next",
+    "evidence:audit-20260916-qwen-qwen3-coder-next-config",
+    "evidence:audit-20260916-qwen-qwen3-coder-next-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 79.674391296,
+        "evidenceIds": [
+          "evidence:audit-20260916-qwen-qwen3-coder-next-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid",
+  "thinkingMode": "non-thinking-only"
+});
+models.push({
+  "id": "model:intfloat-multilingual-e5-large-instruct",
+  "familyId": "family:e5",
+  "exactName": "multilingual-e5-large-instruct",
+  "publisher": "intfloat",
+  "version": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "aliases": [
+    "intfloat/multilingual-e5-large-instruct"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 0.56,
+    "evidenceIds": [
+      "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "af",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "am",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "as",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "az",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "be",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "bg",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "bn",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "br",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "bs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ca",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "cy",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "da",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "el",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "eo",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "et",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "eu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "fi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "fy",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ga",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "gd",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "gl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "gu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ha",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "he",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "hi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "hr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "hu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "hy",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "id",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "is",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "jv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ka",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "kk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "km",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "kn",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ku",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ky",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "la",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "lo",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "lt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "lv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "mg",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "mk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ml",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "mn",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "mr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ms",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "my",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ne",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "no",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "om",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "or",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "pa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "pl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ps",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ro",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sd",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "si",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "so",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sq",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "su",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "sw",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ta",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "te",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "th",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "tl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "tr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ug",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "uk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "ur",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "uz",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "vi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "xh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "yi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 512,
+    "evidenceIds": [
+      "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "mit",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/intfloat/multilingual-e5-large-instruct/blob/274baa43b0e13e37fafa6428dbc7938e62e5c439/README.md",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct",
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-config",
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 0.559890432,
+        "evidenceIds": [
+          "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی و شباهت متن",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار متراکم",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "masked mean pooling + L2",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "بازیابی چندزبانه با دستور وظیفه",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "چندزبانه، شامل فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 1024,
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:qwen-qwen3-4b-instruct-2507",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3-4B-Instruct-2507",
+  "publisher": "Qwen",
+  "version": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "aliases": [
+    "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 4,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "apache-2.0",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507",
+    "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507-config",
+    "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 4.022468096,
+        "evidenceIds": [
+          "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "thinkingMode": "non-thinking-only"
+});
+models.push({
+  "id": "model:partai-tooka-sbert-v2-small",
+  "familyId": "family:tooka",
+  "exactName": "Tooka-SBERT-V2-Small",
+  "publisher": "PartAI",
+  "version": "8bbed87e36669387f71437c061430ba56d1b496f",
+  "aliases": [
+    "PartAI/Tooka-SBERT-V2-Small"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 0.123,
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 512,
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-config",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 0.122905344,
+        "evidenceIds": [
+          "evidence:audit-20260916-partai-tooka-sbert-v2-small-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی و شباهت متن",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار متراکم",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "pipeline آمادهٔ Sentence Transformers",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "بردارسازی متن فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 768,
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:partai-tooka-sbert-v2-large",
+  "familyId": "family:tooka",
+  "exactName": "Tooka-SBERT-V2-Large",
+  "publisher": "PartAI",
+  "version": "b59682efa961122cc0e4408296d5852870c82eae",
+  "aliases": [
+    "PartAI/Tooka-SBERT-V2-Large"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 0.353,
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 512,
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-config",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-files"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شده در Safetensors",
+      "value": {
+        "state": "known",
+        "value": 0.35303936,
+        "evidenceIds": [
+          "evidence:audit-20260916-partai-tooka-sbert-v2-large-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی و شباهت متن",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار متراکم",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "pipeline آمادهٔ Sentence Transformers",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "بردارسازی متن فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 1024,
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:hooshvarelab-bert-base-parsbert-uncased",
+  "familyId": "family:parsbert",
+  "exactName": "bert-base-parsbert-uncased",
+  "publisher": "HooshvareLab",
+  "version": "d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "aliases": [
+    "HooshvareLab/bert-base-parsbert-uncased"
+  ],
+  "stage": "base",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "encoder-classifier",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction"
+  ],
+  "languages": [
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 512,
+    "evidenceIds": [
+      "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased",
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-config",
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "پایهٔ آموزش دسته‌بندی و تشخیص موجودیت",
+      "evidenceIds": [
+        "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بازنمایی توکن‌ها؛ سر وظیفه باید آموزش ببیند",
+      "evidenceIds": [
+        "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "سر وظیفهٔ جداگانه",
+      "evidenceIds": [
+        "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "پایهٔ آموزش وظایف فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی",
+      "evidenceIds": [
+        "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
       ]
     }
   }

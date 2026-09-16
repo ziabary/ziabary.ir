@@ -33876,3 +33876,469 @@ evidence.push({
   "scope": "نتیجهٔ مدل نام‌گذاری‌شده در گزارش ناشر؛ precision، بار و پیکربندی فقط تا حد تصریح منبع ثبت شده است.",
   "limitations": []
 });
+evidence.push({
+  "id": "evidence:audit-20260916-mxfp4",
+  "url": "https://huggingface.co/docs/transformers/main/en/quantization/mxfp4",
+  "title": "Transformers: MXFP4",
+  "accessedOn": "2026-09-16",
+  "locator": "Prerequisites and kernels",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Transformers: MXFP4",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-triton-272",
+  "url": "https://github.com/triton-inference-server/server/releases/tag/v2.72.0",
+  "title": "Triton 2.72.0 release notes",
+  "accessedOn": "2026-09-16",
+  "locator": "TensorRT-LLM backend container",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Triton 2.72.0 release notes",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-tgi-archive",
+  "url": "https://github.com/huggingface/text-generation-inference",
+  "title": "TGI archived repository",
+  "accessedOn": "2026-09-16",
+  "locator": "Repository archive banner: March 21, 2026",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "TGI archived repository",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/blob/df3ce67c0e24480f20468b6ef2894622d69eb73b/README.md",
+  "title": "Qwen/Qwen2.5-Coder-1.5B — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen2.5-Coder-1.5B",
+  "versionRevisionOrCommit": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-config",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/blob/df3ce67c0e24480f20468b6ef2894622d69eb73b/config.json",
+  "title": "Qwen/Qwen2.5-Coder-1.5B — configuration",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen2.5-Coder-1.5B",
+  "versionRevisionOrCommit": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-files",
+  "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-Coder-1.5B/revision/df3ce67c0e24480f20468b6ef2894622d69eb73b?blobs=true",
+  "title": "Qwen/Qwen2.5-Coder-1.5B — file metadata",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen2.5-Coder-1.5B",
+  "versionRevisionOrCommit": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-bigcode-starcoder2-3b",
+  "url": "https://huggingface.co/bigcode/starcoder2-3b/blob/733247c55e3f73af49ce8e9c7949bf14af205928/README.md",
+  "title": "bigcode/starcoder2-3b — model card",
+  "organization": "bigcode",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "bigcode/starcoder2-3b",
+  "versionRevisionOrCommit": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-bigcode-starcoder2-3b-config",
+  "url": "https://huggingface.co/bigcode/starcoder2-3b/blob/733247c55e3f73af49ce8e9c7949bf14af205928/config.json",
+  "title": "bigcode/starcoder2-3b — configuration",
+  "organization": "bigcode",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "bigcode/starcoder2-3b",
+  "versionRevisionOrCommit": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-bigcode-starcoder2-3b-files",
+  "url": "https://huggingface.co/api/models/bigcode/starcoder2-3b/revision/733247c55e3f73af49ce8e9c7949bf14af205928?blobs=true",
+  "title": "bigcode/starcoder2-3b — file metadata",
+  "organization": "bigcode",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "bigcode/starcoder2-3b",
+  "versionRevisionOrCommit": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen3-coder-next",
+  "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md",
+  "title": "Qwen/Qwen3-Coder-Next — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-Coder-Next",
+  "versionRevisionOrCommit": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen3-coder-next-config",
+  "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/config.json",
+  "title": "Qwen/Qwen3-Coder-Next — configuration",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-Coder-Next",
+  "versionRevisionOrCommit": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen3-coder-next-files",
+  "url": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-Next/revision/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb?blobs=true",
+  "title": "Qwen/Qwen3-Coder-Next — file metadata",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-Coder-Next",
+  "versionRevisionOrCommit": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct",
+  "url": "https://huggingface.co/intfloat/multilingual-e5-large-instruct/blob/274baa43b0e13e37fafa6428dbc7938e62e5c439/README.md",
+  "title": "intfloat/multilingual-e5-large-instruct — model card",
+  "organization": "intfloat",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "intfloat/multilingual-e5-large-instruct",
+  "versionRevisionOrCommit": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-config",
+  "url": "https://huggingface.co/intfloat/multilingual-e5-large-instruct/blob/274baa43b0e13e37fafa6428dbc7938e62e5c439/config.json",
+  "title": "intfloat/multilingual-e5-large-instruct — configuration",
+  "organization": "intfloat",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "intfloat/multilingual-e5-large-instruct",
+  "versionRevisionOrCommit": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-files",
+  "url": "https://huggingface.co/api/models/intfloat/multilingual-e5-large-instruct/revision/274baa43b0e13e37fafa6428dbc7938e62e5c439?blobs=true",
+  "title": "intfloat/multilingual-e5-large-instruct — file metadata",
+  "organization": "intfloat",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "intfloat/multilingual-e5-large-instruct",
+  "versionRevisionOrCommit": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507",
+  "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md",
+  "title": "Qwen/Qwen3-4B-Instruct-2507 — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-4B-Instruct-2507",
+  "versionRevisionOrCommit": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507-config",
+  "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/config.json",
+  "title": "Qwen/Qwen3-4B-Instruct-2507 — configuration",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-4B-Instruct-2507",
+  "versionRevisionOrCommit": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507-files",
+  "url": "https://huggingface.co/api/models/Qwen/Qwen3-4B-Instruct-2507/revision/cdbee75f17c01a7cc42f958dc650907174af0554?blobs=true",
+  "title": "Qwen/Qwen3-4B-Instruct-2507 — file metadata",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-4B-Instruct-2507",
+  "versionRevisionOrCommit": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-partai-tooka-sbert-v2-small",
+  "url": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small/blob/8bbed87e36669387f71437c061430ba56d1b496f/README.md",
+  "title": "PartAI/Tooka-SBERT-V2-Small — model card",
+  "organization": "PartAI",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "PartAI/Tooka-SBERT-V2-Small",
+  "versionRevisionOrCommit": "8bbed87e36669387f71437c061430ba56d1b496f",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-partai-tooka-sbert-v2-small-config",
+  "url": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small/blob/8bbed87e36669387f71437c061430ba56d1b496f/config.json",
+  "title": "PartAI/Tooka-SBERT-V2-Small — configuration",
+  "organization": "PartAI",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "PartAI/Tooka-SBERT-V2-Small",
+  "versionRevisionOrCommit": "8bbed87e36669387f71437c061430ba56d1b496f",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-partai-tooka-sbert-v2-small-files",
+  "url": "https://huggingface.co/api/models/PartAI/Tooka-SBERT-V2-Small/revision/8bbed87e36669387f71437c061430ba56d1b496f?blobs=true",
+  "title": "PartAI/Tooka-SBERT-V2-Small — file metadata",
+  "organization": "PartAI",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "PartAI/Tooka-SBERT-V2-Small",
+  "versionRevisionOrCommit": "8bbed87e36669387f71437c061430ba56d1b496f",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-partai-tooka-sbert-v2-large",
+  "url": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large/blob/b59682efa961122cc0e4408296d5852870c82eae/README.md",
+  "title": "PartAI/Tooka-SBERT-V2-Large — model card",
+  "organization": "PartAI",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "PartAI/Tooka-SBERT-V2-Large",
+  "versionRevisionOrCommit": "b59682efa961122cc0e4408296d5852870c82eae",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-partai-tooka-sbert-v2-large-config",
+  "url": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large/blob/b59682efa961122cc0e4408296d5852870c82eae/config.json",
+  "title": "PartAI/Tooka-SBERT-V2-Large — configuration",
+  "organization": "PartAI",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "PartAI/Tooka-SBERT-V2-Large",
+  "versionRevisionOrCommit": "b59682efa961122cc0e4408296d5852870c82eae",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-partai-tooka-sbert-v2-large-files",
+  "url": "https://huggingface.co/api/models/PartAI/Tooka-SBERT-V2-Large/revision/b59682efa961122cc0e4408296d5852870c82eae?blobs=true",
+  "title": "PartAI/Tooka-SBERT-V2-Large — file metadata",
+  "organization": "PartAI",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "PartAI/Tooka-SBERT-V2-Large",
+  "versionRevisionOrCommit": "b59682efa961122cc0e4408296d5852870c82eae",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased",
+  "url": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased/blob/d73a0e2c7492c33bd5819bcdb23eba207404dd19/README.md",
+  "title": "HooshvareLab/bert-base-parsbert-uncased — model card",
+  "organization": "HooshvareLab",
+  "accessedOn": "2026-09-16",
+  "locator": "README.md: model description, usage and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "HooshvareLab/bert-base-parsbert-uncased",
+  "versionRevisionOrCommit": "d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-config",
+  "url": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased/blob/d73a0e2c7492c33bd5819bcdb23eba207404dd19/config.json",
+  "title": "HooshvareLab/bert-base-parsbert-uncased — configuration",
+  "organization": "HooshvareLab",
+  "accessedOn": "2026-09-16",
+  "locator": "config.json",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "HooshvareLab/bert-base-parsbert-uncased",
+  "versionRevisionOrCommit": "d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files",
+  "url": "https://huggingface.co/api/models/HooshvareLab/bert-base-parsbert-uncased/revision/d73a0e2c7492c33bd5819bcdb23eba207404dd19?blobs=true",
+  "title": "HooshvareLab/bert-base-parsbert-uncased — file metadata",
+  "organization": "HooshvareLab",
+  "accessedOn": "2026-09-16",
+  "locator": "siblings[].size and repository sha",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "HooshvareLab/bert-base-parsbert-uncased",
+  "versionRevisionOrCommit": "d73a0e2c7492c33bd5819bcdb23eba207404dd19",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-ollama-openai-api",
+  "url": "https://docs.ollama.com/api/openai-compatibility",
+  "title": "ollama — API compatibility",
+  "accessedOn": "2026-09-16",
+  "locator": "OpenAI compatibility: supported endpoints and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "ollama — API compatibility",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-lm-studio-openai-api",
+  "url": "https://lmstudio.ai/docs/developer/openai-compat",
+  "title": "lm-studio — API compatibility",
+  "accessedOn": "2026-09-16",
+  "locator": "OpenAI compatibility: supported endpoints and limitations",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "lm-studio — API compatibility",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-ktransformers-release",
+  "url": "https://github.com/kvcache-ai/ktransformers/releases/tag/v0.7.1",
+  "title": "KTransformers v0.7.1",
+  "accessedOn": "2026-09-16",
+  "locator": "KTransformers v0.7.1",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "KTransformers v0.7.1",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-ktransformers-docs",
+  "url": "https://github.com/kvcache-ai/ktransformers",
+  "title": "KTransformers — README",
+  "accessedOn": "2026-09-16",
+  "locator": "KTransformers — README",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "KTransformers — README",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-ktransformers-license",
+  "url": "https://github.com/kvcache-ai/ktransformers/blob/main/LICENSE",
+  "title": "KTransformers — Apache-2.0",
+  "accessedOn": "2026-09-16",
+  "locator": "KTransformers — Apache-2.0",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "KTransformers — Apache-2.0",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-sentence-transformers-release",
+  "url": "https://github.com/huggingface/sentence-transformers/releases/tag/v6.0.1",
+  "title": "Sentence Transformers v6.0.1",
+  "accessedOn": "2026-09-16",
+  "locator": "Sentence Transformers v6.0.1",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Sentence Transformers v6.0.1",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-sentence-transformers-docs",
+  "url": "https://github.com/huggingface/sentence-transformers",
+  "title": "Sentence Transformers — README",
+  "accessedOn": "2026-09-16",
+  "locator": "Sentence Transformers — README",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Sentence Transformers — README",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-sentence-transformers-license",
+  "url": "https://github.com/huggingface/sentence-transformers/blob/main/LICENSE",
+  "title": "Sentence Transformers — Apache-2.0",
+  "accessedOn": "2026-09-16",
+  "locator": "Sentence Transformers — Apache-2.0",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Sentence Transformers — Apache-2.0",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-flagembedding-release",
+  "url": "https://github.com/FlagOpen/FlagEmbedding/releases/tag/v1.4.2",
+  "title": "FlagEmbedding v1.4.2",
+  "accessedOn": "2026-09-16",
+  "locator": "FlagEmbedding v1.4.2",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "FlagEmbedding v1.4.2",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-flagembedding-docs",
+  "url": "https://github.com/FlagOpen/FlagEmbedding",
+  "title": "FlagEmbedding — README",
+  "accessedOn": "2026-09-16",
+  "locator": "FlagEmbedding — README",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "FlagEmbedding — README",
+  "limitations": []
+});
+evidence.push({
+  "id": "evidence:audit-20260916-flagembedding-license",
+  "url": "https://github.com/FlagOpen/FlagEmbedding/blob/master/LICENSE",
+  "title": "FlagEmbedding — MIT",
+  "accessedOn": "2026-09-16",
+  "locator": "FlagEmbedding — MIT",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "FlagEmbedding — MIT",
+  "limitations": []
+});

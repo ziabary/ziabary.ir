@@ -32,7 +32,7 @@ export const performanceGroups: Record<string, { label: string; note: string }> 
   'gpustack-qwen32-h100-sharegpt': { label: 'Qwen3-32B · H100 · GPUStack', note: 'بار اشباع ShareGPT؛ این گزارش با آزمون ۱۴ میلیاردی گروه جدا دارد.' },
   'gpustack-deepseek-h200-sharegpt': { label: 'DeepSeek-V3.2 · هشت H200 · GPUStack', note: 'مدل V3.2 با هشت کارت SXM؛ نوع تقسیم مدل و داده در هر ردیف متفاوت است.' },
   'llamacpp-llama2-7b-q4-fa': { label: 'Llama 2 · llama-bench · کارت‌های مختلف', note: 'آزمون‌های جداگانهٔ pp512 و tg128. نسخهٔ ساخت و میزبان متفاوت‌اند؛ رتبه‌بندی عمومی GPU نیست.' },
-  'qwen-transformers-h20-6144-2048': { label: 'Qwen3 · Transformers · H20', note: 'نرخ گزارش‌شده مجموع توکن ورودی و خروجی بر زمان است؛ سرعت تولید خروجی نیست.' },
+  'qwen-transformers-h20-6144-2048': { label: 'Qwen3 · Transformers و SGLang · H20', note: 'نرخ گزارش‌شده مجموع توکن ورودی و خروجی بر زمان است؛ سرعت تولید خروجی نیست.' },
   'dbmart-4090-offline-100-600': { label: 'DeepSeek تقطیرشده · 4090 · پردازش دسته‌ای', note: 'آزمون آفلاین میزبان: ۳۰۰ درخواست، ۱۰۰ توکن ورودی و ۶۰۰ توکن خروجی برای هر درخواست؛ شاهد تجربهٔ چت نیست.' },
   'main-horse-gpt-fast-synthetic': { label: 'آزمون فنی معماری · وزن تصادفی', note: 'وزن‌ها تصادفی‌اند؛ عددها به سرعت یا کیفیت مدل آموزش‌دیده نسبت داده نمی‌شوند.' }
 };
@@ -54,7 +54,7 @@ export interface ResearchControls {
   hardwareIds: string[]; ram: number[]; group: string; metric: string;
   deploymentMode: 'routes' | 'kernels'; model: string;
 }
-export const defaultResearchControls: ResearchControls = { context: 8192, active: 1, method: 'gpu', hardwareIds: ['hardware:rtx4090-24', 'hardware:rtx4090-mod-48', 'hardware:2x-rtx4090-24'], ram: [8, 16, 32], group: 'gpustack-qwen14-h100-sharegpt', metric: 'outputTokensPerSecond', deploymentMode: 'routes', model: '' };
+export const defaultResearchControls: ResearchControls = { context: 8192, active: 1, method: 'gpu', hardwareIds: ['hardware:rtx4090-24', 'hardware:rtx5090-32', 'hardware:rtx6000-ada-48'], ram: [8, 16, 32], group: 'gpustack-qwen14-h100-sharegpt', metric: 'outputTokensPerSecond', deploymentMode: 'routes', model: '' };
 
 /** File-footprint view covers all verified packages without pretending that
  * free memory after weights is a full inference feasibility calculation.
@@ -73,7 +73,7 @@ export function weightFootprintRows(repository: LlmGuideRepository, controls: Re
     const weightGiB = artifact.totalBytes! / 2 ** 30;
     const result = row(repository, `footprint:${artifact.id}`, model.exactName, model.aliases?.[0], []);
     result.sourceIds = artifact.evidenceIds;
-    result.cells = { ...result.cells, quant: textValue(artifact.format === 'gguf' ? artifact.variant : artifact.format), weight: number(weightGiB, 'GiB'), condition: textValue(model.kind === 'embedding' || model.kind === 'reranker' || model.kind === 'encoder-classifier' ? 'وزن + حافظهٔ ورودی و batch؛ مدل تخصصی' : 'وزن + KV/state + حافظهٔ موقت؛ اجزای تصویر و صوت مطابق بسته'), source: textValue(artifact.publisher, { href: artifact.filesUrl }) };
+    result.cells = { ...result.cells, quant: textValue(artifact.format === 'gguf' ? artifact.variant : [artifact.format, artifact.precision].filter(Boolean).join(' · '), { caveat: artifact.scopeNote }), weight: number(weightGiB, 'GiB'), condition: textValue(model.kind === 'embedding' || model.kind === 'reranker' || model.kind === 'encoder-classifier' ? 'وزن + حافظهٔ ورودی و batch؛ مدل تخصصی' : 'وزن + KV/state + حافظهٔ موقت؛ اجزای تصویر و صوت مطابق بسته'), source: textValue(artifact.publisher, { href: artifact.filesUrl }) };
     result.facets = { quant: result.cells.quant, weight: result.cells.weight };
     result.details = { scope: textValue('اندازهٔ واقعی فایل‌های انتخاب‌شده روی دیسک؛ حافظهٔ اجرا می‌تواند با بارگذاری، تبدیل و repacking تغییر کند. این نما حداقل VRAM یا سرعت را تعیین نمی‌کند.'), files: textValue(artifact.files.map(file => file.path).join(' · '), { href: artifact.filesUrl }), revision: textValue(artifact.repositoryRevision ?? artifact.variant), method: textValue('مقایسهٔ اندازهٔ فایل وزن با ظرفیت اسمی حافظه') };
     result.matrixCells = Object.fromEntries(research.hardware.filter(device => controls.hardwareIds.includes(device.id)).map(device => {
@@ -95,7 +95,7 @@ export function memoryRows(repository: LlmGuideRepository, controls: ResearchCon
   });
   if (controls.method === 'publisher') return research.memoryClaims.map(item => {
     const result = row(repository, item.id, item.modelRepository.split('/')[1], item.modelRepository, item.sourceIds);
-    result.cells = { ...result.cells, budget: number(item.reportedMemoryGB, 'GB'), method: textValue('وزن بومی MXFP4 / مختلط', { badge: 'گزارش ناشر' }), condition: textValue('حد حافظهٔ اعلامی معرفی مدل؛ زمینه و هم‌زمانی سناریوی ما به آن اعمال نشده است.'), source: source(item.sourceIds) };
+    result.cells = { ...result.cells, budget: number(item.reportedMemoryGB, 'GB'), method: textValue('وزن بومی MXFP4 / مختلط', { badge: 'گزارش ناشر' }), condition: textValue('حافظهٔ گزارش‌شده برای اجرای مدل؛ طول ورودی، خروجی و هم‌زمانی گزارش نشده‌اند.'), source: source(item.sourceIds) };
     result.details = { scope: textValue('این عدد ادعای حافظهٔ ناشر است و نتیجهٔ فرمول GGUF نیست.') }; return result;
   });
   const cpu = controls.method === 'cpu';
@@ -150,10 +150,13 @@ export function compatibilityRows(repository: LlmGuideRepository, kernels = fals
     const result = row(repository, item.id, item.modelScope.split('/')[1] ?? item.modelScope, item.modelScope, item.sourceIds);
     const run = research.performance.find(run => run.id === item.performanceId);
     const status = item.status === 'published-run' ? 'اجرای گزارش‌شده' : 'مسیر مستند';
-    const condition = item.conditionsFa?.join('؛ ') || (item.task === 'reranking' ? 'قالب ویژهٔ امتیازدهی پرسش و سند' : '');
-    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion].filter(Boolean).join(' '), { brandId: item.engine }), format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : missing, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
+    const profile = repository.modelProfiles.find(profile => profile.modelVersionId === result.modelId);
+    const route = profile?.runGuides.find(guide => guide.engine === item.engine);
+    const condition = [...new Set([...(item.conditionsFa ?? []), ...(route?.conditions ?? []), ...(run && runConfiguration(run) ? [runConfiguration(run)] : [])])].join('؛ ');
+    result.sourceIds = [...new Set([...result.sourceIds, ...(route?.evidenceIds ?? [])])];
+    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion].filter(Boolean).join(' '), { brandId: item.engine }), format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
     result.facets = { engine: textValue(item.engine), task: textValue(item.task ?? 'generation'), format: textValue(item.artifactId ? 'GGUF' : item.weightFormat.includes('safetensors') ? 'safetensors' : 'checkpoint'), status: textValue(item.status), deployment: textValue(item.engine === 'llama.cpp' || item.engine === 'Ollama' ? 'local' : 'service') };
-    result.details = { scope: textValue(item.userSummaryFa), condition: condition ? textValue(condition) : missing, ...(run?.servingCommandAsPublished ? { command: textValue(run.servingCommandAsPublished, { copyText: run.servingCommandAsPublished }) } : {}) };
+    result.details = { scope: textValue(item.userSummaryFa), condition: condition ? textValue(condition) : { state: 'unknown' }, ...(run?.servingCommandAsPublished ? { command: textValue(run.servingCommandAsPublished, { copyText: run.servingCommandAsPublished }) } : {}) };
     result.searchText += ` ${item.engine} ${item.weightFormat} ${item.hardwareLabel ?? ''}`; return result;
   });
   const added: LlmViewRow[] = [];
@@ -167,7 +170,7 @@ export function compatibilityRows(repository: LlmGuideRepository, kernels = fals
       const task = model.kind === 'embedding' ? 'embedding' : model.kind === 'reranker' ? 'reranking' : model.kind === 'encoder-classifier' ? 'classification' : 'generation';
       const format = guide.engine === 'Ollama' ? 'Ollama package' : guide.engine === 'llama.cpp' ? 'GGUF' : 'checkpoint';
       result.sourceIds = guide.evidenceIds;
-      result.cells = { ...result.cells, engine: textValue(guide.engine, { brandId: guide.engine }), format: textValue(format), status: textValue('مسیر مستند'), condition: guide.conditions.length ? textValue(guide.conditions.join('؛ ')) : missing, hardware: guide.instructions ? textValue(guide.instructions) : missing, source: textValue('راهنمای همین مدل', { href: guide.href }) };
+      result.cells = { ...result.cells, engine: textValue(guide.engine, { brandId: guide.engine }), format: textValue(format), status: textValue('مسیر مستند'), condition: guide.conditions.length ? textValue(guide.conditions.join('؛ ')) : { state: 'unknown' }, hardware: guide.instructions ? textValue(guide.instructions) : { state: 'unknown' }, source: textValue('راهنمای همین مدل', { href: guide.href }) };
       result.facets = { engine: textValue(guide.engine), task: textValue(task), format: textValue(format), status: textValue('documented-route'), deployment: textValue(local ? 'local' : 'service') };
       result.details = { ...(guide.instructions ? { scope: textValue(guide.instructions) } : {}), ...(guide.conditions.length ? { condition: textValue(guide.conditions.join('؛ ')) } : {}), ...(guide.code ? { command: textValue(guide.code, { copyText: guide.code }) } : {}) };
       result.searchText += ` ${guide.engine} ${format} ${task}`;
@@ -177,16 +180,22 @@ export function compatibilityRows(repository: LlmGuideRepository, kernels = fals
   return [...existing, ...added];
 }
 
+function runConfiguration(item: ReportedPerformance): string {
+  const command = item.servingCommandAsPublished ?? '';
+  const flags = command.match(/--?(?:tp(?:-size)?|tensor-parallel-size|dp(?:-size)?|data-parallel-size|max_seq_len|enable-dp-attention|enable_chunked_prefill|chunked-prefill-size|mem-fraction-static)(?:[= ]+\d+(?:\.\d+)?)?/g) ?? [];
+  return flags.length ? flags.join(' · ') : item.engine === 'SGLang' && item.protocol.contextLength ? `متن ${faNumber(Number(item.protocol.contextLength))} · mixed chunk · سهم حافظه ${item.protocol.memoryFractionStatic}` : '';
+}
+
 export function performanceRows(repository: LlmGuideRepository, group: string, metric: string): LlmViewRow[] {
   return research.performance.filter(item => (!group || item.publicationGroup === group) && item.metrics[metric] !== undefined).map(item => {
     const definition = performanceMetrics[metric];
     if (!definition) throw new Error(`Unknown performance metric: ${metric}`);
     const result = row(repository, item.id, item.modelRepository?.split('/')[1] ?? item.modelLabel ?? '', item.modelRepository, item.sourceIds);
     result.sortGroup = `${item.publicationGroup}:${metric}`;
-    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion ?? item.engineRevision].filter(Boolean).join(' '), { brandId: item.engine }), hardware: textValue(`${faNumber(item.gpuCount)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }), metric: textValue(definition.label), value: number(item.metrics[metric], definition.unit), ttft: item.metrics.meanTtftMs !== undefined ? number(item.metrics.meanTtftMs / 1000, 'ثانیه') : missing, format: textValue(quantLabel(item.weightFormat)), conditions: textValue(performanceGroups[item.publicationGroup].note), source: source(item.sourceIds) };
+    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion ?? item.engineRevision].filter(Boolean).join(' '), { brandId: item.engine }), hardware: textValue(`${faNumber(item.gpuCount)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }), metric: textValue(definition.label), value: number(item.metrics[metric], definition.unit), ttft: item.metrics.meanTtftMs !== undefined ? number(item.metrics.meanTtftMs / 1000, 'ثانیه') : missing, format: textValue(quantLabel(item.weightFormat)), configuration: runConfiguration(item) ? textValue(runConfiguration(item)) : missing, conditions: textValue(performanceGroups[item.publicationGroup].note), source: source(item.sourceIds) };
     result.facets = { engine: textValue(item.engine), format: textValue(item.weightFormat), hardware: textValue(item.hardwareLabel) };
     result.details = { group: textValue(performanceGroups[item.publicationGroup].label), scope: textValue(performanceGroups[item.publicationGroup].note), ...(item.servingCommandAsPublished ? { command: textValue(item.servingCommandAsPublished, { copyText: item.servingCommandAsPublished }) } : {}), ...(item.sourceLocator ? { locator: textValue(item.sourceLocator) } : {}), ...(item.engineRevisionUrl ? { revision: textValue(item.engineRevision ?? 'نسخهٔ ساخت', { href: item.engineRevisionUrl }) } : {}) };
-    result.details.protocol = textValue(Object.entries(item.protocol).map(([key, value]) => `${protocolLabels[key] ?? key}: ${typeof value === 'number' ? faNumber(value, 0) : value}`).join('\n'));
+    result.details.protocol = textValue(Object.entries(item.protocol).map(([key, value]) => `${protocolLabels[key] ?? key}: ${typeof value === 'number' ? faNumber(value, 3) : value}`).join('\n'));
     const otherMetricLabels: Record<string,string> = { successfulRequests: 'درخواست موفق', durationSeconds: 'مدت آزمون؛ ثانیه', totalInputTokens: 'کل توکن ورودی', totalOutputTokens: 'کل توکن خروجی', observedPeakConcurrency: 'اوج درخواست فعال؛ بار آزمون، نه ظرفیت SLA', prefillReportedPlusMinus: '± پردازش ورودی طبق گزارش', decodeReportedPlusMinus: '± تولید خروجی طبق گزارش', reportedGpuMemoryMB: 'حافظهٔ GPU؛ MB عین منبع', reportedMemoryGB: 'حافظهٔ گزارش‌شده؛ GB', inputTokensPerSecond: 'توکن ورودی/ثانیه' };
     result.details.metrics = textValue(Object.entries(item.metrics).map(([key, value]) => `${performanceMetrics[key]?.label ?? otherMetricLabels[key] ?? key}: ${faNumber(value)} ${performanceMetrics[key]?.unit ?? ''}`).join('\n'));
     if (item.artifactName) result.details.artifact = textValue(item.artifactName);
@@ -231,7 +240,7 @@ export function researchView(repository: LlmGuideRepository, id: LlmViewId, cont
   } else if (id === 'benchmarks') {
     rows = performanceRows(repository, controls.group, controls.metric);
     config.title = 'کارایی در آزمون‌های منتشرشده'; config.description = performanceGroups[controls.group]?.note ?? 'گروه‌های گزارش مستقل‌اند؛ مرتب‌سازی عددی در هر گروه انجام می‌شود.';
-    config.defaultColumns = [...cols(['model', 'مدل / معماری'], ['engine', 'موتور و نسخه'], ['hardware', 'سخت‌افزار'], ['format', 'قالب وزن'], ['metric', 'معیار']), numericCol('value', 'نتیجه'), numericCol('ttft', 'اولین توکن · میانگین'), ...cols(['source', 'منبع'])];
+    config.defaultColumns = [...cols(['model', 'مدل / معماری'], ['engine', 'موتور و نسخه'], ['hardware', 'سخت‌افزار'], ['format', 'قالب وزن'], ['configuration', 'تنظیمات اجرا'], ['metric', 'معیار']), numericCol('value', 'نتیجه'), numericCol('ttft', 'اولین توکن · میانگین'), ...cols(['source', 'منبع'])];
     config.filters = [selectFilter('engine', 'موتور', uniqueOptions(rows.map(row => (row.facets.engine as Known).display))), selectFilter('hardware', 'سخت‌افزار', uniqueOptions(rows.map(row => (row.facets.hardware as Known).display))), selectFilter('format', 'قالب وزن', [...new Set(rows.map(row => (row.facets.format as Known).display))].map(value => [value, quantLabel(value)]), true)];
     config.detailColumns = cols(['group','گروه گزارش'], ['scope','دامنهٔ مقایسه'], ['artifact','فایل نام‌گذاری‌شده در گزارش'], ['reporter','گزارش‌دهنده'], ['protocol','پروتکل و بار کاری'], ['optimizations','تنظیمات اجرا'], ['metrics','معیارها و آمار همین آزمون'], ['memory','حافظهٔ گزارش‌شده'], ['weights','وزن‌ها'], ['command','فرمان اجرای منبع'], ['revision','نسخهٔ ساخت'], ['locator','محل نتیجه در گزارش']);
     config.comparison = { ...base.comparison, dimensionLabels: { group: 'گروه گزارش', metric: 'معیار', unit: 'واحد' }, controlledAxes: [], calculationRequiredDimensions: ['group', 'metric', 'unit'], solutionSharedDimensions: ['group', 'metric', 'unit'] };
@@ -250,22 +259,23 @@ export function enrichExistingRows(repository: LlmGuideRepository, all: Record<L
       const dimension = model?.specializedSpecs?.embeddingDimensions;
       if (model?.kind === 'embedding' && dimension?.state === 'known') {
         const gib = dimension.value * 4 * 1_000_000 / 2 ** 30;
-        return { ...item, sourceIds: [...new Set([...item.sourceIds, ...(dimension.evidenceIds ?? [])])], cells: { ...item.cells, 'vector-memory': number(gib, 'GiB', `${faNumber(gib)} GiB / یک میلیون سند`) }, details: { ...item.details, 'vector-scope': textValue(`${dimension.value} بُعد × ۴ بایت FP32 × یک میلیون بردار؛ مستقل از مدل و ANN. در صورت کاهش بُعد، اندازه دوباره محاسبه شود.`) } };
+        return { ...item, sourceIds: [...new Set([...item.sourceIds, ...(dimension.evidenceIds ?? [])])], cells: { ...item.cells, 'vector-memory': number(gib, 'GiB', `${faNumber(gib)} GiB / یک میلیون بردار`) }, details: { ...item.details, 'vector-scope': textValue(`${dimension.value} بُعد × ۴ بایت FP32 × یک میلیون بردار؛ مستقل از مدل و ANN. در صورت کاهش بُعد، اندازه دوباره محاسبه شود.`) } };
       }
       return { ...item, cells: { ...item.cells, 'vector-memory': textValue('بردار ثابت ذخیره نمی‌کند') }, details: { ...item.details, 'vector-scope': textValue('خروجی این مسیر امتیاز زوج یا بازنمایی وظیفه است؛ حافظهٔ ورودی و batch جدا محاسبه می‌شود.') } };
     }
-    return { ...item, sourceIds: [...new Set([...item.sourceIds, ...evidenceIds(extra.sourceIds)])], cells: { ...item.cells, 'vector-memory': extra.denseFloat32VectorGiBPerMillionDocuments !== undefined ? number(extra.denseFloat32VectorGiBPerMillionDocuments, 'GiB', `${faNumber(extra.denseFloat32VectorGiBPerMillionDocuments)} GiB / یک میلیون سند`) : textValue('بردار ثابت ذخیره نمی‌کند') }, details: { ...item.details, 'vector-scope': textValue('فقط بردار خام FP32؛ ساختار ANN، فراداده، وزن مدل و حافظهٔ اجرا جدا هستند.') } };
+    return { ...item, sourceIds: [...new Set([...item.sourceIds, ...evidenceIds(extra.sourceIds)])], cells: { ...item.cells, 'vector-memory': extra.denseFloat32VectorGiBPerMillionDocuments !== undefined ? number(extra.denseFloat32VectorGiBPerMillionDocuments, 'GiB', `${faNumber(extra.denseFloat32VectorGiBPerMillionDocuments)} GiB / یک میلیون بردار`) : textValue('بردار ثابت ذخیره نمی‌کند') }, details: { ...item.details, 'vector-scope': textValue('فقط یک میلیون بردار متراکم float32؛ بدون نمایه، متن، sparse یا چندبرداری. هر سند می‌تواند چندین قطعه و بردار داشته باشد.') } };
   });
   rows['software-products'] = all['software-products'].map(item => {
     const extra = research.software.find(extra => item.label.toLowerCase().includes(extra.name.toLowerCase()) || (extra.name === 'Text Embeddings Inference' && /text.*embeddings/i.test(item.label)));
-    if (!extra) return { ...item, cells: { ...item.cells, 'research-use': item.cells.scenario, 'research-benefit': item.cells['service-features'], 'research-condition': item.cells['backend-summary'] } };
+    if (!extra) return { ...item, cells: { ...item.cells, 'research-use': item.cells.scenario, 'research-benefit': item.cells['service-features']?.state === 'known' ? item.cells['service-features'] : item.cells['backend-summary'], 'research-condition': textValue(repository.softwareReleases.find(release => release.id === item.id)?.selectionCaveat ?? '') } };
     return { ...item, cells: { ...item.cells, 'research-use': textValue(extra.startingUseFa), 'research-benefit': textValue(extra.usefulFeatureFa), 'research-condition': textValue(extra.selectionConditionFa.replace('۱۴B', '۱۴ میلیاردی').replace('۳۲B', '۳۲ میلیاردی')) }, details: { ...item.details, 'research-version': textValue(extra.versionScope) }, sourceIds: [...new Set([...item.sourceIds, ...evidenceIds(extra.sourceIds)])] };
   });
   for (const id of ['model-catalog', 'model-suitability', 'specialized-models'] as const) rows[id] = rows[id].map(item => {
     const scores = repository.publishedEvaluations.filter(score => score.modelVersionId === item.modelId);
     // Choose a useful, scoped example, never the largest raw score across tasks.
-    const selected = scores.find(score => score.language === 'fa' && score.settings.representation === 'Dense')
-      ?? scores.find(score => score.language === 'fa') ?? scores[0];
+    const selected = id === 'specialized-models'
+      ? scores.find(score => score.language === 'fa' && score.benchmark === 'MIRACL' && /ndcg/i.test(score.metric) && score.settings.representation === 'Dense')
+      : scores.find(score => score.language === 'fa' && score.settings.representation === 'Dense') ?? scores.find(score => score.language === 'fa') ?? scores[0];
     let quality: ViewValue;
     if (selected) {
       const modes: Record<string, string> = { thinking: 'با تفکر افزوده', 'non-thinking': 'بدون تفکر افزوده', low: 'تلاش کم', medium: 'تلاش متوسط', high: 'تلاش زیاد', max: 'تلاش حداکثر' };
@@ -280,13 +290,20 @@ export function enrichExistingRows(repository: LlmGuideRepository, all: Record<L
       quality = textValue(`${selected.benchmark} · ${metric}: ${faNumber(selected.value)}${selected.unit === 'percent' ? '٪' : ''}`, {
         caveat: conditions.join('؛ ') || undefined, badge: `${faNumber(scores.length)} نتیجه؛ جزئیات و منابع`, evidenceIds: selected.evidenceIds
       });
+    } else if (id === 'specialized-models') {
+      quality = textValue('نتیجهٔ هم‌شرط ثبت نشده');
     } else {
       const model = repository.models.find(model => model.id === item.modelId);
       quality = textValue(model?.exactName === 'ModernBERT-base'
         ? 'پایهٔ آموزش تخصصی؛ نتایج مقاله پس از آموزش روی وظیفه'
         : model?.exactName === 'Mistral-7B-Instruct-v0.3' ? 'دستورپذیری و فراخوانی ابزار' : 'کارت مدل و گزارش فنی', { href: item.modelUrl });
     }
-    return { ...item, cells: { ...item.cells, 'published-quality': quality } };
+    const model = repository.models.find(model => model.id === item.modelId);
+    const declaredFa = model?.languages.some(language => ['fa', 'fas', 'Persian', 'فارسی'].includes(language.language) && language.declared.state === 'known' && language.declared.value);
+    const persianResult = scores.some(score => score.language === 'fa');
+    const language = textValue(declaredFa ? 'فارسی در زبان‌های اعلام‌شده' : model?.specializedSpecs?.languages.state === 'known' ? model.specializedSpecs.languages.value : 'زبان هدف مشخص نشده', { caveat: persianResult ? 'نتیجهٔ فارسی ثبت شده؛ وظیفه و آزمون در پروندهٔ مدل' : 'آزمون فارسی ثبت نشده' });
+    const license = model?.license.name.state === 'known' ? textValue(model.license.name.value, { href: model.license.url.state === 'known' ? model.license.url.value : undefined, caveat: model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? 'استفادهٔ تجاری مشروط به مجوز' : undefined }) : { state: 'unknown' as const };
+    return { ...item, cells: { ...item.cells, 'published-quality': quality, 'target-language': language, license }, facets: { ...item.facets, 'persian-candidate': textValue(declaredFa || persianResult ? 'yes' : 'no', { raw: declaredFa || persianResult ? 'yes' : 'no' }) } };
   });
   return rows;
 }
@@ -298,7 +315,9 @@ export function enrichExistingConfig(config: LlmViewConfig): LlmViewConfig {
     detailColumns: [...config.detailColumns, ...cols(['research-version','نسخهٔ مستندات راهنمای انتخاب'])]
   };
   if (config.id === 'specialized-models') return { ...config,
-    defaultColumns: [...config.defaultColumns.filter(column => !['features','downloads'].includes(column.key)), ...cols(['published-quality','کیفیت منتشرشده']), numericCol('vector-memory', 'حافظهٔ بردارهای خام'), config.defaultColumns.at(-1)!],
+    description: 'ستون کیفیت: بازیابی فارسی MIRACL با خروجی متراکم؛ امتیاز وظایف و زبان‌های دیگر در پروندهٔ مدل است. نتیجهٔ گزارش‌های متفاوت همچنان رتبه‌بندی یک آزمون مشترک نیست.',
+    filters: [...config.filters, selectFilter('persian-candidate', 'نامزدهای فارسی', [['yes', 'فارسی اعلام‌شده یا نتیجهٔ فارسی'], ['no', 'بدون شاهد ثبت‌شدهٔ فارسی']])],
+    defaultColumns: [...config.defaultColumns.filter(column => !['features','downloads'].includes(column.key)), ...cols(['target-language','زبان هدف / شاهد فارسی'], ['license','مجوز'], ['published-quality','بازیابی فارسی · MIRACL']), numericCol('vector-memory', 'یک میلیون بردار dense · FP32'), config.defaultColumns.at(-1)!],
     optionalColumns: [...(config.optionalColumns ?? []), ...cols(['features','ویژگی کاربردی'])],
     detailColumns: [...config.detailColumns, ...cols(['vector-scope','دامنهٔ حافظهٔ بردارها'])]
   };

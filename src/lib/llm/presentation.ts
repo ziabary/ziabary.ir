@@ -58,7 +58,7 @@ const labels: Record<string, string> = {
   'structured-output': 'خروجی ساختاریافته', 'tool-use': 'فراخوانی ابزار', 'reasoning-control': 'کنترل حالت استدلال',
   'model-template-selection': 'انتخاب قالب پیام', 'parser-selection': 'انتخاب تجزیه‌گر', monitoring: 'پایش',
   metrics: 'سنجه‌های سرویس', 'health-check': 'بررسی سلامت', authentication: 'احراز هویت', 'rate-limiting': 'محدودیت نرخ',
-  'publisher-report': 'گزارش ناشر', 'direct-measurement': 'اندازه‌گیری مستقیم',
+  'publisher-report': 'گزارش ناشر', 'third-party-report': 'گزارش شخص ثالث', 'documented-specification': 'مستندات فنی', 'direct-measurement': 'اندازه‌گیری مستقیم',
   'calculated-from-specifications': 'محاسبه از مشخصات', 'editorial-analysis': 'تحلیل راهنما',
   'independently-evaluated': 'ارزیابی مستقل ثبت شده', 'publisher-claimed': 'اعلام ناشر', 'not-evaluated': 'ارزیابی ثبت نشده'
 };

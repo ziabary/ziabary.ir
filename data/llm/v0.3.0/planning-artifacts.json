@@ -771,22 +771,12 @@
     "authority": "model-publisher",
     "files": [
       {
-        "name": "qwen2.5-coder-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "bytes": 3993201376,
-        "sha256": "89f120544682078148c5a86117de9af3a65c339111262f2d3ff01d80d48b14be"
-      },
-      {
-        "name": "qwen2.5-coder-7b-instruct-q4_k_m-00002-of-00002.gguf",
-        "bytes": 689872288,
-        "sha256": "0183b3c850cfa96c31082c3af0123115300d3f62798c4448fa8f57bd0eac05e0"
-      },
-      {
         "name": "qwen2.5-coder-7b-instruct-q4_k_m.gguf",
         "bytes": 4683073536,
         "sha256": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c"
       }
     ],
-    "weightFileBytes": 9366147200,
+    "weightFileBytes": 4683073536,
     "architecture": "qwen2",
     "layers": 28,
     "kvHeads": 4,
@@ -809,27 +799,12 @@
     "authority": "model-publisher",
     "files": [
       {
-        "name": "qwen2.5-coder-7b-instruct-q8_0-00001-of-00003.gguf",
-        "bytes": 3980069280,
-        "sha256": "e2fc5918a2b579d8e03a3752ad74dd191bc0f43204c90a29070f273f5283fee1"
-      },
-      {
-        "name": "qwen2.5-coder-7b-instruct-q8_0-00002-of-00003.gguf",
-        "bytes": 3942935680,
-        "sha256": "912b7876d43dc19bbcf09368f4472f6cfea3458067a5bcaa660a68a9958276db"
-      },
-      {
-        "name": "qwen2.5-coder-7b-instruct-q8_0-00003-of-00003.gguf",
-        "bytes": 175520480,
-        "sha256": "478f6a6b37072eeda02a98a59b6ef0b1a9131c9eae9a1181b6077f5e255fa6b2"
-      },
-      {
         "name": "qwen2.5-coder-7b-instruct-q8_0.gguf",
         "bytes": 8098525184,
         "sha256": "b36a4e1c3ddf2ba6fd5501b926128e5fc6430881caaff07e9629bd18f06f685f"
       }
     ],
-    "weightFileBytes": 16197050624,
+    "weightFileBytes": 8098525184,
     "architecture": "qwen2",
     "layers": 28,
     "kvHeads": 4,
@@ -852,22 +827,12 @@
     "authority": "model-publisher",
     "files": [
       {
-        "name": "qwen2.5-coder-14b-instruct-q4_k_m-00001-of-00002.gguf",
-        "bytes": 8000444480,
-        "sha256": "310a553a856d7b238c05ed1b0cb877c4dca5b65c2286324854a1397149a00af2"
-      },
-      {
-        "name": "qwen2.5-coder-14b-instruct-q4_k_m-00002-of-00002.gguf",
-        "bytes": 987665920,
-        "sha256": "7a52538b39090d99ce93b1b05a406b805427171f890dbef8684c57fb28b2d96a"
-      },
-      {
         "name": "qwen2.5-coder-14b-instruct-q4_k_m.gguf",
         "bytes": 8988110272,
         "sha256": "c1e659736d89ac1065fb495330fb824d94001974a4bfa78e7270e43476a8d940"
       }
     ],
-    "weightFileBytes": 17976220672,
+    "weightFileBytes": 8988110272,
     "architecture": "qwen2",
     "layers": 48,
     "kvHeads": 8,
@@ -890,22 +855,12 @@
     "authority": "model-publisher",
     "files": [
       {
-        "name": "qwen2.5-coder-14b-instruct-q8_0-00001-of-00002.gguf",
-        "bytes": 8004181408,
-        "sha256": "957ba4cf4cbdd5bc1c1c28f7cc7a939f71d1fe2707f1d18e35a028aaf1b7c6cd"
-      },
-      {
-        "name": "qwen2.5-coder-14b-instruct-q8_0-00002-of-00002.gguf",
-        "bytes": 7697416352,
-        "sha256": "5ca3f878a3313f5ef72e7210dc9b03f1e4a4af791674d36f14e8256c8c52ee45"
-      },
-      {
         "name": "qwen2.5-coder-14b-instruct-q8_0.gguf",
         "bytes": 15701597632,
         "sha256": "8180f66e3458e298830cebe7c9e8a9bde0ae6511d399fd99d3385b64324ac85d"
       }
     ],
-    "weightFileBytes": 31403195392,
+    "weightFileBytes": 15701597632,
     "architecture": "qwen2",
     "layers": 48,
     "kvHeads": 8,
@@ -928,27 +883,12 @@
     "authority": "model-publisher",
     "files": [
       {
-        "name": "qwen2.5-coder-32b-instruct-q4_k_m-00001-of-00003.gguf",
-        "bytes": 7990120512,
-        "sha256": "0a9145d25318b7584094e77044cc256bc9f1374c8f168a3812119242b456f69b"
-      },
-      {
-        "name": "qwen2.5-coder-32b-instruct-q4_k_m-00002-of-00003.gguf",
-        "bytes": 7943826304,
-        "sha256": "de1e27aa436e0856582eed095418fd3db8538b0d5d6e71b6362208b3a7f6d16f"
-      },
-      {
-        "name": "qwen2.5-coder-32b-instruct-q4_k_m-00003-of-00003.gguf",
-        "bytes": 3917389312,
-        "sha256": "4d893bec57ae6b2c898c0f2f0f9804a5d855dc7091255b76f3671cb8787919fe"
-      },
-      {
         "name": "qwen2.5-coder-32b-instruct-q4_k_m.gguf",
         "bytes": 19851335872,
         "sha256": "4d64b316b5e6319d9613e0d97935d9ebd631fc7e334da400d00085eca749d085"
       }
     ],
-    "weightFileBytes": 39702672000,
+    "weightFileBytes": 19851335872,
     "architecture": "qwen2",
     "layers": 64,
     "kvHeads": 8,
@@ -971,37 +911,12 @@
     "authority": "model-publisher",
     "files": [
       {
-        "name": "qwen2.5-coder-32b-instruct-q8_0-00001-of-00005.gguf",
-        "bytes": 7869714432,
-        "sha256": "00dcfb0da177f106142d38c076591909f58362d2b8b653183c9dab2e9a53080d"
-      },
-      {
-        "name": "qwen2.5-coder-32b-instruct-q8_0-00002-of-00005.gguf",
-        "bytes": 7989308160,
-        "sha256": "4fa9fd8a9759f6ec261e9012b1d44b8cfd3667a5f5baa00d48d9be4e017db54e"
-      },
-      {
-        "name": "qwen2.5-coder-32b-instruct-q8_0-00003-of-00005.gguf",
-        "bytes": 7922391296,
-        "sha256": "122317f46232eeb8b10e94806aedbf0206bf1f629c1c6c9b453c02b873e1d7ac"
-      },
-      {
-        "name": "qwen2.5-coder-32b-instruct-q8_0-00004-of-00005.gguf",
-        "bytes": 7922391296,
-        "sha256": "044bb559123a5b31daa772018d319672273eca43582291d408be2e1f3ecbe719"
-      },
-      {
-        "name": "qwen2.5-coder-32b-instruct-q8_0-00005-of-00005.gguf",
-        "bytes": 3117079968,
-        "sha256": "b6270642cd97f329a51f1356d658909b3652e71fbfa39b1462b1764740dbc9d4"
-      },
-      {
         "name": "qwen2.5-coder-32b-instruct-q8_0.gguf",
         "bytes": 34820884672,
         "sha256": "ae6e5cee79233499b41502ea7270e665dc402b2c35c48d43ef2d5a0a10842725"
       }
     ],
-    "weightFileBytes": 69641769824,
+    "weightFileBytes": 34820884672,
     "architecture": "qwen2",
     "layers": 64,
     "kvHeads": 8,

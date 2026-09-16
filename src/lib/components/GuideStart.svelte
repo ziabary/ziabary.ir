@@ -1,104 +1,59 @@
 <script lang="ts">
-  import { articleCount, type GuideCollection } from '$lib/guides';
+  export let onNavigate: (id: string) => void = () => {};
 
-  export let collection: GuideCollection;
-
-  const numbers = new Intl.NumberFormat('fa-IR');
   const paths = [
-    {
-      id: 'gpu-comparison-table',
-      title: 'هنوز GPU را انتخاب نکرده‌ام',
-      description: 'مقایسهٔ حافظه، توان محاسباتی و محدودیت‌های استقرار',
-      label: 'مقایسهٔ GPUها'
-    },
-    {
-      id: 'pcie-gpu-server-selection',
-      title: 'GPU مشخص است؛ سرور مناسب می‌خواهم',
-      description: 'انتخاب شاسی، توپولوژی، برق و خنک‌کاری متناسب با کارت',
-      label: 'انتخاب سرور'
-    },
-    {
-      id: 'gpu-types-for-ai',
-      title: 'کارت گیمینگ برای هوش مصنوعی کافی است؟',
-      description: 'تفاوت کارت‌های گیمینگ، حرفه‌ای و دیتاسنتری؛ از کجا شروع کنیم؟',
-      label: 'شناخت انواع GPU'
-    },
-    {
-      id: 'gpu-server-platform-components',
-      title: 'چه چیزی GPU قدرتمند شما را معطل می‌کند؟',
-      description: 'نقش CPU، رم، ذخیره‌سازی و شبکه در سرعت پردازش',
-      label: 'شناخت اجزای سرور'
-    }
+    { question: 'تفاوت کارت‌های عمومی، حرفه‌ای و دیتاسنتری', links: [{ id: 'gpu-types-for-ai', label: 'انواع GPU برای هوش مصنوعی' }] },
+    { question: 'معیار انتخاب و مقایسهٔ گزینه‌ها', links: [{ id: 'choosing-gpu-for-ai', label: 'راهنمای انتخاب' }, { id: 'gpu-comparison-table', label: 'جدول GPUها' }] },
+    { question: 'اثر دقت عددی و پشتیبانی نرم‌افزاری', links: [{ id: 'int8-or-fp8-real-gpu-support', label: 'INT8 و FP8 در عمل' }] },
+    { question: 'سرعت پاسخ و ظرفیت سرویس‌دهی', links: [{ id: 'gpu-inference-latency-throughput', label: 'تأخیر و توان عملیاتی' }] },
+    { question: 'تفاوت اتصال‌ها و سکوهای چند GPU', links: [{ id: 'pcie-vs-sxm-for-ai', label: 'PCIe و SXM' }, { id: 'dgx-and-standard-gpu-servers', label: 'DGX و HGX' }] },
+    { question: 'سرور و اجزای مناسب برای GPU', links: [{ id: 'pcie-gpu-server-selection', label: 'راهنمای سرور' }, { id: 'server-comparison-table', label: 'جدول سرورها' }] }
   ];
-  $: availablePaths = paths.filter((path) => collection.items.some((item) => item.id === path.id));
-  $: tableCount = collection.items.filter((item) => item.kind === 'interactive').length;
 </script>
 
-{#snippet readingPaths()}
-  <ol class="start-paths">
-    {#each availablePaths as path, index}
-      <li>
-        <span class="path-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, '۰')}</span>
-        <div>
-          <h3>{path.title}</h3>
-          <div class="path-summary">
-            <p>{path.description}</p>
-            <a class="path-button" href={`#${path.id}`}>{path.label} <span aria-hidden="true">←</span></a>
-          </div>
-        </div>
-      </li>
-    {/each}
-  </ol>
-{/snippet}
-
-<section class="guide-start" aria-labelledby="guide-start-title">
-  <header>
-    <small>راهنمای استفاده از مجموعه</small>
-    <h2 id="guide-start-title">از کجا شروع کنیم؟</h2>
-    <p>انتخاب را از بار کاری آغاز کنید؛ جدول‌ها برای مقایسه‌اند و راهنماها برای فهم تفاوت‌ها. مسیر متناسب با نیازتان را دنبال کنید.</p>
-  </header>
-
-  <nav class="desktop-paths" aria-label="مسیرهای پیشنهادی مطالعه">
-    {@render readingPaths()}
-  </nav>
-  <details class="mobile-paths">
-    <summary>مسیر مناسب من کدام است؟</summary>
-    <nav aria-label="مسیرهای پیشنهادی مطالعه">
-      {@render readingPaths()}
-    </nav>
-  </details>
-
-  <footer aria-label="اطلاعات مجموعه">
-    <span>{numbers.format(articleCount(collection))} مقالهٔ راهنما</span>
-    <span>{numbers.format(tableCount)} جدول تعاملی</span>
-    <span>به‌روزرسانی پیوسته</span>
-  </footer>
+<section id="gpu-quick-selection" class="reading-guide" aria-labelledby="guide-start-title">
+  <h2 id="guide-start-title">راهنمای مطالعه</h2>
+  <p>در این راهنما می‌توانید ابتدا معیارهای انتخاب را بشناسید، سپس مشخصات GPUها را مقایسه کنید و در ادامه، سرور متناسب با انتخاب خود را بررسی کنید. جدول‌های تعاملی برای مقایسهٔ جزئیات هستند و مقاله‌ها توضیح می‌دهند هر تفاوت فنی چه اثری بر عملکرد، محدودیت‌ها و هزینه دارد.</p>
+  <div class="reading-table">
+    <table>
+      <thead><tr><th scope="col">چه چیزی را می‌خواهید مشخص کنید؟</th><th scope="col">مسیر پیشنهادی</th></tr></thead>
+      <tbody>
+        {#each paths as path}
+          <tr>
+            <th scope="row">{path.question}</th>
+            <td><div class="reading-links">{#each path.links as link, index}{#if index}<span class="separator" aria-hidden="true"> · </span>{/if}<a href={`#${link.id}`} onclick={() => onNavigate(link.id)}>{link.label}</a>{/each}</div></td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <style>
-  .guide-start { min-width: 0; align-self: start; padding: 24px; border: 1px solid var(--line); background: var(--soft); }
-  header small { color: var(--teal); font-size: 11px; }
-  h2 { margin: 10px 0 12px; font-size: 26px; line-height: 1.6; }
-  header p { margin: 0; color: var(--muted); font-size: 14px; line-height: 2.1; }
-  nav { display: block; position: static; inset: auto; width: 100%; margin: 0; padding: 0; border: 0; background: transparent; }
-  .start-paths { list-style: none; margin: 18px 0 0; padding: 0; }
-  .start-paths li { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
-  .path-number { padding-top: 3px; color: var(--teal); font-size: 12px; }
-  h3 { margin: 0; font-size: 15px; line-height: 1.9; }
-  .path-summary { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 6px; }
-  .path-summary p { flex: 1 1 180px; min-width: 0; margin: 0; color: var(--muted); font-size: 12px; line-height: 2; }
-  .path-button { display: inline-flex; flex-shrink: 0; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 6px 10px; border: 1px solid var(--teal); border-radius: 6px; background: var(--paper); color: var(--link-ink); font-size: 11px; font-weight: 700; line-height: 1.8; white-space: nowrap; }
-  .path-button:hover { background: var(--teal); color: var(--paper); }
-  a:focus-visible, summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 5px; border-radius: 2px; }
-  footer { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 0; padding: 14px 0 0; background: transparent; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.9; }
-  .mobile-paths { display: none; }
-  @media (max-width: 700px) {
-    .guide-start { padding: 22px; }
-    h2 { font-size: 23px; }
-    .desktop-paths { display: none; }
-    .mobile-paths { display: block; margin-top: 22px; border-top: 1px solid var(--line); }
-    summary { padding-block: 15px; color: var(--teal); cursor: pointer; font-size: 13px; font-weight: 700; }
-    .mobile-paths .start-paths { margin-top: 0; }
-    footer { justify-content: space-between; margin-top: 18px; border-top: 0; padding-top: 0; }
+  .reading-guide{width:min(1280px,calc(100% - 48px));margin:32px auto 0;scroll-margin-top:110px}
+  h2{margin:0 0 12px;font-size:24px;line-height:1.7}
+  p{margin:0 0 20px;color:color-mix(in srgb,var(--ink) 85%,var(--muted));font-size:16px;line-height:1.9}
+  .reading-table{min-width:0}
+  table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:16px;line-height:1.9}
+  th,td{padding:12px 16px;text-align:start;vertical-align:top;border:0;border-bottom:1px solid var(--line)}
+  th:first-child{width:55%;padding-inline-start:0}
+  td{padding-inline-end:0}
+  thead th{font-weight:600;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+  tbody th{font-weight:400}
+  .reading-links{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+  a{color:var(--link-ink);text-decoration:underline;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,var(--link-ink) 35%,transparent)}
+  a:hover{text-decoration-color:currentColor}
+  a:focus-visible{outline:2px solid var(--teal);outline-offset:4px;border-radius:2px}
+  .separator{color:var(--muted)}
+  @media(max-width:959px){.reading-guide{width:calc(100% - 32px)}}
+  @media(max-width:600px){
+    table,tbody,tr,th,td{display:block;width:100%;box-sizing:border-box}
+    thead{display:none}
+    tbody tr{padding:12px 0;border-bottom:1px solid var(--line)}
+    tbody tr:first-child{border-top:1px solid var(--line)}
+    th:first-child{width:100%;padding:0 0 6px;font-weight:600}
+    th,td{padding:0;border:0}
+    table{font-size:15px}
+    h2{font-size:22px}
   }
 </style>

@@ -167,3 +167,27 @@ families.push({
   "name": "ModernBERT",
   "publisher": "Answer.AI / LightOn"
 });
+families.push({
+  "id": "family:starcoder2",
+  "name": "StarCoder2",
+  "publisher": "bigcode",
+  "evidenceIds": [
+    "evidence:audit-20260916-bigcode-starcoder2-3b"
+  ]
+});
+families.push({
+  "id": "family:tooka",
+  "name": "Tooka",
+  "publisher": "PartAI",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+  ]
+});
+families.push({
+  "id": "family:parsbert",
+  "name": "ParsBERT",
+  "publisher": "HooshvareLab",
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+  ]
+});

@@ -60,6 +60,8 @@ export type TokenUnit = 'token';
 export type EvidenceKind =
   | 'direct-measurement'
   | 'publisher-report'
+  | 'third-party-report'
+  | 'documented-specification'
   | 'calculated-from-specifications'
   | 'editorial-analysis'
   | 'unknown-needs-review';
@@ -160,6 +162,9 @@ export interface ModelVersion {
   baseModelId?: ModelVersionId;
   distilledFromModelId?: ModelVersionId;
   architecture: ModelArchitecture;
+  /** Attention/state layout is independent of dense or mixture-of-experts FFN. */
+  attentionArchitecture?: 'hybrid' | 'full-attention' | 'sliding-window' | 'other';
+  thinkingMode?: 'non-thinking-only' | 'thinking-only' | 'switchable';
   totalParametersB: Datum<number, ParameterUnit>;
   activeParametersB: Datum<number, ParameterUnit>;
   /** Additional declared counts never substitute for the whole-model total in filters. */
@@ -292,7 +297,7 @@ export interface ModelProfile {
   evidenceIds: EvidenceId[];
 }
 
-export type ModelUseRole = 'retrieval' | 'reranking' | 'grounded-generation' | 'text-generation' | 'coding' | 'tool-use' | 'reasoning' | 'vision' | 'structured-output';
+export type ModelUseRole = 'retrieval' | 'reranking' | 'grounded-generation' | 'text-generation' | 'code-completion' | 'coding' | 'tool-use' | 'reasoning' | 'vision' | 'structured-output';
 /** A sourced use explanation; it never implies a successful quality/SLA test. */
 export interface ModelUseGuidance {
   id: EntityId<'model-use'>;
@@ -377,7 +382,7 @@ export type SoftwareRole =
   | 'gateway'
   | 'user-interface'
   | 'deployment-manager';
-export type SoftwareMaintenanceStatus = 'active' | 'maintenance' | 'deprecated' | 'unknown';
+export type SoftwareMaintenanceStatus = 'active' | 'maintenance' | 'archived' | 'deprecated' | 'unknown';
 export type ExecutionEnvironmentKind =
   | 'desktop'
   | 'workstation'

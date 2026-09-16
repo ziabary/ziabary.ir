@@ -38,7 +38,7 @@ export function evidenceNotes(source: Evidence): string[] {
     if (!value) return [];
     const text = value.trim();
     const withoutModel = text.slice(text.indexOf('؛') + 1).trim();
-    if (boilerplate.has(text) || boilerplate.has(withoutModel)
+    if (text === source.title || boilerplate.has(text) || boilerplate.has(withoutModel)
       || text.endsWith('؛ اعلام مستندات همین نسخه در دامنهٔ نقش ثبت‌شده.')
       || text.endsWith(' — فایل‌ها و انتساب مدل')) return [];
     return [rewrites[text] ?? text];

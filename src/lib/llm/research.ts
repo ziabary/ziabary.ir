@@ -26,7 +26,7 @@ export interface ReportedPerformance {
   artifactName?: string; hardwareLabel: string; gpuCount: number; engine: string;
   engineVersion?: string; engineRevision?: string; engineRevisionUrl?: string;
   reporter?: string; weightFormat: string; metrics: Record<string, number>;
-  protocol: Record<string, string | number>; sourceIds: string[];
+  protocol: Record<string, string | number | boolean>; sourceIds: string[];
   flashAttention?: boolean; gpuLayers?: number; comparisonScope?: string;
   sourceLocator?: string; servingCommandAsPublished?: string;
   weightInitialization?: string; publishedOn?: string;
@@ -36,7 +36,7 @@ export const research = {
   quality, sources, compatibility, kernels, aliases, slmCpu, airllm, memoryClaims,
   specialized, software, startingPoints
 };
-export const researchAsOf = '2026-09-15';
+export const researchAsOf = '2026-09-16';
 export const faNumber = (value: number, decimals = 2) => new Intl.NumberFormat('fa-IR', { maximumFractionDigits: decimals }).format(value);
 export const researchEvidenceId = (id: string): Evidence['id'] => `evidence:research-v02-${id}`;
 export function canonicalModelRepository(name: string): string {
@@ -52,11 +52,12 @@ export const researchEvidence: Evidence[] = sources.map(source => ({
   id: researchEvidenceId(source.id), url: source.url, title: source.title,
   organization: source.publisher ?? undefined, accessedOn: source.accessedOn,
   ...(source.publishedOn && /^\d{4}-\d{2}-\d{2}$/.test(source.publishedOn) ? { publishedOn: source.publishedOn } : {}),
-  locator: source.locator ?? 'مشخصات مخزن و فایل‌های نسخهٔ ارجاع‌شده', sourceKind: 'primary', kind: 'publisher-report',
+  locator: source.locator ?? source.title, sourceKind: 'primary',
+  kind: source.kind.startsWith('first-hand-') ? 'third-party-report' : source.kind.startsWith('primary-') ? 'documented-specification' : 'publisher-report',
   versionRevisionOrCommit: source.documentRevision ?? source.revisionUrl,
   scope: source.kind === 'first-hand-synthetic-benchmark' ? 'آزمون فنی معماری با وزن تصادفی؛ به مدل آموزش‌دیده نسبت داده نمی‌شود.'
     : source.kind.includes('benchmark') ? 'نتیجهٔ گزارش‌شده در همین منبع و پروتکل؛ نسخهٔ فایل دریافت‌شده، نسخهٔ وزن آزموده‌شده محسوب نمی‌شود.'
-    : 'مشخصات و مسیر مستند در دامنهٔ همین منبع و نسخه؛ تعمیم به مدل یا قالب دیگر نیازمند شاهد است.',
+    : source.title,
   limitations: [],
   ...(source.kind === 'first-hand-hosting-provider-benchmark'
     ? { commercialInterest: 'عرضه‌کنندهٔ خدمات میزبانی' } : {})
@@ -138,7 +139,11 @@ export function calculateMemory(artifact: MemoryArtifact, context: number, activ
 }
 export function memoryStatus(required: number, capacity: number, devices = 1) {
   if (required > capacity) return { id: 'over-budget', label: 'حافظه ناکافی', note: 'کاهش زمینه، کوانت کم‌حجم‌تر یا انتقال بخشی از مدل به RAM را بررسی کنید.' };
-  if (devices > 1) return { id: 'requires-sharding', label: 'نیازمند تقسیم مدل', note: 'جمع ظرفیت کافی است؛ سهم هر کارت و پشتیبانی موتور جدا کنترل شود.' };
+  if (devices > 1) {
+    const oneDeviceRequired = required - memoryPolicy.gpuReserveGiBPerDevice * (devices - 1);
+    if (oneDeviceRequired <= capacity / devices) return { id: 'single-device-sufficient', label: 'یک کارت کافی است', note: 'در این برآورد، وزن و KV و ذخیرهٔ اجرایی روی یک کارت جا می‌شوند؛ کارت‌های دیگر می‌توانند نمونه‌های مستقل مدل را اجرا کنند.' };
+    return { id: 'requires-sharding', label: 'نیازمند تقسیم مدل', note: 'جمع ظرفیت کافی است؛ سهم هر کارت و پشتیبانی موتور جدا کنترل شود.' };
+  }
   if (capacity - required < Math.max(2, capacity * .1)) return { id: 'tight', label: 'حاشیهٔ کم', note: 'حافظهٔ آزاد واقعی و سربار موتور تعیین‌کننده‌اند.' };
   return { id: 'within-budget', label: 'حافظه کافی است', note: '' };
 }

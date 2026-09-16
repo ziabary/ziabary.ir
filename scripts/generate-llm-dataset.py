@@ -15,7 +15,7 @@ for key,items in data.items():
  s+=''.join(key+'.push('+json.dumps(item,ensure_ascii=False,indent=2)+');\n' for item in items)
  (out/(key+'.v1.ts')).write_text(s)
  imports.append(f"import {{ {key} }} from './{key}.v1';")
-s="// Dataset 0.3.0; primary-source catalog snapshot 2026-09-15.\nimport type { LlmGuideRepository } from '../schema';\n"+'\n'.join(imports)+"\n\nexport const llmDataset: LlmGuideRepository = {\n  "+', '.join(data)+"\n};\n"
+s=f"// Dataset 0.3.0; catalog reviewed {updated}.\nimport type {{ LlmGuideRepository }} from '../schema';\n"+'\n'.join(imports)+"\n\nexport const llmDataset: LlmGuideRepository = {\n  "+', '.join(data)+"\n};\n"
 s+=f'\nexport const llmDatasetUpdatedOn = {json.dumps(updated)};\n'
 (out/'repository.v1.ts').write_text(s)
 print('Generated',len(data)+1,'typed modules; run npm run verify:llm next.')

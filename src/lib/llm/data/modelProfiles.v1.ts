@@ -32,7 +32,7 @@ modelProfiles.push({
       "engine": "Ollama",
       "href": "https://ollama.com/library/bge-m3:567m",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "API /api/embed فقط بردار dense می‌دهد؛ برای sparse و ColBERT از FlagEmbedding استفاده کنید. truncate پیش‌فرض فعال است؛ false ورودی بیش‌ازحد را به خطا تبدیل می‌کند."
       ],
       "code": "ollama pull bge-m3:567m\ncurl http://localhost:11434/api/embed -d '{\"model\": \"bge-m3:567m\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
@@ -128,9 +128,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-32b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-50519b37f3fc26b4a5"
       ]
@@ -139,9 +137,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-32b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-50519b37f3fc26b4a5"
       ]
@@ -150,9 +146,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-32b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-50519b37f3fc26b4a5"
       ]
@@ -161,9 +155,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-32b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-50519b37f3fc26b4a5"
       ]
@@ -172,9 +164,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/aya-expanse:32b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull aya-expanse:32b\nollama run aya-expanse:32b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -219,9 +209,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7fd37ca79c736c18bd"
       ]
@@ -230,9 +218,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7fd37ca79c736c18bd"
       ]
@@ -241,9 +227,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7fd37ca79c736c18bd"
       ]
@@ -252,9 +236,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7fd37ca79c736c18bd"
       ]
@@ -263,9 +245,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/aya-expanse:8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull aya-expanse:8b\nollama run aya-expanse:8b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -310,9 +290,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/CohereLabs/tiny-aya-global",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-690f5a70697f256add"
       ]
@@ -321,9 +299,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/CohereLabs/tiny-aya-global",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-690f5a70697f256add"
       ]
@@ -332,9 +308,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/CohereLabs/tiny-aya-global",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-690f5a70697f256add"
       ]
@@ -343,9 +317,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/CohereLabs/tiny-aya-global",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-690f5a70697f256add"
       ]
@@ -389,9 +361,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/raw/31b70e2e869a7173562077fd711b654946d38674/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-9c5cd7741b6bd7013a"
       ]
@@ -400,9 +370,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/smollm2:1.7b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull smollm2:1.7b\nollama run smollm2:1.7b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -446,9 +414,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/raw/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-fa4d5f78d993271304"
       ]
@@ -457,9 +423,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/smollm2:135m",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull smollm2:135m\nollama run smollm2:135m",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -506,9 +470,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/smollm2:360m",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull smollm2:360m\nollama run smollm2:360m",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -552,9 +514,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1cb00d19b57837ab69"
       ]
@@ -563,9 +523,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1cb00d19b57837ab69"
       ]
@@ -574,9 +532,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1cb00d19b57837ab69"
       ]
@@ -585,9 +541,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1cb00d19b57837ab69"
       ]
@@ -631,9 +585,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/c1899de289a04d12100db370d81485cdf75e47ca/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-21af22da05ddae881c"
       ]
@@ -642,9 +594,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/c1899de289a04d12100db370d81485cdf75e47ca/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-21af22da05ddae881c"
       ]
@@ -653,9 +603,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/c1899de289a04d12100db370d81485cdf75e47ca/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-21af22da05ddae881c"
       ]
@@ -664,9 +612,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/c1899de289a04d12100db370d81485cdf75e47ca/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-21af22da05ddae881c"
       ]
@@ -675,9 +621,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:0.6b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:0.6b-q4_K_M\nollama run qwen3:0.6b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -723,9 +667,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f96d4bca8be6d031"
       ]
@@ -734,9 +676,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f96d4bca8be6d031"
       ]
@@ -745,9 +685,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f96d4bca8be6d031"
       ]
@@ -756,9 +694,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f96d4bca8be6d031"
       ]
@@ -767,9 +703,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:1.7b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:1.7b-q4_K_M\nollama run qwen3:1.7b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -815,9 +749,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-14B/raw/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02c6053d6bac907d15"
       ]
@@ -826,9 +758,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-14B/raw/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02c6053d6bac907d15"
       ]
@@ -837,9 +767,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-14B/raw/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02c6053d6bac907d15"
       ]
@@ -848,9 +776,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-14B/raw/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02c6053d6bac907d15"
       ]
@@ -859,9 +785,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:14b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:14b-q4_K_M\nollama run qwen3:14b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -907,9 +831,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-30B-A3B/raw/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-3fbdfa840af9cf314f"
       ]
@@ -918,9 +840,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-30B-A3B/raw/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-3fbdfa840af9cf314f"
       ]
@@ -929,9 +849,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-30B-A3B/raw/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-3fbdfa840af9cf314f"
       ]
@@ -940,9 +858,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-30B-A3B/raw/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-3fbdfa840af9cf314f"
       ]
@@ -951,9 +867,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:30b-a3b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:30b-a3b-q4_K_M\nollama run qwen3:30b-a3b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -999,9 +913,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-32B/raw/9216db5781bf21249d130ec9da846c4624c16137/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-eee862b4eceaa376da"
       ]
@@ -1010,9 +922,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-32B/raw/9216db5781bf21249d130ec9da846c4624c16137/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-eee862b4eceaa376da"
       ]
@@ -1021,9 +931,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-32B/raw/9216db5781bf21249d130ec9da846c4624c16137/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-eee862b4eceaa376da"
       ]
@@ -1032,9 +940,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-32B/raw/9216db5781bf21249d130ec9da846c4624c16137/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-eee862b4eceaa376da"
       ]
@@ -1043,9 +949,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:32b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:32b-q4_K_M\nollama run qwen3:32b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1091,9 +995,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5438c7e36f3bb1bdd2"
       ]
@@ -1102,9 +1004,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5438c7e36f3bb1bdd2"
       ]
@@ -1113,9 +1013,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5438c7e36f3bb1bdd2"
       ]
@@ -1124,9 +1022,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5438c7e36f3bb1bdd2"
       ]
@@ -1135,9 +1031,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:4b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:4b-q4_K_M\nollama run qwen3:4b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1187,9 +1081,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-83f599b0dc739c8491"
       ]
@@ -1198,9 +1090,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-83f599b0dc739c8491"
       ]
@@ -1209,9 +1099,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-83f599b0dc739c8491"
       ]
@@ -1220,9 +1108,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:8b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:8b-q4_K_M\nollama run qwen3:8b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1271,9 +1157,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/raw/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-504a98b0928e421cf9"
       ]
@@ -1282,13 +1166,35 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3-coder:30b-a3b-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3-coder:30b-a3b-q4_K_M\nollama run qwen3-coder:30b-a3b-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
         "evidence:v03-8053ead9742dcf81b6"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-card"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با SGLang",
+      "engine": "SGLang",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-card"
       ]
     }
   ],
@@ -1330,7 +1236,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/raw/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
-      "conditions": [],
+      "conditions": [
+        "دستور وظیفه فقط به پرسش اضافه شود؛ بردار آخرین توکن معتبر با attention mask گرفته و با L2 نرمال شود."
+      ],
       "evidenceIds": [
         "evidence:v03-9c2800b7ad736cfb03"
       ]
@@ -1339,9 +1247,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3-embedding:0.6b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3-embedding:0.6b\ncurl http://localhost:11434/api/embed -d '{\"model\": \"qwen3-embedding:0.6b\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1388,7 +1294,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Embedding-4B/raw/5cf2132abc99cad020ac570b19d031efec650f2b/README.md",
-      "conditions": [],
+      "conditions": [
+        "دستور وظیفه فقط به پرسش اضافه شود؛ بردار آخرین توکن معتبر با attention mask گرفته و با L2 نرمال شود."
+      ],
       "evidenceIds": [
         "evidence:v03-4fef68d668f81bf206"
       ]
@@ -1397,9 +1305,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3-embedding:4b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3-embedding:4b\ncurl http://localhost:11434/api/embed -d '{\"model\": \"qwen3-embedding:4b\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1446,7 +1352,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/raw/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af/README.md",
-      "conditions": [],
+      "conditions": [
+        "دستور وظیفه فقط به پرسش اضافه شود؛ بردار آخرین توکن معتبر با attention mask گرفته و با L2 نرمال شود."
+      ],
       "evidenceIds": [
         "evidence:v03-756c11eab5cc54fff1"
       ]
@@ -1455,9 +1363,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3-embedding:8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3-embedding:8b\ncurl http://localhost:11434/api/embed -d '{\"model\": \"qwen3-embedding:8b\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1513,7 +1419,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/raw/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md",
-      "conditions": [],
+      "conditions": [
+        "در مسیر Sentence Transformers 5.4 از CrossEncoder استفاده کنید؛ خروجی پیش‌فرض اختلاف logit است، نه احتمال صحت پاسخ."
+      ],
       "evidenceIds": [
         "evidence:v03-e46def74508c916e78"
       ]
@@ -1567,7 +1475,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Reranker-4B/raw/22e683669bc0f0bd69640a1354a6d0aebcfeede5/README.md",
-      "conditions": [],
+      "conditions": [
+        "در مسیر Sentence Transformers 5.4 از CrossEncoder استفاده کنید؛ خروجی پیش‌فرض اختلاف logit است، نه احتمال صحت پاسخ."
+      ],
       "evidenceIds": [
         "evidence:v03-d16eb55121e3e71474"
       ]
@@ -1621,7 +1531,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Reranker-8B/raw/77d193c791ed757ca307ee72715aa132723da912/README.md",
-      "conditions": [],
+      "conditions": [
+        "در مسیر Sentence Transformers 5.4 از CrossEncoder استفاده کنید؛ خروجی پیش‌فرض اختلاف logit است، نه احتمال صحت پاسخ."
+      ],
       "evidenceIds": [
         "evidence:v03-c09f8e74cbe4033e43"
       ]
@@ -1665,9 +1577,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/raw/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-d1601e1a4e651a447e"
       ]
@@ -1676,9 +1586,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3-vl:8b-instruct-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3-vl:8b-instruct-q4_K_M\nollama run qwen3-vl:8b-instruct-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1724,9 +1632,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-2B/raw/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1fb0e66ad27f4a35c4"
       ]
@@ -1735,9 +1641,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-2B/raw/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1fb0e66ad27f4a35c4"
       ]
@@ -1746,9 +1650,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-2B/raw/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1fb0e66ad27f4a35c4"
       ]
@@ -1757,9 +1659,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:2b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:2b\nollama run qwen3.5:2b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1805,9 +1705,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/raw/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02a81d4ca4dfa9b099"
       ]
@@ -1816,9 +1714,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/raw/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02a81d4ca4dfa9b099"
       ]
@@ -1827,9 +1723,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/raw/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-02a81d4ca4dfa9b099"
       ]
@@ -1838,9 +1732,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:35b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:35b\nollama run qwen3.5:35b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1886,9 +1778,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-4B/raw/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a70fca6b263839d3e5"
       ]
@@ -1897,9 +1787,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-4B/raw/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a70fca6b263839d3e5"
       ]
@@ -1908,9 +1796,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-4B/raw/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a70fca6b263839d3e5"
       ]
@@ -1919,9 +1805,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:4b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:4b\nollama run qwen3.5:4b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -1967,9 +1851,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-9B/raw/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-de0f4e149976e25127"
       ]
@@ -1978,9 +1860,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-9B/raw/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-de0f4e149976e25127"
       ]
@@ -1989,9 +1869,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-9B/raw/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-de0f4e149976e25127"
       ]
@@ -2000,9 +1878,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:9b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:9b\nollama run qwen3.5:9b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2047,9 +1923,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.8-27B/raw/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6ef1dc4cde68af6f92"
       ]
@@ -2058,9 +1932,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.8-27B/raw/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6ef1dc4cde68af6f92"
       ]
@@ -2069,9 +1941,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.8-27B/raw/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6ef1dc4cde68af6f92"
       ]
@@ -2080,9 +1950,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.8:27b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.8:27b\nollama run qwen3.8:27b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2128,9 +1996,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/raw/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7367d81634c9c1999e"
       ]
@@ -2139,9 +2005,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/olmo-3:7b-instruct-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull olmo-3:7b-instruct-q4_K_M\nollama run olmo-3:7b-instruct-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2185,9 +2049,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/deepseek-r1:8b-0528-qwen3-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull deepseek-r1:8b-0528-qwen3-q4_K_M\nollama run deepseek-r1:8b-0528-qwen3-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2231,9 +2093,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/raw/b1c0b44b4369b597ad119a196caf79a9c40e141e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6f0d230842d2e501bf"
       ]
@@ -2242,9 +2102,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/raw/b1c0b44b4369b597ad119a196caf79a9c40e141e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6f0d230842d2e501bf"
       ]
@@ -2253,9 +2111,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/deepseek-r1:70b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull deepseek-r1:70b\nollama run deepseek-r1:70b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2299,9 +2155,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/raw/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-d1dcd8b370f21f76e7"
       ]
@@ -2310,9 +2164,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/raw/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-d1dcd8b370f21f76e7"
       ]
@@ -2321,9 +2173,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/deepseek-r1:1.5b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull deepseek-r1:1.5b\nollama run deepseek-r1:1.5b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2367,9 +2217,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/raw/1df8507178afcc1bef68cd8c393f61a886323761/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-f7b9b749f262729f2d"
       ]
@@ -2378,9 +2226,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/raw/1df8507178afcc1bef68cd8c393f61a886323761/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-f7b9b749f262729f2d"
       ]
@@ -2389,9 +2235,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/deepseek-r1:14b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull deepseek-r1:14b\nollama run deepseek-r1:14b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2435,9 +2279,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/raw/711ad2ea6aa40cfca18895e8aca02ab92df1a746/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-653e71cc77765cd433"
       ]
@@ -2446,9 +2288,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/raw/711ad2ea6aa40cfca18895e8aca02ab92df1a746/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-653e71cc77765cd433"
       ]
@@ -2457,9 +2297,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/deepseek-r1:32b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull deepseek-r1:32b\nollama run deepseek-r1:32b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2503,9 +2341,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/raw/916b56a44061fd5cd7d6a8fb632557ed4f724f60/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6094f3fa17206810f9"
       ]
@@ -2514,9 +2350,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/raw/916b56a44061fd5cd7d6a8fb632557ed4f724f60/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6094f3fa17206810f9"
       ]
@@ -2525,9 +2359,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/deepseek-r1:7b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull deepseek-r1:7b\nollama run deepseek-r1:7b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2639,9 +2471,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/gemma-3-12b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a585b339d8df0103fa"
       ]
@@ -2650,9 +2480,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/google/gemma-3-12b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a585b339d8df0103fa"
       ]
@@ -2661,9 +2489,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/google/gemma-3-12b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a585b339d8df0103fa"
       ]
@@ -2672,9 +2498,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/google/gemma-3-12b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a585b339d8df0103fa"
       ]
@@ -2683,9 +2507,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/gemma3:12b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull gemma3:12b\nollama run gemma3:12b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2730,9 +2552,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/gemma-3-1b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1a289320089618d611"
       ]
@@ -2741,9 +2561,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/google/gemma-3-1b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1a289320089618d611"
       ]
@@ -2752,9 +2570,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/google/gemma-3-1b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1a289320089618d611"
       ]
@@ -2763,9 +2579,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/google/gemma-3-1b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-1a289320089618d611"
       ]
@@ -2774,9 +2588,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/gemma3:1b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull gemma3:1b\nollama run gemma3:1b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2821,9 +2633,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/gemma-3-27b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-967dd5737b7fe6620a"
       ]
@@ -2832,9 +2642,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/google/gemma-3-27b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-967dd5737b7fe6620a"
       ]
@@ -2843,9 +2651,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/google/gemma-3-27b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-967dd5737b7fe6620a"
       ]
@@ -2854,9 +2660,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/google/gemma-3-27b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-967dd5737b7fe6620a"
       ]
@@ -2865,9 +2669,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/gemma3:27b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull gemma3:27b\nollama run gemma3:27b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -2912,9 +2714,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/gemma-3-4b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-4fef75ec5619801c0c"
       ]
@@ -2923,9 +2723,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/google/gemma-3-4b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-4fef75ec5619801c0c"
       ]
@@ -2934,9 +2732,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/google/gemma-3-4b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-4fef75ec5619801c0c"
       ]
@@ -2945,9 +2741,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/google/gemma-3-4b-it",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-4fef75ec5619801c0c"
       ]
@@ -2956,9 +2750,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/gemma3:4b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull gemma3:4b\nollama run gemma3:4b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3003,9 +2795,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/gemma-4-26B-A4B-it/raw/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-8c073f7e3729dadf20"
       ]
@@ -3014,9 +2804,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/google/gemma-4-26B-A4B-it/raw/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-8c073f7e3729dadf20"
       ]
@@ -3025,9 +2813,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/gemma4:26b-a4b-it-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull gemma4:26b-a4b-it-q4_K_M\nollama run gemma4:26b-a4b-it-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3073,9 +2859,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/gemma-4-E2B-it/raw/3e22461f65e89153144f8adb70e3b8c2cc9845a7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a557e664812e64393e"
       ]
@@ -3084,9 +2868,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/google/gemma-4-E2B-it/raw/3e22461f65e89153144f8adb70e3b8c2cc9845a7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-a557e664812e64393e"
       ]
@@ -3095,9 +2877,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/gemma4:e2b-it-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull gemma4:e2b-it-q4_K_M\nollama run gemma4:e2b-it-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3143,9 +2923,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/raw/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-0734c7ad0dd63a75da"
       ]
@@ -3154,9 +2932,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/granite3.3:2b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull granite3.3:2b\nollama run granite3.3:2b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3193,7 +2969,8 @@ modelProfiles.push({
       "href": "https://huggingface.co/intfloat/multilingual-e5-small",
       "instructions": "خروجی این مسیر بردار متن است.",
       "conditions": [
-        "پیشوندهای query: و passage: حتی برای زبان‌های غیرانگلیسی لازم‌اند؛ متن بلند را پیش از نمایه‌سازی قطعه‌بندی کنید."
+        "پیشوندهای query: و passage: حتی برای زبان‌های غیرانگلیسی لازم‌اند؛ متن بلند را پیش از نمایه‌سازی قطعه‌بندی کنید.",
+        "برای پرسش query: و برای سند passage: اضافه شود؛ بردارها با L2 نرمال شوند."
       ],
       "evidenceIds": [
         "evidence:intfloat-multilingual-e5-small-card"
@@ -3203,7 +2980,10 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/intfloat/multilingual-e5-small/raw/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md",
-      "conditions": [],
+      "conditions": [
+        "برای پرسش query: و برای سند passage: اضافه شود؛ بردارها با L2 نرمال شوند.",
+        "pooling میانگین با attention mask؛ توکن‌های padding در میانگین وارد نشوند."
+      ],
       "evidenceIds": [
         "evidence:v03-bcba4bc8dac5de20c7"
       ]
@@ -3247,9 +3027,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-026934816cbcae04b5"
       ]
@@ -3258,9 +3036,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-026934816cbcae04b5"
       ]
@@ -3269,9 +3045,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-026934816cbcae04b5"
       ]
@@ -3280,9 +3054,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-026934816cbcae04b5"
       ]
@@ -3291,9 +3063,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/llama3.1:70b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull llama3.1:70b\nollama run llama3.1:70b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3338,9 +3108,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5a3e61cbfee9a9dd77"
       ]
@@ -3349,9 +3117,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5a3e61cbfee9a9dd77"
       ]
@@ -3360,9 +3126,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5a3e61cbfee9a9dd77"
       ]
@@ -3371,9 +3135,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-5a3e61cbfee9a9dd77"
       ]
@@ -3382,9 +3144,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/llama3.1:8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull llama3.1:8b\nollama run llama3.1:8b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3429,9 +3189,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-04665e2c2232e334fc"
       ]
@@ -3440,9 +3198,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-04665e2c2232e334fc"
       ]
@@ -3451,9 +3207,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-04665e2c2232e334fc"
       ]
@@ -3462,9 +3216,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-04665e2c2232e334fc"
       ]
@@ -3473,9 +3225,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/llama3.2:1b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull llama3.2:1b\nollama run llama3.2:1b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3520,9 +3270,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-40a0310c45dda9cde0"
       ]
@@ -3531,9 +3279,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-40a0310c45dda9cde0"
       ]
@@ -3542,9 +3288,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-40a0310c45dda9cde0"
       ]
@@ -3553,9 +3297,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-40a0310c45dda9cde0"
       ]
@@ -3564,9 +3306,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/llama3.2:3b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull llama3.2:3b\nollama run llama3.2:3b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3611,9 +3351,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/microsoft/Phi-4-mini-instruct/raw/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-ba9cd843c0a35040af"
       ]
@@ -3622,9 +3360,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/microsoft/Phi-4-mini-instruct/raw/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-ba9cd843c0a35040af"
       ]
@@ -3633,9 +3369,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/phi4-mini:3.8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull phi4-mini:3.8b\nollama run phi4-mini:3.8b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3681,9 +3415,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/raw/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-143cf593115d83d150"
       ]
@@ -3692,9 +3424,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/raw/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-143cf593115d83d150"
       ]
@@ -3703,9 +3433,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/raw/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-143cf593115d83d150"
       ]
@@ -3714,9 +3442,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/raw/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-143cf593115d83d150"
       ]
@@ -3725,9 +3451,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/devstral-small-2:24b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull devstral-small-2:24b\nollama run devstral-small-2:24b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3773,9 +3497,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/raw/b35d4dfe56c142746f54dbd64f579faab2744308/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-422e53fb9ef68804c9"
       ]
@@ -3784,9 +3506,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/raw/b35d4dfe56c142746f54dbd64f579faab2744308/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-422e53fb9ef68804c9"
       ]
@@ -3795,9 +3515,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/ministral-3:3b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull ministral-3:3b\nollama run ministral-3:3b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3842,9 +3560,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/raw/c170c708c41dac9275d15a8fff4eca08d52bab71/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-d38ebbe65582b41c27"
       ]
@@ -3853,9 +3569,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/mistral:7b-instruct-v0.3-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull mistral:7b-instruct-v0.3-q4_K_M\nollama run mistral:7b-instruct-v0.3-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3901,9 +3615,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/raw/68faf511d618ef198fef186659617cfd2eb8e33a/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-87c60f49d69f5b94bc"
       ]
@@ -3912,9 +3624,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/mistral-small3.1:24b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull mistral-small3.1:24b\nollama run mistral-small3.1:24b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -3960,9 +3670,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/raw/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-01e476ff57f8263d52"
       ]
@@ -3971,9 +3679,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/raw/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-01e476ff57f8263d52"
       ]
@@ -4017,10 +3723,12 @@ modelProfiles.push({
       "engine": "Transformers",
       "href": "https://huggingface.co/openai/gpt-oss-120b/raw/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/README.md",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "قالب Harmony لازم است؛ در Transformers آن را با chat template اعمال کنید.",
+        "مسیر MXFP4 به Accelerate، kernels و Triton ≥ 3.4 و GPU با compute capability ≥ 7.5 نیاز دارد؛ فایل کرنل‌ها برای اجرای آفلاین باید از قبل ذخیره شود."
       ],
       "evidenceIds": [
-        "evidence:v03-576214d889218d9022"
+        "evidence:v03-576214d889218d9022",
+        "evidence:audit-20260916-mxfp4"
       ]
     },
     {
@@ -4028,7 +3736,7 @@ modelProfiles.push({
       "engine": "vLLM",
       "href": "https://huggingface.co/openai/gpt-oss-120b/raw/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/README.md",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "قالب Harmony لازم است؛ در Transformers آن را با chat template اعمال کنید."
       ],
       "evidenceIds": [
         "evidence:v03-576214d889218d9022"
@@ -4039,7 +3747,7 @@ modelProfiles.push({
       "engine": "Ollama",
       "href": "https://ollama.com/library/gpt-oss:120b",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "قالب Harmony لازم است؛ در Transformers آن را با chat template اعمال کنید."
       ],
       "code": "ollama pull gpt-oss:120b\nollama run gpt-oss:120b",
       "codeLanguage": "bash",
@@ -4086,10 +3794,12 @@ modelProfiles.push({
       "engine": "Transformers",
       "href": "https://huggingface.co/openai/gpt-oss-20b/raw/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "قالب Harmony لازم است؛ در Transformers آن را با chat template اعمال کنید.",
+        "مسیر MXFP4 به Accelerate، kernels و Triton ≥ 3.4 و GPU با compute capability ≥ 7.5 نیاز دارد؛ فایل کرنل‌ها برای اجرای آفلاین باید از قبل ذخیره شود."
       ],
       "evidenceIds": [
-        "evidence:v03-fd7d1b23f44c3bb39c"
+        "evidence:v03-fd7d1b23f44c3bb39c",
+        "evidence:audit-20260916-mxfp4"
       ]
     },
     {
@@ -4097,7 +3807,7 @@ modelProfiles.push({
       "engine": "vLLM",
       "href": "https://huggingface.co/openai/gpt-oss-20b/raw/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "قالب Harmony لازم است؛ در Transformers آن را با chat template اعمال کنید."
       ],
       "evidenceIds": [
         "evidence:v03-fd7d1b23f44c3bb39c"
@@ -4108,7 +3818,7 @@ modelProfiles.push({
       "engine": "Ollama",
       "href": "https://ollama.com/library/gpt-oss:20b",
       "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
+        "قالب Harmony لازم است؛ در Transformers آن را با chat template اعمال کنید."
       ],
       "code": "ollama pull gpt-oss:20b\nollama run gpt-oss:20b",
       "codeLanguage": "bash",
@@ -4155,9 +3865,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/zai-org/GLM-4.7-Flash/raw/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f871c97c4c5f3728"
       ]
@@ -4166,9 +3874,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/zai-org/GLM-4.7-Flash/raw/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f871c97c4c5f3728"
       ]
@@ -4177,9 +3883,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/zai-org/GLM-4.7-Flash/raw/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-49f871c97c4c5f3728"
       ]
@@ -4188,9 +3892,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/glm-4.7-flash:q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull glm-4.7-flash:q4_K_M\nollama run glm-4.7-flash:q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4380,9 +4082,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5/raw/f710177d938eff80b684d42c5aa84b382612f21f/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7640341105ebedc8e6"
       ]
@@ -4391,9 +4091,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5/raw/f710177d938eff80b684d42c5aa84b382612f21f/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-7640341105ebedc8e6"
       ]
@@ -4421,9 +4119,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1/raw/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-3f3c5c51b03688076f"
       ]
@@ -4432,9 +4128,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1/raw/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-3f3c5c51b03688076f"
       ]
@@ -4462,9 +4156,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/raw/ac9c66cc9b46af7306746a9250f23d47083d689e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-e72fa22f5d039b4315"
       ]
@@ -4473,9 +4165,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/raw/ac9c66cc9b46af7306746a9250f23d47083d689e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-e72fa22f5d039b4315"
       ]
@@ -4484,9 +4174,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/raw/ac9c66cc9b46af7306746a9250f23d47083d689e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-e72fa22f5d039b4315"
       ]
@@ -4495,9 +4183,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/raw/ac9c66cc9b46af7306746a9250f23d47083d689e/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-e72fa22f5d039b4315"
       ]
@@ -4506,9 +4192,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3:235b-a22b-instruct-2507-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3:235b-a22b-instruct-2507-q4_K_M\nollama run qwen3:235b-a22b-instruct-2507-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4537,9 +4221,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/raw/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-f647db3a19c9a0deea"
       ]
@@ -4548,9 +4230,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/raw/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-f647db3a19c9a0deea"
       ]
@@ -4559,13 +4239,35 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3-coder:480b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3-coder:480b\nollama run qwen3-coder:480b",
       "codeLanguage": "bash",
       "evidenceIds": [
         "evidence:v03-f678e88301427b7e87"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:v03-d7295ef5c2d7198f1e"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با SGLang",
+      "engine": "SGLang",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:v03-d7295ef5c2d7198f1e"
       ]
     }
   ],
@@ -4591,9 +4293,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-27B/raw/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-bd8ff876ae3abe060f"
       ]
@@ -4602,9 +4302,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-27B/raw/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-bd8ff876ae3abe060f"
       ]
@@ -4613,9 +4311,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-27B/raw/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-bd8ff876ae3abe060f"
       ]
@@ -4624,9 +4320,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:27b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:27b\nollama run qwen3.5:27b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4656,9 +4350,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-0.8B/raw/2fc06364715b967f1860aea9cf38778875588b17/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-2f179b658d60e4483f"
       ]
@@ -4667,9 +4359,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-0.8B/raw/2fc06364715b967f1860aea9cf38778875588b17/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-2f179b658d60e4483f"
       ]
@@ -4678,9 +4368,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-0.8B/raw/2fc06364715b967f1860aea9cf38778875588b17/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-2f179b658d60e4483f"
       ]
@@ -4689,9 +4377,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:0.8b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:0.8b\nollama run qwen3.5:0.8b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4721,9 +4407,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B/raw/dc4d348443bc740c68e2d77492492c11606384d5/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-077b49671bb5ca41ae"
       ]
@@ -4732,9 +4416,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B/raw/dc4d348443bc740c68e2d77492492c11606384d5/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-077b49671bb5ca41ae"
       ]
@@ -4743,9 +4425,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B/raw/dc4d348443bc740c68e2d77492492c11606384d5/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-077b49671bb5ca41ae"
       ]
@@ -4754,9 +4434,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen3.5:122b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen3.5:122b\nollama run qwen3.5:122b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4786,9 +4464,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-2ee03fb807e16d7989"
       ]
@@ -4797,9 +4473,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-2ee03fb807e16d7989"
       ]
@@ -4808,9 +4482,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-2ee03fb807e16d7989"
       ]
@@ -4838,9 +4510,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-9b1a731a0f6782ae65"
       ]
@@ -4849,9 +4519,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-9b1a731a0f6782ae65"
       ]
@@ -4860,9 +4528,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با SGLang",
       "engine": "SGLang",
       "href": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-9b1a731a0f6782ae65"
       ]
@@ -4871,9 +4537,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با llama.cpp",
       "engine": "llama.cpp",
       "href": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-9b1a731a0f6782ae65"
       ]
@@ -4882,9 +4546,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/llama3.3:70b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull llama3.3:70b\nollama run llama3.3:70b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4914,9 +4576,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/phi4:14b",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull phi4:14b\nollama run phi4:14b",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -4946,9 +4606,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct/raw/482adb537c021c86670beed01cd58990d01e72e4/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-80457b3bd01c20cffe"
       ]
@@ -5013,7 +4671,10 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/intfloat/multilingual-e5-base/raw/d128750597153bb5987e10b1c3493a34e5a4502a/README.md",
-      "conditions": [],
+      "conditions": [
+        "برای پرسش query: و برای سند passage: اضافه شود؛ بردارها با L2 نرمال شوند.",
+        "pooling میانگین با attention mask؛ توکن‌های padding در میانگین وارد نشوند."
+      ],
       "evidenceIds": [
         "evidence:v03-647a6dc4d6b4cce867"
       ]
@@ -5022,7 +4683,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/intfloat/multilingual-e5-base/raw/d128750597153bb5987e10b1c3493a34e5a4502a/README.md",
-      "conditions": [],
+      "conditions": [
+        "برای پرسش query: و برای سند passage: اضافه شود؛ بردارها با L2 نرمال شوند."
+      ],
       "evidenceIds": [
         "evidence:v03-647a6dc4d6b4cce867"
       ]
@@ -5050,7 +4713,10 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/intfloat/multilingual-e5-large/raw/3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3/README.md",
-      "conditions": [],
+      "conditions": [
+        "برای پرسش query: و برای سند passage: اضافه شود؛ بردارها با L2 نرمال شوند.",
+        "pooling میانگین با attention mask؛ توکن‌های padding در میانگین وارد نشوند."
+      ],
       "evidenceIds": [
         "evidence:v03-c8765fd75612ce9bda"
       ]
@@ -5059,7 +4725,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/intfloat/multilingual-e5-large/raw/3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3/README.md",
-      "conditions": [],
+      "conditions": [
+        "برای پرسش query: و برای سند passage: اضافه شود؛ بردارها با L2 نرمال شوند."
+      ],
       "evidenceIds": [
         "evidence:v03-c8765fd75612ce9bda"
       ]
@@ -5179,9 +4847,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/raw/c03e6d358207e414f1eca0bb1891e29f1db0e242/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6cacb45b6a53ee5b07"
       ]
@@ -5190,9 +4856,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/raw/c03e6d358207e414f1eca0bb1891e29f1db0e242/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-6cacb45b6a53ee5b07"
       ]
@@ -5201,9 +4865,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen2.5-coder:7b-instruct-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen2.5-coder:7b-instruct-q4_K_M\nollama run qwen2.5-coder:7b-instruct-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -5233,9 +4895,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/raw/aedcc2d42b622764e023cf882b6652e646b95671/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-372fbdddb400aa9652"
       ]
@@ -5244,9 +4904,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/raw/aedcc2d42b622764e023cf882b6652e646b95671/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-372fbdddb400aa9652"
       ]
@@ -5255,9 +4913,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen2.5-coder:14b-instruct-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen2.5-coder:14b-instruct-q4_K_M\nollama run qwen2.5-coder:14b-instruct-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -5287,9 +4943,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct/raw/381fc969f78efac66bc87ff7ddeadb7e73c218a7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-8dc6a67f1d3ac055f4"
       ]
@@ -5298,9 +4952,7 @@ modelProfiles.push({
       "label": "راه‌اندازی با vLLM",
       "engine": "vLLM",
       "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct/raw/381fc969f78efac66bc87ff7ddeadb7e73c218a7/README.md",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "evidenceIds": [
         "evidence:v03-8dc6a67f1d3ac055f4"
       ]
@@ -5309,9 +4961,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/qwen2.5-coder:32b-instruct-q4_K_M",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull qwen2.5-coder:32b-instruct-q4_K_M\nollama run qwen2.5-coder:32b-instruct-q4_K_M",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -5341,7 +4991,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/google/embeddinggemma-300m",
-      "conditions": [],
+      "conditions": [
+        "برای بازیابی، قالب task: search result | query: را برای پرسش و title: … | text: … را برای سند به کار ببرید؛ prompt خودکار کتابخانه را دوباره به متن اضافه نکنید."
+      ],
       "evidenceIds": [
         "evidence:v03-4fc4be5e247f489a27"
       ]
@@ -5350,7 +5002,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/google/embeddinggemma-300m",
-      "conditions": [],
+      "conditions": [
+        "برای بازیابی، قالب task: search result | query: را برای پرسش و title: … | text: … را برای سند به کار ببرید؛ prompt خودکار کتابخانه را دوباره به متن اضافه نکنید."
+      ],
       "evidenceIds": [
         "evidence:v03-4fc4be5e247f489a27"
       ]
@@ -5359,9 +5013,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/embeddinggemma:300m",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull embeddinggemma:300m\ncurl http://localhost:11434/api/embed -d '{\"model\": \"embeddinggemma:300m\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -5428,7 +5080,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/jinaai/jina-reranker-v2-base-multilingual/raw/9cfeff2df7d40d1b78e75e5e9cebec92a99813c9/README.md",
-      "conditions": [],
+      "conditions": [
+        "trust_remote_code=True و کد مدل لازم است؛ برای اجرای آفلاین، کد مخزن را هم همراه وزن‌ها دریافت کنید."
+      ],
       "evidenceIds": [
         "evidence:v03-d6e73357bf96ab362e"
       ]
@@ -5437,7 +5091,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/jinaai/jina-reranker-v2-base-multilingual/raw/9cfeff2df7d40d1b78e75e5e9cebec92a99813c9/README.md",
-      "conditions": [],
+      "conditions": [
+        "trust_remote_code=True و کد مدل لازم است؛ برای اجرای آفلاین، کد مخزن را هم همراه وزن‌ها دریافت کنید."
+      ],
       "evidenceIds": [
         "evidence:v03-d6e73357bf96ab362e"
       ]
@@ -5483,9 +5139,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/mxbai-embed-large:335m",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull mxbai-embed-large:335m\ncurl http://localhost:11434/api/embed -d '{\"model\": \"mxbai-embed-large:335m\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -5515,7 +5169,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Transformers",
       "engine": "Transformers",
       "href": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/raw/e9b6763023c676ca8431644204f50c2b100d9aab/README.md",
-      "conditions": [],
+      "conditions": [
+        "پیشوند search_query: برای پرسش و search_document: برای سند لازم است؛ کد مدل با trust_remote_code=True بارگذاری می‌شود."
+      ],
       "evidenceIds": [
         "evidence:v03-934bd541e054349d80"
       ]
@@ -5524,7 +5180,9 @@ modelProfiles.push({
       "label": "راه‌اندازی با Sentence Transformers",
       "engine": "Sentence Transformers",
       "href": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/raw/e9b6763023c676ca8431644204f50c2b100d9aab/README.md",
-      "conditions": [],
+      "conditions": [
+        "پیشوند search_query: برای پرسش و search_document: برای سند لازم است؛ کد مدل با trust_remote_code=True بارگذاری می‌شود."
+      ],
       "evidenceIds": [
         "evidence:v03-934bd541e054349d80"
       ]
@@ -5533,9 +5191,7 @@ modelProfiles.push({
       "label": "دریافت و اجرای بستهٔ Ollama",
       "engine": "Ollama",
       "href": "https://ollama.com/library/nomic-embed-text:v1.5",
-      "conditions": [
-        "طول زمینه و تعداد درخواست هم‌زمان، مصرف حافظه را افزون بر اندازهٔ وزن افزایش می‌دهند."
-      ],
+      "conditions": [],
       "code": "ollama pull nomic-embed-text:v1.5\ncurl http://localhost:11434/api/embed -d '{\"model\": \"nomic-embed-text:v1.5\", \"input\": \"متن نمونه\"}'",
       "codeLanguage": "bash",
       "evidenceIds": [
@@ -5576,5 +5232,275 @@ modelProfiles.push({
     "evidence:v03-37cbb761dd4de61b70",
     "evidence:v03-9f4a255f17cc556d99",
     "evidence:v03-d96c8f2f2ddacfb9bb"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:qwen-qwen2-5-coder-1-5b",
+  "modelVersionId": "model:qwen-qwen2-5-coder-1-5b",
+  "introduction": "مدل پایهٔ کدنویسی با حدود ۱٫۵۴ میلیارد پارامتر؛ برای FIM و ادامهٔ کد، نه گفت‌وگوی دستورپذیر.",
+  "roleSummary": "تکمیل کد و پرکردن جای خالی",
+  "distinguishingFeatures": [
+    "مدل پایهٔ کدنویسی با حدود ۱٫۵۴ میلیارد پارامتر؛ برای FIM و ادامهٔ کد، نه گفت‌وگوی دستورپذیر."
+  ],
+  "languageSummary": "زبان‌های اعلام‌شده در شناسنامهٔ مدل",
+  "officialUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/blob/df3ce67c0e24480f20468b6ef2894622d69eb73b/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ AutoModelForCausalLM",
+      "conditions": [
+        "از قالب تکمیل کد / FIM همین مدل استفاده کنید؛ chat template مدل دستورپذیر را جایگزین نکنید."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:bigcode-starcoder2-3b",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "introduction": "مدل پایهٔ کدنویسی؛ ورودی ۱۶٬۳۸۴ توکنی با پنجرهٔ توجه ۴٬۰۹۶ توکنی. برای تکمیل کد، نه دستیار گفت‌وگو.",
+  "roleSummary": "تکمیل کد با پنجرهٔ لغزان",
+  "distinguishingFeatures": [
+    "مدل پایهٔ کدنویسی؛ ورودی ۱۶٬۳۸۴ توکنی با پنجرهٔ توجه ۴٬۰۹۶ توکنی. برای تکمیل کد، نه دستیار گفت‌وگو."
+  ],
+  "languageSummary": "زبان‌های اعلام‌شده در شناسنامهٔ مدل",
+  "officialUrl": "https://huggingface.co/bigcode/starcoder2-3b",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/bigcode/starcoder2-3b/blob/733247c55e3f73af49ce8e9c7949bf14af205928/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ AutoModelForCausalLM",
+      "conditions": [
+        "از قالب تکمیل کد / FIM همین مدل استفاده کنید؛ chat template مدل دستورپذیر را جایگزین نکنید."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-bigcode-starcoder2-3b"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-bigcode-starcoder2-3b"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:qwen-qwen3-coder-next",
+  "modelVersionId": "model:qwen-qwen3-coder-next",
+  "introduction": "مدل MoE با ۸۰ میلیارد پارامتر و ۳ میلیارد پارامتر فعال، توجه ترکیبی و پاسخ مستقیم؛ حافظهٔ وزن از کل مدل می‌آید.",
+  "roleSummary": "عامل برنامه‌نویسی",
+  "distinguishingFeatures": [
+    "مدل MoE با ۸۰ میلیارد پارامتر و ۳ میلیارد پارامتر فعال، توجه ترکیبی و پاسخ مستقیم؛ حافظهٔ وزن از کل مدل می‌آید."
+  ],
+  "languageSummary": "زبان‌های اعلام‌شده در شناسنامهٔ مدل",
+  "officialUrl": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ AutoModelForCausalLM",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با SGLang",
+      "engine": "SGLang",
+      "href": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-coder-next"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:intfloat-multilingual-e5-large-instruct",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "introduction": "بردارساز ۱۰۲۴بعدی؛ دستور یک‌جمله‌ای به پرسش اضافه می‌شود و سند بدون دستور وارد می‌شود.",
+  "roleSummary": "بازیابی چندزبانه با دستور وظیفه",
+  "distinguishingFeatures": [
+    "بردارساز ۱۰۲۴بعدی؛ دستور یک‌جمله‌ای به پرسش اضافه می‌شود و سند بدون دستور وارد می‌شود."
+  ],
+  "languageSummary": "زبان‌های اعلام‌شده در شناسنامهٔ مدل",
+  "officialUrl": "https://huggingface.co/intfloat/multilingual-e5-large-instruct",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Sentence Transformers",
+      "engine": "Sentence Transformers",
+      "href": "https://huggingface.co/intfloat/multilingual-e5-large-instruct/blob/274baa43b0e13e37fafa6428dbc7938e62e5c439/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ pipeline بردارسازی",
+      "conditions": [
+        "قالب پرسش Instruct: …\nQuery: …؛ سند بدون دستور. masked mean pooling و نرمال‌سازی L2؛ حداکثر ۵۱۲ توکن."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+      ],
+      "code": "from sentence_transformers import SentenceTransformer\nmodel = SentenceTransformer('intfloat/multilingual-e5-large-instruct', revision='274baa43b0e13e37fafa6428dbc7938e62e5c439')\nquery = 'Instruct: Retrieve passages that answer the question.\\nQuery: شرایط مرخصی چیست؟'\nvectors = model.encode([query, 'متن سند'], normalize_embeddings=True)"
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:qwen-qwen3-4b-instruct-2507",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "introduction": "نسخهٔ دستورپذیر چهارمیلیاردی با سقف متن ۲۶۲٬۱۴۴ توکن؛ این checkpoint حالت thinking ندارد.",
+  "roleSummary": "دستیار کوچک با پاسخ مستقیم",
+  "distinguishingFeatures": [
+    "نسخهٔ دستورپذیر چهارمیلیاردی با سقف متن ۲۶۲٬۱۴۴ توکن؛ این checkpoint حالت thinking ندارد."
+  ],
+  "languageSummary": "زبان‌های اعلام‌شده در شناسنامهٔ مدل",
+  "officialUrl": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ AutoModelForCausalLM",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+      ]
+    },
+    {
+      "label": "سرویس‌دهی با SGLang",
+      "engine": "SGLang",
+      "href": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "instructions": "مسیر سرویس‌دهی در کارت رسمی همین checkpoint",
+      "conditions": [
+        "برای ابزارخوانی، parser و chat template معرفی‌شده در راهنمای همین checkpoint لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:partai-tooka-sbert-v2-small",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "introduction": "نسخهٔ کوچک Tooka-SBERT-V2 با بردار ۷۶۸بعدی؛ نامزد بومی برای بازیابی و شباهت متن فارسی.",
+  "roleSummary": "بردارسازی متن فارسی",
+  "distinguishingFeatures": [
+    "نسخهٔ کوچک Tooka-SBERT-V2 با بردار ۷۶۸بعدی؛ نامزد بومی برای بازیابی و شباهت متن فارسی."
+  ],
+  "languageSummary": "فارسی",
+  "officialUrl": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Sentence Transformers",
+      "engine": "Sentence Transformers",
+      "href": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Small/blob/8bbed87e36669387f71437c061430ba56d1b496f/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ pipeline بردارسازی",
+      "conditions": [
+        "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:partai-tooka-sbert-v2-large",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "introduction": "نسخهٔ بزرگ Tooka-SBERT-V2 با بردار ۱۰۲۴بعدی؛ نتیجهٔ PTEB با آزمون‌های دیگر قابل رتبه‌بندی مستقیم نیست.",
+  "roleSummary": "بردارسازی متن فارسی",
+  "distinguishingFeatures": [
+    "نسخهٔ بزرگ Tooka-SBERT-V2 با بردار ۱۰۲۴بعدی؛ نتیجهٔ PTEB با آزمون‌های دیگر قابل رتبه‌بندی مستقیم نیست."
+  ],
+  "languageSummary": "فارسی",
+  "officialUrl": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Sentence Transformers",
+      "engine": "Sentence Transformers",
+      "href": "https://huggingface.co/PartAI/Tooka-SBERT-V2-Large/blob/b59682efa961122cc0e4408296d5852870c82eae/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ pipeline بردارسازی",
+      "conditions": [
+        "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:hooshvarelab-bert-base-parsbert-uncased",
+  "modelVersionId": "model:hooshvarelab-bert-base-parsbert-uncased",
+  "introduction": "ParsBERT پایه برای درک متن فارسی؛ دسته‌بندی و تشخیص موجودیت به سر وظیفه و آموزش نیاز دارند. بردارساز آمادهٔ بازیابی نیست.",
+  "roleSummary": "پایهٔ آموزش وظایف فارسی",
+  "distinguishingFeatures": [
+    "ParsBERT پایه برای درک متن فارسی؛ دسته‌بندی و تشخیص موجودیت به سر وظیفه و آموزش نیاز دارند. بردارساز آمادهٔ بازیابی نیست."
+  ],
+  "languageSummary": "فارسی",
+  "officialUrl": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased",
+  "runGuides": [
+    {
+      "label": "راه‌اندازی با Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased/blob/d73a0e2c7492c33bd5819bcdb23eba207404dd19/README.md",
+      "instructions": "بارگذاری وزن و tokenizer همین مخزن؛ AutoModel برای بازنمایی متن",
+      "conditions": [
+        "وزن پایه به‌تنهایی دسته‌بند یا NER آماده نیست.",
+        "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
   ]
 });

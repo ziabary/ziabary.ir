@@ -21,7 +21,7 @@ const cases=[
 ];
 const report=[];
 try{
- await call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'share',{configurable:true,value:async data=>window.__shared=data})"});
+ await call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'canShare',{configurable:true,value:()=>false});Object.defineProperty(navigator,'share',{configurable:true,value:async data=>window.__shared=data})"});
  await fs.mkdir(output,{recursive:true});
  for(const [name,path,body] of cases.filter(item=>!process.env.REVIEW_CASE||item[0]===process.env.REVIEW_CASE)){
   console.log('Reviewing',name);
@@ -44,9 +44,9 @@ try{
   const deepLink=await E('location.href');
   const articleHref=await E(`document.querySelector(${Q(body+' .article-open')})?.getAttribute('href') ?? location.pathname`);
   const expected=articleShareUrl(articleHref,registry);
-  await E("Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>window.__copied=text}});Object.defineProperty(navigator,'share',{configurable:true,value:async data=>window.__shared=data})");
+  await E("Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>window.__copied=text}});Object.defineProperty(navigator,'canShare',{configurable:true,value:()=>false});Object.defineProperty(navigator,'share',{configurable:true,value:async data=>window.__shared=data})");
   await E(`document.querySelector(${Q(body+' .reading-share-end button:last-of-type')}).click()`);assert.equal(await E('window.__copied'),expected);
-  await E(`document.querySelector(${Q(body+' .reading-share-end button:first-of-type')}).click()`);await E("document.querySelector('dialog[open] [data-share-destination=native]').click()");assert.equal(await E('window.__shared.url'),expected);
+  await E(`document.querySelector(${Q(body+' .reading-share-end button:first-of-type')}).click()`);await wait("!document.querySelector('dialog[open] [data-share-destination=native]')?.disabled");await E("document.querySelector('dialog[open] [data-share-destination=native]').click()");assert.equal(await E('window.__shared.url'),expected);
   if(name==='fa'||name==='llm')await shot(name+'-subsection');
   if(name==='fa'||name==='llm'){
    await E(`[...document.querySelectorAll('[data-reading-navigation] a')].find(a=>decodeURIComponent(new URL(a.href).hash.slice(1))===${Q(targets[0])}).click()`);

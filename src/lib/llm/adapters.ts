@@ -138,7 +138,14 @@ function modelParameterSummary(model: ModelVersion): ViewValue {
   for (const count of model.parameterCounts ?? []) if (['effective', 'language-component', 'other'].includes(count.scope) && count.value.state === 'known') {
     parts.push(`${count.approximate ? 'حدود ' : ''}${numbers.format(count.value.value)} میلیارد ${count.label}`);
   }
-  if (!parts.length) return total;
+  if (!parts.length) {
+    const stored = model.parameterCounts?.find(count => count.scope === 'stored' && count.value.state === 'known');
+    if (stored?.value.state === 'known') return {
+      ...known(`${numbers.format(stored.value.value)} میلیارد عنصر در فایل وزن`, undefined, undefined, undefined, stored.value.evidenceIds),
+      caveat: 'شمار ذخیره‌شده در checkpoint؛ شامل مؤلفه‌های اضافی، نه شمار فعال در تولید هر توکن.'
+    };
+    return total;
+  }
   return { ...known(parts.join(' · '), total.state === 'known' ? total.raw : undefined,
     total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds),
     caveat: total.state !== 'known' ? 'شمار کل تأیید نشده' : undefined };
@@ -198,11 +205,11 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
         'family-publisher': known(`${family?.name ?? 'نامعلوم'} · ${model.publisher}`, family?.name ?? model.publisher, undefined, undefined, evidenceIds),
         'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
         parameters: size,
-        'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : 'شمار پارامتر ثبت نشده' },
+        'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}${model.attentionArchitecture === 'hybrid' ? ' · توجه ترکیبی' : ''}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : 'شمار پارامتر ثبت نشده' },
         architecture: known(llmLabel(model.architecture), model.architecture),
         modalities, context: modelContextSummary(model),
         applications: list([...new Set(uses.map(item => item.summary || applicationLabel(item.applicationId)))], uses.flatMap(item => item.evidenceIds)),
-        license: datum(model.license.name),
+        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? 'استفادهٔ تجاری ممنوع' : 'شرایط استفادهٔ تجاری در مجوز' } : {}) },
         'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
         review: known(llmLabel(model.releaseStatus), model.releaseStatus)
       },
@@ -211,6 +218,7 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
         'model-version': known(`${model.exactName} · ${model.version.slice(0, 12)}`, model.version),
         publisher: known(model.publisher, model.publisher), 'model-kind': known(llmLabel(model.kind), model.kind),
         'model-stage': known(llmLabel(model.stage), model.stage), 'total-parameters': total, 'active-parameters': active,
+        'commercial-use': datum(model.license.commercialUse, llmLabel), 'attention-architecture': model.attentionArchitecture ? known(model.attentionArchitecture === 'hybrid' ? 'ترکیبی' : model.attentionArchitecture, model.attentionArchitecture) : unknown(),
         'size-band': modelSizeBand(model), architecture: known(llmLabel(model.architecture), model.architecture),
         'input-modality': model.inputModalities.map((value) => known(llmLabel(value), value)),
         'output-modality': model.outputModalities.map((value) => known(llmLabel(value), value)),
@@ -812,7 +820,7 @@ export function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewR
 
 export const modelUseRoleLabels: Record<string, string> = {
   retrieval: 'بازیابی سند', reranking: 'بازرتبه‌بندی سند', 'grounded-generation': 'تولید پاسخ از سند',
-  'text-generation': 'تولید متن', coding: 'برنامه‌نویسی', 'tool-use': 'فراخوانی ابزار',
+  'text-generation': 'تولید متن', 'code-completion': 'تکمیل کد / FIM', coding: 'برنامه‌نویسی', 'tool-use': 'فراخوانی ابزار',
   reasoning: 'استدلال', vision: 'درک تصویر', 'structured-output': 'استخراج ساخت‌یافته'
 };
 
@@ -829,13 +837,15 @@ function profileRow(repository: LlmGuideRepository, row: LlmViewRow, modelId: st
     searchText: `${row.searchText} ${profile.introduction} ${uses.map(item => item.summary).join(' ')} ${profile.runGuides.map(item => item.engine).join(' ')} ${downloads.map(item => `${item.format} ${item.variant} ${item.publisher}`).join(' ')}`,
     cells: { ...row.cells, 'primary-use': known(profile.roleSummary), applications: known(profile.roleSummary),
       downloads: known([...new Set(downloads.map(item => item.format.toUpperCase()))].join(' · ')),
-      introduction: known(profile.introduction), role: list([...new Set(uses.map(item => modelUseRoleLabels[item.role]))]),
-      'use-condition': list(uses.flatMap(item => item.conditions)),
+      introduction: profile.introduction.replace(/[.؛،\s]+$/u, '') === profile.roleSummary.replace(/[.؛،\s]+$/u, '') ? unknown('not-applicable') : known(profile.introduction), role: list([...new Set(uses.map(item => modelUseRoleLabels[item.role]))]),
+      'use-condition': list([...new Set(uses.flatMap(item => item.conditions))]),
+      'use-basis': list([...new Set(uses.map(item => item.basis === 'publisher-summary' ? 'کاربرد معرفی‌شده توسط سازنده' : 'پیشنهاد تحلیلی راهنما'))]),
       model: known(model.exactName), 'model-artifact': known(model.exactName) },
     facets: { ...row.facets, 'model-size': formatParameter(model.totalParametersB.state === 'known' ? model.totalParametersB : model.parameterCounts?.find(item => item.scope === 'nominal')?.value ?? { state: 'unknown' }), application: uses.map(item => known(applicationLabel(item.applicationId), item.applicationId)),
       'run-engine': [...new Set(profile.runGuides.map(item => item.engine).filter(engine => !engine.includes('مسیر اجرای ناشر')))].map(engine => known(engine, engine)),
       'download-format': [...new Set(downloads.map(item => item.format))].map(format => known(format, format)),
       'download-authority': [...new Set(downloads.map(item => item.authority))].map(authority => known(authority, authority)),
+      'use-basis': [...new Set(uses.map(item => item.basis))].map(value => known(value, value)),
       'use-role': uses.map(item => known(modelUseRoleLabels[item.role], item.role)) },
     sourceIds: [...new Set([...row.sourceIds, ...profile.evidenceIds, ...uses.flatMap(item => item.evidenceIds)])]
   };
@@ -932,7 +942,7 @@ export function validateLlmRepository(repository: LlmGuideRepository) {
   }
   for (const item of repository.modelUseGuidance) {
     if (!applications.some(app => app.id === item.applicationId)) errors.push(`${item.id} invalid application`);
-    if (!item.summary.trim() || !item.description.trim() || !item.conditions.length) errors.push(`${item.id} incomplete guidance`);
+    if (!item.summary.trim() || !item.description.trim()) errors.push(`${item.id} incomplete guidance`);
     if ('outcome' in item) errors.push(`${item.id} guidance must not carry an experimental outcome`);
   }
   for (const item of repository.artifactListings) {

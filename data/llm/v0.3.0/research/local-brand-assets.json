@@ -100,5 +100,38 @@
     "publisher": "HuggingFaceTB",
     "attributionUrl": "https://huggingface.co/HuggingFaceTB",
     "note": "Reuse the existing local publisher mark for SmolVLM."
+  },
+  {
+    "brand": "partai",
+    "publisher": "PartAI",
+    "profileUrl": "https://huggingface.co/PartAI",
+    "metadataUrl": "https://huggingface.co/api/organizations/PartAI/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66264a9f3ddd1e361732604b/82hmhQh9CFJbAyom63rUO.jpeg",
+    "localPath": "/images/llm/brands/partai.jpg",
+    "sha256": "8099ec91c98968999212a55ecac7aec8a2dda522e9b7861d61843ac9999a62fc",
+    "bytes": 6084,
+    "accessedOn": "2026-09-16"
+  },
+  {
+    "brand": "bigcode",
+    "publisher": "bigcode",
+    "profileUrl": "https://huggingface.co/bigcode",
+    "metadataUrl": "https://huggingface.co/api/organizations/bigcode/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1659521200179-5e48005437cb5b49818287a5.png",
+    "localPath": "/images/llm/brands/bigcode.png",
+    "sha256": "fb562c6c95c6f622cf223a1558a6051ca88b6f0235c6fe61ef1c2e660506f814",
+    "bytes": 8582,
+    "accessedOn": "2026-09-16"
+  },
+  {
+    "brand": "hooshvarelab",
+    "publisher": "HooshvareLab",
+    "profileUrl": "https://huggingface.co/HooshvareLab",
+    "metadataUrl": "https://huggingface.co/api/organizations/HooshvareLab/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1590841291530-5ecbae65968f6028e0559f8c.png",
+    "localPath": "/images/llm/brands/hooshvarelab.png",
+    "sha256": "f8f9889e058d34a0875d0219462c50c37ff7f62325be99d9e2dacd361da13578",
+    "bytes": 10196,
+    "accessedOn": "2026-09-16"
   }
 ]

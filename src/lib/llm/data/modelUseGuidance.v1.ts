@@ -1503,9 +1503,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "نگارش و گفت‌وگوی چندزبانه با اسناد بلند",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-50519b37f3fc26b4a5"
@@ -1519,9 +1517,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "نگارش و گفت‌وگوی چندزبانه با اسناد بلند",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-50519b37f3fc26b4a5"
@@ -1535,9 +1531,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار نوشتن و بازنویسی چندزبانه",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7fd37ca79c736c18bd"
@@ -1551,9 +1545,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار نوشتن و بازنویسی چندزبانه",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7fd37ca79c736c18bd"
@@ -1567,9 +1559,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "گفت‌وگوی محلی در زبان‌های گوناگون",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-690f5a70697f256add"
@@ -1583,9 +1573,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "گفت‌وگوی محلی در زبان‌های گوناگون",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-690f5a70697f256add"
@@ -1599,9 +1587,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "شاخهٔ Global از Tiny Aya برای پوشش عمومی زبان‌ها عرضه شده؛ با نسخه‌های منطقه‌ای Earth،Fire و Water یکی نیست.",
   "distinguishingFeature": "گفت‌وگوی محلی در زبان‌های گوناگون",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-690f5a70697f256add"
@@ -1615,9 +1601,7 @@ modelUseGuidance.push({
   "summary": "چت و بازنویسی کوتاه",
   "description": "بزرگ‌ترین نسخهٔ SmolLM2 در این فهرست، علاوه بر پیروی از دستور، قالب فراخوانی تابع دارد؛ این ویژگی به دو نسخهٔ کوچک‌تر تعمیم ندارد.",
   "distinguishingFeature": "نمونه‌سازی دستیار کوچک با فراخوانی تابع",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9c5cd7741b6bd7013a"
@@ -1631,9 +1615,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "نمونه‌سازی دستیار کوچک با فراخوانی تابع",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9c5cd7741b6bd7013a"
@@ -1647,9 +1629,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "نمونه‌سازی دستیار کوچک با فراخوانی تابع",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9c5cd7741b6bd7013a"
@@ -1663,9 +1643,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "بزرگ‌ترین نسخهٔ SmolLM2 در این فهرست، علاوه بر پیروی از دستور، قالب فراخوانی تابع دارد؛ این ویژگی به دو نسخهٔ کوچک‌تر تعمیم ندارد.",
   "distinguishingFeature": "نمونه‌سازی دستیار کوچک با فراخوانی تابع",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9c5cd7741b6bd7013a"
@@ -1679,9 +1657,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "آزمایش پیروی از دستور با مدل بسیار کوچک",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-fa4d5f78d993271304"
@@ -1695,25 +1671,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "آزمایش پیروی از دستور با مدل بسیار کوچک",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
-  "basis": "editorial-analysis",
-  "evidenceIds": [
-    "evidence:v03-fa4d5f78d993271304"
-  ]
-});
-modelUseGuidance.push({
-  "id": "model-use:v03-huggingfacetb-smollm2-135m-instruct-agents-tools",
-  "modelVersionId": "model:huggingfacetb-smollm2-135m-instruct",
-  "applicationId": "agents-tools",
-  "role": "tool-use",
-  "summary": "ابزارخوانی با parser سازگار",
-  "description": "نسخهٔ ۱۳۵میلیون‌پارامتری SmolLM2 برای نمونه‌سازی سادهٔ تولید متن و بررسی محدودیت مدل‌های کم‌حجم مناسب است.",
-  "distinguishingFeature": "آزمایش پیروی از دستور با مدل بسیار کوچک",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-fa4d5f78d993271304"
@@ -1727,9 +1685,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "بازنویسی و خلاصه‌سازی متن کوتاه",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-c4f522374a6511e10d"
@@ -1743,25 +1699,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "بازنویسی و خلاصه‌سازی متن کوتاه",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
-  "basis": "editorial-analysis",
-  "evidenceIds": [
-    "evidence:v03-c4f522374a6511e10d"
-  ]
-});
-modelUseGuidance.push({
-  "id": "model-use:v03-huggingfacetb-smollm2-360m-instruct-agents-tools",
-  "modelVersionId": "model:huggingfacetb-smollm2-360m-instruct",
-  "applicationId": "agents-tools",
-  "role": "tool-use",
-  "summary": "ابزارخوانی با parser سازگار",
-  "description": "نسخهٔ ۳۶۰میلیون‌پارامتری SmolLM2 با SFT و DPO برای دستورپذیری تنظیم شده و نمونهٔ اجرای CPU در کارت مدل دارد.",
-  "distinguishingFeature": "بازنویسی و خلاصه‌سازی متن کوتاه",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-c4f522374a6511e10d"
@@ -1775,9 +1713,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار کوچک با انتخاب حالت فکرکردن",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1cb00d19b57837ab69"
@@ -1791,9 +1727,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار کوچک با انتخاب حالت فکرکردن",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1cb00d19b57837ab69"
@@ -1823,9 +1757,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "SmolLM3 سه‌میلیاردی دو حالت پاسخ مستقیم و استدلال دارد؛ زمینهٔ آموزش ۶۵٬۵۳۶ توکن است و جزئیات آموزش منتشر شده‌اند.",
   "distinguishingFeature": "دستیار کوچک با انتخاب حالت فکرکردن",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1cb00d19b57837ab69"
@@ -1839,9 +1771,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "SmolLM3 سه‌میلیاردی دو حالت پاسخ مستقیم و استدلال دارد؛ زمینهٔ آموزش ۶۵٬۵۳۶ توکن است و جزئیات آموزش منتشر شده‌اند.",
   "distinguishingFeature": "دستیار کوچک با انتخاب حالت فکرکردن",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1cb00d19b57837ab69"
@@ -1855,9 +1785,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "نمونه‌سازی گفت‌وگو با کوچک‌ترین Qwen3",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-21af22da05ddae881c"
@@ -1871,9 +1799,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "نمونه‌سازی گفت‌وگو با کوچک‌ترین Qwen3",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-21af22da05ddae881c"
@@ -1903,9 +1829,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "نسخهٔ متراکم ۰٫۶میلیاردی Qwen3 هر دو حالت thinking و non-thinking را دارد؛ فایل رسمی Q8_0 نیز موجود است.",
   "distinguishingFeature": "نمونه‌سازی گفت‌وگو با کوچک‌ترین Qwen3",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-21af22da05ddae881c"
@@ -1919,9 +1843,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "نسخهٔ متراکم ۰٫۶میلیاردی Qwen3 هر دو حالت thinking و non-thinking را دارد؛ فایل رسمی Q8_0 نیز موجود است.",
   "distinguishingFeature": "نمونه‌سازی گفت‌وگو با کوچک‌ترین Qwen3",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-21af22da05ddae881c"
@@ -1935,9 +1857,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار متنی کوچک با کنترل استدلال",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f96d4bca8be6d031"
@@ -1951,9 +1871,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار متنی کوچک با کنترل استدلال",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f96d4bca8be6d031"
@@ -1983,9 +1901,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Qwen3-1.7B میان گزینه‌های زیر دو میلیارد پارامتر این فهرست قرار می‌گیرد؛ حالت پاسخ مستقیم را می‌توان از قالب پیام انتخاب کرد.",
   "distinguishingFeature": "دستیار متنی کوچک با کنترل استدلال",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f96d4bca8be6d031"
@@ -1999,9 +1915,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3-1.7B میان گزینه‌های زیر دو میلیارد پارامتر این فهرست قرار می‌گیرد؛ حالت پاسخ مستقیم را می‌توان از قالب پیام انتخاب کرد.",
   "distinguishingFeature": "دستیار متنی کوچک با کنترل استدلال",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f96d4bca8be6d031"
@@ -2015,9 +1929,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "تولید و تحلیل متن با Qwen3 متراکم",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02c6053d6bac907d15"
@@ -2031,9 +1943,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "تولید و تحلیل متن با Qwen3 متراکم",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02c6053d6bac907d15"
@@ -2063,9 +1973,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Qwen3-14B یک مدل متراکم با دو حالت پاسخ است؛ نسخه‌های رسمی GGUF برای انتخاب دقت وزن در دسترس‌اند.",
   "distinguishingFeature": "تولید و تحلیل متن با Qwen3 متراکم",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02c6053d6bac907d15"
@@ -2079,9 +1987,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3-14B یک مدل متراکم با دو حالت پاسخ است؛ نسخه‌های رسمی GGUF برای انتخاب دقت وزن در دسترس‌اند.",
   "distinguishingFeature": "تولید و تحلیل متن با Qwen3 متراکم",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02c6053d6bac907d15"
@@ -2096,7 +2002,6 @@ modelUseGuidance.push({
   "description": "Qwen3-30B-A3B از خبرگان انتخابی استفاده می‌کند و از الگوی Qwen-Agent برای اتصال ابزارها بهره می‌برد.",
   "distinguishingFeature": "دستیار ابزارمحور با معماری MoE",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2112,9 +2017,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار ابزارمحور با معماری MoE",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3fbdfa840af9cf314f"
@@ -2128,9 +2031,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار ابزارمحور با معماری MoE",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3fbdfa840af9cf314f"
@@ -2160,9 +2061,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Qwen3-30B-A3B از خبرگان انتخابی استفاده می‌کند و از الگوی Qwen-Agent برای اتصال ابزارها بهره می‌برد.",
   "distinguishingFeature": "دستیار ابزارمحور با معماری MoE",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3fbdfa840af9cf314f"
@@ -2177,7 +2076,6 @@ modelUseGuidance.push({
   "description": "Qwen3-32B برخلاف نسخهٔ 30B-A3B معماری متراکم دارد؛ حالت استدلال را می‌توان متناسب با پیچیدگی پرسش تنظیم کرد.",
   "distinguishingFeature": "تحلیل چندمرحله‌ای با نسخهٔ متراکم بزرگ Qwen3",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2193,9 +2091,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "تحلیل چندمرحله‌ای با نسخهٔ متراکم بزرگ Qwen3",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-eee862b4eceaa376da"
@@ -2209,9 +2105,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "تحلیل چندمرحله‌ای با نسخهٔ متراکم بزرگ Qwen3",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-eee862b4eceaa376da"
@@ -2225,9 +2119,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3-32B برخلاف نسخهٔ 30B-A3B معماری متراکم دارد؛ حالت استدلال را می‌توان متناسب با پیچیدگی پرسش تنظیم کرد.",
   "distinguishingFeature": "تحلیل چندمرحله‌ای با نسخهٔ متراکم بزرگ Qwen3",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-eee862b4eceaa376da"
@@ -2241,9 +2133,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار عمومی در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5438c7e36f3bb1bdd2"
@@ -2257,9 +2147,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار عمومی در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5438c7e36f3bb1bdd2"
@@ -2289,9 +2177,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Qwen3-4B امکان تغییر حالت thinking را در یک checkpoint ارائه می‌کند؛ GGUF رسمی با چند روش کوانت دارد.",
   "distinguishingFeature": "دستیار عمومی در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5438c7e36f3bb1bdd2"
@@ -2305,9 +2191,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3-4B امکان تغییر حالت thinking را در یک checkpoint ارائه می‌کند؛ GGUF رسمی با چند روش کوانت دارد.",
   "distinguishingFeature": "دستیار عمومی در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5438c7e36f3bb1bdd2"
@@ -2321,9 +2205,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با کنترل فکرکردن",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-83f599b0dc739c8491"
@@ -2353,9 +2235,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Qwen3-8B مدل عمومی متراکم با ۸٫۲میلیارد پارامتر اعلام‌شده است؛ پاسخ مستقیم و reasoning را در قالب پیام انتخاب می‌کنید.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با کنترل فکرکردن",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-83f599b0dc739c8491"
@@ -2369,9 +2249,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3-8B مدل عمومی متراکم با ۸٫۲میلیارد پارامتر اعلام‌شده است؛ پاسخ مستقیم و reasoning را در قالب پیام انتخاب می‌کنید.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با کنترل فکرکردن",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-83f599b0dc739c8491"
@@ -2385,10 +2263,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Qwen3-Coder-30B-A3B-Instruct برای تولید کد، ویرایش مخزن و گردش‌کار عامل برنامه‌نویسی تنظیم شده؛ زمینهٔ بومی ۲۶۲٬۱۴۴ توکن دارد.",
   "distinguishingFeature": "اصلاح مخزن کد با دستیار ابزارمحور",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
-    "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-504a98b0928e421cf9"
@@ -2402,9 +2277,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "اصلاح مخزن کد با دستیار ابزارمحور",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-504a98b0928e421cf9"
@@ -2418,9 +2291,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "اصلاح مخزن کد با دستیار ابزارمحور",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-504a98b0928e421cf9"
@@ -2435,7 +2306,7 @@ modelUseGuidance.push({
   "description": "Qwen3-Coder-30B-A3B-Instruct برای تولید کد، ویرایش مخزن و گردش‌کار عامل برنامه‌نویسی تنظیم شده؛ زمینهٔ بومی ۲۶۲٬۱۴۴ توکن دارد.",
   "distinguishingFeature": "اصلاح مخزن کد با دستیار ابزارمحور",
   "conditions": [
-    "توکن‌های تفکر در زمان پاسخ و زمینه حساب شوند."
+    "این checkpoint فقط پاسخ مستقیم تولید می‌کند؛ حالت thinking جداگانه ندارد."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -2450,9 +2321,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "نسخهٔ Instruct هشت‌میلیاردی Qwen3-VL ورودی متن، تصویر و ویدئو را برای درک بصری و کار با سند ترکیب می‌کند.",
   "distinguishingFeature": "خواندن تصویر و سند با Qwen3-VL",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1601e1a4e651a447e"
@@ -2466,9 +2335,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "خواندن تصویر و سند با Qwen3-VL",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1601e1a4e651a447e"
@@ -2482,9 +2349,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "خواندن تصویر و سند با Qwen3-VL",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1601e1a4e651a447e"
@@ -2498,9 +2363,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "نسخهٔ Instruct هشت‌میلیاردی Qwen3-VL ورودی متن، تصویر و ویدئو را برای درک بصری و کار با سند ترکیب می‌کند.",
   "distinguishingFeature": "خواندن تصویر و سند با Qwen3-VL",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1601e1a4e651a447e"
@@ -2515,7 +2378,6 @@ modelUseGuidance.push({
   "description": "Qwen3.5-2B کوچک برای نمونه‌سازی و تنظیم دقیق وظیفه‌محور معرفی شده؛ ورودی بصری را همراه متن می‌پذیرد.",
   "distinguishingFeature": "نمونه‌سازی چندوجهی با Qwen3.5 کوچک",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2531,9 +2393,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "نمونه‌سازی چندوجهی با Qwen3.5 کوچک",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1fb0e66ad27f4a35c4"
@@ -2547,9 +2407,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "نمونه‌سازی چندوجهی با Qwen3.5 کوچک",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1fb0e66ad27f4a35c4"
@@ -2579,9 +2437,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Qwen3.5-2B کوچک برای نمونه‌سازی و تنظیم دقیق وظیفه‌محور معرفی شده؛ ورودی بصری را همراه متن می‌پذیرد.",
   "distinguishingFeature": "نمونه‌سازی چندوجهی با Qwen3.5 کوچک",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1fb0e66ad27f4a35c4"
@@ -2595,9 +2451,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3.5-2B کوچک برای نمونه‌سازی و تنظیم دقیق وظیفه‌محور معرفی شده؛ ورودی بصری را همراه متن می‌پذیرد.",
   "distinguishingFeature": "نمونه‌سازی چندوجهی با Qwen3.5 کوچک",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1fb0e66ad27f4a35c4"
@@ -2612,7 +2466,6 @@ modelUseGuidance.push({
   "description": "نسخهٔ 35B-A3B از پایهٔ یکپارچهٔ متن و تصویر و معماری ترکیبی بهره می‌برد و برای گردش‌کار چندمرحله‌ای قابل بررسی است.",
   "distinguishingFeature": "عامل چندوجهی با Qwen3.5 از نوع MoE",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2628,9 +2481,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل چندوجهی با Qwen3.5 از نوع MoE",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02a81d4ca4dfa9b099"
@@ -2644,9 +2495,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل چندوجهی با Qwen3.5 از نوع MoE",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02a81d4ca4dfa9b099"
@@ -2676,9 +2525,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "نسخهٔ 35B-A3B از پایهٔ یکپارچهٔ متن و تصویر و معماری ترکیبی بهره می‌برد و برای گردش‌کار چندمرحله‌ای قابل بررسی است.",
   "distinguishingFeature": "عامل چندوجهی با Qwen3.5 از نوع MoE",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-02a81d4ca4dfa9b099"
@@ -2693,7 +2540,6 @@ modelUseGuidance.push({
   "description": "Qwen3.5-4B از نسل متن–تصویر یکپارچه است؛ برای آزمودن استخراج اطلاعات از سند در اندازه‌ای کوچک‌تر از 9B قابل بررسی است.",
   "distinguishingFeature": "پردازش متن و تصویر در اندازهٔ چهار میلیارد",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2709,9 +2555,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "پردازش متن و تصویر در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a70fca6b263839d3e5"
@@ -2725,9 +2569,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "پردازش متن و تصویر در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a70fca6b263839d3e5"
@@ -2757,9 +2599,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Qwen3.5-4B از نسل متن–تصویر یکپارچه است؛ برای آزمودن استخراج اطلاعات از سند در اندازه‌ای کوچک‌تر از 9B قابل بررسی است.",
   "distinguishingFeature": "پردازش متن و تصویر در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a70fca6b263839d3e5"
@@ -2773,9 +2613,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Qwen3.5-4B از نسل متن–تصویر یکپارچه است؛ برای آزمودن استخراج اطلاعات از سند در اندازه‌ای کوچک‌تر از 9B قابل بررسی است.",
   "distinguishingFeature": "پردازش متن و تصویر در اندازهٔ چهار میلیارد",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a70fca6b263839d3e5"
@@ -2790,7 +2628,6 @@ modelUseGuidance.push({
   "description": "نسخهٔ 9B از Qwen3.5 ترکیب متن و تصویر را در معماری متراکم این خانواده عرضه می‌کند.",
   "distinguishingFeature": "دستیار اسناد و تصویر با Qwen3.5 متراکم",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2806,9 +2643,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار اسناد و تصویر با Qwen3.5 متراکم",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-de0f4e149976e25127"
@@ -2822,9 +2657,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار اسناد و تصویر با Qwen3.5 متراکم",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-de0f4e149976e25127"
@@ -2854,9 +2687,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "نسخهٔ 9B از Qwen3.5 ترکیب متن و تصویر را در معماری متراکم این خانواده عرضه می‌کند.",
   "distinguishingFeature": "دستیار اسناد و تصویر با Qwen3.5 متراکم",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-de0f4e149976e25127"
@@ -2870,9 +2701,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "نسخهٔ 9B از Qwen3.5 ترکیب متن و تصویر را در معماری متراکم این خانواده عرضه می‌کند.",
   "distinguishingFeature": "دستیار اسناد و تصویر با Qwen3.5 متراکم",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-de0f4e149976e25127"
@@ -2887,7 +2716,6 @@ modelUseGuidance.push({
   "description": "Qwen3.8-27B مدل متراکم متن–تصویر با کنترل thinking است؛ تمرکز معرفی آن بر کدنویسی، پژوهش و کارهای چندمرحله‌ای است.",
   "distinguishingFeature": "گردش‌کار طولانی با عامل متن–تصویر",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -2903,9 +2731,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "گردش‌کار طولانی با عامل متن–تصویر",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6ef1dc4cde68af6f92"
@@ -2919,9 +2745,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "گردش‌کار طولانی با عامل متن–تصویر",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6ef1dc4cde68af6f92"
@@ -2951,9 +2775,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Qwen3.8-27B مدل متراکم متن–تصویر با کنترل thinking است؛ تمرکز معرفی آن بر کدنویسی، پژوهش و کارهای چندمرحله‌ای است.",
   "distinguishingFeature": "گردش‌کار طولانی با عامل متن–تصویر",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6ef1dc4cde68af6f92"
@@ -2967,9 +2789,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "پژوهش دستورپذیری با مسیر آموزش قابل بررسی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7367d81634c9c1999e"
@@ -2983,9 +2803,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "پژوهش دستورپذیری با مسیر آموزش قابل بررسی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7367d81634c9c1999e"
@@ -2999,9 +2817,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Olmo 3 7B Instruct با داده‌های Dolma 3 و Dolci عرضه شده و انتشار جزئیات آموزش، آن را برای پژوهش بازتولیدپذیر متمایز می‌کند.",
   "distinguishingFeature": "پژوهش دستورپذیری با مسیر آموزش قابل بررسی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7367d81634c9c1999e"
@@ -3015,9 +2831,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Olmo 3 7B Instruct با داده‌های Dolma 3 و Dolci عرضه شده و انتشار جزئیات آموزش، آن را برای پژوهش بازتولیدپذیر متمایز می‌کند.",
   "distinguishingFeature": "پژوهش دستورپذیری با مسیر آموزش قابل بررسی",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7367d81634c9c1999e"
@@ -3032,7 +2846,6 @@ modelUseGuidance.push({
   "description": "این مدل از پس‌آموزش Qwen3-8B-Base با زنجیره‌های استدلال DeepSeek-R1-0528 به دست آمده؛ با Qwen3-8B معمولی متفاوت است.",
   "distinguishingFeature": "آزمایش استدلال تقطیرشده از R1-0528",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3048,9 +2861,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "آزمایش استدلال تقطیرشده از R1-0528",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-85cc9f3b5064833673"
@@ -3064,9 +2875,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "آزمایش استدلال تقطیرشده از R1-0528",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-85cc9f3b5064833673"
@@ -3080,9 +2889,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "این مدل از پس‌آموزش Qwen3-8B-Base با زنجیره‌های استدلال DeepSeek-R1-0528 به دست آمده؛ با Qwen3-8B معمولی متفاوت است.",
   "distinguishingFeature": "آزمایش استدلال تقطیرشده از R1-0528",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-85cc9f3b5064833673"
@@ -3096,9 +2903,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "این مدل از پس‌آموزش Qwen3-8B-Base با زنجیره‌های استدلال DeepSeek-R1-0528 به دست آمده؛ با Qwen3-8B معمولی متفاوت است.",
   "distinguishingFeature": "آزمایش استدلال تقطیرشده از R1-0528",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-85cc9f3b5064833673"
@@ -3113,7 +2918,6 @@ modelUseGuidance.push({
   "description": "این checkpoint مسیر تقطیر R1 را روی پایهٔ Llama اجرا می‌کند و بزرگ‌ترین نسخهٔ تقطیری این فهرست است.",
   "distinguishingFeature": "استدلال تقطیرشده روی پایهٔ Llama 70B",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3129,9 +2933,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "استدلال تقطیرشده روی پایهٔ Llama 70B",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6f0d230842d2e501bf"
@@ -3145,9 +2947,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "استدلال تقطیرشده روی پایهٔ Llama 70B",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6f0d230842d2e501bf"
@@ -3161,9 +2961,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "این checkpoint مسیر تقطیر R1 را روی پایهٔ Llama اجرا می‌کند و بزرگ‌ترین نسخهٔ تقطیری این فهرست است.",
   "distinguishingFeature": "استدلال تقطیرشده روی پایهٔ Llama 70B",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6f0d230842d2e501bf"
@@ -3178,7 +2976,6 @@ modelUseGuidance.push({
   "description": "نسخهٔ ۱٫۵میلیاردی از تقطیر R1 روی Qwen2.5-Math ساخته شده و برای بررسی انتقال رفتار استدلال به مدل کوچک جالب است.",
   "distinguishingFeature": "آزمایش مرز استدلال در مدل تقطیری بسیار کوچک",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3194,9 +2991,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "آزمایش مرز استدلال در مدل تقطیری بسیار کوچک",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1dcd8b370f21f76e7"
@@ -3210,9 +3005,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "آزمایش مرز استدلال در مدل تقطیری بسیار کوچک",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1dcd8b370f21f76e7"
@@ -3226,9 +3019,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "نسخهٔ ۱٫۵میلیاردی از تقطیر R1 روی Qwen2.5-Math ساخته شده و برای بررسی انتقال رفتار استدلال به مدل کوچک جالب است.",
   "distinguishingFeature": "آزمایش مرز استدلال در مدل تقطیری بسیار کوچک",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d1dcd8b370f21f76e7"
@@ -3243,7 +3034,6 @@ modelUseGuidance.push({
   "description": "DeepSeek-R1-Distill-Qwen-14B از Qwen2.5-14B و دادهٔ تولیدی R1 استفاده می‌کند؛ وزن آن متعلق به مدل کامل R1 نیست.",
   "distinguishingFeature": "حل مسئله با تقطیر R1 در اندازهٔ میانی",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3259,9 +3049,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "حل مسئله با تقطیر R1 در اندازهٔ میانی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f7b9b749f262729f2d"
@@ -3275,9 +3063,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "حل مسئله با تقطیر R1 در اندازهٔ میانی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f7b9b749f262729f2d"
@@ -3291,9 +3077,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "DeepSeek-R1-Distill-Qwen-14B از Qwen2.5-14B و دادهٔ تولیدی R1 استفاده می‌کند؛ وزن آن متعلق به مدل کامل R1 نیست.",
   "distinguishingFeature": "حل مسئله با تقطیر R1 در اندازهٔ میانی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f7b9b749f262729f2d"
@@ -3308,7 +3092,6 @@ modelUseGuidance.push({
   "description": "نسخهٔ Qwen-32B مسیر تقطیر R1 را روی پایهٔ Qwen2.5 دنبال می‌کند.",
   "distinguishingFeature": "تحلیل و کدنویسی با تقطیر متراکم ۳۲میلیاردی",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3324,9 +3107,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "تحلیل و کدنویسی با تقطیر متراکم ۳۲میلیاردی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-653e71cc77765cd433"
@@ -3340,9 +3121,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "تحلیل و کدنویسی با تقطیر متراکم ۳۲میلیاردی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-653e71cc77765cd433"
@@ -3356,9 +3135,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "نسخهٔ Qwen-32B مسیر تقطیر R1 را روی پایهٔ Qwen2.5 دنبال می‌کند.",
   "distinguishingFeature": "تحلیل و کدنویسی با تقطیر متراکم ۳۲میلیاردی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-653e71cc77765cd433"
@@ -3373,7 +3150,6 @@ modelUseGuidance.push({
   "description": "این مدل از Qwen2.5-Math-7B به‌عنوان پایه استفاده می‌کند؛ با تقطیر جدیدتر R1-0528 روی Qwen3 یکی نیست.",
   "distinguishingFeature": "حل مسئله با نسخهٔ هفت‌میلیاردی تقطیر R1",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3389,9 +3165,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "حل مسئله با نسخهٔ هفت‌میلیاردی تقطیر R1",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6094f3fa17206810f9"
@@ -3405,9 +3179,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "حل مسئله با نسخهٔ هفت‌میلیاردی تقطیر R1",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6094f3fa17206810f9"
@@ -3421,9 +3193,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "این مدل از Qwen2.5-Math-7B به‌عنوان پایه استفاده می‌کند؛ با تقطیر جدیدتر R1-0528 روی Qwen3 یکی نیست.",
   "distinguishingFeature": "حل مسئله با نسخهٔ هفت‌میلیاردی تقطیر R1",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6094f3fa17206810f9"
@@ -3438,7 +3208,6 @@ modelUseGuidance.push({
   "description": "DeepSeek-V3.2 توجه تنک DSA و پس‌آموزش عامل‌محور را ترکیب می‌کند؛ قالب چت آن نسبت به نسخه‌های پیشین تغییر کرده است.",
   "distinguishingFeature": "پیوند استدلال و ابزار در گردش‌کار عامل",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3454,9 +3223,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "پیوند استدلال و ابزار در گردش‌کار عامل",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d2be656087cfb13604"
@@ -3470,9 +3237,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "پیوند استدلال و ابزار در گردش‌کار عامل",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d2be656087cfb13604"
@@ -3502,9 +3267,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "DeepSeek-V3.2 توجه تنک DSA و پس‌آموزش عامل‌محور را ترکیب می‌کند؛ قالب چت آن نسبت به نسخه‌های پیشین تغییر کرده است.",
   "distinguishingFeature": "پیوند استدلال و ابزار در گردش‌کار عامل",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d2be656087cfb13604"
@@ -3519,7 +3282,6 @@ modelUseGuidance.push({
   "description": "DeepSeek-V4.1-Flash متن و تصویر را در معماری CED پردازش می‌کند؛ شمار پارامتر فعال در prefill و decode متفاوت است.",
   "distinguishingFeature": "عامل چندوجهی برای ورودی‌های بسیار بلند",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3535,9 +3297,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل چندوجهی برای ورودی‌های بسیار بلند",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-96e933b164bfc6658d"
@@ -3551,9 +3311,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل چندوجهی برای ورودی‌های بسیار بلند",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-96e933b164bfc6658d"
@@ -3583,9 +3341,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "DeepSeek-V4.1-Flash متن و تصویر را در معماری CED پردازش می‌کند؛ شمار پارامتر فعال در prefill و decode متفاوت است.",
   "distinguishingFeature": "عامل چندوجهی برای ورودی‌های بسیار بلند",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-96e933b164bfc6658d"
@@ -3599,9 +3355,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Gemma 3 12B IT نسخهٔ دستورپذیر چندوجهی با زمینهٔ ۱۳۱٬۰۷۲ توکن است؛ ورودی تصویر را به پاسخ متنی پیوند می‌دهد.",
   "distinguishingFeature": "پرسش از تصویر و متن با Gemma 3 میانی",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a585b339d8df0103fa"
@@ -3615,9 +3369,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "پرسش از تصویر و متن با Gemma 3 میانی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a585b339d8df0103fa"
@@ -3631,9 +3383,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "پرسش از تصویر و متن با Gemma 3 میانی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a585b339d8df0103fa"
@@ -3647,9 +3397,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Gemma 3 12B IT نسخهٔ دستورپذیر چندوجهی با زمینهٔ ۱۳۱٬۰۷۲ توکن است؛ ورودی تصویر را به پاسخ متنی پیوند می‌دهد.",
   "distinguishingFeature": "پرسش از تصویر و متن با Gemma 3 میانی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a585b339d8df0103fa"
@@ -3663,9 +3411,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار متنی کوچک از خانوادهٔ Gemma 3",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1a289320089618d611"
@@ -3679,9 +3425,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار متنی کوچک از خانوادهٔ Gemma 3",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1a289320089618d611"
@@ -3695,9 +3439,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Gemma 3 1B IT برخلاف نسخه‌های بزرگ‌تر این نسل فقط متن می‌گیرد و زمینهٔ ۳۲٬۷۶۸ توکن دارد.",
   "distinguishingFeature": "دستیار متنی کوچک از خانوادهٔ Gemma 3",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-1a289320089618d611"
@@ -3711,9 +3453,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Gemma 3 27B IT نسخهٔ متراکم بزرگ این نسل با ورودی بصری و پوشش چندزبانه است.",
   "distinguishingFeature": "درک متن و تصویر با بزرگ‌ترین Gemma 3 فهرست",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-967dd5737b7fe6620a"
@@ -3727,9 +3467,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "درک متن و تصویر با بزرگ‌ترین Gemma 3 فهرست",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-967dd5737b7fe6620a"
@@ -3743,9 +3481,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "درک متن و تصویر با بزرگ‌ترین Gemma 3 فهرست",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-967dd5737b7fe6620a"
@@ -3759,9 +3495,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Gemma 3 27B IT نسخهٔ متراکم بزرگ این نسل با ورودی بصری و پوشش چندزبانه است.",
   "distinguishingFeature": "درک متن و تصویر با بزرگ‌ترین Gemma 3 فهرست",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-967dd5737b7fe6620a"
@@ -3775,9 +3509,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Gemma 3 4B IT کوچک‌ترین مدل چندوجهی این نسل در فهرست است؛ برخلاف 1B می‌تواند تصویر را همراه متن بخواند.",
   "distinguishingFeature": "ورود به پردازش تصویر در خانوادهٔ Gemma 3",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-4fef75ec5619801c0c"
@@ -3791,9 +3523,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "ورود به پردازش تصویر در خانوادهٔ Gemma 3",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-4fef75ec5619801c0c"
@@ -3807,9 +3537,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "ورود به پردازش تصویر در خانوادهٔ Gemma 3",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-4fef75ec5619801c0c"
@@ -3823,9 +3551,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Gemma 3 4B IT کوچک‌ترین مدل چندوجهی این نسل در فهرست است؛ برخلاف 1B می‌تواند تصویر را همراه متن بخواند.",
   "distinguishingFeature": "ورود به پردازش تصویر در خانوادهٔ Gemma 3",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-4fef75ec5619801c0c"
@@ -3840,7 +3566,6 @@ modelUseGuidance.push({
   "description": "Gemma 4 26B-A4B مدل خبرگانی با کنترل thinking و زمینهٔ ۲۶۲٬۱۴۴ توکن است؛ با نسخهٔ کوچک E2B معماری یکسانی ندارد.",
   "distinguishingFeature": "استدلال چندوجهی با Gemma 4 از نوع MoE",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3856,9 +3581,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "استدلال چندوجهی با Gemma 4 از نوع MoE",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8c073f7e3729dadf20"
@@ -3872,9 +3595,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "استدلال چندوجهی با Gemma 4 از نوع MoE",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8c073f7e3729dadf20"
@@ -3888,9 +3609,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Gemma 4 26B-A4B مدل خبرگانی با کنترل thinking و زمینهٔ ۲۶۲٬۱۴۴ توکن است؛ با نسخهٔ کوچک E2B معماری یکسانی ندارد.",
   "distinguishingFeature": "استدلال چندوجهی با Gemma 4 از نوع MoE",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8c073f7e3729dadf20"
@@ -3904,9 +3623,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Gemma 4 26B-A4B مدل خبرگانی با کنترل thinking و زمینهٔ ۲۶۲٬۱۴۴ توکن است؛ با نسخهٔ کوچک E2B معماری یکسانی ندارد.",
   "distinguishingFeature": "استدلال چندوجهی با Gemma 4 از نوع MoE",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8c073f7e3729dadf20"
@@ -3921,7 +3638,6 @@ modelUseGuidance.push({
   "description": "Gemma 4 E2B برای اجرای روی دستگاه معرفی شده و ورودی صوت را نیز پشتیبانی می‌کند؛ E2B شمار مؤثر است، نه کل وزن‌ها.",
   "distinguishingFeature": "پردازش محلی متن، تصویر و صوت با Gemma 4 کوچک",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -3937,9 +3653,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "پردازش محلی متن، تصویر و صوت با Gemma 4 کوچک",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a557e664812e64393e"
@@ -3953,9 +3667,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "پردازش محلی متن، تصویر و صوت با Gemma 4 کوچک",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a557e664812e64393e"
@@ -3985,9 +3697,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Gemma 4 E2B برای اجرای روی دستگاه معرفی شده و ورودی صوت را نیز پشتیبانی می‌کند؛ E2B شمار مؤثر است، نه کل وزن‌ها.",
   "distinguishingFeature": "پردازش محلی متن، تصویر و صوت با Gemma 4 کوچک",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a557e664812e64393e"
@@ -4001,9 +3711,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Gemma 4 E2B برای اجرای روی دستگاه معرفی شده و ورودی صوت را نیز پشتیبانی می‌کند؛ E2B شمار مؤثر است، نه کل وزن‌ها.",
   "distinguishingFeature": "پردازش محلی متن، تصویر و صوت با Gemma 4 کوچک",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-a557e664812e64393e"
@@ -4017,9 +3725,7 @@ modelUseGuidance.push({
   "summary": "چت و بازنویسی کوتاه",
   "description": "Granite 3.3 2B Instruct مدل کوچک کسب‌وکارمحور با RAG، خلاصه‌سازی، استخراج متن و حالت تفکر است.",
   "distinguishingFeature": "تولید پاسخ از اسناد بازیابی‌شده",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-0734c7ad0dd63a75da"
@@ -4033,9 +3739,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Granite 3.3 2B Instruct مدل کوچک کسب‌وکارمحور با RAG، خلاصه‌سازی، استخراج متن و حالت تفکر است.",
   "distinguishingFeature": "تولید پاسخ از اسناد بازیابی‌شده",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-0734c7ad0dd63a75da"
@@ -4049,9 +3753,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Granite 3.3 2B Instruct مدل کوچک کسب‌وکارمحور با RAG، خلاصه‌سازی، استخراج متن و حالت تفکر است.",
   "distinguishingFeature": "تولید پاسخ از اسناد بازیابی‌شده",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-0734c7ad0dd63a75da"
@@ -4065,9 +3767,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار عمومی با Llama 3.1 بزرگ",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-026934816cbcae04b5"
@@ -4081,9 +3781,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار عمومی با Llama 3.1 بزرگ",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-026934816cbcae04b5"
@@ -4097,9 +3795,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Llama 3.1 70B Instruct برای گفت‌وگوی چندزبانه و کار با متن با زمینهٔ ۱۳۱٬۰۷۲ توکن عرضه شده است.",
   "distinguishingFeature": "دستیار عمومی با Llama 3.1 بزرگ",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-026934816cbcae04b5"
@@ -4113,9 +3809,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Llama 3.1 70B Instruct برای گفت‌وگوی چندزبانه و کار با متن با زمینهٔ ۱۳۱٬۰۷۲ توکن عرضه شده است.",
   "distinguishingFeature": "دستیار عمومی با Llama 3.1 بزرگ",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-026934816cbcae04b5"
@@ -4129,9 +3823,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با Llama 3.1 هشت‌میلیاردی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5a3e61cbfee9a9dd77"
@@ -4145,9 +3837,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با Llama 3.1 هشت‌میلیاردی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5a3e61cbfee9a9dd77"
@@ -4161,9 +3851,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "نسخهٔ 8B از Llama 3.1 برای دستیار عمومی و پیروی از دستور تنظیم شده و با مدل پایهٔ همان اندازه فرق دارد.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با Llama 3.1 هشت‌میلیاردی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5a3e61cbfee9a9dd77"
@@ -4177,9 +3865,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "نسخهٔ 8B از Llama 3.1 برای دستیار عمومی و پیروی از دستور تنظیم شده و با مدل پایهٔ همان اندازه فرق دارد.",
   "distinguishingFeature": "گفت‌وگو و کار با متن با Llama 3.1 هشت‌میلیاردی",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-5a3e61cbfee9a9dd77"
@@ -4193,9 +3879,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "بازنویسی و خلاصه‌سازی محلی با Llama کوچک",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-04665e2c2232e334fc"
@@ -4209,9 +3893,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "بازنویسی و خلاصه‌سازی محلی با Llama کوچک",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-04665e2c2232e334fc"
@@ -4225,9 +3907,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Llama 3.2 1B Instruct مدل متنی کوچک این نسل است؛ برای کارهای محدود روی متن در دستگاه‌های محلی معرفی شده است.",
   "distinguishingFeature": "بازنویسی و خلاصه‌سازی محلی با Llama کوچک",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-04665e2c2232e334fc"
@@ -4241,9 +3921,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Llama 3.2 1B Instruct مدل متنی کوچک این نسل است؛ برای کارهای محدود روی متن در دستگاه‌های محلی معرفی شده است.",
   "distinguishingFeature": "بازنویسی و خلاصه‌سازی محلی با Llama کوچک",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-04665e2c2232e334fc"
@@ -4257,9 +3935,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار متنی روی دستگاه با Llama سه‌میلیاردی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-40a0310c45dda9cde0"
@@ -4273,9 +3949,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار متنی روی دستگاه با Llama سه‌میلیاردی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-40a0310c45dda9cde0"
@@ -4289,9 +3963,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Llama 3.2 3B Instruct برای گفت‌وگو، بازنویسی و خلاصه‌سازی تنظیم شده و از نسخهٔ 1B ظرفیت پارامتری بیشتری دارد.",
   "distinguishingFeature": "دستیار متنی روی دستگاه با Llama سه‌میلیاردی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-40a0310c45dda9cde0"
@@ -4305,9 +3977,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Llama 3.2 3B Instruct برای گفت‌وگو، بازنویسی و خلاصه‌سازی تنظیم شده و از نسخهٔ 1B ظرفیت پارامتری بیشتری دارد.",
   "distinguishingFeature": "دستیار متنی روی دستگاه با Llama سه‌میلیاردی",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-40a0310c45dda9cde0"
@@ -4321,9 +3991,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Phi-4-mini-instruct با تمرکز بر داده‌های استدلالی و پیروی از دستور ساخته شده و زمینهٔ ۱۳۱٬۰۷۲ توکن دارد.",
   "distinguishingFeature": "تحلیل و منطق در محیط محدودتر",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-ba9cd843c0a35040af"
@@ -4337,9 +4005,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "تحلیل و منطق در محیط محدودتر",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-ba9cd843c0a35040af"
@@ -4353,9 +4019,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "تحلیل و منطق در محیط محدودتر",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-ba9cd843c0a35040af"
@@ -4369,9 +4033,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "Phi-4-mini-instruct با تمرکز بر داده‌های استدلالی و پیروی از دستور ساخته شده و زمینهٔ ۱۳۱٬۰۷۲ توکن دارد.",
   "distinguishingFeature": "تحلیل و منطق در محیط محدودتر",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-ba9cd843c0a35040af"
@@ -4385,9 +4047,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Phi-4-mini-instruct با تمرکز بر داده‌های استدلالی و پیروی از دستور ساخته شده و زمینهٔ ۱۳۱٬۰۷۲ توکن دارد.",
   "distinguishingFeature": "تحلیل و منطق در محیط محدودتر",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-ba9cd843c0a35040af"
@@ -4401,9 +4061,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Devstral Small 2 برای مهندسی نرم‌افزار و استفاده از ابزار برای بررسی و اصلاح کد ساخته شده؛ این نسل ورودی تصویر نیز دارد.",
   "distinguishingFeature": "عامل ویرایش چندفایلی و جست‌وجوی مخزن",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-143cf593115d83d150"
@@ -4417,9 +4075,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل ویرایش چندفایلی و جست‌وجوی مخزن",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-143cf593115d83d150"
@@ -4433,9 +4089,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل ویرایش چندفایلی و جست‌وجوی مخزن",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-143cf593115d83d150"
@@ -4465,9 +4119,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Ministral 3 3B Instruct مدل کوچک متن–تصویر این خانواده است؛ بخش زبان ۳٫۴ و رمزگذار تصویر ۰٫۴میلیارد پارامتر دارند.",
   "distinguishingFeature": "دستیار چندوجهی برای استقرار لبه",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-422e53fb9ef68804c9"
@@ -4481,9 +4133,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار چندوجهی برای استقرار لبه",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-422e53fb9ef68804c9"
@@ -4497,9 +4147,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار چندوجهی برای استقرار لبه",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-422e53fb9ef68804c9"
@@ -4513,9 +4161,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Ministral 3 3B Instruct مدل کوچک متن–تصویر این خانواده است؛ بخش زبان ۳٫۴ و رمزگذار تصویر ۰٫۴میلیارد پارامتر دارند.",
   "distinguishingFeature": "دستیار چندوجهی برای استقرار لبه",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-422e53fb9ef68804c9"
@@ -4529,9 +4175,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Ministral 3 3B Instruct مدل کوچک متن–تصویر این خانواده است؛ بخش زبان ۳٫۴ و رمزگذار تصویر ۰٫۴میلیارد پارامتر دارند.",
   "distinguishingFeature": "دستیار چندوجهی برای استقرار لبه",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-422e53fb9ef68804c9"
@@ -4545,9 +4189,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Mistral 7B Instruct v0.3 tokenizer نسخهٔ سوم و قابلیت فراخوانی تابع را به این مدل متنی اضافه کرده است.",
   "distinguishingFeature": "دستیار متنی با قالب فراخوانی تابع Mistral",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d38ebbe65582b41c27"
@@ -4561,9 +4203,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار متنی با قالب فراخوانی تابع Mistral",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d38ebbe65582b41c27"
@@ -4577,9 +4217,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار متنی با قالب فراخوانی تابع Mistral",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-d38ebbe65582b41c27"
@@ -4593,9 +4231,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "Mistral Small 3.1 24B Instruct پردازش تصویر و زمینهٔ بلند را به نسل Small افزوده؛ فارسی در فهرست زبان‌های ناشر آمده است.",
   "distinguishingFeature": "دستیار چندزبانهٔ متن و تصویر",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-87c60f49d69f5b94bc"
@@ -4609,9 +4245,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار چندزبانهٔ متن و تصویر",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-87c60f49d69f5b94bc"
@@ -4625,9 +4259,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Mistral Small 3.1 24B Instruct پردازش تصویر و زمینهٔ بلند را به نسل Small افزوده؛ فارسی در فهرست زبان‌های ناشر آمده است.",
   "distinguishingFeature": "دستیار چندزبانهٔ متن و تصویر",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-87c60f49d69f5b94bc"
@@ -4641,9 +4273,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Mistral Small 3.1 24B Instruct پردازش تصویر و زمینهٔ بلند را به نسل Small افزوده؛ فارسی در فهرست زبان‌های ناشر آمده است.",
   "distinguishingFeature": "دستیار چندزبانهٔ متن و تصویر",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-87c60f49d69f5b94bc"
@@ -4658,7 +4288,6 @@ modelUseGuidance.push({
   "description": "Nemotron Nano 9B v2 ترکیبی از Mamba-2 و attention است؛ حالت reasoning و بودجهٔ فکرکردن را می‌توان کنترل کرد.",
   "distinguishingFeature": "پاسخ از سند با کنترل بودجهٔ استدلال",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -4674,9 +4303,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "پاسخ از سند با کنترل بودجهٔ استدلال",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-01e476ff57f8263d52"
@@ -4706,9 +4333,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "Nemotron Nano 9B v2 ترکیبی از Mamba-2 و attention است؛ حالت reasoning و بودجهٔ فکرکردن را می‌توان کنترل کرد.",
   "distinguishingFeature": "پاسخ از سند با کنترل بودجهٔ استدلال",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-01e476ff57f8263d52"
@@ -4722,9 +4347,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "Nemotron Nano 9B v2 ترکیبی از Mamba-2 و attention است؛ حالت reasoning و بودجهٔ فکرکردن را می‌توان کنترل کرد.",
   "distinguishingFeature": "پاسخ از سند با کنترل بودجهٔ استدلال",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-01e476ff57f8263d52"
@@ -4739,7 +4362,6 @@ modelUseGuidance.push({
   "description": "gpt-oss-120b مدل MoE با ۱۱۷میلیارد پارامتر کل و ۵٫۱میلیارد فعال است؛ وزن‌های خبرگان با MXFP4 عرضه شده‌اند.",
   "distinguishingFeature": "عامل با استدلال قابل تنظیم در نسخهٔ بزرگ gpt-oss",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -4755,9 +4377,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل با استدلال قابل تنظیم در نسخهٔ بزرگ gpt-oss",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-576214d889218d9022"
@@ -4771,9 +4391,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل با استدلال قابل تنظیم در نسخهٔ بزرگ gpt-oss",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-576214d889218d9022"
@@ -4804,7 +4422,6 @@ modelUseGuidance.push({
   "description": "gpt-oss-20b با ۲۱میلیارد پارامتر کل و ۳٫۶میلیارد فعال برای کاربرد محلی یا تخصصی معرفی شده؛ سه سطح reasoning دارد.",
   "distinguishingFeature": "استدلال محلی با نسخهٔ کوچک‌تر gpt-oss",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -4820,9 +4437,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "استدلال محلی با نسخهٔ کوچک‌تر gpt-oss",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-fd7d1b23f44c3bb39c"
@@ -4836,9 +4451,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "استدلال محلی با نسخهٔ کوچک‌تر gpt-oss",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-fd7d1b23f44c3bb39c"
@@ -4852,9 +4465,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "gpt-oss-20b با ۲۱میلیارد پارامتر کل و ۳٫۶میلیارد فعال برای کاربرد محلی یا تخصصی معرفی شده؛ سه سطح reasoning دارد.",
   "distinguishingFeature": "استدلال محلی با نسخهٔ کوچک‌تر gpt-oss",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-fd7d1b23f44c3bb39c"
@@ -4869,7 +4480,6 @@ modelUseGuidance.push({
   "description": "GLM-4.7-Flash مدل MoE از ردهٔ 30B-A3B است؛ کارت مدل برای کارهای عامل چندمرحله‌ای به حفظ thinking بین نوبت‌ها اشاره می‌کند.",
   "distinguishingFeature": "عامل برنامه‌نویسی با استدلال حفظ‌شونده",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -4885,9 +4495,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل برنامه‌نویسی با استدلال حفظ‌شونده",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f871c97c4c5f3728"
@@ -4901,9 +4509,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل برنامه‌نویسی با استدلال حفظ‌شونده",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f871c97c4c5f3728"
@@ -4933,9 +4539,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "GLM-4.7-Flash مدل MoE از ردهٔ 30B-A3B است؛ کارت مدل برای کارهای عامل چندمرحله‌ای به حفظ thinking بین نوبت‌ها اشاره می‌کند.",
   "distinguishingFeature": "عامل برنامه‌نویسی با استدلال حفظ‌شونده",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-49f871c97c4c5f3728"
@@ -4949,9 +4553,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور.",
   "distinguishingFeature": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-640c88f0733f107c4f"
@@ -4965,9 +4567,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-640c88f0733f107c4f"
@@ -4981,9 +4581,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-640c88f0733f107c4f"
@@ -4997,9 +4595,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور.",
   "distinguishingFeature": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-640c88f0733f107c4f"
@@ -5013,9 +4609,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور.",
   "distinguishingFeature": "عامل متنی برای برنامه‌نویسی و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-640c88f0733f107c4f"
@@ -5030,7 +4624,6 @@ modelUseGuidance.push({
   "description": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل.",
   "distinguishingFeature": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5046,9 +4639,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e39860c72daa7bc47e"
@@ -5062,9 +4653,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e39860c72daa7bc47e"
@@ -5094,9 +4683,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل.",
   "distinguishingFeature": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e39860c72daa7bc47e"
@@ -5110,9 +4697,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل.",
   "distinguishingFeature": "عامل استدلالی برای زنجیره‌های طولانی ابزار و تحلیل",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e39860c72daa7bc47e"
@@ -5127,7 +4712,6 @@ modelUseGuidance.push({
   "description": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند.",
   "distinguishingFeature": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5143,9 +4727,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-c0e496ce377d981915"
@@ -5159,9 +4741,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-c0e496ce377d981915"
@@ -5191,9 +4771,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند.",
   "distinguishingFeature": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-c0e496ce377d981915"
@@ -5207,9 +4785,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند.",
   "distinguishingFeature": "عامل چندوجهی برای کدنویسی از طرح تصویری و تحلیل سند",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-c0e496ce377d981915"
@@ -5240,7 +4816,6 @@ modelUseGuidance.push({
   "description": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور.",
   "distinguishingFeature": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5256,9 +4831,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7640341105ebedc8e6"
@@ -5272,9 +4845,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7640341105ebedc8e6"
@@ -5304,9 +4875,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور.",
   "distinguishingFeature": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7640341105ebedc8e6"
@@ -5320,9 +4889,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور.",
   "distinguishingFeature": "دستیار توسعه نرم‌افزار و گردش‌کارهای ابزارمحور",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-7640341105ebedc8e6"
@@ -5337,7 +4904,6 @@ modelUseGuidance.push({
   "description": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای.",
   "distinguishingFeature": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5353,9 +4919,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3f3c5c51b03688076f"
@@ -5369,9 +4933,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3f3c5c51b03688076f"
@@ -5401,9 +4963,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای.",
   "distinguishingFeature": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3f3c5c51b03688076f"
@@ -5417,9 +4977,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای.",
   "distinguishingFeature": "مدل ابزارمحور برای کدنویسی و برنامه‌ریزی چندمرحله‌ای",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-3f3c5c51b03688076f"
@@ -5433,10 +4991,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند.",
   "distinguishingFeature": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
-    "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e72fa22f5d039b4315"
@@ -5450,9 +5005,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e72fa22f5d039b4315"
@@ -5466,9 +5019,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e72fa22f5d039b4315"
@@ -5483,7 +5034,7 @@ modelUseGuidance.push({
   "description": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند.",
   "distinguishingFeature": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند",
   "conditions": [
-    "توکن‌های تفکر در زمان پاسخ و زمینه حساب شوند."
+    "این checkpoint فقط پاسخ مستقیم تولید می‌کند؛ حالت thinking جداگانه ندارد."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -5498,9 +5049,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند.",
   "distinguishingFeature": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e72fa22f5d039b4315"
@@ -5514,9 +5063,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند.",
   "distinguishingFeature": "دستیار بزرگ با پاسخ مستقیم و زمینهٔ بلند",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-e72fa22f5d039b4315"
@@ -5530,10 +5077,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی.",
   "distinguishingFeature": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
-    "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f647db3a19c9a0deea"
@@ -5547,9 +5091,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f647db3a19c9a0deea"
@@ -5563,9 +5105,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f647db3a19c9a0deea"
@@ -5580,7 +5120,7 @@ modelUseGuidance.push({
   "description": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی.",
   "distinguishingFeature": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی",
   "conditions": [
-    "توکن‌های تفکر در زمان پاسخ و زمینه حساب شوند."
+    "این checkpoint فقط پاسخ مستقیم تولید می‌کند؛ حالت thinking جداگانه ندارد."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -5595,9 +5135,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی.",
   "distinguishingFeature": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f647db3a19c9a0deea"
@@ -5611,9 +5149,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی.",
   "distinguishingFeature": "عامل کدنویسی برای مخزنهای بزرگ و چندفایلی",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-f647db3a19c9a0deea"
@@ -5628,7 +5164,6 @@ modelUseGuidance.push({
   "description": "دستیار چندوجهی برای تحلیل، کد و سند.",
   "distinguishingFeature": "دستیار چندوجهی برای تحلیل، کد و سند",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5644,9 +5179,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار چندوجهی برای تحلیل، کد و سند",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-bd8ff876ae3abe060f"
@@ -5660,9 +5193,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار چندوجهی برای تحلیل، کد و سند",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-bd8ff876ae3abe060f"
@@ -5692,9 +5223,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "دستیار چندوجهی برای تحلیل، کد و سند.",
   "distinguishingFeature": "دستیار چندوجهی برای تحلیل، کد و سند",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-bd8ff876ae3abe060f"
@@ -5708,9 +5237,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "دستیار چندوجهی برای تحلیل، کد و سند.",
   "distinguishingFeature": "دستیار چندوجهی برای تحلیل، کد و سند",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-bd8ff876ae3abe060f"
@@ -5741,7 +5268,6 @@ modelUseGuidance.push({
   "description": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه.",
   "distinguishingFeature": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5757,9 +5283,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2f179b658d60e4483f"
@@ -5773,9 +5297,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2f179b658d60e4483f"
@@ -5805,9 +5327,7 @@ modelUseGuidance.push({
   "summary": "قطعه‌کد، توضیح و اصلاح محلی",
   "description": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه.",
   "distinguishingFeature": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2f179b658d60e4483f"
@@ -5821,9 +5341,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه.",
   "distinguishingFeature": "مدل کوچک برای نمونه‌سازی و تخصصی‌سازی وظیفه",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2f179b658d60e4483f"
@@ -5854,7 +5372,6 @@ modelUseGuidance.push({
   "description": "مدل چندوجهی MoE برای تحلیل و کار با ابزار.",
   "distinguishingFeature": "مدل چندوجهی MoE برای تحلیل و کار با ابزار",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5870,9 +5387,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "مدل چندوجهی MoE برای تحلیل و کار با ابزار",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-077b49671bb5ca41ae"
@@ -5886,9 +5401,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "مدل چندوجهی MoE برای تحلیل و کار با ابزار",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-077b49671bb5ca41ae"
@@ -5918,9 +5431,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "مدل چندوجهی MoE برای تحلیل و کار با ابزار.",
   "distinguishingFeature": "مدل چندوجهی MoE برای تحلیل و کار با ابزار",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-077b49671bb5ca41ae"
@@ -5934,9 +5445,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "مدل چندوجهی MoE برای تحلیل و کار با ابزار.",
   "distinguishingFeature": "مدل چندوجهی MoE برای تحلیل و کار با ابزار",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-077b49671bb5ca41ae"
@@ -5967,7 +5476,6 @@ modelUseGuidance.push({
   "description": "دستیار چندوجهی بزرگ برای مسائل پیچیده.",
   "distinguishingFeature": "دستیار چندوجهی بزرگ برای مسائل پیچیده",
   "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند.",
     "برای پاسخ ساده، حالت تفکر را در صورت پشتیبانی خاموش یا بودجهٔ خروجی را محدود کنید."
   ],
   "basis": "editorial-analysis",
@@ -5983,9 +5491,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار چندوجهی بزرگ برای مسائل پیچیده",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2ee03fb807e16d7989"
@@ -5999,9 +5505,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار چندوجهی بزرگ برای مسائل پیچیده",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2ee03fb807e16d7989"
@@ -6031,9 +5535,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "دستیار چندوجهی بزرگ برای مسائل پیچیده.",
   "distinguishingFeature": "دستیار چندوجهی بزرگ برای مسائل پیچیده",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2ee03fb807e16d7989"
@@ -6047,9 +5549,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "دستیار چندوجهی بزرگ برای مسائل پیچیده.",
   "distinguishingFeature": "دستیار چندوجهی بزرگ برای مسائل پیچیده",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-2ee03fb807e16d7989"
@@ -6079,9 +5579,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی.",
   "distinguishingFeature": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9b1a731a0f6782ae65"
@@ -6095,9 +5593,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9b1a731a0f6782ae65"
@@ -6111,9 +5607,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9b1a731a0f6782ae65"
@@ -6127,9 +5621,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی.",
   "distinguishingFeature": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9b1a731a0f6782ae65"
@@ -6143,9 +5635,7 @@ modelUseGuidance.push({
   "summary": "ابزارخوانی با parser سازگار",
   "description": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی.",
   "distinguishingFeature": "دستیار متنی چندزبانه برای پاسخ‌گویی و کار سازمانی",
-  "conditions": [
-    "قالب tool-call و parser باید با همین مدل هماهنگ باشند؛ مجری ابزار، مجوز و کنترل خطا در برنامهٔ میزبان پیاده می‌شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-9b1a731a0f6782ae65"
@@ -6159,9 +5649,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "مدل انگلیسی برای ریاضی، منطق و تولید متن.",
   "distinguishingFeature": "مدل انگلیسی برای ریاضی، منطق و تولید متن",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-606b11c691a36f7f48"
@@ -6175,9 +5663,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "مدل انگلیسی برای ریاضی، منطق و تولید متن",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-606b11c691a36f7f48"
@@ -6191,9 +5677,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "مدل انگلیسی برای ریاضی، منطق و تولید متن",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-606b11c691a36f7f48"
@@ -6207,9 +5691,7 @@ modelUseGuidance.push({
   "summary": "تولید و اصلاح کد با آزمون",
   "description": "مدل انگلیسی برای ریاضی، منطق و تولید متن.",
   "distinguishingFeature": "مدل انگلیسی برای ریاضی، منطق و تولید متن",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-606b11c691a36f7f48"
@@ -6223,9 +5705,7 @@ modelUseGuidance.push({
   "summary": "چت و بازنویسی کوتاه",
   "description": "مدل کوچک برای پرسش از تصویر و ویدئو.",
   "distinguishingFeature": "مدل کوچک برای پرسش از تصویر و ویدئو",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-80457b3bd01c20cffe"
@@ -6239,9 +5719,7 @@ modelUseGuidance.push({
   "summary": "پاسخ از چند قطعهٔ کوتاه سند",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "مدل کوچک برای پرسش از تصویر و ویدئو",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-80457b3bd01c20cffe"
@@ -6255,9 +5733,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلدهای ساده با قالب ثابت",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "مدل کوچک برای پرسش از تصویر و ویدئو",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-80457b3bd01c20cffe"
@@ -6287,9 +5763,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "دستیار کدنویسی کوچک برای توضیح و اصلاح کد.",
   "distinguishingFeature": "دستیار کدنویسی کوچک برای توضیح و اصلاح کد",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6cacb45b6a53ee5b07"
@@ -6303,9 +5777,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار کدنویسی کوچک برای توضیح و اصلاح کد",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6cacb45b6a53ee5b07"
@@ -6319,9 +5791,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار کدنویسی کوچک برای توضیح و اصلاح کد",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6cacb45b6a53ee5b07"
@@ -6335,9 +5805,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "دستیار کدنویسی کوچک برای توضیح و اصلاح کد.",
   "distinguishingFeature": "دستیار کدنویسی کوچک برای توضیح و اصلاح کد",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-6cacb45b6a53ee5b07"
@@ -6351,9 +5819,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "دستیار کدنویسی برای تولید، توضیح و رفع خطا.",
   "distinguishingFeature": "دستیار کدنویسی برای تولید، توضیح و رفع خطا",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-372fbdddb400aa9652"
@@ -6367,9 +5833,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار کدنویسی برای تولید، توضیح و رفع خطا",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-372fbdddb400aa9652"
@@ -6383,9 +5847,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار کدنویسی برای تولید، توضیح و رفع خطا",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-372fbdddb400aa9652"
@@ -6399,9 +5861,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "دستیار کدنویسی برای تولید، توضیح و رفع خطا.",
   "distinguishingFeature": "دستیار کدنویسی برای تولید، توضیح و رفع خطا",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-372fbdddb400aa9652"
@@ -6415,9 +5875,7 @@ modelUseGuidance.push({
   "summary": "چت، خلاصه‌سازی و بازنویسی",
   "description": "دستیار کدنویسی با ظرفیت بیشتر برای مسائل دشوار.",
   "distinguishingFeature": "دستیار کدنویسی با ظرفیت بیشتر برای مسائل دشوار",
-  "conditions": [
-    "تاریخچهٔ گفت‌وگو از بودجهٔ زمینه مصرف می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8dc6a67f1d3ac055f4"
@@ -6431,9 +5889,7 @@ modelUseGuidance.push({
   "summary": "تولید پاسخ مستند در RAG",
   "description": "این مدل نویسندهٔ پاسخ است؛ بازیابی و بازرتبه‌بندی را اجزای جدا انجام می‌دهند.",
   "distinguishingFeature": "دستیار کدنویسی با ظرفیت بیشتر برای مسائل دشوار",
-  "conditions": [
-    "متن مرتبط، پرسش، تاریخچه و پاسخ باید در بودجهٔ زمینه جا شوند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8dc6a67f1d3ac055f4"
@@ -6447,9 +5903,7 @@ modelUseGuidance.push({
   "summary": "استخراج فیلد و JSON با schema",
   "description": "استخراج فیلد از متن؛ تولید خروجی مقید به schema به پشتیبانی موتور وابسته است.",
   "distinguishingFeature": "دستیار کدنویسی با ظرفیت بیشتر برای مسائل دشوار",
-  "conditions": [
-    "موفقیت در تولید JSON با صحت اطلاعات یا SQL یکسان نیست."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8dc6a67f1d3ac055f4"
@@ -6463,9 +5917,7 @@ modelUseGuidance.push({
   "summary": "دستیار تخصصی کد و اصلاح پروژه",
   "description": "دستیار کدنویسی با ظرفیت بیشتر برای مسائل دشوار.",
   "distinguishingFeature": "دستیار کدنویسی با ظرفیت بیشتر برای مسائل دشوار",
-  "conditions": [
-    "دسترسی به مخزن و اجرای ابزار را برنامهٔ میزبان فراهم می‌کند."
-  ],
+  "conditions": [],
   "basis": "editorial-analysis",
   "evidenceIds": [
     "evidence:v03-8dc6a67f1d3ac055f4"
@@ -6645,5 +6097,130 @@ modelUseGuidance.push({
   "basis": "publisher-summary",
   "evidenceIds": [
     "evidence:v03-9f4a255f17cc556d99"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-qwen-qwen2-5-coder-1-5b",
+  "modelVersionId": "model:qwen-qwen2-5-coder-1-5b",
+  "applicationId": "coding-assistant",
+  "role": "code-completion",
+  "summary": "تکمیل کد و پرکردن جای خالی",
+  "description": "مدل پایهٔ کدنویسی با حدود ۱٫۵۴ میلیارد پارامتر؛ برای FIM و ادامهٔ کد، نه گفت‌وگوی دستورپذیر.",
+  "distinguishingFeature": "مدل پایهٔ کدنویسی با حدود ۱٫۵۴ میلیارد پارامتر؛ برای FIM و ادامهٔ کد، نه گفت‌وگوی دستورپذیر.",
+  "conditions": [
+    "از قالب تکمیل کد / FIM همین مدل استفاده کنید؛ chat template مدل دستورپذیر را جایگزین نکنید."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-bigcode-starcoder2-3b",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "applicationId": "coding-assistant",
+  "role": "code-completion",
+  "summary": "تکمیل کد با پنجرهٔ لغزان",
+  "description": "مدل پایهٔ کدنویسی؛ ورودی ۱۶٬۳۸۴ توکنی با پنجرهٔ توجه ۴٬۰۹۶ توکنی. برای تکمیل کد، نه دستیار گفت‌وگو.",
+  "distinguishingFeature": "مدل پایهٔ کدنویسی؛ ورودی ۱۶٬۳۸۴ توکنی با پنجرهٔ توجه ۴٬۰۹۶ توکنی. برای تکمیل کد، نه دستیار گفت‌وگو.",
+  "conditions": [
+    "از قالب تکمیل کد / FIM همین مدل استفاده کنید؛ chat template مدل دستورپذیر را جایگزین نکنید."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-bigcode-starcoder2-3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-qwen-qwen3-coder-next",
+  "modelVersionId": "model:qwen-qwen3-coder-next",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "عامل برنامه‌نویسی",
+  "description": "مدل MoE با ۸۰ میلیارد پارامتر و ۳ میلیارد پارامتر فعال، توجه ترکیبی و پاسخ مستقیم؛ حافظهٔ وزن از کل مدل می‌آید.",
+  "distinguishingFeature": "مدل MoE با ۸۰ میلیارد پارامتر و ۳ میلیارد پارامتر فعال، توجه ترکیبی و پاسخ مستقیم؛ حافظهٔ وزن از کل مدل می‌آید.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-coder-next"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-intfloat-multilingual-e5-large-instruct",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "summary": "بازیابی چندزبانه با دستور وظیفه",
+  "description": "بردارساز ۱۰۲۴بعدی؛ دستور یک‌جمله‌ای به پرسش اضافه می‌شود و سند بدون دستور وارد می‌شود.",
+  "distinguishingFeature": "بردارساز ۱۰۲۴بعدی؛ دستور یک‌جمله‌ای به پرسش اضافه می‌شود و سند بدون دستور وارد می‌شود.",
+  "conditions": [
+    "قالب پرسش Instruct: …\nQuery: …؛ سند بدون دستور. masked mean pooling و نرمال‌سازی L2؛ حداکثر ۵۱۲ توکن."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-qwen-qwen3-4b-instruct-2507",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "دستیار کوچک با پاسخ مستقیم",
+  "description": "نسخهٔ دستورپذیر چهارمیلیاردی با سقف متن ۲۶۲٬۱۴۴ توکن؛ این checkpoint حالت thinking ندارد.",
+  "distinguishingFeature": "نسخهٔ دستورپذیر چهارمیلیاردی با سقف متن ۲۶۲٬۱۴۴ توکن؛ این checkpoint حالت thinking ندارد.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-qwen-qwen3-4b-instruct-2507"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-partai-tooka-sbert-v2-small",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "summary": "بردارسازی متن فارسی",
+  "description": "نسخهٔ کوچک Tooka-SBERT-V2 با بردار ۷۶۸بعدی؛ نامزد بومی برای بازیابی و شباهت متن فارسی.",
+  "distinguishingFeature": "نسخهٔ کوچک Tooka-SBERT-V2 با بردار ۷۶۸بعدی؛ نامزد بومی برای بازیابی و شباهت متن فارسی.",
+  "conditions": [
+    "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-partai-tooka-sbert-v2-large",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "summary": "بردارسازی متن فارسی",
+  "description": "نسخهٔ بزرگ Tooka-SBERT-V2 با بردار ۱۰۲۴بعدی؛ نتیجهٔ PTEB با آزمون‌های دیگر قابل رتبه‌بندی مستقیم نیست.",
+  "distinguishingFeature": "نسخهٔ بزرگ Tooka-SBERT-V2 با بردار ۱۰۲۴بعدی؛ نتیجهٔ PTEB با آزمون‌های دیگر قابل رتبه‌بندی مستقیم نیست.",
+  "conditions": [
+    "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:audit-hooshvarelab-bert-base-parsbert-uncased",
+  "modelVersionId": "model:hooshvarelab-bert-base-parsbert-uncased",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "پایهٔ آموزش وظایف فارسی",
+  "description": "ParsBERT پایه برای درک متن فارسی؛ دسته‌بندی و تشخیص موجودیت به سر وظیفه و آموزش نیاز دارند. بردارساز آمادهٔ بازیابی نیست.",
+  "distinguishingFeature": "ParsBERT پایه برای درک متن فارسی؛ دسته‌بندی و تشخیص موجودیت به سر وظیفه و آموزش نیاز دارند. بردارساز آمادهٔ بازیابی نیست.",
+  "conditions": [
+    "وزن پایه به‌تنهایی دسته‌بند یا NER آماده نیست.",
+    "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
   ]
 });

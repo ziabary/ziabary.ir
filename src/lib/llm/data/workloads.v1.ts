@@ -668,3 +668,143 @@ workloads.push({
     "state": "not-applicable"
   }
 });
+workloads.push({
+  "id": "workload:audit-intfloat-multilingual-e5-large-instruct",
+  "name": "multilingual-e5-large-instruct · بازیابی متن",
+  "applicationId": "enterprise-rag",
+  "language": "fa",
+  "evidenceIds": [
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct",
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-config",
+    "evidence:audit-20260916-intfloat-multilingual-e5-large-instruct-files"
+  ],
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-measured"
+  },
+  "reasoningBudget": {
+    "state": "not-measured"
+  }
+});
+workloads.push({
+  "id": "workload:audit-partai-tooka-sbert-v2-small",
+  "name": "Tooka-SBERT-V2-Small · بازیابی متن",
+  "applicationId": "enterprise-rag",
+  "language": "fa",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-config",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-small-files"
+  ],
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-measured"
+  },
+  "reasoningBudget": {
+    "state": "not-measured"
+  }
+});
+workloads.push({
+  "id": "workload:audit-partai-tooka-sbert-v2-large",
+  "name": "Tooka-SBERT-V2-Large · بازیابی متن",
+  "applicationId": "enterprise-rag",
+  "language": "fa",
+  "evidenceIds": [
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-config",
+    "evidence:audit-20260916-partai-tooka-sbert-v2-large-files"
+  ],
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-measured"
+  },
+  "reasoningBudget": {
+    "state": "not-measured"
+  }
+});
+workloads.push({
+  "id": "workload:audit-hooshvarelab-bert-base-parsbert-uncased",
+  "name": "bert-base-parsbert-uncased · آموزش دسته‌بندی و تشخیص موجودیت",
+  "applicationId": "structured-extraction",
+  "language": "fa",
+  "evidenceIds": [
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased",
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-config",
+    "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files"
+  ],
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-measured"
+  },
+  "reasoningBudget": {
+    "state": "not-measured"
+  }
+});
