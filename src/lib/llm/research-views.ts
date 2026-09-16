@@ -135,7 +135,7 @@ export function memoryRows(repository: LlmGuideRepository, controls: ResearchCon
 function fitCell(required: number, capacity: number, devices: number, sources: string[]): LlmMatrixCell {
   const status = memoryStatus(required, capacity, devices);
   return { value: textValue(status.label, { badge: status.id === 'over-budget' ? `کمبود ${faNumber(required - capacity)} GiB` : `حاشیه ${faNumber(capacity - required)} GiB` }), sourceIds: sources,
-    details: [{ label: 'بودجهٔ این آرایش', value: number(required, 'GiB') }, { label: 'تفسیر', value: textValue(status.note) }, { label: 'تعداد دستگاه', value: number(devices, 'device', faNumber(devices, 0)) }] };
+    details: [{ label: 'حافظهٔ مورد نیاز', value: number(required, 'GiB') }, ...(status.note ? [{ label: 'نکتهٔ اجرایی', value: textValue(status.note) }] : []), { label: 'تعداد دستگاه', value: number(devices, 'device', faNumber(devices, 0)) }] };
 }
 
 export function compatibilityRows(repository: LlmGuideRepository, kernels = false): LlmViewRow[] {
@@ -207,11 +207,11 @@ export function researchView(repository: LlmGuideRepository, id: LlmViewId, cont
   let rows: LlmViewRow[] = [];
   if (id === 'hardware-feasibility') {
     rows = memoryRows(repository, controls);
-    config.description = controls.method === 'gpu' || controls.method === 'cpu' ? 'بودجهٔ حافظهٔ سناریوی انتخابی؛ برآورد از فایل وزن، KV و ذخیرهٔ اجرایی.' : 'گزارش حافظهٔ ناشر، با روش و مدل مشخص؛ مستقل از محاسبهٔ GGUF.';
-    config.defaultColumns = controls.method === 'gpu' || controls.method === 'cpu' ? [...cols(['model', 'مدل'], ['quant', 'نسخهٔ وزن']), numericCol('budget', controls.method === 'cpu' ? 'بودجهٔ RAM' : 'بودجه با یک GPU'), numericCol('weight', 'وزن'), numericCol('kv', 'KV')] : [...cols(['model', 'مدل'], ['method', 'روش'], ['hardware', 'سخت‌افزار گزارش']), numericCol('budget', 'حافظهٔ اعلامی'), ...cols(['condition', 'شرط مهم'], ['source', 'منبع'])];
+    config.description = controls.method === 'gpu' || controls.method === 'cpu' ? 'حافظهٔ لازم برای وزن‌ها، KV و اجرای مدل با تنظیمات انتخاب‌شده.' : 'گزارش حافظهٔ ناشر، با روش و مدل مشخص؛ مستقل از محاسبهٔ GGUF.';
+    config.defaultColumns = controls.method === 'gpu' || controls.method === 'cpu' ? [...cols(['model', 'مدل'], ['quant', 'نسخهٔ وزن']), numericCol('budget', controls.method === 'cpu' ? 'RAM مورد نیاز' : 'حافظهٔ لازم با یک GPU'), numericCol('weight', 'وزن'), numericCol('kv', 'KV')] : [...cols(['model', 'مدل'], ['method', 'روش'], ['hardware', 'سخت‌افزار گزارش']), numericCol('budget', 'حافظهٔ اعلامی'), ...cols(['condition', 'شرط مهم'], ['source', 'منبع'])];
     config.matrixColumns = controls.method === 'gpu' ? research.hardware.filter(item => controls.hardwareIds.includes(item.id)).map(item => ({ id: item.id, label: item.name })) : controls.method === 'cpu' ? controls.ram.map(ram => ({ id: `ram-${ram}`, label: `${faNumber(ram)} GiB RAM` })) : undefined;
-    config.filters = controls.method === 'gpu' || controls.method === 'cpu' ? [selectFilter('quant', 'نسخهٔ وزن', [['Q4_K_M', 'Q4_K_M'], ['Q8_0', 'Q8_0'], ...(controls.method === 'cpu' ? [['FP32', 'FP32 · Transformers'] as [string, string]] : [])]), { id: 'budget', label: 'بودجهٔ حافظه', canonicalUnit: 'GiB', control: 'number-range', level: 'advanced' }] : [];
-    config.detailColumns = cols(['method', 'روش'], ['scope', 'دامنهٔ محاسبه / گزارش'], ['workload', 'بار کاری'], ['reserve', 'ذخیرهٔ اجرایی'], ['limit', 'حد زمینهٔ همین فایل'], ['architecture', 'ورودی‌های معماری در محاسبه'], ['architecture-basis', 'مبنای مشخصات معماری'], ['authority', 'ناشر فایل'], ['files', 'فایل‌های وزن'], ['revision', 'نسخهٔ مخزن فایل'], ['formula', 'فرمول KV'], ['dependencies', 'وابستگی‌ها'], ['reported-on', 'زمان گزارش؛ دقت ماه']);
+    config.filters = controls.method === 'gpu' || controls.method === 'cpu' ? [selectFilter('quant', 'نسخهٔ وزن', [['Q4_K_M', 'Q4_K_M'], ['Q8_0', 'Q8_0'], ...(controls.method === 'cpu' ? [['FP32', 'FP32 · Transformers'] as [string, string]] : [])]), { id: 'budget', label: 'حافظهٔ مورد نیاز', canonicalUnit: 'GiB', control: 'number-range', level: 'advanced' }] : [];
+    config.detailColumns = cols(['method', 'روش'], ['scope', 'روش برآورد'], ['workload', 'بار کاری'], ['reserve', 'ذخیرهٔ اجرایی'], ['limit', 'حداکثر طول متن فایل'], ['architecture', 'ورودی‌های معماری در محاسبه'], ['architecture-basis', 'مبنای مشخصات معماری'], ['authority', 'ناشر فایل'], ['files', 'فایل‌های وزن'], ['revision', 'نسخهٔ مخزن فایل'], ['formula', 'فرمول KV'], ['dependencies', 'وابستگی‌ها'], ['reported-on', 'ماه انتشار گزارش']);
     if (controls.method === 'weights') {
       config.title = 'اندازهٔ فایل وزن و ظرفیت کارت‌ها';
       config.description = 'حجم فایل نسخهٔ اصلی و کوانت‌های منتخب؛ فضای باقی‌مانده پس از وزن، تأیید اجرای مدل نیست.';

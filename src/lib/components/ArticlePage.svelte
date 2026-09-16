@@ -3,7 +3,7 @@
   import { imageAttributes } from '$lib/images';
   import type { Component } from 'svelte';
   import type { ArticleMeta } from '$lib/content';
-  import ArticleActions from './ArticleActions.svelte';
+  import ReadingShare from './ReadingShare.svelte';
   import ArticleSeo from './ArticleSeo.svelte';
   import ArticleToc from './ArticleToc.svelte';
   import RelatedStream from './RelatedStream.svelte';
@@ -28,7 +28,7 @@
     <header class="article-header wrap">
       <a class="archive-back" href={`${base}/articles/`}>{locale === 'fa' ? 'همهٔ نوشته‌ها' : locale === 'en' ? 'All articles' : 'Todos los artículos'}</a>
       <div class="article-meta"><span>{article.category}</span><time datetime={article.date}>{displayedDate}</time>{#if article.updated}<time datetime={article.updated}>{locale === 'fa' ? 'بازبینی: ' : ''}{formatDate(article.updated, locale)}</time>{/if}<span>{article.readTime}</span></div>
-      <h1>{article.title}</h1><p>{article.excerpt}</p><ArticleActions title={article.title} {locale} href={`${base}/articles/${article.slug}/`} />
+      <h1>{article.title}</h1><p>{article.excerpt}</p>
     </header>
     {#if article.cover}<figure class="article-cover has-image"><img {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={article.title} fetchpriority="high" />{#if article.coverCredit}<figcaption>{article.coverCredit}</figcaption>{/if}</figure>{/if}
     <div class="article-reading-layout" class:with-toc={hasToc} use:readingPosition={{ ids: headingIds, onChange: followHeading }}>
@@ -36,7 +36,7 @@
       <div class="prose article-body">
         {#key article.slug}<Content />{/key}
         {#if article.external}<a class="original-link" href={article.external} target="_blank" rel="noreferrer">{locale === 'fa' ? 'مطالعه نسخه کامل در' : locale === 'en' ? 'Published at' : 'Publicado en'} {article.source ?? 'Source'} ↗</a>{/if}
-        <ArticleActions title={article.title} {locale} href={`${base}/articles/${article.slug}/`} />
+        <ReadingShare cover={article.cover} title={article.title} excerpt={article.excerpt} {locale} href={`${base}/articles/${article.slug}/`} />
       </div>
     </div>
   </article>

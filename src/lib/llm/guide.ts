@@ -1,32 +1,13 @@
 import { llmDataset, llmDatasetUpdatedOn } from './data/repository.v1';
-import type { GuideCollection } from '$lib/guides';
 import type {
   ApplicationTaxon,
   ExistingContentLink,
   LlmGuideRepository,
-  PlannedArticle,
   SoftwareRole
 } from './schema';
 
-export const llmGuideCollection: GuideCollection = {
-  slug: 'llm',
-  status: 'draft',
-  featured: true,
-  title: 'راهنمای انتخاب مدل زبانی',
-  subtitle: 'از کاربرد تا سخت‌افزار و کارایی؛ مقایسهٔ مدل‌ها و ابزارهای اجرا بر پایهٔ منابع منتشرشده.',
-  eyebrow: 'پیش‌نویس · مدل و استنتاج',
-  image: '/images/guides/llm.png',
-  imageAlt: 'مدل‌های زبانی در اندازه‌های مختلف، متصل به کاربردهای گفت‌وگو، کدنویسی و کار با اسناد',
-  intro: 'این راهنما از مستندات سازندگان، نتایج منتشرشده و جمع‌بندی فنی استفاده می‌کند؛ شرایط و منابع هر مورد در جزئیات آمده است.',
-  items: [
-    { id: 'model-catalog', title: 'شناسنامهٔ مدل‌ها', subtitle: '', kind: 'interactive', href: '#model-catalog' },
-    { id: 'model-suitability', title: 'تناسب مدل با کاربرد', subtitle: '', kind: 'interactive', href: '#model-suitability' },
-    { id: 'hardware-feasibility', title: 'امکان اجرا روی سخت‌افزار', subtitle: '', kind: 'interactive', href: '#hardware-feasibility' },
-    { id: 'serving-software', title: 'نرم‌افزارهای اجرا و سرویس‌دهی', subtitle: '', kind: 'interactive', href: '#serving-software' },
-    { id: 'benchmarks', title: 'بنچمارک و شواهد', subtitle: '', kind: 'interactive', href: '#benchmarks' },
-    { id: 'specialized-models', title: 'مدل‌های کوچک و تخصصی مکمل', subtitle: '', kind: 'interactive', href: '#specialized-models' }
-  ]
-};
+import { llmGuideCollection } from './collection';
+export { llmGuideCollection };
 
 export const applications: ApplicationTaxon[] = [
   {
@@ -323,102 +304,31 @@ export const viewRelatedContent: Record<string, Array<{ contentId: string; ancho
   'specialized-models': []
 };
 
-/** Planned articles link to their writing-plan entries, never to an unwritten article route. */
-export const viewPlannedArticles: Record<string, string[]> = {
-  'model-catalog': ['total-vs-active-model-parameters', 'right-model-size-for-the-task', 'open-weight-open-source-commercial-model-licenses'],
+/** Editorial reading paths use only completed, published articles. */
+export const viewReadingArticles: Record<string, string[]> = {
+  'model-catalog': ['right-model-size-for-the-task', 'four-bit-model-quantization'],
   'model-suitability': ['right-model-size-for-the-task', 'enterprise-rag-model-embedding-reranker', 'code-completion-assistant-and-agent', 'evaluating-language-models-for-persian'],
-  'hardware-feasibility': ['llms-on-rtx-4090-24gb-vs-48gb', 'which-deepseek-on-personal-gpu', 'airllm-layer-wise-inference'],
-  'software-products': ['ollama-vllm-sglang-or-llama-cpp', 'model-engine-api-and-chat-ui-roles', 'single-user-to-enterprise-llm-serving'],
+  'hardware-feasibility': ['llms-on-rtx-4090-24gb-vs-48gb', 'four-bit-model-quantization', 'airllm-layer-wise-inference'],
+  'software-products': ['ollama-vllm-sglang-or-llama-cpp', 'single-user-to-enterprise-llm-serving', 'true-llm-cost-buy-rent-or-api'],
   'deployment-compatibility': ['four-bit-model-quantization', 'airllm-layer-wise-inference', 'ollama-vllm-sglang-or-llama-cpp'],
-  benchmarks: ['single-user-to-enterprise-llm-serving', 'ollama-vllm-sglang-or-llama-cpp'],
+  benchmarks: ['evaluating-language-models-for-persian', 'single-user-to-enterprise-llm-serving', 'ollama-vllm-sglang-or-llama-cpp'],
   'specialized-models': ['enterprise-rag-model-embedding-reranker', 'right-model-size-for-the-task', 'evaluating-language-models-for-persian']
 };
 
-export const plannedArticles: PlannedArticle[] = [
-  {
-    id: 'planned-article:right-model-size', slug: 'right-model-size-for-the-task', order: 1, status: 'planned',
-    title: 'برای هر کاربرد واقعاً چه اندازه مدلی لازم داریم؟ از مدل تخصصی و SLM تا LLM',
-    relatedContentIds: []
-  },
-  {
-    id: 'planned-article:total-vs-active-parameters', slug: 'total-vs-active-model-parameters', order: 2, status: 'planned',
-    title: '۳۰ میلیارد پارامتر، سه میلیارد فعال؛ کدام عدد حافظهٔ لازم را تعیین می‌کند؟',
-    relatedContentIds: ['int8-or-fp8-real-gpu-support', 'gpu-inference-latency-throughput'],
-    conceptLinks: [
-      { contentId: 'int8-or-fp8-real-gpu-support', anchorId: 'حافظه-وزن-ها-تمام-حافظه-مورد-نیاز-نیست' },
-      { contentId: 'gpu-inference-latency-throughput', anchorId: 'حافظه-فقط-محل-جاگرفتن-مدل-نیست' }
-    ]
-  },
-  {
-    id: 'planned-article:rtx-4090-24-vs-48', slug: 'llms-on-rtx-4090-24gb-vs-48gb', order: 3, status: 'planned',
-    title: 'روی RTX 4090 چه مدل‌هایی اجرا می‌شوند؟ تفاوت ۲۴ و ۴۸ گیگابایت در عمل',
-    relatedContentIds: ['gpu-types-for-ai', 'choosing-gpu-for-ai', 'pcie-gpu-server-selection']
-  },
-  {
-    id: 'planned-article:four-bit-quantization', slug: 'four-bit-model-quantization', order: 4, status: 'planned',
-    title: 'چهاربیتی‌کردن مدل چه چیزی را ارزان می‌کند و چه چیزی را تغییر می‌دهد؟',
-    relatedContentIds: ['int8-or-fp8-real-gpu-support', 'gpu-inference-latency-throughput'],
-    conceptLinks: [{ contentId: 'int8-or-fp8-real-gpu-support', anchorId: 'تغییر-قالب-و-ارزیابی-کیفیت' }]
-  },
-  {
-    id: 'planned-article:airllm-layer-wise', slug: 'airllm-layer-wise-inference', order: 5, status: 'planned',
-    title: 'AirLLM و اجرای لایه‌به‌لایه؛ مدل بزرگ با حافظهٔ کم، با چه هزینه‌ای؟',
-    relatedContentIds: ['gpu-inference-latency-throughput', 'gpu-server-platform-components', 'int8-or-fp8-real-gpu-support'],
-    conceptLinks: [{ contentId: 'gpu-server-platform-components', anchorId: 'ذخیره-سازی' }]
-  },
-  {
-    id: 'planned-article:enterprise-rag-model-stack', slug: 'enterprise-rag-model-embedding-reranker', order: 6, status: 'planned',
-    title: 'برای دستیار اسناد سازمانی، مدل زبانی، embedding و reranker را چگونه انتخاب کنیم؟',
-    relatedContentIds: []
-  },
-  {
-    id: 'planned-article:coding-model-needs', slug: 'code-completion-assistant-and-agent', order: 7, status: 'planned',
-    title: 'تکمیل کد، دستیار کد و عامل برنامه‌نویسی؛ سه نیاز با سه معیار انتخاب',
-    relatedContentIds: []
-  },
-  {
-    id: 'planned-article:evaluating-persian-models', slug: 'evaluating-language-models-for-persian', order: 8, status: 'planned',
-    title: 'مدل خوب برای فارسی را چگونه بسنجیم؟',
-    relatedContentIds: []
-  },
-  {
-    id: 'planned-article:which-deepseek', slug: 'which-deepseek-on-personal-gpu', order: 9, status: 'planned',
-    title: 'دیپ‌سیک روی کارت شخصی؛ دقیقاً کدام دیپ‌سیک؟',
-    relatedContentIds: ['gpu-types-for-ai', 'int8-or-fp8-real-gpu-support', 'choosing-gpu-for-ai']
-  },
-  {
-    id: 'planned-article:single-user-to-service', slug: 'single-user-to-enterprise-llm-serving', order: 10, status: 'planned',
-    title: 'از یک کاربر تا سرویس سازمانی؛ چه زمانی مدل، تعداد نسخه‌ها یا GPU را تغییر دهیم؟',
-    relatedContentIds: ['gpu-inference-latency-throughput', 'pcie-vs-sxm-for-ai', 'dgx-and-standard-gpu-servers'],
-    conceptLinks: [{ contentId: 'gpu-inference-latency-throughput', anchorId: 'چه-ظرفیتی-واقعا-قابل-فروش-یا-استفاده-است' }]
-  },
-  {
-    id: 'planned-article:llm-cost-buy-rent-api', slug: 'true-llm-cost-buy-rent-or-api', order: 11, status: 'planned',
-    title: 'هزینهٔ واقعی اجرای مدل زبانی؛ خرید، اجاره یا API',
-    relatedContentIds: ['choosing-gpu-for-ai', 'gpu-server-platform-components', 'pcie-gpu-server-selection']
-  },
-  {
-    id: 'planned-article:model-licenses', slug: 'open-weight-open-source-commercial-model-licenses', order: 12, status: 'planned',
-    title: 'وزن‌باز، متن‌باز و قابل‌استفادهٔ تجاری؛ مجوز مدل چه اثری بر انتخاب دارد؟',
-    relatedContentIds: []
-  },
-  {
-    id: 'planned-article:serving-software-selection', slug: 'ollama-vllm-sglang-or-llama-cpp', order: 13, status: 'planned',
-    title: 'Ollama، vLLM، SGLang یا llama.cpp؛ برای اجرای مدل کدام را انتخاب کنیم؟',
-    relatedContentIds: ['gpu-inference-latency-throughput', 'gpu-server-platform-components'],
-    conceptLinks: [
-      { contentId: 'gpu-inference-latency-throughput', anchorId: 'چه-ظرفیتی-واقعا-قابل-فروش-یا-استفاده-است' },
-      { contentId: 'gpu-server-platform-components', anchorId: 'حافظه-سیستم' }
-    ]
-  },
-  {
-    id: 'planned-article:serving-stack-roles', slug: 'model-engine-api-and-chat-ui-roles', order: 14, status: 'planned',
-    title: 'مدل، موتور اجرا، API و رابط چت؛ هرکدام چه نقشی در سرویس هوش مصنوعی دارند؟',
-    relatedContentIds: []
-  }
+export const llmArticleSlugs = [
+  "right-model-size-for-the-task",
+  "llms-on-rtx-4090-24gb-vs-48gb",
+  "four-bit-model-quantization",
+  "airllm-layer-wise-inference",
+  "enterprise-rag-model-embedding-reranker",
+  "code-completion-assistant-and-agent",
+  "evaluating-language-models-for-persian",
+  "single-user-to-enterprise-llm-serving",
+  "ollama-vllm-sglang-or-llama-cpp",
+  "true-llm-cost-buy-rent-or-api"
 ];
 
-/** Research snapshot 0.3.0; draft-only catalog, without local deployment measurements. */
+/** Research snapshot 0.3.0; published catalog, without local deployment measurements. */
 export const llmRepository: LlmGuideRepository = llmDataset;
 
 export { llmDatasetUpdatedOn };

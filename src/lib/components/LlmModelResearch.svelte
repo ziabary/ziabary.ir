@@ -17,22 +17,22 @@
   const link = (view: string) => `/guides/llm/?show-drafts=true&view=${view}&research-model=${encodeURIComponent(modelId)}#${view === 'deployment-compatibility' ? 'serving-software' : view}`;
 </script>
 <section class="research-profile">
-  <h3>حافظه و اجرای همین مدل</h3>
+  <h3>حافظهٔ مورد نیاز</h3>
   {#if !artifacts.length && downloads.length}
     <p>برای اجرای مولد، حافظهٔ cache/state و runtime به وزن اضافه می‌شود؛ در مدل‌های تخصصی، طول ورودی و اندازهٔ batch بر حافظهٔ موقت اثر دارند.</p>
     <div class="artifact-budgets">{#each downloads.filter(item => item.format !== 'gguf' || ['Q4_K_M','Q8_0','MXFP4'].includes(item.variant.toUpperCase())).slice(0,6) as item}<article><header><bdi>{item.format.toUpperCase()} · {item.variant}</bdi><small>{item.publisher}</small></header><strong>{faNumber(item.totalBytes! / 2 ** 30)} GiB</strong><a href={item.filesUrl} target="_blank" rel="noopener noreferrer">فایل‌ها و نسخهٔ بسته ↗</a></article>{/each}</div>
   {/if}
   {#if artifacts.length}
     <div class="scenario"><label>طول کل متن<select bind:value={context}><option value={4096}>۴٬۰۹۶ توکن</option><option value={8192}>۸٬۱۹۲ توکن</option><option value={32768}>۳۲٬۷۶۸ توکن</option></select></label><label>درخواست فعال<input type="number" min="1" max="128" step="1" bind:value={active} /></label></div>
-    <p>بودجه با یک GPU، KV از نوع FP16 و دو GiB ذخیرهٔ اجرایی. این محاسبه به فایل کوانت‌شدهٔ مشخص مربوط است؛ امتیازهای کیفیت بخش دیگر به مدل گزارش‌شده مربوط‌اند.</p>
-    <div class="artifact-budgets">{#each artifacts as artifact}{@const plan = calculateMemory(artifact,context,active)}<article><header><bdi>{artifact.quantization}</bdi><small>{artifact.repository.split('/')[0]}</small></header>{#if plan}<strong>{faNumber(plan.budgetGiB)} GiB</strong><p>وزن: {faNumber(plan.weightGiB)} · KV: {faNumber(plan.kvGiB)} GiB</p>{:else}<p>این زمینه در دامنهٔ فایل منتخب نیست؛ حداکثر {faNumber(artifact.artifactContextLimitTokens,0)} توکن.</p>{/if}</article>{/each}</div>
+    <p>برآورد برای یک GPU، حافظهٔ KV با دقت FP16 و دو GiB حافظهٔ رزرو است.</p>
+    <div class="artifact-budgets">{#each artifacts as artifact}{@const plan = calculateMemory(artifact,context,active)}<article><header><bdi>{artifact.quantization}</bdi><small>{artifact.repository.split('/')[0]}</small></header>{#if plan}<strong>{faNumber(plan.budgetGiB)} GiB</strong><p>وزن: {faNumber(plan.weightGiB)} · KV: {faNumber(plan.kvGiB)} GiB</p>{:else}<p>طول متن از حد این فایل بیشتر است؛ حداکثر {faNumber(artifact.artifactContextLimitTokens,0)} توکن.</p>{/if}</article>{/each}</div>
   {/if}
   {#if claims.length || publisherMemory.length}
     {#each claims as item}<article class="route"><h4>AirLLM · بارگذاری لایه‌ای</h4><p>{faNumber(item.reportedVramGB)} GB حافظهٔ GPU، طبق گزارش ناشر برای {item.modelRepository}. {item.userSummaryFa}</p><p>وابستگی: <bdi>{item.dependenciesAsReported}</bdi></p><LlmEvidence ids={item.sourceIds.map(researchEvidenceId)} evidence={repository.evidence} /></article>{/each}
     {#each publisherMemory as item}<article class="route"><h4>حافظهٔ اعلامی ناشر</h4><p>{faNumber(item.reportedMemoryGB)} GB برای وزن بومی MXFP4 / مختلط. این عدد نتیجهٔ سناریوی GGUF نیست.</p><LlmEvidence ids={item.sourceIds.map(researchEvidenceId)} evidence={repository.evidence} /></article>{/each}
   {/if}
   {#if vector?.denseFloat32VectorGiBPerMillionDocuments !== undefined}<p>حافظهٔ یک میلیون بردار خام FP32 با ابعاد پیش‌فرض: <bdi>{faNumber(vector.denseFloat32VectorGiBPerMillionDocuments)} GiB</bdi>. ساختار جست‌وجو، فراداده و وزن مدل جدا هستند.</p>{/if}
-  {#if routes.length}<h4>مسیرهای مستند و گزارش‌شده</h4>{#each routes as route}<article class="route"><header>{#if llmBrand(route.engine)}<img src={llmBrand(route.engine)} alt="" width="28" height="28" />{/if}<bdi>{route.engine} {route.engineVersion ?? ''}</bdi><small>{route.status === 'published-run' ? 'اجرای گزارش‌شده' : 'مسیر مستند'}</small></header><p>{route.userSummaryFa}</p><LlmEvidence ids={route.sourceIds.map(researchEvidenceId)} evidence={repository.evidence} /></article>{/each}{/if}
+  {#if routes.length}<h4>روش‌های اجرا</h4>{#each routes as route}<article class="route"><header>{#if llmBrand(route.engine)}<img src={llmBrand(route.engine)} alt="" width="28" height="28" />{/if}<bdi>{route.engine} {route.engineVersion ?? ''}</bdi><small>{route.status === 'published-run' ? 'اجرای گزارش‌شده' : 'مسیر مستند'}</small></header><p>{route.userSummaryFa}</p><LlmEvidence ids={route.sourceIds.map(researchEvidenceId)} evidence={repository.evidence} /></article>{/each}{/if}
   {#if runs.length}<p>{faNumber(runs.length)} اجرای گزارش‌شده برای این مدل در جدول کارایی موجود است. گروه آزمون را انتخاب کنید؛ نرخ تجمیعی خروجی با سرعت هر کاربر تفاوت دارد.</p>{/if}
   {#if !routes.length && profile?.runGuides.length}<h4>مسیرهای راه‌اندازی همین نسخه</h4>{#each profile.runGuides as guide}<p><a href={guide.href} target="_blank" rel="noopener noreferrer">{guide.engine} ↗</a>{#if guide.instructions} · {guide.instructions}{/if}</p>{/each}{/if}
   <div class="links"><a href={link('hardware-feasibility')}>بررسی در جدول حافظه ←</a>{#if routes.length || profile?.runGuides.length}<a href={link('deployment-compatibility')}>جدول مسیرهای اجرا ←</a>{/if}{#if runs.length}<a href={link('benchmarks')}>آزمون‌های کارایی ←</a>{/if}</div>

@@ -1,0 +1,93 @@
+[
+  {
+    "url": "https://ziabary.ir/articles/seventy-million-words-a-day/",
+    "role": "نمونه لحن و ارقام مستقل تقاضا/ترجمه موفق در سال ۱۳۹۹",
+    "access": "متن مستقیم صفحه خوانده شد"
+  },
+  {
+    "url": "https://ziabary.ir/articles/google-used-targoman/",
+    "role": "نمونه لحن شخصی و پیوند سابقه ترگمان",
+    "access": "متن مستقیم صفحه در همین گفتگو خوانده شد"
+  },
+  {
+    "url": "https://ziabary.ir/articles/targoman-without-rent/",
+    "role": "نمونه لحن و پیوند سابقه ترگمان",
+    "access": "متن مستقیم صفحه در همین گفتگو خوانده شد"
+  },
+  {
+    "url": "https://cohere.com/blog/aya-expanse-connecting-our-world",
+    "role": "معرفی خانواده مدل پایه، نه تایید عملکرد مدل اختصاصی ترگمان"
+  },
+  {
+    "url": "https://huggingface.co/datasets/Targoman/TLPC",
+    "role": "معرفی و دسترسی رسمی به پیکره؛ استفاده در مدل ترگمان به گزارش نویسنده"
+  },
+  {
+    "url": "https://docs.nvidia.com/deeplearning/frameworks/vllm-release-notes/rel-25-11.html",
+    "role": "نسخه پایه NVIDIA vLLM 25.11 و vLLM 0.11.0؛ محتوا برای تایید جزئیات ایمیج اختصاصی کافی نیست"
+  },
+  {
+    "url": "https://github.com/vllm-project/vllm/blob/v0.11.0/vllm/engine/arg_utils.py",
+    "role": "بررسی داخلی مقدار پیش‌فرض max_num_seqs؛ متن raw از میزبان رسمی خوانده شد"
+  },
+  {
+    "url": "https://github.com/vllm-project/vllm/blob/v0.11.0/vllm/v1/core/sched/scheduler.py",
+    "role": "بررسی داخلی معنای Running و سقف زمان‌بند؛ متن raw خوانده شد"
+  },
+  {
+    "url": "https://github.com/vllm-project/vllm/blob/v0.11.0/vllm/v1/metrics/loggers.py",
+    "role": "تفکیک نرخ تجمیعی موتور از نرخ محاسبه‌شده برای درخواست"
+  },
+  {
+    "source": "گزارش مستقیم مهران ضیابری در همین گفتگو",
+    "role": "منبع تمام آمار عملیاتی، مدل اختصاصی، معماری استقرار، خط زمانی، لغو درخواست، گروه کاربران، بخش رهبر و نقش افرانت"
+  },
+  {
+    "source": "فایل پیوست کلان_پیکره زبان فارسی ترگمان (TLPC).html",
+    "role": "معرفی پیکره؛ آمار تعداد توکن وارد مقاله نشده چون شمارش منتشرشده مبتنی بر فاصله بوده است"
+  },
+  {
+    "url": "https://llm.targoman.ir/translate",
+    "role": "معرفی ترجمه و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/summarize",
+    "role": "معرفی خلاصه‌سازی و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/rag",
+    "role": "معرفی چت عمومی و اسناد و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/rahbari",
+    "role": "معرفی اندیشه رهبر شهید و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/shares",
+    "role": "معرفی فایل‌های کاربردی و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/devdocs",
+    "role": "معرفی راهنمای توسعه‌دهندگان و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/sklearn",
+    "role": "معرفی راهنمای scikit-learn و تصویر واقعی رابط؛ مشاهده مستقیم 2026-09-16"
+  },
+  {
+    "url": "https://llm.targoman.ir/img/logo-light.png",
+    "role": "مرجع رسمی هویت بصری برای بازطراحی کاور"
+  },
+  {
+    "url": "https://llm.targoman.ir/img/Fa-En-light.svg",
+    "role": "مرجع رسمی هویت بصری برای بازطراحی کاور"
+  },
+  {
+    "url": "https://llm.targoman.ir/img/summarization-light.svg",
+    "role": "مرجع رسمی هویت بصری برای بازطراحی کاور"
+  },
+  {
+    "url": "https://llm.targoman.ir/img/tip-bot-light.svg",
+    "role": "مرجع رسمی هویت بصری برای بازطراحی کاور"
+  }
+]

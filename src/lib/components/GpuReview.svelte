@@ -1,6 +1,6 @@
 <script lang="ts">
   import '$lib/math.css';
-  import ArticleActions from './ArticleActions.svelte';
+  import ReadingShare from './ReadingShare.svelte';
   import { imageAttributes } from '$lib/images';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import PageHero from '$lib/components/PageHero.svelte';
@@ -42,7 +42,7 @@
   <div class="wrap review-note">{#if collection.draft}<strong>{copy.preview}</strong>{/if}<a href={`/${locale}/guides/`}>{copy.back}</a></div>
   <PageHero eyebrow={collection.eyebrow} title={collection.title} lead={collection.subtitle} />
   <div class="collection-layout">
-    <nav class="collection-nav" aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>
+    <nav class="collection-nav" data-reading-navigation aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>
       <small>{copy.inCollection}</small>
       {#each navigationItems as item, index}
         <div class="collection-nav-item">
@@ -86,13 +86,11 @@
               {#if article.cover}<img class="article-image" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${article.title} — ${copy.cover}`} loading="lazy" />{/if}
               {#if imageNote && false}<aside class="image-note"><strong>{copy.imageNeeded}</strong> {imageNote?.note}</aside>{/if}
               <header><small>{article.category} · {article.readTime}</small><h2>{article.title}</h2><p>{article.excerpt}</p></header>
-              <ArticleActions title={article.title} {locale} href={`/${locale}/guides/${collection.slug}/#${item.id}`} />
-              <div class="prose review-prose"><Content headingPrefix={`${item.id}--`} /></div>
+              <div class="prose review-prose"><Content headingPrefix={`${item.id}--`} /><ReadingShare cover={article.cover} title={article.title} excerpt={article.excerpt} {locale} href={`/${locale}/guides/${collection.slug}/#${item.id}`} standaloneHref={`/${locale}/articles/${item.id}/`} /></div>
               <nav class="related" aria-label={copy.related}>
                 <strong>{copy.continue}</strong>
                 <ul>{#each article.related as slug}<li><a href={`/${locale}/articles/${slug}/`}>{getArticle(slug)?.title}</a></li>{/each}</ul>
               </nav>
-              <a class="standalone-link" href={`/${locale}/articles/${item.id}/`}>{article.draft ? copy.standalone : copy.article}</a>
             </article>
           {/if}
         {/if}
@@ -142,7 +140,6 @@
   .related { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 18px; font-size: 14px; }
   .related ul { padding-inline-start: 20px; }
   .related li { margin-block: 10px; }
-  .standalone-link { display: inline-block; margin-top: 20px; }
   .image-note { margin: 14px 0; border-inline-start: 3px solid var(--teal); background: var(--soft); padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.8; }
   a:focus-visible, summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
   @media(max-width: 1100px) { .collection-overview { grid-template-columns: minmax(0,1fr); } }

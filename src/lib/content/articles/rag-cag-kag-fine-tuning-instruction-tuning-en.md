@@ -21,7 +21,6 @@ tags:
   - Instruction tuning
 related:
   - mlops-foundation-of-zero-trust-ai-en
-  - gpu-inference-latency-throughput-en
 draft: false
 ---
 
@@ -50,6 +49,8 @@ Suppose we ask an entomologist to give a lecture on green-winged flies in Uganda
 This analogy captures the logic of retrieval-augmented generation, or RAG. In a typical implementation, documents are chunked and indexed; the user's question is sent to semantic, keyword or hybrid search; the best passages are retrieved, possibly reranked, and placed in the model's context; and the model produces an answer using the question and those passages. The [original RAG paper](https://arxiv.org/abs/2005.11401) framed the method as a combination of a model's parametric memory and external, non-parametric memory.
 
 RAG suits large document collections that change and need updating. Organizational policies, technical documentation, support knowledge bases, contracts and current news are examples where every small update should generally not require a change to model weights. Documents can be updated, answer sources can be shown, and user permissions can be enforced before retrieval. RAG does not, however, guarantee correctness: the right passage may not be retrieved, a passage may be selected without its context, or the model may misuse a document despite receiving it. Chunking, indexing, reranking, access control and answer evaluation are therefore integral parts of the system, rather than secondary details.
+
+We used this separation between training and fresh information in [Targoman’s news-aware assistant (report in Persian)](/articles/targoman-300-concurrent-requests-one-rtx-4090/#مدلی-که-از-خبرهای-روز-باخبر-بود). We had fine-tuned an eight-billion-parameter Aya Expanse model using the Persian TLPC corpus, while fresh news reached the answering process through hourly collection from domestic sources, retrieval and prompt design. We did not retrain the model for each news item: training prepared the model for the service, while retrieval supplied changing information.
 
 ## CAG: put the small library on the desk once
 

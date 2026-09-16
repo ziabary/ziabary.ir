@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import ts from 'typescript';
 import { loadLlmModules } from './helpers/llm-modules.mjs';
-import { hasDraftPreview, withDraftPreview } from '../src/lib/draft-preview.mjs';
+import { hasDraftPreview, withDraftPreview, hasLlmPreview } from '../src/lib/draft-preview.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
@@ -27,7 +27,7 @@ test('draft preview accepts only the exact true query value', () => {
   assert.equal(withDraftPreview('/guides/llm/#model-catalog'), '/guides/llm/?show-drafts=true#model-catalog');
 });
 
-test('the draft has six sections, seven data views, versioned research rows and the required taxonomies', () => {
+test('the published guide has six sections, seven data views, versioned research rows and the required taxonomies', () => {
   assert.equal(guide.llmGuideCollection.status, 'draft');
   assert.equal(views.llmGuideSections.length, 6);
   assert.equal(views.llmViewConfigs.length, 7);
@@ -66,22 +66,16 @@ test('all three general start presets begin without hidden exclusions', () => {
   }
 });
 
-test('writing plans retain fourteen entries and available manuscripts remain drafts', () => {
-  assert.equal(guide.plannedArticles.length, 14);
-  assert.deepEqual(guide.plannedArticles.map((article) => article.order), Array.from({ length: 14 }, (_, index) => index + 1));
-  assert.equal(new Set(guide.plannedArticles.map((article) => article.id)).size, 14);
-  assert.equal(new Set(guide.plannedArticles.map((article) => article.slug)).size, 14);
-  assert.match(guide.plannedArticles[12].title, /^Ollama، vLLM، SGLang یا llama\.cpp/);
-  assert.match(guide.plannedArticles[13].title, /^مدل، موتور اجرا، API و رابط چت/);
-  const existingIds = new Set(guide.existingContentLinks.map((item) => item.id));
-  for (const article of guide.plannedArticles) {
-    assert.equal(article.status, 'planned');
-    // A planned article may have no directly relevant published predecessor.
-    assert.ok(Array.isArray(article.relatedContentIds));
-    assert.ok(article.relatedContentIds.every((id) => existingIds.has(id)), article.id);
-    for (const forbidden of ['body', 'excerpt', 'date', 'readTime', 'href']) assert.equal(article[forbidden], undefined, `${article.id}.${forbidden}`);
-    const manuscript = `src/lib/content/articles/${article.slug}.md`;
-    if (existsSync(manuscript)) assert.match(readFileSync(manuscript, 'utf8'), /^draft:\s*true\s*$/m, article.slug);
+test('the completed reading collection contains ten published manuscripts and no placeholders', () => {
+  assert.equal(guide.llmArticleSlugs.length, 10);
+  assert.equal(new Set(guide.llmArticleSlugs).size, 10);
+  for (const slug of guide.llmArticleSlugs) {
+    const manuscript = `src/lib/content/articles/${slug}.md`;
+    assert.ok(existsSync(manuscript), slug);
+    assert.match(readFileSync(manuscript, 'utf8'), /^draft:\s*false\s*$/m, slug);
+  }
+  for (const slug of ['total-vs-active-model-parameters', 'which-deepseek-on-personal-gpu', 'open-weight-open-source-commercial-model-licenses', 'model-engine-api-and-chat-ui-roles']) {
+    assert.ok(!guide.llmArticleSlugs.includes(slug));
   }
 });
 
@@ -240,7 +234,7 @@ test('provenance validation catches artifact attribution and missing precise loc
   assert.match(unreviewedRow.details['all-capabilities'].display, /بررسی‌نشده/);
   const noApiRecord = softwareRows.find((item) => item.id === 'software-release:synthetic-gateway-v1').details['api-compatibility'];
   assert.equal(noApiRecord.state, 'unknown');
-  assert.match(filtering.missingLabel(noApiRecord), /رکورد بررسی ثبت نشده؛ نتیجهٔ مثبت یا منفی ندارد/);
+  assert.match(filtering.missingLabel(noApiRecord), /هنوز بررسی نشده است/);
 });
 
 test('the synthetic fixture is test-only and has no import path from production source', async () => {
@@ -248,20 +242,19 @@ test('the synthetic fixture is test-only and has no import path from production 
   for (const path of productionFiles) assert.doesNotMatch(await read(path), /llm-synthetic|Synthetic Test Lab|مدل مولد مصنوعی/);
 });
 
-test('prerendered public HTML contains only the noindex gate, never draft content', { skip: !existsSync('build/guides/llm/index.html') }, () => {
-  const guidesHtml = readFileSync('build/guides/index.html', 'utf8');
-  const llmHtml = readFileSync('build/guides/llm/index.html', 'utf8');
-  const sitemap = readFileSync('build/sitemap.xml', 'utf8');
-  const search = JSON.parse(readFileSync('build/search/fa.json', 'utf8'));
-  for (const text of [guide.llmGuideCollection.title, guide.plannedArticles[0].title, guide.plannedArticles[13].title]) {
-    assert.doesNotMatch(guidesHtml, new RegExp(text));
-    assert.doesNotMatch(llmHtml, new RegExp(text));
-  }
-  assert.match(llmHtml, /<meta name="robots" content="noindex,follow"/);
-  assert.match(llmHtml, /صفحه پیدا نشد/);
-  assert.doesNotMatch(sitemap, /\/guides\/llm\//);
-  assert.ok(!search.some((item) => item.href === '/guides/llm/'));
+test('LLM preview is absent from public HTML, search and sitemap', { skip: !existsSync('build/guides/llm/index.html') }, () => {
+  const html = readFileSync('build/guides/llm/index.html', 'utf8');
+  assert.match(html, /name="robots" content="noindex/);
+  assert.doesNotMatch(html, /class="llm-guide|class="llm-view/);
+  assert.ok(!readFileSync('build/guides/index.html','utf8').includes('/guides/llm/'));
+  assert.ok(!readFileSync('build/sitemap.xml','utf8').includes('/guides/llm/'));
+  assert.ok(!JSON.parse(readFileSync('build/search/fa.json','utf8')).some(item => item.href === '/guides/llm/'));
 });
+test('LLM preview accepts only show-drafts=true', () => {
+  for (const query of ['', 'show-drafts=true', 'show-drafts=false', 'show-drafts=1', 'show-drafts=TRUE']) assert.equal(hasLlmPreview(new URLSearchParams(query)), false);
+  assert.equal(hasLlmPreview(new URLSearchParams('show-drafts=true')), true);
+});
+
 
 
 test('dataset preserves numeric semantics, known notes, N/A and source provenance', () => {
@@ -319,18 +312,18 @@ test('documented applications survive an unknown outcome but never survive missi
   assert.equal(adapters.documentedAssessmentValue(assessment, repo).state, 'unknown');
 });
 
-test('table reading plans point to planned entries and do not invent published article routes', () => {
-  const slugs = new Set(guide.plannedArticles.map(article => article.slug));
+test('table reading paths use completed manuscripts', () => {
+  const slugs = new Set(guide.llmArticleSlugs);
   for (const view of views.llmViewConfigs) {
-    const links = guide.viewPlannedArticles[view.id];
+    const links = guide.viewReadingArticles[view.id];
     assert.ok(links?.length, view.id);
     assert.ok(links.every(slug => slugs.has(slug)), view.id);
     assert.equal(new Set(links).size, links.length);
   }
   assert.deepEqual(guide.viewRelatedContent['model-suitability'], [{ contentId: 'rag-cag-kag-fine-tuning-instruction-tuning' }]);
   assert.deepEqual(guide.viewRelatedContent['specialized-models'], []);
-  assert.ok(guide.viewPlannedArticles['specialized-models'].includes('enterprise-rag-model-embedding-reranker'));
-  assert.ok(guide.viewPlannedArticles['software-products'].includes('ollama-vllm-sglang-or-llama-cpp'));
+  assert.ok(guide.viewReadingArticles['specialized-models'].includes('enterprise-rag-model-embedding-reranker'));
+  assert.ok(guide.viewReadingArticles['software-products'].includes('ollama-vllm-sglang-or-llama-cpp'));
 });
 
 test('Persian parameter sizes retain numeric filtering values and unambiguous units', () => {

@@ -1,0 +1,114 @@
+{
+  "articles": [
+    {
+      "slug": "right-model-size-for-the-task",
+      "route": "/articles/right-model-size-for-the-task/",
+      "date": "2026-06-18",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%B3%D9%87-%D8%AE%D8%AF%D9%85%D8%AA-%DB%8C%DA%A9-%D9%85%D8%AF%D9%84-%D9%85%D8%B4%D8%AA%D8%B1%DA%A9",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+      "route": "/articles/llms-on-rtx-4090-24gb-vs-48gb/",
+      "date": "2026-07-02",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D8%A2%D9%86-%D9%81%D8%B4%D8%A7%D8%B1-%DA%86%D9%87-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%DB%8C%D9%85",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "enterprise-rag-model-embedding-reranker",
+      "route": "/articles/enterprise-rag-model-embedding-reranker/",
+      "date": "2026-08-12",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%B3%D9%87-%D8%AE%D8%AF%D9%85%D8%AA-%DB%8C%DA%A9-%D9%85%D8%AF%D9%84-%D9%85%D8%B4%D8%AA%D8%B1%DA%A9",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "single-user-to-enterprise-llm-serving",
+      "route": "/articles/single-user-to-enterprise-llm-serving/",
+      "date": "2026-09-08",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%B3%D9%87%D9%85-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%AF%D8%B1-%DA%A9%D9%86%D8%A7%D8%B1-%D8%B3%D9%87%D9%85-%D8%B3%D8%AE%D8%AA-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "ollama-vllm-sglang-or-llama-cpp",
+      "route": "/articles/ollama-vllm-sglang-or-llama-cpp/",
+      "date": "2026-09-15",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D8%A2%D9%86-%D9%81%D8%B4%D8%A7%D8%B1-%DA%86%D9%87-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%DB%8C%D9%85",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "true-llm-cost-buy-rent-or-api",
+      "route": "/articles/true-llm-cost-buy-rent-or-api/",
+      "date": "2026-09-16",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D9%85%D8%B1%D8%AF%D9%85-%D8%A8%D8%A7-%D8%AA%D8%B1%DA%AF%D9%85%D8%A7%D9%86-%DA%86%D9%87-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86%D8%AF",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "evaluating-language-models-for-persian",
+      "route": "/articles/evaluating-language-models-for-persian/",
+      "date": "2026-09-02",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D9%85%D8%AF%D9%84%DB%8C-%DA%A9%D9%87-%D8%A7%D8%B2-%D8%AE%D8%A8%D8%B1%D9%87%D8%A7%DB%8C-%D8%B1%D9%88%D8%B2-%D8%A8%D8%A7%D8%AE%D8%A8%D8%B1-%D8%A8%D9%88%D8%AF",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "gpu-inference-latency-throughput",
+      "route": "/articles/gpu-inference-latency-throughput/",
+      "date": "2026-09-12",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D8%A2%D9%86-%D9%81%D8%B4%D8%A7%D8%B1-%DA%86%D9%87-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%DB%8C%D9%85",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+      "route": "/articles/rag-cag-kag-fine-tuning-instruction-tuning/",
+      "date": "2026-06-15",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D9%85%D8%AF%D9%84%DB%8C-%DA%A9%D9%87-%D8%A7%D8%B2-%D8%AE%D8%A8%D8%B1%D9%87%D8%A7%DB%8C-%D8%B1%D9%88%D8%B2-%D8%A8%D8%A7%D8%AE%D8%A8%D8%B1-%D8%A8%D9%88%D8%AF",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "rag-cag-kag-fine-tuning-instruction-tuning-en",
+      "route": "/en/articles/rag-cag-kag-fine-tuning-instruction-tuning-en/",
+      "date": "2026-06-15",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D9%85%D8%AF%D9%84%DB%8C-%DA%A9%D9%87-%D8%A7%D8%B2-%D8%AE%D8%A8%D8%B1%D9%87%D8%A7%DB%8C-%D8%B1%D9%88%D8%B2-%D8%A8%D8%A7%D8%AE%D8%A8%D8%B1-%D8%A8%D9%88%D8%AF",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "rag-cag-kag-fine-tuning-instruction-tuning-es",
+      "route": "/es/articles/rag-cag-kag-fine-tuning-instruction-tuning-es/",
+      "date": "2026-06-15",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D9%85%D8%AF%D9%84%DB%8C-%DA%A9%D9%87-%D8%A7%D8%B2-%D8%AE%D8%A8%D8%B1%D9%87%D8%A7%DB%8C-%D8%B1%D9%88%D8%B2-%D8%A8%D8%A7%D8%AE%D8%A8%D8%B1-%D8%A8%D9%88%D8%AF",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "gpu-inference-latency-throughput-en",
+      "route": "/en/articles/gpu-inference-latency-throughput-en/",
+      "date": "2026-09-12",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D8%A2%D9%86-%D9%81%D8%B4%D8%A7%D8%B1-%DA%86%D9%87-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%DB%8C%D9%85",
+      "inline": true,
+      "targetExists": true
+    },
+    {
+      "slug": "gpu-inference-latency-throughput-es",
+      "route": "/es/articles/gpu-inference-latency-throughput-es/",
+      "date": "2026-09-12",
+      "href": "/articles/targoman-300-concurrent-requests-one-rtx-4090/#%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D8%A2%D9%86-%D9%81%D8%B4%D8%A7%D8%B1-%DA%86%D9%87-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%DB%8C%D9%85",
+      "inline": true,
+      "targetExists": true
+    }
+  ],
+  "mobileNoOverflow": true,
+  "clickedTarget": {
+    "id": "سه-خدمت-یک-مدل-مشترک",
+    "top": 112.671875
+  },
+  "embeddedGuide": true
+}

@@ -1,13 +1,10 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { call, pause, events, socket } from '../scripts/browser-session.mjs';
+import { llmArticleSeries as articles } from './helpers/llm-article-series.mjs';
 
 const origin = process.env.REVIEW_ORIGIN ?? 'http://127.0.0.1:4189';
-const output = 'docs/reviews/local-2026-09-15/llm-article-drafts';
-const drafts = [
-  { slug: 'llms-on-rtx-4090-24gb-vs-48gb', date: '2026-08-26', faDate: '۴ شهریور ۱۴۰۵', math: true },
-  { slug: 'right-model-size-for-the-task', date: '2026-08-31', faDate: '۹ شهریور ۱۴۰۵', math: false }
-];
+const output = process.env.REVIEW_OUTPUT ?? 'docs/reviews/local-2026-09-16/llm-publication';
 const report = { origin, checks: [], screenshots: [], articles: [], runtimeErrors: [] };
 await fs.mkdir(output, { recursive: true });
 const Q = JSON.stringify;
@@ -37,29 +34,30 @@ const viewport = width => call('Emulation.setDeviceMetricsOverride', { width, he
 
 try {
   await viewport(1440);
-  for (const [index, draft] of drafts.entries()) {
-    for (const query of ['', '?show-drafts=false', '?show-drafts=1']) {
-      await nav('/articles/'+draft.slug+'/'+query);
-      await wait("document.querySelector('.draft-gate')");
-      assert.equal(await E("document.querySelector('.article-body')===null"),true);
-      assert.match(await E("document.querySelector('meta[name=robots]').content"),/noindex/);
-    }
-    await nav('/articles/'+draft.slug+'/?show-drafts=true');
+  for (const [index, draft] of articles.entries()) {
+    await nav('/articles/'+draft.slug+'/');
     await wait("document.querySelector('.article-body')?.innerText.length>1000");
     await wait("document.querySelector('.article-cover img')?.complete && document.querySelector('.article-cover img').naturalWidth>0");
     assert.equal(await E("document.querySelectorAll('link[rel=canonical]').length"),1);
-    assert.equal(await E("document.querySelectorAll('meta[name=robots]').length"),1);
-    assert.match(await E("document.querySelector('meta[name=robots]').content"),/noindex/);
+    assert.ok(await E("!document.querySelector('meta[name=robots]')?.content.includes('noindex')"));
     assert.equal(await E("document.querySelector('.article-meta time').dateTime"),draft.date);
     assert.equal(await E("document.querySelector('.article-meta time').textContent"),draft.faDate);
     const tables = await E("document.querySelectorAll('.article-body .prose-table-scroll table').length");
-    assert.equal(tables, draft.math ? 3 : 2);
+    assert.equal(tables, draft.tables);
     assert.equal(await E("document.querySelectorAll('.katex-error').length"),0);
     if (draft.math) assert.ok(await E("document.querySelectorAll('.katex-display').length>0"));
     assert.ok(await E("Array.from(document.querySelectorAll('.article-body a[href]')).filter(a=>new URL(a.href).origin!==location.origin).every(a=>a.target==='_blank')"));
-    assert.ok(await E("Array.from(document.querySelectorAll('.article-body a[href*=\"/guides/llm/\"]')).every(a=>new URL(a.href).searchParams.get('show-drafts')==='true')"));
+    assert.ok(await E("Array.from(document.querySelectorAll('.article-body a[href*=\"/guides/llm/\"]')).every(a=>new URL(a.href).searchParams.get('show-drafts')===null)"));
+    const articleLinks = await E("Array.from(document.querySelectorAll('.article-body a[href], .related-stream a[href]')).map(a=>new URL(a.href)).filter(url=>url.origin===location.origin && /^\\/articles\\/[^/]+\\/$/.test(url.pathname)).map(url=>({slug:url.pathname.split('/')[2],preview:url.searchParams.get('show-drafts')}))");
+    for (const link of articleLinks) {
+      const target = articles.find(article => article.slug === link.slug);
+      if (target) {
+        assert.equal(link.preview, null);
+        assert.ok(target.date < draft.date, `${draft.slug} links forward to ${target.slug}`);
+      }
+    }
     assert.doesNotMatch(await E("document.querySelector('.article-body').innerText"),/[۰-۹]\s*[BK]\b/);
-    report.articles.push({ ...draft, tables, cover:await E("document.querySelector('.article-cover img').currentSrc") });
+    report.articles.push({ ...draft, tables, articleLinks, cover:await E("document.querySelector('.article-cover img').currentSrc") });
     await E("document.documentElement.dataset.theme='dark'; window.scrollTo(0,0)");
     await shot('desktop-'+(index+1)+'-cover');
     await frame('.article-body .prose-table-scroll'); await shot('desktop-'+(index+1)+'-table');
@@ -74,27 +72,25 @@ try {
     }
     await viewport(1440);
   }
-  await nav('/guides/llm/?show-drafts=true#planned-articles');
-  await wait("document.querySelector('#planned-articles')");
-  for (const draft of drafts) {
-    const selector='#planned-'+draft.slug+' a[href="/articles/'+draft.slug+'/?show-drafts=true"]';
-    assert.ok(await E('!!document.querySelector('+Q(selector)+')'));
-    assert.match(await E('document.querySelector('+Q('#planned-'+draft.slug)+').innerText'),/پیش‌نویس/);
+  await nav('/guides/llm/');
+  await wait("document.querySelector('#model-catalog')");
+  assert.ok(await E("!document.querySelector('#planned-articles')"));
+  assert.ok(await E("!document.querySelector('meta[name=robots]')?.content.includes('noindex')"));
+  for (const article of articles) {
+    assert.ok(await E('!!document.querySelector('+Q('.llm-chapter a[href="/articles/'+article.slug+'/"]')+')'), article.slug);
   }
-  await frame('#planned-articles'); await shot('guide-draft-links');
-  await click('#planned-'+drafts[0].slug+' a');
-  await wait('location.pathname==='+Q('/articles/'+drafts[0].slug+'/')+" && document.querySelector('.article-body')");
-  await click('.article-body a[href*="/articles/right-model-size-for-the-task/"]');
-  await wait('location.pathname==='+Q('/articles/'+drafts[1].slug+'/')+" && document.querySelector('.article-meta time')?.dateTime==="+Q(drafts[1].date));
-  assert.equal(await E("new URL(location.href).searchParams.get('show-drafts')"),'true');
-  await click('.article-body a[href="/articles/rag-cag-kag-fine-tuning-instruction-tuning/"]');
-  await wait("location.pathname==='/articles/rag-cag-kag-fine-tuning-instruction-tuning/' && document.querySelector('.article-body')");
-  assert.equal(await E("document.querySelector('meta[name=robots]')?.content?.includes('noindex') ?? false"),false);
-  report.checks.push('Only exact show-drafts=true reveals either article; canonical and noindex are unique.', 'Both editorial dates, local WebP covers, tables, KaTeX and external links work.', 'LLM reading plans open the drafts; client navigation between drafts preserves preview; published RAG stays indexable.', '320px and 390px tables scroll within the page in both themes.');
+  await frame('#software-products'); await shot('guide-software-reading');
+  await E("document.querySelector('#true-llm-cost-buy-rent-or-api details').open=true");
+  await click('.llm-chapter a[href="/articles/true-llm-cost-buy-rent-or-api/"]');
+  await wait("location.pathname==='/articles/true-llm-cost-buy-rent-or-api/' && document.querySelector('.article-body')");
+  await click('.article-body a[href="/articles/ollama-vllm-sglang-or-llama-cpp/"]');
+  await wait("location.pathname==='/articles/ollama-vllm-sglang-or-llama-cpp/' && document.querySelector('.article-body')");
+  assert.equal(await E("location.search"),'');
+  report.checks.push('Ten articles and the guide render without a preview query and remain indexable.', 'Editorial dates, local WebP covers, 42 tables, KaTeX, RTL and external links work.', 'All table reading paths point to published articles; no unwritten plans remain.', 'Desktop and 320px/390px mobile layouts fit in both themes; SPA reading links work.');
   report.runtimeErrors=events.filter(event=>event.method==='Runtime.exceptionThrown');
   assert.equal(report.runtimeErrors.length,0);
-  await fs.writeFile(output+'/browser-review.json',Q(report,null,2));
-  console.log(Q(report,null,2));
+  await fs.writeFile(output+'/browser-review.json',JSON.stringify(report,null,2)+'\n');
+  console.log(JSON.stringify({ checks: report.checks, articles: report.articles.length, screenshots: report.screenshots.length, runtimeErrors: report.runtimeErrors },null,2));
 } finally {
   await call('Page.close').catch(()=>{}); socket.end();
 }

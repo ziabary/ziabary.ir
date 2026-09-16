@@ -119,7 +119,7 @@ export function enrichResearchRepository(base: LlmGuideRepository): LlmGuideRepo
       filesUrl: `${repositoryUrl}/tree/${artifact.repositoryRevision}`,
       files: artifact.files.map(file => ({ path: file.name, bytes: file.bytes, url: `${repositoryUrl}/resolve/${artifact.repositoryRevision}/${file.name}` })),
       totalBytes: artifact.weightFileBytes, verifiedOn: researchAsOf,
-      scopeNote: `زمینهٔ فایل منتخب: ${faNumber(artifact.artifactContextLimitTokens, 0)} توکن. دامنهٔ محاسبهٔ حافظه، همین فایل و سناریوی انتخابی است.`,
+      scopeNote: `حداکثر طول ورودی و خروجی فایل منتخب: ${faNumber(artifact.artifactContextLimitTokens, 0)} توکن.`,
       evidenceIds: [...new Set([...(previous?.evidenceIds ?? []), ...artifact.sourceIds.map(researchEvidenceId)])]
     };
     if (previous) Object.assign(previous, listing); else artifactListings.push(listing);
@@ -137,8 +137,8 @@ export function calculateMemory(artifact: MemoryArtifact, context: number, activ
   return { weightGiB, kvGiB, reserveGiB, budgetGiB: weightGiB + kvGiB + reserveGiB };
 }
 export function memoryStatus(required: number, capacity: number, devices = 1) {
-  if (required > capacity) return { id: 'over-budget', label: 'بیش از بودجه', note: 'کاهش زمینه، کوانت کم‌حجم‌تر یا انتقال بخشی از مدل به RAM را بررسی کنید.' };
+  if (required > capacity) return { id: 'over-budget', label: 'حافظه ناکافی', note: 'کاهش زمینه، کوانت کم‌حجم‌تر یا انتقال بخشی از مدل به RAM را بررسی کنید.' };
   if (devices > 1) return { id: 'requires-sharding', label: 'نیازمند تقسیم مدل', note: 'جمع ظرفیت کافی است؛ سهم هر کارت و پشتیبانی موتور جدا کنترل شود.' };
   if (capacity - required < Math.max(2, capacity * .1)) return { id: 'tight', label: 'حاشیهٔ کم', note: 'حافظهٔ آزاد واقعی و سربار موتور تعیین‌کننده‌اند.' };
-  return { id: 'within-budget', label: 'در بودجهٔ سناریو', note: 'غربال ظرفیت حافظه؛ سرعت و کیفیت از این عدد نتیجه نمی‌شود.' };
+  return { id: 'within-budget', label: 'حافظه کافی است', note: '' };
 }

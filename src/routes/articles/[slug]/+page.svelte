@@ -50,7 +50,7 @@
     {:then module}
       {#if module}
         <div use:previewLinks={data.article.slug}>
-          <aside class="draft-notice wrap"><strong>پیش‌نویس · در حال بازبینی</strong><a href="/guides/llm/?show-drafts=true#planned-articles">بازگشت به یادداشت‌های راهنمای مدل‌های زبانی ←</a></aside>
+          <aside class="draft-notice wrap"><strong>پیش‌نویس · در حال بازبینی</strong><a href="/guides/llm/">بازگشت به یادداشت‌های راهنمای مدل‌های زبانی ←</a></aside>
           <ArticlePage article={data.article} Content={module.default} />
         </div>
       {/if}

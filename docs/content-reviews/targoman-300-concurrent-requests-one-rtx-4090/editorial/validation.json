@@ -1,0 +1,40 @@
+{
+  "word_count": 2712,
+  "links": [
+    "https://ziabary.ir/articles/seventy-million-words-a-day/",
+    "https://llm.targoman.ir/",
+    "https://llm.targoman.ir/translate",
+    "https://llm.targoman.ir/summarize",
+    "https://llm.targoman.ir/rag",
+    "https://llm.targoman.ir/rahbari",
+    "https://llm.targoman.ir/shares",
+    "https://llm.targoman.ir/devdocs",
+    "https://llm.targoman.ir/sklearn",
+    "https://cohere.com/blog/aya-expanse-connecting-our-world",
+    "https://huggingface.co/datasets/Targoman/TLPC",
+    "https://ziabary.ir/articles/targoman-without-rent/",
+    "https://docs.nvidia.com/deeplearning/frameworks/vllm-release-notes/rel-25-11.html",
+    "https://ziabary.ir/articles/rag-cag-kag-fine-tuning-instruction-tuning/",
+    "https://ziabary.ir/guides/llm/",
+    "https://ziabary.ir/articles/google-used-targoman/"
+  ],
+  "headline_300_is_request_concurrency_not_completed_responses": true,
+  "no_running_claim_in_public_article": true,
+  "no_hot_standby_claim_in_public_article": true,
+  "no_unverified_competitor_comparison": true,
+  "no_complete_server_config": true,
+  "no_claim_of_four_bit_quantization": true,
+  "draft": true,
+  "proposed_publication_date": "2026-06-08",
+  "prepared_on": "2026-09-16",
+  "no_site_publish_performed": true,
+  "cover_size": [
+    1672,
+    941
+  ],
+  "service_screenshots": 7,
+  "screenshots_captured_on": "2026-09-16",
+  "screenshots_are_not_claimed_as_historical": true,
+  "cover_revision": 2,
+  "all_article_images_resolve_in_package": true
+}

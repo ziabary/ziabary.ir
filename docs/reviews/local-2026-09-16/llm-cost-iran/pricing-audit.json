@@ -1,0 +1,271 @@
+{
+  "observed_on": "2026-09-16",
+  "sources": [
+    {
+      "provider": "ArvanCloud",
+      "model": "GPT-4o mini",
+      "input_per_million": 33120,
+      "output_per_million": 132480,
+      "currency": "toman",
+      "short_100k": 13248000,
+      "document_100k": 39744000,
+      "url": "https://www.arvancloud.ir/fa/pricing/aiaas"
+    },
+    {
+      "provider": "ArvanCloud",
+      "model": "GPT-4.1 mini",
+      "input_per_million": 88320,
+      "output_per_million": 353280,
+      "currency": "toman",
+      "short_100k": 35328000,
+      "document_100k": 105984000,
+      "url": "https://www.arvancloud.ir/fa/pricing/aiaas"
+    },
+    {
+      "provider": "ArvanCloud",
+      "model": "GPT-5 mini",
+      "input_per_million": 55200,
+      "output_per_million": 441600,
+      "currency": "toman",
+      "short_100k": 33120000,
+      "document_100k": 88320000,
+      "url": "https://www.arvancloud.ir/fa/pricing/aiaas"
+    },
+    {
+      "provider": "IranServer / GreenWeb",
+      "url": "https://www.iranserver.com/vps/gpu/",
+      "currency": "toman",
+      "plans": {
+        "RTX3090-Start": {
+          "monthly": 40500000,
+          "vram_gb": 24,
+          "cpu_cores": 16,
+          "ram_gb": 30,
+          "ssd_gb": 330,
+          "location": "Shiraz"
+        },
+        "RTX4090-Smart": {
+          "monthly": 91000000,
+          "hourly": 189000,
+          "vram_gb": 24,
+          "cpu_cores": 32,
+          "ram_gb": 90,
+          "ssd_gb": 700,
+          "location": "Shiraz"
+        },
+        "A6000-Light": {
+          "monthly": 117000000,
+          "vram_gb": 48,
+          "cpu_cores": 16,
+          "ram_gb": 60,
+          "ssd_gb": 700,
+          "location": "Tabriz"
+        }
+      }
+    },
+    {
+      "provider": "Ferdowsi Cloud",
+      "url": "https://ferdowsi.cloud/fa/services/gpu",
+      "plan": "GPU-4090-8c-16r-100d-x1",
+      "currency": "toman",
+      "hourly": 79300,
+      "vram_gb": 24,
+      "vcpu": 8,
+      "ram_gb": 16,
+      "disk_gb": 100,
+      "computed_720_hours": 57096000,
+      "computed_720_hours_is_monthly_package": false
+    },
+    {
+      "provider": "GapGPT",
+      "url": "https://gapgpt.app/platform-v2/pricing",
+      "model": "gpt-4.1-mini",
+      "currency": "USD",
+      "input_per_million": 0.4,
+      "output_per_million": 1.6
+    },
+    {
+      "provider": "AvalAI",
+      "url": "https://docs.avalai.ir/fa/models/gpt-4.1-mini",
+      "model": "gpt-4.1-mini",
+      "currency": "USD",
+      "input_per_million": 0.4,
+      "output_per_million": 1.6
+    },
+    {
+      "provider": "Liara",
+      "url": "https://liara.ir/products/ai/",
+      "model": "openai/gpt-4.1-mini",
+      "currency": "USD",
+      "input_per_million": 0.4,
+      "output_per_million": 1.6,
+      "plan_currency": "toman",
+      "mirzakhani_monthly": 600000,
+      "turing_monthly": 1050000
+    },
+    {
+      "provider": "DrHP",
+      "url": "https://drhp.ir/Product/nvidia-rtx-4090-founders-edition-24gb-gddr6x/",
+      "product": "RTX 4090 Founders Edition 24GB",
+      "listed_price": 529000000,
+      "currency": "toman",
+      "scope": "one retailer, card only; page says price subject to currency changes"
+    }
+  ],
+  "arithmetic_passed": true,
+  "existing_heading_links_preserved": true,
+  "metadata_except_excerpt_preserved": true,
+  "internal_article_links": [
+    {
+      "slug": "data-confidentiality-public-apis",
+      "date": "2026-09-15"
+    },
+    {
+      "slug": "right-model-size-for-the-task",
+      "date": "2026-06-18"
+    },
+    {
+      "slug": "evaluating-language-models-for-persian",
+      "date": "2026-09-02"
+    },
+    {
+      "slug": "single-user-to-enterprise-llm-serving",
+      "date": "2026-09-08"
+    },
+    {
+      "slug": "enterprise-rag-model-embedding-reranker",
+      "date": "2026-08-12"
+    },
+    {
+      "slug": "ollama-vllm-sglang-or-llama-cpp",
+      "date": "2026-09-15"
+    },
+    {
+      "slug": "four-bit-model-quantization",
+      "date": "2026-07-13"
+    },
+    {
+      "slug": "code-completion-assistant-and-agent",
+      "date": "2026-08-24"
+    },
+    {
+      "slug": "targoman-300-concurrent-requests-one-rtx-4090",
+      "date": "2026-06-08"
+    },
+    {
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+      "date": "2026-07-02"
+    },
+    {
+      "slug": "gpu-server-platform-components",
+      "date": "2025-05-19"
+    }
+  ],
+  "ownership_budget": {
+    "observed_date": "2026-09-16",
+    "currency": "toman",
+    "scope": "Retail component basket for one tower workstation; not an assembled server quote or complete service TCO.",
+    "items": [
+      {
+        "evidence": "drhp.json",
+        "url": "https://drhp.ir/Product/nvidia-rtx-4090-founders-edition-24gb-gddr6x/",
+        "toman": 529000000
+      },
+      {
+        "evidence": "bom-cpu.json",
+        "url": "https://gsiran.com/products/cpu-amd-ryzen-9-9950x-tray",
+        "toman": 119000000
+      },
+      {
+        "evidence": "bom-board.json",
+        "url": "https://gsiran.com/products/motherboard-gigabyte-x870-gaming-x-wifi7",
+        "toman": 61200000
+      },
+      {
+        "evidence": "bom-ram.json",
+        "url": "https://teccaf.com/product/g-skill-trident-z5-rgb-64gb-6000-black-cl36-dual-ddr5-ram/",
+        "toman": 400000000
+      },
+      {
+        "evidence": "bom-ssd.json",
+        "url": "https://gsiran.com/products/ssd-samsung-990-pro-2tb-samsong",
+        "toman": 84700000
+      },
+      {
+        "evidence": "bom-psu.json",
+        "url": "https://pcccenter.com/product/%D9%85%D9%86%D8%A8%D8%B9-%D8%AA%D8%BA%D8%B0%DB%8C%D9%87-%DA%AF%D8%B1%DB%8C%D9%86-gp1000b-edge/",
+        "toman": 49400000
+      },
+      {
+        "evidence": "bom-cooler.json",
+        "url": "https://gsiran.com/products/cpu-cooler-deepcool-lt360-argb-black",
+        "toman": 21900000
+      },
+      {
+        "evidence": "bom-case.json",
+        "url": "https://gsiran.com/products/case-z5-green",
+        "toman": 15900000
+      }
+    ],
+    "total_toman": 1281100000,
+    "comparison": {
+      "months": 24,
+      "iranserver_monthly": 91000000,
+      "ferdowsi_hourly": 79300,
+      "ferdowsi_hours_per_month": 720,
+      "light_use_hours_per_month": 50,
+      "resale_credit": 0,
+      "tariffs": "Held constant at observed prices for comparison, not a forecast",
+      "extra_ownership_cost": "Computed budget ceiling, not an asserted market operating-cost quote"
+    },
+    "calculations": {
+      "monthly_capital_24m_rounded": 53379167,
+      "iranserver_rent_24m": 2184000000,
+      "ferdowsi_rent_24m": 1370304000,
+      "extra_ownership_budget_24m_iranserver": 902900000,
+      "extra_ownership_budget_24m_ferdowsi": 89204000,
+      "ferdowsi_light_use_24m": 95160000
+    }
+  },
+  "exchange_rate": {
+    "toman_per_usd": 230000,
+    "source": "Explicit rate supplied by the author in this request",
+    "use": "Fixed conversion basis, not a verified spot market or provider settlement rate",
+    "input_per_million_toman": 92000,
+    "output_per_million_toman": 368000,
+    "short_100k_usd": 160,
+    "short_100k_toman": 36800000,
+    "with_mirzakhani_plan_toman": 37400000
+  },
+  "scenario_inputs": {
+    "requests": 100000,
+    "short_input_tokens": 2000,
+    "short_output_tokens": 500,
+    "document_input_tokens": 8000,
+    "document_output_tokens": 1000,
+    "rental_example_hours": [
+      50,
+      720
+    ],
+    "scope": "Explicit comparison inputs; not measured customer usage. 720 hours means a 30-day period."
+  },
+  "evidence_files": [
+    "evidence/arvan.json",
+    "evidence/avalai.json",
+    "evidence/bom-board.json",
+    "evidence/bom-case.json",
+    "evidence/bom-cooler.json",
+    "evidence/bom-cpu.json",
+    "evidence/bom-psu.json",
+    "evidence/bom-ram.json",
+    "evidence/bom-ssd.json",
+    "evidence/drhp.json",
+    "evidence/ferdowsi.json",
+    "evidence/gapgpt.json",
+    "evidence/iranserver-hourly.json",
+    "evidence/iranserver.json",
+    "evidence/liara.json"
+  ],
+  "public_tariff_evidence_checked": true,
+  "purchase_price_status": "Eight directly observed retail component prices; explicit parts-only total, dated evidence, no invented operations quote or resale value."
+}

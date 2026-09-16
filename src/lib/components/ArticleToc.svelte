@@ -22,7 +22,7 @@
   </ol>
 {/snippet}
 
-<aside class="article-toc" aria-label={title}>
+<aside class="article-toc" data-reading-navigation aria-label={title}>
   <details class="desktop-toc" open><summary>{title}</summary><nav aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
   <details class="mobile-toc"><summary>{title}</summary><nav aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
 </aside>

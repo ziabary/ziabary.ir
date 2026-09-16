@@ -1,6 +1,6 @@
 <script lang="ts">
   import '$lib/math.css';
-  import ArticleActions from './ArticleActions.svelte';
+  import ReadingShare from './ReadingShare.svelte';
   import { imageAttributes } from '$lib/images';
   import { onMount, tick } from 'svelte';
   import type { Component } from 'svelte';
@@ -63,7 +63,7 @@
     <section class="wrap planned-intro"><p>{collection.intro}</p><p>{copy.empty}</p><a class="button ghost" href={`${base}/guides/`}>{copy.back} {locale === 'fa' ? '←' : '→'}</a></section>
   {:else}
     <div class="wrap guide-layout" class:has-tools={hasTools}>
-      <aside class="guide-navigation">
+      <aside class="guide-navigation" data-reading-navigation>
         <details class="guide-desktop-toc" open><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
         <details class="guide-mobile-toc"><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
         <a class="guide-back" href={`${base}/guides/`}>{copy.back}</a>
@@ -83,16 +83,15 @@
               {@const Content = chapters[item.id]}
               <header><small>{new Intl.NumberFormat(locale).format(index + 1)}</small><h2><a href={item.href}>{item.title}</a></h2></header>
               <p class="chapter-intro">{item.subtitle}</p>
-              <ArticleActions title={item.title} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} />
               {#each article?.legacyAnchors ?? [] as anchor}{#if legacyOwners.get(anchor) === item.id}<span id={anchor} class="legacy-anchor"></span>{/if}{/each}
               {#if Content}
                 <details class="chapter-details">
                   <summary>{copy.read}: {item.title}</summary>
                   {#if article?.cover}<img class="chapter-cover" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" />{/if}
-                  <div class="prose guide-prose"><Content headingPrefix={`${item.id}--`} /></div>
+                  <div class="prose guide-prose"><Content headingPrefix={`${item.id}--`} /><ReadingShare cover={article?.cover} title={item.title} excerpt={article?.excerpt ?? item.subtitle} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={item.href} /></div>
                 </details>
               {/if}
-              <a class="standalone-link" href={item.href}>{copy.standalone} {locale === 'fa' ? '←' : '→'}</a>
+              {#if !Content}<a class="standalone-link" href={item.href} target="_blank" rel="noopener noreferrer">{copy.standalone} ↗</a>{/if}
             {/if}
           </article>
         {/each}

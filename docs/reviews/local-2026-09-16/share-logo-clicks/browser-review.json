@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "name": "fa",
+      "services": [
+        "bale",
+        "eitaa",
+        "telegram",
+        "whatsapp",
+        "linkedin",
+        "x",
+        "email"
+      ],
+      "mouse": true,
+      "keyboard": true,
+      "directImageClick": true,
+      "articleImageZoom": true
+    },
+    {
+      "name": "en",
+      "services": [
+        "telegram",
+        "whatsapp",
+        "linkedin",
+        "x",
+        "email"
+      ],
+      "mouse": true,
+      "keyboard": true,
+      "directImageClick": true,
+      "articleImageZoom": true
+    },
+    {
+      "name": "es",
+      "services": [
+        "telegram",
+        "whatsapp",
+        "linkedin",
+        "x",
+        "email"
+      ],
+      "mouse": true,
+      "keyboard": true,
+      "directImageClick": true,
+      "articleImageZoom": true
+    },
+    {
+      "name": "gpu",
+      "services": [
+        "bale",
+        "eitaa",
+        "telegram",
+        "whatsapp",
+        "linkedin",
+        "x",
+        "email"
+      ],
+      "mouse": true,
+      "keyboard": true,
+      "directImageClick": true,
+      "articleImageZoom": true
+    },
+    {
+      "name": "ztai",
+      "services": [
+        "bale",
+        "eitaa",
+        "telegram",
+        "whatsapp",
+        "linkedin",
+        "x",
+        "email"
+      ],
+      "mouse": true,
+      "keyboard": true,
+      "directImageClick": true,
+      "articleImageZoom": true
+    },
+    {
+      "name": "llm",
+      "services": [
+        "bale",
+        "eitaa",
+        "telegram",
+        "whatsapp",
+        "linkedin",
+        "x",
+        "email"
+      ],
+      "mouse": true,
+      "keyboard": true,
+      "directImageClick": true,
+      "articleImageZoom": true
+    }
+  ],
+  "externalNavigation": "Suppressed at window after checking the document handler did not cancel it.",
+  "runtimeErrors": 0
+}

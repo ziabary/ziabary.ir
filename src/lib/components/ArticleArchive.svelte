@@ -6,6 +6,7 @@
   import PageHero from './PageHero.svelte';
   import PageSeo from './PageSeo.svelte';
   import ArticleCard from './ArticleCard.svelte';
+  import ArchiveCategorySelect from './ArchiveCategorySelect.svelte';
   import type { ArticleMeta } from '$lib/content';
   import type { Locale } from '$lib/editions';
   import { availableTopics, classification, topics } from '$lib/topics';
@@ -56,6 +57,11 @@
   $: copy = copies[locale];
   $: numbers = new Intl.NumberFormat(locale);
   $: categories = [...new Set(records.map(article => article.category))];
+  $: categoryOptions = [
+    { value: '', label: copy.all },
+    ...availableTopics(locale).map(topic => ({ value: `topic:${topic.slug}`, label: topic.title })),
+    ...categories.map(item => ({ value: item, label: item }))
+  ];
   $: if (mounted) { query = $page.url.searchParams.get('q') ?? ''; category = $page.url.searchParams.get('category') ?? ''; }
   $: selected = records.filter(article => !category || (category.startsWith('topic:') ? classification(article).topic === category.slice(6) : article.category === category)).map(article => {
     const href = `${locale === 'fa' ? '' : `/${locale}`}/articles/${article.slug}/`;
@@ -100,7 +106,7 @@
   <PageHero eyebrow={copy.archive} title={copy.title} lead={copy.lead} />
   <section class="wrap archive-controls" aria-label={copy.search}>
     <label><span>{copy.search}</span><input type="search" bind:value={query} oninput={event => { query = event.currentTarget.value; updateFilters(); }} /></label>
-    <label><span>{copy.all}</span><select bind:value={category} onchange={event => { category = event.currentTarget.value; updateFilters(); }}><option value="">{copy.all}</option>{#each availableTopics(locale) as topic}<option value={`topic:${topic.slug}`}>{topic.title}</option>{/each}{#each categories as item}<option value={item}>{item}</option>{/each}</select></label>
+    <ArchiveCategorySelect label={copy.all} value={category} options={categoryOptions} onchange={value => { category = value; updateFilters(); }} />
     <div class="archive-view">
       <span id="archive-view-label">{copy.view}</span>
       <div class="archive-view-buttons" role="group" aria-labelledby="archive-view-label">
@@ -149,7 +155,7 @@
   .archive-view button[aria-pressed="true"]:hover:not(:disabled) { color: white; }
   .archive-view button:disabled { cursor: default; opacity: .55; }
   .archive-view i { font-size: 18px; }
-  input, select { min-height: 44px; border: 1px solid var(--line); border-radius: 7px; padding: 8px 12px; color: var(--ink); background: var(--paper); font: inherit; width: 100%; }
+  input { min-height: 44px; border: 1px solid var(--line); border-radius: 7px; padding: 8px 12px; color: var(--ink); background: var(--paper); font: inherit; width: 100%; }
   .archive-rows { max-width: 1000px; } .archive-status { color: var(--muted); font-size: 13px; }
   .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
   .archive-grid :global(.article-card:first-child) { grid-column: auto; }

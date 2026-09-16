@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Tables precede ten initially collapsed articles; 42 embedded tables and math render without duplicate IDs.",
+    "Table buttons open and scroll to the correct note; direct heading URLs reveal their note and highlight the contents entry.",
+    "390px dark and 320px light layouts keep closed cards, open article tables and grouped contents inside the viewport."
+  ],
+  "screenshots": [
+    "desktop-notes.png",
+    "desktop-table-actions.png",
+    "desktop-open-note.png",
+    "desktop-heading-navigation.png",
+    "mobile-390-notes.png",
+    "mobile-390-open-table.png",
+    "mobile-390-contents.png",
+    "mobile-320-notes.png",
+    "mobile-320-open-table.png",
+    "mobile-320-contents.png"
+  ],
+  "runtimeErrors": []
+}

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { evidenceNotes } from '$lib/llm/evidence-copy';
   import type { Evidence, EvidenceKind } from '$lib/llm/schema';
   export let ids: string[] = [];
   export let evidence: Evidence[] = [];
@@ -11,25 +12,22 @@
   };
 </script>
 
-<div class="evidence-list" aria-label="منابع و دامنهٔ شواهد">
+<div class="evidence-list" aria-label="منابع">
   {#each sources as item (item.id)}
     {#if item.source}
       {@const source = item.source}
+      {@const notes = evidenceNotes(source)}
       <details class="evidence-item" data-evidence-id={source.id}>
         <summary>{source.title} <span>· {kinds[source.kind]}</span></summary>
         <a class="source-url" href={source.url} target="_blank" rel="noopener noreferrer">{source.url} ↗</a>
         <dl>
-          <div><dt>شناسه</dt><dd dir="ltr">{source.id}</dd></div>
-          <div><dt>ناشر / نویسنده</dt><dd>{[source.organization, ...(source.authors ?? [])].filter(Boolean).join('؛ ') || 'ثبت نشده'}</dd></div>
-          <div><dt>نوع منبع</dt><dd>{source.sourceKind === 'primary' ? 'منبع اولیه' : 'منبع ثانویه'} · {kinds[source.kind]}</dd></div>
+          {#if source.organization || source.authors?.length}<div><dt>ناشر / نویسنده</dt><dd>{[source.organization, ...(source.authors ?? [])].filter(Boolean).join('؛ ')}</dd></div>{/if}
           <div><dt>تاریخ دسترسی</dt><dd>{source.accessedOn}</dd></div>
           {#if source.publishedOn}<div><dt>تاریخ انتشار</dt><dd>{source.publishedOn}</dd></div>{/if}
-          <div><dt>نسخه / commit</dt><dd dir="auto">{source.versionRevisionOrCommit || 'ثبت نشده'}</dd></div>
-          <div><dt>محل دقیق شاهد</dt><dd dir="auto">{source.locator}</dd></div>
-          <div><dt>دامنهٔ اعتبار</dt><dd>{source.scope}</dd></div>
-          {#if source.commercialInterest}<div><dt>ذی‌نفع تجاری</dt><dd>{source.commercialInterest}</dd></div>{/if}
+          {#if source.versionRevisionOrCommit}<div><dt>نسخه / commit</dt><dd dir="auto">{source.versionRevisionOrCommit}</dd></div>{/if}
+          {#if source.locator && source.locator !== 'مشخصات مخزن و فایل‌های نسخهٔ ارجاع‌شده'}<div><dt>بخش مرتبط در منبع</dt><dd dir="auto">{source.locator}</dd></div>{/if}
         </dl>
-        {#if source.limitations?.length}<b>محدودیت‌ها</b><ul>{#each source.limitations as limitation}<li>{limitation}</li>{/each}</ul>{/if}
+        {#if notes.length}<ul class="source-notes">{#each notes as note}<li>{note}</li>{/each}</ul>{/if}
         {#if source.derivation}
           <div class="derivation">
             <b>روش محاسبه: {source.derivation.method}</b>

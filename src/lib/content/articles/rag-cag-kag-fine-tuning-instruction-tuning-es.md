@@ -21,7 +21,6 @@ tags:
   - Instruction tuning
 related:
   - mlops-foundation-of-zero-trust-ai-es
-  - gpu-inference-latency-throughput-es
 draft: false
 ---
 
@@ -50,6 +49,8 @@ Supongamos que pedimos a un especialista en entomología una conferencia sobre m
 Esta imagen sencilla explica la lógica de la generación aumentada por recuperación, o RAG, por sus siglas en inglés. En una implementación habitual, los documentos se dividen en fragmentos y se indexan; la pregunta se envía a una búsqueda semántica, léxica o híbrida; los mejores fragmentos se recuperan, posiblemente se reordenan mediante un reranker y se incorporan al contexto; y el modelo genera la respuesta utilizando la pregunta y los fragmentos recibidos. El [artículo original de RAG](https://arxiv.org/abs/2005.11401) formuló el método como una combinación de la memoria paramétrica del modelo y una memoria externa no paramétrica.
 
 RAG es apropiado para colecciones documentales grandes, cambiantes y actualizables. Las políticas internas, la documentación técnica, las bases de conocimiento de soporte, los contratos y las noticias son ejemplos en los que cada pequeño cambio no debería exigir modificar los pesos del modelo. Es posible actualizar documentos, mostrar las fuentes de una respuesta y aplicar los permisos de cada usuario antes de la recuperación. Sin embargo, RAG no garantiza respuestas correctas: puede no recuperar el fragmento adecuado, seleccionarlo sin el contexto necesario o utilizar mal un documento que sí ha recibido. Por tanto, la fragmentación, la indexación, el reranking, el control de acceso y la evaluación de respuestas forman parte del propio sistema; no son detalles secundarios.
+
+Aplicamos esta separación entre entrenamiento e información reciente en [el asistente de Targoman conectado a noticias de actualidad (informe en persa)](/articles/targoman-300-concurrent-requests-one-rtx-4090/#مدلی-که-از-خبرهای-روز-باخبر-بود). Habíamos ajustado un modelo Aya Expanse de ocho mil millones de parámetros con ayuda del corpus persa TLPC; las noticias nuevas llegaban al proceso de respuesta mediante la recopilación horaria de fuentes nacionales, la recuperación y el diseño de prompts. No volvíamos a entrenar el modelo por cada noticia: el entrenamiento preparaba el modelo para el servicio y la recuperación le aportaba información cambiante.
 
 ## CAG: poner la pequeña biblioteca sobre la mesa una sola vez
 

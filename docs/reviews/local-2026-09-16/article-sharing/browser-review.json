@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "lang": "fa",
+      "url": "https://ziabary.ir/?t=atlcbroa",
+      "destinations": true,
+      "summary": true,
+      "mobileDialogFits": true,
+      "native": true
+    },
+    {
+      "lang": "en",
+      "url": "https://ziabary.ir/?t=eagilte",
+      "destinations": true,
+      "summary": true,
+      "mobileDialogFits": true,
+      "native": true
+    },
+    {
+      "lang": "es",
+      "url": "https://ziabary.ir/?t=eagilte2",
+      "destinations": true,
+      "summary": true,
+      "mobileDialogFits": true,
+      "native": true
+    }
+  ],
+  "clipboardFailure": true,
+  "clipboardFallback": true,
+  "nativeCancel": true,
+  "nativeFailure": true,
+  "runtimeErrors": 0
+}

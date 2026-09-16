@@ -210,6 +210,8 @@ Entre las fuentes examinadas para este artículo, la descripción de LPX se basa
 
 Un servicio puede alcanzar una tasa elevada en una prueba mientras una parte considerable de las solicitudes supera la latencia permitida. La capacidad nominal de esa prueba no es una capacidad fiable de servicio.
 
+En [nuestra experiencia con Targoman bajo carga (informe en persa)](/articles/targoman-300-concurrent-requests-one-rtx-4090/#بالاخره-زیر-آن-فشار-چه-کیفیتی-داشتیم), las respuestas solían comenzar en menos de un segundo con poca carga; bajo presión, la espera podía alcanzar el límite de 20 segundos, tras el cual se cancelaba la solicitud si la respuesta aún no había comenzado. Durante aquel episodio, el sistema tenía unas 300 solicitudes concurrentes, pero no todas terminaban correctamente. Por eso, la capacidad útil debe contar las respuestas entregadas en un tiempo aceptable, no solo las solicitudes presentes en el sistema.
+
 La métrica **goodput** aborda este problema contando las solicitudes que cumplen las restricciones establecidas. En AIPerf también se distingue de la proporción de solicitudes que las cumplen: un servicio que rechaza muchas solicitudes no debería considerarse exitoso solo porque las respuestas restantes sean rápidas. [Guía de goodput de AIPerf](https://github.com/ai-dynamo/aiperf/blob/main/docs/tutorials/goodput.md)
 
 Para un servicio concreto podría plantearse inicialmente este objetivo: «Al menos el 95 % de las solicitudes deben tener tanto un TTFT inferior a dos segundos como un TPOT inferior a 50 milisegundos». Las cifras son ejemplos y deben derivarse de las necesidades del producto.

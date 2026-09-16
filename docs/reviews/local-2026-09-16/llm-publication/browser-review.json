@@ -1,0 +1,491 @@
+{
+  "origin": "http://127.0.0.1:4189",
+  "checks": [
+    "Ten articles and the guide render without a preview query and remain indexable.",
+    "Editorial dates, local WebP covers, 42 tables, KaTeX, RTL and external links work.",
+    "All table reading paths point to published articles; no unwritten plans remain.",
+    "Desktop and 320px/390px mobile layouts fit in both themes; SPA reading links work."
+  ],
+  "screenshots": [
+    "desktop-1-cover.png",
+    "desktop-1-table.png",
+    "mobile-390-1-cover.png",
+    "mobile-390-1-table.png",
+    "mobile-320-1-cover.png",
+    "mobile-320-1-table.png",
+    "desktop-2-cover.png",
+    "desktop-2-table.png",
+    "desktop-memory-formula.png",
+    "mobile-390-2-cover.png",
+    "mobile-390-2-table.png",
+    "mobile-320-2-cover.png",
+    "mobile-320-2-table.png",
+    "desktop-3-cover.png",
+    "desktop-3-table.png",
+    "mobile-390-3-cover.png",
+    "mobile-390-3-table.png",
+    "mobile-320-3-cover.png",
+    "mobile-320-3-table.png",
+    "desktop-4-cover.png",
+    "desktop-4-table.png",
+    "mobile-390-4-cover.png",
+    "mobile-390-4-table.png",
+    "mobile-320-4-cover.png",
+    "mobile-320-4-table.png",
+    "desktop-5-cover.png",
+    "desktop-5-table.png",
+    "mobile-390-5-cover.png",
+    "mobile-390-5-table.png",
+    "mobile-320-5-cover.png",
+    "mobile-320-5-table.png",
+    "desktop-6-cover.png",
+    "desktop-6-table.png",
+    "mobile-390-6-cover.png",
+    "mobile-390-6-table.png",
+    "mobile-320-6-cover.png",
+    "mobile-320-6-table.png",
+    "desktop-7-cover.png",
+    "desktop-7-table.png",
+    "mobile-390-7-cover.png",
+    "mobile-390-7-table.png",
+    "mobile-320-7-cover.png",
+    "mobile-320-7-table.png",
+    "desktop-8-cover.png",
+    "desktop-8-table.png",
+    "mobile-390-8-cover.png",
+    "mobile-390-8-table.png",
+    "mobile-320-8-cover.png",
+    "mobile-320-8-table.png",
+    "desktop-9-cover.png",
+    "desktop-9-table.png",
+    "mobile-390-9-cover.png",
+    "mobile-390-9-table.png",
+    "mobile-320-9-cover.png",
+    "mobile-320-9-table.png",
+    "desktop-10-cover.png",
+    "desktop-10-table.png",
+    "mobile-390-10-cover.png",
+    "mobile-390-10-table.png",
+    "mobile-320-10-cover.png",
+    "mobile-320-10-table.png",
+    "guide-software-reading.png"
+  ],
+  "articles": [
+    {
+      "slug": "right-model-size-for-the-task",
+      "date": "2026-06-18",
+      "tables": 2,
+      "faDate": "۲۸ خرداد ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "targoman-transformer-update",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "choosing-gpu-for-ai",
+          "preview": null
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/89503f519202787e-960.webp"
+    },
+    {
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+      "date": "2026-07-02",
+      "tables": 3,
+      "math": true,
+      "faDate": "۱۱ تیر ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "pcie-gpu-server-selection",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "pcie-gpu-server-selection",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/8dd877bbf0675bf5-960.webp"
+    },
+    {
+      "slug": "four-bit-model-quantization",
+      "date": "2026-07-13",
+      "tables": 4,
+      "faDate": "۲۲ تیر ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/cee242e37e0cc83c-960.webp"
+    },
+    {
+      "slug": "airllm-layer-wise-inference",
+      "date": "2026-07-29",
+      "tables": 4,
+      "faDate": "۷ مرداد ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "gpu-server-platform-components",
+          "preview": null
+        },
+        {
+          "slug": "pcie-gpu-server-selection",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/8207f908f60f9f0c-960.webp"
+    },
+    {
+      "slug": "enterprise-rag-model-embedding-reranker",
+      "date": "2026-08-12",
+      "tables": 4,
+      "faDate": "۲۱ مرداد ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/445e923021395c06-960.webp"
+    },
+    {
+      "slug": "code-completion-assistant-and-agent",
+      "date": "2026-08-24",
+      "tables": 4,
+      "faDate": "۲ شهریور ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/94ddb88ea7af463f-960.webp"
+    },
+    {
+      "slug": "evaluating-language-models-for-persian",
+      "date": "2026-09-02",
+      "tables": 4,
+      "faDate": "۱۱ شهریور ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "code-completion-assistant-and-agent",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "code-completion-assistant-and-agent",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/e1e886bcadb3fcd4-960.webp"
+    },
+    {
+      "slug": "single-user-to-enterprise-llm-serving",
+      "date": "2026-09-08",
+      "tables": 5,
+      "faDate": "۱۷ شهریور ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "evaluating-language-models-for-persian",
+          "preview": null
+        },
+        {
+          "slug": "evaluating-language-models-for-persian",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "airllm-layer-wise-inference",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/748cb4f059fc7554-960.webp"
+    },
+    {
+      "slug": "ollama-vllm-sglang-or-llama-cpp",
+      "date": "2026-09-15",
+      "tables": 6,
+      "faDate": "۲۴ شهریور ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "gpu-inference-latency-throughput",
+          "preview": null
+        },
+        {
+          "slug": "airllm-layer-wise-inference",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "single-user-to-enterprise-llm-serving",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "single-user-to-enterprise-llm-serving",
+          "preview": null
+        },
+        {
+          "slug": "gpu-inference-latency-throughput",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/70387122d5c3eb85-960.webp"
+    },
+    {
+      "slug": "true-llm-cost-buy-rent-or-api",
+      "date": "2026-09-16",
+      "tables": 6,
+      "faDate": "۲۵ شهریور ۱۴۰۵",
+      "articleLinks": [
+        {
+          "slug": "evaluating-language-models-for-persian",
+          "preview": null
+        },
+        {
+          "slug": "single-user-to-enterprise-llm-serving",
+          "preview": null
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "preview": null
+        },
+        {
+          "slug": "code-completion-assistant-and-agent",
+          "preview": null
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "preview": null
+        },
+        {
+          "slug": "ollama-vllm-sglang-or-llama-cpp",
+          "preview": null
+        },
+        {
+          "slug": "single-user-to-enterprise-llm-serving",
+          "preview": null
+        },
+        {
+          "slug": "single-user-to-enterprise-llm-serving",
+          "preview": null
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "preview": null
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "preview": null
+        }
+      ],
+      "cover": "http://127.0.0.1:4189/images/responsive/b93d8569ca05b50e-960.webp"
+    }
+  ],
+  "runtimeErrors": []
+}

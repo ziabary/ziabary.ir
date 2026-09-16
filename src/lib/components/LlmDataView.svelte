@@ -338,7 +338,7 @@
                 {:else}<LlmValue value={matrixValue(matrix)} compact={config.compact} />{/if}
                 {#if !config.compact && isRichMatrixCell(matrix) && (matrix.details?.length || matrix.sourceIds?.length)}
                   <details>
-                    <summary>شرح این خانه</summary>
+                    <summary>جزئیات</summary>
                     {#if matrix.results && matrix.results.length > 1}
                       <ol class="matrix-results">
                         {#each matrix.results as result}
@@ -377,7 +377,7 @@
               <dl class="detail-grid">
                 {#each config.detailColumns.filter((column) => column.key !== 'sources' && (!config.compact || (row.details[column.key] ?? row.cells[column.key])?.state === 'known')) as column}<div><dt>{column.label}</dt><dd><LlmValue value={row.details[column.key] ?? row.cells[column.key]} /></dd></div>{/each}
                 {#if row.publishedResults?.length}<div class="row-evidence"><dt>کیفیت گزارش‌شده</dt><dd><LlmPublishedEvaluations results={row.publishedResults} {evidence} /></dd></div>{/if}
-                <div class="row-evidence"><dt>منابع و دامنهٔ شواهد</dt><dd><LlmEvidence ids={row.sourceIds} {evidence} /></dd></div>
+                <div class="row-evidence"><dt>منابع</dt><dd><LlmEvidence ids={row.sourceIds} {evidence} /></dd></div>
                 {#if config.compact && config.matrixColumns?.length}<div class="row-evidence"><dt>شواهد و شرایط هر کاربرد</dt><dd>{#each config.matrixColumns as column}{@const matrix = matrixCell(row, column.id)}{#if isRichMatrixCell(matrix) && matrix.sourceIds?.length}<details class="application-entry"><summary>{column.label}</summary>{@render matrixDetails(matrix)}</details>{/if}{/each}</dd></div>{/if}
               </dl>
               {/if}
@@ -391,7 +391,7 @@
       </tbody>
     </table>
   </div>
-  {#if config.compact}<p class="missing-key">«—» یعنی اطلاعات کافی در منابع ثبت‌شده نداریم؛ به معنی نامناسب‌بودن مدل یا نبود قابلیت نیست.</p>{/if}
+  {#if config.compact}<p class="missing-key">«—» یعنی اطلاعات موجود نیست؛ نه اینکه مدل این قابلیت را ندارد.</p>{/if}
 </section>
 
 {#snippet matrixDetails(matrix: LlmMatrixCell)}

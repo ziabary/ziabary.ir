@@ -1,0 +1,399 @@
+{
+  "reviewedOn": "2026-09-15",
+  "newDrafts": 6,
+  "existingDrafts": 2,
+  "publishedFoundation": 1,
+  "forwardReferences": 0,
+  "articleReferences": 61,
+  "guideReferences": 29,
+  "articles": [
+    {
+      "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+      "title": "RAG، CAG، KAG، Fine-tuning و Instruction tuning؛ چه تفاوتی دارند و کدام را انتخاب کنیم؟",
+      "date": "2026-06-15",
+      "faDate": "۲۵ خرداد ۱۴۰۵",
+      "draft": false,
+      "bodyArticles": [],
+      "related": [
+        {
+          "slug": "mlops-foundation-of-zero-trust-ai",
+          "date": "2026-02-24"
+        }
+      ],
+      "guideLinks": []
+    },
+    {
+      "slug": "right-model-size-for-the-task",
+      "title": "برای هر کاربرد واقعاً چه اندازه مدلی لازم داریم؟ از مدل تخصصی و SLM تا LLM",
+      "date": "2026-06-18",
+      "faDate": "۲۸ خرداد ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        },
+        {
+          "slug": "targoman-transformer-update",
+          "date": "2022-08-16"
+        }
+      ],
+      "related": [
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        },
+        {
+          "slug": "choosing-gpu-for-ai",
+          "date": "2025-05-19"
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "date": "2025-05-19"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/#model-suitability",
+        "/guides/llm/#model-catalog",
+        "/guides/llm/#hardware-feasibility",
+        "/guides/llm/?view=deployment-compatibility#serving-software",
+        "/guides/gpu-selection/",
+        "/guides/llm/#serving-software"
+      ]
+    },
+    {
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+      "title": "روی RTX 4090 چه مدل‌هایی اجرا می‌شوند؟ تفاوت ۲۴ و ۴۸ گیگابایت در عمل",
+      "date": "2026-07-02",
+      "faDate": "۱۱ تیر ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "pcie-gpu-server-selection",
+          "date": "2025-05-19"
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "date": "2025-05-19"
+        }
+      ],
+      "related": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "pcie-gpu-server-selection",
+          "date": "2025-05-19"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/",
+        "/guides/llm/?view=deployment-compatibility#serving-software",
+        "/guides/llm/#serving-software",
+        "/guides/gpu-selection/",
+        "/guides/llm/#model-suitability",
+        "/guides/llm/#hardware-feasibility"
+      ]
+    },
+    {
+      "slug": "four-bit-model-quantization",
+      "title": "چهاربیتی‌کردن مدل چه چیزی را ارزان می‌کند و چه چیزی را تغییر می‌دهد؟",
+      "date": "2026-07-13",
+      "faDate": "۲۲ تیر ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        }
+      ],
+      "related": [
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/",
+        "/guides/llm/?view=deployment-compatibility#serving-software",
+        "/guides/llm/#model-catalog",
+        "/guides/llm/#serving-software"
+      ]
+    },
+    {
+      "slug": "airllm-layer-wise-inference",
+      "title": "AirLLM و اجرای لایه‌به‌لایه؛ مدل بزرگ با حافظهٔ کم، با چه هزینه‌ای؟",
+      "date": "2026-07-29",
+      "faDate": "۷ مرداد ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "gpu-server-platform-components",
+          "date": "2025-05-19"
+        },
+        {
+          "slug": "pcie-gpu-server-selection",
+          "date": "2025-05-19"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        }
+      ],
+      "related": [
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "gpu-server-platform-components",
+          "date": "2025-05-19"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/",
+        "/guides/llm/#serving-software",
+        "/guides/llm/#hardware-feasibility"
+      ]
+    },
+    {
+      "slug": "enterprise-rag-model-embedding-reranker",
+      "title": "برای دستیار اسناد سازمانی، مدل زبانی، embedding و reranker را چگونه انتخاب کنیم؟",
+      "date": "2026-08-12",
+      "faDate": "۲۱ مرداد ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "secure-rag-agent",
+          "date": "2026-01-17"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        }
+      ],
+      "related": [
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        },
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/",
+        "/guides/llm/#model-catalog",
+        "/guides/llm/#serving-software"
+      ]
+    },
+    {
+      "slug": "code-completion-assistant-and-agent",
+      "title": "تکمیل کد، دستیار کد و عامل برنامه‌نویسی؛ سه نیاز با سه معیار انتخاب",
+      "date": "2026-08-24",
+      "faDate": "۲ شهریور ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "date": "2026-08-12"
+        },
+        {
+          "slug": "rag-cag-kag-fine-tuning-instruction-tuning",
+          "date": "2026-06-15"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        },
+        {
+          "slug": "secure-rag-agent",
+          "date": "2026-01-17"
+        }
+      ],
+      "related": [
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "date": "2026-08-12"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/",
+        "/guides/llm/",
+        "/guides/llm/#serving-software"
+      ]
+    },
+    {
+      "slug": "evaluating-language-models-for-persian",
+      "title": "مدل خوب برای فارسی را چگونه بسنجیم؟",
+      "date": "2026-09-02",
+      "faDate": "۱۱ شهریور ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "date": "2026-08-12"
+        },
+        {
+          "slug": "code-completion-assistant-and-agent",
+          "date": "2026-08-24"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        }
+      ],
+      "related": [
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "date": "2026-08-12"
+        },
+        {
+          "slug": "code-completion-assistant-and-agent",
+          "date": "2026-08-24"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/"
+      ]
+    },
+    {
+      "slug": "single-user-to-enterprise-llm-serving",
+      "title": "از یک کاربر تا سرویس سازمانی؛ چه زمانی مدل، تعداد نسخه‌ها یا GPU را تغییر دهیم؟",
+      "date": "2026-09-08",
+      "faDate": "۱۷ شهریور ۱۴۰۵",
+      "draft": true,
+      "bodyArticles": [
+        {
+          "slug": "right-model-size-for-the-task",
+          "date": "2026-06-18"
+        },
+        {
+          "slug": "enterprise-rag-model-embedding-reranker",
+          "date": "2026-08-12"
+        },
+        {
+          "slug": "four-bit-model-quantization",
+          "date": "2026-07-13"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "evaluating-language-models-for-persian",
+          "date": "2026-09-02"
+        }
+      ],
+      "related": [
+        {
+          "slug": "evaluating-language-models-for-persian",
+          "date": "2026-09-02"
+        },
+        {
+          "slug": "llms-on-rtx-4090-24gb-vs-48gb",
+          "date": "2026-07-02"
+        },
+        {
+          "slug": "airllm-layer-wise-inference",
+          "date": "2026-07-29"
+        }
+      ],
+      "guideLinks": [
+        "/guides/llm/#serving-software",
+        "/guides/llm/#hardware-feasibility",
+        "/guides/llm/"
+      ]
+    }
+  ]
+}

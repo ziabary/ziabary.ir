@@ -1,0 +1,79 @@
+[
+  {
+    "service": "ترجمه",
+    "url": "https://llm.targoman.ir/translate",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-translation.jpg",
+    "dimensions": [
+      1363,
+      936
+    ],
+    "unmodified_browser_screenshot": true
+  },
+  {
+    "service": "خلاصه‌سازی",
+    "url": "https://llm.targoman.ir/summarize",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-summarization.jpg",
+    "dimensions": [
+      1363,
+      936
+    ],
+    "unmodified_browser_screenshot": true
+  },
+  {
+    "service": "چت عمومی و اسناد",
+    "url": "https://llm.targoman.ir/rag",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-chat-rag.jpg",
+    "dimensions": [
+      1363,
+      936
+    ],
+    "unmodified_browser_screenshot": true
+  },
+  {
+    "service": "اندیشه رهبر شهید",
+    "url": "https://llm.targoman.ir/rahbari",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-rahbari.jpg",
+    "dimensions": [
+      1363,
+      936
+    ],
+    "unmodified_browser_screenshot": true
+  },
+  {
+    "service": "فایل‌های کاربردی",
+    "url": "https://llm.targoman.ir/shares",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-shares.jpg",
+    "dimensions": [
+      1348,
+      926
+    ],
+    "unmodified_browser_screenshot": true
+  },
+  {
+    "service": "راهنمای توسعه‌دهندگان",
+    "url": "https://llm.targoman.ir/devdocs",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-devdocs.jpg",
+    "dimensions": [
+      1363,
+      936
+    ],
+    "unmodified_browser_screenshot": true
+  },
+  {
+    "service": "راهنمای scikit-learn",
+    "url": "https://llm.targoman.ir/sklearn",
+    "captured_on": "2026-09-16",
+    "asset": "static/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-sklearn.jpg",
+    "dimensions": [
+      1363,
+      936
+    ],
+    "unmodified_browser_screenshot": true
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "locale": "fa",
+      "mobile": false,
+      "category": "topic:governance",
+      "clickRelease": true,
+      "selection": true,
+      "reload": true,
+      "escape": true,
+      "outside": true,
+      "tab": true,
+      "arrows": true,
+      "clear": true
+    },
+    {
+      "locale": "fa",
+      "mobile": true,
+      "category": "topic:governance",
+      "clickRelease": true,
+      "selection": true,
+      "reload": true,
+      "escape": true,
+      "outside": true,
+      "tab": true,
+      "arrows": true,
+      "clear": true
+    },
+    {
+      "locale": "en",
+      "mobile": false,
+      "category": "topic:infrastructure",
+      "clickRelease": true,
+      "selection": true,
+      "reload": true,
+      "escape": true,
+      "outside": true,
+      "tab": true,
+      "arrows": true,
+      "clear": true
+    },
+    {
+      "locale": "en",
+      "mobile": true,
+      "category": "topic:infrastructure",
+      "clickRelease": true,
+      "selection": true,
+      "reload": true,
+      "escape": true,
+      "outside": true,
+      "tab": true,
+      "arrows": true,
+      "clear": true
+    },
+    {
+      "locale": "es",
+      "mobile": false,
+      "category": "topic:infrastructure",
+      "clickRelease": true,
+      "selection": true,
+      "reload": true,
+      "escape": true,
+      "outside": true,
+      "tab": true,
+      "arrows": true,
+      "clear": true
+    },
+    {
+      "locale": "es",
+      "mobile": true,
+      "category": "topic:infrastructure",
+      "clickRelease": true,
+      "selection": true,
+      "reload": true,
+      "escape": true,
+      "outside": true,
+      "tab": true,
+      "arrows": true,
+      "clear": true
+    }
+  ],
+  "runtimeErrors": 0
+}

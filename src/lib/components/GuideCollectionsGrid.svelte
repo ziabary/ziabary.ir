@@ -1,5 +1,8 @@
 <script lang="ts">
   import { dev } from '$app/environment';
+  import { onMount } from 'svelte';
+  import { page } from '$app/stores';
+  import { hasLlmPreview } from '$lib/draft-preview.mjs';
   import GuideCollectionCard from '$lib/components/GuideCollectionCard.svelte';
   import type { GuideCollection } from '$lib/guides';
   import { getLocalizedGuideCollection } from '$lib/localized-guide-collections';
@@ -8,13 +11,16 @@
   export let collections: GuideCollection[];
   export let locale: 'fa' | 'en' | 'es' = 'fa';
   export let label: string;
+  let mounted = false;
+  onMount(() => { mounted = true; });
+  $: visibleCollections = collections.filter(collection => collection.slug !== 'llm' || (locale === 'fa' && mounted && hasLlmPreview($page.url.searchParams)));
 </script>
 
 <section class="wrap guide-collections" aria-label={label} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
-  {#each collections as collection (collection.slug)}
+  {#each visibleCollections as collection (collection.slug)}
     {@const preview = dev && locale !== 'fa' && collection.slug === 'gpu-selection' && gpuReviews[locale].draft}
     <GuideCollectionCard {collection} {locale} {preview}
-      href={collection.status === 'draft' && locale === 'fa'
+      href={collection.slug === 'llm' ? '/guides/llm/?show-drafts=true' : collection.status === 'draft' && locale === 'fa'
         ? `/guides/${collection.slug}/?show-drafts=true`
         : locale === 'fa'
           ? `/guides/${collection.slug}/`

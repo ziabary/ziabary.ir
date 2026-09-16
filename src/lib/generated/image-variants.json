@@ -338,6 +338,70 @@
       }
     ]
   },
+  "/images/articles/airllm-layer-wise-inference/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1837280,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/adfd786087b9052a-320.webp",
+        "bytes": 8624
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/adfd786087b9052a-640.webp",
+        "bytes": 26676
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/adfd786087b9052a-960.webp",
+        "bytes": 50726
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/adfd786087b9052a-1440.webp",
+        "bytes": 95882
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/adfd786087b9052a-1672.webp",
+        "bytes": 122028
+      }
+    ]
+  },
+  "/images/articles/airllm-layer-wise-inference/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 122028,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/8207f908f60f9f0c-320.webp",
+        "bytes": 8514
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/8207f908f60f9f0c-640.webp",
+        "bytes": 25804
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/8207f908f60f9f0c-960.webp",
+        "bytes": 48624
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/8207f908f60f9f0c-1440.webp",
+        "bytes": 87248
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/8207f908f60f9f0c-1672.webp",
+        "bytes": 113256
+      }
+    ]
+  },
   "/images/articles/ayar-hoomas/ai-critique.jpg": {
     "width": 1102,
     "height": 620,
@@ -825,6 +889,70 @@
         "width": 1672,
         "src": "/images/responsive/fd4f553c37b90c7e-1672.webp",
         "bytes": 208664
+      }
+    ]
+  },
+  "/images/articles/code-completion-assistant-and-agent/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1518691,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b47178cb445450f7-320.webp",
+        "bytes": 6970
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b47178cb445450f7-640.webp",
+        "bytes": 16732
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b47178cb445450f7-960.webp",
+        "bytes": 30156
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/b47178cb445450f7-1440.webp",
+        "bytes": 54788
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/b47178cb445450f7-1672.webp",
+        "bytes": 68130
+      }
+    ]
+  },
+  "/images/articles/code-completion-assistant-and-agent/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 68130,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/94ddb88ea7af463f-320.webp",
+        "bytes": 6894
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/94ddb88ea7af463f-640.webp",
+        "bytes": 16342
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/94ddb88ea7af463f-960.webp",
+        "bytes": 28718
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/94ddb88ea7af463f-1440.webp",
+        "bytes": 50194
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/94ddb88ea7af463f-1672.webp",
+        "bytes": 62590
       }
     ]
   },
@@ -1437,6 +1565,198 @@
         "width": 822,
         "src": "/images/responsive/a68ab8c275c56711-822.webp",
         "bytes": 27700
+      }
+    ]
+  },
+  "/images/articles/enterprise-rag-model-embedding-reranker/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1851251,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/69cfabc2c1ad9a19-320.webp",
+        "bytes": 10624
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/69cfabc2c1ad9a19-640.webp",
+        "bytes": 30124
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/69cfabc2c1ad9a19-960.webp",
+        "bytes": 55398
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/69cfabc2c1ad9a19-1440.webp",
+        "bytes": 97998
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/69cfabc2c1ad9a19-1672.webp",
+        "bytes": 119756
+      }
+    ]
+  },
+  "/images/articles/enterprise-rag-model-embedding-reranker/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 119756,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/445e923021395c06-320.webp",
+        "bytes": 10262
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/445e923021395c06-640.webp",
+        "bytes": 29478
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/445e923021395c06-960.webp",
+        "bytes": 52640
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/445e923021395c06-1440.webp",
+        "bytes": 91236
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/445e923021395c06-1672.webp",
+        "bytes": 112012
+      }
+    ]
+  },
+  "/images/articles/evaluating-language-models-for-persian/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1653826,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/a4389a95ba23d990-320.webp",
+        "bytes": 8490
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/a4389a95ba23d990-640.webp",
+        "bytes": 21432
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/a4389a95ba23d990-960.webp",
+        "bytes": 36822
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/a4389a95ba23d990-1440.webp",
+        "bytes": 62924
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/a4389a95ba23d990-1672.webp",
+        "bytes": 76056
+      }
+    ]
+  },
+  "/images/articles/evaluating-language-models-for-persian/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 76056,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e1e886bcadb3fcd4-320.webp",
+        "bytes": 8566
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e1e886bcadb3fcd4-640.webp",
+        "bytes": 20996
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e1e886bcadb3fcd4-960.webp",
+        "bytes": 35208
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/e1e886bcadb3fcd4-1440.webp",
+        "bytes": 58448
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/e1e886bcadb3fcd4-1672.webp",
+        "bytes": 70550
+      }
+    ]
+  },
+  "/images/articles/four-bit-model-quantization/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2083457,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/97441426c5750f96-320.webp",
+        "bytes": 14238
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/97441426c5750f96-640.webp",
+        "bytes": 43076
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/97441426c5750f96-960.webp",
+        "bytes": 84066
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/97441426c5750f96-1440.webp",
+        "bytes": 155062
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/97441426c5750f96-1672.webp",
+        "bytes": 193938
+      }
+    ]
+  },
+  "/images/articles/four-bit-model-quantization/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 193938,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/cee242e37e0cc83c-320.webp",
+        "bytes": 14078
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/cee242e37e0cc83c-640.webp",
+        "bytes": 41850
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/cee242e37e0cc83c-960.webp",
+        "bytes": 78736
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/cee242e37e0cc83c-1440.webp",
+        "bytes": 143308
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/cee242e37e0cc83c-1672.webp",
+        "bytes": 180604
       }
     ]
   },
@@ -2425,6 +2745,70 @@
       }
     ]
   },
+  "/images/articles/ollama-vllm-sglang-or-llama-cpp/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1988881,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/d2f95bc432ad229d-320.webp",
+        "bytes": 14162
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/d2f95bc432ad229d-640.webp",
+        "bytes": 41096
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/d2f95bc432ad229d-960.webp",
+        "bytes": 76940
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/d2f95bc432ad229d-1440.webp",
+        "bytes": 137560
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/d2f95bc432ad229d-1672.webp",
+        "bytes": 169800
+      }
+    ]
+  },
+  "/images/articles/ollama-vllm-sglang-or-llama-cpp/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 169800,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/70387122d5c3eb85-320.webp",
+        "bytes": 13880
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/70387122d5c3eb85-640.webp",
+        "bytes": 40700
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/70387122d5c3eb85-960.webp",
+        "bytes": 73436
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/70387122d5c3eb85-1440.webp",
+        "bytes": 129020
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/70387122d5c3eb85-1672.webp",
+        "bytes": 161208
+      }
+    ]
+  },
   "/images/articles/one-linux-hardening-policy-does-not-fit-all/linux-workload-landscape.png": {
     "width": 1024,
     "height": 852,
@@ -2688,6 +3072,70 @@
       }
     ]
   },
+  "/images/articles/single-user-to-enterprise-llm-serving/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1749059,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e3604e9e51398e12-320.webp",
+        "bytes": 11468
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e3604e9e51398e12-640.webp",
+        "bytes": 30652
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e3604e9e51398e12-960.webp",
+        "bytes": 53992
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/e3604e9e51398e12-1440.webp",
+        "bytes": 90552
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/e3604e9e51398e12-1672.webp",
+        "bytes": 109234
+      }
+    ]
+  },
+  "/images/articles/single-user-to-enterprise-llm-serving/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 109234,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/748cb4f059fc7554-320.webp",
+        "bytes": 11306
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/748cb4f059fc7554-640.webp",
+        "bytes": 30004
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/748cb4f059fc7554-960.webp",
+        "bytes": 51592
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/748cb4f059fc7554-1440.webp",
+        "bytes": 85966
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/748cb4f059fc7554-1672.webp",
+        "bytes": 102578
+      }
+    ]
+  },
   "/images/articles/slow-ai-in-iran/cover.webp": {
     "width": 1600,
     "height": 900,
@@ -2717,6 +3165,502 @@
         "width": 1600,
         "src": "/images/responsive/228ff2c9331187c6-1600.webp",
         "bytes": 129120
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1811041,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/7c9b93cc4766a5be-320.webp",
+        "bytes": 17802
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/7c9b93cc4766a5be-640.webp",
+        "bytes": 47114
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/7c9b93cc4766a5be-960.webp",
+        "bytes": 80562
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/7c9b93cc4766a5be-1440.webp",
+        "bytes": 129740
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/7c9b93cc4766a5be-1672.webp",
+        "bytes": 157594
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 200900,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/c8958ceb25fb7197-320.webp",
+        "bytes": 17582
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/c8958ceb25fb7197-640.webp",
+        "bytes": 46094
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/c8958ceb25fb7197-960.webp",
+        "bytes": 77152
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/c8958ceb25fb7197-1440.webp",
+        "bytes": 123216
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/c8958ceb25fb7197-1672.webp",
+        "bytes": 152700
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-chat-rag.jpg": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 55326,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/de9a20d7d19704fa-320.webp",
+        "bytes": 3464
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/de9a20d7d19704fa-640.webp",
+        "bytes": 10272
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/de9a20d7d19704fa-960.webp",
+        "bytes": 18514
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/de9a20d7d19704fa-1363.webp",
+        "bytes": 29494
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-chat-rag.webp": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 41464,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/9569f2518d4c1176-320.webp",
+        "bytes": 3502
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/9569f2518d4c1176-640.webp",
+        "bytes": 10146
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/9569f2518d4c1176-960.webp",
+        "bytes": 17922
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/9569f2518d4c1176-1363.webp",
+        "bytes": 30114
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-devdocs.jpg": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 96023,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/5ae487776e80e60b-320.webp",
+        "bytes": 6138
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/5ae487776e80e60b-640.webp",
+        "bytes": 19364
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/5ae487776e80e60b-960.webp",
+        "bytes": 35120
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/5ae487776e80e60b-1363.webp",
+        "bytes": 60552
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-devdocs.webp": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 83646,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/88f3f0c7cc6b0c1c-320.webp",
+        "bytes": 6140
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/88f3f0c7cc6b0c1c-640.webp",
+        "bytes": 19260
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/88f3f0c7cc6b0c1c-960.webp",
+        "bytes": 34736
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/88f3f0c7cc6b0c1c-1363.webp",
+        "bytes": 61156
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-rahbari.jpg": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 33033,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/3d2c7820a09da291-320.webp",
+        "bytes": 1940
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/3d2c7820a09da291-640.webp",
+        "bytes": 5480
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/3d2c7820a09da291-960.webp",
+        "bytes": 9710
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/3d2c7820a09da291-1363.webp",
+        "bytes": 16210
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-rahbari.webp": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 23362,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/c5e39b83a76612c3-320.webp",
+        "bytes": 1924
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/c5e39b83a76612c3-640.webp",
+        "bytes": 5414
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/c5e39b83a76612c3-960.webp",
+        "bytes": 9530
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/c5e39b83a76612c3-1363.webp",
+        "bytes": 16742
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-shares.jpg": {
+    "width": 1348,
+    "height": 926,
+    "originalBytes": 71614,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b7641c0bd2cc7ef5-320.webp",
+        "bytes": 3864
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b7641c0bd2cc7ef5-640.webp",
+        "bytes": 11362
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b7641c0bd2cc7ef5-960.webp",
+        "bytes": 21804
+      },
+      {
+        "width": 1348,
+        "src": "/images/responsive/b7641c0bd2cc7ef5-1348.webp",
+        "bytes": 33302
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-shares.webp": {
+    "width": 1348,
+    "height": 926,
+    "originalBytes": 45896,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/49e0afd7ffa12689-320.webp",
+        "bytes": 3832
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/49e0afd7ffa12689-640.webp",
+        "bytes": 11392
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/49e0afd7ffa12689-960.webp",
+        "bytes": 21538
+      },
+      {
+        "width": 1348,
+        "src": "/images/responsive/49e0afd7ffa12689-1348.webp",
+        "bytes": 33640
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-sklearn.jpg": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 186962,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/073864e9f737572e-320.webp",
+        "bytes": 14538
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/073864e9f737572e-640.webp",
+        "bytes": 44186
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/073864e9f737572e-960.webp",
+        "bytes": 80212
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/073864e9f737572e-1363.webp",
+        "bytes": 131814
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-sklearn.webp": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 183878,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/93146445cf2fff68-320.webp",
+        "bytes": 14552
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/93146445cf2fff68-640.webp",
+        "bytes": 43936
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/93146445cf2fff68-960.webp",
+        "bytes": 78016
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/93146445cf2fff68-1363.webp",
+        "bytes": 132608
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-summarization.jpg": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 172610,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/942b19bb330de7ff-320.webp",
+        "bytes": 7578
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/942b19bb330de7ff-640.webp",
+        "bytes": 22980
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/942b19bb330de7ff-960.webp",
+        "bytes": 42016
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/942b19bb330de7ff-1363.webp",
+        "bytes": 70456
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-summarization.webp": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 85364,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/4bce1310eaa73f46-320.webp",
+        "bytes": 7702
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/4bce1310eaa73f46-640.webp",
+        "bytes": 22972
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/4bce1310eaa73f46-960.webp",
+        "bytes": 41614
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/4bce1310eaa73f46-1363.webp",
+        "bytes": 72188
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-translation.jpg": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 139437,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/72d35edbce2a1f6a-320.webp",
+        "bytes": 5552
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/72d35edbce2a1f6a-640.webp",
+        "bytes": 17260
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/72d35edbce2a1f6a-960.webp",
+        "bytes": 31708
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/72d35edbce2a1f6a-1363.webp",
+        "bytes": 54782
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-translation.webp": {
+    "width": 1363,
+    "height": 936,
+    "originalBytes": 67514,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/98fef146dc13db85-320.webp",
+        "bytes": 5698
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/98fef146dc13db85-640.webp",
+        "bytes": 17226
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/98fef146dc13db85-960.webp",
+        "bytes": 31032
+      },
+      {
+        "width": 1363,
+        "src": "/images/responsive/98fef146dc13db85-1363.webp",
+        "bytes": 56392
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/services-homepage.jpg": {
+    "width": 1348,
+    "height": 1066,
+    "originalBytes": 74317,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/c8487ffd58b2354f-320.webp",
+        "bytes": 5616
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/c8487ffd58b2354f-640.webp",
+        "bytes": 15432
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/c8487ffd58b2354f-960.webp",
+        "bytes": 26800
+      },
+      {
+        "width": 1348,
+        "src": "/images/responsive/c8487ffd58b2354f-1348.webp",
+        "bytes": 41736
+      }
+    ]
+  },
+  "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/services-homepage.webp": {
+    "width": 1348,
+    "height": 1066,
+    "originalBytes": 59150,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/003421851929bbbb-320.webp",
+        "bytes": 5622
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/003421851929bbbb-640.webp",
+        "bytes": 15122
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/003421851929bbbb-960.webp",
+        "bytes": 26438
+      },
+      {
+        "width": 1348,
+        "src": "/images/responsive/003421851929bbbb-1348.webp",
+        "bytes": 42154
       }
     ]
   },
@@ -3077,6 +4021,70 @@
         "width": 1600,
         "src": "/images/responsive/16f9dff2f2fd7f2a-1600.webp",
         "bytes": 88720
+      }
+    ]
+  },
+  "/images/articles/true-llm-cost-buy-rent-or-api/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2010807,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/7329792f1dad8ff3-320.webp",
+        "bytes": 12906
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/7329792f1dad8ff3-640.webp",
+        "bytes": 36140
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/7329792f1dad8ff3-960.webp",
+        "bytes": 66220
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/7329792f1dad8ff3-1440.webp",
+        "bytes": 122710
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/7329792f1dad8ff3-1672.webp",
+        "bytes": 152986
+      }
+    ]
+  },
+  "/images/articles/true-llm-cost-buy-rent-or-api/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 152986,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b93d8569ca05b50e-320.webp",
+        "bytes": 12640
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b93d8569ca05b50e-640.webp",
+        "bytes": 34942
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b93d8569ca05b50e-960.webp",
+        "bytes": 63168
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/b93d8569ca05b50e-1440.webp",
+        "bytes": 113832
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/b93d8569ca05b50e-1672.webp",
+        "bytes": 143162
       }
     ]
   },

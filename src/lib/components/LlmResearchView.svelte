@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { browser } from '$app/environment';
   import LlmDataView from './LlmDataView.svelte';
   import type { LlmGuideRepository } from '$lib/llm/schema';
   import type { LlmViewId } from '$lib/llm/views';
@@ -17,7 +18,8 @@
   let deploymentMode: ResearchControls['deploymentMode'] = 'routes';
   let model = '', cardCount = '';
   let previousRouteModel = '';
-  $: routeModel = ($page.url.searchParams.get('view') ?? 'hardware-feasibility') === id ? $page.url.searchParams.get('research-model') ?? '' : '';
+  $: routeParams = browser ? $page.url.searchParams : new URLSearchParams();
+  $: routeModel = (routeParams.get('view') ?? 'hardware-feasibility') === id ? routeParams.get('research-model') ?? '' : '';
   $: if (routeModel !== previousRouteModel) {
     model = routeModel; previousRouteModel = routeModel;
     if (id === 'benchmarks' && routeModel) {

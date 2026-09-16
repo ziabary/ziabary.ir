@@ -48,6 +48,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aalwi",
+    "destination": "https://ziabary.ir/articles/airllm-layer-wise-inference/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aahafsai",
     "destination": "https://ziabary.ir/articles/ayar-hoomas-assistant-for-startups-and-investors/",
     "status": 301,
@@ -68,6 +74,12 @@
   {
     "source": "https://ziabary.ir/?t=acgfa",
     "destination": "https://ziabary.ir/articles/choosing-gpu-for-ai/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=accaaa",
+    "destination": "https://ziabary.ir/articles/code-completion-assistant-and-agent/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -134,6 +146,24 @@
   {
     "source": "https://ziabary.ir/?t=ae2ftts",
     "destination": "https://ziabary.ir/articles/elecomp-29-from-technology-to-synergy/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=aermer",
+    "destination": "https://ziabary.ir/articles/enterprise-rag-model-embedding-reranker/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=aelmfp",
+    "destination": "https://ziabary.ir/articles/evaluating-language-models-for-persian/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=afbmq",
+    "destination": "https://ziabary.ir/articles/four-bit-model-quantization/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -234,6 +264,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=alor42v4",
+    "destination": "https://ziabary.ir/articles/llms-on-rtx-4090-24gb-vs-48gb/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=albd",
     "destination": "https://ziabary.ir/articles/longest-bachelors-degree/",
     "status": 301,
@@ -270,6 +306,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aovsolc",
+    "destination": "https://ziabary.ir/articles/ollama-vllm-sglang-or-llama-cpp/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aolhpdnfa",
     "destination": "https://ziabary.ir/articles/one-linux-hardening-policy-does-not-fit-all/",
     "status": 301,
@@ -294,14 +336,32 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=armsftt",
+    "destination": "https://ziabary.ir/articles/right-model-size-for-the-task/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=asmwad",
     "destination": "https://ziabary.ir/articles/seventy-million-words-a-day/",
     "status": 301,
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=asutels",
+    "destination": "https://ziabary.ir/articles/single-user-to-enterprise-llm-serving/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=asaii",
     "destination": "https://ziabary.ir/articles/slow-ai-in-iran/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=at3cror4",
+    "destination": "https://ziabary.ir/articles/targoman-300-concurrent-requests-one-rtx-4090/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -320,6 +380,12 @@
   {
     "source": "https://ziabary.ir/?t=atriw",
     "destination": "https://ziabary.ir/articles/third-revolution-in-warfare/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=atlcbroa",
+    "destination": "https://ziabary.ir/articles/true-llm-cost-buy-rent-or-api/",
     "status": 301,
     "preserveQueryString": false
   },

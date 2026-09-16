@@ -1,0 +1,10 @@
+{
+  "publicCard": false,
+  "publicContent": false,
+  "pluralFlagRejected": true,
+  "exactFlagWorks": true,
+  "correctCardImage": true,
+  "internalNavigationPreservesFlag": true,
+  "previewDoesNotPersist": true,
+  "runtimeErrors": 0
+}

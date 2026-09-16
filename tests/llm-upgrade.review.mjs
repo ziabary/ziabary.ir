@@ -6,7 +6,7 @@ const output=process.env.LLM_REVIEW_OUTPUT??'docs/reviews/local-2026-09-15/llm-v
 const report={origin,checks:[],screenshots:[]};
 async function E(expression){const result=await call('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(result.exceptionDetails)throw Error(JSON.stringify(result.exceptionDetails));return result.result.value;}
 async function wait(expression){for(let i=0;i<80;i++){if(await E(expression))return;await pause(150);}throw Error('Timed out: '+expression);}
-async function nav(path=''){await call('Page.navigate',{url:origin+'/guides/llm/?show-drafts=true'+path});await wait(`document.querySelectorAll('#model-catalog tr[data-row-id]').length===87`);await E(`document.documentElement.style.scrollBehavior='auto'`);await pause(400);}
+async function nav(path=''){await call('Page.navigate',{url:origin+'/guides/llm/?'+path});await wait(`document.querySelectorAll('#model-catalog tr[data-row-id]').length===87`);await E(`document.documentElement.style.scrollBehavior='auto'`);await pause(400);}
 async function frame(selector){await E(`window.scrollTo({top:document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect().top+scrollY-100,behavior:'instant'})`);await pause(250);}
 async function shot(name){await pause(200);const result=await call('Page.captureScreenshot',{format:'png'});await fs.writeFile(output+'/'+name+'.png',Buffer.from(result.data,'base64'));report.screenshots.push(name+'.png');}
 async function select(selector,value){await E(`{const e=document.querySelector(${JSON.stringify(selector)});e.value=${JSON.stringify(String(value))};e.dispatchEvent(new Event('change',{bubbles:true}));}`);await pause(250);}
@@ -85,8 +85,8 @@ try{
  const links=await E(`[...document.querySelectorAll('.view-reading a, .hardware-picker a, .related a')].map(a=>a.href)`);const broken=[];
  for(const href of [...new Set(links)]){const url=new URL(href);if(url.origin!==origin)continue;const response=await fetch(url);if(!response.ok)broken.push(href);else if(url.hash&&!url.pathname.includes('/guides/llm')){const html=await response.text();if(!html.includes('id="'+decodeURIComponent(url.hash.slice(1))+'"'))broken.push(href);}}
  assert.deepEqual(broken,[]);report.internalLinksChecked=links.length;
- await call('Page.navigate',{url:origin+'/guides/llm/?research-model=model:qwen-qwen3-8b'});await pause(700);assert.equal(await E(`!!document.querySelector('.llm-guide')`),false);
- report.checks.push('local logos, external-link targets, internal article fragments and strict draft gate remain correct');
+ await call('Page.navigate',{url:origin+'/guides/llm/?research-model=model:qwen-qwen3-8b'});await pause(700);await wait(`!!document.querySelector('.llm-guide')`);assert.equal(await E(`!!document.querySelector('.llm-guide')`),true);
+ report.checks.push('local logos, external-link targets, internal article fragments and public guide remain correct');
  report.runtimeErrors=events.filter(e=>e.method==='Runtime.exceptionThrown');assert.deepEqual(report.runtimeErrors,[]);
  await fs.writeFile(output+'/browser-review.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }finally{await call('Page.close');socket.end();}

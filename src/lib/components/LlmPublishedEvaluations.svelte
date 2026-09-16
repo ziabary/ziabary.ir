@@ -31,8 +31,8 @@
         {#if result.comparisonGroup}<div><dt>گروه مقایسه در منبع</dt><dd><bdi>{result.comparisonGroup}</bdi></dd></div>{/if}
         <div><dt>مدل نام‌گذاری‌شده در گزارش</dt><dd dir="auto">{result.reportedModelName}</dd></div>
         <div><dt>Benchmark / نسخه</dt><dd dir="auto">{result.benchmark}{#if result.benchmarkVersion} · {result.benchmarkVersion}{/if}</dd></div>
-        <div><dt>سنجه و واحد</dt><dd dir="auto">{result.metric} · {result.unit === 'percent' ? 'درصد در همان سنجه' : result.unit === 'score' ? 'امتیاز همان آزمون' : result.unit}</dd></div>
-        {#if result.reportedPrecision}<div><dt>precision گزارش‌شده</dt><dd dir="auto">{result.reportedPrecision}</dd></div>{/if}
+        <div><dt>سنجه و واحد</dt><dd dir="auto">{result.metric} · {result.unit === 'percent' ? 'درصد' : result.unit === 'score' ? 'امتیاز' : result.unit}</dd></div>
+        {#if result.reportedPrecision}<div><dt>دقت عددی</dt><dd dir="auto">{result.reportedPrecision}</dd></div>{/if}
         {#if result.evaluatedRevision}<div><dt>commit وزن آزموده‌شده</dt><dd dir="auto">{result.evaluatedRevision}</dd></div>{/if}
         {#if result.sourceDocumentRevision}<div><dt>commit سند منبع</dt><dd dir="auto">{result.sourceDocumentRevision}</dd></div>{/if}
         {#if result.language}<div><dt>زبان</dt><dd>{result.language === 'fa' ? 'فارسی' : result.language === 'multilingual' ? 'چندزبانه' : result.language}</dd></div>{/if}

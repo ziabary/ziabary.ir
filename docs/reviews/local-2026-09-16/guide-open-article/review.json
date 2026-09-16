@@ -1,0 +1,72 @@
+[
+  {
+    "name": "gpu",
+    "href": "/articles/gpu-types-for-ai/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "label": "بازکردن مقاله در تب جدید",
+    "width": 40,
+    "height": 40,
+    "buttonWidth": 40,
+    "buttonHeight": 40,
+    "footer": "/articles/gpu-types-for-ai/",
+    "newTab": true,
+    "mobile": true
+  },
+  {
+    "name": "ztai",
+    "href": "/articles/from-zero-trust-to-zero-trust-ai/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "label": "بازکردن مقاله در تب جدید",
+    "width": 40,
+    "height": 40,
+    "buttonWidth": 40,
+    "buttonHeight": 40,
+    "footer": "/articles/from-zero-trust-to-zero-trust-ai/",
+    "newTab": true,
+    "mobile": true
+  },
+  {
+    "name": "gpu-en",
+    "href": "/en/articles/gpu-types-for-ai-en/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "label": "Open article in a new tab",
+    "width": 40,
+    "height": 40,
+    "buttonWidth": 40,
+    "buttonHeight": 40,
+    "footer": "/en/articles/gpu-types-for-ai-en/",
+    "newTab": true,
+    "mobile": true
+  },
+  {
+    "name": "gpu-es",
+    "href": "/es/articles/gpu-types-for-ai-es/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "label": "Abrir artículo en una pestaña nueva",
+    "width": 40,
+    "height": 40,
+    "buttonWidth": 40,
+    "buttonHeight": 40,
+    "footer": "/es/articles/gpu-types-for-ai-es/",
+    "newTab": true,
+    "mobile": true
+  },
+  {
+    "name": "llm",
+    "href": "/articles/llms-on-rtx-4090-24gb-vs-48gb/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "label": "بازکردن مقاله در تب جدید",
+    "width": 40,
+    "height": 40,
+    "buttonWidth": 40,
+    "buttonHeight": 40,
+    "footer": "/articles/llms-on-rtx-4090-24gb-vs-48gb/",
+    "newTab": true,
+    "mobile": true
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "name": "fa",
+      "cover": "/images/articles/true-llm-cost-buy-rent-or-api/cover.webp",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "jpegBytes": 242200,
+      "richClipboard": true
+    },
+    {
+      "name": "en",
+      "cover": "/images/articles/gpu-inference-latency-throughput/cover.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "jpegBytes": 234065,
+      "richClipboard": true
+    },
+    {
+      "name": "es",
+      "cover": "/images/articles/gpu-inference-latency-throughput/cover.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "jpegBytes": 234065,
+      "richClipboard": true
+    },
+    {
+      "name": "gpu",
+      "cover": "/images/articles/gpu-types-for-ai/cover.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "jpegBytes": 359513,
+      "richClipboard": true
+    },
+    {
+      "name": "ztai",
+      "cover": "/images/articles/from-zero-trust-to-zero-trust-ai/cover.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "jpegBytes": 156559,
+      "richClipboard": true
+    },
+    {
+      "name": "llm",
+      "cover": "/images/articles/llms-on-rtx-4090-24gb-vs-48gb/cover.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "jpegBytes": 319479,
+      "richClipboard": true
+    }
+  ],
+  "imageFailureFallback": true,
+  "runtimeErrors": 0,
+  "shareApi": "Mocked; real JPEG conversion and rich ClipboardItems tested. Delivery/rendering in destination apps requires device testing."
+}

@@ -258,7 +258,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'model-catalog', sectionId: 'model-catalog', sectionNumber: 1,
     shortTitle: 'شناسنامهٔ مدل‌ها', title: 'شناسنامهٔ مدل‌ها',
-    description: 'مشخصات اعلام‌شدهٔ مدل‌ها، کاربردهای مستند و شروط مؤثر بر انتخاب.',
+    description: 'اندازه، معماری، طول متن و مجوز مدل‌ها را مقایسه کنید.',
     tableLabel: 'جدول شناسنامهٔ مدل‌های زبانی',
     compact: true, hideEmptyColumns: true,
     optionalColumns: [{ key: 'released-on', label: 'تاریخ انتشار', sortable: true }],
@@ -320,7 +320,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'model-suitability', sectionId: 'model-suitability', sectionNumber: 2,
     shortTitle: 'راهنمای کاربرد', title: 'تناسب مدل با کاربرد',
-    description: 'نقش هر مدل، ویژگی متمایز و شرایط شروع؛ معرفی کاربرد از نتیجهٔ آزمون کیفیت جداست.',
+    description: 'مدل مناسب برای گفت‌وگو، برنامه‌نویسی، جست‌وجو و کار با اسناد.',
     tableLabel: 'ماتریس تناسب مدل با کاربرد',
     compact: true, hideEmptyColumns: true,
     optionalColumns: [],
@@ -357,7 +357,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'hardware-feasibility', sectionId: 'hardware-feasibility', sectionNumber: 3,
     shortTitle: 'اجرا روی سخت‌افزار', title: 'امکان اجرا روی سخت‌افزار',
-    description: 'هر ردیف شرایط منطقی مشترک مدل، artifact، stack و workload را نگه می‌دارد؛ هر ستون deployment و feasibility همان سخت‌افزار است.',
+    description: 'حافظهٔ لازم برای مدل را با ظرفیت سخت‌افزار مقایسه کنید.',
     tableLabel: 'ماتریس امکان اجرای artifact روی پیکربندی سخت‌افزار',
     defaultColumns: [
       { key: 'artifact-execution', label: 'Artifact / اجرای دقیق', sortable: true },
@@ -399,7 +399,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'software-products', sectionId: 'serving-software', sectionNumber: 4, subviewNumber: 1,
     shortTitle: 'مقایسهٔ نرم‌افزارها', title: 'مقایسهٔ نرم‌افزارها',
-    description: 'انتخاب محصول و نسخه بر پایهٔ نیاز و نقش، بدون الزام به انتخاب قبلی یک مدل.',
+    description: 'نرم‌افزارهای اجرای محلی و سرویس‌دهی مدل‌ها را مقایسه کنید.',
     tableLabel: 'جدول مقایسهٔ محصول و نسخهٔ نرم‌افزارهای اجرا و سرویس‌دهی',
     compact: true, hideEmptyColumns: true,
     optionalColumns: [{ key: 'released-on', label: 'تاریخ انتشار', sortable: true }],
@@ -459,7 +459,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'deployment-compatibility', sectionId: 'serving-software', sectionNumber: 4, subviewNumber: 2,
     shortTitle: 'سازگاری استقرار', title: 'سازگاری مدل و پیکربندی اجرا',
-    description: 'هر ردیف مدل و revision، artifact، ServingStack نسخه‌مند، سخت‌افزار و workload دقیق را به هم متصل می‌کند.',
+    description: 'پشتیبانی نرم‌افزار از مدل، قالب وزن و سخت‌افزار.',
     tableLabel: 'جدول سازگاری مدل و پیکربندی اجرای دقیق',
     referenceLinks: [{ label: 'مخزن رسمی AirLLM', href: 'https://github.com/lyogavin/airllm' }],
     defaultColumns: [
@@ -514,7 +514,7 @@ export const llmViewConfigs: LlmViewConfig[] = [
   {
     id: 'benchmarks', sectionId: 'benchmarks', sectionNumber: 5,
     shortTitle: 'بنچمارک و شواهد', title: 'بنچمارک و شواهد',
-    description: 'هر ردیف یک اجرای آزمون با deployment، محیط، workload، معیار و خروجی خام مشخص است.',
+    description: 'نتایج سرعت و تأخیر، همراه با سخت‌افزار و تنظیمات آزمون.',
     tableLabel: 'جدول اجرای بنچمارک مدل‌های زبانی',
     defaultColumns: [
       { key: 'run-model', label: 'اجرا / مدل / artifact', sortable: true },

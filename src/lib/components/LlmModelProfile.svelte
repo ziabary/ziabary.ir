@@ -19,7 +19,7 @@
   let previousPanel = '';
   $: if (dialog && previousPanel !== selectedPanel) { dialog.scrollTop = 0; previousPanel = selectedPanel; }
   const numbers = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 2 });
-  const sections = [{id:'overview',label:'معرفی و کاربرد'}, {id:'downloads',label:'دریافت مدل'}, {id:'run',label:'راه‌اندازی'}, {id:'infrastructure',label:'حافظه و اجرا'}, {id:'quality',label:'کیفیت منتشرشده'}, {id:'sources',label:'منابع و مجوز'}];
+  const sections = [{id:'overview',label:'معرفی و کاربرد'}, {id:'downloads',label:'دریافت مدل'}, {id:'run',label:'راه‌اندازی'}, {id:'infrastructure',label:'حافظه و اجرا'}, {id:'quality',label:'نتایج آزمون‌ها'}, {id:'sources',label:'منابع و مجوز'}];
   $: profile = repository.modelProfiles.find(item => item.modelVersionId === modelId);
   $: model = repository.models.find(item => item.id === modelId);
   $: row = model ? adaptModelCatalog(repository).find(item => item.id === modelId) : undefined;
@@ -73,10 +73,10 @@
               <p class="download-meta">{#if item.totalBytes !== undefined}<bdi>{numbers.format(item.totalBytes / 2 ** 30)} GiB</bdi> · {numbers.format(item.files.length)} فایل وزن{:else}{item.sizeDescription}{/if}{#if item.precision} · دقت: <bdi>{item.precision}</bdi>{/if}{#if item.quantizationMethod} · روش کوانت: <bdi>{item.quantizationMethod}</bdi>{/if}</p>
               {#if item.scopeNote}<p>{item.scopeNote}</p>{/if}
               <div class="download-actions"><a href={item.repositoryUrl} target="_blank" rel="noopener noreferrer">صفحهٔ نسخه ↗</a><a href={item.filesUrl} target="_blank" rel="noopener noreferrer">{item.format === 'ollama' ? 'مشاهدهٔ بسته' : 'فهرست فایل‌ها'} ↗</a></div>
-              <details><summary>فایل‌ها و انتساب نسخه</summary>
+              <details><summary>فایل‌ها و نسخهٔ مدل</summary>
                 <p>مدل مبنا: <bdi>{item.baseModelRepository}</bdi></p>
-                {#if item.baseRevision}<p>revision مدل مبنا: <bdi>{item.baseRevision}</bdi></p>{/if}
-                {#if item.repositoryRevision}<p>revision مخزن فایل: <code>{item.repositoryRevision}</code></p>{/if}
+                {#if item.baseRevision}<p>نسخهٔ مدل مبنا: <bdi>{item.baseRevision}</bdi></p>{/if}
+                {#if item.repositoryRevision}<p>نسخهٔ مخزن فایل: <code>{item.repositoryRevision}</code></p>{/if}
                 {#if item.files.length}<ul class="file-list">{#each item.files as file}<li><a href={file.url} target="_blank" rel="noopener noreferrer" dir="ltr">{file.path} ↗</a>{#if file.bytes !== undefined}<small>{numbers.format(file.bytes)} بایت</small>{/if}</li>{/each}</ul>{/if}
                 <p class="muted">بررسی فهرست فایل‌ها: <time datetime={item.verifiedOn}>{item.verifiedOn}</time></p>
                 <LlmEvidence ids={item.evidenceIds} evidence={repository.evidence} />
@@ -101,7 +101,7 @@
         {#if results.length}<LlmPublishedEvaluations {results} evidence={repository.evidence} />{:else}<p>نتیجهٔ عددی برای این مدل در راهنما ثبت نشده است.</p><a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">کارت مدل ↗</a>{/if}
       {:else}
         <h3>منابع، مجوز و تاریخ‌ها</h3>
-        <dl class="source-facts">{#each [{key:'license-url',label:'مجوز'}, {key:'license-restrictions',label:'شروط مجوز'}, {key:'released-on',label:'انتشار مدل'}, {key:'last-reviewed',label:'بازبینی شناسنامه'}, {key:'revision',label:'revision شناسنامه'}] as item}<div><dt>{item.label}</dt><dd><LlmValue value={row.details[item.key]} /></dd></div>{/each}</dl>
+        <dl class="source-facts">{#each [{key:'license-url',label:'مجوز'}, {key:'license-restrictions',label:'شروط مجوز'}, {key:'released-on',label:'انتشار مدل'}, {key:'last-reviewed',label:'آخرین بررسی'}, {key:'revision',label:'نسخهٔ ثبت‌شده'}].filter(item => row.details[item.key]?.state === 'known') as item}<div><dt>{item.label}</dt><dd><LlmValue value={row.details[item.key]} /></dd></div>{/each}</dl>
         <a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">صفحهٔ رسمی مدل ↗</a><LlmEvidence ids={profile.evidenceIds} evidence={repository.evidence} />
       {/if}
     </div>

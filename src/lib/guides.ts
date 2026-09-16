@@ -1,5 +1,6 @@
 import { getArticle } from '$lib/content';
 import { collectionState } from './publication.mjs';
+import { llmGuideCollection } from './llm/collection';
 
 export type GuideItemKind = 'article' | 'interactive' | 'checklist' | 'tool';
 
@@ -15,6 +16,7 @@ export type GuideCollection = {
   slug: string;
   status: 'draft' | 'planned' | 'published';
   featured?: boolean;
+  articleCount?: number;
   title: string;
   subtitle: string;
   eyebrow: string;
@@ -132,6 +134,7 @@ const editorialGuideCollections: GuideCollection[] = [
       }
     ]
   },
+  llmGuideCollection,
   {
     slug: 'zero-trust-ai',
     status: 'published',
@@ -323,7 +326,8 @@ const editorialGuideCollections: GuideCollection[] = [
 // counts in public guides. Publishing the article makes this entry visible too.
 export const guideCollections: GuideCollection[] = editorialGuideCollections.map((collection) => ({
   ...collection,
-  ...collectionState(collection, getArticle) as Pick<GuideCollection, 'status' | 'items'>
+  ...collectionState(collection, getArticle) as Pick<GuideCollection, 'status' | 'items'>,
+  ...(collection.status === 'draft' ? { status: 'draft' as const } : {})
 }));
 
 export function getGuideCollection(slug: string) {
@@ -331,7 +335,7 @@ export function getGuideCollection(slug: string) {
 }
 
 export function articleCount(collection: GuideCollection) {
-  return collection.items.filter((item) => item.kind === 'article').length;
+  return collection.articleCount ?? collection.items.filter((item) => item.kind === 'article').length;
 }
 
 export function nonArticleCount(collection: GuideCollection) {

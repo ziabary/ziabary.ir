@@ -20,6 +20,11 @@ export function draftReadingHref(href, draftSlugs) {
   if (url.origin !== 'https://ziabary.ir') return href;
   const article = /^\/articles\/([^/]+)\/?$/.exec(url.pathname);
   if (!/^\/guides\/llm\/?$/.test(url.pathname) && !(article && draftSlugs.includes(article[1]))) return href;
-  url.searchParams.set('show-drafts', 'true');
+  url.searchParams.set(/^\/guides\/llm\/?$/.test(url.pathname) ? 'show-drafts' : 'show-drafts', 'true');
   return `${url.pathname}${url.search}${url.hash}`;
+}
+
+/** @param {URLSearchParams} searchParams */
+export function hasLlmPreview(searchParams) {
+  return searchParams.get('show-drafts') === 'true';
 }

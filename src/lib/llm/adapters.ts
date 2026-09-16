@@ -58,7 +58,7 @@ function licenseDetails(license: ModelVersion['license']): Record<string, ViewVa
     license: datum(license.name),
     'license-url': url.state === 'known' && /^https?:\/\//.test(String(url.raw)) ? { ...url, href: String(url.raw) } : url,
     'commercial-use': datum(license.commercialUse, (value) => ({ allowed: 'مجاز با رعایت شروط', restricted: 'مشروط / محدود', prohibited: 'ممنوع', unknown: 'نامعلوم' }[value] ?? value)),
-    'license-restrictions': license.restrictions?.length ? list(license.restrictions, license.evidenceIds) : unknown('unknown', 'شرط اضافی در این رکورد ثبت نشده؛ متن مجوز ملاک است.')
+    'license-restrictions': license.restrictions?.length ? list(license.restrictions, license.evidenceIds) : unknown('unknown', 'شرط اضافی ثبت نشده است.')
   };
 }
 
@@ -231,7 +231,7 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
         'total-parameters': total, 'active-parameters': active,
         'parameter-scope': list((model.parameterCounts ?? []).map(item => `${item.label}: ${item.approximate ? 'حدود ' : ''}${viewText(formatParameter(item.value))}${item.value.note ? '؛ ' + item.value.note : ''}`)),
         'declared-context': formatToken(model.declaredContext), 'evaluated-context': formatToken(model.evaluatedContext),
-        'context-extension': model.contextExtension ? { ...compactToken(model.contextExtension.capacity), note: model.contextExtension.condition } : unknown('unknown', 'افزایش مستند زمینه در این رکورد ثبت نشده است.'),
+        'context-extension': model.contextExtension ? { ...compactToken(model.contextExtension.capacity), note: model.contextExtension.condition } : unknown('unknown', 'روشی برای افزایش طول متن ثبت نشده است.'),
         'weight-files': list(repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).map((artifact) => `${artifact.weightPrecision.toUpperCase()}: ${viewText(formatMemory(artifact.size))} روی دیسک`)),
         'weight-caveat': known('حجم فایل وزن، حداقل VRAM کل اجرا نیست؛ KV cache، ورودی، حافظهٔ موقت و روش offload جداگانه محاسبه می‌شوند.'),
         'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
@@ -518,7 +518,7 @@ function capabilitySummary(repository: LlmGuideRepository, releaseId: string, ca
 }
 
 function noReviewRecord() {
-  return unknown('unknown', 'رکورد بررسی ثبت نشده؛ نتیجهٔ مثبت یا منفی ندارد');
+  return unknown('unknown', 'هنوز بررسی نشده است.');
 }
 
 export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRow[] {

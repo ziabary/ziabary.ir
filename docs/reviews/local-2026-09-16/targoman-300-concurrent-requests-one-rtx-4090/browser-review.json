@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "src": "/images/responsive/9e378b47488b959f-960.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-translation.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-summarization.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-chat-rag.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-rahbari.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-shares.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-devdocs.webp",
+      "width": 740,
+      "loaded": true
+    },
+    {
+      "src": "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/service-sklearn.webp",
+      "width": 740,
+      "loaded": true
+    }
+  ],
+  "externalLinks": true,
+  "share": "/articles/targoman-300-concurrent-requests-one-rtx-4090/",
+  "date": "2026-06-08",
+  "includedInLocalSitemap": true,
+  "runtimeErrors": 0
+}

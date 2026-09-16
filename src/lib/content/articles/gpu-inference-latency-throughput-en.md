@@ -210,6 +210,8 @@ Among the sources reviewed for this article, the LPX description rests on NVIDIA
 
 A service may achieve a high token rate in a benchmark while a substantial share of requests exceeds the permitted latency. That benchmark's nominal capacity is not dependable serving capacity.
 
+In [our Targoman deployment under load (report in Persian)](/articles/targoman-300-concurrent-requests-one-rtx-4090/#بالاخره-زیر-آن-فشار-چه-کیفیتی-داشتیم), responses usually began in less than a second at low load; under pressure, the wait could reach the 20-second cutoff, at which point a request with no response started was cancelled. The system had roughly 300 concurrent requests during that incident, but not all completed successfully. This illustrates why usable capacity must count responses delivered within an acceptable time, rather than simply the requests present in the system.
+
 **Goodput** addresses this issue by counting requests that meet specified constraints. In AIPerf, it is also distinct from the proportion of requests that comply with those constraints: a service rejecting many requests should not be judged successful simply because the remaining responses are fast. [AIPerf goodput guide](https://github.com/ai-dynamo/aiperf/blob/main/docs/tutorials/goodput.md)
 
 For a particular service, an initial target might be: “At least 95% of requests must have both TTFT below two seconds and TPOT below 50 milliseconds.” These numbers are examples and should be derived from product requirements.

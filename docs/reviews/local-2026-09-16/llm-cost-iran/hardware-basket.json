@@ -1,0 +1,58 @@
+{
+  "observed_date": "2026-09-16",
+  "currency": "toman",
+  "scope": "Retail component basket for one tower workstation; not an assembled server quote or complete service TCO.",
+  "items": [
+    {
+      "evidence": "drhp.json",
+      "url": "https://drhp.ir/Product/nvidia-rtx-4090-founders-edition-24gb-gddr6x/",
+      "toman": 529000000
+    },
+    {
+      "evidence": "bom-cpu.json",
+      "url": "https://gsiran.com/products/cpu-amd-ryzen-9-9950x-tray",
+      "toman": 119000000
+    },
+    {
+      "evidence": "bom-board.json",
+      "url": "https://gsiran.com/products/motherboard-gigabyte-x870-gaming-x-wifi7",
+      "toman": 61200000
+    },
+    {
+      "evidence": "bom-ram.json",
+      "url": "https://teccaf.com/product/g-skill-trident-z5-rgb-64gb-6000-black-cl36-dual-ddr5-ram/",
+      "toman": 400000000
+    },
+    {
+      "evidence": "bom-ssd.json",
+      "url": "https://gsiran.com/products/ssd-samsung-990-pro-2tb-samsong",
+      "toman": 84700000
+    },
+    {
+      "evidence": "bom-psu.json",
+      "url": "https://pcccenter.com/product/%D9%85%D9%86%D8%A8%D8%B9-%D8%AA%D8%BA%D8%B0%DB%8C%D9%87-%DA%AF%D8%B1%DB%8C%D9%86-gp1000b-edge/",
+      "toman": 49400000
+    },
+    {
+      "evidence": "bom-cooler.json",
+      "url": "https://gsiran.com/products/cpu-cooler-deepcool-lt360-argb-black",
+      "toman": 21900000
+    },
+    {
+      "evidence": "bom-case.json",
+      "url": "https://gsiran.com/products/case-z5-green",
+      "toman": 15900000
+    }
+  ],
+  "total_toman": 1281100000,
+  "comparison": {
+    "months": 24,
+    "iranserver_monthly": 91000000,
+    "ferdowsi_hourly": 79300,
+    "ferdowsi_hours_per_month": 720,
+    "light_use_hours_per_month": 50,
+    "resale_credit": 0,
+    "tariffs": "Held constant at observed prices for comparison, not a forecast",
+    "extra_ownership_cost": "Computed budget ceiling, not an asserted market operating-cost quote"
+  }
+}

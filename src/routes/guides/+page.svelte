@@ -1,25 +1,7 @@
 <script lang="ts">
-  import { browser } from '$app/environment';
-  import { page } from '$app/stores';
   import PageHero from '$lib/components/PageHero.svelte';
   import GuideCollectionsGrid from '$lib/components/GuideCollectionsGrid.svelte';
-  import { guideCollections, type GuideCollection } from '$lib/guides';
-  import { hasDraftPreview } from '$lib/draft-preview.mjs';
-
-  let draftCollection: GuideCollection | undefined;
-  let loadingDraft = false;
-  $: showDrafts = browser && hasDraftPreview($page.url.searchParams);
-  $: if (showDrafts && !draftCollection && !loadingDraft) loadDraftCollection();
-  $: visibleCollections = showDrafts && draftCollection
-    ? [guideCollections[0], draftCollection, ...guideCollections.slice(1)]
-    : guideCollections;
-
-  async function loadDraftCollection() {
-    loadingDraft = true;
-    const module = await import('$lib/llm/guide');
-    draftCollection = module.llmGuideCollection;
-    loadingDraft = false;
-  }
+  import { guideCollections } from '$lib/guides';
 </script>
 
 <svelte:head>
@@ -34,5 +16,5 @@
     lead="مجموعه‌هایی پیوسته از مقاله، راهنما، جدول تعاملی و ابزار."
   />
 
-  <GuideCollectionsGrid collections={visibleCollections} label="مجموعه‌های فنی" />
+  <GuideCollectionsGrid collections={guideCollections} label="مجموعه‌های فنی" />
 </main>

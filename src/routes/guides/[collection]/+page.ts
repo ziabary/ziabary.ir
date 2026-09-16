@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 import { getGuideCollection, guideCollections } from '$lib/guides';
 
 export function entries() {
-  return guideCollections.map((collection) => ({ collection: collection.slug }));
+  return guideCollections.filter(collection => collection.slug !== 'llm').map((collection) => ({ collection: collection.slug }));
 }
 
 export async function load({ params }) {

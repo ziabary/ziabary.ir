@@ -8,6 +8,12 @@
     '.guide-series-cover img', '.guide-prose img', '.chapter-cover'
   ].join(', ');
 
+  // Linked images and UI icons already have an action of their own.
+  function isZoomable(target: HTMLImageElement): boolean {
+    return target.matches(zoomableSelector)
+      && !target.closest('a, button, dialog, [role="dialog"], [data-no-lightbox]');
+  }
+
   let activeSrc = '';
   let activeAlt = '';
   let previousOverflow = '';
@@ -27,6 +33,16 @@
 
   function enhanceImages() {
     document.querySelectorAll<HTMLImageElement>(zoomableSelector).forEach((image) => {
+      if (!isZoomable(image)) {
+        // Remove attributes left by an earlier enhancement (including after HMR).
+        if (image.classList.contains('zoomable-article-image')) {
+          image.classList.remove('zoomable-article-image');
+          image.removeAttribute('role');
+          image.removeAttribute('tabindex');
+          image.removeAttribute('aria-label');
+        }
+        return;
+      }
       image.classList.add('zoomable-article-image');
       image.setAttribute('role', 'button');
       image.setAttribute('tabindex', '0');
@@ -41,7 +57,7 @@
 
     const click = (event: MouseEvent) => {
       const target = event.target;
-      if (target instanceof HTMLImageElement && target.matches(zoomableSelector)) {
+      if (target instanceof HTMLImageElement && isZoomable(target)) {
         event.preventDefault();
         open(target);
       }
@@ -53,7 +69,7 @@
         return;
       }
       const target = event.target;
-      if ((event.key === 'Enter' || event.key === ' ') && target instanceof HTMLImageElement && target.matches(zoomableSelector)) {
+      if ((event.key === 'Enter' || event.key === ' ') && target instanceof HTMLImageElement && isZoomable(target)) {
         event.preventDefault();
         open(target);
       }
