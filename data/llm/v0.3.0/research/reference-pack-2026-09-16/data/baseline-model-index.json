@@ -1,0 +1,667 @@
+[
+  {
+    "id": "model:baai-bge-m3",
+    "name": "bge-m3",
+    "aliases": [
+      "BAAI/bge-m3"
+    ]
+  },
+  {
+    "id": "model:baai-bge-reranker-v2-m3",
+    "name": "bge-reranker-v2-m3",
+    "aliases": [
+      "BAAI/bge-reranker-v2-m3"
+    ]
+  },
+  {
+    "id": "model:coherelabs-aya-expanse-32b",
+    "name": "aya-expanse-32b",
+    "aliases": [
+      "CohereLabs/aya-expanse-32b"
+    ]
+  },
+  {
+    "id": "model:coherelabs-aya-expanse-8b",
+    "name": "aya-expanse-8b",
+    "aliases": [
+      "CohereLabs/aya-expanse-8b"
+    ]
+  },
+  {
+    "id": "model:coherelabs-tiny-aya-global",
+    "name": "tiny-aya-global",
+    "aliases": [
+      "CohereLabs/tiny-aya-global"
+    ]
+  },
+  {
+    "id": "model:huggingfacetb-smollm2-1-7b-instruct",
+    "name": "SmolLM2-1.7B-Instruct",
+    "aliases": [
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+    ]
+  },
+  {
+    "id": "model:huggingfacetb-smollm2-135m-instruct",
+    "name": "SmolLM2-135M-Instruct",
+    "aliases": [
+      "HuggingFaceTB/SmolLM2-135M-Instruct"
+    ]
+  },
+  {
+    "id": "model:huggingfacetb-smollm2-360m-instruct",
+    "name": "SmolLM2-360M-Instruct",
+    "aliases": [
+      "HuggingFaceTB/SmolLM2-360M-Instruct"
+    ]
+  },
+  {
+    "id": "model:huggingfacetb-smollm3-3b",
+    "name": "SmolLM3-3B",
+    "aliases": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-0-6b",
+    "name": "Qwen3-0.6B",
+    "aliases": [
+      "Qwen/Qwen3-0.6B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-1-7b",
+    "name": "Qwen3-1.7B",
+    "aliases": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-14b",
+    "name": "Qwen3-14B",
+    "aliases": [
+      "Qwen/Qwen3-14B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-30b-a3b",
+    "name": "Qwen3-30B-A3B",
+    "aliases": [
+      "Qwen/Qwen3-30B-A3B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-32b",
+    "name": "Qwen3-32B",
+    "aliases": [
+      "Qwen/Qwen3-32B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-4b",
+    "name": "Qwen3-4B",
+    "aliases": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-8b",
+    "name": "Qwen3-8B",
+    "aliases": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-coder-30b-a3b-instruct",
+    "name": "Qwen3-Coder-30B-A3B-Instruct",
+    "aliases": [
+      "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-embedding-0-6b",
+    "name": "Qwen3-Embedding-0.6B",
+    "aliases": [
+      "Qwen/Qwen3-Embedding-0.6B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-embedding-4b",
+    "name": "Qwen3-Embedding-4B",
+    "aliases": [
+      "Qwen/Qwen3-Embedding-4B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-embedding-8b",
+    "name": "Qwen3-Embedding-8B",
+    "aliases": [
+      "Qwen/Qwen3-Embedding-8B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-reranker-0-6b",
+    "name": "Qwen3-Reranker-0.6B",
+    "aliases": [
+      "Qwen/Qwen3-Reranker-0.6B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-reranker-4b",
+    "name": "Qwen3-Reranker-4B",
+    "aliases": [
+      "Qwen/Qwen3-Reranker-4B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-reranker-8b",
+    "name": "Qwen3-Reranker-8B",
+    "aliases": [
+      "Qwen/Qwen3-Reranker-8B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-vl-8b-instruct",
+    "name": "Qwen3-VL-8B-Instruct",
+    "aliases": [
+      "Qwen/Qwen3-VL-8B-Instruct"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-2b",
+    "name": "Qwen3.5-2B",
+    "aliases": [
+      "Qwen/Qwen3.5-2B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-35b-a3b",
+    "name": "Qwen3.5-35B-A3B",
+    "aliases": [
+      "Qwen/Qwen3.5-35B-A3B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-4b",
+    "name": "Qwen3.5-4B",
+    "aliases": [
+      "Qwen/Qwen3.5-4B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-9b",
+    "name": "Qwen3.5-9B",
+    "aliases": [
+      "Qwen/Qwen3.5-9B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-8-27b",
+    "name": "Qwen3.8-27B",
+    "aliases": [
+      "Qwen/Qwen3.8-27B"
+    ]
+  },
+  {
+    "id": "model:allenai-olmo-3-7b-instruct",
+    "name": "Olmo-3-7B-Instruct",
+    "aliases": [
+      "allenai/Olmo-3-7B-Instruct"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "name": "DeepSeek-R1-0528-Qwen3-8B",
+    "aliases": [
+      "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-r1-distill-llama-70b",
+    "name": "DeepSeek-R1-Distill-Llama-70B",
+    "aliases": [
+      "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-r1-distill-qwen-1-5b",
+    "name": "DeepSeek-R1-Distill-Qwen-1.5B",
+    "aliases": [
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+    "name": "DeepSeek-R1-Distill-Qwen-14B",
+    "aliases": [
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-r1-distill-qwen-32b",
+    "name": "DeepSeek-R1-Distill-Qwen-32B",
+    "aliases": [
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "name": "DeepSeek-R1-Distill-Qwen-7B",
+    "aliases": [
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-v3-2",
+    "name": "DeepSeek-V3.2",
+    "aliases": [
+      "deepseek-ai/DeepSeek-V3.2"
+    ]
+  },
+  {
+    "id": "model:deepseek-ai-deepseek-v4-1-flash",
+    "name": "DeepSeek-V4.1-Flash",
+    "aliases": [
+      "deepseek-ai/DeepSeek-V4.1-Flash"
+    ]
+  },
+  {
+    "id": "model:google-gemma-3-12b-it",
+    "name": "gemma-3-12b-it",
+    "aliases": [
+      "google/gemma-3-12b-it"
+    ]
+  },
+  {
+    "id": "model:google-gemma-3-1b-it",
+    "name": "gemma-3-1b-it",
+    "aliases": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "model:google-gemma-3-27b-it",
+    "name": "gemma-3-27b-it",
+    "aliases": [
+      "google/gemma-3-27b-it"
+    ]
+  },
+  {
+    "id": "model:google-gemma-3-4b-it",
+    "name": "gemma-3-4b-it",
+    "aliases": [
+      "google/gemma-3-4b-it"
+    ]
+  },
+  {
+    "id": "model:google-gemma-4-26b-a4b-it",
+    "name": "gemma-4-26B-A4B-it",
+    "aliases": [
+      "google/gemma-4-26B-A4B-it"
+    ]
+  },
+  {
+    "id": "model:google-gemma-4-e2b-it",
+    "name": "gemma-4-E2B-it",
+    "aliases": [
+      "google/gemma-4-E2B-it"
+    ]
+  },
+  {
+    "id": "model:ibm-granite-granite-3-3-2b-instruct",
+    "name": "granite-3.3-2b-instruct",
+    "aliases": [
+      "ibm-granite/granite-3.3-2b-instruct"
+    ]
+  },
+  {
+    "id": "model:intfloat-multilingual-e5-small",
+    "name": "multilingual-e5-small",
+    "aliases": [
+      "intfloat/multilingual-e5-small"
+    ]
+  },
+  {
+    "id": "model:meta-llama-llama-3-1-70b-instruct",
+    "name": "Llama-3.1-70B-Instruct",
+    "aliases": [
+      "meta-llama/Llama-3.1-70B-Instruct"
+    ]
+  },
+  {
+    "id": "model:meta-llama-llama-3-1-8b-instruct",
+    "name": "Llama-3.1-8B-Instruct",
+    "aliases": [
+      "meta-llama/Llama-3.1-8B-Instruct"
+    ]
+  },
+  {
+    "id": "model:meta-llama-llama-3-2-1b-instruct",
+    "name": "Llama-3.2-1B-Instruct",
+    "aliases": [
+      "meta-llama/Llama-3.2-1B-Instruct"
+    ]
+  },
+  {
+    "id": "model:meta-llama-llama-3-2-3b-instruct",
+    "name": "Llama-3.2-3B-Instruct",
+    "aliases": [
+      "meta-llama/Llama-3.2-3B-Instruct"
+    ]
+  },
+  {
+    "id": "model:microsoft-phi-4-mini-instruct",
+    "name": "Phi-4-mini-instruct",
+    "aliases": [
+      "microsoft/Phi-4-mini-instruct"
+    ]
+  },
+  {
+    "id": "model:mistralai-devstral-small-2-24b-instruct-2512",
+    "name": "Devstral-Small-2-24B-Instruct-2512",
+    "aliases": [
+      "mistralai/Devstral-Small-2-24B-Instruct-2512"
+    ]
+  },
+  {
+    "id": "model:mistralai-ministral-3-3b-instruct-2512",
+    "name": "Ministral-3-3B-Instruct-2512",
+    "aliases": [
+      "mistralai/Ministral-3-3B-Instruct-2512"
+    ]
+  },
+  {
+    "id": "model:mistralai-mistral-7b-instruct-v0-3",
+    "name": "Mistral-7B-Instruct-v0.3",
+    "aliases": [
+      "mistralai/Mistral-7B-Instruct-v0.3"
+    ]
+  },
+  {
+    "id": "model:mistralai-mistral-small-3-1-24b-instruct-2503",
+    "name": "Mistral-Small-3.1-24B-Instruct-2503",
+    "aliases": [
+      "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    ]
+  },
+  {
+    "id": "model:nvidia-nvidia-nemotron-nano-9b-v2",
+    "name": "NVIDIA-Nemotron-Nano-9B-v2",
+    "aliases": [
+      "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+    ]
+  },
+  {
+    "id": "model:openai-gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "aliases": [
+      "openai/gpt-oss-120b"
+    ]
+  },
+  {
+    "id": "model:openai-gpt-oss-20b",
+    "name": "gpt-oss-20b",
+    "aliases": [
+      "openai/gpt-oss-20b"
+    ]
+  },
+  {
+    "id": "model:zai-org-glm-4-7-flash",
+    "name": "GLM-4.7-Flash",
+    "aliases": [
+      "zai-org/GLM-4.7-Flash"
+    ]
+  },
+  {
+    "id": "model:moonshotai-kimi-k2-instruct",
+    "name": "Kimi-K2-Instruct",
+    "aliases": [
+      "moonshotai/Kimi-K2-Instruct"
+    ]
+  },
+  {
+    "id": "model:moonshotai-kimi-k2-thinking",
+    "name": "Kimi-K2-Thinking",
+    "aliases": [
+      "moonshotai/Kimi-K2-Thinking"
+    ]
+  },
+  {
+    "id": "model:moonshotai-kimi-k2-5",
+    "name": "Kimi-K2.5",
+    "aliases": [
+      "moonshotai/Kimi-K2.5"
+    ]
+  },
+  {
+    "id": "model:minimaxai-minimax-m2-5",
+    "name": "MiniMax-M2.5",
+    "aliases": [
+      "MiniMaxAI/MiniMax-M2.5"
+    ]
+  },
+  {
+    "id": "model:minimaxai-minimax-m2-1",
+    "name": "MiniMax-M2.1",
+    "aliases": [
+      "MiniMaxAI/MiniMax-M2.1"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-235b-a22b-instruct-2507",
+    "name": "Qwen3-235B-A22B-Instruct-2507",
+    "aliases": [
+      "Qwen/Qwen3-235B-A22B-Instruct-2507"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-coder-480b-a35b-instruct",
+    "name": "Qwen3-Coder-480B-A35B-Instruct",
+    "aliases": [
+      "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-27b",
+    "name": "Qwen3.5-27B",
+    "aliases": [
+      "Qwen/Qwen3.5-27B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-0-8b",
+    "name": "Qwen3.5-0.8B",
+    "aliases": [
+      "Qwen/Qwen3.5-0.8B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-122b-a10b",
+    "name": "Qwen3.5-122B-A10B",
+    "aliases": [
+      "Qwen/Qwen3.5-122B-A10B"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-5-397b-a17b",
+    "name": "Qwen3.5-397B-A17B",
+    "aliases": [
+      "Qwen/Qwen3.5-397B-A17B"
+    ]
+  },
+  {
+    "id": "model:meta-llama-llama-3-3-70b-instruct",
+    "name": "Llama-3.3-70B-Instruct",
+    "aliases": [
+      "meta-llama/Llama-3.3-70B-Instruct"
+    ]
+  },
+  {
+    "id": "model:microsoft-phi-4",
+    "name": "phi-4",
+    "aliases": [
+      "microsoft/phi-4"
+    ]
+  },
+  {
+    "id": "model:huggingfacetb-smolvlm2-2-2b-instruct",
+    "name": "SmolVLM2-2.2B-Instruct",
+    "aliases": [
+      "HuggingFaceTB/SmolVLM2-2.2B-Instruct"
+    ]
+  },
+  {
+    "id": "model:sentence-transformers-all-minilm-l6-v2",
+    "name": "all-MiniLM-L6-v2",
+    "aliases": [
+      "sentence-transformers/all-MiniLM-L6-v2"
+    ]
+  },
+  {
+    "id": "model:intfloat-multilingual-e5-base",
+    "name": "multilingual-e5-base",
+    "aliases": [
+      "intfloat/multilingual-e5-base"
+    ]
+  },
+  {
+    "id": "model:intfloat-multilingual-e5-large",
+    "name": "multilingual-e5-large",
+    "aliases": [
+      "intfloat/multilingual-e5-large"
+    ]
+  },
+  {
+    "id": "model:baai-bge-small-en-v1-5",
+    "name": "bge-small-en-v1.5",
+    "aliases": [
+      "BAAI/bge-small-en-v1.5"
+    ]
+  },
+  {
+    "id": "model:baai-bge-reranker-base",
+    "name": "bge-reranker-base",
+    "aliases": [
+      "BAAI/bge-reranker-base"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen2-5-coder-7b-instruct",
+    "name": "Qwen2.5-Coder-7B-Instruct",
+    "aliases": [
+      "Qwen/Qwen2.5-Coder-7B-Instruct"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen2-5-coder-14b-instruct",
+    "name": "Qwen2.5-Coder-14B-Instruct",
+    "aliases": [
+      "Qwen/Qwen2.5-Coder-14B-Instruct"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen2-5-coder-32b-instruct",
+    "name": "Qwen2.5-Coder-32B-Instruct",
+    "aliases": [
+      "Qwen/Qwen2.5-Coder-32B-Instruct"
+    ]
+  },
+  {
+    "id": "model:google-embeddinggemma-300m",
+    "name": "embeddinggemma-300m",
+    "aliases": [
+      "google/embeddinggemma-300m"
+    ]
+  },
+  {
+    "id": "model:jinaai-jina-embeddings-v3",
+    "name": "jina-embeddings-v3",
+    "aliases": [
+      "jinaai/jina-embeddings-v3"
+    ]
+  },
+  {
+    "id": "model:jinaai-jina-reranker-v2-base-multilingual",
+    "name": "jina-reranker-v2-base-multilingual",
+    "aliases": [
+      "jinaai/jina-reranker-v2-base-multilingual"
+    ]
+  },
+  {
+    "id": "model:mixedbread-ai-mxbai-embed-large-v1",
+    "name": "mxbai-embed-large-v1",
+    "aliases": [
+      "mixedbread-ai/mxbai-embed-large-v1"
+    ]
+  },
+  {
+    "id": "model:nomic-ai-nomic-embed-text-v1-5",
+    "name": "nomic-embed-text-v1.5",
+    "aliases": [
+      "nomic-ai/nomic-embed-text-v1.5"
+    ]
+  },
+  {
+    "id": "model:answerdotai-modernbert-base",
+    "name": "ModernBERT-base",
+    "aliases": [
+      "answerdotai/ModernBERT-base"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen2-5-coder-1-5b",
+    "name": "Qwen2.5-Coder-1.5B",
+    "aliases": [
+      "Qwen/Qwen2.5-Coder-1.5B"
+    ]
+  },
+  {
+    "id": "model:bigcode-starcoder2-3b",
+    "name": "starcoder2-3b",
+    "aliases": [
+      "bigcode/starcoder2-3b"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-coder-next",
+    "name": "Qwen3-Coder-Next",
+    "aliases": [
+      "Qwen/Qwen3-Coder-Next"
+    ]
+  },
+  {
+    "id": "model:intfloat-multilingual-e5-large-instruct",
+    "name": "multilingual-e5-large-instruct",
+    "aliases": [
+      "intfloat/multilingual-e5-large-instruct"
+    ]
+  },
+  {
+    "id": "model:qwen-qwen3-4b-instruct-2507",
+    "name": "Qwen3-4B-Instruct-2507",
+    "aliases": [
+      "Qwen/Qwen3-4B-Instruct-2507"
+    ]
+  },
+  {
+    "id": "model:partai-tooka-sbert-v2-small",
+    "name": "Tooka-SBERT-V2-Small",
+    "aliases": [
+      "PartAI/Tooka-SBERT-V2-Small"
+    ]
+  },
+  {
+    "id": "model:partai-tooka-sbert-v2-large",
+    "name": "Tooka-SBERT-V2-Large",
+    "aliases": [
+      "PartAI/Tooka-SBERT-V2-Large"
+    ]
+  },
+  {
+    "id": "model:hooshvarelab-bert-base-parsbert-uncased",
+    "name": "bert-base-parsbert-uncased",
+    "aliases": [
+      "HooshvareLab/bert-base-parsbert-uncased"
+    ]
+  }
+]

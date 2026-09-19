@@ -10,6 +10,7 @@
   import { formatDate } from '$lib/publication.mjs';
   import { headingSections, readingPosition } from '$lib/contents-navigation';
   export let article: ArticleMeta;
+  export let seo = true;
   export let Content: Component<{ headingPrefix?: string }>;
   let activeHeading = '';
   const followHeading = (id: string) => activeHeading = id;
@@ -22,7 +23,7 @@
   $: displayedDate = locale === 'fa' && article.faDate ? article.faDate : formatDate(article.date, locale);
 </script>
 
-<ArticleSeo {article} />
+{#if seo}<ArticleSeo {article} />{/if}
 <main class="article-page" class:intl-article={locale !== 'fa'} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   <article>
     <header class="article-header wrap">

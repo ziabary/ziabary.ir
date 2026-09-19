@@ -2091,3 +2091,79 @@ softwareCapabilities.push({
     "evidence:v03-240cf2b14ae329e769"
   ]
 });
+softwareCapabilities.push({
+  "id": "software-capability:mlx-lm-task-generation",
+  "capability": "task-generation",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:mlx-lm-v0-31-3",
+    "conditions": [
+      "Compatible MLX LM model and release"
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-mlx-lm-readme-txt",
+    "evidence:reference-mlx-readme-txt",
+    "evidence:reference-mlx-release-json",
+    "evidence:reference-mlx-license-txt"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:mlx-lm-streaming",
+  "capability": "streaming",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:mlx-lm-v0-31-3",
+    "conditions": [
+      "Compatible MLX LM model and release"
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-mlx-lm-readme-txt",
+    "evidence:reference-mlx-readme-txt",
+    "evidence:reference-mlx-release-json",
+    "evidence:reference-mlx-license-txt"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:mlx-lm-prefix-caching",
+  "capability": "prefix-caching",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:mlx-lm-v0-31-3",
+    "conditions": [
+      "Compatible MLX LM model and release"
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-mlx-lm-readme-txt",
+    "evidence:reference-mlx-readme-txt",
+    "evidence:reference-mlx-release-json",
+    "evidence:reference-mlx-license-txt"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:mlx-lm-multi-gpu-sharding",
+  "capability": "multi-gpu-sharding",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:mlx-lm-v0-31-3",
+    "conditions": [
+      "Compatible MLX LM model and release"
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-mlx-lm-readme-txt",
+    "evidence:reference-mlx-readme-txt",
+    "evidence:reference-mlx-release-json",
+    "evidence:reference-mlx-license-txt"
+  ]
+});

@@ -12876,7 +12876,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-2b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-2b",
   "fieldPath": "totalParametersB.value",
-  "value": 2.0,
+  "value": 2,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -12953,7 +12953,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-35b-a3b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-35b-a3b",
   "fieldPath": "totalParametersB.value",
-  "value": 35.0,
+  "value": 35,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -13030,7 +13030,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-4b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-4b",
   "fieldPath": "totalParametersB.value",
-  "value": 4.0,
+  "value": 4,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -13107,7 +13107,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-9b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-9b",
   "fieldPath": "totalParametersB.value",
-  "value": 9.0,
+  "value": 9,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -13184,7 +13184,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-8-27b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-8-27b",
   "fieldPath": "totalParametersB.value",
-  "value": 27.0,
+  "value": 27,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -18398,7 +18398,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-235b-a22b-instruct-2507-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-235b-a22b-instruct-2507",
   "fieldPath": "totalParametersB.value",
-  "value": 235.0,
+  "value": 235,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -18497,7 +18497,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-coder-480b-a35b-instruct-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-coder-480b-a35b-instruct",
   "fieldPath": "totalParametersB.value",
-  "value": 480.0,
+  "value": 480,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -18585,7 +18585,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-27b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-27b",
   "fieldPath": "totalParametersB.value",
-  "value": 27.0,
+  "value": 27,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -18860,7 +18860,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-122b-a10b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-122b-a10b",
   "fieldPath": "totalParametersB.value",
-  "value": 122.0,
+  "value": 122,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -18992,7 +18992,7 @@ claims.push({
   "id": "claim:v03-model-qwen-qwen3-5-397b-a17b-totalparametersb-value",
   "subjectId": "model:qwen-qwen3-5-397b-a17b",
   "fieldPath": "totalParametersB.value",
-  "value": 397.0,
+  "value": 397,
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [

@@ -1,11 +1,24 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-17",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
   "sourceArchiveSha256": "843bd11098930f80bb0c8254f8e0cfa77a3438681a5f7aa99e12544a70d7e23a",
-  "baseModels": 95,
-  "basePublishedEvaluations": 1070,
-  "mergedPublishedEvaluations": 1101
+  "baseModels": 100,
+  "basePublishedEvaluations": 1193,
+  "mergedPublishedEvaluations": 1251,
+  "referencePack": {
+    "asOf": "2026-09-16",
+    "models": 5,
+    "softwareProducts": 1,
+    "observations": 132,
+    "mergedObservations": 15,
+    "promotedSupplementResults": 6,
+    "comparisons": 8,
+    "selectionGuides": 8,
+    "articleSections": 8,
+    "quantizationObservations": 12,
+    "sourceDocuments": 32
+  }
 }

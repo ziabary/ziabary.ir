@@ -198,6 +198,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=agcco",
+    "destination": "https://ziabary.ir/articles/gpu-confidential-computing-overhead/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=agilt",
     "destination": "https://ziabary.ir/articles/gpu-inference-latency-throughput/",
     "status": 301,
@@ -414,6 +420,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=azaaba",
+    "destination": "https://ziabary.ir/articles/ztai-autonomous-agents-bounded-authority/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=azdmewra",
     "destination": "https://ziabary.ir/articles/ztai-data-model-engineering-without-raw-access/",
     "status": 301,
@@ -434,6 +446,12 @@
   {
     "source": "https://ziabary.ir/?t=eaalnc",
     "destination": "https://ziabary.ir/en/articles/accessing-legacy-numenta-content/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eaaisswkage",
+    "destination": "https://ziabary.ir/en/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-en/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -470,6 +488,12 @@
   {
     "source": "https://ziabary.ir/?t=eafzttztae",
     "destination": "https://ziabary.ir/en/articles/from-zero-trust-to-zero-trust-ai-en/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eagccoe",
+    "destination": "https://ziabary.ir/en/articles/gpu-confidential-computing-overhead-en/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -534,6 +558,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=eaovsolce",
+    "destination": "https://ziabary.ir/en/articles/ollama-vllm-sglang-or-llama-cpp-en/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=eapgsse",
     "destination": "https://ziabary.ir/en/articles/pcie-gpu-server-selection-en/",
     "status": 301,
@@ -570,6 +600,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=eazaabae",
+    "destination": "https://ziabary.ir/en/articles/ztai-autonomous-agents-bounded-authority-en/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=eazidae",
     "destination": "https://ziabary.ir/en/articles/ztai-indirect-data-access-en/",
     "status": 301,
@@ -602,6 +638,12 @@
   {
     "source": "https://ziabary.ir/?t=eggsgct",
     "destination": "https://ziabary.ir/en/guides/gpu-selection/#gpu-comparison-table",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eggsgccoe",
+    "destination": "https://ziabary.ir/en/guides/gpu-selection/#gpu-confidential-computing-overhead-en",
     "status": 301,
     "preserveQueryString": false
   },
@@ -674,6 +716,12 @@
   {
     "source": "https://ziabary.ir/?t=egztaztapace",
     "destination": "https://ziabary.ir/en/guides/zero-trust-ai/#zero-trust-ai-principles-and-controls-en",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=egztazaabae",
+    "destination": "https://ziabary.ir/en/guides/zero-trust-ai/#ztai-autonomous-agents-bounded-authority-en",
     "status": 301,
     "preserveQueryString": false
   },
@@ -780,6 +828,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=eaaisswkage2",
+    "destination": "https://ziabary.ir/es/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=eacgfae2",
     "destination": "https://ziabary.ir/es/articles/choosing-gpu-for-ai-es/",
     "status": 301,
@@ -806,6 +860,12 @@
   {
     "source": "https://ziabary.ir/?t=eafzttztae2",
     "destination": "https://ziabary.ir/es/articles/from-zero-trust-to-zero-trust-ai-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eagccoe2",
+    "destination": "https://ziabary.ir/es/articles/gpu-confidential-computing-overhead-es/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -840,6 +900,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=eaovsolce2",
+    "destination": "https://ziabary.ir/es/articles/ollama-vllm-sglang-or-llama-cpp-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=eapgsse2",
     "destination": "https://ziabary.ir/es/articles/pcie-gpu-server-selection-es/",
     "status": 301,
@@ -866,6 +932,12 @@
   {
     "source": "https://ziabary.ir/?t=eaztapace2",
     "destination": "https://ziabary.ir/es/articles/zero-trust-ai-principles-and-controls-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eazaabae2",
+    "destination": "https://ziabary.ir/es/articles/ztai-autonomous-agents-bounded-authority-es/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -902,6 +974,12 @@
   {
     "source": "https://ziabary.ir/?t=eggsgct2",
     "destination": "https://ziabary.ir/es/guides/gpu-selection/#gpu-comparison-table",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eggsgccoe2",
+    "destination": "https://ziabary.ir/es/guides/gpu-selection/#gpu-confidential-computing-overhead-es",
     "status": 301,
     "preserveQueryString": false
   },
@@ -974,6 +1052,12 @@
   {
     "source": "https://ziabary.ir/?t=egztaztapace2",
     "destination": "https://ziabary.ir/es/guides/zero-trust-ai/#zero-trust-ai-principles-and-controls-es",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=egztazaabae2",
+    "destination": "https://ziabary.ir/es/guides/zero-trust-ai/#ztai-autonomous-agents-bounded-authority-es",
     "status": 301,
     "preserveQueryString": false
   },
@@ -1104,6 +1188,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=ggsgcco",
+    "destination": "https://ziabary.ir/guides/gpu-selection/#gpu-confidential-computing-overhead",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=ggsgilt",
     "destination": "https://ziabary.ir/guides/gpu-selection/#gpu-inference-latency-throughput",
     "status": 301,
@@ -1226,6 +1316,18 @@
   {
     "source": "https://ziabary.ir/?t=gztaztapac",
     "destination": "https://ziabary.ir/guides/zero-trust-ai/#zero-trust-ai-principles-and-controls",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=gztazaaba",
+    "destination": "https://ziabary.ir/guides/zero-trust-ai/#ztai-autonomous-agents-bounded-authority",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=gztazdmewra",
+    "destination": "https://ziabary.ir/guides/zero-trust-ai/#ztai-data-model-engineering-without-raw-access",
     "status": 301,
     "preserveQueryString": false
   },

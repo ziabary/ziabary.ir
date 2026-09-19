@@ -81,7 +81,7 @@ In the vLLM case, an initial compatibility check can pass before the missing com
 
 The study also discusses disabling a CUTLASS kernel with `VLLM_DISABLED_KERNELS` and examining a Triton fallback. That mechanism was tested on Ada, without a measured B300 performance result. The presence of a fallback is not sufficient evidence to recommend it for a B300 deployment.
 
-Record the driver, libraries and execution-engine versions alongside the test results. The maintenance and security implications of this dependency chain are discussed in [AI infrastructure security starts with the kernel and GPU (Persian)](/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/).
+Record the driver, libraries and execution-engine versions alongside the test results. The maintenance and security implications of this dependency chain are discussed in [AI infrastructure security starts with the kernel and GPU](/en/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-en/).
 
 ### Peak rates do not determine response time
 

@@ -11,7 +11,8 @@ test('source presentation removes stock prose without changing the evidence reco
   const source = {
     scope: 'Example/model؛ شناسنامه و کاربرد اعلام‌شده، بدون تأیید مستقل.',
     commercialInterest: 'ناشر مدل یا نرم‌افزار؛ ارزیابی مستقل محسوب نمی‌شود.',
-    limitations: ['هیچ فایل وزن دانلود یا روی سخت‌افزار اجرا نشده است.']
+    limitations: ['هیچ فایل وزن دانلود یا روی سخت‌افزار اجرا نشده است.'],
+    presentationNotes: []
   };
   const before = structuredClone(source);
   assert.deepEqual(evidenceNotes(source), []);
@@ -20,12 +21,14 @@ test('source presentation removes stock prose without changing the evidence reco
 test('source-specific constraints and commercial disclosures survive, without duplicates', () => {
   const scope = 'آزمون روی H100 با ۳۲ درخواست هم‌زمان انجام شده است.';
   const limitation = 'نسخهٔ دقیق وزن‌های آزموده‌شده مشخص نیست.';
-  const notes = evidenceNotes({ scope, commercialInterest: 'عرضه‌کنندهٔ خدمات میزبانی', limitations: [scope, limitation] });
+  const notes = evidenceNotes({ scope, commercialInterest: 'عرضه‌کنندهٔ خدمات میزبانی', limitations: [scope, limitation], presentationNotes: [scope, 'این آزمون را ارائه‌دهندهٔ خدمات میزبانی منتشر کرده است.', limitation, scope] });
   assert.deepEqual(notes, [scope, 'این آزمون را ارائه‌دهندهٔ خدمات میزبانی منتشر کرده است.', limitation]);
 });
-test('generic benchmark prose does not invent missing weight revisions', () => {
+test('editorial notes are explicit; changing source wording cannot invent or hide constraints', () => {
   assert.deepEqual(evidenceNotes({
     scope: 'نتیجهٔ گزارش‌شده در همین منبع و پروتکل؛ نسخهٔ فایل دریافت‌شده، نسخهٔ وزن آزموده‌شده محسوب نمی‌شود.',
-    limitations: []
+    limitations: [], presentationNotes: []
   }), []);
+  const constraint = 'Exact weight revision was not disclosed.';
+  for (const scope of ['Original wording', 'Edited wording', '']) assert.deepEqual(evidenceNotes({scope, presentationNotes: [constraint]}), [constraint]);
 });

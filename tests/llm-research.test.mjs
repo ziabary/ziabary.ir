@@ -9,19 +9,20 @@ const data = name => JSON.parse(fs.readFileSync(`data/llm/v0.2.0/data/${name}.js
 const close = (a,b) => assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
 
 test('supplement preserves the base, exact identities, independent evidence and deduplicated quality',()=>{
-  assert.equal(base.models.length,95);assert.equal(base.publishedEvaluations.length,1070);assert.equal(base.artifactListings.length,483);
-  assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1101);
+  assert.equal(base.models.length,100);assert.equal(base.publishedEvaluations.length,1193);assert.equal(base.artifactListings.length,488);
+  // Similar scores remain distinct when language/protocol identity is not established.
+  assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1251);
   assert.equal(repository.evidence.length,base.evidence.length+127);
   assert.equal(r.researchModel(base,'CohereForAI/aya-expanse-32b').id,'model:coherelabs-aya-expanse-32b');
   assert.equal(r.researchModel(base,'deepseek-ai/DeepSeek-V3'),undefined);
   assert.equal(r.researchModel(base,'Qwen/Qwen3.8-Flash-Next'),undefined);
-  assert.equal(repository.publishedEvaluations.filter(x=>x.benchmark==='Codeforces').length,5);
+  assert.equal(repository.publishedEvaluations.filter(x=>x.benchmark==='Codeforces').length,10);
   assert.ok(repository.publishedEvaluations.filter(x=>x.benchmark==='Codeforces').every(x=>x.unit==='rating'&&!x.evaluatedRevision));
-  assert.equal(repository.publishedEvaluations.filter(x=>x.benchmark==='MTEB Multilingual').length,3);
+  assert.equal(repository.publishedEvaluations.filter(x=>x.benchmark==='MTEB Multilingual').length,6);
   const smol=repository.publishedEvaluations.filter(x=>x.modelVersionId==='model:huggingfacetb-smollm3-3b'&&x.benchmark==='IFEval');
   assert.deepEqual(new Set(smol.map(x=>x.mode).filter(Boolean)),new Set(['non-thinking','extended-thinking']));
   const qwen=repository.publishedEvaluations.find(x=>x.modelVersionId==='model:qwen-qwen3-4b'&&x.reporter==='HuggingFaceTB');assert.equal(qwen.reportingRelationship,'third-party');
-  assert.ok(repository.publishedEvaluations.filter(x=>x.benchmark==='MTEB-R').every(x=>x.language.startsWith('انگلیسی')));
+  assert.ok(repository.publishedEvaluations.filter(x=>x.benchmark==='MTEB-R').every(x=>x.languageScope?.kind==='single' && x.languageScope.language==='en'));
   assert.ok(repository.publishedEvaluations.filter(x=>x.benchmark==='MLDR').every(x=>x.applicationIds.includes('enterprise-rag')));
 });
 test('all planning weight versions resolve to a model profile and pinned exact download files',()=>{

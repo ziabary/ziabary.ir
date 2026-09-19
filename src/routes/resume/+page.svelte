@@ -80,7 +80,9 @@
     <section>
       <p class="eyebrow">آثار و مقالات</p>
       <ol class="publication-list">
-        {#each publications as publication, index}<li><span>{String(index + 1).padStart(2, '0')}</span><b dir="ltr">{publication}</b></li>{/each}
+        {#each publications as publication, index}
+          <li><span>{String(index + 1).padStart(2, '0')}</span><b dir="ltr">{#if 'url' in publication && publication.url}<a href={publication.url} target="_blank" rel="noreferrer">{publication.title} ↗</a>{:else}{publication.title}{/if}</b></li>
+        {/each}
       </ol>
     </section>
 

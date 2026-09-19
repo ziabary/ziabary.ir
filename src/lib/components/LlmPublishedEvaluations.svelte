@@ -1,53 +1,60 @@
 <script lang="ts">
+  import { hasReportedValue, evaluationMetricLabel, evaluationSettingLabel, reportedSettings, hasNumericResult } from '$lib/llm/evaluation-display';
+  import { getLlmI18n } from '$lib/llm/i18n/context';
+  const i18n = getLlmI18n();
+  const { t, locale, direction, numberFormat } = i18n;
+  const { sourceDateValue } = createLlmPresentation(i18n);
   import type { PublishedEvaluation, Evidence } from '$lib/llm/schema';
-  import { sourceDateValue } from '$lib/llm/presentation';
+  import { createLlmPresentation } from '$lib/llm/presentation';
   import LlmValue from './LlmValue.svelte';
   import LlmEvidence from './LlmEvidence.svelte';
-  const modes: Record<string, string> = { reasoning: 'استدلالی', thinking: 'با تفکر افزوده', instruct: 'دستورپذیر', 'non-thinking': 'بدون تفکر افزوده', 'extended-thinking': 'با تفکر افزوده', low: 'تلاش استدلالی کم', medium: 'تلاش استدلالی متوسط', high: 'تلاش استدلالی زیاد', max: 'تلاش استدلالی حداکثر' };
+  const modes: Record<string, string> = { reasoning: t('LlmPublishedEvaluations.1140'), thinking: t('LlmPublishedEvaluations.1141'), instruct: t('LlmPublishedEvaluations.1142'), 'non-thinking': t('LlmPublishedEvaluations.1143'), 'extended-thinking': t('LlmPublishedEvaluations.1141'), low: t('LlmPublishedEvaluations.1144'), medium: t('LlmPublishedEvaluations.1145'), high: t('LlmPublishedEvaluations.1146'), max: t('LlmPublishedEvaluations.1147') };
   export let results: PublishedEvaluation[] = [];
+  export let compact = false;
   export let evidence: Evidence[] = [];
-  const numbers = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 3 });
-  const settingNames: Record<string, string> = { generationMaxTokens: 'حداکثر توکن تولید', maxOutputTokens: 'حداکثر توکن خروجی', temperature: 'دما', topP: 'top-p', topK: 'top-k', sampleCountPerQuery: 'نمونه به‌ازای پرسش', candidateCount: 'تعداد نامزدهای بازیابی', retrievalModel: 'مدل بازیابی اولیه', embeddingDimensions: 'ابعاد embedding', prompt: 'دستور ورودی', taskAggregation: 'روش تجمیع وظیفه‌ها', representation: 'روش بازنمایی', datasetSplit: 'بخش دادهٔ آزمون', metricScale: 'مقیاس امتیاز', sourceScale: 'مقیاس منبع', reasoningEffort: 'تلاش استدلالی', tools: 'دسترسی به ابزار', shots: 'نمونه‌های داخل دستور', scope: 'دامنهٔ نتیجه', aggregation: 'روش تجمیع', languageCount: 'تعداد زبان‌ها', standardDeviation: 'انحراف معیار میان زبان‌ها', context: 'زمینهٔ آزمون', harness: 'محیط اجرای آزمون', maxTurns: 'حداکثر نوبت', maxPairTokens: 'حد ورودی جفت پرسش و متن', checkpointStage: 'مرحلهٔ مدل' };
-  const metrics: Record<string, string> = { 'published score': 'امتیاز', 'published retrieval score': 'امتیاز بازیابی گزارش‌شده', accuracy: 'درستی پاسخ', 'answer accuracy': 'درستی پاسخ', sentence_performance: 'میانگین کیفیت بردار جمله', semantic_search: 'میانگین کیفیت جست‌وجو' };
-  const representations: Record<string, string> = { Dense: 'بردار متراکم', Sparse: 'بازنمایی تنک', 'Multi-vec': 'چندبرداری', 'Dense+Sparse': 'ترکیب متراکم و تنک', All: 'ترکیب سه روش' };
+  const numbers = new Intl.NumberFormat(numberFormat, { maximumFractionDigits: 3 });
+  const settingNames: Record<string, string> = { generationMaxTokens: t('LlmPublishedEvaluations.1148'), maxOutputTokens: t('LlmPublishedEvaluations.1149'), temperature: t('LlmPublishedEvaluations.1150'), topP: 'top-p', topK: 'top-k', sampleCountPerQuery: t('LlmPublishedEvaluations.1151'), candidateCount: t('LlmPublishedEvaluations.1152'), retrievalModel: t('LlmPublishedEvaluations.1153'), embeddingDimensions: t('LlmPublishedEvaluations.1154'), prompt: t('LlmPublishedEvaluations.1155'), taskAggregation: t('LlmPublishedEvaluations.1156'), representation: t('LlmPublishedEvaluations.1157'), datasetSplit: t('LlmPublishedEvaluations.1158'), metricScale: t('LlmPublishedEvaluations.1159'), sourceScale: t('LlmPublishedEvaluations.1160'), reasoningEffort: t('LlmPublishedEvaluations.1161'), tools: t('LlmPublishedEvaluations.1162'), shots: t('LlmPublishedEvaluations.1163'), scope: t('LlmPublishedEvaluations.1164'), aggregation: t('LlmPublishedEvaluations.1165'), languageCount: t('LlmPublishedEvaluations.1166'), standardDeviation: t('LlmPublishedEvaluations.1167'), context: t('LlmPublishedEvaluations.1168'), harness: t('LlmPublishedEvaluations.1169'), maxTurns: t('LlmPublishedEvaluations.1170'), maxPairTokens: t('LlmPublishedEvaluations.1171'), checkpointStage: t('LlmPublishedEvaluations.1172') };
+  const metrics: Record<string, string> = { 'published score': t('LlmPublishedEvaluations.1173'), 'published retrieval score': t('LlmPublishedEvaluations.1174'), accuracy: t('LlmPublishedEvaluations.1175'), 'answer accuracy': t('LlmPublishedEvaluations.1175'), sentence_performance: t('LlmPublishedEvaluations.1176'), semantic_search: t('LlmPublishedEvaluations.1177') };
+  const representations: Record<string, string> = { Dense: t('LlmPublishedEvaluations.1178'), Sparse: t('LlmPublishedEvaluations.1179'), 'Multi-vec': t('LlmPublishedEvaluations.1180'), 'Dense+Sparse': t('LlmPublishedEvaluations.1181'), All: t('LlmPublishedEvaluations.1182') };
   function qualifiers(result: PublishedEvaluation): string[] {
     const labels: string[] = [];
     if (result.mode) labels.push(modes[result.mode] ?? result.mode);
-    if (result.language) labels.push(result.language === 'fa' ? 'فارسی' : result.language === 'multilingual' ? 'چندزبانه' : result.language);
+    if (result.language) labels.push(result.language === 'fa' ? t('LlmPublishedEvaluations.1183') : result.language === 'multilingual' ? t('LlmPublishedEvaluations.1184') : result.language);
     if (result.settings.representation) labels.push(representations[String(result.settings.representation)] ?? String(result.settings.representation));
-    if (result.settings.embeddingDimensions) labels.push(`${numbers.format(Number(result.settings.embeddingDimensions))} بُعد`);
-    if (result.settings.maxTurns) labels.push(`${numbers.format(Number(result.settings.maxTurns))} نوبت`);
+    if (result.settings.embeddingDimensions) labels.push(t('LlmPublishedEvaluations.1185', numbers.format(Number(result.settings.embeddingDimensions))));
+    if (result.settings.maxTurns) labels.push(t('LlmPublishedEvaluations.1186', numbers.format(Number(result.settings.maxTurns))));
     return labels;
+  }
+  function usefulLimitation(value:string) {
+    return hasReportedValue(value) && !/^(?:امتیاز ناشر؛ برای رتبه‌بندی میان منابع متفاوت یا نتیجه‌گیری هزینه\/کارایی مستقیم قابل استفاده نیست\.|commit وزن آزموده‌شده و precision گزارش نشده؛ نتیجه فقط به گونهٔ نام‌گذاری‌شده تعلق دارد\.|precision و commit وزن آزموده‌شده(?: در جدول)? گزارش نشده‌اند\.|precision و commit وزن آزموده‌شده گزارش نشده‌اند\.)$/.test(value);
   }
 </script>
 
-<section class="published-results" aria-label="نتایج آزمون‌های منتشرشده">
-  <h4>نتایج آزمون‌های منتشرشده</h4><p class="comparison-note">مقایسهٔ امتیازها به آزمون، سنجه و تنظیمات یکسان نیاز دارد.</p>
-  {#each results as result (result.id)}
-    <details class="published-result" data-published-evaluation={result.id}>
-      <summary><b dir="auto">{result.benchmark} · {metrics[result.metric] ?? result.metric}: {numbers.format(result.value)}{result.unit === 'percent' ? '٪' : ''}</b><span>{result.reportingRelationship === 'publisher' ? 'گزارش ناشر' : result.reportingRelationship === 'independent' ? 'ارزیابی مستقل' : 'گزارش منتشرشده'} · {result.reporter}{#each qualifiers(result) as label} · {label}{/each}</span></summary>
+<section class="published-results" aria-label={t('LlmPublishedEvaluations.1187')}>
+  {#if !compact}<h4>{t('LlmPublishedEvaluations.1187')}</h4>{/if}
+  {#each results.filter(hasNumericResult) as result (result.id)}
+    <details class="published-result" open={compact} data-published-evaluation={result.id}>
+      <summary><b dir="auto">{result.benchmark} · {metrics[result.metric] ?? evaluationMetricLabel(result.metric,locale)}: {numbers.format(result.value)}{result.unit === 'percent' ? t('LlmPublishedEvaluations.1189') : ''}</b><span>{result.reportingRelationship === 'publisher' ? t('LlmPublishedEvaluations.1190') : result.reportingRelationship === 'independent' ? t('LlmPublishedEvaluations.1191') : t('LlmPublishedEvaluations.1192')} · {result.reporter}{#each qualifiers(result) as label} · {label}{/each}</span></summary>
       <dl>
-        {#if result.mode}<div><dt>حالت ارزیابی</dt><dd>{modes[result.mode] ?? result.mode}</dd></div>{/if}
-        {#if result.comparisonGroup}<div><dt>گروه مقایسه در منبع</dt><dd><bdi>{result.comparisonGroup}</bdi></dd></div>{/if}
-        <div><dt>مدل نام‌گذاری‌شده در گزارش</dt><dd dir="auto">{result.reportedModelName}</dd></div>
-        <div><dt>Benchmark / نسخه</dt><dd dir="auto">{result.benchmark}{#if result.benchmarkVersion} · {result.benchmarkVersion}{/if}</dd></div>
-        <div><dt>سنجه و واحد</dt><dd dir="auto">{result.metric} · {result.unit === 'percent' ? 'درصد' : result.unit === 'score' ? 'امتیاز' : result.unit}</dd></div>
-        {#if result.reportedPrecision}<div><dt>دقت عددی</dt><dd dir="auto">{result.reportedPrecision}</dd></div>{/if}
-        {#if result.evaluatedRevision}<div><dt>commit وزن آزموده‌شده</dt><dd dir="auto">{result.evaluatedRevision}</dd></div>{/if}
-        {#if result.sourceDocumentRevision}<div><dt>commit سند منبع</dt><dd dir="auto">{result.sourceDocumentRevision}</dd></div>{/if}
-        {#if result.language}<div><dt>زبان</dt><dd>{result.language === 'fa' ? 'فارسی' : result.language === 'multilingual' ? 'چندزبانه' : result.language}</dd></div>{/if}
-        {#each Object.entries(result.settings) as [key, value]}<div><dt>{settingNames[key] ?? key}</dt><dd dir="auto">{typeof value === 'number' ? numbers.format(value) : String(value)}</dd></div>{/each}
-        {#if result.evaluatedOn}<div><dt>تاریخ اجرای آزمون</dt><dd><LlmValue value={sourceDateValue(result.evaluatedOn)} /></dd></div>{/if}
-        {#if result.publishedOn}<div><dt>تاریخ انتشار گزارش</dt><dd><LlmValue value={sourceDateValue(result.publishedOn)} /></dd></div>{/if}
-        <div><dt>تاریخ دسترسی</dt><dd><LlmValue value={sourceDateValue(result.accessedOn)} /></dd></div>
+        {#if result.mode}<div><dt>{t('LlmPublishedEvaluations.1193')}</dt><dd>{modes[result.mode] ?? result.mode}</dd></div>{/if}
+        <div><dt>{t('LlmPublishedEvaluations.1195')}</dt><dd dir="auto">{result.reportedModelName}</dd></div>
+        <div><dt>{t('LlmPublishedEvaluations.1196')}</dt><dd dir="auto">{result.benchmark}{#if result.benchmarkVersion} · {result.benchmarkVersion}{/if}</dd></div>
+        <div><dt>{t('LlmPublishedEvaluations.1197')}</dt><dd dir="auto">{metrics[result.metric] ?? evaluationMetricLabel(result.metric,locale)} · {result.unit === 'percent' ? t('LlmPublishedEvaluations.1198') : result.unit === 'score' ? t('LlmPublishedEvaluations.1173') : result.unit}</dd></div>
+        {#if hasReportedValue(result.reportedPrecision)}<div><dt>{t('LlmPublishedEvaluations.1199')}</dt><dd dir="auto">{result.reportedPrecision}</dd></div>{/if}
+        {#if hasReportedValue(result.evaluatedRevision)}<div><dt>{t('LlmPublishedEvaluations.1200')}</dt><dd dir="auto">{result.evaluatedRevision}</dd></div>{/if}
+        {#if hasReportedValue(result.sourceDocumentRevision)}<div><dt>{t('LlmPublishedEvaluations.1201')}</dt><dd dir="auto">{result.sourceDocumentRevision}</dd></div>{/if}
+        {#if result.language}<div><dt>{t('LlmPublishedEvaluations.1202')}</dt><dd>{result.language === 'fa' ? t('LlmPublishedEvaluations.1183') : result.language === 'multilingual' ? t('LlmPublishedEvaluations.1184') : result.language}</dd></div>{/if}
+        {#each reportedSettings(result.settings) as [key, value]}<div><dt>{evaluationSettingLabel(key,locale,settingNames[key])}</dt><dd dir="auto">{result.settingNotes?.[key] ?? (typeof value === 'number' ? numbers.format(value) : String(value))}</dd></div>{/each}
+        {#if result.evaluatedOn}<div><dt>{t('LlmPublishedEvaluations.1203')}</dt><dd><LlmValue value={sourceDateValue(result.evaluatedOn)} /></dd></div>{/if}
+        {#if result.publishedOn}<div><dt>{t('LlmPublishedEvaluations.1204')}</dt><dd><LlmValue value={sourceDateValue(result.publishedOn)} /></dd></div>{/if}
+        <div><dt>{t('LlmPublishedEvaluations.1205')}</dt><dd><LlmValue value={sourceDateValue(result.accessedOn)} /></dd></div>
       </dl>
-      {#if result.limitations.length}<ul>{#each result.limitations as limitation}<li>{limitation}</li>{/each}</ul>{/if}
+      {#if result.limitations.filter(usefulLimitation).length}<ul>{#each result.limitations.filter(usefulLimitation) as limitation}<li>{limitation}</li>{/each}</ul>{/if}
       <LlmEvidence ids={result.evidenceIds} {evidence} />
     </details>
   {/each}
 </section>
 
 <style>
-  .comparison-note{font-size:12px;color:var(--muted)}
   h4{font-size:14px;margin:0 0 12px}.published-result{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer}summary>span{display:block;color:var(--muted);font-size:12px;margin-top:4px}dl{display:grid;gap:9px;font-size:13px}dl>div{display:grid;grid-template-columns:minmax(150px,1fr) 2fr;gap:15px}dt{color:var(--muted)}dd{margin:0;overflow-wrap:anywhere}ul{font-size:13px;padding-inline-start:20px}li{margin-block:5px}@media(max-width:680px){dl>div{grid-template-columns:1fr;gap:2px}}
 </style>

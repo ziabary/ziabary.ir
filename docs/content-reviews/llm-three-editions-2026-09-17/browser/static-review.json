@@ -1,0 +1,2296 @@
+{
+  "articles": [
+    {
+      "locale": "en",
+      "slug": "right-model-size-for-the-task-en",
+      "characters": 15042,
+      "canonical": "https://ziabary.ir/en/articles/right-model-size-for-the-task-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb-en",
+      "characters": 13411,
+      "canonical": "https://ziabary.ir/en/articles/llms-on-rtx-4090-24gb-vs-48gb-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "four-bit-model-quantization-en",
+      "characters": 12163,
+      "canonical": "https://ziabary.ir/en/articles/four-bit-model-quantization-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "airllm-layer-wise-inference-en",
+      "characters": 13294,
+      "canonical": "https://ziabary.ir/en/articles/airllm-layer-wise-inference-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "enterprise-rag-model-embedding-reranker-en",
+      "characters": 14897,
+      "canonical": "https://ziabary.ir/en/articles/enterprise-rag-model-embedding-reranker-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "code-completion-assistant-and-agent-en",
+      "characters": 13727,
+      "canonical": "https://ziabary.ir/en/articles/code-completion-assistant-and-agent-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "evaluating-llms-for-your-language-and-workload",
+      "characters": 14964,
+      "canonical": "https://ziabary.ir/en/articles/evaluating-llms-for-your-language-and-workload/"
+    },
+    {
+      "locale": "en",
+      "slug": "single-user-to-enterprise-llm-serving-en",
+      "characters": 16148,
+      "canonical": "https://ziabary.ir/en/articles/single-user-to-enterprise-llm-serving-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "ollama-vllm-sglang-or-llama-cpp-en",
+      "characters": 15169,
+      "canonical": "https://ziabary.ir/en/articles/ollama-vllm-sglang-or-llama-cpp-en/"
+    },
+    {
+      "locale": "en",
+      "slug": "true-llm-cost-buy-rent-or-api-en",
+      "characters": 14348,
+      "canonical": "https://ziabary.ir/en/articles/true-llm-cost-buy-rent-or-api-en/"
+    },
+    {
+      "locale": "es",
+      "slug": "right-model-size-for-the-task-es",
+      "characters": 16305,
+      "canonical": "https://ziabary.ir/es/articles/right-model-size-for-the-task-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "llms-on-rtx-4090-24gb-vs-48gb-es",
+      "characters": 14369,
+      "canonical": "https://ziabary.ir/es/articles/llms-on-rtx-4090-24gb-vs-48gb-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "four-bit-model-quantization-es",
+      "characters": 12930,
+      "canonical": "https://ziabary.ir/es/articles/four-bit-model-quantization-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "airllm-layer-wise-inference-es",
+      "characters": 14003,
+      "canonical": "https://ziabary.ir/es/articles/airllm-layer-wise-inference-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "enterprise-rag-model-embedding-reranker-es",
+      "characters": 15640,
+      "canonical": "https://ziabary.ir/es/articles/enterprise-rag-model-embedding-reranker-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "code-completion-assistant-and-agent-es",
+      "characters": 14212,
+      "canonical": "https://ziabary.ir/es/articles/code-completion-assistant-and-agent-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "evaluar-llm-idioma-y-tarea",
+      "characters": 16343,
+      "canonical": "https://ziabary.ir/es/articles/evaluar-llm-idioma-y-tarea/"
+    },
+    {
+      "locale": "es",
+      "slug": "single-user-to-enterprise-llm-serving-es",
+      "characters": 16289,
+      "canonical": "https://ziabary.ir/es/articles/single-user-to-enterprise-llm-serving-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "ollama-vllm-sglang-or-llama-cpp-es",
+      "characters": 15902,
+      "canonical": "https://ziabary.ir/es/articles/ollama-vllm-sglang-or-llama-cpp-es/"
+    },
+    {
+      "locale": "es",
+      "slug": "true-llm-cost-buy-rent-or-api-es",
+      "characters": 14854,
+      "canonical": "https://ziabary.ir/es/articles/true-llm-cost-buy-rent-or-api-es/"
+    }
+  ],
+  "checks": [
+    "Real browser: same-protocol BF16 engine comparison valid; BF16/FP8 intervention mismatch invalid.",
+    "Memory context/concurrency persist through reload, history and ES→EN.",
+    "Malformed/removed/negative selection values, empty result and clearing search are usable.",
+    "Task shortlist survives reload; copy-selection button writes the actual reconstructible URL to the clipboard."
+  ],
+  "loading": [
+    {
+      "label": "before",
+      "locale": "fa",
+      "javascriptRequests": 31,
+      "javascriptBytes": 8641718,
+      "gzipBytes": 1235396,
+      "totalRequests": 82,
+      "requests": [
+        {
+          "url": "http://127.0.0.1:5194/fonts/IranSansX/fontiran.css",
+          "bytes": 3097,
+          "transfer": 3397,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/entry/start.CKRdW7t9.js",
+          "bytes": 83,
+          "transfer": 383,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/qJ30jzEq.js",
+          "bytes": 28625,
+          "transfer": 28925,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/QxEfrrzP.js",
+          "bytes": 27271,
+          "transfer": 27571,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/Ey0aao3b.js",
+          "bytes": 635,
+          "transfer": 935,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644,
+          "transfer": 944,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/Dqt9wuqb.js",
+          "bytes": 365,
+          "transfer": 665,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232,
+          "transfer": 1532,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/entry/app.BKy4MbGM.js",
+          "bytes": 13382,
+          "transfer": 13682,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/D5VZz6X9.js",
+          "bytes": 5339,
+          "transfer": 5639,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/S2CeLPR-.js",
+          "bytes": 1816,
+          "transfer": 2116,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/zvLbQHu5.js",
+          "bytes": 4142,
+          "transfer": 4442,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/rDSALnHV.js",
+          "bytes": 438,
+          "transfer": 738,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/Br9msbUQ.js",
+          "bytes": 2359,
+          "transfer": 2659,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/nodes/0.CdQhdtI_.js",
+          "bytes": 20952,
+          "transfer": 21252,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/CLqfQOz1.js",
+          "bytes": 8438,
+          "transfer": 8738,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/Qvtc7UTn.js",
+          "bytes": 12386,
+          "transfer": 12686,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/CvFFVw8s.js",
+          "bytes": 737,
+          "transfer": 1037,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/3LjMxgQS.js",
+          "bytes": 25997,
+          "transfer": 26297,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/Bg-Jkrdj.js",
+          "bytes": 1746,
+          "transfer": 2046,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471,
+          "transfer": 31771,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/DVz93AIb.js",
+          "bytes": 2226833,
+          "transfer": 2227133,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/DPm-NL-X.js",
+          "bytes": 1409,
+          "transfer": 1709,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/BWOkCXuN.js",
+          "bytes": 192,
+          "transfer": 492,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/CgJykvoB.js",
+          "bytes": 227,
+          "transfer": 527,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/CJ-64gvy.js",
+          "bytes": 651,
+          "transfer": 951,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/COLBN25t.js",
+          "bytes": 36078,
+          "transfer": 36378,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/nodes/34.DoQ1EsK4.js",
+          "bytes": 6016747,
+          "transfer": 6017047,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/assets/0.BMtNTcvi.css",
+          "bytes": 72891,
+          "transfer": 73191,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/assets/contents-navigation.DL13OhYc.css",
+          "bytes": 38014,
+          "transfer": 38314,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/assets/GuideOpening.D3bYO6Tl.css",
+          "bytes": 1328,
+          "transfer": 1628,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/assets/34.DQ0N_js3.css",
+          "bytes": 49604,
+          "transfer": 49904,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/BiB-WQLp.js",
+          "bytes": 186,
+          "transfer": 486,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/C63PgXuT.js",
+          "bytes": 60059,
+          "transfer": 60359,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/chunks/BtxoKMI6.js",
+          "bytes": 110768,
+          "transfer": 111068,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/social/x-white.svg",
+          "bytes": 314,
+          "transfer": 614,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/social/bale-white.svg",
+          "bytes": 3248,
+          "transfer": 3548,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932,
+          "transfer": 30232,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772,
+          "transfer": 33072,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/site.webmanifest",
+          "bytes": 263,
+          "transfer": 563,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/nodes/1.nizYg-SU.js",
+          "bytes": 510,
+          "transfer": 810,
+          "type": "script"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-67799BZ3DC",
+          "bytes": 0,
+          "transfer": 0,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5194/fonts/IranSansX/fonts/woff2/IRANSansX-ExtraBold.woff2",
+          "bytes": 32692,
+          "transfer": 32992,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/fonts/IranSansX/fonts/woff2/IRANSansX-Medium.woff2",
+          "bytes": 32912,
+          "transfer": 33212,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/fonts/IranSansX/fonts/woff2/IRANSansX-DemiBold.woff2",
+          "bytes": 32852,
+          "transfer": 33152,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/responsive/70da4fe2f2811f91-640.webp",
+          "bytes": 28444,
+          "transfer": 28744,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/smollm.webp",
+          "bytes": 16378,
+          "transfer": 16678,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/brands/nvidia.svg",
+          "bytes": 932,
+          "transfer": 1232,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/social/eitaa.svg",
+          "bytes": 1272,
+          "transfer": 1572,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/social/telegram-white.svg",
+          "bytes": 1005,
+          "transfer": 1305,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/social/whatsapp-white.svg",
+          "bytes": 1189,
+          "transfer": 1489,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/social/linkedin-white.svg",
+          "bytes": 603,
+          "transfer": 903,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/assets/KaTeX_Math-Italic.t53AETM-.woff2",
+          "bytes": 16440,
+          "transfer": 16740,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/_app/immutable/assets/KaTeX_Main-Regular.B22Nviop.woff2",
+          "bytes": 26272,
+          "transfer": 26572,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/ollama.png",
+          "bytes": 4441,
+          "transfer": 4741,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/sglang.png",
+          "bytes": 402692,
+          "transfer": 402992,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/llama-cpp.jpg",
+          "bytes": 2636,
+          "transfer": 2936,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/vllm.png",
+          "bytes": 89976,
+          "transfer": 90276,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/huggingface.svg",
+          "bytes": 4634,
+          "transfer": 4934,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/minilm.webp",
+          "bytes": 6398,
+          "transfer": 6698,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/bge.webp",
+          "bytes": 5206,
+          "transfer": 5506,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/ktransformers.png",
+          "bytes": 10074,
+          "transfer": 10374,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/qwen.webp",
+          "bytes": 2832,
+          "transfer": 3132,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/deepseek.webp",
+          "bytes": 3682,
+          "transfer": 3982,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/cohere.webp",
+          "bytes": 2422,
+          "transfer": 2722,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/gemma.webp",
+          "bytes": 7100,
+          "transfer": 7400,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/llama.webp",
+          "bytes": 8108,
+          "transfer": 8408,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/mistral.webp",
+          "bytes": 2656,
+          "transfer": 2956,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/glm.webp",
+          "bytes": 2506,
+          "transfer": 2806,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/gpt-oss.png",
+          "bytes": 5194,
+          "transfer": 5494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/phi.webp",
+          "bytes": 626,
+          "transfer": 926,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/olmo.webp",
+          "bytes": 1400,
+          "transfer": 1700,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/granite.webp",
+          "bytes": 3664,
+          "transfer": 3964,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/kimi.webp",
+          "bytes": 5568,
+          "transfer": 5868,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/minimax.webp",
+          "bytes": 4194,
+          "transfer": 4494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/jina.webp",
+          "bytes": 4528,
+          "transfer": 4828,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/mixedbread.webp",
+          "bytes": 8230,
+          "transfer": 8530,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/nomic.webp",
+          "bytes": 11080,
+          "transfer": 11380,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/modernbert.webp",
+          "bytes": 3860,
+          "transfer": 4160,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/bigcode.png",
+          "bytes": 8582,
+          "transfer": 8882,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/partai.jpg",
+          "bytes": 6084,
+          "transfer": 6384,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5194/images/llm/brands/hooshvarelab.png",
+          "bytes": 10196,
+          "transfer": 10496,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "label": "after",
+      "locale": "fa",
+      "javascriptRequests": 44,
+      "javascriptBytes": 7769877,
+      "gzipBytes": 884603,
+      "totalRequests": 91,
+      "requests": [
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fontiran.css",
+          "bytes": 3097,
+          "transfer": 3397,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/entry/start.bFbNo1-p.js",
+          "bytes": 83,
+          "transfer": 383,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/HC6Njiwg.js",
+          "bytes": 635,
+          "transfer": 935,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Dj8rWVTI.js",
+          "bytes": 28625,
+          "transfer": 28925,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B0CiHjb6.js",
+          "bytes": 27613,
+          "transfer": 27913,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644,
+          "transfer": 944,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B6JmYIz7.js",
+          "bytes": 290,
+          "transfer": 590,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232,
+          "transfer": 1532,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/entry/app.rTpZZztR.js",
+          "bytes": 13941,
+          "transfer": 14241,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DUMKXhXa.js",
+          "bytes": 1818,
+          "transfer": 2118,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DFKaUu3X.js",
+          "bytes": 438,
+          "transfer": 738,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/1nXpYeYA.js",
+          "bytes": 5341,
+          "transfer": 5641,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CWt8UQiN.js",
+          "bytes": 2364,
+          "transfer": 2664,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BGwuITVr.js",
+          "bytes": 4137,
+          "transfer": 4437,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/0.BCN8HAcH.js",
+          "bytes": 21170,
+          "transfer": 21470,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DAYYr27k.js",
+          "bytes": 227,
+          "transfer": 527,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D69Mtmw7.js",
+          "bytes": 742,
+          "transfer": 1042,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Bb0aLujx.js",
+          "bytes": 12388,
+          "transfer": 12688,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B6HGD5ba.js",
+          "bytes": 12637,
+          "transfer": 12937,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D2PKnIbT.js",
+          "bytes": 255913,
+          "transfer": 256213,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/VIoVURMS.js",
+          "bytes": 25997,
+          "transfer": 26297,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/wG0Rdufx.js",
+          "bytes": 1746,
+          "transfer": 2046,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DPm-NL-X.js",
+          "bytes": 1409,
+          "transfer": 1709,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471,
+          "transfer": 31771,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BWOkCXuN.js",
+          "bytes": 192,
+          "transfer": 492,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/36.DxG08r18.js",
+          "bytes": 800,
+          "transfer": 1100,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BjnYoCsr.js",
+          "bytes": 702,
+          "transfer": 1002,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BY2_Uc0Z.js",
+          "bytes": 186,
+          "transfer": 486,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/C_A98AMx.js",
+          "bytes": 110768,
+          "transfer": 111068,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CifP1zSu.js",
+          "bytes": 6562255,
+          "transfer": 6562555,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/GuideOpening.D3bYO6Tl.css",
+          "bytes": 1328,
+          "transfer": 1628,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/0.BMtNTcvi.css",
+          "bytes": 72891,
+          "transfer": 73191,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/contents-navigation.DL13OhYc.css",
+          "bytes": 38014,
+          "transfer": 38314,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/LlmPreview.BksVS_Mw.css",
+          "bytes": 52965,
+          "transfer": 53265,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/x-white.svg",
+          "bytes": 314,
+          "transfer": 614,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/bale-white.svg",
+          "bytes": 3248,
+          "transfer": 3548,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/UEjnDzty.js",
+          "bytes": 260,
+          "transfer": 560,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Bt_naBhi.js",
+          "bytes": 60234,
+          "transfer": 60534,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CG-OUxA2.js",
+          "bytes": 36078,
+          "transfer": 36378,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/site.webmanifest",
+          "bytes": 263,
+          "transfer": 563,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772,
+          "transfer": 33072,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932,
+          "transfer": 30232,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/1.CjMHnxE1.js",
+          "bytes": 510,
+          "transfer": 810,
+          "type": "script"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-67799BZ3DC",
+          "bytes": 0,
+          "transfer": 0,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CvPBHYtq.js",
+          "bytes": 88049,
+          "transfer": 88349,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/NdqwirHj.js",
+          "bytes": 49414,
+          "transfer": 49714,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B62oYFKY.js",
+          "bytes": 36700,
+          "transfer": 37000,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/S_GzRxYo.js",
+          "bytes": 48653,
+          "transfer": 48953,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DGbNEHnm.js",
+          "bytes": 41562,
+          "transfer": 41862,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B7MjKqvu.js",
+          "bytes": 40654,
+          "transfer": 40954,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/T93JugsW.js",
+          "bytes": 39417,
+          "transfer": 39717,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CRARfFrd.js",
+          "bytes": 43245,
+          "transfer": 43545,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B5JjmPNU.js",
+          "bytes": 54445,
+          "transfer": 54745,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DxAfe7nU.js",
+          "bytes": 45118,
+          "transfer": 45418,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BW-eZ5H1.js",
+          "bytes": 59774,
+          "transfer": 60074,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-DemiBold.woff2",
+          "bytes": 32852,
+          "transfer": 33152,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-ExtraBold.woff2",
+          "bytes": 32692,
+          "transfer": 32992,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Medium.woff2",
+          "bytes": 32912,
+          "transfer": 33212,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/responsive/70da4fe2f2811f91-640.webp",
+          "bytes": 28444,
+          "transfer": 28744,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/cohere.webp",
+          "bytes": 2422,
+          "transfer": 2722,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/brands/nvidia.svg",
+          "bytes": 932,
+          "transfer": 1232,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/eitaa.svg",
+          "bytes": 1272,
+          "transfer": 1572,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/telegram-white.svg",
+          "bytes": 1005,
+          "transfer": 1305,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/whatsapp-white.svg",
+          "bytes": 1189,
+          "transfer": 1489,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/linkedin-white.svg",
+          "bytes": 603,
+          "transfer": 903,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/KaTeX_Math-Italic.t53AETM-.woff2",
+          "bytes": 16440,
+          "transfer": 16740,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/KaTeX_Main-Regular.B22Nviop.woff2",
+          "bytes": 26272,
+          "transfer": 26572,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/llama-cpp.jpg",
+          "bytes": 2636,
+          "transfer": 2936,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/ollama.png",
+          "bytes": 4441,
+          "transfer": 4741,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/vllm.png",
+          "bytes": 89976,
+          "transfer": 90276,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/sglang.png",
+          "bytes": 402692,
+          "transfer": 402992,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/huggingface.svg",
+          "bytes": 4634,
+          "transfer": 4934,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/minilm.webp",
+          "bytes": 6398,
+          "transfer": 6698,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/qwen.webp",
+          "bytes": 2832,
+          "transfer": 3132,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/ktransformers.png",
+          "bytes": 10074,
+          "transfer": 10374,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/deepseek.webp",
+          "bytes": 3682,
+          "transfer": 3982,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/gemma.webp",
+          "bytes": 7100,
+          "transfer": 7400,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/bge.webp",
+          "bytes": 5206,
+          "transfer": 5506,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/llama.webp",
+          "bytes": 8108,
+          "transfer": 8408,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/mistral.webp",
+          "bytes": 2656,
+          "transfer": 2956,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/glm.webp",
+          "bytes": 2506,
+          "transfer": 2806,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/phi.webp",
+          "bytes": 626,
+          "transfer": 926,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/gpt-oss.png",
+          "bytes": 5194,
+          "transfer": 5494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/granite.webp",
+          "bytes": 3664,
+          "transfer": 3964,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/kimi.webp",
+          "bytes": 5568,
+          "transfer": 5868,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/olmo.webp",
+          "bytes": 1400,
+          "transfer": 1700,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/minimax.webp",
+          "bytes": 4194,
+          "transfer": 4494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/smollm.webp",
+          "bytes": 16378,
+          "transfer": 16678,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/jina.webp",
+          "bytes": 4528,
+          "transfer": 4828,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/mixedbread.webp",
+          "bytes": 8230,
+          "transfer": 8530,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/nomic.webp",
+          "bytes": 11080,
+          "transfer": 11380,
+          "type": "img"
+        }
+      ],
+      "articleChunks": [
+        "src/lib/content/articles/airllm-layer-wise-inference.md",
+        "src/lib/content/articles/code-completion-assistant-and-agent.md",
+        "src/lib/content/articles/enterprise-rag-model-embedding-reranker.md",
+        "src/lib/content/articles/evaluating-language-models-for-persian.md",
+        "src/lib/content/articles/four-bit-model-quantization.md",
+        "src/lib/content/articles/llms-on-rtx-4090-24gb-vs-48gb.md",
+        "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp.md",
+        "src/lib/content/articles/right-model-size-for-the-task.md",
+        "src/lib/content/articles/single-user-to-enterprise-llm-serving.md",
+        "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md"
+      ]
+    },
+    {
+      "label": "after",
+      "locale": "en",
+      "javascriptRequests": 45,
+      "javascriptBytes": 7597314,
+      "gzipBytes": 854318,
+      "totalRequests": 88,
+      "requests": [
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fontiran.css",
+          "bytes": 3097,
+          "transfer": 3397,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/entry/start.bFbNo1-p.js",
+          "bytes": 83,
+          "transfer": 383,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Dj8rWVTI.js",
+          "bytes": 28625,
+          "transfer": 28925,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644,
+          "transfer": 944,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/HC6Njiwg.js",
+          "bytes": 635,
+          "transfer": 935,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B6JmYIz7.js",
+          "bytes": 290,
+          "transfer": 590,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B0CiHjb6.js",
+          "bytes": 27613,
+          "transfer": 27913,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/entry/app.rTpZZztR.js",
+          "bytes": 13941,
+          "transfer": 14241,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232,
+          "transfer": 1532,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DUMKXhXa.js",
+          "bytes": 1818,
+          "transfer": 2118,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DFKaUu3X.js",
+          "bytes": 438,
+          "transfer": 738,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CWt8UQiN.js",
+          "bytes": 2364,
+          "transfer": 2664,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/1nXpYeYA.js",
+          "bytes": 5341,
+          "transfer": 5641,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BGwuITVr.js",
+          "bytes": 4137,
+          "transfer": 4437,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/0.BCN8HAcH.js",
+          "bytes": 21170,
+          "transfer": 21470,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DAYYr27k.js",
+          "bytes": 227,
+          "transfer": 527,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D69Mtmw7.js",
+          "bytes": 742,
+          "transfer": 1042,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Bb0aLujx.js",
+          "bytes": 12388,
+          "transfer": 12688,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B6HGD5ba.js",
+          "bytes": 12637,
+          "transfer": 12937,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/wG0Rdufx.js",
+          "bytes": 1746,
+          "transfer": 2046,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/VIoVURMS.js",
+          "bytes": 25997,
+          "transfer": 26297,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471,
+          "transfer": 31771,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D2PKnIbT.js",
+          "bytes": 255913,
+          "transfer": 256213,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DPm-NL-X.js",
+          "bytes": 1409,
+          "transfer": 1709,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BWOkCXuN.js",
+          "bytes": 192,
+          "transfer": 492,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/13.BHYmpMrP.js",
+          "bytes": 800,
+          "transfer": 1100,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BjnYoCsr.js",
+          "bytes": 702,
+          "transfer": 1002,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/C_A98AMx.js",
+          "bytes": 110768,
+          "transfer": 111068,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CifP1zSu.js",
+          "bytes": 6562255,
+          "transfer": 6562555,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/GuideOpening.D3bYO6Tl.css",
+          "bytes": 1328,
+          "transfer": 1628,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/0.BMtNTcvi.css",
+          "bytes": 72891,
+          "transfer": 73191,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/contents-navigation.DL13OhYc.css",
+          "bytes": 38014,
+          "transfer": 38314,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BY2_Uc0Z.js",
+          "bytes": 186,
+          "transfer": 486,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/UEjnDzty.js",
+          "bytes": 260,
+          "transfer": 560,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Bt_naBhi.js",
+          "bytes": 60234,
+          "transfer": 60534,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CG-OUxA2.js",
+          "bytes": 36078,
+          "transfer": 36378,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/LlmPreview.BksVS_Mw.css",
+          "bytes": 52965,
+          "transfer": 53265,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/x-white.svg",
+          "bytes": 314,
+          "transfer": 614,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/site.webmanifest",
+          "bytes": 263,
+          "transfer": 563,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772,
+          "transfer": 33072,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932,
+          "transfer": 30232,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/1.CjMHnxE1.js",
+          "bytes": 510,
+          "transfer": 810,
+          "type": "script"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-67799BZ3DC",
+          "bytes": 0,
+          "transfer": 0,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/woB5zFgI.js",
+          "bytes": 68118,
+          "transfer": 68418,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DsN9vyhG.js",
+          "bytes": 84080,
+          "transfer": 84380,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/C7dd5JHT.js",
+          "bytes": 22662,
+          "transfer": 22962,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B_ZelYJP.js",
+          "bytes": 26271,
+          "transfer": 26571,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DH5EgMhp.js",
+          "bytes": 19332,
+          "transfer": 19632,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D08e-VYY.js",
+          "bytes": 21964,
+          "transfer": 22264,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DVERuDv_.js",
+          "bytes": 20255,
+          "transfer": 20555,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/6hbbtvzm.js",
+          "bytes": 20399,
+          "transfer": 20699,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DzSWHhm4.js",
+          "bytes": 21434,
+          "transfer": 21734,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DmEW8nn0.js",
+          "bytes": 23268,
+          "transfer": 23568,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D6Po9Xt4.js",
+          "bytes": 25080,
+          "transfer": 25380,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/x0tJD_9B.js",
+          "bytes": 21605,
+          "transfer": 21905,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-DemiBold.woff2",
+          "bytes": 32852,
+          "transfer": 33152,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-ExtraBold.woff2",
+          "bytes": 32692,
+          "transfer": 32992,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Medium.woff2",
+          "bytes": 32912,
+          "transfer": 33212,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/responsive/70da4fe2f2811f91-640.webp",
+          "bytes": 28444,
+          "transfer": 28744,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/smollm.webp",
+          "bytes": 16378,
+          "transfer": 16678,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/cohere.webp",
+          "bytes": 2422,
+          "transfer": 2722,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/brands/nvidia.svg",
+          "bytes": 932,
+          "transfer": 1232,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/telegram-white.svg",
+          "bytes": 1005,
+          "transfer": 1305,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/whatsapp-white.svg",
+          "bytes": 1189,
+          "transfer": 1489,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/linkedin-white.svg",
+          "bytes": 603,
+          "transfer": 903,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/KaTeX_Math-Italic.t53AETM-.woff2",
+          "bytes": 16440,
+          "transfer": 16740,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/KaTeX_Main-Regular.B22Nviop.woff2",
+          "bytes": 26272,
+          "transfer": 26572,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/ollama.png",
+          "bytes": 4441,
+          "transfer": 4741,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/llama-cpp.jpg",
+          "bytes": 2636,
+          "transfer": 2936,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/vllm.png",
+          "bytes": 89976,
+          "transfer": 90276,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/huggingface.svg",
+          "bytes": 4634,
+          "transfer": 4934,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/minilm.webp",
+          "bytes": 6398,
+          "transfer": 6698,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/bge.webp",
+          "bytes": 5206,
+          "transfer": 5506,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/ktransformers.png",
+          "bytes": 10074,
+          "transfer": 10374,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/qwen.webp",
+          "bytes": 2832,
+          "transfer": 3132,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/sglang.png",
+          "bytes": 402692,
+          "transfer": 402992,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/deepseek.webp",
+          "bytes": 3682,
+          "transfer": 3982,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/gemma.webp",
+          "bytes": 7100,
+          "transfer": 7400,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/mistral.webp",
+          "bytes": 2656,
+          "transfer": 2956,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/glm.webp",
+          "bytes": 2506,
+          "transfer": 2806,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/llama.webp",
+          "bytes": 8108,
+          "transfer": 8408,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/gpt-oss.png",
+          "bytes": 5194,
+          "transfer": 5494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/phi.webp",
+          "bytes": 626,
+          "transfer": 926,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/granite.webp",
+          "bytes": 3664,
+          "transfer": 3964,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/olmo.webp",
+          "bytes": 1400,
+          "transfer": 1700,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/kimi.webp",
+          "bytes": 5568,
+          "transfer": 5868,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/minimax.webp",
+          "bytes": 4194,
+          "transfer": 4494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/jina.webp",
+          "bytes": 4528,
+          "transfer": 4828,
+          "type": "img"
+        }
+      ],
+      "articleChunks": [
+        "src/lib/content/articles/airllm-layer-wise-inference-en.md",
+        "src/lib/content/articles/code-completion-assistant-and-agent-en.md",
+        "src/lib/content/articles/enterprise-rag-model-embedding-reranker-en.md",
+        "src/lib/content/articles/evaluating-llms-for-your-language-and-workload.md",
+        "src/lib/content/articles/four-bit-model-quantization-en.md",
+        "src/lib/content/articles/llms-on-rtx-4090-24gb-vs-48gb-en.md",
+        "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp-en.md",
+        "src/lib/content/articles/right-model-size-for-the-task-en.md",
+        "src/lib/content/articles/single-user-to-enterprise-llm-serving-en.md",
+        "src/lib/content/articles/true-llm-cost-buy-rent-or-api-en.md"
+      ]
+    },
+    {
+      "label": "after",
+      "locale": "es",
+      "javascriptRequests": 45,
+      "javascriptBytes": 7625949,
+      "gzipBytes": 859234,
+      "totalRequests": 87,
+      "requests": [
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fontiran.css",
+          "bytes": 3097,
+          "transfer": 3397,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/entry/start.bFbNo1-p.js",
+          "bytes": 83,
+          "transfer": 383,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/HC6Njiwg.js",
+          "bytes": 635,
+          "transfer": 935,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Dj8rWVTI.js",
+          "bytes": 28625,
+          "transfer": 28925,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B0CiHjb6.js",
+          "bytes": 27613,
+          "transfer": 27913,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/OA8UcISh.js",
+          "bytes": 644,
+          "transfer": 944,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B6JmYIz7.js",
+          "bytes": 290,
+          "transfer": 590,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/PPVm8Dsz.js",
+          "bytes": 1232,
+          "transfer": 1532,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/entry/app.rTpZZztR.js",
+          "bytes": 13941,
+          "transfer": 14241,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DUMKXhXa.js",
+          "bytes": 1818,
+          "transfer": 2118,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/1nXpYeYA.js",
+          "bytes": 5341,
+          "transfer": 5641,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BGwuITVr.js",
+          "bytes": 4137,
+          "transfer": 4437,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DFKaUu3X.js",
+          "bytes": 438,
+          "transfer": 738,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CWt8UQiN.js",
+          "bytes": 2364,
+          "transfer": 2664,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/0.BCN8HAcH.js",
+          "bytes": 21170,
+          "transfer": 21470,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DAYYr27k.js",
+          "bytes": 227,
+          "transfer": 527,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B6HGD5ba.js",
+          "bytes": 12637,
+          "transfer": 12937,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Bb0aLujx.js",
+          "bytes": 12388,
+          "transfer": 12688,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D69Mtmw7.js",
+          "bytes": 742,
+          "transfer": 1042,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/wG0Rdufx.js",
+          "bytes": 1746,
+          "transfer": 2046,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DPm-NL-X.js",
+          "bytes": 1409,
+          "transfer": 1709,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/VIoVURMS.js",
+          "bytes": 25997,
+          "transfer": 26297,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BWOkCXuN.js",
+          "bytes": 192,
+          "transfer": 492,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/pckfvWRH.js",
+          "bytes": 31471,
+          "transfer": 31771,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/26.BX9tOSDe.js",
+          "bytes": 800,
+          "transfer": 1100,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/D2PKnIbT.js",
+          "bytes": 255913,
+          "transfer": 256213,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CifP1zSu.js",
+          "bytes": 6562255,
+          "transfer": 6562555,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BjnYoCsr.js",
+          "bytes": 702,
+          "transfer": 1002,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BY2_Uc0Z.js",
+          "bytes": 186,
+          "transfer": 486,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/Bt_naBhi.js",
+          "bytes": 60234,
+          "transfer": 60534,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/C_A98AMx.js",
+          "bytes": 110768,
+          "transfer": 111068,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CG-OUxA2.js",
+          "bytes": 36078,
+          "transfer": 36378,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/0.BMtNTcvi.css",
+          "bytes": 72891,
+          "transfer": 73191,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/GuideOpening.D3bYO6Tl.css",
+          "bytes": 1328,
+          "transfer": 1628,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/contents-navigation.DL13OhYc.css",
+          "bytes": 38014,
+          "transfer": 38314,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/LlmPreview.BksVS_Mw.css",
+          "bytes": 52965,
+          "transfer": 53265,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/UEjnDzty.js",
+          "bytes": 260,
+          "transfer": 560,
+          "type": "other"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/x-white.svg",
+          "bytes": 314,
+          "transfer": 614,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/site.webmanifest",
+          "bytes": 263,
+          "transfer": 563,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Bold.woff2",
+          "bytes": 32772,
+          "transfer": 33072,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Regular.woff2",
+          "bytes": 29932,
+          "transfer": 30232,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/nodes/1.CjMHnxE1.js",
+          "bytes": 510,
+          "transfer": 810,
+          "type": "script"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-67799BZ3DC",
+          "bytes": 0,
+          "transfer": 0,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/EdmqvKN3.js",
+          "bytes": 75220,
+          "transfer": 75520,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CWRaGlRX.js",
+          "bytes": 94093,
+          "transfer": 94393,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BGKK5pZy.js",
+          "bytes": 24428,
+          "transfer": 24728,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/OBqmcG2j.js",
+          "bytes": 27452,
+          "transfer": 27752,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/DP5eG17j.js",
+          "bytes": 21300,
+          "transfer": 21600,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CkLrpOS1.js",
+          "bytes": 20394,
+          "transfer": 20694,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/B1H67xco.js",
+          "bytes": 21264,
+          "transfer": 21564,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BgJNRaBV.js",
+          "bytes": 22982,
+          "transfer": 23282,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/pENt_YRg.js",
+          "bytes": 23682,
+          "transfer": 23982,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/CcyYoYCc.js",
+          "bytes": 23680,
+          "transfer": 23980,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/BKKEQ0wW.js",
+          "bytes": 26263,
+          "transfer": 26563,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/chunks/rLKRJh2z.js",
+          "bytes": 22345,
+          "transfer": 22645,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-DemiBold.woff2",
+          "bytes": 32852,
+          "transfer": 33152,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-ExtraBold.woff2",
+          "bytes": 32692,
+          "transfer": 32992,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/fonts/IranSansX/fonts/woff2/IRANSansX-Medium.woff2",
+          "bytes": 32912,
+          "transfer": 33212,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/responsive/70da4fe2f2811f91-640.webp",
+          "bytes": 28444,
+          "transfer": 28744,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/cohere.webp",
+          "bytes": 2422,
+          "transfer": 2722,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/smollm.webp",
+          "bytes": 16378,
+          "transfer": 16678,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/brands/nvidia.svg",
+          "bytes": 932,
+          "transfer": 1232,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/telegram-white.svg",
+          "bytes": 1005,
+          "transfer": 1305,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/whatsapp-white.svg",
+          "bytes": 1189,
+          "transfer": 1489,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/social/linkedin-white.svg",
+          "bytes": 603,
+          "transfer": 903,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/KaTeX_Math-Italic.t53AETM-.woff2",
+          "bytes": 16440,
+          "transfer": 16740,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/_app/immutable/assets/KaTeX_Main-Regular.B22Nviop.woff2",
+          "bytes": 26272,
+          "transfer": 26572,
+          "type": "css"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/llama-cpp.jpg",
+          "bytes": 2636,
+          "transfer": 2936,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/ollama.png",
+          "bytes": 4441,
+          "transfer": 4741,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/huggingface.svg",
+          "bytes": 4634,
+          "transfer": 4934,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/minilm.webp",
+          "bytes": 6398,
+          "transfer": 6698,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/vllm.png",
+          "bytes": 89976,
+          "transfer": 90276,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/sglang.png",
+          "bytes": 402692,
+          "transfer": 402992,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/qwen.webp",
+          "bytes": 2832,
+          "transfer": 3132,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/bge.webp",
+          "bytes": 5206,
+          "transfer": 5506,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/ktransformers.png",
+          "bytes": 10074,
+          "transfer": 10374,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/deepseek.webp",
+          "bytes": 3682,
+          "transfer": 3982,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/gemma.webp",
+          "bytes": 7100,
+          "transfer": 7400,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/llama.webp",
+          "bytes": 8108,
+          "transfer": 8408,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/mistral.webp",
+          "bytes": 2656,
+          "transfer": 2956,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/gpt-oss.png",
+          "bytes": 5194,
+          "transfer": 5494,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/glm.webp",
+          "bytes": 2506,
+          "transfer": 2806,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/phi.webp",
+          "bytes": 626,
+          "transfer": 926,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/granite.webp",
+          "bytes": 3664,
+          "transfer": 3964,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/olmo.webp",
+          "bytes": 1400,
+          "transfer": 1700,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/kimi.webp",
+          "bytes": 5568,
+          "transfer": 5868,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:5193/images/llm/brands/minimax.webp",
+          "bytes": 4194,
+          "transfer": 4494,
+          "type": "img"
+        }
+      ],
+      "articleChunks": [
+        "src/lib/content/articles/airllm-layer-wise-inference-es.md",
+        "src/lib/content/articles/code-completion-assistant-and-agent-es.md",
+        "src/lib/content/articles/enterprise-rag-model-embedding-reranker-es.md",
+        "src/lib/content/articles/evaluar-llm-idioma-y-tarea.md",
+        "src/lib/content/articles/four-bit-model-quantization-es.md",
+        "src/lib/content/articles/llms-on-rtx-4090-24gb-vs-48gb-es.md",
+        "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp-es.md",
+        "src/lib/content/articles/right-model-size-for-the-task-es.md",
+        "src/lib/content/articles/single-user-to-enterprise-llm-serving-es.md",
+        "src/lib/content/articles/true-llm-cost-buy-rent-or-api-es.md"
+      ]
+    }
+  ]
+}

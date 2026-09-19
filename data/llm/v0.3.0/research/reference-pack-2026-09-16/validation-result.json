@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": 1846,
+  "errors": [],
+  "scope": "Internal structure, references, selected source-transcription invariants, arithmetic and file integrity. Not a site build or a model benchmark.",
+  "counts": {
+    "publishedEvaluations": 132,
+    "comparisonGroups": 8,
+    "modelAdditions": 5,
+    "softwareAdditions": 1,
+    "selectionGuides": 8,
+    "articleSections": 8,
+    "standaloneArticles": 4,
+    "quantizationObservations": 12,
+    "sourceDocuments": 32
+  }
+}

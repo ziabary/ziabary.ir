@@ -198,3 +198,17 @@ softwareProducts.push({
     "evidence:audit-20260916-flagembedding-license"
   ]
 });
+softwareProducts.push({
+  "id": "software-product:mlx-lm",
+  "name": "MLX LM",
+  "officialUrl": "https://github.com/ml-explore/mlx-lm",
+  "taxonomyRoleHints": [
+    "inference-engine-library"
+  ],
+  "evidenceIds": [
+    "evidence:reference-mlx-lm-readme-txt",
+    "evidence:reference-mlx-readme-txt",
+    "evidence:reference-mlx-release-json",
+    "evidence:reference-mlx-license-txt"
+  ]
+});

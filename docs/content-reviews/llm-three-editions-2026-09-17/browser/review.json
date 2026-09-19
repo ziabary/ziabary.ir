@@ -1,0 +1,187 @@
+{
+  "editions": [
+    {
+      "locale": "fa",
+      "views": {
+        "model-catalog": 95,
+        "model-suitability": 95,
+        "hardware-feasibility": 56,
+        "software-products": 16,
+        "specialized-models": 24,
+        "benchmarks": 4,
+        "deployment-compatibility": 321
+      },
+      "profiles": [
+        {
+          "id": "model:qwen-qwen3-8b",
+          "panels": [
+            2095,
+            1447,
+            1358,
+            1267,
+            2129,
+            580
+          ],
+          "leaks": []
+        },
+        {
+          "id": "model:baai-bge-m3",
+          "panels": [
+            910,
+            2990,
+            978,
+            557,
+            948,
+            648
+          ],
+          "leaks": []
+        },
+        {
+          "id": "model:mistralai-mistral-7b-instruct-v0-3",
+          "panels": [
+            1450,
+            870,
+            540,
+            360,
+            71,
+            785
+          ],
+          "leaks": []
+        }
+      ],
+      "leaks": [],
+      "quality": 5,
+      "brokenImages": []
+    },
+    {
+      "locale": "en",
+      "views": {
+        "model-catalog": 95,
+        "model-suitability": 95,
+        "hardware-feasibility": 56,
+        "software-products": 16,
+        "specialized-models": 24,
+        "benchmarks": 4,
+        "deployment-compatibility": 321
+      },
+      "profiles": [
+        {
+          "id": "model:qwen-qwen3-8b",
+          "panels": [
+            2540,
+            1707,
+            1387,
+            1497,
+            2145,
+            666
+          ],
+          "leaks": []
+        },
+        {
+          "id": "model:baai-bge-m3",
+          "panels": [
+            1056,
+            3385,
+            1040,
+            638,
+            1181,
+            740
+          ],
+          "leaks": []
+        },
+        {
+          "id": "model:mistralai-mistral-7b-instruct-v0-3",
+          "panels": [
+            1711,
+            990,
+            567,
+            400,
+            89,
+            871
+          ],
+          "leaks": []
+        }
+      ],
+      "leaks": [],
+      "quality": 10,
+      "brokenImages": []
+    },
+    {
+      "locale": "es",
+      "views": {
+        "model-catalog": 95,
+        "model-suitability": 95,
+        "hardware-feasibility": 56,
+        "software-products": 16,
+        "specialized-models": 24,
+        "benchmarks": 4,
+        "deployment-compatibility": 321
+      },
+      "profiles": [
+        {
+          "id": "model:qwen-qwen3-8b",
+          "panels": [
+            2769,
+            2024,
+            1429,
+            1541,
+            2772,
+            708
+          ],
+          "leaks": []
+        },
+        {
+          "id": "model:baai-bge-m3",
+          "panels": [
+            1127,
+            3940,
+            1106,
+            711,
+            1236,
+            784
+          ],
+          "leaks": []
+        },
+        {
+          "id": "model:mistralai-mistral-7b-instruct-v0-3",
+          "panels": [
+            1851,
+            1155,
+            621,
+            448,
+            103,
+            913
+          ],
+          "leaks": []
+        }
+      ],
+      "leaks": [],
+      "quality": 2,
+      "brokenImages": []
+    }
+  ],
+  "checks": [
+    "quality valid/incompatible; checkbox, reload, back/forward; table selection and target language survive EN→ES",
+    "three hidden default guides; independent EN/ES draft routes, localized bodies and direct chapter opening"
+  ],
+  "screenshots": [
+    "fa-1440-dark.png",
+    "fa-performance.png",
+    "fa-390-dark.png",
+    "fa-390-light.png",
+    "fa-390-chapter.png",
+    "en-1440-dark.png",
+    "en-performance.png",
+    "en-390-dark.png",
+    "en-390-light.png",
+    "en-390-chapter.png",
+    "es-1440-dark.png",
+    "es-performance.png",
+    "es-390-dark.png",
+    "es-390-light.png",
+    "es-390-chapter.png",
+    "en-quality-valid.png",
+    "en-quality-incompatible.png"
+  ],
+  "runtimeErrors": []
+}

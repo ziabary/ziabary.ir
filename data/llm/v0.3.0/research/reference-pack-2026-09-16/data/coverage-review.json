@@ -1,0 +1,86 @@
+[
+  {
+    "id": "coverage:language-retrieval",
+    "priority": "P0",
+    "status": "supplied",
+    "deliverable": "E5 MIRACL fa/en/es; nDCG@10 and Recall@100. Use locale defaults without hiding language identity."
+  },
+  {
+    "id": "coverage:spanish-models",
+    "priority": "P1",
+    "status": "supplied",
+    "deliverable": "Two Salamandra models plus five Spanish tasks each; region/domain generalization explicitly limited."
+  },
+  {
+    "id": "coverage:small-families",
+    "priority": "P1",
+    "status": "supplied",
+    "deliverable": "MiniCPM5, LFM2.5 and current Granite model additions with precise counts and source conflicts."
+  },
+  {
+    "id": "coverage:apple-runtime",
+    "priority": "P1",
+    "status": "supplied",
+    "deliverable": "MLX LM, documented feature scope and shared-memory guidance; no fabricated speed ranking."
+  },
+  {
+    "id": "coverage:quantization",
+    "priority": "P1",
+    "status": "supplied-partially",
+    "deliverable": "ParetoQ trained-quantization example; no transferable desktop speed/VRAM claim. Do not position the study as a purchasing benchmark."
+  },
+  {
+    "id": "coverage:coder-next",
+    "priority": "P2",
+    "status": "open",
+    "deliverable": "Already in baseline catalogue. No benchmark values transcribed from the unreviewed PDF; preserve existing metadata and a no-recorded-score state."
+  },
+  {
+    "id": "coverage:gated-cards",
+    "priority": "P2",
+    "status": "access-limited",
+    "deliverable": "Public metadata fetched for CohereLabs/tiny-aya-earth and google/embeddinggemma-300m, but README/config returned HTTP 401. No new card-derived quality or runtime claims supplied."
+  },
+  {
+    "id": "coverage:modernbert",
+    "priority": "P2",
+    "status": "intentional-task-scope",
+    "deliverable": "Do not invent chat scores for ModernBERT/ParsBERT. Describe encoder roles and task-specific heads/adaptation."
+  },
+  {
+    "id": "coverage:latam",
+    "priority": "P1",
+    "status": "open",
+    "deliverable": "No verified region-specific Spanish benchmark set in this package. Do not imply coverage of all Latin American varieties from language tags or SpanishBench."
+  },
+  {
+    "id": "coverage:execution-performance",
+    "priority": "P1",
+    "status": "open",
+    "deliverable": "No newly verified, matched-hardware inference performance cohort. Keep throughput, latency and peak-memory unknown; existing sourced runs can remain with their conditions."
+  },
+  {
+    "id": "coverage:article-airllm",
+    "priority": "P2",
+    "status": "retain-corrected-version",
+    "deliverable": "No new AirLLM performance evidence supplied. Preserve the previous corrections distinguishing minimum resident memory, transfer costs and interactive latency; do not add invented measurements."
+  },
+  {
+    "id": "coverage:article-serving",
+    "priority": "P2",
+    "status": "retain-corrected-version",
+    "deliverable": "No new serving throughput tests supplied. Preserve workload/concurrency distinctions and report-level evidence from the previous prompt."
+  },
+  {
+    "id": "coverage:claim-independent",
+    "priority": "P0",
+    "status": "required-editorial-rule",
+    "deliverable": "Publisher and competitive third-party tables are not automatically independent audits. Keep scores, declarations and editorial inferences distinct."
+  },
+  {
+    "id": "coverage:costs",
+    "priority": "P0",
+    "status": "supplied",
+    "deliverable": "Two global EN/ES articles with a fully labelled hypothetical comparison; no Iranian market prices, no invented live offers, no restored interactive cost calculator."
+  }
+]

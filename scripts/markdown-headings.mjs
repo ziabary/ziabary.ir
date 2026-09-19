@@ -35,6 +35,10 @@ export default function markdownHeadings() {
     file.data.fm.headings = headings;
     file.data.fm.legacyAnchors = anchors;
     // Article components can also be rendered inside a collection without ID collisions.
-    if (used.size) tree.children.unshift({ type: 'html', value: "<script>export let headingPrefix = '';</script>" });
+    if (used.size) {
+      const script = tree.children.find(node => node.type === 'html' && /^<script(?:\s[^>]*)?>/.test(node.value) && !/^<script[^>]*(?:context=["']module|\bmodule\b)/.test(node.value));
+      if (script) script.value = script.value.replace(/^(<script[^>]*>)/, "$1export let headingPrefix = '';\n");
+      else tree.children.unshift({ type: 'html', value: "<script>export let headingPrefix = '';</script>" });
+    }
   };
 }

@@ -48,15 +48,40 @@
     }
   ],
   "publications": [
-    "Introducing E4MT and LMBNC: Persian pre-processing utilities, 2023",
-    "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior, 2015",
-    "AUT Document Alignment Framework for BUCC Workshop Shared Task — 2015",
-    "Developing an open-domain English-Farsi translation system using AFEC — 2012",
-    "Semi-human instinctive artificial intelligence (SHI-AI) — 2006",
-    "A Novel Approach to Semi-Human Instinctive Artificial Intelligence — 2005",
-    "VBScript programmer's guide — 2002",
-    "Inter-Function Communication (IFC) — 2001",
-    "Design of a Cost Effective Supercomputer — 2001"
+    {
+      "title": "Introducing E4MT and LMBNC: Persian pre-processing utilities, 2022",
+      "url": "https://ieeexplore.ieee.org/document/9960087"
+    },
+    {
+      "title": "HLMT: Human-Like Machine Translation Inspired by Bilinguals' Cortex Activity and Translation Behavior, 2015",
+      "url": "https://doi.org/10.13140/RG.2.1.1086.0002"
+    },
+    {
+      "title": "AUT Document Alignment Framework for BUCC Workshop Shared Task — 2015",
+      "url": "https://aclanthology.org/W15-3412/"
+    },
+    {
+      "title": "Developing an open-domain English-Farsi translation system using AFEC — 2012",
+      "url": "https://aclanthology.org/2012.amta-caas14.3/"
+    },
+    {
+      "title": "Semi-human instinctive artificial intelligence (SHI-AI) — 2006",
+      "url": "https://dl.acm.org/doi/10.1145/1232425.1232446"
+    },
+    {
+      "title": "A Novel Approach to Semi-Human Instinctive Artificial Intelligence — 2005",
+      "url": "https://www.researchgate.net/publication/256706651_A_Novel_Approach_to_Semi-Human_Instinctive_Artificial_Intelligence"
+    },
+    {
+      "title": "VBScript programmer's guide — 2002",
+      "url": "https://mahdroo.ir/shop/product/book-384033-wizqhu"
+    },
+    {
+      "title": "Inter-Function Communication (IFC) — 2001"
+    },
+    {
+      "title": "Design of a Cost Effective Supercomputer — 2001"
+    }
   ],
   "awards": [
     [

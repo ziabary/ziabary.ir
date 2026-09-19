@@ -1,0 +1,41 @@
+{
+  "fa": {
+    "primaryLanguages": [
+      "fa"
+    ],
+    "localEmphasis": [
+      "Persian PTEB",
+      "Iran-relevant availability and existing dated prices where sourced"
+    ],
+    "articles": "Preserve the corrected Persian articles; merge the applicable supplied sections."
+  },
+  "en": {
+    "primaryLanguages": [
+      "en"
+    ],
+    "localEmphasis": [
+      "English retrieval evidence",
+      "task selection",
+      "Apple and general deployment routes"
+    ],
+    "articles": "Use language-evidence.en.md instead of translating the Persian-only evaluation article; use cost-choice.en.md for the regional cost replacement."
+  },
+  "es": {
+    "primaryLanguages": [
+      "es"
+    ],
+    "localEmphasis": [
+      "Spanish MIRACL",
+      "SpanishBench and Salamandra",
+      "region-qualified language evidence"
+    ],
+    "articles": "Use language-evidence.es.md and cost-choice.es.md; do not promote Persian-only models by default."
+  },
+  "sharedRules": [
+    "Same factual identifiers across locales; prose may differ.",
+    "Changing page language does not change the language of a recorded evaluation.",
+    "Do not require all languages to have identical article lists.",
+    "Do not use Iran availability/payment assumptions for all Spanish-speaking countries.",
+    "Localized article links must resolve to the actual translated or adapted article, not to a Persian fallback disguised as a translation."
+  ]
+}

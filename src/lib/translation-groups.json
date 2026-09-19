@@ -1,4 +1,53 @@
 {
+  "right-model-size-for-the-task": {
+    "fa": "right-model-size-for-the-task",
+    "en": "right-model-size-for-the-task-en",
+    "es": "right-model-size-for-the-task-es"
+  },
+  "llms-on-rtx-4090-24gb-vs-48gb": {
+    "fa": "llms-on-rtx-4090-24gb-vs-48gb",
+    "en": "llms-on-rtx-4090-24gb-vs-48gb-en",
+    "es": "llms-on-rtx-4090-24gb-vs-48gb-es"
+  },
+  "four-bit-model-quantization": {
+    "fa": "four-bit-model-quantization",
+    "en": "four-bit-model-quantization-en",
+    "es": "four-bit-model-quantization-es"
+  },
+  "airllm-layer-wise-inference": {
+    "fa": "airllm-layer-wise-inference",
+    "en": "airllm-layer-wise-inference-en",
+    "es": "airllm-layer-wise-inference-es"
+  },
+  "enterprise-rag-model-embedding-reranker": {
+    "fa": "enterprise-rag-model-embedding-reranker",
+    "en": "enterprise-rag-model-embedding-reranker-en",
+    "es": "enterprise-rag-model-embedding-reranker-es"
+  },
+  "code-completion-assistant-and-agent": {
+    "fa": "code-completion-assistant-and-agent",
+    "en": "code-completion-assistant-and-agent-en",
+    "es": "code-completion-assistant-and-agent-es"
+  },
+  "evaluating-llms-for-your-language-and-workload": {
+    "en": "evaluating-llms-for-your-language-and-workload",
+    "es": "evaluar-llm-idioma-y-tarea"
+  },
+  "single-user-to-enterprise-llm-serving": {
+    "fa": "single-user-to-enterprise-llm-serving",
+    "en": "single-user-to-enterprise-llm-serving-en",
+    "es": "single-user-to-enterprise-llm-serving-es"
+  },
+  "ollama-vllm-sglang-or-llama-cpp": {
+    "fa": "ollama-vllm-sglang-or-llama-cpp",
+    "en": "ollama-vllm-sglang-or-llama-cpp-en",
+    "es": "ollama-vllm-sglang-or-llama-cpp-es"
+  },
+  "true-llm-cost-buy-rent-or-api": {
+    "fa": "true-llm-cost-buy-rent-or-api",
+    "en": "true-llm-cost-buy-rent-or-api-en",
+    "es": "true-llm-cost-buy-rent-or-api-es"
+  },
   "targoman-without-patronage": {
     "fa": "targoman-without-rent",
     "en": "building-targoman-without-patronage",
@@ -68,5 +117,10 @@
     "fa": "dynamic-password-fraud",
     "en": "sms-otp-security-design",
     "es": "cuando-un-otp-por-sms-reduce-la-seguridad"
+  },
+  "ai-infrastructure-security-starts-with-kernel-and-gpu": {
+    "fa": "ai-infrastructure-security-starts-with-kernel-and-gpu",
+    "en": "ai-infrastructure-security-starts-with-kernel-and-gpu-en",
+    "es": "ai-infrastructure-security-starts-with-kernel-and-gpu-es"
   }
 }

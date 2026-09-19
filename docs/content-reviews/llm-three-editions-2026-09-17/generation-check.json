@@ -1,0 +1,31 @@
+{
+  "identicalRegeneration": true,
+  "modules": 25,
+  "sha256": {
+    "src/lib/llm/data/apiCompatibility.v1.ts": "541f0b0b1c87162bb8a19eebba3fbefeb81584d20460aebd5a041445f2d24e27",
+    "src/lib/llm/data/applicationAssessments.v1.ts": "a5f063f24564b6a5be0556949ba3d18272e90784d1c59b661dc772e7df230890",
+    "src/lib/llm/data/artifacts.v1.ts": "d21752d94e9964bf397ec9e94161a222302bd2ca6c7cb00510db371bc4bc5e56",
+    "src/lib/llm/data/benchmarkRuns.v1.ts": "4025f46acc5f60dafe9b4f301e035fc665dd1fbcc89951f226bb6afb8ceb35b5",
+    "src/lib/llm/data/claims.v1.ts": "209536f8804fb67aeb23aadcb549df367e8f2f0dc60bfa290c68e12b7e2f8d06",
+    "src/lib/llm/data/deploymentCompatibility.v1.ts": "c0862adb93630f1285e2bcdc22f60116f8d70de46d37892aec1986a01d0004e7",
+    "src/lib/llm/data/deploymentConfigurations.v1.ts": "c13188d83aa1afa3b08c33ce45e453f538f384b1a18ebd00f56889a9126d54f5",
+    "src/lib/llm/data/engines.v1.ts": "f966ff1e2585939b5fe88e021462dd78c56405993381e32370ae60153b7e276a",
+    "src/lib/llm/data/evidence.v1.ts": "57114bcd92d0dc1733289005b2fa882db34195bdb070e91b6d8ae3125b061e6f",
+    "src/lib/llm/data/executionFeasibility.v1.ts": "60e7915b2717756c2ba91ef9378da3d939c1fddcf141ef973cd0b3d27f85437e",
+    "src/lib/llm/data/families.v1.ts": "102a0bf54dc19c4e366966484591c8e52a3b83b36a770f8ca8a746bef08f0e22",
+    "src/lib/llm/data/hardwareConfigurations.v1.ts": "f8954fd40ae7e1d08687e36ab4bd589f3f2b4cc3f181cf063da45535376050d0",
+    "src/lib/llm/data/models.v1.ts": "bfdd9a1b447597be434dcfb22d6376f95cc8edb12bb339b124da404a81384f91",
+    "src/lib/llm/data/qualityEvaluations.v1.ts": "47f10640103b315584116524679f1664f193fc635b5f915e39e450e25f8d3a68",
+    "src/lib/llm/data/repository.v1.ts": "0b1aae8ba5d8cc1f9808a8338b906ffe99b7e08b4820515e86840b3682960671",
+    "src/lib/llm/data/servingStacks.v1.ts": "b8bf83c4cf0b77c29412dbce5ce1e34ed46a03876a49ec7ce02bdf79235864cf",
+    "src/lib/llm/data/softwareCapabilities.v1.ts": "6206118cb1f92ee2e3fc421d52adfb211fb765c4a07406ef9cdf155d490d143f",
+    "src/lib/llm/data/softwareProducts.v1.ts": "f340fed0c93ab3097f51e7978071c757f430238c76f0c15a3f628ffd87dfcc20",
+    "src/lib/llm/data/softwareReleases.v1.ts": "cfd5e31544db2b805755fef69e2696c491513deb9fa7e7786bf1335791c8b620",
+    "src/lib/llm/data/specializedAssessments.v1.ts": "1e0addf4cae980a56c0e57f9e63e09bf4c819d39f7febf74acf31201d207cb2a",
+    "src/lib/llm/data/workloads.v1.ts": "7958d59d17eca38276fc88e9cb2e215b5dbf3dceadd5d78facef6f5ebcd8f04b",
+    "src/lib/llm/data/publishedEvaluations.v1.ts": "6b532c156b806b8971a2f3159d74c559290f0e5036e3cafdf9a7ae6ba1ba8f36",
+    "src/lib/llm/data/modelProfiles.v1.ts": "ebc529b3b59684349e28ef0dc76b54cb3ef2b8efa709ab5fc5462d553c4b4790",
+    "src/lib/llm/data/modelUseGuidance.v1.ts": "68b6bd267846ae756652c0394ae34f7e9178984b8a895f158cdd449fe6475c6b",
+    "src/lib/llm/data/artifactListings.v1.ts": "1e06b51565c33f2de799eb74bad4dcc2aec47464eafb6654755a6a35dffe3af5"
+  }
+}

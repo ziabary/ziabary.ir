@@ -68,11 +68,11 @@ test(`${locale} rejects missing translations instead of leaking Persian text`, (
   assert.equal(hardwareText('شرح فارسی', 'fa'), 'شرح فارسی');
 });
 
-test(`the ${locale} collection and its eight articles are published`, async () => {
+test(`the ${locale} collection and its nine articles are published`, async () => {
   const collection = JSON.parse(await read(`docs/drafts/gpu-selection-${locale}/collection.json`));
   assert.equal(collection.draft, false);
   const articleItems = collection.items.filter((item) => item.kind === 'article');
-  assert.equal(articleItems.length, 8);
+  assert.equal(articleItems.length, 9);
   assert.equal(collection.items.filter((item) => item.kind === 'interactive').length, 2);
   const ids = new Set(articleItems.map((item) => item.id));
   for (const item of articleItems) {
@@ -84,12 +84,19 @@ test(`the ${locale} collection and its eight articles are published`, async () =
     const original = await compile(await read(`src/lib/content/articles/${item.id.replace(/-(en|es)$/, '')}.md`));
     assert.equal(String(fm.date), String(original.data.fm.date), `${item.id}: retain original publication date`);
     assert.ok(fm.related.length > 0);
-    for (const related of fm.related) assert.ok(ids.has(related), `${item.id} → ${related}`);
+    for (const related of fm.related) {
+      const target = (await compile(await read(`src/lib/content/articles/${related}.md`))).data.fm;
+      assert.equal(target.lang, locale, `${item.id} → ${related}`);
+      assert.equal(target.draft, false, `${item.id} → ${related}`);
+    }
     for (const match of source.matchAll(/\]\(\/(en|es)\/articles\/([^/]+)\/\)/g)) {
       assert.equal(match[1], locale);
-      assert.ok(ids.has(match[2]), match[2]);
+      const target = (await compile(await read(`src/lib/content/articles/${match[2]}.md`))).data.fm;
+      assert.equal(target.lang, locale); assert.equal(target.draft, false, match[2]);
     }
-    assert.doesNotMatch(source, /[\u0600-\u06ff]/u);
+    // A source URL can contain a Persian section fragment; visible prose must still be translated.
+    const visibleSource = source.replace(/\]\([^\s)]+\)/g, '](source)').replace(/\bhref=["'][^"']+["']/g, 'href="source"');
+    assert.doesNotMatch(visibleSource, /[\u0600-\u06ff]/u);
     assert.doesNotMatch(source, /\b(?:Iran(?:ian)?|Irán|iraní(?:es)?)\b/i);
     for (const match of source.matchAll(/(?:cover: "|src="|\]\()(\/images\/[^"\s)]+)/g)) {
       await readFile(new URL(`static${match[1]}`, root));

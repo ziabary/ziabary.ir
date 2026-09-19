@@ -1,0 +1,195 @@
+[
+  {
+    "id": "chat",
+    "applicationId": "text-work",
+    "titleKey": "task.chat.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:huggingfacetb-smollm3-3b",
+        "languages": [
+          "en",
+          "es"
+        ],
+        "explanationKey": "task.chat.huggingfacetb-smollm3-3b"
+      },
+      {
+        "modelVersionId": "model:coherelabs-aya-expanse-8b",
+        "languages": [
+          "fa",
+          "es",
+          "en"
+        ],
+        "explanationKey": "task.chat.coherelabs-aya-expanse-8b"
+      }
+    ]
+  },
+  {
+    "id": "rag",
+    "applicationId": "enterprise-rag",
+    "titleKey": "task.rag.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:qwen-qwen3-4b",
+        "languages": [
+          "fa",
+          "en",
+          "es"
+        ],
+        "explanationKey": "task.rag.qwen-qwen3-4b"
+      },
+      {
+        "modelVersionId": "model:qwen-qwen3-8b",
+        "languages": [
+          "fa",
+          "en",
+          "es"
+        ],
+        "explanationKey": "task.rag.qwen-qwen3-8b"
+      }
+    ]
+  },
+  {
+    "id": "embedding",
+    "applicationId": "enterprise-rag",
+    "titleKey": "task.embedding.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:intfloat-multilingual-e5-small",
+        "languages": [
+          "fa",
+          "en",
+          "es"
+        ],
+        "explanationKey": "task.embedding.intfloat-multilingual-e5-small"
+      },
+      {
+        "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+        "languages": [
+          "fa",
+          "en",
+          "es"
+        ],
+        "explanationKey": "task.embedding.intfloat-multilingual-e5-large-instruct"
+      }
+    ]
+  },
+  {
+    "id": "reranking",
+    "applicationId": "enterprise-rag",
+    "titleKey": "task.reranking.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:baai-bge-reranker-v2-m3",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.reranking.baai-bge-reranker-v2-m3"
+      },
+      {
+        "modelVersionId": "model:qwen-qwen3-reranker-0-6b",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.reranking.qwen-qwen3-reranker-0-6b"
+      }
+    ]
+  },
+  {
+    "id": "json",
+    "applicationId": "structured-extraction",
+    "titleKey": "task.json.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.json.qwen-qwen3-4b-instruct-2507"
+      }
+    ]
+  },
+  {
+    "id": "completion",
+    "applicationId": "coding-assistant",
+    "titleKey": "task.completion.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:qwen-qwen2-5-coder-1-5b",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.completion.qwen-qwen2-5-coder-1-5b"
+      },
+      {
+        "modelVersionId": "model:bigcode-starcoder2-3b",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.completion.bigcode-starcoder2-3b"
+      }
+    ]
+  },
+  {
+    "id": "coding-agent",
+    "applicationId": "agents-tools",
+    "titleKey": "task.coding-agent.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:qwen-qwen3-coder-30b-a3b-instruct",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.coding-agent.qwen-qwen3-coder-30b-a3b-instruct"
+      },
+      {
+        "modelVersionId": "model:qwen-qwen3-coder-next",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.coding-agent.qwen-qwen3-coder-next"
+      }
+    ]
+  },
+  {
+    "id": "reasoning",
+    "applicationId": "reasoning-analysis",
+    "titleKey": "task.reasoning.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-7b",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.reasoning.deepseek-ai-deepseek-r1-distill-qwen-7b"
+      },
+      {
+        "modelVersionId": "model:deepseek-ai-deepseek-r1-distill-qwen-14b",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.reasoning.deepseek-ai-deepseek-r1-distill-qwen-14b"
+      }
+    ]
+  },
+  {
+    "id": "vision",
+    "applicationId": "document-vision",
+    "titleKey": "task.vision.title",
+    "candidates": [
+      {
+        "modelVersionId": "model:qwen-qwen3-vl-8b-instruct",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.vision.qwen-qwen3-vl-8b-instruct"
+      },
+      {
+        "modelVersionId": "model:google-gemma-3-4b-it",
+        "languages": [
+          "all"
+        ],
+        "explanationKey": "task.vision.google-gemma-3-4b-it"
+      }
+    ]
+  }
+]

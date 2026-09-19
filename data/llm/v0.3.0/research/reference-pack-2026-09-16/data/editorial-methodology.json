@@ -1,0 +1,54 @@
+{
+  "title": {
+    "fa": "روش انتخاب و مقایسه",
+    "en": "How selection and comparison work",
+    "es": "Cómo se selecciona y compara"
+  },
+  "intro": {
+    "fa": "این راهنما نتایج منتشرشده و مستندات فنی را برای انتخاب مدل و ابزار کنار هم می‌گذارد. عددهای کیفیت، زمان و حافظه با نام گزارش‌دهنده و شرایط گزارش نمایش داده می‌شوند. آزمایش تازه‌ای توسط این سایت انجام نشده است.",
+    "en": "This guide brings published evaluations and technical documentation together to support model and tool selection. Quality, latency and memory figures retain their reporter and reported conditions. The site has not run new model experiments.",
+    "es": "Esta guía reúne evaluaciones publicadas y documentación técnica para ayudar a elegir modelos y herramientas. Las cifras de calidad, latencia y memoria conservan su fuente y condiciones. El sitio no ha realizado nuevos experimentos con modelos."
+  },
+  "evidenceLabels": {
+    "publisher": {
+      "fa": "گزارش ناشر مدل",
+      "en": "Model publisher report",
+      "es": "Informe del editor del modelo"
+    },
+    "third-party": {
+      "fa": "گزارش طرف دیگر",
+      "en": "Third-party report",
+      "es": "Informe de terceros"
+    },
+    "relayed": {
+      "fa": "نقل نتیجه از منبع دیگر",
+      "en": "Result relayed from another source",
+      "es": "Resultado tomado de otra fuente"
+    },
+    "declared-language": {
+      "fa": "زبان اعلام‌شده",
+      "en": "Declared language",
+      "es": "Idioma declarado"
+    },
+    "task-evaluated-language": {
+      "fa": "شاهد زبانی برای این وظیفه",
+      "en": "Language evidence for this task",
+      "es": "Evidencia lingüística para esta tarea"
+    },
+    "not-evaluated": {
+      "fa": "نتیجهٔ ثبت‌شده ندارد",
+      "en": "No recorded evaluation",
+      "es": "Sin evaluación registrada"
+    },
+    "estimate": {
+      "fa": "برآورد با فرض‌های مشخص",
+      "en": "Estimate with explicit assumptions",
+      "es": "Estimación con supuestos explícitos"
+    }
+  },
+  "comparisonNotice": {
+    "fa": "کنار هم بودن دو عدد لزوماً به معنی قابل رتبه‌بندی بودن آن‌ها نیست. نام مدل، نسخهٔ آزمون، زبان، حالت تولید و پروتکل را بررسی کنید. اختلاف امتیاز در یک گزارش، نسبت کیفیت یا برتری معنادار آماری نیست.",
+    "en": "Two displayed numbers are not automatically rankable. Check the model variant, benchmark version, language, generation mode and protocol. A reported score difference is neither a quality ratio nor a statistical-significance claim.",
+    "es": "Dos cifras mostradas juntas no son automáticamente comparables para ordenar modelos. Revise variante, versión del benchmark, idioma, modo y protocolo. Una diferencia de puntuación no es una proporción de calidad ni demuestra significación estadística."
+  }
+}

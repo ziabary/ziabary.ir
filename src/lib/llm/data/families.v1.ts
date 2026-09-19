@@ -191,3 +191,40 @@ families.push({
     "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
   ]
 });
+families.push({
+  "id": "family:salamandra",
+  "name": "Salamandra",
+  "publisher": "BSC-LT",
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+  ]
+});
+families.push({
+  "id": "family:minicpm",
+  "name": "MiniCPM",
+  "publisher": "openbmb",
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-json-ec00591718",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0",
+    "evidence:reference-openbmb-minicpm5-2b-config-json-47e785ca3a",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+  ]
+});
+families.push({
+  "id": "family:lfm",
+  "name": "LFM",
+  "publisher": "LiquidAI",
+  "evidenceIds": [
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc",
+    "evidence:reference-lfm-license-txt-e8003a05ee"
+  ]
+});

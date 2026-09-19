@@ -63,7 +63,11 @@ test('LLM article body links and manual related reading only reference existing,
       const { metadata: linked } = await readArticle(target);
       assert.ok(dateOnly(linked.date) <= dateOnly(metadata.date), `${slug} (${dateOnly(metadata.date)}) links forward to ${target} (${dateOnly(linked.date)})`);
       assert.notEqual(linked.draft, true, `${slug} links to unpublished ${target}`);
-      assert.equal(linked.lang, metadata.lang, `Unexpected edition in ${slug}: ${target}`);
+      if (target === 'targoman-300-concurrent-requests-one-rtx-4090' && metadata.lang !== 'fa') {
+        // The author's explicitly attributed operational source has no translated edition.
+        assert.equal(linked.lang, 'fa');
+        assert.match(body, /\[[^\]]*(?:in Persian|en persa)[^\]]*\]\(\/articles\/targoman-300-concurrent-requests-one-rtx-4090\//i);
+      } else assert.equal(linked.lang, metadata.lang, `Unexpected edition in ${slug}: ${target}`);
     }
     if (slugs.includes(slug)) {
       assert.ok(hrefs.some(href => href.startsWith('/guides/llm/')), `${slug} needs a relevant LLM table/guide link`);

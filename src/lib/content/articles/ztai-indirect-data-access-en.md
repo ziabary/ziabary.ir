@@ -107,7 +107,7 @@ Confidential computing can provide part of this protection through hardware-back
 
 This changes the trust boundary; it does not remove every trusted component. Protection against the host administrator does not necessarily constrain an administrator inside the guest or an authorized malicious program within the protected environment. Hardware and software vulnerabilities, side channels and denial of service must be considered according to the technology selected. Adding “TEE” to a diagram does not settle them.
 
-For an AI workload, protection may need to extend from CPU memory to GPU memory and the transfer path between them. Chip support alone is insufficient: the server, firmware, drivers and deployment mode must work together. That connection is explored in [AI infrastructure security from the kernel to the GPU (in Persian)](/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/). The English [GPU server platform overview](/en/articles/gpu-server-platform-components-en/) provides the broader hardware context.
+For an AI workload, protection may need to extend from CPU memory to GPU memory and the transfer path between them. Chip support alone is insufficient: the server, firmware, drivers and deployment mode must work together. That connection is explored in [AI infrastructure security from the kernel to the GPU](/en/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-en/). The English [GPU server platform overview](/en/articles/gpu-server-platform-components-en/) provides the broader hardware context.
 
 ## Attestation must drive an enforcement decision
 

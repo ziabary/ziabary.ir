@@ -1,0 +1,94 @@
+
+> ziabary-platform@0.1.0 verify:llm
+> node scripts/validate-llm-dataset.mjs && npm run verify:llm-locales
+
+{
+  "testedOn": "2026-09-17",
+  "datasetVersion": "0.3.0",
+  "typescriptVersion": "5.9.3",
+  "schemaSha256": "9235090294d7304642322401ffd0fb0778b671cb69d516f2b8b98e881b320395",
+  "scope": "Strict dataset types + repository validator + adapter row generation + semantic integrity, including the preserved v0.2 supplement. No GPU run, browser test or full SvelteKit build.",
+  "checks": {
+    "strictSchema": true,
+    "installedTypedModulesEqualJson": true,
+    "strictInstalledTypedModules": true,
+    "originalValidator": true,
+    "mergedValidator": true,
+    "dependencyHashes": true,
+    "claimValuesMatchFields": true,
+    "knownDatumsHaveEvidence": true,
+    "artifactByteSums": true,
+    "downloadByteSums": true,
+    "exactArtifactRevision": true,
+    "negativeReferenceControl": true,
+    "negativeClaimControl": true,
+    "adapterRows": true,
+    "stagingSeparated": true
+  },
+  "counts": {
+    "families": 27,
+    "models": 95,
+    "artifacts": 59,
+    "softwareProducts": 16,
+    "softwareReleases": 16,
+    "engines": 0,
+    "servingStacks": 0,
+    "deploymentConfigurations": 0,
+    "softwareCapabilities": 124,
+    "apiCompatibility": 22,
+    "hardwareConfigurations": 0,
+    "workloads": 24,
+    "qualityEvaluations": 0,
+    "applicationAssessments": 136,
+    "executionFeasibility": 0,
+    "deploymentCompatibility": 0,
+    "benchmarkRuns": 0,
+    "specializedAssessments": 24,
+    "claims": 3023,
+    "evidence": 2320,
+    "publishedEvaluations": 1070,
+    "modelProfiles": 95,
+    "modelUseGuidance": 395,
+    "artifactListings": 483
+  },
+  "mergedCounts": {
+    "families": 27,
+    "models": 95,
+    "artifacts": 59,
+    "softwareProducts": 16,
+    "softwareReleases": 16,
+    "engines": 0,
+    "servingStacks": 0,
+    "deploymentConfigurations": 0,
+    "softwareCapabilities": 124,
+    "apiCompatibility": 22,
+    "hardwareConfigurations": 0,
+    "workloads": 24,
+    "qualityEvaluations": 0,
+    "applicationAssessments": 136,
+    "executionFeasibility": 0,
+    "deploymentCompatibility": 0,
+    "benchmarkRuns": 0,
+    "specializedAssessments": 24,
+    "claims": 3023,
+    "evidence": 2447,
+    "publishedEvaluations": 1134,
+    "modelProfiles": 95,
+    "modelUseGuidance": 395,
+    "artifactListings": 483
+  },
+  "viewRows": {
+    "model-catalog": 95,
+    "model-suitability": 95,
+    "hardware-feasibility": 0,
+    "software-products": 16,
+    "deployment-compatibility": 0,
+    "benchmarks": 0,
+    "specialized-models": 24
+  }
+}
+
+> ziabary-platform@0.1.0 verify:llm-locales
+> node scripts/validate-llm-locales.mjs
+
+LLM locales verified: 1330 messages, 949 editorial texts, 4914 entity fields, 3 editions.

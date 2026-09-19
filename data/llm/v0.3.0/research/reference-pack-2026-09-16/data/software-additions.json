@@ -1,0 +1,34 @@
+[
+  {
+    "id": "software:mlx-lm",
+    "name": "MLX LM",
+    "projectUrl": "https://github.com/ml-explore/mlx-lm",
+    "snapshotRelease": "v0.31.3",
+    "releaseSourceId": "source:mlx-release-json",
+    "license": "MIT",
+    "licenseSourceId": "source:mlx-license-txt",
+    "sourceIds": [
+      "source:mlx-lm-readme-txt",
+      "source:mlx-readme-txt"
+    ],
+    "documentedCapabilities": [
+      "text generation",
+      "streaming",
+      "quantization",
+      "prompt caching",
+      "low-rank and full fine-tuning",
+      "distributed inference"
+    ],
+    "recommendedScope": "Apple silicon local inference; documented capability, not measured compatibility with every model",
+    "profile": {
+      "fa": "مسیر مستقیم برای اجرای محلی و کم‌دقت‌سازی مدل‌های سازگار روی Apple silicon. حافظهٔ مشترک را دوباره به‌صورت RAM+VRAM جمع نزنید. شرط macOS 15 در README مربوط به memory wiring مدل‌های بزرگ است، نه حداقل قطعی همهٔ کاربردهای MLX LM.",
+      "en": "A direct route for local generation and quantization on Apple silicon with compatible models. Do not double-count unified memory as RAM plus VRAM. The README’s macOS 15 requirement concerns large-model memory wiring, not every MLX LM feature.",
+      "es": "Ruta directa para generación local y cuantización en Apple silicon con modelos compatibles. No sume la memoria unificada dos veces como RAM y VRAM. El requisito de macOS 15 del README se refiere al bloqueo de memoria para modelos grandes, no a todas las funciones."
+    },
+    "missingEvidence": [
+      "this site has not measured speed or peak memory",
+      "model/format compatibility must be checked for the chosen release"
+    ],
+    "frameworkDistinction": "The broader MLX framework also documents Linux backends; do not label all of MLX as universally macOS-only."
+  }
+]

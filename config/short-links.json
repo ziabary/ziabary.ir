@@ -226,5 +226,22 @@
   "glms": "/guides/llm/#model-suitability",
   "glss": "/guides/llm/#serving-software",
   "glsm": "/guides/llm/#specialized-models",
-  "at3cror4": "/articles/targoman-300-concurrent-requests-one-rtx-4090/"
+  "at3cror4": "/articles/targoman-300-concurrent-requests-one-rtx-4090/",
+  "azaaba": "/articles/ztai-autonomous-agents-bounded-authority/",
+  "gztazaaba": "/guides/zero-trust-ai/#ztai-autonomous-agents-bounded-authority",
+  "gztazdmewra": "/guides/zero-trust-ai/#ztai-data-model-engineering-without-raw-access",
+  "agcco": "/articles/gpu-confidential-computing-overhead/",
+  "ggsgcco": "/guides/gpu-selection/#gpu-confidential-computing-overhead",
+  "eagccoe": "/en/articles/gpu-confidential-computing-overhead-en/",
+  "eazaabae": "/en/articles/ztai-autonomous-agents-bounded-authority-en/",
+  "eggsgccoe": "/en/guides/gpu-selection/#gpu-confidential-computing-overhead-en",
+  "egztazaabae": "/en/guides/zero-trust-ai/#ztai-autonomous-agents-bounded-authority-en",
+  "eagccoe2": "/es/articles/gpu-confidential-computing-overhead-es/",
+  "eazaabae2": "/es/articles/ztai-autonomous-agents-bounded-authority-es/",
+  "eggsgccoe2": "/es/guides/gpu-selection/#gpu-confidential-computing-overhead-es",
+  "egztazaabae2": "/es/guides/zero-trust-ai/#ztai-autonomous-agents-bounded-authority-es",
+  "eaaisswkage": "/en/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-en/",
+  "eaovsolce": "/en/articles/ollama-vllm-sglang-or-llama-cpp-en/",
+  "eaaisswkage2": "/es/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-es/",
+  "eaovsolce2": "/es/articles/ollama-vllm-sglang-or-llama-cpp-es/"
 }

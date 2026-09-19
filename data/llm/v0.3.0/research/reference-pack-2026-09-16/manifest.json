@@ -1,0 +1,138 @@
+{
+  "packageId": "ziabary-llm-reference-pack-2026-09-16",
+  "contractVersion": 1,
+  "asOf": "2026-09-16",
+  "kind": "research-and-editorial-supplement",
+  "siteExperimentsPerformed": false,
+  "sourceArchivesModified": false,
+  "counts": {
+    "modelAdditions": 5,
+    "softwareAdditions": 1,
+    "publishedEvaluations": 132,
+    "comparisonGroups": 8,
+    "selectionGuides": 8,
+    "articleSections": 8,
+    "standaloneArticleFiles": 4,
+    "quantizationObservations": 12,
+    "sourceDocuments": 32
+  },
+  "contentScope": "Selected additions and source-backed decisions; not a claim to exhaustive global model coverage. Merge with the current repository.",
+  "files": [
+    {
+      "path": "CODEX-IMPORT.fa.md",
+      "sha256": "b8af9de55677c3711b70b5c8885528fbb3a14e513c9085526d5b5b21687458e3",
+      "bytes": 16487
+    },
+    {
+      "path": "DATA-CONTRACT.md",
+      "sha256": "b88a7086839e1476c7bc8b29ef6a14ad811a4ff07fdded82bfb2eae6cb0a5ed0",
+      "bytes": 6093
+    },
+    {
+      "path": "EVIDENCE-TABLES.fa.md",
+      "sha256": "73107ea00d7a6f212b460f921e5464bdad5e16ae4597eb0f6fb183afc1b67b30",
+      "bytes": 31302
+    },
+    {
+      "path": "README.fa.md",
+      "sha256": "8c657f37b271c22583d105a5b5dd3632972523d01098ec7ab2d2db29e6759aac",
+      "bytes": 19943
+    },
+    {
+      "path": "content/cost-choice.en.md",
+      "sha256": "f7d92a6c08251f68adeeb61a9d3e35e0c848a89d807a1b1a2ba0544e381686cb",
+      "bytes": 4908
+    },
+    {
+      "path": "content/cost-choice.es.md",
+      "sha256": "b3f810df2181a39db8b9338999a6a619ccf4adadc08a0e15a911ab05cfaaedc2",
+      "bytes": 5157
+    },
+    {
+      "path": "content/language-evidence.en.md",
+      "sha256": "b0ef9440d99646998738cb91d6a769d3c60ff2770fb3e5bb82732f93deb5e91b",
+      "bytes": 5243
+    },
+    {
+      "path": "content/language-evidence.es.md",
+      "sha256": "91296751d1933f49c9e0985d9714f8ba7c001a6914e2f3962752e6e356551b6e",
+      "bytes": 5621
+    },
+    {
+      "path": "data/article-inserts.json",
+      "sha256": "bebb31d344366ee6f046317d9a26add3f4f46c02aa9f6272be342afcfdcbaea4",
+      "bytes": 21601
+    },
+    {
+      "path": "data/baseline-fingerprints.json",
+      "sha256": "720af599130d82db8f42f5b8596649cb773f70c7dfffb1c1888cc0481a288d2a",
+      "bytes": 20392
+    },
+    {
+      "path": "data/baseline-model-index.json",
+      "sha256": "18089539ac7e0a0096b7ed6e1d9ce13b624f886def1f0ba3b6317500cb0138f1",
+      "bytes": 14124
+    },
+    {
+      "path": "data/comparison-groups.json",
+      "sha256": "494bfb7a1e2a892363ff4ffea5695150866c2e60a62e5a2361ac4b7c38e36e3a",
+      "bytes": 22060
+    },
+    {
+      "path": "data/coverage-review.json",
+      "sha256": "404ed8e8dec70ed88787415494d29e08f2b4ec0a34f296f45bee3e3457e2847d",
+      "bytes": 3585
+    },
+    {
+      "path": "data/editorial-methodology.json",
+      "sha256": "d45970ccb6888e98b3fcd217999f52112c502e7e46005eb2af9898d12602a3a4",
+      "bytes": 3183
+    },
+    {
+      "path": "data/locale-plan.json",
+      "sha256": "b5d5643d87e69d473ecc670d6f84a32bda1aad481235e5f5e981857045152a0d",
+      "bytes": 1431
+    },
+    {
+      "path": "data/model-additions.json",
+      "sha256": "25f7f5b3203a125884873fccb719df315df688ef51fd5f5926d538acf16bfad7",
+      "bytes": 16515
+    },
+    {
+      "path": "data/published-evaluations.json",
+      "sha256": "f70bff42761c0ce00cacec51976e0e4dbde217110e0042b103122d2f82f576fc",
+      "bytes": 170342
+    },
+    {
+      "path": "data/quantization-study.json",
+      "sha256": "1498865c303d436e5b826646b2db40291f1f2be2c546e44e7e658c74aade7450",
+      "bytes": 6845
+    },
+    {
+      "path": "data/retrieval-status.json",
+      "sha256": "a64ef2d40a08c62193626032c4dd4c8bfcf21eaba3f6ed7322fa72c147fd2e77",
+      "bytes": 1421
+    },
+    {
+      "path": "data/selection-guidance.json",
+      "sha256": "ff15b46eefcb6d871c4e2a00500bf670f798b06fddfb434741b200d243d9a5b9",
+      "bytes": 17303
+    },
+    {
+      "path": "data/software-additions.json",
+      "sha256": "4322948dcee85f6accf9761ffeb6b198cfc321adbcc45503cb3b60ae8b6dcf95",
+      "bytes": 1939
+    },
+    {
+      "path": "data/source-register.json",
+      "sha256": "62a7a9a20fb7c37f890a7c2bed2261e7a1d0a392f220229fa7dfc6ecf3d8ba06",
+      "bytes": 17681
+    },
+    {
+      "path": "validate.py",
+      "sha256": "4bcac4cf4092fb990e1774a82759db44c92b67a42ab823f8d16dbccb191b3c36",
+      "bytes": 8495
+    }
+  ],
+  "integrityNote": "Manifest excludes itself and validation-result.json to avoid self-referential hashes."
+}

@@ -71,7 +71,7 @@
           <li>
             <span class="publication-year">{publication.year}</span>
             <div>
-              <h3>{publication.title}</h3>
+              <h3>{#if 'url' in publication && publication.url}<a class="publication-title" href={publication.url} target="_blank" rel="noreferrer">{publication.title} ↗</a>{:else}{publication.title}{/if}</h3>
               <p>{publication.authors}</p>
               {#if publication.venue}<p>{publication.venue}</p>{/if}
               {#if publication.doi}<a href={`https://doi.org/${publication.doi}`} target="_blank" rel="noreferrer">DOI: {publication.doi} ↗</a>{/if}
@@ -122,6 +122,7 @@
   .cv-publications h3 { font-size: 15px; }
   .cv-publications p { font-size: 13px; line-height: 1.8; color: var(--muted); margin: 6px 0; }
   .cv-publications a { display: inline-block; font-size: 12px; color: var(--teal); overflow-wrap: anywhere; }
+  .cv-publications a.publication-title { font-size: inherit; }
   @media(max-width: 980px) { .experience-entry { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
   @media(max-width: 680px) { .resume-intro { padding-block: 36px; } .resume-photo { max-width: 320px; height: 360px; } .cv-expertise, .cv-languages { grid-template-columns: minmax(0, 1fr); } }
 </style>

@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="388.8pt" viewBox="0 0 720 388.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:description>Single-pass sweep: MiniMax-M2.7, 8 B200, TP8, input 1024, concurrency 32. Repeated 2048-token runs yielded 2.8–3.6%, not 1.1%. Source arXiv:2608.26575v2.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 388.8 
+L 720 388.8 
+L 720 0 
+L 0 0 
+z
+" style="fill: #f5f9f9"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 54.920553 327.79976 
+L 716.99976 327.79976 
+L 716.99976 43.00024 
+L 54.920553 43.00024 
+z
+" style="fill: #f5f9f9"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mee3e9f3455" d="M 0 0 
+L 0 3.5 
+" style="stroke: #12343c; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mee3e9f3455" x="104.103579" y="327.79976" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- ۲۵۶ -->
+      <g style="fill: #12343c" transform="translate(95.758267 344.79976) scale(0.1 -0.1)">
+       <defs>
+        <path id="IRANSansX-Regular-16f" d="M 966 320 
+Q 966 1530 858 2336 
+Q 787 2899 668 3324 
+Q 550 3750 378 4141 
+L 922 4454 
+Q 1030 4224 1120 3930 
+Q 1286 3488 1468 3277 
+Q 1651 3066 1990 3066 
+Q 2374 3066 2534 3302 
+Q 2694 3539 2694 3968 
+Q 2694 4083 2669 4365 
+L 3149 4454 
+Q 3194 4205 3194 3936 
+Q 3194 3277 2883 2867 
+Q 2573 2458 1990 2458 
+Q 1651 2458 1389 2630 
+L 1414 2406 
+Q 1510 1638 1510 429 
+L 1504 0 
+L 966 0 
+L 966 320 
+z
+" transform="scale(0.015625)"/>
+        <path id="IRANSansX-Regular-172" d="M 269 1446 
+Q 314 1971 621 2579 
+Q 928 3187 1382 3763 
+Q 1254 3866 1190 3910 
+L 1517 4442 
+Q 2477 3674 3065 2899 
+Q 3654 2125 3654 1210 
+Q 3654 614 3385 288 
+Q 3117 -38 2694 -38 
+Q 2496 -38 2310 54 
+Q 2125 147 1997 346 
+Q 1766 -32 1280 -32 
+Q 813 -32 534 317 
+Q 256 666 256 1229 
+Q 256 1293 269 1446 
+z
+M 781 1280 
+Q 781 941 925 752 
+Q 1069 563 1306 563 
+Q 1510 570 1632 778 
+Q 1754 986 1747 1350 
+L 2227 1427 
+Q 2253 1018 2365 790 
+Q 2477 563 2675 563 
+Q 3142 563 3142 1267 
+Q 3142 1837 2780 2371 
+Q 2419 2906 1792 3437 
+Q 1325 2867 1053 2304 
+Q 781 1741 781 1280 
+z
+" transform="scale(0.015625)"/>
+        <path id="IRANSansX-Regular-173" d="M 224 122 
+Q 589 1222 1453 2054 
+Q 1037 2138 793 2442 
+Q 550 2746 550 3136 
+Q 550 3424 691 3709 
+Q 832 3994 1110 4192 
+Q 1389 4390 1766 4435 
+Q 1811 4442 1907 4442 
+Q 2170 4442 2406 4349 
+Q 2643 4256 2784 4141 
+L 2566 3706 
+Q 2298 3866 1965 3866 
+Q 1875 3866 1824 3859 
+Q 1498 3827 1293 3619 
+Q 1088 3411 1088 3149 
+Q 1088 2925 1270 2777 
+Q 1453 2630 1747 2630 
+Q 2118 2630 2528 2854 
+L 2528 2848 
+Q 2790 2995 3059 3098 
+L 3162 2490 
+Q 2682 2310 2211 1948 
+Q 1741 1587 1344 1062 
+Q 947 538 710 -109 
+L 224 122 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#IRANSansX-Regular-16f"/>
+       <use xlink:href="#IRANSansX-Regular-172" transform="translate(52.90625 0)"/>
+       <use xlink:href="#IRANSansX-Regular-173" transform="translate(114 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mee3e9f3455" x="184.814187" y="327.79976" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- ۵۱۲ -->
+      <g style="fill: #12343c" transform="translate(177.299344 344.79976) scale(0.1 -0.1)">
+       <defs>
+        <path id="IRANSansX-Regular-16e" d="M 1011 288 
+Q 1011 813 982 1363 
+Q 954 1914 902 2336 
+Q 832 2899 713 3324 
+Q 595 3750 422 4141 
+L 966 4454 
+Q 1312 3725 1459 2406 
+Q 1549 1600 1549 378 
+L 1549 0 
+L 1011 0 
+L 1011 288 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#IRANSansX-Regular-172"/>
+       <use xlink:href="#IRANSansX-Regular-16e" transform="translate(61.09375 0)"/>
+       <use xlink:href="#IRANSansX-Regular-16f" transform="translate(97.390625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mee3e9f3455" x="346.235404" y="327.79976" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- ۱۰۲۴ -->
+      <g style="fill: #12343c" transform="translate(336.250248 344.79976) scale(0.1 -0.1)">
+       <defs>
+        <path id="IRANSansX-Regular-16d" d="M 1395 275 
+Q 1114 275 877 412 
+Q 640 550 499 787 
+Q 358 1024 358 1293 
+Q 358 1568 499 1801 
+Q 640 2035 877 2172 
+Q 1114 2310 1395 2310 
+Q 1677 2310 1913 2172 
+Q 2150 2035 2291 1801 
+Q 2432 1568 2432 1293 
+Q 2432 1024 2291 787 
+Q 2150 550 1913 412 
+Q 1677 275 1395 275 
+z
+M 896 1293 
+Q 896 1069 1040 925 
+Q 1184 781 1395 781 
+Q 1606 781 1747 925 
+Q 1888 1069 1888 1293 
+Q 1888 1517 1747 1661 
+Q 1606 1805 1395 1805 
+Q 1184 1805 1040 1661 
+Q 896 1517 896 1293 
+z
+" transform="scale(0.015625)"/>
+        <path id="IRANSansX-Regular-171" d="M 1011 288 
+Q 1011 813 982 1363 
+Q 954 1914 902 2336 
+Q 832 2899 713 3324 
+Q 595 3750 422 4141 
+L 966 4454 
+Q 1107 4166 1235 3693 
+Q 1382 3187 1651 2893 
+L 1632 3027 
+Q 1606 3379 1766 3699 
+Q 1926 4019 2230 4214 
+Q 2534 4410 2906 4410 
+Q 3194 4410 3450 4294 
+Q 3706 4179 3962 3974 
+L 3738 3546 
+Q 3571 3654 3356 3728 
+Q 3142 3802 2938 3802 
+Q 2592 3802 2361 3606 
+Q 2131 3411 2131 3130 
+Q 2131 2835 2329 2646 
+Q 2528 2458 2893 2458 
+Q 3334 2458 3936 2758 
+L 4083 2234 
+Q 3834 2074 3498 1974 
+Q 3162 1875 2803 1875 
+Q 2438 1875 2089 1996 
+Q 1741 2118 1459 2381 
+Q 1549 1574 1549 371 
+L 1549 0 
+L 1011 0 
+L 1011 288 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#IRANSansX-Regular-16e"/>
+       <use xlink:href="#IRANSansX-Regular-16d" transform="translate(36.296875 0)"/>
+       <use xlink:href="#IRANSansX-Regular-16f" transform="translate(81.296875 0)"/>
+       <use xlink:href="#IRANSansX-Regular-171" transform="translate(134.203125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mee3e9f3455" x="669.077836" y="327.79976" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- ۲۰۴۸ -->
+      <g style="fill: #12343c" transform="translate(657.847368 344.79976) scale(0.1 -0.1)">
+       <defs>
+        <path id="IRANSansX-Regular-175" d="M 192 301 
+Q 429 672 755 1398 
+Q 1082 2125 1347 2944 
+Q 1613 3763 1690 4403 
+L 2227 4403 
+Q 2285 3770 2550 2954 
+Q 2816 2138 3149 1408 
+Q 3482 678 3725 301 
+L 3219 -70 
+Q 2938 403 2570 1321 
+Q 2202 2240 1952 3168 
+Q 1696 2227 1334 1308 
+Q 973 390 698 -70 
+L 192 301 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#IRANSansX-Regular-16f"/>
+       <use xlink:href="#IRANSansX-Regular-16d" transform="translate(52.90625 0)"/>
+       <use xlink:href="#IRANSansX-Regular-171" transform="translate(97.90625 0)"/>
+       <use xlink:href="#IRANSansX-Regular-175" transform="translate(163.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_5">
+     <!-- تعداد توکن خروجی -->
+     <g transform="translate(325.303906 377.79976) scale(0.16 -0.16)">
+      <defs>
+       <path id="IRANSansX-Regular-13a" d="M 2144 -1786 
+Q 1594 -1786 1168 -1571 
+Q 742 -1357 499 -960 
+Q 256 -563 256 -32 
+Q 256 358 384 793 
+Q 512 1229 678 1562 
+L 1114 1357 
+Q 755 602 755 38 
+Q 755 -570 1113 -890 
+Q 1472 -1210 2144 -1210 
+Q 2534 -1210 2883 -1107 
+Q 3232 -1005 3456 -854 
+Q 3680 -704 3712 -589 
+Q 3680 -518 3491 -368 
+Q 3302 -218 3020 -51 
+Q 2739 115 2438 237 
+L 2560 781 
+Q 3552 576 4211 576 
+L 4365 576 
+L 4397 288 
+L 4365 0 
+L 4211 0 
+Q 3930 0 3718 26 
+Q 4205 -314 4205 -595 
+Q 4205 -890 3920 -1165 
+Q 3635 -1440 3158 -1613 
+Q 2682 -1786 2144 -1786 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-78" d="M -38 576 
+L 550 576 
+Q 1350 576 2044 771 
+Q 2739 966 3437 1338 
+Q 3571 1414 3706 1472 
+Q 3309 1542 2848 1773 
+Q 2541 1933 2297 2016 
+Q 2054 2099 1818 2099 
+Q 1549 2099 1331 1939 
+Q 1114 1779 1005 1562 
+L 659 1798 
+Q 864 2214 1165 2428 
+Q 1466 2643 1837 2643 
+Q 2106 2643 2339 2553 
+Q 2573 2464 3034 2234 
+Q 3462 2016 3708 1910 
+Q 3955 1805 4269 1741 
+L 4288 1235 
+Q 4160 1197 4022 1133 
+Q 3885 1069 3629 928 
+Q 2765 474 2064 237 
+Q 1363 0 550 0 
+L -38 0 
+L -38 576 
+z
+M 2086 -518 
+L 2541 -973 
+L 2086 -1427 
+L 1632 -973 
+L 2086 -518 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-113" d="M 192 -1325 
+Q 1120 -1120 1609 -790 
+Q 2099 -461 2182 26 
+Q 1978 -19 1690 -19 
+Q 1274 -19 934 112 
+Q 595 243 448 531 
+Q 346 736 346 1011 
+Q 346 1344 490 1677 
+Q 634 2010 874 2227 
+Q 1114 2445 1389 2445 
+Q 1766 2445 2054 2112 
+Q 2342 1779 2496 1276 
+Q 2650 774 2650 288 
+Q 2650 -506 2045 -1062 
+Q 1440 -1619 358 -1837 
+L 192 -1325 
+z
+M 858 851 
+Q 954 698 1200 621 
+Q 1446 544 1766 544 
+Q 1952 544 2176 576 
+Q 2112 1094 1904 1478 
+Q 1696 1862 1376 1882 
+Q 1235 1888 1100 1766 
+Q 966 1645 883 1453 
+Q 800 1261 800 1088 
+Q 800 947 858 851 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-8e" d="M 2374 0 
+Q 2131 0 1946 115 
+L 1946 19 
+Q 1946 -358 1722 -720 
+Q 1498 -1082 1104 -1373 
+Q 710 -1664 218 -1837 
+L 0 -1338 
+Q 410 -1197 742 -966 
+Q 1075 -736 1264 -473 
+Q 1453 -211 1453 19 
+Q 1453 346 1126 1619 
+L 1619 1805 
+Q 1722 1472 1786 1158 
+Q 1882 838 2016 707 
+Q 2150 576 2374 576 
+L 2419 576 
+L 2451 288 
+L 2419 0 
+L 2374 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-85" d="M -38 576 
+L 550 576 
+Q 1350 576 2044 771 
+Q 2739 966 3437 1338 
+Q 3571 1414 3706 1472 
+Q 3309 1542 2848 1773 
+Q 2541 1933 2297 2016 
+Q 2054 2099 1818 2099 
+Q 1549 2099 1331 1939 
+Q 1114 1779 1005 1562 
+L 659 1798 
+Q 864 2214 1165 2428 
+Q 1466 2643 1837 2643 
+Q 2106 2643 2339 2553 
+Q 2573 2464 3034 2234 
+Q 3462 2016 3708 1910 
+Q 3955 1805 4269 1741 
+L 4288 1235 
+Q 4160 1197 4022 1133 
+Q 3885 1069 3629 928 
+Q 2765 474 2064 237 
+Q 1363 0 550 0 
+L -38 0 
+L -38 576 
+z
+M 1786 4090 
+L 2240 3635 
+L 1786 3181 
+L 1331 3635 
+L 1786 4090 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-3" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-f6" d="M 4614 0 
+Q 4384 0 4186 198 
+Q 4192 134 4192 19 
+Q 4192 -442 3952 -870 
+Q 3712 -1299 3251 -1568 
+Q 2790 -1837 2157 -1837 
+Q 1549 -1837 1123 -1593 
+Q 698 -1350 483 -947 
+Q 269 -544 269 -64 
+Q 269 320 397 742 
+Q 525 1165 691 1510 
+L 1126 1306 
+Q 768 550 768 -13 
+Q 768 -621 1126 -941 
+Q 1485 -1261 2157 -1261 
+Q 2675 -1261 3024 -1072 
+Q 3373 -883 3539 -592 
+Q 3706 -301 3706 19 
+Q 3706 550 3354 1619 
+L 3827 1837 
+Q 3930 1530 4000 1248 
+Q 4115 870 4246 723 
+Q 4378 576 4614 576 
+L 4653 576 
+L 4685 288 
+L 4653 0 
+L 4614 0 
+z
+M 2298 2189 
+L 2752 1734 
+L 2298 1280 
+L 1843 1734 
+L 2298 2189 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-db" d="M -32 576 
+L 128 576 
+Q 1658 576 1658 1210 
+Q 1658 1536 1296 2009 
+Q 934 2483 288 3008 
+L 358 3552 
+L 2694 4563 
+L 2861 4090 
+L 858 3219 
+Q 1370 2784 1763 2217 
+Q 2157 1651 2157 1165 
+Q 2157 998 2099 845 
+Q 1946 416 1440 208 
+Q 934 0 128 0 
+L -32 0 
+L -32 576 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-114" d="M 192 -1325 
+Q 1101 -1126 1590 -803 
+Q 2080 -480 2176 -6 
+Q 1485 -13 1049 92 
+Q 614 198 448 531 
+Q 346 736 346 1011 
+Q 346 1344 490 1677 
+Q 634 2010 874 2227 
+Q 1114 2445 1389 2445 
+Q 1734 2445 2000 2169 
+Q 2266 1894 2429 1465 
+Q 2592 1037 2637 576 
+L 2874 576 
+L 2906 288 
+L 2874 0 
+L 2630 0 
+Q 2522 -691 1930 -1164 
+Q 1338 -1638 358 -1837 
+L 192 -1325 
+z
+M 858 851 
+Q 960 691 1309 633 
+Q 1658 576 2182 576 
+Q 2118 1094 1907 1478 
+Q 1696 1862 1376 1882 
+Q 1235 1888 1100 1766 
+Q 966 1645 883 1453 
+Q 800 1261 800 1088 
+Q 800 947 858 851 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-66" d="M -32 576 
+L 224 576 
+Q 909 576 1190 707 
+Q 1472 838 1472 1139 
+Q 1466 1338 1341 1744 
+Q 1216 2150 1126 2330 
+L 1587 2573 
+Q 1715 2323 1840 1897 
+Q 1965 1472 1965 1158 
+Q 1965 589 1549 294 
+Q 1133 0 294 0 
+L -32 0 
+L -32 576 
+z
+M 576 3846 
+L 1030 3392 
+L 576 2938 
+L 122 3392 
+L 576 3846 
+z
+M 1722 3846 
+L 2176 3392 
+L 1722 2938 
+L 1267 3392 
+L 1722 3846 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-86" d="M 1626 -19 
+Q 1120 -19 761 118 
+Q 403 256 192 435 
+L 442 858 
+Q 467 845 630 752 
+Q 794 659 1046 595 
+Q 1299 531 1581 531 
+Q 1926 531 2147 630 
+Q 2368 730 2432 851 
+Q 2464 928 2464 1011 
+Q 2464 1312 2134 1757 
+Q 1805 2202 1133 2694 
+L 1421 3194 
+Q 2131 2656 2531 2083 
+Q 2931 1510 2931 1011 
+Q 2931 781 2848 595 
+Q 2720 301 2387 141 
+Q 2054 -19 1626 -19 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-39" d="M 518 38 
+Q 563 422 563 1338 
+Q 563 2208 528 3139 
+Q 493 4070 448 4346 
+L 960 4454 
+Q 998 4160 1040 3171 
+Q 1082 2182 1082 1293 
+Q 1082 397 1037 -26 
+L 518 38 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-87" d="M 3648 0 
+Q 3072 0 2733 422 
+Q 2496 230 2205 102 
+Q 1914 -26 1517 -26 
+Q 1082 -26 768 108 
+Q 454 243 192 435 
+L 442 858 
+Q 691 710 921 617 
+Q 1152 525 1472 525 
+Q 2016 525 2483 838 
+L 2470 870 
+L 1574 2963 
+L 2035 3206 
+L 2912 1133 
+Q 3040 819 3203 697 
+Q 3366 576 3648 576 
+L 3718 576 
+L 3750 288 
+L 3718 0 
+L 3648 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-b8" d="M -32 576 
+L 102 576 
+Q 742 576 1306 749 
+Q 909 1094 378 1779 
+L 397 2157 
+Q 653 2413 1049 2547 
+Q 1446 2682 1869 2682 
+Q 2349 2682 2707 2518 
+Q 3066 2355 3155 2061 
+Q 3168 1997 3168 1952 
+Q 3168 1702 2944 1369 
+Q 2720 1037 2336 742 
+Q 2771 576 3373 576 
+L 3533 576 
+L 3565 288 
+L 3533 0 
+L 3373 0 
+Q 2880 0 2496 93 
+Q 2112 186 1773 390 
+Q 992 0 102 0 
+L -32 0 
+L -32 576 
+z
+M 915 1888 
+Q 1427 1280 1856 986 
+Q 2227 1197 2441 1456 
+Q 2656 1715 2714 1882 
+Q 2650 2016 2422 2099 
+Q 2195 2182 1894 2182 
+Q 1626 2182 1363 2108 
+Q 1101 2035 915 1888 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#IRANSansX-Regular-13a"/>
+      <use xlink:href="#IRANSansX-Regular-78" transform="translate(66.90625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-113" transform="translate(136.90625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-8e" transform="translate(179.3125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-85" transform="translate(216.609375 0)"/>
+      <use xlink:href="#IRANSansX-Regular-3" transform="translate(286.609375 0)"/>
+      <use xlink:href="#IRANSansX-Regular-f6" transform="translate(316.609375 0)"/>
+      <use xlink:href="#IRANSansX-Regular-db" transform="translate(388.703125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-114" transform="translate(428.40625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-66" transform="translate(472.5 0)"/>
+      <use xlink:href="#IRANSansX-Regular-3" transform="translate(507.296875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-86" transform="translate(537.296875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-39" transform="translate(587.203125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-87" transform="translate(611.109375 0)"/>
+      <use xlink:href="#IRANSansX-Regular-b8" transform="translate(668.703125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-66" transform="translate(723.40625 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <path d="M 54.920553 327.79976 
+L 716.99976 327.79976 
+" clip-path="url(#pc28dcd473c)" style="fill: none; stroke: #d4e1e3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <defs>
+       <path id="mc7b770bed3" d="M 0 0 
+L -3.5 0 
+" style="stroke: #12343c; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mc7b770bed3" x="54.920553" y="327.79976" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- ۰ -->
+      <g style="fill: #12343c" transform="translate(43.420553 332.79976) scale(0.1 -0.1)">
+       <use xlink:href="#IRANSansX-Regular-16d"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 54.920553 260.788108 
+L 716.99976 260.788108 
+" clip-path="url(#pc28dcd473c)" style="fill: none; stroke: #d4e1e3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mc7b770bed3" x="54.920553" y="260.788108" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- ۴ -->
+      <g style="fill: #12343c" transform="translate(41.370553 265.788108) scale(0.1 -0.1)">
+       <use xlink:href="#IRANSansX-Regular-171"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <path d="M 54.920553 193.776456 
+L 716.99976 193.776456 
+" clip-path="url(#pc28dcd473c)" style="fill: none; stroke: #d4e1e3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mc7b770bed3" x="54.920553" y="193.776456" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- ۸ -->
+      <g style="fill: #12343c" transform="translate(41.80024 198.776456) scale(0.1 -0.1)">
+       <use xlink:href="#IRANSansX-Regular-175"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_11">
+      <path d="M 54.920553 126.764805 
+L 716.99976 126.764805 
+" clip-path="url(#pc28dcd473c)" style="fill: none; stroke: #d4e1e3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mc7b770bed3" x="54.920553" y="126.764805" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- ۱۲ -->
+      <g style="fill: #12343c" transform="translate(39.00024 131.764805) scale(0.1 -0.1)">
+       <use xlink:href="#IRANSansX-Regular-16e"/>
+       <use xlink:href="#IRANSansX-Regular-16f" transform="translate(36.296875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <path d="M 54.920553 59.753153 
+L 716.99976 59.753153 
+" clip-path="url(#pc28dcd473c)" style="fill: none; stroke: #d4e1e3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#mc7b770bed3" x="54.920553" y="59.753153" style="fill: #12343c; stroke: #12343c; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- ۱۶ -->
+      <g style="fill: #12343c" transform="translate(39.00024 64.753153) scale(0.1 -0.1)">
+       <use xlink:href="#IRANSansX-Regular-16e"/>
+       <use xlink:href="#IRANSansX-Regular-173" transform="translate(36.296875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_11">
+     <!-- افت توان عملیاتی (درصد) -->
+     <g transform="translate(19.00024 267.64125) rotate(-90) scale(0.16 -0.16)">
+      <defs>
+       <path id="IRANSansX-Regular-1ef" d="M 2074 4518 
+Q 704 3328 704 1645 
+Q 704 666 1110 -38 
+Q 1517 -742 2074 -1229 
+L 1773 -1600 
+Q 1114 -1075 650 -252 
+Q 186 570 186 1645 
+Q 186 2752 643 3552 
+Q 1101 4352 1773 4890 
+L 2074 4518 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-a9" d="M -38 576 
+L 58 576 
+Q 384 576 589 717 
+Q 794 858 915 1162 
+Q 1037 1466 1107 1978 
+L 1574 1882 
+Q 1542 1613 1542 1453 
+Q 1542 934 1798 698 
+Q 2291 1562 2892 2048 
+Q 3494 2534 4077 2534 
+Q 4410 2534 4682 2393 
+Q 4954 2253 5110 2006 
+Q 5267 1760 5267 1453 
+Q 5267 979 4950 620 
+Q 4634 262 4077 64 
+Q 3520 -134 2816 -134 
+Q 2086 -134 1712 86 
+Q 1338 307 1235 691 
+Q 1069 358 800 179 
+Q 531 0 51 0 
+L -38 0 
+L -38 576 
+z
+M 2227 486 
+Q 2432 442 2746 442 
+Q 3341 442 3808 582 
+Q 4275 723 4534 953 
+Q 4794 1184 4794 1446 
+Q 4794 1683 4614 1833 
+Q 4435 1984 4115 1984 
+Q 3635 1984 3148 1593 
+Q 2662 1203 2227 486 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-8c" d="M 0 -1338 
+Q 410 -1197 742 -966 
+Q 1075 -736 1264 -473 
+Q 1453 -211 1453 19 
+Q 1453 346 1126 1619 
+L 1619 1805 
+Q 1760 1350 1853 844 
+Q 1946 339 1946 19 
+Q 1946 -358 1722 -720 
+Q 1498 -1082 1104 -1373 
+Q 710 -1664 218 -1837 
+L 0 -1338 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-1f0" d="M 653 4890 
+Q 1325 4352 1782 3552 
+Q 2240 2752 2240 1645 
+Q 2240 570 1776 -252 
+Q 1312 -1075 653 -1600 
+L 352 -1229 
+Q 909 -742 1315 -38 
+Q 1722 666 1722 1645 
+Q 1722 3328 352 4518 
+L 653 4890 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-3b" d="M 1741 0 
+Q 1286 0 1030 150 
+Q 774 301 668 601 
+Q 563 902 563 1395 
+Q 563 2125 534 3049 
+Q 506 3974 448 4346 
+L 960 4454 
+Q 1011 4128 1040 3312 
+Q 1069 2496 1069 1830 
+L 1069 1562 
+L 1062 1338 
+Q 1062 1037 1113 880 
+Q 1165 723 1309 649 
+Q 1453 576 1741 576 
+L 1773 576 
+L 1805 288 
+L 1773 0 
+L 1741 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-13b" d="M -32 576 
+L 26 576 
+Q 518 576 793 617 
+Q 1069 659 1197 748 
+Q 1325 838 1382 992 
+Q 1421 1107 1421 1267 
+Q 1421 1472 1344 1971 
+L 1818 2061 
+Q 1894 1658 1901 1037 
+Q 1990 576 2483 576 
+L 2528 576 
+L 2560 288 
+L 2528 0 
+L 2483 0 
+Q 2214 0 1996 137 
+Q 1779 275 1658 506 
+Q 1504 224 1133 112 
+Q 762 0 26 0 
+L -32 0 
+L -32 576 
+z
+M 83 -582 
+L 538 -1037 
+L 83 -1491 
+L -371 -1037 
+L 83 -582 
+z
+M 1229 -582 
+L 1683 -1037 
+L 1229 -1491 
+L 774 -1037 
+L 1229 -582 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-eb" d="M 1856 0 
+Q 1613 0 1401 125 
+Q 1190 250 1043 474 
+Q 768 0 154 0 
+L -32 0 
+L -32 576 
+L 147 576 
+Q 499 576 662 726 
+Q 826 877 838 1210 
+L 838 1274 
+Q 845 1421 790 2720 
+Q 736 4019 704 4346 
+L 1216 4454 
+Q 1267 4051 1318 1811 
+Q 1338 1408 1338 1267 
+Q 1376 576 1856 576 
+L 1926 576 
+L 1958 288 
+L 1926 0 
+L 1856 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-f3" d="M -32 576 
+L 96 576 
+Q 634 576 947 1171 
+Q 1261 1747 1529 2057 
+Q 1798 2368 2138 2387 
+Q 2874 2426 3136 1376 
+Q 3238 947 3353 761 
+Q 3469 576 3674 576 
+L 3731 576 
+L 3763 288 
+L 3731 0 
+L 3674 0 
+Q 3200 0 3059 525 
+Q 3040 371 2928 236 
+Q 2816 102 2682 32 
+Q 2573 -32 2413 -32 
+Q 1952 -32 1114 512 
+Q 922 262 656 131 
+Q 390 0 83 0 
+L -32 0 
+L -32 576 
+z
+M 1370 973 
+Q 1728 723 2032 598 
+Q 2336 474 2515 474 
+Q 2579 474 2618 493 
+Q 2758 627 2758 928 
+Q 2758 1139 2684 1356 
+Q 2611 1574 2480 1718 
+Q 2349 1862 2182 1862 
+Q 1990 1862 1788 1625 
+Q 1587 1389 1370 973 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-b9" d="M -32 576 
+L 45 576 
+Q 378 576 902 589 
+Q 525 947 525 1446 
+Q 525 1760 681 2038 
+Q 838 2317 1107 2496 
+Q 1376 2675 1702 2714 
+Q 1747 2720 1830 2720 
+Q 2112 2720 2384 2601 
+Q 2656 2483 2874 2285 
+L 2669 1888 
+Q 2253 2144 1869 2144 
+Q 1613 2144 1417 2048 
+Q 1222 1952 1113 1789 
+Q 1005 1626 1005 1440 
+Q 1005 1242 1142 1066 
+Q 1280 890 1517 787 
+Q 1754 685 2035 685 
+Q 2566 755 3021 928 
+L 3142 416 
+Q 2618 198 1907 99 
+Q 1197 0 45 0 
+L -32 0 
+L -32 576 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-f5" d="M 1126 1562 
+Q 768 806 768 243 
+Q 768 -365 1126 -685 
+Q 1485 -1005 2157 -1005 
+Q 2675 -1005 3024 -816 
+Q 3373 -627 3539 -336 
+Q 3706 -45 3706 275 
+Q 3706 806 3354 1875 
+L 3827 2093 
+Q 4013 1504 4102 1078 
+Q 4192 653 4192 275 
+Q 4192 -186 3952 -614 
+Q 3712 -1043 3251 -1312 
+Q 2790 -1581 2157 -1581 
+Q 1549 -1581 1123 -1337 
+Q 698 -1094 483 -691 
+Q 269 -288 269 192 
+Q 269 576 397 998 
+Q 525 1421 691 1766 
+L 1126 1562 
+z
+M 2298 2445 
+L 2752 1990 
+L 2298 1536 
+L 1843 1990 
+L 2298 2445 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-61" d="M 2650 -64 
+Q 1555 -64 937 249 
+Q 320 563 262 1152 
+Q 256 1203 256 1299 
+Q 256 1568 323 1859 
+Q 390 2150 493 2374 
+L 928 2157 
+Q 749 1658 749 1370 
+Q 749 1280 755 1235 
+Q 806 890 1283 701 
+Q 1760 512 2662 512 
+Q 3437 512 3926 643 
+Q 4416 774 4697 1052 
+Q 4979 1331 5133 1792 
+L 5606 1741 
+Q 5498 1382 5498 1139 
+Q 5498 576 6048 576 
+L 6080 288 
+L 6048 0 
+Q 5658 0 5395 221 
+Q 5133 442 5088 826 
+Q 4723 358 4121 147 
+Q 3520 -64 2650 -64 
+z
+M 2227 2829 
+L 2682 2374 
+L 2227 1920 
+L 1773 2374 
+L 2227 2829 
+z
+M 3373 2829 
+L 3827 2374 
+L 3373 1920 
+L 2918 2374 
+L 3373 2829 
+z
+" transform="scale(0.015625)"/>
+       <path id="IRANSansX-Regular-c1" d="M -38 576 
+L 38 576 
+Q 845 576 1334 691 
+Q 1824 806 2029 1062 
+Q 1869 1043 1709 1043 
+Q 1280 1043 947 1177 
+Q 614 1312 467 1587 
+Q 346 1824 346 2118 
+Q 346 2432 483 2733 
+Q 621 3034 864 3226 
+Q 1107 3418 1395 3418 
+Q 1747 3418 2019 3149 
+Q 2291 2880 2435 2454 
+Q 2579 2029 2579 1587 
+Q 2579 1504 2566 1350 
+Q 2509 698 1869 349 
+Q 1229 0 38 0 
+L -38 0 
+L -38 576 
+z
+M 858 1926 
+Q 954 1766 1216 1676 
+Q 1478 1587 1811 1587 
+Q 2003 1587 2150 1613 
+Q 2093 2106 1891 2480 
+Q 1690 2854 1370 2854 
+Q 1216 2854 1085 2752 
+Q 954 2650 877 2486 
+Q 800 2323 800 2163 
+Q 800 2035 858 1926 
+z
+M 1338 4819 
+L 1792 4365 
+L 1338 3910 
+L 883 4365 
+L 1338 4819 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#IRANSansX-Regular-1ef"/>
+      <use xlink:href="#IRANSansX-Regular-87" transform="translate(37.90625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-a9" transform="translate(95.5 0)"/>
+      <use xlink:href="#IRANSansX-Regular-8c" transform="translate(174.796875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-86" transform="translate(209.203125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-1f0" transform="translate(259.109375 0)"/>
+      <use xlink:href="#IRANSansX-Regular-3" transform="translate(297.015625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-13a" transform="translate(327.015625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-66" transform="translate(393.921875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-3b" transform="translate(428.71875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-13b" transform="translate(455.921875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-eb" transform="translate(494.921875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-f3" transform="translate(524.515625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-b9" transform="translate(582.3125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-3" transform="translate(634.40625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-f5" transform="translate(664.40625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-39" transform="translate(733.015625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-114" transform="translate(756.921875 0)"/>
+      <use xlink:href="#IRANSansX-Regular-66" transform="translate(801.015625 0)"/>
+      <use xlink:href="#IRANSansX-Regular-3" transform="translate(835.8125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-61" transform="translate(865.8125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-c1" transform="translate(959.8125 0)"/>
+      <use xlink:href="#IRANSansX-Regular-39" transform="translate(1004.109375 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_15">
+    <path d="M 104.103579 86.557814 
+L 184.814187 158.595339 
+L 346.235404 210.529369 
+L 669.077836 309.371556 
+" clip-path="url(#pc28dcd473c)" style="fill: none; stroke: #007d81; stroke-width: 2.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m2371584f61" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #007d81"/>
+    </defs>
+    <g clip-path="url(#pc28dcd473c)">
+     <use xlink:href="#m2371584f61" x="104.103579" y="86.557814" style="fill: #007d81; stroke: #007d81"/>
+     <use xlink:href="#m2371584f61" x="184.814187" y="158.595339" style="fill: #007d81; stroke: #007d81"/>
+     <use xlink:href="#m2371584f61" x="346.235404" y="210.529369" style="fill: #007d81; stroke: #007d81"/>
+     <use xlink:href="#m2371584f61" x="669.077836" y="309.371556" style="fill: #007d81; stroke: #007d81"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 54.920553 327.79976 
+L 54.920553 43.00024 
+" style="fill: none; stroke: #94aaad; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 54.920553 327.79976 
+L 716.99976 327.79976 
+" style="fill: none; stroke: #94aaad; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <!-- ۱۴٫۴٪ -->
+    <g style="fill: #12343c" transform="translate(83.951079 72.557814) scale(0.16 -0.16)">
+     <defs>
+      <path id="IRANSansX-Regular-161" d="M 243 -288 
+L 1619 2861 
+L 2054 2861 
+L 678 -288 
+L 243 -288 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-207" d="M 864 4288 
+L 1370 3776 
+L 864 3264 
+L 352 3776 
+L 864 4288 
+z
+M 2170 4384 
+L 2682 4384 
+L 954 -205 
+L 454 -205 
+L 2170 4384 
+z
+M 2342 877 
+L 2848 365 
+L 2342 -147 
+L 1830 365 
+L 2342 877 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#IRANSansX-Regular-16e"/>
+     <use xlink:href="#IRANSansX-Regular-171" transform="translate(36.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-161" transform="translate(101.796875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-171" transform="translate(137.203125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-207" transform="translate(202.703125 0)"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <!-- ۱۰٫۱٪ -->
+    <g style="fill: #12343c" transform="translate(168.637937 144.595339) scale(0.16 -0.16)">
+     <use xlink:href="#IRANSansX-Regular-16e"/>
+     <use xlink:href="#IRANSansX-Regular-16d" transform="translate(36.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-161" transform="translate(81.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-16e" transform="translate(116.703125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-207" transform="translate(153 0)"/>
+    </g>
+   </g>
+   <g id="text_14">
+    <!-- ۷٫۰٪ -->
+    <g style="fill: #12343c" transform="translate(330.970404 196.529369) scale(0.16 -0.16)">
+     <defs>
+      <path id="IRANSansX-Regular-174" d="M 3725 4102 
+Q 3488 3731 3161 3004 
+Q 2835 2278 2569 1459 
+Q 2304 640 2227 0 
+L 1690 0 
+Q 1632 634 1366 1450 
+Q 1101 2266 768 2995 
+Q 435 3725 192 4102 
+L 698 4474 
+Q 979 4000 1347 3081 
+Q 1715 2163 1965 1235 
+Q 2221 2176 2582 3094 
+Q 2944 4013 3219 4474 
+L 3725 4102 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#IRANSansX-Regular-174"/>
+     <use xlink:href="#IRANSansX-Regular-161" transform="translate(61.203125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-16d" transform="translate(96.609375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-207" transform="translate(141.609375 0)"/>
+    </g>
+   </g>
+   <g id="text_15">
+    <!-- ۱٫۱٪ -->
+    <g style="fill: #12343c" transform="translate(656.501586 295.371556) scale(0.16 -0.16)">
+     <use xlink:href="#IRANSansX-Regular-16e"/>
+     <use xlink:href="#IRANSansX-Regular-161" transform="translate(36.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-16e" transform="translate(71.703125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-207" transform="translate(108 0)"/>
+    </g>
+   </g>
+   <g id="text_16">
+    <!-- طول خروجی و سربار پردازش محرمانه -->
+    <g transform="translate(238.949219 23.00024) scale(0.2 -0.2)">
+     <defs>
+      <path id="IRANSansX-Regular-fd" d="M 3046 0 
+Q 2438 0 2170 435 
+Q 1798 320 1459 320 
+Q 934 320 598 563 
+Q 262 806 262 1222 
+Q 262 2106 1773 2618 
+Q 1754 2746 1728 3002 
+L 2246 3104 
+Q 2362 1824 2419 1376 
+Q 2451 1050 2512 883 
+Q 2573 717 2694 646 
+Q 2816 576 3046 576 
+L 3136 576 
+L 3168 288 
+L 3136 0 
+L 3046 0 
+z
+M 749 1325 
+Q 730 1139 912 1017 
+Q 1094 896 1408 896 
+Q 1683 896 1971 986 
+Q 1946 1088 1920 1299 
+L 1830 2074 
+Q 1382 1939 1075 1728 
+Q 768 1517 749 1325 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-f9" d="M -32 576 
+L 301 576 
+Q 813 576 1040 710 
+Q 1267 845 1267 1126 
+Q 1267 1325 1139 1734 
+Q 1011 2144 928 2330 
+L 1389 2573 
+Q 1510 2304 1638 1865 
+Q 1766 1427 1766 1120 
+Q 1760 570 1382 285 
+Q 1005 0 301 0 
+L -32 0 
+L -32 576 
+z
+M 979 3878 
+L 1434 3424 
+L 979 2970 
+L 525 3424 
+L 979 3878 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-f4" d="M -26 576 
+L 96 576 
+Q 358 576 579 726 
+Q 800 877 947 1171 
+Q 1216 1715 1504 2041 
+Q 1792 2368 2138 2387 
+Q 2458 2406 2704 2217 
+Q 2950 2029 3081 1718 
+Q 3213 1408 3213 1069 
+Q 3213 730 3078 451 
+Q 2944 173 2682 32 
+Q 2554 -32 2413 -32 
+Q 1958 -32 1107 512 
+Q 710 0 83 0 
+L -32 0 
+L -26 576 
+z
+M 1370 966 
+Q 2099 512 2413 512 
+Q 2490 512 2522 538 
+Q 2637 595 2694 729 
+Q 2752 864 2752 1037 
+Q 2752 1350 2595 1606 
+Q 2438 1862 2182 1862 
+Q 2003 1862 1804 1635 
+Q 1606 1408 1370 966 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-80" d="M 4813 0 
+Q 4256 6 3901 204 
+Q 3546 403 3379 800 
+Q 2618 416 1962 208 
+Q 1306 0 550 0 
+L -38 0 
+L -38 576 
+L 550 576 
+Q 1350 576 2044 771 
+Q 2739 966 3437 1338 
+Q 3571 1414 3706 1472 
+Q 3309 1542 2848 1773 
+Q 2541 1933 2297 2016 
+Q 2054 2099 1818 2099 
+Q 1549 2099 1331 1939 
+Q 1114 1779 1005 1562 
+L 659 1798 
+Q 864 2214 1165 2428 
+Q 1466 2643 1837 2643 
+Q 2106 2643 2339 2553 
+Q 2573 2464 3034 2234 
+Q 3462 2016 3708 1910 
+Q 3955 1805 4269 1741 
+L 4288 1235 
+Q 4115 1184 3763 998 
+Q 3910 806 4179 694 
+Q 4448 582 4813 576 
+L 4877 576 
+L 4909 288 
+L 4877 0 
+L 4813 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-a1" d="M 6355 0 
+Q 6029 6 5821 179 
+Q 5613 352 5536 672 
+Q 5389 371 5152 185 
+Q 4915 0 4640 0 
+L 4627 0 
+Q 4384 0 4192 160 
+L 4192 19 
+Q 4192 -442 3952 -870 
+Q 3712 -1299 3251 -1568 
+Q 2790 -1837 2157 -1837 
+Q 1549 -1837 1123 -1593 
+Q 698 -1350 483 -947 
+Q 269 -544 269 -64 
+Q 269 320 397 742 
+Q 525 1165 691 1510 
+L 1126 1306 
+Q 768 550 768 -13 
+Q 768 -621 1126 -941 
+Q 1485 -1261 2157 -1261 
+Q 2675 -1261 3024 -1072 
+Q 3373 -883 3539 -592 
+Q 3706 -301 3706 19 
+Q 3706 550 3354 1619 
+L 3827 1837 
+Q 3917 1574 4006 1242 
+Q 4102 896 4233 739 
+Q 4365 582 4653 576 
+Q 4845 582 4992 694 
+Q 5139 806 5261 1024 
+Q 5344 1178 5392 1389 
+Q 5440 1600 5485 1856 
+L 5958 1830 
+Q 5952 1805 5913 1593 
+Q 5875 1382 5875 1184 
+Q 5875 877 5993 726 
+Q 6112 576 6368 576 
+Q 6848 576 6848 1107 
+Q 6848 1325 6723 1718 
+Q 6598 2112 6502 2317 
+L 6957 2566 
+Q 7085 2298 7213 1866 
+Q 7341 1434 7341 1107 
+Q 7341 800 7219 547 
+Q 7098 294 6877 147 
+Q 6656 0 6381 0 
+L 6355 0 
+z
+M 5037 3565 
+L 5472 3136 
+L 5037 2701 
+L 4608 3136 
+L 5037 3565 
+z
+M 5626 4218 
+L 6010 3834 
+L 5626 3443 
+L 5235 3834 
+L 5626 4218 
+z
+M 6214 3565 
+L 6643 3136 
+L 6214 2701 
+L 5779 3136 
+L 6214 3565 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-8f" d="M 0 -1338 
+Q 410 -1197 742 -966 
+Q 1075 -736 1264 -473 
+Q 1453 -211 1453 19 
+Q 1453 346 1126 1619 
+L 1619 1805 
+Q 1760 1350 1853 844 
+Q 1946 339 1946 19 
+Q 1946 -358 1722 -720 
+Q 1498 -1082 1104 -1373 
+Q 710 -1664 218 -1837 
+L 0 -1338 
+z
+M 1274 3347 
+L 1728 2893 
+L 1274 2438 
+L 819 2893 
+L 1274 3347 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-5f" d="M -45 288 
+L -13 576 
+L 365 576 
+Q 1050 576 1331 707 
+Q 1613 838 1613 1139 
+Q 1606 1338 1481 1744 
+Q 1357 2150 1267 2330 
+L 1728 2573 
+Q 1856 2323 1981 1897 
+Q 2106 1472 2106 1158 
+Q 2106 589 1690 294 
+Q 1274 0 435 0 
+L -13 0 
+L -45 288 
+z
+M 474 -435 
+L 909 -870 
+L 474 -1299 
+L 45 -870 
+L 474 -435 
+z
+M 1062 -1178 
+L 1453 -1568 
+L 1062 -1952 
+L 678 -1568 
+L 1062 -1178 
+z
+M 1651 -435 
+L 2080 -870 
+L 1651 -1299 
+L 1216 -870 
+L 1651 -435 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-56" d="M -32 576 
+L 301 576 
+Q 813 576 1040 710 
+Q 1267 845 1267 1126 
+Q 1267 1325 1139 1734 
+Q 1011 2144 928 2330 
+L 1389 2573 
+Q 1510 2304 1638 1865 
+Q 1766 1427 1766 1120 
+Q 1760 570 1382 285 
+Q 1005 0 301 0 
+L -32 0 
+L -32 576 
+z
+M 448 -602 
+L 902 -1056 
+L 448 -1510 
+L -6 -1056 
+L 448 -602 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-9d" d="M 3539 0 
+Q 3213 6 3005 179 
+Q 2797 352 2720 672 
+Q 2573 378 2339 192 
+Q 2106 6 1830 0 
+L 1811 0 
+Q 1517 0 1321 176 
+Q 1126 352 1088 653 
+Q 890 333 614 166 
+Q 339 0 6 0 
+L -19 0 
+L -51 288 
+L -19 576 
+L 13 576 
+Q 250 576 461 685 
+Q 672 794 787 973 
+Q 909 1146 976 1338 
+Q 1043 1530 1114 1792 
+L 1594 1741 
+Q 1581 1702 1542 1548 
+Q 1504 1395 1481 1260 
+Q 1459 1126 1459 1018 
+Q 1459 576 1818 576 
+L 1830 576 
+Q 2189 576 2445 1024 
+Q 2528 1178 2576 1389 
+Q 2624 1600 2669 1856 
+L 3142 1830 
+Q 3136 1805 3097 1593 
+Q 3059 1382 3059 1184 
+Q 3059 877 3177 726 
+Q 3296 576 3552 576 
+Q 4032 576 4032 1107 
+Q 4032 1325 3907 1718 
+Q 3782 2112 3686 2317 
+L 4141 2566 
+Q 4269 2298 4397 1866 
+Q 4525 1434 4525 1107 
+Q 4525 800 4403 547 
+Q 4282 294 4061 147 
+Q 3840 0 3565 0 
+L 3552 0 
+L 3539 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-e8" d="M 2022 -1606 
+Q 1530 -1606 1130 -1404 
+Q 730 -1203 496 -838 
+Q 262 -474 262 6 
+Q 262 346 384 768 
+Q 506 1190 678 1542 
+L 1114 1331 
+Q 762 614 762 83 
+Q 762 -416 1104 -723 
+Q 1446 -1030 2022 -1030 
+Q 2746 -1030 3085 -640 
+Q 3424 -250 3392 531 
+Q 3277 3430 3187 4346 
+L 3693 4454 
+Q 3757 3802 3891 557 
+Q 3930 -467 3440 -1036 
+Q 2950 -1606 2022 -1606 
+z
+" transform="scale(0.015625)"/>
+      <path id="IRANSansX-Regular-b1" d="M 563 576 
+Q 794 992 1024 1318 
+Q 1037 1613 1037 1811 
+Q 1037 2445 979 3238 
+Q 922 4032 870 4339 
+L 1382 4454 
+Q 1434 4166 1482 3536 
+Q 1530 2906 1530 2291 
+Q 1530 2035 1523 1914 
+Q 1882 2278 2259 2470 
+Q 2637 2662 2995 2669 
+Q 3328 2669 3600 2528 
+Q 3872 2387 4025 2140 
+Q 4179 1894 4179 1581 
+Q 4179 1114 3859 752 
+Q 3539 390 2976 195 
+Q 2413 0 1715 0 
+L -32 0 
+L -32 576 
+L 563 576 
+z
+M 1638 576 
+Q 2240 576 2713 713 
+Q 3187 851 3446 1081 
+Q 3706 1312 3706 1581 
+Q 3706 1811 3530 1961 
+Q 3354 2112 3046 2112 
+Q 2579 2112 2076 1705 
+Q 1574 1299 1114 576 
+L 1638 576 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#IRANSansX-Regular-fd"/>
+     <use xlink:href="#IRANSansX-Regular-f9" transform="translate(48.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3b" transform="translate(80 0)"/>
+     <use xlink:href="#IRANSansX-Regular-f4" transform="translate(107.203125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-8e" transform="translate(154.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-80" transform="translate(191.59375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-f4" transform="translate(267.296875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3" transform="translate(321.390625 0)"/>
+     <use xlink:href="#IRANSansX-Regular-a1" transform="translate(351.390625 0)"/>
+     <use xlink:href="#IRANSansX-Regular-8f" transform="translate(463.484375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-39" transform="translate(497.890625 0)"/>
+     <use xlink:href="#IRANSansX-Regular-86" transform="translate(521.796875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-8e" transform="translate(564.703125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-5f" transform="translate(602 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3" transform="translate(639 0)"/>
+     <use xlink:href="#IRANSansX-Regular-8c" transform="translate(669 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3b" transform="translate(703.40625 0)"/>
+     <use xlink:href="#IRANSansX-Regular-56" transform="translate(730.609375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-8e" transform="translate(758.3125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-9d" transform="translate(795.609375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3" transform="translate(869.703125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-113" transform="translate(899.703125 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3" transform="translate(945.109375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-13a" transform="translate(975.109375 0)"/>
+     <use xlink:href="#IRANSansX-Regular-78" transform="translate(1042.015625 0)"/>
+     <use xlink:href="#IRANSansX-Regular-113" transform="translate(1112.015625 0)"/>
+     <use xlink:href="#IRANSansX-Regular-8e" transform="translate(1154.421875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-85" transform="translate(1191.71875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-3" transform="translate(1261.71875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-e8" transform="translate(1291.71875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-114" transform="translate(1356.71875 0)"/>
+     <use xlink:href="#IRANSansX-Regular-b1" transform="translate(1400.8125 0)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc28dcd473c">
+   <rect x="54.920553" y="43.00024" width="662.079207" height="284.79952"/>
+  </clipPath>
+ </defs>
+</svg>

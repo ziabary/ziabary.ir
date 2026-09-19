@@ -13,7 +13,7 @@ const transpile = (source) => ts.transpileModule(source, {
   compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 }
 }).outputText;
 
-const { guide, views, adapters, filtering, comparison, presentation } = await loadLlmModules();
+const { guide, views, adapters, filtering, comparison, presentation, evaluation } = await loadLlmModules();
 const dataset = guide.llmRepository;
 const fixture = await import(moduleUrl(transpile(await read('tests/fixtures/llm-synthetic.ts'))));
 
@@ -35,7 +35,7 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': 95, 'model-suitability': 95, 'hardware-feasibility': 0, 'software-products': 16,
+    'model-catalog': 100, 'model-suitability': 100, 'hardware-feasibility': 0, 'software-products': 17,
     'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 24
   });
 
@@ -410,7 +410,9 @@ test('Qwen scores, dimensions and provenance preserve the publisher table withou
     assert.equal(result.unit, 'score');
     assert.equal(result.evaluatedOn, undefined);
     assert.equal(result.evaluatedRevision, undefined);
-    assert.match(result.language, /فارسی نیست/);
+    assert.equal(result.language, 'multilingual');
+    assert.equal(result.languageScope.kind, 'aggregate');
+    assert.equal(evaluation.resultMatchesLanguage(result, 'fa'), false);
     assert.match(model.specializedSpecs.adjustableDimensions.value, /انتخاب‌شده/);
   }
   const distill = repo.publishedEvaluations.filter(r => r.id.startsWith('published-evaluation:deepseek-distill'));
@@ -502,8 +504,8 @@ test('model release-date filtering uses release evidence, including month-only a
 });
 
 test('all catalog models have distinct sourced profiles, practical guidance, downloads and run paths', () => {
-  assert.equal(dataset.modelProfiles.length, 95);
-  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.introduction)).size, 95);
+  assert.equal(dataset.modelProfiles.length, 100);
+  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.introduction)).size, 100);
   for (const model of dataset.models) {
     const profile = dataset.modelProfiles.find(item => item.modelVersionId === model.id);
     assert.ok(profile?.introduction.trim(), model.id);
@@ -515,7 +517,7 @@ test('all catalog models have distinct sourced profiles, practical guidance, dow
 
 test('default usage guide explains all RAG roles without an experimental outcome', () => {
   const rows = adapters.adaptModelUseGuidance(dataset);
-  assert.equal(rows.length, 95);
+  assert.equal(rows.length, 100);
   const config = views.modelUseViewConfig();
   assert.equal(config.matrixColumns, undefined);
   const rag = filtering.filterLlmRows(rows, config.filters, { application: ['enterprise-rag'] }, '');
@@ -530,7 +532,7 @@ test('default usage guide explains all RAG roles without an experimental outcome
 
 test('optional usage matrix contains only generators and retains known text-only limitations', () => {
   const rows = adapters.adaptModelUseMatrix(dataset);
-  assert.equal(rows.length, 71);
+  assert.equal(rows.length, 76);
   assert.ok(!rows.some(row => /bge-m3|reranker|embedding|e5-small/.test(row.modelId)));
   const gemma = rows.find(row => row.modelId === 'model:google-gemma-3-1b-it');
   assert.equal(gemma.matrixCells['document-vision'].value.display, 'ورودی متنی');

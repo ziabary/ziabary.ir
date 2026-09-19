@@ -1,9 +1,17 @@
 <script lang="ts">
   import LlmDataView from '../../src/lib/components/LlmDataView.svelte';
-  import { buildLlmViewRows } from '../../src/lib/llm/adapters';
-  import { llmViewConfigs } from '../../src/lib/llm/views';
+  import { createLlmAdapters } from '../../src/lib/llm/adapters';
+  import { createLlmViews } from '../../src/lib/llm/views';
   import { syntheticLlmRepository } from './llm-synthetic';
 
+  import { createLlmI18n } from '../../src/lib/llm/i18n/runtime';
+  import { setLlmI18n } from '../../src/lib/llm/i18n/context';
+  import messages from '../../data/llm/locales/messages.fa.json';
+
+  const i18n = createLlmI18n('fa', messages);
+  setLlmI18n(i18n);
+  const { buildLlmViewRows } = createLlmAdapters(i18n);
+  const { llmViewConfigs } = createLlmViews(i18n);
   const rows = buildLlmViewRows(syntheticLlmRepository);
 </script>
 

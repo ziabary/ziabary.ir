@@ -1,53 +1,50 @@
 import type { LlmFilterConfig, LlmViewRow, ViewValue } from './views';
-
 export type RangeSelection = { min: string; max: string };
 export type FilterSelection = string | string[] | RangeSelection;
 export type FilterSelections = Record<string, FilterSelection>;
 export type SortDirection = 'asc' | 'desc';
+import type { LlmI18n } from './i18n/runtime';
 
-const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
-const arabicDigits = '٠١٢٣٤٥٦٧٨٩';
+/** Text and formatting are edition-scoped; no mutable global locale. */
+export function createLlmFiltering(i18n: LlmI18n) {
+const { t, locale, numberFormat } = i18n;
 
-export function normalizeLlmSearch(value: unknown) {
+const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
+const arabicDigits = "٠١٢٣٤٥٦٧٨٩";
+function normalizeLlmSearch(value: unknown) {
   return String(value ?? '')
-    .normalize('NFKC')
-    .replace(/[يى]/g, 'ی')
-    .replace(/ك/g, 'ک')
+    .normalize('NFKC').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[يى]/g, "ی")
+    .replace(/ك/g, "ک")
     .replace(/[۰-۹]/g, (digit) => String(persianDigits.indexOf(digit)))
     .replace(/[٠-٩]/g, (digit) => String(arabicDigits.indexOf(digit)))
-    .toLocaleLowerCase('fa')
+    .toLocaleLowerCase(locale)
     .trim();
 }
-
-export function isMissing(value: ViewValue | undefined): boolean {
+function isMissing(value: ViewValue | undefined): boolean {
   return !value || value.state !== 'known';
 }
-
-export function missingLabel(value: ViewValue | undefined) {
+function missingLabel(value: ViewValue | undefined) {
   if (value?.state === 'known') return value.display;
   const label = !value || value.state === 'unknown'
-    ? 'نامعلوم'
+    ? t('filtering.0907')
     : value.state === 'not-measured'
-      ? 'اندازه‌گیری نشده'
-      : 'قابل‌اعمال نیست';
+      ? t('filtering.0908')
+      : t('filtering.0909');
   return value?.note ? `${label} · ${value.note}` : label;
 }
-
 function selected(selection: FilterSelection | undefined) {
   if (Array.isArray(selection)) return selection.length > 0;
   if (selection && typeof selection === 'object') return selection.min !== '' || selection.max !== '';
   return selection !== undefined && selection !== '';
 }
-
-export function activeFilterCount(selections: FilterSelections) {
+function activeFilterCount(selections: FilterSelections) {
   return Object.values(selections).filter(selected).length;
 }
-
 function knownValues(value: ViewValue | ViewValue[] | undefined) {
   const values = Array.isArray(value) ? value : value ? [value] : [];
   return values.filter((item): item is Extract<ViewValue, { state: 'known' }> => item.state === 'known');
 }
-
 function facetMatches(row: LlmViewRow, config: LlmFilterConfig, selection: FilterSelection | undefined) {
   if (!selected(selection)) return true;
   const facet = row.facets[config.id];
@@ -58,7 +55,7 @@ function facetMatches(row: LlmViewRow, config: LlmFilterConfig, selection: Filte
   if (config.control === 'text') {
     // An active factual filter never silently includes unknown/not-measured/N/A.
     if (!values.length) return false;
-    const aliases: Record<string, string> = { 'فارسی': 'fa', 'persian': 'fa', 'farsi': 'fa', 'انگلیسی': 'en', 'english': 'en', 'عربی': 'ar', 'arabic': 'ar', 'چینی': 'zh', 'chinese': 'zh', 'چندزبانه': 'multilingual' };
+    const aliases: Record<string, string> = { 'فارسی': 'fa', 'persian': 'fa', 'farsi': 'fa', 'انگلیسی': 'en', 'english': 'en', 'عربی': 'ar', 'arabic': 'ar', 'چینی': 'zh', 'chinese': 'zh', 'چندزبانه': 'multilingual', 'spanish': 'es', 'espanol': 'es', 'اسپانیایی': 'es' };
     const entered = normalizeLlmSearch(selection as string);
     const needle = config.id === 'language' ? aliases[entered] ?? entered : entered;
     return values.some((value) => normalizeLlmSearch(value.raw ?? value.display).includes(needle));
@@ -106,8 +103,7 @@ function facetMatches(row: LlmViewRow, config: LlmFilterConfig, selection: Filte
 
   return true;
 }
-
-export function filterLlmRows(
+function filterLlmRows(
   rows: LlmViewRow[],
   filters: LlmFilterConfig[],
   selections: FilterSelections,
@@ -119,14 +115,11 @@ export function filterLlmRows(
     return filters.every((config) => facetMatches(row, config, selections[config.id]));
   });
 }
-
 function comparable(value: ViewValue | undefined): string | number | undefined {
   if (!value || value.state !== 'known') return undefined;
   return value.sortValue ?? value.canonicalNumber ?? (typeof value.raw === 'boolean' ? Number(value.raw) : value.raw) ?? value.display;
 }
-
-/** Missing values stay at the end in both directions; known zero sorts normally. */
-export function sortLlmRows(rows: LlmViewRow[], key: string, direction: SortDirection) {
+function sortLlmRows(rows: LlmViewRow[], key: string, direction: SortDirection) {
   if (!key) return [...rows];
   return [...rows].sort((left, right) => {
     if (left.sortGroup !== right.sortGroup && (left.sortGroup || right.sortGroup)) return (left.sortGroup ?? '').localeCompare(right.sortGroup ?? '', 'fa');
@@ -144,26 +137,21 @@ export function sortLlmRows(rows: LlmViewRow[], key: string, direction: SortDire
     if (b === undefined) return -1;
     const order = typeof a === 'number' && typeof b === 'number'
       ? a - b
-      : String(a).localeCompare(String(b), 'fa', { numeric: true, sensitivity: 'base' });
+      : String(a).localeCompare(String(b), locale, { numeric: true, sensitivity: 'base' });
     return (direction === 'asc' ? order : -order) || left.id.localeCompare(right.id, 'en');
   });
 }
-
-export function updateComparison(
+function updateComparison(
   selectedIds: string[],
   row: LlmViewRow,
   _allRows: LlmViewRow[],
   limit: number
 ): { ids: string[]; error: string } {
   if (selectedIds.includes(row.id)) return { ids: selectedIds.filter((id) => id !== row.id), error: '' };
-  if (selectedIds.length >= limit) return { ids: selectedIds, error: `حداکثر ${limit} ردیف را می‌توان هم‌زمان مقایسه کرد.` };
+  if (selectedIds.length >= limit) return { ids: selectedIds, error: t('filtering.0910', limit) };
   return { ids: [...selectedIds, row.id], error: '' };
 }
-
-/** Faceted counts apply other active filters and query, excluding the facet itself.
- * Zero-result options remain visible and selected values remain removable.
- */
-export function populateLlmFilterOptions(rows: LlmViewRow[], configs: LlmFilterConfig[], selections: FilterSelections, query: string): LlmFilterConfig[] {
+function populateLlmFilterOptions(rows: LlmViewRow[], configs: LlmFilterConfig[], selections: FilterSelections, query: string): LlmFilterConfig[] {
   return configs.map(config => {
     const versions = ['model-version', 'software-version'].includes(config.id);
     if (!versions && !['multi', 'select'].includes(config.control)) return config;
@@ -178,4 +166,6 @@ export function populateLlmFilterOptions(rows: LlmViewRow[], configs: LlmFilterC
     for (const row of eligible) for (const key of new Set(knownValues(row.facets[config.id]).map(value => String(value.raw ?? value.display)))) counts.set(key, (counts.get(key) ?? 0) + 1);
     return { ...config, control: versions ? 'select' : config.control, options: [...available.values()].map(option => ({ ...option, count: option.value === 'missing' ? eligible.filter(row => { const v = row.facets[config.id]; return !(Array.isArray(v) ? v : v ? [v] : []).length || (Array.isArray(v) ? v : v ? [v] : []).some(item => item.state !== 'known'); }).length : counts.get(option.value) ?? 0 })) };
   });
+}
+return { normalizeLlmSearch, isMissing, missingLabel, activeFilterCount, filterLlmRows, sortLlmRows, updateComparison, populateLlmFilterOptions };
 }

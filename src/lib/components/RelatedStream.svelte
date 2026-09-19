@@ -28,7 +28,7 @@
   {#each items as article, index}
     {#if article}
       <article class="stream-item">
-        <small>{article.draft ? 'پیش‌نویس · در حال بازبینی' : locale === 'fa' ? 'مطالعهٔ مرتبط' : locale === 'en' ? 'Related reading' : 'Lectura relacionada'}</small>
+        <small>{article.draft ? {fa:'پیش‌نویس · در حال بازبینی',en:'Draft · under review',es:'Borrador · en revisión'}[locale] : locale === 'fa' ? 'مطالعهٔ مرتبط' : locale === 'en' ? 'Related reading' : 'Lectura relacionada'}</small>
         <h2>{article.title}</h2>
         <p>{article.excerpt}</p>
         <a class="button ghost" href={articleHref(article)}>{locale === 'fa' ? 'خواندن این نوشته' : locale === 'en' ? 'Read article' : 'Leer artículo'}</a>

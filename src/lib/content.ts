@@ -35,7 +35,7 @@ type MarkdownModule = {
 };
 
 const metadata = import.meta.glob<ArticleMeta>('/src/lib/content/articles/*.md', {
-  eager: true, import: 'metadata'
+  eager: true, import: 'default', query: '?article-metadata'
 });
 
 export const allArticleMetadata = Object.values(metadata).map(article => ({

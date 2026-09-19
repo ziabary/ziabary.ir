@@ -1,3 +1,4 @@
+import type { ReferenceObservation, ReferenceComparison, ReferenceGuidance, ReferenceArticleSection, QuantizationObservation } from './reference-types';
 /**
  * Canonical, evidence-first data contract for the LLM selection guide.
  *
@@ -85,6 +86,9 @@ export interface DerivationRecord {
 }
 
 export interface Evidence {
+  sourceCapture?: { sourceId: string; capturedAt: string; contentSha256: string; revisionMeaning: string };
+  /** Editorial display selection, reviewed independently of raw provenance. */
+  presentationNotes?: string[];
   id: EvidenceId;
   url: string;
   title: string;
@@ -152,6 +156,7 @@ export interface LicenseRecord {
 }
 
 export interface ModelVersion {
+  configurationContext?: Datum<number, 'token'>;
   id: ModelVersionId;
   familyId: ModelFamilyId;
   exactName: string;
@@ -251,6 +256,8 @@ export interface ModelArtifact {
 
 /** A verified distribution listing is not an exact execution artifact. */
 export interface ArtifactListing {
+  /** Repository link only; no file manifest or measured byte size was captured. */
+  inventoryStatus?: 'not-recorded';
   id: EntityId<'artifact-listing'>;
   modelVersionId: ModelVersionId;
   baseModelRepository: string;
@@ -275,6 +282,7 @@ export interface ArtifactListing {
 export interface ModelRunGuide {
   label: string;
   engine: string;
+  engineLabel?: string;
   href: string;
   instructions?: string;
   conditions: string[];
@@ -658,8 +666,11 @@ export interface QualityEvaluation {
  * absent tested commits do not prevent faithful publication of the report.
  */
 export interface PublishedEvaluation {
+  referenceObservations?: ReferenceObservation[];
   /** Report-defined comparison group and reasoning mode; neither is an artifact revision. */
   comparisonGroup?: string;
+  /** Explicitly reviewed common published protocol, distinct from model or weight revisions. */
+  protocolEvidenceId?: EvidenceId;
   mode?: string;
   id: PublishedEvaluationId;
   modelVersionId: ModelVersionId;
@@ -674,8 +685,15 @@ export interface PublishedEvaluation {
   value: number;
   unit: string;
   settings: Record<string, string | number | boolean>;
+  /** Editorial explanation; never participates in result identity or comparison. */
+  settingNotes?: Record<string, string>;
   reportedPrecision?: string;
   language?: string;
+  /** Language of the result, never inferred from the interface or `default`. */
+  languageScope?: EvaluationLanguageScope;
+  /** Original source notation, retained for reviewing the explicit migration. */
+  sourceLanguageLabel?: string;
+  sourceSettingLabels?: Record<string, string>;
   applicationIds: ApplicationId[];
   evaluatedOn?: string;
   publishedOn?: string;
@@ -683,6 +701,12 @@ export interface PublishedEvaluation {
   limitations: string[];
   evidenceIds: EvidenceId[];
 }
+
+export type EvaluationLanguageScope =
+  | { kind: 'unspecified' }
+  | { kind: 'single'; language: string }
+  | { kind: 'pair'; source: string; target: string }
+  | { kind: 'aggregate'; languages?: string[] };
 
 export type FeasibilityStatus =
   | 'full-gpu'
@@ -831,6 +855,10 @@ export interface PlannedArticle {
 }
 
 export interface LlmGuideRepository {
+  referenceComparisons?: ReferenceComparison[];
+  selectionGuidance?: ReferenceGuidance[];
+  articleSections?: ReferenceArticleSection[];
+  quantizationStudies?: QuantizationObservation[];
   families: ModelFamily[];
   models: ModelVersion[];
   artifacts: ModelArtifact[];

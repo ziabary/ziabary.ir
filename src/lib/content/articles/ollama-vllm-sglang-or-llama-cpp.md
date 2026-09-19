@@ -5,8 +5,8 @@ translationGroup: ollama-vllm-sglang-or-llama-cpp
 lang: fa
 date: "2026-09-15"
 faDate: "۲۴ شهریور ۱۴۰۵"
-updated: "2026-09-16"
-faUpdated: "۲۵ شهریور ۱۴۰۵"
+updated: "2026-09-19"
+faUpdated: "۲۸ شهریور ۱۴۰۵"
 draft: false
 math: false
 category: مدل‌های زبانی
@@ -88,6 +88,14 @@ llama.cpp برای اجرای مدل روی [طیفی از سخت‌افزاره
 جزء [`llama-server`](https://github.com/ggml-org/llama.cpp/blob/v0.4.1/tools/server/README.md)، API سازگار در مسیرهای مشخص، slots موازی، continuous batching، کش پرامپت و خروجی معیارهای Prometheus دارد. نسخهٔ بررسی‌شده همچنین حالت router برای مدیریت چند مدل ارائه می‌کند. بنابراین برابرگرفتن llama.cpp با «فقط اجرای تک‌کاربره» درست نیست؛ انتخاب آن برای سرویس GGUF می‌تواند آگاهانه باشد، هرچند عملیات چندمیزبانه همچنان نیازمند طراحی است.
 
 وقتی مدل روی CPU یا بخشی روی CPU اجرا می‌شود، کاهش نیاز به GPU ممکن است با افزایش زمان پاسخ و مصرف منابع میزبان همراه شود. برای یک ابزار کم‌مراجعه، این مبادله گاهی مطلوب است؛ برای خدمت تعاملیِ شلوغ شاید نباشد. اجرای لایه‌به‌لایه و offload نیز همین پرسش اقتصادی را پیش می‌آورند که در [یادداشت AirLLM و اجرای لایه‌به‌لایه](/articles/airllm-layer-wise-inference/) جداگانه بررسی شده است.
+
+<!-- reference:mac-path:start -->
+
+### مسیر Apple silicon: MLX LM
+
+برای اجرای محلی روی Apple silicon، [MLX LM](https://github.com/ml-explore/mlx-lm) یک گزینهٔ مستقیم برای تولید متن، streaming، cache پرامپت، کم‌دقت‌سازی و fine-tuning مدل‌های سازگار است. آن را صرفاً به‌دلیل نداشتن رابط گرافیکی از جدول نرم‌افزار حذف نکنید. قابلیت‌های مستندشده جای آزمون سرعت روی دستگاه کاربر را نمی‌گیرند. توضیح macOS 15 در بخش Large Models به memory wiring مربوط است؛ آن را به شرط عمومیِ همهٔ قابلیت‌ها تبدیل نکنید.
+
+<!-- reference:mac-path:end -->
 
 ## GGUF، Safetensors و «مدل چهاربیتی» را هم‌معنی نگیریم
 

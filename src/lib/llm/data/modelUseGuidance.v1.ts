@@ -181,7 +181,7 @@ modelUseGuidance.push({
   "description": "SmolLM3 سه‌میلیاردی دو حالت پاسخ مستقیم و استدلال دارد؛ زمینهٔ آموزش ۶۵٬۵۳۶ توکن است و جزئیات آموزش منتشر شده‌اند.",
   "distinguishingFeature": "SmolLM3 سه‌میلیاردی دو حالت پاسخ مستقیم و استدلال دارد؛ زمینهٔ آموزش ۶۵٬۵۳۶ توکن است و جزئیات آموزش منتشر شده‌اند.",
   "conditions": [
-    "برای زمینهٔ بلندتر تنظیم YaRN لازم است؛ شش زبان اعلام‌شده شامل فارسی نیستند. Transformers نسخهٔ ۴٫۵۳ یا بالاتر لازم است."
+    "برای زمینهٔ بلندتر تنظیم YaRN لازم است. متن کارت شش زبان بومی از جمله آلمانی را نام می‌برد، اما برچسب‌های مخزن هشت زبان متفاوت دارند؛ فارسی در هیچ‌یک نیست. Transformers نسخهٔ ۴٫۵۳ یا بالاتر لازم است."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -6222,5 +6222,96 @@ modelUseGuidance.push({
   "basis": "publisher-summary",
   "evidenceIds": [
     "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:bsc-lt-salamandra-2b-instruct:text-work",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "تولید متن به زبان‌های ایبری",
+  "description": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 2B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+  "distinguishingFeature": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 2B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:bsc-lt-salamandra-7b-instruct:text-work",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "تولید متن به زبان‌های ایبری",
+  "description": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 7B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+  "distinguishingFeature": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 7B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:liquidai-lfm2-5-1-2b-instruct:structured-extraction",
+  "modelVersionId": "model:liquidai-lfm2-5-1-2b-instruct",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "استخراج اطلاعات روی دستگاه",
+  "description": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی در این بسته نداریم. مجوز اختصاصی دارد.",
+  "distinguishingFeature": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی در این بسته نداریم. مجوز اختصاصی دارد.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc",
+    "evidence:reference-lfm-license-txt-e8003a05ee"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:openbmb-minicpm5-2b:reasoning-analysis",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال با مدل کوچک",
+  "description": "مدل کوچکِ دستورپذیر برای بررسی در کارهای استدلال و ابزار؛ اندازهٔ واقعی ثبت‌شده حدود ۲٫۵۲ میلیارد پارامتر است. امتیازهای ناشر را از امتیازهای نقل‌شده از Artificial Analysis جدا کنید؛ شاهد فارسی یا اسپانیایی در این بسته ندارد.",
+  "distinguishingFeature": "مدل کوچکِ دستورپذیر برای بررسی در کارهای استدلال و ابزار؛ اندازهٔ واقعی ثبت‌شده حدود ۲٫۵۲ میلیارد پارامتر است. امتیازهای ناشر را از امتیازهای نقل‌شده از Artificial Analysis جدا کنید؛ شاهد فارسی یا اسپانیایی در این بسته ندارد.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-json-ec00591718",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0",
+    "evidence:reference-openbmb-minicpm5-2b-config-json-47e785ca3a",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-4-2-3b:reasoning-analysis",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال با مدل کوچک",
+  "description": "گونهٔ استدلالی Granite با حالت‌های thinking و non-thinking؛ برچسب 3B نام اندازه است و شمار ثبت‌شدهٔ پارامترها حدود ۳٫۶۶ میلیارد است. حد بومی ۱۲۸K را از ادعای گسترش تا ۵۱۲K جدا نگه دارید.",
+  "distinguishingFeature": "گونهٔ استدلالی Granite با حالت‌های thinking و non-thinking؛ برچسب 3B نام اندازه است و شمار ثبت‌شدهٔ پارامترها حدود ۳٫۶۶ میلیارد است. حد بومی ۱۲۸K را از ادعای گسترش تا ۵۱۲K جدا نگه دارید.",
+  "conditions": [],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-json-ec00591718",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-22881108b0",
+    "evidence:reference-ibm-granite-granite-4-2-3b-config-json-47e785ca3a",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
   ]
 });

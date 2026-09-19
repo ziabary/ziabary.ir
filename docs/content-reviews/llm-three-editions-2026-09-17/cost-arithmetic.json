@@ -1,0 +1,13 @@
+{
+  "scope": "Recalculation of explicit educational USD assumptions; not vendor prices or model measurements",
+  "wholeSystemPowerKWhPerMonth": "388.800",
+  "electricityMonthlyUSD": "77.76000",
+  "purchaseUSD": 6000,
+  "ownershipMonthlyUSD": "564.43",
+  "ownership36MonthsUSD": "20319.36",
+  "shortCalls100000USD": 200,
+  "documentCalls100000USD": 600,
+  "cashRecoveryMonthsUnderArticleAssumptions": "12.19",
+  "softwareTestsReport": "test.log",
+  "persianPriceSnapshotCheck": "price-audit.log"
+}

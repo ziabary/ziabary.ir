@@ -105,6 +105,13 @@ const editorialGuideCollections: GuideCollection[] = [
         href: '/articles/gpu-inference-latency-throughput/'
       },
       {
+        id: 'gpu-confidential-computing-overhead',
+        title: 'سربار پردازش محرمانه روی GPU از کجا می‌آید؟',
+        subtitle: 'هزینهٔ ارسال فرمان، PCIe و NVLink رمزگذاری‌شده؛ تحلیل آزمون‌های B200 و نقش پشتهٔ استنتاج.',
+        kind: 'article',
+        href: '/articles/gpu-confidential-computing-overhead/'
+      },
+      {
         id: 'server-comparison-table',
         title: 'جدول تعاملی مقایسه سرورهای GPU',
         subtitle: 'مقایسهٔ نسل PCIe، تعداد و عرض کارت، توان، ارتفاع، خنک‌کاری و پلتفرم با منابع رسمی سازندگان.',
@@ -191,6 +198,20 @@ const editorialGuideCollections: GuideCollection[] = [
         subtitle: 'کنترل مسیرهای غیرمستقیم دسترسی به دادهٔ محرمانه؛ از اختیار تغییر کد تا خروج اطلاعات و مدیریت زیرساخت.',
         kind: 'article',
         href: '/articles/ztai-indirect-data-access/'
+      },
+      {
+        id: 'ztai-data-model-engineering-without-raw-access',
+        title: 'مهندسی داده و مدل بدون مشاهدهٔ دادهٔ محرمانه',
+        subtitle: 'قرارداد داده، توسعه با دادهٔ آزمایشی و ارزیابی مستقل در محیط حفاظت‌شده.',
+        kind: 'article',
+        href: '/articles/ztai-data-model-engineering-without-raw-access/'
+      },
+      {
+        id: 'ztai-autonomous-agents-bounded-authority',
+        title: 'ZTAI برای عامل‌های خودکار؛ اختیار محدود در تمام مسیر اجرا',
+        subtitle: 'مهار اختیار عامل در بازیابی، حافظه، واگذاری و اجرای ابزار؛ با کنترل مستقل مجوز و توقف.',
+        kind: 'article',
+        href: '/articles/ztai-autonomous-agents-bounded-authority/'
       }
     ]
   },

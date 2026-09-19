@@ -1,8 +1,18 @@
 <script lang="ts">
+  import { getLlmI18n } from '$lib/llm/i18n/context';
+  const i18n = getLlmI18n();
+  const { t, locale, direction, numberFormat } = i18n;
+  const { enrichResearchRepository } = createLlmResearch(i18n);
+  const { enrichExistingRows, enrichExistingConfig } = createLlmResearchViews(i18n);
+  const { viewRelatedContent, llmDatasetUpdatedOn, llmRepository: baseRepository, viewReadingArticles } = createLlmGuide(i18n);
+  const { buildLlmViewRows, adaptModelUseMatrix } = createLlmAdapters(i18n);
+  const { llmGuideSections, modelUseViewConfig } = createLlmViews(i18n);
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
   import { onMount, tick, type Component } from 'svelte';
+  import LlmQualityComparison from './LlmQualityComparison.svelte';
+  import LlmReferenceComparisons from './LlmReferenceComparisons.svelte';
   import LlmGuideChapters from './LlmGuideChapters.svelte';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import LlmModelProfile from './LlmModelProfile.svelte';
@@ -10,21 +20,25 @@
   import LlmDataView from './LlmDataView.svelte';
   import LlmResearchView from './LlmResearchView.svelte';
   import LlmTaskStartingPoints from './LlmTaskStartingPoints.svelte';
-  import { enrichResearchRepository } from '$lib/llm/research';
-  import { enrichExistingRows, enrichExistingConfig } from '$lib/llm/research-views';
+  import { createLlmResearch } from '$lib/llm/research';
+  import { createLlmResearchViews } from '$lib/llm/research-views';
   import { imageAttributes } from '$lib/images';
-  import { articles } from '$lib/content';
+  import { allArticleMetadata as articles } from '$lib/content';
+  import groups from '$lib/translation-groups.json';
+  import { llmCollection, llmEditionSlugs, llmTopicSlug, llmBase, llmEditionPolicy } from '$lib/llm/editions';
+  import { localizeLlmRepository } from '$lib/llm/i18n/runtime';
+  import { llmSelectionHref } from '$lib/llm/selection';
+  const llmGuideCollection = llmCollection(locale);
+  const llmArticleSlugs = llmEditionSlugs(locale);
+  const base = llmBase(locale);
+  const sectionHref = (view: string, hash: string, preset: string | null = null) => llmSelectionHref($page.url, {view, preset, 'research-model':null}, hash);
+  function readingSlug(slug: string) {
+    return llmTopicSlug(slug, locale) ?? (locale === 'fa' ? slug : Object.values(groups).find(group => (group as Record<string,string>).fa === slug)?.[locale]);
+  }
   import { formatDate } from '$lib/publication.mjs';
-  import {
-    viewRelatedContent,
-    llmGuideCollection,
-    llmDatasetUpdatedOn,
-    llmRepository as baseRepository,
-    llmArticleSlugs,
-    viewReadingArticles
-  } from '$lib/llm/guide';
-  import { buildLlmViewRows, adaptModelUseMatrix } from '$lib/llm/adapters';
-  import { llmGuideSections, modelUseViewConfig } from '$lib/llm/views';
+  import { createLlmGuide } from '$lib/llm/guide';
+  import { createLlmAdapters } from '$lib/llm/adapters';
+  import { createLlmViews } from '$lib/llm/views';
 
   export let chapters: Record<string, Component<{ headingPrefix?: string }>> = {};
   let activeTarget = '';
@@ -44,14 +58,15 @@
     fromHash(); window.addEventListener('hashchange', fromHash);
     return () => window.removeEventListener('hashchange', fromHash);
   });
-  const numbers = new Intl.NumberFormat('fa-IR');
-  const publishedArticles = new Map(articles.filter(article => article.lang === 'fa' && !article.draft).map(article => [article.slug, article]));
-  const readingArticles = new Map(articles.filter(article => article.lang === 'fa' && llmArticleSlugs.includes(article.slug)).map(article => [article.slug, article]));
-  const chapterArticles = llmArticleSlugs.flatMap(slug => readingArticles.get(slug) ?? []);
-  const targetIds = ['start', ...llmGuideSections.map(section => section.id), 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
+  const numbers = new Intl.NumberFormat(numberFormat);
+  const publishedArticles = new Map(articles.filter(article => article.lang === locale).map(article => [article.slug, article]));
+  const readingArticles = new Map(articles.filter(article => article.lang === locale && llmArticleSlugs.some(slug => slug === article.slug)).map(article => [article.slug, article]));
+  $: chapterArticles = llmArticleSlugs.flatMap(slug => chapters[slug] ? readingArticles.get(slug) ?? [] : []);
+  $: targetIds = ['start', ...llmGuideSections.map(section => section.id), 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
   $: activeChapter = chapterArticles.find(article => activeTarget === article.slug || activeTarget.startsWith(`${article.slug}--`));
-  const llmRepository = enrichResearchRepository(baseRepository);
-  const llmViewRows = enrichExistingRows(llmRepository, buildLlmViewRows(llmRepository));
+  const llmRepository = enrichResearchRepository(localizeLlmRepository(baseRepository, i18n));
+  $: targetLanguage = ['all','fa','en','es','ar','de','fr','zh'].includes($page.url.searchParams.get('target-language') ?? '') ? $page.url.searchParams.get('target-language')! : llmEditionPolicy[locale].targetLanguage;
+  $: llmViewRows = enrichExistingRows(llmRepository, buildLlmViewRows(llmRepository), targetLanguage);
   const matrixRows = adaptModelUseMatrix(llmRepository);
   const tableCount = llmGuideSections.reduce((count, section) => count + section.views.length, 0);
   $: routeParams = browser ? $page.url.searchParams : new URLSearchParams();
@@ -79,103 +94,140 @@
   }
   const startPaths = [
     {
-      title: 'برای کارم چه مدلی کافی است؟',
+      title: t('LlmGuidePage.1008'),
       view: 'model-suitability', preset: 'task-first',
-      description: 'مقایسهٔ مدل‌های کوچک و بزرگ بر اساس کاربرد',
-      label: 'جدول مدل‌ها', article: 'right-model-size-for-the-task'
+      description: t('start.choice.description'), label: t('start.choice.table'),
+      articles: [
+        { slug: 'right-model-size-for-the-task', label: t('start.choice.size') },
+        { slug: 'evaluating-language-models-for-persian', label: t('start.choice.evaluation') }
+      ]
     },
     {
-      title: 'با سخت‌افزار موجود چه می‌توانم اجرا کنم؟',
+      title: t('start.knowledge.title'),
+      view: 'specialized-models', preset: null,
+      description: t('start.knowledge.description'), label: t('start.knowledge.table'),
+      articles: [
+        { slug: 'rag-cag-kag-fine-tuning-instruction-tuning', label: t('start.knowledge.methods') },
+        { slug: 'enterprise-rag-model-embedding-reranker', label: t('start.knowledge.rag') }
+      ]
+    },
+    {
+      title: t('LlmGuidePage.1011'),
       view: 'hardware-feasibility', preset: 'existing-hardware',
-      description: 'بررسی مدل و پیکربندی اجرا روی CPU یا GPU',
-      label: 'جدول حافظه', article: 'llms-on-rtx-4090-24gb-vs-48gb'
+      description: t('start.hardware.description'), label: t('LlmGuidePage.1013'),
+      articles: [
+        { slug: 'llms-on-rtx-4090-24gb-vs-48gb', label: t('start.hardware.memory') },
+        { slug: 'four-bit-model-quantization', label: t('start.hardware.quantization') }
+      ]
     },
     {
-      title: 'چگونه با حافظهٔ کمتر اجرا کنم؟',
-      view: 'deployment-compatibility', section: 'serving-software', preset: 'memory-constrained',
-      description: 'کوانت و offload، همراه با نیاز به RAM و دیسک',
-      label: 'جدول اجرا', article: 'four-bit-model-quantization'
-    },
-    {
-      title: 'با چه نرم‌افزاری مدل را اجرا کنم؟',
+      title: t('LlmGuidePage.1017'),
       view: 'software-products', section: 'serving-software', preset: 'software-choice',
-      description: 'انتخاب ابزار اجرا و سرویس‌دهی متناسب با نیاز',
-      label: 'جدول نرم‌افزار', article: 'ollama-vllm-sglang-or-llama-cpp'
+      description: t('LlmGuidePage.1018'), label: t('LlmGuidePage.1019'),
+      articles: [
+        { slug: 'ollama-vllm-sglang-or-llama-cpp', label: t('start.software.engine') },
+        { slug: 'single-user-to-enterprise-llm-serving', label: t('start.software.serving') }
+      ]
     }
   ];
   $: activeView = routeParams.get('view') ?? '';
   $: activePreset = routeParams.get('preset') ?? '';
   $: activeSoftwareView = activeView === 'deployment-compatibility' ? activeView : 'software-products';
+  $: qualityView = routeParams.get('benchmark-view') !== 'performance' && !routeParams.get('research-model');
+  async function setBenchmarkView(view: string) {
+    const url = new URL($page.url); url.searchParams.set('benchmark-view',view); url.searchParams.delete('research-model');
+    await goto(url,{noScroll:true,keepFocus:true});
+  }
+  let copyStatus = '';
+  async function copySelection() {
+    try { await navigator.clipboard.writeText(location.href); copyStatus = t('selection.copied'); }
+    catch { copyStatus = t('selection.failed'); }
+  }
 
 
 </script>
 
-<svelte:head>
-  <title>{llmGuideCollection.title} | مهران ضیابری</title>
-  <meta name="description" content={llmGuideCollection.subtitle} />
-</svelte:head>
 
-<main class="llm-guide" dir="rtl" use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
-  <nav class="breadcrumbs wrap" aria-label="مسیر راهنما">
-    <a href="/guides/">فنی‌جات</a><span aria-hidden="true">/</span><span aria-current="page">راهنمای مدل‌های زبانی</span>
+
+<main class="llm-guide" dir={direction} use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
+  <nav class="breadcrumbs wrap" aria-label={t('LlmGuidePage.1021')}>
+    <a href={`${base}/guides/`}>{t('LlmGuidePage.1022')}</a><span aria-hidden="true">/</span><span aria-current="page">{t('LlmGuidePage.1023')}</span>
   </nav>
 
   <div class="llm-opening">
     <GuideOpening title={llmGuideCollection.title} lead={llmGuideCollection.subtitle} eyebrow="LLM & SLM" image={llmGuideCollection.image} imageAlt={llmGuideCollection.imageAlt}>
-        <p>امروزه بسیاری از افراد و سازمان‌ها تمایل دارند برای کاربردهای مختلف، یک مدل زبانی محلی در اختیار داشته باشند؛ مدلی که روی رایانه یا سرور خودشان اجرا شود و برای گفت‌وگو، برنامه‌نویسی، ترجمه یا پاسخ‌گویی بر اساس اسناد از آن استفاده کنند. حفظ محرمانگی اطلاعات، استقلال از سرویس‌های خارجی و کنترل هزینه‌ها از انگیزه‌های این انتخاب است. اما تنوع مدل‌ها و روش‌های اجرای آن‌ها، تصمیم‌گیری را دشوار می‌کند: چه مدلی برای کار ما کافی است، روی سخت‌افزار موجود چه چیزی می‌توان اجرا کرد و چه زمانی ارتقای زیرساخت ضرورت دارد؟
+        <p>{t('LlmGuidePage.1024')}
 </p><p>
-این مجموعه برای پاسخ به همین پرسش‌ها تهیه شده است. در جدول‌های تعاملی می‌توانید مدل‌های زبانی کوچک و بزرگ، مدل‌های تخصصی مرتبط، نیازهای سخت‌افزاری و نرم‌افزارهای اجرای آن‌ها را مقایسه کنید و به منابع و لینک‌های کاربردی دسترسی داشته باشید. مقاله‌های همراه نیز توضیح می‌دهند هر انتخاب چه مزایا و محدودیت‌هایی دارد؛ تا بتوانید متناسب با کاربرد، کیفیت موردانتظار و بودجه خود تصمیم بگیرید و برای قابلیتی که به آن نیاز ندارید، هزینه نکنید.
+{t('LlmGuidePage.1025')}
 </p>
     </GuideOpening>
     <section class="start" id="start" aria-labelledby="start-title">
           <header>
-            <small>راهنمای استفاده از مجموعه</small>
-            <h2 id="start-title">از کجا شروع کنیم؟</h2>
-            <p>برای مقایسه، جدول را باز کنید؛ برای شناخت گزینه‌ها و دلیل انتخاب، مقالهٔ همان مسیر را بخوانید.</p>
+            <small>{t('LlmGuidePage.1026')}</small>
+            <h2 id="start-title">{t('LlmGuidePage.1027')}</h2>
+            <p>{t('LlmGuidePage.1028')}</p>
           </header>
-          <nav class="desktop-paths" aria-label="مسیرهای پیشنهادی شروع">
+          <nav class="desktop-paths" aria-label={t('LlmGuidePage.1029')}>
             {@render readingPaths()}
           </nav>
     </section>
-          <div class="collection-stats" aria-label="اطلاعات مجموعه">
-            <a href="?show-drafts=true&view=model-catalog#model-catalog">{numbers.format(llmRepository.models.length)} مدل</a>
-            <a href="?show-drafts=true&view=software-products#serving-software">{numbers.format(llmRepository.softwareProducts.length)} نرم‌افزار</a>
-            <span>{numbers.format(tableCount)} جدول تعاملی</span>
-            <a href="#llm-notes">{numbers.format(readingArticles.size)} مقالهٔ راهنما</a>
+          <div class="collection-stats" aria-label={t('LlmGuidePage.1030')}>
+            <a href={sectionHref('model-catalog', 'model-catalog')}>{numbers.format(llmRepository.models.length)} {t('LlmGuidePage.1031')}</a>
+            <a href={sectionHref('software-products', 'serving-software')}>{numbers.format(llmRepository.softwareProducts.length)} {t('LlmGuidePage.1032')}</a>
+            <span>{numbers.format(tableCount)} {t('LlmGuidePage.1033')}</span>
+            <a href="#llm-notes">{numbers.format(readingArticles.size)} {t('LlmGuidePage.1034')}</a>
             <span class="data-updated">
-              <span>آخرین به‌روزرسانی داده‌ها:</span>
-              <time datetime={llmDatasetUpdatedOn}>{formatDate(llmDatasetUpdatedOn)}</time>
+              <span>{t('LlmGuidePage.1035')}</span>
+              <time datetime={llmDatasetUpdatedOn}>{formatDate(llmDatasetUpdatedOn, locale)}</time>
             </span>
           </div>
   </div>
 
+  <details class="guide-method">
+    <summary>{t('method.title')}</summary>
+    <p>{t('method.sources')}</p><p>{t('method.selection')}</p>
+    <p>{t('method.hardware')} <a href={`#${llmTopicSlug('ollama-vllm-sglang-or-llama-cpp', locale)}`} onclick={() => revealChapter(llmTopicSlug('ollama-vllm-sglang-or-llama-cpp', locale)!)}>{t('method.software')}</a></p>
+    <p>{t('method.memory')}</p>
+    <p>{t('method.reviewed')} <time datetime={llmDatasetUpdatedOn}>{formatDate(llmDatasetUpdatedOn, locale)}</time> · <a href={`${base}/resume/`}>{t('method.correction')}</a></p>
+  </details>
+
   <div class="wrap guide-layout">
     <aside class="guide-navigation" data-reading-navigation>
       <details class="desktop-toc" open>
-        <summary>در این مجموعه</summary>
-        <nav aria-label="فهرست راهنما" use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
+        <summary>{t('LlmGuidePage.1036')}</summary>
+        <nav aria-label={t('LlmGuidePage.1037')} use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
       </details>
-      <a class="back-link" href="/guides/">دیدن مجموعه‌های فنی</a>
+      <a class="back-link" href={`${base}/guides/`}>{t('LlmGuidePage.1038')}</a>
     </aside>
 
     <div class="guide-main">
       <div class="guide-navigation mobile-navigation">
       <details class="mobile-toc">
-        <summary>در این مجموعه</summary>
-        <nav aria-label="فهرست موبایل راهنما" use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
+        <summary>{t('LlmGuidePage.1036')}</summary>
+        <nav aria-label={t('LlmGuidePage.1039')} use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
       </details>
       </div>
 
       {#each llmGuideSections as section}
         {#if section.views.length === 1}
           {@const config = enrichExistingConfig(section.views[0])}
-          {#if config.id === 'model-suitability'}
-            <div class="use-mode" role="group" aria-label="شیوهٔ نمایش کاربرد مدل‌ها">
-              <button type="button" class:active={!matrixMode} aria-pressed={!matrixMode} onclick={() => setMatrixMode(false)}>راهنمای کاربرد</button>
-              <button type="button" class:active={matrixMode} aria-pressed={matrixMode} onclick={() => setMatrixMode(true)}>ماتریس مقایسه</button>
-              <span>{matrixMode ? 'فقط مدل‌های مولد و چندوجهی؛ کاربردهای دلخواه را از ستون‌ها انتخاب کنید.' : 'برای RAG، نقش بازیابی، بازرتبه‌بندی و تولید پاسخ را جدا بررسی کنید.'}</span>
+          {#if config.id === 'benchmarks'}
+            <section id="benchmarks" class="benchmark-section" aria-labelledby="benchmark-section-title">
+              <h2 id="benchmark-section-title">{section.title}</h2>
+              <nav class="subview-tabs" aria-label={section.title}>
+                <button type="button" class:active={qualityView} aria-pressed={qualityView} onclick={() => setBenchmarkView('quality')}>{t('benchmarks.quality')}</button>
+                <button type="button" class:active={!qualityView} aria-pressed={!qualityView} onclick={() => setBenchmarkView('performance')}>{t('benchmarks.performance')}</button>
+              </nav>
+              <div class="benchmark-actions"><button class="copy-selection" type="button" onclick={copySelection}>{t('selection.copy')}</button><span role="status">{copyStatus}</span></div>
+              {#if qualityView}<LlmReferenceComparisons {targetLanguage} repository={llmRepository} onOpenModel={openModel} /><LlmQualityComparison {targetLanguage} repository={llmRepository} onOpenModel={openModel} />{:else}<LlmResearchView repository={llmRepository} id="benchmarks" anchorId="benchmark-performance" onOpenModel={openModel} />{/if}
+            </section>
+          {:else if config.id === 'model-suitability'}
+            <div class="use-mode" role="group" aria-label={t('LlmGuidePage.1040')}>
+              <button type="button" class:active={!matrixMode} aria-pressed={!matrixMode} onclick={() => setMatrixMode(false)}>{t('LlmGuidePage.1041')}</button>
+              <button type="button" class:active={matrixMode} aria-pressed={matrixMode} onclick={() => setMatrixMode(true)}>{t('LlmGuidePage.1042')}</button>
+              <span>{matrixMode ? t('LlmGuidePage.1043') : t('LlmGuidePage.1044')}</span>
             </div>
-            <LlmDataView config={enrichExistingConfig(modelUseViewConfig(matrixMode))} evidence={llmRepository.evidence} rows={matrixMode ? matrixRows : llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel}>{#snippet controlsContent()}<LlmTaskStartingPoints repository={llmRepository} onOpenModel={openModel} />{/snippet}</LlmDataView>
+            <LlmDataView config={enrichExistingConfig(modelUseViewConfig(matrixMode))} evidence={llmRepository.evidence} rows={matrixMode ? matrixRows : llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel}>{#snippet controlsContent()}<LlmTaskStartingPoints {targetLanguage} repository={llmRepository} onOpenModel={openModel} />{/snippet}</LlmDataView>
           {:else if ['hardware-feasibility', 'benchmarks'].includes(config.id)}
             <LlmResearchView repository={llmRepository} id={config.id} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel} />
           {:else}
@@ -184,9 +236,9 @@
           {@render viewReading(config.id, config.title)}
         {:else}
           <section class="serving-section" id={section.id} aria-labelledby="serving-section-title">
-            <header><small>بخش چهارم · دو نمای مستقل</small><h2 id="serving-section-title">{section.title}</h2></header>
-            <nav class="subview-tabs" aria-label="نماهای نرم‌افزار اجرا و سرویس‌دهی">
-              {#each section.views as view}<a aria-current={activeSoftwareView === view.id ? 'page' : undefined} class:active={activeSoftwareView === view.id} href={`?show-drafts=true&view=${view.id}#${section.id}`}>{view.subviewNumber ? `${numbers.format(view.subviewNumber)}. ` : ''}{view.title}</a>{/each}
+            <header><small>{t('LlmGuidePage.1045')}</small><h2 id="serving-section-title">{section.title}</h2></header>
+            <nav class="subview-tabs" aria-label={t('LlmGuidePage.1046')}>
+              {#each section.views as view}<a aria-current={activeSoftwareView === view.id ? 'page' : undefined} class:active={activeSoftwareView === view.id} href={sectionHref(view.id, section.id)}>{view.subviewNumber ? `${numbers.format(view.subviewNumber)}. ` : ''}{view.title}</a>{/each}
             </nav>
             {#each section.views.filter((view) => view.id === activeSoftwareView) as config (config.id)}
               {#if config.id === 'deployment-compatibility'}<LlmResearchView repository={llmRepository} id={config.id} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel} />{:else}<LlmDataView onOpenModel={openModel} config={enrichExistingConfig(config)} evidence={llmRepository.evidence} rows={llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} />{/if}
@@ -208,18 +260,24 @@
   <ol class="start-paths">
     {#each startPaths as path, index}
       <li>
-        <span class="path-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, '۰')}</span>
+        <span class="path-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, t('LlmGuidePage.1047'))}</span>
         <div>
           <h3>{path.title}</h3>
           <div class="path-summary">
             <p>{path.description}</p>
             <div class="path-actions">
-            <a class="path-button" href={`?show-drafts=true&view=${path.view}&preset=${path.preset}#${path.section ?? path.view}`}>
+            <a class="path-button" href={sectionHref(path.view, path.section ?? path.view, path.preset)}>
               {path.label} <span aria-hidden="true">←</span>
             </a>
-              <a class="article-path" href={`#${path.article}`} onclick={() => revealChapter(path.article)} aria-label={`خواندن مقاله: ${readingArticles.get(path.article)?.title}`} title={readingArticles.get(path.article)?.title}>
-                مقالهٔ راهنما <span aria-hidden="true">←</span>
-              </a>
+              {#each path.articles as item}
+                {@const slug = readingSlug(item.slug)}
+                {@const article = readingArticles.get(slug ?? '')}
+                {#if slug && article}
+                  <a class="article-path" href={`#${slug}`} onclick={() => revealChapter(slug)} aria-label={t('LlmGuidePage.1048', article.title)} title={article.title}>
+                    {item.label} <span aria-hidden="true">←</span>
+                  </a>
+                {/if}
+              {/each}
             </div>
           </div>
         </div>
@@ -229,42 +287,42 @@
 {/snippet}
 
 {#snippet viewReading(viewId: string, title: string)}
-  <nav class="view-reading" aria-label={`راهنمای مرتبط با ${title}`} data-reading-for={viewId}>
-    <h3 class="reading-heading">یادداشت‌های مرتبط با این جدول</h3>
+  <nav class="view-reading" aria-label={t('LlmGuidePage.1049', title)} data-reading-for={viewId}>
+    <h3 class="reading-heading">{t('LlmGuidePage.1050')}</h3>
     <div class="reading-cards">
       {#each [...(viewReadingArticles[viewId] ?? []).map(contentId => ({ contentId, anchorId: undefined })), ...(viewRelatedContent[viewId] ?? [])] as item}
-        {@const slug = item.contentId}
+        {@const slug = readingSlug(item.contentId) ?? ''}
         {@const article = publishedArticles.get(slug)}
         {@const embedded = readingArticles.has(slug)}
         {#if article}
-          <a class="reading-card" href={embedded ? `#${slug}` : `/articles/${slug}/${item.anchorId ? `#${item.anchorId}` : ''}`} onclick={() => { if (embedded) revealChapter(slug); }}>
+          <a class="reading-card" href={embedded ? `#${slug}` : `${base}/articles/${slug}/${locale === 'fa' && item.anchorId ? `#${item.anchorId}` : ''}`} onclick={() => { if (embedded) revealChapter(slug); }}>
             {#if article.cover}
               <img {...imageAttributes(article.cover, '112px')} alt="" loading="lazy" width="640" height="360" />
             {/if}
             <div class="reading-card-body">
               <h4>{article.title}</h4>
               <p>{article.excerpt}</p>
-              <div class="reading-card-footer"><span>{embedded ? 'خواندن در همین صفحه' : 'خواندن مقاله'} <span aria-hidden="true">←</span></span><small>{article.readTime}</small></div>
+              <div class="reading-card-footer"><span>{embedded ? t('LlmGuidePage.1051') : t('LlmGuidePage.1052')} <span aria-hidden="true">←</span></span><small>{article.readTime}</small></div>
             </div>
           </a>
         {/if}
       {/each}
     </div>
-    <a class="all-notes" href="#llm-notes">همهٔ یادداشت‌های راهنما ←</a>
+    <a class="all-notes" href="#llm-notes">{t('LlmGuidePage.1053')}</a>
   </nav>
 {/snippet}
 
 {#snippet guideContents()}
-  <a href="#start" aria-current={activeTarget === 'start' ? 'location' : undefined}>از کجا شروع کنیم؟</a>
+  <a href="#start" aria-current={activeTarget === 'start' ? 'location' : undefined}>{t('LlmGuidePage.1027')}</a>
   <details class="toc-group" open>
-    <summary>جدول‌ها</summary>
+    <summary>{t('LlmGuidePage.1054')}</summary>
     <ol>{#each llmGuideSections as section}
-      <li><a class:active={activeTarget === section.id} aria-current={activeTarget === section.id ? 'location' : undefined} href={`?show-drafts=true&view=${section.views[0].id}#${section.id}`}>{numbers.format(section.number)}. {section.title}</a>
-      {#if section.views.length > 1}<ul>{#each section.views as view}<li><a class:active={activeTarget === section.id && activeSoftwareView === view.id} href={`?show-drafts=true&view=${view.id}#${section.id}`}>{view.shortTitle}</a></li>{/each}</ul>{/if}</li>
+      <li><a class:active={activeTarget === section.id} aria-current={activeTarget === section.id ? 'location' : undefined} href={sectionHref(section.views[0].id, section.id)}>{numbers.format(section.number)}. {section.title}</a>
+      {#if section.views.length > 1}<ul>{#each section.views as view}<li><a class:active={activeTarget === section.id && activeSoftwareView === view.id} href={sectionHref(view.id, section.id)}>{view.shortTitle}</a></li>{/each}</ul>{/if}</li>
     {/each}</ol>
   </details>
   <details class="toc-group" open>
-    <summary>یادداشت‌ها <span>{numbers.format(chapterArticles.length)}</span></summary>
+    <summary>{t('LlmGuidePage.1055')} <span>{numbers.format(chapterArticles.length)}</span></summary>
     <ol>{#each chapterArticles as article, index}
       <li><a class:active={activeChapter?.slug === article.slug} aria-current={activeTarget === article.slug ? 'location' : undefined} href={`#${article.slug}`} onclick={() => revealChapter(article.slug)}>{numbers.format(index + 1)}. {article.title}</a>
         {#if activeChapter?.slug === article.slug}<ul>{#each headingSections(article.headings ?? []) as heading}
@@ -282,6 +340,11 @@
 {/snippet}
 
 <style>
+  .benchmark-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:8px;font-size:12px}.copy-selection{font:inherit;border:0;background:transparent;color:var(--link-ink);padding:6px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}.copy-selection:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+  .guide-method{max-width:1280px;width:calc(100% - 32px);margin:20px auto 32px;padding-block:12px;border-block:1px solid var(--line);font-size:14px;line-height:1.9}.guide-method summary{cursor:pointer;color:var(--link-ink);font-weight:600}.guide-method p{max-width:90ch}.guide-method a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
+
+  .benchmark-section{scroll-margin-top:110px;margin-block:40px}.subview-tabs button{font:inherit;padding:10px 16px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--link-ink);cursor:pointer}.subview-tabs button.active{background:var(--soft);border-color:var(--teal)}
   .llm-guide{min-width:0}.breadcrumbs{display:flex;position:static;inset:auto;flex-direction:row;gap:8px;align-items:center;margin-inline:auto;padding:26px 0 0;border:0;background:transparent;color:var(--muted);font-size:11px}.breadcrumbs a{color:var(--link-ink)}.guide-layout{display:grid;grid-template-columns:188px minmax(0,1fr);gap:24px;width:calc(100% - 200px);max-width:none;margin-inline-start:12px;margin-inline-end:188px;padding-block:18px 80px;align-items:start}.guide-navigation{position:sticky;top:100px;min-width:0}.guide-navigation details{border-bottom:1px solid var(--line)}.guide-navigation summary{padding:11px 0;cursor:pointer;font-size:12px;font-weight:800}.guide-navigation nav{display:block;position:static;inset:auto;margin:0;padding:0;border:0;background:transparent;max-height:calc(100dvh - 210px);overflow:auto}.guide-navigation ol{list-style:none;margin:0;padding:0}.guide-navigation a{display:block;padding:8px 10px;border-inline-start:2px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7;white-space:normal}.guide-navigation a:hover,.guide-navigation a.active{border-color:var(--teal);color:var(--link-ink)}.guide-navigation .back-link{margin-top:13px;border:0;color:var(--link-ink)}.mobile-toc{display:none}.guide-main{min-width:0}
   .start{width:min(1280px,calc(100% - 48px));margin:32px auto 0;scroll-margin-top:110px}
   .start header small,.serving-section>header small{color:var(--link-ink);font-size:12px}

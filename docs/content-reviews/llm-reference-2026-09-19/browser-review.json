@@ -1,0 +1,112 @@
+{
+  "origin": "http://127.0.0.1:5195",
+  "results": [
+    {
+      "locale": "fa",
+      "initial": {
+        "direction": "rtl",
+        "language": "fa",
+        "groupCount": 8,
+        "rows": 8,
+        "noindex": "noindex,follow"
+      },
+      "metric": "nDCG@10 and Recall@100 separately; four models each",
+      "source": "E5 paper v1",
+      "newModelFilters": true,
+      "mlxFilter": true,
+      "modelLinks": true,
+      "comparisonLinks": {
+        "hash": "#reference-comparisons",
+        "group": "comparison:pteb-task-vs-overall"
+      },
+      "unknownLanguage": true,
+      "lfmAndGranite": true,
+      "mobile": {
+        "width": 390,
+        "scroll": 390
+      },
+      "draftGate": true
+    },
+    {
+      "locale": "en",
+      "initial": {
+        "direction": "ltr",
+        "language": "en",
+        "groupCount": 8,
+        "rows": 8,
+        "noindex": "noindex,follow"
+      },
+      "metric": "nDCG@10 and Recall@100 separately; four models each",
+      "source": "E5 paper v1",
+      "newModelFilters": true,
+      "mlxFilter": true,
+      "modelLinks": true,
+      "comparisonLinks": {
+        "hash": "#reference-comparisons",
+        "group": "comparison:e5-miracl-by-language"
+      },
+      "unknownLanguage": true,
+      "lfmAndGranite": true,
+      "mobile": {
+        "width": 390,
+        "scroll": 390
+      },
+      "draftGate": true
+    },
+    {
+      "locale": "es",
+      "initial": {
+        "direction": "ltr",
+        "language": "es",
+        "groupCount": 8,
+        "rows": 8,
+        "noindex": "noindex,follow"
+      },
+      "metric": "nDCG@10 and Recall@100 separately; four models each",
+      "source": "E5 paper v1",
+      "newModelFilters": true,
+      "mlxFilter": true,
+      "modelLinks": true,
+      "comparisonLinks": {
+        "hash": "#reference-comparisons",
+        "group": "comparison:e5-miracl-by-language"
+      },
+      "unknownLanguage": true,
+      "lfmAndGranite": true,
+      "mobile": {
+        "width": 390,
+        "scroll": 390
+      },
+      "draftGate": true
+    },
+    {
+      "article": "evaluating-llms-for-your-language-and-workload",
+      "characters": 18301,
+      "canonical": "https://ziabary.ir/en/articles/evaluating-llms-for-your-language-and-workload/",
+      "noindex": "noindex,follow",
+      "hreflang": []
+    },
+    {
+      "article": "evaluar-llm-idioma-y-tarea",
+      "characters": 19687,
+      "canonical": "https://ziabary.ir/es/articles/evaluar-llm-idioma-y-tarea/",
+      "noindex": "noindex,follow",
+      "hreflang": []
+    },
+    {
+      "article": "true-llm-cost-buy-rent-or-api-en",
+      "characters": 16413,
+      "canonical": "https://ziabary.ir/en/articles/true-llm-cost-buy-rent-or-api-en/",
+      "noindex": "noindex,follow",
+      "hreflang": []
+    },
+    {
+      "article": "true-llm-cost-buy-rent-or-api-es",
+      "characters": 16964,
+      "canonical": "https://ziabary.ir/es/articles/true-llm-cost-buy-rent-or-api-es/",
+      "noindex": "noindex,follow",
+      "hreflang": []
+    }
+  ],
+  "exceptions": []
+}

@@ -1,0 +1,5 @@
+
+> ziabary-platform@0.1.0 generate:llm
+> python3 scripts/generate-llm-dataset.py
+
+Generated 25 typed modules; run npm run verify:llm next.

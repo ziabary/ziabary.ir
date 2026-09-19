@@ -29,7 +29,18 @@ export async function loadLlmModules() {
     await fs.mkdir(path.dirname(target), { recursive:true }); await fs.writeFile(target,source);return target;
   }
   const modules = {};
-  for (const name of ['research','research-views','adapters','filtering','guide','views','comparison','presentation','brands']) modules[name] = await import(pathToFileURL(await compile(path.join(root,'src/lib/llm',name+'.ts'))));
+  for (const name of ['research','research-views','adapters','filtering','guide','views','comparison','presentation','brands','evaluation','selection','i18n/runtime','performance-policy','reference','evaluation-display']) modules[name] = await import(pathToFileURL(await compile(path.join(root,'src/lib/llm',name+'.ts'))));
+  // Existing Persian behavioral tests use the same explicit factory API as the browser.
+  const messages = JSON.parse(await fs.readFile(path.join(root,'data/llm/locales/messages.fa.json'),'utf8'));
+  const i18n = modules['i18n/runtime'].createLlmI18n('fa', messages);
+  modules['research'] = { ...modules['research'], ...modules['research'].createLlmResearch(i18n) };
+  modules['research-views'] = { ...modules['research-views'], ...modules['research-views'].createLlmResearchViews(i18n) };
+  modules['adapters'] = { ...modules['adapters'], ...modules['adapters'].createLlmAdapters(i18n) };
+  modules['filtering'] = { ...modules['filtering'], ...modules['filtering'].createLlmFiltering(i18n) };
+  modules['guide'] = { ...modules['guide'], ...modules['guide'].createLlmGuide(i18n) };
+  modules['views'] = { ...modules['views'], ...modules['views'].createLlmViews(i18n) };
+  modules['comparison'] = { ...modules['comparison'], ...modules['comparison'].createLlmComparison(i18n) };
+  modules['presentation'] = { ...modules['presentation'], ...modules['presentation'].createLlmPresentation(i18n) };
   await fs.rm(directory,{recursive:true,force:true});
   return modules;
 }

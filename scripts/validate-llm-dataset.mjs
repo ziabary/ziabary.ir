@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
+import { validateLlmReference } from './validate-llm-reference.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
@@ -51,7 +52,9 @@ function loadTs(file){
  new Function('require','module','exports',js)(localRequire,module,module.exports);return module.exports;
 }
 if(hasInstalledEntry&&JSON.stringify(loadTs(entry).llmDataset)!==JSON.stringify(data))throw new Error('Installed TypeScript data differs from canonical JSON');
-const adapters=loadTs(path.join(project,'src/lib/llm/adapters.ts'));
+const { createLlmI18n }=loadTs(path.join(project,'src/lib/llm/i18n/runtime.ts'));
+const i18n=createLlmI18n('fa',JSON.parse(fs.readFileSync(path.join(project,'data/llm/locales/messages.fa.json'),'utf8')));
+const adapters=loadTs(path.join(project,'src/lib/llm/adapters.ts')).createLlmAdapters(i18n);
 function supplemental(repository){
  const errors=[];const ids=new Map(Object.values(repository).flat().map(x=>[x.id,x]));
  for(const c of repository.claims){
@@ -75,6 +78,7 @@ function supplemental(repository){
   if(a.baseRevision!==m?.version)errors.push(a.id+' base revision differs from model snapshot');
  }
  for(const e of repository.evidence){
+  if(!Array.isArray(e.presentationNotes))errors.push(e.id+' missing explicit editorial evidence notes');
   if(!/^https:\/\//.test(e.url))errors.push(e.id+' non-HTTPS source URL');
   if(!e.locator?.trim())errors.push(e.id+' missing locator');
   if(e.accessedOn>manifest.asOf)errors.push(e.id+' future evidence date');
@@ -82,7 +86,7 @@ function supplemental(repository){
  return errors;
 }
 const adapterErrors=adapters.validateLlmRepository(data);
-const semanticErrors=supplemental(data);
+const semanticErrors=[...supplemental(data),...validateLlmReference(data)];
 if(adapterErrors.length||semanticErrors.length)throw new Error(JSON.stringify({adapterErrors,semanticErrors},null,2));
 const artifactFiles=JSON.parse(fs.readFileSync(path.join(legacyBundle,'research/artifact-files.json'),'utf8'));
 for(const f of artifactFiles){
@@ -101,7 +105,7 @@ for(const dependency of JSON.parse(fs.readFileSync(path.join(bundle,'research/re
  const actual=crypto.createHash('sha256').update(fs.readFileSync(path.join(project,dependency.path))).digest('hex');
  if(actual!==dependency.sha256)throw new Error('Research dependency changed; review and update the dependency manifest: '+dependency.path);
 }
-const research=loadTs(path.join(project,'src/lib/llm/research.ts'));
+const research=loadTs(path.join(project,'src/lib/llm/research.ts')).createLlmResearch(i18n);
 for (const artifact of research.research.artifacts) {
  validateArtifactManifest(artifact.files, artifact.id);
  if (artifact.files.reduce((sum, file) => sum + file.bytes, 0) !== artifact.weightFileBytes) throw new Error('Wrong planning byte sum ' + artifact.id);
@@ -120,6 +124,7 @@ for(const [key,list]of Object.entries(rows)){
 }
 const staged=JSON.parse(fs.readFileSync(path.join(legacyBundle,'research/official-quantized-candidates.json'),'utf8'));
 if(staged.some(x=>x.baseRevision!==null))throw new Error('Unexpected staged base revision');
-const report={testedOn:manifest.asOf,datasetVersion:manifest.version,typescriptVersion:ts.version,schemaSha256:schemaHash,scope:'Strict dataset types + repository validator + adapter row generation + semantic integrity, including the preserved v0.2 supplement. No GPU run, browser test or full SvelteKit build.',checks:{strictSchema:true,installedTypedModulesEqualJson:hasInstalledEntry,strictInstalledTypedModules:hasInstalledEntry,originalValidator:true,mergedValidator:true,dependencyHashes:true,claimValuesMatchFields:true,knownDatumsHaveEvidence:true,artifactByteSums:true,downloadByteSums:true,exactArtifactRevision:true,negativeReferenceControl:true,negativeClaimControl:true,adapterRows:true,stagingSeparated:true},counts:Object.fromEntries(Object.entries(data).map(([k,v])=>[k,v.length])),mergedCounts:Object.fromEntries(Object.entries(merged).map(([k,v])=>[k,v.length])),viewRows:Object.fromEntries(Object.entries(rows).map(([k,v])=>[k,v.length]))};
+const report={testedOn:new Date().toISOString().slice(0,10),dataAsOf:manifest.asOf,datasetVersion:manifest.version,typescriptVersion:ts.version,schemaSha256:schemaHash,scope:'Strict dataset types + repository validator + adapter row generation + semantic integrity, including the preserved v0.2 supplement. No GPU run, browser test or full SvelteKit build.',checks:{strictSchema:true,installedTypedModulesEqualJson:hasInstalledEntry,strictInstalledTypedModules:hasInstalledEntry,originalValidator:true,mergedValidator:true,dependencyHashes:true,claimValuesMatchFields:true,knownDatumsHaveEvidence:true,artifactByteSums:true,downloadByteSums:true,exactArtifactRevision:true,negativeReferenceControl:true,negativeClaimControl:true,adapterRows:true,stagingSeparated:true},counts:Object.fromEntries(Object.entries(data).map(([k,v])=>[k,v.length])),mergedCounts:Object.fromEntries(Object.entries(merged).map(([k,v])=>[k,v.length])),viewRows:Object.fromEntries(Object.entries(rows).map(([k,v])=>[k,v.length]))};
+if(args.includes('--update-manifest')) { manifest.baseModels=data.models.length; manifest.basePublishedEvaluations=data.publishedEvaluations.length; manifest.mergedPublishedEvaluations=merged.publishedEvaluations.length; fs.writeFileSync(path.join(bundle,'manifest.json'),JSON.stringify(manifest,null,2)+'\n'); }
 const output=arg('--report');if(output)fs.writeFileSync(path.resolve(output),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));

@@ -1,40 +1,54 @@
 <script lang="ts">
+  import { getLlmI18n } from '$lib/llm/i18n/context';
+  const i18n = getLlmI18n();
+  const { t, locale, direction, numberFormat } = i18n;
+
   import type { Component } from 'svelte';
   import type { ArticleMeta } from '$lib/content';
   import { imageAttributes } from '$lib/images';
   import { formatDate } from '$lib/publication.mjs';
+  import { llmBase, llmPath, llmCollection } from '$lib/llm/editions';
+  import { page } from '$app/stores';
+  import { draftReadingHref, hasLlmPreview } from '$lib/draft-preview.mjs';
+  import { allArticleMetadata } from '$lib/content';
   import ReadingShare from './ReadingShare.svelte';
   import '$lib/math.css';
   export let articles: ArticleMeta[];
   export let chapters: Record<string, Component<{ headingPrefix?: string }>>;
-  const numbers = new Intl.NumberFormat('fa-IR');
+  const numbers = new Intl.NumberFormat(numberFormat);
+  const draftSlugs = allArticleMetadata.filter(article => article.lang === locale && article.draft).map(article => article.slug);
+  function previewLinks(node: HTMLElement) {
+    for (const link of node.querySelectorAll<HTMLAnchorElement>('a[href]')) {
+      link.setAttribute('href', draftReadingHref(link.getAttribute('href') ?? '', draftSlugs, hasLlmPreview($page.url.searchParams)));
+    }
+  }
 </script>
 
 <section class="llm-chapters" id="llm-notes" aria-labelledby="llm-notes-title">
   <header class="notes-header">
-    <div><h2 id="llm-notes-title">یادداشت‌های راهنما</h2><p>انتخاب مدل، حافظه، نرم‌افزار اجرا و ارزیابی کیفیت.</p></div>
-    <a class="button ghost" href="#model-catalog">بازگشت به جدول‌ها ↑</a>
+    <div><h2 id="llm-notes-title">{t('LlmGuideChapters.1003')}</h2><p>{t('LlmGuideChapters.1004')}</p></div>
+    <a class="button ghost" href="#model-catalog">{t('LlmGuideChapters.1005')}</a>
   </header>
   {#each articles as article, index}
     {@const Content = chapters[article.slug]}
     <article class="llm-chapter" id={article.slug}>
       <details class="chapter-details">
         <summary>
-          <span class="chapter-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, '۰')}</span>
+          <span class="chapter-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, t('LlmGuideChapters.1006'))}</span>
           {#if article.cover}<img class="chapter-thumb" {...imageAttributes(article.cover, '120px')} alt="" loading="lazy" width="120" height="80" />{/if}
           <div class="chapter-summary">
-            <span class="chapter-meta"><time datetime={article.date}>{formatDate(article.date)}</time><span>{article.readTime}</span></span>
+            <span class="chapter-meta"><time datetime={article.date}>{formatDate(article.date, locale)}</time><span>{article.readTime}</span></span>
             <h3>{article.title}</h3><p>{article.excerpt}</p>
           </div>
           <span class="chapter-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 12h12M12 6v12" /></svg></span>
         </summary>
-        <div class="chapter-content">
+        <div class="chapter-content" use:previewLinks>
           <header class="chapter-intro">
             {#if article.cover}<img class="chapter-cover" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 64px)')} alt="" loading="lazy" />{/if}
             <h3 class="chapter-title">{article.title}</h3>
           </header>
-          {#if Content}<div class="prose guide-prose"><Content headingPrefix={`${article.slug}--`} /><ReadingShare cover={article.cover} title={article.title} excerpt={article.excerpt} href={`/guides/llm/?show-drafts=true#${article.slug}`} standaloneHref={`/articles/${article.slug}/`} /></div>{/if}
-          <a class="back-to-tables" href="#model-catalog">بازگشت به جدول‌های مقایسه ↑</a>
+          {#if Content}<div class="prose guide-prose"><Content headingPrefix={`${article.slug}--`} /><ReadingShare cover={article.cover} title={article.title} excerpt={article.excerpt} href={`${llmPath(locale)}${llmCollection(locale).status !== 'published' ? '?show-drafts=true' : ''}#${article.slug}`} standaloneHref={`${llmBase(locale)}/articles/${article.slug}/${article.draft ? '?show-drafts=true' : ''}`} {locale} /></div>{/if}
+          <a class="back-to-tables" href="#model-catalog">{t('LlmGuideChapters.1007')}</a>
         </div>
       </details>
     </article>

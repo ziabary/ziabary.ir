@@ -4,13 +4,11 @@ import type {
   LlmViewRow,
   ViewValue
 } from './views';
-
 export interface ComparisonDifference {
   dimension: string;
   label: string;
   values: Array<{ rowId: string; rowLabel: string; value: ViewValue | undefined }>;
 }
-
 export interface ComparisonEvaluation {
   mode: ComparisonMode;
   axisId?: string;
@@ -25,6 +23,11 @@ export interface ComparisonEvaluation {
   rankingAllowed: boolean;
   superiorityClaimAllowed: boolean;
 }
+import type { LlmI18n } from './i18n/runtime';
+
+/** Text and formatting are edition-scoped; no mutable global locale. */
+export function createLlmComparison(i18n: LlmI18n) {
+const { t, locale, numberFormat } = i18n;
 
 function valueKey(value: ViewValue | undefined) {
   if (!value || value.state === 'unknown' || value.state === 'not-measured') return undefined;
@@ -32,12 +35,10 @@ function valueKey(value: ViewValue | undefined) {
   const raw = value.canonicalNumber ?? value.raw ?? value.sortValue ?? value.display;
   return `${typeof raw}:${String(raw)}:${value.canonicalUnit ?? ''}`;
 }
-
 function unique(values: Array<string | undefined>) {
   return [...new Set(values.filter((value): value is string => value !== undefined))];
 }
-
-export function evaluateComparison(
+function evaluateComparison(
   rows: LlmViewRow[],
   policy: ComparisonPolicy,
   mode: ComparisonMode,
@@ -80,22 +81,25 @@ export function evaluateComparison(
   const rowNeedsData = rows.some((row) => row.comparison.calculation.status === 'needs-more-data');
 
   let calculationStatus: ComparisonEvaluation['calculationStatus'] = 'display-only';
-  let calculationReason = 'این حالت فقط مشخصات را کنار هم نشان می‌دهد و محاسبه، رتبه‌بندی یا ادعای برتری نمی‌سازد.';
-  if (mode === 'controlled-experiment' && !axis) {
+  let calculationReason = t('comparison.0911');
+  if (rows.length < 2) {
     calculationStatus = 'needs-more-data';
-    calculationReason = 'برای آزمایش کنترل‌شده باید محور مقایسه انتخاب شود.';
+    calculationReason = t('comparison.0912');
+  } else if (mode === 'controlled-experiment' && !axis) {
+    calculationStatus = 'needs-more-data';
+    calculationReason = t('comparison.0913');
   } else if (mode !== 'side-by-side') {
     if (rowInvalid || mismatchedSharedDimensions.length) {
       calculationStatus = 'invalid';
       calculationReason = rowInvalid
-        ? 'دست‌کم یک ردیف برای محاسبه نامعتبر علامت خورده است.'
-        : 'شرایطی که باید مشترک باشند یکسان نیستند؛ نمایش ممکن است اما محاسبه معتبر نیست.';
+        ? t('comparison.0914')
+        : t('comparison.0915');
     } else if (rowNeedsData || missingSharedDimensions.length || missingCalculationDimensions.length) {
       calculationStatus = 'needs-more-data';
-      calculationReason = 'برای محاسبهٔ معتبر، داده یا شرایط مشترک بیشتری لازم است.';
+      calculationReason = t('comparison.0916');
     } else {
       calculationStatus = 'valid';
-      calculationReason = 'شرایط ساختاری لازم ثبت شده‌اند؛ هر فرمول همچنان باید واحد، ورودی و شاهد خود را داشته باشد.';
+      calculationReason = t('comparison.0917');
     }
   }
 
@@ -110,8 +114,11 @@ export function evaluateComparison(
     limitations: unique(rows.flatMap((row) => row.comparison.limitations)),
     calculationStatus,
     calculationReason,
-    ratioAllowed: calculationAllowed,
-    rankingAllowed: calculationAllowed,
-    superiorityClaimAllowed: calculationAllowed
+    ratioAllowed: calculationAllowed && policy.numericMetric?.ratioScale === true,
+    rankingAllowed: calculationAllowed && policy.numericMetric !== undefined,
+    // No uncertainty estimates or statistical test are stored in this guide.
+    superiorityClaimAllowed: false
   };
+}
+return { evaluateComparison };
 }

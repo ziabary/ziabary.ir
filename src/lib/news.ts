@@ -12,6 +12,7 @@ export type MediaItem = {
 };
 
 export const mediaSources: Record<string, { logo: string }> = {
+  'روزنامه ایران': { logo: '/images/news-agencies/iran-newspaper.webp' },
   'شهرآرانیوز': { logo: '/images/news-agencies/shahrara.jpg' },
   'مرکز نوآوری قوه مقننه': { logo: '/images/news-agencies/lcih.jpg' },
   'هومص': { logo: '/images/organizations/hoomas-logo.png' },
@@ -37,6 +38,18 @@ export const mediaSources: Record<string, { logo: string }> = {
 // Reports, interviews and other coverage about or quoting Mehran. Authored
 // pieces live in article frontmatter and are merged into the media page there.
 export const mediaItems: MediaItem[] = [
+{
+  "title": "قانون هوش مصنوعی فرصتی برای الگوی تازه حکمرانی فناوری",
+  "source": "روزنامه ایران",
+  "kind": "یادداشت",
+  "summary": "مهران ضیابری در یادداشت روزنامه ایران، اجرای قانون ملی توسعه هوش مصنوعی را فرصتی برای اصلاح شیوه همکاری دستگاه‌ها می‌داند. او با اشاره به سخنان معاون اول رئیس‌جمهور، بر نقش هماهنگ‌کننده سازمان ملی تأکید می‌کند: حل اختلاف میان دستگاه‌ها و پیگیری نتیجه تصمیم‌ها، به‌جای ورود به تولید محصول و رقابت با شرکت‌ها. استفاده از ظرفیت نماینده ویژه رئیس‌جمهور برای تصمیم‌های مشخص، همراه با تعیین مسئول، مهلت و معیار ارزیابی، از پیشنهادهای یادداشت است.\n\nدر ادامه، تشکیل گروه‌های کوچک برای مأموریت‌های معین، مشارکت بخش خصوصی در تدوین برنامه‌ها و انتشار اطلاعات حمایت‌های مالی پیشنهاد می‌شود. ضیابری برای صد روز نخست اجرای قانون، انتشار تقسیم کار دستگاه‌ها و زمان‌بندی رفع موانع را مطالبه می‌کند؛ اقدامی که امکان پیگیری پیشرفت را برای فعالان این حوزه فراهم کند.",
+  "url": "https://irannewspaper.ir/9126/8/163637",
+  "date": "2026-09-19",
+  "faDate": "۲۸ شهریور ۱۴۰۵",
+  "coverImage": "/images/news/iran-163637.webp",
+  "coverImageAlt": "صفحه ۸ روزنامه ایران، شماره ۹۱۲۶، شامل یادداشت مهران ضیابری درباره قانون هوش مصنوعی؛ ۲۸ شهریور ۱۴۰۵",
+  "editorialNote": null
+},
 {
   "title": "برخورداری از قدرت اعمال مدیریت بر منابع، شرط موفقیت سازمان ملی هوش مصنوعی است",
   "source": "خبرگزاری آنا",

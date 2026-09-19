@@ -1,0 +1,4 @@
+Reviewed fa {"model-catalog":95,"model-suitability":95,"hardware-feasibility":56,"software-products":16,"specialized-models":24,"benchmarks":4,"deployment-compatibility":321} leaks 0
+Reviewed en {"model-catalog":95,"model-suitability":95,"hardware-feasibility":56,"software-products":16,"specialized-models":24,"benchmarks":4,"deployment-compatibility":321} leaks 0
+Reviewed es {"model-catalog":95,"model-suitability":95,"hardware-feasibility":56,"software-products":16,"specialized-models":24,"benchmarks":4,"deployment-compatibility":321} leaks 0
+PASS: three editions reviewed.

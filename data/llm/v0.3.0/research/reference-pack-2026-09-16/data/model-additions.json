@@ -1,0 +1,430 @@
+[
+  {
+    "id": "model:bsc-lt-salamandra-2b-instruct",
+    "repository": "BSC-LT/salamandra-2b-instruct",
+    "name": "salamandra-2b-instruct",
+    "publisher": "BSC-LT",
+    "kind": "generative-text",
+    "architecture": "dense-transformer",
+    "trainingStage": "post-trained",
+    "repositoryRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+    "facts": [
+      {
+        "field": "totalParameters",
+        "value": 2253490176,
+        "unit": "parameters",
+        "sourceId": "source:bsc-lt-salamandra-2b-instruct-json",
+        "locator": "safetensors.total",
+        "status": "repository-reported"
+      },
+      {
+        "field": "declaredContext",
+        "value": 8192,
+        "unit": "tokens",
+        "sourceId": "source:bsc-lt-salamandra-2b-instruct-readme-md",
+        "locator": "Model details / context length",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "config.max_position_embeddings",
+        "value": 8192,
+        "unit": "tokens",
+        "sourceId": "source:bsc-lt-salamandra-2b-instruct-config-json",
+        "locator": "max_position_embeddings",
+        "status": "configuration-value"
+      },
+      {
+        "field": "license.name",
+        "value": "Apache-2.0",
+        "sourceId": "source:bsc-lt-salamandra-2b-instruct-readme-md",
+        "locator": "frontmatter.license",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "declaredLanguages",
+        "value": [
+          "bg",
+          "ca",
+          "code",
+          "cs",
+          "cy",
+          "da",
+          "de",
+          "el",
+          "en",
+          "es",
+          "et",
+          "eu",
+          "fi",
+          "fr",
+          "ga",
+          "gl",
+          "hr",
+          "hu",
+          "it",
+          "lt",
+          "lv",
+          "mt",
+          "nl",
+          "nn",
+          "\\no",
+          "oc",
+          "pl",
+          "pt",
+          "ro",
+          "ru",
+          "sh",
+          "sk",
+          "sl",
+          "sr",
+          "sv",
+          "uk"
+        ],
+        "sourceId": "source:bsc-lt-salamandra-2b-instruct-readme-md",
+        "locator": "frontmatter.language",
+        "status": "publisher-declared"
+      }
+    ],
+    "profile": {
+      "fa": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 2B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+      "en": "An Iberian-language reference candidate with published Spanish task results. The 2B instruction model is a language-specific comparison point; these results do not establish a universal winner.",
+      "es": "Candidato de referencia para español y lenguas ibéricas, con resultados publicados por tarea. La variante 2B ajustada para instrucciones aporta una comparación lingüística; sus resultados no demuestran superioridad general."
+    },
+    "conflicts": [],
+    "runtimePolicy": "Publisher documentation is evidence of a documented route, not a deployment test by this site.",
+    "evaluatedWeightRevision": null,
+    "siteMeasuredMemoryBytes": null,
+    "siteMeasuredTokensPerSecond": null
+  },
+  {
+    "id": "model:bsc-lt-salamandra-7b-instruct",
+    "repository": "BSC-LT/salamandra-7b-instruct",
+    "name": "salamandra-7b-instruct",
+    "publisher": "BSC-LT",
+    "kind": "generative-text",
+    "architecture": "dense-transformer",
+    "trainingStage": "post-trained",
+    "repositoryRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+    "facts": [
+      {
+        "field": "totalParameters",
+        "value": 7768117248,
+        "unit": "parameters",
+        "sourceId": "source:bsc-lt-salamandra-7b-instruct-json",
+        "locator": "safetensors.total",
+        "status": "repository-reported"
+      },
+      {
+        "field": "declaredContext",
+        "value": 8192,
+        "unit": "tokens",
+        "sourceId": "source:bsc-lt-salamandra-7b-instruct-readme-md",
+        "locator": "Model details / context length",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "config.max_position_embeddings",
+        "value": 8192,
+        "unit": "tokens",
+        "sourceId": "source:bsc-lt-salamandra-7b-instruct-config-json",
+        "locator": "max_position_embeddings",
+        "status": "configuration-value"
+      },
+      {
+        "field": "license.name",
+        "value": "Apache-2.0",
+        "sourceId": "source:bsc-lt-salamandra-7b-instruct-readme-md",
+        "locator": "frontmatter.license",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "declaredLanguages",
+        "value": [
+          "bg",
+          "ca",
+          "code",
+          "cs",
+          "cy",
+          "da",
+          "de",
+          "el",
+          "en",
+          "es",
+          "et",
+          "eu",
+          "fi",
+          "fr",
+          "ga",
+          "gl",
+          "hr",
+          "hu",
+          "it",
+          "lt",
+          "lv",
+          "mt",
+          "nl",
+          "nn",
+          "\\no",
+          "oc",
+          "pl",
+          "pt",
+          "ro",
+          "ru",
+          "sh",
+          "sk",
+          "sl",
+          "sr",
+          "sv",
+          "uk"
+        ],
+        "sourceId": "source:bsc-lt-salamandra-7b-instruct-readme-md",
+        "locator": "frontmatter.language",
+        "status": "publisher-declared"
+      }
+    ],
+    "profile": {
+      "fa": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 7B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+      "en": "An Iberian-language reference candidate with published Spanish task results. The 7B instruction model is a language-specific comparison point; these results do not establish a universal winner.",
+      "es": "Candidato de referencia para español y lenguas ibéricas, con resultados publicados por tarea. La variante 7B ajustada para instrucciones aporta una comparación lingüística; sus resultados no demuestran superioridad general."
+    },
+    "conflicts": [],
+    "runtimePolicy": "Publisher documentation is evidence of a documented route, not a deployment test by this site.",
+    "evaluatedWeightRevision": null,
+    "siteMeasuredMemoryBytes": null,
+    "siteMeasuredTokensPerSecond": null
+  },
+  {
+    "id": "model:openbmb-minicpm5-2b",
+    "repository": "openbmb/MiniCPM5-2B",
+    "name": "MiniCPM5-2B",
+    "publisher": "openbmb",
+    "kind": "generative-text",
+    "architecture": "dense-transformer",
+    "trainingStage": "post-trained",
+    "repositoryRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+    "facts": [
+      {
+        "field": "totalParameters",
+        "value": 2516756480,
+        "unit": "parameters",
+        "sourceId": "source:openbmb-minicpm5-2b-json",
+        "locator": "safetensors.total",
+        "status": "repository-reported"
+      },
+      {
+        "field": "declaredContext",
+        "value": 131072,
+        "unit": "tokens",
+        "sourceId": "source:openbmb-minicpm5-2b-readme-md",
+        "locator": "Model details / context length",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "config.max_position_embeddings",
+        "value": 131072,
+        "unit": "tokens",
+        "sourceId": "source:openbmb-minicpm5-2b-config-json",
+        "locator": "max_position_embeddings",
+        "status": "configuration-value"
+      },
+      {
+        "field": "license.name",
+        "value": "Apache-2.0",
+        "sourceId": "source:openbmb-minicpm5-2b-readme-md",
+        "locator": "frontmatter.license",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "declaredLanguages",
+        "value": [
+          "en",
+          "zh"
+        ],
+        "sourceId": "source:openbmb-minicpm5-2b-readme-md",
+        "locator": "frontmatter.language",
+        "status": "publisher-declared"
+      }
+    ],
+    "profile": {
+      "fa": "مدل کوچکِ دستورپذیر برای بررسی در کارهای استدلال و ابزار؛ اندازهٔ واقعی ثبت‌شده حدود ۲٫۵۲ میلیارد پارامتر است. امتیازهای ناشر را از امتیازهای نقل‌شده از Artificial Analysis جدا کنید؛ شاهد فارسی یا اسپانیایی در این بسته ندارد.",
+      "en": "A compact candidate for reasoning and tool workflows, with about 2.52 billion parameters reported in repository metadata. Separate the developer’s evaluations from relayed Artificial Analysis scores. This package establishes no Spanish or Persian task quality.",
+      "es": "Candidato compacto para razonamiento y uso de herramientas, con unos 2,52 mil millones de parámetros según los metadatos. Hay que separar las evaluaciones del desarrollador de las cifras tomadas de Artificial Analysis. Este paquete no acredita calidad específica en español o persa."
+    },
+    "conflicts": [],
+    "runtimePolicy": "Publisher documentation is evidence of a documented route, not a deployment test by this site.",
+    "evaluatedWeightRevision": null,
+    "siteMeasuredMemoryBytes": null,
+    "siteMeasuredTokensPerSecond": null
+  },
+  {
+    "id": "model:liquidai-lfm2-5-1-2b-instruct",
+    "repository": "LiquidAI/LFM2.5-1.2B-Instruct",
+    "name": "LFM2.5-1.2B-Instruct",
+    "publisher": "LiquidAI",
+    "kind": "generative-text",
+    "architecture": "hybrid-convolution-attention",
+    "trainingStage": "post-trained",
+    "repositoryRevision": "0f604ada3f766f9f257460c4c9f0b5d6f69d431b",
+    "facts": [
+      {
+        "field": "totalParameters",
+        "value": 1170340608,
+        "unit": "parameters",
+        "sourceId": "source:liquidai-lfm2-5-1-2b-instruct-json",
+        "locator": "safetensors.total",
+        "status": "repository-reported"
+      },
+      {
+        "field": "declaredContext",
+        "value": 32768,
+        "unit": "tokens",
+        "sourceId": "source:liquidai-lfm2-5-1-2b-instruct-readme-md",
+        "locator": "Model details / context length",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "config.max_position_embeddings",
+        "value": 128000,
+        "unit": "tokens",
+        "sourceId": "source:liquidai-lfm2-5-1-2b-instruct-config-json",
+        "locator": "max_position_embeddings",
+        "status": "configuration-value"
+      },
+      {
+        "field": "license.name",
+        "value": "LFM Open License 1.0",
+        "sourceId": "source:liquidai-lfm2-5-1-2b-instruct-readme-md",
+        "locator": "frontmatter.license",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "declaredLanguages",
+        "value": [
+          "en",
+          "ar",
+          "zh",
+          "fr",
+          "de",
+          "ja",
+          "ko",
+          "es"
+        ],
+        "sourceId": "source:liquidai-lfm2-5-1-2b-instruct-readme-md",
+        "locator": "frontmatter.language",
+        "status": "publisher-declared"
+      }
+    ],
+    "profile": {
+      "fa": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی در این بسته نداریم. مجوز اختصاصی دارد.",
+      "en": "A compact candidate for extraction and bounded on-device tasks. The publisher advises against programming and knowledge-intensive use. Spanish is declared, but this package has no task-level Spanish quality score. It uses a custom license.",
+      "es": "Candidato compacto para extracción de datos y tareas acotadas en el dispositivo. El editor desaconseja usarlo para programación y tareas que requieren muchos conocimientos. Declara español, pero este paquete no aporta una puntuación específica de calidad en ese idioma. Tiene licencia propia."
+    },
+    "conflicts": [
+      {
+        "field": "context",
+        "publisherCard": 32768,
+        "configMaxPositionEmbeddings": 128000,
+        "sourceIds": [
+          "source:liquidai-lfm2-5-1-2b-instruct-readme-md",
+          "source:liquidai-lfm2-5-1-2b-instruct-config-json"
+        ],
+        "resolution": "Use 32768 as the declared limit; keep 128000 as a separate configuration fact. Do not advertise tested 128K quality."
+      }
+    ],
+    "runtimePolicy": "Publisher documentation is evidence of a documented route, not a deployment test by this site.",
+    "evaluatedWeightRevision": null,
+    "siteMeasuredMemoryBytes": null,
+    "siteMeasuredTokensPerSecond": null,
+    "licenseSourceId": "source:lfm-license-txt",
+    "commercialUse": {
+      "state": "conditional",
+      "sourceId": "source:lfm-license-txt",
+      "locator": "Sections 1 and 5",
+      "note": "Custom revenue-linked commercial-use limitation. Do not map to unrestricted commercial use or Apache/MIT."
+    }
+  },
+  {
+    "id": "model:ibm-granite-granite-4-2-3b",
+    "repository": "ibm-granite/granite-4.2-3b",
+    "name": "granite-4.2-3b",
+    "publisher": "ibm-granite",
+    "kind": "generative-text",
+    "architecture": "dense-transformer",
+    "trainingStage": "post-trained",
+    "repositoryRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+    "facts": [
+      {
+        "field": "totalParameters",
+        "value": 3659737600,
+        "unit": "parameters",
+        "sourceId": "source:ibm-granite-granite-4-2-3b-json",
+        "locator": "safetensors.total",
+        "status": "repository-reported"
+      },
+      {
+        "field": "declaredContext",
+        "value": 131072,
+        "unit": "tokens",
+        "sourceId": "source:ibm-granite-granite-4-2-3b-readme-md",
+        "locator": "Model details / context length",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "config.max_position_embeddings",
+        "value": 131072,
+        "unit": "tokens",
+        "sourceId": "source:ibm-granite-granite-4-2-3b-config-json",
+        "locator": "max_position_embeddings",
+        "status": "configuration-value"
+      },
+      {
+        "field": "license.name",
+        "value": "Apache-2.0",
+        "sourceId": "source:ibm-granite-granite-4-2-3b-readme-md",
+        "locator": "frontmatter.license",
+        "status": "publisher-declared"
+      },
+      {
+        "field": "declaredLanguages",
+        "value": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "ja",
+          "pt",
+          "ar",
+          "cs",
+          "it",
+          "ko",
+          "nl",
+          "zh"
+        ],
+        "sourceId": "source:ibm-granite-granite-4-2-3b-readme-md",
+        "locator": "frontmatter.language",
+        "status": "publisher-declared"
+      }
+    ],
+    "profile": {
+      "fa": "گونهٔ استدلالی Granite با حالت‌های thinking و non-thinking؛ برچسب 3B نام اندازه است و شمار ثبت‌شدهٔ پارامترها حدود ۳٫۶۶ میلیارد است. حد بومی ۱۲۸K را از ادعای گسترش تا ۵۱۲K جدا نگه دارید.",
+      "en": "A Granite reasoning model with thinking and non-thinking modes. The 3B label is a size name; repository metadata reports about 3.66 billion parameters. Keep the native 128K context separate from the claimed extension to 512K.",
+      "es": "Modelo de razonamiento Granite con modos thinking y non-thinking. La etiqueta 3B identifica la gama; los metadatos registran unos 3,66 mil millones de parámetros. Distinga el contexto nativo de 128K de la ampliación anunciada a 512K."
+    },
+    "conflicts": [
+      {
+        "field": "context",
+        "nativeTokens": 131072,
+        "publisherExtendedContextLabel": "512K",
+        "sourceIds": [
+          "source:ibm-granite-granite-4-2-3b-readme-md",
+          "source:ibm-granite-granite-4-2-3b-config-json"
+        ],
+        "resolution": "Config is 131072 with no rope_scaling. Do not set native or evaluated context to 512K."
+      }
+    ],
+    "runtimePolicy": "Publisher documentation is evidence of a documented route, not a deployment test by this site.",
+    "evaluatedWeightRevision": null,
+    "siteMeasuredMemoryBytes": null,
+    "siteMeasuredTokensPerSecond": null
+  }
+]

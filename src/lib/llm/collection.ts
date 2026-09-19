@@ -1,10 +1,11 @@
+import { llmEditionSlugs } from './edition-manifest';
 import type { GuideCollection } from '$lib/guides';
 
 export const llmGuideCollection: GuideCollection = {
   slug: 'llm',
   status: 'draft',
   featured: true,
-  articleCount: 10,
+  articleCount: llmEditionSlugs('fa').length,
   title: 'راهنمای انتخاب مدل زبانی بزرگ و کوچک',
   subtitle: 'اطلس جامع مدل‌های زبانی بزرگ و کوچک از کاربرد تا سخت‌افزار و کارایی؛  شامل مقایسهٔ مدل‌ها و ابزارهای اجرا.',
   eyebrow: 'مدل و استنتاج',
@@ -16,7 +17,7 @@ export const llmGuideCollection: GuideCollection = {
     { id: 'model-suitability', title: 'تناسب مدل با کاربرد', subtitle: '', kind: 'interactive', href: '#model-suitability' },
     { id: 'hardware-feasibility', title: 'امکان اجرا روی سخت‌افزار', subtitle: '', kind: 'interactive', href: '#hardware-feasibility' },
     { id: 'serving-software', title: 'نرم‌افزارهای اجرا و سرویس‌دهی', subtitle: '', kind: 'interactive', href: '#serving-software' },
-    { id: 'benchmarks', title: 'بنچمارک و شواهد', subtitle: '', kind: 'interactive', href: '#benchmarks' },
+    { id: 'benchmarks', title: 'نتایج آزمون‌ها', subtitle: '', kind: 'interactive', href: '#benchmarks' },
     { id: 'specialized-models', title: 'مدل‌های کوچک و تخصصی مکمل', subtitle: '', kind: 'interactive', href: '#specialized-models' }
   ]
 };

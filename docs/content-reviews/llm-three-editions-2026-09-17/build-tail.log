@@ -1,0 +1,30 @@
+.svelte-kit/output/server/chunks/records.en.js                                                87.91 kB
+.svelte-kit/output/server/chunks/messages.fa.js                                               93.40 kB
+.svelte-kit/output/server/chunks/gallery.js                                                   93.85 kB
+.svelte-kit/output/server/chunks/records.es.js                                                97.92 kB
+.svelte-kit/output/server/chunks/index.js                                                    101.99 kB
+.svelte-kit/output/server/index.js                                                           130.93 kB
+.svelte-kit/output/server/chunks/GuideOpening.js                                             131.23 kB
+.svelte-kit/output/server/chunks/content.js                                                  277.10 kB
+.svelte-kit/output/server/chunks/editions.js                                                 336.88 kB
+.svelte-kit/output/server/chunks/GuidePage.js                                                434.84 kB
+.svelte-kit/output/server/chunks/LlmPreview.js                                             7,434.43 kB
+✓ built in 13.43s
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+  ✔ done
+Generated sitemap.xml with 186 URLs.
+
+> ziabary-platform@0.1.0 verify:sitemap
+> node scripts/verify-sitemap.mjs
+
+Validated sitemap.xml against 186 indexable pages and robots.txt.
+Validated 218 JSON-LD blocks across 218 HTML pages.
+
+> ziabary-platform@0.1.0 verify:short-links
+> node scripts/verify-short-links.mjs
+
+Validated 221 short-link destinations, fragments and early browser redirects against published pages.

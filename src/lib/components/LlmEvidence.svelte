@@ -1,4 +1,8 @@
 <script lang="ts">
+  import { getLlmI18n } from '$lib/llm/i18n/context';
+  const i18n = getLlmI18n();
+  const { t, locale, direction, numberFormat } = i18n;
+
   import { evidenceNotes } from '$lib/llm/evidence-copy';
   import type { Evidence, EvidenceKind } from '$lib/llm/schema';
   export let ids: string[] = [];
@@ -6,13 +10,13 @@
   $: byId = new Map(evidence.map((source) => [source.id, source]));
   $: sources = [...new Set(ids)].map((id) => ({ id, source: byId.get(id as Evidence['id']) }));
   const kinds: Record<EvidenceKind, string> = {
-    'publisher-report': 'گزارش ناشر', 'third-party-report': 'گزارش شخص ثالث', 'documented-specification': 'مستندات فنی', 'direct-measurement': 'اندازه‌گیری مستقیم',
-    'calculated-from-specifications': 'محاسبه از مشخصات', 'editorial-analysis': 'تحلیل تحریریه',
-    'unknown-needs-review': 'نامعلوم؛ نیازمند بررسی'
+    'publisher-report': t('LlmEvidence.0981'), 'third-party-report': t('LlmEvidence.0982'), 'documented-specification': t('LlmEvidence.0983'), 'direct-measurement': t('LlmEvidence.0984'),
+    'calculated-from-specifications': t('LlmEvidence.0985'), 'editorial-analysis': t('LlmEvidence.0986'),
+    'unknown-needs-review': t('LlmEvidence.0987')
   };
 </script>
 
-<div class="evidence-list" aria-label="منابع">
+<div class="evidence-list" aria-label={t('LlmEvidence.0988')}>
   {#each sources as item (item.id)}
     {#if item.source}
       {@const source = item.source}
@@ -21,32 +25,33 @@
         <summary>{source.title} <span>· {kinds[source.kind]}</span></summary>
         <a class="source-url" href={source.url} target="_blank" rel="noopener noreferrer">{source.url} ↗</a>
         <dl>
-          {#if source.organization || source.authors?.length}<div><dt>ناشر / نویسنده</dt><dd>{[source.organization, ...(source.authors ?? [])].filter(Boolean).join('؛ ')}</dd></div>{/if}
-          <div><dt>تاریخ دسترسی</dt><dd>{source.accessedOn}</dd></div>
-          {#if source.publishedOn}<div><dt>تاریخ انتشار</dt><dd>{source.publishedOn}</dd></div>{/if}
-          {#if source.versionRevisionOrCommit}<div><dt>نسخه / commit</dt><dd dir="auto">{source.versionRevisionOrCommit}</dd></div>{/if}
-          {#if source.locator && source.locator !== 'مشخصات مخزن و فایل‌های نسخهٔ ارجاع‌شده'}<div><dt>بخش مرتبط در منبع</dt><dd dir="auto">{source.locator}</dd></div>{/if}
+          {#if source.organization || source.authors?.length}<div><dt>{t('LlmEvidence.0989')}</dt><dd>{[source.organization, ...(source.authors ?? [])].filter(Boolean).join(t('LlmEvidence.0990'))}</dd></div>{/if}
+          <div><dt>{t('LlmEvidence.0991')}</dt><dd>{source.accessedOn}</dd></div>
+          {#if source.publishedOn}<div><dt>{t('LlmEvidence.0992')}</dt><dd>{source.publishedOn}</dd></div>{/if}
+          {#if source.versionRevisionOrCommit}<div><dt>{t('LlmEvidence.0993')}</dt><dd dir="auto">{source.versionRevisionOrCommit}</dd></div>{/if}
+          {#if source.locator && source.locator !== t('LlmEvidence.0994')}<div><dt>{t('LlmEvidence.0995')}</dt><dd dir="auto">{source.locator}</dd></div>{/if}
+          {#if source.sourceCapture}<div><dt>SHA-256</dt><dd><code dir="ltr">{source.sourceCapture.contentSha256}</code></dd></div><div><dt>{ {fa:'زمان ثبت سند',en:'Document capture',es:'Captura del documento'}[locale]}</dt><dd><bdi>{source.sourceCapture.capturedAt}</bdi></dd></div>{/if}
         </dl>
         {#if notes.length}<ul class="source-notes">{#each notes as note}<li>{note}</li>{/each}</ul>{/if}
         {#if source.derivation}
           <div class="derivation">
-            <b>روش محاسبه: {source.derivation.method}</b>
+            <b>{t('LlmEvidence.0996')} {source.derivation.method}</b>
             <pre dir="ltr">{source.derivation.formulaOrProcedure}</pre>
             <ul>{#each source.derivation.inputs as input}
               {@const inputSource = byId.get(input.evidenceId)}
               <li><code dir="auto">{input.field}</code>: {input.value} {input.unit ?? ''} — <span dir="auto">{input.locator}</span>
-                {#if inputSource}<a href={inputSource.url} target="_blank" rel="noopener noreferrer">منبع ورودی ({input.evidenceId}) ↗</a>{:else}<span>منبع ورودی ثبت نشده: {input.evidenceId}</span>{/if}
+                {#if inputSource}<a href={inputSource.url} target="_blank" rel="noopener noreferrer">{t('LlmEvidence.0997')}{input.evidenceId}) ↗</a>{:else}<span>{t('LlmEvidence.0998')} {input.evidenceId}</span>{/if}
               </li>
             {/each}</ul>
-            {#if source.derivation.assumptions.length}<b>فرض‌ها</b><ul>{#each source.derivation.assumptions as assumption}<li>{assumption}</li>{/each}</ul>{/if}
-            <p>گردکردن: {source.derivation.rounding}</p>
+            {#if source.derivation.assumptions.length}<b>{t('LlmEvidence.0999')}</b><ul>{#each source.derivation.assumptions as assumption}<li>{assumption}</li>{/each}</ul>{/if}
+            <p>{t('LlmEvidence.1000')} {source.derivation.rounding}</p>
           </div>
         {/if}
       </details>
     {:else}
-      <p>شاهد ثبت نشده: <code>{item.id}</code></p>
+      <p>{t('LlmEvidence.1001')} <code>{item.id}</code></p>
     {/if}
-  {:else}<p>هنوز منبعی ثبت نشده است.</p>{/each}
+  {:else}<p>{t('LlmEvidence.1002')}</p>{/each}
 </div>
 
 <style>

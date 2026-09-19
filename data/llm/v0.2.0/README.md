@@ -1,5 +1,11 @@
 # Ziabary LLM research supplement v0.2.0
 
+**Historical import documentation.** The supplement has since been reviewed and
+edited. Its archived manifest/checksums and `validate.py` are not the current
+integration validator. Run `npm run verify:llm` from the project root; see
+[the current data contract](../README.md).
+
+
 Research snapshot: 2026-09-15. This package supplements the earlier model/software catalog. It is **not** a replacement for `repository.v1.json`, a site patch, or a publication request.
 
 Start with `llm-research-report.fa.md` for findings and `CODEX-IMPORT.fa.md` for implementation instructions. `manifest.json` lists record counts. Every empirical/specification record links to `data/sources.json` through `sourceIds`.

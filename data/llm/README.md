@@ -1,8 +1,8 @@
-# LLM research dataset
+# LLM data: current source of truth
 
-The imported snapshot lives in `v0.1.0/data/repository.v1.json`. It is the editable data source; `src/lib/llm/data/*.v1.ts` are generated typed modules.
-
-From the repository root:
+Edit `v0.3.0/repository.json`. `src/lib/llm/data/*.v1.ts` are generated;
+`v1` is a stable import name, not the dataset version. The guide also consumes
+`v0.2.0/data/*.json` plus `v0.3.0/planning-{artifacts,sources}.json`.
 
 ```sh
 npm run generate:llm
@@ -12,16 +12,80 @@ npm test
 npm run build
 ```
 
-The generator writes into the site's `src/lib/llm/data/`, and the validator compares those modules to the canonical JSON, checks strict schema compatibility, references, field claims and artifact byte sums. Record later enrichments in `research/four-tables-review.json`; the upstream manifest and CSV exports describe the original archive, not the enriched canonical data. Generation alone does not update these ancillary files.
+`repository.updatedOn` and `manifest.asOf` describe the last reviewed technical
+snapshot, not build time or the day a translation was written. Source access,
+source publication, model release and evaluation dates remain separate.
 
-`v0.1.0/docs/`, `research/`, `manifest.json`, `validation/` and `checksums.sha256.json` preserve upstream research/provenance. The supplied import instructions and original checksum manifest describe the original ZIP, not a fresh validation of later edits or the integrated repository. Use the root commands above for this repository. Current integration results and screenshots are under `docs/reviews/local-2026-09-15/`.
+The validator checks generated modules, types, reference resolution, evidence,
+claims, artifact bytes and reviewed supplement hashes. It validates the merged
+repository too. Its JSON report contains live counts; historical counts in
+import reports are snapshots, not quotas.
 
-Archive: `ziabary-llm-dataset-v0.1.0.zip`
-SHA-256: `db9427c8d28d0a1ffbeb58abfe3241fcc945bb2ab64d57d9ef0de01fd4fdba28`
-All 45 checksummed members of the archive matched before import. The schema, guide, adapter and view hashes also matched the package's expected inputs. The installer was reviewed and used with its hash guards intact.
+## Merge contract
 
-Only the typed repository is consumed by the draft guide. The four-table revision adds 37 `PublishedEvaluation` records: 30 DeepSeek-R1-Distill scores, three Qwen3 embedding task means, three Qwen3 reranker MTEB Code results, and one E5 MIRACL result. An exact tested-weight commit is optional for these named-model reports. Source-document commits and the catalog's weight snapshot never stand in for that missing commit. These reports have no deployment/artifact binding and do not populate `BenchmarkRun` or exact-execution comparisons.
+Models and technical IDs are shared across editions. Supplement artifacts merge
+only by model, distribution URL and exact file set. Quality results merge only
+when identity is established: model, benchmark/version, metric/unit/value,
+language scope, mode, reporter, source revision and relevant protocol must agree.
+Missing language or source revision cannot prove identity. Similar-looking scores
+are retained separately with provenance rather than silently removed. Source
+commits never stand in for evaluated-weight commits.
 
-The revision also restores 136 documented applications independently of their unmeasured outcomes, adds 55 sourced release dates (including month/year precision), nine specialized model specification blocks, and 13 software target scenarios. The software's release date remains distinct from its review date. Unknown logical parameter totals stay unknown when only a component or serialized-element count is available.
+The old `v0.2.0/manifest.json`, `checksums.json` and `validate.py` describe the
+original import plus its recorded initial removals; they are archival. They do
+not validate the edited supplement. `v0.3.0/research/required-existing-data.json`
+is the current reviewed dependency manifest checked by `npm run verify:llm`.
+The upstream package's original checksums are retained as historical evidence.
 
-Unverified quantized candidates and hypothetical memory calculations remain in research files. No measured hardware recommendation or generated article was added. The guide remains gated by the exact `show-drafts=true` parameter and excluded from the sitemap. The current review, column inventory, coverage measurements and screenshots are under `docs/reviews/local-2026-09-15/llm-four-tables/`.
+Interactive rental/cost data remains removed at the owner's request. The cost
+article is editorial content, not a reason to restore those tables.
+
+Archive provenance and prior review reports remain under each version's
+`research/` and `docs/content-reviews/`. Preview is not access control. Draft
+routes remain noindex and absent from the public sitemap.
+
+## Reference integration reviewed 2026-09-19
+
+The 2026-09-16 reference pack is archived, unchanged, under
+`v0.3.0/research/reference-pack-2026-09-16/`. It is an import input, not a second
+runtime repository. The canonical `v0.3.0/repository.json` owns model facts,
+published results and their original report observations, comparison policies,
+selection guidance, article inserts and the ParetoQ quality study. The archived
+baseline fingerprints are not restoration targets.
+
+Reproduce the integration in this order:
+
+```sh
+python3 data/llm/v0.3.0/research/reference-pack-2026-09-16/validate.py
+python3 scripts/import-llm-reference-pack.py
+npm run generate:llm
+python3 scripts/integrate-llm-reference-articles.py
+node scripts/validate-llm-dataset.mjs --update-manifest --report data/llm/v0.3.0/research/reference-import-validation.json
+python3 scripts/check-llm-reference-idempotency.py
+npm run check
+npm test
+npm run build
+```
+
+`reference-import-mapping.json` records preserved identities and reviewed
+same-experiment merges. `reference-editorial.json` contains the inline-linked
+versions of the eight article inserts; `reference-complete-article-merges.json`
+records the semantic integration of the four supplied localized articles into
+longer existing editions. The article integration script updates only explicitly
+marked sections at reviewed headings, and retains publication dates and manual
+related lists. `LlmReferenceGuidance` reads the same generated central guidance in
+articles and in the guide.
+
+A captured source revision/hash does not identify evaluated weights. Comparison
+partitions include language, metric, benchmark/version, unit and settings. Only a
+documented common report or shared retrieval protocol permits a within-report
+score difference; the imported groups never authorize a universal ranking or
+quality ratio. `inventoryStatus: not-recorded` identifies the five official
+repository links whose file inventories/byte sizes are not in this pack; it
+cannot carry measured file sizes or populate memory experiments.
+
+Local browser review: `LLM_REVIEW_ORIGIN=http://127.0.0.1:5195 node scripts/review-llm-reference.mjs`
+uses the dedicated CDP browser on port 9334 and stores review artifacts under
+`docs/content-reviews/llm-reference-2026-09-19/`. The collection and translated draft
+articles retain the `show-drafts=true` gate and noindex policy. This workflow does
+not deploy.

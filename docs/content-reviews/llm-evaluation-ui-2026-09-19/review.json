@@ -1,0 +1,20 @@
+[
+  {
+    "locale": "fa",
+    "title": "نتایج آزمون‌ها",
+    "rows": 9,
+    "performanceRows": 4
+  },
+  {
+    "locale": "en",
+    "title": "Evaluation results",
+    "rows": 5,
+    "performanceRows": 4
+  },
+  {
+    "locale": "es",
+    "title": "Resultados de evaluación",
+    "rows": 4,
+    "performanceRows": 4
+  }
+]

@@ -115,14 +115,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای aya-expanse-32b",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-32b",
       "conditions": [
         "نسخهٔ پژوهشی با مجوز غیرتجاری است؛ طول زمینه به معنی دقت یکسان در سراسر سند نیست."
       ],
       "evidenceIds": [
         "evidence:coherelabs-aya-expanse-32b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -196,14 +197,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای aya-expanse-8b",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/CohereLabs/aya-expanse-8b",
       "conditions": [
         "مجوز غیرتجاری و سقف زمینهٔ همین نسخه را رعایت کنید؛ نتایج نسخهٔ ۳۲میلیاردی به آن منتقل نمی‌شود."
       ],
       "evidenceIds": [
         "evidence:coherelabs-aya-expanse-8b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -277,14 +279,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای tiny-aya-global",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/CohereLabs/tiny-aya-global",
       "conditions": [
         "برای کاربرد فارسی نمونه‌های خود را ارزیابی کنید؛ نسخهٔ منطقه‌ای یا مدل پایه را جایگزین بی‌بررسی این checkpoint نکنید."
       ],
       "evidenceIds": [
         "evidence:coherelabs-tiny-aya-global-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -348,14 +351,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای SmolLM2-1.7B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
       "conditions": [
         "مدل عمدتاً انگلیسی است؛ اجرای تابع را برنامهٔ میزبان انجام می‌دهد و باید آرگومان‌ها را اعتبارسنجی کند."
       ],
       "evidenceIds": [
         "evidence:huggingfacetb-smollm2-1-7b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -401,14 +405,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای SmolLM2-135M-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
       "conditions": [
         "دامنهٔ کار را به متن کوتاه و وظیفهٔ محدود ببندید؛ از آن انتظار دانش گسترده یا ابزارخوانی نسخهٔ ۱٫۷میلیاردی نداشته باشید."
       ],
       "evidenceIds": [
         "evidence:huggingfacetb-smollm2-135m-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -496,19 +501,20 @@ modelProfiles.push({
   "distinguishingFeatures": [
     "SmolLM3 سه‌میلیاردی دو حالت پاسخ مستقیم و استدلال دارد؛ زمینهٔ آموزش ۶۵٬۵۳۶ توکن است و جزئیات آموزش منتشر شده‌اند."
   ],
-  "languageSummary": "زبان‌های اعلام‌شده: انگلیسی، فرانسوی، اسپانیایی، ایتالیایی، پرتغالی، چینی، عربی، روسی.",
+  "languageSummary": "برچسب‌های زبانی مخزن: انگلیسی، فرانسوی، اسپانیایی، ایتالیایی، پرتغالی، چینی، عربی و روسی.",
   "officialUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
   "runGuides": [
     {
       "label": "راهنمای اجرای SmolLM3-3B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
       "conditions": [
-        "برای زمینهٔ بلندتر تنظیم YaRN لازم است؛ شش زبان اعلام‌شده شامل فارسی نیستند. Transformers نسخهٔ ۴٫۵۳ یا بالاتر لازم است."
+        "برای زمینهٔ بلندتر تنظیم YaRN لازم است. متن کارت شش زبان بومی از جمله آلمانی را نام می‌برد، اما برچسب‌های مخزن هشت زبان متفاوت دارند؛ فارسی در هیچ‌یک نیست. Transformers نسخهٔ ۴٫۵۳ یا بالاتر لازم است."
       ],
       "evidenceIds": [
         "evidence:huggingfacetb-smollm3-3b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -572,14 +578,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-0.6B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-0.6B",
       "conditions": [
         "بودجهٔ خروجی را محدود کنید؛ توانایی حل مسئلهٔ نسخه‌های بزرگ‌تر از نام مشترک خانواده استنتاج نمی‌شود."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-0-6b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -654,14 +661,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-1.7B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-1.7B",
       "conditions": [
         "در حالت thinking، توکن‌های استدلال نیز جزو هزینه و طول خروجی‌اند؛ GGUF رسمی این رکورد Q8_0 است."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-1-7b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -736,14 +744,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-14B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-14B",
       "conditions": [
         "بسته‌های Q4_K_M و Q8_0 در دسترس‌اند؛ سرعت و کیفیت آن‌ها در این راهنما آزموده نشده است."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-14b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -818,14 +827,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-30B-A3B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
       "conditions": [
         "شمار پارامتر فعال، جای حجم کل وزن را در برآورد حافظه نمی‌گیرد؛ مدل باید با قالب پیام و parser سازگار اجرا شود."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-30b-a3b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -900,14 +910,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-32B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-32B",
       "conditions": [
         "برای مقایسهٔ پاسخ مستقیم و thinking، طول خروجی و شرایط یکسان نگه داشته شود؛ این معرفی رتبهٔ کیفیت نیست."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-32b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -982,14 +993,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-4B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-4B",
       "conditions": [
         "زمینهٔ بومی ۳۲٬۷۶۸ توکن است؛ افزایش آن به تنظیمات توسعهٔ زمینه وابسته است."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-4b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1564,14 +1576,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3-VL-8B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
       "conditions": [
         "از processor و قالب پیام چندوجهی استفاده کنید؛ checkpointهای Thinking و Instruct رفتار یکسان ندارند."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-vl-8b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1619,14 +1632,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3.5-2B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3.5-2B",
       "conditions": [
         "کیفیت نسخه‌های بزرگ‌تر خانواده به این مدل دوملیاردی تعمیم داده نمی‌شود."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-5-2b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1692,14 +1706,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3.5-35B-A3B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
       "conditions": [
         "سرویس میزبانی‌شدهٔ Qwen3.5-Flash با ابزارها و زمینهٔ پیش‌فرض متفاوت عرضه می‌شود؛ مشخصات API را به وزن محلی تعمیم ندهید."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-5-35b-a3b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1765,14 +1780,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3.5-4B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3.5-4B",
       "conditions": [
         "برای سند اسکن‌شده به مسیر چندوجهی نیاز دارید؛ سقف زمینهٔ متنی، تعداد تصاویر قابل پردازش را تعیین نمی‌کند."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-5-4b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1838,14 +1854,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3.5-9B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3.5-9B",
       "conditions": [
         "مقایسه با 4B باید بر دادهٔ سند یکسان و تنظیم تصویر یکسان باشد؛ شمار پارامترهای بخش زبان و بینایی را جدا بخوانید."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-5-9b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1910,14 +1927,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Qwen3.8-27B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "conditions": [
         "قابلیت‌های وعده‌داده‌شدهٔ سرویس ابری، مانند ابزارهای داخلی و زمینهٔ پیش‌فرض، جزء تضمین وزن محلی نیستند."
       ],
       "evidenceIds": [
         "evidence:qwen-qwen3-8-27b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -1983,14 +2001,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Olmo-3-7B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
       "conditions": [
         "این checkpoint از نوع Instruct است؛ نتایج Olmo Think را به آن نسبت ندهید. Transformers نسخهٔ ۴٫۵۷ یا بالاتر لازم است."
       ],
       "evidenceIds": [
         "evidence:allenai-olmo-3-7b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2036,14 +2055,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-R1-0528-Qwen3-8B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
       "conditions": [
         "بنچمارک‌های مدل کامل R1-0528 متعلق به این نسخهٔ هشت‌میلیاردی نیستند."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "دریافت و اجرای بستهٔ Ollama",
@@ -2080,14 +2100,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-R1-Distill-Llama-70B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
       "conditions": [
         "مجوز پایهٔ Llama و شروط ناشر تقطیر هر دو مهم‌اند؛ حجم وزن و طول زنجیرهٔ فکر را جداگانه برآورد کنید."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با vLLM",
@@ -2142,14 +2163,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-R1-Distill-Qwen-1.5B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
       "conditions": [
         "پاسخ‌های طولانی ممکن است وارد تکرار شوند."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با vLLM",
@@ -2204,14 +2226,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-R1-Distill-Qwen-14B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
       "conditions": [
         "اعداد گزارش‌شده فقط برای همین نسخه و تنظیمات آزمون معتبرند؛ از مقایسهٔ نامتجانس با پاسخ مستقیم پرهیز کنید."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با vLLM",
@@ -2266,14 +2289,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-R1-Distill-Qwen-32B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
       "conditions": [
         "توان استدلال اعلام‌شده، ابزارخوانی یا اجرای کد خودکار نیست؛ ابزار و اعتبارسنجی جواب باید در برنامه فراهم شود."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با vLLM",
@@ -2328,14 +2352,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-R1-Distill-Qwen-7B",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
       "conditions": [
         "قالب و tokenizer همین مخزن را نگه دارید؛ مقایسه با نسخهٔ هشت‌میلیاردی نیازمند آزمون مشترک است."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با vLLM",
@@ -2390,14 +2415,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-V3.2",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
       "conditions": [
         "از قالب و مسیر اجرای مخصوص V3.2 استفاده کنید؛ نتایج نسخهٔ Speciale در پروندهٔ این مدل قابل انتقال نیستند."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-v3-2-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     }
   ],
   "evidenceIds": [
@@ -2423,14 +2449,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای DeepSeek-V4.1-Flash",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
       "conditions": [
         "پارامتر فعال را یک عدد ثابت فرض نکنید؛ فشرده‌سازی KV و مسیر اجرای ویژه، بخشی از معماری این نسخه‌اند."
       ],
       "evidenceIds": [
         "evidence:deepseek-ai-deepseek-v4-1-flash-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     }
   ],
   "evidenceIds": [
@@ -2458,14 +2485,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gemma-3-12b-it",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/google/gemma-3-12b-it",
       "conditions": [
         "Processor بینایی و قالب Gemma 3 لازم است؛ حداکثر زمینه به معنی کیفیت ثابت فهم سند بلند نیست."
       ],
       "evidenceIds": [
         "evidence:google-gemma-3-12b-it-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2539,14 +2567,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gemma-3-1b-it",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/google/gemma-3-1b-it",
       "conditions": [
         "برای تصویر اسکن‌شده ابتدا OCR بیرونی لازم است؛ ویژگی چندوجهی 4B و بالاتر را به این نسخه تعمیم ندهید."
       ],
       "evidenceIds": [
         "evidence:google-gemma-3-1b-it-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2620,14 +2649,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gemma-3-27b-it",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/google/gemma-3-27b-it",
       "conditions": [
         "دریافت وزن‌ها نیازمند پذیرش مجوز Gemma است."
       ],
       "evidenceIds": [
         "evidence:google-gemma-3-27b-it-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2701,14 +2731,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gemma-3-4b-it",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/google/gemma-3-4b-it",
       "conditions": [
         "وزن و processor نسخهٔ 4B را با هم دریافت کنید؛ متن خروجی را برای استخراج دقیق اعداد سند اعتبارسنجی کنید."
       ],
       "evidenceIds": [
         "evidence:google-gemma-3-4b-it-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2782,14 +2813,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gemma-4-26B-A4B-it",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/google/gemma-4-26B-A4B-it",
       "conditions": [
         "این نسخه ورودی صوت ندارد؛ شمار پارامتر فعال با کل وزن‌های مدل متفاوت است."
       ],
       "evidenceIds": [
         "evidence:google-gemma-4-26b-a4b-it-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2846,14 +2878,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gemma-4-E2B-it",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/google/gemma-4-E2B-it",
       "conditions": [
         "در محاسبهٔ حافظه از شمار کل و فایل واقعی استفاده کنید؛ مسیر صوت و تصویر به processor متناظر نیاز دارد."
       ],
       "evidenceIds": [
         "evidence:google-gemma-4-e2b-it-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -2910,14 +2943,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای granite-3.3-2b-instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
       "conditions": [
         "سند باید توسط سامانه بازیابی و در پیام درج شود؛ خود مدل جای موتور جست‌وجو نیست و فارسی جزو ۱۲ زبان اعلام‌شده نیست."
       ],
       "evidenceIds": [
         "evidence:ibm-granite-granite-3-3-2b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3014,14 +3048,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Llama-3.1-70B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
       "conditions": [
         "ورودی این نسخه متن است و استفاده از وزن‌ها تابع مجوز Llama است."
       ],
       "evidenceIds": [
         "evidence:meta-llama-llama-3-1-70b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3095,14 +3130,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Llama-3.1-8B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
       "conditions": [
         "قالب پیام و tokenizer نسخهٔ Instruct را حفظ کنید؛ زمینهٔ بلند، کیفیت جواب از سند را تضمین نمی‌کند."
       ],
       "evidenceIds": [
         "evidence:meta-llama-llama-3-1-8b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3176,14 +3212,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Llama-3.2-1B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
       "conditions": [
         "تصویر را مستقیماً نمی‌گیرد؛ مدل‌های Vision خانوادهٔ Llama 3.2 محصول جداگانه‌اند."
       ],
       "evidenceIds": [
         "evidence:meta-llama-llama-3-2-1b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3257,14 +3294,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Llama-3.2-3B-Instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
       "conditions": [
         "تفاوت کیفیت و زمان را روی کار خود بسنجید؛ هیچ‌یک از دو مدل متنی 1B و 3B ورودی تصویر ندارند."
       ],
       "evidenceIds": [
         "evidence:meta-llama-llama-3-2-3b-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3338,14 +3376,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Phi-4-mini-instruct",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
       "conditions": [
         "این نسخه با mini-reasoning و multimodal-instruct متفاوت است؛ نمونه‌های ریاضی یا منطق را با نام دقیق همین نسخه مقایسه کنید."
       ],
       "evidenceIds": [
         "evidence:microsoft-phi-4-mini-instruct-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3402,14 +3441,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Devstral-Small-2-24B-Instruct-2512",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
       "conditions": [
         "وزن Instruct این مخزن FP8 است؛ قالب Mistral و وابستگی‌های اجرای همین نسخه را رعایت کنید، نه تنظیمات عمومی یک مدل چت."
       ],
       "evidenceIds": [
         "evidence:mistralai-devstral-small-2-24b-instruct-2512-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3484,14 +3524,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Ministral-3-3B-Instruct-2512",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
       "conditions": [
         "وزن رسمی FP8 است؛ عدد 3B در نام مدل، همهٔ پارامترهای بخش زبان و بینایی را نمی‌شمارد."
       ],
       "evidenceIds": [
         "evidence:mistralai-ministral-3-3b-instruct-2512-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3547,14 +3588,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Mistral-7B-Instruct-v0.3",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
       "conditions": [
         "قالب ابزار و tokenizer v3 باید همراه checkpoint باشند؛ ورودی تصویر در این نسخه وجود ندارد."
       ],
       "evidenceIds": [
         "evidence:mistralai-mistral-7b-instruct-v0-3-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3602,14 +3644,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای Mistral-Small-3.1-24B-Instruct-2503",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
       "conditions": [
         "برای ابزار و خروجی JSON، قالب و parser متناظر لازم است؛ اعداد مدل Base را با Instruct ترکیب نکنید."
       ],
       "evidenceIds": [
         "evidence:mistralai-mistral-small-3-1-24b-instruct-2503-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با vLLM",
@@ -3657,14 +3700,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای NVIDIA-Nemotron-Nano-9B-v2",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
       "conditions": [
         "سندهای بازیابی‌شده باید از بیرون وارد شوند؛ شش زبان اعلام‌شده شامل فارسی نیستند و backend باید معماری ترکیبی را پشتیبانی کند."
       ],
       "evidenceIds": [
         "evidence:nvidia-nvidia-nemotron-nano-9b-v2-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3709,14 +3753,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gpt-oss-120b",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/openai/gpt-oss-120b",
       "conditions": [
         "قالب harmony برای اجرای درست لازم است؛ ابزار مرورگر یا Python را برنامهٔ میزبان فراهم می‌کند و حافظهٔ ادعایی ناشر آزمون این سایت نیست."
       ],
       "evidenceIds": [
         "evidence:openai-gpt-oss-120b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3780,14 +3825,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای gpt-oss-20b",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/openai/gpt-oss-20b",
       "conditions": [
         "قالب harmony و backend سازگار با MXFP4 لازم‌اند؛ نام 20B را جای شمار واقعی وزن‌ها در محاسبات نگذارید."
       ],
       "evidenceIds": [
         "evidence:openai-gpt-oss-20b-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -3852,14 +3898,15 @@ modelProfiles.push({
   "runGuides": [
     {
       "label": "راهنمای اجرای GLM-4.7-Flash",
-      "engine": "مسیر اجرای ناشر",
+      "engine": "publisher",
       "href": "https://huggingface.co/zai-org/GLM-4.7-Flash",
       "conditions": [
         "مسیرهای vLLM و SGLang به نسخه‌های توسعه‌ای مشخص وابسته‌اند."
       ],
       "evidenceIds": [
         "evidence:zai-org-glm-4-7-flash-card"
-      ]
+      ],
+      "engineLabel": "مسیر اجرای ناشر"
     },
     {
       "label": "راه‌اندازی با Transformers",
@@ -5502,5 +5549,136 @@ modelProfiles.push({
   ],
   "evidenceIds": [
     "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:bsc-lt-salamandra-2b-instruct",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "introduction": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 2B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+  "roleSummary": "تولید متن به زبان‌های ایبری",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/BSC-LT/salamandra-2b-instruct",
+  "runGuides": [
+    {
+      "label": "دستور اجرای ناشر",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/BSC-LT/salamandra-2b-instruct",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:bsc-lt-salamandra-7b-instruct",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "introduction": "گزینهٔ تخصصی‌تر برای زبان اسپانیایی و زبان‌های ایبری؛ گونهٔ 7B دستورپذیر با نتایج منتشرشدهٔ اسپانیایی. نقطهٔ مرجع زبانی است، نه برندهٔ عمومی یا گزینهٔ اثبات‌شده برای فارسی.",
+  "roleSummary": "تولید متن به زبان‌های ایبری",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+  "runGuides": [
+    {
+      "label": "دستور اجرای ناشر",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-22881108b0"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:openbmb-minicpm5-2b",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "introduction": "مدل کوچکِ دستورپذیر برای بررسی در کارهای استدلال و ابزار؛ اندازهٔ واقعی ثبت‌شده حدود ۲٫۵۲ میلیارد پارامتر است. امتیازهای ناشر را از امتیازهای نقل‌شده از Artificial Analysis جدا کنید؛ شاهد فارسی یا اسپانیایی در این بسته ندارد.",
+  "roleSummary": "استدلال با مدل کوچک",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/openbmb/MiniCPM5-2B",
+  "runGuides": [
+    {
+      "label": "دستور اجرای ناشر",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-json-ec00591718",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0",
+    "evidence:reference-openbmb-minicpm5-2b-config-json-47e785ca3a",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:liquidai-lfm2-5-1-2b-instruct",
+  "modelVersionId": "model:liquidai-lfm2-5-1-2b-instruct",
+  "introduction": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی در این بسته نداریم. مجوز اختصاصی دارد.",
+  "roleSummary": "استخراج اطلاعات روی دستگاه",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+  "runGuides": [
+    {
+      "label": "دستور اجرای ناشر",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc",
+    "evidence:reference-lfm-license-txt-e8003a05ee"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ibm-granite-granite-4-2-3b",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "introduction": "گونهٔ استدلالی Granite با حالت‌های thinking و non-thinking؛ برچسب 3B نام اندازه است و شمار ثبت‌شدهٔ پارامترها حدود ۳٫۶۶ میلیارد است. حد بومی ۱۲۸K را از ادعای گسترش تا ۵۱۲K جدا نگه دارید.",
+  "roleSummary": "استدلال با مدل کوچک",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+  "runGuides": [
+    {
+      "label": "دستور اجرای ناشر",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-22881108b0"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-json-ec00591718",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-22881108b0",
+    "evidence:reference-ibm-granite-granite-4-2-3b-config-json-47e785ca3a",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
   ]
 });

@@ -21897,3 +21897,103 @@ artifactListings.push({
     "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:reference-bsc-lt-salamandra-2b-instruct",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "baseModelRepository": "BSC-LT/salamandra-2b-instruct",
+  "baseRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "publisher": "BSC-LT",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "salamandra-2b-instruct",
+  "repositoryUrl": "https://huggingface.co/BSC-LT/salamandra-2b-instruct",
+  "filesUrl": "https://huggingface.co/BSC-LT/salamandra-2b-instruct/tree/66b2be1e98fca5764696c1538f240a78f4b15433",
+  "repositoryRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "حجم فایل‌ها در این بررسی ثبت نشده است.",
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:reference-bsc-lt-salamandra-7b-instruct",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "baseModelRepository": "BSC-LT/salamandra-7b-instruct",
+  "baseRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "publisher": "BSC-LT",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "salamandra-7b-instruct",
+  "repositoryUrl": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+  "filesUrl": "https://huggingface.co/BSC-LT/salamandra-7b-instruct/tree/a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "repositoryRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "حجم فایل‌ها در این بررسی ثبت نشده است.",
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-json-ec00591718"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:reference-openbmb-minicpm5-2b",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "baseModelRepository": "openbmb/MiniCPM5-2B",
+  "baseRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "publisher": "openbmb",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "MiniCPM5-2B",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM5-2B",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM5-2B/tree/12a3808a956f869c767195e9266b59c4d21d92e2",
+  "repositoryRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "حجم فایل‌ها در این بررسی ثبت نشده است.",
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-json-ec00591718"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:reference-liquidai-lfm2-5-1-2b-instruct",
+  "modelVersionId": "model:liquidai-lfm2-5-1-2b-instruct",
+  "baseModelRepository": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "baseRevision": "0f604ada3f766f9f257460c4c9f0b5d6f69d431b",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "LFM2.5-1.2B-Instruct",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/tree/0f604ada3f766f9f257460c4c9f0b5d6f69d431b",
+  "repositoryRevision": "0f604ada3f766f9f257460c4c9f0b5d6f69d431b",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "حجم فایل‌ها در این بررسی ثبت نشده است.",
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:reference-ibm-granite-granite-4-2-3b",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "baseModelRepository": "ibm-granite/granite-4.2-3b",
+  "baseRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "publisher": "ibm-granite",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "granite-4.2-3b",
+  "repositoryUrl": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+  "filesUrl": "https://huggingface.co/ibm-granite/granite-4.2-3b/tree/e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "repositoryRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "حجم فایل‌ها در این بررسی ثبت نشده است.",
+  "verifiedOn": "2026-09-16",
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-json-ec00591718"
+  ]
+});

@@ -1,0 +1,35 @@
+[
+  {
+    "brand": "salamandra",
+    "publisher": "BSC-LT",
+    "profileUrl": "https://huggingface.co/BSC-LT",
+    "metadataUrl": "https://huggingface.co/api/organizations/BSC-LT/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60538e733efc404ddc7c0c0d/KNnLPW5-_JjQfFwARMmPX.png",
+    "localPath": "/images/llm/brands/salamandra.webp",
+    "sha256": "2e4cc41083108f54acbf9cb156adf4e9eb21fb6b0605ea2de445465bada5c24e",
+    "bytes": 19322,
+    "accessedOn": "2026-09-19"
+  },
+  {
+    "brand": "minicpm",
+    "publisher": "openbmb",
+    "profileUrl": "https://huggingface.co/openbmb",
+    "metadataUrl": "https://huggingface.co/api/organizations/openbmb/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670387859384-633fe7784b362488336bbfad.png",
+    "localPath": "/images/llm/brands/minicpm.webp",
+    "sha256": "a257190d2fed9b0a28adba8b86875103ede662974a7c9ef8beb89c6f622e2596",
+    "bytes": 1426,
+    "accessedOn": "2026-09-19"
+  },
+  {
+    "brand": "lfm",
+    "publisher": "LiquidAI",
+    "profileUrl": "https://huggingface.co/LiquidAI",
+    "metadataUrl": "https://huggingface.co/api/organizations/LiquidAI/overview",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61b8e2ba285851687028d395/EsTgVtnM2IqVRKgPdfqcB.png",
+    "localPath": "/images/llm/brands/lfm.webp",
+    "sha256": "47560632f45a20a45c6fcc6d7a8bafb6cb0ee17c2df576baa49f30430aca26d9",
+    "bytes": 6670,
+    "accessedOn": "2026-09-19"
+  }
+]

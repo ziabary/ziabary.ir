@@ -81,7 +81,7 @@ En el caso de vLLM, la comprobación inicial de compatibilidad puede superarse a
 
 El estudio también trata la desactivación de un kernel CUTLASS mediante `VLLM_DISABLED_KERNELS` y el examen de una alternativa Triton. Ese mecanismo se probó en Ada, sin una medición de rendimiento en B300. La existencia de una alternativa no basta para recomendarla en un despliegue B300.
 
-Las versiones del controlador, las bibliotecas y el motor de ejecución deben acompañar a los resultados. Las implicaciones de mantenimiento y seguridad de esta cadena se explican en [La seguridad de la infraestructura de IA empieza por el núcleo y la GPU (en persa)](/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/).
+Las versiones del controlador, las bibliotecas y el motor de ejecución deben acompañar a los resultados. Las implicaciones de mantenimiento y seguridad de esta cadena se explican en [La seguridad de la infraestructura de IA empieza por el núcleo y la GPU](/es/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-es/).
 
 ### Las tasas máximas no determinan el tiempo de respuesta
 

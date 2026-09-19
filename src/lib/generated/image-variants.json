@@ -1696,6 +1696,38 @@
       }
     ]
   },
+  "/images/articles/evaluating-llms-for-your-language-and-workload/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 82140,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b2acd17a6a67289a-320.webp",
+        "bytes": 8038
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b2acd17a6a67289a-640.webp",
+        "bytes": 19910
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b2acd17a6a67289a-960.webp",
+        "bytes": 33242
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/b2acd17a6a67289a-1440.webp",
+        "bytes": 54872
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/b2acd17a6a67289a-1672.webp",
+        "bytes": 66550
+      }
+    ]
+  },
   "/images/articles/four-bit-model-quantization/cover.png": {
     "width": 1672,
     "height": 941,
@@ -2071,6 +2103,70 @@
         "width": 829,
         "src": "/images/responsive/5f847b3e46413eca-829.webp",
         "bytes": 18678
+      }
+    ]
+  },
+  "/images/articles/gpu-confidential-computing-overhead/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2629565,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/657c99b40eddb5d5-320.webp",
+        "bytes": 16332
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/657c99b40eddb5d5-640.webp",
+        "bytes": 49392
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/657c99b40eddb5d5-960.webp",
+        "bytes": 90798
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/657c99b40eddb5d5-1440.webp",
+        "bytes": 157102
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/657c99b40eddb5d5-1672.webp",
+        "bytes": 191806
+      }
+    ]
+  },
+  "/images/articles/gpu-confidential-computing-overhead/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 260332,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b7738a737e7bcd41-320.webp",
+        "bytes": 16210
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b7738a737e7bcd41-640.webp",
+        "bytes": 48228
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b7738a737e7bcd41-960.webp",
+        "bytes": 88524
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/b7738a737e7bcd41-1440.webp",
+        "bytes": 150454
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/b7738a737e7bcd41-1672.webp",
+        "bytes": 192096
       }
     ]
   },
@@ -4377,6 +4473,70 @@
         "width": 1672,
         "src": "/images/responsive/bb516eaaf532c4b2-1672.webp",
         "bytes": 145092
+      }
+    ]
+  },
+  "/images/articles/ztai-autonomous-agents-bounded-authority/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1547599,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/0c1440b7283c18a7-320.webp",
+        "bytes": 7438
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/0c1440b7283c18a7-640.webp",
+        "bytes": 19100
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/0c1440b7283c18a7-960.webp",
+        "bytes": 33082
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/0c1440b7283c18a7-1440.webp",
+        "bytes": 54726
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/0c1440b7283c18a7-1672.webp",
+        "bytes": 66896
+      }
+    ]
+  },
+  "/images/articles/ztai-autonomous-agents-bounded-authority/cover.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 92594,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/2fb866562399b025-320.webp",
+        "bytes": 7454
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/2fb866562399b025-640.webp",
+        "bytes": 18608
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/2fb866562399b025-960.webp",
+        "bytes": 32050
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/2fb866562399b025-1440.webp",
+        "bytes": 52150
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/2fb866562399b025-1672.webp",
+        "bytes": 67048
       }
     ]
   },
@@ -9260,6 +9420,70 @@
       }
     ]
   },
+  "/images/gallery/vision-2026-cover.webp": {
+    "width": 1600,
+    "height": 1067,
+    "originalBytes": 101248,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/c6766dec70a092c4-320.webp",
+        "bytes": 15322
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/c6766dec70a092c4-640.webp",
+        "bytes": 37782
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/c6766dec70a092c4-960.webp",
+        "bytes": 60768
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/c6766dec70a092c4-1440.webp",
+        "bytes": 97944
+      },
+      {
+        "width": 1600,
+        "src": "/images/responsive/c6766dec70a092c4-1600.webp",
+        "bytes": 105632
+      }
+    ]
+  },
+  "/images/gallery/vision-2026.webp": {
+    "width": 1600,
+    "height": 1067,
+    "originalBytes": 54488,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/78d0e145045a5940-320.webp",
+        "bytes": 7736
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/78d0e145045a5940-640.webp",
+        "bytes": 18670
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/78d0e145045a5940-960.webp",
+        "bytes": 30542
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/78d0e145045a5940-1440.webp",
+        "bytes": 50460
+      },
+      {
+        "width": 1600,
+        "src": "/images/responsive/78d0e145045a5940-1600.webp",
+        "bytes": 55970
+      }
+    ]
+  },
   "/images/guides/ai-operator.webp": {
     "width": 1600,
     "height": 900,
@@ -10009,6 +10233,28 @@
         "width": 468,
         "src": "/images/responsive/6b45100846e7b91e-468.webp",
         "bytes": 22142
+      }
+    ]
+  },
+  "/images/news/iran-163637.webp": {
+    "width": 917,
+    "height": 619,
+    "originalBytes": 154936,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/512f531461025788-320.webp",
+        "bytes": 19000
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/512f531461025788-640.webp",
+        "bytes": 67466
+      },
+      {
+        "width": 917,
+        "src": "/images/responsive/512f531461025788-917.webp",
+        "bytes": 126582
       }
     ]
   },

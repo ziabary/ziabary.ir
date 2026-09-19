@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ArticlePage from '$lib/components/ArticlePage.svelte';
+  import DraftArticlePreview from '$lib/components/DraftArticlePreview.svelte';
   export let data;
 </script>
-<ArticlePage article={data.article} Content={data.Content} />
+{#key data.article.slug}<DraftArticlePreview article={data.article} Content={data.Content} />{/key}

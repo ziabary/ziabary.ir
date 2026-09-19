@@ -1,9 +1,12 @@
 <script lang="ts">
-  import { equivalentPages, otherLanguageSections, nativeNames, type Locale } from '$lib/editions';
+  import { page } from '$app/stores';
+  import { browser } from '$app/environment';
+  import { previewEquivalentPages, equivalentPages, otherLanguageSections, nativeNames, type Locale } from '$lib/editions';
   export let locale: Locale;
   export let pathname: string;
   let control: HTMLDetailsElement;
-  $: equivalents = equivalentPages(pathname).filter(item => item.locale !== locale);
+  $: previewEquivalents = browser ? previewEquivalentPages(pathname, $page.url.searchParams, $page.url.hash) : [];
+  $: equivalents = (previewEquivalents.length ? previewEquivalents : equivalentPages(pathname)).filter(item => item.locale !== locale);
   $: destinations = otherLanguageSections(pathname, locale);
   $: currentHeading = locale === 'fa' ? 'همین مطلب به زبان دیگر' : locale === 'en' ? 'This page in another language' : 'Esta página en otro idioma';
   $: sectionHeading = locale === 'fa' ? 'مطالب به زبان‌های دیگر' : locale === 'en' ? 'Explore other languages' : 'Explorar otros idiomas';

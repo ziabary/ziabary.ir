@@ -1,4 +1,4 @@
-// Dataset 0.3.0; catalog reviewed 2026-09-16.
+// Dataset 0.3.0; catalog reviewed 2026-09-17.
 import type { LlmGuideRepository } from '../schema';
 import { families } from './families.v1';
 import { models } from './models.v1';
@@ -24,9 +24,13 @@ import { publishedEvaluations } from './publishedEvaluations.v1';
 import { modelProfiles } from './modelProfiles.v1';
 import { modelUseGuidance } from './modelUseGuidance.v1';
 import { artifactListings } from './artifactListings.v1';
+import { referenceComparisons } from './referenceComparisons.v1';
+import { selectionGuidance } from './selectionGuidance.v1';
+import { articleSections } from './articleSections.v1';
+import { quantizationStudies } from './quantizationStudies.v1';
 
 export const llmDataset: LlmGuideRepository = {
-  families, models, artifacts, softwareProducts, softwareReleases, engines, servingStacks, deploymentConfigurations, softwareCapabilities, apiCompatibility, hardwareConfigurations, workloads, qualityEvaluations, applicationAssessments, executionFeasibility, deploymentCompatibility, benchmarkRuns, specializedAssessments, claims, evidence, publishedEvaluations, modelProfiles, modelUseGuidance, artifactListings
+  families, models, artifacts, softwareProducts, softwareReleases, engines, servingStacks, deploymentConfigurations, softwareCapabilities, apiCompatibility, hardwareConfigurations, workloads, qualityEvaluations, applicationAssessments, executionFeasibility, deploymentCompatibility, benchmarkRuns, specializedAssessments, claims, evidence, publishedEvaluations, modelProfiles, modelUseGuidance, artifactListings, referenceComparisons, selectionGuidance, articleSections, quantizationStudies
 };
 
-export const llmDatasetUpdatedOn = "2026-09-16";
+export const llmDatasetUpdatedOn = "2026-09-17";

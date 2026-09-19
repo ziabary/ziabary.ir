@@ -1,0 +1,484 @@
+{
+  "basis": "Uploaded archive snapshot, not the current mutable website or the user’s newer Codex branch.",
+  "files": [
+    {
+      "path": "data/llm/v0.3.0/repository.json",
+      "sha256": "e6dcadf5dcb9054f215304e25adf47437b99052bf2cae07a088198f1451d022c"
+    },
+    {
+      "path": "data/llm/v0.2.0/data/published-quality.json",
+      "sha256": "de337cadfd77d6f5f83e2d0b5f48ccd573c9a0687b1a231c4262c34694705e31"
+    }
+  ],
+  "uploadedArchives": [
+    {
+      "name": "data.zip",
+      "sha256": "3870c09ce9274de42004657a615accdbc0837c073ef64ab4876593e5bd44deb7"
+    },
+    {
+      "name": "src(2).zip",
+      "sha256": "134131372f8cdef96b5bc5b1282bfdb5d60f6021cf9243ccb786acfbaf4f5130"
+    }
+  ],
+  "modelCount": 95,
+  "basePublishedEvaluationCount": 1070,
+  "supplementalEvaluationInputCount": 64,
+  "articleFingerprints": [
+    {
+      "path": "src/lib/content/articles/accessing-legacy-numenta-content.md",
+      "sha256": "a005b7e39891940056181b4c5a753c896a842f9d12bb06bbb0750709b3cdcb85"
+    },
+    {
+      "path": "src/lib/content/articles/ai-cosmetic-surgery-or-chemotherapy.md",
+      "sha256": "305a388e349a842bcb4932adfd11a8a3544f56b7290a6ef67dab890433703662"
+    },
+    {
+      "path": "src/lib/content/articles/ai-data-access-ito-action.md",
+      "sha256": "3e7a82f39c14842b4f0c3a33549240929b4dea254e4cced6fa4df09827f50478"
+    },
+    {
+      "path": "src/lib/content/articles/ai-data-confidentiality-safe-processing.md",
+      "sha256": "e8d47d26dff0f604741a44227777993e18695d473a4ae0236b63f23f0f37cbdc"
+    },
+    {
+      "path": "src/lib/content/articles/ai-from-gitex-to-parliament.md",
+      "sha256": "d7553715c89d4ad09dc2a05a5914bf61191644f0102e6402b7a9aa2e1e52e348"
+    },
+    {
+      "path": "src/lib/content/articles/ai-infrastructure-security-starts-with-kernel-and-gpu.md",
+      "sha256": "96fe7ce75f103450b6f9e1fcbe57e2b5bfec79b94836caab3e97167649c112bf"
+    },
+    {
+      "path": "src/lib/content/articles/ai-operator-model-private-sector.md",
+      "sha256": "597e4ed113833bb635333bdc76c98331e96909da6d68260a8bd6acab96015520"
+    },
+    {
+      "path": "src/lib/content/articles/air-gap-moves-trust-boundary.md",
+      "sha256": "094c25830785a57c3a94a59d4dd8d99949ba204a82d9f3bc013f289d80c38140"
+    },
+    {
+      "path": "src/lib/content/articles/airllm-layer-wise-inference.md",
+      "sha256": "b54102b1654c5b06f15a49164a58d1c519bc1446c806198616a490d30332482f"
+    },
+    {
+      "path": "src/lib/content/articles/apache-mod-jk-log-lock.md",
+      "sha256": "38d715c9c5b786d864bb93f0bb07284c70ce075a9b52f8eb17a7120832ee9c63"
+    },
+    {
+      "path": "src/lib/content/articles/architecture-is-governance.md",
+      "sha256": "cf58a94c45160c9e3411d4d60ec39a61810c16b603db2b5c70fd401f72d31790"
+    },
+    {
+      "path": "src/lib/content/articles/ayar-hoomas.md",
+      "sha256": "55ce6288500f5d105a7c96bfbf94ea3b99e045177ac5b413469b1d3e199b0c9a"
+    },
+    {
+      "path": "src/lib/content/articles/building-targoman-without-patronage.md",
+      "sha256": "3ab683cadfe073f059281e4dad771849772b2873bc06d4bafbeeae8cad488de7"
+    },
+    {
+      "path": "src/lib/content/articles/china-travelogue-part-1.md",
+      "sha256": "9dbd5514acd77f73b8dfea7cc7a0789a3cfc42d80130b17faf048b82ae7a068a"
+    },
+    {
+      "path": "src/lib/content/articles/china-travelogue-part-2.md",
+      "sha256": "312f5e386d4994b6b44a58c5311fca207372e6f5e1cadd7ec0671160e221b363"
+    },
+    {
+      "path": "src/lib/content/articles/choosing-gpu-for-ai-en.md",
+      "sha256": "975e4699d2b3acfdd4791cb8859db4eb4969a45a04490e2baf63d54db83f1197"
+    },
+    {
+      "path": "src/lib/content/articles/choosing-gpu-for-ai-es.md",
+      "sha256": "57552af8c9b61e041b50b597ac7e18c122b280053efccc3d74a110d84a395fc9"
+    },
+    {
+      "path": "src/lib/content/articles/choosing-gpu-for-ai.md",
+      "sha256": "46a5c8082cffcee8272606a3dd7beff23e7d3af6a1418bd2685a589bef3308eb"
+    },
+    {
+      "path": "src/lib/content/articles/code-completion-assistant-and-agent.md",
+      "sha256": "6d774441ef1609d017e57daf29aa844c266469f44ca0d9d899beaa2fbbeba633"
+    },
+    {
+      "path": "src/lib/content/articles/configuration-drift-attestation-and-rollback.md",
+      "sha256": "1ecd0293f141e00dabf9944f08e3e24a6abefadfc04d7dafacb2532bc31a831f"
+    },
+    {
+      "path": "src/lib/content/articles/construir-targoman-sin-padrinos.md",
+      "sha256": "df99fd6e8f80261806baee589fe54ec6320506538fa9951fa4a0bea5aeed9d87"
+    },
+    {
+      "path": "src/lib/content/articles/containers-are-not-security-boundaries.md",
+      "sha256": "21d00d1143b036b0093cb43837a61e821239a3fed3f2d307b1ac37ff562a6764"
+    },
+    {
+      "path": "src/lib/content/articles/crypto-shared-portfolio-profit.md",
+      "sha256": "66b03ec5c5283223f73ef7927b445770166474c0575730cd21c2ff74e7744666"
+    },
+    {
+      "path": "src/lib/content/articles/cuando-un-otp-por-sms-reduce-la-seguridad.md",
+      "sha256": "3630abc7dfa9728822db3cd63a4f7989a5fb23f464eddc30ef63c95db94aaa01"
+    },
+    {
+      "path": "src/lib/content/articles/data-confidentiality-public-apis-en.md",
+      "sha256": "867e6ce9ddf0906ce804473a9bc278466a9093e6ed279c40e5ad9108434814d4"
+    },
+    {
+      "path": "src/lib/content/articles/data-confidentiality-public-apis-es.md",
+      "sha256": "37f9356eaecf48045e4bb0378f159cf191a5f6edc7f84db0b0fdd4ef19d8901e"
+    },
+    {
+      "path": "src/lib/content/articles/data-confidentiality-public-apis.md",
+      "sha256": "90cc0dce8ed5166c853b36f15604038c2738992699ae2de5e55b608b4e6ca314"
+    },
+    {
+      "path": "src/lib/content/articles/data-ecosystem-regulation-players.md",
+      "sha256": "26b852f47ed84bd397fd383530a761126794c4a7d6dceaa1d33c98f025d98396"
+    },
+    {
+      "path": "src/lib/content/articles/data-regulation-balance.md",
+      "sha256": "611e36cf7f8e728f51cdb0ce7acdb3a443385b64d16a05a2d794af74be91a3d0"
+    },
+    {
+      "path": "src/lib/content/articles/data-regulation-intergroup-conflicts.md",
+      "sha256": "65d19b592e2593476a62e281eb2056b11b3bcb42d8f6bd49f81bdeeb7217abc1"
+    },
+    {
+      "path": "src/lib/content/articles/data-regulation-intragroup-conflicts.md",
+      "sha256": "4655cca8bdcc02a7cb817f5d6aca1636865ccb76db9b76a70b443fd648571962"
+    },
+    {
+      "path": "src/lib/content/articles/dgx-and-standard-gpu-servers-en.md",
+      "sha256": "3b5e9e29b6e93c0365b2b94f6b9e170e1b6f0080f0cd60378f7fec881f4165b7"
+    },
+    {
+      "path": "src/lib/content/articles/dgx-and-standard-gpu-servers-es.md",
+      "sha256": "108441320e4ab55ff2f209d6e665629813d5969dd06af1f85e8513ced6538f6a"
+    },
+    {
+      "path": "src/lib/content/articles/dgx-and-standard-gpu-servers.md",
+      "sha256": "6f18ed55ac024e98b9c180a6754ec6754bc403ea0713faec1b19306a2f5765e3"
+    },
+    {
+      "path": "src/lib/content/articles/dynamic-password-fraud.md",
+      "sha256": "6ddbebcb007e3365e48a979451d3067136975a31eade3af5f07d7ba52c1735a3"
+    },
+    {
+      "path": "src/lib/content/articles/elecomp-29-from-technology-to-synergy.md",
+      "sha256": "16f81a40da37200032e52bafa57caefbd422a3c2cccc822cf8e61eda87ea3fb3"
+    },
+    {
+      "path": "src/lib/content/articles/enterprise-rag-model-embedding-reranker.md",
+      "sha256": "6e1f5c1d3b32ce17ae649344c9cbd91e7607c1e0e76c2cc795fbc40860b3ace3"
+    },
+    {
+      "path": "src/lib/content/articles/evaluating-language-models-for-persian.md",
+      "sha256": "24b273ed204e45147d863e3d38a7699adf933a9c9324382733aa54c23b759a5c"
+    },
+    {
+      "path": "src/lib/content/articles/four-bit-model-quantization.md",
+      "sha256": "38ec6286c95979375a4189a7659dfb14512e939e388ff8800fcb16fb0a3a4be5"
+    },
+    {
+      "path": "src/lib/content/articles/from-stig-cis-to-rbac.md",
+      "sha256": "84f853f2e50da5081ed9f48faa0e1a669e842e8b71dd288548df388a607c7dd0"
+    },
+    {
+      "path": "src/lib/content/articles/from-zero-trust-to-zero-trust-ai-en.md",
+      "sha256": "6ffb6b17da265b0e81a0bde598a40c11df815db5393437fb487a0a6780246e7c"
+    },
+    {
+      "path": "src/lib/content/articles/from-zero-trust-to-zero-trust-ai-es.md",
+      "sha256": "75ab9899a2116d1be0ed211ee6ed045db1a79bcbd618a97e67b6b6f9a00c9801"
+    },
+    {
+      "path": "src/lib/content/articles/from-zero-trust-to-zero-trust-ai.md",
+      "sha256": "3ee0b579a3655c59b9d3055738d71a9b335a629610838e7bab2a2a736e702b76"
+    },
+    {
+      "path": "src/lib/content/articles/gitex-2025-report.md",
+      "sha256": "dc74915bfe9daa5da2b793b5e7b0df05a06a2933ddcd1e3e6edb008664a2a410"
+    },
+    {
+      "path": "src/lib/content/articles/global-data-regulation-experiences.md",
+      "sha256": "4c4e93cd6d2162b48184dffd71f89524a0df95084b5867406c4ca66285043a3a"
+    },
+    {
+      "path": "src/lib/content/articles/google-used-targoman.md",
+      "sha256": "e9a7267a1f2e441f4aa1b8ad21beb52429793a8bb0fca80c018073fb863c45e2"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-inference-latency-throughput-en.md",
+      "sha256": "5ee0ca55d5c0e97fbc8e2631582a5be70114dc4324d99c7ca62c531c58d52697"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-inference-latency-throughput-es.md",
+      "sha256": "d52c317273904eb5b2dbfac5f60683da7aac4efc13b1b95bd38597c76f8362fb"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-inference-latency-throughput.md",
+      "sha256": "d49d582b6332a93e1bfc2fbce5b534faf9a5df39ef4737befb2b83930281e32e"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-server-platform-components-en.md",
+      "sha256": "60a943e4938bf4513d441d1b5db5c59e3f2a5f4bc0300e0190a74363d5cd90ee"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-server-platform-components-es.md",
+      "sha256": "ea217bd4ddec73cf7ece6e54aaee5ff6c0ab77eafe171008210f257c7cec56fc"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-server-platform-components.md",
+      "sha256": "75d5ab4a37a896c0c0889c2f17a7ee7518dfa8ea3cc9cc419f8047767f4ea952"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-types-for-ai-en.md",
+      "sha256": "b7dddeceee81f3e47f5ff0f42408698239566db2b9c6a1b30d58c002c896cda4"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-types-for-ai-es.md",
+      "sha256": "983c0d2ede213feb1663f3cf1fad423800fc141c25b111d5387a2ec33b660354"
+    },
+    {
+      "path": "src/lib/content/articles/gpu-types-for-ai.md",
+      "sha256": "2c1eb2076bb60c9a36ea21d5d5b954b4ced4a814bcd8223eeb8696e370811463"
+    },
+    {
+      "path": "src/lib/content/articles/htm-papers-and-books.md",
+      "sha256": "921cd113f47b262a1d6bb86c48e2b750a842b5cc5c37f03e8f3a50c34106f00a"
+    },
+    {
+      "path": "src/lib/content/articles/install-dgtechnics-smart-hdtv-linux.md",
+      "sha256": "534364dce10675adbe0cec620c61736d857e9e0f8610de838c48ee3b69c0ea1a"
+    },
+    {
+      "path": "src/lib/content/articles/install-nupic-opensuse.md",
+      "sha256": "5ae3a39359a65ccf4cfc052671e67cd3285f7045c903a7068ef877b25808372d"
+    },
+    {
+      "path": "src/lib/content/articles/install-tbs6980-tbs6981-linux.md",
+      "sha256": "27a72082ad5777059b2624721035efcaad0fcb4049e3218b21f9e2e1c11ef214"
+    },
+    {
+      "path": "src/lib/content/articles/int8-or-fp8-real-gpu-support-en.md",
+      "sha256": "575d40d113013fa559d766ce69b8b597cb8394924bcffbb1a46df5048b58bb2c"
+    },
+    {
+      "path": "src/lib/content/articles/int8-or-fp8-real-gpu-support-es.md",
+      "sha256": "c70222148fa40699c66ae8b4c320507e96d53c060c2770559fcac89d0cc36182"
+    },
+    {
+      "path": "src/lib/content/articles/int8-or-fp8-real-gpu-support.md",
+      "sha256": "05481aaecb2df77a14f420ba68caef00f1c24d2464bb3af7eee0bc6bc061eba7"
+    },
+    {
+      "path": "src/lib/content/articles/investment-in-ai.md",
+      "sha256": "293274880027a217913d9165fb3cca5b57672b3863d488a62717173fb0077a6d"
+    },
+    {
+      "path": "src/lib/content/articles/iran-ai-ranking-analysis.md",
+      "sha256": "43718b2cce10e01eae5b983ddcc4cd7ad35ec17a2c2d04c71d6f1c0bd42f2bc4"
+    },
+    {
+      "path": "src/lib/content/articles/iran-ai-top-ten-roadmap.md",
+      "sha256": "1d022e3a9fb11a298006c5355b7973e9fb68798fad8528c8193a4a349cc3e8cb"
+    },
+    {
+      "path": "src/lib/content/articles/iran-israel-war-ai.md",
+      "sha256": "1f93d9cdb047bbdca7514c2176c66e18258c6bc2636fd2b9f8b3f3ebd298f71c"
+    },
+    {
+      "path": "src/lib/content/articles/iran-third-generation-warfare.md",
+      "sha256": "5facac07908f93bdb4efab1c8e73985ed763a6aa7303ce6da83bdc5fb0b3b166"
+    },
+    {
+      "path": "src/lib/content/articles/language-identification-reading-list.md",
+      "sha256": "d537b05742d7d00724a9d848233a67092564e7fc8d1fe462467c0e24c5ee3c21"
+    },
+    {
+      "path": "src/lib/content/articles/legacy-migration-does-not-remove-risk.md",
+      "sha256": "43f3b699447677f0079fcfe93ff244293e8d6eaab4cd8dcb67c10fe6633c0198"
+    },
+    {
+      "path": "src/lib/content/articles/linux-distribution-as-security-governance.md",
+      "sha256": "d4c795562e1c417c6c8d85eb57e5c93d8074e6963d7c0ad319bb138507abf1ea"
+    },
+    {
+      "path": "src/lib/content/articles/llms-on-rtx-4090-24gb-vs-48gb.md",
+      "sha256": "07104c74ebb282dd2216dd7422e35a9967dbcee91f82972d342ebd1737873e35"
+    },
+    {
+      "path": "src/lib/content/articles/longest-bachelors-degree.md",
+      "sha256": "f0ff35bba25ace6377e1998b3f896dca7e7750ad01647e4b8918ed181b043f5a"
+    },
+    {
+      "path": "src/lib/content/articles/mlops-foundation-of-zero-trust-ai-en.md",
+      "sha256": "766a1d1920ddf3b82a8136f3471dcb3045a3a745a9135a542798d8b4c4a5e2ab"
+    },
+    {
+      "path": "src/lib/content/articles/mlops-foundation-of-zero-trust-ai-es.md",
+      "sha256": "574137b1cb1e8b5d72852d16c66d7e9177b049bca15cfadc8974693a00cce41e"
+    },
+    {
+      "path": "src/lib/content/articles/mlops-foundation-of-zero-trust-ai.md",
+      "sha256": "d7ad52b5fe63a0d4194aa0e1be3857963346e2e6842c6e8246fdc2fa40fae676"
+    },
+    {
+      "path": "src/lib/content/articles/national-ai-organization-from-law-to-impact.md",
+      "sha256": "34fc1dc0e9cc8fdfd2bbac208a2f566cb82d449875573c3c92789dea81e6b05d"
+    },
+    {
+      "path": "src/lib/content/articles/national-ai-organization-not-headquarters.md",
+      "sha256": "e08e0389da69508e566c7c1ea569832e5b344d83c9e2ca62dff2fc19e5ee3a49"
+    },
+    {
+      "path": "src/lib/content/articles/national-ai-platform.md",
+      "sha256": "7d2f7063d9c524e6a637dc95f6af320037d82469d32ca5c5170c414d08ea55f1"
+    },
+    {
+      "path": "src/lib/content/articles/noafarin-plan.md",
+      "sha256": "b143eb16f86ec4609ae982ebce6055bc6e935a92e4b23691a70886859630e158"
+    },
+    {
+      "path": "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp.md",
+      "sha256": "a327110a3072afd7d8eb29aa2da6d96f8e199118151b518f7d8c50a08567d349"
+    },
+    {
+      "path": "src/lib/content/articles/one-linux-hardening-policy-does-not-fit-all.md",
+      "sha256": "4b8a37c723fe229417351634e2cb4df63cd263d5172d08e7aca001cca1a9f1f5"
+    },
+    {
+      "path": "src/lib/content/articles/pcie-gpu-server-selection-en.md",
+      "sha256": "29db18dec768ace5c0257773c4180f2eea5808df5dc9fe21a924bf28945b6c94"
+    },
+    {
+      "path": "src/lib/content/articles/pcie-gpu-server-selection-es.md",
+      "sha256": "6c4d6d1160aab0da5734b5a065e7546f8492cc7a7bffaa1f0ce98bf14bc8b1fa"
+    },
+    {
+      "path": "src/lib/content/articles/pcie-gpu-server-selection.md",
+      "sha256": "d3a719ef4667442bf1b7501a9eaa63a5a750c992060537fcbf6eca9a27910892"
+    },
+    {
+      "path": "src/lib/content/articles/pcie-vs-sxm-for-ai-en.md",
+      "sha256": "83aaaa9794ec8ba47f5664c24c25b3b7c5727f8baeed7c123db9e406d7b97337"
+    },
+    {
+      "path": "src/lib/content/articles/pcie-vs-sxm-for-ai-es.md",
+      "sha256": "a6a4398c85bf91571ad70fc98dbdba1ad12163c7a02849872613e545cb77ad46"
+    },
+    {
+      "path": "src/lib/content/articles/pcie-vs-sxm-for-ai.md",
+      "sha256": "cb5a56687666078d9b64a65b0fea389cb6ddf2f678cfcc7f5bece65208ce9aef"
+    },
+    {
+      "path": "src/lib/content/articles/rag-cag-kag-fine-tuning-instruction-tuning-en.md",
+      "sha256": "97af1b351344e7784043c43bec12634014b7808bbe17942a888412430d7431fb"
+    },
+    {
+      "path": "src/lib/content/articles/rag-cag-kag-fine-tuning-instruction-tuning-es.md",
+      "sha256": "531315de118e34d8202d4a915f2399c32374fb56b18430e58a433b3a2276874c"
+    },
+    {
+      "path": "src/lib/content/articles/rag-cag-kag-fine-tuning-instruction-tuning.md",
+      "sha256": "1347d26d1c98a2b604b4f7d16b11cf207828d941279098eb5c3cf170302f4494"
+    },
+    {
+      "path": "src/lib/content/articles/right-model-size-for-the-task.md",
+      "sha256": "8fcf479e558cf726552bd15a2579cbff8f3cd9f35517be104276770730890ac5"
+    },
+    {
+      "path": "src/lib/content/articles/secure-rag-agent.md",
+      "sha256": "f07bdc4114cbc88a959074fcd1e652cd8cdfa150f7b2f397e3d49c00edf250e6"
+    },
+    {
+      "path": "src/lib/content/articles/seventy-million-words-a-day.md",
+      "sha256": "d341550ebb5c7ee98a1a425d6ebcc5a23b11087b6a976c784584b006f24a51b1"
+    },
+    {
+      "path": "src/lib/content/articles/single-user-to-enterprise-llm-serving.md",
+      "sha256": "26aec206aafe31bfef6c253a9fa51f81b4785fd82c2162011b4536f5a46dc048"
+    },
+    {
+      "path": "src/lib/content/articles/slow-ai-in-iran.md",
+      "sha256": "4eca9d62141f6bf2fb3d8997e0fb8b2f9d08c51fb386b2d687d36288a8e5d902"
+    },
+    {
+      "path": "src/lib/content/articles/sms-otp-security-design.md",
+      "sha256": "c96056e31411b737cebe9e85d9f8d91aa1815c441ca1d60ad79b929e0aecfc27"
+    },
+    {
+      "path": "src/lib/content/articles/software-raid-opensuse.md",
+      "sha256": "5fadfd5ef9af05c2d510103e6436a2b1b39fa3297780e6e93fc1cf7ee561179e"
+    },
+    {
+      "path": "src/lib/content/articles/targoman-300-concurrent-requests-one-rtx-4090.md",
+      "sha256": "b755ac8de6e84ed75556c00dd628bc80c1d47e2b5a89778941a049ae0b349446"
+    },
+    {
+      "path": "src/lib/content/articles/targoman-transformer-update.md",
+      "sha256": "d495108d9926aaae293441e7c7776b644ad7d2c76439203c3a0f12b82a38f145"
+    },
+    {
+      "path": "src/lib/content/articles/targoman-without-rent.md",
+      "sha256": "6deb936741426880265c58c3648563ffb6566fce1554bd3896fcf819ee8b0816"
+    },
+    {
+      "path": "src/lib/content/articles/third-revolution-in-warfare.md",
+      "sha256": "8984085db169455dc1c21a9ecd8161a6ea22683bb35e58121c50bf9b13231a71"
+    },
+    {
+      "path": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+      "sha256": "905fed52abd29bc1834051eafb75d4550ba899e22173b45a0e492c8903e674c8"
+    },
+    {
+      "path": "src/lib/content/articles/why-shamsa.md",
+      "sha256": "3f567c8d9fe40126f66b490571564d2bd09125eba9a7ebdc6198ee779b0755fe"
+    },
+    {
+      "path": "src/lib/content/articles/xaas-tax-laws.md",
+      "sha256": "2fd31bb867bb883bb00878b73804822e60c100d273729e4739fb9cbca15bd914"
+    },
+    {
+      "path": "src/lib/content/articles/zero-trust-ai-maturity-model-en.md",
+      "sha256": "5826a80f1e689a20ad48f3ff8110c3bf6d8df1dca42592ffdb78416917d3b36b"
+    },
+    {
+      "path": "src/lib/content/articles/zero-trust-ai-maturity-model-es.md",
+      "sha256": "01c5a9d2db95d41e522e8329fadd77b3866182dbd370dba04a209ded2b887e7b"
+    },
+    {
+      "path": "src/lib/content/articles/zero-trust-ai-maturity-model.md",
+      "sha256": "a9a566f5490e4167735b8a4c27f7b4c05d465e987329c1eb360b714cfaa78b31"
+    },
+    {
+      "path": "src/lib/content/articles/zero-trust-ai-principles-and-controls-en.md",
+      "sha256": "b0d169a9c06e317f9527d54ba1ab697e597c3d6c62565f1e1ca8a00453dab8d6"
+    },
+    {
+      "path": "src/lib/content/articles/zero-trust-ai-principles-and-controls-es.md",
+      "sha256": "ea7a0565082d9d3579a5a1c40199c39917f4e5785f1f3e6371c323cdd3cca272"
+    },
+    {
+      "path": "src/lib/content/articles/zero-trust-ai-principles-and-controls.md",
+      "sha256": "db4527dc586a51d47d1058107f0024395bb64e8327389b9286ea7fb7accb37b5"
+    },
+    {
+      "path": "src/lib/content/articles/ztai-data-model-engineering-without-raw-access.md",
+      "sha256": "aad16fca090e263b2a1e836fcf745c656ed764dbd3456dd426c3cf3de68f50ef"
+    },
+    {
+      "path": "src/lib/content/articles/ztai-indirect-data-access-en.md",
+      "sha256": "0aa84f06b023688425d34b1b9c0e0f350448558c3c01867bd71d80a3d10be127"
+    },
+    {
+      "path": "src/lib/content/articles/ztai-indirect-data-access-es.md",
+      "sha256": "5626045892c0edf1c9e3966ede1db568182f0210d9797270f73b8a3a4c9e1ef4"
+    },
+    {
+      "path": "src/lib/content/articles/ztai-indirect-data-access.md",
+      "sha256": "57639e41b266f447863ed29a578ec31be5f93f8505bdb6e6e52275f811b7c6e5"
+    }
+  ]
+}

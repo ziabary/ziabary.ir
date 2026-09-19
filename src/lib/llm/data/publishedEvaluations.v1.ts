@@ -14,12 +14,11 @@ publishedEvaluations.push({
   "value": 70,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -31,7 +30,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-2",
@@ -45,12 +54,11 @@ publishedEvaluations.push({
   "value": 86.7,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -62,7 +70,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-3",
@@ -76,12 +94,13 @@ publishedEvaluations.push({
   "value": 94.5,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64,
+    "datasetSplit": "test",
+    "metricScale": "0..100 as printed"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -92,8 +111,25 @@ publishedEvaluations.push({
     "پروتکل ۶۴ نمونه برای برآورد pass@1 در آزمون‌های نمونه‌گیری است؛ به CodeForces rating تعمیم داده نشده."
   ],
   "evidenceIds": [
-    "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval"
-  ]
+    "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval",
+    "evidence:math-500-language",
+    "evidence:deepseek-r1-common-table"
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  },
+  "language": "en",
+  "mode": "reasoning",
+  "comparisonGroup": "deepseek-r1-distill-math500-publisher-table",
+  "protocolEvidenceId": "evidence:deepseek-r1-common-table"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-4",
@@ -107,12 +143,11 @@ publishedEvaluations.push({
   "value": 65.2,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -124,7 +159,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-5",
@@ -138,12 +183,11 @@ publishedEvaluations.push({
   "value": 57.5,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "coding-assistant"
   ],
@@ -155,7 +199,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-6",
@@ -169,10 +223,9 @@ publishedEvaluations.push({
   "value": 1633,
   "unit": "rating",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "روش گزارش": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+    "maxOutputTokens": 32768,
+    "reportingMethod": "publisher-rating-method-unspecified"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -184,7 +237,18 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-llama-70b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "reportingMethod": "روش گزارش"
+  },
+  "settingNotes": {
+    "reportingMethod": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-7",
@@ -198,12 +262,11 @@ publishedEvaluations.push({
   "value": 28.9,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -215,7 +278,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-8",
@@ -229,12 +302,11 @@ publishedEvaluations.push({
   "value": 52.7,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -246,7 +318,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-9",
@@ -260,12 +342,13 @@ publishedEvaluations.push({
   "value": 83.9,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64,
+    "datasetSplit": "test",
+    "metricScale": "0..100 as printed"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -276,8 +359,25 @@ publishedEvaluations.push({
     "پروتکل ۶۴ نمونه برای برآورد pass@1 در آزمون‌های نمونه‌گیری است؛ به CodeForces rating تعمیم داده نشده."
   ],
   "evidenceIds": [
-    "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval"
-  ]
+    "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval",
+    "evidence:math-500-language",
+    "evidence:deepseek-r1-common-table"
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  },
+  "language": "en",
+  "mode": "reasoning",
+  "comparisonGroup": "deepseek-r1-distill-math500-publisher-table",
+  "protocolEvidenceId": "evidence:deepseek-r1-common-table"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-10",
@@ -291,12 +391,11 @@ publishedEvaluations.push({
   "value": 33.8,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -308,7 +407,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-11",
@@ -322,12 +431,11 @@ publishedEvaluations.push({
   "value": 16.9,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "coding-assistant"
   ],
@@ -339,7 +447,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-12",
@@ -353,10 +471,9 @@ publishedEvaluations.push({
   "value": 954,
   "unit": "rating",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "روش گزارش": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+    "maxOutputTokens": 32768,
+    "reportingMethod": "publisher-rating-method-unspecified"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -368,7 +485,18 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-1-5b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "reportingMethod": "روش گزارش"
+  },
+  "settingNotes": {
+    "reportingMethod": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-13",
@@ -382,12 +510,11 @@ publishedEvaluations.push({
   "value": 69.7,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -399,7 +526,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-14",
@@ -413,12 +550,11 @@ publishedEvaluations.push({
   "value": 80,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -430,7 +566,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-15",
@@ -444,12 +590,13 @@ publishedEvaluations.push({
   "value": 93.9,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64,
+    "datasetSplit": "test",
+    "metricScale": "0..100 as printed"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -460,8 +607,25 @@ publishedEvaluations.push({
     "پروتکل ۶۴ نمونه برای برآورد pass@1 در آزمون‌های نمونه‌گیری است؛ به CodeForces rating تعمیم داده نشده."
   ],
   "evidenceIds": [
-    "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval"
-  ]
+    "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval",
+    "evidence:math-500-language",
+    "evidence:deepseek-r1-common-table"
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  },
+  "language": "en",
+  "mode": "reasoning",
+  "comparisonGroup": "deepseek-r1-distill-math500-publisher-table",
+  "protocolEvidenceId": "evidence:deepseek-r1-common-table"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-16",
@@ -475,12 +639,11 @@ publishedEvaluations.push({
   "value": 59.1,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -492,7 +655,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-17",
@@ -506,12 +679,11 @@ publishedEvaluations.push({
   "value": 53.1,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "coding-assistant"
   ],
@@ -523,7 +695,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-18",
@@ -537,10 +719,9 @@ publishedEvaluations.push({
   "value": 1481,
   "unit": "rating",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "روش گزارش": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+    "maxOutputTokens": 32768,
+    "reportingMethod": "publisher-rating-method-unspecified"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -552,7 +733,18 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-14b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "reportingMethod": "روش گزارش"
+  },
+  "settingNotes": {
+    "reportingMethod": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-19",
@@ -566,12 +758,11 @@ publishedEvaluations.push({
   "value": 72.6,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -583,7 +774,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-20",
@@ -597,12 +798,11 @@ publishedEvaluations.push({
   "value": 83.3,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -614,7 +814,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-21",
@@ -628,12 +838,13 @@ publishedEvaluations.push({
   "value": 94.3,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64,
+    "datasetSplit": "test",
+    "metricScale": "0..100 as printed"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -644,8 +855,25 @@ publishedEvaluations.push({
     "پروتکل ۶۴ نمونه برای برآورد pass@1 در آزمون‌های نمونه‌گیری است؛ به CodeForces rating تعمیم داده نشده."
   ],
   "evidenceIds": [
-    "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval"
-  ]
+    "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval",
+    "evidence:math-500-language",
+    "evidence:deepseek-r1-common-table"
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  },
+  "language": "en",
+  "mode": "reasoning",
+  "comparisonGroup": "deepseek-r1-distill-math500-publisher-table",
+  "protocolEvidenceId": "evidence:deepseek-r1-common-table"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-22",
@@ -659,12 +887,11 @@ publishedEvaluations.push({
   "value": 62.1,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -676,7 +903,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-23",
@@ -690,12 +927,11 @@ publishedEvaluations.push({
   "value": 57.2,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "coding-assistant"
   ],
@@ -707,7 +943,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-24",
@@ -721,10 +967,9 @@ publishedEvaluations.push({
   "value": 1691,
   "unit": "rating",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "روش گزارش": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+    "maxOutputTokens": 32768,
+    "reportingMethod": "publisher-rating-method-unspecified"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -736,7 +981,18 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-32b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "reportingMethod": "روش گزارش"
+  },
+  "settingNotes": {
+    "reportingMethod": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-25",
@@ -750,12 +1006,11 @@ publishedEvaluations.push({
   "value": 55.5,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -767,7 +1022,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-26",
@@ -781,12 +1046,11 @@ publishedEvaluations.push({
   "value": 83.3,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -798,7 +1062,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-27",
@@ -812,12 +1086,13 @@ publishedEvaluations.push({
   "value": 92.8,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64,
+    "datasetSplit": "test",
+    "metricScale": "0..100 as printed"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -828,8 +1103,25 @@ publishedEvaluations.push({
     "پروتکل ۶۴ نمونه برای برآورد pass@1 در آزمون‌های نمونه‌گیری است؛ به CodeForces rating تعمیم داده نشده."
   ],
   "evidenceIds": [
-    "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval"
-  ]
+    "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval",
+    "evidence:math-500-language",
+    "evidence:deepseek-r1-common-table"
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  },
+  "language": "en",
+  "mode": "reasoning",
+  "comparisonGroup": "deepseek-r1-distill-math500-publisher-table",
+  "protocolEvidenceId": "evidence:deepseek-r1-common-table"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-28",
@@ -843,12 +1135,11 @@ publishedEvaluations.push({
   "value": 49.1,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -860,7 +1151,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-29",
@@ -874,12 +1175,11 @@ publishedEvaluations.push({
   "value": 37.6,
   "unit": "percent",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "دما": 0.6,
-    "top_p": 0.95,
-    "پاسخ نمونه برای هر پرسش": 64
+    "maxOutputTokens": 32768,
+    "temperature": 0.6,
+    "topP": 0.95,
+    "sampleCountPerQuery": 64
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "coding-assistant"
   ],
@@ -891,7 +1191,17 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "temperature": "دما",
+    "topP": "top_p",
+    "sampleCountPerQuery": "پاسخ نمونه برای هر پرسش"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:deepseek-distill-30",
@@ -905,10 +1215,9 @@ publishedEvaluations.push({
   "value": 1189,
   "unit": "rating",
   "settings": {
-    "حداکثر توکن خروجی": 32768,
-    "روش گزارش": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+    "maxOutputTokens": 32768,
+    "reportingMethod": "publisher-rating-method-unspecified"
   },
-  "language": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
   "applicationIds": [
     "reasoning-analysis"
   ],
@@ -920,7 +1229,18 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:deepseek-ai-deepseek-r1-distill-qwen-7b-distill-eval"
-  ]
+  ],
+  "sourceLanguageLabel": "زبان آزمون جداگانه مشخص نشده؛ ارزیابی فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "maxOutputTokens": "حداکثر توکن خروجی",
+    "reportingMethod": "روش گزارش"
+  },
+  "settingNotes": {
+    "reportingMethod": "rating در جدول ناشر؛ روش تبدیل به rating و تعداد نمونهٔ آن جداگانه تشریح نشده است."
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:qwen-qwen3-embedding-0-6b-mteb",
@@ -934,10 +1254,9 @@ publishedEvaluations.push({
   "value": 64.33,
   "unit": "score",
   "settings": {
-    "بعد embedding": 1024,
-    "نوع نتیجه": "میانگین وظایف جدول ناشر؛ جزئیات کامل تنظیمات در این جدول گزارش نشده"
+    "embeddingDimensions": 1024,
+    "resultType": "publisher-task-average-settings-incomplete"
   },
-  "language": "چندزبانه؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag"
   ],
@@ -948,7 +1267,58 @@ publishedEvaluations.push({
     "این امتیاز به بردار با بُعد دلخواه یا کوانتیزهٔ دیگر تعمیم داده نمی‌شود."
   ],
   "evidenceIds": [
-    "evidence:four-tables-qwen-qwen3-embedding-0-6b-mteb"
+    "evidence:four-tables-qwen-qwen3-embedding-0-6b-mteb",
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-841d52dda1"
+  ],
+  "sourceLanguageLabel": "چندزبانه؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceSettingLabels": {
+    "embeddingDimensions": "بعد embedding",
+    "resultType": "نوع نتیجه"
+  },
+  "settingNotes": {
+    "resultType": "میانگین وظایف جدول ناشر؛ جزئیات کامل تنظیمات در این جدول گزارش نشده"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-9d1d464e23b2b9f7",
+      "modelRef": "model:qwen-qwen3-embedding-0-6b",
+      "benchmark": "MTEB multilingual / Mean (Task)",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 64.33,
+      "reportedValueText": "64.33",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / Qwen3-Embedding-0.6B / Mean (Task)",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "publisher evaluation"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:qwen-qwen3-embedding-0-6b-mteb"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
   ]
 });
 publishedEvaluations.push({
@@ -963,10 +1333,9 @@ publishedEvaluations.push({
   "value": 69.45,
   "unit": "score",
   "settings": {
-    "بعد embedding": 2560,
-    "نوع نتیجه": "میانگین وظایف جدول ناشر؛ جزئیات کامل تنظیمات در این جدول گزارش نشده"
+    "embeddingDimensions": 2560,
+    "resultType": "publisher-task-average-settings-incomplete"
   },
-  "language": "چندزبانه؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag"
   ],
@@ -977,7 +1346,58 @@ publishedEvaluations.push({
     "این امتیاز به بردار با بُعد دلخواه یا کوانتیزهٔ دیگر تعمیم داده نمی‌شود."
   ],
   "evidenceIds": [
-    "evidence:four-tables-qwen-qwen3-embedding-4b-mteb"
+    "evidence:four-tables-qwen-qwen3-embedding-4b-mteb",
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-6deb3cdcf2"
+  ],
+  "sourceLanguageLabel": "چندزبانه؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceSettingLabels": {
+    "embeddingDimensions": "بعد embedding",
+    "resultType": "نوع نتیجه"
+  },
+  "settingNotes": {
+    "resultType": "میانگین وظایف جدول ناشر؛ جزئیات کامل تنظیمات در این جدول گزارش نشده"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-0f624f4cb95961eb",
+      "modelRef": "model:qwen-qwen3-embedding-4b",
+      "benchmark": "MTEB multilingual / Mean (Task)",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 69.45,
+      "reportedValueText": "69.45",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / Qwen3-Embedding-4B / Mean (Task)",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "publisher evaluation"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:qwen-qwen3-embedding-4b-mteb"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
   ]
 });
 publishedEvaluations.push({
@@ -992,10 +1412,9 @@ publishedEvaluations.push({
   "value": 70.58,
   "unit": "score",
   "settings": {
-    "بعد embedding": 4096,
-    "نوع نتیجه": "میانگین وظایف جدول ناشر؛ جزئیات کامل تنظیمات در این جدول گزارش نشده"
+    "embeddingDimensions": 4096,
+    "resultType": "publisher-task-average-settings-incomplete"
   },
-  "language": "چندزبانه؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag"
   ],
@@ -1006,7 +1425,58 @@ publishedEvaluations.push({
     "این امتیاز به بردار با بُعد دلخواه یا کوانتیزهٔ دیگر تعمیم داده نمی‌شود."
   ],
   "evidenceIds": [
-    "evidence:four-tables-qwen-qwen3-embedding-8b-mteb"
+    "evidence:four-tables-qwen-qwen3-embedding-8b-mteb",
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-143cb3419f"
+  ],
+  "sourceLanguageLabel": "چندزبانه؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceSettingLabels": {
+    "embeddingDimensions": "بعد embedding",
+    "resultType": "نوع نتیجه"
+  },
+  "settingNotes": {
+    "resultType": "میانگین وظایف جدول ناشر؛ جزئیات کامل تنظیمات در این جدول گزارش نشده"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1672818662cf7840",
+      "modelRef": "model:qwen-qwen3-embedding-8b",
+      "benchmark": "MTEB multilingual / Mean (Task)",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 70.58,
+      "reportedValueText": "70.58",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / Qwen3-Embedding-8B / Mean (Task)",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "publisher evaluation"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:qwen-qwen3-embedding-8b-mteb"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
   ]
 });
 publishedEvaluations.push({
@@ -1021,11 +1491,10 @@ publishedEvaluations.push({
   "value": 73.42,
   "unit": "score",
   "settings": {
-    "بازیاب اولیه": "Qwen3-Embedding-0.6B",
-    "تعداد نامزد برای هر query": 100,
-    "مجموعه": "MTEB (Code, v1) — 12 retrieval tasks"
+    "retrievalModel": "Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "dataset": "MTEB (Code, v1) — 12 retrieval tasks"
   },
-  "language": "بازیابی کد؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag",
     "coding-assistant"
@@ -1040,7 +1509,16 @@ publishedEvaluations.push({
     "evidence:four-tables-qwen-reranker-code-paper"
   ],
   "benchmarkVersion": "v1",
-  "publishedOn": "2025-06-05"
+  "publishedOn": "2025-06-05",
+  "sourceLanguageLabel": "بازیابی کد؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "retrievalModel": "بازیاب اولیه",
+    "candidateCount": "تعداد نامزد برای هر query",
+    "dataset": "مجموعه"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:qwen-qwen3-reranker-4b-mteb-code",
@@ -1054,11 +1532,10 @@ publishedEvaluations.push({
   "value": 81.2,
   "unit": "score",
   "settings": {
-    "بازیاب اولیه": "Qwen3-Embedding-0.6B",
-    "تعداد نامزد برای هر query": 100,
-    "مجموعه": "MTEB (Code, v1) — 12 retrieval tasks"
+    "retrievalModel": "Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "dataset": "MTEB (Code, v1) — 12 retrieval tasks"
   },
-  "language": "بازیابی کد؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag",
     "coding-assistant"
@@ -1073,7 +1550,16 @@ publishedEvaluations.push({
     "evidence:four-tables-qwen-reranker-code-paper"
   ],
   "benchmarkVersion": "v1",
-  "publishedOn": "2025-06-05"
+  "publishedOn": "2025-06-05",
+  "sourceLanguageLabel": "بازیابی کد؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "retrievalModel": "بازیاب اولیه",
+    "candidateCount": "تعداد نامزد برای هر query",
+    "dataset": "مجموعه"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:qwen-qwen3-reranker-8b-mteb-code",
@@ -1087,11 +1573,10 @@ publishedEvaluations.push({
   "value": 81.22,
   "unit": "score",
   "settings": {
-    "بازیاب اولیه": "Qwen3-Embedding-0.6B",
-    "تعداد نامزد برای هر query": 100,
-    "مجموعه": "MTEB (Code, v1) — 12 retrieval tasks"
+    "retrievalModel": "Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "dataset": "MTEB (Code, v1) — 12 retrieval tasks"
   },
-  "language": "بازیابی کد؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag",
     "coding-assistant"
@@ -1106,7 +1591,16 @@ publishedEvaluations.push({
     "evidence:four-tables-qwen-reranker-code-paper"
   ],
   "benchmarkVersion": "v1",
-  "publishedOn": "2025-06-05"
+  "publishedOn": "2025-06-05",
+  "sourceLanguageLabel": "بازیابی کد؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "retrievalModel": "بازیاب اولیه",
+    "candidateCount": "تعداد نامزد برای هر query",
+    "dataset": "مجموعه"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:e5-small-miracl",
@@ -1120,10 +1614,10 @@ publishedEvaluations.push({
   "value": 60.8,
   "unit": "score",
   "settings": {
-    "split": "development",
-    "تجمیع": "میانگین ۱۶ زبان — Table 4"
+    "aggregation": "macro-language-mean",
+    "datasetSplit": "development",
+    "languageCount": 16
   },
-  "language": "چندزبانه؛ امتیاز فارسی نیست",
   "applicationIds": [
     "enterprise-rag"
   ],
@@ -1135,7 +1629,19 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:four-tables-e5-paper"
-  ]
+  ],
+  "sourceLanguageLabel": "چندزبانه؛ امتیاز فارسی نیست",
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceSettingLabels": {
+    "aggregation": "تجمیع",
+    "datasetSplit": "split"
+  },
+  "settingNotes": {
+    "aggregation": "میانگین ۱۶ زبان — Table 4"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c48500e502d2eb691fd3",
@@ -1165,7 +1671,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d53034eb6c4f082f3c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f1cc9ff1bf70ece110db",
@@ -1196,7 +1705,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-df027bc90748531a70"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b0cbcabae91d0ba5ccaa",
@@ -1226,7 +1738,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7b1cd8289255df6025"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-89432246e805bc77e0d2",
@@ -1256,7 +1771,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1b9034031f7165e53a"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2977d4c3fe6f1d41a1ab",
@@ -1286,7 +1804,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6365d3dcc739fd3876"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9b6139b638ff07d54792",
@@ -1316,7 +1837,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d4636f11d147b6b4be"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-73370f85cfff16a382ca",
@@ -1346,7 +1870,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-416e7548e8eef137f4"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2782ab01ba5faf92f617",
@@ -1376,7 +1903,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1a5d5fbf873f3ed0d2"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bcada2b2e24fac1ca31e",
@@ -1406,7 +1936,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fa65a6bde8973bf448"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-879ce02051034732a3a7",
@@ -1437,6 +1970,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dda0829c9c0b91ea4d"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -1468,6 +2006,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8e69bb110a8160f112"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -1499,7 +2042,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-86bcb4721d04c5db84"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bd5801623fd392f0dc04",
@@ -1529,7 +2075,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9e0cb42e6d20054c4c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-96e9bfb67d0b9022674e",
@@ -1559,7 +2108,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-026af1c7ea4f782d50"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-473f44090acae0598c1f",
@@ -1589,7 +2141,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-80047ef35bebf7b87f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-55cf7e00ab7280aef720",
@@ -1619,7 +2174,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9e0128c4e3a0792112"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a185ce7ac8934847400f",
@@ -1650,7 +2208,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6130acff2610074094"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0cf706b2fe07089e5309",
@@ -1680,7 +2241,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-847da7c18ee65bae1e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-54a8e1e4776c443108e4",
@@ -1711,7 +2275,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7db304f664d44496dc"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a2dd889f097353b0ff5b",
@@ -1741,7 +2308,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5cbe0bb954513f5b77"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-83a1ef751e8e71849866",
@@ -1771,7 +2341,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cb55a3cd1f389cb801"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e53ea8ce40b56e951790",
@@ -1802,7 +2375,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8660bac0f81a4cef58"
   ],
-  "language": "rus_Cyrl-rus_Cyrl"
+  "sourceLanguageLabel": "rus_Cyrl-rus_Cyrl",
+  "languageScope": {
+    "kind": "pair",
+    "source": "ru",
+    "target": "ru"
+  },
+  "language": "ru-ru"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ec70114caa1d8ca09379",
@@ -1833,7 +2412,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fc8503f7921e36cd5a"
   ],
-  "language": "rus_Cyrl-eng_Latn"
+  "sourceLanguageLabel": "rus_Cyrl-eng_Latn",
+  "languageScope": {
+    "kind": "pair",
+    "source": "ru",
+    "target": "en"
+  },
+  "language": "ru-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c044b77dbdadfb11d4c6",
@@ -1864,7 +2449,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d09cca0d415dc0f7ef"
   ],
-  "language": "eng_Latn-rus_Cyrl"
+  "sourceLanguageLabel": "eng_Latn-rus_Cyrl",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "ru"
+  },
+  "language": "en-ru"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8088eea575512c03f8e5",
@@ -1895,6 +2486,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a9a06a1586f4f8a710"
   ],
+  "sourceLanguageLabel": "ru",
+  "languageScope": {
+    "kind": "single",
+    "language": "ru"
+  },
   "language": "ru"
 });
 publishedEvaluations.push({
@@ -1926,6 +2522,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dc61fd207c3c121075"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -1957,6 +2558,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f321728219379d4971"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -1988,7 +2594,12 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-285ea384c6d380f509"
   ],
-  "language": "russian"
+  "sourceLanguageLabel": "russian",
+  "languageScope": {
+    "kind": "single",
+    "language": "ru"
+  },
+  "language": "ru"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-949ea8250c97602b113a",
@@ -2019,7 +2630,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2685154fd049008924"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f95b4aac28db346fedfa",
@@ -2050,7 +2664,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3d1fc4f01db9a8d890"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cb4fa3327577d9fcbd7a",
@@ -2081,7 +2698,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e1f96317ed66a479e3"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-02ac28ee197a4554619b",
@@ -2112,6 +2732,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9897474e3be714ec9b"
   ],
+  "sourceLanguageLabel": "ru",
+  "languageScope": {
+    "kind": "single",
+    "language": "ru"
+  },
   "language": "ru"
 });
 publishedEvaluations.push({
@@ -2142,7 +2767,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0a052141a86565dc70"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4d14e2826e6bffddf75f",
@@ -2173,7 +2801,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f915f0e42fd00e324e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-92bbb3879e23d2640ce5",
@@ -2203,7 +2834,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-47fb33a2e0a51aea35"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d24d08ba79458026ad04",
@@ -2233,7 +2867,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c65ac0ecfe56068402"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6d9dc447a8d237692e83",
@@ -2263,7 +2900,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c225bd4c06c8d4cf34"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b1c0a2f3159bc26e4d40",
@@ -2293,7 +2933,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6ec2229a82584b19c9"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cda15e36948324578b6a",
@@ -2323,7 +2966,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f8782217c85cf82dcd"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-27d870db57d10772b717",
@@ -2353,7 +2999,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a68ad828b91f29aec4"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-48cb6e52828829dc8890",
@@ -2383,7 +3032,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-db9ea30805821bced0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-06316b48a253ab35af25",
@@ -2413,7 +3065,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ec35bf2d7b75f8b3bf"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6f5a009ac4db523433d9",
@@ -2443,7 +3098,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f045aef9631d5e10e9"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-10c71092700d5b8c0f7f",
@@ -2473,7 +3131,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-53af6a091c34531e7c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f6497107bacf11dab787",
@@ -2503,7 +3164,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2e40022928da9dc7b2"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bc2b846488da3ed8ef5c",
@@ -2533,7 +3197,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a6a757e29b5e6309f6"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0cf77eb8ed7871a0d017",
@@ -2563,7 +3230,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-277bfe0691bf35026e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f807701dd2d4291fb9e4",
@@ -2593,7 +3263,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e760421bfe6a7f7ca0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f33bd07d23eca33b7c1a",
@@ -2623,7 +3296,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5b70b37404c01108cb"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7ad5e02409d9ade84c96",
@@ -2653,7 +3329,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-432edab8e99f9be19b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-087b14df21d4a0cf2114",
@@ -2683,7 +3362,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9cdd13784bb04f367a"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-66e6f275528e69b98a6d",
@@ -2713,7 +3395,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c7072507a6eaf8bfb5"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c7f0bb471ba2a0aa4250",
@@ -2743,7 +3428,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6715d0052e3773dffb"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5328da41a65703390f96",
@@ -2774,6 +3462,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-62513609e533f9a212"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -2805,6 +3498,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9e8ba247e811d32513"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -2836,7 +3534,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3162a86fcde278e0df"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5e697ac0afd2eeab509a",
@@ -2866,7 +3567,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9e4a9df30fc7657eba"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8d3fad1c31ede8c59f75",
@@ -2896,7 +3600,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-803df21c3a84e8a6d7"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bf8ffbdd4ddda591cb06",
@@ -2926,7 +3633,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9dcddc3f1b938a5d29"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-815027e4eefeb6c8d032",
@@ -2956,7 +3666,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a2d8cbbab84ed1c6e8"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c22b79d0ed523c34d8a3",
@@ -2987,7 +3700,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fd893bda1167588544"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3a0d9dee8bbe3585ad09",
@@ -3017,7 +3733,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9f73d98cbe2f103873"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3841f8f4b092a47b1be8",
@@ -3048,7 +3767,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ff2079a542907f5bec"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b9e4937e862efeac46f7",
@@ -3078,7 +3800,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e207f85f21270896ce"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c6d863de016b87b36709",
@@ -3108,7 +3833,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e499e86075cf6691b2"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a99b4de67ba95af1d8fd",
@@ -3138,7 +3866,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-988a3c8bdf6a607909"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4bead8b579e424c71f7c",
@@ -3169,7 +3900,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d369006959214fe79d"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-47cdcf5031dab3c985b4",
@@ -3199,7 +3933,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2e481004ebc4d0434b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-79b20ced80359710d501",
@@ -3229,7 +3966,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-037997521d15a2808b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f393c925462140bfb411",
@@ -3259,7 +3999,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7aacab94629f4b1698"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5284d0956ab8873ee2ad",
@@ -3289,7 +4032,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d0bc58759e4764eb2c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7693e84cf0878eda6e53",
@@ -3319,7 +4065,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9f2be05f224ef87df1"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3b67c8ee54559a6b12a1",
@@ -3349,7 +4098,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a3015948661e8594d8"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f07ed0a87d675ba7848d",
@@ -3379,7 +4131,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-782d4a0c79f5223d26"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ac0f05c64ebf7d76362b",
@@ -3410,6 +4165,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a16afbbf1288411eb0"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -3441,6 +4201,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a97f494bf06eb70b74"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -3472,7 +4237,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1e83dd0f1a68616ca4"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-253a60a80f0eface2110",
@@ -3502,7 +4270,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-855d8104ff24342d7d"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2dce6724e9ed0a59de13",
@@ -3532,7 +4303,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2c0f7b030462e237ef"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0ea31f38e3e6ea265c4e",
@@ -3562,7 +4336,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dab92d0685dd7a90a8"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2a6993d5b5885f67ecb3",
@@ -3592,7 +4369,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fb9d6f56b682994780"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-08e2cdfe3e658c87380f",
@@ -3623,7 +4403,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ee1a35817218884674"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-895af8e51e4f7da84088",
@@ -3653,7 +4436,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b47dde3b671af5d1ad"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-71509013e9d8b4597005",
@@ -3684,7 +4470,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2f567420c879dd15eb"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8b0cb7de3f5ca0c3ab5f",
@@ -3714,7 +4503,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cc3846876b3258fd4e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c5527e40758a2c602678",
@@ -3744,7 +4536,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5603d92f7ad2308c57"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-feee388cefc8a7a28921",
@@ -3774,7 +4569,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-061caa55838ad47eca"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eee5a201dd9545fe98b6",
@@ -3805,7 +4603,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-72222120eb164972f5"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-adb1c241eb5a25f4be0d",
@@ -3835,7 +4636,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-547e262fe39ecb5bf0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2f878bd475980120f10b",
@@ -3865,7 +4669,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a72e868108afdf391f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-dacd69ee5bdd8443ab2b",
@@ -3895,7 +4702,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3018259f2c8fdc88b2"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f3b445049361df7f4119",
@@ -3925,7 +4735,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a2a904c9861f0ffbe8"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d4e815ead3a1e39dc3da",
@@ -3955,7 +4768,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6e2f26bb7addb0c6b8"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b28cac703aa2b05c453c",
@@ -3985,7 +4801,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4240394a961b6a6f84"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a5d50802977fda1c079f",
@@ -4015,7 +4834,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-20f440545917880a28"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d81eb330de45972a74ce",
@@ -4045,7 +4867,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ab64d8c377135d668f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e5477fde5afadbcaf7f9",
@@ -4075,7 +4900,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-38830bd303356a0649"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-dc0834e20d5c28db90ef",
@@ -4105,7 +4933,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-63736589187fb9f95e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b9626798c63855876fc6",
@@ -4135,7 +4966,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9d8981d80d7ceee9d0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-641e381b4a88d04cdf18",
@@ -4165,7 +4999,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f18f917bc45014132a"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-55daba021dbbb4ae0921",
@@ -4195,7 +5032,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a8c7344dfe3608cbaa"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d3232b2eee214185ed24",
@@ -4225,7 +5065,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3beecca7e01b90fc3f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-908abe4363bf70291b8f",
@@ -4255,7 +5098,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9cd721865c4ba196e5"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-65e6f37ad912a35fc169",
@@ -4285,7 +5131,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8cc5529223cd648297"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f777c28a53b01a10b177",
@@ -4315,7 +5164,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-92866d607c6b8843f9"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bb6984f8959f4b43a669",
@@ -4345,7 +5197,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d4615088f32c96cb66"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8cc7342eafbcc976eec8",
@@ -4375,7 +5230,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0b6728147fd8d52683"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ffb511c7532be1a78340",
@@ -4406,7 +5264,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6a2bd2ba5c7a7be0b0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e0c91ac6f191fc872ada",
@@ -4436,7 +5297,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9102b02a5fb53ff4a6"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-24adcaf85c863e210c72",
@@ -4466,7 +5330,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-13a2b3140d932cbc65"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-865797520b7ab0d5d9a2",
@@ -4496,7 +5363,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bb3a8cfd213b3b4218"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1ae3c8fa8130c63e401b",
@@ -4526,7 +5396,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c0dffb15412916da59"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-522d3103092776839899",
@@ -4557,7 +5430,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-aac624802109fe3bb6"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d02147efe44a39b64deb",
@@ -4587,7 +5463,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-48f450993caa0797d5"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-16bd0bc9cb984187d7df",
@@ -4618,7 +5497,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9f6fe59742aae853b1"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-239c5e085f9d581255eb",
@@ -4648,7 +5530,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bcdb2a465547c6e309"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-14305264d2031710affe",
@@ -4678,7 +5563,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d0822527e2985a041a"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-95d7124dd29311727d8c",
@@ -4708,7 +5596,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-243609640275bd0d27"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6fc769256a5f42d14216",
@@ -4738,7 +5629,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3dba27e5a277e2531b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0c00c0d4562f1ce48486",
@@ -4768,7 +5662,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-85ea69cdb4e6e69cc8"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3874f0a925f225b4f974",
@@ -4798,7 +5695,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-62cc2d8434e4e80872"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-68092f252f23b6094912",
@@ -4829,7 +5729,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6dda510f54309a85ab"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-edfa1ee33a837d51a024",
@@ -4860,7 +5763,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b24044267a2c9c78d6"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a939dd2719df5538da1e",
@@ -4891,7 +5797,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8e684e0ab2046c3e7b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9b91ec55e74a74c98e16",
@@ -4922,7 +5831,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7fec5445c003621e20"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d9b3a7d11f6bb3e126a4",
@@ -4953,7 +5865,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-111747ff7ae06e54f9"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0c572dc95bbe976334c7",
@@ -4984,7 +5899,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8913e168e7a1bf0699"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ee5f2ee023e06e341687",
@@ -5015,7 +5933,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b5b38fab1fb177add2"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e43fab52349c5b6e51cd",
@@ -5046,7 +5967,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6d17648e8fbfd73753"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-368a9e998c570f579ccb",
@@ -5077,7 +6001,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d9d760342ce4e1e0af"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-aeca6e4f8fbaff8f325b",
@@ -5108,7 +6035,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7475d7d8a5eb7267a5"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-096ef6ca7d47af9db092",
@@ -5139,7 +6069,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-677e507018184eeeb4"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8404dabe6c158c193453",
@@ -5170,6 +6103,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ff61404f616362e8bf"
   ],
+  "sourceLanguageLabel": "ru",
+  "languageScope": {
+    "kind": "single",
+    "language": "ru"
+  },
   "language": "ru"
 });
 publishedEvaluations.push({
@@ -5201,7 +6139,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ccc3a955611d384a35"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-229faab2531e0057fbb3",
@@ -5232,7 +6173,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8d1737ba39104b46bb"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b0573ac49fdac5f4184c",
@@ -5263,7 +6207,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-08c0a89852c9e87ae9"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-932a3873906aab0cddec",
@@ -5294,7 +6241,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4414e82cad61f63e44"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0e2c6f0c3ec064232859",
@@ -5325,7 +6275,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b88b27b23847378b5e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c41b23ddb8c5f25863c9",
@@ -5356,7 +6309,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-641f25cf470755a616"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5c0ee80ae25fce88a5cc",
@@ -5387,7 +6343,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fbe414a4a7d4e8ca9b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-05ba44a617aa135b284e",
@@ -5418,7 +6377,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d4e3802410203ae440"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6296602f9b97ad60bcd5",
@@ -5449,7 +6411,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-49ba2e6418cd5630d0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1882f9a1812daff3e840",
@@ -5480,7 +6445,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-95c62bdb817e20982a"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-89a901eb78d20a0bf2c8",
@@ -5511,7 +6479,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ee4b827cd1b0a001c0"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0fb571a9fed798e10fa0",
@@ -5542,7 +6513,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-18d3bfee5ad7f2379e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-85d5b25b562a815c6425",
@@ -5573,7 +6547,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-abb8af3a8bf81a6b05"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-564c3a1452382571ac8c",
@@ -5604,7 +6581,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3dad5c6b397ceb48d2"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c8d5aab503d0d08e7f31",
@@ -5635,7 +6615,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-70f99220caf1445d5f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b1610b574c259e343b76",
@@ -5666,7 +6649,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-06b1790d83d66697ad"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-abf0a0d00ab093e251f6",
@@ -5697,7 +6683,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f125b7a73ada9ba683"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3858924c06dada032636",
@@ -5728,7 +6717,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cc7c4558fc6f858e31"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-beeb4ee4b1d1ca4207a7",
@@ -5759,7 +6751,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e96bd1a659801e61cb"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c9ada167ae9b2f17a8b8",
@@ -5790,7 +6785,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4463853fb5689de37b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-af7a5ae1ef18dc675694",
@@ -5821,7 +6819,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-37387343a7fa16653d"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-326e3cf719d05645c825",
@@ -5852,7 +6853,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dc83bfaa4b81ce0731"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6913f6f55eefae86adc5",
@@ -5883,7 +6887,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-12a8c9aaf410b71723"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-790d788e64cfd3eefd6a",
@@ -5914,7 +6921,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9534bec67ff2e3937b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4568259fc4b182e53bfa",
@@ -5945,7 +6955,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-52e13264d088284ede"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9e68329c9b7456e57c6d",
@@ -5976,7 +6989,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ce510611940abcd30f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-45573de4db5db5916333",
@@ -6007,7 +7023,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0ee6e6ace112023027"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-623d3fce842ffe05e8c2",
@@ -6038,7 +7057,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f403ca006b03c95e2f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f045b5ba3d1268463111",
@@ -6069,7 +7091,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f2fdd774365ef8a39e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4b21c5cbeae79d8a0a4d",
@@ -6100,7 +7125,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2969361c4167089355"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7e2a4753abfa2f1dc1c7",
@@ -6131,7 +7159,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5b289d852d46791430"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-edb1feb919af497b64a6",
@@ -6162,7 +7193,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6660361c88fea3b240"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-429a08b01e77a3588847",
@@ -6193,7 +7227,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-90aae46deb9f8cab72"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2c016d7d035c1df7dd77",
@@ -6224,7 +7261,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8ea0967e06b47ec94f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0638e856f0ff3be77a77",
@@ -6255,7 +7295,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-07ac2685b4bf2bd980"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a9bc0b20fe4d80923729",
@@ -6286,7 +7329,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-23acc78a9828cf440b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5795d64d9555961d73f8",
@@ -6317,7 +7363,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fff363eae3955cdd2a"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d6d7ea8584d2743f5e3c",
@@ -6348,7 +7397,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-754c74efe61c2ae7f3"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-904beb2cf3a941b9a649",
@@ -6379,7 +7431,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-045db4e3483f81721f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-78c0c7b24ce5c1de9767",
@@ -6410,7 +7465,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-aac1348dd47cb49672"
   ],
-  "language": "deu-deu"
+  "sourceLanguageLabel": "deu-deu",
+  "languageScope": {
+    "kind": "pair",
+    "source": "de",
+    "target": "de"
+  },
+  "language": "de-de"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5d5c9211abfe48cd5381",
@@ -6441,7 +7502,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e1c5a9b0387fc4959a"
   ],
-  "language": "deu-spa"
+  "sourceLanguageLabel": "deu-spa",
+  "languageScope": {
+    "kind": "pair",
+    "source": "de",
+    "target": "es"
+  },
+  "language": "de-es"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9cef514bf1a696a9de5d",
@@ -6472,7 +7539,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c0bad677cd4936ea0e"
   ],
-  "language": "deu-eng"
+  "sourceLanguageLabel": "deu-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "de",
+    "target": "en"
+  },
+  "language": "de-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6aefadbb6b7e8ae91551",
@@ -6503,7 +7576,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-32e548eee03420dab0"
   ],
-  "language": "spa-deu"
+  "sourceLanguageLabel": "spa-deu",
+  "languageScope": {
+    "kind": "pair",
+    "source": "es",
+    "target": "de"
+  },
+  "language": "es-de"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e7bf0badb429efc6ca8b",
@@ -6534,7 +7613,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b7ea6a206d36f6ff91"
   ],
-  "language": "spa-spa"
+  "sourceLanguageLabel": "spa-spa",
+  "languageScope": {
+    "kind": "pair",
+    "source": "es",
+    "target": "es"
+  },
+  "language": "es-es"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-380971f9f0603d827a0c",
@@ -6565,7 +7650,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9fe9ca53645419c83c"
   ],
-  "language": "spa-eng"
+  "sourceLanguageLabel": "spa-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "es",
+    "target": "en"
+  },
+  "language": "es-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6d871e6aec4bf2b317b8",
@@ -6596,7 +7687,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b680fe4bc401d9b437"
   ],
-  "language": "eng-deu"
+  "sourceLanguageLabel": "eng-deu",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "de"
+  },
+  "language": "en-de"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-426a8b662c5311716f21",
@@ -6627,7 +7724,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2c4ad626572f33255d"
   ],
-  "language": "eng-spa"
+  "sourceLanguageLabel": "eng-spa",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "es"
+  },
+  "language": "en-es"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-23b6771902a86ddfdd12",
@@ -6658,7 +7761,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0d0c34a0e12021703e"
   ],
-  "language": "eng-eng"
+  "sourceLanguageLabel": "eng-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "en"
+  },
+  "language": "en-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0f0e371e2198f6808f2f",
@@ -6689,7 +7798,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-49b80e0bdd23f96a3b"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-04fd35c425630e4ce03c",
@@ -6720,7 +7832,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c6cf2a22a3a5f2949c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b6a1213c2a32654ed999",
@@ -6751,7 +7866,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-51623c045681e97d57"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-27a856ca35806960d296",
@@ -6782,7 +7900,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-13b972314148a4f90f"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-465b15cca528a0ac0c34",
@@ -6813,6 +7934,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9525a1d865d9f3101a"
   ],
+  "sourceLanguageLabel": "de",
+  "languageScope": {
+    "kind": "single",
+    "language": "de"
+  },
   "language": "de"
 });
 publishedEvaluations.push({
@@ -6844,6 +7970,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3cb8cc473ab3ea2f5e"
   ],
+  "sourceLanguageLabel": "es",
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
   "language": "es"
 });
 publishedEvaluations.push({
@@ -6875,6 +8006,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd6ad970cf93706056"
   ],
+  "sourceLanguageLabel": "fr",
+  "languageScope": {
+    "kind": "single",
+    "language": "fr"
+  },
   "language": "fr"
 });
 publishedEvaluations.push({
@@ -6906,7 +8042,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a031cfaa3983875261"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4ad0721198b00d29d4fc",
@@ -6937,7 +8076,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-22f60404451386527e"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c2c94d283e5d47dedeb7",
@@ -6968,7 +8110,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-153af5039e591c6fee"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ef32eaaaf5afe13cde23",
@@ -6999,7 +8144,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bee82b4b78ca562a5c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f42ed514078bf49045a1",
@@ -7030,7 +8178,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3842e0a627293e4b90"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-24d231b428d7cede3465",
@@ -7061,7 +8212,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ba8ac0e083e18ba226"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2e21d128d8e82a4133ef",
@@ -7092,7 +8246,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-77f1ebb64ae27290c1"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d90b716f5f8ea113a90e",
@@ -7123,7 +8280,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2454047ceeb28c7826"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d1e323b176694cc88185",
@@ -7154,7 +8314,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0ad479b8af2bd0e7f7"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0f9e2de1c8c8158a06cc",
@@ -7185,7 +8348,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-71773b16f20b8f2491"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9db2ee0201f19c78e025",
@@ -7216,7 +8382,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5c5363883ef1706d99"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f7bfe30a059849b19f56",
@@ -7247,7 +8416,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2b1590fd164148b470"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-abb5277f6c1d221e6da1",
@@ -7278,7 +8450,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2135186b796ea272ed"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c68115328e8505a3b98e",
@@ -7309,7 +8484,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-284219513e32c6f4ba"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-911e0d6162b8931a1053",
@@ -7340,7 +8518,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e900e7a2adef7b4652"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-179c2611cc408ee763a9",
@@ -7371,7 +8552,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-576360b0ed871b7ad6"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e1609a098e8608e00af5",
@@ -7402,7 +8586,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-179700c08cf336d89c"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b2ac863eda7c8f8e9680",
@@ -7433,7 +8620,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f4c056c0a63b1c6467"
   ],
-  "language": "default"
+  "sourceLanguageLabel": "default",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fa0d0b0b873af449a156",
@@ -7464,6 +8654,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-357d1ed636ac08e08c"
   ],
+  "sourceLanguageLabel": "en",
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
   "language": "en"
 });
 publishedEvaluations.push({
@@ -7495,6 +8690,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4e99dac3a5c5f043e8"
   ],
+  "sourceLanguageLabel": "de",
+  "languageScope": {
+    "kind": "single",
+    "language": "de"
+  },
   "language": "de"
 });
 publishedEvaluations.push({
@@ -7526,6 +8726,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-69c869ca1d99d1d13e"
   ],
+  "sourceLanguageLabel": "es",
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
   "language": "es"
 });
 publishedEvaluations.push({
@@ -7557,7 +8762,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9bde4265227f1ca134"
   ],
-  "language": "deu-deu"
+  "sourceLanguageLabel": "deu-deu",
+  "languageScope": {
+    "kind": "pair",
+    "source": "de",
+    "target": "de"
+  },
+  "language": "de-de"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f24339ea889694c283f7",
@@ -7588,7 +8799,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-491276f5e8dff76b69"
   ],
-  "language": "deu-eng"
+  "sourceLanguageLabel": "deu-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "de",
+    "target": "en"
+  },
+  "language": "de-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-72452ba118d217b35331",
@@ -7619,7 +8836,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a4fe4c673d23bbe906"
   ],
-  "language": "eng-deu"
+  "sourceLanguageLabel": "eng-deu",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "de"
+  },
+  "language": "en-de"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8f0a620d4c0a2ba44df7",
@@ -7650,7 +8873,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-854973b37bb0c34c15"
   ],
-  "language": "eng-pol"
+  "sourceLanguageLabel": "eng-pol",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "pl"
+  },
+  "language": "en-pl"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d5afa486400b9e4e647e",
@@ -7681,7 +8910,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b75ad0212fe6581b14"
   ],
-  "language": "eng-cmn"
+  "sourceLanguageLabel": "eng-cmn",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "zh"
+  },
+  "language": "en-zh"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cc5fec950a96b4314f52",
@@ -7712,7 +8947,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-deb61a90410c345c92"
   ],
-  "language": "eng-spa"
+  "sourceLanguageLabel": "eng-spa",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "es"
+  },
+  "language": "en-es"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-967bc9fb6535e8d46711",
@@ -7743,7 +8984,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e328d9a889a62799a8"
   ],
-  "language": "eng-fra"
+  "sourceLanguageLabel": "eng-fra",
+  "languageScope": {
+    "kind": "pair",
+    "source": "en",
+    "target": "fr"
+  },
+  "language": "en-fr"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d142ea1d29952d4471cc",
@@ -7774,7 +9021,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8140418ca8bf5b7094"
   ],
-  "language": "pol-eng"
+  "sourceLanguageLabel": "pol-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "pl",
+    "target": "en"
+  },
+  "language": "pl-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0cf951e5f1f24c59d378",
@@ -7805,7 +9058,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2ef47cf04445571624"
   ],
-  "language": "pol-pol"
+  "sourceLanguageLabel": "pol-pol",
+  "languageScope": {
+    "kind": "pair",
+    "source": "pl",
+    "target": "pl"
+  },
+  "language": "pl-pl"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0313f62ed68815d9ea2d",
@@ -7836,7 +9095,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bf55fb152832bad28d"
   ],
-  "language": "cmn-eng"
+  "sourceLanguageLabel": "cmn-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "zh",
+    "target": "en"
+  },
+  "language": "zh-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6e2a484f9503ffe119e5",
@@ -7867,7 +9132,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c6c292914ef62072f9"
   ],
-  "language": "cmn-cmn"
+  "sourceLanguageLabel": "cmn-cmn",
+  "languageScope": {
+    "kind": "pair",
+    "source": "zh",
+    "target": "zh"
+  },
+  "language": "zh-zh"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c6a473330d3a01b89027",
@@ -7898,7 +9169,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0030d3eac343d733ac"
   ],
-  "language": "spa-eng"
+  "sourceLanguageLabel": "spa-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "es",
+    "target": "en"
+  },
+  "language": "es-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-335a53abd05c6293b5f3",
@@ -7929,7 +9206,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ff14c7f78d8a7c5bc4"
   ],
-  "language": "spa-spa"
+  "sourceLanguageLabel": "spa-spa",
+  "languageScope": {
+    "kind": "pair",
+    "source": "es",
+    "target": "es"
+  },
+  "language": "es-es"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-21458096f6329aaa1a8d",
@@ -7960,7 +9243,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-16ce22045b08c19131"
   ],
-  "language": "fra-eng"
+  "sourceLanguageLabel": "fra-eng",
+  "languageScope": {
+    "kind": "pair",
+    "source": "fr",
+    "target": "en"
+  },
+  "language": "fr-en"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3bcd8765074fae122b46",
@@ -7991,7 +9280,13 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c4c0c695bb60652329"
   ],
-  "language": "fra-fra"
+  "sourceLanguageLabel": "fra-fra",
+  "languageScope": {
+    "kind": "pair",
+    "source": "fr",
+    "target": "fr"
+  },
+  "language": "fr-fr"
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9a4f6ea411f1466ca430",
@@ -8016,7 +9311,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-da389fd77197a7451a"
   ],
-  "sourceDocumentRevision": "31b70e2e869a7173562077fd711b654946d38674"
+  "sourceDocumentRevision": "31b70e2e869a7173562077fd711b654946d38674",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-44d8f9b8cb3d65a2b03a",
@@ -8041,7 +9339,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9c8f882cb6722dae53"
   ],
-  "sourceDocumentRevision": "31b70e2e869a7173562077fd711b654946d38674"
+  "sourceDocumentRevision": "31b70e2e869a7173562077fd711b654946d38674",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7ec9b47034615b0a0506",
@@ -8066,7 +9367,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0201a173a516fd4813"
   ],
-  "sourceDocumentRevision": "31b70e2e869a7173562077fd711b654946d38674"
+  "sourceDocumentRevision": "31b70e2e869a7173562077fd711b654946d38674",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-18b694fb9cf3e739129c",
@@ -8091,7 +9395,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6ed54b90ab4e771f36"
   ],
-  "sourceDocumentRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac"
+  "sourceDocumentRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c8002256c2933c13f698",
@@ -8116,7 +9423,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f7d32858eb602998a1"
   ],
-  "sourceDocumentRevision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+  "sourceDocumentRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-387948c66305e9247a56",
@@ -8141,7 +9451,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4557ef9a560ff3fcb6"
   ],
-  "sourceDocumentRevision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+  "sourceDocumentRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-31d3dd503563e3df95af",
@@ -8166,7 +9479,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9f0e07eb84da4732df"
   ],
-  "sourceDocumentRevision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+  "sourceDocumentRevision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-33ae9dc3eccbd1ed2c46",
@@ -8191,7 +9507,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-36ce6507d963987404"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eb4e51743f49a64801bd",
@@ -8216,7 +9535,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-de77fd66e622a8b047"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4bdbd15d35b28b9c545b",
@@ -8241,7 +9563,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-243c5795e438c0f806"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3157dbc843d279db800b",
@@ -8266,7 +9591,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd18d68266f6a25ae7"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f942add64cf4e4392f48",
@@ -8291,7 +9619,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd0b28d593b7ccceb9"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3e2f541414fb599e8aa0",
@@ -8316,7 +9647,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bbbf898ac77f808995"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d94b159432fab83343d0",
@@ -8326,7 +9660,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "LiveCodeBench v4",
   "metric": "published score",
-  "value": 30.0,
+  "value": 30,
   "unit": "score",
   "settings": {
     "tableModelLabel": "SmoLLM3-3B",
@@ -8341,7 +9675,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8c3b4e396822a82422"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ee3cd6e93cdc92f46a3a",
@@ -8366,7 +9703,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-194b6024a1a2525f43"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-04f879e3af0a6fe1c30c",
@@ -8391,7 +9731,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-671f0d0c705e147b14"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bd15e4f1b78dbedc337c",
@@ -8416,7 +9759,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0fa1c99cafeeb83edd"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1afa5234417d1f269517",
@@ -8441,7 +9787,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2022669c1c32150592"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c0dba3a489c92a640d1d",
@@ -8466,7 +9815,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-67795f3391a96dfe1f"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4bd032c6f19e38cdbc95",
@@ -8491,7 +9843,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f1c6d99110c726e47e"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8f776094479972c7392e",
@@ -8516,7 +9871,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1d3c36cd123b2efc11"
   ],
-  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  "sourceDocumentRevision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8b3ac94fbcea6222ae10",
@@ -8541,7 +9899,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ffdfa7bd0a0476c352"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0734ef4b244e90d2afea",
@@ -8566,7 +9927,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-78ce2db0acb3f72053"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4fae56f606033160cc9c",
@@ -8591,7 +9955,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2dc18d94da9169299d"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4db1a489f9ff52d74c62",
@@ -8616,7 +9983,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5ef340ee2823dd424d"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9087bd0723dfcfcf7f4a",
@@ -8641,7 +10011,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8f059a06995803d014"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-09986adb961e9d7cddaa",
@@ -8666,7 +10039,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-77a9a3a624f7c2941a"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-63113b309cfad9ebf1af",
@@ -8691,7 +10067,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-64eef4317f7a3ab34f"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fae661b833d5bdc9c19a",
@@ -8716,7 +10095,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3922779ff2779347cf"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9a1780ee7274ab44666d",
@@ -8741,7 +10123,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-50c2e2228abe297fe9"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-18d9133cd2ebe47803f1",
@@ -8766,7 +10151,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-77dcb40fd671a025ef"
   ],
-  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  "sourceDocumentRevision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-aedbeafa62fa14895254",
@@ -8791,7 +10179,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bb6706a9e377d98674"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e4269c680e39a98ba16e",
@@ -8816,7 +10207,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dcb553119dc89b95fd"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4e679e66eb8500a06fa4",
@@ -8841,7 +10235,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-edaa299648f8366297"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8dade3e73e4f9bd2d2bd",
@@ -8866,7 +10263,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-39d78dae421cfa8396"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-606a78a26b9571cf7f10",
@@ -8891,7 +10291,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c1b4a1ec7efc2a179e"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-286d48b429c70f751233",
@@ -8916,7 +10319,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1b85673adc740ffa00"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0820357a987a79d6c839",
@@ -8941,7 +10347,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-70416f1071ea36262b"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-20e69a7e223d33f5a191",
@@ -8966,7 +10375,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-721ac023dcaf0c7f64"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-218a6eb57c173f07c11b",
@@ -8991,7 +10403,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d7d571d98749ea31e5"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c114a14c88191b2dc60c",
@@ -9016,7 +10431,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ef4a4d4490c0588826"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ac6655aeade0b56cc61a",
@@ -9041,7 +10459,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-10fc3dc00814000b7b"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d4e0b40f15f4acda7e24",
@@ -9051,7 +10472,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Browsecomp",
   "metric": "published score",
-  "value": 61.0,
+  "value": 61,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-35B-A3B",
@@ -9066,7 +10487,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ee8a76d561932bd8f5"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-49d72a4d6dbfa3f702be",
@@ -9091,7 +10515,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-50832de156db9f77d7"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ef00b51b85e67ebff3fb",
@@ -9116,7 +10543,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c00b29f4d4d1a3ce9f"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7f26e8bd9b22d44dbf53",
@@ -9141,7 +10571,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8f192f8f82b0730ffb"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4fe468bd389bc46abdf8",
@@ -9151,7 +10584,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "OCRBench",
   "metric": "published score",
-  "value": 91.0,
+  "value": 91,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-35B-A3B",
@@ -9166,7 +10599,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1f6a37db5650553231"
   ],
-  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754"
+  "sourceDocumentRevision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cb3aebd0a6da8ad605cc",
@@ -9191,7 +10627,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-18bcf51bfe1d1806cf"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2dd0652afc5a77e5f276",
@@ -9216,7 +10655,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-807f44b7ea0815dfa7"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-48adfd2274945b62b63a",
@@ -9241,7 +10683,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3e8232b5ac46be5ded"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-045fe3439030232ebb8e",
@@ -9266,7 +10711,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2d389faca989e5ea5f"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4f0704fdebe3e82ed82d",
@@ -9291,7 +10739,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d0afa7971f75b76787"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bc8d70d939b8f4cc134c",
@@ -9301,7 +10752,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AA-LCR",
   "metric": "published score",
-  "value": 57.0,
+  "value": 57,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-4B",
@@ -9316,7 +10767,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f0d1ecff2637fffa29"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d8db18c8282af2efa86e",
@@ -9341,7 +10795,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-12283a70bee3032777"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e3df9e3472083d43d125",
@@ -9366,7 +10823,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-292598d081791e5104"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-448564997c27ecf9166f",
@@ -9391,7 +10851,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e25490bb6884c89b45"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d065ede8246d64550bde",
@@ -9416,7 +10879,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-482b7643228ac8f71d"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8b3b36b00570f22833a7",
@@ -9426,7 +10892,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "OCRBench",
   "metric": "published score",
-  "value": 85.0,
+  "value": 85,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-4B",
@@ -9441,7 +10907,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-73faf553270309c79a"
   ],
-  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+  "sourceDocumentRevision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5f2fab645d4c9f922bfb",
@@ -9466,7 +10935,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e454d0148fd1dd6f95"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-20547609641430bb3e8c",
@@ -9491,7 +10963,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7f6bde62261afbdc37"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-25ae86378ffff6416f68",
@@ -9516,7 +10991,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-00544b234a41b546f2"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c0955e608506ccf5e902",
@@ -9541,7 +11019,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d684be6112fc388bf7"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-619ac29010e7f42bd77a",
@@ -9566,7 +11047,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-37ace7332dd37bf45c"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7ee91207b55f1da37e7f",
@@ -9576,7 +11060,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AA-LCR",
   "metric": "published score",
-  "value": 63.0,
+  "value": 63,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-9B",
@@ -9591,7 +11075,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-609cfef2f3dc07d3bb"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b4cdbcb25b10c8c4eaa9",
@@ -9616,7 +11103,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-76d56bbf7d0b2ba052"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-205cddd86b5a5840b784",
@@ -9641,7 +11131,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bc599315b6d42a0406"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-154aa73eddb438ed06b1",
@@ -9666,7 +11159,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4fa87c89006bca4171"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fe059217666814a3d9f6",
@@ -9691,7 +11187,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-13826a8e0d45f4ae01"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3f875f4c6cca8e7fb46c",
@@ -9716,7 +11215,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-29805a0758c0687d63"
   ],
-  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  "sourceDocumentRevision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1b61814cd7203854e2c8",
@@ -9741,7 +11243,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-20fefde09d347f674e"
   ],
-  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476"
+  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f408cce2c9950935cfc0",
@@ -9751,7 +11256,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "GPQA",
   "metric": "published score",
-  "value": 64.0,
+  "value": 64,
   "unit": "percent",
   "settings": {
     "tableModelLabel": "NVIDIA-Nemotron-Nano-9B-v2",
@@ -9766,7 +11271,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f1519f5a9c055a902b"
   ],
-  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476"
+  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-23e7eb2ca63522112940",
@@ -9791,7 +11299,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a8c12e20eb58ae7775"
   ],
-  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476"
+  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a498a1568ea15853a887",
@@ -9816,7 +11327,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ac8fcf39b98480977b"
   ],
-  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476"
+  "sourceDocumentRevision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f53ccb76a323cdc3b895",
@@ -9841,7 +11355,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fc1e57142cd6bb92e7"
   ],
-  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5e5e689cf13c892b1475",
@@ -9866,7 +11383,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-56e8650fc15227651d"
   ],
-  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b23c60979922801a433d",
@@ -9891,7 +11411,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7a4640de1e8676a060"
   ],
-  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-23e34247e6e39adc8b08",
@@ -9916,7 +11439,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ef6b55e7a92eb7f6cf"
   ],
-  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+  "sourceDocumentRevision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-565345214774f183dba3",
@@ -9941,7 +11467,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-045edb9912f550e769"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ccfac9172150dca071fd",
@@ -9966,7 +11495,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dc0197e78d54997b63"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0324894b6d4abf0f2d74",
@@ -9991,7 +11523,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6db12c1fb516e19fa9"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4067a8e190fe8da6a4c0",
@@ -10016,7 +11551,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-93c9c28073c86d1964"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-57fef2b4f98c086f5973",
@@ -10041,7 +11579,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5640a8169c9c1b3ac0"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-101b1c240d7fefae0702",
@@ -10066,7 +11607,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bbdf813ecb76f7bdf4"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-45750b1ae4f0636c3a2d",
@@ -10091,7 +11635,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-09d70389dc36955428"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a52eac8e5f3ff4fa0cea",
@@ -10116,7 +11663,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1a5aa484a9eb7eddb9"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-056715a15c553ab00b3f",
@@ -10141,7 +11691,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7c01f495a660b15eeb"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a8061521de872d728e0d",
@@ -10166,7 +11719,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4c011dbc0d7feb81a6"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5aa10b4b9aaef0db9bf4",
@@ -10191,7 +11747,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ff2c06bbd961198762"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a533e7e376a5779e5640",
@@ -10201,7 +11760,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SimpleQA",
   "metric": "published score",
-  "value": 31.0,
+  "value": 31,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Kimi K2 Instruct",
@@ -10216,7 +11775,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f01c16b72d2026af4c"
   ],
-  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50"
+  "sourceDocumentRevision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ec9ee315f56630751166",
@@ -10242,7 +11804,10 @@ publishedEvaluations.push({
     "evidence:v03-8fd0912901fa2ea6d3"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-14e517ba782e20ac3231",
@@ -10268,7 +11833,10 @@ publishedEvaluations.push({
     "evidence:v03-d967cf3d809a246dd9"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6a680a7f029d82a102a5",
@@ -10294,7 +11862,10 @@ publishedEvaluations.push({
     "evidence:v03-20f4b8737574b077dd"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7491a84cfe699bf22c8a",
@@ -10320,7 +11891,10 @@ publishedEvaluations.push({
     "evidence:v03-9723381a00df92b66e"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-709307aac14fd02be637",
@@ -10346,7 +11920,10 @@ publishedEvaluations.push({
     "evidence:v03-78ee370c0fc0a0ed98"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5f11b4c79914681b6e8e",
@@ -10372,7 +11949,10 @@ publishedEvaluations.push({
     "evidence:v03-0d61ae13ede95e4951"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-96afd93cbb706ff4e5c2",
@@ -10398,7 +11978,10 @@ publishedEvaluations.push({
     "evidence:v03-35eed52b1531517980"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f7f9235dcca4baf99f96",
@@ -10424,7 +12007,10 @@ publishedEvaluations.push({
     "evidence:v03-19585d63bffa579dc0"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-476fb9354dac1e5d72d3",
@@ -10450,7 +12036,10 @@ publishedEvaluations.push({
     "evidence:v03-0a5d164cb4e7a5d2ab"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-04f4a272c7a6d11209dd",
@@ -10476,7 +12065,10 @@ publishedEvaluations.push({
     "evidence:v03-10787b12c4383447a9"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ddd06e6bef7fa0022a9e",
@@ -10486,7 +12078,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SWE-Bench Multilingual",
   "metric": "published score",
-  "value": 73.0,
+  "value": 73,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Kimi K2.5 / (Thinking)",
@@ -10502,7 +12094,10 @@ publishedEvaluations.push({
     "evidence:v03-b027f1d5bc40790e0d"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b8945a289fb3435469aa",
@@ -10528,7 +12123,10 @@ publishedEvaluations.push({
     "evidence:v03-9136b80f56636dbda4"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5708c6f1d6078d476562",
@@ -10538,7 +12136,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "LiveCodeBench (v6)",
   "metric": "published score",
-  "value": 85.0,
+  "value": 85,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Kimi K2.5 / (Thinking)",
@@ -10554,7 +12152,10 @@ publishedEvaluations.push({
     "evidence:v03-fcc568ada6cc791bdf"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2d70eaf7de155eb6a0b4",
@@ -10580,7 +12181,10 @@ publishedEvaluations.push({
     "evidence:v03-b001be0e5540c67219"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611"
+  "sourceDocumentRevision": "4d01dfe0332d63057c186e0b262165819efb6611",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d4be9dc11fd9fc8fdb79",
@@ -10605,7 +12209,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0d4378a3b9567106f8"
   ],
-  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f"
+  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8ee4dca57d26608c06f4",
@@ -10630,7 +12237,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3b641b1beb4b8e5f4f"
   ],
-  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f"
+  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5a264ae520867f42d1a5",
@@ -10655,7 +12265,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-55c36c5b908321d5e9"
   ],
-  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f"
+  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-caf2738a7f57336e5f2e",
@@ -10680,7 +12293,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4670c88e2c2ce04a24"
   ],
-  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f"
+  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-360eae1f1623faaab35a",
@@ -10690,7 +12306,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFBench",
   "metric": "published score",
-  "value": 70.0,
+  "value": 70,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.5",
@@ -10705,7 +12321,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cf9ce2ae807abe0ca6"
   ],
-  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f"
+  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-409cdc17e1bbe8bc76fb",
@@ -10730,7 +12349,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fd9a58c6b7deaa8f5b"
   ],
-  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f"
+  "sourceDocumentRevision": "f710177d938eff80b684d42c5aa84b382612f21f",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ab735051ff6eb3e4b2cb",
@@ -10740,7 +12362,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SWE-bench Verified",
   "metric": "published score",
-  "value": 74.0,
+  "value": 74,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -10755,7 +12377,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b98ecb0fae4cbcde1c"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3077ef8f5049ef24879e",
@@ -10780,7 +12405,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e70a540e39cf791956"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2c4695a86a9319a335bd",
@@ -10805,7 +12433,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-41d15af0b2a0bc8610"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3c97a0bdca9f369b6cef",
@@ -10830,7 +12461,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7e6480395f27da5ea0"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4d1eca92b24f7f1944d7",
@@ -10840,7 +12474,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SWE-bench Verified (mini-swe-agent)",
   "metric": "published score",
-  "value": 67.0,
+  "value": 67,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -10855,7 +12489,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b7f76aa8a4e759f265"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7dc30be9f0a5e05cd2d1",
@@ -10880,7 +12517,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-67a8214f73039172d1"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7bb336c5baa0c4c0bb9f",
@@ -10890,7 +12530,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "BrowseComp (context management)",
   "metric": "published score",
-  "value": 62.0,
+  "value": 62,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -10905,7 +12545,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-58ca282387e37ec9fc"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a6daa78e0bb8fbea0cad",
@@ -10915,7 +12558,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME25",
   "metric": "published score",
-  "value": 83.0,
+  "value": 83,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -10930,7 +12573,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c4d9e99ef84b1ab3cf"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-98882f9d04af7de8fd00",
@@ -10940,7 +12586,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU-Pro",
   "metric": "published score",
-  "value": 88.0,
+  "value": 88,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -10955,7 +12601,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bf563e0482171348c0"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9587673ba4f237b48905",
@@ -10965,7 +12614,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "GPQA-D",
   "metric": "published score",
-  "value": 83.0,
+  "value": 83,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -10980,7 +12629,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-52f4e43850eccbadc9"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fee369a8f12f05079f2a",
@@ -11005,7 +12657,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d3f167c9e0736472db"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cf3e20308beb7402944c",
@@ -11015,7 +12670,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SciCode",
   "metric": "published score",
-  "value": 41.0,
+  "value": 41,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -11030,7 +12685,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f773874942881d7459"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-63789d8f2c882ff3d51e",
@@ -11040,7 +12698,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFBench",
   "metric": "published score",
-  "value": 70.0,
+  "value": 70,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -11055,7 +12713,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f665727a962a1d554e"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-aeddab8f7396c9888ffc",
@@ -11065,7 +12726,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AA-LCR",
   "metric": "published score",
-  "value": 62.0,
+  "value": 62,
   "unit": "score",
   "settings": {
     "tableModelLabel": "MiniMax-M2.1",
@@ -11080,7 +12741,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5d3f743c32ac5bd6a8"
   ],
-  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c"
+  "sourceDocumentRevision": "cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ea706cada5cc4b29c610",
@@ -11090,7 +12754,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU-Pro",
   "metric": "published score",
-  "value": 83.0,
+  "value": 83,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3-235B-A22B-Instruct-2507",
@@ -11105,7 +12769,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-81497bf5ddbda2ef68"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f18e8786572cab9475d1",
@@ -11130,7 +12797,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b44ce89dce24909032"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-640dbe23dd559a83302e",
@@ -11155,7 +12825,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-577b1986753f2c0859"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6fbe091f9046b661a627",
@@ -11180,7 +12853,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b1006d1f6568ac1bfe"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6871fb47e98720c4fe3c",
@@ -11205,7 +12881,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-94c05efd4bbc50e5c5"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2785e6dbc03148d7d3f8",
@@ -11230,7 +12909,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-12500c0915fd473480"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-305b4496e217f7bca0ec",
@@ -11255,7 +12937,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-705c1916c6df2f1be8"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1ec30971108c142e5d19",
@@ -11280,7 +12965,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd49012f69212f15e2"
   ],
-  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e"
+  "sourceDocumentRevision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d6fa65c61986ac97c89c",
@@ -11305,7 +12993,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-424db8e7a28e3e48e5"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d8fc9c1d65e3cd992c11",
@@ -11330,7 +13021,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-52ba10ce7824145ff8"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4e7b5368a281750d57d6",
@@ -11340,7 +13034,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFEval",
   "metric": "published score",
-  "value": 95.0,
+  "value": 95,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-27B",
@@ -11355,7 +13049,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-026e30fbc9d320f53d"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a520689af2aac17d4d26",
@@ -11380,7 +13077,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-880f770e9476891075"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-85332fbea44c16fc8a69",
@@ -11405,7 +13105,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-49f7834c4b5fbceb69"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-aa08960ce6aaee57780b",
@@ -11430,7 +13133,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8c0eb9ba1a231d16b4"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d610a334353d47f6a3c2",
@@ -11455,7 +13161,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dab61a2998718df064"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4dff5f44914faf6f69e7",
@@ -11480,7 +13189,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-124d68fb76f0020e12"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2611750c0d79a231bd98",
@@ -11505,7 +13217,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-161009678be1cef8b4"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-44d770dce06dd660a44e",
@@ -11530,7 +13245,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ad4080bd735893a0b2"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e691a4c2d46232c2ad02",
@@ -11555,7 +13273,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0d895674f1c2126219"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-beb895827e098c4acd10",
@@ -11565,7 +13286,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Browsecomp",
   "metric": "published score",
-  "value": 61.0,
+  "value": 61,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-27B",
@@ -11580,7 +13301,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c0e5560249f27f490a"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b6a6dc1c8eb0aaa058ca",
@@ -11605,7 +13329,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b0154c7d0d7ec1f5f9"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-46fa330afa3b2607af5b",
@@ -11630,7 +13357,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-044a7e976753e66e13"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eb72dae227ae1156455a",
@@ -11640,7 +13370,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMMU-Pro",
   "metric": "published score",
-  "value": 75.0,
+  "value": 75,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-27B",
@@ -11655,7 +13385,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6e60eeb78f2c292d79"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b85e5a88e95550043115",
@@ -11680,7 +13413,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cf26b04b7e9bc23226"
   ],
-  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+  "sourceDocumentRevision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fc280aa910606a7a69b9",
@@ -11705,7 +13441,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-634a81e473e844e4b7"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4da8c69feda85e945c2e",
@@ -11730,7 +13469,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-df6e812e1e4c001523"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-82960633545c73186678",
@@ -11755,7 +13497,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b4ae9c60976fc14d54"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7a75f71b6359b5f60002",
@@ -11780,7 +13525,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ff9a20b30192350a09"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e748c3921e88b2b61ac9",
@@ -11805,7 +13553,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bc3397e455ab334361"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6d81d100cf9ea20c8cdf",
@@ -11830,7 +13581,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-980bb4ddb57c2e9138"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-402797389103f0ab59b3",
@@ -11840,7 +13594,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFEval",
   "metric": "published score",
-  "value": 44.0,
+  "value": 44,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-0.8B",
@@ -11855,7 +13609,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5a4a84f46d40a9ffb4"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d0889c908e1d96505fed",
@@ -11865,7 +13622,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFBench",
   "metric": "published score",
-  "value": 21.0,
+  "value": 21,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-0.8B",
@@ -11880,7 +13637,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-383d08b05cd21a9ac3"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1352cd5349e0531292aa",
@@ -11905,7 +13665,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-de78cbac5f08d273ae"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c73562644f9ac1d5c0ee",
@@ -11930,7 +13693,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f473ca3610732d4ae5"
   ],
-  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17"
+  "sourceDocumentRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-daaeba5731d74c44a84c",
@@ -11955,7 +13721,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cd2d363188386e6f6c"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f1c5fc1db0d37d8f9a6c",
@@ -11965,7 +13734,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU-Redux",
   "metric": "published score",
-  "value": 94.0,
+  "value": 94,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-122B-A10B",
@@ -11980,7 +13749,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6d0898100eda193f61"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6e09537fbd00d67010c8",
@@ -12005,7 +13777,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5e11ac0b51e20b634e"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-63c239f6491d04d52e67",
@@ -12030,7 +13805,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f0f8ff1a77b5f3862f"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3939365a225c9aeaf801",
@@ -12055,7 +13833,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-82b178979bded7854c"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-11e19ec0c30fca7bbeef",
@@ -12080,7 +13861,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c679788e9886dc28de"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-919716a0225772ba3ddd",
@@ -12105,7 +13889,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e5fee72a57347be882"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2745df526b3db73919e9",
@@ -12115,7 +13902,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SWE-bench Verified",
   "metric": "published score",
-  "value": 72.0,
+  "value": 72,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-122B-A10B",
@@ -12130,7 +13917,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8ca264f879c6be73ab"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f3d188df1a828a10f125",
@@ -12155,7 +13945,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c15d1b1c902e072e04"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-af90be5c131c56c96fb7",
@@ -12180,7 +13973,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-824d0c06e74b22e275"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f26748a6dd384b0e1ce1",
@@ -12205,7 +14001,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-56a7e50cea31b3191d"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-65d2650ff46d0e5906bb",
@@ -12230,7 +14029,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-87016de1f7b59bb732"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-97b3270ba1b5cdc655bc",
@@ -12255,7 +14057,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-718b56847a5edd92c8"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9b7330a71e87cfcf4b12",
@@ -12280,7 +14085,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-17a8a0ee42c422f5a9"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-73a3bfc7084462ce3002",
@@ -12305,7 +14113,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f3ffc6b48da564ef89"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9c81a1d5ea5912b639bf",
@@ -12330,7 +14141,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5c48f72e5bf3b552c2"
   ],
-  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5"
+  "sourceDocumentRevision": "dc4d348443bc740c68e2d77492492c11606384d5",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0bf8d021d2b65ae44db3",
@@ -12355,7 +14169,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ba9eb4f16b05fd3883"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-89bef2d05ba2f05b463d",
@@ -12380,7 +14197,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ef6212ba3851d8e3e7"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-debfb4841594159689f3",
@@ -12405,7 +14225,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6afc507db625bb396c"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-02a3f58a9e2731601d62",
@@ -12430,7 +14253,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4fa49a043881d55bf4"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a39ffb9055486e27e36b",
@@ -12455,7 +14281,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-89b56cbf43d2b97b3f"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3b47a174c8748cad480c",
@@ -12480,7 +14309,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-721be48e9c45fae76d"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-61f79c7f5449e047b384",
@@ -12505,7 +14337,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-514a7b44c696c1188e"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ba4335fb21ab9c50fcce",
@@ -12530,7 +14365,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd97443787c50c1c11"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-39b695754fdd45d20428",
@@ -12555,7 +14393,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4f5001863f1bfffac7"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f4b1b8b6765842305b5d",
@@ -12580,7 +14421,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-45457c27e53f887e86"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a9f0a362799623841d69",
@@ -12605,7 +14449,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f0872881553f96245f"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0db267ce41d39ea3a5ce",
@@ -12630,7 +14477,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-daa414f05928fe66bf"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-01e2c322263201f8225a",
@@ -12655,7 +14505,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a0fbbbc3d8be5ce5d6"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9e7028d3f04a2219d93c",
@@ -12680,7 +14533,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4751a0d7dd19348c83"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ef4e161dd250e3fd9fd9",
@@ -12690,7 +14546,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMMU",
   "metric": "published score",
-  "value": 85.0,
+  "value": 85,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-397B-A17B",
@@ -12705,7 +14561,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-071c5a462ab83db14c"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f179a5bfa64fc03d0d8a",
@@ -12715,7 +14574,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMMU-Pro",
   "metric": "published score",
-  "value": 79.0,
+  "value": 79,
   "unit": "score",
   "settings": {
     "tableModelLabel": "Qwen3.5-397B-A17B",
@@ -12730,7 +14589,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b5567db95fa4dc66ab"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8ef2e4e7ee29fd315cea",
@@ -12755,7 +14617,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-edcb78af2321c7af64"
   ],
-  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7"
+  "sourceDocumentRevision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-567100f709aca9837eb9",
@@ -12780,7 +14645,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a3cc3bbcd9d5e4dfa4"
   ],
-  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25"
+  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6cc602ce176c486760a7",
@@ -12805,7 +14673,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9e3d019935c900d685"
   ],
-  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25"
+  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-dcfa804a7c15fb31036e",
@@ -12830,7 +14701,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6ecd4d571289a8a979"
   ],
-  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25"
+  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-be729e536b6ac3789f9b",
@@ -12840,7 +14714,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SimpleQA",
   "metric": "published score",
-  "value": 3.0,
+  "value": 3,
   "unit": "score",
   "settings": {
     "tableModelLabel": "phi-4 (14B)",
@@ -12855,7 +14729,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-def237a36ab602cc93"
   ],
-  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25"
+  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ba1d0d44fea5319bfa9d",
@@ -12880,7 +14757,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5587b872e889bfb35d"
   ],
-  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25"
+  "sourceDocumentRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f7a51f0c191beecc9aa4",
@@ -12904,7 +14784,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b5f87d542531ca8938"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-65706698801e39c3c8e2",
@@ -12928,7 +14811,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7c72a52a04727511ff"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-08b4dea79840120b7ca5",
@@ -12952,7 +14838,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-aeb0a0181df10009cb"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-073957521f8e69587b11",
@@ -12976,7 +14865,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-582fbf993e8cc67ff0"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-af841365384ac976d338",
@@ -13000,7 +14892,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-456992d0c39177631e"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ce3c916811e21cac7103",
@@ -13024,7 +14919,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dbd490cdca43b8644d"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c1f29397992f8bece764",
@@ -13048,7 +14946,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4d2f8ef1413997b32b"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f11f9d2f1084af908037",
@@ -13072,7 +14973,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-71a62f5847106ae8f8"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2526b30f358bed966bb3",
@@ -13096,7 +15000,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f32c2b7627ee285b31"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f131b0d34e66606757c0",
@@ -13120,7 +15027,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-aab75e02e387b339ef"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-707b2ebea748c0fd4f5f",
@@ -13144,7 +15054,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a0db4595fdf735ea4b"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-699dbf50268f865d2042",
@@ -13168,7 +15081,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0635bc76f809d53ad6"
   ],
-  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+  "sourceDocumentRevision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fd249a70f0a427aec2cd",
@@ -13192,7 +15108,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-baac642c61d0973a79"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e9cddaacdcf2d265fda9",
@@ -13216,7 +15135,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-72a8723cb1a084375c"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0a499f064a433c88bbd7",
@@ -13240,7 +15162,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-affcb83bf95ccfc035"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0f8298298aa7802a7c9b",
@@ -13264,7 +15189,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dfc014809477d4811c"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e4e8116b70bb661e650a",
@@ -13288,7 +15216,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c066398b80a467a1c6"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-519f4a0c363ffa88d80a",
@@ -13312,7 +15243,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b439547d8eccbff04c"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0ae2f64a2470094a7ac0",
@@ -13322,7 +15256,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Winogrande (5-shot)",
   "metric": "published score",
-  "value": 67.0,
+  "value": 67,
   "unit": "score",
   "settings": {
     "reportedModelColumn": "Phi-4 mini-Ins"
@@ -13336,7 +15270,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bb33c9e9cdc5240335"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5385e505e6cc99e95ba7",
@@ -13360,7 +15297,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d941392606812af54c"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c565331be880d0bfcb9d",
@@ -13370,7 +15310,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH (0-shot, CoT)",
   "metric": "published score",
-  "value": 64.0,
+  "value": 64,
   "unit": "score",
   "settings": {
     "reportedModelColumn": "Phi-4 mini-Ins"
@@ -13384,7 +15324,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b777b86cd11c58d191"
   ],
-  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+  "sourceDocumentRevision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d460d1df0530eee2fcd3",
@@ -13397,8 +15340,8 @@ publishedEvaluations.push({
   "value": 23.9,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-2",
@@ -13410,7 +15353,13 @@ publishedEvaluations.push({
     "evidence:v03-b451b71e5b5ccac6cf"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fd3dfc76ed84148c1e96",
@@ -13423,8 +15372,8 @@ publishedEvaluations.push({
   "value": 94.5,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-2",
@@ -13436,7 +15385,13 @@ publishedEvaluations.push({
     "evidence:v03-7fcee029a0cf7dda14"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7170e3f15aab4302889f",
@@ -13449,8 +15404,8 @@ publishedEvaluations.push({
   "value": 84.5,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-2",
@@ -13462,7 +15417,13 @@ publishedEvaluations.push({
     "evidence:v03-7eb5de22f10f3a4d61"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d0e4940b05d339e6cc00",
@@ -13475,8 +15436,8 @@ publishedEvaluations.push({
   "value": 84.6,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-3",
@@ -13488,7 +15449,13 @@ publishedEvaluations.push({
     "evidence:v03-c678d8193412ab7d08"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5c02bf39a374502f8f15",
@@ -13501,8 +15468,8 @@ publishedEvaluations.push({
   "value": 94.4,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-3",
@@ -13514,7 +15481,13 @@ publishedEvaluations.push({
     "evidence:v03-24cd14d0d4075d0db3"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-95a0b19bc89924e07f8a",
@@ -13527,8 +15500,8 @@ publishedEvaluations.push({
   "value": 60.2,
   "unit": "score",
   "settings": {
-    "Setting": "w/ tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "w/ tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-4",
@@ -13540,7 +15513,13 @@ publishedEvaluations.push({
     "evidence:v03-4c255db8d1c182c03e"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ff3be5085b8225c7668c",
@@ -13553,8 +15532,8 @@ publishedEvaluations.push({
   "value": 62.3,
   "unit": "score",
   "settings": {
-    "Setting": "w/ tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "w/ tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-4",
@@ -13566,7 +15545,13 @@ publishedEvaluations.push({
     "evidence:v03-a858d74999dd4583a1"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-912ce6655f601b6f0559",
@@ -13579,8 +15564,8 @@ publishedEvaluations.push({
   "value": 71.3,
   "unit": "score",
   "settings": {
-    "Setting": "w/ tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "w/ tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-5",
@@ -13592,7 +15577,13 @@ publishedEvaluations.push({
     "evidence:v03-1695395f61f4f64f82"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a0c13b066d7be177633c",
@@ -13605,8 +15596,8 @@ publishedEvaluations.push({
   "value": 61.1,
   "unit": "score",
   "settings": {
-    "Setting": "w/ tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "w/ tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-5",
@@ -13618,7 +15609,13 @@ publishedEvaluations.push({
     "evidence:v03-dc6fee97f83e695a3c"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e521769a980f022f9d3c",
@@ -13631,8 +15628,8 @@ publishedEvaluations.push({
   "value": 41.9,
   "unit": "score",
   "settings": {
-    "Setting": "w/ tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "w/ tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-5",
@@ -13644,7 +15641,13 @@ publishedEvaluations.push({
     "evidence:v03-0b250d9f187e854a72"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-071fbe2ca8c3b409b6d7",
@@ -13657,8 +15660,8 @@ publishedEvaluations.push({
   "value": 44.8,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-5",
@@ -13670,7 +15673,13 @@ publishedEvaluations.push({
     "evidence:v03-cc33ab629b2a31b98f"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5d8f7fab1c28dfb38b51",
@@ -13683,8 +15692,8 @@ publishedEvaluations.push({
   "value": 83.1,
   "unit": "score",
   "settings": {
-    "Setting": "no tools",
-    "reportedModelColumn": "K2 Thinking"
+    "reportedModelColumn": "K2 Thinking",
+    "setting": "no tools"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:moonshotai/Kimi-K2-Thinking:table-5",
@@ -13696,7 +15705,13 @@ publishedEvaluations.push({
     "evidence:v03-3e7cd5da49c41f30db"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55"
+  "sourceDocumentRevision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "setting": "Setting"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-53817549c976ed2801b9",
@@ -13720,7 +15735,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7cd3b8b1fcb10d32a6"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0b4057d5a5bba98fc8a8",
@@ -13744,7 +15762,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e8cc3854a89d91eb79"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b712013ee52539efa49f",
@@ -13768,7 +15789,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9fbb29cf2b82ec5a48"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d9a7f569df7dc08cc2e0",
@@ -13778,7 +15802,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Codeforces ELO",
   "metric": "published score",
-  "value": 1718.0,
+  "value": 1718,
   "unit": "score",
   "settings": {
     "reportedModelColumn": "Gemma 4  26B A4B"
@@ -13792,7 +15816,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0db301fe3cc6ce9e97"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-029a571e5307bd235107",
@@ -13816,7 +15843,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4ff7bc04368f4f17b3"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e3539bb1b49004e682e5",
@@ -13840,7 +15870,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ecaa3c4b9f4d877729"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-668a27ac8bd9a47889ec",
@@ -13864,7 +15897,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cadc96e8cea821d8ff"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2f52d5fc094b52699397",
@@ -13888,7 +15924,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-031a86c48e1b7bfab1"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4148401f92043898a212",
@@ -13912,7 +15951,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d16566e3fc8a8ef085"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a382726a415686c2618a",
@@ -13936,7 +15978,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c1fab69ca81b789e34"
   ],
-  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+  "sourceDocumentRevision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e8a68d6cd390bbd7f6bf",
@@ -13946,7 +15991,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU Pro",
   "metric": "published score",
-  "value": 60.0,
+  "value": 60,
   "unit": "percent",
   "settings": {
     "reportedModelColumn": "Gemma 4  E2B"
@@ -13960,7 +16005,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d095033968b762efdf"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5643f02d24669881c2ed",
@@ -13984,7 +16032,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2bebe32d3b72e1ce5e"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eed88789d56f986d17b4",
@@ -13994,7 +16045,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "LiveCodeBench v6",
   "metric": "published score",
-  "value": 44.0,
+  "value": 44,
   "unit": "percent",
   "settings": {
     "reportedModelColumn": "Gemma 4  E2B"
@@ -14008,7 +16059,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-efa38efbac174181a8"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-db6fe5ce35a853222da8",
@@ -14018,7 +16072,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Codeforces ELO",
   "metric": "published score",
-  "value": 633.0,
+  "value": 633,
   "unit": "score",
   "settings": {
     "reportedModelColumn": "Gemma 4  E2B"
@@ -14032,7 +16086,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a78735470d3413e84b"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-63b94c2dca47ba7b3b2f",
@@ -14056,7 +16113,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3c2dad70e67fbf22b2"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d30b7ee8b91670117a9b",
@@ -14080,7 +16140,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-da6f625438b590e8ac"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1f1d43c989e4003874d0",
@@ -14104,7 +16167,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1d67708169d2afc12b"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a08efc74ab4e5367dbcb",
@@ -14128,7 +16194,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-35a2195c4917f3f279"
   ],
-  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  "sourceDocumentRevision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cf767d1f33dd7ea1339c",
@@ -14141,10 +16210,10 @@ publishedEvaluations.push({
   "value": 69.4,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "# Shots": "5",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "5",
+    "sourceMetric": "macro_avg/acc",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14154,7 +16223,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6598c05a8514169ccd"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0968909a22b62a98b765",
@@ -14164,13 +16241,13 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU (CoT)",
   "metric": "macro_avg/acc",
-  "value": 73.0,
+  "value": 73,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "# Shots": "0",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "macro_avg/acc",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14180,7 +16257,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c471860c9b66a9dda7"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-919ba0624d0f5b5f681f",
@@ -14193,10 +16278,10 @@ publishedEvaluations.push({
   "value": 48.3,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "# Shots": "5",
-    "Metric": "micro_avg/acc_char",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "5",
+    "sourceMetric": "micro_avg/acc_char",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14206,7 +16291,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-897443301c69a4eda5"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-387a3da88986dc220778",
@@ -14219,8 +16312,8 @@ publishedEvaluations.push({
   "value": 80.4,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14230,7 +16323,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-37d4219265ea3768c0"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-86876908c842ccdadc3c",
@@ -14243,10 +16342,10 @@ publishedEvaluations.push({
   "value": 83.4,
   "unit": "score",
   "settings": {
-    "Category": "Reasoning",
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "acc",
+    "category": "Reasoning"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14256,7 +16355,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4fc51950258ff8440e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fbf752a477cde63dbf54",
@@ -14269,10 +16376,10 @@ publishedEvaluations.push({
   "value": 30.4,
   "unit": "score",
   "settings": {
-    "Category": "Reasoning",
-    "# Shots": "0",
-    "Metric": "em",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "em",
+    "category": "Reasoning"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14282,7 +16389,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-00a4a5e2743b510d75"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0605fbaa6dbf2c54ad39",
@@ -14295,10 +16410,10 @@ publishedEvaluations.push({
   "value": 72.6,
   "unit": "score",
   "settings": {
-    "Category": "Code",
-    "# Shots": "0",
-    "Metric": "pass@1",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "pass@1",
+    "category": "Code"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14308,7 +16423,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d31dae9d118017932c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fd960666deb51a267ecd",
@@ -14321,10 +16444,10 @@ publishedEvaluations.push({
   "value": 72.8,
   "unit": "score",
   "settings": {
-    "Category": "Code",
-    "# Shots": "0",
-    "Metric": "pass@1",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "pass@1",
+    "category": "Code"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14334,7 +16457,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-89bd6d952d2fdfd8ea"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c94f299db0f738eebbcb",
@@ -14347,9 +16478,9 @@ publishedEvaluations.push({
   "value": 84.5,
   "unit": "score",
   "settings": {
-    "# Shots": "8",
-    "Metric": "em_maj1@1",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "8",
+    "sourceMetric": "em_maj1@1"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14359,7 +16490,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-fea46d0155df8674ab"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1e8e893ca6a44ca11dc9",
@@ -14372,9 +16510,9 @@ publishedEvaluations.push({
   "value": 51.9,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "final_em",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "final_em"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14384,7 +16522,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f79b0760a6779c2c0d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b0583b48fcdc20a60d89",
@@ -14397,10 +16542,10 @@ publishedEvaluations.push({
   "value": 76.1,
   "unit": "score",
   "settings": {
-    "Category": "Tool Use",
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.1 8B Instruct"
+    "reportedModelColumn": "Llama 3.1 8B Instruct",
+    "shots": "0",
+    "sourceMetric": "acc",
+    "category": "Tool Use"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-8B-Instruct:table-6",
@@ -14410,7 +16555,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b8bee720eb4898794c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-710aa22c95c9d3fbdafb",
@@ -14423,10 +16576,10 @@ publishedEvaluations.push({
   "value": 83.6,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "# Shots": "5",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "5",
+    "sourceMetric": "macro_avg/acc",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14436,7 +16589,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-291ecdf3dbbd76f586"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4067010ba1955951fe7a",
@@ -14446,13 +16607,13 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU (CoT)",
   "metric": "macro_avg/acc",
-  "value": 86.0,
+  "value": 86,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "# Shots": "0",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "macro_avg/acc",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14462,7 +16623,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7cf02abe2ffce335c6"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c2d10b971da0ab5ef109",
@@ -14475,10 +16644,10 @@ publishedEvaluations.push({
   "value": 66.4,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "# Shots": "5",
-    "Metric": "micro_avg/acc_char",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "5",
+    "sourceMetric": "micro_avg/acc_char",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14488,7 +16657,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-92aafc2be0e2331947"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0cd8e8abffe07c5434d1",
@@ -14501,8 +16678,8 @@ publishedEvaluations.push({
   "value": 87.5,
   "unit": "score",
   "settings": {
-    "Category": "General",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "category": "General"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14512,7 +16689,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-a0891ee5aa39152a6c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-37cee70749d4908a6261",
@@ -14525,10 +16708,10 @@ publishedEvaluations.push({
   "value": 94.8,
   "unit": "score",
   "settings": {
-    "Category": "Reasoning",
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "acc",
+    "category": "Reasoning"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14538,7 +16721,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e576dd10945dcba473"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-83e169935cc91e731ad9",
@@ -14551,10 +16742,10 @@ publishedEvaluations.push({
   "value": 46.7,
   "unit": "score",
   "settings": {
-    "Category": "Reasoning",
-    "# Shots": "0",
-    "Metric": "em",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "em",
+    "category": "Reasoning"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14564,7 +16755,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c401ee4a1f15ed36b5"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bfed0143a9f8ac792ad4",
@@ -14577,10 +16776,10 @@ publishedEvaluations.push({
   "value": 80.5,
   "unit": "score",
   "settings": {
-    "Category": "Code",
-    "# Shots": "0",
-    "Metric": "pass@1",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "pass@1",
+    "category": "Code"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14590,7 +16789,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-975a32d369831a5ff5"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c92ca8dfd1fc6e003b23",
@@ -14600,13 +16807,13 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MBPP ++ base version",
   "metric": "pass@1",
-  "value": 86.0,
+  "value": 86,
   "unit": "score",
   "settings": {
-    "Category": "Code",
-    "# Shots": "0",
-    "Metric": "pass@1",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "pass@1",
+    "category": "Code"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14616,7 +16823,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4cc3da09dbd8d5f790"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-341e16c78f8d11cc5d8c",
@@ -14629,9 +16844,9 @@ publishedEvaluations.push({
   "value": 95.1,
   "unit": "score",
   "settings": {
-    "# Shots": "8",
-    "Metric": "em_maj1@1",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "8",
+    "sourceMetric": "em_maj1@1"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14641,7 +16856,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c3e6ccd4f4731b7ae4"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0859407943e8737c4a42",
@@ -14651,12 +16873,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Math",
   "metric": "final_em",
-  "value": 68.0,
+  "value": 68,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "final_em",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "final_em"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14666,7 +16888,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1740b25324456fb2de"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c093fefc8638c69a968b",
@@ -14679,10 +16908,10 @@ publishedEvaluations.push({
   "value": 84.8,
   "unit": "score",
   "settings": {
-    "Category": "Tool Use",
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.1 70B Instruct"
+    "reportedModelColumn": "Llama 3.1 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "acc",
+    "category": "Tool Use"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.1-70B-Instruct:table-6",
@@ -14692,7 +16921,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d3d4f2edd262cfcd85"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0afe6f7ebde2e8dc4a3e",
@@ -14705,9 +16942,9 @@ publishedEvaluations.push({
   "value": 49.3,
   "unit": "score",
   "settings": {
-    "# Shots": "5",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "5",
+    "sourceMetric": "macro_avg/acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14717,7 +16954,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f7d5255a7835961a6c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fa2e2448748ea648a19a",
@@ -14730,9 +16974,9 @@ publishedEvaluations.push({
   "value": 59.5,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "Avg(Prompt/Instruction acc Loose/Strict)",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "0",
+    "sourceMetric": "Avg(Prompt/Instruction acc Loose/Strict)"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14742,7 +16986,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4286c3489a0819608b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-49449011f144bbbc3fa2",
@@ -14755,9 +17006,9 @@ publishedEvaluations.push({
   "value": 44.4,
   "unit": "score",
   "settings": {
-    "# Shots": "8",
-    "Metric": "em_maj1@1",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "8",
+    "sourceMetric": "em_maj1@1"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14767,7 +17018,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6b58f81d1d60472732"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-30e08fe2f370b1bf4bb0",
@@ -14780,9 +17038,9 @@ publishedEvaluations.push({
   "value": 30.6,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "final_em",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "0",
+    "sourceMetric": "final_em"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14792,7 +17050,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-bc355ee6c7f0a46125"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a85e12d9b25b20c42185",
@@ -14805,9 +17070,9 @@ publishedEvaluations.push({
   "value": 59.4,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14817,7 +17082,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-2c486cc67d872f68bf"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-de6a3f9a76e814086e8c",
@@ -14830,9 +17102,9 @@ publishedEvaluations.push({
   "value": 27.2,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14842,7 +17114,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-ac2ea1ef44fc4bfab7"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c0d765ae3872dcd0e439",
@@ -14855,9 +17134,9 @@ publishedEvaluations.push({
   "value": 41.2,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14867,7 +17146,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-df57a637be0d574179"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a63c6a53d598c62f831a",
@@ -14880,9 +17166,9 @@ publishedEvaluations.push({
   "value": 25.7,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 1B bf16"
+    "reportedModelColumn": "Llama 3.2 1B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-1B-Instruct:table-6",
@@ -14892,7 +17178,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b23c5c4007e50cba56"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b684adc79e4779486305",
@@ -14905,9 +17198,9 @@ publishedEvaluations.push({
   "value": 63.4,
   "unit": "score",
   "settings": {
-    "# Shots": "5",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "5",
+    "sourceMetric": "macro_avg/acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -14917,7 +17210,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4582930a5c2c33ac21"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f54ded9d4ba5c6934dc3",
@@ -14930,9 +17230,9 @@ publishedEvaluations.push({
   "value": 77.4,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "Avg(Prompt/Instruction acc Loose/Strict)",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "0",
+    "sourceMetric": "Avg(Prompt/Instruction acc Loose/Strict)"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -14942,7 +17242,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f6f49c515ca9db08e9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2bfe61aa930d11fb313b",
@@ -14955,9 +17262,9 @@ publishedEvaluations.push({
   "value": 77.7,
   "unit": "score",
   "settings": {
-    "# Shots": "8",
-    "Metric": "em_maj1@1",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "8",
+    "sourceMetric": "em_maj1@1"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -14967,7 +17274,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4ca0626150939a18c8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c048134aa0d9da73f228",
@@ -14977,12 +17291,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH (CoT)",
   "metric": "final_em",
-  "value": 48.0,
+  "value": 48,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "final_em",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "0",
+    "sourceMetric": "final_em"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -14992,7 +17306,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-826b68ad0b8c4e7b8e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-af8971cacfce33ceb7b1",
@@ -15005,9 +17326,9 @@ publishedEvaluations.push({
   "value": 78.6,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -15017,7 +17338,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-3446abfd062c6fd778"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-39d9e2ae36a4bb6aa4d2",
@@ -15030,9 +17358,9 @@ publishedEvaluations.push({
   "value": 32.8,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -15042,7 +17370,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-aadc1d94c23d69e2df"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-31740868b1f32fa24b7c",
@@ -15055,9 +17390,9 @@ publishedEvaluations.push({
   "value": 69.8,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -15067,7 +17402,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7fe10b1f43f260f8dc"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4fe28119d10392ff5c39",
@@ -15077,12 +17419,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "BFCL V2",
   "metric": "acc",
-  "value": 67.0,
+  "value": 67,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama 3.2 3B bf16"
+    "reportedModelColumn": "Llama 3.2 3B bf16",
+    "shots": "0",
+    "sourceMetric": "acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.2-3B-Instruct:table-6",
@@ -15092,7 +17434,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-8673e9a2fe555d6d13"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4e80c5c0d3de9be18984",
@@ -15102,12 +17451,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU (CoT)",
   "metric": "macro_avg/acc",
-  "value": 86.0,
+  "value": 86,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "macro_avg/acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15117,7 +17466,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-3f136d361f147a25f9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-24ef7d48b3e3f59a8b94",
@@ -15130,9 +17486,9 @@ publishedEvaluations.push({
   "value": 68.9,
   "unit": "score",
   "settings": {
-    "# Shots": "5",
-    "Metric": "macro_avg/acc",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "5",
+    "sourceMetric": "macro_avg/acc"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15142,7 +17498,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-ee4b503802de6a8b7d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7aa7f20b7b5bbdfa18fc",
@@ -15155,8 +17518,8 @@ publishedEvaluations.push({
   "value": 92.1,
   "unit": "score",
   "settings": {
-    "Category": "Steerability",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "category": "Steerability"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15166,7 +17529,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-2e52b2e61d1eb8e2f2"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a6407403baf631ea14ef",
@@ -15179,10 +17548,10 @@ publishedEvaluations.push({
   "value": 50.5,
   "unit": "score",
   "settings": {
-    "Category": "Reasoning",
-    "# Shots": "0",
-    "Metric": "acc",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "acc",
+    "category": "Reasoning"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15192,7 +17561,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-73af9d387155454d25"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-02c8d1a3a01d5473d90a",
@@ -15205,10 +17582,10 @@ publishedEvaluations.push({
   "value": 88.4,
   "unit": "score",
   "settings": {
-    "Category": "Code",
-    "# Shots": "0",
-    "Metric": "pass@1",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "pass@1",
+    "category": "Code"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15218,7 +17595,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e1678af518eb00d542"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-01d4430490008da2f75a",
@@ -15231,9 +17616,9 @@ publishedEvaluations.push({
   "value": 87.6,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "pass@1",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "pass@1"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15243,7 +17628,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-3cb42c849ec9946b5e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2f1fc4ff0e901fea3a04",
@@ -15253,12 +17645,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Math",
   "metric": "sympy_intersection_score",
-  "value": 77.0,
+  "value": 77,
   "unit": "score",
   "settings": {
-    "# Shots": "0",
-    "Metric": "sympy_intersection_score",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "sympy_intersection_score"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15268,7 +17660,14 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f5c5c26f3c2cfecb2b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c74df936524a32345fcf",
@@ -15281,10 +17680,10 @@ publishedEvaluations.push({
   "value": 77.3,
   "unit": "score",
   "settings": {
-    "Category": "Tool Use",
-    "# Shots": "0",
-    "Metric": "overall_ast_summary/macro_avg/valid",
-    "reportedModelColumn": "Llama-3.3 70B Instruct"
+    "reportedModelColumn": "Llama-3.3 70B Instruct",
+    "shots": "0",
+    "sourceMetric": "overall_ast_summary/macro_avg/valid",
+    "category": "Tool Use"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "reviewed:meta-llama/Llama-3.3-70B-Instruct:table-5",
@@ -15294,7 +17693,15 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-fec2ec4c93cbe23008"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "shots": "# Shots",
+    "sourceMetric": "Metric",
+    "category": "Category"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0760cba4af4e0ff5d490",
@@ -15304,7 +17711,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SWE Bench Verified",
   "metric": "published score",
-  "value": 68.0,
+  "value": 68,
   "unit": "percent",
   "settings": {
     "reportedModelRow": "Devstral Small 2",
@@ -15319,7 +17726,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ce6205e823042a226b"
   ],
-  "sourceDocumentRevision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128"
+  "sourceDocumentRevision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ecd90c3b2f7d99423fd5",
@@ -15344,7 +17754,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f5a0ab8306eae2be5b"
   ],
-  "sourceDocumentRevision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128"
+  "sourceDocumentRevision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ee3911853bb770a6ab42",
@@ -15369,7 +17782,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2efeefc38aef9be173"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d9aecac4259a165d111a",
@@ -15394,7 +17810,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5228387d70280db338"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e6354baed0398c03eb10",
@@ -15419,7 +17838,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-89ef60282d5d4d92d9"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1d592d4797e5f8af90c9",
@@ -15444,7 +17866,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-538015cc2f2e885663"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-61955078fb4d70bf0727",
@@ -15469,7 +17894,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2b4a17343e4a34aa23"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f5e808973c727b8755d8",
@@ -15494,7 +17922,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-102683cf64a1a3c149"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-91bc658a07c60444ae3b",
@@ -15519,7 +17950,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-60dae1fe04cebd9553"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6c7bcdccf4ff1977c535",
@@ -15544,7 +17978,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a5316d53b895ca0b66"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8907dfadffe58a1ed243",
@@ -15554,7 +17991,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMMU",
   "metric": "published score",
-  "value": 64.0,
+  "value": 64,
   "unit": "percent",
   "settings": {
     "reportedModelRow": "Small 3.1 24B Instruct",
@@ -15569,7 +18006,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bdf3aba5b3f4da132d"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1645734187c0b6e935d6",
@@ -15594,7 +18034,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-705768ade0aaefae9d"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-338b3b53e89594d05d8f",
@@ -15619,7 +18062,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6ae8345c9be5991bc8"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6a8fbf93298009d4e939",
@@ -15644,7 +18090,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5e9a839763946bb9a2"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8be28143537b47daaa71",
@@ -15669,7 +18118,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6bcd567069fccf4d65"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-482172532065a56d1a51",
@@ -15694,7 +18146,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9d7392e8a4341a21b3"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bbdcfac8bdb0232e6134",
@@ -15719,7 +18174,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-45d73e690930d2916d"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-40efcde47ca0b1252f59",
@@ -15744,7 +18202,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cbc322ec47811aaa9b"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9c821780ef8395a08757",
@@ -15769,7 +18230,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9f5ab31c4f79b8ba20"
   ],
-  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+  "sourceDocumentRevision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d8eb49f193f151fcae43",
@@ -15794,7 +18258,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-51280854ac7958d29d"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-07a2f9dc941dfd1ea59c",
@@ -15804,7 +18271,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMMU",
   "metric": "published score",
-  "value": 42.0,
+  "value": 42,
   "unit": "score",
   "settings": {
     "reportedModelRow": "SmolVLM2 2.2B",
@@ -15819,7 +18286,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-05915d68956d9c7224"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1473f7fa812cab18092c",
@@ -15844,7 +18314,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d38cac5b4a1e9d6a58"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-206281c80d5901b91ba5",
@@ -15854,7 +18327,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMStar",
   "metric": "published score",
-  "value": 46.0,
+  "value": 46,
   "unit": "score",
   "settings": {
     "reportedModelRow": "SmolVLM2 2.2B",
@@ -15869,7 +18342,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fd40c99f85aa5ea522"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-07ee94e62ef96e437ca4",
@@ -15879,7 +18355,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AI2D",
   "metric": "published score",
-  "value": 70.0,
+  "value": 70,
   "unit": "score",
   "settings": {
     "reportedModelRow": "SmolVLM2 2.2B",
@@ -15894,7 +18370,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2d3b0ff63358ed181f"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a621a00f1812bbb6f67c",
@@ -15919,7 +18398,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0669fd23c6a9c4e02a"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c1d074a1800ba213d250",
@@ -15929,7 +18411,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Science_QA",
   "metric": "published score",
-  "value": 90.0,
+  "value": 90,
   "unit": "score",
   "settings": {
     "reportedModelRow": "SmolVLM2 2.2B",
@@ -15944,7 +18426,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e947b76d7046f9beab"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c6322596e1fe72b0912d",
@@ -15969,7 +18454,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2dd7d08966a53cfc9d"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ce26dd9a89a1aa5122d7",
@@ -15994,7 +18482,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f1e279d37cd9487d3a"
   ],
-  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4"
+  "sourceDocumentRevision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-dc39a5c29d9edec552b6",
@@ -16019,7 +18510,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9273b8ea02515b5c2b"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d0848745635d86d6ffaa",
@@ -16044,7 +18538,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bdbabd518cce5ea16d"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2bdd83ffdf5447b6f2ac",
@@ -16069,7 +18566,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-711d42a4f811383559"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-988f10332c4b10524a37",
@@ -16094,7 +18594,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a76d33b2bdd0ef9b8d"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5849ac4435fdb82ba040",
@@ -16119,7 +18622,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e3bb1ccb8fe36cd874"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d0bcd0636590b5c41539",
@@ -16144,7 +18650,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a1d8be057b3ab7610a"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6f80d29678adb4de1678",
@@ -16169,7 +18678,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bb6ffe40bd251dd88e"
   ],
-  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9"
+  "sourceDocumentRevision": "9cfeff2df7d40d1b78e75e5e9cebec92a99813c9",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6c4588351be1be00ade4",
@@ -16194,7 +18706,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-57fb76d862249d80fa"
   ],
-  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c"
+  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-354167f74bca1df85e40",
@@ -16219,7 +18734,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-837711b5184f904089"
   ],
-  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c"
+  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5fe4dcbe547a7ae3280f",
@@ -16244,7 +18762,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ec71ca03dc253b8aa2"
   ],
-  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c"
+  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f9cf67d050bc7de68e70",
@@ -16254,7 +18775,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "STS (10 datasets)",
   "metric": "published score",
-  "value": 85.0,
+  "value": 85,
   "unit": "score",
   "settings": {
     "reportedModelRow": "mxbai-embed-large-v1",
@@ -16269,7 +18790,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6335262e1dd2fd3f4e"
   ],
-  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c"
+  "sourceDocumentRevision": "b33106f585b9ce46904ad7443a3b52b7a63e231c",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4dc5729296e880258837",
@@ -16279,7 +18803,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME 24",
   "metric": "published score",
-  "value": 86.0,
+  "value": 86,
   "unit": "score",
   "settings": {
     "reportedModelRow": "DeepSeek-R1-0528-Qwen3-8B",
@@ -16294,7 +18818,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7d6ab09b672202f52e"
   ],
-  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa"
+  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-40cac1c816aafe418428",
@@ -16319,7 +18846,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ac8b217cf53ff9b333"
   ],
-  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa"
+  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-97aa5944d4718ea37c01",
@@ -16344,7 +18874,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2f3a4bbfc8fea672a0"
   ],
-  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa"
+  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6b4d20e228391f1f1427",
@@ -16369,7 +18902,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b79316f4a572c5bd56"
   ],
-  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa"
+  "sourceDocumentRevision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ceec6df22332c29f0cbd",
@@ -16395,7 +18931,10 @@ publishedEvaluations.push({
     "evidence:v03-619eb7d2fc45aa24e1"
   ],
   "mode": "instruct",
-  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308"
+  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b4c064bd75417f279e10",
@@ -16421,7 +18960,10 @@ publishedEvaluations.push({
     "evidence:v03-71390a7fe78a48279e"
   ],
   "mode": "instruct",
-  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308"
+  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8a06dd91bd4c7750235e",
@@ -16447,7 +18989,10 @@ publishedEvaluations.push({
     "evidence:v03-481a9dd816ba737417"
   ],
   "mode": "instruct",
-  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308"
+  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-540313376423ddf3c605",
@@ -16473,7 +19018,10 @@ publishedEvaluations.push({
     "evidence:v03-b9b9de51de056b45e0"
   ],
   "mode": "instruct",
-  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308"
+  "sourceDocumentRevision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-78a951297a474b6de5ac",
@@ -16497,7 +19045,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f8c12513334018d35f"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eccc0255cc9185408919",
@@ -16521,7 +19072,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-45e2ec43ef8c637b98"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7055914fe6ba211231f8",
@@ -16545,7 +19099,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-cb26b554b969cb6d79"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-972a3088d0701fae0b8d",
@@ -16569,7 +19126,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e835e3c3538c035c00"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6e3c62be17211013a4a5",
@@ -16593,7 +19153,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-123dc1e1ec5148e722"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e3c7dd477666fcac9019",
@@ -16617,7 +19180,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-8b5eb493e46a1db7bf"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-430a4b63e25594e1c50c",
@@ -16641,7 +19207,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-a17a1f57f77e2ce149"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1007e4cf361aa88e7283",
@@ -16665,7 +19234,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-57da6603b4e142515b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-171958bf65364975e479",
@@ -16689,7 +19261,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-84780bc1407b1f6b56"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-caaa151bb5da1b572aa1",
@@ -16713,7 +19288,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-da3cd6727a322f943b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5407f92379ad24507072",
@@ -16737,7 +19315,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-5b6eaa067a241f9c1a"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1765f88e519dd4ae8321",
@@ -16761,7 +19342,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b89bdc671b7ed416e0"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-42ecc9de0b4ef1e855fe",
@@ -16785,7 +19369,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7181bc007f5aa130a2"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-61e4ff96cc729c6fe90b",
@@ -16809,7 +19396,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-926c13c84448996b6a"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-44fbe152c31bd67643d2",
@@ -16819,7 +19409,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MGSM",
   "metric": "accuracy",
-  "value": 67.0,
+  "value": 67,
   "unit": "percent",
   "settings": {
     "aggregation": "multilingual mean as reported",
@@ -16833,7 +19423,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-65ead502f71faba46b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e5b7937126c072a04ef4",
@@ -16856,7 +19449,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-20659151a0566f0eca"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-28970b681c6c8c73ec31",
@@ -16879,7 +19475,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c385746c7cf0d95ea3"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-97aaa877dc76feec5db1",
@@ -16903,7 +19502,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6855a1faadcfadaab5"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-00ffe955560e221aa8e1",
@@ -16927,7 +19529,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-230b163afdbe8ca666"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-49a19ca71a4ddde6b30c",
@@ -16951,7 +19556,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-75f5224737e0d901e7"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5cfae672664f2bc783d1",
@@ -16974,7 +19582,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e75fb72190ac69ddb6"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ed7fd1724dd97a4ecedb",
@@ -16997,7 +19608,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-437ec5c55b43512b05"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6ff01d6a0fd784f50fc4",
@@ -17022,7 +19636,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7529245c57d5cdc88a"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5b53673f48c8141baa57",
@@ -17047,7 +19664,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-ec6e94b93990cfeaf0"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3fdc583f953cf9f38c7a",
@@ -17072,7 +19692,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4f123b82aeae02bfc4"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bd35d5bcdffac8c6653c",
@@ -17097,7 +19720,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-dbb7ec5589423c63ce"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-50fe2f8e955bfbfa17fd",
@@ -17122,7 +19748,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-031ee28b7ab1257753"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6f53698cbaa0e7f5c592",
@@ -17147,7 +19776,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1626164eed84561a66"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b7dbdbaddfed6ee3d54c",
@@ -17162,7 +19794,7 @@ publishedEvaluations.push({
   "settings": {
     "languageCount": 66,
     "aggregation": "mean over languages",
-    "standardDeviation": 14.0
+    "standardDeviation": 14
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2603.11510v1#S5.T5",
@@ -17172,7 +19804,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f3c9d6966e12230594"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fdbdd313a76cb1910258",
@@ -17182,7 +19817,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "WMT24++",
   "metric": "ChrF",
-  "value": 46.0,
+  "value": 46,
   "unit": "score",
   "settings": {
     "languageCount": 55,
@@ -17197,7 +19832,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-77b7b69659cab2b94c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-84fadca214cac876f3bc",
@@ -17223,6 +19861,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b1a7b2f675c7703d7d"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -17249,7 +19892,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-18f730d68be79006c8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-599abd93c09441891c54",
@@ -17277,7 +19923,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-33e2ae6d31ea4f95f2"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-78a7f45942940a2346d6",
@@ -17303,7 +19952,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f4ed1691156baf06b9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-db644269de5befcb7f0f",
@@ -17329,7 +19981,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-fca67842c3234a4c4d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-252f870248e4554c5b5b",
@@ -17355,7 +20010,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-9708e9fa3655c2fe14"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bc8e6858755732f1f51c",
@@ -17384,7 +20042,10 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:v03-ffb7e4cc418deacbf8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3ac1b6f402fa4befbdfe",
@@ -17410,7 +20071,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7fb6d32c90194f3a1d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c9580a1a587f5529ef20",
@@ -17420,7 +20084,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH",
   "metric": "Accuracy",
-  "value": 48.0,
+  "value": 48,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
@@ -17436,7 +20100,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-0560b845ade083c265"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-703956e3e64782bd96fe",
@@ -17462,7 +20129,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-df43aeafbe890242b1"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6245463ac798088658f3",
@@ -17488,7 +20158,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-0b17c142223cc265b4"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ad158c5464875c488d86",
@@ -17516,7 +20189,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-9af0d6c33639b06347"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-91439a58a48e710df572",
@@ -17542,7 +20218,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d0beb1fa5639bc26ff"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f6135c908f0e4fe2b1a2",
@@ -17568,7 +20247,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e22116ec8b9aeb992e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1645981b551fc2c4e465",
@@ -17578,7 +20260,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SimpleQA",
   "metric": "published score",
-  "value": 4.0,
+  "value": 4,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
@@ -17594,7 +20276,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-bfe15578064c7e9e57"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-80d042e95411aae9479e",
@@ -17623,7 +20308,10 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:v03-6479c6a9dcba3c504f"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-712af78a63b5f7f2a1dd",
@@ -17649,7 +20337,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-27f94e611f2d2198a3"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-85e3a164a289ef4fe067",
@@ -17675,7 +20366,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-46a670d70c90019120"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-88ab376422e665decb71",
@@ -17685,7 +20379,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "HiddenMath",
   "metric": "Accuracy",
-  "value": 43.0,
+  "value": 43,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
@@ -17701,7 +20395,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-cbacffae44b3b82b21"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7ddcf2bde404c96f05f4",
@@ -17727,7 +20424,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-0ad8a9a41f9067b66b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2e967f5af8952841f65a",
@@ -17753,7 +20453,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1cb0a8fe2dd9547ce6"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3bedbc7a5194ab892ecd",
@@ -17781,7 +20484,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-dd113b62862de93610"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b5bae3cda9bf90330705",
@@ -17807,7 +20513,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7233d47c4660ed56eb"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a12232802a71f57f7da6",
@@ -17833,7 +20542,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-faaba4a8ea65b58965"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-61d8aa503ac339bc2370",
@@ -17859,7 +20571,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6840727db4ba9fe1b9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d8a3b874569de72a868f",
@@ -17888,7 +20603,10 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:v03-dea8bb32e0260b45dd"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2aeb0b4c2ba3edeb938a",
@@ -17914,7 +20632,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-15f7e00da7cdb39423"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-08ca893dfc9cc6460597",
@@ -17940,7 +20661,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-5cf591c05259603e72"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b44025dfacba6756589a",
@@ -17966,7 +20690,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-ff26ef690ea993c243"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-946a6b2f86840ef6c8b7",
@@ -17992,7 +20719,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-a619c57dfd4652dbb1"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6959182172789a3b4c4e",
@@ -18018,7 +20748,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-510f059e0dddf0f9e2"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-996d78b0a631a7126a2b",
@@ -18046,7 +20779,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b0b2402cb9653388c8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8d72266858e534edb264",
@@ -18072,7 +20808,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-a00c05ce4faab284f7"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c3461968ad7d0e9f5ae7",
@@ -18098,7 +20837,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6da2bc654f549a7b5e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-149876e510fee65e2fdd",
@@ -18108,7 +20850,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SimpleQA",
   "metric": "published score",
-  "value": 10.0,
+  "value": 10,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
@@ -18124,7 +20866,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1217a97979f4fcb8dc"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-239e4f9a6a09cdf1458f",
@@ -18153,7 +20898,10 @@ publishedEvaluations.push({
   ],
   "evidenceIds": [
     "evidence:v03-8d82f9a827284454ff"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-694462c38d939519f79e",
@@ -18179,7 +20927,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-55e46bb917019b5130"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9be72f362619eb6cb05d",
@@ -18189,7 +20940,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH",
   "metric": "Accuracy",
-  "value": 89.0,
+  "value": 89,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
@@ -18205,7 +20956,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-714501e205d71926a8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e4bd0ff4578f4d170fbc",
@@ -18231,7 +20985,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d222352ba0f8b65f1d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ba3f20c4f5cadd28bbc3",
@@ -18257,7 +21014,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f69ab8c6782240c267"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ceb3d44e47108769c850",
@@ -18272,7 +21032,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18282,7 +21042,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-0c35a213587035fcfb"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d5486bcc2756cd5ed632",
@@ -18292,12 +21058,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "InfoVQA",
   "metric": "published score",
-  "value": 50.0,
+  "value": 50,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18307,7 +21073,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4280db7c49401a8193"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4306270dc4107ab9d6ee",
@@ -18322,7 +21094,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18332,7 +21104,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e4a00690eb4920f728"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-97775ebd6b4f05ff829b",
@@ -18347,7 +21125,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18357,7 +21135,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-dfd91551fb302f09e9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f923c05e8aa143845f9d",
@@ -18372,7 +21156,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18382,7 +21166,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b43a83eea9664e3f81"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1e2201e88ae9861cea3a",
@@ -18397,7 +21187,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "validation"
+    "datasetSplit": "validation"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18407,7 +21197,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-59a7eb5a5cdaac5126"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-264ea99ca6db3ec67c29",
@@ -18417,12 +21213,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MathVista (testmini)",
   "metric": "published score",
-  "value": 50.0,
+  "value": 50,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "testmini"
+    "datasetSplit": "testmini"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18432,7 +21228,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c92f4d7efb988c684a"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9de67d9ef664c7939c48",
@@ -18447,7 +21249,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18457,7 +21259,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b59898f0b472416aad"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d1d13f577c6d22b82195",
@@ -18472,7 +21280,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18482,7 +21290,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6a424502c4215f8f7d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cefa9dc471efc45e0fa3",
@@ -18497,7 +21311,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18507,7 +21321,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-46d70a237211bc67ae"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-30000b70d778116ee2d5",
@@ -18522,7 +21342,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18532,7 +21352,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-626e9f37c43d5ad601"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-098229e0f6310935c4d3",
@@ -18547,7 +21373,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18557,7 +21383,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7643e4fe695e9d1f43"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9be3cd0705c9965063be",
@@ -18572,7 +21404,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "validation"
+    "datasetSplit": "validation"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18582,7 +21414,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c9c10da9d92af2de80"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2ec168c9266418bf322d",
@@ -18597,7 +21435,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "testmini"
+    "datasetSplit": "testmini"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18607,7 +21445,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c51e45455f4a06f6b8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5390b2a732f661279034",
@@ -18622,7 +21466,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18632,7 +21476,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d67ba2c3c1a50c2003"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5c555b58ed57f2ad9df4",
@@ -18647,7 +21497,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18657,7 +21507,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1277b9c124a8b297e9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b135bedf089befdecfbc",
@@ -18672,7 +21528,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18682,7 +21538,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b834759a7dc5dd37bd"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-05df933aa18289745341",
@@ -18697,7 +21559,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18707,7 +21569,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-677bfe7b98c46b87c3"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eda908c7d90e445564fa",
@@ -18717,12 +21585,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "ChartQA",
   "metric": "published score",
-  "value": 78.0,
+  "value": 78,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "test"
+    "datasetSplit": "test"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18732,7 +21600,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-25fbfbfbaf9fbd93c9"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6f71227f3d158d40fdc6",
@@ -18742,12 +21616,12 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "VQAv2 (val)",
   "metric": "published score",
-  "value": 71.0,
+  "value": 71,
   "unit": "score",
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "validation"
+    "datasetSplit": "validation"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18757,7 +21631,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-3310fbcd1fcff91f4d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3094db31929d0db15785",
@@ -18772,7 +21652,7 @@ publishedEvaluations.push({
   "settings": {
     "checkpointStage": "instruction-tuned",
     "panAndScan": true,
-    "split": "testmini"
+    "datasetSplit": "testmini"
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://arxiv.org/html/2503.19786v1#Sx1.T16",
@@ -18782,7 +21662,13 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f772fbbebca2ab7fff"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceSettingLabels": {
+    "datasetSplit": "split"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-efc6d0ac5b0937358e20",
@@ -18808,7 +21694,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-02d7bbc87ad691a9c8"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bf01af17677591e487b8",
@@ -18834,7 +21723,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-19ee32e7894f7cc8d2"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3969de533df2f01ebe00",
@@ -18860,7 +21752,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e0ace106425bf43adf"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8a59b616482511a5bfda",
@@ -18886,7 +21781,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e930fccfb82d9a761a"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f72427da2ecb65712387",
@@ -18896,7 +21794,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME 2024 (no tools)",
   "metric": "accuracy",
-  "value": 80.0,
+  "value": 80,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -18912,7 +21810,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-eeaee93e9a9a34f1df"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-de9e84bcae4b5b816e36",
@@ -18938,7 +21839,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f16229b961259fc257"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-783d03c4ce5e95d2b7f5",
@@ -18964,7 +21868,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cef12a09876d31e3e3"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-43f87d5de2edd97f8464",
@@ -18990,7 +21897,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bac425aa1e567e83a3"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c82f814ebf6a2951928a",
@@ -19016,7 +21926,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cb9cb90307347325eb"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1fb1d7b361770bd4bc49",
@@ -19042,7 +21955,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ab4f19221dd0956505"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c80a953c8dfe80a66481",
@@ -19052,7 +21968,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME 2024 (with tools)",
   "metric": "accuracy",
-  "value": 86.0,
+  "value": 86,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -19068,7 +21984,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d6ac6278ebcd265592"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ea8498560b0a06b44296",
@@ -19078,7 +21997,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME 2024 (with tools)",
   "metric": "accuracy",
-  "value": 96.0,
+  "value": 96,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "high",
@@ -19094,7 +22013,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3ae3d62665ef111c06"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-90624654f36f37939f04",
@@ -19120,7 +22042,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-59380bba7965607400"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-538b5eaddfd73a99beb2",
@@ -19130,7 +22055,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME 2025 (no tools)",
   "metric": "accuracy",
-  "value": 80.0,
+  "value": 80,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -19146,7 +22071,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9f45cb7e5612862fbe"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cf34fda0ca49f8ef7c7e",
@@ -19172,7 +22100,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b6d10721314b8a7043"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b2e232c72c0b7b670ddc",
@@ -19198,7 +22129,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c09de82e0f5fe1c6a6"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e55fe9227e695b383813",
@@ -19224,7 +22158,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bff941b2c23d6801b7"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a3d00ea0827eaa080060",
@@ -19250,7 +22187,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5edd968da0c10383f8"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-dc8ceba6846ef3e30143",
@@ -19276,7 +22216,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3bf3de21c793b7b6cb"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-63f3782feafd81ea4491",
@@ -19302,7 +22245,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f03fee877ae0a5a0ce"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-66265c97c75c6daf4d3e",
@@ -19328,7 +22274,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-549f1488b0b30b749f"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-53f4b9faf9057bd2fdc7",
@@ -19354,7 +22303,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dda549d5be02e094a3"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9e98edb11cf4e9b398b8",
@@ -19380,7 +22332,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-33bf0d318034850cec"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7c1f792d61f8c19465f9",
@@ -19406,7 +22361,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fd51649bee2fbcb309"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d4b07f051532799a5ce6",
@@ -19432,7 +22390,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0d79c5d66dd662badc"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c81224dbe44cf697a16b",
@@ -19458,7 +22419,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7aaffdd732556e8e0b"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0088f872cf5d1df30a4e",
@@ -19484,7 +22448,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b06551bf883ce9f48a"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f4ece16a68fca767966b",
@@ -19510,7 +22477,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1641231cfdbc7c6c8e"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-551503284ba28af09f5f",
@@ -19520,7 +22490,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "GPQA Diamond (no tools)",
   "metric": "accuracy",
-  "value": 66.0,
+  "value": 66,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -19536,7 +22506,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-eb50da4cc4edc5f1a9"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-796785244cccc4a790b4",
@@ -19562,7 +22535,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-51cf3790b0df368e78"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9e2d7a0bd75026019e2b",
@@ -19588,7 +22564,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-389fd7b975ad7ace51"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ca94a43fb2547a1cbcff",
@@ -19614,7 +22593,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-020a1f7c395dc34772"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4a7c28409bd7ddeda431",
@@ -19640,7 +22622,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c36b6a1c491e93fdd9"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f0937901fd5dbcb00147",
@@ -19650,7 +22635,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "GPQA Diamond (with tools)",
   "metric": "accuracy",
-  "value": 58.0,
+  "value": 58,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "low",
@@ -19666,7 +22651,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-35f5e943c0284d4f07"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f659fb5decd144fd8c56",
@@ -19692,7 +22680,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1052ef6ebfa04c729d"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c86cb90fadb7ef3b0f19",
@@ -19718,7 +22709,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-688f32f17031fa1dd7"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-381a0eb8a7e29b5fb0c8",
@@ -19744,7 +22738,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-51425c144a85f0e9d0"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6aecd92b601e22f9a7a8",
@@ -19770,7 +22767,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2b5804a136ea0027e5"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bd92b1b86ef40afd2820",
@@ -19796,7 +22796,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-94511872b52676f88d"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e82889733ea1ffb98996",
@@ -19822,7 +22825,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9da7b15e59b156b4f7"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-81997472e4e0dab576fa",
@@ -19832,7 +22838,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "HLE (no tools)",
   "metric": "accuracy",
-  "value": 7.0,
+  "value": 7,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -19848,7 +22854,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e676c3797ac2c551b7"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-313cd5333fe85f434030",
@@ -19874,7 +22883,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f12781aa3f4df2c7cf"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6fc773f62a885fd1a605",
@@ -19900,7 +22912,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3882297d0fadb12e1c"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-797a014da5e3af733f3a",
@@ -19926,7 +22941,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8e7394eed9e28d36c4"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c389d3200060d13de166",
@@ -19936,7 +22954,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "HLE (with tools)",
   "metric": "accuracy",
-  "value": 19.0,
+  "value": 19,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "high",
@@ -19952,7 +22970,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7ea4e897317c50d8be"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-03cd7797b612f3942398",
@@ -19978,7 +22999,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-33d270375aa6014137"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5a7d441721ec251ab992",
@@ -20004,7 +23028,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bb399e45053452b3b7"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e35a5a3f10e79ecc3328",
@@ -20030,7 +23057,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7009bd513dba1b66b2"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4dcce6d94dacc552b0a0",
@@ -20055,7 +23085,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f30a63813163830de9"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d179a116672d6a0f21ec",
@@ -20065,7 +23098,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU",
   "metric": "accuracy",
-  "value": 88.0,
+  "value": 88,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -20080,7 +23113,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c1c148c2ba2f422b74"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d4b131fa5445c2fdb85a",
@@ -20090,7 +23126,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU",
   "metric": "accuracy",
-  "value": 90.0,
+  "value": 90,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "high",
@@ -20105,7 +23141,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c9240154538018adfb"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8069fef665a8e9774298",
@@ -20130,7 +23169,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bff5c446bb6830016b"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a72ab9e3c04f30573186",
@@ -20140,7 +23182,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU",
   "metric": "accuracy",
-  "value": 84.0,
+  "value": 84,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -20155,7 +23197,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0ca66c6bee1c1d50ad"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3fe3aa589e4361081d28",
@@ -20180,7 +23225,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-91dff1ea64275e9d17"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-956da4fa6b03a12f766b",
@@ -20205,7 +23253,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c3062ed7c3022bfc76"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-efbe1fd65dc28706b46f",
@@ -20230,7 +23281,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a504086ed7b010f0e2"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bbf1655dfe39cb746346",
@@ -20255,7 +23309,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6aedc198a9bc490624"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4c5638e29b26355bf48e",
@@ -20280,7 +23337,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9146961bb9de0ce8f9"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2de3475bac9fd5e7e732",
@@ -20305,7 +23365,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1654b3fbfa26f2690a"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-febd18b8a6b7c1cef271",
@@ -20330,7 +23393,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-930702bea07000d979"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-aa18cd6b8ff5da639ae5",
@@ -20355,7 +23421,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-05f60ef2cbf036933f"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-669247dc0a42ff830d53",
@@ -20365,7 +23434,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Tau-Bench Retail",
   "metric": "accuracy",
-  "value": 62.0,
+  "value": 62,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "medium",
@@ -20380,7 +23449,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-434a243d338e96c815"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ab10f36e1043453aa95a",
@@ -20405,7 +23477,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9be112ce20ec82c295"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3132b213ef07afe9bdb5",
@@ -20415,7 +23490,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Tau-Bench Retail",
   "metric": "accuracy",
-  "value": 35.0,
+  "value": 35,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "low",
@@ -20430,7 +23505,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8d8125b324ce463782"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6fd40edc4df930fe2836",
@@ -20455,7 +23533,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7b1638e6d69d9e20a5"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2e87a82341a8148dcaed",
@@ -20480,7 +23561,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-538ad4ca656b35c067"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1a7ae4a704fb3f563c5d",
@@ -20505,7 +23589,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8ad29f5b0169ac33f5"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e44c610ba2de53cc19bf",
@@ -20530,7 +23617,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f4aa945764ba2b06f1"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ba53f4f15c70e5c4513e",
@@ -20555,7 +23645,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2b511f1171558a305f"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a1394fb3752680097392",
@@ -20565,7 +23658,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Tau-Bench Airline",
   "metric": "accuracy",
-  "value": 32.0,
+  "value": 32,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "low",
@@ -20580,7 +23673,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-66a12718f71bb691a4"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0858779b79359e532356",
@@ -20605,7 +23701,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c0547f46f2ca2df144"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6c5ddd87395d80cda6d6",
@@ -20615,7 +23714,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Tau-Bench Airline",
   "metric": "accuracy",
-  "value": 38.0,
+  "value": 38,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "high",
@@ -20630,7 +23729,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7310753c929ef2d496"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7edbbd2a13ad58f1eb31",
@@ -20640,7 +23742,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Aider Polyglot",
   "metric": "accuracy",
-  "value": 24.0,
+  "value": 24,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "low",
@@ -20655,7 +23757,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-239cf2b5cd0578dff7"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bb23b55c31ce851abab0",
@@ -20680,7 +23785,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9979182f5a443c5a1e"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3935494271424e3c4c4d",
@@ -20705,7 +23813,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-077624150b360be411"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f936b56c15af40b34c74",
@@ -20730,7 +23841,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-473abc47f601b051ba"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0feb97e12eb4dc956d42",
@@ -20755,7 +23869,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b94520c60e9feba516"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-90676c8a918b00b7675f",
@@ -20780,7 +23897,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6c61280892ea199ba4"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fe989e0e6a3763fc882f",
@@ -20805,7 +23925,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-15de6dd923504dbb83"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c753ec5792b44015cceb",
@@ -20830,7 +23953,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-00beb07ad31e20edc4"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2b5ade2f4d07eb00226a",
@@ -20855,7 +23981,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-83af005ddca58b7d18"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-387e6f055cd000fd3841",
@@ -20865,7 +23994,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMMLU (Average)",
   "metric": "accuracy",
-  "value": 67.0,
+  "value": 67,
   "unit": "percent",
   "settings": {
     "reasoningEffort": "low",
@@ -20880,7 +24009,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-26fca10e7397f2c352"
   ],
-  "mode": "low"
+  "mode": "low",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-64dd2cfefefacb2081d5",
@@ -20905,7 +24037,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-07e0a91d91592773c3"
   ],
-  "mode": "medium"
+  "mode": "medium",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8a9a47fa2a5a220e90b9",
@@ -20930,7 +24065,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-877b27ccaa3b7dcd4a"
   ],
-  "mode": "high"
+  "mode": "high",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-48bf7f956534e80fa813",
@@ -20956,7 +24094,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-06d3d5f30209c1b57b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-23f43aaf70a8bcd5e229",
@@ -20984,6 +24125,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1046c8cbfec079fac0"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -21010,7 +24156,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1813f8d995b345fb96"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4eb1f5a37e25e8d0abb1",
@@ -21038,6 +24187,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5f6629c7b61fca1fee"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -21048,7 +24202,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MIRACL",
   "metric": "nDCG@10",
-  "value": 69.0,
+  "value": 69,
   "unit": "score",
   "settings": {
     "representation": "Multi-vec",
@@ -21064,7 +24218,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-da95c616d84e2c4321"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-57929bb362aa91251478",
@@ -21092,6 +24249,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9fcaf15874be823af7"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -21118,7 +24280,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-8d6d53a1a5fa26f87d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-696c713c2fce58350dfb",
@@ -21146,6 +24311,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b0bd5fed302fada40c"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -21156,7 +24326,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MIRACL",
   "metric": "nDCG@10",
-  "value": 70.0,
+  "value": 70,
   "unit": "score",
   "settings": {
     "representation": "All",
@@ -21172,7 +24342,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-33d33801595830e97c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-644d6408390df8f133e0",
@@ -21200,6 +24373,11 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-31e860a33a5a2ea7e6"
   ],
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa"
 });
 publishedEvaluations.push({
@@ -21227,7 +24405,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e9c2577a3639293208"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e09941c66b6b8e9620ce",
@@ -21254,7 +24435,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-433e584e9aca050100"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0eeb3fdfbdc8352cbe56",
@@ -21281,7 +24465,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-e2fc5dc80a13f82919"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5059fca11ca13f4697fe",
@@ -21308,7 +24495,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-65c9a2458e5385ad14"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-397bbb65a181645a6c43",
@@ -21318,7 +24508,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MLDR",
   "metric": "nDCG@10",
-  "value": 65.0,
+  "value": 65,
   "unit": "score",
   "settings": {
     "representation": "All",
@@ -21335,7 +24525,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-5bf025b9a009521da6"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-de0ae00d0d3b6b1b2d22",
@@ -21359,7 +24552,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c7ae069bb0ca0e3389"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-78c6845a99df94d151ce",
@@ -21383,7 +24579,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-a461feea1069489c76"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b69efeb3678a55c6cf5c",
@@ -21407,7 +24606,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d70032162737d18932"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-17bb80b1fd311a162822",
@@ -21431,7 +24633,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-19c718cf818a1a715e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3fdb9526639b2e464ea6",
@@ -21441,7 +24646,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "BigCodeBench instruct full",
   "metric": "pass@1",
-  "value": 41.0,
+  "value": 41,
   "unit": "score",
   "settings": {
     "metricScale": "0..100 as printed",
@@ -21455,7 +24660,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-eac8a5a79aa7a07030"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2d8e043a85151bb7e918",
@@ -21479,7 +24687,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-23fa55ff86648c8b6b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-834d51fbca14b19c37db",
@@ -21503,7 +24714,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-9c37430e8e6f1f10b8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d698a0df9d5ea58141a6",
@@ -21526,7 +24740,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b5cecab24c54e55fee"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d76b1c9b5e34164b7b5a",
@@ -21549,7 +24766,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-4156e742b82645fba6"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6f133a1289e0dcc67ccd",
@@ -21573,7 +24793,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-5e598e53e1fdf00d4a"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8328abb423a7bd2ddde3",
@@ -21597,7 +24820,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-c8d2a358dc2e344b3c"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1e3686441ffbd83c6806",
@@ -21621,7 +24847,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-0a1fee71d5ace9e609"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-451c012bd916e93643f1",
@@ -21645,7 +24874,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-800b29834b0d8d3cfe"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-70352338b4f449856d4e",
@@ -21669,7 +24901,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-8578e5749be2bad810"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-041695dab49afae38c31",
@@ -21693,7 +24928,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-59d02f64fdb99d498d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2aa3a09f67af988c33f6",
@@ -21717,7 +24955,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-eb1d98acf994517652"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5b0efcb9a3f100b0f513",
@@ -21740,7 +24981,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-d45b240b647f6119e3"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2b3ff5e96ae90d0b6bd9",
@@ -21763,7 +25007,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-8b78b0da724dc7bea8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-385e2e3ff57bded490e4",
@@ -21787,7 +25034,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-5351879506079bef3a"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9b0af6d54a287db9b420",
@@ -21811,7 +25061,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b18902fd5fb7d393cc"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6285c9725e73e03761f1",
@@ -21835,7 +25088,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-3871954d200c5bf172"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4fa19c47035b0c1b93f4",
@@ -21859,7 +25115,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-25c5e166a80dadd8c5"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-92e7e1bd3c9862d084bd",
@@ -21883,7 +25142,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-33a36c46bc9d0cf509"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fdeaaf15f21743546585",
@@ -21893,7 +25155,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "BigCodeBench instruct hard",
   "metric": "pass@1",
-  "value": 27.0,
+  "value": 27,
   "unit": "score",
   "settings": {
     "metricScale": "0..100 as printed",
@@ -21907,7 +25169,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-077a08c436190cf961"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c7be811c72e20729d9e2",
@@ -21931,7 +25196,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f72918c0e76b5e150d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ab2d5646b36ef129e078",
@@ -21954,7 +25222,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-54a3c9ea4f1bb03fe1"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-978dc159ae98057c9870",
@@ -21977,7 +25248,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-0e99810119df6ba694"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f1530fde7cbcf0b848b7",
@@ -22005,7 +25279,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e7a10f80209e86b3ae"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6a458ddfdbdff42e915f",
@@ -22033,7 +25310,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e284542c63d5103dae"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ef53fc67e16702430b69",
@@ -22061,7 +25341,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3780e5c4d08b319a26"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8710ce42b6a15f20b4af",
@@ -22071,7 +25354,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFEval strict prompt",
   "metric": "published score",
-  "value": 85.0,
+  "value": 85,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -22089,7 +25372,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-26e21df735df478aa9"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a911f52c2440a99b048f",
@@ -22117,7 +25403,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-41df0c30a5aeb17bd5"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-84878221adc21df1001a",
@@ -22145,7 +25434,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-34d6ea5899b93fc042"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1fb86a7a0ffc2c270466",
@@ -22173,7 +25465,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-289c5d06559cbcbb38"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3673d2cf826df22e6f6c",
@@ -22201,7 +25496,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cc67b1343cc9135449"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1f15ca18ebcab31bee44",
@@ -22229,7 +25527,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-34460be903391dc931"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1cd0187f9688056ac585",
@@ -22257,7 +25558,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-135c7b978b55ea0395"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-409484bae9e232b29977",
@@ -22267,7 +25571,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Multi-IF",
   "metric": "published score",
-  "value": 73.0,
+  "value": 73,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -22285,7 +25589,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2804ae3992b008e0a4"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-33817d22bdb452d90d43",
@@ -22314,7 +25621,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-08040bd885a8912c72"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-53bb5b64c32ee6c37d8c",
@@ -22343,7 +25653,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-27ef70645480261120"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7deb541ef1a70a29ca02",
@@ -22372,7 +25685,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1a5250e678c5bf7a40"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6c903f985c82ecd4a96d",
@@ -22401,7 +25717,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dc6110a7d39d1f25a5"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4f37edbc4f77b0c9de2a",
@@ -22430,7 +25749,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1ec204a98214dccfd9"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a95e37e4d64a6e81d6b6",
@@ -22459,7 +25781,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2046733732a0cdd655"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-30e9da109f000a0faa3b",
@@ -22488,7 +25813,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b1185e04acc67ea3ad"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6b4796e3f8842ad495d4",
@@ -22517,7 +25845,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c4bfe24fb6d292fe79"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a7e71520136e7614bc67",
@@ -22527,7 +25858,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME’24",
   "metric": "published score",
-  "value": 31.0,
+  "value": 31,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -22546,7 +25877,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-70ed38def391d5555e"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c4694994617cb1c1918b",
@@ -22575,7 +25909,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-42b766f8cb932e00ac"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b2223064f28f1b2e38c7",
@@ -22585,7 +25922,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "BFCL v3",
   "metric": "published score",
-  "value": 63.0,
+  "value": 63,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -22604,7 +25941,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-483006aa675b5c9223"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-81e47cb47d72267fb3fd",
@@ -22633,7 +25973,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9af7d12909f69cac3c"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-90ecad3050996fcb5a85",
@@ -22662,7 +26005,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d7ba362ebff3bfcc28"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-84837d72cc6395d2ca7e",
@@ -22692,7 +26038,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f4701b7a95bab26888"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7fc81f0dd89c764cdea1",
@@ -22722,7 +26071,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e268f80b8616f9b44e"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0dec378e310831d70a2f",
@@ -22750,7 +26102,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-57098c9ba3bc98e60e"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-84871157be8e48fefba9",
@@ -22778,7 +26133,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-78038fa5a7a6d78692"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-88d3afecd70500210031",
@@ -22788,7 +26146,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "GPQA-Diamond",
   "metric": "published score",
-  "value": 64.0,
+  "value": 64,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -22806,7 +26164,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-89f6eb1f73622c3144"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ba5c26093feca74deff4",
@@ -22834,7 +26195,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b76c73c925eec70258"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ff1781b98ae323784cfc",
@@ -22862,7 +26226,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-96dfbd655686996cc7"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d1644a40e9e5b3dba507",
@@ -22890,7 +26257,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d197c2c633022eaf50"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-aefb13e254081ac4f4b7",
@@ -22918,7 +26288,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-73151b0df9ea20fe1c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4f2af158b8e25f1cce09",
@@ -22946,7 +26319,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-560170843f254b308a"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2607d9fc0131b1f7d0fb",
@@ -22974,7 +26350,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-19f2ce4fd3bf8f755c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0e1e3a4469a1f58cd388",
@@ -22984,7 +26363,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Arena-Hard",
   "metric": "published score",
-  "value": 91.0,
+  "value": 91,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -23002,7 +26381,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8e8d761caa218ad5b6"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-75b7b4ea593b6c44bffc",
@@ -23030,7 +26412,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b7c27dfd2d1826aa3d"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8f15bc9bed4e4463585c",
@@ -23040,7 +26425,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH-500",
   "metric": "published score",
-  "value": 98.0,
+  "value": 98,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -23058,7 +26443,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d91de39f457f90ac53"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7bbd44e41308c768d4d6",
@@ -23086,7 +26474,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3058558472b4541a4c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1ca5c4518e53919fb0dc",
@@ -23114,7 +26505,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-48fd8652633cc1a631"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-daf8af10120882b98a84",
@@ -23142,7 +26536,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a24d8a8d1403e0d39b"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4ebf2073d64118593b29",
@@ -23170,7 +26567,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8b562f9d8418baaa0c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e55a52258c37f489a5ec",
@@ -23198,7 +26598,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2e4f83c26e84897563"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-30e25c3dce06b67be12c",
@@ -23226,7 +26629,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dc2366d41e457c0303"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4a700d2b96e5280a1346",
@@ -23254,7 +26660,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6a6ee5243c7e03da87"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cac526fe4efbffe0c765",
@@ -23282,7 +26691,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e8f76c7f4510271cd6"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0ba9e116e11d86610d09",
@@ -23310,7 +26722,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7587ac79bfe67cd1a2"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-768757d51aeb05201aaf",
@@ -23338,7 +26753,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9a8b42e8cd30699b23"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bdc5bad258c444a1d9b2",
@@ -23367,7 +26785,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-858a18d0c3ce2052f9"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-507d1a6a432da1af88b7",
@@ -23396,7 +26817,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cdd01a06318208f31f"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c508903454cdd97554f9",
@@ -23425,7 +26849,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3c68e20c62306a10a0"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-01635b1404c73b80d3ca",
@@ -23454,7 +26881,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-dece82cb0450217396"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6912b95186bf00182cf3",
@@ -23464,7 +26894,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU-Redux",
   "metric": "published score",
-  "value": 82.0,
+  "value": 82,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -23483,7 +26913,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b534322d5cb6bb85a0"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8d93e49502394247e829",
@@ -23512,7 +26945,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f8a60eeebccb328541"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-12df753943675345b5eb",
@@ -23541,7 +26977,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d853bd43784ae969d0"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1bec9a807525e4874276",
@@ -23570,7 +27009,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2a0c67db4916636a9e"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a037822198f2a6c16b6b",
@@ -23599,7 +27041,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-57a81307dbfdbe6ae3"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1b527d26d6da0f1eeb59",
@@ -23628,7 +27073,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f7f09500eede9286af"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-648701de9228275cd2a1",
@@ -23657,7 +27105,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-986af15047d3e8098a"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4a65e5ee5f31c05bcae4",
@@ -23684,9 +27135,50 @@ publishedEvaluations.push({
   ],
   "limitations": [],
   "evidenceIds": [
-    "evidence:v03-b615c747a13e9ce8e4"
+    "evidence:v03-b615c747a13e9ce8e4",
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-f0af48a0d3"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-17f954ccb5ba1468",
+      "modelRef": "model:qwen-qwen3-30b-a3b",
+      "benchmark": "IFEval",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 83.7,
+      "reportedValueText": "83.7",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / IFEval / column 2",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-4a65e5ee5f31c05bcae4"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3dc8bab702c95db311e4",
@@ -23715,7 +27207,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bf0d619780526325b3"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-13e4102a058eb69f3c25",
@@ -23725,7 +27220,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Arena-Hard",
   "metric": "published score",
-  "value": 88.0,
+  "value": 88,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -23744,7 +27239,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-44097d30bd3cace5bb"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-07e80195fe1a0f72610b",
@@ -23754,7 +27252,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH-500",
   "metric": "published score",
-  "value": 90.0,
+  "value": 90,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -23773,7 +27271,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9d68125aa6c7ff5b11"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9e49d77b377ed2431f79",
@@ -23802,7 +27303,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c7b85efaf3497a215d"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-acb691abef50a27ff9eb",
@@ -23831,7 +27335,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-60086ec90a39c4983c"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8117854f944aabcdc97e",
@@ -23860,7 +27367,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c7b1b68d5d25b4f6b6"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c62832a6184f15febc4b",
@@ -23889,7 +27399,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c6c1e10417fdcac087"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e1137b2dba1b68234cff",
@@ -23916,9 +27429,50 @@ publishedEvaluations.push({
   ],
   "limitations": [],
   "evidenceIds": [
-    "evidence:v03-c0d87f030ed95977e1"
+    "evidence:v03-c0d87f030ed95977e1",
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-ada3026c86"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-5e30d2472fc2b2bc",
+      "modelRef": "model:qwen-qwen3-30b-a3b",
+      "benchmark": "AIME25",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 21.6,
+      "reportedValueText": "21.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / AIME25 / column 2",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-e1137b2dba1b68234cff"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-24ff518a0aa3883c46ea",
@@ -23947,7 +27501,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c5c0a86474cbcb6dca"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d259ae3684f4b7c2fd76",
@@ -23974,9 +27531,50 @@ publishedEvaluations.push({
   ],
   "limitations": [],
   "evidenceIds": [
-    "evidence:v03-2759c38f1c9aed51a7"
+    "evidence:v03-2759c38f1c9aed51a7",
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-b753e271c2"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-d2402048f1f183e4",
+      "modelRef": "model:qwen-qwen3-30b-a3b",
+      "benchmark": "BFCL-v3",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 58.6,
+      "reportedValueText": "58.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / BFCL-v3 / column 2",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-d259ae3684f4b7c2fd76"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6cc7bd6fd892975144d6",
@@ -23986,7 +27584,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "LiveCodeBench v5",
   "metric": "published score",
-  "value": 29.0,
+  "value": 29,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -24005,7 +27603,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9cc9e13d96732763a3"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-53e920937d52fa211da6",
@@ -24034,7 +27635,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b7d2d1980e4782d6e8"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1fca1a7c5876882d0066",
@@ -24063,7 +27667,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a60a5422e99d133aea"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9900b807cd0cad28da55",
@@ -24092,7 +27699,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-94f477bfa6976d22ae"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7f383b3f9a8e2dd169ba",
@@ -24122,7 +27732,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-fbd7fcb7420fc3a353"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5580b9b6bc26eab566c1",
@@ -24152,7 +27765,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2a814d51692b1afd11"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-944a71e73abf62e49ee8",
@@ -24182,7 +27798,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-288a212ed745080937"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6dc909da1911631b7c93",
@@ -24212,7 +27831,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-329c8790dd021d5dca"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c11d794ed0c0c97d5ba7",
@@ -24240,7 +27862,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8cc7130020a397764c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ca0c6e665b7bc1311bab",
@@ -24268,7 +27893,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-05365f5b264a5b2d3f"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-98a592a27de3aa2590cf",
@@ -24296,7 +27924,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e2a237145ce4cc0369"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c746ad915e2ba188d188",
@@ -24306,7 +27937,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "GPQA-Diamond",
   "metric": "published score",
-  "value": 62.0,
+  "value": 62,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -24324,7 +27955,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-937b6bba81d271dcca"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d6a20ade5e62fc5d1d6e",
@@ -24352,7 +27986,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-21f115e7715846451f"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1a285b9ed15e6bfbe682",
@@ -24380,7 +28017,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a35bfa5bac5182cecf"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-46754de6ca382966e587",
@@ -24408,7 +28048,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f4ec12adcc655ab77c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1d76fe36f434c41703e8",
@@ -24418,7 +28061,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFEval strict prompt",
   "metric": "published score",
-  "value": 85.0,
+  "value": 85,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -24436,7 +28079,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ad07cff0d07fe04a9d"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5db687f0805015889e7a",
@@ -24464,7 +28110,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd15f6fff20af89a3d"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e8887c97d943a9e1949e",
@@ -24492,7 +28141,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9b8d12502f78238e9c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c289932a63666d688396",
@@ -24502,7 +28154,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH-500",
   "metric": "published score",
-  "value": 97.0,
+  "value": 97,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -24520,7 +28172,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3ce1469d0d1bfabd9e"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6fb78a7de12666f95e64",
@@ -24548,7 +28203,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b8c635820b29f25d85"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d379f45aff99b0ac309a",
@@ -24576,7 +28234,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a655284309682eced8"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3e3c5eef08426da3cd8b",
@@ -24586,7 +28247,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME’24",
   "metric": "published score",
-  "value": 76.0,
+  "value": 76,
   "unit": "score",
   "settings": {
     "temperature": 0.6,
@@ -24604,7 +28265,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-eeab31c63987cdb6ec"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-15346b6b93e42f2e6253",
@@ -24632,7 +28296,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4ab9776c973b45b19e"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-991d84c61cd0237b8037",
@@ -24660,7 +28327,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7e68368ec1cf0e9495"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b2879a4e0b875c0f52dd",
@@ -24688,7 +28358,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-119f3ed5697eb9afc5"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5ac9c18e77dad8f43218",
@@ -24716,7 +28389,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4fb2c98b4a2e5d70f3"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-afb960f0ed2225adc4c8",
@@ -24744,7 +28420,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c49dd65c6d7cb013aa"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-496983146115bc469776",
@@ -24772,7 +28451,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-551556cbdf0f16b948"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2181887a0d79edf7d888",
@@ -24800,7 +28482,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-640483e22c968a0db8"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-21ef75ad9eca6bc12a4d",
@@ -24828,7 +28513,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bf27d0d0e381f37fd4"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-abc101d9b07dde530a56",
@@ -24857,7 +28545,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e47f2973e84274f6e9"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ca294906b6d931ee5d46",
@@ -24886,7 +28577,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-609898cdf4d8c9feb2"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2bb617397ea7e1486ae2",
@@ -24915,7 +28609,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9a1410fb6fa1725a48"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a6764ea8d19df230a313",
@@ -24944,7 +28641,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-76872452ed4317c2e0"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5ed4b80542e9f04c508e",
@@ -24973,7 +28673,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c5f568a76be59b40b0"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-42237c0c157f61e4e288",
@@ -25002,7 +28705,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-10766bdde513107add"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-432007d5889206cda0e6",
@@ -25031,7 +28737,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9247cb677cb27df566"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-742263b3bf4c792d1279",
@@ -25060,7 +28769,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9923879796a4cfaba6"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f89a3ca2a1d2f4704eb2",
@@ -25089,7 +28801,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-729457cd405f259ed1"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1fd738f1b4583647c29b",
@@ -25118,7 +28833,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c80792d430c2caadbd"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c41be34d5ecfd544ca0b",
@@ -25145,9 +28863,50 @@ publishedEvaluations.push({
   ],
   "limitations": [],
   "evidenceIds": [
-    "evidence:v03-899f13e2fb7fcb4cf6"
+    "evidence:v03-899f13e2fb7fcb4cf6",
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-66563df913"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-60b6e4fd15d347aa",
+      "modelRef": "model:qwen-qwen3-4b",
+      "benchmark": "IFEval",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 81.2,
+      "reportedValueText": "81.2",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / IFEval / column 3",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-c41be34d5ecfd544ca0b"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1397e2c7d55a20652f25",
@@ -25157,7 +28916,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "IFEval strict prompt",
   "metric": "published score",
-  "value": 83.0,
+  "value": 83,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -25176,7 +28935,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cc2ba5dc2c7c9647bf"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d2317774ce6bb3ddd3cc",
@@ -25205,7 +28967,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-c6fcd06ed1f137e36b"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-969f09336bf4962a0041",
@@ -25234,7 +28999,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e14d92064a73b10396"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0fed5dc148044f428816",
@@ -25263,7 +29031,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5ca02e799b3a4e8fa9"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-701045523cc2881cbf38",
@@ -25292,7 +29063,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b9bf1778c370e40a5f"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0ea8d948ecfc72ec9bf9",
@@ -25302,7 +29076,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "AIME’24",
   "metric": "published score",
-  "value": 25.0,
+  "value": 25,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -25321,7 +29095,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ece46a837d8ef64361"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-49e9353ed8c4839c9447",
@@ -25350,7 +29127,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-54a5728ecf4522d623"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-18054503cef42b07d991",
@@ -25377,9 +29157,50 @@ publishedEvaluations.push({
   ],
   "limitations": [],
   "evidenceIds": [
-    "evidence:v03-5a4896a4acbf962003"
+    "evidence:v03-5a4896a4acbf962003",
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-23001263cd"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-c20455489da56598",
+      "modelRef": "model:qwen-qwen3-4b",
+      "benchmark": "AIME25",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 19.1,
+      "reportedValueText": "19.1",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / AIME25 / column 3",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-18054503cef42b07d991"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-124cbbe709ec9cb7b420",
@@ -25408,7 +29229,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-61f564a4521da22e57"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7240f08f87bab278e5ea",
@@ -25435,9 +29259,50 @@ publishedEvaluations.push({
   ],
   "limitations": [],
   "evidenceIds": [
-    "evidence:v03-3815a21031904d6043"
+    "evidence:v03-3815a21031904d6043",
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-338834067e"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-530967d2b894a578",
+      "modelRef": "model:qwen-qwen3-4b",
+      "benchmark": "BFCL-v3",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 57.6,
+      "reportedValueText": "57.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / BFCL-v3 / column 3",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-7240f08f87bab278e5ea"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4057cfb364e7ee3cd469",
@@ -25466,7 +29331,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e1548d81e934cf87f7"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1ace9408f8b784c03fd9",
@@ -25495,7 +29363,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a84a26d77afbc6a99a"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-86aeac06096c4f64b1e7",
@@ -25524,7 +29395,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9ead7c88e9ad761559"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bb720cd823bdec65e8d5",
@@ -25553,7 +29427,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5da19cf6623a665878"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b73ea66f6fef2e93d335",
@@ -25582,7 +29459,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1524afc0b17dc5511f"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6feb2337638656d42fc6",
@@ -25612,7 +29492,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-17e8dd3e6799be586a"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-44831b22f772193d1dad",
@@ -25642,7 +29525,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ea48582e3f38ae6814"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7e7908a87db6432798dc",
@@ -25672,7 +29558,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-45f2731179933429a3"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3311c52aa446a027d037",
@@ -25702,7 +29591,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ef4de29a3024212c00"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1e100390021a9bfe0098",
@@ -25730,7 +29622,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-62cbbb812c87abc65e"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-71924a4172ab95c4dcac",
@@ -25758,7 +29653,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2eeb205a967a1bfc1d"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-43d259b9167282cef675",
@@ -25786,7 +29684,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-17b92de19031716b2b"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3f74f666c07a9ca2e7fc",
@@ -25814,7 +29715,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d44f868c1052fa1d56"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9f41fbdba6082799157f",
@@ -25842,7 +29746,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3d71fc55c9f7e049c7"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b95a7a3b9563472d81b0",
@@ -25870,7 +29777,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9dc85d60615ef0aade"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ca1f32e15e9cc8bb93e4",
@@ -25898,7 +29808,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-39258b6166a58d8a91"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-707ec1367d4967c9a335",
@@ -25926,7 +29839,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f35b2b1220343cf8fd"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-458bdaa7fbc1836e18c6",
@@ -25954,7 +29870,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3e6b014ccb781d2611"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-20051edd2271a16e4e65",
@@ -25982,7 +29901,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-09333990f9c5649fee"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-523467ef62d7f94a5c28",
@@ -26010,7 +29932,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4611a85df179fb7f89"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6717e4cbc44fed07f44a",
@@ -26038,7 +29963,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4e4df5ef09b4628bfd"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-eda63f262630bee94a83",
@@ -26066,7 +29994,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b7fdc8252737476609"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-fa73ea0ba26b2311a4fe",
@@ -26094,7 +30025,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5edeb78be482cdc2eb"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f42e09f48f78eb6e6b32",
@@ -26122,7 +30056,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-74d03711eab5032ce3"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1d0ed854f0ff3b1531ab",
@@ -26150,7 +30087,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d85bfc286c273fdc2d"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1e80beee060e50daa7e8",
@@ -26178,7 +30118,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-f628a3d2b9b3a0af67"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-be20aab43535605487f0",
@@ -26206,7 +30149,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4bf8446a9d60c60688"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7fd5a864e0e8adce017a",
@@ -26234,7 +30180,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-720e14382378f0c6a8"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cc4f9a539f1d76448f2d",
@@ -26262,7 +30211,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-14c8922c57eda106c8"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0df19827e419cf48494e",
@@ -26290,7 +30242,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-226eb361efb78eb68c"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3072c880ab30e894be2d",
@@ -26318,7 +30273,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-126c914b120cedb4d5"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-728e856ce97d4b946440",
@@ -26347,7 +30305,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-76b22cac202993520e"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b4453b9074f6c313f4bb",
@@ -26376,7 +30337,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-00cdac41948b863f39"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7222d8defa1634eec0ea",
@@ -26405,7 +30369,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-509f4013a7f26f7b75"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5e5275a1d0f3a28a9b26",
@@ -26434,7 +30401,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cfdc1d0c5ebe5a95d7"
   ],
-  "mode": "thinking"
+  "mode": "thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c54fb15b689fc193a904",
@@ -26463,7 +30433,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b191aecdd6782e501b"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d474e1ab05380957a7a7",
@@ -26492,7 +30465,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-260b0109d4e90b43b0"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c47db5c558cb5a778b3f",
@@ -26521,7 +30497,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d0a367724115236cbf"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0df22b2876ecd35e863b",
@@ -26550,7 +30529,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-84962da9374a9ec2f1"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c71a08f6ec6d8d2d7fd9",
@@ -26579,7 +30561,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-97cbe94c8aecba6a4a"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ae6fce3c71e842a8e0e7",
@@ -26608,7 +30593,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-47e81476d294ca38e6"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a173a59d67123a4de5a7",
@@ -26637,7 +30625,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-1862e38862b7895070"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-884cfa7834e62749ef55",
@@ -26666,7 +30657,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9bddf9e82b2d311089"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-0ad57a64cb23a61c3c31",
@@ -26695,7 +30689,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-18dc075683cf615e12"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ad0723f47161b520a708",
@@ -26724,7 +30721,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7cf6fbe23e51a07ca2"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cb4cf5b47b160bb3c91c",
@@ -26753,7 +30753,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-614b72399f9798f961"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-9768ba53447e476c350a",
@@ -26763,7 +30766,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MATH-500",
   "metric": "published score",
-  "value": 73.0,
+  "value": 73,
   "unit": "score",
   "settings": {
     "temperature": 0.7,
@@ -26782,7 +30785,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-26f83232352b2fd27e"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-29ee947ca3cdb95f50d5",
@@ -26811,7 +30817,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4cf55f12e6a690a796"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-88275326970699460bc3",
@@ -26840,7 +30849,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-25843d239c8fbebb18"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7155055e32ed0f3094f4",
@@ -26869,7 +30881,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-94913f1b77d9ddf9fb"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c3e61dd5c68c113f5c35",
@@ -26898,7 +30913,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-b6ae28dd1fd956ba03"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-42469d3caf97c723b8a8",
@@ -26927,7 +30945,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-62561cb429abd1e5a9"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2edfed8b7418a094d18c",
@@ -26956,7 +30977,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-99a2f3ccf389a3a156"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-396d6eb8c5a09ab6ba3c",
@@ -26985,7 +31009,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-ebb667194b7a6ad1d2"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-31bc88b78d6c8d607c2f",
@@ -27014,7 +31041,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cbbdfe93498080b9fc"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-da9d8d1bf6bb35f2d9bd",
@@ -27043,7 +31073,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-df03c9d2b7365c4646"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-84852cb1dae11b84acd8",
@@ -27072,7 +31105,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8150e9bebcfd2357dc"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-069c3523f1bc14fc061f",
@@ -27102,7 +31138,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a73afdf19dfc9a3849"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bef78a5737a6b6245bf9",
@@ -27132,7 +31171,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-203a1d1408d2baded2"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e517cd449593f94baa92",
@@ -27162,7 +31204,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-222febdd11f2cc6ff9"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cb16298a10077d288eab",
@@ -27192,7 +31237,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8d29018570ea5e265c"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bc4df6ee619ba531b228",
@@ -27213,7 +31261,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-ebb820c24911a867a2"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e0f8c276b416baef5814",
@@ -27234,7 +31285,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f329483a42ae1a8dde"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-98b4cec2296347738f54",
@@ -27258,7 +31312,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7ab6b2815929ee561b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1aa27ce48bf8f20feddf",
@@ -27282,7 +31339,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-9b851d156f8ca7d8d4"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b89a73c8f637e2fcd1cd",
@@ -27306,7 +31366,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-b290fe510a6c14afae"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6fd97ecf52d0706705ee",
@@ -27316,7 +31379,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "SWE-bench Verified",
   "metric": "published score",
-  "value": 67.0,
+  "value": 67,
   "unit": "score",
   "settings": {
     "harness": "OpenHands",
@@ -27330,7 +31393,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-8d04ca5bff299f7077"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cd9aa905bdb90f262e8d",
@@ -27351,7 +31417,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-630e6724fb46ffbfbd"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e25d248ed2447c33f7db",
@@ -27372,7 +31441,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1ab23d59b7561b8f8d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-000dc344d01a665624e1",
@@ -27393,7 +31465,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7cd57ccae233f1f085"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d5ec1a48b042c1dd1d10",
@@ -27414,7 +31489,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-fc4f607bd5176db52d"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5e0d8d9f5b757bff777b",
@@ -27435,7 +31513,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-570632a590b4d3095e"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-1acd311102d256655b81",
@@ -27456,7 +31537,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-05f7ea773671af70c8"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c8dca5a9da4176fdbd76",
@@ -27477,7 +31561,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-6e0c10a771916c2d92"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e12047811d8d299eab64",
@@ -27498,7 +31585,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-9230aa39b642de7c86"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a17a561b7debbbcefabd",
@@ -27508,7 +31598,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Tau-bench Airline",
   "metric": "published score",
-  "value": 48.0,
+  "value": 48,
   "unit": "score",
   "settings": {},
   "accessedOn": "2026-09-15",
@@ -27519,7 +31609,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-7fba5270a2e9f2a845"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-93fe8c43492e76d2dde2",
@@ -27529,7 +31622,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Tau-bench Airline",
   "metric": "published score",
-  "value": 60.0,
+  "value": 60,
   "unit": "score",
   "settings": {},
   "accessedOn": "2026-09-15",
@@ -27540,7 +31633,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-05e62745bce56030ef"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-42c4978d0f8eacc1c9cb",
@@ -27562,7 +31658,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-3209e7b988b5e6cf76"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2172c6d6c7592ecb46d7",
@@ -27584,7 +31683,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-92477e02fbcd1752b9"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-925e2255ac4a14219fa8",
@@ -27606,7 +31708,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-30482bdf0e5ec9258d"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7c03b505ced4a6cbe8dc",
@@ -27628,7 +31733,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5e370b085ea047ed56"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3f2020e9e34ee3c80fed",
@@ -27650,7 +31758,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-8e6d19ca9e2969abeb"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-77abefa5d04b44c1cc84",
@@ -27672,7 +31783,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-95e8693c218f2f9fa2"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-61b5784a03709dc44f02",
@@ -27682,7 +31796,7 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "INCLUDE",
   "metric": "published score",
-  "value": 67.0,
+  "value": 67,
   "unit": "score",
   "settings": {},
   "accessedOn": "2026-09-15",
@@ -27694,7 +31808,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7aa10928233133e5d5"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b27e2c407702b1a69c0f",
@@ -27719,7 +31836,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-bd5021667245d5569f"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-37848a430fda86dc7ea6",
@@ -27744,7 +31864,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-e2df6a5d83abb2886e"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-342e6e4a718aecf1801a",
@@ -27769,7 +31892,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d0c824a0d6598744ff"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a6179bb88b27e70b01b2",
@@ -27794,7 +31920,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a74fe08071cb0715e1"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f1d73e73607608e37765",
@@ -27819,7 +31948,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a97db11e2fee51607b"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5d2d960658335c29f62a",
@@ -27845,7 +31977,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-460dd99e156d75f646"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-8c789551875a2b7a0d4d",
@@ -27870,7 +32005,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-59bad1cccd93e791c7"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-27011d591c1fbb2e0add",
@@ -27897,7 +32035,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2ad0e79b298db920ca"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4e7ef8582120af6cb8f1",
@@ -27922,7 +32063,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-5715a6d68783571af2"
   ],
-  "mode": "non-thinking"
+  "mode": "non-thinking",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-dafb54e547a9c46a5087",
@@ -27932,10 +32076,10 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "MMLU-Pro",
   "metric": "EM",
-  "value": 85.0,
+  "value": 85,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -27949,7 +32093,10 @@ publishedEvaluations.push({
     "evidence:v03-9f5e8495af65aa7e54"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-708f53da6feb4e5f1ec0",
@@ -27962,7 +32109,7 @@ publishedEvaluations.push({
   "value": 82.4,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -27976,7 +32123,10 @@ publishedEvaluations.push({
     "evidence:v03-d502bcb930b9327f11"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e34794307c91539d6a0e",
@@ -27989,7 +32139,7 @@ publishedEvaluations.push({
   "value": 83.3,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -28003,7 +32153,10 @@ publishedEvaluations.push({
     "evidence:v03-091ec09393ba889e68"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f151ed8eedd4a4b6e687",
@@ -28016,7 +32169,7 @@ publishedEvaluations.push({
   "value": 93.1,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -28030,7 +32183,10 @@ publishedEvaluations.push({
     "evidence:v03-8521a05eb15a2c5084"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ae62b0ee6c19cab8afe2",
@@ -28043,7 +32199,7 @@ publishedEvaluations.push({
   "value": 46.4,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -28057,7 +32213,10 @@ publishedEvaluations.push({
     "evidence:v03-8a39c1298ebdf09afa"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2b54c1d141f558894317",
@@ -28070,7 +32229,7 @@ publishedEvaluations.push({
   "value": 73.1,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -28084,7 +32243,10 @@ publishedEvaluations.push({
     "evidence:v03-a02f7a0c7cbca306d1"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d72040d440d7af2d8ce1",
@@ -28097,7 +32259,7 @@ publishedEvaluations.push({
   "value": 70.2,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V3.2 thinking",
     "context": "128K"
   },
@@ -28111,7 +32273,10 @@ publishedEvaluations.push({
     "evidence:v03-58cd47d3a1e9ad3ba3"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6"
+  "sourceDocumentRevision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-7e40efb80c30dd527324",
@@ -28124,9 +32289,9 @@ publishedEvaluations.push({
   "value": 90.9,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
-    "topP": 1.0
+    "topP": 1
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/dba1be0a40aa45a94ad051997016db3960a90277/DeepSeek_V41_Tech_Report.pdf#Table 3",
@@ -28138,7 +32303,10 @@ publishedEvaluations.push({
     "evidence:v03-96e96575041cb9f8be"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-cd38fc3570b10a79a00a",
@@ -28151,9 +32319,9 @@ publishedEvaluations.push({
   "value": 65.6,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
-    "topP": 1.0
+    "topP": 1
   },
   "accessedOn": "2026-09-15",
   "comparisonGroup": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/dba1be0a40aa45a94ad051997016db3960a90277/DeepSeek_V41_Tech_Report.pdf#Table 3",
@@ -28165,7 +32333,10 @@ publishedEvaluations.push({
     "evidence:v03-25cff0ac9be6a4d50d"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-88e874ac36e6fccc576e",
@@ -28178,7 +32349,7 @@ publishedEvaluations.push({
   "value": 90.6,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
     "context": "1M",
     "topP": 0.95,
@@ -28194,7 +32365,10 @@ publishedEvaluations.push({
     "evidence:v03-1c7875b09b8c082ed1"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-87f28ff96d2503c5abab",
@@ -28204,10 +32378,10 @@ publishedEvaluations.push({
   "reportingRelationship": "publisher",
   "benchmark": "Terminal-Bench 3.0",
   "metric": "pass@1",
-  "value": 30.0,
+  "value": 30,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
     "context": "1M",
     "topP": 0.95,
@@ -28223,7 +32397,10 @@ publishedEvaluations.push({
     "evidence:v03-ca8791baa5208e28cd"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-4e4b21c65b9ef75c09ed",
@@ -28236,7 +32413,7 @@ publishedEvaluations.push({
   "value": 31.2,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
     "context": "1M",
     "topP": 0.95,
@@ -28252,7 +32429,10 @@ publishedEvaluations.push({
     "evidence:v03-e377bed11e7c2acd3a"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-2dadc4a1b1679ce86880",
@@ -28265,7 +32445,7 @@ publishedEvaluations.push({
   "value": 74.2,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
     "context": "1M",
     "topP": 0.95,
@@ -28281,7 +32461,10 @@ publishedEvaluations.push({
     "evidence:v03-89be8f9fbddf757159"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a965d202e2bfde56d94a",
@@ -28294,7 +32477,7 @@ publishedEvaluations.push({
   "value": 54.8,
   "unit": "percent",
   "settings": {
-    "temperature": 1.0,
+    "temperature": 1,
     "reportedVariant": "DeepSeek-V4.1-Flash max",
     "harness": "official scaffold"
   },
@@ -28308,7 +32491,10 @@ publishedEvaluations.push({
     "evidence:v03-d836c5cbf39f8102d7"
   ],
   "mode": "max",
-  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277"
+  "sourceDocumentRevision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-af5f8a2dc5dac5e4de31",
@@ -28334,7 +32520,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-abfc260241b7d2ec5f"
   ],
-  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab"
+  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d9407e017b5b03706567",
@@ -28360,7 +32549,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-71ab467f956c1b9b82"
   ],
-  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab"
+  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6f7968be2b2e0a576900",
@@ -28386,7 +32578,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-9b3be441ac3f01105b"
   ],
-  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab"
+  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ff7d1610f235f60aaeee",
@@ -28412,7 +32607,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-2696ece466c3395c7f"
   ],
-  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab"
+  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5397816362e6347e294b",
@@ -28438,7 +32636,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cf87f47f611c25f1b3"
   ],
-  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab"
+  "sourceDocumentRevision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-5e4d091fc8a5faa80c3d",
@@ -28463,7 +32664,10 @@ publishedEvaluations.push({
     "evidence:v03-6eb65e778ba0fe5240"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-13e32b6e9ff0efec313f",
@@ -28488,7 +32692,10 @@ publishedEvaluations.push({
     "evidence:v03-fda81f1a852a76b92f"
   ],
   "mode": "thinking",
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-088b1a9bdb04871bd3b0",
@@ -28510,7 +32717,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-a33d2c8d0990d58dea"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a2cb07cf2acb906080bd",
@@ -28532,7 +32742,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-35c3ba4f9e0feae73f"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a7e41af1adb4a3977479",
@@ -28554,7 +32767,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-cf2d77909ffd3b71f7"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-bf2ed6ec2f391160b964",
@@ -28576,7 +32792,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-080ffcd6f883a155bb"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-d9ef5962232b1bea19ef",
@@ -28598,7 +32817,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-94c12fb6b872354b1d"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-6ab1be23ac39a6d29504",
@@ -28620,7 +32842,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-7c179f3e6d51e1df3f"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-173e57919878554245ca",
@@ -28642,7 +32867,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-d302d0d40de23b78da"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a32a61d0dea5003975a6",
@@ -28664,7 +32892,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-997d3ea682e8d11ffd"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-e5060895c84d40a51003",
@@ -28686,7 +32917,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-6b914a21dd5379d5cf"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f149778dcb416e062a28",
@@ -28708,7 +32942,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-065b42d052f8d94aef"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-ee67af1ca947c10c1cac",
@@ -28730,7 +32967,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-0b65b1a848420a9b9a"
   ],
-  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+  "sourceDocumentRevision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-a790ba9f3b692f8dd027",
@@ -28755,7 +32995,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-512be43aef8de74664"
   ],
-  "sourceDocumentRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0"
+  "sourceDocumentRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-37b9ffa714046dbdf873",
@@ -28780,7 +33023,10 @@ publishedEvaluations.push({
   "evidenceIds": [
     "evidence:v03-4b153ce08c57b0a58d"
   ],
-  "sourceDocumentRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0"
+  "sourceDocumentRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-c8c731e7cc1076dd2103",
@@ -28805,7 +33051,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-f0bffbc928d7fbac4b"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-f625c53be7c340daf6e3",
@@ -28830,7 +33079,10 @@ publishedEvaluations.push({
   "limitations": [],
   "evidenceIds": [
     "evidence:v03-1436ab6c330a71b147"
-  ]
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-684936680bae2da8ab2d",
@@ -28861,7 +33113,10 @@ publishedEvaluations.push({
     "evidence:v03-7911b91701de06d3d6",
     "evidence:v03-fb8e0c2602ad624e3a"
   ],
-  "sourceDocumentRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+  "sourceDocumentRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-b3d00fb6f4d7be54f0a5",
@@ -28892,7 +33147,10 @@ publishedEvaluations.push({
     "evidence:v03-5c110ee4f308b2c771",
     "evidence:v03-fb8e0c2602ad624e3a"
   ],
-  "sourceDocumentRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+  "sourceDocumentRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "languageScope": {
+    "kind": "unspecified"
+  }
 });
 publishedEvaluations.push({
   "id": "published-evaluation:v03-3e52e957e19eeb4905e6",
@@ -28923,6 +33181,8116 @@ publishedEvaluations.push({
     "evidence:v03-3944d66b7d8bdd0919",
     "evidence:v03-fb8e0c2602ad624e3a"
   ],
+  "sourceDocumentRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "sourceLanguageLabel": "fa",
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa"
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-fe05fda998c96b79",
+  "modelVersionId": "model:qwen-qwen3-30b-a3b",
+  "reportedModelName": "Qwen3-30B-A3B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 69.1,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "enterprise-rag",
+    "structured-extraction"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-3bb22d5e1b"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-fe05fda998c96b79",
+      "modelRef": "model:qwen-qwen3-30b-a3b",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 69.1,
+      "reportedValueText": "69.1",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / MMLU-Pro / column 2",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-30e25c3dce06b67be12c"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-a3cfdc091012c75c",
+  "modelVersionId": "model:qwen-qwen3-4b",
+  "reportedModelName": "Qwen3-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 58.0,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "enterprise-rag",
+    "structured-extraction"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-5cac68b683"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-a3cfdc091012c75c",
+      "modelRef": "model:qwen-qwen3-4b",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 58.0,
+      "reportedValueText": "58.0",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / MMLU-Pro / column 3",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f09ba156e2c64783",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "reportedModelName": "Qwen3-4B-Instruct-2507",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 69.6,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-3cc3cb6b8b"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f09ba156e2c64783",
+      "modelRef": "model:qwen-qwen3-4b-instruct-2507",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 69.6,
+      "reportedValueText": "69.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / MMLU-Pro / column 4",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-cb27fa4145f8d829",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "reportedModelName": "Qwen3-4B-Instruct-2507",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "AIME25",
+  "metric": "publisher-reported score",
+  "value": 47.4,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-5cc78e363d"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-cb27fa4145f8d829",
+      "modelRef": "model:qwen-qwen3-4b-instruct-2507",
+      "benchmark": "AIME25",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 47.4,
+      "reportedValueText": "47.4",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / AIME25 / column 4",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1e5608cb3afbc794",
+  "modelVersionId": "model:qwen-qwen3-30b-a3b",
+  "reportedModelName": "Qwen3-30B-A3B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "LiveCodeBench v6 (25.02-25.05)",
+  "metric": "publisher-reported score",
+  "value": 29.0,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "enterprise-rag",
+    "structured-extraction"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-5ebaab9f44"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "benchmarkVersion": "v6; 2025-02 to 2025-05",
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1e5608cb3afbc794",
+      "modelRef": "model:qwen-qwen3-30b-a3b",
+      "benchmark": "LiveCodeBench v6 (25.02-25.05)",
+      "benchmarkVersion": "v6; 2025-02 to 2025-05",
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 29.0,
+      "reportedValueText": "29.0",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / LiveCodeBench v6 (25.02-25.05) / column 2",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-25f6490a4567afcc",
+  "modelVersionId": "model:qwen-qwen3-4b",
+  "reportedModelName": "Qwen3-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "LiveCodeBench v6 (25.02-25.05)",
+  "metric": "publisher-reported score",
+  "value": 26.4,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "enterprise-rag",
+    "structured-extraction"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-03114d8b2e"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "benchmarkVersion": "v6; 2025-02 to 2025-05",
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-25f6490a4567afcc",
+      "modelRef": "model:qwen-qwen3-4b",
+      "benchmark": "LiveCodeBench v6 (25.02-25.05)",
+      "benchmarkVersion": "v6; 2025-02 to 2025-05",
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 26.4,
+      "reportedValueText": "26.4",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / LiveCodeBench v6 (25.02-25.05) / column 3",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-868c118e83f96cdb",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "reportedModelName": "Qwen3-4B-Instruct-2507",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "LiveCodeBench v6 (25.02-25.05)",
+  "metric": "publisher-reported score",
+  "value": 35.1,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-8ee3982183"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "benchmarkVersion": "v6; 2025-02 to 2025-05",
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-868c118e83f96cdb",
+      "modelRef": "model:qwen-qwen3-4b-instruct-2507",
+      "benchmark": "LiveCodeBench v6 (25.02-25.05)",
+      "benchmarkVersion": "v6; 2025-02 to 2025-05",
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 35.1,
+      "reportedValueText": "35.1",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / LiveCodeBench v6 (25.02-25.05) / column 4",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8a2b5cd272138518",
+  "modelVersionId": "model:qwen-qwen3-30b-a3b",
+  "reportedModelName": "Qwen3-30B-A3B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "Aider-Polyglot",
+  "metric": "publisher-reported score",
+  "value": 24.4,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "enterprise-rag",
+    "structured-extraction"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-fde7177eb7"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8a2b5cd272138518",
+      "modelRef": "model:qwen-qwen3-30b-a3b",
+      "benchmark": "Aider-Polyglot",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 24.4,
+      "reportedValueText": "24.4",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / Aider-Polyglot / column 2",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-2a00fd1b5f87d868",
+  "modelVersionId": "model:qwen-qwen3-4b",
+  "reportedModelName": "Qwen3-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "Aider-Polyglot",
+  "metric": "publisher-reported score",
+  "value": 13.8,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "enterprise-rag",
+    "structured-extraction"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-6d21b0d84b"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-2a00fd1b5f87d868",
+      "modelRef": "model:qwen-qwen3-4b",
+      "benchmark": "Aider-Polyglot",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 13.8,
+      "reportedValueText": "13.8",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / Aider-Polyglot / column 3",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-43c7eba9249cac69",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "reportedModelName": "Qwen3-4B-Instruct-2507",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "Aider-Polyglot",
+  "metric": "publisher-reported score",
+  "value": 12.9,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-d3d3e2c65a"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-43c7eba9249cac69",
+      "modelRef": "model:qwen-qwen3-4b-instruct-2507",
+      "benchmark": "Aider-Polyglot",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 12.9,
+      "reportedValueText": "12.9",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / Aider-Polyglot / column 4",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-3ec4de3a5d3141b8",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "reportedModelName": "Qwen3-4B-Instruct-2507",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "IFEval",
+  "metric": "publisher-reported score",
+  "value": 83.4,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-69a791a006"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-3ec4de3a5d3141b8",
+      "modelRef": "model:qwen-qwen3-4b-instruct-2507",
+      "benchmark": "IFEval",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 83.4,
+      "reportedValueText": "83.4",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / IFEval / column 4",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-689eb5688ef9b8ce",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "reportedModelName": "Qwen3-4B-Instruct-2507",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "BFCL-v3",
+  "metric": "publisher-reported score",
+  "value": 61.9,
+  "unit": "score-points",
+  "settings": {
+    "mode": "non-thinking"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md-38fe671135"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "comparisonGroup": "comparison:qwen-small-nonthinking",
+  "mode": "non-thinking",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-689eb5688ef9b8ce",
+      "modelRef": "model:qwen-qwen3-4b-instruct-2507",
+      "benchmark": "BFCL-v3",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 61.9,
+      "reportedValueText": "61.9",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-4b-instruct-2507-readme-md",
+      "sourceLocator": "Performance / BFCL-v3 / column 4",
+      "sourceDocumentRevision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "mode": "non-thinking"
+      },
+      "comparisonGroup": "comparison:qwen-small-nonthinking",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1b8ae3bbb92ef79f",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "reportedModelName": "Tooka-SBERT-V2-Large",
+  "reporter": "PartAI",
+  "reportingRelationship": "publisher",
+  "benchmark": "PTEB Retrieval aggregate",
+  "metric": "publisher aggregate score",
+  "value": 59.8,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-d36d296fa4"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
   "language": "fa",
-  "sourceDocumentRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1b8ae3bbb92ef79f",
+      "modelRef": "model:partai-tooka-sbert-v2-large",
+      "benchmark": "PTEB Retrieval aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 59.8,
+      "reportedValueText": "59.80",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / Tooka-SBERT-V2-Large / PTEB Retrieval aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-e032fa1201b8aa68",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "reportedModelName": "Tooka-SBERT-V2-Large",
+  "reporter": "PartAI",
+  "reportingRelationship": "publisher",
+  "benchmark": "PTEB Reranking aggregate",
+  "metric": "publisher aggregate score",
+  "value": 73.44,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-f8dc8f5f4e"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-e032fa1201b8aa68",
+      "modelRef": "model:partai-tooka-sbert-v2-large",
+      "benchmark": "PTEB Reranking aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 73.44,
+      "reportedValueText": "73.44",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / Tooka-SBERT-V2-Large / PTEB Reranking aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-7645db8b02c3e35c",
+  "modelVersionId": "model:partai-tooka-sbert-v2-large",
+  "reportedModelName": "Tooka-SBERT-V2-Large",
+  "reporter": "PartAI",
+  "reportingRelationship": "publisher",
+  "benchmark": "PTEB Cross-Tasks aggregate",
+  "metric": "publisher aggregate score",
+  "value": 72.05,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-85d0f2eef2"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-7645db8b02c3e35c",
+      "modelRef": "model:partai-tooka-sbert-v2-large",
+      "benchmark": "PTEB Cross-Tasks aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 72.05,
+      "reportedValueText": "72.05",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / Tooka-SBERT-V2-Large / PTEB Cross-Tasks aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-ac60bd8d96232ed1",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "reportedModelName": "Tooka-SBERT-V2-Small",
+  "reporter": "PartAI",
+  "reportingRelationship": "publisher",
+  "benchmark": "PTEB Retrieval aggregate",
+  "metric": "publisher aggregate score",
+  "value": 61.24,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-85dfdbb25f"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-ac60bd8d96232ed1",
+      "modelRef": "model:partai-tooka-sbert-v2-small",
+      "benchmark": "PTEB Retrieval aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 61.24,
+      "reportedValueText": "61.24",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / Tooka-SBERT-V2-Small / PTEB Retrieval aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-81dbbf369f7a38db",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "reportedModelName": "Tooka-SBERT-V2-Small",
+  "reporter": "PartAI",
+  "reportingRelationship": "publisher",
+  "benchmark": "PTEB Reranking aggregate",
+  "metric": "publisher aggregate score",
+  "value": 73.4,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-111bd20d7c"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-81dbbf369f7a38db",
+      "modelRef": "model:partai-tooka-sbert-v2-small",
+      "benchmark": "PTEB Reranking aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 73.4,
+      "reportedValueText": "73.40",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / Tooka-SBERT-V2-Small / PTEB Reranking aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-b095eeec61552176",
+  "modelVersionId": "model:partai-tooka-sbert-v2-small",
+  "reportedModelName": "Tooka-SBERT-V2-Small",
+  "reporter": "PartAI",
+  "reportingRelationship": "publisher",
+  "benchmark": "PTEB Cross-Tasks aggregate",
+  "metric": "publisher aggregate score",
+  "value": 70.62,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-af1f4ca407"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-b095eeec61552176",
+      "modelRef": "model:partai-tooka-sbert-v2-small",
+      "benchmark": "PTEB Cross-Tasks aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 70.62,
+      "reportedValueText": "70.62",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / Tooka-SBERT-V2-Small / PTEB Cross-Tasks aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1453e2f5497a7a7a",
+  "modelVersionId": "model:jinaai-jina-embeddings-v3",
+  "reportedModelName": "jina-embeddings-v3",
+  "reporter": "PartAI",
+  "reportingRelationship": "third-party",
+  "benchmark": "PTEB Retrieval aggregate",
+  "metric": "publisher aggregate score",
+  "value": 65.18,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-c2a8808f8e"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1453e2f5497a7a7a",
+      "modelRef": "model:jinaai-jina-embeddings-v3",
+      "benchmark": "PTEB Retrieval aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 65.18,
+      "reportedValueText": "65.18",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / jina-embeddings-v3 / PTEB Retrieval aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-bfd3a4c85ce3b12e",
+  "modelVersionId": "model:jinaai-jina-embeddings-v3",
+  "reportedModelName": "jina-embeddings-v3",
+  "reporter": "PartAI",
+  "reportingRelationship": "third-party",
+  "benchmark": "PTEB Reranking aggregate",
+  "metric": "publisher aggregate score",
+  "value": 64.62,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-bf1bba3dc3"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-bfd3a4c85ce3b12e",
+      "modelRef": "model:jinaai-jina-embeddings-v3",
+      "benchmark": "PTEB Reranking aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 64.62,
+      "reportedValueText": "64.62",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / jina-embeddings-v3 / PTEB Reranking aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-e4e22ab3683526aa",
+  "modelVersionId": "model:jinaai-jina-embeddings-v3",
+  "reportedModelName": "jina-embeddings-v3",
+  "reporter": "PartAI",
+  "reportingRelationship": "third-party",
+  "benchmark": "PTEB Cross-Tasks aggregate",
+  "metric": "publisher aggregate score",
+  "value": 70.24,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-6e209fb777"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-e4e22ab3683526aa",
+      "modelRef": "model:jinaai-jina-embeddings-v3",
+      "benchmark": "PTEB Cross-Tasks aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 70.24,
+      "reportedValueText": "70.24",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / jina-embeddings-v3 / PTEB Cross-Tasks aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-2ecaeea965c0f302",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "PartAI",
+  "reportingRelationship": "third-party",
+  "benchmark": "PTEB Retrieval aggregate",
+  "metric": "publisher aggregate score",
+  "value": 63.9,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-d9d3b49617"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-2ecaeea965c0f302",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "PTEB Retrieval aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 63.9,
+      "reportedValueText": "63.90",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / multilingual-e5-base / PTEB Retrieval aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-aad5df3cdd593200",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "PartAI",
+  "reportingRelationship": "third-party",
+  "benchmark": "PTEB Reranking aggregate",
+  "metric": "publisher aggregate score",
+  "value": 76.01,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-220c75a1b7"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-aad5df3cdd593200",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "PTEB Reranking aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 76.01,
+      "reportedValueText": "76.01",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / multilingual-e5-base / PTEB Reranking aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-59fe0773e4c8d9b4",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "PartAI",
+  "reportingRelationship": "third-party",
+  "benchmark": "PTEB Cross-Tasks aggregate",
+  "metric": "publisher aggregate score",
+  "value": 70.09,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-partai-tooka-sbert-v2-large-readme-md-4c75c40dd5"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+  "comparisonGroup": "comparison:pteb-task-vs-overall",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-59fe0773e4c8d9b4",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "PTEB Cross-Tasks aggregate",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 70.09,
+      "reportedValueText": "70.09",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "PartAI",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-partai-tooka-sbert-v2-large-readme-md",
+      "sourceLocator": "PTEB evaluation table / multilingual-e5-base / PTEB Cross-Tasks aggregate",
+      "sourceDocumentRevision": "b59682efa961122cc0e4408296d5852870c82eae",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {},
+      "comparisonGroup": "comparison:pteb-task-vs-overall",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1bebac5a3562e708",
+  "modelVersionId": "model:intfloat-multilingual-e5-small",
+  "reportedModelName": "multilingual-e5-small",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 48.0,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-52ea897d77"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1bebac5a3562e708",
+      "modelRef": "model:intfloat-multilingual-e5-small",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 48.0,
+      "reportedValueText": "48.0",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=1",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-bcea84ddaa37050e",
+  "modelVersionId": "model:intfloat-multilingual-e5-small",
+  "reportedModelName": "multilingual-e5-small",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 85.3,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-0b731a620b"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-bcea84ddaa37050e",
+      "modelRef": "model:intfloat-multilingual-e5-small",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 85.3,
+      "reportedValueText": "85.3",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=5",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-d492dbaf0debcd9c",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 51.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-96d9982c33"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-d492dbaf0debcd9c",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 51.2,
+      "reportedValueText": "51.2",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=2",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-56c65fd4ca5110b4",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 86.4,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-cdc1211581"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-56c65fd4ca5110b4",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 86.4,
+      "reportedValueText": "86.4",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=6",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1e6b46bed04871f8",
+  "modelVersionId": "model:intfloat-multilingual-e5-large",
+  "reportedModelName": "multilingual-e5-large",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 52.9,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-12a3802789"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1e6b46bed04871f8",
+      "modelRef": "model:intfloat-multilingual-e5-large",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 52.9,
+      "reportedValueText": "52.9",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=3",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-4d1b2eb24add18be",
+  "modelVersionId": "model:intfloat-multilingual-e5-large",
+  "reportedModelName": "multilingual-e5-large",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 87.6,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-c75b02f3de"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-4d1b2eb24add18be",
+      "modelRef": "model:intfloat-multilingual-e5-large",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 87.6,
+      "reportedValueText": "87.6",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=7",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f75e396bf9194c2b",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 51.5,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-0f874201a2"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f75e396bf9194c2b",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 51.5,
+      "reportedValueText": "51.5",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=4",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f1fd222e37134c76",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 88.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-e03baf51e7"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f1fd222e37134c76",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 88.2,
+      "reportedValueText": "88.2",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=en / column=8",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-55773adc4c695e91",
+  "modelVersionId": "model:intfloat-multilingual-e5-small",
+  "reportedModelName": "multilingual-e5-small",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 51.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-57b53cd36a"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-55773adc4c695e91",
+      "modelRef": "model:intfloat-multilingual-e5-small",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 51.2,
+      "reportedValueText": "51.2",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=1",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-636ef062353022b1",
+  "modelVersionId": "model:intfloat-multilingual-e5-small",
+  "reportedModelName": "multilingual-e5-small",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 87.6,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-490b315569"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-636ef062353022b1",
+      "modelRef": "model:intfloat-multilingual-e5-small",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 87.6,
+      "reportedValueText": "87.6",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=5",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-bee3ec971801a1c4",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 51.5,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-799d2ef520"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-bee3ec971801a1c4",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 51.5,
+      "reportedValueText": "51.5",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=2",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-276364509259713e",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 88.6,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-32d318f13b"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-276364509259713e",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 88.6,
+      "reportedValueText": "88.6",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=6",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8b3099ee4aaa6097",
+  "modelVersionId": "model:intfloat-multilingual-e5-large",
+  "reportedModelName": "multilingual-e5-large",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 52.9,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-6eda93a5c6"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8b3099ee4aaa6097",
+      "modelRef": "model:intfloat-multilingual-e5-large",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 52.9,
+      "reportedValueText": "52.9",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=3",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-739fbaaf21d57520",
+  "modelVersionId": "model:intfloat-multilingual-e5-large",
+  "reportedModelName": "multilingual-e5-large",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 89.1,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-ac39819527"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-739fbaaf21d57520",
+      "modelRef": "model:intfloat-multilingual-e5-large",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 89.1,
+      "reportedValueText": "89.1",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=7",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1666462d0c94e1d9",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 53.7,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-2c2f885e9e"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1666462d0c94e1d9",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 53.7,
+      "reportedValueText": "53.7",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=4",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-01ff381460bf2ee2",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 89.3,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-27c3463857"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-01ff381460bf2ee2",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 89.3,
+      "reportedValueText": "89.3",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=es / column=8",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-ad06c006d16d4568",
+  "modelVersionId": "model:intfloat-multilingual-e5-small",
+  "reportedModelName": "multilingual-e5-small",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 53.3,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-d0e3953535"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-ad06c006d16d4568",
+      "modelRef": "model:intfloat-multilingual-e5-small",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 53.3,
+      "reportedValueText": "53.3",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=1",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-0c0bfdc764829a8f",
+  "modelVersionId": "model:intfloat-multilingual-e5-small",
+  "reportedModelName": "multilingual-e5-small",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 90.4,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-737a7df960"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-0c0bfdc764829a8f",
+      "modelRef": "model:intfloat-multilingual-e5-small",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 90.4,
+      "reportedValueText": "90.4",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=5",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8e4c9a86ac032104",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 57.4,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-a8e6700ed3"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8e4c9a86ac032104",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 57.4,
+      "reportedValueText": "57.4",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=2",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-4e6d005510c9fc07",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 91.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-c42d7f6d6d"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-4e6d005510c9fc07",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 91.2,
+      "reportedValueText": "91.2",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=6",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-cec73c35401e0b22",
+  "modelVersionId": "model:intfloat-multilingual-e5-large",
+  "reportedModelName": "multilingual-e5-large",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 59.0,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-91a8da59a4"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-cec73c35401e0b22",
+      "modelRef": "model:intfloat-multilingual-e5-large",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 59.0,
+      "reportedValueText": "59.0",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=3",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-9d9ac9d1c7a22228",
+  "modelVersionId": "model:intfloat-multilingual-e5-large",
+  "reportedModelName": "multilingual-e5-large",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 92.9,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-536dd4baa7"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-9d9ac9d1c7a22228",
+      "modelRef": "model:intfloat-multilingual-e5-large",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 92.9,
+      "reportedValueText": "92.9",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=7",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-fb9e4c1681dce8f9",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "nDCG@10",
+  "value": 59.4,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-e791babee6"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-fb9e4c1681dce8f9",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "nDCG@10",
+      "rawMetricLabel": "nDCG@10",
+      "value": 59.4,
+      "reportedValueText": "59.4",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=4",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-395359d64e7aae30",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Microsoft E5 authors",
+  "reportingRelationship": "publisher",
+  "benchmark": "MIRACL",
+  "metric": "Recall@100",
+  "value": 92.9,
+  "unit": "score-points-0-100",
+  "settings": {
+    "datasetSplit": "development",
+    "scoreScale": "0–100 as printed"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-e5-report-html-c39f1ed2c3"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "comparisonGroup": "comparison:e5-miracl-by-language",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-395359d64e7aae30",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MIRACL",
+      "benchmarkVersion": null,
+      "metric": "Recall@100",
+      "rawMetricLabel": "Recall@100",
+      "value": 92.9,
+      "reportedValueText": "92.9",
+      "unit": "score-points-0-100",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "Microsoft E5 authors",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-e5-report-html",
+      "sourceLocator": "Appendix / detailed MIRACL results / language=fa / column=8",
+      "sourceDocumentRevision": null,
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetSplit": "development",
+        "scoreScale": "0–100 as printed"
+      },
+      "comparisonGroup": "comparison:e5-miracl-by-language",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-b8937b9f5f5a346e",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB AmazonReviewsClassification (es)",
+  "metric": "accuracy",
+  "value": 40.534,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_reviews_multi",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "1399c76144fd37290681b995c656ef9b2e06e26d"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-61f5a4cd50"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-b8937b9f5f5a346e",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB AmazonReviewsClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 40.534,
+      "reportedValueText": "40.534",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB AmazonReviewsClassification (es) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_reviews_multi",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "1399c76144fd37290681b995c656ef9b2e06e26d",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-ccd6ed2772cbec19",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MTOPDomainClassification (es)",
+  "metric": "accuracy",
+  "value": 90.59039359573046,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/mtop_domain",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "d80d48c1eb48d3562165c59d59d0034df9fff0bf"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-e9080b43b2"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-ccd6ed2772cbec19",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB MTOPDomainClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 90.59039359573046,
+      "reportedValueText": "90.59039359573046",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MTOPDomainClassification (es) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/mtop_domain",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "d80d48c1eb48d3562165c59d59d0034df9fff0bf",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-db0a0d5684365497",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MTOPIntentClassification (es)",
+  "metric": "accuracy",
+  "value": 71.27418278852569,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/mtop_intent",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "ae001d0e6b1228650b7bd1c2c65fb50ad11a8aba"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-17a31c4d36"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-db0a0d5684365497",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB MTOPIntentClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 71.27418278852569,
+      "reportedValueText": "71.27418278852569",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MTOPIntentClassification (es) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/mtop_intent",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "ae001d0e6b1228650b7bd1c2c65fb50ad11a8aba",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-80a4636c673a852c",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveIntentClassification (es)",
+  "metric": "accuracy",
+  "value": 68.40282447881641,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_intent",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-d6d0d8ec76"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-80a4636c673a852c",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB MassiveIntentClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 68.40282447881641,
+      "reportedValueText": "68.40282447881641",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveIntentClassification (es) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_intent",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-b2a1fea201feec36",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveIntentClassification (fa)",
+  "metric": "accuracy",
+  "value": 67.24613315400134,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_intent",
+    "datasetConfig": "fa",
+    "datasetSplit": "test",
+    "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-71ee03b0f8"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-b2a1fea201feec36",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB MassiveIntentClassification (fa)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 67.24613315400134,
+      "reportedValueText": "67.24613315400134",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveIntentClassification (fa) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_intent",
+        "datasetConfig": "fa",
+        "datasetSplit": "test",
+        "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-145eb53c6df4eb54",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveScenarioClassification (es)",
+  "metric": "accuracy",
+  "value": 71.5030262273033,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_scenario",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-a7580ae537"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-145eb53c6df4eb54",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB MassiveScenarioClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 71.5030262273033,
+      "reportedValueText": "71.5030262273033",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveScenarioClassification (es) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_scenario",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-11043d8554452f33",
+  "modelVersionId": "model:intfloat-multilingual-e5-base",
+  "reportedModelName": "multilingual-e5-base",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveScenarioClassification (fa)",
+  "metric": "accuracy",
+  "value": 70.24546065904505,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_scenario",
+    "datasetConfig": "fa",
+    "datasetSplit": "test",
+    "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-base-readme-md-bd7de103c7"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-11043d8554452f33",
+      "modelRef": "model:intfloat-multilingual-e5-base",
+      "benchmark": "MTEB MassiveScenarioClassification (fa)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 70.24546065904505,
+      "reportedValueText": "70.24546065904505",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-base-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveScenarioClassification (fa) / accuracy",
+      "sourceDocumentRevision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_scenario",
+        "datasetConfig": "fa",
+        "datasetSplit": "test",
+        "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-5786a4959b6fe136",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB AmazonReviewsClassification (es)",
+  "metric": "accuracy",
+  "value": 48.806000000000004,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_reviews_multi",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "1399c76144fd37290681b995c656ef9b2e06e26d"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-61f5a4cd50"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-5786a4959b6fe136",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB AmazonReviewsClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 48.806000000000004,
+      "reportedValueText": "48.806000000000004",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB AmazonReviewsClassification (es) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_reviews_multi",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "1399c76144fd37290681b995c656ef9b2e06e26d",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-7006facf578faeb7",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MTOPDomainClassification (es)",
+  "metric": "accuracy",
+  "value": 92.26817878585723,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/mtop_domain",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "d80d48c1eb48d3562165c59d59d0034df9fff0bf"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-e9080b43b2"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-7006facf578faeb7",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB MTOPDomainClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 92.26817878585723,
+      "reportedValueText": "92.26817878585723",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MTOPDomainClassification (es) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/mtop_domain",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "d80d48c1eb48d3562165c59d59d0034df9fff0bf",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-0728685533464a67",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MTOPIntentClassification (es)",
+  "metric": "accuracy",
+  "value": 80.34022681787857,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/mtop_intent",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "ae001d0e6b1228650b7bd1c2c65fb50ad11a8aba"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-17a31c4d36"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-0728685533464a67",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB MTOPIntentClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 80.34022681787857,
+      "reportedValueText": "80.34022681787857",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MTOPIntentClassification (es) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/mtop_intent",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "ae001d0e6b1228650b7bd1c2c65fb50ad11a8aba",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-199e65a5b289e10d",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveIntentClassification (es)",
+  "metric": "accuracy",
+  "value": 72.82111634162744,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_intent",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-d6d0d8ec76"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-199e65a5b289e10d",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB MassiveIntentClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 72.82111634162744,
+      "reportedValueText": "72.82111634162744",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveIntentClassification (es) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_intent",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-7676621c41220a88",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveIntentClassification (fa)",
+  "metric": "accuracy",
+  "value": 74.25353059852051,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_intent",
+    "datasetConfig": "fa",
+    "datasetSplit": "test",
+    "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-71ee03b0f8"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-7676621c41220a88",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB MassiveIntentClassification (fa)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 74.25353059852051,
+      "reportedValueText": "74.25353059852051",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveIntentClassification (fa) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_intent",
+        "datasetConfig": "fa",
+        "datasetSplit": "test",
+        "datasetRevision": "31efe3c427b0bae9c22cbb560b8f15491cc6bed7",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-5640bc1d703b23b9",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveScenarioClassification (es)",
+  "metric": "accuracy",
+  "value": 76.9670477471419,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_scenario",
+    "datasetConfig": "es",
+    "datasetSplit": "test",
+    "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-a7580ae537"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-5640bc1d703b23b9",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB MassiveScenarioClassification (es)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 76.9670477471419,
+      "reportedValueText": "76.9670477471419",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveScenarioClassification (es) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_scenario",
+        "datasetConfig": "es",
+        "datasetSplit": "test",
+        "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f209e017204afd58",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "intfloat / model card",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB MassiveScenarioClassification (fa)",
+  "metric": "accuracy",
+  "value": 78.09683927370544,
+  "unit": "percent",
+  "settings": {
+    "datasetId": "mteb/amazon_massive_scenario",
+    "datasetConfig": "fa",
+    "datasetSplit": "test",
+    "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md-bd7de103c7"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "fa"
+  },
+  "language": "fa",
+  "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+  "comparisonGroup": "comparison:e5-classification-es-fa",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f209e017204afd58",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB MassiveScenarioClassification (fa)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 78.09683927370544,
+      "reportedValueText": "78.09683927370544",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "fa",
+      "reporter": "intfloat / model card",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-intfloat-multilingual-e5-large-instruct-readme-md",
+      "sourceLocator": "frontmatter.model-index / MTEB MassiveScenarioClassification (fa) / accuracy",
+      "sourceDocumentRevision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "datasetId": "mteb/amazon_massive_scenario",
+        "datasetConfig": "fa",
+        "datasetSplit": "test",
+        "datasetRevision": "7d571f92784cd94a019292a1f45445077d0ef634",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:e5-classification-es-fa",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-c9b18a8646cc30c5",
+  "modelVersionId": "model:baai-bge-m3",
+  "reportedModelName": "bge-m3",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "MTEB multilingual / Mean (Task)",
+  "metric": "publisher aggregate score",
+  "value": 59.56,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-a8ec017b3c"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-c9b18a8646cc30c5",
+      "modelRef": "model:baai-bge-m3",
+      "benchmark": "MTEB multilingual / Mean (Task)",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 59.56,
+      "reportedValueText": "59.56",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / BGE-M3 / Mean (Task)",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8670bad0d992f404",
+  "modelVersionId": "model:baai-bge-m3",
+  "reportedModelName": "bge-m3",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "MTEB multilingual / Retri.",
+  "metric": "publisher aggregate score",
+  "value": 54.6,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-63b0b19d92"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8670bad0d992f404",
+      "modelRef": "model:baai-bge-m3",
+      "benchmark": "MTEB multilingual / Retri.",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 54.6,
+      "reportedValueText": "54.60",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / BGE-M3 / Retri.",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1ac672f871c019c8",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "MTEB multilingual / Mean (Task)",
+  "metric": "publisher aggregate score",
+  "value": 63.22,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-3b7a5bcb37"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1ac672f871c019c8",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB multilingual / Mean (Task)",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 63.22,
+      "reportedValueText": "63.22",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / multilingual-e5-large-instruct / Mean (Task)",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8b93a2964a84e80b",
+  "modelVersionId": "model:intfloat-multilingual-e5-large-instruct",
+  "reportedModelName": "multilingual-e5-large-instruct",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "MTEB multilingual / Retri.",
+  "metric": "publisher aggregate score",
+  "value": 57.12,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-ab393db495"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8b93a2964a84e80b",
+      "modelRef": "model:intfloat-multilingual-e5-large-instruct",
+      "benchmark": "MTEB multilingual / Retri.",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 57.12,
+      "reportedValueText": "57.12",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / multilingual-e5-large-instruct / Retri.",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "relayed from MTEB leaderboard; underlying run not re-inspected"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-52fa716c5794088e",
+  "modelVersionId": "model:qwen-qwen3-embedding-0-6b",
+  "reportedModelName": "Qwen3-Embedding-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB multilingual / Retri.",
+  "metric": "publisher aggregate score",
+  "value": 64.64,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "publisher evaluation"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-d40bcc3971"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-52fa716c5794088e",
+      "modelRef": "model:qwen-qwen3-embedding-0-6b",
+      "benchmark": "MTEB multilingual / Retri.",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 64.64,
+      "reportedValueText": "64.64",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / Qwen3-Embedding-0.6B / Retri.",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "publisher evaluation"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-57e112c50740d63a",
+  "modelVersionId": "model:qwen-qwen3-embedding-4b",
+  "reportedModelName": "Qwen3-Embedding-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB multilingual / Retri.",
+  "metric": "publisher aggregate score",
+  "value": 69.6,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "publisher evaluation"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-0e117ef4a4"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-57e112c50740d63a",
+      "modelRef": "model:qwen-qwen3-embedding-4b",
+      "benchmark": "MTEB multilingual / Retri.",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 69.6,
+      "reportedValueText": "69.60",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / Qwen3-Embedding-4B / Retri.",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "publisher evaluation"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-0a4232e7bdb1957a",
+  "modelVersionId": "model:qwen-qwen3-embedding-8b",
+  "reportedModelName": "Qwen3-Embedding-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB multilingual / Retri.",
+  "metric": "publisher aggregate score",
+  "value": 70.88,
+  "unit": "score-points",
+  "settings": {
+    "baselineLeaderboardSnapshot": "2025-05-24",
+    "scoreOrigin": "publisher evaluation"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md-4fbf2fee58"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "comparisonGroup": "comparison:qwen-embedding-task-scope",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-0a4232e7bdb1957a",
+      "modelRef": "model:qwen-qwen3-embedding-8b",
+      "benchmark": "MTEB multilingual / Retri.",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 70.88,
+      "reportedValueText": "70.88",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-embedding-0-6b-readme-md",
+      "sourceLocator": "Evaluation / multilingual table / Qwen3-Embedding-8B / Retri.",
+      "sourceDocumentRevision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "baselineLeaderboardSnapshot": "2025-05-24",
+        "scoreOrigin": "publisher evaluation"
+      },
+      "comparisonGroup": "comparison:qwen-embedding-task-scope",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-b60b791be0022b3d",
+  "modelVersionId": "model:qwen-qwen3-embedding-0-6b",
+  "reportedModelName": "Qwen3-Embedding-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 61.82,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "retriever-only baseline",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-9282f349f0"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-b60b791be0022b3d",
+      "modelRef": "model:qwen-qwen3-embedding-0-6b",
+      "benchmark": "MTEB-R",
+      "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 61.82,
+      "reportedValueText": "61.82",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Embedding-0.6B / MTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "retriever-only baseline",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-4ece168662ff12c8",
+  "modelVersionId": "model:qwen-qwen3-embedding-0-6b",
+  "reportedModelName": "Qwen3-Embedding-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 64.64,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "retriever-only baseline",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-2aa532ce6f"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-4ece168662ff12c8",
+      "modelRef": "model:qwen-qwen3-embedding-0-6b",
+      "benchmark": "MMTEB-R",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 64.64,
+      "reportedValueText": "64.64",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Embedding-0.6B / MMTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "retriever-only baseline",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-fc3076d9f677e667",
+  "modelVersionId": "model:qwen-qwen3-embedding-0-6b",
+  "reportedModelName": "Qwen3-Embedding-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "FollowIR",
+  "metric": "publisher aggregate score",
+  "value": 5.09,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "retriever-only baseline",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-41e37a11ec"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-fc3076d9f677e667",
+      "modelRef": "model:qwen-qwen3-embedding-0-6b",
+      "benchmark": "FollowIR",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 5.09,
+      "reportedValueText": "5.09",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Embedding-0.6B / FollowIR",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "retriever-only baseline",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-bc20cbed929f4a7f",
+  "modelVersionId": "model:baai-bge-reranker-v2-m3",
+  "reportedModelName": "bge-reranker-v2-m3",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "MTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 57.03,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-275f77dd78"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-bc20cbed929f4a7f",
+      "modelRef": "model:baai-bge-reranker-v2-m3",
+      "benchmark": "MTEB-R",
+      "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 57.03,
+      "reportedValueText": "57.03",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / BGE-reranker-v2-m3 / MTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-15d5b30f20f6e8a1",
+  "modelVersionId": "model:baai-bge-reranker-v2-m3",
+  "reportedModelName": "bge-reranker-v2-m3",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "MMTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 58.36,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-3d5725037a"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-15d5b30f20f6e8a1",
+      "modelRef": "model:baai-bge-reranker-v2-m3",
+      "benchmark": "MMTEB-R",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 58.36,
+      "reportedValueText": "58.36",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / BGE-reranker-v2-m3 / MMTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-849983bb897e6c7a",
+  "modelVersionId": "model:baai-bge-reranker-v2-m3",
+  "reportedModelName": "bge-reranker-v2-m3",
+  "reporter": "Qwen",
+  "reportingRelationship": "third-party",
+  "benchmark": "FollowIR",
+  "metric": "publisher aggregate score",
+  "value": -0.01,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-8ab4198842"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-849983bb897e6c7a",
+      "modelRef": "model:baai-bge-reranker-v2-m3",
+      "benchmark": "FollowIR",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": -0.01,
+      "reportedValueText": "-0.01",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / BGE-reranker-v2-m3 / FollowIR",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:v02-quality:qwen-reranker-qwen-qwen3-reranker-0-6b-mteb-r-main-score-published-aggregate-none",
+  "modelVersionId": "model:qwen-qwen3-reranker-0-6b",
+  "reportedModelName": "Qwen3-Reranker-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 65.8,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-2b3143f50d"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-4f9b1b67bcb6d55b",
+      "modelRef": "model:qwen-qwen3-reranker-0-6b",
+      "benchmark": "MTEB-R",
+      "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 65.8,
+      "reportedValueText": "65.80",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-0.6B / MTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:v02-quality:qwen-reranker-qwen-qwen3-reranker-0-6b-mmteb-r-main-score-published-aggregate-none",
+  "modelVersionId": "model:qwen-qwen3-reranker-0-6b",
+  "reportedModelName": "Qwen3-Reranker-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 66.36,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-6a939858fd"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-fe980ae85dfb9969",
+      "modelRef": "model:qwen-qwen3-reranker-0-6b",
+      "benchmark": "MMTEB-R",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 66.36,
+      "reportedValueText": "66.36",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-0.6B / MMTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-cf5fb912059ae138",
+  "modelVersionId": "model:qwen-qwen3-reranker-0-6b",
+  "reportedModelName": "Qwen3-Reranker-0.6B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "FollowIR",
+  "metric": "publisher aggregate score",
+  "value": 5.41,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-422d396f0d"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-cf5fb912059ae138",
+      "modelRef": "model:qwen-qwen3-reranker-0-6b",
+      "benchmark": "FollowIR",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 5.41,
+      "reportedValueText": "5.41",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-0.6B / FollowIR",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:v02-quality:qwen-reranker-qwen-qwen3-reranker-4b-mteb-r-main-score-published-aggregate-none",
+  "modelVersionId": "model:qwen-qwen3-reranker-4b",
+  "reportedModelName": "Qwen3-Reranker-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 69.76,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-b6812b9022"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-e4b7f36a2e5be102",
+      "modelRef": "model:qwen-qwen3-reranker-4b",
+      "benchmark": "MTEB-R",
+      "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 69.76,
+      "reportedValueText": "69.76",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-4B / MTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:v02-quality:qwen-reranker-qwen-qwen3-reranker-4b-mmteb-r-main-score-published-aggregate-none",
+  "modelVersionId": "model:qwen-qwen3-reranker-4b",
+  "reportedModelName": "Qwen3-Reranker-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 72.74,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-023d1671f5"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-a370f21efa13ad75",
+      "modelRef": "model:qwen-qwen3-reranker-4b",
+      "benchmark": "MMTEB-R",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 72.74,
+      "reportedValueText": "72.74",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-4B / MMTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-716f0a210e415888",
+  "modelVersionId": "model:qwen-qwen3-reranker-4b",
+  "reportedModelName": "Qwen3-Reranker-4B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "FollowIR",
+  "metric": "publisher aggregate score",
+  "value": 14.84,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-084a013166"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-716f0a210e415888",
+      "modelRef": "model:qwen-qwen3-reranker-4b",
+      "benchmark": "FollowIR",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 14.84,
+      "reportedValueText": "14.84",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-4B / FollowIR",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:v02-quality:qwen-reranker-qwen-qwen3-reranker-8b-mteb-r-main-score-published-aggregate-none",
+  "modelVersionId": "model:qwen-qwen3-reranker-8b",
+  "reportedModelName": "Qwen3-Reranker-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 69.02,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-9639be17ba"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "en"
+  },
+  "language": "en",
+  "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-0533f0062c9fe297",
+      "modelRef": "model:qwen-qwen3-reranker-8b",
+      "benchmark": "MTEB-R",
+      "benchmarkVersion": "MTEB(eng,v2) retrieval subset",
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 69.02,
+      "reportedValueText": "69.02",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "en",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-8B / MTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:v02-quality:qwen-reranker-qwen-qwen3-reranker-8b-mmteb-r-main-score-published-aggregate-none",
+  "modelVersionId": "model:qwen-qwen3-reranker-8b",
+  "reportedModelName": "Qwen3-Reranker-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMTEB-R",
+  "metric": "publisher aggregate score",
+  "value": 72.94,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-7bcd13aa71"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "language": "multilingual",
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8473dd5579792f09",
+      "modelRef": "model:qwen-qwen3-reranker-8b",
+      "benchmark": "MMTEB-R",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 72.94,
+      "reportedValueText": "72.94",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": "multilingual",
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-8B / MMTEB-R",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-dedd3240e467e6b7",
+  "modelVersionId": "model:qwen-qwen3-reranker-8b",
+  "reportedModelName": "Qwen3-Reranker-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "FollowIR",
+  "metric": "publisher aggregate score",
+  "value": 8.05,
+  "unit": "score-points",
+  "settings": {
+    "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+    "candidateCount": 100,
+    "pipelineRole": "reranking top-100",
+    "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+  },
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md-08bc447b19"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "comparisonGroup": "comparison:qwen-reranking-top100",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-dedd3240e467e6b7",
+      "modelRef": "model:qwen-qwen3-reranker-8b",
+      "benchmark": "FollowIR",
+      "benchmarkVersion": null,
+      "metric": "publisher aggregate score",
+      "rawMetricLabel": "publisher aggregate score",
+      "value": 8.05,
+      "reportedValueText": "8.05",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "Qwen",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-qwen-qwen3-reranker-0-6b-readme-md",
+      "sourceLocator": "Evaluation table / Qwen3-Reranker-8B / FollowIR",
+      "sourceDocumentRevision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "initialRetriever": "Qwen/Qwen3-Embedding-0.6B",
+        "candidateCount": 100,
+        "pipelineRole": "reranking top-100",
+        "protocolSourceId": "evidence:reference-qwen-embedding-paper-txt"
+      },
+      "comparisonGroup": "comparison:qwen-reranking-top100",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-a47d5625bff1db9a",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "reportedModelName": "salamandra-2b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "xstorycloze_es",
+  "metric": "accuracy",
+  "value": 61.95,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-37433ef519"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-a47d5625bff1db9a",
+      "modelRef": "model:bsc-lt-salamandra-2b-instruct",
+      "benchmark": "xstorycloze_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 61.95,
+      "reportedValueText": "61.95",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / xstorycloze_es",
+      "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-ae42a2e6547a5a18",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "reportedModelName": "salamandra-2b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "wnli_es",
+  "metric": "accuracy",
+  "value": 49.3,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-5f1d47a85f"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-ae42a2e6547a5a18",
+      "modelRef": "model:bsc-lt-salamandra-2b-instruct",
+      "benchmark": "wnli_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 49.3,
+      "reportedValueText": "49.30",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / wnli_es",
+      "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-c2a7ddabb65ae812",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "reportedModelName": "salamandra-2b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "xnli_es",
+  "metric": "accuracy",
+  "value": 48.52,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-077707b986"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-c2a7ddabb65ae812",
+      "modelRef": "model:bsc-lt-salamandra-2b-instruct",
+      "benchmark": "xnli_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 48.52,
+      "reportedValueText": "48.52",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / xnli_es",
+      "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-e1f22a20c36d6627",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "reportedModelName": "salamandra-2b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "paws_es",
+  "metric": "accuracy",
+  "value": 57.1,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-65ebb4481b"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-e1f22a20c36d6627",
+      "modelRef": "model:bsc-lt-salamandra-2b-instruct",
+      "benchmark": "paws_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 57.1,
+      "reportedValueText": "57.10",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / paws_es",
+      "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-9c86a68e288f3d1f",
+  "modelVersionId": "model:bsc-lt-salamandra-2b-instruct",
+  "reportedModelName": "salamandra-2b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "xquad_es",
+  "metric": "accuracy",
+  "value": 29.6,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-577c625082"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-9c86a68e288f3d1f",
+      "modelRef": "model:bsc-lt-salamandra-2b-instruct",
+      "benchmark": "xquad_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 29.6,
+      "reportedValueText": "29.60",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / xquad_es",
+      "sourceDocumentRevision": "66b2be1e98fca5764696c1538f240a78f4b15433",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-4d4002ecc07e1c1a",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "reportedModelName": "salamandra-7b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "xstorycloze_es",
+  "metric": "accuracy",
+  "value": 68.17,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-37433ef519"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-4d4002ecc07e1c1a",
+      "modelRef": "model:bsc-lt-salamandra-7b-instruct",
+      "benchmark": "xstorycloze_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 68.17,
+      "reportedValueText": "68.17",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / xstorycloze_es",
+      "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-b8ba2fd6c4907070",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "reportedModelName": "salamandra-7b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "wnli_es",
+  "metric": "accuracy",
+  "value": 56.34,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-5f1d47a85f"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-b8ba2fd6c4907070",
+      "modelRef": "model:bsc-lt-salamandra-7b-instruct",
+      "benchmark": "wnli_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 56.34,
+      "reportedValueText": "56.34",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / wnli_es",
+      "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-71d32c7c920f2277",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "reportedModelName": "salamandra-7b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "xnli_es",
+  "metric": "accuracy",
+  "value": 46.95,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-077707b986"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-71d32c7c920f2277",
+      "modelRef": "model:bsc-lt-salamandra-7b-instruct",
+      "benchmark": "xnli_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 46.95,
+      "reportedValueText": "46.95",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / xnli_es",
+      "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-042046990140e4c0",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "reportedModelName": "salamandra-7b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "paws_es",
+  "metric": "accuracy",
+  "value": 64.25,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-65ebb4481b"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-042046990140e4c0",
+      "modelRef": "model:bsc-lt-salamandra-7b-instruct",
+      "benchmark": "paws_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 64.25,
+      "reportedValueText": "64.25",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / paws_es",
+      "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f9f3afa9d68be5a5",
+  "modelVersionId": "model:bsc-lt-salamandra-7b-instruct",
+  "reportedModelName": "salamandra-7b-instruct",
+  "reporter": "BSC-LT",
+  "reportingRelationship": "publisher",
+  "benchmark": "xquad_es",
+  "metric": "accuracy",
+  "value": 36.22,
+  "unit": "percent",
+  "settings": {
+    "fewShot": 0,
+    "applyChatTemplate": true,
+    "harness": "LM Evaluation Harness"
+  },
+  "applicationIds": [
+    "text-work"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-577c625082"
+  ],
+  "languageScope": {
+    "kind": "single",
+    "language": "es"
+  },
+  "language": "es",
+  "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "comparisonGroup": "comparison:salamandra-spanish",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f9f3afa9d68be5a5",
+      "modelRef": "model:bsc-lt-salamandra-7b-instruct",
+      "benchmark": "xquad_es",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "acc",
+      "value": 36.22,
+      "reportedValueText": "36.22",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": "es",
+      "reporter": "BSC-LT",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md",
+      "sourceLocator": "Evaluation / Spanish / xquad_es",
+      "sourceDocumentRevision": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "fewShot": 0,
+        "applyChatTemplate": true,
+        "harness": "LM Evaluation Harness",
+        "harnessVersion": null
+      },
+      "comparisonGroup": "comparison:salamandra-spanish",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-9958cab06ca65141",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "reportedModelName": "MiniCPM5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "publisher",
+  "benchmark": "LiveCodeBench v6",
+  "metric": "publisher-reported score",
+  "value": 69.1,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-fb12a12a2b"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-9958cab06ca65141",
+      "modelRef": "model:openbmb-minicpm5-2b",
+      "benchmark": "LiveCodeBench v6",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 69.1,
+      "reportedValueText": "69.1",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / LiveCodeBench v6 / column 1",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f5534741d74480bc",
+  "modelVersionId": "model:qwen-qwen3-5-2b",
+  "reportedModelName": "Qwen3.5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "LiveCodeBench v6",
+  "metric": "publisher-reported score",
+  "value": 20.2,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-76be0acabd"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f5534741d74480bc",
+      "modelRef": "model:qwen-qwen3-5-2b",
+      "benchmark": "LiveCodeBench v6",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 20.2,
+      "reportedValueText": "20.2",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / LiveCodeBench v6 / column 3",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1260f5e783ab777b",
+  "modelVersionId": "model:qwen-qwen3-5-4b",
+  "reportedModelName": "Qwen3.5-4B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "LiveCodeBench v6",
+  "metric": "publisher-reported score",
+  "value": 56.4,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-89ff291095"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1260f5e783ab777b",
+      "modelRef": "model:qwen-qwen3-5-4b",
+      "benchmark": "LiveCodeBench v6",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 56.4,
+      "reportedValueText": "56.4",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / LiveCodeBench v6 / column 5",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-f53a04210431ed51",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "reportedModelName": "MiniCPM5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "publisher",
+  "benchmark": "AIME 2025",
+  "metric": "publisher-reported score",
+  "value": 86.5,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-50d10692d8"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-f53a04210431ed51",
+      "modelRef": "model:openbmb-minicpm5-2b",
+      "benchmark": "AIME 2025",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 86.5,
+      "reportedValueText": "86.5",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / AIME 2025 / column 1",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-2d49c02b3d0f7bca",
+  "modelVersionId": "model:qwen-qwen3-5-2b",
+  "reportedModelName": "Qwen3.5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "AIME 2025",
+  "metric": "publisher-reported score",
+  "value": 29.6,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-fbddf13b6e"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-2d49c02b3d0f7bca",
+      "modelRef": "model:qwen-qwen3-5-2b",
+      "benchmark": "AIME 2025",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 29.6,
+      "reportedValueText": "29.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / AIME 2025 / column 3",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-a1bbe9f547400945",
+  "modelVersionId": "model:qwen-qwen3-5-4b",
+  "reportedModelName": "Qwen3.5-4B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "AIME 2025",
+  "metric": "publisher-reported score",
+  "value": 78.8,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-08f1d10560"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-a1bbe9f547400945",
+      "modelRef": "model:qwen-qwen3-5-4b",
+      "benchmark": "AIME 2025",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 78.8,
+      "reportedValueText": "78.8",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / AIME 2025 / column 5",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-1e216dd7911e7a4e",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "reportedModelName": "MiniCPM5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "publisher",
+  "benchmark": "MATH-500",
+  "metric": "publisher-reported score",
+  "value": 94.6,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-e35f777433"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-1e216dd7911e7a4e",
+      "modelRef": "model:openbmb-minicpm5-2b",
+      "benchmark": "MATH-500",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 94.6,
+      "reportedValueText": "94.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / MATH-500 / column 1",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-505d312735c38aac",
+  "modelVersionId": "model:qwen-qwen3-5-2b",
+  "reportedModelName": "Qwen3.5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "MATH-500",
+  "metric": "publisher-reported score",
+  "value": 85.8,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-262834a472"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-505d312735c38aac",
+      "modelRef": "model:qwen-qwen3-5-2b",
+      "benchmark": "MATH-500",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 85.8,
+      "reportedValueText": "85.8",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / MATH-500 / column 3",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-c5cbbefcfc9a0469",
+  "modelVersionId": "model:qwen-qwen3-5-4b",
+  "reportedModelName": "Qwen3.5-4B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "MATH-500",
+  "metric": "publisher-reported score",
+  "value": 99.0,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-7bd809c8b2"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-c5cbbefcfc9a0469",
+      "modelRef": "model:qwen-qwen3-5-4b",
+      "benchmark": "MATH-500",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 99.0,
+      "reportedValueText": "99.0",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / MATH-500 / column 5",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-94dc55ff43b6cb38",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "reportedModelName": "MiniCPM5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "publisher",
+  "benchmark": "IFEval",
+  "metric": "publisher-reported score",
+  "value": 86.7,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-0688c11226"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-94dc55ff43b6cb38",
+      "modelRef": "model:openbmb-minicpm5-2b",
+      "benchmark": "IFEval",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 86.7,
+      "reportedValueText": "86.7",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / IFEval / column 1",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8659db93ae0c906d",
+  "modelVersionId": "model:qwen-qwen3-5-2b",
+  "reportedModelName": "Qwen3.5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "IFEval",
+  "metric": "publisher-reported score",
+  "value": 77.5,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-215d32e660"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8659db93ae0c906d",
+      "modelRef": "model:qwen-qwen3-5-2b",
+      "benchmark": "IFEval",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 77.5,
+      "reportedValueText": "77.5",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / IFEval / column 3",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-4792cd7d718890c9",
+  "modelVersionId": "model:qwen-qwen3-5-4b",
+  "reportedModelName": "Qwen3.5-4B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "IFEval",
+  "metric": "publisher-reported score",
+  "value": 90.2,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-3a53466662"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-4792cd7d718890c9",
+      "modelRef": "model:qwen-qwen3-5-4b",
+      "benchmark": "IFEval",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 90.2,
+      "reportedValueText": "90.2",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / IFEval / column 5",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-b12c8a647fb91bb4",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "reportedModelName": "MiniCPM5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 70.8,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-87be2d0df1"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-b12c8a647fb91bb4",
+      "modelRef": "model:openbmb-minicpm5-2b",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 70.8,
+      "reportedValueText": "70.8",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / MMLU-Pro / column 1",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-365ce7e70214aece",
+  "modelVersionId": "model:qwen-qwen3-5-2b",
+  "reportedModelName": "Qwen3.5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 64.3,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-b7f5fe855e"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-365ce7e70214aece",
+      "modelRef": "model:qwen-qwen3-5-2b",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 64.3,
+      "reportedValueText": "64.3",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / MMLU-Pro / column 3",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-00322a47bbe6d9da",
+  "modelVersionId": "model:qwen-qwen3-5-4b",
+  "reportedModelName": "Qwen3.5-4B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 78.0,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-91adbea4b0"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-00322a47bbe6d9da",
+      "modelRef": "model:qwen-qwen3-5-4b",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 78.0,
+      "reportedValueText": "78.0",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / MMLU-Pro / column 5",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-3b068548e0663976",
+  "modelVersionId": "model:openbmb-minicpm5-2b",
+  "reportedModelName": "MiniCPM5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "publisher",
+  "benchmark": "BFCL v4",
+  "metric": "publisher-reported score",
+  "value": 66.6,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-9ce7e1dad9"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-3b068548e0663976",
+      "modelRef": "model:openbmb-minicpm5-2b",
+      "benchmark": "BFCL v4",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 66.6,
+      "reportedValueText": "66.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / BFCL v4 / column 1",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-e89c333a6090ad34",
+  "modelVersionId": "model:qwen-qwen3-5-2b",
+  "reportedModelName": "Qwen3.5-2B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "BFCL v4",
+  "metric": "publisher-reported score",
+  "value": 43.6,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-f0ea8e90ad"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-e89c333a6090ad34",
+      "modelRef": "model:qwen-qwen3-5-2b",
+      "benchmark": "BFCL v4",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 43.6,
+      "reportedValueText": "43.6",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / BFCL v4 / column 3",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [
+        "published-evaluation:v03-18d9133cd2ebe47803f1"
+      ],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-dc42c97fb60b45c5",
+  "modelVersionId": "model:qwen-qwen3-5-4b",
+  "reportedModelName": "Qwen3.5-4B",
+  "reporter": "OpenBMB",
+  "reportingRelationship": "third-party",
+  "benchmark": "BFCL v4",
+  "metric": "publisher-reported score",
+  "value": 56.8,
+  "unit": "score-points",
+  "settings": {
+    "scoreOrigin": "publisher internal reproduction; no dagger marker"
+  },
+  "applicationIds": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-430dbef832"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "comparisonGroup": "comparison:minicpm-small-model-tasks",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-dc42c97fb60b45c5",
+      "modelRef": "model:qwen-qwen3-5-4b",
+      "benchmark": "BFCL v4",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 56.8,
+      "reportedValueText": "56.8",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "OpenBMB",
+      "reportingRelationship": "third-party",
+      "sourceId": "evidence:reference-openbmb-minicpm5-2b-readme-md",
+      "sourceLocator": "Performance table / BFCL v4 / column 5",
+      "sourceDocumentRevision": "12a3808a956f869c767195e9266b59c4d21d92e2",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "scoreOrigin": "publisher internal reproduction; no dagger marker"
+      },
+      "comparisonGroup": "comparison:minicpm-small-model-tasks",
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-96121e6608b495dd",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "reportedModelName": "starcoder2-3b",
+  "reporter": "BigCode",
+  "reportingRelationship": "publisher",
+  "benchmark": "CruxEval-I",
+  "metric": "pass@1",
+  "value": 32.7,
+  "unit": "percent",
+  "settings": {
+    "modelRole": "base / code completion, not instruction chat"
+  },
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bigcode-starcoder2-3b-readme-md-f7cd49219a"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-96121e6608b495dd",
+      "modelRef": "model:bigcode-starcoder2-3b",
+      "benchmark": "CruxEval-I",
+      "benchmarkVersion": null,
+      "metric": "pass@1",
+      "rawMetricLabel": "pass@1",
+      "value": 32.7,
+      "reportedValueText": "32.7",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "BigCode",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bigcode-starcoder2-3b-readme-md",
+      "sourceLocator": "frontmatter.model-index / CruxEval-I",
+      "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "modelRole": "base / code completion, not instruction chat"
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-a9e77ad5762cb34d",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "reportedModelName": "starcoder2-3b",
+  "reporter": "BigCode",
+  "reportingRelationship": "publisher",
+  "benchmark": "DS-1000",
+  "metric": "pass@1",
+  "value": 25.0,
+  "unit": "percent",
+  "settings": {
+    "modelRole": "base / code completion, not instruction chat"
+  },
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bigcode-starcoder2-3b-readme-md-7f48863e34"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-a9e77ad5762cb34d",
+      "modelRef": "model:bigcode-starcoder2-3b",
+      "benchmark": "DS-1000",
+      "benchmarkVersion": null,
+      "metric": "pass@1",
+      "rawMetricLabel": "pass@1",
+      "value": 25.0,
+      "reportedValueText": "25.0",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "BigCode",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bigcode-starcoder2-3b-readme-md",
+      "sourceLocator": "frontmatter.model-index / DS-1000",
+      "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "modelRole": "base / code completion, not instruction chat"
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-424e9df6390901fb",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "reportedModelName": "starcoder2-3b",
+  "reporter": "BigCode",
+  "reportingRelationship": "publisher",
+  "benchmark": "GSM8K (PAL)",
+  "metric": "accuracy",
+  "value": 27.7,
+  "unit": "percent",
+  "settings": {
+    "modelRole": "base / code completion, not instruction chat"
+  },
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bigcode-starcoder2-3b-readme-md-5b3ce2f669"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-424e9df6390901fb",
+      "modelRef": "model:bigcode-starcoder2-3b",
+      "benchmark": "GSM8K (PAL)",
+      "benchmarkVersion": null,
+      "metric": "accuracy",
+      "rawMetricLabel": "accuracy",
+      "value": 27.7,
+      "reportedValueText": "27.7",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "BigCode",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bigcode-starcoder2-3b-readme-md",
+      "sourceLocator": "frontmatter.model-index / GSM8K (PAL)",
+      "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "modelRole": "base / code completion, not instruction chat"
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-49f120f85766deeb",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "reportedModelName": "starcoder2-3b",
+  "reporter": "BigCode",
+  "reportingRelationship": "publisher",
+  "benchmark": "HumanEval+",
+  "metric": "pass@1",
+  "value": 27.4,
+  "unit": "percent",
+  "settings": {
+    "modelRole": "base / code completion, not instruction chat"
+  },
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bigcode-starcoder2-3b-readme-md-e1193c5107"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-49f120f85766deeb",
+      "modelRef": "model:bigcode-starcoder2-3b",
+      "benchmark": "HumanEval+",
+      "benchmarkVersion": null,
+      "metric": "pass@1",
+      "rawMetricLabel": "pass@1",
+      "value": 27.4,
+      "reportedValueText": "27.4",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "BigCode",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bigcode-starcoder2-3b-readme-md",
+      "sourceLocator": "frontmatter.model-index / HumanEval+",
+      "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "modelRole": "base / code completion, not instruction chat"
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-8205479088943f34",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "reportedModelName": "starcoder2-3b",
+  "reporter": "BigCode",
+  "reportingRelationship": "publisher",
+  "benchmark": "HumanEval",
+  "metric": "pass@1",
+  "value": 31.7,
+  "unit": "percent",
+  "settings": {
+    "modelRole": "base / code completion, not instruction chat"
+  },
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bigcode-starcoder2-3b-readme-md-bc638fc8ca"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-8205479088943f34",
+      "modelRef": "model:bigcode-starcoder2-3b",
+      "benchmark": "HumanEval",
+      "benchmarkVersion": null,
+      "metric": "pass@1",
+      "rawMetricLabel": "pass@1",
+      "value": 31.7,
+      "reportedValueText": "31.7",
+      "unit": "percent",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "BigCode",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bigcode-starcoder2-3b-readme-md",
+      "sourceLocator": "frontmatter.model-index / HumanEval",
+      "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "modelRole": "base / code completion, not instruction chat"
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-bbcff22f785cffe0",
+  "modelVersionId": "model:bigcode-starcoder2-3b",
+  "reportedModelName": "starcoder2-3b",
+  "reporter": "BigCode",
+  "reportingRelationship": "publisher",
+  "benchmark": "RepoBench-v1.1",
+  "metric": "edit-similarity",
+  "value": 71.19,
+  "unit": "score-points",
+  "settings": {
+    "modelRole": "base / code completion, not instruction chat"
+  },
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-bigcode-starcoder2-3b-readme-md-a2ac156b0f"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-bbcff22f785cffe0",
+      "modelRef": "model:bigcode-starcoder2-3b",
+      "benchmark": "RepoBench-v1.1",
+      "benchmarkVersion": null,
+      "metric": "edit-similarity",
+      "rawMetricLabel": "edit-smiliarity",
+      "value": 71.19,
+      "reportedValueText": "71.19",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "BigCode",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-bigcode-starcoder2-3b-readme-md",
+      "sourceLocator": "frontmatter.model-index / RepoBench-v1.1",
+      "sourceDocumentRevision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "modelRole": "base / code completion, not instruction chat"
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-411f2f98d6cbac5a",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "reportedModelName": "granite-4.2-3b",
+  "reporter": "IBM Granite",
+  "reportingRelationship": "publisher",
+  "benchmark": "BFCL (v4)",
+  "metric": "publisher-reported score",
+  "value": 52.41,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-7f9b283544"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-411f2f98d6cbac5a",
+      "modelRef": "model:ibm-granite-granite-4-2-3b",
+      "benchmark": "BFCL (v4)",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 52.41,
+      "reportedValueText": "52.41",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "IBM Granite",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-ibm-granite-granite-4-2-3b-readme-md",
+      "sourceLocator": "Evaluation table / BFCL (v4) / 3B Dense",
+      "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "testedContextTokens": null
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-cdeae9e9fbd4214c",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "reportedModelName": "granite-4.2-3b",
+  "reporter": "IBM Granite",
+  "reportingRelationship": "publisher",
+  "benchmark": "AIME25",
+  "metric": "publisher-reported score",
+  "value": 78.33,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-32c8e32329"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-cdeae9e9fbd4214c",
+      "modelRef": "model:ibm-granite-granite-4-2-3b",
+      "benchmark": "AIME25",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 78.33,
+      "reportedValueText": "78.33",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "IBM Granite",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-ibm-granite-granite-4-2-3b-readme-md",
+      "sourceLocator": "Evaluation table / AIME25 / 3B Dense",
+      "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "testedContextTokens": null
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-a3684aa4c6337b44",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "reportedModelName": "granite-4.2-3b",
+  "reporter": "IBM Granite",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMLU-Pro",
+  "metric": "publisher-reported score",
+  "value": 67.84,
+  "unit": "score-points",
+  "settings": {},
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-ab3b96c83d"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-a3684aa4c6337b44",
+      "modelRef": "model:ibm-granite-granite-4-2-3b",
+      "benchmark": "MMLU-Pro",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 67.84,
+      "reportedValueText": "67.84",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "IBM Granite",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-ibm-granite-granite-4-2-3b-readme-md",
+      "sourceLocator": "Evaluation table / MMLU-Pro / 3B Dense",
+      "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "testedContextTokens": null
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-7297c7b90764fee1",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "reportedModelName": "granite-4.2-3b",
+  "reporter": "IBM Granite",
+  "reportingRelationship": "publisher",
+  "benchmark": "RULER 64K",
+  "metric": "publisher-reported score",
+  "value": 67.52,
+  "unit": "score-points",
+  "settings": {
+    "testedContextTokens": 65536
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-fc70f7418b"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-7297c7b90764fee1",
+      "modelRef": "model:ibm-granite-granite-4-2-3b",
+      "benchmark": "RULER 64K",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 67.52,
+      "reportedValueText": "67.52",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "IBM Granite",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-ibm-granite-granite-4-2-3b-readme-md",
+      "sourceLocator": "Evaluation table / RULER 64K / 3B Dense",
+      "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "testedContextTokens": 65536
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
+    }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:reference-supplement-e8e01405e2b826ce",
+  "modelVersionId": "model:ibm-granite-granite-4-2-3b",
+  "reportedModelName": "granite-4.2-3b",
+  "reporter": "IBM Granite",
+  "reportingRelationship": "publisher",
+  "benchmark": "RULER 128K",
+  "metric": "publisher-reported score",
+  "value": 55.3,
+  "unit": "score-points",
+  "settings": {
+    "testedContextTokens": 131072
+  },
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-16",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-1b7f20f2b6"
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "referenceObservations": [
+    {
+      "id": "evaluation:supplement-e8e01405e2b826ce",
+      "modelRef": "model:ibm-granite-granite-4-2-3b",
+      "benchmark": "RULER 128K",
+      "benchmarkVersion": null,
+      "metric": "publisher-reported score",
+      "rawMetricLabel": "publisher-reported score",
+      "value": 55.3,
+      "reportedValueText": "55.30",
+      "unit": "score-points",
+      "direction": "higher-is-better",
+      "language": null,
+      "reporter": "IBM Granite",
+      "reportingRelationship": "publisher",
+      "sourceId": "evidence:reference-ibm-granite-granite-4-2-3b-readme-md",
+      "sourceLocator": "Evaluation table / RULER 128K / 3B Dense",
+      "sourceDocumentRevision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "evaluatedWeightRevision": null,
+      "evaluatedOn": null,
+      "accessedOn": "2026-09-16",
+      "settings": {
+        "testedContextTokens": 131072
+      },
+      "comparisonGroup": null,
+      "missingProtocolFields": [
+        "evaluated weight revision",
+        "evaluation precision",
+        "uncertainty interval"
+      ],
+      "baselineSameModelAndValueCandidates": [],
+      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
+      "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
+    }
+  ]
 });

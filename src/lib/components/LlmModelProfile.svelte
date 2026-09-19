@@ -1,9 +1,14 @@
 <script lang="ts">
+  import { getLlmI18n } from '$lib/llm/i18n/context';
+  const i18n = getLlmI18n();
+  const { t, locale, direction, numberFormat } = i18n;
+  const { adaptModelCatalog, modelUseRoleLabels } = createLlmAdapters(i18n);
+  const { profileUseCards, profileRunCards } = createLlmPresentation(i18n);
   import { tick } from 'svelte';
   import type { LlmGuideRepository } from '$lib/llm/schema';
-  import { adaptModelCatalog, modelUseRoleLabels } from '$lib/llm/adapters';
+  import { createLlmAdapters } from '$lib/llm/adapters';
   import { llmBrand } from '$lib/llm/brands';
-  import { profileUseCards, profileRunCards } from '$lib/llm/presentation';
+  import { createLlmPresentation } from '$lib/llm/presentation';
   import LlmValue from './LlmValue.svelte';
   import LlmEvidence from './LlmEvidence.svelte';
   import LlmPublishedEvaluations from './LlmPublishedEvaluations.svelte';
@@ -18,8 +23,8 @@
   let copyStatus = '';
   let previousPanel = '';
   $: if (dialog && previousPanel !== selectedPanel) { dialog.scrollTop = 0; previousPanel = selectedPanel; }
-  const numbers = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 2 });
-  const sections = [{id:'overview',label:'معرفی و کاربرد'}, {id:'downloads',label:'دریافت مدل'}, {id:'run',label:'راه‌اندازی'}, {id:'infrastructure',label:'حافظه و اجرا'}, {id:'quality',label:'نتایج آزمون‌ها'}, {id:'sources',label:'منابع و مجوز'}];
+  const numbers = new Intl.NumberFormat(numberFormat, { maximumFractionDigits: 2 });
+  const sections = [{id:'overview',label:t('LlmModelProfile.1056')}, {id:'downloads',label:t('LlmModelProfile.1057')}, {id:'run',label:t('LlmModelProfile.1058')}, {id:'infrastructure',label:t('LlmModelProfile.1059')}, {id:'quality',label:t('LlmModelProfile.1060')}, {id:'sources',label:t('LlmModelProfile.1061')}];
   $: profile = repository.modelProfiles.find(item => item.modelVersionId === modelId);
   $: model = repository.models.find(item => item.id === modelId);
   $: row = model ? adaptModelCatalog(repository).find(item => item.id === modelId) : undefined;
@@ -37,75 +42,78 @@
     dialog?.querySelector<HTMLElement>('.profile-title')?.focus();
   }
   async function copy(value: string, label: string) {
-    try { await navigator.clipboard.writeText(value); copyStatus = `${label} کپی شد`; }
-    catch { copyStatus = 'کپی خودکار ممکن نشد؛ متن را انتخاب کنید.'; }
+    try { await navigator.clipboard.writeText(value); copyStatus = t('LlmModelProfile.1062', label); }
+    catch { copyStatus = t('LlmModelProfile.1063'); }
   }
 </script>
 
-<dialog bind:this={dialog} class="model-profile" dir="rtl" aria-labelledby="profile-title" on:cancel={(event) => { event.preventDefault(); onClose(); }}>
+<dialog bind:this={dialog} class="model-profile" dir={direction} aria-labelledby="profile-title" on:cancel={(event) => { event.preventDefault(); onClose(); }}>
   {#if profile && model && row}
     <header class="profile-header">
       {#if llmBrand(modelId)}<img class="profile-logo" src={llmBrand(modelId)} alt="" width="48" height="48" />{/if}
-      <div><small>پروندهٔ مدل · {model.publisher}</small><h2 id="profile-title" class="profile-title" tabindex="-1"><bdi>{model.exactName}</bdi></h2></div>
-      <button class="close-profile" type="button" on:click={onClose} aria-label="بستن پروندهٔ مدل"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></button>
+      <div><small>{t('LlmModelProfile.1064')} {model.publisher}</small><h2 id="profile-title" class="profile-title" tabindex="-1"><bdi>{model.exactName}</bdi></h2></div>
+      <button class="close-profile" type="button" on:click={onClose} aria-label={t('LlmModelProfile.1065')}><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></button>
     </header>
-    <nav class="profile-tabs" aria-label="بخش‌های پروندهٔ مدل">
+    <nav class="profile-tabs" aria-label={t('LlmModelProfile.1066')}>
       {#each sections as section}<button type="button" class:active={selectedPanel === section.id} aria-current={selectedPanel === section.id ? 'page' : undefined} on:click={() => onPanel(section.id)}>{section.label}</button>{/each}
     </nav>
     <div class="profile-body">
       {#if selectedPanel === 'overview'}
         <h3>{profile.roleSummary}</h3>{#if profile.introduction.replace(/[.؛،\s]+$/u, '') !== profile.roleSummary.replace(/[.؛،\s]+$/u, '')}<p class="introduction">{profile.introduction}</p>{/if}
         <div class="specs">
-          {#each [{key:'kind-stage',label:'نوع مدل'}, {key:'size-architecture',label:'اندازه و معماری'}, {key:'modalities',label:'ورودی و خروجی'}, {key:'context',label:'حداکثر طول متن (اعلام ناشر)'}] as item}<div><small>{item.label}</small><LlmValue value={row.cells[item.key]} /></div>{/each}
+          {#each [{key:'kind-stage',label:t('LlmModelProfile.1067')}, {key:'size-architecture',label:t('LlmModelProfile.1068')}, {key:'modalities',label:t('LlmModelProfile.1069')}, {key:'context',label:t('LlmModelProfile.1070')}] as item}<div><small>{item.label}</small><LlmValue value={row.cells[item.key]} /></div>{/each}
         </div>
+        {#if model.configurationContext?.state === 'known'}<p>{ {fa:'مقدار فایل تنظیمات',en:'Configuration value',es:'Valor de configuración'}[locale]}: <bdi>{numbers.format(model.configurationContext.value)} tokens</bdi></p>{/if}
+        {#if model.contextExtension}<p>{model.contextExtension.condition}</p>{/if}
+        {#each model.license.restrictions ?? [] as restriction}<p>{restriction}</p>{/each}
         {#if model.specializedSpecs}<div class="specialized-specs">{#each Object.entries(model.specializedSpecs).filter(([key, value]) => key === 'poolingOrScoring' && !(value.state === 'known' && uses.some(use => use.conditions.includes(String(value.value))))) as [key,value]}<p><LlmValue value={value.state === 'known' ? {state: 'known', display: String(value.value)} : value} /></p>{/each}</div>{/if}
         {#if profile.languageSummary}<p class="muted">{profile.languageSummary}</p>{/if}
-        <h3>راهنمای کاربرد این نسخه</h3>
-        {#each uses as use}<article class="use-card"><small>{modelUseRoleLabels[use.role]}</small><h4>{use.summary}</h4>{#if use.description}<p>{use.description}</p>{/if}{#if use.conditions.length}<ul>{#each use.conditions as condition}<li>{condition}</li>{/each}</ul>{/if}<small class="muted">{use.basis === 'publisher-summary' ? 'خلاصهٔ مستندات ناشر' : 'جمع‌بندی فنی بر پایهٔ مستندات'}</small><LlmEvidence ids={use.evidenceIds} evidence={repository.evidence} /></article>{/each}
-        <div class="start-actions"><button type="button" on:click={() => onPanel('downloads')}>دریافت نسخه‌های مدل ←</button><button type="button" on:click={() => onPanel('run')}>راهنمای شروع ←</button></div>
+        <h3>{t('LlmModelProfile.1071')}</h3>
+        {#each uses as use}<article class="use-card"><small>{modelUseRoleLabels[use.role]}</small><h4>{use.summary}</h4>{#if use.description && use.description !== profile.introduction}<p>{use.description}</p>{/if}{#if use.conditions.length}<ul>{#each use.conditions as condition}<li>{condition}</li>{/each}</ul>{/if}<small class="muted">{use.basis === 'publisher-summary' ? t('LlmModelProfile.1072') : t('LlmModelProfile.1073')}</small><LlmEvidence ids={use.evidenceIds} evidence={repository.evidence} /></article>{/each}
+        <div class="start-actions"><button type="button" on:click={() => onPanel('downloads')}>{t('LlmModelProfile.1074')}</button><button type="button" on:click={() => onPanel('run')}>{t('LlmModelProfile.1075')}</button></div>
       {:else if selectedPanel === 'downloads'}
-        <h3>نسخه‌های قابل دریافت</h3>{#if profile.downloadSearchNote}<p class="muted">{profile.downloadSearchNote}</p>{/if}
-        <p class="weight-note">حجم فایل روی دیسک با حافظهٔ لازم برای اجرا برابر نیست؛ KV cache و حافظهٔ موقت جدا هستند.</p>
+        <h3>{t('LlmModelProfile.1076')}</h3>{#if profile.downloadSearchNote}<p class="muted">{profile.downloadSearchNote}</p>{/if}
+        <p class="weight-note">{t('LlmModelProfile.1077')}</p>
         <div class="download-list">
           {#each downloads as item}
             <article class="download-card" data-format={item.format}>
-              <header><strong><bdi>{item.format.toUpperCase()} · {item.variant}</bdi></strong><span class:third={item.authority === 'third-party'} class="authority">{item.authority === 'official' ? 'سازندهٔ مدل' : 'شخص ثالث'} · <bdi>{item.publisher}</bdi></span></header>
-              <p class="download-meta">{#if item.totalBytes !== undefined}<bdi>{numbers.format(item.totalBytes / 2 ** 30)} GiB</bdi> · {numbers.format(item.files.length)} فایل وزن{:else}{item.sizeDescription}{/if}{#if item.precision} · دقت: <bdi>{item.precision}</bdi>{/if}{#if item.quantizationMethod} · روش کوانت: <bdi>{item.quantizationMethod}</bdi>{/if}</p>
+              <header><strong><bdi>{item.format.toUpperCase()} · {item.variant}</bdi></strong><span class:third={item.authority === 'third-party'} class="authority">{item.authority === 'official' ? t('LlmModelProfile.1078') : t('LlmModelProfile.1079')} · <bdi>{item.publisher}</bdi></span></header>
+              <p class="download-meta">{#if item.totalBytes !== undefined}<bdi>{numbers.format(item.totalBytes / 2 ** 30)} GiB</bdi> · {numbers.format(item.files.length)} {t('LlmModelProfile.1080')}{:else}{item.sizeDescription}{/if}{#if item.precision} {t('LlmModelProfile.1081')} <bdi>{item.precision}</bdi>{/if}{#if item.quantizationMethod} {t('LlmModelProfile.1082')} <bdi>{item.quantizationMethod}</bdi>{/if}</p>
               {#if item.scopeNote}<p>{item.scopeNote}</p>{/if}
-              <div class="download-actions"><a href={item.repositoryUrl} target="_blank" rel="noopener noreferrer">صفحهٔ نسخه ↗</a><a href={item.filesUrl} target="_blank" rel="noopener noreferrer">{item.format === 'ollama' ? 'مشاهدهٔ بسته' : 'فهرست فایل‌ها'} ↗</a></div>
-              <details><summary>فایل‌ها و نسخهٔ مدل</summary>
-                <p>مدل مبنا: <bdi>{item.baseModelRepository}</bdi></p>
-                {#if item.baseRevision}<p>نسخهٔ مدل مبنا: <bdi>{item.baseRevision}</bdi></p>{/if}
-                {#if item.repositoryRevision}<p>نسخهٔ مخزن فایل: <code>{item.repositoryRevision}</code></p>{/if}
-                {#if item.files.length}<ul class="file-list">{#each item.files as file}<li><a href={file.url} target="_blank" rel="noopener noreferrer" dir="ltr">{file.path} ↗</a>{#if file.bytes !== undefined}<small>{numbers.format(file.bytes)} بایت</small>{/if}</li>{/each}</ul>{/if}
-                <p class="muted">بررسی فهرست فایل‌ها: <time datetime={item.verifiedOn}>{item.verifiedOn}</time></p>
+              <div class="download-actions"><a href={item.repositoryUrl} target="_blank" rel="noopener noreferrer">{t('LlmModelProfile.1083')}</a><a href={item.filesUrl} target="_blank" rel="noopener noreferrer">{item.format === 'ollama' ? t('LlmModelProfile.1084') : t('LlmModelProfile.1085')} ↗</a></div>
+              <details><summary>{t('LlmModelProfile.1086')}</summary>
+                <p>{t('LlmModelProfile.1087')} <bdi>{item.baseModelRepository}</bdi></p>
+                {#if item.baseRevision}<p>{t('LlmModelProfile.1088')} <bdi>{item.baseRevision}</bdi></p>{/if}
+                {#if item.repositoryRevision}<p>{t('LlmModelProfile.1089')} <code>{item.repositoryRevision}</code></p>{/if}
+                {#if item.files.length}<ul class="file-list">{#each item.files as file}<li><a href={file.url} target="_blank" rel="noopener noreferrer" dir="ltr">{file.path} ↗</a>{#if file.bytes !== undefined}<small>{numbers.format(file.bytes)} {t('LlmModelProfile.1090')}</small>{/if}</li>{/each}</ul>{/if}
+                <p class="muted">{t('LlmModelProfile.1091')} <time datetime={item.verifiedOn}>{item.verifiedOn}</time></p>
                 <LlmEvidence ids={item.evidenceIds} evidence={repository.evidence} />
               </details>
             </article>
           {/each}
         </div>
       {:else if selectedPanel === 'run'}
-        <h3>مسیرهای راه‌اندازی</h3>
+        <h3>{t('LlmModelProfile.1092')}</h3>
         {#each runs.guides as run}
           <article class="run-card"><header>{#if llmBrand(run.engine)}<img class="profile-logo" src={llmBrand(run.engine)} alt="" width="32" height="32" />{/if}<h4>{run.label}</h4></header>
             {#if run.instructions}<p>{run.instructions}</p>{/if}{#if run.conditions.length}<ul>{#each run.conditions as condition}<li>{condition}</li>{/each}</ul>{/if}
-            {#if run.code}<div class="code-block"><button type="button" on:click={() => copy(run.code!, 'فرمان')}>کپی فرمان</button><pre dir="ltr"><code>{run.code}</code></pre></div>{/if}
-            <a href={run.href} target="_blank" rel="noopener noreferrer">راهنمای {run.engine === 'مسیر اجرای ناشر' ? 'ناشر' : run.engine} ↗</a><LlmEvidence ids={run.evidenceIds} evidence={repository.evidence} />
+            {#if run.code}<div class="code-block"><button type="button" on:click={() => copy(run.code!, t('LlmModelProfile.1093'))}>{t('LlmModelProfile.1094')}</button><pre dir="ltr"><code>{run.code}</code></pre></div>{/if}
+            <a href={run.href} target="_blank" rel="noopener noreferrer">{t('LlmModelProfile.1095')} {run.engineLabel ?? run.engine} ↗</a><LlmEvidence ids={run.evidenceIds} evidence={repository.evidence} />
           </article>
         {/each}
-        {#if runs.shared.length}<aside class="run-notes" aria-label="شرط‌های مشترک اجرا">{#each runs.shared as note}<p><small><bdi>{note.engines.join('، ')}</bdi></small>{note.text}</p>{/each}</aside>{/if}
+        {#if runs.shared.length}<aside class="run-notes" aria-label={t('LlmModelProfile.1097')}>{#each runs.shared as note}<p><small><bdi>{note.engines.join(t('LlmModelProfile.1098'))}</bdi></small>{note.text}</p>{/each}</aside>{/if}
       {:else if selectedPanel === 'infrastructure'}
         <LlmModelResearch {repository} {modelId} />
       {:else if selectedPanel === 'quality'}
-        <h3>کیفیت مدل</h3>
-        {#if results.length}<LlmPublishedEvaluations {results} evidence={repository.evidence} />{:else}<p>نتیجهٔ عددی برای این مدل در راهنما ثبت نشده است.</p><a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">کارت مدل ↗</a>{/if}
+        <h3>{t('LlmModelProfile.1099')}</h3>
+        {#if results.length}<LlmPublishedEvaluations {results} evidence={repository.evidence} />{:else}<p>{t('LlmModelProfile.1100')}</p><a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">{t('LlmModelProfile.1101')}</a>{/if}
       {:else}
-        <h3>منابع، مجوز و تاریخ‌ها</h3>
-        <dl class="source-facts">{#each [{key:'license-url',label:'مجوز'}, {key:'license-restrictions',label:'شروط مجوز'}, {key:'released-on',label:'انتشار مدل'}, {key:'last-reviewed',label:'آخرین بررسی'}, {key:'revision',label:'نسخهٔ ثبت‌شده'}].filter(item => row.details[item.key]?.state === 'known') as item}<div><dt>{item.label}</dt><dd><LlmValue value={row.details[item.key]} /></dd></div>{/each}</dl>
-        <a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">صفحهٔ رسمی مدل ↗</a><LlmEvidence ids={profile.evidenceIds} evidence={repository.evidence} />
+        <h3>{t('LlmModelProfile.1102')}</h3>
+        <dl class="source-facts">{#each [{key:'license-url',label:t('LlmModelProfile.1103')}, {key:'license-restrictions',label:t('LlmModelProfile.1104')}, {key:'released-on',label:t('LlmModelProfile.1105')}, {key:'last-reviewed',label:t('LlmModelProfile.1106')}, {key:'revision',label:t('LlmModelProfile.1107')}].filter(item => row.details[item.key]?.state === 'known') as item}<div><dt>{item.label}</dt><dd><LlmValue value={row.details[item.key]} /></dd></div>{/each}</dl>
+        <a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">{t('LlmModelProfile.1108')}</a><LlmEvidence ids={profile.evidenceIds} evidence={repository.evidence} />
       {/if}
     </div>
-    <footer><button type="button" on:click={onClose}>بستن پرونده</button><a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">صفحهٔ رسمی ↗</a><button type="button" on:click={() => copy(window.location.href, 'لینک پرونده')}>کپی لینک این بخش</button><small role="status">{copyStatus}</small></footer>
+    <footer><button type="button" on:click={onClose}>{t('LlmModelProfile.1109')}</button><a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">{t('LlmModelProfile.1110')}</a><button type="button" on:click={() => copy(window.location.href, t('LlmModelProfile.1111'))}>{t('LlmModelProfile.1112')}</button><small role="status">{copyStatus}</small></footer>
   {/if}
 </dialog>
 

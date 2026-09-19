@@ -1,6 +1,7 @@
 ---
 title: "امنیت زیرساخت هوش مصنوعی از کرنل و GPU آغاز می‌شود"
 slug: ai-infrastructure-security-starts-with-kernel-and-gpu
+translationGroup: ai-infrastructure-security-starts-with-kernel-and-gpu
 lang: fa
 date: 2026-02-26
 faDate: "۱۶ بهمن ۱۴۰۴ "

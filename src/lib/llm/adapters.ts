@@ -1,5 +1,5 @@
-import { applications, guideParameterBands } from './guide';
-import { llmLabel, sourceDateValue, sourceDateRange } from './presentation';
+import { createLlmGuide } from './guide';
+import { createLlmPresentation } from './presentation';
 import type {
   Datum,
   DeploymentConfiguration,
@@ -12,8 +12,14 @@ import type {
   SoftwareCapability
 } from './schema';
 import type { LlmMatrixCell, LlmMatrixCellResult, LlmViewId, LlmViewRow, ViewValue } from './views';
+import type { LlmI18n } from './i18n/runtime';
 
-const numbers = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 3 });
+/** Text and formatting are edition-scoped; no mutable global locale. */
+export function createLlmAdapters(i18n: LlmI18n) {
+const { t, locale, numberFormat } = i18n;
+const { applications, guideParameterBands } = createLlmGuide(i18n);
+const { llmLabel, sourceDateValue, sourceDateRange } = createLlmPresentation(i18n);
+const numbers = new Intl.NumberFormat(numberFormat, { maximumFractionDigits: 3 });
 const unknown = (reason: 'unknown' | 'not-measured' | 'not-applicable' = 'unknown', note?: string): ViewValue => ({
   state: reason,
   ...(note ? { note } : {})
@@ -34,11 +40,10 @@ const known = (
 const viewText = (value: ViewValue) => value.state === 'known'
   ? value.display
   : value.state === 'not-measured'
-    ? 'اندازه‌گیری نشده'
+    ? t('adapters.0177')
     : value.state === 'not-applicable'
-      ? 'قابل‌اعمال نیست'
-      : 'نامعلوم';
-
+      ? t('adapters.0178')
+      : t('adapters.0179');
 function datum<T, Unit extends string>(
   value: Datum<T, Unit> | undefined,
   format: (item: T, unit?: Unit) => string = (item, unit) => `${String(item)}${unit ? ` ${unit}` : ''}`,
@@ -51,26 +56,22 @@ function datum<T, Unit extends string>(
     : format(value.value, value.unit);
   return { ...known(format(value.value, value.unit), raw, converted?.number, converted?.unit, value.evidenceIds), ...(value.note ? { note: value.note } : {}) };
 }
-
 function licenseDetails(license: ModelVersion['license']): Record<string, ViewValue> {
   const url = datum(license.url);
   return {
     license: datum(license.name),
     'license-url': url.state === 'known' && /^https?:\/\//.test(String(url.raw)) ? { ...url, href: String(url.raw) } : url,
-    'commercial-use': datum(license.commercialUse, (value) => ({ allowed: 'مجاز با رعایت شروط', restricted: 'مشروط / محدود', prohibited: 'ممنوع', unknown: 'نامعلوم' }[value] ?? value)),
-    'license-restrictions': license.restrictions?.length ? list(license.restrictions, license.evidenceIds) : unknown('unknown', 'شرط اضافی ثبت نشده است.')
+    'commercial-use': datum(license.commercialUse, (value) => ({ allowed: t('adapters.0180'), restricted: t('adapters.0181'), prohibited: t('adapters.0182'), unknown: t('adapters.0179') }[value] ?? value)),
+    'license-restrictions': license.restrictions?.length ? list(license.restrictions, license.evidenceIds) : unknown('unknown', t('adapters.0183'))
   };
 }
-
 function list(items: Array<string | undefined>, evidenceIds?: readonly string[]) {
   const values = items.filter((item): item is string => Boolean(item));
-  return values.length ? known(values.join('، '), values.join('|'), undefined, undefined, evidenceIds) : unknown();
+  return values.length ? known(values.join(t('adapters.0184')), values.join('|'), undefined, undefined, evidenceIds) : unknown();
 }
-
 function idList(ids: readonly string[]) {
-  return ids.length ? known(ids.join('، '), ids.join('|'), undefined, undefined, ids) : unknown();
+  return ids.length ? known(ids.join(t('adapters.0184')), ids.join('|'), undefined, undefined, ids) : unknown();
 }
-
 function memoryToGiB(value: number, unit?: MemoryUnit) {
   const factors: Partial<Record<MemoryUnit, number>> = {
     MB: 1e6 / 2 ** 30, MiB: 1 / 1024, GB: 1e9 / 2 ** 30, GiB: 1, TB: 1e12 / 2 ** 30, TiB: 1024
@@ -78,7 +79,6 @@ function memoryToGiB(value: number, unit?: MemoryUnit) {
   const factor = unit ? factors[unit] : undefined;
   return factor === undefined ? undefined : { number: value * factor, unit: 'GiB' };
 }
-
 function modelSizeBand(model: ModelVersion) {
   const declared = model.totalParametersB.state === 'known' ? model.totalParametersB : model.parameterCounts?.find(item => item.scope === 'nominal')?.value;
   if (declared?.state !== 'known') return unknown();
@@ -86,108 +86,93 @@ function modelSizeBand(model: ModelVersion) {
   const band = guideParameterBands.find((item) => value >= item.minInclusive && (item.maxExclusive === null || value < item.maxExclusive));
   return band ? known(band.label, band.id) : unknown();
 }
-
 function evidenceKinds(repository: LlmGuideRepository, evidenceIds: readonly EvidenceId[]) {
   const values = evidenceIds.map((id) => repository.evidence.find((item) => item.id === id)?.kind).filter((item): item is NonNullable<typeof item> => Boolean(item));
   return values.length ? values.map((value) => known(value, value)) : [unknown()];
 }
-
 function baseComparison(dimensions: Record<string, ViewValue>, limitations: string[] = [], complete = true) {
   return {
     dimensions,
     calculation: complete
       ? { status: 'ready' as const }
-      : { status: 'needs-more-data' as const, reason: 'یک یا چند ورودی مقایسه ثبت نشده است.' },
+      : { status: 'needs-more-data' as const, reason: t('adapters.0185') },
     limitations
   };
 }
-
 function formatParameter(value: Datum<number, 'billion-parameters'>) {
-  return datum(value, (number) => `${numbers.format(number)} میلیارد`, (number) => ({ number, unit: 'B' }));
+  return datum(value, (number) => t('adapters.0186', numbers.format(number)), (number) => ({ number, unit: 'B' }));
 }
-
 function formatToken(value: Datum<number, 'token'>) {
-  return datum(value, (number) => `${numbers.format(number)} توکن`, (number) => ({ number, unit: 'token' }));
+  return datum(value, (number) => t('adapters.0187', numbers.format(number)), (number) => ({ number, unit: 'token' }));
 }
-
 function formatMemory(value: Datum<number, MemoryUnit>) {
   return datum(value, (number, unit) => `${numbers.format(number)} ${unit ?? ''}`, memoryToGiB);
 }
-
 function formatGenericNumber<Unit extends string>(value: Datum<number, Unit>, fallbackUnit?: string) {
   return datum(value, (number, unit) => `${numbers.format(number)}${unit || fallbackUnit ? ` ${unit ?? fallbackUnit}` : ''}`,
     (number, unit) => ({ number, unit: unit ?? fallbackUnit ?? 'number' }));
 }
-
-
 function applicationLabel(id: string) {
   return applications.find((item) => item.id === id)?.label ?? id;
 }
-
-const compactToken = (value: Datum<number, 'token'>) => datum(value, number => `${numbers.format(number)} توکن`, number => ({ number, unit: 'token' }));
+const compactToken = (value: Datum<number, 'token'>) => datum(value, number => t('adapters.0187', numbers.format(number)), number => ({ number, unit: 'token' }));
 const copyValue = (text: string): ViewValue => ({ ...known(text, text), copyText: text });
-
 function modelParameterSummary(model: ModelVersion): ViewValue {
   const total = formatParameter(model.totalParametersB);
   const nominal = model.parameterCounts?.find(item => item.scope === 'nominal' && item.value.state === 'known');
-  const parts = total.state === 'known' ? [`${model.parameterCounts?.some(item => item.scope === 'total' && item.approximate) ? 'حدود ' : ''}${total.display}`] : nominal?.value.state === 'known' ? [`${nominal.approximate ? 'حدود ' : ''}${numbers.format(nominal.value.value)} میلیارد اسمی`] : [];
-  if (model.activeParametersB.state === 'known') parts.push(`${viewText(formatParameter(model.activeParametersB))} فعال`);
+  const parts = total.state === 'known' ? [`${model.parameterCounts?.some(item => item.scope === 'total' && item.approximate) ? t('adapters.0188') : ''}${total.display}`] : nominal?.value.state === 'known' ? [t('adapters.0189', nominal.approximate ? t('adapters.0188') : '', numbers.format(nominal.value.value))] : [];
+  if (model.activeParametersB.state === 'known') parts.push(t('adapters.0190', viewText(formatParameter(model.activeParametersB))));
   else for (const count of model.parameterCounts ?? []) if (count.scope === 'active' && count.value.state === 'known') {
-    parts.push(`${numbers.format(count.value.value)} میلیارد ${count.label}`);
+    parts.push(t('adapters.0191', numbers.format(count.value.value), count.label));
   }
   for (const count of model.parameterCounts ?? []) if (['effective', 'language-component', 'other'].includes(count.scope) && count.value.state === 'known') {
-    parts.push(`${count.approximate ? 'حدود ' : ''}${numbers.format(count.value.value)} میلیارد ${count.label}`);
+    parts.push(t('adapters.0192', count.approximate ? t('adapters.0188') : '', numbers.format(count.value.value), count.label));
   }
   if (!parts.length) {
     const stored = model.parameterCounts?.find(count => count.scope === 'stored' && count.value.state === 'known');
     if (stored?.value.state === 'known') return {
-      ...known(`${numbers.format(stored.value.value)} میلیارد عنصر در فایل وزن`, undefined, undefined, undefined, stored.value.evidenceIds),
-      caveat: 'شمار ذخیره‌شده در checkpoint؛ شامل مؤلفه‌های اضافی، نه شمار فعال در تولید هر توکن.'
+      ...known(t('adapters.0193', numbers.format(stored.value.value)), undefined, undefined, undefined, stored.value.evidenceIds),
+      caveat: t('adapters.0194')
     };
     return total;
   }
   return { ...known(parts.join(' · '), total.state === 'known' ? total.raw : undefined,
     total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds),
-    caveat: total.state !== 'known' ? 'شمار کل تأیید نشده' : undefined };
+    caveat: total.state !== 'known' ? t('adapters.0195') : undefined };
 }
-
 function modelContextSummary(model: ModelVersion): ViewValue {
   const context = compactToken(model.declaredContext);
   if (context.state !== 'known') return context;
   return { ...context, note: undefined,
     caveat: [model.contextCondition, model.contextExtension?.capacity.state === 'known'
-      ? `تا ${viewText(compactToken(model.contextExtension.capacity))} با ${model.contextExtension.condition}` : undefined].filter(Boolean).join('؛ ') || undefined };
+      ? t('adapters.0196', viewText(compactToken(model.contextExtension.capacity)), model.contextExtension.condition) : undefined].filter(Boolean).join(t('adapters.0197')) || undefined };
 }
-
 function reportedResults(repository: LlmGuideRepository, modelId: string, applicationId?: string) {
   return (repository.publishedEvaluations ?? []).filter(result => result.modelVersionId === modelId &&
     (!applicationId || result.applicationIds.includes(applicationId as ModelApplicationAssessment['applicationId'])) &&
     result.evidenceIds.some(id => repository.evidence.some(source => source.id === id)));
 }
-
 function publishedSummary(result: PublishedEvaluation): ViewValue {
-  return { ...known(`${result.benchmark} · ${result.metric}: ${numbers.format(result.value)}${result.unit === 'percent' ? '٪' : ''}`, result.value,
+  return { ...known(`${result.benchmark} · ${result.metric}: ${numbers.format(result.value)}${result.unit === 'percent' ? t('adapters.0198') : ''}`, result.value,
     result.value, `${result.benchmark}|${result.metric}|${result.unit}`, result.evidenceIds),
-    badge: `${result.reportingRelationship === 'publisher' ? 'گزارش ناشر' : result.reportingRelationship === 'independent' ? 'ارزیابی مستقل' : 'گزارش منتشرشده'}: ${result.reporter}`,
-    caveat: [result.language === 'multilingual' ? 'چندزبانه؛ امتیاز فارسی نیست' : result.language,
-      result.settings['بازیاب اولیه'] ? `۱۰۰ نامزد از ${result.settings['بازیاب اولیه']}` : undefined].filter(Boolean).join('؛ ') };
+    badge: `${result.reportingRelationship === 'publisher' ? t('adapters.0199') : result.reportingRelationship === 'independent' ? t('adapters.0200') : t('adapters.0201')}: ${result.reporter}`,
+    caveat: [result.language === 'multilingual' ? t('adapters.0202') : result.language,
+      result.settings.retrievalModel ? t('adapters.0203', result.settings.candidateCount ?? '—', result.settings.retrievalModel) : undefined].filter(Boolean).join(t('adapters.0197')) };
 }
-
-export function documentedAssessmentValue(item: ModelApplicationAssessment, repository: LlmGuideRepository): ViewValue {
+function documentedAssessmentValue(item: ModelApplicationAssessment, repository: LlmGuideRepository): ViewValue {
   const hasSource = item.evidenceIds.some(id => repository.evidence.some(source => source.id === id));
-  if (!hasSource || item.basis === 'insufficient-evidence') return unknown('unknown', 'شاهد کافی برای این کاربرد ثبت نشده است.');
+  if (!hasSource || item.basis === 'insufficient-evidence') return unknown('unknown', t('adapters.0204'));
   if (item.basis === 'declared-capability') return {
-    ...known(item.summary || 'سازنده این کاربرد را ذکر کرده', item.basis, undefined, undefined, item.evidenceIds),
-    badge: item.primaryPurpose && item.rationale ? 'هدف اصلی مدل' : item.summary ? 'طبق معرفی سازنده' : undefined,
-    caveat: item.importantConditions?.join('؛ ')
+    ...known(item.summary || t('adapters.0205'), item.basis, undefined, undefined, item.evidenceIds),
+    badge: item.primaryPurpose && item.rationale ? t('adapters.0206') : item.summary ? t('adapters.0207') : undefined,
+    caveat: item.importantConditions?.join(t('adapters.0197'))
   };
   if (item.basis === 'editorial-recommendation') return item.rationale?.trim()
-    ? { ...known(item.summary || 'پیشنهاد راهنما', item.basis, undefined, undefined, item.evidenceIds), badge: 'پیشنهاد راهنما', caveat: item.importantConditions?.join('؛ ') }
-    : unknown('unknown', 'دلیل مستند پیشنهاد ثبت نشده است.');
+    ? { ...known(item.summary || t('adapters.0208'), item.basis, undefined, undefined, item.evidenceIds), badge: t('adapters.0208'), caveat: item.importantConditions?.join(t('adapters.0197')) }
+    : unknown('unknown', t('adapters.0209'));
   return datum(item.outcome, llmLabel);
 }
-
-export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.models.map((model) => {
     const family = repository.families.find((item) => item.id === model.familyId);
     const total = formatParameter(model.totalParametersB);
@@ -196,20 +181,20 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
     const evaluations = reportedResults(repository, model.id);
     const evidenceIds = [...new Set([...(family?.evidenceIds ?? []), ...model.evidenceIds, ...evaluations.flatMap(item => item.evidenceIds), ...repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).flatMap((artifact) => artifact.evidenceIds)])];
     const uses = repository.applicationAssessments.filter(item => item.modelVersionId === model.id && !item.artifactId && documentedAssessmentValue(item, repository).state === 'known');
-    const modalities = known(`${model.inputModalities.map(llmLabel).join('، ')} ← ${model.outputModalities.map(value => value === 'embedding' ? 'بردار' : llmLabel(value)).join('، ')}`, undefined, undefined, undefined, model.evidenceIds);
+    const modalities = known(`${model.inputModalities.map(llmLabel).join(t('adapters.0184'))} ← ${model.outputModalities.map(value => value === 'embedding' ? t('adapters.0210') : llmLabel(value)).join(t('adapters.0184'))}`, undefined, undefined, undefined, model.evidenceIds);
     return {
       id: model.id, label: model.exactName,
       searchText: [model.id, model.exactName, model.version, model.publisher, family?.name, ...(model.aliases ?? []), ...uses.map(item => item.summary)].join(' '),
       cells: {
         model: known(model.exactName, model.exactName, undefined, undefined, model.evidenceIds),
-        'family-publisher': known(`${family?.name ?? 'نامعلوم'} · ${model.publisher}`, family?.name ?? model.publisher, undefined, undefined, evidenceIds),
+        'family-publisher': known(`${family?.name ?? t('adapters.0179')} · ${model.publisher}`, family?.name ?? model.publisher, undefined, undefined, evidenceIds),
         'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
         parameters: size,
-        'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}${model.attentionArchitecture === 'hybrid' ? ' · توجه ترکیبی' : ''}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : 'شمار پارامتر ثبت نشده' },
+        'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}${model.attentionArchitecture === 'hybrid' ? t('adapters.0211') : ''}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : t('adapters.0212') },
         architecture: known(llmLabel(model.architecture), model.architecture),
         modalities, context: modelContextSummary(model),
         applications: list([...new Set(uses.map(item => item.summary || applicationLabel(item.applicationId)))], uses.flatMap(item => item.evidenceIds)),
-        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? 'استفادهٔ تجاری ممنوع' : 'شرایط استفادهٔ تجاری در مجوز' } : {}) },
+        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? t('adapters.0213') : t('adapters.0214') } : {}) },
         'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
         review: known(llmLabel(model.releaseStatus), model.releaseStatus)
       },
@@ -218,7 +203,7 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
         'model-version': known(`${model.exactName} · ${model.version.slice(0, 12)}`, model.version),
         publisher: known(model.publisher, model.publisher), 'model-kind': known(llmLabel(model.kind), model.kind),
         'model-stage': known(llmLabel(model.stage), model.stage), 'total-parameters': total, 'active-parameters': active,
-        'commercial-use': datum(model.license.commercialUse, llmLabel), 'attention-architecture': model.attentionArchitecture ? known(model.attentionArchitecture === 'hybrid' ? 'ترکیبی' : model.attentionArchitecture, model.attentionArchitecture) : unknown(),
+        'commercial-use': datum(model.license.commercialUse, llmLabel), 'attention-architecture': model.attentionArchitecture ? known(model.attentionArchitecture === 'hybrid' ? t('adapters.0215') : model.attentionArchitecture, model.attentionArchitecture) : unknown(),
         'size-band': modelSizeBand(model), architecture: known(llmLabel(model.architecture), model.architecture),
         'input-modality': model.inputModalities.map((value) => known(llmLabel(value), value)),
         'output-modality': model.outputModalities.map((value) => known(llmLabel(value), value)),
@@ -232,16 +217,16 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
       details: {
         'model-id': copyValue(model.id), revision: copyValue(model.version),
         'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`),
-        lineage: list([model.baseModelId ? `پایه: ${model.baseModelId}` : undefined, model.distilledFromModelId ? `تقطیر از: ${model.distilledFromModelId}` : undefined]),
+        lineage: list([model.baseModelId ? t('adapters.0216', model.baseModelId) : undefined, model.distilledFromModelId ? t('adapters.0217', model.distilledFromModelId) : undefined]),
         modalities, applications: list(uses.map(item => item.summary || applicationLabel(item.applicationId))),
-        languages: model.languages.length ? list(model.languages.map((language) => `${language.language}${language.declared.state === 'known' && language.declared.value ? '' : ' (در دامنهٔ اعلام ناشر نیست)'}`)) : unknown('unknown', 'زبان مشخصی ثبت نشده؛ نبود برچسب زبان به معنی ناتوانی مدل در آن زبان نیست.'),
+        languages: model.languages.length ? list(model.languages.map((language) => `${language.language}${language.declared.state === 'known' && language.declared.value ? '' : t('adapters.0218')}`)) : unknown('unknown', t('adapters.0219')),
         ...licenseDetails(model.license),
         'total-parameters': total, 'active-parameters': active,
-        'parameter-scope': list((model.parameterCounts ?? []).map(item => `${item.label}: ${item.approximate ? 'حدود ' : ''}${viewText(formatParameter(item.value))}${item.value.note ? '؛ ' + item.value.note : ''}`)),
+        'parameter-scope': list((model.parameterCounts ?? []).map(item => `${item.label}: ${item.approximate ? t('adapters.0188') : ''}${viewText(formatParameter(item.value))}${item.value.note ? t('adapters.0197') + item.value.note : ''}`)),
         'declared-context': formatToken(model.declaredContext), 'evaluated-context': formatToken(model.evaluatedContext),
-        'context-extension': model.contextExtension ? { ...compactToken(model.contextExtension.capacity), note: model.contextExtension.condition } : unknown('unknown', 'روشی برای افزایش طول متن ثبت نشده است.'),
-        'weight-files': list(repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).map((artifact) => `${artifact.weightPrecision.toUpperCase()}: ${viewText(formatMemory(artifact.size))} روی دیسک`)),
-        'weight-caveat': known('حجم فایل وزن، حداقل VRAM کل اجرا نیست؛ KV cache، ورودی، حافظهٔ موقت و روش offload جداگانه محاسبه می‌شوند.'),
+        'context-extension': model.contextExtension ? { ...compactToken(model.contextExtension.capacity), note: model.contextExtension.condition } : unknown('unknown', t('adapters.0220')),
+        'weight-files': list(repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).map((artifact) => t('adapters.0221', artifact.weightPrecision.toUpperCase(), viewText(formatMemory(artifact.size))))),
+        'weight-caveat': known(t('adapters.0222')),
         'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
         'last-reviewed': sourceDateValue(model.lastReviewedOn), sources: idList(evidenceIds)
       },
@@ -254,8 +239,7 @@ export function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] 
     };
   });
 }
-
-export function adaptModelSuitability(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptModelSuitability(repository: LlmGuideRepository): LlmViewRow[] {
   const groups = new Map<string, typeof repository.applicationAssessments>();
   for (const assessment of repository.applicationAssessments) {
     const key = `${assessment.modelVersionId}|${assessment.modelRevision}|${assessment.artifactId ?? ''}`;
@@ -271,18 +255,18 @@ export function adaptModelSuitability(repository: LlmGuideRepository): LlmViewRo
     const matrixCells: Record<string, LlmMatrixCell> = {};
     for (const application of applications) {
       const matches = assessments.filter(item => item.applicationId === application.id);
-      if (!matches.length) { matrixCells[application.id] = { value: unknown('unknown', 'اطلاعات کافی در منابع ثبت‌شده نداریم.') }; continue; }
+      if (!matches.length) { matrixCells[application.id] = { value: unknown('unknown', t('adapters.0223')) }; continue; }
       const results = matches.map(item => ({
         id: item.id, value: documentedAssessmentValue(item, repository),
         details: [
-          { label: 'نوع شاهد', value: known(llmLabel(item.basis), item.basis) },
-          { label: 'دلیل و دامنهٔ کاربرد', value: item.rationale ? known(item.rationale) : unknown() },
-          { label: 'نتیجهٔ آزمون سناریو', value: datum(item.outcome, llmLabel) },
-          { label: 'زبان', value: item.language ? known(item.language, item.language) : unknown() },
-          { label: 'نسخهٔ واقعی آزمون', value: item.testedVersion ? copyValue(item.testedVersion) : unknown() },
-          { label: 'نتیجهٔ منتشرشدهٔ مرتبط', value: list(evaluations.filter(result => result.applicationIds.includes(application.id)).map(result => viewText(publishedSummary(result)))) },
-          { label: 'شرایط مهم', value: list(item.importantConditions ?? []) },
-          { label: 'محدودیت', value: list(item.limitations ?? []) }
+          { label: t('adapters.0224'), value: known(llmLabel(item.basis), item.basis) },
+          { label: t('adapters.0225'), value: item.rationale ? known(item.rationale) : unknown() },
+          { label: t('adapters.0226'), value: datum(item.outcome, llmLabel) },
+          { label: t('adapters.0227'), value: item.language ? known(item.language, item.language) : unknown() },
+          { label: t('adapters.0228'), value: item.testedVersion ? copyValue(item.testedVersion) : unknown() },
+          { label: t('adapters.0229'), value: list(evaluations.filter(result => result.applicationIds.includes(application.id)).map(result => viewText(publishedSummary(result)))) },
+          { label: t('adapters.0230'), value: list(item.importantConditions ?? []) },
+          { label: t('adapters.0231'), value: list(item.limitations ?? []) }
         ], sourceIds: item.evidenceIds
       }));
       const informative = results.filter(item => item.value.state === 'known');
@@ -322,7 +306,6 @@ export function adaptModelSuitability(repository: LlmGuideRepository): LlmViewRo
     };
   });
 }
-
 function deploymentContext(repository: LlmGuideRepository, deploymentId: string) {
   const deployment = repository.deploymentConfigurations.find((item) => item.id === deploymentId);
   if (!deployment) return undefined;
@@ -336,12 +319,10 @@ function deploymentContext(repository: LlmGuideRepository, deploymentId: string)
     workload: repository.workloads.find((item) => item.id === deployment.workloadId)
   };
 }
-
 function hardwareTargetId(gpuRecordId: string | undefined, gpuCount: number) {
   if (gpuCount > 1) return 'multi-gpu';
   return gpuRecordId ?? 'cpu-ram';
 }
-
 function stableJson(value: unknown): string {
   if (Array.isArray(value)) return `[${value.map(stableJson).join(',')}]`;
   if (value && typeof value === 'object') {
@@ -349,13 +330,7 @@ function stableJson(value: unknown): string {
   }
   return JSON.stringify(value) ?? 'undefined';
 }
-
-/**
- * Hardware is deliberately absent from this key. Every remaining effective
- * deployment condition is present, so only like-for-like hardware variants
- * share a matrix row.
- */
-export function hardwareFeasibilityGroupKey(deployment: DeploymentConfiguration) {
+function hardwareFeasibilityGroupKey(deployment: DeploymentConfiguration) {
   return stableJson({
     modelVersionId: deployment.modelVersionId,
     modelRevision: deployment.modelRevision,
@@ -374,7 +349,6 @@ export function hardwareFeasibilityGroupKey(deployment: DeploymentConfiguration)
     effectiveSettings: deployment.effectiveSettings
   });
 }
-
 function shortStableKey(value: string) {
   let hash = 2166136261;
   for (let index = 0; index < value.length; index += 1) {
@@ -383,8 +357,7 @@ function shortStableKey(value: string) {
   }
   return (hash >>> 0).toString(36);
 }
-
-export function adaptHardwareFeasibility(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptHardwareFeasibility(repository: LlmGuideRepository): LlmViewRow[] {
   const groups = new Map<string, Array<{
     result: LlmGuideRepository['executionFeasibility'][number];
     context: NonNullable<ReturnType<typeof deploymentContext>>;
@@ -419,12 +392,12 @@ export function adaptHardwareFeasibility(repository: LlmGuideRepository): LlmVie
           value: known(result.status, result.status, undefined, undefined, result.evidenceIds),
           details: [
             { label: 'Deployment', value: known(context.deployment.id, context.deployment.id, undefined, undefined, context.deployment.evidenceIds) },
-            { label: 'سخت‌افزار', value: known(hardware?.name ?? context.deployment.hardwareConfigId, context.deployment.hardwareConfigId, undefined, undefined, hardware?.evidenceIds) },
-            { label: 'تنظیمات مؤثر', value: known(stableJson(context.deployment.effectiveSettings)) },
-            { label: 'VRAM اوج', value: formatMemory(result.peakVram) },
-            { label: 'RAM اوج', value: formatMemory(result.peakRam) },
-            { label: 'فضای checkpoint / اضافه / موقت', value: known(`${viewText(formatMemory(result.checkpointStorage))} / ${viewText(formatMemory(result.additionalStorage))} / ${viewText(formatMemory(result.peakTemporaryStorage))}`) },
-            { label: 'محدودیت', value: result.limitation ? known(result.limitation) : unknown('not-applicable') }
+            { label: t('adapters.0232'), value: known(hardware?.name ?? context.deployment.hardwareConfigId, context.deployment.hardwareConfigId, undefined, undefined, hardware?.evidenceIds) },
+            { label: t('adapters.0233'), value: known(stableJson(context.deployment.effectiveSettings)) },
+            { label: t('adapters.0234'), value: formatMemory(result.peakVram) },
+            { label: t('adapters.0235'), value: formatMemory(result.peakRam) },
+            { label: t('adapters.0236'), value: known(`${viewText(formatMemory(result.checkpointStorage))} / ${viewText(formatMemory(result.additionalStorage))} / ${viewText(formatMemory(result.peakTemporaryStorage))}`) },
+            { label: t('adapters.0231'), value: result.limitation ? known(result.limitation) : unknown('not-applicable') }
           ],
           sourceIds: evidenceIds
         };
@@ -433,10 +406,10 @@ export function adaptHardwareFeasibility(repository: LlmGuideRepository): LlmVie
       matrixCells[target] = {
         value: results.length === 1
           ? results[0].value
-          : known(`${numbers.format(results.length)} نتیجه: ${statuses.join('، ')}`, statuses.join('|')),
+          : known(t('adapters.0237', numbers.format(results.length), statuses.join(t('adapters.0184'))), statuses.join('|')),
         details: results.length === 1
           ? results[0].details
-          : [{ label: 'نتایج مستقل ثبت‌شده', value: known(results.map((item) => `${item.id} ← ${item.deploymentConfigId}`).join('، ')) }],
+          : [{ label: t('adapters.0238'), value: known(results.map((item) => `${item.id} ← ${item.deploymentConfigId}`).join(t('adapters.0184'))) }],
         sourceIds: [...new Set(results.flatMap((item) => item.sourceIds ?? []))],
         results
       };
@@ -466,15 +439,15 @@ export function adaptHardwareFeasibility(repository: LlmGuideRepository): LlmVie
         quantization: datum(deployment.weightQuantization),
         'context-length': formatToken(deployment.contextLength),
         concurrency: formatGenericNumber(deployment.concurrency),
-        'offload-allowed': known(deployment.offloadAllowed ? 'بله' : 'خیر', deployment.offloadAllowed),
+        'offload-allowed': known(deployment.offloadAllowed ? t('adapters.0239') : t('adapters.0240'), deployment.offloadAllowed),
         'evidence-kind': evidenceKinds(repository, rowEvidenceIds)
       },
       details: {
-        'gpu-memory': list(entries.map((entry) => `${entry.context.hardware?.name ?? entry.target}: هر کارت ${entry.context.hardware ? viewText(formatMemory(entry.context.hardware.vramPerGpu)) : 'نامعلوم'} / مجموع ${entry.context.hardware ? viewText(formatMemory(entry.context.hardware.aggregateVram)) : 'نامعلوم'}`)),
-        'system-memory': list(entries.map((entry) => `${entry.context.hardware?.name ?? entry.target}: ${entry.context.hardware ? viewText(formatMemory(entry.context.hardware.ram)) : 'نامعلوم'}`)),
-        storage: list(entries.map((entry) => `${entry.context.hardware?.name ?? entry.target}: checkpoint ${viewText(formatMemory(entry.result.checkpointStorage))} / اضافه ${viewText(formatMemory(entry.result.additionalStorage))} / موقت ${viewText(formatMemory(entry.result.peakTemporaryStorage))}`)),
-        'context-concurrency': known(`زمینه: ${viewText(formatToken(deployment.contextLength))} · batch: ${deployment.batchSize.state === 'known' ? deployment.batchSize.value : 'نامعلوم'} · هم‌زمانی: ${deployment.concurrency.state === 'known' ? deployment.concurrency.value : 'نامعلوم'}`),
-        offload: known(`${deployment.method} · ${deployment.offloadAllowed ? 'مجاز' : 'غیرمجاز'}`),
+        'gpu-memory': list(entries.map((entry) => t('adapters.0241', entry.context.hardware?.name ?? entry.target, entry.context.hardware ? viewText(formatMemory(entry.context.hardware.vramPerGpu)) : t('adapters.0179'), entry.context.hardware ? viewText(formatMemory(entry.context.hardware.aggregateVram)) : t('adapters.0179')))),
+        'system-memory': list(entries.map((entry) => `${entry.context.hardware?.name ?? entry.target}: ${entry.context.hardware ? viewText(formatMemory(entry.context.hardware.ram)) : t('adapters.0179')}`)),
+        storage: list(entries.map((entry) => t('adapters.0242', entry.context.hardware?.name ?? entry.target, viewText(formatMemory(entry.result.checkpointStorage)), viewText(formatMemory(entry.result.additionalStorage)), viewText(formatMemory(entry.result.peakTemporaryStorage))))),
+        'context-concurrency': known(t('adapters.0243', viewText(formatToken(deployment.contextLength)), deployment.batchSize.state === 'known' ? deployment.batchSize.value : t('adapters.0179'), deployment.concurrency.state === 'known' ? deployment.concurrency.value : t('adapters.0179'))),
+        offload: known(`${deployment.method} · ${deployment.offloadAllowed ? t('adapters.0244') : t('adapters.0245')}`),
         limitations: list(limitations),
         sources: idList(rowEvidenceIds)
       },
@@ -501,7 +474,6 @@ export function adaptHardwareFeasibility(repository: LlmGuideRepository): LlmVie
     };
   });
 }
-
 const capabilityFacetMap: Record<string, SoftwareCapability[]> = {
   tasks: ['task-generation', 'task-embedding', 'task-reranking', 'task-classification'],
   queueing: ['queueing'], concurrency: ['concurrency'], batching: ['continuous-batching'],
@@ -514,22 +486,18 @@ const capabilityFacetMap: Record<string, SoftwareCapability[]> = {
   monitoring: ['monitoring'], metrics: ['metrics'], 'health-check': ['health-check'],
   authentication: ['authentication'], 'rate-limiting': ['rate-limiting']
 };
-
 function releasesUsingProduct(repository: LlmGuideRepository, productId: string) {
   return repository.softwareReleases.filter((item) => item.productId === productId);
 }
-
 function capabilitySummary(repository: LlmGuideRepository, releaseId: string, capabilities?: SoftwareCapability[]) {
   return repository.softwareCapabilities.filter((claim) =>
     claim.scope.softwareReleaseId === releaseId && (!capabilities || capabilities.includes(claim.capability))
   );
 }
-
 function noReviewRecord() {
-  return unknown('unknown', 'هنوز بررسی نشده است.');
+  return unknown('unknown', t('adapters.0246'));
 }
-
-export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.softwareReleases.flatMap((release): LlmViewRow[] => {
     const product = repository.softwareProducts.find((item) => item.id === release.productId);
     if (!product) return [];
@@ -540,7 +508,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
     const sourceIds = [...new Set([...release.evidenceIds, ...claims.flatMap((item) => item.evidenceIds), ...apiClaims.flatMap((item) => item.evidenceIds)])];
     const supported = (capabilities: SoftwareCapability[]) => claims.filter((item) => capabilities.includes(item.capability));
     const summary = (items: typeof claims) => items.length
-      ? list(items.map((item) => `${llmLabel(item.capability)}: ${llmLabel(item.status)} (${llmLabel(item.provision)})${item.statusReason ? `؛ ${item.statusReason}` : ''}`), items.flatMap(item => item.evidenceIds))
+      ? list(items.map((item) => `${llmLabel(item.capability)}: ${llmLabel(item.status)} (${llmLabel(item.provision)})${item.statusReason ? t('adapters.0247', item.statusReason) : ''}`), items.flatMap(item => item.evidenceIds))
       : noReviewRecord();
     const needTypes = [
       ...(release.roles.includes('user-interface') || release.roles.includes('model-manager') ? ['local-interactive'] : []),
@@ -551,7 +519,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
     ];
     const documented = claims.filter(item => ['supported', 'conditional'].includes(item.status) && item.evidenceIds.some(id => repository.evidence.some(source => source.id === id)));
     const important = documented.slice(0, 4);
-    const highlights = list(important.map(item => `${llmLabel(item.capability)}${item.provision !== 'native' ? ` (${llmLabel(item.provision)})` : item.status === 'conditional' ? ' (مشروط)' : ''}`), important.flatMap(item => item.evidenceIds));
+    const highlights = list(important.map(item => `${llmLabel(item.capability)}${item.provision !== 'native' ? ` (${llmLabel(item.provision)})` : item.status === 'conditional' ? t('adapters.0248') : ''}`), important.flatMap(item => item.evidenceIds));
     return [{
       id: release.id, label: `${product.name} ${release.version}`,
       searchText: [release.id, product.name, release.version, ...(product.aliases ?? []), ...release.roles, ...backends.map((item) => item?.name)].join(' '),
@@ -559,7 +527,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
         'software-version': known(`${product.name} · ${release.version}`, release.id, undefined, undefined, release.evidenceIds),
         roles: list(release.roles.map(llmLabel), release.evidenceIds),
         scenario: datum(release.targetScenario),
-        'start-docs': { ...known('راهنمای شروع', product.officialUrl), href: product.officialUrl },
+        'start-docs': { ...known(t('adapters.0249'), product.officialUrl), href: product.officialUrl },
         'backend-summary': datum(release.backendSummary),
         platform: list(release.operatingSystems.length || release.hardwareKinds.length ? [...release.operatingSystems, ...release.hardwareKinds] : release.environments.map(llmLabel), release.evidenceIds),
         'environment-backend': list([...release.environments.map(llmLabel), ...backends.map(item => item ? `${item.name} ${item.version}` : undefined)], sourceIds),
@@ -574,7 +542,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
         'software-version': known(release.version, release.version), backend: (release.documentedBackends?.length ? release.documentedBackends.map(name => known(name, name)) : backends.length ? backends.filter(Boolean).map((item) => known(`${item!.name} ${item!.version}`)) : release.backendSummary?.state === 'known' ? [datum(release.backendSummary)] : unknown()),
         'operating-system': release.operatingSystems.length ? release.operatingSystems.map((value) => known(value, value)) : unknown(),
         'hardware-family': release.hardwareKinds.length ? release.hardwareKinds.map((value) => known(value, value)) : unknown(),
-        'local-cloud': release.localOrCloud.map((value) => known(value, value)), offline: datum(release.offlineOperation, (value) => value ? 'بله' : 'خیر'),
+        'local-cloud': release.localOrCloud.map((value) => known(value, value)), offline: datum(release.offlineOperation, (value) => value ? t('adapters.0239') : t('adapters.0240')),
         ...Object.fromEntries(Object.entries(capabilityFacetMap).map(([id, capabilities]) => {
           const items = supported(capabilities);
           return [id, items.length ? items.map((item) => known(item.status, item.status)) : unknown()];
@@ -585,7 +553,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
       },
       details: {
         'os-hardware': list([...release.operatingSystems, ...release.hardwareKinds]),
-        'local-cloud-offline': known(`${release.localOrCloud.map(llmLabel).join('، ')} · بدون اتصال: ${viewText(datum(release.offlineOperation, value => value ? 'بله' : 'خیر'))}`),
+        'local-cloud-offline': known(t('adapters.0250', release.localOrCloud.map(llmLabel).join(t('adapters.0184')), viewText(datum(release.offlineOperation, value => value ? t('adapters.0239') : t('adapters.0240'))))),
         backends: datum(release.backendSummary), 'released-on': sourceDateValue(release.releasedOn, release.evidenceIds),
         'last-reviewed': sourceDateValue(release.lastReviewedOn), 'all-capabilities': summary(claims),
         tasks: summary(supported(capabilityFacetMap.tasks)),
@@ -597,7 +565,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
         'model-scopes': list([...new Set(claims.flatMap((item) => [item.scope.modelTemplate, item.scope.parser, ...item.scope.conditions]))]),
         'operations-security': summary(supported(['monitoring', 'metrics', 'health-check', 'authentication', 'rate-limiting'])),
         'api-compatibility': apiClaims.length
-          ? list(apiClaims.map((item) => `${item.protocol} ${item.endpoint} / ${llmLabel(item.capability)}: ${llmLabel(item.status)} (${llmLabel(item.provision)})${item.statusReason ? `؛ ${item.statusReason}` : ''}`))
+          ? list(apiClaims.map((item) => `${item.protocol} ${item.endpoint} / ${llmLabel(item.capability)}: ${llmLabel(item.status)} (${llmLabel(item.provision)})${item.statusReason ? t('adapters.0247', item.statusReason) : ''}`))
           : noReviewRecord(),
         ...licenseDetails(release.license), sources: idList(sourceIds)
       },
@@ -613,8 +581,7 @@ export function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRo
     }];
   });
 }
-
-export function adaptDeploymentCompatibility(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptDeploymentCompatibility(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.deploymentCompatibility.flatMap((result): LlmViewRow[] => {
     const context = deploymentContext(repository, result.deploymentConfigId);
     if (!context) return [];
@@ -658,10 +625,10 @@ export function adaptDeploymentCompatibility(repository: LlmGuideRepository): Ll
         'backend-settings': known(`${engine?.name ?? deployment.backendEngineId} ${engine?.version ?? ''} · ${JSON.stringify(deployment.effectiveSettings)}`),
         'kv-cache': datum(deployment.kvCachePrecision),
         memory: feasibility ? known(`VRAM: ${viewText(formatMemory(feasibility.peakVram))} · RAM: ${viewText(formatMemory(feasibility.peakRam))}`) : unknown('not-measured'),
-        storage: feasibility ? known(`checkpoint: ${viewText(formatMemory(feasibility.checkpointStorage))} · اضافه: ${viewText(formatMemory(feasibility.additionalStorage))} · موقت: ${viewText(formatMemory(feasibility.peakTemporaryStorage))}`) : unknown('not-measured'),
+        storage: feasibility ? known(t('adapters.0251', viewText(formatMemory(feasibility.checkpointStorage)), viewText(formatMemory(feasibility.additionalStorage)), viewText(formatMemory(feasibility.peakTemporaryStorage)))) : unknown('not-measured'),
         'airllm-scope': air ? known(`${air.airLlmSoftwareReleaseId} · ${air.supportedModelArchitecture} · ${air.modelRevision}`) : unknown('not-applicable'),
-        preparation: air ? known(`آماده‌سازی: ${air.preparationTime.state === 'known' ? air.preparationTime.value : air.preparationTime.state} · راه‌اندازی: ${air.startupTime.state === 'known' ? air.startupTime.value : air.startupTime.state}`) : unknown('not-applicable'),
-        'latency-throughput': air ? known(`TTFT: ${air.ttft.state === 'known' ? air.ttft.value : air.ttft.state} · سرعت: ${air.generationThroughput.state === 'known' ? air.generationThroughput.value : air.generationThroughput.state} · کل: ${air.totalTime.state === 'known' ? air.totalTime.value : air.totalTime.state}`) : unknown('not-applicable'),
+        preparation: air ? known(t('adapters.0252', air.preparationTime.state === 'known' ? air.preparationTime.value : air.preparationTime.state, air.startupTime.state === 'known' ? air.startupTime.value : air.startupTime.state)) : unknown('not-applicable'),
+        'latency-throughput': air ? known(t('adapters.0253', air.ttft.state === 'known' ? air.ttft.value : air.ttft.state, air.generationThroughput.state === 'known' ? air.generationThroughput.value : air.generationThroughput.state, air.totalTime.state === 'known' ? air.totalTime.value : air.totalTime.state)) : unknown('not-applicable'),
         'workload-settings': known(`${workload?.name ?? deployment.workloadId} · batch ${deployment.batchSize.state === 'known' ? deployment.batchSize.value : deployment.batchSize.state} · concurrency ${deployment.concurrency.state === 'known' ? deployment.concurrency.value : deployment.concurrency.state}`),
         limitations: list([...(result.conditions ?? []), ...(result.limitations ?? []), ...(air?.limitations ?? [])]), sources: idList(sourceIds)
       },
@@ -681,13 +648,11 @@ export function adaptDeploymentCompatibility(repository: LlmGuideRepository): Ll
     }];
   });
 }
-
 function firstMetric<Unit extends string>(items: Array<{ value: Datum<number, Unit>; statistic: string }>) {
   const metric = items[0];
   return metric ? formatGenericNumber(metric.value) : unknown('not-measured');
 }
-
-export function adaptBenchmarks(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptBenchmarks(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.benchmarkRuns.flatMap((run): LlmViewRow[] => {
     const context = deploymentContext(repository, run.deploymentConfigId);
     if (!context) return [];
@@ -704,9 +669,9 @@ export function adaptBenchmarks(repository: LlmGuideRepository): LlmViewRow[] {
       cells: {
         'run-model': known(`${run.id} · ${model?.exactName ?? deployment.modelVersionId} · ${artifact?.id ?? deployment.artifactId}`),
         'stack-hardware': known(`${stack?.name ?? deployment.servingStackId} · ${hardware?.name ?? deployment.hardwareConfigId}`),
-        workload: known(`${run.dataset ?? 'بدون دادهٔ نام‌گذاری‌شده'} · ${run.language ?? 'زبان نامعلوم'} · ${workload?.name ?? deployment.workloadId}`),
+        workload: known(`${run.dataset ?? t('adapters.0254')} · ${run.language ?? t('adapters.0255')} · ${workload?.name ?? deployment.workloadId}`),
         ttft, tpot,
-        throughput: known(`درخواست: ${perRequest.state === 'known' ? perRequest.display : perRequest.state} · کل: ${aggregate.state === 'known' ? aggregate.display : aggregate.state}`, undefined,
+        throughput: known(t('adapters.0256', perRequest.state === 'known' ? perRequest.display : perRequest.state, aggregate.state === 'known' ? aggregate.display : aggregate.state), undefined,
           aggregate.state === 'known' ? aggregate.canonicalNumber : undefined, aggregate.state === 'known' ? aggregate.canonicalUnit : undefined),
         goodput: formatGenericNumber(run.goodput)
       },
@@ -730,14 +695,14 @@ export function adaptBenchmarks(repository: LlmGuideRepository): LlmViewRow[] {
       details: {
         revisions: known(`${deployment.modelRevision} · ${artifact?.repositoryRevision ?? deployment.artifactId} · ${stack?.name ?? deployment.servingStackId} · ${engine?.version ?? ''}`),
         hardware: hardware ? known(`${hardware.name} · ${hardware.gpuCount} GPU · ${hardware.cpu.state === 'known' ? hardware.cpu.value : hardware.cpu.state}`) : unknown(),
-        'length-distributions': known(`ورودی: ${run.inputLength.state} · خروجی: ${run.outputLength.state}`),
-        load: known(`زمینه: ${run.contextLength.state === 'known' ? run.contextLength.value : run.contextLength.state} · batch: ${run.batchSize.state === 'known' ? run.batchSize.value : run.batchSize.state} · concurrency: ${run.concurrency.state === 'known' ? run.concurrency.value : run.concurrency.state} · arrival: ${run.arrivalRate.state === 'known' ? run.arrivalRate.value : run.arrivalRate.state}`),
-        reasoning: known(`${run.reasoningMode.state === 'known' ? run.reasoningMode.value : run.reasoningMode.state} · بودجه: ${run.reasoningBudget.state === 'known' ? run.reasoningBudget.value : run.reasoningBudget.state}`),
+        'length-distributions': known(t('adapters.0257', run.inputLength.state, run.outputLength.state)),
+        load: known(t('adapters.0258', run.contextLength.state === 'known' ? run.contextLength.value : run.contextLength.state, run.batchSize.state === 'known' ? run.batchSize.value : run.batchSize.state, run.concurrency.state === 'known' ? run.concurrency.value : run.concurrency.state, run.arrivalRate.state === 'known' ? run.arrivalRate.value : run.arrivalRate.state)),
+        reasoning: known(t('adapters.0259', run.reasoningMode.state === 'known' ? run.reasoningMode.value : run.reasoningMode.state, run.reasoningBudget.state === 'known' ? run.reasoningBudget.value : run.reasoningBudget.state)),
         optimizations: known(`prefix: ${run.prefixCaching.state === 'known' ? run.prefixCaching.value : run.prefixCaching.state} · speculative: ${run.speculativeDecoding.state === 'known' ? run.speculativeDecoding.value : run.speculativeDecoding.state} · ${JSON.stringify(run.effectiveSettings)}`),
         statistics: list([...run.ttft, ...run.tpotOrItl, ...run.totalLatency, ...run.perRequestThroughput, ...run.aggregateThroughput].map((item) => item.statistic)),
-        outcomes: known(`خطا: ${run.errors} · timeout: ${run.timeouts} · موفق: ${run.successfulRequests}`),
-        resources: known(`VRAM: ${run.peakVram.state} · RAM: ${run.peakRam.state} · انرژی: ${run.energy.state}`),
-        'run-state': known(`warm-up: ${run.warmup.state} · cold start: ${run.coldStart.state} · پایدار: ${run.steadyStateDuration.state}`),
+        outcomes: known(t('adapters.0260', run.errors, run.timeouts, run.successfulRequests)),
+        resources: known(t('adapters.0261', run.peakVram.state, run.peakRam.state, run.energy.state)),
+        'run-state': known(t('adapters.0262', run.warmup.state, run.coldStart.state, run.steadyStateDuration.state)),
         quality: run.qualityEvaluationId ? known(run.qualityEvaluationId, run.qualityEvaluationId) : unknown('not-measured'),
         provenance: known(`${run.testedOn} · ${run.publisher} · ${run.rawOutputUrl.state}`),
       },
@@ -759,15 +724,13 @@ export function adaptBenchmarks(repository: LlmGuideRepository): LlmViewRow[] {
     }];
   });
 }
-
-export function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.specializedAssessments.map((assessment) => {
     const model = repository.models.find(item => item.id === assessment.modelVersionId);
     const workload = repository.workloads.find(item => item.id === assessment.workloadId);
     const total = model ? formatParameter(model.totalParametersB) : unknown();
     const specs = model?.specializedSpecs;
     const evaluations = assessment.artifactId ? [] : reportedResults(repository, assessment.modelVersionId);
-    const selected = evaluations[0];
     const evidenceIds = [...new Set([...assessment.evidenceIds, ...(model?.evidenceIds ?? []), ...evaluations.flatMap(item => item.evidenceIds)])];
     return {
       id: assessment.id, label: model?.exactName ?? assessment.modelVersionId,
@@ -779,7 +742,7 @@ export function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewR
         'input-limit': model ? modelContextSummary(model) : unknown(),
         output: specs ? datum(specs.output) : unknown(),
         features: specs ? datum(specs.features) : unknown(),
-        'quality-metric': selected ? publishedSummary(selected) : datum(assessment.metricValue, value => `${numbers.format(value)} ${assessment.metricUnit}`, value => ({ number: value, unit: assessment.metricUnit })),
+        'quality-metric': datum(assessment.metricValue, value => `${numbers.format(value)} ${assessment.metricUnit}`, value => ({ number: value, unit: assessment.metricUnit })),
         'work-rate': unknown('not-measured'),
         'released-on': sourceDateValue(model?.releasedOn, evidenceIds)
       },
@@ -817,13 +780,11 @@ export function adaptSpecializedModels(repository: LlmGuideRepository): LlmViewR
     };
   });
 }
-
-export const modelUseRoleLabels: Record<string, string> = {
-  retrieval: 'بازیابی سند', reranking: 'بازرتبه‌بندی سند', 'grounded-generation': 'تولید پاسخ از سند',
-  'text-generation': 'تولید متن', 'code-completion': 'تکمیل کد / FIM', coding: 'برنامه‌نویسی', 'tool-use': 'فراخوانی ابزار',
-  reasoning: 'استدلال', vision: 'درک تصویر', 'structured-output': 'استخراج ساخت‌یافته'
+const modelUseRoleLabels: Record<string, string> = {
+  retrieval: t('adapters.0263'), reranking: t('adapters.0264'), 'grounded-generation': t('adapters.0265'),
+  'text-generation': t('adapters.0266'), 'code-completion': t('adapters.0267'), coding: t('adapters.0268'), 'tool-use': t('adapters.0269'),
+  reasoning: t('adapters.0270'), vision: t('adapters.0271'), 'structured-output': t('adapters.0272')
 };
-
 function profileRow(repository: LlmGuideRepository, row: LlmViewRow, modelId: string): LlmViewRow {
   const profile = repository.modelProfiles.find(item => item.modelVersionId === modelId);
   if (!profile) return row;
@@ -832,17 +793,17 @@ function profileRow(repository: LlmGuideRepository, row: LlmViewRow, modelId: st
   const model = repository.models.find(item => item.id === modelId)!;
   return { ...row, modelId, modelUrl: profile.officialUrl,
     downloadLinks: [...new Map(downloads.map(item => [`${item.format}:${item.repositoryUrl}`, {
-      label: `${item.format.toUpperCase()} · ${item.authority === 'official' ? 'رسمی' : 'ثالث'}`, href: item.repositoryUrl
+      label: `${item.format.toUpperCase()} · ${item.authority === 'official' ? t('adapters.0273') : t('adapters.0274')}`, href: item.repositoryUrl
     }])).values()],
     searchText: `${row.searchText} ${profile.introduction} ${uses.map(item => item.summary).join(' ')} ${profile.runGuides.map(item => item.engine).join(' ')} ${downloads.map(item => `${item.format} ${item.variant} ${item.publisher}`).join(' ')}`,
     cells: { ...row.cells, 'primary-use': known(profile.roleSummary), applications: known(profile.roleSummary),
       downloads: known([...new Set(downloads.map(item => item.format.toUpperCase()))].join(' · ')),
       introduction: profile.introduction.replace(/[.؛،\s]+$/u, '') === profile.roleSummary.replace(/[.؛،\s]+$/u, '') ? unknown('not-applicable') : known(profile.introduction), role: list([...new Set(uses.map(item => modelUseRoleLabels[item.role]))]),
       'use-condition': list([...new Set(uses.flatMap(item => item.conditions))]),
-      'use-basis': list([...new Set(uses.map(item => item.basis === 'publisher-summary' ? 'کاربرد معرفی‌شده توسط سازنده' : 'پیشنهاد تحلیلی راهنما'))]),
+      'use-basis': list([...new Set(uses.map(item => item.basis === 'publisher-summary' ? t('adapters.0275') : t('adapters.0276')))]),
       model: known(model.exactName), 'model-artifact': known(model.exactName) },
     facets: { ...row.facets, 'model-size': formatParameter(model.totalParametersB.state === 'known' ? model.totalParametersB : model.parameterCounts?.find(item => item.scope === 'nominal')?.value ?? { state: 'unknown' }), application: uses.map(item => known(applicationLabel(item.applicationId), item.applicationId)),
-      'run-engine': [...new Set(profile.runGuides.map(item => item.engine).filter(engine => !engine.includes('مسیر اجرای ناشر')))].map(engine => known(engine, engine)),
+      'run-engine': [...new Set(profile.runGuides.map(item => item.engine).filter(engine => !engine.includes(t('adapters.0277'))))].map(engine => known(engine, engine)),
       'download-format': [...new Set(downloads.map(item => item.format))].map(format => known(format, format)),
       'download-authority': [...new Set(downloads.map(item => item.authority))].map(authority => known(authority, authority)),
       'use-basis': [...new Set(uses.map(item => item.basis))].map(value => known(value, value)),
@@ -850,15 +811,12 @@ function profileRow(repository: LlmGuideRepository, row: LlmViewRow, modelId: st
     sourceIds: [...new Set([...row.sourceIds, ...profile.evidenceIds, ...uses.flatMap(item => item.evidenceIds)])]
   };
 }
-
-/** Editorial guidance is not an experimental outcome or a family-wide capability. */
-export function adaptModelUseGuidance(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptModelUseGuidance(repository: LlmGuideRepository): LlmViewRow[] {
   return adaptModelCatalog(repository)
     .filter(row => repository.modelUseGuidance.some(item => item.modelVersionId === row.id))
     .map(row => profileRow(repository, { ...row, id: `use:${row.id}` }, row.id));
 }
-
-export function adaptModelUseMatrix(repository: LlmGuideRepository): LlmViewRow[] {
+function adaptModelUseMatrix(repository: LlmGuideRepository): LlmViewRow[] {
   return adaptModelUseGuidance(repository).filter(row => {
     const kind = repository.models.find(model => model.id === row.modelId)?.kind;
     return kind === 'generative' || kind === 'vision-language';
@@ -869,21 +827,20 @@ export function adaptModelUseMatrix(repository: LlmGuideRepository): LlmViewRow[
     for (const item of guidance) matrixCells[item.applicationId] = {
       value: { ...known(item.summary, item.applicationId), badge: modelUseRoleLabels[item.role] },
       details: [
-        { label: 'کاربرد و ویژگی مدل', value: known(item.description) },
-        ...(item.conditions.length ? [{ label: 'شرط استفاده', value: known(item.conditions.join('؛ ')) }] : []),
-        { label: 'مبنای راهنما', value: known(item.basis === 'publisher-summary' ? 'خلاصهٔ مستندات ناشر' : 'جمع‌بندی فنی بر پایهٔ مستندات') }
+        { label: t('adapters.0278'), value: known(item.description) },
+        ...(item.conditions.length ? [{ label: t('adapters.0279'), value: known(item.conditions.join(t('adapters.0197'))) }] : []),
+        { label: t('adapters.0280'), value: known(item.basis === 'publisher-summary' ? t('adapters.0281') : t('adapters.0282')) }
       ], sourceIds: item.evidenceIds
     };
     if (model.inputModalities.length === 1 && model.inputModalities[0] === 'text') matrixCells['document-vision'] = {
-      value: known('ورودی متنی'),
-      details: [{ label: 'کار با تصویر سند', value: known('این نسخه فقط متن می‌گیرد؛ سند اسکن‌شده ابتدا باید با ابزار OCR به متن تبدیل شود.') }],
+      value: known(t('adapters.0283')),
+      details: [{ label: t('adapters.0284'), value: known(t('adapters.0285')) }],
       sourceIds: model.evidenceIds
     };
     return { ...row, matrixCells };
   });
 }
-
-export function buildLlmViewRows(repository: LlmGuideRepository): Record<LlmViewId, LlmViewRow[]> {
+function buildLlmViewRows(repository: LlmGuideRepository): Record<LlmViewId, LlmViewRow[]> {
   return {
     'model-catalog': adaptModelCatalog(repository).map(row => profileRow(repository, row, row.id)),
     'model-suitability': repository.modelUseGuidance.length ? adaptModelUseGuidance(repository) : adaptModelSuitability(repository),
@@ -897,7 +854,6 @@ export function buildLlmViewRows(repository: LlmGuideRepository): Record<LlmView
     })
   };
 }
-
 function validateIds(repository: LlmGuideRepository, errors: string[]) {
   const collections: Array<[string, Array<{ id: string }>]> = [
     ['artifactListings', repository.artifactListings], ['modelProfiles', repository.modelProfiles], ['modelUseGuidance', repository.modelUseGuidance],
@@ -918,12 +874,10 @@ function validateIds(repository: LlmGuideRepository, errors: string[]) {
     all.add(item.id);
   }
 }
-
 function requireRef(errors: string[], owner: string, field: string, id: string | undefined, valid: Set<string>) {
   if (!id || !valid.has(id)) errors.push(`${owner}.${field} references missing ${id ?? '(empty)'}`);
 }
-
-export function validateLlmRepository(repository: LlmGuideRepository) {
+function validateLlmRepository(repository: LlmGuideRepository) {
   const errors: string[] = [];
   validateIds(repository, errors);
   const sets = {
@@ -949,7 +903,8 @@ export function validateLlmRepository(repository: LlmGuideRepository) {
     const model = repository.models.find(model => model.id === item.modelVersionId);
     if (!model?.aliases?.includes(item.baseModelRepository)) errors.push(`${item.id} base model identity does not match`);
     if (!item.repositoryUrl.startsWith('https://') || !item.filesUrl.startsWith('https://')) errors.push(`${item.id} invalid download URL`);
-    if (item.format !== 'ollama' && !item.files.length) errors.push(`${item.id} missing verified files`);
+    if (item.format !== 'ollama' && !item.files.length && item.inventoryStatus !== 'not-recorded') errors.push(`${item.id} missing verified files`);
+    if (item.inventoryStatus === 'not-recorded' && (item.files.length || item.totalBytes !== undefined || !item.sizeDescription?.trim())) errors.push(`${item.id} unrecorded inventory carries file measurements`);
     if (item.totalBytes !== undefined && item.files.every(file => file.bytes !== undefined) && item.totalBytes !== item.files.reduce((sum, file) => sum + file.bytes!, 0)) errors.push(`${item.id} inconsistent file sizes`);
   }
   for (const profile of repository.modelProfiles) {
@@ -1091,8 +1046,9 @@ export function validateLlmRepository(repository: LlmGuideRepository) {
   allWithEvidence.forEach((item, index) => checkEvidenceIds(item, `repository[${index}]`));
   return errors;
 }
-
-export function assertValidLlmRepository(repository: LlmGuideRepository) {
+function assertValidLlmRepository(repository: LlmGuideRepository) {
   const errors = validateLlmRepository(repository);
   if (errors.length) throw new Error(`Invalid LLM repository:\n${errors.join('\n')}`);
+}
+return { documentedAssessmentValue, adaptModelCatalog, adaptModelSuitability, hardwareFeasibilityGroupKey, adaptHardwareFeasibility, adaptSoftwareProducts, adaptDeploymentCompatibility, adaptBenchmarks, adaptSpecializedModels, modelUseRoleLabels, adaptModelUseGuidance, adaptModelUseMatrix, buildLlmViewRows, validateLlmRepository, assertValidLlmRepository };
 }

@@ -22,6 +22,24 @@ export type GalleryItem = {
   }>>;
 };
 const galleryEntries: GalleryItem[] = [
+  // Event date and programme: https://www.zhaket.com/events/vision2026/
+  {
+    id: 'vision-2026',
+    title: 'رویداد ویژن ۲۰۲۶',
+    caption: 'گردهمایی فعالان کسب‌وکار دیجیتال به میزبانی ژاکت در تهران، برای تبادل تجربه درباره کاربرد هوش مصنوعی، آینده جست‌وجو و سئو و توسعه محصول.',
+    date: '2026-09-10',
+    faDate: '۱۹ شهریور ۱۴۰۵',
+    images: [
+      {
+        src: '/images/gallery/vision-2026-cover.webp',
+        alt: 'گردهمایی شرکت‌کنندگان در فضای رویداد ویژن ۲۰۲۶ مقابل نشان رویداد و حامیان آن'
+      },
+      {
+        src: '/images/gallery/vision-2026.webp',
+        alt: 'تصویری از حاضران رویداد ویژن ۲۰۲۶ در سالن همایش‌های ضرغام تهران'
+      }
+    ]
+  },
 {
   "id": "hoomas-pishgaman2",
   "title": "دومین دوره پیشگامان نوآوری صنعت و معدن",

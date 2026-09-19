@@ -5647,7 +5647,7 @@ models.push({
   "architecture": "dense",
   "totalParametersB": {
     "state": "known",
-    "value": 2.0,
+    "value": 2,
     "evidenceIds": [
       "evidence:v03-1fb0e66ad27f4a35c4"
     ],
@@ -5763,7 +5763,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 2.0,
+        "value": 2,
         "evidenceIds": [
           "evidence:v03-1fb0e66ad27f4a35c4"
         ],
@@ -5801,7 +5801,7 @@ models.push({
   "architecture": "moe",
   "totalParametersB": {
     "state": "known",
-    "value": 35.0,
+    "value": 35,
     "evidenceIds": [
       "evidence:v03-02a81d4ca4dfa9b099"
     ],
@@ -5918,7 +5918,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 35.0,
+        "value": 35,
         "evidenceIds": [
           "evidence:v03-02a81d4ca4dfa9b099"
         ],
@@ -5967,7 +5967,7 @@ models.push({
   "architecture": "dense",
   "totalParametersB": {
     "state": "known",
-    "value": 4.0,
+    "value": 4,
     "evidenceIds": [
       "evidence:v03-a70fca6b263839d3e5"
     ],
@@ -6083,7 +6083,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 4.0,
+        "value": 4,
         "evidenceIds": [
           "evidence:v03-a70fca6b263839d3e5"
         ],
@@ -6132,7 +6132,7 @@ models.push({
   "architecture": "dense",
   "totalParametersB": {
     "state": "known",
-    "value": 9.0,
+    "value": 9,
     "evidenceIds": [
       "evidence:v03-de0f4e149976e25127"
     ],
@@ -6248,7 +6248,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 9.0,
+        "value": 9,
         "evidenceIds": [
           "evidence:v03-de0f4e149976e25127"
         ],
@@ -6297,7 +6297,7 @@ models.push({
   "architecture": "hybrid",
   "totalParametersB": {
     "state": "known",
-    "value": 27.0,
+    "value": 27,
     "evidenceIds": [
       "evidence:v03-6ef1dc4cde68af6f92"
     ],
@@ -6402,7 +6402,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 27.0,
+        "value": 27,
         "evidenceIds": [
           "evidence:v03-6ef1dc4cde68af6f92"
         ],
@@ -12943,7 +12943,7 @@ models.push({
   "architecture": "moe",
   "totalParametersB": {
     "state": "known",
-    "value": 235.0,
+    "value": 235,
     "evidenceIds": [
       "evidence:v03-e72fa22f5d039b4315"
     ],
@@ -13052,7 +13052,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 235.0,
+        "value": 235,
         "evidenceIds": [
           "evidence:v03-e72fa22f5d039b4315"
         ],
@@ -13090,7 +13090,7 @@ models.push({
   "architecture": "moe",
   "totalParametersB": {
     "state": "known",
-    "value": 480.0,
+    "value": 480,
     "evidenceIds": [
       "evidence:v03-f647db3a19c9a0deea"
     ],
@@ -13188,7 +13188,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 480.0,
+        "value": 480,
         "evidenceIds": [
           "evidence:v03-f647db3a19c9a0deea"
         ],
@@ -13226,7 +13226,7 @@ models.push({
   "architecture": "dense",
   "totalParametersB": {
     "state": "known",
-    "value": 27.0,
+    "value": 27,
     "evidenceIds": [
       "evidence:v03-bd8ff876ae3abe060f"
     ],
@@ -13333,7 +13333,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 27.0,
+        "value": 27,
         "evidenceIds": [
           "evidence:v03-bd8ff876ae3abe060f"
         ],
@@ -13516,7 +13516,7 @@ models.push({
   "architecture": "moe",
   "totalParametersB": {
     "state": "known",
-    "value": 122.0,
+    "value": 122,
     "evidenceIds": [
       "evidence:v03-077b49671bb5ca41ae"
     ],
@@ -13628,7 +13628,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 122.0,
+        "value": 122,
         "evidenceIds": [
           "evidence:v03-077b49671bb5ca41ae"
         ],
@@ -13665,7 +13665,7 @@ models.push({
   "architecture": "moe",
   "totalParametersB": {
     "state": "known",
-    "value": 397.0,
+    "value": 397,
     "evidenceIds": [
       "evidence:v03-2ee03fb807e16d7989"
     ],
@@ -13777,7 +13777,7 @@ models.push({
       "label": "شمار گرد‌شدهٔ اعلامی ناشر",
       "value": {
         "state": "known",
-        "value": 397.0,
+        "value": 397,
         "evidenceIds": [
           "evidence:v03-2ee03fb807e16d7989"
         ],
@@ -21137,5 +21137,1413 @@ models.push({
         "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
       ]
     }
+  }
+});
+models.push({
+  "id": "model:bsc-lt-salamandra-2b-instruct",
+  "familyId": "family:salamandra",
+  "exactName": "salamandra-2b-instruct",
+  "publisher": "BSC-LT",
+  "version": "66b2be1e98fca5764696c1538f240a78f4b15433",
+  "aliases": [
+    "BSC-LT/salamandra-2b-instruct"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 2.253490176,
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work"
+  ],
+  "languages": [
+    {
+      "language": "bg",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ca",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "code",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "cy",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "da",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "el",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "et",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "eu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "fi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ga",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "gl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "hr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "hu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "lt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "lv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "mt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "nn",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "\\no",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "oc",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "pl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ro",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "uk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-config-json-47e785ca3a"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/BSC-LT/salamandra-2b-instruct/raw/66b2be1e98fca5764696c1538f240a78f4b15433/README.md",
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+  ]
+});
+models.push({
+  "id": "model:bsc-lt-salamandra-7b-instruct",
+  "familyId": "family:salamandra",
+  "exactName": "salamandra-7b-instruct",
+  "publisher": "BSC-LT",
+  "version": "a3ed5452fafb3698a0423b1a18bfb5888f4e611b",
+  "aliases": [
+    "BSC-LT/salamandra-7b-instruct"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 7.768117248,
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-7b-instruct-json-ec00591718"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work"
+  ],
+  "languages": [
+    {
+      "language": "bg",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ca",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "code",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "cy",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "da",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "el",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "et",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "eu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "fi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ga",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "gl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "hr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "hu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "lt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "lv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "mt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "nn",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "\\no",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "oc",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "pl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ro",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "sv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "uk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-22881108b0"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-7b-instruct-config-json-47e785ca3a"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/BSC-LT/salamandra-7b-instruct/raw/a3ed5452fafb3698a0423b1a18bfb5888f4e611b/README.md",
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-json-ec00591718",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-22881108b0",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-config-json-47e785ca3a",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-2365657aeb",
+    "evidence:reference-bsc-lt-salamandra-7b-instruct-readme-md-456890d7cc"
+  ]
+});
+models.push({
+  "id": "model:openbmb-minicpm5-2b",
+  "familyId": "family:minicpm",
+  "exactName": "MiniCPM5-2B",
+  "publisher": "openbmb",
+  "version": "12a3808a956f869c767195e9266b59c4d21d92e2",
+  "aliases": [
+    "openbmb/MiniCPM5-2B"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 2.51675648,
+    "evidenceIds": [
+      "evidence:reference-openbmb-minicpm5-2b-json-ec00591718"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:reference-openbmb-minicpm5-2b-config-json-47e785ca3a"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/openbmb/MiniCPM5-2B/raw/12a3808a956f869c767195e9266b59c4d21d92e2/README.md",
+      "evidenceIds": [
+        "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:reference-openbmb-minicpm5-2b-json-ec00591718",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0",
+    "evidence:reference-openbmb-minicpm5-2b-config-json-47e785ca3a",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb",
+    "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+  ]
+});
+models.push({
+  "id": "model:liquidai-lfm2-5-1-2b-instruct",
+  "familyId": "family:lfm",
+  "exactName": "LFM2.5-1.2B-Instruct",
+  "publisher": "LiquidAI",
+  "version": "0f604ada3f766f9f257460c4c9f0b5d6f69d431b",
+  "aliases": [
+    "LiquidAI/LFM2.5-1.2B-Instruct"
+  ],
+  "stage": "instruct",
+  "architecture": "hybrid",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1.170340608,
+    "evidenceIds": [
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "structured-extraction"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 128000,
+    "evidenceIds": [
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-config-json-47e785ca3a"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "LFM Open License 1.0",
+      "evidenceIds": [
+        "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-2365657aeb"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/raw/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/LICENSE",
+      "evidenceIds": [
+        "evidence:reference-lfm-license-txt-e8003a05ee"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:reference-lfm-license-txt-e8003a05ee"
+      ]
+    },
+    "restrictions": [
+      "مجوز LFM Open License 1.0 استفادهٔ تجاری را به شرایط درآمدی بندهای ۱ و ۵ وابسته می‌کند."
+    ],
+    "evidenceIds": [
+      "evidence:reference-lfm-license-txt-e8003a05ee"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-config-json-47e785ca3a",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-2365657aeb",
+    "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc",
+    "evidence:reference-lfm-license-txt-e8003a05ee"
+  ]
+});
+models.push({
+  "id": "model:ibm-granite-granite-4-2-3b",
+  "familyId": "family:granite",
+  "exactName": "granite-4.2-3b",
+  "publisher": "ibm-granite",
+  "version": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "aliases": [
+    "ibm-granite/granite-4.2-3b"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 3.6597376,
+    "evidenceIds": [
+      "evidence:reference-ibm-granite-granite-4-2-3b-json-ec00591718"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-22881108b0"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:reference-ibm-granite-granite-4-2-3b-config-json-47e785ca3a"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-16",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/ibm-granite/granite-4.2-3b/raw/e459acceac81e5fe67c07d9cfc72329a332e7eb1/README.md",
+      "evidenceIds": [
+        "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:reference-ibm-granite-granite-4-2-3b-json-ec00591718",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-22881108b0",
+    "evidence:reference-ibm-granite-granite-4-2-3b-config-json-47e785ca3a",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb",
+    "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+  ],
+  "thinkingMode": "switchable",
+  "contextExtension": {
+    "capacity": {
+      "state": "unknown",
+      "evidenceIds": [
+        "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-22881108b0"
+      ]
+    },
+    "condition": "ادعای گسترش 512K ناشر؛ ظرفیت بومی ۱۳۱٬۰۷۲ توکن است و آزمون کیفیت زمینهٔ گسترش‌یافته ثبت نشده است."
   }
 });

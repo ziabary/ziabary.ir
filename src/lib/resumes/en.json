@@ -126,49 +126,56 @@
       "year": 2022,
       "authors": "Z. Shakeri, M. Ziabary, B. Vedadian, F. Azadi, S. Torabzadeh, and A. Atefi.",
       "venue": "12th International Conference on Computer and Knowledge Engineering (ICCKE), pp. 246–252. IEEE.",
-      "doi": ""
+      "doi": "10.1109/ICCKE57176.2022.9960087",
+      "url": "https://ieeexplore.ieee.org/document/9960087"
     },
     {
       "title": "HLMT: Human-Like Machine Translation, Inspired by Bilinguals’ Cortex Activity and Translation Behavior",
       "year": 2015,
       "authors": "S. M. M. Ziabary and S. Khadivi.",
       "venue": "ResearchGate.",
-      "doi": "10.13140/RG.2.1.1086.0002"
+      "doi": "10.13140/RG.2.1.1086.0002",
+      "url": "https://doi.org/10.13140/RG.2.1.1086.0002"
     },
     {
       "title": "AUT Document Alignment Framework for BUCC Workshop Shared Task",
       "year": 2015,
       "authors": "A. Zafarian, A. Aghasadeghi, F. Azadi, S. Ghiasifard, Z. Alipanahloo, S. Bakhshaei, and S. M. Mohammadzadeh Ziabary.",
       "venue": "Proceedings of the Eighth Workshop on Building and Using Comparable Corpora, pp. 79–87. Association for Computational Linguistics.",
-      "doi": ""
+      "doi": "10.18653/v1/W15-3412",
+      "url": "https://aclanthology.org/W15-3412/"
     },
     {
       "title": "Developing an Open-domain English-Farsi Translation System Using AFEC: Amirkabir Bilingual Farsi-English Corpus",
       "year": 2012,
       "authors": "F. Jabbari, S. Bakhshaei, S. M. Mohammadzadeh Ziabary, and S. Khadivi.",
       "venue": "Fourth Workshop on Computational Approaches to Arabic-Script-based Languages, pp. 17–23. Association for Machine Translation in the Americas.",
-      "doi": ""
+      "doi": "",
+      "url": "https://aclanthology.org/2012.amta-caas14.3/"
     },
     {
       "title": "Semi-Human Instinctive Artificial Intelligence (SHI-AI)",
       "year": 2006,
       "authors": "A. Norouzi, S. M. Mohammadzadeh Ziabary, G. Rezaei, and S. M. R. Shoaei.",
       "venue": "",
-      "doi": "10.1145/1232425.1232446"
+      "doi": "10.1145/1232425.1232446",
+      "url": "https://dl.acm.org/doi/10.1145/1232425.1232446"
     },
     {
       "title": "A Novel Approach to Semi-Human Instinctive Artificial Intelligence",
       "year": 2005,
       "authors": "A. Norouzi and S. M. Mohammadzadeh Ziabary.",
       "venue": "Fourth Computer Engineering Students Conference.",
-      "doi": ""
+      "doi": "",
+      "url": "https://www.researchgate.net/publication/256706651_A_Novel_Approach_to_Semi-Human_Instinctive_Artificial_Intelligence"
     },
     {
       "title": "VBScript learning book",
       "year": 2002,
       "authors": "S. M. Mohammadzadeh Ziabary (author and translator), Pejman Masnavee.",
       "venue": "Naghus Publications. Book in Persian.",
-      "doi": ""
+      "doi": "",
+      "url": "https://mahdroo.ir/shop/product/book-384033-wizqhu"
     },
     {
       "title": "Inter-Function Communication (IFC)",

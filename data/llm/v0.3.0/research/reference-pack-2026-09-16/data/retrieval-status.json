@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://huggingface.co/CohereLabs/tiny-aya-earth/raw/821f26a10f8e67a5b453f62d3091d5d4af14b1ae/README.md",
+    "error": "HTTP Error 401: Unauthorized",
+    "captured_at": "2026-09-16T20:57:43.712945+00:00",
+    "document_revision": "821f26a10f8e67a5b453f62d3091d5d4af14b1ae"
+  },
+  {
+    "url": "https://huggingface.co/CohereLabs/tiny-aya-earth/raw/821f26a10f8e67a5b453f62d3091d5d4af14b1ae/config.json",
+    "error": "HTTP Error 401: Unauthorized",
+    "captured_at": "2026-09-16T20:57:51.688540+00:00",
+    "document_revision": "821f26a10f8e67a5b453f62d3091d5d4af14b1ae"
+  },
+  {
+    "url": "https://huggingface.co/google/embeddinggemma-300m/raw/57c266a740f537b4dc058e1b0cda161fd15afa75/README.md",
+    "error": "HTTP Error 401: Unauthorized",
+    "captured_at": "2026-09-16T20:57:43.642515+00:00",
+    "document_revision": "57c266a740f537b4dc058e1b0cda161fd15afa75"
+  },
+  {
+    "url": "https://huggingface.co/google/embeddinggemma-300m/raw/57c266a740f537b4dc058e1b0cda161fd15afa75/config.json",
+    "error": "HTTP Error 401: Unauthorized",
+    "captured_at": "2026-09-16T20:57:51.697109+00:00",
+    "document_revision": "57c266a740f537b4dc058e1b0cda161fd15afa75"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/docs/backend/VULKAN.md",
+    "error": "HTTP Error 404: Not Found",
+    "captured_at": "2026-09-16T20:59:25.258360+00:00",
+    "key": "llamacpp-vulkan"
+  }
+]

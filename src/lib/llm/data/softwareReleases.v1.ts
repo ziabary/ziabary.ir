@@ -1417,3 +1417,94 @@ softwareReleases.push({
     "evidence:audit-20260916-flagembedding-license"
   ]
 });
+softwareReleases.push({
+  "id": "software-release:mlx-lm-v0-31-3",
+  "productId": "software-product:mlx-lm",
+  "version": "v0.31.3",
+  "lastReviewedOn": "2026-09-16",
+  "roles": [
+    "inference-engine-library"
+  ],
+  "environments": [
+    "desktop",
+    "workstation"
+  ],
+  "operatingSystems": [
+    "macOS"
+  ],
+  "hardwareKinds": [
+    "Apple silicon"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:reference-mlx-license-txt"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/LICENSE",
+      "evidenceIds": [
+        "evidence:reference-mlx-license-txt"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:reference-mlx-license-txt"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:reference-mlx-license-txt"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "selectionCaveat": "مسیر مستقیم برای اجرای محلی و کم‌دقت‌سازی مدل‌های سازگار روی Apple silicon. حافظهٔ مشترک را دوباره به‌صورت RAM+VRAM جمع نزنید. شرط macOS 15 در README مربوط به memory wiring مدل‌های بزرگ است، نه حداقل قطعی همهٔ کاربردهای MLX LM.",
+  "documentedNeeds": [
+    "text generation",
+    "streaming",
+    "quantization",
+    "prompt caching",
+    "low-rank and full fine-tuning",
+    "distributed inference"
+  ],
+  "evidenceIds": [
+    "evidence:reference-mlx-lm-readme-txt",
+    "evidence:reference-mlx-readme-txt",
+    "evidence:reference-mlx-release-json",
+    "evidence:reference-mlx-license-txt"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "اجرای محلی و کم‌دقت‌سازی مدل‌های سازگار روی Apple silicon",
+    "evidenceIds": [
+      "evidence:reference-mlx-lm-readme-txt",
+      "evidence:reference-mlx-readme-txt",
+      "evidence:reference-mlx-release-json",
+      "evidence:reference-mlx-license-txt"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "MLX",
+    "evidenceIds": [
+      "evidence:reference-mlx-lm-readme-txt",
+      "evidence:reference-mlx-readme-txt",
+      "evidence:reference-mlx-release-json",
+      "evidence:reference-mlx-license-txt"
+    ]
+  },
+  "documentedBackends": [
+    "MLX"
+  ]
+});

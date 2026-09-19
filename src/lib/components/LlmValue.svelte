@@ -1,5 +1,9 @@
 <script lang="ts">
-  import { missingLabel } from '$lib/llm/filtering';
+  import { getLlmI18n } from '$lib/llm/i18n/context';
+  const i18n = getLlmI18n();
+  const { t, locale, direction, numberFormat } = i18n;
+  const { missingLabel } = createLlmFiltering(i18n);
+  import { createLlmFiltering } from '$lib/llm/filtering';
   import type { ViewValue } from '$lib/llm/views';
   import { llmBrand } from '$lib/llm/brands';
   export let value: ViewValue | undefined;
@@ -7,8 +11,8 @@
   let copyStatus = '';
   async function copy() {
     if (value?.state !== 'known' || !value.copyText) return;
-    try { await navigator.clipboard.writeText(value.copyText); copyStatus = 'کپی شد'; }
-    catch { copyStatus = 'کپی خودکار ممکن نیست؛ متن را انتخاب کنید.'; }
+    try { await navigator.clipboard.writeText(value.copyText); copyStatus = t('LlmValue.1259'); }
+    catch { copyStatus = t('LlmValue.1260'); }
   }
 </script>
 
@@ -21,7 +25,7 @@
 {#if value?.state === 'known' && value.badge}<small class="value-badge">{value.badge}</small>{/if}
 {#if value?.state === 'known' && value.caveat}<small class="value-caveat">{value.caveat}</small>{/if}
 {#if !compact && value?.note}<small class="value-note">{value.note}</small>{/if}
-{#if !compact && value?.state === 'known' && value.copyText}<button type="button" class="copy-value" on:click={copy} aria-label="کپی شناسه یا revision">کپی</button><small aria-live="polite">{copyStatus}</small>{/if}
+{#if !compact && value?.state === 'known' && value.copyText}<button type="button" class="copy-value" on:click={copy} aria-label={t('LlmValue.1261')}>{t('LlmValue.1262')}</button><small aria-live="polite">{copyStatus}</small>{/if}
 
 <style>
   .token-value{white-space:nowrap}
