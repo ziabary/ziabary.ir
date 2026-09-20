@@ -1,14 +1,14 @@
 import type { LlmGuideRepository, ModelVersion, ApplicationId, ModelTaskSpecialization } from './schema';
 import type { LlmLocale } from './i18n/runtime';
 import { modelLanguageEvidence } from './evaluation';
-import { cleanWizard, isLocal, localized, positive, wizardApplication, wizardLicense, type WizardAnswers, type MemoryEstimator } from './wizard-core';
+import { cleanWizard, isLocal, isWizardLanguage, wizardLanguages, hasTranslationPair, localized, positive, wizardApplication, wizardLicense, type WizardAnswers, type MemoryEstimator } from './wizard-core';
 
 export interface CandidateReview {
  model:ModelVersion; status:'eligible'|'conditional'|'excluded'; reasons:string[]; answerIds:string[]; evidenceIds:string[];
  score:number; language:string; license:ReturnType<typeof wizardLicense>; memory:ReturnType<MemoryEstimator>;
  memoryStatus:'estimated'|'outside-calculator'|'needs-input'|'unsupported'; source:string; role:string; reason:string; limit:string;
  weightGiB?:number; format?:string; runtime?:string; rankRole?:'start'|'quality'|'alternative'; difference?:string;
- specialty?:ModelTaskSpecialization; specialtyReason?:string; startingPreference?:string; runtimeReason?:string; runtimeUrl?:string; artifactUrl?:string;
+ taskReport?:{label:string;href:string}; specialty?:ModelTaskSpecialization; specialtyReason?:string; startingPreference?:string; runtimeReason?:string; runtimeUrl?:string; artifactUrl?:string;
 }
 const known=(v:{state:string;value?:number})=>v.state==='known'?v.value:undefined;
 // Editorial starting preference, still subject to context, hardware and license filters.
@@ -25,7 +25,7 @@ function persianStartingWork(a:WizardAnswers){
   &&!['long','code','mixed'].includes(a.output)&&a.risk!=='decision';
 }
 export function workloadLanguages(a:WizardAnswers){
- const named=[a.sourceLanguage,a.outputLanguage].filter(x=>x&& !['unknown','mixed','multi','other'].includes(x));
+ const named=[...wizardLanguages(a,'source'),...wizardLanguages(a,'output')];
  // Multilingual is not a synonym for Persian. Only explicit ISO language choices affect evidence.
  return [...new Set(named)];
 }
@@ -42,14 +42,14 @@ function chooseExecution(repository:LlmGuideRepository,model:ModelVersion,a:Wiza
   .sort((x,y)=>(x.totalBytes??Infinity)-(y.totalBytes??Infinity));
  const professional=professionalServing(a),cpu=a.hardware==='cpu',apple=/apple|metal|\bm[1-9]\b/i.test(a.gpuName??'');
  const capacity=positive(cpu?a.ram:a.vram),fixed=a.upgrade==='existing'||a.capex==='0'&&a.upgrade!=='possible';
- const orders=cpu||apple?['llama.cpp','Ollama','Transformers']:professional?['vLLM','SGLang','llama.cpp','Ollama','Transformers']:['llama.cpp','Ollama','vLLM','SGLang','Transformers'];
+ const orders=cpu||apple?['llama.cpp','Candle','Ollama','Transformers']:professional?['vLLM','SGLang','llama.cpp','Ollama','Transformers']:['llama.cpp','Ollama','vLLM','SGLang','Transformers'];
  // MLX also uses safetensors. Only reviewed native 16-bit packages can be
  // paired with general GPU engines here; quantized conversions need their own support evidence.
  const native=(p:typeof packages[number])=>['safetensors','pytorch'].includes(p.format.toLowerCase())&&/^(bf16|fp16|bfloat16|float16|f16)$/i.test(p.precision??'')&&!/mlx/i.test(p.repositoryUrl+' '+p.variant);
  const pairs=orders.flatMap(engine=>{
   const runtime=guides.find(g=>g.engine.toLowerCase()===engine.toLowerCase());
   if(!runtime)return [];
-  return packages.filter(p=>['llama.cpp','Ollama'].includes(engine)?p.format.toLowerCase()==='gguf':native(p)).map(artifact=>({runtime,artifact}));
+  return packages.filter(p=>p.runtimeEngines?p.runtimeEngines.includes(engine)&&(!(cpu||apple)||p.format==='gguf'||/^(bf16|fp16|fp32)$/i.test(p.precision??'')):['llama.cpp','Ollama'].includes(engine)?p.format.toLowerCase()==='gguf':native(p)).map(artifact=>({runtime,artifact}));
  });
  // A native package that already fills the device cannot be the proposed pilot.
  // Choosing a smaller GGUF package does not certify that its full workload fits.
@@ -72,8 +72,8 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   const profile=repository.modelProfiles.find(p=>p.modelVersionId===model.id);
   const target=requestedSpecialty(a),translationOnly=model.taskSpecializations?.some(s=>s.task==='translation');
   const specialization=!kind?model.taskSpecializations?.find(s=>s.task===target):undefined;
-  const translationPair=target==='translation'&&['fa','en','es'].includes(a.sourceLanguage)&&['fa','en','es'].includes(a.outputLanguage)&&a.sourceLanguage!==a.outputLanguage;
-  const specialty=specialization&&(target!=='translation'||translationPair&&[a.sourceLanguage,a.outputLanguage].every(l=>specialization.languages?.includes(l)))?specialization.task:undefined;
+  const translationPair=target==='translation'&&hasTranslationPair(a);
+  const specialty=specialization&&(target!=='translation'||translationPair&&languages.every(l=>specialization.languages?.includes(l))&&(!specialization.languagePairs||wizardLanguages(a,'source').every(from=>wizardLanguages(a,'output').every(to=>from===to||specialization.languagePairs!.some(pair=>pair[0]===from&&pair[1]===to)))))?specialization.task:undefined;
   const specialtyReason=specialty==='translation'?L('این مدل برای ترجمه آموزش دیده و هر دو زبان انتخابی شما را پشتیبانی می‌کند؛ حفظ معنی، نام‌ها و اصطلاحات را با متن‌های خودتان مقایسه کنید.','Trained for translation and supporting both selected languages; compare meaning, names and terminology on your own texts.','Entrenado para traducción y compatible con ambos idiomas; compare significado, nombres y terminología con sus textos.')
    :specialty==='code-completion'?L('برای کامل‌کردن کد هنگام تایپ ساخته شده است؛ سرعت پیشنهاد و درستی ادامهٔ کد را در ویرایشگر خودتان بسنجید.','Designed for inline code completion; test suggestion latency and correctness in your editor.','Diseñado para completar código al escribir; pruebe latencia y corrección en su editor.')
    :specialty==='coding-agent'?L('برای تغییر پروژه و کار با ابزارهای برنامه‌نویسی آموزش دیده است؛ اصلاح چند فایل و اجرای آزمون‌ها را با یک کار واقعی امتحان کنید.','Trained for project edits and coding tools; test multi-file changes and test execution on a real task.','Entrenado para modificar proyectos y usar herramientas; pruebe cambios en varios archivos y ejecución de pruebas.')
@@ -83,7 +83,7 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   const weightGiB=artifact?.totalBytes?artifact.totalBytes/2**30:artifactSpec?.size.state==='known'&&artifactSpec.size.unit==='GiB'?artifactSpec.size.value:undefined;
   const uses=roles.filter(x=>x.modelVersionId===model.id&&x.applicationId===application);
   const taskEvidence=repository.publishedEvaluations.filter(e=>e.modelVersionId===model.id&&e.applicationIds.includes(application)&&Number.isFinite(e.value));
-  const languageEvidence=languages.map(lang=>modelLanguageEvidence(repository,model,lang as LlmLocale,application));
+  const languageEvidence=languages.map(lang=>modelLanguageEvidence(repository,model,lang,application));
   const language=languageEvidence.length?languageEvidence.join(' / '):'not-recorded';
   const license=wizardLicense(model,locale),estimated=kind?undefined:estimate?.(model,a);
   // The calculator's Q4 GGUF estimate must never be presented as a native vLLM estimate.
@@ -98,8 +98,14 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   const memoryStatus=memory?'estimated':outside?'outside-calculator':!input||!output||!positive(a.concurrency)||a.loadDefinition==='queued'?'needs-input':'unsupported';
   const reasons:string[]=[],conditions:string[]=[],ids:string[]=['task','sourceLanguage','outputLanguage'];
   const exclude=(why:string,...fields:string[])=>{reasons.push(why);ids.push(...fields);};
+  if(artifact?.runtimeEngines&&/fp8|gptq/i.test(artifact.precision??''))conditions.push(L('این بستهٔ کم‌حجم به پشتیبانی همان قالب در سخت‌افزار و نسخهٔ موتور نیاز دارد؛ مصرف کامل حافظه هنوز سنجیده نشده است.','This quantized package needs hardware and engine support for its format; full memory remains unmeasured.','Este paquete cuantizado requiere soporte del formato en hardware y motor; no se ha medido toda la memoria.'));
+  if(model.researchOnly&&a.licenseUse!=='research')exclude(L('این نسخه مرجع پژوهشی است و برای استقرار تجاری پیشنهاد نمی‌شود.','This is a research-only reference, not a commercial deployment candidate.','Referencia de investigación, no candidata a despliegue comercial.'),'licenseUse');
+  if(model.inputTokenLimit?.state==='known'&&input>model.inputTokenLimit.value)exclude(L('ورودی از سقف مستند این مدل بیشتر است؛ اندازهٔ هر بخش را پیش از انتخاب کاهش دهید.','Input exceeds this model’s documented limit; reduce segment size before selection.','La entrada supera el límite documentado; reduzca cada segmento antes de elegir.'),'maxTokens','inputTokens');
+  if(target==='translation'&&!hasTranslationPair(a))conditions.push(L('تا مشخص‌شدن زبان‌های مبدأ و مقصد، این پیشنهاد موقت است.','This recommendation is provisional until source and target languages are specified.','La propuesta es provisional hasta concretar origen y destino.'));
+  if(!kind&&model.declaredContext.state!=='known'&&!model.inputTokenLimit)conditions.push(L('سقف قابل اتکای طول ورودی این نسخه هنوز مشخص نیست؛ تناسب آن با متن شما باید آزمایش شود.','A reliable input limit is not established for this revision; test your text length.','No se ha establecido un límite fiable para esta versión; pruebe su longitud de texto.'));
+  if(languages.length&&languageEvidence.some(value=>value==='not-recorded'))conditions.push(L('برای همهٔ زبان‌های انتخابی، شاهد مشخصی از این نسخه ثبت نشده است؛ آزمون همان زبان‌ها لازم است.','Evidence for every selected language is not recorded for this revision; test those languages explicitly.','No hay pruebas registradas para todos los idiomas elegidos; pruébelos explícitamente.'));
   if(translationOnly){
-   if(target!=='translation'||a.sourceLanguage===a.outputLanguage&&['fa','en','es'].includes(a.sourceLanguage))exclude(L('این مدل مخصوص ترجمه بین دو زبان است؛ برای بازنویسی، گفت‌وگو یا پاسخ به پرسش‌های اسناد انتخاب نمی‌شود.','This model translates between languages; it is not selected for rewriting, chat or document Q&A.','Este modelo traduce entre idiomas; no se elige para reescritura, chat ni preguntas sobre documentos.'),'writingTask','sourceLanguage','outputLanguage');
+   if(target!=='translation'||wizardLanguages(a,'source').length===1&&wizardLanguages(a,'output').length===1&&wizardLanguages(a,'source')[0]===wizardLanguages(a,'output')[0])exclude(L('این مدل مخصوص ترجمه بین دو زبان است؛ برای بازنویسی، گفت‌وگو یا پاسخ به پرسش‌های اسناد انتخاب نمی‌شود.','This model translates between languages; it is not selected for rewriting, chat or document Q&A.','Este modelo traduce entre idiomas; no se elige para reescritura, chat ni preguntas sobre documentos.'),'writingTask','sourceLanguage','outputLanguage');
    else if(!translationPair)conditions.push(L('برای بررسی این گزینه، زبان مبدأ و مقصد را دقیق انتخاب کنید.','Select exact source and target languages to assess this option.','Elija los idiomas de origen y destino para evaluar esta opción.'));
    else if(!specialty)exclude(L('این جفت زبان در اطلاعات ترجمهٔ این مدل ثبت نشده است.','This translation pair is not documented for this model.','Este par de idiomas no está documentado para el modelo.'),'sourceLanguage','outputLanguage');
    if(locale!=='fa')conditions.push(...(model.license.restrictions??[]));
@@ -112,7 +118,7 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   if(a.task==='coding'&&a.codingMode==='completion'&&!kind&&!uses.some(u=>u.role==='code-completion'))exclude(L('تکمیل کد حین تایپ برای این نسخه مستند نشده است.','Inline completion is not documented for this revision.','La compleción en línea no está documentada para esta versión.'),'codingMode');
   if(license==='noncommercial'&&a.licenseUse!=='research')exclude(L('شرایط مجوز با استفادهٔ اعلام‌شده سازگار نیست.','Recorded license terms do not permit the selected use.','La licencia registrada no permite el uso elegido.'),'licenseUse');
   if(!kind&&input&&model.declaredContext.state==='known'&&model.declaredContext.value<input+output)exclude(L('متن ورودی و پاسخ در ظرفیت معمول این مدل جا نمی‌گیرند. اجرای متن بلندتر به تنظیمات و بررسی جداگانه نیاز دارد.','Input plus output exceeds native context; extensions require separate validation.','Entrada más salida supera el contexto nativo; la ampliación requiere validación.'),'inputTokens','maxTokens','outputTokens');
-  if(!kind&&a.format==='media'&&!model.inputModalities.some(m=>m==='audio'||m==='video'||m==='image'))exclude(L('ورودی رسانه‌ای به جزء تبدیل یا مدل چندوجهی نیاز دارد.','Media input requires a conversion component or multimodal model.','La entrada multimedia requiere conversión o un modelo multimodal.'),'format');
+  if(!kind&&a.format==='media'&&a.mediaType==='image'&&!model.inputModalities.includes('image'))exclude(L('ورودی رسانه‌ای به جزء تبدیل یا مدل چندوجهی نیاز دارد.','Media input requires a conversion component or multimodal model.','La entrada multimedia requiere conversión o un modelo multimodal.'),'format');
   if(isLocal(a)&&!artifact&&!artifactSpec)conditions.push(L('بستهٔ وزن قابل نصب در فهرست فایل‌های بررسی‌شده نیست.','No installable weight package is in the reviewed file inventory.','No hay un paquete instalable en el inventario revisado.'));
   if(isLocal(a)&&!runtime)conditions.push(L('هنوز نرم‌افزار سازگار با فایل این نسخه را مشخص نکرده‌ایم.','The runtime for this revision still needs compatibility verification.','Falta verificar la compatibilidad del motor para esta versión.'));
   if(!kind&&fixed&&capacity){
@@ -122,9 +128,15 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   }
   if(a.format==='scan'&&!model.inputModalities.includes('image')&&!kind)conditions.push(L('این نامزد متن خروجی OCR را می‌خواند؛ خود تصویر به آن داده نمی‌شود.','This candidate consumes OCR text, not the scanned image.','Este candidato recibe texto de OCR, no la imagen escaneada.'));
   if(model.releaseStatus==='announced')conditions.push(L('دسترسی واقعی به نسخهٔ اعلام‌شده باید تأیید شود.','Availability of this announced revision needs confirmation.','Debe confirmarse la disponibilidad de esta versión anunciada.'));
+  const toolReports=application==='agents-tools'?repository.publishedEvaluations.filter(e=>e.modelVersionId===model.id&&/bfcl|tau.?bench|function.?call/i.test(e.benchmark)):[];
+  const taskReportRecord=(application==='agents-tools'?toolReports:specialty==='translation'?repository.publishedEvaluations.filter(e=>e.modelVersionId===model.id&&/translation|flores/i.test(e.benchmark)):[])[0];
+  const taskReportSource=taskReportRecord&&repository.evidence.find(e=>taskReportRecord.evidenceIds.includes(e.id));
+  const taskReport=taskReportRecord&&taskReportSource?{label:`${taskReportRecord.benchmark}: ${n.format(taskReportRecord.value)} ${taskReportRecord.unit}`,href:taskReportSource.url}:undefined;
+  if(application==='agents-tools')conditions.push(toolReports.length?L('نتیجهٔ آزمون ابزار در منبع موجود است؛ موفقیت روی ابزارها و مجوزهای سازمان شما هنوز باید سنجیده شود.','A tool benchmark is available; success with your organization’s tools and permissions still needs testing.','Hay pruebas de herramientas; falta medir éxito con herramientas y permisos de su organización.'):L('برای این نسخه نتیجهٔ مشخص آزمون انتخاب ابزار در داده‌های ما نیست؛ آن را صرفاً نامزد آزمایش در نظر بگیرید.','No specific tool-selection benchmark is recorded for this revision; treat it only as a trial candidate.','No hay prueba específica de selección de herramientas registrada; es solo un candidato experimental.'));
   // Score evidence coverage and documented suitability, never compare unrelated benchmark numbers.
   let score=(model.applications.includes(application)?20:0)+Math.min(uses.length,2)*3+(uses.some(u=>kind||u.role===(a.task==='operations'?'tool-use':a.task==='coding'?'coding':a.task==='extraction'?'structured-output':'text-generation')||u.role==='grounded-generation')?8:0);
   score+=taskEvidence.length?8:0;
+  if(application==='agents-tools'&&toolReports.length)score+=16;
   const specializedEvidence=repository.publishedEvaluations.filter(e=>e.modelVersionId===model.id&&(a.writingTask==='translation'?/flores|translation/i.test(e.benchmark):a.writingTask==='summary'&&a.inputSize==='long'?/longbench|ruler/i.test(e.benchmark):['writing','rewriting'].includes(a.writingTask)?/ifeval/i.test(e.benchmark):false));
   if(specializedEvidence.length)score+=8;
   score+=repository.applicationAssessments.some(x=>x.modelVersionId===model.id&&x.applicationId===application&&x.primaryPurpose)?5:0;
@@ -137,9 +149,13 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   score-=Math.min(conditions.length,3)*2;
   const evidenceIds=[...new Set([...model.evidenceIds,...uses.flatMap(u=>u.evidenceIds),...taskEvidence.slice(0,2).flatMap(e=>e.evidenceIds),...specializedEvidence.flatMap(e=>e.evidenceIds),...(artifact?.evidenceIds??[]),...(runtime?.evidenceIds??[]),...(specialization?.evidenceIds??[])])];
   const context=model.declaredContext.state==='known'?n.format(model.declaredContext.value):'';
-  const details=[weightGiB?L(`فایل مدل: ⁦${n.format(weightGiB)} GiB ${artifact?.format??artifactSpec?.format??''}⁩`,`${n.format(weightGiB)} GiB ${artifact?.format??artifactSpec?.format??''} weights`,`${n.format(weightGiB)} GiB de pesos ${artifact?.format??artifactSpec?.format??''}`):'',context?L(`ظرفیت ورودی و پاسخ، در مجموع ${context} توکن`,`native context ${context} tokens`,`contexto nativo de ${context} tokens`):'',isLocal(a)&&runtime?.engine?L(`اجرا با ⁦${runtime.engine}⁩`,`Run with ${runtime.engine}`,`Ejecutar con ${runtime.engine}`):''].filter(Boolean);
+  const details=[model.inputTokenLimit?.state==='known'?L(`سقف ورودی مستند: ${n.format(model.inputTokenLimit.value)} توکن`,`Documented input limit: ${n.format(model.inputTokenLimit.value)} tokens`,`Límite de entrada documentado: ${n.format(model.inputTokenLimit.value)} tokens`):'',weightGiB?L(`فایل مدل: ⁦${n.format(weightGiB)} GiB ${artifact?.format??artifactSpec?.format??''}⁩`,`${n.format(weightGiB)} GiB ${artifact?.format??artifactSpec?.format??''} weights`,`${n.format(weightGiB)} GiB de pesos ${artifact?.format??artifactSpec?.format??''}`):'',context?L(`ظرفیت ورودی و پاسخ، در مجموع ${context} توکن`,`native context ${context} tokens`,`contexto nativo de ${context} tokens`):'',isLocal(a)&&runtime?.engine?L(`اجرا با ⁦${runtime.engine}⁩`,`Run with ${runtime.engine}`,`Ejecutar con ${runtime.engine}`):''].filter(Boolean);
 
-  const reason=details.join(locale==='fa'?'؛ ':'; ')+'.';
+  const taskReason=target==='translation'?L('حفظ معنی، عدد و اصطلاحات را در ترجمهٔ همین زبان‌ها مقایسه کنید.','Compare meaning, numbers and terminology for the selected language pairs.','Compare significado, cifras y términos en los pares elegidos.')
+   :application==='agents-tools'?L('انتخاب ابزار، درستی ورودی ابزار و نتیجهٔ اجرای آن را روی کار واقعی مقایسه کنید.','Compare tool choice, argument validity and execution outcomes on real tasks.','Compare elección de herramienta, argumentos y resultado con tareas reales.')
+   :a.writingTask==='summary'?L('پوشش نکات اصلی و جمله‌هایی را که پشتوانه‌ای در متن ندارند مقایسه کنید.','Compare coverage of key facts and unsupported claims.','Compare cobertura de hechos y afirmaciones sin respaldo.')
+   :L('این گزینه را با پاسخ‌های مرجع کار خودتان بسنجید.','Compare this candidate against reference outputs for your task.','Compare con respuestas de referencia de su tarea.');
+  const reason=taskReason+' '+details.join(locale==='fa'?'؛ ':'; ')+'.';
   const limit=conditions[0]??(kind?L('با چند سؤال واقعی بررسی کنید که سند درست در کجای فهرست نتایج قرار می‌گیرد.','Compare correct-document ranking against lexical search on reference queries.','Compare la posición del documento correcto con búsqueda léxica en consultas de referencia.'):memory?L(`با طول متن و تعداد درخواست شما، حدود ${n.format(memory.budgetGiB)} GiB حافظه لازم است.`,`Estimated memory ${n.format(memory.budgetGiB)} GiB; this is not a speed estimate.`,`Memoria estimada ${n.format(memory.budgetGiB)} GiB; no estima velocidad.`):'');
   const preferred=!kind&&model.id==='model:coherelabs-aya-expanse-8b'&&persianStartingWork(a);
   const startingPreference=preferred?(a.task==='documents'
@@ -150,7 +166,7 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   if(contextCondition)conditions.push(contextCondition);
   if(specialty)ids.push('writingTask','codingMode','codeScope','codeLanguages');
   if(startingPreference)ids.push('writingTask','inputSize','inputTokens','maxTokens','outputTokens','format','sources','output','risk');
-  return {model,specialty,specialtyReason,startingPreference,runtimeReason,runtimeUrl:runtime?.href,artifactUrl:artifact?.filesUrl,status:reasons.length?'excluded':conditions.length?'conditional':'eligible',reasons:reasons.length?reasons:conditions,answerIds:[...new Set(ids)],evidenceIds,score,language,license,memory,memoryStatus,source:model.aliases?.some(x=>/^[^/]+\/[^/]+$/.test(x))&&/^[a-f0-9]{40}$/.test(model.version)?`https://huggingface.co/${model.aliases.find(x=>/^[^/]+\/[^/]+$/.test(x))}/blob/${model.version}/README.md`:profile?.officialUrl??repository.evidence.find(e=>model.evidenceIds.includes(e.id))?.url??'',role:kind??application,reason,limit:[limit,contextCondition].filter(Boolean).join(' '),weightGiB,format:artifact?.precision??artifactSpec?.weightPrecision,runtime:runtime?.engine} satisfies CandidateReview;
+  return {model,taskReport,specialty,specialtyReason,startingPreference,runtimeReason,runtimeUrl:artifact?.runtimeEngines&&artifact.repositoryRevision?artifact.repositoryUrl+'/blob/'+artifact.repositoryRevision+'/README.md':runtime?.href,artifactUrl:artifact?.filesUrl,status:reasons.length?'excluded':conditions.length?'conditional':'eligible',reasons:reasons.length?reasons:conditions,answerIds:[...new Set(ids)],evidenceIds,score,language,license,memory,memoryStatus,source:model.aliases?.some(x=>/^[^/]+\/[^/]+$/.test(x))&&/^[a-f0-9]{40}$/.test(model.version)?`https://huggingface.co/${model.aliases.find(x=>/^[^/]+\/[^/]+$/.test(x))}/blob/${model.version}/README.md`:profile?.officialUrl??repository.evidence.find(e=>model.evidenceIds.includes(e.id))?.url??'',role:kind??application,reason,limit:[limit,contextCondition].filter(Boolean).join(' '),weightGiB,format:artifact?.precision??artifactSpec?.weightPrecision,runtime:runtime?.engine} satisfies CandidateReview;
  });
 }
 export function selectWizardCandidates(reviews:CandidateReview[],locale:LlmLocale):CandidateReview[]{
@@ -163,10 +179,10 @@ export function selectWizardCandidates(reviews:CandidateReview[],locale:LlmLocal
  // Cost is a tie-break among reasonably supported candidates, not a claim that the smallest model is best.
  const supported=pool.filter(c=>c.score>=best-3);
  const start=(!specialists.length?eligible.find(c=>c.startingPreference):undefined)??[...supported].sort((a,b)=>(a.memory?.budgetGiB??a.weightGiB??Infinity)-(b.memory?.budgetGiB??b.weightGiB??Infinity)||b.score-a.score||a.model.id.localeCompare(b.model.id))[0];
- const selected:CandidateReview[]=[{...start,rankRole:'start',difference:start.specialtyReason??start.startingPreference??L('در میان مدل‌هایی که برای این کار بررسی کرده‌ایم و اطلاعات مشابهی از آن‌ها داریم، این گزینه حافظهٔ کمتری می‌خواهد. مقایسه را از آن شروع کنید.','Lowest reviewed memory among similarly supported candidates; a deployment-cost baseline.','Menor memoria revisada entre candidatos con respaldo similar; base del coste de ejecución.')}];
+ const selected:CandidateReview[]=[{...start,rankRole:'start',difference:start.specialtyReason??start.startingPreference??(start.memory?L('برآورد حافظهٔ این گزینه در همین بار کاری کمتر است؛ کیفیت پاسخ را با نمونه‌های کارتان مقایسه کنید.','Lower estimated memory for this workload; compare task quality on your examples.','Menor memoria estimada para esta carga; compare la calidad con sus ejemplos.'):L('فایل وزن این گزینه کوچک‌تر است؛ حافظهٔ کامل اجرا هنوز مشخص نیست.','This weight file is smaller; total runtime memory is not yet established.','Este archivo de pesos es menor; la memoria total aún no está determinada.'))}];
  const quality=specialists.find(c=>c.model.id!==start.model.id)??eligible.find(c=>c.model.id!==start.model.id&&(c.score>start.score||c.language!==start.language||c.model.declaredContext.state==='known'&&start.model.declaredContext.state==='known'&&c.model.declaredContext.value>start.model.declaredContext.value));
  if(quality)selected.push({...quality,rankRole:'quality',difference:L('این مدل را با همان نمونه‌ها امتحان کنید و ببینید نسبت به گزینهٔ اول، خطای کمتری دارد یا متن‌های بلندتری را بهتر پاسخ می‌دهد.','Different evidence, language or context coverage; compare errors on the same task against the baseline.','Distinta cobertura de pruebas, idioma o contexto; compare los errores de la misma tarea con la base.')});
  const alternative=(specialists.length?eligible.find(c=>!c.specialty&&!selected.some(s=>s.model.id===c.model.id)):undefined)??eligible.find(c=>!selected.some(s=>s.model.id===c.model.id)&&c.score>=best-10&&(c.runtime!==start.runtime||c.model.familyId!==start.model.familyId||c.model.architecture!==start.model.architecture));
  if(alternative)selected.push({...alternative,rankRole:'alternative',difference:L('این گزینه از خانواده یا نرم‌افزار دیگری استفاده می‌کند؛ آن را با همان نمونه‌ها کنار گزینهٔ اول بسنجید.','A different family, architecture or runtime; compare dependence on a single execution path.','Otra familia, arquitectura o motor; compare la dependencia de una sola vía de ejecución.')});
- return selected.map((c,i)=>({...c,difference:i===0?c.difference:c.specialtyReason??(specialists.length&&!c.specialty?L('مدل عمومی برای مقایسه؛ با همان نمونه‌ها ببینید مدل تخصصی چه تفاوتی در نتیجه ایجاد می‌کند.','General-purpose baseline: compare the same examples against the specialist.','Modelo general de referencia: compare los mismos ejemplos con el especializado.'):[c.model.familyId!==start.model.familyId?L(`مدلی از ⁦${c.model.publisher}⁩ برای مقایسه با گزینهٔ اول`,`${c.model.publisher} family versus ${start.model.publisher}`,`Familia ${c.model.publisher} frente a ${start.model.publisher}`):'',c.weightGiB&&start.weightGiB?L(`حجم فایل ${n.format(c.weightGiB)} GiB است؛ گزینهٔ اول ${n.format(start.weightGiB)} GiB`,`${n.format(c.weightGiB)} versus ${n.format(start.weightGiB)} GiB of weights`,`${n.format(c.weightGiB)} frente a ${n.format(start.weightGiB)} GiB de pesos`):'',c.runtime!==start.runtime&&c.runtime?c.runtime:''].filter(Boolean).join(' · ')||c.difference)}));
+ return selected;
 }

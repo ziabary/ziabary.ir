@@ -154,7 +154,7 @@
         "label": [
           "فارسی",
           "Persian",
-          "Persa"
+          "persa"
         ]
       },
       {
@@ -162,7 +162,47 @@
         "label": [
           "انگلیسی",
           "English",
-          "Inglés"
+          "inglés"
+        ]
+      },
+      {
+        "value": "ar",
+        "label": [
+          "عربی",
+          "Arabic",
+          "árabe"
+        ]
+      },
+      {
+        "value": "de",
+        "label": [
+          "آلمانی",
+          "German",
+          "alemán"
+        ]
+      },
+      {
+        "value": "fr",
+        "label": [
+          "فرانسوی",
+          "French",
+          "francés"
+        ]
+      },
+      {
+        "value": "ru",
+        "label": [
+          "روسی",
+          "Russian",
+          "ruso"
+        ]
+      },
+      {
+        "value": "zh",
+        "label": [
+          "چینی",
+          "Chinese",
+          "chino"
         ]
       },
       {
@@ -170,7 +210,367 @@
         "label": [
           "اسپانیایی",
           "Spanish",
-          "Español"
+          "español"
+        ]
+      },
+      {
+        "value": "ja",
+        "label": [
+          "ژاپنی",
+          "Japanese",
+          "japonés"
+        ]
+      },
+      {
+        "value": "ko",
+        "label": [
+          "کره‌ای",
+          "Korean",
+          "coreano"
+        ]
+      },
+      {
+        "value": "pt",
+        "label": [
+          "پرتغالی",
+          "Portuguese",
+          "portugués"
+        ]
+      },
+      {
+        "value": "tr",
+        "label": [
+          "ترکی استانبولی",
+          "Turkish",
+          "turco"
+        ]
+      },
+      {
+        "value": "it",
+        "label": [
+          "ایتالیایی",
+          "Italian",
+          "italiano"
+        ]
+      },
+      {
+        "value": "hi",
+        "label": [
+          "هندی",
+          "Hindi",
+          "hindi"
+        ]
+      },
+      {
+        "value": "ur",
+        "label": [
+          "اردو",
+          "Urdu",
+          "urdu"
+        ]
+      },
+      {
+        "value": "bn",
+        "label": [
+          "بنگالی",
+          "Bangla",
+          "bengalí"
+        ]
+      },
+      {
+        "value": "ta",
+        "label": [
+          "تامیلی",
+          "Tamil",
+          "tamil"
+        ]
+      },
+      {
+        "value": "te",
+        "label": [
+          "تلوگویی",
+          "Telugu",
+          "telugu"
+        ]
+      },
+      {
+        "value": "gu",
+        "label": [
+          "گجراتی",
+          "Gujarati",
+          "guyaratí"
+        ]
+      },
+      {
+        "value": "mr",
+        "label": [
+          "مراتی",
+          "Marathi",
+          "maratí"
+        ]
+      },
+      {
+        "value": "vi",
+        "label": [
+          "ویتنامی",
+          "Vietnamese",
+          "vietnamita"
+        ]
+      },
+      {
+        "value": "th",
+        "label": [
+          "تایلندی",
+          "Thai",
+          "tailandés"
+        ]
+      },
+      {
+        "value": "id",
+        "label": [
+          "اندونزیایی",
+          "Indonesian",
+          "indonesio"
+        ]
+      },
+      {
+        "value": "ms",
+        "label": [
+          "مالایی",
+          "Malay",
+          "malayo"
+        ]
+      },
+      {
+        "value": "tl",
+        "label": [
+          "فیلیپینی",
+          "Filipino",
+          "filipino"
+        ]
+      },
+      {
+        "value": "nl",
+        "label": [
+          "هلندی",
+          "Dutch",
+          "neerlandés"
+        ]
+      },
+      {
+        "value": "pl",
+        "label": [
+          "لهستانی",
+          "Polish",
+          "polaco"
+        ]
+      },
+      {
+        "value": "cs",
+        "label": [
+          "چکی",
+          "Czech",
+          "checo"
+        ]
+      },
+      {
+        "value": "uk",
+        "label": [
+          "اوکراینی",
+          "Ukrainian",
+          "ucraniano"
+        ]
+      },
+      {
+        "value": "he",
+        "label": [
+          "عبری",
+          "Hebrew",
+          "hebreo"
+        ]
+      },
+      {
+        "value": "km",
+        "label": [
+          "خمری",
+          "Khmer",
+          "jemer"
+        ]
+      },
+      {
+        "value": "my",
+        "label": [
+          "برمه‌ای",
+          "Burmese",
+          "birmano"
+        ]
+      },
+      {
+        "value": "bo",
+        "label": [
+          "تبتی",
+          "Tibetan",
+          "tibetano"
+        ]
+      },
+      {
+        "value": "kk",
+        "label": [
+          "قزاقی",
+          "Kazakh",
+          "kazajo"
+        ]
+      },
+      {
+        "value": "mn",
+        "label": [
+          "مغولی",
+          "Mongolian",
+          "mongol"
+        ]
+      },
+      {
+        "value": "ug",
+        "label": [
+          "اویغوری",
+          "Uyghur",
+          "uigur"
+        ]
+      },
+      {
+        "value": "yue",
+        "label": [
+          "کانتونی",
+          "Cantonese",
+          "cantonés"
+        ]
+      },
+      {
+        "value": "zh-Hant",
+        "label": [
+          "چینی سنتی",
+          "Traditional Chinese",
+          "chino tradicional"
+        ]
+      },
+      {
+        "value": "sw",
+        "label": [
+          "سواحیلی",
+          "Swahili",
+          "suajili"
+        ]
+      },
+      {
+        "value": "sv",
+        "label": [
+          "سوئدی",
+          "Swedish",
+          "sueco"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "نروژی",
+          "Norwegian",
+          "noruego"
+        ]
+      },
+      {
+        "value": "da",
+        "label": [
+          "دانمارکی",
+          "Danish",
+          "danés"
+        ]
+      },
+      {
+        "value": "fi",
+        "label": [
+          "فنلاندی",
+          "Finnish",
+          "finés"
+        ]
+      },
+      {
+        "value": "el",
+        "label": [
+          "یونانی",
+          "Greek",
+          "griego"
+        ]
+      },
+      {
+        "value": "ro",
+        "label": [
+          "رومانیایی",
+          "Romanian",
+          "rumano"
+        ]
+      },
+      {
+        "value": "hu",
+        "label": [
+          "مجاری",
+          "Hungarian",
+          "húngaro"
+        ]
+      },
+      {
+        "value": "sk",
+        "label": [
+          "اسلواکی",
+          "Slovak",
+          "eslovaco"
+        ]
+      },
+      {
+        "value": "bg",
+        "label": [
+          "بلغاری",
+          "Bulgarian",
+          "búlgaro"
+        ]
+      },
+      {
+        "value": "sr",
+        "label": [
+          "صربی",
+          "Serbian",
+          "serbio"
+        ]
+      },
+      {
+        "value": "hr",
+        "label": [
+          "کروات",
+          "Croatian",
+          "croata"
+        ]
+      },
+      {
+        "value": "az",
+        "label": [
+          "ترکی آذربایجانی",
+          "Azerbaijani",
+          "azerbaiyano"
+        ]
+      },
+      {
+        "value": "ku",
+        "label": [
+          "کردی",
+          "Kurdish",
+          "kurdo"
+        ]
+      },
+      {
+        "value": "ps",
+        "label": [
+          "پشتو",
+          "Pashto",
+          "pastún"
         ]
       },
       {
@@ -203,6 +603,1551 @@
     "when": null
   },
   {
+    "id": "sourceLanguages",
+    "step": 0,
+    "title": [
+      "زبان‌های متن ورودی را انتخاب کنید",
+      "Select the input languages",
+      "Seleccione los idiomas de entrada"
+    ],
+    "why": [
+      "می‌توانید نام زبان را جست‌وجو و چند زبان را انتخاب کنید.",
+      "Search for a language and select one or several.",
+      "Busque y seleccione uno o varios idiomas."
+    ],
+    "help": [
+      "می‌توانید نام زبان را جست‌وجو و چند زبان را انتخاب کنید.",
+      "Search for a language and select one or several.",
+      "Busque y seleccione uno o varios idiomas."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "fa",
+        "label": [
+          "فارسی",
+          "Persian",
+          "persa"
+        ]
+      },
+      {
+        "value": "en",
+        "label": [
+          "انگلیسی",
+          "English",
+          "inglés"
+        ]
+      },
+      {
+        "value": "ar",
+        "label": [
+          "عربی",
+          "Arabic",
+          "árabe"
+        ]
+      },
+      {
+        "value": "de",
+        "label": [
+          "آلمانی",
+          "German",
+          "alemán"
+        ]
+      },
+      {
+        "value": "fr",
+        "label": [
+          "فرانسوی",
+          "French",
+          "francés"
+        ]
+      },
+      {
+        "value": "ru",
+        "label": [
+          "روسی",
+          "Russian",
+          "ruso"
+        ]
+      },
+      {
+        "value": "zh",
+        "label": [
+          "چینی",
+          "Chinese",
+          "chino"
+        ]
+      },
+      {
+        "value": "es",
+        "label": [
+          "اسپانیایی",
+          "Spanish",
+          "español"
+        ]
+      },
+      {
+        "value": "ja",
+        "label": [
+          "ژاپنی",
+          "Japanese",
+          "japonés"
+        ]
+      },
+      {
+        "value": "ko",
+        "label": [
+          "کره‌ای",
+          "Korean",
+          "coreano"
+        ]
+      },
+      {
+        "value": "pt",
+        "label": [
+          "پرتغالی",
+          "Portuguese",
+          "portugués"
+        ]
+      },
+      {
+        "value": "tr",
+        "label": [
+          "ترکی استانبولی",
+          "Turkish",
+          "turco"
+        ]
+      },
+      {
+        "value": "it",
+        "label": [
+          "ایتالیایی",
+          "Italian",
+          "italiano"
+        ]
+      },
+      {
+        "value": "hi",
+        "label": [
+          "هندی",
+          "Hindi",
+          "hindi"
+        ]
+      },
+      {
+        "value": "ur",
+        "label": [
+          "اردو",
+          "Urdu",
+          "urdu"
+        ]
+      },
+      {
+        "value": "bn",
+        "label": [
+          "بنگالی",
+          "Bangla",
+          "bengalí"
+        ]
+      },
+      {
+        "value": "ta",
+        "label": [
+          "تامیلی",
+          "Tamil",
+          "tamil"
+        ]
+      },
+      {
+        "value": "te",
+        "label": [
+          "تلوگویی",
+          "Telugu",
+          "telugu"
+        ]
+      },
+      {
+        "value": "gu",
+        "label": [
+          "گجراتی",
+          "Gujarati",
+          "guyaratí"
+        ]
+      },
+      {
+        "value": "mr",
+        "label": [
+          "مراتی",
+          "Marathi",
+          "maratí"
+        ]
+      },
+      {
+        "value": "vi",
+        "label": [
+          "ویتنامی",
+          "Vietnamese",
+          "vietnamita"
+        ]
+      },
+      {
+        "value": "th",
+        "label": [
+          "تایلندی",
+          "Thai",
+          "tailandés"
+        ]
+      },
+      {
+        "value": "id",
+        "label": [
+          "اندونزیایی",
+          "Indonesian",
+          "indonesio"
+        ]
+      },
+      {
+        "value": "ms",
+        "label": [
+          "مالایی",
+          "Malay",
+          "malayo"
+        ]
+      },
+      {
+        "value": "tl",
+        "label": [
+          "فیلیپینی",
+          "Filipino",
+          "filipino"
+        ]
+      },
+      {
+        "value": "nl",
+        "label": [
+          "هلندی",
+          "Dutch",
+          "neerlandés"
+        ]
+      },
+      {
+        "value": "pl",
+        "label": [
+          "لهستانی",
+          "Polish",
+          "polaco"
+        ]
+      },
+      {
+        "value": "cs",
+        "label": [
+          "چکی",
+          "Czech",
+          "checo"
+        ]
+      },
+      {
+        "value": "uk",
+        "label": [
+          "اوکراینی",
+          "Ukrainian",
+          "ucraniano"
+        ]
+      },
+      {
+        "value": "he",
+        "label": [
+          "عبری",
+          "Hebrew",
+          "hebreo"
+        ]
+      },
+      {
+        "value": "km",
+        "label": [
+          "خمری",
+          "Khmer",
+          "jemer"
+        ]
+      },
+      {
+        "value": "my",
+        "label": [
+          "برمه‌ای",
+          "Burmese",
+          "birmano"
+        ]
+      },
+      {
+        "value": "bo",
+        "label": [
+          "تبتی",
+          "Tibetan",
+          "tibetano"
+        ]
+      },
+      {
+        "value": "kk",
+        "label": [
+          "قزاقی",
+          "Kazakh",
+          "kazajo"
+        ]
+      },
+      {
+        "value": "mn",
+        "label": [
+          "مغولی",
+          "Mongolian",
+          "mongol"
+        ]
+      },
+      {
+        "value": "ug",
+        "label": [
+          "اویغوری",
+          "Uyghur",
+          "uigur"
+        ]
+      },
+      {
+        "value": "yue",
+        "label": [
+          "کانتونی",
+          "Cantonese",
+          "cantonés"
+        ]
+      },
+      {
+        "value": "zh-Hant",
+        "label": [
+          "چینی سنتی",
+          "Traditional Chinese",
+          "chino tradicional"
+        ]
+      },
+      {
+        "value": "sw",
+        "label": [
+          "سواحیلی",
+          "Swahili",
+          "suajili"
+        ]
+      },
+      {
+        "value": "sv",
+        "label": [
+          "سوئدی",
+          "Swedish",
+          "sueco"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "نروژی",
+          "Norwegian",
+          "noruego"
+        ]
+      },
+      {
+        "value": "da",
+        "label": [
+          "دانمارکی",
+          "Danish",
+          "danés"
+        ]
+      },
+      {
+        "value": "fi",
+        "label": [
+          "فنلاندی",
+          "Finnish",
+          "finés"
+        ]
+      },
+      {
+        "value": "el",
+        "label": [
+          "یونانی",
+          "Greek",
+          "griego"
+        ]
+      },
+      {
+        "value": "ro",
+        "label": [
+          "رومانیایی",
+          "Romanian",
+          "rumano"
+        ]
+      },
+      {
+        "value": "hu",
+        "label": [
+          "مجاری",
+          "Hungarian",
+          "húngaro"
+        ]
+      },
+      {
+        "value": "sk",
+        "label": [
+          "اسلواکی",
+          "Slovak",
+          "eslovaco"
+        ]
+      },
+      {
+        "value": "bg",
+        "label": [
+          "بلغاری",
+          "Bulgarian",
+          "búlgaro"
+        ]
+      },
+      {
+        "value": "sr",
+        "label": [
+          "صربی",
+          "Serbian",
+          "serbio"
+        ]
+      },
+      {
+        "value": "hr",
+        "label": [
+          "کروات",
+          "Croatian",
+          "croata"
+        ]
+      },
+      {
+        "value": "az",
+        "label": [
+          "ترکی آذربایجانی",
+          "Azerbaijani",
+          "azerbaiyano"
+        ]
+      },
+      {
+        "value": "ku",
+        "label": [
+          "کردی",
+          "Kurdish",
+          "kurdo"
+        ]
+      },
+      {
+        "value": "ps",
+        "label": [
+          "پشتو",
+          "Pashto",
+          "pastún"
+        ]
+      },
+      {
+        "value": "aa",
+        "label": [
+          "آفاری",
+          "Afar",
+          "afar"
+        ]
+      },
+      {
+        "value": "ab",
+        "label": [
+          "آبخازی",
+          "Abkhazian",
+          "abjasio"
+        ]
+      },
+      {
+        "value": "af",
+        "label": [
+          "آفریکانس",
+          "Afrikaans",
+          "afrikáans"
+        ]
+      },
+      {
+        "value": "ak",
+        "label": [
+          "آکان",
+          "Akan",
+          "akan"
+        ]
+      },
+      {
+        "value": "am",
+        "label": [
+          "امهری",
+          "Amharic",
+          "amárico"
+        ]
+      },
+      {
+        "value": "ar-EG",
+        "label": [
+          "عربی (مصر)",
+          "Arabic (Egypt)",
+          "árabe (Egipto)"
+        ]
+      },
+      {
+        "value": "ar-MA",
+        "label": [
+          "عربی (مراکش)",
+          "Arabic (Morocco)",
+          "árabe (Marruecos)"
+        ]
+      },
+      {
+        "value": "as",
+        "label": [
+          "آسامی",
+          "Assamese",
+          "asamés"
+        ]
+      },
+      {
+        "value": "av",
+        "label": [
+          "آواری",
+          "Avaric",
+          "avar"
+        ]
+      },
+      {
+        "value": "ay",
+        "label": [
+          "آیمارایی",
+          "Aymara",
+          "aimara"
+        ]
+      },
+      {
+        "value": "ba",
+        "label": [
+          "باشقیری",
+          "Bashkir",
+          "baskir"
+        ]
+      },
+      {
+        "value": "be",
+        "label": [
+          "بلاروسی",
+          "Belarusian",
+          "bielorruso"
+        ]
+      },
+      {
+        "value": "bi",
+        "label": [
+          "بیسلاما",
+          "Bislama",
+          "bislama"
+        ]
+      },
+      {
+        "value": "bm",
+        "label": [
+          "بامبارایی",
+          "Bambara",
+          "bambara"
+        ]
+      },
+      {
+        "value": "bm-Nkoo",
+        "label": [
+          "بامبارایی (اِن کو)",
+          "Bambara (N’Ko)",
+          "bambara (n’ko)"
+        ]
+      },
+      {
+        "value": "br",
+        "label": [
+          "برتون",
+          "Breton",
+          "bretón"
+        ]
+      },
+      {
+        "value": "bs",
+        "label": [
+          "بوسنیایی",
+          "Bosnian",
+          "bosnio"
+        ]
+      },
+      {
+        "value": "ca",
+        "label": [
+          "کاتالان",
+          "Catalan",
+          "catalán"
+        ]
+      },
+      {
+        "value": "ce",
+        "label": [
+          "چچنی",
+          "Chechen",
+          "checheno"
+        ]
+      },
+      {
+        "value": "ch",
+        "label": [
+          "چامورویی",
+          "Chamorro",
+          "chamorro"
+        ]
+      },
+      {
+        "value": "co",
+        "label": [
+          "کورسی",
+          "Corsican",
+          "corso"
+        ]
+      },
+      {
+        "value": "cv",
+        "label": [
+          "چوواشی",
+          "Chuvash",
+          "chuvasio"
+        ]
+      },
+      {
+        "value": "cy",
+        "label": [
+          "ولزی",
+          "Welsh",
+          "galés"
+        ]
+      },
+      {
+        "value": "dv",
+        "label": [
+          "دیوهی",
+          "Divehi",
+          "divehi"
+        ]
+      },
+      {
+        "value": "dz",
+        "label": [
+          "دزونگخا",
+          "Dzongkha",
+          "dzongkha"
+        ]
+      },
+      {
+        "value": "ee",
+        "label": [
+          "اوه‌ای",
+          "Ewe",
+          "ewé"
+        ]
+      },
+      {
+        "value": "eo",
+        "label": [
+          "اسپرانتو",
+          "Esperanto",
+          "esperanto"
+        ]
+      },
+      {
+        "value": "et",
+        "label": [
+          "استونیایی",
+          "Estonian",
+          "estonio"
+        ]
+      },
+      {
+        "value": "eu",
+        "label": [
+          "باسکی",
+          "Basque",
+          "euskera"
+        ]
+      },
+      {
+        "value": "fa-AF",
+        "label": [
+          "دری",
+          "Dari",
+          "darí"
+        ]
+      },
+      {
+        "value": "ff",
+        "label": [
+          "فولانی",
+          "Fula",
+          "fula"
+        ]
+      },
+      {
+        "value": "fj",
+        "label": [
+          "فیجیایی",
+          "Fijian",
+          "fiyiano"
+        ]
+      },
+      {
+        "value": "fo",
+        "label": [
+          "فارویی",
+          "Faroese",
+          "feroés"
+        ]
+      },
+      {
+        "value": "fr-CA",
+        "label": [
+          "فرانسوی کانادا",
+          "Canadian French",
+          "francés canadiense"
+        ]
+      },
+      {
+        "value": "fy",
+        "label": [
+          "فریسی غربی",
+          "Western Frisian",
+          "frisón occidental"
+        ]
+      },
+      {
+        "value": "ga",
+        "label": [
+          "ایرلندی",
+          "Irish",
+          "irlandés"
+        ]
+      },
+      {
+        "value": "gd",
+        "label": [
+          "گیلی اسکاتلندی",
+          "Scottish Gaelic",
+          "gaélico escocés"
+        ]
+      },
+      {
+        "value": "gl",
+        "label": [
+          "گالیسیایی",
+          "Galician",
+          "gallego"
+        ]
+      },
+      {
+        "value": "gn",
+        "label": [
+          "گوارانی",
+          "Guarani",
+          "guaraní"
+        ]
+      },
+      {
+        "value": "gv",
+        "label": [
+          "مانی",
+          "Manx",
+          "manés"
+        ]
+      },
+      {
+        "value": "ha",
+        "label": [
+          "هوسایی",
+          "Hausa",
+          "hausa"
+        ]
+      },
+      {
+        "value": "ho",
+        "label": [
+          "موتویی هیری",
+          "Hiri Motu",
+          "hiri motu"
+        ]
+      },
+      {
+        "value": "ht",
+        "label": [
+          "هائیتیایی",
+          "Haitian Creole",
+          "criollo haitiano"
+        ]
+      },
+      {
+        "value": "hy",
+        "label": [
+          "ارمنی",
+          "Armenian",
+          "armenio"
+        ]
+      },
+      {
+        "value": "ig",
+        "label": [
+          "ایگبویی",
+          "Igbo",
+          "igbo"
+        ]
+      },
+      {
+        "value": "is",
+        "label": [
+          "ایسلندی",
+          "Icelandic",
+          "islandés"
+        ]
+      },
+      {
+        "value": "iu",
+        "label": [
+          "اینوکتیتوت",
+          "Inuktitut",
+          "inuktitut"
+        ]
+      },
+      {
+        "value": "iu-Latn",
+        "label": [
+          "اینوکتیتوت (لاتین)",
+          "Inuktitut (Latin)",
+          "inuktitut (latino)"
+        ]
+      },
+      {
+        "value": "jv",
+        "label": [
+          "جاوه‌ای",
+          "Javanese",
+          "javanés"
+        ]
+      },
+      {
+        "value": "ka",
+        "label": [
+          "گرجی",
+          "Georgian",
+          "georgiano"
+        ]
+      },
+      {
+        "value": "kg",
+        "label": [
+          "کنگویی",
+          "Kongo",
+          "kongo"
+        ]
+      },
+      {
+        "value": "ki",
+        "label": [
+          "کیکویویی",
+          "Kikuyu",
+          "kikuyu"
+        ]
+      },
+      {
+        "value": "kj",
+        "label": [
+          "کوانیاما",
+          "Kuanyama",
+          "kuanyama"
+        ]
+      },
+      {
+        "value": "kl",
+        "label": [
+          "گرینلندی",
+          "Kalaallisut",
+          "groenlandés"
+        ]
+      },
+      {
+        "value": "kn",
+        "label": [
+          "کانارا",
+          "Kannada",
+          "canarés"
+        ]
+      },
+      {
+        "value": "kr",
+        "label": [
+          "کانوریایی",
+          "Kanuri",
+          "kanuri"
+        ]
+      },
+      {
+        "value": "ks",
+        "label": [
+          "کشمیری",
+          "Kashmiri",
+          "cachemir"
+        ]
+      },
+      {
+        "value": "ks-Deva",
+        "label": [
+          "کشمیری (دوناگری)",
+          "Kashmiri (Devanagari)",
+          "cachemir (devanagari)"
+        ]
+      },
+      {
+        "value": "kv",
+        "label": [
+          "کومیایی",
+          "Komi",
+          "komi"
+        ]
+      },
+      {
+        "value": "kw",
+        "label": [
+          "کورنی",
+          "Cornish",
+          "córnico"
+        ]
+      },
+      {
+        "value": "ky",
+        "label": [
+          "قرقیزی",
+          "Kyrgyz",
+          "kirguís"
+        ]
+      },
+      {
+        "value": "la",
+        "label": [
+          "لاتین",
+          "Latin",
+          "latín"
+        ]
+      },
+      {
+        "value": "lb",
+        "label": [
+          "لوگزامبورگی",
+          "Luxembourgish",
+          "luxemburgués"
+        ]
+      },
+      {
+        "value": "lg",
+        "label": [
+          "گاندایی",
+          "Ganda",
+          "ganda"
+        ]
+      },
+      {
+        "value": "li",
+        "label": [
+          "لیمبورگی",
+          "Limburgish",
+          "limburgués"
+        ]
+      },
+      {
+        "value": "ln",
+        "label": [
+          "لینگالا",
+          "Lingala",
+          "lingala"
+        ]
+      },
+      {
+        "value": "lo",
+        "label": [
+          "لائوسی",
+          "Lao",
+          "lao"
+        ]
+      },
+      {
+        "value": "lt",
+        "label": [
+          "لیتوانیایی",
+          "Lithuanian",
+          "lituano"
+        ]
+      },
+      {
+        "value": "lu",
+        "label": [
+          "لوبایی‐کاتانگا",
+          "Luba-Katanga",
+          "luba-katanga"
+        ]
+      },
+      {
+        "value": "lv",
+        "label": [
+          "لتونیایی",
+          "Latvian",
+          "letón"
+        ]
+      },
+      {
+        "value": "mg",
+        "label": [
+          "مالاگاسی",
+          "Malagasy",
+          "malgache"
+        ]
+      },
+      {
+        "value": "mh",
+        "label": [
+          "مارشالی",
+          "Marshallese",
+          "marshalés"
+        ]
+      },
+      {
+        "value": "mi",
+        "label": [
+          "مائوری",
+          "Māori",
+          "maorí"
+        ]
+      },
+      {
+        "value": "mk",
+        "label": [
+          "مقدونی",
+          "Macedonian",
+          "macedonio"
+        ]
+      },
+      {
+        "value": "ml",
+        "label": [
+          "مالایالامی",
+          "Malayalam",
+          "malayálam"
+        ]
+      },
+      {
+        "value": "ms-Arab",
+        "label": [
+          "مالایی (عربی)",
+          "Malay (Arabic)",
+          "malayo (árabe)"
+        ]
+      },
+      {
+        "value": "mt",
+        "label": [
+          "مالتی",
+          "Maltese",
+          "maltés"
+        ]
+      },
+      {
+        "value": "nb",
+        "label": [
+          "نروژی بوک‌مُل",
+          "Norwegian Bokmål",
+          "noruego bokmal"
+        ]
+      },
+      {
+        "value": "nd",
+        "label": [
+          "انده‌بله‌ای شمالی",
+          "North Ndebele",
+          "ndebele septentrional"
+        ]
+      },
+      {
+        "value": "ne",
+        "label": [
+          "نپالی",
+          "Nepali",
+          "nepalí"
+        ]
+      },
+      {
+        "value": "nn",
+        "label": [
+          "نروژی نی‌نُشک",
+          "Norwegian Nynorsk",
+          "noruego nynorsk"
+        ]
+      },
+      {
+        "value": "nr",
+        "label": [
+          "انده‌بله‌ای جنوبی",
+          "South Ndebele",
+          "ndebele meridional"
+        ]
+      },
+      {
+        "value": "nv",
+        "label": [
+          "ناواهویی",
+          "Navajo",
+          "navajo"
+        ]
+      },
+      {
+        "value": "ny",
+        "label": [
+          "نیانجایی",
+          "Nyanja",
+          "nyanja"
+        ]
+      },
+      {
+        "value": "oc",
+        "label": [
+          "اکسیتان",
+          "Occitan",
+          "occitano"
+        ]
+      },
+      {
+        "value": "oj",
+        "label": [
+          "اوجیبوایی",
+          "Ojibwa",
+          "ojibwa"
+        ]
+      },
+      {
+        "value": "om",
+        "label": [
+          "اورومویی",
+          "Oromo",
+          "oromo"
+        ]
+      },
+      {
+        "value": "or",
+        "label": [
+          "اوریه‌ای",
+          "Odia",
+          "oriya"
+        ]
+      },
+      {
+        "value": "os",
+        "label": [
+          "آسی",
+          "Ossetic",
+          "osético"
+        ]
+      },
+      {
+        "value": "pa",
+        "label": [
+          "پنجابی",
+          "Punjabi",
+          "punyabí"
+        ]
+      },
+      {
+        "value": "pa-Arab",
+        "label": [
+          "پنجابی (عربی)",
+          "Punjabi (Arabic)",
+          "punyabí (árabe)"
+        ]
+      },
+      {
+        "value": "pt-BR",
+        "label": [
+          "پرتغالی برزیل",
+          "Brazilian Portuguese",
+          "portugués de Brasil"
+        ]
+      },
+      {
+        "value": "pt-PT",
+        "label": [
+          "پرتغالی اروپا",
+          "European Portuguese",
+          "portugués de Portugal"
+        ]
+      },
+      {
+        "value": "qu",
+        "label": [
+          "کچوایی",
+          "Quechua",
+          "quechua"
+        ]
+      },
+      {
+        "value": "rm",
+        "label": [
+          "رومانش",
+          "Romansh",
+          "romanche"
+        ]
+      },
+      {
+        "value": "rn",
+        "label": [
+          "روندیایی",
+          "Rundi",
+          "kirundi"
+        ]
+      },
+      {
+        "value": "rw",
+        "label": [
+          "کینیارواندایی",
+          "Kinyarwanda",
+          "kinyarwanda"
+        ]
+      },
+      {
+        "value": "sa",
+        "label": [
+          "سانسکریت",
+          "Sanskrit",
+          "sánscrito"
+        ]
+      },
+      {
+        "value": "sc",
+        "label": [
+          "ساردینیایی",
+          "Sardinian",
+          "sardo"
+        ]
+      },
+      {
+        "value": "sd",
+        "label": [
+          "سندی",
+          "Sindhi",
+          "sindi"
+        ]
+      },
+      {
+        "value": "sd-Deva",
+        "label": [
+          "سندی (دوناگری)",
+          "Sindhi (Devanagari)",
+          "sindi (devanagari)"
+        ]
+      },
+      {
+        "value": "se",
+        "label": [
+          "سامی شمالی",
+          "Northern Sami",
+          "sami septentrional"
+        ]
+      },
+      {
+        "value": "sg",
+        "label": [
+          "سانگو",
+          "Sango",
+          "sango"
+        ]
+      },
+      {
+        "value": "sh",
+        "label": [
+          "صربی (لاتین)",
+          "Serbian (Latin)",
+          "serbio (latino)"
+        ]
+      },
+      {
+        "value": "si",
+        "label": [
+          "سینهالی",
+          "Sinhala",
+          "cingalés"
+        ]
+      },
+      {
+        "value": "sl",
+        "label": [
+          "اسلوونیایی",
+          "Slovenian",
+          "esloveno"
+        ]
+      },
+      {
+        "value": "sm",
+        "label": [
+          "ساموآیی",
+          "Samoan",
+          "samoano"
+        ]
+      },
+      {
+        "value": "sn",
+        "label": [
+          "شونایی",
+          "Shona",
+          "shona"
+        ]
+      },
+      {
+        "value": "so",
+        "label": [
+          "سومالیایی",
+          "Somali",
+          "somalí"
+        ]
+      },
+      {
+        "value": "sq",
+        "label": [
+          "آلبانیایی",
+          "Albanian",
+          "albanés"
+        ]
+      },
+      {
+        "value": "sr-Cyrl",
+        "label": [
+          "صربی (سیریلی)",
+          "Serbian (Cyrillic)",
+          "serbio (cirílico)"
+        ]
+      },
+      {
+        "value": "sr-Latn",
+        "label": [
+          "صربی (لاتین)",
+          "Serbian (Latin)",
+          "serbio (latino)"
+        ]
+      },
+      {
+        "value": "ss",
+        "label": [
+          "سوازیایی",
+          "Swati",
+          "suazi"
+        ]
+      },
+      {
+        "value": "st",
+        "label": [
+          "سوتوی جنوبی",
+          "Southern Sotho",
+          "sotho meridional"
+        ]
+      },
+      {
+        "value": "su",
+        "label": [
+          "سوندایی",
+          "Sundanese",
+          "sundanés"
+        ]
+      },
+      {
+        "value": "sw-KE",
+        "label": [
+          "سواحیلی (کنیا)",
+          "Swahili (Kenya)",
+          "suajili (Kenia)"
+        ]
+      },
+      {
+        "value": "sw-TZ",
+        "label": [
+          "سواحیلی (تانزانیا)",
+          "Swahili (Tanzania)",
+          "suajili (Tanzania)"
+        ]
+      },
+      {
+        "value": "tg",
+        "label": [
+          "تاجیکی",
+          "Tajik",
+          "tayiko"
+        ]
+      },
+      {
+        "value": "ti",
+        "label": [
+          "تیگرینیایی",
+          "Tigrinya",
+          "tigriña"
+        ]
+      },
+      {
+        "value": "tk",
+        "label": [
+          "ترکمنی",
+          "Turkmen",
+          "turcomano"
+        ]
+      },
+      {
+        "value": "tn",
+        "label": [
+          "تسوانایی",
+          "Tswana",
+          "setsuana"
+        ]
+      },
+      {
+        "value": "to",
+        "label": [
+          "تونگایی",
+          "Tongan",
+          "tongano"
+        ]
+      },
+      {
+        "value": "ts",
+        "label": [
+          "تسونگایی",
+          "Tsonga",
+          "tsonga"
+        ]
+      },
+      {
+        "value": "tt",
+        "label": [
+          "تاتاری",
+          "Tatar",
+          "tártaro"
+        ]
+      },
+      {
+        "value": "tw",
+        "label": [
+          "آکان",
+          "Akan",
+          "akan"
+        ]
+      },
+      {
+        "value": "ty",
+        "label": [
+          "تاهیتیایی",
+          "Tahitian",
+          "tahitiano"
+        ]
+      },
+      {
+        "value": "uz",
+        "label": [
+          "ازبکی",
+          "Uzbek",
+          "uzbeko"
+        ]
+      },
+      {
+        "value": "ve",
+        "label": [
+          "وندایی",
+          "Venda",
+          "venda"
+        ]
+      },
+      {
+        "value": "wa",
+        "label": [
+          "والونی",
+          "Walloon",
+          "valón"
+        ]
+      },
+      {
+        "value": "wo",
+        "label": [
+          "ولوفی",
+          "Wolof",
+          "wólof"
+        ]
+      },
+      {
+        "value": "xh",
+        "label": [
+          "خوسایی",
+          "Xhosa",
+          "xhosa"
+        ]
+      },
+      {
+        "value": "yi",
+        "label": [
+          "یدی",
+          "Yiddish",
+          "yidis"
+        ]
+      },
+      {
+        "value": "yo",
+        "label": [
+          "یوروبایی",
+          "Yoruba",
+          "yoruba"
+        ]
+      },
+      {
+        "value": "za",
+        "label": [
+          "چوانگی",
+          "Zhuang",
+          "zhuang"
+        ]
+      },
+      {
+        "value": "zh-CN",
+        "label": [
+          "چینی (چین)",
+          "Chinese (China)",
+          "chino (China)"
+        ]
+      },
+      {
+        "value": "zh-TW",
+        "label": [
+          "چینی (تایوان)",
+          "Chinese (Taiwan)",
+          "chino (Taiwán)"
+        ]
+      },
+      {
+        "value": "zu",
+        "label": [
+          "زولویی",
+          "Zulu",
+          "zulú"
+        ]
+      }
+    ],
+    "kind": "multi",
+    "unit": null,
+    "when": "sourceLanguages"
+  },
+  {
     "id": "outputLanguage",
     "step": 0,
     "title": [
@@ -227,7 +2172,7 @@
         "label": [
           "فارسی",
           "Persian",
-          "Persa"
+          "persa"
         ]
       },
       {
@@ -235,7 +2180,47 @@
         "label": [
           "انگلیسی",
           "English",
-          "Inglés"
+          "inglés"
+        ]
+      },
+      {
+        "value": "ar",
+        "label": [
+          "عربی",
+          "Arabic",
+          "árabe"
+        ]
+      },
+      {
+        "value": "de",
+        "label": [
+          "آلمانی",
+          "German",
+          "alemán"
+        ]
+      },
+      {
+        "value": "fr",
+        "label": [
+          "فرانسوی",
+          "French",
+          "francés"
+        ]
+      },
+      {
+        "value": "ru",
+        "label": [
+          "روسی",
+          "Russian",
+          "ruso"
+        ]
+      },
+      {
+        "value": "zh",
+        "label": [
+          "چینی",
+          "Chinese",
+          "chino"
         ]
       },
       {
@@ -243,7 +2228,367 @@
         "label": [
           "اسپانیایی",
           "Spanish",
-          "Español"
+          "español"
+        ]
+      },
+      {
+        "value": "ja",
+        "label": [
+          "ژاپنی",
+          "Japanese",
+          "japonés"
+        ]
+      },
+      {
+        "value": "ko",
+        "label": [
+          "کره‌ای",
+          "Korean",
+          "coreano"
+        ]
+      },
+      {
+        "value": "pt",
+        "label": [
+          "پرتغالی",
+          "Portuguese",
+          "portugués"
+        ]
+      },
+      {
+        "value": "tr",
+        "label": [
+          "ترکی استانبولی",
+          "Turkish",
+          "turco"
+        ]
+      },
+      {
+        "value": "it",
+        "label": [
+          "ایتالیایی",
+          "Italian",
+          "italiano"
+        ]
+      },
+      {
+        "value": "hi",
+        "label": [
+          "هندی",
+          "Hindi",
+          "hindi"
+        ]
+      },
+      {
+        "value": "ur",
+        "label": [
+          "اردو",
+          "Urdu",
+          "urdu"
+        ]
+      },
+      {
+        "value": "bn",
+        "label": [
+          "بنگالی",
+          "Bangla",
+          "bengalí"
+        ]
+      },
+      {
+        "value": "ta",
+        "label": [
+          "تامیلی",
+          "Tamil",
+          "tamil"
+        ]
+      },
+      {
+        "value": "te",
+        "label": [
+          "تلوگویی",
+          "Telugu",
+          "telugu"
+        ]
+      },
+      {
+        "value": "gu",
+        "label": [
+          "گجراتی",
+          "Gujarati",
+          "guyaratí"
+        ]
+      },
+      {
+        "value": "mr",
+        "label": [
+          "مراتی",
+          "Marathi",
+          "maratí"
+        ]
+      },
+      {
+        "value": "vi",
+        "label": [
+          "ویتنامی",
+          "Vietnamese",
+          "vietnamita"
+        ]
+      },
+      {
+        "value": "th",
+        "label": [
+          "تایلندی",
+          "Thai",
+          "tailandés"
+        ]
+      },
+      {
+        "value": "id",
+        "label": [
+          "اندونزیایی",
+          "Indonesian",
+          "indonesio"
+        ]
+      },
+      {
+        "value": "ms",
+        "label": [
+          "مالایی",
+          "Malay",
+          "malayo"
+        ]
+      },
+      {
+        "value": "tl",
+        "label": [
+          "فیلیپینی",
+          "Filipino",
+          "filipino"
+        ]
+      },
+      {
+        "value": "nl",
+        "label": [
+          "هلندی",
+          "Dutch",
+          "neerlandés"
+        ]
+      },
+      {
+        "value": "pl",
+        "label": [
+          "لهستانی",
+          "Polish",
+          "polaco"
+        ]
+      },
+      {
+        "value": "cs",
+        "label": [
+          "چکی",
+          "Czech",
+          "checo"
+        ]
+      },
+      {
+        "value": "uk",
+        "label": [
+          "اوکراینی",
+          "Ukrainian",
+          "ucraniano"
+        ]
+      },
+      {
+        "value": "he",
+        "label": [
+          "عبری",
+          "Hebrew",
+          "hebreo"
+        ]
+      },
+      {
+        "value": "km",
+        "label": [
+          "خمری",
+          "Khmer",
+          "jemer"
+        ]
+      },
+      {
+        "value": "my",
+        "label": [
+          "برمه‌ای",
+          "Burmese",
+          "birmano"
+        ]
+      },
+      {
+        "value": "bo",
+        "label": [
+          "تبتی",
+          "Tibetan",
+          "tibetano"
+        ]
+      },
+      {
+        "value": "kk",
+        "label": [
+          "قزاقی",
+          "Kazakh",
+          "kazajo"
+        ]
+      },
+      {
+        "value": "mn",
+        "label": [
+          "مغولی",
+          "Mongolian",
+          "mongol"
+        ]
+      },
+      {
+        "value": "ug",
+        "label": [
+          "اویغوری",
+          "Uyghur",
+          "uigur"
+        ]
+      },
+      {
+        "value": "yue",
+        "label": [
+          "کانتونی",
+          "Cantonese",
+          "cantonés"
+        ]
+      },
+      {
+        "value": "zh-Hant",
+        "label": [
+          "چینی سنتی",
+          "Traditional Chinese",
+          "chino tradicional"
+        ]
+      },
+      {
+        "value": "sw",
+        "label": [
+          "سواحیلی",
+          "Swahili",
+          "suajili"
+        ]
+      },
+      {
+        "value": "sv",
+        "label": [
+          "سوئدی",
+          "Swedish",
+          "sueco"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "نروژی",
+          "Norwegian",
+          "noruego"
+        ]
+      },
+      {
+        "value": "da",
+        "label": [
+          "دانمارکی",
+          "Danish",
+          "danés"
+        ]
+      },
+      {
+        "value": "fi",
+        "label": [
+          "فنلاندی",
+          "Finnish",
+          "finés"
+        ]
+      },
+      {
+        "value": "el",
+        "label": [
+          "یونانی",
+          "Greek",
+          "griego"
+        ]
+      },
+      {
+        "value": "ro",
+        "label": [
+          "رومانیایی",
+          "Romanian",
+          "rumano"
+        ]
+      },
+      {
+        "value": "hu",
+        "label": [
+          "مجاری",
+          "Hungarian",
+          "húngaro"
+        ]
+      },
+      {
+        "value": "sk",
+        "label": [
+          "اسلواکی",
+          "Slovak",
+          "eslovaco"
+        ]
+      },
+      {
+        "value": "bg",
+        "label": [
+          "بلغاری",
+          "Bulgarian",
+          "búlgaro"
+        ]
+      },
+      {
+        "value": "sr",
+        "label": [
+          "صربی",
+          "Serbian",
+          "serbio"
+        ]
+      },
+      {
+        "value": "hr",
+        "label": [
+          "کروات",
+          "Croatian",
+          "croata"
+        ]
+      },
+      {
+        "value": "az",
+        "label": [
+          "ترکی آذربایجانی",
+          "Azerbaijani",
+          "azerbaiyano"
+        ]
+      },
+      {
+        "value": "ku",
+        "label": [
+          "کردی",
+          "Kurdish",
+          "kurdo"
+        ]
+      },
+      {
+        "value": "ps",
+        "label": [
+          "پشتو",
+          "Pashto",
+          "pastún"
         ]
       },
       {
@@ -274,6 +2619,1551 @@
     "kind": "choice",
     "unit": null,
     "when": null
+  },
+  {
+    "id": "outputLanguages",
+    "step": 0,
+    "title": [
+      "پاسخ را به کدام زبان‌ها لازم دارید؟",
+      "Which output languages do you need?",
+      "¿En qué idiomas necesita la salida?"
+    ],
+    "why": [
+      "می‌توانید نام زبان را جست‌وجو و چند زبان را انتخاب کنید.",
+      "Search for a language and select one or several.",
+      "Busque y seleccione uno o varios idiomas."
+    ],
+    "help": [
+      "می‌توانید نام زبان را جست‌وجو و چند زبان را انتخاب کنید.",
+      "Search for a language and select one or several.",
+      "Busque y seleccione uno o varios idiomas."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "fa",
+        "label": [
+          "فارسی",
+          "Persian",
+          "persa"
+        ]
+      },
+      {
+        "value": "en",
+        "label": [
+          "انگلیسی",
+          "English",
+          "inglés"
+        ]
+      },
+      {
+        "value": "ar",
+        "label": [
+          "عربی",
+          "Arabic",
+          "árabe"
+        ]
+      },
+      {
+        "value": "de",
+        "label": [
+          "آلمانی",
+          "German",
+          "alemán"
+        ]
+      },
+      {
+        "value": "fr",
+        "label": [
+          "فرانسوی",
+          "French",
+          "francés"
+        ]
+      },
+      {
+        "value": "ru",
+        "label": [
+          "روسی",
+          "Russian",
+          "ruso"
+        ]
+      },
+      {
+        "value": "zh",
+        "label": [
+          "چینی",
+          "Chinese",
+          "chino"
+        ]
+      },
+      {
+        "value": "es",
+        "label": [
+          "اسپانیایی",
+          "Spanish",
+          "español"
+        ]
+      },
+      {
+        "value": "ja",
+        "label": [
+          "ژاپنی",
+          "Japanese",
+          "japonés"
+        ]
+      },
+      {
+        "value": "ko",
+        "label": [
+          "کره‌ای",
+          "Korean",
+          "coreano"
+        ]
+      },
+      {
+        "value": "pt",
+        "label": [
+          "پرتغالی",
+          "Portuguese",
+          "portugués"
+        ]
+      },
+      {
+        "value": "tr",
+        "label": [
+          "ترکی استانبولی",
+          "Turkish",
+          "turco"
+        ]
+      },
+      {
+        "value": "it",
+        "label": [
+          "ایتالیایی",
+          "Italian",
+          "italiano"
+        ]
+      },
+      {
+        "value": "hi",
+        "label": [
+          "هندی",
+          "Hindi",
+          "hindi"
+        ]
+      },
+      {
+        "value": "ur",
+        "label": [
+          "اردو",
+          "Urdu",
+          "urdu"
+        ]
+      },
+      {
+        "value": "bn",
+        "label": [
+          "بنگالی",
+          "Bangla",
+          "bengalí"
+        ]
+      },
+      {
+        "value": "ta",
+        "label": [
+          "تامیلی",
+          "Tamil",
+          "tamil"
+        ]
+      },
+      {
+        "value": "te",
+        "label": [
+          "تلوگویی",
+          "Telugu",
+          "telugu"
+        ]
+      },
+      {
+        "value": "gu",
+        "label": [
+          "گجراتی",
+          "Gujarati",
+          "guyaratí"
+        ]
+      },
+      {
+        "value": "mr",
+        "label": [
+          "مراتی",
+          "Marathi",
+          "maratí"
+        ]
+      },
+      {
+        "value": "vi",
+        "label": [
+          "ویتنامی",
+          "Vietnamese",
+          "vietnamita"
+        ]
+      },
+      {
+        "value": "th",
+        "label": [
+          "تایلندی",
+          "Thai",
+          "tailandés"
+        ]
+      },
+      {
+        "value": "id",
+        "label": [
+          "اندونزیایی",
+          "Indonesian",
+          "indonesio"
+        ]
+      },
+      {
+        "value": "ms",
+        "label": [
+          "مالایی",
+          "Malay",
+          "malayo"
+        ]
+      },
+      {
+        "value": "tl",
+        "label": [
+          "فیلیپینی",
+          "Filipino",
+          "filipino"
+        ]
+      },
+      {
+        "value": "nl",
+        "label": [
+          "هلندی",
+          "Dutch",
+          "neerlandés"
+        ]
+      },
+      {
+        "value": "pl",
+        "label": [
+          "لهستانی",
+          "Polish",
+          "polaco"
+        ]
+      },
+      {
+        "value": "cs",
+        "label": [
+          "چکی",
+          "Czech",
+          "checo"
+        ]
+      },
+      {
+        "value": "uk",
+        "label": [
+          "اوکراینی",
+          "Ukrainian",
+          "ucraniano"
+        ]
+      },
+      {
+        "value": "he",
+        "label": [
+          "عبری",
+          "Hebrew",
+          "hebreo"
+        ]
+      },
+      {
+        "value": "km",
+        "label": [
+          "خمری",
+          "Khmer",
+          "jemer"
+        ]
+      },
+      {
+        "value": "my",
+        "label": [
+          "برمه‌ای",
+          "Burmese",
+          "birmano"
+        ]
+      },
+      {
+        "value": "bo",
+        "label": [
+          "تبتی",
+          "Tibetan",
+          "tibetano"
+        ]
+      },
+      {
+        "value": "kk",
+        "label": [
+          "قزاقی",
+          "Kazakh",
+          "kazajo"
+        ]
+      },
+      {
+        "value": "mn",
+        "label": [
+          "مغولی",
+          "Mongolian",
+          "mongol"
+        ]
+      },
+      {
+        "value": "ug",
+        "label": [
+          "اویغوری",
+          "Uyghur",
+          "uigur"
+        ]
+      },
+      {
+        "value": "yue",
+        "label": [
+          "کانتونی",
+          "Cantonese",
+          "cantonés"
+        ]
+      },
+      {
+        "value": "zh-Hant",
+        "label": [
+          "چینی سنتی",
+          "Traditional Chinese",
+          "chino tradicional"
+        ]
+      },
+      {
+        "value": "sw",
+        "label": [
+          "سواحیلی",
+          "Swahili",
+          "suajili"
+        ]
+      },
+      {
+        "value": "sv",
+        "label": [
+          "سوئدی",
+          "Swedish",
+          "sueco"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "نروژی",
+          "Norwegian",
+          "noruego"
+        ]
+      },
+      {
+        "value": "da",
+        "label": [
+          "دانمارکی",
+          "Danish",
+          "danés"
+        ]
+      },
+      {
+        "value": "fi",
+        "label": [
+          "فنلاندی",
+          "Finnish",
+          "finés"
+        ]
+      },
+      {
+        "value": "el",
+        "label": [
+          "یونانی",
+          "Greek",
+          "griego"
+        ]
+      },
+      {
+        "value": "ro",
+        "label": [
+          "رومانیایی",
+          "Romanian",
+          "rumano"
+        ]
+      },
+      {
+        "value": "hu",
+        "label": [
+          "مجاری",
+          "Hungarian",
+          "húngaro"
+        ]
+      },
+      {
+        "value": "sk",
+        "label": [
+          "اسلواکی",
+          "Slovak",
+          "eslovaco"
+        ]
+      },
+      {
+        "value": "bg",
+        "label": [
+          "بلغاری",
+          "Bulgarian",
+          "búlgaro"
+        ]
+      },
+      {
+        "value": "sr",
+        "label": [
+          "صربی",
+          "Serbian",
+          "serbio"
+        ]
+      },
+      {
+        "value": "hr",
+        "label": [
+          "کروات",
+          "Croatian",
+          "croata"
+        ]
+      },
+      {
+        "value": "az",
+        "label": [
+          "ترکی آذربایجانی",
+          "Azerbaijani",
+          "azerbaiyano"
+        ]
+      },
+      {
+        "value": "ku",
+        "label": [
+          "کردی",
+          "Kurdish",
+          "kurdo"
+        ]
+      },
+      {
+        "value": "ps",
+        "label": [
+          "پشتو",
+          "Pashto",
+          "pastún"
+        ]
+      },
+      {
+        "value": "aa",
+        "label": [
+          "آفاری",
+          "Afar",
+          "afar"
+        ]
+      },
+      {
+        "value": "ab",
+        "label": [
+          "آبخازی",
+          "Abkhazian",
+          "abjasio"
+        ]
+      },
+      {
+        "value": "af",
+        "label": [
+          "آفریکانس",
+          "Afrikaans",
+          "afrikáans"
+        ]
+      },
+      {
+        "value": "ak",
+        "label": [
+          "آکان",
+          "Akan",
+          "akan"
+        ]
+      },
+      {
+        "value": "am",
+        "label": [
+          "امهری",
+          "Amharic",
+          "amárico"
+        ]
+      },
+      {
+        "value": "ar-EG",
+        "label": [
+          "عربی (مصر)",
+          "Arabic (Egypt)",
+          "árabe (Egipto)"
+        ]
+      },
+      {
+        "value": "ar-MA",
+        "label": [
+          "عربی (مراکش)",
+          "Arabic (Morocco)",
+          "árabe (Marruecos)"
+        ]
+      },
+      {
+        "value": "as",
+        "label": [
+          "آسامی",
+          "Assamese",
+          "asamés"
+        ]
+      },
+      {
+        "value": "av",
+        "label": [
+          "آواری",
+          "Avaric",
+          "avar"
+        ]
+      },
+      {
+        "value": "ay",
+        "label": [
+          "آیمارایی",
+          "Aymara",
+          "aimara"
+        ]
+      },
+      {
+        "value": "ba",
+        "label": [
+          "باشقیری",
+          "Bashkir",
+          "baskir"
+        ]
+      },
+      {
+        "value": "be",
+        "label": [
+          "بلاروسی",
+          "Belarusian",
+          "bielorruso"
+        ]
+      },
+      {
+        "value": "bi",
+        "label": [
+          "بیسلاما",
+          "Bislama",
+          "bislama"
+        ]
+      },
+      {
+        "value": "bm",
+        "label": [
+          "بامبارایی",
+          "Bambara",
+          "bambara"
+        ]
+      },
+      {
+        "value": "bm-Nkoo",
+        "label": [
+          "بامبارایی (اِن کو)",
+          "Bambara (N’Ko)",
+          "bambara (n’ko)"
+        ]
+      },
+      {
+        "value": "br",
+        "label": [
+          "برتون",
+          "Breton",
+          "bretón"
+        ]
+      },
+      {
+        "value": "bs",
+        "label": [
+          "بوسنیایی",
+          "Bosnian",
+          "bosnio"
+        ]
+      },
+      {
+        "value": "ca",
+        "label": [
+          "کاتالان",
+          "Catalan",
+          "catalán"
+        ]
+      },
+      {
+        "value": "ce",
+        "label": [
+          "چچنی",
+          "Chechen",
+          "checheno"
+        ]
+      },
+      {
+        "value": "ch",
+        "label": [
+          "چامورویی",
+          "Chamorro",
+          "chamorro"
+        ]
+      },
+      {
+        "value": "co",
+        "label": [
+          "کورسی",
+          "Corsican",
+          "corso"
+        ]
+      },
+      {
+        "value": "cv",
+        "label": [
+          "چوواشی",
+          "Chuvash",
+          "chuvasio"
+        ]
+      },
+      {
+        "value": "cy",
+        "label": [
+          "ولزی",
+          "Welsh",
+          "galés"
+        ]
+      },
+      {
+        "value": "dv",
+        "label": [
+          "دیوهی",
+          "Divehi",
+          "divehi"
+        ]
+      },
+      {
+        "value": "dz",
+        "label": [
+          "دزونگخا",
+          "Dzongkha",
+          "dzongkha"
+        ]
+      },
+      {
+        "value": "ee",
+        "label": [
+          "اوه‌ای",
+          "Ewe",
+          "ewé"
+        ]
+      },
+      {
+        "value": "eo",
+        "label": [
+          "اسپرانتو",
+          "Esperanto",
+          "esperanto"
+        ]
+      },
+      {
+        "value": "et",
+        "label": [
+          "استونیایی",
+          "Estonian",
+          "estonio"
+        ]
+      },
+      {
+        "value": "eu",
+        "label": [
+          "باسکی",
+          "Basque",
+          "euskera"
+        ]
+      },
+      {
+        "value": "fa-AF",
+        "label": [
+          "دری",
+          "Dari",
+          "darí"
+        ]
+      },
+      {
+        "value": "ff",
+        "label": [
+          "فولانی",
+          "Fula",
+          "fula"
+        ]
+      },
+      {
+        "value": "fj",
+        "label": [
+          "فیجیایی",
+          "Fijian",
+          "fiyiano"
+        ]
+      },
+      {
+        "value": "fo",
+        "label": [
+          "فارویی",
+          "Faroese",
+          "feroés"
+        ]
+      },
+      {
+        "value": "fr-CA",
+        "label": [
+          "فرانسوی کانادا",
+          "Canadian French",
+          "francés canadiense"
+        ]
+      },
+      {
+        "value": "fy",
+        "label": [
+          "فریسی غربی",
+          "Western Frisian",
+          "frisón occidental"
+        ]
+      },
+      {
+        "value": "ga",
+        "label": [
+          "ایرلندی",
+          "Irish",
+          "irlandés"
+        ]
+      },
+      {
+        "value": "gd",
+        "label": [
+          "گیلی اسکاتلندی",
+          "Scottish Gaelic",
+          "gaélico escocés"
+        ]
+      },
+      {
+        "value": "gl",
+        "label": [
+          "گالیسیایی",
+          "Galician",
+          "gallego"
+        ]
+      },
+      {
+        "value": "gn",
+        "label": [
+          "گوارانی",
+          "Guarani",
+          "guaraní"
+        ]
+      },
+      {
+        "value": "gv",
+        "label": [
+          "مانی",
+          "Manx",
+          "manés"
+        ]
+      },
+      {
+        "value": "ha",
+        "label": [
+          "هوسایی",
+          "Hausa",
+          "hausa"
+        ]
+      },
+      {
+        "value": "ho",
+        "label": [
+          "موتویی هیری",
+          "Hiri Motu",
+          "hiri motu"
+        ]
+      },
+      {
+        "value": "ht",
+        "label": [
+          "هائیتیایی",
+          "Haitian Creole",
+          "criollo haitiano"
+        ]
+      },
+      {
+        "value": "hy",
+        "label": [
+          "ارمنی",
+          "Armenian",
+          "armenio"
+        ]
+      },
+      {
+        "value": "ig",
+        "label": [
+          "ایگبویی",
+          "Igbo",
+          "igbo"
+        ]
+      },
+      {
+        "value": "is",
+        "label": [
+          "ایسلندی",
+          "Icelandic",
+          "islandés"
+        ]
+      },
+      {
+        "value": "iu",
+        "label": [
+          "اینوکتیتوت",
+          "Inuktitut",
+          "inuktitut"
+        ]
+      },
+      {
+        "value": "iu-Latn",
+        "label": [
+          "اینوکتیتوت (لاتین)",
+          "Inuktitut (Latin)",
+          "inuktitut (latino)"
+        ]
+      },
+      {
+        "value": "jv",
+        "label": [
+          "جاوه‌ای",
+          "Javanese",
+          "javanés"
+        ]
+      },
+      {
+        "value": "ka",
+        "label": [
+          "گرجی",
+          "Georgian",
+          "georgiano"
+        ]
+      },
+      {
+        "value": "kg",
+        "label": [
+          "کنگویی",
+          "Kongo",
+          "kongo"
+        ]
+      },
+      {
+        "value": "ki",
+        "label": [
+          "کیکویویی",
+          "Kikuyu",
+          "kikuyu"
+        ]
+      },
+      {
+        "value": "kj",
+        "label": [
+          "کوانیاما",
+          "Kuanyama",
+          "kuanyama"
+        ]
+      },
+      {
+        "value": "kl",
+        "label": [
+          "گرینلندی",
+          "Kalaallisut",
+          "groenlandés"
+        ]
+      },
+      {
+        "value": "kn",
+        "label": [
+          "کانارا",
+          "Kannada",
+          "canarés"
+        ]
+      },
+      {
+        "value": "kr",
+        "label": [
+          "کانوریایی",
+          "Kanuri",
+          "kanuri"
+        ]
+      },
+      {
+        "value": "ks",
+        "label": [
+          "کشمیری",
+          "Kashmiri",
+          "cachemir"
+        ]
+      },
+      {
+        "value": "ks-Deva",
+        "label": [
+          "کشمیری (دوناگری)",
+          "Kashmiri (Devanagari)",
+          "cachemir (devanagari)"
+        ]
+      },
+      {
+        "value": "kv",
+        "label": [
+          "کومیایی",
+          "Komi",
+          "komi"
+        ]
+      },
+      {
+        "value": "kw",
+        "label": [
+          "کورنی",
+          "Cornish",
+          "córnico"
+        ]
+      },
+      {
+        "value": "ky",
+        "label": [
+          "قرقیزی",
+          "Kyrgyz",
+          "kirguís"
+        ]
+      },
+      {
+        "value": "la",
+        "label": [
+          "لاتین",
+          "Latin",
+          "latín"
+        ]
+      },
+      {
+        "value": "lb",
+        "label": [
+          "لوگزامبورگی",
+          "Luxembourgish",
+          "luxemburgués"
+        ]
+      },
+      {
+        "value": "lg",
+        "label": [
+          "گاندایی",
+          "Ganda",
+          "ganda"
+        ]
+      },
+      {
+        "value": "li",
+        "label": [
+          "لیمبورگی",
+          "Limburgish",
+          "limburgués"
+        ]
+      },
+      {
+        "value": "ln",
+        "label": [
+          "لینگالا",
+          "Lingala",
+          "lingala"
+        ]
+      },
+      {
+        "value": "lo",
+        "label": [
+          "لائوسی",
+          "Lao",
+          "lao"
+        ]
+      },
+      {
+        "value": "lt",
+        "label": [
+          "لیتوانیایی",
+          "Lithuanian",
+          "lituano"
+        ]
+      },
+      {
+        "value": "lu",
+        "label": [
+          "لوبایی‐کاتانگا",
+          "Luba-Katanga",
+          "luba-katanga"
+        ]
+      },
+      {
+        "value": "lv",
+        "label": [
+          "لتونیایی",
+          "Latvian",
+          "letón"
+        ]
+      },
+      {
+        "value": "mg",
+        "label": [
+          "مالاگاسی",
+          "Malagasy",
+          "malgache"
+        ]
+      },
+      {
+        "value": "mh",
+        "label": [
+          "مارشالی",
+          "Marshallese",
+          "marshalés"
+        ]
+      },
+      {
+        "value": "mi",
+        "label": [
+          "مائوری",
+          "Māori",
+          "maorí"
+        ]
+      },
+      {
+        "value": "mk",
+        "label": [
+          "مقدونی",
+          "Macedonian",
+          "macedonio"
+        ]
+      },
+      {
+        "value": "ml",
+        "label": [
+          "مالایالامی",
+          "Malayalam",
+          "malayálam"
+        ]
+      },
+      {
+        "value": "ms-Arab",
+        "label": [
+          "مالایی (عربی)",
+          "Malay (Arabic)",
+          "malayo (árabe)"
+        ]
+      },
+      {
+        "value": "mt",
+        "label": [
+          "مالتی",
+          "Maltese",
+          "maltés"
+        ]
+      },
+      {
+        "value": "nb",
+        "label": [
+          "نروژی بوک‌مُل",
+          "Norwegian Bokmål",
+          "noruego bokmal"
+        ]
+      },
+      {
+        "value": "nd",
+        "label": [
+          "انده‌بله‌ای شمالی",
+          "North Ndebele",
+          "ndebele septentrional"
+        ]
+      },
+      {
+        "value": "ne",
+        "label": [
+          "نپالی",
+          "Nepali",
+          "nepalí"
+        ]
+      },
+      {
+        "value": "nn",
+        "label": [
+          "نروژی نی‌نُشک",
+          "Norwegian Nynorsk",
+          "noruego nynorsk"
+        ]
+      },
+      {
+        "value": "nr",
+        "label": [
+          "انده‌بله‌ای جنوبی",
+          "South Ndebele",
+          "ndebele meridional"
+        ]
+      },
+      {
+        "value": "nv",
+        "label": [
+          "ناواهویی",
+          "Navajo",
+          "navajo"
+        ]
+      },
+      {
+        "value": "ny",
+        "label": [
+          "نیانجایی",
+          "Nyanja",
+          "nyanja"
+        ]
+      },
+      {
+        "value": "oc",
+        "label": [
+          "اکسیتان",
+          "Occitan",
+          "occitano"
+        ]
+      },
+      {
+        "value": "oj",
+        "label": [
+          "اوجیبوایی",
+          "Ojibwa",
+          "ojibwa"
+        ]
+      },
+      {
+        "value": "om",
+        "label": [
+          "اورومویی",
+          "Oromo",
+          "oromo"
+        ]
+      },
+      {
+        "value": "or",
+        "label": [
+          "اوریه‌ای",
+          "Odia",
+          "oriya"
+        ]
+      },
+      {
+        "value": "os",
+        "label": [
+          "آسی",
+          "Ossetic",
+          "osético"
+        ]
+      },
+      {
+        "value": "pa",
+        "label": [
+          "پنجابی",
+          "Punjabi",
+          "punyabí"
+        ]
+      },
+      {
+        "value": "pa-Arab",
+        "label": [
+          "پنجابی (عربی)",
+          "Punjabi (Arabic)",
+          "punyabí (árabe)"
+        ]
+      },
+      {
+        "value": "pt-BR",
+        "label": [
+          "پرتغالی برزیل",
+          "Brazilian Portuguese",
+          "portugués de Brasil"
+        ]
+      },
+      {
+        "value": "pt-PT",
+        "label": [
+          "پرتغالی اروپا",
+          "European Portuguese",
+          "portugués de Portugal"
+        ]
+      },
+      {
+        "value": "qu",
+        "label": [
+          "کچوایی",
+          "Quechua",
+          "quechua"
+        ]
+      },
+      {
+        "value": "rm",
+        "label": [
+          "رومانش",
+          "Romansh",
+          "romanche"
+        ]
+      },
+      {
+        "value": "rn",
+        "label": [
+          "روندیایی",
+          "Rundi",
+          "kirundi"
+        ]
+      },
+      {
+        "value": "rw",
+        "label": [
+          "کینیارواندایی",
+          "Kinyarwanda",
+          "kinyarwanda"
+        ]
+      },
+      {
+        "value": "sa",
+        "label": [
+          "سانسکریت",
+          "Sanskrit",
+          "sánscrito"
+        ]
+      },
+      {
+        "value": "sc",
+        "label": [
+          "ساردینیایی",
+          "Sardinian",
+          "sardo"
+        ]
+      },
+      {
+        "value": "sd",
+        "label": [
+          "سندی",
+          "Sindhi",
+          "sindi"
+        ]
+      },
+      {
+        "value": "sd-Deva",
+        "label": [
+          "سندی (دوناگری)",
+          "Sindhi (Devanagari)",
+          "sindi (devanagari)"
+        ]
+      },
+      {
+        "value": "se",
+        "label": [
+          "سامی شمالی",
+          "Northern Sami",
+          "sami septentrional"
+        ]
+      },
+      {
+        "value": "sg",
+        "label": [
+          "سانگو",
+          "Sango",
+          "sango"
+        ]
+      },
+      {
+        "value": "sh",
+        "label": [
+          "صربی (لاتین)",
+          "Serbian (Latin)",
+          "serbio (latino)"
+        ]
+      },
+      {
+        "value": "si",
+        "label": [
+          "سینهالی",
+          "Sinhala",
+          "cingalés"
+        ]
+      },
+      {
+        "value": "sl",
+        "label": [
+          "اسلوونیایی",
+          "Slovenian",
+          "esloveno"
+        ]
+      },
+      {
+        "value": "sm",
+        "label": [
+          "ساموآیی",
+          "Samoan",
+          "samoano"
+        ]
+      },
+      {
+        "value": "sn",
+        "label": [
+          "شونایی",
+          "Shona",
+          "shona"
+        ]
+      },
+      {
+        "value": "so",
+        "label": [
+          "سومالیایی",
+          "Somali",
+          "somalí"
+        ]
+      },
+      {
+        "value": "sq",
+        "label": [
+          "آلبانیایی",
+          "Albanian",
+          "albanés"
+        ]
+      },
+      {
+        "value": "sr-Cyrl",
+        "label": [
+          "صربی (سیریلی)",
+          "Serbian (Cyrillic)",
+          "serbio (cirílico)"
+        ]
+      },
+      {
+        "value": "sr-Latn",
+        "label": [
+          "صربی (لاتین)",
+          "Serbian (Latin)",
+          "serbio (latino)"
+        ]
+      },
+      {
+        "value": "ss",
+        "label": [
+          "سوازیایی",
+          "Swati",
+          "suazi"
+        ]
+      },
+      {
+        "value": "st",
+        "label": [
+          "سوتوی جنوبی",
+          "Southern Sotho",
+          "sotho meridional"
+        ]
+      },
+      {
+        "value": "su",
+        "label": [
+          "سوندایی",
+          "Sundanese",
+          "sundanés"
+        ]
+      },
+      {
+        "value": "sw-KE",
+        "label": [
+          "سواحیلی (کنیا)",
+          "Swahili (Kenya)",
+          "suajili (Kenia)"
+        ]
+      },
+      {
+        "value": "sw-TZ",
+        "label": [
+          "سواحیلی (تانزانیا)",
+          "Swahili (Tanzania)",
+          "suajili (Tanzania)"
+        ]
+      },
+      {
+        "value": "tg",
+        "label": [
+          "تاجیکی",
+          "Tajik",
+          "tayiko"
+        ]
+      },
+      {
+        "value": "ti",
+        "label": [
+          "تیگرینیایی",
+          "Tigrinya",
+          "tigriña"
+        ]
+      },
+      {
+        "value": "tk",
+        "label": [
+          "ترکمنی",
+          "Turkmen",
+          "turcomano"
+        ]
+      },
+      {
+        "value": "tn",
+        "label": [
+          "تسوانایی",
+          "Tswana",
+          "setsuana"
+        ]
+      },
+      {
+        "value": "to",
+        "label": [
+          "تونگایی",
+          "Tongan",
+          "tongano"
+        ]
+      },
+      {
+        "value": "ts",
+        "label": [
+          "تسونگایی",
+          "Tsonga",
+          "tsonga"
+        ]
+      },
+      {
+        "value": "tt",
+        "label": [
+          "تاتاری",
+          "Tatar",
+          "tártaro"
+        ]
+      },
+      {
+        "value": "tw",
+        "label": [
+          "آکان",
+          "Akan",
+          "akan"
+        ]
+      },
+      {
+        "value": "ty",
+        "label": [
+          "تاهیتیایی",
+          "Tahitian",
+          "tahitiano"
+        ]
+      },
+      {
+        "value": "uz",
+        "label": [
+          "ازبکی",
+          "Uzbek",
+          "uzbeko"
+        ]
+      },
+      {
+        "value": "ve",
+        "label": [
+          "وندایی",
+          "Venda",
+          "venda"
+        ]
+      },
+      {
+        "value": "wa",
+        "label": [
+          "والونی",
+          "Walloon",
+          "valón"
+        ]
+      },
+      {
+        "value": "wo",
+        "label": [
+          "ولوفی",
+          "Wolof",
+          "wólof"
+        ]
+      },
+      {
+        "value": "xh",
+        "label": [
+          "خوسایی",
+          "Xhosa",
+          "xhosa"
+        ]
+      },
+      {
+        "value": "yi",
+        "label": [
+          "یدی",
+          "Yiddish",
+          "yidis"
+        ]
+      },
+      {
+        "value": "yo",
+        "label": [
+          "یوروبایی",
+          "Yoruba",
+          "yoruba"
+        ]
+      },
+      {
+        "value": "za",
+        "label": [
+          "چوانگی",
+          "Zhuang",
+          "zhuang"
+        ]
+      },
+      {
+        "value": "zh-CN",
+        "label": [
+          "چینی (چین)",
+          "Chinese (China)",
+          "chino (China)"
+        ]
+      },
+      {
+        "value": "zh-TW",
+        "label": [
+          "چینی (تایوان)",
+          "Chinese (Taiwan)",
+          "chino (Taiwán)"
+        ]
+      },
+      {
+        "value": "zu",
+        "label": [
+          "زولویی",
+          "Zulu",
+          "zulú"
+        ]
+      }
+    ],
+    "kind": "multi",
+    "unit": null,
+    "when": "outputLanguages"
   },
   {
     "id": "sources",
@@ -341,6 +4231,47 @@
     "when": null
   },
   {
+    "id": "archiveRole",
+    "step": 1,
+    "title": [
+      "با اسناد آرشیو چه کاری انجام می‌دهید؟",
+      "How will you use the archive?",
+      "¿Cómo usará el archivo?"
+    ],
+    "why": [
+      "ترجمه یا خلاصهٔ همهٔ فایل‌ها با پیدا کردن چند متن مرجع فرق دارد.",
+      "Processing files differs from looking up reference passages.",
+      "Procesar archivos es distinto de buscar referencias."
+    ],
+    "help": [
+      "ترجمه یا خلاصهٔ همهٔ فایل‌ها با پیدا کردن چند متن مرجع فرق دارد.",
+      "Processing files differs from looking up reference passages.",
+      "Procesar archivos es distinto de buscar referencias."
+    ],
+    "article": "rag",
+    "options": [
+      {
+        "value": "process",
+        "label": [
+          "ترجمه یا خلاصهٔ خود فایل‌ها",
+          "Translate or summarize the files",
+          "Traducir o resumir los archivos"
+        ]
+      },
+      {
+        "value": "reference",
+        "label": [
+          "پیدا کردن اصطلاحات و متن‌های مرجع",
+          "Look up terminology and reference text",
+          "Buscar terminología y referencias"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "writingArchive"
+  },
+  {
     "id": "format",
     "step": 1,
     "title": [
@@ -395,9 +4326,9 @@
       {
         "value": "media",
         "label": [
-          "تصویر یا صوت",
-          "Images or audio",
-          "Imágenes o audio"
+          "تصویر یا صوت؛ نوع را در پرسش بعد مشخص می‌کنم",
+          "Image or audio; specify next",
+          "Imagen o audio; concretar después"
         ]
       },
       {
@@ -412,6 +4343,55 @@
     "kind": "choice",
     "unit": null,
     "when": "files"
+  },
+  {
+    "id": "mediaType",
+    "step": 1,
+    "title": [
+      "چه نوع رسانه‌ای به مدل می‌دهید؟",
+      "Which media will you provide?",
+      "¿Qué tipo de contenido dará?"
+    ],
+    "why": [
+      "خواندن تصویر با پیاده‌کردن صوت دو مسیر متفاوت است.",
+      "Reading an image and transcribing audio need different components.",
+      "Leer imágenes y transcribir audio requieren componentes distintos."
+    ],
+    "help": [
+      "خواندن تصویر با پیاده‌کردن صوت دو مسیر متفاوت است.",
+      "Reading an image and transcribing audio need different components.",
+      "Leer imágenes y transcribir audio requieren componentes distintos."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "image",
+        "label": [
+          "تصویر",
+          "Image",
+          "Imagen"
+        ]
+      },
+      {
+        "value": "audio",
+        "label": [
+          "صوت",
+          "Audio",
+          "Audio"
+        ]
+      },
+      {
+        "value": "both",
+        "label": [
+          "تصویر و صوت",
+          "Image and audio",
+          "Imagen y audio"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "mediaType"
   },
   {
     "id": "archiveSize",
@@ -2554,5 +6534,87 @@
         ]
       }
     ]
+  },
+  {
+    "id": "apiService",
+    "step": 3,
+    "title": [
+      "به کدام سرویس دسترسی دارید؟",
+      "Which service can you access?",
+      "¿A qué servicio tiene acceso?"
+    ],
+    "why": [
+      "نام سرویس و منطقه برای تطبیق نسخه و دسترسی لازم است؛ زبان سایت مبنای انتخاب نیست.",
+      "The service and region identify the accessible contract; interface language does not select them.",
+      "Servicio y región identifican el contrato accesible; no dependen del idioma de la página."
+    ],
+    "help": [
+      "اگر هنوز سرویس را انتخاب نکرده‌اید، «نمی‌دانم» را بزنید.",
+      "Choose “not sure” if the service is undecided.",
+      "Elija «no lo sé» si no ha elegido servicio."
+    ],
+    "article": "cost",
+    "options": [
+      {
+        "value": "qwen",
+        "label": [
+          "Qwen / Alibaba Cloud",
+          "Qwen / Alibaba Cloud",
+          "Qwen / Alibaba Cloud"
+        ]
+      },
+      {
+        "value": "other",
+        "label": [
+          "ارائه‌دهندهٔ دیگر",
+          "Another provider",
+          "Otro proveedor"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "external"
+  },
+  {
+    "id": "apiRegion",
+    "step": 3,
+    "title": [
+      "حساب سرویس در کدام منطقه است؟",
+      "Which service region is your account in?",
+      "¿En qué región está su cuenta?"
+    ],
+    "why": [
+      "نام سرویس و منطقه برای تطبیق نسخه و دسترسی لازم است؛ زبان سایت مبنای انتخاب نیست.",
+      "The service and region identify the accessible contract; interface language does not select them.",
+      "Servicio y región identifican el contrato accesible; no dependen del idioma de la página."
+    ],
+    "help": [
+      "اگر هنوز سرویس را انتخاب نکرده‌اید، «نمی‌دانم» را بزنید.",
+      "Choose “not sure” if the service is undecided.",
+      "Elija «no lo sé» si no ha elegido servicio."
+    ],
+    "article": "cost",
+    "options": [
+      {
+        "value": "singapore",
+        "label": [
+          "سنگاپور",
+          "Singapore",
+          "Singapur"
+        ]
+      },
+      {
+        "value": "other",
+        "label": [
+          "منطقهٔ دیگر",
+          "Another region",
+          "Otra región"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "external"
   }
 ]

@@ -6119,7 +6119,7 @@ modelProfiles.push({
   "distinguishingFeatures": [
     "قالب‌های جدا برای ترجمه، واژه‌نامهٔ اصطلاحات و حفظ قالب متن دارد."
   ],
-  "languageSummary": "فارسی، انگلیسی و اسپانیایی در فهرست زبان‌های ناشر هستند.",
+  "languageSummary": "پشتیبانی اعلامی از ۳۸ زبان و گونهٔ زبانی، از فارسی و عربی تا چینی.",
   "officialUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B/blob/dbad03788f49709801014c95d481a514c272ca52/README.md",
   "runGuides": [
     {
@@ -6131,6 +6131,17 @@ modelProfiles.push({
       ],
       "evidenceIds": [
         "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+      ]
+    },
+    {
+      "label": "llama.cpp",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/blob/265b2e615a7dc9b06c435dc878829ad99a512ba2/README.md",
+      "conditions": [
+        "بستهٔ رسمی همین نسخه؛ برای GGUF نسخهٔ سازگار llama.cpp و در بسته‌های STQ پشتیبانی kernel لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt1-5-1-8b-gguf"
       ]
     }
   ],
@@ -6146,7 +6157,7 @@ modelProfiles.push({
   "distinguishingFeatures": [
     "قالب‌های جدا برای ترجمه، واژه‌نامهٔ اصطلاحات و حفظ قالب متن دارد."
   ],
-  "languageSummary": "فارسی، انگلیسی و اسپانیایی در فهرست زبان‌های ناشر هستند.",
+  "languageSummary": "پشتیبانی اعلامی از ۳۸ زبان و گونهٔ زبانی، از فارسی و عربی تا چینی.",
   "officialUrl": "https://huggingface.co/tencent/HY-MT1.5-7B/blob/397085d46158ad0b437ffd74228499e8c2a35c76/README.md",
   "runGuides": [
     {
@@ -6159,9 +6170,279 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:tasks0920-tencent-hy-mt1-5-7b"
       ]
+    },
+    {
+      "label": "llama.cpp",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/blob/126325496bc8e3575f1d8615b8ca951d8483f206/README.md",
+      "conditions": [
+        "بستهٔ رسمی همین نسخه؛ برای GGUF نسخهٔ سازگار llama.cpp و در بسته‌های STQ پشتیبانی kernel لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt1-5-7b-gguf"
+      ]
     }
   ],
   "evidenceIds": [
     "evidence:tasks0920-tencent-hy-mt1-5-7b"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:tencent-hy-mt2-1-8b",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "introduction": "نسل دوم مترجم Hy-MT با دستورهای ترجمه و حفظ اصطلاحات.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B/blob/9a341cd1b679d3efd23b46e847b01745a71ed792/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/tencent/Hy-MT2-1.8B/blob/9a341cd1b679d3efd23b46e847b01745a71ed792/README.md",
+      "conditions": [
+        "نصب Transformers ≥ 5.6.0 و قالب ترجمهٔ همین نسخه؛ عدد پیکربندی زمینه، نتیجهٔ آزمون طول متن نیست."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-1-8b"
+      ]
+    },
+    {
+      "label": "vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/tencent/Hy-MT2-1.8B/blob/9a341cd1b679d3efd23b46e847b01745a71ed792/README.md#vllm",
+      "conditions": [
+        "نصب از سورس طبق راهنمای ناشر؛ پیش از استقرار، شناسهٔ commit و نسخهٔ وابستگی‌ها را ثبت کنید."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-1-8b"
+      ]
+    },
+    {
+      "label": "llama.cpp",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/blob/a0c709d9fac510f2c807aa3af52872340dc37a4a/README.md",
+      "conditions": [
+        "بستهٔ رسمی همین نسخه؛ برای GGUF نسخهٔ سازگار llama.cpp و در بسته‌های STQ پشتیبانی kernel لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-1-8b-gguf"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:tencent-hy-mt2-7b",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "introduction": "نسل دوم مترجم Hy-MT با دستورهای ترجمه و حفظ اصطلاحات.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/tencent/Hy-MT2-7B/blob/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/tencent/Hy-MT2-7B/blob/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/README.md",
+      "conditions": [
+        "نصب Transformers ≥ 5.6.0 و قالب ترجمهٔ همین نسخه؛ عدد پیکربندی زمینه، نتیجهٔ آزمون طول متن نیست."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-7b"
+      ]
+    },
+    {
+      "label": "vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/tencent/Hy-MT2-7B/blob/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/README.md#vllm",
+      "conditions": [
+        "نصب از سورس طبق راهنمای ناشر؛ پیش از استقرار، شناسهٔ commit و نسخهٔ وابستگی‌ها را ثبت کنید."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-7b"
+      ]
+    },
+    {
+      "label": "llama.cpp",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/blob/ab8472660ac61fac25f1af43fac2599d52a8a775/README.md",
+      "conditions": [
+        "بستهٔ رسمی همین نسخه؛ برای GGUF نسخهٔ سازگار llama.cpp و در بسته‌های STQ پشتیبانی kernel لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-7b-gguf"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:tencent-hy-mt2-30b-a3b",
+  "modelVersionId": "model:tencent-hy-mt2-30b-a3b",
+  "introduction": "نسل دوم مترجم Hy-MT با دستورهای ترجمه و حفظ اصطلاحات.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/blob/d3ead4dba61c09aac60a261a96ad1df3e705febb/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/blob/d3ead4dba61c09aac60a261a96ad1df3e705febb/README.md",
+      "conditions": [
+        "نصب Transformers ≥ 5.6.0 و قالب ترجمهٔ همین نسخه؛ عدد پیکربندی زمینه، نتیجهٔ آزمون طول متن نیست."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-30b-a3b"
+      ]
+    },
+    {
+      "label": "vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/blob/d3ead4dba61c09aac60a261a96ad1df3e705febb/README.md#vllm",
+      "conditions": [
+        "نصب از سورس طبق راهنمای ناشر؛ پیش از استقرار، شناسهٔ commit و نسخهٔ وابستگی‌ها را ثبت کنید."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-tencent-hy-mt2-30b-a3b"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-30b-a3b"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:google-translategemma-4b-it",
+  "modelVersionId": "model:google-translategemma-4b-it",
+  "introduction": "مترجم متن و نوشته‌های تصویر با ورودی حداکثر ۲هزار توکن؛ قالب ویژهٔ ترجمه دارد.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/google/translategemma-4b-it/blob/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/google/translategemma-4b-it/blob/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/README.md",
+      "conditions": [
+        "قالب شامل source_lang_code و target_lang_code است؛ دریافت وزن‌ها نیازمند پذیرش شرایط Google است. از ظرفیت Gemma عمومی استفاده نکنید."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-google-translategemma-4b-it"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-4b-it",
+    "evidence:translation0920-translategemma-paper"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:google-translategemma-12b-it",
+  "modelVersionId": "model:google-translategemma-12b-it",
+  "introduction": "مترجم متن و نوشته‌های تصویر با ورودی حداکثر ۲هزار توکن؛ قالب ویژهٔ ترجمه دارد.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/google/translategemma-12b-it/blob/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/google/translategemma-12b-it/blob/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/README.md",
+      "conditions": [
+        "قالب شامل source_lang_code و target_lang_code است؛ دریافت وزن‌ها نیازمند پذیرش شرایط Google است. از ظرفیت Gemma عمومی استفاده نکنید."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-google-translategemma-12b-it"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-12b-it",
+    "evidence:translation0920-translategemma-paper"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:google-translategemma-27b-it",
+  "modelVersionId": "model:google-translategemma-27b-it",
+  "introduction": "مترجم متن و نوشته‌های تصویر با ورودی حداکثر ۲هزار توکن؛ قالب ویژهٔ ترجمه دارد.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/google/translategemma-27b-it/blob/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/google/translategemma-27b-it/blob/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/README.md",
+      "conditions": [
+        "قالب شامل source_lang_code و target_lang_code است؛ دریافت وزن‌ها نیازمند پذیرش شرایط Google است. از ظرفیت Gemma عمومی استفاده نکنید."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-google-translategemma-27b-it"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-27b-it",
+    "evidence:translation0920-translategemma-paper"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:google-madlad400-3b-mt",
+  "modelVersionId": "model:google-madlad400-3b-mt",
+  "introduction": "مترجم مبتنی بر T5 با دامنهٔ زبانی گسترده؛ پیشوند زبان مقصد بخشی از ورودی است.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/google/madlad400-3b-mt/blob/fa184c675da0b5c9e1c8694fccd4e12e2d422094/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/google/madlad400-3b-mt/blob/fa184c675da0b5c9e1c8694fccd4e12e2d422094/README.md",
+      "conditions": [
+        "T5ForConditionalGeneration و T5Tokenizer؛ ورودی با <2xx> زبان مقصد شروع می‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-google-madlad400-3b-mt"
+      ]
+    },
+    {
+      "label": "Candle",
+      "engine": "Candle",
+      "href": "https://huggingface.co/google/madlad400-3b-mt/blob/fa184c675da0b5c9e1c8694fccd4e12e2d422094/README.md#running-the-model-with-candle",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:translation0920-google-madlad400-3b-mt"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:facebook-nllb-200-distilled-600m",
+  "modelVersionId": "model:facebook-nllb-200-distilled-600m",
+  "introduction": "مدل مرجع پژوهشی ترجمه؛ مجوز غیرتجاری و ورودی آموزشی تا ۵۱۲ توکن دارد.",
+  "roleSummary": "ترجمهٔ تخصصی",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/facebook/nllb-200-distilled-600M/blob/f8d333a098d19b4fd9a8b18f94170487ad3f821d/README.md",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/facebook/nllb-200-distilled-600M/blob/f8d333a098d19b4fd9a8b18f94170487ad3f821d/README.md",
+      "conditions": [
+        "AutoModelForSeq2SeqLM؛ زبان مبدأ و forced_bos_token_id مقصد را تعیین کنید. برای استقرار تجاری پیشنهاد نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:translation0920-facebook-nllb-200-distilled-600m"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:translation0920-facebook-nllb-200-distilled-600m"
   ]
 });

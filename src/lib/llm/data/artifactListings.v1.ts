@@ -29392,3 +29392,1460 @@ artifactListings.push({
     "evidence:tasks0920-tencent-hy-mt1-5-7b"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-1-8b-bf16",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "baseModelRepository": "tencent/Hy-MT2-1.8B",
+  "baseRevision": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B/tree/9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "repositoryRevision": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B/resolve/9a341cd1b679d3efd23b46e847b01745a71ed792/model.safetensors",
+      "bytes": 4077072784
+    }
+  ],
+  "totalBytes": 4077072784,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b"
+  ],
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-7b-bf16",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "baseModelRepository": "tencent/Hy-MT2-7B",
+  "baseRevision": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-7B",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-7B/tree/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "repositoryRevision": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B/resolve/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/model-00001-of-00004.safetensors",
+      "bytes": 4949503392
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B/resolve/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/model-00002-of-00004.safetensors",
+      "bytes": 4967588264
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B/resolve/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/model-00003-of-00004.safetensors",
+      "bytes": 4925662096
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B/resolve/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/model-00004-of-00004.safetensors",
+      "bytes": 1216368504
+    }
+  ],
+  "totalBytes": 16059122256,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b"
+  ],
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-30b-a3b-bf16",
+  "modelVersionId": "model:tencent-hy-mt2-30b-a3b",
+  "baseModelRepository": "tencent/Hy-MT2-30B-A3B",
+  "baseRevision": "d3ead4dba61c09aac60a261a96ad1df3e705febb",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-30B-A3B",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/tree/d3ead4dba61c09aac60a261a96ad1df3e705febb",
+  "repositoryRevision": "d3ead4dba61c09aac60a261a96ad1df3e705febb",
+  "files": [
+    {
+      "path": "model-00000-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00000-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00001-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00001-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00002-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00002-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00003-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00003-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00004-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00004-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00005-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00005-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00006-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00006-of-00051.safetensors",
+      "bytes": 1022335384
+    },
+    {
+      "path": "model-00007-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00007-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00008-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00008-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00009-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00009-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00010-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00010-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00011-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00011-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00012-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00012-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00013-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00013-of-00051.safetensors",
+      "bytes": 197135040
+    },
+    {
+      "path": "model-00014-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00014-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00015-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00015-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00016-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00016-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00017-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00017-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00018-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00018-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00019-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00019-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00020-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00020-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00021-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00021-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00022-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00022-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00023-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00023-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00024-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00024-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00025-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00025-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00026-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00026-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00027-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00027-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00028-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00028-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00029-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00029-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00030-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00030-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00031-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00031-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00032-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00032-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00033-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00033-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00034-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00034-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00035-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00035-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00036-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00036-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00037-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00037-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00038-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00038-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00039-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00039-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00040-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00040-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00041-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00041-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00042-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00042-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00043-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00043-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00044-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00044-of-00051.safetensors",
+      "bytes": 1208006264
+    },
+    {
+      "path": "model-00045-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00045-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00046-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00046-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00047-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00047-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00048-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00048-of-00051.safetensors",
+      "bytes": 1208006648
+    },
+    {
+      "path": "model-00049-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00049-of-00051.safetensors",
+      "bytes": 1072708800
+    },
+    {
+      "path": "model-00050-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/resolve/d3ead4dba61c09aac60a261a96ad1df3e705febb/model-00050-of-00051.safetensors",
+      "bytes": 1063256608
+    }
+  ],
+  "totalBytes": 60131744832,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-30b-a3b"
+  ],
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-translategemma-4b-it-bf16",
+  "modelVersionId": "model:google-translategemma-4b-it",
+  "baseModelRepository": "google/translategemma-4b-it",
+  "baseRevision": "10042cb0e6e7fdce748996a71dc3dc432a4e0c89",
+  "publisher": "google",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/google/translategemma-4b-it",
+  "filesUrl": "https://huggingface.co/google/translategemma-4b-it/tree/10042cb0e6e7fdce748996a71dc3dc432a4e0c89",
+  "repositoryRevision": "10042cb0e6e7fdce748996a71dc3dc432a4e0c89",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/google/translategemma-4b-it/resolve/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/model-00001-of-00002.safetensors",
+      "bytes": 4961251752
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/google/translategemma-4b-it/resolve/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/model-00002-of-00002.safetensors",
+      "bytes": 3639026128
+    }
+  ],
+  "totalBytes": 8600277880,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-4b-it"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-translategemma-12b-it-bf16",
+  "modelVersionId": "model:google-translategemma-12b-it",
+  "baseModelRepository": "google/translategemma-12b-it",
+  "baseRevision": "d1b225e1caa17f1ddc7e62065d8637d0923f34e2",
+  "publisher": "google",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/google/translategemma-12b-it",
+  "filesUrl": "https://huggingface.co/google/translategemma-12b-it/tree/d1b225e1caa17f1ddc7e62065d8637d0923f34e2",
+  "repositoryRevision": "d1b225e1caa17f1ddc7e62065d8637d0923f34e2",
+  "files": [
+    {
+      "path": "model-00001-of-00005.safetensors",
+      "url": "https://huggingface.co/google/translategemma-12b-it/resolve/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/model-00001-of-00005.safetensors",
+      "bytes": 4979902192
+    },
+    {
+      "path": "model-00002-of-00005.safetensors",
+      "url": "https://huggingface.co/google/translategemma-12b-it/resolve/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/model-00002-of-00005.safetensors",
+      "bytes": 4931296592
+    },
+    {
+      "path": "model-00003-of-00005.safetensors",
+      "url": "https://huggingface.co/google/translategemma-12b-it/resolve/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/model-00003-of-00005.safetensors",
+      "bytes": 4931296656
+    },
+    {
+      "path": "model-00004-of-00005.safetensors",
+      "url": "https://huggingface.co/google/translategemma-12b-it/resolve/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/model-00004-of-00005.safetensors",
+      "bytes": 4931296656
+    },
+    {
+      "path": "model-00005-of-00005.safetensors",
+      "url": "https://huggingface.co/google/translategemma-12b-it/resolve/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/model-00005-of-00005.safetensors",
+      "bytes": 4601000928
+    }
+  ],
+  "totalBytes": 24374793024,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-12b-it"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-translategemma-27b-it-bf16",
+  "modelVersionId": "model:google-translategemma-27b-it",
+  "baseModelRepository": "google/translategemma-27b-it",
+  "baseRevision": "7d10f0b72f89a2d0f268cea30727d8b77c0d25c2",
+  "publisher": "google",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/google/translategemma-27b-it",
+  "filesUrl": "https://huggingface.co/google/translategemma-27b-it/tree/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2",
+  "repositoryRevision": "7d10f0b72f89a2d0f268cea30727d8b77c0d25c2",
+  "files": [
+    {
+      "path": "model-00001-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00001-of-00012.safetensors",
+      "bytes": 4854573696
+    },
+    {
+      "path": "model-00002-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00002-of-00012.safetensors",
+      "bytes": 4954792944
+    },
+    {
+      "path": "model-00003-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00003-of-00012.safetensors",
+      "bytes": 4954792976
+    },
+    {
+      "path": "model-00004-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00004-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00005-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00005-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00006-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00006-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00007-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00007-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00008-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00008-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00009-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00009-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00010-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00010-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00011-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00011-of-00012.safetensors",
+      "bytes": 4954793016
+    },
+    {
+      "path": "model-00012-of-00012.safetensors",
+      "url": "https://huggingface.co/google/translategemma-27b-it/resolve/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/model-00012-of-00012.safetensors",
+      "bytes": 462476696
+    }
+  ],
+  "totalBytes": 54864980440,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-27b-it"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-madlad400-3b-mt-fp32",
+  "modelVersionId": "model:google-madlad400-3b-mt",
+  "baseModelRepository": "google/madlad400-3b-mt",
+  "baseRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "publisher": "google",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "FP32",
+  "precision": "fp32",
+  "repositoryUrl": "https://huggingface.co/google/madlad400-3b-mt",
+  "filesUrl": "https://huggingface.co/google/madlad400-3b-mt/tree/fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "repositoryRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/google/madlad400-3b-mt/resolve/fa184c675da0b5c9e1c8694fccd4e12e2d422094/model.safetensors",
+      "bytes": 11761587872
+    }
+  ],
+  "totalBytes": 11761587872,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-madlad400-3b-mt-q2k",
+  "modelVersionId": "model:google-madlad400-3b-mt",
+  "baseModelRepository": "google/madlad400-3b-mt",
+  "baseRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "publisher": "google",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q2k",
+  "precision": "q2k",
+  "repositoryUrl": "https://huggingface.co/google/madlad400-3b-mt",
+  "filesUrl": "https://huggingface.co/google/madlad400-3b-mt/tree/fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "repositoryRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "files": [
+    {
+      "path": "model-q2k.gguf",
+      "url": "https://huggingface.co/google/madlad400-3b-mt/resolve/fa184c675da0b5c9e1c8694fccd4e12e2d422094/model-q2k.gguf",
+      "bytes": 965486240
+    }
+  ],
+  "totalBytes": 965486240,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ],
+  "runtimeEngines": [
+    "Candle"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-madlad400-3b-mt-q3k",
+  "modelVersionId": "model:google-madlad400-3b-mt",
+  "baseModelRepository": "google/madlad400-3b-mt",
+  "baseRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "publisher": "google",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q3k",
+  "precision": "q3k",
+  "repositoryUrl": "https://huggingface.co/google/madlad400-3b-mt",
+  "filesUrl": "https://huggingface.co/google/madlad400-3b-mt/tree/fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "repositoryRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "files": [
+    {
+      "path": "model-q3k.gguf",
+      "url": "https://huggingface.co/google/madlad400-3b-mt/resolve/fa184c675da0b5c9e1c8694fccd4e12e2d422094/model-q3k.gguf",
+      "bytes": 1264101024
+    }
+  ],
+  "totalBytes": 1264101024,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ],
+  "runtimeEngines": [
+    "Candle"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-google-madlad400-3b-mt-q4k",
+  "modelVersionId": "model:google-madlad400-3b-mt",
+  "baseModelRepository": "google/madlad400-3b-mt",
+  "baseRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "publisher": "google",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q4k",
+  "precision": "q4k",
+  "repositoryUrl": "https://huggingface.co/google/madlad400-3b-mt",
+  "filesUrl": "https://huggingface.co/google/madlad400-3b-mt/tree/fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "repositoryRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "files": [
+    {
+      "path": "model-q4k.gguf",
+      "url": "https://huggingface.co/google/madlad400-3b-mt/resolve/fa184c675da0b5c9e1c8694fccd4e12e2d422094/model-q4k.gguf",
+      "bytes": 1654597280
+    }
+  ],
+  "totalBytes": 1654597280,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ],
+  "runtimeEngines": [
+    "Candle"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-facebook-nllb-200-distilled-600m-fp32",
+  "modelVersionId": "model:facebook-nllb-200-distilled-600m",
+  "baseModelRepository": "facebook/nllb-200-distilled-600M",
+  "baseRevision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+  "publisher": "facebook",
+  "authority": "official",
+  "format": "pytorch",
+  "variant": "FP32",
+  "precision": "fp32",
+  "repositoryUrl": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+  "filesUrl": "https://huggingface.co/facebook/nllb-200-distilled-600M/tree/f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+  "repositoryRevision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+  "files": [
+    {
+      "path": "pytorch_model.bin",
+      "url": "https://huggingface.co/facebook/nllb-200-distilled-600M/resolve/f8d333a098d19b4fd9a8b18f94170487ad3f821d/pytorch_model.bin",
+      "bytes": 2460457927
+    }
+  ],
+  "totalBytes": 2460457927,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-facebook-nllb-200-distilled-600m"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-1-8b-gguf-q4-k-m",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseModelRepository": "tencent/HY-MT1.5-1.8B",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q4_K_M",
+  "precision": "q4_k_m",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/tree/265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "repositoryRevision": "265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "files": [
+    {
+      "path": "HY-MT1.5-1.8B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/resolve/265b2e615a7dc9b06c435dc878829ad99a512ba2/HY-MT1.5-1.8B-Q4_K_M.gguf",
+      "bytes": 1133080512
+    }
+  ],
+  "totalBytes": 1133080512,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-1-8b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-1-8b-gguf-q6-k",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseModelRepository": "tencent/HY-MT1.5-1.8B",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q6_K",
+  "precision": "q6_k",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/tree/265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "repositoryRevision": "265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "files": [
+    {
+      "path": "HY-MT1.5-1.8B-Q6_K.gguf",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/resolve/265b2e615a7dc9b06c435dc878829ad99a512ba2/HY-MT1.5-1.8B-Q6_K.gguf",
+      "bytes": 1474785216
+    }
+  ],
+  "totalBytes": 1474785216,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-1-8b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-1-8b-gguf-q8-0",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseModelRepository": "tencent/HY-MT1.5-1.8B",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q8_0",
+  "precision": "q8_0",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/tree/265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "repositoryRevision": "265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "files": [
+    {
+      "path": "HY-MT1.5-1.8B-Q8_0.gguf",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/resolve/265b2e615a7dc9b06c435dc878829ad99a512ba2/HY-MT1.5-1.8B-Q8_0.gguf",
+      "bytes": 1908528288
+    }
+  ],
+  "totalBytes": 1908528288,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-1-8b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-1-8b-fp8-fp8",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseModelRepository": "tencent/HY-MT1.5-1.8B",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "FP8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-FP8",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-FP8/tree/d6a25004e1c42c06e90731f6889dab522dc2d68a",
+  "repositoryRevision": "d6a25004e1c42c06e90731f6889dab522dc2d68a",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-FP8/resolve/d6a25004e1c42c06e90731f6889dab522dc2d68a/model.safetensors",
+      "bytes": 2038746952
+    }
+  ],
+  "totalBytes": 2038746952,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-1-8b-fp8"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-1-8b-gptq-int4-gptq-int4",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseModelRepository": "tencent/HY-MT1.5-1.8B",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "GPTQ-Int4",
+  "precision": "gptq-int4",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GPTQ-Int4",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GPTQ-Int4/tree/614b90aaac3987fbe4d6b3c976000b8c996cf5ca",
+  "repositoryRevision": "614b90aaac3987fbe4d6b3c976000b8c996cf5ca",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GPTQ-Int4/resolve/614b90aaac3987fbe4d6b3c976000b8c996cf5ca/model.safetensors",
+      "bytes": 1329672064
+    }
+  ],
+  "totalBytes": 1329672064,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-1-8b-gptq-int4"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-7b-gguf-q4-k-m",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "baseModelRepository": "tencent/HY-MT1.5-7B",
+  "baseRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q4_K_M",
+  "precision": "q4_k_m",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/tree/126325496bc8e3575f1d8615b8ca951d8483f206",
+  "repositoryRevision": "126325496bc8e3575f1d8615b8ca951d8483f206",
+  "files": [
+    {
+      "path": "HY-MT1.5-7B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/resolve/126325496bc8e3575f1d8615b8ca951d8483f206/HY-MT1.5-7B-Q4_K_M.gguf",
+      "bytes": 4624649312
+    }
+  ],
+  "totalBytes": 4624649312,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-7b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-7b-gguf-q6-k",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "baseModelRepository": "tencent/HY-MT1.5-7B",
+  "baseRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q6_K",
+  "precision": "q6_k",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/tree/126325496bc8e3575f1d8615b8ca951d8483f206",
+  "repositoryRevision": "126325496bc8e3575f1d8615b8ca951d8483f206",
+  "files": [
+    {
+      "path": "HY-MT1.5-7B-Q6_K.gguf",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/resolve/126325496bc8e3575f1d8615b8ca951d8483f206/HY-MT1.5-7B-Q6_K.gguf",
+      "bytes": 6164483168
+    }
+  ],
+  "totalBytes": 6164483168,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-7b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-7b-gguf-q8-0",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "baseModelRepository": "tencent/HY-MT1.5-7B",
+  "baseRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q8_0",
+  "precision": "q8_0",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/tree/126325496bc8e3575f1d8615b8ca951d8483f206",
+  "repositoryRevision": "126325496bc8e3575f1d8615b8ca951d8483f206",
+  "files": [
+    {
+      "path": "HY-MT1.5-7B-Q8_0.gguf",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/resolve/126325496bc8e3575f1d8615b8ca951d8483f206/HY-MT1.5-7B-Q8_0.gguf",
+      "bytes": 7981929344
+    }
+  ],
+  "totalBytes": 7981929344,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-7b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt1-5-7b-fp8-fp8",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "baseModelRepository": "tencent/HY-MT1.5-7B",
+  "baseRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "FP8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-FP8",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-7B-FP8/tree/49e35a5a5ebdd8a5b2e7c4d022c2760af8a4a0a8",
+  "repositoryRevision": "49e35a5a5ebdd8a5b2e7c4d022c2760af8a4a0a8",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B-FP8/resolve/49e35a5a5ebdd8a5b2e7c4d022c2760af8a4a0a8/model-00001-of-00002.safetensors",
+      "bytes": 4997139976
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B-FP8/resolve/49e35a5a5ebdd8a5b2e7c4d022c2760af8a4a0a8/model-00002-of-00002.safetensors",
+      "bytes": 3032764328
+    }
+  ],
+  "totalBytes": 8029904304,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt1-5-7b-fp8"
+  ],
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-1-8b-gguf-q4-k-m",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "baseModelRepository": "tencent/Hy-MT2-1.8B",
+  "baseRevision": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q4_K_M",
+  "precision": "q4_k_m",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/tree/a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "repositoryRevision": "a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "files": [
+    {
+      "path": "Hy-MT2-1.8B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q4_K_M.gguf",
+      "bytes": 1133080448
+    }
+  ],
+  "totalBytes": 1133080448,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-1-8b-gguf-q6-k",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "baseModelRepository": "tencent/Hy-MT2-1.8B",
+  "baseRevision": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q6_K",
+  "precision": "q6_k",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/tree/a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "repositoryRevision": "a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "files": [
+    {
+      "path": "Hy-MT2-1.8B-Q6_K.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q6_K.gguf",
+      "bytes": 1474785120
+    }
+  ],
+  "totalBytes": 1474785120,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-1-8b-gguf-q8-0",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "baseModelRepository": "tencent/Hy-MT2-1.8B",
+  "baseRevision": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q8_0",
+  "precision": "q8_0",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/tree/a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "repositoryRevision": "a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "files": [
+    {
+      "path": "Hy-MT2-1.8B-Q8_0.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q8_0.gguf",
+      "bytes": 1908528192
+    }
+  ],
+  "totalBytes": 1908528192,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-1-8b-fp8-fp8",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "baseModelRepository": "tencent/Hy-MT2-1.8B",
+  "baseRevision": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "FP8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-FP8",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-1.8B-FP8/tree/b3f6f590920726d69a5504293bd4f36d50e5f681",
+  "repositoryRevision": "b3f6f590920726d69a5504293bd4f36d50e5f681",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-FP8/resolve/b3f6f590920726d69a5504293bd4f36d50e5f681/model.safetensors",
+      "bytes": 2038746952
+    }
+  ],
+  "totalBytes": 2038746952,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b-fp8"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-7b-gguf-q6-k",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "baseModelRepository": "tencent/Hy-MT2-7B",
+  "baseRevision": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q6_K",
+  "precision": "q6_k",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/tree/ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "repositoryRevision": "ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "files": [
+    {
+      "path": "HY-MT2-7B-Q6_K.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/resolve/ab8472660ac61fac25f1af43fac2599d52a8a775/HY-MT2-7B-Q6_K.gguf",
+      "bytes": 6164482720
+    }
+  ],
+  "totalBytes": 6164482720,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-7b-gguf-q8-0",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "baseModelRepository": "tencent/Hy-MT2-7B",
+  "baseRevision": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q8_0",
+  "precision": "q8_0",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/tree/ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "repositoryRevision": "ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "files": [
+    {
+      "path": "HY-MT2-7B-Q8_0.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/resolve/ab8472660ac61fac25f1af43fac2599d52a8a775/HY-MT2-7B-Q8_0.gguf",
+      "bytes": 7981928896
+    }
+  ],
+  "totalBytes": 7981928896,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-7b-gguf-q4-k-m",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "baseModelRepository": "tencent/Hy-MT2-7B",
+  "baseRevision": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "Q4_K_M",
+  "precision": "q4_k_m",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/tree/ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "repositoryRevision": "ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "files": [
+    {
+      "path": "Hy-MT2-7B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/resolve/ab8472660ac61fac25f1af43fac2599d52a8a775/Hy-MT2-7B-Q4_K_M.gguf",
+      "bytes": 4624648896
+    }
+  ],
+  "totalBytes": 4624648896,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b-gguf"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-7b-fp8-fp8",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "baseModelRepository": "tencent/Hy-MT2-7B",
+  "baseRevision": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "FP8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-7B-FP8",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-7B-FP8/tree/883d09eb21d9be92058556cd0a4016d8a648c7db",
+  "repositoryRevision": "883d09eb21d9be92058556cd0a4016d8a648c7db",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B-FP8/resolve/883d09eb21d9be92058556cd0a4016d8a648c7db/model-00001-of-00002.safetensors",
+      "bytes": 4997139976
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B-FP8/resolve/883d09eb21d9be92058556cd0a4016d8a648c7db/model-00002-of-00002.safetensors",
+      "bytes": 3032764328
+    }
+  ],
+  "totalBytes": 8029904304,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b-fp8"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:translation0920-tencent-hy-mt2-30b-a3b-fp8-fp8",
+  "modelVersionId": "model:tencent-hy-mt2-30b-a3b",
+  "baseModelRepository": "tencent/Hy-MT2-30B-A3B",
+  "baseRevision": "d3ead4dba61c09aac60a261a96ad1df3e705febb",
+  "publisher": "tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "FP8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8",
+  "filesUrl": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/tree/b69671c83c2137c6982209715030df82f0093ee1",
+  "repositoryRevision": "b69671c83c2137c6982209715030df82f0093ee1",
+  "files": [
+    {
+      "path": "kv_cache_scales.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/kv_cache_scales.safetensors",
+      "bytes": 9440
+    },
+    {
+      "path": "model-00000-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00000-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00001-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00001-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00002-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00002-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00003-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00003-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00004-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00004-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00005-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00005-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00006-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00006-of-00051.safetensors",
+      "bytes": 523776944
+    },
+    {
+      "path": "model-00007-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00007-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00008-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00008-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00009-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00009-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00010-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00010-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00011-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00011-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00012-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00012-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00013-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00013-of-00051.safetensors",
+      "bytes": 98573904
+    },
+    {
+      "path": "model-00014-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00014-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00015-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00015-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00016-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00016-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00017-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00017-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00018-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00018-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00019-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00019-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00020-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00020-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00021-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00021-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00022-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00022-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00023-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00023-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00024-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00024-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00025-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00025-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00026-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00026-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00027-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00027-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00028-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00028-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00029-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00029-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00030-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00030-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00031-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00031-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00032-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00032-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00033-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00033-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00034-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00034-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00035-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00035-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00036-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00036-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00037-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00037-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00038-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00038-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00039-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00039-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00040-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00040-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00041-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00041-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00042-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00042-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00043-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00043-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00044-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00044-of-00051.safetensors",
+      "bytes": 604113656
+    },
+    {
+      "path": "model-00045-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00045-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00046-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00046-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00047-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00047-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00048-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00048-of-00051.safetensors",
+      "bytes": 604114808
+    },
+    {
+      "path": "model-00049-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00049-of-00051.safetensors",
+      "bytes": 536390672
+    },
+    {
+      "path": "model-00050-of-00051.safetensors",
+      "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/resolve/b69671c83c2137c6982209715030df82f0093ee1/model-00050-of-00051.safetensors",
+      "bytes": 1026557048
+    }
+  ],
+  "totalBytes": 30578693616,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-30b-a3b-fp8"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "Transformers"
+  ]
+});

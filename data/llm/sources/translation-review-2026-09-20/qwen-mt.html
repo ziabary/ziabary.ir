@@ -1,0 +1,1471 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="transparent alicloud back-to-top new_default">
+<link rel="stylesheet" href="//g.alicdn.com/aliyun-help/help-portal-fe/0.12.64/css/index.css" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="spm-id" content="a2c63">
+<meta name="data-spm" content="a2c63" />
+<meta name="aplus-core" content="aplus.js">
+<meta name="aplus-ajax" content="chksum">
+<meta name="aplus-waiting" content="MAN">
+<meta name="aplus-pvhash" content="1">
+ <!-- MINOR_LANG_ENTRY_GATE：es/ko/de/tr/vi/th 入口卡点，翻译/内容就绪后把 content 追加 es,ko,de,tr,vi,th -->
+<!-- FR_ENTRY_GATE：fr 已在预发验证分支放开（本分支 FR_ENTRY_ENABLED=true）；线上卡点分支的 content 为 en,zh,tc,ja,id,pt-BR -->
+<meta name="kloud:supported-langs" content="en,zh,tc,ja,id,pt-BR,fr"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="aplus-rhost-v" content="sg.mmstat.com">
+<meta name="aplus-rhost-g" content="sg.mmstat.com">
+<title>
+ Qwen-MT translation model - Alibaba Cloud Model Studio - Alibaba Cloud Documentation Center
+
+</title>
+ <meta name="keywords" content="qwen,multilingual translation">
+ <meta name="description" content="Qwen-MT translation model,Alibaba Cloud Model Studio:Qwen-MT is a machine translation model fine-tuned from Qwen3. It supports 92 languages -- including Chinese, English, Japanese, Korean, French, Spanish, German, Thai, Indonesian, Vietnamese, and Arabi...">
+ <script>
+window.globalData = {
+website: "intl",
+language: "en",
+nodeId:"2860790",
+channel: "",
+notfound: "",
+statusCode: "",
+errorType: ""
+};
+// UT的全局配置变量，在CDN加载前配置
+window.$ACE_TRACKER_CONFIG = {
+enableHistory: true,
+enableHash: false
+};
+</script>
+<!-- <base href="https://www.alibabacloud.com">-->
+<link rel="canonical" href="https://www.alibabacloud.com/help/en/model-studio/machine-translation"/>
+ <meta property="og:title" content="Machine translation (Qwen-MT) - Alibaba Cloud" />
+ <meta property="og:type" content="website" />
+ <meta property="og:url" content="https://www.alibabacloud.com/help/en/model-studio/machine-translation" />
+ <meta property="og:image" content="https://img.alicdn.com/tfs/TB1xpNqnmslXu8jSZFuXXXg7FXa-1200-630.png_.webp" />
+ <meta property="og:description" content="Qwen-MT translation model,Alibaba Cloud Model Studio:Qwen-MT is a machine translation model fine-tuned from Qwen3. It supports 92 languages -- including Chinese, English, Japanese, Korean, French, Spanish, German, Thai, Indonesian, Vietnamese, and Arabi..." />
+ <link rel="shortcut icon" href="//img.alicdn.com/tfs/TB1ugg7M9zqK1RjSZPxXXc4tVXa-32-32.png"/>
+<link rel="stylesheet" href="https://o.alicdn.com/fund/alicloud-pure-layout/css/index.min.css" />
+ <link
+rel="icon"
+href="https://img.alicdn.com/imgextra/i2/O1CN01TFs5Qw27uYvfA6gib_!!6000000007857-55-tps-32-32.svg"
+type="image/x-icon"
+/>
+</head>
+<body data-spm="" class="HAS_ALPS_RESOURCE"><script  type="text/javascript">
+(function  (d)  {
+var  t=d.createElement("script");t.type="text/javascript";t.async=true;t.id="tb-beacon-aplus";
+t.setAttribute("exparams","category=&userid=&aplus&yunid=&yunpk=&channel=&cps=");
+t.src="//g.alicdn.com/alilog/mlog/aplus_v2.js";
+d.getElementsByTagName("head")[0].appendChild(t);
+})(document);
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=1acb03c117899015602142709eafe5&asid=AQAAAAD4uq9qkMmfXwAAAAAT0Rjz08/Qqg==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+ <script async src="https://o.alicdn.com/fund/alicloud-pure-layout/index.js"></script>
+
+<div id="app">
+<div class="aliyun-app-layout">
+
+<!-- docId:2860790 -->
+<input type="hidden" id="website" value="intl">
+<div class="products-wrapper$tip" data-spm="879954">
+<section id="products" class="intl-product container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12" id="navDocument">
+<div class="doc-nav">
+<a class="doc-center" href="/help/en">
+<i class="icon-docs icon-docs-back"></i>
+Document Center
+</a>
+</div>
+<div class="placeholder-ele">&nbsp;</div>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-8 col-xs-12 doc-content">
+<div class="all-products action" id="J_AllProducts">
+<div class="all-products-head">
+<div class="all-products-title">All Products</div>
+<div class="all-products-search-wrapper">
+<div class="all-products-search focus">
+<input autocomplete="off" class="all-products-search-box-input" id="J_AllProductsSearch" placeholder="Search Product" data-spm-anchor-id="a2c4g.11186623.6.i0.1f753945H9RVzu">
+<i class="icon-search icon-docs icon-docs-search"></i>
+<ul class="all-products-search-result" style="display: none;">
+</ul>
+</div>
+</div>
+</div>
+<div class="all-products-body" id="J_AllProductsBody"></div>
+</div>
+<div class="search-product-modal">
+Search
+</div>
+<div class="breadcrumbs-top" data-spm="a1">
+<div class="row nav-breadcrumb">
+ <div class="col-md-12 hidden-sm hidden-xs">
+<ul class="breadcrumb text-sm">
+<li><a class="active" title="Document Center" href="/help/en">Document Center</a></li>
+ <li><a class="active" title="Alibaba Cloud Model Studio" href="/help/en/model-studio/">Alibaba Cloud Model Studio</a></li>
+ <li><a class="active" title="User Guide (Models)" href="/help/en/model-studio/model-user-guide/">User Guide (Models)</a></li>
+ <li><a class="active" title="Model Playground" href="/help/en/model-studio/model-experience/">Model Playground</a></li>
+ <li><a class="active" title="Text generation" href="/help/en/model-studio/text-generation-model/">Text generation</a></li>
+ <li><a class="active" title="Specialized models" href="/help/en/model-studio/specialized-models/">Specialized models</a></li>
+ <li><a class="active" title="Machine translation (Qwen-MT)" href="/help/en/model-studio/machine-translation">Machine translation (Qwen-MT)</a></li>
+ </ul>
+</div>
+ <div class="col-md-4 col-sm-12">
+<button type="button" class="navbar-toggle bc mr0" data-toggle="collapse"
+data-target="#sideMenu-mobile">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+all-products-head <span class="icon-bar"></span>
+</button>
+</div>
+</div>
+<form class="search-bar clearfix" method="GET" action="/s/en">
+<input type="hidden" name="type" value="doc"/>
+<div class="select">
+<p class="select-text">
+<span class="placeholder">This Product</span>
+<i class="icon-docs icon-docs-selected"></i>
+</p>
+<ul class="select-options" style="display:none;">
+<li class="option selected" data-value="h_pid_$productId">This Product</li>
+<li class="option" data-value="">All Products</li>
+</ul>
+<input type="hidden" name="rangeinfo" value="h_pid_2400256"/>
+</div>
+<input autocomplete="off" class="search-key" type="text" placeholder="Search by keyword" name="k"/>
+<ul class="help-top-search-result" style="display: block;"></ul>
+<button class="search-submit" type="submit">
+<i class="icon-docs icon-docs-search"></i>
+</button>
+<div class="collapse-menus select">
+<p class="select-text">
+<span class="placeholder">Alibaba Cloud Model Studio:Machine translation (Qwen-MT)</span>
+<i class="icon-docs icon-docs-more"></i>
+</p>
+</div>
+</form>
+</div>
+<header id="header-faq" class="clearfix">
+<a class="doc-center" href="/help/en">
+<i class="icon-docs icon-docs-back"></i>
+Document Center
+</a>
+<div class="download-links">
+ </div>
+<h1 class="page-title">Alibaba Cloud Model Studio:Machine translation (Qwen-MT)</h1>
+<div class="doc-status">
+Last Updated:Sep 11, 2026
+</div>
+</header>
+<article class="product-description markdown-body">
+<div lang="en" class="icms-help-docs-content">
+<div lang="en" class="icms-help-docs-content"><p data-tag="shortdesc" class="shortdesc">Qwen-MT is a machine translation model fine-tuned from Qwen3. It supports 92 languages -- including Chinese, English, Japanese, Korean, French, Spanish, German, Thai, Indonesian, Vietnamese, and Arabic -- and offers term intervention, domain prompting, and translation memory to control translation quality.</p><h2 id="how-it-works">How it works <span id="d8b1952a69frv"></span> <span id="5558aec3672pb"></span></h2>
+<ol>
+<li>
+<p><strong>Provide the text to translate</strong>: The <code>messages</code> array must contain a single message with its <code>role</code> set to <code>user</code>. The <code>content</code> of this message is the text you want to translate.</p>
+</li>
+<li>
+<p><strong>Set languages</strong>: Specify the source language (<code>source_lang</code>) and target language (<code>target_lang</code>) in the <code>translation_options</code> parameter. For a list of supported languages, see <a href="/help/en/model-studio/machine-translation#038d2865bbydc">Supported languages</a>. To let the model detect the source language automatically, set <code>source_lang</code> to <code>auto</code>.</p>
+<blockquote>
+<p>Specifying the source language improves translation accuracy.</p>
+</blockquote>
+<blockquote>
+<p>You can also set the language using <a href="/help/en/model-studio/machine-translation#42ac4e67d6bnf">custom prompts</a> .</p>
+</blockquote>
+</li>
+</ol>
+<p>The following examples show how to call Qwen-MT using the OpenAI-compatible and DashScope Python SDKs.</p>
+<div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-openai-compatible-tab" type="radio" name="check-fig-code-group" checked=""/><label for="fig-code-group-openai-compatible-tab">OpenAI compatible</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-openai-compatible" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code># Import dependencies and create a client...
+completion = client.chat.completions.create(
+    model=&quot;qwen-mt-flash&quot;,    # Select the model
+    # The messages parameter must contain only one message with the role set to user, and its content is the text to be translated.
+    messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;No me reí después de ver este video&quot;}],
+    # Because translation_options is not a standard OpenAI parameter, it must be passed in the extra_body parameter.
+    extra_body={&quot;translation_options&quot;: {&quot;source_lang&quot;: &quot;auto&quot;, &quot;target_lang&quot;: &quot;English&quot;}},
+)
+</code></pre></div><input id="fig-code-group-dashscope-tab" type="radio" name="check-fig-code-group"/><label for="fig-code-group-dashscope-tab">DashScope</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-dashscope" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code># Import dependencies...
+response = dashscope.Generation.call(
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    model=&quot;qwen-mt-flash&quot;,  # Select a model
+    messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;No me reí después de ver este video&quot;}],  # messages: &#x27;role&#x27; is &#x27;user&#x27; and &#x27;content&#x27; is the text to be translated.
+    translation_options={&quot;source_lang&quot;: &quot;auto&quot;, &quot;target_lang&quot;: &quot;English&quot;},  # Configure translation options.
+    result_format=&quot;message&quot;
+)
+</code></pre></div></div>
+<div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-2" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-2-openai-compatible-tab" type="radio" name="check-fig-code-group-2" checked=""/><label for="fig-code-group-2-openai-compatible-tab">OpenAI compatible</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-2-openai-compatible" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+client = OpenAI(
+    # If the environment variable is not configured, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+completion = client.chat.completions.create(
+    model=&quot;qwen-mt-flash&quot;,
+    # The messages parameter must contain exactly one message with the role &#x27;user&#x27;, and its content is the text to be translated.
+    messages=[
+        {
+            &quot;role&quot;: &quot;user&quot;,
+            &quot;content&quot;: &quot;No me reí después de ver este video&quot;
+        }
+    ],
+    # Because translation_options is not a standard OpenAI parameter, you must pass it using the extra_body parameter.
+    extra_body={
+        # Configure translation options.
+        &quot;translation_options&quot;: {
+            &quot;source_lang&quot;: &quot;auto&quot;,
+            &quot;target_lang&quot;: &quot;English&quot;
+        }
+    },
+)
+</code></pre></div><input id="fig-code-group-2-dashscope-tab" type="radio" name="check-fig-code-group-2"/><label for="fig-code-group-2-dashscope-tab">DashScope</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-2-dashscope" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+
+response = dashscope.Generation.call(
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    model=&quot;qwen-mt-flash&quot;,
+    # The messages parameter must contain exactly one message with the role &quot;user&quot;, and its content is the text to be translated.
+    messages=[
+        {
+            &quot;role&quot;: &quot;user&quot;,
+            &quot;content&quot;: &quot;No me reí después de ver este video&quot;
+        }
+    ],
+    # Configure translation options.
+    translation_options={
+        &quot;source_lang&quot;: &quot;auto&quot;,
+        &quot;target_lang&quot;: &quot;English&quot;,
+    },
+    result_format=&quot;message&quot;
+)
+print(response.output.choices[0].message.content)
+</code></pre></div></div>
+<p>Use the <code>translation_options</code> parameter to access advanced translation features such as <a href="/help/en/model-studio/machine-translation#2bf54a5ab5voe">term intervention</a>, <a href="/help/en/model-studio/machine-translation#17e15234e7gfp">translation memory</a>, and <a href="/help/en/model-studio/machine-translation#4af23a31db7lf">domain prompting</a>.</p>
+<strong>Limitations</strong>
+<ul>
+<li><strong>Single-turn translation only</strong>: Qwen-MT is purpose-built for translation and does not support multi-turn conversations.</li>
+<li><strong>System messages not supported</strong>: You cannot set global behavior through a <code>system</code>-role message. Instead, configure translation behavior in the <code>translation_options</code> parameter.</li>
+</ul>
+<h2 id="model-selection">Model selection <span id="154957e783dxk"></span> <span id="efd59c2b9eosx"></span></h2>
+<ul>
+<li><strong>For general scenarios</strong>, choose <code>qwen-mt-flash</code>. It offers the best balance of quality, speed, and cost, and supports incremental streaming output.</li>
+<li>For the <strong>highest translation quality</strong> in professional domains, choose <code>qwen-mt-plus</code>.</li>
+<li>For the <strong>fastest response speed</strong> in simple, real-time scenarios, choose <code>qwen-mt-lite</code>.</li>
+</ul>
+<p>The following table compares the available models.</p>
+<table style="display:table;table-layout:fixed;width:100%"><colgroup><col style="width:13.73%"/><col style="width:37.26%"/><col style="width:9.8%"/><col style="width:9.8%"/><col style="width:9.8%"/><col style="width:9.8%"/><col style="width:9.81%"/></colgroup><thead><tr><th><p><strong>Model</strong></p></th><th><p><strong>Scenario</strong></p></th><th><p><strong>Result</strong></p></th><th><p><strong>Speed</strong></p></th><th><p><strong>Cost</strong></p></th><th><p><strong>Supported languages</strong></p></th><th><p><strong>Incremental stream</strong></p></th></tr></thead><tbody><tr><td><p>qwen-mt-plus</p></td><td><p>Provides high-quality translation for scenarios such as professional fields, formal documents, academic papers, and technical reports</p></td><td><p>Best</p></td><td><p>Standard</p></td><td><p>High</p></td><td><p>92</p></td><td><p>Unsupported</p></td></tr><tr><td><p>qwen-mt-flash</p></td><td><p><strong>Recommended for general use.</strong> Suitable for website and app content, product descriptions, daily communication, and blog posts</p></td><td><p>Good</p></td><td><p>Fast</p></td><td><p>Low</p></td><td><p>92</p></td><td><p>Supported</p></td></tr><tr><td><p>qwen-mt-turbo</p></td><td><p>This model will not be updated in the future. Use flash instead.</p></td><td><p>Fair</p></td><td><p>Fast</p></td><td><p>Low</p></td><td><p>92</p></td><td><p>Unsupported</p></td></tr><tr><td><p>qwen-mt-lite</p></td><td><p>Simple, latency-sensitive scenarios like real-time chat and live comment translation</p></td><td><p>Basic</p></td><td><p>Fastest</p></td><td><p>Lowest</p></td><td><p>31</p></td><td><p>Supported</p></td></tr></tbody></table>
+<p>Check context window limits and pricing in the <a href="https://modelstudio.console.alibabacloud.com/cn-beijing/model/market">console</a>. For concurrent request limits, see <a href="/help/en/model-studio/rate-limit#a794de0a15ajo">Qwen translation model</a>.</p>
+<h2 id="getting-started">Getting started <span id="7061ab486cead"></span> <span id="d6e148cc43a5z"></span></h2>
+<p>This section walks through a simple example: translating <code>&quot;No me reí después de ver este video&quot;</code> into English.</p>
+<p><a href="/help/en/model-studio/get-api-key">Obtain an API key</a> and <a href="/help/en/model-studio/get-api-key">export the API key as an environment variable</a>. If you use the OpenAI SDK or DashScope SDK to make calls, <a href="/help/en/model-studio/install-sdk">install the SDK</a>.</p>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs" class="tabbed-content-box section"><section id="openai-compatible" class="section"><h4 id="openai-compatible-h4">OpenAI compatible</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-3" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-3-python-tab" type="radio" name="check-fig-code-group-3" checked=""/><label for="fig-code-group-3-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-3-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    # If you have not configured the environment variable, replace the following line with your Alibaba Cloud Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;No me reí después de ver este video&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;
+}
+
+completion = client.chat.completions.create(
+    model=&quot;qwen-mt-plus&quot;,
+    messages=messages,
+    extra_body={
+        &quot;translation_options&quot;: translation_options
+    }
+)
+print(completion.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-3-bash-tab" type="radio" name="check-fig-code-group-3"/><label for="fig-code-group-3-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-3-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1/chat/completions \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-d &#x27;{
+    &quot;model&quot;: &quot;qwen-mt-flash&quot;,
+    &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;No me reí después de ver este video&quot;}],
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;
+      }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block" code-type="xCode" class="pre codeblock"><code>I didn&#x27;t laugh after watching this video.
+</code></pre></section><section id="dashscope" class="section"><h4 id="dashscope-h4">DashScope</h4><strong>Sample request</strong><div class="note note-important"><div class="note-icon-wrapper"></div><div class="note-content"><p><strong>Important</strong>The DashScope Java SDK must be version 2.20.6 or later.</p></div></div><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-4" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-4-python-tab" type="radio" name="check-fig-code-group-4" checked=""/><label for="fig-code-group-4-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-4-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;No me reí después de ver este video&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+}
+response = dashscope.Generation.call(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&#x27;DASHSCOPE_API_KEY&#x27;),
+    model=&quot;qwen-mt-turbo&quot;,  # This example uses qwen-mt-turbo. You can replace it with another model name as needed.
+    messages=messages,
+    result_format=&#x27;message&#x27;,
+    translation_options=translation_options
+)
+print(response.output.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-4-java-tab" type="radio" name="check-fig-code-group-4"/><label for="fig-code-group-4-java-tab">java</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-4-java" outputclass="language-java" code-type="xCode" class="pre codeblock language-java"><code>// DashScope SDK 2.20.6 or later is required.
+import java.lang.System;
+import java.util.Collections;
+import com.alibaba.dashscope.aigc.generation.Generation;
+import com.alibaba.dashscope.aigc.generation.GenerationParam;
+import com.alibaba.dashscope.aigc.generation.GenerationResult;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions;
+import com.alibaba.dashscope.common.Message;
+import com.alibaba.dashscope.common.Role;
+import com.alibaba.dashscope.exception.ApiException;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.protocol.Protocol;
+
+public class Main {
+    public static GenerationResult callWithMessage() throws ApiException, NoApiKeyException, InputRequiredException {
+        // The URL varies by region. Update it based on the region you use.
+        Generation gen = new Generation(Protocol.HTTP.getValue(), &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&quot;);
+        Message userMsg = Message.builder()
+                .role(Role.USER.getValue())
+                .content(&quot;No me reí después de ver este video&quot;)
+                .build();
+        TranslationOptions options = TranslationOptions.builder()
+                .sourceLang(&quot;auto&quot;)
+                .targetLang(&quot;English&quot;)
+                .build();
+        GenerationParam param = GenerationParam.builder()
+                // If you have not configured the environment variable, replace the following line with your Alibaba Cloud Model Studio API key: .apiKey(&quot;sk-xxx&quot;)
+                .apiKey(System.getenv(&quot;DASHSCOPE_API_KEY&quot;))
+                .model(&quot;qwen-mt-plus&quot;)
+                .messages(Collections.singletonList(userMsg))
+                .resultFormat(GenerationParam.ResultFormat.MESSAGE)
+                .translationOptions(options)
+                .build();
+        return gen.call(param);
+    }
+    public static void main(String[] args) {
+        try {
+            GenerationResult result = callWithMessage();
+            System.out.println(result.getOutput().getChoices().get(0).getMessage().getContent());
+        } catch (ApiException | NoApiKeyException | InputRequiredException e) {
+            System.err.println(&quot;Error message: &quot;+e.getMessage());
+            e.printStackTrace();
+        } finally {
+            System.exit(0);
+        }
+    }
+}
+</code></pre></div><input id="fig-code-group-4-bash-tab" type="radio" name="check-fig-code-group-4"/><label for="fig-code-group-4-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-4-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1/services/aigc/text-generation/generation \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;input&quot;: {
+    &quot;messages&quot;: [
+      {
+        &quot;content&quot;: &quot;No me reí después de ver este video&quot;,
+        &quot;role&quot;: &quot;user&quot;
+      }
+    ]
+  },
+  &quot;parameters&quot;: {
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;
+    }
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-2" code-type="xCode" class="pre codeblock"><code>I didn&#x27;t laugh after watching this video.
+</code></pre></section></section>
+<h2 id="streaming-output">Streaming output <span id="234525f4f7y0k"></span> <span id="9d7ab4170ci68"></span></h2>
+<p>Streaming output delivers translated content incrementally, reducing perceived latency. Currently, qwen-mt-flash and qwen-mt-lite support incremental streaming, where each response contains only the newly generated content. Enable it with the <code>incremental_output</code> parameter. qwen-mt-plus and qwen-mt-turbo support only non-incremental streaming, where each response returns the full translation so far. For more information, see <a href="/help/en/model-studio/stream">Streaming output</a>.</p>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs-2" class="tabbed-content-box section"><section id="openai-compatible-2" class="section"><h4 id="openai-compatible-2-h4">OpenAI compatible</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-5" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-5-python-tab" type="radio" name="check-fig-code-group-5" checked=""/><label for="fig-code-group-5-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-5-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;No me reí después de ver este video&quot;}]
+translation_options = {&quot;source_lang&quot;: &quot;auto&quot;, &quot;target_lang&quot;: &quot;English&quot;}
+
+completion = client.chat.completions.create(
+    model=&quot;qwen-mt-flash&quot;,
+    messages=messages,
+    stream=True,
+    stream_options={&quot;include_usage&quot;: True},
+    extra_body={&quot;translation_options&quot;: translation_options},
+)
+for chunk in completion:
+    if chunk.choices:
+        content = chunk.choices[0].delta.content or &quot;&quot;
+        print(content, end=&quot;&quot;, flush=True)
+    else:
+        print(&quot;=&quot;*20+&quot;Usage&quot;+&quot;=&quot;*20)
+        print(chunk.usage)
+</code></pre></div><input id="fig-code-group-5-bash-tab" type="radio" name="check-fig-code-group-5"/><label for="fig-code-group-5-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-5-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1/chat/completions \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-d &#x27;{
+    &quot;model&quot;: &quot;qwen-mt-flash&quot;,
+    &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;No me reí después de ver este video&quot;}],
+    &quot;stream&quot;: true,
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;
+      }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-3" code-type="xCode" class="pre codeblock"><code>I didn’t laugh after watching this video.
+====================Usage====================
+CompletionUsage(completion_tokens=9, prompt_tokens=56, total_tokens=65, completion_tokens_details=None, prompt_tokens_details=None)
+</code></pre></section><section id="dashscope-2" class="section"><h4 id="dashscope-2-h4">DashScope</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-6" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-6-python-tab" type="radio" name="check-fig-code-group-6" checked=""/><label for="fig-code-group-6-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-6-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;No me reí después de ver este video&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+}
+response = dashscope.Generation.call(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&#x27;DASHSCOPE_API_KEY&#x27;),
+    model=&quot;qwen-mt-flash&quot;,  # This example uses qwen-mt-turbo. You can replace it with another model name as needed.
+    messages=messages,
+    result_format=&#x27;message&#x27;,
+    stream=True,
+    # To get incremental output, set incremental_output to True. This is recommended. Currently, only qwen-mt-flash and qwen-mt-lite support this feature.
+    incremental_output=True,
+    translation_options=translation_options
+)
+for chunk in response:
+    print(chunk.output.choices[0].message.content, end=&quot;&quot;, flush=True)
+</code></pre></div><input id="fig-code-group-6-java-tab" type="radio" name="check-fig-code-group-6"/><label for="fig-code-group-6-java-tab">java</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-6-java" outputclass="language-java" code-type="xCode" class="pre codeblock language-java"><code>// The DashScope SDK must be version 2.20.6 or later.
+import java.lang.System;
+import com.alibaba.dashscope.aigc.generation.Generation;
+import com.alibaba.dashscope.aigc.generation.GenerationParam;
+import com.alibaba.dashscope.aigc.generation.GenerationResult;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions;
+import com.alibaba.dashscope.common.Message;
+import com.alibaba.dashscope.common.Role;
+import com.alibaba.dashscope.exception.ApiException;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.protocol.Protocol;
+import java.util.Arrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import io.reactivex.Flowable;
+
+public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    private static void handleGenerationResult(GenerationResult message) {
+        String content = message.getOutput().getChoices().get(0).getMessage().getContent();
+        System.out.print(content);
+    }
+    public static void streamCallWithMessage(Generation gen, Message userMsg)
+            throws NoApiKeyException, ApiException, InputRequiredException {
+        GenerationParam param = buildGenerationParam(userMsg);
+        Flowable&lt;GenerationResult&gt; result = gen.streamCall(param);
+        result.blockingForEach(message -&gt; handleGenerationResult(message));
+    }
+    private static GenerationParam buildGenerationParam(Message userMsg) {
+        TranslationOptions options = TranslationOptions.builder()
+                .sourceLang(&quot;auto&quot;)
+                .targetLang(&quot;English&quot;)
+                .build();
+        return GenerationParam.builder()
+                .apiKey(System.getenv(&quot;DASHSCOPE_API_KEY&quot;))
+                .model(&quot;qwen-mt-flash&quot;)
+                .resultFormat(GenerationParam.ResultFormat.MESSAGE)
+                .translationOptions(options)
+                // Enable incremental output. This is supported only by qwen-mt-flash and qwen-mt-lite.
+                .incrementalOutput(true)
+                .messages(Arrays.asList(userMsg))
+                .build();
+    }
+    public static void main(String[] args) {
+        try {
+            // The URL varies by region. Update it based on the region you use.
+            Generation gen = new Generation(Protocol.HTTP.getValue(), &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&quot;);
+            Message userMsg = Message.builder().role(Role.USER.getValue()).content(&quot;No me reí después de ver este video&quot;).build();
+            streamCallWithMessage(gen, userMsg);
+        } catch (ApiException | NoApiKeyException | InputRequiredException  e) {
+            logger.error(&quot;An exception occurred: {}&quot;, e.getMessage());
+        }
+        System.exit(0);
+    }
+}
+</code></pre></div><input id="fig-code-group-6-bash-tab" type="radio" name="check-fig-code-group-6"/><label for="fig-code-group-6-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-6-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1/services/aigc/text-generation/generation \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-H &quot;X-DashScope-SSE: enable&quot; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-flash&quot;,
+  &quot;input&quot;: {
+    &quot;messages&quot;: [
+      {
+        &quot;content&quot;: &quot;No me reí después de ver este video&quot;,
+        &quot;role&quot;: &quot;user&quot;
+      }
+    ]
+  },
+  &quot;parameters&quot;: {
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;
+    },
+    &quot;incremental_output&quot;: true
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-4" code-type="xCode" class="pre codeblock"><code>I didn&#x27;t laugh after watching this video.
+</code></pre><blockquote>
+<p>qwen-mt-plus and qwen-mt-turbo do not support incremental streaming output.</p>
+</blockquote></section></section>
+<h2 id="improve-translation-quality">Improve translation quality <span id="b08082142cbju"></span> <span id="53cb2f77036bj"></span></h2>
+<p>Basic translation works well for everyday use cases like casual communication. For professional or high-stakes translation tasks, you may run into specific challenges:</p>
+<ul>
+<li><strong>Inconsistent terminology</strong>: Product names or industry-specific terms are translated incorrectly or inconsistently across passages.</li>
+<li><strong>Mismatched style</strong>: The translated text does not match the tone or conventions expected in a specific domain, such as legal or marketing content.</li>
+</ul>
+<p>Qwen-MT provides three features to address these challenges: term intervention, translation memory, and domain prompting.</p>
+<h3 id="term-intervention">Term intervention <span id="2bf54a5ab5voe"></span> <span id="43501449fdkf2"></span></h3>
+<p>Supply a glossary in the <code>terms</code> field to ensure that brand names, product names, or technical terms are translated consistently every time.</p>
+<p>To define and pass your glossary:</p>
+<ol>
+<li>
+<strong>Define terms</strong>
+<p>Create a JSON array and assign it to the <code>terms</code> field. Each object in the array maps a source term to its required translation:</p>
+</li>
+</ol>
+<pre data-tag="codeblock" id="code-block-5" outputclass="language-json" code-type="xCode" class="pre codeblock language-json"><code>{
+    &quot;source&quot;: &quot;term&quot;,
+    &quot;target&quot;: &quot;pre-translated term&quot;
+}
+</code></pre>
+<ol start="2">
+<li>
+<strong>Pass the terms</strong>
+<p>Pass the <code>translation_options</code> parameter with your <code>terms</code> array included.</p>
+</li>
+</ol>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs-3" class="tabbed-content-box section"><section id="openai-compatible-3" class="section"><h4 id="openai-compatible-3-h4">OpenAI compatible</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-7" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-7-python-tab" type="radio" name="check-fig-code-group-7" checked=""/><label for="fig-code-group-7-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-7-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;Este conjunto de biosensores utiliza grafeno, un material novedoso. Su objetivo son los elementos químicos. Su agudo «sentido del olfato» le permite reflejar el estado de salud del cuerpo de forma más profunda y precisa.&quot;
+    }
+]
+
+# --- First request: without the terms parameter ---
+print(&quot;--- [Translation result without terms] ---&quot;)
+translation_options_without_terms = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;
+}
+
+completion_without_terms = client.chat.completions.create(
+    model=&quot;qwen-mt-turbo&quot;,
+    messages=messages,
+    extra_body={
+        &quot;translation_options&quot;: translation_options_without_terms
+    }
+)
+print(completion_without_terms.choices[0].message.content)
+
+print(&quot;\n&quot; + &quot;=&quot;*50 + &quot;\n&quot;) # Separator for comparison
+
+# --- Second request: with the terms parameter ---
+print(&quot;--- [Translation result with terms] ---&quot;)
+translation_options_with_terms = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;terms&quot;: [
+        {
+            &quot;source&quot;: &quot;biosensor&quot;,
+            &quot;target&quot;: &quot;biological sensor&quot;
+        },
+        {
+            &quot;source&quot;: &quot;estado de salud del cuerpo&quot;,
+            &quot;target&quot;: &quot;health status of the body&quot;
+        }
+    ]
+}
+
+completion_with_terms = client.chat.completions.create(
+    model=&quot;qwen-mt-turbo&quot;,
+    messages=messages,
+    extra_body={
+        &quot;translation_options&quot;: translation_options_with_terms
+    }
+)
+print(completion_with_terms.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-7-bash-tab" type="radio" name="check-fig-code-group-7"/><label for="fig-code-group-7-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-7-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1/chat/completions \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;messages&quot;: [
+    {
+      &quot;role&quot;: &quot;user&quot;,
+      &quot;content&quot;: &quot;Este conjunto de biosensores utiliza grafeno, un material novedoso. Su objetivo son los elementos químicos. Su agudo «sentido del olfato» le permite reflejar el estado de salud del cuerpo de forma más profunda y precisa.&quot;
+    }
+  ],
+  &quot;translation_options&quot;: {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;terms&quot;: [
+      {
+        &quot;source&quot;: &quot;biosensor&quot;,
+        &quot;target&quot;: &quot;biological sensor&quot;
+      },
+      {
+        &quot;source&quot;: &quot;estado de salud del cuerpo&quot;,
+        &quot;target&quot;: &quot;health status of the body&quot;
+      }
+    ]
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><p>After you add the glossary, the translation output reflects your specified terms: &quot;<strong>biological sensor</strong>&quot; and &quot;<strong>health status of the body</strong>&quot;.</p><pre data-tag="codeblock" id="code-block-6" code-type="xCode" class="pre codeblock"><code>--- [Translation result without terms] ---
+This set of biosensors uses graphene, a new material, whose target substance is chemical elements. Its sensitive &quot;sense of smell&quot; allows it to more deeply and accurately reflect one&#x27;s health condition.
+
+==================================================
+
+--- [Translation result with terms] ---
+This biological sensor uses a new material called graphene. Its target is chemical elements, and its sensitive &quot;sense of smell&quot; enables it to reflect the health status of the body more deeply and accurately.
+</code></pre></section><section id="dashscope-3" class="section"><h4 id="dashscope-3-h4">DashScope</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-8" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-8-python-tab" type="radio" name="check-fig-code-group-8" checked=""/><label for="fig-code-group-8-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-8-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;Este conjunto de biosensores utiliza grafeno, un material novedoso. Su objetivo son los elementos químicos. Su agudo «sentido del olfato» le permite reflejar el estado de salud del cuerpo de forma más profunda y precisa.&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;terms&quot;: [
+        {
+            &quot;source&quot;: &quot;biosensor&quot;,
+            &quot;target&quot;: &quot;biological sensor&quot;
+        },
+        {
+            &quot;source&quot;: &quot;estado de salud del cuerpo&quot;,
+            &quot;target&quot;: &quot;health status of the body&quot;
+        }
+    ]
+}
+response = dashscope.Generation.call(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&#x27;DASHSCOPE_API_KEY&#x27;),
+    model=&quot;qwen-mt-turbo&quot;,  # This example uses qwen-mt-turbo. You can replace it with another model name as needed.
+    messages=messages,
+    result_format=&#x27;message&#x27;,
+    translation_options=translation_options
+)
+print(response.output.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-8-java-tab" type="radio" name="check-fig-code-group-8"/><label for="fig-code-group-8-java-tab">java</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-8-java" outputclass="language-java" code-type="xCode" class="pre codeblock language-java"><code>// The DashScope SDK must be version 2.20.6 or later.
+import java.lang.System;
+import java.util.Collections;
+import java.util.Arrays;
+import com.alibaba.dashscope.aigc.generation.Generation;
+import com.alibaba.dashscope.aigc.generation.GenerationParam;
+import com.alibaba.dashscope.aigc.generation.GenerationResult;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions.Term;
+import com.alibaba.dashscope.common.Message;
+import com.alibaba.dashscope.common.Role;
+import com.alibaba.dashscope.exception.ApiException;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.protocol.Protocol;
+
+public class Main {
+    public static GenerationResult callWithMessage() throws ApiException, NoApiKeyException, InputRequiredException {
+        // The URL varies by region. Update it based on the region you use.
+        Generation gen = new Generation(Protocol.HTTP.getValue(), &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&quot;);
+        Message userMsg = Message.builder()
+                .role(Role.USER.getValue())
+                .content(&quot;Este conjunto de biosensores utiliza grafeno, un material novedoso. Su objetivo son los elementos químicos. Su agudo «sentido del olfato» le permite reflejar el estado de salud del cuerpo de forma más profunda y precisa.&quot;)
+                .build();
+        Term term1 = Term.builder()
+                .source(&quot;biosensor&quot;)
+                .target(&quot;biological sensor&quot;)
+                .build();
+        Term term2 = Term.builder()
+                .source(&quot;estado de salud del cuerpo&quot;)
+                .target(&quot;health status of the body&quot;)
+                .build();
+        TranslationOptions options = TranslationOptions.builder()
+                .sourceLang(&quot;auto&quot;)
+                .targetLang(&quot;English&quot;)
+                .terms(Arrays.asList(term1, term2))
+                .build();
+        GenerationParam param = GenerationParam.builder()
+                .apiKey(System.getenv(&quot;DASHSCOPE_API_KEY&quot;))
+                .model(&quot;qwen-mt-plus&quot;)
+                .messages(Collections.singletonList(userMsg))
+                .resultFormat(GenerationParam.ResultFormat.MESSAGE)
+                .translationOptions(options)
+                .build();
+        return gen.call(param);
+    }
+    public static void main(String[] args) {
+        try {
+            GenerationResult result = callWithMessage();
+            System.out.println(result.getOutput().getChoices().get(0).getMessage().getContent());
+        } catch (ApiException | NoApiKeyException | InputRequiredException e) {
+            System.err.println(&quot;Error message: &quot;+e.getMessage());
+        }
+        System.exit(0);
+    }
+}
+</code></pre></div><input id="fig-code-group-8-bash-tab" type="radio" name="check-fig-code-group-8"/><label for="fig-code-group-8-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-8-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1/services/aigc/text-generation/generation \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &#x27;Content-Type: application/json&#x27; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;input&quot;: {
+    &quot;messages&quot;: [
+      {
+        &quot;content&quot;: &quot;Este conjunto de biosensores utiliza grafeno, un material novedoso. Su objetivo son los elementos químicos. Su agudo «sentido del olfato» le permite reflejar el estado de salud del cuerpo de forma más profunda y precisa.&quot;,
+        &quot;role&quot;: &quot;user&quot;
+      }
+    ]
+  },
+  &quot;parameters&quot;: {
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;,
+      &quot;terms&quot;: [
+        {
+          &quot;source&quot;: &quot;biosensor&quot;,
+          &quot;target&quot;: &quot;biological sensor&quot;
+        },
+        {
+          &quot;source&quot;: &quot;estado de salud del cuerpo&quot;,
+          &quot;target&quot;: &quot;health status of the body&quot;
+        }
+      ]
+    }
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-7" code-type="xCode" class="pre codeblock"><code>This biological sensor uses graphene, a new material, and its target is chemical elements. Its sensitive &quot;nose&quot; can more deeply and accurately reflect the health status of the human body.
+</code></pre></section></section>
+<h3 id="translation-memory">Translation memory <span id="17e15234e7gfp"></span> <span id="d03e80dc33vsz"></span></h3>
+<p>When you need the model to follow a specific translation style or sentence pattern, provide source-target sentence pairs as examples in the <code>tm_list</code> field. The model learns from the style of these reference pairs and applies it to the current translation. This is useful for maintaining consistency across large documentation sets or when adapting to an organization’s established writing conventions.</p>
+<ol>
+<li>
+<strong>Define the translation memory</strong>
+<p>Create a JSON array named <code>tm_list</code>. Each object pairs a source sentence with its reference translation:</p>
+</li>
+</ol>
+<pre data-tag="codeblock" id="code-block-8" outputclass="language-json" code-type="xCode" class="pre codeblock language-json"><code>{
+    &quot;source&quot;: &quot;source statement&quot;,
+    &quot;target&quot;: &quot;translated statement&quot;
+}
+</code></pre>
+<ol start="2">
+<li>
+<strong>Pass the translation memory</strong>
+<p>Include the <code>translation_options</code> parameter with your translation memory array.</p>
+</li>
+</ol>
+<p>The following example demonstrates translation memory in action.</p>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs-4" class="tabbed-content-box section"><section id="openai-compatible-4" class="section"><h4 id="openai-compatible-4-h4">OpenAI compatible</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-9" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-9-python-tab" type="radio" name="check-fig-code-group-9" checked=""/><label for="fig-code-group-9-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-9-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;El siguiente comando muestra la información de la versión de Thrift instalada.&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;tm_list&quot;: [
+        {
+            &quot;source&quot;: &quot;Puede utilizar uno de los siguientes métodos para consultar la versión del motor de un clúster:&quot;,
+            &quot;target&quot;: &quot;You can use one of the following methods to query the engine version of a cluster:&quot;
+        },
+        {
+            &quot;source&quot;: &quot;La versión de Thrift utilizada por nuestro HBase en la nube es la 0.9.0. Por lo tanto, recomendamos que la versión del cliente también sea la 0.9.0. Puede descargar Thrift 0.9.0 desde aquí. El paquete de código fuente descargado se utilizará posteriormente. Primero debe instalar el entorno de compilación de Thrift. Para la instalación desde el código fuente, puede consultar el sitio web oficial de Thrift.&quot;,
+            &quot;target&quot;: &quot;The version of Thrift used by ApsaraDB for HBase is 0.9.0. Therefore, we recommend that you use Thrift 0.9.0 to create a client. Click here to download Thrift 0.9.0. The downloaded source code package will be used later. You must install the Thrift compiling environment first. For more information, see Thrift official website.&quot;
+        },
+        {
+            &quot;source&quot;: &quot;Puede instalar el SDK a través de PyPI. El comando de instalación es el siguiente:&quot;,
+            &quot;target&quot;: &quot;You can run the following command in Python Package Index (PyPI) to install Elastic Container Instance SDK for Python:&quot;
+        }
+    ]
+}
+
+completion = client.chat.completions.create(
+    model=&quot;qwen-mt-plus&quot;,
+    messages=messages,
+    extra_body={
+        &quot;translation_options&quot;: translation_options
+    }
+)
+print(completion.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-9-bash-tab" type="radio" name="check-fig-code-group-9"/><label for="fig-code-group-9-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-9-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1/chat/completions \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;messages&quot;: [
+    {
+      &quot;role&quot;: &quot;user&quot;,
+      &quot;content&quot;: &quot;El siguiente comando muestra la información de la versión de Thrift instalada.&quot;
+    }
+  ],
+  &quot;translation_options&quot;: {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;tm_list&quot;:[
+          {&quot;source&quot;: &quot;Puede utilizar uno de los siguientes métodos para consultar la versión del motor de un clúster:&quot;, &quot;target&quot;: &quot;You can use one of the following methods to query the engine version of a cluster:&quot;},
+          {&quot;source&quot;: &quot;La versión de Thrift utilizada por nuestro HBase en la nube es la 0.9.0. Por lo tanto, recomendamos que la versión del cliente también sea la 0.9.0. Puede descargar Thrift 0.9.0 desde aquí. El paquete de código fuente descargado se utilizará posteriormente. Primero debe instalar el entorno de compilación de Thrift. Para la instalación desde el código fuente, puede consultar el sitio web oficial de Thrift.&quot;, &quot;target&quot;: &quot;The version of Thrift used by ApsaraDB for HBase is 0.9.0. Therefore, we recommend that you use Thrift 0.9.0 to create a client. Click here to download Thrift 0.9.0. The downloaded source code package will be used later. You must install the Thrift compiling environment first. For more information, see Thrift official website.&quot;},
+          {&quot;source&quot;: &quot;Puede instalar el SDK a través de PyPI. El comando de instalación es el siguiente:&quot;, &quot;target&quot;: &quot;You can run the following command in Python Package Index (PyPI) to install Elastic Container Instance SDK for Python:&quot;}
+    ]
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-9" code-type="xCode" class="pre codeblock"><code>You can run the following command to view the version of Thrift that is installed:
+</code></pre></section><section id="dashscope-4" class="section"><h4 id="dashscope-4-h4">DashScope</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-10" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-10-python-tab" type="radio" name="check-fig-code-group-10" checked=""/><label for="fig-code-group-10-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-10-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;El siguiente comando muestra la información de la versión de Thrift instalada.&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;tm_list&quot;: [
+        {
+            &quot;source&quot;: &quot;Puede utilizar uno de los siguientes métodos para consultar la versión del motor de un clúster:&quot;,
+            &quot;target&quot;: &quot;You can use one of the following methods to query the engine version of a cluster:&quot;
+        },
+        {
+            &quot;source&quot;: &quot;La versión de Thrift utilizada por nuestro HBase en la nube es la 0.9.0. Por lo tanto, recomendamos que la versión del cliente también sea la 0.9.0. Puede descargar Thrift 0.9.0 desde aquí. El paquete de código fuente descargado se utilizará posteriormente. Primero debe instalar el entorno de compilación de Thrift. Para la instalación desde el código fuente, puede consultar el sitio web oficial de Thrift.&quot;,
+            &quot;target&quot;: &quot;The version of Thrift used by ApsaraDB for HBase is 0.9.0. Therefore, we recommend that you use Thrift 0.9.0 to create a client. Click here to download Thrift 0.9.0. The downloaded source code package will be used later. You must install the Thrift compiling environment first. For more information, see Thrift official website.&quot;
+        },
+        {
+            &quot;source&quot;: &quot;Puede instalar el SDK a través de PyPI. El comando de instalación es el siguiente:&quot;,
+            &quot;target&quot;: &quot;You can run the following command in Python Package Index (PyPI) to install Elastic Container Instance SDK for Python:&quot;
+        }
+    ]}
+response = dashscope.Generation.call(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&#x27;DASHSCOPE_API_KEY&#x27;),
+    model=&quot;qwen-mt-turbo&quot;,  # This example uses qwen-mt-turbo. You can replace it with another model name as needed.
+    messages=messages,
+    result_format=&#x27;message&#x27;,
+    translation_options=translation_options
+)
+print(response.output.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-10-java-tab" type="radio" name="check-fig-code-group-10"/><label for="fig-code-group-10-java-tab">java</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-10-java" outputclass="language-java" code-type="xCode" class="pre codeblock language-java"><code>// The DashScope SDK must be version 2.20.6 or later.
+import java.lang.System;
+import java.util.Collections;
+import java.util.Arrays;
+import com.alibaba.dashscope.aigc.generation.Generation;
+import com.alibaba.dashscope.aigc.generation.GenerationParam;
+import com.alibaba.dashscope.aigc.generation.GenerationResult;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions.Tm;
+import com.alibaba.dashscope.common.Message;
+import com.alibaba.dashscope.common.Role;
+import com.alibaba.dashscope.exception.ApiException;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.protocol.Protocol;
+
+public class Main {
+    public static GenerationResult callWithMessage() throws ApiException, NoApiKeyException, InputRequiredException {
+        // The URL varies by region. Update it based on the region you use.
+        Generation gen = new Generation(Protocol.HTTP.getValue(), &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&quot;);
+        Message userMsg = Message.builder()
+                .role(Role.USER.getValue())
+                .content(&quot;El siguiente comando muestra la información de la versión de Thrift instalada.&quot;)
+                .build();
+        Tm tm1 = Tm.builder()
+                .source(&quot;Puede utilizar uno de los siguientes métodos para consultar la versión del motor de un clúster:&quot;)
+                .target(&quot;You can use one of the following methods to query the engine version of a cluster:&quot;)
+                .build();
+        Tm tm2 = Tm.builder()
+                .source(&quot;La versión de Thrift utilizada por nuestro HBase en la nube es la 0.9.0. Por lo tanto, recomendamos que la versión del cliente también sea la 0.9.0. Puede descargar Thrift 0.9.0 desde aquí. El paquete de código fuente descargado se utilizará posteriormente. Primero debe instalar el entorno de compilación de Thrift. Para la instalación desde el código fuente, puede consultar el sitio web oficial de Thrift.&quot;)
+                .target(&quot;The version of Thrift used by ApsaraDB for HBase is 0.9.0. Therefore, we recommend that you use Thrift 0.9.0 to create a client. Click here to download Thrift 0.9.0. The downloaded source code package will be used later. You must install the Thrift compiling environment first. For more information, see Thrift official website.&quot;)
+                .build();
+        Tm tm3 = Tm.builder()
+                .source(&quot;Puede instalar el SDK a través de PyPI. El comando de instalación es el siguiente:&quot;)
+                .target(&quot;You can run the following command in Python Package Index (PyPI) to install Elastic Container Instance SDK for Python:&quot;)
+                .build();
+        TranslationOptions options = TranslationOptions.builder()
+                .sourceLang(&quot;auto&quot;)
+                .targetLang(&quot;English&quot;)
+                .tmList(Arrays.asList(tm1, tm2, tm3))
+                .build();
+        GenerationParam param = GenerationParam.builder()
+                .apiKey(System.getenv(&quot;DASHSCOPE_API_KEY&quot;))
+                .model(&quot;qwen-mt-plus&quot;)
+                .messages(Collections.singletonList(userMsg))
+                .resultFormat(GenerationParam.ResultFormat.MESSAGE)
+                .translationOptions(options)
+                .build();
+        return gen.call(param);
+    }
+    public static void main(String[] args) {
+        try {
+            GenerationResult result = callWithMessage();
+            System.out.println(result.getOutput().getChoices().get(0).getMessage().getContent());
+        } catch (ApiException | NoApiKeyException | InputRequiredException e) {
+            System.err.println(&quot;Error message: &quot;+e.getMessage());
+        }
+        System.exit(0);
+    }
+}
+</code></pre></div><input id="fig-code-group-10-bash-tab" type="radio" name="check-fig-code-group-10"/><label for="fig-code-group-10-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-10-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1/services/aigc/text-generation/generation \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &#x27;Content-Type: application/json&#x27; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;input&quot;: {
+    &quot;messages&quot;: [
+      {
+        &quot;content&quot;: &quot;El siguiente comando muestra la información de la versión de Thrift instalada.&quot;,
+        &quot;role&quot;: &quot;user&quot;
+      }
+    ]
+  },
+  &quot;parameters&quot;: {
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;,
+      &quot;tm_list&quot;:[
+          {&quot;source&quot;: &quot;Puede utilizar uno de los siguientes métodos para consultar la versión del motor de un clúster:&quot;, &quot;target&quot;: &quot;You can use one of the following methods to query the engine version of a cluster:&quot;},
+          {&quot;source&quot;: &quot;La versión de Thrift utilizada por nuestro HBase en la nube es la 0.9.0. Por lo tanto, recomendamos que la versión del cliente también sea la 0.9.0. Puede descargar Thrift 0.9.0 desde aquí. El paquete de código fuente descargado se utilizará posteriormente. Primero debe instalar el entorno de compilación de Thrift. Para la instalación desde el código fuente, puede consultar el sitio web oficial de Thrift.&quot;, &quot;target&quot;: &quot;The version of Thrift used by ApsaraDB for HBase is 0.9.0. Therefore, we recommend that you use Thrift 0.9.0 to create a client. Click here to download Thrift 0.9.0. The downloaded source code package will be used later. You must install the Thrift compiling environment first. For more information, see Thrift official website.&quot;},
+          {&quot;source&quot;: &quot;Puede instalar el SDK a través de PyPI. El comando de instalación es el siguiente:&quot;, &quot;target&quot;: &quot;You can run the following command in Python Package Index (PyPI) to install Elastic Container Instance SDK for Python:&quot;}
+      ]
+    }
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-10" code-type="xCode" class="pre codeblock"><code>You can use the following commands to check the version information of thrift installed;
+</code></pre></section></section>
+<h3 id="domain-prompting">Domain prompting <span id="4af23a31db7lf"></span> <span id="68bea60b03i3z"></span></h3>
+<p>Pass a domain prompt in <code>translation_options</code> to tailor the translation style for a specific field. For example, legal or government content calls for formal language, while social media posts work better with a conversational tone.</p>
+<div class="note note-important"><div class="note-icon-wrapper"></div><div class="note-content"><p><strong>Important</strong>Domain prompts currently support only English.</p></div></div>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs-5" class="tabbed-content-box section"><section id="openai-compatible-5" class="section"><h4 id="openai-compatible-5-h4">OpenAI compatible</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-11" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-11-python-tab" type="radio" name="check-fig-code-group-11" checked=""/><label for="fig-code-group-11-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-11-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;La segunda instrucción SELECT devuelve un número que indica la cantidad de filas que habría devuelto la primera instrucción SELECT si no se hubiera utilizado la cláusula LIMIT.&quot;
+    }
+]
+
+# --- First request: without the domains parameter ---
+print(&quot;--- [Translation result without domains] ---&quot;)
+translation_options_without_domains = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+}
+
+completion_without_domains = client.chat.completions.create(
+    model=&quot;qwen-mt-plus&quot;,
+    messages=messages,
+    extra_body={
+        &quot;translation_options&quot;: translation_options_without_domains
+    }
+)
+print(completion_without_domains.choices[0].message.content)
+
+print(&quot;\n&quot; + &quot;=&quot;*50 + &quot;\n&quot;) # Separator for comparison
+
+# --- Second request: with the domains parameter ---
+print(&quot;--- [Translation result with domains] ---&quot;)
+translation_options_with_domains = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;domains&quot;: &quot;The sentence is from Ali Cloud IT domain. It mainly involves computer-related software development and usage methods, including many terms related to computer software and hardware. Pay attention to professional troubleshooting terminologies and sentence patterns when translating. Translate into this IT domain style.&quot;
+}
+
+completion_with_domains = client.chat.completions.create(
+    model=&quot;qwen-mt-plus&quot;,
+    messages=messages,
+    extra_body={
+        &quot;translation_options&quot;: translation_options_with_domains
+    }
+)
+print(completion_with_domains.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-11-bash-tab" type="radio" name="check-fig-code-group-11"/><label for="fig-code-group-11-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-11-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1/chat/completions \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &quot;Content-Type: application/json&quot; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;messages&quot;: [
+    {
+      &quot;role&quot;: &quot;user&quot;,
+      &quot;content&quot;: &quot;La segunda instrucción SELECT devuelve un número que indica la cantidad de filas que habría devuelto la primera instrucción SELECT si no se hubiera utilizado la cláusula LIMIT.&quot;
+    }
+  ],
+  &quot;translation_options&quot;: {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;domains&quot;: &quot;The sentence is from Ali Cloud IT domain. It mainly involves computer-related software development and usage methods, including many terms related to computer software and hardware. Pay attention to professional troubleshooting terminologies and sentence patterns when translating. Translate into this IT domain style.&quot;
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-11" code-type="xCode" class="pre codeblock"><code>--- [Translation result without domains] ---
+The second SELECT statement returns a number indicating how many rows the first SELECT statement would return without the LIMIT clause.
+
+==================================================
+
+--- [Translation result with domains] ---
+The second SELECT statement returns a number that indicates how many rows the first SELECT statement would have returned if it had not included a LIMIT clause.
+</code></pre></section><section id="dashscope-5" class="section"><h4 id="dashscope-5-h4">DashScope</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-12" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-12-python-tab" type="radio" name="check-fig-code-group-12" checked=""/><label for="fig-code-group-12-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-12-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;La segunda instrucción SELECT devuelve un número que indica la cantidad de filas que habría devuelto la primera instrucción SELECT si no se hubiera utilizado la cláusula LIMIT.&quot;
+    }
+]
+translation_options = {
+    &quot;source_lang&quot;: &quot;auto&quot;,
+    &quot;target_lang&quot;: &quot;English&quot;,
+    &quot;domains&quot;: &quot;The sentence is from Ali Cloud IT domain. It mainly involves computer-related software development and usage methods, including many terms related to computer software and hardware. Pay attention to professional troubleshooting terminologies and sentence patterns when translating. Translate into this IT domain style.&quot;
+}
+response = dashscope.Generation.call(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&#x27;DASHSCOPE_API_KEY&#x27;),
+    model=&quot;qwen-mt-turbo&quot;,
+    messages=messages,
+    result_format=&#x27;message&#x27;,
+    translation_options=translation_options
+)
+print(response.output.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-12-java-tab" type="radio" name="check-fig-code-group-12"/><label for="fig-code-group-12-java-tab">java</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-12-java" outputclass="language-java" code-type="xCode" class="pre codeblock language-java"><code>// The DashScope SDK must be version 2.20.6 or later.
+import java.lang.System;
+import java.util.Collections;
+import com.alibaba.dashscope.aigc.generation.Generation;
+import com.alibaba.dashscope.aigc.generation.GenerationParam;
+import com.alibaba.dashscope.aigc.generation.GenerationResult;
+import com.alibaba.dashscope.aigc.generation.TranslationOptions;
+import com.alibaba.dashscope.common.Message;
+import com.alibaba.dashscope.common.Role;
+import com.alibaba.dashscope.exception.ApiException;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.protocol.Protocol;
+
+public class Main {
+    public static GenerationResult callWithMessage() throws ApiException, NoApiKeyException, InputRequiredException {
+        // The URL varies by region. Update it based on the region you use.
+        Generation gen = new Generation(Protocol.HTTP.getValue(), &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&quot;);
+        Message userMsg = Message.builder()
+                .role(Role.USER.getValue())
+                .content(&quot;La segunda instrucción SELECT devuelve un número que indica la cantidad de filas que habría devuelto la primera instrucción SELECT si no se hubiera utilizado la cláusula LIMIT.&quot;)
+                .build();
+        TranslationOptions options = TranslationOptions.builder()
+                .sourceLang(&quot;auto&quot;)
+                .targetLang(&quot;English&quot;)
+                .domains(&quot;The sentence is from Ali Cloud IT domain. It mainly involves computer-related software development and usage methods, including many terms related to computer software and hardware. Pay attention to professional troubleshooting terminologies and sentence patterns when translating. Translate into this IT domain style.&quot;)
+                .build();
+        GenerationParam param = GenerationParam.builder()
+                .apiKey(System.getenv(&quot;DASHSCOPE_API_KEY&quot;))
+                // Note: qwen-mt-lite does not support domain prompting
+                .model(&quot;qwen-mt-plus&quot;)
+                .messages(Collections.singletonList(userMsg))
+                .resultFormat(GenerationParam.ResultFormat.MESSAGE)
+                .translationOptions(options)
+                .build();
+        return gen.call(param);
+    }
+    public static void main(String[] args) {
+        try {
+            GenerationResult result = callWithMessage();
+            System.out.println(result.getOutput().getChoices().get(0).getMessage().getContent());
+        } catch (ApiException | NoApiKeyException | InputRequiredException e) {
+            System.err.println(&quot;Error message: &quot;+e.getMessage());
+        }
+        System.exit(0);
+    }
+}
+</code></pre></div><input id="fig-code-group-12-bash-tab" type="radio" name="check-fig-code-group-12"/><label for="fig-code-group-12-bash-tab">bash</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-12-bash" outputclass="language-bash" code-type="xCode" class="pre codeblock language-bash"><code># ======= Important =======
+# The URL varies by region. Update it based on the region you use.
+# === Delete this comment before execution ====
+
+curl -X POST https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1/services/aigc/text-generation/generation \
+-H &quot;Authorization: Bearer $DASHSCOPE_API_KEY&quot; \
+-H &#x27;Content-Type: application/json&#x27; \
+-d &#x27;{
+  &quot;model&quot;: &quot;qwen-mt-turbo&quot;,
+  &quot;input&quot;: {
+    &quot;messages&quot;: [
+      {
+        &quot;content&quot;: &quot;La segunda instrucción SELECT devuelve un número que indica la cantidad de filas que habría devuelto la primera instrucción SELECT si no se hubiera utilizado la cláusula LIMIT.&quot;,
+        &quot;role&quot;: &quot;user&quot;
+      }
+    ]
+  },
+  &quot;parameters&quot;: {
+    &quot;translation_options&quot;: {
+      &quot;source_lang&quot;: &quot;auto&quot;,
+      &quot;target_lang&quot;: &quot;English&quot;,
+      &quot;domains&quot;: &quot;The sentence is from Ali Cloud IT domain. It mainly involves computer-related software development and usage methods, including many terms related to computer software and hardware. Pay attention to professional troubleshooting terminologies and sentence patterns when translating. Translate into this IT domain style.&quot;}
+  }
+}&#x27;
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-12" code-type="xCode" class="pre codeblock"><code>The second SELECT statement returns a number that indicates how many rows were returned by the first SELECT statement without a LIMIT clause.
+</code></pre></section></section>
+<h2 id="custom-prompts">Custom prompts <span id="42ac4e67d6bnf"></span> <span id="8af5912c98mbf"></span></h2>
+<p>Use custom prompts with Qwen-MT to control details such as the target language, tone, or domain. The <code>translation_options</code> parameter and custom prompts can be passed together, but when both are set simultaneously, settings in <code>translation_options</code> (such as <code>target_lang</code>, <code>source_lang</code>, and so on) take priority over corresponding settings in the custom prompt and will override language or style specifications in the custom prompt.</p>
+<blockquote>
+<p>For the best translation results, use <code>translation_options</code> to configure translation settings instead.</p>
+</blockquote>
+<p>The following example shows a Spanish-to-English legal translation using a detailed prompt:</p>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs-6" class="tabbed-content-box section"><section id="openai-compatible-6" class="section"><h4 id="openai-compatible-6-h4">OpenAI compatible</h4><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-13" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-13-python-tab" type="radio" name="check-fig-code-group-13" checked=""/><label for="fig-code-group-13-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-13-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    # If the environment variable is not configured, replace the following line with your Alibaba Cloud Model Studio API Key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
+    # The base_url varies by region. Update it based on the region you use.
+    base_url=&quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+)
+prompt_template = &quot;&quot;&quot;
+# Role
+You are a professional legal translation expert, proficient in both Spanish and English, and you are especially skilled at handling commercial contracts and legal documents.
+
+# Task
+I need you to translate the following Spanish legal text into professional, accurate, and formal English.
+
+# Translation Requirements
+1.  **Fidelity to the Original**: Strictly translate according to the meaning and legal intent of the original text. Do not add or omit information.
+2.  **Precise Terminology**: Use standard legal terms common in the Common Law system. For example, &quot;甲方&quot; should be translated as &quot;Party A&quot;, &quot;乙方&quot; as &quot;Party B&quot;, and &quot;不可抗力&quot; as &quot;Force Majeure&quot;.
+3.  **Formal Tone**: Maintain the rigorous, objective, and formal style inherent in legal documents.
+4.  **Clarity of Language**: The translation must be clear, unambiguous, and conform to the expressive conventions of English legal writing.
+5.  **Format Preservation**: Retain the paragraphs, numbering, and basic format of the original text.
+
+# Text to be Translated
+{text_to_translate}
+&quot;&quot;&quot;
+
+# --- 2. Prepare the legal text to be translated ---
+chinese_legal_text = &quot;Este contrato entrará en vigor a partir de la fecha en que ambas partes lo firmen y sellen, y tendrá una vigencia de un año.&quot;
+final_prompt = prompt_template.format(text_to_translate=chinese_legal_text)
+
+# --- 3. Construct the messages ---
+messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: final_prompt}]
+
+# --- 4. Initiate the API request ---
+completion = client.chat.completions.create(model=&quot;qwen-mt-plus&quot;, messages=messages)
+
+# --- 5. Print the model&#x27;s translation result ---
+translation_result = completion.choices[0].message.content
+print(translation_result)
+</code></pre></div><input id="fig-code-group-13-javascript-tab" type="radio" name="check-fig-code-group-13"/><label for="fig-code-group-13-javascript-tab">javascript</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-13-javascript" outputclass="language-javascript" code-type="xCode" class="pre codeblock language-javascript"><code>import OpenAI from &#x27;openai&#x27;;
+
+const client = new OpenAI({
+    apiKey: process.env.DASHSCOPE_API_KEY,
+    // The base_url varies by region. Update it based on the region you use.
+    baseURL: &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1&quot;,
+});
+
+const promptTemplate = `
+# Role
+You are a professional legal translation expert, proficient in both Spanish and English, specializing in business contracts and legal documents.
+
+# Task
+I need you to translate the following Spanish legal text into professional, accurate, and formal English.
+
+# Translation Requirements
+1.  **Fidelity to the Original**: Translate strictly according to the meaning and legal intent of the original text. Do not add or omit information.
+2.  **Precise Terminology**: Use standard legal terms common in the Common Law system. For example, &quot;甲方&quot; should be translated as &quot;Party A&quot;, &quot;乙方&quot; as &quot;Party B&quot;, and &quot;不可抗力&quot; as &quot;Force Majeure&quot;.
+3.  **Formal Tone**: Maintain the rigorous, objective, and formal tone inherent in legal documents.
+4.  **Clarity**: The translation must be clear, unambiguous, and conform to the expressive conventions of English legal writing.
+5.  **Format Preservation**: Retain the paragraphs, numbering, and basic format of the original text.
+
+# Text to Translate
+{text_to_translate}
+`;
+
+const spanishLegalText = &quot;This Contract shall become effective from the date of signature and seal by both parties and shall be valid for a period of one year.&quot;;
+const finalPrompt = promptTemplate.replace(&#x27;{text_to_translate}&#x27;, spanishLegalText);
+
+const messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: finalPrompt}];
+
+async function main() {
+    const completion = await client.chat.completions.create({
+        model: &quot;qwen-mt-plus&quot;,
+        messages: messages
+    });
+
+    const translationResult = completion.choices[0].message.content;
+    console.log(translationResult);
+}
+
+main();
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-13" code-type="xCode" class="pre codeblock"><code>This Contract shall become effective from the date on which both parties sign and affix their seals, and its term of validity shall be one year.
+</code></pre></section><section id="dashscope-6" class="section"><h4 id="dashscope-6-h4">DashScope</h4><strong>Sample request</strong><div outputclass="tabbed-codeblock" data-tag="fig" id="fig-code-group-14" class="tabbed-codeblock-box"><div class="tab-box"></div><input id="fig-code-group-14-python-tab" type="radio" name="check-fig-code-group-14" checked=""/><label for="fig-code-group-14-python-tab">python</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-14-python" outputclass="language-python" code-type="xCode" class="pre codeblock language-python"><code>import os
+import dashscope
+
+# The base_url varies by region. Update it based on the region you use.
+dashscope.base_http_api_url = &#x27;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&#x27;
+prompt_template = &quot;&quot;&quot;
+# Role
+You are a professional legal translation expert, proficient in both Spanish and English, with special expertise in handling business contracts and legal documents.
+
+# Task
+I need you to translate the following Spanish legal text into professional, accurate, and formal English.
+
+# Translation Requirements
+1.  **Fidelity to the Original**: Strictly translate according to the meaning and legal intent of the original text. Do not add or omit any information.
+2.  **Precise Terminology**: Use standard legal terms common to the Common Law system. For example, &quot;甲方&quot; should be translated as &quot;Party A&quot;, &quot;乙方&quot; as &quot;Party B&quot;, and &quot;不可抗力&quot; as &quot;Force Majeure&quot;.
+3.  **Formal Tone**: Maintain the rigorous, objective, and formal style inherent in legal documents.
+4.  **Clear Phrasing**: The translation must be clear, unambiguous, and conform to the conventions of English legal writing.
+5.  **Preserve Formatting**: Maintain the paragraphs, numbering, and basic format of the original text.
+
+# Text to be Translated
+{text_to_translate}
+&quot;&quot;&quot;
+
+# --- 2. Prepare the legal text for translation ---
+chinese_legal_text = &quot;This Contract shall become effective from the date of signature and seal by both parties and shall be valid for a period of one year.&quot;
+final_prompt = prompt_template.format(text_to_translate=chinese_legal_text)
+
+# --- 3. Construct the messages ---
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: final_prompt
+    }
+]
+
+response = dashscope.Generation.call(
+    # If you have not configured an environment variable, replace the following line with your Model Studio API key: api_key=&quot;sk-xxx&quot;,
+    api_key=os.getenv(&#x27;DASHSCOPE_API_KEY&#x27;),
+    model=&quot;qwen-mt-plus&quot;,
+    messages=messages,
+    result_format=&#x27;message&#x27;,
+)
+print(response.output.choices[0].message.content)
+</code></pre></div><input id="fig-code-group-14-java-tab" type="radio" name="check-fig-code-group-14"/><label for="fig-code-group-14-java-tab">java</label><div class="codeblock-item"><pre data-tag="codeblock" id="code-code-group-14-java" outputclass="language-java" code-type="xCode" class="pre codeblock language-java"><code>// The DashScope SDK must be version 2.20.6 or later.
+import java.lang.System;
+import java.util.Collections;
+import com.alibaba.dashscope.aigc.generation.Generation;
+import com.alibaba.dashscope.aigc.generation.GenerationParam;
+import com.alibaba.dashscope.aigc.generation.GenerationResult;
+import com.alibaba.dashscope.common.Message;
+import com.alibaba.dashscope.common.Role;
+import com.alibaba.dashscope.exception.ApiException;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.protocol.Protocol;
+
+public class Main {
+    public static GenerationResult callWithMessage() throws ApiException, NoApiKeyException, InputRequiredException {
+        // The URL varies by region. Update it based on the region you use.
+        Generation gen = new Generation(Protocol.HTTP.getValue(), &quot;https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1&quot;);
+        String promptTemplate = &quot;# Role\n&quot; +
+                &quot;You are a professional legal translation expert, proficient in both Spanish and English, specializing in business contracts and legal documents.\n\n&quot; +
+                &quot;# Task\n&quot; +
+                &quot;I need you to translate the following Spanish legal text into professional, accurate, and formal English.\n\n&quot; +
+                &quot;# Translation Requirements\n&quot; +
+                &quot;1.  **Fidelity to the Original**: Translate strictly according to the meaning and legal intent of the original text. Do not add or omit information.\n&quot; +
+                &quot;2.  **Precise Terminology**: Use standard legal terms common in the Common Law system. For example, \&quot;甲方\&quot; should be translated as \&quot;Party A\&quot;, \&quot;乙方\&quot; as \&quot;Party B\&quot;, and \&quot;不可抗力\&quot; as \&quot;Force Majeure\&quot;.\n&quot; +
+                &quot;3.  **Formal Tone**: Maintain the rigorous, objective, and formal tone inherent in legal documents.\n&quot; +
+                &quot;4.  **Clarity**: The translation must be clear, unambiguous, and conform to the expressive conventions of English legal writing.\n&quot; +
+                &quot;5.  **Format Preservation**: Retain the paragraphs, numbering, and basic format of the original text.\n\n&quot; +
+                &quot;# Text to Translate\n&quot; +
+                &quot;{text_to_translate}&quot;;
+
+        String spanishLegalText = &quot;This Contract shall become effective from the date of signature and seal by both parties and shall be valid for a period of one year.&quot;;
+        String finalPrompt = promptTemplate.replace(&quot;{text_to_translate}&quot;, spanishLegalText);
+
+        Message userMsg = Message.builder()
+                .role(Role.USER.getValue())
+                .content(finalPrompt)
+                .build();
+
+        GenerationParam param = GenerationParam.builder()
+                // If you have not configured an environment variable, replace the following line with your Model Studio API key: .apiKey(&quot;sk-xxx&quot;)
+                .apiKey(System.getenv(&quot;DASHSCOPE_API_KEY&quot;))
+                .model(&quot;qwen-mt-plus&quot;)
+                .messages(Collections.singletonList(userMsg))
+                .resultFormat(GenerationParam.ResultFormat.MESSAGE)
+                .build();
+        return gen.call(param);
+    }
+    public static void main(String[] args) {
+        try {
+            GenerationResult result = callWithMessage();
+            System.out.println(result.getOutput().getChoices().get(0).getMessage().getContent());
+        } catch (ApiException | NoApiKeyException | InputRequiredException e) {
+            System.err.println(&quot;Error message: &quot;+e.getMessage());
+            e.printStackTrace();
+        }
+        }
+}
+</code></pre></div></div><strong>Sample response</strong><pre data-tag="codeblock" id="code-block-14" code-type="xCode" class="pre codeblock"><code>This Contract shall become effective from the date on which both parties sign and affix their seals, and its term of validity shall be one year.
+</code></pre></section></section>
+<h2 id="going-live">Going live <span id="75259aaa2eoen"></span> <span id="578ff38c3cdcl"></span></h2>
+<ul>
+<li>
+<strong>Control the input token count</strong>
+<p>Qwen-MT models accept a maximum of 8,192 input tokens. For longer content, use the following strategies to stay within this limit:</p>
+<ul>
+<li><strong>Translate in segments</strong>: Break long text into manageable chunks at natural semantic boundaries -- such as paragraphs or complete sentences -- rather than splitting by character count. This preserves contextual coherence and yields more accurate translations.</li>
+<li><strong>Provide only the most relevant references</strong>: Terms, translation memory entries, and domain prompts all consume input tokens. Include only references directly relevant to the text being translated. Avoid passing large, generic reference lists.</li>
+</ul>
+</li>
+<li>
+<p><strong>Set</strong><code>source_lang</code><strong>based on the scenario</strong></p>
+<ul>
+<li>When the source language is uncertain -- for example, in multilingual chat scenarios -- set <code>source_lang</code> to <code>auto</code>. The model identifies the language automatically.</li>
+<li>When the source language is known and accuracy is critical -- such as for technical documentation or operation manuals -- always specify <code>source_lang</code> explicitly. This improves translation accuracy.</li>
+</ul>
+</li>
+</ul>
+<h2 id="supported-languages">Supported languages <span id="038d2865bbydc"></span> <span id="14735a54e0rwb"></span></h2>
+<p>When sending a request, use either the <strong>English name</strong> or the <strong>Code</strong> from the tables below.</p>
+<blockquote>
+<p>If you are unsure of the source language, you can set the <code>source_lang</code> parameter to <code>auto</code> for automatic detection.</p>
+</blockquote>
+<section data-tag="tabbed-content-box" outputclass="tabbed-content-box" id="sec-tabs-7" class="tabbed-content-box section"><section id="languages-supported-by-qwen-mt-plus-flash-turbo-92" class="section"><h4 id="languages-supported-by-qwen-mt-plus-flash-turbo-92-h4">Languages supported by qwen-mt-plus/flash/turbo (92)</h4><table style="display:table;table-layout:fixed;width:100%"><colgroup><col style="width:38.46%"/><col style="width:38.46%"/><col style="width:23.08%"/></colgroup><thead><tr><th><p><strong>Language</strong></p></th><th><p><strong>English name</strong></p></th><th><p><strong>Code</strong></p></th></tr></thead><tbody><tr><td><p>English</p></td><td><p>English</p></td><td><p>en</p></td></tr><tr><td><p>Simplified Chinese</p></td><td><p>Chinese</p></td><td><p>zh</p></td></tr><tr><td><p>Traditional Chinese</p></td><td><p>Traditional Chinese</p></td><td><p>zh_tw</p></td></tr><tr><td><p>Russian</p></td><td><p>Russian</p></td><td><p>ru</p></td></tr><tr><td><p>Japanese</p></td><td><p>Japanese</p></td><td><p>ja</p></td></tr><tr><td><p>Korean</p></td><td><p>Korean</p></td><td><p>ko</p></td></tr><tr><td><p>Spanish</p></td><td><p>Spanish</p></td><td><p>es</p></td></tr><tr><td><p>French</p></td><td><p>French</p></td><td><p>fr</p></td></tr><tr><td><p>Portuguese</p></td><td><p>Portuguese</p></td><td><p>pt</p></td></tr><tr><td><p>German</p></td><td><p>German</p></td><td><p>de</p></td></tr><tr><td><p>Italian</p></td><td><p>Italian</p></td><td><p>it</p></td></tr><tr><td><p>Thai</p></td><td><p>Thai</p></td><td><p>th</p></td></tr><tr><td><p>Vietnamese</p></td><td><p>Vietnamese</p></td><td><p>vi</p></td></tr><tr><td><p>Indonesian</p></td><td><p>Indonesian</p></td><td><p>id</p></td></tr><tr><td><p>Malay</p></td><td><p>Malay</p></td><td><p>ms</p></td></tr><tr><td><p>Arabic</p></td><td><p>Arabic</p></td><td><p>ar</p></td></tr><tr><td><p>Hindi</p></td><td><p>Hindi</p></td><td><p>hi</p></td></tr><tr><td><p>Hebrew</p></td><td><p>Hebrew</p></td><td><p>he</p></td></tr><tr><td><p>Burmese</p></td><td><p>Burmese</p></td><td><p>my</p></td></tr><tr><td><p>Tamil</p></td><td><p>Tamil</p></td><td><p>ta</p></td></tr><tr><td><p>Urdu</p></td><td><p>Urdu</p></td><td><p>ur</p></td></tr><tr><td><p>Bengali</p></td><td><p>Bengali</p></td><td><p>bn</p></td></tr><tr><td><p>Polish</p></td><td><p>Polish</p></td><td><p>pl</p></td></tr><tr><td><p>Dutch</p></td><td><p>Dutch</p></td><td><p>nl</p></td></tr><tr><td><p>Romanian</p></td><td><p>Romanian</p></td><td><p>ro</p></td></tr><tr><td><p>Turkish</p></td><td><p>Turkish</p></td><td><p>tr</p></td></tr><tr><td><p>Khmer</p></td><td><p>Khmer</p></td><td><p>km</p></td></tr><tr><td><p>Lao</p></td><td><p>Lao</p></td><td><p>lo</p></td></tr><tr><td><p>Cantonese</p></td><td><p>Cantonese</p></td><td><p>yue</p></td></tr><tr><td><p>Czech</p></td><td><p>Czech</p></td><td><p>cs</p></td></tr><tr><td><p>Greek</p></td><td><p>Greek</p></td><td><p>el</p></td></tr><tr><td><p>Swedish</p></td><td><p>Swedish</p></td><td><p>sv</p></td></tr><tr><td><p>Hungarian</p></td><td><p>Hungarian</p></td><td><p>hu</p></td></tr><tr><td><p>Danish</p></td><td><p>Danish</p></td><td><p>da</p></td></tr><tr><td><p>Finnish</p></td><td><p>Finnish</p></td><td><p>fi</p></td></tr><tr><td><p>Ukrainian</p></td><td><p>Ukrainian</p></td><td><p>uk</p></td></tr><tr><td><p>Bulgarian</p></td><td><p>Bulgarian</p></td><td><p>bg</p></td></tr><tr><td><p>Serbian</p></td><td><p>Serbian</p></td><td><p>sr</p></td></tr><tr><td><p>Telugu</p></td><td><p>Telugu</p></td><td><p>te</p></td></tr><tr><td><p>Afrikaans</p></td><td><p>Afrikaans</p></td><td><p>af</p></td></tr><tr><td><p>Armenian</p></td><td><p>Armenian</p></td><td><p>hy</p></td></tr><tr><td><p>Assamese</p></td><td><p>Assamese</p></td><td><p>as</p></td></tr><tr><td><p>Asturian</p></td><td><p>Asturian</p></td><td><p>ast</p></td></tr><tr><td><p>Basque</p></td><td><p>Basque</p></td><td><p>eu</p></td></tr><tr><td><p>Belarusian</p></td><td><p>Belarusian</p></td><td><p>be</p></td></tr><tr><td><p>Bosnian</p></td><td><p>Bosnian</p></td><td><p>bs</p></td></tr><tr><td><p>Catalan</p></td><td><p>Catalan</p></td><td><p>ca</p></td></tr><tr><td><p>Cebuano</p></td><td><p>Cebuano</p></td><td><p>ceb</p></td></tr><tr><td><p>Croatian</p></td><td><p>Croatian</p></td><td><p>hr</p></td></tr><tr><td><p>Egyptian Arabic</p></td><td><p>Egyptian Arabic</p></td><td><p>arz</p></td></tr><tr><td><p>Estonian</p></td><td><p>Estonian</p></td><td><p>et</p></td></tr><tr><td><p>Galician</p></td><td><p>Galician</p></td><td><p>gl</p></td></tr><tr><td><p>Georgian</p></td><td><p>Georgian</p></td><td><p>ka</p></td></tr><tr><td><p>Gujarati</p></td><td><p>Gujarati</p></td><td><p>gu</p></td></tr><tr><td><p>Icelandic</p></td><td><p>Icelandic</p></td><td><p>is</p></td></tr><tr><td><p>Javanese</p></td><td><p>Javanese</p></td><td><p>jv</p></td></tr><tr><td><p>Kannada</p></td><td><p>Kannada</p></td><td><p>kn</p></td></tr><tr><td><p>Kazakh</p></td><td><p>Kazakh</p></td><td><p>kk</p></td></tr><tr><td><p>Latvian</p></td><td><p>Latvian</p></td><td><p>lv</p></td></tr><tr><td><p>Lithuanian</p></td><td><p>Lithuanian</p></td><td><p>lt</p></td></tr><tr><td><p>Luxembourgish</p></td><td><p>Luxembourgish</p></td><td><p>lb</p></td></tr><tr><td><p>Macedonian</p></td><td><p>Macedonian</p></td><td><p>mk</p></td></tr><tr><td><p>Maithili</p></td><td><p>Maithili</p></td><td><p>mai</p></td></tr><tr><td><p>Maltese</p></td><td><p>Maltese</p></td><td><p>mt</p></td></tr><tr><td><p>Marathi</p></td><td><p>Marathi</p></td><td><p>mr</p></td></tr><tr><td><p>Mesopotamian Arabic</p></td><td><p>Mesopotamian Arabic</p></td><td><p>acm</p></td></tr><tr><td><p>Moroccan Arabic</p></td><td><p>Moroccan Arabic</p></td><td><p>ary</p></td></tr><tr><td><p>Najdi Arabic</p></td><td><p>Najdi Arabic</p></td><td><p>ars</p></td></tr><tr><td><p>Nepali</p></td><td><p>Nepali</p></td><td><p>ne</p></td></tr><tr><td><p>North Azerbaijani</p></td><td><p>North Azerbaijani</p></td><td><p>az</p></td></tr><tr><td><p>North Levantine Arabic</p></td><td><p>North Levantine Arabic</p></td><td><p>apc</p></td></tr><tr><td><p>Northern Uzbek</p></td><td><p>Northern Uzbek</p></td><td><p>uz</p></td></tr><tr><td><p>Norwegian Bokmål</p></td><td><p>Norwegian Bokmål</p></td><td><p>nb</p></td></tr><tr><td><p>Norwegian Nynorsk</p></td><td><p>Norwegian Nynorsk</p></td><td><p>nn</p></td></tr><tr><td><p>Occitan</p></td><td><p>Occitan</p></td><td><p>oc</p></td></tr><tr><td><p>Odia</p></td><td><p>Odia</p></td><td><p>or</p></td></tr><tr><td><p>Pangasinan</p></td><td><p>Pangasinan</p></td><td><p>pag</p></td></tr><tr><td><p>Sicilian</p></td><td><p>Sicilian</p></td><td><p>scn</p></td></tr><tr><td><p>Sindhi</p></td><td><p>Sindhi</p></td><td><p>sd</p></td></tr><tr><td><p>Sinhala</p></td><td><p>Sinhala</p></td><td><p>si</p></td></tr><tr><td><p>Slovak</p></td><td><p>Slovak</p></td><td><p>sk</p></td></tr><tr><td><p>Slovenian</p></td><td><p>Slovenian</p></td><td><p>sl</p></td></tr><tr><td><p>South Levantine Arabic</p></td><td><p>South Levantine Arabic</p></td><td><p>ajp</p></td></tr><tr><td><p>Swahili</p></td><td><p>Swahili</p></td><td><p>sw</p></td></tr><tr><td><p>Tagalog</p></td><td><p>Tagalog</p></td><td><p>tl</p></td></tr><tr><td><p>Ta’izzi-Adeni Arabic</p></td><td><p>Ta’izzi-Adeni Arabic</p></td><td><p>acq</p></td></tr><tr><td><p>Tosk Albanian</p></td><td><p>Tosk Albanian</p></td><td><p>sq</p></td></tr><tr><td><p>Tunisian Arabic</p></td><td><p>Tunisian Arabic</p></td><td><p>aeb</p></td></tr><tr><td><p>Venetian</p></td><td><p>Venetian</p></td><td><p>vec</p></td></tr><tr><td><p>Valaisan</p></td><td><p>Waray</p></td><td><p>war</p></td></tr><tr><td><p>Welsh</p></td><td><p>Welsh</p></td><td><p>cy</p></td></tr><tr><td><p>Western Persian</p></td><td><p>Western Persian</p></td><td><p>fa</p></td></tr></tbody></table></section><section id="languages-supported-by-qwen-mt-lite-31" class="section"><h4 id="languages-supported-by-qwen-mt-lite-31-h4">Languages supported by qwen-mt-lite (31)</h4><table style="display:table;table-layout:fixed;width:100%"><colgroup><col style="width:38.46%"/><col style="width:38.46%"/><col style="width:23.08%"/></colgroup><thead><tr><th><p><strong>Language</strong></p></th><th><p><strong>English name</strong></p></th><th><p><strong>Code</strong></p></th></tr></thead><tbody><tr><td><p>English</p></td><td><p>English</p></td><td><p>en</p></td></tr><tr><td><p>Simplified Chinese</p></td><td><p>Chinese</p></td><td><p>zh</p></td></tr><tr><td><p>Traditional Chinese</p></td><td><p>Traditional Chinese</p></td><td><p>zh_tw</p></td></tr><tr><td><p>Russian</p></td><td><p>Russian</p></td><td><p>ru</p></td></tr><tr><td><p>Japanese</p></td><td><p>Japanese</p></td><td><p>ja</p></td></tr><tr><td><p>Korean</p></td><td><p>Korean</p></td><td><p>ko</p></td></tr><tr><td><p>Spanish</p></td><td><p>Spanish</p></td><td><p>es</p></td></tr><tr><td><p>French</p></td><td><p>French</p></td><td><p>fr</p></td></tr><tr><td><p>Portuguese</p></td><td><p>Portuguese</p></td><td><p>pt</p></td></tr><tr><td><p>German</p></td><td><p>German</p></td><td><p>de</p></td></tr><tr><td><p>Italian</p></td><td><p>Italian</p></td><td><p>it</p></td></tr><tr><td><p>Thai</p></td><td><p>Thai</p></td><td><p>th</p></td></tr><tr><td><p>Vietnamese</p></td><td><p>Vietnamese</p></td><td><p>vi</p></td></tr><tr><td><p>Indonesian</p></td><td><p>Indonesian</p></td><td><p>id</p></td></tr><tr><td><p>Malay</p></td><td><p>Malay</p></td><td><p>ms</p></td></tr><tr><td><p>Arabic</p></td><td><p>Arabic</p></td><td><p>ar</p></td></tr><tr><td><p>Hindi</p></td><td><p>Hindi</p></td><td><p>hi</p></td></tr><tr><td><p>Hebrew</p></td><td><p>Hebrew</p></td><td><p>he</p></td></tr><tr><td><p>Urdu</p></td><td><p>Urdu</p></td><td><p>ur</p></td></tr><tr><td><p>Bengali</p></td><td><p>Bengali</p></td><td><p>bn</p></td></tr><tr><td><p>Polish</p></td><td><p>Polish</p></td><td><p>pl</p></td></tr><tr><td><p>Dutch</p></td><td><p>Dutch</p></td><td><p>nl</p></td></tr><tr><td><p>Turkish</p></td><td><p>Turkish</p></td><td><p>tr</p></td></tr><tr><td><p>Khmer</p></td><td><p>Khmer</p></td><td><p>km</p></td></tr><tr><td><p>Czech</p></td><td><p>Czech</p></td><td><p>cs</p></td></tr><tr><td><p>Swedish</p></td><td><p>Swedish</p></td><td><p>sv</p></td></tr><tr><td><p>Hungarian</p></td><td><p>Hungarian</p></td><td><p>hu</p></td></tr><tr><td><p>Danish</p></td><td><p>Danish</p></td><td><p>da</p></td></tr><tr><td><p>Finnish</p></td><td><p>Finnish</p></td><td><p>fi</p></td></tr><tr><td><p>Tagalog</p></td><td><p>Tagalog</p></td><td><p>tl</p></td></tr><tr><td><p>Persian</p></td><td><p>Persian</p></td><td><p>fa</p></td></tr></tbody></table></section></section>
+<h2 id="api-reference">API reference <span id="86ef54a951big"></span> <span id="0af2cf2dffaxs"></span></h2>
+<p>For detailed input and output parameter specifications, see <a href="/help/en/model-studio/qwen-mt-api">Qwen-MT</a>.</p></div>
+</div>
+</article>
+<script type="text/javascript">
+window.storeDocs = {
+language: '$lang',
+docGithubLink: '$!githubInfo.url'
+}
+</script>
+<div class="nav-footer">
+ </div>
+<div class="alicloud-document-ask clearfix"></div>
+<div class="feedback-message" style="display:none;">
+<span class="hasfeedback acon acon-done-16"></span>
+Thank you! We've received your  feedback.
+</div>
+</div>
+<div class="col-log-2 col-md-2 col-sm-0 col-xs-0 nav-catalog">
+<div class="article-catalog" id="articleCatalog"></div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script
+crossorigin
+src="https://g.alicdn.com/code/lib/??react/16.8.6/umd/react.production.min.js,react-dom/16.8.6/umd/react-dom.production.min.js"
+></script>
+<script
+src="https://g.alicdn.com/code/lib/lodash.js/4.17.21/lodash.min.js"
+crossorigin="anonymous"
+></script>
+<script src="//g.alicdn.com/aliyun-help/help-portal-fe/0.12.64/js/vendor.js"></script>
+<script src="//g.alicdn.com/aliyun-help/help-portal-fe/0.12.64/js/index.js"></script>
+<script defer src="https://cloud-assets.alicdn.com/alicdn/dawn/user-tracker/latest/js/index.js"></script>
+</body>
+</html>

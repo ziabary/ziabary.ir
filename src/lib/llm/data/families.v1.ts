@@ -237,3 +237,19 @@ families.push({
     "evidence:tasks0920-tencent-hy-mt1-5-7b"
   ]
 });
+families.push({
+  "id": "family:madlad",
+  "name": "MADLAD",
+  "publisher": "Google",
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ]
+});
+families.push({
+  "id": "family:nllb",
+  "name": "NLLB",
+  "publisher": "Meta",
+  "evidenceIds": [
+    "evidence:translation0920-facebook-nllb-200-distilled-600m"
+  ]
+});

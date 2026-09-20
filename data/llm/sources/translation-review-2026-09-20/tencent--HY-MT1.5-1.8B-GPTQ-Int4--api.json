@@ -1,0 +1,204 @@
+{
+  "_id": "695358558adf717716dff2ec",
+  "id": "tencent/HY-MT1.5-1.8B-GPTQ-Int4",
+  "private": false,
+  "pipeline_tag": "translation",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hunyuan_v1_dense",
+    "text-generation",
+    "translation",
+    "zh",
+    "en",
+    "fr",
+    "pt",
+    "es",
+    "ja",
+    "tr",
+    "ru",
+    "ar",
+    "ko",
+    "th",
+    "it",
+    "de",
+    "vi",
+    "ms",
+    "id",
+    "tl",
+    "hi",
+    "pl",
+    "cs",
+    "nl",
+    "km",
+    "my",
+    "fa",
+    "gu",
+    "ur",
+    "te",
+    "mr",
+    "he",
+    "bn",
+    "ta",
+    "uk",
+    "bo",
+    "kk",
+    "mn",
+    "ug",
+    "arxiv:2512.24092",
+    "endpoints_compatible",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "downloads": 472,
+  "likes": 15,
+  "modelId": "tencent/HY-MT1.5-1.8B-GPTQ-Int4",
+  "author": "tencent",
+  "sha": "614b90aaac3987fbe4d6b3c976000b8c996cf5ca",
+  "lastModified": "2026-01-01T02:36:13.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "\u6211\u53eb\u6c83\u5c14\u592b\u5188\uff0c\u6211\u4f4f\u5728\u67cf\u6797\u3002"
+    },
+    {
+      "text": "\u6211\u53eb\u8428\u62c9\uff0c\u6211\u4f4f\u5728\u4f26\u6566\u3002"
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "HunYuanDenseV1ForCausalLM"
+    ],
+    "model_type": "hunyuan_v1_dense",
+    "quantization_config": {
+      "bits": 4,
+      "quant_method": "gptq"
+    },
+    "tokenizer_config": {
+      "bos_token": "<\uff5chy_begin\u2581of\u2581sentence\uff5c>",
+      "eos_token": "<\uff5chy_place\u2581holder\u2581no\u25812\uff5c>",
+      "pad_token": "<\uff5chy_\u2581pad\u2581\uff5c>"
+    },
+    "chat_template_jinja": "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}<\uff5chy_begin\u2581of\u2581sentence\uff5c>{{ system_message }}<\uff5chy_place\u2581holder\u2581no\u25813\uff5c>{% else %}{% set loop_messages = messages %}<\uff5chy_begin\u2581of\u2581sentence\uff5c>{% endif %}{% for message in loop_messages %}{% if message['role'] == 'user' %}<\uff5chy_User\uff5c>{{ message['content'] }}{% elif message['role'] == 'assistant' %}<\uff5chy_Assistant\uff5c>{{ message['content'] }}<\uff5chy_place\u2581holder\u2581no\u25812\uff5c>{% endif %}{% endfor %}{% if add_generation_prompt %}<\uff5chy_Assistant\uff5c>{% else %}<\uff5chy_place\u2581holder\u2581no\u25818\uff5c>{% endif %}"
+  },
+  "cardData": {
+    "library_name": "transformers",
+    "tags": [
+      "translation"
+    ],
+    "language": [
+      "zh",
+      "en",
+      "fr",
+      "pt",
+      "es",
+      "ja",
+      "tr",
+      "ru",
+      "ar",
+      "ko",
+      "th",
+      "it",
+      "de",
+      "vi",
+      "ms",
+      "id",
+      "tl",
+      "hi",
+      "pl",
+      "cs",
+      "nl",
+      "km",
+      "my",
+      "fa",
+      "gu",
+      "ur",
+      "te",
+      "mr",
+      "he",
+      "bn",
+      "ta",
+      "uk",
+      "bo",
+      "kk",
+      "mn",
+      "ug"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForCausalLM",
+    "pipeline_tag": "text-generation",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "License.txt",
+      "blobId": "af413495574921b2d5337d355a6893dea27bda29",
+      "size": 16380
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "fe5927195399aae16c3eaa0dbc32c2833bde0346",
+      "size": 9119
+    },
+    {
+      "rfilename": "angelslim_config.json",
+      "blobId": "68901f11c3c9c50606db9c9806dc975d16dddb9a",
+      "size": 2167
+    },
+    {
+      "rfilename": "chat_template.jinja",
+      "blobId": "11f06996e3fdef5fc75a350af36dc9862e34cbde",
+      "size": 654
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "40e210a19fccd382076eb4a9d393c878b44a057b",
+      "size": 1567
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "9eae778524aaffe121c03a115bac6e58bc08adb7",
+      "size": 1329672064,
+      "lfs": {
+        "sha256": "08aacc3710aeae79dd4d2244ea4717664188a1fceb44d7631ffccd00fff493b3",
+        "size": 1329672064,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "ede21e29cb7086f12a84eca01cda0a448e368772",
+      "size": 488
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "09ba3c1131349cc3ddcd9d6889154ffc0497a173",
+      "size": 9527574
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "04a620eef4b09f76d35f8a6f4ac331d96f01eee2",
+      "size": 165815
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2025-12-30T04:43:01.000Z",
+  "safetensors": {
+    "parameters": {
+      "I32": 1543503872,
+      "BF16": 247576576
+    },
+    "total": 1791080448
+  },
+  "usedStorage": 1329672064
+}

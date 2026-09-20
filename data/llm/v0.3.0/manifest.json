@@ -5,7 +5,7 @@
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
   "sourceArchiveSha256": "843bd11098930f80bb0c8254f8e0cfa77a3438681a5f7aa99e12544a70d7e23a",
-  "baseModels": 115,
+  "baseModels": 123,
   "basePublishedEvaluations": 1209,
   "mergedPublishedEvaluations": 1267,
   "referencePack": {

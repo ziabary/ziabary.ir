@@ -158,7 +158,9 @@ export interface LicenseRecord {
 export type ModelTaskSpecialization = 'translation' | 'code-completion' | 'coding-assistant' | 'coding-agent';
 export interface ModelVersion {
   /** Reviewed specialization, not merely a task a general-purpose model can perform. */
-  taskSpecializations?: Array<{ task: ModelTaskSpecialization; languages?: string[]; evidenceIds: EvidenceId[] }>;
+  researchOnly?: boolean;
+  inputTokenLimit?: Datum<number, 'token'>;
+  taskSpecializations?: Array<{ task: ModelTaskSpecialization; languages?: string[]; languagePairs?: Array<[string, string]>; evidenceIds: EvidenceId[] }>;
 
   configurationContext?: Datum<number, 'token'>;
   id: ModelVersionId;
@@ -261,6 +263,7 @@ export interface ModelArtifact {
 /** A verified distribution listing is not an exact execution artifact. */
 export interface ArtifactListing {
   /** Repository link only; no file manifest or measured byte size was captured. */
+  runtimeEngines?: string[];
   inventoryStatus?: 'not-recorded';
   id: EntityId<'artifact-listing'>;
   modelVersionId: ModelVersionId;

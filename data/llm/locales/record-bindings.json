@@ -9012,8 +9012,9 @@
     "introduction": "tasks0920.356ce9853669cc7a56",
     "roleSummary": "tasks0920.523cadd1a7218e291e",
     "distinguishingFeatures/0": "tasks0920.21bc9b923f8cf547e6",
-    "languageSummary": "tasks0920.805d616d4b44434843",
-    "runGuides/0/conditions/0": "tasks0920.6f95776ab816827b30"
+    "languageSummary": "translation0920.805d616d4b44434843",
+    "runGuides/0/conditions/0": "tasks0920.6f95776ab816827b30",
+    "runGuides/1/conditions/0": "translation0920.253b185c5760c10f9f"
   },
   "repository.modelUseGuidance/model-use:tencent-hy-mt1-5-1-8b:translation": {
     "summary": "tasks0920.45bc91898ca0a3be3f",
@@ -9027,12 +9028,98 @@
     "introduction": "tasks0920.3ce0a1e557dbbcb21f",
     "roleSummary": "tasks0920.b1f392ca61e501b0ab",
     "distinguishingFeatures/0": "tasks0920.d19515b7a3903fca1a",
-    "languageSummary": "tasks0920.8c29c2e71f19308c34",
-    "runGuides/0/conditions/0": "tasks0920.e2efc02e91e9458643"
+    "languageSummary": "translation0920.8c29c2e71f19308c34",
+    "runGuides/0/conditions/0": "tasks0920.e2efc02e91e9458643",
+    "runGuides/1/conditions/0": "translation0920.ed24decfa2ccdef714"
   },
   "repository.modelUseGuidance/model-use:tencent-hy-mt1-5-7b:translation": {
     "summary": "tasks0920.e7786d607f57d330df",
     "description": "tasks0920.ac7ddd639b2e144aab",
     "distinguishingFeature": "tasks0920.c51d225b223d3d20a2"
+  },
+  "repository.modelProfiles/model-profile:tencent-hy-mt2-1-8b": {
+    "introduction": "translation0920.41423f802cec598bfb",
+    "roleSummary": "translation0920.163f4e8aae46ebbe37",
+    "runGuides/0/conditions/0": "translation0920.9eca8c32fd0869ed1a",
+    "runGuides/1/conditions/0": "translation0920.69305a4fdaf7b8fa4a",
+    "runGuides/2/conditions/0": "translation0920.68485bc91a6ffed552"
+  },
+  "repository.modelUseGuidance/model-use:tencent-hy-mt2-1-8b:translation": {
+    "summary": "translation0920.974c47060eeddd948a",
+    "description": "translation0920.b29693508279503a9a",
+    "distinguishingFeature": "translation0920.36c15d0a81f4d358e0"
+  },
+  "repository.modelProfiles/model-profile:tencent-hy-mt2-7b": {
+    "introduction": "translation0920.8ab77ec8e7002b590f",
+    "roleSummary": "translation0920.ff27ab721b79a7588b",
+    "runGuides/0/conditions/0": "translation0920.b81d99cbaafd86a9e7",
+    "runGuides/1/conditions/0": "translation0920.0451382feb0396e186",
+    "runGuides/2/conditions/0": "translation0920.e8451fc00c391e4583"
+  },
+  "repository.modelUseGuidance/model-use:tencent-hy-mt2-7b:translation": {
+    "summary": "translation0920.fe3852df5f35c6288e",
+    "description": "translation0920.f3d45efc66647aa0c7",
+    "distinguishingFeature": "translation0920.3616ca8f2b3a797c59"
+  },
+  "repository.modelProfiles/model-profile:tencent-hy-mt2-30b-a3b": {
+    "introduction": "translation0920.8ef6193b811f34c64e",
+    "roleSummary": "translation0920.d19f9236796d27741e",
+    "runGuides/0/conditions/0": "translation0920.1bd94b3fe46a287fbd",
+    "runGuides/1/conditions/0": "translation0920.9caf492a139a401018"
+  },
+  "repository.modelUseGuidance/model-use:tencent-hy-mt2-30b-a3b:translation": {
+    "summary": "translation0920.f559b23e2a1de38481",
+    "description": "translation0920.ecf4288cd76a9d724d",
+    "distinguishingFeature": "translation0920.5fd049a6e76feb8596"
+  },
+  "repository.modelProfiles/model-profile:google-translategemma-4b-it": {
+    "introduction": "translation0920.f80c2f126e4f1c14f7",
+    "roleSummary": "translation0920.496939983addc79bb8",
+    "runGuides/0/conditions/0": "translation0920.de8a9aaa913d568d61"
+  },
+  "repository.modelUseGuidance/model-use:google-translategemma-4b-it:translation": {
+    "summary": "translation0920.88c42e5f110c320938",
+    "description": "translation0920.2547ddad23ffe358c4",
+    "distinguishingFeature": "translation0920.6f349b8ea96a9f0616"
+  },
+  "repository.modelProfiles/model-profile:google-translategemma-12b-it": {
+    "introduction": "translation0920.f2aa3241c2969503d3",
+    "roleSummary": "translation0920.ad6ae3f8ad27915620",
+    "runGuides/0/conditions/0": "translation0920.64800198604408b708"
+  },
+  "repository.modelUseGuidance/model-use:google-translategemma-12b-it:translation": {
+    "summary": "translation0920.9a775363197c0243c3",
+    "description": "translation0920.a3d4a14e813c16b258",
+    "distinguishingFeature": "translation0920.9d8ada8ab41f898978"
+  },
+  "repository.modelProfiles/model-profile:google-translategemma-27b-it": {
+    "introduction": "translation0920.3fc9f4b123b4f4c989",
+    "roleSummary": "translation0920.9f917d19a4d9f6a7c7",
+    "runGuides/0/conditions/0": "translation0920.54f7a8b18d4fdcaddf"
+  },
+  "repository.modelUseGuidance/model-use:google-translategemma-27b-it:translation": {
+    "summary": "translation0920.520eed7a8e6f742cef",
+    "description": "translation0920.ad384f78cd4b8ae858",
+    "distinguishingFeature": "translation0920.42396841e95438af73"
+  },
+  "repository.modelProfiles/model-profile:google-madlad400-3b-mt": {
+    "introduction": "translation0920.615617506fa65689d3",
+    "roleSummary": "translation0920.c6b265ef5cfee0bb24",
+    "runGuides/0/conditions/0": "translation0920.d5753b1c56811fa615"
+  },
+  "repository.modelUseGuidance/model-use:google-madlad400-3b-mt:translation": {
+    "summary": "translation0920.0624cc17bcbeed4366",
+    "description": "translation0920.f35829a2715e82b584",
+    "distinguishingFeature": "translation0920.63a470c203e5d7a23d"
+  },
+  "repository.modelProfiles/model-profile:facebook-nllb-200-distilled-600m": {
+    "introduction": "translation0920.f2f1aaa8d452d3d14b",
+    "roleSummary": "translation0920.938aac943e04036658",
+    "runGuides/0/conditions/0": "translation0920.25828b191610680ad9"
+  },
+  "repository.modelUseGuidance/model-use:facebook-nllb-200-distilled-600m:translation": {
+    "summary": "translation0920.ec592f7f2f341f6a2b",
+    "description": "translation0920.322c595e880b6bd8d1",
+    "distinguishingFeature": "translation0920.ec6fc16005c031d6c2"
   }
 }

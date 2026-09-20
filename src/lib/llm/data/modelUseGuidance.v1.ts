@@ -6595,3 +6595,118 @@ modelUseGuidance.push({
     "evidence:tasks0920-tencent-hy-mt1-5-7b"
   ]
 });
+modelUseGuidance.push({
+  "id": "model-use:tencent-hy-mt2-1-8b:translation",
+  "modelVersionId": "model:tencent-hy-mt2-1-8b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "نسل دوم مترجم Hy-MT با دستورهای ترجمه و حفظ اصطلاحات.",
+  "distinguishingFeature": "نصب Transformers ≥ 5.6.0 و قالب ترجمهٔ همین نسخه؛ عدد پیکربندی زمینه، نتیجهٔ آزمون طول متن نیست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-1-8b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:tencent-hy-mt2-7b:translation",
+  "modelVersionId": "model:tencent-hy-mt2-7b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "نسل دوم مترجم Hy-MT با دستورهای ترجمه و حفظ اصطلاحات.",
+  "distinguishingFeature": "نصب Transformers ≥ 5.6.0 و قالب ترجمهٔ همین نسخه؛ عدد پیکربندی زمینه، نتیجهٔ آزمون طول متن نیست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-7b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:tencent-hy-mt2-30b-a3b:translation",
+  "modelVersionId": "model:tencent-hy-mt2-30b-a3b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "نسل دوم مترجم Hy-MT با دستورهای ترجمه و حفظ اصطلاحات.",
+  "distinguishingFeature": "نصب Transformers ≥ 5.6.0 و قالب ترجمهٔ همین نسخه؛ عدد پیکربندی زمینه، نتیجهٔ آزمون طول متن نیست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-tencent-hy-mt2-30b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:google-translategemma-4b-it:translation",
+  "modelVersionId": "model:google-translategemma-4b-it",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "مترجم متن و نوشته‌های تصویر با ورودی حداکثر ۲هزار توکن؛ قالب ویژهٔ ترجمه دارد.",
+  "distinguishingFeature": "قالب شامل source_lang_code و target_lang_code است؛ دریافت وزن‌ها نیازمند پذیرش شرایط Google است. از ظرفیت Gemma عمومی استفاده نکنید.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-4b-it",
+    "evidence:translation0920-translategemma-paper"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:google-translategemma-12b-it:translation",
+  "modelVersionId": "model:google-translategemma-12b-it",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "مترجم متن و نوشته‌های تصویر با ورودی حداکثر ۲هزار توکن؛ قالب ویژهٔ ترجمه دارد.",
+  "distinguishingFeature": "قالب شامل source_lang_code و target_lang_code است؛ دریافت وزن‌ها نیازمند پذیرش شرایط Google است. از ظرفیت Gemma عمومی استفاده نکنید.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-12b-it",
+    "evidence:translation0920-translategemma-paper"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:google-translategemma-27b-it:translation",
+  "modelVersionId": "model:google-translategemma-27b-it",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "مترجم متن و نوشته‌های تصویر با ورودی حداکثر ۲هزار توکن؛ قالب ویژهٔ ترجمه دارد.",
+  "distinguishingFeature": "قالب شامل source_lang_code و target_lang_code است؛ دریافت وزن‌ها نیازمند پذیرش شرایط Google است. از ظرفیت Gemma عمومی استفاده نکنید.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-google-translategemma-27b-it",
+    "evidence:translation0920-translategemma-paper"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:google-madlad400-3b-mt:translation",
+  "modelVersionId": "model:google-madlad400-3b-mt",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "مترجم مبتنی بر T5 با دامنهٔ زبانی گسترده؛ پیشوند زبان مقصد بخشی از ورودی است.",
+  "distinguishingFeature": "T5ForConditionalGeneration و T5Tokenizer؛ ورودی با <2xx> زبان مقصد شروع می‌شود.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-google-madlad400-3b-mt"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:facebook-nllb-200-distilled-600m:translation",
+  "modelVersionId": "model:facebook-nllb-200-distilled-600m",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی",
+  "description": "مدل مرجع پژوهشی ترجمه؛ مجوز غیرتجاری و ورودی آموزشی تا ۵۱۲ توکن دارد.",
+  "distinguishingFeature": "AutoModelForSeq2SeqLM؛ زبان مبدأ و forced_bos_token_id مقصد را تعیین کنید. برای استقرار تجاری پیشنهاد نمی‌شود.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:translation0920-facebook-nllb-200-distilled-600m"
+  ]
+});

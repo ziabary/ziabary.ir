@@ -41975,3 +41975,268 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:translation0920-translategemma-paper",
+  "url": "https://arxiv.org/pdf/2601.09012",
+  "title": "TranslateGemma technical report — training language directions",
+  "organization": "Google",
+  "accessedOn": "2026-09-20",
+  "locator": "Appendix Tables 5–6: bidirectional English pairs versus directions from English",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "TranslateGemma training language pairs",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-1-8b",
+  "url": "https://huggingface.co/tencent/Hy-MT2-1.8B/blob/9a341cd1b679d3efd23b46e847b01745a71ed792/README.md",
+  "title": "tencent/Hy-MT2-1.8B — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "9a341cd1b679d3efd23b46e847b01745a71ed792",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-1.8B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-7b",
+  "url": "https://huggingface.co/tencent/Hy-MT2-7B/blob/9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223/README.md",
+  "title": "tencent/Hy-MT2-7B — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "9b0eb4e8f001def3e5ff6469a0ac96fdb39ec223",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-7B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-30b-a3b",
+  "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B/blob/d3ead4dba61c09aac60a261a96ad1df3e705febb/README.md",
+  "title": "tencent/Hy-MT2-30B-A3B — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "d3ead4dba61c09aac60a261a96ad1df3e705febb",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-30B-A3B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-google-translategemma-4b-it",
+  "url": "https://huggingface.co/google/translategemma-4b-it/blob/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/README.md",
+  "title": "google/translategemma-4b-it — model card and file inventory",
+  "organization": "google",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "10042cb0e6e7fdce748996a71dc3dc432a4e0c89",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "google/translategemma-4b-it",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-google-translategemma-12b-it",
+  "url": "https://huggingface.co/google/translategemma-12b-it/blob/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/README.md",
+  "title": "google/translategemma-12b-it — model card and file inventory",
+  "organization": "google",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "d1b225e1caa17f1ddc7e62065d8637d0923f34e2",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "google/translategemma-12b-it",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-google-translategemma-27b-it",
+  "url": "https://huggingface.co/google/translategemma-27b-it/blob/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/README.md",
+  "title": "google/translategemma-27b-it — model card and file inventory",
+  "organization": "google",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "7d10f0b72f89a2d0f268cea30727d8b77c0d25c2",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "google/translategemma-27b-it",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-google-madlad400-3b-mt",
+  "url": "https://huggingface.co/google/madlad400-3b-mt/blob/fa184c675da0b5c9e1c8694fccd4e12e2d422094/README.md",
+  "title": "google/madlad400-3b-mt — model card and file inventory",
+  "organization": "google",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "google/madlad400-3b-mt",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-facebook-nllb-200-distilled-600m",
+  "url": "https://huggingface.co/facebook/nllb-200-distilled-600M/blob/f8d333a098d19b4fd9a8b18f94170487ad3f821d/README.md",
+  "title": "facebook/nllb-200-distilled-600M — model card and file inventory",
+  "organization": "facebook",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "facebook/nllb-200-distilled-600M",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt1-5-1-8b-gguf",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GGUF/blob/265b2e615a7dc9b06c435dc878829ad99a512ba2/README.md",
+  "title": "tencent/HY-MT1.5-1.8B-GGUF — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "265b2e615a7dc9b06c435dc878829ad99a512ba2",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-1.8B-GGUF",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt1-5-1-8b-fp8",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-FP8/blob/d6a25004e1c42c06e90731f6889dab522dc2d68a/README.md",
+  "title": "tencent/HY-MT1.5-1.8B-FP8 — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "d6a25004e1c42c06e90731f6889dab522dc2d68a",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-1.8B-FP8",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt1-5-1-8b-gptq-int4",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B-GPTQ-Int4/blob/614b90aaac3987fbe4d6b3c976000b8c996cf5ca/README.md",
+  "title": "tencent/HY-MT1.5-1.8B-GPTQ-Int4 — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "614b90aaac3987fbe4d6b3c976000b8c996cf5ca",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-1.8B-GPTQ-Int4",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt1-5-7b-gguf",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-7B-GGUF/blob/126325496bc8e3575f1d8615b8ca951d8483f206/README.md",
+  "title": "tencent/HY-MT1.5-7B-GGUF — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "126325496bc8e3575f1d8615b8ca951d8483f206",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-7B-GGUF",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt1-5-7b-fp8",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-7B-FP8/blob/49e35a5a5ebdd8a5b2e7c4d022c2760af8a4a0a8/README.md",
+  "title": "tencent/HY-MT1.5-7B-FP8 — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "49e35a5a5ebdd8a5b2e7c4d022c2760af8a4a0a8",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-7B-FP8",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-1-8b-gguf",
+  "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/blob/a0c709d9fac510f2c807aa3af52872340dc37a4a/README.md",
+  "title": "tencent/Hy-MT2-1.8B-GGUF — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "a0c709d9fac510f2c807aa3af52872340dc37a4a",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-1.8B-GGUF",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-1-8b-fp8",
+  "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-FP8/blob/b3f6f590920726d69a5504293bd4f36d50e5f681/README.md",
+  "title": "tencent/Hy-MT2-1.8B-FP8 — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "b3f6f590920726d69a5504293bd4f36d50e5f681",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-1.8B-FP8",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-7b-gguf",
+  "url": "https://huggingface.co/tencent/Hy-MT2-7B-GGUF/blob/ab8472660ac61fac25f1af43fac2599d52a8a775/README.md",
+  "title": "tencent/Hy-MT2-7B-GGUF — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "ab8472660ac61fac25f1af43fac2599d52a8a775",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-7B-GGUF",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-7b-fp8",
+  "url": "https://huggingface.co/tencent/Hy-MT2-7B-FP8/blob/883d09eb21d9be92058556cd0a4016d8a648c7db/README.md",
+  "title": "tencent/Hy-MT2-7B-FP8 — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "883d09eb21d9be92058556cd0a4016d8a648c7db",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-7B-FP8",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:translation0920-tencent-hy-mt2-30b-a3b-fp8",
+  "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8/blob/b69671c83c2137c6982209715030df82f0093ee1/README.md",
+  "title": "tencent/Hy-MT2-30B-A3B-FP8 — model card and file inventory",
+  "organization": "tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "b69671c83c2137c6982209715030df82f0093ee1",
+  "locator": "Model card; language support; runtime examples; file sizes from pinned API inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/Hy-MT2-30B-A3B-FP8",
+  "limitations": [],
+  "presentationNotes": []
+});

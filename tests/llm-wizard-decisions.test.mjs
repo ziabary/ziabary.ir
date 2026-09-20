@@ -33,14 +33,14 @@ test('ownership, latency and acceptance materially change delivery',()=>{
 });
 test('long-document processing differs from archive retrieval even with short queries',()=>{
  const long=result(),archive=result({task:'documents',sources:'archive',inputSize:'short'});
- assert.ok(get(long,'long-document'));assert.equal(long.specialists.length,0);
+ assert.ok(get(long,'summary-route'));assert.equal(long.specialists.length,0);
  assert.ok(get(archive,'archive'));assert.equal(archive.specialists[0].model.kind,'embedding');
  assert.equal(archive.specialists.some(s=>s.model.kind==='reranker'),false);
  const ranked=result({task:'documents',sources:'archive',existing:'yes',failure:'ranking',inputSize:'short'});
  assert.ok(ranked.specialists.some(s=>s.model.kind==='reranker'));
 });
 test('archive scale, freshness and permissions alter ingestion and retrieval',()=>{
- const small=result({sources:'archive',archiveSize:'10',freshness:'rare'}),large=result({sources:'archive',archiveSize:'1000000',freshness:'daily',access:'roles'});
+ const small=result({task:'documents',sources:'archive',archiveSize:'10',freshness:'rare'}),large=result({task:'documents',sources:'archive',archiveSize:'1000000',freshness:'daily',access:'roles'});
  assert.notEqual(get(small,'index').conclusion,get(large,'index').conclusion);
  assert.ok(get(small,'refresh-rare'));assert.ok(get(large,'refresh-daily'));assert.ok(get(large,'permissions'));assert.ok(!get(small,'permissions'));
 });
@@ -67,15 +67,15 @@ test('new metadata-backed model is assessed and selectable without a name list',
 test('Qwen3.6 has pinned artifacts, hybrid attention and native/extended context; all models have a review',()=>{
  const r=result();assert.equal(r.reviews.length,repo.models.length);
  for(const name of ['Qwen3.6-27B','Qwen3.6-35B-A3B']){const model=repo.models.find(m=>m.exactName===name);assert.ok(model);assert.match(model.version,/^[a-f0-9]{40}$/);assert.equal(model.declaredContext.value,262144);assert.equal(model.contextExtension.capacity.value,1010000);assert.equal(model.attentionArchitecture,'hybrid');assert.ok(repo.artifactListings.some(a=>a.modelVersionId===model.id&&a.totalBytes>40e9));assert.ok(r.reviews.find(c=>c.model.id===model.id));}
- const api=JSON.parse(fs.readFileSync('data/llm/api-models.json'));assert.equal(api.length,2);assert.ok(api.every(a=>a.availability==='api-available'&&a.selfHosting==='not-verified'));assert.ok(!r.candidates.some(c=>c.model.exactName.startsWith('Qwen3.7')));
+ const api=JSON.parse(fs.readFileSync('data/llm/api-models.json'));assert.equal(api.length,4);assert.ok(api.every(a=>a.availability==='api-available'&&a.selfHosting==='not-verified'));assert.ok(!r.candidates.some(c=>c.model.exactName.startsWith('Qwen3.7')));
 });
 test('mixed language is not Persian; same logic across locales and existing license policy retained',()=>{
- assert.deepEqual(w.workloadLanguages({...base,sourceLanguage:'mixed',outputLanguage:'multi'}),[]);
+ assert.deepEqual(w.workloadLanguages({...base,sourceLanguage:'mixed',outputLanguage:'multi'}),['fa','en']);
  const ids=l=>result({},l).decisions.filter(d=>d.area!=='model').map(d=>d.id);assert.deepEqual(ids('fa'),ids('en'));assert.deepEqual(ids('en'),ids('es'));
  const denied={...repo.models[0],license:{...repo.models[0].license,commercialUse:{state:'known',value:'prohibited',evidenceIds:[]}}};assert.equal(w.wizardLicense(denied,'fa'),'ignored');assert.equal(w.wizardLicense(denied,'en'),'noncommercial');
 });
 test('quick result needs task, not all details; valid child answers survive changes',()=>{
- assert.equal(w.wizardComplete({task:'writing'},'fa'),true);assert.ok(w.QUICK_QUESTIONS.length<=10);
+ assert.equal(w.wizardComplete({task:'writing'},'fa'),true);assert.ok(w.QUICK_QUESTIONS.includes('codingMode')); assert.ok(w.QUICK_QUESTIONS.includes('sourceLanguages'));
  const changed=w.changeWizard({...base,writingTask:'summary',sources:'archive',freshness:'daily'},'task','extraction');assert.equal(changed.writingTask,undefined);assert.equal(changed.sources,'archive');assert.equal(changed.freshness,'daily');
  const noarchive=w.changeWizard({...base,sources:'archive',freshness:'daily'},'sources','provided');assert.equal(noarchive.freshness,undefined);
 });
@@ -184,7 +184,7 @@ test('translation starts with dedicated models for documented language pairs and
  for(const locale of ['fa','en','es'])for(const [sourceLanguage,outputLanguage] of [['en','fa'],['fa','en'],['en','es'],['es','fa']]){
   const r=w.buildWizardResult(repo,{task:'writing',writingTask:'translation',sourceLanguage,outputLanguage},locale,memory);
   assert.deepEqual(r.candidates.slice(0,2).map(c=>c.specialty),['translation','translation']);
-  assert.equal(r.candidates[0].model.exactName,'HY-MT1.5-1.8B');assert.ok(!r.candidates[2].specialty);
+  assert.equal(r.candidates[0].model.exactName,'Hy-MT2-1.8B');assert.ok(!r.candidates[2].specialty);
   assert.ok(r.candidates[0].specialtyReason);assert.equal(r.candidates[0].model.declaredContext.state,'unknown');
  }
  for(const a of [{task:'writing',writingTask:'summary'},{task:'writing',writingTask:'rewriting'},{task:'documents'},{task:'writing',writingTask:'translation',sourceLanguage:'fa',outputLanguage:'fa'}]){
@@ -205,4 +205,39 @@ test('coding specialties distinguish completion, assistance and agents without b
  // Names are not a classifier: a renamed specialist retains priority, a renamed general model does not acquire it.
  const copy=structuredClone(repo);copy.models.find(c=>c.id==='model:qwen-qwen3-coder-30b-a3b-instruct').exactName='Renamed specialist';
  const a={task:'coding',codingMode:'agent'};const r=w.buildWizardResult(copy,a,'fa');assert.equal(r.candidates[0].model.exactName,'Renamed specialist');
+});
+
+test('workload language options are independent of the three interface editions',()=>{
+ const codes=['fa','en','ar','de','fr','ru','zh','es'];
+ for(const locale of ['fa','en','es'])for(const id of ['sourceLanguage','outputLanguage']){
+  const q=w.wizardQuestions.find(q=>q.id===id),options=w.wizardOptions(q,locale);
+  for(const code of codes)assert.ok(options.some(o=>o.value===code),`${locale}/${id}/${code}`);
+  assert.ok(options.some(o=>o.value==='other'));
+ }
+ for(const code of codes){
+  const a={task:'writing',writingTask:'translation',sourceLanguage:code,outputLanguage:'en'};
+  for(const locale of ['fa','en','es'])assert.equal(w.cleanWizard(a,locale).sourceLanguage,code);
+  assert.deepEqual(w.workloadLanguages(a),[...new Set([code,'en'])]);
+ }
+ assert.deepEqual(w.workloadLanguages({sourceLanguage:'other',outputLanguage:'unknown'}),[]);
+});
+
+test('translation supports documented Arabic, German, French, Russian and Chinese pairs',()=>{
+ for(const locale of ['fa','en','es'])for(const code of ['ar','de','fr','ru','zh']){
+  const a={task:'writing',writingTask:'translation',sourceLanguage:code,outputLanguage:'en'};
+  const r=w.buildWizardResult(repo,a,locale);
+  assert.equal(r.answers.sourceLanguage,code);
+  assert.equal(r.candidates[0].specialty,'translation',`${locale}/${code}`);
+  assert.ok(r.candidates[0].model.taskSpecializations.some(s=>s.languages?.includes(code)));
+  assert.ok(!get(r,'specialist-fallback'));
+  const same=w.buildWizardResult(repo,{...a,outputLanguage:code},locale);
+  assert.ok(same.candidates.every(c=>!c.model.taskSpecializations?.some(s=>s.task==='translation')));
+ }
+ // An available UI option alone must never invent a model's support for that pair.
+ const copy=structuredClone(repo);
+ for(const model of copy.models)for(const s of model.taskSpecializations??[])if(s.task==='translation')s.languages=['en','es','fa'];
+ const unsupported=w.buildWizardResult(copy,{task:'writing',writingTask:'translation',sourceLanguage:'ar',outputLanguage:'en'},'fa');
+ assert.ok(unsupported.candidates.every(c=>!c.specialty));
+ assert.equal(get(unsupported,'specialist-fallback').status,'conditional');
+ assert.ok(unsupported.reviews.filter(c=>c.model.taskSpecializations?.some(s=>s.task==='translation')).every(c=>c.status==='excluded'));
 });

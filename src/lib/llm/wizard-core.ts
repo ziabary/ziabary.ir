@@ -4,8 +4,17 @@ import type { ApplicationId, LlmGuideRepository, ModelVersion } from './schema';
 import type { LlmLocale } from './i18n/runtime';
 import { modelLanguageEvidence } from './evaluation';
 import { llmSelectionHref } from './selection';
-export const WIZARD_VERSION='2026-09-20.1';
+export const WIZARD_VERSION='2026-09-20.2';
 export const wizardQuestions=questions;
+// Workload languages come from the question, independently of the site's locales.
+const workloadLanguageCodes=new Set(questions.filter(q=>['sourceLanguage','sourceLanguages'].includes(q.id)).flatMap(q=>q.options.map(o=>o.value)).filter(value=>/^[a-z]{2,3}(?:-[A-Za-z]+)?$/.test(value)));
+export const isWizardLanguage=(value:string|undefined):value is string=>!!value&&workloadLanguageCodes.has(value);
+export function wizardLanguages(a:WizardAnswers,side:'source'|'output'){
+ const value=a[side+'Language'];
+ return value==='mixed'?['fa','en']:['multi','other'].includes(value)?(a[side+'Languages']??'').split('|').filter(isWizardLanguage):isWizardLanguage(value)?[value]:[];
+}
+export const hasTranslationPair=(a:WizardAnswers)=>wizardLanguages(a,'source').length>0&&wizardLanguages(a,'output').length>0&&wizardLanguages(a,'source').some(from=>wizardLanguages(a,'output').some(to=>from!==to));
+export const needsRetrieval=(a:WizardAnswers)=>hasSource(a,'archive')&&(a.task!=='writing'||a.archiveRole==='reference');
 export type WizardAnswers=Record<string,string>;
 export type AnswerStatus='declared'|'estimate'|'measured'|'unknown';
 export const blankWizard=():WizardAnswers=>({});
@@ -33,10 +42,21 @@ export function wizardAnswerErrors(a:WizardAnswers,locale:LlmLocale):Record<stri
  if(positive(a.fullResponse)&&positive(a.firstResponse)&&Number(a.fullResponse)<Number(a.firstResponse))errors.fullResponse=localized(['زمان پاسخ کامل نمی‌تواند از زمان اولین بخش پاسخ کمتر باشد.','The full answer cannot arrive before its first part.','La respuesta completa no puede llegar antes de su primera parte.'],locale);
  return errors;
 }
-export function wizardOptions(q:typeof questions[number],locale:LlmLocale){return q.options.filter(o=>q.id!=='currency'||locale==='fa'||['usd','eur'].includes(o.value));}
+export function wizardOptions(q:typeof questions[number],locale:LlmLocale){
+ const options=q.options.filter(o=>q.id!=='currency'||locale==='fa'||['usd','eur'].includes(o.value));
+ if(locale==='fa'&&['sourceLanguage','outputLanguage'].includes(q.id)){
+  const mixedIndex=options.findIndex(o=>o.value==='mixed');
+  if(mixedIndex>=0&&options.some(o=>o.value==='fa')){
+   const [mixed]=options.splice(mixedIndex,1);
+   options.splice(options.findIndex(o=>o.value==='fa')+1,0,mixed);
+  }
+ }
+ return options;
+}
 export const isLocal=(a:WizardAnswers)=>['self','managed','compare'].includes(a.deployment);
 export const usesTools=(a:WizardAnswers)=>a.task==='operations'||hasSource(a,'live')||a.task==='coding'&&a.codingMode==='agent';
 export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,locale:LlmLocale) {
+ if(q.id==='workdays'&&a.mode==='batch'&&a.batchFrequency!=='daily')return false;
  if(q.id==='apiCostExample'&&locale==='fa')return false;
  const archive=hasSource(a,'archive'),interactive=['interactive','both'].includes(a.mode);
  switch(q.when){
@@ -47,7 +67,11 @@ export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,local
   case 'writing':return a.task==='writing';
   case 'loadDefinition':return interactive&&!!positive(a.concurrency);
   case 'multilingual':return ['mixed','multi','other'].includes(a.sourceLanguage)||['mixed','multi','other'].includes(a.outputLanguage);
-  case 'usageCost':return !!positive(a.requests);
+  case 'usageCost':return !!positive(a.requests)||['batch','both'].includes(a.mode)&&!!positive(a.batchCount);
+  case 'sourceLanguages':return ['other','multi'].includes(a.sourceLanguage);
+  case 'outputLanguages':return ['other','multi'].includes(a.outputLanguage);
+  case 'writingArchive':return a.task==='writing'&&hasSource(a,'archive');
+  case 'mediaType':return a.format==='media';
   case 'acquisition':return isLocal(a)&&a.hardware==='none';
   case 'tools':return usesTools(a);
   case 'noTools':return !usesTools(a);
@@ -84,7 +108,7 @@ export function cleanWizard(raw:unknown,locale:LlmLocale):WizardAnswers {
    const normal=normalizeWizardNumber(v);
    if(normal&&!wizardNumberError(q.id,v,locale))a[q.id]=String(Number(normal));
   } else if(q.kind==='text'){if(v.trim())a[q.id]=v.trim().slice(0,160);}
-  else {const selected=[...new Set(v.split('|').filter(x=>wizardOptions(q,locale).some(o=>o.value===x)))].slice(0,q.kind==='multi'?(q.id==='success'?3:5):1);if(selected.length)a[q.id]=selected.join('|');}
+  else {const selected=[...new Set(v.split('|').filter(x=>wizardOptions(q,locale).some(o=>o.value===x)))].slice(0,q.kind==='multi'?(q.id==='success'?3:q.id.endsWith('Languages')?40:5):1);if(selected.length)a[q.id]=selected.join('|');}
  }
  if(a.policy!=='public'&&a.deployment==='api')delete a.deployment;
  // Iterate because removing a parent can also hide a grandchild.
@@ -106,9 +130,10 @@ export function wizardLicense(model:ModelVersion,locale:LlmLocale){
 export function wizardApplication(a:WizardAnswers):ApplicationId {
  if(a.task==='coding')return a.codingMode==='agent'?'agents-tools':'coding-assistant';
  if(a.task==='operations')return 'agents-tools';
- if(['media'].includes(a.format))return 'document-vision';
+ if(a.task==='writing')return 'text-work';
+ if(a.format==='media'&&a.mediaType==='image')return 'document-vision';
  if(a.task==='extraction')return 'structured-extraction';
- if(a.task==='documents'||hasSource(a,'archive'))return 'enterprise-rag';
+ if(a.task==='documents')return 'enterprise-rag';
  return 'text-work';
 }
 export const articleTopics:Record<string,string>={size:'right-model-size-for-the-task',evaluation:'evaluating-language-models-for-persian',rag:'enterprise-rag-model-embedding-reranker',adaptation:'rag-cag-kag-fine-tuning-instruction-tuning',coding:'code-completion-assistant-and-agent',serving:'single-user-to-enterprise-llm-serving',cost:'true-llm-cost-buy-rent-or-api',latency:'gpu-inference-latency-throughput',privacy:'data-confidentiality-public-apis',software:'ollama-vllm-sglang-or-llama-cpp'};
