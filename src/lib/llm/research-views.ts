@@ -1,3 +1,5 @@
+import { llmSelectionHref } from './selection';
+import { benchmarkScope, readScoreScope, scopedModelResults, type ScoreScope } from './score-scope';
 import { resultMatchesLanguage, modelLanguageEvidence, evaluationLanguage, languageScopeKey } from './evaluation';
 import { reviewedPerformanceProtocol } from './performance-policy';
 import type { LlmGuideRepository } from './schema';
@@ -148,6 +150,7 @@ function compatibilityRows(repository: LlmGuideRepository, kernels = false): Llm
     result.details = { scope: textValue(t('research-views.0754')) }; return result;
   });
   const existing = research.compatibility.map(item => {
+    const engine = /^(publisher|Publisher documentation|unknown)$/i.test(item.engine) ? '' : item.engine;
     const result = row(repository, item.id, item.modelScope.split('/')[1] ?? item.modelScope, item.modelScope, item.sourceIds);
     const run = research.performance.find(run => run.id === item.performanceId);
     const status = item.status === 'published-run' ? t('research-views.0755') : t('research-views.0756');
@@ -155,21 +158,21 @@ function compatibilityRows(repository: LlmGuideRepository, kernels = false): Llm
     const route = profile?.runGuides.find(guide => guide.engine === item.engine);
     const condition = [...new Set([...(item.conditionsFa ?? []), ...(route?.conditions ?? []), ...(run && runConfiguration(run) ? [runConfiguration(run)] : [])])].join(t('research-views.0757'));
     result.sourceIds = [...new Set([...result.sourceIds, ...(route?.evidenceIds ?? [])])];
-    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion].filter(Boolean).join(' '), { brandId: item.engine }), format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
-    result.facets = { engine: textValue(item.engine), task: textValue(item.task ?? 'generation'), format: textValue(item.artifactId ? 'GGUF' : item.weightFormat.includes('safetensors') ? 'safetensors' : 'checkpoint'), status: textValue(item.status), deployment: textValue(item.engine === 'llama.cpp' || item.engine === 'Ollama' ? 'local' : 'service') };
+    result.cells = { ...result.cells, engine: engine ? textValue([engine, item.engineVersion].filter(Boolean).join(' '), { brandId: engine }) : missing, format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
+    result.facets = { engine: engine ? textValue(engine) : missing, task: textValue(item.task ?? 'generation'), format: textValue(item.artifactId ? 'GGUF' : item.weightFormat.includes('safetensors') ? 'safetensors' : 'checkpoint'), status: textValue(item.status), deployment: textValue(item.engine === 'llama.cpp' || item.engine === 'Ollama' ? 'local' : 'service') };
     result.details = { scope: textValue(item.userSummaryFa), condition: condition ? textValue(condition) : { state: 'unknown' }, ...(run?.servingCommandAsPublished ? { command: textValue(run.servingCommandAsPublished, { copyText: run.servingCommandAsPublished }) } : {}) };
     result.searchText += ` ${item.engine} ${item.weightFormat} ${item.hardwareLabel ?? ''}`; return result;
   });
   const added: LlmViewRow[] = [];
-  const approved = new Set(['Ollama','llama.cpp','vLLM','SGLang','Transformers','Sentence Transformers','FlagEmbedding','KTransformers']);
+  const approved = new Set(['Ollama','llama.cpp','vLLM','SGLang','Transformers','Sentence Transformers','FlagEmbedding','KTransformers','MLX LM']);
   for (const profile of repository.modelProfiles) {
     const model = repository.models.find(model => model.id === profile.modelVersionId)!;
     for (const guide of profile.runGuides) {
       if (!approved.has(guide.engine) || existing.some(item => item.modelId === model.id && (item.facets.engine as Known)?.display.toLowerCase() === guide.engine.toLowerCase())) continue;
       const result = row(repository, `route:${model.id}:${guide.engine}`, model.exactName, model.aliases?.[0], []);
-      const local = ['Ollama','llama.cpp'].includes(guide.engine);
+      const local = ['Ollama','llama.cpp','MLX LM'].includes(guide.engine);
       const task = model.kind === 'embedding' ? 'embedding' : model.kind === 'reranker' ? 'reranking' : model.kind === 'encoder-classifier' ? 'classification' : 'generation';
-      const format = guide.engine === 'Ollama' ? 'Ollama package' : guide.engine === 'llama.cpp' ? 'GGUF' : 'checkpoint';
+      const format = guide.engine === 'Ollama' ? 'Ollama package' : guide.engine === 'llama.cpp' ? 'GGUF' : guide.engine === 'MLX LM' ? 'MLX 4-bit safetensors' : 'checkpoint';
       result.sourceIds = guide.evidenceIds;
       result.cells = { ...result.cells, engine: textValue(guide.engine, { brandId: guide.engine }), format: textValue(format), status: textValue(t('research-views.0756')), condition: guide.conditions.length ? textValue(guide.conditions.join(t('research-views.0757'))) : { state: 'unknown' }, hardware: guide.instructions ? textValue(guide.instructions) : { state: 'unknown' }, source: textValue(t('research-views.0758'), { href: guide.href }) };
       result.facets = { engine: textValue(guide.engine), task: textValue(task), format: textValue(format), status: textValue('documented-route'), deployment: textValue(local ? 'local' : 'service') };
@@ -241,7 +244,7 @@ function researchView(repository: LlmGuideRepository, id: LlmViewId, controls: R
     config.title = controls.deploymentMode === 'kernels' ? t('research-views.0808') : t('research-views.0809');
     config.description = t('research-views.0810');
     config.defaultColumns = cols(['model', controls.deploymentMode === 'kernels' ? t('research-views.0811') : t('research-views.0778')], ['engine', t('research-views.0812')], ...(controls.deploymentMode === 'kernels' ? [['architecture', t('research-views.0813')] as [string, string]] : [['format', t('research-views.0814')] as [string, string], ['hardware', t('research-views.0815')] as [string, string]]), ['status', t('research-views.0816')], ['condition', t('research-views.0785')], ['source', t('research-views.0786')]);
-    config.filters = [selectFilter('engine', t('research-views.0817'), uniqueOptions(rows.map(row => (row.facets.engine as Known).display)))];
+    config.filters = [selectFilter('engine', t('research-views.0817'), uniqueOptions(rows.flatMap(row => !Array.isArray(row.facets.engine) && row.facets.engine?.state === 'known' ? [row.facets.engine.display] : [])))];
     config.filters.push(...(controls.deploymentMode === 'kernels' ? [selectFilter('architecture', t('research-views.0813'), uniqueOptions(research.kernels.map(item => item.architecture))), selectFilter('status', t('research-views.0818'), [['supported', t('research-views.0819')], ['unsupported', t('research-views.0820')]])] : [selectFilter('task', t('research-views.0821'), [['generation', t('research-views.0822')], ['embedding', t('research-views.0823')], ['reranking', t('research-views.0824')], ['classification', t('research-views.0825')]]), selectFilter('format', t('research-views.0826'), [['GGUF','GGUF'],['safetensors','safetensors'],['checkpoint',t('research-views.0827')],['Ollama package',t('research-views.0828')]], true), selectFilter('deployment', t('research-views.0829'), [['local',t('research-views.0830')],['service',t('research-views.0831')]], true), selectFilter('status', t('research-views.0832'), [['documented-route',t('research-views.0756')],['published-run',t('research-views.0755')]], true)]));
     config.detailColumns = cols(['scope', t('research-views.0833')], ['condition', t('research-views.0834')], ['command', t('research-views.0835')]);
   } else if (id === 'benchmarks') {
@@ -249,7 +252,7 @@ function researchView(repository: LlmGuideRepository, id: LlmViewId, controls: R
     config.title = t('research-views.0836'); config.description = performanceGroups[controls.group]?.note ?? t('research-views.0837');
     config.defaultColumns = [...cols(['model', t('research-views.0838')], ['engine', t('research-views.0812')], ['hardware', t('research-views.0839')], ['format', t('research-views.0840')], ['configuration', t('research-views.0841')], ['metric', t('research-views.0842')]), numericCol('value', t('research-views.0843')), numericCol('ttft', t('research-views.0844')), ...cols(['source', t('research-views.0786')])];
     config.defaultColumns = config.defaultColumns.filter(column => rows.some(row => row.cells[column.key]?.state === 'known'));
-    config.filters = [selectFilter('engine', t('research-views.0817'), uniqueOptions(rows.map(row => (row.facets.engine as Known).display))), selectFilter('hardware', t('research-views.0839'), uniqueOptions(rows.map(row => (row.facets.hardware as Known).display))), selectFilter('format', t('research-views.0840'), [...new Set(rows.map(row => (row.facets.format as Known).display))].map(value => [value, quantLabel(value)]), true)];
+    config.filters = [selectFilter('engine', t('research-views.0817'), uniqueOptions(rows.flatMap(row => !Array.isArray(row.facets.engine) && row.facets.engine?.state === 'known' ? [row.facets.engine.display] : []))), selectFilter('hardware', t('research-views.0839'), uniqueOptions(rows.map(row => (row.facets.hardware as Known).display))), selectFilter('format', t('research-views.0840'), [...new Set(rows.map(row => (row.facets.format as Known).display))].map(value => [value, quantLabel(value)]), true)];
     config.detailColumns = cols(['group',t('research-views.0845')], ['scope',t('research-views.0846')], ['artifact',t('research-views.0847')], ['reporter',t('research-views.0848')], ['protocol',t('research-views.0849')], ['optimizations',t('research-views.0841')], ['metrics',t('research-views.0850')], ['memory',t('research-views.0851')], ['weights',t('research-views.0852')], ['command',t('research-views.0853')], ['revision',t('research-views.0761')], ['locator',t('research-views.0854')]);
     const shared = ['group','model','hardware','format','protocol','metric','unit'];
     config.comparison = { ...base.comparison,
@@ -263,7 +266,7 @@ function researchView(repository: LlmGuideRepository, id: LlmViewId, controls: R
   if (controls.model && !(id === 'deployment-compatibility' && controls.deploymentMode === 'kernels')) rows = rows.filter(row => row.modelId === controls.model);
   return { config, rows };
 }
-function enrichExistingRows(repository: LlmGuideRepository, all: Record<LlmViewId, LlmViewRow[]>, targetLanguage = locale === 'en' ? 'all' : locale) {
+function enrichExistingRows(repository: LlmGuideRepository, all: Record<LlmViewId, LlmViewRow[]>, targetLanguage = locale === 'en' ? 'all' : locale, scoreScope: ScoreScope = readScoreScope(null, locale), currentUrl?: URL) {
   const rows = { ...all };
   rows['specialized-models'] = all['specialized-models'].map(item => {
     const extra = research.specialized.find(extra => researchModel(repository, extra.modelRepository)?.id === item.modelId);
@@ -285,12 +288,8 @@ function enrichExistingRows(repository: LlmGuideRepository, all: Record<LlmViewI
   });
   for (const id of ['model-catalog', 'model-suitability', 'specialized-models'] as const) rows[id] = rows[id].map(item => {
     const scores = repository.publishedEvaluations.filter(score => score.modelVersionId === item.modelId);
-    // Choose a useful, scoped example, never the largest raw score across tasks.
-    const eligible = scores.filter(score => resultMatchesLanguage(score, targetLanguage));
-    // Fixed, task-specific display preference; never maximum score across unrelated tests.
-    const preferred = id === 'specialized-models' ? ['MIRACL','MLDR','MMTEB','MTEB-R'] : ['MATH-500','IFEval','LiveCodeBench','MMLU-Pro'];
-    const selected = preferred.flatMap(benchmark => eligible.filter(score => score.benchmark === benchmark && (!score.settings.representation || score.settings.representation === 'Dense'))
-      .sort((a,b) => (b.publishedOn ?? b.accessedOn).localeCompare(a.publishedOn ?? a.accessedOn) || a.id.localeCompare(b.id)))[0];
+    const scoped = scopedModelResults(scores, item.modelId ?? '', scoreScope);
+    const selected = scoreScope.benchmark && scoreScope.metric && scoped.length === 1 ? scoped[0] : undefined;
     let quality: ViewValue;
     if (selected) {
       const modes: Record<string, string> = { thinking: t('research-views.0865'), 'non-thinking': t('research-views.0866'), low: t('research-views.0867'), medium: t('research-views.0868'), high: t('research-views.0869'), max: t('research-views.0870') };
@@ -302,28 +301,26 @@ function enrichExistingRows(repository: LlmGuideRepository, all: Record<LlmViewI
         selected.settings.candidateCount ? t('research-views.0875', faNumber(Number(selected.settings.candidateCount))) : undefined,
         selected.settings.retrievalModel ? String(selected.settings.retrievalModel) : undefined,
         selected.settings.sourceScale ? String(selected.settings.sourceScale) : undefined].filter(Boolean);
-      quality = textValue(`${selected.benchmark} · ${metric}: ${faNumber(selected.value)}${selected.unit === 'percent' ? t('research-views.0876') : ''}`, {
+      quality = textValue(`${benchmarkScope(selected)} · ${metric}: ${faNumber(selected.value)}${selected.unit === 'percent' ? t('research-views.0876') : ''}`, {
         caveat: conditions.join(t('research-views.0757')) || undefined, badge: t('research-views.0877', faNumber(scores.length)), evidenceIds: selected.evidenceIds
       });
-    } else if (id === 'specialized-models') {
-      quality = textValue(t('research-views.0878'));
+    } else if (scoped.length) {
+      quality = textValue({fa:'دیدن نتایج به تفکیک آزمون',en:'View results by test',es:'Ver resultados por prueba'}[locale], {badge:faNumber(scoped.length), href: currentUrl ? llmSelectionHref(currentUrl,{model:item.modelId??null,panel:'quality'},id) : undefined});
     } else {
-      const model = repository.models.find(model => model.id === item.modelId);
-      quality = textValue(model?.exactName === 'ModernBERT-base'
-        ? t('research-views.0879')
-        : model?.exactName === 'Mistral-7B-Instruct-v0.3' ? t('research-views.0880') : t('research-views.0881'), { href: item.modelUrl });
+      quality = {state:'unknown', note:{fa:'نتیجه‌ای برای این آزمون، زبان و معیار ثبت نشده است.',en:'No result is recorded for this test, language and metric.',es:'No hay resultado para esta prueba, idioma y métrica.'}[locale]};
     }
     const model = repository.models.find(model => model.id === item.modelId);
     const evidenceStatus = model && targetLanguage !== 'all' ? modelLanguageEvidence(repository, model, targetLanguage) : 'not-recorded';
     const language = textValue(model?.languages.filter(item => item.declared.state === 'known' && item.declared.value).map(item => item.language).join(', ') || '—', {
       caveat: targetLanguage === 'all' ? undefined : `${targetLanguage}: ${t('language.evidence.' + evidenceStatus)}`
     });
-    const license = model?.license.name.state === 'known' ? textValue(model.license.name.value, { href: model.license.url.state === 'known' ? model.license.url.value : undefined, caveat: model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? t('research-views.0886') : undefined }) : { state: 'unknown' as const };
+    const license = model?.license.name.state === 'known' ? textValue(model.license.name.value, { href: model.license.url.state === 'known' ? model.license.url.value : undefined, caveat: locale !== 'fa' && model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? t('research-views.0886') : undefined }) : { state: 'unknown' as const };
     return { ...item, cells: { ...item.cells, 'published-quality': quality, ...(id === 'specialized-models' ? {'quality-metric': quality} : {}), 'target-language': language, license }, facets: { ...item.facets, 'language-evidence': textValue(evidenceStatus, {raw: evidenceStatus}) } };
   });
   return rows;
 }
 function enrichExistingConfig(config: LlmViewConfig): LlmViewConfig {
+  if (locale === 'fa') config = { ...config, filters: config.filters.filter(filter => !['commercial-use','license'].includes(filter.id)) };
   if (['model-catalog','model-suitability'].includes(config.id)) config = { ...config, filters: [
     ...config.filters.filter(filter => filter.id !== 'persian-evidence'),
     selectFilter('language-evidence', t('language.evidence-filter'), ['independently-evaluated','published-result','publisher-claimed','not-recorded'].map(status => [status,t('language.evidence.'+status)]), true)

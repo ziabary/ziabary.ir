@@ -13,14 +13,14 @@
   export let label: string;
   let mounted = false;
   onMount(() => { mounted = true; });
-  $: visibleCollections = collections.filter(collection => collection.slug !== 'llm' || (locale === 'fa' && mounted && hasLlmPreview($page.url.searchParams)));
+  $: visibleCollections = collections.filter(collection => collection.slug !== 'llm' || collection.status === 'published' || (mounted && hasLlmPreview($page.url.searchParams)));
 </script>
 
 <section class="wrap guide-collections" aria-label={label} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   {#each visibleCollections as collection (collection.slug)}
     {@const preview = dev && locale !== 'fa' && collection.slug === 'gpu-selection' && gpuReviews[locale].draft}
     <GuideCollectionCard {collection} {locale} {preview}
-      href={collection.slug === 'llm' ? '/guides/llm/?show-drafts=true' : collection.status === 'draft' && locale === 'fa'
+      href={collection.status === 'draft' && locale === 'fa'
         ? `/guides/${collection.slug}/?show-drafts=true`
         : locale === 'fa'
           ? `/guides/${collection.slug}/`

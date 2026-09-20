@@ -44,7 +44,7 @@
     es: { owner: 'Mehran Ziabary', hidden: 'Esta guía aún no se ha publicado.', back: 'Volver a las guías técnicas', loading: 'Cargando vista previa…', error: 'No se ha podido cargar la vista previa.' }
   }[locale];
 </script>
-<PageSeo title={`${collection.title} | ${copy.owner}`} description={collection.subtitle} path={llmPath(locale)} image={collection.image} imageAlt={collection.imageAlt} {locale} noindex={collection.status !== 'published'} />
+<PageSeo title={`${collection.title} | ${copy.owner}`} description={collection.subtitle} path={llmPath(locale)} image={collection.image} imageAlt={collection.imageAlt} {locale} noindex={collection.status !== 'published' || preview} />
 {#if enabled && chapters}
   <LlmGuidePage {chapters} />
 {:else}

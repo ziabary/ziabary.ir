@@ -194,7 +194,7 @@ function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
         architecture: known(llmLabel(model.architecture), model.architecture),
         modalities, context: modelContextSummary(model),
         applications: list([...new Set(uses.map(item => item.summary || applicationLabel(item.applicationId)))], uses.flatMap(item => item.evidenceIds)),
-        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? t('adapters.0213') : t('adapters.0214') } : {}) },
+        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(i18n.locale !== 'fa' && model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? t('adapters.0213') : t('adapters.0214') } : {}) },
         'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
         review: known(llmLabel(model.releaseStatus), model.releaseStatus)
       },

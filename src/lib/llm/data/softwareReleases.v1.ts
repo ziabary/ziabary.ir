@@ -1226,7 +1226,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "اجرای ترکیبی CPU و GPU برای مدل‌های MoE",
+    "value": "وقتی ترکیب حافظهٔ میزبان و GPU و پشتیبانی همان مدل، بخشی از طراحی اجراست.",
     "evidenceIds": [
       "evidence:audit-20260916-ktransformers-release",
       "evidence:audit-20260916-ktransformers-docs",
@@ -1235,14 +1235,14 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "کرنل‌های CPU برای expertها و GPU برای بخش‌های متراکم",
+    "value": "اجرای ناهمگون مدل روی CPU و GPU، از جمله مسیرهای بهینه‌شده برای مدل‌های MoE پشتیبانی‌شده.",
     "evidenceIds": [
       "evidence:audit-20260916-ktransformers-release",
       "evidence:audit-20260916-ktransformers-docs",
       "evidence:audit-20260916-ktransformers-license"
     ]
   },
-  "selectionCaveat": "نسخهٔ بسته، کرنل و فهرست معماری‌های پشتیبانی‌شده باید با مدل MoE انتخابی منطبق باشند.",
+  "selectionCaveat": "نتیجه به پیکربندی، حافظه و قابلیت پردازنده وابسته است؛ از یک بنچمارک، سرعت عمومی نتیجه نمی‌شود.",
   "documentedBackends": [
     "CPU kernels",
     "CUDA"
@@ -1310,7 +1310,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "ساخت بردار، بازرتبه‌بندی و آموزش مدل‌های بازیابی",
+    "value": "وقتی به پیاده‌سازی یا تنظیم بخش بازیابی و ارزیابی مدل‌های تخصصی نیاز دارید.",
     "evidenceIds": [
       "evidence:audit-20260916-sentence-transformers-release",
       "evidence:audit-20260916-sentence-transformers-docs",
@@ -1319,14 +1319,14 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "SentenceTransformer و CrossEncoder روی PyTorch",
+    "value": "تولید embedding برای جست‌وجوی معنایی و استفاده از CrossEncoder برای امتیازدهی و بازرتبه‌بندی.",
     "evidenceIds": [
       "evidence:audit-20260916-sentence-transformers-release",
       "evidence:audit-20260916-sentence-transformers-docs",
       "evidence:audit-20260916-sentence-transformers-license"
     ]
   },
-  "selectionCaveat": "نوع prompt و pooling با مدل embedding تغییر می‌کند؛ برای Qwen3-Reranker خروجی raw logits لازم است.",
+  "selectionCaveat": "انتخاب کتابخانه، کیفیت مدل در زبان و دادهٔ شما یا وجود یک سرویس آمادهٔ چت را تضمین نمی‌کند.",
   "documentedBackends": [
     "PyTorch"
   ],

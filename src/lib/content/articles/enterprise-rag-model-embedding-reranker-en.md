@@ -27,6 +27,25 @@ An employee asks who must approve a contract renewal. A support specialist needs
 
 For predominantly direct, bounded document questions, compare a 3–4B instruction model with a 7–8B candidate before committing to a larger deployment. The purpose is to discover whether additional generator capacity fixes a real error. Embedding, reranking and answer generation have different responsibilities, so enlarging one does not repair the others. The [model-size article](/en/articles/right-model-size-for-the-task-en/) develops the shortlist; the [LLM guide](/en/guides/llm/) provides exact model, artifact and execution evidence.
 
+<!-- document-routes:start -->
+
+## Text documents, scans and live records need different paths
+
+For a text PDF, retain headings, page references and document versions during extraction and indexing. When charts, layout or table relationships matter, compare OCR and visual retrieval on your own document samples. A visual retriever finds relevant pages; the answering step still needs inspectable evidence. Totals and current inventory should come from authorized queries and calculations over authoritative records, rather than a few retrieved passages.
+
+| Data | Starting path | Evidence in the answer |
+| --- | --- | --- |
+| Text PDFs, letters and policies | Extract headings, pages and versions; lexical search, adding vectors if useful | The valid clause and page |
+| Scans, charts and image tables | Layout-preserving OCR; compare visual retrieval on representative pages | Extracted text or an inspectable page region |
+| Live CRM and ERP records | Authorized queries through a restricted connector | Source record and retrieval time |
+| Totals, counts and tabular reports | SQL, BI or code over all relevant records; generation for explanation | A reproducible calculation and its data scope |
+
+For a visual pilot, [Qwen3-VL-Embedding-2B](https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B) retrieves relevant pages and [Qwen3-VL-Reranker-2B](https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B) rescores candidates; neither generates the answer. The 8B variants offer a comparison path, not a mandatory starting point. The documented task context is 32K tokens. Quantization support in the embedding card concerns **output vectors**, not a Q4 weight release. MMEB and ViDoRe aggregates do not establish quality in a particular language.
+
+Exact amounts, identifiers and contractual clauses need a link to extracted text or an inspectable page region. Compare indexing time, index size and query latency alongside retrieval quality. A 2B visual model need not have the execution cost of a 2B text model.
+
+<!-- document-routes:end -->
+
 ## Three components, three responsibilities
 
 A common RAG pipeline prepares and chunks documents, computes their representations, retrieves candidate passages for a query, optionally reranks them and asks a generator to answer from selected evidence. Not every request needs the entire pipeline. An exact circular number may be best served by identifier search and a source excerpt, without newly generated prose.

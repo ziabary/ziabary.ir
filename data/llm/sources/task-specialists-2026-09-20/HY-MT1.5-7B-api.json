@@ -1,0 +1,240 @@
+{
+  "_id": "694d15cbb2ad6728a1100ff5",
+  "id": "tencent/HY-MT1.5-7B",
+  "private": false,
+  "pipeline_tag": "translation",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hunyuan_v1_dense",
+    "text-generation",
+    "translation",
+    "zh",
+    "en",
+    "fr",
+    "pt",
+    "es",
+    "ja",
+    "tr",
+    "ru",
+    "ar",
+    "ko",
+    "th",
+    "it",
+    "de",
+    "vi",
+    "ms",
+    "id",
+    "tl",
+    "hi",
+    "pl",
+    "cs",
+    "nl",
+    "km",
+    "my",
+    "fa",
+    "gu",
+    "ur",
+    "te",
+    "mr",
+    "he",
+    "bn",
+    "ta",
+    "uk",
+    "bo",
+    "kk",
+    "mn",
+    "ug",
+    "arxiv:2512.24092",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "downloads": 1029,
+  "likes": 163,
+  "modelId": "tencent/HY-MT1.5-7B",
+  "author": "tencent",
+  "sha": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "lastModified": "2026-06-01T11:36:19.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "我叫沃尔夫冈，我住在柏林。"
+    },
+    {
+      "text": "我叫萨拉，我住在伦敦。"
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "HunYuanDenseV1ForCausalLM"
+    ],
+    "model_type": "hunyuan_v1_dense",
+    "tokenizer_config": {
+      "bos_token": "<|startoftext|>",
+      "eos_token": "<|eos|>",
+      "pad_token": "<|pad|>"
+    },
+    "chat_template_jinja": "{% set ns = namespace(has_head=true) %}{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = message['content'] %}{% if loop.index0 == 0 %}{% if content == '' %}{% set ns.has_head = false %}{% elif message['role'] == 'system' %}{% set content = '<|startoftext|>' + content + '<|extra_4|>' %}{% endif %}{% endif %}{% if message['role'] == 'user' %}{% if loop.index0 == 1 and ns.has_head %}{% set content = content + '<|extra_0|>' %}{% else %}{% set content = '<|startoftext|>' + content + '<|extra_0|>' %}{% endif %}{% elif message['role'] == 'assistant' %}{% set content = content + '<|eos|>' %}{% endif %}{{ content }}{% endfor %}"
+  },
+  "cardData": {
+    "library_name": "transformers",
+    "tags": [
+      "translation"
+    ],
+    "language": [
+      "zh",
+      "en",
+      "fr",
+      "pt",
+      "es",
+      "ja",
+      "tr",
+      "ru",
+      "ar",
+      "ko",
+      "th",
+      "it",
+      "de",
+      "vi",
+      "ms",
+      "id",
+      "tl",
+      "hi",
+      "pl",
+      "cs",
+      "nl",
+      "km",
+      "my",
+      "fa",
+      "gu",
+      "ur",
+      "te",
+      "mr",
+      "he",
+      "bn",
+      "ta",
+      "uk",
+      "bo",
+      "kk",
+      "mn",
+      "ug"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForCausalLM",
+    "pipeline_tag": "text-generation",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "size": 1570
+    },
+    {
+      "rfilename": "License.txt",
+      "blobId": "1b502c594266512e3f80deb4e021b9b52024f671",
+      "size": 16270
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "63f0c19d5212ebac92b9c07228e767b36a83fb7b",
+      "size": 9808
+    },
+    {
+      "rfilename": "chat_template.jinja",
+      "blobId": "cfa52f550c16e3be14adcf73aa87454840365af2",
+      "size": 662
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "33721a59fe602c4f126fd8e8c93a6598da3657ca",
+      "size": 1349
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "6029032f51d6ae962d02e6e291144c1a512ddf94",
+      "size": 217
+    },
+    {
+      "rfilename": "model-00001-of-00004.safetensors",
+      "blobId": "64d471d4fcf4f986cca88e89d73f0d6464628354",
+      "size": 4975949856,
+      "lfs": {
+        "sha256": "0207b3e619236ada2eaf6812dd1bf6b6551a721981e394c59dd7c6bc139ab448",
+        "size": 4975949856,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00004.safetensors",
+      "blobId": "308d6745d126b59245519cb2e591f91f9e192bad",
+      "size": 4934107400,
+      "lfs": {
+        "sha256": "0043e9dc37f7c7ade2b3b73085a6487986a84d71ad09701dcdafaaf3d65e8cb5",
+        "size": 4934107400,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00004.safetensors",
+      "blobId": "e0cbdb2403ace42a005e7a574bb958b59f150d66",
+      "size": 4890769816,
+      "lfs": {
+        "sha256": "3d15a59c3f92444cab2ab84a646eb4d5eb8c7fe91889a43d42e6a83bf1663221",
+        "size": 4890769816,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00004-of-00004.safetensors",
+      "blobId": "8dca8454b562776b567cc43bc7dcc8a4a175379a",
+      "size": 1258295152,
+      "lfs": {
+        "sha256": "52f4f5e72cc7aef004a76d76b0e3f349cf02f524a8d52f3b6b92f3adacdac777",
+        "size": 1258295152,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "2d4c9a6fff010390f089ec3be6194560707103a7",
+      "size": 29790
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "69616c3ce4f112e9b3b7e24bc0b3cfb6e8a85ad0",
+      "size": 431
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "1f6d711bdc6fb6d74e9330d8f4f3bfe028f68122",
+      "size": 16388221,
+      "lfs": {
+        "sha256": "4185389a69284fdd3ebf737c6120bbeee36cbed9763151fa5bac5986a39e05d4",
+        "size": 16388221,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "35aaca5bec41602707a6a10c46faa419ddb2b6ab",
+      "size": 37763
+    }
+  ],
+  "spaces": [
+    "hfmlsoc/different-flops",
+    "mirix/RussianRegions"
+  ],
+  "createdAt": "2025-12-25T10:45:31.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 8029540352
+    },
+    "total": 8029540352
+  },
+  "usedStorage": 16075510445
+}

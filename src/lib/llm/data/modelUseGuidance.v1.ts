@@ -57,7 +57,7 @@ modelUseGuidance.push({
   "description": "نسخهٔ ۳۲میلیاردی Aya Expanse با زمینهٔ ۱۳۱٬۰۷۲ توکن؛ فارسی در فهرست ۲۳ زبان ناشر آمده است.",
   "distinguishingFeature": "نسخهٔ ۳۲میلیاردی Aya Expanse با زمینهٔ ۱۳۱٬۰۷۲ توکن؛ فارسی در فهرست ۲۳ زبان ناشر آمده است.",
   "conditions": [
-    "نسخهٔ پژوهشی با مجوز غیرتجاری است؛ طول زمینه به معنی دقت یکسان در سراسر سند نیست."
+    "دقت پاسخ در ورودی بلند را با پرسش‌هایی از ابتدا، میانه و انتهای سند بسنجید."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -78,7 +78,7 @@ modelUseGuidance.push({
   "description": "نسخهٔ ۸میلیاردی Aya Expanse، با زمینهٔ ۸٬۱۹۲ توکن و آموزش ترجیحات چندزبانه، برای آزمایش نگارش فارسی نیز قابل بررسی است.",
   "distinguishingFeature": "نسخهٔ ۸میلیاردی Aya Expanse، با زمینهٔ ۸٬۱۹۲ توکن و آموزش ترجیحات چندزبانه، برای آزمایش نگارش فارسی نیز قابل بررسی است.",
   "conditions": [
-    "مجوز غیرتجاری و سقف زمینهٔ همین نسخه را رعایت کنید؛ نتایج نسخهٔ ۳۲میلیاردی به آن منتقل نمی‌شود."
+    "نتایج نسخهٔ ۸ میلیاردی را جدا از نسخهٔ ۳۲ میلیاردی مقایسه کنید؛ سقف ورودی این دو یکسان نیست."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -684,7 +684,7 @@ modelUseGuidance.push({
   "description": "این checkpoint مسیر تقطیر R1 را روی پایهٔ Llama اجرا می‌کند و بزرگ‌ترین نسخهٔ تقطیری این فهرست است.",
   "distinguishingFeature": "این checkpoint مسیر تقطیر R1 را روی پایهٔ Llama اجرا می‌کند و بزرگ‌ترین نسخهٔ تقطیری این فهرست است.",
   "conditions": [
-    "مجوز پایهٔ Llama و شروط ناشر تقطیر هر دو مهم‌اند؛ حجم وزن و طول زنجیرهٔ فکر را جداگانه برآورد کنید."
+    "حجم وزن و طول زنجیرهٔ فکر را جداگانه برآورد کنید."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -874,7 +874,7 @@ modelUseGuidance.push({
   "description": "Gemma 3 27B IT نسخهٔ متراکم بزرگ این نسل با ورودی بصری و پوشش چندزبانه است.",
   "distinguishingFeature": "Gemma 3 27B IT نسخهٔ متراکم بزرگ این نسل با ورودی بصری و پوشش چندزبانه است.",
   "conditions": [
-    "دریافت وزن‌ها نیازمند پذیرش مجوز Gemma است."
+    "برای ورودی تصویری، قالب پیام و پردازشگر Gemma 3 لازم است."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -1004,7 +1004,7 @@ modelUseGuidance.push({
   "description": "Llama 3.1 70B Instruct برای گفت‌وگوی چندزبانه و کار با متن با زمینهٔ ۱۳۱٬۰۷۲ توکن عرضه شده است.",
   "distinguishingFeature": "Llama 3.1 70B Instruct برای گفت‌وگوی چندزبانه و کار با متن با زمینهٔ ۱۳۱٬۰۷۲ توکن عرضه شده است.",
   "conditions": [
-    "ورودی این نسخه متن است و استفاده از وزن‌ها تابع مجوز Llama است."
+    "ورودی این نسخه متن است."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -6025,7 +6025,7 @@ modelUseGuidance.push({
   "applicationId": "enterprise-rag",
   "role": "retrieval",
   "summary": "بردارساز چندزبانه با آداپترهای وابسته به وظیفه",
-  "description": "آداپتر وظیفه و بعد خروجی قابل انتخاب؛ مجوز غیرتجاری",
+  "description": "آداپتر وظیفه و بعد خروجی قابل انتخاب",
   "distinguishingFeature": "آداپتر retrieval.query / retrieval.passage؛ میانگین توکن‌ها و L2",
   "conditions": [
     "آداپتر retrieval.query / retrieval.passage؛ میانگین توکن‌ها و L2"
@@ -6041,10 +6041,10 @@ modelUseGuidance.push({
   "applicationId": "enterprise-rag",
   "role": "reranking",
   "summary": "بازرتبه‌بند چندزبانه برای اسناد بلندتر",
-  "description": "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن؛ مجوز غیرتجاری",
+  "description": "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن",
   "distinguishingFeature": "CrossEncoder؛ امتیاز ارتباط جفت پرسش و سند",
   "conditions": [
-    "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن؛ مجوز غیرتجاری"
+    "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن"
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
@@ -6184,7 +6184,7 @@ modelUseGuidance.push({
   "description": "نسخهٔ کوچک Tooka-SBERT-V2 با بردار ۷۶۸بعدی؛ نامزد بومی برای بازیابی و شباهت متن فارسی.",
   "distinguishingFeature": "نسخهٔ کوچک Tooka-SBERT-V2 با بردار ۷۶۸بعدی؛ نامزد بومی برای بازیابی و شباهت متن فارسی.",
   "conditions": [
-    "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+    "برای Tooka، پرسش با «سوال: » و سند با «متن: » به مدل داده می‌شود."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
@@ -6200,7 +6200,7 @@ modelUseGuidance.push({
   "description": "نسخهٔ بزرگ Tooka-SBERT-V2 با بردار ۱۰۲۴بعدی؛ نتیجهٔ PTEB با آزمون‌های دیگر قابل رتبه‌بندی مستقیم نیست.",
   "distinguishingFeature": "نسخهٔ بزرگ Tooka-SBERT-V2 با بردار ۱۰۲۴بعدی؛ نتیجهٔ PTEB با آزمون‌های دیگر قابل رتبه‌بندی مستقیم نیست.",
   "conditions": [
-    "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+    "برای Tooka، پرسش با «سوال: » و سند با «متن: » به مدل داده می‌شود."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
@@ -6217,7 +6217,7 @@ modelUseGuidance.push({
   "distinguishingFeature": "ParsBERT پایه برای درک متن فارسی؛ دسته‌بندی و تشخیص موجودیت به سر وظیفه و آموزش نیاز دارند. بردارساز آمادهٔ بازیابی نیست.",
   "conditions": [
     "وزن پایه به‌تنهایی دسته‌بند یا NER آماده نیست.",
-    "مجوز استفاده در شناسنامهٔ دریافت‌شده مشخص نشده است."
+    "برای برچسب‌گذاری، سر طبقه‌بندیِ آموزش‌دیده روی encoder لازم است."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
@@ -6266,8 +6266,8 @@ modelUseGuidance.push({
   "applicationId": "structured-extraction",
   "role": "structured-output",
   "summary": "استخراج اطلاعات روی دستگاه",
-  "description": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی در این بسته نداریم. مجوز اختصاصی دارد.",
-  "distinguishingFeature": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی در این بسته نداریم. مجوز اختصاصی دارد.",
+  "description": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی ثبت نشده است.",
+  "distinguishingFeature": "گزینهٔ کوچک برای استخراج اطلاعات و کارهای محدود روی دستگاه؛ ناشر آن را برای برنامه‌نویسی و کارهای دانش‌محور توصیه نمی‌کند. اسپانیایی در زبان‌های اعلام‌شده هست؛ نتیجهٔ اختصاصی فارسی ثبت نشده است.",
   "conditions": [],
   "basis": "publisher-summary",
   "evidenceIds": [
@@ -6313,5 +6313,285 @@ modelUseGuidance.push({
     "evidence:reference-ibm-granite-granite-4-2-3b-config-json-47e785ca3a",
     "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-2365657aeb",
     "evidence:reference-ibm-granite-granite-4-2-3b-readme-md-456890d7cc"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:update0919-qwen-qwen3-vl-embedding-2b",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-2b",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "summary": "بازیابی چندوجهی",
+  "description": "بازیابی متن، تصویر و ویدئو با بردارهایی در ابعاد ۶۴ تا 2048؛ ورودی وظیفه تا ۳۲ هزار توکن.",
+  "distinguishingFeature": "بازیابی متن، تصویر و ویدئو با بردارهایی در ابعاد ۶۴ تا 2048؛ ورودی وظیفه تا ۳۲ هزار توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:update0919-qwen-qwen3-vl-embedding-8b",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-8b",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "summary": "بازیابی چندوجهی",
+  "description": "بازیابی متن، تصویر و ویدئو با بردارهایی در ابعاد ۶۴ تا 4096؛ ورودی وظیفه تا ۳۲ هزار توکن.",
+  "distinguishingFeature": "بازیابی متن، تصویر و ویدئو با بردارهایی در ابعاد ۶۴ تا 4096؛ ورودی وظیفه تا ۳۲ هزار توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:update0919-qwen-qwen3-vl-reranker-2b",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-2b",
+  "applicationId": "enterprise-rag",
+  "role": "reranking",
+  "summary": "بازرتبه‌بندی چندوجهی",
+  "description": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
+  "distinguishingFeature": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:update0919-qwen-qwen3-vl-reranker-8b",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-8b",
+  "applicationId": "enterprise-rag",
+  "role": "reranking",
+  "summary": "بازرتبه‌بندی چندوجهی",
+  "description": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
+  "distinguishingFeature": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:text-work",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:document-vision",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:enterprise-rag",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "enterprise-rag",
+  "role": "grounded-generation",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:structured-extraction",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:reasoning-analysis",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:coding-assistant",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-27b:agents-tools",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-27B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 27 میلیارد؛ ظرفیت بومی ۲۶۲٬۱۴۴ توکن.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:text-work",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:document-vision",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:enterprise-rag",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "enterprise-rag",
+  "role": "grounded-generation",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:structured-extraction",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:reasoning-analysis",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:coding-assistant",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:qwen-qwen3-6-35b-a3b:agents-tools",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "مدل متن و تصویر با توجه ترکیبی",
+  "description": "Qwen3.6-35B-A3B متن، تصویر و ویدئو را می‌خواند. وزن رسمی BF16 ثبت شده؛ حافظهٔ اجرای توجه ترکیبی باید با موتور واقعی سنجیده شود.",
+  "distinguishingFeature": "جزء زبانی 35 میلیارد با ۳ میلیارد فعال؛ حافظه بر اساس همهٔ وزن‌هاست.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:tencent-hy-mt1-5-1-8b:translation",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی متن",
+  "description": "مدل تخصصی ترجمه با امکان تعیین معادل اصطلاحات و دادن متن زمینه؛ برای گفت‌وگوی عمومی یا پاسخ‌گویی از اسناد انتخاب نشده است.",
+  "distinguishingFeature": "قالب‌های جدا برای ترجمه، واژه‌نامهٔ اصطلاحات و حفظ قالب متن دارد.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:tencent-hy-mt1-5-7b:translation",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "ترجمهٔ تخصصی متن",
+  "description": "مدل تخصصی ترجمه با امکان تعیین معادل اصطلاحات و دادن متن زمینه؛ برای گفت‌وگوی عمومی یا پاسخ‌گویی از اسناد انتخاب نشده است.",
+  "distinguishingFeature": "قالب‌های جدا برای ترجمه، واژه‌نامهٔ اصطلاحات و حفظ قالب متن دارد.",
+  "conditions": [],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-7b"
   ]
 });

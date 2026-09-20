@@ -6,7 +6,11 @@ bundle=project/'data/llm/v0.3.0'
 manifest=json.loads((bundle/'manifest.json').read_text())
 updated=manifest['asOf']
 source=json.loads((bundle/manifest['repository']).read_text())
-data={key:items for key,items in source.items() if isinstance(items,list)}
+def public_value(value):
+ if isinstance(value,list):return [public_value(x) for x in value]
+ if isinstance(value,dict):return {k:public_value(v) for k,v in value.items() if k not in {'mergeNote','integrationNotes','baselineSameModelAndValueCandidates','mergePolicy','operation','placement','editorialStatus'}}
+ return value
+data={key:public_value(items) for key,items in source.items() if isinstance(items,list)}
 out=project/'src/lib/llm/data';out.mkdir(parents=True,exist_ok=True)
 imports=[]
 for key,items in data.items():

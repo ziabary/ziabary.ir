@@ -808,3 +808,131 @@ workloads.push({
     "state": "not-measured"
   }
 });
+workloads.push({
+  "id": "workload:update0919-qwen-qwen3-vl-embedding-2b",
+  "applicationId": "enterprise-rag",
+  "name": "Qwen3-VL-Embedding-2B",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+  ]
+});
+workloads.push({
+  "id": "workload:update0919-qwen-qwen3-vl-embedding-8b",
+  "applicationId": "enterprise-rag",
+  "name": "Qwen3-VL-Embedding-8B",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+  ]
+});
+workloads.push({
+  "id": "workload:update0919-qwen-qwen3-vl-reranker-2b",
+  "applicationId": "enterprise-rag",
+  "name": "Qwen3-VL-Reranker-2B",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+  ]
+});
+workloads.push({
+  "id": "workload:update0919-qwen-qwen3-vl-reranker-8b",
+  "applicationId": "enterprise-rag",
+  "name": "Qwen3-VL-Reranker-8B",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+  ]
+});

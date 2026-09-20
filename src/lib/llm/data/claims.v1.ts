@@ -31323,7 +31323,7 @@ claims.push({
   "id": "claim:v03-model-jinaai-jina-embeddings-v3-specializedspecs-features-value",
   "subjectId": "model:jinaai-jina-embeddings-v3",
   "fieldPath": "specializedSpecs.features.value",
-  "value": "آداپتر وظیفه و بعد خروجی قابل انتخاب؛ مجوز غیرتجاری",
+  "value": "آداپتر وظیفه و بعد خروجی قابل انتخاب",
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [
@@ -31389,7 +31389,7 @@ claims.push({
   "id": "claim:v03-model-jinaai-jina-reranker-v2-base-multilingual-specializedspecs-features-value",
   "subjectId": "model:jinaai-jina-reranker-v2-base-multilingual",
   "fieldPath": "specializedSpecs.features.value",
-  "value": "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن؛ مجوز غیرتجاری",
+  "value": "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن",
   "nature": "publisher-report",
   "scope": "بازبینی مشخصات و راهنمای استفاده در نسخهٔ ۰٫۳؛ دامنه و واحد مقدار در شناسنامهٔ فیلد مشخص است.",
   "evidenceIds": [

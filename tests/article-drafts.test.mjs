@@ -10,7 +10,7 @@ const drafts = llmArticleSeries.map(({ slug, date, faDate }) => [slug, date, faD
 const slugs = drafts.map(([slug]) => slug);
 
 test('preview links preserve filters and fragments and replace an existing draft flag', () => {
-  assert.equal(draftReadingHref('/guides/llm/?view=hardware-feasibility#hardware-feasibility', slugs), '/guides/llm/?view=hardware-feasibility&show-drafts=true#hardware-feasibility');
+  assert.equal(draftReadingHref('/guides/llm/?view=hardware-feasibility#hardware-feasibility', slugs), '/guides/llm/?view=hardware-feasibility#hardware-feasibility');
   assert.equal(draftReadingHref(`https://ziabary.ir/articles/${slugs[1]}/?show-drafts=false#example`, slugs), `/articles/${slugs[1]}/?show-drafts=true#example`);
   assert.equal(draftReadingHref(draftReadingHref(`/articles/${slugs[0]}/`, slugs), slugs), `/articles/${slugs[0]}/?show-drafts=true`);
 });

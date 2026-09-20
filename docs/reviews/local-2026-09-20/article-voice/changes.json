@@ -1,0 +1,82 @@
+[
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "قیمت‌ها را در **۲۵ شهریور ۱۴۰۵، برابر با ۱۶ سپتامبر ۲۰۲۶** از صفحات عرضه‌کنندگان خوانده‌ام",
+    "after": "قیمت‌ها در **۲۵ شهریور ۱۴۰۵، برابر با ۱۶ سپتامبر ۲۰۲۶** از صفحات عرضه‌کنندگان گردآوری شده‌اند"
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "قیمت‌های تومانی فروشندگان را بدون تبدیل مجدد آورده‌ام؛",
+    "after": "قیمت‌های عرضه فروشندگان بدون تبدیل مجدد ارایه شده‌اند؛"
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "سه مدل زیر را برای محاسبه انتخاب کرده‌ام",
+    "after": "سه مدل زیر برای محاسبه انتخاب شده‌اند"
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "برای اجاره در ایران، نمونهٔ مشخصی از [ایران‌سرور](https://www.iranserver.com/vps/gpu/)، از شرکت‌های [گروه گرین‌وب](https://www.greenweb.ir/)، و [ابر فردوسی](https://ferdowsi.cloud/fa/services/gpu) را کنار هم گذاشته‌ام.",
+    "after": "برای مقایسهٔ هزینهٔ اجاره در ایران، چند پلن از [ایران‌سرور](https://www.iranserver.com/vps/gpu/)، از شرکت‌های [گروه گرین‌وب](https://www.greenweb.ir/)، و [ابر فردوسی](https://ferdowsi.cloud/fa/services/gpu) در کنار هم قرار گرفته‌اند."
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "این ترکیب را برای اجرای مدل و پردازش اسناد در نظر گرفته‌ام؛",
+    "after": "این ترکیب برای اجرای مدل و پردازش اسناد در نظر گرفته شده است؛"
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "همان روشی که در [سنجش مدل‌های زبانی برای فارسی](/articles/evaluating-language-models-for-persian/) توضیح داده‌ام.",
+    "after": "همان روشی که در [سنجش مدل‌های زبانی برای فارسی](/articles/evaluating-language-models-for-persian/) توضیح داده شده است."
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "این بحث را در [محرمانگی داده و APIهای عمومی](/articles/data-confidentiality-public-apis/) جدا بررسی کرده‌ام؛",
+    "after": "این موضوع در [محرمانگی داده و APIهای عمومی](/articles/data-confidentiality-public-apis/) جداگانه بررسی شده است؛"
+  },
+  {
+    "file": "src/lib/content/articles/true-llm-cost-buy-rent-or-api.md",
+    "before": "۷۲۰ ساعت را صرفاً برای این مثال سی‌روزه گرفته‌ایم.",
+    "after": "۷۲۰ ساعت برای همین مثال سی‌روزه در نظر گرفته شده است."
+  },
+  {
+    "file": "src/lib/content/articles/four-bit-model-quantization.md",
+    "before": "برای مقایسهٔ زیر، حجم فایل وزن را تقریب سهم وزن در حافظه گرفته‌ایم و **<bdi dir=\"ltr\" style=\"white-space:nowrap\">۲ GiB</bdi> فضای کاری فرضی** برای موتور کنار گذاشته‌ایم؛",
+    "after": "در مقایسهٔ زیر، حجم فایل وزن مبنای تخمین حافظهٔ وزن‌هاست و **<bdi dir=\"ltr\" style=\"white-space:nowrap\">۲ GiB</bdi> فضای کاری فرضی** برای موتور در نظر گرفته شده است؛"
+  },
+  {
+    "file": "src/lib/content/articles/right-model-size-for-the-task.md",
+    "before": "برای سربار اجرا کنار گذاشته‌ایم.",
+    "after": "برای سربار اجرا کنار گذاشته شده است."
+  },
+  {
+    "file": "src/lib/content/articles/single-user-to-enterprise-llm-serving.md",
+    "before": "تفاوت خانواده‌های سخت‌افزار و معیار اقتصادی انتخاب آن‌ها را در یادداشت‌های [انواع پردازنده‌های گرافیکی](/articles/gpu-types-for-ai/) و [انتخاب GPU متناسب با کاربرد](/articles/choosing-gpu-for-ai/) توضیح داده‌ام.",
+    "after": "تفاوت خانواده‌های سخت‌افزار و معیار اقتصادی انتخاب آن‌ها در یادداشت‌های [انواع پردازنده‌های گرافیکی](/articles/gpu-types-for-ai/) و [انتخاب GPU متناسب با کاربرد](/articles/choosing-gpu-for-ai/) توضیح داده شده است."
+  },
+  {
+    "file": "src/lib/content/articles/code-completion-assistant-and-agent.md",
+    "before": "جدول زیر نمونه‌های انتخاب‌شده برای نشان‌دادن تفاوت نقش‌هاست و فهرست کامل یا رتبه‌بندی قطعی بازار نیست. اندازه‌ها از کارت رسمی همان نسخه آمده‌اند و کاربرد پیشنهادی، جمع‌بندی تحلیلی از نوع آموزش و قابلیت‌های مستند آن است.",
+    "after": "مدل‌های جدول زیر برای مقایسهٔ تکمیل کد، دستیار و عامل انتخاب شده‌اند. تعداد پارامترها از کارت رسمی هر مدل گردآوری شده و کاربرد پیشنهادی بر اساس نوع آموزش و امکانات آن مشخص شده است؛ کیفیت هر مدل باید در همان نقش سنجیده شود."
+  },
+  {
+    "file": "src/lib/content/articles/enterprise-rag-model-embedding-reranker.md",
+    "before": "ستون کاربرد، دلیل وارد کردن مدل به مقایسه است؛ رتبه‌بندی قطعی کیفیت فارسی یا تضمین برتری آن بر بقیه نیست.",
+    "after": "کاربرد هر مدل در جدول مشخص شده است؛ کیفیت فارسی آن‌ها باید با پرسش‌ها و اسناد سازمان مقایسه شود."
+  },
+  {
+    "file": "src/lib/content/articles/enterprise-rag-model-embedding-reranker.md",
+    "before": "پاسخ‌گو باید پاسخ را به شاهد قابل بازبینی وصل کند.",
+    "after": "مدل پاسخ‌گو باید مشخص کند پاسخ از کدام بخش سند گرفته شده است."
+  },
+  {
+    "file": "src/lib/content/articles/evaluating-language-models-for-persian.md",
+    "before": "جدول زیر چند منبع مرتبط را معرفی می‌کند؛ انتخاب منابع بر اساس پوشش نیازهای متفاوت این یادداشت است و فهرست جامع یا رتبه‌بندی کیفیت پژوهش‌ها محسوب نمی‌شود. سال درج‌شده مربوط به اثر معرفی‌شده است، نه زمان ارزیابی همهٔ مدل‌های موجود یا تاریخ آخرین تغییر تمام داده‌های آن. برای استفاده از یک نتیجه، نسخهٔ مقاله، داده و مدلِ همان آزمایش باید با هم دیده شوند.",
+    "after": "پژوهش‌های جدول زیر برای سنجش جنبه‌های متفاوت زبان فارسی انتخاب شده‌اند. سال انتشار هر پژوهش در جدول آمده است؛ نسخهٔ داده و مدلِ هر آزمایش نیز باید از همان پژوهش مشخص شود."
+  },
+  {
+    "file": "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp.md",
+    "before": "این جمع‌بندی بر امکانات رسمی [Ollama](https://github.com/ollama/ollama)، [vLLM](https://github.com/vllm-project/vllm)، [SGLang](https://docs.sglang.io/) و [llama.cpp](https://github.com/ggml-org/llama.cpp) تکیه دارد؛ ستون کاربرد، پیشنهاد انتخاب است.",
+    "after": "اطلاعات جدول از مستندات رسمی [Ollama](https://github.com/ollama/ollama)، [vLLM](https://github.com/vllm-project/vllm)، [SGLang](https://docs.sglang.io/) و [llama.cpp](https://github.com/ggml-org/llama.cpp) گردآوری شده‌اند. کاربردهای پیشنهادی بر اساس امکانات هر نرم‌افزار مشخص شده‌اند."
+  }
+]

@@ -19,9 +19,9 @@ selectionGuidance.push({
     "model:jinaai-jina-embeddings-v3"
   ],
   "decision": {
-    "fa": "E5 را با شاهد مستقیم MIRACL و Tooka/Jina را با جدول فارسی PTEB کنار هم قرار دهید. ابتدا نوع آزمون را یکسان کنید؛ امتیاز دو مجموعه را در یک رتبه‌بندی ادغام نکنید.",
-    "en": "Use the direct Persian MIRACL evidence for E5 and the Persian PTEB table for Tooka/Jina as separate comparison panels. Do not combine their different aggregates into one ranking.",
-    "es": "Use MIRACL persa para E5 y la tabla PTEB para Tooka/Jina en paneles separados. No mezcle agregados de conjuntos distintos en una clasificación."
+    "fa": "E5 در MIRACL فارسی و Tooka/Jina در PTEB ارزیابی شده‌اند. MIRACL کیفیت بازیابی سند را می‌سنجد؛ PTEB چند وظیفه را پوشش می‌دهد و امتیاز کل آن با نتیجهٔ بازیابی یکسان نیست.",
+    "en": "E5 has Persian MIRACL results; Tooka/Jina have PTEB results. MIRACL measures document retrieval, while PTEB covers multiple tasks and its overall score differs from retrieval performance.",
+    "es": "E5 dispone de resultados MIRACL en persa; Tooka/Jina tienen resultados PTEB. MIRACL mide recuperación; PTEB abarca varias tareas y su puntuación global difiere de la de recuperación."
   },
   "chooseWhen": {
     "fa": "برای جست‌وجوی متن فارسی، با ثبت طول قطعه و پیشوند صحیح هر مدل؛ برای Tooka پرسش با «سوال: » و سند با «متن: » طبق کارت ناشر.",
@@ -37,7 +37,6 @@ selectionGuidance.push({
     "comparison:pteb-task-vs-overall",
     "comparison:e5-miracl-by-language"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:intfloat-multilingual-e5-base": "multilingual-e5-base",
     "model:intfloat-multilingual-e5-large-instruct": "multilingual-e5-large-instruct",
@@ -64,9 +63,9 @@ selectionGuidance.push({
     "model:qwen-qwen3-embedding-0-6b"
   ],
   "decision": {
-    "fa": "E5 مقایسهٔ مستقیمِ اسپانیایی دارد؛ مدل Small برای خط پایهٔ کوچک‌تر و Large-Instruct برای مقایسهٔ کیفیت در همان مجموعه مناسب‌اند. Qwen را با برچسب شاهد چندزبانهٔ تجمیعی اضافه کنید، نه شاهد اختصاصی اسپانیایی.",
-    "en": "E5 provides a direct Spanish comparison: Small is the lower-size baseline and Large-Instruct the higher-scoring variant in that MIRACL report. Qwen adds a candidate backed here by multilingual aggregate evidence, not a Spanish-specific score.",
-    "es": "E5 permite una comparación directa en español: Small es la referencia de menor tamaño y Large-Instruct la variante con mayor puntuación en ese informe MIRACL. Qwen aporta otro candidato, respaldado aquí por un agregado multilingüe, no por una nota específica de español."
+    "fa": "E5-Small خط پایهٔ کم‌حجم‌تری است؛ Large-Instruct در همین گزارش MIRACL اسپانیایی امتیاز بالاتری دارد. شواهد Qwen در این مقایسه تجمیعی و چندزبانه‌اند، نه مختص اسپانیایی.",
+    "en": "E5-Small is a smaller baseline; Large-Instruct scores higher in this Spanish MIRACL report. The Qwen results here are multilingual aggregates, not Spanish-specific scores.",
+    "es": "E5-Small es una referencia de menor tamaño; Large-Instruct obtiene más en este informe MIRACL en español. Los resultados de Qwen son agregados multilingües, no puntuaciones específicas de español."
   },
   "chooseWhen": {
     "fa": "پرسش و سند هر دو اسپانیایی باشند؛ بازیابی میان‌زبانی را جداگانه مشخص کنید.",
@@ -82,7 +81,6 @@ selectionGuidance.push({
     "comparison:e5-miracl-by-language",
     "comparison:qwen-embedding-task-scope"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:intfloat-multilingual-e5-small": "multilingual-e5-small",
     "model:intfloat-multilingual-e5-base": "multilingual-e5-base",
@@ -126,7 +124,6 @@ selectionGuidance.push({
     "comparison:e5-miracl-by-language",
     "comparison:qwen-reranking-top100"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:intfloat-multilingual-e5-large": "multilingual-e5-large",
     "model:intfloat-multilingual-e5-large-instruct": "multilingual-e5-large-instruct",
@@ -169,7 +166,6 @@ selectionGuidance.push({
   "comparisonGroupIds": [
     "comparison:qwen-reranking-top100"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:qwen-qwen3-reranker-0-6b": "Qwen3-Reranker-0.6B",
     "model:qwen-qwen3-reranker-4b": "Qwen3-Reranker-4B",
@@ -195,9 +191,9 @@ selectionGuidance.push({
     "model:bigcode-starcoder2-3b"
   ],
   "decision": {
-    "fa": "برای دستیار دستورپذیر، دو Qwen را با معیار متناسب با کار مقایسه کنید. StarCoder2-3B را در مسیر تکمیل کد/FIM نگه دارید؛ امتیاز HumanEval آن شاهد کیفیت چت نیست.",
-    "en": "Compare the two Qwen variants on the task relevant to the assistant. Keep StarCoder2-3B in the code-completion/FIM route; its HumanEval result is not evidence of chat quality.",
-    "es": "Compare las variantes Qwen en la tarea que realizará el asistente. Mantenga StarCoder2-3B en la ruta de autocompletado/FIM; su resultado HumanEval no demuestra calidad de conversación."
+    "fa": "برای دستیار دستورپذیر، معیارهای ویرایش مخزن و حل مسئله را جدا مقایسه کنید. StarCoder2-3B برای تکمیل کد/FIM است؛ HumanEval کیفیت گفت‌وگو یا عامل ویرایشگر را نمی‌سنجد.",
+    "en": "For an instruction-following assistant, distinguish repository editing from coding problems. StarCoder2-3B serves code completion/FIM; HumanEval does not measure chat or editing-agent quality.",
+    "es": "Para un asistente que sigue instrucciones, separa edición de repositorios y ejercicios de programación. StarCoder2-3B sirve para autocompletado/FIM; HumanEval no mide conversación ni calidad de un agente editor."
   },
   "chooseWhen": {
     "fa": "وقتی رابط و وظیفه مشخص است: تکمیل داخل ادیتور، اصلاح چند فایل یا حل یک مسئله.",
@@ -212,7 +208,6 @@ selectionGuidance.push({
   "comparisonGroupIds": [
     "comparison:qwen-small-nonthinking"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:qwen-qwen3-4b-instruct-2507": "Qwen3-4B-Instruct-2507",
     "model:qwen-qwen3-30b-a3b": "Qwen3-30B-A3B",
@@ -238,9 +233,9 @@ selectionGuidance.push({
     "model:ibm-granite-granite-4-2-3b"
   ],
   "decision": {
-    "fa": "برای استخراج و گردش‌کار محدود، LFM یک گزینهٔ کوچک‌تر است؛ برای استدلال و ابزار، شواهد MiniCPM/Granite را در پنل ناشر خودشان ببینید. نام 2B یا 3B را با شمار دقیق وزن‌ها جایگزین نکنید.",
-    "en": "LFM is a smaller candidate for extraction and bounded workflows; for reasoning and tools, read MiniCPM and Granite evidence within each reporter’s panel. Keep nominal 2B/3B labels separate from actual parameter counts.",
-    "es": "LFM es un candidato de menor tamaño para extracción y flujos acotados; para razonamiento y herramientas, consulte MiniCPM y Granite dentro del panel de cada fuente. Distinga las etiquetas 2B/3B del recuento real de parámetros."
+    "fa": "LFM گزینه‌ای کوچک برای استخراج و گردش‌کار محدود است؛ MiniCPM و Granite برای بررسی استدلال و ابزار نیز شواهد دارند. حجم واقعی وزن‌ها ممکن است با عدد گرد‌شدهٔ نام مدل متفاوت باشد.",
+    "en": "LFM is a small candidate for extraction and bounded workflows; MiniCPM and Granite also have reasoning and tool-use evidence. Actual weight size can differ from the rounded size in a model name.",
+    "es": "LFM es un candidato pequeño para extracción y flujos acotados; MiniCPM y Granite también cuentan con evidencia de razonamiento y herramientas. El tamaño real de los pesos puede diferir de la cifra redondeada del nombre."
   },
   "chooseWhen": {
     "fa": "وقتی دامنهٔ وظیفه، قالب خروجی و محدودیت حافظه روشن است.",
@@ -256,7 +251,6 @@ selectionGuidance.push({
     "comparison:qwen-small-nonthinking",
     "comparison:minicpm-small-model-tasks"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:qwen-qwen3-4b-instruct-2507": "Qwen3-4B-Instruct-2507",
     "model:openbmb-minicpm5-2b": "MiniCPM5-2B",
@@ -299,7 +293,6 @@ selectionGuidance.push({
   "comparisonGroupIds": [
     "comparison:salamandra-spanish"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:bsc-lt-salamandra-2b-instruct": "salamandra-2b-instruct",
     "model:bsc-lt-salamandra-7b-instruct": "salamandra-7b-instruct",
@@ -341,7 +334,6 @@ selectionGuidance.push({
   "comparisonGroupIds": [
     "comparison:e5-classification-es-fa"
   ],
-  "editorialStatus": "source-based shortlist; not measured recommendation or universal ranking",
   "candidateNames": {
     "model:intfloat-multilingual-e5-base": "multilingual-e5-base",
     "model:intfloat-multilingual-e5-large-instruct": "multilingual-e5-large-instruct"

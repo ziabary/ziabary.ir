@@ -1,4 +1,7 @@
 <script lang="ts">
+ import { browser } from '$app/environment';
+ $: routeParams = browser ? $page.url.searchParams : new URLSearchParams();
+  import { benchmarkLabel } from '$lib/llm/score-scope';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { getLlmI18n } from '$lib/llm/i18n/context';
@@ -17,10 +20,10 @@
     return unit;
   }
   $: groups=repository.referenceComparisons ?? [];
-  $: requested=$page.url.searchParams.get('reference-group');
+  $: requested=routeParams.get('reference-group');
   $: group=groups.find(g=>g.id===requested) ?? groups.find(g=>g.id==='comparison:e5-miracl-by-language') ?? groups[0];
-  $: language=$page.url.searchParams.get('reference-language') ?? (requested ? 'all' : targetLanguage);
-  $: metric=$page.url.searchParams.get('reference-metric') ?? '';
+  $: language=routeParams.get('reference-language') ?? (requested ? 'all' : targetLanguage);
+  $: metric=routeParams.get('reference-metric') ?? '';
   $: rows=group ? referenceRows(repository,group).filter(({report})=>Number.isFinite(report.value)) : [];
   const languageName=(value:string)=>value==='all'?copy.all:value==='unspecified'?copy.unknown:value==='multilingual'?copy.aggregate:new Intl.DisplayNames([locale],{type:'language'}).of(value) ?? value;
   $: filtered=rows.filter(({report})=>(language==='all' || (report.language ?? 'unspecified')===language) && (!metric || report.metric===metric));
@@ -35,7 +38,7 @@
 <label>{copy.metric}<select value={metric} on:change={e=>choose('reference-metric',e.currentTarget.value)}><option value="">{copy.all}</option>{#each [...new Set(rows.map(r=>r.report.metric))] as m}<option value={m}>{evaluationMetricLabel(m,locale)}</option>{/each}</select></label></div>
 {#each partitions as partition}
 {@const first=partition[0].report}
-<h4><bdi>{first.benchmark}{first.benchmarkVersion ? ` · ${first.benchmarkVersion}` : ''} · {evaluationMetricLabel(first.metric,locale)}{#if first.language} · {languageName(first.language)}{/if}</bdi></h4>
+<h4><bdi>{benchmarkLabel(first.benchmark)}{first.benchmarkVersion ? ` · ${first.benchmarkVersion}` : ''} · {evaluationMetricLabel(first.metric,locale)}{#if first.language} · {languageName(first.language)}{/if}</bdi></h4>
 <div class="scroll"><table><thead><tr><th>{copy.model}</th><th>{copy.score}</th>{#if group.allowed.withinReportNumericDifference}<th>{copy.difference}</th>{/if}<th>{copy.source}</th></tr></thead><tbody>
 {#each partition as {result,report} (report.id)}
 {@const source=repository.evidence.find(e=>e.id===report.sourceId)}

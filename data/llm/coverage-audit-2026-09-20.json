@@ -1,0 +1,17 @@
+{
+  "reviewedOn": "2026-09-20",
+  "scope": "Requested Qwen3.6 open-weight and Qwen3.7 API releases only; not a full-family or whole-catalog completeness claim.",
+  "checked": [
+    "Qwen3.6-27B",
+    "Qwen3.6-35B-A3B",
+    "Qwen3.7-Plus",
+    "Qwen3.7-Max"
+  ],
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3.6-27B",
+    "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+    "https://qwen.ai/apiplatform",
+    "https://www.alibabacloud.com/help/en/model-studio/qwen3-7-plus"
+  ],
+  "otherFamilies": "Not re-audited in this update."
+}

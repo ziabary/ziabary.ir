@@ -1,13 +1,13 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-20",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
   "sourceArchiveSha256": "843bd11098930f80bb0c8254f8e0cfa77a3438681a5f7aa99e12544a70d7e23a",
-  "baseModels": 100,
-  "basePublishedEvaluations": 1193,
-  "mergedPublishedEvaluations": 1251,
+  "baseModels": 115,
+  "basePublishedEvaluations": 1209,
+  "mergedPublishedEvaluations": 1267,
   "referencePack": {
     "asOf": "2026-09-16",
     "models": 5,
@@ -20,5 +20,14 @@
     "articleSections": 8,
     "quantizationObservations": 12,
     "sourceDocuments": 32
+  },
+  "update20260919": {
+    "models": 11,
+    "publishedResults": 16,
+    "e5ObservationsReused": 12
+  },
+  "update20260920": {
+    "models": 2,
+    "coverageAudit": "../coverage-audit-2026-09-20.json"
   }
 }

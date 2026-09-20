@@ -1313,10 +1313,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:qwen-qwen3-embedding-0-6b-mteb"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -1392,10 +1388,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:qwen-qwen3-embedding-4b-mteb"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -1471,10 +1463,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:qwen-qwen3-embedding-8b-mteb"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -27172,10 +27160,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-4a65e5ee5f31c05bcae4"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -27466,10 +27450,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-e1137b2dba1b68234cff"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -27568,10 +27548,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-d259ae3684f4b7c2fd76"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -28900,10 +28876,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-c41be34d5ecfd544ca0b"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -29194,10 +29166,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-18054503cef42b07d991"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -29296,10 +29264,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-7240f08f87bab278e5ea"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33251,10 +33215,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-30e25c3dce06b67be12c"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33321,8 +33281,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33384,8 +33342,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33447,8 +33403,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33516,8 +33470,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33585,8 +33537,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33649,8 +33599,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33717,8 +33665,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33785,8 +33731,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33848,8 +33792,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33911,8 +33853,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -33974,8 +33914,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     }
   ]
@@ -34034,8 +33972,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34094,8 +34030,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34154,8 +34088,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34214,8 +34146,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34274,8 +34204,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34334,8 +34262,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34394,8 +34320,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34454,8 +34378,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34514,8 +34436,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34574,8 +34494,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34634,8 +34552,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34694,8 +34610,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "54e6520c6c1315cfcb550d6725f299fae10cc5730e48a20e1dd7c233929770e9"
     }
   ]
@@ -34759,8 +34673,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -34824,8 +34736,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -34889,8 +34799,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -34954,8 +34862,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35019,8 +34925,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35084,8 +34988,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35149,8 +35051,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35214,8 +35114,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35279,8 +35177,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35344,8 +35240,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35409,8 +35303,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35474,8 +35366,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35539,8 +35429,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35604,8 +35492,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35669,8 +35555,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35734,8 +35618,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35799,8 +35681,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35864,8 +35744,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35929,8 +35807,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -35994,8 +35870,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -36059,8 +35933,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -36124,8 +35996,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -36189,8 +36059,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -36254,8 +36122,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "6e288db32f6399019e4d6b5f47105954e046c1a959ab5038f700911f2833e269"
     }
   ]
@@ -36325,8 +36191,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36396,8 +36260,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36467,8 +36329,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36538,8 +36398,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36609,8 +36467,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36680,8 +36536,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36751,8 +36605,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
     }
   ]
@@ -36822,8 +36674,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -36893,8 +36743,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -36964,8 +36812,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -37035,8 +36881,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -37106,8 +36950,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -37177,8 +37019,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -37248,8 +37088,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "41676700d80691ac2f4397ee2b546ef58f9e3236af2f3d0770ab0fa61940ce51"
     }
   ]
@@ -37313,8 +37151,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37378,8 +37214,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37443,8 +37277,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37508,8 +37340,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37573,8 +37403,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37638,8 +37466,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37703,8 +37529,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3"
     }
   ]
@@ -37774,8 +37598,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -37843,8 +37665,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -37911,8 +37731,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -37982,8 +37800,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38051,8 +37867,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38119,8 +37933,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38190,8 +38002,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38259,8 +38069,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38327,8 +38135,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38398,8 +38204,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38467,8 +38271,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38535,8 +38337,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38606,8 +38406,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38675,8 +38473,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38743,8 +38539,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6"
     }
   ]
@@ -38812,8 +38606,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
     }
   ]
@@ -38881,8 +38673,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
     }
   ]
@@ -38950,8 +38740,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
     }
   ]
@@ -39019,8 +38807,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
     }
   ]
@@ -39088,8 +38874,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "86bf2abca55aa3a671110e0a848057bf0b3f985138a53c3c5d122a9a6744bfd4"
     }
   ]
@@ -39157,8 +38941,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
     }
   ]
@@ -39226,8 +39008,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
     }
   ]
@@ -39295,8 +39075,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
     }
   ]
@@ -39364,8 +39142,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
     }
   ]
@@ -39433,8 +39209,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "4b1a4f6bac51c5939b782cddabd563f53fd29f8f0b3c818d778c68e135440d6e"
     }
   ]
@@ -39495,8 +39269,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39563,8 +39335,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39631,8 +39401,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39693,8 +39461,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39761,8 +39527,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39829,8 +39593,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39891,8 +39653,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -39959,8 +39719,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40027,8 +39785,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40089,8 +39845,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40157,8 +39911,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40225,8 +39977,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40287,8 +40037,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40355,8 +40103,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40423,8 +40169,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40485,8 +40229,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40553,10 +40295,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [
-        "published-evaluation:v03-18d9133cd2ebe47803f1"
-      ],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40623,8 +40361,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "674de0c58b2f7f3bedec4b296c20afbebdf17be9654bd39de242a3597aa40e45"
     }
   ]
@@ -40684,8 +40420,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
     }
   ]
@@ -40745,8 +40479,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
     }
   ]
@@ -40806,8 +40538,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
     }
   ]
@@ -40867,8 +40597,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
     }
   ]
@@ -40928,8 +40656,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
     }
   ]
@@ -40989,8 +40715,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "935c418b71ef9007801532d2680f4b6239b8e57841e103ac521747e7ac6eca4b"
     }
   ]
@@ -41048,8 +40772,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
     }
   ]
@@ -41107,8 +40829,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
     }
   ]
@@ -41166,8 +40886,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
     }
   ]
@@ -41227,8 +40945,6 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
     }
   ]
@@ -41288,9 +41004,500 @@ publishedEvaluations.push({
         "evaluation precision",
         "uncertainty interval"
       ],
-      "baselineSameModelAndValueCandidates": [],
-      "mergeNote": "Candidate matches are NOT duplicate decisions. Match benchmark, variant, language, metric, protocol and underlying experiment before merging.",
       "sourceCaptureSha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
     }
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-glm5-tb20",
+  "modelVersionId": "model:zai-org-glm-5",
+  "reportedModelName": "GLM-5",
+  "reporter": "Z.ai",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 2.0",
+  "metric": "reported success score",
+  "value": 56.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Terminus 2",
+    "datasetVariant": "original, not zai verified variant",
+    "temperature": 0.7,
+    "topP": 1.0,
+    "maxNewTokens": 8192,
+    "contextLabel": "128K",
+    "timeoutHours": 2,
+    "cpuLimit": 16,
+    "ramLimitGB": 32
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "امتیاز ۶۰٫۷ مربوط به نسخهٔ اصلاح‌شدهٔ ناشر است؛ آزمون اصلی امتیاز ۵۶٫۲ دارد."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-glm5-tb20"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-glm51-tb20",
+  "modelVersionId": "model:zai-org-glm-5-1",
+  "reportedModelName": "GLM-5.1",
+  "reporter": "Z.ai",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 2.0",
+  "metric": "reported success score",
+  "value": 63.5,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Terminus 2"
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "شرایط کامل اجرای GLM-5.1 در این گزارش مشخص نیست."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-glm51-tb20"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-glm52-tb21",
+  "modelVersionId": "model:zai-org-glm-5-2",
+  "reportedModelName": "GLM-5.2",
+  "reporter": "Z.ai",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 2.1",
+  "metric": "reported success score",
+  "value": 81.0,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Terminus 2",
+    "parser": "json",
+    "timeoutHours": 4,
+    "temperature": 1.0,
+    "topP": 1.0,
+    "maxNewTokensLabel": "48K",
+    "contextLabel": "256K",
+    "maxEpisodes": 500,
+    "cpuLimit": 4,
+    "ramLimitGB": 8
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-glm52-tb21"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-glm53-tb21",
+  "modelVersionId": "model:zai-org-glm-5-3-bf16",
+  "reportedModelName": "GLM-5.3",
+  "reporter": "Z.ai",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 2.1",
+  "metric": "reported success score",
+  "value": 88.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Claude Code",
+    "harnessVersion": "2.1.207",
+    "temperature": 1.0,
+    "topP": 1.0,
+    "maxNewTokens": 65536,
+    "timeoutHours": 6
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "نتیجه با نام GLM-5.3 گزارش شده؛ دقت وزن آزموده‌شده مشخص نیست."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-glm53-tb21"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-glm53-tb30",
+  "modelVersionId": "model:zai-org-glm-5-3-bf16",
+  "reportedModelName": "GLM-5.3",
+  "reporter": "Z.ai",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 3.0",
+  "metric": "reported score avg@3",
+  "value": 28.3,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Claude Code",
+    "harnessVersion": "2.1.207",
+    "reasoningEffort": "max",
+    "contextLabel": "400K",
+    "maxOutputLabel": "128K",
+    "rolloutsPerTask": 3,
+    "maxAgentTurns": 600,
+    "timeoutHours": 10,
+    "toolSearch": false
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-glm53-tb30"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-kimi26-tb20",
+  "modelVersionId": "model:moonshotai-kimi-k2-6",
+  "reportedModelName": "Kimi-K2.6",
+  "reporter": "Moonshot AI",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 2.0",
+  "metric": "reported success score",
+  "value": 66.7,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Terminus 2",
+    "parser": "json",
+    "thinking": "enabled/preserved",
+    "temperature": 1.0,
+    "topP": 1.0,
+    "contextTokens": 262144,
+    "averagedRuns": 10
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-kimi26-tb20"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-kimi-k2.6-programbench-k27",
+  "modelVersionId": "model:moonshotai-kimi-k2-6",
+  "reportedModelName": "Kimi-K2.6",
+  "reporter": "Moonshot AI",
+  "reportingRelationship": "publisher",
+  "benchmark": "ProgramBench",
+  "metric": "reported benchmark score",
+  "value": 48.3,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Kimi Code CLI",
+    "thinking": "enabled",
+    "temperature": 1.0,
+    "topP": 0.95,
+    "contextTokens": 262144,
+    "taskCount": 200
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "این دو مدل با Kimi Code CLI آزموده شده‌اند؛ ستون‌های GPT و Claude ابزار اجرای متفاوت دارند. نسخهٔ دقیق وزن‌ها مشخص نیست."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-kimi-k2.6-programbench-k27"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-kimi-k2.7-code-programbench-k27",
+  "modelVersionId": "model:moonshotai-kimi-k2-7-code",
+  "reportedModelName": "Kimi-K2.7-Code",
+  "reporter": "Moonshot AI",
+  "reportingRelationship": "publisher",
+  "benchmark": "ProgramBench",
+  "metric": "reported benchmark score",
+  "value": 53.6,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Kimi Code CLI",
+    "thinking": "enabled",
+    "temperature": 1.0,
+    "topP": 0.95,
+    "contextTokens": 262144,
+    "taskCount": 200
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "این دو مدل با Kimi Code CLI آزموده شده‌اند؛ ستون‌های GPT و Claude ابزار اجرای متفاوت دارند. نسخهٔ دقیق وزن‌ها مشخص نیست."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-kimi-k2.7-code-programbench-k27"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-kimi3-tb21",
+  "modelVersionId": "model:moonshotai-kimi-k3",
+  "reportedModelName": "Kimi-K3",
+  "reporter": "Moonshot AI",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal-Bench 2.1",
+  "metric": "reported success score",
+  "value": 88.3,
+  "unit": "score-points-0-100",
+  "settings": {
+    "harness": "Kimi Code",
+    "reasoningEffort": "max",
+    "temperature": 1.0,
+    "topP": 1.0
+  },
+  "applicationIds": [
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "ستون‌های سایر مدل‌ها از ابزارهای اجرای متفاوت استفاده می‌کنند؛ مقایسهٔ کنترل‌شدهٔ میان ناشران نیست."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-kimi3-tb21"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen-vl-embedding-2b-all",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-2b",
+  "reportedModelName": "Qwen3-VL-Embedding-2B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMEB-V2",
+  "metric": "All",
+  "value": 73.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "suiteLabel": "updated VisDoc OOD split",
+    "totalDatasets": 78
+  },
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "امتیاز تجمیعی مجموعه‌آزمون است؛ نتیجهٔ جداگانهٔ فارسی نیست.",
+    "All و VisDoc Overall دو تجمیع متفاوت از داده‌های آزمون‌اند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen-vl-embedding-2b-all"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen-vl-embedding-2b-visdoc",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-2b",
+  "reportedModelName": "Qwen3-VL-Embedding-2B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMEB-V2",
+  "metric": "VisDoc Overall",
+  "value": 79.2,
+  "unit": "score-points-0-100",
+  "settings": {
+    "suiteLabel": "updated VisDoc OOD split",
+    "totalDatasets": 24
+  },
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "امتیاز تجمیعی مجموعه‌آزمون است؛ نتیجهٔ جداگانهٔ فارسی نیست.",
+    "All و VisDoc Overall دو تجمیع متفاوت از داده‌های آزمون‌اند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen-vl-embedding-2b-visdoc"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen-vl-embedding-8b-all",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-8b",
+  "reportedModelName": "Qwen3-VL-Embedding-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMEB-V2",
+  "metric": "All",
+  "value": 77.8,
+  "unit": "score-points-0-100",
+  "settings": {
+    "suiteLabel": "updated VisDoc OOD split",
+    "totalDatasets": 78
+  },
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "امتیاز تجمیعی مجموعه‌آزمون است؛ نتیجهٔ جداگانهٔ فارسی نیست.",
+    "All و VisDoc Overall دو تجمیع متفاوت از داده‌های آزمون‌اند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen-vl-embedding-8b-all"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen-vl-embedding-8b-visdoc",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-8b",
+  "reportedModelName": "Qwen3-VL-Embedding-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "MMEB-V2",
+  "metric": "VisDoc Overall",
+  "value": 82.4,
+  "unit": "score-points-0-100",
+  "settings": {
+    "suiteLabel": "updated VisDoc OOD split",
+    "totalDatasets": 24
+  },
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "امتیاز تجمیعی مجموعه‌آزمون است؛ نتیجهٔ جداگانهٔ فارسی نیست.",
+    "All و VisDoc Overall دو تجمیع متفاوت از داده‌های آزمون‌اند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen-vl-embedding-8b-visdoc"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen3-vl-embedding-2b-vidore3",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-2b",
+  "reportedModelName": "Qwen3-VL-Embedding-2B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "ViDoRe v3",
+  "metric": "reported table score; exact metric definition not supplied in card table",
+  "value": 52.9,
+  "unit": "score-points-0-100",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "تعداد نامزدها و تعریف دقیق معیار در جدول مشخص نیست؛ اعداد برای مقایسهٔ هم‌شرط کافی نیستند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen3-vl-embedding-2b-vidore3"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen3-vl-reranker-2b-vidore3",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-2b",
+  "reportedModelName": "Qwen3-VL-Reranker-2B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "ViDoRe v3",
+  "metric": "reported table score; exact metric definition not supplied in card table",
+  "value": 60.8,
+  "unit": "score-points-0-100",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "تعداد نامزدها و تعریف دقیق معیار در جدول مشخص نیست؛ اعداد برای مقایسهٔ هم‌شرط کافی نیستند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen3-vl-reranker-2b-vidore3"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:update0919-qwen3-vl-reranker-8b-vidore3",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-8b",
+  "reportedModelName": "Qwen3-VL-Reranker-8B",
+  "reporter": "Qwen",
+  "reportingRelationship": "publisher",
+  "benchmark": "ViDoRe v3",
+  "metric": "reported table score; exact metric definition not supplied in card table",
+  "value": 66.7,
+  "unit": "score-points-0-100",
+  "settings": {},
+  "applicationIds": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "accessedOn": "2026-09-19",
+  "limitations": [
+    "تعداد نامزدها و تعریف دقیق معیار در جدول مشخص نیست؛ اعداد برای مقایسهٔ هم‌شرط کافی نیستند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:update0919-result-qwen3-vl-reranker-8b-vidore3"
   ]
 });

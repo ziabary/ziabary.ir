@@ -458,3 +458,71 @@ specializedAssessments.push({
     "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased-files"
   ]
 });
+specializedAssessments.push({
+  "id": "specialized-assessment:update0919-qwen-qwen3-vl-embedding-2b",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-2b",
+  "modelRevision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:update0919-qwen-qwen3-vl-embedding-2b",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:update0919-qwen-qwen3-vl-embedding-8b",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-8b",
+  "modelRevision": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:update0919-qwen-qwen3-vl-embedding-8b",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:update0919-qwen-qwen3-vl-reranker-2b",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-2b",
+  "modelRevision": "4bd860ac4f15ad1897a214615cccc700f8f71818",
+  "kind": "reranker",
+  "applicationId": "enterprise-rag",
+  "metricName": "",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:update0919-qwen-qwen3-vl-reranker-2b",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:update0919-qwen-qwen3-vl-reranker-8b",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-8b",
+  "modelRevision": "b212dc8c91a8164aef1ea2de9c1a867611e75c04",
+  "kind": "reranker",
+  "applicationId": "enterprise-rag",
+  "metricName": "",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:update0919-qwen-qwen3-vl-reranker-8b",
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+  ]
+});

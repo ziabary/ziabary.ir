@@ -19,11 +19,14 @@
   import GuideOpening from './GuideOpening.svelte';
   import LlmDataView from './LlmDataView.svelte';
   import LlmResearchView from './LlmResearchView.svelte';
+  import LlmScoreSelector from './LlmScoreSelector.svelte';
+  import { readScoreScope } from '$lib/llm/score-scope';
+  import LlmOrganizationWizard from './LlmOrganizationWizard.svelte';
   import LlmTaskStartingPoints from './LlmTaskStartingPoints.svelte';
   import { createLlmResearch } from '$lib/llm/research';
   import { createLlmResearchViews } from '$lib/llm/research-views';
   import { imageAttributes } from '$lib/images';
-  import { allArticleMetadata as articles } from '$lib/content';
+  import { allArticleMetadata as articles, getArticle } from '$lib/content';
   import groups from '$lib/translation-groups.json';
   import { llmCollection, llmEditionSlugs, llmTopicSlug, llmBase, llmEditionPolicy } from '$lib/llm/editions';
   import { localizeLlmRepository } from '$lib/llm/i18n/runtime';
@@ -59,14 +62,14 @@
     return () => window.removeEventListener('hashchange', fromHash);
   });
   const numbers = new Intl.NumberFormat(numberFormat);
-  const publishedArticles = new Map(articles.filter(article => article.lang === locale).map(article => [article.slug, article]));
-  const readingArticles = new Map(articles.filter(article => article.lang === locale && llmArticleSlugs.some(slug => slug === article.slug)).map(article => [article.slug, article]));
+  $: publishedArticles = new Map(articles.filter(article => article.lang === locale && (getArticle(article.slug, locale) || chapters[article.slug])).map(article => [article.slug, article]));
+  $: readingArticles = new Map(articles.filter(article => article.lang === locale && chapters[article.slug] && llmArticleSlugs.some(slug => slug === article.slug)).map(article => [article.slug, article]));
   $: chapterArticles = llmArticleSlugs.flatMap(slug => chapters[slug] ? readingArticles.get(slug) ?? [] : []);
-  $: targetIds = ['start', ...llmGuideSections.map(section => section.id), 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
+  $: targetIds = ['start', 'llm-starting-plan', ...llmGuideSections.map(section => section.id), 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
   $: activeChapter = chapterArticles.find(article => activeTarget === article.slug || activeTarget.startsWith(`${article.slug}--`));
   const llmRepository = enrichResearchRepository(localizeLlmRepository(baseRepository, i18n));
-  $: targetLanguage = ['all','fa','en','es','ar','de','fr','zh'].includes($page.url.searchParams.get('target-language') ?? '') ? $page.url.searchParams.get('target-language')! : llmEditionPolicy[locale].targetLanguage;
-  $: llmViewRows = enrichExistingRows(llmRepository, buildLlmViewRows(llmRepository), targetLanguage);
+  $: targetLanguage = ['all','fa','en','es','ar','de','fr','zh'].includes(routeParams.get('target-language') ?? '') ? routeParams.get('target-language')! : llmEditionPolicy[locale].targetLanguage;
+  $: llmViewRows = enrichExistingRows(llmRepository, buildLlmViewRows(llmRepository), targetLanguage, readScoreScope(routeParams.get('score'), locale), $page.url);
   const matrixRows = adaptModelUseMatrix(llmRepository);
   const tableCount = llmGuideSections.reduce((count, section) => count + section.views.length, 0);
   $: routeParams = browser ? $page.url.searchParams : new URLSearchParams();
@@ -154,8 +157,23 @@
     <a href={`${base}/guides/`}>{t('LlmGuidePage.1022')}</a><span aria-hidden="true">/</span><span aria-current="page">{t('LlmGuidePage.1023')}</span>
   </nav>
 
-  <div class="llm-opening">
-    <GuideOpening title={llmGuideCollection.title} lead={llmGuideCollection.subtitle} eyebrow="LLM & SLM" image={llmGuideCollection.image} imageAlt={llmGuideCollection.imageAlt}>
+  <div class="guide-shell">
+    <aside class="guide-navigation" data-reading-navigation>
+      <details class="desktop-toc" open>
+        <summary>{t('LlmGuidePage.1036')}</summary>
+        <nav aria-label={t('LlmGuidePage.1037')} use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
+      </details>
+      <a class="back-link" href={`${base}/guides/`}>{t('LlmGuidePage.1038')}</a>
+    </aside>
+  <div class="guide-content">
+      <div class="guide-navigation mobile-navigation">
+      <details class="mobile-toc">
+        <summary>{t('LlmGuidePage.1036')}</summary>
+        <nav aria-label={t('LlmGuidePage.1039')} use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
+      </details>
+      </div>
+  <div class="llm-opening" id="technical-guide">
+    <GuideOpening headingTag="h1" title={llmGuideCollection.title} lead={llmGuideCollection.subtitle} eyebrow="LLM & SLM" image={llmGuideCollection.image} imageAlt={llmGuideCollection.imageAlt}>
         <p>{t('LlmGuidePage.1024')}
 </p><p>
 {t('LlmGuidePage.1025')}
@@ -167,6 +185,7 @@
             <h2 id="start-title">{t('LlmGuidePage.1027')}</h2>
             <p>{t('LlmGuidePage.1028')}</p>
           </header>
+          <LlmOrganizationWizard repository={llmRepository} onOpenModel={openModel} />
           <nav class="desktop-paths" aria-label={t('LlmGuidePage.1029')}>
             {@render readingPaths()}
           </nav>
@@ -192,21 +211,10 @@
   </details>
 
   <div class="wrap guide-layout">
-    <aside class="guide-navigation" data-reading-navigation>
-      <details class="desktop-toc" open>
-        <summary>{t('LlmGuidePage.1036')}</summary>
-        <nav aria-label={t('LlmGuidePage.1037')} use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
-      </details>
-      <a class="back-link" href={`${base}/guides/`}>{t('LlmGuidePage.1038')}</a>
-    </aside>
+
 
     <div class="guide-main">
-      <div class="guide-navigation mobile-navigation">
-      <details class="mobile-toc">
-        <summary>{t('LlmGuidePage.1036')}</summary>
-        <nav aria-label={t('LlmGuidePage.1039')} use:keepCurrentVisible={activeTarget}>{@render guideContents()}</nav>
-      </details>
-      </div>
+
 
       {#each llmGuideSections as section}
         {#if section.views.length === 1}
@@ -227,11 +235,11 @@
               <button type="button" class:active={matrixMode} aria-pressed={matrixMode} onclick={() => setMatrixMode(true)}>{t('LlmGuidePage.1042')}</button>
               <span>{matrixMode ? t('LlmGuidePage.1043') : t('LlmGuidePage.1044')}</span>
             </div>
-            <LlmDataView config={enrichExistingConfig(modelUseViewConfig(matrixMode))} evidence={llmRepository.evidence} rows={matrixMode ? matrixRows : llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel}>{#snippet controlsContent()}<LlmTaskStartingPoints {targetLanguage} repository={llmRepository} onOpenModel={openModel} />{/snippet}</LlmDataView>
+            <LlmDataView config={enrichExistingConfig(modelUseViewConfig(matrixMode))} evidence={llmRepository.evidence} rows={matrixMode ? matrixRows : llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel}>{#snippet controlsContent()}<LlmScoreSelector results={llmRepository.publishedEvaluations} /><LlmTaskStartingPoints {targetLanguage} repository={llmRepository} onOpenModel={openModel} />{/snippet}</LlmDataView>
           {:else if ['hardware-feasibility', 'benchmarks'].includes(config.id)}
             <LlmResearchView repository={llmRepository} id={config.id} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel} />
           {:else}
-            <LlmDataView onOpenModel={openModel} {config} evidence={llmRepository.evidence} rows={llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} />
+            <LlmDataView onOpenModel={openModel} {config} evidence={llmRepository.evidence} rows={llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''}>{#snippet controlsContent()}<LlmScoreSelector results={llmRepository.publishedEvaluations} />{/snippet}</LlmDataView>
           {/if}
           {@render viewReading(config.id, config.title)}
         {:else}
@@ -252,6 +260,8 @@
 
 
     </div>
+  </div>
+  </div>
   </div>
 </main>
 <LlmModelProfile repository={llmRepository} {modelId} panel={modelPanel} onClose={closeModel} onPanel={changePanel} />
@@ -314,6 +324,7 @@
 
 {#snippet guideContents()}
   <a href="#start" aria-current={activeTarget === 'start' ? 'location' : undefined}>{t('LlmGuidePage.1027')}</a>
+  <a href="#llm-starting-plan" aria-current={activeTarget === 'llm-starting-plan' ? 'location' : undefined}>{locale === 'fa' ? 'راهنمای تعامل' : locale === 'es' ? 'Guía interactiva' : 'Interactive guide'}</a>
   <details class="toc-group" open>
     <summary>{t('LlmGuidePage.1054')}</summary>
     <ol>{#each llmGuideSections as section}
@@ -345,7 +356,7 @@
   .guide-method{max-width:1280px;width:calc(100% - 32px);margin:20px auto 32px;padding-block:12px;border-block:1px solid var(--line);font-size:14px;line-height:1.9}.guide-method summary{cursor:pointer;color:var(--link-ink);font-weight:600}.guide-method p{max-width:90ch}.guide-method a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
 
   .benchmark-section{scroll-margin-top:110px;margin-block:40px}.subview-tabs button{font:inherit;padding:10px 16px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--link-ink);cursor:pointer}.subview-tabs button.active{background:var(--soft);border-color:var(--teal)}
-  .llm-guide{min-width:0}.breadcrumbs{display:flex;position:static;inset:auto;flex-direction:row;gap:8px;align-items:center;margin-inline:auto;padding:26px 0 0;border:0;background:transparent;color:var(--muted);font-size:11px}.breadcrumbs a{color:var(--link-ink)}.guide-layout{display:grid;grid-template-columns:188px minmax(0,1fr);gap:24px;width:calc(100% - 200px);max-width:none;margin-inline-start:12px;margin-inline-end:188px;padding-block:18px 80px;align-items:start}.guide-navigation{position:sticky;top:100px;min-width:0}.guide-navigation details{border-bottom:1px solid var(--line)}.guide-navigation summary{padding:11px 0;cursor:pointer;font-size:12px;font-weight:800}.guide-navigation nav{display:block;position:static;inset:auto;margin:0;padding:0;border:0;background:transparent;max-height:calc(100dvh - 210px);overflow:auto}.guide-navigation ol{list-style:none;margin:0;padding:0}.guide-navigation a{display:block;padding:8px 10px;border-inline-start:2px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7;white-space:normal}.guide-navigation a:hover,.guide-navigation a.active{border-color:var(--teal);color:var(--link-ink)}.guide-navigation .back-link{margin-top:13px;border:0;color:var(--link-ink)}.mobile-toc{display:none}.guide-main{min-width:0}
+  .llm-guide{min-width:0}.breadcrumbs{display:flex;position:static;inset:auto;flex-direction:row;gap:8px;align-items:center;margin-inline:auto;padding:26px 0 0;border:0;background:transparent;color:var(--muted);font-size:11px}.breadcrumbs a{color:var(--link-ink)}.guide-shell{display:grid;grid-template-columns:188px minmax(0,1fr);gap:24px;margin-inline:12px 188px;align-items:start}.guide-content{min-width:0}.guide-layout{display:block;width:100%;max-width:none;margin:0;padding-block:18px 80px}.guide-navigation{position:sticky;top:100px;min-width:0}.guide-navigation details{border-bottom:1px solid var(--line)}.guide-navigation summary{padding:11px 0;cursor:pointer;font-size:12px;font-weight:800}.guide-navigation nav{display:block;position:static;inset:auto;margin:0;padding:0;border:0;background:transparent;max-height:calc(100dvh - 210px);overflow:auto}.guide-navigation ol{list-style:none;margin:0;padding:0}.guide-navigation a{display:block;padding:8px 10px;border-inline-start:2px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7;white-space:normal}.guide-navigation a:hover,.guide-navigation a.active{border-color:var(--teal);color:var(--link-ink)}.guide-navigation .back-link{margin-top:13px;border:0;color:var(--link-ink)}.mobile-toc{display:none}.guide-main{min-width:0}
   .start{width:min(1280px,calc(100% - 48px));margin:32px auto 0;scroll-margin-top:110px}
   .start header small,.serving-section>header small{color:var(--link-ink);font-size:12px}
   .start h2{margin:8px 0 10px;font-size:26px;line-height:1.6}
@@ -392,7 +403,7 @@
   @media(max-width:850px){.view-reading{padding:16px}}
 
   
-  @media(max-width:1199px){.guide-layout{display:block;width:calc(100% - 32px);margin-inline:auto}.guide-navigation{position:static;margin-bottom:20px}.desktop-toc{display:none}.mobile-toc{display:block}.guide-navigation nav{max-height:46vh}.guide-navigation .back-link{padding-inline:0}.view-reading{margin-top:-22px}}
+  @media(max-width:1199px){.guide-shell{display:block;margin-inline:0}.guide-layout{display:block;width:calc(100% - 32px);margin-inline:auto}.guide-navigation{position:static;margin-bottom:20px}.desktop-toc{display:none}.mobile-toc{display:block}.guide-navigation nav{max-height:46vh}.guide-navigation .back-link{padding-inline:0}.view-reading{margin-top:-22px}}
   @media(max-width:700px){.breadcrumbs{padding-top:18px}.subview-tabs{display:grid}.subview-tabs a+a{border-inline-start:0;border-top:1px solid var(--line)}}
   .mobile-navigation{display:none}
   @media(max-width:1199px){aside.guide-navigation{display:none}.mobile-navigation{display:block}}

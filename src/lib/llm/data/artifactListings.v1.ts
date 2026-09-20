@@ -21997,3 +21997,7398 @@ artifactListings.push({
     "evidence:reference-ibm-granite-granite-4-2-3b-json-ec00591718"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:update0919-zai-org-glm-5",
+  "modelVersionId": "model:zai-org-glm-5",
+  "baseModelRepository": "zai-org/GLM-5",
+  "baseRevision": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+  "publisher": "Z.ai",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/zai-org/GLM-5",
+  "filesUrl": "https://huggingface.co/zai-org/GLM-5/tree/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+  "repositoryRevision": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+  "files": [
+    {
+      "path": "model-00001-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00001-of-00282.safetensors",
+      "bytes": 5342821416
+    },
+    {
+      "path": "model-00002-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00002-of-00282.safetensors",
+      "bytes": 5351970840
+    },
+    {
+      "path": "model-00003-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00003-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00004-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00004-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00005-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00005-of-00282.safetensors",
+      "bytes": 5359985352
+    },
+    {
+      "path": "model-00006-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00006-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00007-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00007-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00008-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00008-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00009-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00009-of-00282.safetensors",
+      "bytes": 5359985416
+    },
+    {
+      "path": "model-00010-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00010-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00011-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00011-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00012-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00012-of-00282.safetensors",
+      "bytes": 5363494088
+    },
+    {
+      "path": "model-00013-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00013-of-00282.safetensors",
+      "bytes": 5356838488
+    },
+    {
+      "path": "model-00014-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00014-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00015-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00015-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00016-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00016-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00017-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00017-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00018-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00018-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00019-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00019-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00020-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00020-of-00282.safetensors",
+      "bytes": 5359985400
+    },
+    {
+      "path": "model-00021-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00021-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00022-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00022-of-00282.safetensors",
+      "bytes": 5360347296
+    },
+    {
+      "path": "model-00023-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00023-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00024-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00024-of-00282.safetensors",
+      "bytes": 5359985464
+    },
+    {
+      "path": "model-00025-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00025-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00026-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00026-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00027-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00027-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00028-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00028-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00029-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00029-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00030-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00030-of-00282.safetensors",
+      "bytes": 5360347168
+    },
+    {
+      "path": "model-00031-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00031-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00032-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00032-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00033-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00033-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00034-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00034-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00035-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00035-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00036-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00036-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00037-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00037-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00038-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00038-of-00282.safetensors",
+      "bytes": 5364851048
+    },
+    {
+      "path": "model-00039-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00039-of-00282.safetensors",
+      "bytes": 5351970832
+    },
+    {
+      "path": "model-00040-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00040-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00041-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00041-of-00282.safetensors",
+      "bytes": 5360347216
+    },
+    {
+      "path": "model-00042-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00042-of-00282.safetensors",
+      "bytes": 5359985344
+    },
+    {
+      "path": "model-00043-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00043-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00044-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00044-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00045-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00045-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00046-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00046-of-00282.safetensors",
+      "bytes": 5359985416
+    },
+    {
+      "path": "model-00047-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00047-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00048-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00048-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00049-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00049-of-00282.safetensors",
+      "bytes": 5363494080
+    },
+    {
+      "path": "model-00050-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00050-of-00282.safetensors",
+      "bytes": 5356838496
+    },
+    {
+      "path": "model-00051-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00051-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00052-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00052-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00053-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00053-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00054-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00054-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00055-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00055-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00056-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00056-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00057-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00057-of-00282.safetensors",
+      "bytes": 5359985400
+    },
+    {
+      "path": "model-00058-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00058-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00059-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00059-of-00282.safetensors",
+      "bytes": 5360347296
+    },
+    {
+      "path": "model-00060-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00060-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00061-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00061-of-00282.safetensors",
+      "bytes": 5359985464
+    },
+    {
+      "path": "model-00062-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00062-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00063-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00063-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00064-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00064-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00065-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00065-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00066-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00066-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00067-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00067-of-00282.safetensors",
+      "bytes": 5360347168
+    },
+    {
+      "path": "model-00068-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00068-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00069-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00069-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00070-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00070-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00071-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00071-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00072-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00072-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00073-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00073-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00074-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00074-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00075-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00075-of-00282.safetensors",
+      "bytes": 5359985280
+    },
+    {
+      "path": "model-00076-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00076-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00077-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00077-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00078-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00078-of-00282.safetensors",
+      "bytes": 5360346968
+    },
+    {
+      "path": "model-00079-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00079-of-00282.safetensors",
+      "bytes": 5359985256
+    },
+    {
+      "path": "model-00080-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00080-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00081-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00081-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00082-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00082-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00083-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00083-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00084-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00084-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00085-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00085-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00086-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00086-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00087-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00087-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00088-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00088-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00089-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00089-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00090-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00090-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00091-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00091-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00092-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00092-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00093-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00093-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00094-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00094-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00095-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00095-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00096-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00096-of-00282.safetensors",
+      "bytes": 5360347272
+    },
+    {
+      "path": "model-00097-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00097-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00098-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00098-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00099-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00099-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00100-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00100-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00101-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00101-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00102-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00102-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00103-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00103-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00104-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00104-of-00282.safetensors",
+      "bytes": 5360347136
+    },
+    {
+      "path": "model-00105-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00105-of-00282.safetensors",
+      "bytes": 5359985424
+    },
+    {
+      "path": "model-00106-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00106-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00107-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00107-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00108-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00108-of-00282.safetensors",
+      "bytes": 5292860584
+    },
+    {
+      "path": "model-00109-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00109-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00110-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00110-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00111-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00111-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00112-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00112-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00113-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00113-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00114-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00114-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00115-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00115-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00116-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00116-of-00282.safetensors",
+      "bytes": 5359985280
+    },
+    {
+      "path": "model-00117-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00117-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00118-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00118-of-00282.safetensors",
+      "bytes": 5360347080
+    },
+    {
+      "path": "model-00119-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00119-of-00282.safetensors",
+      "bytes": 5360346896
+    },
+    {
+      "path": "model-00120-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00120-of-00282.safetensors",
+      "bytes": 5359985448
+    },
+    {
+      "path": "model-00121-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00121-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00122-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00122-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00123-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00123-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00124-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00124-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00125-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00125-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00126-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00126-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00127-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00127-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00128-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00128-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00129-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00129-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00130-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00130-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00131-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00131-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00132-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00132-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00133-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00133-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00134-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00134-of-00282.safetensors",
+      "bytes": 5359985312
+    },
+    {
+      "path": "model-00135-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00135-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00136-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00136-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00137-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00137-of-00282.safetensors",
+      "bytes": 5360347176
+    },
+    {
+      "path": "model-00138-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00138-of-00282.safetensors",
+      "bytes": 5359985384
+    },
+    {
+      "path": "model-00139-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00139-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00140-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00140-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00141-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00141-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00142-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00142-of-00282.safetensors",
+      "bytes": 5359985440
+    },
+    {
+      "path": "model-00143-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00143-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00144-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00144-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00145-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00145-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00146-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00146-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00147-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00147-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00148-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00148-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00149-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00149-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00150-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00150-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00151-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00151-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00152-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00152-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00153-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00153-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00154-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00154-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00155-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00155-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00156-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00156-of-00282.safetensors",
+      "bytes": 5359985288
+    },
+    {
+      "path": "model-00157-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00157-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00158-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00158-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00159-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00159-of-00282.safetensors",
+      "bytes": 5360346984
+    },
+    {
+      "path": "model-00160-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00160-of-00282.safetensors",
+      "bytes": 5359985216
+    },
+    {
+      "path": "model-00161-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00161-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00162-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00162-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00163-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00163-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00164-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00164-of-00282.safetensors",
+      "bytes": 5359985424
+    },
+    {
+      "path": "model-00165-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00165-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00166-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00166-of-00282.safetensors",
+      "bytes": 5360347280
+    },
+    {
+      "path": "model-00167-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00167-of-00282.safetensors",
+      "bytes": 5192196784
+    },
+    {
+      "path": "model-00168-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00168-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00169-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00169-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00170-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00170-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00171-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00171-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00172-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00172-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00173-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00173-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00174-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00174-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00175-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00175-of-00282.safetensors",
+      "bytes": 5359985408
+    },
+    {
+      "path": "model-00176-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00176-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00177-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00177-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00178-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00178-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00179-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00179-of-00282.safetensors",
+      "bytes": 5359985472
+    },
+    {
+      "path": "model-00180-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00180-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00181-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00181-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00182-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00182-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00183-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00183-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00184-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00184-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00185-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00185-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00186-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00186-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00187-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00187-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00188-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00188-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00189-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00189-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00190-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00190-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00191-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00191-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00192-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00192-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00193-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00193-of-00282.safetensors",
+      "bytes": 5359985312
+    },
+    {
+      "path": "model-00194-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00194-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00195-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00195-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00196-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00196-of-00282.safetensors",
+      "bytes": 5360347176
+    },
+    {
+      "path": "model-00197-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00197-of-00282.safetensors",
+      "bytes": 5359985288
+    },
+    {
+      "path": "model-00198-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00198-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00199-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00199-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00200-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00200-of-00282.safetensors",
+      "bytes": 5360346896
+    },
+    {
+      "path": "model-00201-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00201-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00202-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00202-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00203-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00203-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00204-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00204-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00205-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00205-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00206-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00206-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00207-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00207-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00208-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00208-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00209-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00209-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00210-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00210-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00211-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00211-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00212-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00212-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00213-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00213-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00214-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00214-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00215-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00215-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00216-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00216-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00217-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00217-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00218-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00218-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00219-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00219-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00220-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00220-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00221-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00221-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00222-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00222-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00223-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00223-of-00282.safetensors",
+      "bytes": 5359985424
+    },
+    {
+      "path": "model-00224-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00224-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00225-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00225-of-00282.safetensors",
+      "bytes": 5360347280
+    },
+    {
+      "path": "model-00226-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00226-of-00282.safetensors",
+      "bytes": 5192196784
+    },
+    {
+      "path": "model-00227-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00227-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00228-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00228-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00229-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00229-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00230-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00230-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00231-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00231-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00232-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00232-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00233-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00233-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00234-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00234-of-00282.safetensors",
+      "bytes": 5359985408
+    },
+    {
+      "path": "model-00235-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00235-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00236-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00236-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00237-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00237-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00238-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00238-of-00282.safetensors",
+      "bytes": 5359985280
+    },
+    {
+      "path": "model-00239-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00239-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00240-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00240-of-00282.safetensors",
+      "bytes": 5360347016
+    },
+    {
+      "path": "model-00241-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00241-of-00282.safetensors",
+      "bytes": 5359985160
+    },
+    {
+      "path": "model-00242-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00242-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00243-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00243-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00244-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00244-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00245-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00245-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00246-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00246-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00247-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00247-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00248-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00248-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00249-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00249-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00250-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00250-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00251-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00251-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00252-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00252-of-00282.safetensors",
+      "bytes": 5359985312
+    },
+    {
+      "path": "model-00253-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00253-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00254-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00254-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00255-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00255-of-00282.safetensors",
+      "bytes": 5360347176
+    },
+    {
+      "path": "model-00256-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00256-of-00282.safetensors",
+      "bytes": 5359985384
+    },
+    {
+      "path": "model-00257-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00257-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00258-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00258-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00259-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00259-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00260-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00260-of-00282.safetensors",
+      "bytes": 5359985440
+    },
+    {
+      "path": "model-00261-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00261-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00262-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00262-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00263-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00263-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00264-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00264-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00265-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00265-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00266-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00266-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00267-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00267-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00268-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00268-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00269-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00269-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00270-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00270-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00271-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00271-of-00282.safetensors",
+      "bytes": 5360009568
+    },
+    {
+      "path": "model-00272-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00272-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00273-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00273-of-00282.safetensors",
+      "bytes": 5360347272
+    },
+    {
+      "path": "model-00274-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00274-of-00282.safetensors",
+      "bytes": 5359997696
+    },
+    {
+      "path": "model-00275-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00275-of-00282.safetensors",
+      "bytes": 5360347096
+    },
+    {
+      "path": "model-00276-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00276-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00277-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00277-of-00282.safetensors",
+      "bytes": 5360346992
+    },
+    {
+      "path": "model-00278-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00278-of-00282.safetensors",
+      "bytes": 5359985144
+    },
+    {
+      "path": "model-00279-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00279-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00280-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00280-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00281-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00281-of-00282.safetensors",
+      "bytes": 5360346928
+    },
+    {
+      "path": "model-00282-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5/resolve/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/model-00282-of-00282.safetensors",
+      "bytes": 1962582048
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5"
+  ],
+  "totalBytes": 1507735819176
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-zai-org-glm-5-1",
+  "modelVersionId": "model:zai-org-glm-5-1",
+  "baseModelRepository": "zai-org/GLM-5.1",
+  "baseRevision": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+  "publisher": "Z.ai",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/zai-org/GLM-5.1",
+  "filesUrl": "https://huggingface.co/zai-org/GLM-5.1/tree/26e1bd6e011feb778d25ae34b09b07074139d92d",
+  "repositoryRevision": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+  "files": [
+    {
+      "path": "model-00001-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00001-of-00282.safetensors",
+      "bytes": 5342821416
+    },
+    {
+      "path": "model-00002-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00002-of-00282.safetensors",
+      "bytes": 5351970840
+    },
+    {
+      "path": "model-00003-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00003-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00004-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00004-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00005-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00005-of-00282.safetensors",
+      "bytes": 5359985352
+    },
+    {
+      "path": "model-00006-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00006-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00007-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00007-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00008-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00008-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00009-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00009-of-00282.safetensors",
+      "bytes": 5359985416
+    },
+    {
+      "path": "model-00010-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00010-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00011-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00011-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00012-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00012-of-00282.safetensors",
+      "bytes": 5363494088
+    },
+    {
+      "path": "model-00013-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00013-of-00282.safetensors",
+      "bytes": 5356838488
+    },
+    {
+      "path": "model-00014-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00014-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00015-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00015-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00016-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00016-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00017-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00017-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00018-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00018-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00019-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00019-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00020-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00020-of-00282.safetensors",
+      "bytes": 5359985400
+    },
+    {
+      "path": "model-00021-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00021-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00022-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00022-of-00282.safetensors",
+      "bytes": 5360347296
+    },
+    {
+      "path": "model-00023-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00023-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00024-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00024-of-00282.safetensors",
+      "bytes": 5359985464
+    },
+    {
+      "path": "model-00025-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00025-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00026-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00026-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00027-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00027-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00028-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00028-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00029-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00029-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00030-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00030-of-00282.safetensors",
+      "bytes": 5360347168
+    },
+    {
+      "path": "model-00031-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00031-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00032-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00032-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00033-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00033-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00034-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00034-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00035-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00035-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00036-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00036-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00037-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00037-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00038-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00038-of-00282.safetensors",
+      "bytes": 5364851048
+    },
+    {
+      "path": "model-00039-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00039-of-00282.safetensors",
+      "bytes": 5351970832
+    },
+    {
+      "path": "model-00040-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00040-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00041-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00041-of-00282.safetensors",
+      "bytes": 5360347216
+    },
+    {
+      "path": "model-00042-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00042-of-00282.safetensors",
+      "bytes": 5359985344
+    },
+    {
+      "path": "model-00043-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00043-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00044-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00044-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00045-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00045-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00046-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00046-of-00282.safetensors",
+      "bytes": 5359985416
+    },
+    {
+      "path": "model-00047-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00047-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00048-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00048-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00049-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00049-of-00282.safetensors",
+      "bytes": 5363494080
+    },
+    {
+      "path": "model-00050-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00050-of-00282.safetensors",
+      "bytes": 5356838496
+    },
+    {
+      "path": "model-00051-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00051-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00052-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00052-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00053-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00053-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00054-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00054-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00055-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00055-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00056-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00056-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00057-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00057-of-00282.safetensors",
+      "bytes": 5359985400
+    },
+    {
+      "path": "model-00058-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00058-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00059-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00059-of-00282.safetensors",
+      "bytes": 5360347296
+    },
+    {
+      "path": "model-00060-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00060-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00061-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00061-of-00282.safetensors",
+      "bytes": 5359985464
+    },
+    {
+      "path": "model-00062-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00062-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00063-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00063-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00064-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00064-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00065-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00065-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00066-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00066-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00067-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00067-of-00282.safetensors",
+      "bytes": 5360347168
+    },
+    {
+      "path": "model-00068-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00068-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00069-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00069-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00070-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00070-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00071-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00071-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00072-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00072-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00073-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00073-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00074-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00074-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00075-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00075-of-00282.safetensors",
+      "bytes": 5359985280
+    },
+    {
+      "path": "model-00076-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00076-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00077-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00077-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00078-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00078-of-00282.safetensors",
+      "bytes": 5360346968
+    },
+    {
+      "path": "model-00079-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00079-of-00282.safetensors",
+      "bytes": 5359985256
+    },
+    {
+      "path": "model-00080-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00080-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00081-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00081-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00082-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00082-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00083-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00083-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00084-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00084-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00085-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00085-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00086-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00086-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00087-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00087-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00088-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00088-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00089-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00089-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00090-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00090-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00091-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00091-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00092-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00092-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00093-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00093-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00094-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00094-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00095-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00095-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00096-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00096-of-00282.safetensors",
+      "bytes": 5360347272
+    },
+    {
+      "path": "model-00097-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00097-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00098-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00098-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00099-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00099-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00100-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00100-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00101-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00101-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00102-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00102-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00103-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00103-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00104-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00104-of-00282.safetensors",
+      "bytes": 5360347136
+    },
+    {
+      "path": "model-00105-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00105-of-00282.safetensors",
+      "bytes": 5359985424
+    },
+    {
+      "path": "model-00106-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00106-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00107-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00107-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00108-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00108-of-00282.safetensors",
+      "bytes": 5292860584
+    },
+    {
+      "path": "model-00109-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00109-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00110-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00110-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00111-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00111-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00112-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00112-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00113-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00113-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00114-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00114-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00115-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00115-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00116-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00116-of-00282.safetensors",
+      "bytes": 5359985280
+    },
+    {
+      "path": "model-00117-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00117-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00118-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00118-of-00282.safetensors",
+      "bytes": 5360347080
+    },
+    {
+      "path": "model-00119-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00119-of-00282.safetensors",
+      "bytes": 5360346896
+    },
+    {
+      "path": "model-00120-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00120-of-00282.safetensors",
+      "bytes": 5359985448
+    },
+    {
+      "path": "model-00121-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00121-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00122-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00122-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00123-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00123-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00124-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00124-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00125-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00125-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00126-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00126-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00127-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00127-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00128-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00128-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00129-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00129-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00130-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00130-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00131-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00131-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00132-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00132-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00133-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00133-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00134-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00134-of-00282.safetensors",
+      "bytes": 5359985312
+    },
+    {
+      "path": "model-00135-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00135-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00136-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00136-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00137-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00137-of-00282.safetensors",
+      "bytes": 5360347176
+    },
+    {
+      "path": "model-00138-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00138-of-00282.safetensors",
+      "bytes": 5359985384
+    },
+    {
+      "path": "model-00139-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00139-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00140-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00140-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00141-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00141-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00142-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00142-of-00282.safetensors",
+      "bytes": 5359985440
+    },
+    {
+      "path": "model-00143-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00143-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00144-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00144-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00145-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00145-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00146-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00146-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00147-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00147-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00148-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00148-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00149-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00149-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00150-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00150-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00151-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00151-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00152-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00152-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00153-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00153-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00154-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00154-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00155-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00155-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00156-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00156-of-00282.safetensors",
+      "bytes": 5359985288
+    },
+    {
+      "path": "model-00157-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00157-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00158-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00158-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00159-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00159-of-00282.safetensors",
+      "bytes": 5360346984
+    },
+    {
+      "path": "model-00160-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00160-of-00282.safetensors",
+      "bytes": 5359985216
+    },
+    {
+      "path": "model-00161-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00161-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00162-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00162-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00163-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00163-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00164-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00164-of-00282.safetensors",
+      "bytes": 5359985424
+    },
+    {
+      "path": "model-00165-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00165-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00166-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00166-of-00282.safetensors",
+      "bytes": 5360347280
+    },
+    {
+      "path": "model-00167-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00167-of-00282.safetensors",
+      "bytes": 5192196784
+    },
+    {
+      "path": "model-00168-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00168-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00169-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00169-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00170-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00170-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00171-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00171-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00172-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00172-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00173-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00173-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00174-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00174-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00175-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00175-of-00282.safetensors",
+      "bytes": 5359985408
+    },
+    {
+      "path": "model-00176-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00176-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00177-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00177-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00178-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00178-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00179-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00179-of-00282.safetensors",
+      "bytes": 5359985472
+    },
+    {
+      "path": "model-00180-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00180-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00181-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00181-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00182-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00182-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00183-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00183-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00184-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00184-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00185-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00185-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00186-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00186-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00187-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00187-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00188-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00188-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00189-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00189-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00190-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00190-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00191-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00191-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00192-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00192-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00193-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00193-of-00282.safetensors",
+      "bytes": 5359985312
+    },
+    {
+      "path": "model-00194-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00194-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00195-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00195-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00196-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00196-of-00282.safetensors",
+      "bytes": 5360347176
+    },
+    {
+      "path": "model-00197-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00197-of-00282.safetensors",
+      "bytes": 5359985288
+    },
+    {
+      "path": "model-00198-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00198-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00199-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00199-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00200-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00200-of-00282.safetensors",
+      "bytes": 5360346896
+    },
+    {
+      "path": "model-00201-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00201-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00202-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00202-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00203-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00203-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00204-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00204-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00205-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00205-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00206-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00206-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00207-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00207-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00208-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00208-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00209-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00209-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00210-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00210-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00211-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00211-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00212-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00212-of-00282.safetensors",
+      "bytes": 5359985432
+    },
+    {
+      "path": "model-00213-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00213-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00214-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00214-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00215-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00215-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00216-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00216-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00217-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00217-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00218-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00218-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00219-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00219-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00220-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00220-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00221-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00221-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00222-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00222-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00223-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00223-of-00282.safetensors",
+      "bytes": 5359985424
+    },
+    {
+      "path": "model-00224-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00224-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00225-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00225-of-00282.safetensors",
+      "bytes": 5360347280
+    },
+    {
+      "path": "model-00226-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00226-of-00282.safetensors",
+      "bytes": 5192196784
+    },
+    {
+      "path": "model-00227-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00227-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00228-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00228-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00229-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00229-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00230-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00230-of-00282.safetensors",
+      "bytes": 5359985336
+    },
+    {
+      "path": "model-00231-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00231-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00232-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00232-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00233-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00233-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00234-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00234-of-00282.safetensors",
+      "bytes": 5359985408
+    },
+    {
+      "path": "model-00235-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00235-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00236-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00236-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00237-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00237-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00238-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00238-of-00282.safetensors",
+      "bytes": 5359985280
+    },
+    {
+      "path": "model-00239-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00239-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00240-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00240-of-00282.safetensors",
+      "bytes": 5360347016
+    },
+    {
+      "path": "model-00241-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00241-of-00282.safetensors",
+      "bytes": 5359985160
+    },
+    {
+      "path": "model-00242-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00242-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00243-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00243-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00244-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00244-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00245-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00245-of-00282.safetensors",
+      "bytes": 5359985392
+    },
+    {
+      "path": "model-00246-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00246-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00247-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00247-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00248-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00248-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00249-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00249-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00250-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00250-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00251-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00251-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00252-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00252-of-00282.safetensors",
+      "bytes": 5359985312
+    },
+    {
+      "path": "model-00253-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00253-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00254-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00254-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00255-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00255-of-00282.safetensors",
+      "bytes": 5360347176
+    },
+    {
+      "path": "model-00256-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00256-of-00282.safetensors",
+      "bytes": 5359985384
+    },
+    {
+      "path": "model-00257-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00257-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00258-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00258-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00259-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00259-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00260-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00260-of-00282.safetensors",
+      "bytes": 5359985440
+    },
+    {
+      "path": "model-00261-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00261-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00262-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00262-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00263-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00263-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00264-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00264-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00265-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00265-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00266-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00266-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00267-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00267-of-00282.safetensors",
+      "bytes": 5359985368
+    },
+    {
+      "path": "model-00268-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00268-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00269-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00269-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00270-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00270-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00271-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00271-of-00282.safetensors",
+      "bytes": 5360009568
+    },
+    {
+      "path": "model-00272-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00272-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00273-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00273-of-00282.safetensors",
+      "bytes": 5360347272
+    },
+    {
+      "path": "model-00274-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00274-of-00282.safetensors",
+      "bytes": 5359997696
+    },
+    {
+      "path": "model-00275-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00275-of-00282.safetensors",
+      "bytes": 5360347096
+    },
+    {
+      "path": "model-00276-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00276-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00277-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00277-of-00282.safetensors",
+      "bytes": 5360346992
+    },
+    {
+      "path": "model-00278-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00278-of-00282.safetensors",
+      "bytes": 5359985144
+    },
+    {
+      "path": "model-00279-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00279-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00280-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00280-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00281-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00281-of-00282.safetensors",
+      "bytes": 5360346928
+    },
+    {
+      "path": "model-00282-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/resolve/26e1bd6e011feb778d25ae34b09b07074139d92d/model-00282-of-00282.safetensors",
+      "bytes": 1962582048
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5-1"
+  ],
+  "totalBytes": 1507735819176
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-zai-org-glm-5-2",
+  "modelVersionId": "model:zai-org-glm-5-2",
+  "baseModelRepository": "zai-org/GLM-5.2",
+  "baseRevision": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+  "publisher": "Z.ai",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/zai-org/GLM-5.2",
+  "filesUrl": "https://huggingface.co/zai-org/GLM-5.2/tree/cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+  "repositoryRevision": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+  "files": [
+    {
+      "path": "model-00001-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00001-of-00282.safetensors",
+      "bytes": 5342821416
+    },
+    {
+      "path": "model-00002-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00002-of-00282.safetensors",
+      "bytes": 5351970840
+    },
+    {
+      "path": "model-00003-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00003-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00004-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00004-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00005-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00005-of-00282.safetensors",
+      "bytes": 5359985352
+    },
+    {
+      "path": "model-00006-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00006-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00007-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00007-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00008-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00008-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00009-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00009-of-00282.safetensors",
+      "bytes": 5366406944
+    },
+    {
+      "path": "model-00010-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00010-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00011-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00011-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00012-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00012-of-00282.safetensors",
+      "bytes": 5363507640
+    },
+    {
+      "path": "model-00013-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00013-of-00282.safetensors",
+      "bytes": 5363246488
+    },
+    {
+      "path": "model-00014-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00014-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00015-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00015-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00016-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00016-of-00282.safetensors",
+      "bytes": 5366406864
+    },
+    {
+      "path": "model-00017-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00017-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00018-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00018-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00019-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00019-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00020-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00020-of-00282.safetensors",
+      "bytes": 5359985408
+    },
+    {
+      "path": "model-00021-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00021-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00022-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00022-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00023-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00023-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00024-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00024-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00025-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00025-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00026-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00026-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00027-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00027-of-00282.safetensors",
+      "bytes": 5366406856
+    },
+    {
+      "path": "model-00028-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00028-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00029-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00029-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00030-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00030-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00031-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00031-of-00282.safetensors",
+      "bytes": 5366406928
+    },
+    {
+      "path": "model-00032-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00032-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00033-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00033-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00034-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00034-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00035-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00035-of-00282.safetensors",
+      "bytes": 5359985464
+    },
+    {
+      "path": "model-00036-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00036-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00037-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00037-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00038-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00038-of-00282.safetensors",
+      "bytes": 5362896104
+    },
+    {
+      "path": "model-00039-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00039-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00040-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00040-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00041-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00041-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00042-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00042-of-00282.safetensors",
+      "bytes": 5366406888
+    },
+    {
+      "path": "model-00043-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00043-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00044-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00044-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00045-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00045-of-00282.safetensors",
+      "bytes": 5360347136
+    },
+    {
+      "path": "model-00046-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00046-of-00282.safetensors",
+      "bytes": 5366406952
+    },
+    {
+      "path": "model-00047-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00047-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00048-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00048-of-00282.safetensors",
+      "bytes": 5360347280
+    },
+    {
+      "path": "model-00049-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00049-of-00282.safetensors",
+      "bytes": 5242528688
+    },
+    {
+      "path": "model-00050-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00050-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00051-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00051-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00052-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00052-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00053-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00053-of-00282.safetensors",
+      "bytes": 5366406872
+    },
+    {
+      "path": "model-00054-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00054-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00055-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00055-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00056-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00056-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00057-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00057-of-00282.safetensors",
+      "bytes": 5366406936
+    },
+    {
+      "path": "model-00058-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00058-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00059-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00059-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00060-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00060-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00061-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00061-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00062-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00062-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00063-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00063-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00064-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00064-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00065-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00065-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00066-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00066-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00067-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00067-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00068-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00068-of-00282.safetensors",
+      "bytes": 5366406928
+    },
+    {
+      "path": "model-00069-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00069-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00070-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00070-of-00282.safetensors",
+      "bytes": 5360347296
+    },
+    {
+      "path": "model-00071-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00071-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00072-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00072-of-00282.safetensors",
+      "bytes": 5366407000
+    },
+    {
+      "path": "model-00073-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00073-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00074-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00074-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00075-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00075-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00076-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00076-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00077-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00077-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00078-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00078-of-00282.safetensors",
+      "bytes": 5360346952
+    },
+    {
+      "path": "model-00079-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00079-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00080-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00080-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00081-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00081-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00082-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00082-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00083-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00083-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00084-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00084-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00085-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00085-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00086-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00086-of-00282.safetensors",
+      "bytes": 5366406840
+    },
+    {
+      "path": "model-00087-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00087-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00088-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00088-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00089-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00089-of-00282.safetensors",
+      "bytes": 5360347184
+    },
+    {
+      "path": "model-00090-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00090-of-00282.safetensors",
+      "bytes": 5366406912
+    },
+    {
+      "path": "model-00091-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00091-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00092-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00092-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00093-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00093-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00094-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00094-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00095-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00095-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00096-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00096-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00097-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00097-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00098-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00098-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00099-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00099-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00100-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00100-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00101-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00101-of-00282.safetensors",
+      "bytes": 5366406896
+    },
+    {
+      "path": "model-00102-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00102-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00103-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00103-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00104-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00104-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00105-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00105-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00106-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00106-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00107-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00107-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00108-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00108-of-00282.safetensors",
+      "bytes": 5366406824
+    },
+    {
+      "path": "model-00109-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00109-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00110-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00110-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00111-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00111-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00112-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00112-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00113-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00113-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00114-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00114-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00115-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00115-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00116-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00116-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00117-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00117-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00118-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00118-of-00282.safetensors",
+      "bytes": 5360347064
+    },
+    {
+      "path": "model-00119-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00119-of-00282.safetensors",
+      "bytes": 5349617128
+    },
+    {
+      "path": "model-00120-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00120-of-00282.safetensors",
+      "bytes": 5351970840
+    },
+    {
+      "path": "model-00121-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00121-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00122-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00122-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00123-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00123-of-00282.safetensors",
+      "bytes": 5366406880
+    },
+    {
+      "path": "model-00124-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00124-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00125-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00125-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00126-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00126-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00127-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00127-of-00282.safetensors",
+      "bytes": 5366406944
+    },
+    {
+      "path": "model-00128-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00128-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00129-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00129-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00130-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00130-of-00282.safetensors",
+      "bytes": 5364164128
+    },
+    {
+      "path": "model-00131-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00131-of-00282.safetensors",
+      "bytes": 5356168480
+    },
+    {
+      "path": "model-00132-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00132-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00133-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00133-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00134-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00134-of-00282.safetensors",
+      "bytes": 5366406864
+    },
+    {
+      "path": "model-00135-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00135-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00136-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00136-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00137-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00137-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00138-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00138-of-00282.safetensors",
+      "bytes": 5366406936
+    },
+    {
+      "path": "model-00139-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00139-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00140-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00140-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00141-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00141-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00142-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00142-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00143-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00143-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00144-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00144-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00145-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00145-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00146-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00146-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00147-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00147-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00148-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00148-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00149-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00149-of-00282.safetensors",
+      "bytes": 5366406928
+    },
+    {
+      "path": "model-00150-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00150-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00151-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00151-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00152-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00152-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00153-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00153-of-00282.safetensors",
+      "bytes": 5366407000
+    },
+    {
+      "path": "model-00154-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00154-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00155-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00155-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00156-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00156-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00157-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00157-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00158-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00158-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00159-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00159-of-00282.safetensors",
+      "bytes": 5360346960
+    },
+    {
+      "path": "model-00160-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00160-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00161-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00161-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00162-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00162-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00163-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00163-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00164-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00164-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00165-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00165-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00166-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00166-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00167-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00167-of-00282.safetensors",
+      "bytes": 5366406840
+    },
+    {
+      "path": "model-00168-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00168-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00169-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00169-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00170-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00170-of-00282.safetensors",
+      "bytes": 5360347184
+    },
+    {
+      "path": "model-00171-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00171-of-00282.safetensors",
+      "bytes": 5366406904
+    },
+    {
+      "path": "model-00172-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00172-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00173-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00173-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00174-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00174-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00175-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00175-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00176-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00176-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00177-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00177-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00178-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00178-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00179-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00179-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00180-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00180-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00181-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00181-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00182-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00182-of-00282.safetensors",
+      "bytes": 5366406896
+    },
+    {
+      "path": "model-00183-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00183-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00184-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00184-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00185-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00185-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00186-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00186-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00187-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00187-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00188-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00188-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00189-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00189-of-00282.safetensors",
+      "bytes": 5366406824
+    },
+    {
+      "path": "model-00190-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00190-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00191-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00191-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00192-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00192-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00193-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00193-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00194-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00194-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00195-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00195-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00196-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00196-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00197-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00197-of-00282.safetensors",
+      "bytes": 5366406808
+    },
+    {
+      "path": "model-00198-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00198-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00199-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00199-of-00282.safetensors",
+      "bytes": 5360347064
+    },
+    {
+      "path": "model-00200-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00200-of-00282.safetensors",
+      "bytes": 5368361544
+    },
+    {
+      "path": "model-00201-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00201-of-00282.safetensors",
+      "bytes": 5351970832
+    },
+    {
+      "path": "model-00202-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00202-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00203-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00203-of-00282.safetensors",
+      "bytes": 5360347216
+    },
+    {
+      "path": "model-00204-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00204-of-00282.safetensors",
+      "bytes": 5366406872
+    },
+    {
+      "path": "model-00205-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00205-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00206-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00206-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00207-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00207-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00208-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00208-of-00282.safetensors",
+      "bytes": 5366406944
+    },
+    {
+      "path": "model-00209-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00209-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00210-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00210-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00211-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00211-of-00282.safetensors",
+      "bytes": 5365473584
+    },
+    {
+      "path": "model-00212-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00212-of-00282.safetensors",
+      "bytes": 5354859024
+    },
+    {
+      "path": "model-00213-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00213-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00214-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00214-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00215-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00215-of-00282.safetensors",
+      "bytes": 5366406864
+    },
+    {
+      "path": "model-00216-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00216-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00217-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00217-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00218-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00218-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00219-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00219-of-00282.safetensors",
+      "bytes": 5366406936
+    },
+    {
+      "path": "model-00220-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00220-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00221-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00221-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00222-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00222-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00223-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00223-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00224-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00224-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00225-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00225-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00226-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00226-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00227-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00227-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00228-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00228-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00229-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00229-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00230-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00230-of-00282.safetensors",
+      "bytes": 5366406920
+    },
+    {
+      "path": "model-00231-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00231-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00232-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00232-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00233-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00233-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00234-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00234-of-00282.safetensors",
+      "bytes": 5366407000
+    },
+    {
+      "path": "model-00235-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00235-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00236-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00236-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00237-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00237-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00238-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00238-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00239-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00239-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00240-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00240-of-00282.safetensors",
+      "bytes": 5360346960
+    },
+    {
+      "path": "model-00241-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00241-of-00282.safetensors",
+      "bytes": 5366406808
+    },
+    {
+      "path": "model-00242-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00242-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00243-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00243-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00244-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00244-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00245-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00245-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00246-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00246-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00247-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00247-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00248-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00248-of-00282.safetensors",
+      "bytes": 5366406840
+    },
+    {
+      "path": "model-00249-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00249-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00250-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00250-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00251-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00251-of-00282.safetensors",
+      "bytes": 5360347184
+    },
+    {
+      "path": "model-00252-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00252-of-00282.safetensors",
+      "bytes": 5366406904
+    },
+    {
+      "path": "model-00253-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00253-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00254-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00254-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00255-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00255-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00256-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00256-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00257-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00257-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00258-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00258-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00259-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00259-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00260-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00260-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00261-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00261-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00262-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00262-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00263-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00263-of-00282.safetensors",
+      "bytes": 5366406896
+    },
+    {
+      "path": "model-00264-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00264-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00265-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00265-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00266-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00266-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00267-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00267-of-00282.safetensors",
+      "bytes": 5366406960
+    },
+    {
+      "path": "model-00268-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00268-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00269-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00269-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00270-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00270-of-00282.safetensors",
+      "bytes": 5366430968
+    },
+    {
+      "path": "model-00271-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00271-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00272-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00272-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00273-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00273-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00274-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00274-of-00282.safetensors",
+      "bytes": 5359997688
+    },
+    {
+      "path": "model-00275-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00275-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00276-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00276-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00277-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00277-of-00282.safetensors",
+      "bytes": 5360346928
+    },
+    {
+      "path": "model-00278-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00278-of-00282.safetensors",
+      "bytes": 5366406736
+    },
+    {
+      "path": "model-00279-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00279-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00280-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00280-of-00282.safetensors",
+      "bytes": 5360347072
+    },
+    {
+      "path": "model-00281-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00281-of-00282.safetensors",
+      "bytes": 5324447848
+    },
+    {
+      "path": "model-00282-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.2/resolve/cf457fa734ab149ffef225f80893eb38c6ff5cdc/model-00282-of-00282.safetensors",
+      "bytes": 293618224
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5-2"
+  ],
+  "totalBytes": 1506667387408
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-zai-org-glm-5-3-bf16",
+  "modelVersionId": "model:zai-org-glm-5-3-bf16",
+  "baseModelRepository": "zai-org/GLM-5.3-BF16",
+  "baseRevision": "9d2398f478cab2de883137db3a36ad2c96205e24",
+  "publisher": "Z.ai",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/zai-org/GLM-5.3-BF16",
+  "filesUrl": "https://huggingface.co/zai-org/GLM-5.3-BF16/tree/9d2398f478cab2de883137db3a36ad2c96205e24",
+  "repositoryRevision": "9d2398f478cab2de883137db3a36ad2c96205e24",
+  "files": [
+    {
+      "path": "model-00001-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00001-of-00282.safetensors",
+      "bytes": 5342821416
+    },
+    {
+      "path": "model-00002-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00002-of-00282.safetensors",
+      "bytes": 5351970840
+    },
+    {
+      "path": "model-00003-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00003-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00004-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00004-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00005-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00005-of-00282.safetensors",
+      "bytes": 5359985352
+    },
+    {
+      "path": "model-00006-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00006-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00007-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00007-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00008-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00008-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00009-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00009-of-00282.safetensors",
+      "bytes": 5366406944
+    },
+    {
+      "path": "model-00010-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00010-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00011-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00011-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00012-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00012-of-00282.safetensors",
+      "bytes": 5363507640
+    },
+    {
+      "path": "model-00013-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00013-of-00282.safetensors",
+      "bytes": 5363246488
+    },
+    {
+      "path": "model-00014-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00014-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00015-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00015-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00016-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00016-of-00282.safetensors",
+      "bytes": 5366406864
+    },
+    {
+      "path": "model-00017-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00017-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00018-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00018-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00019-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00019-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00020-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00020-of-00282.safetensors",
+      "bytes": 5359985408
+    },
+    {
+      "path": "model-00021-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00021-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00022-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00022-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00023-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00023-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00024-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00024-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00025-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00025-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00026-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00026-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00027-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00027-of-00282.safetensors",
+      "bytes": 5366406856
+    },
+    {
+      "path": "model-00028-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00028-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00029-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00029-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00030-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00030-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00031-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00031-of-00282.safetensors",
+      "bytes": 5366406928
+    },
+    {
+      "path": "model-00032-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00032-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00033-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00033-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00034-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00034-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00035-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00035-of-00282.safetensors",
+      "bytes": 5359985464
+    },
+    {
+      "path": "model-00036-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00036-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00037-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00037-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00038-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00038-of-00282.safetensors",
+      "bytes": 5362896104
+    },
+    {
+      "path": "model-00039-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00039-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00040-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00040-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00041-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00041-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00042-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00042-of-00282.safetensors",
+      "bytes": 5366406888
+    },
+    {
+      "path": "model-00043-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00043-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00044-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00044-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00045-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00045-of-00282.safetensors",
+      "bytes": 5360347136
+    },
+    {
+      "path": "model-00046-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00046-of-00282.safetensors",
+      "bytes": 5366406952
+    },
+    {
+      "path": "model-00047-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00047-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00048-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00048-of-00282.safetensors",
+      "bytes": 5360347280
+    },
+    {
+      "path": "model-00049-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00049-of-00282.safetensors",
+      "bytes": 5242528688
+    },
+    {
+      "path": "model-00050-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00050-of-00282.safetensors",
+      "bytes": 5351974184
+    },
+    {
+      "path": "model-00051-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00051-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00052-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00052-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00053-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00053-of-00282.safetensors",
+      "bytes": 5366406872
+    },
+    {
+      "path": "model-00054-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00054-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00055-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00055-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00056-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00056-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00057-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00057-of-00282.safetensors",
+      "bytes": 5366406936
+    },
+    {
+      "path": "model-00058-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00058-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00059-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00059-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00060-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00060-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00061-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00061-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00062-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00062-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00063-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00063-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00064-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00064-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00065-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00065-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00066-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00066-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00067-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00067-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00068-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00068-of-00282.safetensors",
+      "bytes": 5366406928
+    },
+    {
+      "path": "model-00069-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00069-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00070-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00070-of-00282.safetensors",
+      "bytes": 5360347296
+    },
+    {
+      "path": "model-00071-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00071-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00072-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00072-of-00282.safetensors",
+      "bytes": 5366407000
+    },
+    {
+      "path": "model-00073-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00073-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00074-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00074-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00075-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00075-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00076-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00076-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00077-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00077-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00078-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00078-of-00282.safetensors",
+      "bytes": 5360346952
+    },
+    {
+      "path": "model-00079-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00079-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00080-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00080-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00081-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00081-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00082-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00082-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00083-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00083-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00084-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00084-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00085-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00085-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00086-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00086-of-00282.safetensors",
+      "bytes": 5366406840
+    },
+    {
+      "path": "model-00087-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00087-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00088-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00088-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00089-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00089-of-00282.safetensors",
+      "bytes": 5360347184
+    },
+    {
+      "path": "model-00090-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00090-of-00282.safetensors",
+      "bytes": 5366406912
+    },
+    {
+      "path": "model-00091-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00091-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00092-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00092-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00093-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00093-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00094-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00094-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00095-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00095-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00096-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00096-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00097-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00097-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00098-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00098-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00099-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00099-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00100-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00100-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00101-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00101-of-00282.safetensors",
+      "bytes": 5366406896
+    },
+    {
+      "path": "model-00102-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00102-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00103-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00103-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00104-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00104-of-00282.safetensors",
+      "bytes": 5360347120
+    },
+    {
+      "path": "model-00105-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00105-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00106-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00106-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00107-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00107-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00108-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00108-of-00282.safetensors",
+      "bytes": 5366406824
+    },
+    {
+      "path": "model-00109-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00109-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00110-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00110-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00111-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00111-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00112-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00112-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00113-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00113-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00114-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00114-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00115-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00115-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00116-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00116-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00117-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00117-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00118-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00118-of-00282.safetensors",
+      "bytes": 5360347064
+    },
+    {
+      "path": "model-00119-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00119-of-00282.safetensors",
+      "bytes": 5349617128
+    },
+    {
+      "path": "model-00120-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00120-of-00282.safetensors",
+      "bytes": 5351970840
+    },
+    {
+      "path": "model-00121-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00121-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00122-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00122-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00123-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00123-of-00282.safetensors",
+      "bytes": 5366406880
+    },
+    {
+      "path": "model-00124-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00124-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00125-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00125-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00126-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00126-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00127-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00127-of-00282.safetensors",
+      "bytes": 5366406944
+    },
+    {
+      "path": "model-00128-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00128-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00129-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00129-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00130-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00130-of-00282.safetensors",
+      "bytes": 5364164128
+    },
+    {
+      "path": "model-00131-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00131-of-00282.safetensors",
+      "bytes": 5356168480
+    },
+    {
+      "path": "model-00132-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00132-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00133-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00133-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00134-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00134-of-00282.safetensors",
+      "bytes": 5366406864
+    },
+    {
+      "path": "model-00135-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00135-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00136-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00136-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00137-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00137-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00138-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00138-of-00282.safetensors",
+      "bytes": 5366406936
+    },
+    {
+      "path": "model-00139-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00139-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00140-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00140-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00141-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00141-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00142-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00142-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00143-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00143-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00144-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00144-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00145-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00145-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00146-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00146-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00147-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00147-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00148-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00148-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00149-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00149-of-00282.safetensors",
+      "bytes": 5366406928
+    },
+    {
+      "path": "model-00150-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00150-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00151-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00151-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00152-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00152-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00153-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00153-of-00282.safetensors",
+      "bytes": 5366407000
+    },
+    {
+      "path": "model-00154-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00154-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00155-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00155-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00156-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00156-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00157-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00157-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00158-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00158-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00159-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00159-of-00282.safetensors",
+      "bytes": 5360346960
+    },
+    {
+      "path": "model-00160-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00160-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00161-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00161-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00162-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00162-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00163-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00163-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00164-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00164-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00165-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00165-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00166-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00166-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00167-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00167-of-00282.safetensors",
+      "bytes": 5366406840
+    },
+    {
+      "path": "model-00168-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00168-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00169-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00169-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00170-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00170-of-00282.safetensors",
+      "bytes": 5360347184
+    },
+    {
+      "path": "model-00171-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00171-of-00282.safetensors",
+      "bytes": 5366406904
+    },
+    {
+      "path": "model-00172-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00172-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00173-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00173-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00174-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00174-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00175-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00175-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00176-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00176-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00177-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00177-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00178-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00178-of-00282.safetensors",
+      "bytes": 5359985304
+    },
+    {
+      "path": "model-00179-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00179-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00180-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00180-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00181-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00181-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00182-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00182-of-00282.safetensors",
+      "bytes": 5366406896
+    },
+    {
+      "path": "model-00183-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00183-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00184-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00184-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00185-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00185-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00186-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00186-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00187-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00187-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00188-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00188-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00189-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00189-of-00282.safetensors",
+      "bytes": 5366406824
+    },
+    {
+      "path": "model-00190-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00190-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00191-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00191-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00192-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00192-of-00282.safetensors",
+      "bytes": 5360347200
+    },
+    {
+      "path": "model-00193-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00193-of-00282.safetensors",
+      "bytes": 5359985360
+    },
+    {
+      "path": "model-00194-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00194-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00195-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00195-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00196-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00196-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00197-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00197-of-00282.safetensors",
+      "bytes": 5366406808
+    },
+    {
+      "path": "model-00198-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00198-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00199-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00199-of-00282.safetensors",
+      "bytes": 5360347064
+    },
+    {
+      "path": "model-00200-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00200-of-00282.safetensors",
+      "bytes": 5368361544
+    },
+    {
+      "path": "model-00201-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00201-of-00282.safetensors",
+      "bytes": 5351970832
+    },
+    {
+      "path": "model-00202-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00202-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00203-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00203-of-00282.safetensors",
+      "bytes": 5360347216
+    },
+    {
+      "path": "model-00204-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00204-of-00282.safetensors",
+      "bytes": 5366406872
+    },
+    {
+      "path": "model-00205-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00205-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00206-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00206-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00207-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00207-of-00282.safetensors",
+      "bytes": 5360347144
+    },
+    {
+      "path": "model-00208-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00208-of-00282.safetensors",
+      "bytes": 5366406944
+    },
+    {
+      "path": "model-00209-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00209-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00210-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00210-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00211-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00211-of-00282.safetensors",
+      "bytes": 5365473584
+    },
+    {
+      "path": "model-00212-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00212-of-00282.safetensors",
+      "bytes": 5354859024
+    },
+    {
+      "path": "model-00213-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00213-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00214-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00214-of-00282.safetensors",
+      "bytes": 5360347224
+    },
+    {
+      "path": "model-00215-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00215-of-00282.safetensors",
+      "bytes": 5366406864
+    },
+    {
+      "path": "model-00216-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00216-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00217-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00217-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00218-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00218-of-00282.safetensors",
+      "bytes": 5360347152
+    },
+    {
+      "path": "model-00219-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00219-of-00282.safetensors",
+      "bytes": 5366406936
+    },
+    {
+      "path": "model-00220-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00220-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00221-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00221-of-00282.safetensors",
+      "bytes": 5360347288
+    },
+    {
+      "path": "model-00222-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00222-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00223-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00223-of-00282.safetensors",
+      "bytes": 5366407008
+    },
+    {
+      "path": "model-00224-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00224-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00225-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00225-of-00282.safetensors",
+      "bytes": 5360347232
+    },
+    {
+      "path": "model-00226-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00226-of-00282.safetensors",
+      "bytes": 5359985328
+    },
+    {
+      "path": "model-00227-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00227-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00228-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00228-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00229-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00229-of-00282.safetensors",
+      "bytes": 5360347160
+    },
+    {
+      "path": "model-00230-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00230-of-00282.safetensors",
+      "bytes": 5366406920
+    },
+    {
+      "path": "model-00231-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00231-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00232-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00232-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00233-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00233-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00234-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00234-of-00282.safetensors",
+      "bytes": 5366407000
+    },
+    {
+      "path": "model-00235-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00235-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00236-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00236-of-00282.safetensors",
+      "bytes": 5360347240
+    },
+    {
+      "path": "model-00237-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00237-of-00282.safetensors",
+      "bytes": 5366406816
+    },
+    {
+      "path": "model-00238-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00238-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00239-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00239-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00240-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00240-of-00282.safetensors",
+      "bytes": 5360346960
+    },
+    {
+      "path": "model-00241-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00241-of-00282.safetensors",
+      "bytes": 5366406808
+    },
+    {
+      "path": "model-00242-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00242-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00243-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00243-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00244-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00244-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00245-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00245-of-00282.safetensors",
+      "bytes": 5359985456
+    },
+    {
+      "path": "model-00246-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00246-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00247-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00247-of-00282.safetensors",
+      "bytes": 5360347248
+    },
+    {
+      "path": "model-00248-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00248-of-00282.safetensors",
+      "bytes": 5366406840
+    },
+    {
+      "path": "model-00249-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00249-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00250-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00250-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00251-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00251-of-00282.safetensors",
+      "bytes": 5360347184
+    },
+    {
+      "path": "model-00252-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00252-of-00282.safetensors",
+      "bytes": 5366406904
+    },
+    {
+      "path": "model-00253-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00253-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00254-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00254-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00255-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00255-of-00282.safetensors",
+      "bytes": 5360347112
+    },
+    {
+      "path": "model-00256-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00256-of-00282.safetensors",
+      "bytes": 5366406968
+    },
+    {
+      "path": "model-00257-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00257-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00258-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00258-of-00282.safetensors",
+      "bytes": 5360347256
+    },
+    {
+      "path": "model-00259-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00259-of-00282.safetensors",
+      "bytes": 5359985296
+    },
+    {
+      "path": "model-00260-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00260-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00261-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00261-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00262-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00262-of-00282.safetensors",
+      "bytes": 5360347192
+    },
+    {
+      "path": "model-00263-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00263-of-00282.safetensors",
+      "bytes": 5366406896
+    },
+    {
+      "path": "model-00264-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00264-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00265-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00265-of-00282.safetensors",
+      "bytes": 5360347312
+    },
+    {
+      "path": "model-00266-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00266-of-00282.safetensors",
+      "bytes": 5360347128
+    },
+    {
+      "path": "model-00267-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00267-of-00282.safetensors",
+      "bytes": 5366406960
+    },
+    {
+      "path": "model-00268-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00268-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00269-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00269-of-00282.safetensors",
+      "bytes": 5360347264
+    },
+    {
+      "path": "model-00270-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00270-of-00282.safetensors",
+      "bytes": 5366430968
+    },
+    {
+      "path": "model-00271-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00271-of-00282.safetensors",
+      "bytes": 5360347304
+    },
+    {
+      "path": "model-00272-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00272-of-00282.safetensors",
+      "bytes": 5360347320
+    },
+    {
+      "path": "model-00273-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00273-of-00282.safetensors",
+      "bytes": 5360347208
+    },
+    {
+      "path": "model-00274-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00274-of-00282.safetensors",
+      "bytes": 5359997688
+    },
+    {
+      "path": "model-00275-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00275-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00276-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00276-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00277-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00277-of-00282.safetensors",
+      "bytes": 5360346928
+    },
+    {
+      "path": "model-00278-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00278-of-00282.safetensors",
+      "bytes": 5366406736
+    },
+    {
+      "path": "model-00279-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00279-of-00282.safetensors",
+      "bytes": 5360347104
+    },
+    {
+      "path": "model-00280-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00280-of-00282.safetensors",
+      "bytes": 5360347072
+    },
+    {
+      "path": "model-00281-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00281-of-00282.safetensors",
+      "bytes": 5324447848
+    },
+    {
+      "path": "model-00282-of-00282.safetensors",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/resolve/9d2398f478cab2de883137db3a36ad2c96205e24/model-00282-of-00282.safetensors",
+      "bytes": 293618224
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5-3-bf16"
+  ],
+  "totalBytes": 1506667387408,
+  "precision": "bf16"
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-moonshotai-kimi-k2-6",
+  "modelVersionId": "model:moonshotai-kimi-k2-6",
+  "baseModelRepository": "moonshotai/Kimi-K2.6",
+  "baseRevision": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+  "publisher": "Moonshot AI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/moonshotai/Kimi-K2.6",
+  "filesUrl": "https://huggingface.co/moonshotai/Kimi-K2.6/tree/7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+  "repositoryRevision": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+  "files": [
+    {
+      "path": "model-00001-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00001-of-000064.safetensors",
+      "bytes": 995001888
+    },
+    {
+      "path": "model-00002-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00002-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00003-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00003-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00004-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00004-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00005-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00005-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00006-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00006-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00007-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00007-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00008-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00008-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00009-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00009-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00010-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00010-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00011-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00011-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00012-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00012-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00013-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00013-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00014-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00014-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00015-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00015-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00016-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00016-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00017-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00017-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00018-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00018-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00019-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00019-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00020-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00020-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00021-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00021-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00022-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00022-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00023-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00023-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00024-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00024-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00025-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00025-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00026-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00026-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00027-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00027-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00028-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00028-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00029-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00029-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00030-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00030-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00031-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00031-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00032-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00032-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00033-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00033-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00034-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00034-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00035-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00035-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00036-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00036-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00037-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00037-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00038-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00038-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00039-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00039-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00040-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00040-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00041-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00041-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00042-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00042-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00043-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00043-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00044-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00044-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00045-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00045-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00046-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00046-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00047-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00047-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00048-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00048-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00049-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00049-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00050-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00050-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00051-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00051-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00052-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00052-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00053-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00053-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00054-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00054-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00055-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00055-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00056-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00056-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00057-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00057-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00058-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00058-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00059-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00059-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00060-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00060-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00061-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00061-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00062-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00062-of-000064.safetensors",
+      "bytes": 4697635160
+    },
+    {
+      "path": "model-00063-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00063-of-000064.safetensors",
+      "bytes": 108556344
+    },
+    {
+      "path": "model-00064-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6/resolve/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/model-00064-of-000064.safetensors",
+      "bytes": 833769904
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-moonshotai-kimi-k2-6"
+  ],
+  "totalBytes": 595177988208
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-moonshotai-kimi-k2-7-code",
+  "modelVersionId": "model:moonshotai-kimi-k2-7-code",
+  "baseModelRepository": "moonshotai/Kimi-K2.7-Code",
+  "baseRevision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "publisher": "Moonshot AI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+  "filesUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/tree/74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "repositoryRevision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "files": [
+    {
+      "path": "model-00001-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00001-of-000064.safetensors",
+      "bytes": 995001888
+    },
+    {
+      "path": "model-00002-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00002-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00003-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00003-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00004-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00004-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00005-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00005-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00006-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00006-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00007-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00007-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00008-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00008-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00009-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00009-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00010-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00010-of-000064.safetensors",
+      "bytes": 9809047464
+    },
+    {
+      "path": "model-00011-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00011-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00012-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00012-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00013-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00013-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00014-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00014-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00015-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00015-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00016-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00016-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00017-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00017-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00018-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00018-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00019-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00019-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00020-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00020-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00021-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00021-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00022-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00022-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00023-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00023-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00024-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00024-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00025-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00025-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00026-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00026-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00027-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00027-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00028-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00028-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00029-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00029-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00030-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00030-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00031-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00031-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00032-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00032-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00033-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00033-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00034-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00034-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00035-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00035-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00036-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00036-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00037-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00037-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00038-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00038-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00039-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00039-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00040-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00040-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00041-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00041-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00042-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00042-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00043-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00043-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00044-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00044-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00045-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00045-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00046-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00046-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00047-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00047-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00048-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00048-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00049-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00049-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00050-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00050-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00051-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00051-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00052-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00052-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00053-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00053-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00054-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00054-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00055-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00055-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00056-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00056-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00057-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00057-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00058-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00058-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00059-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00059-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00060-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00060-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00061-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00061-of-000064.safetensors",
+      "bytes": 9809050936
+    },
+    {
+      "path": "model-00062-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00062-of-000064.safetensors",
+      "bytes": 4697635160
+    },
+    {
+      "path": "model-00063-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00063-of-000064.safetensors",
+      "bytes": 108556344
+    },
+    {
+      "path": "model-00064-of-000064.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/resolve/74797c9c62378b951a1f6fcf5c4631024e9b8bef/model-00064-of-000064.safetensors",
+      "bytes": 833769904
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-moonshotai-kimi-k2-7-code"
+  ],
+  "totalBytes": 595177988208
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-moonshotai-kimi-k3",
+  "modelVersionId": "model:moonshotai-kimi-k3",
+  "baseModelRepository": "moonshotai/Kimi-K3",
+  "baseRevision": "f831ab66814297da540d832a5235f8e904f29d06",
+  "publisher": "Moonshot AI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/moonshotai/Kimi-K3",
+  "filesUrl": "https://huggingface.co/moonshotai/Kimi-K3/tree/f831ab66814297da540d832a5235f8e904f29d06",
+  "repositoryRevision": "f831ab66814297da540d832a5235f8e904f29d06",
+  "files": [
+    {
+      "path": "model-00001-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00001-of-000096.safetensors",
+      "bytes": 2341216112
+    },
+    {
+      "path": "model-00002-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00002-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00003-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00003-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00004-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00004-of-000096.safetensors",
+      "bytes": 16567501776
+    },
+    {
+      "path": "model-00005-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00005-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00006-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00006-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00007-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00007-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00008-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00008-of-000096.safetensors",
+      "bytes": 16567501776
+    },
+    {
+      "path": "model-00009-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00009-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00010-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00010-of-000096.safetensors",
+      "bytes": 16990911504
+    },
+    {
+      "path": "model-00011-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00011-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00012-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00012-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00013-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00013-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00014-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00014-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00015-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00015-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00016-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00016-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00017-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00017-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00018-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00018-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00019-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00019-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00020-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00020-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00021-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00021-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00022-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00022-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00023-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00023-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00024-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00024-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00025-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00025-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00026-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00026-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00027-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00027-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00028-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00028-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00029-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00029-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00030-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00030-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00031-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00031-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00032-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00032-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00033-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00033-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00034-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00034-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00035-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00035-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00036-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00036-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00037-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00037-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00038-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00038-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00039-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00039-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00040-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00040-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00041-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00041-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00042-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00042-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00043-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00043-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00044-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00044-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00045-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00045-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00046-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00046-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00047-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00047-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00048-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00048-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00049-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00049-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00050-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00050-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00051-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00051-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00052-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00052-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00053-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00053-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00054-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00054-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00055-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00055-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00056-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00056-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00057-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00057-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00058-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00058-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00059-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00059-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00060-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00060-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00061-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00061-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00062-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00062-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00063-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00063-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00064-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00064-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00065-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00065-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00066-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00066-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00067-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00067-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00068-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00068-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00069-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00069-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00070-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00070-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00071-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00071-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00072-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00072-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00073-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00073-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00074-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00074-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00075-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00075-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00076-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00076-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00077-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00077-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00078-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00078-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00079-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00079-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00080-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00080-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00081-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00081-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00082-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00082-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00083-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00083-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00084-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00084-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00085-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00085-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00086-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00086-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00087-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00087-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00088-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00088-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00089-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00089-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00090-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00090-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00091-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00091-of-000096.safetensors",
+      "bytes": 16990916912
+    },
+    {
+      "path": "model-00092-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00092-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00093-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00093-of-000096.safetensors",
+      "bytes": 16567507176
+    },
+    {
+      "path": "model-00094-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00094-of-000096.safetensors",
+      "bytes": 4697664072
+    },
+    {
+      "path": "model-00095-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00095-of-000096.safetensors",
+      "bytes": 92289328
+    },
+    {
+      "path": "model-00096-of-000096.safetensors",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model-00096-of-000096.safetensors",
+      "bytes": 802448352
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-moonshotai-kimi-k3"
+  ],
+  "totalBytes": 1560936091448
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-qwen-qwen3-vl-embedding-2b",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-2b",
+  "baseModelRepository": "Qwen/Qwen3-VL-Embedding-2B",
+  "baseRevision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/tree/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+  "repositoryRevision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/resolve/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda/model.safetensors",
+      "bytes": 4255140312
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+  ],
+  "totalBytes": 4255140312
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-qwen-qwen3-vl-embedding-8b",
+  "modelVersionId": "model:qwen-qwen3-vl-embedding-8b",
+  "baseModelRepository": "Qwen/Qwen3-VL-Embedding-8B",
+  "baseRevision": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/tree/2c4565515e0f265c6511776e7193b22c0968ddc7",
+  "repositoryRevision": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/resolve/2c4565515e0f265c6511776e7193b22c0968ddc7/model-00001-of-00004.safetensors",
+      "bytes": 4998056552
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/resolve/2c4565515e0f265c6511776e7193b22c0968ddc7/model-00002-of-00004.safetensors",
+      "bytes": 4915962464
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/resolve/2c4565515e0f265c6511776e7193b22c0968ddc7/model-00003-of-00004.safetensors",
+      "bytes": 4915962496
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/resolve/2c4565515e0f265c6511776e7193b22c0968ddc7/model-00004-of-00004.safetensors",
+      "bytes": 1459698112
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+  ],
+  "totalBytes": 16289679624
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-qwen-qwen3-vl-reranker-2b",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-2b",
+  "baseModelRepository": "Qwen/Qwen3-VL-Reranker-2B",
+  "baseRevision": "4bd860ac4f15ad1897a214615cccc700f8f71818",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B/tree/4bd860ac4f15ad1897a214615cccc700f8f71818",
+  "repositoryRevision": "4bd860ac4f15ad1897a214615cccc700f8f71818",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B/resolve/4bd860ac4f15ad1897a214615cccc700f8f71818/model.safetensors",
+      "bytes": 4255140312
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+  ],
+  "totalBytes": 4255140312
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-qwen-qwen3-vl-reranker-8b",
+  "modelVersionId": "model:qwen-qwen3-vl-reranker-8b",
+  "baseModelRepository": "Qwen/Qwen3-VL-Reranker-8B",
+  "baseRevision": "b212dc8c91a8164aef1ea2de9c1a867611e75c04",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "checkpoint",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/tree/b212dc8c91a8164aef1ea2de9c1a867611e75c04",
+  "repositoryRevision": "b212dc8c91a8164aef1ea2de9c1a867611e75c04",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/resolve/b212dc8c91a8164aef1ea2de9c1a867611e75c04/model-00001-of-00004.safetensors",
+      "bytes": 4998056552
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/resolve/b212dc8c91a8164aef1ea2de9c1a867611e75c04/model-00002-of-00004.safetensors",
+      "bytes": 4915962464
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/resolve/b212dc8c91a8164aef1ea2de9c1a867611e75c04/model-00003-of-00004.safetensors",
+      "bytes": 4915962496
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/resolve/b212dc8c91a8164aef1ea2de9c1a867611e75c04/model-00004-of-00004.safetensors",
+      "bytes": 2704357976
+    }
+  ],
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+  ],
+  "totalBytes": 17534339488
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-mlx-qwen3-1.7b-4bit",
+  "modelVersionId": "model:qwen-qwen3-1-7b",
+  "baseModelRepository": "Qwen/Qwen3-1.7B",
+  "publisher": "mlx-community",
+  "authority": "third-party",
+  "format": "safetensors",
+  "variant": "MLX 4-bit",
+  "precision": "4-bit",
+  "repositoryUrl": "https://huggingface.co/mlx-community/Qwen3-1.7B-4bit",
+  "filesUrl": "https://huggingface.co/mlx-community/Qwen3-1.7B-4bit/tree/3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+  "repositoryRevision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 968080210,
+      "url": "https://huggingface.co/mlx-community/Qwen3-1.7B-4bit/resolve/3b1b1768f8f8cf8351c712464f906e86c2b8269e/model.safetensors"
+    }
+  ],
+  "totalBytes": 968080210,
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-mlx-qwen3-1.7b-4bit"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:update0919-mlx-qwen3-4b-instruct-2507-4bit",
+  "modelVersionId": "model:qwen-qwen3-4b-instruct-2507",
+  "baseModelRepository": "Qwen/Qwen3-4B-Instruct-2507",
+  "publisher": "mlx-community",
+  "authority": "third-party",
+  "format": "safetensors",
+  "variant": "MLX 4-bit",
+  "precision": "4-bit",
+  "repositoryUrl": "https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "filesUrl": "https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit/tree/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "repositoryRevision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 2263022417,
+      "url": "https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit/resolve/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b/model.safetensors"
+    }
+  ],
+  "totalBytes": 2263022417,
+  "verifiedOn": "2026-09-19",
+  "evidenceIds": [
+    "evidence:update0919-mlx-qwen3-4b-instruct-2507-4bit"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:qwen-qwen3-6-27b-official",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "baseModelRepository": "Qwen/Qwen3.6-27B",
+  "baseRevision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3.6-27B/tree/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "repositoryRevision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "files": [
+    {
+      "path": "model-00001-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00001-of-00015.safetensors",
+      "bytes": 3968861352
+    },
+    {
+      "path": "model-00002-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00002-of-00015.safetensors",
+      "bytes": 3921677136
+    },
+    {
+      "path": "model-00003-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00003-of-00015.safetensors",
+      "bytes": 3921677128
+    },
+    {
+      "path": "model-00004-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00004-of-00015.safetensors",
+      "bytes": 3921677128
+    },
+    {
+      "path": "model-00005-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00005-of-00015.safetensors",
+      "bytes": 3921677112
+    },
+    {
+      "path": "model-00006-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00006-of-00015.safetensors",
+      "bytes": 3900710888
+    },
+    {
+      "path": "model-00007-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00007-of-00015.safetensors",
+      "bytes": 3994391976
+    },
+    {
+      "path": "model-00008-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00008-of-00015.safetensors",
+      "bytes": 3879219776
+    },
+    {
+      "path": "model-00009-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00009-of-00015.safetensors",
+      "bytes": 3921677136
+    },
+    {
+      "path": "model-00010-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00010-of-00015.safetensors",
+      "bytes": 3921677128
+    },
+    {
+      "path": "model-00011-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00011-of-00015.safetensors",
+      "bytes": 3921677136
+    },
+    {
+      "path": "model-00012-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00012-of-00015.safetensors",
+      "bytes": 3921677136
+    },
+    {
+      "path": "model-00013-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00013-of-00015.safetensors",
+      "bytes": 3995081848
+    },
+    {
+      "path": "model-00014-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00014-of-00015.safetensors",
+      "bytes": 3942652952
+    },
+    {
+      "path": "model-00015-of-00015.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B/resolve/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/model-00015-of-00015.safetensors",
+      "bytes": 508670568
+    }
+  ],
+  "totalBytes": 55563006400,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:qwen-qwen3-6-35b-a3b-official",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "baseModelRepository": "Qwen/Qwen3.6-35B-A3B",
+  "baseRevision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "repositoryRevision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "files": [
+    {
+      "path": "model-00001-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00001-of-00026.safetensors",
+      "bytes": 3996199712
+    },
+    {
+      "path": "model-00002-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00002-of-00026.safetensors",
+      "bytes": 1284907696
+    },
+    {
+      "path": "model-00003-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00003-of-00026.safetensors",
+      "bytes": 3357898360
+    },
+    {
+      "path": "model-00004-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00004-of-00026.safetensors",
+      "bytes": 3370808712
+    },
+    {
+      "path": "model-00005-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00005-of-00026.safetensors",
+      "bytes": 3357898360
+    },
+    {
+      "path": "model-00006-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00006-of-00026.safetensors",
+      "bytes": 3959424904
+    },
+    {
+      "path": "model-00007-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00007-of-00026.safetensors",
+      "bytes": 1096788232
+    },
+    {
+      "path": "model-00008-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00008-of-00026.safetensors",
+      "bytes": 3946842008
+    },
+    {
+      "path": "model-00009-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00009-of-00026.safetensors",
+      "bytes": 1096460848
+    },
+    {
+      "path": "model-00010-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00010-of-00026.safetensors",
+      "bytes": 3946841992
+    },
+    {
+      "path": "model-00011-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00011-of-00026.safetensors",
+      "bytes": 1096460752
+    },
+    {
+      "path": "model-00012-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00012-of-00026.safetensors",
+      "bytes": 3409971080
+    },
+    {
+      "path": "model-00013-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00013-of-00026.safetensors",
+      "bytes": 1633331664
+    },
+    {
+      "path": "model-00014-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00014-of-00026.safetensors",
+      "bytes": 3422553872
+    },
+    {
+      "path": "model-00015-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00015-of-00026.safetensors",
+      "bytes": 1633659224
+    },
+    {
+      "path": "model-00016-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00016-of-00026.safetensors",
+      "bytes": 3946842136
+    },
+    {
+      "path": "model-00017-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00017-of-00026.safetensors",
+      "bytes": 1096460608
+    },
+    {
+      "path": "model-00018-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00018-of-00026.safetensors",
+      "bytes": 3946841992
+    },
+    {
+      "path": "model-00019-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00019-of-00026.safetensors",
+      "bytes": 1096460808
+    },
+    {
+      "path": "model-00020-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00020-of-00026.safetensors",
+      "bytes": 3409971072
+    },
+    {
+      "path": "model-00021-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00021-of-00026.safetensors",
+      "bytes": 1633331744
+    },
+    {
+      "path": "model-00022-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00022-of-00026.safetensors",
+      "bytes": 3370808752
+    },
+    {
+      "path": "model-00023-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00023-of-00026.safetensors",
+      "bytes": 3357898392
+    },
+    {
+      "path": "model-00024-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00024-of-00026.safetensors",
+      "bytes": 3370808752
+    },
+    {
+      "path": "model-00025-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00025-of-00026.safetensors",
+      "bytes": 3832888256
+    },
+    {
+      "path": "model-00026-of-00026.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model-00026-of-00026.safetensors",
+      "bytes": 2231416848
+    }
+  ],
+  "totalBytes": 71903776776,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:tencent-hy-mt1-5-1-8b-official",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseModelRepository": "tencent/HY-MT1.5-1.8B",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "Tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B/tree/dbad03788f49709801014c95d481a514c272ca52",
+  "repositoryRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B/resolve/dbad03788f49709801014c95d481a514c272ca52/model.safetensors",
+      "bytes": 4077072784
+    }
+  ],
+  "totalBytes": 4077072784,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:tencent-hy-mt1-5-7b-official",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "baseModelRepository": "tencent/HY-MT1.5-7B",
+  "baseRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "publisher": "Tencent",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-7B",
+  "filesUrl": "https://huggingface.co/tencent/HY-MT1.5-7B/tree/397085d46158ad0b437ffd74228499e8c2a35c76",
+  "repositoryRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B/resolve/397085d46158ad0b437ffd74228499e8c2a35c76/model-00001-of-00004.safetensors",
+      "bytes": 4975949856
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B/resolve/397085d46158ad0b437ffd74228499e8c2a35c76/model-00002-of-00004.safetensors",
+      "bytes": 4934107400
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B/resolve/397085d46158ad0b437ffd74228499e8c2a35c76/model-00003-of-00004.safetensors",
+      "bytes": 4890769816
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/tencent/HY-MT1.5-7B/resolve/397085d46158ad0b437ffd74228499e8c2a35c76/model-00004-of-00004.safetensors",
+      "bytes": 1258295152
+    }
+  ],
+  "totalBytes": 16059122224,
+  "verifiedOn": "2026-09-20",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-7b"
+  ]
+});

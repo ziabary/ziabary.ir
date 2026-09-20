@@ -1228,7 +1228,7 @@
   "LlmPublishedEvaluations.1204": "Fecha de publicación del informe",
   "LlmPublishedEvaluations.1205": "Fecha de consulta",
   "LlmResearchView.1206": "Ruta de memoria",
-  "LlmResearchView.1207": "Presupuesto de GPU para pesos y caché KV",
+  "LlmResearchView.1207": "Estimación de memoria",
   "LlmResearchView.1208": "Tamaño de pesos de todos los modelos",
   "LlmResearchView.1210": "Ejecución por capas · AirLLM",
   "LlmResearchView.1211": "Memoria declarada por la entidad editora · GPT-OSS",

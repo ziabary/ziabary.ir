@@ -1,0 +1,2558 @@
+[
+  {
+    "id": "task",
+    "step": 0,
+    "title": [
+      "می‌خواهید کدام کار بهتر انجام شود؟",
+      "Which task do you want to improve?",
+      "¿Qué tarea quiere mejorar?"
+    ],
+    "why": [
+      "اول بگویید قرار است چه کاری را به مدل بسپارید؛ مدلی که برای ترجمه خوب است، لزوماً برای کدنویسی هم انتخاب خوبی نیست.",
+      "The task determines which model capabilities to test.",
+      "La tarea determina qué capacidades evaluar."
+    ],
+    "help": [
+      "مثلاً می‌خواهید نامه‌ها را خلاصه کنید، پاسخ پرسش‌ها را در آیین‌نامه پیدا کنید یا برای اصلاح کد کمک بگیرید. کاری را انتخاب کنید که فعلاً برایتان مهم‌تر است.",
+      "Summarizing a letter, finding a policy clause and fixing code are different tasks.",
+      "Resumir una carta, encontrar una cláusula y corregir código son tareas distintas."
+    ],
+    "article": "size",
+    "options": [
+      {
+        "value": "writing",
+        "label": [
+          "نوشتن، بازنویسی، ترجمه و خلاصه",
+          "Writing, translation and summaries",
+          "Redacción, traducción y resúmenes"
+        ]
+      },
+      {
+        "value": "extraction",
+        "label": [
+          "استخراج فیلد یا دسته‌بندی",
+          "Extracting fields or classifying",
+          "Extraer campos o clasificar"
+        ]
+      },
+      {
+        "value": "documents",
+        "label": [
+          "پاسخ با استناد به اسناد سازمان",
+          "Answers grounded in organizational documents",
+          "Respuestas basadas en documentos"
+        ]
+      },
+      {
+        "value": "coding",
+        "label": [
+          "کمک به برنامه‌نویسی",
+          "Coding assistance",
+          "Ayuda para programar"
+        ]
+      },
+      {
+        "value": "operations",
+        "label": [
+          "خواندن اطلاعات یا انجام کار در سامانه‌ها",
+          "Reading or acting in business systems",
+          "Consultar o actuar en sistemas"
+        ]
+      },
+      {
+        "value": "general",
+        "label": [
+          "گفت‌وگو و پرسش عمومی",
+          "General conversation",
+          "Conversación general"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "writingTask",
+    "step": 0,
+    "when": "writing",
+    "title": [
+      "کار اصلی‌تان با متن چیست؟",
+      "What is the main text task?",
+      "¿Cuál es la tarea principal con el texto?"
+    ],
+    "why": [
+      "بیشتر به ترجمه نیاز دارید، خلاصه‌کردن متن یا نوشتن و ویرایش آن؟",
+      "Translation, summaries and writing need different acceptance tests. Choose the main task.",
+      "Traducción, resumen y redacción necesitan pruebas distintas. Elija la tarea principal."
+    ],
+    "help": [
+      "مثلاً اگر گزارش انگلیسی می‌گیرید و نسخهٔ فارسی می‌خواهید، ترجمه را انتخاب کنید. اگر فقط نکات مهم گزارش را لازم دارید، خلاصه‌سازی مناسب‌تر است.",
+      "Translation, summaries and writing need different acceptance tests. Choose the main task.",
+      "Traducción, resumen y redacción necesitan pruebas distintas. Elija la tarea principal."
+    ],
+    "kind": "select",
+    "options": [
+      {
+        "value": "translation",
+        "label": [
+          "ترجمه",
+          "Translation",
+          "Traducción"
+        ]
+      },
+      {
+        "value": "summary",
+        "label": [
+          "خلاصه‌سازی",
+          "Summarization",
+          "Resumen"
+        ]
+      },
+      {
+        "value": "writing",
+        "label": [
+          "نگارش متن تازه",
+          "Writing new text",
+          "Redacción nueva"
+        ]
+      },
+      {
+        "value": "rewriting",
+        "label": [
+          "بازنویسی و ویرایش",
+          "Rewriting and editing",
+          "Reescritura y edición"
+        ]
+      }
+    ],
+    "unit": null,
+    "article": "size"
+  },
+  {
+    "id": "sourceLanguage",
+    "step": 0,
+    "title": [
+      "زبان ورودی و منابع چیست؟",
+      "What language are the inputs and sources in?",
+      "¿En qué idioma están las entradas y fuentes?"
+    ],
+    "why": [
+      "مدل باید زبان متن‌هایی را که به آن می‌دهید خوب بفهمد؛ حتی اگر قرار باشد به زبان دیگری جواب بدهد.",
+      "Your working language is independent of this page’s language.",
+      "El idioma de trabajo es independiente del de esta página."
+    ],
+    "help": [
+      "اگر سؤال‌ها فارسی‌اند ولی اسناد انگلیسی، گزینهٔ «چندزبانه» را انتخاب کنید. زبان پاسخ را در پرسش بعدی می‌پرسیم.",
+      "A Persian question may use an English document; specify each separately.",
+      "Una pregunta en persa puede usar documentos en inglés; indique ambos."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "fa",
+        "label": [
+          "فارسی",
+          "Persian",
+          "Persa"
+        ]
+      },
+      {
+        "value": "en",
+        "label": [
+          "انگلیسی",
+          "English",
+          "Inglés"
+        ]
+      },
+      {
+        "value": "es",
+        "label": [
+          "اسپانیایی",
+          "Spanish",
+          "Español"
+        ]
+      },
+      {
+        "value": "mixed",
+        "label": [
+          "فارسی با اصطلاحات انگلیسی",
+          "Persian with English terminology",
+          "Persa con términos ingleses"
+        ]
+      },
+      {
+        "value": "multi",
+        "label": [
+          "چندزبانه",
+          "Multilingual",
+          "Multilingüe"
+        ]
+      },
+      {
+        "value": "other",
+        "label": [
+          "زبان دیگر",
+          "Another language",
+          "Otro idioma"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "outputLanguage",
+    "step": 0,
+    "title": [
+      "پاسخ به چه زبانی باشد؟",
+      "What language should the answer use?",
+      "¿En qué idioma debe responder?"
+    ],
+    "why": [
+      "ممکن است مدل متن انگلیسی را خوب بفهمد، اما در نوشتن فارسی ضعیف‌تر باشد. زبان پاسخ را جدا انتخاب کنید.",
+      "Your working language is independent of this page’s language.",
+      "El idioma de trabajo es independiente del de esta página."
+    ],
+    "help": [
+      "ممکن است یک سند انگلیسی بدهید و خلاصهٔ فارسی بخواهید. اینجا زبان خلاصه را انتخاب کنید.",
+      "A Persian question may use an English document; specify each separately.",
+      "Una pregunta en persa puede usar documentos en inglés; indique ambos."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "fa",
+        "label": [
+          "فارسی",
+          "Persian",
+          "Persa"
+        ]
+      },
+      {
+        "value": "en",
+        "label": [
+          "انگلیسی",
+          "English",
+          "Inglés"
+        ]
+      },
+      {
+        "value": "es",
+        "label": [
+          "اسپانیایی",
+          "Spanish",
+          "Español"
+        ]
+      },
+      {
+        "value": "mixed",
+        "label": [
+          "فارسی با اصطلاحات انگلیسی",
+          "Persian with English terminology",
+          "Persa con términos ingleses"
+        ]
+      },
+      {
+        "value": "multi",
+        "label": [
+          "چندزبانه",
+          "Multilingual",
+          "Multilingüe"
+        ]
+      },
+      {
+        "value": "other",
+        "label": [
+          "زبان دیگر",
+          "Another language",
+          "Otro idioma"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "sources",
+    "step": 1,
+    "title": [
+      "اطلاعات لازم برای پاسخ از کجا می‌آید؟",
+      "Where does the information come from?",
+      "¿De dónde procede la información?"
+    ],
+    "why": [
+      "گاهی همان متن سؤال کافی است؛ گاهی هم مدل باید به اسناد یا اطلاعات روز سازمان دسترسی داشته باشد.",
+      "The source determines how information reaches the model.",
+      "La fuente determina cómo llega la información al modelo."
+    ],
+    "help": [
+      "برای خلاصه‌کردن یک نامه، خود نامه کافی است. اما برای گفتن ماندهٔ سفارش امروز، باید اطلاعات را از سامانهٔ سفارش‌ها گرفت. می‌توانید چند گزینه را انتخاب کنید.",
+      "Today’s order balance needs a live connection; a summary may need only the letter.",
+      "El saldo de hoy necesita conexión en vivo; un resumen puede necesitar solo la carta."
+    ],
+    "article": "adaptation",
+    "options": [
+      {
+        "value": "provided",
+        "label": [
+          "متن یا فایل همین درخواست",
+          "Text or file in this request",
+          "Texto o archivo de la solicitud"
+        ]
+      },
+      {
+        "value": "archive",
+        "label": [
+          "اسناد، دانش‌نامه یا کد سازمان",
+          "Organizational documents or code",
+          "Documentos o código de la organización"
+        ]
+      },
+      {
+        "value": "live",
+        "label": [
+          "CRM، پایگاه داده یا سامانهٔ زنده",
+          "CRM, database or live system",
+          "CRM, base de datos o sistema activo"
+        ]
+      },
+      {
+        "value": "web",
+        "label": [
+          "وب و منابع عمومی",
+          "Web and public sources",
+          "Web y fuentes públicas"
+        ]
+      },
+      {
+        "value": "general",
+        "label": [
+          "اطلاعات عمومی مدل",
+          "General model knowledge",
+          "Conocimiento general del modelo"
+        ]
+      }
+    ],
+    "kind": "multi",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "format",
+    "step": 1,
+    "title": [
+      "فایل‌ها چه قالبی دارند؟",
+      "What formats do the files use?",
+      "¿Qué formatos tienen los archivos?"
+    ],
+    "why": [
+      "بعضی PDFها متن قابل کپی دارند و بعضی فقط عکس صفحات‌اند؛ خواندن دستهٔ دوم به ابزار دیگری هم نیاز دارد.",
+      "Text PDFs and page images need different reading paths.",
+      "Un PDF de texto y una imagen requieren procesos distintos."
+    ],
+    "help": [
+      "یک فایل نمونه را باز کنید و ببینید می‌توانید متنش را انتخاب و کپی کنید یا نه. اگر فقط عکس صفحه است، احتمالاً باید ابتدا با OCR به متن تبدیل شود.",
+      "If text cannot be selected and copied, text extraction or OCR may be needed.",
+      "Si no puede seleccionar y copiar texto, quizá necesite extracción u OCR."
+    ],
+    "article": "rag",
+    "options": [
+      {
+        "value": "text",
+        "label": [
+          "متن قابل جست‌وجو",
+          "Searchable text",
+          "Texto buscable"
+        ]
+      },
+      {
+        "value": "scan",
+        "label": [
+          "اسکن یا عکس صفحات",
+          "Scans or page images",
+          "Escaneos o imágenes"
+        ]
+      },
+      {
+        "value": "table",
+        "label": [
+          "جدول یا فرم",
+          "Tables or forms",
+          "Tablas o formularios"
+        ]
+      },
+      {
+        "value": "code",
+        "label": [
+          "کد",
+          "Code",
+          "Código"
+        ]
+      },
+      {
+        "value": "media",
+        "label": [
+          "تصویر یا صوت",
+          "Images or audio",
+          "Imágenes o audio"
+        ]
+      },
+      {
+        "value": "mixed",
+        "label": [
+          "ترکیبی",
+          "Mixed formats",
+          "Varios formatos"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "files"
+  },
+  {
+    "id": "archiveSize",
+    "step": 1,
+    "title": [
+      "حدوداً چند منبع دارید؟",
+      "Approximately how many sources?",
+      "¿Cuántas fuentes tiene aproximadamente?"
+    ],
+    "why": [
+      "تعداد منابع کمک می‌کند بدانیم آماده‌کردن و به‌روز نگه‌داشتن جست‌وجو چقدر کار می‌برد.",
+      "Archive size affects indexing, not model size directly.",
+      "El volumen afecta a la indexación, no directamente al tamaño del modelo."
+    ],
+    "help": [
+      "تعداد تقریبی فایل‌ها را بنویسید. لازم نیست همهٔ آرشیو در هر پرسش به مدل داده شود؛ معمولاً چند بخش مرتبط کافی است.",
+      "Enter a file count; ten thousand files are not necessarily one request’s input.",
+      "Indique los archivos; diez mil archivos no son necesariamente la entrada de cada consulta."
+    ],
+    "article": "rag",
+    "options": [],
+    "kind": "number",
+    "unit": "files",
+    "when": "archive"
+  },
+  {
+    "id": "freshness",
+    "step": 1,
+    "title": [
+      "منابع چند وقت یک‌بار تغییر می‌کنند؟",
+      "How often do sources change?",
+      "¿Con qué frecuencia cambian las fuentes?"
+    ],
+    "why": [
+      "اگر اطلاعات زود تغییر می‌کنند، دستیار هم باید بتواند پاسخ را از آخرین نسخه پیدا کند.",
+      "Index updates need to follow source changes.",
+      "La actualización del índice debe seguir los cambios."
+    ],
+    "help": [
+      "فهرست قیمت ممکن است هر روز عوض شود، ولی یک آیین‌نامه ماه‌ها ثابت بماند. نزدیک‌ترین گزینه به منابع خودتان را انتخاب کنید.",
+      "Daily prices differ from an annually updated policy.",
+      "Los precios diarios no se actualizan como una norma anual."
+    ],
+    "article": "adaptation",
+    "options": [
+      {
+        "value": "daily",
+        "label": [
+          "روزانه",
+          "Daily",
+          "A diario"
+        ]
+      },
+      {
+        "value": "weekly",
+        "label": [
+          "هفتگی",
+          "Weekly",
+          "Semanalmente"
+        ]
+      },
+      {
+        "value": "rare",
+        "label": [
+          "گاه‌به‌گاه",
+          "Occasionally",
+          "Ocasionalmente"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "archive"
+  },
+  {
+    "id": "access",
+    "step": 1,
+    "title": [
+      "همه اجازه دارند همهٔ منابع را ببینند؟",
+      "May everyone see all sources?",
+      "¿Todos pueden ver todas las fuentes?"
+    ],
+    "why": [
+      "دستیار نباید از سندی برای پاسخ استفاده کند که کاربر اجازهٔ دیدنش را ندارد.",
+      "Document access permissions must also apply during retrieval.",
+      "La recuperación debe respetar los permisos del documento."
+    ],
+    "help": [
+      "مثلاً ممکن است فقط واحد منابع انسانی اجازهٔ دیدن پرونده‌های کارکنان را داشته باشد. اگر چنین تفاوتی دارید، گزینهٔ دوم را انتخاب کنید.",
+      "An HR answer must not expose a file the user cannot access.",
+      "Una respuesta de RR. HH. no debe revelar expedientes sin permiso."
+    ],
+    "article": "rag",
+    "options": [
+      {
+        "value": "all",
+        "label": [
+          "بله، دسترسی یکسان است",
+          "Yes, equal access",
+          "Sí, acceso igual"
+        ]
+      },
+      {
+        "value": "roles",
+        "label": [
+          "خیر، بر اساس نقش یا فرد متفاوت است",
+          "No, access varies by role or person",
+          "No, depende del rol o persona"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "archive"
+  },
+  {
+    "id": "existing",
+    "step": 1,
+    "title": [
+      "سامانهٔ جست‌وجو یا دستیار دارید؟",
+      "Do you already have a search or assistant system?",
+      "¿Ya tiene un buscador o asistente?"
+    ],
+    "why": [
+      "اگر از قبل دستیاری دارید، می‌توانیم از مشکل‌های همان شروع کنیم.",
+      "For an existing system, identify where failures occur.",
+      "Si ya existe un sistema, identificamos dónde falla."
+    ],
+    "help": [
+      "منظور، سامانه‌ای است که الان اسناد را جست‌وجو می‌کند یا از روی آن‌ها پاسخ می‌دهد؛ حتی اگر هنوز آزمایشی باشد.",
+      "A low-ranked result differs from a document that is never found.",
+      "Un resultado mal ordenado no equivale a un documento no encontrado."
+    ],
+    "article": "rag",
+    "options": [
+      {
+        "value": "yes",
+        "label": [
+          "بله",
+          "Yes",
+          "Sí"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "خیر",
+          "No",
+          "No"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "archive"
+  },
+  {
+    "id": "failure",
+    "step": 1,
+    "title": [
+      "بیشتر کدام قسمت خطا می‌کند؟",
+      "Where does it usually fail?",
+      "¿Dónde suele fallar?"
+    ],
+    "why": [
+      "باید ببینیم مشکل از پیداکردن سند است یا از پاسخی که مدل بر اساس آن می‌نویسد.",
+      "Reranking is a candidate for ranking failures specifically.",
+      "La reordenación es una opción para fallos de ordenación."
+    ],
+    "help": [
+      "یک سؤال ناموفق را بررسی کنید: سند درست اصلاً پیدا نشده، پایین فهرست مانده یا پیدا شده ولی پاسخ غلط است؟ اگر خود متن اسکن اشتباه خوانده شده، ابتدا باید همان را درست کرد.",
+      "If OCR reads a scan incorrectly, switching the answer model does not fix it.",
+      "Si el OCR lee mal, cambiar el modelo de respuesta no lo corrige."
+    ],
+    "article": "rag",
+    "options": [
+      {
+        "value": "missing",
+        "label": [
+          "سند پیدا نمی‌شود",
+          "Document not found",
+          "No encuentra el documento"
+        ]
+      },
+      {
+        "value": "ranking",
+        "label": [
+          "سند پایین فهرست است",
+          "Relevant document ranks too low",
+          "El documento aparece demasiado abajo"
+        ]
+      },
+      {
+        "value": "answer",
+        "label": [
+          "سند درست است، پاسخ غلط",
+          "Right document, wrong answer",
+          "Documento correcto, respuesta errónea"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "existing"
+  },
+  {
+    "id": "codingMode",
+    "step": 1,
+    "title": [
+      "از دستیار کدنویسی چه می‌خواهید؟",
+      "What should the coding assistant do?",
+      "¿Qué debe hacer el asistente de código?"
+    ],
+    "why": [
+      "پیشنهاد چند کلمه هنگام تایپ با سپردن اصلاح چند فایل به یک دستیار فرق دارد.",
+      "Inline completion and multi-file editing need different tests.",
+      "Autocompletar y editar varios archivos requieren pruebas distintas."
+    ],
+    "help": [
+      "اگر فقط ادامهٔ خط کد را می‌خواهید، «تکمیل حین تایپ» را بزنید. اگر می‌خواهید دستیار فایل‌ها را تغییر بدهد و آزمون اجرا کند، گزینهٔ سوم مناسب‌تر است.",
+      "Multi-file agents need tests and review of their edits.",
+      "Un agente de varios archivos necesita pruebas y revisión."
+    ],
+    "article": "coding",
+    "options": [
+      {
+        "value": "completion",
+        "label": [
+          "تکمیل حین تایپ",
+          "Inline completion",
+          "Autocompletado"
+        ]
+      },
+      {
+        "value": "assistant",
+        "label": [
+          "توضیح و پیشنهاد اصلاح",
+          "Explain and suggest changes",
+          "Explicar y sugerir cambios"
+        ]
+      },
+      {
+        "value": "agent",
+        "label": [
+          "ویرایش فایل و اجرای آزمون",
+          "Edit files and run tests",
+          "Editar archivos y ejecutar pruebas"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "coding"
+  },
+  {
+    "id": "codeScope",
+    "step": 1,
+    "title": [
+      "چه مقدار از پروژه لازم است؟",
+      "How much of the project is needed?",
+      "¿Cuánto del proyecto necesita?"
+    ],
+    "why": [
+      "مدل برای کمک‌کردن باید بخش‌های لازم پروژه را ببیند؛ گاهی یک تابع کافی است و گاهی چند فایل لازم می‌شود.",
+      "The whole repository is not assumed to be each request’s input.",
+      "No suponemos que cada consulta incluya todo el repositorio."
+    ],
+    "help": [
+      "برای توضیح یک خطا شاید همان فایل کافی باشد. اما تغییر یک API ممکن است بررسی کد فراخوان، آزمون‌ها و مستندات را هم بخواهد.",
+      "A function bug may need one file; an API change may need several.",
+      "Un error puede necesitar un archivo; un cambio de API, varios."
+    ],
+    "article": "coding",
+    "options": [
+      {
+        "value": "snippet",
+        "label": [
+          "قطعه یا یک فایل",
+          "Snippet or one file",
+          "Fragmento o archivo"
+        ]
+      },
+      {
+        "value": "files",
+        "label": [
+          "چند فایل مرتبط",
+          "Several related files",
+          "Varios archivos relacionados"
+        ]
+      },
+      {
+        "value": "repository",
+        "label": [
+          "جست‌وجو در مخزن",
+          "Repository search",
+          "Búsqueda en repositorio"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "coding"
+  },
+  {
+    "id": "codeLanguages",
+    "step": 1,
+    "title": [
+      "زبان‌ها و ابزارهای اصلی پروژه چیست؟",
+      "Main programming languages and tools?",
+      "¿Lenguajes y herramientas principales?"
+    ],
+    "why": [
+      "مدل را باید با همان زبان‌ها و ابزارهایی سنجید که در پروژهٔ شما استفاده می‌شوند.",
+      "Tests should use the actual project stack.",
+      "Las pruebas deben usar la tecnología real del proyecto."
+    ],
+    "help": [
+      "مثلاً بنویسید «Python و pytest» یا «TypeScript و Svelte». نام ابزارها کافی است؛ نیازی به واردکردن کد پروژه نیست.",
+      "For example Python and pytest; do not enter code or confidential information.",
+      "Por ejemplo Python y pytest; no introduzca código ni información confidencial."
+    ],
+    "article": "coding",
+    "options": [],
+    "kind": "text",
+    "unit": null,
+    "when": "coding"
+  },
+  {
+    "id": "authority",
+    "step": 1,
+    "title": [
+      "فقط بخواند یا تغییری هم ایجاد کند؟",
+      "Read only or make changes too?",
+      "¿Solo consultar o también modificar?"
+    ],
+    "why": [
+      "می‌خواهید دستیار فقط پیشنهاد بدهد یا اجازه داشته باشد در سامانه هم کاری انجام دهد؟",
+      "Tool execution needs permissions and operation logs.",
+      "Ejecutar herramientas requiere permisos y registro."
+    ],
+    "help": [
+      "مثلاً دستیار می‌تواند سفارش را آماده کند، اما ثبت نهایی را به تأیید شما بسپارد. این با اجازهٔ ثبت خودکار سفارش فرق دارد.",
+      "An order can wait for human approval before submission.",
+      "Un pedido puede esperar aprobación humana."
+    ],
+    "article": "coding",
+    "options": [
+      {
+        "value": "read",
+        "label": [
+          "فقط خواندن",
+          "Read only",
+          "Solo lectura"
+        ]
+      },
+      {
+        "value": "suggest",
+        "label": [
+          "تهیهٔ پیشنهاد",
+          "Suggest actions",
+          "Proponer acciones"
+        ]
+      },
+      {
+        "value": "approval",
+        "label": [
+          "تغییر پس از تأیید",
+          "Changes after approval",
+          "Cambios tras aprobación"
+        ]
+      },
+      {
+        "value": "bounded",
+        "label": [
+          "اجرای خودکار محدود",
+          "Bounded automatic actions",
+          "Acciones automáticas limitadas"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "tools"
+  },
+  {
+    "id": "connection",
+    "step": 1,
+    "title": [
+      "اتصال به سامانه چگونه ممکن است؟",
+      "How can the system be connected?",
+      "¿Cómo puede conectarse al sistema?"
+    ],
+    "why": [
+      "راه دسترسی به اطلاعات مشخص می‌کند وصل‌کردن دستیار به سامانه چقدر کار دارد.",
+      "The connection method determines integration work.",
+      "El tipo de conexión determina la integración."
+    ],
+    "help": [
+      "اگر سامانه API دارد، اتصال معمولاً از همان راه انجام می‌شود. جمع فروش یا تعداد سفارش‌ها را هم بهتر است از خود پایگاه داده بگیریم، نه از حدس مدل.",
+      "Sales totals need a query or deterministic calculation, not generated guesses.",
+      "Las ventas requieren consulta o cálculo, no cifras generadas."
+    ],
+    "article": "rag",
+    "options": [
+      {
+        "value": "api",
+        "label": [
+          "API آماده",
+          "Available API",
+          "API disponible"
+        ]
+      },
+      {
+        "value": "database",
+        "label": [
+          "پایگاه دادهٔ فقط‌خواندنی",
+          "Read-only database",
+          "Base de datos de solo lectura"
+        ]
+      },
+      {
+        "value": "file",
+        "label": [
+          "خروجی فایل",
+          "File export",
+          "Exportación de archivo"
+        ]
+      },
+      {
+        "value": "ui",
+        "label": [
+          "فقط رابط کاربری",
+          "User interface only",
+          "Solo interfaz de usuario"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "tools"
+  },
+  {
+    "id": "inputSize",
+    "step": 1,
+    "title": [
+      "در هر نوبت چه مقدار متن باید خوانده شود؟",
+      "How much text must be read per request?",
+      "¿Cuánto texto debe leerse por solicitud?"
+    ],
+    "why": [
+      "منظور، متنی است که مدل برای یک پاسخ می‌خواند؛ نه همهٔ فایل‌هایی که در سازمان دارید.",
+      "Archive size differs from input per request.",
+      "El archivo completo no equivale a la entrada de una solicitud."
+    ],
+    "help": [
+      "سؤال، دستور شما، سابقهٔ گفتگو و بخش‌های انتخاب‌شدهٔ اسناد، همه جزو ورودی‌اند. تعداد صفحه به‌تنهایی تعداد توکن را مشخص نمی‌کند؛ متن و مدل هم در آن اثر دارند.",
+      "Instructions, question, chat history and excerpts all count; pages are not converted to a fixed token count.",
+      "Instrucciones, pregunta, historial y fragmentos cuentan; no convertimos páginas en tokens fijos."
+    ],
+    "article": "adaptation",
+    "options": [
+      {
+        "value": "short",
+        "label": [
+          "نامه یا چند پاراگراف",
+          "Letter or a few paragraphs",
+          "Carta o pocos párrafos"
+        ]
+      },
+      {
+        "value": "pages",
+        "label": [
+          "چند صفحه یا فایل کوتاه",
+          "A few pages or short files",
+          "Varias páginas o archivos cortos"
+        ]
+      },
+      {
+        "value": "long",
+        "label": [
+          "تمام یک سند طولانی",
+          "A whole long document",
+          "Un documento largo completo"
+        ]
+      },
+      {
+        "value": "retrieved",
+        "label": [
+          "چند بخش از میان منابع زیاد",
+          "A few excerpts from many sources",
+          "Algunos fragmentos entre muchas fuentes"
+        ]
+      },
+      {
+        "value": "history",
+        "label": [
+          "گفت‌وگوی طولانی و اطلاعات تازه",
+          "Long conversation and new information",
+          "Conversación larga e información nueva"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "inputTokens",
+    "step": 1,
+    "title": [
+      "اگر می‌دانید: ورودی معمول چند توکن است؟",
+      "If known: typical input tokens?",
+      "Si lo sabe: ¿tokens habituales de entrada?"
+    ],
+    "why": [
+      "اگر تعداد توکن را می‌دانید، می‌توانیم حافظهٔ لازم را بهتر حساب کنیم؛ اگر نمی‌دانید، از این پرسش بگذرید.",
+      "A token count enables a more specific memory estimate.",
+      "El número de tokens permite estimar mejor la memoria."
+    ],
+    "help": [
+      "توکن تکه‌ای از متن است که مدل می‌خواند و همیشه یک کلمهٔ کامل نیست. تیم فنی می‌تواند با توکن‌ساز همان مدل، تعداد توکن یک ورودی معمولی را به دست بیاورد.",
+      "Measure with the model’s tokenizer; tokens vary by language and model.",
+      "Mida con el tokenizador del modelo; cambia según idioma y modelo."
+    ],
+    "article": "adaptation",
+    "options": [],
+    "kind": "number",
+    "unit": "tokens",
+    "when": null
+  },
+  {
+    "id": "maxTokens",
+    "step": 1,
+    "title": [
+      "بیشترین ورودی مورد انتظار چند توکن است؟",
+      "Maximum expected input tokens?",
+      "¿Máximo de tokens de entrada esperado?"
+    ],
+    "why": [
+      "گاهی ورودی از همیشه طولانی‌تر می‌شود؛ می‌خواهیم آن موارد هم در محاسبه جا بگیرند.",
+      "Check the maximum separately from typical input.",
+      "Evaluamos el máximo por separado."
+    ],
+    "help": [
+      "مثلاً بیشتر درخواست‌ها ۴ هزار توکن دارند، ولی گاهی یک سند ۱۲ هزار توکنی هم فرستاده می‌شود. اینجا عدد دوم را بنویسید.",
+      "A typical 4,000 tokens does not mean a 4,000-token maximum.",
+      "4.000 tokens habituales no significan un máximo de 4.000."
+    ],
+    "article": "adaptation",
+    "options": [],
+    "kind": "number",
+    "unit": "tokens",
+    "when": null
+  },
+  {
+    "id": "output",
+    "step": 1,
+    "title": [
+      "خروجی معمولاً چه شکلی است؟",
+      "What does a typical output look like?",
+      "¿Cómo es la salida habitual?"
+    ],
+    "why": [
+      "مشخص کنید از مدل چه چیزی تحویل می‌خواهید: چند فیلد کوتاه، یک پاسخ توضیحی یا متنی بلند.",
+      "Long reports and a few fields have different generation and testing needs.",
+      "Un informe largo y unos campos requieren tiempos y pruebas diferentes."
+    ],
+    "help": [
+      "برای فاکتور شاید فقط نام، تاریخ و مبلغ لازم باشد؛ برای ترجمهٔ گزارش، تمام متن را می‌خواهید. این دو، هم در زمان پاسخ و هم در شیوهٔ بررسی نتیجه فرق دارند.",
+      "For invoice extraction, the amount matters more than elegant prose.",
+      "Al extraer facturas, el importe importa más que la prosa."
+    ],
+    "article": "size",
+    "options": [
+      {
+        "value": "fields",
+        "label": [
+          "برچسب یا چند فیلد ثابت",
+          "Label or fixed fields",
+          "Etiqueta o campos fijos"
+        ]
+      },
+      {
+        "value": "short",
+        "label": [
+          "پاسخ کوتاه",
+          "Short answer",
+          "Respuesta breve"
+        ]
+      },
+      {
+        "value": "cited",
+        "label": [
+          "چند پاراگراف با ارجاع",
+          "Paragraphs with citations",
+          "Párrafos con referencias"
+        ]
+      },
+      {
+        "value": "long",
+        "label": [
+          "گزارش یا ترجمهٔ بلند",
+          "Long report or translation",
+          "Informe o traducción largos"
+        ]
+      },
+      {
+        "value": "code",
+        "label": [
+          "کد یا فایل",
+          "Code or file",
+          "Código o archivo"
+        ]
+      },
+      {
+        "value": "mixed",
+        "label": [
+          "ترکیبی",
+          "Mixed",
+          "Mixta"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "outputTokens",
+    "step": 1,
+    "title": [
+      "اگر می‌دانید: سقف طول پاسخ چند توکن باشد؟",
+      "If known: maximum output tokens?",
+      "Si lo sabe: ¿máximo de tokens de salida?"
+    ],
+    "why": [
+      "برای متن پاسخ هم حافظه لازم است؛ اگر سقف طول آن را می‌دانید، اینجا بنویسید.",
+      "Memory planning also reserves space for the output.",
+      "Reservamos memoria también para la salida."
+    ],
+    "help": [
+      "منظور، بیشترین طول پاسخی است که اجازه می‌دهید مدل تولید کند. اگر چنین سقفی تعیین نکرده‌اید، «فعلاً مشخص نیست» را بزنید.",
+      "This is the generation limit, not the input length.",
+      "Es el límite de generación, no la longitud de entrada."
+    ],
+    "article": "latency",
+    "options": [],
+    "kind": "number",
+    "unit": "tokens",
+    "when": null
+  },
+  {
+    "id": "mode",
+    "step": 2,
+    "title": [
+      "کاربر منتظر پاسخ است یا کارها دسته‌ای پردازش می‌شوند؟",
+      "Interactive or batch processing?",
+      "¿Procesamiento interactivo o por lotes?"
+    ],
+    "why": [
+      "بعضی کارها باید همان لحظه جواب بگیرند؛ بعضی را می‌شود جمع کرد و مثلاً شب انجام داد.",
+      "Chat and overnight processing have different load patterns.",
+      "El chat y los lotes nocturnos tienen cargas distintas."
+    ],
+    "help": [
+      "گفت‌وگوی کاربر با دستیار معمولاً فوری است. ولی خلاصه‌کردن نامه‌های یک روز شاید تا صبح فردا فرصت داشته باشد.",
+      "A hundred letters by morning is not a hundred instant answers.",
+      "Cien cartas para mañana no son cien respuestas inmediatas."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "interactive",
+        "label": [
+          "تعاملی",
+          "Interactive",
+          "Interactivo"
+        ]
+      },
+      {
+        "value": "batch",
+        "label": [
+          "دسته‌ای",
+          "Batch",
+          "Por lotes"
+        ]
+      },
+      {
+        "value": "both",
+        "label": [
+          "هر دو",
+          "Both",
+          "Ambos"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "audience",
+    "step": 2,
+    "title": [
+      "چه کسی از آن استفاده می‌کند؟",
+      "Who will use it?",
+      "¿Quién lo usará?"
+    ],
+    "why": [
+      "قرار است خودتان از مدل استفاده کنید، چند نفر از همکاران یا مشتریان و سامانه‌های دیگر؟",
+      "Human users and automated jobs are counted separately.",
+      "Distinguimos personas y procesos automáticos."
+    ],
+    "help": [
+      "اگر یک برنامه بدون دخالت کاربر درخواست می‌فرستد، «سامانهٔ خودکار» را انتخاب کنید؛ در این حالت تعداد کارهای آن را می‌پرسیم.",
+      "For automated systems, job counts matter more than staff counts.",
+      "En sistemas automáticos cuentan las tareas, no los empleados."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "personal",
+        "label": [
+          "خودم",
+          "Just me",
+          "Solo yo"
+        ]
+      },
+      {
+        "value": "team",
+        "label": [
+          "تیم داخلی",
+          "Internal team",
+          "Equipo interno"
+        ]
+      },
+      {
+        "value": "organization",
+        "label": [
+          "کارکنان سازمان",
+          "Organization staff",
+          "Personal"
+        ]
+      },
+      {
+        "value": "public",
+        "label": [
+          "مشتریان یا عموم",
+          "Customers or public",
+          "Clientes o público"
+        ]
+      },
+      {
+        "value": "system",
+        "label": [
+          "سامانهٔ خودکار",
+          "Automated system",
+          "Sistema automático"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "phase",
+    "step": 2,
+    "title": [
+      "فعلاً آزمایش می‌کنید یا قرار است در کار روزمره استفاده شود؟",
+      "Pilot or production service?",
+      "¿Piloto o servicio en producción?"
+    ],
+    "why": [
+      "فعلاً می‌خواهید امکان کار را بسنجید یا قرار است افراد در کار روزمره به این خدمت تکیه کنند؟",
+      "Pilot and production support needs differ.",
+      "Piloto y producción necesitan soporte distinto."
+    ],
+    "help": [
+      "اگر هنوز با چند همکار و چند نمونه کار را امتحان می‌کنید، «آزمایش محدود» را بزنید. تعداد کاربران احتمالی آینده را وارد این آزمایش نکنید.",
+      "Keep the pilot separate from future expansion.",
+      "Separe el piloto de la ampliación futura."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "pilot",
+        "label": [
+          "آزمایش محدود",
+          "Pilot",
+          "Piloto"
+        ]
+      },
+      {
+        "value": "production",
+        "label": [
+          "خدمت عملیاتی",
+          "Production",
+          "Producción"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "users",
+    "step": 2,
+    "title": [
+      "در شروع چند نفر استفاده می‌کنند؟",
+      "How many users at the start?",
+      "¿Cuántos usuarios al inicio?"
+    ],
+    "why": [
+      "تعداد کسانی را بگویید که در این مرحله به خدمت دسترسی خواهند داشت، حتی اگر همه هم‌زمان از آن استفاده نکنند.",
+      "User count is not concurrent request count.",
+      "Usuarios no equivale a solicitudes simultáneas."
+    ],
+    "help": [
+      "مثلاً ممکن است ۱۰۰ نفر حساب کاربری داشته باشند، اما در هر لحظه فقط ۳ نفر منتظر پاسخ باشند. اینجا ۱۰۰ را بنویسید؛ هم‌زمانی را جدا می‌پرسیم.",
+      "Only 3 of 100 users might be waiting simultaneously.",
+      "De 100 usuarios, quizá solo 3 esperan simultáneamente."
+    ],
+    "article": "serving",
+    "options": [],
+    "kind": "number",
+    "unit": "people",
+    "when": "humans"
+  },
+  {
+    "id": "concurrency",
+    "step": 2,
+    "title": [
+      "در زمان شلوغ چند درخواست هم‌زمان پاسخ می‌خواهند؟",
+      "Peak simultaneous requests needing an answer?",
+      "¿Solicitudes simultáneas en hora punta?"
+    ],
+    "why": [
+      "در شلوغ‌ترین زمان، چند نفر یا برنامه باید هم‌زمان جواب بگیرند؟",
+      "The target is timely answers, not merely accepting requests into a queue.",
+      "La meta es responder a tiempo, no solo aceptar solicitudes en cola."
+    ],
+    "help": [
+      "اگر سامانه‌ای دارید، تعداد درخواست‌ها در ساعت شلوغ را از گزارش آن بردارید. مشخص می‌کنیم چه تعداد هم‌زمان پردازش می‌شوند و چه تعداد می‌توانند در صف بمانند.",
+      "Observe a busy hour; queued requests and active engine sequences differ.",
+      "Observe una hora punta; cola y secuencias activas son distintas."
+    ],
+    "article": "serving",
+    "options": [],
+    "kind": "number",
+    "unit": "requests",
+    "when": "interactive"
+  },
+  {
+    "id": "traffic",
+    "step": 2,
+    "title": [
+      "اگر هم‌زمانی معلوم نیست، استفاده پراکنده است یا موجی؟",
+      "If concurrency is unknown, sporadic or bursty use?",
+      "Si desconoce la simultaneidad, ¿uso disperso o en ráfagas?"
+    ],
+    "why": [
+      "اگر هنوز عدد دقیقی ندارید، بگویید درخواست‌ها در طول روز پخش‌اند یا یک‌باره زیاد می‌شوند.",
+      "This description does not supply a concurrency count.",
+      "Esta descripción no equivale a un número de solicitudes simultáneas."
+    ],
+    "help": [
+      "مثلاً ممکن است بیشتر کارکنان در شروع شیفت سراغ دستیار بروند. این توصیف برای طراحی آزمایش کمک می‌کند؛ بعداً باید تعداد درخواست‌ها را اندازه بگیریم.",
+      "Everyone arriving at a shift change may cause a burst.",
+      "El inicio de turno puede generar una ráfaga."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "sporadic",
+        "label": [
+          "پراکنده",
+          "Sporadic",
+          "Disperso"
+        ]
+      },
+      {
+        "value": "bursty",
+        "label": [
+          "موجی",
+          "Bursty",
+          "En ráfagas"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "unknownConcurrency"
+  },
+  {
+    "id": "requests",
+    "step": 2,
+    "title": [
+      "در روز چند درخواست دارید؟",
+      "How many requests per day?",
+      "¿Cuántas solicitudes al día?"
+    ],
+    "why": [
+      "برای حساب‌کردن هزینه، باید بدانیم در طول روز چقدر از مدل استفاده می‌شود.",
+      "Volume informs costs; it does not replace concurrency.",
+      "El volumen informa el coste, no sustituye la simultaneidad."
+    ],
+    "help": [
+      "اگر سامانه‌ای دارید، از گزارش درخواست‌های آن کمک بگیرید. تعداد کارکنان به‌تنهایی کافی نیست؛ یک نفر ممکن است روزی ده‌ها بار از دستیار استفاده کند.",
+      "Monthly consumption is not inferred from staff count.",
+      "No deducimos el consumo mensual del número de empleados."
+    ],
+    "article": "cost",
+    "options": [],
+    "kind": "number",
+    "unit": "requests/day",
+    "when": "interactive"
+  },
+  {
+    "id": "hours",
+    "step": 2,
+    "title": [
+      "خدمت چند ساعت در روز استفاده می‌شود؟",
+      "Daily service hours?",
+      "¿Horas de servicio al día?"
+    ],
+    "why": [
+      "درخواست‌های روزانه معمولاً در چند ساعت انجام می‌شوند؟ این عدد کمک می‌کند میانگین درخواست در هر ساعت را حساب کنیم.",
+      "Availability hours differ from busy compute hours.",
+      "Horas disponibles no son horas de cómputo a plena carga."
+    ],
+    "help": [
+      "مثلاً ممکن است کارکنان فقط در هشت ساعت اداری از دستیار استفاده کنند، هرچند دستگاه در تمام این مدت مشغول پاسخ‌دادن نباشد.",
+      "An eight-hour assistant may often be idle.",
+      "Un asistente de ocho horas puede estar ocioso gran parte del tiempo."
+    ],
+    "article": "cost",
+    "options": [],
+    "kind": "number",
+    "unit": "hours/day",
+    "when": "interactive"
+  },
+  {
+    "id": "firstResponse",
+    "step": 2,
+    "title": [
+      "اولین بخش مفید پاسخ چند ثانیه بعد دیده شود؟",
+      "Seconds until the first useful response?",
+      "¿Segundos hasta la primera respuesta útil?"
+    ],
+    "why": [
+      "کاربر چقدر می‌تواند منتظر بماند تا خواندن پاسخ را شروع کند؟",
+      "This is your target, not measured model performance.",
+      "Es su objetivo, no rendimiento medido."
+    ],
+    "help": [
+      "منظور، رسیدن اولین بخش قابل استفادهٔ پاسخ است؛ پیام «در حال پردازش» را حساب نکنید. اگر هنوز هدفی ندارید، «فعلاً مشخص نیست» را بزنید.",
+      "A loading message is not a useful answer; measure start and completion separately.",
+      "Un mensaje de carga no es respuesta útil; mida inicio y final por separado."
+    ],
+    "article": "latency",
+    "options": [],
+    "kind": "number",
+    "unit": "seconds",
+    "when": "interactive"
+  },
+  {
+    "id": "fullResponse",
+    "step": 2,
+    "title": [
+      "پاسخ کامل حداکثر چند ثانیه بعد آماده شود؟",
+      "Maximum seconds until the full answer?",
+      "¿Segundos máximos hasta la respuesta completa?"
+    ],
+    "why": [
+      "از فرستادن سؤال تا آماده‌شدن تمام پاسخ، چقدر زمان برایتان قابل قبول است؟",
+      "This is your target, not measured model performance.",
+      "Es su objetivo, no rendimiento medido."
+    ],
+    "help": [
+      "ممکن است نوشتن پاسخ بعد از دو ثانیه شروع شود، ولی کامل‌شدنش ده ثانیه طول بکشد. اینجا زمان کامل‌شدن پاسخ را بنویسید.",
+      "A loading message is not a useful answer; measure start and completion separately.",
+      "Un mensaje de carga no es respuesta útil; mida inicio y final por separado."
+    ],
+    "article": "latency",
+    "options": [],
+    "kind": "number",
+    "unit": "seconds",
+    "when": "interactive"
+  },
+  {
+    "id": "batchCount",
+    "step": 2,
+    "title": [
+      "هر نوبت چند مورد پردازش می‌شود؟",
+      "How many items per batch?",
+      "¿Cuántos elementos por lote?"
+    ],
+    "why": [
+      "در هر نوبت چند نامه، فایل یا کار باید پردازش شود؟",
+      "Batch volume is assessed against its deadline.",
+      "El volumen se evalúa frente al plazo."
+    ],
+    "help": [
+      "مثلاً اگر هر شب نامه‌های همان روز را خلاصه می‌کنید، تعداد تقریبی نامه‌های یک روز را بنویسید.",
+      "For example, letters collected by the end of the day.",
+      "Por ejemplo, cartas acumuladas durante el día."
+    ],
+    "article": "serving",
+    "options": [],
+    "kind": "number",
+    "unit": "items",
+    "when": "batch"
+  },
+  {
+    "id": "batchFrequency",
+    "step": 2,
+    "title": [
+      "هر چند وقت یک بار این نوبت تکرار می‌شود؟",
+      "How often does the batch repeat?",
+      "¿Con qué frecuencia se repite el lote?"
+    ],
+    "why": [
+      "این کار هر شب تکرار می‌شود، هفته‌ای یک‌بار یا فقط آخر ماه؟",
+      "Batch frequency contributes to volume and cost.",
+      "La frecuencia influye en volumen y coste."
+    ],
+    "help": [
+      "تعداد دفعات اجرا، مصرف کل و هزینه را تغییر می‌دهد؛ نزدیک‌ترین گزینه به برنامهٔ کاری خودتان را بزنید.",
+      "Nightly processing differs from month-end processing.",
+      "Un lote nocturno difiere de uno mensual."
+    ],
+    "article": "cost",
+    "options": [
+      {
+        "value": "daily",
+        "label": [
+          "روزانه",
+          "Daily",
+          "Diario"
+        ]
+      },
+      {
+        "value": "weekly",
+        "label": [
+          "هفتگی",
+          "Weekly",
+          "Semanal"
+        ]
+      },
+      {
+        "value": "monthly",
+        "label": [
+          "ماهانه",
+          "Monthly",
+          "Mensual"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "batch"
+  },
+  {
+    "id": "deadline",
+    "step": 2,
+    "title": [
+      "هر نوبت چند ساعت فرصت دارد؟",
+      "Hours available to finish each batch?",
+      "¿Horas para terminar cada lote?"
+    ],
+    "why": [
+      "از شروع پردازش تا زمانی که نتیجه را لازم دارید، چند ساعت فرصت هست؟",
+      "The deadline sets the batch test target.",
+      "El plazo define la prueba del lote."
+    ],
+    "help": [
+      "مثلاً اگر کار ساعت ۱۰ شب شروع می‌شود و باید ساعت ۶ صبح تمام شود، ۸ ساعت فرصت دارید.",
+      "For example, from closing time to the next workday.",
+      "Por ejemplo, del cierre al inicio de la jornada siguiente."
+    ],
+    "article": "latency",
+    "options": [],
+    "kind": "number",
+    "unit": "hours",
+    "when": "batch"
+  },
+  {
+    "id": "offPeak",
+    "step": 2,
+    "title": [
+      "پردازش در ساعت خلوت مجاز است؟",
+      "May processing run off-peak?",
+      "¿Puede procesar en horas de baja carga?"
+    ],
+    "why": [
+      "اگر بتوان این کارها را در ساعت‌های خلوت انجام داد، کمتر با درخواست‌های فوری رقابت می‌کنند.",
+      "Batch jobs can be scheduled separately from interactive demand.",
+      "Los lotes pueden programarse aparte de la demanda interactiva."
+    ],
+    "help": [
+      "مثلاً می‌توان پردازش اسناد روزانه را به شب موکول کرد تا کاربران روزانه منتظر تمام‌شدن آن نمانند.",
+      "Customer answers should not queue behind overnight work.",
+      "Las respuestas al cliente no deberían esperar detrás de lotes."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "yes",
+        "label": [
+          "بله",
+          "Yes",
+          "Sí"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "خیر",
+          "No",
+          "No"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "batch"
+  },
+  {
+    "id": "policy",
+    "step": 3,
+    "title": [
+      "اطلاعات شما کجا می‌توانند پردازش شوند؟",
+      "Where may data be processed?",
+      "¿Dónde se permite procesar los datos?"
+    ],
+    "why": [
+      "آیا اطلاعات باید داخل سازمان بمانند یا اجازه دارید آن‌ها را برای پردازش به ارائه‌دهندهٔ دیگری بفرستید؟",
+      "This boundary also applies to retrieval, logging and tools.",
+      "El límite incluye recuperación, registros y herramientas."
+    ],
+    "help": [
+      "این موضوع فقط به متن سؤال محدود نیست؛ بخش‌های سند، جست‌وجو و گزارش‌های ثبت‌شده هم ممکن است اطلاعات سازمان را همراه داشته باشند.",
+      "Permission for some text does not permit sending every document.",
+      "Permitir algunos textos no autoriza enviar todos los documentos."
+    ],
+    "article": "privacy",
+    "options": [
+      {
+        "value": "internal",
+        "label": [
+          "فقط داخل سازمان",
+          "Only inside the organization",
+          "Solo dentro de la organización"
+        ]
+      },
+      {
+        "value": "dedicated",
+        "label": [
+          "میزبان اختصاصی تأییدشده هم مجاز است",
+          "Approved dedicated hosting allowed",
+          "Alojamiento dedicado autorizado"
+        ]
+      },
+      {
+        "value": "public",
+        "label": [
+          "خدمت عمومی بیرونی مجاز است",
+          "Public external services allowed",
+          "Servicios públicos externos permitidos"
+        ]
+      },
+      {
+        "value": "mixed",
+        "label": [
+          "بسته به نوع داده متفاوت است",
+          "Depends on the data",
+          "Depende de los datos"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "deployment",
+    "step": 3,
+    "title": [
+      "کدام روش اجرا را ترجیح می‌دهید؟",
+      "Preferred deployment method?",
+      "¿Método de despliegue preferido?"
+    ],
+    "why": [
+      "با توجه به محدودیت اطلاعات، ترجیح می‌دهید اجرا دست تیم خودتان باشد یا از خدمات یک مجموعهٔ دیگر استفاده کنید؟",
+      "Choices must respect your data boundary.",
+      "La elección debe respetar el límite de datos."
+    ],
+    "help": [
+      "استفاده از پیمانکار لزوماً به معنی خروج اطلاعات نیست؛ ممکن است همان پیمانکار مدل را روی تجهیزات داخل سازمان شما راه‌اندازی و نگهداری کند.",
+      "A contractor can operate within your own infrastructure.",
+      "Un proveedor puede operar dentro de su infraestructura."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "self",
+        "label": [
+          "اجرای خودمان",
+          "Self-hosted",
+          "Autogestionado"
+        ]
+      },
+      {
+        "value": "managed",
+        "label": [
+          "اجرای مدیریت‌شده در محل مجاز",
+          "Managed in an approved location",
+          "Gestionado en ubicación autorizada"
+        ]
+      },
+      {
+        "value": "api",
+        "label": [
+          "خدمت آماده یا API عمومی",
+          "Public service or API",
+          "Servicio público o API"
+        ]
+      },
+      {
+        "value": "compare",
+        "label": [
+          "مقایسهٔ روش‌های مجاز",
+          "Compare allowed methods",
+          "Comparar métodos permitidos"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "hardware",
+    "step": 3,
+    "title": [
+      "الان چه تجهیزاتی دارید؟",
+      "What hardware do you have?",
+      "¿Qué hardware tiene?"
+    ],
+    "why": [
+      "از امکاناتی که الان دارید شروع می‌کنیم تا ببینیم برای آزمایش اولیه چه چیزی در دسترس است.",
+      "System RAM differs from GPU memory.",
+      "La RAM del sistema no es memoria de GPU."
+    ],
+    "help": [
+      "اگر کارت گرافیک ندارید، ممکن است بتوان آزمایش اولیه را با پردازندهٔ معمولی انجام داد. نیاز به خرید را بعد از بررسی نتیجه و زمان پاسخ می‌سنجیم.",
+      "Without a GPU, consider a CPU trial before buying.",
+      "Sin GPU, considere probar en CPU antes de comprar."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "cpu",
+        "label": [
+          "رایانه یا سرور معمولی بدون GPU",
+          "Computer or server without GPU",
+          "Equipo o servidor sin GPU"
+        ]
+      },
+      {
+        "value": "gpu",
+        "label": [
+          "GPU داریم",
+          "We have GPUs",
+          "Tenemos GPU"
+        ]
+      },
+      {
+        "value": "none",
+        "label": [
+          "هنوز زیرساخت نداریم",
+          "No infrastructure yet",
+          "Sin infraestructura aún"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "local"
+  },
+  {
+    "id": "ram",
+    "step": 3,
+    "title": [
+      "چند گیگابایت RAM آزاد دارید؟",
+      "Available system RAM in GiB?",
+      "¿RAM disponible en GiB?"
+    ],
+    "why": [
+      "چقدر از حافظهٔ اصلی دستگاه در اختیار این کار است؟",
+      "Use available memory, not just installed capacity.",
+      "Indique memoria libre, no solo capacidad instalada."
+    ],
+    "help": [
+      "مثلاً اگر دستگاه ۳۲ گیگابایت RAM دارد ولی بخشی از آن درگیر برنامه‌های دیگر است، مقدار آزاد را بنویسید. این حافظه با حافظهٔ کارت گرافیک فرق دارد.",
+      "Other programs also consume RAM.",
+      "Otros programas también consumen RAM."
+    ],
+    "article": "software",
+    "options": [],
+    "kind": "number",
+    "unit": "GiB",
+    "when": "equipment"
+  },
+  {
+    "id": "gpuName",
+    "step": 3,
+    "title": [
+      "مدل GPU چیست؟",
+      "GPU model?",
+      "¿Modelo de GPU?"
+    ],
+    "why": [
+      "نام دقیق کارت را بنویسید؛ مثلاً RTX 3060 با RTX 4090 از نظر حافظه و نرم‌افزارهای قابل اجرا یکسان نیست.",
+      "Runtime compatibility depends on the GPU model.",
+      "La compatibilidad depende del modelo de GPU."
+    ],
+    "help": [
+      "مثلاً بنویسید «RTX 3060». اگر نام دقیق را نمی‌دانید، می‌توانید بعداً از مشخصات دستگاه یا تیم فنی بپرسید.",
+      "Exact name such as RTX 3060; the name alone does not determine service speed.",
+      "Nombre exacto como RTX 3060; no determina por sí solo la velocidad."
+    ],
+    "article": "software",
+    "options": [],
+    "kind": "text",
+    "unit": null,
+    "when": "gpu"
+  },
+  {
+    "id": "gpuCount",
+    "step": 3,
+    "title": [
+      "چند GPU دارید؟",
+      "How many GPUs?",
+      "¿Cuántas GPU tiene?"
+    ],
+    "why": [
+      "تعداد کارت‌ها را جدا می‌پرسیم؛ استفاده از چند کارت به روش اجرای مدل بستگی دارد.",
+      "Multiple GPUs are not automatically one memory pool.",
+      "Varias GPU no forman automáticamente una memoria única."
+    ],
+    "help": [
+      "دو کارت ۱۲ گیگابایتی همیشه مثل یک کارت ۲۴ گیگابایتی عمل نمی‌کنند. می‌توان مدل را بین کارت‌ها تقسیم کرد یا روی هر کارت یک نمونهٔ جدا اجرا کرد؛ هر کدام شرایط خودش را دارد.",
+      "Model sharding and separate replicas are different approaches.",
+      "Dividir el modelo y crear réplicas son métodos distintos."
+    ],
+    "article": "serving",
+    "options": [],
+    "kind": "number",
+    "unit": "GPUs",
+    "when": "gpu"
+  },
+  {
+    "id": "vram",
+    "step": 3,
+    "title": [
+      "روی هر GPU چند گیگابایت حافظه آزاد است؟",
+      "Available memory per GPU in GiB?",
+      "¿Memoria libre por GPU en GiB?"
+    ],
+    "why": [
+      "چه مقدار از حافظهٔ هر کارت برای مدل و پاسخ‌دادن به درخواست‌ها خالی است؟",
+      "Weights, conversation state and runtime overhead all need space.",
+      "Pesos, estado de conversación y motor necesitan espacio."
+    ],
+    "help": [
+      "اگر برنامهٔ دیگری روی کارت اجرا می‌شود، مقدار آزاد ممکن است از ظرفیت نوشته‌شده روی کارت کمتر باشد. حافظهٔ کارت‌ها را با هم جمع نکنید.",
+      "The box capacity may differ from available memory.",
+      "La capacidad nominal puede diferir de la memoria libre."
+    ],
+    "article": "software",
+    "options": [],
+    "kind": "number",
+    "unit": "GiB/GPU",
+    "when": "gpu"
+  },
+  {
+    "id": "shared",
+    "step": 3,
+    "title": [
+      "دستگاه اختصاصی است یا کار دیگری هم دارد؟",
+      "Dedicated or shared machine?",
+      "¿Equipo dedicado o compartido?"
+    ],
+    "why": [
+      "اگر دستگاه کار دیگری هم انجام می‌دهد، ممکن است هنگام شلوغی حافظه یا توان کمتری در اختیار مدل بماند.",
+      "Other workloads can change latency and available memory.",
+      "Otras cargas cambian la latencia y la memoria libre."
+    ],
+    "help": [
+      "مثلاً بگویید همین GPU برای پردازش تصویر هم استفاده می‌شود یا تمام وقت در اختیار دستیار است. آزمایش باید در همین شرایط واقعی انجام شود.",
+      "Test under the machine’s real workload conditions.",
+      "Pruebe con las cargas reales del equipo."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "dedicated",
+        "label": [
+          "اختصاصی",
+          "Dedicated",
+          "Dedicado"
+        ]
+      },
+      {
+        "value": "shared",
+        "label": [
+          "مشترک با کار دیگر",
+          "Shared with other work",
+          "Compartido con otros trabajos"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "equipment"
+  },
+  {
+    "id": "upgrade",
+    "step": 3,
+    "title": [
+      "امکان خرید یا اجارهٔ تجهیزات هست؟",
+      "Can you buy or rent hardware?",
+      "¿Puede comprar o alquilar hardware?"
+    ],
+    "why": [
+      "فعلاً باید با همین دستگاه‌ها کار کنیم یا می‌توانیم خرید و اجاره را هم بررسی کنیم؟",
+      "Hardware constraints change the trial scope.",
+      "Las restricciones cambian el alcance de la prueba."
+    ],
+    "help": [
+      "اگر فعلاً هزینهٔ تازه‌ای برای تجهیزات در نظر ندارید، «فقط امکانات موجود» را بزنید. هزینهٔ نگهداری را در مرحلهٔ بعد جدا می‌پرسیم.",
+      "Existing equipment only does not mean free operation.",
+      "Usar equipos existentes no significa operar gratis."
+    ],
+    "article": "cost",
+    "options": [
+      {
+        "value": "existing",
+        "label": [
+          "فعلاً فقط امکانات موجود",
+          "Existing equipment only",
+          "Solo equipos actuales"
+        ]
+      },
+      {
+        "value": "possible",
+        "label": [
+          "خرید یا اجاره قابل بررسی است",
+          "Buying or renting can be considered",
+          "Se puede considerar compra o alquiler"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "local"
+  },
+  {
+    "id": "serviceAccess",
+    "step": 3,
+    "title": [
+      "می‌توانید به سرویس موردنظر دسترسی داشته باشید و هزینه‌اش را بپردازید؟",
+      "Have service access and payment been checked?",
+      "¿Ha comprobado acceso y pago del servicio?"
+    ],
+    "why": [
+      "ممکن است یک سرویس از نظر فنی مناسب باشد، اما دسترسی یا پرداخت آن برای شما ممکن نباشد.",
+      "Downloadable models and accessible services are different.",
+      "Un modelo descargable no equivale a un servicio accesible."
+    ],
+    "help": [
+      "از ارائه‌دهنده دربارهٔ محل پردازش اطلاعات، روش پرداخت و محدودیت دسترسی سؤال کنید. قابل دانلود بودن یک مدل به معنی در دسترس بودن سرویس آن نیست.",
+      "Check processing location, payment and access with the provider.",
+      "Compruebe ubicación, pago y acceso con el proveedor."
+    ],
+    "article": "cost",
+    "options": [
+      {
+        "value": "confirmed",
+        "label": [
+          "بله",
+          "Yes",
+          "Sí"
+        ]
+      },
+      {
+        "value": "review",
+        "label": [
+          "باید بررسی شود",
+          "Needs checking",
+          "Pendiente de comprobar"
+        ]
+      },
+      {
+        "value": "limited",
+        "label": [
+          "محدودیت داریم",
+          "There are restrictions",
+          "Hay restricciones"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "external"
+  },
+  {
+    "id": "licenseUse",
+    "step": 3,
+    "title": [
+      "How will you use or distribute the model?",
+      "How will you use or distribute the model?",
+      "¿Cómo usará o distribuirá el modelo?"
+    ],
+    "why": [
+      "شرایط استفاده از مدل ممکن است با توجه به نوع استفادهٔ شما فرق کند.",
+      "Model, runtime and service terms are separate.",
+      "Los términos del modelo, motor y servicio son distintos."
+    ],
+    "help": [
+      "استفادهٔ داخلی، ارائهٔ خدمت به مشتری و انتشار دوبارهٔ وزن‌های مدل می‌توانند شرایط متفاوتی داشته باشند.",
+      "Commercial use and redistribution may have different conditions.",
+      "Uso comercial y redistribución pueden tener condiciones distintas."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "commercial",
+        "label": [
+          "Commercial internal use",
+          "Commercial internal use",
+          "Uso comercial interno"
+        ]
+      },
+      {
+        "value": "customer",
+        "label": [
+          "Service for customers",
+          "Service for customers",
+          "Servicio para clientes"
+        ]
+      },
+      {
+        "value": "redistribute",
+        "label": [
+          "Distribute or modify weights",
+          "Distribute or modify weights",
+          "Distribuir o modificar pesos"
+        ]
+      },
+      {
+        "value": "research",
+        "label": [
+          "Research",
+          "Research",
+          "Investigación"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "license"
+  },
+  {
+    "id": "currency",
+    "step": 4,
+    "title": [
+      "واحد بودجه چیست؟",
+      "Budget currency?",
+      "¿Moneda del presupuesto?"
+    ],
+    "why": [
+      "بودجهٔ اولیه و ماهانه را با چه واحدی می‌نویسید؟",
+      "Which currency will you use for your setup and monthly budgets?",
+      "¿Qué moneda usará para el presupuesto inicial y mensual?"
+    ],
+    "help": [
+      "برای بودجهٔ تومانی، «میلیون تومان» را انتخاب کنید؛ مثلاً برای ۵۰۰ میلیون تومان، عدد ۵۰۰ را بنویسید. نرخ هر دلار را در پرسش بعد به تومان می‌پرسیم.",
+      "Choose US dollars or euros for both budgets. If you change currency, enter the amounts again in the new unit.",
+      "Elija dólares estadounidenses o euros para ambos presupuestos. Si cambia de moneda, vuelva a introducir los importes en la nueva unidad."
+    ],
+    "article": "cost",
+    "options": [
+      {
+        "value": "million-toman",
+        "label": [
+          "میلیون تومان",
+          "Million toman",
+          "Millones de toman"
+        ]
+      },
+      {
+        "value": "usd",
+        "label": [
+          "دلار آمریکا",
+          "US dollar",
+          "Dólar estadounidense"
+        ]
+      },
+      {
+        "value": "eur",
+        "label": [
+          "یورو",
+          "Euro",
+          "Euro"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "usdRate",
+    "step": 4,
+    "kind": "number",
+    "title": [
+      "هر دلار را چند تومان در نظر بگیریم؟",
+      "Exchange rate: toman per US dollar?",
+      "¿Tipo de cambio: toman por dólar estadounidense?"
+    ],
+    "why": [
+      "برای مقایسه با قیمت‌های دلاری، نرخ دلاری را بنویسید که مبنای بودجه‌تان بوده است.",
+      "Enter the exchange rate used for your budget.",
+      "Indique el tipo de cambio usado para su presupuesto."
+    ],
+    "help": [
+      "این عدد به تومان است، نه میلیون تومان؛ مثلاً اگر هر دلار را ۲۳۰ هزار تومان حساب کرده‌اید، ۲۳۰۰۰۰ وارد کنید.",
+      "Enter toman per dollar, not millions of toman.",
+      "Introduzca toman por dólar, no millones de toman."
+    ],
+    "article": "cost",
+    "options": [],
+    "unit": "toman/USD",
+    "when": "toman"
+  },
+  {
+    "id": "capex",
+    "step": 4,
+    "title": [
+      "سقف هزینهٔ اولیهٔ خرید و راه‌اندازی چقدر است؟",
+      "Initial purchase and setup budget?",
+      "¿Presupuesto inicial de compra e instalación?"
+    ],
+    "why": [
+      "برای خرید تجهیزات و راه‌اندازی اولیه چه مبلغی کنار گذاشته‌اید؟",
+      "Zero and not yet decided are different answers.",
+      "Cero y aún sin decidir son respuestas distintas."
+    ],
+    "help": [
+      "اگر فعلاً قرار نیست برای شروع هزینه کنید، صفر بنویسید. اگر هنوز دربارهٔ بودجه تصمیم نگرفته‌اید، «فعلاً مشخص نیست» را بزنید.",
+      "A higher budget does not automatically select a larger model.",
+      "Más presupuesto no selecciona automáticamente un modelo mayor."
+    ],
+    "article": "cost",
+    "options": [],
+    "kind": "number",
+    "unit": "currency",
+    "when": null
+  },
+  {
+    "id": "monthly",
+    "step": 4,
+    "title": [
+      "سقف هزینهٔ ماهانه چقدر است؟",
+      "Monthly operating budget?",
+      "¿Presupuesto operativo mensual?"
+    ],
+    "why": [
+      "بعد از راه‌اندازی، ماهانه تا چه مبلغی می‌توانید برای ادامهٔ کار هزینه کنید؟",
+      "Zero and not yet decided are different answers.",
+      "Cero y aún sin decidir son respuestas distintas."
+    ],
+    "help": [
+      "اجاره، مصرف API، میزبانی و پشتیبانی می‌توانند هزینهٔ ماهانه داشته باشند. اگر هنوز سقفی تعیین نکرده‌اید، لازم نیست عددی حدس بزنید.",
+      "A higher budget does not automatically select a larger model.",
+      "Más presupuesto no selecciona automáticamente un modelo mayor."
+    ],
+    "article": "cost",
+    "options": [],
+    "kind": "number",
+    "unit": "currency",
+    "when": null
+  },
+  {
+    "id": "months",
+    "step": 4,
+    "title": [
+      "خرید و اجاره را برای چند ماه مقایسه می‌کنید؟",
+      "Comparison period in months?",
+      "¿Periodo de comparación en meses?"
+    ],
+    "why": [
+      "می‌خواهید هزینهٔ خرید و اجاره را برای چه مدتی کنار هم بگذارید؟",
+      "Compare capital and running costs over the same period.",
+      "Compare inversión y operación durante el mismo periodo."
+    ],
+    "help": [
+      "ممکن است اجاره برای یک آزمایش سه‌ماهه مناسب باشد، ولی مقایسه برای استفادهٔ دوساله نتیجهٔ دیگری بدهد. مدت مورد نظر خودتان را بنویسید.",
+      "A three-month pilot differs from a two-year commitment.",
+      "Un piloto de tres meses difiere de un compromiso de dos años."
+    ],
+    "article": "cost",
+    "options": [],
+    "kind": "number",
+    "unit": "months",
+    "when": null
+  },
+  {
+    "id": "owner",
+    "step": 4,
+    "title": [
+      "چه کسی راه‌اندازی و نگهداری می‌کند؟",
+      "Who will implement and maintain it?",
+      "¿Quién lo instalará y mantendrá?"
+    ],
+    "why": [
+      "بعد از راه‌اندازی، چه کسی مراقب کارکرد سیستم است و هنگام خرابی به آن رسیدگی می‌کند؟",
+      "Updates, monitoring and incidents need an owner.",
+      "Actualizaciones, supervisión e incidencias necesitan responsable."
+    ],
+    "help": [
+      "اگر تیم شما تازه وارد این حوزه شده، می‌تواند برای راه‌اندازی یا پشتیبانی از پیمانکار کمک بگیرد؛ حتی وقتی اجرا باید داخل سازمان بماند.",
+      "A new team can work with a contractor on internal infrastructure.",
+      "Un equipo nuevo puede trabajar con proveedor en infraestructura interna."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "experienced",
+        "label": [
+          "تیم فنی باتجربه",
+          "Experienced technical team",
+          "Equipo técnico con experiencia"
+        ]
+      },
+      {
+        "value": "new",
+        "label": [
+          "تیم نرم‌افزار تازه‌کار در این زمینه",
+          "Software team new to this",
+          "Equipo nuevo en este ámbito"
+        ]
+      },
+      {
+        "value": "provider",
+        "label": [
+          "پیمانکار با پشتیبانی",
+          "Contractor with support",
+          "Proveedor con soporte"
+        ]
+      },
+      {
+        "value": "none",
+        "label": [
+          "مسئول مشخص نداریم",
+          "No assigned owner",
+          "Sin responsable asignado"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "success",
+    "step": 5,
+    "title": [
+      "کدام نتیجه برای شما تعیین‌کننده است؟ (تا ۳ مورد)",
+      "Which outcomes matter most? (up to 3)",
+      "¿Qué resultados importan más? (hasta 3)"
+    ],
+    "why": [
+      "چه تغییری در نتیجهٔ کار باید ببینید تا استفاده از این مدل برایتان ارزش داشته باشد؟",
+      "Acceptance criteria must reflect the actual work.",
+      "La aceptación debe reflejar el trabajo real."
+    ],
+    "help": [
+      "مثلاً در نامهٔ مالی، حفظ دقیق عددها مهم است؛ در دستیار کدنویسی، تغییری که آزمون‌ها را خراب نکند. حداکثر سه مورد مهم‌تر را انتخاب کنید.",
+      "In a financial letter, preserving amounts may matter more than prose.",
+      "En una carta financiera, conservar importes puede importar más que la prosa."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "cited",
+        "label": [
+          "پاسخ درست با منبع",
+          "Correct answer with sources",
+          "Respuesta correcta con fuentes"
+        ]
+      },
+      {
+        "value": "exact",
+        "label": [
+          "حفظ نام، عدد و معنی",
+          "Preserve names, numbers and meaning",
+          "Conservar nombres, cifras y sentido"
+        ]
+      },
+      {
+        "value": "fields",
+        "label": [
+          "فیلدهای دقیق با قالب ثابت",
+          "Exact fields in a fixed format",
+          "Campos exactos con formato fijo"
+        ]
+      },
+      {
+        "value": "editing",
+        "label": [
+          "کاهش زمان اصلاح انسانی",
+          "Less human correction time",
+          "Menos tiempo de corrección humana"
+        ]
+      },
+      {
+        "value": "tests",
+        "label": [
+          "اصلاح کد با آزمون موفق",
+          "Code changes that pass tests",
+          "Cambios de código con pruebas aprobadas"
+        ]
+      },
+      {
+        "value": "tools",
+        "label": [
+          "اجرای درست کار با ابزار",
+          "Correct tool actions",
+          "Acciones correctas con herramientas"
+        ]
+      },
+      {
+        "value": "latency",
+        "label": [
+          "پاسخ به‌موقع زیر بار",
+          "Timely answers under load",
+          "Respuestas a tiempo bajo carga"
+        ]
+      }
+    ],
+    "kind": "multi",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "threshold",
+    "step": 5,
+    "title": [
+      "نمونه یا حد پذیرش مشخصی دارید؟",
+      "Do you have an acceptance threshold or example?",
+      "¿Tiene un umbral o ejemplo de aceptación?"
+    ],
+    "why": [
+      "اگر می‌دانید چه نتیجه‌ای قابل قبول است، کوتاه توضیح بدهید.",
+      "Separate required criteria from negotiable preferences.",
+      "Separe requisitos de preferencias negociables."
+    ],
+    "help": [
+      "مثلاً بنویسید «مبلغ و شمارهٔ فاکتور نباید اشتباه استخراج شوند». توضیح کلی کافی است؛ نیازی به واردکردن سند واقعی یا اطلاعات محرمانه نیست.",
+      "Describe it generally; no real or confidential content is needed.",
+      "Descríbalo de forma general; no introduzca contenido confidencial."
+    ],
+    "article": "evaluation",
+    "options": [],
+    "kind": "text",
+    "unit": null,
+    "when": null
+  },
+  {
+    "id": "risk",
+    "step": 5,
+    "title": [
+      "اگر پاسخ غلط باشد، پیش از استفاده چه اتفاقی می‌افتد؟",
+      "What happens before a wrong answer is used?",
+      "¿Qué ocurre antes de usar una respuesta errónea?"
+    ],
+    "why": [
+      "می‌خواهیم بدانیم خطای پاسخ کجا دیده و اصلاح می‌شود و چه اثری بر کار شما می‌گذارد.",
+      "Draft errors and decision or action errors differ in impact.",
+      "Errores de borrador, decisión y acción tienen distinto impacto."
+    ],
+    "help": [
+      "یک پیش‌نویس که همکار شما آن را می‌خواند با پاسخی که مستقیم به مشتری می‌رسد فرق دارد. نزدیک‌ترین حالت به کار خودتان را انتخاب کنید.",
+      "A larger model does not replace review of sensitive outputs.",
+      "Un modelo mayor no sustituye la revisión de salidas sensibles."
+    ],
+    "article": "evaluation",
+    "options": [
+      {
+        "value": "review",
+        "label": [
+          "انسان بازبینی می‌کند",
+          "Human review",
+          "Revisión humana"
+        ]
+      },
+      {
+        "value": "direct",
+        "label": [
+          "مستقیم به کاربر می‌رسد",
+          "Sent directly to users",
+          "Llega directamente al usuario"
+        ]
+      },
+      {
+        "value": "decision",
+        "label": [
+          "مبنای تصمیم مهم است",
+          "Used for important decisions",
+          "Se usa en decisiones importantes"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "noTools"
+  },
+  {
+    "id": "availability",
+    "step": 5,
+    "title": [
+      "اگر سرویس قطع شود چه چیزی مختل می‌شود؟",
+      "What does an outage interrupt?",
+      "¿Qué interrumpe una caída?"
+    ],
+    "why": [
+      "اگر دستیار چند ساعت از دسترس خارج شود، کارها چقدر معطل می‌مانند؟",
+      "Recovery and fallback depend on the impact of downtime.",
+      "La recuperación depende del impacto de la caída."
+    ],
+    "help": [
+      "برای یک ابزار آزمایشی شاید چند ساعت توقف قابل تحمل باشد. اگر کار اصلی سازمان متوقف می‌شود، باید راه جایگزین و شیوهٔ بازیابی را هم در نظر بگیریم.",
+      "Continuity needs do not automatically imply buying a second GPU.",
+      "La continuidad no implica automáticamente comprar otra GPU."
+    ],
+    "article": "serving",
+    "options": [
+      {
+        "value": "hours",
+        "label": [
+          "چند ساعت توقف قابل تحمل است",
+          "Several hours are tolerable",
+          "Se toleran varias horas"
+        ]
+      },
+      {
+        "value": "critical",
+        "label": [
+          "مسیر اصلی کار متوقف می‌شود",
+          "Core operations stop",
+          "Se detiene la operación principal"
+        ]
+      },
+      {
+        "value": "always",
+        "label": [
+          "خدمت شبانه‌روزی است",
+          "Round-the-clock service",
+          "Servicio continuo"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "production"
+  },
+  {
+    "id": "loadDefinition",
+    "step": 2,
+    "when": "loadDefinition",
+    "title": [
+      "منظورتان از درخواست هم‌زمان کدام است؟",
+      "Does this count active requests or queued jobs?",
+      "¿Cuenta solicitudes activas o trabajos en cola?"
+    ],
+    "why": [
+      "مدل برای درخواست‌هایی که در حال پاسخ‌دادن به آن‌هاست حافظه مصرف می‌کند؛ درخواست‌های منتظر در صف را جدا حساب می‌کنیم.",
+      "Each user may submit several jobs. Memory depends on active requests, not the user count.",
+      "Cada persona puede enviar varios trabajos. La memoria depende de solicitudes activas, no de usuarios."
+    ],
+    "help": [
+      "مثلاً از ۲۰ درخواست رسیده، ممکن است ۴ درخواست در حال پردازش و ۱۶ درخواست منتظر باشند. اگر عدد قبلی شامل هر ۲۰ مورد بود، گزینهٔ صف را انتخاب کنید. برنامه‌ها هم ممکن است بدون دخالت کاربر چند درخواست بفرستند.",
+      "Each user may submit several jobs. Memory depends on active requests, not the user count.",
+      "Cada persona puede enviar varios trabajos. La memoria depende de solicitudes activas, no de usuarios."
+    ],
+    "kind": "select",
+    "options": [
+      {
+        "value": "active",
+        "label": [
+          "هم‌زمان در حال پردازش",
+          "Processing simultaneously",
+          "Procesándose a la vez"
+        ]
+      },
+      {
+        "value": "queued",
+        "label": [
+          "ارسال‌شده؛ بخشی در صف می‌ماند",
+          "Submitted; some wait in the queue",
+          "Enviados; algunos esperan"
+        ]
+      },
+      {
+        "value": "machines",
+        "label": [
+          "درخواست فعال کاربران و سامانه‌ها",
+          "Active human and system requests",
+          "Solicitudes activas de personas y sistemas"
+        ]
+      }
+    ],
+    "unit": null,
+    "article": "serving"
+  },
+  {
+    "id": "workdays",
+    "step": 4,
+    "when": "usageCost",
+    "title": [
+      "چند روز در ماه از سرویس استفاده می‌کنید؟",
+      "Working days per month?",
+      "¿Días de uso al mes?"
+    ],
+    "why": [
+      "برای حساب‌کردن مصرف ماهانه، تعداد روزهای استفاده را لازم داریم.",
+      "Used for monthly consumption; an average is different from the maximum response size.",
+      "Para consumo mensual; un promedio no es el tamaño máximo de respuesta."
+    ],
+    "help": [
+      "اگر فقط روزهای کاری از سرویس استفاده می‌کنید، همان روزها را بشمارید. برای سرویس هرروزه، تعداد روزهای ماه را بنویسید.",
+      "Used for monthly consumption; an average is different from the maximum response size.",
+      "Para consumo mensual; un promedio no es el tamaño máximo de respuesta."
+    ],
+    "kind": "number",
+    "options": [],
+    "unit": "days",
+    "article": "cost"
+  },
+  {
+    "id": "averageInputTokens",
+    "step": 4,
+    "when": "usageCost",
+    "title": [
+      "هر درخواست به‌طور متوسط چند توکن ورودی دارد؟",
+      "Average input tokens per request?",
+      "¿Promedio de tokens de entrada?"
+    ],
+    "why": [
+      "برای هزینهٔ مصرف، میانگین طول درخواست‌ها مهم است؛ نه طولانی‌ترین درخواستی که ممکن است بفرستید.",
+      "Used for monthly consumption; an average is different from the maximum response size.",
+      "Para consumo mensual; un promedio no es el tamaño máximo de respuesta."
+    ],
+    "help": [
+      "تعداد توکن چند درخواست معمول را با توکن‌ساز مدل بشمارید و میانگین بگیرید. سؤال، دستور، سابقهٔ گفتگو و متن اسنادی که همراه آن می‌فرستید را هم حساب کنید.",
+      "Used for monthly consumption; an average is different from the maximum response size.",
+      "Para consumo mensual; un promedio no es el tamaño máximo de respuesta."
+    ],
+    "kind": "number",
+    "options": [],
+    "unit": "tokens",
+    "article": "cost"
+  },
+  {
+    "id": "averageOutputTokens",
+    "step": 4,
+    "when": "usageCost",
+    "title": [
+      "هر پاسخ به‌طور متوسط چند توکن دارد؟",
+      "Average output tokens per request?",
+      "¿Promedio de tokens de salida?"
+    ],
+    "why": [
+      "طول معمول پاسخ‌ها را بنویسید تا مصرف ماهانه را حساب کنیم.",
+      "Used for monthly consumption; an average is different from the maximum response size.",
+      "Para consumo mensual; un promedio no es el tamaño máximo de respuesta."
+    ],
+    "help": [
+      "مثلاً اگر بیشتر پاسخ‌ها ۳۰۰ توکن دارند ولی اجازهٔ پاسخ تا ۲۰۰۰ توکن را داده‌اید، اینجا ۳۰۰ را بنویسید. اگر هنوز اندازه نگرفته‌اید، می‌توانید عدد تقریبی بدهید یا از این پرسش بگذرید.",
+      "Used for monthly consumption; an average is different from the maximum response size.",
+      "Para consumo mensual; un promedio no es el tamaño máximo de respuesta."
+    ],
+    "kind": "number",
+    "options": [],
+    "unit": "tokens",
+    "article": "cost"
+  },
+  {
+    "id": "apiCostExample",
+    "step": 4,
+    "when": "external",
+    "title": [
+      "هزینهٔ کدام نمونهٔ API را مقایسه کنیم؟",
+      "Which API cost example should we compare?",
+      "¿Qué ejemplo de coste API comparamos?"
+    ],
+    "why": [
+      "تعرفهٔ رسمی سنگاپور برای مقایسه است؛ دسترسی حساب شما و اجازهٔ خروج داده باید جدا برقرار باشد.",
+      "Official Singapore tariffs are comparison examples; account access and data permission are separate requirements.",
+      "Tarifas oficiales de Singapur como ejemplos; acceso y permiso de datos son requisitos aparte."
+    ],
+    "help": [
+      "خروجی متوسط باید توکن تفکرِ قابل‌صورتحساب را هم شامل شود؛ سقف خروجی را جای میانگین ننویسید.",
+      "Average output must include billable reasoning tokens; do not substitute the output limit.",
+      "La salida media incluye tokens de razonamiento facturables; no use el límite máximo."
+    ],
+    "kind": "select",
+    "unit": null,
+    "article": "cost",
+    "options": [
+      {
+        "value": "qwen37-plus-singapore",
+        "label": [
+          "Qwen3.7-Plus · Singapore",
+          "Qwen3.7-Plus · Singapore",
+          "Qwen3.7-Plus · Singapore"
+        ]
+      },
+      {
+        "value": "qwen37-max-singapore",
+        "label": [
+          "Qwen3.7-Max · Singapore",
+          "Qwen3.7-Max · Singapore",
+          "Qwen3.7-Max · Singapore"
+        ]
+      }
+    ]
+  }
+]

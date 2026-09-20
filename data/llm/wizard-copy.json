@@ -1,0 +1,536 @@
+{
+  "fa": {
+    "wizardTitle": "برای سازمان شما از کجا شروع کنیم؟",
+    "wizardIntro": "با چهار پرسش، مسیر شروع و روش بررسی نتیجه را پیدا کنید؛ لازم نیست نام مدل یا GPU بدانید.",
+    "expertLink": "مستقیم به جدول‌ها و راهنمای فنی",
+    "managerNoteTitle": "هنوز مسئله را مشخص نکرده‌اید؟",
+    "managerNote": [
+      "یک کار تکراری با خروجی قابل بررسی انتخاب کنید: پاسخ از آیین‌نامه، استخراج مبلغ فاکتور یا تهیهٔ پیش‌نویس نامه. مشخص کنید پاسخ درست را چه کسی می‌شناسد و اصلاح خروجی امروز چقدر زمان می‌گیرد.",
+      "برای شروع، خرید مدل بزرگ یا GPU پرهزینه را پیش‌فرض نگیرید. جست‌وجو، قواعد، ابزار موجود یا یک مدل کوچک ممکن است برای همان کار کافی باشند. با چند نمونهٔ واقعیِ مجاز، کیفیت خروجی و زمان بازبینی را با روش فعلی مقایسه کنید.",
+      "اگر خروجی بد است، ابتدا محل شکست را پیدا کنید: خواندن سند، یافتن منبع، محاسبه یا تولید پاسخ. مدل بزرگ‌تر خطای استخراج جدول یا اتصال نادرست به اطلاعات سازمان را خودبه‌خود حل نمی‌کند.",
+      "از مجری، یک پایلوت محدود با معیار تحویل روشن بخواهید؛ هزینهٔ راه‌اندازی، هزینهٔ تکرارشونده و مسئول نگهداری را جدا دریافت کنید. توسعهٔ زیرساخت زمانی توجیه دارد که نتیجهٔ پایلوت نشان دهد کیفیت، حافظه یا زمان پاسخِ راهکار ساده‌تر کافی نیست."
+    ],
+    "cta": "اگر برای راه‌اندازی مدل سازمانی نیاز به مشاوره دارید، با ما تماس بگیرید.",
+    "revealContact": "نمایش راه تماس",
+    "copyEmail": "کپی ایمیل",
+    "composeEmail": "نوشتن ایمیل",
+    "emailCopied": "ایمیل کپی شد",
+    "questions": [
+      "می‌خواهید کدام کار بهتر انجام شود؟",
+      "ورودی یا حدود همین کار چیست؟",
+      "اطلاعات این کار کجا اجازهٔ پردازش دارد؟",
+      "چه کسی راهکار را راه‌اندازی و نگهداری می‌کند؟"
+    ],
+    "tasks": {
+      "documents": "پاسخ به سؤال از اسناد",
+      "writing": "نوشتن، خلاصه و ترجمه",
+      "extraction": "استخراج اطلاعات فرم و فاکتور",
+      "reporting": "گزارش از داده‌های سازمان",
+      "coding": "کمک به برنامه‌نویسی",
+      "operations": "انجام عملیات در سامانه‌ها"
+    },
+    "inputs": {
+      "text": "متن قابل استخراج",
+      "scan": "اسکن یا تصویر",
+      "live": "ترکیب اسناد و اطلاعات زندهٔ سامانه",
+      "unknown": "هنوز مشخص نیست",
+      "provided": "اطلاعات در متن ورودی هست",
+      "internal": "اطلاعات داخلی سازمان هم لازم است",
+      "database": "پایگاه داده، CRM یا ERP",
+      "spreadsheet": "فایل Excel یا CSV",
+      "completion": "پیشنهاد کد هنگام تایپ",
+      "assistant": "توضیح یا اصلاح با هدایت برنامه‌نویس",
+      "agent": "واگذاری کار تا ویرایش و آزمون",
+      "approval": "پیشنهاد اقدام با تأیید انسان",
+      "bounded": "اجرای محدود در دامنهٔ مشخص"
+    },
+    "policies": {
+      "approved": "نزد ارائه‌دهندهٔ تأییدشده هم مجاز است",
+      "internal": "باید در زیرساخت تحت کنترل سازمان بماند",
+      "unknown": "سیاست سازمان هنوز مشخص نیست"
+    },
+    "owners": {
+      "team": "تیم فنی خودمان",
+      "provider": "پیمانکار یا ارائه‌دهندهٔ خدمت",
+      "unknown": "هنوز مسئول مشخصی نداریم"
+    },
+    "next": "ادامه",
+    "back": "قبلی",
+    "reset": "شروع مجدد",
+    "show": "دیدن مسیر پیشنهادی",
+    "edit": "ویرایش پاسخ‌ها",
+    "step": "پرسش",
+    "result": "مسیر پیشنهادی شما",
+    "prepare": "برای شروع آماده کنید",
+    "supply": "راه‌اندازی و نگهداری",
+    "acceptance": "چگونه نتیجه را بسنجیم؟",
+    "openQuestion": "چه چیزی تصمیم را تغییر می‌دهد؟",
+    "sources": "مطالعه و مقایسه",
+    "technical": "برای تیم فنی",
+    "candidates": "نامزدهای آزمون، متناسب با همین کار",
+    "table": "مدل‌های این کاربرد",
+    "filter": "فیلتر فعال",
+    "catalog": "کل کاتالوگ",
+    "profile": "مشخصات و نتایج آزمون",
+    "run": "راهنمای اجرا",
+    "memory": "برآورد حافظه",
+    "noMemory": "حافظهٔ اجرا هنوز محاسبه نشده؛ حجم فایل مدل",
+    "brief": "خلاصهٔ درخواست برای پیمانکار",
+    "copy": "کپی خلاصه",
+    "copied": "کپی شد",
+    "manualCopy": "کپی خودکار نشد؛ متن را انتخاب و کپی کنید.",
+    "noScript": "برای استفاده از راهنمای پرسش‌وپاسخ و نمایش راه تماس، جاوااسکریپت را فعال کنید. جدول‌ها و یادداشت‌های راهنما در ادامه‌اند.",
+    "retrieval": "بازیابی و بازرتبه‌بندی",
+    "languageGap": "برای این کار، نتیجهٔ مستقلِ زبان انتخاب‌شده ثبت نشده است.",
+    "license": "شرایط استفاده",
+    "scenario": "نوع استفاده",
+    "internalUse": "استفادهٔ داخلی",
+    "customerUse": "محصول برای مشتری",
+    "serviceUse": "ارائهٔ سرویس استنتاج",
+    "licenseScope": "",
+    "licenseConditional": "",
+    "memoryAssumptions": "ورودی ۴۰۹۶ توکن، یک درخواست فعال و حاشیهٔ موتور؛ این برآورد وعدهٔ سرعت نیست.",
+    "smallHardware": "برای کار محدود، ابتدا رایانه یا سرور موجود را بررسی کنید: RAM، پشتیبانی موتور و زمان پاسخ را جدا بسنجید. افزایش کاربران الزاماً مدل بزرگ‌تری نمی‌خواهد.",
+    "preparation": "چند نمونهٔ نماینده، خروجی درست یا قابل‌قبول هر نمونه، خطاهای پرهزینه و فردی که پاسخ را تأیید می‌کند مشخص کنید.",
+    "policyText": {
+      "approved": "نمونه‌ها می‌توانند نزد ارائه‌دهندهٔ تأییدشده پردازش شوند؛ فقط دادهٔ لازم را ارسال کنید.",
+      "internal": "داده در زیرساخت مجاز سازمان می‌ماند؛ حتی پیمانکار باید اجرا را همان‌جا راه‌اندازی کند.",
+      "unknown": "آزمون نخست را با دادهٔ عمومی یا ساختگی انجام دهید و محل مجاز پردازش را از مسئول داده مشخص کنید."
+    },
+    "ownerText": {
+      "team": "تیم داخلی یک آزمون محدود را راه‌اندازی کند و مسئول به‌روزرسانی، پایش و رفع خطا را مشخص کند.",
+      "provider": "از مجری، پایلوت محدود با معیار تحویل، هزینهٔ اولیه و تکرارشوندهٔ جدا و مسئول نگهداری بخواهید.",
+      "unknown": "ابتدا مسئول تحویل و نگهداری را تعیین کنید؛ با خدمت آمادهٔ مجاز یا مجری پایلوت شروع کنید، نه دانلود وزن خام."
+    },
+    "routes": {
+      "writing": [
+        "از ابزار موجودِ تأییدشده یا مدل کوچک برای یک نوع نامه، خلاصه یا ترجمه شروع کنید. اگر مدل مولد لازم شد، اندازهٔ حدود ۱ تا ۴ میلیارد پارامتر نامزد پایلوت است؛ ۴ تا ۸ میلیارد مرحلهٔ بعدی بررسی است.",
+        "حفظ معنی، عدد و لحن، حذف ادعاهای ساخته‌شده و زمان اصلاح انسانی را بسنجید.",
+        "اگر اصلاح ورودی خطای معنی یا طول متن را حل نکرد، مدل قوی‌تر را روی همان نمونه‌ها مقایسه کنید."
+      ],
+      "documents": [
+        "با جست‌وجوی واژه و عبارت در اسناد متنی شروع کنید. اگر پیدا کردن بند درست کافی نیست، بازیابی معنایی کوچک و پاسخ‌گوی حدود ۳ تا ۸ میلیارد را در پایلوت بررسی کنید؛ بازرتبه‌بند (reranker) فقط وقتی لازم است که کیفیت بازیابی به آن نیاز داشته باشد.",
+        "پیداشدن بند درست، ارجاع معتبر، رعایت نسخه و دسترسی سند و خودداری از پاسخ بدون منبع را جدا بسنجید.",
+        "ابتدا معلوم کنید شکست از خواندن سند، بازیابی یا ساخت پاسخ است؛ فقط شکست بخش پاسخ‌گو دلیل بررسی مدل مولد بزرگ‌تر است."
+      ],
+      "scan": [
+        "ابتدا OCR و استخراج چیدمان را روی چند صفحه بررسی کنید و شمارهٔ صفحه و محل شاهد را نگه دارید. اگر نمودار یا رابطهٔ سلول‌ها از دست می‌رود، بازیابی تصویری یا ترکیبی را مقایسه کنید؛ PDF بودن به‌تنهایی دلیل نیاز به مدل بینایی نیست.",
+        "عدد و واحد، ترتیب خواندن، مرز سلول‌ها، صفحهٔ شاهد، هزینهٔ نمایه‌سازی و تأخیر بازیابی را کنترل کنید.",
+        "بازیاب تصویری صفحه را پیدا می‌کند و پاسخ‌گو پاسخ می‌سازد. اندازهٔ ۲B نامزد شروع آزمون تصویری است؛ ۸B فقط با بهبود قابل مشاهده در همان اسناد."
+      ],
+      "report": [
+        "گزارش و جمع فروش را با SQL، ابزار BI یا کد روی همهٔ ردیف‌های معتبر حساب کنید. مدل، در صورت نیاز، درخواست را تفسیر یا نتیجه را توضیح می‌دهد؛ عدد نهایی از موتور محاسبه می‌آید.",
+        "عدد را با گزارش مرجع تطبیق دهید؛ فیلتر، واحد، فرمول، پوشش ردیف‌ها، زمان دریافت و دسترسی را بررسی کنید.",
+        "اگر زبان درخواست پیچیده است، مدل کوچک برای تبدیل درخواست به پرس‌وجوی قابل بازبینی آزموده شود. RAG روی چند قطعه، جمع همهٔ ردیف‌ها را تضمین نمی‌کند."
+      ],
+      "extraction": [
+        "برای فرم متنی با ساختار ثابت، parser، قواعد و اعتبارسنجی فیلد را خط پایه بگذارید. بخش مبهم می‌تواند به مدل کوچک حدود ۱ تا ۴ میلیارد سپرده شود.",
+        "درستی مبلغ، تاریخ، شناسه و ارتباط فیلدها را با مرجع بسنجید؛ JSON معتبر به‌تنهایی کافی نیست.",
+        "خطاهای واقعی فیلد و زمان اصلاح، معیار رفتن به مدل قوی‌ترند؛ قواعد بخش‌های قطعی را حفظ کنید."
+      ],
+      "completion": [
+        "از ابزار ویرایشگر با مدل کوچکِ تکمیل کد شروع کنید. مدل باید ادامه یا جای خالی کد را کامل کند؛ این کار با واگذاری ویرایش و آزمون کل پروژه فرق دارد.",
+        "نسبت پیشنهاد پذیرفته‌شده، تأخیر هنگام تایپ و خطاهای واردشده به کد را بسنجید.",
+        "فقط اگر کیفیت پیشنهاد یا زمان پاسخ کافی نیست، مدل و موتور دیگری را مقایسه کنید؛ خرید چند GPU پیش‌نیاز این کار نیست."
+      ],
+      "coding": [
+        "برای توضیح و اصلاح هدایت‌شدهٔ کد، دستیار دستورپذیر را روی چند کار واقعی پروژه آزمایش کنید و تغییرات را پیش از پذیرش ببینید.",
+        "درستی تغییر، عبور آزمون‌ها، زمان بازبینی و خطای پنهان را بسنجید؛ نمرهٔ حل مسئله معادل کیفیت ویرایش مخزن نیست.",
+        "برای کار چندفایلی یا استفاده از ابزار، شواهد همان نقش لازم است؛ مدل بزرگ‌تر بدون محیط و آزمون مناسب کافی نیست."
+      ],
+      "coding-agent": [
+        "کار را به یک تغییر مشخص در محیط جدا محدود کنید. عامل باید تغییرات و نتیجهٔ آزمون را برای بازبینی تحویل دهد؛ دسترسی و ابزارها به همان کار محدود باشند.",
+        "موفقیت انتهابه‌انتها، تغییرات ناخواسته، زمان آزمون و بازبینی و امکان برگشت را بسنجید.",
+        "اگر مدل کوچک در برنامه‌ریزی یا اصلاح شکست می‌خورد، مدل قوی‌تر را با همان ابزارها و بودجهٔ تلاش مقایسه کنید."
+      ],
+      "operations": [
+        "از گردش‌کار مشخص، ابزارهای محدود و تأیید انسانی شروع کنید. مدل می‌تواند درخواست را بفهمد یا اقدام پیشنهاد دهد؛ اختیار اجرا فقط در دامنهٔ تعیین‌شده باشد.",
+        "درستی اقدام، اجرای خارج از دامنه، ثبت نتیجه و امکان توقف و برگشت را آزمایش کنید.",
+        "نیاز واقعی به برنامه‌ریزی پیچیده‌تر می‌تواند مدل قوی‌تر بخواهد؛ افزایش اندازه مجوز بیشتری برای عامل ایجاد نمی‌کند."
+      ],
+      "discovery": [
+        "یک نمونهٔ کوچک از کار انتخاب کنید و نوع ورودی را مشخص کنید. برای اسناد یک صفحه، برای استخراج یک فرم و برای گزارش یک خروجی مرجع کافی است تا مسیر آزمون نخست روشن شود.",
+        "خروجی فعلی و زمان انجام کار را ثبت کنید؛ فرد مسئول باید بتواند درست یا غلط بودن نتیجه را تشخیص دهد.",
+        "پس از روشن‌شدن ورودی، همین چهار پرسش را تکمیل کنید. تا آن زمان خرید مدل یا GPU تازه مبنای مشخصی ندارد."
+      ],
+      "live": [
+        "اسناد و اطلاعات زنده دو مسیر دارند: بند سند از بازیابی می‌آید و وضعیت امروز از اتصال مجاز به سامانه. پاسخ باید منبع و زمان دریافت هر کدام را نشان دهد.",
+        "پیداشدن بند درست، ارجاع معتبر، رعایت نسخه و دسترسی سند و خودداری از پاسخ بدون منبع را جدا بسنجید.",
+        "اگر زبان درخواست پیچیده است، مدل کوچک برای تبدیل درخواست به پرس‌وجوی قابل بازبینی آزموده شود. RAG روی چند قطعه، جمع همهٔ ردیف‌ها را تضمین نمی‌کند."
+      ],
+      "internal-writing": [
+        "متن‌های مرجع داخلی را با بازیابی مجاز به مدل برسانید و تولید نامه یا خلاصه را جدا ارزیابی کنید. فاین‌تیون جای اتصال به اطلاعات تازهٔ سازمان را نمی‌گیرد.",
+        "حفظ معنی، عدد و لحن، حذف ادعاهای ساخته‌شده و زمان اصلاح انسانی را بسنجید.",
+        "ابتدا معلوم کنید شکست از خواندن سند، بازیابی یا ساخت پاسخ است؛ فقط شکست بخش پاسخ‌گو دلیل بررسی مدل مولد بزرگ‌تر است."
+      ],
+      "scan-report": [
+        "ابتدا جدول اسکن‌شده را استخراج و سلول‌ها را با تصویر تطبیق دهید؛ سپس محاسبه را با کد روی دادهٔ ساخت‌یافته انجام دهید.",
+        "عدد را با گزارش مرجع تطبیق دهید؛ فیلتر، واحد، فرمول، پوشش ردیف‌ها، زمان دریافت و دسترسی را بررسی کنید.",
+        "بازیاب تصویری صفحه را پیدا می‌کند و پاسخ‌گو پاسخ می‌سازد. اندازهٔ ۲B نامزد شروع آزمون تصویری است؛ ۸B فقط با بهبود قابل مشاهده در همان اسناد."
+      ]
+    },
+    "scenarioNotes": {
+      "internal": "",
+      "customer": "",
+      "service": ""
+    },
+    "runtimeLicense": "",
+    "serviceTerms": ""
+  },
+  "en": {
+    "wizardTitle": "Where should your organization start?",
+    "wizardIntro": "Answer four questions to find a starting approach and a way to assess it. No model or GPU expertise is needed.",
+    "expertLink": "Go directly to technical guides and comparison tables",
+    "managerNoteTitle": "Still defining the task?",
+    "managerNote": [
+      "Choose one recurring task with an output someone can check: answering a policy question, extracting an invoice amount, or drafting a letter. Identify who knows the correct result and how much review the task currently requires.",
+      "Start by comparing the existing workflow with search, rules, an approved tool, or a small model. A large model and expensive GPU are not general prerequisites. Use representative data you are allowed to process, and include human review time in the comparison.",
+      "When a result fails, identify whether the problem is document extraction, retrieval, calculation, or generation. A larger model does not automatically fix a lost table structure or an incorrect connection to company records.",
+      "Ask for a bounded pilot with agreed acceptance criteria, separate setup and recurring costs, and a named maintenance owner. Expand the system when the pilot shows that a simpler approach cannot meet the required quality, memory or response time."
+    ],
+    "cta": "For advice on deploying language models in your organization, contact us.",
+    "revealContact": "Show contact details",
+    "copyEmail": "Copy email",
+    "composeEmail": "Write an email",
+    "emailCopied": "Email copied",
+    "questions": [
+      "Which task would you like to improve?",
+      "What is the input or scope of this task?",
+      "Where may this information be processed?",
+      "Who will set up and maintain the solution?"
+    ],
+    "tasks": {
+      "documents": "Answer questions from documents",
+      "writing": "Write, summarize or translate",
+      "extraction": "Extract form and invoice fields",
+      "reporting": "Report on organization data",
+      "coding": "Help with programming",
+      "operations": "Carry out actions in systems"
+    },
+    "inputs": {
+      "text": "Extractable text",
+      "scan": "Scans or images",
+      "live": "Documents and live system records",
+      "unknown": "Not yet known",
+      "provided": "The input contains the needed information",
+      "internal": "Internal organization information is also needed",
+      "database": "Database, CRM or ERP",
+      "spreadsheet": "Excel or CSV file",
+      "completion": "Suggestions while typing",
+      "assistant": "Explain or edit under developer guidance",
+      "agent": "Delegate editing and testing",
+      "approval": "Propose actions for human approval",
+      "bounded": "Limited execution within a defined scope"
+    },
+    "policies": {
+      "approved": "An approved provider may also process it",
+      "internal": "It must remain on organization-controlled infrastructure",
+      "unknown": "The organization has not decided yet"
+    },
+    "owners": {
+      "team": "Our technical team",
+      "provider": "A contractor or service provider",
+      "unknown": "No owner has been assigned"
+    },
+    "next": "Next",
+    "back": "Back",
+    "reset": "Start again",
+    "show": "Show starting plan",
+    "edit": "Edit answers",
+    "step": "Question",
+    "result": "Your starting plan",
+    "prepare": "Prepare for the first trial",
+    "supply": "Setup and maintenance",
+    "acceptance": "How to judge the result",
+    "openQuestion": "What could change the decision?",
+    "sources": "Read and compare",
+    "technical": "For the technical team",
+    "candidates": "Candidates to test on this task",
+    "table": "Models for this task",
+    "filter": "Active filter",
+    "catalog": "Full catalog",
+    "profile": "Profile and evidence",
+    "run": "Execution route",
+    "memory": "Memory estimate",
+    "noMemory": "No estimate for this version; weight sizes",
+    "brief": "Brief for the implementer",
+    "copy": "Copy brief",
+    "copied": "Copied",
+    "manualCopy": "Automatic copy failed; select and copy the text.",
+    "noScript": "Enable JavaScript to use the questions and reveal the contact address. Technical tables and articles follow.",
+    "retrieval": "Retrieval and reranking",
+    "languageGap": "No independent result is recorded for this task in the selected language.",
+    "license": "Usage conditions",
+    "scenario": "Type of use",
+    "internalUse": "Internal use",
+    "customerUse": "Customer-facing product",
+    "serviceUse": "Inference service",
+    "licenseScope": "Weight, runtime software and provider terms are separate. Check the linked weight license for this use; runtime and hosted-service conditions apply independently.",
+    "licenseConditional": "This is a conditional candidate. Confirm the relevant license conditions before commercial adoption; a custom license is not automatically a ban on business use.",
+    "memoryAssumptions": "4,096 input tokens, one active request and runtime reserve; this estimate does not establish speed.",
+    "smallHardware": "For a bounded task, assess existing hardware first: RAM, runtime support and response time are separate checks. More users do not automatically require a larger model.",
+    "preparation": "Prepare representative samples, acceptable outputs, costly failure cases and the person who can verify the answers.",
+    "policyText": {
+      "approved": "The approved provider may process the samples; send only the required data.",
+      "internal": "Data remains on authorized organization infrastructure; a contractor must deploy there too.",
+      "unknown": "Use public or synthetic data for the first trial and ask the data owner to define authorized processing locations."
+    },
+    "ownerText": {
+      "team": "Have the internal team run a bounded trial and assign updates, monitoring and incident handling.",
+      "provider": "Request a bounded pilot with acceptance criteria, separate setup and recurring costs, and a maintenance owner.",
+      "unknown": "Assign delivery and maintenance responsibility first. Start with an approved ready-made service or pilot provider, rather than raw model weights."
+    },
+    "routes": {
+      "writing": [
+        "Start with an approved existing tool or a small model for one kind of writing, summary or translation. If generation is needed, roughly 1–4B parameters is a pilot range; 4–8B is a later comparison.",
+        "Measure meaning, number and tone preservation, unsupported claims and human correction time.",
+        "If better inputs do not resolve meaning errors or input-length limits, compare a stronger model on the same samples."
+      ],
+      "documents": [
+        "Start with keyword search in text documents. If finding the right passage is not enough, pilot small semantic retrieval and a roughly 3–8B answering model; add reranking only when retrieval needs it.",
+        "Evaluate passage retrieval, valid citations, document versions and permissions, and abstention without a source.",
+        "Locate failures in extraction, retrieval or answering; only answering failures justify comparing a larger generator."
+      ],
+      "scan": [
+        "Test OCR and layout extraction on sample pages, keeping page references and evidence regions. If charts or cell relationships are lost, compare visual or hybrid retrieval; a PDF alone does not require a vision model.",
+        "Check numbers, units, reading order, cell boundaries, evidence pages, indexing cost and retrieval latency.",
+        "A visual retriever finds pages; a generator answers. A 2B visual retriever is a starting candidate; compare 8B only for observable gains on those documents."
+      ],
+      "report": [
+        "Use SQL, BI or code to compute reports and sales totals over all valid rows. A model may interpret the request or explain the output; the number comes from the calculation engine.",
+        "Match a reference report and verify filters, units, formulas, row coverage, retrieval time and permissions.",
+        "If requests are linguistically complex, test a small model producing reviewable queries. Retrieval over a few passages does not compute complete totals."
+      ],
+      "extraction": [
+        "For fixed text forms, start with parsers, rules and field validation. Ambiguous fields can be piloted with a roughly 1–4B model.",
+        "Check amounts, dates, identifiers and field relationships against a reference; valid JSON alone is insufficient.",
+        "Use actual field errors and correction time to decide whether a stronger model is needed; retain rules for deterministic fields."
+      ],
+      "completion": [
+        "Start with an editor tool and a small code-completion model. Completing a continuation or gap differs from delegating project editing and tests.",
+        "Measure accepted suggestions, typing latency and defects introduced into code.",
+        "Compare another model or runtime if suggestion quality or latency fails the target; multiple GPUs are not a prerequisite."
+      ],
+      "coding": [
+        "Test an instruction-following assistant on real explanation and guided-editing tasks, reviewing changes before acceptance.",
+        "Measure correctness, test outcomes, review time and hidden defects; coding-problem scores do not establish repository-editing quality.",
+        "Multi-file work and tools need role-specific evidence; model size cannot replace an appropriate environment and tests."
+      ],
+      "coding-agent": [
+        "Limit the agent to one defined change in an isolated environment. Require reviewable edits and test results, with tools and access scoped to the task.",
+        "Measure end-to-end success, unintended changes, test and review time, and rollback.",
+        "If a small model fails planning or editing, compare a stronger one using the same tools and attempt budget."
+      ],
+      "operations": [
+        "Start with a defined workflow, limited tools and human approval. A model may interpret requests or propose actions; execution authority stays bounded.",
+        "Test action correctness, out-of-scope execution, result logging, stopping and rollback.",
+        "Demonstrated planning difficulty may justify a stronger model; size does not grant additional authority."
+      ],
+      "discovery": [
+        "Select one small example and identify its input type. A document page, form or reference report is enough to define the first trial.",
+        "Record the current output and effort; the owner must be able to distinguish correct and incorrect results.",
+        "Once the input is clear, revisit these questions. A new model or GPU has no established justification yet."
+      ],
+      "live": [
+        "Documents and live records need separate paths: retrieval for passages and an authorized connector for current status. Show the source and retrieval time for each.",
+        "Evaluate passage retrieval, valid citations, document versions and permissions, and abstention without a source.",
+        "If requests are linguistically complex, test a small model producing reviewable queries. Retrieval over a few passages does not compute complete totals."
+      ],
+      "internal-writing": [
+        "Use authorized retrieval for internal references and evaluate writing separately. Fine-tuning does not replace access to current organization information.",
+        "Measure meaning, number and tone preservation, unsupported claims and human correction time.",
+        "Locate failures in extraction, retrieval or answering; only answering failures justify comparing a larger generator."
+      ],
+      "scan-report": [
+        "Extract the scanned table and verify cells against the image, then calculate over the structured data with code.",
+        "Match a reference report and verify filters, units, formulas, row coverage, retrieval time and permissions.",
+        "A visual retriever finds pages; a generator answers. A 2B visual retriever is a starting candidate; compare 8B only for observable gains on those documents."
+      ]
+    },
+    "scenarioNotes": {
+      "internal": "For internal use, check the license’s definition of internal use, acceptable-use rules and any user or revenue thresholds.",
+      "customer": "For a customer product, check redistribution, attribution and product-level thresholds.",
+      "service": "For inference services, check hosting and Model as a Service clauses, including group revenue where specified."
+    },
+    "runtimeLicense": "Runtime license",
+    "serviceTerms": "For a hosted route, obtain the provider’s processing location, retention and service terms before sending organization data."
+  },
+  "es": {
+    "wizardTitle": "¿Por dónde debería empezar su organización?",
+    "wizardIntro": "Responda cuatro preguntas para encontrar un punto de partida y saber cómo evaluarlo. No necesita conocer modelos ni GPU.",
+    "expertLink": "Ir directamente a las guías técnicas y tablas comparativas",
+    "managerNoteTitle": "¿Todavía está definiendo la tarea?",
+    "managerNote": [
+      "Elija una tarea recurrente cuyo resultado se pueda comprobar: responder una consulta sobre un procedimiento, extraer el importe de una factura o redactar una carta. Identifique quién conoce la respuesta correcta y cuánto tiempo exige hoy su revisión.",
+      "Compare primero el proceso actual con búsquedas, reglas, una herramienta autorizada o un modelo pequeño. Un modelo grande y una GPU costosa no son requisitos generales. Utilice muestras representativas que esté autorizado a procesar e incluya el tiempo de revisión humana.",
+      "Si el resultado falla, determine si el problema está en la extracción del documento, la recuperación, el cálculo o la generación. Un modelo mayor no corrige por sí solo una tabla mal extraída ni una conexión incorrecta a los registros de la organización.",
+      "Solicite una prueba piloto acotada, criterios de aceptación acordados, costes iniciales y recurrentes por separado, y un responsable de mantenimiento. Amplíe la infraestructura cuando la prueba demuestre que la solución más sencilla no cumple los requisitos de calidad, memoria o tiempo de respuesta."
+    ],
+    "cta": "Si necesita asesoramiento para desplegar modelos de lenguaje en su organización, contacte con nosotros.",
+    "revealContact": "Mostrar datos de contacto",
+    "copyEmail": "Copiar correo",
+    "composeEmail": "Escribir un correo",
+    "emailCopied": "Correo copiado",
+    "questions": [
+      "¿Qué tarea quieres mejorar?",
+      "¿Cuál es la entrada o el alcance de la tarea?",
+      "¿Dónde se permite procesar esta información?",
+      "¿Quién implantará y mantendrá la solución?"
+    ],
+    "tasks": {
+      "documents": "Responder preguntas sobre documentos",
+      "writing": "Redactar, resumir o traducir",
+      "extraction": "Extraer datos de formularios y facturas",
+      "reporting": "Informar sobre datos de la organización",
+      "coding": "Ayudar a programar",
+      "operations": "Realizar operaciones en sistemas"
+    },
+    "inputs": {
+      "text": "Texto extraíble",
+      "scan": "Escaneos o imágenes",
+      "live": "Documentos y registros actualizados del sistema",
+      "unknown": "Aún no se sabe",
+      "provided": "La entrada contiene la información necesaria",
+      "internal": "También se necesita información interna",
+      "database": "Base de datos, CRM o ERP",
+      "spreadsheet": "Archivo Excel o CSV",
+      "completion": "Sugerencias mientras se escribe",
+      "assistant": "Explicar o editar con la guía del programador",
+      "agent": "Delegar edición y pruebas",
+      "approval": "Proponer acciones con aprobación humana",
+      "bounded": "Ejecución limitada a un ámbito definido"
+    },
+    "policies": {
+      "approved": "También puede procesarla un proveedor autorizado",
+      "internal": "Debe permanecer en infraestructura controlada por la organización",
+      "unknown": "La política aún no está definida"
+    },
+    "owners": {
+      "team": "Nuestro equipo técnico",
+      "provider": "Un contratista o proveedor",
+      "unknown": "Todavía no hay un responsable"
+    },
+    "next": "Continuar",
+    "back": "Atrás",
+    "reset": "Empezar de nuevo",
+    "show": "Ver el plan inicial",
+    "edit": "Editar respuestas",
+    "step": "Pregunta",
+    "result": "Tu plan inicial",
+    "prepare": "Prepara la primera prueba",
+    "supply": "Implantación y mantenimiento",
+    "acceptance": "Cómo evaluar el resultado",
+    "openQuestion": "Qué podría cambiar la decisión",
+    "sources": "Lectura y comparación",
+    "technical": "Para el equipo técnico",
+    "candidates": "Candidatos para probar en esta tarea",
+    "table": "Modelos para esta tarea",
+    "filter": "Filtro activo",
+    "catalog": "Catálogo completo",
+    "profile": "Ficha y evidencia",
+    "run": "Ruta de ejecución",
+    "memory": "Estimación de memoria",
+    "noMemory": "Sin estimación para esta versión; tamaño de pesos",
+    "brief": "Resumen para el ejecutor",
+    "copy": "Copiar resumen",
+    "copied": "Copiado",
+    "manualCopy": "No se pudo copiar automáticamente; selecciona y copia el texto.",
+    "noScript": "Activa JavaScript para usar las preguntas y mostrar el contacto. Las tablas y los artículos técnicos aparecen a continuación.",
+    "retrieval": "Recuperación y reordenación",
+    "languageGap": "No hay un resultado independiente registrado para esta tarea en el idioma seleccionado.",
+    "license": "Condiciones de uso",
+    "scenario": "Tipo de uso",
+    "internalUse": "Uso interno",
+    "customerUse": "Producto para clientes",
+    "serviceUse": "Servicio de inferencia",
+    "licenseScope": "Las condiciones de los pesos, del software y del proveedor son distintas. Consulta la licencia de pesos para este uso; el motor y el servicio alojado tienen sus propias condiciones.",
+    "licenseConditional": "Es un candidato condicionado. Confirma las condiciones aplicables antes de adoptarlo comercialmente; una licencia propia no prohíbe automáticamente el uso empresarial.",
+    "memoryAssumptions": "4.096 tokens de entrada, una solicitud activa y reserva del motor; la estimación no acredita velocidad.",
+    "smallHardware": "Para una tarea acotada, evalúa primero el equipo disponible: RAM, compatibilidad del motor y tiempo de respuesta por separado. Más usuarios no implican un modelo mayor.",
+    "preparation": "Prepara muestras representativas, resultados aceptables, fallos costosos y la persona que puede verificar las respuestas.",
+    "policyText": {
+      "approved": "El proveedor autorizado puede procesar las muestras; envía solo los datos necesarios.",
+      "internal": "Los datos permanecen en la infraestructura autorizada; el contratista también debe desplegar allí.",
+      "unknown": "Usa datos públicos o sintéticos en la primera prueba y pide al responsable que defina dónde se permite procesarlos."
+    },
+    "ownerText": {
+      "team": "El equipo interno debe realizar una prueba acotada y asignar actualizaciones, supervisión y resolución de fallos.",
+      "provider": "Solicita un piloto con criterios de aceptación, costes iniciales y recurrentes separados y responsable de mantenimiento.",
+      "unknown": "Asigna primero la responsabilidad de entrega y mantenimiento. Empieza con un servicio autorizado o un proveedor de piloto, no con pesos sin integrar."
+    },
+    "routes": {
+      "writing": [
+        "Empieza con una herramienta autorizada o un modelo pequeño para un tipo de texto, resumen o traducción. Si hace falta generación, 1–4B parámetros es un rango de piloto; 4–8B queda para una comparación posterior.",
+        "Mide la conservación de significado, cifras y tono, las afirmaciones sin respaldo y el tiempo de corrección.",
+        "Si mejorar la entrada no resuelve los errores de significado o longitud, compara un modelo más capaz con las mismas muestras."
+      ],
+      "documents": [
+        "Empieza con búsqueda de palabras en documentos de texto. Si localizar el fragmento correcto no basta, prueba recuperación semántica pequeña y un generador de 3–8B; añade reordenación solo si la recuperación lo necesita.",
+        "Evalúa la recuperación del fragmento, las citas, las versiones y permisos, y la abstención cuando falta una fuente.",
+        "Localiza el fallo en extracción, recuperación o respuesta; solo los fallos de respuesta justifican comparar un generador mayor."
+      ],
+      "scan": [
+        "Prueba OCR y extracción de estructura en unas páginas, conservando referencias y regiones de evidencia. Si se pierden gráficos o relaciones entre celdas, compara recuperación visual o híbrida; ser PDF no exige un modelo visual.",
+        "Comprueba cifras, unidades, orden de lectura, límites de celdas, páginas de evidencia, coste de indexación y latencia.",
+        "El recuperador visual encuentra páginas; el generador responde. Un recuperador visual de 2B es un candidato inicial; compara 8B solo si mejora esos documentos."
+      ],
+      "report": [
+        "Calcula informes y ventas con SQL, BI o código sobre todas las filas válidas. Un modelo puede interpretar la petición o explicar el resultado; la cifra procede del motor de cálculo.",
+        "Contrasta un informe de referencia y verifica filtros, unidades, fórmulas, cobertura de filas, fecha de consulta y permisos.",
+        "Si las peticiones son complejas, prueba un modelo pequeño que produzca consultas revisables. Recuperar unos fragmentos no calcula totales completos."
+      ],
+      "extraction": [
+        "En formularios de texto fijos, empieza con parsers, reglas y validación de campos. Prueba un modelo de 1–4B solo en los campos ambiguos.",
+        "Comprueba importes, fechas, identificadores y relaciones entre campos; un JSON válido no basta.",
+        "Los errores reales y el tiempo de corrección determinan si hace falta un modelo mayor; conserva las reglas de los campos deterministas."
+      ],
+      "completion": [
+        "Empieza con una herramienta del editor y un modelo pequeño de autocompletado. Completar una continuación o un hueco difiere de delegar edición y pruebas del proyecto.",
+        "Mide las sugerencias aceptadas, la latencia al escribir y los defectos introducidos.",
+        "Compara otro modelo o motor si fallan calidad o latencia; varias GPU no son un requisito inicial."
+      ],
+      "coding": [
+        "Prueba un asistente que siga instrucciones en explicaciones y cambios guiados reales; revisa los cambios antes de aceptarlos.",
+        "Mide corrección, pruebas, revisión y defectos ocultos; una nota de ejercicios no acredita edición de repositorios.",
+        "El trabajo en varios archivos y las herramientas necesitan evidencia de ese papel; el tamaño no sustituye un entorno y pruebas adecuados."
+      ],
+      "coding-agent": [
+        "Limita el agente a un cambio concreto en un entorno aislado. Exige cambios y pruebas revisables, con herramientas y acceso limitados a la tarea.",
+        "Mide éxito completo, cambios no deseados, tiempos de prueba y revisión y reversión.",
+        "Si el modelo pequeño falla al planificar o editar, compara uno mayor con las mismas herramientas y presupuesto de intentos."
+      ],
+      "operations": [
+        "Empieza con un flujo definido, herramientas limitadas y aprobación humana. El modelo interpreta o propone; la ejecución permanece acotada.",
+        "Prueba la corrección, las acciones fuera de alcance, el registro, la detención y la reversión.",
+        "Una dificultad de planificación demostrada puede justificar un modelo mayor; el tamaño no otorga más autoridad."
+      ],
+      "discovery": [
+        "Elige un ejemplo pequeño e identifica su entrada. Una página, formulario o informe de referencia basta para definir la primera prueba.",
+        "Registra el resultado y esfuerzo actuales; el responsable debe poder distinguir los resultados correctos.",
+        "Cuando se aclare la entrada, vuelve a las preguntas. Aún no hay una justificación definida para comprar un modelo o GPU."
+      ],
+      "live": [
+        "Los documentos y registros vivos necesitan rutas distintas: recuperación para fragmentos y conexión autorizada para el estado actual. Muestra fuente y fecha de cada dato.",
+        "Evalúa la recuperación del fragmento, las citas, las versiones y permisos, y la abstención cuando falta una fuente.",
+        "Si las peticiones son complejas, prueba un modelo pequeño que produzca consultas revisables. Recuperar unos fragmentos no calcula totales completos."
+      ],
+      "internal-writing": [
+        "Usa recuperación autorizada para referencias internas y evalúa la redacción por separado. El ajuste fino no sustituye el acceso a información actual.",
+        "Mide la conservación de significado, cifras y tono, las afirmaciones sin respaldo y el tiempo de corrección.",
+        "Localiza el fallo en extracción, recuperación o respuesta; solo los fallos de respuesta justifican comparar un generador mayor."
+      ],
+      "scan-report": [
+        "Extrae la tabla escaneada y verifica las celdas contra la imagen; después calcula sobre los datos estructurados con código.",
+        "Contrasta un informe de referencia y verifica filtros, unidades, fórmulas, cobertura de filas, fecha de consulta y permisos.",
+        "El recuperador visual encuentra páginas; el generador responde. Un recuperador visual de 2B es un candidato inicial; compara 8B solo si mejora esos documentos."
+      ]
+    },
+    "scenarioNotes": {
+      "internal": "Para uso interno, comprueba su definición en la licencia, las normas de uso y los umbrales de usuarios o ingresos.",
+      "customer": "Para un producto destinado a clientes, comprueba redistribución, atribución y umbrales del producto.",
+      "service": "Para servicios de inferencia, comprueba las cláusulas de alojamiento y Model as a Service, incluidos los ingresos del grupo cuando proceda."
+    },
+    "runtimeLicense": "Licencia del motor",
+    "serviceTerms": "En un servicio alojado, solicita la ubicación del tratamiento, la retención y las condiciones del servicio antes de enviar datos de la organización."
+  }
+}

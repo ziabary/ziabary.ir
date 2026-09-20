@@ -81,6 +81,8 @@
     row.querySelector<HTMLButtonElement>('.detail-cell button')?.focus({ preventScroll: true });
   }
   onMount(() => {
+    const requestedMemory = Number(new URLSearchParams(location.search).get("gpu-min-memory"));
+    if (Number.isFinite(requestedMemory) && requestedMemory > 0 && requestedMemory <= 100000) { minMemory = requestedMemory; preset = "custom"; }
     const fromHash = () => { void revealGpu(location.hash); };
     const repeatLink = (event: MouseEvent) => {
       const anchor = event.target instanceof Element ? event.target.closest('a') : null;

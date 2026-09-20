@@ -33,7 +33,7 @@ Ollama برای شروع سریع و مدیریت راحت مدل‌ها انت�
 | SGLang | موتور سرویس‌دهی با تأکید بر کش، زمان‌بندی و اجرای توزیع‌شده | بارهای تکرارشونده، عامل‌ها و سرویس‌هایی با نیاز به تنظیم جدی | انتخاب backend، سیاست کش و مسیریابی درخواست‌ها |
 | llama.cpp | اجرای کم‌وابستگی روی سخت‌افزار متنوع و اکوسیستم GGUF | CPU، Apple Silicon، اجرای ترکیبی CPU/GPU و سرویس GGUF | ساخت و تنظیم backend، ظرفیت slots و اجزای بیرونی سرویس |
 
-این جمع‌بندی بر امکانات رسمی [Ollama](https://github.com/ollama/ollama)، [vLLM](https://github.com/vllm-project/vllm)، [SGLang](https://docs.sglang.io/) و [llama.cpp](https://github.com/ggml-org/llama.cpp) تکیه دارد؛ ستون کاربرد، پیشنهاد انتخاب است. vLLM و SGLang منحصر به چند GPU یا دیتاسنتر نیستند و llama.cpp هم صرفاً برنامه‌ای برای خط فرمان نیست.
+اطلاعات جدول از مستندات رسمی [Ollama](https://github.com/ollama/ollama)، [vLLM](https://github.com/vllm-project/vllm)، [SGLang](https://docs.sglang.io/) و [llama.cpp](https://github.com/ggml-org/llama.cpp) گردآوری شده‌اند. کاربردهای پیشنهادی بر اساس امکانات هر نرم‌افزار مشخص شده‌اند. vLLM و SGLang منحصر به چند GPU یا دیتاسنتر نیستند و llama.cpp هم صرفاً برنامه‌ای برای خط فرمان نیست.
 
 ## «چند درخواست هم‌زمان» دقیقاً چه معنایی دارد؟
 
@@ -93,7 +93,7 @@ llama.cpp برای اجرای مدل روی [طیفی از سخت‌افزاره
 
 ### مسیر Apple silicon: MLX LM
 
-برای اجرای محلی روی Apple silicon، [MLX LM](https://github.com/ml-explore/mlx-lm) یک گزینهٔ مستقیم برای تولید متن، streaming، cache پرامپت، کم‌دقت‌سازی و fine-tuning مدل‌های سازگار است. آن را صرفاً به‌دلیل نداشتن رابط گرافیکی از جدول نرم‌افزار حذف نکنید. قابلیت‌های مستندشده جای آزمون سرعت روی دستگاه کاربر را نمی‌گیرند. توضیح macOS 15 در بخش Large Models به memory wiring مربوط است؛ آن را به شرط عمومیِ همهٔ قابلیت‌ها تبدیل نکنید.
+برای Mac دارای Apple silicon، [MLX LM](https://github.com/ml-explore/mlx-lm) یکی از مسیرهای اجرای محلی مدل‌های سازگار است. تولید متن، کش پرامپت، کوانتیزیشن و فاین‌تیون را پشتیبانی می‌کند؛ انتخاب آن به مدل، قالب وزن و حافظهٔ دستگاه بستگی دارد. قابلیت memory wiring برای مدل‌های بزرگ به macOS 15 یا جدیدتر نیاز دارد.
 
 <!-- reference:mac-path:end -->
 

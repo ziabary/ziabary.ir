@@ -28,15 +28,15 @@ test('draft preview accepts only the exact true query value', () => {
 });
 
 test('the published guide has six sections, seven data views, versioned research rows and the required taxonomies', () => {
-  assert.equal(guide.llmGuideCollection.status, 'draft');
+  assert.equal(guide.llmGuideCollection.status, 'published');
   assert.equal(views.llmGuideSections.length, 6);
   assert.equal(views.llmViewConfigs.length, 7);
   assert.equal(views.llmGuideSections.find((section) => section.id === 'serving-software').views.length, 2);
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': 100, 'model-suitability': 100, 'hardware-feasibility': 0, 'software-products': 17,
-    'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 24
+    'model-catalog': 115, 'model-suitability': 108, 'hardware-feasibility': 0, 'software-products': 17,
+    'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 28
   });
 
   for (const name of ['vLLM', 'SGLang', 'llama.cpp', 'Transformers', 'AirLLM']) assert.ok(guide.engineCandidates.includes(name));
@@ -66,9 +66,9 @@ test('all three general start presets begin without hidden exclusions', () => {
   }
 });
 
-test('the completed reading collection contains ten published manuscripts and no placeholders', () => {
-  assert.equal(guide.llmArticleSlugs.length, 10);
-  assert.equal(new Set(guide.llmArticleSlugs).size, 10);
+test('the completed reading collection contains fourteen published manuscripts and no placeholders', () => {
+  assert.equal(guide.llmArticleSlugs.length, 14);
+  assert.equal(new Set(guide.llmArticleSlugs).size, 14);
   for (const slug of guide.llmArticleSlugs) {
     const manuscript = `src/lib/content/articles/${slug}.md`;
     assert.ok(existsSync(manuscript), slug);
@@ -242,13 +242,17 @@ test('the synthetic fixture is test-only and has no import path from production 
   for (const path of productionFiles) assert.doesNotMatch(await read(path), /llm-synthetic|Synthetic Test Lab|مدل مولد مصنوعی/);
 });
 
-test('LLM preview is absent from public HTML, search and sitemap', { skip: !existsSync('build/guides/llm/index.html') }, () => {
-  const html = readFileSync('build/guides/llm/index.html', 'utf8');
-  assert.match(html, /name="robots" content="noindex/);
-  assert.doesNotMatch(html, /class="llm-guide|class="llm-view/);
-  assert.ok(!readFileSync('build/guides/index.html','utf8').includes('/guides/llm/'));
-  assert.ok(!readFileSync('build/sitemap.xml','utf8').includes('/guides/llm/'));
-  assert.ok(!JSON.parse(readFileSync('build/search/fa.json','utf8')).some(item => item.href === '/guides/llm/'));
+test('published LLM editions appear in HTML, guide listings, search and sitemap', { skip: !existsSync('build/guides/llm/index.html') }, () => {
+  for (const locale of ['fa', 'en', 'es']) {
+    const base = locale === 'fa' ? '' : `/${locale}`;
+    const href = `${base}/guides/llm/`;
+    const html = readFileSync(`build${href}index.html`, 'utf8');
+    assert.doesNotMatch(html, /name="robots" content="noindex/);
+    assert.match(html, /class="llm-guide/);
+    assert.ok(readFileSync(`build${base}/guides/index.html`, 'utf8').includes(`href="${href}"`));
+    assert.ok(readFileSync('build/sitemap.xml', 'utf8').includes(`https://ziabary.ir${href}`));
+    assert.ok(JSON.parse(readFileSync(`build/search/${locale}.json`, 'utf8')).some(item => item.href === href));
+  }
 });
 test('LLM preview accepts only show-drafts=true', () => {
   for (const query of ['', 'show-draft=true', 'show-drafts=false', 'show-drafts=1', 'show-drafts=TRUE']) assert.equal(hasLlmPreview(new URLSearchParams(query)), false);
@@ -503,21 +507,22 @@ test('model release-date filtering uses release evidence, including month-only a
   assert.ok(e5.some(row => row.label === 'multilingual-e5-small'));
 });
 
-test('all catalog models have distinct sourced profiles, practical guidance, downloads and run paths', () => {
-  assert.equal(dataset.modelProfiles.length, 100);
-  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.introduction)).size, 100);
+test('catalog models have sourced profiles, downloads and run paths; assessed models have task guidance', () => {
+  assert.equal(dataset.modelProfiles.length, 115);
+  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.modelVersionId)).size, 115);
   for (const model of dataset.models) {
     const profile = dataset.modelProfiles.find(item => item.modelVersionId === model.id);
     assert.ok(profile?.introduction.trim(), model.id);
     assert.ok(profile.runGuides.length && profile.runGuides.every(run => run.engine.trim() && run.label.trim() && run.href.startsWith('https://') && run.evidenceIds.length));
-    assert.ok(dataset.modelUseGuidance.some(item => item.modelVersionId === model.id && item.description.trim() && item.evidenceIds.length));
+    const catalogOnly = ['model:zai-org-glm-5', 'model:zai-org-glm-5-1', 'model:zai-org-glm-5-2', 'model:zai-org-glm-5-3-bf16', 'model:moonshotai-kimi-k2-6', 'model:moonshotai-kimi-k2-7-code', 'model:moonshotai-kimi-k3'];
+    assert.equal(dataset.modelUseGuidance.some(item => item.modelVersionId === model.id && item.description.trim() && item.evidenceIds.length), !catalogOnly.includes(model.id), model.id);
     assert.ok(dataset.artifactListings.some(item => item.modelVersionId === model.id && item.authority === 'official'));
   }
 });
 
 test('default usage guide explains all RAG roles without an experimental outcome', () => {
   const rows = adapters.adaptModelUseGuidance(dataset);
-  assert.equal(rows.length, 100);
+  assert.equal(rows.length, 108);
   const config = views.modelUseViewConfig();
   assert.equal(config.matrixColumns, undefined);
   const rag = filtering.filterLlmRows(rows, config.filters, { application: ['enterprise-rag'] }, '');
@@ -532,7 +537,7 @@ test('default usage guide explains all RAG roles without an experimental outcome
 
 test('optional usage matrix contains only generators and retains known text-only limitations', () => {
   const rows = adapters.adaptModelUseMatrix(dataset);
-  assert.equal(rows.length, 76);
+  assert.equal(rows.length, 80);
   assert.ok(!rows.some(row => /bge-m3|reranker|embedding|e5-small/.test(row.modelId)));
   const gemma = rows.find(row => row.modelId === 'model:google-gemma-3-1b-it');
   assert.equal(gemma.matrixCells['document-vision'].value.display, 'ورودی متنی');
@@ -552,7 +557,7 @@ test('verified GGUF download links work without a base revision and preserve exa
     assert.ok(item.files[0].url.includes(item.repositoryRevision));
     assert.equal(item.totalBytes, item.files.reduce((total, file) => total + file.bytes, 0));
   }
-  assert.equal(dataset.artifacts.length, 59);
+  assert.equal(dataset.artifacts.length, 63);
   assert.ok(dataset.artifacts.every(item => item.baseRevision));
   const config = views.llmViewConfigs.find(view => view.id === 'model-catalog');
   const rows = adapters.buildLlmViewRows(dataset)['model-catalog'];

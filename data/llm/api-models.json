@@ -1,0 +1,40 @@
+[
+  {
+    "id": "qwen3.7-plus",
+    "name": "Qwen3.7-Plus",
+    "provider": "Alibaba Cloud Model Studio / Qwen API",
+    "snapshot": "qwen3.7-plus-2026-05-26",
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "contextTokens": 1000000,
+    "availability": "api-available",
+    "selfHosting": "not-verified",
+    "reviewedOn": "2026-09-20",
+    "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/qwen3-7-plus",
+    "platformUrl": "https://qwen.ai/apiplatform"
+  },
+  {
+    "id": "qwen3.7-max",
+    "name": "Qwen3.7-Max",
+    "provider": "Qwen API",
+    "snapshot": "qwen3.7-max-2026-05-20",
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "contextTokens": 1000000,
+    "availability": "api-available",
+    "selfHosting": "not-verified",
+    "reviewedOn": "2026-09-20",
+    "sourceUrl": "https://qwen.ai/apiplatform",
+    "platformUrl": "https://www.alibabacloud.com/help/en/model-studio/web-search"
+  }
+]

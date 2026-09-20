@@ -4391,7 +4391,8 @@
     "runGuides/3/label": "record.0429",
     "runGuides/4/label": "record.0430",
     "runGuides/5/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/6/instructions": "update0919.bd582106707d900f5b"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-14b": {
     "introduction": "record.0467",
@@ -5323,7 +5324,8 @@
     "runGuides/1/conditions/0": "record.0494",
     "runGuides/2/label": "record.0495",
     "runGuides/2/instructions": "record.0493",
-    "runGuides/2/conditions/0": "record.0494"
+    "runGuides/2/conditions/0": "record.0494",
+    "runGuides/3/instructions": "update0919.2bf9dda0ed47504881"
   },
   "repository.modelProfiles/model-profile:partai-tooka-sbert-v2-small": {
     "introduction": "record.0745",
@@ -5332,7 +5334,7 @@
     "languageSummary": "record.0113",
     "runGuides/0/label": "record.0515",
     "runGuides/0/instructions": "record.0741",
-    "runGuides/0/conditions/0": "record.0746"
+    "runGuides/0/conditions/0": "policy0919.1633bb675b911c35d3"
   },
   "repository.modelProfiles/model-profile:partai-tooka-sbert-v2-large": {
     "introduction": "record.0747",
@@ -5341,7 +5343,7 @@
     "languageSummary": "record.0113",
     "runGuides/0/label": "record.0515",
     "runGuides/0/instructions": "record.0741",
-    "runGuides/0/conditions/0": "record.0746"
+    "runGuides/0/conditions/0": "policy0919.c7e41103dbfb4d9905"
   },
   "repository.modelProfiles/model-profile:hooshvarelab-bert-base-parsbert-uncased": {
     "introduction": "record.0748",
@@ -7465,13 +7467,13 @@
     "summary": "record.0112",
     "description": "record.0745",
     "distinguishingFeature": "record.0745",
-    "conditions/0": "record.0746"
+    "conditions/0": "policy0919.da3fa347c571f74187"
   },
   "repository.modelUseGuidance/model-use:audit-partai-tooka-sbert-v2-large": {
     "summary": "record.0112",
     "description": "record.0747",
     "distinguishingFeature": "record.0747",
-    "conditions/0": "record.0746"
+    "conditions/0": "policy0919.3ada156871c069cf7c"
   },
   "repository.modelUseGuidance/model-use:audit-hooshvarelab-bert-base-parsbert-uncased": {
     "summary": "record.0117",
@@ -8767,5 +8769,270 @@
     "summary": "reference.463605ca177a2847",
     "description": "reference.2413cdef767e5b55",
     "distinguishingFeature": "reference.293adb5c2865ea7f"
+  },
+  "repository.modelProfiles/model-profile:zai-org-glm-5": {
+    "introduction": "update0919.b21a4ff5de18d9f05e",
+    "roleSummary": "update0919.a2c366a27fea46ddb0"
+  },
+  "repository.models/model:zai-org-glm-5-1": {
+    "parameterCounts/0/label": "update0919.ebfe99c0c827229467"
+  },
+  "repository.modelProfiles/model-profile:zai-org-glm-5-1": {
+    "introduction": "update0919.624fd871221a6c1755",
+    "roleSummary": "update0919.6c89088cb6932ce777"
+  },
+  "repository.models/model:zai-org-glm-5-2": {
+    "parameterCounts/0/label": "update0919.898eb0f968d35b63fc"
+  },
+  "repository.modelProfiles/model-profile:zai-org-glm-5-2": {
+    "introduction": "update0919.e6d6a66dbd851d1633",
+    "roleSummary": "update0919.b8c642461737883f43"
+  },
+  "repository.models/model:zai-org-glm-5-3-bf16": {
+    "license/restrictions/0": "update0919.d9506d8eba96c0c53f"
+  },
+  "repository.modelProfiles/model-profile:zai-org-glm-5-3-bf16": {
+    "introduction": "update0919.cfffab172efa53af26",
+    "roleSummary": "update0919.20965229edec5c0738"
+  },
+  "repository.models/model:moonshotai-kimi-k2-6": {
+    "license/restrictions/0": "update0919.69f15ba9a0a56c5435"
+  },
+  "repository.modelProfiles/model-profile:moonshotai-kimi-k2-6": {
+    "introduction": "update0919.4ff76777c9c62236e1",
+    "roleSummary": "update0919.22006363579ec18976"
+  },
+  "repository.models/model:moonshotai-kimi-k2-7-code": {
+    "license/restrictions/0": "update0919.fbadebcff8b1cb71a0"
+  },
+  "repository.modelProfiles/model-profile:moonshotai-kimi-k2-7-code": {
+    "introduction": "update0919.8087b2b30b5229a70c",
+    "roleSummary": "update0919.14c69a66d3a696ac12"
+  },
+  "repository.models/model:moonshotai-kimi-k3": {
+    "license/restrictions/0": "update0919.1a7bc956af26e23dee"
+  },
+  "repository.modelProfiles/model-profile:moonshotai-kimi-k3": {
+    "introduction": "update0919.11c0188126e85a2ba5",
+    "roleSummary": "update0919.a9dee688df15b65b31"
+  },
+  "repository.modelProfiles/model-profile:qwen-qwen3-vl-embedding-2b": {
+    "introduction": "update0919.63a698840d439da8d7",
+    "roleSummary": "update0919.8a716ad53bda39dad2",
+    "runGuides/0/instructions": "update0919.566f99d70388c9e4b7"
+  },
+  "repository.modelProfiles/model-profile:qwen-qwen3-vl-embedding-8b": {
+    "introduction": "update0919.1db29a171f1b7f8557",
+    "roleSummary": "update0919.c078419bdf5ed557bb",
+    "runGuides/0/instructions": "update0919.c9146aa88c14865c6b"
+  },
+  "repository.modelProfiles/model-profile:qwen-qwen3-vl-reranker-2b": {
+    "introduction": "update0919.9f8af6155e6d9e15c5",
+    "roleSummary": "update0919.a82df7ed7666999771",
+    "runGuides/0/instructions": "update0919.d74fd57f33ad927a8a"
+  },
+  "repository.modelProfiles/model-profile:qwen-qwen3-vl-reranker-8b": {
+    "introduction": "update0919.312eec7dbf4d16ec9d",
+    "roleSummary": "update0919.0634879ccc488ac744",
+    "runGuides/0/instructions": "update0919.16cb7acdae594377e7"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-glm5-tb20": {
+    "limitations/0": "update0919.b2fc6418ac5c668eed"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-glm51-tb20": {
+    "limitations/0": "update0919.c2f798647acdf88917"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-glm53-tb21": {
+    "limitations/0": "update0919.33b77258e4f19d3ec6"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-kimi-k2.6-programbench-k27": {
+    "limitations/0": "update0919.d7a13fb1f86f985741"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-kimi-k2.7-code-programbench-k27": {
+    "limitations/0": "update0919.4eb9fe6c0fa6931da5"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-kimi3-tb21": {
+    "limitations/0": "update0919.a5eed7a8b0e70f3c8f"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen-vl-embedding-2b-all": {
+    "limitations/0": "update0919.1445704367b27e6867",
+    "limitations/1": "update0919.37538746f3889e594e"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen-vl-embedding-2b-visdoc": {
+    "limitations/0": "update0919.d2d21dee3e5cbdfbe4",
+    "limitations/1": "update0919.3757b732b2bb0f7363"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen-vl-embedding-8b-all": {
+    "limitations/0": "update0919.8a17e1ee2d26ad6e9d",
+    "limitations/1": "update0919.6efca0a553bba7c038"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen-vl-embedding-8b-visdoc": {
+    "limitations/0": "update0919.b867f65513cccb9da1",
+    "limitations/1": "update0919.3ce7159a924d941d6b"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen3-vl-embedding-2b-vidore3": {
+    "limitations/0": "update0919.be8bed023e285b63b8"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen3-vl-reranker-2b-vidore3": {
+    "limitations/0": "update0919.3a79fa5588247035ee"
+  },
+  "repository.publishedEvaluations/published-evaluation:update0919-qwen3-vl-reranker-8b-vidore3": {
+    "limitations/0": "update0919.8b605261488c87547f"
+  },
+  "repository.modelUseGuidance/model-use:update0919-qwen-qwen3-vl-embedding-2b": {
+    "summary": "update0919.1c11b09c242c202bb9",
+    "description": "update0919.3a32eb379735e75eed",
+    "distinguishingFeature": "update0919.66d938c6bf6e023148"
+  },
+  "repository.models/model:qwen-qwen3-vl-embedding-2b": {
+    "specializedSpecs/task/value": "update0919.074eeae2c739ee98b5",
+    "specializedSpecs/output/value": "update0919.1f17a2abcee653075c",
+    "specializedSpecs/features/value": "update0919.66e7615762d32e089d"
+  },
+  "repository.modelUseGuidance/model-use:update0919-qwen-qwen3-vl-embedding-8b": {
+    "summary": "update0919.792ebf380c9436ec02",
+    "description": "update0919.55bea5b6d063f671f7",
+    "distinguishingFeature": "update0919.9687cb520ae92ab192"
+  },
+  "repository.models/model:qwen-qwen3-vl-embedding-8b": {
+    "specializedSpecs/task/value": "update0919.a631b878c78f16a387",
+    "specializedSpecs/output/value": "update0919.b3aac720bbdf31d196",
+    "specializedSpecs/features/value": "update0919.1d749002c988874a9c"
+  },
+  "repository.modelUseGuidance/model-use:update0919-qwen-qwen3-vl-reranker-2b": {
+    "summary": "update0919.028dd2880abe94a5a6",
+    "description": "update0919.8a92f125c2d59f485c",
+    "distinguishingFeature": "update0919.8117347f6ae7e5e17e"
+  },
+  "repository.modelUseGuidance/model-use:update0919-qwen-qwen3-vl-reranker-8b": {
+    "summary": "update0919.7909535efd4f24bca5",
+    "description": "update0919.307e07e4894f9e3d85",
+    "distinguishingFeature": "update0919.627394ac0b4907819c"
+  },
+  "repository.models/model:qwen-qwen3-6-27b": {
+    "parameterCounts/0/label": "wizard0920.55c096c675c4cbf64f",
+    "parameterCounts/1/label": "wizard0920.85a228f681b4eab6c4",
+    "contextExtension/condition": "wizard0920.c8718491c7d85095b1"
+  },
+  "repository.modelProfiles/model-profile:qwen-qwen3-6-27b": {
+    "introduction": "wizard0920.c7900b8c8fae797567",
+    "roleSummary": "wizard0920.3caa7c7fc5dea46084",
+    "distinguishingFeatures/0": "wizard0920.8c86c00983b44afbca",
+    "languageSummary": "wizard0920.c2aa2b53fd4ce0c016",
+    "runGuides/0/conditions/0": "wizard0920.a6a6e5d8e47d3582bc",
+    "runGuides/1/conditions/0": "wizard0920.b8dda38b754f444076"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:text-work": {
+    "summary": "wizard0920.7d7d1acd74c5067540",
+    "description": "wizard0920.d45c861aafbb3c9349",
+    "distinguishingFeature": "wizard0920.f6c3bfa7dfe1684fa5"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:document-vision": {
+    "summary": "wizard0920.bf5d42480c470ee1b5",
+    "description": "wizard0920.ddc98d212526acffdf",
+    "distinguishingFeature": "wizard0920.b49823aa72dbb4a3a7"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:enterprise-rag": {
+    "summary": "wizard0920.e59a37c344aba5de28",
+    "description": "wizard0920.6307d628788b72ea62",
+    "distinguishingFeature": "wizard0920.68b00db97ea60c3482"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:structured-extraction": {
+    "summary": "wizard0920.ce71acec80c198e357",
+    "description": "wizard0920.8fd0a12b52f214b611",
+    "distinguishingFeature": "wizard0920.8d9d0667280221777e"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:reasoning-analysis": {
+    "summary": "wizard0920.b4ae3da00255a73d34",
+    "description": "wizard0920.11f6ba6aea2c27b521",
+    "distinguishingFeature": "wizard0920.11f13444bda13eb75a"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:coding-assistant": {
+    "summary": "wizard0920.974e4fcf4bfa403c14",
+    "description": "wizard0920.b424faea8e00371e06",
+    "distinguishingFeature": "wizard0920.16ceffd6b4b088db3c"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:agents-tools": {
+    "summary": "wizard0920.190f6564d7e3f57977",
+    "description": "wizard0920.6242d93f992ed8fccd",
+    "distinguishingFeature": "wizard0920.a28be7411ad6b593ac"
+  },
+  "repository.models/model:qwen-qwen3-6-35b-a3b": {
+    "parameterCounts/0/label": "wizard0920.50ac3d9c03f9cccf9f",
+    "parameterCounts/1/label": "wizard0920.317541e68f165d7628",
+    "contextExtension/condition": "wizard0920.0ab20d6ac951f7952c"
+  },
+  "repository.modelProfiles/model-profile:qwen-qwen3-6-35b-a3b": {
+    "introduction": "wizard0920.aacaaa1755845c7cc3",
+    "roleSummary": "wizard0920.f0ad7ee86d58d3fa36",
+    "distinguishingFeatures/0": "wizard0920.67ca97e52cc68eaf67",
+    "languageSummary": "wizard0920.8af010c38e6d62d484",
+    "runGuides/0/conditions/0": "wizard0920.6d5bc318bcf80c28f0",
+    "runGuides/1/conditions/0": "wizard0920.4e260d4dce5947786f"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:text-work": {
+    "summary": "wizard0920.e83324c453f8454f46",
+    "description": "wizard0920.f1618864bff0646edf",
+    "distinguishingFeature": "wizard0920.b73c04a16d8c781f6c"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:document-vision": {
+    "summary": "wizard0920.0c88d7d735368d81d1",
+    "description": "wizard0920.609499cc7747560858",
+    "distinguishingFeature": "wizard0920.813b71526febc89fb4"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:enterprise-rag": {
+    "summary": "wizard0920.85568277dd62765e70",
+    "description": "wizard0920.ee3493ff92ba5ffe3d",
+    "distinguishingFeature": "wizard0920.c064b4df48fb44b56d"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:structured-extraction": {
+    "summary": "wizard0920.0170b5d77db2c3e63d",
+    "description": "wizard0920.026c5ee9b7878f53f2",
+    "distinguishingFeature": "wizard0920.6f1f8195000e955756"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:reasoning-analysis": {
+    "summary": "wizard0920.e129c8da4be8671dde",
+    "description": "wizard0920.46e599990a09d98a83",
+    "distinguishingFeature": "wizard0920.946d664c94081f23ce"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:coding-assistant": {
+    "summary": "wizard0920.c56f2f446bdf2d4c23",
+    "description": "wizard0920.573e040cd1f280aaf4",
+    "distinguishingFeature": "wizard0920.1ab07887a656640c3f"
+  },
+  "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:agents-tools": {
+    "summary": "wizard0920.3b73685ef1a2a9d58d",
+    "description": "wizard0920.c6f57a103ca8359ff2",
+    "distinguishingFeature": "wizard0920.50de8a2b619c0bf234"
+  },
+  "repository.models/model:tencent-hy-mt1-5-1-8b": {
+    "license/restrictions/0": "tasks0920.f3339395357f07ae91"
+  },
+  "repository.modelProfiles/model-profile:tencent-hy-mt1-5-1-8b": {
+    "introduction": "tasks0920.356ce9853669cc7a56",
+    "roleSummary": "tasks0920.523cadd1a7218e291e",
+    "distinguishingFeatures/0": "tasks0920.21bc9b923f8cf547e6",
+    "languageSummary": "tasks0920.805d616d4b44434843",
+    "runGuides/0/conditions/0": "tasks0920.6f95776ab816827b30"
+  },
+  "repository.modelUseGuidance/model-use:tencent-hy-mt1-5-1-8b:translation": {
+    "summary": "tasks0920.45bc91898ca0a3be3f",
+    "description": "tasks0920.d0d83f3b36d0e271c9",
+    "distinguishingFeature": "tasks0920.c297c76ed21b15fecf"
+  },
+  "repository.models/model:tencent-hy-mt1-5-7b": {
+    "license/restrictions/0": "tasks0920.d89e36d54eaeb14827"
+  },
+  "repository.modelProfiles/model-profile:tencent-hy-mt1-5-7b": {
+    "introduction": "tasks0920.3ce0a1e557dbbcb21f",
+    "roleSummary": "tasks0920.b1f392ca61e501b0ab",
+    "distinguishingFeatures/0": "tasks0920.d19515b7a3903fca1a",
+    "languageSummary": "tasks0920.8c29c2e71f19308c34",
+    "runGuides/0/conditions/0": "tasks0920.e2efc02e91e9458643"
+  },
+  "repository.modelUseGuidance/model-use:tencent-hy-mt1-5-7b:translation": {
+    "summary": "tasks0920.e7786d607f57d330df",
+    "description": "tasks0920.ac7ddd639b2e144aab",
+    "distinguishingFeature": "tasks0920.c51d225b223d3d20a2"
   }
 }

@@ -93,7 +93,7 @@ Para una herramienta local de uso ocasional, aceptar más latencia a cambio de m
 
 ### Apple silicon: la ruta MLX LM
 
-Para uso local en Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) ofrece generación, streaming, caché de prompts, cuantización y ajuste de modelos compatibles. Inclúyalo como ruta de ejecución aunque no sea un gestor gráfico. Las funciones documentadas no garantizan una velocidad medida. La nota sobre macOS 15 en Large Models se refiere al bloqueo de memoria; no debe presentarse como requisito universal de todas las funciones.
+En un Mac con Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) permite generación local, caché de prompts, cuantización y ajuste fino. La elección depende del modelo, el formato de pesos y la memoria disponible. El bloqueo de memoria para modelos grandes requiere macOS 15 o posterior.
 
 <!-- reference:mac-path:end -->
 

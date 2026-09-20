@@ -15,7 +15,8 @@ for (const locale of ['en', 'es']) for (const slug of slugs) {
 const source = await read('src/lib/localized-guide-collections.ts');
 const gpuReviews = Object.fromEntries(await Promise.all(['en', 'es'].map(async locale => [locale, JSON.parse(await read(`docs/drafts/gpu-selection-${locale}/collection.json`))])));
 async function collectionsFor(records) {
-  const js = ts.transpileModule(source.replace("import { guideCollections, type GuideCollection } from '$lib/guides';", "const guideCollections = []; ").replace("import { gpuReviews } from '$lib/gpu-review';", `const gpuReviews = ${JSON.stringify(gpuReviews)};`).replace("import { getArticle } from '$lib/content';", `const records = ${JSON.stringify(records)}; const getArticle = slug => records[slug]?.draft ? undefined : records[slug];`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+  const js = ts.transpileModule(source.replace("import { guideCollections, type GuideCollection } from '$lib/guides';", "const guideCollections = []; ").replace("import { llmCollection, llmEditionSlugs } from '$lib/llm/editions';", "const llmCollection = () => ({ slug: 'llm', status: 'planned', items: [] }); const llmEditionSlugs = () => [];")
+    .replace("import { gpuReviews } from '$lib/gpu-review';", `const gpuReviews = ${JSON.stringify(gpuReviews)};`).replace("import { getArticle } from '$lib/content';", `const records = ${JSON.stringify(records)}; const getArticle = slug => records[slug]?.draft ? undefined : records[slug];`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
   return import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
 }
 

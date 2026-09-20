@@ -4478,7 +4478,33 @@ models.push({
     },
     "condition": "تنظیم YaRN"
   },
-  "thinkingMode": "non-thinking-only"
+  "thinkingMode": "non-thinking-only",
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-card",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-metadata",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-parameters",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-license",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-context",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-config",
+        "evidence:v03-504a98b0928e421cf9"
+      ]
+    },
+    {
+      "task": "coding-agent",
+      "evidenceIds": [
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-card",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-metadata",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-parameters",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-license",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-context",
+        "evidence:qwen-qwen3-coder-30b-a3b-instruct-config",
+        "evidence:v03-504a98b0928e421cf9"
+      ]
+    }
+  ]
 });
 models.push({
   "id": "model:qwen-qwen3-embedding-0-6b",
@@ -10962,6 +10988,34 @@ models.push({
       },
       "approximate": false
     }
+  ],
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-card",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-metadata",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-parameters",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-license",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-context",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-config",
+        "evidence:four-tables-release-devstral-small-2-release",
+        "evidence:v03-143cf593115d83d150"
+      ]
+    },
+    {
+      "task": "coding-agent",
+      "evidenceIds": [
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-card",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-metadata",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-parameters",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-license",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-context",
+        "evidence:mistralai-devstral-small-2-24b-instruct-2512-config",
+        "evidence:four-tables-release-devstral-small-2-release",
+        "evidence:v03-143cf593115d83d150"
+      ]
+    }
   ]
 });
 models.push({
@@ -13211,7 +13265,27 @@ models.push({
       "approximate": false
     }
   ],
-  "thinkingMode": "non-thinking-only"
+  "thinkingMode": "non-thinking-only",
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:v03-ce258ef838123c6796",
+        "evidence:v03-d7295ef5c2d7198f1e",
+        "evidence:v03-bd633398ca16ed3834",
+        "evidence:v03-f647db3a19c9a0deea"
+      ]
+    },
+    {
+      "task": "coding-agent",
+      "evidenceIds": [
+        "evidence:v03-ce258ef838123c6796",
+        "evidence:v03-d7295ef5c2d7198f1e",
+        "evidence:v03-bd633398ca16ed3834",
+        "evidence:v03-f647db3a19c9a0deea"
+      ]
+    }
+  ]
 });
 models.push({
   "id": "model:qwen-qwen3-5-27b",
@@ -17083,6 +17157,18 @@ models.push({
       },
       "approximate": false
     }
+  ],
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:v03-409211188b03baa742",
+        "evidence:v03-b2e0d889b1cceb9038",
+        "evidence:v03-c11a55dd2f29a47589",
+        "evidence:v03-6cacb45b6a53ee5b07",
+        "evidence:v03-843697a18e617d59c0"
+      ]
+    }
   ]
 });
 models.push({
@@ -17223,6 +17309,18 @@ models.push({
       },
       "approximate": false
     }
+  ],
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:v03-f48bf2d137d0fb4870",
+        "evidence:v03-43083354e4092cf35d",
+        "evidence:v03-fcf9837f1d497065f7",
+        "evidence:v03-372fbdddb400aa9652",
+        "evidence:v03-24b3b6f0d5d25dc5c4"
+      ]
+    }
   ]
 });
 models.push({
@@ -17362,6 +17460,18 @@ models.push({
         "note": "نمایهٔ فایل وزن؛ برای وزن کوانت‌شده یا اشتراک وزن، الزاماً شمار پارامتر مستقل نیست."
       },
       "approximate": false
+    }
+  ],
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:v03-12a8034a3f8b975a18",
+        "evidence:v03-6a32c6eb377351a96e",
+        "evidence:v03-874eb46a550d42d1c6",
+        "evidence:v03-8dc6a67f1d3ac055f4",
+        "evidence:v03-6569e767d0be12a19a"
+      ]
     }
   ]
 });
@@ -18596,7 +18706,7 @@ models.push({
     },
     "features": {
       "state": "known",
-      "value": "آداپتر وظیفه و بعد خروجی قابل انتخاب؛ مجوز غیرتجاری",
+      "value": "آداپتر وظیفه و بعد خروجی قابل انتخاب",
       "evidenceIds": [
         "evidence:v03-133e75dac7f5e254f9"
       ]
@@ -18765,7 +18875,7 @@ models.push({
     },
     "features": {
       "state": "known",
-      "value": "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن؛ مجوز غیرتجاری",
+      "value": "بازرتبه‌بندی چندزبانه با ورودی تا ۱۰۲۴ توکن",
       "evidenceIds": [
         "evidence:v03-d6e73357bf96ab362e"
       ]
@@ -19383,6 +19493,16 @@ models.push({
       },
       "approximate": false
     }
+  ],
+  "taskSpecializations": [
+    {
+      "task": "code-completion",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b",
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-config",
+        "evidence:audit-20260916-qwen-qwen2-5-coder-1-5b-files"
+      ]
+    }
   ]
 });
 models.push({
@@ -19482,7 +19602,17 @@ models.push({
     }
   ],
   "attentionArchitecture": "sliding-window",
-  "contextCondition": "توجه محلی با پنجرهٔ ۴٬۰۹۶ توکنی."
+  "contextCondition": "توجه محلی با پنجرهٔ ۴٬۰۹۶ توکنی.",
+  "taskSpecializations": [
+    {
+      "task": "code-completion",
+      "evidenceIds": [
+        "evidence:audit-20260916-bigcode-starcoder2-3b",
+        "evidence:audit-20260916-bigcode-starcoder2-3b-config",
+        "evidence:audit-20260916-bigcode-starcoder2-3b-files"
+      ]
+    }
+  ]
 });
 models.push({
   "id": "model:qwen-qwen3-coder-next",
@@ -19519,7 +19649,8 @@ models.push({
     "text"
   ],
   "applications": [
-    "coding-assistant"
+    "coding-assistant",
+    "agents-tools"
   ],
   "languages": [],
   "persianEvidenceStatus": "not-evaluated",
@@ -19584,7 +19715,25 @@ models.push({
     }
   ],
   "attentionArchitecture": "hybrid",
-  "thinkingMode": "non-thinking-only"
+  "thinkingMode": "non-thinking-only",
+  "taskSpecializations": [
+    {
+      "task": "coding-assistant",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next",
+        "evidence:audit-20260916-qwen-qwen3-coder-next-config",
+        "evidence:audit-20260916-qwen-qwen3-coder-next-files"
+      ]
+    },
+    {
+      "task": "coding-agent",
+      "evidenceIds": [
+        "evidence:audit-20260916-qwen-qwen3-coder-next",
+        "evidence:audit-20260916-qwen-qwen3-coder-next-config",
+        "evidence:audit-20260916-qwen-qwen3-coder-next-files"
+      ]
+    }
+  ]
 });
 models.push({
   "id": "model:intfloat-multilingual-e5-large-instruct",
@@ -22546,4 +22695,1693 @@ models.push({
     },
     "condition": "ادعای گسترش 512K ناشر؛ ظرفیت بومی ۱۳۱٬۰۷۲ توکن است و آزمون کیفیت زمینهٔ گسترش‌یافته ثبت نشده است."
   }
+});
+models.push({
+  "id": "model:zai-org-glm-5",
+  "familyId": "family:glm",
+  "exactName": "GLM-5",
+  "publisher": "Z.ai",
+  "version": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+  "aliases": [
+    "zai-org/GLM-5"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 744,
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 40,
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 202752,
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/zai-org/GLM-5",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5"
+  ]
+});
+models.push({
+  "id": "model:zai-org-glm-5-1",
+  "familyId": "family:glm",
+  "exactName": "GLM-5.1",
+  "publisher": "Z.ai",
+  "version": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+  "aliases": [
+    "zai-org/GLM-5.1"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-1"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-1"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 202752,
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5-1"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-1"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/LICENSE",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-1"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-1"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5-1"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5-1"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "پارامترهای ذخیره‌شده در مخزن",
+      "value": {
+        "state": "known",
+        "value": 753.864139008,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-1"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:zai-org-glm-5-2",
+  "familyId": "family:glm",
+  "exactName": "GLM-5.2",
+  "publisher": "Z.ai",
+  "version": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+  "aliases": [
+    "zai-org/GLM-5.2"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-2"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-2"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5-2"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-2"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/LICENSE",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-2"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-2"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5-2"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5-2"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "پارامترهای ذخیره‌شده در مخزن",
+      "value": {
+        "state": "known",
+        "value": 753.32994048,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-2"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:zai-org-glm-5-3-bf16",
+  "familyId": "family:glm",
+  "exactName": "GLM-5.3",
+  "publisher": "Z.ai",
+  "version": "9d2398f478cab2de883137db3a36ad2c96205e24",
+  "aliases": [
+    "zai-org/GLM-5.3-BF16"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-3-bf16"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:update0919-zai-org-glm-5-3-bf16"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5-3-bf16"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "GLM-5.3 License",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-3-bf16"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/zai-org/GLM-5.3-BF16/blob/9d2398f478cab2de883137db3a36ad2c96205e24/LICENSE",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-3-bf16"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:update0919-zai-org-glm-5-3-bf16"
+      ]
+    },
+    "restrictions": [
+      "حفظ اعلان مجوز لازم است. ارائه‌دهندهٔ Model as a Service با درآمد مجموع خود و شرکت‌های وابسته بیش از ۱۰ میلیارد دلار در هر ۱۲ ماه متوالی، پیش از استفادهٔ تجاری به بررسی امنیتی Z.ai نیاز دارد. محصولات با قابلیت تعبیه‌شده و انتقال صرف درخواست استثناهای تعریف‌شده دارند."
+    ],
+    "evidenceIds": [
+      "evidence:update0919-zai-org-glm-5-3-bf16"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-zai-org-glm-5-3-bf16"
+  ]
+});
+models.push({
+  "id": "model:moonshotai-kimi-k2-6",
+  "familyId": "family:kimi",
+  "exactName": "Kimi-K2.6",
+  "publisher": "Moonshot AI",
+  "version": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+  "aliases": [
+    "moonshotai/Kimi-K2.6"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1000,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-6"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 32,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-6"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-6"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Modified MIT",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k2-6"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/LICENSE",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k2-6"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k2-6"
+      ]
+    },
+    "restrictions": [
+      "حفظ اعلان مجوز لازم است. محصول یا خدمت تجاری با بیش از ۱۰۰ میلیون کاربر فعال ماهانه یا ۲۰ میلیون دلار درآمد ماهانه باید نام تعیین‌شدهٔ مدل را به‌وضوح نمایش دهد."
+    ],
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-6"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-moonshotai-kimi-k2-6"
+  ]
+});
+models.push({
+  "id": "model:moonshotai-kimi-k2-7-code",
+  "familyId": "family:kimi",
+  "exactName": "Kimi-K2.7-Code",
+  "publisher": "Moonshot AI",
+  "version": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "aliases": [
+    "moonshotai/Kimi-K2.7-Code"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1000,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-7-code"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 32,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-7-code"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-7-code"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Modified MIT",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k2-7-code"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/LICENSE",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k2-7-code"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k2-7-code"
+      ]
+    },
+    "restrictions": [
+      "حفظ اعلان مجوز لازم است. محصول یا خدمت تجاری با بیش از ۱۰۰ میلیون کاربر فعال ماهانه یا ۲۰ میلیون دلار درآمد ماهانه باید نام تعیین‌شدهٔ مدل را به‌وضوح نمایش دهد."
+    ],
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k2-7-code"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-moonshotai-kimi-k2-7-code"
+  ]
+});
+models.push({
+  "id": "model:moonshotai-kimi-k3",
+  "familyId": "family:kimi",
+  "exactName": "Kimi-K3",
+  "publisher": "Moonshot AI",
+  "version": "f831ab66814297da540d832a5235f8e904f29d06",
+  "aliases": [
+    "moonshotai/Kimi-K3"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 2800,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k3"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 104,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k3"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k3"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Kimi K3 License",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k3"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/LICENSE",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k3"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:update0919-moonshotai-kimi-k3"
+      ]
+    },
+    "restrictions": [
+      "حفظ اعلان مجوز لازم است. برای ارائهٔ Model as a Service، درآمد مجموع شرکت و وابستگان بیش از ۲۰ میلیون دلار در هر ۱۲ ماه متوالی، توافق جداگانه می‌خواهد. نمایش نام مدل برای محصول با بیش از ۱۰۰ میلیون کاربر فعال ماهانه یا ۲۰ میلیون دلار درآمد ماهانه لازم است. بندهای ۲ و ۳ برای استفادهٔ داخلیِ تعریف‌شده و دسترسی رسمی یا شریک تأییدشده استثنا دارند."
+    ],
+    "evidenceIds": [
+      "evidence:update0919-moonshotai-kimi-k3"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-moonshotai-kimi-k3"
+  ]
+});
+models.push({
+  "id": "model:qwen-qwen3-vl-embedding-2b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3-VL-Embedding-2B",
+  "publisher": "Qwen",
+  "version": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+  "aliases": [
+    "Qwen/Qwen3-VL-Embedding-2B"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 2,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/blob/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda/README.md",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+  ],
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+    ],
+    "unit": "token"
+  },
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی متن، تصویر و ویدئو",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار با حداکثر 2048 بُعد",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "کاهش بُعد و کم‌دقت‌سازی بردار خروجی؛ نه کوانتیزیشن وزن مدل",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "unknown"
+    },
+    "languages": {
+      "state": "unknown"
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 2048,
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:qwen-qwen3-vl-embedding-8b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3-VL-Embedding-8B",
+  "publisher": "Qwen",
+  "version": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+  "aliases": [
+    "Qwen/Qwen3-VL-Embedding-8B"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 8,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/blob/2c4565515e0f265c6511776e7193b22c0968ddc7/README.md",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+  ],
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+    ],
+    "unit": "token"
+  },
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی متن، تصویر و ویدئو",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار با حداکثر 4096 بُعد",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "کاهش بُعد و کم‌دقت‌سازی بردار خروجی؛ نه کوانتیزیشن وزن مدل",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "unknown"
+    },
+    "languages": {
+      "state": "unknown"
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 4096,
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:qwen-qwen3-vl-reranker-2b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3-VL-Reranker-2B",
+  "publisher": "Qwen",
+  "version": "4bd860ac4f15ad1897a214615cccc700f8f71818",
+  "aliases": [
+    "Qwen/Qwen3-VL-Reranker-2B"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 2,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "reranker",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B/blob/4bd860ac4f15ad1897a214615cccc700f8f71818/README.md",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+  ],
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+    ],
+    "unit": "token"
+  }
+});
+models.push({
+  "id": "model:qwen-qwen3-vl-reranker-8b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3-VL-Reranker-8B",
+  "publisher": "Qwen",
+  "version": "b212dc8c91a8164aef1ea2de9c1a867611e75c04",
+  "aliases": [
+    "Qwen/Qwen3-VL-Reranker-8B"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "attentionArchitecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 8,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "reranker",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-19",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/blob/b212dc8c91a8164aef1ea2de9c1a867611e75c04/README.md",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+  ],
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+    ],
+    "unit": "token"
+  }
+});
+models.push({
+  "id": "model:qwen-qwen3-6-27b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3.6-27B",
+  "publisher": "Qwen / Alibaba Cloud",
+  "version": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "aliases": [
+    "Qwen/Qwen3.6-27B"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "attentionArchitecture": "hybrid",
+  "thinkingMode": "switchable",
+  "totalParametersB": {
+    "state": "known",
+    "value": 27.781427952,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-27b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "parameterCounts": [
+    {
+      "scope": "language-component",
+      "label": "جزء زبانی؛ شمار گرد‌شدهٔ ناشر",
+      "value": {
+        "state": "known",
+        "value": 27,
+        "evidenceIds": [
+          "evidence:wizard0920-qwen-qwen3-6-27b"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    },
+    {
+      "scope": "stored",
+      "label": "عناصر پارامتری ذخیره‌شده در مخزن",
+      "value": {
+        "state": "known",
+        "value": 27.781427952,
+        "evidenceIds": [
+          "evidence:wizard0920-qwen-qwen3-6-27b"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "languages": [
+    {
+      "language": "multilingual",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:wizard0920-qwen-qwen3-6-27b"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-27b"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-27b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "contextExtension": {
+    "capacity": {
+      "state": "known",
+      "value": 1010000,
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-27b"
+      ],
+      "unit": "token"
+    },
+    "condition": "نیازمند تنظیم YaRN؛ سقف بومی ۲۶۲٬۱۴۴ توکن است."
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-20",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-27b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/LICENSE",
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-27b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-27b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-27b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+models.push({
+  "id": "model:qwen-qwen3-6-35b-a3b",
+  "familyId": "family:qwen",
+  "exactName": "Qwen3.6-35B-A3B",
+  "publisher": "Qwen / Alibaba Cloud",
+  "version": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "aliases": [
+    "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "hybrid",
+  "thinkingMode": "switchable",
+  "totalParametersB": {
+    "state": "known",
+    "value": 35.951822704,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 3,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "parameterCounts": [
+    {
+      "scope": "language-component",
+      "label": "جزء زبانی؛ شمار گرد‌شدهٔ ناشر",
+      "value": {
+        "state": "known",
+        "value": 35,
+        "evidenceIds": [
+          "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    },
+    {
+      "scope": "stored",
+      "label": "عناصر پارامتری ذخیره‌شده در مخزن",
+      "value": {
+        "state": "known",
+        "value": 35.951822704,
+        "evidenceIds": [
+          "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "document-vision",
+    "enterprise-rag",
+    "structured-extraction",
+    "reasoning-analysis",
+    "coding-assistant",
+    "agents-tools"
+  ],
+  "languages": [
+    {
+      "language": "multilingual",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    ],
+    "unit": "token"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "contextExtension": {
+    "capacity": {
+      "state": "known",
+      "value": 1010000,
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+      ],
+      "unit": "token"
+    },
+    "condition": "نیازمند تنظیم YaRN؛ سقف بومی ۲۶۲٬۱۴۴ توکن است."
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-09-20",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/LICENSE",
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+models.push({
+  "id": "model:tencent-hy-mt1-5-1-8b",
+  "familyId": "family:hy-mt",
+  "exactName": "HY-MT1.5-1.8B",
+  "publisher": "Tencent",
+  "version": "dbad03788f49709801014c95d481a514c272ca52",
+  "aliases": [
+    "tencent/HY-MT1.5-1.8B"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "attentionArchitecture": "full-attention",
+  "thinkingMode": "non-thinking-only",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1.8,
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "unknown"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2025-12-30",
+  "lastReviewedOn": "2026-09-20",
+  "taskSpecializations": [
+    {
+      "task": "translation",
+      "languages": [
+        "en",
+        "es",
+        "fa"
+      ],
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+      ]
+    }
+  ],
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Tencent HY Community License",
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/tencent/HY-MT1.5-1.8B/blob/dbad03788f49709801014c95d481a514c272ca52/License.txt",
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+      ]
+    },
+    "restrictions": [
+      "مجوز شامل اتحادیهٔ اروپا، بریتانیا و کرهٔ جنوبی نمی‌شود؛ برای بیش از ۱۰۰ میلیون کاربر فعال ماهانه، مجوز جدا لازم است."
+    ],
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+  ]
+});
+models.push({
+  "id": "model:tencent-hy-mt1-5-7b",
+  "familyId": "family:hy-mt",
+  "exactName": "HY-MT1.5-7B",
+  "publisher": "Tencent",
+  "version": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "aliases": [
+    "tencent/HY-MT1.5-7B"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "attentionArchitecture": "full-attention",
+  "thinkingMode": "non-thinking-only",
+  "totalParametersB": {
+    "state": "known",
+    "value": 7,
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-7b"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tasks0920-tencent-hy-mt1-5-7b"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tasks0920-tencent-hy-mt1-5-7b"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tasks0920-tencent-hy-mt1-5-7b"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "unknown"
+  },
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-7b"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2025-12-30",
+  "lastReviewedOn": "2026-09-20",
+  "taskSpecializations": [
+    {
+      "task": "translation",
+      "languages": [
+        "en",
+        "es",
+        "fa"
+      ],
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-7b"
+      ]
+    }
+  ],
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Tencent HY Community License",
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-7b"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/tencent/HY-MT1.5-7B/blob/397085d46158ad0b437ffd74228499e8c2a35c76/License.txt",
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-7b"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:tasks0920-tencent-hy-mt1-5-7b"
+      ]
+    },
+    "restrictions": [
+      "مجوز شامل اتحادیهٔ اروپا، بریتانیا و کرهٔ جنوبی نمی‌شود؛ برای بیش از ۱۰۰ میلیون کاربر فعال ماهانه، مجوز جدا لازم است."
+    ],
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-7b"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-7b"
+  ]
 });

@@ -65,7 +65,7 @@
         </div>
         {#if model.configurationContext?.state === 'known'}<p>{ {fa:'مقدار فایل تنظیمات',en:'Configuration value',es:'Valor de configuración'}[locale]}: <bdi>{numbers.format(model.configurationContext.value)} tokens</bdi></p>{/if}
         {#if model.contextExtension}<p>{model.contextExtension.condition}</p>{/if}
-        {#each model.license.restrictions ?? [] as restriction}<p>{restriction}</p>{/each}
+        {#if locale !== 'fa'}{#each model.license.restrictions ?? [] as restriction}<p>{restriction}</p>{/each}{/if}
         {#if model.specializedSpecs}<div class="specialized-specs">{#each Object.entries(model.specializedSpecs).filter(([key, value]) => key === 'poolingOrScoring' && !(value.state === 'known' && uses.some(use => use.conditions.includes(String(value.value))))) as [key,value]}<p><LlmValue value={value.state === 'known' ? {state: 'known', display: String(value.value)} : value} /></p>{/each}</div>{/if}
         {#if profile.languageSummary}<p class="muted">{profile.languageSummary}</p>{/if}
         <h3>{t('LlmModelProfile.1071')}</h3>

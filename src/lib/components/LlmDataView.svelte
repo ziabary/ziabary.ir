@@ -1,4 +1,6 @@
 <script lang="ts">
+  import apiModels from '../../../data/llm/api-models.json';
+  import { localized } from '$lib/llm/wizard-core';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { browser } from '$app/environment';
@@ -47,6 +49,7 @@
   let sortDirection: SortDirection = 'asc';
   let expanded: string[] = [];
   let selectedIds: string[] = [];
+  let onlySelected = false;
   let compareError = '';
   let comparisonMode: ComparisonMode = 'side-by-side';
   let comparisonAxis = '';
@@ -69,7 +72,8 @@
   $: mainFilters = effectiveFilters.filter((filter) => filter.level === 'main');
   $: advancedFilters = effectiveFilters.filter((filter) => filter.level === 'advanced');
   $: activeCount = activeFilterCount(selections) + (query.trim() ? 1 : 0);
-  $: filteredRows = filterLlmRows(rows, effectiveFilters, selections, query);
+  $: filteredRows = filterLlmRows(rows, effectiveFilters, selections, query).filter(row => !onlySelected || selectedIds.includes(row.id));
+  $: apiMatches = config.id==='model-catalog' ? apiModels.filter(m=>!query.trim()||`${m.name} ${m.id} ${m.provider} ${m.snapshot}`.toLowerCase().includes(query.trim().toLowerCase())):[];
   $: visibleRows = sortLlmRows(filteredRows, sortKey, sortDirection);
   $: comparedRows = rows.filter((row) => selectedIds.includes(row.id));
   $: activePreset = config.presets?.find((item) => item.id === presetId);
@@ -83,7 +87,7 @@
     expanded = [];
     activeMatrix = {};
     selectedColumns = null;
-    selectedIds = [];
+    selectedIds = []; onlySelected = false;
     compareError = '';
     comparisonMode = 'side-by-side';
     comparisonAxis = '';
@@ -95,14 +99,14 @@
   $: if (selectionUrl !== appliedSelectionUrl) {
     if (selectionUrl || appliedSelectionUrl !== null) {
     const state = readTableSelection(selectionUrl, config, rows);
-    query = state.q; selections = state.filters; selectedIds = state.ids; selectedColumns = state.columns;
+    query = state.q; selections = state.filters; selectedIds = state.ids; onlySelected = !!state.onlySelected; selectedColumns = state.columns;
     sortKey = state.sort; sortDirection = state.direction; comparisonMode = state.mode; comparisonAxis = state.axis;
     }
     appliedSelectionUrl = selectionUrl;
   }
   async function saveSelection() {
     await tick();
-    const value = encodeTableSelection({ q: query, filters: selections, ids: selectedIds, columns: selectedColumns, sort: sortKey, direction: sortDirection, mode: comparisonMode, axis: comparisonAxis });
+    const value = encodeTableSelection({ q: query, filters: selections, ids: selectedIds, onlySelected, columns: selectedColumns, sort: sortKey, direction: sortDirection, mode: comparisonMode, axis: comparisonAxis });
     const url = new URL($page.url); const key = `s_${config.id}`;
     if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
     if (url.href !== $page.url.href) { appliedSelectionUrl = value; await goto(url, { noScroll: true, keepFocus: true }); }
@@ -218,6 +222,7 @@
     <p class="preset-note"><b>{t('LlmDataView.0920')}</b> {activePreset.label}</p>
   {/if}
 
+  {#if onlySelected}<p class="wizard-shortlist">{locale === "fa" ? "فقط نامزدهای این پیشنهاد" : locale === "es" ? "Solo candidatos de esta propuesta" : "Only this plan’s candidates"} · <button type="button" on:click={() => { onlySelected = false; saveSelection(); }}>{locale === "fa" ? "نمایش همهٔ مدل‌ها" : locale === "es" ? "Mostrar todos los modelos" : "Show all models"}</button></p>{/if}
   <div class="filter-panel">
     <div class="search-row">
       <label>
@@ -314,6 +319,12 @@
       </div>
       <button class="reset-columns" type="button" on:click={() => selectedColumns = null}>{t('LlmDataView.0955')}</button>
     </div>
+  {/if}
+  {#if apiMatches.length}
+    <details class="api-models" open={!!query.trim()}><summary>{localized(['مدل‌های عرضه‌شده از طریق API','Models available through APIs','Modelos disponibles por API'],locale)} · {numbers.format(apiMatches.length)}</summary>
+      <p>{localized(['برای این نسخه‌ها وزن قابل نصب در این بررسی تأیید نشده است؛ آن‌ها در پیشنهاد اجرای محلی وارد نمی‌شوند.','Self-hostable weights were not verified in this review; these releases are excluded from local deployment suggestions.','No se verificaron pesos instalables en esta revisión; estas versiones no se recomiendan para instalación local.'],locale)}</p>
+      {#each apiMatches as model}<article><strong><bdi>{model.name}</bdi></strong> · <bdi>{model.snapshot}</bdi><p>{model.provider} · API · <bdi>{numbers.format(model.contextTokens)}</bdi> {localized(['توکن اعلامی','declared tokens','tokens declarados'],locale)} · <bdi>{model.reviewedOn}</bdi></p><a href={model.sourceUrl} target="_blank" rel="noopener">{localized(['منبع رسمی و وضعیت عرضه','Official source and availability','Fuente oficial y disponibilidad'],locale)} ↗</a></article>{/each}
+    </details>
   {/if}
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (Keyboard users need to scroll wide data regions.) -->
   <div class="table-shell" role="region" tabindex="0" aria-label={config.tableLabel}>
@@ -473,6 +484,8 @@
 {/snippet}
 
 <style>
+.api-models{margin-block:16px;padding:16px;border:1px solid var(--line);border-radius:8px}.api-models article{padding-block:12px;border-top:1px solid var(--line)}.api-models p{font-size:14px;line-height:1.8}.api-models summary{cursor:pointer;font-weight:700}
+  .wizard-shortlist{padding:12px 14px;border:1px solid var(--line);border-radius:7px;background:var(--soft);font-size:13px}.wizard-shortlist button{border:0;background:transparent;color:var(--link-ink);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
   .filter-logo{width:20px;height:20px;min-width:20px;object-fit:contain;padding:2px;background:white;border-radius:4px;vertical-align:middle;margin-inline-end:6px}
   .official-model{display:block;margin-top:8px;font-size:10px;color:var(--link-ink)}.model-start a{font-size:11px;color:var(--link-ink)}
   .branded-name{display:flex;align-items:center;gap:10px;min-width:170px}.branded-name img{width:34px;height:34px;object-fit:contain;flex-shrink:0;padding:4px;background:white;border:1px solid #ddd;border-radius:7px;box-sizing:border-box}.profile-link,.model-start button{color:var(--link-ink);background:none;border:0;padding:0;cursor:pointer;font:inherit;text-align:start;line-height:1.9}.profile-link bdi{overflow-wrap:normal;word-break:normal}.profile-link small{display:block;font-size:10px;color:var(--muted);margin-top:5px}.model-start{display:grid;gap:6px;min-width:130px}

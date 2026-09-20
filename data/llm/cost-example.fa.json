@@ -1,0 +1,87 @@
+{
+  "currency": "toman",
+  "parts": [
+    {
+      "component": "gpu",
+      "name": "RTX 4090 Founders Edition 24GB",
+      "amountToman": 529000000,
+      "sourceUrl": "https://drhp.ir/Product/nvidia-rtx-4090-founders-edition-24gb-gddr6x/",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    },
+    {
+      "component": "cpu",
+      "name": "AMD Ryzen 9 9950X Tray",
+      "amountToman": 119000000,
+      "sourceUrl": "https://gsiran.com/products/cpu-amd-ryzen-9-9950x-tray",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    },
+    {
+      "component": "motherboard",
+      "name": "Gigabyte X870 Gaming X WiFi7",
+      "amountToman": 61200000,
+      "sourceUrl": "https://gsiran.com/products/motherboard-gigabyte-x870-gaming-x-wifi7",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    },
+    {
+      "component": "ram",
+      "name": "V-Color Manta XFinity RGB 64GB (2×32GB) DDR5-6000 CL30 U-DIMM",
+      "amountToman": 235000000,
+      "sourceUrl": "https://www.lioncomputer.com/product/v-color-manta-xfinity-rgb-64gb-2x32gb-6000mhz-cl30-ddr5-amd-expo-intel-xmp-3-0-u-dimm-memory/",
+      "sourcePriceDate": "2026-09-19",
+      "recheckedInThisUpdate": true
+    },
+    {
+      "component": "ssd",
+      "name": "Samsung 990 PRO 2TB",
+      "amountToman": 84700000,
+      "sourceUrl": "https://gsiran.com/products/ssd-samsung-990-pro-2tb-samsong",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    },
+    {
+      "component": "psu",
+      "name": "Green GP1000B-EDGE",
+      "amountToman": 49400000,
+      "sourceUrl": "https://pcccenter.com/product/منبع-تغذیه-گرین-gp1000b-edge/",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    },
+    {
+      "component": "cooler",
+      "name": "DeepCool LT360 ARGB Black",
+      "amountToman": 21900000,
+      "sourceUrl": "https://gsiran.com/products/cpu-cooler-deepcool-lt360-argb-black",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    },
+    {
+      "component": "case",
+      "name": "Green Z5",
+      "amountToman": 15900000,
+      "sourceUrl": "https://gsiran.com/products/case-z5-green",
+      "sourcePriceDate": "2026-09-16",
+      "recheckedInThisUpdate": false
+    }
+  ],
+  "amortizationMonths": 24,
+  "historicalFxAssumptionTomanPerUsd": 230000,
+  "rentComparisons": [
+    {
+      "name": "Iranserver Smart monthly historical example",
+      "monthlyToman": 91000000
+    },
+    {
+      "name": "Iranserver Smart illustrative 10% annual discount",
+      "monthlyEquivalentToman": 81900000
+    },
+    {
+      "name": "Ferdowsi 4090 historical 79300 toman/hour at 720 hours",
+      "hourlyToman": 79300,
+      "hoursPerMonth": 720,
+      "monthlyToman": 57096000
+    }
+  ]
+}

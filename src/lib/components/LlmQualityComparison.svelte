@@ -1,5 +1,6 @@
 <script lang="ts">
   import { hasReportedValue, evaluationMetricLabel, evaluationUnitLabel, hasNumericResult } from '$lib/llm/evaluation-display';
+  import { benchmarkScope } from '$lib/llm/score-scope';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { browser } from '$app/environment';
@@ -28,7 +29,7 @@
   const relationshipLabel = (value: string) => value === 'publisher' ? t('LlmPublishedEvaluations.1190') : value === 'independent' ? t('LlmPublishedEvaluations.1191') : t('LlmPublishedEvaluations.1192');
   const directionLabel = (r: PublishedEvaluation) => { const direction=metricSemantics(r.metric,r.unit).direction; return direction==='higher'?copy.higher:direction==='lower'?copy.lower:copy.unknown; };
   let applied: string | null = null;
-  const benchmarkKey = (r: PublishedEvaluation) => [r.benchmark,r.benchmarkVersion].filter(Boolean).join(' · ');
+  const benchmarkKey = benchmarkScope;
   const languageKey = (r: PublishedEvaluation) => languageScopeKey(r.languageScope ?? evaluationLanguage(r.language));
   $: value = browser ? $page.url.searchParams.get('quality') ?? '' : '';
   $: selectionKey = value || `default:${targetLanguage}`;
@@ -46,6 +47,7 @@
   }
   $: candidates = availableResults.filter(item => (!task || item.applicationIds.some(id => id === task)) && (!benchmark || benchmarkKey(item) === benchmark));
   $: results = candidates.filter(item => (!language || languageKey(item) === language) && (!metric || item.metric === metric) && (!subset || subsetKey(item) === subset));
+  $: groups = [...results.reduce((map, result) => {const key=[benchmarkKey(result),evaluationMetricLabel(result.metric,locale),languageName(languageKey(result)),evaluationUnitLabel(result.unit,locale)].join(' · ');map.set(key,[...(map.get(key)??[]),result]);return map;},new Map<string,PublishedEvaluation[]>())];
   $: hasMode = results.some(result=>hasReportedValue(result.mode) || hasReportedValue(result.settings.datasetSplit) || hasReportedValue(result.settings.datasetConfig));
   $: subsets = [...new Set(candidates.map(subsetKey))].filter(value=>value!=='unspecified').sort();
   $: selected = availableResults.filter(item => ids.includes(item.id));
@@ -80,12 +82,15 @@
       <button on:click={()=>{ids=[];save();}}>{copy.reset}</button><button on:click={download}>JSON ↓</button>
     </aside>
   {/if}
+  {#each groups as [groupTitle, groupResults]}
+  <h4>{groupTitle}</h4>
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (keyboard access to horizontally scrolling results) -->
   <div class="quality-scroll" tabindex="0" role="region" aria-label={copy.title}>
     <table><thead><tr><th>{copy.select}</th><th>{copy.model}</th><th>{copy.score}</th>{#if hasMode}<th>{copy.mode}</th>{/if}<th>{copy.reporter}</th><th>{copy.source}</th></tr></thead><tbody>
-      {#each results as result (result.id)}<tr><td><input type="checkbox" aria-label={`${copy.select}: ${result.reportedModelName}`} checked={ids.includes(result.id)} on:change={()=>select(result.id)} /></td><td><button on:click={()=>onOpenModel(result.modelVersionId,'quality')}><bdi>{result.reportedModelName}</bdi></button></td><td><bdi>{n.format(result.value)} {evaluationUnitLabel(result.unit,locale)}</bdi>{#if hasReportedValue(result.settings.metricScale ?? result.settings.sourceScale)}<small>{result.settings.metricScale ?? result.settings.sourceScale}</small>{/if}</td>{#if hasMode}<td>{result.mode ? modeLabel(result.mode) : '—'}{#if hasReportedValue(result.settings.datasetSplit) || hasReportedValue(result.settings.datasetConfig)}<small>{[result.settings.datasetSplit,result.settings.datasetConfig].filter(hasReportedValue).join(' · ')}</small>{/if}</td>{/if}<td>{result.reporter}<small>{relationshipLabel(result.reportingRelationship)}</small></td><td><details><summary>{copy.detail}</summary><LlmPublishedEvaluations compact results={[result]} evidence={repository.evidence} /></details></td></tr>{/each}
+      {#each groupResults as result (result.id)}<tr><td><input type="checkbox" aria-label={`${copy.select}: ${result.reportedModelName}`} checked={ids.includes(result.id)} on:change={()=>select(result.id)} /></td><td><button on:click={()=>onOpenModel(result.modelVersionId,'quality')}><bdi>{result.reportedModelName}</bdi></button></td><td><bdi>{n.format(result.value)} {evaluationUnitLabel(result.unit,locale)}</bdi>{#if hasReportedValue(result.settings.metricScale ?? result.settings.sourceScale)}<small>{result.settings.metricScale ?? result.settings.sourceScale}</small>{/if}</td>{#if hasMode}<td>{result.mode ? modeLabel(result.mode) : '—'}{#if hasReportedValue(result.settings.datasetSplit) || hasReportedValue(result.settings.datasetConfig)}<small>{[result.settings.datasetSplit,result.settings.datasetConfig].filter(hasReportedValue).join(' · ')}</small>{/if}</td>{/if}<td>{result.reporter}<small>{relationshipLabel(result.reportingRelationship)}</small></td><td><details><summary>{copy.detail}</summary><LlmPublishedEvaluations compact results={[result]} evidence={repository.evidence} /></details></td></tr>{/each}
     </tbody></table>
   </div>
+  {/each}
   {#if !results.length}<p role="status">{copy.empty}</p>{/if}
 </section>
 <style>

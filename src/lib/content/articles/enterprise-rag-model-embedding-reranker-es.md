@@ -27,6 +27,25 @@ Una persona pregunta quién debe aprobar la renovación de un contrato. Soporte 
 
 Para consultas documentales principalmente directas y acotadas, conviene comparar un modelo de instrucciones de 3–4B con otro de 7–8B antes de comprometer una infraestructura mayor. El objetivo es saber si más capacidad del generador corrige un error real. Embedding, reranking y generación tienen responsabilidades distintas: ampliar uno no arregla los demás. El [artículo sobre tamaño de modelo](/es/articles/right-model-size-for-the-task-es/) explica la selección; la [guía LLM](/es/guides/llm/) reúne modelos, archivos y evidencia de ejecución.
 
+<!-- document-routes:start -->
+
+## Los textos, los documentos escaneados y los datos actualizados necesitan rutas distintas
+
+En un PDF con texto, conserve los títulos, las referencias de página y las versiones del documento al extraer e indexar el contenido. Si importan los gráficos, la disposición o las relaciones entre celdas, compare OCR y recuperación visual con muestras propias. El recuperador visual localiza páginas; la respuesta todavía necesita evidencias que se puedan revisar. Los totales y las existencias actuales deben obtenerse mediante consultas autorizadas y cálculos sobre registros fiables, no a partir de unos pocos fragmentos recuperados.
+
+| Datos | Ruta inicial | Evidencia en la respuesta |
+| --- | --- | --- |
+| PDF con texto, cartas y procedimientos | Extraer títulos, páginas y versiones; búsqueda léxica y vectores cuando aporten valor | La cláusula vigente y su página |
+| Documentos escaneados, gráficos y tablas como imagen | OCR que conserve la disposición; comparar recuperación visual con páginas representativas | Texto extraído o una región verificable de la página |
+| Registros actualizados del CRM y ERP | Consultas autorizadas mediante un conector con acceso limitado | Registro de origen y hora de consulta |
+| Totales, recuentos e informes tabulares | SQL, BI o código sobre todos los registros pertinentes; generación para explicar | Cálculo reproducible y alcance de los datos |
+
+Para una prueba visual, [Qwen3-VL-Embedding-2B](https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B) recupera páginas pertinentes y [Qwen3-VL-Reranker-2B](https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B) vuelve a puntuar candidatos; ninguno genera la respuesta. Las variantes de 8B permiten comparar, sin ser el punto de partida obligatorio. El contexto documentado para la tarea es de 32K tokens. La cuantización de la ficha de embedding se refiere a los **vectores de salida**, no a pesos Q4. Los resultados agregados de MMEB o ViDoRe no establecen la calidad en español.
+
+Los importes, identificadores y cláusulas exactas necesitan una referencia al texto extraído o a una región verificable de la página. Compare el tiempo de indexación, el tamaño del índice y la latencia de consulta junto con la recuperación correcta. Un modelo visual de 2B no tiene necesariamente el coste de ejecución de un modelo textual de 2B.
+
+<!-- document-routes:end -->
+
 ## Tres componentes y tres responsabilidades
 
 Un RAG habitual prepara y divide documentos, calcula sus representaciones, recupera candidatos para una consulta, opcionalmente los reordena y entrega evidencia al generador. No todas las peticiones necesitan el recorrido completo. Para un número exacto de circular quizá baste buscar el identificador y mostrar el fragmento, sin generar texto nuevo.

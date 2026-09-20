@@ -155,7 +155,11 @@ export interface LicenseRecord {
   evidenceIds?: EvidenceId[];
 }
 
+export type ModelTaskSpecialization = 'translation' | 'code-completion' | 'coding-assistant' | 'coding-agent';
 export interface ModelVersion {
+  /** Reviewed specialization, not merely a task a general-purpose model can perform. */
+  taskSpecializations?: Array<{ task: ModelTaskSpecialization; languages?: string[]; evidenceIds: EvidenceId[] }>;
+
   configurationContext?: Datum<number, 'token'>;
   id: ModelVersionId;
   familyId: ModelFamilyId;

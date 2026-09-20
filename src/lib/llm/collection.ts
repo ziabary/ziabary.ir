@@ -3,7 +3,7 @@ import type { GuideCollection } from '$lib/guides';
 
 export const llmGuideCollection: GuideCollection = {
   slug: 'llm',
-  status: 'draft',
+  status: 'published',
   featured: true,
   articleCount: llmEditionSlugs('fa').length,
   title: 'راهنمای انتخاب مدل زبانی بزرگ و کوچک',

@@ -93,7 +93,7 @@ For an intermittently used local tool, accepting a longer response in exchange f
 
 ### Apple silicon: the MLX LM route
 
-For local Apple silicon use, [MLX LM](https://github.com/ml-explore/mlx-lm) provides text generation, streaming, prompt caching, quantization and fine-tuning for compatible models. Include it as a direct runtime route even though it is not a graphical model manager. Documented features are not measured speed guarantees. The macOS 15 note in the Large Models section concerns memory wiring; it should not be presented as the universal minimum for every feature.
+For a Mac with Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) supports local generation, prompt caching, quantization and fine-tuning. The choice depends on the model, weight format and available memory. Memory wiring for large models requires macOS 15 or later.
 
 <!-- reference:mac-path:end -->
 

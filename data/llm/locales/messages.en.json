@@ -1228,7 +1228,7 @@
   "LlmPublishedEvaluations.1204": "Report publication date",
   "LlmPublishedEvaluations.1205": "Access date",
   "LlmResearchView.1206": "Memory path",
-  "LlmResearchView.1207": "GPU budget for weights and KV cache",
+  "LlmResearchView.1207": "Memory estimate",
   "LlmResearchView.1208": "Weight sizes for all models",
   "LlmResearchView.1210": "Layer-wise execution · AirLLM",
   "LlmResearchView.1211": "Publisher-reported memory · GPT-OSS",

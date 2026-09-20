@@ -243,5 +243,19 @@
   "eaaisswkage": "/en/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-en/",
   "eaovsolce": "/en/articles/ollama-vllm-sglang-or-llama-cpp-en/",
   "eaaisswkage2": "/es/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-es/",
-  "eaovsolce2": "/es/articles/ollama-vllm-sglang-or-llama-cpp-es/"
+  "eaovsolce2": "/es/articles/ollama-vllm-sglang-or-llama-cpp-es/",
+  "egl": "/en/guides/llm/",
+  "eglb": "/en/guides/llm/#benchmarks",
+  "eglhf": "/en/guides/llm/#hardware-feasibility",
+  "eglmc": "/en/guides/llm/#model-catalog",
+  "eglms": "/en/guides/llm/#model-suitability",
+  "eglss": "/en/guides/llm/#serving-software",
+  "eglsm": "/en/guides/llm/#specialized-models",
+  "egl2": "/es/guides/llm/",
+  "eglb2": "/es/guides/llm/#benchmarks",
+  "eglhf2": "/es/guides/llm/#hardware-feasibility",
+  "eglmc2": "/es/guides/llm/#model-catalog",
+  "eglms2": "/es/guides/llm/#model-suitability",
+  "eglss2": "/es/guides/llm/#serving-software",
+  "eglsm2": "/es/guides/llm/#specialized-models"
 }

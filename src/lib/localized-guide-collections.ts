@@ -1,6 +1,7 @@
 import { getArticle } from '$lib/content';
 import { guideCollections, type GuideCollection } from '$lib/guides';
 import { gpuReviews } from '$lib/gpu-review';
+import { llmCollection, llmEditionSlugs } from '$lib/llm/editions';
 
 // Each edition has its own editorial selection and order. An introduction alone
 // does not make a translated collection publishable.
@@ -58,7 +59,8 @@ export function getLocalizedGuideCollections(locale: 'en' | 'es'): GuideCollecti
       href: item.kind === 'article' ? `/${locale}/articles/${item.id}/` : `#${item.id}`
     }))
   }];
-  const published = [...gpuCollections, ...(locale === 'en' ? englishCollections : spanishCollections)].map(collection => ({
+  const llm = { ...llmCollection(locale), articleCount: llmEditionSlugs(locale).filter(slug => getArticle(slug, locale)).length };
+  const published = [...gpuCollections, ...(llm.status === 'published' ? [llm] : []), ...(locale === 'en' ? englishCollections : spanishCollections)].map(collection => ({
     ...collection,
     items: collection.items.filter(item => item.kind !== 'article' || getArticle(item.id)?.lang === locale)
   })).filter(collection => collection.items.length > 0);

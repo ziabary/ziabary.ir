@@ -26,7 +26,7 @@ try{
   assert.equal(await E('document.documentElement.lang'),locale);assert.equal(await E('document.documentElement.dir'),locale==='fa'?'rtl':'ltr');
   assert.equal(await E("document.querySelectorAll('head title').length"),1);assert.equal(await E("document.querySelectorAll('head meta[name=description]').length"),1);
   assert.equal(await E("document.querySelector('link[rel=canonical]').href"),'https://ziabary.ir'+guide(locale));
-  assert.match(await E("document.querySelector('meta[name=robots]').content"),/noindex/);
+  assert.match(await E("document.querySelector('meta[name=robots]')?.content??''"),/noindex/);
   assert.equal(await E("document.querySelectorAll('.llm-chapter').length"),10);
   await wait("document.querySelector('.opening-image')?.naturalWidth>0");await E("scrollTo({top:0,behavior:'instant'})");await shot(locale+'-1440-dark');
   for(const id of ['model-catalog','model-suitability','hardware-feasibility','software-products','specialized-models']){assert.ok(await rowCount(id)>0,id);result.views[id]=await rowCount(id);await frame('#'+id);assert.equal(await E('document.documentElement.scrollWidth>innerWidth+1'),false,id);}
@@ -66,7 +66,7 @@ try{
  await click('.language-control summary');await click('.language-menu a[href^="/es/guides/llm/"]');await wait("document.documentElement.lang==='es' && !!document.querySelector('.llm-view#model-catalog')");assert.equal(await E("document.querySelector('#model-catalog .search-row input[type=search]').value"),'Qwen3-8B');assert.ok(await E("document.querySelector('#model-catalog tbody input[type=checkbox]').checked"));assert.equal(await E("new URL(location.href).searchParams.get('target-language')"),'en');
  report.checks.push('quality valid/incompatible; checkbox, reload, back/forward; table selection and target language survive EN→ES');
  // Static preview policy and direct translated chapter links.
- for(const locale of ['fa','en','es']){await nav(guide(locale),'.preview-gate');assert.equal(await E("!!document.querySelector('.llm-view#model-catalog')"),false);}
+ for(const locale of ['fa','en','es']){await nav(guide(locale),'#model-catalog');assert.equal(await E("!!document.querySelector('.llm-view#model-catalog')"),true);}
  for(const [locale,slug] of [['en','right-model-size-for-the-task-en'],['es','right-model-size-for-the-task-es']]){
   const path='/'+locale+'/articles/'+slug+'/';await nav(path,'.draft-gate');assert.equal(await E("!!document.querySelector('.article-body')"),false);
   await nav(path+'?show-drafts=true','.article-body');assert.ok(await E("document.querySelector('.article-body').innerText.length>8000"));assert.equal(await E("document.querySelectorAll('head title').length"),1);assert.match(await E("document.querySelector('meta[name=robots]').content"),/noindex/);

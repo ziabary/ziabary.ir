@@ -1,5 +1,6 @@
 <script lang="ts">
   import { getLlmI18n } from '$lib/llm/i18n/context';
+  import { wizardLicense } from '$lib/llm/wizard';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
@@ -20,7 +21,7 @@
     await goto(url, { noScroll: true, keepFocus: true });
   }
   $: task = tasks.find(task => task.id === selected)!;
-  $: choices = task.candidates.filter(item => item.languages.includes('all') || targetLanguage === 'all' || item.languages.includes(targetLanguage));
+  $: choices = task.candidates.filter(item => (item.languages.includes('all') || targetLanguage === 'all' || item.languages.includes(targetLanguage)) && (locale==='fa'||repository.models.some(model=>model.id===item.modelVersionId&&wizardLicense(model,locale)!=='noncommercial')));
   const copy = {
     fa: {title:'کدام مدل برای کار من مناسب است؟', task:'کار مورد نظر', basis:'نقطهٔ شروع بر پایهٔ مستندات؛ رتبه‌بندی کیفیت نیست.', profile:'پرونده و نتایج', download:'دریافت مدل', run:'مسیر اجرا', empty:'نامزد بررسی‌شده برای این زبان و وظیفه ثبت نشده است؛ کاتالوگ را با فیلتر نقش و زبان بررسی کنید.'},
     en: {title:'Which model should I consider?', task:'Your task', basis:'Documented starting points, not a quality ranking.', profile:'Profile and results', download:'Download', run:'Run guide', empty:'No reviewed candidate is recorded for this language and task. Use the catalog’s role and language filters.'},
@@ -38,6 +39,7 @@
       <p>{t(candidate.explanationKey)}</p>
       {#if targetLanguage !== 'all'}<small>{targetLanguage}: {t('language.evidence.'+modelLanguageEvidence(repository,model,targetLanguage,task.applicationId as never))}</small>{/if}
       <nav><button on:click={()=>onOpenModel(model.id)}>{copy.profile}</button><button on:click={()=>onOpenModel(model.id,'downloads')}>{copy.download}</button><button on:click={()=>onOpenModel(model.id,'run')}>{copy.run}</button></nav>
+      {#if locale!=='fa'&&wizardLicense(model,locale)==='conditions'}<details><summary>{model.license.name.state==='known'?model.license.name.value:'License'}</summary>{#each model.license.restrictions??[] as condition}<p>{condition}</p>{/each}{#if model.license.url.state==='known'}<a href={model.license.url.value}>{locale==='es'?'Condiciones de los pesos':'Weight license conditions'}</a>{/if}</details>{/if}
       <LlmEvidence ids={profile.evidenceIds} evidence={repository.evidence} />
     </article>{/if}
   {/each}</div>

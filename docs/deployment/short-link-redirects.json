@@ -690,6 +690,48 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=egl",
+    "destination": "https://ziabary.ir/en/guides/llm/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglb",
+    "destination": "https://ziabary.ir/en/guides/llm/#benchmarks",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglhf",
+    "destination": "https://ziabary.ir/en/guides/llm/#hardware-feasibility",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglmc",
+    "destination": "https://ziabary.ir/en/guides/llm/#model-catalog",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglms",
+    "destination": "https://ziabary.ir/en/guides/llm/#model-suitability",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglss",
+    "destination": "https://ziabary.ir/en/guides/llm/#serving-software",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglsm",
+    "destination": "https://ziabary.ir/en/guides/llm/#specialized-models",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=egzta",
     "destination": "https://ziabary.ir/en/guides/zero-trust-ai/",
     "status": 301,
@@ -1026,6 +1068,48 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=egl2",
+    "destination": "https://ziabary.ir/es/guides/llm/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglb2",
+    "destination": "https://ziabary.ir/es/guides/llm/#benchmarks",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglhf2",
+    "destination": "https://ziabary.ir/es/guides/llm/#hardware-feasibility",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglmc2",
+    "destination": "https://ziabary.ir/es/guides/llm/#model-catalog",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglms2",
+    "destination": "https://ziabary.ir/es/guides/llm/#model-suitability",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglss2",
+    "destination": "https://ziabary.ir/es/guides/llm/#serving-software",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eglsm2",
+    "destination": "https://ziabary.ir/es/guides/llm/#specialized-models",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=egzta2",
     "destination": "https://ziabary.ir/es/guides/zero-trust-ai/",
     "status": 301,
@@ -1232,6 +1316,48 @@
   {
     "source": "https://ziabary.ir/?t=ggssct",
     "destination": "https://ziabary.ir/guides/gpu-selection/#server-comparison-table",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=gl",
+    "destination": "https://ziabary.ir/guides/llm/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=glb",
+    "destination": "https://ziabary.ir/guides/llm/#benchmarks",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=glhf",
+    "destination": "https://ziabary.ir/guides/llm/#hardware-feasibility",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=glmc",
+    "destination": "https://ziabary.ir/guides/llm/#model-catalog",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=glms",
+    "destination": "https://ziabary.ir/guides/llm/#model-suitability",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=glss",
+    "destination": "https://ziabary.ir/guides/llm/#serving-software",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=glsm",
+    "destination": "https://ziabary.ir/guides/llm/#specialized-models",
     "status": 301,
     "preserveQueryString": false
   },

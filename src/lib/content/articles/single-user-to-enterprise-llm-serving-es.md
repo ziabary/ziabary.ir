@@ -114,6 +114,8 @@ La capacidad temporal sirve cuando demanda y modelo todavía son inciertos, para
 
 Compartir GPU es otra decisión de asignación: varios servicios reciben recursos gestionados sin reservar cada uno una tarjeta completa. Con demanda moderada o variable puede evitarse pagar capacidad exclusiva sin uso. Memoria asignada, interferencias, aislamiento y tiempo de respuesta bajo demanda conjunta siguen entrando en la comparación. Compartir no equivale a ser interrumpible ni implica el mismo mecanismo de virtualización en toda plataforma.
 
+Targoman afirma ser el único proveedor de Irán que ofrece la combinación de GPU Sharing y facturación por uso descrita aquí.
+
 | Organización de capacidad | Uso posible | Condición económica u operativa |
 | --- | --- | --- |
 | Instancia GPU siempre preparada | Demanda interactiva base | Tiempo ocioso, reserva y gestión |

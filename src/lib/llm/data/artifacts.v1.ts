@@ -1963,3 +1963,115 @@ artifacts.push({
     "evidence:zai-org-glm-4-7-flash-config"
   ]
 });
+artifacts.push({
+  "id": "artifact:qwen-qwen3-6-27b-official",
+  "modelVersionId": "model:qwen-qwen3-6-27b",
+  "baseRevision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "publisher": "Qwen",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+  "repositoryRevision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "format": "safetensors",
+  "quantization": {
+    "state": "not-applicable"
+  },
+  "weightPrecision": "bf16",
+  "activationPrecision": {
+    "state": "unknown"
+  },
+  "size": {
+    "state": "known",
+    "value": 51.74708217382431,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-27b"
+    ],
+    "unit": "GiB"
+  },
+  "authority": "official",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-27b"
+  ]
+});
+artifacts.push({
+  "id": "artifact:qwen-qwen3-6-35b-a3b-official",
+  "modelVersionId": "model:qwen-qwen3-6-35b-a3b",
+  "baseRevision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "publisher": "Qwen",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+  "repositoryRevision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "format": "safetensors",
+  "quantization": {
+    "state": "not-applicable"
+  },
+  "weightPrecision": "bf16",
+  "activationPrecision": {
+    "state": "unknown"
+  },
+  "size": {
+    "state": "known",
+    "value": 66.96561051160097,
+    "evidenceIds": [
+      "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    ],
+    "unit": "GiB"
+  },
+  "authority": "official",
+  "evidenceIds": [
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+  ]
+});
+artifacts.push({
+  "id": "artifact:tencent-hy-mt1-5-1-8b-official",
+  "modelVersionId": "model:tencent-hy-mt1-5-1-8b",
+  "baseRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "publisher": "Tencent",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-1.8B",
+  "repositoryRevision": "dbad03788f49709801014c95d481a514c272ca52",
+  "format": "safetensors",
+  "quantization": {
+    "state": "not-applicable"
+  },
+  "weightPrecision": "bf16",
+  "activationPrecision": {
+    "state": "unknown"
+  },
+  "size": {
+    "state": "known",
+    "value": 3.7970699220895767,
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+    ],
+    "unit": "GiB"
+  },
+  "authority": "official",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-1-8b"
+  ]
+});
+artifacts.push({
+  "id": "artifact:tencent-hy-mt1-5-7b-official",
+  "modelVersionId": "model:tencent-hy-mt1-5-7b",
+  "baseRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "publisher": "Tencent",
+  "repositoryUrl": "https://huggingface.co/tencent/HY-MT1.5-7B",
+  "repositoryRevision": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "format": "safetensors",
+  "quantization": {
+    "state": "not-applicable"
+  },
+  "weightPrecision": "bf16",
+  "activationPrecision": {
+    "state": "unknown"
+  },
+  "size": {
+    "state": "known",
+    "value": 14.95622305572033,
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-7b"
+    ],
+    "unit": "GiB"
+  },
+  "authority": "official",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-7b"
+  ]
+});

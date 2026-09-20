@@ -1,4 +1,8 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
+  import { page } from '$app/stores';
+  import { hasLlmPreview } from '$lib/draft-preview.mjs';
+  $: preview = browser && hasLlmPreview($page.url.searchParams) ? 'show-drafts=true&' : '';
   import { referenceComparisons } from '$lib/llm/data/referenceComparisons.v1';
   import { selectionGuidance } from '$lib/llm/data/selectionGuidance.v1';
   import type { LlmLocale } from '$lib/llm/i18n/runtime';
@@ -14,8 +18,8 @@
 {#each guides as guide (guide.id)}
 <details><summary>{guide.title[locale]}</summary>
 <p>{guide.decision[locale]}</p><p>{guide.chooseWhen[locale]}</p><p class="limit">{guide.doNotInfer[locale]}</p>
-<nav aria-label={copy.models}>{#each guide.candidateModelRefs as id}<a href={`${base}/guides/llm/?show-drafts=true&model=${encodeURIComponent(id)}&panel=quality`} on:click={event=>{if(onOpenModel){event.preventDefault();onOpenModel(id,'quality');}}}><bdi>{modelNames[id] ?? guide.candidateNames?.[id] ?? id.replace('model:','')}</bdi></a>{/each}</nav>
-<nav aria-label={copy.comparisons}>{#each guide.comparisonGroupIds as id}<a href={`${base}/guides/llm/?show-drafts=true&reference-group=${encodeURIComponent(id)}#reference-comparisons`}>{referenceComparisons?.find(g=>g.id===id)?.title[locale] ?? copy.comparisons}</a>{/each}</nav>
+<nav aria-label={copy.models}>{#each guide.candidateModelRefs as id}<a href={`${base}/guides/llm/?${preview}model=${encodeURIComponent(id)}&panel=quality`} on:click={event=>{if(onOpenModel){event.preventDefault();onOpenModel(id,'quality');}}}><bdi>{modelNames[id] ?? guide.candidateNames?.[id] ?? id.replace('model:','')}</bdi></a>{/each}</nav>
+<nav aria-label={copy.comparisons}>{#each guide.comparisonGroupIds as id}<a href={`${base}/guides/llm/?${preview}reference-group=${encodeURIComponent(id)}#reference-comparisons`}>{referenceComparisons?.find(g=>g.id===id)?.title[locale] ?? copy.comparisons}</a>{/each}</nav>
 </details>{/each}
 </div>
 <style>

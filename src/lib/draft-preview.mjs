@@ -20,8 +20,8 @@ export function draftReadingHref(href, draftSlugs, preview = true) {
   try { url = new URL(href, 'https://ziabary.ir'); } catch { return href; }
   if (url.origin !== 'https://ziabary.ir') return href;
   const article = /^\/(?:en\/|es\/)?articles\/([^/]+)\/?$/.exec(url.pathname);
-  if (!/^\/(?:en\/|es\/)?guides\/llm\/?$/.test(url.pathname) && !(article && draftSlugs.includes(article[1]))) return href;
-  url.searchParams.set(/^\/(?:en\/|es\/)?guides\/llm\/?$/.test(url.pathname) ? 'show-drafts' : 'show-drafts', 'true');
+  if (!(article && draftSlugs.includes(article[1]))) return href;
+  url.searchParams.set('show-drafts', 'true');
   return `${url.pathname}${url.search}${url.hash}`;
 }
 

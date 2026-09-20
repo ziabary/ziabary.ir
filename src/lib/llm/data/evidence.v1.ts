@@ -41529,3 +41529,449 @@ evidence.push({
     "sourceId": "source:paretoq-readme-txt"
   }
 });
+evidence.push({
+  "id": "evidence:update0919-zai-org-glm-5",
+  "url": "https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md",
+  "title": "GLM-5 — model card",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "zai-org/GLM-5",
+  "versionRevisionOrCommit": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-zai-org-glm-5-1",
+  "url": "https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md",
+  "title": "GLM-5.1 — model card",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "zai-org/GLM-5.1",
+  "versionRevisionOrCommit": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-zai-org-glm-5-2",
+  "url": "https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md",
+  "title": "GLM-5.2 — model card",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "zai-org/GLM-5.2",
+  "versionRevisionOrCommit": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-zai-org-glm-5-3-bf16",
+  "url": "https://huggingface.co/zai-org/GLM-5.3-BF16/blob/9d2398f478cab2de883137db3a36ad2c96205e24/README.md",
+  "title": "GLM-5.3 — model card",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "zai-org/GLM-5.3-BF16",
+  "versionRevisionOrCommit": "9d2398f478cab2de883137db3a36ad2c96205e24",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-moonshotai-kimi-k2-6",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md",
+  "title": "Kimi-K2.6 — model card",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "moonshotai/Kimi-K2.6",
+  "versionRevisionOrCommit": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-moonshotai-kimi-k2-7-code",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md",
+  "title": "Kimi-K2.7-Code — model card",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "moonshotai/Kimi-K2.7-Code",
+  "versionRevisionOrCommit": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-moonshotai-kimi-k3",
+  "url": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md",
+  "title": "Kimi-K3 — model card",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "moonshotai/Kimi-K3",
+  "versionRevisionOrCommit": "f831ab66814297da540d832a5235f8e904f29d06",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-qwen-qwen3-vl-embedding-2b",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/blob/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda/README.md",
+  "title": "Qwen3-VL-Embedding-2B — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-VL-Embedding-2B",
+  "versionRevisionOrCommit": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-qwen-qwen3-vl-embedding-8b",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B/blob/2c4565515e0f265c6511776e7193b22c0968ddc7/README.md",
+  "title": "Qwen3-VL-Embedding-8B — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-VL-Embedding-8B",
+  "versionRevisionOrCommit": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-qwen-qwen3-vl-reranker-2b",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B/blob/4bd860ac4f15ad1897a214615cccc700f8f71818/README.md",
+  "title": "Qwen3-VL-Reranker-2B — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-VL-Reranker-2B",
+  "versionRevisionOrCommit": "4bd860ac4f15ad1897a214615cccc700f8f71818",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-qwen-qwen3-vl-reranker-8b",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B/blob/b212dc8c91a8164aef1ea2de9c1a867611e75c04/README.md",
+  "title": "Qwen3-VL-Reranker-8B — model card",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model description, context, runtime examples and license",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3-VL-Reranker-8B",
+  "versionRevisionOrCommit": "b212dc8c91a8164aef1ea2de9c1a867611e75c04",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-glm5-tb20",
+  "url": "https://huggingface.co/zai-org/GLM-5",
+  "title": "Terminal-Bench 2.0 — Z.ai",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-glm51-tb20",
+  "url": "https://huggingface.co/zai-org/GLM-5.1",
+  "title": "Terminal-Bench 2.0 — Z.ai",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.1",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-glm52-tb21",
+  "url": "https://huggingface.co/zai-org/GLM-5.2",
+  "title": "Terminal-Bench 2.1 — Z.ai",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.2",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-glm53-tb21",
+  "url": "https://huggingface.co/zai-org/GLM-5.3-BF16",
+  "title": "Terminal-Bench 2.1 — Z.ai",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.3",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-glm53-tb30",
+  "url": "https://huggingface.co/zai-org/GLM-5.3-BF16",
+  "title": "Terminal-Bench 3.0 — Z.ai",
+  "organization": "Z.ai",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.3",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-kimi26-tb20",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2.6",
+  "title": "Terminal-Bench 2.0 — Moonshot AI",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Kimi-K2.6",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-kimi-k2.6-programbench-k27",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+  "title": "ProgramBench — Moonshot AI",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Kimi-K2.6",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-kimi-k2.7-code-programbench-k27",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+  "title": "ProgramBench — Moonshot AI",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Kimi-K2.7-Code",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-kimi3-tb21",
+  "url": "https://huggingface.co/moonshotai/Kimi-K3",
+  "title": "Terminal-Bench 2.1 — Moonshot AI",
+  "organization": "Moonshot AI",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Kimi-K3",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen-vl-embedding-2b-all",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
+  "title": "MMEB-V2 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Embedding-2B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen-vl-embedding-2b-visdoc",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
+  "title": "MMEB-V2 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Embedding-2B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen-vl-embedding-8b-all",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
+  "title": "MMEB-V2 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Embedding-8B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen-vl-embedding-8b-visdoc",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
+  "title": "MMEB-V2 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Embedding-8B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen3-vl-embedding-2b-vidore3",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B",
+  "title": "ViDoRe v3 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Embedding-2B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen3-vl-reranker-2b-vidore3",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B",
+  "title": "ViDoRe v3 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Reranker-2B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-result-qwen3-vl-reranker-8b-vidore3",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B",
+  "title": "ViDoRe v3 — Qwen",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-19",
+  "locator": "Model-card evaluation table and footnotes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen3-VL-Reranker-8B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:update0919-mlx-qwen3-1.7b-4bit",
+  "url": "https://huggingface.co/mlx-community/Qwen3-1.7B-4bit/blob/3b1b1768f8f8cf8351c712464f906e86c2b8269e/README.md",
+  "title": "mlx-community/Qwen3-1.7B-4bit — MLX conversion",
+  "organization": "mlx-community",
+  "accessedOn": "2026-09-19",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "mlx-community/Qwen3-1.7B-4bit",
+  "versionRevisionOrCommit": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+  "limitations": [],
+  "presentationNotes": [],
+  "locator": "README conversion version, quantization and usage example; safetensors file inventory"
+});
+evidence.push({
+  "id": "evidence:update0919-mlx-qwen3-4b-instruct-2507-4bit",
+  "url": "https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit/blob/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b/README.md",
+  "title": "mlx-community/Qwen3-4B-Instruct-2507-4bit — MLX conversion",
+  "organization": "mlx-community",
+  "accessedOn": "2026-09-19",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "versionRevisionOrCommit": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "limitations": [],
+  "presentationNotes": [],
+  "locator": "README conversion version, quantization and usage example; safetensors file inventory"
+});
+evidence.push({
+  "id": "evidence:wizard0920-qwen-qwen3-6-27b",
+  "url": "https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md",
+  "title": "Qwen3.6-27B — official card, config and file inventory",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "locator": "Model overview; Quickstart; config.json; HF API safetensors and siblings",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3.6-27B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:wizard0920-qwen-qwen3-6-35b-a3b",
+  "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md",
+  "title": "Qwen3.6-35B-A3B — official card, config and file inventory",
+  "organization": "Qwen",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "locator": "Model overview; Quickstart; config.json; HF API safetensors and siblings",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Qwen/Qwen3.6-35B-A3B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tasks0920-tencent-hy-mt1-5-1-8b",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-1.8B/blob/dbad03788f49709801014c95d481a514c272ca52/README.md",
+  "title": "HY-MT1.5-1.8B — translation, languages, config, files and license",
+  "organization": "Tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "dbad03788f49709801014c95d481a514c272ca52",
+  "locator": "Model Introduction; Supported languages; Use with transformers; config.json; License.txt; pinned HF file inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-1.8B",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tasks0920-tencent-hy-mt1-5-7b",
+  "url": "https://huggingface.co/tencent/HY-MT1.5-7B/blob/397085d46158ad0b437ffd74228499e8c2a35c76/README.md",
+  "title": "HY-MT1.5-7B — translation, languages, config, files and license",
+  "organization": "Tencent",
+  "accessedOn": "2026-09-20",
+  "versionRevisionOrCommit": "397085d46158ad0b437ffd74228499e8c2a35c76",
+  "locator": "Model Introduction; Supported languages; Use with transformers; config.json; License.txt; pinned HF file inventory",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "tencent/HY-MT1.5-7B",
+  "limitations": [],
+  "presentationNotes": []
+});

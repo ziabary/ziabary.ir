@@ -1,5 +1,5 @@
 ---
-title: "ترگمان؛ تا ۳۰۰ درخواست هم‌زمان روی یک RTX 4090"
+title: "ترگمان زیر فشار ۳۰۰ درخواست هم‌زمان؛ تجربهٔ سرویس‌دهی با تنها یک RTX 4090"
 slug: targoman-300-concurrent-requests-one-rtx-4090
 translationGroup: targoman-300-concurrent-requests-one-rtx-4090
 lang: fa
@@ -8,7 +8,7 @@ faDate: "۱۸ خرداد ۱۴۰۵"
 draft: false
 math: false
 category: ترگمان
-excerpt: "روایت خدمت رایگان ترگمان در روزهای جنگ رمضان؛ سه خدمت با یک مدل مشترک و تجربه رسیدن به حدود ۳۰۰ درخواست هم‌زمان روی یک RTX 4090."
+excerpt: "تجربهٔ خدمت رایگان ترگمان با یک RTX 4090؛ رسیدن به حدود ۳۰۰ درخواست هم‌زمان، صف، کندی پاسخ و لغو بخشی از درخواست‌ها."
 readTime: "۱۴ دقیقه"
 cover: "/images/articles/targoman-300-concurrent-requests-one-rtx-4090/cover.webp"
 related: ["seventy-million-words-a-day", "targoman-without-rent", "google-used-targoman"]

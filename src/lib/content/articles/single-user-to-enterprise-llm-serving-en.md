@@ -114,6 +114,8 @@ Temporary capacity is useful while demand and model choice are uncertain, for ex
 
 GPU sharing is another allocation choice: services can receive managed portions rather than each reserving a whole card. For modest or variable demand, this may avoid paying for unused exclusive capacity. Memory allocation, interference, isolation and response time under simultaneous demand remain part of the comparison. Sharing is not synonymous with an interruptible instance, nor does it necessarily require the same virtualization mechanism on every platform.
 
+Targoman states that it is the only provider in Iran offering the combination of GPU Sharing and pay-as-you-go billing described here.
+
 | Capacity arrangement | Useful for | Cost or operational condition to include |
 | --- | --- | --- |
 | Always-ready GPU instance | Baseline interactive demand | Idle time, spare capacity and management |

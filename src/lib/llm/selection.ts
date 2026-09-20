@@ -2,7 +2,7 @@ import type { LlmViewConfig, LlmViewRow } from './views';
 import type { FilterSelections, SortDirection } from './filtering';
 import type { ResearchControls } from './research-views';
 export interface TableSelection {
-  q: string; filters: FilterSelections; ids: string[]; columns: string[] | null;
+  q: string; filters: FilterSelections; ids: string[]; onlySelected?: boolean; columns: string[] | null;
   sort: string; direction: SortDirection; mode: 'side-by-side' | 'controlled-experiment' | 'solution-selection'; axis: string;
 }
 const uniqueStrings = (value: unknown, allowed: Set<string>, limit = 100) => Array.isArray(value)
@@ -31,7 +31,7 @@ export function readTableSelection(value: string | null, config: LlmViewConfig, 
   const columns = new Set([...config.defaultColumns, ...(config.optionalColumns ?? [])].map(column => column.key).concat(config.matrixColumns?.map(column => column.id) ?? []));
   const axis = config.comparison.controlledAxes.find(axis => axis.id === data.axis)?.id ?? '';
   return { q: typeof data.q === 'string' ? data.q.slice(0, 200) : '', filters,
-    ids: uniqueStrings(data.ids, new Set(rows.map(row => row.id)), config.comparisonLimit),
+    ids: uniqueStrings(data.ids, new Set(rows.map(row => row.id)), config.comparisonLimit), onlySelected: data.onlySelected === true,
     columns: Array.isArray(data.columns) ? uniqueStrings(data.columns, columns) : null,
     sort: columns.has(data.sort) ? data.sort : '', direction: data.direction === 'desc' ? 'desc' : 'asc',
     mode: data.mode === 'controlled-experiment' && axis ? data.mode : data.mode === 'solution-selection' && config.comparison.solutionSharedDimensions.length ? data.mode : 'side-by-side', axis };
@@ -52,6 +52,7 @@ export function encodeTableSelection(state: TableSelection) {
   const filters = Object.fromEntries(Object.entries(state.filters).filter(([, value]) => Array.isArray(value) ? value.length : typeof value === 'string' ? !!value : !!value.min || !!value.max));
   if (Object.keys(filters).length) value.filters = filters;
   if (state.ids.length) value.ids = state.ids;
+  if (state.onlySelected) value.onlySelected = true;
   if (state.columns !== null) value.columns = state.columns;
   if (state.sort) { value.sort = state.sort; value.direction = state.direction; }
   if (state.mode !== 'side-by-side') { value.mode = state.mode; if (state.axis) value.axis = state.axis; }

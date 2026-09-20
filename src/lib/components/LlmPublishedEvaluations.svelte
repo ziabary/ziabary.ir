@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { benchmarkLabel } from '$lib/llm/score-scope';
   import { hasReportedValue, evaluationMetricLabel, evaluationSettingLabel, reportedSettings, hasNumericResult } from '$lib/llm/evaluation-display';
   import { getLlmI18n } from '$lib/llm/i18n/context';
   const i18n = getLlmI18n();
@@ -34,11 +35,11 @@
   {#if !compact}<h4>{t('LlmPublishedEvaluations.1187')}</h4>{/if}
   {#each results.filter(hasNumericResult) as result (result.id)}
     <details class="published-result" open={compact} data-published-evaluation={result.id}>
-      <summary><b dir="auto">{result.benchmark} · {metrics[result.metric] ?? evaluationMetricLabel(result.metric,locale)}: {numbers.format(result.value)}{result.unit === 'percent' ? t('LlmPublishedEvaluations.1189') : ''}</b><span>{result.reportingRelationship === 'publisher' ? t('LlmPublishedEvaluations.1190') : result.reportingRelationship === 'independent' ? t('LlmPublishedEvaluations.1191') : t('LlmPublishedEvaluations.1192')} · {result.reporter}{#each qualifiers(result) as label} · {label}{/each}</span></summary>
+      <summary><b dir="auto">{benchmarkLabel(result.benchmark)} · {metrics[result.metric] ?? evaluationMetricLabel(result.metric,locale)}: {numbers.format(result.value)}{result.unit === 'percent' ? t('LlmPublishedEvaluations.1189') : ''}</b><span>{result.reportingRelationship === 'publisher' ? t('LlmPublishedEvaluations.1190') : result.reportingRelationship === 'independent' ? t('LlmPublishedEvaluations.1191') : t('LlmPublishedEvaluations.1192')} · {result.reporter}{#each qualifiers(result) as label} · {label}{/each}</span></summary>
       <dl>
         {#if result.mode}<div><dt>{t('LlmPublishedEvaluations.1193')}</dt><dd>{modes[result.mode] ?? result.mode}</dd></div>{/if}
         <div><dt>{t('LlmPublishedEvaluations.1195')}</dt><dd dir="auto">{result.reportedModelName}</dd></div>
-        <div><dt>{t('LlmPublishedEvaluations.1196')}</dt><dd dir="auto">{result.benchmark}{#if result.benchmarkVersion} · {result.benchmarkVersion}{/if}</dd></div>
+        <div><dt>{t('LlmPublishedEvaluations.1196')}</dt><dd dir="auto">{benchmarkLabel(result.benchmark)}{#if result.benchmarkVersion} · {result.benchmarkVersion}{/if}</dd></div>
         <div><dt>{t('LlmPublishedEvaluations.1197')}</dt><dd dir="auto">{metrics[result.metric] ?? evaluationMetricLabel(result.metric,locale)} · {result.unit === 'percent' ? t('LlmPublishedEvaluations.1198') : result.unit === 'score' ? t('LlmPublishedEvaluations.1173') : result.unit}</dd></div>
         {#if hasReportedValue(result.reportedPrecision)}<div><dt>{t('LlmPublishedEvaluations.1199')}</dt><dd dir="auto">{result.reportedPrecision}</dd></div>{/if}
         {#if hasReportedValue(result.evaluatedRevision)}<div><dt>{t('LlmPublishedEvaluations.1200')}</dt><dd dir="auto">{result.evaluatedRevision}</dd></div>{/if}

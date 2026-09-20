@@ -18,7 +18,7 @@ export async function loadLlmModules() {
     else source = ts.transpileModule(await fs.readFile(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
     // Read import syntax, not examples such as `from ollama import embed` in data strings.
     const parsed = ts.createSourceFile(file, source, ts.ScriptTarget.ES2022, true, ts.ScriptKind.JS);
-    const imports = parsed.statements.filter(ts.isImportDeclaration).map(statement => statement.moduleSpecifier).reverse();
+    const imports = parsed.statements.filter(statement => ts.isImportDeclaration(statement) || ts.isExportDeclaration(statement) && statement.moduleSpecifier).map(statement => statement.moduleSpecifier).reverse();
     for (const specifier of imports) {
       const name = specifier.text;
       let dependency = name.startsWith('$lib/') ? path.join(root,'src/lib',name.slice(5)) : path.resolve(path.dirname(file),name);
@@ -29,7 +29,7 @@ export async function loadLlmModules() {
     await fs.mkdir(path.dirname(target), { recursive:true }); await fs.writeFile(target,source);return target;
   }
   const modules = {};
-  for (const name of ['research','research-views','adapters','filtering','guide','views','comparison','presentation','brands','evaluation','selection','i18n/runtime','performance-policy','reference','evaluation-display']) modules[name] = await import(pathToFileURL(await compile(path.join(root,'src/lib/llm',name+'.ts'))));
+  for (const name of ['research','research-views','adapters','filtering','guide','views','comparison','presentation','brands','evaluation','selection','i18n/runtime','performance-policy','reference','evaluation-display','wizard','score-scope']) modules[name] = await import(pathToFileURL(await compile(path.join(root,'src/lib/llm',name+'.ts'))));
   // Existing Persian behavioral tests use the same explicit factory API as the browser.
   const messages = JSON.parse(await fs.readFile(path.join(root,'data/llm/locales/messages.fa.json'),'utf8'));
   const i18n = modules['i18n/runtime'].createLlmI18n('fa', messages);

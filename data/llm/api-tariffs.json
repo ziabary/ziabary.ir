@@ -1,0 +1,39 @@
+[
+  {
+    "id": "qwen37-plus-singapore",
+    "model": "qwen3.7-plus-2026-05-26",
+    "provider": "Alibaba Cloud Model Studio",
+    "region": "Singapore / International",
+    "reviewedOn": "2026-09-20",
+    "currency": "USD",
+    "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/qwen3-7-plus",
+    "tiers": [
+      {
+        "maxInputTokens": 256000,
+        "inputPerMillion": 0.4,
+        "outputPerMillion": 1.6
+      },
+      {
+        "maxInputTokens": 1000000,
+        "inputPerMillion": 1.2,
+        "outputPerMillion": 4.8
+      }
+    ]
+  },
+  {
+    "id": "qwen37-max-singapore",
+    "model": "qwen3.7-max-2026-05-20",
+    "provider": "Alibaba Cloud Model Studio",
+    "region": "Singapore / International",
+    "reviewedOn": "2026-09-20",
+    "currency": "USD",
+    "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/qwen3-7-max",
+    "tiers": [
+      {
+        "maxInputTokens": 1000000,
+        "inputPerMillion": 2.5,
+        "outputPerMillion": 7.5
+      }
+    ]
+  }
+]

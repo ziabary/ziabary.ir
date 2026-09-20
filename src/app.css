@@ -17,10 +17,10 @@
 .prose .prose-table-scroll>table{display:table;width:100%;max-width:none;margin:0;border:0;border-radius:0;overflow:visible}
 .prose-table-scroll:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
 
-/* Shared native scrollbars for guide tables, comparisons and Markdown tables.
+/* Shared native scrollbars for tables, comparisons and scrollable panels.
    Keep the browser's system controls in forced-colors mode. */
 @media (forced-colors: none) {
-  :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table) {
+  :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll) {
     --table-scroll-track: color-mix(in srgb, var(--soft) 55%, var(--paper));
     --table-scroll-thumb: color-mix(in srgb, var(--teal) 72%, var(--muted));
     scrollbar-width: thin;
@@ -28,23 +28,23 @@
   }
 
   @supports selector(::-webkit-scrollbar) {
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table) {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll) {
       /* Standard non-auto properties override the rounded WebKit controls. */
       scrollbar-width: auto;
       scrollbar-color: auto;
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar {
       width: 12px;
       height: 12px;
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-track {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar-track {
       background: var(--table-scroll-track);
       border-radius: 999px;
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-thumb {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar-thumb {
       min-width: 40px;
       min-height: 40px;
       border: 2px solid var(--table-scroll-track);
@@ -52,19 +52,19 @@
       background: var(--table-scroll-thumb);
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-thumb:hover {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar-thumb:hover {
       background: var(--teal);
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-thumb:active {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar-thumb:active {
       background: color-mix(in srgb, var(--teal) 70%, var(--ink));
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-corner {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar-corner {
       background: var(--table-scroll-track);
     }
 
-    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table)::-webkit-scrollbar-button {
+    :is(.table-shell, .compare-shell, .prose-table-scroll, .prose table, .themed-scroll)::-webkit-scrollbar-button {
       display: none;
       width: 0;
       height: 0;

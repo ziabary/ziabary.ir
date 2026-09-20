@@ -228,3 +228,12 @@ families.push({
     "evidence:reference-lfm-license-txt-e8003a05ee"
   ]
 });
+families.push({
+  "id": "family:hy-mt",
+  "name": "HY-MT",
+  "publisher": "Tencent",
+  "evidenceIds": [
+    "evidence:tasks0920-tencent-hy-mt1-5-1-8b",
+    "evidence:tasks0920-tencent-hy-mt1-5-7b"
+  ]
+});

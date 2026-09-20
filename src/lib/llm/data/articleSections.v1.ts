@@ -5,8 +5,6 @@ export const articleSections: LlmGuideRepository['articleSections'] = [];
 articleSections.push({
   "id": "article-block:task-order",
   "articleKey": "right-model-size-for-the-task",
-  "operation": "semantic-upsert-section",
-  "placement": "After the discussion of benchmark choice / before hardware sizing",
   "locales": [
     "fa",
     "en",
@@ -27,14 +25,11 @@ articleSections.push({
   ],
   "comparisonGroupIds": [
     "comparison:qwen-small-nonthinking"
-  ],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  ]
 });
 articleSections.push({
   "id": "article-block:retrieval-language",
   "articleKey": "enterprise-rag-model-embedding-reranker",
-  "operation": "semantic-upsert-section",
-  "placement": "After embedding model choices",
   "locales": [
     "fa",
     "en",
@@ -46,7 +41,7 @@ articleSections.push({
     "es": "Relacione la evidencia con el idioma y la tarea"
   },
   "bodyMarkdown": {
-    "fa": "[گزارش E5](https://arxiv.org/html/2402.05672v1) روی MIRACL فارسی، nDCG@10 را برای Small برابر 53.3، Base برابر 57.4، Large برابر 59.0 و Large-Instruct برابر 59.4 گزارش می‌کند. در اسپانیایی این اعداد 51.2، 51.5، 52.9 و 53.7 هستند. این‌ها نتایج بازیابی‌اند، نه کیفیت پاسخ تولیدشده. همچنین در [PTEB](https://huggingface.co/PartAI/Tooka-SBERT-V2-Large)، Tooka-Large با میانگین کل 72.05 بالاتر از Small با 70.62 است، ولی امتیاز بازیابی Small بالاتر است: 61.24 در برابر 59.80. دو جدول را جدا نگه دارید؛ تجمیع وظایف PTEB را با nDCG یک دیتاست ادغام نکنید.",
+    "fa": "[گزارش E5](https://arxiv.org/html/2402.05672v1) روی MIRACL فارسی، nDCG@10 را برای Small برابر 53.3، Base برابر 57.4، Large برابر 59.0 و Large-Instruct برابر 59.4 گزارش می‌کند. در اسپانیایی این اعداد 51.2، 51.5، 52.9 و 53.7 هستند. این‌ها نتایج بازیابی‌اند، نه کیفیت پاسخ تولیدشده. همچنین در [PTEB](https://huggingface.co/PartAI/Tooka-SBERT-V2-Large)، Tooka-Large با میانگین کل 72.05 بالاتر از Small با 70.62 است، ولی امتیاز بازیابی Small بالاتر است: 61.24 در برابر 59.80. امتیاز تجمیعی وظایف PTEB با nDCG یک مجموعهٔ بازیابی قابل جمع یا رتبه‌بندی مشترک نیست.",
     "en": "The [E5 report](https://arxiv.org/html/2402.05672v1) gives English MIRACL nDCG@10 scores of 48.0, 51.2, 52.9 and 51.5 for Small, Base, Large and Large-Instruct. The instruction-tuned variant is not the highest-scoring one on this English task. For Spanish, the corresponding values are 51.2, 51.5, 52.9 and 53.7. Show each language separately and retain Recall@100 as a different metric: it helps assess whether relevant documents enter the pool a reranker will receive. These results do not measure the generated answer or cross-language query/document pairs.",
     "es": "En MIRACL español, [E5](https://arxiv.org/html/2402.05672v1) publica nDCG@10 de 51,2, 51,5, 52,9 y 53,7 para Small, Base, Large y Large-Instruct. Recall@100 es 87,6, 88,6, 89,1 y 89,3: mide otro aspecto, la presencia de documentos pertinentes entre los candidatos. No mezcle ambas métricas en una misma escala de calidad. En inglés, Large supera a Large-Instruct en nDCG@10, de modo que la etiqueta Instruct tampoco garantiza el primer puesto. Estos resultados no miden las respuestas generadas ni consultas en español sobre documentos en otro idioma."
   },
@@ -57,14 +52,11 @@ articleSections.push({
   "comparisonGroupIds": [
     "comparison:e5-miracl-by-language",
     "comparison:pteb-task-vs-overall"
-  ],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  ]
 });
 articleSections.push({
   "id": "article-block:reranker-measured-context",
   "articleKey": "enterprise-rag-model-embedding-reranker",
-  "operation": "semantic-upsert-section",
-  "placement": "After reranker alternatives",
   "locales": [
     "fa",
     "en",
@@ -85,14 +77,11 @@ articleSections.push({
   ],
   "comparisonGroupIds": [
     "comparison:qwen-reranking-top100"
-  ],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  ]
 });
 articleSections.push({
   "id": "article-block:quant-not-conversion",
   "articleKey": "four-bit-model-quantization",
-  "operation": "semantic-upsert-section",
-  "placement": "After the smaller-model versus lower-bit model discussion",
   "locales": [
     "fa",
     "en",
@@ -111,14 +100,11 @@ articleSections.push({
   "sourceUrls": [
     "https://github.com/facebookresearch/ParetoQ"
   ],
-  "comparisonGroupIds": [],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  "comparisonGroupIds": []
 });
 articleSections.push({
   "id": "article-block:coding-evidence",
   "articleKey": "code-completion-assistant-and-agent",
-  "operation": "semantic-upsert-section",
-  "placement": "After the completion/assistant/agent distinction",
   "locales": [
     "fa",
     "en",
@@ -130,7 +116,7 @@ articleSections.push({
     "es": "Consulte evidencia del flujo de programación previsto"
   },
   "bodyMarkdown": {
-    "fa": "[کارت StarCoder2-3B](https://huggingface.co/bigcode/starcoder2-3b) برای HumanEval مقدار pass@1 برابر 31.7 و برای HumanEval+ برابر 27.4 گزارش می‌کند. این مدل پایه را در دستهٔ تکمیل کد نگه دارید. امتیازهای آن را با موفقیت عاملِ ویرایش چند فایل یا رضایت از گفت‌وگو یکی نکنید. برای انتخاب بین دستیارهای دستورپذیر، [جدول Qwen](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) نمونهٔ روشنی دارد: رتبهٔ LiveCodeBench و Aider-Polyglot یکسان نیست. وقتی harness، ابزارها یا بودجهٔ تلاش متفاوت‌اند، یکسان بودن نام بنچمارک برای ساخت رتبهٔ مشترک کافی نیست.",
+    "fa": "[کارت StarCoder2-3B](https://huggingface.co/bigcode/starcoder2-3b) برای HumanEval مقدار pass@1 برابر 31.7 و برای HumanEval+ برابر 27.4 گزارش می‌کند. این مدل پایه برای تکمیل کد است. امتیازهای آن را با موفقیت عاملِ ویرایش چند فایل یا رضایت از گفت‌وگو یکی نکنید. برای انتخاب بین دستیارهای دستورپذیر، [جدول Qwen](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) نمونهٔ روشنی دارد: رتبهٔ LiveCodeBench و Aider-Polyglot یکسان نیست. وقتی harness، ابزارها یا بودجهٔ تلاش متفاوت‌اند، یکسان بودن نام بنچمارک برای ساخت رتبهٔ مشترک کافی نیست.",
     "en": "[StarCoder2-3B’s card](https://huggingface.co/bigcode/starcoder2-3b) reports pass@1 of 31.7 on HumanEval and 27.4 on HumanEval+. Keep this base model in the completion category; those scores do not measure multi-file agent success or chat usefulness. For instruction assistants, [Qwen’s](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) different ordering on LiveCodeBench and Aider-Polyglot is a useful counterexample to a single coding rank. If tools, attempt budgets or agent harnesses differ, a shared benchmark name is insufficient for a combined leaderboard.",
     "es": "La [ficha de StarCoder2-3B](https://huggingface.co/bigcode/starcoder2-3b) publica pass@1 de 31,7 en HumanEval y 27,4 en HumanEval+. Mantenga este modelo base en la categoría de autocompletado; esas cifras no miden el éxito de un agente que modifica varios archivos ni la utilidad de una conversación. El distinto orden de [Qwen](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) en LiveCodeBench y Aider-Polyglot ilustra por qué no basta una sola clasificación de programación. Si cambian herramientas, intentos o entorno del agente, compartir el nombre del benchmark no basta para unir resultados."
   },
@@ -140,14 +126,11 @@ articleSections.push({
   ],
   "comparisonGroupIds": [
     "comparison:qwen-small-nonthinking"
-  ],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  ]
 });
 articleSections.push({
   "id": "article-block:mac-path",
   "articleKey": "ollama-vllm-sglang-or-llama-cpp",
-  "operation": "semantic-upsert-section",
-  "placement": "Add a platform-specific alternative alongside existing tools",
   "locales": [
     "fa",
     "en",
@@ -159,21 +142,18 @@ articleSections.push({
     "es": "Apple silicon: la ruta MLX LM"
   },
   "bodyMarkdown": {
-    "fa": "برای اجرای محلی روی Apple silicon، [MLX LM](https://github.com/ml-explore/mlx-lm) یک گزینهٔ مستقیم برای تولید متن، streaming، cache پرامپت، کم‌دقت‌سازی و fine-tuning مدل‌های سازگار است. آن را صرفاً به‌دلیل نداشتن رابط گرافیکی از جدول نرم‌افزار حذف نکنید. قابلیت‌های مستندشده جای آزمون سرعت روی دستگاه کاربر را نمی‌گیرند. توضیح macOS 15 در بخش Large Models به memory wiring مربوط است؛ آن را به شرط عمومیِ همهٔ قابلیت‌ها تبدیل نکنید.",
-    "en": "For local Apple silicon use, [MLX LM](https://github.com/ml-explore/mlx-lm) provides text generation, streaming, prompt caching, quantization and fine-tuning for compatible models. Include it as a direct runtime route even though it is not a graphical model manager. Documented features are not measured speed guarantees. The macOS 15 note in the Large Models section concerns memory wiring; it should not be presented as the universal minimum for every feature.",
-    "es": "Para uso local en Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) ofrece generación, streaming, caché de prompts, cuantización y ajuste de modelos compatibles. Inclúyalo como ruta de ejecución aunque no sea un gestor gráfico. Las funciones documentadas no garantizan una velocidad medida. La nota sobre macOS 15 en Large Models se refiere al bloqueo de memoria; no debe presentarse como requisito universal de todas las funciones."
+    "fa": "برای Mac دارای Apple silicon، [MLX LM](https://github.com/ml-explore/mlx-lm) یکی از مسیرهای اجرای محلی مدل‌های سازگار است. تولید متن، کش پرامپت، کوانتیزیشن و فاین‌تیون را پشتیبانی می‌کند؛ انتخاب آن به مدل، قالب وزن و حافظهٔ دستگاه بستگی دارد. قابلیت memory wiring برای مدل‌های بزرگ به macOS 15 یا جدیدتر نیاز دارد.",
+    "en": "For a Mac with Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) supports local generation, prompt caching, quantization and fine-tuning. The choice depends on the model, weight format and available memory. Memory wiring for large models requires macOS 15 or later.",
+    "es": "En un Mac con Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) permite generación local, caché de prompts, cuantización y ajuste fino. La elección depende del modelo, el formato de pesos y la memoria disponible. El bloqueo de memoria para modelos grandes requiere macOS 15 o posterior."
   },
   "sourceUrls": [
     "https://github.com/ml-explore/mlx-lm"
   ],
-  "comparisonGroupIds": [],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  "comparisonGroupIds": []
 });
 articleSections.push({
   "id": "article-block:context-not-fit",
   "articleKey": "llms-on-rtx-4090-24gb-vs-48gb",
-  "operation": "semantic-upsert-section",
-  "placement": "After model-weight memory estimates",
   "locales": [
     "fa",
     "en",
@@ -192,14 +172,11 @@ articleSections.push({
   "sourceUrls": [
     "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
   ],
-  "comparisonGroupIds": [],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  "comparisonGroupIds": []
 });
 articleSections.push({
   "id": "article-block:persian-evidence-scope",
   "articleKey": "evaluating-language-models-for-persian",
-  "operation": "semantic-upsert-section",
-  "placement": "Add a concrete example after the evidence taxonomy",
   "locales": [
     "fa"
   ],
@@ -209,9 +186,9 @@ articleSections.push({
     "es": "La evidencia en persa necesita una tarea concreta"
   },
   "bodyMarkdown": {
-    "fa": "برای E5-Large-Instruct، [MIRACL فارسیِ این گزارش](https://arxiv.org/html/2402.05672v1) nDCG@10 برابر 59.4 دارد. [کارت مدل](https://huggingface.co/intfloat/multilingual-e5-large-instruct) همچنین نتیجهٔ MassiveIntent فارسی را گزارش می‌کند. اولی شاهد بازیابی و دومی شاهد دسته‌بندی نیت با embedding است؛ هیچ‌کدام به‌تنهایی نگارش طبیعی فارسی یا پاسخ‌گویی مستند را ثابت نمی‌کنند. در صفحه، وضعیت «ارزیابی‌شده در فارسی» را به وظیفه و دیتاست پیوند دهید. نبودِ این شاهد باید «نتیجهٔ فارسی ثبت نشده» نمایش داده شود، نه «فارسی پشتیبانی نمی‌شود».",
-    "en": "A [Persian MIRACL result](https://arxiv.org/html/2402.05672v1) measures retrieval, while a Persian MassiveIntent result measures classification using embeddings. Neither establishes fluent Persian writing or grounded answer generation. Tie language-evidence labels to a named task and dataset. Missing evidence means “no recorded evaluation,” not “unsupported language.”.",
-    "es": "Un [resultado MIRACL en persa](https://arxiv.org/html/2402.05672v1) mide recuperación, mientras que MassiveIntent mide clasificación mediante embeddings. Ninguno acredita por sí solo redacción fluida o respuestas fundamentadas. Vincule la evidencia lingüística a una tarea y un conjunto concretos. La ausencia de datos significa «sin evaluación registrada», no «idioma no compatible»."
+    "fa": "برای E5-Large-Instruct، [گزارش MIRACL](https://arxiv.org/html/2402.05672v1) در فارسی nDCG@10 برابر 59.4 دارد. [کارت مدل](https://huggingface.co/intfloat/multilingual-e5-large-instruct) نتیجهٔ MassiveIntent فارسی را هم گزارش می‌کند. اولی بازیابی سند و دومی دسته‌بندی نیت با embedding را می‌سنجد؛ هیچ‌کدام آزمون نگارش فارسی یا پاسخ‌گویی به سؤال نیست. نتیجهٔ هر مدل به همان وظیفه و مجموعه‌آزمون مربوط است و نبود نتیجه، ناتوانی آن مدل در فارسی را ثابت نمی‌کند.",
+    "en": "A [Persian MIRACL result](https://arxiv.org/html/2402.05672v1) measures document retrieval; MassiveIntent measures intent classification using embeddings. Neither is a writing or question-answering test. A language result applies to its named task and dataset; an absent result does not establish inability in that language.",
+    "es": "Un [resultado de MIRACL en persa](https://arxiv.org/html/2402.05672v1) mide recuperación de documentos; MassiveIntent mide clasificación de intenciones mediante embeddings. No son pruebas de redacción ni de respuesta a preguntas. Cada resultado corresponde a su tarea y conjunto de datos; la ausencia de resultados no demuestra incapacidad en ese idioma."
   },
   "sourceUrls": [
     "https://arxiv.org/html/2402.05672v1",
@@ -220,6 +197,5 @@ articleSections.push({
   "comparisonGroupIds": [
     "comparison:e5-miracl-by-language",
     "comparison:e5-classification-es-fa"
-  ],
-  "mergePolicy": "If an equivalent section already exists, merge unique evidence into it. Do not append duplicate advice or overwrite the whole article."
+  ]
 });

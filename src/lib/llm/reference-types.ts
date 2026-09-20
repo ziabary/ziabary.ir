@@ -9,7 +9,7 @@ export interface ReferenceObservation {
   evaluatedOn: string | null; accessedOn: string;
   settings: Record<string, string | number | boolean | null>;
   comparisonGroup?: string | null; missingProtocolFields: string[];
-  baselineSameModelAndValueCandidates: string[]; mergeNote: string;
+  baselineSameModelAndValueCandidates?: string[]; mergeNote?: string;
 }
 export interface ReferenceComparison {
   id: string; title: LocalizedCopy; interpretation: LocalizedCopy; sourceIds: string[];
@@ -20,12 +20,12 @@ export interface ReferenceComparison {
 export interface ReferenceGuidance {
   id: string; locales: string[]; title: LocalizedCopy; candidateModelRefs: string[]; candidateNames?: Record<string,string>;
   decision: LocalizedCopy; chooseWhen: LocalizedCopy; doNotInfer: LocalizedCopy;
-  comparisonGroupIds: string[]; editorialStatus: string;
+  comparisonGroupIds: string[]; editorialStatus?: string;
 }
 export interface ReferenceArticleSection {
-  id: string; articleKey: string; operation: string; placement: string; locales: string[];
+  id: string; articleKey: string; operation?: string; placement?: string; locales: string[];
   title: LocalizedCopy; bodyMarkdown: LocalizedCopy; sourceUrls: string[];
-  comparisonGroupIds: string[]; mergePolicy: string;
+  comparisonGroupIds: string[]; mergePolicy?: string;
 }
 export interface QuantizationObservation {
   id: string; reportedModelName: string; metric: string; value: number; reportedValueText: string;
