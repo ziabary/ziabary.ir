@@ -1,5 +1,8 @@
 <script lang="ts">
   import '$lib/math.css';
+  import LazyArticleContent from './LazyArticleContent.svelte';
+  import ContactReveal from './ContactReveal.svelte';
+  import { revealChapterFragment, type ChapterHandle } from '$lib/chapter-loading';
   import ReadingShare from './ReadingShare.svelte';
   import { imageAttributes } from '$lib/images';
   import { onMount, tick } from 'svelte';
@@ -18,6 +21,8 @@
   export let locale: 'fa' | 'en' | 'es' = 'fa';
   let main: HTMLElement;
   let continuous = false;
+  let opened: Record<string, boolean> = {};
+  let handles: Record<string, ChapterHandle> = {};
   let activeTarget = '';
   const followHeading = (id: string) => activeTarget = id;
   const copies = {
@@ -42,6 +47,12 @@
   }
   async function revealFragment(id: string) {
     if (!id) return;
+    if (collection.slug === 'gpu-selection') {
+      await revealChapterFragment(id, collection.items.flatMap(item => getArticle(item.id) ?? []), handles);
+      const target = document.getElementById(id);
+      if (target && !target.closest('.chapter-details') && !collection.items.some(item => item.kind === 'article' && item.id === id)) target.scrollIntoView({block:'start'});
+      return;
+    }
     const legacyOwner = legacyOwners.get(id);
     const target = document.getElementById(legacyOwner ? `${legacyOwner}--${id}` : id) ?? document.getElementById(id);
     const entry = target?.closest('.guide-entry');
@@ -87,6 +98,7 @@
             <div><small>{copy.about}</small><p>{collection.intro}</p></div>
           </div>
         {/if}
+        {#if collection.slug === 'gpu-selection'}<p class="model-path">برای اجرای مدل زبانی، ابتدا <a href={`${base}/guides/llm/?view=hardware-feasibility#hardware-feasibility`}>مدل‌ها را بر اساس حافظه و سخت‌افزار مقایسه کنید</a>؛ انتخاب مدل، طول ورودی و هم‌زمانی، نیاز به GPU را تغییر می‌دهند.</p>{/if}
         <button class="button ghost continuous-toggle" onclick={toggleContinuous} aria-pressed={continuous}>{continuous ? copy.collapse : copy.continuous}</button>
         {#each collection.items as item, index}
           <article id={item.id} class="guide-entry">
@@ -95,20 +107,25 @@
             {:else}
               {@const article = getArticle(item.id)}
               {@const Content = chapters[item.id]}
-              <header><small>{new Intl.NumberFormat(locale).format(index + 1)}</small><h2><a href={item.href}>{item.title}</a></h2></header>
+              <header><small>{new Intl.NumberFormat(locale).format(index + 1)}</small><h2><a href={item.href} data-sveltekit-preload-data={collection.slug === 'gpu-selection' ? 'off' : undefined}>{item.title}</a></h2></header>
               <p class="chapter-intro">{item.subtitle}</p>
               {#each article?.legacyAnchors ?? [] as anchor}{#if legacyOwners.get(anchor) === item.id}<span id={anchor} class="legacy-anchor"></span>{/if}{/each}
-              {#if Content}
-                <details class="chapter-details">
+              {#if Content || (collection.slug === 'gpu-selection' && article)}
+                <details class="chapter-details" ontoggle={event => opened = {...opened, [item.id]:event.currentTarget.open}}>
                   <summary>{copy.read}: {item.title}</summary>
+                  {#if collection.slug === 'gpu-selection' && article}
+                    <div class="lazy-chapter"><LazyArticleContent {article} {locale} open={opened[item.id] ?? false} bind:this={handles[item.id]} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={item.href ?? `${base}/articles/${item.id}/`} /></div>
+                  {:else}
                   {#if article?.cover}<img class="chapter-cover" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" />{/if}
-                  <div class="prose guide-prose"><Content headingPrefix={`${item.id}--`} /><ReadingShare cover={article?.cover} title={item.title} excerpt={article?.excerpt ?? item.subtitle} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={item.href} /></div>
+                  <div class="prose guide-prose"><Content headingPrefix={`${item.id}--`} /><ReadingShare cover={article?.cover} title={item.title} excerpt={article?.excerpt ?? item.subtitle} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={item.href ?? `${base}/articles/${item.id}/`} /></div>
+                  {/if}
                 </details>
               {/if}
-              {#if !Content}<a class="standalone-link" href={item.href} target="_blank" rel="noopener noreferrer">{copy.standalone} ↗</a>{/if}
+              {#if !Content && collection.slug !== 'gpu-selection'}<a class="standalone-link" href={item.href} target="_blank" rel="noopener noreferrer">{copy.standalone} ↗</a>{/if}
             {/if}
           </article>
         {/each}
+        {#if collection.slug === 'gpu-selection'}<ContactReveal {locale} placement="gpu-guide" />{/if}
       </div>
     </div>
   {/if}
@@ -132,6 +149,7 @@
 {/snippet}
 
 <style>
+  .lazy-chapter{max-width:740px;margin:0 auto;padding-block:20px}.model-path{line-height:1.9;font-size:15px}.model-path a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
   .planned-intro { max-width: 740px; padding-block: 0 64px; } .planned-intro p { line-height: 2; color: var(--muted); }
   .guide-layout { display: grid; grid-template-columns: minmax(0, 740px) 240px; gap: 32px; max-width: 1012px; align-items: start; padding-bottom: 60px; }
   .guide-layout.has-tools { width: calc(100% - 48px); max-width: 1600px; grid-template-columns: minmax(0, 1fr) 240px; }

@@ -10,12 +10,13 @@
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
-  import { onMount, tick, type Component } from 'svelte';
+  import { onMount, tick } from 'svelte';
   import LlmQualityComparison from './LlmQualityComparison.svelte';
   import LlmReferenceComparisons from './LlmReferenceComparisons.svelte';
   import LlmGuideChapters from './LlmGuideChapters.svelte';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import LlmModelProfile from './LlmModelProfile.svelte';
+  import ContactReveal from './ContactReveal.svelte';
   import GuideOpening from './GuideOpening.svelte';
   import LlmDataView from './LlmDataView.svelte';
   import LlmResearchView from './LlmResearchView.svelte';
@@ -43,28 +44,24 @@
   import { createLlmAdapters } from '$lib/llm/adapters';
   import { createLlmViews } from '$lib/llm/views';
 
-  export let chapters: Record<string, Component<{ headingPrefix?: string }>> = {};
+  export let includeDrafts = false;
+  let chapterView: LlmGuideChapters;
   let activeTarget = '';
   const followHeading = (id: string) => activeTarget = id;
-  async function revealChapter(id: string) {
-    const target = document.getElementById(id);
-    const details = target?.closest('.llm-chapter')?.querySelector<HTMLDetailsElement>('details');
-    if (details) {
-      details.open = true;
-      await tick();
-      await document.fonts.ready;
-      requestAnimationFrame(() => target?.scrollIntoView({ block: 'start', behavior: 'instant' }));
-    }
-  }
+  async function revealChapter(id: string) { await chapterView?.reveal(id); }
   onMount(() => {
     const fromHash = () => { try { revealChapter(decodeURIComponent(location.hash.slice(1))); } catch {} };
     fromHash(); window.addEventListener('hashchange', fromHash);
     return () => window.removeEventListener('hashchange', fromHash);
   });
   const numbers = new Intl.NumberFormat(numberFormat);
-  $: publishedArticles = new Map(articles.filter(article => article.lang === locale && (getArticle(article.slug, locale) || chapters[article.slug])).map(article => [article.slug, article]));
-  $: readingArticles = new Map(articles.filter(article => article.lang === locale && chapters[article.slug] && llmArticleSlugs.some(slug => slug === article.slug)).map(article => [article.slug, article]));
-  $: chapterArticles = llmArticleSlugs.flatMap(slug => chapters[slug] ? readingArticles.get(slug) ?? [] : []);
+  $: publishedArticles = new Map(articles.filter(article => article.lang === locale && (getArticle(article.slug, locale) || includeDrafts)).map(article => [article.slug, article]));
+  $: readingArticles = new Map(articles.filter(article => article.lang === locale && (getArticle(article.slug, locale) || includeDrafts) && llmArticleSlugs.some(slug => slug === article.slug)).map(article => [article.slug, article]));
+  $: chapterArticles = llmArticleSlugs.flatMap(slug => readingArticles.get(slug) ?? []);
+  // Preview articles are added after hydration, once the URL flag is available.
+  $: if (browser && includeDrafts && chapterArticles.length) void tick().then(() => {
+    try { void revealChapter(decodeURIComponent(window.location.hash.slice(1))); } catch { /* Ignore malformed fragments. */ }
+  });
   $: targetIds = ['start', 'llm-starting-plan', ...llmGuideSections.map(section => section.id), 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
   $: activeChapter = chapterArticles.find(article => activeTarget === article.slug || activeTarget.startsWith(`${article.slug}--`));
   const llmRepository = enrichResearchRepository(localizeLlmRepository(baseRepository, i18n));
@@ -202,6 +199,8 @@
           </div>
   </div>
 
+  <p class="hardware-path">{locale === 'fa' ? 'پس از مشخص‌شدن مدل و حافظهٔ لازم،' : locale === 'en' ? 'Once you know the model and its memory requirements,' : 'Una vez definidos el modelo y la memoria necesaria,'} <a href={`${base}/guides/gpu-selection/#gpu-comparison-table`}>{locale === 'fa' ? 'کارت گرافیک و سرور مناسب را مقایسه کنید' : locale === 'en' ? 'compare suitable GPUs and servers' : 'compare las GPU y los servidores adecuados'}</a>.</p>
+
   <details class="guide-method">
     <summary>{t('method.title')}</summary>
     <p>{t('method.sources')}</p><p>{t('method.selection')}</p>
@@ -256,7 +255,8 @@
         {/if}
       {/each}
 
-      <LlmGuideChapters articles={chapterArticles} {chapters} />
+      <ContactReveal {locale} placement="llm-guide" />
+      <LlmGuideChapters articles={chapterArticles} bind:this={chapterView} />
 
 
     </div>
@@ -351,6 +351,7 @@
 {/snippet}
 
 <style>
+  .hardware-path{max-width:1280px;width:calc(100% - 32px);margin:20px auto;font-size:15px;line-height:1.9}.hardware-path a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
   .benchmark-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:8px;font-size:12px}.copy-selection{font:inherit;border:0;background:transparent;color:var(--link-ink);padding:6px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}.copy-selection:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 
   .guide-method{max-width:1280px;width:calc(100% - 32px);margin:20px auto 32px;padding-block:12px;border-block:1px solid var(--line);font-size:14px;line-height:1.9}.guide-method summary{cursor:pointer;color:var(--link-ink);font-weight:600}.guide-method p{max-width:90ch}.guide-method a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}

@@ -1,0 +1,26 @@
+{
+  "guides/llm/": {
+    "htmlBytes": 2647851,
+    "gzipBytes": 309361
+  },
+  "en/guides/llm/": {
+    "htmlBytes": 1841375,
+    "gzipBytes": 143224
+  },
+  "es/guides/llm/": {
+    "htmlBytes": 1849601,
+    "gzipBytes": 147881
+  },
+  "guides/gpu-selection/": {
+    "htmlBytes": 539662,
+    "gzipBytes": 80767
+  },
+  "en/guides/gpu-selection/": {
+    "htmlBytes": 431993,
+    "gzipBytes": 67816
+  },
+  "es/guides/gpu-selection/": {
+    "htmlBytes": 452918,
+    "gzipBytes": 71681
+  }
+}

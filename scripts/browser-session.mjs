@@ -57,7 +57,7 @@ function parseFrames() {
     buffer = buffer.subarray(offset + maskLength + length);
     if (opcode === 0x8) return;
     const message = JSON.parse(payload.toString());
-    if (message.method && ['Runtime.exceptionThrown','Log.entryAdded','Network.responseReceived','Network.loadingFailed'].includes(message.method)) events.push(message);
+    if (message.method && ['Runtime.exceptionThrown','Log.entryAdded','Network.requestWillBeSent','Network.responseReceived','Network.loadingFailed'].includes(message.method)) events.push(message);
     if (message.id && pending.has(message.id)) {
       const { resolve, reject } = pending.get(message.id);
       pending.delete(message.id);

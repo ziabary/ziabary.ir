@@ -16,13 +16,7 @@ export async function loadLlmTranslations(locale: LlmLocale) {
   return { messages: (await import('../../../data/llm/locales/messages.fa.json')).default, records: {} };
 }
 
-/** Published editions render their published chapters at build time; draft bodies stay behind preview. */
+/** Guide routes carry metadata/translations only; chapter bodies load on opening. */
 export async function loadLlmEdition(locale: LlmLocale) {
-  const translations = await loadLlmTranslations(locale);
-  if (llmCollection(locale).status !== 'published') return { locale, ...translations };
-  const { getArticle, getArticleModule } = await import('../content');
-  const initialChapters = Object.fromEntries(await Promise.all(llmEditionSlugs(locale)
-    .filter(slug => getArticle(slug, locale))
-    .map(async slug => [slug, (await getArticleModule(slug, locale))!.default])));
-  return { locale, ...translations, initialChapters };
+  return { locale, ...await loadLlmTranslations(locale) };
 }

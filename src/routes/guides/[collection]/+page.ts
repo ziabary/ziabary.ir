@@ -9,7 +9,7 @@ export function entries() {
 export async function load({ params }) {
   const collection = getGuideCollection(params.collection);
   if (!collection) error(404, 'مجموعهٔ فنی پیدا نشد.');
-  return { collection, chapters: await loadChapters(collection) };
+  return { collection, chapters: collection.slug === 'gpu-selection' ? {} : await loadChapters(collection) };
 }
 
 async function loadChapters(collection: { items: Array<{kind: string, id: string}> }) {

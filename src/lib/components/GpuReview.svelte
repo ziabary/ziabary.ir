@@ -1,5 +1,6 @@
 <script lang="ts">
   import '$lib/math.css';
+  import ContactReveal from './ContactReveal.svelte';
   import ReadingShare from './ReadingShare.svelte';
   import { imageAttributes } from '$lib/images';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
@@ -72,6 +73,7 @@
         </section>
       </div>
       <p class="collection-intro">{collection.intro}</p>
+      <p class="collection-intro">{locale === 'en' ? 'For language-model inference,' : 'Para ejecutar modelos de lenguaje,'} <a href={`/${locale}/guides/llm/?view=hardware-feasibility#hardware-feasibility`}>{locale === 'en' ? 'compare models by memory and hardware requirements' : 'compare modelos según memoria y hardware'}</a>{locale === 'en' ? '; model size, input length and concurrency determine the GPU capacity needed.' : '; el tamaño del modelo, la entrada y la concurrencia determinan la capacidad de GPU necesaria.'}</p>
       {#each collection.items as item}
         {#if item.id === 'gpu-comparison-table'}
           <section id={item.id} class="guide-entry"><GpuComparison {locale} /></section>
@@ -95,6 +97,7 @@
           {/if}
         {/if}
       {/each}
+      <ContactReveal {locale} placement="gpu-guide" />
     </div>
   </div>
 </main>

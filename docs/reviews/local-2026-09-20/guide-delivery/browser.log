@@ -1,0 +1,8 @@
+fa: no initial chapter imports; one module on open; cached reopen; deep link, math, table, TOC, mobile and contact events passed
+en: no initial chapter imports; one module on open; cached reopen; deep link, math, table, TOC, mobile and contact events passed
+es: no initial chapter imports; one module on open; cached reopen; deep link, math, table, TOC, mobile and contact events passed
+Interrupted chapter request recovered using retry
+GPU direct link and keyboard collapse passed
+Embedded interactive article component, search and keyboard dismissal passed
+No-JS discovery and standalone full article passed
+Draft preview direct link loads only its article and retains noindex

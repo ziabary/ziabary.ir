@@ -1,0 +1,13 @@
+
+> ziabary-platform@0.1.0 check
+> npm run verify:llm-locales && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
+
+
+> ziabary-platform@0.1.0 verify:llm-locales
+> node scripts/validate-llm-locales.mjs
+
+LLM locales verified: 1355 messages, 1194 editorial texts, 5155 entity fields, 3 editions.
+Loading svelte-check in workspace: /home/user/Projects/ziabary-platform-sveltekit
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings

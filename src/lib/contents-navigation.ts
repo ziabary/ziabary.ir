@@ -31,7 +31,7 @@ export function readingPosition(node: HTMLElement, options: ReadingPositionOptio
   const initialHash = window.location.hash;
   let targets: HTMLElement[] = [];
   const syncUrl = () => {
-    if (disposed || !ready) return;
+    if (disposed || !ready || node.closest('[data-reading-pending]')) return;
     const url = new URL(window.location.href);
     let previous = '';
     try { previous = decodeURIComponent(url.hash.slice(1)); } catch { /* Ignore malformed fragments. */ }
@@ -72,6 +72,8 @@ export function readingPosition(node: HTMLElement, options: ReadingPositionOptio
     window.removeEventListener('touchstart', interruptLanding);
     window.removeEventListener('keydown', interruptLanding);
   };
+  const chapterLoaded = () => { refreshTargets(); schedule(); };
+  node.addEventListener('guide-chapter-loaded', chapterLoaded);
   refreshTargets();
   resize.observe(node);
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -108,6 +110,7 @@ export function readingPosition(node: HTMLElement, options: ReadingPositionOptio
       cancelAnimationFrame(frame);
       clearTimeout(urlTimer);
       resize.disconnect();
+      node.removeEventListener('guide-chapter-loaded', chapterLoaded);
       removeLandingListeners();
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', schedule);

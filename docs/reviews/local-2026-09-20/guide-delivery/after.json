@@ -1,0 +1,346 @@
+{
+  "guides/llm/": {
+    "htmlBytes": 1809610,
+    "gzipBytes": 121701,
+    "largestSections": [
+      {
+        "id": "model-catalog",
+        "htmlBytes": 551710
+      },
+      {
+        "id": "model-suitability",
+        "htmlBytes": 501551
+      },
+      {
+        "id": "hardware-feasibility",
+        "htmlBytes": 283946
+      },
+      {
+        "id": "specialized-models",
+        "htmlBytes": 167846
+      },
+      {
+        "id": "serving-software",
+        "htmlBytes": 114712
+      },
+      {
+        "id": "software-products",
+        "htmlBytes": 107796
+      },
+      {
+        "id": "benchmarks",
+        "htmlBytes": 78281
+      },
+      {
+        "id": "llm-notes",
+        "htmlBytes": 32330
+      },
+      {
+        "id": "technical-guide",
+        "htmlBytes": 20588
+      },
+      {
+        "id": "start",
+        "htmlBytes": 16676
+      },
+      {
+        "id": "reference-comparisons",
+        "htmlBytes": 11638
+      },
+      {
+        "id": "llm-starting-plan",
+        "htmlBytes": 9888
+      },
+      {
+        "id": "rag-cag-kag-fine-tuning-instruction-tuning",
+        "htmlBytes": 2741
+      },
+      {
+        "id": "gpu-inference-latency-throughput",
+        "htmlBytes": 2380
+      }
+    ]
+  },
+  "en/guides/llm/": {
+    "htmlBytes": 1682645,
+    "gzipBytes": 105470,
+    "largestSections": [
+      {
+        "id": "model-catalog",
+        "htmlBytes": 536032
+      },
+      {
+        "id": "model-suitability",
+        "htmlBytes": 469075
+      },
+      {
+        "id": "hardware-feasibility",
+        "htmlBytes": 277247
+      },
+      {
+        "id": "specialized-models",
+        "htmlBytes": 161131
+      },
+      {
+        "id": "serving-software",
+        "htmlBytes": 106515
+      },
+      {
+        "id": "software-products",
+        "htmlBytes": 102829
+      },
+      {
+        "id": "benchmarks",
+        "htmlBytes": 80793
+      },
+      {
+        "id": "technical-guide",
+        "htmlBytes": 12941
+      },
+      {
+        "id": "reference-comparisons",
+        "htmlBytes": 10922
+      },
+      {
+        "id": "start",
+        "htmlBytes": 10214
+      },
+      {
+        "id": "llm-notes",
+        "htmlBytes": 8987
+      },
+      {
+        "id": "llm-starting-plan",
+        "htmlBytes": 6643
+      },
+      {
+        "id": "rag-cag-kag-fine-tuning-instruction-tuning-en",
+        "htmlBytes": 2417
+      },
+      {
+        "id": "gpu-inference-latency-throughput-en",
+        "htmlBytes": 2178
+      }
+    ]
+  },
+  "es/guides/llm/": {
+    "htmlBytes": 1681301,
+    "gzipBytes": 107972,
+    "largestSections": [
+      {
+        "id": "model-catalog",
+        "htmlBytes": 541517
+      },
+      {
+        "id": "model-suitability",
+        "htmlBytes": 479782
+      },
+      {
+        "id": "hardware-feasibility",
+        "htmlBytes": 279595
+      },
+      {
+        "id": "specialized-models",
+        "htmlBytes": 163047
+      },
+      {
+        "id": "serving-software",
+        "htmlBytes": 107963
+      },
+      {
+        "id": "software-products",
+        "htmlBytes": 104145
+      },
+      {
+        "id": "benchmarks",
+        "htmlBytes": 56025
+      },
+      {
+        "id": "technical-guide",
+        "htmlBytes": 13226
+      },
+      {
+        "id": "reference-comparisons",
+        "htmlBytes": 11245
+      },
+      {
+        "id": "start",
+        "htmlBytes": 10406
+      },
+      {
+        "id": "llm-notes",
+        "htmlBytes": 9223
+      },
+      {
+        "id": "llm-starting-plan",
+        "htmlBytes": 6731
+      },
+      {
+        "id": "rag-cag-kag-fine-tuning-instruction-tuning-es",
+        "htmlBytes": 2480
+      },
+      {
+        "id": "gpu-inference-latency-throughput-es",
+        "htmlBytes": 2238
+      }
+    ]
+  },
+  "guides/gpu-selection/": {
+    "htmlBytes": 218965,
+    "gzipBytes": 19558,
+    "largestSections": [
+      {
+        "id": "gpu-comparison-table",
+        "htmlBytes": 134464
+      },
+      {
+        "id": "server-comparison-table",
+        "htmlBytes": 50301
+      },
+      {
+        "id": "gpu-quick-selection",
+        "htmlBytes": 3569
+      },
+      {
+        "id": "gpu-in-practice",
+        "htmlBytes": 1761
+      },
+      {
+        "id": "gpu-inference-latency-throughput",
+        "htmlBytes": 1085
+      },
+      {
+        "id": "int8-or-fp8-real-gpu-support",
+        "htmlBytes": 1063
+      },
+      {
+        "id": "gpu-confidential-computing-overhead",
+        "htmlBytes": 1053
+      },
+      {
+        "id": "pcie-vs-sxm-for-ai",
+        "htmlBytes": 1028
+      },
+      {
+        "id": "gpu-types-for-ai",
+        "htmlBytes": 1015
+      },
+      {
+        "id": "choosing-gpu-for-ai",
+        "htmlBytes": 1008
+      },
+      {
+        "id": "pcie-gpu-server-selection",
+        "htmlBytes": 992
+      },
+      {
+        "id": "gpu-server-platform-components",
+        "htmlBytes": 964
+      },
+      {
+        "id": "dgx-and-standard-gpu-servers",
+        "htmlBytes": 962
+      }
+    ]
+  },
+  "en/guides/gpu-selection/": {
+    "htmlBytes": 432674,
+    "gzipBytes": 68022,
+    "largestSections": [
+      {
+        "id": "gpu-comparison-table",
+        "htmlBytes": 129524
+      },
+      {
+        "id": "gpu-inference-latency-throughput-en",
+        "htmlBytes": 69048
+      },
+      {
+        "id": "server-comparison-table",
+        "htmlBytes": 47626
+      },
+      {
+        "id": "gpu-confidential-computing-overhead-en",
+        "htmlBytes": 40373
+      },
+      {
+        "id": "int8-or-fp8-real-gpu-support-en",
+        "htmlBytes": 26880
+      },
+      {
+        "id": "choosing-gpu-for-ai-en",
+        "htmlBytes": 17544
+      },
+      {
+        "id": "pcie-gpu-server-selection-en",
+        "htmlBytes": 17524
+      },
+      {
+        "id": "pcie-vs-sxm-for-ai-en",
+        "htmlBytes": 17453
+      },
+      {
+        "id": "dgx-and-standard-gpu-servers-en",
+        "htmlBytes": 17431
+      },
+      {
+        "id": "gpu-server-platform-components-en",
+        "htmlBytes": 16031
+      },
+      {
+        "id": "gpu-types-for-ai-en",
+        "htmlBytes": 14746
+      }
+    ]
+  },
+  "es/guides/gpu-selection/": {
+    "htmlBytes": 453623,
+    "gzipBytes": 71895,
+    "largestSections": [
+      {
+        "id": "gpu-comparison-table",
+        "htmlBytes": 130997
+      },
+      {
+        "id": "gpu-inference-latency-throughput-es",
+        "htmlBytes": 72211
+      },
+      {
+        "id": "server-comparison-table",
+        "htmlBytes": 48990
+      },
+      {
+        "id": "gpu-confidential-computing-overhead-es",
+        "htmlBytes": 44480
+      },
+      {
+        "id": "int8-or-fp8-real-gpu-support-es",
+        "htmlBytes": 28793
+      },
+      {
+        "id": "pcie-gpu-server-selection-es",
+        "htmlBytes": 19494
+      },
+      {
+        "id": "pcie-vs-sxm-for-ai-es",
+        "htmlBytes": 18820
+      },
+      {
+        "id": "choosing-gpu-for-ai-es",
+        "htmlBytes": 18728
+      },
+      {
+        "id": "dgx-and-standard-gpu-servers-es",
+        "htmlBytes": 18544
+      },
+      {
+        "id": "gpu-server-platform-components-es",
+        "htmlBytes": 17657
+      },
+      {
+        "id": "gpu-types-for-ai-es",
+        "htmlBytes": 15952
+      }
+    ]
+  }
+}
