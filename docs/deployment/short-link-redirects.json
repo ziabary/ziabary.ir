@@ -36,6 +36,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aaoluq",
+    "destination": "https://ziabary.ir/articles/ai-operator-license-unanswered-questions/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aaomps",
     "destination": "https://ziabary.ir/articles/ai-operator-model-private-sector/",
     "status": 301,

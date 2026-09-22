@@ -225,6 +225,33 @@
       }
     ]
   },
+  "/images/articles/ai-operator-license-unanswered-questions/cover.webp": {
+    "width": 1280,
+    "height": 853,
+    "originalBytes": 150960,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/ab9027122067442a-320.webp",
+        "bytes": 14544
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/ab9027122067442a-640.webp",
+        "bytes": 42066
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/ab9027122067442a-960.webp",
+        "bytes": 75040
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/ab9027122067442a-1280.webp",
+        "bytes": 115360
+      }
+    ]
+  },
   "/images/articles/ai-operator-model-private-sector/cover.webp": {
     "width": 1600,
     "height": 900,
