@@ -1,0 +1,253 @@
+Xiaomi MiMo Home
+MiMo-V2.6 series — 3 new models now live. Flagship performance, full modality, built for professional workflows.
+Research
+Models
+Updates
+Pricing
+Contact Us
+English
+Use MiMo
+MiMo-V2.6-Pro
+Xiaomi MiMo's most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research.
+API Access
+Token Plan
+Model Blog
+Model Specs
+Modality
+Input Modality
+Text, Image, Video, Audio
+Output Modality
+Text
+Capabilities
+Omni-Modal Understanding
+Deep Thinking
+Tool Call
+Streaming
+Web Search
+Structured Output
+Context Caching
+Performance
+Context Window
+1M tokens
+Max Output
+128K tokens
+RPM
+100
+TPM
+10M
+Model Pricing
+CNY
+Input (cache hit)
+¥ 0.025
+CNY / Million tokens
+Input (cache miss)
+¥ 3
+CNY / Million tokens
+Output
+¥ 6
+CNY / Million tokens
+USD
+Input (cache hit)
+$0.0036
+USD / Million tokens
+Input (cache miss)
+$0.435
+USD / Million tokens
+Output
+$0.87
+USD / Million tokens
+Strengths
+Peak Performance
+46.32 on Artificial Analysis' composite intelligence index—the world's strongest open-source model today
+Native Full Modality
+Joint input and understanding of images, video, audio, and text
+Built for Complex Tasks
+1M-token context window, tuned for multimodal, multi-agent, and multi-harness collaboration
+Embedded in Real Workflows
+Purpose-optimized for coding, office work, design, research, content creation, cybersecurity, and computer operation
+In Action
+From Vibe Coding to Vibe World: 3D Open-World Game
+From images, video, or text, MiMo-V2.6 breaks the task into sub-tasks and coordinates multiple agents to build 3D scenes, interaction logic, and visual checks—refining renders until a playable world is complete.
+Advancing Frontier Science: Co-Scientist for Materials Research
+MiMo-V2.6-Pro helps Xiaomi's materials experts design MOF materials to capture PFAS pollutants—reviewing literature, forming hypotheses, simulating binding strength, and shortlisting top candidates.
+Code-Driven Content Creation & Aesthetic Expression: Video Creation
+MiMo-V2.6-Pro produced short films, brand showcases, and math-explainer videos, turning concepts like Fourier decomposition and convex hulls into clear, intuitive animations.
+Get Access
+Pay-As-You-Go API
+1
+Top Up Balance
+Prepaid model — pay only for tokens consumed. Balance visible in real time.
+Top Up
+View Pricing
+2
+Get Your API Key
+Create an account in the console and generate your API key.
+API Keys
+3
+Sample Code
+Compatible with both OpenAI and Anthropic protocols. Migrate existing projects by updating base_url and model.
+OpenAI Protocol
+Anthropic Protocol
+Python
+cURL
+import
+os
+from
+openai
+import
+OpenAI
+
+client
+=
+OpenAI
+(
+api_key
+=
+os
+.
+environ
+.
+get
+(
+"MIMO_API_KEY"
+)
+,
+base_url
+=
+"https://api.xiaomimimo.com/v1"
+)
+completion
+=
+client
+.
+chat
+.
+completions
+.
+create
+(
+model
+=
+"mimo-v2.6-pro"
+,
+messages
+=
+[
+{
+"role"
+:
+"system"
+,
+"content"
+:
+"You are MiMo, an AI assistant developed by Xiaomi. Today is date: Tuesday, December 16, 2025. Your knowledge cutoff date is December 2024."
+}
+,
+{
+"role"
+:
+"user"
+,
+"content"
+:
+"please introduce yourself"
+}
+]
+,
+max_completion_tokens
+=
+1024
+,
+stream
+=
+False
+,
+extra_body
+=
+{
+"thinking"
+:
+{
+"type"
+:
+"disabled"
+}
+}
+)
+print
+(
+completion
+.
+model_dump_json
+(
+)
+)
+Token Plan Subscription
+1
+Subscribe
+Monthly or annual plans covering mimo-v2.6-pro, mimo-v2.6-flash and the full MiMo V2.5 model suite — significantly better value than pay-as-you-go at high usage volumes.
+Subscribe
+View Pricing
+2
+Get Token Plan API Key
+After subscribing, generate a dedicated API key from the Token Plan page — separate from your pay-as-you-go key.
+API Keys
+3
+Quick Integration
+Same API format as pay-as-you-go — just swap the key and base URL. Works directly with Claude Code, Cline, and other popular AI tools.
+AI Tools Guide
+Use in MiMo Claw
+MiMo Claw is equipped with MiMo's latest flagship model, and supports both the latest multimodal understanding and voice series large language models. It can be added with one click for subscription across all tiers of TokenPlan, and is currently available for a limited-time free trial.
+Open MiMo Claw
+Official Account
+Open Platform WeChat
+Open Platform Feishu
+Products
+Xiaomi MiMo API
+Xiaomi MiMo Desktop
+Xiaomi MiMo Claw
+Xiaomi MiMo Studio
+Xiaomi MiMo Code
+Open Platform
+Docs
+FAQ
+API Pricing
+Token Plan
+Updates
+News
+Changelog
+MiMo Blog
+About Us
+Terms of Service
+Privacy Policy
+Transparency
+Products
+Xiaomi MiMo API
+Xiaomi MiMo Desktop
+Xiaomi MiMo Claw
+Xiaomi MiMo Studio
+Xiaomi MiMo Code
+Open Platform
+Docs
+FAQ
+API Pricing
+Token Plan
+Updates
+News
+Changelog
+MiMo Blog
+About Us
+Terms of Service
+Privacy Policy
+Transparency
+Copyright©2026 Xiaomi. All Rights Reserved
+|
+Cookie Policy
+|
+Cookie Preferences
+We use cookies and similar technologies of our own to ensure the proper functioning of the website, customize content according to user preferences and analyze users' interactions on the website, as well as their browsing habits. You can find more information in our Cookie Policy. Select an option or go to Cookie Settings to manage your preferences.
+Learn More
+.
+Cookie Settings
+Accept All
+Decline All

@@ -330,6 +330,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aosanlp",
+    "destination": "https://ziabary.ir/articles/open-source-ai-needs-legal-protection/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=apgss",
     "destination": "https://ziabary.ir/articles/pcie-gpu-server-selection/",
     "status": 301,

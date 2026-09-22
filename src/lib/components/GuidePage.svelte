@@ -14,6 +14,7 @@
   import PageSeo from './PageSeo.svelte';
   import GuideStart from './GuideStart.svelte';
   import GuideOpening from './GuideOpening.svelte';
+  import GuideUpdates from './GuideUpdates.svelte';
   import GpuComparison from './GpuComparison.svelte';
   import ServerComparison from './ServerComparison.svelte';
   export let collection: GuideCollection;
@@ -78,6 +79,7 @@
       <p>انتخاب <strong>کارت گرافیک مناسب هوش مصنوعی</strong> به نوع کاری بستگی دارد که قرار است انجام دهد. اجرای یک مدل آماده، فاین‌تیون‌کردن آن و آموزش یک مدل بزرگ، نیازهای یکسانی ندارند. حتی برای اجرای یک مدل مشخص نیز طول ورودی، تعداد کاربران هم‌زمان و زمان پاسخ موردانتظار می‌تواند انتخاب سخت‌افزار را تغییر دهد. به همین دلیل، ظرفیت حافظه، پشتیبانی نرم‌افزاری و هزینهٔ اجرای بار کاری باید در کنار توان پردازشی بررسی شوند.</p>
       <p>کارت‌های عمومی و گیمینگ، کارت‌های حرفه‌ای ایستگاه کاری و شتاب‌دهنده‌های مرکز داده، برای نیازهای متفاوتی طراحی شده‌اند. کارت‌های عمومی می‌توانند برای توسعه، پژوهش و بسیاری از کاربردهای استنتاج انتخاب اقتصادی مناسبی باشند؛ مدل‌های حرفه‌ای اغلب حافظه و امکانات مناسب‌تری برای کارهای سنگین‌تر فراهم می‌کنند؛ و شتاب‌دهنده‌های مرکز داده برای نیازهایی مانند پهنای باند بالای حافظه، اتصال چند GPU و استقرار متراکم اهمیت پیدا می‌کنند. ارزش این امکانات زمانی مشخص می‌شود که بار کاری از آن‌ها استفاده کند.</p>
     </GuideOpening>
+    <GuideUpdates guide="gpu-selection" {locale} />
     <GuideStart onNavigate={revealFragment} />
   {:else}
     <PageHero eyebrow={planned ? copy.planned : collection.eyebrow} title={collection.title} lead={collection.subtitle} />

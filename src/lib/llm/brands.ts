@@ -1,5 +1,6 @@
 // Local publisher/project assets; provenance is recorded in v0.1.0 and v0.3.0 research/local-brand-assets.json.
 const paths: Record<string, string> = {
+  "mimo": "/images/llm/brands/mimo.jpg",
   "salamandra": "/images/llm/brands/salamandra.webp",
   "minicpm": "/images/llm/brands/minicpm.webp",
   "lfm": "/images/llm/brands/lfm.webp",
@@ -40,6 +41,7 @@ const paths: Record<string, string> = {
   "nemotron": "/images/brands/nvidia.svg"
 };
 const matches: Array<[string, string]> = [
+ ['mimo', 'mimo'], ['xiaomi', 'mimo'],
  ['salamandra','salamandra'],['bsc-lt','salamandra'],['minicpm','minicpm'],['openbmb','minicpm'],['lfm','lfm'],['liquidai','lfm'],
  ['partai', 'partai'], ['tooka', 'partai'], ['bigcode', 'bigcode'], ['starcoder', 'bigcode'], ['hooshvare', 'parsbert'], ['parsbert', 'parsbert'],
  ['ktransformers', 'ktransformers'], ['sentence transformers', 'minilm'], ['sentence-transformers', 'minilm'],

@@ -5,9 +5,9 @@
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
   "sourceArchiveSha256": "843bd11098930f80bb0c8254f8e0cfa77a3438681a5f7aa99e12544a70d7e23a",
-  "baseModels": 124,
-  "basePublishedEvaluations": 1209,
-  "mergedPublishedEvaluations": 1267,
+  "baseModels": 125,
+  "basePublishedEvaluations": 1212,
+  "mergedPublishedEvaluations": 1270,
   "referencePack": {
     "asOf": "2026-09-16",
     "models": 5,
@@ -39,5 +39,11 @@
     "model": "model:qwen-image-2-1",
     "scope": "Image generation/editing, component sizes, non-commercial license and full BF16 download manifest",
     "runtimeTested": false
+  },
+  "mimo20260922": {
+    "model": "model:mimo-v2-6-pro-rl",
+    "runtimeTested": false,
+    "independentApiEvaluation": true,
+    "localCheckpointEvaluation": false
   }
 }

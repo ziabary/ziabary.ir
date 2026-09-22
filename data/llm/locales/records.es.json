@@ -1209,5 +1209,20 @@
   "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1": "Para reducir el uso de VRAM, enable_model_cpu_offload traslada los componentes de RAM a GPU cuando se necesitan.",
   "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0": "El servicio de imágenes usa vllm serve Qwen/Qwen-Image-2.1 --omni y una versión de vLLM-Omni compatible con este modelo.",
   "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0": "Utilice los pesos compatibles de Comfy-Org/Qwen-Image-2.1 y sus flujos de ejemplo.",
-  "qwen-image-2-1.artifactListings.scopeNote": "Archivos de pesos del generador de imágenes, codificador y VAE; los reescritores opcionales PE-T2I y PE-I2I son independientes."
+  "qwen-image-2-1.artifactListings.scopeNote": "Archivos de pesos del generador de imágenes, codificador y VAE; los reescritores opcionales PE-T2I y PE-I2I son independientes.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.introduction": "Modelo multimodal de Xiaomi para programación, uso de herramientas y entradas largas; el checkpoint RL publica pesos con metadatos de licencia MIT.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.roleSummary": "Programación, agentes de software y análisis de texto e imágenes",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.0": "Aproximadamente 1,02 billones de parámetros totales y 42 mil millones activos; los archivos ocupan 534,1 GiB. Este checkpoint no cabe en una sola GPU de 24 o 48 GB.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.1": "Índice de inteligencia de Artificial Analysis v4.3.2: 46 para el servicio MiMo-V2.6-Pro; no es una evaluación en persa ni una prueba local del checkpoint RL.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.2": "Entrada de texto, imagen, audio y vídeo; salida de texto. El contexto configurado es de 1.048.576 tokens con atención global y de ventana deslizante.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.0.conditions.0": "Ejemplo oficial: tensor-parallel-size=8 y analizadores mimo; la ficha remite a la instalación de MiMo-V2.5 y la imagen mimov25-cu129.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.1.conditions.0": "El ejemplo oficial usa dos nodos, TP=16 y EP=16, con DeepEP y analizadores mimo.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.2.conditions.0": "Tarifas del 22 de septiembre de 2026 por millón de tokens: entrada sin caché 0,435 USD, con caché 0,0036 USD y salida 0,87 USD; el alojamiento propio tiene otros costes.",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.summary": "Programación y uso de herramientas en varios pasos",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.description": "Una opción para agentes de programación y análisis de repositorios grandes; la API tiene evaluación independiente y el despliegue local requiere varias GPU de gran memoria.",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.distinguishingFeature": "Los 42 mil millones de parámetros activos no reducen los pesos totales; el paquete publicado supera los 500 GiB.",
+  "mimo-v2-6-pro.artifact-listing:mimo-v2-6-pro-rl-mixed.scopeNote": "Pesos principales, tokenizador de audio y decodificador especulativo; almacenamiento MXFP4 con componentes FP8 y BF16. Es el tamaño de archivos; la ejecución y la caché KV requieren memoria adicional.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-aa.limitations.0": "Evaluación del servicio API; no se especifica la revisión de pesos servida y el resultado no se atribuye a la inferencia local RL.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-deepswe.limitations.0": "Resultado de la tabla de Xiaomi para MiMo-V2.6 Pro; no se especifican la revisión exacta del checkpoint ni los ajustes de esta prueba.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-terminal.limitations.0": "Resultado de la tabla de Xiaomi para MiMo-V2.6 Pro; no se especifican la revisión exacta del checkpoint ni los ajustes de esta prueba."
 }

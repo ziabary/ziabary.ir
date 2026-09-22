@@ -35,7 +35,7 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': 124, 'model-suitability': 116, 'hardware-feasibility': 0, 'software-products': 18,
+    'model-catalog': 125, 'model-suitability': 117, 'hardware-feasibility': 0, 'software-products': 18,
     'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 28
   });
 
@@ -508,8 +508,8 @@ test('model release-date filtering uses release evidence, including month-only a
 });
 
 test('catalog models have sourced profiles, downloads and run paths; assessed models have task guidance', () => {
-  assert.equal(dataset.modelProfiles.length, 124);
-  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.modelVersionId)).size, 124);
+  assert.equal(dataset.modelProfiles.length, 125);
+  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.modelVersionId)).size, 125);
   for (const model of dataset.models) {
     const profile = dataset.modelProfiles.find(item => item.modelVersionId === model.id);
     assert.ok(profile?.introduction.trim(), model.id);
@@ -522,7 +522,7 @@ test('catalog models have sourced profiles, downloads and run paths; assessed mo
 
 test('default usage guide explains all RAG roles without an experimental outcome', () => {
   const rows = adapters.adaptModelUseGuidance(dataset);
-  assert.equal(rows.length, 116);
+  assert.equal(rows.length, 117);
   const config = views.modelUseViewConfig();
   assert.equal(config.matrixColumns, undefined);
   const rag = filtering.filterLlmRows(rows, config.filters, { application: ['enterprise-rag'] }, '');
@@ -537,7 +537,7 @@ test('default usage guide explains all RAG roles without an experimental outcome
 
 test('optional usage matrix contains only generators and retains known text-only limitations', () => {
   const rows = adapters.adaptModelUseMatrix(dataset);
-  assert.equal(rows.length, 88);
+  assert.equal(rows.length, 89);
   assert.ok(!rows.some(row => /bge-m3|reranker|embedding|e5-small/.test(row.modelId)));
   const gemma = rows.find(row => row.modelId === 'model:google-gemma-3-1b-it');
   assert.equal(gemma.matrixCells['document-vision'].value.display, 'ورودی متنی');

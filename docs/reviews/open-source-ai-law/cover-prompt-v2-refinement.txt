@@ -1,0 +1,5 @@
+Edit this exact cover illustration. Preserve the complete composition, Iran-shaped foreground, crowded collection of open knowledge and open hardware resources, global AI background, recognizable logos, lighting and colors. Make only these precise corrections:
+1. On the small plaque directly underneath the Linux Tux penguin, replace the text "BSD" with the exact text "Linux". Tux must not be labeled BSD.
+2. Preserve a separate "BSD" license plaque by placing a modest small plaque labeled exactly "BSD" next to the source-code sheets near the existing MIT plaque, clearly separate from Tux.
+3. Remove the two tall dark advertising-style slogan banners at the far left and far right, including their poles and all their English slogans. Fill those small areas naturally with the continuation of the existing environment. Keep the large green Open Source Initiative symbol in the central foreground, and keep the foreground Creative Commons plaques.
+Everything else stays exactly as it is. Keep GPLv3, MIT, Apache 2.0, CC BY, CC BY-SA, ODbL, OFL and CERN-OHL lettering correct and readable. No new slogans, no new headlines, no extra mascots. Wide 16:9.

@@ -49908,3 +49908,119 @@ models.push({
     "evidence:qwen-image-2-1-license"
   ]
 });
+models.push({
+  "id": "model:mimo-v2-6-pro-rl",
+  "familyId": "family:mimo",
+  "exactName": "MiMo-V2.6-Pro-RL",
+  "publisher": "Xiaomi MiMo",
+  "version": "73875d00b30a89ef8cc353a0b60b0e9f9561952d",
+  "aliases": [
+    "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "MiMo-V2.6-Pro",
+    "MiMo V2.6 Pro"
+  ],
+  "stage": "reasoning",
+  "architecture": "moe",
+  "attentionArchitecture": "hybrid",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1020,
+    "evidenceIds": [
+      "evidence:mimo-v2-6-pro-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 42,
+    "evidenceIds": [
+      "evidence:mimo-v2-6-pro-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "reasoning-analysis",
+    "document-vision"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:mimo-v2-6-pro-card"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:mimo-v2-6-pro-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:mimo-v2-6-pro-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "unknown"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-22",
+  "lastReviewedOn": "2026-09-22",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:mimo-v2-6-pro-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md",
+      "evidenceIds": [
+        "evidence:mimo-v2-6-pro-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:mimo-v2-6-pro-card"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:mimo-v2-6-pro-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-card",
+    "evidence:mimo-v2-6-pro-config",
+    "evidence:mimo-v2-6-pro-release"
+  ],
+  "announcedOn": "2026-09-22"
+});

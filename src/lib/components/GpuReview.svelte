@@ -8,6 +8,7 @@
   import PageSeo from '$lib/components/PageSeo.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
+  import GuideUpdates from './GuideUpdates.svelte';
   import { getArticle, allArticleMetadata } from '$lib/content';
   import type { Component } from 'svelte';
   import type { GpuReviewCollection, GpuReviewLocale } from '$lib/gpu-review';
@@ -42,6 +43,7 @@
 <main class="gpu-review" dir="ltr">
   <div class="wrap review-note">{#if collection.draft}<strong>{copy.preview}</strong>{/if}<a href={`/${locale}/guides/`}>{copy.back}</a></div>
   <PageHero eyebrow={collection.eyebrow} title={collection.title} lead={collection.subtitle} />
+  <GuideUpdates guide="gpu-selection" {locale} />
   <div class="collection-layout">
     <nav class="collection-nav" data-reading-navigation aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>
       <small>{copy.inCollection}</small>

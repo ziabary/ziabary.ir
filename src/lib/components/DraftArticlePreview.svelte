@@ -13,7 +13,7 @@
   $: base = locale === 'fa' ? '' : `/${locale}`;
   $: enabled = browser && hasDraftPreview($page.url.searchParams);
   $: draftModule = article.draft && enabled ? getArticleModule(article.slug, locale) : undefined;
-  const text = { fa: { hidden:'این یادداشت هنوز منتشر نشده است.', label:'پیش‌نویس · در حال بازبینی', back:'بازگشت به راهنمای مدل‌های زبانی', loading:'در حال بارگذاری…', error:'پیش‌نمایش بارگذاری نشد.' }, en: { hidden:'This article has not been published yet.', label:'Draft · under review', back:'Back to the language model guide', loading:'Loading…', error:'The preview could not be loaded.' }, es: { hidden:'Este artículo aún no se ha publicado.', label:'Borrador · en revisión', back:'Volver a la guía de modelos de lenguaje', loading:'Cargando…', error:'No se ha podido cargar la vista previa.' } };
+  const text = { fa: { hidden:'این یادداشت هنوز منتشر نشده است.', label:'پیش‌نویس · در حال بازبینی', back:'بازگشت به نوشته‌ها و پیش‌نویس‌ها', loading:'در حال بارگذاری…', error:'پیش‌نمایش بارگذاری نشد.' }, en: { hidden:'This article has not been published yet.', label:'Draft · under review', back:'Back to articles and drafts', loading:'Loading…', error:'The preview could not be loaded.' }, es: { hidden:'Este artículo aún no se ha publicado.', label:'Borrador · en revisión', back:'Volver a artículos y borradores', loading:'Cargando…', error:'No se ha podido cargar la vista previa.' } };
   function previewLinks(node: HTMLElement) {
     const update = () => tick().then(() => {
       const drafts = allArticleMetadata.filter(item => item.draft && item.lang === locale).map(item => item.slug);
@@ -26,7 +26,7 @@
   <PageSeo title={`${article.title} | Mehran Ziabary`} description={article.excerpt} path={`${base}/articles/${article.slug}/`} image={article.cover ?? '/images/guides/llm.png'} {locale} noindex={true} type="article" publishedDate={article.date} />
   {#if enabled}
     {#await draftModule}<main class="wrap draft-gate" aria-live="polite">{text[locale].loading}</main>
-    {:then module}{#if module}<div use:previewLinks><aside class="wrap draft-notice"><strong>{text[locale].label}</strong><a href={`${base}/guides/llm/?show-drafts=true#${article.slug}`}>{text[locale].back}</a></aside><ArticlePage {article} Content={module.default} seo={false} /></div>{/if}
+    {:then module}{#if module}<div use:previewLinks><aside class="wrap draft-notice"><strong>{text[locale].label}</strong><a href={`${base}/articles/?show-drafts=true`}>{text[locale].back}</a></aside><ArticlePage {article} Content={module.default} seo={false} /></div>{/if}
     {:catch}<main class="wrap draft-gate">{text[locale].error}</main>{/await}
   {:else}<main class="wrap draft-gate"><h1>{text[locale].hidden}</h1></main>{/if}
 {/if}

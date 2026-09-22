@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount, tick } from 'svelte';
   import { imageAttributes } from '$lib/images';
   import { hardwareText, hardwareServers, hardwareGpuProfiles, type HardwareLocale } from '$lib/i18n/gpu';
 
@@ -68,6 +69,31 @@
   let sorts: SortRule[] = [{ key: 'gpuCount', direction: 'desc' }, { key: 'heightU', direction: 'asc' }];
   let compared: string[] = [];
   let expanded: string[] = [];
+  let focusedServer = '';
+
+  async function revealServer(fragment: string) {
+    const id = fragment.startsWith('#server-') ? fragment.slice(8) : '';
+    if (!sourceServerRecords.some(server => server.id === id)) return;
+    // News links must also reveal integrated systems hidden by the default PCIe filter.
+    query = ''; selectedVendors = []; selectedStatuses = []; acceleratorForm = 'all'; selectedProfileId = '';
+    requiredPcieGeneration = 0; requiredGpuCount = 0; cardWidth = 'any'; cardCooling = 'any'; requiredGpuPower = 0;
+    maxHeightU = 0; maxDepthMm = 0; systemCooling = 'any'; topology = 'any'; onlyValidated = false; allowDownshift = false;
+    preset = 'custom'; focusedServer = id;
+    if (!expanded.includes(id)) expanded = [...expanded,id];
+    await tick();
+    const row = document.getElementById(`server-${id}`);
+    row?.querySelector<HTMLElement>('.model')?.scrollIntoView({block:'center',inline:'nearest',behavior:'instant'});
+    row?.querySelector<HTMLButtonElement>('.detail-cell button')?.focus({preventScroll:true});
+  }
+  onMount(() => {
+    const fromHash = () => { void revealServer(location.hash); };
+    const repeatLink = (event: MouseEvent) => {
+      const anchor = event.target instanceof Element ? event.target.closest('a') : null;
+      if (anchor?.href === location.href && !event.ctrlKey && !event.metaKey && !event.shiftKey && event.button === 0) fromHash();
+    };
+    fromHash(); window.addEventListener('hashchange',fromHash); document.addEventListener('click',repeatLink);
+    return () => { window.removeEventListener('hashchange',fromHash); document.removeEventListener('click',repeatLink); };
+  });
 
   const toggle = <T,>(items: T[], value: T) => items.includes(value) ? items.filter((item) => item !== value) : [...items, value];
   const brandLogo = (vendor: ServerVendor) => `/images/server-brands/${vendor.toLowerCase().replaceAll(' ', '-').replace('asrock-rack', 'asrock')}.svg`;
@@ -365,7 +391,7 @@
       <th class="pick">{t("مقایسه")}</th><th class="detail-head">{t("جزئیات")}</th><th class="model"><button class="sort-button" class:active={sortMarks.has('model')} type="button" on:click={() => toggleSort('model')}>{t("مدل")} <i>{t(sortMark('model', sorts))}</i></button></th>
       {#each activeColumns as column}<th class:wide={['cpu','memory','storage','expansion','power','validated'].includes(column)}><div class="th-inner"><button class="sort-button" class:active={sortableColumn[column] && sortMarks.has(sortableColumn[column]!)} type="button" on:click={() => sortableColumn[column] && toggleSort(sortableColumn[column]!)}>{t(columnLabel[column])} <i>{t(sortableColumn[column] ? sortMark(sortableColumn[column]!, sorts) : '—')}</i></button><button class="hide-column" type="button" aria-label={`${t("پنهان‌کردن ستون")} ${t(columnLabel[column])}`} on:click={() => hideColumn(column)}>×</button></div></th>{/each}
     </tr></thead><tbody>
-      {#each visible as record}<tr class:selected={compared.includes(record.id)}>
+      {#each visible as record}<tr id={`server-${record.id}`} data-preserve-reading-fragment class:linked-row={focusedServer === record.id} class:selected={compared.includes(record.id)}>
         <td class="pick"><input type="checkbox" checked={compared.includes(record.id)} disabled={!compared.includes(record.id) && compared.length >= 4} aria-label={`افزودن ${record.model} به مقایسه`} on:change={() => toggleCompare(record.id)} /></td>
         <td class="detail-cell"><button class:open={expanded.includes(record.id)} type="button" aria-label={`${t("جزئیات")} ${record.model}`} aria-expanded={expanded.includes(record.id)} on:click={() => expanded = toggle(expanded, record.id)}>⌄</button></td>
         <td class="model"><div class="model-cell"><span class="brand-mark"><img {...imageAttributes(brandLogo(record.vendor), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><small>{t(record.vendor)}</small></span><b>{t(record.model)}</b><small class:preliminary={record.status === 'announced'}>{t(statusLabel[record.status])}</small>{#if selectedProfileId && compatibility(record)}<span class:validated={compatibility(record) === 'validated'} class:review={compatibility(record) === 'review'} class:bad={compatibility(record) === 'incompatible'}>{t(compatibilityLabel[compatibility(record)!])}</span>{/if}</div></td>
@@ -384,6 +410,7 @@
 </section>
 
 <style>
+  tr.linked-row td{background:var(--soft);box-shadow:inset 0 2px var(--teal),inset 0 -2px var(--teal)}
   .explorer{min-width:0;margin-top:0;border-top:1px solid var(--line);padding-top:34px;color:var(--ink)}.heading{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:38px}.heading>div>small{color:var(--teal);font-size:12px;font-weight:800}.heading h2{margin:7px 0 10px;font-size:clamp(28px,3vw,38px);line-height:1.45;letter-spacing:-1px}.heading p{max-width:1050px;margin:0;color:var(--muted);font-size:14px;line-height:2}.heading strong{color:var(--ink)}.stamp{border:1px solid var(--line);border-top:3px solid var(--teal);padding:15px;display:grid;align-content:center;gap:4px}.stamp span,.stamp small{color:var(--muted);font-size:11px}.stamp b{font-size:16px}.rules{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.rules article{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:7px;align-items:center}.rules article+article{border-inline-start:1px solid var(--line)}.rules span{color:var(--teal);font-size:13px}.rules b{font-size:13px;line-height:1.7}.scope{box-sizing:border-box;padding:12px 16px;display:grid;grid-template-columns:110px 1fr;gap:14px;background:color-mix(in srgb,var(--teal) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--teal) 35%,var(--line));border-top:0}.scope b{color:var(--teal);font-size:12px}.scope span{color:var(--muted);font-size:12px;line-height:1.85}
   .presets{display:flex;gap:7px;overflow-x:auto;padding:17px 0 9px}.presets button,.filter-actions button,.toolbar button,.compare button{border:1px solid var(--line);background:var(--paper);color:var(--muted);font:inherit;cursor:pointer}.presets button{flex:0 0 auto;border-radius:99px;padding:7px 13px;font-size:12px}.presets button:hover,.presets button.active{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 7%,var(--paper))}
   .filters{border:1px solid var(--line);background:color-mix(in srgb,var(--paper) 94%,var(--soft))}.filters summary{display:flex;justify-content:space-between;padding:12px 15px;font-size:14px;font-weight:800;cursor:pointer}.filters summary span{color:var(--teal);font-weight:600}.filter-grid{padding:14px 15px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;border-top:1px solid var(--line)}.filter-grid label,.filter-grid fieldset{min-width:0;margin:0;padding:0;border:0}.filter-grid label>span,.filter-grid legend{display:block;margin-bottom:5px;color:var(--muted);font-size:12px}.filter-grid input[type=search],.filter-grid select{box-sizing:border-box;width:100%;height:38px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:0 10px;font:inherit;font-size:13px}.checks{display:flex;flex-wrap:wrap;gap:5px}.checks label{position:relative}.checks input{position:absolute;opacity:0}.checks label span{display:block;margin:0;border:1px solid var(--line);border-radius:5px;padding:6px 9px;color:var(--muted);font-size:11px;cursor:pointer}.checks input:checked+span{border-color:var(--teal);color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,var(--paper))}.filter-actions{display:flex;justify-content:space-between;align-items:center;padding:10px 15px;border-top:1px solid var(--line)}.filter-actions>button{border:0;color:var(--teal);font-size:12px}.filter-actions>div{display:flex;align-items:center;flex-wrap:wrap;gap:14px}.filter-actions label{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}.filter-actions .show-all{border:1px solid var(--teal);border-radius:99px;padding:4px 9px;color:var(--teal);font-size:11px}.profile-note{margin-top:10px;padding:12px 15px;display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;gap:18px;border:1px solid color-mix(in srgb,#b77718 45%,var(--line));background:color-mix(in srgb,#b77718 5%,var(--paper))}.profile-note div{display:grid;gap:3px}.profile-note b{font-size:13px}.profile-note span,.profile-note p{margin:0;color:var(--muted);font-size:11px;line-height:1.8}

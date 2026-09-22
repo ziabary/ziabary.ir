@@ -1209,5 +1209,20 @@
   "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1": "برای کاهش مصرف VRAM، enable_model_cpu_offload اجزای مدل را هنگام نیاز از RAM به GPU منتقل می‌کند.",
   "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0": "اجرای تصویر با vllm serve Qwen/Qwen-Image-2.1 --omni؛ به vLLM-Omni دارای پشتیبانی این مدل نیاز دارد.",
   "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0": "از گردش‌کار و وزن‌های سازگار Comfy-Org/Qwen-Image-2.1 استفاده کنید.",
-  "qwen-image-2-1.artifactListings.scopeNote": "مجموع فایل‌های وزنِ مولد تصویر، رمزگذار و VAE؛ مدل‌های اختیاری بازنویسی پرامپت PE-T2I و PE-I2I در این بسته نیستند."
+  "qwen-image-2-1.artifactListings.scopeNote": "مجموع فایل‌های وزنِ مولد تصویر، رمزگذار و VAE؛ مدل‌های اختیاری بازنویسی پرامپت PE-T2I و PE-I2I در این بسته نیستند.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.introduction": "مدل چندوجهی شیائومی برای کدنویسی، کار با ابزارها و بررسی ورودی‌های طولانی؛ وزن‌های نسخهٔ RL با مجوز MIT منتشر شده‌اند.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.roleSummary": "کدنویسی، عامل‌های نرم‌افزاری و تحلیل متن و تصویر",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.0": "حدود ۱٫۰۲ تریلیون پارامتر کل و ۴۲ میلیارد فعال؛ فایل‌های وزن ۵۳۴٫۱ GiB هستند. این نسخه برای یک کارت ۲۴ یا ۴۸ گیگابایتی جا نمی‌شود.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.1": "امتیاز ۴۶ در شاخص هوش Artificial Analysis نسخهٔ ۴٫۳٫۲ برای سرویس MiMo-V2.6-Pro؛ این نتیجه آزمون فارسی یا آزمون اجرای محلی نسخهٔ RL نیست.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.2": "ورودی متن، تصویر، صدا و ویدئو؛ خروجی متنی. ظرفیت پیکربندی ۱٬۰۴۸٬۵۷۶ توکن است و توجه سراسری و پنجره‌ای را ترکیب می‌کند.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.0.conditions.0": "نمونهٔ رسمی با tensor-parallel-size=8 و parserهای mimo؛ کارت مدل به دستور نصب MiMo-V2.5 و ایمیج mimov25-cu129 ارجاع می‌دهد.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.1.conditions.0": "نمونهٔ رسمی روی دو گره با TP=16 و EP=16، همراه DeepEP و parserهای mimo تنظیم شده است.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.2.conditions.0": "تعرفهٔ ۲۲ سپتامبر ۲۰۲۶، به‌ازای یک میلیون توکن: ورودی بدون کش ۰٫۴۳۵ دلار، ورودی کش‌شده ۰٫۰۰۳۶ دلار و خروجی ۰٫۸۷ دلار؛ هزینهٔ اجرای محلی جداست.",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.summary": "کدنویسی و کار چندمرحله‌ای با ابزارها",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.description": "گزینه‌ای برای عامل‌های کدنویسی و بررسی مخزن‌های بزرگ؛ نسخهٔ API ارزیابی مستقل دارد و اجرای محلی به چند GPU پرحافظه نیاز دارد.",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.distinguishingFeature": "۴۲ میلیارد پارامتر فعال، حجم وزن‌های کل مدل را کاهش نمی‌دهد؛ بستهٔ منتشرشده بیش از ۵۰۰ GiB است.",
+  "mimo-v2-6-pro.artifact-listing:mimo-v2-6-pro-rl-mixed.scopeNote": "وزن‌های اصلی، رمزگذار صوت و مدل کمکی تولید حدسی؛ ذخیره‌سازی MXFP4 همراه بخش‌های FP8 و BF16. این حجم فایل است؛ حافظهٔ لازم برای اجرا و KV به آن اضافه می‌شود.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-aa.limitations.0": "آزمون سرویس API؛ نسخهٔ دقیق وزن‌های اجراشده مشخص نشده و این نتیجه به اجرای محلی RL تعمیم داده نشده است.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-deepswe.limitations.0": "نتیجهٔ جدول شیائومی برای MiMo-V2.6 Pro؛ نسخهٔ دقیق checkpoint و تنظیمات اجرای این ردیف مشخص نشده‌اند.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-terminal.limitations.0": "نتیجهٔ جدول شیائومی برای MiMo-V2.6 Pro؛ نسخهٔ دقیق checkpoint و تنظیمات اجرای این ردیف مشخص نشده‌اند."
 }

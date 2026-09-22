@@ -1,12 +1,16 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
   import type { ArticleMeta } from '$lib/content';
+  import { withDraftPreview } from '$lib/draft-preview.mjs';
   export let article: ArticleMeta;
+  export let href: string | undefined = undefined;
   export let featured = false;
   export let locale: 'fa' | 'en' | 'es' = 'fa';
   export let headingTag: 'h2' | 'h3' = 'h3';
 
   $: base = locale === 'fa' ? '/articles' : `/${locale}/articles`;
+  $: articleHref = href ?? (article.draft ? withDraftPreview(`${base}/${article.slug}/`) : `${base}/${article.slug}/`);
+  $: draftLabel = { fa: 'پیش‌نویس', en: 'Draft', es: 'Borrador' }[locale];
   $: readMore = locale === 'fa' ? 'ادامه مطلب ←' : locale === 'es' ? 'Leer artículo →' : 'Read article →';
   $: labels = locale === 'fa' ? { published: 'انتشار', updated: 'بازبینی' }
     : locale === 'es' ? { published: 'Publicado', updated: 'Actualizado' }
@@ -25,12 +29,12 @@
   </div>
   <div class="card-body">
     <p>
-      {labels.published} {locale === 'fa' ? article.faDate : localizedDate(article.date)}
+      {#if article.draft}<strong>{draftLabel}</strong>{:else}{labels.published}{/if} {locale === 'fa' ? article.faDate : localizedDate(article.date)}
       {#if article.updated && (locale !== 'fa' || article.faUpdated)} · {labels.updated} {locale === 'fa' ? article.faUpdated : localizedDate(article.updated)}{/if}
       · {article.readTime}
     </p>
-    <svelte:element this={headingTag}><a href="{base}/{article.slug}/">{article.title}</a></svelte:element>
+    <svelte:element this={headingTag}><a href={articleHref}>{article.title}</a></svelte:element>
     <span>{article.excerpt}</span>
-    <a class="text-link" href="{base}/{article.slug}/">{readMore}</a>
+    <a class="text-link" href={articleHref}>{readMore}</a>
   </div>
 </article>

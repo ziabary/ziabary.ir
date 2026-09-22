@@ -7,13 +7,14 @@
   import PageSeo from './PageSeo.svelte';
   import ArticleCard from './ArticleCard.svelte';
   import ArchiveCategorySelect from './ArchiveCategorySelect.svelte';
-  import type { ArticleMeta } from '$lib/content';
+  import { allArticleMetadata, type ArticleMeta } from '$lib/content';
   import type { Locale } from '$lib/editions';
   import { availableTopics, classification, topics } from '$lib/topics';
-  import { PAGE_SIZE, archivePath, pageCount } from '$lib/archive.mjs';
+  import { PAGE_SIZE, archivePath, archiveDestination, pageCount } from '$lib/archive.mjs';
   import { searchItems } from '$lib/search.mjs';
   import { loadSearchIndex } from '$lib/search-index.mjs';
-  import { formatDate } from '$lib/publication.mjs';
+  import { compareArticles, formatDate } from '$lib/publication.mjs';
+  import { hasDraftPreview, withDraftPreview } from '$lib/draft-preview.mjs';
   export let locale: Locale;
   export let records: ArticleMeta[];
   export let currentPage = 1;
@@ -55,35 +56,35 @@
     es: { title: 'Artículos', lead: 'Artículos técnicos y ensayos seleccionados para lectores en español.', archive: 'Archivo', search: 'Buscar títulos, texto completo y categorías', loading: 'Preparando la búsqueda…', failed: 'No se pudieron cargar los artículos para buscar.', retry: 'Reintentar', all: 'Todos los temas y categorías', previous: 'Anterior', next: 'Siguiente', pages: 'Páginas del archivo', empty: 'No hay artículos que coincidan.', page: 'Página', read: 'Leer artículo', view: 'Vista del archivo', grid: 'Vista de cuadrícula', list: 'Vista de lista' }
   };
   $: copy = copies[locale];
+  $: preview = mounted && hasDraftPreview($page.url.searchParams);
+  $: draftLabel = { fa: 'پیش‌نویس', en: 'Draft', es: 'Borrador' }[locale];
+  $: archiveRecords = preview
+    ? [...records, ...allArticleMetadata.filter(article => article.lang === locale && article.draft === true)].sort(compareArticles)
+    : records;
   $: numbers = new Intl.NumberFormat(locale);
-  $: categories = [...new Set(records.map(article => article.category))];
+  $: categories = [...new Set(archiveRecords.map(article => article.category))];
   $: categoryOptions = [
     { value: '', label: copy.all },
     ...availableTopics(locale).map(topic => ({ value: `topic:${topic.slug}`, label: topic.title })),
     ...categories.map(item => ({ value: item, label: item }))
   ];
   $: if (mounted) { query = $page.url.searchParams.get('q') ?? ''; category = $page.url.searchParams.get('category') ?? ''; }
-  $: selected = records.filter(article => !category || (category.startsWith('topic:') ? classification(article).topic === category.slice(6) : article.category === category)).map(article => {
+  $: selected = archiveRecords.filter(article => !category || (category.startsWith('topic:') ? classification(article).topic === category.slice(6) : article.category === category)).map(article => {
     const href = `${locale === 'fa' ? '' : `/${locale}`}/articles/${article.slug}/`;
     const topic = topics.find(item => item.locale === locale && item.slug === classification(article).topic);
-    return { ...article, href, body: indexBodies.get(href), tags: topic?.title ?? '' };
+    return { ...article, href: preview ? withDraftPreview(href) : href, body: indexBodies.get(href), tags: topic?.title ?? '' };
   });
   $: filtered = searchItems(selected, query);
   $: filtering = Boolean(query || category);
   $: totalPages = pageCount(filtered.length);
-  $: resultPage = mounted && filtering ? Math.max(1, Math.min(totalPages, Math.trunc(Number($page.url.searchParams.get('p'))) || 1)) : Math.min(currentPage, totalPages);
+  $: resultPage = mounted && (filtering || preview) ? Math.max(1, Math.min(totalPages, Math.trunc(Number($page.url.searchParams.get('p'))) || (filtering ? 1 : currentPage))) : Math.min(currentPage, totalPages);
   $: visible = filtered.slice((resultPage - 1) * PAGE_SIZE, resultPage * PAGE_SIZE);
   $: canonical = archivePath(locale, filtering ? 1 : currentPage);
   function destination(number: number) {
-    if (!filtering) return archivePath(locale, number);
-    const params = new URLSearchParams();
-    if (query) params.set('q', query); if (category) params.set('category', category); if (number > 1) params.set('p', String(number));
-    return `${archivePath(locale)}?${params}`;
+    return archiveDestination(locale, number, { query, category, preview });
   }
   function updateFilters() {
-    const params = new URLSearchParams();
-    if (query) params.set('q', query); if (category) params.set('category', category);
-    goto(`${archivePath(locale)}${params.size ? '?' + params : ''}`, { replaceState: true, keepFocus: true, noScroll: true });
+    goto(destination(1), { replaceState: true, keepFocus: true, noScroll: true });
   }
   function updateView(value: string) {
     view = value === 'list' ? 'list' : 'grid';
@@ -95,13 +96,15 @@
     const legacyPage = $page.url.searchParams.get('page');
     if (legacyPage && !query && !category) {
       const number = Number(legacyPage);
-      if (Number.isInteger(number) && number > 0 && number <= pageCount(records.length)) goto(archivePath(locale, number), { replaceState: true });
+      const legacyPreview = hasDraftPreview($page.url.searchParams);
+      const count = records.length + (legacyPreview ? allArticleMetadata.filter(article => article.lang === locale && article.draft === true).length : 0);
+      if (Number.isInteger(number) && number > 0 && number <= pageCount(count)) goto(archiveDestination(locale, number, { preview: legacyPreview }), { replaceState: true });
     }
   });
 </script>
 
 <PageSeo title={`${copy.title}${currentPage > 1 ? ` — ${copy.page} ${numbers.format(currentPage)}` : ''} | ${locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}`}
-  description={copy.lead} path={canonical} image="/images/profile/mehran-ziabary-formal.png" {locale} noindex={filtering} />
+  description={copy.lead} path={canonical} image="/images/profile/mehran-ziabary-formal.png" {locale} noindex={filtering || preview} />
 <main class="article-archive" dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   <PageHero eyebrow={copy.archive} title={copy.title} lead={copy.lead} />
   <section class="wrap archive-controls" aria-label={copy.search}>
@@ -125,11 +128,11 @@
     <div id="archive-items" class="archive-items" class:archive-grid={view === 'grid'}>
     {#each visible as article}
       {#if view === 'grid'}
-        <ArticleCard {article} {locale} headingTag="h2" />
+        <ArticleCard {article} {locale} href={article.href} headingTag="h2" />
       {:else}
       <article class="archive-row">
         {#if article.cover}<a class="archive-thumbnail" href={article.href} tabindex="-1" aria-hidden="true"><img {...imageAttributes(article.cover, '(max-width: 680px) 88px, 180px')} alt="" loading="lazy" width="180" height="120" /></a>{/if}
-        <div><div class="row-meta"><span>{article.category}</span><time datetime={article.date}>{locale === 'fa' && article.faDate ? article.faDate : formatDate(article.date, locale)}</time></div>
+        <div><div class="row-meta">{#if article.draft}<strong>{draftLabel}</strong>{/if}<span>{article.category}</span><time datetime={article.date}>{locale === 'fa' && article.faDate ? article.faDate : formatDate(article.date, locale)}</time></div>
           <h2><a href={article.href}>{article.title}</a></h2><p>{article.excerpt}</p><a class="text-link" href={article.href}>{copy.read} {locale === 'fa' ? '←' : '→'}</a></div>
       </article>
       {/if}

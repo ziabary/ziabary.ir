@@ -1209,5 +1209,20 @@
   "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1": "For lower VRAM use, enable_model_cpu_offload moves model components from RAM to GPU as needed.",
   "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0": "Image serving uses vllm serve Qwen/Qwen-Image-2.1 --omni and a vLLM-Omni build supporting this model.",
   "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0": "Use the compatible Comfy-Org/Qwen-Image-2.1 weights and example workflows.",
-  "qwen-image-2-1.artifactListings.scopeNote": "Combined weight files for the image generator, encoder and VAE; optional PE-T2I and PE-I2I prompt rewriters are separate."
+  "qwen-image-2-1.artifactListings.scopeNote": "Combined weight files for the image generator, encoder and VAE; optional PE-T2I and PE-I2I prompt rewriters are separate.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.introduction": "Xiaomi’s multimodal model for coding, tool use and long inputs; the RL checkpoint has downloadable weights with MIT license metadata.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.roleSummary": "Coding, software agents, text and image analysis",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.0": "About 1.02T total and 42B active parameters; weight files occupy 534.1 GiB. This checkpoint does not fit on one 24 or 48 GB GPU.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.1": "Artificial Analysis Intelligence Index v4.3.2: 46 for the MiMo-V2.6-Pro service; this is neither a Persian evaluation nor a local RL-checkpoint test.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.2": "Text, image, audio and video input; text output. The configured context is 1,048,576 tokens with mixed global and sliding-window attention.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.0.conditions.0": "Official example: tensor-parallel-size=8 with mimo parsers; the card links the MiMo-V2.5 installation recipe and mimov25-cu129 image.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.1.conditions.0": "The official example uses two nodes, TP=16 and EP=16, with DeepEP and mimo parsers.",
+  "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.2.conditions.0": "Prices on 22 September 2026 per million tokens: uncached input $0.435, cached input $0.0036 and output $0.87; self-hosting costs are separate.",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.summary": "Coding and multi-step tool use",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.description": "A candidate for coding agents and large-repository analysis; the API has an independent evaluation, while local deployment needs multiple high-memory GPUs.",
+  "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.distinguishingFeature": "42B active parameters do not reduce total resident weights; the released package exceeds 500 GiB.",
+  "mimo-v2-6-pro.artifact-listing:mimo-v2-6-pro-rl-mixed.scopeNote": "Main weights, audio tokenizer and speculative decoder; MXFP4 storage with FP8 and BF16 components. These are file bytes; runtime allocations and KV cache add memory.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-aa.limitations.0": "API-service evaluation; the exact served weight revision is unspecified, so this is not attributed to local RL inference.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-deepswe.limitations.0": "Xiaomi’s table result for MiMo-V2.6 Pro; the exact checkpoint revision and execution settings for this row are unspecified.",
+  "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-terminal.limitations.0": "Xiaomi’s table result for MiMo-V2.6 Pro; the exact checkpoint revision and execution settings for this row are unspecified."
 }

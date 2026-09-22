@@ -6500,3 +6500,57 @@ modelProfiles.push({
     "evidence:qwen-image-2-1-files"
   ]
 });
+modelProfiles.push({
+  "id": "model-profile:mimo-v2-6-pro-rl",
+  "modelVersionId": "model:mimo-v2-6-pro-rl",
+  "introduction": "مدل چندوجهی شیائومی برای کدنویسی، کار با ابزارها و بررسی ورودی‌های طولانی؛ وزن‌های نسخهٔ RL با مجوز MIT منتشر شده‌اند.",
+  "roleSummary": "کدنویسی، عامل‌های نرم‌افزاری و تحلیل متن و تصویر",
+  "distinguishingFeatures": [
+    "حدود ۱٫۰۲ تریلیون پارامتر کل و ۴۲ میلیارد فعال؛ فایل‌های وزن ۵۳۴٫۱ GiB هستند. این نسخه برای یک کارت ۲۴ یا ۴۸ گیگابایتی جا نمی‌شود.",
+    "امتیاز ۴۶ در شاخص هوش Artificial Analysis نسخهٔ ۴٫۳٫۲ برای سرویس MiMo-V2.6-Pro؛ این نتیجه آزمون فارسی یا آزمون اجرای محلی نسخهٔ RL نیست.",
+    "ورودی متن، تصویر، صدا و ویدئو؛ خروجی متنی. ظرفیت پیکربندی ۱٬۰۴۸٬۵۷۶ توکن است و توجه سراسری و پنجره‌ای را ترکیب می‌کند."
+  ],
+  "officialUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md",
+  "runGuides": [
+    {
+      "label": "vLLM",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md#vllm",
+      "conditions": [
+        "نمونهٔ رسمی با tensor-parallel-size=8 و parserهای mimo؛ کارت مدل به دستور نصب MiMo-V2.5 و ایمیج mimov25-cu129 ارجاع می‌دهد."
+      ],
+      "evidenceIds": [
+        "evidence:mimo-v2-6-pro-card"
+      ]
+    },
+    {
+      "label": "SGLang",
+      "engine": "SGLang",
+      "href": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md#sglang",
+      "conditions": [
+        "نمونهٔ رسمی روی دو گره با TP=16 و EP=16، همراه DeepEP و parserهای mimo تنظیم شده است."
+      ],
+      "evidenceIds": [
+        "evidence:mimo-v2-6-pro-card"
+      ]
+    },
+    {
+      "label": "MiMo API",
+      "engine": "API",
+      "href": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "conditions": [
+        "تعرفهٔ ۲۲ سپتامبر ۲۰۲۶، به‌ازای یک میلیون توکن: ورودی بدون کش ۰٫۴۳۵ دلار، ورودی کش‌شده ۰٫۰۰۳۶ دلار و خروجی ۰٫۸۷ دلار؛ هزینهٔ اجرای محلی جداست."
+      ],
+      "evidenceIds": [
+        "evidence:mimo-v2-6-pro-api"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-card",
+    "evidence:mimo-v2-6-pro-config",
+    "evidence:mimo-v2-6-pro-files",
+    "evidence:mimo-v2-6-pro-aa",
+    "evidence:mimo-v2-6-pro-api"
+  ]
+});

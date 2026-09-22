@@ -53,6 +53,13 @@ export function previewEquivalentPages(pathname: string, params: URLSearchParams
   if (params.get('show-drafts') !== 'true') return [];
   const bare = pathname.replace(/^\/(en|es)(?=\/)/, '');
   const sourceLocale: Locale = pathname.startsWith('/en/') ? 'en' : pathname.startsWith('/es/') ? 'es' : 'fa';
+  if (/^\/articles\/(?:page\/\d+\/)?$/.test(bare)) {
+    const archiveParams = new URLSearchParams(params);
+    archiveParams.delete('p');
+    archiveParams.delete('page');
+    archiveParams.delete('category');
+    return locales.map(locale => ({ locale, href: `${localeBase(locale)}/articles/?${archiveParams}` }));
+  }
   if (/^\/guides\/llm\/?$/.test(bare)) return locales.map(locale => {
     let fragment = hash;
     const chapter = llmTopics.find(topic => hash.slice(1) === topic[sourceLocale] || hash.slice(1).startsWith(topic[sourceLocale] + '--'));

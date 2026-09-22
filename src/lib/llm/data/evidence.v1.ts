@@ -42385,3 +42385,118 @@ evidence.push({
     "revisionMeaning": "Exact official repository revision; file inventory captured through Hugging Face API."
   }
 });
+evidence.push({
+  "id": "evidence:mimo-v2-6-pro-card",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md",
+  "title": "MiMo-V2.6-Pro-RL model card",
+  "organization": "Xiaomi MiMo",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "73875d00b30a89ef8cc353a0b60b0e9f9561952d",
+  "locator": "YAML license/language; Model Summary; Evaluation Results; Deployment",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Released checkpoint, MIT metadata, nominal parameter counts, modalities, deployment recipes and publisher benchmarks.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "mimo-v2.6-pro-2026-09-22/README.md",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "revisionMeaning": "Pinned checkpoint revision"
+  }
+});
+evidence.push({
+  "id": "evidence:mimo-v2-6-pro-config",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/config.json",
+  "title": "MiMo-V2.6-Pro-RL configuration",
+  "organization": "Xiaomi MiMo",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "73875d00b30a89ef8cc353a0b60b0e9f9561952d",
+  "locator": "max_position_embeddings; hybrid_layer_pattern; quantization_config",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Hybrid global/sliding-window attention, configured context and mixed weight storage.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "mimo-v2.6-pro-2026-09-22/config.json",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "revisionMeaning": "Pinned checkpoint revision"
+  }
+});
+evidence.push({
+  "id": "evidence:mimo-v2-6-pro-files",
+  "url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/revision/73875d00b30a89ef8cc353a0b60b0e9f9561952d?blobs=true",
+  "title": "MiMo-V2.6-Pro-RL weight inventory",
+  "organization": "Xiaomi MiMo",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "73875d00b30a89ef8cc353a0b60b0e9f9561952d",
+  "locator": "sha; siblings[].rfilename; siblings[].size",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Download bytes including main weights, audio tokenizer and speculative decoder; not runtime memory.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "mimo-v2.6-pro-2026-09-22/api.json",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "e7acd5e9a34b9d0eb7885f40da63e0d392f6795cd4528b9bff6cecaaf22c614d",
+    "revisionMeaning": "Pinned checkpoint revision"
+  }
+});
+evidence.push({
+  "id": "evidence:mimo-v2-6-pro-aa",
+  "url": "https://artificialanalysis.ai/models/mimo-v2-6-pro",
+  "title": "MiMo-V2.6-Pro — Artificial Analysis",
+  "organization": "Artificial Analysis",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "2026-09-22 webpage capture",
+  "locator": "Model summary; Technical specifications; Intelligence Index v4.3.2",
+  "kind": "third-party-report",
+  "sourceKind": "primary",
+  "scope": "Reasoning API evaluation; index v4.3.2. The tested API is not pinned to the released RL checkpoint.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "mimo-v2.6-pro-2026-09-22/aa.txt",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "a72ff16cefe5e1fa52bba9559c343bc4ecc3b6add359074b13b2407afc7936af",
+    "revisionMeaning": "Dated page text; not a model checkpoint revision"
+  }
+});
+evidence.push({
+  "id": "evidence:mimo-v2-6-pro-api",
+  "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+  "title": "MiMo-V2.6-Pro API pricing",
+  "organization": "Xiaomi MiMo",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "2026-09-22 webpage capture",
+  "locator": "Model Pricing / USD; Get Access",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "USD pay-as-you-go token prices; separate from self-hosting costs.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "mimo-v2.6-pro-2026-09-22/pricing.txt",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "6ef51ae17450ed70320c69117db7ae65d022a40f3c3013967783a40d4c279e98",
+    "revisionMeaning": "Dated page text; not a model checkpoint revision"
+  }
+});
+evidence.push({
+  "id": "evidence:mimo-v2-6-pro-release",
+  "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+  "title": "MiMo-V2.6 release announcement",
+  "organization": "Xiaomi MiMo",
+  "publishedOn": "2026-09-22",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "2026-09-22 release announcement",
+  "locator": "Opening announcement; release date",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Official model release date, separate from repository creation on September 21.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "mimo-v2.6-pro-2026-09-22/release.txt",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "0992019ed2f454f5a9566994cbce8c5d70760ca48d89ce3a1a400ce459641c89",
+    "revisionMeaning": "Dated release page text"
+  }
+});

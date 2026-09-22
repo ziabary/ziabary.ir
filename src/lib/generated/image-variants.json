@@ -2986,6 +2986,38 @@
       }
     ]
   },
+  "/images/articles/open-source-ai-needs-legal-protection/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2937295,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/dc4ec66b048e5a3f-320.webp",
+        "bytes": 29024
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/dc4ec66b048e5a3f-640.webp",
+        "bytes": 97426
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/dc4ec66b048e5a3f-960.webp",
+        "bytes": 190012
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/dc4ec66b048e5a3f-1440.webp",
+        "bytes": 337084
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/dc4ec66b048e5a3f-1672.webp",
+        "bytes": 410504
+      }
+    ]
+  },
   "/images/articles/pcie-gpu-server-selection/cover.png": {
     "width": 1536,
     "height": 1024,

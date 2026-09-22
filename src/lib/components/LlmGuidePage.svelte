@@ -18,6 +18,7 @@
   import LlmModelProfile from './LlmModelProfile.svelte';
   import ContactReveal from './ContactReveal.svelte';
   import GuideOpening from './GuideOpening.svelte';
+  import GuideUpdates from './GuideUpdates.svelte';
   import LlmDataView from './LlmDataView.svelte';
   import LlmResearchView from './LlmResearchView.svelte';
   import LlmScoreSelector from './LlmScoreSelector.svelte';
@@ -176,6 +177,7 @@
 {t('LlmGuidePage.1025')}
 </p>
     </GuideOpening>
+    <GuideUpdates guide="llm" {locale} />
     <section class="start" id="start" aria-labelledby="start-title">
           <header>
             <small>{t('LlmGuidePage.1026')}</small>

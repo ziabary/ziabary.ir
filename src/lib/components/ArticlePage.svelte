@@ -2,6 +2,9 @@
   import '$lib/math.css';
   import { imageAttributes } from '$lib/images';
   import type { Component } from 'svelte';
+  import { browser } from '$app/environment';
+  import { page } from '$app/stores';
+  import { hasDraftPreview, withDraftPreview } from '$lib/draft-preview.mjs';
   import type { ArticleMeta } from '$lib/content';
   import ReadingShare from './ReadingShare.svelte';
   import ArticleSeo from './ArticleSeo.svelte';
@@ -19,6 +22,7 @@
   $: headingIds = headings.map(heading => heading.id);
   $: hasToc = article.toc !== false && (article.toc === true || headingSections(headings).length >= 3);
   $: base = locale === 'fa' ? '' : `/${locale}`;
+  $: preview = browser && hasDraftPreview($page.url.searchParams);
   // Conflicting editorial dates are retained pending source verification (CONTENT-REVIEW.md).
   $: displayedDate = locale === 'fa' && article.faDate ? article.faDate : formatDate(article.date, locale);
 </script>
@@ -27,7 +31,7 @@
 <main class="article-page" class:intl-article={locale !== 'fa'} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   <article>
     <header class="article-header wrap">
-      <a class="archive-back" href={`${base}/articles/`}>{locale === 'fa' ? 'همهٔ نوشته‌ها' : locale === 'en' ? 'All articles' : 'Todos los artículos'}</a>
+      <a class="archive-back" href={preview ? withDraftPreview(`${base}/articles/`) : `${base}/articles/`}>{locale === 'fa' ? 'همهٔ نوشته‌ها' : locale === 'en' ? 'All articles' : 'Todos los artículos'}</a>
       <div class="article-meta"><span>{article.category}</span><time datetime={article.date}>{displayedDate}</time>{#if article.updated}<time datetime={article.updated}>{locale === 'fa' ? 'بازبینی: ' : ''}{formatDate(article.updated, locale)}</time>{/if}<span>{article.readTime}</span></div>
       <h1>{article.title}</h1><p>{article.excerpt}</p>
     </header>
@@ -41,7 +45,7 @@
       </div>
     </div>
   </article>
-  <RelatedStream related={article.related ?? []} currentSlug={article.slug} {locale} includeDrafts={article.draft === true} />
+  <RelatedStream related={article.related ?? []} currentSlug={article.slug} {locale} includeDrafts={preview} />
 </main>
 
 <style>

@@ -6710,3 +6710,22 @@ modelUseGuidance.push({
     "evidence:translation0920-facebook-nllb-200-distilled-600m"
   ]
 });
+modelUseGuidance.push({
+  "id": "model-use:mimo-v2-6-pro-rl:coding",
+  "modelVersionId": "model:mimo-v2-6-pro-rl",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کدنویسی و کار چندمرحله‌ای با ابزارها",
+  "description": "گزینه‌ای برای عامل‌های کدنویسی و بررسی مخزن‌های بزرگ؛ نسخهٔ API ارزیابی مستقل دارد و اجرای محلی به چند GPU پرحافظه نیاز دارد.",
+  "distinguishingFeature": "۴۲ میلیارد پارامتر فعال، حجم وزن‌های کل مدل را کاهش نمی‌دهد؛ بستهٔ منتشرشده بیش از ۵۰۰ GiB است.",
+  "conditions": [
+    "حدود ۱٫۰۲ تریلیون پارامتر کل و ۴۲ میلیارد فعال؛ فایل‌های وزن ۵۳۴٫۱ GiB هستند. این نسخه برای یک کارت ۲۴ یا ۴۸ گیگابایتی جا نمی‌شود.",
+    "امتیاز ۴۶ در شاخص هوش Artificial Analysis نسخهٔ ۴٫۳٫۲ برای سرویس MiMo-V2.6-Pro؛ این نتیجه آزمون فارسی یا آزمون اجرای محلی نسخهٔ RL نیست."
+  ],
+  "basis": "editorial-analysis",
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-card",
+    "evidence:mimo-v2-6-pro-aa",
+    "evidence:mimo-v2-6-pro-files"
+  ]
+});

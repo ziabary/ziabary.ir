@@ -26,6 +26,11 @@ do not assume every article has a translation.
 - Images live under static/images/articles/<slug>/.
 - Slide PDFs live under static/slides/<course-slug>/.
 - Draft content must set draft: true.
+- For significant LLM, GPU or server dataset additions/changes, add a concise
+  announcement in `src/lib/guide-updates.mjs` with a unique, stable short ID,
+  the dataset-change date and fa/en/es copy. Preserve IDs across wording fixes;
+  do not generate announcements or new IDs on every build. See
+  `docs/guide-updates.md` for visibility and browser-storage behavior.
 - Translations retain the original article's publication `date`; format the
   displayed date for the target language. Do not replace it with translation day.
 - The personal phone number must appear only inside downloadable CV files,

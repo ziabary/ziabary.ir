@@ -41501,3 +41501,85 @@ publishedEvaluations.push({
     "evidence:update0919-result-qwen3-vl-reranker-8b-vidore3"
   ]
 });
+publishedEvaluations.push({
+  "id": "published-evaluation:mimo-v2-6-pro-aa",
+  "modelVersionId": "model:mimo-v2-6-pro-rl",
+  "reportedModelName": "MiMo-V2.6-Pro",
+  "reporter": "Artificial Analysis",
+  "reportingRelationship": "independent",
+  "benchmark": "Artificial Analysis Intelligence Index",
+  "benchmarkVersion": "4.3.2",
+  "metric": "Intelligence Index",
+  "value": 46,
+  "unit": "score-points-0-100",
+  "settings": {},
+  "mode": "reasoning",
+  "applicationIds": [
+    "reasoning-analysis"
+  ],
+  "accessedOn": "2026-09-22",
+  "limitations": [
+    "آزمون سرویس API؛ نسخهٔ دقیق وزن‌های اجراشده مشخص نشده و این نتیجه به اجرای محلی RL تعمیم داده نشده است."
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-aa"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:mimo-v2-6-pro-deepswe",
+  "modelVersionId": "model:mimo-v2-6-pro-rl",
+  "reportedModelName": "MiMo-V2.6-Pro",
+  "reporter": "Xiaomi MiMo",
+  "reportingRelationship": "publisher",
+  "benchmark": "DeepSWE",
+  "benchmarkVersion": "1.1",
+  "metric": "reported benchmark score",
+  "value": 71.9,
+  "unit": "score-points-0-100",
+  "settings": {},
+  "mode": "publisher evaluation",
+  "applicationIds": [
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-22",
+  "limitations": [
+    "نتیجهٔ جدول شیائومی برای MiMo-V2.6 Pro؛ نسخهٔ دقیق checkpoint و تنظیمات اجرای این ردیف مشخص نشده‌اند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-card"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:mimo-v2-6-pro-terminal",
+  "modelVersionId": "model:mimo-v2-6-pro-rl",
+  "reportedModelName": "MiMo-V2.6-Pro",
+  "reporter": "Xiaomi MiMo",
+  "reportingRelationship": "publisher",
+  "benchmark": "Terminal Bench",
+  "benchmarkVersion": "4.0",
+  "metric": "reported benchmark score",
+  "value": 34.9,
+  "unit": "score-points-0-100",
+  "settings": {},
+  "mode": "publisher evaluation",
+  "applicationIds": [
+    "agents-tools",
+    "coding-assistant"
+  ],
+  "accessedOn": "2026-09-22",
+  "limitations": [
+    "نتیجهٔ جدول شیائومی برای MiMo-V2.6 Pro؛ نسخهٔ دقیق checkpoint و تنظیمات اجرای این ردیف مشخص نشده‌اند."
+  ],
+  "languageScope": {
+    "kind": "unspecified"
+  },
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-card"
+  ]
+});

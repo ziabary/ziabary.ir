@@ -261,3 +261,11 @@ families.push({
     "evidence:qwen-image-2-1-card"
   ]
 });
+families.push({
+  "id": "family:mimo",
+  "name": "MiMo",
+  "publisher": "Xiaomi MiMo",
+  "evidenceIds": [
+    "evidence:mimo-v2-6-pro-card"
+  ]
+});

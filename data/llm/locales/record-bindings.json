@@ -9151,5 +9151,34 @@
   },
   "repository.artifactListings/artifact-listing:qwen-image-2-1-bf16": {
     "scopeNote": "qwen-image-2-1.artifactListings.scopeNote"
+  },
+  "repository.modelProfiles/model-profile:mimo-v2-6-pro-rl": {
+    "introduction": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.introduction",
+    "roleSummary": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.roleSummary",
+    "distinguishingFeatures/0": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.0",
+    "distinguishingFeatures/1": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.1",
+    "distinguishingFeatures/2": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.2",
+    "runGuides/0/conditions/0": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.0.conditions.0",
+    "runGuides/1/conditions/0": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.1.conditions.0",
+    "runGuides/2/conditions/0": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.runGuides.2.conditions.0"
+  },
+  "repository.modelUseGuidance/model-use:mimo-v2-6-pro-rl:coding": {
+    "summary": "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.summary",
+    "description": "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.description",
+    "distinguishingFeature": "mimo-v2-6-pro.model-use:mimo-v2-6-pro-rl:coding.distinguishingFeature",
+    "conditions/0": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.0",
+    "conditions/1": "mimo-v2-6-pro.model-profile:mimo-v2-6-pro-rl.distinguishingFeatures.1"
+  },
+  "repository.artifactListings/artifact-listing:mimo-v2-6-pro-rl-mixed": {
+    "scopeNote": "mimo-v2-6-pro.artifact-listing:mimo-v2-6-pro-rl-mixed.scopeNote"
+  },
+  "repository.publishedEvaluations/published-evaluation:mimo-v2-6-pro-aa": {
+    "limitations/0": "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-aa.limitations.0"
+  },
+  "repository.publishedEvaluations/published-evaluation:mimo-v2-6-pro-deepswe": {
+    "limitations/0": "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-deepswe.limitations.0"
+  },
+  "repository.publishedEvaluations/published-evaluation:mimo-v2-6-pro-terminal": {
+    "limitations/0": "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-terminal.limitations.0"
   }
 }

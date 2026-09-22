@@ -43,7 +43,12 @@ test('real translated slugs survive the complete build pipeline; independent/dra
     assert.equal(gunzipSync(readFileSync(`build${path}index.html.gz`)).toString(),source);
   }
   for(const path of ['/articles/dynamic-password-fraud/','/en/articles/apache-mod-jk-log-lock/']) assert.doesNotMatch(html(path),/<link[^>]+hreflang=/);
-  for(const path of ['/en/articles/sms-otp-security-design/','/es/articles/cuando-un-otp-por-sms-reduce-la-seguridad/']) assert.ok(!existsSync(`build${path}index.html`));
+  for(const path of ['/en/articles/sms-otp-security-design/','/es/articles/cuando-un-otp-por-sms-reduce-la-seguridad/']) {
+    const source = html(path);
+    assert.match(source, /<meta name="robots" content="noindex,follow"/);
+    assert.doesNotMatch(source, /<link[^>]+hreflang=/);
+    assert.doesNotMatch(source, /class="prose article-body/);
+  }
 });
 
 test('planned collections are useful and excluded from sitemap and search in each edition', () => {

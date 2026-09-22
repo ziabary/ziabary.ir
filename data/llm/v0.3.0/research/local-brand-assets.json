@@ -133,5 +133,15 @@
     "sha256": "f8f9889e058d34a0875d0219462c50c37ff7f62325be99d9e2dacd361da13578",
     "bytes": 10196,
     "accessedOn": "2026-09-16"
+  },
+  {
+    "brand": "mimo",
+    "publisher": "Xiaomi MiMo",
+    "profileUrl": "https://huggingface.co/XiaomiMiMo",
+    "sourceUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/680cb7d1233834890a64acee/5w_4aLfF-7MAyaIPOV498.jpeg",
+    "localPath": "/images/llm/brands/mimo.jpg",
+    "sha256": "ddb16be9e3cee4bb0c0af07eb1700d9d2d6b80541a2d19dbc4508e64bc764570",
+    "bytes": 2052,
+    "accessedOn": "2026-09-22"
   }
 ]
