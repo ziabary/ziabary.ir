@@ -10060,6 +10060,38 @@
       }
     ]
   },
+  "/images/news/ana-1083866.webp": {
+    "width": 1671,
+    "height": 941,
+    "originalBytes": 117964,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b19a6057e4b7edde-320.webp",
+        "bytes": 14536
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b19a6057e4b7edde-640.webp",
+        "bytes": 38228
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b19a6057e4b7edde-960.webp",
+        "bytes": 64500
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/b19a6057e4b7edde-1440.webp",
+        "bytes": 106112
+      },
+      {
+        "width": 1671,
+        "src": "/images/responsive/b19a6057e4b7edde-1671.webp",
+        "bytes": 119466
+      }
+    ]
+  },
   "/images/news/ecomotive-027.jpg": {
     "width": 1024,
     "height": 768,
