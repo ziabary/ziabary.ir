@@ -1,3 +1,4 @@
+import { cacheControl, staleDeploymentKeys, unchangedObject, publishPhases } from './deployment-policy.mjs';
 import { verifySitemap } from './verify-sitemap.mjs';
 import { verifyShortLinks } from './verify-short-links.mjs';
 import { createHash } from 'node:crypto';
@@ -44,12 +45,12 @@ const remoteKeys = await listRemoteKeys();
 let uploaded = 0;
 let skipped = 0;
 
-await concurrently(localFiles, 8, async ({ path, key }) => {
+await publishPhases(localFiles, (phase) => concurrently(phase, 8, async ({ path, key }) => {
   const fileStat = await stat(path);
   const checksum = await sha256(path);
   const remote = await headObject(key);
 
-  if (remote?.Metadata?.sha256 === checksum && remote.ContentLength === fileStat.size) {
+  if (unchangedObject(remote, checksum, fileStat.size, key)) {
     skipped += 1;
     return;
   }
@@ -70,9 +71,9 @@ await concurrently(localFiles, 8, async ({ path, key }) => {
   );
   uploaded += 1;
   console.log(`uploaded  ${key}`);
-});
+}));
 
-const staleKeys = [...remoteKeys].filter((key) => !localKeys.has(key));
+const staleKeys = staleDeploymentKeys(remoteKeys, localKeys);
 for (let offset = 0; offset < staleKeys.length; offset += 1000) {
   const batch = staleKeys.slice(offset, offset + 1000);
   await s3.send(
@@ -171,12 +172,6 @@ async function concurrently(items, limit, worker) {
     }
   }
   await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
-}
-
-function cacheControl(key) {
-  if (key.startsWith('_app/immutable/')) return 'public,max-age=31536000,immutable';
-  if (/\.html(?:\.(?:br|gz))?$/.test(key)) return 'public,max-age=300';
-  return 'public,max-age=3600';
 }
 
 function objectHeaders(key) {

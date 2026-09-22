@@ -6,7 +6,7 @@ import markdownLinks from './scripts/markdown-links.mjs';
 import markdownTables from './scripts/markdown-tables.mjs';
 import remarkMath from 'remark-math';
 import markdownMath from './scripts/markdown-math.mjs';
-import packageJson from './package.json' with { type: 'json' };
+import { buildVersion } from './scripts/build-version.mjs';
 
 const markdownOptions = { extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages], rehypePlugins: [markdownLinks, markdownTables] };
 const markdown = mdsvex(markdownOptions);
@@ -20,15 +20,10 @@ export default {
     return (/^math:\s*true\s*$/m.test(frontmatter) ? mathMarkdown : markdown).markup(options);
   } }],
   kit: {
-    // SvelteKit otherwise uses Date.now() as the version name. That timestamp is
-    // embedded in the client runtime and gives unchanged JS files a new hash on
-    // every build, needlessly invalidating long-lived CDN caches.
-    //
-    // Keep the runtime version stable by default. Vite/Rollup still content-hash
-    // every CSS and JS asset, so files get a new URL whenever their actual
-    // contents change. APP_VERSION can be set explicitly for a forced rollout.
+    // Stable for identical inputs, different for each changed release. SvelteKit
+    // uses this ID to recover navigation when a tab still runs an older build.
     version: {
-      name: process.env.APP_VERSION || packageJson.version
+      name: process.env.APP_VERSION || buildVersion(import.meta.dirname)
     },
     adapter: adapter({
       pages: 'build',
