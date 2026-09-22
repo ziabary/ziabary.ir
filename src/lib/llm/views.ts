@@ -163,7 +163,7 @@ const stageOptions = [
 ];
 const kindOptions = [
   option('generative', t('views.0291')), option('embedding', t('views.0292')), option('reranker', t('views.0293')),
-  option('encoder-classifier', t('views.0294')), option('vision-language', t('views.0295')), option('other', t('views.0290'))
+  option('encoder-classifier', t('views.0294')), option('vision-language', t('views.0295')), option('image-generation', t('model-kind.image-generation')), option('other', t('views.0290'))
 ];
 const evidenceOptions = [
   option('direct-measurement', t('views.0296')),

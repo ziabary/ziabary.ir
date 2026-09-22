@@ -35,6 +35,7 @@ function profileRunCards(profile: ModelProfile) {
 }
 const labels: Record<string, string> = {
   generative: t('presentation.0077'), embedding: t('presentation.0078'), reranker: t('presentation.0079'), 'encoder-classifier': t('presentation.0080'),
+  'image-generation': t('model-kind.image-generation'),
   'vision-language': t('presentation.0081'), other: t('presentation.0082'), dense: t('presentation.0083'), moe: t('presentation.0084'), hybrid: t('presentation.0085'),
   base: t('presentation.0086'), instruct: t('presentation.0087'), reasoning: t('presentation.0088'), distilled: t('presentation.0089'),
   text: t('presentation.0090'), image: t('presentation.0091'), audio: t('presentation.0092'), video: t('presentation.0093'), score: t('presentation.0094'), 'similarity-score': t('presentation.0095'), archived: t('presentation.0096'), 'structured-data': t('presentation.0097'),

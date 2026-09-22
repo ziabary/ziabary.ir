@@ -1353,5 +1353,6 @@
   "start.hardware.memory": "مدل‌ها روی RTX 4090",
   "start.hardware.quantization": "چهاربیتی‌کردن مدل",
   "start.software.engine": "انتخاب نرم‌افزار",
-  "start.software.serving": "از یک کاربر تا سرویس سازمانی"
+  "start.software.serving": "از یک کاربر تا سرویس سازمانی",
+  "model-kind.image-generation": "ساخت و ویرایش تصویر"
 }

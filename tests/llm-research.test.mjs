@@ -9,7 +9,7 @@ const data = name => JSON.parse(fs.readFileSync(`data/llm/v0.2.0/data/${name}.js
 const close = (a,b) => assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
 
 test('supplement preserves the base, exact identities, independent evidence and deduplicated quality',()=>{
-  assert.equal(base.models.length,123);assert.equal(base.publishedEvaluations.length,1209);assert.equal(base.artifactListings.length,534);
+  assert.equal(base.models.length,124);assert.equal(base.publishedEvaluations.length,1209);assert.equal(base.artifactListings.length,535);
   // Similar scores remain distinct when language/protocol identity is not established.
   assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1267);
   assert.equal(repository.evidence.length,base.evidence.length+127);

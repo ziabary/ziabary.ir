@@ -253,3 +253,11 @@ families.push({
     "evidence:translation0920-facebook-nllb-200-distilled-600m"
   ]
 });
+families.push({
+  "id": "family:qwen-image",
+  "name": "Qwen-Image",
+  "publisher": "Qwen / Alibaba",
+  "evidenceIds": [
+    "evidence:qwen-image-2-1-card"
+  ]
+});

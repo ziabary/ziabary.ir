@@ -49805,3 +49805,106 @@ models.push({
     "unit": "token"
   }
 });
+models.push({
+  "id": "model:qwen-image-2-1",
+  "familyId": "family:qwen-image",
+  "exactName": "Qwen-Image-2.1",
+  "publisher": "Qwen / Alibaba",
+  "version": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "aliases": [
+    "Qwen/Qwen-Image-2.1",
+    "Qwen Image 2.1",
+    "Qwen-Image-2.1 7B"
+  ],
+  "stage": "other",
+  "architecture": "other",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "parameterCounts": [
+    {
+      "scope": "other",
+      "label": "مولد تصویر DiT",
+      "value": {
+        "state": "known",
+        "value": 7,
+        "evidenceIds": [
+          "evidence:qwen-image-2-1-implementation"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    },
+    {
+      "scope": "language-component",
+      "label": "رمزگذار Qwen3-VL",
+      "value": {
+        "state": "known",
+        "value": 8,
+        "evidenceIds": [
+          "evidence:qwen-image-2-1-implementation"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    }
+  ],
+  "kind": "image-generation",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "image"
+  ],
+  "applications": [],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "not-applicable"
+  },
+  "evaluatedContext": {
+    "state": "not-applicable"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-20",
+  "announcedOn": "2026-09-20",
+  "lastReviewedOn": "2026-09-22",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Qwen Research License — غیرتجاری",
+      "evidenceIds": [
+        "evidence:qwen-image-2-1-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/790c92633540aa0cb11d9abf19eb46d861714758/LICENSE",
+      "evidenceIds": [
+        "evidence:qwen-image-2-1-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:qwen-image-2-1-license"
+      ]
+    },
+    "restrictions": [
+      "استفادهٔ تجاری به مجوز جداگانه از Qwen نیاز دارد."
+    ],
+    "evidenceIds": [
+      "evidence:qwen-image-2-1-license"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:qwen-image-2-1-card",
+    "evidence:qwen-image-2-1-implementation",
+    "evidence:qwen-image-2-1-license"
+  ]
+});

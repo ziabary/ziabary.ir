@@ -30849,3 +30849,61 @@ artifactListings.push({
     "Transformers"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:qwen-image-2-1-bf16",
+  "modelVersionId": "model:qwen-image-2-1",
+  "baseModelRepository": "Qwen/Qwen-Image-2.1",
+  "baseRevision": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "publisher": "Qwen",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "BF16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+  "filesUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1/tree/790c92633540aa0cb11d9abf19eb46d861714758",
+  "repositoryRevision": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "files": [
+    {
+      "path": "text_encoder/model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/text_encoder/model-00001-of-00004.safetensors",
+      "bytes": 4998056552
+    },
+    {
+      "path": "text_encoder/model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/text_encoder/model-00002-of-00004.safetensors",
+      "bytes": 4915962464
+    },
+    {
+      "path": "text_encoder/model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/text_encoder/model-00003-of-00004.safetensors",
+      "bytes": 4915962496
+    },
+    {
+      "path": "text_encoder/model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/text_encoder/model-00004-of-00004.safetensors",
+      "bytes": 2704357976
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
+      "bytes": 9968332504
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/transformer/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "bytes": 4261951904
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.safetensors",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/790c92633540aa0cb11d9abf19eb46d861714758/vae/diffusion_pytorch_model.safetensors",
+      "bytes": 1350989512
+    }
+  ],
+  "totalBytes": 33115613408,
+  "scopeNote": "مجموع فایل‌های وزنِ مولد تصویر، رمزگذار و VAE؛ مدل‌های اختیاری بازنویسی پرامپت PE-T2I و PE-I2I در این بسته نیستند.",
+  "verifiedOn": "2026-09-22",
+  "evidenceIds": [
+    "evidence:qwen-image-2-1-files",
+    "evidence:qwen-image-2-1-card"
+  ]
+});

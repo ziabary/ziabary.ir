@@ -1,4 +1,4 @@
-// Dataset 0.3.0; catalog reviewed 2026-09-21.
+// Dataset 0.3.0; catalog reviewed 2026-09-22.
 import type { LlmGuideRepository } from '../schema';
 import { families } from './families.v1';
 import { models } from './models.v1';
@@ -33,4 +33,4 @@ export const llmDataset: LlmGuideRepository = {
   families, models, artifacts, softwareProducts, softwareReleases, engines, servingStacks, deploymentConfigurations, softwareCapabilities, apiCompatibility, hardwareConfigurations, workloads, qualityEvaluations, applicationAssessments, executionFeasibility, deploymentCompatibility, benchmarkRuns, specializedAssessments, claims, evidence, publishedEvaluations, modelProfiles, modelUseGuidance, artifactListings, referenceComparisons, selectionGuidance, articleSections, quantizationStudies
 };
 
-export const llmDatasetUpdatedOn = "2026-09-21";
+export const llmDatasetUpdatedOn = "2026-09-22";

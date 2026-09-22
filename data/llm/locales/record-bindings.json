@@ -9131,5 +9131,25 @@
   "repository.apiCompatibility/api-compatibility:sglang-v0-5-20-responses": {
     "statusReason": "sglang.0520.responses",
     "limitations/0": "sglang.0520.storage-limits"
+  },
+  "repository.models/model:qwen-image-2-1": {
+    "parameterCounts/0/label": "qwen-image-2-1.models.parameterCounts.0.label",
+    "parameterCounts/1/label": "qwen-image-2-1.models.parameterCounts.1.label",
+    "license/name/value": "qwen-image-2-1.models.license.name.value",
+    "license/restrictions/0": "qwen-image-2-1.models.license.restrictions.0"
+  },
+  "repository.modelProfiles/model-profile:qwen-image-2-1": {
+    "introduction": "qwen-image-2-1.modelProfiles.introduction",
+    "roleSummary": "qwen-image-2-1.modelProfiles.roleSummary",
+    "distinguishingFeatures/0": "qwen-image-2-1.modelProfiles.distinguishingFeatures.0",
+    "distinguishingFeatures/1": "qwen-image-2-1.modelProfiles.distinguishingFeatures.1",
+    "distinguishingFeatures/2": "qwen-image-2-1.modelProfiles.distinguishingFeatures.2",
+    "runGuides/0/conditions/0": "qwen-image-2-1.modelProfiles.runGuides.0.conditions.0",
+    "runGuides/0/conditions/1": "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1",
+    "runGuides/1/conditions/0": "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0",
+    "runGuides/2/conditions/0": "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0"
+  },
+  "repository.artifactListings/artifact-listing:qwen-image-2-1-bf16": {
+    "scopeNote": "qwen-image-2-1.artifactListings.scopeNote"
   }
 }

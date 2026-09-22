@@ -1195,5 +1195,19 @@
   "translation0920.8c29c2e71f19308c34": "Publisher-declared support for 38 languages and varieties, including Persian, Arabic and Chinese.",
   "sglang.0520.conditions": "Tool parsers and quantization kernels depend on the model architecture. Starting with 0.5.20, CUDA 12 packages and images are no longer published; 0.5.19 is the last release for this path. Previously published images remain available. Responses storage is off by default. Retrieval, previous_response_id and background requests require --enable-response-store; this option cannot be enabled in prefill/decode-disaggregated (PD) deployments.",
   "sglang.0520.responses": "Responses storage is off by default. Retrieval, previous_response_id and background requests require --enable-response-store; this option cannot be enabled in prefill/decode-disaggregated (PD) deployments.",
-  "sglang.0520.storage-limits": "Foreground generation and streaming work without storage. Background requests also require store=true. Enabled storage is process-local, in memory, with no bound or TTL."
+  "sglang.0520.storage-limits": "Foreground generation and streaming work without storage. Background requests also require store=true. Enabled storage is process-local, in memory, with no bound or TTL.",
+  "qwen-image-2-1.models.parameterCounts.0.label": "DiT image generator",
+  "qwen-image-2-1.models.parameterCounts.1.label": "Qwen3-VL encoder",
+  "qwen-image-2-1.models.license.name.value": "Qwen Research License — non-commercial",
+  "qwen-image-2-1.models.license.restrictions.0": "Commercial use requires a separate license from Qwen.",
+  "qwen-image-2-1.modelProfiles.introduction": "Text-guided image generation and editing, with transparent RGBA output and up to 10 reference images.",
+  "qwen-image-2-1.modelProfiles.roleSummary": "Image generation and editing",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.0": "The 7B count covers the image generator; the package also includes a Qwen3-VL-8B encoder and a VAE.",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.1": "Native 2048×2048 output, masked local edits and multi-reference composition.",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.2": "Commercial use requires a separate license from Qwen.",
+  "qwen-image-2-1.modelProfiles.runGuides.0.conditions.0": "QwenImage21Pipeline; install Diffusers from GitHub, with PyTorch 2.4+ and Transformers 5.17+.",
+  "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1": "For lower VRAM use, enable_model_cpu_offload moves model components from RAM to GPU as needed.",
+  "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0": "Image serving uses vllm serve Qwen/Qwen-Image-2.1 --omni and a vLLM-Omni build supporting this model.",
+  "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0": "Use the compatible Comfy-Org/Qwen-Image-2.1 weights and example workflows.",
+  "qwen-image-2-1.artifactListings.scopeNote": "Combined weight files for the image generator, encoder and VAE; optional PE-T2I and PE-I2I prompt rewriters are separate."
 }

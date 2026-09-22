@@ -42305,3 +42305,83 @@ evidence.push({
   "versionRevisionOrCommit": "v0.5.20",
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:qwen-image-2-1-card",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/790c92633540aa0cb11d9abf19eb46d861714758/README.md",
+  "title": "Qwen-Image-2.1 model card",
+  "organization": "Qwen / Alibaba",
+  "publishedOn": "2026-09-20",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "locator": "Introduction; Quick Start; Memory Optimization",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Unified image generation and editing; reference-image limit; installation and CPU offload.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "qwen-image-2.1-2026-09-22/README.md",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "ee79e9dccc074f71fed40bf1cd74f35928b2f4e03a992ec193c437907308289f",
+    "revisionMeaning": "Exact official repository revision; file inventory captured through Hugging Face API."
+  }
+});
+evidence.push({
+  "id": "evidence:qwen-image-2-1-license",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/790c92633540aa0cb11d9abf19eb46d861714758/LICENSE",
+  "title": "Qwen Research License Agreement",
+  "organization": "Qwen / Alibaba",
+  "publishedOn": "2026-09-20",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "locator": "Sections 1(i), 2(a), 2(b)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Non-commercial research/evaluation rights; separate commercial license.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "qwen-image-2.1-2026-09-22/LICENSE",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "8dc973f024ff95966bea25866efa443fd16776dcb1001e681e3d467ea572b28d",
+    "revisionMeaning": "Exact official repository revision; file inventory captured through Hugging Face API."
+  }
+});
+evidence.push({
+  "id": "evidence:qwen-image-2-1-implementation",
+  "url": "https://github.com/QwenLM/Qwen-Image-2.1/blob/fb7ae1d1f9611cd91524d03c53c5246b36ac8577/README.md",
+  "title": "Qwen-Image-2.1 implementation and architecture",
+  "organization": "Qwen / Alibaba",
+  "publishedOn": "2026-09-20",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "fb7ae1d1f9611cd91524d03c53c5246b36ac8577",
+  "locator": "Architecture; Supported Aspect Ratios; Inference with vLLM; Community Support",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Component sizes, RGBA architecture, image resolutions and inference integrations.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "qwen-image-2.1-2026-09-22/github-README.md",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "6aabfdd57e0f597d5485b9ed137dd772508fb353e2bc89db9e8baaf4433732be",
+    "revisionMeaning": "Exact official repository revision; file inventory captured through Hugging Face API."
+  }
+});
+evidence.push({
+  "id": "evidence:qwen-image-2-1-files",
+  "url": "https://huggingface.co/api/models/Qwen/Qwen-Image-2.1/revision/790c92633540aa0cb11d9abf19eb46d861714758?blobs=true",
+  "title": "Qwen-Image-2.1 file inventory",
+  "organization": "Qwen / Alibaba",
+  "publishedOn": "2026-09-20",
+  "accessedOn": "2026-09-22",
+  "versionRevisionOrCommit": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "locator": "sha; siblings[].rfilename; siblings[].size",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Seven BF16 weight shards across transformer, text encoder and VAE; bytes are download sizes.",
+  "presentationNotes": [],
+  "sourceCapture": {
+    "sourceId": "qwen-image-2.1-2026-09-22/api.json",
+    "capturedAt": "2026-09-22",
+    "contentSha256": "e57295fc072b25c3b088ac5a1b473a61c297b24202c5e70516f8419a20e5b285",
+    "revisionMeaning": "Exact official repository revision; file inventory captured through Hugging Face API."
+  }
+});

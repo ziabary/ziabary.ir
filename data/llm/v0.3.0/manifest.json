@@ -1,11 +1,11 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-21",
+  "asOf": "2026-09-22",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
   "sourceArchiveSha256": "843bd11098930f80bb0c8254f8e0cfa77a3438681a5f7aa99e12544a70d7e23a",
-  "baseModels": 123,
+  "baseModels": 124,
   "basePublishedEvaluations": 1209,
   "mergedPublishedEvaluations": 1267,
   "referencePack": {
@@ -33,6 +33,11 @@
   "update20260921": {
     "softwareRelease": "software-release:sglang-v0-5-20",
     "scope": "CUDA 12 release lane and Responses storage; historical results retained",
+    "runtimeTested": false
+  },
+  "update20260922": {
+    "model": "model:qwen-image-2-1",
+    "scope": "Image generation/editing, component sizes, non-commercial license and full BF16 download manifest",
     "runtimeTested": false
   }
 }

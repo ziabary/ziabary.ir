@@ -6446,3 +6446,57 @@ modelProfiles.push({
     "evidence:translation0920-facebook-nllb-200-distilled-600m"
   ]
 });
+modelProfiles.push({
+  "id": "model-profile:qwen-image-2-1",
+  "modelVersionId": "model:qwen-image-2-1",
+  "introduction": "تولید و ویرایش تصویر با متن؛ خروجی شفاف RGBA و استفاده از حداکثر ۱۰ تصویر مرجع.",
+  "roleSummary": "ساخت و ویرایش تصویر",
+  "distinguishingFeatures": [
+    "عدد ۷ میلیارد مربوط به مولد تصویر است؛ رمزگذار Qwen3-VL-8B و VAE نیز در بسته حضور دارند.",
+    "وضوح پایهٔ ۲۰۴۸×۲۰۴۸؛ ویرایش موضعی با ماسک و ترکیب چند تصویر مرجع.",
+    "استفادهٔ تجاری به مجوز جداگانه از Qwen نیاز دارد."
+  ],
+  "officialUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/790c92633540aa0cb11d9abf19eb46d861714758/README.md",
+  "runGuides": [
+    {
+      "label": "Diffusers",
+      "engine": "Diffusers",
+      "href": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/790c92633540aa0cb11d9abf19eb46d861714758/README.md#quick-start",
+      "conditions": [
+        "QwenImage21Pipeline؛ نصب Diffusers از مخزن GitHub، همراه PyTorch 2.4 یا جدیدتر و Transformers 5.17 یا جدیدتر.",
+        "برای کاهش مصرف VRAM، enable_model_cpu_offload اجزای مدل را هنگام نیاز از RAM به GPU منتقل می‌کند."
+      ],
+      "evidenceIds": [
+        "evidence:qwen-image-2-1-card"
+      ]
+    },
+    {
+      "label": "vLLM-Omni",
+      "engine": "vLLM-Omni",
+      "href": "https://github.com/QwenLM/Qwen-Image-2.1/blob/fb7ae1d1f9611cd91524d03c53c5246b36ac8577/README.md#inference-with-vllm",
+      "conditions": [
+        "اجرای تصویر با vllm serve Qwen/Qwen-Image-2.1 --omni؛ به vLLM-Omni دارای پشتیبانی این مدل نیاز دارد."
+      ],
+      "evidenceIds": [
+        "evidence:qwen-image-2-1-implementation"
+      ]
+    },
+    {
+      "label": "ComfyUI",
+      "engine": "ComfyUI",
+      "href": "https://github.com/QwenLM/Qwen-Image-2.1/blob/fb7ae1d1f9611cd91524d03c53c5246b36ac8577/README.md#comfyui",
+      "conditions": [
+        "از گردش‌کار و وزن‌های سازگار Comfy-Org/Qwen-Image-2.1 استفاده کنید."
+      ],
+      "evidenceIds": [
+        "evidence:qwen-image-2-1-implementation"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:qwen-image-2-1-card",
+    "evidence:qwen-image-2-1-implementation",
+    "evidence:qwen-image-2-1-license",
+    "evidence:qwen-image-2-1-files"
+  ]
+});

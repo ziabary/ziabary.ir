@@ -136,6 +136,7 @@ export type ModelKind =
   | 'reranker'
   | 'encoder-classifier'
   | 'vision-language'
+  | 'image-generation'
   | 'other';
 export type Modality = 'text' | 'image' | 'audio' | 'video' | 'embedding' | 'structured-data';
 export type ReviewStatus = 'announced' | 'available' | 'deprecated' | 'withdrawn' | 'needs-review';

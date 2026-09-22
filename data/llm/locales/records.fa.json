@@ -1195,5 +1195,19 @@
   "translation0920.8c29c2e71f19308c34": "پشتیبانی اعلامی از ۳۸ زبان و گونهٔ زبانی، از فارسی و عربی تا چینی.",
   "sglang.0520.conditions": "انتخاب parser ابزار و کرنل کوانت به معماری مدل وابسته است. از 0.5.20 بسته و ایمیج CUDA 12 منتشر نمی‌شود؛ 0.5.19 آخرین نسخهٔ این مسیر است و ایمیج‌های قبلی باقی‌اند. ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
   "sglang.0520.responses": "ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
-  "sglang.0520.storage-limits": "تولید پاسخ عادی و جریان پاسخ بدون فعال‌کردن ذخیره‌سازی ادامه دارد. درخواست پس‌زمینه به store=true هم نیاز دارد. ذخیره‌سازی فعال‌شده فقط در حافظهٔ همان فرایند است و سقف یا زمان انقضا ندارد."
+  "sglang.0520.storage-limits": "تولید پاسخ عادی و جریان پاسخ بدون فعال‌کردن ذخیره‌سازی ادامه دارد. درخواست پس‌زمینه به store=true هم نیاز دارد. ذخیره‌سازی فعال‌شده فقط در حافظهٔ همان فرایند است و سقف یا زمان انقضا ندارد.",
+  "qwen-image-2-1.models.parameterCounts.0.label": "مولد تصویر DiT",
+  "qwen-image-2-1.models.parameterCounts.1.label": "رمزگذار Qwen3-VL",
+  "qwen-image-2-1.models.license.name.value": "Qwen Research License — غیرتجاری",
+  "qwen-image-2-1.models.license.restrictions.0": "استفادهٔ تجاری به مجوز جداگانه از Qwen نیاز دارد.",
+  "qwen-image-2-1.modelProfiles.introduction": "تولید و ویرایش تصویر با متن؛ خروجی شفاف RGBA و استفاده از حداکثر ۱۰ تصویر مرجع.",
+  "qwen-image-2-1.modelProfiles.roleSummary": "ساخت و ویرایش تصویر",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.0": "عدد ۷ میلیارد مربوط به مولد تصویر است؛ رمزگذار Qwen3-VL-8B و VAE نیز در بسته حضور دارند.",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.1": "وضوح پایهٔ ۲۰۴۸×۲۰۴۸؛ ویرایش موضعی با ماسک و ترکیب چند تصویر مرجع.",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.2": "استفادهٔ تجاری به مجوز جداگانه از Qwen نیاز دارد.",
+  "qwen-image-2-1.modelProfiles.runGuides.0.conditions.0": "QwenImage21Pipeline؛ نصب Diffusers از مخزن GitHub، همراه PyTorch 2.4 یا جدیدتر و Transformers 5.17 یا جدیدتر.",
+  "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1": "برای کاهش مصرف VRAM، enable_model_cpu_offload اجزای مدل را هنگام نیاز از RAM به GPU منتقل می‌کند.",
+  "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0": "اجرای تصویر با vllm serve Qwen/Qwen-Image-2.1 --omni؛ به vLLM-Omni دارای پشتیبانی این مدل نیاز دارد.",
+  "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0": "از گردش‌کار و وزن‌های سازگار Comfy-Org/Qwen-Image-2.1 استفاده کنید.",
+  "qwen-image-2-1.artifactListings.scopeNote": "مجموع فایل‌های وزنِ مولد تصویر، رمزگذار و VAE؛ مدل‌های اختیاری بازنویسی پرامپت PE-T2I و PE-I2I در این بسته نیستند."
 }

@@ -1195,5 +1195,19 @@
   "translation0920.8c29c2e71f19308c34": "Soporte declarado para 38 idiomas y variantes, incluidos persa, árabe y chino.",
   "sglang.0520.conditions": "Los parsers de herramientas y los kernels de cuantización dependen de la arquitectura del modelo. Desde 0.5.20 ya no se publican paquetes ni imágenes CUDA 12; 0.5.19 es la última versión para esta vía. Las imágenes publicadas anteriormente siguen disponibles. El almacenamiento de Responses está desactivado por defecto. La recuperación, previous_response_id y las solicitudes en segundo plano requieren --enable-response-store; no puede activarse en despliegues con prefill y decode separados (PD).",
   "sglang.0520.responses": "El almacenamiento de Responses está desactivado por defecto. La recuperación, previous_response_id y las solicitudes en segundo plano requieren --enable-response-store; no puede activarse en despliegues con prefill y decode separados (PD).",
-  "sglang.0520.storage-limits": "La generación normal y el streaming funcionan sin almacenamiento. Las solicitudes en segundo plano también requieren store=true. El almacenamiento activado reside en la memoria del proceso, sin límite ni caducidad."
+  "sglang.0520.storage-limits": "La generación normal y el streaming funcionan sin almacenamiento. Las solicitudes en segundo plano también requieren store=true. El almacenamiento activado reside en la memoria del proceso, sin límite ni caducidad.",
+  "qwen-image-2-1.models.parameterCounts.0.label": "Generador de imágenes DiT",
+  "qwen-image-2-1.models.parameterCounts.1.label": "Codificador Qwen3-VL",
+  "qwen-image-2-1.models.license.name.value": "Qwen Research License — no comercial",
+  "qwen-image-2-1.models.license.restrictions.0": "El uso comercial requiere una licencia independiente de Qwen.",
+  "qwen-image-2-1.modelProfiles.introduction": "Generación y edición de imágenes mediante texto, con salida RGBA transparente y hasta 10 imágenes de referencia.",
+  "qwen-image-2-1.modelProfiles.roleSummary": "Generación y edición de imágenes",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.0": "La cifra de 7B corresponde al generador de imágenes; el paquete incluye además un codificador Qwen3-VL-8B y un VAE.",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.1": "Salida nativa de 2048×2048, edición local con máscaras y composición de varias imágenes de referencia.",
+  "qwen-image-2-1.modelProfiles.distinguishingFeatures.2": "El uso comercial requiere una licencia independiente de Qwen.",
+  "qwen-image-2-1.modelProfiles.runGuides.0.conditions.0": "QwenImage21Pipeline; instalar Diffusers desde GitHub, con PyTorch 2.4+ y Transformers 5.17+.",
+  "qwen-image-2-1.modelProfiles.runGuides.0.conditions.1": "Para reducir el uso de VRAM, enable_model_cpu_offload traslada los componentes de RAM a GPU cuando se necesitan.",
+  "qwen-image-2-1.modelProfiles.runGuides.1.conditions.0": "El servicio de imágenes usa vllm serve Qwen/Qwen-Image-2.1 --omni y una versión de vLLM-Omni compatible con este modelo.",
+  "qwen-image-2-1.modelProfiles.runGuides.2.conditions.0": "Utilice los pesos compatibles de Comfy-Org/Qwen-Image-2.1 y sus flujos de ejemplo.",
+  "qwen-image-2-1.artifactListings.scopeNote": "Archivos de pesos del generador de imágenes, codificador y VAE; los reescritores opcionales PE-T2I y PE-I2I son independientes."
 }

@@ -1353,5 +1353,6 @@
   "start.hardware.memory": "Models on RTX 4090",
   "start.hardware.quantization": "Four-bit quantization",
   "start.software.engine": "Choosing software",
-  "start.software.serving": "From one user to a service"
+  "start.software.serving": "From one user to a service",
+  "model-kind.image-generation": "Image generation and editing"
 }
