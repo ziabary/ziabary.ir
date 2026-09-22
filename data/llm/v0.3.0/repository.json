@@ -52535,6 +52535,95 @@
       ]
     },
     {
+      "id": "software-release:sglang-v0-5-20",
+      "productId": "software-product:sglang",
+      "version": "v0.5.20",
+      "releasedOn": "2026-09-18",
+      "lastReviewedOn": "2026-09-21",
+      "roles": [
+        "inference-engine-library",
+        "api-server"
+      ],
+      "environments": [
+        "server",
+        "container"
+      ],
+      "operatingSystems": [
+        "Linux"
+      ],
+      "hardwareKinds": [
+        "CPU",
+        "GPU",
+        "TPU",
+        "NPU"
+      ],
+      "localOrCloud": [
+        "local"
+      ],
+      "offlineOperation": {
+        "state": "unknown",
+        "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:sglang-v0-5-20-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/sgl-project/sglang/blob/v0.5.20/LICENSE",
+          "evidenceIds": [
+            "evidence:sglang-v0-5-20-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:sglang-v0-5-20-license"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:sglang-v0-5-20-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-release",
+        "evidence:sglang-v0-5-20-cuda12",
+        "evidence:sglang-v0-5-20-responses",
+        "evidence:sglang-v0-5-20-overview",
+        "evidence:sglang-v0-5-20-license"
+      ],
+      "targetScenario": {
+        "state": "known",
+        "value": "سرویس‌دهی مدل زبانی و چندرسانه‌ای روی یک GPU یا خوشه",
+        "evidenceIds": [
+          "evidence:sglang-v0-5-20-overview"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "SGLang runtime؛ backend متناسب با GPU / CPU / TPU",
+        "evidenceIds": [
+          "evidence:sglang-v0-5-20-overview"
+        ]
+      },
+      "selectionCaveat": "انتخاب parser ابزار و کرنل کوانت به معماری مدل وابسته است. از 0.5.20 بسته و ایمیج CUDA 12 منتشر نمی‌شود؛ 0.5.19 آخرین نسخهٔ این مسیر است و ایمیج‌های قبلی باقی‌اند. ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
+      "documentedNeeds": [
+        "high-throughput"
+      ],
+      "documentedBackends": [
+        "SGLang",
+        "PyTorch",
+        "JAX"
+      ]
+    },
+    {
       "id": "software-release:sglang-v0-5-19",
       "productId": "software-product:sglang",
       "version": "v0.5.19",
@@ -56020,6 +56109,58 @@
         "evidence:reference-mlx-release-json",
         "evidence:reference-mlx-license-txt"
       ]
+    },
+    {
+      "id": "software-capability:sglang-v0-5-20-task-generation",
+      "capability": "task-generation",
+      "status": "supported",
+      "provision": "native",
+      "scope": {
+        "softwareReleaseId": "software-release:sglang-v0-5-20",
+        "conditions": []
+      },
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-overview"
+      ]
+    },
+    {
+      "id": "software-capability:sglang-v0-5-20-continuous-batching",
+      "capability": "continuous-batching",
+      "status": "supported",
+      "provision": "native",
+      "scope": {
+        "softwareReleaseId": "software-release:sglang-v0-5-20",
+        "conditions": []
+      },
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-overview"
+      ]
+    },
+    {
+      "id": "software-capability:sglang-v0-5-20-prefix-caching",
+      "capability": "prefix-caching",
+      "status": "supported",
+      "provision": "native",
+      "scope": {
+        "softwareReleaseId": "software-release:sglang-v0-5-20",
+        "conditions": []
+      },
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-overview"
+      ]
+    },
+    {
+      "id": "software-capability:sglang-v0-5-20-structured-output",
+      "capability": "structured-output",
+      "status": "supported",
+      "provision": "native",
+      "scope": {
+        "softwareReleaseId": "software-release:sglang-v0-5-20",
+        "conditions": []
+      },
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-overview"
+      ]
     }
   ],
   "apiCompatibility": [
@@ -56497,6 +56638,30 @@
       ],
       "evidenceIds": [
         "evidence:audit-20260916-lm-studio-openai-api"
+      ]
+    },
+    {
+      "id": "api-compatibility:sglang-v0-5-20-responses",
+      "protocol": "HTTP JSON / OpenAI-style",
+      "endpoint": "/v1/responses",
+      "capability": "responses",
+      "status": "conditional",
+      "provision": "native",
+      "scope": {
+        "softwareReleaseId": "software-release:sglang-v0-5-20",
+        "endpoints": [
+          "/v1/responses",
+          "/v1/responses/{id}"
+        ],
+        "conditions": []
+      },
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-responses",
+        "evidence:sglang-v0-5-20-release"
+      ],
+      "statusReason": "ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
+      "limitations": [
+        "تولید پاسخ عادی و جریان پاسخ بدون فعال‌کردن ذخیره‌سازی ادامه دارد. درخواست پس‌زمینه به store=true هم نیاز دارد. ذخیره‌سازی فعال‌شده فقط در حافظهٔ همان فرایند است و سقف یا زمان انقضا ندارد."
       ]
     }
   ],
@@ -135827,6 +135992,71 @@
       "sourceKind": "primary",
       "scope": "tencent/Hy-MT2-30B-A3B-FP8",
       "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sglang-v0-5-20-release",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.20",
+      "title": "SGLang v0.5.20 — release",
+      "organization": "sgl-project/sglang",
+      "accessedOn": "2026-09-21",
+      "locator": "Highlights: Responses API storage; Dependencies and images",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Highlights: Responses API storage; Dependencies and images",
+      "versionRevisionOrCommit": "v0.5.20",
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sglang-v0-5-20-cuda12",
+      "url": "https://github.com/sgl-project/sglang/pull/38404",
+      "title": "SGLang — retire CUDA 12 packages and images",
+      "organization": "sgl-project/sglang",
+      "accessedOn": "2026-09-21",
+      "locator": "Summary: existing image tags; last CUDA 12 release",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Summary: existing image tags; last CUDA 12 release",
+      "versionRevisionOrCommit": "52c191d",
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sglang-v0-5-20-responses",
+      "url": "https://github.com/sgl-project/sglang/pull/39122",
+      "title": "SGLang — opt-in Responses storage",
+      "organization": "sgl-project/sglang",
+      "accessedOn": "2026-09-21",
+      "locator": "Approach and Migration notice",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Approach and Migration notice",
+      "versionRevisionOrCommit": "4f62ff6",
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sglang-v0-5-20-overview",
+      "url": "https://github.com/sgl-project/sglang/blob/v0.5.20/README.md",
+      "title": "SGLang v0.5.20 — overview",
+      "organization": "sgl-project/sglang",
+      "accessedOn": "2026-09-21",
+      "locator": "About: runtime, model and hardware support",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "About: runtime, model and hardware support",
+      "versionRevisionOrCommit": "v0.5.20",
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sglang-v0-5-20-license",
+      "url": "https://github.com/sgl-project/sglang/blob/v0.5.20/LICENSE",
+      "title": "SGLang v0.5.20 — license",
+      "organization": "sgl-project/sglang",
+      "accessedOn": "2026-09-21",
+      "locator": "Apache License, Version 2.0",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Apache License, Version 2.0",
+      "versionRevisionOrCommit": "v0.5.20",
       "presentationNotes": []
     }
   ],
@@ -221336,7 +221566,7 @@
       ]
     }
   ],
-  "updatedOn": "2026-09-17",
+  "updatedOn": "2026-09-21",
   "referenceComparisons": [
     {
       "id": "comparison:qwen-small-nonthinking",

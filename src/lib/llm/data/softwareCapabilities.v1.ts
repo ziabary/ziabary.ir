@@ -2167,3 +2167,55 @@ softwareCapabilities.push({
     "evidence:reference-mlx-license-txt"
   ]
 });
+softwareCapabilities.push({
+  "id": "software-capability:sglang-v0-5-20-task-generation",
+  "capability": "task-generation",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:sglang-v0-5-20",
+    "conditions": []
+  },
+  "evidenceIds": [
+    "evidence:sglang-v0-5-20-overview"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:sglang-v0-5-20-continuous-batching",
+  "capability": "continuous-batching",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:sglang-v0-5-20",
+    "conditions": []
+  },
+  "evidenceIds": [
+    "evidence:sglang-v0-5-20-overview"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:sglang-v0-5-20-prefix-caching",
+  "capability": "prefix-caching",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:sglang-v0-5-20",
+    "conditions": []
+  },
+  "evidenceIds": [
+    "evidence:sglang-v0-5-20-overview"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:sglang-v0-5-20-structured-output",
+  "capability": "structured-output",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:sglang-v0-5-20",
+    "conditions": []
+  },
+  "evidenceIds": [
+    "evidence:sglang-v0-5-20-overview"
+  ]
+});

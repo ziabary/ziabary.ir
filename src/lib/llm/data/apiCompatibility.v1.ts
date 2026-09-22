@@ -478,3 +478,27 @@ apiCompatibility.push({
     "evidence:audit-20260916-lm-studio-openai-api"
   ]
 });
+apiCompatibility.push({
+  "id": "api-compatibility:sglang-v0-5-20-responses",
+  "protocol": "HTTP JSON / OpenAI-style",
+  "endpoint": "/v1/responses",
+  "capability": "responses",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:sglang-v0-5-20",
+    "endpoints": [
+      "/v1/responses",
+      "/v1/responses/{id}"
+    ],
+    "conditions": []
+  },
+  "evidenceIds": [
+    "evidence:sglang-v0-5-20-responses",
+    "evidence:sglang-v0-5-20-release"
+  ],
+  "statusReason": "ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
+  "limitations": [
+    "تولید پاسخ عادی و جریان پاسخ بدون فعال‌کردن ذخیره‌سازی ادامه دارد. درخواست پس‌زمینه به store=true هم نیاز دارد. ذخیره‌سازی فعال‌شده فقط در حافظهٔ همان فرایند است و سقف یا زمان انقضا ندارد."
+  ]
+});

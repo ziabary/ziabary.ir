@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-20",
+  "asOf": "2026-09-21",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -29,5 +29,10 @@
   "update20260920": {
     "models": 2,
     "coverageAudit": "../coverage-audit-2026-09-20.json"
+  },
+  "update20260921": {
+    "softwareRelease": "software-release:sglang-v0-5-20",
+    "scope": "CUDA 12 release lane and Responses storage; historical results retained",
+    "runtimeTested": false
   }
 }

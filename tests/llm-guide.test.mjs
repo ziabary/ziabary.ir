@@ -35,7 +35,7 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': 123, 'model-suitability': 116, 'hardware-feasibility': 0, 'software-products': 17,
+    'model-catalog': 123, 'model-suitability': 116, 'hardware-feasibility': 0, 'software-products': 18,
     'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 28
   });
 

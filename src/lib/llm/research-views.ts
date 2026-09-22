@@ -282,7 +282,8 @@ function enrichExistingRows(repository: LlmGuideRepository, all: Record<LlmViewI
     return { ...item, sourceIds: [...new Set([...item.sourceIds, ...evidenceIds(extra.sourceIds)])], cells: { ...item.cells, 'vector-memory': extra.denseFloat32VectorGiBPerMillionDocuments !== undefined ? number(extra.denseFloat32VectorGiBPerMillionDocuments, 'GiB', t('research-views.0856', faNumber(extra.denseFloat32VectorGiBPerMillionDocuments))) : textValue(t('research-views.0858')) }, details: { ...item.details, 'vector-scope': textValue(t('research-views.0860')) } };
   });
   rows['software-products'] = all['software-products'].map(item => {
-    const extra = research.software.find(extra => item.label.toLowerCase().includes(extra.name.toLowerCase()) || (extra.name === 'Text Embeddings Inference' && /text.*embeddings/i.test(item.label)));
+    const release = repository.softwareReleases.find(release => release.id === item.id);
+    const extra = research.software.find(extra => extra.versionScope === release?.version && (item.label.toLowerCase().includes(extra.name.toLowerCase()) || (extra.name === 'Text Embeddings Inference' && /text.*embeddings/i.test(item.label))));
     if (!extra) return { ...item, cells: { ...item.cells, 'research-use': item.cells.scenario, 'research-benefit': item.cells['service-features']?.state === 'known' ? item.cells['service-features'] : item.cells['backend-summary'], 'research-condition': textValue(repository.softwareReleases.find(release => release.id === item.id)?.selectionCaveat ?? '') } };
     return { ...item, cells: { ...item.cells, 'research-use': textValue(extra.startingUseFa), 'research-benefit': textValue(extra.usefulFeatureFa), 'research-condition': textValue(extra.selectionConditionFa) }, details: { ...item.details, 'research-version': textValue(extra.versionScope) }, sourceIds: [...new Set([...item.sourceIds, ...evidenceIds(extra.sourceIds)])] };
   });

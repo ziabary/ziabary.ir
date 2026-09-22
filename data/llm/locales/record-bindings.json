@@ -9121,5 +9121,15 @@
     "summary": "translation0920.ec592f7f2f341f6a2b",
     "description": "translation0920.322c595e880b6bd8d1",
     "distinguishingFeature": "translation0920.ec6fc16005c031d6c2"
+  },
+  "repository.softwareReleases/software-release:sglang-v0-5-20": {
+    "offlineOperation/note": "record.0125",
+    "targetScenario/value": "record.0129",
+    "backendSummary/value": "record.0130",
+    "selectionCaveat": "sglang.0520.conditions"
+  },
+  "repository.apiCompatibility/api-compatibility:sglang-v0-5-20-responses": {
+    "statusReason": "sglang.0520.responses",
+    "limitations/0": "sglang.0520.storage-limits"
   }
 }

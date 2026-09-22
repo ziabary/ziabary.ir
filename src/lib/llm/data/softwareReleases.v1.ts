@@ -192,6 +192,95 @@ softwareReleases.push({
   ]
 });
 softwareReleases.push({
+  "id": "software-release:sglang-v0-5-20",
+  "productId": "software-product:sglang",
+  "version": "v0.5.20",
+  "releasedOn": "2026-09-18",
+  "lastReviewedOn": "2026-09-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server",
+    "container"
+  ],
+  "operatingSystems": [
+    "Linux"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU",
+    "TPU",
+    "NPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown",
+    "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/sgl-project/sglang/blob/v0.5.20/LICENSE",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-20-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:sglang-v0-5-20-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:sglang-v0-5-20-release",
+    "evidence:sglang-v0-5-20-cuda12",
+    "evidence:sglang-v0-5-20-responses",
+    "evidence:sglang-v0-5-20-overview",
+    "evidence:sglang-v0-5-20-license"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "سرویس‌دهی مدل زبانی و چندرسانه‌ای روی یک GPU یا خوشه",
+    "evidenceIds": [
+      "evidence:sglang-v0-5-20-overview"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "SGLang runtime؛ backend متناسب با GPU / CPU / TPU",
+    "evidenceIds": [
+      "evidence:sglang-v0-5-20-overview"
+    ]
+  },
+  "selectionCaveat": "انتخاب parser ابزار و کرنل کوانت به معماری مدل وابسته است. از 0.5.20 بسته و ایمیج CUDA 12 منتشر نمی‌شود؛ 0.5.19 آخرین نسخهٔ این مسیر است و ایمیج‌های قبلی باقی‌اند. ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
+  "documentedNeeds": [
+    "high-throughput"
+  ],
+  "documentedBackends": [
+    "SGLang",
+    "PyTorch",
+    "JAX"
+  ]
+});
+softwareReleases.push({
   "id": "software-release:sglang-v0-5-19",
   "productId": "software-product:sglang",
   "version": "v0.5.19",

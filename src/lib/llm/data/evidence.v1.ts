@@ -42240,3 +42240,68 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:sglang-v0-5-20-release",
+  "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.20",
+  "title": "SGLang v0.5.20 — release",
+  "organization": "sgl-project/sglang",
+  "accessedOn": "2026-09-21",
+  "locator": "Highlights: Responses API storage; Dependencies and images",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Highlights: Responses API storage; Dependencies and images",
+  "versionRevisionOrCommit": "v0.5.20",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-20-cuda12",
+  "url": "https://github.com/sgl-project/sglang/pull/38404",
+  "title": "SGLang — retire CUDA 12 packages and images",
+  "organization": "sgl-project/sglang",
+  "accessedOn": "2026-09-21",
+  "locator": "Summary: existing image tags; last CUDA 12 release",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Summary: existing image tags; last CUDA 12 release",
+  "versionRevisionOrCommit": "52c191d",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-20-responses",
+  "url": "https://github.com/sgl-project/sglang/pull/39122",
+  "title": "SGLang — opt-in Responses storage",
+  "organization": "sgl-project/sglang",
+  "accessedOn": "2026-09-21",
+  "locator": "Approach and Migration notice",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Approach and Migration notice",
+  "versionRevisionOrCommit": "4f62ff6",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-20-overview",
+  "url": "https://github.com/sgl-project/sglang/blob/v0.5.20/README.md",
+  "title": "SGLang v0.5.20 — overview",
+  "organization": "sgl-project/sglang",
+  "accessedOn": "2026-09-21",
+  "locator": "About: runtime, model and hardware support",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "About: runtime, model and hardware support",
+  "versionRevisionOrCommit": "v0.5.20",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-20-license",
+  "url": "https://github.com/sgl-project/sglang/blob/v0.5.20/LICENSE",
+  "title": "SGLang v0.5.20 — license",
+  "organization": "sgl-project/sglang",
+  "accessedOn": "2026-09-21",
+  "locator": "Apache License, Version 2.0",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Apache License, Version 2.0",
+  "versionRevisionOrCommit": "v0.5.20",
+  "presentationNotes": []
+});

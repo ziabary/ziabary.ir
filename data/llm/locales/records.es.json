@@ -1192,5 +1192,8 @@
   "translation0920.68485bc91a6ffed552": "Paquete oficial de esta versión; GGUF requiere llama.cpp compatible y STQ, soporte de kernel.",
   "translation0920.e8451fc00c391e4583": "Paquete oficial de esta versión; GGUF requiere llama.cpp compatible y STQ, soporte de kernel.",
   "translation0920.805d616d4b44434843": "Soporte declarado para 38 idiomas y variantes, incluidos persa, árabe y chino.",
-  "translation0920.8c29c2e71f19308c34": "Soporte declarado para 38 idiomas y variantes, incluidos persa, árabe y chino."
+  "translation0920.8c29c2e71f19308c34": "Soporte declarado para 38 idiomas y variantes, incluidos persa, árabe y chino.",
+  "sglang.0520.conditions": "Los parsers de herramientas y los kernels de cuantización dependen de la arquitectura del modelo. Desde 0.5.20 ya no se publican paquetes ni imágenes CUDA 12; 0.5.19 es la última versión para esta vía. Las imágenes publicadas anteriormente siguen disponibles. El almacenamiento de Responses está desactivado por defecto. La recuperación, previous_response_id y las solicitudes en segundo plano requieren --enable-response-store; no puede activarse en despliegues con prefill y decode separados (PD).",
+  "sglang.0520.responses": "El almacenamiento de Responses está desactivado por defecto. La recuperación, previous_response_id y las solicitudes en segundo plano requieren --enable-response-store; no puede activarse en despliegues con prefill y decode separados (PD).",
+  "sglang.0520.storage-limits": "La generación normal y el streaming funcionan sin almacenamiento. Las solicitudes en segundo plano también requieren store=true. El almacenamiento activado reside en la memoria del proceso, sin límite ni caducidad."
 }

@@ -1192,5 +1192,8 @@
   "translation0920.68485bc91a6ffed552": "Official package for this revision; GGUF needs a compatible llama.cpp build and STQ packages require kernel support.",
   "translation0920.e8451fc00c391e4583": "Official package for this revision; GGUF needs a compatible llama.cpp build and STQ packages require kernel support.",
   "translation0920.805d616d4b44434843": "Publisher-declared support for 38 languages and varieties, including Persian, Arabic and Chinese.",
-  "translation0920.8c29c2e71f19308c34": "Publisher-declared support for 38 languages and varieties, including Persian, Arabic and Chinese."
+  "translation0920.8c29c2e71f19308c34": "Publisher-declared support for 38 languages and varieties, including Persian, Arabic and Chinese.",
+  "sglang.0520.conditions": "Tool parsers and quantization kernels depend on the model architecture. Starting with 0.5.20, CUDA 12 packages and images are no longer published; 0.5.19 is the last release for this path. Previously published images remain available. Responses storage is off by default. Retrieval, previous_response_id and background requests require --enable-response-store; this option cannot be enabled in prefill/decode-disaggregated (PD) deployments.",
+  "sglang.0520.responses": "Responses storage is off by default. Retrieval, previous_response_id and background requests require --enable-response-store; this option cannot be enabled in prefill/decode-disaggregated (PD) deployments.",
+  "sglang.0520.storage-limits": "Foreground generation and streaming work without storage. Background requests also require store=true. Enabled storage is process-local, in memory, with no bound or TTL."
 }
