@@ -264,6 +264,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=ajlldg",
+    "destination": "https://ziabary.ir/articles/jev-laya-llm-decision-governance/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=almdnrr",
     "destination": "https://ziabary.ir/articles/legacy-migration-does-not-remove-risk/",
     "status": 301,

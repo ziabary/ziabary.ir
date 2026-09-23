@@ -2517,6 +2517,38 @@
       }
     ]
   },
+  "/images/articles/jev-laya-llm-decision-governance/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2259897,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/0d7f0908d72a0013-320.webp",
+        "bytes": 11968
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/0d7f0908d72a0013-640.webp",
+        "bytes": 32846
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/0d7f0908d72a0013-960.webp",
+        "bytes": 61148
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/0d7f0908d72a0013-1440.webp",
+        "bytes": 114914
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/0d7f0908d72a0013-1672.webp",
+        "bytes": 143740
+      }
+    ]
+  },
   "/images/articles/legacy-migration-does-not-remove-risk/legacy-complexity.png": {
     "width": 788,
     "height": 717,
