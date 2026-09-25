@@ -774,5 +774,13 @@
   "مدل مرجع سه اسلات است؛ بیشتر سرورهای ۸-GPU دو اسلات برای آن مناسب نیستند.": "El perfil de referencia reserva tres ranuras; la mayoría de servidores de ocho GPU de doble ranura no sirven. Compruebe las dimensiones de la variante exacta.",
   "بسته به سازنده ۳ تا ۴ اسلات؛ وجود شیار به معنی تأیید برق، ابعاد یا firmware نیست.": "De tres a cuatro ranuras según fabricante; una ranura física no acredita compatibilidad eléctrica, dimensional ni de firmware.",
   "NVIDIA supported GPU list — GeForce RTX 4090 X": "Lista de GPU compatibles de NVIDIA — GeForce RTX 4090 X",
-  "NVIDIA supported GPU list — GeForce RTX 4090 D": "Lista de GPU compatibles de NVIDIA — GeForce RTX 4090 D"
+  "NVIDIA supported GPU list — GeForce RTX 4090 D": "Lista de GPU compatibles de NVIDIA — GeForce RTX 4090 D",
+  "۳۶ پردازندهٔ NVIDIA Vera": "36 CPU NVIDIA Vera",
+  "GPU: مجموع ۲۰٫۷ ترابایت HBM4 در رک؛ CPU: تا ۵۴ ترابایت LPDDR5X در رک": "GPU: 20,7 TB HBM4 por rack; CPU: hasta 54 TB LPDDR5X por rack",
+  "در این اطلاعیه مشخص نشده": "No especificado en este anuncio",
+  "۱۸ سینی محاسباتی ۱U، هرکدام ۴ GPU و ۲ CPU؛ ۹ سینی NVLink نسل ششم، پهنای باند scale-up برابر ۲۱۶ TB/s": "18 bandejas de cómputo 1U, cada una con 4 GPU y 2 CPU; 9 bandejas NVLink de sexta generación, 216 TB/s de ancho de banda scale-up",
+  "توان رک اعلام نشده؛ ظرفیت ۱٫۸ مگاوات مربوط به هر CDU است، با افزونگی N+1": "Potencia del rack no anunciada; 1,8 MW corresponde a cada CDU, con redundancia N+1",
+  "۷۲ NVIDIA Rubin GPU یکپارچه در یک رک؛ کارت PCIe قابل نصب نیست": "72 GPU NVIDIA Rubin integradas en un rack; no son tarjetas PCIe instalables",
+  "سامانهٔ یکپارچهٔ رک با خنک‌کاری مایع؛ آغاز ارسال توسط سازنده در ۲۳ سپتامبر ۲۰۲۶ اعلام شد.": "Rack integrado con refrigeración líquida; el fabricante anunció envíos el 23 de septiembre de 2026.",
+  "حافظه‌های GPU و CPU تجمیعی رک‌اند؛ VRAM یک GPU یا حافظهٔ قابل‌استفادهٔ یک پردازه نیستند. قیمت، موجودی ایران، ابعاد کامل و توان مصرفی رک تأیید نشده‌اند. سازگاری با سرورهای دیگر استنتاج نمی‌شود.": "Las memorias GPU y CPU son agregados del rack, no VRAM por GPU ni memoria disponible para un proceso. Precio, disponibilidad en Irán, dimensiones completas y potencia no verificados. No se infiere compatibilidad con otros servidores."
 }

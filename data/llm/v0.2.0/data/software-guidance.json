@@ -5,7 +5,7 @@
     "roleFa": "موتور اجرا، مدیریت مدل و API",
     "startingUseFa": "شروع محلی، توسعه و سرویس کوچک",
     "usefulFeatureFa": "دریافت و مدیریت مدل و راه‌اندازی API در یک ابزار",
-    "selectionConditionFa": "اجرای محلی و ابری جدا هستند؛ OLLAMA_NO_CLOUD=1 مسیرهای ابری را غیرفعال می‌کند.",
+    "selectionConditionFa": "اجرای محلی و ابری جدا هستند؛ OLLAMA_NO_CLOUD=1 مسیرهای ابری را غیرفعال می‌کند. یادداشت ۲۵ سپتامبر ۲۰۲۶: Ollama v0.40.0-rc0 پیش‌انتشار/آزمایشی است؛ فقط معماری‌های پشتیبانی‌شدهٔ MLX runner روی Apple Silicon به‌طور پیش‌فرض با MLX اجرا می‌شوند. پوشش مدل‌ها در RC در حال تکمیل است؛ این رفتار به همهٔ مدل‌ها، کوانتیزه‌ها، قابلیت‌ها، دیگر سیستم‌عامل‌ها یا نسخه‌های پایدار قبلی تعمیم داده نشود. این یادداشت جایگزین نسخهٔ پایدار جدول نیست.",
     "versionScope": "v0.34.0",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [
@@ -18,7 +18,7 @@
     "roleFa": "موتور اجرا و سرور سبک",
     "startingUseFa": "GGUF روی CPU، GPU و ترکیب RAM/VRAM",
     "usefulFeatureFa": "کنترل کوانتیزاسیون، تقسیم لایه‌ها و اجرای CPU",
-    "selectionConditionFa": "اجرای جزئی روی CPU با بارگذاری لایه‌ای AirLLM یک روش واحد نیست.",
+    "selectionConditionFa": "نسخهٔ تاریخی v0.4.1؛ برای RPC، major 6 آن را با major 7 در v0.5.0 مخلوط نکنید. اجرای جزئی روی CPU با بارگذاری لایه‌ای AirLLM یک روش واحد نیست.",
     "versionScope": "v0.4.1",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [
@@ -31,7 +31,7 @@
     "roleFa": "موتور سرویس‌دهی",
     "startingUseFa": "API مدل زبانی با درخواست‌های هم‌زمان",
     "usefulFeatureFa": "continuous batching و مدیریت KV cache؛ API سازگار با OpenAI",
-    "selectionConditionFa": "برای GGUF، افزونهٔ vllm-gguf-plugin جدا نصب می‌شود؛ پشتیبانی این قالب آزمایشی است.",
+    "selectionConditionFa": "نسخهٔ تاریخی؛ برای GGUF، افزونهٔ vllm-gguf-plugin جدا نصب می‌شود؛ پشتیبانی این قالب آزمایشی است. GHSA-x6mc-67gf-chw4: آسیب‌پذیری مشروط در 0.24.0 تا پیش از 0.30.0؛ frontend پایتون با sampler ویدئویی Qwen2-VL/Qwen3-VL و ورودی media_io_kwargs.video.max_frames و fps می‌تواند دچار DoS حافظه شود؛ انتخاب sampler از درخواست نیز ممکن است. --limit-mm-per-prompt تعداد اقلام را محدود می‌کند، نه فریم‌ها؛ در نسخه‌های متأثر --api-key به‌تنهایی /tokenize و /invocations را محافظت نمی‌کند. Rust frontend این ورودی را رد می‌کند و فقط از همین مورد متأثر نیست. ارتقا به 0.30.0 رفع اعلام‌شده است؛ احراز هویت در gateway و محدودیت منابع کنترل تکمیلی‌اند. GHSA-85xf-c7hm-whqw: خروجی ساختاریافتهٔ معیوب ممکن است EngineCore مشترک را متوقف کند؛ دامنهٔ اعلام‌شده <0.30.0 است، اما گزارش آزمایش را روی 0.25.1 تأیید می‌کند و حد پایین را مشخص نکرده است. GHSA-5fj9-pfhr-6j48: فقط Rust frontend فعال، پیش از 0.30.0؛ methodهای دلخواه HTTP در برچسب‌های Prometheus رشد حافظه می‌سازند، حتی پاسخ 405 روی /tokenize. GHSA-58v5-2m8f-94pr: از 0.23.0rc2 تا پیش از 0.30.0؛ مدل ویدئوپذیر با media_io_kwargs و انتخاب GLMGA می‌تواند پیش از decode مصرف CPU/حافظه را بالا ببرد؛ با API key فعال به کلید معتبر نیاز دارد. هر سه مورد آخر نیز طبق هشدار در 0.30.0 رفع شده‌اند.",
     "versionScope": "v0.29.0",
     "basis": "editorial synthesis of official documentation; features remain version scoped",
     "sourceIds": [

@@ -42500,3 +42500,209 @@ evidence.push({
     "revisionMeaning": "Dated release page text"
   }
 });
+evidence.push({
+  "id": "evidence:vllm-v0-30-0-release",
+  "url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0",
+  "title": "vLLM v0.30.0 release",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-22",
+  "versionRevisionOrCommit": "v0.30.0",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vLLM v0.30.0 release",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ghsa-x6mc-67gf-chw4",
+  "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-x6mc-67gf-chw4",
+  "title": "GHSA-x6mc-67gf-chw4",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-23",
+  "versionRevisionOrCommit": "GHSA-x6mc-67gf-chw4",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "GHSA-x6mc-67gf-chw4",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ghsa-85xf-c7hm-whqw",
+  "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-85xf-c7hm-whqw",
+  "title": "GHSA-85xf-c7hm-whqw",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-23",
+  "versionRevisionOrCommit": "GHSA-85xf-c7hm-whqw",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "GHSA-85xf-c7hm-whqw",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ghsa-5fj9-pfhr-6j48",
+  "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-5fj9-pfhr-6j48",
+  "title": "GHSA-5fj9-pfhr-6j48",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-23",
+  "versionRevisionOrCommit": "GHSA-5fj9-pfhr-6j48",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "GHSA-5fj9-pfhr-6j48",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ghsa-58v5-2m8f-94pr",
+  "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-58v5-2m8f-94pr",
+  "title": "GHSA-58v5-2m8f-94pr",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-23",
+  "versionRevisionOrCommit": "GHSA-58v5-2m8f-94pr",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "GHSA-58v5-2m8f-94pr",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-5-0-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0",
+  "title": "llama.cpp v0.5.0 release",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-23",
+  "versionRevisionOrCommit": "v0.5.0",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp v0.5.0 release",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-5-0-rpc",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.5.0/ggml/src/ggml-rpc/ggml-rpc.cpp",
+  "title": "RPC HELLO version negotiation",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-23",
+  "versionRevisionOrCommit": "v0.5.0",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "RPC HELLO version negotiation",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-v0-40-0-rc0-release",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc0",
+  "title": "Ollama v0.40.0-rc0 — prerelease",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-25",
+  "versionRevisionOrCommit": "v0.40.0-rc0",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama v0.40.0-rc0 — prerelease",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11160-vulkan",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11160",
+  "title": "llama.cpp b11160 — experimental Vulkan INT8",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-24",
+  "versionRevisionOrCommit": "b11160",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11160 — experimental Vulkan INT8",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-vulkan-27952",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/27952",
+  "title": "Vulkan INT8 cooperative matrix scope",
+  "organization": "Upstream project",
+  "accessedOn": "2026-09-25",
+  "publishedOn": "2026-09-24",
+  "versionRevisionOrCommit": "b11160",
+  "locator": "Release notes / advisory scope / version-pinned code",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Vulkan INT8 cooperative matrix scope",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:vllm-v0-30-0-license",
+  "url": "https://github.com/vllm-project/vllm/blob/v0.30.0/LICENSE",
+  "title": "vllm v0.30.0 license",
+  "organization": "vllm-project",
+  "accessedOn": "2026-09-25",
+  "versionRevisionOrCommit": "v0.30.0",
+  "locator": "LICENSE",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Software license at the pinned release",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-5-0-license",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.5.0/LICENSE",
+  "title": "llama-cpp v0.5.0 license",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-25",
+  "versionRevisionOrCommit": "v0.5.0",
+  "locator": "LICENSE",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Software license at the pinned release",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-4-1-rpc-header",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.4.1/ggml/include/ggml-rpc.h",
+  "title": "llama.cpp v0.4.1 RPC protocol constants",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-25",
+  "versionRevisionOrCommit": "v0.4.1",
+  "locator": "RPC_PROTO_MAJOR_VERSION / RPC_PROTO_MINOR_VERSION",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "RPC protocol constants at the exact tag",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-5-0-rpc-header",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.5.0/ggml/include/ggml-rpc.h",
+  "title": "llama.cpp v0.5.0 RPC protocol constants",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-25",
+  "versionRevisionOrCommit": "v0.5.0",
+  "locator": "RPC_PROTO_MAJOR_VERSION / RPC_PROTO_MINOR_VERSION",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "RPC protocol constants at the exact tag",
+  "limitations": [],
+  "presentationNotes": []
+});

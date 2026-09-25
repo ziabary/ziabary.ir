@@ -21,7 +21,9 @@ export type ServerRecord = {
   model: string;
   status: ServerStatus;
   acceleratorForm: AcceleratorForm;
-  heightU: number;
+  heightU: number | null;
+  /** GPU count in an integrated rack; never PCIe card slots. */
+  integratedGpuCount?: number;
   depthMm: number | null;
   pcieGeneration: 4 | 5 | 6 | null;
   gpuTopology: GpuTopology;
@@ -46,9 +48,9 @@ export type ServerRecord = {
 };
 
 export const serverLastReviewed = {
-  iso: '2026-09-08',
-  fa: '۱۷ شهریور ۱۴۰۵',
-  gregorian: '8 September 2026'
+  iso: '2026-09-25',
+  fa: '۳ مهر ۱۴۰۵',
+  gregorian: '25 September 2026'
 };
 
 export const serverGpuProfiles: ServerGpuProfile[] = [
@@ -69,6 +71,38 @@ export const serverGpuProfiles: ServerGpuProfile[] = [
 ];
 
 export const serverRecords: ServerRecord[] = [
+  {
+  id: 'supermicro-vera-rubin-nvl72',
+  "vendor": "Supermicro",
+  "model": "Vera Rubin NVL72",
+  "status": "current",
+  "acceleratorForm": "integrated",
+  "heightU": null,
+  "depthMm": null,
+  "pcieGeneration": null,
+  "gpuTopology": "baseboard",
+  "integratedGpuCount": 72,
+  "maxDoubleWidthGpus": 0,
+  "maxSingleWidthGpus": null,
+  "maxTripleWidthGpus": 0,
+  "maxGpuPowerW": null,
+  "cardCooling": [],
+  "systemCooling": [
+    "dlc"
+  ],
+  "cpu": "۳۶ پردازندهٔ NVIDIA Vera",
+  "memory": "GPU: مجموع ۲۰٫۷ ترابایت HBM4 در رک؛ CPU: تا ۵۴ ترابایت LPDDR5X در رک",
+  "storage": "در این اطلاعیه مشخص نشده",
+  "expansion": "۱۸ سینی محاسباتی ۱U، هرکدام ۴ GPU و ۲ CPU؛ ۹ سینی NVLink نسل ششم، پهنای باند scale-up برابر ۲۱۶ TB/s",
+  "power": "توان رک اعلام نشده؛ ظرفیت ۱٫۸ مگاوات مربوط به هر CDU است، با افزونگی N+1",
+  "validatedGpuIds": [],
+  "acceleratorSummary": "۷۲ NVIDIA Rubin GPU یکپارچه در یک رک؛ کارت PCIe قابل نصب نیست",
+  "bestFor": "سامانهٔ یکپارچهٔ رک با خنک‌کاری مایع؛ آغاز ارسال توسط سازنده در ۲۳ سپتامبر ۲۰۲۶ اعلام شد.",
+  "caution": "حافظه‌های GPU و CPU تجمیعی رک‌اند؛ VRAM یک GPU یا حافظهٔ قابل‌استفادهٔ یک پردازه نیستند. قیمت، موجودی ایران، ابعاد کامل و توان مصرفی رک تأیید نشده‌اند. سازگاری با سرورهای دیگر استنتاج نمی‌شود.",
+  "sourceLabel": "Supermicro — Vera Rubin NVL72 shipping announcement (2026-09-23)",
+  "sourceUrl": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Now-Shipping-NVIDIA-Vera-Rubin-NVL72-Racks/default.aspx",
+  "sourceTier": "سازنده"
+},
   {
     id: 'dell-poweredge-xe7740', vendor: 'Dell', model: 'PowerEdge XE7740', status: 'current', acceleratorForm: 'pcie-card',
     heightU: 4, depthMm: 886.73, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: 8, maxTripleWidthGpus: 0, maxGpuPowerW: 600,

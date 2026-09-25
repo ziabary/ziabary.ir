@@ -65,7 +65,7 @@
   },
   {
     "path": "data/llm/v0.2.0/data/software-guidance.json",
-    "sha256": "e690f94d3bccfc31323eaf3cb1e4273de63475126285493592ca49fd99c346f6"
+    "sha256": "68045f48c0b818f3c7c2f219d962c771f09b8e3e861ed96c36bf33f6da3483d6"
   },
   {
     "path": "data/llm/v0.2.0/data/source-review-notes.json",

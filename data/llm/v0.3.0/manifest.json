@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-22",
+  "asOf": "2026-09-25",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -45,5 +45,13 @@
     "runtimeTested": false,
     "independentApiEvaluation": true,
     "localCheckpointEvaluation": false
+  },
+  "update20260925": {
+    "softwareReleases": [
+      "software-release:vllm-v0-30-0",
+      "software-release:llama-cpp-v0-5-0"
+    ],
+    "scope": "Security advisories, RPC compatibility and separately scoped prerelease notes; historical measurements retained",
+    "runtimeTested": false
   }
 }

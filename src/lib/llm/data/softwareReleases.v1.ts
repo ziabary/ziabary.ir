@@ -7,7 +7,7 @@ softwareReleases.push({
   "productId": "software-product:ollama",
   "version": "v0.34.0",
   "releasedOn": "2026-09-05",
-  "lastReviewedOn": "2026-09-15",
+  "lastReviewedOn": "2026-09-25",
   "roles": [
     "inference-engine-library",
     "api-server",
@@ -77,7 +77,8 @@ softwareReleases.push({
     "evidence:v03-87a9107234a6210cfe",
     "evidence:v03-e8ee1d44dc907013d4",
     "evidence:v03-ebe487d69f0dc2388f",
-    "evidence:v03-b5ce2f9cd14541cc7d"
+    "evidence:v03-b5ce2f9cd14541cc7d",
+    "evidence:ollama-v0-40-0-rc0-release"
   ],
   "targetScenario": {
     "state": "known",
@@ -104,7 +105,7 @@ softwareReleases.push({
   "productId": "software-product:vllm",
   "version": "v0.29.0",
   "releasedOn": "2026-09-09",
-  "lastReviewedOn": "2026-09-15",
+  "lastReviewedOn": "2026-09-25",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -166,7 +167,11 @@ softwareReleases.push({
     "evidence:v03-a482c73bfb13ead199",
     "evidence:v03-e4af0f3dc91b9ee33e",
     "evidence:v03-74e9b6f3f8607e565c",
-    "evidence:v03-35033e16a1d60d3c67"
+    "evidence:v03-35033e16a1d60d3c67",
+    "evidence:ghsa-x6mc-67gf-chw4",
+    "evidence:ghsa-85xf-c7hm-whqw",
+    "evidence:ghsa-5fj9-pfhr-6j48",
+    "evidence:ghsa-58v5-2m8f-94pr"
   ],
   "targetScenario": {
     "state": "known",
@@ -182,7 +187,7 @@ softwareReleases.push({
       "evidence:software-vllm-overview"
     ]
   },
-  "selectionCaveat": "parser، precision و روش موازی‌سازی باید با مدل و سخت‌افزار سازگار باشند. پشتیبانی TPU/NPU و Apple Silicon به backend یا افزونه و سیستم‌عامل همان مسیر وابسته است؛ بستهٔ GPU لینوکس برای همهٔ این سخت‌افزارها یکسان نیست.",
+  "selectionCaveat": "نسخهٔ تاریخی؛ parser، precision و روش موازی‌سازی باید با مدل و سخت‌افزار سازگار باشند. پشتیبانی TPU/NPU و Apple Silicon به backend یا افزونه و سیستم‌عامل همان مسیر وابسته است؛ بستهٔ GPU لینوکس برای همهٔ این سخت‌افزارها یکسان نیست. GHSA-x6mc-67gf-chw4: آسیب‌پذیری مشروط در 0.24.0 تا پیش از 0.30.0؛ frontend پایتون با sampler ویدئویی Qwen2-VL/Qwen3-VL و ورودی media_io_kwargs.video.max_frames و fps می‌تواند دچار DoS حافظه شود؛ انتخاب sampler از درخواست نیز ممکن است. --limit-mm-per-prompt تعداد اقلام را محدود می‌کند، نه فریم‌ها؛ در نسخه‌های متأثر --api-key به‌تنهایی /tokenize و /invocations را محافظت نمی‌کند. Rust frontend این ورودی را رد می‌کند و فقط از همین مورد متأثر نیست. ارتقا به 0.30.0 رفع اعلام‌شده است؛ احراز هویت در gateway و محدودیت منابع کنترل تکمیلی‌اند. GHSA-85xf-c7hm-whqw: خروجی ساختاریافتهٔ معیوب ممکن است EngineCore مشترک را متوقف کند؛ دامنهٔ اعلام‌شده <0.30.0 است، اما گزارش آزمایش را روی 0.25.1 تأیید می‌کند و حد پایین را مشخص نکرده است. GHSA-5fj9-pfhr-6j48: فقط Rust frontend فعال، پیش از 0.30.0؛ methodهای دلخواه HTTP در برچسب‌های Prometheus رشد حافظه می‌سازند، حتی پاسخ 405 روی /tokenize. GHSA-58v5-2m8f-94pr: از 0.23.0rc2 تا پیش از 0.30.0؛ مدل ویدئوپذیر با media_io_kwargs و انتخاب GLMGA می‌تواند پیش از decode مصرف CPU/حافظه را بالا ببرد؛ با API key فعال به کلید معتبر نیاز دارد. هر سه مورد آخر نیز طبق هشدار در 0.30.0 رفع شده‌اند.",
   "documentedNeeds": [
     "high-throughput"
   ],
@@ -375,7 +380,7 @@ softwareReleases.push({
   "productId": "software-product:llama-cpp",
   "version": "v0.4.1",
   "releasedOn": "2026-09-14",
-  "lastReviewedOn": "2026-09-15",
+  "lastReviewedOn": "2026-09-25",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -435,7 +440,8 @@ softwareReleases.push({
     "evidence:software-llama-cpp-license",
     "evidence:v03-fd884576e2e1de6762",
     "evidence:v03-e1b7613c9eb17ac3b5",
-    "evidence:v03-ec0e3cc03ba69e5003"
+    "evidence:v03-ec0e3cc03ba69e5003",
+    "evidence:llama-cpp-v0-4-1-rpc-header"
   ],
   "targetScenario": {
     "state": "known",
@@ -451,7 +457,7 @@ softwareReleases.push({
       "evidence:software-llama-cpp-overview"
     ]
   },
-  "selectionCaveat": "offload به CPU هزینهٔ انتقال و RAM دارد؛ ابزارها به مدل و قالب وابسته‌اند.",
+  "selectionCaveat": "نسخهٔ تاریخی؛ offload به CPU هزینهٔ انتقال و RAM دارد؛ ابزارها به مدل و قالب وابسته‌اند.",
   "documentedBackends": [
     "ggml",
     "CUDA",
@@ -1596,4 +1602,148 @@ softwareReleases.push({
   "documentedBackends": [
     "MLX"
   ]
+});
+softwareReleases.push({
+  "id": "software-release:vllm-v0-30-0",
+  "productId": "software-product:vllm",
+  "version": "v0.30.0",
+  "releasedOn": "2026-09-22",
+  "lastReviewedOn": "2026-09-25",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:vllm-v0-30-0-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/vllm-project/vllm/blob/v0.30.0/LICENSE",
+      "evidenceIds": [
+        "evidence:vllm-v0-30-0-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:vllm-v0-30-0-license"
+      ]
+    }
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:vllm-v0-30-0-release",
+    "evidence:ghsa-x6mc-67gf-chw4",
+    "evidence:ghsa-85xf-c7hm-whqw",
+    "evidence:ghsa-5fj9-pfhr-6j48",
+    "evidence:ghsa-58v5-2m8f-94pr",
+    "evidence:vllm-v0-30-0-license"
+  ],
+  "selectionCaveat": "پایدار؛ رفع GHSA-x6mc-67gf-chw4، GHSA-85xf-c7hm-whqw، GHSA-5fj9-pfhr-6j48 و GHSA-58v5-2m8f-94pr طبق هشدارهای رسمی. هنگام ارتقا از 0.29: GPTQ activation ordering مبتنی بر g_idx حذف شده و g_idx نادیده گرفته می‌شود؛ checkpoint وابسته به آن نیاز به بازبینی دارد. در vllm serve معمولی، scale-out با --enable-scale-out فعال می‌شود و VLLM_ENABLE_SCALE_OUT_ENDPOINTS حذف شده؛ launch render و --tokens-only استثنا هستند. بستهٔ پیش‌فرض CUDA 13.0 و بسته/ایمیج جداگانهٔ CUDA 12.9 عرضه شده‌اند؛ سازگاری GPU و درایور با بستهٔ انتخابی بررسی شود. نتایج نسخه‌های قبلی به این نسخه منتقل نشده‌اند.",
+  "targetScenario": {
+    "state": "known",
+    "value": "سرویس‌دهی مدل با vLLM؛ نسخهٔ پایدار 0.30.0",
+    "evidenceIds": [
+      "evidence:vllm-v0-30-0-release"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "رفع چهار هشدار امنیتی؛ شرایط ارتقا را بخوانید",
+    "evidenceIds": [
+      "evidence:vllm-v0-30-0-release"
+    ]
+  }
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-v0-5-0",
+  "productId": "software-product:llama-cpp",
+  "version": "v0.5.0",
+  "releasedOn": "2026-09-23",
+  "lastReviewedOn": "2026-09-25",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-5-0-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ggml-org/llama.cpp/blob/v0.5.0/LICENSE",
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-5-0-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-5-0-license"
+      ]
+    }
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:llama-cpp-v0-5-0-release",
+    "evidence:llama-cpp-v0-5-0-rpc",
+    "evidence:llama-cpp-b11160-vulkan",
+    "evidence:llama-cpp-vulkan-27952",
+    "evidence:llama-cpp-v0-5-0-license",
+    "evidence:llama-cpp-v0-5-0-rpc-header"
+  ],
+  "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست.",
+  "targetScenario": {
+    "state": "known",
+    "value": "اجرای مدل و llama-server؛ نسخهٔ پایدار 0.5.0",
+    "evidenceIds": [
+      "evidence:llama-cpp-v0-5-0-release"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "RPC major 7؛ هماهنگی کلاینت و سرورها",
+    "evidenceIds": [
+      "evidence:llama-cpp-v0-5-0-release"
+    ]
+  }
 });

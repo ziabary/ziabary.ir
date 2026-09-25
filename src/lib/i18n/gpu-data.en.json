@@ -774,5 +774,13 @@
   "مدل مرجع سه اسلات است؛ بیشتر سرورهای ۸-GPU دو اسلات برای آن مناسب نیستند.": "The reference profile reserves three slots; most eight-GPU dual-slot servers are unsuitable. Check the dimensions of the exact board variant.",
   "بسته به سازنده ۳ تا ۴ اسلات؛ وجود شیار به معنی تأیید برق، ابعاد یا firmware نیست.": "Three to four slots depending on the manufacturer; a physical slot does not establish power, dimensional or firmware compatibility.",
   "NVIDIA supported GPU list — GeForce RTX 4090 X": "NVIDIA supported GPU list — GeForce RTX 4090 X",
-  "NVIDIA supported GPU list — GeForce RTX 4090 D": "NVIDIA supported GPU list — GeForce RTX 4090 D"
+  "NVIDIA supported GPU list — GeForce RTX 4090 D": "NVIDIA supported GPU list — GeForce RTX 4090 D",
+  "۳۶ پردازندهٔ NVIDIA Vera": "36 NVIDIA Vera CPUs",
+  "GPU: مجموع ۲۰٫۷ ترابایت HBM4 در رک؛ CPU: تا ۵۴ ترابایت LPDDR5X در رک": "GPU: 20.7 TB HBM4 across the rack; CPU: up to 54 TB LPDDR5X across the rack",
+  "در این اطلاعیه مشخص نشده": "Not specified in this announcement",
+  "۱۸ سینی محاسباتی ۱U، هرکدام ۴ GPU و ۲ CPU؛ ۹ سینی NVLink نسل ششم، پهنای باند scale-up برابر ۲۱۶ TB/s": "18 1U compute trays, each with 4 GPUs and 2 CPUs; 9 sixth-generation NVLink switch trays, 216 TB/s scale-up bandwidth",
+  "توان رک اعلام نشده؛ ظرفیت ۱٫۸ مگاوات مربوط به هر CDU است، با افزونگی N+1": "Rack power not announced; 1.8 MW is the capacity of each CDU, with N+1 redundancy",
+  "۷۲ NVIDIA Rubin GPU یکپارچه در یک رک؛ کارت PCIe قابل نصب نیست": "72 integrated NVIDIA Rubin GPUs in one rack; not installable PCIe cards",
+  "سامانهٔ یکپارچهٔ رک با خنک‌کاری مایع؛ آغاز ارسال توسط سازنده در ۲۳ سپتامبر ۲۰۲۶ اعلام شد.": "Integrated liquid-cooled rack; manufacturer announced shipping on 23 September 2026.",
+  "حافظه‌های GPU و CPU تجمیعی رک‌اند؛ VRAM یک GPU یا حافظهٔ قابل‌استفادهٔ یک پردازه نیستند. قیمت، موجودی ایران، ابعاد کامل و توان مصرفی رک تأیید نشده‌اند. سازگاری با سرورهای دیگر استنتاج نمی‌شود.": "GPU and CPU memory figures are rack aggregates, not per-GPU VRAM or memory available to one process. Price, Iranian availability, full dimensions and rack power are unverified. No compatibility with other servers is inferred."
 }

@@ -22,6 +22,16 @@ export function buildWizardResult(repository:LlmGuideRepository,raw:WizardAnswer
   because:[],assumptions:[],answerIds:['phase','audience','users','concurrency','hardware','deployment','owner'],evidenceIds:['https://docs.vllm.ai/en/stable/']
  });
  const target=requestedSpecialty(a);
+ if(candidates.some(c=>c.runtime==='vLLM'))decisions.push({
+  id:'vllm-security-review',area:'deployment',status:'conditional',answerIds:['hardware','deployment'],because:[],assumptions:[],
+  evidenceIds:['https://github.com/vllm-project/vllm/security/advisories/GHSA-x6mc-67gf-chw4','https://github.com/vllm-project/vllm/releases/tag/v0.30.0'],
+  conclusion:L('اگر vLLM نصب‌شده قدیمی‌تر از 0.30.0 است، هشدارهای امنیتی جدول نرم‌افزار را بررسی کنید؛ 0.30.0 چهار مورد ثبت‌شده را رفع می‌کند. مورد Qwen به frontend پایتون، مسیر ویدئو و ورودی media_io_kwargs وابسته است؛ Rust نیز هشدار مستقل metrics دارد. این ویزارد نسخه، frontend و گزینه‌های ورودی سرویس را نمی‌پرسد و آسیب‌پذیری نصب شما را تشخیص نمی‌دهد. پیش از ارتقا، GPTQ g_idx، --enable-scale-out و سازگاری بستهٔ CUDA/درایور را بررسی کنید.','If installed vLLM predates 0.30.0, review the software table security notices; 0.30.0 fixes the four listed issues. The Qwen issue depends on the Python frontend, video sampling and media_io_kwargs input; Rust has a separate metrics advisory. This wizard does not collect installed version, frontend or service input settings and cannot diagnose your deployment. Before upgrading, review GPTQ g_idx, --enable-scale-out and CUDA package/driver compatibility.','Si vLLM instalado es anterior a 0.30.0, revise los avisos de la tabla; 0.30.0 corrige los cuatro casos. El caso Qwen depende del frontend Python, vídeo y media_io_kwargs; Rust tiene otro aviso de métricas. El asistente no pregunta versión, frontend ni entradas del servicio y no diagnostica su instalación. Antes de actualizar, revise GPTQ g_idx, --enable-scale-out y compatibilidad CUDA/controlador.')
+ });
+ if(candidates.some(c=>c.runtime==='llama.cpp'))decisions.push({
+  id:'llama-rpc-version-review',area:'deployment',status:'conditional',answerIds:['hardware','deployment'],because:[],assumptions:[],
+  evidenceIds:['https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0'],
+  conclusion:L('فقط اگر llama.cpp را با RPC بین دستگاه‌ها اجرا می‌کنید: v0.5.0 از پروتکل major 7 استفاده می‌کند و با major 6 در v0.4.1 هماهنگ نیست. major دو سمت باید برابر و minor سرور حداکثر برابر کلاینت باشد؛ build کلاینت و همهٔ سرورها را هماهنگ کنید.','Only if using llama.cpp RPC between machines: v0.5.0 uses protocol major 7, incompatible with v0.4.1 major 6. Both ends need equal major versions and server minor must not exceed client minor; align client and all server builds.','Solo si usa RPC de llama.cpp entre equipos: v0.5.0 usa major 7, incompatible con major 6 de v0.4.1. Ambos extremos necesitan el mismo major y minor del servidor no superior al cliente; alinee todas las compilaciones.')
+ });
  if(target&&a.deployment!=='api'&&!candidates.some(c=>c.specialty)){
   const translationNeedsPair=target==='translation'&&!hasTranslationPair(a);
   decisions.push({id:'specialist-fallback',area:'solution',status:translationNeedsPair?'needs-input':'conditional',answerIds:['writingTask','codingMode','sourceLanguage','outputLanguage','hardware','vram','ram','maxTokens'],evidenceIds:[],because:[],assumptions:[],

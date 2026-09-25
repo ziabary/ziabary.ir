@@ -258,6 +258,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aimad2q",
+    "destination": "https://ziabary.ir/articles/iran-microsoft-ai-diffusion-2026-q2/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aitgw",
     "destination": "https://ziabary.ir/articles/iran-third-generation-warfare/",
     "status": 301,

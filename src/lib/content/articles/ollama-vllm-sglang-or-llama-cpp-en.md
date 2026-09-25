@@ -93,6 +93,8 @@ For an intermittently used local tool, accepting a longer response in exchange f
 
 ### Apple silicon: the MLX LM route
 
+25 September 2026 note: Ollama v0.40.0-rc0 is experimental/prerelease. Only architectures supported by the MLX runner default to MLX on Apple Silicon. RC model coverage is still expanding; do not generalize to all models, quantizations, features, other operating systems or earlier stable releases. [Ollama v0.40.0-rc0](https://github.com/ollama/ollama/releases/tag/v0.40.0-rc0).
+
 For a Mac with Apple silicon, [MLX LM](https://github.com/ml-explore/mlx-lm) supports local generation, prompt caching, quantization and fine-tuning. The choice depends on the model, weight format and available memory. Memory wiring for large models requires macOS 15 or later.
 
 <!-- reference:mac-path:end -->

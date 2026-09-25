@@ -1070,7 +1070,7 @@
     "offlineOperation/note": "record.0125",
     "targetScenario/value": "record.0126",
     "backendSummary/value": "record.0127",
-    "selectionCaveat": "record.0128"
+    "selectionCaveat": "sep25.software-release:vllm-v0-29-0.selectionCaveat"
   },
   "repository.softwareReleases/software-release:sglang-v0-5-19": {
     "offlineOperation/note": "record.0125",
@@ -1082,7 +1082,7 @@
     "offlineOperation/note": "record.0125",
     "targetScenario/value": "record.0132",
     "backendSummary/value": "record.0133",
-    "selectionCaveat": "record.0134"
+    "selectionCaveat": "sep25.software-release:llama-cpp-v0-4-1.selectionCaveat"
   },
   "repository.softwareReleases/software-release:tensorrt-llm-v1-2-1": {
     "offlineOperation/note": "record.0125",
@@ -8581,7 +8581,7 @@
     "roleFa": "record.0890",
     "startingUseFa": "record.0891",
     "usefulFeatureFa": "record.0892",
-    "selectionConditionFa": "record.0893"
+    "selectionConditionFa": "sep25.software-guidance:ollama.selectionConditionFa"
   },
   "research.software-guidance/software-guidance:llama-cpp": {
     "roleFa": "record.0894",
@@ -8593,7 +8593,7 @@
     "roleFa": "record.0898",
     "startingUseFa": "record.0899",
     "usefulFeatureFa": "record.0900",
-    "selectionConditionFa": "record.0901"
+    "selectionConditionFa": "sep25.software-guidance:vllm.selectionConditionFa"
   },
   "research.software-guidance/software-guidance:sglang": {
     "roleFa": "record.0898",
@@ -9180,5 +9180,15 @@
   },
   "repository.publishedEvaluations/published-evaluation:mimo-v2-6-pro-terminal": {
     "limitations/0": "mimo-v2-6-pro.published-evaluation:mimo-v2-6-pro-terminal.limitations.0"
+  },
+  "repository.softwareReleases/software-release:vllm-v0-30-0": {
+    "selectionCaveat": "sep25.software-release:vllm-v0-30-0.selectionCaveat",
+    "targetScenario/value": "sep25.software-release:vllm-v0-30-0.targetScenario.value",
+    "backendSummary/value": "sep25.software-release:vllm-v0-30-0.backendSummary.value"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-v0-5-0": {
+    "selectionCaveat": "sep25.software-release:llama-cpp-v0-5-0.selectionCaveat",
+    "targetScenario/value": "sep25.software-release:llama-cpp-v0-5-0.targetScenario.value",
+    "backendSummary/value": "sep25.software-release:llama-cpp-v0-5-0.backendSummary.value"
   }
 }

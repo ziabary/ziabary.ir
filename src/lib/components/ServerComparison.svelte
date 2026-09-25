@@ -104,6 +104,7 @@
   const selectedProfile = () => serverGpuProfiles.find((profile) => profile.id === selectedProfileId);
 
   function capacity(record: ServerRecord, width: typeof cardWidth | ServerGpuProfile['widthSlots']) {
+    if (record.integratedGpuCount != null) return width === 'any' ? record.integratedGpuCount : 0;
     if (width === 'single' || width === 1) return record.maxSingleWidthGpus ?? record.maxDoubleWidthGpus;
     if (width === 'wide' || width === 3 || width === 4) return record.maxTripleWidthGpus;
     if (width === 'double' || width === 2) return record.maxDoubleWidthGpus;
@@ -218,7 +219,7 @@
       { group: 'سازگاری کارت', label: 'سقف توان هر GPU', value: record.maxGpuPowerW == null ? 'اعلام‌نشده؛ BOM لازم است' : `${numbers.format(record.maxGpuPowerW)} ${t("وات")}` },
       { group: 'سازگاری کارت', label: 'خنک‌کاری کارت', value: record.cardCooling.length ? record.cardCooling.map((item) => cardCoolingLabel[item]).map(t).join(locale === 'fa' ? '، ' : ', ') : 'کارت مستقل قابل نصب نیست' },
       { group: 'سازگاری کارت', label: 'GPUهای نام‌برده در منبع رسمی', value: validatedText(record) },
-      { group: 'مکانیک و مرکز داده', label: 'ارتفاع', value: `${numbers.format(record.heightU)}U` },
+      { group: 'مکانیک و مرکز داده', label: 'ارتفاع', value: format(record.heightU, 'U') },
       { group: 'مکانیک و مرکز داده', label: 'عمق بدنه', value: record.depthMm == null ? 'در صفحهٔ مرجع ثبت نشده' : `${numbers.format(record.depthMm)} ${t("میلی‌متر")}` },
       { group: 'مکانیک و مرکز داده', label: 'خنک‌کاری سامانه', value: record.systemCooling.map((item) => systemCoolingLabel[item]).map(t).join(locale === 'fa' ? '، ' : ', ') },
       { group: 'پلتفرم', label: 'پردازنده', value: record.cpu },
@@ -241,7 +242,7 @@
     if (key === 'capacity') return cardCapacityText(record);
     if (key === 'cardCooling') return record.cardCooling.length ? record.cardCooling.map((item) => cardCoolingLabel[item]).join(' / ') : 'کارت مستقل ندارد';
     if (key === 'gpuPower') return record.maxGpuPowerW == null ? 'نیازمند BOM' : `${numbers.format(record.maxGpuPowerW)} W`;
-    if (key === 'dimensions') return `${numbers.format(record.heightU)}U${record.depthMm == null ? '' : ` · ${numbers.format(record.depthMm)} mm`}`;
+    if (key === 'dimensions') return `${t(format(record.heightU, 'U'))}${record.depthMm == null ? '' : ` · ${numbers.format(record.depthMm)} mm`}`;
     if (key === 'systemCooling') return record.systemCooling.map((item) => t(systemCoolingLabel[item])).join(' / ');
     if (key === 'cpu') return record.cpu;
     if (key === 'memory') return record.memory;
@@ -254,8 +255,8 @@
 
   function csvCell(value: string | number | null | undefined) { return `"${t(value).replaceAll('"', '""')}"`; }
   function exportCsv() {
-    const head = ['سازنده','مدل','وضعیت','نوع','PCIe','توپولوژی','GPU دو اسلات','GPU تک اسلات','GPU سه اسلات','سقف توان هر GPU','خنک‌کاری کارت','ارتفاع U','عمق mm','خنک‌کاری سامانه','CPU','حافظه','ذخیره‌سازی','توسعه','برق','GPUهای تأییدشده','مناسب برای','هشدار','منبع'];
-    const body = visible.map((r) => [r.vendor,r.model,statusLabel[r.status],formLabel[r.acceleratorForm],r.pcieGeneration,topologyLabel[r.gpuTopology],r.maxDoubleWidthGpus,r.maxSingleWidthGpus,r.maxTripleWidthGpus,r.maxGpuPowerW,r.cardCooling.join('|'),r.heightU,r.depthMm,r.systemCooling.join('|'),r.cpu,r.memory,r.storage,r.expansion,r.power,validatedText(r),r.bestFor,r.caution,r.sourceUrl]);
+    const head = ['سازنده','مدل','وضعیت','نوع','PCIe','توپولوژی','GPU دو اسلات','GPU تک اسلات','GPU سه اسلات','GPU یکپارچه','سقف توان هر GPU','خنک‌کاری کارت','ارتفاع U','عمق mm','خنک‌کاری سامانه','CPU','حافظه','ذخیره‌سازی','توسعه','برق','GPUهای تأییدشده','مناسب برای','هشدار','منبع'];
+    const body = visible.map((r) => [r.vendor,r.model,statusLabel[r.status],formLabel[r.acceleratorForm],r.pcieGeneration,topologyLabel[r.gpuTopology],r.maxDoubleWidthGpus,r.maxSingleWidthGpus,r.maxTripleWidthGpus,r.integratedGpuCount ?? null,r.maxGpuPowerW,r.cardCooling.join('|'),r.heightU,r.depthMm,r.systemCooling.join('|'),r.cpu,r.memory,r.storage,r.expansion,r.power,validatedText(r),r.bestFor,r.caution,r.sourceUrl]);
     const content = '\ufeff' + [head, ...body].map((row) => row.map(csvCell).join(',')).join('\n');
     const url = URL.createObjectURL(new Blob([content], { type: 'text/csv;charset=utf-8' }));
     const link = document.createElement('a'); link.href = url; link.download = `gpu-server-reference-${serverLastReviewed.iso}.csv`; link.click(); URL.revokeObjectURL(url);
@@ -275,7 +276,7 @@
       && (!requiredGpuCount || capacity(record, cardWidth) >= requiredGpuCount)
       && (cardCooling === 'any' || record.cardCooling.includes(cardCooling))
       && powerOkay
-      && (!maxHeightU || record.heightU <= maxHeightU)
+      && (!maxHeightU || (record.heightU != null && record.heightU <= maxHeightU))
       && (!maxDepthMm || (record.depthMm != null && record.depthMm <= maxDepthMm))
       && (systemCooling === 'any' || record.systemCooling.includes(systemCooling))
       && (topology === 'any' || record.gpuTopology === topology)
