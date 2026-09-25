@@ -8273,6 +8273,1340 @@
       }
     ]
   },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-38.jpg": {
+    "width": 853,
+    "height": 1280,
+    "originalBytes": 169660,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/d9be9b53d20eb453-320.webp",
+        "bytes": 30060
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/d9be9b53d20eb453-640.webp",
+        "bytes": 96338
+      },
+      {
+        "width": 853,
+        "src": "/images/responsive/d9be9b53d20eb453-853.webp",
+        "bytes": 147642
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-39.jpg": {
+    "width": 853,
+    "height": 1280,
+    "originalBytes": 138672,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/21e146c76c161375-320.webp",
+        "bytes": 24474
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/21e146c76c161375-640.webp",
+        "bytes": 73938
+      },
+      {
+        "width": 853,
+        "src": "/images/responsive/21e146c76c161375-853.webp",
+        "bytes": 114138
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-4.jpg": {
+    "width": 5883,
+    "height": 3402,
+    "originalBytes": 3633932,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e503511af47787bf-320.webp",
+        "bytes": 13220
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e503511af47787bf-640.webp",
+        "bytes": 38170
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e503511af47787bf-960.webp",
+        "bytes": 68676
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/e503511af47787bf-1440.webp",
+        "bytes": 127340
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/e503511af47787bf-1920.webp",
+        "bytes": 209492
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-40.jpg": {
+    "width": 853,
+    "height": 1280,
+    "originalBytes": 114269,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/58cde359864f3647-320.webp",
+        "bytes": 18624
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/58cde359864f3647-640.webp",
+        "bytes": 55796
+      },
+      {
+        "width": 853,
+        "src": "/images/responsive/58cde359864f3647-853.webp",
+        "bytes": 87802
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-41.jpg": {
+    "width": 853,
+    "height": 1280,
+    "originalBytes": 157335,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/005796308f8c00a3-320.webp",
+        "bytes": 27832
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/005796308f8c00a3-640.webp",
+        "bytes": 89820
+      },
+      {
+        "width": 853,
+        "src": "/images/responsive/005796308f8c00a3-853.webp",
+        "bytes": 136974
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-42.jpg": {
+    "width": 1280,
+    "height": 860,
+    "originalBytes": 196482,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e61208774bcb3ddc-320.webp",
+        "bytes": 18744
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e61208774bcb3ddc-640.webp",
+        "bytes": 59166
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e61208774bcb3ddc-960.webp",
+        "bytes": 116756
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/e61208774bcb3ddc-1280.webp",
+        "bytes": 177386
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-43.jpg": {
+    "width": 853,
+    "height": 1280,
+    "originalBytes": 159433,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/3770b83a62857904-320.webp",
+        "bytes": 30390
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/3770b83a62857904-640.webp",
+        "bytes": 90152
+      },
+      {
+        "width": 853,
+        "src": "/images/responsive/3770b83a62857904-853.webp",
+        "bytes": 134504
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-44.jpg": {
+    "width": 1280,
+    "height": 853,
+    "originalBytes": 183359,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/bcb53b5bd8f4336f-320.webp",
+        "bytes": 16828
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/bcb53b5bd8f4336f-640.webp",
+        "bytes": 54090
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/bcb53b5bd8f4336f-960.webp",
+        "bytes": 104136
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/bcb53b5bd8f4336f-1280.webp",
+        "bytes": 161918
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-45.jpg": {
+    "width": 1280,
+    "height": 853,
+    "originalBytes": 191301,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/f40057b05e7d4f2d-320.webp",
+        "bytes": 17968
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/f40057b05e7d4f2d-640.webp",
+        "bytes": 57394
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/f40057b05e7d4f2d-960.webp",
+        "bytes": 112494
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/f40057b05e7d4f2d-1280.webp",
+        "bytes": 169620
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-46.jpg": {
+    "width": 1280,
+    "height": 853,
+    "originalBytes": 179146,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/158933606bcb86d5-320.webp",
+        "bytes": 18422
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/158933606bcb86d5-640.webp",
+        "bytes": 53852
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/158933606bcb86d5-960.webp",
+        "bytes": 98928
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/158933606bcb86d5-1280.webp",
+        "bytes": 147830
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-47.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 3179026,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/1274cd3a40ca7816-320.webp",
+        "bytes": 12746
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/1274cd3a40ca7816-640.webp",
+        "bytes": 37782
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/1274cd3a40ca7816-960.webp",
+        "bytes": 75358
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/1274cd3a40ca7816-1440.webp",
+        "bytes": 165748
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/1274cd3a40ca7816-1920.webp",
+        "bytes": 292572
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-48.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 2941061,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/8dab5087f1c987d4-320.webp",
+        "bytes": 14162
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/8dab5087f1c987d4-640.webp",
+        "bytes": 40706
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/8dab5087f1c987d4-960.webp",
+        "bytes": 75880
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/8dab5087f1c987d4-1440.webp",
+        "bytes": 143474
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/8dab5087f1c987d4-1920.webp",
+        "bytes": 237160
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-49.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 2251856,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/fd0905774419c51a-320.webp",
+        "bytes": 11158
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/fd0905774419c51a-640.webp",
+        "bytes": 36336
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/fd0905774419c51a-960.webp",
+        "bytes": 74668
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/fd0905774419c51a-1440.webp",
+        "bytes": 158906
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/fd0905774419c51a-1920.webp",
+        "bytes": 249924
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-5.jpg": {
+    "width": 5184,
+    "height": 3456,
+    "originalBytes": 5839254,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/6238b0a8aff0eeec-320.webp",
+        "bytes": 12764
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/6238b0a8aff0eeec-640.webp",
+        "bytes": 35160
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/6238b0a8aff0eeec-960.webp",
+        "bytes": 65644
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/6238b0a8aff0eeec-1440.webp",
+        "bytes": 115870
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/6238b0a8aff0eeec-1920.webp",
+        "bytes": 186426
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-50.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 3489957,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/9d6ea277b9153d8e-320.webp",
+        "bytes": 12512
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/9d6ea277b9153d8e-640.webp",
+        "bytes": 38012
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/9d6ea277b9153d8e-960.webp",
+        "bytes": 82958
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/9d6ea277b9153d8e-1440.webp",
+        "bytes": 196876
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/9d6ea277b9153d8e-1920.webp",
+        "bytes": 377074
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-51.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 3267018,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/22cea67056044ee2-320.webp",
+        "bytes": 14320
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/22cea67056044ee2-640.webp",
+        "bytes": 40590
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/22cea67056044ee2-960.webp",
+        "bytes": 76626
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/22cea67056044ee2-1440.webp",
+        "bytes": 151172
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/22cea67056044ee2-1920.webp",
+        "bytes": 267170
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-52.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 3384496,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/d6b8ec99cb7b54ac-320.webp",
+        "bytes": 14108
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/d6b8ec99cb7b54ac-640.webp",
+        "bytes": 41538
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/d6b8ec99cb7b54ac-960.webp",
+        "bytes": 78362
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/d6b8ec99cb7b54ac-1440.webp",
+        "bytes": 159242
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/d6b8ec99cb7b54ac-1920.webp",
+        "bytes": 285272
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-53.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 3193541,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/ecc8a4de6efa992d-320.webp",
+        "bytes": 16232
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/ecc8a4de6efa992d-640.webp",
+        "bytes": 49470
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/ecc8a4de6efa992d-960.webp",
+        "bytes": 96804
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/ecc8a4de6efa992d-1440.webp",
+        "bytes": 203522
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/ecc8a4de6efa992d-1920.webp",
+        "bytes": 343278
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-54.jpg": {
+    "width": 4000,
+    "height": 2252,
+    "originalBytes": 3198955,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/dd30f61144ff5b03-320.webp",
+        "bytes": 16306
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/dd30f61144ff5b03-640.webp",
+        "bytes": 49456
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/dd30f61144ff5b03-960.webp",
+        "bytes": 97118
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/dd30f61144ff5b03-1440.webp",
+        "bytes": 205082
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/dd30f61144ff5b03-1920.webp",
+        "bytes": 337636
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-55.jpg": {
+    "width": 5184,
+    "height": 3456,
+    "originalBytes": 5462217,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/87ee486984e96f59-320.webp",
+        "bytes": 19976
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/87ee486984e96f59-640.webp",
+        "bytes": 54838
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/87ee486984e96f59-960.webp",
+        "bytes": 101338
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/87ee486984e96f59-1440.webp",
+        "bytes": 175362
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/87ee486984e96f59-1920.webp",
+        "bytes": 272744
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-56.jpg": {
+    "width": 1280,
+    "height": 853,
+    "originalBytes": 171035,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/dace81dd39eb5c5b-320.webp",
+        "bytes": 13476
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/dace81dd39eb5c5b-640.webp",
+        "bytes": 37630
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/dace81dd39eb5c5b-960.webp",
+        "bytes": 70330
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/dace81dd39eb5c5b-1280.webp",
+        "bytes": 107432
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-6.jpg": {
+    "width": 5184,
+    "height": 3456,
+    "originalBytes": 6028765,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/7b8366d2b78ca9de-320.webp",
+        "bytes": 10826
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/7b8366d2b78ca9de-640.webp",
+        "bytes": 28294
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/7b8366d2b78ca9de-960.webp",
+        "bytes": 52544
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/7b8366d2b78ca9de-1440.webp",
+        "bytes": 110882
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/7b8366d2b78ca9de-1920.webp",
+        "bytes": 202256
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-7.jpg": {
+    "width": 5184,
+    "height": 3456,
+    "originalBytes": 5526862,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/4a2b77f4fbe46df0-320.webp",
+        "bytes": 11260
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/4a2b77f4fbe46df0-640.webp",
+        "bytes": 28910
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/4a2b77f4fbe46df0-960.webp",
+        "bytes": 49610
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/4a2b77f4fbe46df0-1440.webp",
+        "bytes": 81166
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/4a2b77f4fbe46df0-1920.webp",
+        "bytes": 126040
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-8.jpg": {
+    "width": 5184,
+    "height": 3456,
+    "originalBytes": 6463247,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/d7f1cf2cd5dfd8ab-320.webp",
+        "bytes": 9872
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/d7f1cf2cd5dfd8ab-640.webp",
+        "bytes": 26276
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/d7f1cf2cd5dfd8ab-960.webp",
+        "bytes": 50578
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/d7f1cf2cd5dfd8ab-1440.webp",
+        "bytes": 113828
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/d7f1cf2cd5dfd8ab-1920.webp",
+        "bytes": 232768
+      }
+    ]
+  },
+  "/images/gallery/elecomp-1405/nsr/elecomp-1405-9.jpg": {
+    "width": 5184,
+    "height": 3456,
+    "originalBytes": 6422300,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/4b9e989378fdfa22-320.webp",
+        "bytes": 13476
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/4b9e989378fdfa22-640.webp",
+        "bytes": 37352
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/4b9e989378fdfa22-960.webp",
+        "bytes": 70384
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/4b9e989378fdfa22-1440.webp",
+        "bytes": 126658
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/4b9e989378fdfa22-1920.webp",
+        "bytes": 205866
+      }
+    ]
+  },
+  "/images/gallery/facecup.jpeg": {
+    "width": 1000,
+    "height": 450,
+    "originalBytes": 46767,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/684166835593d847-320.webp",
+        "bytes": 5860
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/684166835593d847-640.webp",
+        "bytes": 20146
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/684166835593d847-960.webp",
+        "bytes": 45482
+      },
+      {
+        "width": 1000,
+        "src": "/images/responsive/684166835593d847-1000.webp",
+        "bytes": 47938
+      }
+    ]
+  },
+  "/images/gallery/filoger-2.jpg": {
+    "width": 1280,
+    "height": 854,
+    "originalBytes": 118523,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/4f21cb73588c6b6d-320.webp",
+        "bytes": 15292
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/4f21cb73588c6b6d-640.webp",
+        "bytes": 37920
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/4f21cb73588c6b6d-960.webp",
+        "bytes": 68660
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/4f21cb73588c6b6d-1280.webp",
+        "bytes": 114004
+      }
+    ]
+  },
+  "/images/gallery/filoger.jpeg": {
+    "width": 1000,
+    "height": 450,
+    "originalBytes": 57568,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/5face37c44af2e81-320.webp",
+        "bytes": 12514
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/5face37c44af2e81-640.webp",
+        "bytes": 37922
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/5face37c44af2e81-960.webp",
+        "bytes": 66384
+      },
+      {
+        "width": 1000,
+        "src": "/images/responsive/5face37c44af2e81-1000.webp",
+        "bytes": 66422
+      }
+    ]
+  },
+  "/images/gallery/foolad-kashan-1.jpg": {
+    "width": 1080,
+    "height": 1080,
+    "originalBytes": 193372,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/49f955d77536a604-320.webp",
+        "bytes": 29950
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/49f955d77536a604-640.webp",
+        "bytes": 94000
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/49f955d77536a604-960.webp",
+        "bytes": 173590
+      },
+      {
+        "width": 1080,
+        "src": "/images/responsive/49f955d77536a604-1080.webp",
+        "bytes": 206524
+      }
+    ]
+  },
+  "/images/gallery/foolad-kashan-2.jpeg": {
+    "width": 1280,
+    "height": 960,
+    "originalBytes": 265308,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/a25a692e017f5901-320.webp",
+        "bytes": 27794
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/a25a692e017f5901-640.webp",
+        "bytes": 98784
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/a25a692e017f5901-960.webp",
+        "bytes": 195702
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/a25a692e017f5901-1280.webp",
+        "bytes": 294594
+      }
+    ]
+  },
+  "/images/gallery/gitex-2025-2.jpeg": {
+    "width": 1020,
+    "height": 768,
+    "originalBytes": 81338,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e8a75f1d1582352a-320.webp",
+        "bytes": 11080
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e8a75f1d1582352a-640.webp",
+        "bytes": 37074
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e8a75f1d1582352a-960.webp",
+        "bytes": 71572
+      },
+      {
+        "width": 1020,
+        "src": "/images/responsive/e8a75f1d1582352a-1020.webp",
+        "bytes": 76526
+      }
+    ]
+  },
+  "/images/gallery/gitex-2025-farjood.jpeg": {
+    "width": 1280,
+    "height": 576,
+    "originalBytes": 94716,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/a99aaa1e877d8fb1-320.webp",
+        "bytes": 13310
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/a99aaa1e877d8fb1-640.webp",
+        "bytes": 35706
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/a99aaa1e877d8fb1-960.webp",
+        "bytes": 63486
+      },
+      {
+        "width": 1280,
+        "src": "/images/responsive/a99aaa1e877d8fb1-1280.webp",
+        "bytes": 91506
+      }
+    ]
+  },
+  "/images/gallery/hoomas.jpg": {
+    "width": 4987,
+    "height": 3325,
+    "originalBytes": 12853174,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e61e5282bf5e0b85-320.webp",
+        "bytes": 13698
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e61e5282bf5e0b85-640.webp",
+        "bytes": 33508
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e61e5282bf5e0b85-960.webp",
+        "bytes": 61310
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/e61e5282bf5e0b85-1440.webp",
+        "bytes": 134060
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/e61e5282bf5e0b85-1920.webp",
+        "bytes": 321228
+      }
+    ]
+  },
+  "/images/gallery/hormozgan-2.jpg": {
+    "width": 768,
+    "height": 1020,
+    "originalBytes": 135455,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/c34b250a1cb2d8b1-320.webp",
+        "bytes": 38756
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/c34b250a1cb2d8b1-640.webp",
+        "bytes": 114776
+      },
+      {
+        "width": 768,
+        "src": "/images/responsive/c34b250a1cb2d8b1-768.webp",
+        "bytes": 147896
+      }
+    ]
+  },
+  "/images/gallery/imidro.jpg": {
+    "width": 4000,
+    "height": 1800,
+    "originalBytes": 1883475,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/9f49ec26c9507f89-320.webp",
+        "bytes": 11226
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/9f49ec26c9507f89-640.webp",
+        "bytes": 31258
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/9f49ec26c9507f89-960.webp",
+        "bytes": 56138
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/9f49ec26c9507f89-1440.webp",
+        "bytes": 98946
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/9f49ec26c9507f89-1920.webp",
+        "bytes": 148286
+      }
+    ]
+  },
+  "/images/gallery/isti-1404.jpeg": {
+    "width": 2000,
+    "height": 900,
+    "originalBytes": 188054,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/24c1942bdef70e6f-320.webp",
+        "bytes": 8014
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/24c1942bdef70e6f-640.webp",
+        "bytes": 24900
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/24c1942bdef70e6f-960.webp",
+        "bytes": 49844
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/24c1942bdef70e6f-1440.webp",
+        "bytes": 98188
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/24c1942bdef70e6f-1920.webp",
+        "bytes": 149032
+      }
+    ]
+  },
+  "/images/gallery/itrc-president.jpg": {
+    "width": 1000,
+    "height": 667,
+    "originalBytes": 98893,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e4f0ffd91348464a-320.webp",
+        "bytes": 15396
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e4f0ffd91348464a-640.webp",
+        "bytes": 46644
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e4f0ffd91348464a-960.webp",
+        "bytes": 81514
+      },
+      {
+        "width": 1000,
+        "src": "/images/responsive/e4f0ffd91348464a-1000.webp",
+        "bytes": 86972
+      }
+    ]
+  },
+  "/images/gallery/jahad-daneshgahi.jpg": {
+    "width": 1024,
+    "height": 682,
+    "originalBytes": 60743,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/b42a27d448a90f4a-320.webp",
+        "bytes": 8936
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/b42a27d448a90f4a-640.webp",
+        "bytes": 21786
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/b42a27d448a90f4a-960.webp",
+        "bytes": 36266
+      },
+      {
+        "width": 1024,
+        "src": "/images/responsive/b42a27d448a90f4a-1024.webp",
+        "bytes": 40796
+      }
+    ]
+  },
+  "/images/gallery/mashhad-hokmrani-1.jpg": {
+    "width": 843,
+    "height": 1500,
+    "originalBytes": 115466,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/58d6c67500e486a3-320.webp",
+        "bytes": 25660
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/58d6c67500e486a3-640.webp",
+        "bytes": 70956
+      },
+      {
+        "width": 843,
+        "src": "/images/responsive/58d6c67500e486a3-843.webp",
+        "bytes": 105854
+      }
+    ]
+  },
+  "/images/gallery/mashhad-hokmrani-2.jpg": {
+    "width": 1200,
+    "height": 800,
+    "originalBytes": 116055,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/dafbb526f9712ee3-320.webp",
+        "bytes": 18026
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/dafbb526f9712ee3-640.webp",
+        "bytes": 49498
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/dafbb526f9712ee3-960.webp",
+        "bytes": 85254
+      },
+      {
+        "width": 1200,
+        "src": "/images/responsive/dafbb526f9712ee3-1200.webp",
+        "bytes": 107678
+      }
+    ]
+  },
+  "/images/gallery/pishgaman2.webp": {
+    "width": 1024,
+    "height": 628,
+    "originalBytes": 73284,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/92d25ce3833b06a4-320.webp",
+        "bytes": 17538
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/92d25ce3833b06a4-640.webp",
+        "bytes": 50162
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/92d25ce3833b06a4-960.webp",
+        "bytes": 88762
+      },
+      {
+        "width": 1024,
+        "src": "/images/responsive/92d25ce3833b06a4-1024.webp",
+        "bytes": 81718
+      }
+    ]
+  },
+  "/images/gallery/sabanoor-1.jpg": {
+    "width": 1020,
+    "height": 768,
+    "originalBytes": 140217,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/0d6c53f3b3d670a8-320.webp",
+        "bytes": 23374
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/0d6c53f3b3d670a8-640.webp",
+        "bytes": 75698
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/0d6c53f3b3d670a8-960.webp",
+        "bytes": 144776
+      },
+      {
+        "width": 1020,
+        "src": "/images/responsive/0d6c53f3b3d670a8-1020.webp",
+        "bytes": 151740
+      }
+    ]
+  },
+  "/images/gallery/sabanoor-2.jpg": {
+    "width": 1020,
+    "height": 768,
+    "originalBytes": 157174,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/d9326a89897dd2dd-320.webp",
+        "bytes": 26712
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/d9326a89897dd2dd-640.webp",
+        "bytes": 91912
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/d9326a89897dd2dd-960.webp",
+        "bytes": 165292
+      },
+      {
+        "width": 1020,
+        "src": "/images/responsive/d9326a89897dd2dd-1020.webp",
+        "bytes": 175796
+      }
+    ]
+  },
+  "/images/gallery/sabanoor-3.jpg": {
+    "width": 1020,
+    "height": 768,
+    "originalBytes": 85479,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/691600be29666e19-320.webp",
+        "bytes": 14404
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/691600be29666e19-640.webp",
+        "bytes": 42302
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/691600be29666e19-960.webp",
+        "bytes": 73310
+      },
+      {
+        "width": 1020,
+        "src": "/images/responsive/691600be29666e19-1020.webp",
+        "bytes": 78570
+      }
+    ]
+  },
+  "/images/gallery/sabanoor-4.jpeg": {
+    "width": 1020,
+    "height": 768,
+    "originalBytes": 109033,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/eb855ee515f765d9-320.webp",
+        "bytes": 18310
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/eb855ee515f765d9-640.webp",
+        "bytes": 56326
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/eb855ee515f765d9-960.webp",
+        "bytes": 104750
+      },
+      {
+        "width": 1020,
+        "src": "/images/responsive/eb855ee515f765d9-1020.webp",
+        "bytes": 109202
+      }
+    ]
+  },
+  "/images/gallery/vision-2026-cover.webp": {
+    "width": 1600,
+    "height": 1067,
+    "originalBytes": 101248,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/c6766dec70a092c4-320.webp",
+        "bytes": 15322
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/c6766dec70a092c4-640.webp",
+        "bytes": 37782
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/c6766dec70a092c4-960.webp",
+        "bytes": 60768
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/c6766dec70a092c4-1440.webp",
+        "bytes": 97944
+      },
+      {
+        "width": 1600,
+        "src": "/images/responsive/c6766dec70a092c4-1600.webp",
+        "bytes": 105632
+      }
+    ]
+  },
+  "/images/gallery/vision-2026.webp": {
+    "width": 1600,
+    "height": 1067,
+    "originalBytes": 54488,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/78d0e145045a5940-320.webp",
+        "bytes": 7736
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/78d0e145045a5940-640.webp",
+        "bytes": 18670
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/78d0e145045a5940-960.webp",
+        "bytes": 30542
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/78d0e145045a5940-1440.webp",
+        "bytes": 50460
+      },
+      {
+        "width": 1600,
+        "src": "/images/responsive/78d0e145045a5940-1600.webp",
+        "bytes": 55970
+      }
+    ]
+  },
   "/images/guides/ai-operator.webp": {
     "width": 1600,
     "height": 900,
@@ -10023,6 +11357,134 @@
       }
     ]
   },
+  "/slides/ai-4-managers/cover-1.jpg": {
+    "width": 1899,
+    "height": 1070,
+    "originalBytes": 708909,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/06db4abf01821342-320.webp",
+        "bytes": 20860
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/06db4abf01821342-640.webp",
+        "bytes": 72356
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/06db4abf01821342-960.webp",
+        "bytes": 148334
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/06db4abf01821342-1440.webp",
+        "bytes": 289828
+      },
+      {
+        "width": 1899,
+        "src": "/images/responsive/06db4abf01821342-1899.webp",
+        "bytes": 433506
+      }
+    ]
+  },
+  "/slides/ai-4-managers/cover-3.jpg": {
+    "width": 1799,
+    "height": 1013,
+    "originalBytes": 576209,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/e9951996bad62c62-320.webp",
+        "bytes": 22456
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/e9951996bad62c62-640.webp",
+        "bytes": 70866
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/e9951996bad62c62-960.webp",
+        "bytes": 137380
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/e9951996bad62c62-1440.webp",
+        "bytes": 250716
+      },
+      {
+        "width": 1799,
+        "src": "/images/responsive/e9951996bad62c62-1799.webp",
+        "bytes": 343116
+      }
+    ]
+  },
+  "/slides/ai-4-managers/cover-4.jpg": {
+    "width": 1901,
+    "height": 1068,
+    "originalBytes": 565565,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/0da141bd13850179-320.webp",
+        "bytes": 18746
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/0da141bd13850179-640.webp",
+        "bytes": 59880
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/0da141bd13850179-960.webp",
+        "bytes": 113306
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/0da141bd13850179-1440.webp",
+        "bytes": 220078
+      },
+      {
+        "width": 1901,
+        "src": "/images/responsive/0da141bd13850179-1901.webp",
+        "bytes": 333522
+      }
+    ]
+  },
+  "/slides/ai-act/cover.png": {
+    "width": 1900,
+    "height": 1072,
+    "originalBytes": 1563111,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/9cfb9eb601ae5e37-320.webp",
+        "bytes": 11084
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/9cfb9eb601ae5e37-640.webp",
+        "bytes": 28718
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/9cfb9eb601ae5e37-960.webp",
+        "bytes": 48132
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/9cfb9eb601ae5e37-1440.webp",
+        "bytes": 80134
+      },
+      {
+        "width": 1900,
+        "src": "/images/responsive/9cfb9eb601ae5e37-1900.webp",
+        "bytes": 122438
+      }
+    ]
+  },
   "/slides/behind-ai-dba/cover.jpg": {
     "width": 1775,
     "height": 995,
@@ -10052,6 +11514,188 @@
         "width": 1775,
         "src": "/images/responsive/52d74ab1b634a9db-1775.webp",
         "bytes": 228650
+      }
+    ]
+  },
+  "/slides/data-governance/cover-bonyad.jpg": {
+    "width": 1767,
+    "height": 993,
+    "originalBytes": 233031,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/6198df98b8f625c8-320.webp",
+        "bytes": 11142
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/6198df98b8f625c8-640.webp",
+        "bytes": 28026
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/6198df98b8f625c8-960.webp",
+        "bytes": 46022
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/6198df98b8f625c8-1440.webp",
+        "bytes": 74486
+      },
+      {
+        "width": 1767,
+        "src": "/images/responsive/6198df98b8f625c8-1767.webp",
+        "bytes": 97554
+      }
+    ]
+  },
+  "/slides/data-governance/cover-pardis.jpg": {
+    "width": 1341,
+    "height": 754,
+    "originalBytes": 201125,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/d918d5892c30f879-320.webp",
+        "bytes": 12870
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/d918d5892c30f879-640.webp",
+        "bytes": 35090
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/d918d5892c30f879-960.webp",
+        "bytes": 60082
+      },
+      {
+        "width": 1341,
+        "src": "/images/responsive/d918d5892c30f879-1341.webp",
+        "bytes": 97630
+      }
+    ]
+  },
+  "/slides/enterprise-ai-governance-dba/cover.jpg": {
+    "width": 2331,
+    "height": 1289,
+    "originalBytes": 510185,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/53916a4ca5924e2b-320.webp",
+        "bytes": 13432
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/53916a4ca5924e2b-640.webp",
+        "bytes": 40822
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/53916a4ca5924e2b-960.webp",
+        "bytes": 76624
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/53916a4ca5924e2b-1440.webp",
+        "bytes": 128590
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/53916a4ca5924e2b-1920.webp",
+        "bytes": 182532
+      }
+    ]
+  },
+  "/slides/facecup/cover.png": {
+    "width": 2072,
+    "height": 1166,
+    "originalBytes": 3736024,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/cbe84a855a2edbe2-320.webp",
+        "bytes": 20852
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/cbe84a855a2edbe2-640.webp",
+        "bytes": 65136
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/cbe84a855a2edbe2-960.webp",
+        "bytes": 119336
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/cbe84a855a2edbe2-1440.webp",
+        "bytes": 218226
+      },
+      {
+        "width": 1920,
+        "src": "/images/responsive/cbe84a855a2edbe2-1920.webp",
+        "bytes": 323544
+      }
+    ]
+  },
+  "/slides/llm-persian-culture/cover.png": {
+    "width": 1338,
+    "height": 840,
+    "originalBytes": 2736628,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/4abd98a4017c72b6-320.webp",
+        "bytes": 29544
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/4abd98a4017c72b6-640.webp",
+        "bytes": 130894
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/4abd98a4017c72b6-960.webp",
+        "bytes": 279168
+      },
+      {
+        "width": 1338,
+        "src": "/images/responsive/4abd98a4017c72b6-1338.webp",
+        "bytes": 542824
+      }
+    ]
+  },
+  "/slides/nlp4eas/cover.jpg": {
+    "width": 1878,
+    "height": 1055,
+    "originalBytes": 274331,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/2845779aa8888a69-320.webp",
+        "bytes": 12790
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/2845779aa8888a69-640.webp",
+        "bytes": 31770
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/2845779aa8888a69-960.webp",
+        "bytes": 52330
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/2845779aa8888a69-1440.webp",
+        "bytes": 84904
+      },
+      {
+        "width": 1878,
+        "src": "/images/responsive/2845779aa8888a69-1878.webp",
+        "bytes": 118026
       }
     ]
   }
