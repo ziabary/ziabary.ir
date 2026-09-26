@@ -31,6 +31,38 @@
       }
     ]
   },
+  "/images/articles/ai-contract-deliverables/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2039394,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/6b27759b0a099cb8-320.webp",
+        "bytes": 14560
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/6b27759b0a099cb8-640.webp",
+        "bytes": 45856
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/6b27759b0a099cb8-960.webp",
+        "bytes": 89464
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/6b27759b0a099cb8-1440.webp",
+        "bytes": 166450
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/6b27759b0a099cb8-1672.webp",
+        "bytes": 204098
+      }
+    ]
+  },
   "/images/articles/ai-cosmetic-surgery-or-chemotherapy/cover.webp": {
     "width": 1600,
     "height": 900,

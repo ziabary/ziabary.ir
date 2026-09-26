@@ -85,7 +85,7 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
   const taskEvidence=repository.publishedEvaluations.filter(e=>e.modelVersionId===model.id&&e.applicationIds.includes(application)&&Number.isFinite(e.value));
   const languageEvidence=languages.map(lang=>modelLanguageEvidence(repository,model,lang,application));
   const language=languageEvidence.length?languageEvidence.join(' / '):'not-recorded';
-  const license=wizardLicense(model,locale),estimated=kind?undefined:estimate?.(model,a);
+  const license=wizardLicense(model,locale),estimated=kind||model.dependency?undefined:estimate?.(model,a);
   // The calculator's Q4 GGUF estimate must never be presented as a native vLLM estimate.
   const memory=artifact?.format.toLowerCase()==='gguf'&&estimated&&weightGiB&&Math.abs(estimated.weightGiB-weightGiB)/weightGiB<0.01?estimated:undefined;
   const runtimeReason=!isLocal(a)||!execution.professional||!runtime?'':execution.cpu
@@ -95,10 +95,11 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
    :execution.nativeTooLarge?L('وزن‌های نسخهٔ بررسی‌شده برای vLLM در حافظهٔ کارت فعلی جا نمی‌گیرند؛ برای شروع با همین کارت، نسخهٔ کم‌حجم GGUF را انتخاب کرده‌ایم.','The reviewed native vLLM weights exceed this GPU’s memory; this pilot uses a smaller GGUF package.','Los pesos nativos revisados para vLLM superan la memoria de esta GPU; el piloto usa un paquete GGUF menor.')
    :L('برای این مدل، اجرای نسخهٔ بررسی‌شده با vLLM در منابع ما ثبت نشده است؛ نرم‌افزار پیشنهادی بر اساس راهنمای همین مدل انتخاب شده است.','The reviewed sources do not document vLLM for this package; this runtime follows the model’s recorded guide.','Las fuentes revisadas no documentan vLLM para este paquete; el motor sigue la guía registrada del modelo.');
   const outside=!!positive(a.concurrency)&&Number(a.concurrency)>128||input+output>2**21;
-  const memoryStatus=memory?'estimated':outside?'outside-calculator':!input||!output||!positive(a.concurrency)||a.loadDefinition==='queued'?'needs-input':'unsupported';
+  const memoryStatus=model.dependency?'unsupported':memory?'estimated':outside?'outside-calculator':!input||!output||!positive(a.concurrency)||a.loadDefinition==='queued'?'needs-input':'unsupported';
   const reasons:string[]=[],conditions:string[]=[],ids:string[]=['task','sourceLanguage','outputLanguage'];
   const exclude=(why:string,...fields:string[])=>{reasons.push(why);ids.push(...fields);};
   if(artifact?.runtimeEngines&&/fp8|gptq/i.test(artifact.precision??''))conditions.push(L('این بستهٔ کم‌حجم به پشتیبانی همان قالب در سخت‌افزار و نسخهٔ موتور نیاز دارد؛ مصرف کامل حافظه هنوز سنجیده نشده است.','This quantized package needs hardware and engine support for its format; full memory remains unmeasured.','Este paquete cuantizado requiere soporte del formato en hardware y motor; no se ha medido toda la memoria.'));
+  if(model.dependency)exclude(L('مکمل وابسته است و به‌تنهایی پاسخ نمی‌دهد؛ حافظهٔ ترکیب نامعلوم است.','Dependent drafter: cannot answer independently; combined memory is unknown.','Complemento dependiente: no responde por sí solo; memoria conjunta desconocida.'));
   if(model.researchOnly&&a.licenseUse!=='research')exclude(L('این نسخه مرجع پژوهشی است و برای استقرار تجاری پیشنهاد نمی‌شود.','This is a research-only reference, not a commercial deployment candidate.','Referencia de investigación, no candidata a despliegue comercial.'),'licenseUse');
   if(model.inputTokenLimit?.state==='known'&&input>model.inputTokenLimit.value)exclude(L('ورودی از سقف مستند این مدل بیشتر است؛ اندازهٔ هر بخش را پیش از انتخاب کاهش دهید.','Input exceeds this model’s documented limit; reduce segment size before selection.','La entrada supera el límite documentado; reduzca cada segmento antes de elegir.'),'maxTokens','inputTokens');
   if(target==='translation'&&!hasTranslationPair(a))conditions.push(L('تا مشخص‌شدن زبان‌های مبدأ و مقصد، این پیشنهاد موقت است.','This recommendation is provisional until source and target languages are specified.','La propuesta es provisional hasta concretar origen y destino.'));
@@ -171,7 +172,7 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
 }
 export function selectWizardCandidates(reviews:CandidateReview[],locale:LlmLocale):CandidateReview[]{
  const L=(fa:string,en:string,es:string)=>localized([fa,en,es],locale),n=new Intl.NumberFormat(locale==='fa'?'fa-IR':locale,{maximumFractionDigits:1});
- const eligible=reviews.filter(c=>c.status!=='excluded').sort((a,b)=>b.score-a.score||a.model.id.localeCompare(b.model.id));
+ const eligible=reviews.filter(c=>c.status!=='excluded'&&!c.model.dependency).sort((a,b)=>b.score-a.score||a.model.id.localeCompare(b.model.id));
  if(!eligible.length)return [];
  const specialists=eligible.filter(c=>c.specialty);
  const pool=specialists.length?specialists:eligible;

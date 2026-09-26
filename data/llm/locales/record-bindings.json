@@ -9190,5 +9190,31 @@
     "selectionCaveat": "sep25.software-release:llama-cpp-v0-5-0.selectionCaveat",
     "targetScenario/value": "sep25.software-release:llama-cpp-v0-5-0.targetScenario.value",
     "backendSummary/value": "sep25.software-release:llama-cpp-v0-5-0.backendSummary.value"
+  },
+  "repository.models/model:liquidai-lfm2-5-vl-3b": {
+    "license/restrictions/0": "sep26.model:liquidai-lfm2-5-vl-3b.license.restrictions.0"
+  },
+  "repository.modelProfiles/model-profile:liquidai-lfm2-5-vl-3b": {
+    "introduction": "sep26.model-profile:liquidai-lfm2-5-vl-3b.introduction",
+    "roleSummary": "sep26.model-profile:liquidai-lfm2-5-vl-3b.roleSummary"
+  },
+  "repository.models/model:liquidai-lfm2-5-vl-3b-dspark": {
+    "license/restrictions/0": "sep26.model:liquidai-lfm2-5-vl-3b-dspark.license.restrictions.0"
+  },
+  "repository.modelProfiles/model-profile:liquidai-lfm2-5-vl-3b-dspark": {
+    "runGuides/0/conditions/0": "sep26.model-profile:liquidai-lfm2-5-vl-3b-dspark.runGuides.0.conditions.0",
+    "runGuides/1/conditions/0": "sep26.model-profile:liquidai-lfm2-5-vl-3b-dspark.runGuides.1.conditions.0",
+    "runGuides/2/conditions/0": "sep26.model-profile:liquidai-lfm2-5-vl-3b-dspark.runGuides.2.conditions.0",
+    "introduction": "sep26.model-profile:liquidai-lfm2-5-vl-3b-dspark.introduction",
+    "roleSummary": "sep26.model-profile:liquidai-lfm2-5-vl-3b-dspark.roleSummary"
+  },
+  "repository.artifactListings/artifact-listing:liquidai-lfm2-5-vl-3b": {
+    "sizeDescription": "sep26.artifact-listing:liquidai-lfm2-5-vl-3b.sizeDescription"
+  },
+  "repository.artifactListings/artifact-listing:liquidai-lfm2-5-vl-3b-dspark": {
+    "sizeDescription": "sep26.artifact-listing:liquidai-lfm2-5-vl-3b-dspark.sizeDescription"
+  },
+  "repository.artifactListings/artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf": {
+    "sizeDescription": "sep26.artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf.sizeDescription"
   }
 }

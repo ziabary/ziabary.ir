@@ -1,0 +1,38 @@
+{
+  "reviewedOn": "2026-09-26",
+  "scope": "local only; no deployment or inference/retrieval benchmark",
+  "commands": {
+    "npm run generate:llm": "passed — 29 generated modules",
+    "npm run verify:llm": "passed — types, references, source hashes and 3 locales",
+    "npm run check": "passed — 0 errors, 0 warnings",
+    "npm test": "passed — 261 tests; 0 failures, skipped or cancelled",
+    "npm run build": "passed — static build and sitemap validation"
+  },
+  "build": {
+    "indexablePages": 206,
+    "htmlPages": 235,
+    "structuredDataBlocks": 235,
+    "shortLinkDestinations": 264
+  },
+  "browser": {
+    "editions": [
+      "fa",
+      "en",
+      "es"
+    ],
+    "modelProfiles": 6,
+    "relativePerformanceRowsPerEdition": 18,
+    "gpuPrecisionNoteAllEditions": true,
+    "scopedPrereleaseAllEditions": true,
+    "mobileViewportWidth": 390,
+    "mobileDocumentWidth": 390,
+    "runtimeExceptions": 0,
+    "draftNoindex": true,
+    "draftAbsentSitemap": true
+  },
+  "sourceCaptureHashes": "all matched",
+  "livePages": "all six requests returned HTTP 504; see source archive live-pages.json",
+  "hardwareChanges": false,
+  "experiments": "اجرا نشده",
+  "deployed": false
+}

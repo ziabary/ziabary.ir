@@ -1680,7 +1680,7 @@ softwareReleases.push({
   "productId": "software-product:llama-cpp",
   "version": "v0.5.0",
   "releasedOn": "2026-09-23",
-  "lastReviewedOn": "2026-09-25",
+  "lastReviewedOn": "2026-09-26",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -1729,9 +1729,11 @@ softwareReleases.push({
     "evidence:llama-cpp-b11160-vulkan",
     "evidence:llama-cpp-vulkan-27952",
     "evidence:llama-cpp-v0-5-0-license",
-    "evidence:llama-cpp-v0-5-0-rpc-header"
+    "evidence:llama-cpp-v0-5-0-rpc-header",
+    "evidence:sep26-release-json",
+    "evidence:sep26-commit-json"
   ],
-  "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست.",
+  "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست.",
   "targetScenario": {
     "state": "known",
     "value": "اجرای مدل و llama-server؛ نسخهٔ پایدار 0.5.0",

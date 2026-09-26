@@ -992,5 +992,17 @@
     "accessedOn": "2026-09-15",
     "documentSha256": "acc6bb7b2d1e7bda87006987f1630867b8f0021724976a9ce5151614e03ed1d2",
     "documentRevision": "v0.29.0"
+  },
+  {
+    "id": "liquid-dspark-sep26",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+    "title": "LFM2.5-VL-3B-DSpark: publisher relative end-to-end speedup",
+    "publisher": "LiquidAI",
+    "kind": "publisher-runtime-report",
+    "accessedOn": "2026-09-26",
+    "publishedOn": "2026-09-24",
+    "documentSha256": "e2506a13bb6712d7b6354bfd957210b3b873f5e58bd6c365fae0cf5e4704b983",
+    "documentRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+    "locator": "Measured inference speedup; end-to-end column only"
   }
 ]

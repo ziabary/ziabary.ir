@@ -179,22 +179,23 @@ function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
     const active = formatParameter(model.activeParametersB);
     const size = modelParameterSummary(model);
     const evaluations = reportedResults(repository, model.id);
+    const dependency = model.dependency ? t('sep26.dependency', repository.models.find(item => item.id === model.dependency?.targetModelId)?.exactName ?? model.dependency.targetModelId) : undefined;
     const evidenceIds = [...new Set([...(family?.evidenceIds ?? []), ...model.evidenceIds, ...evaluations.flatMap(item => item.evidenceIds), ...repository.artifacts.filter((artifact) => artifact.modelVersionId === model.id).flatMap((artifact) => artifact.evidenceIds)])];
     const uses = repository.applicationAssessments.filter(item => item.modelVersionId === model.id && !item.artifactId && documentedAssessmentValue(item, repository).state === 'known');
-    const modalities = known(`${model.inputModalities.map(llmLabel).join(t('adapters.0184'))} ← ${model.outputModalities.map(value => value === 'embedding' ? t('adapters.0210') : llmLabel(value)).join(t('adapters.0184'))}`, undefined, undefined, undefined, model.evidenceIds);
+    const modalities = model.dependency ? unknown('not-applicable') : known(`${model.inputModalities.map(llmLabel).join(t('adapters.0184'))} ← ${model.outputModalities.map(value => value === 'embedding' ? t('adapters.0210') : llmLabel(value)).join(t('adapters.0184'))}`, undefined, undefined, undefined, model.evidenceIds);
     return {
       id: model.id, label: model.exactName,
       searchText: [model.id, model.exactName, model.version, model.publisher, family?.name, ...(model.aliases ?? []), ...uses.map(item => item.summary)].join(' '),
       cells: {
         model: known(model.exactName, model.exactName, undefined, undefined, model.evidenceIds),
         'family-publisher': known(`${family?.name ?? t('adapters.0179')} · ${model.publisher}`, family?.name ?? model.publisher, undefined, undefined, evidenceIds),
-        'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
+        'kind-stage': known(dependency ?? `${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
         parameters: size,
         'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}${model.attentionArchitecture === 'hybrid' ? t('adapters.0211') : ''}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : t('adapters.0212') },
         architecture: known(llmLabel(model.architecture), model.architecture),
         modalities, context: modelContextSummary(model),
         applications: list([...new Set(uses.map(item => item.summary || applicationLabel(item.applicationId)))], uses.flatMap(item => item.evidenceIds)),
-        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(i18n.locale !== 'fa' && model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? t('adapters.0213') : t('adapters.0214') } : {}) },
+        license: { ...datum(model.license.name), ...(model.license.url.state === 'known' ? { href: model.license.url.value } : {}), ...(model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? { caveat: model.license.commercialUse.value === 'prohibited' ? t('adapters.0213') : t('adapters.0214') } : {}) },
         'released-on': sourceDateValue(model.releasedOn, model.evidenceIds),
         review: known(llmLabel(model.releaseStatus), model.releaseStatus)
       },
@@ -216,8 +217,8 @@ function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
       },
       details: {
         'model-id': copyValue(model.id), revision: copyValue(model.version),
-        'kind-stage': known(`${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`),
-        lineage: list([model.baseModelId ? t('adapters.0216', model.baseModelId) : undefined, model.distilledFromModelId ? t('adapters.0217', model.distilledFromModelId) : undefined]),
+        'kind-stage': known(dependency ?? `${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`),
+        lineage: list([dependency, model.baseModelId ? t('adapters.0216', model.baseModelId) : undefined, model.distilledFromModelId ? t('adapters.0217', model.distilledFromModelId) : undefined]),
         modalities, applications: list(uses.map(item => item.summary || applicationLabel(item.applicationId))),
         languages: model.languages.length ? list(model.languages.map((language) => `${language.language}${language.declared.state === 'known' && language.declared.value ? '' : t('adapters.0218')}`)) : unknown('unknown', t('adapters.0219')),
         ...licenseDetails(model.license),
@@ -918,6 +919,14 @@ function validateLlmRepository(repository: LlmGuideRepository) {
   for (const model of repository.models) {
     if (model.releasedOn && !sourceDateRange(model.releasedOn)) errors.push(`${model.id}.releasedOn is not a valid source date`);
     requireRef(errors, model.id, 'familyId', model.familyId, sets.families);
+    if (model.dependency) {
+      requireRef(errors, model.id, 'dependency.targetModelId', model.dependency.targetModelId, sets.models);
+      const target = repository.models.find(item => item.id === model.dependency?.targetModelId);
+      if (target?.dependency || target?.id === model.id) errors.push(`${model.id} requires a standalone target`);
+      if (!model.dependency.evidenceIds.length) errors.push(`${model.id} dependency lacks evidence`);
+      for (const id of model.dependency.evidenceIds) requireRef(errors, model.id, 'dependency.evidenceIds', id, sets.evidence);
+      if (model.languages.length || model.applications.length || model.persianEvidenceStatus !== 'not-evaluated') errors.push(`${model.id} drafter cannot carry independent language or task quality`);
+    }
     if (model.baseModelId) requireRef(errors, model.id, 'baseModelId', model.baseModelId, sets.models);
     if (model.distilledFromModelId) requireRef(errors, model.id, 'distilledFromModelId', model.distilledFromModelId, sets.models);
   }

@@ -49,7 +49,7 @@
   },
   {
     "path": "data/llm/v0.2.0/data/published-performance.json",
-    "sha256": "c474cb517ca7b8a46b54b065cc73dda259e5a85b8bf0fd81de3ddd46e6755fa6"
+    "sha256": "13d402dbfafdf8e80089febf874b39deaef30c5a9d08d377516375566ffe4168"
   },
   {
     "path": "data/llm/v0.2.0/data/published-quality.json",
@@ -73,7 +73,7 @@
   },
   {
     "path": "data/llm/v0.2.0/data/sources.json",
-    "sha256": "31f1ead3408cf143652915b407e386fa3cb45c5435a235b8278cdd1e6d7b0464"
+    "sha256": "0e7ec764582035240bd57f68ef0550fe98b6bec7dcf6bc574bdd74a2df1aae8c"
   },
   {
     "path": "data/llm/v0.2.0/data/specialized-models.json",

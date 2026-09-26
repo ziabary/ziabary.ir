@@ -1,0 +1,59 @@
+{
+  "models": {
+    "added": [
+      "model:liquidai-lfm2-5-vl-3b",
+      "model:liquidai-lfm2-5-vl-3b-dspark"
+    ],
+    "modified": []
+  },
+  "softwareReleases": {
+    "added": [],
+    "modified": [
+      "software-release:llama-cpp-v0-5-0"
+    ]
+  },
+  "evidence": {
+    "added": [
+      "evidence:sep26-base-api-json",
+      "evidence:sep26-base-blog-html",
+      "evidence:sep26-base-license",
+      "evidence:sep26-base-readme-md",
+      "evidence:sep26-commit-json",
+      "evidence:sep26-draft-api-json",
+      "evidence:sep26-draft-license",
+      "evidence:sep26-draft-readme-md",
+      "evidence:sep26-dspark-blog-html",
+      "evidence:sep26-gguf-license",
+      "evidence:sep26-gguf-readme-md",
+      "evidence:sep26-release-json"
+    ],
+    "modified": []
+  },
+  "modelProfiles": {
+    "added": [
+      "model-profile:liquidai-lfm2-5-vl-3b",
+      "model-profile:liquidai-lfm2-5-vl-3b-dspark"
+    ],
+    "modified": []
+  },
+  "artifactListings": {
+    "added": [
+      "artifact-listing:liquidai-lfm2-5-vl-3b",
+      "artifact-listing:liquidai-lfm2-5-vl-3b-dspark",
+      "artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf"
+    ],
+    "modified": []
+  },
+  "hardwareUnchanged": {
+    "src/lib/gpu-data.ts": "deb15c6a65419eac8783d534a771f632f04f20939c8a31b83f9e32c7f1652450",
+    "src/lib/server-data.ts": "37a4bea70bcfe47bf214f80381c2bd8c5d1187b84c0ed8e64486a3841fccc3ef"
+  },
+  "data/llm/v0.2.0/data/published-performance.json": {
+    "oldRecordsPreserved": 54,
+    "added": 18
+  },
+  "data/llm/v0.2.0/data/sources.json": {
+    "oldRecordsPreserved": 97,
+    "added": 1
+  }
+}

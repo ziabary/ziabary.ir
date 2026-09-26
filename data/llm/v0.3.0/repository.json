@@ -50290,6 +50290,335 @@
         "evidence:mimo-v2-6-pro-release"
       ],
       "announcedOn": "2026-09-22"
+    },
+    {
+      "id": "model:liquidai-lfm2-5-vl-3b",
+      "familyId": "family:lfm",
+      "exactName": "LFM2.5-VL-3B",
+      "publisher": "LiquidAI",
+      "version": "35a118d938ce6d123ac2d371649f24a8efb69058",
+      "aliases": [
+        "LiquidAI/LFM2.5-VL-3B"
+      ],
+      "stage": "instruct",
+      "architecture": "hybrid",
+      "totalParametersB": {
+        "state": "known",
+        "value": 3.123483888,
+        "evidenceIds": [
+          "evidence:sep26-base-api-json"
+        ],
+        "unit": "billion-parameters"
+      },
+      "activeParametersB": {
+        "state": "not-applicable"
+      },
+      "kind": "vision-language",
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "applications": [
+        "structured-extraction"
+      ],
+      "languages": [
+        {
+          "language": "en",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "ar",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "zh",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "fr",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "de",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "it",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "ja",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "ko",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "pt",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "es",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "vi",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "th",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "id",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "ru",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "pl",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        },
+        {
+          "language": "hi",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:sep26-base-readme-md"
+            ]
+          }
+        }
+      ],
+      "persianEvidenceStatus": "not-evaluated",
+      "declaredContext": {
+        "state": "known",
+        "value": 32768,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ],
+        "unit": "token"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "releaseStatus": "available",
+      "releasedOn": "2026-08-12",
+      "announcedOn": "2026-08-12",
+      "lastReviewedOn": "2026-09-26",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "LFM Open License 1.0",
+          "evidenceIds": [
+            "evidence:sep26-base-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/LICENSE",
+          "evidenceIds": [
+            "evidence:sep26-base-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "restricted",
+          "evidenceIds": [
+            "evidence:sep26-base-license"
+          ]
+        },
+        "restrictions": [
+          "استفادهٔ تجاری مشروط به سقف درآمد سالانهٔ ۱۰ میلیون دلار و شرایط بندهای ۱ و ۵ است. تعریف Threshold «۱۰ میلیون دلار یا بیشتر» است، اما بند اجرایی از not exceeding/exceeds استفاده می‌کند؛ وضعیت دقیقاً ۱۰ میلیون دلار در این بررسی تفسیر قطعی نشده است. You فرد یا شخصیت حقوقی است؛ Legal Entity شامل نهاد اقدام‌کننده و نهادهای کنترل‌کننده، تحت کنترل یا تحت کنترل مشترک است. کنترل شامل اختیار مدیریت، مالکیت ۵۰٪ یا بیشتر سهام یا مالکیت ذی‌نفعانه است. استثنای سقف برای Qualified Non-Profit Organization، مطابق تعریف بند ۱ (501(c)(3) آمریکا یا معادل غیرانتفاعی/خیریه در حوزهٔ قضایی دیگر)، صرفاً استفادهٔ غیرتجاری/پژوهشی را پوشش می‌دهد. شرایط اطلاع‌رسانی و بازتوزیع مجوز نیز برقرار است."
+        ],
+        "evidenceIds": [
+          "evidence:sep26-base-license"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:sep26-base-api-json",
+        "evidence:sep26-base-readme-md",
+        "evidence:sep26-base-license",
+        "evidence:sep26-base-blog-html"
+      ],
+      "thinkingMode": "non-thinking-only"
+    },
+    {
+      "id": "model:liquidai-lfm2-5-vl-3b-dspark",
+      "familyId": "family:lfm",
+      "exactName": "LFM2.5-VL-3B-DSpark",
+      "publisher": "LiquidAI",
+      "version": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "aliases": [
+        "LiquidAI/LFM2.5-VL-3B-DSpark"
+      ],
+      "stage": "other",
+      "architecture": "dense",
+      "totalParametersB": {
+        "state": "known",
+        "value": 0.279468801,
+        "evidenceIds": [
+          "evidence:sep26-draft-api-json"
+        ],
+        "unit": "billion-parameters"
+      },
+      "activeParametersB": {
+        "state": "not-applicable"
+      },
+      "kind": "other",
+      "inputModalities": [],
+      "outputModalities": [],
+      "applications": [],
+      "languages": [],
+      "persianEvidenceStatus": "not-evaluated",
+      "declaredContext": {
+        "state": "not-applicable"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "releaseStatus": "available",
+      "releasedOn": "2026-09-24",
+      "announcedOn": "2026-09-24",
+      "lastReviewedOn": "2026-09-26",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "LFM Open License 1.0",
+          "evidenceIds": [
+            "evidence:sep26-draft-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/LICENSE",
+          "evidenceIds": [
+            "evidence:sep26-draft-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "restricted",
+          "evidenceIds": [
+            "evidence:sep26-draft-license"
+          ]
+        },
+        "restrictions": [
+          "استفادهٔ تجاری مشروط به سقف درآمد سالانهٔ ۱۰ میلیون دلار و شرایط بندهای ۱ و ۵ است. تعریف Threshold «۱۰ میلیون دلار یا بیشتر» است، اما بند اجرایی از not exceeding/exceeds استفاده می‌کند؛ وضعیت دقیقاً ۱۰ میلیون دلار در این بررسی تفسیر قطعی نشده است. You فرد یا شخصیت حقوقی است؛ Legal Entity شامل نهاد اقدام‌کننده و نهادهای کنترل‌کننده، تحت کنترل یا تحت کنترل مشترک است. کنترل شامل اختیار مدیریت، مالکیت ۵۰٪ یا بیشتر سهام یا مالکیت ذی‌نفعانه است. استثنای سقف برای Qualified Non-Profit Organization، مطابق تعریف بند ۱ (501(c)(3) آمریکا یا معادل غیرانتفاعی/خیریه در حوزهٔ قضایی دیگر)، صرفاً استفادهٔ غیرتجاری/پژوهشی را پوشش می‌دهد. شرایط اطلاع‌رسانی و بازتوزیع مجوز نیز برقرار است."
+        ],
+        "evidenceIds": [
+          "evidence:sep26-draft-license"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:sep26-draft-api-json",
+        "evidence:sep26-draft-readme-md",
+        "evidence:sep26-draft-license",
+        "evidence:sep26-dspark-blog-html"
+      ],
+      "dependency": {
+        "kind": "speculative-drafter",
+        "targetModelId": "model:liquidai-lfm2-5-vl-3b",
+        "evidenceIds": [
+          "evidence:sep26-draft-readme-md"
+        ]
+      }
     }
   ],
   "artifacts": [
@@ -54258,7 +54587,7 @@
       "productId": "software-product:llama-cpp",
       "version": "v0.5.0",
       "releasedOn": "2026-09-23",
-      "lastReviewedOn": "2026-09-25",
+      "lastReviewedOn": "2026-09-26",
       "roles": [
         "inference-engine-library",
         "api-server"
@@ -54307,9 +54636,11 @@
         "evidence:llama-cpp-b11160-vulkan",
         "evidence:llama-cpp-vulkan-27952",
         "evidence:llama-cpp-v0-5-0-license",
-        "evidence:llama-cpp-v0-5-0-rpc-header"
+        "evidence:llama-cpp-v0-5-0-rpc-header",
+        "evidence:sep26-release-json",
+        "evidence:sep26-commit-json"
       ],
-      "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست.",
+      "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست.",
       "targetScenario": {
         "state": "known",
         "value": "اجرای مدل و llama-server؛ نسخهٔ پایدار 0.5.0",
@@ -136844,6 +137175,178 @@
       "scope": "RPC protocol constants at the exact tag",
       "limitations": [],
       "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-base-api-json",
+      "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B",
+      "title": "LFM2.5-VL-3B · base-api.json",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "2026-09-26 capture",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B · base-api.json",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-base-readme-md",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/README.md",
+      "title": "LFM2.5-VL-3B · base-README.md",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "35a118d938ce6d123ac2d371649f24a8efb69058",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B · base-README.md",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-base-license",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/LICENSE",
+      "title": "LFM2.5-VL-3B · base-LICENSE",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "35a118d938ce6d123ac2d371649f24a8efb69058",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B · base-LICENSE",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-draft-api-json",
+      "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B-DSpark",
+      "title": "LFM2.5-VL-3B-DSpark · draft-api.json",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "2026-09-26 capture",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B-DSpark · draft-api.json",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-draft-readme-md",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+      "title": "LFM2.5-VL-3B-DSpark · draft-README.md",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B-DSpark · draft-README.md",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-draft-license",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/LICENSE",
+      "title": "LFM2.5-VL-3B-DSpark · draft-LICENSE",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B-DSpark · draft-LICENSE",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-gguf-readme-md",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/README.md",
+      "title": "LFM2.5-VL-3B-DSpark-GGUF · gguf-README.md",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "5ff73699214238467e230f40bf12b4a5ffa445be",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B-DSpark-GGUF · gguf-README.md",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-gguf-license",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/LICENSE",
+      "title": "LFM2.5-VL-3B-DSpark-GGUF · gguf-LICENSE",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "5ff73699214238467e230f40bf12b4a5ffa445be",
+      "locator": "Pinned model card / license / metadata",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B-DSpark-GGUF · gguf-LICENSE",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-release-json",
+      "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11182",
+      "title": "llama.cpp b11182 · release.json",
+      "organization": "ggml-org",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "b11182",
+      "locator": "prerelease and published_at",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "llama.cpp b11182 · release.json",
+      "limitations": [],
+      "presentationNotes": [],
+      "publishedOn": "2026-09-25"
+    },
+    {
+      "id": "evidence:sep26-commit-json",
+      "url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/e9f824d8c0f011662a742c9d15d4aa18a41e32c0",
+      "title": "llama.cpp b11182 · commit.json",
+      "organization": "ggml-org",
+      "accessedOn": "2026-09-26",
+      "versionRevisionOrCommit": "e9f824d8c0f011662a742c9d15d4aa18a41e32c0",
+      "locator": "docs/build.md; ggml/src/ggml-cuda/mmq.cu",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "llama.cpp b11182 · commit.json",
+      "limitations": [],
+      "presentationNotes": [],
+      "publishedOn": "2026-09-25"
+    },
+    {
+      "id": "evidence:sep26-base-blog-html",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+      "title": "LFM2.5-VL-3B launch",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "publishedOn": "2026-08-12",
+      "versionRevisionOrCommit": "2026-09-26 capture",
+      "locator": "Publication date and model introduction",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL-3B launch",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:sep26-dspark-blog-html",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-dspark",
+      "title": "LFM2.5-VL DSpark launch",
+      "organization": "LiquidAI",
+      "accessedOn": "2026-09-26",
+      "publishedOn": "2026-09-24",
+      "versionRevisionOrCommit": "2026-09-26 capture",
+      "locator": "Publication date and benchmark protocol",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "LFM2.5-VL DSpark launch",
+      "limitations": [],
+      "presentationNotes": []
     }
   ],
   "publishedEvaluations": [
@@ -184981,6 +185484,80 @@
         "evidence:mimo-v2-6-pro-aa",
         "evidence:mimo-v2-6-pro-api"
       ]
+    },
+    {
+      "id": "model-profile:liquidai-lfm2-5-vl-3b",
+      "modelVersionId": "model:liquidai-lfm2-5-vl-3b",
+      "introduction": "مدل بینایی‌ـ‌زبانی هدف با زبان‌مدل LFM2.5 و رمزگذار SigLIP2؛ برای کارهای تصویری تک‌نوبتی معرفی شده است. context اعلام‌شده ۳۲٬۷۶۸ توکن است؛ کیفیت فارسی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند.",
+      "roleSummary": "مدل هدف برای پاسخ به ورودی تصویر و متن",
+      "distinguishingFeatures": [],
+      "officialUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B",
+      "runGuides": [
+        {
+          "label": "Transformers",
+          "engine": "Transformers",
+          "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/README.md",
+          "conditions": [],
+          "evidenceIds": [
+            "evidence:sep26-base-readme-md"
+          ]
+        }
+      ],
+      "evidenceIds": [
+        "evidence:sep26-base-api-json",
+        "evidence:sep26-base-readme-md",
+        "evidence:sep26-base-license",
+        "evidence:sep26-base-blog-html"
+      ]
+    },
+    {
+      "id": "model-profile:liquidai-lfm2-5-vl-3b-dspark",
+      "modelVersionId": "model:liquidai-lfm2-5-vl-3b-dspark",
+      "introduction": "مکمل آزمایشی speculative decoding، فقط همراه LFM2.5-VL-3B؛ مدل پاسخ‌گوی مستقل نیست. ناشر اندازهٔ مکمل را ۲۷۹٫۵ میلیون پارامتر با checkpoint نوع BF16 اعلام کرده است. حافظهٔ مجموع مدل هدف، اجزای بینایی، مکمل، cache و سربار موتور نامعلوم است؛ تعداد پارامتر مکمل تخمین حافظهٔ کل نیست.",
+      "roleSummary": "وابسته به LFM2.5-VL-3B؛ تولید پیش‌نویس توکن",
+      "distinguishingFeatures": [],
+      "officialUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark",
+      "runGuides": [
+        {
+          "label": "SGLang",
+          "engine": "SGLang",
+          "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+          "conditions": [
+            "حداقل 0.5.19؛ مدل هدف و مکمل با هم؛ block=9. این حداقل، جایگزین نسخهٔ 0.5.20 اطلس نیست."
+          ],
+          "evidenceIds": [
+            "evidence:sep26-draft-readme-md"
+          ]
+        },
+        {
+          "label": "MLX-VLM",
+          "engine": "MLX-VLM",
+          "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+          "conditions": [
+            "حداقل 0.7.2؛ Apple Silicon، block=8 و temperature=0."
+          ],
+          "evidenceIds": [
+            "evidence:sep26-draft-readme-md"
+          ]
+        },
+        {
+          "label": "llama.cpp",
+          "engine": "llama.cpp",
+          "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/README.md",
+          "conditions": [
+            "GGUF رسمی F16 همراه GGUF مدل هدف و بخش بینایی؛ block=8. حداقل build مستند نشده است؛ GGUF قالب فایل است و این F16 شاهد کوانتیزه‌بودن نیست."
+          ],
+          "evidenceIds": [
+            "evidence:sep26-gguf-readme-md"
+          ]
+        }
+      ],
+      "evidenceIds": [
+        "evidence:sep26-draft-api-json",
+        "evidence:sep26-draft-readme-md",
+        "evidence:sep26-draft-license",
+        "evidence:sep26-dspark-blog-html"
+      ]
     }
   ],
   "modelUseGuidance": [
@@ -223305,9 +223882,75 @@
         "evidence:mimo-v2-6-pro-files",
         "evidence:mimo-v2-6-pro-config"
       ]
+    },
+    {
+      "id": "artifact-listing:liquidai-lfm2-5-vl-3b",
+      "modelVersionId": "model:liquidai-lfm2-5-vl-3b",
+      "baseModelRepository": "LiquidAI/LFM2.5-VL-3B",
+      "baseRevision": "35a118d938ce6d123ac2d371649f24a8efb69058",
+      "publisher": "LiquidAI",
+      "authority": "official",
+      "format": "safetensors",
+      "precision": "BF16",
+      "variant": "LFM2.5-VL-3B",
+      "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B",
+      "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/tree/35a118d938ce6d123ac2d371649f24a8efb69058",
+      "repositoryRevision": "35a118d938ce6d123ac2d371649f24a8efb69058",
+      "inventoryStatus": "not-recorded",
+      "files": [],
+      "sizeDescription": "فهرست دقیق حجم فایل‌ها ثبت نشده؛ حافظهٔ کل استقرار نامعلوم است.",
+      "verifiedOn": "2026-09-26",
+      "evidenceIds": [
+        "evidence:sep26-base-readme-md",
+        "evidence:sep26-base-license"
+      ]
+    },
+    {
+      "id": "artifact-listing:liquidai-lfm2-5-vl-3b-dspark",
+      "modelVersionId": "model:liquidai-lfm2-5-vl-3b-dspark",
+      "baseModelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+      "baseRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "publisher": "LiquidAI",
+      "authority": "official",
+      "format": "safetensors",
+      "precision": "BF16",
+      "variant": "LFM2.5-VL-3B-DSpark",
+      "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark",
+      "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/tree/af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "repositoryRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "inventoryStatus": "not-recorded",
+      "files": [],
+      "sizeDescription": "فهرست دقیق حجم فایل‌ها ثبت نشده؛ حافظهٔ کل استقرار نامعلوم است.",
+      "verifiedOn": "2026-09-26",
+      "evidenceIds": [
+        "evidence:sep26-draft-readme-md",
+        "evidence:sep26-draft-license"
+      ]
+    },
+    {
+      "id": "artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf",
+      "modelVersionId": "model:liquidai-lfm2-5-vl-3b-dspark",
+      "baseModelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+      "baseRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+      "publisher": "LiquidAI",
+      "authority": "official",
+      "format": "gguf",
+      "precision": "F16",
+      "variant": "LFM2.5-VL-3B-DSpark-GGUF",
+      "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF",
+      "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/tree/5ff73699214238467e230f40bf12b4a5ffa445be",
+      "repositoryRevision": "5ff73699214238467e230f40bf12b4a5ffa445be",
+      "inventoryStatus": "not-recorded",
+      "files": [],
+      "sizeDescription": "فهرست دقیق حجم فایل‌ها ثبت نشده؛ حافظهٔ کل استقرار نامعلوم است.",
+      "verifiedOn": "2026-09-26",
+      "evidenceIds": [
+        "evidence:sep26-gguf-readme-md",
+        "evidence:sep26-gguf-license"
+      ]
     }
   ],
-  "updatedOn": "2026-09-21",
+  "updatedOn": "2026-09-26",
   "referenceComparisons": [
     {
       "id": "comparison:qwen-small-nonthinking",

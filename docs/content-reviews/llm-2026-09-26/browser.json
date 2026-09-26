@@ -1,0 +1,103 @@
+[
+  {
+    "locale": "fa",
+    "model": "model:liquidai-lfm2-5-vl-3b",
+    "profile": true,
+    "localized": true
+  },
+  {
+    "locale": "fa",
+    "model": "model:liquidai-lfm2-5-vl-3b-dspark",
+    "profile": true,
+    "localized": true
+  },
+  {
+    "locale": "fa",
+    "relativePerformanceRows": 18
+  },
+  {
+    "locale": "fa",
+    "scopedPrerelease": true
+  },
+  {
+    "locale": "fa",
+    "gpuPrecisionNote": true
+  },
+  {
+    "locale": "fa",
+    "mobile": {
+      "width": 390,
+      "scroll": 390,
+      "dir": "rtl"
+    }
+  },
+  {
+    "locale": "en",
+    "model": "model:liquidai-lfm2-5-vl-3b",
+    "profile": true,
+    "localized": true
+  },
+  {
+    "locale": "en",
+    "model": "model:liquidai-lfm2-5-vl-3b-dspark",
+    "profile": true,
+    "localized": true
+  },
+  {
+    "locale": "en",
+    "relativePerformanceRows": 18
+  },
+  {
+    "locale": "en",
+    "scopedPrerelease": true
+  },
+  {
+    "locale": "en",
+    "gpuPrecisionNote": true
+  },
+  {
+    "locale": "en",
+    "mobile": {
+      "width": 390,
+      "scroll": 390,
+      "dir": "ltr"
+    }
+  },
+  {
+    "locale": "es",
+    "model": "model:liquidai-lfm2-5-vl-3b",
+    "profile": true,
+    "localized": true
+  },
+  {
+    "locale": "es",
+    "model": "model:liquidai-lfm2-5-vl-3b-dspark",
+    "profile": true,
+    "localized": true
+  },
+  {
+    "locale": "es",
+    "relativePerformanceRows": 18
+  },
+  {
+    "locale": "es",
+    "scopedPrerelease": true
+  },
+  {
+    "locale": "es",
+    "gpuPrecisionNote": true
+  },
+  {
+    "locale": "es",
+    "mobile": {
+      "width": 390,
+      "scroll": 390,
+      "dir": "ltr"
+    }
+  },
+  {
+    "draftNoindex": true,
+    "draftAbsentSitemap": true,
+    "browserExceptions": 0
+  }
+]

@@ -35,7 +35,7 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': 125, 'model-suitability': 117, 'hardware-feasibility': 0, 'software-products': 18,
+    'model-catalog': 127, 'model-suitability': 117, 'hardware-feasibility': 0, 'software-products': 20,
     'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': 28
   });
 
@@ -452,7 +452,7 @@ test('release, review and partial dates are distinct in rendering, filtering and
   const { sourceDateValue, sourceDateRange } = presentation;
   const ollama = adapters.adaptSoftwareProducts(guide.llmRepository).find(row => row.label.startsWith('Ollama'));
   assert.equal(ollama.details['released-on'].raw, '2026-09-05');
-  assert.equal(ollama.details['last-reviewed'].raw, '2026-09-15');
+  assert.equal(ollama.details['last-reviewed'].raw, '2026-09-25');
   const month = sourceDateValue('2025-02'), year = sourceDateValue('2023');
   assert.equal(month.raw, '2025-02');
   assert.equal(month.dateRange.precision, 'month');
@@ -508,13 +508,13 @@ test('model release-date filtering uses release evidence, including month-only a
 });
 
 test('catalog models have sourced profiles, downloads and run paths; assessed models have task guidance', () => {
-  assert.equal(dataset.modelProfiles.length, 125);
-  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.modelVersionId)).size, 125);
+  assert.equal(dataset.modelProfiles.length, 127);
+  assert.equal(new Set(dataset.modelProfiles.map(profile => profile.modelVersionId)).size, 127);
   for (const model of dataset.models) {
     const profile = dataset.modelProfiles.find(item => item.modelVersionId === model.id);
     assert.ok(profile?.introduction.trim(), model.id);
     assert.ok(profile.runGuides.length && profile.runGuides.every(run => run.engine.trim() && run.label.trim() && run.href.startsWith('https://') && run.evidenceIds.length));
-    const catalogOnly = ['model:qwen-image-2-1', 'model:zai-org-glm-5', 'model:zai-org-glm-5-1', 'model:zai-org-glm-5-2', 'model:zai-org-glm-5-3-bf16', 'model:moonshotai-kimi-k2-6', 'model:moonshotai-kimi-k2-7-code', 'model:moonshotai-kimi-k3'];
+    const catalogOnly = ['model:liquidai-lfm2-5-vl-3b', 'model:liquidai-lfm2-5-vl-3b-dspark', 'model:qwen-image-2-1', 'model:zai-org-glm-5', 'model:zai-org-glm-5-1', 'model:zai-org-glm-5-2', 'model:zai-org-glm-5-3-bf16', 'model:moonshotai-kimi-k2-6', 'model:moonshotai-kimi-k2-7-code', 'model:moonshotai-kimi-k3'];
     assert.equal(dataset.modelUseGuidance.some(item => item.modelVersionId === model.id && item.description.trim() && item.evidenceIds.length), !catalogOnly.includes(model.id), model.id);
     assert.ok(dataset.artifactListings.some(item => item.modelVersionId === model.id && item.authority === 'official'));
   }

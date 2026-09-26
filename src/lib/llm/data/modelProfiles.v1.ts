@@ -6554,3 +6554,77 @@ modelProfiles.push({
     "evidence:mimo-v2-6-pro-api"
   ]
 });
+modelProfiles.push({
+  "id": "model-profile:liquidai-lfm2-5-vl-3b",
+  "modelVersionId": "model:liquidai-lfm2-5-vl-3b",
+  "introduction": "مدل بینایی‌ـ‌زبانی هدف با زبان‌مدل LFM2.5 و رمزگذار SigLIP2؛ برای کارهای تصویری تک‌نوبتی معرفی شده است. context اعلام‌شده ۳۲٬۷۶۸ توکن است؛ کیفیت فارسی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند.",
+  "roleSummary": "مدل هدف برای پاسخ به ورودی تصویر و متن",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B",
+  "runGuides": [
+    {
+      "label": "Transformers",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/README.md",
+      "conditions": [],
+      "evidenceIds": [
+        "evidence:sep26-base-readme-md"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:sep26-base-api-json",
+    "evidence:sep26-base-readme-md",
+    "evidence:sep26-base-license",
+    "evidence:sep26-base-blog-html"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:liquidai-lfm2-5-vl-3b-dspark",
+  "modelVersionId": "model:liquidai-lfm2-5-vl-3b-dspark",
+  "introduction": "مکمل آزمایشی speculative decoding، فقط همراه LFM2.5-VL-3B؛ مدل پاسخ‌گوی مستقل نیست. ناشر اندازهٔ مکمل را ۲۷۹٫۵ میلیون پارامتر با checkpoint نوع BF16 اعلام کرده است. حافظهٔ مجموع مدل هدف، اجزای بینایی، مکمل، cache و سربار موتور نامعلوم است؛ تعداد پارامتر مکمل تخمین حافظهٔ کل نیست.",
+  "roleSummary": "وابسته به LFM2.5-VL-3B؛ تولید پیش‌نویس توکن",
+  "distinguishingFeatures": [],
+  "officialUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark",
+  "runGuides": [
+    {
+      "label": "SGLang",
+      "engine": "SGLang",
+      "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+      "conditions": [
+        "حداقل 0.5.19؛ مدل هدف و مکمل با هم؛ block=9. این حداقل، جایگزین نسخهٔ 0.5.20 اطلس نیست."
+      ],
+      "evidenceIds": [
+        "evidence:sep26-draft-readme-md"
+      ]
+    },
+    {
+      "label": "MLX-VLM",
+      "engine": "MLX-VLM",
+      "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+      "conditions": [
+        "حداقل 0.7.2؛ Apple Silicon، block=8 و temperature=0."
+      ],
+      "evidenceIds": [
+        "evidence:sep26-draft-readme-md"
+      ]
+    },
+    {
+      "label": "llama.cpp",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/README.md",
+      "conditions": [
+        "GGUF رسمی F16 همراه GGUF مدل هدف و بخش بینایی؛ block=8. حداقل build مستند نشده است؛ GGUF قالب فایل است و این F16 شاهد کوانتیزه‌بودن نیست."
+      ],
+      "evidenceIds": [
+        "evidence:sep26-gguf-readme-md"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:sep26-draft-api-json",
+    "evidence:sep26-draft-readme-md",
+    "evidence:sep26-draft-license",
+    "evidence:sep26-dspark-blog-html"
+  ]
+});

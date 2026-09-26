@@ -1354,5 +1354,8 @@
   "start.hardware.quantization": "Cuantización a cuatro bits",
   "start.software.engine": "Elegir el software",
   "start.software.serving": "De un usuario a un servicio",
-  "model-kind.image-generation": "Generación y edición de imágenes"
+  "model-kind.image-generation": "Generación y edición de imágenes",
+  "sep26.dependency": "Complemento experimental; requiere {0}; memoria conjunta desconocida",
+  "sep26.speedup": "Aceleración de extremo a extremo respecto al mismo modelo sin DSpark",
+  "sep26.performance-note": "Informe del editor, seis tareas visuales; batch=1 y temperature=0. H100/SGLang/BF16 block=9: 1.64–2.27×; M5 Max/MLX-VLM/FP16 block=8: 1.56–2.62×; M3 Ultra/llama.cpp/FP16 block=8: 1.30–1.77×. Límite de salida Apple: 2048 tokens. Es una razón de tiempos de extremo a extremo, no tok/s, TTFT ni calidad; no extrapolar a persa, RTX 4090, cuantización o concurrencia. DSpark actúa sobre la generación, sin acelerar directamente la codificación visual ni el prefill. No constan versiones exactas de motores ni revisiones de pesos evaluados; las versiones mínimas de soporte no las sustituyen."
 }

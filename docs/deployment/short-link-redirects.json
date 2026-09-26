@@ -6,6 +6,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aacd",
+    "destination": "https://ziabary.ir/articles/ai-contract-deliverables/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aacsoc",
     "destination": "https://ziabary.ir/articles/ai-cosmetic-surgery-or-chemotherapy/",
     "status": 301,

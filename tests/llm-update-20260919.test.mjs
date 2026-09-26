@@ -63,7 +63,7 @@ test('result scope uses exact language, metric and cutoff without substituting R
  const scores=repo.publishedEvaluations.filter(x=>x.id.startsWith('published-evaluation:update0919-'));assert.equal(scores.length,16);assert.equal(m.evaluation.qualityComparison(scores.slice(0,2)).rank,false);
 });
 test('new records preserve counts, task contexts, unknowns and separate MLX artifacts',()=>{
- assert.equal(repo.models.length,125);assert.equal(repo.publishedEvaluations.length,1270);assert.equal(new Set(repo.models.map(x=>x.id)).size,125);
+ assert.equal(repo.models.length,127);assert.equal(repo.publishedEvaluations.length,1270);assert.equal(new Set(repo.models.map(x=>x.id)).size,127);
  const glm=repo.models.find(m=>m.id==='model:zai-org-glm-5-1');assert.equal(glm.activeParametersB.state,'unknown');assert.equal(glm.totalParametersB.state,'unknown');
  for(const model of repo.models.filter(m=>/qwen3-vl-(embedding|reranker)/.test(m.id))){assert.equal(model.declaredContext.value,32768);assert.equal(model.configurationContext.value,262144);assert.ok(repo.specializedAssessments.some(a=>a.modelVersionId===model.id));}
  const routes=m['research-views'].compatibilityRows(repo,false);assert.ok(routes.filter(r=>r.cells.engine?.display==='MLX LM').length>=2);assert.ok(!routes.some(r=>/^(publisher|Publisher documentation)$/i.test(r.facets.engine?.display??'')));

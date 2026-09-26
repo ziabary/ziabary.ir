@@ -16,6 +16,7 @@
   import GuideOpening from './GuideOpening.svelte';
   import GuideUpdates from './GuideUpdates.svelte';
   import GpuComparison from './GpuComparison.svelte';
+  import GpuPrecisionNote from './GpuPrecisionNote.svelte';
   import ServerComparison from './ServerComparison.svelte';
   export let collection: GuideCollection;
   export let chapters: Record<string, Component<{ headingPrefix?: string }>> = {};
@@ -94,6 +95,7 @@
         <a class="guide-back" href={`${base}/guides/`}>{copy.back}</a>
       </aside>
       <div class="guide-main">
+        {#if collection.slug === 'gpu-selection'}<GpuPrecisionNote {locale} />{/if}
         {#if !gpuIntro.length}
           <div class="guide-overview">
             <img class="guide-cover" {...imageAttributes(collection.image, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={collection.imageAlt} width="1600" height="900" />

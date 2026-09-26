@@ -9,10 +9,10 @@ const data = name => JSON.parse(fs.readFileSync(`data/llm/v0.2.0/data/${name}.js
 const close = (a,b) => assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
 
 test('supplement preserves the base, exact identities, independent evidence and deduplicated quality',()=>{
-  assert.equal(base.models.length,125);assert.equal(base.publishedEvaluations.length,1212);assert.equal(base.artifactListings.length,536);
+  assert.equal(base.models.length,127);assert.equal(base.publishedEvaluations.length,1212);assert.equal(base.artifactListings.length,539);
   // Similar scores remain distinct when language/protocol identity is not established.
   assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1270);
-  assert.equal(repository.evidence.length,base.evidence.length+127);
+  assert.equal(repository.evidence.length,base.evidence.length+128);
   assert.equal(r.researchModel(base,'CohereForAI/aya-expanse-32b').id,'model:coherelabs-aya-expanse-32b');
   assert.equal(r.researchModel(base,'deepseek-ai/DeepSeek-V3'),undefined);
   assert.equal(r.researchModel(base,'Qwen/Qwen3.8-Flash-Next'),undefined);
@@ -54,8 +54,8 @@ test('context, concurrent requests, CPU dtype and multi-GPU conditions change th
   const cpu=v.memoryRows(repository,{...v.defaultResearchControls,method:'cpu'});assert.equal(cpu.length,59);
   const native=cpu.find(x=>x.label==='SmolLM2-1.7B-Instruct'&&x.facets.quant.display==='FP32');close(native.cells.budget.canonicalNumber,13.37542074918747);
 });
-test('all 54 performances stay in their report groups and metrics retain distinct units and scope',()=>{
-  assert.equal(r.research.performance.length,54);
+test('all 72 performances stay in their report groups and metrics retain distinct units and scope',()=>{
+  assert.equal(r.research.performance.length,72);
   for(const run of r.research.performance){
     const metric=Object.keys(run.metrics).find(key=>v.performanceMetrics[key]);
     const result=v.performanceRows(repository,run.publicationGroup,metric).find(x=>x.id===run.id);assert.ok(result);

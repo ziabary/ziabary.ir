@@ -7,6 +7,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import PageSeo from '$lib/components/PageSeo.svelte';
   import GpuComparison from '$lib/components/GpuComparison.svelte';
+  import GpuPrecisionNote from './GpuPrecisionNote.svelte';
   import ServerComparison from '$lib/components/ServerComparison.svelte';
   import GuideUpdates from './GuideUpdates.svelte';
   import { getArticle, allArticleMetadata } from '$lib/content';
@@ -75,6 +76,7 @@
         </section>
       </div>
       <p class="collection-intro">{collection.intro}</p>
+      <GpuPrecisionNote {locale} />
       <p class="collection-intro">{locale === 'en' ? 'For language-model inference,' : 'Para ejecutar modelos de lenguaje,'} <a href={`/${locale}/guides/llm/?view=hardware-feasibility#hardware-feasibility`}>{locale === 'en' ? 'compare models by memory and hardware requirements' : 'compare modelos según memoria y hardware'}</a>{locale === 'en' ? '; model size, input length and concurrency determine the GPU capacity needed.' : '; el tamaño del modelo, la entrada y la concurrencia determinan la capacidad de GPU necesaria.'}</p>
       {#each collection.items as item}
         {#if item.id === 'gpu-comparison-table'}

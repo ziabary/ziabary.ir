@@ -42706,3 +42706,175 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:sep26-base-api-json",
+  "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B",
+  "title": "LFM2.5-VL-3B · base-api.json",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "2026-09-26 capture",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B · base-api.json",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-base-readme-md",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/README.md",
+  "title": "LFM2.5-VL-3B · base-README.md",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "35a118d938ce6d123ac2d371649f24a8efb69058",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B · base-README.md",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-base-license",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/LICENSE",
+  "title": "LFM2.5-VL-3B · base-LICENSE",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "35a118d938ce6d123ac2d371649f24a8efb69058",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B · base-LICENSE",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-draft-api-json",
+  "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B-DSpark",
+  "title": "LFM2.5-VL-3B-DSpark · draft-api.json",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "2026-09-26 capture",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B-DSpark · draft-api.json",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-draft-readme-md",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+  "title": "LFM2.5-VL-3B-DSpark · draft-README.md",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B-DSpark · draft-README.md",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-draft-license",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/LICENSE",
+  "title": "LFM2.5-VL-3B-DSpark · draft-LICENSE",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B-DSpark · draft-LICENSE",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-gguf-readme-md",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/README.md",
+  "title": "LFM2.5-VL-3B-DSpark-GGUF · gguf-README.md",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "5ff73699214238467e230f40bf12b4a5ffa445be",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B-DSpark-GGUF · gguf-README.md",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-gguf-license",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/LICENSE",
+  "title": "LFM2.5-VL-3B-DSpark-GGUF · gguf-LICENSE",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "5ff73699214238467e230f40bf12b4a5ffa445be",
+  "locator": "Pinned model card / license / metadata",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B-DSpark-GGUF · gguf-LICENSE",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-release-json",
+  "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11182",
+  "title": "llama.cpp b11182 · release.json",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "b11182",
+  "locator": "prerelease and published_at",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11182 · release.json",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-09-25"
+});
+evidence.push({
+  "id": "evidence:sep26-commit-json",
+  "url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/e9f824d8c0f011662a742c9d15d4aa18a41e32c0",
+  "title": "llama.cpp b11182 · commit.json",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-26",
+  "versionRevisionOrCommit": "e9f824d8c0f011662a742c9d15d4aa18a41e32c0",
+  "locator": "docs/build.md; ggml/src/ggml-cuda/mmq.cu",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11182 · commit.json",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-09-25"
+});
+evidence.push({
+  "id": "evidence:sep26-base-blog-html",
+  "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+  "title": "LFM2.5-VL-3B launch",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "publishedOn": "2026-08-12",
+  "versionRevisionOrCommit": "2026-09-26 capture",
+  "locator": "Publication date and model introduction",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL-3B launch",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sep26-dspark-blog-html",
+  "url": "https://www.liquid.ai/blog/lfm2-5-vl-dspark",
+  "title": "LFM2.5-VL DSpark launch",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-09-26",
+  "publishedOn": "2026-09-24",
+  "versionRevisionOrCommit": "2026-09-26 capture",
+  "locator": "Publication date and benchmark protocol",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "LFM2.5-VL DSpark launch",
+  "limitations": [],
+  "presentationNotes": []
+});

@@ -1635,5 +1635,485 @@
     ],
     "reporter": "Qwen",
     "sourceLocator": "Qwen3-30B-A3B (SGLang), input 6144 / output 2048 / FP8"
+  },
+  {
+    "id": "performance:dspark-0-mmmu-pro",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "H100 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "reporter": "LiquidAI",
+    "weightFormat": "BF16",
+    "metrics": {
+      "endToEndSpeedup": 1.97
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 9,
+      "dataset": "MMMU-Pro",
+      "baseline": "LFM2.5-VL-3B without DSpark"
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / MMMU-Pro / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-0-multi-turn",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "H100 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "reporter": "LiquidAI",
+    "weightFormat": "BF16",
+    "metrics": {
+      "endToEndSpeedup": 1.83
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 9,
+      "dataset": "Multi-turn",
+      "baseline": "LFM2.5-VL-3B without DSpark"
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / Multi-turn / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-0-coco",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "H100 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "reporter": "LiquidAI",
+    "weightFormat": "BF16",
+    "metrics": {
+      "endToEndSpeedup": 2.27
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 9,
+      "dataset": "COCO",
+      "baseline": "LFM2.5-VL-3B without DSpark"
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / COCO / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-0-charxiv",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "H100 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "reporter": "LiquidAI",
+    "weightFormat": "BF16",
+    "metrics": {
+      "endToEndSpeedup": 1.97
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 9,
+      "dataset": "CharXiv",
+      "baseline": "LFM2.5-VL-3B without DSpark"
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / CharXiv / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-0-textvqa",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "H100 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "reporter": "LiquidAI",
+    "weightFormat": "BF16",
+    "metrics": {
+      "endToEndSpeedup": 1.64
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 9,
+      "dataset": "TextVQA",
+      "baseline": "LFM2.5-VL-3B without DSpark"
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / TextVQA / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-0-gqa",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "H100 80GB",
+    "gpuCount": 1,
+    "engine": "SGLang",
+    "reporter": "LiquidAI",
+    "weightFormat": "BF16",
+    "metrics": {
+      "endToEndSpeedup": 1.77
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 9,
+      "dataset": "GQA",
+      "baseline": "LFM2.5-VL-3B without DSpark"
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / GQA / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-1-mmmu-pro",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M5 Max",
+    "gpuCount": 1,
+    "engine": "MLX-VLM",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 2.62
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "MMMU-Pro",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / MMMU-Pro / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-1-multi-turn",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M5 Max",
+    "gpuCount": 1,
+    "engine": "MLX-VLM",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.91
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "Multi-turn",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / Multi-turn / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-1-coco",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M5 Max",
+    "gpuCount": 1,
+    "engine": "MLX-VLM",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 2.59
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "COCO",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / COCO / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-1-charxiv",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M5 Max",
+    "gpuCount": 1,
+    "engine": "MLX-VLM",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.71
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "CharXiv",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / CharXiv / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-1-textvqa",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M5 Max",
+    "gpuCount": 1,
+    "engine": "MLX-VLM",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.56
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "TextVQA",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / TextVQA / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-1-gqa",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M5 Max",
+    "gpuCount": 1,
+    "engine": "MLX-VLM",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.93
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "GQA",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / GQA / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-2-mmmu-pro",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M3 Ultra",
+    "gpuCount": 1,
+    "engine": "llama.cpp",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.74
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "MMMU-Pro",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / MMMU-Pro / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-2-multi-turn",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M3 Ultra",
+    "gpuCount": 1,
+    "engine": "llama.cpp",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.37
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "Multi-turn",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / Multi-turn / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-2-coco",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M3 Ultra",
+    "gpuCount": 1,
+    "engine": "llama.cpp",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.77
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "COCO",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / COCO / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-2-charxiv",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M3 Ultra",
+    "gpuCount": 1,
+    "engine": "llama.cpp",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.56
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "CharXiv",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / CharXiv / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-2-textvqa",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M3 Ultra",
+    "gpuCount": 1,
+    "engine": "llama.cpp",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.33
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "TextVQA",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / TextVQA / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
+  },
+  {
+    "id": "performance:dspark-2-gqa",
+    "publicationGroup": "liquid-dspark-vl",
+    "modelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "hardwareLabel": "Apple M3 Ultra",
+    "gpuCount": 1,
+    "engine": "llama.cpp",
+    "reporter": "LiquidAI",
+    "weightFormat": "FP16",
+    "metrics": {
+      "endToEndSpeedup": 1.3
+    },
+    "protocol": {
+      "batchSize": 1,
+      "temperature": 0,
+      "blockSize": 8,
+      "dataset": "GQA",
+      "baseline": "LFM2.5-VL-3B without DSpark",
+      "maxOutputTokens": 2048
+    },
+    "publishedOn": "2026-09-24",
+    "sourceIds": [
+      "liquid-dspark-sep26"
+    ],
+    "sourceLocator": "Measured inference speedup / GQA / end-to-end",
+    "comparisonScope": "Publisher within-stack relative speedup only; no cross-device ranking or locally measured result"
   }
 ]

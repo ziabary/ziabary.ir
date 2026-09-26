@@ -31595,3 +31595,69 @@ artifactListings.push({
     "evidence:mimo-v2-6-pro-config"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:liquidai-lfm2-5-vl-3b",
+  "modelVersionId": "model:liquidai-lfm2-5-vl-3b",
+  "baseModelRepository": "LiquidAI/LFM2.5-VL-3B",
+  "baseRevision": "35a118d938ce6d123ac2d371649f24a8efb69058",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "LFM2.5-VL-3B",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/tree/35a118d938ce6d123ac2d371649f24a8efb69058",
+  "repositoryRevision": "35a118d938ce6d123ac2d371649f24a8efb69058",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "فهرست دقیق حجم فایل‌ها ثبت نشده؛ حافظهٔ کل استقرار نامعلوم است.",
+  "verifiedOn": "2026-09-26",
+  "evidenceIds": [
+    "evidence:sep26-base-readme-md",
+    "evidence:sep26-base-license"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:liquidai-lfm2-5-vl-3b-dspark",
+  "modelVersionId": "model:liquidai-lfm2-5-vl-3b-dspark",
+  "baseModelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+  "baseRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "LFM2.5-VL-3B-DSpark",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/tree/af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "repositoryRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "فهرست دقیق حجم فایل‌ها ثبت نشده؛ حافظهٔ کل استقرار نامعلوم است.",
+  "verifiedOn": "2026-09-26",
+  "evidenceIds": [
+    "evidence:sep26-draft-readme-md",
+    "evidence:sep26-draft-license"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf",
+  "modelVersionId": "model:liquidai-lfm2-5-vl-3b-dspark",
+  "baseModelRepository": "LiquidAI/LFM2.5-VL-3B-DSpark",
+  "baseRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "F16",
+  "variant": "LFM2.5-VL-3B-DSpark-GGUF",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/tree/5ff73699214238467e230f40bf12b4a5ffa445be",
+  "repositoryRevision": "5ff73699214238467e230f40bf12b4a5ffa445be",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "فهرست دقیق حجم فایل‌ها ثبت نشده؛ حافظهٔ کل استقرار نامعلوم است.",
+  "verifiedOn": "2026-09-26",
+  "evidenceIds": [
+    "evidence:sep26-gguf-readme-md",
+    "evidence:sep26-gguf-license"
+  ]
+});

@@ -50024,3 +50024,332 @@ models.push({
   ],
   "announcedOn": "2026-09-22"
 });
+models.push({
+  "id": "model:liquidai-lfm2-5-vl-3b",
+  "familyId": "family:lfm",
+  "exactName": "LFM2.5-VL-3B",
+  "publisher": "LiquidAI",
+  "version": "35a118d938ce6d123ac2d371649f24a8efb69058",
+  "aliases": [
+    "LiquidAI/LFM2.5-VL-3B"
+  ],
+  "stage": "instruct",
+  "architecture": "hybrid",
+  "totalParametersB": {
+    "state": "known",
+    "value": 3.123483888,
+    "evidenceIds": [
+      "evidence:sep26-base-api-json"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "structured-extraction"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "vi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "th",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "id",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "pl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    },
+    {
+      "language": "hi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:sep26-base-readme-md"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:sep26-base-readme-md"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-08-12",
+  "announcedOn": "2026-08-12",
+  "lastReviewedOn": "2026-09-26",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "LFM Open License 1.0",
+      "evidenceIds": [
+        "evidence:sep26-base-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/LICENSE",
+      "evidenceIds": [
+        "evidence:sep26-base-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:sep26-base-license"
+      ]
+    },
+    "restrictions": [
+      "استفادهٔ تجاری مشروط به سقف درآمد سالانهٔ ۱۰ میلیون دلار و شرایط بندهای ۱ و ۵ است. تعریف Threshold «۱۰ میلیون دلار یا بیشتر» است، اما بند اجرایی از not exceeding/exceeds استفاده می‌کند؛ وضعیت دقیقاً ۱۰ میلیون دلار در این بررسی تفسیر قطعی نشده است. You فرد یا شخصیت حقوقی است؛ Legal Entity شامل نهاد اقدام‌کننده و نهادهای کنترل‌کننده، تحت کنترل یا تحت کنترل مشترک است. کنترل شامل اختیار مدیریت، مالکیت ۵۰٪ یا بیشتر سهام یا مالکیت ذی‌نفعانه است. استثنای سقف برای Qualified Non-Profit Organization، مطابق تعریف بند ۱ (501(c)(3) آمریکا یا معادل غیرانتفاعی/خیریه در حوزهٔ قضایی دیگر)، صرفاً استفادهٔ غیرتجاری/پژوهشی را پوشش می‌دهد. شرایط اطلاع‌رسانی و بازتوزیع مجوز نیز برقرار است."
+    ],
+    "evidenceIds": [
+      "evidence:sep26-base-license"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:sep26-base-api-json",
+    "evidence:sep26-base-readme-md",
+    "evidence:sep26-base-license",
+    "evidence:sep26-base-blog-html"
+  ],
+  "thinkingMode": "non-thinking-only"
+});
+models.push({
+  "id": "model:liquidai-lfm2-5-vl-3b-dspark",
+  "familyId": "family:lfm",
+  "exactName": "LFM2.5-VL-3B-DSpark",
+  "publisher": "LiquidAI",
+  "version": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
+  "aliases": [
+    "LiquidAI/LFM2.5-VL-3B-DSpark"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 0.279468801,
+    "evidenceIds": [
+      "evidence:sep26-draft-api-json"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "other",
+  "inputModalities": [],
+  "outputModalities": [],
+  "applications": [],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "not-applicable"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-24",
+  "announcedOn": "2026-09-24",
+  "lastReviewedOn": "2026-09-26",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "LFM Open License 1.0",
+      "evidenceIds": [
+        "evidence:sep26-draft-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/LICENSE",
+      "evidenceIds": [
+        "evidence:sep26-draft-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:sep26-draft-license"
+      ]
+    },
+    "restrictions": [
+      "استفادهٔ تجاری مشروط به سقف درآمد سالانهٔ ۱۰ میلیون دلار و شرایط بندهای ۱ و ۵ است. تعریف Threshold «۱۰ میلیون دلار یا بیشتر» است، اما بند اجرایی از not exceeding/exceeds استفاده می‌کند؛ وضعیت دقیقاً ۱۰ میلیون دلار در این بررسی تفسیر قطعی نشده است. You فرد یا شخصیت حقوقی است؛ Legal Entity شامل نهاد اقدام‌کننده و نهادهای کنترل‌کننده، تحت کنترل یا تحت کنترل مشترک است. کنترل شامل اختیار مدیریت، مالکیت ۵۰٪ یا بیشتر سهام یا مالکیت ذی‌نفعانه است. استثنای سقف برای Qualified Non-Profit Organization، مطابق تعریف بند ۱ (501(c)(3) آمریکا یا معادل غیرانتفاعی/خیریه در حوزهٔ قضایی دیگر)، صرفاً استفادهٔ غیرتجاری/پژوهشی را پوشش می‌دهد. شرایط اطلاع‌رسانی و بازتوزیع مجوز نیز برقرار است."
+    ],
+    "evidenceIds": [
+      "evidence:sep26-draft-license"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:sep26-draft-api-json",
+    "evidence:sep26-draft-readme-md",
+    "evidence:sep26-draft-license",
+    "evidence:sep26-dspark-blog-html"
+  ],
+  "dependency": {
+    "kind": "speculative-drafter",
+    "targetModelId": "model:liquidai-lfm2-5-vl-3b",
+    "evidenceIds": [
+      "evidence:sep26-draft-readme-md"
+    ]
+  }
+});

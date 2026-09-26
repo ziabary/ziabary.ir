@@ -1,0 +1,122 @@
+[
+  {
+    "file": "base-api.json",
+    "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B",
+    "accessedOn": "2026-09-26",
+    "sha256": "d2df33707918be2bac48ed3c9bdf1087483b2e684a3b281ac852186037de7485",
+    "status": "captured"
+  },
+  {
+    "file": "base-README.md",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/README.md",
+    "accessedOn": "2026-09-26",
+    "sha256": "7453c0e9cde760baccb06ef2fb4ac15d63c61ad4cfff6831d337d4a530a250ad",
+    "status": "captured",
+    "revision": "35a118d938ce6d123ac2d371649f24a8efb69058"
+  },
+  {
+    "file": "base-LICENSE",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/LICENSE",
+    "accessedOn": "2026-09-26",
+    "sha256": "30adf9d6478191fb87f2424f63ba0728598335aaf99cd2848ef17e8e545fe94b",
+    "status": "captured",
+    "revision": "35a118d938ce6d123ac2d371649f24a8efb69058"
+  },
+  {
+    "file": "base-config.json",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/35a118d938ce6d123ac2d371649f24a8efb69058/config.json",
+    "accessedOn": "2026-09-26",
+    "sha256": "68ed2ea181e1fe305a43b8d5b68e9b912f1f6fd9fcb2a3c45006077ff171cb7f",
+    "status": "captured",
+    "revision": "35a118d938ce6d123ac2d371649f24a8efb69058"
+  },
+  {
+    "file": "draft-api.json",
+    "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B-DSpark",
+    "accessedOn": "2026-09-26",
+    "sha256": "ee333e512f2177f297cb92fe4f413a9e10cc699f2c470c5baec529c5e391ab86",
+    "status": "captured"
+  },
+  {
+    "file": "draft-README.md",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/README.md",
+    "accessedOn": "2026-09-26",
+    "sha256": "e2506a13bb6712d7b6354bfd957210b3b873f5e58bd6c365fae0cf5e4704b983",
+    "status": "captured",
+    "revision": "af77e9306a26e8625fde74d2a3051ab6d21bd955"
+  },
+  {
+    "file": "draft-LICENSE",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/LICENSE",
+    "accessedOn": "2026-09-26",
+    "sha256": "9953509cbd8c1c6ce7b06ddf74fcc204a892692316201dd8f7400a84790d4120",
+    "status": "captured",
+    "revision": "af77e9306a26e8625fde74d2a3051ab6d21bd955"
+  },
+  {
+    "file": "draft-config.json",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark/raw/af77e9306a26e8625fde74d2a3051ab6d21bd955/config.json",
+    "accessedOn": "2026-09-26",
+    "sha256": "d27752772953bb64e70a6a1c5a28b23b03dfb76bb920a001184b87dbf61d98df",
+    "status": "captured",
+    "revision": "af77e9306a26e8625fde74d2a3051ab6d21bd955"
+  },
+  {
+    "file": "gguf-api.json",
+    "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF",
+    "accessedOn": "2026-09-26",
+    "sha256": "20a169ce5f416fb53ea83c39697e303e097b3bff65ed4cd511407e308500c31d",
+    "status": "captured"
+  },
+  {
+    "file": "gguf-README.md",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/README.md",
+    "accessedOn": "2026-09-26",
+    "sha256": "0a1c758f9cd2ba54ff53c195e26b2dda438ea078584eaee936a3ede3c50f06f4",
+    "status": "captured",
+    "revision": "5ff73699214238467e230f40bf12b4a5ffa445be"
+  },
+  {
+    "file": "gguf-LICENSE",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF/raw/5ff73699214238467e230f40bf12b4a5ffa445be/LICENSE",
+    "accessedOn": "2026-09-26",
+    "sha256": "9953509cbd8c1c6ce7b06ddf74fcc204a892692316201dd8f7400a84790d4120",
+    "status": "captured",
+    "revision": "5ff73699214238467e230f40bf12b4a5ffa445be"
+  },
+  {
+    "file": "release.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11182",
+    "accessedOn": "2026-09-26",
+    "sha256": "199207e3fb683f78e315709fcb6508f4940f27290a98e4b85ac2d662bf0eb39e",
+    "status": "captured"
+  },
+  {
+    "file": "commit.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/e9f824d8c0f011662a742c9d15d4aa18a41e32c0",
+    "accessedOn": "2026-09-26",
+    "sha256": "660e26de4adf2adb390f15d009387943a55285c8eb8e41ce4d5488b206cd6b99",
+    "status": "captured"
+  },
+  {
+    "file": "compass.html",
+    "url": "https://cohere.com/blog/compass-cloud-beta",
+    "accessedOn": "2026-09-26",
+    "sha256": "b57e1a67a9a227ced3cdb99d6f373aa64ca130e1d201f92bca85a66eee44af4a",
+    "status": "captured"
+  },
+  {
+    "file": "base-blog.html",
+    "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+    "accessedOn": "2026-09-26",
+    "sha256": "6b7ac06486f36895b2e96278bd474553f19364dbc2a596b1642c0adefe83e7ea",
+    "status": "captured"
+  },
+  {
+    "file": "dspark-blog.html",
+    "url": "https://www.liquid.ai/blog/lfm2-5-vl-dspark",
+    "accessedOn": "2026-09-26",
+    "sha256": "3ba1196ece3a788320c1fff8a91a315007463612f7394dadc89f829fda0405d0",
+    "status": "captured"
+  }
+]

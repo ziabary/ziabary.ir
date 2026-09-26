@@ -1354,5 +1354,8 @@
   "start.hardware.quantization": "چهاربیتی‌کردن مدل",
   "start.software.engine": "انتخاب نرم‌افزار",
   "start.software.serving": "از یک کاربر تا سرویس سازمانی",
-  "model-kind.image-generation": "ساخت و ویرایش تصویر"
+  "model-kind.image-generation": "ساخت و ویرایش تصویر",
+  "sep26.dependency": "مکمل آزمایشی؛ نیازمند {0}؛ حافظهٔ ترکیب نامعلوم",
+  "sep26.speedup": "شتاب انتها‌به‌انتها نسبت به همان مدل بدون DSpark",
+  "sep26.performance-note": "گزارش ناشر، شش وظیفهٔ بینایی؛ batch=1 و temperature=0. H100/SGLang/BF16 با block=9: 1.64–2.27×؛ M5 Max/MLX-VLM/FP16 با block=8: 1.56–2.62×؛ M3 Ultra/llama.cpp/FP16 با block=8: 1.30–1.77×. سقف خروجی Apple برابر 2048 توکن است. نسبت زمان انتها‌به‌انتهاست، نه tok/s، TTFT یا کیفیت؛ به فارسی، RTX 4090، کوانتیزاسیون یا هم‌زمانی تعمیم داده نشود. DSpark تولید توکن را هدف می‌گیرد، نه شتاب مستقیم vision encoding یا prefill. نسخهٔ دقیق موتورهای آزمون و revision وزن‌های ارزیابی‌شده ثبت نشده‌اند؛ نسخه‌های حداقل پشتیبانی جای آن‌ها نیستند."
 }

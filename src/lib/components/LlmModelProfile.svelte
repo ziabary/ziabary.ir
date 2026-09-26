@@ -65,10 +65,14 @@
         </div>
         {#if model.configurationContext?.state === 'known'}<p>{ {fa:'مقدار فایل تنظیمات',en:'Configuration value',es:'Valor de configuración'}[locale]}: <bdi>{numbers.format(model.configurationContext.value)} tokens</bdi></p>{/if}
         {#if model.contextExtension}<p>{model.contextExtension.condition}</p>{/if}
-        {#if locale !== 'fa'}{#each model.license.restrictions ?? [] as restriction}<p>{restriction}</p>{/each}{/if}
+        <div class="profile-license">
+          <LlmValue value={row.cells.license} />
+          <LlmValue value={row.details['commercial-use']} />
+          {#each model.license.restrictions ?? [] as restriction}<p>{restriction}</p>{/each}
+        </div>
         {#if model.specializedSpecs}<div class="specialized-specs">{#each Object.entries(model.specializedSpecs).filter(([key, value]) => key === 'poolingOrScoring' && !(value.state === 'known' && uses.some(use => use.conditions.includes(String(value.value))))) as [key,value]}<p><LlmValue value={value.state === 'known' ? {state: 'known', display: String(value.value)} : value} /></p>{/each}</div>{/if}
         {#if profile.languageSummary}<p class="muted">{profile.languageSummary}</p>{/if}
-        <h3>{t('LlmModelProfile.1071')}</h3>
+        {#if uses.length}<h3>{t('LlmModelProfile.1071')}</h3>{/if}
         {#each uses as use}<article class="use-card"><small>{modelUseRoleLabels[use.role]}</small><h4>{use.summary}</h4>{#if use.description && use.description !== profile.introduction}<p>{use.description}</p>{/if}{#if use.conditions.length}<ul>{#each use.conditions as condition}<li>{condition}</li>{/each}</ul>{/if}<small class="muted">{use.basis === 'publisher-summary' ? t('LlmModelProfile.1072') : t('LlmModelProfile.1073')}</small><LlmEvidence ids={use.evidenceIds} evidence={repository.evidence} /></article>{/each}
         <div class="start-actions"><button type="button" on:click={() => onPanel('downloads')}>{t('LlmModelProfile.1074')}</button><button type="button" on:click={() => onPanel('run')}>{t('LlmModelProfile.1075')}</button></div>
       {:else if selectedPanel === 'downloads'}

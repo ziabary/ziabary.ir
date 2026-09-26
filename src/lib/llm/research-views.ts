@@ -43,6 +43,7 @@ const quantLabel = (value: string) => value.replace('publisher checkpoint defaul
   .replace('backend-appropriate checkpoint/quantization', t('research-views.0670'))
   .replace('16-bit; FP16/BF16 not distinguished in report', t('research-views.0671'));
 const performanceGroups: Record<string, { label: string; note: string }> = {
+  'liquid-dspark-vl': { label: 'LiquidAI · DSpark · 2026-09-24', note: t('sep26.performance-note') },
   'gpustack-qwen14-h100-sharegpt': { label: 'Qwen3-14B · H100 · GPUStack', note: t('research-views.0672') },
   'gpustack-qwen32-h100-sharegpt': { label: 'Qwen3-32B · H100 · GPUStack', note: t('research-views.0673') },
   'gpustack-deepseek-h200-sharegpt': { label: t('research-views.0674'), note: t('research-views.0675') },
@@ -52,6 +53,7 @@ const performanceGroups: Record<string, { label: string; note: string }> = {
   'main-horse-gpt-fast-synthetic': { label: t('research-views.0682'), note: t('research-views.0683') }
 };
 const performanceMetrics: Record<string, { label: string; unit: string }> = {
+  endToEndSpeedup: { label: t('sep26.speedup'), unit: '×' },
   outputTokensPerSecond: { label: t('research-views.0684'), unit: 'output-token/s/aggregate' },
   prefill512TokensPerSecond: { label: t('research-views.0686'), unit: 'input-token/s' },
   decode128TokensPerSecond: { label: t('research-views.0688'), unit: 'output-token/s/aggregate' },
@@ -158,7 +160,7 @@ function compatibilityRows(repository: LlmGuideRepository, kernels = false): Llm
     const route = profile?.runGuides.find(guide => guide.engine === item.engine);
     const condition = [...new Set([...(item.conditionsFa ?? []), ...(route?.conditions ?? []), ...(run && runConfiguration(run) ? [runConfiguration(run)] : [])])].join(t('research-views.0757'));
     result.sourceIds = [...new Set([...result.sourceIds, ...(route?.evidenceIds ?? [])])];
-    result.cells = { ...result.cells, engine: engine ? textValue([engine, item.engineVersion].filter(Boolean).join(' '), { brandId: engine }) : missing, format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
+    result.cells = { ...result.cells, engine: engine ? textValue([engine, item.engineVersion].filter(Boolean).join(' '), { brandId: engine }) : missing, format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: /Apple/.test(item.hardwareLabel) ? 'apple' : 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
     result.facets = { engine: engine ? textValue(engine) : missing, task: textValue(item.task ?? 'generation'), format: textValue(item.artifactId ? 'GGUF' : item.weightFormat.includes('safetensors') ? 'safetensors' : 'checkpoint'), status: textValue(item.status), deployment: textValue(item.engine === 'llama.cpp' || item.engine === 'Ollama' ? 'local' : 'service') };
     result.details = { scope: textValue(item.userSummaryFa), condition: condition ? textValue(condition) : { state: 'unknown' }, ...(run?.servingCommandAsPublished ? { command: textValue(run.servingCommandAsPublished, { copyText: run.servingCommandAsPublished }) } : {}) };
     result.searchText += ` ${item.engine} ${item.weightFormat} ${item.hardwareLabel ?? ''}`; return result;
@@ -194,7 +196,8 @@ function performanceRows(repository: LlmGuideRepository, group: string, metric: 
     if (!definition) throw new Error(`Unknown performance metric: ${metric}`);
     const result = row(repository, item.id, item.modelRepository?.split('/')[1] ?? item.modelLabel ?? '', item.modelRepository, item.sourceIds);
     result.sortGroup = `${item.publicationGroup}:${metric}`;
-    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion ?? item.engineRevision].filter(Boolean).join(' '), { brandId: item.engine }), hardware: textValue(`${faNumber(item.gpuCount)} × ${item.hardwareLabel}`, { brandId: 'nvidia' }), metric: textValue(definition.label), value: number(item.metrics[metric], definition.unit), ttft: item.metrics.meanTtftMs !== undefined ? number(item.metrics.meanTtftMs / 1000, 's') : missing, format: textValue(quantLabel(item.weightFormat)), configuration: runConfiguration(item) ? textValue(runConfiguration(item)) : missing, conditions: textValue(performanceGroups[item.publicationGroup].note), source: source(item.sourceIds) };
+    if (metric === 'endToEndSpeedup') result.cells.model = textValue(`${result.label} · ${item.protocol.dataset}`);
+    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion ?? item.engineRevision].filter(Boolean).join(' '), { brandId: item.engine }), hardware: textValue(`${faNumber(item.gpuCount)} × ${item.hardwareLabel}`, { brandId: /Apple/.test(item.hardwareLabel) ? 'apple' : 'nvidia' }), metric: textValue(definition.label), value: number(item.metrics[metric], definition.unit), ttft: item.metrics.meanTtftMs !== undefined ? number(item.metrics.meanTtftMs / 1000, 's') : missing, format: textValue(quantLabel(item.weightFormat)), configuration: runConfiguration(item) ? textValue(runConfiguration(item)) : missing, conditions: textValue(performanceGroups[item.publicationGroup].note), source: source(item.sourceIds) };
     result.facets = { engine: textValue(item.engine), format: textValue(item.weightFormat), hardware: textValue(item.hardwareLabel) };
     result.details = { group: textValue(performanceGroups[item.publicationGroup].label), scope: textValue(performanceGroups[item.publicationGroup].note), ...(item.servingCommandAsPublished ? { command: textValue(item.servingCommandAsPublished, { copyText: item.servingCommandAsPublished }) } : {}), ...(item.sourceLocator ? { locator: textValue(item.sourceLocator) } : {}), ...(item.engineRevisionUrl ? { revision: textValue(item.engineRevision ?? t('research-views.0761'), { href: item.engineRevisionUrl }) } : {}) };
     result.details.protocol = textValue(Object.entries(item.protocol).map(([key, value]) => `${protocolLabels[key] ?? key}: ${typeof value === 'number' ? faNumber(value, 3) : value}`).join('\n'));
@@ -315,13 +318,13 @@ function enrichExistingRows(repository: LlmGuideRepository, all: Record<LlmViewI
     const language = textValue(model?.languages.filter(item => item.declared.state === 'known' && item.declared.value).map(item => item.language).join(', ') || '—', {
       caveat: targetLanguage === 'all' ? undefined : `${targetLanguage}: ${t('language.evidence.' + evidenceStatus)}`
     });
-    const license = model?.license.name.state === 'known' ? textValue(model.license.name.value, { href: model.license.url.state === 'known' ? model.license.url.value : undefined, caveat: locale !== 'fa' && model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? t('research-views.0886') : undefined }) : { state: 'unknown' as const };
+    const license = model?.license.name.state === 'known' ? textValue(model.license.name.value, { href: model.license.url.state === 'known' ? model.license.url.value : undefined, caveat: model.license.commercialUse.state === 'known' && model.license.commercialUse.value !== 'allowed' ? t('research-views.0886') : undefined }) : { state: 'unknown' as const };
     return { ...item, cells: { ...item.cells, 'published-quality': quality, ...(id === 'specialized-models' ? {'quality-metric': quality} : {}), 'target-language': language, license }, facets: { ...item.facets, 'language-evidence': textValue(evidenceStatus, {raw: evidenceStatus}) } };
   });
   return rows;
 }
 function enrichExistingConfig(config: LlmViewConfig): LlmViewConfig {
-  if (locale === 'fa') config = { ...config, filters: config.filters.filter(filter => !['commercial-use','license'].includes(filter.id)) };
+  if (locale === 'fa' && config.id !== 'model-catalog') config = { ...config, filters: config.filters.filter(filter => !['commercial-use','license'].includes(filter.id)) };
   if (['model-catalog','model-suitability'].includes(config.id)) config = { ...config, filters: [
     ...config.filters.filter(filter => filter.id !== 'persian-evidence'),
     selectFilter('language-evidence', t('language.evidence-filter'), ['independently-evaluated','published-result','publisher-claimed','not-recorded'].map(status => [status,t('language.evidence.'+status)]), true)
