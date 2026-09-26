@@ -73,3 +73,41 @@ test('rejects an empty or incomplete build', async t => {
   await rm(join(directory, 'index.html'));
   await assert.rejects(sitemapPages(directory), /indexable home page/);
 });
+
+const articleHtml = (published, modified) => `<html><head><meta property="article:published_time" content="${published}">${modified === undefined ? '' : `<meta content='${modified}' property='article:modified_time'>`}</head><body></body></html>`;
+
+test('uses each edition’s editorial dates and stays stable across rebuilds', async t => {
+  const { directory, put, generate } = await fixture(t);
+  const original = articleHtml('2020-01-02', '2025-02-03');
+  await put('articles/example/index.html', original);
+  await put('en/articles/example/index.html', articleHtml('2020-01-02'));
+  await generate();
+  const before = await readFile(join(directory, 'sitemap.xml'), 'utf8');
+  assert.match(before, /\/articles\/example\/<\/loc><lastmod>2025-02-03<\/lastmod>/);
+  assert.match(before, /\/en\/articles\/example\/<\/loc><lastmod>2020-01-02<\/lastmod>/);
+  assert.match(before, /<loc>https:\/\/ziabary.ir\/<\/loc><\/url>/);
+  assert.doesNotMatch(before, /changefreq|priority/);
+  // Rewriting build output and changing presentation must not refresh dates.
+  await put('articles/example/index.html', original.replace('<body>', '<body class="rebuilt">'));
+  await generate();
+  assert.equal(await readFile(join(directory, 'sitemap.xml'), 'utf8'), before);
+  await put('articles/example/index.html', articleHtml('2020-01-02', '2025-03-04'));
+  await assert.rejects(verifySitemap(directory), /stale or invalid/);
+  await generate();
+  await verifySitemap(directory);
+});
+
+test('rejects invalid or reversed editorial dates instead of inventing lastmod', async t => {
+  const { directory, put } = await fixture(t);
+  for (const modified of ['2025-02-30', 'today', '', '2019-12-31']) {
+    await put('articles/example/index.html', articleHtml('2020-01-02', modified));
+    await assert.rejects(sitemapPages(directory), /Invalid editorial date|precedes publication/);
+  }
+});
+
+test('ignores dates inside article body examples and noindex pages', async t => {
+  const { directory, put } = await fixture(t);
+  await put('example/index.html', '<html><head></head><body><meta property="article:modified_time" content="2025-01-01"></body></html>');
+  await put('draft/index.html', articleHtml('invalid').replace('<head>', '<head><meta name="robots" content="noindex">'));
+  assert.doesNotMatch(sitemapXml(await sitemapPages(directory)), /lastmod/);
+});

@@ -5,6 +5,29 @@ import { fileURLToPath } from 'node:url';
 export const buildDir = fileURLToPath(new URL('../build/', import.meta.url));
 export const siteUrl = 'https://ziabary.ir';
 
+function articleLastmod(html, path) {
+  // Only the page's own head metadata is authoritative, never filesystem mtime
+  // or the build clock. ArticleSeo derives these values from updated and date.
+  const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? '';
+  const dates = new Map();
+  for (const [tag] of head.matchAll(/<meta\b[^>]*>/gi)) {
+    const attributes = Object.fromEntries([...tag.matchAll(/([\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)]
+      .map(([, key, double, single, bare]) => [key.toLowerCase(), double ?? single ?? bare]));
+    const property = attributes.property?.toLowerCase();
+    if (['article:modified_time', 'article:published_time'].includes(property)) {
+      const value = attributes.content ?? '';
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString().slice(0, 10) !== value) {
+        throw new Error(`Invalid editorial date for sitemap ${path}: ${property}=${value}`);
+      }
+      dates.set(property, value);
+    }
+  }
+  const published = dates.get('article:published_time');
+  const modified = dates.get('article:modified_time');
+  if (modified && published && modified < published) throw new Error(`Sitemap modification date precedes publication: ${path}`);
+  return modified ?? published;
+}
+
 function isNoindex(html) {
   return [...html.matchAll(/<meta\b[^>]*>/gi)].some(([tag]) => {
     const attributes = Object.fromEntries([...tag.matchAll(/([\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)]
@@ -24,7 +47,7 @@ export async function sitemapPages(directory = buildDir) {
         const path = relativePath === 'index.html' ? '/' : `/${relativePath.replace(/\/index\.html$/, '')}/`;
         if (/^\/(?:admin|404)(?:\/|$)/.test(path)) continue;
         const html = await readFile(file, 'utf8');
-        if (!isNoindex(html)) pages.push({ file, path, html });
+        if (!isNoindex(html)) pages.push({ file, path, html, lastmod: articleLastmod(html, path) });
       }
     }
   }
@@ -35,6 +58,6 @@ export async function sitemapPages(directory = buildDir) {
 
 export function sitemapXml(pages) {
   const escapeXml = (value) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&apos;');
-  const urls = pages.map(({ path }) => `  <url><loc>${escapeXml(new URL(path, siteUrl).href)}</loc></url>`).join('\n');
+  const urls = pages.map(({ path, lastmod }) => `  <url><loc>${escapeXml(new URL(path, siteUrl).href)}</loc>${lastmod ? `<lastmod>${escapeXml(lastmod)}</lastmod>` : ''}</url>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 }
