@@ -1,16 +1,18 @@
 ---
 title: "RAG سازمانی فقط embedding نیست؛ مجوز دسترسی باید در خود بازیابی اجرا شود"
 slug: rag-retrieval-access-control-compass
+translationGroup: rag-retrieval-access-control-compass
 lang: fa
 date: "2026-09-26"
 faDate: "۴ مهر ۱۴۰۵"
 category: هوش مصنوعی
 excerpt: "پاسخ درست می‌تواند از سندی خارج از مجوز کاربر آمده باشد. به بهانهٔ معرفی Compass Cloud، مرز کنترل دسترسی در بازیابی و تفاوت آن با محل پردازش داده را بررسی می‌کنیم."
 readTime: "۷ دقیقه"
+cover: /images/articles/rag-retrieval-access-control-compass/cover.png
 author: "مهران ضیابری"
 toc: auto
 related: []
-draft: true
+draft: false
 ---
 
 کاربر از دستیار سازمان می‌پرسد «علت تغییر بودجهٔ این پروژه چه بود؟» و پاسخی دقیق، مستند و قانع‌کننده می‌گیرد. مشکل این است که یکی از منابع پاسخ، صورت‌جلسه‌ای بوده که این کاربر اجازهٔ خواندنش را نداشته است. این مثال فرضی نشان می‌دهد چرا در ارزیابی سامانهٔ RAG، درستی پاسخ و درستی دسترسی باید دو معیار جدا باشند.

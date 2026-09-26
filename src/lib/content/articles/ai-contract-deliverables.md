@@ -1,6 +1,7 @@
 ---
 title: "قرارداد هوش مصنوعی؛ دقیقاً چه چیزی را باید تحویل بگیریم؟"
 slug: ai-contract-deliverables
+translationGroup: ai-contract-deliverables
 lang: fa
 date: "2026-09-26"
 faDate: "۴ مهر ۱۴۰۵"

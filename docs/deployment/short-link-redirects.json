@@ -372,6 +372,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=arracc",
+    "destination": "https://ziabary.ir/articles/rag-retrieval-access-control-compass/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=armsftt",
     "destination": "https://ziabary.ir/articles/right-model-size-for-the-task/",
     "status": 301,
@@ -476,6 +482,12 @@
   {
     "source": "https://ziabary.ir/?t=eaalnc",
     "destination": "https://ziabary.ir/en/articles/accessing-legacy-numenta-content/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=eaacde",
+    "destination": "https://ziabary.ir/en/articles/ai-contract-deliverables-en/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -608,6 +620,12 @@
   {
     "source": "https://ziabary.ir/?t=earckftite",
     "destination": "https://ziabary.ir/en/articles/rag-cag-kag-fine-tuning-instruction-tuning-en/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=earracce",
+    "destination": "https://ziabary.ir/en/articles/rag-retrieval-access-control-compass-en/",
     "status": 301,
     "preserveQueryString": false
   },
@@ -900,6 +918,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=eaacde2",
+    "destination": "https://ziabary.ir/es/articles/ai-contract-deliverables-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=eaaisswkage2",
     "destination": "https://ziabary.ir/es/articles/ai-infrastructure-security-starts-with-kernel-and-gpu-es/",
     "status": 301,
@@ -992,6 +1016,12 @@
   {
     "source": "https://ziabary.ir/?t=earckftite2",
     "destination": "https://ziabary.ir/es/articles/rag-cag-kag-fine-tuning-instruction-tuning-es/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
+    "source": "https://ziabary.ir/?t=earracce2",
+    "destination": "https://ziabary.ir/es/articles/rag-retrieval-access-control-compass-es/",
     "status": 301,
     "preserveQueryString": false
   },

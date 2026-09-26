@@ -203,6 +203,38 @@
       }
     ]
   },
+  "/images/articles/ai-governance-architecture-board-to-runtime/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2222162,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/530e40daa4628783-320.webp",
+        "bytes": 17918
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/530e40daa4628783-640.webp",
+        "bytes": 55914
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/530e40daa4628783-960.webp",
+        "bytes": 105936
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/530e40daa4628783-1440.webp",
+        "bytes": 191590
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/530e40daa4628783-1672.webp",
+        "bytes": 232728
+      }
+    ]
+  },
   "/images/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/ai-compute-stack.png": {
     "width": 1609,
     "height": 549,
@@ -2851,6 +2883,38 @@
       }
     ]
   },
+  "/images/articles/national-ai-organization-central-core-or-federated-architecture/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 3054453,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/f97a4c828b590b36-320.webp",
+        "bytes": 22564
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/f97a4c828b590b36-640.webp",
+        "bytes": 81730
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/f97a4c828b590b36-960.webp",
+        "bytes": 171096
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/f97a4c828b590b36-1440.webp",
+        "bytes": 336460
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/f97a4c828b590b36-1672.webp",
+        "bytes": 418846
+      }
+    ]
+  },
   "/images/articles/national-ai-organization-from-law-to-impact/cover.webp": {
     "width": 1224,
     "height": 364,
@@ -3261,6 +3325,38 @@
         "width": 1600,
         "src": "/images/responsive/634005dee711f067-1600.webp",
         "bytes": 87018
+      }
+    ]
+  },
+  "/images/articles/rag-retrieval-access-control-compass/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 2119771,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/1760fa623aacfe11-320.webp",
+        "bytes": 17326
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/1760fa623aacfe11-640.webp",
+        "bytes": 48518
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/1760fa623aacfe11-960.webp",
+        "bytes": 89696
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/1760fa623aacfe11-1440.webp",
+        "bytes": 158576
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/1760fa623aacfe11-1672.webp",
+        "bytes": 189636
       }
     ]
   },
