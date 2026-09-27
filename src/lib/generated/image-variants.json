@@ -10098,6 +10098,33 @@
       }
     ]
   },
+  "/images/media-covers/irinn-national-ai-private-sector-2026-09-26.png": {
+    "width": 1080,
+    "height": 792,
+    "originalBytes": 657895,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/9879acd62c29ac0d-320.webp",
+        "bytes": 11798
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/9879acd62c29ac0d-640.webp",
+        "bytes": 30622
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/9879acd62c29ac0d-960.webp",
+        "bytes": 51984
+      },
+      {
+        "width": 1080,
+        "src": "/images/responsive/9879acd62c29ac0d-1080.webp",
+        "bytes": 63382
+      }
+    ]
+  },
   "/images/media-covers/linkedin-7502684269819916289.jpg": {
     "width": 720,
     "height": 1280,

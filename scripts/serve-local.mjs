@@ -1,4 +1,5 @@
 import { createServer } from 'node:http';
+import { createReadStream } from 'node:fs';
 import { resolveShortLink } from '../src/lib/short-links.mjs';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
@@ -8,7 +9,7 @@ const shortLinkMode = process.env.LOCAL_SHORT_LINK_MODE ?? 'http';
 if (!['http', 'browser'].includes(shortLinkMode)) throw new Error('LOCAL_SHORT_LINK_MODE must be http or browser');
 const shortLinks = JSON.parse(await readFile(`${root}/short-links.json`, 'utf8'));
 const redirects = JSON.parse(await readFile(new URL('../config/redirects.json', import.meta.url), 'utf8'));
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.pdf': 'application/pdf', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain; charset=utf-8' };
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.pdf': 'application/pdf', '.mp4': 'video/mp4', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain; charset=utf-8' };
 await stat(`${root}/index.html`);
 createServer(async (req, res) => {
   try {
@@ -40,6 +41,20 @@ createServer(async (req, res) => {
       path = resolve(path, 'index.html'); info = await stat(path);
     }
     const headers = { 'Content-Type': types[extname(path)] ?? 'application/octet-stream', 'Content-Length': info.size, 'Cache-Control': 'no-cache' };
+    if (extname(path) === '.mp4') {
+      headers['Accept-Ranges'] = 'bytes';
+      if (req.method === 'GET' && req.headers.range) {
+        const match = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range);
+        const start = match?.[1] ? Number(match[1]) : Math.max(0, info.size - Number(match?.[2]));
+        const end = match?.[1] && match[2] ? Math.min(Number(match[2]), info.size - 1) : info.size - 1;
+        if (!match || (!match[1] && !match[2]) || !Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start > end || start >= info.size) {
+          res.writeHead(416, { 'Content-Range': `bytes */${info.size}` }).end(); return;
+        }
+        res.writeHead(206, { ...headers, 'Content-Range': `bytes ${start}-${end}/${info.size}`, 'Content-Length': end - start + 1 });
+        createReadStream(path, { start, end }).on('error', () => res.destroy()).pipe(res);
+        return;
+      }
+    }
     if (url.searchParams.has('q') || url.searchParams.has('category')) headers['X-Robots-Tag'] = 'noindex, follow';
     res.writeHead(200, headers);
     res.end(req.method === 'HEAD' ? undefined : await readFile(path));

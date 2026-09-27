@@ -190,7 +190,7 @@ function objectHeaders(key) {
     '.gif': 'image/gif', '.html': 'text/html; charset=utf-8', '.ico': 'image/x-icon',
     '.jpeg': 'image/jpeg', '.jpg': 'image/jpeg', '.js': 'text/javascript; charset=utf-8',
     '.json': 'application/json; charset=utf-8', '.md': 'text/markdown; charset=utf-8',
-    '.pdf': 'application/pdf', '.png': 'image/png', '.svg': 'image/svg+xml',
+    '.pdf': 'application/pdf', '.mp4': 'video/mp4', '.png': 'image/png', '.svg': 'image/svg+xml',
     '.ttf': 'font/ttf', '.txt': 'text/plain; charset=utf-8', '.webmanifest': 'application/manifest+json',
     '.webp': 'image/webp', '.woff': 'font/woff', '.woff2': 'font/woff2', '.xml': 'application/xml'
   };

@@ -6,6 +6,7 @@
   import { articles } from '$lib/content';
   import { galleryItems } from '$lib/gallery';
   import MediaEntry from '$lib/components/MediaEntry.svelte';
+  import MediaClip from '$lib/components/MediaClip.svelte';
   import { mediaItems, mediaSources } from '$lib/news';
   import { videoItems } from '$lib/videos';
   import GalleryCollection from '$lib/components/GalleryCollection.svelte';
@@ -144,21 +145,33 @@
       </div>
       <div class="video-archive">
         {#each videoItems as item}
-          <a class="video-card" href={item.url} target="_blank" rel="noreferrer">
-            <div class="video-card-visual" class:has-thumbnail={Boolean(item.thumbnail)}>
-              {#if item.thumbnail}
-                <img {...imageAttributes(item.thumbnail, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" />
-              {/if}
-              <i class={item.kind === 'صوت' || item.kind === 'پادکست' ? 'fa-solid fa-headphones' : 'fa-solid fa-play'} aria-hidden="true"></i>
-              <span>{item.kind}</span>
-            </div>
-            <div class="video-card-body">
-              <p><strong>{item.source}</strong><span class="fa-num">{item.faDate}</span></p>
-              <h2>{item.title}</h2>
-              <div>{item.summary}</div>
-              <b>{item.kind === 'صوت' || item.kind === 'پادکست' ? 'شنیدن' : 'مشاهده'} در {videoPlatform(item.url, item.source)} <i>↗</i></b>
-            </div>
-          </a>
+          {#if item.clip}
+            <article class="video-card video-card-local">
+              <MediaClip src={item.clip} poster={item.thumbnail} title={item.title} duration={item.clipDuration} />
+              <div class="video-card-body">
+                <p><strong>{item.source}</strong><span class="fa-num">{item.faDate}</span></p>
+                <h2>{item.title}</h2>
+                <div>{item.summary}</div>
+                <a class="video-source-link" href={item.url} target="_blank" rel="noreferrer">مشاهدهٔ برنامه در {videoPlatform(item.url, item.source)} <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          {:else}
+            <a class="video-card" href={item.url} target="_blank" rel="noreferrer">
+              <div class="video-card-visual" class:has-thumbnail={Boolean(item.thumbnail)}>
+                {#if item.thumbnail}
+                  <img {...imageAttributes(item.thumbnail, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" />
+                {/if}
+                <i class={item.kind === 'صوت' || item.kind === 'پادکست' ? 'fa-solid fa-headphones' : 'fa-solid fa-play'} aria-hidden="true"></i>
+                <span>{item.kind}</span>
+              </div>
+              <div class="video-card-body">
+                <p><strong>{item.source}</strong><span class="fa-num">{item.faDate}</span></p>
+                <h2>{item.title}</h2>
+                <div>{item.summary}</div>
+                <b>{item.kind === 'صوت' || item.kind === 'پادکست' ? 'شنیدن' : 'مشاهده'} در {videoPlatform(item.url, item.source)} <i>↗</i></b>
+              </div>
+            </a>
+          {/if}
         {/each}
       </div>
     </div>
@@ -171,3 +184,8 @@
     </div>
   {/if}
 </main>
+
+<style>
+  .video-card-local:hover { transform: none; }
+  .video-source-link { margin-top: auto; color: var(--teal); font-size: 12px; text-decoration: underline; text-underline-offset: 4px; padding-block: 8px; }
+</style>
