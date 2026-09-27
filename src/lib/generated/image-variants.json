@@ -235,6 +235,38 @@
       }
     ]
   },
+  "/images/articles/ai-governance-beyond-rulemaking/cover.png": {
+    "width": 1672,
+    "height": 940,
+    "originalBytes": 1958488,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/717f6226558c6c63-320.webp",
+        "bytes": 14762
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/717f6226558c6c63-640.webp",
+        "bytes": 41078
+      },
+      {
+        "width": 960,
+        "src": "/images/responsive/717f6226558c6c63-960.webp",
+        "bytes": 72456
+      },
+      {
+        "width": 1440,
+        "src": "/images/responsive/717f6226558c6c63-1440.webp",
+        "bytes": 121038
+      },
+      {
+        "width": 1672,
+        "src": "/images/responsive/717f6226558c6c63-1672.webp",
+        "bytes": 147388
+      }
+    ]
+  },
   "/images/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/ai-compute-stack.png": {
     "width": 1609,
     "height": 549,

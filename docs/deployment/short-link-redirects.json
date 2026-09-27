@@ -36,6 +36,12 @@
     "preserveQueryString": false
   },
   {
+    "source": "https://ziabary.ir/?t=aagbr",
+    "destination": "https://ziabary.ir/articles/ai-governance-beyond-rulemaking/",
+    "status": 301,
+    "preserveQueryString": false
+  },
+  {
     "source": "https://ziabary.ir/?t=aaisswkag",
     "destination": "https://ziabary.ir/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/",
     "status": 301,
