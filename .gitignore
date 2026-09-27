@@ -17,3 +17,7 @@ npm-debug.log*
 
 # Search indexes are rebuilt from published content for dev and production.
 /static/search/
+
+# Rebuilt by prepare:content; keep generated icon and PDF metadata local.
+/src/lib/generated/icons.css
+/src/lib/generated/pdf-sizes.json
