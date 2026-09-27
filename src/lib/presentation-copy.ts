@@ -5,6 +5,7 @@ export const presentationCopy = {
     languageTitle: '', languageNote: '', languageBadge: '', slides: 'اسلاید', cover: 'اسلاید نخست ارائهٔ',
     venue: 'محل ارائه', event: 'رویداد', count: 'تعداد', details: 'مشاهده شناسنامه و فایل ارائه', arrow: '←',
     topics: 'سرفصل‌ها', facts: 'شناسنامه ارائه', kind: 'نوع', date: 'تاریخ', organizer: 'برگزارکننده',
+    authenticity: 'تصدیق اصالت · معرفی مدرس', instructorProfile: 'صفحهٔ مدرس در وب‌سایت دانشکدگان مدیریت دانشگاه تهران',
     audience: 'مخاطب', duration: 'مدت', version: 'نسخه', share: 'اشتراک‌گذاری', shareLabel: 'اشتراک‌گذاری ارائه',
     copy: 'کپی لینک', copied: 'لینک کپی شد', download: 'دریافت فایل PDF', noFile: 'فایل PDF هنوز برای این ارائه افزوده نشده است.'
   },
@@ -15,6 +16,7 @@ export const presentationCopy = {
     languageNote: 'These slide decks are mainly visual, and much of their content can be understood regardless of language. The decks as a whole are in Persian. The titles, descriptions and presentation details here are translated; the covers and PDF files are the same as in the Persian archive.',
     languageBadge: 'Slides in Persian', slides: 'slides', cover: 'First slide of', venue: 'Venue', event: 'Event', count: 'Slide count',
     details: 'View presentation details and PDF', arrow: '→', topics: 'Topics', facts: 'Presentation details', kind: 'Type', date: 'Date',
+    authenticity: 'Authenticity · Instructor reference', instructorProfile: 'Instructor profile on the University of Tehran Faculty of Management website',
     organizer: 'Organizer', audience: 'Audience', duration: 'Duration', version: 'Version', share: 'Share', shareLabel: 'Share this presentation',
     copy: 'Copy link', copied: 'Link copied', download: 'Open PDF (Persian)', noFile: 'The PDF has not yet been added for this presentation.'
   },
@@ -25,6 +27,7 @@ export const presentationCopy = {
     languageNote: 'Estas presentaciones son principalmente visuales y gran parte de su contenido se puede comprender independientemente del idioma. En conjunto, las diapositivas están en persa. Aquí se traducen los títulos, las descripciones y las fichas; las portadas y los archivos PDF son los mismos que en el archivo en persa.',
     languageBadge: 'Diapositivas en persa', slides: 'diapositivas', cover: 'Primera diapositiva de', venue: 'Lugar', event: 'Evento', count: 'Número de diapositivas',
     details: 'Ver la ficha y el PDF', arrow: '→', topics: 'Temas', facts: 'Ficha de la presentación', kind: 'Tipo', date: 'Fecha',
+    authenticity: 'Autenticidad · Referencia del docente', instructorProfile: 'Perfil del docente en el sitio de la Facultad de Administración de la Universidad de Teherán',
     organizer: 'Organiza', audience: 'Público', duration: 'Duración', version: 'Versión', share: 'Compartir', shareLabel: 'Compartir esta presentación',
     copy: 'Copiar enlace', copied: 'Enlace copiado', download: 'Abrir PDF (persa)', noFile: 'Todavía no se ha añadido el PDF de esta presentación.'
   }

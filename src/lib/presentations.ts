@@ -30,15 +30,19 @@ export type Presentation = {
   version?: string;
   cover?: string;
   pdf?: string;
+  instructorProfileUrl?: string;
   topics: string[];
   // Only the description and presentation details are translated; assets stay shared.
   translations: Record<'en' | 'es', PresentationTranslation>;
 };
 
+const dbaInstructorProfileUrl = 'https://postmba.org/professors/سید-محمد-محمدزاده-ضیابری/';
+
 // Keep the newest upload first. The home page features the first entry with a PDF.
 export const presentations: Presentation[] = [
     {
     slug: 'behind-ai-dba',
+    instructorProfileUrl: dbaInstructorProfileUrl,
     translations: {
       "en": {
         "title": "Behind the Scenes of Intelligence",
@@ -112,6 +116,7 @@ export const presentations: Presentation[] = [
   },
   {
     slug: 'enterprise-ai-governance-dba',
+    instructorProfileUrl: dbaInstructorProfileUrl,
     translations: {
       "en": {
         "title": "Enterprise AI Governance",
@@ -641,6 +646,7 @@ export type LocalizedPresentation = PresentationTranslation & {
   slideCount: number;
   cover?: string;
   pdf?: string;
+  instructorProfileUrl?: string;
 };
 
 const presentationKinds = {
@@ -656,6 +662,7 @@ export function localizePresentation(item: Presentation, locale: PresentationLoc
     kind: presentationKinds[locale][item.kind],
     slideCount: item.slideCount,
     cover: item.cover,
-    pdf: item.pdf
+    pdf: item.pdf,
+    instructorProfileUrl: item.instructorProfileUrl
   };
 }

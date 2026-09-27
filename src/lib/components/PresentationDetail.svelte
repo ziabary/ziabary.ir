@@ -109,6 +109,12 @@
         {#if item.duration}<div><dt>{copy.duration}</dt><dd>{item.duration}</dd></div>{/if}
         <div><dt>{copy.count}</dt><dd>{numbers.format(item.slideCount)} {copy.slides}</dd></div>
         {#if item.version}<div><dt>{copy.version}</dt><dd>{item.version}</dd></div>{/if}
+        {#if item.instructorProfileUrl}
+          <div>
+            <dt>{copy.authenticity}</dt>
+            <dd><a class="instructor-profile" href={item.instructorProfileUrl} hreflang="fa" target="_blank" rel="noopener noreferrer">{copy.instructorProfile}</a></dd>
+          </div>
+        {/if}
       </dl>
       <div class="share-actions" aria-label={copy.shareLabel}>
         <button type="button" class="share-button" onclick={sharePresentation}>
@@ -136,6 +142,7 @@
 </main>
 
 <style>
+  .instructor-profile { text-decoration: underline; text-underline-offset: 3px; }
   .intro-download { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
   .intro-download span { font-size: 13px; color: var(--muted); }
   .slide-language-note { border-top: 1px solid var(--line); padding-top: 18px; margin-bottom: 20px; }

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
+  import { isReturningVisit } from '$lib/visit-history.mjs';
   import { formatDate, publicationDay } from '$lib/publication.mjs';
   import { createUpdateHistory, guideUpdateHref, unreadGuideUpdates, observeUpdateRead, UPDATE_STORAGE_PREFIX, type GuideUpdate, type UpdateGuide, type UpdateLocale } from '$lib/guide-updates.mjs';
 
@@ -15,10 +16,12 @@
   let items: GuideUpdate[] = [];
   let history: ReturnType<typeof createUpdateHistory> | undefined;
   let mounted = false;
+  let returningVisit = false;
   let toast: HTMLElement | undefined;
-  $: if (mounted && history) items = unreadGuideUpdates(guide,publicationDay(),history.has);
+  $: if (mounted && returningVisit && history) items = unreadGuideUpdates(guide,publicationDay(),history.has);
   $: item = items[0];
   onMount(() => {
+    returningVisit = isReturningVisit();
     history = createUpdateHistory(() => window.localStorage);
     mounted = true;
     const onStorage = (event: StorageEvent) => {

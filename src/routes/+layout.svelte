@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { isReturningVisit } from '$lib/visit-history.mjs';
   import '$lib/generated/icons.css';
   import '../app.css';
   import '../refinement.css';
@@ -6,6 +8,8 @@
   import ImageLightbox from '$lib/components/ImageLightbox.svelte';
   import PageSeo from '$lib/components/PageSeo.svelte';
   export let data;
+
+  onMount(() => { isReturningVisit(); });
 
   const defaultPages: Record<string, { title: string; description: string; image: string; locale?: 'fa' | 'en' | 'es' }> = {
     '/': { title: 'مهران ضیابری | سید محمد محمدزاده ضیابری', description: 'مدیر فناوری، کارآفرین و پژوهشگر هوش مصنوعی؛ نوشته‌ها، دیدگاه‌ها، ارائه‌ها و تجربه‌های فنی مهران ضیابری.', image: '/images/profile/mehran-ziabary-formal.png' },

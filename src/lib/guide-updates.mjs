@@ -44,6 +44,7 @@ export const guideUpdates = [
 
 export const UPDATE_STORAGE_PREFIX = 'ziabary:guide-update:';
 export const UPDATE_VISIBLE_MS = 2000;
+export const UPDATE_WINDOW_DAYS = 7;
 const sessionSeen = new Set();
 
 /** One key per announcement avoids overwriting another tab's acknowledgements.
@@ -70,7 +71,7 @@ export function createUpdateHistory(getStorage, memory = sessionSeen) {
 /** @param {UpdateGuide} guide @param {string} today @param {(id:string)=>boolean} seen @param {GuideUpdate[]} [updates] */
 export function unreadGuideUpdates(guide, today, seen, updates = guideUpdates) {
   const cutoff = new Date(`${today}T12:00:00Z`);
-  cutoff.setUTCDate(cutoff.getUTCDate() - 45);
+  cutoff.setUTCDate(cutoff.getUTCDate() - (UPDATE_WINDOW_DAYS - 1));
   return updates.filter(item => item.guide === guide && item.date <= today && item.date >= cutoff.toISOString().slice(0,10) && !seen(item.id))
     .sort((a,b) => b.date.localeCompare(a.date));
 }
