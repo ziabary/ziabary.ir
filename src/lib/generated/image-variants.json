@@ -10062,6 +10062,28 @@
       }
     ]
   },
+  "/images/media-covers/hamshahri-1071916.jpg": {
+    "width": 720,
+    "height": 1280,
+    "originalBytes": 61107,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/images/responsive/1a4f27485ec9eb64-320.webp",
+        "bytes": 29100
+      },
+      {
+        "width": 640,
+        "src": "/images/responsive/1a4f27485ec9eb64-640.webp",
+        "bytes": 67054
+      },
+      {
+        "width": 720,
+        "src": "/images/responsive/1a4f27485ec9eb64-720.webp",
+        "bytes": 74842
+      }
+    ]
+  },
   "/images/media-covers/instagram-DL9Aa3EItyJ.jpg": {
     "width": 360,
     "height": 640,

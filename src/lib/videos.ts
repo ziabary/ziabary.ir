@@ -14,13 +14,25 @@ export const videoItems: VideoItem[] = [
     title: 'انتظارات بخش خصوصی از سازمان ملی هوش مصنوعی',
     source: 'شبکه خبر · روی خط خبر',
     kind: 'گفت‌وگوی تلویزیونی',
-    summary: 'بخشی از گفت‌وگوی مهران ضیابری در برنامه «روی خط خبر» شبکه خبر، با موضوع انتظارات بخش خصوصی از سازمان ملی هوش مصنوعی. این برنامه در ۴ مهر ۱۴۰۵ پخش شده است؛ کلیپ کوتاه را همین‌جا و برنامه را در تلوبیون ببینید.',
+    summary: 'گفت‌وگو در برنامه «روی خط خبر» شبکه خبر، با موضوع انتظارات بخش خصوصی از سازمان ملی هوش مصنوعی. این برنامه در ۴ مهر ۱۴۰۵ پخش شده است؛ کلیپ کوتاه را همین‌جا و برنامه کامل را در تلوبیون ببینید.',
     url: 'https://telewebion.net/live/irinn?e=0x16ce5f25',
     date: '2026-09-26',
     faDate: '۴ مهر ۱۴۰۵',
     thumbnail: '/images/media-covers/irinn-national-ai-private-sector-2026-09-26.png',
     clip: '/videos/irinn-national-ai-private-sector-2026-09-26.mp4',
     clipDuration: '۱:۰۴',
+    icon: 'fa-solid fa-play'
+  },  {
+    title: 'هوش مصنوعی خودسر شد',
+    source: 'همشهری',
+    kind: 'گفت‌وگوی ویدئویی',
+    summary: 'گفت‌وگو با همشهری درباره رفتار مدل‌های هوش مصنوعی خارج از چارچوب‌های تعریف‌شده و چالش کنترل آن‌ها. این کلیپ در ۴ مهر ۱۴۰۵ منتشر شده است؛ ویدیو را همین‌جا یا در صفحهٔ اصلی همشهری ببینید.',
+    url: 'https://www.hamshahrionline.ir/news/1071916/هوش-مصنوعی-خودسر-شد',
+    date: '2026-09-26',
+    faDate: '۴ مهر ۱۴۰۵',
+    thumbnail: '/images/media-covers/hamshahri-1071916.jpg',
+    clip: '/videos/hamshahri-1071916.mp4',
+    clipDuration: '۱:۳۵',
     icon: 'fa-solid fa-play'
   },
 {
