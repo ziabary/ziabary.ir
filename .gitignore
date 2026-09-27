@@ -9,6 +9,7 @@ npm-debug.log*
 
 # Large media assets are maintained locally, outside Git.
 /static/slides/
+/static/videos/
 /static/images/gallery/
 /static/images/responsive/
 
@@ -18,6 +19,21 @@ npm-debug.log*
 # Search indexes are rebuilt from published content for dev and production.
 /static/search/
 
-# Rebuilt by prepare:content; keep generated icon and PDF metadata local.
-/src/lib/generated/icons.css
-/src/lib/generated/pdf-sizes.json
+# Rebuilt by prepare:content; only source inputs belong in Git.
+/src/lib/generated/
+/static/short-links.json
+/static/short-link-core.js
+/docs/deployment/short-link-redirects.json
+
+# Video files stay outside Git even when saved outside static/videos.
+*.mp4
+*.webm
+*.mov
+*.m4v
+*.mkv
+*.avi
+
+# Compiler and interpreter caches.
+*.tsbuildinfo
+__pycache__/
+*.py[cod]

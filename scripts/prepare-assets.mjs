@@ -32,7 +32,12 @@ await Promise.all(Array.from({ length: 4 }, async () => {
     done++;
   }
 }));
-for (const path of (await files('static/slides')).filter(path => path.endsWith('.pdf'))) pdfs[path.slice(6)] = (await stat(path)).size;
+// Slide originals are managed outside Git and may be absent in a source checkout.
+const slides = await files('static/slides').catch(error => {
+  if (error.code === 'ENOENT') return [];
+  throw error;
+});
+for (const path of slides.filter(path => path.endsWith('.pdf'))) pdfs[path.slice(6)] = (await stat(path)).size;
 await writeFile('src/lib/generated/image-variants.json', JSON.stringify(Object.fromEntries(Object.entries(manifest).sort()), null, 2) + '\n');
 const browserImages = Object.fromEntries(Object.entries(manifest).sort().map(([src, item]) => [src, {
   width: item.width, height: item.height,

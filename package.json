@@ -11,6 +11,7 @@
     "test:seo": "node --test tests/page-seo.test.mjs",
     "build:verify-stable": "bash scripts/verify-stable-assets.sh",
     "preview": "vite preview",
+    "precheck": "npm run prepare:content",
     "check": "npm run verify:llm-locales && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "deploy": "npm run build && node scripts/deploy-object-storage.mjs",
     "prepare": "svelte-kit sync",

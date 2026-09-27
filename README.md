@@ -9,8 +9,8 @@ can be hosted on any object storage or CDN.
     npm install
     npm run dev
 
-The dev command runs `svelte-kit sync` first, so a fresh checkout creates
-`.svelte-kit/tsconfig.json` before Vite starts.
+The dev command prepares generated content and runs `svelte-kit sync` before
+Vite starts. `npm run check` also prepares generated content automatically.
 
 ## Validation and build
 
@@ -19,6 +19,25 @@ The dev command runs `svelte-kit sync` first, so a fresh checkout creates
     npm run preview
 
 The deployable output is written to the build directory.
+
+## Files kept outside Git
+
+Videos (including `static/videos/`), slide originals, gallery originals and build
+outputs are local assets, not repository content. Restore those media directories
+from the maintained media copy before a production build or deployment. A source
+checkout alone does not contain the complete published media library.
+
+`npm run prepare:content` recreates `src/lib/generated/`, responsive images,
+search indexes, the public short-link JSON and compatibility module, and
+`docs/deployment/short-link-redirects.json`. These outputs are ignored by Git and
+are still included in the static build where needed. Keep original article images,
+source code, content and generators tracked.
+
+`config/short-links.json` is the permanent reservation registry, not a disposable
+build output. Commit its changes with content so existing short codes stay stable.
+Do not force-add videos or generated files. Removing a file from tracking does not
+remove its copies from earlier commits.
+
 
 ## Writing an article
 
