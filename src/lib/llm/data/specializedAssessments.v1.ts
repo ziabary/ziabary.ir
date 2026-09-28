@@ -110,10 +110,13 @@ specializedAssessments.push({
   "metricUnit": "score",
   "workloadId": "workload:qwen-qwen3-reranker-0-6b-retrieval-evaluation-pending",
   "limitations": [
-    "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد."
+    "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد.",
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
   ],
   "evidenceIds": [
-    "evidence:qwen-qwen3-reranker-0-6b-card"
+    "evidence:qwen-qwen3-reranker-0-6b-card",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 specializedAssessments.push({
@@ -129,10 +132,13 @@ specializedAssessments.push({
   "metricUnit": "score",
   "workloadId": "workload:qwen-qwen3-reranker-4b-retrieval-evaluation-pending",
   "limitations": [
-    "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد."
+    "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد.",
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
   ],
   "evidenceIds": [
-    "evidence:qwen-qwen3-reranker-4b-card"
+    "evidence:qwen-qwen3-reranker-4b-card",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 specializedAssessments.push({
@@ -148,10 +154,13 @@ specializedAssessments.push({
   "metricUnit": "score",
   "workloadId": "workload:qwen-qwen3-reranker-8b-retrieval-evaluation-pending",
   "limitations": [
-    "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد."
+    "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد.",
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
   ],
   "evidenceIds": [
-    "evidence:qwen-qwen3-reranker-8b-card"
+    "evidence:qwen-qwen3-reranker-8b-card",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 specializedAssessments.push({
@@ -504,9 +513,13 @@ specializedAssessments.push({
   },
   "metricUnit": "score",
   "workloadId": "workload:update0919-qwen-qwen3-vl-reranker-2b",
-  "limitations": [],
+  "limitations": [
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+  ],
   "evidenceIds": [
-    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 specializedAssessments.push({
@@ -521,8 +534,12 @@ specializedAssessments.push({
   },
   "metricUnit": "score",
   "workloadId": "workload:update0919-qwen-qwen3-vl-reranker-8b",
-  "limitations": [],
+  "limitations": [
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+  ],
   "evidenceIds": [
-    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });

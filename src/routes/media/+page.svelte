@@ -38,6 +38,7 @@
     }));
 
   const publishedItems = [...authoredMedia, ...mediaItems].sort((a, b) => b.date.localeCompare(a.date));
+  const sortedVideos = [...videoItems].sort((a, b) => b.date.localeCompare(a.date));
   tabs[0].count = publishedItems.length;
   const kinds = ['همه', ...new Set(publishedItems.map((item) => item.kind))];
   const persianNumber = new Intl.NumberFormat('fa-IR');
@@ -144,7 +145,7 @@
         <div><p class="eyebrow">۰۲</p><h2>گفت‌وگوهای صوتی و تصویری</h2></div>
       </div>
       <div class="video-archive">
-        {#each videoItems as item}
+        {#each sortedVideos as item}
           {#if item.clip}
             <article class="video-card video-card-local">
               <MediaClip src={item.clip} poster={item.thumbnail} title={item.title} duration={item.clipDuration} />

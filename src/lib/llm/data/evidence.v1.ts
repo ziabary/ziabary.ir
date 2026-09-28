@@ -42878,3 +42878,33 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:llama-cpp-b11223-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11223",
+  "title": "llama.cpp b11223 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-28",
+  "publishedOn": "2026-09-27",
+  "versionRevisionOrCommit": "4da6337767f973e2b4d0797e5b323d77d8565e4a",
+  "locator": "Release status and merged can_split / cparams.causal_attn changes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama-server causal RANK pooling; not general multimodal endpoint support",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-rank-28876",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/28876",
+  "title": "llama.cpp PR #28876: causal RANK batch splitting",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-28",
+  "publishedOn": "2026-09-27",
+  "versionRevisionOrCommit": "4da6337767f973e2b4d0797e5b323d77d8565e4a",
+  "locator": "Release status and merged can_split / cparams.causal_attn changes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama-server causal RANK pooling; not general multimodal endpoint support",
+  "limitations": [],
+  "presentationNotes": []
+});

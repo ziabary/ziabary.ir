@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-26",
+  "asOf": "2026-09-28",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -52,6 +52,11 @@
       "software-release:llama-cpp-v0-5-0"
     ],
     "scope": "Security advisories, RPC compatibility and separately scoped prerelease notes; historical measurements retained",
+    "runtimeTested": false
+  },
+  "update20260928": {
+    "prereleaseNote": "b11223",
+    "scope": "Causal RANK physical batch splitting; five Qwen reranker compatibility notes; no new runtime default or performance data",
     "runtimeTested": false
   }
 }

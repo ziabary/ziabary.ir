@@ -444,7 +444,8 @@ modelUseGuidance.push({
   "description": "نسخهٔ ۰٫۶میلیاردی Qwen3-Reranker برای امتیازدادن به ارتباط query و document با دستور وظیفه تنظیم شده است.",
   "distinguishingFeature": "نسخهٔ ۰٫۶میلیاردی Qwen3-Reranker برای امتیازدادن به ارتباط query و document با دستور وظیفه تنظیم شده است.",
   "conditions": [
-    "قالب مخصوص reranker و امتیاز yes/no لازم است؛ از مسیر chat یا تولید embedding استفاده نکنید."
+    "قالب مخصوص reranker و امتیاز yes/no لازم است؛ از مسیر chat یا تولید embedding استفاده نکنید.",
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -454,7 +455,9 @@ modelUseGuidance.push({
     "evidence:qwen-qwen3-reranker-0-6b-license",
     "evidence:qwen-qwen3-reranker-0-6b-context",
     "evidence:qwen-qwen3-reranker-0-6b-config",
-    "evidence:four-tables-release-qwen3-embedding-launch"
+    "evidence:four-tables-release-qwen3-embedding-launch",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 modelUseGuidance.push({
@@ -466,7 +469,8 @@ modelUseGuidance.push({
   "description": "Qwen3-Reranker-4B گزینهٔ میانی این خانواده است؛ پرسش، دستور بازیابی و متن سند در محاسبهٔ ارتباط شرکت دارند.",
   "distinguishingFeature": "Qwen3-Reranker-4B گزینهٔ میانی این خانواده است؛ پرسش، دستور بازیابی و متن سند در محاسبهٔ ارتباط شرکت دارند.",
   "conditions": [
-    "فقط اسناد نامزد را به این مرحله بدهید؛ افزایش تعداد جفت‌های پرسش–سند هزینهٔ مرحلهٔ دوم را بالا می‌برد."
+    "فقط اسناد نامزد را به این مرحله بدهید؛ افزایش تعداد جفت‌های پرسش–سند هزینهٔ مرحلهٔ دوم را بالا می‌برد.",
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -476,7 +480,9 @@ modelUseGuidance.push({
     "evidence:qwen-qwen3-reranker-4b-license",
     "evidence:qwen-qwen3-reranker-4b-context",
     "evidence:qwen-qwen3-reranker-4b-config",
-    "evidence:four-tables-release-qwen3-embedding-launch"
+    "evidence:four-tables-release-qwen3-embedding-launch",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 modelUseGuidance.push({
@@ -488,7 +494,8 @@ modelUseGuidance.push({
   "description": "Qwen3-Reranker-8B بزرگ‌ترین بازرتبه‌بند این مجموعه است؛ به جفت پرسش و سند امتیاز ارتباط می‌دهد.",
   "distinguishingFeature": "Qwen3-Reranker-8B بزرگ‌ترین بازرتبه‌بند این مجموعه است؛ به جفت پرسش و سند امتیاز ارتباط می‌دهد.",
   "conditions": [
-    "برای انتخاب در برابر نسخهٔ ۴میلیاردی، کیفیت جست‌وجو و زمان روی اسناد خودتان را بسنجید؛ از اندازه رتبه نسازید."
+    "برای انتخاب در برابر نسخهٔ ۴میلیاردی، کیفیت جست‌وجو و زمان روی اسناد خودتان را بسنجید؛ از اندازه رتبه نسازید.",
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
   ],
   "basis": "editorial-analysis",
   "evidenceIds": [
@@ -498,7 +505,9 @@ modelUseGuidance.push({
     "evidence:qwen-qwen3-reranker-8b-license",
     "evidence:qwen-qwen3-reranker-8b-context",
     "evidence:qwen-qwen3-reranker-8b-config",
-    "evidence:four-tables-release-qwen3-embedding-launch"
+    "evidence:four-tables-release-qwen3-embedding-launch",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 modelUseGuidance.push({
@@ -6351,10 +6360,14 @@ modelUseGuidance.push({
   "summary": "بازرتبه‌بندی چندوجهی",
   "description": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
   "distinguishingFeature": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
-  "conditions": [],
+  "conditions": [
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+  ],
   "basis": "editorial-analysis",
   "evidenceIds": [
-    "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+    "evidence:update0919-qwen-qwen3-vl-reranker-2b",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 modelUseGuidance.push({
@@ -6365,10 +6378,14 @@ modelUseGuidance.push({
   "summary": "بازرتبه‌بندی چندوجهی",
   "description": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
   "distinguishingFeature": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
-  "conditions": [],
+  "conditions": [
+    "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+  ],
   "basis": "editorial-analysis",
   "evidenceIds": [
-    "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+    "evidence:update0919-qwen-qwen3-vl-reranker-8b",
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
   ]
 });
 modelUseGuidance.push({

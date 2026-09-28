@@ -54587,7 +54587,7 @@
       "productId": "software-product:llama-cpp",
       "version": "v0.5.0",
       "releasedOn": "2026-09-23",
-      "lastReviewedOn": "2026-09-26",
+      "lastReviewedOn": "2026-09-28",
       "roles": [
         "inference-engine-library",
         "api-server"
@@ -54638,9 +54638,11 @@
         "evidence:llama-cpp-v0-5-0-license",
         "evidence:llama-cpp-v0-5-0-rpc-header",
         "evidence:sep26-release-json",
-        "evidence:sep26-commit-json"
+        "evidence:sep26-commit-json",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ],
-      "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست.",
+      "selectionCaveat": "پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست. یادداشت نسخه‌مند b11223 — پیش‌انتشار/آزمایشی، منتشرشده در ۲۷ سپتامبر ۲۰۲۶ ساعت ۲۲:۰۳ UTC (۲۸ سپتامبر تهران): llama-server با RANK و attention علّیِ فعال در زمان اجرا می‌تواند ورودی را بین چند physical batch تقسیم کند. قبلاً ورودی بزرگ‌تر از n_ubatch (پیش‌فرض ۵۱۲ توکن) رد می‌شد. cross-encoderهای دوطرفه همچنان باید در یک physical batch جا شوند. این تغییر به‌معنی تکمیل عمومی پشتیبانی چندوجهی /rerank و /embedding نیست. برای این مسیر به b11223+ حاوی اصلاح #28876 نیاز است؛ قابلیت به نسخهٔ پایدار v0.5.0 نسبت داده نمی‌شود و پیش‌انتشار انتخاب پیش‌فرض تولیدی نیست. آمادگی تولیدی و اثر عملکردی به آزمون هم‌شرایط نیاز دارند.",
       "targetScenario": {
         "state": "known",
         "value": "اجرای مدل و llama-server؛ نسخهٔ پایدار 0.5.0",
@@ -54650,9 +54652,11 @@
       },
       "backendSummary": {
         "state": "known",
-        "value": "RPC major 7؛ هماهنگی کلاینت و سرورها",
+        "value": "RPC major 7؛ هماهنگی کلاینت و سرورها یادداشت مستقل پیش‌انتشار b11223: chunked prefill برای RANK در بازرتبه‌بندهای علّی Qwen3 و Qwen3-VL، با ورودی بلندتر از physical batch.",
         "evidenceIds": [
-          "evidence:llama-cpp-v0-5-0-release"
+          "evidence:llama-cpp-v0-5-0-release",
+          "evidence:llama-cpp-b11223-release",
+          "evidence:llama-cpp-rank-28876"
         ]
       }
     }
@@ -60675,10 +60679,13 @@
       "metricUnit": "score",
       "workloadId": "workload:qwen-qwen3-reranker-0-6b-retrieval-evaluation-pending",
       "limitations": [
-        "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد."
+        "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد.",
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
       ],
       "evidenceIds": [
-        "evidence:qwen-qwen3-reranker-0-6b-card"
+        "evidence:qwen-qwen3-reranker-0-6b-card",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -60694,10 +60701,13 @@
       "metricUnit": "score",
       "workloadId": "workload:qwen-qwen3-reranker-4b-retrieval-evaluation-pending",
       "limitations": [
-        "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد."
+        "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد.",
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
       ],
       "evidenceIds": [
-        "evidence:qwen-qwen3-reranker-4b-card"
+        "evidence:qwen-qwen3-reranker-4b-card",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -60713,10 +60723,13 @@
       "metricUnit": "score",
       "workloadId": "workload:qwen-qwen3-reranker-8b-retrieval-evaluation-pending",
       "limitations": [
-        "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد."
+        "مدل embedding یا reranker جزء سامانهٔ بازیابی است و به‌تنهایی پاسخ مولد نمی‌سازد.",
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
       ],
       "evidenceIds": [
-        "evidence:qwen-qwen3-reranker-8b-card"
+        "evidence:qwen-qwen3-reranker-8b-card",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -61069,9 +61082,13 @@
       },
       "metricUnit": "score",
       "workloadId": "workload:update0919-qwen-qwen3-vl-reranker-2b",
-      "limitations": [],
+      "limitations": [
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+      ],
       "evidenceIds": [
-        "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+        "evidence:update0919-qwen-qwen3-vl-reranker-2b",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -61086,9 +61103,13 @@
       },
       "metricUnit": "score",
       "workloadId": "workload:update0919-qwen-qwen3-vl-reranker-8b",
-      "limitations": [],
+      "limitations": [
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+      ],
       "evidenceIds": [
-        "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+        "evidence:update0919-qwen-qwen3-vl-reranker-8b",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     }
   ],
@@ -137347,6 +137368,36 @@
       "scope": "LFM2.5-VL DSpark launch",
       "limitations": [],
       "presentationNotes": []
+    },
+    {
+      "id": "evidence:llama-cpp-b11223-release",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11223",
+      "title": "llama.cpp b11223 prerelease",
+      "organization": "ggml-org",
+      "accessedOn": "2026-09-28",
+      "publishedOn": "2026-09-27",
+      "versionRevisionOrCommit": "4da6337767f973e2b4d0797e5b323d77d8565e4a",
+      "locator": "Release status and merged can_split / cparams.causal_attn changes",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "llama-server causal RANK pooling; not general multimodal endpoint support",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:llama-cpp-rank-28876",
+      "url": "https://github.com/ggml-org/llama.cpp/pull/28876",
+      "title": "llama.cpp PR #28876: causal RANK batch splitting",
+      "organization": "ggml-org",
+      "accessedOn": "2026-09-28",
+      "publishedOn": "2026-09-27",
+      "versionRevisionOrCommit": "4da6337767f973e2b4d0797e5b323d77d8565e4a",
+      "locator": "Release status and merged can_split / cparams.causal_attn changes",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "llama-server causal RANK pooling; not general multimodal endpoint support",
+      "limitations": [],
+      "presentationNotes": []
     }
   ],
   "publishedEvaluations": [
@@ -186003,7 +186054,8 @@
       "description": "نسخهٔ ۰٫۶میلیاردی Qwen3-Reranker برای امتیازدادن به ارتباط query و document با دستور وظیفه تنظیم شده است.",
       "distinguishingFeature": "نسخهٔ ۰٫۶میلیاردی Qwen3-Reranker برای امتیازدادن به ارتباط query و document با دستور وظیفه تنظیم شده است.",
       "conditions": [
-        "قالب مخصوص reranker و امتیاز yes/no لازم است؛ از مسیر chat یا تولید embedding استفاده نکنید."
+        "قالب مخصوص reranker و امتیاز yes/no لازم است؛ از مسیر chat یا تولید embedding استفاده نکنید.",
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
       ],
       "basis": "editorial-analysis",
       "evidenceIds": [
@@ -186013,7 +186065,9 @@
         "evidence:qwen-qwen3-reranker-0-6b-license",
         "evidence:qwen-qwen3-reranker-0-6b-context",
         "evidence:qwen-qwen3-reranker-0-6b-config",
-        "evidence:four-tables-release-qwen3-embedding-launch"
+        "evidence:four-tables-release-qwen3-embedding-launch",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -186025,7 +186079,8 @@
       "description": "Qwen3-Reranker-4B گزینهٔ میانی این خانواده است؛ پرسش، دستور بازیابی و متن سند در محاسبهٔ ارتباط شرکت دارند.",
       "distinguishingFeature": "Qwen3-Reranker-4B گزینهٔ میانی این خانواده است؛ پرسش، دستور بازیابی و متن سند در محاسبهٔ ارتباط شرکت دارند.",
       "conditions": [
-        "فقط اسناد نامزد را به این مرحله بدهید؛ افزایش تعداد جفت‌های پرسش–سند هزینهٔ مرحلهٔ دوم را بالا می‌برد."
+        "فقط اسناد نامزد را به این مرحله بدهید؛ افزایش تعداد جفت‌های پرسش–سند هزینهٔ مرحلهٔ دوم را بالا می‌برد.",
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
       ],
       "basis": "editorial-analysis",
       "evidenceIds": [
@@ -186035,7 +186090,9 @@
         "evidence:qwen-qwen3-reranker-4b-license",
         "evidence:qwen-qwen3-reranker-4b-context",
         "evidence:qwen-qwen3-reranker-4b-config",
-        "evidence:four-tables-release-qwen3-embedding-launch"
+        "evidence:four-tables-release-qwen3-embedding-launch",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -186047,7 +186104,8 @@
       "description": "Qwen3-Reranker-8B بزرگ‌ترین بازرتبه‌بند این مجموعه است؛ به جفت پرسش و سند امتیاز ارتباط می‌دهد.",
       "distinguishingFeature": "Qwen3-Reranker-8B بزرگ‌ترین بازرتبه‌بند این مجموعه است؛ به جفت پرسش و سند امتیاز ارتباط می‌دهد.",
       "conditions": [
-        "برای انتخاب در برابر نسخهٔ ۴میلیاردی، کیفیت جست‌وجو و زمان روی اسناد خودتان را بسنجید؛ از اندازه رتبه نسازید."
+        "برای انتخاب در برابر نسخهٔ ۴میلیاردی، کیفیت جست‌وجو و زمان روی اسناد خودتان را بسنجید؛ از اندازه رتبه نسازید.",
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
       ],
       "basis": "editorial-analysis",
       "evidenceIds": [
@@ -186057,7 +186115,9 @@
         "evidence:qwen-qwen3-reranker-8b-license",
         "evidence:qwen-qwen3-reranker-8b-context",
         "evidence:qwen-qwen3-reranker-8b-config",
-        "evidence:four-tables-release-qwen3-embedding-launch"
+        "evidence:four-tables-release-qwen3-embedding-launch",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -191910,10 +191970,14 @@
       "summary": "بازرتبه‌بندی چندوجهی",
       "description": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
       "distinguishingFeature": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
-      "conditions": [],
+      "conditions": [
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+      ],
       "basis": "editorial-analysis",
       "evidenceIds": [
-        "evidence:update0919-qwen-qwen3-vl-reranker-2b"
+        "evidence:update0919-qwen-qwen3-vl-reranker-2b",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {
@@ -191924,10 +191988,14 @@
       "summary": "بازرتبه‌بندی چندوجهی",
       "description": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
       "distinguishingFeature": "امتیازدهی به ارتباط پرسش با متن، تصویر یا ویدئو؛ بازرتبه‌بندی نتایج بازیابی با ورودی تا ۳۲ هزار توکن.",
-      "conditions": [],
+      "conditions": [
+        "سازگاری نسخه‌مند llama.cpp: ورودی RANK بزرگ‌تر از n_ubatch به b11223+ حاوی اصلاح #28876 و attention علّی در زمان اجرا نیاز دارد. b11223 پیش‌انتشار/آزمایشی است؛ این اصلاح پشتیبانی کامل چندوجهی /rerank یا /embedding، کیفیت بلندمتن یا آمادگی تولیدی را تأیید نمی‌کند."
+      ],
       "basis": "editorial-analysis",
       "evidenceIds": [
-        "evidence:update0919-qwen-qwen3-vl-reranker-8b"
+        "evidence:update0919-qwen-qwen3-vl-reranker-8b",
+        "evidence:llama-cpp-b11223-release",
+        "evidence:llama-cpp-rank-28876"
       ]
     },
     {

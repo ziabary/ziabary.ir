@@ -2107,13 +2107,16 @@
     "limitations/0": "record.0236"
   },
   "repository.specializedAssessments/specialized-assessment:qwen-qwen3-reranker-0-6b": {
-    "limitations/0": "record.0236"
+    "limitations/0": "record.0236",
+    "limitations/1": "sep28.c5e102a01ffecbc667"
   },
   "repository.specializedAssessments/specialized-assessment:qwen-qwen3-reranker-4b": {
-    "limitations/0": "record.0236"
+    "limitations/0": "record.0236",
+    "limitations/1": "sep28.35c3130ac1f00d2f14"
   },
   "repository.specializedAssessments/specialized-assessment:qwen-qwen3-reranker-8b": {
-    "limitations/0": "record.0236"
+    "limitations/0": "record.0236",
+    "limitations/1": "sep28.63c1ecbd820a725488"
   },
   "repository.specializedAssessments/specialized-assessment:intfloat-multilingual-e5-small": {
     "limitations/0": "record.0236"
@@ -5479,19 +5482,22 @@
     "summary": "record.0511",
     "description": "record.0510",
     "distinguishingFeature": "record.0510",
-    "conditions/0": "record.0514"
+    "conditions/0": "record.0514",
+    "conditions/1": "sep28.5bd90a68f8d78010ac"
   },
   "repository.modelUseGuidance/model-use:qwen-qwen3-reranker-4b:enterprise-rag": {
     "summary": "record.0518",
     "description": "record.0517",
     "distinguishingFeature": "record.0517",
-    "conditions/0": "record.0520"
+    "conditions/0": "record.0520",
+    "conditions/1": "sep28.dc901fadaaaa5df8f6"
   },
   "repository.modelUseGuidance/model-use:qwen-qwen3-reranker-8b:enterprise-rag": {
     "summary": "record.0522",
     "description": "record.0521",
     "distinguishingFeature": "record.0521",
-    "conditions/0": "record.0524"
+    "conditions/0": "record.0524",
+    "conditions/1": "sep28.c3eb5a2f3677bf9ff9"
   },
   "repository.modelUseGuidance/model-use:qwen-qwen3-vl-8b-instruct:document-vision": {
     "summary": "record.0526",
@@ -8902,12 +8908,14 @@
   "repository.modelUseGuidance/model-use:update0919-qwen-qwen3-vl-reranker-2b": {
     "summary": "update0919.028dd2880abe94a5a6",
     "description": "update0919.8a92f125c2d59f485c",
-    "distinguishingFeature": "update0919.8117347f6ae7e5e17e"
+    "distinguishingFeature": "update0919.8117347f6ae7e5e17e",
+    "conditions/0": "sep28.2aeca17a0d10b729b6"
   },
   "repository.modelUseGuidance/model-use:update0919-qwen-qwen3-vl-reranker-8b": {
     "summary": "update0919.7909535efd4f24bca5",
     "description": "update0919.307e07e4894f9e3d85",
-    "distinguishingFeature": "update0919.627394ac0b4907819c"
+    "distinguishingFeature": "update0919.627394ac0b4907819c",
+    "conditions/0": "sep28.29a3229ce81ae33fd2"
   },
   "repository.models/model:qwen-qwen3-6-27b": {
     "parameterCounts/0/label": "wizard0920.55c096c675c4cbf64f",
@@ -9216,5 +9224,11 @@
   },
   "repository.artifactListings/artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf": {
     "sizeDescription": "sep26.artifact-listing:liquidai-lfm2-5-vl-3b-dspark-gguf.sizeDescription"
+  },
+  "repository.specializedAssessments/specialized-assessment:update0919-qwen-qwen3-vl-reranker-2b": {
+    "limitations/0": "sep28.1b51518190cbfd4b95"
+  },
+  "repository.specializedAssessments/specialized-assessment:update0919-qwen-qwen3-vl-reranker-8b": {
+    "limitations/0": "sep28.bead11f7fc8adb9c93"
   }
 }
