@@ -5,7 +5,7 @@ translationGroup: enterprise-rag-model-embedding-reranker
 lang: es
 date: '2026-08-12'
 faDate: '2026-08-12'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: 'Una cadena de tres componentes para asistentes documentales: candidatos pequeños, calidad de recuperación, presupuestos de vectores y KV, preparación de documentos y diagnóstico de errores.'

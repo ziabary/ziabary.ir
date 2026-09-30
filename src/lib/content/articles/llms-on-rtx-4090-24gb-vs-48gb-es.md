@@ -5,7 +5,7 @@ translationGroup: llms-on-rtx-4090-24gb-vs-48gb
 lang: es
 date: '2026-07-02'
 faDate: '2026-07-02'
-draft: true
+draft: false
 math: true
 category: Modelos de lenguaje
 excerpt: Archivos concretos, un cálculo de caché KV, réplicas frente a división del modelo y las condiciones en las que una GPU profesional o de centro de datos aporta valor.

@@ -5,7 +5,7 @@ translationGroup: airllm-layer-wise-inference
 lang: es
 date: '2026-07-29'
 faDate: '2026-07-29'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: Dónde residen los pesos, cómo limita la transferencia a la generación, por qué sigue importando KV y qué trabajos de investigación, lotes y adaptación pueden aprovechar la ejecución por capas.

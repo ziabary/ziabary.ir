@@ -5,7 +5,7 @@ translationGroup: four-bit-model-quantization
 lang: es
 date: '2026-07-13'
 faDate: '2026-07-13'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: Tamaños reales de Qwen3-8B, cálculo de memoria KV y diferencias entre métodos de cuantización, precisión, calidad y velocidad de servicio.

@@ -5,7 +5,7 @@ translationGroup: right-model-size-for-the-task
 lang: en
 date: '2026-06-18'
 faDate: '2026-06-18'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: Choose between specialized models, small generators and larger LLMs by separating task quality, language evidence, retrieval, memory and serving capacity—with published comparisons and a worked memory example.

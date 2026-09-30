@@ -51,6 +51,6 @@ test('localized semantic inserts retain existing full articles, dates and connec
   assert.ok(text.length>10000,slug);if(lang!=='fa')assert.doesNotMatch(text,/[\u0600-\u06ff]/);
  }
  for(const slug of ['evaluating-llms-for-your-language-and-workload','evaluar-llm-idioma-y-tarea','true-llm-cost-buy-rent-or-api-en','true-llm-cost-buy-rent-or-api-es']) {
-  const text=fs.readFileSync(`src/lib/content/articles/${slug}.md`,'utf8');assert.ok(text.length>12000);assert.match(text,/draft: true/);assert.match(text,/<!-- reference:/);
+  const text=fs.readFileSync(`src/lib/content/articles/${slug}.md`,'utf8');assert.ok(text.length>12000);assert.match(text,/draft: false/);assert.match(text,/<!-- reference:/);
  }
 });

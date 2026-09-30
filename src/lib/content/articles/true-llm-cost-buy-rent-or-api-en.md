@@ -5,7 +5,7 @@ translationGroup: true-llm-cost-buy-rent-or-api
 lang: en
 date: '2026-09-16'
 faDate: '2026-09-16'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: A worked USD scenario for API usage, GPU rental and ownership, including retries, accepted answers, operations, energy and conditional break-even calculations.

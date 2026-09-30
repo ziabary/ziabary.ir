@@ -5,7 +5,7 @@ translationGroup: code-completion-assistant-and-agent
 lang: es
 date: '2026-08-24'
 faDate: '2026-08-24'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: 'Modelos según su función: sugerencias FIM rápidas, correcciones guiadas correctas o tareas de repositorio aceptadas. Candidatos, alcance de benchmarks, entorno de herramientas y coste por tarea.'

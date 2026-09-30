@@ -5,7 +5,7 @@ translationGroup: code-completion-assistant-and-agent
 lang: en
 date: '2026-08-24'
 faDate: '2026-08-24'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: 'Choose models by role: responsive FIM suggestions, correct guided repairs or accepted repository tasks. Compare candidate checkpoints, benchmark scope, tool environments and cost per completed task.'

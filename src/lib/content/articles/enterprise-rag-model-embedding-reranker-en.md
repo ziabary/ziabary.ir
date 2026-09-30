@@ -5,7 +5,7 @@ translationGroup: enterprise-rag-model-embedding-reranker
 lang: en
 date: '2026-08-12'
 faDate: '2026-08-12'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: 'A practical three-part model stack for document assistants: small-model candidates, retrieval quality, vector and KV budgets, document preparation and a diagnostic table for finding the failing component.'

@@ -5,7 +5,7 @@ translationGroup: right-model-size-for-the-task
 lang: es
 date: '2026-06-18'
 faDate: '2026-06-18'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: Cómo elegir entre modelos especializados, generadores pequeños y LLM grandes separando calidad, idioma, recuperación, memoria y capacidad de servicio, con comparaciones publicadas y un ejemplo de cálculo.

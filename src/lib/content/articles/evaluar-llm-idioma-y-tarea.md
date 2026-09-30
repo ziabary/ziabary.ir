@@ -5,7 +5,7 @@ translationGroup: evaluating-llms-for-your-language-and-workload
 lang: es
 date: '2026-09-02'
 faDate: '2026-09-02'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: Cómo usar IberoBench, SpanishBench y MTEB sin confundir sus alcances; preparar muestras propias, conservar variantes del español y comparar corrección, herramientas, tiempo y coste.
@@ -93,7 +93,7 @@ Para comparar una cadena, el [estudio de rerankers de Qwen](https://arxiv.org/ht
 
 Los resultados españoles de las fichas [Salamandra 2B](https://huggingface.co/BSC-LT/salamandra-2b-instruct) y [7B](https://huggingface.co/BSC-LT/salamandra-7b-instruct) aportan candidatos de generación por tarea. Son fichas independientes: no acreditan un protocolo común ni cobertura de todas las variedades regionales del español.
 
-Las [comparaciones por idioma y tarea](/es/guides/llm/?show-drafts=true&reference-group=comparison%3Ae5-miracl-by-language#reference-comparisons) conservan métrica, fuente y configuración de cada resultado.
+Las [comparaciones por idioma y tarea](/es/guides/llm/?reference-group=comparison%3Ae5-miracl-by-language#reference-comparisons) conservan métrica, fuente y configuración de cada resultado.
 
 <!-- reference:language-evidence:end -->
 

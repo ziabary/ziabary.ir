@@ -5,7 +5,7 @@ translationGroup: evaluating-llms-for-your-language-and-workload
 lang: en
 date: '2026-09-02'
 faDate: '2026-09-02'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: Choose task-relevant benchmarks, preserve language and protocol scope, build representative examples, and compare quality, tools, latency and cost without mistaking fluency or a multilingual average for task success.
@@ -79,7 +79,7 @@ A pipeline comparison answers another question. In [Qwen’s reranker study](htt
 
 The Spanish task results on the [Salamandra 2B](https://huggingface.co/BSC-LT/salamandra-2b-instruct) and [7B](https://huggingface.co/BSC-LT/salamandra-7b-instruct) cards add specific generation candidates to this evidence map. These separate cards do not establish a common evaluation protocol or coverage of every regional variety of Spanish.
 
-[Labeled language and task comparisons](/en/guides/llm/?show-drafts=true&reference-group=comparison%3Ae5-miracl-by-language#reference-comparisons) retain the metric, source and settings behind each result.
+[Labeled language and task comparisons](/en/guides/llm/?reference-group=comparison%3Ae5-miracl-by-language#reference-comparisons) retain the metric, source and settings behind each result.
 
 <!-- reference:language-evidence:end -->
 

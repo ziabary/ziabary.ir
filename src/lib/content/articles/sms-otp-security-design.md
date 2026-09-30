@@ -13,7 +13,7 @@ source: "Virgool (Persian original)"
 related:
   - building-targoman-without-patronage
   - apache-mod-jk-log-lock
-draft: true
+draft: false
 ---
 
 > **Context.** This article was written during Iran's 2019 rollout of mandatory one-time passwords for online card payments. The banking details are local and historical; the security-design mistake is neither.

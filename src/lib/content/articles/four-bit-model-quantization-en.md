@@ -5,7 +5,7 @@ translationGroup: four-bit-model-quantization
 lang: en
 date: '2026-07-13'
 faDate: '2026-07-13'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: Real Qwen3-8B file sizes, a worked KV-memory budget and the differences between quantization methods, precision, quality and serving speed.

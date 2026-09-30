@@ -5,7 +5,7 @@ translationGroup: airllm-layer-wise-inference
 lang: en
 date: '2026-07-29'
 faDate: '2026-07-29'
-draft: true
+draft: false
 math: false
 category: Language models
 excerpt: Where streamed weights live, how transfer time limits generation, why KV still matters, and which research, batch and adapter workloads can benefit from layer-wise execution.

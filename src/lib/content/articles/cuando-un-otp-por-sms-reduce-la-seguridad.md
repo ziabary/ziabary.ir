@@ -12,7 +12,7 @@ external: "https://virgool.io/targoman/%DA%A9%D9%84%D8%A7%D9%87%D8%A8%D8%B1%D8%A
 source: "Virgool (original en persa)"
 related:
   - construir-targoman-sin-padrinos
-draft: true
+draft: false
 ---
 
 > **Contexto.** Escribí este artículo durante la implantación obligatoria de contraseñas de un solo uso para pagos con tarjeta en Irán, en 2019. Los detalles bancarios son locales e históricos; el error de diseño de seguridad no lo es.

@@ -5,7 +5,7 @@ translationGroup: llms-on-rtx-4090-24gb-vs-48gb
 lang: en
 date: '2026-07-02'
 faDate: '2026-07-02'
-draft: true
+draft: false
 math: true
 category: Language models
 excerpt: Exact weight files, a worked KV-cache budget, replicas versus model splitting, and the point at which professional or datacenter GPUs become useful for inference and adaptation.

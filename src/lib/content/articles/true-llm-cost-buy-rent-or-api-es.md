@@ -5,7 +5,7 @@ translationGroup: true-llm-cost-buy-rent-or-api
 lang: es
 date: '2026-09-16'
 faDate: '2026-09-16'
-draft: true
+draft: false
 math: false
 category: Modelos de lenguaje
 excerpt: Un supuesto calculado en USD para comparar API, alquiler y propiedad, con reintentos, respuestas aceptadas, operación, energía y umbrales económicos condicionados.

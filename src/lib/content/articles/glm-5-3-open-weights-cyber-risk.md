@@ -5,7 +5,7 @@ translationGroup: glm-5-3-open-weights-cyber-risk
 lang: fa
 date: "2026-09-29"
 faDate: "۷ مهر ۱۴۰۵"
-draft: true
+draft: false
 category: مدل‌های زبانی
 excerpt: "گزارش‌های NIST و Anthropic دربارهٔ GLM-5.3 چه می‌گویند و برای تیمی که به عامل کدنویسی دسترسی ابزار می‌دهد، چه تغییری در تصمیم ایجاد می‌کنند؟"
 readTime: "۶ دقیقه"
