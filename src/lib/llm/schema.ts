@@ -308,6 +308,7 @@ export interface ModelProfile {
   introduction: string;
   roleSummary: string;
   distinguishingFeatures: string[];
+  securityNotes?: string[];
   languageSummary?: string;
   officialUrl: string;
   runGuides: ModelRunGuide[];
@@ -423,6 +424,7 @@ export interface SoftwareProduct {
 
 /** A software-comparison row is always one exact product release. */
 export interface SoftwareRelease {
+  releaseChannel?: 'stable' | 'prerelease';
   id: SoftwareReleaseId;
   productId: SoftwareProductId;
   version: string;

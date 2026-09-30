@@ -522,10 +522,10 @@ function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRow[] {
     const important = documented.slice(0, 4);
     const highlights = list(important.map(item => `${llmLabel(item.capability)}${item.provision !== 'native' ? ` (${llmLabel(item.provision)})` : item.status === 'conditional' ? t('adapters.0248') : ''}`), important.flatMap(item => item.evidenceIds));
     return [{
-      id: release.id, label: `${product.name} ${release.version}`,
+      id: release.id, label: `${product.name} ${release.version}${release.releaseChannel === 'prerelease' ? ' · ' + t('software.prerelease') : ''}`,
       searchText: [release.id, product.name, release.version, ...(product.aliases ?? []), ...release.roles, ...backends.map((item) => item?.name)].join(' '),
       cells: {
-        'software-version': known(`${product.name} · ${release.version}`, release.id, undefined, undefined, release.evidenceIds),
+        'software-version': known(`${product.name} · ${release.version}${release.releaseChannel === 'prerelease' ? ' · ' + t('software.prerelease') : ''}`, release.id, undefined, undefined, release.evidenceIds),
         roles: list(release.roles.map(llmLabel), release.evidenceIds),
         scenario: datum(release.targetScenario),
         'start-docs': { ...known(t('adapters.0249'), product.officialUrl), href: product.officialUrl },
@@ -800,7 +800,7 @@ function profileRow(repository: LlmGuideRepository, row: LlmViewRow, modelId: st
     cells: { ...row.cells, 'primary-use': known(profile.roleSummary), applications: known(profile.roleSummary),
       downloads: known([...new Set(downloads.map(item => item.format.toUpperCase()))].join(' · ')),
       introduction: profile.introduction.replace(/[.؛،\s]+$/u, '') === profile.roleSummary.replace(/[.؛،\s]+$/u, '') ? unknown('not-applicable') : known(profile.introduction), role: list([...new Set(uses.map(item => modelUseRoleLabels[item.role]))]),
-      'use-condition': list([...new Set(uses.flatMap(item => item.conditions))]),
+      'use-condition': list([...new Set([...(profile.securityNotes ?? []), ...uses.flatMap(item => item.conditions)])]),
       'use-basis': list([...new Set(uses.map(item => item.basis === 'publisher-summary' ? t('adapters.0275') : t('adapters.0276')))]),
       model: known(model.exactName), 'model-artifact': known(model.exactName) },
     facets: { ...row.facets, 'model-size': formatParameter(model.totalParametersB.state === 'known' ? model.totalParametersB : model.parameterCounts?.find(item => item.scope === 'nominal')?.value ?? { state: 'unknown' }), application: uses.map(item => known(applicationLabel(item.applicationId), item.applicationId)),

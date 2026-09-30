@@ -20,7 +20,7 @@ test('version-scoped security, RPC and prerelease notes render in all editions',
   assert.match(row(l05).cells['research-condition'].display,/b11160/);assert.match(row(l05).cells['research-condition'].display,/MUL_MAT_ID/);
   assert.match(row('software-release:ollama-v0-34-0').cells['research-condition'].display,/OLLAMA_NO_CLOUD=1/);
   assert.match(row('software-release:ollama-v0-34-0').cells['research-condition'].display,/v0\.40\.0-rc0/);
-  assert.ok(!rows.some(x=>/rc0/.test(x.id)),'RC stays a note, not a sortable release candidate');
+  assert.ok(!rows.some(x=>x.id==='software-release:ollama-v0-40-0-rc0'),'The historical v0.40.0 RC remains a note; separately reviewed prereleases may have their own rows');
   if(locale!=='fa')for(const id of [v29,v30,l05,'software-release:ollama-v0-34-0'])assert.doesNotMatch(JSON.stringify([row(id).cells,row(id).details]),/[\u0600-\u06ff]/);
  }
 });

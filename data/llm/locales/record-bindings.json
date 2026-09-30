@@ -1064,7 +1064,7 @@
     "offlineOperation/note": "record.0121",
     "targetScenario/value": "record.0122",
     "backendSummary/value": "record.0123",
-    "selectionCaveat": "record.0124"
+    "selectionCaveat": "ollama034.systemone930.conditions"
   },
   "repository.softwareReleases/software-release:vllm-v0-29-0": {
     "offlineOperation/note": "record.0125",
@@ -8799,7 +8799,8 @@
   },
   "repository.modelProfiles/model-profile:zai-org-glm-5-3-bf16": {
     "introduction": "update0919.cfffab172efa53af26",
-    "roleSummary": "update0919.20965229edec5c0738"
+    "roleSummary": "update0919.20965229edec5c0738",
+    "securityNotes/0": "glm53.security"
   },
   "repository.models/model:moonshotai-kimi-k2-6": {
     "license/restrictions/0": "update0919.69f15ba9a0a56c5435"
@@ -8825,12 +8826,16 @@
   "repository.modelProfiles/model-profile:qwen-qwen3-vl-embedding-2b": {
     "introduction": "update0919.63a698840d439da8d7",
     "roleSummary": "update0919.8a716ad53bda39dad2",
-    "runGuides/0/instructions": "update0919.566f99d70388c9e4b7"
+    "runGuides/0/instructions": "update0919.566f99d70388c9e4b7",
+    "runGuides/1/conditions/0": "emb11240.model-profile:qwen-qwen3-vl-embedding-2b.runGuides/1/conditions/0",
+    "runGuides/1/instructions": "emb11240.model-profile:qwen-qwen3-vl-embedding-2b.runGuides/1/instructions"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-vl-embedding-8b": {
     "introduction": "update0919.1db29a171f1b7f8557",
     "roleSummary": "update0919.c078419bdf5ed557bb",
-    "runGuides/0/instructions": "update0919.c9146aa88c14865c6b"
+    "runGuides/0/instructions": "update0919.c9146aa88c14865c6b",
+    "runGuides/1/conditions/0": "emb11240.model-profile:qwen-qwen3-vl-embedding-8b.runGuides/1/conditions/0",
+    "runGuides/1/instructions": "emb11240.model-profile:qwen-qwen3-vl-embedding-8b.runGuides/1/instructions"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-vl-reranker-2b": {
     "introduction": "update0919.9f8af6155e6d9e15c5",
@@ -9230,5 +9235,15 @@
   },
   "repository.specializedAssessments/specialized-assessment:update0919-qwen-qwen3-vl-reranker-8b": {
     "limitations/0": "sep28.bead11f7fc8adb9c93"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11262": {
+    "selectionCaveat": "llama-cpp-b11262.conditions",
+    "targetScenario/value": "llama-cpp-b11262.scenario",
+    "backendSummary/value": "llama-cpp-b11262.benefit"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-35-1-rc0": {
+    "selectionCaveat": "ollama-v0-35-1-rc0.conditions",
+    "targetScenario/value": "ollama-v0-35-1-rc0.scenario",
+    "backendSummary/value": "ollama-v0-35-1-rc0.benefit"
   }
 }

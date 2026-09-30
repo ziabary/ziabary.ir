@@ -5839,7 +5839,12 @@ modelProfiles.push({
     }
   ],
   "evidenceIds": [
-    "evidence:update0919-zai-org-glm-5-3-bf16"
+    "evidence:update0919-zai-org-glm-5-3-bf16",
+    "evidence:glm53-anthropic-cyber-20260929",
+    "evidence:glm53-nist-cyber-20260917"
+  ],
+  "securityNotes": [
+    "ارزیابی‌های NIST و Anthropic از توان پیشرفتهٔ GLM-5.3 در کشف آسیب‌پذیری و ساخت exploit خبر می‌دهند. نمی‌توان به امتناع مدل به‌عنوان کنترل امنیتی تکیه کرد؛ در آزمون Anthropic، درخواست پوششی، prefill و تغییر وزن این کنترل را دور زده‌اند. مدل و عامل‌های کدنویسی متصل به آن را در sandbox بدون credential و بدون دسترسی آزاد به شبکه اجرا کنید، ابزارها را محدود نگه دارید و همهٔ عملیات را ثبت کنید."
   ]
 });
 modelProfiles.push({
@@ -5954,10 +5959,23 @@ modelProfiles.push({
         "evidence:update0919-qwen-qwen3-vl-embedding-2b"
       ],
       "instructions": "پردازش متن، تصویر و ویدئو با کد نمونهٔ همین مدل."
+    },
+    {
+      "label": "llama.cpp b11240+ / llama-server",
+      "engine": "llama.cpp",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11240",
+      "conditions": [
+        "آزمایشی؛ llama.cpp b11240+ / llama-server؛ فایل‌های GGUF سازگار مدل و projector باید جداگانه آماده و اعتبارسنجی شوند؛ GGUF رسمی ثبت نشده است. وزن رسمی Safetensors با Apache-2.0 حفظ می‌شود؛ ظرفیت، سرعت و کیفیت فارسی نیازمند آزمون‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11240-release"
+      ],
+      "instructions": "یادداشت مستقل b11240، پیش‌انتشار ۲۸ سپتامبر ۲۰۲۶ ساعت ۲۲:۲۶ UTC: API ورودی تایپ‌شدهٔ متن، تصویر، صدا و ویدئو را می‌پذیرد؛ پشتیبانی هر نوع ورودی به مدل وابسته است. هر شیء {\"content\": [...]} یک embedding می‌سازد؛ bare content array پشتیبانی نمی‌شود و legacy API حفظ شده است. KV prefix reuse برای embedding/rerank غیرفعال است؛ ظرفیت و سرعت باید دوباره سنجیده شود. مسیر Qwen3-VL-Embedding-2B/8B آزمایشی است؛ این یادداشت پشتیبانی چندوجهی Qwen3-VL-Reranker یا کیفیت فارسی را تأیید نمی‌کند و قابلیت نسخهٔ پایدار v0.5.0 نیست."
     }
   ],
   "evidenceIds": [
-    "evidence:update0919-qwen-qwen3-vl-embedding-2b"
+    "evidence:update0919-qwen-qwen3-vl-embedding-2b",
+    "evidence:llama-cpp-b11240-release"
   ]
 });
 modelProfiles.push({
@@ -5979,10 +5997,23 @@ modelProfiles.push({
         "evidence:update0919-qwen-qwen3-vl-embedding-8b"
       ],
       "instructions": "پردازش متن، تصویر و ویدئو با کد نمونهٔ همین مدل."
+    },
+    {
+      "label": "llama.cpp b11240+ / llama-server",
+      "engine": "llama.cpp",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11240",
+      "conditions": [
+        "آزمایشی؛ llama.cpp b11240+ / llama-server؛ فایل‌های GGUF سازگار مدل و projector باید جداگانه آماده و اعتبارسنجی شوند؛ GGUF رسمی ثبت نشده است. وزن رسمی Safetensors با Apache-2.0 حفظ می‌شود؛ ظرفیت، سرعت و کیفیت فارسی نیازمند آزمون‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11240-release"
+      ],
+      "instructions": "یادداشت مستقل b11240، پیش‌انتشار ۲۸ سپتامبر ۲۰۲۶ ساعت ۲۲:۲۶ UTC: API ورودی تایپ‌شدهٔ متن، تصویر، صدا و ویدئو را می‌پذیرد؛ پشتیبانی هر نوع ورودی به مدل وابسته است. هر شیء {\"content\": [...]} یک embedding می‌سازد؛ bare content array پشتیبانی نمی‌شود و legacy API حفظ شده است. KV prefix reuse برای embedding/rerank غیرفعال است؛ ظرفیت و سرعت باید دوباره سنجیده شود. مسیر Qwen3-VL-Embedding-2B/8B آزمایشی است؛ این یادداشت پشتیبانی چندوجهی Qwen3-VL-Reranker یا کیفیت فارسی را تأیید نمی‌کند و قابلیت نسخهٔ پایدار v0.5.0 نیست."
     }
   ],
   "evidenceIds": [
-    "evidence:update0919-qwen-qwen3-vl-embedding-8b"
+    "evidence:update0919-qwen-qwen3-vl-embedding-8b",
+    "evidence:llama-cpp-b11240-release"
   ]
 });
 modelProfiles.push({

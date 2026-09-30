@@ -5,7 +5,7 @@ translationGroup: ollama-vllm-sglang-or-llama-cpp
 lang: es
 date: '2026-09-15'
 faDate: '2026-09-15'
-updated: "2026-09-19"
+updated: "2026-09-28"
 draft: false
 math: false
 category: Modelos de lenguaje
@@ -88,6 +88,8 @@ llama.cpp admite ejecución en CPU y backends como Metal, CUDA y Vulkan. Una dis
 El [`llama-server` documentado en v0.4.1](https://github.com/ggml-org/llama.cpp/blob/v0.4.1/tools/server/README.md) incluye slots paralelos, continuous batching, caché de prompts, métricas y un modo router para varios modelos. Un servicio GGUF puede ser una elección deliberada. La operación entre hosts y la capacidad tras una avería siguen requiriendo infraestructura adicional.
 
 Para una herramienta local de uso ocasional, aceptar más latencia a cambio de menores requisitos de GPU puede ser razonable. En un servicio interactivo compartido, el mismo intercambio puede crear una cola. El artículo sobre [AirLLM e inferencia por capas (en persa)](/articles/airllm-layer-wise-inference/) desarrolla el coste de esas transferencias.
+
+**Aviso sobre resultados incorrectos — 28 de septiembre de 2026:** el [prelanzamiento b11224](https://github.com/ggml-org/llama.cpp/releases/tag/b11224) corrige lecturas incorrectas de algunas vistas con stride en Vulkan; el autor del [PR #28956](https://github.com/ggml-org/llama.cpp/pull/28956) describe un bucle infinito en SheetSage2 y un fallo de Qwen3 AR con `--no-fa`. En las cargas afectadas, compruebe la corrección en `b11224+` con el arreglo y compare con CPU/CUDA usando ajustes iguales y tolerancias numéricas explícitas antes de confiar en la salida o medir velocidad. Los resultados Vulkan/INT8 de `b11160` también requieren nuevas pruebas: la versión del backend forma parte de las condiciones del benchmark y de la evaluación de calidad; no implica que todas las salidas Vulkan fueran incorrectas ni que el prelanzamiento esté listo para producción.
 
 <!-- reference:mac-path:start -->
 

@@ -71,6 +71,7 @@
           {#each model.license.restrictions ?? [] as restriction}<p>{restriction}</p>{/each}
         </div>
         {#if model.specializedSpecs}<div class="specialized-specs">{#each Object.entries(model.specializedSpecs).filter(([key, value]) => key === 'poolingOrScoring' && !(value.state === 'known' && uses.some(use => use.conditions.includes(String(value.value))))) as [key,value]}<p><LlmValue value={value.state === 'known' ? {state: 'known', display: String(value.value)} : value} /></p>{/each}</div>{/if}
+        {#if profile.securityNotes?.length}<section><h4>{t('model.security-notes')}</h4>{#each profile.securityNotes as note}<p>{note}</p>{/each}<LlmEvidence ids={profile.evidenceIds} evidence={repository.evidence} /></section>{/if}
         {#if profile.languageSummary}<p class="muted">{profile.languageSummary}</p>{/if}
         {#if uses.length}<h3>{t('LlmModelProfile.1071')}</h3>{/if}
         {#each uses as use}<article class="use-card"><small>{modelUseRoleLabels[use.role]}</small><h4>{use.summary}</h4>{#if use.description && use.description !== profile.introduction}<p>{use.description}</p>{/if}{#if use.conditions.length}<ul>{#each use.conditions as condition}<li>{condition}</li>{/each}</ul>{/if}<small class="muted">{use.basis === 'publisher-summary' ? t('LlmModelProfile.1072') : t('LlmModelProfile.1073')}</small><LlmEvidence ids={use.evidenceIds} evidence={repository.evidence} /></article>{/each}

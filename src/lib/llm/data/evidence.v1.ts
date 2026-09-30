@@ -42908,3 +42908,136 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:llama-cpp-b11224-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11224",
+  "title": "llama.cpp b11224 experimental prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-28",
+  "publishedOn": "2026-09-28",
+  "versionRevisionOrCommit": "52624716156a25af417b616e23bc712452d9396c",
+  "locator": "Release status; final ggml_vk_batch_stride, exact descriptor ranges and test-backend-ops cases",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Vulkan strided in-place views in mul_mat and mul_mat_id; correctness, not a speed benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-vulkan-28956",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/28956",
+  "title": "llama.cpp PR #28956: Vulkan strided-view correctness",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-28",
+  "publishedOn": "2026-09-15",
+  "versionRevisionOrCommit": "52624716156a25af417b616e23bc712452d9396c",
+  "locator": "Release status; final ggml_vk_batch_stride, exact descriptor ranges and test-backend-ops cases",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Vulkan strided in-place views in mul_mat and mul_mat_id; correctness, not a speed benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11240-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11240",
+  "title": "llama.cpp b11240: typed multimodal embeddings and stateless KV handling",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-29",
+  "publishedOn": "2026-09-28",
+  "versionRevisionOrCommit": "b11240",
+  "locator": "Release notes, PR #29556; published 22:26 UTC; prerelease",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Typed /v1/embeddings input and disabled KV prefix reuse for embedding/rerank; no multimodal reranker support claim",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:glm53-anthropic-cyber-20260929",
+  "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+  "title": "GLM-5.3 and the spread of advanced cyber capabilities",
+  "organization": "Anthropic",
+  "publishedOn": "2026-09-29",
+  "accessedOn": "2026-09-30",
+  "locator": "Cyber capability assessment and methodological notes",
+  "kind": "third-party-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.3 cyber evaluation; not memory, throughput or Persian quality evidence",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:glm53-nist-cyber-20260917",
+  "url": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities",
+  "title": "CAISI assessment of GLM-5.3 cyber capabilities",
+  "organization": "NIST / CAISI",
+  "publishedOn": "2026-09-17",
+  "accessedOn": "2026-09-30",
+  "locator": "Cyber capability assessment and methodological notes",
+  "kind": "third-party-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.3 cyber evaluation; not memory, throughput or Persian quality evidence",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11262",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11262",
+  "title": "llama.cpp b11262 prerelease",
+  "organization": "ggml-org",
+  "publishedOn": "2026-09-29",
+  "accessedOn": "2026-09-30",
+  "versionRevisionOrCommit": "b11262",
+  "locator": "Release notes / merged PR; 2026-09-29T21:49:00Z",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11262 prerelease",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-avx512-29545",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29545",
+  "title": "AVX512-FP16 F16 dot products accumulate in FP32",
+  "organization": "ggml-org",
+  "publishedOn": "2026-09-29",
+  "accessedOn": "2026-09-30",
+  "versionRevisionOrCommit": "284153e",
+  "locator": "Release notes / merged PR; 2026-09-29",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "AVX512-FP16 F16 dot products accumulate in FP32",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-v0-35-1-rc0",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1-rc0",
+  "title": "Ollama v0.35.1-rc0 prerelease",
+  "organization": "Ollama",
+  "publishedOn": "2026-09-29",
+  "accessedOn": "2026-09-30",
+  "versionRevisionOrCommit": "v0.35.1-rc0",
+  "locator": "Release notes / merged PR; 2026-09-29T20:14:00Z",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama v0.35.1-rc0 prerelease",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-capability-18708",
+  "url": "https://github.com/ollama/ollama/pull/18708",
+  "title": "Explicit capabilities and GGUF-only SystemOne scoring",
+  "organization": "Ollama",
+  "publishedOn": "2026-09-29",
+  "accessedOn": "2026-09-30",
+  "versionRevisionOrCommit": "b3f78b7",
+  "locator": "Release notes / merged PR; 2026-09-29",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Explicit capabilities and GGUF-only SystemOne scoring",
+  "limitations": [],
+  "presentationNotes": []
+});

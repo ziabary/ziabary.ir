@@ -5,7 +5,7 @@ translationGroup: ollama-vllm-sglang-or-llama-cpp
 lang: en
 date: '2026-09-15'
 faDate: '2026-09-15'
-updated: "2026-09-19"
+updated: "2026-09-28"
 draft: false
 math: false
 category: Language models
@@ -88,6 +88,8 @@ llama.cpp supports CPU execution and backends including Metal, CUDA and Vulkan. 
 The documented [`llama-server` in v0.4.1](https://github.com/ggml-org/llama.cpp/blob/v0.4.1/tools/server/README.md) includes parallel slots, continuous batching, prompt caching, metrics and a router mode for multiple models. A GGUF service can therefore be a deliberate deployment choice. Multi-host operations and the capacity remaining after a failure still require surrounding infrastructure.
 
 For an intermittently used local tool, accepting a longer response in exchange for smaller GPU requirements may be attractive. For an interactive shared service, that same exchange can create a queue. [Layer-wise inference and AirLLM (in Persian)](/articles/airllm-layer-wise-inference/) develops the transfer-cost side of this decision.
+
+**Correctness warning — 28 September 2026:** the [b11224 prerelease](https://github.com/ggml-org/llama.cpp/releases/tag/b11224) fixes incorrect reads of some strided views in Vulkan; the author of [PR #28956](https://github.com/ggml-org/llama.cpp/pull/28956) reports an endless SheetSage2 decoder loop and a Qwen3 AR issue with `--no-fa`. For affected workloads, test correctness on `b11224+` containing the fix and compare with CPU/CUDA under matching settings and explicit numerical tolerances before relying on output or measuring speed. Older `b11160` Vulkan/INT8 results also need retesting: the backend version belongs in benchmark and quality-evaluation conditions, and this fix does not establish that all Vulkan output was wrong or that the prerelease is production-ready.
 
 <!-- reference:mac-path:start -->
 

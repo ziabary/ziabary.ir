@@ -4373,6 +4373,14 @@
         ]
       },
       {
+        "value": "video",
+        "label": [
+          "ویدئو",
+          "Video",
+          "Vídeo"
+        ]
+      },
+      {
         "value": "audio",
         "label": [
           "صوت",
@@ -4639,6 +4647,14 @@
           "ویرایش فایل و اجرای آزمون",
           "Edit files and run tests",
           "Editar archivos y ejecutar pruebas"
+        ]
+      },
+      {
+        "value": "security",
+        "label": [
+          "بررسی امنیت کد در محیط مجاز",
+          "Security review in an authorized environment",
+          "Revisión de seguridad en un entorno autorizado"
         ]
       }
     ],
@@ -5683,6 +5699,55 @@
     "kind": "choice",
     "unit": null,
     "when": "local"
+  },
+  {
+    "id": "cpuAvx512Fp16",
+    "step": 3,
+    "title": [
+      "آیا مسیر AVX512-FP16 روی CPU فعال است؟",
+      "Is the AVX512-FP16 CPU path enabled?",
+      "¿Está activa la ruta CPU AVX512-FP16?"
+    ],
+    "why": [
+      "این مسیر در buildهای قدیمی llama.cpp اصلاح صحت محاسبه لازم دارد.",
+      "Older llama.cpp builds need a correctness fix on this path.",
+      "Esta ruta requiere una corrección en versiones anteriores de llama.cpp."
+    ],
+    "help": [
+      "پشتیبانی CPU و فعال بودن این مسیر در build را با تیم فنی بررسی کنید؛ اگر مشخص نیست، «نمی‌دانم» را بزنید.",
+      "Check CPU support and the enabled build path; select unknown if unverified.",
+      "Compruebe soporte de CPU y ruta activa; seleccione desconocido si no está verificado."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "yes",
+        "label": [
+          "بله",
+          "Yes",
+          "Sí"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "خیر",
+          "No",
+          "No"
+        ]
+      },
+      {
+        "value": "unknown",
+        "label": [
+          "نمی‌دانم",
+          "Unknown",
+          "No lo sé"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "localCpu"
   },
   {
     "id": "ram",

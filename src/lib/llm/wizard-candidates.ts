@@ -59,7 +59,7 @@ function chooseExecution(repository:LlmGuideRepository,model:ModelVersion,a:Wiza
 }
 export function requestedSpecialty(a:WizardAnswers):ModelTaskSpecialization|undefined{
  if(a.task==='writing'&&a.writingTask==='translation')return 'translation';
- if(a.task==='coding')return a.codingMode==='completion'?'code-completion':a.codingMode==='agent'?'coding-agent':'coding-assistant';
+ if(a.task==='coding')return a.codingMode==='completion'?'code-completion':['agent','security'].includes(a.codingMode)?'coding-agent':'coding-assistant';
 }
 export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnswers,locale:LlmLocale,estimate?:MemoryEstimator,kind?:'embedding'|'reranker'):CandidateReview[]{
  const a=cleanWizard(raw,locale),L=(fa:string,en:string,es:string)=>localized([fa,en,es],locale),n=new Intl.NumberFormat(locale==='fa'?'fa-IR':locale,{maximumFractionDigits:2});

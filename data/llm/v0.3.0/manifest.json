@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-28",
+  "asOf": "2026-09-30",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -57,6 +57,16 @@
   "update20260928": {
     "prereleaseNote": "b11223",
     "scope": "Causal RANK physical batch splitting; five Qwen reranker compatibility notes; no new runtime default or performance data",
+    "runtimeTested": false
+  },
+  "vulkan20260928": {
+    "prereleaseNote": "b11224",
+    "scope": "Vulkan strided-view correctness; b11160 retesting condition; unchanged hardware, memory, speed and production defaults",
+    "runtimeTested": false
+  },
+  "update20260929": {
+    "softwareEvidence": "evidence:llama-cpp-b11240-release",
+    "scope": "Experimental multimodal embeddings route for existing Qwen3-VL-Embedding-2B/8B; no new weights or memory claims",
     "runtimeTested": false
   }
 }

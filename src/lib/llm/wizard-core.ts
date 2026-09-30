@@ -54,7 +54,7 @@ export function wizardOptions(q:typeof questions[number],locale:LlmLocale){
  return options;
 }
 export const isLocal=(a:WizardAnswers)=>['self','managed','compare'].includes(a.deployment);
-export const usesTools=(a:WizardAnswers)=>a.task==='operations'||hasSource(a,'live')||a.task==='coding'&&a.codingMode==='agent';
+export const usesTools=(a:WizardAnswers)=>a.task==='operations'||hasSource(a,'live')||a.task==='coding'&&['agent','security'].includes(a.codingMode);
 export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,locale:LlmLocale) {
  if(q.id==='workdays'&&a.mode==='batch'&&a.batchFrequency!=='daily')return false;
  if(q.id==='apiCostExample'&&locale==='fa')return false;
@@ -81,6 +81,7 @@ export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,local
   case 'batch':return ['batch','both'].includes(a.mode);
   case 'local':return isLocal(a);
   case 'equipment':return isLocal(a)&&['cpu','gpu'].includes(a.hardware);
+  case 'localCpu':return isLocal(a)&&a.hardware==='cpu';
   case 'gpu':return isLocal(a)&&a.hardware==='gpu';
   case 'external':return a.deployment==='api'||a.deployment==='compare'&&a.policy==='public';
   case 'license':return locale!=='fa';
