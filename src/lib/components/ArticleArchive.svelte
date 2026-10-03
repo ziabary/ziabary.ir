@@ -6,6 +6,7 @@
   import PageHero from './PageHero.svelte';
   import PageSeo from './PageSeo.svelte';
   import ArticleCard from './ArticleCard.svelte';
+  import FeaturedArticles from './FeaturedArticles.svelte';
   import ArchiveCategorySelect from './ArchiveCategorySelect.svelte';
   import { allArticleMetadata, type ArticleMeta } from '$lib/content';
   import type { Locale } from '$lib/editions';
@@ -107,6 +108,9 @@
   description={copy.lead} path={canonical} image="/images/profile/mehran-ziabary-formal.png" {locale} noindex={filtering || preview} />
 <main class="article-archive" dir={locale === 'fa' ? 'rtl' : 'ltr'}>
   <PageHero eyebrow={copy.archive} title={copy.title} lead={copy.lead} />
+  {#if currentPage === 1 && resultPage === 1 && !filtering}
+    <FeaturedArticles {locale} {records} />
+  {/if}
   <section class="wrap archive-controls" aria-label={copy.search}>
     <label><span>{copy.search}</span><input type="search" bind:value={query} oninput={event => { query = event.currentTarget.value; updateFilters(); }} /></label>
     <ArchiveCategorySelect label={copy.all} value={category} options={categoryOptions} onchange={value => { category = value; updateFilters(); }} />

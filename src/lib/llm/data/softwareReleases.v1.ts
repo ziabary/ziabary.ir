@@ -1740,9 +1740,12 @@ softwareReleases.push({
     "evidence:llama-cpp-vulkan-28956",
     "evidence:llama-cpp-b11240-release",
     "evidence:llama-cpp-b11262",
-    "evidence:llama-cpp-avx512-29545"
+    "evidence:llama-cpp-avx512-29545",
+    "evidence:llama-cpp-b11279-release",
+    "evidence:llama-cpp-glm-flash-27773",
+    "evidence:llama-cpp-glm-flash-race-29745"
   ],
-  "selectionCaveat": "پیش‌انتشار b11262؛ اصلاح صحت محاسبه در CPU. در مسیر AVX512-FP16، انباشت FP16 در dot productهای F16 ممکن بود overflow کند و logits متفاوتی بدهد؛ b11262 انباشت را به FP32 منتقل می‌کند. برای این مسیر، خروجی buildهای قدیمی‌تر را پیش از اتکا روی b11262+ حاوی اصلاح #29545 بازآزمایی کنید. این اصلاح شاهد افزایش سرعت نیست و پیش‌انتشار، انتخاب پیش‌فرض تولیدی نمی‌شود. هشدار صحت محاسبه؛ یادداشت مستقل b11224 — پیش‌انتشار/آزمایشی، ۲۸ سپتامبر ۲۰۲۶: در buildهای قدیمی فاقد اصلاح #28956، برخی مسیرهای Vulkan در mul_mat و mul_mat_id روی viewهای strided از cache یا expertها ممکن است دادهٔ اشتباه بخوانند. نویسندهٔ PR حلقهٔ بی‌پایان decoder در SheetSage2 و خطا در مسیر Qwen3 AR با --no-fa را گزارش کرده است؛ این نتیجه به همهٔ مدل‌ها یا GPUها تعمیم ندارد. برای این workloadها، پیش از اتکا به خروجی، روی b11224+ حاوی اصلاح بازآزمایی و با CPU/CUDA تحت تنظیمات یکسان و رواداری عددی مشخص مقایسه کنید. این اصلاح صحت محاسبه است، نه شاهد افزایش سرعت؛ قابلیت پایدار v0.5.0 یا تأیید آمادگی تولیدی نیز نیست. پیش‌انتشار انتخاب پیش‌فرض تولیدی نمی‌شود. پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. بازبینی یادداشت Vulkan/INT8 در b11160: آزمون صحت و سپس عملکرد را روی b11224+ حاوی #28956 تکرار کنید؛ نتیجهٔ build قدیمی شاهد قابل‌انتقال به build جدید نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست. یادداشت نسخه‌مند b11223 — پیش‌انتشار/آزمایشی، منتشرشده در ۲۷ سپتامبر ۲۰۲۶ ساعت ۲۲:۰۳ UTC (۲۸ سپتامبر تهران): llama-server با RANK و attention علّیِ فعال در زمان اجرا می‌تواند ورودی را بین چند physical batch تقسیم کند. قبلاً ورودی بزرگ‌تر از n_ubatch (پیش‌فرض ۵۱۲ توکن) رد می‌شد. cross-encoderهای دوطرفه همچنان باید در یک physical batch جا شوند. این تغییر به‌معنی تکمیل عمومی پشتیبانی چندوجهی /rerank و /embedding نیست. برای این مسیر به b11223+ حاوی اصلاح #28876 نیاز است؛ قابلیت به نسخهٔ پایدار v0.5.0 نسبت داده نمی‌شود و پیش‌انتشار انتخاب پیش‌فرض تولیدی نیست. آمادگی تولیدی و اثر عملکردی به آزمون هم‌شرایط نیاز دارند. یادداشت مستقل b11240، پیش‌انتشار ۲۸ سپتامبر ۲۰۲۶ ساعت ۲۲:۲۶ UTC: API ورودی تایپ‌شدهٔ متن، تصویر، صدا و ویدئو را می‌پذیرد؛ پشتیبانی هر نوع ورودی به مدل وابسته است. هر شیء {\"content\": [...]} یک embedding می‌سازد؛ bare content array پشتیبانی نمی‌شود و legacy API حفظ شده است. KV prefix reuse برای embedding/rerank غیرفعال است؛ ظرفیت و سرعت باید دوباره سنجیده شود. مسیر Qwen3-VL-Embedding-2B/8B آزمایشی است؛ این یادداشت پشتیبانی چندوجهی Qwen3-VL-Reranker یا کیفیت فارسی را تأیید نمی‌کند و قابلیت نسخهٔ پایدار v0.5.0 نیست.",
+  "selectionCaveat": "یادداشت مستقل آزمایشی، ۳۰ سپتامبر ۲۰۲۶: b11279 پشتیبانی اولیهٔ GLM-5.3-Flash را اضافه کرد (#27773). پس از ادغام، data race در آزمون CPU/ThreadSanitizer گزارش و اصلاح #29745 جداگانه ادغام شد؛ b11279 شامل این اصلاح بعدی نیست. برای آزمایش، وجود اصلاح را بررسی و صحت خروجی را بازآزمایی کنید. این خبر تأیید پشتیبانی GLM-5.3-BF16، قابلیت نسخهٔ پایدار v0.5.0 یا پیشنهاد پیش‌فرض ویزارد نیست؛ آزمون محلی انجام نشده است. پیش‌انتشار b11262؛ اصلاح صحت محاسبه در CPU. در مسیر AVX512-FP16، انباشت FP16 در dot productهای F16 ممکن بود overflow کند و logits متفاوتی بدهد؛ b11262 انباشت را به FP32 منتقل می‌کند. برای این مسیر، خروجی buildهای قدیمی‌تر را پیش از اتکا روی b11262+ حاوی اصلاح #29545 بازآزمایی کنید. این اصلاح شاهد افزایش سرعت نیست و پیش‌انتشار، انتخاب پیش‌فرض تولیدی نمی‌شود. هشدار صحت محاسبه؛ یادداشت مستقل b11224 — پیش‌انتشار/آزمایشی، ۲۸ سپتامبر ۲۰۲۶: در buildهای قدیمی فاقد اصلاح #28956، برخی مسیرهای Vulkan در mul_mat و mul_mat_id روی viewهای strided از cache یا expertها ممکن است دادهٔ اشتباه بخوانند. نویسندهٔ PR حلقهٔ بی‌پایان decoder در SheetSage2 و خطا در مسیر Qwen3 AR با --no-fa را گزارش کرده است؛ این نتیجه به همهٔ مدل‌ها یا GPUها تعمیم ندارد. برای این workloadها، پیش از اتکا به خروجی، روی b11224+ حاوی اصلاح بازآزمایی و با CPU/CUDA تحت تنظیمات یکسان و رواداری عددی مشخص مقایسه کنید. این اصلاح صحت محاسبه است، نه شاهد افزایش سرعت؛ قابلیت پایدار v0.5.0 یا تأیید آمادگی تولیدی نیز نیست. پیش‌انتشار انتخاب پیش‌فرض تولیدی نمی‌شود. پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. بازبینی یادداشت Vulkan/INT8 در b11160: آزمون صحت و سپس عملکرد را روی b11224+ حاوی #28956 تکرار کنید؛ نتیجهٔ build قدیمی شاهد قابل‌انتقال به build جدید نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست. یادداشت نسخه‌مند b11223 — پیش‌انتشار/آزمایشی، منتشرشده در ۲۷ سپتامبر ۲۰۲۶ ساعت ۲۲:۰۳ UTC (۲۸ سپتامبر تهران): llama-server با RANK و attention علّیِ فعال در زمان اجرا می‌تواند ورودی را بین چند physical batch تقسیم کند. قبلاً ورودی بزرگ‌تر از n_ubatch (پیش‌فرض ۵۱۲ توکن) رد می‌شد. cross-encoderهای دوطرفه همچنان باید در یک physical batch جا شوند. این تغییر به‌معنی تکمیل عمومی پشتیبانی چندوجهی /rerank و /embedding نیست. برای این مسیر به b11223+ حاوی اصلاح #28876 نیاز است؛ قابلیت به نسخهٔ پایدار v0.5.0 نسبت داده نمی‌شود و پیش‌انتشار انتخاب پیش‌فرض تولیدی نیست. آمادگی تولیدی و اثر عملکردی به آزمون هم‌شرایط نیاز دارند. یادداشت مستقل b11240، پیش‌انتشار ۲۸ سپتامبر ۲۰۲۶ ساعت ۲۲:۲۶ UTC: API ورودی تایپ‌شدهٔ متن، تصویر، صدا و ویدئو را می‌پذیرد؛ پشتیبانی هر نوع ورودی به مدل وابسته است. هر شیء {\"content\": [...]} یک embedding می‌سازد؛ bare content array پشتیبانی نمی‌شود و legacy API حفظ شده است. KV prefix reuse برای embedding/rerank غیرفعال است؛ ظرفیت و سرعت باید دوباره سنجیده شود. مسیر Qwen3-VL-Embedding-2B/8B آزمایشی است؛ این یادداشت پشتیبانی چندوجهی Qwen3-VL-Reranker یا کیفیت فارسی را تأیید نمی‌کند و قابلیت نسخهٔ پایدار v0.5.0 نیست.",
   "targetScenario": {
     "state": "known",
     "value": "اجرای مدل و llama-server؛ نسخهٔ پایدار 0.5.0",
@@ -1752,14 +1755,17 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "RPC major 7؛ هماهنگی کلاینت و سرورها یادداشت مستقل پیش‌انتشار b11223: chunked prefill برای RANK در بازرتبه‌بندهای علّی Qwen3 و Qwen3-VL، با ورودی بلندتر از physical batch. یادداشت مستقل b11224 (آزمایشی): اصلاح stride و محدودهٔ دسترسی Vulkan برای صحت محاسبه روی viewهای strided؛ بدون ادعای افزایش سرعت. b11240+ · /v1/embeddings · ورودی چندوجهی OpenAI-style · پیش‌انتشار",
+    "value": "RPC major 7؛ هماهنگی کلاینت و سرورها یادداشت مستقل پیش‌انتشار b11223: chunked prefill برای RANK در بازرتبه‌بندهای علّی Qwen3 و Qwen3-VL، با ورودی بلندتر از physical batch. یادداشت مستقل b11224 (آزمایشی): اصلاح stride و محدودهٔ دسترسی Vulkan برای صحت محاسبه روی viewهای strided؛ بدون ادعای افزایش سرعت. b11240+ · /v1/embeddings · ورودی چندوجهی OpenAI-style · پیش‌انتشار یادداشت مستقل b11279: پشتیبانی اولیه و آزمایشی GLM-5.3-Flash؛ نیازمند اصلاح بعدی #29745 و بازآزمایی.",
     "evidenceIds": [
       "evidence:llama-cpp-v0-5-0-release",
       "evidence:llama-cpp-b11223-release",
       "evidence:llama-cpp-rank-28876",
       "evidence:llama-cpp-b11224-release",
       "evidence:llama-cpp-vulkan-28956",
-      "evidence:llama-cpp-b11240-release"
+      "evidence:llama-cpp-b11240-release",
+      "evidence:llama-cpp-b11279-release",
+      "evidence:llama-cpp-glm-flash-27773",
+      "evidence:llama-cpp-glm-flash-race-29745"
     ]
   }
 });
@@ -1875,5 +1881,125 @@ softwareReleases.push({
   "evidenceIds": [
     "evidence:ollama-v0-35-1-rc0",
     "evidence:ollama-capability-18708"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11310",
+  "productId": "software-product:llama-cpp",
+  "version": "b11310",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-01",
+  "lastReviewedOn": "2026-10-01",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ اصلاح ایمنی حافظه و صحت اجرای IQ4_NL",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11310-release",
+      "evidence:llama-cpp-b11310-fix"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "CUDA/HIP/MUSA؛ ردیف IQ4_NL با طول نامضرب QK_K",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11310-release",
+      "evidence:llama-cpp-b11310-fix"
+    ]
+  },
+  "selectionCaveat": "پیش‌انتشار؛ اصلاح ایمنی حافظهٔ IQ4_NL در CUDA/HIP/MUSA. برای این مسیر حداقل b11310+ حاوی #29683 لازم است. اگر تعداد عناصر مضرب QK4_NL ولی نه QK_K باشد، آخرین بلوک می‌توانست از انتهای ورودی بخواند و بیرون بافر خروجی بنویسد؛ مضرب‌های QK_K از این خطا متأثر نیستند. در آزمون اشکال‌زدایی نویسنده با ۱۹۲ عنصر، نوشتن خارج‌ازمحدوده از ۱۲۸ به صفر بایت رسید (CUDA H20-3e و MUSA S5000)؛ HIP از کد مشترک استفاده می‌کند، نه اینکه آزمون مستقلی گزارش شده باشد. تا بازبینی ۱ اکتبر ۲۰۲۶، منابع بررسی‌شده CVE یا امکان بهره‌برداری اعلام نکرده‌اند. این اصلاح شاهد افزایش سرعت یا تغییر نیاز حافظه نیست.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11310-release",
+    "evidence:llama-cpp-b11310-fix"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11307",
+  "productId": "software-product:llama-cpp",
+  "version": "b11307",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-01",
+  "lastReviewedOn": "2026-10-01",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ DFlash/DFlash2 در اجرای هم‌زمان",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11307-release",
+      "evidence:llama-cpp-b11307-fix",
+      "evidence:llama-cpp-dflash-27117"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "ترتیب layer input؛ KV streamهای جدا و tensor split",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11307-release",
+      "evidence:llama-cpp-b11307-fix",
+      "evidence:llama-cpp-dflash-27117"
+    ]
+  },
+  "selectionCaveat": "پیش‌انتشار؛ اصلاح ترتیب layer input برای DFlash/DFlash2 و چند sequence. برای concurrency بیش از یک، به‌ویژه با KV streamهای جدا، از b11307+ حاوی #29019 استفاده کنید؛ اصلاح با tensor split نیز سازگار است. شکستن batch می‌توانست hidden state توکن دیگری را به drafter بدهد؛ اصلاح ترتیب اصلی را بازمی‌گرداند. در SPEED-Bench نویسنده با Qwen3.8-27B و DFlash2، هر دو Q4_K_M و concurrency=16، میانگین طول پذیرش از 3.3531 به 3.9211 رسید (+16.94%). این نتیجه سرعت نهایی، کیفیت فارسی یا عملکرد مدل‌ها و سخت‌افزارهای دیگر را ثابت نمی‌کند. گزارش #27117 زمینهٔ افت پذیرش است؛ رفع همهٔ موارد آن تأیید نشده است. آزمون محلی انجام نشده و پیش‌انتشار انتخاب پیش‌فرض تولیدی نیست.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11307-release",
+    "evidence:llama-cpp-b11307-fix",
+    "evidence:llama-cpp-dflash-27117"
   ]
 });

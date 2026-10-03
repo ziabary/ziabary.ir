@@ -20,6 +20,11 @@ export type ArticleMeta = {
   readTime: string;
   related: string[];
   cover?: string;
+  mediaCover?: string;
+  mediaCoverAlt?: string;
+  featured?: boolean;
+  featuredImage?: string;
+  featuredSubtitle?: string;
   coverCredit?: string;
   external?: string;
   source?: string;

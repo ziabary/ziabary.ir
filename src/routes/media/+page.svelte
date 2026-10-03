@@ -33,8 +33,8 @@
       internalUrl: `/articles/${article.slug}/`,
       date: article.date,
       faDate: article.faDate,
-      coverImage: article.cover ?? null,
-      coverImageAlt: article.title
+      coverImage: article.mediaCover ?? article.cover ?? null,
+      coverImageAlt: article.mediaCoverAlt ?? article.title
     }));
 
   const publishedItems = [...authoredMedia, ...mediaItems].sort((a, b) => b.date.localeCompare(a.date));

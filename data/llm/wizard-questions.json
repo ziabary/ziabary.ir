@@ -6681,5 +6681,103 @@
     "kind": "choice",
     "unit": null,
     "when": "external"
+  },
+  {
+    "id": "llamaIq4NlGpu",
+    "step": 3,
+    "title": [
+      "آیا IQ4_NL را با llama.cpp روی CUDA، HIP یا MUSA اجرا می‌کنید؟",
+      "Do you run IQ4_NL with llama.cpp on CUDA, HIP or MUSA?",
+      "¿Ejecuta IQ4_NL con llama.cpp en CUDA, HIP o MUSA?"
+    ],
+    "why": [
+      "برای نمایش هشدار حداقل نسخه در مسیر متأثر.",
+      "Shows the minimum-version warning only for the affected path.",
+      "Muestra el aviso de versión mínima solo en la ruta afectada."
+    ],
+    "help": [
+      "فقط مسیر اجرای واقعی را مشخص کنید؛ کوانت چهاربیتی دیگر یا backend دیگر مشمول این سؤال نیست.",
+      "Confirm the actual runtime path; other four-bit formats or backends do not qualify.",
+      "Confirme la ruta real; otros formatos de cuatro bits o backends no corresponden."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "yes",
+        "label": [
+          "بله",
+          "Yes",
+          "Sí"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "خیر",
+          "No",
+          "No"
+        ]
+      },
+      {
+        "value": "unknown",
+        "label": [
+          "نمی‌دانم",
+          "Unknown",
+          "No lo sé"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "gpu"
+  },
+  {
+    "id": "llamaDflash",
+    "step": 3,
+    "title": [
+      "آیا برای این درخواست‌های هم‌زمان، DFlash یا DFlash2 را در llama.cpp فعال کرده‌اید؟",
+      "Is DFlash or DFlash2 enabled in llama.cpp for these concurrent requests?",
+      "¿Está activo DFlash o DFlash2 en llama.cpp para estas solicitudes simultáneas?"
+    ],
+    "why": [
+      "برای نمایش هشدار حداقل نسخه در مسیر متأثر.",
+      "Shows the minimum-version warning only for the affected path.",
+      "Muestra el aviso de versión mínima solo en la ruta afectada."
+    ],
+    "help": [
+      "تعداد باید sequenceهای فعال باشد، نه درخواست‌های منتظر در صف. MTP یا drafter دیگر به‌تنهایی به معنی DFlash نیست.",
+      "Count active sequences, not queued requests. Other MTP or draft methods do not imply DFlash.",
+      "Cuente secuencias activas, no solicitudes en cola. Otros métodos MTP o draft no implican DFlash."
+    ],
+    "article": "software",
+    "options": [
+      {
+        "value": "yes",
+        "label": [
+          "بله",
+          "Yes",
+          "Sí"
+        ]
+      },
+      {
+        "value": "no",
+        "label": [
+          "خیر",
+          "No",
+          "No"
+        ]
+      },
+      {
+        "value": "unknown",
+        "label": [
+          "نمی‌دانم",
+          "Unknown",
+          "No lo sé"
+        ]
+      }
+    ],
+    "kind": "choice",
+    "unit": null,
+    "when": "llamaConcurrent"
   }
 ]

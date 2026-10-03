@@ -43041,3 +43041,161 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:llama-cpp-b11279-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11279",
+  "title": "llama.cpp b11279: initial GLM-5.3-Flash support",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-30",
+  "publishedOn": "2026-09-30",
+  "versionRevisionOrCommit": "b11279",
+  "locator": "Prerelease notes; initial Flash support only",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Prerelease notes; initial Flash support only",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-glm-flash-27773",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/27773",
+  "title": "llama.cpp PR #27773: GLM-5.3-Flash support and follow-up discussion",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-30",
+  "publishedOn": "2026-09-30",
+  "versionRevisionOrCommit": "649dcb1",
+  "locator": "Merged support and subsequent CPU ThreadSanitizer data-race report",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Merged support and subsequent CPU ThreadSanitizer data-race report",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-glm-flash-race-29745",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29745",
+  "title": "llama.cpp PR #29745: GLM5-Next indexer scatter data-race fix",
+  "organization": "ggml-org",
+  "accessedOn": "2026-09-30",
+  "publishedOn": "2026-09-30",
+  "versionRevisionOrCommit": "05af0d2",
+  "locator": "Post-merge sparse-mask data-race fix; not included in b11279",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Post-merge sparse-mask data-race fix; not included in b11279",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11310-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11310",
+  "title": "llama.cpp b11310 prerelease, 1 October 2026 02:05 UTC",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-01",
+  "publishedOn": "2026-10-01",
+  "versionRevisionOrCommit": "f872b59",
+  "locator": "Release notes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Upstream fix; not a local runtime benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11310-fix",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29683",
+  "title": "llama.cpp #29683: IQ4_NL short-row bounds fix",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-01",
+  "publishedOn": "2026-09-30",
+  "versionRevisionOrCommit": "f872b59",
+  "locator": "Overview and author-reported test; merged 30 September 2026",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Upstream fix; not a local runtime benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11307-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11307",
+  "title": "llama.cpp b11307 prerelease, 1 October 2026 00:34 UTC",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-01",
+  "publishedOn": "2026-10-01",
+  "versionRevisionOrCommit": "4453b53",
+  "locator": "Release notes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Upstream fix; not a local runtime benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11307-fix",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29019",
+  "title": "llama.cpp #29019: Restore speculative-decoding layer-input order",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-01",
+  "publishedOn": "2026-09-30",
+  "versionRevisionOrCommit": "4453b53",
+  "locator": "Overview and author-reported test; merged 30 September 2026",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Upstream fix; not a local runtime benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-dflash-27117",
+  "url": "https://github.com/ggml-org/llama.cpp/issues/27117",
+  "title": "llama.cpp #27117: DFlash acceptance under concurrent sequences",
+  "organization": "ggml-org community",
+  "accessedOn": "2026-10-01",
+  "locator": "Issue report; contextual evidence, not proof that all cases are resolved",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Reported DFlash acceptance collapse under concurrency",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:cohere-embed5-release",
+  "url": "https://docs.cohere.com/changelog/embed-v5",
+  "title": "Cohere Embed 5 release: Pro/Fast shared space and commercial availability",
+  "organization": "Cohere",
+  "accessedOn": "2026-10-01",
+  "locator": "Embed 5 specifications; publisher documentation",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Publisher-declared capabilities; no independent Persian retrieval result",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-09-30"
+});
+evidence.push({
+  "id": "evidence:cohere-embed5-docs",
+  "url": "https://docs.cohere.com/docs/cohere-embed",
+  "title": "Cohere Embed model specifications and declared languages",
+  "organization": "Cohere",
+  "accessedOn": "2026-10-01",
+  "locator": "Embed 5 specifications; publisher documentation",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Publisher-declared capabilities; no independent Persian retrieval result",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:cohere-embed5-usage",
+  "url": "https://docs.cohere.com/docs/embeddings",
+  "title": "Cohere embedding input types, dimensions and mixed content",
+  "organization": "Cohere",
+  "accessedOn": "2026-10-01",
+  "locator": "Embed 5 specifications; publisher documentation",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Publisher-declared capabilities; no independent Persian retrieval result",
+  "limitations": [],
+  "presentationNotes": []
+});

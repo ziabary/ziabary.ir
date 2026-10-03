@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-09-30",
+  "asOf": "2026-10-01",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",

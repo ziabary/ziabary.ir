@@ -70,12 +70,28 @@ export type GpuBaseRecord = {
 export type GpuRecord = GpuBaseRecord & GpuComputeSpec;
 
 export const gpuLastReviewed = {
-  iso: '2026-09-08',
-  fa: '۱۷ شهریور ۱۴۰۵',
-  gregorian: '8 September 2026'
+  iso: '2026-10-03',
+  fa: '۱۱ مهر ۱۴۰۵',
+  gregorian: '3 October 2026'
 };
 
 const rows: GpuBaseRecord[] = [
+  {
+    id: 'nvidia-dgx-spark-64gb', vendor: 'NVIDIA', model: 'DGX Spark 64GB', status: 'announced', gpuClass: 'workstation', architecture: 'GB10 Grace Blackwell', year: 2026,
+    memoryGB: 64, memoryType: 'حافظهٔ یکپارچهٔ مشترک CPU/GPU', bandwidthTBs: 0, powerW: null,
+    formFactor: 'سامانهٔ کامل رومیزی؛ پیکربندی OEM', hostInterface: 'تراشهٔ GB10 در سامانه؛ کارت قابل‌نصب نیست', cooling: 'وابسته به SKU سازنده',
+    compute: 'نرخ‌های محاسباتی این پیکربندی در خبر معرفی تفکیک نشده‌اند.', interconnect: 'ConnectX-7؛ اتصال دو سامانه با NVIDIA Sync', partitioning: 'حافظهٔ مشترک CPU/GPU؛ ظرفیت آزاد مدل کمتر از ۶۴GB است',
+    software: 'DGX OS و پشتهٔ NVIDIA AI', workloads: ['هوش مصنوعی محلی'],
+    bestFit: 'رصد گزینهٔ رومیزی برای اجرای محلی مدل‌ها پس از بررسی SKU و حافظهٔ آزاد واقعی.',
+    caution: 'معرفی در ۲ اکتبر ۲۰۲۶؛ عرضه از طریق شرکای سازنده برای ۲۳ اکتبر برنامه‌ریزی شده است. عملکرد واقعی و مشخصات هر SKU هنوز مبنای توصیه نیست؛ ۶۴GB حافظهٔ مشترک، ظرفیت آزاد مدل نیست و این سامانه کارت قابل‌نصب در سرور نیست.',
+    serverReady: false, sourceUrl: 'https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/', sourceLabel: 'NVIDIA Blog — DGX Spark 64GB', productKind: 'سامانه', sourceTier: 'سازنده',
+    dataDisclosure: { bandwidthTBs: 'not-published', powerW: 'not-published' },
+    extraSpecs: [
+      { group: 'حافظه', label: 'نوع ظرفیت', value: '۶۴GB حافظهٔ یکپارچهٔ مشترک CPU/GPU؛ نه VRAM اختصاصی', basis: 'رسمی' },
+      { group: 'عرضه و منبع', label: 'موعد اعلامی عرضه', value: '۲۳ اکتبر ۲۰۲۶؛ از طریق شرکای سازنده', basis: 'رسمی' },
+      { group: 'عرضه و منبع', label: 'بررسی پیش از خرید', value: 'مشخصات دقیق SKU هر OEM و حافظهٔ آزاد واقعی را بررسی کنید.' }
+    ]
+  },
   {
     id: 'intel-crescent-island', vendor: 'Intel', model: 'Crescent Island', status: 'announced', gpuClass: 'server-pcie', architecture: 'Xe3P', year: 2026,
     memoryGB: 480, memoryType: 'LPDDR5X؛ تا ظرفیت اعلامی', bandwidthTBs: 0, powerW: 350, formFactor: 'کارت PCIe؛ ابعاد نهایی اعلام نشده', hostInterface: 'PCIe؛ نسل و عرض لینک در خبر مشخص نیست', cooling: 'هواخنک؛ نوع فن در خبر مشخص نیست',

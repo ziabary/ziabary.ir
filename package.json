@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run prepare:content && svelte-kit sync && vite dev",
-    "build": "npm run verify:llm-locales && npm run prepare:content && vite build && node scripts/generate-sitemap.mjs && npm run verify:sitemap && node scripts/verify-structured-data.mjs && npm run verify:short-links",
+    "build": "npm run verify:llm-locales && npm run prepare:content && vite build && node scripts/generate-short-link-pages.mjs && node scripts/generate-sitemap.mjs && npm run verify:sitemap && node scripts/verify-structured-data.mjs && npm run verify:short-links",
     "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "test:sitemap": "node --test tests/sitemap.test.mjs",
     "test:seo": "node --test tests/page-seo.test.mjs",

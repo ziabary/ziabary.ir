@@ -936,3 +936,33 @@ workloads.push({
     "evidence:update0919-qwen-qwen3-vl-reranker-8b"
   ]
 });
+workloads.push({
+  "id": "workload:cohere-embed5-retrieval",
+  "name": "بازیابی چندوجهی Embed 5؛ ارزیابی مستقل ثبت نشده",
+  "applicationId": "enterprise-rag",
+  "subapplicationId": "retrieval",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-measured"
+  },
+  "contextLength": {
+    "state": "not-measured"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-measured"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  }
+});

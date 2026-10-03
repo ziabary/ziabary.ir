@@ -26,6 +26,7 @@
 
   $: numbers = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale === 'es' ? 'es-ES' : 'en-US', { maximumFractionDigits: 1 });
   const vendors: GpuVendor[] = ['NVIDIA', 'AMD', 'Intel', 'Huawei', 'Google', 'AWS', 'Tenstorrent', 'Qualcomm', 'Cerebras', 'Groq'];
+  const productKinds: NonNullable<GpuRecord['productKind']>[] = ['کارت', 'ماژول', 'پردازنده', 'سامانه', 'ابر'];
   const segments: GpuSegment[] = ['مصرفی', 'حرفه‌ای', 'مرکز داده', 'مقیاس رک'];
   const statuses: GpuStatus[] = ['current', 'system-only', 'announced', 'legacy'];
   const statusLabel: Record<GpuStatus, string> = { current: 'نسل جاری', 'system-only': 'فقط سیستم', announced: 'مشخصات اولیه', legacy: 'نسل قبل' };
@@ -50,6 +51,7 @@
 
   let query = '';
   let selectedVendors: GpuVendor[] = [];
+  let selectedKinds: NonNullable<GpuRecord['productKind']>[] = [];
   let selectedSegments: GpuSegment[] = [];
   let selectedStatuses: GpuStatus[] = [];
   let useCase: GpuWorkload | '' = '';
@@ -71,7 +73,7 @@
     const id = fragment.startsWith('#gpu-') ? fragment.slice(5) : '';
     if (!gpuRecords.some(gpu => gpu.id === id)) return;
     // A direct link must also work when the reader has filtered this card out.
-    query = ''; selectedVendors = []; selectedSegments = []; selectedStatuses = [];
+    query = ''; selectedVendors = []; selectedKinds = []; selectedSegments = []; selectedStatuses = [];
     useCase = ''; precision = ''; minMemory = 0; maxPower = 0; preset = 'all';
     focusedGpu = id;
     await tick();
@@ -180,7 +182,7 @@
   const specsFor = (gpu: GpuRecord, group: typeof specGroups[number]) => fullSpecs(gpu).filter((item) => item.group === group);
 
   function reset() {
-    query = ''; selectedVendors = []; selectedSegments = []; selectedStatuses = [];
+    query = ''; selectedVendors = []; selectedKinds = []; selectedSegments = []; selectedStatuses = [];
     useCase = ''; precision = ''; minMemory = 0; maxPower = 0; preset = 'all';
     showCompute = false; showExtendedCompute = false; showInfra = false; hiddenColumns = [];
     sorts = [{ key: 'memoryGB', direction: 'desc' }]; compared = []; expanded = [];
@@ -254,6 +256,7 @@
     const text = `${g.vendor} ${g.model} ${g.architecture} ${g.memoryType} ${g.software} ${g.formFactor} ${g.compute} ${g.sharedService ?? ''} ${(g.extraSpecs ?? []).map((s) => `${s.label} ${s.value}`).join(' ')}`.toLocaleLowerCase(locale);
     return (!needle || text.includes(needle))
       && (!selectedVendors.length || selectedVendors.includes(g.vendor))
+      && (!selectedKinds.length || selectedKinds.includes(productKind(g)))
       && (!selectedSegments.length || selectedSegments.includes(segmentLabel[g.gpuClass]))
       && (!selectedStatuses.length || selectedStatuses.includes(g.status))
       && (!useCase || g.workloads.includes(useCase))
@@ -303,6 +306,7 @@
     <div class="filter-grid">
       <label class="search"><span>{t("مدل، معماری یا پشته")}</span><input bind:value={query} type="search" placeholder={t("مثلاً H200، Blackwell یا ROCm")} /></label>
       <fieldset><legend>{t("سازنده")}</legend><div class="checks">{#each vendors as item}<label><input type="checkbox" checked={selectedVendors.includes(item)} on:change={() => { selectedVendors = toggle(selectedVendors, item); preset = 'custom'; }} /><span dir="ltr">{t(item)}</span></label>{/each}</div></fieldset>
+      <fieldset><legend>{t("نوع محصول")}</legend><div class="checks">{#each productKinds as item}<label><input type="checkbox" checked={selectedKinds.includes(item)} on:change={() => { selectedKinds = toggle(selectedKinds, item); preset = 'custom'; }} /><span>{t(item)}</span></label>{/each}</div></fieldset>
       <fieldset><legend>{t("ردهٔ استقرار")}</legend><div class="checks">{#each segments as item}<label><input type="checkbox" checked={selectedSegments.includes(item)} on:change={() => { selectedSegments = toggle(selectedSegments, item); preset = 'custom'; }} /><span>{t(item)}</span></label>{/each}</div></fieldset>
       <fieldset><legend>{t("وضعیت")}</legend><div class="checks">{#each statuses as item}<label><input type="checkbox" checked={selectedStatuses.includes(item)} on:change={() => { selectedStatuses = toggle(selectedStatuses, item); preset = 'custom'; }} /><span>{t(statusLabel[item])}</span></label>{/each}</div></fieldset>
       <label><span>{t("کاربرد غالب")}</span><select bind:value={useCase} on:change={() => preset = 'custom'}><option value="">{t("همهٔ کاربردها")}</option>{#each gpuWorkloads as item}<option value={item}>{t(item)}</option>{/each}</select></label>

@@ -4,15 +4,15 @@ import { articleShareUrl, articleShareContent, shareTextWeight } from '../src/li
 const registry={atest:'/articles/test/',eat:'/en/articles/test-en/',sat:'/es/articles/test-es/'};
 test('copy uses a public article short link despite subsection, localhost, or preview parameters',()=>{
  for(const href of ['/articles/test/','http://localhost:5173/articles/test/?show-drafts=true#subsection','https://ziabary.ir/articles/test/?utm_source=a#بخش']){
-  assert.equal(articleShareUrl(href,registry),'https://ziabary.ir/?t=atest');
+  assert.equal(articleShareUrl(href,registry),'https://ziabary.ir/s/atest/');
  }
- assert.equal(articleShareUrl('/en/articles/test-en/#section',registry),'https://ziabary.ir/?t=eat');
- assert.equal(articleShareUrl('/es/articles/test-es/',registry),'https://ziabary.ir/?t=sat');
+ assert.equal(articleShareUrl('/en/articles/test-en/#section',registry),'https://ziabary.ir/s/eat/');
+ assert.equal(articleShareUrl('/es/articles/test-es/',registry),'https://ziabary.ir/s/sat/');
 });
 test('unpublished destinations never get invented or reassigned short codes',()=>{
  assert.equal(articleShareUrl('/articles/unpublished/#section',registry),'https://ziabary.ir/articles/unpublished/');
 });
-const data={title:'عنوان فارسی & عنوان',excerpt:'خلاصهٔ یادداشت با نیم‌فاصله و café.',url:'https://ziabary.ir/?t=atest'};
+const data={title:'عنوان فارسی & عنوان',excerpt:'خلاصهٔ یادداشت با نیم‌فاصله و café.',url:'https://ziabary.ir/s/atest/'};
 test('native, Telegram, Bale, Eitaa, WhatsApp and email receive summary and one short URL',()=>{
  const c=articleShareContent(data);
  assert.equal(c.native.text,'✍️ '+data.title+'\n\n'+data.excerpt);
@@ -50,7 +50,7 @@ test('rich clipboard escapes article text, keeps a bold heading, and plain desti
  const c=articleShareContent({...data,title:'عنوان *ویژه* & "نمونه"',excerpt:'<script>bad</script> مقایسه 2 < 3 & 4 > 1'});
  assert.ok(c.html.includes('<strong>✍️ عنوان *ویژه* &amp; &quot;نمونه&quot;</strong>'));
  assert.ok(!c.html.includes('<script>'));
- assert.ok(c.html.includes('<a href="https://ziabary.ir/?t=atest">'));
+ assert.ok(c.html.includes('<a href="https://ziabary.ir/s/atest/">'));
  assert.ok(new URL(c.whatsapp).searchParams.get('text').startsWith('✍️ *عنوان ویژه & "نمونه"*'));
  assert.equal(new URL(c.telegram).searchParams.get('text'),c.text);
  assert.ok(!new URL(c.telegram).searchParams.has('parse_mode'));

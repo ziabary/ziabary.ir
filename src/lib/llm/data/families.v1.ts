@@ -269,3 +269,13 @@ families.push({
     "evidence:mimo-v2-6-pro-card"
   ]
 });
+families.push({
+  "id": "family:cohere-embed",
+  "name": "Cohere Embed",
+  "publisher": "Cohere",
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ]
+});

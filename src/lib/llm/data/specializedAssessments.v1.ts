@@ -543,3 +543,47 @@ specializedAssessments.push({
     "evidence:llama-cpp-rank-28876"
   ]
 });
+specializedAssessments.push({
+  "id": "specialized-assessment:cohere-embed-v5-pro",
+  "modelVersionId": "model:cohere-embed-v5-pro",
+  "modelRevision": "embed-v5.0-pro",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:cohere-embed5-retrieval",
+  "limitations": [
+    "بیش از ۱۰۰ زبان طبق ناشر؛ fa در فهرست است. ارزیابی مستقل یا امتیاز اختصاصی بازیابی فارسی ثبت نشده است.",
+    "دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست."
+  ],
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:cohere-embed-v5-fast",
+  "modelVersionId": "model:cohere-embed-v5-fast",
+  "modelRevision": "embed-v5.0-fast",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:cohere-embed5-retrieval",
+  "limitations": [
+    "بیش از ۱۰۰ زبان طبق ناشر؛ fa در فهرست است. ارزیابی مستقل یا امتیاز اختصاصی بازیابی فارسی ثبت نشده است.",
+    "دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست."
+  ],
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ]
+});

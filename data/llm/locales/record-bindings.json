@@ -9245,5 +9245,64 @@
     "selectionCaveat": "ollama-v0-35-1-rc0.conditions",
     "targetScenario/value": "ollama-v0-35-1-rc0.scenario",
     "backendSummary/value": "ollama-v0-35-1-rc0.benefit"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11310": {
+    "selectionCaveat": "oct1.b11310.selectionCaveat",
+    "targetScenario/value": "oct1.b11310.targetScenario.value",
+    "backendSummary/value": "oct1.b11310.backendSummary.value"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11307": {
+    "selectionCaveat": "oct1.b11307.selectionCaveat",
+    "targetScenario/value": "oct1.b11307.targetScenario.value",
+    "backendSummary/value": "oct1.b11307.backendSummary.value"
+  },
+  "repository.workloads/workload:cohere-embed5-retrieval": {
+    "name": "embed5.workload:cohere-embed5-retrieval.name"
+  },
+  "repository.models/model:cohere-embed-v5-pro": {
+    "contextCondition": "embed5.model:cohere-embed-v5-pro.contextCondition",
+    "license/restrictions/0": "embed5.model:cohere-embed-v5-pro.license.restrictions.0",
+    "specializedSpecs/task/value": "embed5.model:cohere-embed-v5-pro.specializedSpecs.task.value",
+    "specializedSpecs/output/value": "embed5.model:cohere-embed-v5-pro.specializedSpecs.output.value",
+    "specializedSpecs/adjustableDimensions/value": "embed5.model:cohere-embed-v5-pro.specializedSpecs.adjustableDimensions.value",
+    "specializedSpecs/poolingOrScoring/value": "embed5.model:cohere-embed-v5-pro.specializedSpecs.poolingOrScoring.value",
+    "specializedSpecs/features/value": "embed5.model:cohere-embed-v5-pro.specializedSpecs.features.value",
+    "specializedSpecs/languages/value": "embed5.model:cohere-embed-v5-pro.specializedSpecs.languages.value"
+  },
+  "repository.specializedAssessments/specialized-assessment:cohere-embed-v5-pro": {
+    "limitations/0": "embed5.specialized-assessment:cohere-embed-v5-pro.limitations.0",
+    "limitations/1": "embed5.specialized-assessment:cohere-embed-v5-pro.limitations.1"
+  },
+  "repository.modelProfiles/model-profile:cohere-embed-v5-pro": {
+    "introduction": "embed5.model-profile:cohere-embed-v5-pro.introduction",
+    "roleSummary": "embed5.model-profile:cohere-embed-v5-pro.roleSummary",
+    "distinguishingFeatures/0": "embed5.model-profile:cohere-embed-v5-pro.distinguishingFeatures.0",
+    "languageSummary": "embed5.model-profile:cohere-embed-v5-pro.languageSummary",
+    "downloadSearchNote": "embed5.model-profile:cohere-embed-v5-pro.downloadSearchNote",
+    "runGuides/0/instructions": "embed5.model-profile:cohere-embed-v5-pro.runGuides.0.instructions",
+    "runGuides/0/conditions/0": "embed5.model-profile:cohere-embed-v5-pro.runGuides.0.conditions.0"
+  },
+  "repository.models/model:cohere-embed-v5-fast": {
+    "contextCondition": "embed5.model:cohere-embed-v5-fast.contextCondition",
+    "license/restrictions/0": "embed5.model:cohere-embed-v5-fast.license.restrictions.0",
+    "specializedSpecs/task/value": "embed5.model:cohere-embed-v5-fast.specializedSpecs.task.value",
+    "specializedSpecs/output/value": "embed5.model:cohere-embed-v5-fast.specializedSpecs.output.value",
+    "specializedSpecs/adjustableDimensions/value": "embed5.model:cohere-embed-v5-fast.specializedSpecs.adjustableDimensions.value",
+    "specializedSpecs/poolingOrScoring/value": "embed5.model:cohere-embed-v5-fast.specializedSpecs.poolingOrScoring.value",
+    "specializedSpecs/features/value": "embed5.model:cohere-embed-v5-fast.specializedSpecs.features.value",
+    "specializedSpecs/languages/value": "embed5.model:cohere-embed-v5-fast.specializedSpecs.languages.value"
+  },
+  "repository.specializedAssessments/specialized-assessment:cohere-embed-v5-fast": {
+    "limitations/0": "embed5.specialized-assessment:cohere-embed-v5-fast.limitations.0",
+    "limitations/1": "embed5.specialized-assessment:cohere-embed-v5-fast.limitations.1"
+  },
+  "repository.modelProfiles/model-profile:cohere-embed-v5-fast": {
+    "introduction": "embed5.model-profile:cohere-embed-v5-fast.introduction",
+    "roleSummary": "embed5.model-profile:cohere-embed-v5-fast.roleSummary",
+    "distinguishingFeatures/0": "embed5.model-profile:cohere-embed-v5-fast.distinguishingFeatures.0",
+    "languageSummary": "embed5.model-profile:cohere-embed-v5-fast.languageSummary",
+    "downloadSearchNote": "embed5.model-profile:cohere-embed-v5-fast.downloadSearchNote",
+    "runGuides/0/instructions": "embed5.model-profile:cohere-embed-v5-fast.runGuides.0.instructions",
+    "runGuides/0/conditions/0": "embed5.model-profile:cohere-embed-v5-fast.runGuides.0.conditions.0"
   }
 }

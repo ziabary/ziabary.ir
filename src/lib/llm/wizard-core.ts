@@ -81,6 +81,7 @@ export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,local
   case 'batch':return ['batch','both'].includes(a.mode);
   case 'local':return isLocal(a);
   case 'equipment':return isLocal(a)&&['cpu','gpu'].includes(a.hardware);
+  case 'llamaConcurrent':return isLocal(a)&&['cpu','gpu'].includes(a.hardware)&&['active','machines'].includes(a.loadDefinition)&&(positive(a.concurrency)??0)>1;
   case 'localCpu':return isLocal(a)&&a.hardware==='cpu';
   case 'gpu':return isLocal(a)&&a.hardware==='gpu';
   case 'external':return a.deployment==='api'||a.deployment==='compare'&&a.policy==='public';

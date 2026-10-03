@@ -23,6 +23,18 @@ export async function verifyShortLinks(directory = buildDir) {
     const html = pages.get(path);
     if (!html) throw new Error(`Short link must target an indexable page: ${code} → ${target}`);
     if (fragment && !html.includes(`id="${fragment}"`)) throw new Error(`Missing short-link fragment: ${target}`);
+    const preview = await readFile(join(directory, 's', code, 'index.html'), 'utf8');
+    if (!preview.includes('<meta name="robots" content="noindex,follow">')) throw new Error(`Short-link preview must be noindex: ${code}`);
+    if (pages.has(`/s/${code}/`)) throw new Error(`Short-link preview entered the sitemap: ${code}`);
+    for (const property of ['og:title', 'og:description', 'og:url', 'og:image', 'twitter:image']) {
+      const tag = [...html.matchAll(/<meta\b[^>]*>/gi)].map(([value]) => value)
+        .find(value => value.includes(`${property.startsWith('og:') ? 'property' : 'name'}="${property}"`));
+      if (!tag || !preview.includes(tag)) throw new Error(`Short-link preview differs from its destination ${property}: ${code}`);
+    }
+    const previewScript = /<script>(location\.replace\([\s\S]*?\))<\/script>/.exec(preview)?.[1];
+    let previewDestination;
+    if (previewScript) runInNewContext(previewScript, { location: { replace: value => { previewDestination = value; } } }, { timeout: 1000 });
+    if (previewDestination !== target) throw new Error(`Short-link preview does not open its destination: ${code}`);
     // Exercise the actual serialized build artifact, with no body or network.
     let destination;
     runInNewContext(bootstrap[1], {
@@ -35,6 +47,6 @@ export async function verifyShortLinks(directory = buildDir) {
     }, { timeout: 1000 });
     if (destination !== target) throw new Error(`Early redirect does not match the published registry: ${code}`);
   }
-  console.log(`Validated ${seen.size} short-link destinations, fragments and early browser redirects against published pages.`);
+  console.log(`Validated ${seen.size} short-link destinations, fragments, preview metadata and redirects against published pages.`);
 }
 if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) await verifyShortLinks();

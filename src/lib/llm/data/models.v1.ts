@@ -50353,3 +50353,355 @@ models.push({
     ]
   }
 });
+models.push({
+  "id": "model:cohere-embed-v5-pro",
+  "familyId": "family:cohere-embed",
+  "exactName": "embed-v5.0-pro",
+  "publisher": "Cohere",
+  "version": "embed-v5.0-pro",
+  "aliases": [
+    "embed-v5.0-pro"
+  ],
+  "stage": "other",
+  "architecture": "other",
+  "accessMode": "commercial-service",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "languages": [
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:cohere-embed5-release",
+          "evidence:cohere-embed5-docs",
+          "evidence:cohere-embed5-usage"
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:cohere-embed5-release",
+          "evidence:cohere-embed5-docs",
+          "evidence:cohere-embed5-usage"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:cohere-embed5-release",
+          "evidence:cohere-embed5-docs",
+          "evidence:cohere-embed5-usage"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 128000,
+    "evidenceIds": [
+      "evidence:cohere-embed5-release",
+      "evidence:cohere-embed5-docs",
+      "evidence:cohere-embed5-usage"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "contextCondition": "128K اعلامی ناشر؛ کیفیت بلندمتن اندازه‌گیری نشده است.",
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-01",
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    },
+    "restrictions": [
+      "دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست."
+    ],
+    "evidenceIds": [
+      "evidence:cohere-embed5-release",
+      "evidence:cohere-embed5-docs",
+      "evidence:cohere-embed5-usage"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "embedding چندوجهی متن، تصویر و صفحهٔ ترکیبی PDF",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار float، int8 یا binary؛ ۲۰۴۸ بُعد پیش‌فرض",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "adjustableDimensions": {
+      "state": "known",
+      "value": "۲۵۶، ۵۱۲، ۷۶۸، ۱۰۲۴، ۱۵۳۶، ۲۰۴۸؛ Matryoshka",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "Cosine، dot product یا Euclidean؛ search_document برای سند و search_query برای پرسش",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "فضای برداری مشترک Pro/Fast؛ نمایه‌سازی آفلاین با Pro و query برخط با Fast، با ابعاد و قالب خروجی یکسان. این سازگاری به معنای سازگاری index نسخهٔ Embed 4 نیست. دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست.",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "بیش از ۱۰۰ زبان طبق ناشر؛ fa در فهرست است. ارزیابی مستقل یا امتیاز اختصاصی بازیابی فارسی ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 2048,
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:cohere-embed-v5-fast",
+  "familyId": "family:cohere-embed",
+  "exactName": "embed-v5.0-fast",
+  "publisher": "Cohere",
+  "version": "embed-v5.0-fast",
+  "aliases": [
+    "embed-v5.0-fast"
+  ],
+  "stage": "other",
+  "architecture": "other",
+  "accessMode": "commercial-service",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "embedding",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag",
+    "document-vision"
+  ],
+  "languages": [
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:cohere-embed5-release",
+          "evidence:cohere-embed5-docs",
+          "evidence:cohere-embed5-usage"
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:cohere-embed5-release",
+          "evidence:cohere-embed5-docs",
+          "evidence:cohere-embed5-usage"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:cohere-embed5-release",
+          "evidence:cohere-embed5-docs",
+          "evidence:cohere-embed5-usage"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 128000,
+    "evidenceIds": [
+      "evidence:cohere-embed5-release",
+      "evidence:cohere-embed5-docs",
+      "evidence:cohere-embed5-usage"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "contextCondition": "128K اعلامی ناشر؛ کیفیت بلندمتن اندازه‌گیری نشده است.",
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-01",
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    },
+    "restrictions": [
+      "دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست."
+    ],
+    "evidenceIds": [
+      "evidence:cohere-embed5-release",
+      "evidence:cohere-embed5-docs",
+      "evidence:cohere-embed5-usage"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "embedding چندوجهی متن، تصویر و صفحهٔ ترکیبی PDF",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار float، int8 یا binary؛ ۲۰۴۸ بُعد پیش‌فرض",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "adjustableDimensions": {
+      "state": "known",
+      "value": "۲۵۶، ۵۱۲، ۷۶۸، ۱۰۲۴، ۱۵۳۶، ۲۰۴۸؛ Matryoshka",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "Cosine، dot product یا Euclidean؛ search_document برای سند و search_query برای پرسش",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "فضای برداری مشترک Pro/Fast؛ نمایه‌سازی آفلاین با Pro و query برخط با Fast، با ابعاد و قالب خروجی یکسان. این سازگاری به معنای سازگاری index نسخهٔ Embed 4 نیست. دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست.",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "بیش از ۱۰۰ زبان طبق ناشر؛ fa در فهرست است. ارزیابی مستقل یا امتیاز اختصاصی بازیابی فارسی ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 2048,
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    }
+  }
+});

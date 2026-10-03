@@ -68,7 +68,7 @@ export function assessWizardCatalog(repository:LlmGuideRepository,raw:WizardAnsw
  const capacity=isLocal(a)?positive(a.hardware==='gpu'?a.vram:a.hardware==='cpu'?a.ram:undefined):undefined;
  const fixed=isLocal(a)&&(a.upgrade==='existing'||a.capex==='0'&&a.upgrade!=='possible');
  const roles=repository.modelUseGuidance;
- return repository.models.map(model=>{
+ return repository.models.filter(model=>model.accessMode!=='commercial-service').map(model=>{
   const profile=repository.modelProfiles.find(p=>p.modelVersionId===model.id);
   const target=requestedSpecialty(a),translationOnly=model.taskSpecializations?.some(s=>s.task==='translation');
   const specialization=!kind?model.taskSpecializations?.find(s=>s.task===target):undefined;

@@ -59,5 +59,5 @@ export function shortLinkFor(value, registry) {
   const url = new URL(value, origin);
   const target = url.pathname + url.hash;
   const entry = Object.entries(registry).find(([, destination]) => destination === target);
-  return entry ? `${url.origin}/?t=${entry[0]}` : url.href;
+  return entry ? `${url.origin}/s/${entry[0]}/` : url.href;
 }

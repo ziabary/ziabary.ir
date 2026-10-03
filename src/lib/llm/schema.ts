@@ -158,6 +158,8 @@ export interface LicenseRecord {
 
 export type ModelTaskSpecialization = 'translation' | 'code-completion' | 'coding-assistant' | 'coding-agent';
 export interface ModelVersion {
+  /** Commercial service availability does not establish downloadable weights. */
+  accessMode?: 'public-weights' | 'commercial-service';
   /** Runtime dependency, distinct from training lineage. Never a standalone candidate. */
   dependency?: { kind: 'speculative-drafter'; targetModelId: ModelVersionId; evidenceIds: EvidenceId[] };
   /** Reviewed specialization, not merely a task a general-purpose model can perform. */

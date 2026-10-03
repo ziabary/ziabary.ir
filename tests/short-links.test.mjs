@@ -21,7 +21,7 @@ test('resolver accepts one registered code and preserves the exact fragment', ()
   assert.equal(resolveShortLink('?t=ggsiofrgs', registry), target);
   assert.equal(resolveShortLink('?utm_source=test&t=ggsiofrgs', registry), target);
   for (const query of ['?t=missing', '?t=', '?t=ggsiofrgs&t=ggsiofrgs', '?t=constructor', '?t=https://evil.example', '?t=GGsiofrgs']) assert.equal(resolveShortLink(query, registry), undefined);
-  assert.equal(shortLinkFor('https://ziabary.ir' + target, registry), 'https://ziabary.ir/?t=ggsiofrgs');
+  assert.equal(shortLinkFor('https://ziabary.ir' + target, registry), 'https://ziabary.ir/s/ggsiofrgs/');
 });
 test('unregistered anchors retain the full link and external destinations are rejected', () => {
   const registry = allocateShortLinks([target]).active;

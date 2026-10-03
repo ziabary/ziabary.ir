@@ -6659,3 +6659,69 @@ modelProfiles.push({
     "evidence:sep26-dspark-blog-html"
   ]
 });
+modelProfiles.push({
+  "id": "model-profile:cohere-embed-v5-pro",
+  "modelVersionId": "model:cohere-embed-v5-pro",
+  "introduction": "Pro برای نمایه‌سازی آفلاین؛ کیفیت بالاتر ادعای ناشر است.",
+  "roleSummary": "فضای برداری مشترک Pro/Fast؛ نمایه‌سازی آفلاین با Pro و query برخط با Fast، با ابعاد و قالب خروجی یکسان. این سازگاری به معنای سازگاری index نسخهٔ Embed 4 نیست.",
+  "distinguishingFeatures": [
+    "فضای برداری مشترک Pro/Fast؛ نمایه‌سازی آفلاین با Pro و query برخط با Fast، با ابعاد و قالب خروجی یکسان. این سازگاری به معنای سازگاری index نسخهٔ Embed 4 نیست."
+  ],
+  "languageSummary": "بیش از ۱۰۰ زبان طبق ناشر؛ fa در فهرست است. ارزیابی مستقل یا امتیاز اختصاصی بازیابی فارسی ثبت نشده است.",
+  "officialUrl": "https://docs.cohere.com/docs/cohere-embed",
+  "runGuides": [
+    {
+      "label": "Cohere Embed API",
+      "engine": "Cohere API",
+      "href": "https://docs.cohere.com/docs/embeddings",
+      "instructions": "با کلید سرویس، POST /v2/embed را فراخوانی کنید؛ مدل embed-v5.0-pro برای search_document و output_dimension یکسان با index.",
+      "conditions": [
+        "دسترسی حساب، شرایط تجاری و مجوز ارسال داده را بررسی کنید؛ وزن محلی نیست."
+      ],
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    }
+  ],
+  "downloadSearchNote": "دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست.",
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:cohere-embed-v5-fast",
+  "modelVersionId": "model:cohere-embed-v5-fast",
+  "introduction": "Fast برای query برخط؛ تأخیر کمتر ادعای ناشر است.",
+  "roleSummary": "فضای برداری مشترک Pro/Fast؛ نمایه‌سازی آفلاین با Pro و query برخط با Fast، با ابعاد و قالب خروجی یکسان. این سازگاری به معنای سازگاری index نسخهٔ Embed 4 نیست.",
+  "distinguishingFeatures": [
+    "فضای برداری مشترک Pro/Fast؛ نمایه‌سازی آفلاین با Pro و query برخط با Fast، با ابعاد و قالب خروجی یکسان. این سازگاری به معنای سازگاری index نسخهٔ Embed 4 نیست."
+  ],
+  "languageSummary": "بیش از ۱۰۰ زبان طبق ناشر؛ fa در فهرست است. ارزیابی مستقل یا امتیاز اختصاصی بازیابی فارسی ثبت نشده است.",
+  "officialUrl": "https://docs.cohere.com/docs/cohere-embed",
+  "runGuides": [
+    {
+      "label": "Cohere Embed API",
+      "engine": "Cohere API",
+      "href": "https://docs.cohere.com/docs/embeddings",
+      "instructions": "با کلید سرویس، POST /v2/embed را فراخوانی کنید؛ مدل embed-v5.0-fast برای search_query و output_dimension یکسان با index.",
+      "conditions": [
+        "دسترسی حساب، شرایط تجاری و مجوز ارسال داده را بررسی کنید؛ وزن محلی نیست."
+      ],
+      "evidenceIds": [
+        "evidence:cohere-embed5-release",
+        "evidence:cohere-embed5-docs",
+        "evidence:cohere-embed5-usage"
+      ]
+    }
+  ],
+  "downloadSearchNote": "دسترسی تجاری: API، Microsoft Foundry، Amazon SageMaker و Model Vault تک‌مستاجری. وزن عمومی قابل‌دریافت اعلام نشده؛ Model Vault اجرای محلی وزن‌باز نیست.",
+  "evidenceIds": [
+    "evidence:cohere-embed5-release",
+    "evidence:cohere-embed5-docs",
+    "evidence:cohere-embed5-usage"
+  ]
+});
