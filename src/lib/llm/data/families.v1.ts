@@ -279,3 +279,27 @@ families.push({
     "evidence:cohere-embed5-usage"
   ]
 });
+families.push({
+  "id": "family:clef",
+  "name": "Clef",
+  "publisher": "Cloudflare",
+  "evidenceIds": [
+    "evidence:cloudflare-clef-release"
+  ]
+});
+families.push({
+  "id": "family:north-translate",
+  "name": "North Small Translate",
+  "publisher": "Cohere Labs",
+  "evidenceIds": [
+    "evidence:coherelabs-north-small-translate-card"
+  ]
+});
+families.push({
+  "id": "family:bespoke-nimble",
+  "name": "Bespoke Nimble",
+  "publisher": "Bespoke Labs",
+  "evidenceIds": [
+    "evidence:bespokelabs-nimble-9b-card"
+  ]
+});

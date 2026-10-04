@@ -50705,3 +50705,1168 @@ models.push({
     }
   }
 });
+models.push({
+  "id": "model:cloudflare-clef",
+  "familyId": "family:clef",
+  "exactName": "Clef",
+  "publisher": "Cloudflare",
+  "version": "initial public release",
+  "aliases": [
+    "Cloudflare/clef",
+    "clef"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 27,
+    "unit": "billion-parameters",
+    "evidenceIds": [
+      "evidence:cloudflare-clef-card"
+    ]
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "unknown"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-10-01",
+  "lastReviewedOn": "2026-10-04",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Cloudflare/clef",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:cloudflare-clef-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:cloudflare-clef-card",
+    "evidence:ollama-clef-library",
+    "evidence:ollama-v0-35-1-release"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "پاسخ نوع‌دار choice، noul یا score با احتمال گزینه‌ها؛ بدون تولید متن آزاد",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "امتیازدهی مشترک گزینه‌های پرسش‌ها در یک گذر",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "متن و تصویر در Ollama v0.35.1+؛ llama.cpp b11371 فقط متن و پیش‌انتشار",
+      "evidenceIds": [
+        "evidence:ollama-clef-library",
+        "evidence:llama-cpp-b11371-clef"
+      ]
+    },
+    "languages": {
+      "state": "unknown"
+    }
+  }
+});
+models.push({
+  "id": "model:cloudflare-clef-flash",
+  "familyId": "family:clef",
+  "exactName": "Clef Flash",
+  "publisher": "Cloudflare",
+  "version": "initial public release",
+  "aliases": [
+    "Cloudflare/clef-flash",
+    "clef-flash"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 9,
+    "unit": "billion-parameters",
+    "evidenceIds": [
+      "evidence:cloudflare-clef-flash-card"
+    ]
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "unknown"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-10-01",
+  "lastReviewedOn": "2026-10-04",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/Cloudflare/clef-flash",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:cloudflare-clef-flash-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:cloudflare-clef-flash-card",
+    "evidence:ollama-clef-flash-library",
+    "evidence:ollama-v0-35-1-release"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "پاسخ نوع‌دار choice، noul یا score با احتمال گزینه‌ها؛ بدون تولید متن آزاد",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "امتیازدهی مشترک گزینه‌های پرسش‌ها در یک گذر",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "متن و تصویر در Ollama v0.35.1+؛ llama.cpp b11371 فقط متن و پیش‌انتشار",
+      "evidenceIds": [
+        "evidence:ollama-clef-flash-library",
+        "evidence:llama-cpp-b11371-clef"
+      ]
+    },
+    "languages": {
+      "state": "unknown"
+    }
+  }
+});
+models.push({
+  "id": "model:coherelabs-north-small-translate-1-0",
+  "familyId": "family:north-translate",
+  "exactName": "North-Small-Translate-1.0",
+  "publisher": "Cohere Labs",
+  "version": "1.0",
+  "aliases": [
+    "CohereLabs/North-Small-Translate-1.0"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "accessMode": "public-weights",
+  "totalParametersB": {
+    "state": "known",
+    "value": 218,
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 25,
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work"
+  ],
+  "taskSpecializations": [
+    {
+      "task": "translation",
+      "languages": [
+        "en",
+        "sq",
+        "ar",
+        "bg",
+        "bn",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "es",
+        "et",
+        "fa",
+        "fi",
+        "tl",
+        "fr",
+        "ga",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "is",
+        "it",
+        "ja",
+        "ko",
+        "lt",
+        "lv",
+        "ms",
+        "mt",
+        "nl",
+        "no",
+        "pa",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "ta",
+        "te",
+        "th",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh-Hant",
+        "zh"
+      ],
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "sq",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "bg",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "bn",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ca",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "da",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "el",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "et",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "fi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "tl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ga",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "he",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "hi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "hr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "hu",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "id",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "is",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "lt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "lv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ms",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "mt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "no",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "pa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "pl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ro",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "sk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "sl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "sr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "sv",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ta",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "te",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "th",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "tr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "uk",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "ur",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "vi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "zh-Hant",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "contextCondition": "حداکثر ۱۶K توکن ورودی و ۱۶K خروجی؛ عدد ۳۲K فقط مجموع دو سقف است و تمام آن ورودی نیست.",
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-04",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "CC BY-NC 4.0",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "prohibited",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    "restrictions": [
+      "مجوز CC BY-NC 4.0 و سیاست استفادهٔ Cohere Labs؛ استفادهٔ تجاری مجاز نیست."
+    ],
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:coherelabs-north-small-translate-card"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "ترجمهٔ متن میان زبان‌های اعلام‌شده",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "متن ترجمه‌شده",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "not-applicable"
+    },
+    "features": {
+      "state": "known",
+      "value": "۲۱۸B کل و ۲۵B فعال؛ ۱۶K ورودی و ۱۶K خروجی طبق ناشر",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی در فهرست ۵۰ زبان ناشر است؛ آزمون کیفیت مستقل ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    }
+  },
+  "inputTokenLimit": {
+    "state": "known",
+    "value": 16384,
+    "unit": "token",
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ]
+  },
+  "outputTokenLimit": {
+    "state": "known",
+    "value": 16384,
+    "unit": "token",
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ]
+  },
+  "researchOnly": true,
+  "minimumReviewedGpuMemoryGiB": {
+    "state": "known",
+    "value": 74.5,
+    "unit": "GiB",
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ]
+  }
+});
+models.push({
+  "id": "model:bespokelabs-bespoke-nimble-9b",
+  "familyId": "family:bespoke-nimble",
+  "exactName": "Bespoke-Nimble-9B",
+  "publisher": "Bespoke Labs",
+  "version": "2026-09-24 checkpoint",
+  "aliases": [
+    "bespokelabs/Bespoke-Nimble-9B"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "baseModelId": "model:qwen-qwen3-5-9b",
+  "accessMode": "public-weights",
+  "totalParametersB": {
+    "state": "known",
+    "value": 9,
+    "evidenceIds": [
+      "evidence:bespokelabs-nimble-9b-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:bespokelabs-nimble-9b-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:bespokelabs-nimble-9b-card"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-04",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    "restrictions": [
+      "به وزن کامل Qwen3.5-9B نیاز دارد؛ فایل ۱۶۵MiB فقط آداپتر است."
+    ],
+    "evidenceIds": [
+      "evidence:bespokelabs-nimble-9b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:bespokelabs-nimble-9b-card"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "تصمیم، انتخاب و امتیازدهی مبتنی بر زمینه",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "گزینه، مقدار بولی یا سطح امتیاز همراه احتمال",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "unknown"
+    },
+    "features": {
+      "state": "known",
+      "value": "حداکثر ۲۵۵ گزینه برای هر فیلد و ۸۱۹۲ توکن؛ این آداپتر مدل گفت‌وگویی مستقل نیست.",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی ارزیابی نشده است.",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:zai-org-glm-5-3-flash",
+  "familyId": "family:glm",
+  "exactName": "GLM-5.3-Flash",
+  "publisher": "Z.ai",
+  "version": "initial public release",
+  "aliases": [
+    "zai-org/GLM-5.3-Flash"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "attentionArchitecture": "hybrid",
+  "accessMode": "public-weights",
+  "totalParametersB": {
+    "state": "known",
+    "value": 320,
+    "evidenceIds": [
+      "evidence:zai-glm-5-3-flash-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 18,
+    "evidenceIds": [
+      "evidence:zai-glm-5-3-flash-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "agents-tools",
+    "document-vision"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:zai-glm-5-3-flash-card"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:zai-glm-5-3-flash-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "unknown"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "contextCondition": "طول بافت و حداقل نسخهٔ موتور برای توصیهٔ عملیاتی در این بررسی تثبیت نشده‌اند.",
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-04",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:zai-glm-5-3-flash-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "evidenceIds": [
+        "evidence:zai-glm-5-3-flash-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:zai-glm-5-3-flash-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:zai-glm-5-3-flash-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:zai-glm-5-3-flash-card"
+  ]
+});

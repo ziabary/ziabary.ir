@@ -39,6 +39,8 @@ export type ServerRecord = {
   expansion: string;
   power: string;
   validatedGpuIds: string[];
+  /** OEM QPL maximum for a specific card, which can be lower than physical slot count. */
+  validatedGpuLimits?: Record<string, number>;
   acceleratorSummary: string;
   bestFor: string;
   caution: string;
@@ -47,10 +49,17 @@ export type ServerRecord = {
   sourceTier: 'سازنده' | 'راهنمای فنی سازنده';
 };
 
+export function serverCardCapacity(record: ServerRecord, profile: ServerGpuProfile): number {
+  if (record.acceleratorForm !== 'pcie-card') return 0;
+  const physical = profile.widthSlots === 1 ? record.maxSingleWidthGpus ?? record.maxDoubleWidthGpus
+    : profile.widthSlots === 2 ? record.maxDoubleWidthGpus : record.maxTripleWidthGpus;
+  return Math.min(physical, record.validatedGpuLimits?.[profile.id] ?? Infinity);
+}
+
 export const serverLastReviewed = {
-  iso: '2026-09-25',
-  fa: '۳ مهر ۱۴۰۵',
-  gregorian: '25 September 2026'
+  iso: '2026-10-04',
+  fa: '۱۲ مهر ۱۴۰۵',
+  gregorian: '4 October 2026'
 };
 
 export const serverGpuProfiles: ServerGpuProfile[] = [
@@ -58,7 +67,7 @@ export const serverGpuProfiles: ServerGpuProfile[] = [
   { id: 'h100-nvl', label: 'NVIDIA H100 NVL PCIe', pcieGeneration: 5, widthSlots: 2, powerW: 400, cooling: 'passive', note: 'FHFL دو اسلات؛ پشتیبانی NVLink bridge به چیدمان و BOM سرور وابسته است.' },
   { id: 'h100-pcie', label: 'NVIDIA H100 PCIe', pcieGeneration: 5, widthSlots: 2, powerW: 350, cooling: 'passive', note: 'FHFL دو اسلات و passive؛ وجود جریان هوای سروری الزامی است.' },
   { id: 'rtx-pro-6000-bse', label: 'NVIDIA RTX PRO 6000 Blackwell Server Edition', pcieGeneration: 5, widthSlots: 2, powerW: 600, cooling: 'passive', note: 'نسخهٔ Server Edition دو اسلات است؛ با نسخه‌های Workstation و Max-Q یکی نیست.' },
-  { id: 'rtx-pro-4500-bse', label: 'NVIDIA RTX PRO 4500 Blackwell Server Edition', pcieGeneration: 5, widthSlots: 2, powerW: 200, cooling: 'passive', note: 'دو اسلات؛ فهرست قطعات و کابل برق سازندهٔ سرور باید کنترل شود.' },
+  { id: 'rtx-pro-4500-bse', label: 'NVIDIA RTX PRO 4500 Blackwell Server Edition', pcieGeneration: 5, widthSlots: 1, powerW: 165, cooling: 'passive', note: 'نسخهٔ Server تک‌اسلات و پسیو است؛ سقف تعداد، برق و دما به QPL سرور وابسته‌اند.' },
   { id: 'l40s', label: 'NVIDIA L40S', pcieGeneration: 4, widthSlots: 2, powerW: 350, cooling: 'passive', note: 'FHFL دو اسلات و passive؛ در شیار Gen5 نیز با سرعت Gen4 کار می‌کند.' },
   { id: 'l4', label: 'NVIDIA L4', pcieGeneration: 4, widthSlots: 1, powerW: 72, cooling: 'passive', note: 'تک‌اسلات و کم‌مصرف؛ تعداد قابل نصب همچنان به riser و محدودیت حرارتی وابسته است.' },
   { id: 'a100-pcie', label: 'NVIDIA A100 PCIe', pcieGeneration: 4, widthSlots: 2, powerW: 300, cooling: 'passive', note: 'دو اسلات passive؛ برای سرورهای نسل PCIe 4 هنوز گزینهٔ رایج بازار دست‌دوم است.' },
@@ -66,7 +75,7 @@ export const serverGpuProfiles: ServerGpuProfile[] = [
   { id: 'a10', label: 'NVIDIA A10', pcieGeneration: 4, widthSlots: 1, powerW: 150, cooling: 'passive', note: 'تک‌اسلات passive؛ کابل برق و محدودیت تعداد باید در configurator سازنده بررسی شود.' },
   { id: 'rtx-6000-ada', label: 'NVIDIA RTX 6000 Ada', pcieGeneration: 4, widthSlots: 2, powerW: 300, cooling: 'active', note: 'دو اسلات active؛ هر شاسی passive لزوماً خروجی تصویر و مسیر هوای مناسب آن را ندارد.' },
   { id: 'rtx-a6000', label: 'NVIDIA RTX A6000', pcieGeneration: 4, widthSlots: 2, powerW: 300, cooling: 'active', note: 'دو اسلات active؛ پشتیبانی رسمی OEM را با part number همان سازنده کنترل کنید.' },
-  { id: 'rtx-5090', label: 'GeForce RTX 5090', pcieGeneration: 5, widthSlots: 3, powerW: 575, cooling: 'active', note: 'مدل مرجع سه اسلات است؛ بیشتر سرورهای ۸-GPU دو اسلات برای آن مناسب نیستند.' },
+  { id: 'rtx-5090', label: 'GeForce RTX 5090', pcieGeneration: 5, widthSlots: 3, powerW: 575, cooling: 'active', note: 'این پروفایل گونهٔ سه‌اسلاتی QPL است؛ Founders Edition دو اسلات است. ابعاد و کابل مدل دقیق را بررسی کنید.' },
   { id: 'rtx-4090', label: 'GeForce RTX 4090', pcieGeneration: 4, widthSlots: 4, powerW: 450, cooling: 'active', note: 'بسته به سازنده ۳ تا ۴ اسلات؛ وجود شیار به معنی تأیید برق، ابعاد یا firmware نیست.' }
 ];
 
@@ -126,9 +135,9 @@ export const serverRecords: ServerRecord[] = [
     heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 10, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
     cardCooling: ['passive'], systemCooling: ['air', 'dlc'], cpu: '۲× Intel Xeon 6؛ تا ۱۴۴ هسته برای هر پردازنده', memory: 'DDR5 HPE Smart Memory؛ ظرفیت دقیق وابسته به CPU/BOM',
     storage: 'NVMe/SAS/SATA طبق QuickSpecs؛ برای کنترلر ذخیره‌سازی، باتری ۹۶W Smart Storage یا Smart Hybrid Capacitor مطابق BOM لازم است', expansion: 'PCIe Gen5؛ پیکربندی‌های ۰/۱/۲/۴/۸/۱۰ GPU', power: 'PSUهای ۲۴۰۰ یا ۳۲۰۰ وات برای GPUهای ۶۰۰ وات؛ چند دامنهٔ تغذیه',
-    validatedGpuIds: ['h200-nvl', 'h100-nvl', 'rtx-pro-6000-bse', 'l40s', 'l4'], acceleratorSummary: 'تا ۱۰ کارت دو اسلات؛ تعداد و توان به enablement kit وابسته است',
-    bestFor: 'بیشترین تراکم کارت PCIe در سبد OEM سازمانی همراه با iLO و گزینهٔ DLC.', caution: 'عدد ۱۰ سقف خانواده است؛ برخی kitها فقط ۸ کارت را فعال می‌کنند و Bridge/PSU نیز کارت‌به‌کارت فرق دارد.',
-    sourceLabel: 'HPE DL380a Gen12 QuickSpecs — V20, 8 September 2026', sourceUrl: 'https://www.hpe.com/us/en/collaterals/collateral.a00047453enw.html', sourceTier: 'راهنمای فنی سازنده'
+    validatedGpuIds: ['h200-nvl', 'h100-nvl', 'rtx-pro-6000-bse', 'l40s', 'l4'], validatedGpuLimits: { 'rtx-pro-6000-bse': 8 }, acceleratorSummary: 'تا ۱۰ کارت دو اسلات؛ تعداد و توان به enablement kit وابسته است',
+    bestFor: 'بیشترین تراکم کارت PCIe در سبد OEM سازمانی همراه با iLO و گزینهٔ DLC.', caution: 'RTX PRO 6000 Server با پارت S6A73C حداکثر ۸ کارت دارد؛ با 8DW NIC FIO پارت P75011-B21 سازگار نیست. برای ۸ کارت، کیت‌های P79656-B21 و P79660-B21 لازم‌اند. پیکربندی نهایی به BOM وابسته است.',
+    sourceLabel: 'HPE DL380a Gen12 QuickSpecs — V20, 8 September 2026', sourceUrl: 'https://www.hpe.com/psnow/doc/a00047453enw.pdf', sourceTier: 'راهنمای فنی سازنده'
   },
   {
     id: 'hpe-dl380a-gen11', vendor: 'HPE', model: 'ProLiant DL380a Gen11', status: 'current', acceleratorForm: 'pcie-card',
@@ -141,12 +150,12 @@ export const serverRecords: ServerRecord[] = [
   },
   {
     id: 'hpe-dl345-gen12', vendor: 'HPE', model: 'ProLiant Compute DL345 Gen12', status: 'current', acceleratorForm: 'pcie-card',
-    heightU: 2, depthMm: null, pcieGeneration: 5, gpuTopology: 'direct', maxDoubleWidthGpus: 4, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: null,
+    heightU: 2, depthMm: null, pcieGeneration: 5, gpuTopology: 'direct', maxDoubleWidthGpus: 4, maxSingleWidthGpus: 6, maxTripleWidthGpus: 0, maxGpuPowerW: null,
     cardCooling: ['passive'], systemCooling: ['air'], cpu: '۱× نسل پنجم AMD EPYC؛ تا ۱۹۲ هسته', memory: 'تا ۶ ترابایت DDR5',
     storage: 'تا ۱۲ LFF، ۲۴ SFF یا ۳۶ EDSFF بسته به پیکربندی', expansion: 'PCIe Gen5؛ تا ۴ کارت دو اسلات در جلو', power: 'وابسته به GPU و پیکربندی HPE',
-    validatedGpuIds: ['rtx-pro-4500-bse', 'l40s', 'l4'], acceleratorSummary: 'تا ۴ کارت دو اسلات در شاسی ۲U تک‌سوکت',
-    bestFor: 'استنتاج سازمانی با CPU تک‌سوکت و هزینه/فضای کمتر.', caution: 'پشتیبانی مدل دقیق GPU را با شمارهٔ قطعهٔ HPE بررسی کنید؛ سقف چهار کارت به معنی پشتیبانی همهٔ کارت‌های ۶۰۰ وات نیست.',
-    sourceLabel: 'HPE DL345 Gen12 QuickSpecs', sourceUrl: 'https://www.hpe.com/us/en/collaterals/collateral.a50009233enw.html', sourceTier: 'راهنمای فنی سازنده'
+    validatedGpuIds: ['rtx-pro-4500-bse', 'l40s', 'l4'], validatedGpuLimits: { 'rtx-pro-4500-bse': 4, l40s: 4, l4: 6, 'rtx-pro-6000-bse': 0 }, acceleratorSummary: 'L40S و RTX PRO 4500 Server تا ۴ کارت جلو؛ RTX PRO 6000 Server تا ۲ کارت در حالت ۴۵۰W؛ L4 تا ۴ جلو یا ۶ عقب در CTO مجاز',
+    bestFor: 'استنتاج سازمانی با CPU تک‌سوکت و هزینه/فضای کمتر.', caution: 'RTX PRO 6000 Server پارت S6A73C فقط تا ۲ کارت در حالت ۴۵۰W و با کابل P89898-B21 تأیید شده است؛ پروفایل پیش‌فرض ۶۰۰W را معادل آن نگیرید. دما، CTO و جایگاه نصب را بررسی کنید.',
+    sourceLabel: 'HPE DL345 Gen12 QuickSpecs', sourceUrl: 'https://www.hpe.com/psnow/doc/a50009233enw.pdf', sourceTier: 'راهنمای فنی سازنده'
   },
   {
     id: 'lenovo-sr675-v3', vendor: 'Lenovo', model: 'ThinkSystem SR675 V3', status: 'current', acceleratorForm: 'pcie-card',
@@ -168,20 +177,20 @@ export const serverRecords: ServerRecord[] = [
   },
   {
     id: 'supermicro-sys-422ga-nrt', vendor: 'Supermicro', model: 'GPU SuperServer SYS-422GA-NRT', status: 'current', acceleratorForm: 'pcie-card',
-    heightU: 4, depthMm: 737, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: 8, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
-    cardCooling: ['passive', 'active'], systemCooling: ['air'], cpu: '۲× Intel Xeon 6900 P-core؛ تا ۱۲۸ هسته', memory: '۲۴ اسلات DDR5؛ تا ۶ ترابایت',
-    storage: 'طبق SKU؛ NVMe hot-swap و M.2 بوت', expansion: 'تا ۱۳× PCIe Gen5 x16 FHFL؛ ۸ جایگاه GPU', power: 'منابع تغذیهٔ افزونه‌پذیر پرتوان؛ BOM وابسته به GPU',
-    validatedGpuIds: ['rtx-pro-6000-bse'], acceleratorSummary: 'تا ۸ کارت دو اسلات ۶۰۰ وات در ۳۵°C',
-    bestFor: 'PCIe Gen5 پرتوان با شیارهای شبکه/BlueField فراوان.', caution: 'سقف دمای محیط و تعداد BlueField در پیکربندی پرتوان بخشی از شرط سازگاری است.',
+    heightU: 4, depthMm: 737, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: 10, maxTripleWidthGpus: 2, maxGpuPowerW: 600,
+    cardCooling: ['passive', 'active'], systemCooling: ['air'], cpu: '۲× Intel Xeon 6900 P-core؛ تا ۱۲۸ هسته', memory: '۲۴ DIMM؛ تا ۶TB DDR5-6400 RDIMM یا DDR5-8800 MRDIMM',
+    storage: '۸ NVMe PCIe 5.0 x4 با گزینهٔ E3.S/E3.L/۲٫۵ اینچ؛ دو M.2', expansion: 'تا ۱۳× PCIe Gen5 x16 FHFL؛ ۸ جایگاه GPU', power: '۴×۳۲۰۰W افزونهٔ 3+1؛ مصرف واقعی وابسته به پیکربندی',
+    validatedGpuIds: ['h200-nvl', 'rtx-pro-6000-bse', 'rtx-pro-4500-bse'], validatedGpuLimits: { 'h200-nvl': 8, 'rtx-pro-6000-bse': 8, 'rtx-pro-4500-bse': 8 }, acceleratorSummary: 'تا ۸ کارت دو اسلات ۶۰۰ وات در ۳۵°C',
+    bestFor: 'PCIe Gen5 پرتوان با شیارهای شبکه/BlueField فراوان.', caution: 'ده جایگاه تک‌اسلات ظرفیت فیزیکی است؛ QPL برای RTX PRO 4500 Server سقف ۸ کارت دارد. دو کارت سه‌اسلات یا چهار‌اسلات پیکربندی فیزیکی جداگانه‌اند. سقف دما و BlueField را بررسی کنید.',
     sourceLabel: 'Supermicro SYS-422GA-NRT Datasheet', sourceUrl: 'https://www.supermicro.com/en/products/system/datasheet/sys-422ga-nrt', sourceTier: 'راهنمای فنی سازنده'
   },
   {
     id: 'supermicro-as-4125gs-tnrt2', vendor: 'Supermicro', model: 'GPU A+ Server AS-4125GS-TNRT2', status: 'current', acceleratorForm: 'pcie-card',
-    heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 10, maxSingleWidthGpus: 10, maxTripleWidthGpus: 0, maxGpuPowerW: null,
-    cardCooling: ['passive', 'active'], systemCooling: ['air'], cpu: '۲× AMD EPYC 9005/9004؛ تا ۴۰۰ وات برای هر CPU', memory: '۲۴ اسلات DDR5',
-    storage: 'پیکربندی‌های hot-swap NVMe/SAS/SATA', expansion: 'PCIe Gen5 با switch؛ تا ۱۰ GPU FHFL دو اسلات', power: 'وابسته به کارت و BOM؛ فن‌های heavy-duty hot-swap',
-    validatedGpuIds: ['h200-nvl', 'h100-pcie', 'l40s', 'rtx-pro-6000-bse'], acceleratorSummary: 'تا ۱۰ کارت دو اسلات active یا passive',
-    bestFor: 'بیشترین تعداد کارت دو اسلات در یک شاسی ۴U مبتنی بر AMD.', caution: 'عدد ۱۰ به معنای ۱۰ کارت در هر توان و هر دمای محیط نیست؛ QPL مدل کارت معیار نهایی است.',
+    heightU: 4, depthMm: 737, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 10, maxSingleWidthGpus: 10, maxTripleWidthGpus: 0, maxGpuPowerW: null,
+    cardCooling: ['passive', 'active'], systemCooling: ['air'], cpu: '۲× AMD EPYC 9004/9005 تا ۴۰۰W؛ پشتیبانی 9005 نیازمند board revision 2.x', memory: '۲۴ DIMM؛ تا ۶TB DDR5؛ سرعت وابسته به نسل CPU',
+    storage: '۲ جایگاه SATA hot-swap + ۸ جایگاه NVMe ثابت + یک M.2 PCIe 3.0 x4', expansion: 'PCIe Gen5 با switch؛ تا ۱۰ GPU FHFL دو اسلات', power: '۴×۲۰۰۰W؛ افزونگی 2+2 یا 3+1 طبق بار؛ ظرفیت PSU مصرف واقعی نیست',
+    validatedGpuIds: ['l4', 'l40s', 'rtx-pro-4500-bse'], validatedGpuLimits: { l4: 8, l40s: 10, 'rtx-pro-4500-bse': 8 }, acceleratorSummary: 'تا ۱۰ کارت دو اسلات active یا passive',
+    bestFor: 'بیشترین تعداد کارت دو اسلات در یک شاسی ۴U مبتنی بر AMD.', caution: 'QPL همین SKU: L4 تا ۸، L40S تا ۱۰ و RTX PRO 4500 Server تا ۸ کارت در ۳۰°C. Max-Q Workstation گونهٔ دیگری است. H100/H200 و RTX PRO 6000 Server در این SKU احراز نشده‌اند.',
     sourceLabel: 'Supermicro AS-4125GS-TNRT2 Datasheet', sourceUrl: 'https://www.supermicro.com/en/products/system/datasheet/as-4125gs-tnrt2', sourceTier: 'راهنمای فنی سازنده'
   },
   {
@@ -189,8 +198,8 @@ export const serverRecords: ServerRecord[] = [
     heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: 8, maxTripleWidthGpus: 0, maxGpuPowerW: null,
     cardCooling: ['passive', 'active'], systemCooling: ['air'], cpu: '۲× نسل چهارم/پنجم Intel Xeon Scalable', memory: 'DDR5؛ ظرفیت وابسته به DIMM/QPL',
     storage: 'پیکربندی‌های NVMe/SATA/SAS', expansion: 'PCIe Gen5؛ ۸ GPU دو اسلات', power: 'وابسته به مدل GPU و QPL',
-    validatedGpuIds: ['h200-nvl', 'h100-nvl', 'h100-pcie', 'l40s', 'l4', 'rtx-6000-ada'], acceleratorSummary: '۸ کارت PCIe دو اسلات؛ فهرست QPL رسمی و کارت‌به‌کارت',
-    bestFor: 'تنوع زیاد کارت‌های تأییدشده از Hopper تا Ada.', caution: 'نسل رابط واقعی هر کارت متفاوت است؛ L40S در شیار Gen5 همچنان کارت Gen4 باقی می‌ماند.',
+    validatedGpuIds: ['a100-pcie', 'h100-nvl', 'h100-pcie', 'l40s', 'l4'], acceleratorSummary: '۸ کارت PCIe دو اسلات؛ فهرست QPL رسمی و کارت‌به‌کارت',
+    bestFor: 'تنوع زیاد کارت‌های تأییدشده از Hopper تا Ada.', caution: 'H200 NVL و RTX 6000 Ada در QPL همین SKU احراز نشدند؛ نام مشابه سرور کافی نیست. L40S و L4 کارت Gen4 هستند.',
     sourceLabel: 'Supermicro Qualified Platform List', sourceUrl: 'https://www.supermicro.com/en/support/resources/gpu', sourceTier: 'راهنمای فنی سازنده'
   },
   {
@@ -240,12 +249,12 @@ export const serverRecords: ServerRecord[] = [
   },
   {
     id: 'fujitsu-gx2550-m8s', vendor: 'Fujitsu', model: 'PRIMERGY GX2550 M8s', status: 'current', acceleratorForm: 'pcie-card',
-    heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
-    cardCooling: ['passive'], systemCooling: ['air'], cpu: '۲× Intel Xeon 6', memory: 'DDR5؛ ظرفیت دقیق طبق configurator منطقه‌ای',
-    storage: 'طبق configurator PRIMERGY', expansion: 'تا ۸ کارت PCIe دو اسلات', power: 'وابسته به پیکربندی کارت و منطقه',
+    heightU: 4, depthMm: 737, pcieGeneration: 5, gpuTopology: 'switched', maxDoubleWidthGpus: 8, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: 600,
+    cardCooling: ['passive'], systemCooling: ['air'], cpu: '۲× Intel Xeon 6900P', memory: '۲۴ DIMM DDR5؛ ۵۱۲GB تا ۶TB',
+    storage: 'طبق configurator PRIMERGY', expansion: 'تا ۸ کارت PCIe دو اسلات', power: '۴×۳۲۰۰W؛ افزونگی 3+1',
     validatedGpuIds: ['h200-nvl', 'rtx-pro-6000-bse'], acceleratorSummary: '۸ کارت دو اسلات، از جمله H200 NVL و RTX PRO 6000',
     bestFor: 'سازمان‌هایی که چرخهٔ پشتیبانی PRIMERGY و هشت کارت PCIe را هم‌زمان می‌خواهند.', caution: 'مشخصات منطقه‌ای PRIMERGY ممکن است متفاوت باشد؛ configurator همان کشور مرجع خرید است.',
-    sourceLabel: 'Fujitsu PRIMERGY Server Portfolio', sourceUrl: 'https://www.fujitsu.com/es/products/computing/servers/', sourceTier: 'سازنده'
+    sourceLabel: 'FSAS Technologies — PRIMERGY GX2550 M8s', sourceUrl: 'https://eu.fsastech.com/eu/products-services/primergy-servers/primergy-gx2550-m8s/', sourceTier: 'سازنده'
   },
   {
     id: 'qct-d75t-7u', vendor: 'QCT', model: 'QuantaGrid D75T-7U', status: 'current', acceleratorForm: 'integrated',
@@ -303,11 +312,11 @@ export const serverRecords: ServerRecord[] = [
   },
   {
     id: 'supermicro-sys-532aw-c', vendor: 'Supermicro', model: 'SuperWorkstation SYS-532AW-C', status: 'current', acceleratorForm: 'pcie-card',
-    heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'direct', maxDoubleWidthGpus: 1, maxSingleWidthGpus: 1, maxTripleWidthGpus: 1, maxGpuPowerW: 575,
+    heightU: 4, depthMm: null, pcieGeneration: 5, gpuTopology: 'direct', maxDoubleWidthGpus: 1, maxSingleWidthGpus: 1, maxTripleWidthGpus: 1, maxGpuPowerW: 600,
     cardCooling: ['active'], systemCooling: ['air'], cpu: 'Intel Core Ultra Series 2', memory: 'DDR5 ECC UDIMM؛ وابسته به پیکربندی',
     storage: 'پلتفرم workstation؛ جزئیات در صفحهٔ محصول', expansion: 'یک GPU سه‌اسلات active در QPL', power: 'وابسته به BOM workstation',
     validatedGpuIds: ['rtx-5090'], acceleratorSummary: 'یک GeForce RTX 5090 سه‌اسلات به‌صورت رسمی در QPL',
-    bestFor: 'یک کارت مصرفی پرتوان که واقعاً در QPL سازنده آمده است.', caution: 'این workstation است، نه سرور ۸-GPU؛ برای RTX 4090 نیز تأیید جداگانه لازم است.',
+    bestFor: 'یک کارت مصرفی پرتوان که واقعاً در QPL سازنده آمده است.', caution: 'سقف ۶۰۰W به گونهٔ RTX PRO 6000 Workstation در QPL مربوط است، نه Server Edition. این workstation سرور ۸-GPU نیست؛ هر کارت دیگر تأیید جدا می‌خواهد.',
     sourceLabel: 'Supermicro Qualified Platform List', sourceUrl: 'https://www.supermicro.com/en/support/resources/gpu', sourceTier: 'راهنمای فنی سازنده'
   },
   {
@@ -384,12 +393,12 @@ export const serverRecords: ServerRecord[] = [
   },
   {
     id: 'fujitsu-gx2580-m8s', vendor: 'Fujitsu', model: 'PRIMERGY GX2580 M8s', status: 'current', acceleratorForm: 'integrated',
-    heightU: 8, depthMm: null, pcieGeneration: 5, gpuTopology: 'baseboard', maxDoubleWidthGpus: 0, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: null,
-    cardCooling: [], systemCooling: ['air'], cpu: '۲× Intel Xeon 6', memory: 'DDR5؛ طبق configurator منطقه‌ای',
-    storage: 'طبق configurator PRIMERGY', expansion: '۸× NVIDIA HGX B300 با NVLink نسل پنجم', power: 'وابسته به پیکربندی و منطقه',
+    heightU: 8, depthMm: 950, pcieGeneration: 5, gpuTopology: 'baseboard', maxDoubleWidthGpus: 0, maxSingleWidthGpus: null, maxTripleWidthGpus: 0, maxGpuPowerW: null,
+    cardCooling: [], systemCooling: ['air'], cpu: '۲× Intel Xeon 6700P', memory: '۳۲ DIMM DDR5؛ تا ۸TB',
+    storage: 'طبق configurator PRIMERGY', expansion: '۸× NVIDIA HGX B300 با NVLink نسل پنجم', power: '۶×۶۶۰۰W؛ افزونگی 3+3',
     validatedGpuIds: [], acceleratorSummary: '۸× B300 HGX؛ ۲٫۳ ترابایت HBM3e در سامانه',
     bestFor: 'زیرساخت B300 با چرخهٔ پشتیبانی PRIMERGY.', caution: 'محصول یکپارچه است؛ برای نصب کارت PCIe خریداری‌شده مناسب نیست.',
-    sourceLabel: 'Fujitsu PRIMERGY Server Portfolio', sourceUrl: 'https://www.fujitsu.com/es/products/computing/servers/', sourceTier: 'سازنده'
+    sourceLabel: 'FSAS Technologies — PRIMERGY GX2580 M8s', sourceUrl: 'https://eu.fsastech.com/eu/products-services/primergy-servers/primergy-gx2580-m8s/', sourceTier: 'سازنده'
   }
 ];
 

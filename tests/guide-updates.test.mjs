@@ -48,11 +48,13 @@ test('future and stale announcements are not shown, including the date boundarie
 
 test('each translated announcement keeps its unique short ID and links to a real dataset record', () => {
   const repo=JSON.parse(fs.readFileSync('data/llm/v0.3.0/repository.json','utf8'));
+  const apiModels=JSON.parse(fs.readFileSync('data/llm/api-models.json','utf8'));
   const gpu=fs.readFileSync('src/lib/gpu-data.ts','utf8'), server=fs.readFileSync('src/lib/server-data.ts','utf8');
   assert.equal(new Set(guideUpdates.map(n=>n.id)).size,guideUpdates.length);
   for(const item of guideUpdates){
     assert.match(item.id,/^[a-z0-9-]{3,20}$/);
     if(item.kind==='model')assert.ok(repo.models.some(m=>m.id===item.target));
+    if(item.kind==='api')assert.ok(apiModels.some(m=>m.id===item.target));
     if(item.kind==='software')assert.ok(repo.softwareProducts.some(s=>JSON.stringify(s).includes(item.target)));
     if(item.kind==='gpu')assert.ok(gpu.includes(`id: '${item.target}'`));
     if(item.kind==='server')assert.ok(server.includes(`id: '${item.target}'`));
@@ -64,6 +66,9 @@ test('each translated announcement keeps its unique short ID and links to a real
       if(item.kind==='model'){
         assert.equal(url.searchParams.get('model'),item.target);
         assert.deepEqual(JSON.parse(url.searchParams.get('s_model-catalog')),{ids:[item.target],onlySelected:true});
+      }else if(item.kind==='api'){
+        assert.equal(url.searchParams.get('view'),'model-catalog');
+        assert.deepEqual(JSON.parse(url.searchParams.get('s_model-catalog')),{q:item.target});
       }else if(item.kind==='software')assert.equal(JSON.parse(url.searchParams.get('s_software-products')).q,item.target);
       else assert.equal(url.hash,`#${item.kind}-${item.target}`);
     }

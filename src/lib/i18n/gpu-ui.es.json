@@ -133,6 +133,7 @@
   "مقایسه": "Comparar",
   "جزئیات": "Detalles",
   "منبع رسمی ↗": "Fuente oficial ↗",
+  "ارجاع ناکافی ↗": "Referencia insuficiente ↗",
   "مقدار عمومی ندارد": "Sin cifra pública",
   "مقدار مستقل ندارد": "Sin cifra independiente",
   "dense / قالب سازنده": "denso / formato del fabricante",
@@ -282,5 +283,6 @@
   "PCIe Switch": "Conmutador PCIe",
   "Baseboard / NVLink": "Placa base / NVLink",
   "Matrix Performance": "Rendimiento matricial",
-  "GPU یکپارچه": "GPU integradas"
+  "GPU یکپارچه": "GPU integradas",
+  "تأییدنشده": "Sin verificar"
 }

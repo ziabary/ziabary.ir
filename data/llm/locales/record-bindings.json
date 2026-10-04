@@ -9241,11 +9241,6 @@
     "targetScenario/value": "llama-cpp-b11262.scenario",
     "backendSummary/value": "llama-cpp-b11262.benefit"
   },
-  "repository.softwareReleases/software-release:ollama-v0-35-1-rc0": {
-    "selectionCaveat": "ollama-v0-35-1-rc0.conditions",
-    "targetScenario/value": "ollama-v0-35-1-rc0.scenario",
-    "backendSummary/value": "ollama-v0-35-1-rc0.benefit"
-  },
   "repository.softwareReleases/software-release:llama-cpp-b11310": {
     "selectionCaveat": "oct1.b11310.selectionCaveat",
     "targetScenario/value": "oct1.b11310.targetScenario.value",
@@ -9304,5 +9299,130 @@
     "downloadSearchNote": "embed5.model-profile:cohere-embed-v5-fast.downloadSearchNote",
     "runGuides/0/instructions": "embed5.model-profile:cohere-embed-v5-fast.runGuides.0.instructions",
     "runGuides/0/conditions/0": "embed5.model-profile:cohere-embed-v5-fast.runGuides.0.conditions.0"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-35-1": {
+    "selectionCaveat": "ollama-v0-35-1-rc0.conditions",
+    "targetScenario/value": "ollama-v0-35-1-rc0.scenario",
+    "backendSummary/value": "ollama-v0-35-1-rc0.benefit"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11371": {
+    "targetScenario/value": "llama-cpp-b11371-clef.scenario",
+    "backendSummary/value": "llama-cpp-b11371-clef.backend",
+    "selectionCaveat": "llama-cpp-b11371-clef.conditions"
+  },
+  "repository.models/model:cloudflare-clef": {
+    "specializedSpecs/task/value": "clef.task",
+    "specializedSpecs/output/value": "clef.output",
+    "specializedSpecs/poolingOrScoring/value": "clef.scoring",
+    "specializedSpecs/features/value": "clef.features"
+  },
+  "repository.modelProfiles/model-profile:cloudflare-clef": {
+    "introduction": "clef.intro",
+    "distinguishingFeatures/0": "clef.intro",
+    "roleSummary": "clef.role",
+    "languageSummary": "clef.language",
+    "runGuides/0/conditions/0": "clef.ollama-condition"
+  },
+  "repository.models/model:cloudflare-clef-flash": {
+    "specializedSpecs/task/value": "clef-flash.task",
+    "specializedSpecs/output/value": "clef-flash.output",
+    "specializedSpecs/poolingOrScoring/value": "clef-flash.scoring",
+    "specializedSpecs/features/value": "clef-flash.features"
+  },
+  "repository.modelProfiles/model-profile:cloudflare-clef-flash": {
+    "introduction": "clef-flash.intro",
+    "distinguishingFeatures/0": "clef-flash.intro",
+    "roleSummary": "clef-flash.role",
+    "languageSummary": "clef-flash.language",
+    "runGuides/0/conditions/0": "clef-flash.ollama-condition"
+  },
+  "repository.softwareReleases/software-release:triton-v2-73-0": {
+    "offlineOperation/note": "record.0125",
+    "targetScenario/value": "record.0138",
+    "backendSummary/value": "record.0139",
+    "selectionCaveat": "audit-software-triton-v2-73-0"
+  },
+  "repository.softwareReleases/software-release:tei-v1-9-4": {
+    "offlineOperation/note": "record.0141",
+    "targetScenario/value": "record.0142",
+    "backendSummary/value": "record.0143",
+    "selectionCaveat": "audit-software-tei-v1-9-4"
+  },
+  "repository.softwareReleases/software-release:transformers-v5-18-0": {
+    "offlineOperation/note": "record.0121",
+    "targetScenario/value": "record.0148",
+    "backendSummary/value": "record.0149",
+    "selectionCaveat": "audit-software-transformers-v5-18-0"
+  },
+  "repository.softwareReleases/software-release:litellm-v1-103-1": {
+    "offlineOperation/note": "record.0125",
+    "license/restrictions/0": "record.0151",
+    "targetScenario/value": "record.0152",
+    "backendSummary/value": "record.0153",
+    "selectionCaveat": "audit-software-litellm-v1-103-1"
+  },
+  "repository.softwareReleases/software-release:open-webui-v0-11-4": {
+    "offlineOperation/note": "record.0121",
+    "license/commercialUse/note": "record.0155",
+    "license/restrictions/0": "record.0156",
+    "targetScenario/value": "record.0157",
+    "backendSummary/value": "record.0158",
+    "selectionCaveat": "audit-software-open-webui-v0-11-4"
+  },
+  "repository.softwareReleases/software-release:sentence-transformers-v6-1-0": {
+    "targetScenario/value": "record.0170",
+    "backendSummary/value": "record.0171",
+    "selectionCaveat": "audit-software-sentence-transformers-v6-1-0"
+  },
+  "repository.models/model:coherelabs-north-small-translate-1-0": {
+    "contextCondition": "auditmodel.north.context",
+    "license/restrictions/0": "auditmodel.002",
+    "specializedSpecs/task/value": "auditmodel.003",
+    "specializedSpecs/output/value": "auditmodel.004",
+    "specializedSpecs/features/value": "auditmodel.005",
+    "specializedSpecs/languages/value": "auditmodel.006"
+  },
+  "repository.models/model:bespokelabs-bespoke-nimble-9b": {
+    "license/restrictions/0": "auditmodel.007",
+    "specializedSpecs/task/value": "auditmodel.008",
+    "specializedSpecs/output/value": "auditmodel.009",
+    "specializedSpecs/features/value": "auditmodel.010",
+    "specializedSpecs/languages/value": "auditmodel.011"
+  },
+  "repository.models/model:zai-org-glm-5-3-flash": {
+    "contextCondition": "auditmodel.012"
+  },
+  "repository.modelProfiles/model-profile:coherelabs-north-small-translate-1-0": {
+    "introduction": "auditmodel.013",
+    "roleSummary": "auditmodel.001",
+    "distinguishingFeatures/0": "auditmodel.002",
+    "languageSummary": "auditmodel.006",
+    "downloadSearchNote": "auditmodel.014",
+    "runGuides/0/conditions/0": "auditmodel.run.coherelabs-north-small-translate-1-0"
+  },
+  "repository.modelProfiles/model-profile:bespokelabs-bespoke-nimble-9b": {
+    "introduction": "auditmodel.015",
+    "roleSummary": "auditmodel.007",
+    "distinguishingFeatures/0": "auditmodel.010",
+    "languageSummary": "auditmodel.011",
+    "downloadSearchNote": "auditmodel.016",
+    "runGuides/0/conditions/0": "auditmodel.run.bespokelabs-bespoke-nimble-9b"
+  },
+  "repository.modelProfiles/model-profile:zai-org-glm-5-3-flash": {
+    "introduction": "auditmodel.017",
+    "roleSummary": "auditmodel.018",
+    "distinguishingFeatures/0": "auditmodel.019",
+    "languageSummary": "auditmodel.011",
+    "downloadSearchNote": "auditmodel.012",
+    "runGuides/0/conditions/0": "auditmodel.run.zai-org-glm-5-3-flash"
+  },
+  "repository.artifactListings/artifact-listing:coherelabs-north-small-translate-1-0": {
+    "sizeDescription": "auditmodel.artifact.north"
+  },
+  "repository.artifactListings/artifact-listing:bespokelabs-bespoke-nimble-9b": {
+    "sizeDescription": "auditmodel.artifact.nimble"
+  },
+  "repository.artifactListings/artifact-listing:zai-org-glm-5-3-flash": {
+    "sizeDescription": "auditmodel.artifact.glm"
   }
 }

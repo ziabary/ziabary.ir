@@ -6725,3 +6725,151 @@ modelProfiles.push({
     "evidence:cohere-embed5-usage"
   ]
 });
+modelProfiles.push({
+  "id": "model-profile:cloudflare-clef",
+  "modelVersionId": "model:cloudflare-clef",
+  "introduction": "Clef، مدل تصمیم 27 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند.",
+  "roleSummary": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+  "distinguishingFeatures": [
+    "Clef، مدل تصمیم 27 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند."
+  ],
+  "languageSummary": "کیفیت فارسی ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/Cloudflare/clef",
+  "runGuides": [
+    {
+      "label": "Ollama v0.35.1+ · /v1/systemone",
+      "engine": "Ollama",
+      "href": "https://ollama.com/library/clef",
+      "conditions": [
+        "برای متن و تصویر از Ollama v0.35.1+ و /v1/systemone استفاده کنید؛ قابلیت decision را بررسی کنید. این مدل chat، tools و thinking ندارد؛ حافظهٔ اجرای کامل و کیفیت فارسی سنجیده نشده‌اند."
+      ],
+      "code": "ollama pull clef\ncurl http://localhost:11434/v1/systemone -d '{\"model\":\"clef\",\"state\":\"Classify this request.\",\"questions\":{\"urgent\":{\"type\":\"noul\",\"instructions\":\"Is it urgent?\"}}}'",
+      "codeLanguage": "bash",
+      "evidenceIds": [
+        "evidence:ollama-clef-library",
+        "evidence:ollama-v0-35-1-release"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:cloudflare-clef-card",
+    "evidence:ollama-clef-library",
+    "evidence:llama-cpp-b11371-clef"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:cloudflare-clef-flash",
+  "modelVersionId": "model:cloudflare-clef-flash",
+  "introduction": "Clef Flash، مدل تصمیم 9 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند.",
+  "roleSummary": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+  "distinguishingFeatures": [
+    "Clef Flash، مدل تصمیم 9 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند."
+  ],
+  "languageSummary": "کیفیت فارسی ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/Cloudflare/clef-flash",
+  "runGuides": [
+    {
+      "label": "Ollama v0.35.1+ · /v1/systemone",
+      "engine": "Ollama",
+      "href": "https://ollama.com/library/clef-flash",
+      "conditions": [
+        "برای متن و تصویر از Ollama v0.35.1+ و /v1/systemone استفاده کنید؛ قابلیت decision را بررسی کنید. این مدل chat، tools و thinking ندارد؛ حافظهٔ اجرای کامل و کیفیت فارسی سنجیده نشده‌اند."
+      ],
+      "code": "ollama pull clef-flash\ncurl http://localhost:11434/v1/systemone -d '{\"model\":\"clef-flash\",\"state\":\"Classify this request.\",\"questions\":{\"urgent\":{\"type\":\"noul\",\"instructions\":\"Is it urgent?\"}}}'",
+      "codeLanguage": "bash",
+      "evidenceIds": [
+        "evidence:ollama-clef-flash-library",
+        "evidence:ollama-v0-35-1-release"
+      ]
+    }
+  ],
+  "evidenceIds": [
+    "evidence:cloudflare-clef-flash-card",
+    "evidence:ollama-clef-flash-library",
+    "evidence:llama-cpp-b11371-clef"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:coherelabs-north-small-translate-1-0",
+  "modelVersionId": "model:coherelabs-north-small-translate-1-0",
+  "introduction": "پژوهش ترجمهٔ ۵۰زبان با ۲۱۸ میلیارد پارامتر کل و ۲۵ میلیارد فعال؛ کیفیت فارسی مستقل سنجیده نشده است.",
+  "roleSummary": "ترجمهٔ متن؛ وزن‌ها پس از پذیرش شرایط دسترسی قابل دریافت‌اند.",
+  "distinguishingFeatures": [
+    "مجوز CC BY-NC 4.0 و سیاست استفادهٔ Cohere Labs؛ استفادهٔ تجاری مجاز نیست."
+  ],
+  "languageSummary": "فارسی در فهرست ۵۰ زبان ناشر است؛ آزمون کیفیت مستقل ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+  "runGuides": [
+    {
+      "label": "Transformers source build",
+      "engine": "Transformers",
+      "href": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+      "conditions": [
+        "پذیرش شرایط دسترسی و نسخهٔ Transformers دارای پشتیبانی مدل لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    }
+  ],
+  "downloadSearchNote": "دریافت وزن gated و مشروط به پذیرش شرایط است. نمونهٔ رسمی NVFP4 W4A16 روی یک B200 یا دو H100 است؛ کمترین کارت در این نمونه‌ها ۸۰GB دارد و این یک حد نظری برای همهٔ اجراها نیست.",
+  "evidenceIds": [
+    "evidence:coherelabs-north-small-translate-card"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:bespokelabs-bespoke-nimble-9b",
+  "modelVersionId": "model:bespokelabs-bespoke-nimble-9b",
+  "introduction": "آداپتر LoRA برای انتخاب ساختاریافته، بولی و امتیازدهی؛ پاسخ آزاد تولید نمی‌کند.",
+  "roleSummary": "به وزن کامل Qwen3.5-9B نیاز دارد؛ فایل ۱۶۵MiB فقط آداپتر است.",
+  "distinguishingFeatures": [
+    "حداکثر ۲۵۵ گزینه برای هر فیلد و ۸۱۹۲ توکن؛ این آداپتر مدل گفت‌وگویی مستقل نیست."
+  ],
+  "languageSummary": "فارسی ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+  "runGuides": [
+    {
+      "label": "PEFT with Qwen3.5-9B",
+      "engine": "PEFT",
+      "href": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+      "conditions": [
+        "پیش از بارگذاری آداپتر، وزن کامل Qwen3.5-9B را دریافت کنید."
+      ],
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    }
+  ],
+  "downloadSearchNote": "ابتدا مدل پایهٔ Qwen3.5-9B را دریافت کنید؛ آداپتر حدود ۱۶۵MiB کل حافظهٔ اجرا نیست.",
+  "evidenceIds": [
+    "evidence:bespokelabs-nimble-9b-card"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:zai-org-glm-5-3-flash",
+  "modelVersionId": "model:zai-org-glm-5-3-flash",
+  "introduction": "مدل چندوجهی MoE با ۳۲۰ میلیارد پارامتر کل و ۱۸ میلیارد فعال؛ وزن FP8 منتشر شده است.",
+  "roleSummary": "متن و تصویر برای کدنویسی و کارهای عامل‌محور؛ کیفیت فارسی آزموده نشده است.",
+  "distinguishingFeatures": [
+    "GLM-5.3-Flash را با GLM-5.3-BF16 ادغام نکنید؛ حافظه و سرعت واقعی وابسته به پیکربندی است."
+  ],
+  "languageSummary": "فارسی ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+  "runGuides": [
+    {
+      "label": "Official model card",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "conditions": [
+        "نسخهٔ سازگار backend را ثابت کنید و حافظهٔ اجرای کامل را پیش از استقرار بسنجید."
+      ],
+      "evidenceIds": [
+        "evidence:zai-glm-5-3-flash-card"
+      ]
+    }
+  ],
+  "downloadSearchNote": "طول بافت و حداقل نسخهٔ موتور برای توصیهٔ عملیاتی در این بررسی تثبیت نشده‌اند.",
+  "evidenceIds": [
+    "evidence:zai-glm-5-3-flash-card"
+  ]
+});

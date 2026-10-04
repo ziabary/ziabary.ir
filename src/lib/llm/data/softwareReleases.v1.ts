@@ -7,7 +7,7 @@ softwareReleases.push({
   "productId": "software-product:ollama",
   "version": "v0.34.0",
   "releasedOn": "2026-09-05",
-  "lastReviewedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-04",
   "roles": [
     "inference-engine-library",
     "api-server",
@@ -79,8 +79,9 @@ softwareReleases.push({
     "evidence:v03-ebe487d69f0dc2388f",
     "evidence:v03-b5ce2f9cd14541cc7d",
     "evidence:ollama-v0-40-0-rc0-release",
-    "evidence:ollama-v0-35-1-rc0",
-    "evidence:ollama-capability-18708"
+    "evidence:ollama-capability-18708",
+    "evidence:ollama-v0-35-1-release",
+    "evidence:ollama-clef-library"
   ],
   "targetScenario": {
     "state": "known",
@@ -96,7 +97,7 @@ softwareReleases.push({
       "evidence:software-ollama-overview"
     ]
   },
-  "selectionCaveat": "پیش‌انتشار v0.35.1-rc0: برای مدل تصمیم سازگار، CAPABILITY decision را در Modelfile یا decision را در capabilities درخواست ساخت اعلام کنید. /v1/systemone پیش از زمان‌بندی، قابلیت decision را بررسی می‌کند؛ معماری Qwen به‌تنهایی کافی نیست. scoring فعلاً فقط با GGUF پشتیبانی می‌شود (GGUF-only scoring)؛ مسیر MLX جداگانه در حال توسعه است. برای Nimble و Tev1، وجود Safetensors به معنی اجرای همان فایل با SystemOne نیست؛ در Ollama باید artifact سازگار GGUF را جداگانه انتخاب و اعتبارسنجی کرد. اعلان قابلیت به‌تنهایی مدل را به مدل تصمیم تبدیل نمی‌کند. این ردیف تأیید آمادگی تولیدی نیست. فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند.",
+  "selectionCaveat": "Ollama v0.35.1 پایدار /v1/systemone را برای مدل‌های دارای قابلیت decision عرضه می‌کند. Clef و Clef Flash در این مسیر متن و تصویر و پرسش‌های choice، noul و score را می‌پذیرند؛ برای chat، tools یا thinking مناسب نیستند. محدودیت تصویر در llama.cpp b11371 به Ollama تعمیم داده نمی‌شود. یادداشت انتشار سازگاری تفکیکی MLX و llama.cpp را کامل مستند نمی‌کند؛ مدل و artifact هر مسیر را بررسی کنید. فراخوانی ابزار و خروجی ساختاریافتهٔ مدل‌های گفت‌وگویی دیگر به مدل و قالب پیام وابسته‌اند.",
   "documentedBackends": [
     "Ollama runtime",
     "llama.cpp"
@@ -555,6 +556,99 @@ softwareReleases.push({
   ]
 });
 softwareReleases.push({
+  "id": "software-release:triton-v2-73-0",
+  "productId": "software-product:triton",
+  "version": "v2.73.0",
+  "releasedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "api-server",
+    "deployment-manager"
+  ],
+  "environments": [
+    "server",
+    "container"
+  ],
+  "operatingSystems": [
+    "Linux"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown",
+    "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "BSD-3-Clause",
+      "evidenceIds": [
+        "evidence:software-triton-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/triton-inference-server/server/blob/v2.72.0/LICENSE",
+      "evidenceIds": [
+        "evidence:software-triton-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:software-triton-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:software-triton-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:software-triton-release",
+    "evidence:software-triton-overview",
+    "evidence:software-triton-license",
+    "evidence:v03-8c96f25dcb8de25541",
+    "evidence:v03-bb574636acd9b4e368",
+    "evidence:v03-a71753d8d7dd85a324",
+    "evidence:audit-20260916-triton-272",
+    "evidence:software-triton-v2-73-0-release"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "میزبانی چند مدل و چند framework از طریق سرویس مشترک",
+    "evidenceIds": [
+      "evidence:software-triton-overview"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "TensorRT / PyTorch / ONNX / OpenVINO / Python و backendهای دیگر",
+    "evidenceIds": [
+      "evidence:software-triton-overview"
+    ]
+  },
+  "selectionCaveat": "انتشار 26.09 پشتیبانی اولیهٔ Rubin دارد؛ کانتینر اختصاصی TensorRT-LLM backend همراه آن نیست. backend و تصویر مناسب را جدا انتخاب کنید.",
+  "documentedNeeds": [
+    "high-throughput"
+  ],
+  "documentedBackends": [
+    "TensorRT",
+    "ONNX Runtime",
+    "PyTorch",
+    "OpenVINO",
+    "Python"
+  ],
+  "releaseChannel": "stable"
+});
+softwareReleases.push({
   "id": "software-release:triton-v2-72-0",
   "productId": "software-product:triton",
   "version": "v2.72.0",
@@ -644,6 +738,102 @@ softwareReleases.push({
     "OpenVINO",
     "Python"
   ]
+});
+softwareReleases.push({
+  "id": "software-release:tei-v1-9-4",
+  "productId": "software-product:tei",
+  "version": "v1.9.4",
+  "releasedOn": "2026-09-15",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server",
+    "container",
+    "offline-air-gapped"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:software-tei-overview"
+    ],
+    "note": "پس از آماده‌سازی مدل‌ها و وابستگی‌ها؛ اتصال به API یا ابزار خارجی مستلزم شبکه است."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:software-tei-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/huggingface/text-embeddings-inference/blob/v1.9.3/LICENSE",
+      "evidenceIds": [
+        "evidence:software-tei-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:software-tei-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:software-tei-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:software-tei-release",
+    "evidence:software-tei-overview",
+    "evidence:software-tei-license",
+    "evidence:v03-c69b5931b9c6978a2b",
+    "evidence:v03-7f22b7486a7c9fe23c",
+    "evidence:v03-532d89c93c12ced68c",
+    "evidence:software-tei-v1-9-4-release"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "سرویس embedding، reranking و دسته‌بندی متن",
+    "evidenceIds": [
+      "evidence:software-tei-overview"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Candle / cuBLASLt / ONNX؛ Metal برای Mac طبق مدل",
+    "evidenceIds": [
+      "evidence:software-tei-overview"
+    ]
+  },
+  "selectionCaveat": "پشتیبانی ARM64 و SM121 برای GB10 و مسیر اولیهٔ AMD/ROCm اضافه شده است؛ این اعلام به معنی تأیید همهٔ GPUهای AMD نیست. نوع وظیفه و pooling به مدل بستگی دارد.",
+  "documentedBackends": [
+    "Candle",
+    "ONNX Runtime",
+    "cuBLASLt"
+  ],
+  "documentedNeeds": [
+    "high-throughput"
+  ],
+  "releaseChannel": "stable"
 });
 softwareReleases.push({
   "id": "software-release:tei-v1-9-3",
@@ -823,6 +1013,99 @@ softwareReleases.push({
   ]
 });
 softwareReleases.push({
+  "id": "software-release:transformers-v5-18-0",
+  "productId": "software-product:transformers",
+  "version": "v5.18.0",
+  "releasedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "desktop",
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:v03-6991cb837dcc3e0456"
+    ],
+    "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:software-transformers-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/huggingface/transformers/blob/v5.17.0/LICENSE",
+      "evidenceIds": [
+        "evidence:software-transformers-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:software-transformers-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:software-transformers-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:software-transformers-release",
+    "evidence:software-transformers-overview",
+    "evidence:software-transformers-license",
+    "evidence:v03-e57136d79a4b6a1205",
+    "evidence:v03-1ed805fdece03bf36c",
+    "evidence:v03-e05f6e1814f7385330",
+    "evidence:v03-6991cb837dcc3e0456",
+    "evidence:software-transformers-v5-18-0-release"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "بارگذاری مدل و ساخت گردش‌کار استنتاج در Python",
+    "evidenceIds": [
+      "evidence:software-transformers-overview"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "PyTorch و کلاس‌های مدل Transformers؛ serve طبق نسخه",
+    "evidenceIds": [
+      "evidence:software-transformers-overview"
+    ]
+  },
+  "selectionCaveat": "مدل‌های تازه و اصلاحات GGUF در ۵٫۱۸ ثبت شده‌اند؛ سازگاری GPT-OSS/ROCm و قابلیت سرویس را با نسخهٔ backend و مدل دقیق بررسی کنید.",
+  "documentedBackends": [
+    "PyTorch"
+  ],
+  "releaseChannel": "stable"
+});
+softwareReleases.push({
   "id": "software-release:transformers-v5-17-0",
   "productId": "software-product:transformers",
   "version": "v5.17.0",
@@ -914,6 +1197,97 @@ softwareReleases.push({
   ]
 });
 softwareReleases.push({
+  "id": "software-release:litellm-v1-103-1",
+  "productId": "software-product:litellm",
+  "version": "v1.103.1",
+  "releasedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "gateway",
+    "api-server"
+  ],
+  "environments": [
+    "server",
+    "container",
+    "cloud-service"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU"
+  ],
+  "localOrCloud": [
+    "local",
+    "cloud"
+  ],
+  "offlineOperation": {
+    "state": "unknown",
+    "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:software-litellm-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/BerriAI/litellm/blob/v1.101.0/LICENSE",
+      "evidenceIds": [
+        "evidence:software-litellm-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:software-litellm-license"
+      ]
+    },
+    "restrictions": [
+      "MIT مربوط به بخش عمومی مخزن است؛ enterprise/ مجوز جدا دارد. قابلیت تجاری خودکار به هسته نسبت داده نمی‌شود."
+    ],
+    "evidenceIds": [
+      "evidence:software-litellm-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:software-litellm-release",
+    "evidence:software-litellm-overview",
+    "evidence:software-litellm-license",
+    "evidence:v03-421cc0229394f7d0f4",
+    "evidence:v03-ceec510b23b3c3f5f2",
+    "evidence:software-litellm-v1-103-1-release"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "درگاه مشترک برای چند ارائه‌دهنده و سرویس مدل",
+    "evidenceIds": [
+      "evidence:software-litellm-overview"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "اتصال به API ارائه‌دهندگان و سرورهای مدل",
+    "evidenceIds": [
+      "evidence:software-litellm-overview"
+    ]
+  },
+  "selectionCaveat": "نسخهٔ پایدار تازهٔ دروازهٔ API؛ تولید متن در سرویس متصل انجام می‌شود. قابلیت‌ها و مجوز Enterprise را به هستهٔ متن‌باز تعمیم ندهید.",
+  "documentedBackends": [
+    "OpenAI-compatible API",
+    "Ollama API",
+    "provider APIs"
+  ],
+  "releaseChannel": "stable"
+});
+softwareReleases.push({
   "id": "software-release:litellm-v1-101-0",
   "productId": "software-product:litellm",
   "version": "v1.101.0",
@@ -1001,6 +1375,101 @@ softwareReleases.push({
     "Ollama API",
     "provider APIs"
   ]
+});
+softwareReleases.push({
+  "id": "software-release:open-webui-v0-11-4",
+  "productId": "software-product:open-webui",
+  "version": "v0.11.4",
+  "releasedOn": "2026-09-21",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "user-interface"
+  ],
+  "environments": [
+    "server",
+    "container",
+    "kubernetes",
+    "offline-air-gapped"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU"
+  ],
+  "localOrCloud": [
+    "local",
+    "hybrid"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:v03-7348870d91adea4269"
+    ],
+    "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Open WebUI License",
+      "evidenceIds": [
+        "evidence:software-open-webui-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/open-webui/open-webui/blob/v0.11.3/LICENSE",
+      "evidenceIds": [
+        "evidence:software-open-webui-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:software-open-webui-license"
+      ],
+      "note": "شرایط برند و استثناهای متن مجوز اعمال می‌شود."
+    },
+    "restrictions": [
+      "شرط حفظ برند و استثناهای آن در LICENSE؛ این نسخه نباید MIT یا BSD بدون شرط معرفی شود."
+    ],
+    "evidenceIds": [
+      "evidence:software-open-webui-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:software-open-webui-release",
+    "evidence:software-open-webui-overview",
+    "evidence:software-open-webui-license",
+    "evidence:v03-a14db468251e3265c3",
+    "evidence:v03-7348870d91adea4269",
+    "evidence:software-open-webui-v0-11-4-release"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "رابط گفتگو برای Ollama و APIهای سازگار",
+    "evidenceIds": [
+      "evidence:software-open-webui-overview"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Ollama یا سرویس سازگار با OpenAI API",
+    "evidenceIds": [
+      "evidence:software-open-webui-overview"
+    ]
+  },
+  "selectionCaveat": "تصویر slim مدل‌های محلی و بسیاری از بسته‌ها را حذف کرده است؛ برای نصب آفلاین، embedding، اسناد و گفتار وابستگی‌های خارجی را دوباره بررسی کنید.",
+  "documentedBackends": [
+    "Ollama API",
+    "OpenAI-compatible API"
+  ],
+  "releaseChannel": "stable"
 });
 softwareReleases.push({
   "id": "software-release:open-webui-v0-11-3",
@@ -1349,6 +1818,91 @@ softwareReleases.push({
     "evidence:audit-20260916-ktransformers-docs",
     "evidence:audit-20260916-ktransformers-license"
   ]
+});
+softwareReleases.push({
+  "id": "software-release:sentence-transformers-v6-1-0",
+  "productId": "software-product:sentence-transformers",
+  "version": "v6.1.0",
+  "releasedOn": "2026-09-18",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "inference-engine-library"
+  ],
+  "environments": [
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/huggingface/sentence-transformers/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:audit-20260916-sentence-transformers-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "وقتی به پیاده‌سازی یا تنظیم بخش بازیابی و ارزیابی مدل‌های تخصصی نیاز دارید.",
+    "evidenceIds": [
+      "evidence:audit-20260916-sentence-transformers-release",
+      "evidence:audit-20260916-sentence-transformers-docs",
+      "evidence:audit-20260916-sentence-transformers-license"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "تولید embedding برای جست‌وجوی معنایی و استفاده از CrossEncoder برای امتیازدهی و بازرتبه‌بندی.",
+    "evidenceIds": [
+      "evidence:audit-20260916-sentence-transformers-release",
+      "evidence:audit-20260916-sentence-transformers-docs",
+      "evidence:audit-20260916-sentence-transformers-license"
+    ]
+  },
+  "selectionCaveat": "ورودی چندوجهی و مستندات بهبود یافته‌اند؛ image/audio/video وابستگی اختیاری دارند و ترتیب کلیدهای ورودی می‌تواند embedding یا امتیاز را تغییر دهد.",
+  "documentedBackends": [
+    "PyTorch"
+  ],
+  "evidenceIds": [
+    "evidence:audit-20260916-sentence-transformers-release",
+    "evidence:audit-20260916-sentence-transformers-docs",
+    "evidence:audit-20260916-sentence-transformers-license",
+    "evidence:software-sentence-transformers-v6-1-0-release"
+  ],
+  "releaseChannel": "stable"
 });
 softwareReleases.push({
   "id": "software-release:sentence-transformers-v6-0-1",
@@ -1828,12 +2382,12 @@ softwareReleases.push({
   ]
 });
 softwareReleases.push({
-  "id": "software-release:ollama-v0-35-1-rc0",
+  "id": "software-release:ollama-v0-35-1",
   "productId": "software-product:ollama",
-  "version": "v0.35.1-rc0",
-  "releaseChannel": "prerelease",
+  "version": "v0.35.1",
+  "releaseChannel": "stable",
   "releasedOn": "2026-09-29",
-  "lastReviewedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-04",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -1863,23 +2417,24 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ مسیر SystemOne برای مدل تصمیم سازگار",
+    "value": "نسخهٔ پایدار؛ تصمیم‌گیری نوع‌دار با /v1/systemone برای Nimble، Tev1، Clef و Clef Flash",
     "evidenceIds": [
-      "evidence:ollama-v0-35-1-rc0",
-      "evidence:ollama-capability-18708"
+      "evidence:ollama-v0-35-1-release",
+      "evidence:ollama-clef-library"
     ]
   },
   "backendSummary": {
     "state": "known",
-    "value": "CAPABILITY decision و GGUF-only scoring؛ MLX جداگانه",
+    "value": "ورودی متن و تصویر Clef/Clef Flash؛ choice، noul و score؛ قابلیت decision",
     "evidenceIds": [
-      "evidence:ollama-v0-35-1-rc0",
-      "evidence:ollama-capability-18708"
+      "evidence:ollama-v0-35-1-release",
+      "evidence:ollama-clef-library"
     ]
   },
-  "selectionCaveat": "پیش‌انتشار v0.35.1-rc0: برای مدل تصمیم سازگار، CAPABILITY decision را در Modelfile یا decision را در capabilities درخواست ساخت اعلام کنید. /v1/systemone پیش از زمان‌بندی، قابلیت decision را بررسی می‌کند؛ معماری Qwen به‌تنهایی کافی نیست. scoring فعلاً فقط با GGUF پشتیبانی می‌شود (GGUF-only scoring)؛ مسیر MLX جداگانه در حال توسعه است. برای Nimble و Tev1، وجود Safetensors به معنی اجرای همان فایل با SystemOne نیست؛ در Ollama باید artifact سازگار GGUF را جداگانه انتخاب و اعتبارسنجی کرد. اعلان قابلیت به‌تنهایی مدل را به مدل تصمیم تبدیل نمی‌کند. این ردیف تأیید آمادگی تولیدی نیست.",
+  "selectionCaveat": "نسخهٔ پایدار v0.35.1: /v1/systemone برای مدل تصمیم سازگار، پرسش‌های choice، noul و score را می‌پذیرد؛ Clef و Clef Flash متن و تصویر را با هم می‌سنجند. CAPABILITY decision باید برای مدل سازگار اعلام شود؛ کلاینت نباید آن را برای chat، tools یا thinking پیشنهاد کند. این API تولید متن آزاد ندارد. یادداشت انتشار فقط به به‌روزرسانی llama.cpp و MLX اشاره می‌کند و سازگاری تفکیکی backendها را تأیید نمی‌کند. برای Nimble و Tev1 نیز فایل Safetensors به‌تنهایی دلیل اجرای همان فایل با SystemOne نیست؛ artifact سازگار را جداگانه بررسی کنید. آزمون محلی و ارزیابی کیفیت فارسی انجام نشده است.",
   "evidenceIds": [
-    "evidence:ollama-v0-35-1-rc0",
+    "evidence:ollama-v0-35-1-release",
+    "evidence:ollama-clef-library",
     "evidence:ollama-capability-18708"
   ]
 });
@@ -2001,5 +2556,61 @@ softwareReleases.push({
     "evidence:llama-cpp-b11307-release",
     "evidence:llama-cpp-b11307-fix",
     "evidence:llama-cpp-dflash-27117"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11371",
+  "productId": "software-product:llama-cpp",
+  "version": "b11371",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-03",
+  "lastReviewedOn": "2026-10-04",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ پشتیبانی اولیهٔ Clef در /v1/systemone",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11371-clef"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "ورودی متنی Clef؛ تصویر هنوز پشتیبانی نمی‌شود",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11371-clef"
+    ]
+  },
+  "selectionCaveat": "b11371 پشتیبانی اولیهٔ Clef را فقط برای متن اضافه کرده است؛ ورودی تصویری Clef در llama.cpp هنوز پشتیبانی نمی‌شود. این محدودیت به Ollama v0.35.1 تعمیم ندارد. مسیر پیش‌انتشار است و آزمون محلی، کارایی و کیفیت فارسی تأیید نشده‌اند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11371-clef"
   ]
 });

@@ -1,4 +1,4 @@
-import apiModels from '../../../data/llm/api-models.json';
+import { apiModels } from './api-models';
 import type { LlmLocale } from './i18n/runtime';
 import {hasTranslationPair,localized,positive,wizardLanguages,type WizardAnswers} from './wizard-core';
 export function wizardApiCandidates(a:WizardAnswers,locale:LlmLocale){
@@ -6,6 +6,7 @@ export function wizardApiCandidates(a:WizardAnswers,locale:LlmLocale){
  const translation=a.task==='writing'&&a.writingTask==='translation',languages=[...wizardLanguages(a,'source'),...wizardLanguages(a,'output')];
  const L=(fa:string,en:string,es:string)=>localized([fa,en,es],locale);
  return apiModels.filter(model=>{
+  if(model.catalogOnly)return false;
   if(translation!==model.tasks.includes('translation'))return false;
   if(a.task==='coding'&&!model.tasks.includes('coding')||a.task==='operations'&&!model.tasks.includes('tools'))return false;
   if(a.format==='media'&&a.mediaType==='image'&&!model.input.includes('image'))return false;

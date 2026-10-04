@@ -10,6 +10,7 @@
   $: serverGpuProfiles = hardwareGpuProfiles(locale);
   import {
     serverLastReviewed,
+    serverCardCapacity,
     serverRecords as sourceServerRecords,
     type AcceleratorForm,
     type CardCooling,
@@ -116,7 +117,7 @@
     if (!profile) return null;
     if (record.acceleratorForm !== 'pcie-card' || record.pcieGeneration == null) return 'incompatible';
     if (record.pcieGeneration < profile.pcieGeneration && !allowDownshift) return 'incompatible';
-    if (capacity(record, profile.widthSlots) < Math.max(requiredGpuCount, 1)) return 'incompatible';
+    if (serverCardCapacity(record, profile) < Math.max(requiredGpuCount, 1)) return 'incompatible';
     if (!record.cardCooling.includes(profile.cooling)) return 'incompatible';
     if (record.maxGpuPowerW != null && record.maxGpuPowerW < profile.powerW) return 'incompatible';
     if (record.validatedGpuIds.includes(profile.id)) return 'validated';
@@ -178,7 +179,7 @@
     if (key === 'depthMm') return record.depthMm;
     if (key === 'pcieGeneration') return record.pcieGeneration;
     if (key === 'gpuPower') return record.maxGpuPowerW;
-    return capacity(record, cardWidth);
+    return selectedProfile() ? serverCardCapacity(record, selectedProfile()!) : capacity(record, cardWidth);
   }
 
   function compareRows(a: ServerRecord, b: ServerRecord, rule: SortRule) {
@@ -203,7 +204,11 @@
 
   function validatedText(record: ServerRecord) {
     if (!record.validatedGpuIds.length) return 'مدل دقیق را در configurator/QPL کنترل کنید';
-    return record.validatedGpuIds.map((id) => serverGpuProfiles.find((profile) => profile.id === id)?.label ?? id).map(t).join(locale === 'fa' ? '، ' : ', ');
+    return record.validatedGpuIds.map((id) => {
+      const label = t(serverGpuProfiles.find((profile) => profile.id === id)?.label ?? id);
+      const limit = record.validatedGpuLimits?.[id];
+      return limit == null ? label : `${label} (≤${numbers.format(limit)})`;
+    }).join(locale === 'fa' ? '، ' : ', ');
   }
 
   function specs(record: ServerRecord) {
@@ -273,7 +278,7 @@
       && (!selectedStatuses.length || selectedStatuses.includes(record.status))
       && (acceleratorForm === 'all' || record.acceleratorForm === acceleratorForm)
       && generationOkay
-      && (!requiredGpuCount || capacity(record, cardWidth) >= requiredGpuCount)
+      && (!requiredGpuCount || (selectedProfile() ? serverCardCapacity(record, selectedProfile()!) : capacity(record, cardWidth)) >= requiredGpuCount)
       && (cardCooling === 'any' || record.cardCooling.includes(cardCooling))
       && powerOkay
       && (!maxHeightU || (record.heightU != null && record.heightU <= maxHeightU))

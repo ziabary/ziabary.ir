@@ -276,6 +276,30 @@
         "evidence:cohere-embed5-docs",
         "evidence:cohere-embed5-usage"
       ]
+    },
+    {
+      "id": "family:clef",
+      "name": "Clef",
+      "publisher": "Cloudflare",
+      "evidenceIds": [
+        "evidence:cloudflare-clef-release"
+      ]
+    },
+    {
+      "id": "family:north-translate",
+      "name": "North Small Translate",
+      "publisher": "Cohere Labs",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    {
+      "id": "family:bespoke-nimble",
+      "name": "Bespoke Nimble",
+      "publisher": "Bespoke Labs",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
     }
   ],
   "models": [
@@ -50981,6 +51005,1171 @@
           ]
         }
       }
+    },
+    {
+      "id": "model:cloudflare-clef",
+      "familyId": "family:clef",
+      "exactName": "Clef",
+      "publisher": "Cloudflare",
+      "version": "initial public release",
+      "aliases": [
+        "Cloudflare/clef",
+        "clef"
+      ],
+      "stage": "other",
+      "architecture": "dense",
+      "totalParametersB": {
+        "state": "known",
+        "value": 27,
+        "unit": "billion-parameters",
+        "evidenceIds": [
+          "evidence:cloudflare-clef-card"
+        ]
+      },
+      "activeParametersB": {
+        "state": "not-applicable"
+      },
+      "kind": "decision",
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "structured-data"
+      ],
+      "applications": [
+        "structured-extraction",
+        "agents-tools"
+      ],
+      "languages": [],
+      "persianEvidenceStatus": "not-evaluated",
+      "declaredContext": {
+        "state": "unknown"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "releaseStatus": "available",
+      "releasedOn": "2026-10-01",
+      "lastReviewedOn": "2026-10-04",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-card"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/Cloudflare/clef",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-card"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-card"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:cloudflare-clef-card"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card",
+        "evidence:ollama-clef-library",
+        "evidence:ollama-v0-35-1-release"
+      ],
+      "specializedSpecs": {
+        "task": {
+          "state": "known",
+          "value": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-card"
+          ]
+        },
+        "output": {
+          "state": "known",
+          "value": "پاسخ نوع‌دار choice، noul یا score با احتمال گزینه‌ها؛ بدون تولید متن آزاد",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-card"
+          ]
+        },
+        "poolingOrScoring": {
+          "state": "known",
+          "value": "امتیازدهی مشترک گزینه‌های پرسش‌ها در یک گذر",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-card"
+          ]
+        },
+        "features": {
+          "state": "known",
+          "value": "متن و تصویر در Ollama v0.35.1+؛ llama.cpp b11371 فقط متن و پیش‌انتشار",
+          "evidenceIds": [
+            "evidence:ollama-clef-library",
+            "evidence:llama-cpp-b11371-clef"
+          ]
+        },
+        "languages": {
+          "state": "unknown"
+        }
+      }
+    },
+    {
+      "id": "model:cloudflare-clef-flash",
+      "familyId": "family:clef",
+      "exactName": "Clef Flash",
+      "publisher": "Cloudflare",
+      "version": "initial public release",
+      "aliases": [
+        "Cloudflare/clef-flash",
+        "clef-flash"
+      ],
+      "stage": "other",
+      "architecture": "dense",
+      "totalParametersB": {
+        "state": "known",
+        "value": 9,
+        "unit": "billion-parameters",
+        "evidenceIds": [
+          "evidence:cloudflare-clef-flash-card"
+        ]
+      },
+      "activeParametersB": {
+        "state": "not-applicable"
+      },
+      "kind": "decision",
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "structured-data"
+      ],
+      "applications": [
+        "structured-extraction",
+        "agents-tools"
+      ],
+      "languages": [],
+      "persianEvidenceStatus": "not-evaluated",
+      "declaredContext": {
+        "state": "unknown"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "releaseStatus": "available",
+      "releasedOn": "2026-10-01",
+      "lastReviewedOn": "2026-10-04",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-flash-card"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/Cloudflare/clef-flash",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-flash-card"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-flash-card"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:cloudflare-clef-flash-card"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card",
+        "evidence:ollama-clef-flash-library",
+        "evidence:ollama-v0-35-1-release"
+      ],
+      "specializedSpecs": {
+        "task": {
+          "state": "known",
+          "value": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-flash-card"
+          ]
+        },
+        "output": {
+          "state": "known",
+          "value": "پاسخ نوع‌دار choice، noul یا score با احتمال گزینه‌ها؛ بدون تولید متن آزاد",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-flash-card"
+          ]
+        },
+        "poolingOrScoring": {
+          "state": "known",
+          "value": "امتیازدهی مشترک گزینه‌های پرسش‌ها در یک گذر",
+          "evidenceIds": [
+            "evidence:cloudflare-clef-flash-card"
+          ]
+        },
+        "features": {
+          "state": "known",
+          "value": "متن و تصویر در Ollama v0.35.1+؛ llama.cpp b11371 فقط متن و پیش‌انتشار",
+          "evidenceIds": [
+            "evidence:ollama-clef-flash-library",
+            "evidence:llama-cpp-b11371-clef"
+          ]
+        },
+        "languages": {
+          "state": "unknown"
+        }
+      }
+    },
+    {
+      "id": "model:coherelabs-north-small-translate-1-0",
+      "familyId": "family:north-translate",
+      "exactName": "North-Small-Translate-1.0",
+      "publisher": "Cohere Labs",
+      "version": "1.0",
+      "aliases": [
+        "CohereLabs/North-Small-Translate-1.0"
+      ],
+      "stage": "instruct",
+      "architecture": "moe",
+      "accessMode": "public-weights",
+      "totalParametersB": {
+        "state": "known",
+        "value": 218,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "activeParametersB": {
+        "state": "known",
+        "value": 25,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "kind": "generative",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "applications": [
+        "text-work"
+      ],
+      "taskSpecializations": [
+        {
+          "task": "translation",
+          "languages": [
+            "en",
+            "sq",
+            "ar",
+            "bg",
+            "bn",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "tl",
+            "fr",
+            "ga",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "id",
+            "is",
+            "it",
+            "ja",
+            "ko",
+            "lt",
+            "lv",
+            "ms",
+            "mt",
+            "nl",
+            "no",
+            "pa",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sr",
+            "sv",
+            "ta",
+            "te",
+            "th",
+            "tr",
+            "uk",
+            "ur",
+            "vi",
+            "zh-Hant",
+            "zh"
+          ],
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        }
+      ],
+      "languages": [
+        {
+          "language": "en",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "sq",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ar",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "bg",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "bn",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ca",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "cs",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "da",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "de",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "el",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "es",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "et",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "fa",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "fi",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "tl",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "fr",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ga",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "he",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "hi",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "hr",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "hu",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "id",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "is",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "it",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ja",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ko",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "lt",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "lv",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ms",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "mt",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "nl",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "no",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "pa",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "pl",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "pt",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ro",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ru",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "sk",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "sl",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "sr",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "sv",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ta",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "te",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "th",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "tr",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "uk",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "ur",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "vi",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "zh-Hant",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        },
+        {
+          "language": "zh",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:coherelabs-north-small-translate-card"
+            ]
+          }
+        }
+      ],
+      "persianEvidenceStatus": "publisher-claimed",
+      "declaredContext": {
+        "state": "known",
+        "value": 32768,
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ],
+        "unit": "token"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "contextCondition": "حداکثر ۱۶K توکن ورودی و ۱۶K خروجی؛ عدد ۳۲K فقط مجموع دو سقف است و تمام آن ورودی نیست.",
+      "releaseStatus": "available",
+      "lastReviewedOn": "2026-10-04",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "CC BY-NC 4.0",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "prohibited",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        },
+        "restrictions": [
+          "مجوز CC BY-NC 4.0 و سیاست استفادهٔ Cohere Labs؛ استفادهٔ تجاری مجاز نیست."
+        ],
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ],
+      "specializedSpecs": {
+        "task": {
+          "state": "known",
+          "value": "ترجمهٔ متن میان زبان‌های اعلام‌شده",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        },
+        "output": {
+          "state": "known",
+          "value": "متن ترجمه‌شده",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        },
+        "poolingOrScoring": {
+          "state": "not-applicable"
+        },
+        "features": {
+          "state": "known",
+          "value": "۲۱۸B کل و ۲۵B فعال؛ ۱۶K ورودی و ۱۶K خروجی طبق ناشر",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        },
+        "languages": {
+          "state": "known",
+          "value": "فارسی در فهرست ۵۰ زبان ناشر است؛ آزمون کیفیت مستقل ثبت نشده است.",
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        }
+      },
+      "inputTokenLimit": {
+        "state": "known",
+        "value": 16384,
+        "unit": "token",
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      },
+      "outputTokenLimit": {
+        "state": "known",
+        "value": 16384,
+        "unit": "token",
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      },
+      "researchOnly": true,
+      "minimumReviewedGpuMemoryGiB": {
+        "state": "known",
+        "value": 74.5,
+        "unit": "GiB",
+        "evidenceIds": [
+          "evidence:coherelabs-north-small-translate-card"
+        ]
+      }
+    },
+    {
+      "id": "model:bespokelabs-bespoke-nimble-9b",
+      "familyId": "family:bespoke-nimble",
+      "exactName": "Bespoke-Nimble-9B",
+      "publisher": "Bespoke Labs",
+      "version": "2026-09-24 checkpoint",
+      "aliases": [
+        "bespokelabs/Bespoke-Nimble-9B"
+      ],
+      "stage": "other",
+      "architecture": "dense",
+      "baseModelId": "model:qwen-qwen3-5-9b",
+      "accessMode": "public-weights",
+      "totalParametersB": {
+        "state": "known",
+        "value": 9,
+        "evidenceIds": [
+          "evidence:bespokelabs-nimble-9b-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "activeParametersB": {
+        "state": "not-applicable"
+      },
+      "kind": "decision",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "structured-data"
+      ],
+      "applications": [
+        "structured-extraction",
+        "agents-tools"
+      ],
+      "languages": [
+        {
+          "language": "en",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:bespokelabs-nimble-9b-card"
+            ]
+          }
+        }
+      ],
+      "persianEvidenceStatus": "not-evaluated",
+      "declaredContext": {
+        "state": "known",
+        "value": 8192,
+        "evidenceIds": [
+          "evidence:bespokelabs-nimble-9b-card"
+        ],
+        "unit": "token"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "releaseStatus": "available",
+      "lastReviewedOn": "2026-10-04",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        },
+        "restrictions": [
+          "به وزن کامل Qwen3.5-9B نیاز دارد؛ فایل ۱۶۵MiB فقط آداپتر است."
+        ],
+        "evidenceIds": [
+          "evidence:bespokelabs-nimble-9b-card"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ],
+      "specializedSpecs": {
+        "task": {
+          "state": "known",
+          "value": "تصمیم، انتخاب و امتیازدهی مبتنی بر زمینه",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        },
+        "output": {
+          "state": "known",
+          "value": "گزینه، مقدار بولی یا سطح امتیاز همراه احتمال",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        },
+        "poolingOrScoring": {
+          "state": "unknown"
+        },
+        "features": {
+          "state": "known",
+          "value": "حداکثر ۲۵۵ گزینه برای هر فیلد و ۸۱۹۲ توکن؛ این آداپتر مدل گفت‌وگویی مستقل نیست.",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        },
+        "languages": {
+          "state": "known",
+          "value": "فارسی ارزیابی نشده است.",
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        }
+      }
+    },
+    {
+      "id": "model:zai-org-glm-5-3-flash",
+      "familyId": "family:glm",
+      "exactName": "GLM-5.3-Flash",
+      "publisher": "Z.ai",
+      "version": "initial public release",
+      "aliases": [
+        "zai-org/GLM-5.3-Flash"
+      ],
+      "stage": "instruct",
+      "architecture": "moe",
+      "attentionArchitecture": "hybrid",
+      "accessMode": "public-weights",
+      "totalParametersB": {
+        "state": "known",
+        "value": 320,
+        "evidenceIds": [
+          "evidence:zai-glm-5-3-flash-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "activeParametersB": {
+        "state": "known",
+        "value": 18,
+        "evidenceIds": [
+          "evidence:zai-glm-5-3-flash-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "kind": "vision-language",
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "applications": [
+        "coding-assistant",
+        "agents-tools",
+        "document-vision"
+      ],
+      "languages": [
+        {
+          "language": "en",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:zai-glm-5-3-flash-card"
+            ]
+          }
+        },
+        {
+          "language": "zh",
+          "declared": {
+            "state": "known",
+            "value": true,
+            "evidenceIds": [
+              "evidence:zai-glm-5-3-flash-card"
+            ]
+          }
+        }
+      ],
+      "persianEvidenceStatus": "not-evaluated",
+      "declaredContext": {
+        "state": "unknown"
+      },
+      "evaluatedContext": {
+        "state": "not-measured"
+      },
+      "contextCondition": "طول بافت و حداقل نسخهٔ موتور برای توصیهٔ عملیاتی در این بررسی تثبیت نشده‌اند.",
+      "releaseStatus": "available",
+      "lastReviewedOn": "2026-10-04",
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "MIT",
+          "evidenceIds": [
+            "evidence:zai-glm-5-3-flash-card"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+          "evidenceIds": [
+            "evidence:zai-glm-5-3-flash-card"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:zai-glm-5-3-flash-card"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:zai-glm-5-3-flash-card"
+        ]
+      },
+      "evidenceIds": [
+        "evidence:zai-glm-5-3-flash-card"
+      ]
     }
   ],
   "artifacts": [
@@ -53276,7 +54465,7 @@
       "productId": "software-product:ollama",
       "version": "v0.34.0",
       "releasedOn": "2026-09-05",
-      "lastReviewedOn": "2026-09-30",
+      "lastReviewedOn": "2026-10-04",
       "roles": [
         "inference-engine-library",
         "api-server",
@@ -53348,8 +54537,9 @@
         "evidence:v03-ebe487d69f0dc2388f",
         "evidence:v03-b5ce2f9cd14541cc7d",
         "evidence:ollama-v0-40-0-rc0-release",
-        "evidence:ollama-v0-35-1-rc0",
-        "evidence:ollama-capability-18708"
+        "evidence:ollama-capability-18708",
+        "evidence:ollama-v0-35-1-release",
+        "evidence:ollama-clef-library"
       ],
       "targetScenario": {
         "state": "known",
@@ -53365,7 +54555,7 @@
           "evidence:software-ollama-overview"
         ]
       },
-      "selectionCaveat": "پیش‌انتشار v0.35.1-rc0: برای مدل تصمیم سازگار، CAPABILITY decision را در Modelfile یا decision را در capabilities درخواست ساخت اعلام کنید. /v1/systemone پیش از زمان‌بندی، قابلیت decision را بررسی می‌کند؛ معماری Qwen به‌تنهایی کافی نیست. scoring فعلاً فقط با GGUF پشتیبانی می‌شود (GGUF-only scoring)؛ مسیر MLX جداگانه در حال توسعه است. برای Nimble و Tev1، وجود Safetensors به معنی اجرای همان فایل با SystemOne نیست؛ در Ollama باید artifact سازگار GGUF را جداگانه انتخاب و اعتبارسنجی کرد. اعلان قابلیت به‌تنهایی مدل را به مدل تصمیم تبدیل نمی‌کند. این ردیف تأیید آمادگی تولیدی نیست. فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند.",
+      "selectionCaveat": "Ollama v0.35.1 پایدار /v1/systemone را برای مدل‌های دارای قابلیت decision عرضه می‌کند. Clef و Clef Flash در این مسیر متن و تصویر و پرسش‌های choice، noul و score را می‌پذیرند؛ برای chat، tools یا thinking مناسب نیستند. محدودیت تصویر در llama.cpp b11371 به Ollama تعمیم داده نمی‌شود. یادداشت انتشار سازگاری تفکیکی MLX و llama.cpp را کامل مستند نمی‌کند؛ مدل و artifact هر مسیر را بررسی کنید. فراخوانی ابزار و خروجی ساختاریافتهٔ مدل‌های گفت‌وگویی دیگر به مدل و قالب پیام وابسته‌اند.",
       "documentedBackends": [
         "Ollama runtime",
         "llama.cpp"
@@ -53824,6 +55014,99 @@
       ]
     },
     {
+      "id": "software-release:triton-v2-73-0",
+      "productId": "software-product:triton",
+      "version": "v2.73.0",
+      "releasedOn": "2026-09-30",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "api-server",
+        "deployment-manager"
+      ],
+      "environments": [
+        "server",
+        "container"
+      ],
+      "operatingSystems": [
+        "Linux"
+      ],
+      "hardwareKinds": [
+        "CPU",
+        "GPU"
+      ],
+      "localOrCloud": [
+        "local"
+      ],
+      "offlineOperation": {
+        "state": "unknown",
+        "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "BSD-3-Clause",
+          "evidenceIds": [
+            "evidence:software-triton-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/triton-inference-server/server/blob/v2.72.0/LICENSE",
+          "evidenceIds": [
+            "evidence:software-triton-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:software-triton-license"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:software-triton-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "evidenceIds": [
+        "evidence:software-triton-release",
+        "evidence:software-triton-overview",
+        "evidence:software-triton-license",
+        "evidence:v03-8c96f25dcb8de25541",
+        "evidence:v03-bb574636acd9b4e368",
+        "evidence:v03-a71753d8d7dd85a324",
+        "evidence:audit-20260916-triton-272",
+        "evidence:software-triton-v2-73-0-release"
+      ],
+      "targetScenario": {
+        "state": "known",
+        "value": "میزبانی چند مدل و چند framework از طریق سرویس مشترک",
+        "evidenceIds": [
+          "evidence:software-triton-overview"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "TensorRT / PyTorch / ONNX / OpenVINO / Python و backendهای دیگر",
+        "evidenceIds": [
+          "evidence:software-triton-overview"
+        ]
+      },
+      "selectionCaveat": "انتشار 26.09 پشتیبانی اولیهٔ Rubin دارد؛ کانتینر اختصاصی TensorRT-LLM backend همراه آن نیست. backend و تصویر مناسب را جدا انتخاب کنید.",
+      "documentedNeeds": [
+        "high-throughput"
+      ],
+      "documentedBackends": [
+        "TensorRT",
+        "ONNX Runtime",
+        "PyTorch",
+        "OpenVINO",
+        "Python"
+      ],
+      "releaseChannel": "stable"
+    },
+    {
       "id": "software-release:triton-v2-72-0",
       "productId": "software-product:triton",
       "version": "v2.72.0",
@@ -53913,6 +55196,102 @@
         "OpenVINO",
         "Python"
       ]
+    },
+    {
+      "id": "software-release:tei-v1-9-4",
+      "productId": "software-product:tei",
+      "version": "v1.9.4",
+      "releasedOn": "2026-09-15",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "inference-engine-library",
+        "api-server"
+      ],
+      "environments": [
+        "server",
+        "container",
+        "offline-air-gapped"
+      ],
+      "operatingSystems": [
+        "Linux",
+        "macOS"
+      ],
+      "hardwareKinds": [
+        "CPU",
+        "GPU"
+      ],
+      "localOrCloud": [
+        "local"
+      ],
+      "offlineOperation": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:software-tei-overview"
+        ],
+        "note": "پس از آماده‌سازی مدل‌ها و وابستگی‌ها؛ اتصال به API یا ابزار خارجی مستلزم شبکه است."
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:software-tei-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/huggingface/text-embeddings-inference/blob/v1.9.3/LICENSE",
+          "evidenceIds": [
+            "evidence:software-tei-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:software-tei-license"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:software-tei-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "evidenceIds": [
+        "evidence:software-tei-release",
+        "evidence:software-tei-overview",
+        "evidence:software-tei-license",
+        "evidence:v03-c69b5931b9c6978a2b",
+        "evidence:v03-7f22b7486a7c9fe23c",
+        "evidence:v03-532d89c93c12ced68c",
+        "evidence:software-tei-v1-9-4-release"
+      ],
+      "targetScenario": {
+        "state": "known",
+        "value": "سرویس embedding، reranking و دسته‌بندی متن",
+        "evidenceIds": [
+          "evidence:software-tei-overview"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "Candle / cuBLASLt / ONNX؛ Metal برای Mac طبق مدل",
+        "evidenceIds": [
+          "evidence:software-tei-overview"
+        ]
+      },
+      "selectionCaveat": "پشتیبانی ARM64 و SM121 برای GB10 و مسیر اولیهٔ AMD/ROCm اضافه شده است؛ این اعلام به معنی تأیید همهٔ GPUهای AMD نیست. نوع وظیفه و pooling به مدل بستگی دارد.",
+      "documentedBackends": [
+        "Candle",
+        "ONNX Runtime",
+        "cuBLASLt"
+      ],
+      "documentedNeeds": [
+        "high-throughput"
+      ],
+      "releaseChannel": "stable"
     },
     {
       "id": "software-release:tei-v1-9-3",
@@ -54092,6 +55471,99 @@
       ]
     },
     {
+      "id": "software-release:transformers-v5-18-0",
+      "productId": "software-product:transformers",
+      "version": "v5.18.0",
+      "releasedOn": "2026-09-30",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "inference-engine-library",
+        "api-server"
+      ],
+      "environments": [
+        "desktop",
+        "workstation",
+        "server"
+      ],
+      "operatingSystems": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "hardwareKinds": [
+        "CPU",
+        "GPU"
+      ],
+      "localOrCloud": [
+        "local"
+      ],
+      "offlineOperation": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:v03-6991cb837dcc3e0456"
+        ],
+        "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:software-transformers-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/huggingface/transformers/blob/v5.17.0/LICENSE",
+          "evidenceIds": [
+            "evidence:software-transformers-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:software-transformers-license"
+          ]
+        },
+        "restrictions": [],
+        "evidenceIds": [
+          "evidence:software-transformers-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "evidenceIds": [
+        "evidence:software-transformers-release",
+        "evidence:software-transformers-overview",
+        "evidence:software-transformers-license",
+        "evidence:v03-e57136d79a4b6a1205",
+        "evidence:v03-1ed805fdece03bf36c",
+        "evidence:v03-e05f6e1814f7385330",
+        "evidence:v03-6991cb837dcc3e0456",
+        "evidence:software-transformers-v5-18-0-release"
+      ],
+      "targetScenario": {
+        "state": "known",
+        "value": "بارگذاری مدل و ساخت گردش‌کار استنتاج در Python",
+        "evidenceIds": [
+          "evidence:software-transformers-overview"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "PyTorch و کلاس‌های مدل Transformers؛ serve طبق نسخه",
+        "evidenceIds": [
+          "evidence:software-transformers-overview"
+        ]
+      },
+      "selectionCaveat": "مدل‌های تازه و اصلاحات GGUF در ۵٫۱۸ ثبت شده‌اند؛ سازگاری GPT-OSS/ROCm و قابلیت سرویس را با نسخهٔ backend و مدل دقیق بررسی کنید.",
+      "documentedBackends": [
+        "PyTorch"
+      ],
+      "releaseChannel": "stable"
+    },
+    {
       "id": "software-release:transformers-v5-17-0",
       "productId": "software-product:transformers",
       "version": "v5.17.0",
@@ -54183,6 +55655,97 @@
       ]
     },
     {
+      "id": "software-release:litellm-v1-103-1",
+      "productId": "software-product:litellm",
+      "version": "v1.103.1",
+      "releasedOn": "2026-09-30",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "gateway",
+        "api-server"
+      ],
+      "environments": [
+        "server",
+        "container",
+        "cloud-service"
+      ],
+      "operatingSystems": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "hardwareKinds": [
+        "CPU"
+      ],
+      "localOrCloud": [
+        "local",
+        "cloud"
+      ],
+      "offlineOperation": {
+        "state": "unknown",
+        "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "MIT",
+          "evidenceIds": [
+            "evidence:software-litellm-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/BerriAI/litellm/blob/v1.101.0/LICENSE",
+          "evidenceIds": [
+            "evidence:software-litellm-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:software-litellm-license"
+          ]
+        },
+        "restrictions": [
+          "MIT مربوط به بخش عمومی مخزن است؛ enterprise/ مجوز جدا دارد. قابلیت تجاری خودکار به هسته نسبت داده نمی‌شود."
+        ],
+        "evidenceIds": [
+          "evidence:software-litellm-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "evidenceIds": [
+        "evidence:software-litellm-release",
+        "evidence:software-litellm-overview",
+        "evidence:software-litellm-license",
+        "evidence:v03-421cc0229394f7d0f4",
+        "evidence:v03-ceec510b23b3c3f5f2",
+        "evidence:software-litellm-v1-103-1-release"
+      ],
+      "targetScenario": {
+        "state": "known",
+        "value": "درگاه مشترک برای چند ارائه‌دهنده و سرویس مدل",
+        "evidenceIds": [
+          "evidence:software-litellm-overview"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "اتصال به API ارائه‌دهندگان و سرورهای مدل",
+        "evidenceIds": [
+          "evidence:software-litellm-overview"
+        ]
+      },
+      "selectionCaveat": "نسخهٔ پایدار تازهٔ دروازهٔ API؛ تولید متن در سرویس متصل انجام می‌شود. قابلیت‌ها و مجوز Enterprise را به هستهٔ متن‌باز تعمیم ندهید.",
+      "documentedBackends": [
+        "OpenAI-compatible API",
+        "Ollama API",
+        "provider APIs"
+      ],
+      "releaseChannel": "stable"
+    },
+    {
       "id": "software-release:litellm-v1-101-0",
       "productId": "software-product:litellm",
       "version": "v1.101.0",
@@ -54270,6 +55833,101 @@
         "Ollama API",
         "provider APIs"
       ]
+    },
+    {
+      "id": "software-release:open-webui-v0-11-4",
+      "productId": "software-product:open-webui",
+      "version": "v0.11.4",
+      "releasedOn": "2026-09-21",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "user-interface"
+      ],
+      "environments": [
+        "server",
+        "container",
+        "kubernetes",
+        "offline-air-gapped"
+      ],
+      "operatingSystems": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "hardwareKinds": [
+        "CPU"
+      ],
+      "localOrCloud": [
+        "local",
+        "hybrid"
+      ],
+      "offlineOperation": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:v03-7348870d91adea4269"
+        ],
+        "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Open WebUI License",
+          "evidenceIds": [
+            "evidence:software-open-webui-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/open-webui/open-webui/blob/v0.11.3/LICENSE",
+          "evidenceIds": [
+            "evidence:software-open-webui-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "restricted",
+          "evidenceIds": [
+            "evidence:software-open-webui-license"
+          ],
+          "note": "شرایط برند و استثناهای متن مجوز اعمال می‌شود."
+        },
+        "restrictions": [
+          "شرط حفظ برند و استثناهای آن در LICENSE؛ این نسخه نباید MIT یا BSD بدون شرط معرفی شود."
+        ],
+        "evidenceIds": [
+          "evidence:software-open-webui-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "evidenceIds": [
+        "evidence:software-open-webui-release",
+        "evidence:software-open-webui-overview",
+        "evidence:software-open-webui-license",
+        "evidence:v03-a14db468251e3265c3",
+        "evidence:v03-7348870d91adea4269",
+        "evidence:software-open-webui-v0-11-4-release"
+      ],
+      "targetScenario": {
+        "state": "known",
+        "value": "رابط گفتگو برای Ollama و APIهای سازگار",
+        "evidenceIds": [
+          "evidence:software-open-webui-overview"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "Ollama یا سرویس سازگار با OpenAI API",
+        "evidenceIds": [
+          "evidence:software-open-webui-overview"
+        ]
+      },
+      "selectionCaveat": "تصویر slim مدل‌های محلی و بسیاری از بسته‌ها را حذف کرده است؛ برای نصب آفلاین، embedding، اسناد و گفتار وابستگی‌های خارجی را دوباره بررسی کنید.",
+      "documentedBackends": [
+        "Ollama API",
+        "OpenAI-compatible API"
+      ],
+      "releaseChannel": "stable"
     },
     {
       "id": "software-release:open-webui-v0-11-3",
@@ -54618,6 +56276,91 @@
         "evidence:audit-20260916-ktransformers-docs",
         "evidence:audit-20260916-ktransformers-license"
       ]
+    },
+    {
+      "id": "software-release:sentence-transformers-v6-1-0",
+      "productId": "software-product:sentence-transformers",
+      "version": "v6.1.0",
+      "releasedOn": "2026-09-18",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "inference-engine-library"
+      ],
+      "environments": [
+        "workstation",
+        "server"
+      ],
+      "operatingSystems": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "hardwareKinds": [
+        "CPU",
+        "GPU"
+      ],
+      "localOrCloud": [
+        "local"
+      ],
+      "offlineOperation": {
+        "state": "unknown"
+      },
+      "license": {
+        "name": {
+          "state": "known",
+          "value": "Apache-2.0",
+          "evidenceIds": [
+            "evidence:audit-20260916-sentence-transformers-license"
+          ]
+        },
+        "url": {
+          "state": "known",
+          "value": "https://github.com/huggingface/sentence-transformers/blob/main/LICENSE",
+          "evidenceIds": [
+            "evidence:audit-20260916-sentence-transformers-license"
+          ]
+        },
+        "commercialUse": {
+          "state": "known",
+          "value": "allowed",
+          "evidenceIds": [
+            "evidence:audit-20260916-sentence-transformers-license"
+          ]
+        },
+        "evidenceIds": [
+          "evidence:audit-20260916-sentence-transformers-license"
+        ]
+      },
+      "maintenanceStatus": "active",
+      "targetScenario": {
+        "state": "known",
+        "value": "وقتی به پیاده‌سازی یا تنظیم بخش بازیابی و ارزیابی مدل‌های تخصصی نیاز دارید.",
+        "evidenceIds": [
+          "evidence:audit-20260916-sentence-transformers-release",
+          "evidence:audit-20260916-sentence-transformers-docs",
+          "evidence:audit-20260916-sentence-transformers-license"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "تولید embedding برای جست‌وجوی معنایی و استفاده از CrossEncoder برای امتیازدهی و بازرتبه‌بندی.",
+        "evidenceIds": [
+          "evidence:audit-20260916-sentence-transformers-release",
+          "evidence:audit-20260916-sentence-transformers-docs",
+          "evidence:audit-20260916-sentence-transformers-license"
+        ]
+      },
+      "selectionCaveat": "ورودی چندوجهی و مستندات بهبود یافته‌اند؛ image/audio/video وابستگی اختیاری دارند و ترتیب کلیدهای ورودی می‌تواند embedding یا امتیاز را تغییر دهد.",
+      "documentedBackends": [
+        "PyTorch"
+      ],
+      "evidenceIds": [
+        "evidence:audit-20260916-sentence-transformers-release",
+        "evidence:audit-20260916-sentence-transformers-docs",
+        "evidence:audit-20260916-sentence-transformers-license",
+        "evidence:software-sentence-transformers-v6-1-0-release"
+      ],
+      "releaseChannel": "stable"
     },
     {
       "id": "software-release:sentence-transformers-v6-0-1",
@@ -55097,12 +56840,12 @@
       ]
     },
     {
-      "id": "software-release:ollama-v0-35-1-rc0",
+      "id": "software-release:ollama-v0-35-1",
       "productId": "software-product:ollama",
-      "version": "v0.35.1-rc0",
-      "releaseChannel": "prerelease",
+      "version": "v0.35.1",
+      "releaseChannel": "stable",
       "releasedOn": "2026-09-29",
-      "lastReviewedOn": "2026-09-30",
+      "lastReviewedOn": "2026-10-04",
       "roles": [
         "inference-engine-library",
         "api-server"
@@ -55132,23 +56875,24 @@
       "maintenanceStatus": "active",
       "targetScenario": {
         "state": "known",
-        "value": "پیش‌انتشار؛ مسیر SystemOne برای مدل تصمیم سازگار",
+        "value": "نسخهٔ پایدار؛ تصمیم‌گیری نوع‌دار با /v1/systemone برای Nimble، Tev1، Clef و Clef Flash",
         "evidenceIds": [
-          "evidence:ollama-v0-35-1-rc0",
-          "evidence:ollama-capability-18708"
+          "evidence:ollama-v0-35-1-release",
+          "evidence:ollama-clef-library"
         ]
       },
       "backendSummary": {
         "state": "known",
-        "value": "CAPABILITY decision و GGUF-only scoring؛ MLX جداگانه",
+        "value": "ورودی متن و تصویر Clef/Clef Flash؛ choice، noul و score؛ قابلیت decision",
         "evidenceIds": [
-          "evidence:ollama-v0-35-1-rc0",
-          "evidence:ollama-capability-18708"
+          "evidence:ollama-v0-35-1-release",
+          "evidence:ollama-clef-library"
         ]
       },
-      "selectionCaveat": "پیش‌انتشار v0.35.1-rc0: برای مدل تصمیم سازگار، CAPABILITY decision را در Modelfile یا decision را در capabilities درخواست ساخت اعلام کنید. /v1/systemone پیش از زمان‌بندی، قابلیت decision را بررسی می‌کند؛ معماری Qwen به‌تنهایی کافی نیست. scoring فعلاً فقط با GGUF پشتیبانی می‌شود (GGUF-only scoring)؛ مسیر MLX جداگانه در حال توسعه است. برای Nimble و Tev1، وجود Safetensors به معنی اجرای همان فایل با SystemOne نیست؛ در Ollama باید artifact سازگار GGUF را جداگانه انتخاب و اعتبارسنجی کرد. اعلان قابلیت به‌تنهایی مدل را به مدل تصمیم تبدیل نمی‌کند. این ردیف تأیید آمادگی تولیدی نیست.",
+      "selectionCaveat": "نسخهٔ پایدار v0.35.1: /v1/systemone برای مدل تصمیم سازگار، پرسش‌های choice، noul و score را می‌پذیرد؛ Clef و Clef Flash متن و تصویر را با هم می‌سنجند. CAPABILITY decision باید برای مدل سازگار اعلام شود؛ کلاینت نباید آن را برای chat، tools یا thinking پیشنهاد کند. این API تولید متن آزاد ندارد. یادداشت انتشار فقط به به‌روزرسانی llama.cpp و MLX اشاره می‌کند و سازگاری تفکیکی backendها را تأیید نمی‌کند. برای Nimble و Tev1 نیز فایل Safetensors به‌تنهایی دلیل اجرای همان فایل با SystemOne نیست؛ artifact سازگار را جداگانه بررسی کنید. آزمون محلی و ارزیابی کیفیت فارسی انجام نشده است.",
       "evidenceIds": [
-        "evidence:ollama-v0-35-1-rc0",
+        "evidence:ollama-v0-35-1-release",
+        "evidence:ollama-clef-library",
         "evidence:ollama-capability-18708"
       ]
     },
@@ -55270,6 +57014,62 @@
         "evidence:llama-cpp-b11307-release",
         "evidence:llama-cpp-b11307-fix",
         "evidence:llama-cpp-dflash-27117"
+      ]
+    },
+    {
+      "id": "software-release:llama-cpp-b11371",
+      "productId": "software-product:llama-cpp",
+      "version": "b11371",
+      "releaseChannel": "prerelease",
+      "releasedOn": "2026-10-03",
+      "lastReviewedOn": "2026-10-04",
+      "roles": [
+        "inference-engine-library",
+        "api-server"
+      ],
+      "environments": [
+        "server"
+      ],
+      "operatingSystems": [],
+      "hardwareKinds": [
+        "CPU",
+        "GPU"
+      ],
+      "localOrCloud": [
+        "local"
+      ],
+      "offlineOperation": {
+        "state": "unknown"
+      },
+      "license": {
+        "name": {
+          "state": "unknown"
+        },
+        "url": {
+          "state": "unknown"
+        },
+        "commercialUse": {
+          "state": "unknown"
+        }
+      },
+      "maintenanceStatus": "active",
+      "targetScenario": {
+        "state": "known",
+        "value": "پیش‌انتشار؛ پشتیبانی اولیهٔ Clef در /v1/systemone",
+        "evidenceIds": [
+          "evidence:llama-cpp-b11371-clef"
+        ]
+      },
+      "backendSummary": {
+        "state": "known",
+        "value": "ورودی متنی Clef؛ تصویر هنوز پشتیبانی نمی‌شود",
+        "evidenceIds": [
+          "evidence:llama-cpp-b11371-clef"
+        ]
+      },
+      "selectionCaveat": "b11371 پشتیبانی اولیهٔ Clef را فقط برای متن اضافه کرده است؛ ورودی تصویری Clef در llama.cpp هنوز پشتیبانی نمی‌شود. این محدودیت به Ollama v0.35.1 تعمیم ندارد. مسیر پیش‌انتشار است و آزمون محلی، کارایی و کیفیت فارسی تأیید نشده‌اند.",
+      "evidenceIds": [
+        "evidence:llama-cpp-b11371-clef"
       ]
     }
   ],
@@ -138375,6 +140175,277 @@
       "scope": "Publisher-declared capabilities; no independent Persian retrieval result",
       "limitations": [],
       "presentationNotes": []
+    },
+    {
+      "id": "evidence:ollama-v0-35-1-release",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1",
+      "title": "Ollama v0.35.1",
+      "organization": "Ollama",
+      "publishedOn": "2026-09-29",
+      "accessedOn": "2026-10-04",
+      "versionRevisionOrCommit": "v0.35.1",
+      "locator": "Release notes; 2026-09-29T20:14:00Z",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "Stable release; Clef and Clef Flash text and image input through /v1/systemone; decision capability",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:ollama-clef-library",
+      "url": "https://ollama.com/library/clef",
+      "title": "Ollama Clef model library",
+      "organization": "Ollama",
+      "publishedOn": "2026-10-01",
+      "accessedOn": "2026-10-04",
+      "locator": "Model library / Readme / API",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "Clef 27B, images, choice/noul/score and v0.35.1+",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:ollama-clef-flash-library",
+      "url": "https://ollama.com/library/clef-flash",
+      "title": "Ollama Clef Flash model library",
+      "organization": "Ollama",
+      "publishedOn": "2026-10-01",
+      "accessedOn": "2026-10-04",
+      "locator": "Model library / Readme",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "Clef Flash 9B, images and v0.35.1+",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:cloudflare-clef-card",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "title": "Cloudflare Clef model card",
+      "organization": "Cloudflare",
+      "publishedOn": "2026-10-01",
+      "accessedOn": "2026-10-04",
+      "locator": "Model card / Clef / License",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "27B multimodal decision model; Apache-2.0; typed output, no free-form generation",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:cloudflare-clef-flash-card",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "title": "Cloudflare Clef Flash model card",
+      "organization": "Cloudflare",
+      "publishedOn": "2026-10-01",
+      "accessedOn": "2026-10-04",
+      "locator": "Model card / Clef Flash / License",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "9B multimodal decision model; Apache-2.0; typed output, no free-form generation",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:cloudflare-clef-release",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "title": "Cloudflare Clef announcement",
+      "organization": "Cloudflare",
+      "publishedOn": "2026-10-01",
+      "accessedOn": "2026-10-04",
+      "versionRevisionOrCommit": "announcement",
+      "locator": "Announcement / October 1, 2026",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "Clef and Clef Flash open-source release date",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:llama-cpp-b11371-clef",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11371",
+      "title": "llama.cpp b11371",
+      "organization": "ggml-org",
+      "publishedOn": "2026-10-03",
+      "accessedOn": "2026-10-04",
+      "locator": "Release notes / model: add support for clef decision model (text-only)",
+      "kind": "documented-specification",
+      "sourceKind": "primary",
+      "scope": "Prerelease initial Clef support, text only",
+      "limitations": [],
+      "presentationNotes": []
+    },
+    {
+      "id": "evidence:software-triton-v2-73-0-release",
+      "url": "https://github.com/triton-inference-server/server/releases/tag/v2.73.0",
+      "title": "Triton 2.73.0 / NGC 26.09 — official release",
+      "organization": "NVIDIA",
+      "accessedOn": "2026-10-04",
+      "locator": "Release tag and notes",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Triton 2.73.0 / NGC 26.09; version, publication date and release notes.",
+      "versionRevisionOrCommit": "v2.73.0",
+      "limitations": [
+        "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+      ],
+      "commercialInterest": "Software publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Release notes are publisher claims; performance and compatibility require separate validation."
+      ]
+    },
+    {
+      "id": "evidence:software-tei-v1-9-4-release",
+      "url": "https://github.com/huggingface/text-embeddings-inference/releases/tag/v1.9.4",
+      "title": "Text Embeddings Inference 1.9.4 — official release",
+      "organization": "Hugging Face",
+      "accessedOn": "2026-10-04",
+      "locator": "Release tag and notes",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Text Embeddings Inference 1.9.4; version, publication date and release notes.",
+      "versionRevisionOrCommit": "v1.9.4",
+      "limitations": [
+        "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+      ],
+      "commercialInterest": "Software publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Release notes are publisher claims; performance and compatibility require separate validation."
+      ]
+    },
+    {
+      "id": "evidence:software-transformers-v5-18-0-release",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.18.0",
+      "title": "Transformers 5.18.0 — official release",
+      "organization": "Hugging Face",
+      "accessedOn": "2026-10-04",
+      "locator": "Release tag and notes",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Transformers 5.18.0; version, publication date and release notes.",
+      "versionRevisionOrCommit": "v5.18.0",
+      "limitations": [
+        "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+      ],
+      "commercialInterest": "Software publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Release notes are publisher claims; performance and compatibility require separate validation."
+      ]
+    },
+    {
+      "id": "evidence:software-litellm-v1-103-1-release",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.103.1",
+      "title": "LiteLLM 1.103.1 — official release",
+      "organization": "BerriAI",
+      "accessedOn": "2026-10-04",
+      "locator": "Release tag and notes",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "LiteLLM 1.103.1; version, publication date and release notes.",
+      "versionRevisionOrCommit": "v1.103.1",
+      "limitations": [
+        "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+      ],
+      "commercialInterest": "Software publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Release notes are publisher claims; performance and compatibility require separate validation."
+      ]
+    },
+    {
+      "id": "evidence:software-open-webui-v0-11-4-release",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+      "title": "Open WebUI 0.11.4 — official release",
+      "organization": "Open WebUI",
+      "accessedOn": "2026-10-04",
+      "locator": "Release tag and notes",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Open WebUI 0.11.4; version, publication date and release notes.",
+      "versionRevisionOrCommit": "v0.11.4",
+      "limitations": [
+        "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+      ],
+      "commercialInterest": "Software publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Release notes are publisher claims; performance and compatibility require separate validation."
+      ]
+    },
+    {
+      "id": "evidence:software-sentence-transformers-v6-1-0-release",
+      "url": "https://github.com/huggingface/sentence-transformers/releases/tag/v6.1.0",
+      "title": "Sentence Transformers 6.1.0 — official release",
+      "organization": "Hugging Face",
+      "accessedOn": "2026-10-04",
+      "locator": "Release tag and notes",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Sentence Transformers 6.1.0; version, publication date and release notes.",
+      "versionRevisionOrCommit": "v6.1.0",
+      "limitations": [
+        "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+      ],
+      "commercialInterest": "Software publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Release notes are publisher claims; performance and compatibility require separate validation."
+      ]
+    },
+    {
+      "id": "evidence:coherelabs-north-small-translate-card",
+      "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+      "title": "Cohere Labs North Small Translate model card",
+      "organization": "Cohere Labs",
+      "accessedOn": "2026-10-04",
+      "locator": "Model card and access/license information",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Cohere Labs North Small Translate model card; publisher-provided architecture, access and usage conditions.",
+      "versionRevisionOrCommit": "reviewed 2026-10-04",
+      "limitations": [
+        "Publisher specifications and claims; Persian quality and local deployment performance not independently measured."
+      ],
+      "commercialInterest": "Model publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Model specifications and examples are publisher statements, not independent benchmark results."
+      ]
+    },
+    {
+      "id": "evidence:bespokelabs-nimble-9b-card",
+      "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+      "title": "Bespoke Nimble 9B model card",
+      "organization": "Bespoke Labs",
+      "accessedOn": "2026-10-04",
+      "locator": "Model card and access/license information",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "Bespoke Nimble 9B model card; publisher-provided architecture, access and usage conditions.",
+      "versionRevisionOrCommit": "reviewed 2026-10-04",
+      "limitations": [
+        "Publisher specifications and claims; Persian quality and local deployment performance not independently measured."
+      ],
+      "commercialInterest": "Model publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Model specifications and examples are publisher statements, not independent benchmark results."
+      ]
+    },
+    {
+      "id": "evidence:zai-glm-5-3-flash-card",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "title": "GLM-5.3-Flash model card",
+      "organization": "Z.ai",
+      "accessedOn": "2026-10-04",
+      "locator": "Model card and access/license information",
+      "kind": "publisher-report",
+      "sourceKind": "primary",
+      "scope": "GLM-5.3-Flash model card; publisher-provided architecture, access and usage conditions.",
+      "versionRevisionOrCommit": "reviewed 2026-10-04",
+      "limitations": [
+        "Publisher specifications and claims; Persian quality and local deployment performance not independently measured."
+      ],
+      "commercialInterest": "Model publisher; not an independent evaluation.",
+      "presentationNotes": [
+        "Model specifications and examples are publisher statements, not independent benchmark results."
+      ]
     }
   ],
   "publishedEvaluations": [
@@ -186683,6 +188754,154 @@
         "evidence:cohere-embed5-docs",
         "evidence:cohere-embed5-usage"
       ]
+    },
+    {
+      "id": "model-profile:cloudflare-clef",
+      "modelVersionId": "model:cloudflare-clef",
+      "introduction": "Clef، مدل تصمیم 27 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند.",
+      "roleSummary": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+      "distinguishingFeatures": [
+        "Clef، مدل تصمیم 27 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند."
+      ],
+      "languageSummary": "کیفیت فارسی ارزیابی نشده است.",
+      "officialUrl": "https://huggingface.co/Cloudflare/clef",
+      "runGuides": [
+        {
+          "label": "Ollama v0.35.1+ · /v1/systemone",
+          "engine": "Ollama",
+          "href": "https://ollama.com/library/clef",
+          "conditions": [
+            "برای متن و تصویر از Ollama v0.35.1+ و /v1/systemone استفاده کنید؛ قابلیت decision را بررسی کنید. این مدل chat، tools و thinking ندارد؛ حافظهٔ اجرای کامل و کیفیت فارسی سنجیده نشده‌اند."
+          ],
+          "code": "ollama pull clef\ncurl http://localhost:11434/v1/systemone -d '{\"model\":\"clef\",\"state\":\"Classify this request.\",\"questions\":{\"urgent\":{\"type\":\"noul\",\"instructions\":\"Is it urgent?\"}}}'",
+          "codeLanguage": "bash",
+          "evidenceIds": [
+            "evidence:ollama-clef-library",
+            "evidence:ollama-v0-35-1-release"
+          ]
+        }
+      ],
+      "evidenceIds": [
+        "evidence:cloudflare-clef-card",
+        "evidence:ollama-clef-library",
+        "evidence:llama-cpp-b11371-clef"
+      ]
+    },
+    {
+      "id": "model-profile:cloudflare-clef-flash",
+      "modelVersionId": "model:cloudflare-clef-flash",
+      "introduction": "Clef Flash، مدل تصمیم 9 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند.",
+      "roleSummary": "دسته‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم Agent",
+      "distinguishingFeatures": [
+        "Clef Flash، مدل تصمیم 9 میلیاردپارامتری Cloudflare، متن و تصویر را به پاسخ‌های نوع‌دار تبدیل می‌کند؛ پاسخ گفت‌وگویی تولید نمی‌کند."
+      ],
+      "languageSummary": "کیفیت فارسی ارزیابی نشده است.",
+      "officialUrl": "https://huggingface.co/Cloudflare/clef-flash",
+      "runGuides": [
+        {
+          "label": "Ollama v0.35.1+ · /v1/systemone",
+          "engine": "Ollama",
+          "href": "https://ollama.com/library/clef-flash",
+          "conditions": [
+            "برای متن و تصویر از Ollama v0.35.1+ و /v1/systemone استفاده کنید؛ قابلیت decision را بررسی کنید. این مدل chat، tools و thinking ندارد؛ حافظهٔ اجرای کامل و کیفیت فارسی سنجیده نشده‌اند."
+          ],
+          "code": "ollama pull clef-flash\ncurl http://localhost:11434/v1/systemone -d '{\"model\":\"clef-flash\",\"state\":\"Classify this request.\",\"questions\":{\"urgent\":{\"type\":\"noul\",\"instructions\":\"Is it urgent?\"}}}'",
+          "codeLanguage": "bash",
+          "evidenceIds": [
+            "evidence:ollama-clef-flash-library",
+            "evidence:ollama-v0-35-1-release"
+          ]
+        }
+      ],
+      "evidenceIds": [
+        "evidence:cloudflare-clef-flash-card",
+        "evidence:ollama-clef-flash-library",
+        "evidence:llama-cpp-b11371-clef"
+      ]
+    },
+    {
+      "id": "model-profile:coherelabs-north-small-translate-1-0",
+      "modelVersionId": "model:coherelabs-north-small-translate-1-0",
+      "introduction": "پژوهش ترجمهٔ ۵۰زبان با ۲۱۸ میلیارد پارامتر کل و ۲۵ میلیارد فعال؛ کیفیت فارسی مستقل سنجیده نشده است.",
+      "roleSummary": "ترجمهٔ متن؛ وزن‌ها پس از پذیرش شرایط دسترسی قابل دریافت‌اند.",
+      "distinguishingFeatures": [
+        "مجوز CC BY-NC 4.0 و سیاست استفادهٔ Cohere Labs؛ استفادهٔ تجاری مجاز نیست."
+      ],
+      "languageSummary": "فارسی در فهرست ۵۰ زبان ناشر است؛ آزمون کیفیت مستقل ثبت نشده است.",
+      "officialUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+      "runGuides": [
+        {
+          "label": "Transformers source build",
+          "engine": "Transformers",
+          "href": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+          "conditions": [
+            "پذیرش شرایط دسترسی و نسخهٔ Transformers دارای پشتیبانی مدل لازم است."
+          ],
+          "evidenceIds": [
+            "evidence:coherelabs-north-small-translate-card"
+          ]
+        }
+      ],
+      "downloadSearchNote": "دریافت وزن gated و مشروط به پذیرش شرایط است. نمونهٔ رسمی NVFP4 W4A16 روی یک B200 یا دو H100 است؛ کمترین کارت در این نمونه‌ها ۸۰GB دارد و این یک حد نظری برای همهٔ اجراها نیست.",
+      "evidenceIds": [
+        "evidence:coherelabs-north-small-translate-card"
+      ]
+    },
+    {
+      "id": "model-profile:bespokelabs-bespoke-nimble-9b",
+      "modelVersionId": "model:bespokelabs-bespoke-nimble-9b",
+      "introduction": "آداپتر LoRA برای انتخاب ساختاریافته، بولی و امتیازدهی؛ پاسخ آزاد تولید نمی‌کند.",
+      "roleSummary": "به وزن کامل Qwen3.5-9B نیاز دارد؛ فایل ۱۶۵MiB فقط آداپتر است.",
+      "distinguishingFeatures": [
+        "حداکثر ۲۵۵ گزینه برای هر فیلد و ۸۱۹۲ توکن؛ این آداپتر مدل گفت‌وگویی مستقل نیست."
+      ],
+      "languageSummary": "فارسی ارزیابی نشده است.",
+      "officialUrl": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+      "runGuides": [
+        {
+          "label": "PEFT with Qwen3.5-9B",
+          "engine": "PEFT",
+          "href": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+          "conditions": [
+            "پیش از بارگذاری آداپتر، وزن کامل Qwen3.5-9B را دریافت کنید."
+          ],
+          "evidenceIds": [
+            "evidence:bespokelabs-nimble-9b-card"
+          ]
+        }
+      ],
+      "downloadSearchNote": "ابتدا مدل پایهٔ Qwen3.5-9B را دریافت کنید؛ آداپتر حدود ۱۶۵MiB کل حافظهٔ اجرا نیست.",
+      "evidenceIds": [
+        "evidence:bespokelabs-nimble-9b-card"
+      ]
+    },
+    {
+      "id": "model-profile:zai-org-glm-5-3-flash",
+      "modelVersionId": "model:zai-org-glm-5-3-flash",
+      "introduction": "مدل چندوجهی MoE با ۳۲۰ میلیارد پارامتر کل و ۱۸ میلیارد فعال؛ وزن FP8 منتشر شده است.",
+      "roleSummary": "متن و تصویر برای کدنویسی و کارهای عامل‌محور؛ کیفیت فارسی آزموده نشده است.",
+      "distinguishingFeatures": [
+        "GLM-5.3-Flash را با GLM-5.3-BF16 ادغام نکنید؛ حافظه و سرعت واقعی وابسته به پیکربندی است."
+      ],
+      "languageSummary": "فارسی ارزیابی نشده است.",
+      "officialUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "runGuides": [
+        {
+          "label": "Official model card",
+          "engine": "vLLM",
+          "href": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+          "conditions": [
+            "نسخهٔ سازگار backend را ثابت کنید و حافظهٔ اجرای کامل را پیش از استقرار بسنجید."
+          ],
+          "evidenceIds": [
+            "evidence:zai-glm-5-3-flash-card"
+          ]
+        }
+      ],
+      "downloadSearchNote": "طول بافت و حداقل نسخهٔ موتور برای توصیهٔ عملیاتی در این بررسی تثبیت نشده‌اند.",
+      "evidenceIds": [
+        "evidence:zai-glm-5-3-flash-card"
+      ]
     }
   ],
   "modelUseGuidance": [
@@ -225090,9 +227309,64 @@
         "evidence:sep26-gguf-readme-md",
         "evidence:sep26-gguf-license"
       ]
+    },
+    {
+      "id": "artifact-listing:coherelabs-north-small-translate-1-0",
+      "modelVersionId": "model:coherelabs-north-small-translate-1-0",
+      "baseModelRepository": "CohereLabs/North-Small-Translate-1.0",
+      "baseRevision": "e5b9495c5093b828bc72e6ee39af58ac7c52fe1e",
+      "publisher": "Cohere Labs",
+      "authority": "official",
+      "format": "safetensors",
+      "variant": "gated research weights",
+      "repositoryUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+      "filesUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0/tree/e5b9495c5093b828bc72e6ee39af58ac7c52fe1e",
+      "repositoryRevision": "e5b9495c5093b828bc72e6ee39af58ac7c52fe1e",
+      "inventoryStatus": "not-recorded",
+      "files": [],
+      "sizeDescription": "وزن‌های مشروط به پذیرش شرایط پژوهشی؛ فهرست فایل‌ها و حافظهٔ اجرا در این ردیف اندازه‌گیری نشده است.",
+      "verifiedOn": "2026-10-04",
+      "evidenceIds": ["evidence:coherelabs-north-small-translate-card"]
+    },
+    {
+      "id": "artifact-listing:bespokelabs-bespoke-nimble-9b",
+      "modelVersionId": "model:bespokelabs-bespoke-nimble-9b",
+      "baseModelRepository": "bespokelabs/Bespoke-Nimble-9B",
+      "baseRevision": "bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+      "publisher": "Bespoke Labs",
+      "authority": "official",
+      "format": "safetensors",
+      "variant": "LoRA adapter only",
+      "repositoryUrl": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+      "filesUrl": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/tree/bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+      "repositoryRevision": "bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+      "inventoryStatus": "not-recorded",
+      "files": [],
+      "sizeDescription": "این مخزن فقط آداپتر LoRA را دارد؛ برای اجرا وزن مدل پایهٔ Qwen3.5-9B نیز لازم است.",
+      "verifiedOn": "2026-10-04",
+      "evidenceIds": ["evidence:bespokelabs-nimble-9b-card"]
+    },
+    {
+      "id": "artifact-listing:zai-org-glm-5-3-flash",
+      "modelVersionId": "model:zai-org-glm-5-3-flash",
+      "baseModelRepository": "zai-org/GLM-5.3-Flash",
+      "baseRevision": "eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+      "publisher": "Z.ai",
+      "authority": "official",
+      "format": "safetensors",
+      "precision": "FP8",
+      "variant": "GLM-5.3-Flash FP8",
+      "repositoryUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "filesUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash/tree/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+      "repositoryRevision": "eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+      "inventoryStatus": "not-recorded",
+      "files": [],
+      "sizeDescription": "وزن FP8 منتشر شده است؛ اندازهٔ فایل‌ها، حافظهٔ کل استقرار و نسخهٔ سازگار موتور در این بررسی تثبیت نشده‌اند.",
+      "verifiedOn": "2026-10-04",
+      "evidenceIds": ["evidence:zai-glm-5-3-flash-card"]
     }
   ],
-  "updatedOn": "2026-10-01",
+  "updatedOn": "2026-10-04",
   "referenceComparisons": [
     {
       "id": "comparison:qwen-small-nonthinking",

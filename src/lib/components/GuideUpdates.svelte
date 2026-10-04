@@ -7,9 +7,9 @@
   export let guide: UpdateGuide;
   export let locale: UpdateLocale = 'fa';
   const labels = {
-    fa:{title:'خبر تازه',close:'بستن اعلان‌ها',date:'تاریخ ثبت در جدول',open:'مشاهده در جدول',next:'خبر بعدی',remaining:'خبر دیگر',model:'مدل',software:'نرم‌افزار',gpu:'شتاب‌دهنده',server:'سرور'},
-    en:{title:'New update',close:'Close notifications',date:'Date added to the table',open:'View in table',next:'Next update',remaining:'more updates',model:'Model',software:'Software',gpu:'Accelerator',server:'Server'},
-    es:{title:'Nueva actualización',close:'Cerrar notificaciones',date:'Fecha de incorporación a la tabla',open:'Ver en la tabla',next:'Siguiente',remaining:'novedades más',model:'Modelo',software:'Software',gpu:'Acelerador',server:'Servidor'}
+    fa:{title:'خبر تازه',close:'بستن اعلان‌ها',date:'تاریخ ثبت در جدول',open:'مشاهده در جدول',next:'خبر بعدی',remaining:'خبر دیگر',model:'مدل',api:'مدل API',software:'نرم‌افزار',gpu:'شتاب‌دهنده',server:'سرور'},
+    en:{title:'New update',close:'Close notifications',date:'Date added to the table',open:'View in table',next:'Next update',remaining:'more updates',model:'Model',api:'API model',software:'Software',gpu:'Accelerator',server:'Server'},
+    es:{title:'Nueva actualización',close:'Cerrar notificaciones',date:'Fecha de incorporación a la tabla',open:'Ver en la tabla',next:'Siguiente',remaining:'novedades más',model:'Modelo',api:'Modelo API',software:'Software',gpu:'Acelerador',server:'Servidor'}
   };
   $: copy = labels[locale];
   $: numbers = new Intl.NumberFormat(locale);

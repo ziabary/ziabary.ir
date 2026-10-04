@@ -31661,3 +31661,64 @@ artifactListings.push({
     "evidence:sep26-gguf-license"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:coherelabs-north-small-translate-1-0",
+  "modelVersionId": "model:coherelabs-north-small-translate-1-0",
+  "baseModelRepository": "CohereLabs/North-Small-Translate-1.0",
+  "baseRevision": "e5b9495c5093b828bc72e6ee39af58ac7c52fe1e",
+  "publisher": "Cohere Labs",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "gated research weights",
+  "repositoryUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+  "filesUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0/tree/e5b9495c5093b828bc72e6ee39af58ac7c52fe1e",
+  "repositoryRevision": "e5b9495c5093b828bc72e6ee39af58ac7c52fe1e",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "وزن‌های مشروط به پذیرش شرایط پژوهشی؛ فهرست فایل‌ها و حافظهٔ اجرا در این ردیف اندازه‌گیری نشده است.",
+  "verifiedOn": "2026-10-04",
+  "evidenceIds": [
+    "evidence:coherelabs-north-small-translate-card"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:bespokelabs-bespoke-nimble-9b",
+  "modelVersionId": "model:bespokelabs-bespoke-nimble-9b",
+  "baseModelRepository": "bespokelabs/Bespoke-Nimble-9B",
+  "baseRevision": "bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+  "publisher": "Bespoke Labs",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "LoRA adapter only",
+  "repositoryUrl": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+  "filesUrl": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/tree/bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+  "repositoryRevision": "bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "این مخزن فقط آداپتر LoRA را دارد؛ برای اجرا وزن مدل پایهٔ Qwen3.5-9B نیز لازم است.",
+  "verifiedOn": "2026-10-04",
+  "evidenceIds": [
+    "evidence:bespokelabs-nimble-9b-card"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:zai-org-glm-5-3-flash",
+  "modelVersionId": "model:zai-org-glm-5-3-flash",
+  "baseModelRepository": "zai-org/GLM-5.3-Flash",
+  "baseRevision": "eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+  "publisher": "Z.ai",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "FP8",
+  "variant": "GLM-5.3-Flash FP8",
+  "repositoryUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+  "filesUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash/tree/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+  "repositoryRevision": "eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+  "inventoryStatus": "not-recorded",
+  "files": [],
+  "sizeDescription": "وزن FP8 منتشر شده است؛ اندازهٔ فایل‌ها، حافظهٔ کل استقرار و نسخهٔ سازگار موتور در این بررسی تثبیت نشده‌اند.",
+  "verifiedOn": "2026-10-04",
+  "evidenceIds": [
+    "evidence:zai-glm-5-3-flash-card"
+  ]
+});

@@ -73,6 +73,71 @@
     "when": null
   },
   {
+    "id": "decisionTask",
+    "step": 0,
+    "when": "decisionTask",
+    "title": [
+      "چه نوع خروجی از این کار می‌خواهید؟",
+      "What should this task return?",
+      "¿Qué debe devolver esta tarea?"
+    ],
+    "why": [
+      "مدل‌های تصمیم فقط از میان گزینه‌های ازپیش‌تعریف‌شده انتخاب یا امتیاز می‌دهند.",
+      "Decision models only select or score predefined options.",
+      "Los modelos de decisión solo eligen o puntúan opciones predefinidas."
+    ],
+    "help": [
+      "برای دسته‌بندی، مسیریابی، امتیازدهی و کنترل یک عمل Agent گزینهٔ مربوط را انتخاب کنید. استخراج نام، عدد یا متن آزاد به مدل دیگری نیاز دارد.",
+      "Choose classification, routing, scoring or an agent-action check. Extracting names, numbers or free text needs another model.",
+      "Elija clasificación, enrutamiento, puntuación o control de una acción de agente. Extraer nombres, cifras o texto libre requiere otro modelo."
+    ],
+    "kind": "select",
+    "options": [
+      {
+        "value": "classify",
+        "label": [
+          "دسته‌بندی با گزینه‌های مشخص",
+          "Classify into fixed options",
+          "Clasificar en opciones fijas"
+        ]
+      },
+      {
+        "value": "route",
+        "label": [
+          "مسیریابی به یکی از مقصدهای مشخص",
+          "Route to a fixed destination",
+          "Enrutar a un destino fijo"
+        ]
+      },
+      {
+        "value": "score",
+        "label": [
+          "امتیازدهی روی مقیاس مشخص",
+          "Score on a fixed scale",
+          "Puntuar en una escala fija"
+        ]
+      },
+      {
+        "value": "agent-control",
+        "label": [
+          "بررسی یک عمل Agent پیش از اجرا",
+          "Check an agent action before execution",
+          "Comprobar una acción de agente antes de ejecutarla"
+        ]
+      },
+      {
+        "value": "other",
+        "label": [
+          "استخراج مقدار یا اجرای کار در سامانه",
+          "Extract a value or act in a system",
+          "Extraer un valor o actuar en un sistema"
+        ]
+      }
+    ],
+    "unit": null,
+    "article": "size"
+  },
+  {
     "id": "writingTask",
     "step": 0,
     "when": "writing",
@@ -6569,9 +6634,9 @@
       "¿Qué ejemplo de coste API comparamos?"
     ],
     "why": [
-      "تعرفهٔ رسمی سنگاپور برای مقایسه است؛ دسترسی حساب شما و اجازهٔ خروج داده باید جدا برقرار باشد.",
-      "Official Singapore tariffs are comparison examples; account access and data permission are separate requirements.",
-      "Tarifas oficiales de Singapur como ejemplos; acceso y permiso de datos son requisitos aparte."
+      "تعرفه‌های رسمی فقط برای مقایسه‌اند؛ دسترسی حساب، منطقه و اجازهٔ خروج داده باید جدا بررسی شوند.",
+      "Official tariffs are comparison examples; account access, region and data permission are separate requirements.",
+      "Las tarifas oficiales son ejemplos; el acceso, la región y el permiso de datos se comprueban por separado."
     ],
     "help": [
       "خروجی متوسط باید توکن تفکرِ قابل‌صورتحساب را هم شامل شود؛ سقف خروجی را جای میانگین ننویسید.",
@@ -6582,6 +6647,14 @@
     "unit": null,
     "article": "cost",
     "options": [
+      {
+        "value": "openai-gpt-6-1-sol-standard",
+        "label": [
+          "GPT-6.1 Sol · OpenAI Standard",
+          "GPT-6.1 Sol · OpenAI Standard",
+          "GPT-6.1 Sol · OpenAI Standard"
+        ]
+      },
       {
         "value": "qwen37-plus-singapore",
         "label": [

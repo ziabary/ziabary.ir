@@ -7,6 +7,21 @@ const memory=(model,a)=>w.wizardMemory(model,a,m.research.research.artifacts,m.r
 const base={task:'writing',writingTask:'summary',sources:'provided',sourceLanguage:'en',outputLanguage:'en',inputSize:'long',mode:'interactive',users:'5',concurrency:'1',policy:'internal',deployment:'self',hardware:'none',currency:'million-toman',usdRate:'230000'};
 const result=(changes={},locale='fa')=>w.buildWizardResult(repo,{...base,...changes},locale,memory);
 const get=(r,id)=>r.decisions.find(d=>d.id===id);
+test('North Translate keeps separate 16K input and output limits',()=>{
+ const id='model:coherelabs-north-small-translate-1-0';
+ const answers={writingTask:'translation',sourceLanguage:'en',outputLanguage:'fa',licenseUse:'research',inputTokens:'16384',outputTokens:'16384'};
+ const within=result(answers).reviews.find(c=>c.model.id===id);
+ assert.ok(within);assert.ok(!within.reasons.some(reason=>/سقف مستند|ظرفیت معمول/.test(reason)));
+ const tooMuchInput=result({...answers,inputTokens:'16385'}).reviews.find(c=>c.model.id===id);
+ const tooMuchOutput=result({...answers,outputTokens:'16385'}).reviews.find(c=>c.model.id===id);
+ assert.equal(tooMuchInput.status,'excluded');assert.equal(tooMuchOutput.status,'excluded');
+ assert.ok(tooMuchInput.reasons.some(reason=>reason.includes('ورودی از سقف')));
+ assert.ok(tooMuchOutput.reasons.some(reason=>reason.includes('خروجی از سقف')));
+ for(const vram of ['24','48']){
+  const fixed=result({...answers,inputTokens:'1024',outputTokens:'1024',hardware:'gpu',vram,upgrade:'existing'}).reviews.find(c=>c.model.id===id);
+  assert.equal(fixed.status,'excluded');assert.ok(fixed.reasons.some(reason=>reason.includes('مسیر اجرای تأییدشده')));
+ }
+});
 test('no equipment differs from unspecified equipment; zero budgets expose a real funding conflict',()=>{
  assert.ok(get(result(),'provision-pilot'));assert.ok(get(result({hardware:'unknown'}),'inspect-equipment'));
  assert.equal(get(result({capex:'0',monthly:'0'}),'no-procurement-budget').status,'not-feasible');
@@ -64,10 +79,12 @@ test('new metadata-backed model is assessed and selectable without a name list',
  for(const key of ['modelProfiles','modelUseGuidance','applicationAssessments','publishedEvaluations','artifacts','artifactListings'])copy[key].push(...copy[key].filter(x=>x.modelVersionId===old).map((x,i)=>({...structuredClone(x),id:`${key}:future-${i}`,modelVersionId:newId,...(key==='artifactListings'?{totalBytes:1024}:{} )})));
  const r=w.buildWizardResult(copy,base,'fa');assert.ok(r.reviews.find(c=>c.model.id===newId));assert.ok(r.candidates.some(c=>c.model.id===newId));
 });
-test('Qwen3.6 has pinned artifacts, hybrid attention and native/extended context; all models have a review',()=>{
- const r=result();assert.equal(r.reviews.length,repo.models.length);
+test('Qwen3.6 has pinned artifacts and context; local reviews exclude commercial-service-only models',()=>{
+ const r=result(),reviewed=new Set(r.reviews.map(item=>item.model.id));
+ assert.ok(repo.models.filter(model=>model.accessMode!=='commercial-service').every(model=>reviewed.has(model.id)));
+ assert.ok(repo.models.filter(model=>model.accessMode==='commercial-service').every(model=>!reviewed.has(model.id)));
  for(const name of ['Qwen3.6-27B','Qwen3.6-35B-A3B']){const model=repo.models.find(m=>m.exactName===name);assert.ok(model);assert.match(model.version,/^[a-f0-9]{40}$/);assert.equal(model.declaredContext.value,262144);assert.equal(model.contextExtension.capacity.value,1010000);assert.equal(model.attentionArchitecture,'hybrid');assert.ok(repo.artifactListings.some(a=>a.modelVersionId===model.id&&a.totalBytes>40e9));assert.ok(r.reviews.find(c=>c.model.id===model.id));}
- const api=JSON.parse(fs.readFileSync('data/llm/api-models.json'));assert.equal(api.length,4);assert.ok(api.every(a=>a.availability==='api-available'&&a.selfHosting==='not-verified'));assert.ok(!r.candidates.some(c=>c.model.exactName.startsWith('Qwen3.7')));
+ const api=JSON.parse(fs.readFileSync('data/llm/api-models.json'));assert.equal(api.length,5);assert.ok(api.every(a=>a.availability==='api-available'));assert.ok(api.filter(a=>a.provider==='Alibaba Cloud Model Studio').every(a=>a.selfHosting==='not-verified'));assert.ok(api.find(a=>a.id==='gpt-6.1-sol')?.catalogOnly);assert.ok(!r.candidates.some(c=>c.model.exactName.startsWith('Qwen3.7')));
 });
 test('mixed language is not Persian; same logic across locales and existing license policy retained',()=>{
  assert.deepEqual(w.workloadLanguages({...base,sourceLanguage:'mixed',outputLanguage:'multi'}),['fa','en']);
@@ -91,6 +108,18 @@ test('API estimate uses explicit dated regional tariff and billed means, with in
  assert.equal(w.buildWizardResult(repo,{...a,maxTokens:'unknown'},'en').apiCost,undefined);
  assert.equal(w.buildWizardResult(repo,{...a,averageOutputTokens:'unknown',outputTokens:'2000'},'en').apiCost,undefined);
  assert.equal(w.buildWizardResult(repo,{...a,policy:'internal'},'en').apiCost,undefined);
+});
+test('GPT-6.1 Sol prices the full request at the long-context tier above 272K input tokens',()=>{
+ const scenario={task:'writing',writingTask:'summary',policy:'public',deployment:'api',apiCostExample:'openai-gpt-6-1-sol-standard',mode:'interactive',requests:'1',workdays:'1',averageInputTokens:'1000',averageOutputTokens:'100'};
+ for(const locale of ['fa','en','es']){
+  const short=result({...scenario,maxTokens:'272000'},locale),long=result({...scenario,maxTokens:'272001'},locale);
+  assert.equal(short.apiCost.usd,0.003);
+  assert.equal(long.apiCost.usd,0.0055);
+  assert.equal(short.apiCost.tier.inputPerMillion,2);
+  assert.equal(long.apiCost.tier.inputPerMillion,4);
+  assert.equal(long.apiCost.tier.outputPerMillion,15);
+  assert.equal(get(long,'api-example-cost').assumptions.length,2);
+ }
 });
 test('scan compares OCR and vision; multilingual answers remain explicit and translation has its own acceptance',()=>{
  assert.ok(get(result({format:'scan'}),'scan-routes'));

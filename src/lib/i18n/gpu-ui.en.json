@@ -133,6 +133,7 @@
   "مقایسه": "Compare",
   "جزئیات": "Details",
   "منبع رسمی ↗": "Official source ↗",
+  "ارجاع ناکافی ↗": "Insufficient reference ↗",
   "مقدار عمومی ندارد": "No public figure",
   "مقدار مستقل ندارد": "No standalone figure",
   "dense / قالب سازنده": "dense / vendor format",
@@ -282,5 +283,6 @@
   "PCIe Switch": "PCIe Switch",
   "Baseboard / NVLink": "Baseboard / NVLink",
   "Matrix Performance": "Matrix Performance",
-  "GPU یکپارچه": "Integrated GPUs"
+  "GPU یکپارچه": "Integrated GPUs",
+  "تأییدنشده": "Unverified"
 }

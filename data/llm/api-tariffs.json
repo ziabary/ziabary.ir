@@ -1,5 +1,19 @@
 [
   {
+    "id": "openai-gpt-6-1-sol-standard",
+    "model": "gpt-6.1-sol",
+    "provider": "OpenAI",
+    "region": "OpenAI API / Standard",
+    "reviewedOn": "2026-10-03",
+    "currency": "USD",
+    "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "longContextThresholdInputTokens": 272000,
+    "tiers": [
+      {"maxInputTokens": 272000, "inputPerMillion": 2, "cachedInputPerMillion": 0.1, "cacheWritePerMillion": 2.5, "outputPerMillion": 10},
+      {"maxInputTokens": 1050000, "inputPerMillion": 4, "cachedInputPerMillion": 0.2, "cacheWritePerMillion": 5, "outputPerMillion": 15}
+    ]
+  },
+  {
     "id": "qwen37-plus-singapore",
     "model": "qwen3.7-plus-2026-05-26",
     "provider": "Alibaba Cloud Model Studio",

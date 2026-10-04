@@ -1,5 +1,5 @@
 export type GpuVendor = 'NVIDIA' | 'AMD' | 'Intel' | 'Huawei' | 'Google' | 'AWS' | 'Tenstorrent' | 'Qualcomm' | 'Cerebras' | 'Groq';
-export type GpuStatus = 'current' | 'system-only' | 'announced' | 'legacy';
+export type GpuStatus = 'current' | 'system-only' | 'announced' | 'legacy' | 'unverified';
 export type GpuClass = 'frontier' | 'datacenter' | 'server-pcie' | 'workstation' | 'consumer';
 export type GpuWorkload = 'آموزش مدل‌های بزرگ' | 'استنتاج سازمانی' | 'هوش مصنوعی محلی' | 'HPC' | 'گرافیک و رندر' | 'چندمستاجری';
 
@@ -70,9 +70,9 @@ export type GpuBaseRecord = {
 export type GpuRecord = GpuBaseRecord & GpuComputeSpec;
 
 export const gpuLastReviewed = {
-  iso: '2026-10-03',
-  fa: '۱۱ مهر ۱۴۰۵',
-  gregorian: '3 October 2026'
+  iso: '2026-10-04',
+  fa: '۱۲ مهر ۱۴۰۵',
+  gregorian: '4 October 2026'
 };
 
 const rows: GpuBaseRecord[] = [
@@ -336,11 +336,11 @@ const rows: GpuBaseRecord[] = [
     sourceUrl: 'https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/', sourceLabel: 'NVIDIA Blackwell Ultra Architecture'
   },
   {
-    id: 'nvidia-b200', vendor: 'NVIDIA', model: 'Blackwell B200', status: 'current', gpuClass: 'frontier', architecture: 'Blackwell', year: 2024,
-    memoryGB: 192, memoryDisplay: '۱۸۰ تا ۱۹۲', memoryType: 'HBM3e', bandwidthTBs: 8, powerW: 1200, formFactor: 'SXM / HGX', hostInterface: 'HGX / DGX B200', cooling: 'مایع',
+    id: 'nvidia-b200', vendor: 'NVIDIA', model: 'HGX B200 180GB (1000W)', status: 'current', gpuClass: 'frontier', architecture: 'Blackwell', year: 2024,
+    memoryGB: 180, memoryType: 'HBM3e', bandwidthTBs: 7.7, powerW: 1000, formFactor: 'SXM6 / HGX', hostInterface: 'HGX B200', cooling: 'هوا یا مایع؛ وابسته به پلتفرم',
     compute: 'اعداد AI با دقت و sparsity تغییر می‌کنند؛ با FP16/BF16 متراکم نسل قبل یکسان فرض نشود.', interconnect: 'NVLink نسل پنجم', partitioning: 'MIG', software: 'CUDA / NVIDIA AI Enterprise',
-    workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC', 'چندمستاجری'], bestFit: 'خوشه‌های Blackwell برای آموزش و استنتاج در مقیاس بالا.', caution: 'ظرفیت قابل‌استفاده با پیکربندی سیستم فرق می‌کند؛ DGX B200 مقدار ۱۸۰GB را نشان می‌دهد.', serverReady: true,
-    sourceUrl: 'https://www.nvidia.com/en-us/data-center/dgx-b200/', sourceLabel: 'NVIDIA DGX B200'
+    workloads: ['آموزش مدل‌های بزرگ', 'استنتاج سازمانی', 'HPC', 'چندمستاجری'], bestFit: 'خوشه‌های Blackwell برای آموزش و استنتاج در مقیاس بالا.', caution: 'این ردیف فقط گونهٔ HGX B200 با ۱۸۰GB و ۱۰۰۰W است؛ مشخصات گونه‌های دیگر را به آن تعمیم ندهید.', serverReady: true,
+    sourceUrl: 'https://lenovopress.lenovo.com/lp2226-thinksystem-nvidia-b200-180gb-1000w-gpu', sourceLabel: 'Lenovo HGX B200 180GB 1000W'
   },
   {
     id: 'amd-mi355x', vendor: 'AMD', model: 'Instinct MI355X', status: 'current', gpuClass: 'frontier', architecture: 'CDNA 4', year: 2025,
@@ -404,6 +404,14 @@ const rows: GpuBaseRecord[] = [
     compute: 'RTX و Tensor Core Blackwell؛ AI TOPS بازاریابی را جایگزین بنچمارک مدل نکنید.', interconnect: 'PCIe', partitioning: 'vGPU', software: 'CUDA / NVIDIA AI Enterprise',
     workloads: ['استنتاج سازمانی', 'گرافیک و رندر', 'چندمستاجری'], bestFit: 'ترکیب رندر، VDI و استنتاج با ۹۶GB در PCIe.', caution: 'NVLink ندارد؛ مقیاس چند GPU به PCIe و شبکه متکی است.', serverReady: true,
     sourceUrl: 'https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/', sourceLabel: 'NVIDIA RTX PRO 6000 Blackwell Server Edition'
+  },
+  {
+    id: 'nvidia-rtx-pro-4500-server', vendor: 'NVIDIA', model: 'RTX PRO 4500 Blackwell Server Edition', status: 'current', gpuClass: 'server-pcie', architecture: 'Blackwell', year: 2026,
+    memoryGB: 32, memoryType: 'GDDR7', bandwidthTBs: 0.8, powerW: 165, formFactor: 'PCIe FHFL تک‌اسلات؛ پسیو', hostInterface: 'PCIe 5.0 x16', cooling: 'پسیو سروری',
+    compute: 'شتاب‌دهندهٔ Blackwell برای استنتاج، گرافیک و VDI؛ نرخ‌های محاسباتی به آزمون بار واقعی نیاز دارند.', interconnect: 'PCIe؛ بدون NVLink', partitioning: 'تا ۲ بخش MIG با ۱۶GB برای هر بخش', software: 'CUDA / NVIDIA AI Enterprise',
+    workloads: ['استنتاج سازمانی', 'گرافیک و رندر', 'چندمستاجری'], bestFit: 'استنتاج و VDI در سرور با محدودیت فضا و توان.', caution: 'پشتیبانی تعداد کارت، دما و کابل برق به QPL و BOM هر سرور وابسته است؛ گونهٔ Server را با Workstation یکی نگیرید.', serverReady: true,
+    sourceUrl: 'https://www.nvidia.com/en-us/data-center/rtx-pro-4500-blackwell-server-edition/', sourceLabel: 'NVIDIA RTX PRO 4500 Blackwell Server Edition', productKind: 'کارت', sourceTier: 'سازنده',
+    dataDisclosure: { memoryGB: 'published', bandwidthTBs: 'published', powerW: 'published' }
   },
   {
     id: 'nvidia-h100-sxm', vendor: 'NVIDIA', model: 'H100 SXM', status: 'current', gpuClass: 'datacenter', architecture: 'Hopper', year: 2022,
@@ -867,29 +875,30 @@ const rows: GpuBaseRecord[] = [
       "id": "nvidia-rtx4090x",
       "vendor": "NVIDIA",
       "model": "GeForce RTX 4090 X",
-      "status": "current",
+      "status": "unverified",
       "gpuClass": "consumer",
       "architecture": "Ada Lovelace",
       "year": 2025,
-      "memoryGB": 48,
+      "memoryGB": 0,
       "memoryType": "GDDR6X",
-      "bandwidthTBs": 1.008,
-      "powerW": 425,
+      "bandwidthTBs": 0,
+      "powerW": null,
       "formFactor": "PCIe؛ وابسته به سازنده و بازار چین",
       "hostInterface": "PCIe 4.0 x16",
       "cooling": "اکتیو مصرفی",
-      "compute": "۱۴٬۵۹۲ CUDA Core و ۴۵۶ Tensor Core؛ نسخهٔ محدودشدهٔ بازار چین.",
+      "compute": "نام و مشخصات این گونه در منبع رسمی ارجاع‌شده تأیید نشده‌اند.",
       "interconnect": "PCIe؛ بدون NVLink",
       "partitioning": "بدون MIG/vGPU رسمی؛ اشتراک در سطح نرم‌افزار",
       "software": "CUDA / cuDNN / TensorRT / PyTorch",
       "workloads": ["آموزش مدل‌های بزرگ", "استنتاج سازمانی", "هوش مصنوعی محلی", "گرافیک و رندر", "چندمستاجری"],
-      "bestFit": "جایگزین ۴۸GB Ada در بازارهایی که RTX 4090 استاندارد محدود است.",
-      "caution": "SKU منطقه‌ای است؛ پارت‌نامبر، بایوس، ابعاد و خدمات سازندهٔ کارت باید جداگانه کنترل شود.",
+      "bestFit": "نیازمند سند سازنده و پارت‌نامبر؛ توصیهٔ خرید معلق است.",
+      "caution": "هویت RTX 4090 X و ادعاهای ۴۸GB/۴۲۵W با منبع فعلی تأیید نشده‌اند؛ این مورد در مقایسهٔ عددی و پیشنهاد خرید قابل اتکا نیست. با RTX 4090 D یکی نیست.",
       "serverReady": false,
       "sourceUrl": "https://developer.nvidia.com/vulkan-driver",
-      "sourceLabel": "NVIDIA supported GPU list — GeForce RTX 4090 X",
+      "sourceLabel": "NVIDIA Vulkan driver list — هویت این گونه را تأیید نمی‌کند",
       "productKind": "کارت",
-      "sourceTier": "مستندات فنی سازنده"
+      "sourceTier": "مستندات فنی سازنده",
+      "dataDisclosure": { "memoryGB": "not-published", "bandwidthTBs": "not-published", "powerW": "not-published" }
     },
     {
       "id": "nvidia-l40",

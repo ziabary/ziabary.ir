@@ -57,7 +57,6 @@ export const isLocal=(a:WizardAnswers)=>['self','managed','compare'].includes(a.
 export const usesTools=(a:WizardAnswers)=>a.task==='operations'||hasSource(a,'live')||a.task==='coding'&&['agent','security'].includes(a.codingMode);
 export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,locale:LlmLocale) {
  if(q.id==='workdays'&&a.mode==='batch'&&a.batchFrequency!=='daily')return false;
- if(q.id==='apiCostExample'&&locale==='fa')return false;
  const archive=hasSource(a,'archive'),interactive=['interactive','both'].includes(a.mode);
  switch(q.when){
   case 'files':return hasSource(a,'provided')||archive;
@@ -65,6 +64,7 @@ export function visibleQuestion(q:typeof questions[number],a:WizardAnswers,local
   case 'existing':return archive&&a.existing==='yes';
   case 'coding':return a.task==='coding';
   case 'writing':return a.task==='writing';
+  case 'decisionTask':return ['extraction','operations'].includes(a.task);
   case 'loadDefinition':return interactive&&!!positive(a.concurrency);
   case 'multilingual':return ['mixed','multi','other'].includes(a.sourceLanguage)||['mixed','multi','other'].includes(a.outputLanguage);
   case 'usageCost':return !!positive(a.requests)||['batch','both'].includes(a.mode)&&!!positive(a.batchCount);

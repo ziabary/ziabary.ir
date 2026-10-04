@@ -1,5 +1,5 @@
 <script lang="ts">
-  import apiModels from '../../../data/llm/api-models.json';
+  import { apiModels } from '$lib/llm/api-models';
   import { localized } from '$lib/llm/wizard-core';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
@@ -44,6 +44,7 @@
 
   const numbers = new Intl.NumberFormat(numberFormat);
   let query = '';
+  let apiProvider = '';
   let selections: FilterSelections = {};
   let sortKey = '';
   let sortDirection: SortDirection = 'asc';
@@ -73,7 +74,8 @@
   $: advancedFilters = effectiveFilters.filter((filter) => filter.level === 'advanced');
   $: activeCount = activeFilterCount(selections) + (query.trim() ? 1 : 0);
   $: filteredRows = filterLlmRows(rows, effectiveFilters, selections, query).filter(row => !onlySelected || selectedIds.includes(row.id));
-  $: apiMatches = config.id==='model-catalog' ? apiModels.filter(m=>!query.trim()||`${m.name} ${m.id} ${m.provider} ${m.snapshot}`.toLowerCase().includes(query.trim().toLowerCase())):[];
+  $: apiProviders = [...new Set(apiModels.map(model => model.provider))].sort();
+  $: apiMatches = config.id==='model-catalog' ? apiModels.filter(m=>(!apiProvider || m.provider===apiProvider) && (!query.trim()||`${m.name} ${m.id} ${m.provider} ${m.snapshot}`.toLowerCase().includes(query.trim().toLowerCase()))):[];
   $: visibleRows = sortLlmRows(filteredRows, sortKey, sortDirection);
   $: comparedRows = rows.filter((row) => selectedIds.includes(row.id));
   $: activePreset = config.presets?.find((item) => item.id === presetId);
@@ -320,10 +322,24 @@
       <button class="reset-columns" type="button" on:click={() => selectedColumns = null}>{t('LlmDataView.0955')}</button>
     </div>
   {/if}
-  {#if apiMatches.length}
-    <details class="api-models" open={!!query.trim()}><summary>{localized(['مدل‌های عرضه‌شده از طریق API','Models available through APIs','Modelos disponibles por API'],locale)} · {numbers.format(apiMatches.length)}</summary>
-      <p>{localized(['برای این نسخه‌ها وزن قابل نصب در این بررسی تأیید نشده است؛ آن‌ها در پیشنهاد اجرای محلی وارد نمی‌شوند.','Self-hostable weights were not verified in this review; these releases are excluded from local deployment suggestions.','No se verificaron pesos instalables en esta revisión; estas versiones no se recomiendan para instalación local.'],locale)}</p>
-      {#each apiMatches as model}<article><strong><bdi>{model.name}</bdi></strong> · <bdi>{model.snapshot}</bdi><p>{model.provider} · API · <bdi>{numbers.format(model.contextTokens??model.inputLimitTokens??0)}</bdi> {model.contextTokens?localized(['توکن زمینه','context tokens','tokens de contexto'],locale):localized(['توکن ورودی','input tokens','tokens de entrada'],locale)} · <bdi>{model.reviewedOn}</bdi></p><a href={model.sourceUrl} target="_blank" rel="noopener">{localized(['منبع رسمی و وضعیت عرضه','Official source and availability','Fuente oficial y disponibilidad'],locale)} ↗</a></article>{/each}
+  {#if config.id === 'model-catalog'}
+    <details class="api-models" open={!!query.trim() || !!apiProvider}><summary>{localized(['مدل‌های عرضه‌شده از طریق API','Models available through APIs','Modelos disponibles por API'],locale)} · {numbers.format(apiMatches.length)}</summary>
+      <p>{localized(['این خدمت‌ها برای استفاده از API فهرست شده‌اند و وارد تخمین حافظه یا پیشنهاد اجرای محلی نمی‌شوند.','These API services are excluded from local memory estimates and self-hosting suggestions.','Estos servicios API quedan fuera de las estimaciones de memoria y las recomendaciones de ejecución local.'],locale)}</p>
+      <label class="api-provider-filter"><span>{localized(['ارائه‌دهنده','Provider','Proveedor'],locale)}</span><select bind:value={apiProvider}><option value="">{localized(['همهٔ ارائه‌دهندگان','All providers','Todos los proveedores'],locale)}</option>{#each apiProviders as provider}<option value={provider}>{provider}</option>{/each}</select></label>
+      {#each apiMatches as model}
+        <article>
+          <strong><bdi>{model.name}</bdi></strong> · <bdi>{model.snapshot}</bdi>
+          <p>{model.provider} · API · <bdi>{numbers.format(model.contextTokens??model.inputLimitTokens??0)}</bdi> {model.contextTokens?localized(['توکن زمینه','context tokens','tokens de contexto'],locale):localized(['توکن ورودی','input tokens','tokens de entrada'],locale)}{model.outputLimitTokens ? ` · ${localized(['حداکثر خروجی','maximum output','salida máxima'],locale)} ${numbers.format(model.outputLimitTokens)}` : ''} · <bdi>{model.reviewedOn}</bdi></p>
+          {#if model.pricing}
+            <p>{localized(['ورودی: متن و تصویر ← خروجی: متن · وزن قابل دریافت ندارد · فاین‌تیون پشتیبانی نمی‌شود.','Input: text and image → output: text · no downloadable weights · fine-tuning unsupported.','Entrada: texto e imagen → salida: texto · sin pesos descargables · sin ajuste fino.'],locale)}</p>
+            <p>{localized(['ابزارهای Responses API:','Responses API tools:','Herramientas de Responses API:'],locale)} <bdi>{model.tools?.join(' · ')}</bdi></p>
+            <p>{localized(['تعرفهٔ استاندارد هر یک میلیون توکن؛ ورودی / ورودی کش‌شده / نوشتن کش / خروجی:','Standard USD per 1M tokens; input / cached input / cache write / output:','USD estándar por millón de tokens; entrada / entrada en caché / escritura de caché / salida:'],locale)} <bdi>${model.pricing.short.input} / ${model.pricing.short.cachedInput} / ${model.pricing.short.cacheWrite} / ${model.pricing.short.output}</bdi></p>
+            <p class="api-caveat">{localized(['اگر ورودی درخواست از ۲۷۲٬۰۰۰ توکن بیشتر شود، نرخ کل همان درخواست به‌ترتیب','If a request exceeds 272,000 input tokens, rates for its entire input and output become','Si una solicitud supera los 272.000 tokens de entrada, las tarifas de toda la solicitud pasan a ser'],locale)} <bdi>${model.pricing.long.input} / ${model.pricing.long.cachedInput} / ${model.pricing.long.cacheWrite} / ${model.pricing.long.output}</bdi>. {localized(['هزینهٔ ابزارها جداست؛ کیفیت فارسی و ادعاهای عملکرد نیازمند آزمون مستقل‌اند.','Tool fees are separate; Persian quality and performance claims need independent evaluation.','Las herramientas se cobran aparte; la calidad en persa y el rendimiento requieren evaluación independiente.'],locale)}</p>
+          {/if}
+          <a href={model.sourceUrl} target="_blank" rel="noopener">{localized(['منبع رسمی و وضعیت عرضه','Official source and availability','Fuente oficial y disponibilidad'],locale)} ↗</a>
+        </article>
+      {/each}
+      {#if !apiMatches.length}<p>{localized(['مدلی با این جست‌وجو و ارائه‌دهنده پیدا نشد.','No API model matches this search and provider.','Ningún modelo API coincide con la búsqueda y el proveedor.'],locale)}</p>{/if}
     </details>
   {/if}
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (Keyboard users need to scroll wide data regions.) -->
@@ -485,6 +501,9 @@
 
 <style>
 .api-models{margin-block:16px;padding:16px;border:1px solid var(--line);border-radius:8px}.api-models article{padding-block:12px;border-top:1px solid var(--line)}.api-models p{font-size:14px;line-height:1.8}.api-models summary{cursor:pointer;font-weight:700}
+  .api-provider-filter{display:grid;gap:5px;max-width:260px;margin:14px 0;color:var(--muted);font-size:12px}
+  .api-provider-filter select{min-height:38px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:inherit}
+  .api-caveat{padding:8px 11px;border-inline-start:3px solid var(--teal);background:var(--soft)}
   .wizard-shortlist{padding:12px 14px;border:1px solid var(--line);border-radius:7px;background:var(--soft);font-size:13px}.wizard-shortlist button{border:0;background:transparent;color:var(--link-ink);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
   .filter-logo{width:20px;height:20px;min-width:20px;object-fit:contain;padding:2px;background:white;border-radius:4px;vertical-align:middle;margin-inline-end:6px}
   .official-model{display:block;margin-top:8px;font-size:10px;color:var(--link-ink)}.model-start a{font-size:11px;color:var(--link-ink)}

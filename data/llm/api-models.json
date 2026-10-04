@@ -1,5 +1,36 @@
 [
   {
+    "id": "gpt-6.1-sol",
+    "name": "GPT-6.1 Sol",
+    "provider": "OpenAI",
+    "snapshot": "gpt-6.1-sol",
+    "input": ["text", "image"],
+    "output": ["text"],
+    "contextTokens": 1050000,
+    "outputLimitTokens": 128000,
+    "availability": "api-available",
+    "selfHosting": "not-available",
+    "catalogOnly": true,
+    "reviewedOn": "2026-10-03",
+    "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "platformUrl": "https://developers.openai.com/api/docs/pricing",
+    "tasks": ["general", "coding", "tools"],
+    "languages": [],
+    "regions": ["us", "eu"],
+    "contract": "Responses API for tools; Chat Completions without tools",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "tools": ["MCP", "computer use", "code interpreter", "file search", "web search"],
+    "fineTuning": false,
+    "persianEvidence": "not-independently-evaluated",
+    "pricing": {
+      "currency": "USD",
+      "perTokens": 1000000,
+      "longContextThresholdInputTokens": 272000,
+      "short": {"input": 2, "cachedInput": 0.1, "cacheWrite": 2.5, "output": 10},
+      "long": {"input": 4, "cachedInput": 0.2, "cacheWrite": 5, "output": 15}
+    }
+  },
+  {
     "id": "qwen3.7-plus",
     "name": "Qwen3.7-Plus",
     "provider": "Alibaba Cloud Model Studio",

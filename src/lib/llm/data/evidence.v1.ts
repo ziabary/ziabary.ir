@@ -43199,3 +43199,274 @@ evidence.push({
   "limitations": [],
   "presentationNotes": []
 });
+evidence.push({
+  "id": "evidence:ollama-v0-35-1-release",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1",
+  "title": "Ollama v0.35.1",
+  "organization": "Ollama",
+  "publishedOn": "2026-09-29",
+  "accessedOn": "2026-10-04",
+  "versionRevisionOrCommit": "v0.35.1",
+  "locator": "Release notes; 2026-09-29T20:14:00Z",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Stable release; Clef and Clef Flash text and image input through /v1/systemone; decision capability",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-clef-library",
+  "url": "https://ollama.com/library/clef",
+  "title": "Ollama Clef model library",
+  "organization": "Ollama",
+  "publishedOn": "2026-10-01",
+  "accessedOn": "2026-10-04",
+  "locator": "Model library / Readme / API",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Clef 27B, images, choice/noul/score and v0.35.1+",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-clef-flash-library",
+  "url": "https://ollama.com/library/clef-flash",
+  "title": "Ollama Clef Flash model library",
+  "organization": "Ollama",
+  "publishedOn": "2026-10-01",
+  "accessedOn": "2026-10-04",
+  "locator": "Model library / Readme",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Clef Flash 9B, images and v0.35.1+",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:cloudflare-clef-card",
+  "url": "https://huggingface.co/Cloudflare/clef",
+  "title": "Cloudflare Clef model card",
+  "organization": "Cloudflare",
+  "publishedOn": "2026-10-01",
+  "accessedOn": "2026-10-04",
+  "locator": "Model card / Clef / License",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "27B multimodal decision model; Apache-2.0; typed output, no free-form generation",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:cloudflare-clef-flash-card",
+  "url": "https://huggingface.co/Cloudflare/clef-flash",
+  "title": "Cloudflare Clef Flash model card",
+  "organization": "Cloudflare",
+  "publishedOn": "2026-10-01",
+  "accessedOn": "2026-10-04",
+  "locator": "Model card / Clef Flash / License",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "9B multimodal decision model; Apache-2.0; typed output, no free-form generation",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:cloudflare-clef-release",
+  "url": "https://blog.cloudflare.com/clef-decision-models/",
+  "title": "Cloudflare Clef announcement",
+  "organization": "Cloudflare",
+  "publishedOn": "2026-10-01",
+  "accessedOn": "2026-10-04",
+  "versionRevisionOrCommit": "announcement",
+  "locator": "Announcement / October 1, 2026",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Clef and Clef Flash open-source release date",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11371-clef",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11371",
+  "title": "llama.cpp b11371",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-03",
+  "accessedOn": "2026-10-04",
+  "locator": "Release notes / model: add support for clef decision model (text-only)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Prerelease initial Clef support, text only",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:software-triton-v2-73-0-release",
+  "url": "https://github.com/triton-inference-server/server/releases/tag/v2.73.0",
+  "title": "Triton 2.73.0 / NGC 26.09 — official release",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-04",
+  "locator": "Release tag and notes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Triton 2.73.0 / NGC 26.09; version, publication date and release notes.",
+  "versionRevisionOrCommit": "v2.73.0",
+  "limitations": [
+    "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+  ],
+  "commercialInterest": "Software publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Release notes are publisher claims; performance and compatibility require separate validation."
+  ]
+});
+evidence.push({
+  "id": "evidence:software-tei-v1-9-4-release",
+  "url": "https://github.com/huggingface/text-embeddings-inference/releases/tag/v1.9.4",
+  "title": "Text Embeddings Inference 1.9.4 — official release",
+  "organization": "Hugging Face",
+  "accessedOn": "2026-10-04",
+  "locator": "Release tag and notes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Text Embeddings Inference 1.9.4; version, publication date and release notes.",
+  "versionRevisionOrCommit": "v1.9.4",
+  "limitations": [
+    "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+  ],
+  "commercialInterest": "Software publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Release notes are publisher claims; performance and compatibility require separate validation."
+  ]
+});
+evidence.push({
+  "id": "evidence:software-transformers-v5-18-0-release",
+  "url": "https://github.com/huggingface/transformers/releases/tag/v5.18.0",
+  "title": "Transformers 5.18.0 — official release",
+  "organization": "Hugging Face",
+  "accessedOn": "2026-10-04",
+  "locator": "Release tag and notes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Transformers 5.18.0; version, publication date and release notes.",
+  "versionRevisionOrCommit": "v5.18.0",
+  "limitations": [
+    "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+  ],
+  "commercialInterest": "Software publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Release notes are publisher claims; performance and compatibility require separate validation."
+  ]
+});
+evidence.push({
+  "id": "evidence:software-litellm-v1-103-1-release",
+  "url": "https://github.com/BerriAI/litellm/releases/tag/v1.103.1",
+  "title": "LiteLLM 1.103.1 — official release",
+  "organization": "BerriAI",
+  "accessedOn": "2026-10-04",
+  "locator": "Release tag and notes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "LiteLLM 1.103.1; version, publication date and release notes.",
+  "versionRevisionOrCommit": "v1.103.1",
+  "limitations": [
+    "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+  ],
+  "commercialInterest": "Software publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Release notes are publisher claims; performance and compatibility require separate validation."
+  ]
+});
+evidence.push({
+  "id": "evidence:software-open-webui-v0-11-4-release",
+  "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+  "title": "Open WebUI 0.11.4 — official release",
+  "organization": "Open WebUI",
+  "accessedOn": "2026-10-04",
+  "locator": "Release tag and notes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Open WebUI 0.11.4; version, publication date and release notes.",
+  "versionRevisionOrCommit": "v0.11.4",
+  "limitations": [
+    "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+  ],
+  "commercialInterest": "Software publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Release notes are publisher claims; performance and compatibility require separate validation."
+  ]
+});
+evidence.push({
+  "id": "evidence:software-sentence-transformers-v6-1-0-release",
+  "url": "https://github.com/huggingface/sentence-transformers/releases/tag/v6.1.0",
+  "title": "Sentence Transformers 6.1.0 — official release",
+  "organization": "Hugging Face",
+  "accessedOn": "2026-10-04",
+  "locator": "Release tag and notes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Sentence Transformers 6.1.0; version, publication date and release notes.",
+  "versionRevisionOrCommit": "v6.1.0",
+  "limitations": [
+    "Publisher release notes; deployment performance and hardware compatibility were not independently tested."
+  ],
+  "commercialInterest": "Software publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Release notes are publisher claims; performance and compatibility require separate validation."
+  ]
+});
+evidence.push({
+  "id": "evidence:coherelabs-north-small-translate-card",
+  "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+  "title": "Cohere Labs North Small Translate model card",
+  "organization": "Cohere Labs",
+  "accessedOn": "2026-10-04",
+  "locator": "Model card and access/license information",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Cohere Labs North Small Translate model card; publisher-provided architecture, access and usage conditions.",
+  "versionRevisionOrCommit": "reviewed 2026-10-04",
+  "limitations": [
+    "Publisher specifications and claims; Persian quality and local deployment performance not independently measured."
+  ],
+  "commercialInterest": "Model publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Model specifications and examples are publisher statements, not independent benchmark results."
+  ]
+});
+evidence.push({
+  "id": "evidence:bespokelabs-nimble-9b-card",
+  "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+  "title": "Bespoke Nimble 9B model card",
+  "organization": "Bespoke Labs",
+  "accessedOn": "2026-10-04",
+  "locator": "Model card and access/license information",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "Bespoke Nimble 9B model card; publisher-provided architecture, access and usage conditions.",
+  "versionRevisionOrCommit": "reviewed 2026-10-04",
+  "limitations": [
+    "Publisher specifications and claims; Persian quality and local deployment performance not independently measured."
+  ],
+  "commercialInterest": "Model publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Model specifications and examples are publisher statements, not independent benchmark results."
+  ]
+});
+evidence.push({
+  "id": "evidence:zai-glm-5-3-flash-card",
+  "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+  "title": "GLM-5.3-Flash model card",
+  "organization": "Z.ai",
+  "accessedOn": "2026-10-04",
+  "locator": "Model card and access/license information",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "GLM-5.3-Flash model card; publisher-provided architecture, access and usage conditions.",
+  "versionRevisionOrCommit": "reviewed 2026-10-04",
+  "limitations": [
+    "Publisher specifications and claims; Persian quality and local deployment performance not independently measured."
+  ],
+  "commercialInterest": "Model publisher; not an independent evaluation.",
+  "presentationNotes": [
+    "Model specifications and examples are publisher statements, not independent benchmark results."
+  ]
+});

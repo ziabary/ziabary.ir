@@ -1,12 +1,37 @@
 /** @typedef {'fa'|'en'|'es'} UpdateLocale */
 /** @typedef {'llm'|'gpu-selection'} UpdateGuide */
 /** @typedef {{title:string, summary:string}} UpdateCopy */
-/** @typedef {{id:string, guide:UpdateGuide, date:string, kind:'model'|'software'|'gpu'|'server', target:string, copy:Record<UpdateLocale,UpdateCopy>}} GuideUpdate */
+/** @typedef {{id:string, guide:UpdateGuide, date:string, kind:'model'|'api'|'software'|'gpu'|'server', target:string, copy:Record<UpdateLocale,UpdateCopy>}} GuideUpdate */
 
 // IDs identify editorial announcements, not builds or translations. Never reuse an ID.
 // Dates record additions/changes to our dataset, not the product's release date.
 /** @type {GuideUpdate[]} */
 export const guideUpdates = [
+  { id:'auditmdl104', guide:'llm', date:'2026-10-04', kind:'model', target:'model:coherelabs-north-small-translate-1-0', copy:{
+    fa:{title:'سه مدل تخصصی به اطلس LLM اضافه شد',summary:'North Translate، Bespoke Nimble و GLM-5.3-Flash با شرط مجوز، وزن پایه و عدم ارزیابی فارسی ثبت شدند.'},
+    en:{title:'Three specialized models added to the LLM atlas',summary:'North Translate, Bespoke Nimble and GLM-5.3-Flash now include license, base-weight and Persian-evaluation caveats.'},
+    es:{title:'Tres modelos especializados añadidos al atlas LLM',summary:'North Translate, Bespoke Nimble y GLM-5.3-Flash incluyen condiciones de licencia, pesos base y evaluación en persa.'}
+  }},
+  { id:'gpusrv104', guide:'gpu-selection', date:'2026-10-04', kind:'gpu', target:'nvidia-rtx-pro-4500-server', copy:{
+    fa:{title:'مشخصات RTX PRO 4500 Server و سقف سرورها اصلاح شد',summary:'کارت تک‌اسلات ۱۶۵W ثبت شد؛ سقف‌های QPL برای چند سرور از ظرفیت فیزیکی جدا شد.'},
+    en:{title:'RTX PRO 4500 Server and server limits updated',summary:'Added the 165 W single-slot card and separated OEM QPL limits from physical slot capacity.'},
+    es:{title:'Actualizados RTX PRO 4500 Server y límites de servidores',summary:'Añadida la tarjeta de una ranura y 165 W; los límites QPL se separan de la capacidad física.'}
+  }},
+  { id:'swrel104', guide:'llm', date:'2026-10-04', kind:'software', target:'Text Embeddings Inference', copy:{
+    fa:{title:'شش نسخهٔ نرم‌افزاری به جدول افزوده شد',summary:'TEI، Triton، Transformers، LiteLLM، Open WebUI و sentence-transformers با نسخه و محدودیت‌های تازه.'},
+    en:{title:'Six software releases added to the guide',summary:'Updated TEI, Triton, Transformers, LiteLLM, Open WebUI and sentence-transformers with current caveats.'},
+    es:{title:'Seis versiones de software añadidas a la guía',summary:'TEI, Triton, Transformers, LiteLLM, Open WebUI y sentence-transformers con condiciones actuales.'}
+  }},
+  { id:'oll351clef', guide:'llm', date:'2026-10-04', kind:'software', target:'Ollama', copy:{
+    fa:{title:'Ollama 0.35.1 پایدار و Clef چندوجهی',summary:'SystemOne برای Clef و Clef Flash متن و تصویر را می‌پذیرد؛ llama.cpp b11371 فعلاً فقط متن را پشتیبانی می‌کند.'},
+    en:{title:'Stable Ollama 0.35.1 and multimodal Clef',summary:'SystemOne accepts text and images with Clef and Clef Flash; llama.cpp b11371 currently supports text only.'},
+    es:{title:'Ollama 0.35.1 estable y Clef multimodal',summary:'SystemOne acepta texto e imágenes con Clef y Clef Flash; llama.cpp b11371 admite por ahora solo texto.'}
+  }},
+  { id:'g61solapi', guide:'llm', date:'2026-10-03', kind:'api', target:'gpt-6.1-sol', copy:{
+    fa:{title:'GPT-6.1 Sol به فهرست API اضافه شد',summary:'مدل اختصاصی OpenAI با زمینهٔ ۱٫۰۵ میلیون توکن؛ تعرفهٔ کل درخواست پس از ۲۷۲ هزار توکن بالاتر می‌رود.'},
+    en:{title:'GPT-6.1 Sol added to the API catalog',summary:'OpenAI proprietary model with a 1.05M-token context; the whole request uses higher rates above 272K input tokens.'},
+    es:{title:'GPT-6.1 Sol añadido al catálogo API',summary:'Modelo propietario de OpenAI con contexto de 1,05 M de tokens; toda la solicitud paga más si la entrada supera 272 000 tokens.'}
+  }},
   { id:'spark64', guide:'gpu-selection', date:'2026-10-03', kind:'gpu', target:'nvidia-dgx-spark-64gb', copy:{
     fa:{title:'DGX Spark 64GB به جدول اضافه شد',summary:'سامانهٔ GB10 با حافظهٔ یکپارچه؛ عرضهٔ برنامه‌ریزی‌شده از ۲۳ اکتبر و نیازمند بررسی SKU.'},
     en:{title:'DGX Spark 64GB added to the table',summary:'GB10 system with unified memory; scheduled from 23 October, with OEM SKU details to verify.'},
@@ -98,6 +123,11 @@ export function guideUpdateHref(item, locale) {
   const path = `${locale === 'fa' ? '' : '/' + locale}/guides/${item.guide}/`;
   if (item.kind === 'gpu' || item.kind === 'server') return `${path}#${item.kind}-${item.target}`;
   const params = new URLSearchParams();
+  if (item.kind === 'api') {
+    params.set('view','model-catalog');
+    params.set('s_model-catalog',JSON.stringify({q:item.target}));
+    return `${path}?${params}#model-catalog`;
+  }
   if (item.kind === 'model') {
     params.set('view','model-catalog');
     params.set('s_model-catalog',JSON.stringify({ids:[item.target],onlySelected:true}));

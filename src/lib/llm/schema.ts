@@ -135,6 +135,7 @@ export type ModelKind =
   | 'embedding'
   | 'reranker'
   | 'encoder-classifier'
+  | 'decision'
   | 'vision-language'
   | 'image-generation'
   | 'other';
@@ -165,6 +166,9 @@ export interface ModelVersion {
   /** Reviewed specialization, not merely a task a general-purpose model can perform. */
   researchOnly?: boolean;
   inputTokenLimit?: Datum<number, 'token'>;
+  outputTokenLimit?: Datum<number, 'token'>;
+  /** Smallest per-card GPU memory in a reviewed publisher deployment example; not a theoretical minimum. */
+  minimumReviewedGpuMemoryGiB?: Datum<number, 'GiB'>;
   taskSpecializations?: Array<{ task: ModelTaskSpecialization; languages?: string[]; languagePairs?: Array<[string, string]>; evidenceIds: EvidenceId[] }>;
 
   configurationContext?: Datum<number, 'token'>;

@@ -28,8 +28,8 @@
   const vendors: GpuVendor[] = ['NVIDIA', 'AMD', 'Intel', 'Huawei', 'Google', 'AWS', 'Tenstorrent', 'Qualcomm', 'Cerebras', 'Groq'];
   const productKinds: NonNullable<GpuRecord['productKind']>[] = ['کارت', 'ماژول', 'پردازنده', 'سامانه', 'ابر'];
   const segments: GpuSegment[] = ['مصرفی', 'حرفه‌ای', 'مرکز داده', 'مقیاس رک'];
-  const statuses: GpuStatus[] = ['current', 'system-only', 'announced', 'legacy'];
-  const statusLabel: Record<GpuStatus, string> = { current: 'نسل جاری', 'system-only': 'فقط سیستم', announced: 'مشخصات اولیه', legacy: 'نسل قبل' };
+  const statuses: GpuStatus[] = ['current', 'system-only', 'announced', 'legacy', 'unverified'];
+  const statusLabel: Record<GpuStatus, string> = { current: 'نسل جاری', 'system-only': 'فقط سیستم', announced: 'مشخصات اولیه', legacy: 'نسل قبل', unverified: 'تأییدنشده' };
   const segmentLabel: Record<GpuClass, GpuSegment> = { consumer: 'مصرفی', workstation: 'حرفه‌ای', datacenter: 'مرکز داده', 'server-pcie': 'مقیاس رک', frontier: 'مقیاس رک' };
   const columnLabel: Record<ColumnKey, string> = {
     kind: 'نوع', segment: 'رده', status: 'وضعیت', memory: 'حافظه', bandwidth: 'پهنای‌باند', power: 'توان',
@@ -214,6 +214,7 @@
 
   function sortValue(record: GpuRecord, key: SortKey): string | number | null {
     if (key === 'segment') return t(segmentLabel[record.gpuClass]);
+    if (record.status === 'unverified' && ['memoryGB', 'bandwidthTBs', 'powerW', 'generalCoreCount', 'matrixCoreCount', 'fp4', 'fp8', 'bf16', 'fp16', 'fp32', 'fp64', 'int8', 'int4'].includes(key)) return null;
     if (['fp4', 'fp8', 'bf16', 'fp16', 'int8', 'int4'].includes(key)) return record[key as 'fp4' | 'fp8' | 'bf16' | 'fp16' | 'int8' | 'int4']?.dense ?? null;
     return record[key as keyof GpuRecord] as string | number | null;
   }
@@ -235,6 +236,7 @@
   }
 
   function toggleCompare(id: string) {
+    if (gpuRecords.find((gpu) => gpu.id === id)?.status === 'unverified') return;
     if (compared.includes(id)) compared = compared.filter((item) => item !== id);
     else if (compared.length < 4) compared = [...compared, id];
   }
@@ -245,7 +247,7 @@
 
   function exportCsv() {
     const head = ['سازنده','مدل','نوع محصول','رده','وضعیت','سال','معماری','حافظه GB','وضعیت حافظه','نوع حافظه','پهنای‌باند TB/s','وضعیت پهنای‌باند','توان W','وضعیت توان','هسته عمومی','نوع هسته عمومی','هسته ماتریسی','نوع هسته ماتریسی','FP4','FP8','BF16','FP16','FP32','FP64','INT8','INT4','فرم‌فکتور','رابط','خنک‌کاری','ارتباط','نرم‌افزار','مجازی‌سازی بومی','ارائه اشتراکی سکوی دماوند','کاربردها','مناسب برای','ملاحظه','سطح منبع','منبع اصلی','منبع Matrix Performance','تمام مشخصات تکمیلی'];
-    const body = visible.map((g) => [g.vendor,g.model,productKind(g),segmentLabel[g.gpuClass],statusLabel[g.status],g.year,g.architecture,g.memoryGB,baseDisclosureText(g,'memoryGB'),g.memoryType,g.bandwidthTBs,baseDisclosureText(g,'bandwidthTBs'),g.powerW,baseDisclosureText(g,'powerW'),g.generalCoreCount,g.generalCoreLabel,g.matrixCoreCount,g.matrixCoreLabel,rateCsv(g.fp4),rateCsv(g.fp8),rateCsv(g.bf16),rateCsv(g.fp16),g.fp32,g.fp64,rateCsv(g.int8),rateCsv(g.int4),g.formFactor,g.hostInterface,g.cooling,g.interconnect,g.software,g.partitioning,g.sharedService ?? '',g.workloads.map(t).join(' | '),g.bestFit,g.caution,g.sourceTier ?? 'سازنده',g.sourceUrl,g.matrixSourceUrl ?? '',(g.extraSpecs ?? []).map((s) => `${t(s.group)} / ${t(s.label)}: ${t(s.value)}${s.basis ? ` [${t(s.basis)}]` : ''}`).join(' | ')]);
+    const body = visible.map((g) => [g.vendor,g.model,productKind(g),segmentLabel[g.gpuClass],statusLabel[g.status],g.year,g.architecture,g.status === 'unverified' ? null : g.memoryGB,baseDisclosureText(g,'memoryGB'),g.memoryType,g.status === 'unverified' ? null : g.bandwidthTBs,baseDisclosureText(g,'bandwidthTBs'),g.status === 'unverified' ? null : g.powerW,baseDisclosureText(g,'powerW'),g.generalCoreCount,g.generalCoreLabel,g.matrixCoreCount,g.matrixCoreLabel,rateCsv(g.fp4),rateCsv(g.fp8),rateCsv(g.bf16),rateCsv(g.fp16),g.fp32,g.fp64,rateCsv(g.int8),rateCsv(g.int4),g.formFactor,g.hostInterface,g.cooling,g.interconnect,g.software,g.partitioning,g.sharedService ?? '',g.workloads.map(t).join(' | '),g.bestFit,g.caution,g.sourceTier ?? 'سازنده',g.sourceUrl,g.matrixSourceUrl ?? '',(g.extraSpecs ?? []).map((s) => `${t(s.group)} / ${t(s.label)}: ${t(s.value)}${s.basis ? ` [${t(s.basis)}]` : ''}`).join(' | ')]);
     const content = '\ufeff' + [head, ...body].map((row) => row.map(csvCell).join(',')).join('\n');
     const url = URL.createObjectURL(new Blob([content], { type: 'text/csv;charset=utf-8' }));
     const link = document.createElement('a'); link.href = url; link.download = `gpu-comparison-${gpuLastReviewed.iso}.csv`; link.click(); URL.revokeObjectURL(url);
@@ -254,7 +256,8 @@
   $: needle = query.trim().toLocaleLowerCase(locale);
   $: filtered = gpuRecords.filter((g) => {
     const text = `${g.vendor} ${g.model} ${g.architecture} ${g.memoryType} ${g.software} ${g.formFactor} ${g.compute} ${g.sharedService ?? ''} ${(g.extraSpecs ?? []).map((s) => `${s.label} ${s.value}`).join(' ')}`.toLocaleLowerCase(locale);
-    return (!needle || text.includes(needle))
+    return (g.status !== 'unverified' || selectedStatuses.includes('unverified') || focusedGpu === g.id)
+      && (!needle || text.includes(needle))
       && (!selectedVendors.length || selectedVendors.includes(g.vendor))
       && (!selectedKinds.length || selectedKinds.includes(productKind(g)))
       && (!selectedSegments.length || selectedSegments.includes(segmentLabel[g.gpuClass]))
@@ -276,9 +279,9 @@
       values: comparison.map((gpu) => specsFor(gpu, group).filter((spec) => spec.label === label))
     }))
   })).filter((group) => group.rows.length);
-  $: maxMemory = visible.length ? Math.max(...visible.filter((g) => g.dataDisclosure?.memoryGB !== 'not-published').map((g) => g.memoryGB)) : 0;
-  $: maxBandwidth = visible.length ? Math.max(...visible.filter((g) => g.dataDisclosure?.bandwidthTBs !== 'not-published').map((g) => g.bandwidthTBs)) : 0;
-  $: lowestPower = visible.filter((g) => g.powerW != null).sort((a,b) => (a.powerW ?? Infinity) - (b.powerW ?? Infinity))[0];
+  $: maxMemory = Math.max(0, ...visible.filter((g) => g.status !== 'unverified' && g.dataDisclosure?.memoryGB !== 'not-published').map((g) => g.memoryGB));
+  $: maxBandwidth = Math.max(0, ...visible.filter((g) => g.status !== 'unverified' && g.dataDisclosure?.bandwidthTBs !== 'not-published').map((g) => g.bandwidthTBs));
+  $: lowestPower = visible.filter((g) => g.status !== 'unverified' && g.powerW != null).sort((a,b) => (a.powerW ?? Infinity) - (b.powerW ?? Infinity))[0];
   $: activeColumns = [
     ...baseColumns,
     ...(showCompute ? computeColumns : []),
@@ -351,9 +354,9 @@
     </tr></thead><tbody>
       {#each visible as gpu}
         <tr id={`gpu-${gpu.id}`} data-preserve-reading-fragment class:linked-row={focusedGpu === gpu.id} class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
-          <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={!compared.includes(gpu.id) && compared.length >= 4} on:change={() => toggleCompare(gpu.id)} aria-label={`${t("مقایسه")} ${gpu.model}`} /></td>
+          <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={gpu.status === 'unverified' || (!compared.includes(gpu.id) && compared.length >= 4)} on:change={() => toggleCompare(gpu.id)} aria-label={`${t("مقایسه")} ${gpu.model}`} /></td>
           <td class="detail-cell"><button class:open={expanded.includes(gpu.id)} on:click={() => toggleExpanded(gpu.id)} aria-label={`${t("جزئیات")} ${gpu.model}`} aria-expanded={expanded.includes(gpu.id)}>⌄</button></td>
-          <td class="model"><div class="model-cell"><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t("منبع رسمی ↗")}</a></div></td>
+          <td class="model"><div class="model-cell"><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t(gpu.status === 'unverified' ? 'ارجاع ناکافی ↗' : 'منبع رسمی ↗')}</a></div></td>
           {#each activeColumns as column}
             {#if column === 'kind'}<td><span class="kind">{t(productKind(gpu))}</span></td>
             {:else if column === 'segment'}<td><span class="segment">{t(segmentLabel[gpu.gpuClass])}</span></td>
