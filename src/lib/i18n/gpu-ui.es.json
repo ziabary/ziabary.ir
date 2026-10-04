@@ -284,5 +284,9 @@
   "Baseboard / NVLink": "Placa base / NVLink",
   "Matrix Performance": "Rendimiento matricial",
   "GPU یکپارچه": "GPU integradas",
-  "تأییدنشده": "Sin verificar"
+  "تأییدنشده": "Sin verificar",
+  "برد اصلاح‌شدهٔ غیررسمی": "Placa modificada no oficial",
+  "اعلام فروشنده": "Declarado por el vendedor",
+  "فروشندهٔ برد اصلاح‌شده": "Vendedor de la placa modificada",
+  "نمونهٔ فروشنده ↗": "Ejemplo del vendedor ↗"
 }

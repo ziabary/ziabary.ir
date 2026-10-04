@@ -28,8 +28,8 @@
   const vendors: GpuVendor[] = ['NVIDIA', 'AMD', 'Intel', 'Huawei', 'Google', 'AWS', 'Tenstorrent', 'Qualcomm', 'Cerebras', 'Groq'];
   const productKinds: NonNullable<GpuRecord['productKind']>[] = ['کارت', 'ماژول', 'پردازنده', 'سامانه', 'ابر'];
   const segments: GpuSegment[] = ['مصرفی', 'حرفه‌ای', 'مرکز داده', 'مقیاس رک'];
-  const statuses: GpuStatus[] = ['current', 'system-only', 'announced', 'legacy', 'unverified'];
-  const statusLabel: Record<GpuStatus, string> = { current: 'نسل جاری', 'system-only': 'فقط سیستم', announced: 'مشخصات اولیه', legacy: 'نسل قبل', unverified: 'تأییدنشده' };
+  const statuses: GpuStatus[] = ['current', 'system-only', 'announced', 'legacy', 'unofficial', 'unverified'];
+  const statusLabel: Record<GpuStatus, string> = { current: 'نسل جاری', 'system-only': 'فقط سیستم', announced: 'مشخصات اولیه', legacy: 'نسل قبل', unofficial: 'برد اصلاح‌شدهٔ غیررسمی', unverified: 'تأییدنشده' };
   const segmentLabel: Record<GpuClass, GpuSegment> = { consumer: 'مصرفی', workstation: 'حرفه‌ای', datacenter: 'مرکز داده', 'server-pcie': 'مقیاس رک', frontier: 'مقیاس رک' };
   const columnLabel: Record<ColumnKey, string> = {
     kind: 'نوع', segment: 'رده', status: 'وضعیت', memory: 'حافظه', bandwidth: 'پهنای‌باند', power: 'توان',
@@ -107,7 +107,7 @@
   const restoreColumn = (key: ColumnKey) => { hiddenColumns = hiddenColumns.filter((item) => item !== key); };
   const showAllColumns = () => { hiddenColumns = []; showCompute = true; showExtendedCompute = true; showInfra = true; };
   const disclosureLabel = {
-    published: 'رسمی', derived: 'استخراج از سامانه', 'not-published': 'سازنده منتشر نکرده',
+    published: 'رسمی', derived: 'استخراج از سامانه', 'supplier-claimed': 'اعلام فروشنده', 'not-published': 'سازنده منتشر نکرده',
     'not-supported': 'پشتیبانی نمی‌شود', 'not-applicable': 'قابل‌اعمال نیست'
   } as const;
 
@@ -124,13 +124,13 @@
   };
   const measuredText = (gpu: GpuRecord, key: 'memoryGB' | 'bandwidthTBs' | 'powerW') => {
     const value = gpu[key];
-    if (gpu.dataDisclosure?.[key] && !['published', 'derived'].includes(gpu.dataDisclosure[key] ?? 'published')) return baseDisclosureText(gpu, key);
+    if (gpu.dataDisclosure?.[key] && !['published', 'derived', 'supplier-claimed'].includes(gpu.dataDisclosure[key] ?? 'published')) return baseDisclosureText(gpu, key);
     return value == null ? disclosureLabel['not-published'] : format(value);
   };
   const measuredWithUnit = (gpu: GpuRecord, key: 'memoryGB' | 'bandwidthTBs' | 'powerW', unit: string) => {
     const text = measuredText(gpu, key);
     const state = gpu.dataDisclosure?.[key] ?? 'published';
-    return typeof gpu[key] === 'number' && (state === 'published' || state === 'derived') ? `${text} ${unit}` : text;
+    return typeof gpu[key] === 'number' && (state === 'published' || state === 'derived' || state === 'supplier-claimed') ? `${text} ${unit}` : text;
   };
   const fullRateText = (gpu: GpuRecord, key: 'fp4' | 'fp8' | 'bf16' | 'fp16' | 'int8' | 'int4') => {
     const rate = gpu[key];
@@ -356,7 +356,7 @@
         <tr id={`gpu-${gpu.id}`} data-preserve-reading-fragment class:linked-row={focusedGpu === gpu.id} class:roadmap={gpu.status === 'announced'} class:selected={compared.includes(gpu.id)}>
           <td class="pick"><input type="checkbox" checked={compared.includes(gpu.id)} disabled={gpu.status === 'unverified' || (!compared.includes(gpu.id) && compared.length >= 4)} on:change={() => toggleCompare(gpu.id)} aria-label={`${t("مقایسه")} ${gpu.model}`} /></td>
           <td class="detail-cell"><button class:open={expanded.includes(gpu.id)} on:click={() => toggleExpanded(gpu.id)} aria-label={`${t("جزئیات")} ${gpu.model}`} aria-expanded={expanded.includes(gpu.id)}>⌄</button></td>
-          <td class="model"><div class="model-cell"><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t(gpu.status === 'unverified' ? 'ارجاع ناکافی ↗' : 'منبع رسمی ↗')}</a></div></td>
+          <td class="model"><div class="model-cell"><div class="brand-mark"><img {...imageAttributes(brandLogo(gpu), '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" /><span>{t(brandName(gpu))}</span></div><b dir="ltr">{t(gpu.model)}</b><small class:preliminary={gpu.status === 'announced' || gpu.status === 'unofficial'}>{t(statusLabel[gpu.status])}</small><a href={gpu.sourceUrl} target="_blank" rel="noreferrer">{t(gpu.status === 'unofficial' ? 'نمونهٔ فروشنده ↗' : gpu.status === 'unverified' ? 'ارجاع ناکافی ↗' : 'منبع رسمی ↗')}</a></div></td>
           {#each activeColumns as column}
             {#if column === 'kind'}<td><span class="kind">{t(productKind(gpu))}</span></td>
             {:else if column === 'segment'}<td><span class="segment">{t(segmentLabel[gpu.gpuClass])}</span></td>

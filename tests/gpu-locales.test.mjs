@@ -21,6 +21,18 @@ const code = transpile(localizedSource)
   .replaceAll("'$lib/server-data'", JSON.stringify(serverUrl));
 const { hardwareText, hardwareGpus, hardwareServers, hardwareGpuProfiles } = await import(urlFor(code));
 
+test('the unofficial 48 GB RTX 4090 X remains an available local-AI option', () => {
+  const card = originalGpus.gpuRecords.find((gpu) => gpu.id === 'nvidia-rtx4090x');
+  assert.ok(card);
+  assert.equal(card.status, 'unofficial');
+  assert.equal(card.memoryGB, 48);
+  assert.ok(card.bandwidthTBs > 0);
+  assert.ok(card.workloads.includes('هوش مصنوعی محلی'));
+  assert.match(card.bestFit, /پیشنهادی/);
+  assert.match(card.caution, /RTX 4090 D/);
+  assert.match(card.sourceUrl, /perceptasolutions\.com/);
+});
+
 function visit(value, path, callback) {
   if (value && typeof value === 'object') {
     for (const [key, child] of Object.entries(value)) visit(child, `${path}.${key}`, callback);

@@ -7,6 +7,11 @@
 // Dates record additions/changes to our dataset, not the product's release date.
 /** @type {GuideUpdate[]} */
 export const guideUpdates = [
+  { id:'rtx4090x48', guide:'gpu-selection', date:'2026-10-04', kind:'gpu', target:'nvidia-rtx4090x', copy:{
+    fa:{title:'RTX 4090 X به مقایسه و پیشنهادها برگشت',summary:'برد اصلاح‌شدهٔ غیررسمی ۴۸GB با منبع فروشنده و شروط بررسی همان کارت؛ مشخصات آن با RTX 4090 D رسمی یکی نیست.'},
+    en:{title:'RTX 4090 X returns to comparison and recommendations',summary:'The unofficial modified 48 GB board is listed with supplier evidence and per-card checks; it differs from the official RTX 4090 D.'},
+    es:{title:'RTX 4090 X vuelve a la comparación y las recomendaciones',summary:'La placa modificada no oficial de 48 GB figura con datos del vendedor y comprobaciones por tarjeta; difiere de la RTX 4090 D oficial.'}
+  }},
   { id:'auditmdl104', guide:'llm', date:'2026-10-04', kind:'model', target:'model:coherelabs-north-small-translate-1-0', copy:{
     fa:{title:'سه مدل تخصصی به اطلس LLM اضافه شد',summary:'North Translate، Bespoke Nimble و GLM-5.3-Flash با شرط مجوز، وزن پایه و عدم ارزیابی فارسی ثبت شدند.'},
     en:{title:'Three specialized models added to the LLM atlas',summary:'North Translate, Bespoke Nimble and GLM-5.3-Flash now include license, base-weight and Persian-evaluation caveats.'},

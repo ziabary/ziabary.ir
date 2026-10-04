@@ -1,5 +1,5 @@
 export type GpuVendor = 'NVIDIA' | 'AMD' | 'Intel' | 'Huawei' | 'Google' | 'AWS' | 'Tenstorrent' | 'Qualcomm' | 'Cerebras' | 'Groq';
-export type GpuStatus = 'current' | 'system-only' | 'announced' | 'legacy' | 'unverified';
+export type GpuStatus = 'current' | 'system-only' | 'announced' | 'legacy' | 'unofficial' | 'unverified';
 export type GpuClass = 'frontier' | 'datacenter' | 'server-pcie' | 'workstation' | 'consumer';
 export type GpuWorkload = 'آموزش مدل‌های بزرگ' | 'استنتاج سازمانی' | 'هوش مصنوعی محلی' | 'HPC' | 'گرافیک و رندر' | 'چندمستاجری';
 
@@ -62,9 +62,9 @@ export type GpuBaseRecord = {
   sourceUrl: string;
   sourceLabel: string;
   productKind?: 'کارت' | 'ماژول' | 'پردازنده' | 'سامانه' | 'ابر';
-  sourceTier?: 'سازنده' | 'مستندات فنی سازنده' | 'پژوهش مستقل';
+  sourceTier?: 'سازنده' | 'مستندات فنی سازنده' | 'پژوهش مستقل' | 'فروشندهٔ برد اصلاح‌شده';
   extraSpecs?: GpuExtraSpec[];
-  dataDisclosure?: Partial<Record<'memoryGB' | 'bandwidthTBs' | 'powerW', 'published' | 'derived' | 'not-published' | 'not-supported' | 'not-applicable'>>;
+  dataDisclosure?: Partial<Record<'memoryGB' | 'bandwidthTBs' | 'powerW', 'published' | 'derived' | 'supplier-claimed' | 'not-published' | 'not-supported' | 'not-applicable'>>;
 };
 
 export type GpuRecord = GpuBaseRecord & GpuComputeSpec;
@@ -875,30 +875,30 @@ const rows: GpuBaseRecord[] = [
       "id": "nvidia-rtx4090x",
       "vendor": "NVIDIA",
       "model": "GeForce RTX 4090 X",
-      "status": "unverified",
+      "status": "unofficial",
       "gpuClass": "consumer",
       "architecture": "Ada Lovelace",
       "year": 2025,
-      "memoryGB": 0,
+      "memoryGB": 48,
       "memoryType": "GDDR6X",
-      "bandwidthTBs": 0,
+      "bandwidthTBs": 1.008,
       "powerW": null,
-      "formFactor": "PCIe؛ وابسته به سازنده و بازار چین",
+      "formFactor": "PCIe؛ ابعاد و اسلات وابسته به برد اصلاح‌شده",
       "hostInterface": "PCIe 4.0 x16",
-      "cooling": "اکتیو مصرفی",
-      "compute": "نام و مشخصات این گونه در منبع رسمی ارجاع‌شده تأیید نشده‌اند.",
+      "cooling": "اکتیو؛ نوع فن و مسیر هوا وابسته به برد",
+      "compute": "بردهای اصلاح‌شدهٔ ۴۸GB بر پایهٔ RTX 4090؛ شمار هسته و فرکانس به تراشه و برد تحویلی وابسته است.",
       "interconnect": "PCIe؛ بدون NVLink",
       "partitioning": "بدون MIG/vGPU رسمی؛ اشتراک در سطح نرم‌افزار",
       "software": "CUDA / cuDNN / TensorRT / PyTorch",
       "workloads": ["آموزش مدل‌های بزرگ", "استنتاج سازمانی", "هوش مصنوعی محلی", "گرافیک و رندر", "چندمستاجری"],
-      "bestFit": "نیازمند سند سازنده و پارت‌نامبر؛ توصیهٔ خرید معلق است.",
-      "caution": "هویت RTX 4090 X و ادعاهای ۴۸GB/۴۲۵W با منبع فعلی تأیید نشده‌اند؛ این مورد در مقایسهٔ عددی و پیشنهاد خرید قابل اتکا نیست. با RTX 4090 D یکی نیست.",
+      "bestFit": "گزینهٔ پیشنهادی برای استنتاج و توسعهٔ محلیِ نیازمند ۴۸GB حافظه روی یک کارت؛ پس از تأیید برد و آزمون عملی.",
+      "caution": "RTX 4090 X نام غیررسمی بردهای اصلاح‌شده است، نه مدل ۴۸GB رسمی NVIDIA یا همان RTX 4090 D رسمیِ ۲۴GB. ظرفیت و پهنای‌باند از یک پیکربندی فروشنده‌اند و به همهٔ بردها تعمیم ندارند. پیش از خرید، حافظهٔ واقعی، تراشه، BIOS، پایداری، توان، خنک‌کاری و ضمانت همان کارت را بررسی کنید.",
       "serverReady": false,
-      "sourceUrl": "https://developer.nvidia.com/vulkan-driver",
-      "sourceLabel": "NVIDIA Vulkan driver list — هویت این گونه را تأیید نمی‌کند",
+      "sourceUrl": "https://shop.perceptasolutions.com/products/geforce-rtx-4090-48gb-gddr6x-blower-graphics-card-modified",
+      "sourceLabel": "Percepta — نمونهٔ RTX 4090 اصلاح‌شدهٔ ۴۸GB",
       "productKind": "کارت",
-      "sourceTier": "مستندات فنی سازنده",
-      "dataDisclosure": { "memoryGB": "not-published", "bandwidthTBs": "not-published", "powerW": "not-published" }
+      "sourceTier": "فروشندهٔ برد اصلاح‌شده",
+      "dataDisclosure": { "memoryGB": "supplier-claimed", "bandwidthTBs": "supplier-claimed", "powerW": "not-published" }
     },
     {
       "id": "nvidia-l40",

@@ -284,5 +284,9 @@
   "Baseboard / NVLink": "Baseboard / NVLink",
   "Matrix Performance": "Matrix Performance",
   "GPU یکپارچه": "Integrated GPUs",
-  "تأییدنشده": "Unverified"
+  "تأییدنشده": "Unverified",
+  "برد اصلاح‌شدهٔ غیررسمی": "Unofficial modified board",
+  "اعلام فروشنده": "Supplier claim",
+  "فروشندهٔ برد اصلاح‌شده": "Modified-board seller",
+  "نمونهٔ فروشنده ↗": "Supplier example ↗"
 }
