@@ -1,0 +1,5 @@
+Tool: built-in image_gen
+Reference: static/images/articles/cuda-nvidia-lock-in-exit-cost/cover.png
+Output: static/images/articles/cuda-nvidia-lock-in-exit-cost-en/cover.png
+
+Use case: text-localization. Edit this Persian article cover into English. Preserve the existing composition, every rack, circuit, glowing route, icon, software-layer module, blue/green lighting, visual hierarchy, 1672:941 landscape framing and all safe margins. Change only language-dependent typography. Replace the large Persian headline with exactly "The weights move. What about the service?" and the smaller Persian subtitle with exactly "The cost of leaving NVIDIA is hidden in the software stack". Use elegant bold professional typography matching the existing design, with a readable centered English headline that fits safely on one or at most two lines. Keep labels ASCEND, NVIDIA, Model Weights, CUDA, Kernels, NCCL, TensorRT, Operations, CANN / TorchNPU / HCCL and ZIABARY.IR unchanged. Do not add any text, numbers, claims, marks or objects. Do not change the underlying scene. Opaque background.

@@ -1,0 +1,12 @@
+Tool: built-in image_gen
+Reference: static/images/articles/ascend-vs-nvidia-real-performance-gap/cover.png
+Output: static/images/articles/cuda-nvidia-lock-in-exit-cost/cover.png
+
+Use case: stylized-concept.
+Asset type: wide 16:9 editorial cover for the third Persian article in an AI infrastructure series.
+Input image: the supplied local image is a STYLE AND SERIES REFERENCE ONLY. Create a distinct new cover, do not reproduce its benchmark chart or numeric claims.
+Primary request: visualize the difference between transferring model weights and migrating the whole NVIDIA-dependent production service to Ascend.
+Match the reference's premium technical editorial treatment: deep navy data-center backdrop, subtle circuit/grid floor, realistic metallic server racks, luminous cyan and restrained NVIDIA green, crisp glass-like panels, accurate professional typography.
+Composition: Ascend rack on the left in cyan lighting, NVIDIA rack on the right in green lighting, balanced wide composition. Center upper area: a luminous compact model-weights file/cube connected cleanly to both racks, suggesting shared transferable model weights. Center lower area: a neatly layered software dependency stack with five clearly distinct modules labeled exactly "CUDA", "Kernels", "NCCL", "TensorRT", "Operations". Modules lead from the NVIDIA side toward Ascend through a visibly incomplete bridge of adapter blocks, with a few subtle amber breaks/gaps indicating adaptation work. Ascend-side endpoint may have a single compact "CANN / TorchNPU / HCCL" label. Show that software layers need adaptation; do not portray NVIDIA hardware as broken or Ascend as universally superior. Strong hierarchy, uncluttered enough for website card cropping.
+Text: large impeccably readable Persian headline across the top, exactly "وزن‌ها منتقل می‌شوند؛ سرویس چطور؟". Small supporting Persian line immediately below it, exactly "هزینهٔ خروج از NVIDIA در لایه‌های نرم‌افزار پنهان است". Rack headings exactly "ASCEND" and "NVIDIA". Tiny discreet "ZIABARY.IR" in a lower corner. No other prose or percentages.
+Keep all headline text and main narrative imagery within safe margins. Beautiful polished photorealistic 3D infographic art, same visual family as the reference, conceptual editorial illustration rather than literal product specifications. No chains, padlocks, explosions, flags, people, benchmark bars, invented chip model numbers, watermarks, or clutter. Opaque background.

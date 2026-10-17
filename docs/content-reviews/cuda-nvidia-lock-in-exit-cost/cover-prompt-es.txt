@@ -1,0 +1,8 @@
+Tool: built-in image_gen
+Reference: static/images/articles/cuda-nvidia-lock-in-exit-cost/cover.png
+Output: static/images/articles/cuda-nvidia-lock-in-exit-cost-es/cover.png
+
+Use case: text-localization. Edit this Persian article cover into Spanish. Preserve the existing composition, server racks, circuit paths, glowing routes, icons, module arrangement, realistic blue/green lighting, navy backdrop and landscape 1672:941 framing. Change ONLY language-dependent text. Large top headline exactly "Los pesos se transfieren. ¿Y el servicio?" Smaller subtitle exactly "El coste de dejar NVIDIA está oculto en las capas de software". Replace "Model Weights" with "Pesos del modelo". Replace "Operations" with "Operaciones". Keep ASCEND, NVIDIA, CUDA, Kernels, NCCL, TensorRT, CANN / TorchNPU / HCCL and ZIABARY.IR unchanged. Clear native Spanish typography with correct accents and inverted question mark, same polished bold visual style as the original. Fit headline and subtitle within safe margins without clipping. Do not add any text, numbers, claims or objects, and do not alter any other visual detail. Opaque background.
+
+Final typography adjustment:
+Correct exactly ONE label in this existing image. The bottom green software-layer box at center-right currently has a misspelled word. Replace that label with the Spanish word "Operativa" in the same font and position. Exact letters: O p e r a t i v a. No accents. The finished label must read "Operativa". Keep all other text and all other image details unchanged. Do not change headline, subtitle, Pesos del modelo, CUDA, Kernels, NCCL, TensorRT, CANN / TorchNPU / HCCL, racks, composition or colors.
