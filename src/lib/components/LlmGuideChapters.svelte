@@ -26,7 +26,7 @@
       <details class="chapter-details" on:toggle={event => opened = {...opened, [article.slug]:event.currentTarget.open}}>
         <summary>
           <span class="chapter-number" aria-hidden="true">{numbers.format(index + 1).padStart(2, t('LlmGuideChapters.1006'))}</span>
-          {#if article.cover}<img class="chapter-thumb" {...imageAttributes(article.cover, '120px')} alt="" loading="lazy" width="120" height="80" />{/if}
+          {#if article.cover}<img class="chapter-thumb" {...imageAttributes(article.cover, '120px')} style:object-position={article.coverPosition ?? 'center'} alt="" loading="lazy" width="120" height="80" />{/if}
           <div class="chapter-summary">
             <span class="chapter-meta"><time datetime={article.date}>{formatDate(article.date, locale)}</time><span>{article.readTime}</span></span>
             <h3>{article.title}</h3><p>{article.excerpt}</p>

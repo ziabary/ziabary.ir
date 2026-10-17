@@ -37,8 +37,9 @@
     { "id": "choosing-gpu-for-ai-en", "kind": "article", "title": "Choosing a GPU for the workload" },
     { "id": "int8-or-fp8-real-gpu-support-en", "kind": "article", "title": "INT8 or FP8: real GPU support" },
     { "id": "gpu-inference-latency-throughput-en", "kind": "article", "title": "Why the fastest GPU does not necessarily deliver the fastest response" },
+    { "id": "ascend-vs-nvidia-real-performance-gap-en", "kind": "article", "title": "Ascend vs NVIDIA: how large is the real performance gap?" },
     { "id": "gpu-confidential-computing-overhead-en", "kind": "article", "title": "Where does GPU confidential computing overhead come from?" },
-    { "id": "server-comparison-table", "kind": "interactive", "title": "Compare GPU servers" },
+    { "id": "server-comparison-table", "kind": "interactive", "title": "Compare AI servers and computers" },
     { "id": "gpu-server-platform-components-en", "kind": "article", "title": "CPU, memory, storage and networking" },
     { "id": "dgx-and-standard-gpu-servers-en", "kind": "article", "title": "DGX, HGX or a PCIe GPU server?" },
     { "id": "pcie-gpu-server-selection-en", "kind": "article", "title": "Selecting a PCIe GPU server" }

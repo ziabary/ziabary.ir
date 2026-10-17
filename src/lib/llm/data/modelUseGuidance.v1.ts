@@ -6746,3 +6746,460 @@ modelUseGuidance.push({
     "evidence:mimo-v2-6-pro-files"
   ]
 });
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-0-9b:text-work",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو و نگارش متن",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-card",
+    "evidence:ifm-k2-horizon-0-9b-metadata",
+    "evidence:ifm-k2-horizon-0-9b-gguf-files",
+    "evidence:ifm-k2-horizon-0-9b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-0-9b:coding-assistant",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کمک به کدنویسی",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-card",
+    "evidence:ifm-k2-horizon-0-9b-metadata",
+    "evidence:ifm-k2-horizon-0-9b-gguf-files",
+    "evidence:ifm-k2-horizon-0-9b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-0-9b:reasoning-analysis",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال و تحلیل",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-card",
+    "evidence:ifm-k2-horizon-0-9b-metadata",
+    "evidence:ifm-k2-horizon-0-9b-gguf-files",
+    "evidence:ifm-k2-horizon-0-9b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-0-9b:agents-tools",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "فراخوانی ابزار",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-card",
+    "evidence:ifm-k2-horizon-0-9b-metadata",
+    "evidence:ifm-k2-horizon-0-9b-gguf-files",
+    "evidence:ifm-k2-horizon-0-9b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-3-7b:text-work",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو و نگارش متن",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-card",
+    "evidence:ifm-k2-horizon-3-7b-metadata",
+    "evidence:ifm-k2-horizon-3-7b-gguf-files",
+    "evidence:ifm-k2-horizon-3-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-3-7b:coding-assistant",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کمک به کدنویسی",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-card",
+    "evidence:ifm-k2-horizon-3-7b-metadata",
+    "evidence:ifm-k2-horizon-3-7b-gguf-files",
+    "evidence:ifm-k2-horizon-3-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-3-7b:reasoning-analysis",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال و تحلیل",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-card",
+    "evidence:ifm-k2-horizon-3-7b-metadata",
+    "evidence:ifm-k2-horizon-3-7b-gguf-files",
+    "evidence:ifm-k2-horizon-3-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-3-7b:agents-tools",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "فراخوانی ابزار",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-card",
+    "evidence:ifm-k2-horizon-3-7b-metadata",
+    "evidence:ifm-k2-horizon-3-7b-gguf-files",
+    "evidence:ifm-k2-horizon-3-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-7b:text-work",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو و نگارش متن",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-card",
+    "evidence:ifm-k2-horizon-7b-metadata",
+    "evidence:ifm-k2-horizon-7b-gguf-files",
+    "evidence:ifm-k2-horizon-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-7b:coding-assistant",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کمک به کدنویسی",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-card",
+    "evidence:ifm-k2-horizon-7b-metadata",
+    "evidence:ifm-k2-horizon-7b-gguf-files",
+    "evidence:ifm-k2-horizon-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-7b:reasoning-analysis",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال و تحلیل",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-card",
+    "evidence:ifm-k2-horizon-7b-metadata",
+    "evidence:ifm-k2-horizon-7b-gguf-files",
+    "evidence:ifm-k2-horizon-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-7b:agents-tools",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "فراخوانی ابزار",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-card",
+    "evidence:ifm-k2-horizon-7b-metadata",
+    "evidence:ifm-k2-horizon-7b-gguf-files",
+    "evidence:ifm-k2-horizon-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-32b:text-work",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو و نگارش متن",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-card",
+    "evidence:ifm-k2-horizon-32b-metadata",
+    "evidence:ifm-k2-horizon-32b-gguf-files",
+    "evidence:ifm-k2-horizon-32b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-32b:coding-assistant",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کمک به کدنویسی",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-card",
+    "evidence:ifm-k2-horizon-32b-metadata",
+    "evidence:ifm-k2-horizon-32b-gguf-files",
+    "evidence:ifm-k2-horizon-32b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-32b:reasoning-analysis",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال و تحلیل",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-card",
+    "evidence:ifm-k2-horizon-32b-metadata",
+    "evidence:ifm-k2-horizon-32b-gguf-files",
+    "evidence:ifm-k2-horizon-32b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-32b:agents-tools",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "فراخوانی ابزار",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-card",
+    "evidence:ifm-k2-horizon-32b-metadata",
+    "evidence:ifm-k2-horizon-32b-gguf-files",
+    "evidence:ifm-k2-horizon-32b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-mova-36b-a4b:text-work",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو و نگارش متن",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-mova-36b-a4b:coding-assistant",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کمک به کدنویسی",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-mova-36b-a4b:reasoning-analysis",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال و تحلیل",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ifm-k2-horizon-mova-36b-a4b:agents-tools",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "فراخوانی ابزار",
+  "description": "کاربرد اعلام‌شدهٔ ناشر؛ تناسب با کار واقعی باید آزموده شود.",
+  "distinguishingFeature": "وزن رسمی Safetensors و GGUF؛ مسیر llama.cpp از b11454 پیش‌انتشار",
+  "conditions": [
+    "شاهد ارزیابی فارسی ثبت نشده؛ سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:google-embeddinggemma-2-enterprise-rag",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card",
+    "evidence:embeddinggemma-2-developer-guide"
+  ],
+  "summary": "RAG چندوجهی و محلی",
+  "description": "بردارسازی مشترک متن، کد، تصویر، ویدئو و صوت با وزن رسمی",
+  "distinguishingFeature": "بخش متنی مستقل و انتخاب ۷۶۸/۵۱۲/۲۵۶/۱۲۸ بعد",
+  "conditions": [
+    "پیش از انتخاب برای RAG متنی فارسی، بازیابی روی پیکرهٔ فارسی را با پرسش‌ها و اسناد یکسان در ۷۶۸ و ۲۵۶ بعد مقایسه کنید؛ کیفیت فارسی و حافظهٔ واقعی نامعلوم‌اند."
+  ]
+});

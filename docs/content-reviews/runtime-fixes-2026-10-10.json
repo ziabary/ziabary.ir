@@ -1,0 +1,47 @@
+{
+  "reviewedAt": "2026-10-10",
+  "sourcesFolder": "data/llm/sources/runtime-fixes-2026-10-10",
+  "changes": [
+    "Added llama.cpp b11537 and b11540 prerelease rows with fix and benchmark caveats.",
+    "Added Ollama v0.40.2 stable / Latest; preserved v0.40.0 as historical and existing MLX minimum routes.",
+    "Added six before/after PR-branch reports; not release-binary measurements.",
+    "Synced software-version filters, migration notes and announcements across fa/en/es."
+  ],
+  "unchangedCollections": [
+    "models",
+    "modelProfiles",
+    "artifacts",
+    "artifactListings",
+    "workloads",
+    "hardwareConfigurations",
+    "benchmarkRuns",
+    "publishedEvaluations",
+    "applicationAssessments",
+    "modelUseGuidance"
+  ],
+  "catalogCaveat": "No existing Arc Pro B70 GPU row or Qwen3.8-Flash-Next performance row found; results added only to reported performance, without new hardware specifications or model profiles.",
+  "mtpCaveat": "No separate MTP performance test found in PR #30160; b11537 is a retesting baseline, not proof of MTP support or a speed claim.",
+  "linuxCaveat": "The original PR #29809 author test is Windows-only; separate fork-port mentions and other-GPU reports are not merged into that protocol.",
+  "runtimeTested": false,
+  "hardwareAndWizardSourceHashes": {
+    "src/lib/gpu-data.ts": "d84c7ff593f859f7984e05142ac6bcd9e906fac1eb8605c987282a09ec216717",
+    "src/lib/server-data.ts": "b0793409346fe6c586f08372b914e91e81605d2804fdbb483e4d40b71e9419e0",
+    "src/lib/llm/wizard-candidates.ts": "bd847b1cbf97630182b7de3c7eedc28c47835deb9c02bb32446e2c08121adb38",
+    "data/llm/v0.2.0/data/hardware.json": "3bb4e630a95d0f95763a442e778b0d9f90fa36f71865d78669ea9068a5ea57f1",
+    "data/llm/v0.2.0/data/memory-policy.json": "a4b930f1bae2ad3fd4d218e43f4568601c35b4fa0fab3900627318a6f470a2b9"
+  },
+  "verification": {
+    "relatedTests": {
+      "passed": 40,
+      "failed": 0
+    },
+    "datasetValidation": "passed",
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed; NODE_OPTIONS=--max-old-space-size=3072 after an initial process termination",
+    "sitemapIndexableUrls": 251,
+    "live": "All three LLM pages contain the three releases; compiled data and translation assets match the validated build."
+  }
+}

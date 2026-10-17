@@ -303,3 +303,20 @@ families.push({
     "evidence:bespokelabs-nimble-9b-card"
   ]
 });
+families.push({
+  "id": "family:reflection-beam",
+  "name": "Beam",
+  "publisher": "Reflection",
+  "evidenceIds": [
+    "evidence:reflection-beam-announcement"
+  ]
+});
+families.push({
+  "id": "family:k2-horizon",
+  "name": "K2 Horizon",
+  "publisher": "IFM",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:ifm-k2-horizon-gguf-collection"
+  ]
+});

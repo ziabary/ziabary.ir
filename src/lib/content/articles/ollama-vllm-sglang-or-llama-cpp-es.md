@@ -5,7 +5,7 @@ translationGroup: ollama-vllm-sglang-or-llama-cpp
 lang: es
 date: '2026-09-15'
 faDate: '2026-09-15'
-updated: "2026-09-28"
+updated: "2026-10-11"
 draft: false
 math: false
 category: Modelos de lenguaje
@@ -127,6 +127,27 @@ El primer factor representa claves y valores. Con grouped-query attention se uti
 Los tokens incluyen entrada y salida acumuladas. El cálculo excluye prefijos compartidos, cuantización de caché, sobrecarga de asignación, pesos y espacios de trabajo. Supone que cada secuencia ha alcanzado la longitud indicada; un motor con asignación dinámica no tiene por qué reservar el máximo de cada solicitud desde su llegada. MLA, attention híbrida y capas con ventana deslizante necesitan otro tratamiento.
 
 La última fila supera 24 GiB antes de cargar los pesos. Ejecutar un modelo para una persona dice poco sobre ocho conversaciones largas. [Elegir el tamaño del modelo (en persa)](/articles/right-model-size-for-the-task/) y [comparar 24 y 48 GB en una RTX 4090 (en persa)](/articles/llms-on-rtx-4090-24gb-vs-48gb/) conectan este presupuesto con decisiones concretas.
+
+## Aislamiento de sesiones y caché
+
+Una cola que funciona y un buen rendimiento no demuestran que cada respuesta utilice el contexto de la solicitud correcta. Reutilizar el cálculo de un prefijo compartido debe respetar la separación entre los historiales y contenidos de los usuarios. Esa separación necesita una prueba propia.
+
+El [prelanzamiento b11552 de `llama-server`, del 10 de octubre de 2026](https://github.com/ggml-org/llama.cpp/releases/tag/b11552), corrige un fallo concreto. Una solicitud con `id_slot` fijo podía cargar una entrada de caché RAM en un slot ocupado antes de pasar a espera; la generación en curso continuaba entonces con el contexto de otra solicitud. Con la corrección, el slot ocupado permanece intacto hasta quedar libre.
+
+El [informe del proyecto en el PR #30295](https://github.com/ggml-org/llama.cpp/pull/30295#issuecomment-6099989146) usó M2 Ultra, Metal, `Qwen3.8-27B-UD-Q4_K_M` con mmproj, `--parallel 10`, `--kv-unified`, `--no-cache-idle-slots` y `--cache-ram 8192`. Dos clientes enviaban solicitudes al mismo `id_slot=7`, junto con tráfico de otros usuarios:
+
+| Build probado | Pares de solicitudes simultáneas | Cruce de identificador o salida de otra solicitud | Respuestas dañadas |
+|---|---:|---:|---:|
+| b11146, sin la corrección | 30 | 1 | 9 |
+| Rama corregida del PR, build 11550 | 60 | 0 | 0 |
+
+Son resultados limitados del proyecto, no una prueba directa del binario publicado b11552. Una ronda también agotó el plazo de 60 segundos del cliente mientras esperaba el slot. El release y el PR no informan de un CVE ni de una divulgación real de datos. Sí confirman un fallo de aislamiento de contexto con riesgo potencial de divulgación entre usuarios; su alcance sin slot pinning sigue sin conocerse.
+
+**En un servicio multiusuario que combine `id_slot` fijo y caché de prompts en RAM, b11552 o posterior es la versión mínima que contiene esta corrección. No use esa combinación hasta actualizar y superar la prueba de aceptación de aislamiento.** Una prueba propuesta:
+
+- Asignar a varios usuarios de prueba identificadores aleatorios y únicos, o canaries, y pedir al modelo que devuelva el del usuario actual.
+- Preparar la caché con contextos distintos. Enviar la solicitud de otro usuario al mismo slot fijo mientras la generación está activa, manteniendo la caché y el tráfico de otros usuarios.
+- Comparar cada respuesta con los canaries y las salidas de los demás. Cualquier cruce es un fallo crítico que impide aceptar el despliegue. Unas pocas ejecuciones sin errores no sustituyen la prueba de la configuración real.
 
 ## Los nombres de configuración no son unidades intercambiables
 

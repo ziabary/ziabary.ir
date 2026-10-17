@@ -17,6 +17,7 @@ import rawSpecialized from '../../../data/llm/v0.2.0/data/specialized-models.jso
 import rawSoftware from '../../../data/llm/v0.2.0/data/software-guidance.json';
 import rawStartingPoints from '../../../data/llm/v0.2.0/data/task-starting-points.json';
 import { evaluationLanguage, samePublishedResult } from './evaluation';
+import { kvCacheGiB } from './memory-planning';
 import type { LlmGuideRepository, Evidence, PublishedEvaluation, ArtifactListing } from './schema';
 export interface ReportedPerformance {
   id: string; publicationGroup: string; modelRepository?: string; modelLabel?: string;
@@ -137,7 +138,7 @@ function enrichResearchRepository(base: LlmGuideRepository): LlmGuideRepository 
       repositoryUrl, repositoryRevision: artifact.repositoryRevision,
       filesUrl: `${repositoryUrl}/tree/${artifact.repositoryRevision}`,
       files: artifact.files.map(file => ({ path: file.name, bytes: file.bytes, url: `${repositoryUrl}/resolve/${artifact.repositoryRevision}/${file.name}` })),
-      totalBytes: artifact.weightFileBytes, verifiedOn: researchAsOf,
+      totalBytes: artifact.weightFileBytes, verifiedOn: previous?.verifiedOn ?? researchAsOf,
       scopeNote: t('research.0656', faNumber(artifact.artifactContextLimitTokens, 0)),
       evidenceIds: [...new Set([...(previous?.evidenceIds ?? []), ...artifact.sourceIds.map(researchEvidenceId)])]
     };
@@ -146,11 +147,15 @@ function enrichResearchRepository(base: LlmGuideRepository): LlmGuideRepository 
   return { ...base, evidence: [...base.evidence, ...researchEvidence], publishedEvaluations, artifactListings };
 }
 function calculateMemory(artifact: MemoryArtifact, context: number, active: number, gpuCount = 1, cpu = false): MemoryPlan | undefined {
-  if (!['llama', 'qwen2', 'qwen3', 'qwen3_moe', 'qwen3moe', 'command-r', 'phi3', 'granite'].includes(artifact.architecture)) return undefined;
+  if (!['llama', 'qwen2', 'qwen3', 'qwen3_moe', 'qwen3moe', 'command-r', 'phi3', 'granite', 'k2_horizon'].includes(artifact.architecture)) return undefined;
+  // b11454 disables tensor parallel for K2. Aggregate VRAM is not a reviewed
+  // deployment route; keep its estimates scoped to a single device.
+  if (artifact.architecture === 'k2_horizon' && gpuCount !== 1) return undefined;
   if (!Number.isInteger(context) || context < 1 || context > artifact.artifactContextLimitTokens || !Number.isInteger(active) || active < 1 || !Number.isInteger(gpuCount) || gpuCount < 1) return undefined;
   if (![artifact.layers, artifact.kvHeads, artifact.headDim, artifact.weightFileBytes].every(value => Number.isFinite(value) && value > 0)) return undefined;
   const weightGiB = artifact.weightFileBytes / 2 ** 30;
-  const kvGiB = 2 * artifact.layers * artifact.kvHeads * artifact.headDim * context * active * memoryPolicy.kvBytesPerElement / 2 ** 30;
+  const kvGiB = kvCacheGiB(artifact.layers, artifact.kvHeads, artifact.headDim, context, active, memoryPolicy.kvBytesPerElement);
+  if (!Number.isFinite(kvGiB)) return undefined;
   const reserveGiB = cpu ? memoryPolicy.cpuReserveGiB : memoryPolicy.gpuReserveGiBPerDevice * gpuCount;
   return { weightGiB, kvGiB, reserveGiB, budgetGiB: weightGiB + kvGiB + reserveGiB };
 }

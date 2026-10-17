@@ -1,0 +1,30 @@
+{
+  "reviewedOn": "2026-10-07",
+  "releaseUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+  "publishedAt": "2026-09-25T03:31:52Z",
+  "latestAtReview": true,
+  "releaseChannel": "stable",
+  "architectureScope": [
+    "Qwen3.8",
+    "Qwen3.6",
+    "Qwen3.5",
+    "Gemma 4",
+    "Nimble",
+    "Tev1",
+    "Clef",
+    "Clef Flash",
+    "EmbeddingGemma 2"
+  ],
+  "hardwareScope": "Apple Silicon only; enabled architectures automatically use MLX",
+  "artifactScope": "Deployment compatibility only; no additional per-size weight inventories or quantization tags inferred",
+  "unmeasured": [
+    "Persian quality",
+    "speed",
+    "runtime memory"
+  ],
+  "sha256": {
+    "release.json": "412bcabeaa8bb5dd6f2354c2e49b1c03220531b5ec16eac16f11311e1646dc95",
+    "latest.json": "412bcabeaa8bb5dd6f2354c2e49b1c03220531b5ec16eac16f11311e1646dc95",
+    "LICENSE": "5934ed2ce0d15154bcdb9c85203210abac0da4314af34081e36df4599f90b226"
+  }
+}

@@ -35,7 +35,7 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': dataset.models.length, 'model-suitability': 117, 'hardware-feasibility': 0,
+    'model-catalog': dataset.models.length, 'model-suitability': 123, 'hardware-feasibility': 0,
     'software-products': dataset.softwareReleases.length,
     'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': dataset.specializedAssessments.length
   });
@@ -67,9 +67,9 @@ test('all three general start presets begin without hidden exclusions', () => {
   }
 });
 
-test('the completed reading collection contains fourteen published manuscripts and no placeholders', () => {
-  assert.equal(guide.llmArticleSlugs.length, 14);
-  assert.equal(new Set(guide.llmArticleSlugs).size, 14);
+test('the completed reading collection contains fifteen published manuscripts and no placeholders', () => {
+  assert.equal(guide.llmArticleSlugs.length, 15);
+  assert.equal(new Set(guide.llmArticleSlugs).size, 15);
   for (const slug of guide.llmArticleSlugs) {
     const manuscript = `src/lib/content/articles/${slug}.md`;
     assert.ok(existsSync(manuscript), slug);
@@ -299,7 +299,7 @@ test('real snapshot family, size and evidence filters retain unknown semantics',
   assert.ok(small.length > 0);
   assert.ok(small.every(row => row.facets['model-size'].canonicalNumber <= 1));
   const suitability = adapters.adaptModelSuitability(guide.llmRepository);
-  assert.equal(suitability.reduce((n, row) => n + Object.values(row.matrixCells).filter(cell => cell.value.state === 'known').length, 0), 136);
+  assert.equal(suitability.reduce((n, row) => n + Object.values(row.matrixCells).filter(cell => cell.value.state === 'known').length, 0), 137);
   assert.ok(guide.llmRepository.applicationAssessments.every(a => a.outcome.state === 'not-measured'));
 });
 
@@ -367,7 +367,7 @@ test('every positive matrix cell has an explicitly sourced assessment and empty 
     assert.ok(model, row.label);
     assert.ok(repo.applicationAssessments.some(a => a.modelVersionId === model.id && a.applicationId === column.id && a.evidenceIds.some(id => repo.evidence.some(e => e.id === id))));
   }
-  assert.equal(positive, 136);
+  assert.equal(positive, 137);
   assert.equal(empty, rows.length * columns.length - positive);
 });
 
@@ -452,8 +452,8 @@ test('component counts are visible but do not enter logical-total filters; conte
 test('release, review and partial dates are distinct in rendering, filtering and sorting', async () => {
   const { sourceDateValue, sourceDateRange } = presentation;
   const ollama = adapters.adaptSoftwareProducts(guide.llmRepository).find(row => row.label.startsWith('Ollama'));
-  assert.equal(ollama.details['released-on'].raw, '2026-09-05');
-  assert.equal(ollama.details['last-reviewed'].raw, '2026-10-04');
+  assert.equal(ollama.details['released-on'].raw, '2026-10-08');
+  assert.equal(ollama.details['last-reviewed'].raw, '2026-10-10');
   const month = sourceDateValue('2025-02'), year = sourceDateValue('2023');
   assert.equal(month.raw, '2025-02');
   assert.equal(month.dateRange.precision, 'month');
@@ -514,6 +514,12 @@ test('catalog models have sourced profiles, downloads and run paths; assessed mo
   for (const model of dataset.models) {
     const profile = dataset.modelProfiles.find(item => item.modelVersionId === model.id);
     assert.ok(profile?.introduction.trim(), model.id);
+    if (model.releaseStatus === 'announced') {
+      assert.ok(profile.downloadSearchNote?.trim(), model.id);
+      assert.equal(profile.runGuides.length, 0);
+      assert.ok(!dataset.artifactListings.some(item => item.modelVersionId === model.id));
+      continue;
+    }
     assert.ok(profile.runGuides.length && profile.runGuides.every(run => run.engine.trim() && run.label.trim() && run.href.startsWith('https://') && run.evidenceIds.length));
     const catalogOnly = ['model:liquidai-lfm2-5-vl-3b', 'model:liquidai-lfm2-5-vl-3b-dspark', 'model:qwen-image-2-1', 'model:zai-org-glm-5', 'model:zai-org-glm-5-1', 'model:zai-org-glm-5-2', 'model:zai-org-glm-5-3-bf16', 'model:moonshotai-kimi-k2-6', 'model:moonshotai-kimi-k2-7-code', 'model:moonshotai-kimi-k3', 'model:cohere-embed-v5-pro', 'model:cohere-embed-v5-fast', 'model:cloudflare-clef', 'model:cloudflare-clef-flash', 'model:coherelabs-north-small-translate-1-0', 'model:bespokelabs-bespoke-nimble-9b', 'model:zai-org-glm-5-3-flash'];
     assert.equal(dataset.modelUseGuidance.some(item => item.modelVersionId === model.id && item.description.trim() && item.evidenceIds.length), !catalogOnly.includes(model.id), model.id);
@@ -525,7 +531,7 @@ test('catalog models have sourced profiles, downloads and run paths; assessed mo
 
 test('default usage guide explains all RAG roles without an experimental outcome', () => {
   const rows = adapters.adaptModelUseGuidance(dataset);
-  assert.equal(rows.length, 117);
+  assert.equal(rows.length, 123);
   const config = views.modelUseViewConfig();
   assert.equal(config.matrixColumns, undefined);
   const rag = filtering.filterLlmRows(rows, config.filters, { application: ['enterprise-rag'] }, '');
@@ -540,7 +546,7 @@ test('default usage guide explains all RAG roles without an experimental outcome
 
 test('optional usage matrix contains only generators and retains known text-only limitations', () => {
   const rows = adapters.adaptModelUseMatrix(dataset);
-  assert.equal(rows.length, 89);
+  assert.equal(rows.length, 94);
   assert.ok(!rows.some(row => /bge-m3|reranker|embedding|e5-small/.test(row.modelId)));
   const gemma = rows.find(row => row.modelId === 'model:google-gemma-3-1b-it');
   assert.equal(gemma.matrixCells['document-vision'].value.display, 'ورودی متنی');
@@ -628,12 +634,12 @@ test('shared run notes preserve engine scope, commands and engine-specific restr
       assert.equal(guide.href, original.href);
       assert.deepEqual(guide.evidenceIds, original.evidenceIds);
       for (const condition of original.conditions) {
-        assert.ok(guide.conditions.includes(condition) || result.shared.some(note => note.text === condition && note.engines.includes(guide.engine)), profile.id);
+        assert.ok(guide.conditions.includes(condition) || result.shared.some(note => note.text === condition && note.engines.includes(original.engineLabel ?? guide.engine)), profile.id);
       }
     });
     for (const note of result.shared) {
       assert.ok(!result.guides.some(guide => guide.conditions.includes(note.text)));
-      assert.deepEqual(note.engines, [...new Set(profile.runGuides.filter(guide => guide.conditions.includes(note.text)).map(guide => guide.engine))]);
+      assert.deepEqual(note.engines, [...new Set(profile.runGuides.filter(guide => guide.conditions.includes(note.text)).map(guide => guide.engineLabel ?? guide.engine))]);
     }
   }
   const bge = dataset.modelProfiles.find(profile => profile.modelVersionId === 'model:baai-bge-m3');

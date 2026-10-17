@@ -1,0 +1,255 @@
+{
+  "id": "peivast-night-12-20261014",
+  "reviewedAt": "2026-10-14",
+  "title": "دوازدهمین میهمانی شب پیوست",
+  "eventSource": "https://peivast.com/shabe-peivast/",
+  "eventNumberEvidence": "User supplied the edition number; the photographic backdrop also reads دوازدهمین.",
+  "eventDate": null,
+  "datePolicy": "Event day is unconfirmed. The official page still describes the 11th edition. The displayed date is explicitly labelled انتشار تصاویر and refers to publication on this site, 2026-10-14 / ۲۲ مهر ۱۴۰۵. No date was inferred from file names.",
+  "peoplePolicy": "Neutral portrait and two-person souvenir captions; no second person was identified from the photos.",
+  "images": [
+    {
+      "source": "/home/user/Downloads/photo_8_2026-10-10_16-23-43.jpg",
+      "path": "static/images/gallery/peivast-night-12-portrait.jpg",
+      "sha256": "c4f81de8bc8e2ea80b7c3d2e3af721de8554e0cbe7d9b9d10728f18d207fff90",
+      "originalUnmodified": true,
+      "dimensions": [
+        1280,
+        853
+      ],
+      "liveOriginalMatches": true
+    },
+    {
+      "source": "/home/user/Downloads/photo_4_2026-10-10_16-25-31.jpg",
+      "path": "static/images/gallery/peivast-night-12-souvenir.jpg",
+      "sha256": "21816b49a355702648ca2652802dae786efe6ec88b78f440dc2f2cce012cc3ae",
+      "originalUnmodified": true,
+      "dimensions": [
+        1280,
+        853
+      ],
+      "liveOriginalMatches": true
+    }
+  ],
+  "changedFiles": [
+    "src/lib/gallery.ts",
+    "src/lib/components/GalleryCollection.svelte",
+    "static/images/gallery/peivast-night-12-portrait.jpg",
+    "static/images/gallery/peivast-night-12-souvenir.jpg",
+    "docs/content-reviews/peivast-night-12-2026-10-14.json"
+  ],
+  "validation": {
+    "localBuild": "passed",
+    "releaseBuild": "passed",
+    "check": {
+      "localErrors": 0,
+      "localWarnings": 0,
+      "releaseErrors": 0,
+      "releaseWarnings": 0
+    },
+    "existingGalleryTestsPassed": 6,
+    "sitemapUrls": 258,
+    "jsonLdBlocks": 267,
+    "shortLinkDestinations": 317,
+    "localBrowser": {
+      "origin": "http://127.0.0.1:4195",
+      "results": [
+        {
+          "width": 390,
+          "theme": "light",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        },
+        {
+          "width": 1280,
+          "theme": "light",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        },
+        {
+          "width": 320,
+          "theme": "dark",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        }
+      ],
+      "runtimeExceptions": 0
+    },
+    "releaseBrowser": {
+      "origin": "http://127.0.0.1:4198",
+      "results": [
+        {
+          "width": 390,
+          "theme": "light",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        },
+        {
+          "width": 1280,
+          "theme": "light",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        },
+        {
+          "width": 320,
+          "theme": "dark",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        }
+      ],
+      "runtimeExceptions": 0
+    },
+    "releaseGuard": {
+      "publishedRouteSetPreserved": 258,
+      "existingFeaturedImagesPreserved": [
+        "/images/articles/imf-gpu-investment-warning/featured.png",
+        "/images/articles/what-teachers-should-know-about-ai/featured.png"
+      ],
+      "existingNationalCoverPreserved": true,
+      "localOnlyImageEditsExcluded": true
+    }
+  },
+  "releasePolicy": {
+    "isolatedSource": "/tmp/ziabary-peivast-night12-release",
+    "preservedExistingPublicRouteSet": true,
+    "preservedLiveFeaturedSelection": true,
+    "preservedLiveNationalAiArticleCover": true,
+    "localOnlyImageEditsNotIncluded": true,
+    "remoteDeletionsDisabled": true
+  },
+  "publication": {
+    "status": "published",
+    "date": "2026-10-14",
+    "url": "https://ziabary.ir/media/#photos",
+    "deployment": {
+      "uploaded": 2075,
+      "unchanged": 3665,
+      "deleted": 0
+    },
+    "liveBrowser": {
+      "origin": "https://ziabary.ir",
+      "results": [
+        {
+          "width": 390,
+          "theme": "light",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        },
+        {
+          "width": 1280,
+          "theme": "light",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        },
+        {
+          "width": 320,
+          "theme": "dark",
+          "title": "دوازدهمین میهمانی شب پیوست",
+          "date": "انتشار تصاویر: ۲۲ مهر ۱۴۰۵",
+          "count": " ۲ تصویر",
+          "source": "https://peivast.com/shabe-peivast/",
+          "overflow": false,
+          "display": "block",
+          "lightboxNavigation": true,
+          "zoom": true,
+          "originalDimensions": [
+            1280,
+            853
+          ],
+          "escapeClose": true
+        }
+      ],
+      "runtimeExceptions": 0
+    },
+    "liveOriginalFilesMatch": true,
+    "unrelatedLiveCoverAndFeaturedSelectionPreserved": true
+  }
+}

@@ -2244,3 +2244,23 @@ applicationAssessments.push({
     "evidence:zai-org-glm-4-7-flash-card"
   ]
 });
+applicationAssessments.push({
+  "id": "application-assessment:google-embeddinggemma-2-enterprise-rag",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "modelRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "applicationId": "enterprise-rag",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "primaryPurpose": true,
+  "summary": "بازیابی چندوجهی محلی",
+  "rationale": "هدف طراحی: بردارسازی متن و رسانه در فضای مشترک؛ ارزیابی فارسی جدا ثبت نشده است.",
+  "limitations": [
+    "پیش از انتخاب برای RAG متنی فارسی، بازیابی روی پیکرهٔ فارسی را با پرسش‌ها و اسناد یکسان در ۷۶۸ و ۲۵۶ بعد مقایسه کنید؛ کیفیت فارسی و حافظهٔ واقعی نامعلوم‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card",
+    "evidence:embeddinggemma-2-developer-guide"
+  ]
+});

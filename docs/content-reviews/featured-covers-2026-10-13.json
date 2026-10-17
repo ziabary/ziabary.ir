@@ -1,0 +1,112 @@
+{
+  "id": "featured-covers-20261013",
+  "date": "2026-10-13",
+  "scope": "Local preview only",
+  "featuredSelection": [
+    "what-does-100-concurrent-users-mean-for-an-ai-assistant"
+  ],
+  "selectionAuthorization": "User clarification: فقط ۱۰۰ کاربر هم‌زمان. National AI leadership note receives a cover update only.",
+  "images": [
+    {
+      "path": "static/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/featured.png",
+      "purpose": "Persian featured carousel",
+      "source": "static/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+      "tool": "built-in imagegen",
+      "prompt": "Edit intent: precise-object-edit. Edit ONLY the provided Persian cover of the article about 100 concurrent users. Treat it as the edit target, not a loose reference. Make one limited change: remove the large Persian headline and its one-line subtitle at the very top, filling only their lettering footprints with the same dark glass-office background already behind them. Keep the original seven thought bubbles with their complete existing texts and icons unchanged. Keep every person, face, pose, clothing, hand, laptop, document, book, mug, desk, question mark and lighting unchanged. Preserve the original framing and 4:3 canvas proportions. Do not add or invent a scene, do not reorganize the composition, do not replace the people, do not create negative space or gradients anywhere else. The website will overlay its own headline in its existing featured carousel. The result must be visibly the same supplied article cover with just those two top introductory text lines removed.",
+      "edit": "Remove the top headline/subtitle; retain the article's scene and explanatory bubbles.",
+      "originalCoverRetained": true,
+      "sha256": "0d10c70548a360219e3e6123e565359b06bc7a1ea2fc29f6bfd5a59c8376a0b7"
+    },
+    {
+      "path": "static/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+      "purpose": "Article cover and media card",
+      "source": "User-attached Zavieh building poster",
+      "tool": "built-in imagegen",
+      "prompt": "Edit intent: precise-object-edit. Among the recent images, use ONLY the user-attached Zavieh poster showing the actual facade and entrance sign of Iran's national AI organization (the vertical white-and-blue poster headed «نگاهی به وظایف و ویژگی‌های مطلوب رئیس سازمان ملی هوش مصنوعی»). Do NOT use the AI-assistant meeting images. Make a restrained photo cover from that poster: remove the upper white editorial headline/logo panel by reframing to the existing building-photo portion, keeping the full entrance signage, facade, windows and architecture exactly as shown. Keep the original Persian building sign «سازمان ملی هوش مصنوعی» unchanged and readable. Preserve the photographic perspective and ordinary daylight. Output a simple landscape crop of this existing photograph, with the building and sign visible; no invented people, office interiors, flags, robots, decorative AI graphics, replacement architecture, or extra text. Do not redraw or replace the building. This should look like the same photo portion of the attached poster, not a newly imagined scene.",
+      "edit": "Reframe to the facade portion of the supplied poster; preserve the building and entrance sign.",
+      "originalPublisherCoverRetained": "static/images/articles/national-ai-organization-leadership-qualities/cover.webp",
+      "sha256": "cc7b8057ee3ddbf2bd3a96469c948501cc6cdd5255d2f6b13adc11427ff5a253"
+    }
+  ],
+  "rejectedMeetingImageApplied": false,
+  "remoteDeploymentPerformed": false,
+  "validation": {
+    "status": "passed",
+    "build": "npm run build",
+    "check": {
+      "command": "npm run check --ignore-scripts (assets prepared by build)",
+      "errors": 0,
+      "warnings": 0
+    },
+    "sitemapUrls": 258,
+    "jsonLdBlocks": 267,
+    "shortLinkDestinations": 317,
+    "browser": {
+      "results": [
+        {
+          "width": 390,
+          "theme": "light",
+          "featured": {
+            "href": "/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/",
+            "image": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/featured.png",
+            "subtitle": "نرخ درخواست، طول زمینه و کیفیت خدمت، مبنای انتخاب مدل و GPU هستند.",
+            "count": 3,
+            "nationalSelected": false,
+            "overflow": false
+          },
+          "cover": {
+            "src": "/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+            "credit": "بازقاب‌بندی تصویر ارسالی از زاویه با هوش مصنوعی",
+            "og": "https://ziabary.ir/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+            "overflow": false
+          }
+        },
+        {
+          "width": 1280,
+          "theme": "light",
+          "featured": {
+            "href": "/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/",
+            "image": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/featured.png",
+            "subtitle": "نرخ درخواست، طول زمینه و کیفیت خدمت، مبنای انتخاب مدل و GPU هستند.",
+            "count": 3,
+            "nationalSelected": false,
+            "overflow": false
+          },
+          "cover": {
+            "src": "/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+            "credit": "بازقاب‌بندی تصویر ارسالی از زاویه با هوش مصنوعی",
+            "og": "https://ziabary.ir/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+            "overflow": false
+          }
+        },
+        {
+          "width": 320,
+          "theme": "dark",
+          "featured": {
+            "href": "/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/",
+            "image": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/featured.png",
+            "subtitle": "نرخ درخواست، طول زمینه و کیفیت خدمت، مبنای انتخاب مدل و GPU هستند.",
+            "count": 3,
+            "nationalSelected": false,
+            "overflow": false
+          },
+          "cover": {
+            "src": "/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+            "credit": "بازقاب‌بندی تصویر ارسالی از زاویه با هوش مصنوعی",
+            "og": "https://ziabary.ir/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+            "overflow": false
+          }
+        }
+      ],
+      "runtimeExceptions": 0,
+      "mediaCoverVerified": true
+    }
+  },
+  "changedFiles": [
+    "src/lib/content/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant.md",
+    "src/lib/content/articles/national-ai-organization-leadership-qualities.md",
+    "static/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/featured.png",
+    "static/images/articles/national-ai-organization-leadership-qualities/building-cover.png",
+    "docs/content-reviews/featured-covers-2026-10-13.json"
+  ]
+}

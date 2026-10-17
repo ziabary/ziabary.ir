@@ -45,7 +45,7 @@ const gpuTextFields = [
 ] as const satisfies readonly (keyof GpuRecord)[];
 const serverTextFields = [
   'model', 'cpu', 'memory', 'storage', 'expansion', 'power', 'acceleratorSummary',
-  'bestFor', 'caution', 'sourceLabel'
+  'bestFor', 'caution', 'sourceLabel', 'systemType', 'dimensions', 'topologyNote', 'availabilityNote'
 ] as const satisfies readonly (keyof ServerRecord)[];
 
 const localizedGpus: Partial<Record<'en' | 'es', GpuRecord[]>> = {};

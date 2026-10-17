@@ -288,5 +288,16 @@
   "برد اصلاح‌شدهٔ غیررسمی": "Placa modificada no oficial",
   "اعلام فروشنده": "Declarado por el vendedor",
   "فروشندهٔ برد اصلاح‌شده": "Vendedor de la placa modificada",
-  "نمونهٔ فروشنده ↗": "Ejemplo del vendedor ↗"
+  "نمونهٔ فروشنده ↗": "Ejemplo del vendedor ↗",
+  "مایع و هوا": "Líquido y aire",
+  "کارت یا شتاب‌دهنده": "Tarjetas o aceleradores",
+  "ابعاد بدنه": "Dimensiones del chasis",
+  "این ردیف برای انتخاب کارت مستقل نیست": "Esta fila no sirve para elegir una tarjeta independiente",
+  "زمان عرضه": "Disponibilidad",
+  "سرورها و رایانه‌های AI": "Servidores y equipos de IA",
+  "از لپ‌تاپ و میز کار تا سرور رک": "De portátiles y sobremesas a servidores de rack",
+  "برای اجرای محلی مدل، گاهی یک رایانهٔ رومیزی یا لپ‌تاپ کافی است و گاهی به سرور رک نیاز دارید. این جدول هر دو را کنار هم می‌آورد. اگر کارت جداگانه می‌خرید، «کارت من» را انتخاب کنید تا شاسی‌های مناسب آن را ببینید؛ سامانه‌های یکپارچه با شتاب‌دهندهٔ خودشان مقایسه می‌شوند. هر ردیف به منبع رسمی پیوند دارد.": "La inferencia local puede requerir un sobremesa, un portátil o un servidor de rack. Esta tabla reúne ambos tipos. Si compra una GPU independiente, elija «Mi tarjeta» para ver chasis adecuados; los sistemas integrados se comparan con sus propios aceleradores. Cada fila enlaza una fuente oficial.",
+  "مدل و ظرفیت حافظه، نسخهٔ سیستم‌عامل و پشتیبانی نرم‌افزار اجرای مدل را با پیکربندی سفارش تطبیق دهید.": "Compruebe modelo, memoria, versión del sistema y soporte del software de inferencia en la configuración del pedido.",
+  "بُرد یکپارچه / اتصال اختصاصی": "Placa integrada / interconexión dedicada",
+  "افزودن به مقایسه": "Añadir a la comparación"
 }

@@ -8,6 +8,7 @@
   import MediaEntry from '$lib/components/MediaEntry.svelte';
   import MediaClip from '$lib/components/MediaClip.svelte';
   import { mediaItems, mediaSources } from '$lib/news';
+  import { mediaPublications } from '$lib/media-publications.mjs';
   import { videoItems } from '$lib/videos';
   import GalleryCollection from '$lib/components/GalleryCollection.svelte';
 
@@ -22,27 +23,13 @@
   let kind = 'همه';
   let activeTab: MediaTab = 'published';
 
-  const authoredMedia = articles
-    .filter((article) => article.showInMedia && article.external)
-    .map((article) => ({
-      title: article.title,
-      source: article.source ?? 'منبع اصلی',
-      kind: article.mediaKind ?? 'یادداشت',
-      summary: article.excerpt,
-      url: article.external!,
-      internalUrl: `/articles/${article.slug}/`,
-      date: article.date,
-      faDate: article.faDate,
-      coverImage: article.mediaCover ?? article.cover ?? null,
-      coverImageAlt: article.mediaCoverAlt ?? article.title
-    }));
-
-  const publishedItems = [...authoredMedia, ...mediaItems].sort((a, b) => b.date.localeCompare(a.date));
+  const publishedItems = mediaPublications(articles, mediaItems);
   const sortedVideos = [...videoItems].sort((a, b) => b.date.localeCompare(a.date));
   tabs[0].count = publishedItems.length;
   const kinds = ['همه', ...new Set(publishedItems.map((item) => item.kind))];
   const persianNumber = new Intl.NumberFormat('fa-IR');
   const videoPlatforms: Record<string, string> = {
+    'aparat.com': 'آپارات',
     'instagram.com': 'اینستاگرام',
     'telewebion.net': 'تلوبیون',
     'telewebion.com': 'تلوبیون',

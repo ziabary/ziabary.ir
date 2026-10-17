@@ -268,5 +268,104 @@
     "accessedOn": "2026-09-15",
     "kind": "artifact-metadata",
     "locator": "gguf.architecture, gguf.context_length, siblings.size, sha"
+  },
+  {
+    "id": "k2h-0-9b-config",
+    "url": "https://huggingface.co/IFM/K2-Horizon-0.9B/raw/383cb66347be4d361138e8157c2f8779b7440752/config.json",
+    "title": "IFM/K2-Horizon-0.9B memory geometry",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-0-9b-files",
+    "url": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF/tree/7833762821bbeeaf6f0e7519af8b0599b7056807",
+    "title": "IFM/K2-Horizon-0.9B official Q4_K_M manifest",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-3-7b-config",
+    "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/raw/d6e5432c59637093c0e125e791d89ea4a0b53559/config.json",
+    "title": "IFM/K2-Horizon-3.7B memory geometry",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-3-7b-files",
+    "url": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF/tree/1751cb49e31823f4401fc1d195db8a2c61a79783",
+    "title": "IFM/K2-Horizon-3.7B official Q4_K_M manifest",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-7b-config",
+    "url": "https://huggingface.co/IFM/K2-Horizon-7B/raw/3b6ae394c1b863c27a306d168b25555837955192/config.json",
+    "title": "IFM/K2-Horizon-7B memory geometry",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-7b-files",
+    "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/9fb01f7b397994455262f4b8256e4e00e4949ea9",
+    "title": "IFM/K2-Horizon-7B official Q4_K_M manifest",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-32b-config",
+    "url": "https://huggingface.co/IFM/K2-Horizon-32B/raw/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/config.json",
+    "title": "IFM/K2-Horizon-32B memory geometry",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-32b-files",
+    "url": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF/tree/e9cf2daf9fa245279aae328a545f1de7589e9b75",
+    "title": "IFM/K2-Horizon-32B official Q4_K_M manifest",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-mova-36b-a4b-config",
+    "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/raw/cca48b6631d03c338a0e1d8beb0c392af8becbd3/config.json",
+    "title": "IFM/K2-Horizon-MoVA-36B-A4B memory geometry",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-mova-36b-a4b-files",
+    "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF/tree/b318d1343a9460b05b0e04984fdd268cc5ef647c",
+    "title": "IFM/K2-Horizon-MoVA-36B-A4B official Q4_K_M manifest",
+    "publisher": "IFM",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "Pinned configuration and file bytes"
+  },
+  {
+    "id": "k2h-llama-graph",
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b11454/src/models/k2-horizon.cpp",
+    "title": "llama.cpp b11454 K2 dense and MoVA KV graph",
+    "publisher": "ggml-org",
+    "accessedOn": "2026-10-07",
+    "kind": "model-configuration",
+    "locator": "build_routed_value; Kcur/Vcur reshape to head_dim × KV_heads; build_attn_inp_kv and build_attn"
   }
 ]

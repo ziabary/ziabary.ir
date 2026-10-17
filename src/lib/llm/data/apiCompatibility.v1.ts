@@ -10,7 +10,7 @@ apiCompatibility.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "endpoints": [
       "/api/generate"
     ],
@@ -31,7 +31,7 @@ apiCompatibility.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "endpoints": [
       "/api/chat"
     ],
@@ -52,7 +52,7 @@ apiCompatibility.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "endpoints": [
       "/api/embed"
     ],
@@ -348,7 +348,7 @@ apiCompatibility.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "endpoints": [
       "/v1/chat/completions"
     ],
@@ -371,7 +371,7 @@ apiCompatibility.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "endpoints": [
       "/v1/embeddings"
     ],
@@ -394,7 +394,7 @@ apiCompatibility.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "endpoints": [
       "/v1/responses"
     ],
@@ -500,5 +500,32 @@ apiCompatibility.push({
   "statusReason": "ذخیرهٔ Responses پیش‌فرض غیرفعال است؛ بازیابی پاسخ، previous_response_id و درخواست پس‌زمینه به --enable-response-store نیاز دارند. در استقرار با جداسازی پردازش ورودی و تولید خروجی (PD)، این گزینه قابل فعال‌سازی نیست.",
   "limitations": [
     "تولید پاسخ عادی و جریان پاسخ بدون فعال‌کردن ذخیره‌سازی ادامه دارد. درخواست پس‌زمینه به store=true هم نیاز دارد. ذخیره‌سازی فعال‌شده فقط در حافظهٔ همان فرایند است و سقف یا زمان انقضا ندارد."
+  ]
+});
+apiCompatibility.push({
+  "id": "api-compatibility:llama-cpp-v0-6-0-systemone",
+  "protocol": "HTTP JSON / TypeSafe",
+  "endpoint": "/v1/systemone",
+  "capability": "typed-decisions",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:llama-cpp-v0-6-0",
+    "modelVersionIds": [
+      "model:cloudflare-clef",
+      "model:cloudflare-clef-flash"
+    ],
+    "endpoints": [
+      "/v1/systemone"
+    ],
+    "conditions": [
+      "برای تصویر، GGUF با قالب جدید و projector سازگار لازم است؛ کل prompt باید در --ubatch-size جا شود."
+    ]
+  },
+  "limitations": [
+    "choice، noul و score؛ بدون تولید متن آزاد یا streaming."
+  ],
+  "evidenceIds": [
+    "evidence:llama-cpp-v0-6-0-systemone"
   ]
 });

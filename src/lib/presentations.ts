@@ -1,7 +1,12 @@
 export type PresentationLocale = 'fa' | 'en' | 'es';
 
+export type PresentationPerson = { name: string; honorificPrefix?: string };
+
 export type PresentationTranslation = {
   title: string;
+  subtitle?: string;
+  presenter?: PresentationPerson;
+  preparedBy?: string[];
   summary: string;
   description: string;
   presentedAt: string;
@@ -17,18 +22,27 @@ export type PresentationTranslation = {
 export type Presentation = {
   slug: string;
   title: string;
+  subtitle?: string;
+  englishTitle?: string;
+  presenter?: PresentationPerson;
+  preparedBy?: string[];
+  date?: string;
+  language?: string;
   kind: 'دوره' | 'کارگاه' | 'سخنرانی' | 'ارائه تخصصی';
   summary: string;
   description: string;
   presentedAt: string;
   venue: string;
   event?: string;
+  eventUrl?: string;
   organizer?: string;
   audience?: string;
   duration?: string;
   slideCount: number;
   version?: string;
   cover?: string;
+  coverWidth?: number;
+  coverHeight?: number;
   pdf?: string;
   instructorProfileUrl?: string;
   topics: string[];
@@ -40,6 +54,55 @@ const dbaInstructorProfileUrl = 'https://postmba.org/professors/سید-محمد-
 
 // Keep the newest upload first. The home page features the first entry with a PDF.
 export const presentations: Presentation[] = [
+  {
+    slug: 'the-firm-trapped-by-good-decisions',
+    title: 'بنگاه در دام تصمیم‌های خوب',
+    subtitle: 'منطق تصمیم، حافظه تحلیلی و چابکی سازمانی',
+    englishTitle: 'The Firm Trapped by Good Decisions',
+    kind: 'سخنرانی',
+    summary: 'از نویز و سوگیری تا وابستگی به مسیر؛ نقش حافظهٔ تحلیلی و هوش مصنوعی در بازسازی و ارزیابی منطق تصمیم بنگاه.',
+    description: "آیا ممکن است بنگاهی با مجموعه‌ای از تصمیم‌های درست و موفق، به‌تدریج توان تصمیم‌گیری مؤثر خود را از دست بدهد؟ آیا آنچه امروز نشانه تجربه، تخصص و ثبات مدیریتی تلقی می‌شود، می‌تواند فردا به مانعی در برابر تغییر و سازگاری تبدیل شود؟\n\nبنگاه‌ها معمولاً موفقیت‌های گذشته را نشانه درستی تصمیم‌های خود می‌دانند. با تکرار این تصمیم‌ها، منابع، مهارت‌ها، قراردادها و ساختارهای سازمانی نیز پیرامون آن‌ها شکل می‌گیرند. به‌تدریج انتخاب مسیرهای متفاوت دشوارتر می‌شود؛ حتی زمانی که شرایط محیطی تغییر کرده و دیگر نمی‌توان با همان منطق گذشته تصمیم گرفت. در چنین وضعیتی، مشکل الزاماً تصمیم اشتباه نیست؛ گاهی **دقیقاً تصمیم‌های درست گذشته هستند که بنگاه را گرفتار می‌کنند.**\n\n### از کیفیت تصمیم تا شناخت منطق تصمیم‌گیری\n\nاین ارائه با مرور مفاهیم نویز و سوگیری در قضاوت و تصمیم‌گیری آغاز می‌شود و نشان می‌دهد چرا دسترسی به داده‌های بیشتر، استفاده از الگوریتم‌ها یا حتی کاهش اختلاف میان قضاوت‌های مدیران، لزوماً به تصمیم‌های بهتر منجر نمی‌شود. ممکن است تصمیم‌های یک سازمان سازگارتر شوند، اما همچنان از سوگیری مشترکی پیروی کنند.\n\nاز این نقطه، بحث به مسئله‌ای بنیادی‌تر می‌رسد: سازمان‌ها معمولاً تصمیم‌های خود و گاهی نتایج آن‌ها را ثبت می‌کنند، اما کمتر به ثبت و بررسی **منطق شکل‌گیری تصمیم** توجه دارند. چه گزینه‌هایی بررسی شدند؟ کدام فرض‌ها و معیارها تعیین‌کننده بودند؟ چرا برخی شواهد پذیرفته و برخی کنار گذاشته شدند؟ و آیا با تغییر شرایط، هنوز همان انتخاب قابل دفاع است؟\n\nبدون پاسخ به این پرسش‌ها، انباشت تجربه الزاماً به افزایش توان تصمیم‌گیری منجر نمی‌شود. سازمان ممکن است تاریخچه‌ای طولانی از تصمیم‌ها داشته باشد، اما نداند چرا آن تصمیم‌ها گرفته شده‌اند و چگونه می‌توان از آن‌ها برای انتخاب‌های آینده آموخت.\n\n### حافظه تحلیلی؛ از ثبت تصمیم تا یادگیری سازمانی\n\nبخش دوم ارائه به مفهوم **حافظه تحلیلی سازمان** می‌پردازد؛ قابلیتی که فراتر از بایگانی اسناد، صورت‌جلسات و گزارش‌هاست و می‌کوشد رابطه میان مسئله، شواهد، فرض‌ها، گزینه‌ها، انتخاب نهایی و پیامدهای آن را حفظ و بازسازی کند.\n\nدر این چارچوب، هوش مصنوعی می‌تواند به یافتن شواهد پراکنده، پیشنهاد پیوندهای تحلیلی و مقایسه تصمیم‌های مشابه کمک کند. اما هدف، جایگزین‌کردن قضاوت انسانی با پاسخ‌های ظاهراً قطعی ماشین نیست. هر ادعا باید به شواهد قابل پیگیری متصل باشد، استنباط از واقعیت مستند تفکیک شود و در نبود شواهد کافی، «هنوز نمی‌دانیم» پاسخی معتبر باقی بماند.\n\nاهمیت این قابلیت تنها در بررسی تصمیم‌های گذشته نیست. **بنگاهی که بتواند الگوی تصمیم‌گیری خود را بشناسد، بهتر می‌تواند تشخیص دهد چه چیزی را باید حفظ کند و چه زمانی لازم است در انتخاب‌های موفق گذشته بازنگری کند.** از این منظر، حافظه تحلیلی می‌تواند به یکی از ظرفیت‌های مهم یادگیری سازمانی، چابکی و حکمرانی تصمیم تبدیل شود.\n\n### درباره ارائه\n\nایده اولیه این بحث از مسئله شناسایی و تحلیل الگوهای تکرارشونده در گفت‌وگوهای نخبگانی شکل گرفت و در جریان همکاری علمی مهران ضیابری با دکتر فرهاد نیلی، با هدایت ایشان به حوزه تصمیم‌گیری و یادگیری در بنگاه‌ها گسترش یافت.\n\nحاصل این همکاری، ارائه «بنگاه در دام تصمیم‌های خوب؛ منطق تصمیم، حافظه تحلیلی و چابکی سازمانی» است که در **۱۹ مهر ۱۴۰۵ (۱۱ اکتبر ۲۰۲۶)** توسط **دکتر فرهاد نیلی** در **بیستمین کنفرانس بین‌المللی مدیریت پروژه** ارائه شد.\n\nاین مجموعه ۲۳ اسلایدی، تلاشی برای پیوند مباحث اقتصاد و نظریه تصمیم‌گیری با ظرفیت‌های نوین هوش مصنوعی در شناخت رفتار سازمانی است. هدف آن ارائه یک محصول نرم‌افزاری یا راهکار فنی آماده نیست، بلکه طرح یک مسئله بنیادی در مدیریت و حکمرانی بنگاه‌هاست:\n\n**چگونه می‌توان تجربه تصمیم‌گیری را به توان تصمیم‌گیری تبدیل کرد، بی‌آنکه سازمان اسیر موفقیت‌های گذشته خود شود؟**",
+    presenter: { name: 'فرهاد نیلی', honorificPrefix: 'دکتر' },
+    preparedBy: ['فرهاد نیلی', 'مهران ضیابری'],
+    date: '2026-10-11',
+    presentedAt: '۱۹ مهر ۱۴۰۵',
+    venue: 'مرکز همایش‌های بین‌المللی رازی، تهران',
+    event: 'بیستمین کنفرانس بین‌المللی مدیریت پروژه',
+    eventUrl: 'https://iipmc.aryanagroup.com/',
+    slideCount: 23,
+    language: 'fa',
+    cover: '/slides/the-firm-trapped-by-good-decisions/cover.webp',
+    coverWidth: 1600,
+    coverHeight: 901,
+    pdf: '/slides/the-firm-trapped-by-good-decisions/the-firm-trapped-by-good-decisions-v2.pdf',
+    topics: ['تصمیم‌گیری سازمانی', 'نویز و سوگیری در قضاوت', 'وابستگی به مسیر', 'حافظه تحلیلی', 'هوش مصنوعی', 'چابکی سازمانی'],
+    translations: {
+      en: {
+        title: 'The Firm Trapped by Good Decisions',
+        subtitle: 'Decision logic, analytical memory and organizational agility',
+        summary: 'From noise and bias to path dependence: how analytical memory and AI help reconstruct and evaluate the logic behind a firm’s decisions.',
+        description: "Can a firm gradually lose its ability to make effective decisions through a series of sound and successful choices? Could what is seen today as experience, expertise and managerial stability become an obstacle to change and adaptation tomorrow?\n\nFirms generally take past successes as evidence that their decisions were right. As these decisions are repeated, resources, skills, contracts and organizational structures take shape around them. Choosing a different path gradually becomes harder, even when circumstances have changed and the reasoning that guided earlier decisions no longer holds. In this situation, the problem is not necessarily a bad decision; sometimes **the very decisions that were right in the past are what trap the firm.**\n\n### From decision quality to understanding decision logic\n\nThis presentation begins with noise and bias in judgment and decision-making. It explores why more data, algorithms or even less disagreement among managers do not necessarily lead to better decisions. An organization’s decisions may become more consistent while still reflecting a shared bias.\n\nThe discussion then turns to a more fundamental issue: organizations usually record their decisions and sometimes their outcomes, but pay less attention to documenting and examining **the reasoning behind a decision**. Which options were considered? Which assumptions and criteria were decisive? Why was some evidence accepted and other evidence set aside? And when conditions change, is the same choice still defensible?\n\nWithout answers to these questions, accumulated experience does not necessarily improve the ability to decide. An organization may have a long history of decisions yet lack an understanding of why they were made or how to learn from them when making future choices.\n\n### Analytical memory: from recording decisions to organizational learning\n\nThe second part introduces **organizational analytical memory**: a capability that goes beyond archiving documents, meeting minutes and reports. It seeks to preserve and reconstruct the relationships between a problem, the evidence, assumptions, options, the final choice and its consequences.\n\nIn this framework, AI can help find scattered evidence, suggest analytical connections and compare similar decisions. The aim, however, is not to replace human judgment with seemingly certain machine answers. Every claim must be linked to traceable evidence, inference must be distinguished from documented fact, and when evidence is insufficient, “we do not yet know” must remain a valid answer.\n\nThe value of this capability extends beyond reviewing past decisions. **A firm that understands its own patterns of decision-making is better placed to identify what it should preserve and when it needs to revisit choices that once proved successful.** Analytical memory can therefore become an important capacity for organizational learning, agility and decision governance.\n\n### About the presentation\n\nThe initial idea emerged from the challenge of identifying and analyzing recurring patterns in discussions among experts. Through Mehran Ziabary’s scientific collaboration with Dr. Farhad Nili, and under Dr. Nili’s guidance, it developed into an inquiry into decision-making and learning within firms.\n\nThe result was “The Firm Trapped by Good Decisions: Decision Logic, Analytical Memory and Organizational Agility,” presented by **Dr. Farhad Nili** at the **20th International Project Management Conference** on **19 Mehr 1405 (11 October 2026)**.\n\nThese 23 slides seek to connect economics and decision theory with new AI capabilities for understanding organizational behavior. Their purpose is to raise a fundamental question in the management and governance of firms, rather than to introduce a software product or a ready-made technical solution:\n\n**How can the experience of making decisions become the capacity to make decisions, without an organization becoming trapped by its past successes?**",
+        presenter: { name: 'Farhad Nili', honorificPrefix: 'Dr.' },
+        preparedBy: ['Farhad Nili', 'Mehran Ziabary'],
+        presentedAt: '11 October 2026',
+        venue: 'Razi International Conference Center, Tehran',
+        event: '20th International Project Management Conference',
+        topics: ['Organizational decision-making', 'Noise and bias in judgment', 'Path dependence', 'Analytical memory', 'Artificial intelligence', 'Organizational agility']
+      },
+      es: {
+        title: 'La empresa atrapada por las buenas decisiones',
+        subtitle: 'Lógica de decisión, memoria analítica y agilidad organizativa',
+        summary: 'Del ruido y los sesgos a la dependencia de la trayectoria: el papel de la memoria analítica y la IA en la reconstrucción y evaluación de la lógica de las decisiones empresariales.',
+        description: "¿Puede una empresa perder gradualmente su capacidad de tomar decisiones eficaces a través de una serie de decisiones acertadas y exitosas? ¿Puede aquello que hoy se considera experiencia, conocimiento especializado y estabilidad directiva convertirse mañana en un obstáculo para el cambio y la adaptación?\n\nLas empresas suelen interpretar los éxitos del pasado como prueba de que sus decisiones fueron acertadas. Al repetirse estas decisiones, los recursos, las competencias, los contratos y las estructuras organizativas también se configuran en torno a ellas. Elegir caminos distintos se vuelve cada vez más difícil, incluso cuando las condiciones han cambiado y el razonamiento de antes ya no sirve para decidir. En esta situación, el problema no es necesariamente una decisión equivocada; a veces **son precisamente las decisiones acertadas del pasado las que atrapan a la empresa.**\n\n### De la calidad de las decisiones a comprender su lógica\n\nLa presentación comienza con los conceptos de ruido y sesgo en el juicio y la toma de decisiones. Examina por qué disponer de más datos, utilizar algoritmos o incluso reducir las diferencias entre los juicios de los directivos no conduce necesariamente a mejores decisiones. Las decisiones de una organización pueden volverse más consistentes y, aun así, seguir respondiendo a un sesgo compartido.\n\nA partir de ahí, el debate aborda una cuestión más fundamental: las organizaciones suelen registrar sus decisiones y, a veces, sus resultados, pero prestan menos atención a documentar y examinar **el razonamiento que dio lugar a la decisión**. ¿Qué opciones se consideraron? ¿Qué supuestos y criterios fueron determinantes? ¿Por qué se aceptaron unas evidencias y se descartaron otras? Y, cuando cambian las condiciones, ¿sigue siendo defendible la misma elección?\n\nSin respuestas a estas preguntas, acumular experiencia no aumenta necesariamente la capacidad de decidir. Una organización puede contar con una larga historia de decisiones sin comprender por qué se tomaron ni cómo aprender de ellas para elegir en el futuro.\n\n### Memoria analítica: del registro de decisiones al aprendizaje organizativo\n\nLa segunda parte presenta la **memoria analítica de la organización**: una capacidad que va más allá del archivo de documentos, actas y informes. Busca preservar y reconstruir las relaciones entre el problema, las evidencias, los supuestos, las opciones, la elección final y sus consecuencias.\n\nEn este marco, la inteligencia artificial puede ayudar a encontrar evidencias dispersas, proponer conexiones analíticas y comparar decisiones similares. El objetivo, sin embargo, no es sustituir el juicio humano por respuestas de la máquina que parecen definitivas. Toda afirmación debe vincularse a evidencias rastreables, las inferencias deben distinguirse de los hechos documentados y, cuando no haya evidencia suficiente, «todavía no lo sabemos» debe seguir siendo una respuesta válida.\n\nEl valor de esta capacidad va más allá de revisar decisiones pasadas. **Una empresa que comprende sus propios patrones de decisión está en mejores condiciones de reconocer qué debe conservar y cuándo necesita revisar elecciones que antes tuvieron éxito.** Desde esta perspectiva, la memoria analítica puede convertirse en una capacidad importante para el aprendizaje organizativo, la agilidad y la gobernanza de las decisiones.\n\n### Acerca de la presentación\n\nLa idea inicial surgió del problema de identificar y analizar patrones recurrentes en conversaciones entre expertos. En el curso de la colaboración científica de Mehran Ziabary con el Dr. Farhad Nili, y bajo la orientación de este último, se amplió al ámbito de la toma de decisiones y el aprendizaje en las empresas.\n\nEl resultado fue «La empresa atrapada por las buenas decisiones: lógica de decisión, memoria analítica y agilidad organizativa», presentada por el **Dr. Farhad Nili** en la **20.ª Conferencia Internacional de Gestión de Proyectos** el **19 de Mehr de 1405 (11 de octubre de 2026)**.\n\nEstas 23 diapositivas buscan conectar la economía y la teoría de la decisión con las nuevas capacidades de la inteligencia artificial para comprender el comportamiento organizativo. Su propósito es plantear una cuestión fundamental sobre la gestión y la gobernanza de las empresas, en lugar de presentar un producto de software o una solución técnica lista para usar:\n\n**¿Cómo transformar la experiencia de tomar decisiones en la capacidad de decidir, sin que la organización quede atrapada por sus éxitos pasados?**",
+        presenter: { name: 'Farhad Nili', honorificPrefix: 'Dr.' },
+        preparedBy: ['Farhad Nili', 'Mehran Ziabary'],
+        presentedAt: '11 de octubre de 2026',
+        venue: 'Centro Internacional de Conferencias Razi, Teherán',
+        event: '20.ª Conferencia Internacional de Gestión de Proyectos',
+        topics: ['Toma de decisiones organizativas', 'Ruido y sesgos en el juicio', 'Dependencia de la trayectoria', 'Memoria analítica', 'Inteligencia artificial', 'Agilidad organizativa']
+      }
+    }
+  },
     {
     slug: 'behind-ai-dba',
     instructorProfileUrl: dbaInstructorProfileUrl,
@@ -643,8 +706,14 @@ export const findPresentation = (slug: string) =>
 export type LocalizedPresentation = PresentationTranslation & {
   slug: string;
   kind: string;
+  date?: string;
+  language?: string;
+  englishTitle?: string;
+  eventUrl?: string;
   slideCount: number;
   cover?: string;
+  coverWidth?: number;
+  coverHeight?: number;
   pdf?: string;
   instructorProfileUrl?: string;
 };
@@ -661,8 +730,64 @@ export function localizePresentation(item: Presentation, locale: PresentationLoc
     slug: item.slug,
     kind: presentationKinds[locale][item.kind],
     slideCount: item.slideCount,
+    date: item.date,
+    language: item.language,
+    englishTitle: item.englishTitle,
+    eventUrl: item.eventUrl,
     cover: item.cover,
+    coverWidth: item.coverWidth,
+    coverHeight: item.coverHeight,
     pdf: item.pdf,
     instructorProfileUrl: item.instructorProfileUrl
+  };
+}
+
+export function presenterName(person?: PresentationPerson): string {
+  return person ? [person.honorificPrefix, person.name].filter(Boolean).join(' ') : '';
+}
+
+export function preparationNames(names: string[], locale: PresentationLocale): string {
+  return new Intl.ListFormat(locale, { style: 'long', type: 'conjunction' }).format(names);
+}
+
+// Explicit credits are required: do not infer authorship from the website owner.
+export function presentationStructuredData(
+  item: LocalizedPresentation,
+  locale: PresentationLocale,
+  labels: { presenter: string; preparedBy: string }
+): Record<string, unknown> | undefined {
+  if (!item.preparedBy?.length) return undefined;
+  const siteUrl = 'https://ziabary.ir';
+  const path = `${locale === 'fa' ? '' : `/${locale}`}/slides/${item.slug}/`;
+  const url = new URL(path, siteUrl).href;
+  return {
+    '@type': 'PresentationDigitalDocument',
+    '@id': `${url}#presentation`,
+    name: item.title,
+    ...(item.subtitle ? { alternativeHeadline: item.subtitle } : {}),
+    description: item.summary,
+    abstract: item.description.replace(/^### /gm, '').replace(/\*\*/g, ''),
+    url,
+    inLanguage: item.language ?? 'fa',
+    ...(item.date ? { datePublished: item.date } : {}),
+    ...(item.cover ? { image: new URL(item.cover, siteUrl).href } : {}),
+    author: item.preparedBy.map(name => ({ '@type': 'Person', name })),
+    creditText: `${labels.preparedBy}: ${preparationNames(item.preparedBy, locale)}`,
+    ...(item.presenter ? {
+      contributor: {
+        '@type': 'Role',
+        roleName: labels.presenter,
+        contributor: { '@type': 'Person', ...item.presenter }
+      }
+    } : {}),
+    keywords: item.topics,
+    ...(item.pdf ? {
+      encoding: {
+        '@type': 'MediaObject',
+        contentUrl: new URL(item.pdf, siteUrl).href,
+        encodingFormat: 'application/pdf',
+        inLanguage: item.language ?? 'fa'
+      }
+    } : {})
   };
 }

@@ -40,7 +40,7 @@ test('tabs write independent keys and blocked storage falls back to memory', () 
 });
 
 test('future and stale announcements are not shown, including the date boundaries', () => {
-  const first=guideUpdates[0];
+  const first=guideUpdates.find(item=>item.guide==='llm');
   const items=[{...first,id:'today',date:'2026-09-22'},{...first,id:'future',date:'2026-09-23'},
     {...first,id:'old',date:'2026-09-15'},{...first,id:'boundary',date:'2026-09-16'}];
   assert.deepEqual(unreadGuideUpdates('llm','2026-09-22',()=>false,items).map(n=>n.id),['today','boundary']);
@@ -56,8 +56,8 @@ test('each translated announcement keeps its unique short ID and links to a real
     if(item.kind==='model')assert.ok(repo.models.some(m=>m.id===item.target));
     if(item.kind==='api')assert.ok(apiModels.some(m=>m.id===item.target));
     if(item.kind==='software')assert.ok(repo.softwareProducts.some(s=>JSON.stringify(s).includes(item.target)));
-    if(item.kind==='gpu')assert.ok(gpu.includes(`id: '${item.target}'`));
-    if(item.kind==='server')assert.ok(server.includes(`id: '${item.target}'`));
+    if(item.kind==='gpu')assert.ok(gpu.includes(`id: '${item.target}'`) || gpu.includes(`"id": "${item.target}"`));
+    if(item.kind==='server')assert.ok(server.includes(`id: '${item.target}'`) || server.includes(`"id": "${item.target}"`));
     for(const locale of ['fa','en','es']){
       assert.ok(item.copy[locale].title && item.copy[locale].summary);
       if(locale!=='fa')assert.doesNotMatch(JSON.stringify(item.copy[locale]),/[\u0600-\u06ff]/);

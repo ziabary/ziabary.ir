@@ -6273,30 +6273,30 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:software-release-ollama-v0-34-0-version",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:software-release-ollama-v0-40-0-version",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "version",
-  "value": "v0.34.0",
+  "value": "v0.40.0",
   "nature": "publisher-report",
   "scope": "وضعیت مشاهده‌شدهٔ انتشار؛ active یعنی انتشار جاری مشاهده شده، نه تضمین پشتیبانی آینده.",
   "evidenceIds": [
-    "evidence:software-ollama-release"
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 claims.push({
-  "id": "claim:software-release-ollama-v0-34-0-releasedon",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:software-release-ollama-v0-40-0-releasedon",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "releasedOn",
-  "value": "2026-09-05",
+  "value": "2026-09-25",
   "nature": "publisher-report",
   "scope": "وضعیت مشاهده‌شدهٔ انتشار؛ active یعنی انتشار جاری مشاهده شده، نه تضمین پشتیبانی آینده.",
   "evidenceIds": [
-    "evidence:software-ollama-release"
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 claims.push({
-  "id": "claim:software-release-ollama-v0-34-0-maintenancestatus",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:software-release-ollama-v0-40-0-maintenancestatus",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "maintenanceStatus",
   "value": "active",
   "nature": "editorial-analysis",
@@ -6306,8 +6306,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:software-release-ollama-v0-34-0-roles-0",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:software-release-ollama-v0-40-0-roles-0",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "roles.0",
   "value": "inference-engine-library",
   "nature": "editorial-analysis",
@@ -6317,8 +6317,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:software-release-ollama-v0-34-0-roles-1",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:software-release-ollama-v0-40-0-roles-1",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "roles.1",
   "value": "api-server",
   "nature": "editorial-analysis",
@@ -6328,8 +6328,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:software-release-ollama-v0-34-0-roles-2",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:software-release-ollama-v0-40-0-roles-2",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "roles.2",
   "value": "model-manager",
   "nature": "editorial-analysis",
@@ -31595,8 +31595,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-software-release-ollama-v0-34-0-operatingsystems-0",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:v03-software-release-ollama-v0-40-0-operatingsystems-0",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "operatingSystems.0",
   "value": "Linux",
   "nature": "publisher-report",
@@ -31611,8 +31611,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-software-release-ollama-v0-34-0-operatingsystems-1",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:v03-software-release-ollama-v0-40-0-operatingsystems-1",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "operatingSystems.1",
   "value": "macOS",
   "nature": "publisher-report",
@@ -31627,8 +31627,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-software-release-ollama-v0-34-0-operatingsystems-2",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:v03-software-release-ollama-v0-40-0-operatingsystems-2",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "operatingSystems.2",
   "value": "Windows",
   "nature": "publisher-report",
@@ -31643,8 +31643,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-software-release-ollama-v0-34-0-documentedbackends-0",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:v03-software-release-ollama-v0-40-0-documentedbackends-0",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "documentedBackends.0",
   "value": "Ollama runtime",
   "nature": "publisher-report",
@@ -31659,8 +31659,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-software-release-ollama-v0-34-0-documentedbackends-1",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:v03-software-release-ollama-v0-40-0-documentedbackends-1",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "documentedBackends.1",
   "value": "llama.cpp",
   "nature": "publisher-report",
@@ -31675,8 +31675,8 @@ claims.push({
   ]
 });
 claims.push({
-  "id": "claim:v03-software-release-ollama-v0-34-0-offlineoperation-value",
-  "subjectId": "software-release:ollama-v0-34-0",
+  "id": "claim:v03-software-release-ollama-v0-40-0-offlineoperation-value",
+  "subjectId": "software-release:ollama-v0-40-0",
   "fieldPath": "offlineOperation.value",
   "value": true,
   "nature": "publisher-report",

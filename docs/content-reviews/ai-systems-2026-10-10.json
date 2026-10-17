@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-10",
+  "scope": "17 complete AI systems added to the server comparison; desktop/laptop and Ascend rack use cases kept distinct.",
+  "sourcePolicy": "Manufacturer specifications and official Microsoft/NVIDIA announcements; unspecified SKU details remain unspecified.",
+  "notes": [
+    "DGX Spark 128GB was absent; only the announced 64GB entry existed in the GPU table.",
+    "Microsoft announcement is 7 October, not 9 October. RTX Spark laptops ship from 16 October; Surface Dev Box in November (US); Windows GB300 later in 2026.",
+    "Dell and HP reference configurations are Ubuntu; Windows editions remain announced. OEM laptop rows cover only RTX Spark configurations named in the announcement.",
+    "128GB UMA is total shared memory, not free GPU VRAM; 748GB GB300 coherent total splits into 496GB CPU and 252GB GPU per OEM specs.",
+    "Atlas 800I A3 uses the official count of 8 NPUs; SuperPoD 384-NPU/48TB figures are not a single server.",
+    "MS-S1 MAX x16 mechanical slot is x4 electrical; no independent server-GPU compatibility is inferred.",
+    "PSU ratings, processor-package power and whole-system consumption are not interchangeable."
+  ],
+  "records": [
+    {
+      "id": "nvidia-dgx-spark-128gb",
+      "model": "DGX Spark 128GB",
+      "sourceUrl": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "additionalSources": []
+    },
+    {
+      "id": "nvidia-dgx-spark-64gb",
+      "model": "DGX Spark 64GB (OEM)",
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+      "additionalSources": []
+    },
+    {
+      "id": "microsoft-surface-laptop-ultra",
+      "model": "Surface Laptop Ultra (RTX Spark)",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+      "additionalSources": [
+        {
+          "label": "Microsoft — availability, 7 October 2026",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-surface-rtx-spark-dev-box",
+      "model": "Surface RTX Spark Dev Box",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/devices/surface-rtx-spark-dev-box",
+      "additionalSources": [
+        {
+          "label": "Microsoft — availability, 7 October 2026",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/"
+        },
+        {
+          "label": "Microsoft — Grace CPU, WSL and CUDA",
+          "url": "https://blogs.windows.com/devices/2026/06/02/building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box/"
+        }
+      ]
+    },
+    {
+      "id": "asus-proart-p16-rtx-spark",
+      "model": "ProArt P16 (RTX Spark)",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "additionalSources": []
+    },
+    {
+      "id": "asus-proart-p14-rtx-spark",
+      "model": "ProArt P14 (RTX Spark)",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "additionalSources": []
+    },
+    {
+      "id": "dell-xps16-creator-rtx-spark",
+      "model": "XPS 16 Creator Edition (RTX Spark)",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "additionalSources": []
+    },
+    {
+      "id": "hp-omnibook-ultra16-rtx-spark",
+      "model": "OmniBook Ultra 16 (RTX Spark)",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "additionalSources": []
+    },
+    {
+      "id": "lenovo-yoga9n-rtx-spark",
+      "model": "Yoga 9n 2-in-1 (RTX Spark)",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "additionalSources": []
+    },
+    {
+      "id": "msi-prestige-n16-rtx-spark",
+      "model": "Prestige N16 Flip AI+ (RTX Spark)",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "additionalSources": []
+    },
+    {
+      "id": "dell-pro-precision-gb300-windows",
+      "model": "Pro Precision with GB300 (Windows)",
+      "sourceUrl": "https://www.dell.com/en-us/shop/cty/spd/dellpromaxwithgb300fct6263",
+      "additionalSources": [
+        {
+          "label": "Microsoft — DGX Station for Windows",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "hp-zgx-fury-gb300-windows",
+      "model": "ZGX Fury AI Station (GB300 / Windows)",
+      "sourceUrl": "https://www.hp.com/us-en/workstations/ai-stations/zgx-fury-ai-station.html",
+      "additionalSources": [
+        {
+          "label": "Microsoft — DGX Station for Windows",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "gmktec-evo-x2",
+      "model": "EVO-X2 (Ryzen AI Max+ 395)",
+      "sourceUrl": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
+      "additionalSources": []
+    },
+    {
+      "id": "minisforum-ms-s1-max",
+      "model": "MS-S1 MAX (Ryzen AI Max+ 395)",
+      "sourceUrl": "https://www.minisforum.com/products/ms-s1-max",
+      "additionalSources": []
+    },
+    {
+      "id": "huawei-atlas-650e",
+      "model": "Atlas 650E (Ascend 950DT)",
+      "sourceUrl": "https://www.hiascend.com/hardware/ai-server",
+      "additionalSources": []
+    },
+    {
+      "id": "huawei-atlas-800i-a2",
+      "model": "Atlas 800I A2",
+      "sourceUrl": "https://e.huawei.com/cn/products/computing/ascend/atlas-800i-a2",
+      "additionalSources": []
+    },
+    {
+      "id": "huawei-atlas-800i-a3",
+      "model": "Atlas 800I A3",
+      "sourceUrl": "https://e.huawei.com/cn/products/computing/ascend/atlas-800i-a3",
+      "additionalSources": []
+    }
+  ]
+}

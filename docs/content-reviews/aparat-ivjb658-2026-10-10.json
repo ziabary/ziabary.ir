@@ -1,0 +1,20 @@
+{
+  "id": "aparat-ivjb658",
+  "reviewedAt": "2026-10-10",
+  "source": "https://www.aparat.com/v/ivjb658",
+  "metadataSource": "https://www.aparat.com/etc/api/video/videohash/ivjb658",
+  "publisher": "مرکز نوآوری نکسترا",
+  "sourceTitle": "از ترجمه ماشینی تا تحول صنایع با AI | تجربه‌های مهران ضیابری",
+  "sourcePublicationDate": "2025-09-29 12:00:16",
+  "siteDate": "2025-09-29",
+  "siteFaDate": "۷ مهر ۱۴۰۴",
+  "durationSeconds": 325,
+  "summaryBasis": "Publisher-provided description; video content not independently transcribed.",
+  "thumbnail": "static/images/media-covers/aparat-ivjb658.jpg",
+  "thumbnailCredit": "Original poster published by مرکز نوآوری نکسترا on Aparat.",
+  "placement": "/media/#videos",
+  "changes": [
+    "Added the missing interview with its original publication date and source link.",
+    "Added the Aparat platform label."
+  ]
+}

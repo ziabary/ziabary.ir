@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-10-04",
+  "asOf": "2026-10-11",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -76,5 +76,73 @@
       "model:cloudflare-clef-flash"
     ],
     "runtimeTested": false
+  },
+  "update20261006": {
+    "softwareReleases": [
+      "software-release:llama-cpp-v0-6-0",
+      "software-release:llama-cpp-b11424"
+    ],
+    "models": [
+      "model:reflection-beam"
+    ],
+    "scope": "Stable Clef vision with compatible projector; Vulkan FlashAttention bounds fix; Beam announcement only",
+    "runtimeTested": false
+  },
+  "k2Horizon20261007": {
+    "models": [
+      "model:ifm-k2-horizon-0-9b",
+      "model:ifm-k2-horizon-3-7b",
+      "model:ifm-k2-horizon-7b",
+      "model:ifm-k2-horizon-32b",
+      "model:ifm-k2-horizon-mova-36b-a4b"
+    ],
+    "softwareRelease": "software-release:llama-cpp-b11454",
+    "scope": "Five official GGUF models; b11454 prerelease; single-device FP16 KV planning; no 375B-A23B attribution",
+    "runtimeTested": false
+  },
+  "embeddingGemma220261007": {
+    "model": "model:google-embeddinggemma-2",
+    "modelRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "runtimeTested": false,
+    "persianEvaluation": "not-recorded",
+    "memoryEstimateChanged": false
+  },
+  "ollamaMlx20261007": {
+    "softwareRelease": "software-release:ollama-v0-40-0",
+    "releasedOn": "2026-09-25",
+    "modelsWithScopedRoutes": 17,
+    "hardwareScope": "Apple Silicon only; approved architectures",
+    "historicalSystemOneRelease": "software-release:ollama-v0-35-1",
+    "runtimeTested": false,
+    "artifactInventoriesChanged": false,
+    "memoryEstimateChanged": false,
+    "modelsAdded": 0
+  },
+  "llamaSafetyModernbert20261010": {
+    "softwareRelease": "software-release:llama-cpp-b11532",
+    "upstreamReleasedOn": "2026-10-09",
+    "model": "model:answerdotai-modernbert-base",
+    "scope": "ggml_acc_impl offset check; exact ModernBERT GELU; final RPC validation not claimed",
+    "runtimeTested": false,
+    "memoryEstimateChanged": false
+  },
+  "runtimeFixes20261010": {
+    "softwareReleases": [
+      "software-release:llama-cpp-b11537",
+      "software-release:llama-cpp-b11540",
+      "software-release:ollama-v0-40-2"
+    ],
+    "reportedPerformanceRows": 6,
+    "runtimeTested": false,
+    "memoryEstimateChanged": false,
+    "hardwareSpecificationsChanged": false,
+    "notes": "PR-branch results remain separate from release-build verification; Ollama v0.40.0 remains historical and its MLX minimum route is preserved."
+  },
+  "llamaServerSlotIsolation20261011": {
+    "softwareRelease": "software-release:llama-cpp-b11552",
+    "upstreamReleasedOn": "2026-10-10",
+    "scope": "Pinned id_slot with RAM prompt cache; canary acceptance criteria; no hardware, model, performance or memory changes",
+    "runtimeTested": false,
+    "memoryEstimateChanged": false
   }
 }

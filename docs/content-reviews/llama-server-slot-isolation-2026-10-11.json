@@ -1,0 +1,152 @@
+{
+  "reviewedAt": "2026-10-11",
+  "sourcesFolder": "data/llm/sources/llama-server-slot-isolation-2026-10-11",
+  "release": "software-release:llama-cpp-b11552",
+  "upstreamReport": {
+    "reviewedAt": "2026-10-11",
+    "upstreamReportUrl": "https://github.com/ggml-org/llama.cpp/pull/30295#issuecomment-6099989146",
+    "model": "Qwen3.8-27B-UD-Q4_K_M plus mmproj",
+    "hardware": "M2 Ultra",
+    "backend": "Metal",
+    "flags": [
+      "--parallel 10",
+      "--kv-unified",
+      "--no-cache-idle-slots",
+      "--cache-ram 8192"
+    ],
+    "idSlot": 7,
+    "baseline": {
+      "build": "11146",
+      "simultaneousPairs": 30,
+      "crossings": 1,
+      "corruptedResponses": 9
+    },
+    "fixed": {
+      "commit": "0d4444afc",
+      "build": "11550",
+      "simultaneousPairs": 60,
+      "crossings": 0,
+      "corruptedResponses": 0
+    },
+    "clientTimeoutSeconds": 60,
+    "timeoutRoundsReported": 1,
+    "releaseContainingFix": "b11552",
+    "siteRuntimeTested": false
+  },
+  "scope": "Software release row and existing article updates only",
+  "baselineHashes": {
+    "collections": {
+      "families": "ed7ddc44c6b3dcd2f70720808ad29074313b8d003d6af681b76977925881c254",
+      "models": "4296386b2071321fa4f8eb2224f99ccaa99371f6bb51dd0545ff620c9415fd29",
+      "artifacts": "b29fdbb57648dc67adbc210f9b9a37dfb3054ce39993e9217ff052ce6b810141",
+      "softwareProducts": "fa8b6aca7a83e56af840b040e9bf57e5c2efa1efcaddf4b053bfa614341884c0",
+      "engines": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "servingStacks": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "deploymentConfigurations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "softwareCapabilities": "969dc4d2fb5f9afa59b373721fa223246b041788c89164762c0150112406aa92",
+      "apiCompatibility": "de0b45112295cc267d2da0a4a166d78454c317e3e86f9f993666c1178222d525",
+      "hardwareConfigurations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "workloads": "3a65594e36cea8916284576b7799888209c7d8044933f3cd0d93808529e54fcd",
+      "qualityEvaluations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "applicationAssessments": "fa791daab28c073196dfb39446b1fb1166249fd5cfa43e5b9f9452540f58dc74",
+      "executionFeasibility": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "deploymentCompatibility": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "benchmarkRuns": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "specializedAssessments": "25a6c9dc771771d10f95571734ad3b11b9fd95abf1c7ae1b6c9a0ab87ec0b3f9",
+      "claims": "27a8fa2cbed5ee5ff8db60ec526e795fe4015daa3151da36b629cca96ac27beb",
+      "publishedEvaluations": "81fa748206db4abce4f0be187ddc0860778087dd91c9df273286f7d275151fb8",
+      "modelProfiles": "5b7ba6d6eecd159a9fc05c24caf3586f0991e0685925114bf0b7e2e105e5c8bd",
+      "modelUseGuidance": "7dff70179e4ab26f66c8e792e71cbf7b9f91c31dddbdb20a5ca8b9952b850cc2",
+      "artifactListings": "f442ab658676f76f7bba70abc94e4b40020e0d4279c022c317960a4e5a35e78e",
+      "updatedOn": "3828b4cd2d8b7bf8a432fac56321886aeadd12a910338cf8de31b13908f0be54",
+      "referenceComparisons": "8d6e0057bea3ecb7dbdb1336cf58c1d043ab1519de7ae879319ca6c98638d778",
+      "selectionGuidance": "24e21741365a5ccc71d5ff0c4bccdaf2279548bbd956c5cb2ef71ee7f85da3ef",
+      "articleSections": "55d664d8211c849f6bffeaa0301532e0ac5c601f87c631ae218e80704066579f",
+      "quantizationStudies": "8d66c54f5d79bdaab7cebe41a1eacdba98b7a15d86c887d171fa20a754e91dcc"
+    },
+    "files": {
+      "src/lib/gpu-data.ts": "d84c7ff593f859f7984e05142ac6bcd9e906fac1eb8605c987282a09ec216717",
+      "src/lib/server-data.ts": "b0793409346fe6c586f08372b914e91e81605d2804fdbb483e4d40b71e9419e0",
+      "src/lib/llm/wizard.ts": "5c93714c80a6900215b6e7a915c1d7542bf10a0fab6eeee3af5558a33947833b",
+      "src/lib/llm/wizard-candidates.ts": "bd847b1cbf97630182b7de3c7eedc28c47835deb9c02bb32446e2c08121adb38",
+      "data/llm/v0.2.0/data/hardware.json": "3bb4e630a95d0f95763a442e778b0d9f90fa36f71865d78669ea9068a5ea57f1",
+      "data/llm/v0.2.0/data/memory-policy.json": "a4b930f1bae2ad3fd4d218e43f4568601c35b4fa0fab3900627318a6f470a2b9",
+      "data/llm/v0.2.0/data/published-performance.json": "dae94baef47f14ea205e7f37aa0a86fc9b1e7b0f4de39ca5fbb139271858f3f0"
+    },
+    "articleDates": {
+      "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp-en.md": " '2026-09-15'",
+      "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp-es.md": " '2026-09-15'",
+      "src/lib/content/articles/ollama-vllm-sglang-or-llama-cpp.md": " \"2026-09-15\""
+    }
+  },
+  "runtimeTested": false,
+  "verification": {
+    "datasetValidation": "passed",
+    "localizedRecords": 1583,
+    "relatedTests": {
+      "passed": 10,
+      "failed": 0
+    },
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "preservedCanonicalCollections": 27,
+    "preservedHardwareWizardMemoryAndPerformanceFiles": 7,
+    "originalPublicationDatesPreserved": true,
+    "build": "passed",
+    "sitemapIndexableUrls": 254,
+    "jsonLdBlocks": 263,
+    "browser": {
+      "editions": [
+        "fa",
+        "en",
+        "es"
+      ],
+      "viewportWidths": [
+        390,
+        1280
+      ],
+      "softwareFilterAndPrereleaseNotes": "passed",
+      "articleSectionsAndCanaryCriteria": "passed",
+      "targomanInternalAnchor": "passed",
+      "originalPublicationDates": "passed",
+      "horizontalOverflow": false,
+      "runtimeExceptions": 0
+    },
+    "live": {
+      "status": "passed",
+      "softwareRowEditions": [
+        "fa",
+        "en",
+        "es"
+      ],
+      "comparisonArticleEditions": [
+        "fa",
+        "en",
+        "es"
+      ],
+      "targomanNote": true,
+      "internalAnchorVerifiedAfterUrlDecoding": true,
+      "announcementBundleMatchesBuild": true,
+      "httpStatus": 200
+    }
+  },
+  "articleUpdates": [
+    "ollama-vllm-sglang-or-llama-cpp",
+    "ollama-vllm-sglang-or-llama-cpp-en",
+    "ollama-vllm-sglang-or-llama-cpp-es",
+    "targoman-300-concurrent-requests-one-rtx-4090"
+  ],
+  "announcement": {
+    "id": "slot11552",
+    "datasetChangeDate": "2026-10-11"
+  },
+  "publication": {
+    "date": "2026-10-11",
+    "status": "published",
+    "uploaded": 1659,
+    "unchanged": 3991,
+    "deleted": 0
+  }
+}

@@ -1004,5 +1004,54 @@
     "documentSha256": "e2506a13bb6712d7b6354bfd957210b3b873f5e58bd6c365fae0cf5e4704b983",
     "documentRevision": "af77e9306a26e8625fde74d2a3051ab6d21bd955",
     "locator": "Measured inference speedup; end-to-end column only"
+  },
+  {
+    "id": "software-guide:ollama-v040",
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+    "title": "Ollama v0.40.0 release notes — stable MLX on Apple Silicon",
+    "publisher": "Ollama",
+    "kind": "primary-documentation",
+    "accessedOn": "2026-10-07",
+    "documentRevision": "v0.40.0"
+  },
+  {
+    "id": "qwen-b70-regression",
+    "url": "https://github.com/ggml-org/llama.cpp/issues/30033",
+    "title": "Qwen3.8-Flash-Next: dual B70 Linux SYCL regression",
+    "publisher": "llama.cpp contributors",
+    "kind": "first-hand-synthetic-benchmark",
+    "accessedOn": "2026-10-10",
+    "documentSha256": "71782063394cfb9384845359b314672a1adf5242a55818791b6176f76f8d16bb",
+    "locator": "Hardware, Models, reproduction command; approximate PP 365 and TG 24"
+  },
+  {
+    "id": "qwen-b70-recovery",
+    "url": "https://github.com/ggml-org/llama.cpp/pull/30160#issuecomment-6066481031",
+    "title": "Qwen3.8-Flash-Next: reported recovery on PR #30160",
+    "publisher": "llama.cpp contributors",
+    "kind": "first-hand-synthetic-benchmark",
+    "accessedOn": "2026-10-10",
+    "documentSha256": "a375ae6fe4538ebce4824b303b0338faab044b037e66280c88780e0165236600",
+    "locator": "moriz1: same prompt and text file; PP 582.23 and TG 32.75; fix included in b11537"
+  },
+  {
+    "id": "sycl-mxfp4-b70",
+    "url": "https://github.com/ggml-org/llama.cpp/pull/29809",
+    "title": "Arc Pro B70: original Windows SYCL MXFP4 MoE report",
+    "publisher": "llama.cpp contributors",
+    "kind": "first-hand-synthetic-benchmark",
+    "accessedOn": "2026-10-10",
+    "documentSha256": "9a0a0cabaaf2f495ae0b51a2014dfae4b683ad29d5d86f883ded59c0d75f2425",
+    "locator": "Overview and Additional information; fix included in b11540; PR author tests, not site measurements"
+  },
+  {
+    "id": "software-guide:ollama-v0402",
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
+    "title": "Ollama v0.40.2: background model upgrades and retained backups",
+    "publisher": "Ollama",
+    "kind": "publisher-runtime-report",
+    "accessedOn": "2026-10-10",
+    "documentSha256": "64f34f225ae06b01dc3d3098357e8813d5024b90e60178534418969a96b931b5",
+    "locator": "Model upgrades; Latest"
   }
 ]

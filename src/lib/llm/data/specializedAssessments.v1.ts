@@ -587,3 +587,23 @@ specializedAssessments.push({
     "evidence:cohere-embed5-usage"
   ]
 });
+specializedAssessments.push({
+  "id": "specialized-assessment:google-embeddinggemma-2",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "modelRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "کیفیت بازیابی فارسی روی پیکرهٔ کاربر",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:google-embeddinggemma-2-retrieval",
+  "limitations": [
+    "پیش از انتخاب برای RAG متنی فارسی، بازیابی روی پیکرهٔ فارسی را با پرسش‌ها و اسناد یکسان در ۷۶۸ و ۲۵۶ بعد مقایسه کنید؛ کیفیت فارسی و حافظهٔ واقعی نامعلوم‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card",
+    "evidence:embeddinggemma-2-developer-guide"
+  ]
+});

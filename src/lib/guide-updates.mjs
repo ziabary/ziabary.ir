@@ -7,6 +7,64 @@
 // Dates record additions/changes to our dataset, not the product's release date.
 /** @type {GuideUpdate[]} */
 export const guideUpdates = [
+  { id:'slot11552', guide:'llm', date:'2026-10-11', kind:'software', target:'llama.cpp', copy:{
+    fa:{title:'llama-server b11552؛ اصلاح جداسازی context',summary:'برای id_slot ثابت همراه RAM prompt cache، حداقل نسخهٔ اصلاح‌شده و آزمون canary ثبت شد؛ نتیجهٔ محدود upstream تضمین همهٔ پیکربندی‌ها نیست.'},
+    en:{title:'llama-server b11552: context-isolation fix',summary:'Added the fixed minimum build and canary acceptance test for pinned id_slot with RAM prompt caching; limited upstream results do not guarantee every configuration.'},
+    es:{title:'llama-server b11552: aislamiento de contexto',summary:'Añadidas la versión mínima corregida y la prueba de aceptación con canary para id_slot fijo y caché RAM; el resultado limitado no garantiza todas las configuraciones.'}
+  }},
+  { id:'qwen11537', guide:'llm', date:'2026-10-10', kind:'software', target:'llama.cpp', copy:{
+    fa:{title:'llama.cpp b11537؛ بازگشت سرعت Qwen روی دو B70',summary:'اصلاح گراف embedding ثبت شد؛ نتیجهٔ یک کاربر روی Linux/SYCL با حدود 365/24 به 582.23/32.75 pp/tg رسید. اعداد شاخهٔ PR و شرایط آزمون کنار نتیجه آمده‌اند.'},
+    en:{title:'llama.cpp b11537: Qwen recovery on dual B70',summary:'Embedding-graph fix recorded; one Linux/SYCL report recovered from about 365/24 to 582.23/32.75 pp/tg. PR-branch numbers and test conditions stay beside the result.'},
+    es:{title:'llama.cpp b11537: recuperación de Qwen con dos B70',summary:'Registrada la corrección del grafo de embeddings; un informe Linux/SYCL pasa de unos 365/24 a 582.23/32.75 pp/tg. Cifras de la rama del PR con sus condiciones.'}
+  }},
+  { id:'sycl11540', guide:'llm', date:'2026-10-10', kind:'software', target:'llama.cpp', copy:{
+    fa:{title:'llama.cpp b11540؛ شتاب MXFP4 روی Arc Pro B70',summary:'گزارش decode مدل‌های gpt-oss روی Windows 11 و oneAPI 2026.0 اضافه شد؛ Flash Attention روشن است و اعداد به Linux یا GPUهای دیگر تعمیم داده نمی‌شوند.'},
+    en:{title:'llama.cpp b11540: MXFP4 acceleration on Arc Pro B70',summary:'Added gpt-oss decode reports on Windows 11 and oneAPI 2026.0 with Flash Attention enabled; results are not extrapolated to Linux or other GPUs.'},
+    es:{title:'llama.cpp b11540: aceleración MXFP4 en Arc Pro B70',summary:'Añadidos informes de decodificación de gpt-oss en Windows 11 y oneAPI 2026.0 con Flash Attention activado; no se extrapolan a Linux u otras GPU.'}
+  }},
+  { id:'oll40210', guide:'llm', date:'2026-10-10', kind:'software', target:'Ollama', copy:{
+    fa:{title:'Ollama v0.40.2 پایدار / Latest',summary:'نسخهٔ جاری و فیلتر به‌روز شدند. مدل‌های قدیمی در نخستین اجرا در پس‌زمینه مهاجرت می‌کنند و نسخهٔ اصلی موقتاً می‌ماند؛ پیش از ارتقا فضای آزاد دیسک را بررسی کنید.'},
+    en:{title:'Ollama v0.40.2 stable / Latest',summary:'Updated the current release and filter. Older models upgrade in the background on first run, with originals temporarily retained; check free disk space before upgrading.'},
+    es:{title:'Ollama v0.40.2 estable / Latest',summary:'Actualizados versión vigente y filtro. Los modelos antiguos se actualizan en segundo plano al primer uso y se conservan temporalmente los originales; compruebe el espacio libre.'}
+  }},
+  {"id": "sparkpc10", "guide": "gpu-selection", "date": "2026-10-10", "kind": "server", "target": "microsoft-surface-laptop-ultra", "copy": {"fa": {"title": "Spark؛ از میز کار تا لپ‌تاپ Windows", "summary": "DGX Spark و دستگاه‌های RTX Spark وارد جدول سرورها شدند؛ زمان عرضهٔ لپ‌تاپ‌ها، Dev Box و ورک‌استیشن‌های GB300 جدا آمده است."}, "en": {"title": "Spark: from desktops to Windows laptops", "summary": "DGX Spark and RTX Spark PCs added to the server table; laptop, Dev Box and GB300 workstation availability is listed separately."}, "es": {"title": "Spark: del escritorio a portátiles Windows", "summary": "DGX Spark y equipos RTX Spark añadidos a la tabla; disponibilidad de portátiles, Dev Box y estaciones GB300 indicada por separado."}}},
+  {"id": "cnai10", "guide": "gpu-selection", "date": "2026-10-10", "kind": "server", "target": "huawei-atlas-650e", "copy": {"fa": {"title": "رایانه‌های کوچک چینی و سرورهای Atlas", "summary": "EVO-X2 و MS-S1 MAX برای اجرای محلی؛ Atlas 650E و 800I A2/A3 برای رک. تفاوت حافظهٔ مشترک، NPU و پشتهٔ نرم‌افزاری در هر ردیف آمده است."}, "en": {"title": "Chinese compact PCs and Atlas servers", "summary": "EVO-X2 and MS-S1 MAX for local inference; Atlas 650E and 800I A2/A3 for racks. Each row explains shared memory, NPUs and software-stack differences."}, "es": {"title": "Equipos compactos chinos y servidores Atlas", "summary": "EVO-X2 y MS-S1 MAX para inferencia local; Atlas 650E y 800I A2/A3 para rack. Cada fila aclara memoria compartida, NPU y pila de software."}}},
+
+  { id:'llama11532', guide:'llm', date:'2026-10-10', kind:'software', target:'llama.cpp', copy:{
+    fa:{title:'llama.cpp b11532؛ ایمنی حافظه و صحت ModernBERT',summary:'پیش‌انتشار شامل کنترل offset در ggml_acc و GELU دقیق ModernBERT؛ GGUF نیاز به تبدیل دوباره ندارد و خروجی نسخه‌های قدیمی باید بازآزمایی شود.'},
+    en:{title:'llama.cpp b11532: memory safety and ModernBERT correctness',summary:'Prerelease with the ggml_acc offset check and exact ModernBERT GELU; no GGUF reconversion needed. Retest outputs from older builds.'},
+    es:{title:'llama.cpp b11532: seguridad de memoria y precisión de ModernBERT',summary:'Prelanzamiento con comprobación del offset de ggml_acc y GELU exacto de ModernBERT; no requiere reconvertir GGUF. Repita las pruebas de versiones anteriores.'}
+  }},
+  { id:'ollmlx40', guide:'llm', date:'2026-10-07', kind:'software', target:'Ollama', copy:{
+    fa:{title:'ثبت مسیر MLX در Ollama v0.40.0',summary:'MLX پیش‌فرض روی Apple Silicon فقط برای معماری‌های تأییدشده؛ مسیرهای Qwen، مدل‌های تصمیم و EmbeddingGemma 2 ثبت شد. تگ هر اندازه و حافظهٔ اجرا جدا بررسی شوند.'},
+    en:{title:'MLX routes recorded for Ollama v0.40.0',summary:'Default MLX on Apple Silicon is limited to approved architectures; Qwen, decision-model and EmbeddingGemma 2 routes added. Verify per-size tags and runtime memory separately.'},
+    es:{title:'Vías MLX registradas para Ollama v0.40.0',summary:'MLX por defecto en Apple Silicon solo para arquitecturas aprobadas; añadidas vías Qwen, modelos de decisión y EmbeddingGemma 2. Verifique etiquetas por tamaño y memoria aparte.'}
+  }},
+  { id:'eg2local', guide:'llm', date:'2026-10-07', kind:'model', target:'model:google-embeddinggemma-2', copy:{
+    fa:{title:'EmbeddingGemma 2؛ بردارساز چندوجهی محلی',summary:'وزن رسمی Apache-2.0 و مسیر Transformers و Sentence Transformers ≥6.1 اضافه شد؛ شاهد فارسی ثبت نشده و تخمین حافظهٔ GPU تغییر نکرده است.'},
+    en:{title:'EmbeddingGemma 2: local multimodal embeddings',summary:'Added official Apache-2.0 weights and Transformers / Sentence Transformers ≥6.1 routes; no Persian evidence recorded or GPU memory estimate change.'},
+    es:{title:'EmbeddingGemma 2: embeddings multimodales locales',summary:'Añadidos pesos oficiales Apache-2.0 y vías Transformers / Sentence Transformers ≥6.1; sin evidencia registrada en persa ni cambios en memoria GPU estimada.'}
+  }},
+  { id:'k2h11454', guide:'llm', date:'2026-10-07', kind:'model', target:'model:ifm-k2-horizon-7b', copy:{
+    fa:{title:'پنج مدل K2 Horizon با GGUF رسمی',summary:'اجرای llama.cpp از b11454 پیش‌انتشار ثبت شد؛ بدون tensor parallel و شاهد کیفیت فارسی. حافظهٔ وزن، KV cache و سربار جدا برآورد می‌شوند.'},
+    en:{title:'Five K2 Horizon models with official GGUF',summary:'llama.cpp execution starts with prerelease b11454; no tensor parallel or Persian-quality evidence. Weights, KV cache and reserve are estimated separately.'},
+    es:{title:'Cinco modelos K2 Horizon con GGUF oficial',summary:'Ejecución con llama.cpp desde b11454 de prelanzamiento; sin tensor parallel ni evaluación en persa. Pesos, KV cache y reserva se estiman por separado.'}
+  }},
+  { id:'llama060', guide:'llm', date:'2026-10-06', kind:'software', target:'llama.cpp', copy:{
+    fa:{title:'llama.cpp 0.6.0 پایدار و Clef تصویری',summary:'مسیر متن و تصویر با GGUF و projector سازگار ثبت شد؛ محدودیت فقط متن مربوط به b11371 است.'},
+    en:{title:'Stable llama.cpp 0.6.0 and Clef image input',summary:'Text and image support requires compatible GGUF and projector files; the text-only limit belongs to b11371.'},
+    es:{title:'llama.cpp 0.6.0 estable e imágenes para Clef',summary:'Texto e imágenes requieren GGUF y proyector compatibles; el límite de solo texto corresponde a b11371.'}
+  }},
+  { id:'vkfa11424', guide:'llm', date:'2026-10-06', kind:'software', target:'llama.cpp', copy:{
+    fa:{title:'اصلاح crash در Vulkan FlashAttention',summary:'اصلاح حافظهٔ اشتراکی #29988 در b11424 و v0.6.0؛ بدون ادعای افزایش سرعت یا تغییر تخمین VRAM.'},
+    en:{title:'Vulkan FlashAttention crash fix',summary:'Shared-memory fix #29988 is included in b11424 and v0.6.0; no speed claim or VRAM estimate change.'},
+    es:{title:'Corrección de fallo en Vulkan FlashAttention',summary:'Corrección de memoria compartida #29988 en b11424 y v0.6.0; sin afirmar más velocidad ni cambiar la VRAM estimada.'}
+  }},
+  { id:'beamann', guide:'llm', date:'2026-10-06', kind:'model', target:'model:reflection-beam', copy:{
+    fa:{title:'Beam؛ ثبت معرفی و انتظار عرضهٔ وزن',summary:'مدل متنی MoE با اندازه‌های اعلامی ۵۰۱B کل و ۲۳B فعال؛ دسترسی محدود و خارج از پیشنهادهای آمادهٔ اجرای محلی.'},
+    en:{title:'Beam: announcement recorded, weights pending',summary:'Text-only MoE with declared 501B total and 23B active parameters; limited access, excluded from ready local recommendations.'},
+    es:{title:'Beam: anuncio registrado, pesos pendientes',summary:'MoE de texto con 501B totales y 23B activos declarados; acceso limitado, excluido de recomendaciones locales listas.'}
+  }},
   { id:'rtx4090x48', guide:'gpu-selection', date:'2026-10-04', kind:'gpu', target:'nvidia-rtx4090x', copy:{
     fa:{title:'RTX 4090 X به مقایسه و پیشنهادها برگشت',summary:'برد اصلاح‌شدهٔ غیررسمی ۴۸GB با منبع فروشنده و شروط بررسی همان کارت؛ مشخصات آن با RTX 4090 D رسمی یکی نیست.'},
     en:{title:'RTX 4090 X returns to comparison and recommendations',summary:'The unofficial modified 48 GB board is listed with supplier evidence and per-card checks; it differs from the official RTX 4090 D.'},

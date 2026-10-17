@@ -19286,7 +19286,7 @@ models.push({
     "state": "not-measured"
   },
   "releaseStatus": "available",
-  "lastReviewedOn": "2026-09-15",
+  "lastReviewedOn": "2026-10-10",
   "license": {
     "name": {
       "state": "known",
@@ -50750,7 +50750,7 @@ models.push({
   },
   "releaseStatus": "available",
   "releasedOn": "2026-10-01",
-  "lastReviewedOn": "2026-10-04",
+  "lastReviewedOn": "2026-10-06",
   "license": {
     "name": {
       "state": "known",
@@ -50781,7 +50781,10 @@ models.push({
   "evidenceIds": [
     "evidence:cloudflare-clef-card",
     "evidence:ollama-clef-library",
-    "evidence:ollama-v0-35-1-release"
+    "evidence:ollama-v0-35-1-release",
+    "evidence:llama-cpp-v0-6-0-release",
+    "evidence:llama-cpp-v0-6-0-systemone",
+    "evidence:llama-cpp-clef-vision-29969"
   ],
   "specializedSpecs": {
     "task": {
@@ -50807,10 +50810,12 @@ models.push({
     },
     "features": {
       "state": "known",
-      "value": "متن و تصویر در Ollama v0.35.1+؛ llama.cpp b11371 فقط متن و پیش‌انتشار",
+      "value": "متن و تصویر در Ollama v0.35.1+ و llama.cpp v0.6.0 با GGUF و projector سازگار؛ b11371 فقط متن",
       "evidenceIds": [
         "evidence:ollama-clef-library",
-        "evidence:llama-cpp-b11371-clef"
+        "evidence:llama-cpp-b11371-clef",
+        "evidence:llama-cpp-v0-6-0-release",
+        "evidence:llama-cpp-clef-vision-29969"
       ]
     },
     "languages": {
@@ -50863,7 +50868,7 @@ models.push({
   },
   "releaseStatus": "available",
   "releasedOn": "2026-10-01",
-  "lastReviewedOn": "2026-10-04",
+  "lastReviewedOn": "2026-10-06",
   "license": {
     "name": {
       "state": "known",
@@ -50894,7 +50899,10 @@ models.push({
   "evidenceIds": [
     "evidence:cloudflare-clef-flash-card",
     "evidence:ollama-clef-flash-library",
-    "evidence:ollama-v0-35-1-release"
+    "evidence:ollama-v0-35-1-release",
+    "evidence:llama-cpp-v0-6-0-release",
+    "evidence:llama-cpp-v0-6-0-systemone",
+    "evidence:llama-cpp-clef-vision-29969"
   ],
   "specializedSpecs": {
     "task": {
@@ -50920,10 +50928,12 @@ models.push({
     },
     "features": {
       "state": "known",
-      "value": "متن و تصویر در Ollama v0.35.1+؛ llama.cpp b11371 فقط متن و پیش‌انتشار",
+      "value": "متن و تصویر در Ollama v0.35.1+ و llama.cpp v0.6.0 با GGUF و projector سازگار؛ b11371 فقط متن",
       "evidenceIds": [
         "evidence:ollama-clef-flash-library",
-        "evidence:llama-cpp-b11371-clef"
+        "evidence:llama-cpp-b11371-clef",
+        "evidence:llama-cpp-v0-6-0-release",
+        "evidence:llama-cpp-clef-vision-29969"
       ]
     },
     "languages": {
@@ -51869,4 +51879,805 @@ models.push({
   "evidenceIds": [
     "evidence:zai-glm-5-3-flash-card"
   ]
+});
+models.push({
+  "id": "model:reflection-beam",
+  "familyId": "family:reflection-beam",
+  "exactName": "Beam",
+  "publisher": "Reflection",
+  "version": "نسخهٔ دقیق اعلام نشده",
+  "stage": "reasoning",
+  "architecture": "moe",
+  "totalParametersB": {
+    "state": "known",
+    "value": 501,
+    "unit": "billion-parameters",
+    "evidenceIds": [
+      "evidence:reflection-beam-announcement"
+    ]
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 23,
+    "unit": "billion-parameters",
+    "evidenceIds": [
+      "evidence:reflection-beam-announcement"
+    ]
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "unknown"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "announced",
+  "announcedOn": "2026-10-05",
+  "lastReviewedOn": "2026-10-06",
+  "license": {
+    "name": {
+      "state": "unknown",
+      "note": "Apache-2.0 برای انتشار آتی وعده داده شده؛ وزن و مجوز عمومی هنوز منتشر نشده‌اند."
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    },
+    "restrictions": [
+      "دسترسی فعلی محدود و ثبت‌نامی است؛ شرایط استفادهٔ پیش‌نمایش را جداگانه بررسی کنید."
+    ],
+    "evidenceIds": [
+      "evidence:reflection-beam-announcement"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:reflection-beam-announcement"
+  ]
+});
+models.push({
+  "id": "model:ifm-k2-horizon-0-9b",
+  "familyId": "family:k2-horizon",
+  "exactName": "K2-Horizon-0.9B",
+  "publisher": "IFM",
+  "version": "383cb66347be4d361138e8157c2f8779b7440752",
+  "aliases": [
+    "IFM/K2-Horizon-0.9B"
+  ],
+  "stage": "reasoning",
+  "architecture": "dense",
+  "attentionArchitecture": "full-attention",
+  "totalParametersB": {
+    "state": "known",
+    "value": 0.9,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-0-9b-card",
+      "evidence:ifm-k2-horizon-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "اندازهٔ اسمی/هستهٔ اعلام‌شدهٔ ناشر؛ شمار عناصر ذخیره‌شدهٔ Safetensors جدا آمده است."
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-0-9b-card",
+      "evidence:ifm-k2-horizon-0-9b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-03",
+  "lastReviewedOn": "2026-10-07",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-0-9b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/IFM/K2-Horizon-0.9B/blob/383cb66347be4d361138e8157c2f8779b7440752/README.md",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-0-9b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-0-9b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-0-9b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-card",
+    "evidence:ifm-k2-horizon-0-9b-metadata",
+    "evidence:ifm-k2-horizon-0-9b-gguf-files",
+    "evidence:ifm-k2-horizon-0-9b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شدهٔ Safetensors؛ معادل اندازهٔ اسمی یا پارامتر فعال نیست",
+      "value": {
+        "state": "known",
+        "value": 1.078285824,
+        "evidenceIds": [
+          "evidence:ifm-k2-horizon-0-9b-metadata"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:ifm-k2-horizon-3-7b",
+  "familyId": "family:k2-horizon",
+  "exactName": "K2-Horizon-3.7B",
+  "publisher": "IFM",
+  "version": "d6e5432c59637093c0e125e791d89ea4a0b53559",
+  "aliases": [
+    "IFM/K2-Horizon-3.7B"
+  ],
+  "stage": "reasoning",
+  "architecture": "dense",
+  "attentionArchitecture": "full-attention",
+  "totalParametersB": {
+    "state": "known",
+    "value": 3.7,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-3-7b-card",
+      "evidence:ifm-k2-horizon-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "اندازهٔ اسمی/هستهٔ اعلام‌شدهٔ ناشر؛ شمار عناصر ذخیره‌شدهٔ Safetensors جدا آمده است."
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 524288,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-3-7b-card",
+      "evidence:ifm-k2-horizon-3-7b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-03",
+  "lastReviewedOn": "2026-10-07",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-3-7b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/IFM/K2-Horizon-3.7B/blob/d6e5432c59637093c0e125e791d89ea4a0b53559/README.md",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-3-7b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-3-7b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-3-7b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-card",
+    "evidence:ifm-k2-horizon-3-7b-metadata",
+    "evidence:ifm-k2-horizon-3-7b-gguf-files",
+    "evidence:ifm-k2-horizon-3-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شدهٔ Safetensors؛ معادل اندازهٔ اسمی یا پارامتر فعال نیست",
+      "value": {
+        "state": "known",
+        "value": 5.05825536,
+        "evidenceIds": [
+          "evidence:ifm-k2-horizon-3-7b-metadata"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:ifm-k2-horizon-7b",
+  "familyId": "family:k2-horizon",
+  "exactName": "K2-Horizon-7B",
+  "publisher": "IFM",
+  "version": "3b6ae394c1b863c27a306d168b25555837955192",
+  "aliases": [
+    "IFM/K2-Horizon-7B"
+  ],
+  "stage": "reasoning",
+  "architecture": "dense",
+  "attentionArchitecture": "full-attention",
+  "totalParametersB": {
+    "state": "known",
+    "value": 7,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-7b-card",
+      "evidence:ifm-k2-horizon-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "اندازهٔ اسمی/هستهٔ اعلام‌شدهٔ ناشر؛ شمار عناصر ذخیره‌شدهٔ Safetensors جدا آمده است."
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 524288,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-7b-card",
+      "evidence:ifm-k2-horizon-7b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-03",
+  "lastReviewedOn": "2026-10-07",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-7b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-7b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-7b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-7b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-card",
+    "evidence:ifm-k2-horizon-7b-metadata",
+    "evidence:ifm-k2-horizon-7b-gguf-files",
+    "evidence:ifm-k2-horizon-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شدهٔ Safetensors؛ معادل اندازهٔ اسمی یا پارامتر فعال نیست",
+      "value": {
+        "state": "known",
+        "value": 8.99917824,
+        "evidenceIds": [
+          "evidence:ifm-k2-horizon-7b-metadata"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:ifm-k2-horizon-32b",
+  "familyId": "family:k2-horizon",
+  "exactName": "K2-Horizon-32B",
+  "publisher": "IFM",
+  "version": "7eb3d2dceccb27bad4f97d76ce92e7431b3f786a",
+  "aliases": [
+    "IFM/K2-Horizon-32B"
+  ],
+  "stage": "reasoning",
+  "architecture": "dense",
+  "attentionArchitecture": "full-attention",
+  "totalParametersB": {
+    "state": "known",
+    "value": 32,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-32b-card",
+      "evidence:ifm-k2-horizon-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "اندازهٔ اسمی/هستهٔ اعلام‌شدهٔ ناشر؛ شمار عناصر ذخیره‌شدهٔ Safetensors جدا آمده است."
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 524288,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-32b-card",
+      "evidence:ifm-k2-horizon-32b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-03",
+  "lastReviewedOn": "2026-10-07",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-32b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/IFM/K2-Horizon-32B/blob/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/README.md",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-32b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-32b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-32b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-card",
+    "evidence:ifm-k2-horizon-32b-metadata",
+    "evidence:ifm-k2-horizon-32b-gguf-files",
+    "evidence:ifm-k2-horizon-32b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شدهٔ Safetensors؛ معادل اندازهٔ اسمی یا پارامتر فعال نیست",
+      "value": {
+        "state": "known",
+        "value": 34.77930496,
+        "evidenceIds": [
+          "evidence:ifm-k2-horizon-32b-metadata"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:ifm-k2-horizon-mova-36b-a4b",
+  "familyId": "family:k2-horizon",
+  "exactName": "K2-Horizon-MoVA-36B-A4B",
+  "publisher": "IFM",
+  "version": "cca48b6631d03c338a0e1d8beb0c392af8becbd3",
+  "aliases": [
+    "IFM/K2-Horizon-MoVA-36B-A4B"
+  ],
+  "stage": "reasoning",
+  "architecture": "moe",
+  "attentionArchitecture": "full-attention",
+  "totalParametersB": {
+    "state": "known",
+    "value": 36,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+      "evidence:ifm-k2-horizon-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "اندازهٔ اسمی/هستهٔ اعلام‌شدهٔ ناشر؛ شمار عناصر ذخیره‌شدهٔ Safetensors جدا آمده است."
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 4,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+      "evidence:ifm-k2-horizon-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "حدود ۴B فعال به ازای توکن طبق ناشر؛ حجم وزن‌های کل مدل را کاهش نمی‌دهد."
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 524288,
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+      "evidence:ifm-k2-horizon-mova-36b-a4b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-09-03",
+  "lastReviewedOn": "2026-10-07",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-mova-36b-a4b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/blob/cca48b6631d03c338a0e1d8beb0c392af8becbd3/README.md",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-mova-36b-a4b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-mova-36b-a4b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-mova-36b-a4b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شدهٔ Safetensors؛ معادل اندازهٔ اسمی یا پارامتر فعال نیست",
+      "value": {
+        "state": "known",
+        "value": 37.44479202,
+        "evidenceIds": [
+          "evidence:ifm-k2-horizon-mova-36b-a4b-metadata"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ]
+});
+models.push({
+  "id": "model:google-embeddinggemma-2",
+  "familyId": "family:embeddinggemma",
+  "exactName": "embeddinggemma-2",
+  "publisher": "Google DeepMind",
+  "version": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "aliases": [
+    "google/embeddinggemma-2",
+    "EmbeddingGemma 2"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "attentionArchitecture": "hybrid",
+  "kind": "embedding",
+  "totalParametersB": {
+    "state": "known",
+    "value": 0.74,
+    "evidenceIds": [
+      "evidence:embeddinggemma-2-card",
+      "evidence:embeddinggemma-2-launch"
+    ],
+    "unit": "billion-parameters",
+    "note": "۰٫۷۴B اندازهٔ اسمی کل است؛ بخش متنی ۰٫۲۷B، پارامتر فعال MoE نیست."
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "parameterCounts": [
+    {
+      "scope": "language-component",
+      "label": "بخش متنی؛ قابل بارگذاری مستقل",
+      "value": {
+        "state": "known",
+        "value": 0.27,
+        "evidenceIds": [
+          "evidence:embeddinggemma-2-card",
+          "evidence:embeddinggemma-2-launch"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    },
+    {
+      "scope": "stored",
+      "label": "عناصر ذخیره‌شدهٔ Safetensors؛ جدا از اندازهٔ اسمی",
+      "value": {
+        "state": "known",
+        "value": 0.744371512,
+        "evidenceIds": [
+          "evidence:embeddinggemma-2-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "inputModalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "multilingual",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:embeddinggemma-2-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:embeddinggemma-2-card"
+    ],
+    "unit": "token",
+    "note": "بودجهٔ ورودی مشترک متن و رسانه؛ ۸۱۹۲ توکن به معنی ۸۱۹۲ توکن متن به‌علاوهٔ رسانه نیست."
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-10-06",
+  "lastReviewedOn": "2026-10-07",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-launch"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/google/embeddinggemma-2/blob/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-launch"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:embeddinggemma-2-card",
+      "evidence:embeddinggemma-2-launch"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card",
+    "evidence:embeddinggemma-2-files",
+    "evidence:embeddinggemma-2-launch",
+    "evidence:embeddinggemma-2-developer-guide",
+    "evidence:embeddinggemma-2-transformers"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی متن، کد و رسانه در فضای مشترک",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار ۷۶۸بعدی با MRL؛ کاهش به ۵۱۲، ۲۵۶ یا ۱۲۸ بعد",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "mean pooling و نرمال‌سازی؛ قالب SearchQuery و Document برای بازیابی متن",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "ورودی متن و کد، تصویر، ویدئو و صوت؛ بخش متنی قابل بارگذاری مستقل؛ پس از کاهش بعد دوباره نرمال شود",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "بیش از ۱۰۰ زبان طبق ناشر؛ شاهد ارزیابی فارسی ثبت نشده",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 768,
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card"
+      ]
+    },
+    "adjustableDimensions": {
+      "state": "known",
+      "value": "768 / 512 / 256 / 128",
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card"
+      ]
+    }
+  }
 });

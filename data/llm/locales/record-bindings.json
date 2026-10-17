@@ -1060,12 +1060,6 @@
     "activationPrecision/note": "record.0118",
     "size/note": "record.0119"
   },
-  "repository.softwareReleases/software-release:ollama-v0-34-0": {
-    "offlineOperation/note": "record.0121",
-    "targetScenario/value": "record.0122",
-    "backendSummary/value": "record.0123",
-    "selectionCaveat": "ollama034.systemone930.conditions"
-  },
   "repository.softwareReleases/software-release:vllm-v0-29-0": {
     "offlineOperation/note": "record.0125",
     "targetScenario/value": "record.0126",
@@ -4581,7 +4575,9 @@
     "runGuides/2/label": "record.0428",
     "runGuides/3/label": "record.0429",
     "runGuides/4/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/5/conditions/0": "ollama040.route.general",
+    "runGuides/5/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-5-35b-a3b": {
     "introduction": "record.0534",
@@ -4594,7 +4590,9 @@
     "runGuides/2/label": "record.0428",
     "runGuides/3/label": "record.0429",
     "runGuides/4/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/5/conditions/0": "ollama040.route.general",
+    "runGuides/5/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-5-4b": {
     "introduction": "record.0538",
@@ -4607,7 +4605,9 @@
     "runGuides/2/label": "record.0428",
     "runGuides/3/label": "record.0429",
     "runGuides/4/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/5/conditions/0": "ollama040.route.general",
+    "runGuides/5/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-5-9b": {
     "introduction": "record.0542",
@@ -4620,7 +4620,9 @@
     "runGuides/2/label": "record.0428",
     "runGuides/3/label": "record.0429",
     "runGuides/4/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/5/conditions/0": "ollama040.route.general",
+    "runGuides/5/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-8-27b": {
     "introduction": "record.0546",
@@ -4632,7 +4634,9 @@
     "runGuides/2/label": "record.0428",
     "runGuides/3/label": "record.0429",
     "runGuides/4/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/5/conditions/0": "ollama040.route.general",
+    "runGuides/5/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:allenai-olmo-3-7b-instruct": {
     "introduction": "record.0550",
@@ -4791,7 +4795,9 @@
     "runGuides/1/label": "record.0421",
     "runGuides/2/label": "record.0430",
     "runGuides/3/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/4/conditions/0": "ollama040.route.general",
+    "runGuides/4/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:google-gemma-4-e2b-it": {
     "introduction": "record.0606",
@@ -4803,7 +4809,9 @@
     "runGuides/1/label": "record.0421",
     "runGuides/2/label": "record.0430",
     "runGuides/3/label": "record.0414",
-    "runGuides/0/engineLabel": "record.0426"
+    "runGuides/0/engineLabel": "record.0426",
+    "runGuides/4/conditions/0": "ollama040.route.general",
+    "runGuides/4/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:ibm-granite-granite-3-3-2b-instruct": {
     "introduction": "record.0610",
@@ -5083,7 +5091,9 @@
     "runGuides/0/label": "record.0421",
     "runGuides/1/label": "record.0428",
     "runGuides/2/label": "record.0429",
-    "runGuides/3/label": "record.0414"
+    "runGuides/3/label": "record.0414",
+    "runGuides/4/conditions/0": "ollama040.route.general",
+    "runGuides/4/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-5-0-8b": {
     "introduction": "record.0697",
@@ -5093,7 +5103,9 @@
     "runGuides/0/label": "record.0421",
     "runGuides/1/label": "record.0428",
     "runGuides/2/label": "record.0429",
-    "runGuides/3/label": "record.0414"
+    "runGuides/3/label": "record.0414",
+    "runGuides/4/conditions/0": "ollama040.route.general",
+    "runGuides/4/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-5-122b-a10b": {
     "introduction": "record.0699",
@@ -5103,7 +5115,9 @@
     "runGuides/0/label": "record.0421",
     "runGuides/1/label": "record.0428",
     "runGuides/2/label": "record.0429",
-    "runGuides/3/label": "record.0414"
+    "runGuides/3/label": "record.0414",
+    "runGuides/4/conditions/0": "ollama040.route.general",
+    "runGuides/4/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:qwen-qwen3-5-397b-a17b": {
     "introduction": "record.0701",
@@ -5112,7 +5126,9 @@
     "languageSummary": "record.0007",
     "runGuides/0/label": "record.0421",
     "runGuides/1/label": "record.0428",
-    "runGuides/2/label": "record.0429"
+    "runGuides/2/label": "record.0429",
+    "runGuides/3/conditions/0": "ollama040.route.general",
+    "runGuides/3/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelProfiles/model-profile:meta-llama-llama-3-3-70b-instruct": {
     "introduction": "record.0703",
@@ -5271,7 +5287,8 @@
     "roleSummary": "record.0220",
     "distinguishingFeatures/0": "record.0220",
     "languageSummary": "record.0078",
-    "runGuides/0/label": "record.0421"
+    "runGuides/0/label": "record.0421",
+    "securityNotes/0": "llama11532.modernbert"
   },
   "repository.modelProfiles/model-profile:qwen-qwen2-5-coder-1-5b": {
     "introduction": "record.0731",
@@ -8933,7 +8950,9 @@
     "distinguishingFeatures/0": "wizard0920.8c86c00983b44afbca",
     "languageSummary": "wizard0920.c2aa2b53fd4ce0c016",
     "runGuides/0/conditions/0": "wizard0920.a6a6e5d8e47d3582bc",
-    "runGuides/1/conditions/0": "wizard0920.b8dda38b754f444076"
+    "runGuides/1/conditions/0": "wizard0920.b8dda38b754f444076",
+    "runGuides/2/conditions/0": "ollama040.route.general",
+    "runGuides/2/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelUseGuidance/model-use:qwen-qwen3-6-27b:text-work": {
     "summary": "wizard0920.7d7d1acd74c5067540",
@@ -8981,7 +9000,9 @@
     "distinguishingFeatures/0": "wizard0920.67ca97e52cc68eaf67",
     "languageSummary": "wizard0920.8af010c38e6d62d484",
     "runGuides/0/conditions/0": "wizard0920.6d5bc318bcf80c28f0",
-    "runGuides/1/conditions/0": "wizard0920.4e260d4dce5947786f"
+    "runGuides/1/conditions/0": "wizard0920.4e260d4dce5947786f",
+    "runGuides/2/conditions/0": "ollama040.route.general",
+    "runGuides/2/conditions/1": "ollama040.route.qwen"
   },
   "repository.modelUseGuidance/model-use:qwen-qwen3-6-35b-a3b:text-work": {
     "summary": "wizard0920.e83324c453f8454f46",
@@ -9321,7 +9342,13 @@
     "distinguishingFeatures/0": "clef.intro",
     "roleSummary": "clef.role",
     "languageSummary": "clef.language",
-    "runGuides/0/conditions/0": "clef.ollama-condition"
+    "runGuides/0/conditions/0": "clef.ollama-condition",
+    "runGuides/1/label": "oct06.model-profile:cloudflare-clef.runGuides.1.label",
+    "runGuides/1/instructions": "oct06.model-profile:cloudflare-clef.runGuides.1.instructions",
+    "runGuides/1/conditions/0": "oct06.model-profile:cloudflare-clef.runGuides.1.conditions.0",
+    "runGuides/1/conditions/1": "oct06.model-profile:cloudflare-clef.runGuides.1.conditions.1",
+    "runGuides/2/conditions/0": "ollama040.route.general",
+    "runGuides/2/conditions/1": "ollama040.route.decision"
   },
   "repository.models/model:cloudflare-clef-flash": {
     "specializedSpecs/task/value": "clef-flash.task",
@@ -9334,7 +9361,13 @@
     "distinguishingFeatures/0": "clef-flash.intro",
     "roleSummary": "clef-flash.role",
     "languageSummary": "clef-flash.language",
-    "runGuides/0/conditions/0": "clef-flash.ollama-condition"
+    "runGuides/0/conditions/0": "clef-flash.ollama-condition",
+    "runGuides/1/label": "oct06.model-profile:cloudflare-clef-flash.runGuides.1.label",
+    "runGuides/1/instructions": "oct06.model-profile:cloudflare-clef-flash.runGuides.1.instructions",
+    "runGuides/1/conditions/0": "oct06.model-profile:cloudflare-clef-flash.runGuides.1.conditions.0",
+    "runGuides/1/conditions/1": "oct06.model-profile:cloudflare-clef-flash.runGuides.1.conditions.1",
+    "runGuides/2/conditions/0": "ollama040.route.general",
+    "runGuides/2/conditions/1": "ollama040.route.decision"
   },
   "repository.softwareReleases/software-release:triton-v2-73-0": {
     "offlineOperation/note": "record.0125",
@@ -9406,7 +9439,9 @@
     "distinguishingFeatures/0": "auditmodel.010",
     "languageSummary": "auditmodel.011",
     "downloadSearchNote": "auditmodel.016",
-    "runGuides/0/conditions/0": "auditmodel.run.bespokelabs-bespoke-nimble-9b"
+    "runGuides/0/conditions/0": "auditmodel.run.bespokelabs-bespoke-nimble-9b",
+    "runGuides/1/conditions/0": "ollama040.route.general",
+    "runGuides/1/conditions/1": "ollama040.route.decision"
   },
   "repository.modelProfiles/model-profile:zai-org-glm-5-3-flash": {
     "introduction": "auditmodel.017",
@@ -9424,5 +9459,396 @@
   },
   "repository.artifactListings/artifact-listing:zai-org-glm-5-3-flash": {
     "sizeDescription": "auditmodel.artifact.glm"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-v0-6-0": {
+    "targetScenario/value": "oct06.software-release:llama-cpp-v0-6-0.targetScenario.value",
+    "backendSummary/value": "oct06.software-release:llama-cpp-v0-6-0.backendSummary.value",
+    "selectionCaveat": "oct06.software-release:llama-cpp-v0-6-0.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11424": {
+    "targetScenario/value": "oct06.software-release:llama-cpp-b11424.targetScenario.value",
+    "backendSummary/value": "oct06.software-release:llama-cpp-b11424.backendSummary.value",
+    "selectionCaveat": "oct06.software-release:llama-cpp-b11424.selectionCaveat"
+  },
+  "repository.softwareCapabilities/software-capability:llama-cpp-v0-6-0-clef-decisions": {
+    "scope/conditions/0": "oct06.software-capability:llama-cpp-v0-6-0-clef-decisions.scope.conditions.0",
+    "limitations/0": "oct06.software-capability:llama-cpp-v0-6-0-clef-decisions.limitations.0"
+  },
+  "repository.apiCompatibility/api-compatibility:llama-cpp-v0-6-0-systemone": {
+    "scope/conditions/0": "oct06.api-compatibility:llama-cpp-v0-6-0-systemone.scope.conditions.0",
+    "limitations/0": "oct06.api-compatibility:llama-cpp-v0-6-0-systemone.limitations.0"
+  },
+  "repository.models/model:reflection-beam": {
+    "version": "oct06.model:reflection-beam.version",
+    "license/name/note": "oct06.model:reflection-beam.license.name.note",
+    "license/restrictions/0": "oct06.model:reflection-beam.license.restrictions.0"
+  },
+  "repository.modelProfiles/model-profile:reflection-beam": {
+    "introduction": "oct06.model-profile:reflection-beam.introduction",
+    "roleSummary": "oct06.model-profile:reflection-beam.roleSummary",
+    "distinguishingFeatures/0": "oct06.model-profile:reflection-beam.distinguishingFeatures.0",
+    "distinguishingFeatures/1": "oct06.model-profile:reflection-beam.distinguishingFeatures.1",
+    "languageSummary": "oct06.model-profile:reflection-beam.languageSummary",
+    "downloadSearchNote": "oct06.model-profile:reflection-beam.downloadSearchNote"
+  },
+  "repository.models/model:ifm-k2-horizon-0-9b": {
+    "totalParametersB/note": "k2h.001",
+    "parameterCounts/0/label": "k2h.002"
+  },
+  "repository.modelProfiles/model-profile:ifm-k2-horizon-0-9b": {
+    "introduction": "k2h.003",
+    "roleSummary": "k2h.004",
+    "languageSummary": "k2h.005",
+    "distinguishingFeatures/0": "k2h.006",
+    "runGuides/0/conditions/0": "k2h.007",
+    "runGuides/1/conditions/0": "k2h.008",
+    "runGuides/2/conditions/0": "k2h.009",
+    "runGuides/3/conditions/0": "k2h.010"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-0-9b-bf16": {
+    "scopeNote": "k2h.011"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-0-9b-q4-k-m": {
+    "scopeNote": "k2h.012"
+  },
+  "repository.models/model:ifm-k2-horizon-3-7b": {
+    "totalParametersB/note": "k2h.013",
+    "parameterCounts/0/label": "k2h.014"
+  },
+  "repository.modelProfiles/model-profile:ifm-k2-horizon-3-7b": {
+    "introduction": "k2h.015",
+    "roleSummary": "k2h.016",
+    "languageSummary": "k2h.017",
+    "distinguishingFeatures/0": "k2h.018",
+    "runGuides/0/conditions/0": "k2h.019",
+    "runGuides/1/conditions/0": "k2h.020",
+    "runGuides/2/conditions/0": "k2h.021",
+    "runGuides/3/conditions/0": "k2h.022"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-3-7b-bf16": {
+    "scopeNote": "k2h.023"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-3-7b-q4-k-m": {
+    "scopeNote": "k2h.024"
+  },
+  "repository.models/model:ifm-k2-horizon-7b": {
+    "totalParametersB/note": "k2h.025",
+    "parameterCounts/0/label": "k2h.026"
+  },
+  "repository.modelProfiles/model-profile:ifm-k2-horizon-7b": {
+    "introduction": "k2h.027",
+    "roleSummary": "k2h.028",
+    "languageSummary": "k2h.029",
+    "distinguishingFeatures/0": "k2h.030",
+    "runGuides/0/conditions/0": "k2h.031",
+    "runGuides/1/conditions/0": "k2h.032",
+    "runGuides/2/conditions/0": "k2h.033",
+    "runGuides/3/conditions/0": "k2h.034"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-7b-bf16": {
+    "scopeNote": "k2h.035"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-7b-q4-k-m": {
+    "scopeNote": "k2h.036"
+  },
+  "repository.models/model:ifm-k2-horizon-32b": {
+    "totalParametersB/note": "k2h.037",
+    "parameterCounts/0/label": "k2h.038"
+  },
+  "repository.modelProfiles/model-profile:ifm-k2-horizon-32b": {
+    "introduction": "k2h.039",
+    "roleSummary": "k2h.040",
+    "languageSummary": "k2h.041",
+    "distinguishingFeatures/0": "k2h.042",
+    "runGuides/0/conditions/0": "k2h.043",
+    "runGuides/1/conditions/0": "k2h.044",
+    "runGuides/2/conditions/0": "k2h.045",
+    "runGuides/3/conditions/0": "k2h.046"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-32b-bf16": {
+    "scopeNote": "k2h.047"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-32b-q4-k-m": {
+    "scopeNote": "k2h.048"
+  },
+  "repository.models/model:ifm-k2-horizon-mova-36b-a4b": {
+    "totalParametersB/note": "k2h.049",
+    "activeParametersB/note": "k2h.050",
+    "parameterCounts/0/label": "k2h.051"
+  },
+  "repository.modelProfiles/model-profile:ifm-k2-horizon-mova-36b-a4b": {
+    "introduction": "k2h.052",
+    "roleSummary": "k2h.053",
+    "languageSummary": "k2h.054",
+    "distinguishingFeatures/0": "k2h.055",
+    "runGuides/0/conditions/0": "k2h.056",
+    "runGuides/1/conditions/0": "k2h.057",
+    "runGuides/2/conditions/0": "k2h.058",
+    "runGuides/3/conditions/0": "k2h.059"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-mova-36b-a4b-bf16": {
+    "scopeNote": "k2h.060"
+  },
+  "repository.artifactListings/artifact-listing:ifm-k2-horizon-mova-36b-a4b-q4-k-m": {
+    "scopeNote": "k2h.061"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11454": {
+    "targetScenario/value": "k2h.062",
+    "backendSummary/value": "k2h.063",
+    "selectionCaveat": "k2h.064"
+  },
+  "repository.softwareCapabilities/software-capability:llama-cpp-b11454-k2-task-generation": {
+    "scope/conditions/0": "k2h.065"
+  },
+  "repository.softwareCapabilities/software-capability:llama-cpp-b11454-k2-tool-calling": {
+    "scope/conditions/0": "k2h.066"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-0-9b:text-work": {
+    "summary": "k2h.067",
+    "description": "k2h.068",
+    "distinguishingFeature": "k2h.069",
+    "conditions/0": "k2h.070"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-0-9b:coding-assistant": {
+    "summary": "k2h.071",
+    "description": "k2h.072",
+    "distinguishingFeature": "k2h.073",
+    "conditions/0": "k2h.074"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-0-9b:reasoning-analysis": {
+    "summary": "k2h.075",
+    "description": "k2h.076",
+    "distinguishingFeature": "k2h.077",
+    "conditions/0": "k2h.078"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-0-9b:agents-tools": {
+    "summary": "k2h.079",
+    "description": "k2h.080",
+    "distinguishingFeature": "k2h.081",
+    "conditions/0": "k2h.082"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-3-7b:text-work": {
+    "summary": "k2h.083",
+    "description": "k2h.084",
+    "distinguishingFeature": "k2h.085",
+    "conditions/0": "k2h.086"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-3-7b:coding-assistant": {
+    "summary": "k2h.087",
+    "description": "k2h.088",
+    "distinguishingFeature": "k2h.089",
+    "conditions/0": "k2h.090"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-3-7b:reasoning-analysis": {
+    "summary": "k2h.091",
+    "description": "k2h.092",
+    "distinguishingFeature": "k2h.093",
+    "conditions/0": "k2h.094"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-3-7b:agents-tools": {
+    "summary": "k2h.095",
+    "description": "k2h.096",
+    "distinguishingFeature": "k2h.097",
+    "conditions/0": "k2h.098"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-7b:text-work": {
+    "summary": "k2h.099",
+    "description": "k2h.100",
+    "distinguishingFeature": "k2h.101",
+    "conditions/0": "k2h.102"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-7b:coding-assistant": {
+    "summary": "k2h.103",
+    "description": "k2h.104",
+    "distinguishingFeature": "k2h.105",
+    "conditions/0": "k2h.106"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-7b:reasoning-analysis": {
+    "summary": "k2h.107",
+    "description": "k2h.108",
+    "distinguishingFeature": "k2h.109",
+    "conditions/0": "k2h.110"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-7b:agents-tools": {
+    "summary": "k2h.111",
+    "description": "k2h.112",
+    "distinguishingFeature": "k2h.113",
+    "conditions/0": "k2h.114"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-32b:text-work": {
+    "summary": "k2h.115",
+    "description": "k2h.116",
+    "distinguishingFeature": "k2h.117",
+    "conditions/0": "k2h.118"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-32b:coding-assistant": {
+    "summary": "k2h.119",
+    "description": "k2h.120",
+    "distinguishingFeature": "k2h.121",
+    "conditions/0": "k2h.122"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-32b:reasoning-analysis": {
+    "summary": "k2h.123",
+    "description": "k2h.124",
+    "distinguishingFeature": "k2h.125",
+    "conditions/0": "k2h.126"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-32b:agents-tools": {
+    "summary": "k2h.127",
+    "description": "k2h.128",
+    "distinguishingFeature": "k2h.129",
+    "conditions/0": "k2h.130"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-mova-36b-a4b:text-work": {
+    "summary": "k2h.131",
+    "description": "k2h.132",
+    "distinguishingFeature": "k2h.133",
+    "conditions/0": "k2h.134"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-mova-36b-a4b:coding-assistant": {
+    "summary": "k2h.135",
+    "description": "k2h.136",
+    "distinguishingFeature": "k2h.137",
+    "conditions/0": "k2h.138"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-mova-36b-a4b:reasoning-analysis": {
+    "summary": "k2h.139",
+    "description": "k2h.140",
+    "distinguishingFeature": "k2h.141",
+    "conditions/0": "k2h.142"
+  },
+  "repository.modelUseGuidance/model-use:ifm-k2-horizon-mova-36b-a4b:agents-tools": {
+    "summary": "k2h.143",
+    "description": "k2h.144",
+    "distinguishingFeature": "k2h.145",
+    "conditions/0": "k2h.146"
+  },
+  "repository.models/model:google-embeddinggemma-2": {
+    "parameterCounts/0/label": "eg2.001",
+    "parameterCounts/1/label": "eg2.002",
+    "totalParametersB/note": "eg2.003",
+    "declaredContext/note": "eg2.004",
+    "specializedSpecs/task/value": "eg2.005",
+    "specializedSpecs/output/value": "eg2.006",
+    "specializedSpecs/poolingOrScoring/value": "eg2.007",
+    "specializedSpecs/features/value": "eg2.008",
+    "specializedSpecs/languages/value": "eg2.009"
+  },
+  "repository.modelProfiles/model-profile:google-embeddinggemma-2": {
+    "introduction": "eg2.010",
+    "roleSummary": "eg2.011",
+    "languageSummary": "eg2.012",
+    "distinguishingFeatures/0": "eg2.013",
+    "distinguishingFeatures/1": "eg2.014",
+    "distinguishingFeatures/2": "eg2.015",
+    "runGuides/0/conditions/0": "eg2.016",
+    "runGuides/1/conditions/0": "eg2.017",
+    "runGuides/1/conditions/1": "eg2.018",
+    "runGuides/2/conditions/0": "ollama040.route.general",
+    "runGuides/2/conditions/1": "ollama040.route.embedding"
+  },
+  "repository.artifactListings/artifact-listing:google-embeddinggemma-2-bf16": {
+    "scopeNote": "eg2.019"
+  },
+  "repository.modelUseGuidance/model-use:google-embeddinggemma-2-enterprise-rag": {
+    "summary": "eg2.020",
+    "description": "eg2.021",
+    "distinguishingFeature": "eg2.022",
+    "conditions/0": "eg2.023"
+  },
+  "repository.applicationAssessments/application-assessment:google-embeddinggemma-2-enterprise-rag": {
+    "summary": "eg2.024",
+    "rationale": "eg2.025",
+    "limitations/0": "eg2.026"
+  },
+  "repository.workloads/workload:google-embeddinggemma-2-retrieval": {
+    "name": "eg2.027"
+  },
+  "repository.specializedAssessments/specialized-assessment:google-embeddinggemma-2": {
+    "metricName": "eg2.028",
+    "limitations/0": "eg2.029"
+  },
+  "repository.publishedEvaluations/published-evaluation:embeddinggemma-2-mteb-multi-768": {
+    "limitations/0": "eg2.030"
+  },
+  "repository.publishedEvaluations/published-evaluation:embeddinggemma-2-mteb-multi-256": {
+    "limitations/0": "eg2.031"
+  },
+  "repository.publishedEvaluations/published-evaluation:embeddinggemma-2-mteb-code-768": {
+    "limitations/0": "eg2.032"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-40-0": {
+    "offlineOperation/note": "record.0121",
+    "targetScenario/value": "record.0122",
+    "backendSummary/value": "ollama040.backend",
+    "selectionCaveat": "ollama040.conditions"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11532": {
+    "targetScenario/value": "llama11532.scenario",
+    "backendSummary/value": "llama11532.summary",
+    "selectionCaveat": "llama11532.caveat",
+    "backendSummary/note": "llama11532.caveat"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-40-2": {
+    "offlineOperation/note": "record.0121",
+    "targetScenario/value": "record.0122",
+    "backendSummary/value": "ollama0402.backend",
+    "selectionCaveat": "ollama0402.conditions"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-task-generation:v0402": {
+    "scope/conditions/0": "record.0124",
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-task-embedding:v0402": {
+    "scope/conditions/0": "record.0124",
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-streaming:v0402": {
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-structured-output:v0402": {
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-tool-use:v0402": {
+    "scope/conditions/0": "record.0124",
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-queueing:v0402": {
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-concurrency:v0402": {
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-multi-model:v0402": {
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-model-load-unload:v0402": {
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-cpu-gpu-offload:v0402": {
+    "scope/conditions/0": "record.0124",
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:ollama-multi-gpu-sharding:v0402": {
+    "scope/conditions/0": "record.0124",
+    "limitations/0": "record.0176"
+  },
+  "repository.softwareCapabilities/software-capability:v03-ollama-reasoning-control:v0402": {
+    "scope/conditions/0": "record.0191"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11537": {
+    "targetScenario/value": "b11537.scenario",
+    "backendSummary/value": "b11537.summary",
+    "selectionCaveat": "b11537.caveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11540": {
+    "targetScenario/value": "b11540.scenario",
+    "backendSummary/value": "b11540.summary",
+    "selectionCaveat": "b11540.caveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11552": {
+    "targetScenario/value": "b11552.scenario",
+    "backendSummary/value": "b11552.summary",
+    "selectionCaveat": "b11552.caveat"
   }
 }

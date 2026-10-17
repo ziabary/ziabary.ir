@@ -21,7 +21,7 @@
   <section class="wrap section teaching-preview latest-presentation" dir={locale === 'fa' ? 'rtl' : 'ltr'}>
     <a class="presentation-preview-cover" href={`${base}/slides/${item.slug}/`} aria-label={`${copy.view}: ${title}`} hreflang={locale}>
       {#if item.cover}
-        <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${title}»`} loading="lazy" width="1600" height="900" />
+        <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${title}»`} loading="lazy" width={item.coverWidth ?? 1600} height={item.coverHeight ?? 900} />
       {:else}
         <i class="fa-regular fa-file-pdf" aria-hidden="true"></i><span>{title}</span>
       {/if}

@@ -8,7 +8,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": [
       "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
     ]
@@ -27,7 +27,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": [
       "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
     ]
@@ -46,7 +46,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [
@@ -63,7 +63,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [
@@ -80,7 +80,7 @@ softwareCapabilities.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": [
       "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
     ]
@@ -99,7 +99,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [
@@ -116,7 +116,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [
@@ -133,7 +133,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [
@@ -150,7 +150,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [
@@ -167,7 +167,7 @@ softwareCapabilities.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": [
       "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
     ]
@@ -186,7 +186,7 @@ softwareCapabilities.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": [
       "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
     ]
@@ -1365,7 +1365,7 @@ softwareCapabilities.push({
   "status": "conditional",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": [
       "کنترل تفکر فقط روی مدل و قالب دارای همان قرارداد اثر دارد."
     ]
@@ -1381,7 +1381,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [],
@@ -1395,7 +1395,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [],
@@ -1409,7 +1409,7 @@ softwareCapabilities.push({
   "status": "supported",
   "provision": "native",
   "scope": {
-    "softwareReleaseId": "software-release:ollama-v0-34-0",
+    "softwareReleaseId": "software-release:ollama-v0-40-0",
     "conditions": []
   },
   "limitations": [],
@@ -2217,5 +2217,350 @@ softwareCapabilities.push({
   },
   "evidenceIds": [
     "evidence:sglang-v0-5-20-overview"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:llama-cpp-v0-6-0-clef-decisions",
+  "capability": "task-classification",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:llama-cpp-v0-6-0",
+    "modelVersionIds": [
+      "model:cloudflare-clef",
+      "model:cloudflare-clef-flash"
+    ],
+    "endpoints": [
+      "/v1/systemone"
+    ],
+    "conditions": [
+      "برای تصویر، GGUF با قالب جدید و projector سازگار لازم است؛ کل prompt باید در --ubatch-size جا شود."
+    ]
+  },
+  "limitations": [
+    "کیفیت فارسی، سرعت و مصرف کامل حافظه آزموده نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:llama-cpp-v0-6-0-release",
+    "evidence:llama-cpp-v0-6-0-systemone",
+    "evidence:llama-cpp-clef-vision-29969"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:llama-cpp-b11454-k2-task-generation",
+  "capability": "task-generation",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:llama-cpp-b11454",
+    "modelVersionIds": [
+      "model:ifm-k2-horizon-0-9b",
+      "model:ifm-k2-horizon-3-7b",
+      "model:ifm-k2-horizon-7b",
+      "model:ifm-k2-horizon-32b",
+      "model:ifm-k2-horizon-mova-36b-a4b"
+    ],
+    "conditions": [
+      "مدل K2 Horizon با GGUF رسمی و llama.cpp b11454+ شامل این پیاده‌سازی لازم است؛ tensor parallel غیرفعال است."
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:llama-cpp-b11454-k2-tool-calling",
+  "capability": "tool-use",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:llama-cpp-b11454",
+    "modelVersionIds": [
+      "model:ifm-k2-horizon-0-9b",
+      "model:ifm-k2-horizon-3-7b",
+      "model:ifm-k2-horizon-7b",
+      "model:ifm-k2-horizon-32b",
+      "model:ifm-k2-horizon-mova-36b-a4b"
+    ],
+    "conditions": [
+      "مدل K2 Horizon با GGUF رسمی و llama.cpp b11454+ شامل این پیاده‌سازی لازم است؛ tensor parallel غیرفعال است."
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-task-generation:v0402",
+  "capability": "task-generation",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": [
+      "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
+    ]
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-task-generation",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-task-embedding:v0402",
+  "capability": "task-embedding",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": [
+      "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
+    ]
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-task-embedding",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-streaming:v0402",
+  "capability": "streaming",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-streaming",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-structured-output:v0402",
+  "capability": "structured-output",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-structured-output",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-tool-use:v0402",
+  "capability": "tool-use",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": [
+      "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
+    ]
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-tool-use",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-queueing:v0402",
+  "capability": "queueing",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-queueing",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-concurrency:v0402",
+  "capability": "concurrency",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-concurrency",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-multi-model:v0402",
+  "capability": "multi-model",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-multi-model",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-model-load-unload:v0402",
+  "capability": "model-load-unload",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-model-load-unload",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-cpu-gpu-offload:v0402",
+  "capability": "cpu-gpu-offload",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": [
+      "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
+    ]
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-cpu-gpu-offload",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:ollama-multi-gpu-sharding:v0402",
+  "capability": "multi-gpu-sharding",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": [
+      "فراخوانی ابزار و خروجی ساختاریافته به مدل و قالب پیام وابسته‌اند."
+    ]
+  },
+  "limitations": [
+    "کارایی سرویس آزموده نشده است."
+  ],
+  "evidenceIds": [
+    "evidence:software-ollama-multi-gpu-sharding",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:v03-ollama-reasoning-control:v0402",
+  "capability": "reasoning-control",
+  "status": "conditional",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": [
+      "کنترل تفکر فقط روی مدل و قالب دارای همان قرارداد اثر دارد."
+    ]
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:v03-100d98eccf39cc3b07",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:v03-ollama-model-template-selection:v0402",
+  "capability": "model-template-selection",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:v03-dae47dfeaa7d876c77",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:v03-ollama-admission-control:v0402",
+  "capability": "admission-control",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:v03-52a69bb18aac54b096",
+    "evidence:ollama-v0-40-2-release"
+  ]
+});
+softwareCapabilities.push({
+  "id": "software-capability:v03-ollama-cold-start-control:v0402",
+  "capability": "cold-start-control",
+  "status": "supported",
+  "provision": "native",
+  "scope": {
+    "softwareReleaseId": "software-release:ollama-v0-40-2",
+    "conditions": []
+  },
+  "limitations": [],
+  "evidenceIds": [
+    "evidence:v03-05181cc221c8cc484b",
+    "evidence:ollama-v0-40-2-release"
   ]
 });

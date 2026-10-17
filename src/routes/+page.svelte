@@ -8,8 +8,9 @@
   import HomePresentation from '$lib/components/HomePresentation.svelte';
   import '$lib/components/home-previews.css';
   import { mediaItems, mediaSources } from '$lib/news';
+  import { mediaPublications } from '$lib/media-publications.mjs';
   const featured = articles.filter((article) => article.lang === 'fa').slice(0, 3);
-  const latestMedia = [...mediaItems].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+  const latestMedia = mediaPublications(articles, mediaItems).slice(0, 3);
 </script>
 
 <svelte:head>
@@ -57,7 +58,7 @@
           <a href={item.url} target="_blank" rel="noreferrer">
             <div class="home-media-cover" class:source-cover={!item.coverImage}>
               {#if item.coverImage}
-                <img {...imageAttributes(item.coverImage, '(min-width: 980px) 580px, calc(100vw - 32px)')} alt={item.coverImageAlt ?? item.title} loading="lazy" width="640" height="360" />
+                <img {...imageAttributes(item.coverImage, '(min-width: 980px) 580px, calc(100vw - 32px)')} style:object-position={item.coverImagePosition ?? 'center'} alt={item.coverImageAlt ?? item.title} loading="lazy" width="640" height="360" />
               {:else if mediaSources[item.source]}
                 <img {...imageAttributes(mediaSources[item.source].logo, '(min-width: 980px) 580px, calc(100vw - 32px)')} alt={`نشان ${item.source}`} loading="lazy" width="160" height="160" />
               {:else}

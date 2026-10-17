@@ -90,7 +90,7 @@ const applications: ApplicationTaxon[] = [
 ];
 const modelFamilyCandidates = [
   'Qwen', 'DeepSeek', 'Aya / Cohere', 'Gemma', 'Llama', 'Mistral', 'GLM',
-  'gpt-oss', 'Phi', 'Granite', 'Nemotron', 'OLMo', 'Kimi', 'MiniMax', 'SmolLM', 'BGE', 'E5'
+  'gpt-oss', 'Phi', 'Granite', 'Nemotron', 'OLMo', 'Kimi', 'MiniMax', 'SmolLM', 'BGE', 'E5', 'K2 Horizon', 'EmbeddingGemma'
 ] as const;
 const guideParameterBands = [
   { id: 'under-3b', label: t('guide.0027'), minInclusive: 0, maxExclusive: 3 },
@@ -299,7 +299,7 @@ const viewRelatedContent: Record<string, Array<{ contentId: string; anchorId?: s
 const viewReadingArticles: Record<string, string[]> = {
   'model-catalog': ['right-model-size-for-the-task', 'four-bit-model-quantization'],
   'model-suitability': ['right-model-size-for-the-task', 'enterprise-rag-model-embedding-reranker', 'code-completion-assistant-and-agent', 'evaluating-language-models-for-persian'],
-  'hardware-feasibility': ['llms-on-rtx-4090-24gb-vs-48gb', 'four-bit-model-quantization', 'airllm-layer-wise-inference'],
+  'hardware-feasibility': ['llms-on-rtx-4090-24gb-vs-48gb', 'four-bit-model-quantization', 'airllm-layer-wise-inference', 'what-does-100-concurrent-users-mean-for-an-ai-assistant'],
   'software-products': ['ollama-vllm-sglang-or-llama-cpp', 'single-user-to-enterprise-llm-serving', 'true-llm-cost-buy-rent-or-api'],
   'deployment-compatibility': ['four-bit-model-quantization', 'airllm-layer-wise-inference', 'ollama-vllm-sglang-or-llama-cpp'],
   benchmarks: ['evaluating-language-models-for-persian', 'single-user-to-enterprise-llm-serving', 'ollama-vllm-sglang-or-llama-cpp'],

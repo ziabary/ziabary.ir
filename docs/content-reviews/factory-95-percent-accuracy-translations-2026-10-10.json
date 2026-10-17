@@ -1,0 +1,25 @@
+{
+  "review_date": "2026-10-10",
+  "publication_date": "2026-10-10",
+  "source_article": "src/lib/content/articles/what-does-95-percent-accuracy-mean-for-a-factory.md",
+  "editions": {
+    "en": "src/lib/content/articles/what-does-95-percent-accuracy-mean-for-a-factory-en.md",
+    "es": "src/lib/content/articles/what-does-95-percent-accuracy-mean-for-a-factory-es.md"
+  },
+  "translation_group": "what-does-95-percent-accuracy-mean-for-a-factory",
+  "cover": "/images/articles/what-does-95-percent-accuracy-mean-for-a-factory/cover.png",
+  "editorial_review": [
+    "Retained all seven sections, both tables, illustrative counts, costs and 800 × 30-second review-time calculation.",
+    "Kept illustrative costs in Iranian tomans; no exchange-rate conversion or new factory performance claim.",
+    "Spanish uses exactitud for Accuracy and precisión for Precision, with English metric names to make the distinction explicit.",
+    "Shared the existing cover, which contains no Persian text, and localized the conceptual AI-image credit.",
+    "Retained empty manual related lists and the original publication date in both editions.",
+    "Verified Google classification metrics, scikit-learn data leakage and the NIST Measure reference against their official pages.",
+    "All 17 complete-system additions remain translated in both server-table editions; ordinary CPU/expansion descriptions and the Spanish review date were localized."
+  ],
+  "sources": [
+    "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+    "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage",
+    "https://airc.nist.gov/airmf-resources/playbook/measure/"
+  ]
+}

@@ -105,6 +105,13 @@ const editorialGuideCollections: GuideCollection[] = [
         href: '/articles/gpu-inference-latency-throughput/'
       },
       {
+        id: 'ascend-vs-nvidia-real-performance-gap',
+        title: 'Ascend در برابر NVIDIA؛ فاصله واقعی چقدر است؟',
+        subtitle: 'مقایسهٔ 950PR/DT با H200 و B300؛ فاصله در حافظه، کرنل، ارتباطات و هزینهٔ سرویس‌دهی.',
+        kind: 'article',
+        href: '/articles/ascend-vs-nvidia-real-performance-gap/'
+      },
+      {
         id: 'gpu-confidential-computing-overhead',
         title: 'سربار پردازش محرمانه روی GPU از کجا می‌آید؟',
         subtitle: 'هزینهٔ ارسال فرمان، PCIe و NVLink رمزگذاری‌شده؛ تحلیل آزمون‌های B200 و نقش پشتهٔ استنتاج.',
@@ -113,8 +120,8 @@ const editorialGuideCollections: GuideCollection[] = [
       },
       {
         id: 'server-comparison-table',
-        title: 'جدول تعاملی مقایسه سرورهای GPU',
-        subtitle: 'مقایسهٔ نسل PCIe، تعداد و عرض کارت، توان، ارتفاع، خنک‌کاری و پلتفرم با منابع رسمی سازندگان.',
+        title: 'جدول مقایسهٔ سرورها و رایانه‌های AI',
+        subtitle: 'از Spark رومیزی و لپ‌تاپ تا سرورهای رک؛ مقایسهٔ حافظه، شتاب‌دهنده، برق و سازگاری کارت با منابع رسمی.',
         kind: 'interactive',
         href: '#server-comparison-table'
       },
@@ -212,6 +219,13 @@ const editorialGuideCollections: GuideCollection[] = [
         subtitle: 'مهار اختیار عامل در بازیابی، حافظه، واگذاری و اجرای ابزار؛ با کنترل مستقل مجوز و توقف.',
         kind: 'article',
         href: '/articles/ztai-autonomous-agents-bounded-authority/'
+      },
+      {
+        id: 'ztai-ai-security-beyond-cybersecurity',
+        title: 'وقتی امنیت AI از امنیت سایبری جدا می‌شود',
+        subtitle: 'نسبت ISO/IEC 27090 با امنیت داده، مدل، چرخه حیات و کنترل اختیار عامل‌ها در معماری ZTAI.',
+        kind: 'article',
+        href: '/articles/ztai-ai-security-beyond-cybersecurity/'
       }
     ]
   },

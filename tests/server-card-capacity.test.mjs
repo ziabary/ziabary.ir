@@ -17,3 +17,21 @@ test('OEM card limits override physical GPU slot capacity', () => {
   assert.equal(serverCardCapacity(server('supermicro-sys-422ga-nrt'), card('rtx-pro-4500-bse')), 8);
   assert.equal(serverCardCapacity(server('hpe-dl345-gen12'), card('rtx-pro-6000-bse')), 0);
 });
+
+test('integrated desktop, laptop and NPU systems cannot satisfy a separate GPU card request', () => {
+  const systems = ['nvidia-dgx-spark-128gb', 'nvidia-dgx-spark-64gb',
+    'microsoft-surface-laptop-ultra', 'microsoft-surface-rtx-spark-dev-box',
+    'dell-pro-precision-gb300-windows', 'hp-zgx-fury-gb300-windows',
+    'gmktec-evo-x2', 'minisforum-ms-s1-max', 'huawei-atlas-650e',
+    'huawei-atlas-800i-a2', 'huawei-atlas-800i-a3'];
+  for (const id of systems) {
+    const record = server(id);
+    assert.ok(record, id);
+    assert.ok(record.integratedGpuCount > 0, id);
+    for (const profile of serverGpuProfiles) {
+      assert.equal(serverCardCapacity(record, profile), 0, `${id}: ${profile.id}`);
+      // Even a future expansion-slot count must not turn an integrated system into a QPL chassis.
+      assert.equal(serverCardCapacity({ ...record, maxDoubleWidthGpus: 8, maxSingleWidthGpus: 8, maxTripleWidthGpus: 8 }, profile), 0);
+    }
+  }
+});

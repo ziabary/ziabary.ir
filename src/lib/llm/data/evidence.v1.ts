@@ -43470,3 +43470,710 @@ evidence.push({
     "Model specifications and examples are publisher statements, not independent benchmark results."
   ]
 });
+evidence.push({
+  "id": "evidence:llama-cpp-v0-6-0-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0",
+  "title": "llama.cpp v0.6.0 stable release",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "v0.6.0",
+  "locator": "Overview / New models / Server changes / Changelog",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Stable Clef text and vision support; Vulkan fix #29988 included",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-clef-vision-29969",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29969",
+  "title": "llama-server Clef vision support",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "9871df5",
+  "locator": "Overview / review comment on GGUF re-conversion",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Clef multimodal input and updated template; older GGUF may need re-conversion",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-6-0-systemone",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.6.0/tools/server/README.md",
+  "title": "llama-server v0.6.0 SystemOne API",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "v0.6.0",
+  "locator": "POST /v1/systemone / Image input",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Typed decisions; compatible projector; data URLs; whole prompt in one physical batch; no free-text generation",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-v0-6-0-license",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.6.0/LICENSE",
+  "title": "llama.cpp v0.6.0 MIT license",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "v0.6.0",
+  "locator": "LICENSE",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Software license, independent of model license",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11424-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11424",
+  "title": "llama.cpp b11424 prerelease",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "b11424",
+  "locator": "Release title / commit 6c59c40 / changelog",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Vulkan FlashAttention shared-memory write fix",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-vulkan-29988",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29988",
+  "title": "Vulkan FlashAttention shared-memory bounds fix",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "6c59c40",
+  "locator": "Overview / merged commit 6c59c40",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Reported NVIDIA DeviceLost crash; no CVE, exploit or speed claim",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:reflection-beam-announcement",
+  "url": "https://reflection.ai/blog/introducing-beam",
+  "title": "Introducing Beam",
+  "organization": "Reflection",
+  "publishedOn": "2026-10-05",
+  "accessedOn": "2026-10-06",
+  "versionRevisionOrCommit": "announcement 2026-10-05",
+  "locator": "Introduction / Model Capability / The Path Ahead",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "501B total, 23B active MoE; text only; limited preview; weights and Apache 2.0 license promised later in October",
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11454-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11454",
+  "title": "llama.cpp b11454 prerelease: K2 Horizon dense and MoVA",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Release notes; conversion, tokenizer, graph, chat, reasoning, tools; final tensor-parallel disable",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11454 prerelease: K2 Horizon dense and MoVA",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-10-06"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-k2-horizon-29535",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29535",
+  "title": "K2 Horizon final upstream implementation",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Merged PR and final commit disabling tensor parallel",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "K2 Horizon final upstream implementation",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-10-06"
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-gguf-collection",
+  "url": "https://huggingface.co/collections/IFM/k2-horizon-gguf",
+  "title": "IFM official K2 Horizon GGUF collection: five checkpoints",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Five official GGUF repositories; excludes 375B-A23B",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM official K2 Horizon GGUF collection: five checkpoints",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-launch",
+  "url": "https://ifm.ai/blog/k2/",
+  "title": "IFM K2 Horizon original model launch",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Family announcement; nominal/core parameter counts",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM K2 Horizon original model launch",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-09-03"
+});
+evidence.push({
+  "id": "evidence:vllm-k2-horizon-recipes",
+  "url": "https://recipes.vllm.ai/IFM",
+  "title": "Official vLLM K2 Horizon recipes",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "BF16 recipes and k2_horizon parsers",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Official vLLM K2 Horizon recipes",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:sglang-k2-horizon-cookbook",
+  "url": "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+  "title": "Official SGLang K2 Horizon cookbook",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Source installation with PR #37654; H200 BF16 recipes; pinned model revisions",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Official SGLang K2 Horizon cookbook",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-0-9b-card",
+  "url": "https://huggingface.co/IFM/K2-Horizon-0.9B/blob/383cb66347be4d361138e8157c2f8779b7440752/README.md",
+  "title": "IFM/K2-Horizon-0.9B model card",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Model introduction, license, context and serving",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-0.9B model card",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-0-9b-metadata",
+  "url": "https://huggingface.co/api/models/IFM/K2-Horizon-0.9B?blobs=true",
+  "title": "IFM/K2-Horizon-0.9B official metadata",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot 383cb66347be4d361138e8157c2f8779b7440752; Safetensors stored elements and file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-0.9B official metadata",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-0-9b-gguf-files",
+  "url": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF/tree/7833762821bbeeaf6f0e7519af8b0599b7056807",
+  "title": "IFM/K2-Horizon-0.9B official GGUF file manifest",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot; Q4_K_M exact file bytes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-0.9B official GGUF file manifest",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-0-9b-config",
+  "url": "https://huggingface.co/IFM/K2-Horizon-0.9B/blob/383cb66347be4d361138e8157c2f8779b7440752/config.json",
+  "title": "IFM/K2-Horizon-0.9B attention configuration",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "num_hidden_layers, num_key_value_heads, head_dim, max_position_embeddings",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-0.9B attention configuration",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-3-7b-card",
+  "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/blob/d6e5432c59637093c0e125e791d89ea4a0b53559/README.md",
+  "title": "IFM/K2-Horizon-3.7B model card",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Model introduction, license, context and serving",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-3.7B model card",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-3-7b-metadata",
+  "url": "https://huggingface.co/api/models/IFM/K2-Horizon-3.7B?blobs=true",
+  "title": "IFM/K2-Horizon-3.7B official metadata",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot d6e5432c59637093c0e125e791d89ea4a0b53559; Safetensors stored elements and file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-3.7B official metadata",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-3-7b-gguf-files",
+  "url": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF/tree/1751cb49e31823f4401fc1d195db8a2c61a79783",
+  "title": "IFM/K2-Horizon-3.7B official GGUF file manifest",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot; Q4_K_M exact file bytes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-3.7B official GGUF file manifest",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-3-7b-config",
+  "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/blob/d6e5432c59637093c0e125e791d89ea4a0b53559/config.json",
+  "title": "IFM/K2-Horizon-3.7B attention configuration",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "num_hidden_layers, num_key_value_heads, head_dim, max_position_embeddings",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-3.7B attention configuration",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-7b-card",
+  "url": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md",
+  "title": "IFM/K2-Horizon-7B model card",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Model introduction, license, context and serving",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-7B model card",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-7b-metadata",
+  "url": "https://huggingface.co/api/models/IFM/K2-Horizon-7B?blobs=true",
+  "title": "IFM/K2-Horizon-7B official metadata",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot 3b6ae394c1b863c27a306d168b25555837955192; Safetensors stored elements and file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-7B official metadata",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-7b-gguf-files",
+  "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "title": "IFM/K2-Horizon-7B official GGUF file manifest",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot; Q4_K_M exact file bytes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-7B official GGUF file manifest",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-7b-config",
+  "url": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/config.json",
+  "title": "IFM/K2-Horizon-7B attention configuration",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "num_hidden_layers, num_key_value_heads, head_dim, max_position_embeddings",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-7B attention configuration",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-32b-card",
+  "url": "https://huggingface.co/IFM/K2-Horizon-32B/blob/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/README.md",
+  "title": "IFM/K2-Horizon-32B model card",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Model introduction, license, context and serving",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-32B model card",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-32b-metadata",
+  "url": "https://huggingface.co/api/models/IFM/K2-Horizon-32B?blobs=true",
+  "title": "IFM/K2-Horizon-32B official metadata",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot 7eb3d2dceccb27bad4f97d76ce92e7431b3f786a; Safetensors stored elements and file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-32B official metadata",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-32b-gguf-files",
+  "url": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF/tree/e9cf2daf9fa245279aae328a545f1de7589e9b75",
+  "title": "IFM/K2-Horizon-32B official GGUF file manifest",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot; Q4_K_M exact file bytes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-32B official GGUF file manifest",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-32b-config",
+  "url": "https://huggingface.co/IFM/K2-Horizon-32B/blob/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/config.json",
+  "title": "IFM/K2-Horizon-32B attention configuration",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "num_hidden_layers, num_key_value_heads, head_dim, max_position_embeddings",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-32B attention configuration",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+  "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/blob/cca48b6631d03c338a0e1d8beb0c392af8becbd3/README.md",
+  "title": "IFM/K2-Horizon-MoVA-36B-A4B model card",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Model introduction, license, context and serving",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-MoVA-36B-A4B model card",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+  "url": "https://huggingface.co/api/models/IFM/K2-Horizon-MoVA-36B-A4B?blobs=true",
+  "title": "IFM/K2-Horizon-MoVA-36B-A4B official metadata",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot cca48b6631d03c338a0e1d8beb0c392af8becbd3; Safetensors stored elements and file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-MoVA-36B-A4B official metadata",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+  "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF/tree/b318d1343a9460b05b0e04984fdd268cc5ef647c",
+  "title": "IFM/K2-Horizon-MoVA-36B-A4B official GGUF file manifest",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "Pinned snapshot; Q4_K_M exact file bytes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-MoVA-36B-A4B official GGUF file manifest",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+  "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/blob/cca48b6631d03c338a0e1d8beb0c392af8becbd3/config.json",
+  "title": "IFM/K2-Horizon-MoVA-36B-A4B attention configuration",
+  "organization": "IFM / official runtime maintainers",
+  "accessedOn": "2026-10-07",
+  "locator": "num_hidden_layers, num_key_value_heads, head_dim, max_position_embeddings",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "IFM/K2-Horizon-MoVA-36B-A4B attention configuration",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:embeddinggemma-2-card",
+  "url": "https://huggingface.co/google/embeddinggemma-2/blob/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md",
+  "title": "EmbeddingGemma 2 official model card",
+  "organization": "Google DeepMind",
+  "accessedOn": "2026-10-07",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "locator": "Pinned card: modalities, nominal component counts, context, MRL and aggregate MTEB results; no separate Persian score",
+  "scope": "EmbeddingGemma 2 official model card",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:embeddinggemma-2-files",
+  "url": "https://huggingface.co/api/models/google/embeddinggemma-2?blobs=true",
+  "title": "EmbeddingGemma 2 official Safetensors metadata",
+  "organization": "Google DeepMind",
+  "accessedOn": "2026-10-07",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "locator": "Snapshot 914f7f89142e33e77833254d9c9b90c3cef7303b; file inventory and stored parameter elements",
+  "scope": "EmbeddingGemma 2 official Safetensors metadata",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:embeddinggemma-2-launch",
+  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+  "title": "Google EmbeddingGemma 2 announcement",
+  "organization": "Google DeepMind",
+  "accessedOn": "2026-10-07",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "locator": "2026-10-06; Apache-2.0 and local multimodal retrieval; Pixel quantized RAM is device-specific",
+  "scope": "Google EmbeddingGemma 2 announcement",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-10-06"
+});
+evidence.push({
+  "id": "evidence:embeddinggemma-2-developer-guide",
+  "url": "https://developers.googleblog.com/en/embeddinggemma-2-the-developer-guide/",
+  "title": "Google EmbeddingGemma 2 developer guide",
+  "organization": "Google DeepMind",
+  "accessedOn": "2026-10-07",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "locator": "Sentence Transformers >=6.1.0, multimodal extras, text-only config and dimension truncation",
+  "scope": "Google EmbeddingGemma 2 developer guide",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:embeddinggemma-2-transformers",
+  "url": "https://huggingface.co/docs/transformers/model_doc/embedding_gemma2",
+  "title": "Transformers EmbeddingGemma 2 documentation",
+  "organization": "Google DeepMind",
+  "accessedOn": "2026-10-07",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "locator": "EmbeddingGemma2 model and processor support; use a release containing this architecture",
+  "scope": "Transformers EmbeddingGemma 2 documentation",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-v0-40-0-release",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+  "title": "Ollama v0.40.0 — stable / Latest; MLX on Apple Silicon",
+  "organization": "Ollama",
+  "publishedOn": "2026-09-25",
+  "accessedOn": "2026-10-07",
+  "versionRevisionOrCommit": "v0.40.0",
+  "locator": "Release notes; published_at=2026-09-25T03:31:52Z; prerelease=false; Latest designation reviewed 2026-10-07",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Approved architecture deployment on Apple Silicon; not a per-size weight inventory, Persian evaluation, memory measurement or throughput benchmark",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-v0-40-0-license",
+  "url": "https://github.com/ollama/ollama/blob/v0.40.0/LICENSE",
+  "title": "Ollama v0.40.0 — MIT software license",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-07",
+  "versionRevisionOrCommit": "v0.40.0",
+  "locator": "Version-pinned LICENSE; MIT License",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Software license only; model weights have separate terms",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11529-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11529",
+  "title": "llama.cpp b11529 prerelease: ggml_acc offset check",
+  "organization": "ggml-org / llama.cpp maintainers and PR author",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-09",
+  "locator": "Prerelease dated 2026-10-09; commit 8ae3867; #30135",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11529 prerelease: ggml_acc offset check",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-acc-offset-30135",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30135",
+  "title": "ggml_acc offset safety: merged patch and original RPC report",
+  "organization": "ggml-org / llama.cpp maintainers and PR author",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-09",
+  "locator": "Final commit 41187df and Files changed: offset < 1 << 30 in ggml_acc_impl; original report describes RPC and four-byte OOB write; forward-level check removed",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "ggml_acc offset safety: merged patch and original RPC report",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11532-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11532",
+  "title": "llama.cpp b11532 prerelease: exact ModernBERT GELU",
+  "organization": "ggml-org / llama.cpp maintainers and PR author",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-09",
+  "locator": "Prerelease dated 2026-10-09; commit 6184e92; #30108",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11532 prerelease: exact ModernBERT GELU",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-modernbert-gelu-30108",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30108",
+  "title": "ModernBERT exact GELU: CPU/F32 correctness test",
+  "organization": "ggml-org / llama.cpp maintainers and PR author",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-09",
+  "locator": "Overview; Additional information: 24 query/passage pairs on Alibaba-NLP/gte-reranker-modernbert-base; no GGUF reconversion; max activation error 5.8e-2 to 7.4e-6; GPU not tested",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "ModernBERT exact GELU: CPU/F32 correctness test",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11537-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11537",
+  "title": "llama.cpp b11537 prerelease: embedding graph ordering",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-09",
+  "locator": "Pre-release; PR #30160",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11537 prerelease: embedding graph ordering",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11537"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-embedding-graph-30160",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30160",
+  "title": "Embedding graph ordering and reported Qwen SYCL regression recovery",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-09",
+  "locator": "Overview; moriz1 comment 6066481031: PP 582.23 and TG 32.75; issue #30033 supplies Linux, dual B70 and UD-IQ3_XXS conditions",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Embedding graph ordering and reported Qwen SYCL regression recovery",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11540-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11540",
+  "title": "llama.cpp b11540 prerelease: SYCL MXFP4 MoE decode",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-10",
+  "locator": "Pre-release; PR #29809",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11540 prerelease: SYCL MXFP4 MoE decode",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11540"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-sycl-mxfp4-29809",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29809",
+  "title": "SYCL MXFP4 MoE decode: Arc Pro B70 Windows report",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-10",
+  "locator": "Overview; Additional information: Windows 11, oneAPI 2026.0, EPYC 7402P, Flash Attention; 5 repetitions for 20b and 2 for 120b",
+  "kind": "third-party-report",
+  "sourceKind": "primary",
+  "scope": "SYCL MXFP4 MoE decode: Arc Pro B70 Windows report",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:ollama-v0-40-2-release",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
+  "title": "Ollama v0.40.2 stable / Latest: background upgrades and retained backups",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-10",
+  "publishedOn": "2026-10-08",
+  "locator": "Latest; Model upgrades; Other changes",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama v0.40.2 stable / Latest: background upgrades and retained backups",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.40.2"
+});
+evidence.push({
+  "id": "evidence:ollama-v0-40-2-license",
+  "url": "https://github.com/ollama/ollama/blob/v0.40.2/LICENSE",
+  "title": "Ollama v0.40.2 MIT license",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-10",
+  "versionRevisionOrCommit": "v0.40.2",
+  "locator": "MIT License",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Software license for v0.40.2",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11552-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11552",
+  "title": "llama.cpp b11552 prerelease: busy pinned-slot context isolation",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-11",
+  "publishedOn": "2026-10-10",
+  "locator": "Release note: server leaves a busy pinned slot untouched; PR #30295",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11552 prerelease: busy pinned-slot context isolation",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11552"
+});
+evidence.push({
+  "id": "evidence:llama-server-pinned-slot-30295",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30295",
+  "title": "llama-server pinned-slot context isolation fix and upstream regression report",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-11",
+  "publishedOn": "2026-10-10",
+  "locator": "Overview; issuecomment-6099989146: M2 Ultra/Metal, b11146 versus PR 0d4444afc (build 11550), 30/60 concurrent pairs; one 60-second client timeout",
+  "kind": "third-party-report",
+  "sourceKind": "primary",
+  "scope": "llama-server pinned-slot context isolation fix and upstream regression report",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "23b0202a189c44a54625aadcb37a946dd1d6278d"
+});

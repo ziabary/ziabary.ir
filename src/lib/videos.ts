@@ -11,6 +11,28 @@ export type VideoItem = Omit<MediaItem, 'coverImage' | 'coverImageAlt' | 'editor
 // reposts are deliberately omitted in favour of the most complete source.
 export const videoItems: VideoItem[] = [
   {
+    title: 'از مدل عمومی تا مدل تخصصی؛ چرا AIهای حوزه‌ای مهم شده‌اند؟',
+    source: 'رادیو تهران',
+    kind: 'صوت',
+    summary: 'گفت‌وگوی برنامه «چراغ» درباره مدل‌های تخصصی هوش مصنوعی، تفاوت آن‌ها با مدل‌های عمومی و اهمیت AIهای حوزه‌ای، با حضور مهران ضیابری و دکتر علی گلزاده و اجرای هدی فلاح. این برنامه ۸۰ دقیقه‌ای در ۱۸ مهر ۱۴۰۵ از رادیو تهران پخش شده و در آرشیو ایران‌صدا قابل شنیدن است.',
+    url: 'http://radio.iranseda.ir/epgarchivePart/?VALID=TRUE&ch=20&e=154070198',
+    date: '2026-10-10',
+    faDate: '۱۸ مهر ۱۴۰۵',
+    thumbnail: '/images/media-covers/cheragh-104121.jpg',
+    icon: 'fa-solid fa-headphones'
+  },
+  {
+    title: 'از ترجمه ماشینی تا تحول صنایع با AI؛ تجربه‌های مهران ضیابری',
+    source: 'مرکز نوآوری نکسترا',
+    kind: 'گفت‌وگوی ویدئویی',
+    summary: 'گفت‌وگو با نکسترا درباره تجربه ترجمه ماشینی و ارائه خدمات هوش مصنوعی به کاربران، از آغاز فعالیت در سال ۱۳۸۹ تا فرصت‌های کاربرد این فناوری در صنعت. بخش دیگری از بحث به کشاورزی، دامپروری، امنیت غذایی و بحران آب اختصاص دارد و به تغییرات فرهنگی لازم برای پذیرش هوش مصنوعی در کسب‌وکارها می‌پردازد. نسخه کامل این گفت‌وگوی ۵ دقیقه و ۲۵ ثانیه‌ای در آپارات در دسترس است.',
+    url: 'https://www.aparat.com/v/ivjb658',
+    date: '2025-09-29',
+    faDate: '۷ مهر ۱۴۰۴',
+    thumbnail: '/images/media-covers/aparat-ivjb658.jpg',
+    icon: 'fa-solid fa-play'
+  },
+  {
     title: 'انتظارات بخش خصوصی از سازمان ملی هوش مصنوعی',
     source: 'شبکه خبر · روی خط خبر',
     kind: 'گفت‌وگوی تلویزیونی',

@@ -3,7 +3,7 @@
   import pdfSizes from '$lib/generated/pdf-sizes.json';
   import PageSeo from '$lib/components/PageSeo.svelte';
   import { onDestroy } from 'svelte';
-  import { localizePresentation, type Presentation, type PresentationLocale } from '$lib/presentations';
+  import { localizePresentation, presenterName, preparationNames, presentationStructuredData, type Presentation, type PresentationLocale } from '$lib/presentations';
   import { presentationCopy } from '$lib/presentation-copy';
 
   export let presentation: Presentation;
@@ -12,6 +12,8 @@
   $: copy = presentationCopy[locale];
   $: numbers = new Intl.NumberFormat(locale === 'fa' ? 'fa-IR' : locale, { maximumFractionDigits: 2 });
   $: base = locale === 'fa' ? '' : `/${locale}`;
+  $: mainEntity = presentationStructuredData(item, locale, copy);
+  $: seoDescription = [item.summary, item.presenter ? `${copy.presenter}: ${presenterName(item.presenter)}.` : '', item.preparedBy?.length ? `${copy.preparedBy}: ${preparationNames(item.preparedBy, locale)}.` : ''].filter(Boolean).join(' ');
 
   let copied = false;
   let resetTimer: ReturnType<typeof setTimeout>;
@@ -57,12 +59,13 @@
 <PageSeo
   {locale}
   title={`${item.title} — ${item.event ?? item.venue} | ${copy.name}`}
-  description={item.summary}
+  description={seoDescription}
   path={`${base}/slides/${item.slug}/`}
   image={item.cover ?? '/slides/enterprise-ai-governance-dba/cover.jpg'}
   imageAlt={`${copy.cover} «${item.title}»`}
-  imageWidth={1600}
-  imageHeight={900}
+  imageWidth={item.coverWidth ?? 1600}
+  imageHeight={item.coverHeight ?? 900}
+  {mainEntity}
 />
 
 <main dir={locale === 'fa' ? 'rtl' : 'ltr'}>
@@ -70,10 +73,11 @@
     <div class="wrap">
       <p class="eyebrow"><a href={`${base}/slides/`}>{copy.title}</a> / {item.kind}</p>
       <h1>{item.title}</h1>
+      {#if item.subtitle}<p class="presentation-subtitle">{item.subtitle}</p>{/if}
       <p>{item.summary}</p>
       {#if item.pdf}
         <div class="intro-download">
-          <a class="button primary" href={item.pdf} hreflang="fa" type="application/pdf">{copy.download}</a>
+          <a class="button primary" href={item.pdf} hreflang="fa" type="application/pdf" target="_blank" rel="noopener noreferrer">{copy.viewPdf}</a>
           <span>{locale === 'fa' ? 'فایل فارسی' : locale === 'en' ? 'PDF in Persian' : 'PDF en persa'}{item.version ? ` · ${copy.version} ${item.version}` : ''} · {numbers.format((pdfSizes as Record<string, number>)[item.pdf] / 1048576)} MiB</span>
         </div>
       {/if}
@@ -84,13 +88,21 @@
     <div>
       <div class:empty={!item.cover} class="presentation-cover">
         {#if item.cover}
-          <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${item.title}»`} width="1600" height="900" />
+          <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${item.title}»`} width={item.coverWidth ?? 1600} height={item.coverHeight ?? 900} />
         {:else}
           <span>{numbers.format(item.slideCount)}</span>
           <small>{copy.slides}</small>
         {/if}
       </div>
-      <p class="description">{item.description}</p>
+      <div class="description">
+        {#each item.description.split(/\n\s*\n/) as paragraph}
+          {#if paragraph.startsWith('### ')}
+            <h2>{paragraph.slice(4)}</h2>
+          {:else}
+            <p>{#each paragraph.split(/(\*\*[^*]+\*\*)/) as text}{#if text.startsWith('**') && text.endsWith('**')}<strong>{text.slice(2, -2)}</strong>{:else}{text}{/if}{/each}</p>
+          {/if}
+        {/each}
+      </div>
       {#if item.topics.length}
         <h2 class="eyebrow">{copy.topics}</h2>
         <ol>{#each item.topics as topic, index}<li><span>{numbers.format(index + 1)}</span><b>{topic}</b></li>{/each}</ol>
@@ -101,13 +113,17 @@
       <h2>{copy.facts}</h2>
       <dl>
         <div><dt>{copy.kind}</dt><dd>{item.kind}</dd></div>
-        <div><dt>{copy.date}</dt><dd>{item.presentedAt}</dd></div>
+        <div><dt>{copy.date}</dt><dd>{#if item.date}<time datetime={item.date}>{item.presentedAt}</time>{#if locale === 'fa'} · <span dir="ltr">{item.date}</span>{/if}{:else}{item.presentedAt}{/if}</dd></div>
+        {#if item.presenter}<div><dt>{copy.presenter}</dt><dd>{presenterName(item.presenter)}</dd></div>{/if}
+        {#if item.preparedBy?.length}<div><dt>{copy.preparedBy}</dt><dd>{preparationNames(item.preparedBy, locale)}</dd></div>{/if}
+        {#if item.englishTitle && locale !== 'en'}<div><dt>{copy.englishTitle}</dt><dd lang="en" dir="ltr">{item.englishTitle}</dd></div>{/if}
         <div><dt>{copy.venue}</dt><dd>{item.venue}</dd></div>
-        {#if item.event}<div><dt>{copy.event}</dt><dd>{item.event}</dd></div>{/if}
+        {#if item.event}<div><dt>{copy.event}</dt><dd>{#if item.eventUrl}<a href={item.eventUrl} target="_blank" rel="noopener noreferrer">{item.event}</a>{:else}{item.event}{/if}</dd></div>{/if}
         {#if item.organizer}<div><dt>{copy.organizer}</dt><dd>{item.organizer}</dd></div>{/if}
         {#if item.audience}<div><dt>{copy.audience}</dt><dd>{item.audience}</dd></div>{/if}
         {#if item.duration}<div><dt>{copy.duration}</dt><dd>{item.duration}</dd></div>{/if}
         <div><dt>{copy.count}</dt><dd>{numbers.format(item.slideCount)} {copy.slides}</dd></div>
+        {#if item.language === 'fa'}<div><dt>{copy.language}</dt><dd>{copy.persian}</dd></div>{/if}
         {#if item.version}<div><dt>{copy.version}</dt><dd>{item.version}</dd></div>{/if}
         {#if item.instructorProfileUrl}
           <div>
@@ -133,7 +149,7 @@
         </section>
       {/if}
       {#if item.pdf}
-        <a class="button primary" href={item.pdf} hreflang="fa" type="application/pdf" target="_blank" rel="noreferrer">{copy.download}</a>
+        <a class="button primary" href={item.pdf} hreflang="fa" type="application/pdf" download>{copy.download}</a>
       {:else}
         <p class="file-note">{copy.noFile}</p>
       {/if}
@@ -142,6 +158,12 @@
 </main>
 
 <style>
+  .presentation-subtitle { color: var(--teal); font-size: clamp(18px, 2vw, 24px); }
+  .presentation-layout dd { overflow-wrap: anywhere; }
+  .presentation-layout dd a { text-decoration: underline; text-underline-offset: 3px; }
+  .description p { margin: 0 0 18px; }
+  .description h2 { color: var(--ink); font-size: clamp(20px, 2vw, 26px); line-height: 1.7; margin: 32px 0 16px; }
+  .description strong { color: var(--ink); }
   .instructor-profile { text-decoration: underline; text-underline-offset: 3px; }
   .intro-download { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
   .intro-download span { font-size: 13px; color: var(--muted); }

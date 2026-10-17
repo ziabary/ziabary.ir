@@ -41583,3 +41583,93 @@ publishedEvaluations.push({
     "evidence:mimo-v2-6-pro-card"
   ]
 });
+publishedEvaluations.push({
+  "id": "published-evaluation:embeddinggemma-2-mteb-multi-768",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "reportedModelName": "EmbeddingGemma 2",
+  "sourceDocumentRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "reporter": "Google DeepMind",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB (Multilingual, v2)",
+  "metric": "Mean (Task)",
+  "value": 61.36,
+  "unit": "score",
+  "settings": {
+    "embeddingDimensions": 768,
+    "aggregation": "Mean across tasks; no separate Persian result"
+  },
+  "accessedOn": "2026-10-07",
+  "comparisonGroup": "embeddinggemma-2:card-multilingual",
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "limitations": [
+    "نتیجهٔ تجمیعی ناشر است؛ نتیجهٔ مستقل فارسی یا آزمون روی سخت‌افزار این راهنما نیست."
+  ],
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:embeddinggemma-2-mteb-multi-256",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "reportedModelName": "EmbeddingGemma 2",
+  "sourceDocumentRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "reporter": "Google DeepMind",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB (Multilingual, v2)",
+  "metric": "Mean (Task)",
+  "value": 60.41,
+  "unit": "score",
+  "settings": {
+    "embeddingDimensions": 256,
+    "aggregation": "Mean across tasks; no separate Persian result"
+  },
+  "accessedOn": "2026-10-07",
+  "comparisonGroup": "embeddinggemma-2:card-multilingual",
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "limitations": [
+    "نتیجهٔ تجمیعی ناشر است؛ نتیجهٔ مستقل فارسی یا آزمون روی سخت‌افزار این راهنما نیست."
+  ],
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card"
+  ]
+});
+publishedEvaluations.push({
+  "id": "published-evaluation:embeddinggemma-2-mteb-code-768",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "reportedModelName": "EmbeddingGemma 2",
+  "sourceDocumentRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "reporter": "Google DeepMind",
+  "reportingRelationship": "publisher",
+  "benchmark": "MTEB (Code, v1)",
+  "metric": "Mean (Task), NDCG@10",
+  "value": 78.68,
+  "unit": "score",
+  "settings": {
+    "embeddingDimensions": 768,
+    "aggregation": "Mean across tasks; no separate Persian result"
+  },
+  "accessedOn": "2026-10-07",
+  "comparisonGroup": "embeddinggemma-2:card-code",
+  "applicationIds": [
+    "enterprise-rag"
+  ],
+  "languageScope": {
+    "kind": "aggregate"
+  },
+  "limitations": [
+    "نتیجهٔ تجمیعی ناشر است؛ نتیجهٔ مستقل فارسی یا آزمون روی سخت‌افزار این راهنما نیست."
+  ],
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card"
+  ]
+});

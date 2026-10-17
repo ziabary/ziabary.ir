@@ -1691,6 +1691,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-31976af243747d94de"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -1702,7 +1718,8 @@ modelProfiles.push({
     "evidence:qwen-qwen3-5-2b-config",
     "evidence:four-tables-release-qwen3-5-small-models-release",
     "evidence:v03-1fb0e66ad27f4a35c4",
-    "evidence:v03-f6437c3de485b00992"
+    "evidence:v03-f6437c3de485b00992",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -1765,6 +1782,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-63f59e0d896cd8443d"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -1776,7 +1809,8 @@ modelProfiles.push({
     "evidence:qwen-qwen3-5-35b-a3b-config",
     "evidence:four-tables-release-qwen3-5-medium-models-release",
     "evidence:v03-02a81d4ca4dfa9b099",
-    "evidence:v03-dd831b60bd47fa08c8"
+    "evidence:v03-dd831b60bd47fa08c8",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -1839,6 +1873,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-9ce3daad5f8d77258d"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -1850,7 +1900,8 @@ modelProfiles.push({
     "evidence:qwen-qwen3-5-4b-config",
     "evidence:four-tables-release-qwen3-5-small-models-release",
     "evidence:v03-a70fca6b263839d3e5",
-    "evidence:v03-794bfb947531f5882c"
+    "evidence:v03-794bfb947531f5882c",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -1913,6 +1964,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-d4015d85b47081466c"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -1924,7 +1991,8 @@ modelProfiles.push({
     "evidence:qwen-qwen3-5-9b-config",
     "evidence:four-tables-release-qwen3-5-small-models-release",
     "evidence:v03-de0f4e149976e25127",
-    "evidence:v03-c353dc5ca170848d47"
+    "evidence:v03-c353dc5ca170848d47",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -1986,6 +2054,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-2926d9998e3e0a0b88"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -1997,7 +2081,8 @@ modelProfiles.push({
     "evidence:qwen-qwen3-8-27b-config",
     "evidence:four-tables-release-qwen3-8-27b-release",
     "evidence:v03-6ef1dc4cde68af6f92",
-    "evidence:v03-7f8be85de2b32906d5"
+    "evidence:v03-7f8be85de2b32906d5",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -2863,6 +2948,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-0580726731a3824b8c"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -2874,7 +2975,8 @@ modelProfiles.push({
     "evidence:google-gemma-4-26b-a4b-it-config",
     "evidence:four-tables-release-gemma-4-release-log",
     "evidence:v03-8c073f7e3729dadf20",
-    "evidence:v03-c533281710e351567d"
+    "evidence:v03-c533281710e351567d",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -2928,6 +3030,22 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-b1f982556d0b8689d7"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
@@ -2939,7 +3057,8 @@ modelProfiles.push({
     "evidence:google-gemma-4-e2b-it-config",
     "evidence:four-tables-release-gemma-4-release-log",
     "evidence:v03-a557e664812e64393e",
-    "evidence:v03-217e706ae1f430c21e"
+    "evidence:v03-217e706ae1f430c21e",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -4385,13 +4504,30 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-89cf7befa4f35196b0"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
     "evidence:v03-c41b4e1caa6e69ea81",
     "evidence:v03-518ba71c47b5d11a84",
     "evidence:v03-bd8ff876ae3abe060f",
-    "evidence:v03-a18cd47c2a8148b452"
+    "evidence:v03-a18cd47c2a8148b452",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -4442,13 +4578,30 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-8892dbaf869ddbf991"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
     "evidence:v03-55c6f0500b4f56dbfc",
     "evidence:v03-c96c19dff3641bdd33",
     "evidence:v03-2f179b658d60e4483f",
-    "evidence:v03-444ae591d1df96c579"
+    "evidence:v03-444ae591d1df96c579",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -4499,13 +4652,30 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-572ceccbd01bff2a23"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
     "evidence:v03-97cad1067fd38e851d",
     "evidence:v03-a03eb2799c3310f6d5",
     "evidence:v03-077b49671bb5ca41ae",
-    "evidence:v03-57983cea3403d384e7"
+    "evidence:v03-57983cea3403d384e7",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -4545,13 +4715,30 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:v03-2ee03fb807e16d7989"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
     "evidence:v03-0f7a00c925a4c9be93",
     "evidence:v03-c52157de04e37be3d7",
     "evidence:v03-2ee03fb807e16d7989",
-    "evidence:v03-1d91b02cc4cb97b07e"
+    "evidence:v03-1d91b02cc4cb97b07e",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -5290,7 +5477,12 @@ modelProfiles.push({
     "evidence:v03-56d00ad79917f10658",
     "evidence:v03-37cbb761dd4de61b70",
     "evidence:v03-9f4a255f17cc556d99",
-    "evidence:v03-d96c8f2f2ddacfb9bb"
+    "evidence:v03-d96c8f2f2ddacfb9bb",
+    "evidence:llama-cpp-b11532-release",
+    "evidence:llama-cpp-modernbert-gelu-30108"
+  ],
+  "securityNotes": [
+    "برای اجرای llama.cpp از b11532+ استفاده شود؛ نسخه‌های قدیمی hidden_activation=gelu را با تقریب tanh اجرا می‌کردند. GGUF موجود نیاز به تبدیل دوباره ندارد؛ خروجی buildهای قدیمی باید بازآزمایی شود."
   ]
 });
 modelProfiles.push({
@@ -6098,10 +6290,27 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:wizard0920-qwen-qwen3-6-27b"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
-    "evidence:wizard0920-qwen-qwen3-6-27b"
+    "evidence:wizard0920-qwen-qwen3-6-27b",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -6136,10 +6345,27 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "شاهد در سطح خانواده است؛ تگ دقیق همین اندازه، کوانتیزه و ورودی‌های پشتیبانی‌شده را در فهرست رسمی Ollama تطبیق دهید. تأیید artifact هر اندازه از این یادداشت انتشار نتیجه نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "family",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
-    "evidence:wizard0920-qwen-qwen3-6-35b-a3b"
+    "evidence:wizard0920-qwen-qwen3-6-35b-a3b",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -6749,12 +6975,48 @@ modelProfiles.push({
         "evidence:ollama-clef-library",
         "evidence:ollama-v0-35-1-release"
       ]
+    },
+    {
+      "label": "llama.cpp / llama-server v0.6.0؛ متن و تصویر",
+      "engine": "llama.cpp",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0",
+      "instructions": "مدل GGUF و projector سازگار همان مدل را در llama-server v0.6.0 بارگذاری کنید. /v1/systemone متن و تصویر با data URL را برای پاسخ‌های choice، noul و score می‌پذیرد؛ این مسیر برای گفت‌وگو یا تولید متن آزاد نیست.",
+      "conditions": [
+        "برای تصویر، GGUF با قالب جدید و projector سازگار لازم است؛ کل prompt باید در --ubatch-size جا شود.",
+        "کیفیت فارسی، سرعت و مصرف کامل حافظه آزموده نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-6-0-release",
+        "evidence:llama-cpp-v0-6-0-systemone",
+        "evidence:llama-cpp-clef-vision-29969"
+      ],
+      "engineLabel": "llama.cpp / llama-server v0.6.0"
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "مدل تصمیم باقی می‌ماند: /v1/systemone برای choice، noul و score؛ بدون chat، tools، thinking یا تولید متن آزاد. فایل آداپتر Nimble به‌تنهایی بستهٔ کامل اجرای Ollama نیست."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "model",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
     "evidence:cloudflare-clef-card",
     "evidence:ollama-clef-library",
-    "evidence:llama-cpp-b11371-clef"
+    "evidence:llama-cpp-b11371-clef",
+    "evidence:llama-cpp-v0-6-0-release",
+    "evidence:llama-cpp-v0-6-0-systemone",
+    "evidence:llama-cpp-clef-vision-29969",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -6781,12 +7043,48 @@ modelProfiles.push({
         "evidence:ollama-clef-flash-library",
         "evidence:ollama-v0-35-1-release"
       ]
+    },
+    {
+      "label": "llama.cpp / llama-server v0.6.0؛ متن و تصویر",
+      "engine": "llama.cpp",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0",
+      "instructions": "مدل GGUF و projector سازگار همان مدل را در llama-server v0.6.0 بارگذاری کنید. /v1/systemone متن و تصویر با data URL را برای پاسخ‌های choice، noul و score می‌پذیرد؛ این مسیر برای گفت‌وگو یا تولید متن آزاد نیست.",
+      "conditions": [
+        "برای تصویر، GGUF با قالب جدید و projector سازگار لازم است؛ کل prompt باید در --ubatch-size جا شود.",
+        "کیفیت فارسی، سرعت و مصرف کامل حافظه آزموده نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-6-0-release",
+        "evidence:llama-cpp-v0-6-0-systemone",
+        "evidence:llama-cpp-clef-vision-29969"
+      ],
+      "engineLabel": "llama.cpp / llama-server v0.6.0"
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "مدل تصمیم باقی می‌ماند: /v1/systemone برای choice، noul و score؛ بدون chat، tools، thinking یا تولید متن آزاد. فایل آداپتر Nimble به‌تنهایی بستهٔ کامل اجرای Ollama نیست."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "model",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "evidenceIds": [
     "evidence:cloudflare-clef-flash-card",
     "evidence:ollama-clef-flash-library",
-    "evidence:llama-cpp-b11371-clef"
+    "evidence:llama-cpp-b11371-clef",
+    "evidence:llama-cpp-v0-6-0-release",
+    "evidence:llama-cpp-v0-6-0-systemone",
+    "evidence:llama-cpp-clef-vision-29969",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -6838,11 +7136,28 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:bespokelabs-nimble-9b-card"
       ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "مدل تصمیم باقی می‌ماند: /v1/systemone برای choice، noul و score؛ بدون chat، tools، thinking یا تولید متن آزاد. فایل آداپتر Nimble به‌تنهایی بستهٔ کامل اجرای Ollama نیست."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "model",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
     }
   ],
   "downloadSearchNote": "ابتدا مدل پایهٔ Qwen3.5-9B را دریافت کنید؛ آداپتر حدود ۱۶۵MiB کل حافظهٔ اجرا نیست.",
   "evidenceIds": [
-    "evidence:bespokelabs-nimble-9b-card"
+    "evidence:bespokelabs-nimble-9b-card",
+    "evidence:ollama-v0-40-0-release"
   ]
 });
 modelProfiles.push({
@@ -6871,5 +7186,485 @@ modelProfiles.push({
   "downloadSearchNote": "طول بافت و حداقل نسخهٔ موتور برای توصیهٔ عملیاتی در این بررسی تثبیت نشده‌اند.",
   "evidenceIds": [
     "evidence:zai-glm-5-3-flash-card"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:reflection-beam",
+  "modelVersionId": "model:reflection-beam",
+  "introduction": "Beam مدل متنی MoE با ۵۰۱ میلیارد پارامتر کل و ۲۳ میلیارد فعال، طبق اعلان Reflection است؛ برای برنامه‌نویسی، استدلال و Agent معرفی شده و در انتظار عرضهٔ وزن عمومی است.",
+  "roleSummary": "برنامه‌نویسی، استدلال و Agent؛ کاربردهای اعلام سازنده",
+  "distinguishingFeatures": [
+    "اعلام‌شده؛ دسترسی فعلی محدود و ثبت‌نامی، وزن‌ها و کارت مدل برای ادامهٔ اکتبر وعده داده شده‌اند.",
+    "اندازه‌ها اعلام سازنده‌اند؛ ۲۳ میلیارد پارامتر فعال معیار حافظهٔ کل نیست. موتور اجرا و کوانتیزهٔ سازگار تأیید نشده‌اند."
+  ],
+  "languageSummary": "ارزیابی معتبر فارسی منتشر نشده است.",
+  "officialUrl": "https://reflection.ai/blog/introducing-beam",
+  "runGuides": [],
+  "downloadSearchNote": "وزن عمومی عرضه نشده؛ مجوز Apache-2.0، گزارش فنی و فایل‌های اجرا برای انتشار آتی وعده داده شده‌اند. این ردیف پیشنهاد آمادهٔ اجرای محلی نیست.",
+  "evidenceIds": [
+    "evidence:reflection-beam-announcement"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ifm-k2-horizon-0-9b",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "introduction": "مدل متنی K2 Horizon با وزن رسمی Safetensors و GGUF؛ اجرای llama.cpp از پیش‌انتشار b11454 ممکن شده است.",
+  "roleSummary": "گفت‌وگو، استدلال، کدنویسی و فراخوانی ابزار",
+  "distinguishingFeatures": [
+    "اصلاح tokenizer، ZWNJ و ZWJ را در توالی حروف نگه می‌دارد و مشکل Windows را رفع می‌کند؛ این شاهد کیفیت فارسی نیست."
+  ],
+  "languageSummary": "شاهد ارزیابی فارسی ثبت نشده",
+  "officialUrl": "https://huggingface.co/IFM/K2-Horizon-0.9B",
+  "runGuides": [
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp b11454+",
+      "engineLabel": "llama.cpp b11454+",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11454",
+      "conditions": [
+        "حداقل b11454 با پشتیبانی K2 لازم است؛ پیش‌انتشار است. -sm tensor برای K2 غیرفعال است؛ کیفیت فارسی، سرعت و حافظهٔ واقعی آزمون نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11454-release",
+        "evidence:llama-cpp-k2-horizon-29535",
+        "evidence:ifm-k2-horizon-0-9b-gguf-files"
+      ],
+      "code": "llama-server -hf IFM/K2-Horizon-0.9B-GGUF:Q4_K_M -c 4096 --jinja",
+      "codeLanguage": "bash"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM · K2 Horizon",
+      "engineLabel": "vLLM · K2 Horizon",
+      "href": "https://recipes.vllm.ai/IFM",
+      "conditions": [
+        "از نسخهٔ شامل پشتیبانی K2 و parserهای k2_horizon مطابق دستور رسمی BF16 استفاده کنید؛ اندازهٔ GGUF برآورد حافظهٔ این مسیر نیست."
+      ],
+      "evidenceIds": [
+        "evidence:vllm-k2-horizon-recipes",
+        "evidence:ifm-k2-horizon-0-9b-card"
+      ]
+    },
+    {
+      "engine": "SGLang",
+      "label": "SGLang · K2 Horizon",
+      "engineLabel": "SGLang · K2 Horizon",
+      "href": "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+      "conditions": [
+        "نصب از سورس شامل PR #37654 لازم است؛ دستورهای BF16 روی H200 و revisionهای پین‌شدهٔ راهنمای رسمی‌اند. شرایط چندGPU این مسیر به llama.cpp تعمیم داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:sglang-k2-horizon-cookbook",
+        "evidence:ifm-k2-horizon-0-9b-card"
+      ]
+    },
+    {
+      "engine": "Ollama",
+      "label": "Ollama · official GGUF",
+      "engineLabel": "Ollama · official GGUF",
+      "href": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF",
+      "conditions": [
+        "مسیر دریافت GGUF رسمی ثبت شده است؛ Ollama باید معماری K2 را پشتیبانی کند. حداقل نسخهٔ Ollama و اجرای واقعی در این بررسی تثبیت نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-0-9b-gguf-files",
+        "evidence:ifm-k2-horizon-gguf-collection"
+      ],
+      "code": "ollama run hf.co/IFM/K2-Horizon-0.9B-GGUF:Q4_K_M",
+      "codeLanguage": "bash"
+    }
+  ],
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-card",
+    "evidence:ifm-k2-horizon-0-9b-metadata",
+    "evidence:ifm-k2-horizon-0-9b-gguf-files",
+    "evidence:ifm-k2-horizon-0-9b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ifm-k2-horizon-3-7b",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "introduction": "مدل متنی K2 Horizon با وزن رسمی Safetensors و GGUF؛ اجرای llama.cpp از پیش‌انتشار b11454 ممکن شده است.",
+  "roleSummary": "گفت‌وگو، استدلال، کدنویسی و فراخوانی ابزار",
+  "distinguishingFeatures": [
+    "اصلاح tokenizer، ZWNJ و ZWJ را در توالی حروف نگه می‌دارد و مشکل Windows را رفع می‌کند؛ این شاهد کیفیت فارسی نیست."
+  ],
+  "languageSummary": "شاهد ارزیابی فارسی ثبت نشده",
+  "officialUrl": "https://huggingface.co/IFM/K2-Horizon-3.7B",
+  "runGuides": [
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp b11454+",
+      "engineLabel": "llama.cpp b11454+",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11454",
+      "conditions": [
+        "حداقل b11454 با پشتیبانی K2 لازم است؛ پیش‌انتشار است. -sm tensor برای K2 غیرفعال است؛ کیفیت فارسی، سرعت و حافظهٔ واقعی آزمون نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11454-release",
+        "evidence:llama-cpp-k2-horizon-29535",
+        "evidence:ifm-k2-horizon-3-7b-gguf-files"
+      ],
+      "code": "llama-server -hf IFM/K2-Horizon-3.7B-GGUF:Q4_K_M -c 4096 --jinja",
+      "codeLanguage": "bash"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM · K2 Horizon",
+      "engineLabel": "vLLM · K2 Horizon",
+      "href": "https://recipes.vllm.ai/IFM",
+      "conditions": [
+        "از نسخهٔ شامل پشتیبانی K2 و parserهای k2_horizon مطابق دستور رسمی BF16 استفاده کنید؛ اندازهٔ GGUF برآورد حافظهٔ این مسیر نیست."
+      ],
+      "evidenceIds": [
+        "evidence:vllm-k2-horizon-recipes",
+        "evidence:ifm-k2-horizon-3-7b-card"
+      ]
+    },
+    {
+      "engine": "SGLang",
+      "label": "SGLang · K2 Horizon",
+      "engineLabel": "SGLang · K2 Horizon",
+      "href": "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+      "conditions": [
+        "نصب از سورس شامل PR #37654 لازم است؛ دستورهای BF16 روی H200 و revisionهای پین‌شدهٔ راهنمای رسمی‌اند. شرایط چندGPU این مسیر به llama.cpp تعمیم داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:sglang-k2-horizon-cookbook",
+        "evidence:ifm-k2-horizon-3-7b-card"
+      ]
+    },
+    {
+      "engine": "Ollama",
+      "label": "Ollama · official GGUF",
+      "engineLabel": "Ollama · official GGUF",
+      "href": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF",
+      "conditions": [
+        "مسیر دریافت GGUF رسمی ثبت شده است؛ Ollama باید معماری K2 را پشتیبانی کند. حداقل نسخهٔ Ollama و اجرای واقعی در این بررسی تثبیت نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-3-7b-gguf-files",
+        "evidence:ifm-k2-horizon-gguf-collection"
+      ],
+      "code": "ollama run hf.co/IFM/K2-Horizon-3.7B-GGUF:Q4_K_M",
+      "codeLanguage": "bash"
+    }
+  ],
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-card",
+    "evidence:ifm-k2-horizon-3-7b-metadata",
+    "evidence:ifm-k2-horizon-3-7b-gguf-files",
+    "evidence:ifm-k2-horizon-3-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ifm-k2-horizon-7b",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "introduction": "مدل متنی K2 Horizon با وزن رسمی Safetensors و GGUF؛ اجرای llama.cpp از پیش‌انتشار b11454 ممکن شده است.",
+  "roleSummary": "گفت‌وگو، استدلال، کدنویسی و فراخوانی ابزار",
+  "distinguishingFeatures": [
+    "اصلاح tokenizer، ZWNJ و ZWJ را در توالی حروف نگه می‌دارد و مشکل Windows را رفع می‌کند؛ این شاهد کیفیت فارسی نیست."
+  ],
+  "languageSummary": "شاهد ارزیابی فارسی ثبت نشده",
+  "officialUrl": "https://huggingface.co/IFM/K2-Horizon-7B",
+  "runGuides": [
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp b11454+",
+      "engineLabel": "llama.cpp b11454+",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11454",
+      "conditions": [
+        "حداقل b11454 با پشتیبانی K2 لازم است؛ پیش‌انتشار است. -sm tensor برای K2 غیرفعال است؛ کیفیت فارسی، سرعت و حافظهٔ واقعی آزمون نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11454-release",
+        "evidence:llama-cpp-k2-horizon-29535",
+        "evidence:ifm-k2-horizon-7b-gguf-files"
+      ],
+      "code": "llama-server -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M -c 4096 --jinja",
+      "codeLanguage": "bash"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM · K2 Horizon",
+      "engineLabel": "vLLM · K2 Horizon",
+      "href": "https://recipes.vllm.ai/IFM",
+      "conditions": [
+        "از نسخهٔ شامل پشتیبانی K2 و parserهای k2_horizon مطابق دستور رسمی BF16 استفاده کنید؛ اندازهٔ GGUF برآورد حافظهٔ این مسیر نیست."
+      ],
+      "evidenceIds": [
+        "evidence:vllm-k2-horizon-recipes",
+        "evidence:ifm-k2-horizon-7b-card"
+      ]
+    },
+    {
+      "engine": "SGLang",
+      "label": "SGLang · K2 Horizon",
+      "engineLabel": "SGLang · K2 Horizon",
+      "href": "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+      "conditions": [
+        "نصب از سورس شامل PR #37654 لازم است؛ دستورهای BF16 روی H200 و revisionهای پین‌شدهٔ راهنمای رسمی‌اند. شرایط چندGPU این مسیر به llama.cpp تعمیم داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:sglang-k2-horizon-cookbook",
+        "evidence:ifm-k2-horizon-7b-card"
+      ]
+    },
+    {
+      "engine": "Ollama",
+      "label": "Ollama · official GGUF",
+      "engineLabel": "Ollama · official GGUF",
+      "href": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+      "conditions": [
+        "مسیر دریافت GGUF رسمی ثبت شده است؛ Ollama باید معماری K2 را پشتیبانی کند. حداقل نسخهٔ Ollama و اجرای واقعی در این بررسی تثبیت نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-7b-gguf-files",
+        "evidence:ifm-k2-horizon-gguf-collection"
+      ],
+      "code": "ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q4_K_M",
+      "codeLanguage": "bash"
+    }
+  ],
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-card",
+    "evidence:ifm-k2-horizon-7b-metadata",
+    "evidence:ifm-k2-horizon-7b-gguf-files",
+    "evidence:ifm-k2-horizon-7b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ifm-k2-horizon-32b",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "introduction": "مدل متنی K2 Horizon با وزن رسمی Safetensors و GGUF؛ اجرای llama.cpp از پیش‌انتشار b11454 ممکن شده است.",
+  "roleSummary": "گفت‌وگو، استدلال، کدنویسی و فراخوانی ابزار",
+  "distinguishingFeatures": [
+    "اصلاح tokenizer، ZWNJ و ZWJ را در توالی حروف نگه می‌دارد و مشکل Windows را رفع می‌کند؛ این شاهد کیفیت فارسی نیست."
+  ],
+  "languageSummary": "شاهد ارزیابی فارسی ثبت نشده",
+  "officialUrl": "https://huggingface.co/IFM/K2-Horizon-32B",
+  "runGuides": [
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp b11454+",
+      "engineLabel": "llama.cpp b11454+",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11454",
+      "conditions": [
+        "حداقل b11454 با پشتیبانی K2 لازم است؛ پیش‌انتشار است. -sm tensor برای K2 غیرفعال است؛ کیفیت فارسی، سرعت و حافظهٔ واقعی آزمون نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11454-release",
+        "evidence:llama-cpp-k2-horizon-29535",
+        "evidence:ifm-k2-horizon-32b-gguf-files"
+      ],
+      "code": "llama-server -hf IFM/K2-Horizon-32B-GGUF:Q4_K_M -c 4096 --jinja",
+      "codeLanguage": "bash"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM · K2 Horizon",
+      "engineLabel": "vLLM · K2 Horizon",
+      "href": "https://recipes.vllm.ai/IFM",
+      "conditions": [
+        "از نسخهٔ شامل پشتیبانی K2 و parserهای k2_horizon مطابق دستور رسمی BF16 استفاده کنید؛ اندازهٔ GGUF برآورد حافظهٔ این مسیر نیست."
+      ],
+      "evidenceIds": [
+        "evidence:vllm-k2-horizon-recipes",
+        "evidence:ifm-k2-horizon-32b-card"
+      ]
+    },
+    {
+      "engine": "SGLang",
+      "label": "SGLang · K2 Horizon",
+      "engineLabel": "SGLang · K2 Horizon",
+      "href": "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+      "conditions": [
+        "نصب از سورس شامل PR #37654 لازم است؛ دستورهای BF16 روی H200 و revisionهای پین‌شدهٔ راهنمای رسمی‌اند. شرایط چندGPU این مسیر به llama.cpp تعمیم داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:sglang-k2-horizon-cookbook",
+        "evidence:ifm-k2-horizon-32b-card"
+      ]
+    },
+    {
+      "engine": "Ollama",
+      "label": "Ollama · official GGUF",
+      "engineLabel": "Ollama · official GGUF",
+      "href": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF",
+      "conditions": [
+        "مسیر دریافت GGUF رسمی ثبت شده است؛ Ollama باید معماری K2 را پشتیبانی کند. حداقل نسخهٔ Ollama و اجرای واقعی در این بررسی تثبیت نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-32b-gguf-files",
+        "evidence:ifm-k2-horizon-gguf-collection"
+      ],
+      "code": "ollama run hf.co/IFM/K2-Horizon-32B-GGUF:Q4_K_M",
+      "codeLanguage": "bash"
+    }
+  ],
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-card",
+    "evidence:ifm-k2-horizon-32b-metadata",
+    "evidence:ifm-k2-horizon-32b-gguf-files",
+    "evidence:ifm-k2-horizon-32b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ifm-k2-horizon-mova-36b-a4b",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "introduction": "مدل متنی K2 Horizon با وزن رسمی Safetensors و GGUF؛ اجرای llama.cpp از پیش‌انتشار b11454 ممکن شده است.",
+  "roleSummary": "گفت‌وگو، استدلال، کدنویسی و فراخوانی ابزار",
+  "distinguishingFeatures": [
+    "اصلاح tokenizer، ZWNJ و ZWJ را در توالی حروف نگه می‌دارد و مشکل Windows را رفع می‌کند؛ این شاهد کیفیت فارسی نیست."
+  ],
+  "languageSummary": "شاهد ارزیابی فارسی ثبت نشده",
+  "officialUrl": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+  "runGuides": [
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp b11454+",
+      "engineLabel": "llama.cpp b11454+",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11454",
+      "conditions": [
+        "حداقل b11454 با پشتیبانی K2 لازم است؛ پیش‌انتشار است. -sm tensor برای K2 غیرفعال است؛ کیفیت فارسی، سرعت و حافظهٔ واقعی آزمون نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11454-release",
+        "evidence:llama-cpp-k2-horizon-29535",
+        "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files"
+      ],
+      "code": "llama-server -hf IFM/K2-Horizon-MoVA-36B-A4B-GGUF:Q4_K_M -c 4096 --jinja",
+      "codeLanguage": "bash"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM · K2 Horizon",
+      "engineLabel": "vLLM · K2 Horizon",
+      "href": "https://recipes.vllm.ai/IFM",
+      "conditions": [
+        "از نسخهٔ شامل پشتیبانی K2 و parserهای k2_horizon مطابق دستور رسمی BF16 استفاده کنید؛ اندازهٔ GGUF برآورد حافظهٔ این مسیر نیست."
+      ],
+      "evidenceIds": [
+        "evidence:vllm-k2-horizon-recipes",
+        "evidence:ifm-k2-horizon-mova-36b-a4b-card"
+      ]
+    },
+    {
+      "engine": "SGLang",
+      "label": "SGLang · K2 Horizon",
+      "engineLabel": "SGLang · K2 Horizon",
+      "href": "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+      "conditions": [
+        "نصب از سورس شامل PR #37654 لازم است؛ دستورهای BF16 روی H200 و revisionهای پین‌شدهٔ راهنمای رسمی‌اند. شرایط چندGPU این مسیر به llama.cpp تعمیم داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:sglang-k2-horizon-cookbook",
+        "evidence:ifm-k2-horizon-mova-36b-a4b-card"
+      ]
+    },
+    {
+      "engine": "Ollama",
+      "label": "Ollama · official GGUF",
+      "engineLabel": "Ollama · official GGUF",
+      "href": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "conditions": [
+        "مسیر دریافت GGUF رسمی ثبت شده است؛ Ollama باید معماری K2 را پشتیبانی کند. حداقل نسخهٔ Ollama و اجرای واقعی در این بررسی تثبیت نشده‌اند."
+      ],
+      "evidenceIds": [
+        "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+        "evidence:ifm-k2-horizon-gguf-collection"
+      ],
+      "code": "ollama run hf.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF:Q4_K_M",
+      "codeLanguage": "bash"
+    }
+  ],
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-card",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files",
+    "evidence:ifm-k2-horizon-mova-36b-a4b-config",
+    "evidence:ifm-k2-horizon-launch",
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:google-embeddinggemma-2",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "officialUrl": "https://huggingface.co/google/embeddinggemma-2",
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-card",
+    "evidence:embeddinggemma-2-files",
+    "evidence:embeddinggemma-2-launch",
+    "evidence:embeddinggemma-2-developer-guide",
+    "evidence:embeddinggemma-2-transformers",
+    "evidence:ollama-v0-40-0-release"
+  ],
+  "runGuides": [
+    {
+      "engine": "Transformers",
+      "engineLabel": "Transformers",
+      "label": "Transformers",
+      "href": "https://huggingface.co/docs/transformers/model_doc/embedding_gemma2",
+      "conditions": [
+        "از نسخهٔ Transformers دارای پشتیبانی EmbeddingGemma 2 استفاده کنید؛ BF16 روی سخت‌افزار سازگار یا FP32؛ FP16 طبق مستندات می‌تواند NaN تولید کند."
+      ],
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide",
+        "evidence:embeddinggemma-2-transformers"
+      ]
+    },
+    {
+      "engine": "Sentence Transformers",
+      "engineLabel": "Sentence Transformers ≥6.1",
+      "label": "Sentence Transformers ≥6.1",
+      "href": "https://developers.googleblog.com/en/embeddinggemma-2-the-developer-guide/",
+      "conditions": [
+        "از نسخهٔ Transformers دارای پشتیبانی EmbeddingGemma 2 استفاده کنید؛ BF16 روی سخت‌افزار سازگار یا FP32؛ FP16 طبق مستندات می‌تواند NaN تولید کند.",
+        "حداقل Sentence Transformers 6.1؛ برای رسانه extras تصویر/صوت/ویدئو نصب شود. برای بارگذاری فقط متن، vision_config و audio_config را None کنید. قالب SearchQuery/Document را دوباره به ورودی اضافه نکنید؛ ابعاد پرسش و سند یکسان و خروجی پس از کاهش بعد نرمال باشد."
+      ],
+      "evidenceIds": [
+        "evidence:embeddinggemma-2-card",
+        "evidence:embeddinggemma-2-developer-guide",
+        "evidence:embeddinggemma-2-transformers"
+      ]
+    },
+    {
+      "label": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "engine": "Ollama",
+      "engineLabel": "Ollama v0.40.0 + MLX · Apple Silicon",
+      "href": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+      "conditions": [
+        "فقط روی Apple Silicon، با Ollama v0.40.0 و MLX برای معماری تأییدشده؛ دریافت تگ سازگار لازم است. فایل GGUF یا Safetensors دیگر خودبه‌خود بستهٔ این مسیر نیست. حافظهٔ اجرا، سرعت و کیفیت فارسی سنجیده نشده‌اند.",
+        "پشتیبانی embedding در MLX اعلام شده است؛ ورودی‌های چندوجهی و بارگذاری مستقل بخش متنی را برای همین بسته جدا بررسی کنید. وزن رسمی Safetensors و مسیرهای Transformers و Sentence Transformers مستقل می‌مانند."
+      ],
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-release"
+      ],
+      "hardwareTarget": "apple-silicon",
+      "compatibilityScope": "model",
+      "softwareReleaseId": "software-release:ollama-v0-40-0"
+    }
+  ],
+  "introduction": "بردارساز چندوجهی محلی با وزن رسمی Apache-2.0؛ نسل قبلی EmbeddingGemma جدا در جدول می‌ماند.",
+  "roleSummary": "بازیابی چندوجهی و محلی برای RAG؛ مولد پاسخ نیست",
+  "languageSummary": "شاهد ارزیابی فارسی ثبت نشده؛ گزارش بیش از ۱۰۰ زبان و MTEB تجمیعی، نتیجهٔ مستقل فارسی نیست",
+  "distinguishingFeatures": [
+    "۰٫۷۴B کل و ۰٫۲۷B متن؛ متن/کد/تصویر/ویدئو/صوت به بردار مشترک ۷۶۸بعدی با MRL",
+    "MTEB چندزبانهٔ متنی: ۶۱٫۳۶ در برابر ۶۱٫۱۵ نسل قبل؛ این تغییر کوچک شاهد کیفیت فارسی نیست و بهبود عمده در کد و چندوجهی گزارش شده است",
+    "ارقام ۱۹۱/۵۶۷ مگابایت مربوط به اجرای کوانتیزه روی Pixel 11 Pro هستند؛ حافظهٔ عمومی GPU و اجرای واقعی این راهنما سنجیده نشده‌اند"
   ]
 });

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
   import PageHero from '$lib/components/PageHero.svelte';
-  import { localizePresentation, presentations, type PresentationLocale } from '$lib/presentations';
+  import { localizePresentation, presentations, presenterName, type PresentationLocale } from '$lib/presentations';
   import { presentationCopy } from '$lib/presentation-copy';
 
   export let locale: PresentationLocale = 'fa';
@@ -26,16 +26,17 @@
       <a class="deck-card" href={`${base}/slides/${item.slug}/`}>
         <div class="deck-cover" class:empty={!item.cover}>
           {#if item.cover}
-            <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${item.title}»`} loading="lazy" width="1600" height="900" />
+            <img {...imageAttributes(item.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={`${copy.cover} «${item.title}»`} loading="lazy" width={item.coverWidth ?? 1600} height={item.coverHeight ?? 900} />
           {:else}
             <span>{numbers.format(item.slideCount)}</span><small>{copy.slides}</small>
           {/if}
         </div>
         <div class="deck-copy">
-          <div class="deck-kicker">{item.kind} · {item.presentedAt}</div>
+          <div class="deck-kicker">{item.kind} · {#if item.date}<time datetime={item.date}>{item.presentedAt}</time>{:else}{item.presentedAt}{/if}</div>
           <h2>{item.title}</h2>
           <p>{item.summary}</p>
           <dl>
+            {#if item.presenter}<div><dt>{copy.presenter}</dt><dd>{presenterName(item.presenter)}</dd></div>{/if}
             <div><dt>{copy.venue}</dt><dd>{item.venue}</dd></div>
             {#if item.event}<div><dt>{copy.event}</dt><dd>{item.event}</dd></div>{/if}
             <div><dt>{copy.count}</dt><dd>{numbers.format(item.slideCount)} {copy.slides}</dd></div>

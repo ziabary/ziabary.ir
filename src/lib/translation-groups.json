@@ -122,5 +122,10 @@
     "fa": "ai-infrastructure-security-starts-with-kernel-and-gpu",
     "en": "ai-infrastructure-security-starts-with-kernel-and-gpu-en",
     "es": "ai-infrastructure-security-starts-with-kernel-and-gpu-es"
+  },
+  "concurrent-users-capacity": {
+    "fa": "what-does-100-concurrent-users-mean-for-an-ai-assistant",
+    "en": "what-does-100-concurrent-users-mean-for-an-ai-assistant-en",
+    "es": "what-does-100-concurrent-users-mean-for-an-ai-assistant-es"
   }
 }

@@ -13,15 +13,15 @@ test('version-scoped security, RPC and prerelease notes render in all editions',
   const repo=m['i18n/runtime'].localizeLlmRepository(canonical,i),research=m.research.createLlmResearch(i),r=research.enrichResearchRepository(repo);
   const rows=m['research-views'].createLlmResearchViews(i).enrichExistingRows(r,m.adapters.createLlmAdapters(i).buildLlmViewRows(r),'all')['software-products'];
   const row=id=>rows.find(x=>x.id===id);
-  for(const id of [v29,v30,l04,l05,'software-release:ollama-v0-34-0'])assert.ok(row(id));
+  for(const id of [v29,v30,l04,l05,'software-release:ollama-v0-40-0'])assert.ok(row(id));
   const old=row(v29).cells['research-condition'].display,newer=row(v30).cells['research-condition'].display;
   assert.match(old,/GHSA-x6mc-67gf-chw4/);assert.match(old,/0\.25\.1/);assert.match(old,/\/tokenize/);
   assert.match(newer,/g_idx/);assert.match(newer,/--enable-scale-out/);assert.match(newer,/CUDA 12\.9/);
   assert.match(row(l05).cells['research-condition'].display,/b11160/);assert.match(row(l05).cells['research-condition'].display,/MUL_MAT_ID/);
-  assert.match(row('software-release:ollama-v0-34-0').cells['research-condition'].display,/OLLAMA_NO_CLOUD=1/);
-  assert.match(row('software-release:ollama-v0-34-0').cells['research-condition'].display,/v0\.40\.0-rc0/);
+  assert.match(row('software-release:ollama-v0-40-0').cells['research-condition'].display,/OLLAMA_NO_CLOUD=1/);
+  assert.match(row('software-release:ollama-v0-40-0').cells['research-condition'].display,/v0\.40\.0/);
   assert.ok(!rows.some(x=>x.id==='software-release:ollama-v0-40-0-rc0'),'The historical v0.40.0 RC remains a note; separately reviewed prereleases may have their own rows');
-  if(locale!=='fa')for(const id of [v29,v30,l05,'software-release:ollama-v0-34-0'])assert.doesNotMatch(JSON.stringify([row(id).cells,row(id).details]),/[\u0600-\u06ff]/);
+  if(locale!=='fa')for(const id of [v29,v30,l05,'software-release:ollama-v0-40-0'])assert.doesNotMatch(JSON.stringify([row(id).cells,row(id).details]),/[\u0600-\u06ff]/);
  }
 });
 test('release dates differ from review dates; no old benchmark or capability is relabelled',()=>{

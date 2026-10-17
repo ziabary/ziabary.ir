@@ -17,6 +17,7 @@ export const llmTopics = [
   { id: 'software', fa: 'ollama-vllm-sglang-or-llama-cpp', en: 'ollama-vllm-sglang-or-llama-cpp-en', es: 'ollama-vllm-sglang-or-llama-cpp-es' },
   { id: 'latency', fa: 'gpu-inference-latency-throughput', en: 'gpu-inference-latency-throughput-en', es: 'gpu-inference-latency-throughput-es' },
   { id: 'serving', fa: 'single-user-to-enterprise-llm-serving', en: 'single-user-to-enterprise-llm-serving-en', es: 'single-user-to-enterprise-llm-serving-es' },
+  { id: 'capacity', fa: 'what-does-100-concurrent-users-mean-for-an-ai-assistant', en: 'what-does-100-concurrent-users-mean-for-an-ai-assistant-en', es: 'what-does-100-concurrent-users-mean-for-an-ai-assistant-es' },
   { id: 'field-report', fa: 'targoman-300-concurrent-requests-one-rtx-4090', en: null, es: null },
   { id: 'cost', fa: 'true-llm-cost-buy-rent-or-api', en: 'true-llm-cost-buy-rent-or-api-en', es: 'true-llm-cost-buy-rent-or-api-es' },
 ] as const;

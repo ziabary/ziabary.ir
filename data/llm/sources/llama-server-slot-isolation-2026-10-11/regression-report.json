@@ -1,0 +1,31 @@
+{
+  "reviewedAt": "2026-10-11",
+  "upstreamReportUrl": "https://github.com/ggml-org/llama.cpp/pull/30295#issuecomment-6099989146",
+  "model": "Qwen3.8-27B-UD-Q4_K_M plus mmproj",
+  "hardware": "M2 Ultra",
+  "backend": "Metal",
+  "flags": [
+    "--parallel 10",
+    "--kv-unified",
+    "--no-cache-idle-slots",
+    "--cache-ram 8192"
+  ],
+  "idSlot": 7,
+  "baseline": {
+    "build": "11146",
+    "simultaneousPairs": 30,
+    "crossings": 1,
+    "corruptedResponses": 9
+  },
+  "fixed": {
+    "commit": "0d4444afc",
+    "build": "11550",
+    "simultaneousPairs": 60,
+    "crossings": 0,
+    "corruptedResponses": 0
+  },
+  "clientTimeoutSeconds": 60,
+  "timeoutRoundsReported": 1,
+  "releaseContainingFix": "b11552",
+  "siteRuntimeTested": false
+}

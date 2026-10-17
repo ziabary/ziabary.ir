@@ -172,6 +172,14 @@ function documentedAssessmentValue(item: ModelApplicationAssessment, repository:
     : unknown('unknown', t('adapters.0209'));
   return datum(item.outcome, llmLabel);
 }
+// Modality is independent of the model's task: an embedder can also be multimodal.
+function isMultimodal(model: ModelVersion): boolean {
+  return model.inputModalities.length > 1 && model.inputModalities.some(value => value === 'image' || value === 'audio' || value === 'video');
+}
+function modelKindFacet(model: ModelVersion): ViewValue | ViewValue[] {
+  const kind = known(llmLabel(model.kind), model.kind);
+  return isMultimodal(model) ? [kind, known(t('views.0295'), 'multimodal')] : kind;
+}
 function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
   return repository.models.map((model) => {
     const family = repository.families.find((item) => item.id === model.familyId);
@@ -189,7 +197,7 @@ function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
       cells: {
         model: known(model.exactName, model.exactName, undefined, undefined, model.evidenceIds),
         'family-publisher': known(`${family?.name ?? t('adapters.0179')} · ${model.publisher}`, family?.name ?? model.publisher, undefined, undefined, evidenceIds),
-        'kind-stage': known(dependency ?? `${llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
+        'kind-stage': known(dependency ?? `${model.kind === 'embedding' && isMultimodal(model) ? t('model-kind.multimodal-embedding') : llmLabel(model.kind)}${model.stage !== 'other' ? ' · ' + llmLabel(model.stage) : ''}`, `${model.kind}|${model.stage}`),
         parameters: size,
         'size-architecture': { ...known(`${size.state === 'known' ? size.display + ' · ' : ''}${llmLabel(model.architecture)}${model.attentionArchitecture === 'hybrid' ? t('adapters.0211') : ''}`, total.state === 'known' ? total.raw : undefined, total.state === 'known' ? total.canonicalNumber : undefined, 'B', model.evidenceIds), caveat: size.state === 'known' ? size.caveat : t('adapters.0212') },
         architecture: known(llmLabel(model.architecture), model.architecture),
@@ -202,7 +210,7 @@ function adaptModelCatalog(repository: LlmGuideRepository): LlmViewRow[] {
       facets: {
         family: known(family?.name ?? model.familyId, family?.name ?? model.familyId),
         'model-version': known(`${model.exactName} · ${model.version.slice(0, 12)}`, model.version),
-        publisher: known(model.publisher, model.publisher), 'model-kind': known(llmLabel(model.kind), model.kind),
+        publisher: known(model.publisher, model.publisher), 'model-kind': modelKindFacet(model),
         'model-stage': known(llmLabel(model.stage), model.stage), 'total-parameters': total, 'active-parameters': active,
         'commercial-use': datum(model.license.commercialUse, llmLabel), 'attention-architecture': model.attentionArchitecture ? known(model.attentionArchitecture === 'hybrid' ? t('adapters.0215') : model.attentionArchitecture, model.attentionArchitecture) : unknown(),
         'size-band': modelSizeBand(model), architecture: known(llmLabel(model.architecture), model.architecture),
@@ -284,7 +292,7 @@ function adaptModelSuitability(repository: LlmGuideRepository): LlmViewRow[] {
       facets: {
         application: usable.map(item => known(applicationLabel(item.applicationId), item.applicationId)),
         'assessment-basis': assessments.map(item => known(llmLabel(item.basis), item.basis)),
-        'total-parameters': total, 'model-kind': model ? known(llmLabel(model.kind), model.kind) : unknown(),
+        'total-parameters': total, 'model-kind': model ? modelKindFacet(model) : unknown(),
         subapplication: assessments.map(item => item.subapplicationId ? known(item.subapplicationId, item.subapplicationId) : unknown()),
         language: assessments.map(item => item.language ? known(item.language, item.language) : unknown()),
         'tested-version': assessments.map(item => item.testedVersion ? known(item.testedVersion, item.testedVersion) : unknown()),
@@ -522,10 +530,10 @@ function adaptSoftwareProducts(repository: LlmGuideRepository): LlmViewRow[] {
     const important = documented.slice(0, 4);
     const highlights = list(important.map(item => `${llmLabel(item.capability)}${item.provision !== 'native' ? ` (${llmLabel(item.provision)})` : item.status === 'conditional' ? t('adapters.0248') : ''}`), important.flatMap(item => item.evidenceIds));
     return [{
-      id: release.id, label: `${product.name} ${release.version}${release.releaseChannel === 'prerelease' ? ' · ' + t('software.prerelease') : ''}`,
+      id: release.id, label: `${product.name} ${release.version}${release.releaseChannel === 'prerelease' ? ' · ' + t('software.prerelease') : release.isLatest ? ' · ' + t('software.stableLatest') : ''}`,
       searchText: [release.id, product.name, release.version, ...(product.aliases ?? []), ...release.roles, ...backends.map((item) => item?.name)].join(' '),
       cells: {
-        'software-version': known(`${product.name} · ${release.version}${release.releaseChannel === 'prerelease' ? ' · ' + t('software.prerelease') : ''}`, release.id, undefined, undefined, release.evidenceIds),
+        'software-version': known(`${product.name} · ${release.version}${release.releaseChannel === 'prerelease' ? ' · ' + t('software.prerelease') : release.isLatest ? ' · ' + t('software.stableLatest') : ''}`, release.id, undefined, undefined, release.evidenceIds),
         roles: list(release.roles.map(llmLabel), release.evidenceIds),
         scenario: datum(release.targetScenario),
         'start-docs': { ...known(t('adapters.0249'), product.officialUrl), href: product.officialUrl },
@@ -909,7 +917,9 @@ function validateLlmRepository(repository: LlmGuideRepository) {
     if (item.totalBytes !== undefined && item.files.every(file => file.bytes !== undefined) && item.totalBytes !== item.files.reduce((sum, file) => sum + file.bytes!, 0)) errors.push(`${item.id} inconsistent file sizes`);
   }
   for (const profile of repository.modelProfiles) {
-    if (!profile.introduction.trim() || !profile.roleSummary.trim() || !profile.runGuides.length) errors.push(`${profile.id} incomplete profile`);
+    const model = repository.models.find(item => item.id === profile.modelVersionId);
+    const pendingWeights = model?.releaseStatus === 'announced' && Boolean(profile.downloadSearchNote?.trim());
+    if (!profile.introduction.trim() || !profile.roleSummary.trim() || (!profile.runGuides.length && !pendingWeights)) errors.push(`${profile.id} incomplete profile`);
     for (const run of profile.runGuides) {
       if (!run.href.startsWith('https://') || !run.engine.trim() || !run.label.trim() || !run.evidenceIds.length ||
         (run.instructions !== undefined && !run.instructions.trim()) || run.conditions.some(condition => !condition.trim())) errors.push(`${profile.id} incomplete run path`);

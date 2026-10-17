@@ -1,0 +1,311 @@
+{
+  "id": "concurrent-users-capacity-20261013",
+  "reviewedAt": "2026-10-13",
+  "source": "/home/user/.codex/attachments/6a3d6cf0-5d14-4d28-b1cd-700c5b51f582/Pasted text.txt",
+  "sourceSha256": "f83e7de4864a3cf7cd5f2c82e2293bca497b977976fb871e59965331706840f5",
+  "articleSlug": "what-does-100-concurrent-users-mean-for-an-ai-assistant",
+  "editorialChanges": [
+    "Added contextual links to eight existing articles, including the Targoman load experience, latency/throughput, runtime choice, quantization, RAG components, model size, interconnects and AI contract deliverables.",
+    "Replaced copied chart/UI fragments with readable tables and the interactive component.",
+    "Removed authoring notes and repaired escaped TeX using the existing math pipeline.",
+    "Preserved the difference between memory screening and measured serving capacity; no new runtime benchmark was claimed.",
+    "Added full English and Spanish editions with the original 2026-10-13 publication date, contextual links to the existing editions and an explicitly labelled Persian-only Targoman reference.",
+    "Integrated the reusable calculator after the LLM guide memory table in all three editions; added the article to the manual chapter manifest and the hardware reading cards.",
+    "Localized all calculator controls, status messages, assumptions, hardware descriptions, numbers, percentages and guide links."
+  ],
+  "component": "src/lib/components/ServingCapacityPlanner.svelte",
+  "sharedKernel": "src/lib/llm/memory-planning.ts",
+  "dataSources": [
+    "data/llm/v0.2.0/data/artifacts.json",
+    "data/llm/v0.3.0/planning-artifacts.json",
+    "data/llm/v0.2.0/data/memory-policy.json",
+    "src/lib/gpu-data.ts"
+  ],
+  "datasetsEdited": false,
+  "numericPolicy": {
+    "capacity": "Existing nominal memory-class/GiB convention, with optional actual free GiB per selected device.",
+    "replicas": "Full weights on each device; busiest replica receives ceil(active/deviceCount).",
+    "sharding": "Ideal even partition only; positive multi-GPU outcomes remain conditional.",
+    "kv": "Full-attention geometry; no prefix reuse, MLA, hybrid or paging savings assumed.",
+    "performance": "Only user-entered measured Prefill/Decode capacities; no FLOPS-to-token-rate conversion or linear multi-GPU speed scaling.",
+    "runtimeBenchmarkPerformed": false
+  },
+  "changedFiles": [
+    "src/lib/content/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant.md",
+    "src/lib/components/ServingCapacityPlanner.svelte",
+    "src/lib/llm/serving-capacity.ts",
+    "src/lib/llm/memory-planning.ts",
+    "src/lib/llm/research.ts",
+    "tests/serving-capacity.test.mjs",
+    "docs/serving-capacity-planner.md",
+    "config/short-links.json",
+    "docs/content-reviews/concurrent-users-capacity-2026-10-13.json",
+    "src/lib/content/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en.md",
+    "src/lib/content/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es.md",
+    "src/lib/components/LlmGuidePage.svelte",
+    "src/lib/llm/serving-capacity-copy.ts",
+    "src/lib/llm/serving-capacity-copy.fa.json",
+    "src/lib/llm/serving-capacity-copy.en.json",
+    "src/lib/llm/serving-capacity-copy.es.json",
+    "src/lib/llm/edition-manifest.ts",
+    "src/lib/llm/guide.ts",
+    "src/lib/translation-groups.json",
+    "tests/serving-capacity-locales.test.mjs",
+    "tests/llm-guide.test.mjs",
+    "static/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+    "static/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+    "static/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+    "src/lib/components/LlmGuideChapters.svelte"
+  ],
+  "validation": {
+    "check": {
+      "errors": 0,
+      "warnings": 0,
+      "command": "npm run check --ignore-scripts (full locale, sync and Svelte checks; unchanged asset preparation is performed by npm run build)"
+    },
+    "coreTestsPassed": 9,
+    "existingRegressionTestsPassed": 33,
+    "mathAndEmbeddedSvelteCompileWarnings": 0,
+    "existingMemoryEstimateParity": "All supported registered GGUF artifacts, 8192 or shorter context and seven active requests.",
+    "build": "passed",
+    "sitemapUrls": 258,
+    "jsonLdBlocks": 267,
+    "shortLinkDestinations": 317,
+    "browser": {
+      "scenariosPassed": 3,
+      "widths": [
+        320,
+        390,
+        1280
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "horizontalOverflow": false,
+      "runtimeExceptions": 0,
+      "controlsVerified": [
+        "GPU and count selection",
+        "71.25 GiB reference KV",
+        "replica and conditional sharding",
+        "free-memory and invalid-input handling",
+        "demand without changing GPU concurrency",
+        "measured-capacity reset",
+        "context clamping to the package",
+        "automatic recommendation adoption",
+        "keyboard slider operation"
+      ]
+    },
+    "internalArticleTargetsVerified": true,
+    "unrelatedDraftsRemainExcluded": true,
+    "translationAndGuideTestsPassed": 44,
+    "totalTestsPassed": 86,
+    "localeBrowser": {
+      "results": [
+        {
+          "locale": "fa",
+          "kind": "article",
+          "width": 320,
+          "theme": "dark",
+          "screenshot": "/tmp/serving-capacity-locales-browser/fa-article-320-dark.png",
+          "controlsVerified": true,
+          "horizontalOverflow": false
+        },
+        {
+          "locale": "fa",
+          "kind": "guide",
+          "width": 390,
+          "theme": "light",
+          "screenshot": "/tmp/serving-capacity-locales-browser/fa-guide-390-light.png",
+          "controlsVerified": true,
+          "horizontalOverflow": false
+        },
+        {
+          "locale": "en",
+          "kind": "article",
+          "width": 320,
+          "theme": "dark",
+          "screenshot": "/tmp/serving-capacity-locales-browser/en-article-320-dark.png",
+          "controlsVerified": true,
+          "horizontalOverflow": false
+        },
+        {
+          "locale": "en",
+          "kind": "guide",
+          "width": 390,
+          "theme": "light",
+          "screenshot": "/tmp/serving-capacity-locales-browser/en-guide-390-light.png",
+          "controlsVerified": true,
+          "horizontalOverflow": false
+        },
+        {
+          "locale": "es",
+          "kind": "article",
+          "width": 320,
+          "theme": "dark",
+          "screenshot": "/tmp/serving-capacity-locales-browser/es-article-320-dark.png",
+          "controlsVerified": true,
+          "horizontalOverflow": false
+        },
+        {
+          "locale": "es",
+          "kind": "guide",
+          "width": 390,
+          "theme": "light",
+          "screenshot": "/tmp/serving-capacity-locales-browser/es-guide-390-light.png",
+          "controlsVerified": true,
+          "horizontalOverflow": false
+        }
+      ],
+      "runtimeExceptions": 0,
+      "embeddedArticleControls": "Verified the site’s existing heading-prefix mechanism gives distinct IDs; guide and embedded article calculator states remain independent."
+    },
+    "staleTestExpectationsRefreshed": "Manual guide count is now 15; the existing release/review-date test now uses the already-registered Ollama v0.40.2 release (2026-10-08) and review (2026-10-10), without a dataset change.",
+    "covers": {
+      "build": "passed",
+      "checkErrors": 0,
+      "checkWarnings": 0,
+      "originalsPreserved": true,
+      "browser": {
+        "results": [
+          {
+            "locale": "fa",
+            "width": 358,
+            "original": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "current": "http://127.0.0.1:4195/images/responsive/79addae3aaea5d6a-640.webp",
+            "loaded": true,
+            "height": 156.625,
+            "naturalRatio": 0.7486033519553073,
+            "fit": "contain",
+            "og": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "twitter": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "schemaImage": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "overflow": false
+          },
+          {
+            "locale": "fa",
+            "width": 1040,
+            "original": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "current": "http://127.0.0.1:4195/images/responsive/79addae3aaea5d6a-960.webp",
+            "loaded": true,
+            "height": 455,
+            "naturalRatio": 0.75,
+            "fit": "contain",
+            "og": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "twitter": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "schemaImage": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+            "overflow": false
+          },
+          {
+            "locale": "en",
+            "width": 358,
+            "original": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "current": "http://127.0.0.1:4195/images/responsive/de21f4cb79a549eb-640.webp",
+            "loaded": true,
+            "height": 156.625,
+            "naturalRatio": 0.7486033519553073,
+            "fit": "contain",
+            "og": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "twitter": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "schemaImage": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "overflow": false
+          },
+          {
+            "locale": "en",
+            "width": 1040,
+            "original": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "current": "http://127.0.0.1:4195/images/responsive/de21f4cb79a549eb-960.webp",
+            "loaded": true,
+            "height": 455,
+            "naturalRatio": 0.75,
+            "fit": "contain",
+            "og": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "twitter": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "schemaImage": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+            "overflow": false
+          },
+          {
+            "locale": "es",
+            "width": 358,
+            "original": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "current": "http://127.0.0.1:4195/images/responsive/f5163f1d3b6567d3-640.webp",
+            "loaded": true,
+            "height": 156.625,
+            "naturalRatio": 0.7486033519553073,
+            "fit": "contain",
+            "og": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "twitter": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "schemaImage": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "overflow": false
+          },
+          {
+            "locale": "es",
+            "width": 1040,
+            "original": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "current": "http://127.0.0.1:4195/images/responsive/f5163f1d3b6567d3-960.webp",
+            "loaded": true,
+            "height": 455,
+            "naturalRatio": 0.75,
+            "fit": "contain",
+            "og": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "twitter": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "schemaImage": "https://ziabary.ir/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+            "overflow": false
+          }
+        ],
+        "runtimeExceptions": 0
+      },
+      "thumbnailAlignment": "Existing coverPosition metadata: center top; honored by article cards and LLM chapter thumbnails."
+    }
+  },
+  "publication": {
+    "status": "local-active",
+    "articleDraft": false,
+    "preview": "http://127.0.0.1:4195/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/",
+    "remoteDeploymentPerformed": false,
+    "remotePublicationAuthorized": false,
+    "note": "User explicitly requested local activation. This article and calculator have not been deployed to ziabary.ir; obtain remote-publication authorization before including the local-active article in a later production deployment.",
+    "previews": {
+      "fa": {
+        "article": "http://127.0.0.1:4195/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/",
+        "guide": "http://127.0.0.1:4195/guides/llm/#serving-capacity-planner"
+      },
+      "en": {
+        "article": "http://127.0.0.1:4195/en/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/",
+        "guide": "http://127.0.0.1:4195/en/guides/llm/#serving-capacity-planner"
+      },
+      "es": {
+        "article": "http://127.0.0.1:4195/es/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/",
+        "guide": "http://127.0.0.1:4195/es/guides/llm/#serving-capacity-planner"
+      }
+    }
+  },
+  "articleSlugsByLocale": {
+    "fa": "what-does-100-concurrent-users-mean-for-an-ai-assistant",
+    "en": "what-does-100-concurrent-users-mean-for-an-ai-assistant-en",
+    "es": "what-does-100-concurrent-users-mean-for-an-ai-assistant-es"
+  },
+  "covers": [
+    {
+      "locale": "fa",
+      "source": "/home/user/Downloads/Persian.png",
+      "cover": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/cover.png",
+      "sha256": "e3b462de464735fba6e55e498c4c442f124fd7255cba7c652f0c05f1df13fafc",
+      "originalPreserved": true
+    },
+    {
+      "locale": "en",
+      "source": "/home/user/Downloads/English.png",
+      "cover": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-en/cover.png",
+      "sha256": "e032255b955f8b980d9c1c3d30f25eef4c63c25380f1078ff08ec6779d1ef630",
+      "originalPreserved": true
+    },
+    {
+      "locale": "es",
+      "source": "/home/user/Downloads/Spanish.png",
+      "cover": "/images/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant-es/cover.png",
+      "sha256": "146cb1828437e69453482514536b61face2e6296ded1ebdec9cae32d5fd7d32d",
+      "originalPreserved": true
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "zavieh-35695",
+  "reviewedAt": "2026-10-12",
+  "source": "https://zaviehmag.ir/?p=35695",
+  "canonicalSource": "https://zaviehmag.ir/articles/%d9%88%d8%b8%d8%a7%db%8c%d9%81-%d9%88-%d9%88%db%8c%da%98%da%af%db%8c%d9%87%d8%a7%db%8c-%d9%85%d8%b7%d9%84%d9%88%d8%a8-%d8%b1%d8%a6%db%8c%d8%b3-%d8%b3%d8%a7%d8%b2%d9%85%d8%a7%d9%86-%d9%85/",
+  "metadataSource": "https://zaviehmag.ir/wp-json/wp/v2/posts/35695",
+  "sourceTitle": "وظایف و ویژگی‌های مطلوب رئیس سازمان ملی هوش مصنوعی",
+  "sourcePublishedAtLocal": "2026-10-11T17:14:56",
+  "sourcePublishedAtUtc": "2026-10-11T13:44:56",
+  "visibleAuthor": "مهران ضیابری، رئیس کمیسیون هوش مصنوعی نصر تهران",
+  "authorshipEvidence": "Visible editorial byline on the publisher page. WordPress technical author admin is not treated as the editorial author.",
+  "siteDate": "2026-10-11",
+  "siteFaDate": "۱۹ مهر ۱۴۰۵",
+  "articleSlug": "national-ai-organization-leadership-qualities",
+  "placement": [
+    "/articles/national-ai-organization-leadership-qualities/",
+    "/media/",
+    "/"
+  ],
+  "contentPolicy": "Author’s own published note follows the existing authored-article pattern; the media feed uses only its short excerpt and a source link. No duplicate mediaItems entry.",
+  "editorialChanges": [
+    "Removed the publisher prefix زاویه؛ from the opening because the attribution is stated above the article.",
+    "Corrected رایآن‌های to رایانه‌ای and کارنامه نیز او to کارنامه او نیز.",
+    "Linked the earlier note to its existing local article; retained the source link above the article."
+  ],
+  "sourceContentSha256": "51db51923f3a9147a20d573b25773c7f9692a6aab08b9d9bfb417606b639a42f",
+  "cover": {
+    "source": "https://zaviehmag.ir/wp-content/uploads/2025/05/1682.webp",
+    "path": "static/images/articles/national-ai-organization-leadership-qualities/cover.webp",
+    "width": 1224,
+    "height": 364,
+    "sha256": "4afc050ed7342e1c2adcd49382f57fe0dc94b74fa12e15a1db7d7180b654e6c9",
+    "policy": "Original publisher image, copied unchanged with visible credit.",
+    "objectPosition": "20% center; focal subject remains visible in cropped article and media frames."
+  },
+  "publication": {
+    "status": "published",
+    "date": "2026-10-12",
+    "url": "https://ziabary.ir/articles/national-ai-organization-leadership-qualities/",
+    "mediaUrl": "https://ziabary.ir/media/",
+    "deployment": {
+      "uploaded": 2019,
+      "unchanged": 3651,
+      "deleted": 0
+    },
+    "liveHtmlAndOriginalImageMatchBuild": true
+  },
+  "changedFiles": [
+    "src/lib/content/articles/national-ai-organization-leadership-qualities.md",
+    "static/images/articles/national-ai-organization-leadership-qualities/cover.webp",
+    "src/lib/content.ts",
+    "src/lib/components/ArticleCard.svelte",
+    "src/lib/components/ArticlePage.svelte",
+    "src/lib/components/MediaEntry.svelte",
+    "src/lib/media-publications.mjs",
+    "docs/content-reviews/zavieh-35695-2026-10-12.json",
+    "src/lib/news.ts",
+    "src/routes/+page.svelte"
+  ],
+  "validation": {
+    "check": {
+      "errors": 0,
+      "warnings": 0,
+      "finalSourceRechecked": true
+    },
+    "relatedTestsPassed": 8,
+    "build": "passed",
+    "sitemapUrls": 255,
+    "jsonLdBlocks": 264,
+    "uniqueArticleAndMediaEntry": true,
+    "originalImagePreserved": true,
+    "earlierDraftRemainsUnpublished": true,
+    "browser": {
+      "localScenariosPassed": 7,
+      "widths": [
+        320,
+        390,
+        1280
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "horizontalOverflow": false,
+      "runtimeExceptions": 0,
+      "sourceAndLocalEarlierNoteLinksVerified": true,
+      "focalPositionVerifiedInArticleAndCards": true,
+      "liveScenariosPassed": 7
+    }
+  }
+}

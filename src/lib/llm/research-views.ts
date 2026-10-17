@@ -43,6 +43,8 @@ const quantLabel = (value: string) => value.replace('publisher checkpoint defaul
   .replace('backend-appropriate checkpoint/quantization', t('research-views.0670'))
   .replace('16-bit; FP16/BF16 not distinguished in report', t('research-views.0671'));
 const performanceGroups: Record<string, { label: string; note: string }> = {
+  'qwen38-b70-regression': { label: t('runtime1010.qwen.label'), note: t('runtime1010.qwen.note') },
+  'sycl-mxfp4-b70-windows': { label: t('runtime1010.sycl.label'), note: t('runtime1010.sycl.note') },
   'liquid-dspark-vl': { label: 'LiquidAI · DSpark · 2026-09-24', note: t('sep26.performance-note') },
   'gpustack-qwen14-h100-sharegpt': { label: 'Qwen3-14B · H100 · GPUStack', note: t('research-views.0672') },
   'gpustack-qwen32-h100-sharegpt': { label: 'Qwen3-32B · H100 · GPUStack', note: t('research-views.0673') },
@@ -53,6 +55,7 @@ const performanceGroups: Record<string, { label: string; note: string }> = {
   'main-horse-gpt-fast-synthetic': { label: t('research-views.0682'), note: t('research-views.0683') }
 };
 const performanceMetrics: Record<string, { label: string; unit: string }> = {
+  prefillTokensPerSecond: { label: t('runtime1010.prefill'), unit: 'input-token/s' },
   endToEndSpeedup: { label: t('sep26.speedup'), unit: '×' },
   outputTokensPerSecond: { label: t('research-views.0684'), unit: 'output-token/s/aggregate' },
   prefill512TokensPerSecond: { label: t('research-views.0686'), unit: 'input-token/s' },
@@ -116,7 +119,11 @@ function memoryRows(repository: LlmGuideRepository, controls: ResearchControls):
     result.matrixCells = {};
     if (cpu) for (const ram of controls.ram) result.matrixCells[`ram-${ram}`] = fitCell(plan.budgetGiB, ram, 1, result.sourceIds);
     else for (const device of research.hardware.filter(item => controls.hardwareIds.includes(item.id))) {
-      const targetPlan = calculateMemory(artifact, controls.context, controls.active, device.gpuCount)!;
+      const targetPlan = calculateMemory(artifact, controls.context, controls.active, device.gpuCount);
+      if (!targetPlan) {
+        result.matrixCells[device.id] = { state: 'unknown' };
+        continue;
+      }
       const cell = fitCell(targetPlan.budgetGiB, device.nominalAggregateVramGB, device.gpuCount, [...result.sourceIds, ...evidenceIds(device.sourceIds)]);
       cell.details?.push({ label: t('research-views.0739'), value: textValue(`${device.architecture} · ${device.interconnect}`) });
       result.matrixCells[device.id] = cell;
@@ -160,7 +167,7 @@ function compatibilityRows(repository: LlmGuideRepository, kernels = false): Llm
     const route = profile?.runGuides.find(guide => guide.engine === item.engine);
     const condition = [...new Set([...(item.conditionsFa ?? []), ...(route?.conditions ?? []), ...(run && runConfiguration(run) ? [runConfiguration(run)] : [])])].join(t('research-views.0757'));
     result.sourceIds = [...new Set([...result.sourceIds, ...(route?.evidenceIds ?? [])])];
-    result.cells = { ...result.cells, engine: engine ? textValue([engine, item.engineVersion].filter(Boolean).join(' '), { brandId: engine }) : missing, format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: /Apple/.test(item.hardwareLabel) ? 'apple' : 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
+    result.cells = { ...result.cells, engine: engine ? textValue([engine, item.engineVersion].filter(Boolean).join(' '), { brandId: engine }) : missing, format: textValue(quantLabel(item.weightFormat)), status: textValue(status), condition: condition ? textValue(condition) : { state: 'unknown' }, hardware: item.hardwareLabel ? textValue(`${faNumber(item.gpuCount ?? 1)} × ${item.hardwareLabel}`, { brandId: /Intel/.test(item.hardwareLabel) ? 'intel' : /Apple/.test(item.hardwareLabel) ? 'apple' : 'nvidia' }) : textValue(item.userSummaryFa), source: source(item.sourceIds) };
     result.facets = { engine: engine ? textValue(engine) : missing, task: textValue(item.task ?? 'generation'), format: textValue(item.artifactId ? 'GGUF' : item.weightFormat.includes('safetensors') ? 'safetensors' : 'checkpoint'), status: textValue(item.status), deployment: textValue(item.engine === 'llama.cpp' || item.engine === 'Ollama' ? 'local' : 'service') };
     result.details = { scope: textValue(item.userSummaryFa), condition: condition ? textValue(condition) : { state: 'unknown' }, ...(run?.servingCommandAsPublished ? { command: textValue(run.servingCommandAsPublished, { copyText: run.servingCommandAsPublished }) } : {}) };
     result.searchText += ` ${item.engine} ${item.weightFormat} ${item.hardwareLabel ?? ''}`; return result;
@@ -170,13 +177,13 @@ function compatibilityRows(repository: LlmGuideRepository, kernels = false): Llm
   for (const profile of repository.modelProfiles) {
     const model = repository.models.find(model => model.id === profile.modelVersionId)!;
     for (const guide of profile.runGuides) {
-      if (!approved.has(guide.engine) || existing.some(item => item.modelId === model.id && (item.facets.engine as Known)?.display.toLowerCase() === guide.engine.toLowerCase())) continue;
-      const result = row(repository, `route:${model.id}:${guide.engine}`, model.exactName, model.aliases?.[0], []);
+      if (!approved.has(guide.engine) || !guide.hardwareTarget && existing.some(item => item.modelId === model.id && (item.facets.engine as Known)?.display.toLowerCase() === guide.engine.toLowerCase())) continue;
+      const result = row(repository, `route:${model.id}:${guide.engine}${guide.hardwareTarget ? ':' + guide.hardwareTarget : ''}`, model.exactName, model.aliases?.[0], []);
       const local = ['Ollama','llama.cpp','MLX LM'].includes(guide.engine);
-      const task = model.kind === 'embedding' ? 'embedding' : model.kind === 'reranker' ? 'reranking' : model.kind === 'encoder-classifier' ? 'classification' : 'generation';
+      const task = model.kind === 'embedding' ? 'embedding' : model.kind === 'reranker' ? 'reranking' : ['encoder-classifier','decision'].includes(model.kind) ? 'classification' : 'generation';
       const format = guide.engine === 'Ollama' ? 'Ollama package' : guide.engine === 'llama.cpp' ? 'GGUF' : guide.engine === 'MLX LM' ? 'MLX 4-bit safetensors' : 'checkpoint';
       result.sourceIds = guide.evidenceIds;
-      result.cells = { ...result.cells, engine: textValue(guide.engine, { brandId: guide.engine }), format: textValue(format), status: textValue(t('research-views.0756')), condition: guide.conditions.length ? textValue(guide.conditions.join(t('research-views.0757'))) : { state: 'unknown' }, hardware: guide.instructions ? textValue(guide.instructions) : { state: 'unknown' }, source: textValue(t('research-views.0758'), { href: guide.href }) };
+      result.cells = { ...result.cells, engine: textValue(guide.engineLabel ?? guide.engine, { brandId: guide.engine }), format: textValue(format), status: textValue(t('research-views.0756')), condition: guide.conditions.length ? textValue(guide.conditions.join(t('research-views.0757'))) : { state: 'unknown' }, hardware: guide.instructions ? textValue(guide.instructions) : { state: 'unknown' }, source: textValue(t('research-views.0758'), { href: guide.href }) };
       result.facets = { engine: textValue(guide.engine), task: textValue(task), format: textValue(format), status: textValue('documented-route'), deployment: textValue(local ? 'local' : 'service') };
       result.details = { ...(guide.instructions ? { scope: textValue(guide.instructions) } : {}), ...(guide.conditions.length ? { condition: textValue(guide.conditions.join(t('research-views.0757'))) } : {}), ...(guide.code ? { command: textValue(guide.code, { copyText: guide.code }) } : {}) };
       result.searchText += ` ${guide.engine} ${format} ${task}`;
@@ -197,7 +204,7 @@ function performanceRows(repository: LlmGuideRepository, group: string, metric: 
     const result = row(repository, item.id, item.modelRepository?.split('/')[1] ?? item.modelLabel ?? '', item.modelRepository, item.sourceIds);
     result.sortGroup = `${item.publicationGroup}:${metric}`;
     if (metric === 'endToEndSpeedup') result.cells.model = textValue(`${result.label} · ${item.protocol.dataset}`);
-    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion ?? item.engineRevision].filter(Boolean).join(' '), { brandId: item.engine }), hardware: textValue(`${faNumber(item.gpuCount)} × ${item.hardwareLabel}`, { brandId: /Apple/.test(item.hardwareLabel) ? 'apple' : 'nvidia' }), metric: textValue(definition.label), value: number(item.metrics[metric], definition.unit), ttft: item.metrics.meanTtftMs !== undefined ? number(item.metrics.meanTtftMs / 1000, 's') : missing, format: textValue(quantLabel(item.weightFormat)), configuration: runConfiguration(item) ? textValue(runConfiguration(item)) : missing, conditions: textValue(performanceGroups[item.publicationGroup].note), source: source(item.sourceIds) };
+    result.cells = { ...result.cells, engine: textValue([item.engine, item.engineVersion ?? item.engineRevision].filter(Boolean).join(' '), { brandId: item.engine }), hardware: textValue(`${faNumber(item.gpuCount)} × ${item.hardwareLabel}`, { brandId: /Intel/.test(item.hardwareLabel) ? 'intel' : /Apple/.test(item.hardwareLabel) ? 'apple' : 'nvidia' }), metric: textValue(definition.label), value: number(item.metrics[metric], definition.unit), ttft: item.metrics.meanTtftMs !== undefined ? number(item.metrics.meanTtftMs / 1000, 's') : missing, format: textValue(quantLabel(item.weightFormat)), configuration: runConfiguration(item) ? textValue(runConfiguration(item)) : missing, conditions: textValue(performanceGroups[item.publicationGroup].note), source: source(item.sourceIds) };
     result.facets = { engine: textValue(item.engine), format: textValue(item.weightFormat), hardware: textValue(item.hardwareLabel) };
     result.details = { group: textValue(performanceGroups[item.publicationGroup].label), scope: textValue(performanceGroups[item.publicationGroup].note), ...(item.servingCommandAsPublished ? { command: textValue(item.servingCommandAsPublished, { copyText: item.servingCommandAsPublished }) } : {}), ...(item.sourceLocator ? { locator: textValue(item.sourceLocator) } : {}), ...(item.engineRevisionUrl ? { revision: textValue(item.engineRevision ?? t('research-views.0761'), { href: item.engineRevisionUrl }) } : {}) };
     result.details.protocol = textValue(Object.entries(item.protocol).map(([key, value]) => `${protocolLabels[key] ?? key}: ${typeof value === 'number' ? faNumber(value, 3) : value}`).join('\n'));

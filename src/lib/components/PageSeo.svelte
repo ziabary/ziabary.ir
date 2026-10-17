@@ -12,6 +12,7 @@
   export let publishedDate: string | undefined = undefined;
   export let updatedDate: string | undefined = undefined;
   export let articleSection: string | undefined = undefined;
+  export let mainEntity: Record<string, unknown> | undefined = undefined;
   export let noindex = false;
 
   const siteUrl = 'https://ziabary.ir';
@@ -78,7 +79,7 @@
             url: canonicalUrl,
             image: imageUrl,
             isPartOf: { '@type': 'WebSite', name: 'Mehran Ziabary', url: siteUrl },
-            about: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl }
+            ...(mainEntity ? { mainEntity } : { about: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl } })
           }
   ).replace(/</g, '\\u003c');
 </script>

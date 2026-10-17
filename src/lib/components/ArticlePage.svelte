@@ -35,7 +35,7 @@
       <div class="article-meta"><span>{article.category}</span><time datetime={article.date}>{displayedDate}</time>{#if article.updated}<time datetime={article.updated}>{locale === 'fa' ? 'بازبینی: ' : ''}{formatDate(article.updated, locale)}</time>{/if}<span>{article.readTime}</span></div>
       <h1>{article.title}</h1><p>{article.excerpt}</p>
     </header>
-    {#if article.cover}<figure class="article-cover has-image"><img {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt={article.title} fetchpriority="high" />{#if article.coverCredit}<figcaption>{article.coverCredit}</figcaption>{/if}</figure>{/if}
+    {#if article.cover}<figure class="article-cover has-image"><img {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} style:object-position={article.coverPosition ?? 'center'} alt={article.title} fetchpriority="high" />{#if article.coverCredit}<figcaption>{article.coverCredit}</figcaption>{/if}</figure>{/if}
     <div class="article-reading-layout" class:with-toc={hasToc} use:readingPosition={{ ids: headingIds, onChange: followHeading }}>
       {#if hasToc}<ArticleToc {headings} {locale} bind:active={activeHeading} />{/if}
       <div class="prose article-body">

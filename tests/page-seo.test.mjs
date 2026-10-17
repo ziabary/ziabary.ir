@@ -50,6 +50,19 @@ test('home SSR emits the Person, WebSite and WebPage graph', () => {
   assert.deepEqual(data['@graph'].map(node => node['@type']), ['Person', 'WebSite', 'WebPage']);
 });
 
+test('a presentation remains the main entity without assigning the website owner as its subject', () => {
+  const mainEntity = {
+    '@type': 'PresentationDigitalDocument', name: 'The Firm Trapped by Good Decisions',
+    author: [{ '@type': 'Person', name: 'Farhad Nili' }, { '@type': 'Person', name: 'Mehran Ziabary' }],
+    contributor: { '@type': 'Role', roleName: 'Presenter', contributor: { '@type': 'Person', name: 'Farhad Nili' } },
+    abstract: 'Notes with </script><script id="injected">alert(1)</script>'
+  };
+  const { data, head } = seo({ path: '/slides/the-firm-trapped-by-good-decisions/', mainEntity });
+  assert.deepEqual(data.mainEntity, mainEntity);
+  assert.ok(!('about' in data));
+  assert.ok(!head.includes('<script id="injected">'));
+});
+
 test('quotes, Persian text and closing script strings round-trip without HTML injection', () => {
   const description = 'توضیح "آزمون" </script><script id="injected">alert(1)</script> & <!--';
   const { head, data } = seo({ description });

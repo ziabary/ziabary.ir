@@ -23,6 +23,10 @@
   import LlmResearchView from './LlmResearchView.svelte';
   import LlmScoreSelector from './LlmScoreSelector.svelte';
   import { readScoreScope } from '$lib/llm/score-scope';
+  import ServingCapacityPlanner from './ServingCapacityPlanner.svelte';
+  import { servingCapacityCopy } from '$lib/llm/serving-capacity-copy';
+  const capacityCopy = servingCapacityCopy[locale];
+  const capacityArticleSlug = llmTopicSlug('what-does-100-concurrent-users-mean-for-an-ai-assistant', locale)!;
   import LlmOrganizationWizard from './LlmOrganizationWizard.svelte';
   import LlmTaskStartingPoints from './LlmTaskStartingPoints.svelte';
   import { createLlmResearch } from '$lib/llm/research';
@@ -63,7 +67,7 @@
   $: if (browser && includeDrafts && chapterArticles.length) void tick().then(() => {
     try { void revealChapter(decodeURIComponent(window.location.hash.slice(1))); } catch { /* Ignore malformed fragments. */ }
   });
-  $: targetIds = ['start', 'llm-starting-plan', ...llmGuideSections.map(section => section.id), 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
+  $: targetIds = ['start', 'llm-starting-plan', ...llmGuideSections.map(section => section.id), 'serving-capacity-planner', 'llm-notes', ...chapterArticles.flatMap(article => [article.slug, ...(article.headings ?? []).map(h => `${article.slug}--${h.id}`)])];
   $: activeChapter = chapterArticles.find(article => activeTarget === article.slug || activeTarget.startsWith(`${article.slug}--`));
   const llmRepository = enrichResearchRepository(localizeLlmRepository(baseRepository, i18n));
   $: targetLanguage = ['all','fa','en','es','ar','de','fr','zh'].includes(routeParams.get('target-language') ?? '') ? routeParams.get('target-language')! : llmEditionPolicy[locale].targetLanguage;
@@ -239,6 +243,10 @@
             <LlmDataView config={enrichExistingConfig(modelUseViewConfig(matrixMode))} evidence={llmRepository.evidence} rows={matrixMode ? matrixRows : llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel}>{#snippet controlsContent()}<LlmScoreSelector results={llmRepository.publishedEvaluations} /><LlmTaskStartingPoints {targetLanguage} repository={llmRepository} onOpenModel={openModel} />{/snippet}</LlmDataView>
           {:else if ['hardware-feasibility', 'benchmarks'].includes(config.id)}
             <LlmResearchView repository={llmRepository} id={config.id} presetId={activeView === config.id ? activePreset : ''} onOpenModel={openModel} />
+            {#if config.id === 'hardware-feasibility'}
+              <p class="capacity-reading">{capacityCopy.guideIntro} <a href={`#${capacityArticleSlug}`} onclick={() => revealChapter(capacityArticleSlug)}>{capacityCopy.articleLink}</a></p>
+              <ServingCapacityPlanner {locale} />
+            {/if}
           {:else}
             <LlmDataView onOpenModel={openModel} {config} evidence={llmRepository.evidence} rows={llmViewRows[config.id]} presetId={activeView === config.id ? activePreset : ''}>{#snippet controlsContent()}<LlmScoreSelector results={llmRepository.publishedEvaluations} />{/snippet}</LlmDataView>
           {/if}
@@ -334,6 +342,7 @@
       {#if section.views.length > 1}<ul>{#each section.views as view}<li><a class:active={activeTarget === section.id && activeSoftwareView === view.id} href={sectionHref(view.id, section.id)}>{view.shortTitle}</a></li>{/each}</ul>{/if}</li>
     {/each}</ol>
   </details>
+  <a href="#serving-capacity-planner" aria-current={activeTarget === 'serving-capacity-planner' ? 'location' : undefined}>{capacityCopy.title}</a>
   <details class="toc-group" open>
     <summary>{t('LlmGuidePage.1055')} <span>{numbers.format(chapterArticles.length)}</span></summary>
     <ol>{#each chapterArticles as article, index}
@@ -353,6 +362,7 @@
 {/snippet}
 
 <style>
+  .capacity-reading{margin:24px 0 0;font-size:14px;line-height:1.9}.capacity-reading a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
   .hardware-path{max-width:1280px;width:calc(100% - 32px);margin:20px auto;font-size:15px;line-height:1.9}.hardware-path a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
   .benchmark-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:8px;font-size:12px}.copy-selection{font:inherit;border:0;background:transparent;color:var(--link-ink);padding:6px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}.copy-selection:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 

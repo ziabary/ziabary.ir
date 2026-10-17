@@ -98,6 +98,7 @@
       <figcaption>
         <div><b>{item.title}</b><time class:fa-num={locale === 'fa'} datetime={item.date}>{dateLabel(item)}</time></div>
         <p>{item.caption} <span class="caption-date" class:fa-num={locale === 'fa'}>— {dateLabel(item)}</span></p>
+        {#if item.sourceUrl}<a class="event-source" href={item.sourceUrl} target="_blank" rel="noreferrer">{locale === 'fa' ? 'اطلاعات رویداد' : locale === 'en' ? 'About the event' : 'Información del evento'} ↗</a>{/if}
       </figcaption>
     </figure>
   {/each}
@@ -130,6 +131,7 @@
       <footer>
         <div class="image-details">
           <p>{activeImage.caption ?? activeItem.caption} <span class:fa-num={locale === 'fa'}>— {dateLabel(activeItem)}</span></p>
+          {#if activeItem.sourceUrl}<a class="event-source" href={activeItem.sourceUrl} target="_blank" rel="noreferrer">{locale === 'fa' ? 'اطلاعات رویداد' : locale === 'en' ? 'About the event' : 'Información del evento'} ↗</a>{/if}
           {#if imageDimensions}
             <span class="image-dimensions" class:fa-num={locale === 'fa'}>
               {copy.original}
@@ -153,6 +155,8 @@
 {/if}
 
 <style>
+  .event-source{display:inline-block;margin-top:6px;color:var(--teal-deep);font-size:12px;text-decoration:underline;text-underline-offset:3px}
+  .lightbox .event-source{color:#9fc4c2}
   .gallery-collection{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:60px 0}
   figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
   .gallery-cover{position:relative;width:100%;padding:0;border:0;background:var(--soft);cursor:zoom-in;overflow:hidden;display:block}

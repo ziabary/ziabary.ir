@@ -1360,5 +1360,13 @@
   "sep26.performance-note": "Informe del editor, seis tareas visuales; batch=1 y temperature=0. H100/SGLang/BF16 block=9: 1.64–2.27×; M5 Max/MLX-VLM/FP16 block=8: 1.56–2.62×; M3 Ultra/llama.cpp/FP16 block=8: 1.30–1.77×. Límite de salida Apple: 2048 tokens. Es una razón de tiempos de extremo a extremo, no tok/s, TTFT ni calidad; no extrapolar a persa, RTX 4090, cuantización o concurrencia. DSpark actúa sobre la generación, sin acelerar directamente la codificación visual ni el prefill. No constan versiones exactas de motores ni revisiones de pesos evaluados; las versiones mínimas de soporte no las sustituyen.",
   "model.security-notes": "Condiciones de investigación y consideraciones de seguridad",
   "software.prerelease": "Versión preliminar",
-  "model-kind.decision": "Modelo de decisión"
+  "model-kind.decision": "Modelo de decisión",
+  "model-kind.vision-language": "Generativo de texto e imagen",
+  "model-kind.multimodal-embedding": "Modelo de embeddings multimodales",
+  "software.stableLatest": "Estable / Latest",
+  "runtime1010.qwen.label": "Qwen3.8-Flash-Next · dos B70 · recuperación de regresión",
+  "runtime1010.qwen.note": "Informe de un usuario con la misma entrada en Linux y SYCL; los valores iniciales son aproximados. Los corregidos proceden del PR #30160; b11537 incluye la corrección. Longitud de entrada y repeticiones incompletas; no es una prueba separada de MTP ni una clasificación de GPU.",
+  "runtime1010.sycl.label": "gpt-oss · B70 · SYCL MXFP4 · Windows",
+  "runtime1010.sycl.note": "Prueba original del autor del PR #29809: Windows 11, oneAPI 2026.0, EPYC 7402P y Flash Attention activado; cinco repeticiones para 20B y dos para 120B. Resultados de decodificación de la rama del PR; corrección en b11540. No extrapole a prefill, Linux u otras GPU.",
+  "runtime1010.prefill": "Procesamiento de entrada; longitud no indicada"
 }

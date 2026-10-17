@@ -2,7 +2,7 @@
   import { imageAttributes } from '$lib/images';
   import { mediaSources } from '$lib/news';
   import { externalLinkAttributes } from '$lib/external-links.mjs';
-  export let item: { title: string; source: string; kind: string; summary: string; url: string; faDate?: string; coverImage?: string | null; coverImageAlt?: string | null; internalUrl?: string };
+  export let item: { title: string; source: string; kind: string; summary: string; url: string; faDate?: string; coverImage?: string | null; coverImageAlt?: string | null; coverImagePosition?: string; internalUrl?: string };
   export let index: number;
   let expanded = false;
   const previewWordLimit = 45;
@@ -22,7 +22,7 @@
       <span><strong>{item.source}</strong><small>{item.kind} · {item.faDate ?? ''}</small></span>
     </div>
     <div class="media-entry-content">
-      {#if item.coverImage}<img class="media-cover" {...imageAttributes(item.coverImage, '180px')} alt={item.coverImageAlt ?? ''} loading="lazy" width="160" height="120" />{/if}
+      {#if item.coverImage}<img class="media-cover" {...imageAttributes(item.coverImage, '180px')} style:object-position={item.coverImagePosition ?? 'center'} alt={item.coverImageAlt ?? ''} loading="lazy" width="160" height="120" />{/if}
       <h2><a href={item.internalUrl ?? item.url} {...externalLinkAttributes(item.internalUrl ?? item.url)}>{item.title}</a></h2>
       <p id={`media-summary-${index}`} class="media-summary">{summaryStart}{' '}<span class="summary-tail">{summaryEnd}{canExpand && !expanded ? '…' : ''}{#if canExpand}{' '}<button class="summary-toggle" type="button" aria-expanded={expanded} aria-controls={`media-summary-${index}`} onclick={() => expanded = !expanded}>{expanded ? 'خلاصه‌تر' : 'ادامهٔ خلاصه'}</button>{/if}</span></p>
     </div>

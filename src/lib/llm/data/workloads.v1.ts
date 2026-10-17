@@ -966,3 +966,38 @@ workloads.push({
     "state": "not-applicable"
   }
 });
+workloads.push({
+  "id": "workload:google-embeddinggemma-2-retrieval",
+  "name": "بازیابی چندوجهی محلی؛ سناریوی ارزیابی، بدون اجرای ثبت‌شده",
+  "applicationId": "enterprise-rag",
+  "subapplicationId": "retrieval",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-applicable"
+  },
+  "contextLength": {
+    "state": "known",
+    "value": 8192,
+    "evidenceIds": [
+      "evidence:embeddinggemma-2-card"
+    ],
+    "unit": "token"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-applicable"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  }
+});

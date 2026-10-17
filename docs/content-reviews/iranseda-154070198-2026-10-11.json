@@ -1,0 +1,65 @@
+{
+  "id": "iranseda-154070198",
+  "reviewedAt": "2026-10-11",
+  "source": "http://radio.iranseda.ir/epgarchivePart/?VALID=TRUE&ch=20&e=154070198",
+  "sourceHtmlSha256": "bc492b8ac4fdac7cd0aee2d72b74bea88cd4fab17aba30e503c6fa1bff9d0a82",
+  "publisher": "رادیو تهران / ایران‌صدا",
+  "program": "چراغ",
+  "sourceTopic": "هوش مصنوعی-  از مدل عمومی تا مدل تخصصی؛ چرا AIهای حوزه‌ای مهم شده‌اند؟",
+  "sourceBroadcastDate": "شنبه 18 مهر 1405",
+  "sourceBroadcastTime": "21:30",
+  "siteDate": "2026-10-10",
+  "siteFaDate": "۱۸ مهر ۱۴۰۵",
+  "durationMinutes": 80,
+  "sourceCredits": "هدی فلاح (تهیه كننده و گوینده)، مهندس محمد محمدزاده ضیابری (رئیس كمیسیون هوش مصنوعی سازمان نظام صنفی رایانه‌ای) و دكتر علی گلزاده (مدیرعامل شركت دانش بنیان)",
+  "namePolicy": "Uses the professional name مهران ضیابری already established throughout this website for محمدزاده ضیابری; the publisher’s literal credit is retained here.",
+  "summaryBasis": "Publisher-provided topic, schedule and credits; audio not independently transcribed.",
+  "thumbnail": "static/images/media-covers/cheragh-104121.jpg",
+  "thumbnailCredit": "Existing original program artwork; source image uses picturebymmc-tam with chn=radio-tehran and m=104121.",
+  "placement": "/media/#videos",
+  "changes": [
+    "Added this radio episode with its original broadcast date, existing program artwork and direct source link."
+  ],
+  "publication": {
+    "status": "published",
+    "date": "2026-10-11",
+    "url": "https://ziabary.ir/media/#videos",
+    "deployment": {
+      "uploaded": 1632,
+      "unchanged": 4024,
+      "deleted": 0
+    },
+    "liveHtmlAndBundleMatchBuild": true,
+    "clientBundle": "/_app/immutable/nodes/37.B8h9PTR5.js"
+  },
+  "validation": {
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "sitemapUrls": 254,
+    "jsonLdBlocks": 263,
+    "uniqueEpisode": true,
+    "originalEntriesPreserved": true,
+    "broadcastDateVerified": true,
+    "browser": {
+      "localScenariosPassed": 3,
+      "liveScenariosPassed": 3,
+      "widths": [
+        320,
+        390,
+        1280
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "rtl": true,
+      "horizontalOverflow": false,
+      "runtimeExceptions": 0,
+      "thumbnailLoaded": true,
+      "sourceLinkVerified": true
+    }
+  }
+}

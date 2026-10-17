@@ -15,6 +15,7 @@ export type GalleryItem = {
   caption: string;
   date: string;
   faDate: string;
+  sourceUrl?: string;
   images: GalleryImage[];
   translations?: Partial<Record<Exclude<GalleryLocale, 'fa'>, {
     title?: string;
@@ -22,6 +23,27 @@ export type GalleryItem = {
   }>>;
 };
 const galleryEntries: GalleryItem[] = [
+  {
+    id: 'peivast-night-12',
+    title: 'دوازدهمین میهمانی شب پیوست',
+    caption: 'عکس‌های یادگاری از دوازدهمین میهمانی شب پیوست؛ دورهمی مدیران و فعالان ارتباطات و فناوری اطلاعات.',
+    // Event day is unconfirmed; this explicitly labels the publication date.
+    date: '2026-10-14',
+    faDate: 'انتشار تصاویر: ۲۲ مهر ۱۴۰۵',
+    sourceUrl: 'https://peivast.com/shabe-peivast/',
+    images: [
+      {
+        src: '/images/gallery/peivast-night-12-portrait.jpg',
+        alt: 'عکس یادگاری تک‌نفره مقابل نشان دوازدهمین میهمانی شب پیوست',
+        caption: 'دوازدهمین میهمانی شب پیوست؛ عکس یادگاری در محل مراسم.'
+      },
+      {
+        src: '/images/gallery/peivast-night-12-souvenir.jpg',
+        alt: 'عکس یادگاری دونفره مقابل نشان دوازدهمین میهمانی شب پیوست',
+        caption: 'عکس یادگاری دونفره در دوازدهمین میهمانی شب پیوست.'
+      }
+    ]
+  },
   // Event date and programme: https://www.zhaket.com/events/vision2026/
   {
     id: 'vision-2026',
@@ -1849,6 +1871,7 @@ export function localizeGallery(items: GalleryItem[], locale: GalleryLocale): Ga
       id: item.id,
       date: item.date,
       faDate: item.faDate,
+      ...(item.sourceUrl ? { sourceUrl: item.sourceUrl } : {}),
       title: translation?.title?.trim() || images[0].caption,
       caption: translation?.caption?.trim() || images[0].caption,
       images

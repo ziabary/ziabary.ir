@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-07",
+  "source_article": "src/lib/content/articles/ascend-vs-nvidia-real-performance-gap.md",
+  "publication_date": "2026-10-07",
+  "image_generation_mode": "Built-in image_gen; text-localization edits",
+  "reference_image": "static/images/articles/ascend-vs-nvidia-real-performance-gap/cover.png",
+  "localized_covers": {
+    "en": "static/images/articles/ascend-vs-nvidia-real-performance-gap-en/cover.png",
+    "es": "static/images/articles/ascend-vs-nvidia-real-performance-gap-es/cover.png"
+  },
+  "prompts": {
+    "en": "Use case: text-localization. Edit target: the attached published article cover. Preserve the exact landscape composition, dark blue grid, two server racks, three center bars, brand logos, 950DT and H200 labels, percentages 43%, 83%, 87%, and all hardware/software names. This is a localization only, with crisp readable typography. Keep the full image uncropped and the same aspect ratio. Do not invent performance data. All generic editorial text must be in the requested language; product names and technical abbreviations remain unchanged. Target language: English. Replace the Persian top headline with the exact English headline \"The gap is not a single number\". Keep the existing English subtitle and all remaining English labels exactly as in the source: \"Compute ≠ Memory Bandwidth ≠ Interconnect ≠ Software\", \"BF16 COMPUTE ≈ 43%\", \"MEMORY BW ≈ 83%\", \"LOCAL LINK ≈ 87%\", \"950DT relative to H200\", \"SOFTWARE STACK\", \"CANN / TorchNPU / vLLM Ascend\", \"No single valid percentage\", \"Same workload • Same SLA • Same benchmark\". Preserve all footer branding including ZIABARY.IR. No Persian text may remain.",
+    "es": "Use case: text-localization. Edit target: the attached published article cover. Preserve the exact landscape composition, dark blue grid, two server racks, three center bars, brand logos, 950DT and H200 labels, percentages 43%, 83%, 87%, and all hardware/software names. This is a localization only, with crisp readable typography. Keep the full image uncropped and the same aspect ratio. Do not invent performance data. All generic editorial text must be in the requested language; product names and technical abbreviations remain unchanged. Target language: Spanish. Replace the top Persian headline with exactly \"La brecha no es un solo número\". Translate all generic English copy using exactly these labels: subtitle \"Cálculo ≠ Ancho de banda de memoria ≠ Interconexión ≠ Software\"; center heading \"frente a H200\"; first metric \"CÁLCULO BF16 ≈ 43%\"; second metric \"ANCHO DE BANDA ≈ 83%\"; third metric \"ENLACE LOCAL ≈ 87%\"; under each bar \"950DT respecto a H200\"; software heading \"PILA DE SOFTWARE\"; keep \"CANN / TorchNPU / vLLM Ascend\"; software caveat \"No existe un porcentaje único\"; top right tag \"B300 → NUEVA GENERACIÓN\"; bottom rule \"Misma carga • Mismo SLA • Misma prueba\"; bottom-left branding \"INFRAESTRUCTURA DE IA\" and \"UNA VISIÓN MÁS AMPLIA\"; bottom-center \"IMPARCIAL • TÉCNICO • BASADO EN DATOS\"; bottom right keep \"ZIABARY.IR\" and replace tagline with \"MÁS PROFUNDIDAD. MÁS CLARIDAD.\" Preserve every product label and hardware/software name in the racks and bottom rack lists. Fit the longer Spanish subtitle without truncation, using slightly smaller font if necessary. No Persian or generic English editorial words may remain."
+  },
+  "editorial_adaptation": [
+    "Removed Iran-specific policy, procurement and market framing.",
+    "Removed references to untranslated policy and AI-application articles.",
+    "Retained technical LLM scope, equations, benchmark conditions and hardware caveats.",
+    "Internal technical references point to published editions in the same language."
+  ]
+}

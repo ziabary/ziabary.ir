@@ -1,16 +1,19 @@
 ---
 title: 'دقت ۹۵ درصد برای کارخانه چه معنایی دارد؟'
 slug: what-does-95-percent-accuracy-mean-for-a-factory
+translationGroup: what-does-95-percent-accuracy-mean-for-a-factory
 lang: fa
-date: '2026-10-03'
-faDate: '۱۱ مهر ۱۴۰۵'
+date: '2026-10-10'
+faDate: '۱۸ مهر ۱۴۰۵'
 category: هوش مصنوعی صنعتی
 excerpt: 'دو سامانه می‌توانند دقت ۹۵ درصد داشته باشند و برای کارخانه نتایج کاملاً متفاوتی بسازند. چگونه عدد دقت را به هزینه خطا و معیار پذیرش تبدیل کنیم؟'
 readTime: '۱۳ دقیقه'
+cover: /images/articles/what-does-95-percent-accuracy-mean-for-a-factory/cover.png
+coverCredit: 'تصویر مفهومی ساخته‌شده با هوش مصنوعی؛ نمایندهٔ یک کارخانهٔ واقعی نیست.'
 author: مهران ضیابری
 toc: auto
 related: []
-draft: true
+draft: false
 ---
 
 تأمین‌کننده در جلسه می‌گوید: «سامانه تشخیص عیب ما به دقت ۹۵ درصد رسیده است.» عدد امیدوارکننده‌ای است. مدیر تولید به کاهش ضایعات فکر می‌کند، مدیر مالی به بازگشت سرمایه و واحد خرید به عبارتی که می‌توان در قرارداد نوشت.

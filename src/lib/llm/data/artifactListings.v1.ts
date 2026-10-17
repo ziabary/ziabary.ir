@@ -31722,3 +31722,1240 @@ artifactListings.push({
     "evidence:zai-glm-5-3-flash-card"
   ]
 });
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-0-9b-bf16",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "baseModelRepository": "IFM/K2-Horizon-0.9B",
+  "baseRevision": "383cb66347be4d361138e8157c2f8779b7440752",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "0.9B BF16",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-0.9B",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-0.9B/tree/383cb66347be4d361138e8157c2f8779b7440752",
+  "repositoryRevision": "383cb66347be4d361138e8157c2f8779b7440752",
+  "files": [
+    {
+      "path": "model-00000-of-00001.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-0.9B/resolve/383cb66347be4d361138e8157c2f8779b7440752/model-00000-of-00001.safetensors",
+      "bytes": 2156600968
+    }
+  ],
+  "totalBytes": 2156600968,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-metadata"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "SGLang"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-0-9b-q4-k-m",
+  "modelVersionId": "model:ifm-k2-horizon-0-9b",
+  "baseModelRepository": "IFM/K2-Horizon-0.9B",
+  "baseRevision": "383cb66347be4d361138e8157c2f8779b7440752",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF/tree/7833762821bbeeaf6f0e7519af8b0599b7056807",
+  "repositoryRevision": "7833762821bbeeaf6f0e7519af8b0599b7056807",
+  "files": [
+    {
+      "path": "K2-Horizon-1B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF/resolve/7833762821bbeeaf6f0e7519af8b0599b7056807/K2-Horizon-1B-Q4_K_M.gguf",
+      "bytes": 666184064
+    }
+  ],
+  "totalBytes": 666184064,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-0-9b-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-3-7b-bf16",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "baseModelRepository": "IFM/K2-Horizon-3.7B",
+  "baseRevision": "d6e5432c59637093c0e125e791d89ea4a0b53559",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "3.7B BF16",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-3.7B",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-3.7B/tree/d6e5432c59637093c0e125e791d89ea4a0b53559",
+  "repositoryRevision": "d6e5432c59637093c0e125e791d89ea4a0b53559",
+  "files": [
+    {
+      "path": "model-00001-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00001-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00002-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00002-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00003-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00003-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00004-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00004-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00005-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00005-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00006-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00006-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00007-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00007-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00008-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00008-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00009-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00009-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00010-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00010-of-00036.safetensors",
+      "bytes": 209726624
+    },
+    {
+      "path": "model-00011-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00011-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00012-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00012-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00013-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00013-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00014-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00014-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00015-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00015-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00016-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00016-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00017-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00017-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00018-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00018-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00019-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00019-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00020-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00020-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00021-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00021-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00022-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00022-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00023-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00023-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00024-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00024-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00025-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00025-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00026-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00026-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00027-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00027-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00028-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00028-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00029-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00029-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00030-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00030-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00031-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00031-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00032-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00032-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00033-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00033-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00034-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00034-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00035-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00035-of-00036.safetensors",
+      "bytes": 209726640
+    },
+    {
+      "path": "model-00036-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B/resolve/d6e5432c59637093c0e125e791d89ea4a0b53559/model-00036-of-00036.safetensors",
+      "bytes": 2776121840
+    }
+  ],
+  "totalBytes": 10116554080,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-metadata"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "SGLang"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-3-7b-q4-k-m",
+  "modelVersionId": "model:ifm-k2-horizon-3-7b",
+  "baseModelRepository": "IFM/K2-Horizon-3.7B",
+  "baseRevision": "d6e5432c59637093c0e125e791d89ea4a0b53559",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF/tree/1751cb49e31823f4401fc1d195db8a2c61a79783",
+  "repositoryRevision": "1751cb49e31823f4401fc1d195db8a2c61a79783",
+  "files": [
+    {
+      "path": "K2-Horizon-4B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF/resolve/1751cb49e31823f4401fc1d195db8a2c61a79783/K2-Horizon-4B-Q4_K_M.gguf",
+      "bytes": 3156598144
+    }
+  ],
+  "totalBytes": 3156598144,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-3-7b-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-7b-bf16",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "baseModelRepository": "IFM/K2-Horizon-7B",
+  "baseRevision": "3b6ae394c1b863c27a306d168b25555837955192",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "7B BF16",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-7B",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-7B/tree/3b6ae394c1b863c27a306d168b25555837955192",
+  "repositoryRevision": "3b6ae394c1b863c27a306d168b25555837955192",
+  "files": [
+    {
+      "path": "model-00001-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00001-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00002-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00002-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00003-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00003-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00004-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00004-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00005-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00005-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00006-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00006-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00007-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00007-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00008-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00008-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00009-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00009-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00010-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00010-of-00036.safetensors",
+      "bytes": 385893544
+    },
+    {
+      "path": "model-00011-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00011-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00012-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00012-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00013-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00013-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00014-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00014-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00015-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00015-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00016-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00016-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00017-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00017-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00018-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00018-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00019-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00019-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00020-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00020-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00021-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00021-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00022-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00022-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00023-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00023-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00024-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00024-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00025-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00025-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00026-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00026-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00027-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00027-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00028-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00028-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00029-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00029-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00030-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00030-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00031-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00031-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00032-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00032-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00033-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00033-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00034-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00034-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00035-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00035-of-00036.safetensors",
+      "bytes": 385893552
+    },
+    {
+      "path": "model-00036-of-00036.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B/resolve/3b6ae394c1b863c27a306d168b25555837955192/model-00036-of-00036.safetensors",
+      "bytes": 4492125680
+    }
+  ],
+  "totalBytes": 17998399920,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-metadata"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "SGLang"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-7b-q4-k-m",
+  "modelVersionId": "model:ifm-k2-horizon-7b",
+  "baseModelRepository": "IFM/K2-Horizon-7B",
+  "baseRevision": "3b6ae394c1b863c27a306d168b25555837955192",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "repositoryRevision": "9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "files": [
+    {
+      "path": "K2-Horizon-7B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF/resolve/9fb01f7b397994455262f4b8256e4e00e4949ea9/K2-Horizon-7B-Q4_K_M.gguf",
+      "bytes": 5592217984
+    }
+  ],
+  "totalBytes": 5592217984,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-7b-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-32b-bf16",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "baseModelRepository": "IFM/K2-Horizon-32B",
+  "baseRevision": "7eb3d2dceccb27bad4f97d76ce92e7431b3f786a",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "32B BF16",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-32B",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-32B/tree/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a",
+  "repositoryRevision": "7eb3d2dceccb27bad4f97d76ce92e7431b3f786a",
+  "files": [
+    {
+      "path": "model-00001-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00001-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00002-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00002-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00003-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00003-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00004-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00004-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00005-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00005-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00006-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00006-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00007-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00007-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00008-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00008-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00009-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00009-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00010-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00010-of-00064.safetensors",
+      "bytes": 1006654696
+    },
+    {
+      "path": "model-00011-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00011-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00012-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00012-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00013-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00013-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00014-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00014-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00015-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00015-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00016-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00016-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00017-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00017-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00018-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00018-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00019-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00019-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00020-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00020-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00021-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00021-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00022-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00022-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00023-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00023-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00024-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00024-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00025-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00025-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00026-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00026-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00027-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00027-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00028-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00028-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00029-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00029-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00030-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00030-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00031-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00031-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00032-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00032-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00033-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00033-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00034-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00034-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00035-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00035-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00036-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00036-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00037-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00037-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00038-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00038-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00039-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00039-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00040-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00040-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00041-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00041-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00042-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00042-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00043-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00043-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00044-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00044-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00045-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00045-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00046-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00046-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00047-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00047-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00048-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00048-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00049-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00049-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00050-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00050-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00051-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00051-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00052-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00052-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00053-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00053-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00054-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00054-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00055-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00055-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00056-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00056-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00057-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00057-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00058-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00058-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00059-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00059-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00060-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00060-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00061-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00061-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00062-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00062-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00063-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00063-of-00064.safetensors",
+      "bytes": 1006654704
+    },
+    {
+      "path": "model-00064-of-00064.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B/resolve/7eb3d2dceccb27bad4f97d76ce92e7431b3f786a/model-00064-of-00064.safetensors",
+      "bytes": 6139444784
+    }
+  ],
+  "totalBytes": 69558691056,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-metadata"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "SGLang"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-32b-q4-k-m",
+  "modelVersionId": "model:ifm-k2-horizon-32b",
+  "baseModelRepository": "IFM/K2-Horizon-32B",
+  "baseRevision": "7eb3d2dceccb27bad4f97d76ce92e7431b3f786a",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF/tree/e9cf2daf9fa245279aae328a545f1de7589e9b75",
+  "repositoryRevision": "e9cf2daf9fa245279aae328a545f1de7589e9b75",
+  "files": [
+    {
+      "path": "K2-Horizon-32B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF/resolve/e9cf2daf9fa245279aae328a545f1de7589e9b75/K2-Horizon-32B-Q4_K_M.gguf",
+      "bytes": 21075778656
+    }
+  ],
+  "totalBytes": 21075778656,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-32b-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-mova-36b-a4b-bf16",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "baseModelRepository": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "baseRevision": "cca48b6631d03c338a0e1d8beb0c392af8becbd3",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "MoVA-36B-A4B BF16",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/tree/cca48b6631d03c338a0e1d8beb0c392af8becbd3",
+  "repositoryRevision": "cca48b6631d03c338a0e1d8beb0c392af8becbd3",
+  "files": [
+    {
+      "path": "model-00001-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00001-of-00048.safetensors",
+      "bytes": 167783768
+    },
+    {
+      "path": "model-00002-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00002-of-00048.safetensors",
+      "bytes": 167783768
+    },
+    {
+      "path": "model-00003-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00003-of-00048.safetensors",
+      "bytes": 167783768
+    },
+    {
+      "path": "model-00004-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00004-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00005-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00005-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00006-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00006-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00007-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00007-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00008-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00008-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00009-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00009-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00010-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00010-of-00048.safetensors",
+      "bytes": 1596042512
+    },
+    {
+      "path": "model-00011-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00011-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00012-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00012-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00013-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00013-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00014-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00014-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00015-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00015-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00016-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00016-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00017-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00017-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00018-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00018-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00019-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00019-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00020-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00020-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00021-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00021-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00022-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00022-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00023-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00023-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00024-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00024-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00025-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00025-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00026-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00026-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00027-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00027-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00028-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00028-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00029-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00029-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00030-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00030-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00031-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00031-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00032-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00032-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00033-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00033-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00034-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00034-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00035-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00035-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00036-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00036-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00037-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00037-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00038-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00038-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00039-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00039-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00040-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00040-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00041-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00041-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00042-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00042-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00043-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00043-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00044-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00044-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00045-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00045-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00046-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00046-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00047-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00047-of-00048.safetensors",
+      "bytes": 1596042888
+    },
+    {
+      "path": "model-00048-of-00048.safetensors",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B/resolve/cca48b6631d03c338a0e1d8beb0c392af8becbd3/model-00048-of-00048.safetensors",
+      "bytes": 4162438632
+    }
+  ],
+  "totalBytes": 74891674376,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-metadata"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "SGLang"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:ifm-k2-horizon-mova-36b-a4b-q4-k-m",
+  "modelVersionId": "model:ifm-k2-horizon-mova-36b-a4b",
+  "baseModelRepository": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "baseRevision": "cca48b6631d03c338a0e1d8beb0c392af8becbd3",
+  "publisher": "IFM",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "filesUrl": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF/tree/b318d1343a9460b05b0e04984fdd268cc5ef647c",
+  "repositoryRevision": "b318d1343a9460b05b0e04984fdd268cc5ef647c",
+  "files": [
+    {
+      "path": "K2-Horizon-MoVA-36B-A4B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF/resolve/b318d1343a9460b05b0e04984fdd268cc5ef647c/K2-Horizon-MoVA-36B-A4B-Q4_K_M.gguf",
+      "bytes": 22368011616
+    }
+  ],
+  "totalBytes": 22368011616,
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:ifm-k2-horizon-mova-36b-a4b-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ],
+  "scopeNote": "حجم فایل وزن است؛ KV cache و سربار اجرا جدا محاسبه می‌شوند. اجرای واقعی و کیفیت فارسی سنجیده نشده‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:google-embeddinggemma-2-bf16",
+  "modelVersionId": "model:google-embeddinggemma-2",
+  "baseModelRepository": "google/embeddinggemma-2",
+  "baseRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "publisher": "Google DeepMind",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "full multimodal BF16 checkpoint",
+  "repositoryUrl": "https://huggingface.co/google/embeddinggemma-2",
+  "filesUrl": "https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "repositoryRevision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/google/embeddinggemma-2/resolve/914f7f89142e33e77833254d9c9b90c3cef7303b/model.safetensors",
+      "bytes": 1488915288
+    }
+  ],
+  "totalBytes": 1488915288,
+  "runtimeEngines": [
+    "Transformers",
+    "Sentence Transformers"
+  ],
+  "verifiedOn": "2026-10-07",
+  "evidenceIds": [
+    "evidence:embeddinggemma-2-files",
+    "evidence:embeddinggemma-2-card"
+  ],
+  "scopeNote": "حجم فایل وزن کامل چندوجهی است؛ حافظهٔ اجرا، فعال‌سازی و بارگذاری مستقل متن را برآورد نمی‌کند. ارقام Pixel به GPU تعمیم داده نمی‌شوند."
+});

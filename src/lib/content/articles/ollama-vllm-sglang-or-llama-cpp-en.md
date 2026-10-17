@@ -5,7 +5,7 @@ translationGroup: ollama-vllm-sglang-or-llama-cpp
 lang: en
 date: '2026-09-15'
 faDate: '2026-09-15'
-updated: "2026-09-28"
+updated: "2026-10-11"
 draft: false
 math: false
 category: Language models
@@ -127,6 +127,27 @@ The first factor represents keys and values. In grouped-query attention, use the
 These tokens include accumulated input and output. The table excludes prefix sharing, cache quantization, allocation overhead, model weights and workspaces. It assumes each sequence has actually reached the stated length; a dynamically allocating engine need not reserve every request's maximum immediately. MLA, hybrid attention and sliding-window layers require their own treatment.
 
 The last row exceeds 24 GiB before loading any weights. A model running successfully for one user therefore says little about eight long conversations. [Choosing model size (in Persian)](/articles/right-model-size-for-the-task/) and [24 versus 48 GB on an RTX 4090 (in Persian)](/articles/llms-on-rtx-4090-24gb-vs-48gb/) connect this budget to actual choices.
+
+## Session isolation and caching
+
+A working queue and good throughput do not establish that each response uses the right request context. Reusing computation for a shared prefix must preserve the boundary between users’ histories and content. Test that boundary separately from speed.
+
+The [`llama-server` b11552 prerelease of 10 October 2026](https://github.com/ggml-org/llama.cpp/releases/tag/b11552) fixes a specific failure. A request pinned with `id_slot` could restore a RAM cache entry into a busy slot before being deferred, causing the active generation to continue with another request’s context. The corrected server leaves the busy slot untouched until it becomes available.
+
+The [upstream report in PR #30295](https://github.com/ggml-org/llama.cpp/pull/30295#issuecomment-6099989146) used an M2 Ultra, Metal, `Qwen3.8-27B-UD-Q4_K_M` plus mmproj, `--parallel 10`, `--kv-unified`, `--no-cache-idle-slots` and `--cache-ram 8192`. Two clients pinned requests to the same `id_slot=7`, alongside other traffic:
+
+| Tested build | Simultaneous request pairs | Other request’s identifier or output crossed | Corrupted responses |
+|---|---:|---:|---:|
+| b11146, without the fix | 30 | 1 | 9 |
+| Corrected PR branch, build 11550 | 60 | 0 | 0 |
+
+These limited upstream results are not a direct test of the b11552 release binary. One round also reached a 60-second client timeout while waiting for the slot. The release and PR report no CVE or real-world disclosure incident. They establish a context-isolation failure with a potential for cross-user disclosure; they do not establish its reach without slot pinning.
+
+**For multi-user service combining pinned `id_slot` and RAM prompt caching, b11552 or newer is the minimum build containing this fix. Keep that combination out of service until upgraded and the isolation acceptance test passes.** A suggested test:
+
+- Give several synthetic users distinct random canary identifiers and ask the model to return the current user’s identifier.
+- Warm the cache with different contexts. Send another user’s request to the same pinned slot while generation is active, keeping caching and other users’ traffic enabled.
+- Compare every response with the other users’ canaries and outputs. Any crossing is a critical failure that blocks deployment acceptance. A few clean runs do not replace testing the actual deployment configuration.
 
 ## Configuration names are not interchangeable units
 

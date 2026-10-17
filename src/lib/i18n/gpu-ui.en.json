@@ -288,5 +288,16 @@
   "برد اصلاح‌شدهٔ غیررسمی": "Unofficial modified board",
   "اعلام فروشنده": "Supplier claim",
   "فروشندهٔ برد اصلاح‌شده": "Modified-board seller",
-  "نمونهٔ فروشنده ↗": "Supplier example ↗"
+  "نمونهٔ فروشنده ↗": "Supplier example ↗",
+  "مایع و هوا": "Liquid and air",
+  "کارت یا شتاب‌دهنده": "Cards or accelerators",
+  "ابعاد بدنه": "Chassis dimensions",
+  "این ردیف برای انتخاب کارت مستقل نیست": "This row is not for selecting a separate card",
+  "زمان عرضه": "Availability",
+  "سرورها و رایانه‌های AI": "AI servers and computers",
+  "از لپ‌تاپ و میز کار تا سرور رک": "From laptops and desktops to rack servers",
+  "برای اجرای محلی مدل، گاهی یک رایانهٔ رومیزی یا لپ‌تاپ کافی است و گاهی به سرور رک نیاز دارید. این جدول هر دو را کنار هم می‌آورد. اگر کارت جداگانه می‌خرید، «کارت من» را انتخاب کنید تا شاسی‌های مناسب آن را ببینید؛ سامانه‌های یکپارچه با شتاب‌دهندهٔ خودشان مقایسه می‌شوند. هر ردیف به منبع رسمی پیوند دارد.": "Local model inference may need a desktop or laptop, or a rack server. This table brings them together. If buying a separate GPU, select “My card” to see suitable chassis; integrated systems are compared with their built-in accelerators. Every row links to an official source.",
+  "مدل و ظرفیت حافظه، نسخهٔ سیستم‌عامل و پشتیبانی نرم‌افزار اجرای مدل را با پیکربندی سفارش تطبیق دهید.": "Match the model, memory capacity, OS version and inference-software support to the order configuration.",
+  "بُرد یکپارچه / اتصال اختصاصی": "Integrated board / dedicated interconnect",
+  "افزودن به مقایسه": "Add to comparison"
 }

@@ -3,11 +3,11 @@ import type { LlmGuideRepository } from '../schema';
 
 export const softwareReleases: LlmGuideRepository['softwareReleases'] = [];
 softwareReleases.push({
-  "id": "software-release:ollama-v0-34-0",
+  "id": "software-release:ollama-v0-40-2",
   "productId": "software-product:ollama",
-  "version": "v0.34.0",
-  "releasedOn": "2026-09-05",
-  "lastReviewedOn": "2026-10-04",
+  "version": "v0.40.2",
+  "releasedOn": "2026-10-08",
+  "lastReviewedOn": "2026-10-10",
   "roles": [
     "inference-engine-library",
     "api-server",
@@ -44,33 +44,31 @@ softwareReleases.push({
       "state": "known",
       "value": "MIT",
       "evidenceIds": [
-        "evidence:software-ollama-license"
+        "evidence:ollama-v0-40-2-license"
       ]
     },
     "url": {
       "state": "known",
-      "value": "https://github.com/ollama/ollama/blob/v0.34.0/LICENSE",
+      "value": "https://github.com/ollama/ollama/blob/v0.40.2/LICENSE",
       "evidenceIds": [
-        "evidence:software-ollama-license"
+        "evidence:ollama-v0-40-2-license"
       ]
     },
     "commercialUse": {
       "state": "known",
       "value": "allowed",
       "evidenceIds": [
-        "evidence:software-ollama-license"
+        "evidence:ollama-v0-40-2-license"
       ]
     },
     "restrictions": [],
     "evidenceIds": [
-      "evidence:software-ollama-license"
+      "evidence:ollama-v0-40-2-license"
     ]
   },
   "maintenanceStatus": "active",
   "evidenceIds": [
-    "evidence:software-ollama-release",
     "evidence:software-ollama-overview",
-    "evidence:software-ollama-license",
     "evidence:v03-caea475103b5d65313",
     "evidence:v03-b6b9e3c01f164f962d",
     "evidence:v03-a29655d5a6c4508a30",
@@ -78,10 +76,12 @@ softwareReleases.push({
     "evidence:v03-e8ee1d44dc907013d4",
     "evidence:v03-ebe487d69f0dc2388f",
     "evidence:v03-b5ce2f9cd14541cc7d",
-    "evidence:ollama-v0-40-0-rc0-release",
     "evidence:ollama-capability-18708",
     "evidence:ollama-v0-35-1-release",
-    "evidence:ollama-clef-library"
+    "evidence:ollama-clef-library",
+    "evidence:ollama-v0-40-0-release",
+    "evidence:ollama-v0-40-2-release",
+    "evidence:ollama-v0-40-2-license"
   ],
   "targetScenario": {
     "state": "known",
@@ -92,16 +92,122 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "runtime داخلی Ollama؛ انتخاب مدل‌های سازگار",
+    "value": "Ollama v0.40.2 پایدار / Latest؛ مهاجرت پس‌زمینهٔ مدل‌های قدیمی و نگهداری موقت نسخهٔ اصلی برای بازگشت",
+    "evidenceIds": [
+      "evidence:ollama-v0-40-2-release"
+    ]
+  },
+  "selectionCaveat": "Ollama v0.40.2 پایدار / Latest: روی Apple Silicon فقط معماری‌های تأییدشده به‌طور پیش‌فرض با MLX اجرا می‌شوند: Qwen3.8، Qwen3.6، Qwen3.5، Gemma 4، Nimble، Tev1، Clef، Clef Flash و EmbeddingGemma 2. این رفتار به همهٔ مدل‌ها، اندازه‌ها، کوانتیزه‌ها، ورودی‌ها یا سیستم‌عامل‌ها تعمیم داده نشود؛ تگ و فایل سازگار هر مسیر جداگانه بررسی شود. مدل‌های تصمیم فقط خروجی نوع‌دار دارند و برای chat، tools یا thinking نیستند. کیفیت فارسی، سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند. در نخستین اجرای هر مدل قدیمی، مهاجرت در پس‌زمینه انجام می‌شود و نسخهٔ اصلی موقتاً روی دیسک می‌ماند. پیش از ارتقا فضای آزاد دیسک را بررسی کنید؛ حذف خودکار پشتیبان‌ها برای انتشار بعدی وعده داده شده است. شرط Windows/Clef Flash یعنی v0.40.1+ حفظ می‌شود.",
+  "documentedBackends": [
+    "Ollama runtime",
+    "llama.cpp",
+    "MLX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": true
+});
+softwareReleases.push({
+  "id": "software-release:ollama-v0-40-0",
+  "productId": "software-product:ollama",
+  "version": "v0.40.0",
+  "releasedOn": "2026-09-25",
+  "lastReviewedOn": "2026-10-07",
+  "roles": [
+    "inference-engine-library",
+    "api-server",
+    "model-manager"
+  ],
+  "environments": [
+    "desktop",
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local",
+    "cloud"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:v03-b5ce2f9cd14541cc7d"
+    ],
+    "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ollama/ollama/blob/v0.40.0/LICENSE",
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:ollama-v0-40-0-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:ollama-v0-40-0-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:software-ollama-overview",
+    "evidence:v03-caea475103b5d65313",
+    "evidence:v03-b6b9e3c01f164f962d",
+    "evidence:v03-a29655d5a6c4508a30",
+    "evidence:v03-87a9107234a6210cfe",
+    "evidence:v03-e8ee1d44dc907013d4",
+    "evidence:v03-ebe487d69f0dc2388f",
+    "evidence:v03-b5ce2f9cd14541cc7d",
+    "evidence:ollama-capability-18708",
+    "evidence:ollama-v0-35-1-release",
+    "evidence:ollama-clef-library",
+    "evidence:ollama-v0-40-0-release",
+    "evidence:ollama-v0-40-0-license"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "دریافت، مدیریت و اجرای محلی مدل‌ها با API",
     "evidenceIds": [
       "evidence:software-ollama-overview"
     ]
   },
-  "selectionCaveat": "Ollama v0.35.1 پایدار /v1/systemone را برای مدل‌های دارای قابلیت decision عرضه می‌کند. Clef و Clef Flash در این مسیر متن و تصویر و پرسش‌های choice، noul و score را می‌پذیرند؛ برای chat، tools یا thinking مناسب نیستند. محدودیت تصویر در llama.cpp b11371 به Ollama تعمیم داده نمی‌شود. یادداشت انتشار سازگاری تفکیکی MLX و llama.cpp را کامل مستند نمی‌کند؛ مدل و artifact هر مسیر را بررسی کنید. فراخوانی ابزار و خروجی ساختاریافتهٔ مدل‌های گفت‌وگویی دیگر به مدل و قالب پیام وابسته‌اند.",
+  "backendSummary": {
+    "state": "known",
+    "value": "Ollama پایدار؛ نسخهٔ تاریخی؛ MLX پیش‌فرض فقط برای معماری‌های تأییدشده روی Apple Silicon؛ llama.cpp و مسیرهای دیگر جدا هستند",
+    "evidenceIds": [
+      "evidence:ollama-v0-40-0-release"
+    ]
+  },
+  "selectionCaveat": "Ollama v0.40.0 پایدار؛ نسخهٔ تاریخی: روی Apple Silicon فقط معماری‌های تأییدشده به‌طور پیش‌فرض با MLX اجرا می‌شوند: Qwen3.8، Qwen3.6، Qwen3.5، Gemma 4، Nimble، Tev1، Clef، Clef Flash و EmbeddingGemma 2. این رفتار به همهٔ مدل‌ها، اندازه‌ها، کوانتیزه‌ها، ورودی‌ها یا سیستم‌عامل‌ها تعمیم داده نشود؛ تگ و فایل سازگار هر مسیر جداگانه بررسی شود. مدل‌های تصمیم فقط خروجی نوع‌دار دارند و برای chat، tools یا thinking نیستند. کیفیت فارسی، سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند.",
   "documentedBackends": [
     "Ollama runtime",
-    "llama.cpp"
-  ]
+    "llama.cpp",
+    "MLX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": false
 });
 softwareReleases.push({
   "id": "software-release:vllm-v0-29-0",
@@ -2564,7 +2670,7 @@ softwareReleases.push({
   "version": "b11371",
   "releaseChannel": "prerelease",
   "releasedOn": "2026-10-03",
-  "lastReviewedOn": "2026-10-04",
+  "lastReviewedOn": "2026-10-06",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -2604,13 +2710,457 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "ورودی متنی Clef؛ تصویر هنوز پشتیبانی نمی‌شود",
+    "value": "این ساخت Clef را فقط با متن پشتیبانی می‌کند؛ تصویر در v0.6.0 اضافه شده است",
     "evidenceIds": [
-      "evidence:llama-cpp-b11371-clef"
+      "evidence:llama-cpp-b11371-clef",
+      "evidence:llama-cpp-v0-6-0-release"
     ]
   },
-  "selectionCaveat": "b11371 پشتیبانی اولیهٔ Clef را فقط برای متن اضافه کرده است؛ ورودی تصویری Clef در llama.cpp هنوز پشتیبانی نمی‌شود. این محدودیت به Ollama v0.35.1 تعمیم ندارد. مسیر پیش‌انتشار است و آزمون محلی، کارایی و کیفیت فارسی تأیید نشده‌اند.",
+  "selectionCaveat": "b11371 پشتیبانی اولیهٔ Clef را فقط برای متن اضافه کرده است. پشتیبانی تصویری در v0.6.0 پایدار با GGUF و projector سازگار اضافه شد؛ محدودیت این ساخت به نسخه‌های جدید یا Ollama v0.35.1 تعمیم ندارد. b11371 پیش‌انتشار است؛ آزمون محلی، کارایی و کیفیت فارسی تأیید نشده‌اند.",
   "evidenceIds": [
-    "evidence:llama-cpp-b11371-clef"
+    "evidence:llama-cpp-b11371-clef",
+    "evidence:llama-cpp-v0-6-0-release"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-v0-6-0",
+  "productId": "software-product:llama-cpp",
+  "version": "v0.6.0",
+  "releaseChannel": "stable",
+  "releasedOn": "2026-10-05",
+  "lastReviewedOn": "2026-10-06",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-6-0-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ggml-org/llama.cpp/blob/v0.6.0/LICENSE",
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-6-0-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:llama-cpp-v0-6-0-license"
+      ]
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پایدار؛ llama.cpp / llama-server با تصمیم‌گیری متنی و تصویری Clef",
+    "evidenceIds": [
+      "evidence:llama-cpp-v0-6-0-release",
+      "evidence:llama-cpp-clef-vision-29969",
+      "evidence:llama-cpp-v0-6-0-systemone",
+      "evidence:llama-cpp-v0-6-0-license",
+      "evidence:llama-cpp-vulkan-29988"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Clef/Clef Flash: متن و تصویر با /v1/systemone؛ GGUF و projector سازگار",
+    "evidenceIds": [
+      "evidence:llama-cpp-v0-6-0-release",
+      "evidence:llama-cpp-clef-vision-29969",
+      "evidence:llama-cpp-v0-6-0-systemone",
+      "evidence:llama-cpp-v0-6-0-license",
+      "evidence:llama-cpp-vulkan-29988"
+    ]
+  },
+  "selectionCaveat": "v0.6.0 پایدار پشتیبانی تصویری Clef را با /v1/systemone اضافه می‌کند. به GGUF با قالب جدید و projector سازگار (--mmproj) نیاز است؛ فایل‌های قدیمی ممکن است به تبدیل مجدد نیاز داشته باشند. کل prompt باید در --ubatch-size جا شود؛ تصویر با data URL فرستاده می‌شود. پاسخ‌ها choice، noul یا score هستند و سرور Clef تولید متن آزاد ندارد. اصلاح Vulkan FlashAttention #29988 نیز در این نسخه وجود دارد. کیفیت فارسی، سرعت و مصرف کامل حافظه آزموده نشده‌اند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-v0-6-0-release",
+    "evidence:llama-cpp-clef-vision-29969",
+    "evidence:llama-cpp-v0-6-0-systemone",
+    "evidence:llama-cpp-v0-6-0-license",
+    "evidence:llama-cpp-vulkan-29988"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11424",
+  "productId": "software-product:llama-cpp",
+  "version": "b11424",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-05",
+  "lastReviewedOn": "2026-10-06",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ اصلاح دسترسی خارج از محدوده در Vulkan FlashAttention",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11424-release",
+      "evidence:llama-cpp-vulkan-29988"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Vulkan + FlashAttention؛ اصلاح نوشتن در حافظهٔ اشتراکی",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11424-release",
+      "evidence:llama-cpp-vulkan-29988"
+    ]
+  },
+  "selectionCaveat": "b11424 اصلاح #29988 را برای نوشتن خارج از محدودهٔ حافظهٔ اشتراکی در Vulkan FlashAttention دارد؛ گزارش رسمی به crash نوع DeviceLost روی NVIDIA اشاره می‌کند. برای مسیر متأثر از b11424+ حاوی این اصلاح یا نسخهٔ پایدار v0.6.0 استفاده و workload را بازآزمایی کنید. این اصلاح شاهد افزایش سرعت، CVE یا بهره‌برداری اثبات‌شده نیست؛ تخمین VRAM تغییر نمی‌کند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11424-release",
+    "evidence:llama-cpp-vulkan-29988"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11454",
+  "productId": "software-product:llama-cpp",
+  "version": "b11454",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-06",
+  "lastReviewedOn": "2026-10-07",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ حداقل مسیر llama.cpp برای پنج مدل K2 Horizon با GGUF رسمی",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11454-release",
+      "evidence:ifm-k2-horizon-gguf-collection"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "K2 Horizon متراکم و MoVA: تبدیل GGUF، tokenizer، گراف، chat، reasoning و tools",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11454-release",
+      "evidence:llama-cpp-k2-horizon-29535"
+    ]
+  },
+  "selectionCaveat": "مدل‌ها در ۳ سپتامبر عرضه شدند؛ b11454 رخداد اجرای تازه در ۶ اکتبر است و پیش‌انتشار باقی می‌ماند. فقط پنج مدل مجموعهٔ GGUF رسمی در دامنه‌اند؛ 375B-A23B به این مسیر نسبت داده نمی‌شود. -sm tensor غیرفعال است. اصلاح ZWNJ/ZWJ و Windows شاهد کیفیت فارسی نیست؛ سرعت و حافظهٔ واقعی آزمون نشده‌اند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11454-release",
+    "evidence:llama-cpp-k2-horizon-29535",
+    "evidence:ifm-k2-horizon-gguf-collection"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11532",
+  "productId": "software-product:llama-cpp",
+  "version": "b11532",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-09",
+  "lastReviewedOn": "2026-10-10",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ حداقل نسخهٔ شامل هر دو اصلاح ایمنی حافظه و GELU در ModernBERT",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11529-release",
+      "evidence:llama-cpp-acc-offset-30135",
+      "evidence:llama-cpp-b11532-release",
+      "evidence:llama-cpp-modernbert-gelu-30108"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "b11529+ کنترل offset در ggml_acc_impl پیش از تبدیل به int32_t را اضافه می‌کند تا نوشتن خارج از محدوده ناشی از سرریز رخ ندهد. گزارش PR امکان ورود offset منفی از RPC GRAPH_COMPUTE را نیز ذکر می‌کند؛ اصلاح نهایی اعتبارسنجی مستقیم پارامترهای RPC نیست. b11532+ برای ModernBERT با hidden_activation=gelu از GELU دقیق مطابق Transformers استفاده می‌کند.",
+    "note": "در منابع بررسی‌شده CVE یا بهره‌برداری عملی اعلام نشده است؛ این اصلاح شاهد افزایش سرعت نیست. GGUF موجود ModernBERT نیاز به تبدیل دوباره ندارد و خروجی buildهای قدیمی باید بازآزمایی شود. آزمون ناشر فقط CPU/F32 روی gte-reranker-modernbert-base است: بیشینهٔ خطای فعال‌سازی از 5.8e-2 به 7.4e-6 رسید؛ GPU آزمایش نشده و تغییر سرعت CPU در محدودهٔ نوسان اجرا بود. این اعداد ارزیابی مستقیم ModernBERT-base نیستند.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11529-release",
+      "evidence:llama-cpp-acc-offset-30135",
+      "evidence:llama-cpp-b11532-release",
+      "evidence:llama-cpp-modernbert-gelu-30108"
+    ]
+  },
+  "selectionCaveat": "در منابع بررسی‌شده CVE یا بهره‌برداری عملی اعلام نشده است؛ این اصلاح شاهد افزایش سرعت نیست. GGUF موجود ModernBERT نیاز به تبدیل دوباره ندارد و خروجی buildهای قدیمی باید بازآزمایی شود. آزمون ناشر فقط CPU/F32 روی gte-reranker-modernbert-base است: بیشینهٔ خطای فعال‌سازی از 5.8e-2 به 7.4e-6 رسید؛ GPU آزمایش نشده و تغییر سرعت CPU در محدودهٔ نوسان اجرا بود. این اعداد ارزیابی مستقیم ModernBERT-base نیستند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11529-release",
+    "evidence:llama-cpp-acc-offset-30135",
+    "evidence:llama-cpp-b11532-release",
+    "evidence:llama-cpp-modernbert-gelu-30108"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11537",
+  "productId": "software-product:llama-cpp",
+  "version": "b11537",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-09",
+  "lastReviewedOn": "2026-10-10",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ حداقل نسخهٔ شامل اصلاح ترتیب گراف embedding پس از رگرسیون mixed-batch",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11537-release",
+      "evidence:llama-cpp-embedding-graph-30160"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "اصلاح #30160 عملگرهای GET_ROWS را پیش از دیگر عملیات ورودی می‌چیند تا تقسیم‌های اضافی گراف و انتقال ناخواسته به CPU کاهش یابد. برای mixed-batch/embedding و بازآزمایی مسیرهای MTP و چند GPU از b11537 یا جدیدتر شروع کنید؛ پشتیبانی هر مدل جدا بررسی شود.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11537-release",
+      "evidence:llama-cpp-embedding-graph-30160"
+    ]
+  },
+  "selectionCaveat": "گزارش یک کاربر روی Linux، SYCL و دو Arc Pro B70 با Qwen3.8-Flash-Next / UD-IQ3_XXS: حدود 365 pp و 24 tg به 582.23 pp و 32.75 tg رسید. اعداد پس از اصلاح متعلق به شاخهٔ PR هستند، نه آزمون مستقل باینری b11537. ورودی، شمار تکرار و آزمون مستقل MTP کامل گزارش نشده‌اند؛ نتیجه به همهٔ GPUها تعمیم داده نشود.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11537-release",
+    "evidence:llama-cpp-embedding-graph-30160"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11540",
+  "productId": "software-product:llama-cpp",
+  "version": "b11540",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-10",
+  "lastReviewedOn": "2026-10-10",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ شتاب decode مدل‌های MoE با MXFP4 در backend SYCL",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11540-release",
+      "evidence:llama-cpp-sycl-mxfp4-29809"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "SYCL MXFP4 MoE optimized decode؛ اصلاح #29809 از decode حسابی و بازچینی وزن‌ها استفاده می‌کند. گزارش نویسنده: gpt-oss-20b روی یک B70 از 55.84 به 106.64 tok/s و gpt-oss-120b روی دو B70 از 33.27 به 67.14 tok/s رسید.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11540-release",
+      "evidence:llama-cpp-sycl-mxfp4-29809"
+    ]
+  },
+  "selectionCaveat": "آزمون اصلی نویسندهٔ PR روی Windows 11، oneAPI 2026.0، CPU مدل EPYC 7402P و Flash Attention روشن است؛ ۲۰B با پنج و ۱۲۰B با دو تکرار. اعداد برای decode هستند؛ به prefill، Linux یا GPUهای دیگر تعمیم داده نشوند. build شامل اصلاح b11540 است، اما این اعداد مستقیماً از شاخهٔ PR گزارش شده‌اند و آزمون مستقلی روی سایت انجام نشده است.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11540-release",
+    "evidence:llama-cpp-sycl-mxfp4-29809"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11552",
+  "productId": "software-product:llama-cpp",
+  "version": "b11552",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-10",
+  "lastReviewedOn": "2026-10-11",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پیش‌انتشار؛ اصلاح جداسازی context در llama-server هنگام استفاده از id_slot ثابت و RAM prompt cache",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11552-release",
+      "evidence:llama-server-pinned-slot-30295"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "درخواست دارای id_slot ثابت دیگر cache را روی slot مشغول بارگذاری نمی‌کند و تا آزادشدن آن منتظر می‌ماند. شرط این پیکربندی: pinned id_slot + RAM prompt cache → b11552+. تا ارتقا و قبولی آزمون canary، این ترکیب در سرویس چندکاربره استفاده نشود.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11552-release",
+      "evidence:llama-server-pinned-slot-30295"
+    ]
+  },
+  "selectionCaveat": "خطای جداسازی context تأیید شده است؛ در release و PR، CVE یا رخداد واقعی افشای اطلاعات گزارش نشده. آزمون محدود upstream: M2 Ultra/Metal، Qwen3.8-27B-UD-Q4_K_M همراه mmproj، --parallel 10، --kv-unified، --no-cache-idle-slots، --cache-ram 8192 و id_slot=7. در b11146، از ۳۰ جفت هم‌زمان ۱ عبور محتوای درخواست دیگر و ۹ پاسخ خراب گزارش شد؛ در شاخهٔ PR (build 11550)، از ۶۰ جفت هر دو عدد صفر بود. یک نوبت timeout سمت کاربر پس از ۶۰ ثانیه داشت. b11552 شامل اصلاح است؛ این اعداد آزمون مستقیم فایل انتشار یا تضمین همهٔ پیکربندی‌ها نیستند. میزان اثر بدون slot pinning نامعلوم است.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11552-release",
+    "evidence:llama-server-pinned-slot-30295"
   ]
 });

@@ -305,6 +305,10 @@ export interface ModelRunGuide {
   code?: string;
   codeLanguage?: 'python' | 'bash';
   evidenceIds: EvidenceId[];
+  /** A deployment route can be hardware-scoped without certifying a weight file. */
+  hardwareTarget?: 'apple-silicon';
+  compatibilityScope?: 'family' | 'model';
+  softwareReleaseId?: SoftwareReleaseId;
 }
 
 /** Editorial introduction and task-correct starting instructions for one exact model. */
@@ -431,6 +435,8 @@ export interface SoftwareProduct {
 /** A software-comparison row is always one exact product release. */
 export interface SoftwareRelease {
   releaseChannel?: 'stable' | 'prerelease';
+  /** Publisher's Latest designation, captured on lastReviewedOn. */
+  isLatest?: boolean;
   id: SoftwareReleaseId;
   productId: SoftwareProductId;
   version: string;

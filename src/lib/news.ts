@@ -8,6 +8,7 @@ export type MediaItem = {
   faDate: string;
   coverImage: string | null;
   coverImageAlt: string | null;
+  coverImagePosition?: string;
   editorialNote: string | null;
 };
 

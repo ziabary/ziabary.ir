@@ -1360,5 +1360,13 @@
   "sep26.performance-note": "گزارش ناشر، شش وظیفهٔ بینایی؛ batch=1 و temperature=0. H100/SGLang/BF16 با block=9: 1.64–2.27×؛ M5 Max/MLX-VLM/FP16 با block=8: 1.56–2.62×؛ M3 Ultra/llama.cpp/FP16 با block=8: 1.30–1.77×. سقف خروجی Apple برابر 2048 توکن است. نسبت زمان انتها‌به‌انتهاست، نه tok/s، TTFT یا کیفیت؛ به فارسی، RTX 4090، کوانتیزاسیون یا هم‌زمانی تعمیم داده نشود. DSpark تولید توکن را هدف می‌گیرد، نه شتاب مستقیم vision encoding یا prefill. نسخهٔ دقیق موتورهای آزمون و revision وزن‌های ارزیابی‌شده ثبت نشده‌اند؛ نسخه‌های حداقل پشتیبانی جای آن‌ها نیستند.",
   "model.security-notes": "شرایط پژوهش و ملاحظات امنیتی",
   "software.prerelease": "پیش‌انتشار",
-  "model-kind.decision": "مدل تصمیم"
+  "model-kind.decision": "مدل تصمیم",
+  "model-kind.vision-language": "مولد متن و تصویر",
+  "model-kind.multimodal-embedding": "بردارساز چندوجهی",
+  "software.stableLatest": "پایدار / Latest",
+  "runtime1010.qwen.label": "Qwen3.8-Flash-Next · دو B70 · رفع رگرسیون",
+  "runtime1010.qwen.note": "گزارش یک کاربر با ورودی یکسان روی Linux و SYCL؛ اعداد اولیه تقریبی‌اند. نتیجهٔ اصلاح‌شده از شاخهٔ PR #30160 است؛ b11537 شامل اصلاح است. طول ورودی و شمار تکرار کامل گزارش نشده؛ این گزارش آزمون مستقل MTP یا رتبه‌بندی GPUها نیست.",
+  "runtime1010.sycl.label": "gpt-oss · B70 · SYCL MXFP4 · Windows",
+  "runtime1010.sycl.note": "آزمون اصلی نویسندهٔ PR #29809: Windows 11، oneAPI 2026.0، EPYC 7402P و Flash Attention روشن؛ پنج تکرار برای ۲۰B و دو تکرار برای ۱۲۰B. اعداد decode شاخهٔ PR؛ اصلاح در b11540 است. به prefill، Linux یا GPUهای دیگر تعمیم داده نشود.",
+  "runtime1010.prefill": "پردازش ورودی؛ طول گزارش نشده"
 }

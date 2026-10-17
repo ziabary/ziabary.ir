@@ -9,10 +9,10 @@ const data = name => JSON.parse(fs.readFileSync(`data/llm/v0.2.0/data/${name}.js
 const close = (a,b) => assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
 
 test('supplement preserves the base, exact identities, independent evidence and deduplicated quality',()=>{
-  assert.ok(base.models.length>=127);assert.equal(base.publishedEvaluations.length,1212);assert.ok(base.artifactListings.length>=539);
+  assert.ok(base.models.length>=127);assert.equal(base.publishedEvaluations.length,1215);assert.ok(base.artifactListings.length>=539);
   // Similar scores remain distinct when language/protocol identity is not established.
-  assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1270);
-  assert.equal(repository.evidence.length,base.evidence.length+128);
+  assert.equal(repository.models,base.models);assert.equal(repository.publishedEvaluations.length,1273);
+  assert.equal(repository.evidence.length,base.evidence.length+r.research.sources.length);
   assert.equal(r.researchModel(base,'CohereForAI/aya-expanse-32b').id,'model:coherelabs-aya-expanse-32b');
   assert.equal(r.researchModel(base,'deepseek-ai/DeepSeek-V3'),undefined);
   assert.equal(r.researchModel(base,'Qwen/Qwen3.8-Flash-Next'),undefined);
@@ -29,7 +29,9 @@ test('all planning weight versions resolve to a model profile and pinned exact d
   for(const artifact of r.research.artifacts){
     const model=r.researchModel(repository,artifact.modelRepository);assert.ok(model);
     const download=repository.artifactListings.find(x=>x.modelVersionId===model.id&&x.repositoryUrl==='https://huggingface.co/'+artifact.repository&&x.variant===artifact.quantization);assert.ok(download,artifact.id);
-    assert.equal(download.totalBytes,artifact.weightFileBytes);assert.equal(download.baseRevision,undefined);
+    assert.equal(download.totalBytes,artifact.weightFileBytes);
+    assert.equal(download.baseRevision,artifact.baseRevision ?? undefined);
+    if (download.baseRevision) assert.equal(download.baseRevision,model.version);
     assert.ok(download.files.every(x=>x.url.includes(artifact.repositoryRevision)));
     assert.ok(download.scopeNote.includes(r.faNumber(artifact.artifactContextLimitTokens,0)));
   }
@@ -51,11 +53,11 @@ test('context, concurrent requests, CPU dtype and multi-GPU conditions change th
   assert.equal(r.memoryStatus(46.1,48,2).id,'requires-sharding');
   assert.equal(r.calculateMemory(a,8192,0),undefined);assert.equal(r.calculateMemory(a,8192,1.5),undefined);
   const aya=r.research.artifacts.find(x=>x.modelRepository==='CohereLabs/aya-expanse-32b');assert.equal(r.calculateMemory(aya,32768,1),undefined);
-  const cpu=v.memoryRows(repository,{...v.defaultResearchControls,method:'cpu'});assert.equal(cpu.length,59);
+  const cpu=v.memoryRows(repository,{...v.defaultResearchControls,method:'cpu'});assert.equal(cpu.length,64);
   const native=cpu.find(x=>x.label==='SmolLM2-1.7B-Instruct'&&x.facets.quant.display==='FP32');close(native.cells.budget.canonicalNumber,13.37542074918747);
 });
-test('all 72 performances stay in their report groups and metrics retain distinct units and scope',()=>{
-  assert.equal(r.research.performance.length,72);
+test('all 78 performances stay in their report groups and metrics retain distinct units and scope',()=>{
+  assert.equal(r.research.performance.length,78);
   for(const run of r.research.performance){
     const metric=Object.keys(run.metrics).find(key=>v.performanceMetrics[key]);
     const result=v.performanceRows(repository,run.publicationGroup,metric).find(x=>x.id===run.id);assert.ok(result);
@@ -68,7 +70,7 @@ test('all 72 performances stay in their report groups and metrics retain distinc
 });
 test('real filters narrow model, quant, engine, task, GPU architecture, provider and currency',()=>{
   const f=(id,controls,selection)=>{const view=v.researchView(repository,id,{...v.defaultResearchControls,...controls});return modules.filtering.filterLlmRows(view.rows,view.config.filters,selection,'');};
-  assert.equal(f('hardware-feasibility',{}, {quant:'Q4_K_M'}).length,27);
+  assert.equal(f('hardware-feasibility',{}, {quant:'Q4_K_M'}).length,32);
   assert.equal(f('hardware-feasibility',{model:'model:qwen-qwen3-8b'},{}).length,2);
   const embedding = f('deployment-compatibility',{}, {task:'embedding'});
   assert.ok(embedding.length > 3);

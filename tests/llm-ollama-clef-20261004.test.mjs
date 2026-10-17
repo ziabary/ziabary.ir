@@ -17,7 +17,8 @@ test('stable Ollama supports image decisions while the llama.cpp prerelease rema
   assert.equal(ollama.releasedOn, '2026-09-29');
   assert.match(ollama.backendSummary.value, /متن و تصویر.*choice.*noul.*score/);
   assert.equal(llama.releaseChannel, 'prerelease');
-  assert.match(llama.backendSummary.value, /تصویر هنوز پشتیبانی نمی‌شود/);
+  assert.match(llama.backendSummary.value, /فقط.*متن|فقط با متن/);
+  assert.match(llama.backendSummary.value, /v0\.6\.0/);
 });
 
 test('Clef is localized and the wizard only offers it for typed decision tasks', () => {

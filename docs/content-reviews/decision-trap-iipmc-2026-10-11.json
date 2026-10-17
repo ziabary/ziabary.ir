@@ -1,0 +1,184 @@
+{
+  "id": "decision-trap-iipmc-20261011",
+  "date": "2026-10-11",
+  "slug": "the-firm-trapped-by-good-decisions",
+  "sourcePdf": "/home/user/Documents/Mehran/Goft-shonud/nili/DecisionTrap_ProjectManagementConference_MZ_FN_Ver2_05_07_18.pdf",
+  "publishedPdf": "static/slides/the-firm-trapped-by-good-decisions/the-firm-trapped-by-good-decisions-v2.pdf",
+  "pdfSha256": "bc91157d85820e2c60227b056bee4885c49130105528d30e6bac56b02bb79f98",
+  "slideCount": 23,
+  "cover": {
+    "source": "PDF page 1, pdftoppm raster extraction, WebP encoding; no generated image or content edits",
+    "width": 1600,
+    "height": 901
+  },
+  "event": {
+    "officialUrl": "https://iipmc.aryanagroup.com/",
+    "officialTitle": "بیستمین کنفرانس بین المللی مدیریت پروژه",
+    "officialDates": "۱۹ و ۲۰ مهر ۱۴۰۵",
+    "checkedOn": "2026-10-11"
+  },
+  "credits": {
+    "presenter": "دکتر فرهاد نیلی",
+    "scientificPreparation": [
+      "فرهاد نیلی",
+      "مهران ضیابری"
+    ],
+    "evidence": "User-supplied presentation details and both names on the original first slide"
+  },
+  "editions": [
+    "fa",
+    "en",
+    "es"
+  ],
+  "assetPolicy": "Original slide files are ignored by Git under the existing repository policy; local static assets are included in the production build and deployment.",
+  "validation": {
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "relatedTestsPassed": 9,
+    "build": "passed",
+    "sitemapUrls": 254,
+    "jsonLdBlocks": 263,
+    "browser": {
+      "engine": "Chrome",
+      "scenariosPassed": 8,
+      "widths": [
+        320,
+        390,
+        1280
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "horizontalOverflow": false,
+      "runtimeExceptions": 0
+    },
+    "originalPdfHashMatchesBuild": true,
+    "editionsVerified": [
+      "fa",
+      "en",
+      "es"
+    ]
+  },
+  "publication": {
+    "status": "published",
+    "date": "2026-10-11",
+    "url": "https://ziabary.ir/slides/the-firm-trapped-by-good-decisions/",
+    "deployment": {
+      "uploaded": 1684,
+      "unchanged": 3966,
+      "deleted": 0
+    },
+    "liveChecks": {
+      "detailsAndArchives": [
+        "fa",
+        "en",
+        "es"
+      ],
+      "allHttp200": true,
+      "pdfMimeType": "application/pdf",
+      "pdfSha256MatchesOriginal": true,
+      "coverMatchesExtractedAsset": true
+    }
+  },
+  "changedFiles": [
+    "src/lib/presentations.ts",
+    "src/lib/presentation-copy.ts",
+    "src/lib/components/SlidesArchive.svelte",
+    "src/lib/components/PresentationDetail.svelte",
+    "src/lib/components/HomePresentation.svelte",
+    "src/lib/components/PageSeo.svelte",
+    "config/short-links.json",
+    "docs/adding-slides.md",
+    "docs/content-reviews/decision-trap-iipmc-2026-10-11.json",
+    "tests/presentation-locales.test.mjs",
+    "tests/page-seo.test.mjs",
+    "static/slides/the-firm-trapped-by-good-decisions/cover.webp",
+    "static/slides/the-firm-trapped-by-good-decisions/the-firm-trapped-by-good-decisions-v2.pdf"
+  ],
+  "descriptionUpdate": {
+    "date": "2026-10-11",
+    "source": "User-supplied replacement description; original title and subtitle remain in the page hero, without duplication.",
+    "editions": [
+      "fa",
+      "en",
+      "es"
+    ],
+    "translationPolicy": "Complete English and Spanish translations preserve the origin of the idea, Nili’s guidance, both scientific collaborators and Nili’s presenter role.",
+    "descriptionSha256": {
+      "fa": "d87e70d3c31ce13178052c38618e844e5b895a3bc1cd1d2b1d83dabdb4a3fd59",
+      "en": "4c1dfed3f0fdd346fc27aa2a351fc25e572c4f578431361c1fa31a32703771a0",
+      "es": "9b1f205760e803d68136136792a31586a0089cce7644190290fd66e1e6a89c05"
+    },
+    "changedFiles": [
+      "src/lib/presentations.ts",
+      "src/lib/components/PresentationDetail.svelte",
+      "docs/adding-slides.md",
+      "docs/content-reviews/decision-trap-iipmc-2026-10-11.json"
+    ],
+    "validation": {
+      "check": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "relatedTestsPassed": 9,
+      "build": "passed",
+      "sitemapUrls": 254,
+      "jsonLdBlocks": 263,
+      "sharedMetadataAndOtherPresentationsPreserved": true,
+      "originalPdfHashPreserved": true,
+      "browser": {
+        "scenariosPassed": 7,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "themes": [
+          "light",
+          "dark"
+        ],
+        "horizontalOverflow": false,
+        "runtimeExceptions": 0,
+        "descriptionHeadingsPerEdition": 3,
+        "emphasizedSegmentsPerEdition": 8
+      }
+    },
+    "publication": {
+      "status": "published",
+      "deployment": {
+        "uploaded": 2032,
+        "unchanged": 3624,
+        "deleted": 0
+      },
+      "liveChecks": [
+        {
+          "locale": "fa",
+          "url": "https://ziabary.ir/slides/the-firm-trapped-by-good-decisions/",
+          "matchesBuild": true,
+          "completeDescription": true,
+          "headings": 3,
+          "boldSegments": 8
+        },
+        {
+          "locale": "en",
+          "url": "https://ziabary.ir/en/slides/the-firm-trapped-by-good-decisions/",
+          "matchesBuild": true,
+          "completeDescription": true,
+          "headings": 3,
+          "boldSegments": 8
+        },
+        {
+          "locale": "es",
+          "url": "https://ziabary.ir/es/slides/the-firm-trapped-by-good-decisions/",
+          "matchesBuild": true,
+          "completeDescription": true,
+          "headings": 3,
+          "boldSegments": 8
+        }
+      ]
+    }
+  }
+}
