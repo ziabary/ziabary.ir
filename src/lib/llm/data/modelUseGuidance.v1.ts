@@ -7203,3 +7203,611 @@ modelUseGuidance.push({
     "پیش از انتخاب برای RAG متنی فارسی، بازیابی روی پیکرهٔ فارسی را با پرسش‌ها و اسناد یکسان در ۷۶۸ و ۲۵۶ بعد مقایسه کنید؛ کیفیت فارسی و حافظهٔ واقعی نامعلوم‌اند."
   ]
 });
+modelUseGuidance.push({
+  "id": "model-use:reflection-beam:coding-assistant",
+  "modelVersionId": "model:reflection-beam",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "کدنویسی، استدلال و ابزارهای عامل",
+  "description": "Beam 1.0 با وزن‌های رسمی BF16، FP8 و NVFP4 و مجوز Apache-2.0 منتشر شده است.",
+  "distinguishingFeature": "۵۰۱٫۳B کل و ۲۳٫۴B فعال؛ حافظه از وزن کل محاسبه می‌شود، نه پارامتر فعال.",
+  "conditions": [
+    "llama.cpp b11701 پشتیبانی Beam را پس از v0.7.0 اضافه می‌کند؛ پشتیبانی آن به 0.7.0 نسبت داده نمی‌شود. مسیر vLLM/SGLang به نسخهٔ سازگار نیاز دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-beam"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:reflection-beam:reasoning-analysis",
+  "modelVersionId": "model:reflection-beam",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "کدنویسی، استدلال و ابزارهای عامل",
+  "description": "Beam 1.0 با وزن‌های رسمی BF16، FP8 و NVFP4 و مجوز Apache-2.0 منتشر شده است.",
+  "distinguishingFeature": "۵۰۱٫۳B کل و ۲۳٫۴B فعال؛ حافظه از وزن کل محاسبه می‌شود، نه پارامتر فعال.",
+  "conditions": [
+    "llama.cpp b11701 پشتیبانی Beam را پس از v0.7.0 اضافه می‌کند؛ پشتیبانی آن به 0.7.0 نسبت داده نمی‌شود. مسیر vLLM/SGLang به نسخهٔ سازگار نیاز دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-beam"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:reflection-beam:agents-tools",
+  "modelVersionId": "model:reflection-beam",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "کدنویسی، استدلال و ابزارهای عامل",
+  "description": "Beam 1.0 با وزن‌های رسمی BF16، FP8 و NVFP4 و مجوز Apache-2.0 منتشر شده است.",
+  "distinguishingFeature": "۵۰۱٫۳B کل و ۲۳٫۴B فعال؛ حافظه از وزن کل محاسبه می‌شود، نه پارامتر فعال.",
+  "conditions": [
+    "llama.cpp b11701 پشتیبانی Beam را پس از v0.7.0 اضافه می‌کند؛ پشتیبانی آن به 0.7.0 نسبت داده نمی‌شود. مسیر vLLM/SGLang به نسخهٔ سازگار نیاز دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-beam"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:meta-models-muse-spark-open-816b-a42b:text-work",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "استدلال، کدنویسی و تحلیل تصویری",
+  "description": "مدل چندوجهی Muse Spark Open با ۸۱۶B کل و ۴۲B فعال؛ دریافت وزن نیازمند تأیید دسترسی و پذیرش مجوز اختصاصی است.",
+  "distinguishingFeature": "کارت و config خام بدون دسترسی مجاز دریافت نشدند؛ زمینهٔ 1M اعلام ناشر است و قالب Safetensors از فرادادهٔ عمومی تأیید شد.",
+  "conditions": [
+    "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:meta-models-muse-spark-open-816b-a42b:coding-assistant",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "استدلال، کدنویسی و تحلیل تصویری",
+  "description": "مدل چندوجهی Muse Spark Open با ۸۱۶B کل و ۴۲B فعال؛ دریافت وزن نیازمند تأیید دسترسی و پذیرش مجوز اختصاصی است.",
+  "distinguishingFeature": "کارت و config خام بدون دسترسی مجاز دریافت نشدند؛ زمینهٔ 1M اعلام ناشر است و قالب Safetensors از فرادادهٔ عمومی تأیید شد.",
+  "conditions": [
+    "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:meta-models-muse-spark-open-816b-a42b:reasoning-analysis",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال، کدنویسی و تحلیل تصویری",
+  "description": "مدل چندوجهی Muse Spark Open با ۸۱۶B کل و ۴۲B فعال؛ دریافت وزن نیازمند تأیید دسترسی و پذیرش مجوز اختصاصی است.",
+  "distinguishingFeature": "کارت و config خام بدون دسترسی مجاز دریافت نشدند؛ زمینهٔ 1M اعلام ناشر است و قالب Safetensors از فرادادهٔ عمومی تأیید شد.",
+  "conditions": [
+    "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:meta-models-muse-spark-open-816b-a42b:agents-tools",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "استدلال، کدنویسی و تحلیل تصویری",
+  "description": "مدل چندوجهی Muse Spark Open با ۸۱۶B کل و ۴۲B فعال؛ دریافت وزن نیازمند تأیید دسترسی و پذیرش مجوز اختصاصی است.",
+  "distinguishingFeature": "کارت و config خام بدون دسترسی مجاز دریافت نشدند؛ زمینهٔ 1M اعلام ناشر است و قالب Safetensors از فرادادهٔ عمومی تأیید شد.",
+  "conditions": [
+    "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:meta-models-muse-spark-open-816b-a42b:document-vision",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "استدلال، کدنویسی و تحلیل تصویری",
+  "description": "مدل چندوجهی Muse Spark Open با ۸۱۶B کل و ۴۲B فعال؛ دریافت وزن نیازمند تأیید دسترسی و پذیرش مجوز اختصاصی است.",
+  "distinguishingFeature": "کارت و config خام بدون دسترسی مجاز دریافت نشدند؛ زمینهٔ 1M اعلام ناشر است و قالب Safetensors از فرادادهٔ عمومی تأیید شد.",
+  "conditions": [
+    "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:text-work",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "description": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "distinguishingFeature": "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند.",
+  "conditions": [
+    "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:coding-assistant",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "description": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "distinguishingFeature": "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند.",
+  "conditions": [
+    "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "description": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "distinguishingFeature": "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند.",
+  "conditions": [
+    "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:agents-tools",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "description": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "distinguishingFeature": "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند.",
+  "conditions": [
+    "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:document-vision",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "description": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "distinguishingFeature": "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند.",
+  "conditions": [
+    "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:structured-extraction",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "description": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "distinguishingFeature": "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند.",
+  "conditions": [
+    "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-74b-a9b:text-work",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "عامل محلی، کدنویسی و درک تصویر",
+  "description": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "distinguishingFeature": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+  "conditions": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+    "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-74b-a9b:coding-assistant",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "عامل محلی، کدنویسی و درک تصویر",
+  "description": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "distinguishingFeature": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+  "conditions": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+    "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-74b-a9b:reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "عامل محلی، کدنویسی و درک تصویر",
+  "description": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "distinguishingFeature": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+  "conditions": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+    "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-74b-a9b:agents-tools",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "عامل محلی، کدنویسی و درک تصویر",
+  "description": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "distinguishingFeature": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+  "conditions": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+    "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-74b-a9b:document-vision",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "عامل محلی، کدنویسی و درک تصویر",
+  "description": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "distinguishingFeature": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+  "conditions": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+    "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-74b-a9b:structured-extraction",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "عامل محلی، کدنویسی و درک تصویر",
+  "description": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "distinguishingFeature": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+  "conditions": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+    "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:deepseek-ai-deepseek-v4-1-flash-1017:text-work",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "استدلال، کدنویسی، عامل و ورودی تصویری",
+  "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
+  "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+  "conditions": [
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:deepseek-ai-deepseek-v4-1-flash-1017:coding-assistant",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "استدلال، کدنویسی، عامل و ورودی تصویری",
+  "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
+  "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+  "conditions": [
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:deepseek-ai-deepseek-v4-1-flash-1017:reasoning-analysis",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال، کدنویسی، عامل و ورودی تصویری",
+  "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
+  "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+  "conditions": [
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:deepseek-ai-deepseek-v4-1-flash-1017:agents-tools",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "استدلال، کدنویسی، عامل و ورودی تصویری",
+  "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
+  "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+  "conditions": [
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:deepseek-ai-deepseek-v4-1-flash-1017:document-vision",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "استدلال، کدنویسی، عامل و ورودی تصویری",
+  "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
+  "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+  "conditions": [
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:liquidai-lfm2-5-24b-a2b:text-work",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "استدلال و عامل محلی",
+  "description": "مدل متنی استدلالی MoE با ۲۴٫۰B کل، ۲٫۴۵B فعال و زمینهٔ ۱۳۱٬۰۷۲؛ گونه‌های رسمی FP8، GGUF و MLX دارد.",
+  "distinguishingFeature": "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+  "conditions": [
+    "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+    "LFM Open License v1.0 مجوز تجاری بی‌قید نیست؛ آستانهٔ درآمد سالانهٔ ۱۰ میلیون دلار و تعریف شخصیت حقوقی و استثنای غیرانتفاعی را در مجوز بررسی کنید."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:liquidai-lfm2-5-24b-a2b:reasoning-analysis",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال و عامل محلی",
+  "description": "مدل متنی استدلالی MoE با ۲۴٫۰B کل، ۲٫۴۵B فعال و زمینهٔ ۱۳۱٬۰۷۲؛ گونه‌های رسمی FP8، GGUF و MLX دارد.",
+  "distinguishingFeature": "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+  "conditions": [
+    "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+    "LFM Open License v1.0 مجوز تجاری بی‌قید نیست؛ آستانهٔ درآمد سالانهٔ ۱۰ میلیون دلار و تعریف شخصیت حقوقی و استثنای غیرانتفاعی را در مجوز بررسی کنید."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:liquidai-lfm2-5-24b-a2b:agents-tools",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "استدلال و عامل محلی",
+  "description": "مدل متنی استدلالی MoE با ۲۴٫۰B کل، ۲٫۴۵B فعال و زمینهٔ ۱۳۱٬۰۷۲؛ گونه‌های رسمی FP8، GGUF و MLX دارد.",
+  "distinguishingFeature": "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+  "conditions": [
+    "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+    "LFM Open License v1.0 مجوز تجاری بی‌قید نیست؛ آستانهٔ درآمد سالانهٔ ۱۰ میلیون دلار و تعریف شخصیت حقوقی و استثنای غیرانتفاعی را در مجوز بررسی کنید."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:liquidai-lfm2-5-24b-a2b:coding-assistant",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "applicationId": "coding-assistant",
+  "role": "coding",
+  "summary": "استدلال و عامل محلی",
+  "description": "مدل متنی استدلالی MoE با ۲۴٫۰B کل، ۲٫۴۵B فعال و زمینهٔ ۱۳۱٬۰۷۲؛ گونه‌های رسمی FP8، GGUF و MLX دارد.",
+  "distinguishingFeature": "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+  "conditions": [
+    "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+    "LFM Open License v1.0 مجوز تجاری بی‌قید نیست؛ آستانهٔ درآمد سالانهٔ ۱۰ میلیون دلار و تعریف شخصیت حقوقی و استثنای غیرانتفاعی را در مجوز بررسی کنید."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-switch-4-1-8b:text-work",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "description": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "distinguishingFeature": "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+  "conditions": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-switch-4-1-8b:structured-extraction",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "description": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "distinguishingFeature": "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+  "conditions": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-switch-4-1-8b:agents-tools",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "description": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "distinguishingFeature": "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+  "conditions": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-switch-4-1-30b:text-work",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "description": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "distinguishingFeature": "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+  "conditions": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-switch-4-1-30b:structured-extraction",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "description": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "distinguishingFeature": "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+  "conditions": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:ibm-granite-granite-switch-4-1-30b:agents-tools",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "description": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "distinguishingFeature": "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+  "conditions": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-labs-dory1-0-4b:text-work",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "استدلال متنی؛ مسیر اجرا نیازمند تأیید",
+  "description": "مدل استدلالی ۴B با اجرای تکراری لایه‌ها و زمینهٔ اعلامی 256K؛ زبان اعلامی انگلیسی است.",
+  "distinguishingFeature": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است.",
+  "conditions": [
+    "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-dory"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-labs-dory1-0-4b:reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "استدلال متنی؛ مسیر اجرا نیازمند تأیید",
+  "description": "مدل استدلالی ۴B با اجرای تکراری لایه‌ها و زمینهٔ اعلامی 256K؛ زبان اعلامی انگلیسی است.",
+  "distinguishingFeature": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است.",
+  "conditions": [
+    "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:catchup1017-dory"
+  ]
+});

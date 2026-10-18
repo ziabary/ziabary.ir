@@ -263,6 +263,7 @@ const llmViewConfigs: LlmViewConfig[] = [
       { key: 'languages', label: t('views.0365') },
       { key: 'weight-files', label: t('views.0366') }, { key: 'weight-caveat', label: t('views.0367') },
       { key: 'license-url', label: t('views.0368') }, { key: 'commercial-use', label: t('views.0369') }, { key: 'license-restrictions', label: t('views.0370') },
+      { key: 'weight-access', label: t('models.weightAccess.label') },
       { key: 'released-on', label: t('views.0371'), sortable: true }, { key: 'last-reviewed', label: t('views.0372') },
       { key: 'sources', label: t('views.0373') }
     ],
@@ -281,6 +282,7 @@ const llmViewConfigs: LlmViewConfig[] = [
       { id: 'architecture', label: t('views.0388'), control: 'multi', level: 'advanced', options: options(['dense', 'moe', 'hybrid', 'other']) },
       { id: 'attention-architecture', label: t('views.0389'), control: 'select', level: 'advanced', options: [option('hybrid', t('views.0390'))] },
       { id: 'commercial-use', label: t('views.0369'), control: 'select', level: 'advanced', options: [option('allowed', t('views.0391')), option('restricted', t('views.0306')), option('prohibited', t('views.0392'))] },
+      { id: 'weight-access', label: t('models.weightAccess.label'), control: 'select', level: 'advanced', options: [option('public', t('models.weightAccess.public')), option('gated', t('models.weightAccess.gated'))] },
       { id: 'input-modality', label: t('views.0393'), control: 'multi', level: 'advanced', options: options(['text', 'image', 'audio', 'video', 'structured-data']) },
       { id: 'output-modality', label: t('views.0394'), control: 'multi', level: 'advanced', options: options(['text', 'embedding', 'structured-data']) },
       { id: 'application', label: t('views.0395'), control: 'multi', level: 'advanced', options: applicationOptions },

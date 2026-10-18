@@ -1,4 +1,4 @@
-export type GpuVendor = 'NVIDIA' | 'AMD' | 'Intel' | 'Huawei' | 'Google' | 'AWS' | 'Tenstorrent' | 'Qualcomm' | 'Cerebras' | 'Groq';
+export type GpuVendor = 'NVIDIA' | 'AMD' | 'Intel' | 'Huawei' | 'Google' | 'AWS' | 'Tenstorrent' | 'Qualcomm' | 'Cerebras' | 'Groq' | 'Microsoft';
 export type GpuStatus = 'current' | 'system-only' | 'announced' | 'legacy' | 'unofficial' | 'unverified';
 export type GpuClass = 'frontier' | 'datacenter' | 'server-pcie' | 'workstation' | 'consumer';
 export type GpuWorkload = 'آموزش مدل‌های بزرگ' | 'استنتاج سازمانی' | 'هوش مصنوعی محلی' | 'HPC' | 'گرافیک و رندر' | 'چندمستاجری';
@@ -70,12 +70,42 @@ export type GpuBaseRecord = {
 export type GpuRecord = GpuBaseRecord & GpuComputeSpec;
 
 export const gpuLastReviewed = {
-  iso: '2026-10-04',
-  fa: '۱۲ مهر ۱۴۰۵',
-  gregorian: '4 October 2026'
+  iso: '2026-10-17',
+  fa: '۲۵ مهر ۱۴۰۵',
+  gregorian: '17 October 2026'
 };
 
 const rows: GpuBaseRecord[] = [
+  {
+  "id": "microsoft-maia-300",
+  "vendor": "Microsoft",
+  "model": "Azure Maia 300",
+  "status": "announced",
+  "gpuClass": "frontier",
+  "architecture": "Maia 300 / chiplets",
+  "year": 2027,
+  "memoryGB": 288,
+  "memoryType": "HBM4",
+  "bandwidthTBs": 18,
+  "powerW": 950,
+  "formFactor": "شتاب‌دهندهٔ اختصاصی Azure",
+  "hostInterface": "سامانهٔ اختصاصی؛ کارت عمومی PCIe نیست",
+  "cooling": "وابسته به طراحی رک Azure",
+  "compute": "نرخ محاسباتی مستقل در ستون‌های این جدول تأیید نشده است.",
+  "interconnect": "Ethernet-based scale-up",
+  "partitioning": "مدیریت‌شده در Azure",
+  "software": "Azure Maia software stack",
+  "workloads": [
+    "استنتاج سازمانی"
+  ],
+  "bestFit": "رصد استقرار ابری استنتاج در Azure از ۲۰۲۷.",
+  "caution": "معرفی‌شده؛ استقرار تولیدی از ۲۰۲۷ برنامه‌ریزی شده است. حافظه و پهنای‌باند این ردیف برای یک شتاب‌دهنده‌اند؛ رک ۹۶ شتاب‌دهنده و پوش توان ۱۶۷kW دارد. موجودی تجاری کارت مستقل نیست.",
+  "serverReady": false,
+  "sourceUrl": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+  "sourceLabel": "Microsoft Azure Maia 300 architecture",
+  "productKind": "ابر",
+  "sourceTier": "مستندات فنی سازنده"
+},
   {
     id: 'nvidia-dgx-spark-64gb', vendor: 'NVIDIA', model: 'DGX Spark 64GB', status: 'announced', gpuClass: 'workstation', architecture: 'GB10 Grace Blackwell', year: 2026,
     memoryGB: 64, memoryType: 'حافظهٔ یکپارچهٔ مشترک CPU/GPU', bandwidthTBs: 0, powerW: null,
@@ -93,12 +123,44 @@ const rows: GpuBaseRecord[] = [
     ]
   },
   {
-    id: 'intel-crescent-island', vendor: 'Intel', model: 'Crescent Island', status: 'announced', gpuClass: 'server-pcie', architecture: 'Xe3P', year: 2026,
-    memoryGB: 480, memoryType: 'LPDDR5X؛ تا ظرفیت اعلامی', bandwidthTBs: 0, powerW: 350, formFactor: 'کارت PCIe؛ ابعاد نهایی اعلام نشده', hostInterface: 'PCIe؛ نسل و عرض لینک در خبر مشخص نیست', cooling: 'هواخنک؛ نوع فن در خبر مشخص نیست',
-    compute: '۳۲ Xe Core و ۲۵۶ XMX؛ نرخ TFLOPS/TOPS در خبر Hot Chips درج نشده است.', interconnect: 'جزئیات اعلام نشده', partitioning: 'جزئیات اعلام نشده', software: 'پشتهٔ نرم‌افزاری Intel؛ نسخه‌های پشتیبانی‌شده نیازمند تأیید نهایی',
-    workloads: ['استنتاج سازمانی'], bestFit: 'رصد استنتاج مدل‌های پرحافظه در دیتاسنترهای هواخنک موجود.', caution: 'مشخصات اعلام‌شده در Hot Chips اوت ۲۰۲۶ هستند؛ خبر، زمان عرضهٔ عمومی و QPL سرور را تأیید نمی‌کند.', serverReady: true,
-    sourceUrl: 'https://www.intel.de/content/www/de/de/newsroom/news/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026.html', sourceLabel: 'Intel Hot Chips 2026 — Crescent Island', productKind: 'کارت', sourceTier: 'سازنده', dataDisclosure: { bandwidthTBs: 'not-published' }
-  },
+  "id": "intel-crescent-island",
+  "vendor": "Intel",
+  "model": "Intel GPU D-series (Crescent Island)",
+  "status": "announced",
+  "gpuClass": "server-pcie",
+  "architecture": "Xe3P",
+  "year": 2026,
+  "memoryGB": 480,
+  "memoryDisplay": "تا ۴۸۰GB؛ کارت Intel برابر ۱۶۰GB",
+  "memoryType": "LPDDR5X",
+  "bandwidthTBs": 1.5,
+  "powerW": 350,
+  "formFactor": "کارت PCIe؛ ابعاد نهایی وابسته به سازنده",
+  "hostInterface": "PCIe؛ نسل و عرض لینک در اعلان مشخص نشده",
+  "cooling": "هواخنک",
+  "compute": "۱٫۳ PFLOPS نظری FP8 اعلام شده، اما تفکیک dense/sparse مشخص نیست؛ نرخ dense ثبت نشده است. شمار Xe Core با CUDA Core قابل قیاس مستقیم نیست.",
+  "interconnect": "جزئیات اعلام نشده",
+  "partitioning": "جزئیات اعلام نشده",
+  "software": "Intel oneAPI / OpenVINO",
+  "workloads": [
+    "استنتاج سازمانی"
+  ],
+  "bestFit": "بررسی استنتاج پرحافظه در دیتاسنتر هواخنک؛ پس از تأیید SKU و پشتهٔ نرم‌افزاری.",
+  "caution": "نمونه‌دهی در ۱۲ اکتبر اعلام شد؛ عرضهٔ عمومی و QPL شاسی تأیید نشده‌اند. سقف ۴۸۰GB مربوط به خانوادهٔ ODM است؛ کارت با نشان Intel برابر ۱۶۰GB دارد.",
+  "serverReady": true,
+  "sourceUrl": "https://www.intel.com/content/www/us/en/newsroom/news/artificial-intelligence/intel-accelerates-open-infrastructure-agentic-ai-era.html",
+  "sourceLabel": "Intel OCP 2026 — GPU D-series",
+  "productKind": "کارت",
+  "sourceTier": "سازنده",
+  "extraSpecs": [
+    {
+      "group": "محاسبات",
+      "label": "FP8 نظری اعلامی",
+      "value": "۱٫۳ PFLOPS؛ تفکیک dense/sparse نامعلوم",
+      "basis": "رسمی"
+    }
+  ]
+},
   {
     id: 'nvidia-groq3-lpx', vendor: 'NVIDIA', model: 'Groq 3 LPX', status: 'system-only', gpuClass: 'frontier', architecture: 'Groq 3 LPU؛ SRAM با مدیریت کامپایلر', year: 2026,
     memoryGB: 0, memoryType: 'SRAM توزیع‌شده در رک؛ ۵۰۰MB در هر LPU', bandwidthTBs: 0, powerW: null, formFactor: 'رک LPX با ۲۵۶ LPU', hostInterface: 'پلتفرم Vera Rubin', cooling: 'وابسته به طراحی رک',
@@ -1099,10 +1161,11 @@ const rows: GpuBaseRecord[] = [
 ];
 
 const computeSpecs: Record<string, GpuComputeSpec> = {
+  'microsoft-maia-300': {generalCoreCount:null,generalCoreLabel:'Compute chiplet',matrixCoreCount:null,matrixCoreLabel:'Matrix engine',fp8:{dense:null},fp16:{dense:null},fp32:null,fp64:null},
   'intel-crescent-island': {
     generalCoreCount: 32, generalCoreLabel: 'Xe Core', matrixCoreCount: 256, matrixCoreLabel: 'XMX Engine',
     fp8: { dense: null }, fp16: { dense: null }, fp32: null, fp64: null,
-    computeFootnote: 'شمار Xe Core با CUDA Core یا Stream Processor قابل قیاس مستقیم نیست؛ نرخ محاسباتی در منبع اعلام نشده است.'
+    computeFootnote: "۱٫۳ PFLOPS نظری FP8 اعلام شده، اما تفکیک dense/sparse مشخص نیست؛ نرخ dense ثبت نشده است. شمار Xe Core با CUDA Core قابل قیاس مستقیم نیست."
   },
   'nvidia-groq3-lpx': {
     generalCoreCount: null, generalCoreLabel: 'LPU', matrixCoreCount: null, matrixCoreLabel: 'Matrix Engine',

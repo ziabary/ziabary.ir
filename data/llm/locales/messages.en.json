@@ -1368,5 +1368,8 @@
   "runtime1010.qwen.note": "One user report with the same input on Linux and SYCL; baseline values are approximate. Corrected values come from PR #30160; b11537 contains the fix. Input length and repetition count are not fully reported; this is not a separate MTP test or GPU ranking.",
   "runtime1010.sycl.label": "gpt-oss · B70 · SYCL MXFP4 · Windows",
   "runtime1010.sycl.note": "Original PR #29809 author test: Windows 11, oneAPI 2026.0, EPYC 7402P and Flash Attention enabled; five repetitions for 20B, two for 120B. PR-branch decode results; the fix is in b11540. Do not extrapolate to prefill, Linux or other GPUs.",
-  "runtime1010.prefill": "Prompt processing; length not reported"
+  "runtime1010.prefill": "Prompt processing; length not reported",
+  "models.weightAccess.label": "Weight access",
+  "models.weightAccess.public": "Public download",
+  "models.weightAccess.gated": "Approval required"
 }

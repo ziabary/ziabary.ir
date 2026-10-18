@@ -2264,3 +2264,635 @@ applicationAssessments.push({
     "evidence:embeddinggemma-2-developer-guide"
   ]
 });
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-reflection-beam-coding-assistant",
+  "modelVersionId": "model:reflection-beam",
+  "modelRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "applicationId": "coding-assistant",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:reflection-beam-announcement",
+    "evidence:catchup1017-beam"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-reflection-beam-reasoning-analysis",
+  "modelVersionId": "model:reflection-beam",
+  "modelRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:reflection-beam-announcement",
+    "evidence:catchup1017-beam"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-reflection-beam-agents-tools",
+  "modelVersionId": "model:reflection-beam",
+  "modelRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:reflection-beam-announcement",
+    "evidence:catchup1017-beam"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-text-work",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "modelRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-coding-assistant",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "modelRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "applicationId": "coding-assistant",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-reasoning-analysis",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "modelRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-agents-tools",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "modelRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-document-vision",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "modelRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "applicationId": "document-vision",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-text-work",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-coding-assistant",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "applicationId": "coding-assistant",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-agents-tools",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-document-vision",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "applicationId": "document-vision",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-structured-extraction",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "applicationId": "structured-extraction",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-text-work",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-coding-assistant",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "applicationId": "coding-assistant",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-agents-tools",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-document-vision",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "applicationId": "document-vision",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-structured-extraction",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "applicationId": "structured-extraction",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-text-work",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "modelRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-coding-assistant",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "modelRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "applicationId": "coding-assistant",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-reasoning-analysis",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "modelRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-agents-tools",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "modelRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-document-vision",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "modelRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "applicationId": "document-vision",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-text-work",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "modelRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-reasoning-analysis",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "modelRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-agents-tools",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "modelRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-coding-assistant",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "modelRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "applicationId": "coding-assistant",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-ibm-granite-granite-switch-4-1-8b-text-work",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "modelRevision": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-ibm-granite-granite-switch-4-1-8b-structured-extraction",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "modelRevision": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "applicationId": "structured-extraction",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-ibm-granite-granite-switch-4-1-8b-agents-tools",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "modelRevision": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-ibm-granite-granite-switch-4-1-30b-text-work",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "modelRevision": "70b75c6fd254db33418e490714769ef028d16166",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-ibm-granite-granite-switch-4-1-30b-structured-extraction",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "modelRevision": "70b75c6fd254db33418e490714769ef028d16166",
+  "applicationId": "structured-extraction",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-ibm-granite-granite-switch-4-1-30b-agents-tools",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "modelRevision": "70b75c6fd254db33418e490714769ef028d16166",
+  "applicationId": "agents-tools",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-labs-dory1-0-4b-text-work",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "modelRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "applicationId": "text-work",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-dory"
+  ]
+});
+applicationAssessments.push({
+  "id": "application-assessment:catchup1017-nvidia-nemotron-labs-dory1-0-4b-reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "modelRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "applicationId": "reasoning-analysis",
+  "basis": "declared-capability",
+  "outcome": {
+    "state": "not-measured"
+  },
+  "summary": "کاربرد اعلامی ناشر؛ ارزیابی مستقل ثبت نشده است.",
+  "limitations": [
+    "کیفیت فارسی، حافظه و کارایی این کاربرد اندازه‌گیری نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:catchup1017-dory"
+  ]
+});

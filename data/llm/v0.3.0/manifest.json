@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-10-11",
+  "asOf": "2026-10-17",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -144,5 +144,11 @@
     "scope": "Pinned id_slot with RAM prompt cache; canary acceptance criteria; no hardware, model, performance or memory changes",
     "runtimeTested": false,
     "memoryEstimateChanged": false
+  },
+  "catchup20261017": {
+    "scope": "Model weights, runtime releases, gated licenses and hardware announcements; no model/GPU execution",
+    "runtimeTested": false,
+    "modelsAdded": 8,
+    "sourceReview": "sources/table-catchup-2026-10-17/review.json"
   }
 }

@@ -320,3 +320,11 @@ families.push({
     "evidence:ifm-k2-horizon-gguf-collection"
   ]
 });
+families.push({
+  "id": "family:muse",
+  "name": "Muse",
+  "publisher": "Meta",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});

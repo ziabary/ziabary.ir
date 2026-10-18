@@ -7191,18 +7191,29 @@ modelProfiles.push({
 modelProfiles.push({
   "id": "model-profile:reflection-beam",
   "modelVersionId": "model:reflection-beam",
-  "introduction": "Beam مدل متنی MoE با ۵۰۱ میلیارد پارامتر کل و ۲۳ میلیارد فعال، طبق اعلان Reflection است؛ برای برنامه‌نویسی، استدلال و Agent معرفی شده و در انتظار عرضهٔ وزن عمومی است.",
-  "roleSummary": "برنامه‌نویسی، استدلال و Agent؛ کاربردهای اعلام سازنده",
+  "introduction": "Beam 1.0 با وزن‌های رسمی BF16، FP8 و NVFP4 و مجوز Apache-2.0 منتشر شده است.",
+  "roleSummary": "کدنویسی، استدلال و ابزارهای عامل",
   "distinguishingFeatures": [
-    "اعلام‌شده؛ دسترسی فعلی محدود و ثبت‌نامی، وزن‌ها و کارت مدل برای ادامهٔ اکتبر وعده داده شده‌اند.",
-    "اندازه‌ها اعلام سازنده‌اند؛ ۲۳ میلیارد پارامتر فعال معیار حافظهٔ کل نیست. موتور اجرا و کوانتیزهٔ سازگار تأیید نشده‌اند."
+    "۵۰۱٫۳B کل و ۲۳٫۴B فعال؛ حافظه از وزن کل محاسبه می‌شود، نه پارامتر فعال."
   ],
-  "languageSummary": "ارزیابی معتبر فارسی منتشر نشده است.",
-  "officialUrl": "https://reflection.ai/blog/introducing-beam",
-  "runGuides": [],
-  "downloadSearchNote": "وزن عمومی عرضه نشده؛ مجوز Apache-2.0، گزارش فنی و فایل‌های اجرا برای انتشار آتی وعده داده شده‌اند. این ردیف پیشنهاد آمادهٔ اجرای محلی نیست.",
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/README.md",
+      "conditions": [
+        "llama.cpp b11701 پشتیبانی Beam را پس از v0.7.0 اضافه می‌کند؛ پشتیبانی آن به 0.7.0 نسبت داده نمی‌شود. مسیر vLLM/SGLang به نسخهٔ سازگار نیاز دارد."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-beam"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
   "evidenceIds": [
-    "evidence:reflection-beam-announcement"
+    "evidence:catchup1017-beam"
   ]
 });
 modelProfiles.push({
@@ -7666,5 +7677,235 @@ modelProfiles.push({
     "۰٫۷۴B کل و ۰٫۲۷B متن؛ متن/کد/تصویر/ویدئو/صوت به بردار مشترک ۷۶۸بعدی با MRL",
     "MTEB چندزبانهٔ متنی: ۶۱٫۳۶ در برابر ۶۱٫۱۵ نسل قبل؛ این تغییر کوچک شاهد کیفیت فارسی نیست و بهبود عمده در کد و چندوجهی گزارش شده است",
     "ارقام ۱۹۱/۵۶۷ مگابایت مربوط به اجرای کوانتیزه روی Pixel 11 Pro هستند؛ حافظهٔ عمومی GPU و اجرای واقعی این راهنما سنجیده نشده‌اند"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:meta-models-muse-spark-open-816b-a42b",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "introduction": "مدل چندوجهی Muse Spark Open با ۸۱۶B کل و ۴۲B فعال؛ دریافت وزن نیازمند تأیید دسترسی و پذیرش مجوز اختصاصی است.",
+  "roleSummary": "استدلال، کدنویسی و تحلیل تصویری",
+  "distinguishingFeatures": [
+    "کارت و config خام بدون دسترسی مجاز دریافت نشدند؛ زمینهٔ 1M اعلام ناشر است و قالب Safetensors از فرادادهٔ عمومی تأیید شد."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+      "conditions": [
+        "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-muse"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "introduction": "مدل دیداری–زبانی ترکیبی Mamba-2/Transformer/MoE با ورودی متن، تصویر و ویدئو و خروجی متن.",
+  "roleSummary": "استدلال، کدنویسی و درک سند و ویدئو",
+  "distinguishingFeatures": [
+    "۱۲۰B کل و ۱۲B فعال؛ گونه‌های BF16 و NVFP4 رسمی از هم جدا هستند."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+      "conditions": [
+        "مثال کارت از vLLM nightly با commit 3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 استفاده می‌کند؛ پشتیبانی vLLM 0.31 پایدار از آن نتیجه نمی‌شود. Ollama 0.40.5 پشتیبانی Super را اعلام کرده است."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-super"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "introduction": "مدل چندوجهی ۷۴B با ۹B فعال و بستهٔ رسمی IQ2 با هدف اجرای ۲۴GB؛ برآورد کامل سرویس ثبت نشده است.",
+  "roleSummary": "عامل محلی، کدنویسی و درک تصویر",
+  "distinguishingFeatures": [
+    "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/README.md",
+      "conditions": [
+        "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند.",
+        "نمونهٔ vLLM از nightly-77154ca6116ae34cbfe314beef1016bde9b63989 استفاده می‌کند؛ تأیید v0.31 پایدار نیست. llama.cpp 0.7.0 پشتیبانی Bolt را دارد."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-bolt-bf16"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:deepseek-ai-deepseek-v4-1-flash-1017",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "introduction": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
+  "roleSummary": "استدلال، کدنویسی، عامل و ورودی تصویری",
+  "distinguishingFeatures": [
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md",
+      "conditions": [
+        "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-deepseek1017"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:liquidai-lfm2-5-24b-a2b",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "introduction": "مدل متنی استدلالی MoE با ۲۴٫۰B کل، ۲٫۴۵B فعال و زمینهٔ ۱۳۱٬۰۷۲؛ گونه‌های رسمی FP8، GGUF و MLX دارد.",
+  "roleSummary": "استدلال و عامل محلی",
+  "distinguishingFeatures": [
+    "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "llama.cpp",
+      "href": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/1769516ac588c4c558089c94f27d96b0dc67b183/README.md",
+      "conditions": [
+        "۱۲ اکتبر تاریخ ایجاد مخزن اصلی است؛ زمان نخستین انتشار همهٔ گونه‌ها تأیید نشده است. ۲٫۴۵B فعال، حجم ۲۴B وزن کل را تعیین نمی‌کند.",
+        "LFM Open License v1.0 مجوز تجاری بی‌قید نیست؛ آستانهٔ درآمد سالانهٔ ۱۰ میلیون دلار و تعریف شخصیت حقوقی و استثنای غیرانتفاعی را در مجوز بررسی کنید."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-lfm24"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ibm-granite-granite-switch-4-1-8b",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "introduction": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "roleSummary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "distinguishingFeatures": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/blob/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/README.md",
+      "conditions": [
+        "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+        "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-granite8"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:ibm-granite-granite-switch-4-1-30b",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "introduction": "Granite Switch 4.1 مدل پایهٔ متراکم را با adapterهای تصمیم و Guardian و encoder گفتار در یک بسته ترکیب می‌کند.",
+  "roleSummary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
+  "distinguishingFeatures": [
+    "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+    "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "vLLM",
+      "href": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/blob/70b75c6fd254db33418e490714769ef028d16166/README.md",
+      "conditions": [
+        "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
+        "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-granite30"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-labs-dory1-0-4b",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "introduction": "مدل استدلالی ۴B با اجرای تکراری لایه‌ها و زمینهٔ اعلامی 256K؛ زبان اعلامی انگلیسی است.",
+  "roleSummary": "استدلال متنی؛ مسیر اجرا نیازمند تأیید",
+  "distinguishingFeatures": [
+    "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+  ],
+  "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "runGuides": [
+    {
+      "label": "راهنمای رسمی همین نسخه",
+      "engine": "Publisher documentation",
+      "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/blob/b366b87f762ea334ba3eb55912031baba1515810/README.md",
+      "conditions": [
+        "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+      ],
+      "evidenceIds": [
+        "evidence:catchup1017-dory"
+      ]
+    }
+  ],
+  "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
+  "evidenceIds": [
+    "evidence:catchup1017-dory"
   ]
 });

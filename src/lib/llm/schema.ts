@@ -161,6 +161,10 @@ export type ModelTaskSpecialization = 'translation' | 'code-completion' | 'codin
 export interface ModelVersion {
   /** Commercial service availability does not establish downloadable weights. */
   accessMode?: 'public-weights' | 'commercial-service';
+  /** Download permission is separate from whether weights have been released. */
+  weightAccess?: 'public' | 'gated';
+  /** Keep experimental PR/fork routes out of default local recommendations. */
+  localExecutionStatus?: 'requires-validation';
   /** Runtime dependency, distinct from training lineage. Never a standalone candidate. */
   dependency?: { kind: 'speculative-drafter'; targetModelId: ModelVersionId; evidenceIds: EvidenceId[] };
   /** Reviewed specialization, not merely a task a general-purpose model can perform. */

@@ -1,0 +1,22 @@
+{
+  "reviewDate": "2026-10-17",
+  "publication": "local",
+  "languages": [
+    "fa",
+    "en",
+    "es"
+  ],
+  "source": "https://www.uscourts.gov/sites/default/files/document/2026-10-evidence-rules-agenda-book.pdf",
+  "sourcePages": {
+    "proposalStatus": 5,
+    "rule901cWorkingDraft": 150,
+    "rule707WorkingDraft": 173
+  },
+  "notes": [
+    "Legal proposals are described as working drafts, not rules in force.",
+    "Governance implications outside court are identified as analysis, not automatic legal duties.",
+    "ChatGPT citation placeholders were replaced by inline primary-source links.",
+    "The attachment’s editorial commentary and separate proposed article on agent-control incidents were excluded.",
+    "The source-code audit-rights article remains a draft; its principle is explained without linking to an unpublished page."
+  ]
+}

@@ -9478,18 +9478,15 @@
     "scope/conditions/0": "oct06.api-compatibility:llama-cpp-v0-6-0-systemone.scope.conditions.0",
     "limitations/0": "oct06.api-compatibility:llama-cpp-v0-6-0-systemone.limitations.0"
   },
-  "repository.models/model:reflection-beam": {
-    "version": "oct06.model:reflection-beam.version",
-    "license/name/note": "oct06.model:reflection-beam.license.name.note",
-    "license/restrictions/0": "oct06.model:reflection-beam.license.restrictions.0"
-  },
+  "repository.models/model:reflection-beam": {},
   "repository.modelProfiles/model-profile:reflection-beam": {
-    "introduction": "oct06.model-profile:reflection-beam.introduction",
-    "roleSummary": "oct06.model-profile:reflection-beam.roleSummary",
-    "distinguishingFeatures/0": "oct06.model-profile:reflection-beam.distinguishingFeatures.0",
-    "distinguishingFeatures/1": "oct06.model-profile:reflection-beam.distinguishingFeatures.1",
-    "languageSummary": "oct06.model-profile:reflection-beam.languageSummary",
-    "downloadSearchNote": "oct06.model-profile:reflection-beam.downloadSearchNote"
+    "introduction": "catchup1017.87a1520e7328bd",
+    "roleSummary": "catchup1017.8a2c2240cc94f6",
+    "distinguishingFeatures/0": "catchup1017.c9681c34d2fc56",
+    "languageSummary": "catchup1017.0d634866f690f4",
+    "downloadSearchNote": "catchup1017.e730edf6741551",
+    "runGuides/0/label": "catchup1017.175cdbc24ce76a",
+    "runGuides/0/conditions/0": "catchup1017.808aba4441e908"
   },
   "repository.models/model:ifm-k2-horizon-0-9b": {
     "totalParametersB/note": "k2h.001",
@@ -9792,8 +9789,8 @@
   "repository.softwareReleases/software-release:ollama-v0-40-2": {
     "offlineOperation/note": "record.0121",
     "targetScenario/value": "record.0122",
-    "backendSummary/value": "ollama0402.backend",
-    "selectionCaveat": "ollama0402.conditions"
+    "backendSummary/value": "catchup1017.8678f47fd67ef8",
+    "selectionCaveat": "catchup1017.a1d9f76774e687"
   },
   "repository.softwareCapabilities/software-capability:ollama-task-generation:v0402": {
     "scope/conditions/0": "record.0124",
@@ -9850,5 +9847,733 @@
     "targetScenario/value": "b11552.scenario",
     "backendSummary/value": "b11552.summary",
     "selectionCaveat": "b11552.caveat"
+  },
+  "repository.models/model:meta-models-muse-spark-open-816b-a42b": {
+    "license/restrictions/0": "catchup1017.af7505916bc681"
+  },
+  "repository.models/model:liquidai-lfm2-5-24b-a2b": {
+    "license/restrictions/0": "catchup1017.f14817bd0c8fdd"
+  },
+  "repository.models/model:ibm-granite-granite-switch-4-1-8b": {
+    "parameterCounts/0/label": "catchup1017.ec2d4267aa42e1"
+  },
+  "repository.models/model:ibm-granite-granite-switch-4-1-30b": {
+    "parameterCounts/0/label": "catchup1017.c0de85480932f6"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-v0-7-0": {
+    "targetScenario/value": "catchup1017.0482a9ead1dd59",
+    "backendSummary/value": "catchup1017.44b00905b69ae7",
+    "selectionCaveat": "catchup1017.9662ef5e3d045a"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-40-5": {
+    "offlineOperation/note": "catchup1017.36c6b4549e163d",
+    "targetScenario/value": "catchup1017.775e7e83121b19",
+    "backendSummary/value": "catchup1017.16c92de98365b8",
+    "selectionCaveat": "catchup1017.53c574d35c7861"
+  },
+  "repository.softwareReleases/software-release:vllm-v0-31-0": {
+    "selectionCaveat": "catchup1017.7b997ffb31eb2b",
+    "targetScenario/value": "catchup1017.797bb7fa65ab5c",
+    "backendSummary/value": "catchup1017.5b4267dddbc4e3"
+  },
+  "repository.softwareReleases/software-release:sglang-v0-5-21": {
+    "offlineOperation/note": "catchup1017.c590736a74d25b",
+    "targetScenario/value": "catchup1017.185c54e7a55d7a",
+    "backendSummary/value": "catchup1017.269026840ebe69",
+    "selectionCaveat": "catchup1017.d9151e1b0cac41"
+  },
+  "repository.evidence/evidence:catchup1017-beam": {
+    "scope": "catchup1017.d8eb7daf5fc896",
+    "limitations/0": "catchup1017.0acda313eeaa4f",
+    "commercialInterest": "catchup1017.0c2fb84b33c7fe"
+  },
+  "repository.evidence/evidence:catchup1017-beam-files": {
+    "scope": "catchup1017.b27351aa3daaf5",
+    "limitations/0": "catchup1017.9eb7573573fb36",
+    "commercialInterest": "catchup1017.922749d7d68100"
+  },
+  "repository.evidence/evidence:catchup1017-beam-fp8-files": {
+    "scope": "catchup1017.67066dec06e5a8",
+    "limitations/0": "catchup1017.99f3bf0b977055",
+    "commercialInterest": "catchup1017.2a3503ea9711be"
+  },
+  "repository.evidence/evidence:catchup1017-beam-nvfp4-files": {
+    "scope": "catchup1017.93427d7798d490",
+    "limitations/0": "catchup1017.1296a19eb9e081",
+    "commercialInterest": "catchup1017.1f25551c3776d1"
+  },
+  "repository.evidence/evidence:catchup1017-muse": {
+    "scope": "catchup1017.b6b1bec84d813b",
+    "limitations/0": "catchup1017.cd48e8eedc6e92",
+    "commercialInterest": "catchup1017.417d99b8950fcd"
+  },
+  "repository.evidence/evidence:catchup1017-muse-files": {
+    "scope": "catchup1017.6585c502e0fdc1",
+    "limitations/0": "catchup1017.751bc24af894be",
+    "commercialInterest": "catchup1017.2dee6ce86f7f6c"
+  },
+  "repository.evidence/evidence:catchup1017-super": {
+    "scope": "catchup1017.facaf0df9290b9",
+    "limitations/0": "catchup1017.b2a03c470ff54b",
+    "commercialInterest": "catchup1017.281905b927a1c6"
+  },
+  "repository.evidence/evidence:catchup1017-super-files": {
+    "scope": "catchup1017.b4e027fc3625e3",
+    "limitations/0": "catchup1017.2104905bfdd75a",
+    "commercialInterest": "catchup1017.514a59ff85a900"
+  },
+  "repository.evidence/evidence:catchup1017-super-nvfp4-files": {
+    "scope": "catchup1017.13e2dc6737de6b",
+    "limitations/0": "catchup1017.30c0fca0ed4c3a",
+    "commercialInterest": "catchup1017.ca2f1a244f378c"
+  },
+  "repository.evidence/evidence:catchup1017-bolt-bf16": {
+    "scope": "catchup1017.432f392f4b9f53",
+    "limitations/0": "catchup1017.bed564f6f59e8d",
+    "commercialInterest": "catchup1017.fa43b26a3fe2f4"
+  },
+  "repository.evidence/evidence:catchup1017-bolt-bf16-files": {
+    "scope": "catchup1017.12025243f1ed4d",
+    "limitations/0": "catchup1017.88e7bdf654e53c",
+    "commercialInterest": "catchup1017.fe7019c2f51932"
+  },
+  "repository.evidence/evidence:catchup1017-bolt-files": {
+    "scope": "catchup1017.6ad9d5cb9bd1f6",
+    "limitations/0": "catchup1017.6a84d6dd077d93",
+    "commercialInterest": "catchup1017.55f64ac816679a"
+  },
+  "repository.evidence/evidence:catchup1017-bolt-gguf-files": {
+    "scope": "catchup1017.fff2b4dde0a021",
+    "limitations/0": "catchup1017.823ab30575f834",
+    "commercialInterest": "catchup1017.47bb5e923f9472"
+  },
+  "repository.evidence/evidence:catchup1017-deepseek1017": {
+    "scope": "catchup1017.55bc467686e323",
+    "limitations/0": "catchup1017.12ed7dc76561be",
+    "commercialInterest": "catchup1017.c4a7e4df4f3556"
+  },
+  "repository.evidence/evidence:catchup1017-deepseek1017-files": {
+    "scope": "catchup1017.31c9fad81e20e3",
+    "limitations/0": "catchup1017.6fd152ad9e380e",
+    "commercialInterest": "catchup1017.20f7c55e7302e3"
+  },
+  "repository.evidence/evidence:catchup1017-lfm24": {
+    "scope": "catchup1017.b436a0d5ac33cb",
+    "limitations/0": "catchup1017.e8a375691994be",
+    "commercialInterest": "catchup1017.e6340b3051f9b9"
+  },
+  "repository.evidence/evidence:catchup1017-lfm24-files": {
+    "scope": "catchup1017.37e17735d6e7b4",
+    "limitations/0": "catchup1017.7efc4e4d9a117c",
+    "commercialInterest": "catchup1017.c9f185ae06ffde"
+  },
+  "repository.evidence/evidence:catchup1017-lfm24-fp8-files": {
+    "scope": "catchup1017.bc39e65fdf6c16",
+    "limitations/0": "catchup1017.f5adb6c70ff45d",
+    "commercialInterest": "catchup1017.a364308a1b041b"
+  },
+  "repository.evidence/evidence:catchup1017-lfm24-gguf-files": {
+    "scope": "catchup1017.4f93f17eae116b",
+    "limitations/0": "catchup1017.12921ec942c506",
+    "commercialInterest": "catchup1017.cebdd5f7fb373d"
+  },
+  "repository.evidence/evidence:catchup1017-lfm24-mlx-files": {
+    "scope": "catchup1017.95daa601337fe1",
+    "limitations/0": "catchup1017.4ee2d016c3f5a9",
+    "commercialInterest": "catchup1017.5d76474bb24355"
+  },
+  "repository.evidence/evidence:catchup1017-granite8": {
+    "scope": "catchup1017.e8d0bb874c1ec3",
+    "limitations/0": "catchup1017.4ddebc24e8172d",
+    "commercialInterest": "catchup1017.d3b9fce13b4fcb"
+  },
+  "repository.evidence/evidence:catchup1017-granite8-files": {
+    "scope": "catchup1017.2b7c6ec6207143",
+    "limitations/0": "catchup1017.950cf10fbf185d",
+    "commercialInterest": "catchup1017.11d7b8419e7e28"
+  },
+  "repository.evidence/evidence:catchup1017-granite30": {
+    "scope": "catchup1017.dba377769219b7",
+    "limitations/0": "catchup1017.e2a2f4cf511ba9",
+    "commercialInterest": "catchup1017.7c320d38156133"
+  },
+  "repository.evidence/evidence:catchup1017-granite30-files": {
+    "scope": "catchup1017.89661f87bd76ed",
+    "limitations/0": "catchup1017.4a86865098f2a7",
+    "commercialInterest": "catchup1017.a463d19450070c"
+  },
+  "repository.evidence/evidence:catchup1017-dory": {
+    "scope": "catchup1017.8032f8e8edd9ce",
+    "limitations/0": "catchup1017.967b66f822bef3",
+    "commercialInterest": "catchup1017.6bc5c0d8868664"
+  },
+  "repository.evidence/evidence:catchup1017-dory-files": {
+    "scope": "catchup1017.f62d245a14f5da",
+    "limitations/0": "catchup1017.c43c0abdbd8afb",
+    "commercialInterest": "catchup1017.025dbaaa4a387c"
+  },
+  "repository.evidence/evidence:catchup1017-dory-mxfp8-files": {
+    "scope": "catchup1017.ddebd45cd149c2",
+    "limitations/0": "catchup1017.3909dfa2e5b75e",
+    "commercialInterest": "catchup1017.242bfcde7b4e0d"
+  },
+  "repository.evidence/evidence:catchup1017-dory-nvfp4-files": {
+    "scope": "catchup1017.57af9299b48533",
+    "limitations/0": "catchup1017.d37689db1ce30c",
+    "commercialInterest": "catchup1017.68c21c3fddeff6"
+  },
+  "repository.evidence/evidence:catchup1017-dory-gguf-files": {
+    "scope": "catchup1017.1e6ec38aaa8d60",
+    "limitations/0": "catchup1017.375e1bba2dc431",
+    "commercialInterest": "catchup1017.9040eabd2fea5c"
+  },
+  "repository.evidence/evidence:catchup1017-llama070": {
+    "scope": "catchup1017.7ccc2d59e3e330",
+    "limitations/0": "catchup1017.2815d061039d55",
+    "commercialInterest": "catchup1017.c35e6e2da0811b"
+  },
+  "repository.evidence/evidence:catchup1017-llama070-license": {
+    "scope": "catchup1017.7d48c1fa6c409f",
+    "limitations/0": "catchup1017.9d119b4c40fa69",
+    "commercialInterest": "catchup1017.b93b494a4f402f"
+  },
+  "repository.evidence/evidence:catchup1017-ollama405": {
+    "scope": "catchup1017.4fe918fa00858c",
+    "limitations/0": "catchup1017.3690a3fb8c1e92",
+    "commercialInterest": "catchup1017.077ae8a17bea4a"
+  },
+  "repository.evidence/evidence:catchup1017-ollama405-license": {
+    "scope": "catchup1017.aafc5cf31defb5",
+    "limitations/0": "catchup1017.e6accf803eb709",
+    "commercialInterest": "catchup1017.8f344e991828ea"
+  },
+  "repository.evidence/evidence:catchup1017-vllm031": {
+    "scope": "catchup1017.a7d376eb13edf7",
+    "limitations/0": "catchup1017.45a0c97fa9aad5",
+    "commercialInterest": "catchup1017.74af286589c4d5"
+  },
+  "repository.evidence/evidence:catchup1017-vllm031-license": {
+    "scope": "catchup1017.f44cfe4af1322b",
+    "limitations/0": "catchup1017.13dfc8b64883dd",
+    "commercialInterest": "catchup1017.c890a002bc1166"
+  },
+  "repository.evidence/evidence:catchup1017-sglang0521": {
+    "scope": "catchup1017.5f0f6addffb413",
+    "limitations/0": "catchup1017.28d7fe1374b681",
+    "commercialInterest": "catchup1017.e2fcbba5c7dd2d"
+  },
+  "repository.evidence/evidence:catchup1017-sglang0521-license": {
+    "scope": "catchup1017.09495da3b468c6",
+    "limitations/0": "catchup1017.3024cd0cd93422",
+    "commercialInterest": "catchup1017.525dd39cb58053"
+  },
+  "repository.evidence/evidence:catchup1017-vllm-ghsa-4xqp": {
+    "scope": "catchup1017.a00983f99164cf",
+    "limitations/0": "catchup1017.e1e6dd8db2e7fb",
+    "commercialInterest": "catchup1017.0dfcee96a5a026"
+  },
+  "repository.evidence/evidence:catchup1017-llama-b11701": {
+    "scope": "catchup1017.57b0ae29148df5",
+    "limitations/0": "catchup1017.df0135da40e6d6",
+    "commercialInterest": "catchup1017.ed75a3562b7fe9"
+  },
+  "repository.evidence/evidence:catchup1017-llama-b11700": {
+    "scope": "catchup1017.c5662ebf4ffe58",
+    "limitations/0": "catchup1017.7fb28eb3a179a2",
+    "commercialInterest": "catchup1017.90a92316fbe17e"
+  },
+  "repository.modelProfiles/model-profile:meta-models-muse-spark-open-816b-a42b": {
+    "introduction": "catchup1017.529edb0edb9a52",
+    "roleSummary": "catchup1017.ae0d2d7d5fb806",
+    "distinguishingFeatures/0": "catchup1017.cc433973943842",
+    "languageSummary": "catchup1017.744c9e690becb0",
+    "runGuides/0/label": "catchup1017.83187bad078712",
+    "runGuides/0/conditions/0": "catchup1017.a4138428ec3816",
+    "downloadSearchNote": "catchup1017.075dc1a1d108a4"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-3-5-super-vl-120b-a12b": {
+    "introduction": "catchup1017.fd35c4985f0117",
+    "roleSummary": "catchup1017.37b472aef07df6",
+    "distinguishingFeatures/0": "catchup1017.583e93727e60d1",
+    "languageSummary": "catchup1017.25d3b2fd6a74d3",
+    "runGuides/0/label": "catchup1017.4020758e5ff3ba",
+    "runGuides/0/conditions/0": "catchup1017.ed389cd7cbc1d7",
+    "downloadSearchNote": "catchup1017.860f1533f38f5a"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-3-5-bolt-74b-a9b": {
+    "introduction": "catchup1017.a320d9ca9c3754",
+    "roleSummary": "catchup1017.67245c6127a8b5",
+    "distinguishingFeatures/0": "catchup1017.e37abaa7453ac0",
+    "languageSummary": "catchup1017.483d1fa59fe0fb",
+    "runGuides/0/label": "catchup1017.381c0ae59cce94",
+    "runGuides/0/conditions/0": "catchup1017.633ec8e48cda49",
+    "runGuides/0/conditions/1": "catchup1017.9d023441eac942",
+    "downloadSearchNote": "catchup1017.b7f59f97adae21"
+  },
+  "repository.modelProfiles/model-profile:deepseek-ai-deepseek-v4-1-flash-1017": {
+    "introduction": "catchup1017.d6e1683a089c7a",
+    "roleSummary": "catchup1017.db13ff4a543ed3",
+    "distinguishingFeatures/0": "catchup1017.c291d4dba95994",
+    "languageSummary": "catchup1017.c7d54bc70dad0f",
+    "runGuides/0/label": "catchup1017.f1ca7c7bd725fc",
+    "runGuides/0/conditions/0": "catchup1017.2c1e798e44bb40",
+    "downloadSearchNote": "catchup1017.7c5927fda2b076"
+  },
+  "repository.modelProfiles/model-profile:liquidai-lfm2-5-24b-a2b": {
+    "introduction": "catchup1017.afa78d7801815c",
+    "roleSummary": "catchup1017.644ac9c5c72c0d",
+    "distinguishingFeatures/0": "catchup1017.ec9be8163abe52",
+    "languageSummary": "catchup1017.bf7ba267ca3246",
+    "runGuides/0/label": "catchup1017.1f354ed425132a",
+    "runGuides/0/conditions/0": "catchup1017.cc1481762ddc2c",
+    "runGuides/0/conditions/1": "catchup1017.a3f3f67c31dfbe",
+    "downloadSearchNote": "catchup1017.feabca1e3418b7"
+  },
+  "repository.modelProfiles/model-profile:ibm-granite-granite-switch-4-1-8b": {
+    "introduction": "catchup1017.874541b2b260f5",
+    "roleSummary": "catchup1017.afd51343218769",
+    "distinguishingFeatures/0": "catchup1017.a216b55345caf7",
+    "distinguishingFeatures/1": "catchup1017.c5432cb4a53849",
+    "languageSummary": "catchup1017.2e621fe7ed17a4",
+    "runGuides/0/label": "catchup1017.8118d4c15676a9",
+    "runGuides/0/conditions/0": "catchup1017.bb5f923a5127dd",
+    "runGuides/0/conditions/1": "catchup1017.de0ed24f3b18e2",
+    "downloadSearchNote": "catchup1017.97be591b786a0d"
+  },
+  "repository.modelProfiles/model-profile:ibm-granite-granite-switch-4-1-30b": {
+    "introduction": "catchup1017.73c341e33ed76d",
+    "roleSummary": "catchup1017.119d8c086be7ad",
+    "distinguishingFeatures/0": "catchup1017.380ebca0142759",
+    "distinguishingFeatures/1": "catchup1017.07abb48b9aff3f",
+    "languageSummary": "catchup1017.d75b72c558147c",
+    "runGuides/0/label": "catchup1017.2c487bdedd8919",
+    "runGuides/0/conditions/0": "catchup1017.65675caf0c465b",
+    "runGuides/0/conditions/1": "catchup1017.c69e3d673e5d25",
+    "downloadSearchNote": "catchup1017.5b741d840d9685"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-labs-dory1-0-4b": {
+    "introduction": "catchup1017.a01ce310e48509",
+    "roleSummary": "catchup1017.7e2173c7d4aad3",
+    "distinguishingFeatures/0": "catchup1017.3d215cdec57731",
+    "languageSummary": "catchup1017.e4c56c1bdde573",
+    "runGuides/0/label": "catchup1017.7f1cd595e75ce9",
+    "runGuides/0/conditions/0": "catchup1017.ebb03f83f5f5d5",
+    "downloadSearchNote": "catchup1017.3a7c08c7dce2ea"
+  },
+  "repository.modelUseGuidance/model-use:reflection-beam:coding-assistant": {
+    "summary": "catchup1017.5e0ff2d2e2035b",
+    "description": "catchup1017.95eff43804900a",
+    "distinguishingFeature": "catchup1017.07ae40973cc17f",
+    "conditions/0": "catchup1017.a525c1deefa424"
+  },
+  "repository.modelUseGuidance/model-use:reflection-beam:reasoning-analysis": {
+    "summary": "catchup1017.9cad6678514cf0",
+    "description": "catchup1017.9d684c84b43305",
+    "distinguishingFeature": "catchup1017.932a7bc60fab6a",
+    "conditions/0": "catchup1017.ea618dc5f80ffc"
+  },
+  "repository.modelUseGuidance/model-use:reflection-beam:agents-tools": {
+    "summary": "catchup1017.278a1ec53cf4d4",
+    "description": "catchup1017.ff231691e663c2",
+    "distinguishingFeature": "catchup1017.8bb1e5aa45e468",
+    "conditions/0": "catchup1017.f45dde34e87fe2"
+  },
+  "repository.modelUseGuidance/model-use:meta-models-muse-spark-open-816b-a42b:text-work": {
+    "summary": "catchup1017.026a63d37aa187",
+    "description": "catchup1017.c18cc85b40f7af",
+    "distinguishingFeature": "catchup1017.21d25821980788",
+    "conditions/0": "catchup1017.11f4f1152584d8"
+  },
+  "repository.modelUseGuidance/model-use:meta-models-muse-spark-open-816b-a42b:coding-assistant": {
+    "summary": "catchup1017.9b9595d10813ae",
+    "description": "catchup1017.04df31ba536d10",
+    "distinguishingFeature": "catchup1017.b06bcd5d75f037",
+    "conditions/0": "catchup1017.6cfad32ec98587"
+  },
+  "repository.modelUseGuidance/model-use:meta-models-muse-spark-open-816b-a42b:reasoning-analysis": {
+    "summary": "catchup1017.d880df7af93e0a",
+    "description": "catchup1017.503f4b118cf7f3",
+    "distinguishingFeature": "catchup1017.68d37fa26e52de",
+    "conditions/0": "catchup1017.f28f9a4d944f96"
+  },
+  "repository.modelUseGuidance/model-use:meta-models-muse-spark-open-816b-a42b:agents-tools": {
+    "summary": "catchup1017.617d6e0876f330",
+    "description": "catchup1017.f5189eff48b6ed",
+    "distinguishingFeature": "catchup1017.06376f95e07304",
+    "conditions/0": "catchup1017.1846f973e91b23"
+  },
+  "repository.modelUseGuidance/model-use:meta-models-muse-spark-open-816b-a42b:document-vision": {
+    "summary": "catchup1017.0b609e6ab7b6f0",
+    "description": "catchup1017.62588203792506",
+    "distinguishingFeature": "catchup1017.4718d166529ac8",
+    "conditions/0": "catchup1017.127e929124e049"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:text-work": {
+    "summary": "catchup1017.89cf0a1b4d6881",
+    "description": "catchup1017.5525bef09eb118",
+    "distinguishingFeature": "catchup1017.96bdd19de01a05",
+    "conditions/0": "catchup1017.d76295cf443d41"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:coding-assistant": {
+    "summary": "catchup1017.00abdf07ecdda4",
+    "description": "catchup1017.f523cee005f6eb",
+    "distinguishingFeature": "catchup1017.bb57c325daf7be",
+    "conditions/0": "catchup1017.8936c753fc73da"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:reasoning-analysis": {
+    "summary": "catchup1017.846861b86c24b2",
+    "description": "catchup1017.db36f6270a4df9",
+    "distinguishingFeature": "catchup1017.1dbaa2a5855259",
+    "conditions/0": "catchup1017.61a62760b14e65"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:agents-tools": {
+    "summary": "catchup1017.7e1a45485651e1",
+    "description": "catchup1017.908bd5ed7b389d",
+    "distinguishingFeature": "catchup1017.ca9427b43280dc",
+    "conditions/0": "catchup1017.a369175a753a18"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:document-vision": {
+    "summary": "catchup1017.5c0ca83d855765",
+    "description": "catchup1017.b2ff5610132fed",
+    "distinguishingFeature": "catchup1017.83fa47eef23181",
+    "conditions/0": "catchup1017.f35a40c2511434"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-super-vl-120b-a12b:structured-extraction": {
+    "summary": "catchup1017.5dee28fa68e5fd",
+    "description": "catchup1017.297ba8e9a56234",
+    "distinguishingFeature": "catchup1017.999b8243c3428b",
+    "conditions/0": "catchup1017.1075d4654d9d07"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-74b-a9b:text-work": {
+    "summary": "catchup1017.758fd65b5c889e",
+    "description": "catchup1017.6c75bd9ac61adc",
+    "distinguishingFeature": "catchup1017.5c1a77345c9e53",
+    "conditions/0": "catchup1017.acb5596f76f03c",
+    "conditions/1": "catchup1017.fb10a5c222d7fa"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-74b-a9b:coding-assistant": {
+    "summary": "catchup1017.67e5de27f17bc6",
+    "description": "catchup1017.d6d17060e87357",
+    "distinguishingFeature": "catchup1017.9682494c18fffe",
+    "conditions/0": "catchup1017.e291e304ff53a2",
+    "conditions/1": "catchup1017.ebae43a303c0a2"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-74b-a9b:reasoning-analysis": {
+    "summary": "catchup1017.5fc01e74aa9768",
+    "description": "catchup1017.849fe041ace261",
+    "distinguishingFeature": "catchup1017.a01fbbee1ba46e",
+    "conditions/0": "catchup1017.3b3215f3165443",
+    "conditions/1": "catchup1017.b2c0975fd086a3"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-74b-a9b:agents-tools": {
+    "summary": "catchup1017.98f99de1c167ab",
+    "description": "catchup1017.d928503230d6e1",
+    "distinguishingFeature": "catchup1017.fb4a54056f1174",
+    "conditions/0": "catchup1017.e1b09c45abf44f",
+    "conditions/1": "catchup1017.fa6f4aa2923f27"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-74b-a9b:document-vision": {
+    "summary": "catchup1017.19c1cd2d379b95",
+    "description": "catchup1017.e8ce16177fcbf5",
+    "distinguishingFeature": "catchup1017.db2aa1e72fbcc1",
+    "conditions/0": "catchup1017.bfc2df88c3c33e",
+    "conditions/1": "catchup1017.df6c5cebf7cf70"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-74b-a9b:structured-extraction": {
+    "summary": "catchup1017.148de58659ed61",
+    "description": "catchup1017.ec70addead06a6",
+    "distinguishingFeature": "catchup1017.3f6aee6d8d0334",
+    "conditions/0": "catchup1017.58d1dbb371f4ad",
+    "conditions/1": "catchup1017.0f6b4c3b00e014"
+  },
+  "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:text-work": {
+    "summary": "catchup1017.4ae04e9c40ffc8",
+    "description": "catchup1017.822d9a7546f6f1",
+    "distinguishingFeature": "catchup1017.6915bd78283bdf",
+    "conditions/0": "catchup1017.8865c7ae262077"
+  },
+  "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:coding-assistant": {
+    "summary": "catchup1017.fbdb59905916f7",
+    "description": "catchup1017.cff4dc1c92e947",
+    "distinguishingFeature": "catchup1017.3f502ba8367649",
+    "conditions/0": "catchup1017.2750435f8ffe6a"
+  },
+  "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:reasoning-analysis": {
+    "summary": "catchup1017.ac487360af309b",
+    "description": "catchup1017.a831ea863f9738",
+    "distinguishingFeature": "catchup1017.06c36916a0e774",
+    "conditions/0": "catchup1017.bcd61b30d9c69d"
+  },
+  "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:agents-tools": {
+    "summary": "catchup1017.a24b329547a9d9",
+    "description": "catchup1017.5e271d44deac4e",
+    "distinguishingFeature": "catchup1017.1a16403633e5c3",
+    "conditions/0": "catchup1017.574acd0d3a0a78"
+  },
+  "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:document-vision": {
+    "summary": "catchup1017.5789ffc2224edf",
+    "description": "catchup1017.e7e9aaaf7850a3",
+    "distinguishingFeature": "catchup1017.1a1c23b4f34a98",
+    "conditions/0": "catchup1017.1285a3b3bcc4c5"
+  },
+  "repository.modelUseGuidance/model-use:liquidai-lfm2-5-24b-a2b:text-work": {
+    "summary": "catchup1017.5b8579227bd86a",
+    "description": "catchup1017.6aff8ae3c2a57c",
+    "distinguishingFeature": "catchup1017.ab5e00ba0a0ab0",
+    "conditions/0": "catchup1017.16775bb6a23489",
+    "conditions/1": "catchup1017.67f900097377d0"
+  },
+  "repository.modelUseGuidance/model-use:liquidai-lfm2-5-24b-a2b:reasoning-analysis": {
+    "summary": "catchup1017.3e4fdeaaca069c",
+    "description": "catchup1017.3df6155b635874",
+    "distinguishingFeature": "catchup1017.c0f09394c0b5f5",
+    "conditions/0": "catchup1017.03a2c2dda0054f",
+    "conditions/1": "catchup1017.446623c694db7f"
+  },
+  "repository.modelUseGuidance/model-use:liquidai-lfm2-5-24b-a2b:agents-tools": {
+    "summary": "catchup1017.932e47f5ea85e3",
+    "description": "catchup1017.9788a36ca1b037",
+    "distinguishingFeature": "catchup1017.59df466a526dbd",
+    "conditions/0": "catchup1017.4b2f615eefd539",
+    "conditions/1": "catchup1017.1139b8c0f7f8f9"
+  },
+  "repository.modelUseGuidance/model-use:liquidai-lfm2-5-24b-a2b:coding-assistant": {
+    "summary": "catchup1017.34f53569af9955",
+    "description": "catchup1017.7a81365155d1e2",
+    "distinguishingFeature": "catchup1017.c6ec2aa5b8c227",
+    "conditions/0": "catchup1017.12f33fe091a706",
+    "conditions/1": "catchup1017.c27e6564bd1bd8"
+  },
+  "repository.modelUseGuidance/model-use:ibm-granite-granite-switch-4-1-8b:text-work": {
+    "summary": "catchup1017.4aff31674026e3",
+    "description": "catchup1017.3dac4c2e833440",
+    "distinguishingFeature": "catchup1017.ef9f21233a4bd7",
+    "conditions/0": "catchup1017.12a21761205969",
+    "conditions/1": "catchup1017.0d46c618992481"
+  },
+  "repository.modelUseGuidance/model-use:ibm-granite-granite-switch-4-1-8b:structured-extraction": {
+    "summary": "catchup1017.4defd104e9a310",
+    "description": "catchup1017.1f9577e79c85fe",
+    "distinguishingFeature": "catchup1017.5bacd74570eec5",
+    "conditions/0": "catchup1017.bf95cd1f2eaa11",
+    "conditions/1": "catchup1017.bb7c2fd5fa9518"
+  },
+  "repository.modelUseGuidance/model-use:ibm-granite-granite-switch-4-1-8b:agents-tools": {
+    "summary": "catchup1017.5177b733e15047",
+    "description": "catchup1017.6989665dfd5b39",
+    "distinguishingFeature": "catchup1017.9adc910fa38f02",
+    "conditions/0": "catchup1017.acbcca580c7311",
+    "conditions/1": "catchup1017.1da0d4e098e1c5"
+  },
+  "repository.modelUseGuidance/model-use:ibm-granite-granite-switch-4-1-30b:text-work": {
+    "summary": "catchup1017.5f75693f547c17",
+    "description": "catchup1017.4639b5432c23a3",
+    "distinguishingFeature": "catchup1017.0e168713fa6bdd",
+    "conditions/0": "catchup1017.b2c08ffe8824c3",
+    "conditions/1": "catchup1017.3de7392f4b7cc1"
+  },
+  "repository.modelUseGuidance/model-use:ibm-granite-granite-switch-4-1-30b:structured-extraction": {
+    "summary": "catchup1017.094c86ea41f75e",
+    "description": "catchup1017.c81e947503fd74",
+    "distinguishingFeature": "catchup1017.00c00c2dbe7986",
+    "conditions/0": "catchup1017.e5277b06ed79bd",
+    "conditions/1": "catchup1017.662f933a293ff0"
+  },
+  "repository.modelUseGuidance/model-use:ibm-granite-granite-switch-4-1-30b:agents-tools": {
+    "summary": "catchup1017.9498c0c563887d",
+    "description": "catchup1017.b44530ddad0626",
+    "distinguishingFeature": "catchup1017.b0657f97bf6465",
+    "conditions/0": "catchup1017.39fdb53e51126c",
+    "conditions/1": "catchup1017.089a387c1e4845"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-labs-dory1-0-4b:text-work": {
+    "summary": "catchup1017.1e633bf6709add",
+    "description": "catchup1017.6d8e22d55608ad",
+    "distinguishingFeature": "catchup1017.020ff6b58b2563",
+    "conditions/0": "catchup1017.3820d71e924f53"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-labs-dory1-0-4b:reasoning-analysis": {
+    "summary": "catchup1017.bc18eeff109d1f",
+    "description": "catchup1017.ce813a58eb2e0a",
+    "distinguishingFeature": "catchup1017.18f304173fc09c",
+    "conditions/0": "catchup1017.415bc89897437b"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-muse": {
+    "scopeNote": "catchup1017.43b4530b58fd22"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-bolt": {
+    "scopeNote": "catchup1017.d8097ed4d0dbfc"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-bolt-gguf": {
+    "scopeNote": "catchup1017.d0aa68380471e0"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-lfm24-mlx": {
+    "scopeNote": "catchup1017.bf86caab2c1423"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-granite8": {
+    "scopeNote": "catchup1017.77cc210b0b3cff"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-granite30": {
+    "scopeNote": "catchup1017.98634d1f78b4e0"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-dory": {
+    "scopeNote": "catchup1017.4c2f19d32053c2"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-dory-mxfp8": {
+    "scopeNote": "catchup1017.35806545dd243b"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-dory-nvfp4": {
+    "scopeNote": "catchup1017.dfec58684f22a1"
+  },
+  "repository.artifactListings/artifact-listing:catchup1017-dory-gguf": {
+    "scopeNote": "catchup1017.d7be3d22acf2a1"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-reflection-beam-coding-assistant": {
+    "summary": "catchup1017.51205aa7267e7d",
+    "limitations/0": "catchup1017.f924734e639131"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-reflection-beam-reasoning-analysis": {
+    "summary": "catchup1017.145f6f4bdf5ab7",
+    "limitations/0": "catchup1017.9bcf3513a93885"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-reflection-beam-agents-tools": {
+    "summary": "catchup1017.c43065e91ca9e3",
+    "limitations/0": "catchup1017.ec92017c972079"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-text-work": {
+    "summary": "catchup1017.a8306e388e01e6",
+    "limitations/0": "catchup1017.95295e56e6b060"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-coding-assistant": {
+    "summary": "catchup1017.21ebfe0ad2323f",
+    "limitations/0": "catchup1017.0be86aa6028ce4"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-reasoning-analysis": {
+    "summary": "catchup1017.b1e1ae78aba0b6",
+    "limitations/0": "catchup1017.912c77aa8b3125"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-agents-tools": {
+    "summary": "catchup1017.cc5c79bd94f3ef",
+    "limitations/0": "catchup1017.8e9428a90864e2"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-meta-models-muse-spark-open-816b-a42b-document-vision": {
+    "summary": "catchup1017.3502ecc9eda707",
+    "limitations/0": "catchup1017.bc32ca6e413c09"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-text-work": {
+    "summary": "catchup1017.4864d825c8da70",
+    "limitations/0": "catchup1017.3c705ca9f4c5a5"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-coding-assistant": {
+    "summary": "catchup1017.469f22bc629a68",
+    "limitations/0": "catchup1017.a4f5f9465a6355"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-reasoning-analysis": {
+    "summary": "catchup1017.53eed2d50e0bfc",
+    "limitations/0": "catchup1017.44812912497db6"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-agents-tools": {
+    "summary": "catchup1017.1b2e32768fde88",
+    "limitations/0": "catchup1017.6b0de5a1f4dc3c"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-document-vision": {
+    "summary": "catchup1017.711326e1119f30",
+    "limitations/0": "catchup1017.577a677f24f4b5"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-super-vl-120b-a12b-structured-extraction": {
+    "summary": "catchup1017.bc2a13fcc10356",
+    "limitations/0": "catchup1017.3cbf3afdbbb53f"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-text-work": {
+    "summary": "catchup1017.42a8ed5285f605",
+    "limitations/0": "catchup1017.b39f32a82ddfc8"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-coding-assistant": {
+    "summary": "catchup1017.d7b1b920e694bf",
+    "limitations/0": "catchup1017.003bbba378cb0d"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-reasoning-analysis": {
+    "summary": "catchup1017.7569bd1177ca76",
+    "limitations/0": "catchup1017.9205a2ba9c3ebe"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-agents-tools": {
+    "summary": "catchup1017.2e9c4ddb094c75",
+    "limitations/0": "catchup1017.c2e114c76352d9"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-document-vision": {
+    "summary": "catchup1017.4f44a80442dfa9",
+    "limitations/0": "catchup1017.1cadf2dc9bdcdb"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-3-5-bolt-74b-a9b-structured-extraction": {
+    "summary": "catchup1017.52d689c0f33cfe",
+    "limitations/0": "catchup1017.2c9d393f5411ae"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-text-work": {
+    "summary": "catchup1017.7122f51a1e777a",
+    "limitations/0": "catchup1017.f15d900c12c65f"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-coding-assistant": {
+    "summary": "catchup1017.5a5e67e899e0f3",
+    "limitations/0": "catchup1017.e6819d415b30bc"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-reasoning-analysis": {
+    "summary": "catchup1017.de661c364ffc3c",
+    "limitations/0": "catchup1017.a9db965f226ee7"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-agents-tools": {
+    "summary": "catchup1017.3ba38482e69578",
+    "limitations/0": "catchup1017.7840caac52877b"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-deepseek-ai-deepseek-v4-1-flash-1017-document-vision": {
+    "summary": "catchup1017.b2ee9a4c7797c9",
+    "limitations/0": "catchup1017.efffb2ee92c2c0"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-text-work": {
+    "summary": "catchup1017.cf9c1e23998529",
+    "limitations/0": "catchup1017.708d3447366abc"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-reasoning-analysis": {
+    "summary": "catchup1017.3eb7748eeb64e4",
+    "limitations/0": "catchup1017.8bf693019ec855"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-agents-tools": {
+    "summary": "catchup1017.02ed47df8445f3",
+    "limitations/0": "catchup1017.80074f62140da0"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-liquidai-lfm2-5-24b-a2b-coding-assistant": {
+    "summary": "catchup1017.ef192514c494f4",
+    "limitations/0": "catchup1017.8341c7c070f842"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-ibm-granite-granite-switch-4-1-8b-text-work": {
+    "summary": "catchup1017.6b4239c5b1c18d",
+    "limitations/0": "catchup1017.ff384bdbe081fa"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-ibm-granite-granite-switch-4-1-8b-structured-extraction": {
+    "summary": "catchup1017.ce4ec2aeb8995b",
+    "limitations/0": "catchup1017.363b1d3256607b"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-ibm-granite-granite-switch-4-1-8b-agents-tools": {
+    "summary": "catchup1017.b9b47d629e6dc9",
+    "limitations/0": "catchup1017.d169fbbaf98f98"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-ibm-granite-granite-switch-4-1-30b-text-work": {
+    "summary": "catchup1017.bf6982c97b36f1",
+    "limitations/0": "catchup1017.9e4e796f456e13"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-ibm-granite-granite-switch-4-1-30b-structured-extraction": {
+    "summary": "catchup1017.cf84f2b2acef8c",
+    "limitations/0": "catchup1017.96250bae1e5db8"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-ibm-granite-granite-switch-4-1-30b-agents-tools": {
+    "summary": "catchup1017.36d341e0284fa5",
+    "limitations/0": "catchup1017.00155745824466"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-labs-dory1-0-4b-text-work": {
+    "summary": "catchup1017.1be79a4e6b818a",
+    "limitations/0": "catchup1017.ebd32170d053b8"
+  },
+  "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-labs-dory1-0-4b-reasoning-analysis": {
+    "summary": "catchup1017.ee1d2f2e899544",
+    "limitations/0": "catchup1017.30a586453ba5bb"
   }
 }

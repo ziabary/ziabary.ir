@@ -7,6 +7,132 @@
 // Dates record additions/changes to our dataset, not the product's release date.
 /** @type {GuideUpdate[]} */
 export const guideUpdates = [
+{
+  "id": "beam1017",
+  "guide": "llm",
+  "date": "2026-10-17",
+  "kind": "model",
+  "target": "model:reflection-beam",
+  "copy": {
+    "fa": {
+      "title": "وزن‌های Beam 1.0 منتشر شد",
+      "summary": "ردیف پیشین به وزن‌های رسمی BF16، FP8 و NVFP4 با Apache-2.0 به‌روز شد؛ پشتیبانی b11701 پس از llama.cpp 0.7.0 است."
+    },
+    "en": {
+      "title": "Beam 1.0 weights released",
+      "summary": "Updated the existing row with official BF16, FP8 and NVFP4 weights under Apache-2.0; b11701 support follows llama.cpp 0.7.0."
+    },
+    "es": {
+      "title": "Publicados los pesos Beam 1.0",
+      "summary": "Fila existente actualizada con BF16, FP8 y NVFP4 oficiales bajo Apache-2.0; el soporte b11701 es posterior a llama.cpp 0.7.0."
+    }
+  }
+},
+{
+  "id": "models1017",
+  "guide": "llm",
+  "date": "2026-10-17",
+  "kind": "model",
+  "target": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "copy": {
+    "fa": {
+      "title": "هشت مدل تازه و پرونده‌های دریافت",
+      "summary": "Muse، Super و Bolt، DeepSeek-1017، LFM2.5، دو Granite Switch و Dory اضافه شدند؛ دسترسی مشروط، مجوز و مسیر اجرا جدا ثبت شده‌اند. نام بستهٔ 24GB تضمین حافظهٔ کامل نیست."
+    },
+    "en": {
+      "title": "Eight models and download inventories added",
+      "summary": "Added Muse, Super/Bolt, DeepSeek-1017, LFM2.5, two Granite Switch sizes and Dory, with separate access, license and runtime conditions. The 24GB package name does not certify full memory fit."
+    },
+    "es": {
+      "title": "Ocho modelos y sus inventarios de descarga",
+      "summary": "Añadidos Muse, Super/Bolt, DeepSeek-1017, LFM2.5, dos Granite Switch y Dory con acceso, licencia y motor diferenciados. El nombre 24GB no garantiza que quepa toda la ejecución."
+    }
+  }
+},
+{
+  "id": "runtimes17",
+  "guide": "llm",
+  "date": "2026-10-17",
+  "kind": "software",
+  "target": "llama.cpp",
+  "copy": {
+    "fa": {
+      "title": "نسخه‌های پایدار و هشدار vLLM به‌روز شدند",
+      "summary": "llama.cpp 0.7.0، Ollama 0.40.5، vLLM 0.31.0 و SGLang 0.5.21 ثبت شدند؛ RPC 8، پورت‌های HTTP و شرط مسیر آسیب‌پذیر vLLM مشخص شده‌اند."
+    },
+    "en": {
+      "title": "Stable runtimes and vLLM advisory updated",
+      "summary": "Added llama.cpp 0.7.0, Ollama 0.40.5, vLLM 0.31.0 and SGLang 0.5.21, including RPC 8, HTTP ports and the affected vLLM endpoint condition."
+    },
+    "es": {
+      "title": "Motores estables y aviso vLLM actualizados",
+      "summary": "Añadidos llama.cpp 0.7.0, Ollama 0.40.5, vLLM 0.31.0 y SGLang 0.5.21 con RPC 8, puertos HTTP y condición del endpoint vLLM afectado."
+    }
+  }
+},
+{
+  "id": "intelocp17",
+  "guide": "gpu-selection",
+  "date": "2026-10-17",
+  "kind": "gpu",
+  "target": "intel-crescent-island",
+  "copy": {
+    "fa": {
+      "title": "مشخصات D-series / Crescent Island تکمیل شد",
+      "summary": "پهنای‌باند ۱٫۵TB/s و FP8 نظری اضافه شدند؛ کارت Intel برابر ۱۶۰GB و سقف خانوادهٔ ODM برابر ۴۸۰GB است. نمونه‌دهی، عرضهٔ عمومی نیست."
+    },
+    "en": {
+      "title": "D-series / Crescent Island specifications expanded",
+      "summary": "Added 1.5 TB/s bandwidth and theoretical FP8. Intel’s card has 160 GB; the ODM family reaches 480 GB. Sampling does not establish general availability."
+    },
+    "es": {
+      "title": "Ampliadas las especificaciones D-series / Crescent Island",
+      "summary": "Añadidos 1,5 TB/s y FP8 teórico. La tarjeta Intel tiene 160 GB; la familia ODM alcanza 480 GB. El muestreo no acredita disponibilidad general."
+    }
+  }
+},
+{
+  "id": "systems17",
+  "guide": "gpu-selection",
+  "date": "2026-10-17",
+  "kind": "server",
+  "target": "lenovo-vera-rubin-nvl72",
+  "copy": {
+    "fa": {
+      "title": "NVL72 لنوو و سامانه‌های تازه وارد جدول شدند",
+      "summary": "آغاز ارسال NVL72 از طرح مرجع Helion و عرضهٔ آیندهٔ Halo و HPE جدا شد؛ شمار شتاب‌دهندهٔ رک به ظرفیت اسلات PCIe تبدیل نشده است."
+    },
+    "en": {
+      "title": "Lenovo NVL72 and new systems added",
+      "summary": "NVL72 shipping is separated from the Helion reference design and future Halo/HPE availability; integrated accelerator counts are not PCIe slot capacity."
+    },
+    "es": {
+      "title": "Añadidos Lenovo NVL72 y nuevos sistemas",
+      "summary": "Los envíos NVL72 se distinguen del diseño Helion y la disponibilidad futura Halo/HPE; los aceleradores integrados no se cuentan como ranuras PCIe."
+    }
+  }
+},
+{
+  "id": "maia30017",
+  "guide": "gpu-selection",
+  "date": "2026-10-17",
+  "kind": "gpu",
+  "target": "microsoft-maia-300",
+  "copy": {
+    "fa": {
+      "title": "Maia 300؛ شتاب‌دهندهٔ اختصاصی Azure",
+      "summary": "مشخصات هر شتاب‌دهنده با ۲۸۸GB HBM4 و ۱۸TB/s از رک ۹۶‌شتاب‌دهنده‌ای ۱۶۷kW جدا ثبت شد؛ استقرار از ۲۰۲۷ برنامه‌ریزی شده و کارت عمومی نیست."
+    },
+    "en": {
+      "title": "Maia 300: Azure-specific accelerator",
+      "summary": "Recorded 288 GB HBM4 and 18 TB/s per accelerator separately from the 96-accelerator, 167 kW rack. Deployment is planned from 2027; it is not a retail card."
+    },
+    "es": {
+      "title": "Maia 300: acelerador exclusivo de Azure",
+      "summary": "Registrados 288 GB HBM4 y 18 TB/s por acelerador aparte del rack de 96 aceleradores y 167 kW. Despliegue previsto desde 2027; no es tarjeta comercial."
+    }
+  }
+},
   { id:'slot11552', guide:'llm', date:'2026-10-11', kind:'software', target:'llama.cpp', copy:{
     fa:{title:'llama-server b11552؛ اصلاح جداسازی context',summary:'برای id_slot ثابت همراه RAM prompt cache، حداقل نسخهٔ اصلاح‌شده و آزمون canary ثبت شد؛ نتیجهٔ محدود upstream تضمین همهٔ پیکربندی‌ها نیست.'},
     en:{title:'llama-server b11552: context-isolation fix',summary:'Added the fixed minimum build and canary acceptance test for pinned id_slot with RAM prompt caching; limited upstream results do not guarantee every configuration.'},
@@ -23,9 +149,9 @@ export const guideUpdates = [
     es:{title:'llama.cpp b11540: aceleración MXFP4 en Arc Pro B70',summary:'Añadidos informes de decodificación de gpt-oss en Windows 11 y oneAPI 2026.0 con Flash Attention activado; no se extrapolan a Linux u otras GPU.'}
   }},
   { id:'oll40210', guide:'llm', date:'2026-10-10', kind:'software', target:'Ollama', copy:{
-    fa:{title:'Ollama v0.40.2 پایدار / Latest',summary:'نسخهٔ جاری و فیلتر به‌روز شدند. مدل‌های قدیمی در نخستین اجرا در پس‌زمینه مهاجرت می‌کنند و نسخهٔ اصلی موقتاً می‌ماند؛ پیش از ارتقا فضای آزاد دیسک را بررسی کنید.'},
-    en:{title:'Ollama v0.40.2 stable / Latest',summary:'Updated the current release and filter. Older models upgrade in the background on first run, with originals temporarily retained; check free disk space before upgrading.'},
-    es:{title:'Ollama v0.40.2 estable / Latest',summary:'Actualizados versión vigente y filtro. Los modelos antiguos se actualizan en segundo plano al primer uso y se conservan temporalmente los originales; compruebe el espacio libre.'}
+    fa:{title:'Ollama v0.40.2؛ سابقهٔ نسخه',summary:'ثبت تاریخی ۱۰ اکتبر: مهاجرت پس‌زمینه مربوط به 0.40.2 بود و در 0.40.3 متوقف شد. نسخهٔ پایدار جاری در ردیف تازهٔ 0.40.5 آمده است.'},
+    en:{title:'Ollama v0.40.2: release history',summary:'Historical October 10 entry: background migration belonged to 0.40.2 and was paused in 0.40.3. The current stable release has a separate 0.40.5 row.'},
+    es:{title:'Ollama v0.40.2: historial',summary:'Entrada histórica del 10 de octubre: la migración en segundo plano era de 0.40.2 y se pausó en 0.40.3. La versión estable actual tiene su propia fila 0.40.5.'}
   }},
   {"id": "sparkpc10", "guide": "gpu-selection", "date": "2026-10-10", "kind": "server", "target": "microsoft-surface-laptop-ultra", "copy": {"fa": {"title": "Spark؛ از میز کار تا لپ‌تاپ Windows", "summary": "DGX Spark و دستگاه‌های RTX Spark وارد جدول سرورها شدند؛ زمان عرضهٔ لپ‌تاپ‌ها، Dev Box و ورک‌استیشن‌های GB300 جدا آمده است."}, "en": {"title": "Spark: from desktops to Windows laptops", "summary": "DGX Spark and RTX Spark PCs added to the server table; laptop, Dev Box and GB300 workstation availability is listed separately."}, "es": {"title": "Spark: del escritorio a portátiles Windows", "summary": "DGX Spark y equipos RTX Spark añadidos a la tabla; disponibilidad de portátiles, Dev Box y estaciones GB300 indicada por separado."}}},
   {"id": "cnai10", "guide": "gpu-selection", "date": "2026-10-10", "kind": "server", "target": "huawei-atlas-650e", "copy": {"fa": {"title": "رایانه‌های کوچک چینی و سرورهای Atlas", "summary": "EVO-X2 و MS-S1 MAX برای اجرای محلی؛ Atlas 650E و 800I A2/A3 برای رک. تفاوت حافظهٔ مشترک، NPU و پشتهٔ نرم‌افزاری در هر ردیف آمده است."}, "en": {"title": "Chinese compact PCs and Atlas servers", "summary": "EVO-X2 and MS-S1 MAX for local inference; Atlas 650E and 800I A2/A3 for racks. Each row explains shared memory, NPUs and software-stack differences."}, "es": {"title": "Equipos compactos chinos y servidores Atlas", "summary": "EVO-X2 y MS-S1 MAX para inferencia local; Atlas 650E y 800I A2/A3 para rack. Cada fila aclara memoria compartida, NPU y pila de software."}}},

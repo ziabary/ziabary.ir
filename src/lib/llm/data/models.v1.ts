@@ -51883,26 +51883,26 @@ models.push({
 models.push({
   "id": "model:reflection-beam",
   "familyId": "family:reflection-beam",
-  "exactName": "Beam",
+  "exactName": "Beam 1.0",
   "publisher": "Reflection",
-  "version": "نسخهٔ دقیق اعلام نشده",
+  "version": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
   "stage": "reasoning",
   "architecture": "moe",
   "totalParametersB": {
     "state": "known",
-    "value": 501,
-    "unit": "billion-parameters",
+    "value": 501.3,
     "evidenceIds": [
-      "evidence:reflection-beam-announcement"
-    ]
+      "evidence:catchup1017-beam"
+    ],
+    "unit": "billion-parameters"
   },
   "activeParametersB": {
     "state": "known",
-    "value": 23,
-    "unit": "billion-parameters",
+    "value": 23.4,
     "evidenceIds": [
-      "evidence:reflection-beam-announcement"
-    ]
+      "evidence:catchup1017-beam"
+    ],
+    "unit": "billion-parameters"
   },
   "kind": "generative",
   "inputModalities": [
@@ -51916,38 +51916,77 @@ models.push({
     "reasoning-analysis",
     "agents-tools"
   ],
-  "languages": [],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-beam"
+        ]
+      }
+    }
+  ],
   "persianEvidenceStatus": "not-evaluated",
   "declaredContext": {
-    "state": "unknown"
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:catchup1017-beam"
+    ],
+    "unit": "token"
   },
   "evaluatedContext": {
     "state": "not-measured"
   },
-  "releaseStatus": "announced",
+  "releaseStatus": "available",
   "announcedOn": "2026-10-05",
-  "lastReviewedOn": "2026-10-06",
+  "lastReviewedOn": "2026-10-17",
   "license": {
     "name": {
-      "state": "unknown",
-      "note": "Apache-2.0 برای انتشار آتی وعده داده شده؛ وزن و مجوز عمومی هنوز منتشر نشده‌اند."
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:catchup1017-beam"
+      ]
     },
     "url": {
-      "state": "unknown"
+      "state": "known",
+      "value": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-beam"
+      ]
     },
     "commercialUse": {
-      "state": "unknown"
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-beam"
+      ]
     },
-    "restrictions": [
-      "دسترسی فعلی محدود و ثبت‌نامی است؛ شرایط استفادهٔ پیش‌نمایش را جداگانه بررسی کنید."
-    ],
+    "restrictions": [],
     "evidenceIds": [
-      "evidence:reflection-beam-announcement"
+      "evidence:catchup1017-beam"
     ]
   },
   "evidenceIds": [
-    "evidence:reflection-beam-announcement"
-  ]
+    "evidence:reflection-beam-announcement",
+    "evidence:catchup1017-beam"
+  ],
+  "aliases": [
+    "reflection/Beam-1.0-501B-A23B"
+  ],
+  "releasedOn": "2026-10-16",
+  "weightAccess": "public",
+  "configurationContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:catchup1017-beam"
+    ],
+    "unit": "token"
+  }
 });
 models.push({
   "id": "model:ifm-k2-horizon-0-9b",
@@ -52680,4 +52719,1324 @@ models.push({
       ]
     }
   }
+});
+models.push({
+  "id": "model:meta-models-muse-spark-open-816b-a42b",
+  "familyId": "family:muse",
+  "exactName": "Muse Spark Open 816B-A42B",
+  "publisher": "Meta",
+  "version": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "aliases": [
+    "meta-models/Muse-Spark-Open-816B-A42B"
+  ],
+  "stage": "reasoning",
+  "architecture": "moe",
+  "totalParametersB": {
+    "state": "known",
+    "value": 816,
+    "evidenceIds": [
+      "evidence:catchup1017-muse"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 42,
+    "evidenceIds": [
+      "evidence:catchup1017-muse"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "document-vision"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-muse"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1000000,
+    "evidenceIds": [
+      "evidence:catchup1017-muse"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "gated",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Muse Model License",
+      "evidenceIds": [
+        "evidence:catchup1017-muse"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/main/LICENSE.md",
+      "evidenceIds": [
+        "evidence:catchup1017-muse"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:catchup1017-muse"
+      ]
+    },
+    "restrictions": [
+      "مجوز Muse Model License محدودیت خاص Model-as-a-Service دارد: درآمد تجمیعی بیش از ۲۰ میلیون دلار در هر دورهٔ ۱۲ماهه، برای عرضهٔ مدل در آن کسب‌وکار به اطلاع Meta و توافق جداگانه نیاز دارد. پذیرش شرایط و بررسی سیاست استفاده لازم است."
+    ],
+    "evidenceIds": [
+      "evidence:catchup1017-muse"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-muse"
+  ],
+  "releasedOn": "2026-10-15"
+});
+models.push({
+  "id": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "familyId": "family:nemotron",
+  "exactName": "NVIDIA Nemotron 3.5 Super VL 120B-A12B",
+  "publisher": "NVIDIA",
+  "version": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "aliases": [
+    "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+  ],
+  "stage": "reasoning",
+  "architecture": "hybrid",
+  "totalParametersB": {
+    "state": "known",
+    "value": 120,
+    "evidenceIds": [
+      "evidence:catchup1017-super"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 12,
+    "evidenceIds": [
+      "evidence:catchup1017-super"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "document-vision",
+    "structured-extraction"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-super"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-super"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-super"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-super"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-super"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-super"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:catchup1017-super"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:catchup1017-super"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:catchup1017-super"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-super"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-super"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-super"
+  ],
+  "releasedOn": "2026-10-15",
+  "configurationContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:catchup1017-super"
+    ],
+    "unit": "token"
+  },
+  "thinkingMode": "switchable"
+});
+models.push({
+  "id": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "familyId": "family:nemotron",
+  "exactName": "NVIDIA Nemotron 3.5 Bolt 74B-A9B",
+  "publisher": "NVIDIA",
+  "version": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "aliases": [
+    "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16"
+  ],
+  "stage": "reasoning",
+  "architecture": "hybrid",
+  "totalParametersB": {
+    "state": "known",
+    "value": 74,
+    "evidenceIds": [
+      "evidence:catchup1017-bolt-bf16"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 9,
+    "evidenceIds": [
+      "evidence:catchup1017-bolt-bf16"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "document-vision",
+    "structured-extraction"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-bolt-bf16"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-bolt-bf16"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-bolt-bf16"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-bolt-bf16"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-bolt-bf16"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-bolt-bf16"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:catchup1017-bolt-bf16"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:catchup1017-bolt-bf16"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:catchup1017-bolt-bf16"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-bolt-bf16"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-bolt-bf16"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16"
+  ],
+  "releasedOn": "2026-10-15",
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:catchup1017-bolt-bf16"
+    ],
+    "unit": "token"
+  }
+});
+models.push({
+  "id": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "familyId": "family:deepseek",
+  "exactName": "DeepSeek-V4.1-Flash-1017",
+  "publisher": "DeepSeek",
+  "version": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "aliases": [
+    "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "stage": "reasoning",
+  "architecture": "moe",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "coding-assistant",
+    "reasoning-analysis",
+    "agents-tools",
+    "document-vision"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 1000000,
+    "evidenceIds": [
+      "evidence:catchup1017-deepseek1017"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:catchup1017-deepseek1017"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-deepseek1017"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-deepseek1017"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-deepseek1017"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017"
+  ],
+  "releasedOn": "2026-10-17",
+  "configurationContext": {
+    "state": "known",
+    "value": 1048576,
+    "evidenceIds": [
+      "evidence:catchup1017-deepseek1017"
+    ],
+    "unit": "token"
+  },
+  "localExecutionStatus": "requires-validation"
+});
+models.push({
+  "id": "model:liquidai-lfm2-5-24b-a2b",
+  "familyId": "family:lfm",
+  "exactName": "LFM2.5-24B-A2B",
+  "publisher": "LiquidAI",
+  "version": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "aliases": [
+    "LiquidAI/LFM2.5-24B-A2B"
+  ],
+  "stage": "reasoning",
+  "architecture": "moe",
+  "totalParametersB": {
+    "state": "known",
+    "value": 24,
+    "evidenceIds": [
+      "evidence:catchup1017-lfm24"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 2.45,
+    "evidenceIds": [
+      "evidence:catchup1017-lfm24"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "reasoning-analysis",
+    "agents-tools",
+    "coding-assistant"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "vi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "th",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "id",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "hi",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    },
+    {
+      "language": "pl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-lfm24"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:catchup1017-lfm24"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "LFM Open License v1.0",
+      "evidenceIds": [
+        "evidence:catchup1017-lfm24"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-lfm24"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "restricted",
+      "evidenceIds": [
+        "evidence:catchup1017-lfm24"
+      ]
+    },
+    "restrictions": [
+      "LFM Open License v1.0 مجوز تجاری بی‌قید نیست؛ آستانهٔ درآمد سالانهٔ ۱۰ میلیون دلار و تعریف شخصیت حقوقی و استثنای غیرانتفاعی را در مجوز بررسی کنید."
+    ],
+    "evidenceIds": [
+      "evidence:catchup1017-lfm24"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24"
+  ],
+  "configurationContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:catchup1017-lfm24"
+    ],
+    "unit": "token"
+  },
+  "thinkingMode": "thinking-only"
+});
+models.push({
+  "id": "model:ibm-granite-granite-switch-4-1-8b",
+  "familyId": "family:granite",
+  "exactName": "Granite Switch 4.1 8B",
+  "publisher": "IBM",
+  "version": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "aliases": [
+    "ibm-granite/granite-switch-4.1-8b"
+  ],
+  "stage": "reasoning",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text",
+    "audio"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:catchup1017-granite8"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:catchup1017-granite8"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-granite8"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-granite8"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-granite8"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-granite8"
+  ],
+  "releasedOn": "2026-10-14",
+  "configurationContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:catchup1017-granite8"
+    ],
+    "unit": "token"
+  },
+  "parameterCounts": [
+    {
+      "scope": "language-component",
+      "label": "مدل پایه؛ بدون احتساب بستهٔ کامل adapter و encoder",
+      "value": {
+        "state": "known",
+        "value": 8,
+        "evidenceIds": [
+          "evidence:catchup1017-granite8"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    }
+  ]
+});
+models.push({
+  "id": "model:ibm-granite-granite-switch-4-1-30b",
+  "familyId": "family:granite",
+  "exactName": "Granite Switch 4.1 30B",
+  "publisher": "IBM",
+  "version": "70b75c6fd254db33418e490714769ef028d16166",
+  "aliases": [
+    "ibm-granite/granite-switch-4.1-30b"
+  ],
+  "stage": "reasoning",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "unknown"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text",
+    "audio"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "pt",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "ar",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "cs",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "ko",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "nl",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:catchup1017-granite30"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:catchup1017-granite30"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/blob/main/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-granite30"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-granite30"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-granite30"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-granite30"
+  ],
+  "releasedOn": "2026-10-14",
+  "configurationContext": {
+    "state": "known",
+    "value": 131072,
+    "evidenceIds": [
+      "evidence:catchup1017-granite30"
+    ],
+    "unit": "token"
+  },
+  "parameterCounts": [
+    {
+      "scope": "language-component",
+      "label": "مدل پایه؛ بدون احتساب بستهٔ کامل adapter و encoder",
+      "value": {
+        "state": "known",
+        "value": 30,
+        "evidenceIds": [
+          "evidence:catchup1017-granite30"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    }
+  ]
+});
+models.push({
+  "id": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "familyId": "family:nemotron",
+  "exactName": "NVIDIA Nemotron Labs Dory1.0-4B",
+  "publisher": "NVIDIA",
+  "version": "b366b87f762ea334ba3eb55912031baba1515810",
+  "aliases": [
+    "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16"
+  ],
+  "stage": "reasoning",
+  "architecture": "other",
+  "totalParametersB": {
+    "state": "known",
+    "value": 4,
+    "evidenceIds": [
+      "evidence:catchup1017-dory"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "unknown"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:catchup1017-dory"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:catchup1017-dory"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-17",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:catchup1017-dory"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:catchup1017-dory"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-dory"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-dory"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:catchup1017-dory"
+  ],
+  "releasedOn": "2026-10-16",
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:catchup1017-dory"
+    ],
+    "unit": "token"
+  },
+  "localExecutionStatus": "requires-validation",
+  "attentionArchitecture": "hybrid"
 });

@@ -44177,3 +44177,697 @@ evidence.push({
   "presentationNotes": [],
   "versionRevisionOrCommit": "23b0202a189c44a54625aadcb37a946dd1d6278d"
 });
+evidence.push({
+  "id": "evidence:catchup1017-beam",
+  "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/README.md",
+  "title": "Beam 1.0 — official released model",
+  "organization": "Reflection",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "publishedOn": "2026-10-16"
+});
+evidence.push({
+  "id": "evidence:catchup1017-beam-files",
+  "url": "https://huggingface.co/api/models/reflection/Beam-1.0-501B-A23B?blobs=true",
+  "title": "reflection/Beam-1.0-501B-A23B — public file inventory",
+  "organization": "Reflection",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "78f8f654d40a40919b8e9954b40dd879ecb9a692"
+});
+evidence.push({
+  "id": "evidence:catchup1017-beam-fp8-files",
+  "url": "https://huggingface.co/api/models/reflection/Beam-1.0-501B-A23B-FP8?blobs=true",
+  "title": "reflection/Beam-1.0-501B-A23B-FP8 — public file inventory",
+  "organization": "Reflection",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "077872da1757aa43e0330ab924b834825c54ecbc"
+});
+evidence.push({
+  "id": "evidence:catchup1017-beam-nvfp4-files",
+  "url": "https://huggingface.co/api/models/reflection/Beam-1.0-501B-A23B-NVFP4?blobs=true",
+  "title": "reflection/Beam-1.0-501B-A23B-NVFP4 — public file inventory",
+  "organization": "Reflection",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086"
+});
+evidence.push({
+  "id": "evidence:catchup1017-muse",
+  "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+  "title": "Muse Spark Open 816B-A42B — official model card",
+  "organization": "Meta",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "publishedOn": "2026-10-15"
+});
+evidence.push({
+  "id": "evidence:catchup1017-muse-files",
+  "url": "https://huggingface.co/api/models/meta-models/Muse-Spark-Open-816B-A42B?blobs=true",
+  "title": "meta-models/Muse-Spark-Open-816B-A42B — public file inventory",
+  "organization": "Meta",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0fb02478b02565b2ce7fc57e6051c91172774ac9"
+});
+evidence.push({
+  "id": "evidence:catchup1017-super",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+  "title": "NVIDIA Nemotron 3.5 Super VL 120B-A12B — official model card",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "publishedOn": "2026-10-15"
+});
+evidence.push({
+  "id": "evidence:catchup1017-super-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1f8953f7f0935358e3605150d22bc15df062061c"
+});
+evidence.push({
+  "id": "evidence:catchup1017-super-nvfp4-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "59b8721646c38111a242da18218859fb2b454322"
+});
+evidence.push({
+  "id": "evidence:catchup1017-bolt-bf16",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/README.md",
+  "title": "NVIDIA Nemotron 3.5 Bolt 74B-A9B — official model card",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "publishedOn": "2026-10-15"
+});
+evidence.push({
+  "id": "evidence:catchup1017-bolt-bf16-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777"
+});
+evidence.push({
+  "id": "evidence:catchup1017-bolt-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "c6cc2e8ffa353403213d6b9b18aaf8eb684d705a"
+});
+evidence.push({
+  "id": "evidence:catchup1017-bolt-gguf-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "e0fecb69cb3e5e4c5e8a056fa2aec98c78e91246"
+});
+evidence.push({
+  "id": "evidence:catchup1017-deepseek1017",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md",
+  "title": "DeepSeek-V4.1-Flash-1017 — official model card",
+  "organization": "DeepSeek",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "publishedOn": "2026-10-17"
+});
+evidence.push({
+  "id": "evidence:catchup1017-deepseek1017-files",
+  "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash-1017?blobs=true",
+  "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 — public file inventory",
+  "organization": "DeepSeek",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1bae0e1088993b9b82de08f59de5be5a34e42170"
+});
+evidence.push({
+  "id": "evidence:catchup1017-lfm24",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/1769516ac588c4c558089c94f27d96b0dc67b183/README.md",
+  "title": "LFM2.5-24B-A2B — official model card",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1769516ac588c4c558089c94f27d96b0dc67b183"
+});
+evidence.push({
+  "id": "evidence:catchup1017-lfm24-files",
+  "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-24B-A2B?blobs=true",
+  "title": "LiquidAI/LFM2.5-24B-A2B — public file inventory",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1769516ac588c4c558089c94f27d96b0dc67b183"
+});
+evidence.push({
+  "id": "evidence:catchup1017-lfm24-fp8-files",
+  "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-24B-A2B-FP8?blobs=true",
+  "title": "LiquidAI/LFM2.5-24B-A2B-FP8 — public file inventory",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f54bf39547fd5b7955abb9fe8d1b151e31fbbddb"
+});
+evidence.push({
+  "id": "evidence:catchup1017-lfm24-gguf-files",
+  "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-24B-A2B-GGUF?blobs=true",
+  "title": "LiquidAI/LFM2.5-24B-A2B-GGUF — public file inventory",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0912d33141f77e10705345a6732bfd83f0252fdc"
+});
+evidence.push({
+  "id": "evidence:catchup1017-lfm24-mlx-files",
+  "url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-24B-A2B-MLX-4bit?blobs=true",
+  "title": "LiquidAI/LFM2.5-24B-A2B-MLX-4bit — public file inventory",
+  "organization": "LiquidAI",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "667408d494bde191c2cb9dd4f4549827816b9275"
+});
+evidence.push({
+  "id": "evidence:catchup1017-granite8",
+  "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/blob/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/README.md",
+  "title": "Granite Switch 4.1 8B — official model card",
+  "organization": "IBM",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "publishedOn": "2026-10-14"
+});
+evidence.push({
+  "id": "evidence:catchup1017-granite8-files",
+  "url": "https://huggingface.co/api/models/ibm-granite/granite-switch-4.1-8b?blobs=true",
+  "title": "ibm-granite/granite-switch-4.1-8b — public file inventory",
+  "organization": "IBM",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6"
+});
+evidence.push({
+  "id": "evidence:catchup1017-granite30",
+  "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/blob/70b75c6fd254db33418e490714769ef028d16166/README.md",
+  "title": "Granite Switch 4.1 30B — official model card",
+  "organization": "IBM",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "70b75c6fd254db33418e490714769ef028d16166",
+  "publishedOn": "2026-10-14"
+});
+evidence.push({
+  "id": "evidence:catchup1017-granite30-files",
+  "url": "https://huggingface.co/api/models/ibm-granite/granite-switch-4.1-30b?blobs=true",
+  "title": "ibm-granite/granite-switch-4.1-30b — public file inventory",
+  "organization": "IBM",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "70b75c6fd254db33418e490714769ef028d16166"
+});
+evidence.push({
+  "id": "evidence:catchup1017-dory",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/blob/b366b87f762ea334ba3eb55912031baba1515810/README.md",
+  "title": "NVIDIA Nemotron Labs Dory1.0-4B — official model card",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "Model card, configuration and public repository file metadata",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b366b87f762ea334ba3eb55912031baba1515810",
+  "publishedOn": "2026-10-16"
+});
+evidence.push({
+  "id": "evidence:catchup1017-dory-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b366b87f762ea334ba3eb55912031baba1515810"
+});
+evidence.push({
+  "id": "evidence:catchup1017-dory-mxfp8-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8 — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f35880f52368271136b48e3a4365f91e70a92308"
+});
+evidence.push({
+  "id": "evidence:catchup1017-dory-nvfp4-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4 — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "41f02335e1a1ad3289b8b32485e2265cbe97cfdf"
+});
+evidence.push({
+  "id": "evidence:catchup1017-dory-gguf-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF — public file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-17",
+  "locator": "sha and siblings[].rfilename/size; file bytes reported by the repository, not a measured runtime",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0963c8000791e77b2b1b49aa387d92a6da9988d6"
+});
+evidence.push({
+  "id": "evidence:catchup1017-llama070",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
+  "title": "llama-cpp v0.7.0 — official release",
+  "organization": "llama-cpp",
+  "accessedOn": "2026-10-17",
+  "locator": "Official versioned release notes and compatibility changes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "620d2225cc436ab0b001e3200e590e3b286ef9ab",
+  "publishedOn": "2026-10-15"
+});
+evidence.push({
+  "id": "evidence:catchup1017-llama070-license",
+  "url": "https://github.com/ggml-org/llama.cpp/blob/v0.7.0/LICENSE",
+  "title": "llama-cpp v0.7.0 license",
+  "organization": "llama-cpp",
+  "accessedOn": "2026-10-17",
+  "locator": "LICENSE at the exact release tag",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.7.0"
+});
+evidence.push({
+  "id": "evidence:catchup1017-ollama405",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
+  "title": "ollama v0.40.5 — official release",
+  "organization": "ollama",
+  "accessedOn": "2026-10-17",
+  "locator": "Official versioned release notes and compatibility changes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "main",
+  "publishedOn": "2026-10-14"
+});
+evidence.push({
+  "id": "evidence:catchup1017-ollama405-license",
+  "url": "https://github.com/ollama/ollama/blob/v0.40.5/LICENSE",
+  "title": "ollama v0.40.5 license",
+  "organization": "ollama",
+  "accessedOn": "2026-10-17",
+  "locator": "LICENSE at the exact release tag",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.40.5"
+});
+evidence.push({
+  "id": "evidence:catchup1017-vllm031",
+  "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+  "title": "vllm v0.31.0 — official release",
+  "organization": "vllm",
+  "accessedOn": "2026-10-17",
+  "locator": "Official versioned release notes and compatibility changes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "main",
+  "publishedOn": "2026-10-05"
+});
+evidence.push({
+  "id": "evidence:catchup1017-vllm031-license",
+  "url": "https://github.com/vllm-project/vllm/blob/v0.31.0/LICENSE",
+  "title": "vllm v0.31.0 license",
+  "organization": "vllm",
+  "accessedOn": "2026-10-17",
+  "locator": "LICENSE at the exact release tag",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.31.0"
+});
+evidence.push({
+  "id": "evidence:catchup1017-sglang0521",
+  "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
+  "title": "sglang v0.5.21 — official release",
+  "organization": "sglang",
+  "accessedOn": "2026-10-17",
+  "locator": "Official versioned release notes and compatibility changes",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "main",
+  "publishedOn": "2026-10-02"
+});
+evidence.push({
+  "id": "evidence:catchup1017-sglang0521-license",
+  "url": "https://github.com/sgl-project/sglang/blob/v0.5.21/LICENSE",
+  "title": "sglang v0.5.21 license",
+  "organization": "sglang",
+  "accessedOn": "2026-10-17",
+  "locator": "LICENSE at the exact release tag",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.5.21"
+});
+evidence.push({
+  "id": "evidence:catchup1017-vllm-ghsa-4xqp",
+  "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-4xqp-c3mv-qff7",
+  "title": "GHSA-4xqp-c3mv-qff7",
+  "organization": "vLLM",
+  "accessedOn": "2026-10-17",
+  "locator": "Affected <0.31.0; patched >=0.31.0; /inference/v1/generate; proof of concept v0.29",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "publishedOn": "2026-10-06"
+});
+evidence.push({
+  "id": "evidence:catchup1017-llama-b11701",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11701",
+  "title": "llama.cpp b11701 — post-0.7.0 model support",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-17",
+  "locator": "Build release title: Beam #30670 or Granite Switch Decision #30676; not v0.7.0",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11701",
+  "publishedOn": "2026-10-16"
+});
+evidence.push({
+  "id": "evidence:catchup1017-llama-b11700",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11700",
+  "title": "llama.cpp b11700 — post-0.7.0 model support",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-17",
+  "locator": "Build release title: Beam #30670 or Granite Switch Decision #30676; not v0.7.0",
+  "kind": "publisher-report",
+  "sourceKind": "primary",
+  "scope": "مشخصات و مسیرهای اعلام‌شدهٔ ناشر؛ اجرای مستقل انجام نشده است.",
+  "limitations": [
+    "کیفیت فارسی، کارایی و حافظهٔ کامل اجرا در این بررسی اندازه‌گیری نشده‌اند."
+  ],
+  "commercialInterest": "منبع، ناشر محصول است؛ نتیجهٔ مستقل محسوب نمی‌شود.",
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11700",
+  "publishedOn": "2026-10-16"
+});

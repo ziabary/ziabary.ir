@@ -92,19 +92,19 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "Ollama v0.40.2 پایدار / Latest؛ مهاجرت پس‌زمینهٔ مدل‌های قدیمی و نگهداری موقت نسخهٔ اصلی برای بازگشت",
+    "value": "Ollama v0.40.2 پایدار تاریخی؛ مهاجرت پس‌زمینهٔ همین نسخه در 0.40.3 متوقف شد",
     "evidenceIds": [
       "evidence:ollama-v0-40-2-release"
     ]
   },
-  "selectionCaveat": "Ollama v0.40.2 پایدار / Latest: روی Apple Silicon فقط معماری‌های تأییدشده به‌طور پیش‌فرض با MLX اجرا می‌شوند: Qwen3.8، Qwen3.6، Qwen3.5، Gemma 4، Nimble، Tev1، Clef، Clef Flash و EmbeddingGemma 2. این رفتار به همهٔ مدل‌ها، اندازه‌ها، کوانتیزه‌ها، ورودی‌ها یا سیستم‌عامل‌ها تعمیم داده نشود؛ تگ و فایل سازگار هر مسیر جداگانه بررسی شود. مدل‌های تصمیم فقط خروجی نوع‌دار دارند و برای chat، tools یا thinking نیستند. کیفیت فارسی، سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند. در نخستین اجرای هر مدل قدیمی، مهاجرت در پس‌زمینه انجام می‌شود و نسخهٔ اصلی موقتاً روی دیسک می‌ماند. پیش از ارتقا فضای آزاد دیسک را بررسی کنید؛ حذف خودکار پشتیبان‌ها برای انتشار بعدی وعده داده شده است. شرط Windows/Clef Flash یعنی v0.40.1+ حفظ می‌شود.",
+  "selectionCaveat": "Ollama v0.40.2 پایدار تاریخی: روی Apple Silicon فقط معماری‌های تأییدشده به‌طور پیش‌فرض با MLX اجرا می‌شوند: Qwen3.8، Qwen3.6، Qwen3.5، Gemma 4، Nimble، Tev1، Clef، Clef Flash و EmbeddingGemma 2. این رفتار به همهٔ مدل‌ها، اندازه‌ها، کوانتیزه‌ها، ورودی‌ها یا سیستم‌عامل‌ها تعمیم داده نشود؛ تگ و فایل سازگار هر مسیر جداگانه بررسی شود. مدل‌های تصمیم فقط خروجی نوع‌دار دارند و برای chat، tools یا thinking نیستند. کیفیت فارسی، سرعت و حافظهٔ واقعی این مسیر آزمون نشده‌اند. در نخستین اجرای هر مدل قدیمی، مهاجرت در پس‌زمینه انجام می‌شود و نسخهٔ اصلی موقتاً روی دیسک می‌ماند. پیش از ارتقا فضای آزاد دیسک را بررسی کنید؛ حذف خودکار پشتیبان‌ها برای انتشار بعدی وعده داده شده است. شرط Windows/Clef Flash یعنی v0.40.1+ حفظ می‌شود. مهاجرت پس‌زمینهٔ 0.40.2 در 0.40.3 متوقف شد؛ به نسخه‌های بعدی تعمیم داده نشود.",
   "documentedBackends": [
     "Ollama runtime",
     "llama.cpp",
     "MLX"
   ],
   "releaseChannel": "stable",
-  "isLatest": true
+  "isLatest": false
 });
 softwareReleases.push({
   "id": "software-release:ollama-v0-40-0",
@@ -3163,4 +3163,329 @@ softwareReleases.push({
     "evidence:llama-cpp-b11552-release",
     "evidence:llama-server-pinned-slot-30295"
   ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-v0-7-0",
+  "productId": "software-product:llama-cpp",
+  "version": "v0.7.0",
+  "releaseChannel": "stable",
+  "releasedOn": "2026-10-15",
+  "lastReviewedOn": "2026-10-17",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:catchup1017-llama070-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ggml-org/llama.cpp/blob/v0.7.0/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-llama070-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-llama070-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-llama070-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پایدار؛ MoE expert cache، LiliCorr و پشتیبانی مدل‌های فهرست انتشار",
+    "evidenceIds": [
+      "evidence:catchup1017-llama070"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "--moe-cache-mib برای expertهای میزبان؛ RPC پروتکل ۸ و tensor split",
+    "evidenceIds": [
+      "evidence:catchup1017-llama070"
+    ]
+  },
+  "selectionCaveat": "دو سمت RPC باید با پروتکل ۸ هماهنگ باشند. پورت پیش‌فرض اجرای مستقیم 9931 و پورت داخلی Docker همچنان 8080 است. تغییر chat session API و قالب part-based بررسی شود. Beam b11701 و Granite b11700/11707 بعد از این نسخه‌اند؛ ضرایب سرعت/حافظهٔ release به تخمین‌گر تعمیم داده نشده‌اند.",
+  "evidenceIds": [
+    "evidence:catchup1017-llama070"
+  ],
+  "isLatest": false
+});
+softwareReleases.push({
+  "id": "software-release:ollama-v0-40-5",
+  "productId": "software-product:ollama",
+  "version": "v0.40.5",
+  "releasedOn": "2026-10-14",
+  "lastReviewedOn": "2026-10-17",
+  "roles": [
+    "inference-engine-library",
+    "api-server",
+    "model-manager"
+  ],
+  "environments": [
+    "desktop",
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local",
+    "cloud"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:v03-b5ce2f9cd14541cc7d"
+    ],
+    "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ollama/ollama/blob/v0.40.5/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-ollama405-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:catchup1017-ollama405"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "پایدار / Latest؛ اجرای محلی یا مسیر ابری با شرایط مستقل",
+    "evidenceIds": [
+      "evidence:catchup1017-ollama405"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Nemotron 3.5 Super/Bolt؛ اصلاح Responses با custom tool calls",
+    "evidenceIds": [
+      "evidence:catchup1017-ollama405"
+    ]
+  },
+  "selectionCaveat": "مهاجرت پس‌زمینهٔ 0.40.2 در 0.40.3 برای مشکلات کارایی متوقف شد؛ آن رفتار به 0.40.5 تعمیم داده نمی‌شود. مدل‌های تصمیم cloud با اجرای محلی یکی نیستند. نام 24GB در Bolt تضمین زمینهٔ کامل یا حافظهٔ کل نیست؛ نسخه و بستهٔ سازگار بررسی شود.",
+  "documentedBackends": [
+    "Ollama runtime",
+    "llama.cpp",
+    "MLX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": true
+});
+softwareReleases.push({
+  "id": "software-release:vllm-v0-31-0",
+  "productId": "software-product:vllm",
+  "version": "v0.31.0",
+  "releasedOn": "2026-10-05",
+  "lastReviewedOn": "2026-10-17",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:catchup1017-vllm031-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/vllm-project/vllm/blob/v0.31.0/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-vllm031-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-vllm031-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-vllm031-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:catchup1017-vllm031",
+    "evidence:catchup1017-vllm-ghsa-4xqp"
+  ],
+  "selectionCaveat": "طبق advisory رسمی، ورودی نامعتبر /inference/v1/generate می‌تواند سرویس را متوقف کند در حالی که /health سالم بماند؛ دامنهٔ اعلامی <0.31.0 و اصلاح >=0.31.0 است و نمونهٔ اثبات روی 0.29 اجرا شده است. در ارتقا، تغییرهای multimodal kwargs، tokenizer_mode=slow، cache و سایر advisoryهای ۶ اکتبر جدا بررسی شوند. پشتیبانی nightly مدل‌های تازه به این نسخهٔ پایدار منتقل نشده است.",
+  "targetScenario": {
+    "state": "known",
+    "value": "vLLM پایدار 0.31.0؛ سرویس‌دهی با کنترل دقیق نسخه و ورودی",
+    "evidenceIds": [
+      "evidence:catchup1017-vllm031"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "اصلاح GHSA-4xqp-c3mv-qff7؛ دامنهٔ اعلامی کمتر از 0.31.0",
+    "evidenceIds": [
+      "evidence:catchup1017-vllm031"
+    ]
+  },
+  "releaseChannel": "stable",
+  "isLatest": false
+});
+softwareReleases.push({
+  "id": "software-release:sglang-v0-5-21",
+  "productId": "software-product:sglang",
+  "version": "v0.5.21",
+  "releasedOn": "2026-10-02",
+  "lastReviewedOn": "2026-10-17",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server",
+    "container"
+  ],
+  "operatingSystems": [
+    "Linux"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU",
+    "TPU",
+    "NPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown",
+    "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:catchup1017-sglang0521-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/sgl-project/sglang/blob/v0.5.21/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-sglang0521-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-sglang0521-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-sglang0521-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:catchup1017-sglang0521"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "SGLang پایدار 0.5.21؛ مسیرهای نسخه‌مند CUDA و ROCm",
+    "evidenceIds": [
+      "evidence:catchup1017-sglang0521"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "پشتیبانی نسخه‌مند MiMo 2.6 و GLM 5.3 Flash روی MI355X",
+    "evidenceIds": [
+      "evidence:catchup1017-sglang0521"
+    ]
+  },
+  "selectionCaveat": "ایمیج‌های ROCm برای خانواده‌های GPU جدا هستند؛ پشتیبانی MI355X تأیید همهٔ AMD GPUها نیست. سرعت گزارش‌شده به دیگر مدل‌ها یا شرایط تعمیم داده نمی‌شود و نتایج تاریخی حفظ شده‌اند.",
+  "documentedNeeds": [
+    "high-throughput"
+  ],
+  "documentedBackends": [
+    "SGLang",
+    "PyTorch",
+    "JAX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": false
 });

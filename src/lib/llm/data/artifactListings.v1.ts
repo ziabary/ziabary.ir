@@ -32959,3 +32959,5038 @@ artifactListings.push({
   ],
   "scopeNote": "حجم فایل وزن کامل چندوجهی است؛ حافظهٔ اجرا، فعال‌سازی و بارگذاری مستقل متن را برآورد نمی‌کند. ارقام Pixel به GPU تعمیم داده نمی‌شوند."
 });
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-beam",
+  "modelVersionId": "model:reflection-beam",
+  "baseModelRepository": "reflection/Beam-1.0-501B-A23B",
+  "baseRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "publisher": "Reflection",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+  "filesUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/tree/78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "repositoryRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "files": [
+    {
+      "path": "model-00001-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00001-of-00188.safetensors",
+      "bytes": 5355604097
+    },
+    {
+      "path": "model-00002-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00002-of-00188.safetensors",
+      "bytes": 5368718945
+    },
+    {
+      "path": "model-00003-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00003-of-00188.safetensors",
+      "bytes": 5347751294
+    },
+    {
+      "path": "model-00004-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00004-of-00188.safetensors",
+      "bytes": 5347763170
+    },
+    {
+      "path": "model-00005-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00005-of-00188.safetensors",
+      "bytes": 5347763112
+    },
+    {
+      "path": "model-00006-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00006-of-00188.safetensors",
+      "bytes": 5347763112
+    },
+    {
+      "path": "model-00007-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00007-of-00188.safetensors",
+      "bytes": 5347763116
+    },
+    {
+      "path": "model-00008-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00008-of-00188.safetensors",
+      "bytes": 5347763164
+    },
+    {
+      "path": "model-00009-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00009-of-00188.safetensors",
+      "bytes": 5347763166
+    },
+    {
+      "path": "model-00010-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00010-of-00188.safetensors",
+      "bytes": 5347763112
+    },
+    {
+      "path": "model-00011-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00011-of-00188.safetensors",
+      "bytes": 5347763112
+    },
+    {
+      "path": "model-00012-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00012-of-00188.safetensors",
+      "bytes": 5347763212
+    },
+    {
+      "path": "model-00013-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00013-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00014-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00014-of-00188.safetensors",
+      "bytes": 5347763366
+    },
+    {
+      "path": "model-00015-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00015-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00016-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00016-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00017-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00017-of-00188.safetensors",
+      "bytes": 5347763328
+    },
+    {
+      "path": "model-00018-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00018-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00019-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00019-of-00188.safetensors",
+      "bytes": 5347763362
+    },
+    {
+      "path": "model-00020-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00020-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00021-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00021-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00022-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00022-of-00188.safetensors",
+      "bytes": 5347763332
+    },
+    {
+      "path": "model-00023-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00023-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00024-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00024-of-00188.safetensors",
+      "bytes": 5347763358
+    },
+    {
+      "path": "model-00025-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00025-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00026-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00026-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00027-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00027-of-00188.safetensors",
+      "bytes": 5347763336
+    },
+    {
+      "path": "model-00028-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00028-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00029-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00029-of-00188.safetensors",
+      "bytes": 5347763354
+    },
+    {
+      "path": "model-00030-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00030-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00031-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00031-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00032-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00032-of-00188.safetensors",
+      "bytes": 5347763340
+    },
+    {
+      "path": "model-00033-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00033-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00034-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00034-of-00188.safetensors",
+      "bytes": 5347763350
+    },
+    {
+      "path": "model-00035-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00035-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00036-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00036-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00037-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00037-of-00188.safetensors",
+      "bytes": 5347763344
+    },
+    {
+      "path": "model-00038-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00038-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00039-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00039-of-00188.safetensors",
+      "bytes": 5347763346
+    },
+    {
+      "path": "model-00040-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00040-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00041-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00041-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00042-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00042-of-00188.safetensors",
+      "bytes": 5347763348
+    },
+    {
+      "path": "model-00043-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00043-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00044-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00044-of-00188.safetensors",
+      "bytes": 5347763342
+    },
+    {
+      "path": "model-00045-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00045-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00046-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00046-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00047-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00047-of-00188.safetensors",
+      "bytes": 5347763352
+    },
+    {
+      "path": "model-00048-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00048-of-00188.safetensors",
+      "bytes": 5347763368
+    },
+    {
+      "path": "model-00049-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00049-of-00188.safetensors",
+      "bytes": 5347763338
+    },
+    {
+      "path": "model-00050-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00050-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00051-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00051-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00052-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00052-of-00188.safetensors",
+      "bytes": 5347763356
+    },
+    {
+      "path": "model-00053-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00053-of-00188.safetensors",
+      "bytes": 5347763370
+    },
+    {
+      "path": "model-00054-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00054-of-00188.safetensors",
+      "bytes": 5347763332
+    },
+    {
+      "path": "model-00055-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00055-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00056-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00056-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00057-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00057-of-00188.safetensors",
+      "bytes": 5347763360
+    },
+    {
+      "path": "model-00058-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00058-of-00188.safetensors",
+      "bytes": 5347763374
+    },
+    {
+      "path": "model-00059-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00059-of-00188.safetensors",
+      "bytes": 5347763324
+    },
+    {
+      "path": "model-00060-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00060-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00061-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00061-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00062-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00062-of-00188.safetensors",
+      "bytes": 5347763364
+    },
+    {
+      "path": "model-00063-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00063-of-00188.safetensors",
+      "bytes": 5347763378
+    },
+    {
+      "path": "model-00064-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00064-of-00188.safetensors",
+      "bytes": 5347763316
+    },
+    {
+      "path": "model-00065-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00065-of-00188.safetensors",
+      "bytes": 5347762950
+    },
+    {
+      "path": "model-00066-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00066-of-00188.safetensors",
+      "bytes": 5347762970
+    },
+    {
+      "path": "model-00067-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00067-of-00188.safetensors",
+      "bytes": 5347762950
+    },
+    {
+      "path": "model-00068-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00068-of-00188.safetensors",
+      "bytes": 5347762866
+    },
+    {
+      "path": "model-00069-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00069-of-00188.safetensors",
+      "bytes": 5347763018
+    },
+    {
+      "path": "model-00070-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00070-of-00188.safetensors",
+      "bytes": 5347762850
+    },
+    {
+      "path": "model-00071-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00071-of-00188.safetensors",
+      "bytes": 5347762966
+    },
+    {
+      "path": "model-00072-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00072-of-00188.safetensors",
+      "bytes": 5347762954
+    },
+    {
+      "path": "model-00073-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00073-of-00188.safetensors",
+      "bytes": 5347762862
+    },
+    {
+      "path": "model-00074-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00074-of-00188.safetensors",
+      "bytes": 5347763018
+    },
+    {
+      "path": "model-00075-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00075-of-00188.safetensors",
+      "bytes": 5347762854
+    },
+    {
+      "path": "model-00076-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00076-of-00188.safetensors",
+      "bytes": 5347762962
+    },
+    {
+      "path": "model-00077-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00077-of-00188.safetensors",
+      "bytes": 5347762958
+    },
+    {
+      "path": "model-00078-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00078-of-00188.safetensors",
+      "bytes": 5347762858
+    },
+    {
+      "path": "model-00079-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00079-of-00188.safetensors",
+      "bytes": 5347763018
+    },
+    {
+      "path": "model-00080-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00080-of-00188.safetensors",
+      "bytes": 5347762858
+    },
+    {
+      "path": "model-00081-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00081-of-00188.safetensors",
+      "bytes": 5347762958
+    },
+    {
+      "path": "model-00082-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00082-of-00188.safetensors",
+      "bytes": 5347762998
+    },
+    {
+      "path": "model-00083-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00083-of-00188.safetensors",
+      "bytes": 5347763058
+    },
+    {
+      "path": "model-00084-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00084-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00085-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00085-of-00188.safetensors",
+      "bytes": 5347763066
+    },
+    {
+      "path": "model-00086-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00086-of-00188.safetensors",
+      "bytes": 5347763158
+    },
+    {
+      "path": "model-00087-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00087-of-00188.safetensors",
+      "bytes": 5347763170
+    },
+    {
+      "path": "model-00088-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00088-of-00188.safetensors",
+      "bytes": 5347763054
+    },
+    {
+      "path": "model-00089-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00089-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00090-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00090-of-00188.safetensors",
+      "bytes": 5347763070
+    },
+    {
+      "path": "model-00091-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00091-of-00188.safetensors",
+      "bytes": 5347763154
+    },
+    {
+      "path": "model-00092-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00092-of-00188.safetensors",
+      "bytes": 5347763174
+    },
+    {
+      "path": "model-00093-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00093-of-00188.safetensors",
+      "bytes": 5347763050
+    },
+    {
+      "path": "model-00094-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00094-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00095-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00095-of-00188.safetensors",
+      "bytes": 5347763074
+    },
+    {
+      "path": "model-00096-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00096-of-00188.safetensors",
+      "bytes": 5347763150
+    },
+    {
+      "path": "model-00097-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00097-of-00188.safetensors",
+      "bytes": 5347763178
+    },
+    {
+      "path": "model-00098-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00098-of-00188.safetensors",
+      "bytes": 5347763046
+    },
+    {
+      "path": "model-00099-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00099-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00100-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00100-of-00188.safetensors",
+      "bytes": 5347763078
+    },
+    {
+      "path": "model-00101-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00101-of-00188.safetensors",
+      "bytes": 5347763146
+    },
+    {
+      "path": "model-00102-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00102-of-00188.safetensors",
+      "bytes": 5347763182
+    },
+    {
+      "path": "model-00103-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00103-of-00188.safetensors",
+      "bytes": 5347763042
+    },
+    {
+      "path": "model-00104-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00104-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00105-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00105-of-00188.safetensors",
+      "bytes": 5347763082
+    },
+    {
+      "path": "model-00106-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00106-of-00188.safetensors",
+      "bytes": 5347763142
+    },
+    {
+      "path": "model-00107-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00107-of-00188.safetensors",
+      "bytes": 5347763190
+    },
+    {
+      "path": "model-00108-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00108-of-00188.safetensors",
+      "bytes": 5347763034
+    },
+    {
+      "path": "model-00109-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00109-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00110-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00110-of-00188.safetensors",
+      "bytes": 5347763086
+    },
+    {
+      "path": "model-00111-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00111-of-00188.safetensors",
+      "bytes": 5347763138
+    },
+    {
+      "path": "model-00112-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00112-of-00188.safetensors",
+      "bytes": 5347763198
+    },
+    {
+      "path": "model-00113-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00113-of-00188.safetensors",
+      "bytes": 5347763026
+    },
+    {
+      "path": "model-00114-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00114-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00115-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00115-of-00188.safetensors",
+      "bytes": 5347763090
+    },
+    {
+      "path": "model-00116-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00116-of-00188.safetensors",
+      "bytes": 5347763134
+    },
+    {
+      "path": "model-00117-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00117-of-00188.safetensors",
+      "bytes": 5347763206
+    },
+    {
+      "path": "model-00118-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00118-of-00188.safetensors",
+      "bytes": 5347763018
+    },
+    {
+      "path": "model-00119-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00119-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00120-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00120-of-00188.safetensors",
+      "bytes": 5347763094
+    },
+    {
+      "path": "model-00121-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00121-of-00188.safetensors",
+      "bytes": 5347763130
+    },
+    {
+      "path": "model-00122-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00122-of-00188.safetensors",
+      "bytes": 5347763214
+    },
+    {
+      "path": "model-00123-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00123-of-00188.safetensors",
+      "bytes": 5347763010
+    },
+    {
+      "path": "model-00124-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00124-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00125-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00125-of-00188.safetensors",
+      "bytes": 5347763098
+    },
+    {
+      "path": "model-00126-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00126-of-00188.safetensors",
+      "bytes": 5347763126
+    },
+    {
+      "path": "model-00127-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00127-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00128-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00128-of-00188.safetensors",
+      "bytes": 5347763002
+    },
+    {
+      "path": "model-00129-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00129-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00130-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00130-of-00188.safetensors",
+      "bytes": 5347763102
+    },
+    {
+      "path": "model-00131-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00131-of-00188.safetensors",
+      "bytes": 5347763122
+    },
+    {
+      "path": "model-00132-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00132-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00133-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00133-of-00188.safetensors",
+      "bytes": 5347763002
+    },
+    {
+      "path": "model-00134-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00134-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00135-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00135-of-00188.safetensors",
+      "bytes": 5347763106
+    },
+    {
+      "path": "model-00136-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00136-of-00188.safetensors",
+      "bytes": 5347763118
+    },
+    {
+      "path": "model-00137-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00137-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00138-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00138-of-00188.safetensors",
+      "bytes": 5347763006
+    },
+    {
+      "path": "model-00139-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00139-of-00188.safetensors",
+      "bytes": 5347763218
+    },
+    {
+      "path": "model-00140-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00140-of-00188.safetensors",
+      "bytes": 5347763110
+    },
+    {
+      "path": "model-00141-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00141-of-00188.safetensors",
+      "bytes": 5347763114
+    },
+    {
+      "path": "model-00142-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00142-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00143-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00143-of-00188.safetensors",
+      "bytes": 5347763010
+    },
+    {
+      "path": "model-00144-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00144-of-00188.safetensors",
+      "bytes": 5347763214
+    },
+    {
+      "path": "model-00145-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00145-of-00188.safetensors",
+      "bytes": 5347763114
+    },
+    {
+      "path": "model-00146-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00146-of-00188.safetensors",
+      "bytes": 5347763110
+    },
+    {
+      "path": "model-00147-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00147-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00148-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00148-of-00188.safetensors",
+      "bytes": 5347763014
+    },
+    {
+      "path": "model-00149-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00149-of-00188.safetensors",
+      "bytes": 5347763210
+    },
+    {
+      "path": "model-00150-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00150-of-00188.safetensors",
+      "bytes": 5347763118
+    },
+    {
+      "path": "model-00151-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00151-of-00188.safetensors",
+      "bytes": 5347763106
+    },
+    {
+      "path": "model-00152-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00152-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00153-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00153-of-00188.safetensors",
+      "bytes": 5347763018
+    },
+    {
+      "path": "model-00154-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00154-of-00188.safetensors",
+      "bytes": 5347763206
+    },
+    {
+      "path": "model-00155-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00155-of-00188.safetensors",
+      "bytes": 5347763122
+    },
+    {
+      "path": "model-00156-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00156-of-00188.safetensors",
+      "bytes": 5347763102
+    },
+    {
+      "path": "model-00157-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00157-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00158-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00158-of-00188.safetensors",
+      "bytes": 5347763022
+    },
+    {
+      "path": "model-00159-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00159-of-00188.safetensors",
+      "bytes": 5347763202
+    },
+    {
+      "path": "model-00160-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00160-of-00188.safetensors",
+      "bytes": 5347763126
+    },
+    {
+      "path": "model-00161-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00161-of-00188.safetensors",
+      "bytes": 5347763098
+    },
+    {
+      "path": "model-00162-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00162-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00163-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00163-of-00188.safetensors",
+      "bytes": 5347763026
+    },
+    {
+      "path": "model-00164-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00164-of-00188.safetensors",
+      "bytes": 5347763198
+    },
+    {
+      "path": "model-00165-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00165-of-00188.safetensors",
+      "bytes": 5347763130
+    },
+    {
+      "path": "model-00166-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00166-of-00188.safetensors",
+      "bytes": 5347763094
+    },
+    {
+      "path": "model-00167-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00167-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00168-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00168-of-00188.safetensors",
+      "bytes": 5347763030
+    },
+    {
+      "path": "model-00169-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00169-of-00188.safetensors",
+      "bytes": 5347763194
+    },
+    {
+      "path": "model-00170-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00170-of-00188.safetensors",
+      "bytes": 5347763134
+    },
+    {
+      "path": "model-00171-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00171-of-00188.safetensors",
+      "bytes": 5347763090
+    },
+    {
+      "path": "model-00172-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00172-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00173-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00173-of-00188.safetensors",
+      "bytes": 5347763034
+    },
+    {
+      "path": "model-00174-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00174-of-00188.safetensors",
+      "bytes": 5347763190
+    },
+    {
+      "path": "model-00175-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00175-of-00188.safetensors",
+      "bytes": 5347763138
+    },
+    {
+      "path": "model-00176-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00176-of-00188.safetensors",
+      "bytes": 5347763086
+    },
+    {
+      "path": "model-00177-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00177-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00178-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00178-of-00188.safetensors",
+      "bytes": 5347763038
+    },
+    {
+      "path": "model-00179-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00179-of-00188.safetensors",
+      "bytes": 5347763186
+    },
+    {
+      "path": "model-00180-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00180-of-00188.safetensors",
+      "bytes": 5347763142
+    },
+    {
+      "path": "model-00181-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00181-of-00188.safetensors",
+      "bytes": 5347763082
+    },
+    {
+      "path": "model-00182-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00182-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00183-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00183-of-00188.safetensors",
+      "bytes": 5347763042
+    },
+    {
+      "path": "model-00184-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00184-of-00188.safetensors",
+      "bytes": 5347763182
+    },
+    {
+      "path": "model-00185-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00185-of-00188.safetensors",
+      "bytes": 5347763146
+    },
+    {
+      "path": "model-00186-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00186-of-00188.safetensors",
+      "bytes": 5347763078
+    },
+    {
+      "path": "model-00187-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00187-of-00188.safetensors",
+      "bytes": 5347763222
+    },
+    {
+      "path": "model-00188-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/resolve/78f8f654d40a40919b8e9954b40dd879ecb9a692/model-00188-of-00188.safetensors",
+      "bytes": 2608004777
+    }
+  ],
+  "totalBytes": 1002668503017,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-beam-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-beam-fp8",
+  "modelVersionId": "model:reflection-beam",
+  "baseModelRepository": "reflection/Beam-1.0-501B-A23B",
+  "baseRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "publisher": "Reflection",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "fp8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8",
+  "filesUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/tree/077872da1757aa43e0330ab924b834825c54ecbc",
+  "repositoryRevision": "077872da1757aa43e0330ab924b834825c54ecbc",
+  "files": [
+    {
+      "path": "model-00001-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00001-of-00188.safetensors",
+      "bytes": 4234000544
+    },
+    {
+      "path": "model-00002-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00002-of-00188.safetensors",
+      "bytes": 2685334528
+    },
+    {
+      "path": "model-00003-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00003-of-00188.safetensors",
+      "bytes": 2675143152
+    },
+    {
+      "path": "model-00004-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00004-of-00188.safetensors",
+      "bytes": 2676008688
+    },
+    {
+      "path": "model-00005-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00005-of-00188.safetensors",
+      "bytes": 2676008576
+    },
+    {
+      "path": "model-00006-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00006-of-00188.safetensors",
+      "bytes": 2676008576
+    },
+    {
+      "path": "model-00007-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00007-of-00188.safetensors",
+      "bytes": 2676008584
+    },
+    {
+      "path": "model-00008-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00008-of-00188.safetensors",
+      "bytes": 2676008680
+    },
+    {
+      "path": "model-00009-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00009-of-00188.safetensors",
+      "bytes": 2676008680
+    },
+    {
+      "path": "model-00010-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00010-of-00188.safetensors",
+      "bytes": 2676008576
+    },
+    {
+      "path": "model-00011-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00011-of-00188.safetensors",
+      "bytes": 2676008576
+    },
+    {
+      "path": "model-00012-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00012-of-00188.safetensors",
+      "bytes": 2676008776
+    },
+    {
+      "path": "model-00013-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00013-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00014-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00014-of-00188.safetensors",
+      "bytes": 2676009080
+    },
+    {
+      "path": "model-00015-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00015-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00016-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00016-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00017-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00017-of-00188.safetensors",
+      "bytes": 2676009008
+    },
+    {
+      "path": "model-00018-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00018-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00019-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00019-of-00188.safetensors",
+      "bytes": 2676009072
+    },
+    {
+      "path": "model-00020-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00020-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00021-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00021-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00022-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00022-of-00188.safetensors",
+      "bytes": 2676009016
+    },
+    {
+      "path": "model-00023-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00023-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00024-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00024-of-00188.safetensors",
+      "bytes": 2676009064
+    },
+    {
+      "path": "model-00025-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00025-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00026-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00026-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00027-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00027-of-00188.safetensors",
+      "bytes": 2676009024
+    },
+    {
+      "path": "model-00028-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00028-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00029-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00029-of-00188.safetensors",
+      "bytes": 2676009056
+    },
+    {
+      "path": "model-00030-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00030-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00031-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00031-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00032-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00032-of-00188.safetensors",
+      "bytes": 2676009032
+    },
+    {
+      "path": "model-00033-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00033-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00034-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00034-of-00188.safetensors",
+      "bytes": 2676009048
+    },
+    {
+      "path": "model-00035-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00035-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00036-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00036-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00037-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00037-of-00188.safetensors",
+      "bytes": 2676009040
+    },
+    {
+      "path": "model-00038-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00038-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00039-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00039-of-00188.safetensors",
+      "bytes": 2676009040
+    },
+    {
+      "path": "model-00040-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00040-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00041-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00041-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00042-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00042-of-00188.safetensors",
+      "bytes": 2676009048
+    },
+    {
+      "path": "model-00043-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00043-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00044-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00044-of-00188.safetensors",
+      "bytes": 2676009032
+    },
+    {
+      "path": "model-00045-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00045-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00046-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00046-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00047-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00047-of-00188.safetensors",
+      "bytes": 2676009056
+    },
+    {
+      "path": "model-00048-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00048-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00049-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00049-of-00188.safetensors",
+      "bytes": 2676009024
+    },
+    {
+      "path": "model-00050-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00050-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00051-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00051-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00052-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00052-of-00188.safetensors",
+      "bytes": 2676009064
+    },
+    {
+      "path": "model-00053-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00053-of-00188.safetensors",
+      "bytes": 2676009088
+    },
+    {
+      "path": "model-00054-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00054-of-00188.safetensors",
+      "bytes": 2676009016
+    },
+    {
+      "path": "model-00055-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00055-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00056-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00056-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00057-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00057-of-00188.safetensors",
+      "bytes": 2676009072
+    },
+    {
+      "path": "model-00058-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00058-of-00188.safetensors",
+      "bytes": 2676009096
+    },
+    {
+      "path": "model-00059-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00059-of-00188.safetensors",
+      "bytes": 2676009000
+    },
+    {
+      "path": "model-00060-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00060-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00061-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00061-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00062-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00062-of-00188.safetensors",
+      "bytes": 2676009080
+    },
+    {
+      "path": "model-00063-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00063-of-00188.safetensors",
+      "bytes": 2676009104
+    },
+    {
+      "path": "model-00064-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00064-of-00188.safetensors",
+      "bytes": 2676008984
+    },
+    {
+      "path": "model-00065-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00065-of-00188.safetensors",
+      "bytes": 2675229832
+    },
+    {
+      "path": "model-00066-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00066-of-00188.safetensors",
+      "bytes": 2674963592
+    },
+    {
+      "path": "model-00067-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00067-of-00188.safetensors",
+      "bytes": 2674963552
+    },
+    {
+      "path": "model-00068-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00068-of-00188.safetensors",
+      "bytes": 2674963384
+    },
+    {
+      "path": "model-00069-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00069-of-00188.safetensors",
+      "bytes": 2674963688
+    },
+    {
+      "path": "model-00070-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00070-of-00188.safetensors",
+      "bytes": 2674963352
+    },
+    {
+      "path": "model-00071-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00071-of-00188.safetensors",
+      "bytes": 2674963584
+    },
+    {
+      "path": "model-00072-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00072-of-00188.safetensors",
+      "bytes": 2674963560
+    },
+    {
+      "path": "model-00073-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00073-of-00188.safetensors",
+      "bytes": 2674963376
+    },
+    {
+      "path": "model-00074-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00074-of-00188.safetensors",
+      "bytes": 2674963688
+    },
+    {
+      "path": "model-00075-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00075-of-00188.safetensors",
+      "bytes": 2674963360
+    },
+    {
+      "path": "model-00076-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00076-of-00188.safetensors",
+      "bytes": 2674963576
+    },
+    {
+      "path": "model-00077-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00077-of-00188.safetensors",
+      "bytes": 2674963568
+    },
+    {
+      "path": "model-00078-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00078-of-00188.safetensors",
+      "bytes": 2674963368
+    },
+    {
+      "path": "model-00079-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00079-of-00188.safetensors",
+      "bytes": 2674963688
+    },
+    {
+      "path": "model-00080-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00080-of-00188.safetensors",
+      "bytes": 2674963368
+    },
+    {
+      "path": "model-00081-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00081-of-00188.safetensors",
+      "bytes": 2674963568
+    },
+    {
+      "path": "model-00082-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00082-of-00188.safetensors",
+      "bytes": 2674963648
+    },
+    {
+      "path": "model-00083-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00083-of-00188.safetensors",
+      "bytes": 2674963768
+    },
+    {
+      "path": "model-00084-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00084-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00085-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00085-of-00188.safetensors",
+      "bytes": 2674963784
+    },
+    {
+      "path": "model-00086-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00086-of-00188.safetensors",
+      "bytes": 2674963968
+    },
+    {
+      "path": "model-00087-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00087-of-00188.safetensors",
+      "bytes": 2674963992
+    },
+    {
+      "path": "model-00088-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00088-of-00188.safetensors",
+      "bytes": 2674963760
+    },
+    {
+      "path": "model-00089-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00089-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00090-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00090-of-00188.safetensors",
+      "bytes": 2674963792
+    },
+    {
+      "path": "model-00091-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00091-of-00188.safetensors",
+      "bytes": 2674963960
+    },
+    {
+      "path": "model-00092-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00092-of-00188.safetensors",
+      "bytes": 2674964000
+    },
+    {
+      "path": "model-00093-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00093-of-00188.safetensors",
+      "bytes": 2674963752
+    },
+    {
+      "path": "model-00094-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00094-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00095-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00095-of-00188.safetensors",
+      "bytes": 2674963800
+    },
+    {
+      "path": "model-00096-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00096-of-00188.safetensors",
+      "bytes": 2674963952
+    },
+    {
+      "path": "model-00097-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00097-of-00188.safetensors",
+      "bytes": 2674964008
+    },
+    {
+      "path": "model-00098-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00098-of-00188.safetensors",
+      "bytes": 2674963744
+    },
+    {
+      "path": "model-00099-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00099-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00100-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00100-of-00188.safetensors",
+      "bytes": 2674963808
+    },
+    {
+      "path": "model-00101-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00101-of-00188.safetensors",
+      "bytes": 2674963944
+    },
+    {
+      "path": "model-00102-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00102-of-00188.safetensors",
+      "bytes": 2674964016
+    },
+    {
+      "path": "model-00103-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00103-of-00188.safetensors",
+      "bytes": 2674963736
+    },
+    {
+      "path": "model-00104-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00104-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00105-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00105-of-00188.safetensors",
+      "bytes": 2674963816
+    },
+    {
+      "path": "model-00106-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00106-of-00188.safetensors",
+      "bytes": 2674963936
+    },
+    {
+      "path": "model-00107-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00107-of-00188.safetensors",
+      "bytes": 2674964032
+    },
+    {
+      "path": "model-00108-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00108-of-00188.safetensors",
+      "bytes": 2674963720
+    },
+    {
+      "path": "model-00109-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00109-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00110-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00110-of-00188.safetensors",
+      "bytes": 2674963824
+    },
+    {
+      "path": "model-00111-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00111-of-00188.safetensors",
+      "bytes": 2674963928
+    },
+    {
+      "path": "model-00112-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00112-of-00188.safetensors",
+      "bytes": 2674964048
+    },
+    {
+      "path": "model-00113-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00113-of-00188.safetensors",
+      "bytes": 2674963704
+    },
+    {
+      "path": "model-00114-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00114-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00115-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00115-of-00188.safetensors",
+      "bytes": 2674963832
+    },
+    {
+      "path": "model-00116-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00116-of-00188.safetensors",
+      "bytes": 2674963920
+    },
+    {
+      "path": "model-00117-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00117-of-00188.safetensors",
+      "bytes": 2674964064
+    },
+    {
+      "path": "model-00118-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00118-of-00188.safetensors",
+      "bytes": 2674963688
+    },
+    {
+      "path": "model-00119-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00119-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00120-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00120-of-00188.safetensors",
+      "bytes": 2674963840
+    },
+    {
+      "path": "model-00121-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00121-of-00188.safetensors",
+      "bytes": 2674963912
+    },
+    {
+      "path": "model-00122-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00122-of-00188.safetensors",
+      "bytes": 2674964080
+    },
+    {
+      "path": "model-00123-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00123-of-00188.safetensors",
+      "bytes": 2674963672
+    },
+    {
+      "path": "model-00124-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00124-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00125-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00125-of-00188.safetensors",
+      "bytes": 2674963848
+    },
+    {
+      "path": "model-00126-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00126-of-00188.safetensors",
+      "bytes": 2674963904
+    },
+    {
+      "path": "model-00127-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00127-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00128-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00128-of-00188.safetensors",
+      "bytes": 2674963656
+    },
+    {
+      "path": "model-00129-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00129-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00130-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00130-of-00188.safetensors",
+      "bytes": 2674963856
+    },
+    {
+      "path": "model-00131-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00131-of-00188.safetensors",
+      "bytes": 2674963896
+    },
+    {
+      "path": "model-00132-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00132-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00133-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00133-of-00188.safetensors",
+      "bytes": 2674963656
+    },
+    {
+      "path": "model-00134-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00134-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00135-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00135-of-00188.safetensors",
+      "bytes": 2674963864
+    },
+    {
+      "path": "model-00136-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00136-of-00188.safetensors",
+      "bytes": 2674963888
+    },
+    {
+      "path": "model-00137-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00137-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00138-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00138-of-00188.safetensors",
+      "bytes": 2674963664
+    },
+    {
+      "path": "model-00139-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00139-of-00188.safetensors",
+      "bytes": 2674964088
+    },
+    {
+      "path": "model-00140-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00140-of-00188.safetensors",
+      "bytes": 2674963872
+    },
+    {
+      "path": "model-00141-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00141-of-00188.safetensors",
+      "bytes": 2674963880
+    },
+    {
+      "path": "model-00142-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00142-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00143-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00143-of-00188.safetensors",
+      "bytes": 2674963672
+    },
+    {
+      "path": "model-00144-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00144-of-00188.safetensors",
+      "bytes": 2674964080
+    },
+    {
+      "path": "model-00145-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00145-of-00188.safetensors",
+      "bytes": 2674963880
+    },
+    {
+      "path": "model-00146-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00146-of-00188.safetensors",
+      "bytes": 2674963872
+    },
+    {
+      "path": "model-00147-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00147-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00148-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00148-of-00188.safetensors",
+      "bytes": 2674963680
+    },
+    {
+      "path": "model-00149-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00149-of-00188.safetensors",
+      "bytes": 2674964072
+    },
+    {
+      "path": "model-00150-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00150-of-00188.safetensors",
+      "bytes": 2674963888
+    },
+    {
+      "path": "model-00151-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00151-of-00188.safetensors",
+      "bytes": 2674963864
+    },
+    {
+      "path": "model-00152-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00152-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00153-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00153-of-00188.safetensors",
+      "bytes": 2674963688
+    },
+    {
+      "path": "model-00154-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00154-of-00188.safetensors",
+      "bytes": 2674964064
+    },
+    {
+      "path": "model-00155-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00155-of-00188.safetensors",
+      "bytes": 2674963896
+    },
+    {
+      "path": "model-00156-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00156-of-00188.safetensors",
+      "bytes": 2674963856
+    },
+    {
+      "path": "model-00157-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00157-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00158-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00158-of-00188.safetensors",
+      "bytes": 2674963696
+    },
+    {
+      "path": "model-00159-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00159-of-00188.safetensors",
+      "bytes": 2674964056
+    },
+    {
+      "path": "model-00160-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00160-of-00188.safetensors",
+      "bytes": 2674963904
+    },
+    {
+      "path": "model-00161-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00161-of-00188.safetensors",
+      "bytes": 2674963848
+    },
+    {
+      "path": "model-00162-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00162-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00163-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00163-of-00188.safetensors",
+      "bytes": 2674963704
+    },
+    {
+      "path": "model-00164-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00164-of-00188.safetensors",
+      "bytes": 2674964048
+    },
+    {
+      "path": "model-00165-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00165-of-00188.safetensors",
+      "bytes": 2674963912
+    },
+    {
+      "path": "model-00166-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00166-of-00188.safetensors",
+      "bytes": 2674963840
+    },
+    {
+      "path": "model-00167-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00167-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00168-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00168-of-00188.safetensors",
+      "bytes": 2674963712
+    },
+    {
+      "path": "model-00169-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00169-of-00188.safetensors",
+      "bytes": 2674964040
+    },
+    {
+      "path": "model-00170-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00170-of-00188.safetensors",
+      "bytes": 2674963920
+    },
+    {
+      "path": "model-00171-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00171-of-00188.safetensors",
+      "bytes": 2674963832
+    },
+    {
+      "path": "model-00172-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00172-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00173-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00173-of-00188.safetensors",
+      "bytes": 2674963720
+    },
+    {
+      "path": "model-00174-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00174-of-00188.safetensors",
+      "bytes": 2674964032
+    },
+    {
+      "path": "model-00175-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00175-of-00188.safetensors",
+      "bytes": 2674963928
+    },
+    {
+      "path": "model-00176-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00176-of-00188.safetensors",
+      "bytes": 2674963824
+    },
+    {
+      "path": "model-00177-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00177-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00178-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00178-of-00188.safetensors",
+      "bytes": 2674963728
+    },
+    {
+      "path": "model-00179-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00179-of-00188.safetensors",
+      "bytes": 2674964024
+    },
+    {
+      "path": "model-00180-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00180-of-00188.safetensors",
+      "bytes": 2674963936
+    },
+    {
+      "path": "model-00181-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00181-of-00188.safetensors",
+      "bytes": 2674963816
+    },
+    {
+      "path": "model-00182-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00182-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00183-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00183-of-00188.safetensors",
+      "bytes": 2674963736
+    },
+    {
+      "path": "model-00184-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00184-of-00188.safetensors",
+      "bytes": 2674964016
+    },
+    {
+      "path": "model-00185-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00185-of-00188.safetensors",
+      "bytes": 2674963944
+    },
+    {
+      "path": "model-00186-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00186-of-00188.safetensors",
+      "bytes": 2674963808
+    },
+    {
+      "path": "model-00187-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00187-of-00188.safetensors",
+      "bytes": 2674964096
+    },
+    {
+      "path": "model-00188-of-00188.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8/resolve/077872da1757aa43e0330ab924b834825c54ecbc/model-00188-of-00188.safetensors",
+      "bytes": 1434076160
+    }
+  ],
+  "totalBytes": 503285923088,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-beam-fp8-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-beam-nvfp4",
+  "modelVersionId": "model:reflection-beam",
+  "baseModelRepository": "reflection/Beam-1.0-501B-A23B",
+  "baseRevision": "78f8f654d40a40919b8e9954b40dd879ecb9a692",
+  "publisher": "Reflection",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "nvfp4",
+  "precision": "nvfp4",
+  "repositoryUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
+  "filesUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/tree/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086",
+  "repositoryRevision": "3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086",
+  "files": [
+    {
+      "path": "model-layer-00000.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00000.safetensors",
+      "bytes": 838904064
+    },
+    {
+      "path": "model-layer-00001.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00001.safetensors",
+      "bytes": 838904064
+    },
+    {
+      "path": "model-layer-00002.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00002.safetensors",
+      "bytes": 838904064
+    },
+    {
+      "path": "model-layer-00003.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00003.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00004.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00004.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00005.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00005.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00006.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00006.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00007.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00007.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00008.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00008.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00009.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00009.safetensors",
+      "bytes": 5877681136
+    },
+    {
+      "path": "model-layer-00010.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00010.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00011.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00011.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00012.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00012.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00013.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00013.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00014.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00014.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00015.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00015.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00016.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00016.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00017.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00017.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00018.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00018.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00019.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00019.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00020.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00020.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00021.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00021.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00022.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00022.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00023.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00023.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00024.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00024.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00025.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00025.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00026.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00026.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00027.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00027.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00028.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00028.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00029.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00029.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00030.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00030.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00031.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00031.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00032.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00032.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00033.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00033.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00034.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00034.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00035.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00035.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00036.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00036.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00037.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00037.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00038.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00038.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00039.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00039.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00040.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00040.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00041.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00041.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00042.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00042.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00043.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00043.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00044.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00044.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00045.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00045.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00046.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00046.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00047.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00047.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00048.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00048.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00049.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00049.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00050.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00050.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-layer-00051.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-layer-00051.safetensors",
+      "bytes": 5877684224
+    },
+    {
+      "path": "model-tail.safetensors",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4/resolve/3bd1dccf13c8f7aa3d6732c5aaa48ba107a2c086/model-tail.safetensors",
+      "bytes": 3111659816
+    }
+  ],
+  "totalBytes": 293634877368,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-beam-nvfp4-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-muse",
+  "modelVersionId": "model:meta-models-muse-spark-open-816b-a42b",
+  "baseModelRepository": "meta-models/Muse-Spark-Open-816B-A42B",
+  "baseRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "publisher": "Meta",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+  "filesUrl": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/tree/0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "repositoryRevision": "0fb02478b02565b2ce7fc57e6051c91172774ac9",
+  "files": [
+    {
+      "path": "model-00001-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00001-of-00065.safetensors",
+      "bytes": 26373859072
+    },
+    {
+      "path": "model-00002-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00002-of-00065.safetensors",
+      "bytes": 26315273424
+    },
+    {
+      "path": "model-00003-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00003-of-00065.safetensors",
+      "bytes": 26373883816
+    },
+    {
+      "path": "model-00004-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00004-of-00065.safetensors",
+      "bytes": 26373900288
+    },
+    {
+      "path": "model-00005-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00005-of-00065.safetensors",
+      "bytes": 26306824744
+    },
+    {
+      "path": "model-00006-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00006-of-00065.safetensors",
+      "bytes": 26373825888
+    },
+    {
+      "path": "model-00007-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00007-of-00065.safetensors",
+      "bytes": 26306784320
+    },
+    {
+      "path": "model-00008-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00008-of-00065.safetensors",
+      "bytes": 26306727616
+    },
+    {
+      "path": "model-00009-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00009-of-00065.safetensors",
+      "bytes": 26323470640
+    },
+    {
+      "path": "model-00010-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00010-of-00065.safetensors",
+      "bytes": 26315163760
+    },
+    {
+      "path": "model-00011-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00011-of-00065.safetensors",
+      "bytes": 26306692192
+    },
+    {
+      "path": "model-00012-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00012-of-00065.safetensors",
+      "bytes": 26306800808
+    },
+    {
+      "path": "model-00013-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00013-of-00065.safetensors",
+      "bytes": 26382348376
+    },
+    {
+      "path": "model-00014-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00014-of-00065.safetensors",
+      "bytes": 26331928352
+    },
+    {
+      "path": "model-00015-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00015-of-00065.safetensors",
+      "bytes": 26306717040
+    },
+    {
+      "path": "model-00016-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00016-of-00065.safetensors",
+      "bytes": 26390695432
+    },
+    {
+      "path": "model-00017-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00017-of-00065.safetensors",
+      "bytes": 26390614000
+    },
+    {
+      "path": "model-00018-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00018-of-00065.safetensors",
+      "bytes": 26382273664
+    },
+    {
+      "path": "model-00019-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00019-of-00065.safetensors",
+      "bytes": 26382222832
+    },
+    {
+      "path": "model-00020-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00020-of-00065.safetensors",
+      "bytes": 26315106928
+    },
+    {
+      "path": "model-00021-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00021-of-00065.safetensors",
+      "bytes": 26340365328
+    },
+    {
+      "path": "model-00022-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00022-of-00065.safetensors",
+      "bytes": 26315115232
+    },
+    {
+      "path": "model-00023-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00023-of-00065.safetensors",
+      "bytes": 26382292584
+    },
+    {
+      "path": "model-00024-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00024-of-00065.safetensors",
+      "bytes": 26315123720
+    },
+    {
+      "path": "model-00025-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00025-of-00065.safetensors",
+      "bytes": 26390670712
+    },
+    {
+      "path": "model-00026-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00026-of-00065.safetensors",
+      "bytes": 26323630096
+    },
+    {
+      "path": "model-00027-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00027-of-00065.safetensors",
+      "bytes": 26315196824
+    },
+    {
+      "path": "model-00028-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00028-of-00065.safetensors",
+      "bytes": 26306708568
+    },
+    {
+      "path": "model-00029-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00029-of-00065.safetensors",
+      "bytes": 26340313768
+    },
+    {
+      "path": "model-00030-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00030-of-00065.safetensors",
+      "bytes": 26331970136
+    },
+    {
+      "path": "model-00031-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00031-of-00065.safetensors",
+      "bytes": 26365549656
+    },
+    {
+      "path": "model-00032-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00032-of-00065.safetensors",
+      "bytes": 26323504432
+    },
+    {
+      "path": "model-00033-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00033-of-00065.safetensors",
+      "bytes": 29600276792
+    },
+    {
+      "path": "model-00034-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00034-of-00065.safetensors",
+      "bytes": 26289948304
+    },
+    {
+      "path": "model-00035-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00035-of-00065.safetensors",
+      "bytes": 26315156208
+    },
+    {
+      "path": "model-00036-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00036-of-00065.safetensors",
+      "bytes": 29600269920
+    },
+    {
+      "path": "model-00037-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00037-of-00065.safetensors",
+      "bytes": 26373900448
+    },
+    {
+      "path": "model-00038-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00038-of-00065.safetensors",
+      "bytes": 26315172960
+    },
+    {
+      "path": "model-00039-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00039-of-00065.safetensors",
+      "bytes": 26306784264
+    },
+    {
+      "path": "model-00040-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00040-of-00065.safetensors",
+      "bytes": 26382365752
+    },
+    {
+      "path": "model-00041-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00041-of-00065.safetensors",
+      "bytes": 26332025296
+    },
+    {
+      "path": "model-00042-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00042-of-00065.safetensors",
+      "bytes": 26390687376
+    },
+    {
+      "path": "model-00043-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00043-of-00065.safetensors",
+      "bytes": 26315134048
+    },
+    {
+      "path": "model-00044-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00044-of-00065.safetensors",
+      "bytes": 26323611136
+    },
+    {
+      "path": "model-00045-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00045-of-00065.safetensors",
+      "bytes": 26315173120
+    },
+    {
+      "path": "model-00046-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00046-of-00065.safetensors",
+      "bytes": 26374040760
+    },
+    {
+      "path": "model-00047-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00047-of-00065.safetensors",
+      "bytes": 26306741592
+    },
+    {
+      "path": "model-00048-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00048-of-00065.safetensors",
+      "bytes": 26373817568
+    },
+    {
+      "path": "model-00049-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00049-of-00065.safetensors",
+      "bytes": 26323655312
+    },
+    {
+      "path": "model-00050-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00050-of-00065.safetensors",
+      "bytes": 26306749952
+    },
+    {
+      "path": "model-00051-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00051-of-00065.safetensors",
+      "bytes": 26382208728
+    },
+    {
+      "path": "model-00052-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00052-of-00065.safetensors",
+      "bytes": 26323469768
+    },
+    {
+      "path": "model-00053-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00053-of-00065.safetensors",
+      "bytes": 26373836512
+    },
+    {
+      "path": "model-00054-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00054-of-00065.safetensors",
+      "bytes": 26382281984
+    },
+    {
+      "path": "model-00055-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00055-of-00065.safetensors",
+      "bytes": 26306800008
+    },
+    {
+      "path": "model-00056-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00056-of-00065.safetensors",
+      "bytes": 26315295616
+    },
+    {
+      "path": "model-00057-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00057-of-00065.safetensors",
+      "bytes": 26315156416
+    },
+    {
+      "path": "model-00058-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00058-of-00065.safetensors",
+      "bytes": 26327794200
+    },
+    {
+      "path": "model-00059-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00059-of-00065.safetensors",
+      "bytes": 26315130456
+    },
+    {
+      "path": "model-00060-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00060-of-00065.safetensors",
+      "bytes": 26323621000
+    },
+    {
+      "path": "model-00061-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00061-of-00065.safetensors",
+      "bytes": 26306751464
+    },
+    {
+      "path": "model-00062-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00062-of-00065.safetensors",
+      "bytes": 26306708680
+    },
+    {
+      "path": "model-00063-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00063-of-00065.safetensors",
+      "bytes": 550288128
+    },
+    {
+      "path": "model-00064-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00064-of-00065.safetensors",
+      "bytes": 553724608
+    },
+    {
+      "path": "model-00065-of-00065.safetensors",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/resolve/0fb02478b02565b2ce7fc57e6051c91172774ac9/model-00065-of-00065.safetensors",
+      "bytes": 3789261240
+    }
+  ],
+  "totalBytes": 1644333393864,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-muse-files"
+  ],
+  "scopeNote": "فرادادهٔ عمومی فایل‌ها بررسی شد؛ خود وزن‌ها دریافت نشده‌اند و دانلود gated است. این بسته پیشنهاد اجرای تک‌کارت ۲۴/۴۸GB نیست."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-super",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "baseRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/tree/1f8953f7f0935358e3605150d22bc15df062061c",
+  "repositoryRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "files": [
+    {
+      "path": "model-00001-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00001-of-00063.safetensors",
+      "bytes": 3979553376
+    },
+    {
+      "path": "model-00002-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00002-of-00063.safetensors",
+      "bytes": 3983776296
+    },
+    {
+      "path": "model-00003-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00003-of-00063.safetensors",
+      "bytes": 3980236632
+    },
+    {
+      "path": "model-00004-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00004-of-00063.safetensors",
+      "bytes": 3983775736
+    },
+    {
+      "path": "model-00005-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00005-of-00063.safetensors",
+      "bytes": 3983521112
+    },
+    {
+      "path": "model-00006-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00006-of-00063.safetensors",
+      "bytes": 3980236616
+    },
+    {
+      "path": "model-00007-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00007-of-00063.safetensors",
+      "bytes": 3983776224
+    },
+    {
+      "path": "model-00008-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00008-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00009-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00009-of-00063.safetensors",
+      "bytes": 3980237344
+    },
+    {
+      "path": "model-00010-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00010-of-00063.safetensors",
+      "bytes": 3983776416
+    },
+    {
+      "path": "model-00011-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00011-of-00063.safetensors",
+      "bytes": 3983521784
+    },
+    {
+      "path": "model-00012-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00012-of-00063.safetensors",
+      "bytes": 3980237328
+    },
+    {
+      "path": "model-00013-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00013-of-00063.safetensors",
+      "bytes": 3983776440
+    },
+    {
+      "path": "model-00014-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00014-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00015-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00015-of-00063.safetensors",
+      "bytes": 3980237328
+    },
+    {
+      "path": "model-00016-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00016-of-00063.safetensors",
+      "bytes": 3983776432
+    },
+    {
+      "path": "model-00017-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00017-of-00063.safetensors",
+      "bytes": 3983521784
+    },
+    {
+      "path": "model-00018-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00018-of-00063.safetensors",
+      "bytes": 3980237312
+    },
+    {
+      "path": "model-00019-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00019-of-00063.safetensors",
+      "bytes": 3983776456
+    },
+    {
+      "path": "model-00020-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00020-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00021-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00021-of-00063.safetensors",
+      "bytes": 3980237320
+    },
+    {
+      "path": "model-00022-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00022-of-00063.safetensors",
+      "bytes": 3983776448
+    },
+    {
+      "path": "model-00023-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00023-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00024-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00024-of-00063.safetensors",
+      "bytes": 3980237320
+    },
+    {
+      "path": "model-00025-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00025-of-00063.safetensors",
+      "bytes": 3983521248
+    },
+    {
+      "path": "model-00026-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00026-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00027-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00027-of-00063.safetensors",
+      "bytes": 3980237304
+    },
+    {
+      "path": "model-00028-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00028-of-00063.safetensors",
+      "bytes": 3983776464
+    },
+    {
+      "path": "model-00029-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00029-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00030-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00030-of-00063.safetensors",
+      "bytes": 3980237312
+    },
+    {
+      "path": "model-00031-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00031-of-00063.safetensors",
+      "bytes": 3983776456
+    },
+    {
+      "path": "model-00032-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00032-of-00063.safetensors",
+      "bytes": 3983521792
+    },
+    {
+      "path": "model-00033-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00033-of-00063.safetensors",
+      "bytes": 3980237280
+    },
+    {
+      "path": "model-00034-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00034-of-00063.safetensors",
+      "bytes": 3983776472
+    },
+    {
+      "path": "model-00035-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00035-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00036-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00036-of-00063.safetensors",
+      "bytes": 3980237288
+    },
+    {
+      "path": "model-00037-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00037-of-00063.safetensors",
+      "bytes": 3983776472
+    },
+    {
+      "path": "model-00038-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00038-of-00063.safetensors",
+      "bytes": 3983776976
+    },
+    {
+      "path": "model-00039-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00039-of-00063.safetensors",
+      "bytes": 3980237296
+    },
+    {
+      "path": "model-00040-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00040-of-00063.safetensors",
+      "bytes": 3983521272
+    },
+    {
+      "path": "model-00041-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00041-of-00063.safetensors",
+      "bytes": 3983776984
+    },
+    {
+      "path": "model-00042-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00042-of-00063.safetensors",
+      "bytes": 3980237272
+    },
+    {
+      "path": "model-00043-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00043-of-00063.safetensors",
+      "bytes": 3983776480
+    },
+    {
+      "path": "model-00044-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00044-of-00063.safetensors",
+      "bytes": 3983776984
+    },
+    {
+      "path": "model-00045-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00045-of-00063.safetensors",
+      "bytes": 3980237280
+    },
+    {
+      "path": "model-00046-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00046-of-00063.safetensors",
+      "bytes": 3983776480
+    },
+    {
+      "path": "model-00047-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00047-of-00063.safetensors",
+      "bytes": 3983521800
+    },
+    {
+      "path": "model-00048-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00048-of-00063.safetensors",
+      "bytes": 3980237248
+    },
+    {
+      "path": "model-00049-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00049-of-00063.safetensors",
+      "bytes": 3983776496
+    },
+    {
+      "path": "model-00050-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00050-of-00063.safetensors",
+      "bytes": 3983776992
+    },
+    {
+      "path": "model-00051-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00051-of-00063.safetensors",
+      "bytes": 3980237256
+    },
+    {
+      "path": "model-00052-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00052-of-00063.safetensors",
+      "bytes": 3983776488
+    },
+    {
+      "path": "model-00053-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00053-of-00063.safetensors",
+      "bytes": 3983521808
+    },
+    {
+      "path": "model-00054-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00054-of-00063.safetensors",
+      "bytes": 3980237224
+    },
+    {
+      "path": "model-00055-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00055-of-00063.safetensors",
+      "bytes": 3983776512
+    },
+    {
+      "path": "model-00056-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00056-of-00063.safetensors",
+      "bytes": 3983776992
+    },
+    {
+      "path": "model-00057-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00057-of-00063.safetensors",
+      "bytes": 3980237240
+    },
+    {
+      "path": "model-00058-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00058-of-00063.safetensors",
+      "bytes": 3983776504
+    },
+    {
+      "path": "model-00059-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00059-of-00063.safetensors",
+      "bytes": 3983776992
+    },
+    {
+      "path": "model-00060-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00060-of-00063.safetensors",
+      "bytes": 3980237248
+    },
+    {
+      "path": "model-00061-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00061-of-00063.safetensors",
+      "bytes": 3910941080
+    },
+    {
+      "path": "model-00062-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00062-of-00063.safetensors",
+      "bytes": 3982620808
+    },
+    {
+      "path": "model-00063-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-00063-of-00063.safetensors",
+      "bytes": 2069952976
+    },
+    {
+      "path": "model-summary-idxs.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/resolve/1f8953f7f0935358e3605150d22bc15df062061c/model-summary-idxs.safetensors",
+      "bytes": 104
+    }
+  ],
+  "totalBytes": 248913061416,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-super-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-super-nvfp4",
+  "modelVersionId": "model:nvidia-nemotron-3-5-super-vl-120b-a12b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "baseRevision": "1f8953f7f0935358e3605150d22bc15df062061c",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "nvfp4",
+  "precision": "nvfp4",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/tree/59b8721646c38111a242da18218859fb2b454322",
+  "repositoryRevision": "59b8721646c38111a242da18218859fb2b454322",
+  "files": [
+    {
+      "path": "model-00001-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00001-of-00088.safetensors",
+      "bytes": 2868224280
+    },
+    {
+      "path": "model-00002-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00002-of-00088.safetensors",
+      "bytes": 1631773032
+    },
+    {
+      "path": "model-00003-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00003-of-00088.safetensors",
+      "bytes": 109705480
+    },
+    {
+      "path": "model-00004-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00004-of-00088.safetensors",
+      "bytes": 1631773032
+    },
+    {
+      "path": "model-00005-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00005-of-00088.safetensors",
+      "bytes": 109705480
+    },
+    {
+      "path": "model-00006-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00006-of-00088.safetensors",
+      "bytes": 1631773032
+    },
+    {
+      "path": "model-00007-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00007-of-00088.safetensors",
+      "bytes": 109705480
+    },
+    {
+      "path": "model-00008-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00008-of-00088.safetensors",
+      "bytes": 35661352
+    },
+    {
+      "path": "model-00009-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00009-of-00088.safetensors",
+      "bytes": 1631773032
+    },
+    {
+      "path": "model-00010-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00010-of-00088.safetensors",
+      "bytes": 109705480
+    },
+    {
+      "path": "model-00011-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00011-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00012-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00012-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00013-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00013-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00014-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00014-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00015-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00015-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00016-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00016-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00017-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00017-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00018-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00018-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00019-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00019-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00020-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00020-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00021-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00021-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00022-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00022-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00023-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00023-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00024-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00024-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00025-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00025-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00026-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00026-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00027-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00027-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00028-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00028-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00029-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00029-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00030-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00030-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00031-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00031-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00032-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00032-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00033-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00033-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00034-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00034-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00035-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00035-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00036-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00036-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00037-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00037-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00038-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00038-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00039-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00039-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00040-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00040-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00041-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00041-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00042-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00042-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00043-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00043-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00044-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00044-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00045-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00045-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00046-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00046-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00047-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00047-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00048-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00048-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00049-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00049-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00050-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00050-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00051-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00051-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00052-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00052-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00053-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00053-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00054-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00054-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00055-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00055-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00056-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00056-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00057-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00057-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00058-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00058-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00059-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00059-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00060-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00060-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00061-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00061-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00062-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00062-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00063-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00063-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00064-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00064-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00065-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00065-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00066-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00066-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00067-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00067-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00068-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00068-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00069-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00069-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00070-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00070-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00071-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00071-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00072-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00072-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00073-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00073-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00074-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00074-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00075-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00075-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00076-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00076-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00077-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00077-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00078-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00078-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00079-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00079-of-00088.safetensors",
+      "bytes": 35661360
+    },
+    {
+      "path": "model-00080-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00080-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00081-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00081-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00082-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00082-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00083-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00083-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00084-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00084-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00085-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00085-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00086-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00086-of-00088.safetensors",
+      "bytes": 1631777144
+    },
+    {
+      "path": "model-00087-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00087-of-00088.safetensors",
+      "bytes": 109705488
+    },
+    {
+      "path": "model-00088-of-00088.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/resolve/59b8721646c38111a242da18218859fb2b454322/model-00088-of-00088.safetensors",
+      "bytes": 3938866920
+    }
+  ],
+  "totalBytes": 75010188240,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-super-nvfp4-files"
+  ],
+  "runtimeEngines": [
+    "vLLM"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-bolt-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "baseRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/tree/a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "repositoryRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "files": [
+    {
+      "path": "model-00001-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00001-of-00063.safetensors",
+      "bytes": 2299698944
+    },
+    {
+      "path": "model-00002-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00002-of-00063.safetensors",
+      "bytes": 1735453928
+    },
+    {
+      "path": "model-00003-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00003-of-00063.safetensors",
+      "bytes": 1107346648
+    },
+    {
+      "path": "model-00004-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00004-of-00063.safetensors",
+      "bytes": 1332782104
+    },
+    {
+      "path": "model-00005-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00005-of-00063.safetensors",
+      "bytes": 1960905160
+    },
+    {
+      "path": "model-00006-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00006-of-00063.safetensors",
+      "bytes": 2312180704
+    },
+    {
+      "path": "model-00007-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00007-of-00063.safetensors",
+      "bytes": 1459135904
+    },
+    {
+      "path": "model-00008-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00008-of-00063.safetensors",
+      "bytes": 1966140072
+    },
+    {
+      "path": "model-00009-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00009-of-00063.safetensors",
+      "bytes": 1505807072
+    },
+    {
+      "path": "model-00010-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00010-of-00063.safetensors",
+      "bytes": 1332782360
+    },
+    {
+      "path": "model-00011-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00011-of-00063.safetensors",
+      "bytes": 1927874376
+    },
+    {
+      "path": "model-00012-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00012-of-00063.safetensors",
+      "bytes": 2345212352
+    },
+    {
+      "path": "model-00013-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00013-of-00063.safetensors",
+      "bytes": 1601751648
+    },
+    {
+      "path": "model-00014-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00014-of-00063.safetensors",
+      "bytes": 2199456824
+    },
+    {
+      "path": "model-00015-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00015-of-00063.safetensors",
+      "bytes": 3371265232
+    },
+    {
+      "path": "model-00016-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00016-of-00063.safetensors",
+      "bytes": 2927186536
+    },
+    {
+      "path": "model-00017-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00017-of-00063.safetensors",
+      "bytes": 2873717968
+    },
+    {
+      "path": "model-00018-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00018-of-00063.safetensors",
+      "bytes": 1577112704
+    },
+    {
+      "path": "model-00019-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00019-of-00063.safetensors",
+      "bytes": 2364609024
+    },
+    {
+      "path": "model-00020-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00020-of-00063.safetensors",
+      "bytes": 2927186936
+    },
+    {
+      "path": "model-00021-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00021-of-00063.safetensors",
+      "bytes": 2626755640
+    },
+    {
+      "path": "model-00022-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00022-of-00063.safetensors",
+      "bytes": 1761135232
+    },
+    {
+      "path": "model-00023-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00023-of-00063.safetensors",
+      "bytes": 2280196656
+    },
+    {
+      "path": "model-00024-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00024-of-00063.safetensors",
+      "bytes": 3034147992
+    },
+    {
+      "path": "model-00025-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00025-of-00063.safetensors",
+      "bytes": 2659275504
+    },
+    {
+      "path": "model-00026-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00026-of-00063.safetensors",
+      "bytes": 2483104328
+    },
+    {
+      "path": "model-00027-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00027-of-00063.safetensors",
+      "bytes": 2428585992
+    },
+    {
+      "path": "model-00028-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00028-of-00063.safetensors",
+      "bytes": 2302742600
+    },
+    {
+      "path": "model-00029-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00029-of-00063.safetensors",
+      "bytes": 2603691000
+    },
+    {
+      "path": "model-00030-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00030-of-00063.safetensors",
+      "bytes": 3371265208
+    },
+    {
+      "path": "model-00031-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00031-of-00063.safetensors",
+      "bytes": 2875798656
+    },
+    {
+      "path": "model-00032-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00032-of-00063.safetensors",
+      "bytes": 2815510792
+    },
+    {
+      "path": "model-00033-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00033-of-00063.safetensors",
+      "bytes": 3706818784
+    },
+    {
+      "path": "model-00034-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00034-of-00063.safetensors",
+      "bytes": 3599860704
+    },
+    {
+      "path": "model-00035-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00035-of-00063.safetensors",
+      "bytes": 3045674488
+    },
+    {
+      "path": "model-00036-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00036-of-00063.safetensors",
+      "bytes": 1811994944
+    },
+    {
+      "path": "model-00037-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00037-of-00063.safetensors",
+      "bytes": 2062609856
+    },
+    {
+      "path": "model-00038-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00038-of-00063.safetensors",
+      "bytes": 2582718904
+    },
+    {
+      "path": "model-00039-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00039-of-00063.safetensors",
+      "bytes": 3035711600
+    },
+    {
+      "path": "model-00040-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00040-of-00063.safetensors",
+      "bytes": 1977683784
+    },
+    {
+      "path": "model-00041-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00041-of-00063.safetensors",
+      "bytes": 2021719576
+    },
+    {
+      "path": "model-00042-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00042-of-00063.safetensors",
+      "bytes": 1845026096
+    },
+    {
+      "path": "model-00043-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00043-of-00063.safetensors",
+      "bytes": 1458611520
+    },
+    {
+      "path": "model-00044-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00044-of-00063.safetensors",
+      "bytes": 1844501056
+    },
+    {
+      "path": "model-00045-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00045-of-00063.safetensors",
+      "bytes": 1627446080
+    },
+    {
+      "path": "model-00046-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00046-of-00063.safetensors",
+      "bytes": 1332782360
+    },
+    {
+      "path": "model-00047-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00047-of-00063.safetensors",
+      "bytes": 1748039408
+    },
+    {
+      "path": "model-00048-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00048-of-00063.safetensors",
+      "bytes": 2428585936
+    },
+    {
+      "path": "model-00049-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00049-of-00063.safetensors",
+      "bytes": 2378242712
+    },
+    {
+      "path": "model-00050-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00050-of-00063.safetensors",
+      "bytes": 2464752088
+    },
+    {
+      "path": "model-00051-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00051-of-00063.safetensors",
+      "bytes": 3034147928
+    },
+    {
+      "path": "model-00052-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00052-of-00063.safetensors",
+      "bytes": 3234423544
+    },
+    {
+      "path": "model-00053-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00053-of-00063.safetensors",
+      "bytes": 3057214632
+    },
+    {
+      "path": "model-00054-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00054-of-00063.safetensors",
+      "bytes": 3706818728
+    },
+    {
+      "path": "model-00055-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00055-of-00063.safetensors",
+      "bytes": 3694235192
+    },
+    {
+      "path": "model-00056-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00056-of-00063.safetensors",
+      "bytes": 3001631704
+    },
+    {
+      "path": "model-00057-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00057-of-00063.safetensors",
+      "bytes": 3371265136
+    },
+    {
+      "path": "model-00058-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00058-of-00063.safetensors",
+      "bytes": 3389615136
+    },
+    {
+      "path": "model-00059-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00059-of-00063.safetensors",
+      "bytes": 3641805416
+    },
+    {
+      "path": "model-00060-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00060-of-00063.safetensors",
+      "bytes": 3035711544
+    },
+    {
+      "path": "model-00061-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00061-of-00063.safetensors",
+      "bytes": 3097093520
+    },
+    {
+      "path": "model-00062-of-00063.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-00062-of-00063.safetensors",
+      "bytes": 167772528
+    },
+    {
+      "path": "model-summary-idxs.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/a6a1e5030819a130a1ea08aadb1fe42f4cc86777/model-summary-idxs.safetensors",
+      "bytes": 136
+    }
+  ],
+  "totalBytes": 149774331136,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-bf16-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-bolt",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "baseRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "iq2-xxs",
+  "precision": "iq2-xxs",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/tree/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a",
+  "repositoryRevision": "c6cc2e8ffa353403213d6b9b18aaf8eb684d705a",
+  "files": [
+    {
+      "path": "model-00001-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00001-of-00090.safetensors",
+      "bytes": 1644175760
+    },
+    {
+      "path": "model-00002-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00002-of-00090.safetensors",
+      "bytes": 61765944
+    },
+    {
+      "path": "model-00003-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00003-of-00090.safetensors",
+      "bytes": 281832856
+    },
+    {
+      "path": "model-00004-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00004-of-00090.safetensors",
+      "bytes": 61765944
+    },
+    {
+      "path": "model-00005-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00005-of-00090.safetensors",
+      "bytes": 216952088
+    },
+    {
+      "path": "model-00006-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00006-of-00090.safetensors",
+      "bytes": 61765944
+    },
+    {
+      "path": "model-00007-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00007-of-00090.safetensors",
+      "bytes": 281832856
+    },
+    {
+      "path": "model-00008-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00008-of-00090.safetensors",
+      "bytes": 61765944
+    },
+    {
+      "path": "model-00009-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00009-of-00090.safetensors",
+      "bytes": 37888672
+    },
+    {
+      "path": "model-00010-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00010-of-00090.safetensors",
+      "bytes": 392672584
+    },
+    {
+      "path": "model-00011-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00011-of-00090.safetensors",
+      "bytes": 61765944
+    },
+    {
+      "path": "model-00012-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00012-of-00090.safetensors",
+      "bytes": 314273704
+    },
+    {
+      "path": "model-00013-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00013-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00014-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00014-of-00090.safetensors",
+      "bytes": 281833344
+    },
+    {
+      "path": "model-00015-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00015-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00016-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00016-of-00090.safetensors",
+      "bytes": 281833344
+    },
+    {
+      "path": "model-00017-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00017-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00018-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00018-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00019-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00019-of-00090.safetensors",
+      "bytes": 392673200
+    },
+    {
+      "path": "model-00020-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00020-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00021-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00021-of-00090.safetensors",
+      "bytes": 351582080
+    },
+    {
+      "path": "model-00022-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00022-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00023-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00023-of-00090.safetensors",
+      "bytes": 607865224
+    },
+    {
+      "path": "model-00024-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00024-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00025-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00025-of-00090.safetensors",
+      "bytes": 549472184
+    },
+    {
+      "path": "model-00026-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00026-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00027-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00027-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00028-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00028-of-00090.safetensors",
+      "bytes": 281833344
+    },
+    {
+      "path": "model-00029-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00029-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00030-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00030-of-00090.safetensors",
+      "bytes": 549472184
+    },
+    {
+      "path": "model-00031-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00031-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00032-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00032-of-00090.safetensors",
+      "bytes": 433764608
+    },
+    {
+      "path": "model-00033-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00033-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00034-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00034-of-00090.safetensors",
+      "bytes": 392673200
+    },
+    {
+      "path": "model-00035-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00035-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00036-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00036-of-00090.safetensors",
+      "bytes": 549472184
+    },
+    {
+      "path": "model-00037-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00037-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00038-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00038-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00039-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00039-of-00090.safetensors",
+      "bytes": 471072688
+    },
+    {
+      "path": "model-00040-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00040-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00041-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00041-of-00090.safetensors",
+      "bytes": 421330824
+    },
+    {
+      "path": "model-00042-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00042-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00043-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00043-of-00090.safetensors",
+      "bytes": 471072688
+    },
+    {
+      "path": "model-00044-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00044-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00045-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00045-of-00090.safetensors",
+      "bytes": 607865224
+    },
+    {
+      "path": "model-00046-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00046-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00047-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00047-of-00090.safetensors",
+      "bytes": 520814912
+    },
+    {
+      "path": "model-00048-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00048-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00049-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00049-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00050-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00050-of-00090.safetensors",
+      "bytes": 694915528
+    },
+    {
+      "path": "model-00051-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00051-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00052-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00052-of-00090.safetensors",
+      "bytes": 607865224
+    },
+    {
+      "path": "model-00053-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00053-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00054-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00054-of-00090.safetensors",
+      "bytes": 314273704
+    },
+    {
+      "path": "model-00055-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00055-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00056-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00056-of-00090.safetensors",
+      "bytes": 471072688
+    },
+    {
+      "path": "model-00057-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00057-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00058-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00058-of-00090.safetensors",
+      "bytes": 520814912
+    },
+    {
+      "path": "model-00059-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00059-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00060-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00060-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00061-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00061-of-00090.safetensors",
+      "bytes": 351582080
+    },
+    {
+      "path": "model-00062-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00062-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00063-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00063-of-00090.safetensors",
+      "bytes": 314273704
+    },
+    {
+      "path": "model-00064-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00064-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00065-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00065-of-00090.safetensors",
+      "bytes": 314273704
+    },
+    {
+      "path": "model-00066-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00066-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00067-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00067-of-00090.safetensors",
+      "bytes": 281833344
+    },
+    {
+      "path": "model-00068-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00068-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00069-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00069-of-00090.safetensors",
+      "bytes": 281833344
+    },
+    {
+      "path": "model-00070-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00070-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00071-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00071-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00072-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00072-of-00090.safetensors",
+      "bytes": 421330824
+    },
+    {
+      "path": "model-00073-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00073-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00074-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00074-of-00090.safetensors",
+      "bytes": 471072688
+    },
+    {
+      "path": "model-00075-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00075-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00076-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00076-of-00090.safetensors",
+      "bytes": 549472184
+    },
+    {
+      "path": "model-00077-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00077-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00078-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00078-of-00090.safetensors",
+      "bytes": 607865224
+    },
+    {
+      "path": "model-00079-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00079-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00080-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00080-of-00090.safetensors",
+      "bytes": 37888680
+    },
+    {
+      "path": "model-00081-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00081-of-00090.safetensors",
+      "bytes": 694915528
+    },
+    {
+      "path": "model-00082-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00082-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00083-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00083-of-00090.safetensors",
+      "bytes": 607865224
+    },
+    {
+      "path": "model-00084-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00084-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00085-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00085-of-00090.safetensors",
+      "bytes": 607865224
+    },
+    {
+      "path": "model-00086-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00086-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00087-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00087-of-00090.safetensors",
+      "bytes": 694915528
+    },
+    {
+      "path": "model-00088-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00088-of-00090.safetensors",
+      "bytes": 61765960
+    },
+    {
+      "path": "model-00089-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00089-of-00090.safetensors",
+      "bytes": 520814912
+    },
+    {
+      "path": "model-00090-of-00090.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/resolve/c6cc2e8ffa353403213d6b9b18aaf8eb684d705a/model-00090-of-00090.safetensors",
+      "bytes": 1684771096
+    }
+  ],
+  "totalBytes": 24083745496,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-files"
+  ],
+  "runtimeEngines": [
+    "vLLM"
+  ],
+  "scopeNote": "24GB نام بسته و هدف ناشر است؛ جا‌شدن تمام زمینهٔ 256K تضمین نشده است. وزن، projector، حافظهٔ KV، drafter و سربار باید جدا بودجه‌بندی شوند."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-bolt-gguf",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "baseRevision": "a6a1e5030819a130a1ea08aadb1fe42f4cc86777",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "iq2-xxs",
+  "precision": "iq2-xxs",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF/tree/e0fecb69cb3e5e4c5e8a056fa2aec98c78e91246",
+  "repositoryRevision": "e0fecb69cb3e5e4c5e8a056fa2aec98c78e91246",
+  "files": [
+    {
+      "path": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF/resolve/e0fecb69cb3e5e4c5e8a056fa2aec98c78e91246/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf",
+      "bytes": 22018326528
+    },
+    {
+      "path": "mmproj-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF/resolve/e0fecb69cb3e5e4c5e8a056fa2aec98c78e91246/mmproj-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf",
+      "bytes": 1733692736
+    }
+  ],
+  "totalBytes": 23752019264,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-bolt-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ],
+  "scopeNote": "این مجموع شامل GGUF مدل و projector است. drafter جداگانه در این مخزن ثبت نشده؛ حجم آن و KV و سربار به مجموع فایل وزن افزوده نشده‌اند و نامعلوم‌اند."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-deepseek1017",
+  "modelVersionId": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "baseModelRepository": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "baseRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "publisher": "DeepSeek",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "mixed-fp8-nvfp4",
+  "precision": "mixed-fp8-nvfp4",
+  "repositoryUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "filesUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "repositoryRevision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "files": [
+    {
+      "path": "model-00001-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00001-of-00048.safetensors",
+      "bytes": 970533624
+    },
+    {
+      "path": "model-00002-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00002-of-00048.safetensors",
+      "bytes": 1323858272
+    },
+    {
+      "path": "model-00003-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00003-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00004-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00004-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00005-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00005-of-00048.safetensors",
+      "bytes": 7405953784
+    },
+    {
+      "path": "model-00006-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00006-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00007-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00007-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00008-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00008-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00009-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00009-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00010-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00010-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00011-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00011-of-00048.safetensors",
+      "bytes": 7405953784
+    },
+    {
+      "path": "model-00012-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00012-of-00048.safetensors",
+      "bytes": 7389759032
+    },
+    {
+      "path": "model-00013-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00013-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00014-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00014-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00015-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00015-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00016-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00016-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00017-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00017-of-00048.safetensors",
+      "bytes": 7405956128
+    },
+    {
+      "path": "model-00018-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00018-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00019-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00019-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00020-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00020-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00021-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00021-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00022-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00022-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00023-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00023-of-00048.safetensors",
+      "bytes": 7400713088
+    },
+    {
+      "path": "model-00024-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00024-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00025-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00025-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00026-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00026-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00027-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00027-of-00048.safetensors",
+      "bytes": 7395337384
+    },
+    {
+      "path": "model-00028-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00028-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00029-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00029-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00030-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00030-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00031-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00031-of-00048.safetensors",
+      "bytes": 7395337384
+    },
+    {
+      "path": "model-00032-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00032-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00033-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00033-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00034-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00034-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00035-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00035-of-00048.safetensors",
+      "bytes": 7395337384
+    },
+    {
+      "path": "model-00036-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00036-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00037-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00037-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00038-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00038-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00039-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00039-of-00048.safetensors",
+      "bytes": 7395337384
+    },
+    {
+      "path": "model-00040-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00040-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00041-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00041-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00042-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00042-of-00048.safetensors",
+      "bytes": 7389761368
+    },
+    {
+      "path": "model-00043-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00043-of-00048.safetensors",
+      "bytes": 1323837624
+    },
+    {
+      "path": "model-00044-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00044-of-00048.safetensors",
+      "bytes": 2652728736
+    },
+    {
+      "path": "model-00045-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00045-of-00048.safetensors",
+      "bytes": 2573998176
+    },
+    {
+      "path": "model-00046-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00046-of-00048.safetensors",
+      "bytes": 2706402896
+    },
+    {
+      "path": "model-00047-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00047-of-00048.safetensors",
+      "bytes": 101535150936
+    },
+    {
+      "path": "model-00048-of-00048.safetensors",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model-00048-of-00048.safetensors",
+      "bytes": 101537926640
+    }
+  ],
+  "totalBytes": 510296708312,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-deepseek1017-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/tree/1769516ac588c4c558089c94f27d96b0dc67b183",
+  "repositoryRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "files": [
+    {
+      "path": "model-00001-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00001-of-00010.safetensors",
+      "bytes": 4627289632
+    },
+    {
+      "path": "model-00002-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00002-of-00010.safetensors",
+      "bytes": 4954693024
+    },
+    {
+      "path": "model-00003-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00003-of-00010.safetensors",
+      "bytes": 4954693624
+    },
+    {
+      "path": "model-00004-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00004-of-00010.safetensors",
+      "bytes": 4954693824
+    },
+    {
+      "path": "model-00005-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00005-of-00010.safetensors",
+      "bytes": 4954693824
+    },
+    {
+      "path": "model-00006-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00006-of-00010.safetensors",
+      "bytes": 4954693824
+    },
+    {
+      "path": "model-00007-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00007-of-00010.safetensors",
+      "bytes": 4954693824
+    },
+    {
+      "path": "model-00008-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00008-of-00010.safetensors",
+      "bytes": 4954693824
+    },
+    {
+      "path": "model-00009-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00009-of-00010.safetensors",
+      "bytes": 4954693824
+    },
+    {
+      "path": "model-00010-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/1769516ac588c4c558089c94f27d96b0dc67b183/model-00010-of-00010.safetensors",
+      "bytes": 3679304232
+    }
+  ],
+  "totalBytes": 47944143456,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-files"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-fp8",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "fp8",
+  "precision": "fp8",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/tree/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb",
+  "repositoryRevision": "f54bf39547fd5b7955abb9fe8d1b151e31fbbddb",
+  "files": [
+    {
+      "path": "model-00001-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00001-of-00010.safetensors",
+      "bytes": 2660477032
+    },
+    {
+      "path": "model-00002-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00002-of-00010.safetensors",
+      "bytes": 2528680648
+    },
+    {
+      "path": "model-00003-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00003-of-00010.safetensors",
+      "bytes": 2528683000
+    },
+    {
+      "path": "model-00004-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00004-of-00010.safetensors",
+      "bytes": 2528682216
+    },
+    {
+      "path": "model-00005-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00005-of-00010.safetensors",
+      "bytes": 2528682216
+    },
+    {
+      "path": "model-00006-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00006-of-00010.safetensors",
+      "bytes": 2528682216
+    },
+    {
+      "path": "model-00007-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00007-of-00010.safetensors",
+      "bytes": 2528682216
+    },
+    {
+      "path": "model-00008-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00008-of-00010.safetensors",
+      "bytes": 2528682216
+    },
+    {
+      "path": "model-00009-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00009-of-00010.safetensors",
+      "bytes": 2528682216
+    },
+    {
+      "path": "model-00010-of-00010.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8/resolve/f54bf39547fd5b7955abb9fe8d1b151e31fbbddb/model-00010-of-00010.safetensors",
+      "bytes": 1857173880
+    }
+  ],
+  "totalBytes": 24747107856,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-fp8-files"
+  ],
+  "runtimeEngines": [
+    "vLLM",
+    "SGLang"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-q4_k_m",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q4_k_m",
+  "precision": "q4_k_m",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/tree/0912d33141f77e10705345a6732bfd83f0252fdc",
+  "repositoryRevision": "0912d33141f77e10705345a6732bfd83f0252fdc",
+  "files": [
+    {
+      "path": "LFM2.5-24B-A2B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/resolve/0912d33141f77e10705345a6732bfd83f0252fdc/LFM2.5-24B-A2B-Q4_K_M.gguf",
+      "bytes": 14526258464
+    }
+  ],
+  "totalBytes": 14526258464,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-q5_k_m",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q5_k_m",
+  "precision": "q5_k_m",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/tree/0912d33141f77e10705345a6732bfd83f0252fdc",
+  "repositoryRevision": "0912d33141f77e10705345a6732bfd83f0252fdc",
+  "files": [
+    {
+      "path": "LFM2.5-24B-A2B-Q5_K_M.gguf",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/resolve/0912d33141f77e10705345a6732bfd83f0252fdc/LFM2.5-24B-A2B-Q5_K_M.gguf",
+      "bytes": 17029602592
+    }
+  ],
+  "totalBytes": 17029602592,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-q6_k",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q6_k",
+  "precision": "q6_k",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/tree/0912d33141f77e10705345a6732bfd83f0252fdc",
+  "repositoryRevision": "0912d33141f77e10705345a6732bfd83f0252fdc",
+  "files": [
+    {
+      "path": "LFM2.5-24B-A2B-Q6_K.gguf",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/resolve/0912d33141f77e10705345a6732bfd83f0252fdc/LFM2.5-24B-A2B-Q6_K.gguf",
+      "bytes": 19689405728
+    }
+  ],
+  "totalBytes": 19689405728,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-q8_0",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q8_0",
+  "precision": "q8_0",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/tree/0912d33141f77e10705345a6732bfd83f0252fdc",
+  "repositoryRevision": "0912d33141f77e10705345a6732bfd83f0252fdc",
+  "files": [
+    {
+      "path": "LFM2.5-24B-A2B-Q8_0.gguf",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/resolve/0912d33141f77e10705345a6732bfd83f0252fdc/LFM2.5-24B-A2B-Q8_0.gguf",
+      "bytes": 25493732640
+    }
+  ],
+  "totalBytes": 25493732640,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-qad-q4_0",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "qad-q4_0",
+  "precision": "qad-q4_0",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/tree/0912d33141f77e10705345a6732bfd83f0252fdc",
+  "repositoryRevision": "0912d33141f77e10705345a6732bfd83f0252fdc",
+  "files": [
+    {
+      "path": "LFM2.5-24B-A2B-QAD-Q4_0.gguf",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/resolve/0912d33141f77e10705345a6732bfd83f0252fdc/LFM2.5-24B-A2B-QAD-Q4_0.gguf",
+      "bytes": 13578190880
+    }
+  ],
+  "totalBytes": 13578190880,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-gguf-files"
+  ],
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-lfm24-mlx",
+  "modelVersionId": "model:liquidai-lfm2-5-24b-a2b",
+  "baseModelRepository": "LiquidAI/LFM2.5-24B-A2B",
+  "baseRevision": "1769516ac588c4c558089c94f27d96b0dc67b183",
+  "publisher": "LiquidAI",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "mlx-4bit",
+  "precision": "mlx-4bit",
+  "repositoryUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit",
+  "filesUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit/tree/667408d494bde191c2cb9dd4f4549827816b9275",
+  "repositoryRevision": "667408d494bde191c2cb9dd4f4549827816b9275",
+  "files": [
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit/resolve/667408d494bde191c2cb9dd4f4549827816b9275/model-00001-of-00003.safetensors",
+      "bytes": 5318453801
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit/resolve/667408d494bde191c2cb9dd4f4549827816b9275/model-00002-of-00003.safetensors",
+      "bytes": 5344895125
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit/resolve/667408d494bde191c2cb9dd4f4549827816b9275/model-00003-of-00003.safetensors",
+      "bytes": 2903945409
+    }
+  ],
+  "totalBytes": 13567294335,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-lfm24-mlx-files"
+  ],
+  "runtimeEngines": [
+    "MLX"
+  ],
+  "scopeNote": "گونهٔ Apple Silicon است؛ سازگاری آن با vLLM، SGLang یا Ollama از قالب Safetensors نتیجه نمی‌شود."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-granite8",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-8b",
+  "baseModelRepository": "ibm-granite/granite-switch-4.1-8b",
+  "baseRevision": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "publisher": "IBM",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
+  "filesUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/tree/0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "repositoryRevision": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/resolve/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/model-00001-of-00004.safetensors",
+      "bytes": 4901258376
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/resolve/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/model-00002-of-00004.safetensors",
+      "bytes": 4796544416
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/resolve/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/model-00003-of-00004.safetensors",
+      "bytes": 4985682168
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/resolve/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/model-00004-of-00004.safetensors",
+      "bytes": 2870747792
+    }
+  ],
+  "totalBytes": 17554232752,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-granite8-files"
+  ],
+  "scopeNote": "حجم فایل‌های همین checkpoint ثبت شده است؛ صرف شمار پارامتر پایه جای حجم کامل بسته و سربار نمی‌نشیند."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-granite30",
+  "modelVersionId": "model:ibm-granite-granite-switch-4-1-30b",
+  "baseModelRepository": "ibm-granite/granite-switch-4.1-30b",
+  "baseRevision": "70b75c6fd254db33418e490714769ef028d16166",
+  "publisher": "IBM",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b",
+  "filesUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/tree/70b75c6fd254db33418e490714769ef028d16166",
+  "repositoryRevision": "70b75c6fd254db33418e490714769ef028d16166",
+  "files": [
+    {
+      "path": "model-00001-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00001-of-00013.safetensors",
+      "bytes": 4611493520
+    },
+    {
+      "path": "model-00002-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00002-of-00013.safetensors",
+      "bytes": 4621693496
+    },
+    {
+      "path": "model-00003-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00003-of-00013.safetensors",
+      "bytes": 4621693560
+    },
+    {
+      "path": "model-00004-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00004-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00005-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00005-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00006-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00006-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00007-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00007-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00008-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00008-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00009-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00009-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00010-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00010-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00011-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00011-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00012-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00012-of-00013.safetensors",
+      "bytes": 4621693600
+    },
+    {
+      "path": "model-00013-of-00013.safetensors",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/resolve/70b75c6fd254db33418e490714769ef028d16166/model-00013-of-00013.safetensors",
+      "bytes": 4530998768
+    }
+  ],
+  "totalBytes": 59981121744,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-granite30-files"
+  ],
+  "scopeNote": "حجم فایل‌های همین checkpoint ثبت شده است؛ صرف شمار پارامتر پایه جای حجم کامل بسته و سربار نمی‌نشیند."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-dory",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "baseRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "bf16",
+  "precision": "bf16",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/tree/b366b87f762ea334ba3eb55912031baba1515810",
+  "repositoryRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/resolve/b366b87f762ea334ba3eb55912031baba1515810/model.safetensors",
+      "bytes": 7950515472
+    }
+  ],
+  "totalBytes": 7950515472,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-dory-files"
+  ],
+  "scopeNote": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-dory-mxfp8",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "baseRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "mxfp8",
+  "precision": "mxfp8",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8/tree/f35880f52368271136b48e3a4365f91e70a92308",
+  "repositoryRevision": "f35880f52368271136b48e3a4365f91e70a92308",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8/resolve/f35880f52368271136b48e3a4365f91e70a92308/model.safetensors",
+      "bytes": 4750755304
+    }
+  ],
+  "totalBytes": 4750755304,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-dory-mxfp8-files"
+  ],
+  "scopeNote": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-dory-nvfp4",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "baseRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "variant": "nvfp4",
+  "precision": "nvfp4",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4/tree/41f02335e1a1ad3289b8b32485e2265cbe97cfdf",
+  "repositoryRevision": "41f02335e1a1ad3289b8b32485e2265cbe97cfdf",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4/resolve/41f02335e1a1ad3289b8b32485e2265cbe97cfdf/model.safetensors",
+      "bytes": 3202498032
+    }
+  ],
+  "totalBytes": 3202498032,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-dory-nvfp4-files"
+  ],
+  "scopeNote": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+});
+artifactListings.push({
+  "id": "artifact-listing:catchup1017-dory-gguf",
+  "modelVersionId": "model:nvidia-nemotron-labs-dory1-0-4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "baseRevision": "b366b87f762ea334ba3eb55912031baba1515810",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "gguf",
+  "variant": "q5_k_m",
+  "precision": "q5_k_m",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/tree/0963c8000791e77b2b1b49aa387d92a6da9988d6",
+  "repositoryRevision": "0963c8000791e77b2b1b49aa387d92a6da9988d6",
+  "files": [
+    {
+      "path": "NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/resolve/0963c8000791e77b2b1b49aa387d92a6da9988d6/NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "bytes": 3673288864
+    }
+  ],
+  "totalBytes": 3673288864,
+  "verifiedOn": "2026-10-17",
+  "evidenceIds": [
+    "evidence:catchup1017-dory-gguf-files"
+  ],
+  "scopeNote": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
+});
