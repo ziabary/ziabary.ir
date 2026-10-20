@@ -3489,3 +3489,213 @@ softwareReleases.push({
   "releaseChannel": "stable",
   "isLatest": false
 });
+softwareReleases.push({
+  "id": "software-release:sglang-v0-5-22",
+  "productId": "software-product:sglang",
+  "version": "v0.5.22",
+  "releasedOn": "2026-10-19",
+  "lastReviewedOn": "2026-10-19",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server",
+    "container"
+  ],
+  "operatingSystems": [
+    "Linux"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU",
+    "TPU",
+    "NPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown",
+    "note": "اجرای بدون شبکه با وابستگی‌ها و مدل محلی برای این نسخه بررسی نشده است."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-22-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/sgl-project/sglang/blob/v0.5.22/LICENSE",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-22-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:sglang-v0-5-22-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:sglang-v0-5-22-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:sglang-v0-5-22-release",
+    "evidence:sglang-v0-5-22-pypi",
+    "evidence:sglang-mamba-43029",
+    "evidence:sglang-v0-5-22-dumper",
+    "evidence:sglang-v0-5-22-license"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "SGLang 0.5.22 پایدار؛ مهاجرت تنظیمات سرویس‌دهی و اصلاح صحت وضعیت مدل‌های hybrid",
+    "evidenceIds": [
+      "evidence:sglang-v0-5-22-release",
+      "evidence:sglang-v0-5-22-pypi"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Python ≥3.11؛ نصب بدون شمارهٔ نسخه روی Python 3.10 ممکن است بی‌سروصدا نسخهٔ قدیمی انتخاب کند. --attn-dp-size N جایگزین --enable-dp-attention است؛ ترکیب قدیمی با هشدار تبدیل می‌شود. --dp-size شمار replicaهاست؛ در DeepSeek CP موقتاً معنای attention DP دارد و پس از ۲۰۲۶-۱۲-۳۱ رد خواهد شد. ترکیب replica با attention DP یا هر دو نگارش، خطای راه‌اندازی می‌دهد. معنای --disaggregation-decode-host-receive-threshold معکوس شده: 1=غیرفعال (پیش‌فرض)، 0=همیشه دریافت روی میزبان. tc_piecewise حذف شده؛ --cuda-graph-backend-prefill tc_piecewise و تنظیم tc_compiler خطای راه‌اندازی می‌دهند.",
+    "evidenceIds": [
+      "evidence:sglang-v0-5-22-release",
+      "evidence:sglang-v0-5-22-pypi"
+    ]
+  },
+  "selectionCaveat": "تاریخ‌ها جدا هستند: انتشار GitHub در ۱۹ اکتبر ۲۰۲۶، ۰۲:۵۵ UTC؛ بستهٔ PyPI از ۱۶ اکتبر موجود است. صحت اجرا: رفع ثبت checkpoint نادرست Mamba هنگام ترکیب speculative decoding و خروجی ساختاریافته که می‌توانست مدل‌های hybrid را از وضعیت اشتباه بازیابی کند (PR #43029). امنیت: رفع Dumper تأیید نشده؛ مسیر eval() در تگ 0.5.22 باقی است و رفع آسیب‌پذیری قبلی محسوب نمی‌شود. اطمینان به نسخه، الزامات و تغییرها بالا است؛ کارایی و کیفیت فارسی اینجا آزموده نشده‌اند. این ثبت توصیهٔ ارتقای بی‌آزمون نیست؛ BOM/QPL اختصاصی OEM و کد داخلی ویزارد پوشش کامل ندارند.",
+  "documentedNeeds": [
+    "high-throughput"
+  ],
+  "documentedBackends": [
+    "SGLang",
+    "PyTorch",
+    "JAX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": false
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11722",
+  "productId": "software-product:llama-cpp",
+  "version": "b11722",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-19",
+  "lastReviewedOn": "2026-10-19",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "NPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "llama.cpp b11722؛ پیش‌انتشار Flash Attention چنددنباله‌ای Hexagon",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11722-release",
+      "evidence:llama-cpp-hexagon-30218"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "Hexagon: Flash Attention چنددنباله‌ای با --no-kv-unified از b11722؛ انتشار ۱۹ اکتبر ۲۰۲۶، ۰۱:۵۱ UTC.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11722-release",
+      "evidence:llama-cpp-hexagon-30218"
+    ]
+  },
+  "selectionCaveat": "PR #30218 آزمون Llama-3.2-1B و Qwen3.5-2B با Q4_0 روی IQ-9075 EVK / Hexagon v73 را گزارش می‌کند. این شاهد تأیید همهٔ Snapdragonها یا افزایش سرعت تک‌نشستی نیست. اطمینان به قابلیت بالا است؛ تعمیم کارایی محدود و آزمون محلی انجام نشده است. پیش‌انتشار و ثبت قابلیت، توصیهٔ ارتقای بی‌آزمون نیست؛ BOM/QPL اختصاصی OEM و کد داخلی ویزارد پوشش کامل ندارند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11722-release",
+    "evidence:llama-cpp-hexagon-30218"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11727",
+  "productId": "software-product:llama-cpp",
+  "version": "b11727",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-19",
+  "lastReviewedOn": "2026-10-19",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "llama.cpp b11727؛ پیش‌انتشار جلوگیری از خرابی خاموش خروجی ابزارهای GGUF",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11727-release",
+      "evidence:llama-cpp-gguf-short-read-30497"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "تشخیص خواندن ناقص دادهٔ تنسور و توقف با خطا در هر دو ابزار gguf-split و export-lora؛ انتشار ۱۹ اکتبر ۲۰۲۶، ۱۰:۲۳ UTC. کد نهایی PR #30497 و تگ b11727 کنترل شکست خواندن را در هر دو ابزار دارند.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11727-release",
+      "evidence:llama-cpp-gguf-short-read-30497"
+    ]
+  },
+  "selectionCaveat": "در آماده‌سازی GGUF، فایل بریده‌شده نباید به خروجی ظاهراً موفق تبدیل شود؛ بررسی checksum ورودی همچنان لازم است. استفادهٔ مجدد از بافر می‌توانست بخش خوانده‌نشده را با دادهٔ تنسور قبلی پر کند. این اصلاح به معنی خراب‌بودن فایل‌های سالم یا بهبود کیفیت مدل نیست. اطمینان به ادغام و انتشار بالا است؛ آزمون محلی انجام نشده و این ثبت توصیهٔ ارتقای بی‌آزمون نیست.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11727-release",
+    "evidence:llama-cpp-gguf-short-read-30497"
+  ]
+});

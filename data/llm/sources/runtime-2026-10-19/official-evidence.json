@@ -1,0 +1,173 @@
+{
+  "reviewedOn": "2026-10-19",
+  "releases": {
+    "sglang-release": {
+      "html_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
+      "tag_name": "v0.5.22",
+      "published_at": "2026-10-19T02:55:19Z",
+      "prerelease": false,
+      "target_commitish": "main",
+      "migrationNotes": "## Breaking Changes & Upgrade Notes\r\n\r\n* **SGLang requires Python 3.11 or newer.** On Python 3.10, `pip install sglang` does not fail; it resolves to the last release that supported 3.10. Move to Python 3.11+ (for example off the Ubuntu 22.04 system Python) to get this and later releases: [#43021](https://github.com/sgl-project/sglang/pull/43021)\r\n* **`--enable-dp-attention` is deprecated; use `--attn-dp-size N`.** `--dp-size` now counts model replicas only. The old `--dp-size N --enable-dp-attention` still resolves to `--attn-dp-size N` with a warning; combining replicas with attention DP, or passing both spellings, is rejected at startup: [#41818](https://github.com/sgl-project/sglang/pull/41818). Under DeepSeek context parallelism, `--dp-size N` still means attention DP but now warns and will be rejected after 2026-12-31: [#42348](https://github.com/sgl-project/sglang/pull/42348)\r\n* **`--disaggregation-decode-host-receive-threshold` flips its encoding.** `1` (the new default) disables host receive and `0` now means always receive on host. Configurations that passed `0` to disable it must pass `1`: [#43407](https://github.com/sgl-project/sglang/pull/43407)\r\n* **`ChunkCache` is removed.** With `--disable-radix-cache`, full-attention, hybrid-SWA and Mamba models run `UnifiedRadixCache` in disabled mode and pure-SWA models run `PureSWARadixCache` ([#43198](https://github.com/sgl-project/sglang/pull/43198), [#43199](https://github.com/sgl-project/sglang/pull/43199), [#43200](https://github.com/sgl-project/sglang/pull/43200), [#42354](https://github.com/sgl-project/sglang/pull/42354), [#43201](https://github.com/sgl-project/sglang/pull/43201)). Streaming sessions now start only on `UnifiedRadixCache`; pure-SWA, FlexKV and plugin tree caches fail at startup with a \"not verified\" error ([#42295](https://github.com/sgl-project/sglang/pull/42295)), and beam search rejects Mamba models with `--disable-radix-cache` too ([#42354](https://github.com/sgl-project/sglang/pull/42354))\r\n* **The `tc_piecewise` prefill CUDA graph backend is removed.** Passing `--cuda-graph-backend-prefill tc_piecewise` or a `tc_compiler` setting now raises an error; CUDA keeps `breakable` as the default prefill graph backend, and other platforms default to no prefill graph: [#42287](https://github.com/sgl-project/sglang/pull/42287)\r\n* **Renamed and retired environment variables.** `SGLANG_AITER_MLA_DCP_DECODE_BACKEND` becomes `SGLANG_AITER_MLA_DECODE_BACKEND` and its default changes from `gluon` to `asm` ([#34537](https://github.com/sgl-project/sglang/pull/34537)); `SGLANG_OPT_SWA_RELEASE_LEAF_LOCK_AFTER_WINDOW` becomes `SGLANG_OPT_RELEASE_PREFILL_SWA` ([#42657](https://github.com/sgl-project/sglang/pull/42657)); the old names keep working with a deprecation warning. `SGLANG_DSPARK_FAST_SAMPLING`, `SGLANG_DSPARK_FOLDED_SAMPLING` and `SGLANG_DSPARK_OPT_FUSED_GREEDY_MARKOV` are deprecated and no longer do anything ([#43622](https://github.com/sgl-project/sglang/pull/43622), [#43668](https://github.com/sgl-project/sglang/pull/43668)), and `SGLANG_TRITON_PREFILL_TRUNCATION_ALIGN_SIZE` is deprecated: [#43444](https://github.com/sgl-project/sglang/pull/43444)\r\n* **OpenAI chat responses changed in three small ways.** `tool_choice: \"none\"` no longer shows tool schemas to DeepSeek models ([#43006](https://github.com/sgl-project/sglang/pull/43006)), an absent `tool_calls` field is omitted instead of returned as `null` ([#43027](https://github.com/sgl-project/sglang/pull/43027)), and a stream keeps one `created` timestamp for its whole lifetime: [#43026](https://github.com/sgl-project/sglang/pull/43026)\r\n* **`--enable-layernorm-sp` is rejected with pipeline parallelism.** It failed on the first prefill before: [#43458](https://github.com/sgl-project/sglang/pull/43458)\r\n* **For model and plugin authors:** `ModelRunner.tp_group` is removed; read `get_parallel().tp_group` in the scope the code runs in ([#41817](https://github.com/sgl-project/sglang/pull/41817)). Unread placement attributes such as `model.tp_size` are gone; read `get_parallel()` ([#41812](https://github.com/sgl-project/sglang/pull/41812)). A model that declares stage boundaries and runs under pipeline parallelism must pass its shared stage declaration (`stage_facts`) to `make_layers` / `make_pp_layers`: [#43460](https://github.com/sgl-project/sglang/pull/43460)\r\n\r\n\r"
+    },
+    "llama-b11722": {
+      "html_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11722",
+      "tag_name": "b11722",
+      "published_at": "2026-10-19T01:51:19Z",
+      "prerelease": true,
+      "target_commitish": "fe8841a78ad36454a348cf612e10aaf40af12fec",
+      "body": "<details open>\n\nhexagon: allow multistream FA (#30218)\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57232684>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-b11722-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-b11722-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-b11722-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-ui.tar.gz)"
+    },
+    "llama-b11727": {
+      "html_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11727",
+      "tag_name": "b11727",
+      "published_at": "2026-10-19T10:23:39Z",
+      "prerelease": true,
+      "target_commitish": "8f97d82da33b5f4262a87b9c4208298378b8a165",
+      "body": "<details open>\n\ntools : reject truncated GGUF tensor data in split and export tools (#30497)\n\n* The problem here in the repo is gguf-split can silently produce corrupted tensor output when the input GGUF file is truncated. The fix is to add tensor-data bounds checks and short-read checks in gguf-split.cpp and export-lora.cpp, and a regression test that checks truncated input is rejected and valid tensor data is preserved.#\n\n* Bug : GGUF-split can silently produce corrupted tensor output when the input GGUF file is truncated. Fix : add short-read checks in gguf-split.cpp (in copy_file_to_file in split_strategy) and export-lora.cpp (in read_tensor_data of file_input) so that truncated input is rejected.\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57346730>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-b11727-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-b11727-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-b11727-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-ui.tar.gz)"
+    }
+  },
+  "pullRequests": {
+    "gguf-pr": {
+      "html_url": "https://github.com/ggml-org/llama.cpp/pull/30497",
+      "title": "Reject truncated GGUF tensor data in split and export tools",
+      "merged_at": "2026-10-19T06:27:47Z",
+      "merge_commit_sha": "8f97d82da33b5f4262a87b9c4208298378b8a165",
+      "body": "## Overview\n\nThis change addresses incorrect tensor data handling when a GGUF file is truncated or its tensor data extends beyond the end of the file.\n\nIn gguf-split, the requested tensor data could be read incompletely without the short read being detected. Since the read buffer is reused, the remaining bytes could contain data from a previous tensor, resulting in corrupted output without the expected error.\n\nThe changes add bounds validation for tensor data in gguf-split and export-lora, along with checks to detect incomplete reads. A regression test creates a small GGUF file containing two tensors, truncates the file before the second tensor's data, and verifies that the tool rejects the input. It also checks that splitting the valid file preserves the expected tensor data.\n\n\n## Additional information\n\nNA\n\n## Requirements\n\n<!-- IMPORTANT: Please do NOT delete this section, otherwise your PR may be rejected -->\n\n- I have read and agree with the [contributing guidelines](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md)\n- AI usage disclosure:YES\nAI assistance covered investigating the truncated-GGUF issue, analyzing the cause of the unchecked reads, proposing the bounds-check implementation, and developing the regression test.\nI applied the patch, built the affected tools, ran the regression tests, reviewed the Git diff, and submitted the changes.\n"
+    },
+    "hexagon-pr": {
+      "html_url": "https://github.com/ggml-org/llama.cpp/pull/30218",
+      "title": "hexagon: allow multistream FA",
+      "merged_at": "2026-10-19T01:07:53Z",
+      "merge_commit_sha": "fe8841a78ad36454a348cf612e10aaf40af12fec",
+      "body": "## Overview\n\nAllow multistream (`dst->ne[3] > 1`) for no-kv-unified cases in multi-sequence.\n\n## Additional information\n\n`llama-batched-bench -c 4096 -b 2048 -ub 512 -npp 512 -ntg 64 -npl 1,2,4 -fa on --no-kv-unified`, IQ-9075 EVK (Hexagon v73), 1 NPU, t/s, master is 3d65c90d0.\n\n| model | test | master (t/s) | patch (t/s) | change |\n| --- | --- | ---: | ---: | ---: |\n| Llama-3.2-1B Q4_0 | PP npl=1 | 1618.40 | 1609.23 | -0.6% |\n| Llama-3.2-1B Q4_0 | TG npl=1 | 45.70 | 45.63 | -0.2% |\n| Llama-3.2-1B Q4_0 | PP npl=2 | 940.50 | 1639.19 | +74.3% |\n| Llama-3.2-1B Q4_0 | TG npl=2 | 37.58 | 60.68 | +61.5% |\n| Llama-3.2-1B Q4_0 | PP npl=4 | 948.09 | 1622.75 | +71.2% |\n| Llama-3.2-1B Q4_0 | TG npl=4 | 46.30 | 64.72 | +39.8% |\n| Qwen3.5-2B Q4_0 | PP npl=1 | 974.15 | 974.04 | -0.0% |\n| Qwen3.5-2B Q4_0 | TG npl=1 | 20.01 | 20.01 | +0.0% |\n| Qwen3.5-2B Q4_0 | PP npl=2 | 804.66 | 981.47 | +22.0% |\n| Qwen3.5-2B Q4_0 | TG npl=2 | 28.40 | 28.57 | +0.6% |\n| Qwen3.5-2B Q4_0 | PP npl=4 | 795.40 | 960.91 | +20.8% |\n| Qwen3.5-2B Q4_0 | TG npl=4 | 31.85 | 35.56 | +11.6% |\n\n<details>\n<summary>2 NPU row split</summary>\n\n| model | test | master (t/s) | patch (t/s) | change |\n| --- | -- | ---: | ---: | ---: |\n| Llama-3.2-1B Q4_0 | PP npl=1 | 2756.54 | 2768.53 | +0.4% |\n| Llama-3.2-1B Q4_0 | TG npl=1 | 59.37 | 59.74 | +0.6% |\n| Llama-3.2-1B Q4_0 | PP npl=2 | 1146.52 | 2822.32 | +146.2% |\n| Llama-3.2-1B Q4_0 | TG npl=2 | 42.96 | 96.02 | +123.5% |\n| Llama-3.2-1B Q4_0 | PP npl=4 | 1157.59 | 2809.06 | +142.7% |\n| Llama-3.2-1B Q4_0 | TG npl=4 | 59.96 | 113.51 | +89.3% |\n| Qwen3.5-2B Q4_0 | PP npl=1 | 1515.00 | 1512.75 | -0.1% |\n| Qwen3.5-2B Q4_0 | TG npl=1 | 24.54 | 24.48 | -0.2% |\n| Qwen3.5-2B Q4_0 | PP npl=2 | 1144.86 | 1553.36 | +35.7% |\n| Qwen3.5-2B Q4_0 | TG npl=2 | 39.64 | 40.57 | +2.3% |\n| Qwen3.5-2B Q4_0 | PP npl=4 | 1141.48 | 1535.08 | +34.5% |\n| Qwen3.5-2B Q4_0 | TG npl=4 | 49.50 | 60.06 | +21.3% |\n\n</details>\n\nLlama-3.2-1B and Qwen3.5-2B Q4_0 PPL on multi-stream are correct.\n\nNOTE: When I tested the FLASH_ATTN_EXT cases, I got 57/1258 failed with sinks (means this might affect models like gpt-oss), confirmed that the problem existed on master for single stream. With this PR, multi-stream is 20/169 failed with sinks. The number of failures is not an absolute value because inputs are randomly generated during testing. The failures are all HMX path btw.\n\n## Requirements\n\n- I have read and agree with the [contributing guidelines](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md)\n- AI usage disclosure: YES, Claude Code, I did validation and review\n\n"
+    },
+    "mamba-pr": {
+      "html_url": "https://github.com/sgl-project/sglang/pull/43029",
+      "title": "[Scheduler] Use committed length in spec mamba track boundary check",
+      "merged_at": "2026-10-10T19:29:41Z",
+      "merge_commit_sha": "0acd93c35c2ae84bc2c5129d5d92916c77c45a70",
+      "body": "\n\n<!-- pr-states:start -->\n---\n### CI States\n\nLatest PR Test (Base): <!-- slot:pr-test:start -->:white_check_mark: [Run #37998439971](https://github.com/sgl-project/sglang/actions/runs/37998439971)<!-- slot:pr-test:end -->\nLatest PR Test (Extra): <!-- slot:pr-test-extra:start -->:x: [Run #37998439650](https://github.com/sgl-project/sglang/actions/runs/37998439650)<!-- slot:pr-test-extra:end -->\nLatest PR Test (AMD ROCm 10): <!-- slot:pr-test-amd:start -->:x: [Run #37998439871](https://github.com/sgl-project/sglang/actions/runs/37998439871)<!-- slot:pr-test-amd:end -->\n<!-- pr-states:end -->"
+    }
+  },
+  "taggedSourceChecks": {
+    "sglang-dumper.py": {
+      "sha256": "25636db9a1a99b87688ec6e265c5cb9c082178dd085cdbb72e6de7dbe404ec9d",
+      "excerpts": [
+        {
+          "line": 1320,
+          "text": "    namespace = _DefaultNoneDict(tags)\n    namespace.update(_FILTER_BUILTINS)\n    return bool(eval(filter_expr, {\"__builtins__\": {}}, namespace))\n\n\ndef _deepcopy_or_clone(x):"
+        }
+      ]
+    },
+    "b11727-split.txt": {
+      "sha256": "42676c21c408ea19091dba917cf396d8a8e46ce04ab8617d017219a79c691f64",
+      "excerpts": [
+        {
+          "line": 365,
+          "text": "        f_in.seekg(in_offset);\n        f_in.read((char *)read_buf.data(), len);\n        if (!f_in) {\n            fprintf(stderr, \"%s: failed to read %zu bytes at offset %zu, input file may be truncated\\n\", __func__, len, in_offset);\n            exit(EXIT_FAILURE);\n        }"
+        }
+      ]
+    },
+    "b11727-export.txt": {
+      "sha256": "c5aa2412eae92dc4ac70c9743233d118e4e41d43b3291ec6a62877856e4d905e",
+      "excerpts": [
+        {
+          "line": 107,
+          "text": "        f_in.seekg(offset);\n        f_in.read((char* )buf.data(), len);\n        if (!f_in) {\n            throw std::runtime_error(\"failed to read data for tensor \" + name + \", input file may be truncated\");\n        }\n    }"
+        }
+      ]
+    },
+    "sglang-license.txt": {
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n"
+        },
+        {
+          "line": 178,
+          "text": "   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\""
+        },
+        {
+          "line": 180,
+          "text": "   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate"
+        },
+        {
+          "line": 191,
+          "text": "   Copyright 2023-2024 SGLang Team\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n"
+        }
+      ]
+    }
+  },
+  "pypi": {
+    "url": "https://pypi.org/pypi/sglang/0.5.22/json",
+    "version": "0.5.22",
+    "requires_python": ">=3.11",
+    "files": [
+      {
+        "filename": "sglang-0.5.22-cp311-cp311-manylinux_2_34_aarch64.whl",
+        "upload_time_iso_8601": "2026-10-16T00:25:44.069863Z",
+        "digests": {
+          "blake2b_256": "0c2b1b4be3867a9cffec7279a07f2ddb9a52fb17e7188921e0307c7527eaeee5",
+          "md5": "26bcc918608855cc112187e6f429ba92",
+          "sha256": "1a2e055df8f4b9613e00ae0998e24f2fc450fdf56088211ebb2425974976a7e4"
+        }
+      },
+      {
+        "filename": "sglang-0.5.22-cp311-cp311-manylinux_2_34_x86_64.whl",
+        "upload_time_iso_8601": "2026-10-16T00:25:48.620118Z",
+        "digests": {
+          "blake2b_256": "34d3b0f5f43ca472b45bfc0f3942ed7776c8991b26cf96268b69143d44bb3454",
+          "md5": "d5763b50e09eeaf01b592e9bd307f2a1",
+          "sha256": "cc9a0f15bd8f877a0584fdb7a1702240177a1f1cc8d17c978715161717b9037b"
+        }
+      },
+      {
+        "filename": "sglang-0.5.22-cp312-cp312-manylinux_2_34_aarch64.whl",
+        "upload_time_iso_8601": "2026-10-16T00:25:52.593832Z",
+        "digests": {
+          "blake2b_256": "cea06d9ddcc83435b1c09da458e044e5c2369428c6b1d73f827de3e00ec0a081",
+          "md5": "3d7a7082a8264f92d8d78d1d9af2ad46",
+          "sha256": "b3b44ba7c15a655ad26e457f72a8d78fc7951693290e9e783ded7d4527c57d57"
+        }
+      },
+      {
+        "filename": "sglang-0.5.22-cp312-cp312-manylinux_2_34_x86_64.whl",
+        "upload_time_iso_8601": "2026-10-16T00:25:56.804375Z",
+        "digests": {
+          "blake2b_256": "5965ecdaddde31c9949734c32456dbf2000cdbacfaf803c213442a98b191ad80",
+          "md5": "532edb60ac231c54f6437c9e9779f4da",
+          "sha256": "3505e3744366201296f94d244b3e7d3b0bb91b69726dc15e994070adb338ea2f"
+        }
+      },
+      {
+        "filename": "sglang-0.5.22-cp313-cp313-manylinux_2_34_aarch64.whl",
+        "upload_time_iso_8601": "2026-10-16T00:26:00.834712Z",
+        "digests": {
+          "blake2b_256": "4c2415ed3387301db973bbc378b6bbbec60209831e33e640eabaa7e9e086516e",
+          "md5": "35a01a55c4b3514f6c68ffaf1a2e85b9",
+          "sha256": "4350f72c66aed9ea7d9f07039d411300845ad2def86a77ef59e04d26b5f20e5e"
+        }
+      },
+      {
+        "filename": "sglang-0.5.22-cp313-cp313-manylinux_2_34_x86_64.whl",
+        "upload_time_iso_8601": "2026-10-16T00:26:04.922212Z",
+        "digests": {
+          "blake2b_256": "54da3c45dc9cf7980930f0b5436921601b6edc71a35c73a3592b8959daa54d35",
+          "md5": "0bf82e0fa874f3feba77fabdec4ae6af",
+          "sha256": "232877ea7ec77103f2d00ef648cd81462f3b7a80c3564861ad9872a694c48dd3"
+        }
+      }
+    ]
+  },
+  "ggufFinalPatch": [
+    {
+      "filename": "tools/export-lora/export-lora.cpp",
+      "patch": "@@ -104,6 +104,9 @@ struct file_input {\n         auto offset = gguf_get_data_offset(ctx_gguf) + gguf_get_tensor_offset(ctx_gguf, i_tensor_in);\n         f_in.seekg(offset);\n         f_in.read((char* )buf.data(), len);\n+        if (!f_in) {\n+            throw std::runtime_error(\"failed to read data for tensor \" + name + \", input file may be truncated\");\n+        }\n     }\n \n     ~file_input() {"
+    },
+    {
+      "filename": "tools/gguf-split/gguf-split.cpp",
+      "patch": "@@ -362,6 +362,10 @@ struct split_strategy {\n         }\n         f_in.seekg(in_offset);\n         f_in.read((char *)read_buf.data(), len);\n+        if (!f_in) {\n+            fprintf(stderr, \"%s: failed to read %zu bytes at offset %zu, input file may be truncated\\n\", __func__, len, in_offset);\n+            exit(EXIT_FAILURE);\n+        }\n         f_out.write((const char *)read_buf.data(), len);\n     }\n };"
+    }
+  ]
+}

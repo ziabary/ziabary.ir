@@ -10575,5 +10575,21 @@
   "repository.applicationAssessments/application-assessment:catchup1017-nvidia-nemotron-labs-dory1-0-4b-reasoning-analysis": {
     "summary": "catchup1017.ee1d2f2e899544",
     "limitations/0": "catchup1017.30a586453ba5bb"
+  },
+  "repository.softwareReleases/software-release:sglang-v0-5-22": {
+    "offlineOperation/note": "runtime1019.sglang.offline",
+    "targetScenario/value": "runtime1019.sglang.scenario",
+    "backendSummary/value": "runtime1019.sglang.summary",
+    "selectionCaveat": "runtime1019.sglang.caveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11722": {
+    "targetScenario/value": "runtime1019.hexagon.scenario",
+    "backendSummary/value": "runtime1019.hexagon.summary",
+    "selectionCaveat": "runtime1019.hexagon.caveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11727": {
+    "targetScenario/value": "runtime1019.gguf.scenario",
+    "backendSummary/value": "runtime1019.gguf.summary",
+    "selectionCaveat": "runtime1019.gguf.caveat"
   }
 }

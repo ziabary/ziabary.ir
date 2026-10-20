@@ -44871,3 +44871,138 @@ evidence.push({
   "versionRevisionOrCommit": "b11700",
   "publishedOn": "2026-10-16"
 });
+evidence.push({
+  "id": "evidence:sglang-v0-5-22-release",
+  "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
+  "title": "SGLang 0.5.22 stable release and migration notes",
+  "organization": "SGLang contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Published 2026-10-19T02:55:19Z; Breaking Changes & Upgrade Notes; hybrid Mamba correctness fix",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "SGLang 0.5.22 stable release and migration notes",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.5.22"
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-22-pypi",
+  "url": "https://pypi.org/project/sglang/0.5.22/",
+  "title": "SGLang 0.5.22 package metadata",
+  "organization": "SGLang contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-16",
+  "locator": "Requires-Python >=3.11; first wheel uploaded 2026-10-16T00:25:44.069863Z; package upload is distinct from the GitHub release",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "SGLang 0.5.22 package metadata",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0.5.22"
+});
+evidence.push({
+  "id": "evidence:sglang-mamba-43029",
+  "url": "https://github.com/sgl-project/sglang/pull/43029",
+  "title": "SGLang committed-length Mamba checkpoint fix",
+  "organization": "SGLang contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-10",
+  "locator": "Merged PR #43029; committed length in speculative Mamba tracking boundary check",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "SGLang committed-length Mamba checkpoint fix",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0acd93c35c2ae84bc2c5129d5d92916c77c45a70"
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-22-dumper",
+  "url": "https://github.com/sgl-project/sglang/blob/v0.5.22/python/sglang/srt/debug_utils/dumper.py",
+  "title": "SGLang 0.5.22 Dumper source: eval path remains",
+  "organization": "SGLang contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Tagged source: return bool(eval(filter_expr, {\"__builtins__\": {}}, namespace)); no claim that the earlier Dumper issue is fixed",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "SGLang 0.5.22 Dumper source: eval path remains",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.5.22"
+});
+evidence.push({
+  "id": "evidence:sglang-v0-5-22-license",
+  "url": "https://github.com/sgl-project/sglang/blob/v0.5.22/LICENSE",
+  "title": "SGLang 0.5.22 Apache-2.0 license",
+  "organization": "SGLang contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Tagged LICENSE; Apache License Version 2.0",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "SGLang 0.5.22 Apache-2.0 license",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "v0.5.22"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11722-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11722",
+  "title": "llama.cpp b11722 prerelease: Hexagon multistream Flash Attention",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Published 2026-10-19T01:51:19Z; prerelease=true; PR #30218",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11722 prerelease: Hexagon multistream Flash Attention",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11722"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-hexagon-30218",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30218",
+  "title": "Hexagon multi-sequence Flash Attention with non-unified KV",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Merged PR #30218; IQ-9075 EVK / Hexagon v73, Llama-3.2-1B and Qwen3.5-2B Q4_0; --no-kv-unified",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Hexagon multi-sequence Flash Attention with non-unified KV",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "fe8841a78ad36454a348cf612e10aaf40af12fec"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11727-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11727",
+  "title": "llama.cpp b11727 prerelease: reject truncated GGUF tensor data",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Published 2026-10-19T10:23:39Z; prerelease=true; PR #30497",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11727 prerelease: reject truncated GGUF tensor data",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "b11727"
+});
+evidence.push({
+  "id": "evidence:llama-cpp-gguf-short-read-30497",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30497/files",
+  "title": "GGUF short-read checks in gguf-split and export-lora",
+  "organization": "ggml-org / llama.cpp contributors",
+  "accessedOn": "2026-10-19",
+  "publishedOn": "2026-10-19",
+  "locator": "Final merged patch checks stream failure immediately after tensor reads in both tools; verified in tag b11727",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "GGUF short-read checks in gguf-split and export-lora",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8f97d82da33b5f4262a87b9c4208298378b8a165"
+});

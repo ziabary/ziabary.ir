@@ -1,0 +1,78 @@
+{
+  "reviewedOn": "2026-10-19",
+  "sourcesFolder": "data/llm/sources/runtime-2026-10-19",
+  "runtimeTested": false,
+  "baselineCollectionHashes": {
+    "families": "498b6d2b5dd1b1b9fe2161540ab73cbcabbdaa3237b4daaaa2fb2772aaa6bd3c",
+    "models": "26307ae0e4d8806eb1489fc368d93e5b69a19a28a7c1b58d16128c4131b8551b",
+    "artifacts": "03e6162974d739533e57e6d0d444f89fc2b6e50088d54d9eb1b8888dc4fd0c62",
+    "softwareProducts": "bdd8165aa59e84d472b5a881b8ff7a91282a459637ac24908bb7e72b3c0bcaf6",
+    "softwareReleases": "73881558ab3ab263aa4581074389c41ac4036bc643615a88476e05c3d691bd77",
+    "engines": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "servingStacks": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "deploymentConfigurations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "softwareCapabilities": "7fb1fb5260a633770b6919e4d9114a81b17c3c8b2d9b81086a4356da74bc34eb",
+    "apiCompatibility": "c80e11f1007f8a151ffeb32cc74ee66c0c117de5afa7edee3ff3e6ae4c6273da",
+    "hardwareConfigurations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "workloads": "e5701c53599b0c853c8edf5f8e3aae35ccfa6435f406ad051c535244ceaefe36",
+    "qualityEvaluations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "applicationAssessments": "be4dad470a71cbb41d89c176c24dcb8a0a02d8d47412a10155182cfb260803ee",
+    "executionFeasibility": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "deploymentCompatibility": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "benchmarkRuns": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "specializedAssessments": "fc333e14685ea29f8055a8c98ede5d2e6c561d92693a2c8a4aabed1f7533548f",
+    "claims": "1482692545e3478f20f7e9d073159c78800e08e94fa8ce8792d172762b0df436",
+    "evidence": "23001561c43e9ce0cd8ca77512155af3beef611a6ed95aa56424c8628d847084",
+    "publishedEvaluations": "1aa4bedb73ccd37d9dd23e630acd15627a15d562ef44a4caddd69245a5aefc71",
+    "modelProfiles": "b3dea7a736a8bdbb47513bf094903710b84f89700fe6fe6da64b438cf13ca692",
+    "modelUseGuidance": "7d0a8e9a9bfe21efc1c560911e5d3eca07c4f0c3497e081826ae565a3811f6e0",
+    "artifactListings": "aec406770b1d89e91ffbd94ce755a4fc7bce56663fefc98952d9c5771ae730a8",
+    "updatedOn": "1381c67fef4c36c5f4f08ad71a41b9758ba2ac250e7f674cabff6bcc152db3e1",
+    "referenceComparisons": "e0119313f3c5d6eadc1931f7470383411ca59c121becda506414770e50103f78",
+    "selectionGuidance": "8b6321132c490539d21bf241b45623a6c65d8343eb3445253b5820bdb761fee6",
+    "articleSections": "dfcdd75dea8d375db5d320dc1eb1018bf124ed42e3521541129267f3cacf9019",
+    "quantizationStudies": "89f4d4f79b392dcf3bdea908c6c7df1111b81d4a649dce00388e670094896e53"
+  },
+  "changedCollections": [
+    "softwareReleases",
+    "evidence",
+    "updatedOn"
+  ],
+  "preservedFileHashes": {
+    "src/lib/gpu-data.ts": "467e8bdeb381e8eadfb16aaaa3739025c1b63c61cbc2c7cc894d4779f3e201be",
+    "src/lib/server-data.ts": "436177edd0871b1af4b54f704211ac30f73da5a76c05a97db04332e482c8643c",
+    "src/lib/llm/wizard.ts": "98d5ad09970ea855d30693cd9f8986c6a8cf4bc8fbedfcd1e154edf3fac5f209",
+    "src/lib/llm/wizard-candidates.ts": "e3bf35e1b93c100c58c6b2db0b3cbaa85ee3bba3a177f95456f1a62befb4a2d3",
+    "data/llm/v0.2.0/data/hardware.json": "3bb4e630a95d0f95763a442e778b0d9f90fa36f71865d78669ea9068a5ea57f1",
+    "data/llm/v0.2.0/data/memory-policy.json": "a4b930f1bae2ad3fd4d218e43f4568601c35b4fa0fab3900627318a6f470a2b9",
+    "data/llm/v0.2.0/data/published-performance.json": "dae94baef47f14ea205e7f37aa0a86fc9b1e7b0f4de39ca5fbb139271858f3f0"
+  },
+  "verification": {
+    "datasetValidation": "passed",
+    "translations": "fa/en/es passed",
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "preservedCanonicalCollections": 26,
+    "preservedHistoricalReleaseRows": 43,
+    "preservedHardwareWizardMemoryAndPerformanceFiles": 7,
+    "build": "passed",
+    "sitemapIndexableUrls": 262,
+    "jsonLdBlocks": 273,
+    "shortLinkDestinations": 320,
+    "relatedTestFiles": {
+      "passed": 4,
+      "failed": 0
+    },
+    "staticReleaseRows": {
+      "fa": "passed",
+      "en": "passed",
+      "es": "passed"
+    }
+  },
+  "buildRepair": {
+    "path": "static/images/brands/microsoft.svg",
+    "reason": "Existing GPU page referenced a missing asset; prerender stopped with 404. Added the SVG without changing GPU records."
+  }
+}

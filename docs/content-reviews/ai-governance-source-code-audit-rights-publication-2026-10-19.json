@@ -1,0 +1,29 @@
+{
+  "publishedOn": "2026-10-19",
+  "url": "https://ziabary.ir/articles/ai-governance-source-code-audit-rights/",
+  "cover": "https://ziabary.ir/images/articles/ai-governance-source-code-audit-rights/cover.webp",
+  "shortUrl": "https://ziabary.ir/s/aagscar/",
+  "check": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "build": "passed",
+  "sitemap": "passed",
+  "shortLinks": "passed",
+  "live": {
+    "httpStatus": 200,
+    "indexable": true,
+    "canonicalVerified": true,
+    "openGraphCoverVerified": true,
+    "imageChecksumMatchesApprovedCover": true,
+    "sitemapContainsArticle": true,
+    "shortLinkRegistered": true
+  },
+  "deployment": {
+    "uploaded": 1782,
+    "unchanged": 4060,
+    "deleted": 0
+  },
+  "scope": "Approved article and cover published from HEAD 1354fc0 plus the article publication change; pending LLM dataset updates excluded. Missing Microsoft SVG included to fix prerender.",
+  "buildDirectory": "/tmp/ziabary-audit-publish-20261019/build"
+}

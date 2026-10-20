@@ -8,6 +8,48 @@
 /** @type {GuideUpdate[]} */
 export const guideUpdates = [
 {
+  "id": "sgl0522",
+  "guide": "llm",
+  "date": "2026-10-19",
+  "kind": "software",
+  "target": "SGLang",
+  "copy": {
+    "fa": {
+      "title": "SGLang 0.5.22 و شروط مهاجرت",
+      "summary": "Python 3.11+، تغییرهای DP و دریافت KV و اصلاح Mamba ثبت شدند؛ رفع Dumper تأیید نشده و آزمون محلی انجام نشده است."
+    },
+    "en": {
+      "title": "SGLang 0.5.22 migration conditions",
+      "summary": "Added Python 3.11+, DP/KV-receive changes and the Mamba fix; a Dumper fix is unconfirmed and no local runtime test was run."
+    },
+    "es": {
+      "title": "Condiciones de migración a SGLang 0.5.22",
+      "summary": "Añadidos Python 3.11+, cambios DP/recepción KV y corrección Mamba; Dumper sin corrección confirmada y sin prueba local."
+    }
+  }
+},
+{
+  "id": "llama1019",
+  "guide": "llm",
+  "date": "2026-10-19",
+  "kind": "software",
+  "target": "llama.cpp",
+  "copy": {
+    "fa": {
+      "title": "دو پیش‌انتشار llama.cpp ثبت شدند",
+      "summary": "b11722 مسیر چنددنباله‌ای Hexagon و b11727 توقف خواندن ناقص GGUF را اضافه می‌کنند؛ تعمیم کارایی و توصیهٔ ارتقای بی‌آزمون نیست."
+    },
+    "en": {
+      "title": "Two llama.cpp prereleases recorded",
+      "summary": "b11722 adds the Hexagon multi-sequence route; b11727 rejects incomplete GGUF reads. No general performance or untested upgrade recommendation."
+    },
+    "es": {
+      "title": "Dos versiones preliminares de llama.cpp registradas",
+      "summary": "b11722 añade la ruta multisecuencia Hexagon; b11727 rechaza lecturas GGUF incompletas. Sin generalizar rendimiento ni recomendar actualizar sin pruebas."
+    }
+  }
+},
+{
   "id": "beam1017",
   "guide": "llm",
   "date": "2026-10-17",

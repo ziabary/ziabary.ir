@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-19",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -150,5 +150,17 @@
     "runtimeTested": false,
     "modelsAdded": 8,
     "sourceReview": "sources/table-catchup-2026-10-17/review.json"
+  },
+  "runtime20261019": {
+    "softwareReleases": [
+      "software-release:sglang-v0-5-22",
+      "software-release:llama-cpp-b11722",
+      "software-release:llama-cpp-b11727"
+    ],
+    "scope": "Release-scoped migration, correctness, security caveat and Hexagon compatibility; historical rows retained",
+    "runtimeTested": false,
+    "memoryEstimateChanged": false,
+    "wizardChanged": false,
+    "hardwareChanged": false
   }
 }
