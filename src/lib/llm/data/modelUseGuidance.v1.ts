@@ -7538,11 +7538,14 @@ modelUseGuidance.push({
   "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
   "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
   "conditions": [
-    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+    "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
-    "evidence:catchup1017-deepseek1017"
+    "evidence:catchup1017-deepseek1017",
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
   ]
 });
 modelUseGuidance.push({
@@ -7554,11 +7557,14 @@ modelUseGuidance.push({
   "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
   "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
   "conditions": [
-    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+    "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
-    "evidence:catchup1017-deepseek1017"
+    "evidence:catchup1017-deepseek1017",
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
   ]
 });
 modelUseGuidance.push({
@@ -7570,11 +7576,14 @@ modelUseGuidance.push({
   "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
   "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
   "conditions": [
-    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+    "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
-    "evidence:catchup1017-deepseek1017"
+    "evidence:catchup1017-deepseek1017",
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
   ]
 });
 modelUseGuidance.push({
@@ -7586,11 +7595,14 @@ modelUseGuidance.push({
   "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
   "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
   "conditions": [
-    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+    "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
-    "evidence:catchup1017-deepseek1017"
+    "evidence:catchup1017-deepseek1017",
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
   ]
 });
 modelUseGuidance.push({
@@ -7602,11 +7614,14 @@ modelUseGuidance.push({
   "description": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
   "distinguishingFeature": "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
   "conditions": [
-    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+    "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است."
   ],
   "basis": "publisher-summary",
   "evidenceIds": [
-    "evidence:catchup1017-deepseek1017"
+    "evidence:catchup1017-deepseek1017",
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
   ]
 });
 modelUseGuidance.push({
@@ -7809,5 +7824,332 @@ modelUseGuidance.push({
   "basis": "publisher-summary",
   "evidenceIds": [
     "evidence:catchup1017-dory"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-embed-1b-bf16-retrieval",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "basis": "publisher-summary",
+  "summary": "بازیابی سند متنی و تصویری",
+  "description": "پرسش متنی را با بردار متن یا تصویر سند مقایسه می‌کند.",
+  "distinguishingFeature": "بردار 2048بعدی و کاهش بُعد با نرمال‌سازی دوباره",
+  "conditions": [
+    "برای پیکرهٔ خودتان کیفیت بازیابی را بسنجید؛ آزمون اجرای محلی، کیفیت مستقل فارسی و VRAM کامل ثبت نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:nemotron-embed-1b-card"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-embed-8b-bf16-retrieval",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-8b-bf16",
+  "applicationId": "enterprise-rag",
+  "role": "retrieval",
+  "basis": "publisher-summary",
+  "summary": "بازیابی سند متنی و تصویری",
+  "description": "پرسش متنی را با بردار متن یا تصویر سند مقایسه می‌کند.",
+  "distinguishingFeature": "بردار 4096بعدی و کاهش بُعد با نرمال‌سازی دوباره",
+  "conditions": [
+    "برای پیکرهٔ خودتان کیفیت بازیابی را بسنجید؛ آزمون اجرای محلی، کیفیت مستقل فارسی و VRAM کامل ثبت نشده‌اند."
+  ],
+  "evidenceIds": [
+    "evidence:nemotron-embed-8b-card"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:minicpm-v-4-7-1b:document-vision",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "درک تصویر، OCR، سند و ویدئو",
+  "description": "مدل متن، تصویر و ویدئوی MiniCPM-V 4.7 در نسخهٔ 1B؛ برای درک تصویر، OCR، سند و ویدئو. قالب‌های رسمی وزن با اندازهٔ واقعی فایل ثبت شده‌اند.",
+  "distinguishingFeature": "درک تصویر، OCR، سند و ویدئو",
+  "conditions": [
+    "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-card",
+    "evidence:tables1024-minicpm-v-4-7-1b-files",
+    "evidence:tables1024-minicpm-v-4-7-1b-config",
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:minicpm-v-4-7-1b:structured-extraction",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "درک تصویر، OCR، سند و ویدئو",
+  "description": "مدل متن، تصویر و ویدئوی MiniCPM-V 4.7 در نسخهٔ 1B؛ برای درک تصویر، OCR، سند و ویدئو. قالب‌های رسمی وزن با اندازهٔ واقعی فایل ثبت شده‌اند.",
+  "distinguishingFeature": "درک تصویر، OCR، سند و ویدئو",
+  "conditions": [
+    "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-card",
+    "evidence:tables1024-minicpm-v-4-7-1b-files",
+    "evidence:tables1024-minicpm-v-4-7-1b-config",
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:minicpm-v-4-7-35b-a3b:document-vision",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "applicationId": "document-vision",
+  "role": "vision",
+  "summary": "درک تصویر، OCR، سند و ویدئو",
+  "description": "مدل متن، تصویر و ویدئوی MiniCPM-V 4.7 در نسخهٔ 35B-A3B؛ برای درک تصویر، OCR، سند و ویدئو. قالب‌های رسمی وزن با اندازهٔ واقعی فایل ثبت شده‌اند.",
+  "distinguishingFeature": "درک تصویر، OCR، سند و ویدئو",
+  "conditions": [
+    "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:minicpm-v-4-7-35b-a3b:structured-extraction",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "درک تصویر، OCR، سند و ویدئو",
+  "description": "مدل متن، تصویر و ویدئوی MiniCPM-V 4.7 در نسخهٔ 35B-A3B؛ برای درک تصویر، OCR، سند و ویدئو. قالب‌های رسمی وزن با اندازهٔ واقعی فایل ثبت شده‌اند.",
+  "distinguishingFeature": "درک تصویر، OCR، سند و ویدئو",
+  "conditions": [
+    "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3-nano:structured-extraction",
+  "modelVersionId": "model:vllm-sr-d3-nano",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-nano-card",
+    "evidence:tables1024-vllm-sr-d3-nano-files",
+    "evidence:tables1024-vllm-sr-d3-nano-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3-nano:agents-tools",
+  "modelVersionId": "model:vllm-sr-d3-nano",
+  "applicationId": "agents-tools",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-nano-card",
+    "evidence:tables1024-vllm-sr-d3-nano-files",
+    "evidence:tables1024-vllm-sr-d3-nano-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3-mini:structured-extraction",
+  "modelVersionId": "model:vllm-sr-d3-mini",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-mini-card",
+    "evidence:tables1024-vllm-sr-d3-mini-files",
+    "evidence:tables1024-vllm-sr-d3-mini-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3-mini:agents-tools",
+  "modelVersionId": "model:vllm-sr-d3-mini",
+  "applicationId": "agents-tools",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-mini-card",
+    "evidence:tables1024-vllm-sr-d3-mini-files",
+    "evidence:tables1024-vllm-sr-d3-mini-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3-flash:structured-extraction",
+  "modelVersionId": "model:vllm-sr-d3-flash",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-flash-card",
+    "evidence:tables1024-vllm-sr-d3-flash-files",
+    "evidence:tables1024-vllm-sr-d3-flash-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3-flash:agents-tools",
+  "modelVersionId": "model:vllm-sr-d3-flash",
+  "applicationId": "agents-tools",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-flash-card",
+    "evidence:tables1024-vllm-sr-d3-flash-files",
+    "evidence:tables1024-vllm-sr-d3-flash-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3:structured-extraction",
+  "modelVersionId": "model:vllm-sr-d3",
+  "applicationId": "structured-extraction",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-card",
+    "evidence:tables1024-vllm-sr-d3-files",
+    "evidence:tables1024-vllm-sr-d3-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:vllm-sr-d3:agents-tools",
+  "modelVersionId": "model:vllm-sr-d3",
+  "applicationId": "agents-tools",
+  "role": "structured-output",
+  "summary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "description": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "distinguishingFeature": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "conditions": [
+    "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-card",
+    "evidence:tables1024-vllm-sr-d3-files",
+    "evidence:tables1024-vllm-sr-d3-config"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-e4b:text-work",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "applicationId": "text-work",
+  "role": "text-generation",
+  "summary": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "description": "مدل کوچک Gemma-4-E4B برای گفت‌وگوی محلی، ابزارخوانی چندمرحله‌ای و رابط دستگاه؛ 8B کل و 4B مؤثر. وزن BF16 و GGUF رسمی منتشر شده‌اند.",
+  "distinguishingFeature": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "conditions": [
+    "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+    "evidence:tables1024-bolt-dflash"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-e4b:agents-tools",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "applicationId": "agents-tools",
+  "role": "tool-use",
+  "summary": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "description": "مدل کوچک Gemma-4-E4B برای گفت‌وگوی محلی، ابزارخوانی چندمرحله‌ای و رابط دستگاه؛ 8B کل و 4B مؤثر. وزن BF16 و GGUF رسمی منتشر شده‌اند.",
+  "distinguishingFeature": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "conditions": [
+    "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+    "evidence:tables1024-bolt-dflash"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-bolt-e4b:reasoning-analysis",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "applicationId": "reasoning-analysis",
+  "role": "reasoning",
+  "summary": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "description": "مدل کوچک Gemma-4-E4B برای گفت‌وگوی محلی، ابزارخوانی چندمرحله‌ای و رابط دستگاه؛ 8B کل و 4B مؤثر. وزن BF16 و GGUF رسمی منتشر شده‌اند.",
+  "distinguishingFeature": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "conditions": [
+    "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+    "evidence:tables1024-bolt-dflash"
+  ]
+});
+modelUseGuidance.push({
+  "id": "model-use:nvidia-nemotron-3-5-rerank-8b-bf16:enterprise-rag",
+  "modelVersionId": "model:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "applicationId": "enterprise-rag",
+  "role": "reranking",
+  "summary": "بازرتبه‌بندی اسناد در RAG و Vision RAG",
+  "description": "بازرتبه‌بند چندوجهی با برج زبانی bidirectional Ministral3 و رمزگذار بینایی Pixtral؛ جفت پرسش متنی و سند متنی، تصویری یا ترکیبی را امتیاز می‌دهد.",
+  "distinguishingFeature": "بازرتبه‌بندی اسناد در RAG و Vision RAG",
+  "conditions": [
+    "برای تصویر از Transformers 5.20.0 استفاده کنید؛ 5.17 تا 5.19 با Flash Attention 2 ممکن است خروجی نادرست یا خطای CUDA بدهند. مسیر چندوجهی vLLM 0.32.0 از /classify و قالب query/document استفاده می‌کند، نه /score یا /rerank. امتیاز خروجی logit است؛ embedding یا احتمال کالیبره‌شده نیست."
+  ],
+  "basis": "publisher-summary",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
   ]
 });

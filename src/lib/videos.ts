@@ -11,6 +11,17 @@ export type VideoItem = Omit<MediaItem, 'coverImage' | 'coverImageAlt' | 'editor
 // reposts are deliberately omitted in favour of the most complete source.
 export const videoItems: VideoItem[] = [
   {
+    "title": "دانشمند مصنوعی زیر ذره‌بین؛ آیا AI واقعاً کشف می‌کند؟",
+    "source": "رادیو تهران",
+    "kind": "صوت",
+    "summary": "گفت‌وگوی برنامه «چراغ» درباره توانایی هوش مصنوعی در تولید دانش و کشف علمی، با حضور مهران ضیابری، متخصص هوش مصنوعی، و دکتر مصطفی تقوی، عضو هیئت علمی فلسفه علم دانشگاه صنعتی شریف. بحث به توانایی‌ها و محدودیت‌های فنی سامانه‌های هوشمند، ماهیت کشف علمی و نسبت آن با فهم انسانی می‌پردازد. این برنامه ۸۰ دقیقه‌ای در ۲ آبان ۱۴۰۵ از رادیو تهران پخش شده و در آرشیو ایران‌صدا قابل شنیدن است.",
+    "url": "http://radio.iranseda.ir/epgarchivePart/?VALID=TRUE&ch=20&e=154108537",
+    "date": "2026-10-24",
+    "faDate": "۲ آبان ۱۴۰۵",
+    "thumbnail": "/images/media-covers/cheragh-104121.jpg",
+    "icon": "fa-solid fa-headphones"
+  },
+  {
     title: 'از مدل عمومی تا مدل تخصصی؛ چرا AIهای حوزه‌ای مهم شده‌اند؟',
     source: 'رادیو تهران',
     kind: 'صوت',

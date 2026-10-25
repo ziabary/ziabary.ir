@@ -330,6 +330,7 @@
         <article>
           <strong><bdi>{model.name}</bdi></strong> · <bdi>{model.snapshot}</bdi>
           <p>{model.provider} · API · <bdi>{numbers.format(model.contextTokens??model.inputLimitTokens??0)}</bdi> {model.contextTokens?localized(['توکن زمینه','context tokens','tokens de contexto'],locale):localized(['توکن ورودی','input tokens','tokens de entrada'],locale)}{model.outputLimitTokens ? ` · ${localized(['حداکثر خروجی','maximum output','salida máxima'],locale)} ${numbers.format(model.outputLimitTokens)}` : ''} · <bdi>{model.reviewedOn}</bdi></p>
+          {#if model.notes?.[locale]}<p class="api-caveat">{model.notes[locale]}</p>{/if}
           {#if model.pricing}
             <p>{localized(['ورودی: متن و تصویر ← خروجی: متن · وزن قابل دریافت ندارد · فاین‌تیون پشتیبانی نمی‌شود.','Input: text and image → output: text · no downloadable weights · fine-tuning unsupported.','Entrada: texto e imagen → salida: texto · sin pesos descargables · sin ajuste fino.'],locale)}</p>
             <p>{localized(['ابزارهای Responses API:','Responses API tools:','Herramientas de Responses API:'],locale)} <bdi>{model.tools?.join(' · ')}</bdi></p>

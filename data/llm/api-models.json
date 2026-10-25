@@ -335,5 +335,32 @@
     ],
     "contract": "translation_options; one user message; no system message",
     "endpoint": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1"
+  },
+  {
+    "id": "nvidia-nemotron-3.5-bolt-e4b",
+    "name": "NVIDIA Nemotron 3.5 Bolt E4B",
+    "provider": "NVIDIA",
+    "snapshot": "nvidia/nemotron-3.5-bolt-e4b",
+    "input": ["text"],
+    "output": ["text"],
+    "contextTokens": 65536,
+    "availability": "prototype-free-endpoint",
+    "selfHosting": "public-weights-available-separately",
+    "catalogOnly": true,
+    "reviewedOn": "2026-10-24",
+    "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b",
+    "platformUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b/api",
+    "tasks": ["general", "tools", "reasoning"],
+    "languages": [],
+    "regions": [],
+    "contract": "chat-completions; prototype endpoint; account access and quotas require verification",
+    "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+    "tools": ["function calling"],
+    "persianEvidence": "not-independently-evaluated",
+    "notes": {
+      "fa": "Prototype؛ endpoint رایگان NVIDIA ثبت شده است. ظرفیت پایهٔ 64K از کارت مدل است؛ صفحهٔ API آن را گرد‌شده 66K نشان می‌دهد. عبارت «Download not available» فقط وضعیت همین پلتفرم است؛ وزن‌های عمومی BF16 و GGUF در Hugging Face جداگانه منتشر شده‌اند. کیفیت فارسی و دسترسی منطقه‌ای تأیید نشده‌اند.",
+      "en": "Prototype: NVIDIA lists a free endpoint. The base model card specifies 64K; the API page rounds it to 66K. “Download not available” describes this platform only; public BF16 and GGUF weights are published separately on Hugging Face. Persian quality and regional access are unverified.",
+      "es": "Prototipo: NVIDIA ofrece un endpoint gratuito. La ficha base especifica 64K; la página API lo redondea a 66K. «Download not available» describe solo esta plataforma; los pesos públicos BF16 y GGUF están disponibles por separado en Hugging Face. No se verificaron la calidad en persa ni el acceso regional."
+    }
   }
 ]

@@ -24,6 +24,7 @@ export type ApiModelRecord = {
   tools?: string[];
   fineTuning?: boolean;
   persianEvidence?: string;
+  notes?: Record<'fa' | 'en' | 'es', string>;
   pricing?: {
     currency: string;
     perTokens: number;

@@ -54040,3 +54040,1484 @@ models.push({
   "localExecutionStatus": "requires-validation",
   "attentionArchitecture": "hybrid"
 });
+models.push({
+  "id": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+  "familyId": "family:nemotron",
+  "exactName": "Nemotron-3.5-Embed-1B-BF16",
+  "publisher": "NVIDIA",
+  "version": "407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "aliases": [
+    "nvidia/Nemotron-3.5-Embed-1B-BF16"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "kind": "embedding",
+  "totalParametersB": {
+    "state": "known",
+    "value": 1.55,
+    "evidenceIds": [
+      "evidence:nemotron-embed-1b-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "multilingual",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:nemotron-embed-1b-card"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:nemotron-embed-1b-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:nemotron-embed-1b-card"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-10-20",
+  "lastReviewedOn": "2026-10-21",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "localExecutionStatus": "requires-validation",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card",
+        "evidence:nemotron-embed-openmdw11"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:nemotron-embed-openmdw11"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card",
+        "evidence:nemotron-embed-openmdw11"
+      ]
+    },
+    "restrictions": [
+      "در بازتوزیع، متن مجوز و اعلان‌های منشأ حفظ شوند؛ شرایط OpenMDW-1.1 برای همین وزن‌ها ملاک است."
+    ],
+    "evidenceIds": [
+      "evidence:nemotron-embed-1b-card",
+      "evidence:nemotron-embed-openmdw11"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:nemotron-embed-1b-card",
+    "evidence:nemotron-embed-1b-files"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی سند متنی یا تصویر صفحه با پرسش متنی",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار 2048بعدی؛ امکان کاهش به 1024 یا 512 بعد",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "mean pooling و L2؛ پیشوند query: برای پرسش و passage: برای سند",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "ناشر ورودی متن، تصویر یا ترکیب آن‌ها را مستند کرده است؛ شاهد llama.cpp فعلاً برای متن مدل 1B است.",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی در فهرست زبان‌های ناشر است؛ کیفیت مستقل فارسی در این راهنما اندازه‌گیری نشده است.",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 2048,
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    "adjustableDimensions": {
+      "state": "known",
+      "value": "1024 / 512",
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:nvidia-nemotron-3-5-embed-8b-bf16",
+  "familyId": "family:nemotron",
+  "exactName": "Nemotron-3.5-Embed-8B-BF16",
+  "publisher": "NVIDIA",
+  "version": "ca773cfffe5200e831920718257b932016859ed7",
+  "aliases": [
+    "nvidia/Nemotron-3.5-Embed-8B-BF16"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "kind": "embedding",
+  "totalParametersB": {
+    "state": "known",
+    "value": 8.38,
+    "evidenceIds": [
+      "evidence:nemotron-embed-8b-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "embedding"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "multilingual",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:nemotron-embed-8b-card"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:nemotron-embed-8b-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:nemotron-embed-8b-card"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "releasedOn": "2026-10-20",
+  "lastReviewedOn": "2026-10-21",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "localExecutionStatus": "requires-validation",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card",
+        "evidence:nemotron-embed-openmdw11"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:nemotron-embed-openmdw11"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card",
+        "evidence:nemotron-embed-openmdw11"
+      ]
+    },
+    "restrictions": [
+      "در بازتوزیع، متن مجوز و اعلان‌های منشأ حفظ شوند؛ شرایط OpenMDW-1.1 برای همین وزن‌ها ملاک است."
+    ],
+    "evidenceIds": [
+      "evidence:nemotron-embed-8b-card",
+      "evidence:nemotron-embed-openmdw11"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:nemotron-embed-8b-card",
+    "evidence:nemotron-embed-8b-files"
+  ],
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازیابی سند متنی یا تصویر صفحه با پرسش متنی",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "بردار 4096بعدی؛ امکان کاهش به 1024 یا 512 بعد",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "mean pooling و L2؛ پیشوند query: برای پرسش و passage: برای سند",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "ناشر ورودی متن، تصویر یا ترکیب آن‌ها را مستند کرده است؛ شاهد llama.cpp فعلاً برای متن مدل 1B است.",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی در فهرست زبان‌های ناشر است؛ کیفیت مستقل فارسی در این راهنما اندازه‌گیری نشده است.",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    "embeddingDimensions": {
+      "state": "known",
+      "value": 4096,
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    "adjustableDimensions": {
+      "state": "known",
+      "value": "1024 / 512",
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:minicpm-v-4-7-1b",
+  "familyId": "family:minicpm-v",
+  "exactName": "MiniCPM-V 4.7 1B",
+  "publisher": "OpenBMB",
+  "version": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "aliases": [
+    "openbmb/MiniCPM-V-4.7-1B"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "unknown",
+    "note": "نام 1B شمار کل نیست؛ نمایهٔ وزن BF16 حدود 1.554B عنصر دارد و شمار کل مستقل پارامترها تأیید نشده است."
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "document-vision",
+    "structured-extraction"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-v-4-7-1b-card",
+      "evidence:tables1024-minicpm-v-4-7-1b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-1b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/blob/379f120c2ff3588e6e06559ec6b9ec15cc05114e/README.md",
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-1b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-1b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-v-4-7-1b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-card",
+    "evidence:tables1024-minicpm-v-4-7-1b-files",
+    "evidence:tables1024-minicpm-v-4-7-1b-config",
+    "evidence:tables1024-minicpm-news"
+  ],
+  "releasedOn": "2026-10-12",
+  "parameterCounts": [
+    {
+      "scope": "nominal",
+      "label": "اندازهٔ اسمی نسخه؛ شمار کل مستقل تأیید نشده است",
+      "value": {
+        "state": "known",
+        "value": 1,
+        "evidenceIds": [
+          "evidence:tables1024-minicpm-v-4-7-1b-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    },
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 1.554476272,
+        "evidenceIds": [
+          "evidence:tables1024-minicpm-v-4-7-1b-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid"
+});
+models.push({
+  "id": "model:minicpm-v-4-7-35b-a3b",
+  "familyId": "family:minicpm-v",
+  "exactName": "MiniCPM-V 4.7 35B-A3B",
+  "publisher": "OpenBMB",
+  "version": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "aliases": [
+    "openbmb/MiniCPM-V-4.7-35B-A3B"
+  ],
+  "stage": "instruct",
+  "architecture": "moe",
+  "totalParametersB": {
+    "state": "known",
+    "value": 35,
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-v-4-7-35b-a3b-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "known",
+    "value": 3,
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-v-4-7-35b-a3b-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "kind": "vision-language",
+  "inputModalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "document-vision",
+    "structured-extraction"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+      "evidence:tables1024-minicpm-v-4-7-35b-a3b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/blob/896c2d454672476a7b45dcc5e3f0c700a0218577/README.md",
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-v-4-7-35b-a3b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+    "evidence:tables1024-minicpm-news"
+  ],
+  "releasedOn": "2026-10-12",
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 35.212875824,
+        "evidenceIds": [
+          "evidence:tables1024-minicpm-v-4-7-35b-a3b-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid"
+});
+models.push({
+  "id": "model:vllm-sr-d3-nano",
+  "familyId": "family:d3",
+  "exactName": "d3-nano",
+  "publisher": "vLLM Semantic Router",
+  "version": "462efc366229ea268cf4eed3738b3fc4415e4817",
+  "aliases": [
+    "vllm-sr/d3-nano"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 2.21,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-nano-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text",
+    "structured-data",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-nano-card",
+      "evidence:tables1024-vllm-sr-d3-nano-config"
+    ],
+    "unit": "token",
+    "note": "حد پیکربندی ستون زبانی است؛ ظرفیت کامل API تصمیم یا کیفیت در این طول اندازه‌گیری نشده است."
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/vllm-sr/d3-nano/blob/462efc366229ea268cf4eed3738b3fc4415e4817/README.md",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-nano-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-nano-card",
+    "evidence:tables1024-vllm-sr-d3-nano-files",
+    "evidence:tables1024-vllm-sr-d3-nano-config"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 2.213241664,
+        "evidenceIds": [
+          "evidence:tables1024-vllm-sr-d3-nano-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid",
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "احتمال هر گزینه یا امتیاز؛ بدون تولید متن",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "system_one: choice / yes-no / score",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:vllm-sr-d3-mini",
+  "familyId": "family:d3",
+  "exactName": "d3-mini",
+  "publisher": "vLLM Semantic Router",
+  "version": "bd0090dd758d32ba59ef5c749910a8e87fc4391f",
+  "aliases": [
+    "vllm-sr/d3-mini"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 4.54,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-mini-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text",
+    "structured-data",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-mini-card",
+      "evidence:tables1024-vllm-sr-d3-mini-config"
+    ],
+    "unit": "token",
+    "note": "حد پیکربندی ستون زبانی است؛ ظرفیت کامل API تصمیم یا کیفیت در این طول اندازه‌گیری نشده است."
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/vllm-sr/d3-mini/blob/bd0090dd758d32ba59ef5c749910a8e87fc4391f/README.md",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-mini-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-mini-card",
+    "evidence:tables1024-vllm-sr-d3-mini-files",
+    "evidence:tables1024-vllm-sr-d3-mini-config"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 4.539265536,
+        "evidenceIds": [
+          "evidence:tables1024-vllm-sr-d3-mini-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid",
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "احتمال هر گزینه یا امتیاز؛ بدون تولید متن",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "system_one: choice / yes-no / score",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:vllm-sr-d3-flash",
+  "familyId": "family:d3",
+  "exactName": "d3-flash",
+  "publisher": "vLLM Semantic Router",
+  "version": "13dc1cc8ef23caefa765907e1d764751e5629f7d",
+  "aliases": [
+    "vllm-sr/d3-flash"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 8.39,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-flash-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text",
+    "structured-data",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-flash-card",
+      "evidence:tables1024-vllm-sr-d3-flash-config"
+    ],
+    "unit": "token",
+    "note": "حد پیکربندی ستون زبانی است؛ ظرفیت کامل API تصمیم یا کیفیت در این طول اندازه‌گیری نشده است."
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/vllm-sr/d3-flash/blob/13dc1cc8ef23caefa765907e1d764751e5629f7d/README.md",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-flash-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-flash-card",
+    "evidence:tables1024-vllm-sr-d3-flash-files",
+    "evidence:tables1024-vllm-sr-d3-flash-config"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 8.392695024,
+        "evidenceIds": [
+          "evidence:tables1024-vllm-sr-d3-flash-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid",
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "احتمال هر گزینه یا امتیاز؛ بدون تولید متن",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "system_one: choice / yes-no / score",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:vllm-sr-d3",
+  "familyId": "family:d3",
+  "exactName": "d3",
+  "publisher": "vLLM Semantic Router",
+  "version": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c",
+  "aliases": [
+    "vllm-sr/d3"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 26.09,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "decision",
+  "inputModalities": [
+    "text",
+    "structured-data",
+    "image",
+    "video"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "structured-extraction",
+    "agents-tools"
+  ],
+  "languages": [],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-card",
+      "evidence:tables1024-vllm-sr-d3-config"
+    ],
+    "unit": "token",
+    "note": "حد پیکربندی ستون زبانی است؛ ظرفیت کامل API تصمیم یا کیفیت در این طول اندازه‌گیری نشده است."
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "Apache-2.0",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://huggingface.co/vllm-sr/d3/blob/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/README.md",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-card",
+    "evidence:tables1024-vllm-sr-d3-files",
+    "evidence:tables1024-vllm-sr-d3-config"
+  ],
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 26.08533016,
+        "evidenceIds": [
+          "evidence:tables1024-vllm-sr-d3-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "attentionArchitecture": "hybrid",
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "احتمال هر گزینه یا امتیاز؛ بدون تولید متن",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "system_one: choice / yes-no / score",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card"
+      ]
+    }
+  }
+});
+models.push({
+  "id": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "familyId": "family:nemotron",
+  "exactName": "NVIDIA Nemotron 3.5 Bolt E4B",
+  "publisher": "NVIDIA",
+  "version": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "aliases": [
+    "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16"
+  ],
+  "stage": "instruct",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 8,
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "generative",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "text"
+  ],
+  "applications": [
+    "text-work",
+    "agents-tools",
+    "reasoning-analysis"
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    },
+    {
+      "language": "it",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "not-evaluated",
+  "declaredContext": {
+    "state": "known",
+    "value": 65536,
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+      "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config"
+    ],
+    "unit": "token"
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+    "evidence:tables1024-bolt-dflash"
+  ],
+  "releasedOn": "2026-10-23",
+  "parameterCounts": [
+    {
+      "scope": "effective",
+      "label": "پارامتر مؤثر؛ جایگزین شمار کل یا حافظهٔ وزن نیست",
+      "value": {
+        "state": "known",
+        "value": 4,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": true
+    },
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 7.99615649,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "thinkingMode": "switchable"
+});
+models.push({
+  "id": "model:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "familyId": "family:nemotron",
+  "exactName": "Nemotron-3.5-Rerank-8B-BF16",
+  "publisher": "NVIDIA",
+  "version": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "aliases": [
+    "nvidia/Nemotron-3.5-Rerank-8B-BF16"
+  ],
+  "stage": "other",
+  "architecture": "dense",
+  "totalParametersB": {
+    "state": "known",
+    "value": 8.38,
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+    ],
+    "unit": "billion-parameters"
+  },
+  "activeParametersB": {
+    "state": "not-applicable"
+  },
+  "kind": "reranker",
+  "inputModalities": [
+    "text",
+    "image"
+  ],
+  "outputModalities": [
+    "structured-data"
+  ],
+  "applications": [
+    "enterprise-rag"
+  ],
+  "languages": [
+    {
+      "language": "multilingual",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+        ]
+      }
+    },
+    {
+      "language": "fa",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "declared": {
+        "state": "known",
+        "value": true,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+        ]
+      }
+    }
+  ],
+  "persianEvidenceStatus": "publisher-claimed",
+  "declaredContext": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+    ],
+    "unit": "token",
+    "note": "سقف مستند اجرای بازرتبه‌بند 32768 است؛ max_position_embeddings بزرگ‌تر در پیکربندی، مجوز افزایش آن نیست."
+  },
+  "evaluatedContext": {
+    "state": "not-measured"
+  },
+  "releaseStatus": "available",
+  "lastReviewedOn": "2026-10-24",
+  "accessMode": "public-weights",
+  "weightAccess": "public",
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "OpenMDW-1.1",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://openmdw.ai/license/1-1/",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+    ]
+  },
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
+  ],
+  "releasedOn": "2026-10-20",
+  "parameterCounts": [
+    {
+      "scope": "stored",
+      "label": "عناصر ثبت‌شده در نمایهٔ Safetensors",
+      "value": {
+        "state": "known",
+        "value": 8.381159424,
+        "evidenceIds": [
+          "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files"
+        ],
+        "unit": "billion-parameters"
+      },
+      "approximate": false
+    }
+  ],
+  "configurationContext": {
+    "state": "known",
+    "value": 262144,
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
+    ],
+    "unit": "token"
+  },
+  "specializedSpecs": {
+    "task": {
+      "state": "known",
+      "value": "بازرتبه‌بندی اسناد در RAG و Vision RAG",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "output": {
+      "state": "known",
+      "value": "logit خام ارتباط برای هر جفت پرسش و سند؛ بدون بردار دائمی",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "poolingOrScoring": {
+      "state": "known",
+      "value": "mean pooling بدون activation؛ مقدار بزرگ‌تر به معنی ارتباط بیشتر است",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "features": {
+      "state": "known",
+      "value": "برای تصویر از Transformers 5.20.0 استفاده کنید؛ 5.17 تا 5.19 با Flash Attention 2 ممکن است خروجی نادرست یا خطای CUDA بدهند. مسیر چندوجهی vLLM 0.32.0 از /classify و قالب query/document استفاده می‌کند، نه /score یا /rerank. امتیاز خروجی logit است؛ embedding یا احتمال کالیبره‌شده نیست.",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    },
+    "languages": {
+      "state": "known",
+      "value": "فارسی در ارزیابی متنی و تصویری ناشر حضور دارد؛ امتیاز مستقل فارسی منتشر نشده است.",
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+      ]
+    }
+  }
+});

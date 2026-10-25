@@ -1,0 +1,142 @@
+{
+  "reviewedOn": "2026-10-24",
+  "runtimeTested": false,
+  "sourcesFolder": "data/llm/sources/tables-2026-10-24",
+  "modelsAdded": [
+    "model:minicpm-v-4-7-1b",
+    "model:minicpm-v-4-7-35b-a3b",
+    "model:vllm-sr-d3-nano",
+    "model:vllm-sr-d3-mini",
+    "model:vllm-sr-d3-flash",
+    "model:vllm-sr-d3",
+    "model:nvidia-nemotron-3-5-bolt-e4b",
+    "model:nvidia-nemotron-3-5-rerank-8b-bf16"
+  ],
+  "softwareReleasesAdded": [
+    "software-release:llama-cpp-b11821",
+    "software-release:llama-cpp-b11822",
+    "software-release:llama-cpp-b11826",
+    "software-release:llama-cpp-b11828",
+    "software-release:llama-cpp-b11829",
+    "software-release:llama-cpp-b11835",
+    "software-release:llama-cpp-b11838",
+    "software-release:llama-cpp-b11847",
+    "software-release:ollama-v0-40-9",
+    "software-release:ollama-v0-40-10"
+  ],
+  "apiModelsAdded": [
+    "nvidia-nemotron-3.5-bolt-e4b"
+  ],
+  "preservedCollections": [
+    "artifacts",
+    "softwareProducts",
+    "engines",
+    "servingStacks",
+    "deploymentConfigurations",
+    "softwareCapabilities",
+    "apiCompatibility",
+    "hardwareConfigurations",
+    "qualityEvaluations",
+    "applicationAssessments",
+    "executionFeasibility",
+    "deploymentCompatibility",
+    "benchmarkRuns",
+    "claims",
+    "publishedEvaluations",
+    "referenceComparisons",
+    "selectionGuidance",
+    "articleSections",
+    "quantizationStudies"
+  ],
+  "preservedArticleCount": 189,
+  "preservedFileHashes": {
+    "src/lib/gpu-data.ts": "467e8bdeb381e8eadfb16aaaa3739025c1b63c61cbc2c7cc894d4779f3e201be",
+    "src/lib/server-data.ts": "436177edd0871b1af4b54f704211ac30f73da5a76c05a97db04332e482c8643c",
+    "src/lib/llm/wizard.ts": "98d5ad09970ea855d30693cd9f8986c6a8cf4bc8fbedfcd1e154edf3fac5f209",
+    "src/lib/llm/wizard-candidates.ts": "e3bf35e1b93c100c58c6b2db0b3cbaa85ee3bba3a177f95456f1a62befb4a2d3"
+  },
+  "articleSnapshotDigest": "071cd0a0954b5c1b0b54e0ee55f5a901dc9fcad50228a63176e67972160f4df7",
+  "resolutions": [
+    "E4B API-only notice superseded by public weights on October 23. One local model and one separate API-service record, not duplicate model rows.",
+    "Ollama 0.40.9 is historical; 0.40.10 is the only latest Ollama row.",
+    "MiniCPM-V 1B whole-model total stays unknown. Nominal 1B and 1.554476272B stored elements are separate; no unsupported exact 2B assertion.",
+    "MiniCPM-V GGUF manifests bundle one target and one compatible ordinary projector; DSpark files are not standalone candidates and are not silently added to base weight sizes.",
+    "E4B canonical specification remains text / 65536 tokens. Ollama image / 128K is a package-specific unresolved claim.",
+    "E4B 4GB is not a weight-file or VRAM value. Official GGUF bytes and rounded Ollama package sizes are separate.",
+    "Qwen3.8-Flash-Next has no exact model row in the current local repository. b11822 documents its DFlash floor; no different Qwen row was modified.",
+    "Rerank uses 32768 despite larger config; Transformers 5.20.0 and vLLM 0.32.0 /classify caveats retained.",
+    "No MiniCPM-OCR, Spark-Audio or Phonon standalone model row. No b11840 row: no material model compatibility change was established by the pasted report.",
+    "No article edits, GPU/server specification changes, synthetic benchmarks, memory policy changes or wizard code changes."
+  ],
+  "verification": {
+    "datasetValidation": "passed",
+    "locales": [
+      "fa",
+      "en",
+      "es"
+    ],
+    "targetedTests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "sitemapIndexablePages": 266,
+    "structuredDataBlocks": 277,
+    "staticGuides": {
+      "fa": {
+        "allNewModelNamesInHtml": true,
+        "apiNoteInHtml": true,
+        "htmlBytes": 2315657
+      },
+      "en": {
+        "allNewModelNamesInHtml": true,
+        "apiNoteInHtml": true,
+        "htmlBytes": 2191246
+      },
+      "es": {
+        "allNewModelNamesInHtml": true,
+        "apiNoteInHtml": true,
+        "htmlBytes": 2198349
+      }
+    },
+    "allArticlesPreserved": true,
+    "fullSuite": {
+      "tests": 360,
+      "passed": 340,
+      "failed": 20,
+      "newTableTestsPassed": 8,
+      "allFailureNamesReproducedWithPreChangeDataset": true,
+      "preExistingFailureNames": [
+        "the en collection and its nine articles are published",
+        "the es collection and its nine articles are published",
+        "Spanish preserves the reviewed English sources, figures and editorial relationships",
+        "LLM editions deliver summaries and crawlable article links, not collapsed full bodies",
+        "multimodal filtering includes embedders without changing their task or losing the old model",
+        "the published guide has six sections, seven data views, versioned research rows and the required taxonomies",
+        "real snapshot family, size and evidence filters retain unknown semantics",
+        "every positive matrix cell has an explicitly sourced assessment and empty applications stay empty",
+        "default usage guide explains all RAG roles without an experimental outcome",
+        "optional usage matrix contains only generators and retains known text-only limitations",
+        "five K2 models appear in family, format and engine filters across all editions",
+        "current Ollama is stable Latest with a distinct review date and preserved SystemOne milestone",
+        "localized version/backend filters and scoped deployment rows expose MLX without certifying artifacts",
+        "Beam is an announcement with no effective Apache license or ready local recommendation",
+        "release filters distinguish fixed prereleases and the new stable Ollama in all three editions",
+        "All download filter results have matching packages",
+        "Generative matrix contains sourced task guidance and explicit text-only input limits",
+        "File-footprint mode covers models without applying incompatible KV formulas",
+        "default columns preserve documented unknowns and model brands are local",
+        "Qwen3.6 has pinned artifacts and context; local reviews exclude commercial-service-only models"
+      ],
+      "baselineDatasetModels": 151,
+      "htmlBudgetFailureAlsoPresentBeforeUpdate": true
+    },
+    "baselineHtmlBytes": 2212879,
+    "baselineHtmlBudget": 2000000
+  },
+  "publication": "Prepared locally; not deployed."
+}

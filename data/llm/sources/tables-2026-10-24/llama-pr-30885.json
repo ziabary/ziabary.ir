@@ -1,0 +1,8 @@
+{
+  "html_url": "https://github.com/ggml-org/llama.cpp/pull/30885",
+  "number": 30885,
+  "title": "hip: fix bf16 WMMA operand vector type for gfx11/gfx12",
+  "body": "\r\n\r\n## Overview\r\n\r\nThe __builtin_amdgcn_wmma_f32_16x16x16_bf16_w32 (and _gfx12) builtins take their A/B operands as vectors of short (_ExtVector<16, short> / _ExtVector<8, short>), not __bf16. Declaring the fragments as ext_vector_type(N) __bf16 fails to compile:\r\n\r\n> error: cannot initialize a parameter of type 'short __attribute__((ext_vector_type(16)))' (vector of 16 'short' values) with an lvalue of type 'const bf16x16_t' (vector of 16 '__bf16' values)\r\n\r\n\r\nshort and __bf16 are both 16-bit and the value is only ever passed to the builtin via reinterpret_cast over raw bytes, so changing the element type is bit-identical. The operand type has been short since the builtin was introduced, so this works across LLVM/ROCm versions without a version gate. Fixes HIP builds for RDNA3 (gfx1150/1151) and RDNA4 (gfx1200/1201).\r\n\r\n## Additional information\r\n\r\nBasically, it gives support for LLVM 23 for RDNA3 and RDNA4 GPUs, otherwise it fails to build with latest HIP/ROCm.\r\n\r\nFixes issue #30839\r\n\r\n## Requirements\r\n\r\n- I have read and agree with the [contributing guidelines](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md)\r\n- AI usage disclosure: Yes. Used it to analyze why my local build was failing, locate the LLVM documentation and fix the issue. Patch tested by myself on local gfx1151. There is no automation in the process, AI was solely used to ask questions and create the PR description according to contributing guidelines.",
+  "merged_at": "2026-10-23T21:31:29Z",
+  "merge_commit_sha": "9145ddb9556c1cfa568f3189eb7be44317826e31"
+}

@@ -45006,3 +45006,1625 @@ evidence.push({
   "presentationNotes": [],
   "versionRevisionOrCommit": "8f97d82da33b5f4262a87b9c4208298378b8a165"
 });
+evidence.push({
+  "id": "evidence:llama-cpp-b11774-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11774",
+  "title": "llama.cpp b11774: LFM2 image preprocessing",
+  "organization": "ggml-org / llama.cpp contributors",
+  "publishedOn": "2026-10-21",
+  "accessedOn": "2026-10-21",
+  "locator": "Prerelease; published 2026-10-21T02:32:09Z; #30261; includes b11767 processor metadata conversion",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11774: LFM2 image preprocessing",
+  "versionRevisionOrCommit": "b11774",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-lfm-30261",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30261",
+  "title": "LFM2 tiles, resize and layout match the Python reference",
+  "organization": "ggml-org / llama.cpp contributors",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "31,926 divergent sizes in [1,4096]^2; 720x1600 example: 2812 -> 2298 prompt tokens; F16 regression models include LFM2.5-VL-450M, LFM2-VL-450M and d1",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2 tiles, resize and layout match the Python reference",
+  "versionRevisionOrCommit": "4a45de4f2c68f3d144f6c2431ad7c1da7e53c99e",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-lfm-30840",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30840",
+  "title": "LFM2 mmproj conversion reads processor_config.json",
+  "organization": "ggml-org / llama.cpp contributors",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "min_tiles, max_tiles, tile_size, max_pixels_tolerance; do_image_splitting=false means one tile; b11767 is an ancestor of b11774",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "LFM2 mmproj conversion reads processor_config.json",
+  "versionRevisionOrCommit": "36140dbee26704d517889db16caf5318039beaeb",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-b11778-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11778",
+  "title": "llama.cpp b11778: Nemotron-3 and Nemotron-3.5 Embed",
+  "organization": "ggml-org / llama.cpp contributors",
+  "publishedOn": "2026-10-21",
+  "accessedOn": "2026-10-21",
+  "locator": "Prerelease; published 2026-10-21T03:37:03Z; #30877",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11778: Nemotron-3 and Nemotron-3.5 Embed",
+  "versionRevisionOrCommit": "b11778",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-nemotron-30877",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30877",
+  "title": "Nemotron Embed BF16-to-F16 GGUF conversion and llama-embedding example",
+  "organization": "ggml-org / llama.cpp contributors",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "Nemotron-3 / 3.5 Embed 1B/8B BF16 source checkpoints; no official GGUF download is established",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Nemotron Embed BF16-to-F16 GGUF conversion and llama-embedding example",
+  "versionRevisionOrCommit": "52ffa027455662ea59f78d0e4e5a8f38ee63a5fe",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-cpp-nemotron-30877-review",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30877#pullrequestreview-5586086983",
+  "title": "Nemotron-3.5 Embed 1B text embedding comparison",
+  "organization": "ggml-org / llama.cpp contributors",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "Reviewer CUDA test: Hello world today; 3 matching tokens; 2048 dimensions; cosine similarity 0.999847 vs PyTorch; not an 8B or image end-to-end test",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Nemotron-3.5 Embed 1B text embedding comparison",
+  "versionRevisionOrCommit": "b11778",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:nemotron-embed-openmdw11",
+  "url": "https://openmdw.ai/license/1-1/",
+  "title": "OpenMDW License Agreement 1.1",
+  "organization": "OpenMDW / The Linux Foundation",
+  "accessedOn": "2026-10-21",
+  "locator": "Model card governing download terms; permissions and notice-retention conditions",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "OpenMDW License Agreement 1.1",
+  "versionRevisionOrCommit": "OpenMDW-1.1",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:nemotron-embed-1b-card",
+  "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16/blob/407b5319891cbe8e3f24a6872804b6afe2a24e7b/README.md",
+  "title": "Nemotron-3.5 Embed 1B BF16 model card",
+  "organization": "NVIDIA",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "Release date 10/20/2026; parameters, 32768-token input, embedding dimensions, query/passage prefixes and runtime examples",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Nemotron-3.5 Embed 1B BF16 model card",
+  "versionRevisionOrCommit": "407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:nemotron-embed-1b-files",
+  "url": "https://huggingface.co/api/models/nvidia/Nemotron-3.5-Embed-1B-BF16/revision/407b5319891cbe8e3f24a6872804b6afe2a24e7b?blobs=true",
+  "title": "Nemotron-3.5 Embed 1B BF16 file inventory",
+  "organization": "NVIDIA",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "Official Safetensors checkpoint files and their byte sizes; not a VRAM estimate",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Nemotron-3.5 Embed 1B BF16 file inventory",
+  "versionRevisionOrCommit": "407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:nemotron-embed-8b-card",
+  "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/blob/ca773cfffe5200e831920718257b932016859ed7/README.md",
+  "title": "Nemotron-3.5 Embed 8B BF16 model card",
+  "organization": "NVIDIA",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "Release date 10/20/2026; parameters, 32768-token input, embedding dimensions, query/passage prefixes and runtime examples",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Nemotron-3.5 Embed 8B BF16 model card",
+  "versionRevisionOrCommit": "ca773cfffe5200e831920718257b932016859ed7",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:nemotron-embed-8b-files",
+  "url": "https://huggingface.co/api/models/nvidia/Nemotron-3.5-Embed-8B-BF16/revision/ca773cfffe5200e831920718257b932016859ed7?blobs=true",
+  "title": "Nemotron-3.5 Embed 8B BF16 file inventory",
+  "organization": "NVIDIA",
+  "publishedOn": "2026-10-20",
+  "accessedOn": "2026-10-21",
+  "locator": "Official Safetensors checkpoint files and their byte sizes; not a VRAM estimate",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Nemotron-3.5 Embed 8B BF16 file inventory",
+  "versionRevisionOrCommit": "ca773cfffe5200e831920718257b932016859ed7",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-news",
+  "url": "https://github.com/OpenBMB/MiniCPM-o/blob/main/README.md",
+  "title": "MiniCPM-V 4.7 release on October 12 and DSpark heads on October 15",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "News entries dated 2026-10-12 and 2026-10-15",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "MiniCPM-V 4.7 release on October 12 and DSpark heads on October 15",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-10-15"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-card",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/blob/379f120c2ff3588e6e06559ec6b9ec15cc05114e/README.md",
+  "title": "openbmb/MiniCPM-V-4.7-1B official model card",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publishedOn": "2026-10-12"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-files",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B/revision/379f120c2ff3588e6e06559ec6b9ec15cc05114e?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B exact file inventory",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publishedOn": "2026-10-12"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-config",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/blob/379f120c2ff3588e6e06559ec6b9ec15cc05114e/config.json",
+  "title": "openbmb/MiniCPM-V-4.7-1B model configuration",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publishedOn": "2026-10-12"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-bf16-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B/revision/379f120c2ff3588e6e06559ec6b9ec15cc05114e?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "379f120c2ff3588e6e06559ec6b9ec15cc05114e"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-int4-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-int4/revision/f4cc7e7da06e858f970ed1766564192e2d426ca7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-int4 distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-int4 distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-int4 distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f4cc7e7da06e858f970ed1766564192e2d426ca7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-awq-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-AWQ/revision/90e15bf1f7d0395f09d0c2bd91cb80a6a130ddc7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-AWQ distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-AWQ distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-AWQ distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "90e15bf1f7d0395f09d0c2bd91cb80a6a130ddc7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gptq-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-GPTQ/revision/a225ce8c429fdc97cf41c426efc13afdeaa63025?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-GPTQ distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-GPTQ distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-GPTQ distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "a225ce8c429fdc97cf41c426efc13afdeaa63025"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-f16-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq3-m-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq3-xs-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq4-nl-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq4-xs-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-0-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-1-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-k-m-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-k-s-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-0-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-1-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-k-m-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-k-s-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q6-k-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-1b-gguf-q8-0-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf/revision/0ad5ef54b51a8cf42de80532d840b61b66519054?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-1B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0ad5ef54b51a8cf42de80532d840b61b66519054"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/blob/896c2d454672476a7b45dcc5e3f0c700a0218577/README.md",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B official model card",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publishedOn": "2026-10-12"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B/revision/896c2d454672476a7b45dcc5e3f0c700a0218577?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B exact file inventory",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publishedOn": "2026-10-12"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/blob/896c2d454672476a7b45dcc5e3f0c700a0218577/config.json",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B model configuration",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publishedOn": "2026-10-12"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-bf16-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B/revision/896c2d454672476a7b45dcc5e3f0c700a0218577?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "896c2d454672476a7b45dcc5e3f0c700a0218577"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-int4-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-int4/revision/2448b5d33a6cec254768921a9bd86219f5401a41?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-int4 distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-int4 distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-int4 distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "2448b5d33a6cec254768921a9bd86219f5401a41"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-awq-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ/revision/9832dea29707a60ba3c2001b6ad5533212d150cd?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-AWQ distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-AWQ distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-AWQ distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "9832dea29707a60ba3c2001b6ad5533212d150cd"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gptq-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ/revision/4d1caf54688a119efa58588aadfc53a6cc8735e9?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "4d1caf54688a119efa58588aadfc53a6cc8735e9"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-fp8-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-FP8/revision/747e8cf6c0203f78575b759ec4ed9d634780b6d1?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-FP8 distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-FP8 distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-FP8 distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "747e8cf6c0203f78575b759ec4ed9d634780b6d1"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-f16-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq3-m-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq3-xs-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq4-nl-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq4-xs-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-0-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-1-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-k-m-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-k-s-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-0-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-1-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-k-m-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-k-s-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q6-k-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q8-0-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-mix-q3gud-im-inventory",
+  "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/revision/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7?blobs=true",
+  "title": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "organization": "OpenBMB",
+  "accessedOn": "2026-10-24",
+  "locator": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-nano-card",
+  "url": "https://huggingface.co/vllm-sr/d3-nano/blob/462efc366229ea268cf4eed3738b3fc4415e4817/README.md",
+  "title": "vllm-sr/d3-nano official model card",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-nano official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-nano official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "462efc366229ea268cf4eed3738b3fc4415e4817"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-nano-files",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3-nano/revision/462efc366229ea268cf4eed3738b3fc4415e4817?blobs=true",
+  "title": "vllm-sr/d3-nano exact file inventory",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-nano exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-nano exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "462efc366229ea268cf4eed3738b3fc4415e4817"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-nano-config",
+  "url": "https://huggingface.co/vllm-sr/d3-nano/blob/462efc366229ea268cf4eed3738b3fc4415e4817/config.json",
+  "title": "vllm-sr/d3-nano model configuration",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-nano model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-nano model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "462efc366229ea268cf4eed3738b3fc4415e4817"
+});
+evidence.push({
+  "id": "evidence:tables1024-d3-nano-ollama",
+  "url": "https://ollama.com/library/d3:2b",
+  "title": "Ollama d3:2b package",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama d3:2b package",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama d3:2b package",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-nano-bf16-inventory",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3-nano/revision/462efc366229ea268cf4eed3738b3fc4415e4817?blobs=true",
+  "title": "vllm-sr/d3-nano distribution files",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-nano distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-nano distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "462efc366229ea268cf4eed3738b3fc4415e4817"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-mini-card",
+  "url": "https://huggingface.co/vllm-sr/d3-mini/blob/bd0090dd758d32ba59ef5c749910a8e87fc4391f/README.md",
+  "title": "vllm-sr/d3-mini official model card",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-mini official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-mini official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "bd0090dd758d32ba59ef5c749910a8e87fc4391f"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-mini-files",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3-mini/revision/bd0090dd758d32ba59ef5c749910a8e87fc4391f?blobs=true",
+  "title": "vllm-sr/d3-mini exact file inventory",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-mini exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-mini exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "bd0090dd758d32ba59ef5c749910a8e87fc4391f"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-mini-config",
+  "url": "https://huggingface.co/vllm-sr/d3-mini/blob/bd0090dd758d32ba59ef5c749910a8e87fc4391f/config.json",
+  "title": "vllm-sr/d3-mini model configuration",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-mini model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-mini model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "bd0090dd758d32ba59ef5c749910a8e87fc4391f"
+});
+evidence.push({
+  "id": "evidence:tables1024-d3-mini-ollama",
+  "url": "https://ollama.com/library/d3:4b",
+  "title": "Ollama d3:4b package",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama d3:4b package",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama d3:4b package",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-mini-bf16-inventory",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3-mini/revision/bd0090dd758d32ba59ef5c749910a8e87fc4391f?blobs=true",
+  "title": "vllm-sr/d3-mini distribution files",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-mini distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-mini distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "bd0090dd758d32ba59ef5c749910a8e87fc4391f"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-flash-card",
+  "url": "https://huggingface.co/vllm-sr/d3-flash/blob/13dc1cc8ef23caefa765907e1d764751e5629f7d/README.md",
+  "title": "vllm-sr/d3-flash official model card",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-flash official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-flash official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "13dc1cc8ef23caefa765907e1d764751e5629f7d"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-flash-files",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3-flash/revision/13dc1cc8ef23caefa765907e1d764751e5629f7d?blobs=true",
+  "title": "vllm-sr/d3-flash exact file inventory",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-flash exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-flash exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "13dc1cc8ef23caefa765907e1d764751e5629f7d"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-flash-config",
+  "url": "https://huggingface.co/vllm-sr/d3-flash/blob/13dc1cc8ef23caefa765907e1d764751e5629f7d/config.json",
+  "title": "vllm-sr/d3-flash model configuration",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-flash model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-flash model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "13dc1cc8ef23caefa765907e1d764751e5629f7d"
+});
+evidence.push({
+  "id": "evidence:tables1024-d3-flash-ollama",
+  "url": "https://ollama.com/library/d3:9b",
+  "title": "Ollama d3:9b package",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama d3:9b package",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama d3:9b package",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-flash-bf16-inventory",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3-flash/revision/13dc1cc8ef23caefa765907e1d764751e5629f7d?blobs=true",
+  "title": "vllm-sr/d3-flash distribution files",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3-flash distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3-flash distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "13dc1cc8ef23caefa765907e1d764751e5629f7d"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-card",
+  "url": "https://huggingface.co/vllm-sr/d3/blob/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/README.md",
+  "title": "vllm-sr/d3 official model card",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3 official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3 official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-files",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3/revision/20f37b9a892acc13d4b07a4f3c4f11b2518c615c?blobs=true",
+  "title": "vllm-sr/d3 exact file inventory",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3 exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3 exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c"
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-config",
+  "url": "https://huggingface.co/vllm-sr/d3/blob/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/config.json",
+  "title": "vllm-sr/d3 model configuration",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3 model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3 model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c"
+});
+evidence.push({
+  "id": "evidence:tables1024-d3-ollama",
+  "url": "https://ollama.com/library/d3:27b",
+  "title": "Ollama d3:27b package",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama d3:27b package",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama d3:27b package",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tables1024-vllm-sr-d3-bf16-inventory",
+  "url": "https://huggingface.co/api/models/vllm-sr/d3/revision/20f37b9a892acc13d4b07a4f3c4f11b2518c615c?blobs=true",
+  "title": "vllm-sr/d3 distribution files",
+  "organization": "vLLM Semantic Router",
+  "accessedOn": "2026-10-24",
+  "locator": "vllm-sr/d3 distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "vllm-sr/d3 distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/blob/49843eed8db1f1c616c47af75cfd36e07aec0667/README.md",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 official model card",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/revision/49843eed8db1f1c616c47af75cfd36e07aec0667?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 exact file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/blob/49843eed8db1f1c616c47af75cfd36e07aec0667/config.json",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 model configuration",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-bolt-ollama",
+  "url": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+  "title": "Ollama E4B packages and package-specific 128K/image claim",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama E4B packages and package-specific 128K/image claim",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama E4B packages and package-specific 128K/image claim",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-bf16-inventory",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/revision/49843eed8db1f1c616c47af75cfd36e07aec0667?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 distribution files",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "49843eed8db1f1c616c47af75cfd36e07aec0667"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-q4-k-m-inventory",
+  "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/revision/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be?blobs=true",
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB distribution files",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "1db54d5b12533ff1bcaa8e42cf4c667988a1f1be"
+});
+evidence.push({
+  "id": "evidence:tables1024-bolt-dflash",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash/blob/0949a2eb7152ec6fda1a91ff9302aecbcd464fbf/README.md",
+  "title": "E4B companion DFlash, not a standalone model",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "E4B companion DFlash, not a standalone model",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "E4B companion DFlash, not a standalone model",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "0949a2eb7152ec6fda1a91ff9302aecbcd464fbf",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+  "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/blob/f88f8d9104726747791283ab156d2fcdb29e90a7/README.md",
+  "title": "nvidia/Nemotron-3.5-Rerank-8B-BF16 official model card",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/Nemotron-3.5-Rerank-8B-BF16 official model card",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/Nemotron-3.5-Rerank-8B-BF16 official model card",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "publishedOn": "2026-10-20"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+  "url": "https://huggingface.co/api/models/nvidia/Nemotron-3.5-Rerank-8B-BF16/revision/f88f8d9104726747791283ab156d2fcdb29e90a7?blobs=true",
+  "title": "nvidia/Nemotron-3.5-Rerank-8B-BF16 exact file inventory",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/Nemotron-3.5-Rerank-8B-BF16 exact file inventory",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/Nemotron-3.5-Rerank-8B-BF16 exact file inventory",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "publishedOn": "2026-10-20"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config",
+  "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/blob/f88f8d9104726747791283ab156d2fcdb29e90a7/config.json",
+  "title": "nvidia/Nemotron-3.5-Rerank-8B-BF16 model configuration",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/Nemotron-3.5-Rerank-8B-BF16 model configuration",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/Nemotron-3.5-Rerank-8B-BF16 model configuration",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "publishedOn": "2026-10-20"
+});
+evidence.push({
+  "id": "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-bf16-inventory",
+  "url": "https://huggingface.co/api/models/nvidia/Nemotron-3.5-Rerank-8B-BF16/revision/f88f8d9104726747791283ab156d2fcdb29e90a7?blobs=true",
+  "title": "nvidia/Nemotron-3.5-Rerank-8B-BF16 distribution files",
+  "organization": "NVIDIA",
+  "accessedOn": "2026-10-24",
+  "locator": "nvidia/Nemotron-3.5-Rerank-8B-BF16 distribution files",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "nvidia/Nemotron-3.5-Rerank-8B-BF16 distribution files",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f88f8d9104726747791283ab156d2fcdb29e90a7"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11821",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11821",
+  "title": "llama.cpp b11821 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "Multi-column on Intel XMX matrix engines refactored (#29864)\n\n* Multi-column on Intel XMX matrix engines refactored\n\nMulti-column (2 to 80 activation columns) mul_mat_vec_q for reordered K-quant and Q8_0 weights on the Intel XMX matrix engines (int8 DPAS, ESIMD), for the SYCL backend. It targets speculative decoding verification (2 to 8 tokens per step) and short prompt batches (9 to 80 tokens). Three types also use it for a single column (Q2_K, Q3_K, Q8_0).\n\n* Fixed regression bug\n\nreal bug found: the first version produced NaN whenever the row count wasn't a multiple of 4\n\n* Removed GGML_TYPE_Q8_0 activation\n\n* rewritten xmx_mul_mat\n\n64-byte alignment and 16-byte pitch check on the activations\n\n* Implemented fused gate/up kernel\n\nOne launch computes up * act(gate) for both FFN weights, reading the activations once and applying SWIGLU or GEGLU in the epilogue. It covers up to 16 columns and works for all six XMX types.\n\n* Removed the temporary XMX_NOGLU environment switch\n\n* Q2_K min-sum optimization\n\nQ2_K weight is d·scl·q − dmin·mc, where scl (the 4-bit scale) and mc (the 4-bit min code) apply to each half of a 32-weight group\n\n* Added dispatch check and GRF sweep\n\ntg128 on Q4_K_M goes from 26.67 to 28.23 tok/s on the B70 (+5.9%).\nQ6_K is unchanged.\nMUL_MAT passes 1727/1727 and MUL_MAT_VEC_FUSION 1361/1361.\nPerplexity at batch 1 is 5.2064 with XMX and 5.2058 without.\n\n* Renamed variables\n\n* Added 2 environment variables\n\nGGML_SYCL_XMX_MAX_COLS (default 80, any value 0 or higher) and GGML_SYCL_XMX_GLU_MAX_COLS (default 16, range 0 to 16):  the largest batch for the fused gate/up kernel. It is clamped to 16 because that is the most the fused kernel is compiled for, so the variable can only lower it.\n\n* Update esimd.hpp\n\n1. All five quant structs were repeating the same boilerplate, so I moved it into shared pieces.\n\n2. A new helper xmx_term does one DPAS, converts it to float and scales it per row. The four branches are now one or two lines each, and the shared Cb += z * d8r is written once.\n\nThe refactor passes all three op tests. MUL_MAT_VEC_FUSION is 1369/1369, MUL_MAT is 2281/2281 (the count includes your uncommitted f32 tests) and MUL_MAT_ID is 937/937.",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11821 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "d81d0d8fb95e52a66992bcfc212b1891b4d2f94a",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-29864",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/29864",
+  "title": "Multi-column on Intel XMX matrix engines refactored",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "Multi-column on Intel XMX matrix engines refactored",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Multi-column on Intel XMX matrix engines refactored",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "d81d0d8fb95e52a66992bcfc212b1891b4d2f94a",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11822",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11822",
+  "title": "llama.cpp b11822 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "model : fix qwen4exp layer inputs for DFlash drafters (#30927)\n\nqwen4exp published the hc-wide residual [n_embd, hc, n_tokens] as\nt_layer_inp, but the drafter reads layer inputs as [n_embd, n_tokens]\nrows: llama_context sizes each embd_layer_inp buffer as n_embd * n_batch\nand the DFlash encoder input is n_extract * n_embd wide. Evaluating a\nDFlash draft over a qwen4exp target therefore aborts on the first request\nin llama_context::extract_layer_inputs.\n\nCollapse the streams with a plain mean before exposing them, as deepseek4\nalready does for its hyper-connection residual, and build the mean only\nfor the layers a drafter actually requested.\n\nAssisted-by: pi:llama.cpp/ggml-org/Qwen3.8-Flash-Next-GGUF (MacBook, M5 Max, 128GB)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11822 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "d9ee007a06b63e9b2380ba28663de4bcc7b60260",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-30927",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30927",
+  "title": "model : fix qwen4exp layer inputs for DFlash drafters",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "model : fix qwen4exp layer inputs for DFlash drafters",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "model : fix qwen4exp layer inputs for DFlash drafters",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "d9ee007a06b63e9b2380ba28663de4bcc7b60260",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11826",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11826",
+  "title": "llama.cpp b11826 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "mtmd : add MiniCPM-OCR 1.0 support (#30979)\n\nSigned-off-by: tc-mb <tianchi_cai@icloud.com>",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11826 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "a08ab75ae74c36c15accc6c682a989a9e98dbfd2",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-30979",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30979",
+  "title": "mtmd : add MiniCPM-OCR 1.0 support",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "mtmd : add MiniCPM-OCR 1.0 support",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "mtmd : add MiniCPM-OCR 1.0 support",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "a08ab75ae74c36c15accc6c682a989a9e98dbfd2",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11828",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11828",
+  "title": "llama.cpp b11828 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "server: realtime API: send complete after committed audio drains (#30994)\n\n* server: realtime API: send complete after committed audio drains\n\n* server: realtime API: complete a commit at its end row\n\nCompletion is triggered when the stream runs dry, which is a timing\nproxy: audio appended while the tail drains leaks into the committed\nitem, a final commit before the drain merges both items, and back to\nback commits collapse into one.\n\nmtmd_audio_stream_flush() records the row count at the end of the\nflushed audio (mtmd_audio_stream_get_n_rows_flushed), next to the rows\nproduced so far (mtmd_audio_stream_get_n_rows). The slot keeps a FIFO\nof these end rows and completes each commit once every row up to it is\ndecoded.\n\n---------\n\nCo-authored-by: Pascal <admin@serveurperso.com>",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11828 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "d814cbb88c85bbf3039f3303602fd210d266aa68",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-30994",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30994",
+  "title": "server: realtime API: send complete after committed audio drains",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "server: realtime API: send complete after committed audio drains",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "server: realtime API: send complete after committed audio drains",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "d814cbb88c85bbf3039f3303602fd210d266aa68",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11829",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11829",
+  "title": "llama.cpp b11829 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "server: Substitute rerank placeholder from the original template only. (#30864)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11829 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "184f6536024668e8908ab8c86033d56708e62b40",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-30864",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30864",
+  "title": "server : substitute rerank placeholder from the original template only.",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "server : substitute rerank placeholder from the original template only.",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "server : substitute rerank placeholder from the original template only.",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "184f6536024668e8908ab8c86033d56708e62b40",
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11835",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11835",
+  "title": "llama.cpp b11835 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "sycl : pass device into mul_mat_uses_onednn (#31014)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11835 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f64a49819ccbf67a710f9a1927080e25775651ef",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-31014",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/31014",
+  "title": "sycl: pass device into mul_mat_uses_onednn",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "sycl: pass device into mul_mat_uses_onednn",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "sycl: pass device into mul_mat_uses_onednn",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "f64a49819ccbf67a710f9a1927080e25775651ef",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11838",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11838",
+  "title": "llama.cpp b11838 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "ggml : fix time overflow in ggml_time_us (#30969)\n\n* fix time overflow\n\n* use double",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11838 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "4231b23dc2c46661d01157aac5245bdcf03ce4b1",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-30969",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30969",
+  "title": "ggml : fix time overflow in ggml_time_us",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "ggml : fix time overflow in ggml_time_us",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "ggml : fix time overflow in ggml_time_us",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "4231b23dc2c46661d01157aac5245bdcf03ce4b1",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-b11847",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11847",
+  "title": "llama.cpp b11847 prerelease",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "hip: fix bf16 WMMA operand vector type for gfx11/gfx12 (#30885)\n\nThe __builtin_amdgcn_wmma_f32_16x16x16_bf16_w32 (and _gfx12) builtins\ntake their A/B operands as vectors of short (_ExtVector<16, short> /\n_ExtVector<8, short>), not __bf16. Declaring the fragments as\next_vector_type(N) __bf16 fails to compile:\n\n  error: cannot initialize a parameter of type 'short\n  __attribute__((ext_vector_type(16)))' with an lvalue of type 'const\n  bf16x16_t' (vector of 16 '__bf16' values)\n\nshort and __bf16 are both 16-bit and the value is only ever passed to\nthe builtin via reinterpret_cast over raw bytes, so changing the element\ntype is bit-identical. The operand type has been short since the builtin\nwas introduced, so this works across LLVM/ROCm versions without a\nversion gate. Fixes HIP builds for RDNA3 (gfx1150/1151) and RDNA4\n(gfx1200/1201).\n\nSigned-off-by: Pablo Cholaky <waltercool@slash.cl>",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11847 prerelease",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "9145ddb9556c1cfa568f3189eb7be44317826e31",
+  "publishedOn": "2026-10-24"
+});
+evidence.push({
+  "id": "evidence:tables1024-llama-pr-30885",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30885",
+  "title": "hip: fix bf16 WMMA operand vector type for gfx11/gfx12",
+  "organization": "ggml-org",
+  "accessedOn": "2026-10-24",
+  "locator": "hip: fix bf16 WMMA operand vector type for gfx11/gfx12",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "hip: fix bf16 WMMA operand vector type for gfx11/gfx12",
+  "limitations": [],
+  "presentationNotes": [],
+  "versionRevisionOrCommit": "9145ddb9556c1cfa568f3189eb7be44317826e31",
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:tables1024-ollama-v0-40-9",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+  "title": "Ollama v0.40.9 stable release",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama v0.40.9 stable release",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama v0.40.9 stable release",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-10-22"
+});
+evidence.push({
+  "id": "evidence:tables1024-ollama-v0-40-10",
+  "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
+  "title": "Ollama v0.40.10 stable release",
+  "organization": "Ollama",
+  "accessedOn": "2026-10-24",
+  "locator": "Ollama v0.40.10 stable release",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "Ollama v0.40.10 stable release",
+  "limitations": [],
+  "presentationNotes": [],
+  "publishedOn": "2026-10-23"
+});
+evidence.push({
+  "id": "evidence:llama-b11865-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11865",
+  "title": "llama.cpp b11865 prerelease",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-24",
+  "accessedOn": "2026-10-25",
+  "locator": "rpc : add bounds check in rdma_recv (#30399)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11865 prerelease",
+  "versionRevisionOrCommit": "9a0fde9967fa1a35b6e5dd1f47e1a3648b6fecc1",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-pr-30399",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/30399",
+  "title": "rpc : add bounds check in rdma_recv",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-24",
+  "accessedOn": "2026-10-25",
+  "locator": "rpc : add bounds check in rdma_recv",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "rpc : add bounds check in rdma_recv",
+  "versionRevisionOrCommit": "9a0fde9967fa1a35b6e5dd1f47e1a3648b6fecc1",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-b11858-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11858",
+  "title": "llama.cpp b11858 prerelease",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-24",
+  "accessedOn": "2026-10-25",
+  "locator": "llama : deny -sm tensor for arches with moe amax rescaling (#31081)\n\nThe amax POOL_1D reduction spans the whole matmul row, so a device cannot\ncompute it from an axis-0 split. The Meta split-state case reported\nMIRRORED, which gives each device a partial max of its own slice. Drop\nthat case and deny -sm tensor for the arches which build the amax graph,\nsee [TAG_MOE_AMAX_SCALE].\n\nAssisted-by: dsh:llama.cpp/ggml-org/Qwen3.8-Flash-Next-GGUF (MacBook, M5 Max, 128GB)",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11858 prerelease",
+  "versionRevisionOrCommit": "30322097581f70126705570def8810013787af47",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-pr-31081",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/31081",
+  "title": "llama : deny -sm tensor for arches with moe amax rescaling",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-24",
+  "accessedOn": "2026-10-25",
+  "locator": "llama : deny -sm tensor for arches with moe amax rescaling",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama : deny -sm tensor for arches with moe amax rescaling",
+  "versionRevisionOrCommit": "30322097581f70126705570def8810013787af47",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-b11870-release",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11870",
+  "title": "llama.cpp b11870 prerelease",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-25",
+  "accessedOn": "2026-10-25",
+  "locator": "model: DSV4.1 flash (#31086)\n\n* model : add DeepSeek-V4.1-Flash (deepseek41)\n\n* deepseek41 : remove MXFP8, convert the Engram table to BF16\n\n* deepseek41 : compute the compressed-KV read layers once in the cache\n\n* deepseek41 : use get_cells() for the shared-history check, drop llama_kv_cache::seq_pos_tok_le\n\n* deepseek41 : gather the Engram rows in-graph like qwen4exp, drop the host gather\n\n* deepseek41 : keep the Engram hash constants in hparams.ple_*, one module per Engram layer\n\n* deepseek41 : drop the LLAMA_DSV41_KV_MIRROR toggle\n\n* deepseek41 : keep il last in build_hc_mixes\n\n* deepseek41 : sort the top-k rows before the sparse gather\n\n* tests : add deepseek41 to the Metal fusion baseline\n\n---------\n\nCo-authored-by: Daniel Han <danielhanchen@gmail.com>",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "llama.cpp b11870 prerelease",
+  "versionRevisionOrCommit": "74bca3950054eed1795f525cb9cf06bfe796492d",
+  "limitations": [],
+  "presentationNotes": []
+});
+evidence.push({
+  "id": "evidence:llama-pr-31086",
+  "url": "https://github.com/ggml-org/llama.cpp/pull/31086",
+  "title": "model: DSV4.1 flash",
+  "organization": "ggml-org",
+  "publishedOn": "2026-10-25",
+  "accessedOn": "2026-10-25",
+  "locator": "model: DSV4.1 flash",
+  "kind": "documented-specification",
+  "sourceKind": "primary",
+  "scope": "model: DSV4.1 flash",
+  "versionRevisionOrCommit": "74bca3950054eed1795f525cb9cf06bfe796492d",
+  "limitations": [],
+  "presentationNotes": []
+});

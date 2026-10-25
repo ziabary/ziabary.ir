@@ -8,7 +8,7 @@ for(const locale of ['fa','en','es'])test(`b11240 routes, filter and scoped wiza
  const i=m['i18n/runtime'].createLlmI18n(locale,read(`data/llm/locales/messages.${locale}.json`),m['i18n/runtime'].resolveRecordTranslations(read(`data/llm/locales/records.${locale}.json`)));
  const repo=m.research.createLlmResearch(i).enrichResearchRepository(m['i18n/runtime'].localizeLlmRepository(canonical,i));
  const rows=m.adapters.createLlmAdapters(i).buildLlmViewRows(repo);
- const software=m['research-views'].createLlmResearchViews(i).enrichExistingRows(repo,rows,'all')['software-products'].find(x=>x.id==='software-release:llama-cpp-v0-5-0');
+ const software=m['research-views'].createLlmResearchViews(i).enrichExistingRows(repo,rows,'all')['software-products'].find(x=>x.id==='software-release:llama-cpp-b11240');
  assert.match(software.cells['research-benefit'].display,/b11240/);
  assert.match(software.cells['research-condition'].display,/KV prefix reuse/);
  assert.ok(software.sourceIds.includes('evidence:llama-cpp-b11240-release'));

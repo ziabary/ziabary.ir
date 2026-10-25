@@ -5,6 +5,10 @@
 This repository is Mehran Ziabary's multilingual professional portal. Persian
 is the primary edition. English and Spanish are independent editorial streams;
 do not assume every article has a translation.
+Keep political and Iran-specific articles in the Persian edition unless the
+user explicitly requests their translation. For English and Spanish technical
+articles, use a general technical setting for illustrations rather than Iranian
+maps, political scenes or local symbols.
 
 ## Architecture constraints
 

@@ -1,0 +1,168 @@
+{
+  "id": "nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "sha": "ca773cfffe5200e831920718257b932016859ed7",
+  "gated": false,
+  "cardData": {
+    "license": "other",
+    "license_name": "openmdw-1.1",
+    "license_link": "https://openmdw.ai/license/1-1/",
+    "base_model": [
+      "mistralai/Ministral-3-8B-Instruct-2512-BF16"
+    ],
+    "tags": [
+      "multimodal-embedding",
+      "image-embeddings",
+      "text-embeddings",
+      "retrieval",
+      "rag",
+      "semantic-search",
+      "transformers",
+      "vllm"
+    ],
+    "language": [
+      "multilingual",
+      "en",
+      "ar",
+      "as",
+      "bn",
+      "bg",
+      "zh",
+      "da",
+      "nl",
+      "fi",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "mr",
+      "ne",
+      "no",
+      "fa",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "uk",
+      "ur",
+      "vi"
+    ],
+    "library_name": "sentence-transformers",
+    "pipeline_tag": "visual-document-retrieval"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "size": 1570
+    },
+    {
+      "rfilename": "1_Pooling/config.json",
+      "blobId": "2cb2e4b192804106cf8c2a1db2f6213613bc60a4",
+      "size": 298
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "46c1657421d2aebc3014dc82dffe8782ae09b379",
+      "size": 30808
+    },
+    {
+      "rfilename": "chat_template.jinja",
+      "blobId": "5bb6d181465352ca2b1d649e757d45645b525da5",
+      "size": 2863
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "428d3438693df28d9d6f477c70b7ae6fe51c5b3c",
+      "size": 2711
+    },
+    {
+      "rfilename": "config_sentence_transformers.json",
+      "blobId": "90af153bbb6cf1109edfa4c9d9d03be0741b3722",
+      "size": 140
+    },
+    {
+      "rfilename": "model-00001-of-00004.safetensors",
+      "blobId": "33f21a92c0f138f36c02389b8e952f0cbb980cfb",
+      "size": 4884098864,
+      "lfs": {
+        "sha256": "ff109302de487b8f876e96df935c76c0445ee6a7d41c710e86829af0809d9f0f",
+        "size": 4884098864,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00004.safetensors",
+      "blobId": "e9d92998a07f8be0446db2376bffa7d5e014d243",
+      "size": 4932506728,
+      "lfs": {
+        "sha256": "a1389777201608a2cf471d44621390e0e52a582b5860a2e03f845dc88266fb82",
+        "size": 4932506728,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00004.safetensors",
+      "blobId": "2e7f99364dbccc8ece61515f3811c872b9ce783a",
+      "size": 4932506744,
+      "lfs": {
+        "sha256": "a13f09bade45a923e8a8802c8efa4af5c78f9d30b79cc2122193c52b21b01d3c",
+        "size": 4932506744,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00004-of-00004.safetensors",
+      "blobId": "6153817f005cb184c27d23a90253e8e1e6353ba3",
+      "size": 2013267064,
+      "lfs": {
+        "sha256": "9939bcaed29ca11ef784296e2bcac01a8f3be27eaad30aec089706d66c11decc",
+        "size": 2013267064,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "9980b60a03ee5da7594f225b2d8d64ced1eac7d3",
+      "size": 50718
+    },
+    {
+      "rfilename": "modules.json",
+      "blobId": "a32b46a13926a0aeb8367448eef21d776acd09b9",
+      "size": 350
+    },
+    {
+      "rfilename": "processor_config.json",
+      "blobId": "06286f3f80ec8e9f7ae5bca9fb9615a23c915b42",
+      "size": 697
+    },
+    {
+      "rfilename": "sentence_bert_config.json",
+      "blobId": "6af3a9bd3543cf0e160d5672ccd80bd766053808",
+      "size": 449
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "87885b7d7e698bfe6121f89ed0398092a97ea3ba",
+      "size": 21525042,
+      "lfs": {
+        "sha256": "b78fc125e4896d169ab6683914ba1e9515eed36a65faffa2421d4cdb3061de02",
+        "size": 21525042,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "14d1dfa7ca98378ced7c436d69ecaca35e6d9701",
+      "size": 21263
+    }
+  ]
+}

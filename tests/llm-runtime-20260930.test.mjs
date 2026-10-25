@@ -19,7 +19,7 @@ test('prerelease correctness and stable SystemOne conditions render in all three
    const release=canonical.softwareReleases.find(x=>x.id===id);assert.equal(release.releaseChannel,id===cpuId?'prerelease':'stable');assert.equal(release.releasedOn,'2026-09-29');
    assert.ok(!canonical.benchmarkRuns.some(x=>JSON.stringify(x).includes(id)));
   }
-  assert.match(rows.find(x=>x.id==='software-release:llama-cpp-v0-5-0').cells['research-condition'].display,/b11262/);
+  assert.doesNotMatch(rows.find(x=>x.id==='software-release:llama-cpp-v0-5-0').cells['research-condition'].display,/b11262/);
  }
 });
 test('CPU warning needs a declared AVX512-FP16 path and llama.cpp candidate',()=>{

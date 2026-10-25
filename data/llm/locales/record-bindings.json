@@ -9230,7 +9230,10 @@
   },
   "repository.modelProfiles/model-profile:liquidai-lfm2-5-vl-3b": {
     "introduction": "sep26.model-profile:liquidai-lfm2-5-vl-3b.introduction",
-    "roleSummary": "sep26.model-profile:liquidai-lfm2-5-vl-3b.roleSummary"
+    "roleSummary": "sep26.model-profile:liquidai-lfm2-5-vl-3b.roleSummary",
+    "runGuides/1/label": "runtime1021.model-profile:liquidai-lfm2-5-vl-3b.runGuides.1.label",
+    "runGuides/1/instructions": "runtime1021.model-profile:liquidai-lfm2-5-vl-3b.runGuides.1.instructions",
+    "runGuides/1/conditions/0": "runtime1021.model-profile:liquidai-lfm2-5-vl-3b.runGuides.1.conditions.0"
   },
   "repository.models/model:liquidai-lfm2-5-vl-3b-dspark": {
     "license/restrictions/0": "sep26.model:liquidai-lfm2-5-vl-3b-dspark.license.restrictions.0"
@@ -9867,7 +9870,7 @@
   },
   "repository.softwareReleases/software-release:ollama-v0-40-5": {
     "offlineOperation/note": "catchup1017.36c6b4549e163d",
-    "targetScenario/value": "catchup1017.775e7e83121b19",
+    "targetScenario/value": "record.tables1024.016",
     "backendSummary/value": "catchup1017.16c92de98365b8",
     "selectionCaveat": "catchup1017.53c574d35c7861"
   },
@@ -10117,7 +10120,13 @@
     "languageSummary": "catchup1017.c7d54bc70dad0f",
     "runGuides/0/label": "catchup1017.f1ca7c7bd725fc",
     "runGuides/0/conditions/0": "catchup1017.2c1e798e44bb40",
-    "downloadSearchNote": "catchup1017.7c5927fda2b076"
+    "downloadSearchNote": "catchup1017.7c5927fda2b076",
+    "distinguishingFeatures/1": "record.runtime1025.10",
+    "runGuides/1/engineLabel": "record.runtime1025.12",
+    "runGuides/1/label": "record.runtime1025.12",
+    "runGuides/1/instructions": "record.runtime1025.13",
+    "runGuides/1/conditions/0": "record.runtime1025.10",
+    "runGuides/1/conditions/1": "record.runtime1025.11"
   },
   "repository.modelProfiles/model-profile:liquidai-lfm2-5-24b-a2b": {
     "introduction": "catchup1017.afa78d7801815c",
@@ -10290,31 +10299,36 @@
     "summary": "catchup1017.4ae04e9c40ffc8",
     "description": "catchup1017.822d9a7546f6f1",
     "distinguishingFeature": "catchup1017.6915bd78283bdf",
-    "conditions/0": "catchup1017.8865c7ae262077"
+    "conditions/0": "catchup1017.8865c7ae262077",
+    "conditions/1": "record.runtime1025.10"
   },
   "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:coding-assistant": {
     "summary": "catchup1017.fbdb59905916f7",
     "description": "catchup1017.cff4dc1c92e947",
     "distinguishingFeature": "catchup1017.3f502ba8367649",
-    "conditions/0": "catchup1017.2750435f8ffe6a"
+    "conditions/0": "catchup1017.2750435f8ffe6a",
+    "conditions/1": "record.runtime1025.10"
   },
   "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:reasoning-analysis": {
     "summary": "catchup1017.ac487360af309b",
     "description": "catchup1017.a831ea863f9738",
     "distinguishingFeature": "catchup1017.06c36916a0e774",
-    "conditions/0": "catchup1017.bcd61b30d9c69d"
+    "conditions/0": "catchup1017.bcd61b30d9c69d",
+    "conditions/1": "record.runtime1025.10"
   },
   "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:agents-tools": {
     "summary": "catchup1017.a24b329547a9d9",
     "description": "catchup1017.5e271d44deac4e",
     "distinguishingFeature": "catchup1017.1a16403633e5c3",
-    "conditions/0": "catchup1017.574acd0d3a0a78"
+    "conditions/0": "catchup1017.574acd0d3a0a78",
+    "conditions/1": "record.runtime1025.10"
   },
   "repository.modelUseGuidance/model-use:deepseek-ai-deepseek-v4-1-flash-1017:document-vision": {
     "summary": "catchup1017.5789ffc2224edf",
     "description": "catchup1017.e7e9aaaf7850a3",
     "distinguishingFeature": "catchup1017.1a1c23b4f34a98",
-    "conditions/0": "catchup1017.1285a3b3bcc4c5"
+    "conditions/0": "catchup1017.1285a3b3bcc4c5",
+    "conditions/1": "record.runtime1025.10"
   },
   "repository.modelUseGuidance/model-use:liquidai-lfm2-5-24b-a2b:text-work": {
     "summary": "catchup1017.5b8579227bd86a",
@@ -10591,5 +10605,567 @@
     "targetScenario/value": "runtime1019.gguf.scenario",
     "backendSummary/value": "runtime1019.gguf.summary",
     "selectionCaveat": "runtime1019.gguf.caveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11774": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11774.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11774.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11774.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11778": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11778.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11778.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11778.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11160": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11160.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11160.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11160.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11182": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11182.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11182.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11182.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11223": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11223.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11223.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11223.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11224": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11224.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11224.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11224.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11240": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11240.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11240.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11240.selectionCaveat"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11279": {
+    "targetScenario/value": "runtime1021.software-release:llama-cpp-b11279.targetScenario.value",
+    "backendSummary/value": "runtime1021.software-release:llama-cpp-b11279.backendSummary.value",
+    "selectionCaveat": "runtime1021.software-release:llama-cpp-b11279.selectionCaveat"
+  },
+  "repository.models/model:nvidia-nemotron-3-5-embed-1b-bf16": {
+    "license/restrictions/0": "runtime1021.model:nvidia-nemotron-3-5-embed-1b-bf16.license.restrictions.0",
+    "specializedSpecs/task/value": "runtime1021.model:nvidia-nemotron-3-5-embed-1b-bf16.specializedSpecs.task.value",
+    "specializedSpecs/output/value": "runtime1021.model:nvidia-nemotron-3-5-embed-1b-bf16.specializedSpecs.output.value",
+    "specializedSpecs/poolingOrScoring/value": "runtime1021.model:nvidia-nemotron-3-5-embed-1b-bf16.specializedSpecs.poolingOrScoring.value",
+    "specializedSpecs/features/value": "runtime1021.model:nvidia-nemotron-3-5-embed-1b-bf16.specializedSpecs.features.value",
+    "specializedSpecs/languages/value": "runtime1021.model:nvidia-nemotron-3-5-embed-1b-bf16.specializedSpecs.languages.value"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-3-5-embed-1b-bf16": {
+    "introduction": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.introduction",
+    "roleSummary": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.roleSummary",
+    "languageSummary": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.languageSummary",
+    "downloadSearchNote": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.downloadSearchNote",
+    "runGuides/0/conditions/0": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.runGuides.0.conditions.0",
+    "runGuides/1/label": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.runGuides.1.label",
+    "runGuides/1/instructions": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.runGuides.1.instructions",
+    "runGuides/1/conditions/0": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-1b-bf16.runGuides.1.conditions.0"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-embed-1b-bf16-retrieval": {
+    "summary": "runtime1021.model-use:nvidia-nemotron-3-5-embed-1b-bf16-retrieval.summary",
+    "description": "runtime1021.model-use:nvidia-nemotron-3-5-embed-1b-bf16-retrieval.description",
+    "distinguishingFeature": "runtime1021.model-use:nvidia-nemotron-3-5-embed-1b-bf16-retrieval.distinguishingFeature",
+    "conditions/0": "runtime1021.model-use:nvidia-nemotron-3-5-embed-1b-bf16-retrieval.conditions.0"
+  },
+  "repository.workloads/workload:nvidia-nemotron-3-5-embed-1b-bf16-retrieval": {
+    "name": "runtime1021.workload:nvidia-nemotron-3-5-embed-1b-bf16-retrieval.name"
+  },
+  "repository.specializedAssessments/specialized-assessment:nvidia-nemotron-3-5-embed-1b-bf16": {
+    "metricName": "runtime1021.specialized-assessment:nvidia-nemotron-3-5-embed-1b-bf16.metricName",
+    "limitations/0": "runtime1021.specialized-assessment:nvidia-nemotron-3-5-embed-1b-bf16.limitations.0"
+  },
+  "repository.models/model:nvidia-nemotron-3-5-embed-8b-bf16": {
+    "license/restrictions/0": "runtime1021.model:nvidia-nemotron-3-5-embed-8b-bf16.license.restrictions.0",
+    "specializedSpecs/task/value": "runtime1021.model:nvidia-nemotron-3-5-embed-8b-bf16.specializedSpecs.task.value",
+    "specializedSpecs/output/value": "runtime1021.model:nvidia-nemotron-3-5-embed-8b-bf16.specializedSpecs.output.value",
+    "specializedSpecs/poolingOrScoring/value": "runtime1021.model:nvidia-nemotron-3-5-embed-8b-bf16.specializedSpecs.poolingOrScoring.value",
+    "specializedSpecs/features/value": "runtime1021.model:nvidia-nemotron-3-5-embed-8b-bf16.specializedSpecs.features.value",
+    "specializedSpecs/languages/value": "runtime1021.model:nvidia-nemotron-3-5-embed-8b-bf16.specializedSpecs.languages.value"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-3-5-embed-8b-bf16": {
+    "introduction": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.introduction",
+    "roleSummary": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.roleSummary",
+    "languageSummary": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.languageSummary",
+    "downloadSearchNote": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.downloadSearchNote",
+    "runGuides/0/conditions/0": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.runGuides.0.conditions.0",
+    "runGuides/1/label": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.runGuides.1.label",
+    "runGuides/1/instructions": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.runGuides.1.instructions",
+    "runGuides/1/conditions/0": "runtime1021.model-profile:nvidia-nemotron-3-5-embed-8b-bf16.runGuides.1.conditions.0"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-embed-8b-bf16-retrieval": {
+    "summary": "runtime1021.model-use:nvidia-nemotron-3-5-embed-8b-bf16-retrieval.summary",
+    "description": "runtime1021.model-use:nvidia-nemotron-3-5-embed-8b-bf16-retrieval.description",
+    "distinguishingFeature": "runtime1021.model-use:nvidia-nemotron-3-5-embed-8b-bf16-retrieval.distinguishingFeature",
+    "conditions/0": "runtime1021.model-use:nvidia-nemotron-3-5-embed-8b-bf16-retrieval.conditions.0"
+  },
+  "repository.workloads/workload:nvidia-nemotron-3-5-embed-8b-bf16-retrieval": {
+    "name": "runtime1021.workload:nvidia-nemotron-3-5-embed-8b-bf16-retrieval.name"
+  },
+  "repository.specializedAssessments/specialized-assessment:nvidia-nemotron-3-5-embed-8b-bf16": {
+    "metricName": "runtime1021.specialized-assessment:nvidia-nemotron-3-5-embed-8b-bf16.metricName",
+    "limitations/0": "runtime1021.specialized-assessment:nvidia-nemotron-3-5-embed-8b-bf16.limitations.0"
+  },
+  "repository.models/model:minicpm-v-4-7-1b": {
+    "totalParametersB/note": "record.tables1024.001",
+    "parameterCounts/0/label": "record.tables1024.002",
+    "parameterCounts/1/label": "record.tables1024.003"
+  },
+  "repository.models/model:minicpm-v-4-7-35b-a3b": {
+    "parameterCounts/0/label": "record.tables1024.003"
+  },
+  "repository.models/model:vllm-sr-d3-nano": {
+    "declaredContext/note": "record.tables1024.004",
+    "parameterCounts/0/label": "record.tables1024.003",
+    "specializedSpecs/task/value": "record.tables1024.005",
+    "specializedSpecs/output/value": "record.tables1024.006",
+    "specializedSpecs/features/value": "record.tables1024.007",
+    "specializedSpecs/languages/value": "record.tables1024.008"
+  },
+  "repository.models/model:vllm-sr-d3-mini": {
+    "declaredContext/note": "record.tables1024.004",
+    "parameterCounts/0/label": "record.tables1024.003",
+    "specializedSpecs/task/value": "record.tables1024.005",
+    "specializedSpecs/output/value": "record.tables1024.006",
+    "specializedSpecs/features/value": "record.tables1024.007",
+    "specializedSpecs/languages/value": "record.tables1024.008"
+  },
+  "repository.models/model:vllm-sr-d3-flash": {
+    "declaredContext/note": "record.tables1024.004",
+    "parameterCounts/0/label": "record.tables1024.003",
+    "specializedSpecs/task/value": "record.tables1024.005",
+    "specializedSpecs/output/value": "record.tables1024.006",
+    "specializedSpecs/features/value": "record.tables1024.007",
+    "specializedSpecs/languages/value": "record.tables1024.008"
+  },
+  "repository.models/model:vllm-sr-d3": {
+    "declaredContext/note": "record.tables1024.004",
+    "parameterCounts/0/label": "record.tables1024.003",
+    "specializedSpecs/task/value": "record.tables1024.005",
+    "specializedSpecs/output/value": "record.tables1024.006",
+    "specializedSpecs/features/value": "record.tables1024.007",
+    "specializedSpecs/languages/value": "record.tables1024.008"
+  },
+  "repository.models/model:nvidia-nemotron-3-5-bolt-e4b": {
+    "parameterCounts/0/label": "record.tables1024.009",
+    "parameterCounts/1/label": "record.tables1024.003"
+  },
+  "repository.models/model:nvidia-nemotron-3-5-rerank-8b-bf16": {
+    "declaredContext/note": "record.tables1024.010",
+    "parameterCounts/0/label": "record.tables1024.003",
+    "specializedSpecs/task/value": "record.tables1024.011",
+    "specializedSpecs/output/value": "record.tables1024.012",
+    "specializedSpecs/poolingOrScoring/value": "record.tables1024.013",
+    "specializedSpecs/features/value": "record.tables1024.014",
+    "specializedSpecs/languages/value": "record.tables1024.015"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11821": {
+    "targetScenario/value": "record.tables1024.017",
+    "backendSummary/value": "record.tables1024.018",
+    "selectionCaveat": "record.tables1024.019"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11822": {
+    "targetScenario/value": "record.tables1024.020",
+    "backendSummary/value": "record.tables1024.021",
+    "selectionCaveat": "record.tables1024.022"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11826": {
+    "targetScenario/value": "record.tables1024.023",
+    "backendSummary/value": "record.tables1024.024",
+    "selectionCaveat": "record.tables1024.025"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11828": {
+    "targetScenario/value": "record.tables1024.026",
+    "backendSummary/value": "record.tables1024.027",
+    "selectionCaveat": "record.tables1024.028"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11829": {
+    "targetScenario/value": "record.tables1024.029",
+    "backendSummary/value": "record.tables1024.030",
+    "selectionCaveat": "record.tables1024.031"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11835": {
+    "targetScenario/value": "record.tables1024.032",
+    "backendSummary/value": "record.tables1024.033",
+    "selectionCaveat": "record.tables1024.034"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11838": {
+    "targetScenario/value": "record.tables1024.035",
+    "backendSummary/value": "record.tables1024.036",
+    "selectionCaveat": "record.tables1024.037"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11847": {
+    "targetScenario/value": "record.tables1024.038",
+    "backendSummary/value": "record.tables1024.039",
+    "selectionCaveat": "record.tables1024.040"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-40-9": {
+    "offlineOperation/note": "catchup1017.36c6b4549e163d",
+    "targetScenario/value": "record.tables1024.041",
+    "backendSummary/value": "record.tables1024.042",
+    "selectionCaveat": "record.tables1024.043"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-40-10": {
+    "offlineOperation/note": "catchup1017.36c6b4549e163d",
+    "targetScenario/value": "record.tables1024.044",
+    "backendSummary/value": "record.tables1024.045",
+    "selectionCaveat": "record.tables1024.046"
+  },
+  "repository.modelProfiles/model-profile:minicpm-v-4-7-1b": {
+    "introduction": "record.tables1024.047",
+    "roleSummary": "record.tables1024.048",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.049",
+    "runGuides/1/conditions/0": "record.tables1024.049",
+    "runGuides/1/conditions/1": "record.tables1024.050",
+    "downloadSearchNote": "record.tables1024.049"
+  },
+  "repository.modelProfiles/model-profile:minicpm-v-4-7-35b-a3b": {
+    "introduction": "record.tables1024.051",
+    "roleSummary": "record.tables1024.048",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.049",
+    "runGuides/1/conditions/0": "record.tables1024.049",
+    "runGuides/1/conditions/1": "record.tables1024.050",
+    "downloadSearchNote": "record.tables1024.049"
+  },
+  "repository.modelProfiles/model-profile:vllm-sr-d3-nano": {
+    "introduction": "record.tables1024.007",
+    "roleSummary": "record.tables1024.005",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.052",
+    "runGuides/1/conditions/0": "record.tables1024.052",
+    "runGuides/2/conditions/0": "record.tables1024.052",
+    "downloadSearchNote": "record.tables1024.052"
+  },
+  "repository.modelProfiles/model-profile:vllm-sr-d3-mini": {
+    "introduction": "record.tables1024.007",
+    "roleSummary": "record.tables1024.005",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.052",
+    "runGuides/1/conditions/0": "record.tables1024.052",
+    "runGuides/2/conditions/0": "record.tables1024.052",
+    "downloadSearchNote": "record.tables1024.052"
+  },
+  "repository.modelProfiles/model-profile:vllm-sr-d3-flash": {
+    "introduction": "record.tables1024.007",
+    "roleSummary": "record.tables1024.005",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.052",
+    "runGuides/1/conditions/0": "record.tables1024.052",
+    "runGuides/2/conditions/0": "record.tables1024.052",
+    "downloadSearchNote": "record.tables1024.052"
+  },
+  "repository.modelProfiles/model-profile:vllm-sr-d3": {
+    "introduction": "record.tables1024.007",
+    "roleSummary": "record.tables1024.005",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.052",
+    "runGuides/1/conditions/0": "record.tables1024.052",
+    "runGuides/2/conditions/0": "record.tables1024.052",
+    "downloadSearchNote": "record.tables1024.052"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-3-5-bolt-e4b": {
+    "introduction": "record.tables1024.053",
+    "roleSummary": "record.tables1024.054",
+    "distinguishingFeatures/0": "record.tables1024.055",
+    "languageSummary": "record.tables1024.008",
+    "runGuides/0/conditions/0": "record.tables1024.046",
+    "runGuides/0/conditions/1": "record.tables1024.050",
+    "runGuides/1/conditions/0": "record.tables1024.046",
+    "runGuides/2/conditions/0": "record.tables1024.046",
+    "downloadSearchNote": "record.tables1024.046"
+  },
+  "repository.modelProfiles/model-profile:nvidia-nemotron-3-5-rerank-8b-bf16": {
+    "introduction": "record.tables1024.056",
+    "roleSummary": "record.tables1024.011",
+    "languageSummary": "record.tables1024.015",
+    "runGuides/0/conditions/0": "record.tables1024.014",
+    "runGuides/0/conditions/1": "record.tables1024.050",
+    "runGuides/1/conditions/0": "record.tables1024.014",
+    "runGuides/2/conditions/0": "record.tables1024.014",
+    "downloadSearchNote": "record.tables1024.014"
+  },
+  "repository.modelUseGuidance/model-use:minicpm-v-4-7-1b:document-vision": {
+    "summary": "record.tables1024.048",
+    "description": "record.tables1024.047",
+    "distinguishingFeature": "record.tables1024.048",
+    "conditions/0": "record.tables1024.049"
+  },
+  "repository.modelUseGuidance/model-use:minicpm-v-4-7-1b:structured-extraction": {
+    "summary": "record.tables1024.048",
+    "description": "record.tables1024.047",
+    "distinguishingFeature": "record.tables1024.048",
+    "conditions/0": "record.tables1024.049"
+  },
+  "repository.modelUseGuidance/model-use:minicpm-v-4-7-35b-a3b:document-vision": {
+    "summary": "record.tables1024.048",
+    "description": "record.tables1024.051",
+    "distinguishingFeature": "record.tables1024.048",
+    "conditions/0": "record.tables1024.049"
+  },
+  "repository.modelUseGuidance/model-use:minicpm-v-4-7-35b-a3b:structured-extraction": {
+    "summary": "record.tables1024.048",
+    "description": "record.tables1024.051",
+    "distinguishingFeature": "record.tables1024.048",
+    "conditions/0": "record.tables1024.049"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3-nano:structured-extraction": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3-nano:agents-tools": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3-mini:structured-extraction": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3-mini:agents-tools": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3-flash:structured-extraction": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3-flash:agents-tools": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3:structured-extraction": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:vllm-sr-d3:agents-tools": {
+    "summary": "record.tables1024.005",
+    "description": "record.tables1024.007",
+    "distinguishingFeature": "record.tables1024.005",
+    "conditions/0": "record.tables1024.052"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-e4b:text-work": {
+    "summary": "record.tables1024.054",
+    "description": "record.tables1024.053",
+    "distinguishingFeature": "record.tables1024.054",
+    "conditions/0": "record.tables1024.046"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-e4b:agents-tools": {
+    "summary": "record.tables1024.054",
+    "description": "record.tables1024.053",
+    "distinguishingFeature": "record.tables1024.054",
+    "conditions/0": "record.tables1024.046"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-bolt-e4b:reasoning-analysis": {
+    "summary": "record.tables1024.054",
+    "description": "record.tables1024.053",
+    "distinguishingFeature": "record.tables1024.054",
+    "conditions/0": "record.tables1024.046"
+  },
+  "repository.modelUseGuidance/model-use:nvidia-nemotron-3-5-rerank-8b-bf16:enterprise-rag": {
+    "summary": "record.tables1024.011",
+    "description": "record.tables1024.056",
+    "distinguishingFeature": "record.tables1024.011",
+    "conditions/0": "record.tables1024.014"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-bf16": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-int4": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-awq": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gptq": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-f16": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-iq3-m": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-iq3-xs": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-iq4-nl": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-iq4-xs": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q4-0": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q4-1": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q4-k-m": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q4-k-s": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q5-0": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q5-1": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q5-k-m": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q5-k-s": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q6-k": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-1b-gguf-q8-0": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-bf16": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-int4": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-awq": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gptq": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-fp8": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-f16": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq3-m": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq3-xs": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq4-nl": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq4-xs": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-0": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-1": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-k-m": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-k-s": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-0": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-1": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-k-m": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-k-s": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q6-k": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q8-0": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:minicpm-v-4-7-35b-a3b-gguf-mix-q3gud-im": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-nano-bf16": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-nano-ollama": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-mini-bf16": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-mini-ollama": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-flash-bf16": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-flash-ollama": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-bf16": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:vllm-sr-d3-ollama": {
+    "scopeNote": "record.tables1024.052"
+  },
+  "repository.artifactListings/artifact-listing:nvidia-nemotron-3-5-bolt-e4b-bf16": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.artifactListings/artifact-listing:nvidia-nemotron-3-5-bolt-e4b-q4-k-m": {
+    "scopeNote": "record.tables1024.046"
+  },
+  "repository.artifactListings/artifact-listing:nvidia-nemotron-3-5-bolt-e4b-ollama-q4-k-m": {
+    "scopeNote": "record.tables1024.046"
+  },
+  "repository.artifactListings/artifact-listing:nvidia-nemotron-3-5-bolt-e4b-ollama-q8-0": {
+    "scopeNote": "record.tables1024.046"
+  },
+  "repository.artifactListings/artifact-listing:nvidia-nemotron-3-5-bolt-e4b-ollama-bf16": {
+    "scopeNote": "record.tables1024.046"
+  },
+  "repository.artifactListings/artifact-listing:nvidia-nemotron-3-5-rerank-8b-bf16-bf16": {
+    "scopeNote": "record.tables1024.050"
+  },
+  "repository.workloads/workload:nvidia-nemotron-3-5-rerank-8b-bf16-reranking": {
+    "name": "record.tables1024.rerank-workload"
+  },
+  "repository.specializedAssessments/specialized-assessment:nvidia-nemotron-3-5-rerank-8b-bf16": {
+    "metricName": "record.tables1024.rerank-metric",
+    "limitations/0": "record.tables1024.rerank-quality"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11865": {
+    "targetScenario/value": "record.runtime1025.01",
+    "backendSummary/value": "record.runtime1025.02",
+    "selectionCaveat": "record.runtime1025.03"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11858": {
+    "targetScenario/value": "record.runtime1025.04",
+    "backendSummary/value": "record.runtime1025.05",
+    "selectionCaveat": "record.runtime1025.06"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b11870": {
+    "targetScenario/value": "record.runtime1025.07",
+    "backendSummary/value": "record.runtime1025.08",
+    "selectionCaveat": "record.runtime1025.09"
   }
 }

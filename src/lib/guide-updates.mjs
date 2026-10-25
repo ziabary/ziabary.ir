@@ -7,6 +7,96 @@
 // Dates record additions/changes to our dataset, not the product's release date.
 /** @type {GuideUpdate[]} */
 export const guideUpdates = [
+  {
+    id: 'llama1025', guide: 'llm', date: '2026-10-25', kind: 'software', target: 'llama.cpp',
+    copy: {
+      fa: { title: 'اصلاح RPC/RDMA و پشتیبانی آزمایشی DeepSeek در llama.cpp', summary: 'b11865 کنترل اندازهٔ دریافت RDMA، b11858 محدودیت tensor split برای mellum/flint و b11870 پشتیبانی deepseek41 را ثبت می‌کند. مسیر DeepSeek‑1017 همچنان نیازمند آزمون است؛ GGUF رسمی یا حافظهٔ تأییدشده اضافه نشده است.' },
+      en: { title: 'RPC/RDMA fix and experimental DeepSeek support in llama.cpp', summary: 'Added b11865 RDMA receive bounds, b11858 tensor-split restrictions for mellum/flint and b11870 deepseek41 support. DeepSeek‑1017 still needs validation; no official GGUF or measured memory requirement was added.' },
+      es: { title: 'Corrección RPC/RDMA y soporte experimental DeepSeek en llama.cpp', summary: 'Se añadieron el control RDMA de b11865, las restricciones tensor split de b11858 para mellum/flint y deepseek41 en b11870. DeepSeek‑1017 requiere validación; no se añadió GGUF oficial ni memoria medida.' }
+    }
+  },
+  {
+    id: 'miniv47', guide: 'llm', date: '2026-10-24', kind: 'model', target: 'model:minicpm-v-4-7-1b',
+    copy: {
+      fa: { title: 'دو مدل MiniCPM-V 4.7 اضافه شدند', summary: 'نسخه‌های 1B و 35B-A3B با ورودی تصویر و ویدئو و قالب‌های رسمی وزن ثبت شدند؛ حجم فایل و projector از حافظهٔ اجرا جداست و کیفیت فارسی ارزیابی نشده است.' },
+      en: { title: 'Two MiniCPM-V 4.7 models added', summary: 'Added 1B and 35B-A3B with image/video input and official weight formats. File and projector sizes are separate from runtime memory; Persian quality is unmeasured.' },
+      es: { title: 'Añadidos dos modelos MiniCPM-V 4.7', summary: 'Se añadieron 1B y 35B-A3B con entrada de imagen/vídeo y pesos oficiales. Los tamaños de archivo y proyector no equivalen a memoria de ejecución; no se evaluó el persa.' }
+    }
+  },
+  {
+    id: 'd31024', guide: 'llm', date: '2026-10-24', kind: 'model', target: 'model:vllm-sr-d3-nano',
+    copy: {
+      fa: { title: 'چهار مدل تصمیم d3 در جدول', summary: 'd3-nano، mini، flash و d3 برای طبقه‌بندی، مسیریابی و امتیاز احتمالاتی ثبت شدند. خروجی آن‌ها متن آزاد نیست؛ حافظهٔ اجرا و کیفیت فارسی اندازه‌گیری نشده‌اند.' },
+      en: { title: 'Four d3 decision models in the catalog', summary: 'Added d3-nano, mini, flash and d3 for classification, routing and probabilistic scoring. They do not generate free text; runtime memory and Persian quality are unmeasured.' },
+      es: { title: 'Cuatro modelos de decisión d3 en el catálogo', summary: 'Se añadieron d3-nano, mini, flash y d3 para clasificación, enrutamiento y puntuación probabilística. No generan texto libre; no se midieron memoria ni calidad en persa.' }
+    }
+  },
+  {
+    id: 'nemoe4b', guide: 'llm', date: '2026-10-24', kind: 'model', target: 'model:nvidia-nemotron-3-5-bolt-e4b',
+    copy: {
+      fa: { title: 'Nemotron 3.5 Bolt E4B با وزن عمومی', summary: 'وزن BF16، فایل GGUF با حجم واقعی 6.18GB و سرویس API ثبت شدند. مقدار پایه متن و 64K است؛ ادعای تصویر و 128K بستهٔ Ollama جدا و نیازمند تطبیق باقی می‌ماند.' },
+      en: { title: 'Nemotron 3.5 Bolt E4B with public weights', summary: 'Added BF16 weights, the actual 6.18GB GGUF and the API service. The base specification is text and 64K; Ollama’s image/128K package claim remains separate and unresolved.' },
+      es: { title: 'Nemotron 3.5 Bolt E4B con pesos públicos', summary: 'Se añadieron BF16, el GGUF real de 6,18GB y la API. La especificación base es texto y 64K; la afirmación de imagen/128K de Ollama queda separada y pendiente.' }
+    }
+  },
+  {
+    id: 'nemorank24', guide: 'llm', date: '2026-10-24', kind: 'model', target: 'model:nvidia-nemotron-3-5-rerank-8b-bf16',
+    copy: {
+      fa: { title: 'بازرتبه‌بند چندوجهی Nemotron 3.5', summary: 'Rerank 8B با وزن رسمی و زمینهٔ 32K ثبت شد. مسیر تصویر به Transformers 5.20.0 یا /classify در vLLM 0.32.0 نیاز دارد؛ امتیاز مستقل فارسی منتشر نشده است.' },
+      en: { title: 'Nemotron 3.5 multimodal reranker', summary: 'Added Rerank 8B with official weights and 32K context. Image inputs need Transformers 5.20.0 or /classify in vLLM 0.32.0; no separate Persian score is published.' },
+      es: { title: 'Reranker multimodal Nemotron 3.5', summary: 'Se añadió Rerank 8B con pesos oficiales y contexto 32K. Las imágenes requieren Transformers 5.20.0 o /classify en vLLM 0.32.0; no hay puntuación persa independiente.' }
+    }
+  },
+  {
+    id: 'runt1024', guide: 'llm', date: '2026-10-24', kind: 'software', target: 'llama.cpp',
+    copy: {
+      fa: { title: 'اصلاحات llama.cpp و Ollama 0.40.10', summary: 'هشت پیش‌انتشار llama.cpp برای SYCL، DFlash، OCR، صوت، rerank، زمان‌سنج Windows و HIP ثبت شدند؛ Ollama 0.40.9 و 0.40.10 با محدودیت‌های هر مسیر افزوده شدند. آزمون اجرای محلی انجام نشده است.' },
+      en: { title: 'llama.cpp fixes and Ollama 0.40.10', summary: 'Added eight llama.cpp prereleases covering SYCL, DFlash, OCR, audio, rerank, Windows timers and HIP, plus Ollama 0.40.9/0.40.10 with scoped limitations. No local runtime test was run.' },
+      es: { title: 'Correcciones de llama.cpp y Ollama 0.40.10', summary: 'Se añadieron ocho versiones preliminares de llama.cpp para SYCL, DFlash, OCR, audio, rerank, temporizadores Windows e HIP, y Ollama 0.40.9/0.40.10 con sus límites. No hubo prueba local.' }
+    }
+  },
+{
+  "id": "llama1021",
+  "guide": "llm",
+  "date": "2026-10-21",
+  "kind": "software",
+  "target": "llama.cpp",
+  "copy": {
+    "fa": {
+      "title": "اصلاح تصویر LFM و مسیر Embed در llama.cpp",
+      "summary": "b11774 پردازش تصویر LFM را با مرجع همسو می‌کند؛ b11778 مسیر آزمایشی Nemotron Embed را می‌افزاید. شرط تبدیل mmproj و حدود آزمون‌ها در جدول آمده‌اند."
+    },
+    "en": {
+      "title": "LFM image fix and Embed route in llama.cpp",
+      "summary": "b11774 aligns LFM image preprocessing with the reference; b11778 adds an experimental Nemotron Embed route. The table explains mmproj conversion and test limits."
+    },
+    "es": {
+      "title": "Corrección de imagen LFM y ruta Embed en llama.cpp",
+      "summary": "b11774 alinea el procesamiento LFM con la referencia; b11778 añade la ruta experimental Nemotron Embed. La tabla detalla la conversión mmproj y los límites de las pruebas."
+    }
+  }
+},
+{
+  "id": "nemoembed21",
+  "guide": "llm",
+  "date": "2026-10-21",
+  "kind": "model",
+  "target": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+  "copy": {
+    "fa": {
+      "title": "دو بردارساز Nemotron 3.5 اضافه شدند",
+      "summary": "Embed 1B و 8B با وزن رسمی BF16 ثبت شدند. مسیر llama.cpp نیازمند تبدیل کاربر به GGUF است؛ آزمون تطبیق منتشرشده فقط متن 1B را پوشش می‌دهد."
+    },
+    "en": {
+      "title": "Two Nemotron 3.5 embedders added",
+      "summary": "Added Embed 1B and 8B with official BF16 weights. The llama.cpp route requires user-converted GGUF; the published comparison covers only 1B text."
+    },
+    "es": {
+      "title": "Añadidos dos modelos Nemotron 3.5 Embed",
+      "summary": "Embed 1B y 8B incluyen pesos BF16 oficiales. La ruta llama.cpp requiere convertir a GGUF; la comparación publicada solo cubre texto de 1B."
+    }
+  }
+},
 {
   "id": "sgl0522",
   "guide": "llm",

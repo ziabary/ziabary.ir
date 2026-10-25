@@ -2342,7 +2342,7 @@ softwareReleases.push({
   "productId": "software-product:llama-cpp",
   "version": "v0.5.0",
   "releasedOn": "2026-09-23",
-  "lastReviewedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-21",
   "roles": [
     "inference-engine-library",
     "api-server"
@@ -2388,44 +2388,24 @@ softwareReleases.push({
   "evidenceIds": [
     "evidence:llama-cpp-v0-5-0-release",
     "evidence:llama-cpp-v0-5-0-rpc",
-    "evidence:llama-cpp-b11160-vulkan",
-    "evidence:llama-cpp-vulkan-27952",
     "evidence:llama-cpp-v0-5-0-license",
-    "evidence:llama-cpp-v0-5-0-rpc-header",
-    "evidence:sep26-release-json",
-    "evidence:sep26-commit-json",
-    "evidence:llama-cpp-b11223-release",
-    "evidence:llama-cpp-rank-28876",
-    "evidence:llama-cpp-b11224-release",
-    "evidence:llama-cpp-vulkan-28956",
-    "evidence:llama-cpp-b11240-release",
-    "evidence:llama-cpp-b11262",
-    "evidence:llama-cpp-avx512-29545",
-    "evidence:llama-cpp-b11279-release",
-    "evidence:llama-cpp-glm-flash-27773",
-    "evidence:llama-cpp-glm-flash-race-29745"
+    "evidence:llama-cpp-v0-5-0-rpc-header"
   ],
-  "selectionCaveat": "یادداشت مستقل آزمایشی، ۳۰ سپتامبر ۲۰۲۶: b11279 پشتیبانی اولیهٔ GLM-5.3-Flash را اضافه کرد (#27773). پس از ادغام، data race در آزمون CPU/ThreadSanitizer گزارش و اصلاح #29745 جداگانه ادغام شد؛ b11279 شامل این اصلاح بعدی نیست. برای آزمایش، وجود اصلاح را بررسی و صحت خروجی را بازآزمایی کنید. این خبر تأیید پشتیبانی GLM-5.3-BF16، قابلیت نسخهٔ پایدار v0.5.0 یا پیشنهاد پیش‌فرض ویزارد نیست؛ آزمون محلی انجام نشده است. پیش‌انتشار b11262؛ اصلاح صحت محاسبه در CPU. در مسیر AVX512-FP16، انباشت FP16 در dot productهای F16 ممکن بود overflow کند و logits متفاوتی بدهد؛ b11262 انباشت را به FP32 منتقل می‌کند. برای این مسیر، خروجی buildهای قدیمی‌تر را پیش از اتکا روی b11262+ حاوی اصلاح #29545 بازآزمایی کنید. این اصلاح شاهد افزایش سرعت نیست و پیش‌انتشار، انتخاب پیش‌فرض تولیدی نمی‌شود. هشدار صحت محاسبه؛ یادداشت مستقل b11224 — پیش‌انتشار/آزمایشی، ۲۸ سپتامبر ۲۰۲۶: در buildهای قدیمی فاقد اصلاح #28956، برخی مسیرهای Vulkan در mul_mat و mul_mat_id روی viewهای strided از cache یا expertها ممکن است دادهٔ اشتباه بخوانند. نویسندهٔ PR حلقهٔ بی‌پایان decoder در SheetSage2 و خطا در مسیر Qwen3 AR با --no-fa را گزارش کرده است؛ این نتیجه به همهٔ مدل‌ها یا GPUها تعمیم ندارد. برای این workloadها، پیش از اتکا به خروجی، روی b11224+ حاوی اصلاح بازآزمایی و با CPU/CUDA تحت تنظیمات یکسان و رواداری عددی مشخص مقایسه کنید. این اصلاح صحت محاسبه است، نه شاهد افزایش سرعت؛ قابلیت پایدار v0.5.0 یا تأیید آمادگی تولیدی نیز نیست. پیش‌انتشار انتخاب پیش‌فرض تولیدی نمی‌شود. پایدار؛ RPC major از ۶ در v0.4.1 به ۷ رسیده است. major کلاینت و همهٔ سرورها باید برابر باشد و minor سرور از کلاینت بالاتر نباشد؛ هماهنگ‌کردن build دو سمت توصیه می‌شود. v0.4.1 و v0.5.0 را در یک اتصال RPC مخلوط نکنید. قابلیت‌های nightly به این نسخه نسبت داده نشده‌اند. یادداشت جداگانهٔ build آزمایشی b11160، منتشرشده در ۲۴ سپتامبر ۲۰۲۶: Vulkan INT8 coopmat1 برای RDNA3 (از جمله آزمون ناشر روی RDNA3.5) و RDNA4؛ نیازمند build دارای cooperative matrix و پشتیبانی INT8 در درایور/دستگاه، با GGML_VK_DISABLE_COOPMAT غیرفعال‌نشده. قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. روی RDNA4 مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID نیز غیرفعال است. این قابلیت v0.5.0 یا افزایش سرعت همگانی AMD نیست. بازبینی یادداشت Vulkan/INT8 در b11160: آزمون صحت و سپس عملکرد را روی b11224+ حاوی #28956 تکرار کنید؛ نتیجهٔ build قدیمی شاهد قابل‌انتقال به build جدید نیست. یادداشت مستقل پیش‌انتشار b11182، منتشرشده در 2026-09-25، commit e9f824d8c0f011662a742c9d15d4aa18a41e32c0: دقت فعال‌سازی از فرادادهٔ مدل/تنسور پیروی می‌کند. در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 را به‌جای W4A4 اجرا کنند. GGML_CUDA_MMQ_PREC=auto سیاست فراداده را دنبال می‌کند؛ q4 و q8 override هستند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند و توصیهٔ پیش‌فرض نیست. وزن FP4 به‌معنای فعال‌سازی چهاربیتی نیست. این یادداشت قابلیت پایدار 0.5.0 یا تضمین سرعت و حافظهٔ کارت‌های دیگر نیست. یادداشت نسخه‌مند b11223 — پیش‌انتشار/آزمایشی، منتشرشده در ۲۷ سپتامبر ۲۰۲۶ ساعت ۲۲:۰۳ UTC (۲۸ سپتامبر تهران): llama-server با RANK و attention علّیِ فعال در زمان اجرا می‌تواند ورودی را بین چند physical batch تقسیم کند. قبلاً ورودی بزرگ‌تر از n_ubatch (پیش‌فرض ۵۱۲ توکن) رد می‌شد. cross-encoderهای دوطرفه همچنان باید در یک physical batch جا شوند. این تغییر به‌معنی تکمیل عمومی پشتیبانی چندوجهی /rerank و /embedding نیست. برای این مسیر به b11223+ حاوی اصلاح #28876 نیاز است؛ قابلیت به نسخهٔ پایدار v0.5.0 نسبت داده نمی‌شود و پیش‌انتشار انتخاب پیش‌فرض تولیدی نیست. آمادگی تولیدی و اثر عملکردی به آزمون هم‌شرایط نیاز دارند. یادداشت مستقل b11240، پیش‌انتشار ۲۸ سپتامبر ۲۰۲۶ ساعت ۲۲:۲۶ UTC: API ورودی تایپ‌شدهٔ متن، تصویر، صدا و ویدئو را می‌پذیرد؛ پشتیبانی هر نوع ورودی به مدل وابسته است. هر شیء {\"content\": [...]} یک embedding می‌سازد؛ bare content array پشتیبانی نمی‌شود و legacy API حفظ شده است. KV prefix reuse برای embedding/rerank غیرفعال است؛ ظرفیت و سرعت باید دوباره سنجیده شود. مسیر Qwen3-VL-Embedding-2B/8B آزمایشی است؛ این یادداشت پشتیبانی چندوجهی Qwen3-VL-Reranker یا کیفیت فارسی را تأیید نمی‌کند و قابلیت نسخهٔ پایدار v0.5.0 نیست.",
+  "selectionCaveat": "در اتصال RPC، major کلاینت و همهٔ سرورها باید یکسان باشد و minor سرور از کلاینت بالاتر نباشد. build دو سمت را هماهنگ کنید؛ v0.4.1 با پروتکل ۶ را به v0.5.0 با پروتکل ۷ وصل نکنید. اصلاح‌ها و قابلیت‌های پیش‌انتشار در ردیف نسخهٔ خودشان آمده‌اند.",
   "targetScenario": {
     "state": "known",
-    "value": "اجرای مدل و llama-server؛ نسخهٔ پایدار 0.5.0",
+    "value": "اجرای GGUF و سرویس‌دهی با نسخهٔ پایدار 0.5.0",
     "evidenceIds": [
       "evidence:llama-cpp-v0-5-0-release"
     ]
   },
   "backendSummary": {
     "state": "known",
-    "value": "RPC major 7؛ هماهنگی کلاینت و سرورها یادداشت مستقل پیش‌انتشار b11223: chunked prefill برای RANK در بازرتبه‌بندهای علّی Qwen3 و Qwen3-VL، با ورودی بلندتر از physical batch. یادداشت مستقل b11224 (آزمایشی): اصلاح stride و محدودهٔ دسترسی Vulkan برای صحت محاسبه روی viewهای strided؛ بدون ادعای افزایش سرعت. b11240+ · /v1/embeddings · ورودی چندوجهی OpenAI-style · پیش‌انتشار یادداشت مستقل b11279: پشتیبانی اولیه و آزمایشی GLM-5.3-Flash؛ نیازمند اصلاح بعدی #29745 و بازآزمایی.",
+    "value": "RPC پروتکل ۷؛ کلاینت و سرورها باید با یکدیگر سازگار باشند.",
     "evidenceIds": [
       "evidence:llama-cpp-v0-5-0-release",
-      "evidence:llama-cpp-b11223-release",
-      "evidence:llama-cpp-rank-28876",
-      "evidence:llama-cpp-b11224-release",
-      "evidence:llama-cpp-vulkan-28956",
-      "evidence:llama-cpp-b11240-release",
-      "evidence:llama-cpp-b11279-release",
-      "evidence:llama-cpp-glm-flash-27773",
-      "evidence:llama-cpp-glm-flash-race-29745"
+      "evidence:llama-cpp-v0-5-0-rpc",
+      "evidence:llama-cpp-v0-5-0-rpc-header"
     ]
   }
 });
@@ -2467,7 +2447,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ اصلاح صحت محاسبه در CPU با AVX512-FP16",
+    "value": "اصلاح صحت محاسبه در CPU با AVX512-FP16",
     "evidenceIds": [
       "evidence:llama-cpp-b11262",
       "evidence:llama-cpp-avx512-29545"
@@ -2582,7 +2562,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ اصلاح ایمنی حافظه و صحت اجرای IQ4_NL",
+    "value": "اصلاح ایمنی حافظه و صحت اجرای IQ4_NL",
     "evidenceIds": [
       "evidence:llama-cpp-b11310-release",
       "evidence:llama-cpp-b11310-fix"
@@ -2641,7 +2621,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ DFlash/DFlash2 در اجرای هم‌زمان",
+    "value": "DFlash/DFlash2 در اجرای هم‌زمان",
     "evidenceIds": [
       "evidence:llama-cpp-b11307-release",
       "evidence:llama-cpp-b11307-fix",
@@ -2703,7 +2683,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ پشتیبانی اولیهٔ Clef در /v1/systemone",
+    "value": "پشتیبانی اولیهٔ Clef در /v1/systemone",
     "evidenceIds": [
       "evidence:llama-cpp-b11371-clef"
     ]
@@ -2841,7 +2821,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ اصلاح دسترسی خارج از محدوده در Vulkan FlashAttention",
+    "value": "اصلاح دسترسی خارج از محدوده در Vulkan FlashAttention",
     "evidenceIds": [
       "evidence:llama-cpp-b11424-release",
       "evidence:llama-cpp-vulkan-29988"
@@ -2900,7 +2880,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ حداقل مسیر llama.cpp برای پنج مدل K2 Horizon با GGUF رسمی",
+    "value": "حداقل مسیر llama.cpp برای پنج مدل K2 Horizon با GGUF رسمی",
     "evidenceIds": [
       "evidence:llama-cpp-b11454-release",
       "evidence:ifm-k2-horizon-gguf-collection"
@@ -2960,7 +2940,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ حداقل نسخهٔ شامل هر دو اصلاح ایمنی حافظه و GELU در ModernBERT",
+    "value": "حداقل نسخهٔ شامل هر دو اصلاح ایمنی حافظه و GELU در ModernBERT",
     "evidenceIds": [
       "evidence:llama-cpp-b11529-release",
       "evidence:llama-cpp-acc-offset-30135",
@@ -3026,7 +3006,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ حداقل نسخهٔ شامل اصلاح ترتیب گراف embedding پس از رگرسیون mixed-batch",
+    "value": "حداقل نسخهٔ شامل اصلاح ترتیب گراف embedding پس از رگرسیون mixed-batch",
     "evidenceIds": [
       "evidence:llama-cpp-b11537-release",
       "evidence:llama-cpp-embedding-graph-30160"
@@ -3085,7 +3065,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ شتاب decode مدل‌های MoE با MXFP4 در backend SYCL",
+    "value": "شتاب decode مدل‌های MoE با MXFP4 در backend SYCL",
     "evidenceIds": [
       "evidence:llama-cpp-b11540-release",
       "evidence:llama-cpp-sycl-mxfp4-29809"
@@ -3144,7 +3124,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پیش‌انتشار؛ اصلاح جداسازی context در llama-server هنگام استفاده از id_slot ثابت و RAM prompt cache",
+    "value": "اصلاح جداسازی context در llama-server هنگام استفاده از id_slot ثابت و RAM prompt cache",
     "evidenceIds": [
       "evidence:llama-cpp-b11552-release",
       "evidence:llama-server-pinned-slot-30295"
@@ -3219,19 +3199,19 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "پایدار؛ MoE expert cache، LiliCorr و پشتیبانی مدل‌های فهرست انتشار",
+    "value": "سرویس‌دهی پایدار با کش expertهای MoE و LiliCorr",
     "evidenceIds": [
       "evidence:catchup1017-llama070"
     ]
   },
   "backendSummary": {
     "state": "known",
-    "value": "--moe-cache-mib برای expertهای میزبان؛ RPC پروتکل ۸ و tensor split",
+    "value": "با --moe-cache-mib برای expertهای میزبان کش تعیین می‌شود؛ این نسخه از RPC پروتکل ۸ و tensor split استفاده می‌کند.",
     "evidenceIds": [
       "evidence:catchup1017-llama070"
     ]
   },
-  "selectionCaveat": "دو سمت RPC باید با پروتکل ۸ هماهنگ باشند. پورت پیش‌فرض اجرای مستقیم 9931 و پورت داخلی Docker همچنان 8080 است. تغییر chat session API و قالب part-based بررسی شود. Beam b11701 و Granite b11700/11707 بعد از این نسخه‌اند؛ ضرایب سرعت/حافظهٔ release به تخمین‌گر تعمیم داده نشده‌اند.",
+  "selectionCaveat": "پیش از اتصال RPC، سازگاری پروتکل ۸ را در هر دو سمت بررسی کنید. پورت پیش‌فرض اجرای مستقیم 9931 است؛ پورت داخلی Docker همچنان 8080 می‌ماند. تغییر chat session API و قالب part-based ممکن است به اصلاح کلاینت نیاز داشته باشد. پشتیبانی Beam در b11701 و Granite در b11700/11707 پس از این نسخه اضافه شده است.",
   "evidenceIds": [
     "evidence:catchup1017-llama070"
   ],
@@ -3307,7 +3287,7 @@ softwareReleases.push({
   ],
   "targetScenario": {
     "state": "known",
-    "value": "پایدار / Latest؛ اجرای محلی یا مسیر ابری با شرایط مستقل",
+    "value": "پایدار تاریخی 0.40.5؛ نسخهٔ تازه‌تر جداگانه ثبت شده است",
     "evidenceIds": [
       "evidence:catchup1017-ollama405"
     ]
@@ -3326,7 +3306,7 @@ softwareReleases.push({
     "MLX"
   ],
   "releaseChannel": "stable",
-  "isLatest": true
+  "isLatest": false
 });
 softwareReleases.push({
   "id": "software-release:vllm-v0-31-0",
@@ -3620,7 +3600,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "llama.cpp b11722؛ پیش‌انتشار Flash Attention چنددنباله‌ای Hexagon",
+    "value": "Flash Attention چنددنباله‌ای روی Hexagon",
     "evidenceIds": [
       "evidence:llama-cpp-b11722-release",
       "evidence:llama-cpp-hexagon-30218"
@@ -3628,13 +3608,13 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "Hexagon: Flash Attention چنددنباله‌ای با --no-kv-unified از b11722؛ انتشار ۱۹ اکتبر ۲۰۲۶، ۰۱:۵۱ UTC.",
+    "value": "از b11722، Flash Attention می‌تواند چند دنباله را با --no-kv-unified روی Hexagon پردازش کند.",
     "evidenceIds": [
       "evidence:llama-cpp-b11722-release",
       "evidence:llama-cpp-hexagon-30218"
     ]
   },
-  "selectionCaveat": "PR #30218 آزمون Llama-3.2-1B و Qwen3.5-2B با Q4_0 روی IQ-9075 EVK / Hexagon v73 را گزارش می‌کند. این شاهد تأیید همهٔ Snapdragonها یا افزایش سرعت تک‌نشستی نیست. اطمینان به قابلیت بالا است؛ تعمیم کارایی محدود و آزمون محلی انجام نشده است. پیش‌انتشار و ثبت قابلیت، توصیهٔ ارتقای بی‌آزمون نیست؛ BOM/QPL اختصاصی OEM و کد داخلی ویزارد پوشش کامل ندارند.",
+  "selectionCaveat": "آزمون PR #30218 روی IQ-9075 EVK / Hexagon v73، با Llama-3.2-1B و Qwen3.5-2B در قالب Q4_0 انجام شده است. برای این مسیر --no-kv-unified لازم است. نتیجه، پشتیبانی همهٔ Snapdragonها یا افزایش سرعت تک‌نشستی را ثابت نمی‌کند؛ پیش از استفاده روی دستگاه خودتان آزمون کنید. آزمون محلی انجام نشده است.",
   "evidenceIds": [
     "evidence:llama-cpp-b11722-release",
     "evidence:llama-cpp-hexagon-30218"
@@ -3679,7 +3659,7 @@ softwareReleases.push({
   "maintenanceStatus": "active",
   "targetScenario": {
     "state": "known",
-    "value": "llama.cpp b11727؛ پیش‌انتشار جلوگیری از خرابی خاموش خروجی ابزارهای GGUF",
+    "value": "جلوگیری از خروجی خراب هنگام آماده‌سازی GGUF",
     "evidenceIds": [
       "evidence:llama-cpp-b11727-release",
       "evidence:llama-cpp-gguf-short-read-30497"
@@ -3687,15 +3667,1360 @@ softwareReleases.push({
   },
   "backendSummary": {
     "state": "known",
-    "value": "تشخیص خواندن ناقص دادهٔ تنسور و توقف با خطا در هر دو ابزار gguf-split و export-lora؛ انتشار ۱۹ اکتبر ۲۰۲۶، ۱۰:۲۳ UTC. کد نهایی PR #30497 و تگ b11727 کنترل شکست خواندن را در هر دو ابزار دارند.",
+    "value": "gguf-split و export-lora اکنون خواندن ناقص دادهٔ تنسور را تشخیص می‌دهند و با خطا متوقف می‌شوند.",
     "evidenceIds": [
       "evidence:llama-cpp-b11727-release",
       "evidence:llama-cpp-gguf-short-read-30497"
     ]
   },
-  "selectionCaveat": "در آماده‌سازی GGUF، فایل بریده‌شده نباید به خروجی ظاهراً موفق تبدیل شود؛ بررسی checksum ورودی همچنان لازم است. استفادهٔ مجدد از بافر می‌توانست بخش خوانده‌نشده را با دادهٔ تنسور قبلی پر کند. این اصلاح به معنی خراب‌بودن فایل‌های سالم یا بهبود کیفیت مدل نیست. اطمینان به ادغام و انتشار بالا است؛ آزمون محلی انجام نشده و این ثبت توصیهٔ ارتقای بی‌آزمون نیست.",
+  "selectionCaveat": "قبلاً بافرِ استفاده‌شده می‌توانست بخش خوانده‌نشده را با دادهٔ تنسور قبلی پر کند و خروجی ظاهراً موفق اما خراب بسازد. اصلاح #30497 جلوی این حالت را می‌گیرد؛ بررسی checksum ورودی همچنان لازم است. فایل‌های سالم و کیفیت مدل موضوع این اصلاح نیستند. آزمون محلی انجام نشده است.",
   "evidenceIds": [
     "evidence:llama-cpp-b11727-release",
     "evidence:llama-cpp-gguf-short-read-30497"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11774",
+  "productId": "software-product:llama-cpp",
+  "version": "b11774",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-21",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پردازش تصویر LFM2 و LFM2.5-VL مطابق مرجع Transformers",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11774-release",
+      "evidence:llama-cpp-lfm-30261",
+      "evidence:llama-cpp-lfm-30840"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "تصویر برای کاشی‌بندی روی شبکه کشیده می‌شود؛ تغییر اندازه و گردکردن ابعاد نیز از مرجع Python پیروی می‌کنند. برای ثبت تنظیمات processor_config.json، فایل mmproj را با مبدل جدید دوباره بسازید؛ این مسیر تغییرهای b11767 را هم دارد.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11774-release",
+      "evidence:llama-cpp-lfm-30261",
+      "evidence:llama-cpp-lfm-30840"
+    ]
+  },
+  "selectionCaveat": "در کد قبلی، چیدمان ۳۱٬۹۲۶ اندازه از حدود ۱۶٫۸ میلیون حالت تا 4096×4096 با مرجع تفاوت داشتند. در نمونهٔ 720×1600، تعداد توکن از 2812 به 2298 رسید. بسته به شکل تصویر، تعداد توکن و زمان اجرا می‌تواند کمتر یا بیشتر شود. آزمون‌های خروجی PR عمدتاً روی مدل‌های 450M و خانوادهٔ d1 هستند؛ برای LFM2.5-VL-3B مسیر آزمایشی ثبت شده و باید با تصاویر خودتان آزموده شود. این یادداشت به مدل DSpark نسبت داده نمی‌شود. آزمون محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11774-release",
+    "evidence:llama-cpp-lfm-30261",
+    "evidence:llama-cpp-lfm-30840"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11778",
+  "productId": "software-product:llama-cpp",
+  "version": "b11778",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-21",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "بردارسازی متن با Nemotron-3 و Nemotron-3.5 Embed",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11778-release",
+      "evidence:llama-cpp-nemotron-30877",
+      "evidence:llama-cpp-nemotron-30877-review"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "وزن BF16 مدل‌های Embed 1B/8B را می‌توان به GGUF تبدیل و با llama-embedding اجرا کرد. فایل حاصل تبدیل کاربر است؛ فایل GGUF رسمی آمادهٔ دریافت ثبت نشده است.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11778-release",
+      "evidence:llama-cpp-nemotron-30877",
+      "evidence:llama-cpp-nemotron-30877-review"
+    ]
+  },
+  "selectionCaveat": "آزمون منتشرشده برای یک ورودی متنی مدل 1B، شباهت کسینوسی 0.999847 با PyTorch را گزارش می‌کند. این عدد سنجهٔ کیفیت بازیابی نیست و صحت همهٔ ورودی‌ها را تضمین نمی‌کند؛ آزمون انتها‌به‌انتهای تصویر و مدل 8B در شواهد دیده نمی‌شود. این مسیر شامل Rerank-8B یا NVFP4 نیست. آزمون محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11778-release",
+    "evidence:llama-cpp-nemotron-30877",
+    "evidence:llama-cpp-nemotron-30877-review"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11160",
+  "productId": "software-product:llama-cpp",
+  "version": "b11160",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-09-24",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "مسیر Vulkan INT8 برای RDNA3 و RDNA4",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11160-vulkan",
+      "evidence:llama-cpp-vulkan-27952"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "coopmat1 با پشتیبانی cooperative matrix و INT8 در دستگاه و درایور؛ GGML_VK_DISABLE_COOPMAT نباید آن را غیرفعال کند.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11160-vulkan",
+      "evidence:llama-cpp-vulkan-27952"
+    ]
+  },
+  "selectionCaveat": "قالب‌ها: q4_0، q4_1، q5_0، q5_1، q8_0، q3_k، q4_k، q5_k، q6_k، mxfp4، nvfp4 و iq4_nl. در RDNA4، مسیر MUL_MAT برای q4_1، q5_1، q4_k، q5_k و nvfp4 فعال نیست؛ nvfp4 در MUL_MAT_ID هم غیرفعال است. آزمون ناشر شامل RDNA3.5 است، اما نتیجه به همهٔ GPUهای AMD تعمیم ندارد. برای اتکا به نتیجهٔ b11160، آزمون صحت و سپس کارایی را روی b11224+ دارای اصلاح #28956 تکرار کنید.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11160-vulkan",
+    "evidence:llama-cpp-vulkan-27952"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11182",
+  "productId": "software-product:llama-cpp",
+  "version": "b11182",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-09-25",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "انتخاب دقت فعال‌سازی FP4 از فرادادهٔ مدل",
+    "evidenceIds": [
+      "evidence:sep26-release-json",
+      "evidence:sep26-commit-json"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "در CUDA روی Blackwell، لایه‌های NVFP4/MXFP4 با سیاست W4A16 می‌توانند W4A8 اجرا شوند؛ وزن FP4 لزوماً فعال‌سازی چهاربیتی ندارد.",
+    "evidenceIds": [
+      "evidence:sep26-release-json",
+      "evidence:sep26-commit-json"
+    ]
+  },
+  "selectionCaveat": "GGML_CUDA_MMQ_PREC=auto از فراداده پیروی می‌کند؛ q4 و q8 دقت را تحمیل می‌کنند. q4 ممکن است پردازش prompt را سریع‌تر و دقت را کمتر کند، پس بدون آزمون انتخاب مناسبی برای پیش‌فرض نیست. این تغییر به نسخهٔ پایدار v0.5.0 تعلق ندارد.",
+  "evidenceIds": [
+    "evidence:sep26-release-json",
+    "evidence:sep26-commit-json"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11223",
+  "productId": "software-product:llama-cpp",
+  "version": "b11223",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-09-27",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "ورودی بلند برای بازرتبه‌بندهای علّی Qwen3 و Qwen3-VL",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11223-release",
+      "evidence:llama-cpp-rank-28876"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "از b11223+ با اصلاح #28876، ورودی RANK با attention علّی می‌تواند بین چند physical batch تقسیم شود.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11223-release",
+      "evidence:llama-cpp-rank-28876"
+    ]
+  },
+  "selectionCaveat": "قبلاً ورودی بزرگ‌تر از n_ubatch، با پیش‌فرض ۵۱۲ توکن، رد می‌شد. cross-encoderهای دوطرفه همچنان باید در یک physical batch جا شوند. این تغییر به معنی پشتیبانی کامل چندوجهی /rerank یا /embedding نیست؛ برای استقرار به آزمون هم‌شرایط نیاز دارد.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11223-release",
+    "evidence:llama-cpp-rank-28876"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11224",
+  "productId": "software-product:llama-cpp",
+  "version": "b11224",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-09-28",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "اصلاح خواندن داده در مسیرهای Vulkan با stride",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11224-release",
+      "evidence:llama-cpp-vulkan-28956"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "اصلاح #28956 خواندن داده در mul_mat و mul_mat_id را برای برخی viewهای cache و expert تصحیح می‌کند.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11224-release",
+      "evidence:llama-cpp-vulkan-28956"
+    ]
+  },
+  "selectionCaveat": "گزارش PR شامل حلقهٔ بی‌پایان SheetSage2 و خطای Qwen3 AR با --no-fa است. روی b11224+ صحت خروجی را با CPU/CUDA، تنظیمات یکسان و رواداری عددی مشخص مقایسه کنید. نتایج قدیمی b11160 هم به بازآزمایی نیاز دارند. این اصلاح شاهد افزایش سرعت یا خرابی همهٔ مدل‌ها نیست.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11224-release",
+    "evidence:llama-cpp-vulkan-28956"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11240",
+  "productId": "software-product:llama-cpp",
+  "version": "b11240",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-09-28",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "API چندوجهی برای بردارسازی Qwen3-VL-Embedding",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11240-release"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "از b11240+، مسیر /v1/embeddings ورودی تایپ‌شدهٔ OpenAI-style می‌پذیرد؛ نوع ورودی پشتیبانی‌شده به مدل وابسته است.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11240-release"
+    ]
+  },
+  "selectionCaveat": "هر شیء {\"content\": [...]} یک embedding می‌سازد؛ آرایهٔ content بدون این پوشش پذیرفته نمی‌شود و API قدیمی حفظ شده است. KV prefix reuse برای embedding/rerank غیرفعال است، پس ظرفیت و سرعت را دوباره بسنجید. مسیر Qwen3-VL-Embedding-2B/8B آزمایشی است و پشتیبانی چندوجهی Reranker را تأیید نمی‌کند.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11240-release"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11279",
+  "productId": "software-product:llama-cpp",
+  "version": "b11279",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-09-30",
+  "lastReviewedOn": "2026-10-21",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پشتیبانی اولیهٔ GLM-5.3-Flash",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11279-release",
+      "evidence:llama-cpp-glm-flash-27773",
+      "evidence:llama-cpp-glm-flash-race-29745"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "b11279 پشتیبانی اولیه را با #27773 اضافه کرد؛ برای آزمایش، اصلاح بعدی #29745 نیز لازم است.",
+    "evidenceIds": [
+      "evidence:llama-cpp-b11279-release",
+      "evidence:llama-cpp-glm-flash-27773",
+      "evidence:llama-cpp-glm-flash-race-29745"
+    ]
+  },
+  "selectionCaveat": "پس از ادغام، data race در CPU/ThreadSanitizer گزارش شد. b11279 اصلاح #29745 را ندارد؛ پیش از آزمایش، وجود آن را در build خود بررسی و صحت خروجی را دوباره بسنجید. این یادداشت پشتیبانی GLM-5.3-BF16 را تأیید نمی‌کند. آزمون محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:llama-cpp-b11279-release",
+    "evidence:llama-cpp-glm-flash-27773",
+    "evidence:llama-cpp-glm-flash-race-29745"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11821",
+  "productId": "software-product:llama-cpp",
+  "version": "b11821",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-22",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "اصلاح XMX اینتل برای batch کوتاه و تأیید speculative decoding",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11821",
+      "evidence:tables1024-llama-pr-29864"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "بازنویسی multi-column، هم‌ترازی ورودی و kernel ادغام gate/up؛ اصلاح NaN برای تعداد ردیف غیرمضرب چهار.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11821",
+      "evidence:tables1024-llama-pr-29864"
+    ]
+  },
+  "selectionCaveat": "بنچمارک منتشرشده محدود به Arc Pro B70 و oneAPI است؛ به همهٔ GPUهای اینتل تعمیم داده نمی‌شود. صحت و سرعت روی سخت‌افزار محلی آزموده نشده‌اند.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11821",
+    "evidence:tables1024-llama-pr-29864"
+  ],
+  "documentedBackends": [
+    "Intel SYCL / XMX"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11822",
+  "productId": "software-product:llama-cpp",
+  "version": "b11822",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-22",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "رفع abort اولین درخواست DFlash روی Qwen3.8-Flash-Next",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11822",
+      "evidence:tables1024-llama-pr-30927"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "جریان‌های residual پیش از ارائه به drafter به میانگین تبدیل می‌شوند؛ کف این مسیر DFlash، b11822 است.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11822",
+      "evidence:tables1024-llama-pr-30927"
+    ]
+  },
+  "selectionCaveat": "این شرط مخصوص DFlash است و به استنتاج عادی یا MTP تعمیم ندارد. آزمون اجرای محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11822",
+    "evidence:tables1024-llama-pr-30927"
+  ],
+  "documentedBackends": [
+    "DFlash / qwen4exp"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11826",
+  "productId": "software-product:llama-cpp",
+  "version": "b11826",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-22",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پشتیبانی موتور از MiniCPM-OCR 1.0",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11826",
+      "evidence:tables1024-llama-pr-30979"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "ثبت نوع مدل و projector با مسیر تبدیل MiniCPM-V 4.6؛ این تغییر به‌تنهایی انتشار وزن یا مجوز مدل را اثبات نمی‌کند.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11826",
+      "evidence:tables1024-llama-pr-30979"
+    ]
+  },
+  "selectionCaveat": "خروجی OCR ممکن است در reasoning_content قرار گیرد؛ برای content از --reasoning off یا reasoning_effort: \"none\" استفاده کنید. انتشار وزن و مجوز مدل از این اصلاح موتور قابل نتیجه‌گیری نیست.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11826",
+    "evidence:tables1024-llama-pr-30979"
+  ],
+  "documentedBackends": [
+    "mtmd / MiniCPM-OCR 1.0"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11828",
+  "productId": "software-product:llama-cpp",
+  "version": "b11828",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-22",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "حفظ مرز commitهای صوتی در Realtime API",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11828",
+      "evidence:tables1024-llama-pr-30994"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "هر commit پس از decode آخرین ردیف همان بخش تکمیل می‌شود؛ از ادغام commit مجاور یا نشت صدای بعدی جلوگیری می‌کند.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11828",
+      "evidence:tables1024-llama-pr-30994"
+    ]
+  },
+  "selectionCaveat": "دامنه فقط صوت بلادرنگ llama-server است؛ پشتیبانی مدل یا تخمین حافظه تغییر نمی‌کند. آزمون محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11828",
+    "evidence:tables1024-llama-pr-30994"
+  ],
+  "documentedBackends": [
+    "llama-server / Realtime API"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11829",
+  "productId": "software-product:llama-cpp",
+  "version": "b11829",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-22",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "اصلاح جایگزینی placeholder در قالب rerank",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11829",
+      "evidence:tables1024-llama-pr-30864"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "جایگزینی {query} و {document} فقط روی قالب اصلی انجام می‌شود؛ متن ورودی کاربر دوباره تفسیر نمی‌شود.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11829",
+      "evidence:tables1024-llama-pr-30864"
+    ]
+  },
+  "selectionCaveat": "اصلاح صحت مسیر rerank است؛ به معنی تغییر سیاست کلی امنیت یا کیفیت مدل نیست. آزمون محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11829",
+    "evidence:tables1024-llama-pr-30864"
+  ],
+  "documentedBackends": [
+    "llama-server / /v1/rerank"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11835",
+  "productId": "software-product:llama-cpp",
+  "version": "b11835",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-23",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "رفع شکست build در SYCL/oneDNN",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11835",
+      "evidence:tables1024-llama-pr-31014"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "ارسال device به mul_mat_uses_onednn؛ اصلاح regression با commit f64a498.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11835",
+      "evidence:tables1024-llama-pr-31014"
+    ]
+  },
+  "selectionCaveat": "این اصلاح ساخت است و پشتیبانی مدل، کوانتیزه یا نتیجهٔ کارایی تازه‌ای اثبات نمی‌کند. آزمون محلی انجام نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11835",
+    "evidence:tables1024-llama-pr-31014"
+  ],
+  "documentedBackends": [
+    "Intel SYCL / oneDNN"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11838",
+  "productId": "software-product:llama-cpp",
+  "version": "b11838",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-23",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "رفع سرریز زمان‌سنج سرویس طولانی‌مدت ویندوز",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11838",
+      "evidence:tables1024-llama-pr-30969"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "حذف ضرب میانی سرریزکننده در ggml_time_us؛ crash گزارش‌شده پس از حدود 10.5 روز رفع می‌شود.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11838",
+      "evidence:tables1024-llama-pr-30969"
+    ]
+  },
+  "selectionCaveat": "دامنه Windows و سرویس طولانی‌مدت است؛ موفقیت همهٔ بررسی‌های upstream یا آزمون استقامت محلی ادعا نمی‌شود.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11838",
+    "evidence:tables1024-llama-pr-30969"
+  ],
+  "documentedBackends": [
+    "Windows / ggml timers"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11847",
+  "productId": "software-product:llama-cpp",
+  "version": "b11847",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-24",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "رفع کامپایل BF16 WMMA روی gfx11/gfx12",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11847",
+      "evidence:tables1024-llama-pr-30885"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "تغییر نوع operand از __bf16 به short با الگوی بیتی یکسان؛ رفع شکست build روی gfx1150/1151 و gfx1200/1201 با HIP/ROCm و LLVM تازه.",
+    "evidenceIds": [
+      "evidence:tables1024-llama-b11847",
+      "evidence:tables1024-llama-pr-30885"
+    ]
+  },
+  "selectionCaveat": "برای این اهداف با toolchain تازه، b11847 یا جدیدتر؛ آزمون محلی نویسندهٔ PR فقط روی gfx1151 بوده است. همهٔ RDNA3/RDNA4 عملاً آزموده نشده‌اند؛ مشخصات GPU و حافظه تغییر نمی‌کند.",
+  "evidenceIds": [
+    "evidence:tables1024-llama-b11847",
+    "evidence:tables1024-llama-pr-30885"
+  ],
+  "documentedBackends": [
+    "HIP / ROCm / RDNA3 / RDNA4"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:ollama-v0-40-9",
+  "productId": "software-product:ollama",
+  "version": "v0.40.9",
+  "releasedOn": "2026-10-22",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server",
+    "model-manager"
+  ],
+  "environments": [
+    "desktop",
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local",
+    "cloud"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:v03-b5ce2f9cd14541cc7d"
+    ],
+    "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ollama/ollama/blob/v0.40.5/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-ollama405-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:tables1024-ollama-v0-40-9"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "پایدار تاریخی؛ d3، گفتار Phonon و Flint چندسکویی",
+    "evidenceIds": [
+      "evidence:tables1024-ollama-v0-40-9"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "d3 در /v1/systemone؛ Phonon در /v1/audio/speech روی Apple Silicon؛ Flint روی Linux و Windows؛ گزارش خطاهای stream در OpenAI/Anthropic.",
+    "evidenceIds": [
+      "evidence:tables1024-ollama-v0-40-9"
+    ]
+  },
+  "selectionCaveat": "Phonon در این نسخه فقط Apple Silicon است و مدل فارسی محسوب نمی‌شود. مسیر d3 خروجی تصمیم دارد، نه متن آزاد. خطای تولید دیگر نباید پس از خروجی ناقص در stream پنهان بماند؛ آزمون محلی انجام نشده است.",
+  "documentedBackends": [
+    "Ollama runtime",
+    "llama.cpp",
+    "MLX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": false
+});
+softwareReleases.push({
+  "id": "software-release:ollama-v0-40-10",
+  "productId": "software-product:ollama",
+  "version": "v0.40.10",
+  "releasedOn": "2026-10-23",
+  "lastReviewedOn": "2026-10-24",
+  "roles": [
+    "inference-engine-library",
+    "api-server",
+    "model-manager"
+  ],
+  "environments": [
+    "desktop",
+    "workstation",
+    "server"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local",
+    "cloud"
+  ],
+  "offlineOperation": {
+    "state": "known",
+    "value": true,
+    "evidenceIds": [
+      "evidence:v03-b5ce2f9cd14541cc7d"
+    ],
+    "note": "وزن‌ها و وابستگی‌ها از پیش محلی باشند؛ مسیرهای ابری، دریافت مدل و ابزارهای شبکه‌ای نیاز به اتصال دارند."
+  },
+  "license": {
+    "name": {
+      "state": "known",
+      "value": "MIT",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "url": {
+      "state": "known",
+      "value": "https://github.com/ollama/ollama/blob/v0.40.5/LICENSE",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "commercialUse": {
+      "state": "known",
+      "value": "allowed",
+      "evidenceIds": [
+        "evidence:catchup1017-ollama405-license"
+      ]
+    },
+    "restrictions": [],
+    "evidenceIds": [
+      "evidence:catchup1017-ollama405-license"
+    ]
+  },
+  "maintenanceStatus": "active",
+  "evidenceIds": [
+    "evidence:tables1024-ollama-v0-40-10"
+  ],
+  "targetScenario": {
+    "state": "known",
+    "value": "پایدار / Latest؛ E4B و DFlash افزوده شدند",
+    "evidenceIds": [
+      "evidence:tables1024-ollama-v0-40-10"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "nemotron-3.5-bolt:e4b با DFlash؛ قابلیت‌های d3، گفتار و Flint نسخهٔ 0.40.9 نیز حفظ می‌شوند.",
+    "evidenceIds": [
+      "evidence:tables1024-ollama-v0-40-10"
+    ]
+  },
+  "selectionCaveat": "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+  "documentedBackends": [
+    "Ollama runtime",
+    "llama.cpp",
+    "MLX"
+  ],
+  "releaseChannel": "stable",
+  "isLatest": true
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11865",
+  "productId": "software-product:llama-cpp",
+  "version": "b11865",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-24",
+  "lastReviewedOn": "2026-10-25",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "رفع سرریز بافر دریافت RPC/RDMA",
+    "evidenceIds": [
+      "evidence:llama-b11865-release",
+      "evidence:llama-pr-30399"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "در rdma_recv، دریافت بزرگ‌تر از فضای باقی‌ماندهٔ بافر پیش از memcpy رد می‌شود؛ جایگاه دریافت دوباره ثبت و اتصال بسته می‌شود.",
+    "evidenceIds": [
+      "evidence:llama-b11865-release",
+      "evidence:llama-pr-30399"
+    ]
+  },
+  "selectionCaveat": "دامنه فقط RPC روی RDMA است؛ این اصلاح به HTTP API تعمیم داده نمی‌شود. نویسندهٔ PR خطا و رفع آن را با ASan و SoftRoCE بازتولید کرده است؛ بهره‌برداری واقعی یا آزمون مستقل محلی تأیید نشده است.",
+  "evidenceIds": [
+    "evidence:llama-b11865-release",
+    "evidence:llama-pr-30399"
+  ],
+  "documentedBackends": [
+    "RPC/RDMA"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11858",
+  "productId": "software-product:llama-cpp",
+  "version": "b11858",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-24",
+  "lastReviewedOn": "2026-10-25",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "محدودیت tensor split برای mellum و flint",
+    "evidenceIds": [
+      "evidence:llama-b11858-release",
+      "evidence:llama-pr-31081"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "گزینهٔ --split-mode tensor برای mellum و flint غیرفعال شد؛ mistral4 از قبل ممنوع بود. بیشینهٔ موردنیاز مقیاس‌دهی MoE با برش جزئی ردیف به‌درستی محاسبه نمی‌شد.",
+    "evidenceIds": [
+      "evidence:llama-b11858-release",
+      "evidence:llama-pr-31081"
+    ]
+  },
+  "selectionCaveat": "این محدودیت برای همین معماری‌ها و همین روش تقسیم است؛ ممنوعیت همهٔ مدل‌های MoE یا همهٔ روش‌های چند GPU نیست. آزمون عملی مستقل روی چند GPU انجام نشده است.",
+  "evidenceIds": [
+    "evidence:llama-b11858-release",
+    "evidence:llama-pr-31081"
+  ],
+  "documentedBackends": [
+    "tensor split"
+  ]
+});
+softwareReleases.push({
+  "id": "software-release:llama-cpp-b11870",
+  "productId": "software-product:llama-cpp",
+  "version": "b11870",
+  "releaseChannel": "prerelease",
+  "releasedOn": "2026-10-25",
+  "lastReviewedOn": "2026-10-25",
+  "roles": [
+    "inference-engine-library",
+    "api-server"
+  ],
+  "environments": [
+    "server"
+  ],
+  "operatingSystems": [],
+  "hardwareKinds": [
+    "CPU",
+    "GPU"
+  ],
+  "localOrCloud": [
+    "local"
+  ],
+  "offlineOperation": {
+    "state": "unknown"
+  },
+  "license": {
+    "name": {
+      "state": "unknown"
+    },
+    "url": {
+      "state": "unknown"
+    },
+    "commercialUse": {
+      "state": "unknown"
+    }
+  },
+  "maintenanceStatus": "active",
+  "targetScenario": {
+    "state": "known",
+    "value": "پشتیبانی معماری DeepSeek-V4.1-Flash",
+    "evidenceIds": [
+      "evidence:llama-b11870-release",
+      "evidence:llama-pr-31086"
+    ]
+  },
+  "backendSummary": {
+    "state": "known",
+    "value": "معماری deepseek41 با commit 74bca39 افزوده شد؛ جدول Engram در مسیر تبدیل به BF16 می‌رود و مسیر MXFP8 این جدول حذف شده است.",
+    "evidenceIds": [
+      "evidence:llama-b11870-release",
+      "evidence:llama-pr-31086"
+    ]
+  },
+  "selectionCaveat": "پشتیبانی معماری، تأیید اجرای snapshot 1017 با artifact و backend مشخص نیست. GGUF رسمی، پشتیبانی مستقیم MXFP8، کیفیت فارسی، سرعت و حافظهٔ اجرا تأیید نشده‌اند؛ همهٔ بررسی‌های PR نیز موفق گزارش نشده‌اند.",
+  "evidenceIds": [
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
+  ],
+  "documentedBackends": [
+    "deepseek41",
+    "Engram BF16"
   ]
 });

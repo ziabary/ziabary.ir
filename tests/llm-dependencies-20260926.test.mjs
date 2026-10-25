@@ -61,9 +61,10 @@ test('prerelease is a scoped visible note and cannot become a wizard runtime def
  for(const locale of ['fa','en','es']){
   const {i,repo}=edition(locale),view=m['research-views'].createLlmResearchViews(i);
   const rows=view.enrichExistingRows(repo,m.adapters.createLlmAdapters(i).buildLlmViewRows(repo),'all')['software-products'];
-  const row=rows.find(x=>x.id==='software-release:llama-cpp-v0-5-0');
-  assert.match(row.cells['research-condition'].display,/b11182/);assert.match(row.cells['research-condition'].display,/b11160/);assert.match(row.cells['research-condition'].display,/GGML_CUDA_MMQ_PREC/);assert.match(row.cells['research-benefit'].display,/RPC/);
-  assert.ok(!repo.softwareReleases.some(x=>x.version==='b11182'));
+  const row=rows.find(x=>x.id==='software-release:llama-cpp-b11182');
+  assert.match(row.cells['software-version'].display,/b11182/);assert.match(row.cells['research-condition'].display,/GGML_CUDA_MMQ_PREC/);
+  assert.match(rows.find(x=>x.id==='software-release:llama-cpp-v0-5-0').cells['research-benefit'].display,/RPC/);
+  assert.equal(repo.softwareReleases.find(x=>x.version==='b11182').releaseChannel,'prerelease');
   for(const hardware of ['gpu','cpu']){const result=m.wizard.buildWizardResult(repo,{...answers,task:'writing',hardware},locale);assert.doesNotMatch(JSON.stringify(result.candidates),/b11182|GGML_CUDA_MMQ_PREC/);}
  }
 });

@@ -1,0 +1,8 @@
+{
+  "html_url": "https://github.com/ggml-org/llama.cpp/pull/30979",
+  "number": 30979,
+  "title": "mtmd : add MiniCPM-OCR 1.0 support",
+  "body": "## Overview\r\n\r\nMiniCPM-OCR 1.0 is the MiniCPM-V 4.6 stack with a different `model_type`, so\r\nthis only registers it: a new `PROJECTOR_TYPE_MINICPM_OCR_1_0` reusing\r\n`clip_graph_minicpmv4_6` and the 4.6 conversion path.\r\n\r\n## Additional information\r\n\r\nThe model writes its transcription inside the thinking block, so run with\r\n`--reasoning off` (or `reasoning_effort: \"none\"` per request) to get it in\r\n`content`. With the default `auto` the reply comes back as empty `content` and\r\nthe text lands in `reasoning_content`.\r\n\r\n## Requirements\r\n\r\n- I have read and agree with the [contributing guidelines](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md)\r\n- AI usage disclosure: YES — AI tools were used for part of the code changes.",
+  "merged_at": "2026-10-22T17:22:16Z",
+  "merge_commit_sha": "a08ab75ae74c36c15accc6c682a989a9e98dbfd2"
+}

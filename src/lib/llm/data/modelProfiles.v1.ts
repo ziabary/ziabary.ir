@@ -6827,13 +6827,33 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:sep26-base-readme-md"
       ]
+    },
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp b11774+ · آزمایشی",
+      "engineLabel": "llama.cpp b11774+",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11774",
+      "instructions": "از b11774 یا جدیدتر استفاده کنید. کاشی‌بندی، resize و گردکردن ابعاد با Transformers همسو شده‌اند. mmproj را با مبدل جدید و processor_config.json همین مدل دوباره بسازید تا پارامترهای تصویر در GGUF ثبت شوند.",
+      "conditions": [
+        "این مسیر برای مدل هدف LFM2.5-VL-3B آزمایشی است؛ تعداد توکن و زمان اجرا به شکل تصویر بستگی دارد. آزمون محلی انجام نشده و مدل DSpark جداست."
+      ],
+      "evidenceIds": [
+        "evidence:llama-cpp-b11774-release",
+        "evidence:llama-cpp-lfm-30261",
+        "evidence:llama-cpp-lfm-30840"
+      ],
+      "softwareReleaseId": "software-release:llama-cpp-b11774",
+      "compatibilityScope": "model"
     }
   ],
   "evidenceIds": [
     "evidence:sep26-base-api-json",
     "evidence:sep26-base-readme-md",
     "evidence:sep26-base-license",
-    "evidence:sep26-base-blog-html"
+    "evidence:sep26-base-blog-html",
+    "evidence:llama-cpp-b11774-release",
+    "evidence:llama-cpp-lfm-30261",
+    "evidence:llama-cpp-lfm-30840"
   ]
 });
 modelProfiles.push({
@@ -7770,7 +7790,8 @@ modelProfiles.push({
   "introduction": "snapshot مستقل ۱۷ اکتبر DeepSeek-V4.1-Flash با وزن Safetensors و مجوز MIT؛ ردیف و نتایج انتشار قبلی حفظ شده‌اند.",
   "roleSummary": "استدلال، کدنویسی، عامل و ورودی تصویری",
   "distinguishingFeatures": [
-    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است."
+    "قالب Jinja در این انتشار نیست؛ encoder مرجع و deepseek-recipe برای ساخت پیام معرفی شده‌اند. پشتیبانی موتور نسخهٔ قبلی به snapshot 1017 منتقل نشده است.",
+    "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است."
   ],
   "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
   "officialUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -7785,11 +7806,30 @@ modelProfiles.push({
       "evidenceIds": [
         "evidence:catchup1017-deepseek1017"
       ]
+    },
+    {
+      "engine": "llama.cpp",
+      "engineLabel": "llama.cpp b11870+ · پیش‌انتشار / نیازمند آزمون",
+      "label": "llama.cpp b11870+ · پیش‌انتشار / نیازمند آزمون",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11870",
+      "instructions": "وزن snapshot 1017 و فایل‌های کمکی لازم را مطابق راهنمای ناشر آماده کنید؛ سپس تبدیل و صحت خروجی را روی backend موردنظر جداگانه بررسی کنید.",
+      "conditions": [
+        "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است.",
+        "تبدیل جدول Engram به BF16 بخشی از این مسیر است. فقط Safetensors رسمی در فهرست فایل‌ها ثبت شده است؛ فایل حاصل تبدیل کاربر است و GGUF رسمی یا اجرای مستقیم MXFP8 محسوب نمی‌شود. اندازهٔ artifact تبدیل‌شده و حافظهٔ اجرا اندازه‌گیری نشده‌اند."
+      ],
+      "softwareReleaseId": "software-release:llama-cpp-b11870",
+      "compatibilityScope": "model",
+      "evidenceIds": [
+        "evidence:llama-b11870-release",
+        "evidence:llama-pr-31086"
+      ]
     }
   ],
   "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
   "evidenceIds": [
-    "evidence:catchup1017-deepseek1017"
+    "evidence:catchup1017-deepseek1017",
+    "evidence:llama-b11870-release",
+    "evidence:llama-pr-31086"
   ]
 });
 modelProfiles.push({
@@ -7907,5 +7947,569 @@ modelProfiles.push({
   "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
   "evidenceIds": [
     "evidence:catchup1017-dory"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-3-5-embed-1b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+  "introduction": "بردارساز متن و تصویر با وزن رسمی BF16؛ نام 1B به اندازهٔ خانواده اشاره دارد و شمار کل پارامترها 1.55B است.",
+  "roleSummary": "بازیابی سند برای RAG؛ پاسخ متنی تولید نمی‌کند",
+  "distinguishingFeatures": [],
+  "languageSummary": "فارسی در فهرست زبان‌های ناشر است؛ کیفیت مستقل فارسی در این راهنما اندازه‌گیری نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "runGuides": [
+    {
+      "engine": "Transformers",
+      "engineLabel": "Transformers 5.20.0",
+      "label": "Transformers 5.20.0",
+      "href": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16/blob/407b5319891cbe8e3f24a6872804b6afe2a24e7b/README.md",
+      "conditions": [
+        "مثال رسمی با Transformers 5.20.0، Python 3.12 و BF16 روی CUDA ارائه شده است؛ قالب query:/passage: و نرمال‌سازی خروجی را حفظ کنید."
+      ],
+      "evidenceIds": [
+        "evidence:nemotron-embed-1b-card"
+      ]
+    },
+    {
+      "engine": "llama.cpp",
+      "engineLabel": "llama.cpp b11778+",
+      "label": "llama.cpp b11778+ · تبدیل GGUF آزمایشی",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11778",
+      "instructions": "وزن رسمی BF16 را دریافت و با convert_hf_to_gguf.py --outtype f16 به GGUF تبدیل کنید؛ سپس llama-embedding را اجرا کنید. فایل حاصل، بستهٔ رسمی GGUF نیست.",
+      "conditions": [
+        "شاهد تطبیق فقط یک ورودی متنی 1B با شباهت کسینوسی 0.999847 است؛ آزمون کامل تصویر و مدل 8B دیده نمی‌شود. Rerank-8B و NVFP4 در دامنه نیستند. پیش از استقرار، خروجی را با مسیر مرجع مقایسه کنید."
+      ],
+      "softwareReleaseId": "software-release:llama-cpp-b11778",
+      "compatibilityScope": "model",
+      "evidenceIds": [
+        "evidence:llama-cpp-b11778-release",
+        "evidence:llama-cpp-nemotron-30877",
+        "evidence:llama-cpp-nemotron-30877-review"
+      ]
+    }
+  ],
+  "downloadSearchNote": "وزن رسمی در قالب Safetensors است؛ GGUF این مسیر باید توسط کاربر تبدیل شود و حافظهٔ اجرا از حجم فایل نتیجه نمی‌شود.",
+  "evidenceIds": [
+    "evidence:nemotron-embed-1b-card",
+    "evidence:nemotron-embed-1b-files",
+    "evidence:llama-cpp-b11778-release",
+    "evidence:llama-cpp-nemotron-30877",
+    "evidence:llama-cpp-nemotron-30877-review"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-3-5-embed-8b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-8b-bf16",
+  "introduction": "بردارساز متن و تصویر با وزن رسمی BF16؛ نام 8B به اندازهٔ خانواده اشاره دارد و شمار کل پارامترها 8.38B است.",
+  "roleSummary": "بازیابی سند برای RAG؛ پاسخ متنی تولید نمی‌کند",
+  "distinguishingFeatures": [],
+  "languageSummary": "فارسی در فهرست زبان‌های ناشر است؛ کیفیت مستقل فارسی در این راهنما اندازه‌گیری نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "runGuides": [
+    {
+      "engine": "Transformers",
+      "engineLabel": "Transformers 5.20.0",
+      "label": "Transformers 5.20.0",
+      "href": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/blob/ca773cfffe5200e831920718257b932016859ed7/README.md",
+      "conditions": [
+        "مثال رسمی با Transformers 5.20.0، Python 3.12 و BF16 روی CUDA ارائه شده است؛ قالب query:/passage: و نرمال‌سازی خروجی را حفظ کنید."
+      ],
+      "evidenceIds": [
+        "evidence:nemotron-embed-8b-card"
+      ]
+    },
+    {
+      "engine": "llama.cpp",
+      "engineLabel": "llama.cpp b11778+",
+      "label": "llama.cpp b11778+ · تبدیل GGUF آزمایشی",
+      "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b11778",
+      "instructions": "وزن رسمی BF16 را دریافت و با convert_hf_to_gguf.py --outtype f16 به GGUF تبدیل کنید؛ سپس llama-embedding را اجرا کنید. فایل حاصل، بستهٔ رسمی GGUF نیست.",
+      "conditions": [
+        "شاهد تطبیق فقط یک ورودی متنی 1B با شباهت کسینوسی 0.999847 است؛ آزمون کامل تصویر و مدل 8B دیده نمی‌شود. Rerank-8B و NVFP4 در دامنه نیستند. پیش از استقرار، خروجی را با مسیر مرجع مقایسه کنید."
+      ],
+      "softwareReleaseId": "software-release:llama-cpp-b11778",
+      "compatibilityScope": "model",
+      "evidenceIds": [
+        "evidence:llama-cpp-b11778-release",
+        "evidence:llama-cpp-nemotron-30877",
+        "evidence:llama-cpp-nemotron-30877-review"
+      ]
+    }
+  ],
+  "downloadSearchNote": "وزن رسمی در قالب Safetensors است؛ GGUF این مسیر باید توسط کاربر تبدیل شود و حافظهٔ اجرا از حجم فایل نتیجه نمی‌شود.",
+  "evidenceIds": [
+    "evidence:nemotron-embed-8b-card",
+    "evidence:nemotron-embed-8b-files",
+    "evidence:llama-cpp-b11778-release",
+    "evidence:llama-cpp-nemotron-30877",
+    "evidence:llama-cpp-nemotron-30877-review"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:minicpm-v-4-7-1b",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "introduction": "مدل متن، تصویر و ویدئوی MiniCPM-V 4.7 در نسخهٔ 1B؛ برای درک تصویر، OCR، سند و ویدئو. قالب‌های رسمی وزن با اندازهٔ واقعی فایل ثبت شده‌اند.",
+  "roleSummary": "درک تصویر، OCR، سند و ویدئو",
+  "distinguishingFeatures": [],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+  "runGuides": [
+    {
+      "engine": "Transformers",
+      "label": "Transformers >=5.18.0",
+      "href": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+      "conditions": [
+        "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-1b-card",
+        "evidence:tables1024-minicpm-v-4-7-1b-files",
+        "evidence:tables1024-minicpm-v-4-7-1b-config",
+        "evidence:tables1024-minicpm-news"
+      ],
+      "instructions": "pip install \"transformers[torch]>=5.18.0\" torchvision av"
+    },
+    {
+      "engine": "llama.cpp",
+      "label": "OpenBMB llama.cpp-omni (fork)",
+      "href": "https://github.com/OpenBMB/llama.cpp-omni",
+      "conditions": [
+        "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند.",
+        "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-1b-card",
+        "evidence:tables1024-minicpm-v-4-7-1b-files",
+        "evidence:tables1024-minicpm-v-4-7-1b-config",
+        "evidence:tables1024-minicpm-news",
+        "evidence:tables1024-minicpm-news"
+      ]
+    }
+  ],
+  "downloadSearchNote": "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند.",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-card",
+    "evidence:tables1024-minicpm-v-4-7-1b-files",
+    "evidence:tables1024-minicpm-v-4-7-1b-config",
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:minicpm-v-4-7-35b-a3b",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "introduction": "مدل متن، تصویر و ویدئوی MiniCPM-V 4.7 در نسخهٔ 35B-A3B؛ برای درک تصویر، OCR، سند و ویدئو. قالب‌های رسمی وزن با اندازهٔ واقعی فایل ثبت شده‌اند.",
+  "roleSummary": "درک تصویر، OCR، سند و ویدئو",
+  "distinguishingFeatures": [],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+  "runGuides": [
+    {
+      "engine": "Transformers",
+      "label": "Transformers >=5.18.0",
+      "href": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "conditions": [
+        "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+        "evidence:tables1024-minicpm-news"
+      ],
+      "instructions": "pip install \"transformers[torch]>=5.18.0\" torchvision av"
+    },
+    {
+      "engine": "llama.cpp",
+      "label": "OpenBMB llama.cpp-omni (fork)",
+      "href": "https://github.com/OpenBMB/llama.cpp-omni",
+      "conditions": [
+        "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند.",
+        "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+        "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+        "evidence:tables1024-minicpm-news",
+        "evidence:tables1024-minicpm-news"
+      ]
+    }
+  ],
+  "downloadSearchNote": "زمینهٔ 262144 از پیکربندی است؛ کیفیت در تمام این طول تأیید نشده است. GGUF به projector سازگار نیاز دارد؛ DSpark کمکی است و مدل مستقل نیست. اعداد حافظه و سرعت iPhone به همهٔ GPUها تعمیم داده نمی‌شوند.",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-card",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-files",
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-config",
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:vllm-sr-d3-nano",
+  "modelVersionId": "model:vllm-sr-d3-nano",
+  "introduction": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "roleSummary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "distinguishingFeatures": [],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/vllm-sr/d3-nano",
+  "runGuides": [
+    {
+      "engine": "Ollama",
+      "label": "Ollama >=0.40.9",
+      "href": "https://ollama.com/library/d3:2b",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card",
+        "evidence:tables1024-vllm-sr-d3-nano-files",
+        "evidence:tables1024-vllm-sr-d3-nano-config",
+        "evidence:tables1024-d3-nano-ollama"
+      ],
+      "softwareReleaseId": "software-release:ollama-v0-40-9",
+      "instructions": "ollama run d3:2b \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\""
+    },
+    {
+      "engine": "Transformers",
+      "label": "Transformers 5.17.0",
+      "href": "https://huggingface.co/vllm-sr/d3-nano",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card",
+        "evidence:tables1024-vllm-sr-d3-nano-files",
+        "evidence:tables1024-vllm-sr-d3-nano-config"
+      ],
+      "instructions": "AutoModel.from_pretrained(\"vllm-sr/d3-nano\", trust_remote_code=True).system_one(state=..., questions=...)"
+    },
+    {
+      "engine": "vLLM Semantic Router",
+      "label": "vLLM Semantic Router · dev",
+      "href": "https://huggingface.co/vllm-sr/d3-nano",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-nano-card",
+        "evidence:tables1024-vllm-sr-d3-nano-files",
+        "evidence:tables1024-vllm-sr-d3-nano-config"
+      ],
+      "instructions": "vllm-sr serve -e vllm-sr/d3-nano\n# POST http://localhost:8899/v1/systemone"
+    }
+  ],
+  "downloadSearchNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-nano-card",
+    "evidence:tables1024-vllm-sr-d3-nano-files",
+    "evidence:tables1024-vllm-sr-d3-nano-config"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:vllm-sr-d3-mini",
+  "modelVersionId": "model:vllm-sr-d3-mini",
+  "introduction": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "roleSummary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "distinguishingFeatures": [],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/vllm-sr/d3-mini",
+  "runGuides": [
+    {
+      "engine": "Ollama",
+      "label": "Ollama >=0.40.9",
+      "href": "https://ollama.com/library/d3:4b",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card",
+        "evidence:tables1024-vllm-sr-d3-mini-files",
+        "evidence:tables1024-vllm-sr-d3-mini-config",
+        "evidence:tables1024-d3-mini-ollama"
+      ],
+      "softwareReleaseId": "software-release:ollama-v0-40-9",
+      "instructions": "ollama run d3:4b \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\""
+    },
+    {
+      "engine": "Transformers",
+      "label": "Transformers 5.17.0",
+      "href": "https://huggingface.co/vllm-sr/d3-mini",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card",
+        "evidence:tables1024-vllm-sr-d3-mini-files",
+        "evidence:tables1024-vllm-sr-d3-mini-config"
+      ],
+      "instructions": "AutoModel.from_pretrained(\"vllm-sr/d3-mini\", trust_remote_code=True).system_one(state=..., questions=...)"
+    },
+    {
+      "engine": "vLLM Semantic Router",
+      "label": "vLLM Semantic Router · dev",
+      "href": "https://huggingface.co/vllm-sr/d3-mini",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-mini-card",
+        "evidence:tables1024-vllm-sr-d3-mini-files",
+        "evidence:tables1024-vllm-sr-d3-mini-config"
+      ],
+      "instructions": "vllm-sr serve -e vllm-sr/d3-mini\n# POST http://localhost:8899/v1/systemone"
+    }
+  ],
+  "downloadSearchNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-mini-card",
+    "evidence:tables1024-vllm-sr-d3-mini-files",
+    "evidence:tables1024-vllm-sr-d3-mini-config"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:vllm-sr-d3-flash",
+  "modelVersionId": "model:vllm-sr-d3-flash",
+  "introduction": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "roleSummary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "distinguishingFeatures": [],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/vllm-sr/d3-flash",
+  "runGuides": [
+    {
+      "engine": "Ollama",
+      "label": "Ollama >=0.40.9",
+      "href": "https://ollama.com/library/d3:9b",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card",
+        "evidence:tables1024-vllm-sr-d3-flash-files",
+        "evidence:tables1024-vllm-sr-d3-flash-config",
+        "evidence:tables1024-d3-flash-ollama"
+      ],
+      "softwareReleaseId": "software-release:ollama-v0-40-9",
+      "instructions": "ollama run d3:9b \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\""
+    },
+    {
+      "engine": "Transformers",
+      "label": "Transformers 5.17.0",
+      "href": "https://huggingface.co/vllm-sr/d3-flash",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card",
+        "evidence:tables1024-vllm-sr-d3-flash-files",
+        "evidence:tables1024-vllm-sr-d3-flash-config"
+      ],
+      "instructions": "AutoModel.from_pretrained(\"vllm-sr/d3-flash\", trust_remote_code=True).system_one(state=..., questions=...)"
+    },
+    {
+      "engine": "vLLM Semantic Router",
+      "label": "vLLM Semantic Router · dev",
+      "href": "https://huggingface.co/vllm-sr/d3-flash",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-flash-card",
+        "evidence:tables1024-vllm-sr-d3-flash-files",
+        "evidence:tables1024-vllm-sr-d3-flash-config"
+      ],
+      "instructions": "vllm-sr serve -e vllm-sr/d3-flash\n# POST http://localhost:8899/v1/systemone"
+    }
+  ],
+  "downloadSearchNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-flash-card",
+    "evidence:tables1024-vllm-sr-d3-flash-files",
+    "evidence:tables1024-vllm-sr-d3-flash-config"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:vllm-sr-d3",
+  "modelVersionId": "model:vllm-sr-d3",
+  "introduction": "مدل تصمیم چندوجهی d3، روی متن یا JSON همراه تصویر و ویدئو، پاسخ انتخابی، بله/خیر یا امتیاز احتمالاتی می‌دهد؛ متن آزاد یا مقادیر دلخواه استخراج نمی‌کند.",
+  "roleSummary": "طبقه‌بندی، مسیریابی، امتیازدهی و کنترل تصمیم عامل",
+  "distinguishingFeatures": [],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/vllm-sr/d3",
+  "runGuides": [
+    {
+      "engine": "Ollama",
+      "label": "Ollama >=0.40.9",
+      "href": "https://ollama.com/library/d3:27b",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card",
+        "evidence:tables1024-vllm-sr-d3-files",
+        "evidence:tables1024-vllm-sr-d3-config",
+        "evidence:tables1024-d3-ollama"
+      ],
+      "softwareReleaseId": "software-release:ollama-v0-40-9",
+      "instructions": "ollama run d3:27b \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\""
+    },
+    {
+      "engine": "Transformers",
+      "label": "Transformers 5.17.0",
+      "href": "https://huggingface.co/vllm-sr/d3",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card",
+        "evidence:tables1024-vllm-sr-d3-files",
+        "evidence:tables1024-vllm-sr-d3-config"
+      ],
+      "instructions": "AutoModel.from_pretrained(\"vllm-sr/d3\", trust_remote_code=True).system_one(state=..., questions=...)"
+    },
+    {
+      "engine": "vLLM Semantic Router",
+      "label": "vLLM Semantic Router · dev",
+      "href": "https://huggingface.co/vllm-sr/d3",
+      "conditions": [
+        "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-vllm-sr-d3-card",
+        "evidence:tables1024-vllm-sr-d3-files",
+        "evidence:tables1024-vllm-sr-d3-config"
+      ],
+      "instructions": "vllm-sr serve -e vllm-sr/d3\n# POST http://localhost:8899/v1/systemone"
+    }
+  ],
+  "downloadSearchNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-card",
+    "evidence:tables1024-vllm-sr-d3-files",
+    "evidence:tables1024-vllm-sr-d3-config"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-3-5-bolt-e4b",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "introduction": "مدل کوچک Gemma-4-E4B برای گفت‌وگوی محلی، ابزارخوانی چندمرحله‌ای و رابط دستگاه؛ 8B کل و 4B مؤثر. وزن BF16 و GGUF رسمی منتشر شده‌اند.",
+  "roleSummary": "گفت‌وگوی محلی، استدلال و فراخوانی ابزار",
+  "distinguishingFeatures": [
+    "DFlash رسمی: 360M پارامتر و فایل GGUF با 736,812,096 بایت؛ فقط همراه مدل اصلی و با حافظهٔ اضافه."
+  ],
+  "languageSummary": "شاهد یا ارزیابی مشخص فارسی ثبت نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "runGuides": [
+    {
+      "engine": "llama.cpp",
+      "label": "llama.cpp · official GGUF",
+      "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "conditions": [
+        "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+        "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+        "evidence:tables1024-bolt-dflash"
+      ],
+      "instructions": "llama-server -hf nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB:Q4_K_M"
+    },
+    {
+      "engine": "Ollama",
+      "label": "Ollama >=0.40.10",
+      "href": "https://ollama.com/library/nemotron-3.5-bolt:e4b",
+      "conditions": [
+        "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+        "evidence:tables1024-bolt-ollama"
+      ],
+      "softwareReleaseId": "software-release:ollama-v0-40-10",
+      "instructions": "ollama run nemotron-3.5-bolt:e4b"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM >=0.31.0",
+      "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+      "conditions": [
+        "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+        "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+        "evidence:tables1024-bolt-dflash"
+      ],
+      "instructions": "vllm serve nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16"
+    }
+  ],
+  "downloadSearchNote": "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-config",
+    "evidence:tables1024-bolt-dflash"
+  ]
+});
+modelProfiles.push({
+  "id": "model-profile:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "introduction": "بازرتبه‌بند چندوجهی با برج زبانی bidirectional Ministral3 و رمزگذار بینایی Pixtral؛ جفت پرسش متنی و سند متنی، تصویری یا ترکیبی را امتیاز می‌دهد.",
+  "roleSummary": "بازرتبه‌بندی اسناد در RAG و Vision RAG",
+  "distinguishingFeatures": [],
+  "languageSummary": "فارسی در ارزیابی متنی و تصویری ناشر حضور دارد؛ امتیاز مستقل فارسی منتشر نشده است.",
+  "officialUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "runGuides": [
+    {
+      "engine": "Transformers",
+      "label": "Transformers 5.20.0",
+      "href": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+      "conditions": [
+        "برای تصویر از Transformers 5.20.0 استفاده کنید؛ 5.17 تا 5.19 با Flash Attention 2 ممکن است خروجی نادرست یا خطای CUDA بدهند. مسیر چندوجهی vLLM 0.32.0 از /classify و قالب query/document استفاده می‌کند، نه /score یا /rerank. امتیاز خروجی logit است؛ embedding یا احتمال کالیبره‌شده نیست.",
+        "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
+      ]
+    },
+    {
+      "engine": "Sentence Transformers",
+      "label": "Sentence Transformers",
+      "href": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+      "conditions": [
+        "برای تصویر از Transformers 5.20.0 استفاده کنید؛ 5.17 تا 5.19 با Flash Attention 2 ممکن است خروجی نادرست یا خطای CUDA بدهند. مسیر چندوجهی vLLM 0.32.0 از /classify و قالب query/document استفاده می‌کند، نه /score یا /rerank. امتیاز خروجی logit است؛ embedding یا احتمال کالیبره‌شده نیست."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
+      ],
+      "instructions": "CrossEncoder(\"nvidia/Nemotron-3.5-Rerank-8B-BF16\", trust_remote_code=True)"
+    },
+    {
+      "engine": "vLLM",
+      "label": "vLLM >=0.32.0 · /classify",
+      "href": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+      "conditions": [
+        "برای تصویر از Transformers 5.20.0 استفاده کنید؛ 5.17 تا 5.19 با Flash Attention 2 ممکن است خروجی نادرست یا خطای CUDA بدهند. مسیر چندوجهی vLLM 0.32.0 از /classify و قالب query/document استفاده می‌کند، نه /score یا /rerank. امتیاز خروجی logit است؛ embedding یا احتمال کالیبره‌شده نیست."
+      ],
+      "evidenceIds": [
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+        "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
+      ],
+      "instructions": "vllm serve nvidia/Nemotron-3.5-Rerank-8B-BF16 --runner pooling --dtype bfloat16 --max-model-len 32768\n# Follow the official chat template and pooler configuration; POST /classify."
+    }
+  ],
+  "downloadSearchNote": "برای تصویر از Transformers 5.20.0 استفاده کنید؛ 5.17 تا 5.19 با Flash Attention 2 ممکن است خروجی نادرست یا خطای CUDA بدهند. مسیر چندوجهی vLLM 0.32.0 از /classify و قالب query/document استفاده می‌کند، نه /score یا /rerank. امتیاز خروجی logit است؛ embedding یا احتمال کالیبره‌شده نیست.",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
   ]
 });

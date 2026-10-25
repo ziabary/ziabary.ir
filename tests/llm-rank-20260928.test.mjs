@@ -15,12 +15,14 @@ test('b11223 is a separately scoped experimental note with official release evid
  assert.equal(source.release.prerelease,true);assert.equal(source.release.published_at,'2026-09-27T22:03:23Z');
  assert.equal(source.pullRequest.merged,true);assert.equal(source.release.target_commitish,source.pullRequest.merge_commit_sha);
  assert.equal(source.runtimeTested,false);
- assert.ok(!canonical.softwareReleases.some(x=>x.version==='b11223'));
+ assert.equal(canonical.softwareReleases.find(x=>x.version==='b11223').releaseChannel,'prerelease');
  for(const locale of ['fa','en','es']){
-  const {rows}=edition(locale),row=rows['software-products'].find(x=>x.id==='software-release:llama-cpp-v0-5-0');
-  assert.match(row.cells['research-benefit'].display,/b11223/);assert.match(row.cells['research-benefit'].display,/Qwen3-VL/);
+  const {rows}=edition(locale),row=rows['software-products'].find(x=>x.id==='software-release:llama-cpp-b11223');
+  assert.match(row.cells['research-benefit'].display,/b11223/);assert.match(row.cells['research-use'].display,/Qwen3-VL/);
   const condition=row.cells['research-condition'].display;
-  for(const term of ['b11223','n_ubatch','/rerank','/embedding','#28876','b11160','b11182'])assert.ok(condition.includes(term));
+  for(const term of ['n_ubatch','/rerank','/embedding'])assert.ok(condition.includes(term));
+  assert.match(row.cells['research-benefit'].display,/#28876/);
+  assert.doesNotMatch(condition,/b11160|b11182/);
   for(const id of ['evidence:llama-cpp-b11223-release','evidence:llama-cpp-rank-28876'])assert.ok(row.sourceIds.includes(id));
   if(locale!=='fa')assert.doesNotMatch(JSON.stringify([row.cells,row.details]),/[\u0600-\u06ff]/);
  }

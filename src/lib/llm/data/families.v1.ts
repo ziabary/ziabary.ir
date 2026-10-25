@@ -328,3 +328,19 @@ families.push({
     "evidence:catchup1017-muse"
   ]
 });
+families.push({
+  "id": "family:minicpm-v",
+  "name": "MiniCPM-V",
+  "publisher": "OpenBMB",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-news"
+  ]
+});
+families.push({
+  "id": "family:d3",
+  "name": "d3",
+  "publisher": "vLLM Semantic Router",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-nano-card"
+  ]
+});

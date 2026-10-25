@@ -607,3 +607,64 @@ specializedAssessments.push({
     "evidence:embeddinggemma-2-developer-guide"
   ]
 });
+specializedAssessments.push({
+  "id": "specialized-assessment:nvidia-nemotron-3-5-embed-1b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+  "modelRevision": "407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "کیفیت بازیابی روی پیکرهٔ کاربر",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:nvidia-nemotron-3-5-embed-1b-bf16-retrieval",
+  "limitations": [
+    "شباهت 0.999847 آزمون تطبیق پیاده‌سازی متن 1B است، نه نمرهٔ بازیابی، کیفیت فارسی یا آزمون تصویر و مدل 8B."
+  ],
+  "evidenceIds": [
+    "evidence:nemotron-embed-1b-card",
+    "evidence:llama-cpp-nemotron-30877-review"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:nvidia-nemotron-3-5-embed-8b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-8b-bf16",
+  "modelRevision": "ca773cfffe5200e831920718257b932016859ed7",
+  "kind": "embedding",
+  "applicationId": "enterprise-rag",
+  "metricName": "کیفیت بازیابی روی پیکرهٔ کاربر",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:nvidia-nemotron-3-5-embed-8b-bf16-retrieval",
+  "limitations": [
+    "شباهت 0.999847 آزمون تطبیق پیاده‌سازی متن 1B است، نه نمرهٔ بازیابی، کیفیت فارسی یا آزمون تصویر و مدل 8B."
+  ],
+  "evidenceIds": [
+    "evidence:nemotron-embed-8b-card",
+    "evidence:llama-cpp-nemotron-30877-review"
+  ]
+});
+specializedAssessments.push({
+  "id": "specialized-assessment:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "modelRevision": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "kind": "reranker",
+  "applicationId": "enterprise-rag",
+  "metricName": "کیفیت بازرتبه‌بندی روی پیکرهٔ کاربر",
+  "metricValue": {
+    "state": "not-measured"
+  },
+  "metricUnit": "score",
+  "workloadId": "workload:nvidia-nemotron-3-5-rerank-8b-bf16-reranking",
+  "limitations": [
+    "حضور فارسی در ارزیابی ناشر، امتیاز مستقل فارسی یا آزمون محلی این راهنما نیست. بازرتبه‌بند بردار دائمی تولید نمی‌کند و حجم وزن، VRAM قطعی نیست."
+  ],
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-files",
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-config"
+  ]
+});

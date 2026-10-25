@@ -1,0 +1,337 @@
+[
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B?blobs=true",
+    "bytes": 12515
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-README.md",
+    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/raw/main/README.md",
+    "bytes": 24681
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-config.json",
+    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/raw/main/config.json",
+    "bytes": 2575
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B?blobs=true",
+    "bytes": 16371
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-README.md",
+    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/raw/main/README.md",
+    "bytes": 28864
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-config.json",
+    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/raw/main/config.json",
+    "bytes": 3132
+  },
+  {
+    "file": "vllm-sr--d3-nano-metadata.json",
+    "url": "https://huggingface.co/api/models/vllm-sr/d3-nano?blobs=true",
+    "bytes": 23356
+  },
+  {
+    "file": "vllm-sr--d3-nano-README.md",
+    "url": "https://huggingface.co/vllm-sr/d3-nano/raw/main/README.md",
+    "bytes": 17450
+  },
+  {
+    "file": "vllm-sr--d3-nano-config.json",
+    "url": "https://huggingface.co/vllm-sr/d3-nano/raw/main/config.json",
+    "bytes": 2885
+  },
+  {
+    "file": "vllm-sr--d3-mini-metadata.json",
+    "url": "https://huggingface.co/api/models/vllm-sr/d3-mini?blobs=true",
+    "bytes": 23739
+  },
+  {
+    "file": "vllm-sr--d3-mini-README.md",
+    "url": "https://huggingface.co/vllm-sr/d3-mini/raw/main/README.md",
+    "bytes": 17368
+  },
+  {
+    "file": "vllm-sr--d3-mini-config.json",
+    "url": "https://huggingface.co/vllm-sr/d3-mini/raw/main/config.json",
+    "bytes": 3090
+  },
+  {
+    "file": "vllm-sr--d3-flash-metadata.json",
+    "url": "https://huggingface.co/api/models/vllm-sr/d3-flash?blobs=true",
+    "bytes": 24228
+  },
+  {
+    "file": "vllm-sr--d3-flash-README.md",
+    "url": "https://huggingface.co/vllm-sr/d3-flash/raw/main/README.md",
+    "bytes": 17430
+  },
+  {
+    "file": "vllm-sr--d3-flash-config.json",
+    "url": "https://huggingface.co/vllm-sr/d3-flash/raw/main/config.json",
+    "bytes": 3093
+  },
+  {
+    "file": "vllm-sr--d3-metadata.json",
+    "url": "https://huggingface.co/api/models/vllm-sr/d3?blobs=true",
+    "bytes": 28328
+  },
+  {
+    "file": "vllm-sr--d3-README.md",
+    "url": "https://huggingface.co/vllm-sr/d3/raw/main/README.md",
+    "bytes": 22214
+  },
+  {
+    "file": "vllm-sr--d3-config.json",
+    "url": "https://huggingface.co/vllm-sr/d3/raw/main/config.json",
+    "bytes": 3949
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-metadata.json",
+    "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16?blobs=true",
+    "bytes": 45877
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-README.md",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/raw/main/README.md",
+    "bytes": 65999
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-config.json",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/raw/main/config.json",
+    "bytes": 5144
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-metadata.json",
+    "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB?blobs=true",
+    "bytes": 24125
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-README.md",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/raw/main/README.md",
+    "bytes": 59009
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-config.json",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/raw/main/config.json",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash-metadata.json",
+    "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash?blobs=true",
+    "bytes": 22640
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash-README.md",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash/raw/main/README.md",
+    "bytes": 16070
+  },
+  {
+    "file": "nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash-config.json",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash/raw/main/config.json",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "nvidia--Nemotron-3.5-Rerank-8B-BF16-metadata.json",
+    "url": "https://huggingface.co/api/models/nvidia/Nemotron-3.5-Rerank-8B-BF16?blobs=true",
+    "bytes": 9934
+  },
+  {
+    "file": "nvidia--Nemotron-3.5-Rerank-8B-BF16-README.md",
+    "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/raw/main/README.md",
+    "bytes": 31206
+  },
+  {
+    "file": "nvidia--Nemotron-3.5-Rerank-8B-BF16-config.json",
+    "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/raw/main/config.json",
+    "bytes": 3074
+  },
+  {
+    "file": "llama-cpp-b11821.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11821",
+    "bytes": 70900
+  },
+  {
+    "file": "llama-cpp-b11822.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11822",
+    "bytes": 69396
+  },
+  {
+    "file": "llama-cpp-b11826.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11826",
+    "bytes": 68553
+  },
+  {
+    "file": "llama-cpp-b11828.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11828",
+    "bytes": 69261
+  },
+  {
+    "file": "llama-cpp-b11829.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11829",
+    "bytes": 68562
+  },
+  {
+    "file": "llama-cpp-b11835.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11835",
+    "bytes": 68514
+  },
+  {
+    "file": "llama-cpp-b11838.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11838",
+    "bytes": 68561
+  },
+  {
+    "file": "llama-cpp-b11847.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/tags/b11847",
+    "bytes": 69366
+  },
+  {
+    "file": "ollama-v0.40.9.json",
+    "url": "https://api.github.com/repos/ollama/ollama/releases/tags/v0.40.9",
+    "bytes": 31412
+  },
+  {
+    "file": "ollama-v0.40.10.json",
+    "url": "https://api.github.com/repos/ollama/ollama/releases/tags/v0.40.10",
+    "bytes": 30437
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-int4-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-int4?blobs=true",
+    "bytes": 10511
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-AWQ-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-AWQ?blobs=true",
+    "bytes": 10472
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-GPTQ-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-GPTQ?blobs=true",
+    "bytes": 10669
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-1B-gguf-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-1B-gguf?blobs=true",
+    "bytes": 13336
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-int4-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-int4?blobs=true",
+    "bytes": 44221
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-AWQ-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ?blobs=true",
+    "bytes": 44220
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-GPTQ-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ?blobs=true",
+    "bytes": 44221
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-gguf-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-gguf?blobs=true",
+    "bytes": 13941
+  },
+  {
+    "file": "openbmb--MiniCPM-V-4.7-35B-A3B-FP8-metadata.json",
+    "url": "https://huggingface.co/api/models/openbmb/MiniCPM-V-4.7-35B-A3B-FP8?blobs=true",
+    "bytes": 42235
+  },
+  {
+    "file": "llama-pr-29864.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/29864",
+    "bytes": 23132
+  },
+  {
+    "file": "llama-pr-30927.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/30927",
+    "bytes": 19811
+  },
+  {
+    "file": "llama-pr-30979.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/30979",
+    "bytes": 17604
+  },
+  {
+    "file": "llama-pr-30994.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/30994",
+    "bytes": 17704
+  },
+  {
+    "file": "llama-pr-30864.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/30864",
+    "bytes": 18322
+  },
+  {
+    "file": "llama-pr-31014.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/31014",
+    "bytes": 18704
+  },
+  {
+    "file": "llama-pr-30969.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/30969",
+    "bytes": 18729
+  },
+  {
+    "file": "llama-pr-30885.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/pulls/30885",
+    "bytes": 18832
+  },
+  {
+    "file": "llama-pr-30979-comments.json",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/issues/30979/comments?per_page=100",
+    "bytes": 3799
+  },
+  {
+    "file": "minicpm-github-README.md",
+    "url": "https://raw.githubusercontent.com/OpenBMB/MiniCPM-o/main/README.md",
+    "bytes": 20029
+  },
+  {
+    "file": "ollama-d3-2b.html",
+    "url": "https://ollama.com/library/d3:2b",
+    "bytes": 88148
+  },
+  {
+    "file": "ollama-d3-4b.html",
+    "url": "https://ollama.com/library/d3:4b",
+    "bytes": 88148
+  },
+  {
+    "file": "ollama-d3-9b.html",
+    "url": "https://ollama.com/library/d3:9b",
+    "bytes": 88145
+  },
+  {
+    "file": "ollama-d3-27b.html",
+    "url": "https://ollama.com/library/d3:27b",
+    "bytes": 88163
+  },
+  {
+    "file": "ollama-e4b.html",
+    "url": "https://ollama.com/library/nemotron-3.5-bolt:e4b",
+    "bytes": 88517
+  },
+  {
+    "file": "ollama-e4b-tags.html",
+    "url": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+    "bytes": 55612
+  },
+  {
+    "file": "nvidia-e4b-api.html",
+    "url": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b",
+    "bytes": 336867
+  },
+  {
+    "file": "ollama-systemone.md",
+    "url": "https://raw.githubusercontent.com/ollama/ollama/main/docs/api.md",
+    "bytes": 54614
+  }
+]

@@ -1,0 +1,77 @@
+From 9b77b578896945e715c80978556dc20894fcacea Mon Sep 17 00:00:00 2001
+From: Georgi Gerganov <ggerganov@gmail.com>
+Date: Sat, 24 Oct 2026 11:01:02 +0300
+Subject: [PATCH] llama : deny -sm tensor for arches with moe amax rescaling
+
+The amax POOL_1D reduction spans the whole matmul row, so a device cannot
+compute it from an axis-0 split. The Meta split-state case reported
+MIRRORED, which gives each device a partial max of its own slice. Drop
+that case and deny -sm tensor for the arches which build the amax graph,
+see [TAG_MOE_AMAX_SCALE].
+
+Assisted-by: dsh:llama.cpp/ggml-org/Qwen3.8-Flash-Next-GGUF (MacBook, M5 Max, 128GB)
+---
+ ggml/src/ggml-backend-meta.cpp | 11 +----------
+ src/llama-arch.cpp             |  2 ++
+ src/llama-graph.cpp            |  1 +
+ 3 files changed, 4 insertions(+), 10 deletions(-)
+
+diff --git a/ggml/src/ggml-backend-meta.cpp b/ggml/src/ggml-backend-meta.cpp
+index 17f871c897fe..fb35be352aed 100644
+--- a/ggml/src/ggml-backend-meta.cpp
++++ b/ggml/src/ggml-backend-meta.cpp
+@@ -774,13 +774,6 @@ static struct ggml_backend_meta_split_state ggml_backend_meta_get_split_state(
+         return src_ss[0];
+     };
+ 
+-    auto handle_pool_1d = [&](const std::vector<ggml_backend_meta_split_state> & src_ss) -> ggml_backend_meta_split_state {
+-        if (src_ss[0].axis == GGML_BACKEND_SPLIT_AXIS_0) {
+-            return {GGML_BACKEND_SPLIT_AXIS_MIRRORED, {0}, {1}, 1};
+-        }
+-        return src_ss[0];
+-    };
+-
+     auto handle_flash_attn_ext = [&](const std::vector<ggml_backend_meta_split_state> & src_ss) -> ggml_backend_meta_split_state {
+         GGML_ASSERT(tensor->src[3] == nullptr || src_ss[3].axis == GGML_BACKEND_SPLIT_AXIS_MIRRORED);
+ 
+@@ -997,14 +990,12 @@ static struct ggml_backend_meta_split_state ggml_backend_meta_get_split_state(
+             case GGML_OP_CONV_3D:
+             case GGML_OP_CONV_2D_DW:
+             case GGML_OP_CONV_TRANSPOSE_2D:
++            case GGML_OP_POOL_1D:
+             case GGML_OP_POOL_2D:
+             case GGML_OP_POOL_2D_BACK:
+             case GGML_OP_UPSCALE: {
+                 split_state = handle_generic(src_ss, /*scalar_only =*/ true);
+             } break;
+-            case GGML_OP_POOL_1D: {
+-                split_state = handle_pool_1d(src_ss);
+-            } break;
+             case GGML_OP_PAD: {
+                 split_state = handle_pad(src_ss);
+             } break;
+diff --git a/src/llama-arch.cpp b/src/llama-arch.cpp
+index a364174c1b47..6db74417efb3 100644
+--- a/src/llama-arch.cpp
++++ b/src/llama-arch.cpp
+@@ -1319,6 +1319,8 @@ bool llm_arch_supports_sm_tensor(const llm_arch & arch) {
+         case LLM_ARCH_MINIMAX_M2:
+         case LLM_ARCH_MINIMAX_M3:
+         case LLM_ARCH_MISTRAL4:
++        case LLM_ARCH_MELLUM: // [TAG_MOE_AMAX_SCALE]
++        case LLM_ARCH_FLINT:  // [TAG_MOE_AMAX_SCALE]
+         case LLM_ARCH_KIMI_LINEAR:
+         case LLM_ARCH_BAILINGMOE3:
+         case LLM_ARCH_KIMI_K3:
+diff --git a/src/llama-graph.cpp b/src/llama-graph.cpp
+index 7e8b80a3a070..c81433bed899 100644
+--- a/src/llama-graph.cpp
++++ b/src/llama-graph.cpp
+@@ -2510,6 +2510,7 @@ ggml_tensor * llm_graph_context::build_moe_ffn(
+     {
+         // TODO: this graph-level rescaling should only be applied when the corresponding backend does not support
+         //       ggml_prec_set_src(experts, GGML_PREC_BF16, 1);
++        //       the amax op cannot be split across devices, so these architectures are denied -sm tensor [TAG_MOE_AMAX_SCALE]
+         //       ref: https://github.com/ggml-org/llama.cpp/pull/30656#issuecomment-6269597922
+         llm_graph_amax_src1 amax_src1 = { nullptr, nullptr };
+ 

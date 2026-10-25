@@ -37994,3 +37994,1998 @@ artifactListings.push({
   ],
   "scopeNote": "مدل recurrent/looped normalized-GPT است؛ تعداد تکرارها و نسخهٔ موتور بر تأخیر اثر دارند. مثال vLLM به PR #60149 و مسیر llama.cpp به fork/commit اختصاصی وابسته است؛ پیشنهاد پیش‌فرض تا تأیید مسیر اجرا غیرفعال است."
 });
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-embed-1b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+  "baseModelRepository": "nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "baseRevision": "407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "Nemotron-3.5-Embed-1B-BF16",
+  "repositoryUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16/tree/407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "repositoryRevision": "407b5319891cbe8e3f24a6872804b6afe2a24e7b",
+  "files": [
+    {
+      "path": "model-00001-of-00001.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16/resolve/407b5319891cbe8e3f24a6872804b6afe2a24e7b/model-00001-of-00001.safetensors",
+      "bytes": 3109469296
+    }
+  ],
+  "verifiedOn": "2026-10-21",
+  "evidenceIds": [
+    "evidence:nemotron-embed-1b-files"
+  ],
+  "totalBytes": 3109469296
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-embed-8b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-embed-8b-bf16",
+  "baseModelRepository": "nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "baseRevision": "ca773cfffe5200e831920718257b932016859ed7",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "Nemotron-3.5-Embed-8B-BF16",
+  "repositoryUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/tree/ca773cfffe5200e831920718257b932016859ed7",
+  "repositoryRevision": "ca773cfffe5200e831920718257b932016859ed7",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/resolve/ca773cfffe5200e831920718257b932016859ed7/model-00001-of-00004.safetensors",
+      "bytes": 4884098864
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/resolve/ca773cfffe5200e831920718257b932016859ed7/model-00002-of-00004.safetensors",
+      "bytes": 4932506728
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/resolve/ca773cfffe5200e831920718257b932016859ed7/model-00003-of-00004.safetensors",
+      "bytes": 4932506744
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16/resolve/ca773cfffe5200e831920718257b932016859ed7/model-00004-of-00004.safetensors",
+      "bytes": 2013267064
+    }
+  ],
+  "verifiedOn": "2026-10-21",
+  "evidenceIds": [
+    "evidence:nemotron-embed-8b-files"
+  ],
+  "totalBytes": 16762379400
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-bf16",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/tree/379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "repositoryRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B/resolve/379f120c2ff3588e6e06559ec6b9ec15cc05114e/model.safetensors",
+      "bytes": 3109054480
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-bf16-inventory"
+  ],
+  "totalBytes": 3109054480,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-int4",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "int4 (bitsandbytes)",
+  "variant": "int4 (bitsandbytes)",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-int4",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-int4/tree/f4cc7e7da06e858f970ed1766564192e2d426ca7",
+  "repositoryRevision": "f4cc7e7da06e858f970ed1766564192e2d426ca7",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-int4/resolve/f4cc7e7da06e858f970ed1766564192e2d426ca7/model.safetensors",
+      "bytes": 1567572054
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-int4-inventory"
+  ],
+  "totalBytes": 1567572054,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-awq",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "AWQ W4A16",
+  "variant": "AWQ W4A16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-AWQ",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-AWQ/tree/90e15bf1f7d0395f09d0c2bd91cb80a6a130ddc7",
+  "repositoryRevision": "90e15bf1f7d0395f09d0c2bd91cb80a6a130ddc7",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-AWQ/resolve/90e15bf1f7d0395f09d0c2bd91cb80a6a130ddc7/model.safetensors",
+      "bytes": 2373261968
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-awq-inventory"
+  ],
+  "totalBytes": 2373261968,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gptq",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "GPTQ W4A16",
+  "variant": "GPTQ W4A16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-GPTQ",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-GPTQ/tree/a225ce8c429fdc97cf41c426efc13afdeaa63025",
+  "repositoryRevision": "a225ce8c429fdc97cf41c426efc13afdeaa63025",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-GPTQ/resolve/a225ce8c429fdc97cf41c426efc13afdeaa63025/model.safetensors",
+      "bytes": 1866140792
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gptq-inventory"
+  ],
+  "totalBytes": 1866140792,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-f16",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "F16",
+  "variant": "F16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-F16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-F16.gguf",
+      "bytes": 2024372320
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-f16-inventory"
+  ],
+  "totalBytes": 3134490304,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-iq3-m",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ3_M",
+  "variant": "IQ3_M",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-IQ3_M.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-IQ3_M.gguf",
+      "bytes": 562920864
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq3-m-inventory"
+  ],
+  "totalBytes": 1673038848,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-iq3-xs",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ3_XS",
+  "variant": "IQ3_XS",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-IQ3_XS.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-IQ3_XS.gguf",
+      "bytes": 552267168
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq3-xs-inventory"
+  ],
+  "totalBytes": 1662385152,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-iq4-nl",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ4_NL",
+  "variant": "IQ4_NL",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-IQ4_NL.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-IQ4_NL.gguf",
+      "bytes": 658708352
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq4-nl-inventory"
+  ],
+  "totalBytes": 1768826336,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-iq4-xs",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ4_XS",
+  "variant": "IQ4_XS",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-IQ4_XS.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-IQ4_XS.gguf",
+      "bytes": 638856128
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-iq4-xs-inventory"
+  ],
+  "totalBytes": 1748974112,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q4-0",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_0",
+  "variant": "Q4_0",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q4_0.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q4_0.gguf",
+      "bytes": 644159072
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-0-inventory"
+  ],
+  "totalBytes": 1754277056,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q4-1",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_1",
+  "variant": "Q4_1",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q4_1.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q4_1.gguf",
+      "bytes": 691138016
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-1-inventory"
+  ],
+  "totalBytes": 1801256000,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q4-k-m",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+      "bytes": 672003680
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-k-m-inventory"
+  ],
+  "totalBytes": 1782121664,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q4-k-s",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_S",
+  "variant": "Q4_K_S",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q4_K_S.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q4_K_S.gguf",
+      "bytes": 647960160
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q4-k-s-inventory"
+  ],
+  "totalBytes": 1758078144,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q5-0",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_0",
+  "variant": "Q5_0",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q5_0.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q5_0.gguf",
+      "bytes": 738116960
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-0-inventory"
+  ],
+  "totalBytes": 1848234944,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q5-1",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_1",
+  "variant": "Q5_1",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q5_1.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q5_1.gguf",
+      "bytes": 785095904
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-1-inventory"
+  ],
+  "totalBytes": 1895213888,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q5-k-m",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_K_M",
+  "variant": "Q5_K_M",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q5_K_M.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q5_K_M.gguf",
+      "bytes": 752461152
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-k-m-inventory"
+  ],
+  "totalBytes": 1862579136,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q5-k-s",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_K_S",
+  "variant": "Q5_K_S",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q5_K_S.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q5_K_S.gguf",
+      "bytes": 738116960
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q5-k-s-inventory"
+  ],
+  "totalBytes": 1848234944,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q6-k",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q6_K",
+  "variant": "Q6_K",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q6_K.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q6_K.gguf",
+      "bytes": 837947232
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q6-k-inventory"
+  ],
+  "totalBytes": 1948065216,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-1b-gguf-q8-0",
+  "modelVersionId": "model:minicpm-v-4-7-1b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-1B",
+  "baseRevision": "379f120c2ff3588e6e06559ec6b9ec15cc05114e",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q8_0",
+  "variant": "Q8_0",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/tree/0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "repositoryRevision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-1B-Q8_0.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/MiniCPM-V-4_7-1B-Q8_0.gguf",
+      "bytes": 1081517920
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf/resolve/0ad5ef54b51a8cf42de80532d840b61b66519054/mmproj-model-f16.gguf",
+      "bytes": 1110117984
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-1b-gguf-q8-0-inventory"
+  ],
+  "totalBytes": 2191635904,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-bf16",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/tree/896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "repositoryRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "files": [
+    {
+      "path": "model-00001-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00001-of-00016.safetensors",
+      "bytes": 4379857664
+    },
+    {
+      "path": "model-00002-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00002-of-00016.safetensors",
+      "bytes": 4806251232
+    },
+    {
+      "path": "model-00003-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00003-of-00016.safetensors",
+      "bytes": 4443502024
+    },
+    {
+      "path": "model-00004-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00004-of-00016.safetensors",
+      "bytes": 4506427472
+    },
+    {
+      "path": "model-00005-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00005-of-00016.safetensors",
+      "bytes": 5037002424
+    },
+    {
+      "path": "model-00006-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00006-of-00016.safetensors",
+      "bytes": 4513785088
+    },
+    {
+      "path": "model-00007-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00007-of-00016.safetensors",
+      "bytes": 4443502056
+    },
+    {
+      "path": "model-00008-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00008-of-00016.safetensors",
+      "bytes": 4506427472
+    },
+    {
+      "path": "model-00009-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00009-of-00016.safetensors",
+      "bytes": 4451908336
+    },
+    {
+      "path": "model-00010-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00010-of-00016.safetensors",
+      "bytes": 4499078520
+    },
+    {
+      "path": "model-00011-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00011-of-00016.safetensors",
+      "bytes": 5043302744
+    },
+    {
+      "path": "model-00012-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00012-of-00016.safetensors",
+      "bytes": 4451899712
+    },
+    {
+      "path": "model-00013-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00013-of-00016.safetensors",
+      "bytes": 4573874192
+    },
+    {
+      "path": "model-00014-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00014-of-00016.safetensors",
+      "bytes": 4431640400
+    },
+    {
+      "path": "model-00015-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00015-of-00016.safetensors",
+      "bytes": 4387206632
+    },
+    {
+      "path": "model-00016-of-00016.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/resolve/896c2d454672476a7b45dcc5e3f0c700a0218577/model-00016-of-00016.safetensors",
+      "bytes": 1950237480
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-bf16-inventory"
+  ],
+  "totalBytes": 70425903448,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "Transformers"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-int4",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "int4 (bitsandbytes)",
+  "variant": "int4 (bitsandbytes)",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-int4",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-int4/tree/2448b5d33a6cec254768921a9bd86219f5401a41",
+  "repositoryRevision": "2448b5d33a6cec254768921a9bd86219f5401a41",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-int4/resolve/2448b5d33a6cec254768921a9bd86219f5401a41/model-00001-of-00002.safetensors",
+      "bytes": 20011635992
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-int4/resolve/2448b5d33a6cec254768921a9bd86219f5401a41/model-00002-of-00002.safetensors",
+      "bytes": 2612571512
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-int4-inventory"
+  ],
+  "totalBytes": 22624207504,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-awq",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "AWQ W4A16",
+  "variant": "AWQ W4A16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ/tree/9832dea29707a60ba3c2001b6ad5533212d150cd",
+  "repositoryRevision": "9832dea29707a60ba3c2001b6ad5533212d150cd",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ/resolve/9832dea29707a60ba3c2001b6ad5533212d150cd/model-00001-of-00002.safetensors",
+      "bytes": 20011635992
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ/resolve/9832dea29707a60ba3c2001b6ad5533212d150cd/model-00002-of-00002.safetensors",
+      "bytes": 2612571512
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-awq-inventory"
+  ],
+  "totalBytes": 22624207504,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gptq",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "GPTQ W4A16",
+  "variant": "GPTQ W4A16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ/tree/4d1caf54688a119efa58588aadfc53a6cc8735e9",
+  "repositoryRevision": "4d1caf54688a119efa58588aadfc53a6cc8735e9",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ/resolve/4d1caf54688a119efa58588aadfc53a6cc8735e9/model-00001-of-00002.safetensors",
+      "bytes": 20011635992
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-GPTQ/resolve/4d1caf54688a119efa58588aadfc53a6cc8735e9/model-00002-of-00002.safetensors",
+      "bytes": 2612571512
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gptq-inventory"
+  ],
+  "totalBytes": 22624207504,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-fp8",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "FP8",
+  "variant": "FP8",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8/tree/747e8cf6c0203f78575b759ec4ed9d634780b6d1",
+  "repositoryRevision": "747e8cf6c0203f78575b759ec4ed9d634780b6d1",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8/resolve/747e8cf6c0203f78575b759ec4ed9d634780b6d1/model-00001-of-00002.safetensors",
+      "bytes": 20003901744
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8/resolve/747e8cf6c0203f78575b759ec4ed9d634780b6d1/model-00002-of-00002.safetensors",
+      "bytes": 18009032096
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-fp8-inventory"
+  ],
+  "totalBytes": 38012933840,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است."
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-f16",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "F16",
+  "variant": "F16",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-F16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-F16.gguf",
+      "bytes": 69375191008
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-f16-inventory"
+  ],
+  "totalBytes": 70494766848,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq3-m",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ3_M",
+  "variant": "IQ3_M",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-IQ3_M.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-IQ3_M.gguf",
+      "bytes": 15440064448
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq3-m-inventory"
+  ],
+  "totalBytes": 16559640288,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq3-xs",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ3_XS",
+  "variant": "IQ3_XS",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-IQ3_XS.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-IQ3_XS.gguf",
+      "bytes": 14483689408
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq3-xs-inventory"
+  ],
+  "totalBytes": 15603265248,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq4-nl",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ4_NL",
+  "variant": "IQ4_NL",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-IQ4_NL.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-IQ4_NL.gguf",
+      "bytes": 19778776256
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq4-nl-inventory"
+  ],
+  "totalBytes": 20898352096,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-iq4-xs",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "IQ4_XS",
+  "variant": "IQ4_XS",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-IQ4_XS.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-IQ4_XS.gguf",
+      "bytes": 18728286400
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-iq4-xs-inventory"
+  ],
+  "totalBytes": 19847862240,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-0",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_0",
+  "variant": "Q4_0",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q4_0.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q4_0.gguf",
+      "bytes": 19714550688
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-0-inventory"
+  ],
+  "totalBytes": 20834126528,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-1",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_1",
+  "variant": "Q4_1",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q4_1.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q4_1.gguf",
+      "bytes": 21847643040
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-1-inventory"
+  ],
+  "totalBytes": 22967218880,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-k-m",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q4_K_M.gguf",
+      "bytes": 21166255008
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-k-m-inventory"
+  ],
+  "totalBytes": 22285830848,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q4-k-s",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_S",
+  "variant": "Q4_K_S",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q4_K_S.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q4_K_S.gguf",
+      "bytes": 19889400736
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q4-k-s-inventory"
+  ],
+  "totalBytes": 21008976576,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-0",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_0",
+  "variant": "Q5_0",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q5_0.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q5_0.gguf",
+      "bytes": 23980735392
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-0-inventory"
+  ],
+  "totalBytes": 25100311232,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-1",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_1",
+  "variant": "Q5_1",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q5_1.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q5_1.gguf",
+      "bytes": 26113827744
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-1-inventory"
+  ],
+  "totalBytes": 27233403584,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-k-m",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_K_M",
+  "variant": "Q5_K_M",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q5_K_M.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q5_K_M.gguf",
+      "bytes": 24728583072
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-k-m-inventory"
+  ],
+  "totalBytes": 25848158912,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q5-k-s",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q5_K_S",
+  "variant": "Q5_K_S",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q5_K_S.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q5_K_S.gguf",
+      "bytes": 23980735392
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q5-k-s-inventory"
+  ],
+  "totalBytes": 25100311232,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q6-k",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q6_K",
+  "variant": "Q6_K",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q6_K.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q6_K.gguf",
+      "bytes": 28513556640
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q6-k-inventory"
+  ],
+  "totalBytes": 29633132480,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-q8-0",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q8_0",
+  "variant": "Q8_0",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-Q8_0.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-Q8_0.gguf",
+      "bytes": 36902368928
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-q8-0-inventory"
+  ],
+  "totalBytes": 38021944768,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:minicpm-v-4-7-35b-a3b-gguf-mix-q3gud-im",
+  "modelVersionId": "model:minicpm-v-4-7-35b-a3b",
+  "baseModelRepository": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "baseRevision": "896c2d454672476a7b45dcc5e3f0c700a0218577",
+  "publisher": "OpenBMB",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "mix_q3gud_im",
+  "variant": "mix_q3gud_im",
+  "repositoryUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+  "filesUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/tree/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "repositoryRevision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+  "files": [
+    {
+      "path": "MiniCPM-V-4_7-35B-A3B-mix_q3gud_im.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/MiniCPM-V-4_7-35B-A3B-mix_q3gud_im.gguf",
+      "bytes": 15503944896
+    },
+    {
+      "path": "mmproj-model-f16.gguf",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf/resolve/8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7/mmproj-model-f16.gguf",
+      "bytes": 1119575840
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-minicpm-v-4-7-35b-a3b-gguf-mix-q3gud-im-inventory"
+  ],
+  "totalBytes": 16623520736,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-nano-bf16",
+  "modelVersionId": "model:vllm-sr-d3-nano",
+  "baseModelRepository": "vllm-sr/d3-nano",
+  "baseRevision": "462efc366229ea268cf4eed3738b3fc4415e4817",
+  "publisher": "vLLM Semantic Router",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/vllm-sr/d3-nano",
+  "filesUrl": "https://huggingface.co/vllm-sr/d3-nano/tree/462efc366229ea268cf4eed3738b3fc4415e4817",
+  "repositoryRevision": "462efc366229ea268cf4eed3738b3fc4415e4817",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-nano/resolve/462efc366229ea268cf4eed3738b3fc4415e4817/model.safetensors",
+      "bytes": 4426555160
+    },
+    {
+      "path": "readout.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-nano/resolve/462efc366229ea268cf4eed3738b3fc4415e4817/readout.safetensors",
+      "bytes": 2089040
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-nano-bf16-inventory"
+  ],
+  "totalBytes": 4428644200,
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM Semantic Router"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-nano-ollama",
+  "modelVersionId": "model:vllm-sr-d3-nano",
+  "baseModelRepository": "vllm-sr/d3-nano",
+  "baseRevision": "462efc366229ea268cf4eed3738b3fc4415e4817",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "Q8_0 / MLX package",
+  "variant": "d3:2b",
+  "repositoryUrl": "https://ollama.com/library/d3:2b",
+  "filesUrl": "https://ollama.com/library/d3:2b",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "3.1–3.2 GB",
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-d3-nano-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-mini-bf16",
+  "modelVersionId": "model:vllm-sr-d3-mini",
+  "baseModelRepository": "vllm-sr/d3-mini",
+  "baseRevision": "bd0090dd758d32ba59ef5c749910a8e87fc4391f",
+  "publisher": "vLLM Semantic Router",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/vllm-sr/d3-mini",
+  "filesUrl": "https://huggingface.co/vllm-sr/d3-mini/tree/bd0090dd758d32ba59ef5c749910a8e87fc4391f",
+  "repositoryRevision": "bd0090dd758d32ba59ef5c749910a8e87fc4391f",
+  "files": [
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-mini/resolve/bd0090dd758d32ba59ef5c749910a8e87fc4391f/model-00001-of-00002.safetensors",
+      "bytes": 4973332144
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-mini/resolve/bd0090dd758d32ba59ef5c749910a8e87fc4391f/model-00002-of-00002.safetensors",
+      "bytes": 4105283936
+    },
+    {
+      "path": "readout.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-mini/resolve/bd0090dd758d32ba59ef5c749910a8e87fc4391f/readout.safetensors",
+      "bytes": 2611280
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-mini-bf16-inventory"
+  ],
+  "totalBytes": 9081227360,
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM Semantic Router"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-mini-ollama",
+  "modelVersionId": "model:vllm-sr-d3-mini",
+  "baseModelRepository": "vllm-sr/d3-mini",
+  "baseRevision": "bd0090dd758d32ba59ef5c749910a8e87fc4391f",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "Q8_0 / MLX package",
+  "variant": "d3:4b",
+  "repositoryUrl": "https://ollama.com/library/d3:4b",
+  "filesUrl": "https://ollama.com/library/d3:4b",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "5.6 GB",
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-d3-mini-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-flash-bf16",
+  "modelVersionId": "model:vllm-sr-d3-flash",
+  "baseModelRepository": "vllm-sr/d3-flash",
+  "baseRevision": "13dc1cc8ef23caefa765907e1d764751e5629f7d",
+  "publisher": "vLLM Semantic Router",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/vllm-sr/d3-flash",
+  "filesUrl": "https://huggingface.co/vllm-sr/d3-flash/tree/13dc1cc8ef23caefa765907e1d764751e5629f7d",
+  "repositoryRevision": "13dc1cc8ef23caefa765907e1d764751e5629f7d",
+  "files": [
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-flash/resolve/13dc1cc8ef23caefa765907e1d764751e5629f7d/model-00001-of-00004.safetensors",
+      "bytes": 4911663824
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-flash/resolve/13dc1cc8ef23caefa765907e1d764751e5629f7d/model-00002-of-00004.safetensors",
+      "bytes": 4987839568
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-flash/resolve/13dc1cc8ef23caefa765907e1d764751e5629f7d/model-00003-of-00004.safetensors",
+      "bytes": 4954726768
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-flash/resolve/13dc1cc8ef23caefa765907e1d764751e5629f7d/model-00004-of-00004.safetensors",
+      "bytes": 1931248816
+    },
+    {
+      "path": "readout.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3-flash/resolve/13dc1cc8ef23caefa765907e1d764751e5629f7d/readout.safetensors",
+      "bytes": 4178000
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-flash-bf16-inventory"
+  ],
+  "totalBytes": 16789656976,
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM Semantic Router"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-flash-ollama",
+  "modelVersionId": "model:vllm-sr-d3-flash",
+  "baseModelRepository": "vllm-sr/d3-flash",
+  "baseRevision": "13dc1cc8ef23caefa765907e1d764751e5629f7d",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "Q8_0 / MLX package",
+  "variant": "d3:9b",
+  "repositoryUrl": "https://ollama.com/library/d3:9b",
+  "filesUrl": "https://ollama.com/library/d3:9b",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "10 GB",
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-d3-flash-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-bf16",
+  "modelVersionId": "model:vllm-sr-d3",
+  "baseModelRepository": "vllm-sr/d3",
+  "baseRevision": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c",
+  "publisher": "vLLM Semantic Router",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/vllm-sr/d3",
+  "filesUrl": "https://huggingface.co/vllm-sr/d3/tree/20f37b9a892acc13d4b07a4f3c4f11b2518c615c",
+  "repositoryRevision": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c",
+  "files": [
+    {
+      "path": "model-00001-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00001-of-00011.safetensors",
+      "bytes": 4997471976
+    },
+    {
+      "path": "model-00002-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00002-of-00011.safetensors",
+      "bytes": 4965144568
+    },
+    {
+      "path": "model-00003-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00003-of-00011.safetensors",
+      "bytes": 4933789248
+    },
+    {
+      "path": "model-00004-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00004-of-00011.safetensors",
+      "bytes": 4965227496
+    },
+    {
+      "path": "model-00005-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00005-of-00011.safetensors",
+      "bytes": 4974750552
+    },
+    {
+      "path": "model-00006-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00006-of-00011.safetensors",
+      "bytes": 4924266240
+    },
+    {
+      "path": "model-00007-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00007-of-00011.safetensors",
+      "bytes": 4974750560
+    },
+    {
+      "path": "model-00008-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00008-of-00011.safetensors",
+      "bytes": 4902229944
+    },
+    {
+      "path": "model-00009-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00009-of-00011.safetensors",
+      "bytes": 4996786840
+    },
+    {
+      "path": "model-00010-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00010-of-00011.safetensors",
+      "bytes": 4902229960
+    },
+    {
+      "path": "model-00011-of-00011.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/model-00011-of-00011.safetensors",
+      "bytes": 2634155256
+    },
+    {
+      "path": "readout.safetensors",
+      "url": "https://huggingface.co/vllm-sr/d3/resolve/20f37b9a892acc13d4b07a4f3c4f11b2518c615c/readout.safetensors",
+      "bytes": 5222480
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-vllm-sr-d3-bf16-inventory"
+  ],
+  "totalBytes": 52176025120,
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Transformers",
+    "vLLM Semantic Router"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:vllm-sr-d3-ollama",
+  "modelVersionId": "model:vllm-sr-d3",
+  "baseModelRepository": "vllm-sr/d3",
+  "baseRevision": "20f37b9a892acc13d4b07a4f3c4f11b2518c615c",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "Q8_0 / MLX package",
+  "variant": "d3:27b",
+  "repositoryUrl": "https://ollama.com/library/d3:27b",
+  "filesUrl": "https://ollama.com/library/d3:27b",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "29 GB",
+  "scopeNote": "مدل و readout باید با هم دریافت شوند. مسیر Semantic Router در کانال توسعه است و با پشتیبانی مستقیم موتور عمومی vLLM یکی نیست. حجم بستهٔ Ollama، اندازهٔ دانلود است؛ مصرف واقعی VRAM و KV اندازه‌گیری نشده است.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-d3-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-bolt-e4b-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "baseRevision": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/tree/49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "repositoryRevision": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "files": [
+    {
+      "path": "model-00001-of-00001.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/resolve/49843eed8db1f1c616c47af75cfd36e07aec0667/model-00001-of-00001.safetensors",
+      "bytes": 15882494698
+    },
+    {
+      "path": "model-frozen-shared-kv.safetensors",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/resolve/49843eed8db1f1c616c47af75cfd36e07aec0667/model-frozen-shared-kv.safetensors",
+      "bytes": 110118048
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-bf16-inventory"
+  ],
+  "totalBytes": 15992612746,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "vLLM"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-bolt-e4b-q4-k-m",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "baseRevision": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "gguf",
+  "precision": "Q4_K_M",
+  "variant": "Q4_K_M",
+  "repositoryUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+  "filesUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/tree/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be",
+  "repositoryRevision": "1db54d5b12533ff1bcaa8e42cf4c667988a1f1be",
+  "files": [
+    {
+      "path": "Nemotron-3.5-Bolt-E4B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/resolve/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/Nemotron-3.5-Bolt-E4B-Q4_K_M.gguf",
+      "bytes": 6180446208
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-bolt-e4b-q4-k-m-inventory"
+  ],
+  "totalBytes": 6180446208,
+  "scopeNote": "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+  "runtimeEngines": [
+    "llama.cpp"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-bolt-e4b-ollama-q4-k-m",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "baseRevision": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "Q4_K_M",
+  "variant": "nemotron-3.5-bolt:e4b-q4_k_m",
+  "repositoryUrl": "https://ollama.com/library/nemotron-3.5-bolt:e4b-q4_k_m",
+  "filesUrl": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "7.9 GB",
+  "scopeNote": "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-bolt-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-bolt-e4b-ollama-q8-0",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "baseRevision": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "Q8_0",
+  "variant": "nemotron-3.5-bolt:e4b-q8_0",
+  "repositoryUrl": "https://ollama.com/library/nemotron-3.5-bolt:e4b-q8_0",
+  "filesUrl": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "9.8 GB",
+  "scopeNote": "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-bolt-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-bolt-e4b-ollama-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-bolt-e4b",
+  "baseModelRepository": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "baseRevision": "49843eed8db1f1c616c47af75cfd36e07aec0667",
+  "publisher": "Ollama",
+  "authority": "third-party",
+  "format": "ollama",
+  "precision": "BF16",
+  "variant": "nemotron-3.5-bolt:e4b-bf16",
+  "repositoryUrl": "https://ollama.com/library/nemotron-3.5-bolt:e4b-bf16",
+  "filesUrl": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+  "files": [],
+  "inventoryStatus": "not-recorded",
+  "sizeDescription": "17 GB",
+  "scopeNote": "مشخصات پایهٔ NVIDIA: متن و 64K. Ollama برای بستهٔ خود تصویر و 128K اعلام می‌کند؛ این اختلاف تأیید نشده و فیلتر چندوجهی مدل فعال نیست. GGUF اصلی 6,180,446,208 بایت است؛ نام 4GB حجم فایل یا تضمین VRAM نیست. DFlash کمکی است و جداگانه حافظه می‌خواهد.",
+  "runtimeEngines": [
+    "Ollama"
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-bolt-ollama"
+  ]
+});
+artifactListings.push({
+  "id": "artifact-listing:nvidia-nemotron-3-5-rerank-8b-bf16-bf16",
+  "modelVersionId": "model:nvidia-nemotron-3-5-rerank-8b-bf16",
+  "baseModelRepository": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "baseRevision": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "publisher": "NVIDIA",
+  "authority": "official",
+  "format": "safetensors",
+  "precision": "BF16",
+  "variant": "BF16",
+  "repositoryUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "filesUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/tree/f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "repositoryRevision": "f88f8d9104726747791283ab156d2fcdb29e90a7",
+  "files": [
+    {
+      "path": "2_Dense/model.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/resolve/f88f8d9104726747791283ab156d2fcdb29e90a7/2_Dense/model.safetensors",
+      "bytes": 16472
+    },
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/resolve/f88f8d9104726747791283ab156d2fcdb29e90a7/model-00001-of-00004.safetensors",
+      "bytes": 4884101488
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/resolve/f88f8d9104726747791283ab156d2fcdb29e90a7/model-00002-of-00004.safetensors",
+      "bytes": 4932506976
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/resolve/f88f8d9104726747791283ab156d2fcdb29e90a7/model-00003-of-00004.safetensors",
+      "bytes": 4932507000
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16/resolve/f88f8d9104726747791283ab156d2fcdb29e90a7/model-00004-of-00004.safetensors",
+      "bytes": 2013275416
+    }
+  ],
+  "verifiedOn": "2026-10-24",
+  "evidenceIds": [
+    "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-bf16-inventory"
+  ],
+  "totalBytes": 16762407352,
+  "scopeNote": "حجم فایل دانلود است؛ حافظهٔ KV، اجزای کمکی و سربار اجرا جداگانه محاسبه می‌شوند. آزمون محلی انجام نشده است.",
+  "runtimeEngines": [
+    "Transformers",
+    "Sentence Transformers",
+    "vLLM"
+  ]
+});

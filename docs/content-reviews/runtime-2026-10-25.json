@@ -1,0 +1,93 @@
+{
+  "reviewedOn": "2026-10-25",
+  "sourcesFolder": "data/llm/sources/runtime-2026-10-25",
+  "runtimeTested": false,
+  "softwareReleasesAdded": [
+    "software-release:llama-cpp-b11865",
+    "software-release:llama-cpp-b11858",
+    "software-release:llama-cpp-b11870"
+  ],
+  "modelRouteUpdated": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+  "preservedCollections": [
+    "families",
+    "models",
+    "artifacts",
+    "softwareProducts",
+    "engines",
+    "servingStacks",
+    "deploymentConfigurations",
+    "softwareCapabilities",
+    "apiCompatibility",
+    "hardwareConfigurations",
+    "workloads",
+    "qualityEvaluations",
+    "applicationAssessments",
+    "executionFeasibility",
+    "deploymentCompatibility",
+    "benchmarkRuns",
+    "specializedAssessments",
+    "claims",
+    "publishedEvaluations",
+    "artifactListings",
+    "referenceComparisons",
+    "selectionGuidance",
+    "articleSections",
+    "quantizationStudies"
+  ],
+  "preservedFileHashes": {
+    "src/lib/llm/wizard-core.ts": "15a6067340e629c71f3f69c95d986732f0cea7554c50fdc6a5253398f10fb3b1",
+    "src/lib/llm/wizard-candidates.ts": "e3bf35e1b93c100c58c6b2db0b3cbaa85ee3bba3a177f95456f1a62befb4a2d3",
+    "src/lib/llm/wizard-decisions.ts": "a8605caa879374bc737a36bcae7c92dde23f72491cda82cbd32d65bf241c6950",
+    "src/lib/llm/wizard-api.ts": "308d0aa6c565609bbd29d36fa3b7548c900a46299bd5030f3ca565864222b483",
+    "src/lib/llm/wizard.ts": "98d5ad09970ea855d30693cd9f8986c6a8cf4bc8fbedfcd1e154edf3fac5f209",
+    "src/lib/gpu-data.ts": "467e8bdeb381e8eadfb16aaaa3739025c1b63c61cbc2c7cc894d4779f3e201be",
+    "src/lib/server-data.ts": "436177edd0871b1af4b54f704211ac30f73da5a76c05a97db04332e482c8643c",
+    "data/llm/v0.2.0/data/memory-policy.json": "a4b930f1bae2ad3fd4d218e43f4568601c35b4fa0fab3900627318a6f470a2b9",
+    "data/llm/v0.2.0/data/published-performance.json": "dae94baef47f14ea205e7f37aa0a86fc9b1e7b0f4de39ca5fbb139271858f3f0"
+  },
+  "articlesPreserved": 189,
+  "wizardReview": {
+    "architectureSpecificTensorSplitOptionFound": false,
+    "notes": "Existing wizard text describes tensor split conditionally for old releases; there is no mellum/flint catalog row or architecture-specific split selector. DeepSeek 1017 remains requires-validation and excluded from default local recommendations. No wizard code changed."
+  },
+  "deferred": {
+    "b11861": "Not promoted to a verified MiniMax route: PR 31097 lacks a public GGUF for full runtime reproduction."
+  },
+  "publication": "Prepared locally; not deployed.",
+  "verification": {
+    "datasetValidation": "passed",
+    "locales": [
+      "fa",
+      "en",
+      "es"
+    ],
+    "relatedTests": {
+      "passed": 33,
+      "failed": 0
+    },
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "sitemapIndexablePages": 266,
+    "structuredDataBlocks": 277,
+    "staticGuides": {
+      "fa": {
+        "releaseVersionsInStaticHtml": true,
+        "scopedNotesInStaticHtml": true
+      },
+      "en": {
+        "releaseVersionsInStaticHtml": true,
+        "scopedNotesInStaticHtml": true
+      },
+      "es": {
+        "releaseVersionsInStaticHtml": true,
+        "scopedNotesInStaticHtml": true
+      }
+    },
+    "protectedFileHashes": "unchanged",
+    "modelAndWeightInventories": "unchanged",
+    "fullSuite": "Not repeated; this update used the related regression suite. The prior 2026-10-24 review records 20 baseline full-suite failures."
+  }
+}

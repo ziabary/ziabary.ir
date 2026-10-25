@@ -1001,3 +1001,108 @@ workloads.push({
     "state": "not-applicable"
   }
 });
+workloads.push({
+  "id": "workload:nvidia-nemotron-3-5-embed-1b-bf16-retrieval",
+  "name": "بازیابی سند؛ سناریوی ارزیابی بدون اجرای ثبت‌شده",
+  "applicationId": "enterprise-rag",
+  "subapplicationId": "retrieval",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-applicable"
+  },
+  "contextLength": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:nemotron-embed-1b-card"
+    ],
+    "unit": "token"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-applicable"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  }
+});
+workloads.push({
+  "id": "workload:nvidia-nemotron-3-5-embed-8b-bf16-retrieval",
+  "name": "بازیابی سند؛ سناریوی ارزیابی بدون اجرای ثبت‌شده",
+  "applicationId": "enterprise-rag",
+  "subapplicationId": "retrieval",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-applicable"
+  },
+  "contextLength": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:nemotron-embed-8b-card"
+    ],
+    "unit": "token"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-applicable"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  }
+});
+workloads.push({
+  "id": "workload:nvidia-nemotron-3-5-rerank-8b-bf16-reranking",
+  "name": "بازرتبه‌بندی سند؛ سناریوی ارزیابی بدون اجرای ثبت‌شده",
+  "applicationId": "enterprise-rag",
+  "subapplicationId": "reranking",
+  "inputLength": {
+    "state": "not-measured"
+  },
+  "outputLength": {
+    "state": "not-applicable"
+  },
+  "contextLength": {
+    "state": "known",
+    "value": 32768,
+    "evidenceIds": [
+      "evidence:tables1024-nvidia-nemotron-3-5-rerank-8b-bf16-card"
+    ],
+    "unit": "token"
+  },
+  "batchSize": {
+    "state": "not-measured"
+  },
+  "concurrency": {
+    "state": "not-measured"
+  },
+  "arrivalRate": {
+    "state": "not-applicable"
+  },
+  "reasoningMode": {
+    "state": "not-applicable"
+  },
+  "reasoningBudget": {
+    "state": "not-applicable"
+  }
+});

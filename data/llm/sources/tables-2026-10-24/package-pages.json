@@ -1,0 +1,39 @@
+{
+  "reviewedOn": "2026-10-24",
+  "ollamaD3": {
+    "source": "https://ollama.com/library/d3",
+    "packages": {
+      "2b": "3.1–3.2 GB (MLX / llama.cpp variants)",
+      "4b": "5.6 GB",
+      "9b": "10 GB",
+      "27b": "29 GB"
+    },
+    "exactBytesRecorded": false
+  },
+  "ollamaE4b": {
+    "source": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+    "packages": {
+      "e4b-q4_K_M": "7.9 GB",
+      "e4b-q8_0": "9.8 GB",
+      "e4b-bf16": "17 GB"
+    },
+    "mlxVariantsSeparate": true,
+    "contextClaim": "128K",
+    "inputClaim": [
+      "text",
+      "image"
+    ],
+    "exactBytesRecorded": false
+  },
+  "nvidiaApi": {
+    "source": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b",
+    "status": "Prototype / free endpoint available",
+    "displayedContext": "66K",
+    "displayedDownloadStatus": "Not available (platform status, not HF weight availability)",
+    "modelId": "nvidia/nemotron-3.5-bolt-e4b",
+    "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions"
+  },
+  "mainGgufBytes": 6180446208,
+  "dflashGgufBytes": 736812096,
+  "runtimeTested": false
+}

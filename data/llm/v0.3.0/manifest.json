@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-10-19",
+  "asOf": "2026-10-25",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -162,5 +162,48 @@
     "memoryEstimateChanged": false,
     "wizardChanged": false,
     "hardwareChanged": false
+  },
+  "runtime20261021": {
+    "softwareReleases": [
+      "software-release:llama-cpp-b11774",
+      "software-release:llama-cpp-b11778"
+    ],
+    "historicalNotesMovedToOwnRows": [
+      "b11160",
+      "b11182",
+      "b11223",
+      "b11224",
+      "b11240",
+      "b11279"
+    ],
+    "modelsAdded": [
+      "model:nvidia-nemotron-3-5-embed-1b-bf16",
+      "model:nvidia-nemotron-3-5-embed-8b-bf16"
+    ],
+    "runtimeTested": false,
+    "memoryEstimateChanged": false,
+    "hardwareChanged": false,
+    "wizardCodeChanged": false
+  },
+  "tables20261024": {
+    "modelsAdded": 8,
+    "softwareReleasesAdded": 10,
+    "scope": "Deduplicated pasted table updates; exact downloadable file manifests; package-specific E4B conflict retained; no articles, hardware specifications, memory policy or wizard code changed",
+    "runtimeTested": false,
+    "sourcesFolder": "data/llm/sources/tables-2026-10-24"
+  },
+  "runtime20261025": {
+    "softwareReleases": [
+      "software-release:llama-cpp-b11865",
+      "software-release:llama-cpp-b11858",
+      "software-release:llama-cpp-b11870"
+    ],
+    "modelRoute": "model:deepseek-ai-deepseek-v4-1-flash-1017",
+    "runtimeTested": false,
+    "scope": "RPC/RDMA bounds; architecture-scoped tensor-split deny list; experimental deepseek41 conversion and runtime route only",
+    "modelsAdded": 0,
+    "memoryEstimateChanged": false,
+    "hardwareChanged": false,
+    "wizardCodeChanged": false
   }
 }

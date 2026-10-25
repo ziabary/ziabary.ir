@@ -324,5 +324,10 @@
   "eawcaobee": "/en/articles/when-can-ai-output-be-evidence-en/",
   "eawcaobee2": "/es/articles/when-can-ai-output-be-evidence-es/",
   "aagscar": "/articles/ai-governance-source-code-audit-rights/",
-  "antirt": "/articles/nvidia-today-infrastructure-resilience-tomorrow/"
+  "antirt": "/articles/nvidia-today-infrastructure-resilience-tomorrow/",
+  "aasswe": "/articles/ai-safety-standards-without-enforcement/",
+  "anaob1": "/articles/national-ai-organization-budget-1406/",
+  "actcpm": "/articles/cuda-to-cann-pytorch-migration/",
+  "eactcpme": "/en/articles/cuda-to-cann-pytorch-migration-en/",
+  "eactcpme2": "/es/articles/cuda-to-cann-pytorch-migration-es/"
 }
