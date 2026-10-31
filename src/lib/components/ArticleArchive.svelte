@@ -135,7 +135,7 @@
         <ArticleCard {article} {locale} href={article.href} headingTag="h2" />
       {:else}
       <article class="archive-row">
-        {#if article.cover}<a class="archive-thumbnail" href={article.href} tabindex="-1" aria-hidden="true"><img {...imageAttributes(article.cover, '(max-width: 680px) 88px, 180px')} alt="" loading="lazy" width="180" height="120" /></a>{/if}
+        {#if article.cover}<a class="archive-thumbnail" href={article.href} tabindex="-1" aria-hidden="true"><img {...imageAttributes(article.cover, '(max-width: 680px) 88px, 180px')} style:object-position={article.coverPosition ?? 'center top'} alt="" loading="lazy" width="180" height="120" /></a>{/if}
         <div><div class="row-meta">{#if article.draft}<strong>{draftLabel}</strong>{/if}<span>{article.category}</span><time datetime={article.date}>{locale === 'fa' && article.faDate ? article.faDate : formatDate(article.date, locale)}</time></div>
           <h2><a href={article.href}>{article.title}</a></h2><p>{article.excerpt}</p><a class="text-link" href={article.href}>{copy.read} {locale === 'fa' ? '←' : '→'}</a></div>
       </article>

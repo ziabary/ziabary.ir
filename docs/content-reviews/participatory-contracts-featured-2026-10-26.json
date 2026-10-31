@@ -1,0 +1,32 @@
+{
+  "id": "participatory-contracts-featured-20261026",
+  "date": "2026-10-26",
+  "scope": "Local featured-carousel update",
+  "featuredSelection": [
+    "participatory-contracts-it-ai-01"
+  ],
+  "images": [
+    {
+      "path": "static/images/articles/participatory-contracts-it-ai-01/featured.png",
+      "source": "static/images/articles/participatory-contracts-it-ai-01/cover.png",
+      "purpose": "Persian featured carousel",
+      "tool": "built-in imagegen",
+      "prompt": "Use case: compositing / stylized-concept.\nAsset type: very wide Persian featured-carousel background, intended canvas 2560 × 1024 pixels (2.5:1 panoramic landscape).\nInput image: reference for the exact visual world, materials, architecture, colors, and symbols. Recompose this source for a web banner; do not simply erase text from the existing composition.\nPrimary request: Put the ENTIRE meaningful illustration in the LEFT 42% of the canvas, with its focal point around x=25% and y=45%. The RIGHT 58% must be spacious, quiet, mostly empty blue sky and a soft distant atmospheric background. The right half is deliberately reserved for the site's large Persian title and will be faded by the website. Nothing important may depend on visibility in the right half.\nScene on left: preserve the source's two distinct modern glass technology-company buildings, one with a glowing neural-brain icon and one with a microchip icon; bring BOTH buildings into the left portion as a compact coherent architectural grouping. Between and below them, show the jointly signed paper contract with two pens on the small stone bridge, connected by two golden streams of light. Under it include the small bank with linked rings and coins, a law book, a blue social-insurance folder and a green taxation folder. Make this left-side grouping large, clear and readable as a composition, with convincing depth; do not miniaturize it into a tiny logo. Keep the key imagery inside generous left/top/bottom safe margins for responsive cropping. The main buildings and contract should occupy the left upper and middle area, not depend on the bottom edge. Continue a faint skyline and mountains behind it, gradually simplifying smoothly into open blue sky toward the right. No meaningful objects on the right, no right-side building, no right-side folder.\nStyle: match the source's sophisticated photorealistic 3D architectural editorial illustration, blue glass, aged stone, cream contract paper, warm golden light, cool deep-blue sky, crisp details and soft atmospheric distance. The source's concepts must remain recognizable.\nText: NO large headline, NO subtitle, NO watermark, NO extra slogans. Small Persian object labels may read only: contract «قرارداد مشارکتی», book «قانون», blue folder «تأمین اجتماعی», green folder «امور مالیاتی».\nConstraints: a single seamless wide scene, not a collage, no hard dividing line, no white rectangle or UI mockup, no artificial text panel, no people. Empty right-side space is essential. Preserve collaboration between TWO independent companies rather than merging them.",
+      "edit": "Recompose the original scene as a 2.5:1 panorama, grouping both companies, the shared contract, law book and administrative folders on the left, with quiet open space on the right for the featured fade and title.",
+      "originalCoverRetained": true,
+      "sha256": "33c9685a1ff5dfd8bdda291bf8fe23029674499b9cffeffa4e022963c37b881d"
+    }
+  ],
+  "remoteDeploymentPerformed": false,
+  "revisionReason": "User requested a wide composition with empty right-side space so the site's fade does not hide the meaningful illustration.",
+  "validation": {
+    "check": "npm run check: 0 errors, 0 warnings",
+    "build": "npm run build: passed, including sitemap and short-link validation",
+    "featuredOrder": "First active featured story on Persian article archive",
+    "visualReview": {
+      "desktop": "1440 × 1400: left illustration remains visible under the right-side fade",
+      "mobile": "390 × 1500: buildings and joint contract remain visible above the title"
+    },
+    "responsiveImage": "/images/responsive/f589998a92f35c15-960.webp"
+  }
+}

@@ -2,17 +2,21 @@
 title: "قراردادهای مشارکتی در IT و AI: راهکاری اجرایی در عصر پیچیدگی‌ها"
 slug: participatory-contracts-it-ai-01
 lang: fa
-date: "2026-10-25"
-faDate: "۳ آبان ۱۴۰۵"
+date: "2026-10-26"
+faDate: "۴ آبان ۱۴۰۵"
 category: کسب‌وکار
 excerpt: "چگونه شرکت‌های مستقل می‌توانند در پروژه‌های پیچیده فناوری همکاری کنند، مسئولیت مشترک بپذیرند و حقوق خود بر فناوری را حفظ کنند؟ بررسی تجربه مشارکت ترگمان و آدان، از قرارداد و حساب مشترک تا تضمین، مالیات و بیمه."
 readTime: "۲۰ دقیقه"
 cover: /images/articles/participatory-contracts-it-ai-01/cover.png
 coverCredit: "تصویر مفهومی ساخته‌شده با هوش مصنوعی؛ دو شرکت مستقل، قرارداد و حساب مشترک، قانون و تعیین تکلیف بیمه و مالیات."
+featured: true
+featuredImage: /images/articles/participatory-contracts-it-ai-01/featured.png
+featuredSubtitle: "تجربه ترگمان و آدان؛ همکاری با مسئولیت مشترک و حفظ حق بهره‌برداری مستقل."
 author: مهران ضیابری
 toc: auto
 related:
   - xaas-tax-laws
+  - targoman-without-rent
 tags:
   - قراردادهای مشارکتی
   - فناوری اطلاعات
