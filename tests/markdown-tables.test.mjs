@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -17,7 +18,7 @@ for(const [lang,label] of Object.entries({fa:'جدول با پیمایش افق�
  });
 }
 test('the reported article compiles without the table warning',async()=>{
- const {code}=await preprocess(readFileSync('src/lib/content/articles/ztai-autonomous-agents-bounded-authority.md','utf8'));
+ const {code}=await preprocess(readFileSync(articleFile('ztai-autonomous-agents-bounded-authority'),'utf8'));
  assert.ok(code.includes('prose-table-scroll'));
  assert.deepEqual(compile(code,{generate:'server'}).warnings.filter(w=>w.code==='a11y_no_noninteractive_tabindex'),[]);
 });

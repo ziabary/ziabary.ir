@@ -1,10 +1,12 @@
+from content_paths import article_file
+from llm_repository import load_repository
 """Reviewed semantic placements. Re-runs replace only marked reference sections.
 Canonical articleSections supply prose, selectionGuidance supplies the shared UI recommendations.
 Existing article frontmatter, dates, body, related lists and ordering are retained.
 """
 from pathlib import Path
 import json,re
-ROOT=Path(__file__).resolve().parents[1];R=json.loads((ROOT/'data/llm/v0.3.0/repository.json').read_text());base=ROOT/'src/lib/content/articles'
+ROOT=Path(__file__).resolve().parents[1];R=load_repository(ROOT/'data/llm/v0.3.0/repository.json')
 placements={
  'task-order':['در RAG، اندازه مدل پاسخ‌گو فقط یکی از تصمیم‌هاست','In RAG, diagnose retrieval before replacing the generator','En RAG, diagnostiquemos la recuperación antes de cambiar el generador'],
  'retrieval-language':['reranker چه چیزی را بهتر می‌کند و چه چیزی را نمی‌تواند جبران کند؟','Reranking improves a candidate set, not a missing document','El reranker mejora candidatos; no recupera lo que falta'],
@@ -29,7 +31,7 @@ def replace_block(text,key,body,before):
 for row in R['articleSections']:
  key=row['id'].split(':')[1]
  for lang in row['locales']:
-  slug=row['articleKey']+('' if lang=='fa' else '-'+lang);path=base/(slug+'.md');text=path.read_text()
+  slug=row['articleKey']+('' if lang=='fa' else '-'+lang);path=article_file(slug);text=path.read_text()
   body='### '+row['title'][lang]+'\n\n'+row['bodyMarkdown'][lang]
   if key in guides:
    ids=json.dumps(guides[key]);body+='\n\n<LlmReferenceGuidance locale="'+lang+'" ids={'+ids+'} />'
@@ -45,5 +47,5 @@ for row in R['articleSections']:
   path.write_text(reviewed(replace_block(text,key,body,'## '+placements[key][['fa','en','es'].index(lang)])))
 print('Integrated 22 localized sections into 19 existing articles.')
 for row in json.loads((ROOT/'data/llm/v0.3.0/research/reference-complete-article-merges.json').read_text()):
- path=base/(row['slug']+'.md');path.write_text(reviewed(replace_block(path.read_text(),row['key'],row['body'],row['before'])))
+ path=article_file(row['slug']);path.write_text(reviewed(replace_block(path.read_text(),row['key'],row['body'],row['before'])))
 print('Merged unique evidence into the four complete localized articles; preserved stronger existing worked examples.')

@@ -1,4 +1,4 @@
-import type { ArticleMeta } from './content';
+import type { ArticleMeta } from '$lib/content';
 
 export type FeaturedArticle = ArticleMeta & {
   featured: true;

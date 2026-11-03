@@ -6,8 +6,8 @@ education or publications from the Persian résumé or from each other.
 
 | Edition | Editorial data | Authoritative supplied CV |
 |---|---|---|
-| English | `src/lib/resumes/en.json` | `static/downloads/SMMZ-CV-ATS-2026.pdf` |
-| Spanish | `src/lib/resumes/es.json` | `static/downloads/SMMZ-CV-ATS-2026-ES.pdf` |
+| English | `content/resumes/en.json` | `static/downloads/SMMZ-CV-ATS-2026.pdf` |
+| Spanish | `content/resumes/es.json` | `static/downloads/SMMZ-CV-ATS-2026-ES.pdf` |
 | Persian | `src/routes/resume/+page.svelte` | Independently maintained Persian edition |
 
 When a CV is replaced, review that edition's JSON and PDF download link together.

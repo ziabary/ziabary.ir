@@ -1,0 +1,80 @@
+{
+  "origin": "https://ziabary.ir",
+  "results": [
+    {
+      "draftGate": true,
+      "noindex": true
+    },
+    {
+      "title": "از چهار استارتاپ تا پنجاه شرکت؛ تجربه‌ای برای بازاندیشی در صادرات فناوری ایران",
+      "sections": 12,
+      "slots": [
+        {
+          "name": "01-mission",
+          "caption": "معرفی محصولات و راهکارهای ایرانی در مأموریت کازان"
+        },
+        {
+          "name": "02-catalogues",
+          "caption": "مجموعه شش‌جلدی معرفی محصولات و مدل همکاری هومص"
+        },
+        {
+          "name": "03-ivf-meeting",
+          "caption": "جلسه هومص با صندوق سرمایه‌گذاری و خطرپذیر تاتارستان"
+        },
+        {
+          "name": "04-technology-visits",
+          "caption": "بازدید و گفت‌وگو با مجموعه‌های فناوری تاتارستان"
+        },
+        {
+          "name": "05-geopager",
+          "caption": "دیدار هومص و GEOPAGER و امضای تفاهم‌نامه همکاری"
+        }
+      ],
+      "internal": [
+        "/articles/kazan-travelogue/",
+        "/articles/russian-ai-kazan-digital-week-2026/?show-drafts=true",
+        "/articles/russian-ai-kazan-digital-week-2026/?show-drafts=true",
+        "/articles/what-does-95-percent-accuracy-mean-for-a-factory/",
+        "/articles/kazan-travelogue/",
+        "/articles/ai-contract-deliverables/"
+      ],
+      "robots": "noindex,follow",
+      "brokenImages": []
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1425,
+      "dir": "rtl",
+      "background": "rgb(230, 242, 239)"
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1425,
+      "dir": "rtl",
+      "background": "rgb(24, 57, 60)"
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "dir": "rtl",
+      "background": "rgb(230, 242, 239)"
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "dir": "rtl",
+      "background": "rgb(24, 57, 60)"
+    },
+    {
+      "browserExceptions": 0
+    }
+  ]
+}

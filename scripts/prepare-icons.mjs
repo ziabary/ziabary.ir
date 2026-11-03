@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 // Bundle the small, committed subsets with the application's versioned CSS.
 // Older pages may still use static/fonts/icons, so retain those public files.
 const source = new URL('../static/fonts/icons/', import.meta.url);
-const output = new URL('../src/lib/generated/icons.css', import.meta.url);
+const output = new URL('../.build/generated/icons.css', import.meta.url);
 let css = await readFile(new URL('icons.css', source), 'utf8');
 for (const style of ['solid', 'regular', 'brands']) {
   const font = await readFile(new URL(`${style}.woff2`, source));

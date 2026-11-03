@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "mlarge4",
+    "guide": "llm",
+    "date": "2026-11-03",
+    "kind": "model",
+    "target": "model:mistral-large-4-1t-a52b",
+    "copy": {
+      "fa": {
+        "title": "وزن‌های Mistral Large 4 منتشر شدند",
+        "summary": "مدل چندوجهی 1T-A52B با زمینهٔ یک‌میلیون توکنی، وزن‌های FP8 و NVFP4 و بسته‌های GGUF اضافه شد. شرط مجوز ارائهٔ Model-as-a-Service در مشخصات آمده است."
+      },
+      "en": {
+        "title": "Mistral Large 4 weights released",
+        "summary": "Added the multimodal 1T-A52B model with one-million-token context, FP8/NVFP4 weights and GGUF packages. Specifications include the Model-as-a-Service license condition."
+      },
+      "es": {
+        "title": "Publicados los pesos de Mistral Large 4",
+        "summary": "Añadido el modelo multimodal 1T-A52B con contexto de un millón de tokens, pesos FP8/NVFP4 y paquetes GGUF. Se incluye la condición de licencia Model-as-a-Service."
+      }
+    }
+  },
+  {
+    "id": "magecua",
+    "guide": "llm",
+    "date": "2026-11-03",
+    "kind": "model",
+    "target": "model:mage-vl-cowork",
+    "copy": {
+      "fa": {
+        "title": "Mage-VL-Cowork برای کار با دسکتاپ",
+        "summary": "عامل تصویری مایکروسافت با وزن BF16، مجوز Apache-2.0 و مسیر اجرای مرجع اضافه شد؛ ابزارهای computer_use و bash را در یک مدل ترکیب می‌کند."
+      },
+      "en": {
+        "title": "Mage-VL-Cowork for desktop tasks",
+        "summary": "Added Microsoft’s visual agent with BF16 weights, Apache-2.0 and its reference runtime. It combines computer_use and bash in one model."
+      },
+      "es": {
+        "title": "Mage-VL-Cowork para tareas de escritorio",
+        "summary": "Añadido el agente visual de Microsoft con pesos BF16, Apache-2.0 y ejecución de referencia. Combina computer_use y bash en un modelo."
+      }
+    }
+  },
+  {
+    "id": "runtime1103",
+    "guide": "llm",
+    "date": "2026-11-03",
+    "kind": "software",
+    "target": "Ollama",
+    "copy": {
+      "fa": {
+        "title": "Ollama 0.40.14 و SGLang 0.5.23",
+        "summary": "حفظ تنظیمات نمونه‌گیری مدل در API، Paged Experts و LoRA روی MoE کم‌دقت اضافه شدند. vLLM 0.32.0 پایدار، پیش‌انتشار 0.33.0rc3 و اصلاح KV در llama.cpp b12065 نیز آمده‌اند."
+      },
+      "en": {
+        "title": "Ollama 0.40.14 and SGLang 0.5.23",
+        "summary": "Added model sampler defaults in the API, Paged Experts and LoRA for quantized MoE, plus stable vLLM 0.32.0, prerelease 0.33.0rc3 and the llama.cpp b12065 KV fix."
+      },
+      "es": {
+        "title": "Ollama 0.40.14 y SGLang 0.5.23",
+        "summary": "Añadidos valores de muestreo del modelo en la API, Paged Experts y LoRA para MoE cuantizado, además de vLLM 0.32.0 estable, 0.33.0rc3 preliminar y la corrección KV de llama.cpp b12065."
+      }
+    }
+  },
+  {
+    "id": "n1xlaptop",
+    "guide": "gpu-selection",
+    "date": "2026-11-03",
+    "kind": "gpu",
+    "target": "nvidia-rtx-spark-n1x-laptop",
+    "copy": {
+      "fa": {
+        "title": "RTX Spark N1X در جدول GPU",
+        "summary": "گونهٔ لپ‌تاپ با ۶٬۱۴۴ هستهٔ CUDA و تا ۱۲۸GB حافظهٔ یکپارچه اضافه شد؛ بازهٔ توان ۴۵ تا ۸۰ وات مربوط به کل SoC است."
+      },
+      "en": {
+        "title": "RTX Spark N1X added to the GPU table",
+        "summary": "Added the laptop variant with 6,144 CUDA cores and up to 128GB unified memory; the 45–80W range covers the whole SoC."
+      },
+      "es": {
+        "title": "RTX Spark N1X en la tabla GPU",
+        "summary": "Añadida la variante de portátil con 6.144 núcleos CUDA y hasta 128GB unificados; el intervalo de 45–80W corresponde a todo el SoC."
+      }
+    }
+  },
+  {
+    "id": "ocirubin",
+    "guide": "gpu-selection",
+    "date": "2026-11-03",
+    "kind": "server",
+    "target": "nvidia-vera-rubin-nvl72-oci",
+    "copy": {
+      "fa": {
+        "title": "عرضهٔ عمومی Rubin NVL72 در OCI",
+        "summary": "سرویس ۷۲‌GPU از ۲۷ اکتبر عرضهٔ عمومی دارد. پیکربندی HGX Rubin NVL8 با دو Xeon 6 و 4TB DDR5 نیز با وضعیت معرفی‌شده اضافه شد."
+      },
+      "en": {
+        "title": "Rubin NVL72 generally available on OCI",
+        "summary": "The 72-GPU service has been generally available since October 27. HGX Rubin NVL8 with two Xeon 6 CPUs and 4TB DDR5 was also added as announced."
+      },
+      "es": {
+        "title": "Rubin NVL72 disponible en OCI",
+        "summary": "El servicio de 72 GPU está disponible desde el 27 de octubre. También se añadió HGX Rubin NVL8 con dos Xeon 6 y 4TB DDR5 como anunciado."
+      }
+    }
+  },
+  {
+    "id": "llama1025",
+    "guide": "llm",
+    "date": "2026-10-25",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "اصلاح RPC/RDMA و پشتیبانی آزمایشی DeepSeek در llama.cpp",
+        "summary": "b11865 کنترل اندازهٔ دریافت RDMA، b11858 محدودیت tensor split برای mellum/flint و b11870 پشتیبانی deepseek41 را ثبت می‌کند. مسیر DeepSeek‑1017 همچنان نیازمند آزمون است؛ GGUF رسمی یا حافظهٔ تأییدشده اضافه نشده است."
+      },
+      "en": {
+        "title": "RPC/RDMA fix and experimental DeepSeek support in llama.cpp",
+        "summary": "Added b11865 RDMA receive bounds, b11858 tensor-split restrictions for mellum/flint and b11870 deepseek41 support. DeepSeek‑1017 still needs validation; no official GGUF or measured memory requirement was added."
+      },
+      "es": {
+        "title": "Corrección RPC/RDMA y soporte experimental DeepSeek en llama.cpp",
+        "summary": "Se añadieron el control RDMA de b11865, las restricciones tensor split de b11858 para mellum/flint y deepseek41 en b11870. DeepSeek‑1017 requiere validación; no se añadió GGUF oficial ni memoria medida."
+      }
+    }
+  },
+  {
+    "id": "miniv47",
+    "guide": "llm",
+    "date": "2026-10-24",
+    "kind": "model",
+    "target": "model:minicpm-v-4-7-1b",
+    "copy": {
+      "fa": {
+        "title": "دو مدل MiniCPM-V 4.7 اضافه شدند",
+        "summary": "نسخه‌های 1B و 35B-A3B با ورودی تصویر و ویدئو و قالب‌های رسمی وزن ثبت شدند؛ حجم فایل و projector از حافظهٔ اجرا جداست و کیفیت فارسی ارزیابی نشده است."
+      },
+      "en": {
+        "title": "Two MiniCPM-V 4.7 models added",
+        "summary": "Added 1B and 35B-A3B with image/video input and official weight formats. File and projector sizes are separate from runtime memory; Persian quality is unmeasured."
+      },
+      "es": {
+        "title": "Añadidos dos modelos MiniCPM-V 4.7",
+        "summary": "Se añadieron 1B y 35B-A3B con entrada de imagen/vídeo y pesos oficiales. Los tamaños de archivo y proyector no equivalen a memoria de ejecución; no se evaluó el persa."
+      }
+    }
+  },
+  {
+    "id": "d31024",
+    "guide": "llm",
+    "date": "2026-10-24",
+    "kind": "model",
+    "target": "model:vllm-sr-d3-nano",
+    "copy": {
+      "fa": {
+        "title": "چهار مدل تصمیم d3 در جدول",
+        "summary": "d3-nano، mini، flash و d3 برای طبقه‌بندی، مسیریابی و امتیاز احتمالاتی ثبت شدند. خروجی آن‌ها متن آزاد نیست؛ حافظهٔ اجرا و کیفیت فارسی اندازه‌گیری نشده‌اند."
+      },
+      "en": {
+        "title": "Four d3 decision models in the catalog",
+        "summary": "Added d3-nano, mini, flash and d3 for classification, routing and probabilistic scoring. They do not generate free text; runtime memory and Persian quality are unmeasured."
+      },
+      "es": {
+        "title": "Cuatro modelos de decisión d3 en el catálogo",
+        "summary": "Se añadieron d3-nano, mini, flash y d3 para clasificación, enrutamiento y puntuación probabilística. No generan texto libre; no se midieron memoria ni calidad en persa."
+      }
+    }
+  },
+  {
+    "id": "nemoe4b",
+    "guide": "llm",
+    "date": "2026-10-24",
+    "kind": "model",
+    "target": "model:nvidia-nemotron-3-5-bolt-e4b",
+    "copy": {
+      "fa": {
+        "title": "Nemotron 3.5 Bolt E4B با وزن عمومی",
+        "summary": "وزن BF16، فایل GGUF با حجم واقعی 6.18GB و سرویس API ثبت شدند. مقدار پایه متن و 64K است؛ ادعای تصویر و 128K بستهٔ Ollama جدا و نیازمند تطبیق باقی می‌ماند."
+      },
+      "en": {
+        "title": "Nemotron 3.5 Bolt E4B with public weights",
+        "summary": "Added BF16 weights, the actual 6.18GB GGUF and the API service. The base specification is text and 64K; Ollama’s image/128K package claim remains separate and unresolved."
+      },
+      "es": {
+        "title": "Nemotron 3.5 Bolt E4B con pesos públicos",
+        "summary": "Se añadieron BF16, el GGUF real de 6,18GB y la API. La especificación base es texto y 64K; la afirmación de imagen/128K de Ollama queda separada y pendiente."
+      }
+    }
+  },
+  {
+    "id": "nemorank24",
+    "guide": "llm",
+    "date": "2026-10-24",
+    "kind": "model",
+    "target": "model:nvidia-nemotron-3-5-rerank-8b-bf16",
+    "copy": {
+      "fa": {
+        "title": "بازرتبه‌بند چندوجهی Nemotron 3.5",
+        "summary": "Rerank 8B با وزن رسمی و زمینهٔ 32K ثبت شد. مسیر تصویر به Transformers 5.20.0 یا /classify در vLLM 0.32.0 نیاز دارد؛ امتیاز مستقل فارسی منتشر نشده است."
+      },
+      "en": {
+        "title": "Nemotron 3.5 multimodal reranker",
+        "summary": "Added Rerank 8B with official weights and 32K context. Image inputs need Transformers 5.20.0 or /classify in vLLM 0.32.0; no separate Persian score is published."
+      },
+      "es": {
+        "title": "Reranker multimodal Nemotron 3.5",
+        "summary": "Se añadió Rerank 8B con pesos oficiales y contexto 32K. Las imágenes requieren Transformers 5.20.0 o /classify en vLLM 0.32.0; no hay puntuación persa independiente."
+      }
+    }
+  },
+  {
+    "id": "runt1024",
+    "guide": "llm",
+    "date": "2026-10-24",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "اصلاحات llama.cpp و Ollama 0.40.10",
+        "summary": "هشت پیش‌انتشار llama.cpp برای SYCL، DFlash، OCR، صوت، rerank، زمان‌سنج Windows و HIP ثبت شدند؛ Ollama 0.40.9 و 0.40.10 با محدودیت‌های هر مسیر افزوده شدند. آزمون اجرای محلی انجام نشده است."
+      },
+      "en": {
+        "title": "llama.cpp fixes and Ollama 0.40.10",
+        "summary": "Added eight llama.cpp prereleases covering SYCL, DFlash, OCR, audio, rerank, Windows timers and HIP, plus Ollama 0.40.9/0.40.10 with scoped limitations. No local runtime test was run."
+      },
+      "es": {
+        "title": "Correcciones de llama.cpp y Ollama 0.40.10",
+        "summary": "Se añadieron ocho versiones preliminares de llama.cpp para SYCL, DFlash, OCR, audio, rerank, temporizadores Windows e HIP, y Ollama 0.40.9/0.40.10 con sus límites. No hubo prueba local."
+      }
+    }
+  },
+  {
+    "id": "llama1021",
+    "guide": "llm",
+    "date": "2026-10-21",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "اصلاح تصویر LFM و مسیر Embed در llama.cpp",
+        "summary": "b11774 پردازش تصویر LFM را با مرجع همسو می‌کند؛ b11778 مسیر آزمایشی Nemotron Embed را می‌افزاید. شرط تبدیل mmproj و حدود آزمون‌ها در جدول آمده‌اند."
+      },
+      "en": {
+        "title": "LFM image fix and Embed route in llama.cpp",
+        "summary": "b11774 aligns LFM image preprocessing with the reference; b11778 adds an experimental Nemotron Embed route. The table explains mmproj conversion and test limits."
+      },
+      "es": {
+        "title": "Corrección de imagen LFM y ruta Embed en llama.cpp",
+        "summary": "b11774 alinea el procesamiento LFM con la referencia; b11778 añade la ruta experimental Nemotron Embed. La tabla detalla la conversión mmproj y los límites de las pruebas."
+      }
+    }
+  },
+  {
+    "id": "nemoembed21",
+    "guide": "llm",
+    "date": "2026-10-21",
+    "kind": "model",
+    "target": "model:nvidia-nemotron-3-5-embed-1b-bf16",
+    "copy": {
+      "fa": {
+        "title": "دو بردارساز Nemotron 3.5 اضافه شدند",
+        "summary": "Embed 1B و 8B با وزن رسمی BF16 ثبت شدند. مسیر llama.cpp نیازمند تبدیل کاربر به GGUF است؛ آزمون تطبیق منتشرشده فقط متن 1B را پوشش می‌دهد."
+      },
+      "en": {
+        "title": "Two Nemotron 3.5 embedders added",
+        "summary": "Added Embed 1B and 8B with official BF16 weights. The llama.cpp route requires user-converted GGUF; the published comparison covers only 1B text."
+      },
+      "es": {
+        "title": "Añadidos dos modelos Nemotron 3.5 Embed",
+        "summary": "Embed 1B y 8B incluyen pesos BF16 oficiales. La ruta llama.cpp requiere convertir a GGUF; la comparación publicada solo cubre texto de 1B."
+      }
+    }
+  },
+  {
+    "id": "sgl0522",
+    "guide": "llm",
+    "date": "2026-10-19",
+    "kind": "software",
+    "target": "SGLang",
+    "copy": {
+      "fa": {
+        "title": "SGLang 0.5.22 و شروط مهاجرت",
+        "summary": "Python 3.11+، تغییرهای DP و دریافت KV و اصلاح Mamba ثبت شدند؛ رفع Dumper تأیید نشده و آزمون محلی انجام نشده است."
+      },
+      "en": {
+        "title": "SGLang 0.5.22 migration conditions",
+        "summary": "Added Python 3.11+, DP/KV-receive changes and the Mamba fix; a Dumper fix is unconfirmed and no local runtime test was run."
+      },
+      "es": {
+        "title": "Condiciones de migración a SGLang 0.5.22",
+        "summary": "Añadidos Python 3.11+, cambios DP/recepción KV y corrección Mamba; Dumper sin corrección confirmada y sin prueba local."
+      }
+    }
+  },
+  {
+    "id": "llama1019",
+    "guide": "llm",
+    "date": "2026-10-19",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "دو پیش‌انتشار llama.cpp ثبت شدند",
+        "summary": "b11722 مسیر چنددنباله‌ای Hexagon و b11727 توقف خواندن ناقص GGUF را اضافه می‌کنند؛ تعمیم کارایی و توصیهٔ ارتقای بی‌آزمون نیست."
+      },
+      "en": {
+        "title": "Two llama.cpp prereleases recorded",
+        "summary": "b11722 adds the Hexagon multi-sequence route; b11727 rejects incomplete GGUF reads. No general performance or untested upgrade recommendation."
+      },
+      "es": {
+        "title": "Dos versiones preliminares de llama.cpp registradas",
+        "summary": "b11722 añade la ruta multisecuencia Hexagon; b11727 rechaza lecturas GGUF incompletas. Sin generalizar rendimiento ni recomendar actualizar sin pruebas."
+      }
+    }
+  },
+  {
+    "id": "beam1017",
+    "guide": "llm",
+    "date": "2026-10-17",
+    "kind": "model",
+    "target": "model:reflection-beam",
+    "copy": {
+      "fa": {
+        "title": "وزن‌های Beam 1.0 منتشر شد",
+        "summary": "ردیف پیشین به وزن‌های رسمی BF16، FP8 و NVFP4 با Apache-2.0 به‌روز شد؛ پشتیبانی b11701 پس از llama.cpp 0.7.0 است."
+      },
+      "en": {
+        "title": "Beam 1.0 weights released",
+        "summary": "Updated the existing row with official BF16, FP8 and NVFP4 weights under Apache-2.0; b11701 support follows llama.cpp 0.7.0."
+      },
+      "es": {
+        "title": "Publicados los pesos Beam 1.0",
+        "summary": "Fila existente actualizada con BF16, FP8 y NVFP4 oficiales bajo Apache-2.0; el soporte b11701 es posterior a llama.cpp 0.7.0."
+      }
+    }
+  },
+  {
+    "id": "models1017",
+    "guide": "llm",
+    "date": "2026-10-17",
+    "kind": "model",
+    "target": "model:nvidia-nemotron-3-5-bolt-74b-a9b",
+    "copy": {
+      "fa": {
+        "title": "هشت مدل تازه و پرونده‌های دریافت",
+        "summary": "Muse، Super و Bolt، DeepSeek-1017، LFM2.5، دو Granite Switch و Dory اضافه شدند؛ دسترسی مشروط، مجوز و مسیر اجرا جدا ثبت شده‌اند. نام بستهٔ 24GB تضمین حافظهٔ کامل نیست."
+      },
+      "en": {
+        "title": "Eight models and download inventories added",
+        "summary": "Added Muse, Super/Bolt, DeepSeek-1017, LFM2.5, two Granite Switch sizes and Dory, with separate access, license and runtime conditions. The 24GB package name does not certify full memory fit."
+      },
+      "es": {
+        "title": "Ocho modelos y sus inventarios de descarga",
+        "summary": "Añadidos Muse, Super/Bolt, DeepSeek-1017, LFM2.5, dos Granite Switch y Dory con acceso, licencia y motor diferenciados. El nombre 24GB no garantiza que quepa toda la ejecución."
+      }
+    }
+  },
+  {
+    "id": "runtimes17",
+    "guide": "llm",
+    "date": "2026-10-17",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "نسخه‌های پایدار و هشدار vLLM به‌روز شدند",
+        "summary": "llama.cpp 0.7.0، Ollama 0.40.5، vLLM 0.31.0 و SGLang 0.5.21 ثبت شدند؛ RPC 8، پورت‌های HTTP و شرط مسیر آسیب‌پذیر vLLM مشخص شده‌اند."
+      },
+      "en": {
+        "title": "Stable runtimes and vLLM advisory updated",
+        "summary": "Added llama.cpp 0.7.0, Ollama 0.40.5, vLLM 0.31.0 and SGLang 0.5.21, including RPC 8, HTTP ports and the affected vLLM endpoint condition."
+      },
+      "es": {
+        "title": "Motores estables y aviso vLLM actualizados",
+        "summary": "Añadidos llama.cpp 0.7.0, Ollama 0.40.5, vLLM 0.31.0 y SGLang 0.5.21 con RPC 8, puertos HTTP y condición del endpoint vLLM afectado."
+      }
+    }
+  },
+  {
+    "id": "intelocp17",
+    "guide": "gpu-selection",
+    "date": "2026-10-17",
+    "kind": "gpu",
+    "target": "intel-crescent-island",
+    "copy": {
+      "fa": {
+        "title": "مشخصات D-series / Crescent Island تکمیل شد",
+        "summary": "پهنای‌باند ۱٫۵TB/s و FP8 نظری اضافه شدند؛ کارت Intel برابر ۱۶۰GB و سقف خانوادهٔ ODM برابر ۴۸۰GB است. نمونه‌دهی، عرضهٔ عمومی نیست."
+      },
+      "en": {
+        "title": "D-series / Crescent Island specifications expanded",
+        "summary": "Added 1.5 TB/s bandwidth and theoretical FP8. Intel’s card has 160 GB; the ODM family reaches 480 GB. Sampling does not establish general availability."
+      },
+      "es": {
+        "title": "Ampliadas las especificaciones D-series / Crescent Island",
+        "summary": "Añadidos 1,5 TB/s y FP8 teórico. La tarjeta Intel tiene 160 GB; la familia ODM alcanza 480 GB. El muestreo no acredita disponibilidad general."
+      }
+    }
+  },
+  {
+    "id": "systems17",
+    "guide": "gpu-selection",
+    "date": "2026-10-17",
+    "kind": "server",
+    "target": "lenovo-vera-rubin-nvl72",
+    "copy": {
+      "fa": {
+        "title": "NVL72 لنوو و سامانه‌های تازه وارد جدول شدند",
+        "summary": "آغاز ارسال NVL72 از طرح مرجع Helion و عرضهٔ آیندهٔ Halo و HPE جدا شد؛ شمار شتاب‌دهندهٔ رک به ظرفیت اسلات PCIe تبدیل نشده است."
+      },
+      "en": {
+        "title": "Lenovo NVL72 and new systems added",
+        "summary": "NVL72 shipping is separated from the Helion reference design and future Halo/HPE availability; integrated accelerator counts are not PCIe slot capacity."
+      },
+      "es": {
+        "title": "Añadidos Lenovo NVL72 y nuevos sistemas",
+        "summary": "Los envíos NVL72 se distinguen del diseño Helion y la disponibilidad futura Halo/HPE; los aceleradores integrados no se cuentan como ranuras PCIe."
+      }
+    }
+  },
+  {
+    "id": "maia30017",
+    "guide": "gpu-selection",
+    "date": "2026-10-17",
+    "kind": "gpu",
+    "target": "microsoft-maia-300",
+    "copy": {
+      "fa": {
+        "title": "Maia 300؛ شتاب‌دهندهٔ اختصاصی Azure",
+        "summary": "مشخصات هر شتاب‌دهنده با ۲۸۸GB HBM4 و ۱۸TB/s از رک ۹۶‌شتاب‌دهنده‌ای ۱۶۷kW جدا ثبت شد؛ استقرار از ۲۰۲۷ برنامه‌ریزی شده و کارت عمومی نیست."
+      },
+      "en": {
+        "title": "Maia 300: Azure-specific accelerator",
+        "summary": "Recorded 288 GB HBM4 and 18 TB/s per accelerator separately from the 96-accelerator, 167 kW rack. Deployment is planned from 2027; it is not a retail card."
+      },
+      "es": {
+        "title": "Maia 300: acelerador exclusivo de Azure",
+        "summary": "Registrados 288 GB HBM4 y 18 TB/s por acelerador aparte del rack de 96 aceleradores y 167 kW. Despliegue previsto desde 2027; no es tarjeta comercial."
+      }
+    }
+  },
+  {
+    "id": "slot11552",
+    "guide": "llm",
+    "date": "2026-10-11",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "llama-server b11552؛ اصلاح جداسازی context",
+        "summary": "برای id_slot ثابت همراه RAM prompt cache، حداقل نسخهٔ اصلاح‌شده و آزمون canary ثبت شد؛ نتیجهٔ محدود upstream تضمین همهٔ پیکربندی‌ها نیست."
+      },
+      "en": {
+        "title": "llama-server b11552: context-isolation fix",
+        "summary": "Added the fixed minimum build and canary acceptance test for pinned id_slot with RAM prompt caching; limited upstream results do not guarantee every configuration."
+      },
+      "es": {
+        "title": "llama-server b11552: aislamiento de contexto",
+        "summary": "Añadidas la versión mínima corregida y la prueba de aceptación con canary para id_slot fijo y caché RAM; el resultado limitado no garantiza todas las configuraciones."
+      }
+    }
+  },
+  {
+    "id": "qwen11537",
+    "guide": "llm",
+    "date": "2026-10-10",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "llama.cpp b11537؛ بازگشت سرعت Qwen روی دو B70",
+        "summary": "اصلاح گراف embedding ثبت شد؛ نتیجهٔ یک کاربر روی Linux/SYCL با حدود 365/24 به 582.23/32.75 pp/tg رسید. اعداد شاخهٔ PR و شرایط آزمون کنار نتیجه آمده‌اند."
+      },
+      "en": {
+        "title": "llama.cpp b11537: Qwen recovery on dual B70",
+        "summary": "Embedding-graph fix recorded; one Linux/SYCL report recovered from about 365/24 to 582.23/32.75 pp/tg. PR-branch numbers and test conditions stay beside the result."
+      },
+      "es": {
+        "title": "llama.cpp b11537: recuperación de Qwen con dos B70",
+        "summary": "Registrada la corrección del grafo de embeddings; un informe Linux/SYCL pasa de unos 365/24 a 582.23/32.75 pp/tg. Cifras de la rama del PR con sus condiciones."
+      }
+    }
+  },
+  {
+    "id": "sycl11540",
+    "guide": "llm",
+    "date": "2026-10-10",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "llama.cpp b11540؛ شتاب MXFP4 روی Arc Pro B70",
+        "summary": "گزارش decode مدل‌های gpt-oss روی Windows 11 و oneAPI 2026.0 اضافه شد؛ Flash Attention روشن است و اعداد به Linux یا GPUهای دیگر تعمیم داده نمی‌شوند."
+      },
+      "en": {
+        "title": "llama.cpp b11540: MXFP4 acceleration on Arc Pro B70",
+        "summary": "Added gpt-oss decode reports on Windows 11 and oneAPI 2026.0 with Flash Attention enabled; results are not extrapolated to Linux or other GPUs."
+      },
+      "es": {
+        "title": "llama.cpp b11540: aceleración MXFP4 en Arc Pro B70",
+        "summary": "Añadidos informes de decodificación de gpt-oss en Windows 11 y oneAPI 2026.0 con Flash Attention activado; no se extrapolan a Linux u otras GPU."
+      }
+    }
+  },
+  {
+    "id": "oll40210",
+    "guide": "llm",
+    "date": "2026-10-10",
+    "kind": "software",
+    "target": "Ollama",
+    "copy": {
+      "fa": {
+        "title": "Ollama v0.40.2؛ سابقهٔ نسخه",
+        "summary": "ثبت تاریخی ۱۰ اکتبر: مهاجرت پس‌زمینه مربوط به 0.40.2 بود و در 0.40.3 متوقف شد. نسخهٔ پایدار جاری در ردیف تازهٔ 0.40.5 آمده است."
+      },
+      "en": {
+        "title": "Ollama v0.40.2: release history",
+        "summary": "Historical October 10 entry: background migration belonged to 0.40.2 and was paused in 0.40.3. The current stable release has a separate 0.40.5 row."
+      },
+      "es": {
+        "title": "Ollama v0.40.2: historial",
+        "summary": "Entrada histórica del 10 de octubre: la migración en segundo plano era de 0.40.2 y se pausó en 0.40.3. La versión estable actual tiene su propia fila 0.40.5."
+      }
+    }
+  },
+  {
+    "id": "sparkpc10",
+    "guide": "gpu-selection",
+    "date": "2026-10-10",
+    "kind": "server",
+    "target": "microsoft-surface-laptop-ultra",
+    "copy": {
+      "fa": {
+        "title": "Spark؛ از میز کار تا لپ‌تاپ Windows",
+        "summary": "DGX Spark و دستگاه‌های RTX Spark وارد جدول سرورها شدند؛ زمان عرضهٔ لپ‌تاپ‌ها، Dev Box و ورک‌استیشن‌های GB300 جدا آمده است."
+      },
+      "en": {
+        "title": "Spark: from desktops to Windows laptops",
+        "summary": "DGX Spark and RTX Spark PCs added to the server table; laptop, Dev Box and GB300 workstation availability is listed separately."
+      },
+      "es": {
+        "title": "Spark: del escritorio a portátiles Windows",
+        "summary": "DGX Spark y equipos RTX Spark añadidos a la tabla; disponibilidad de portátiles, Dev Box y estaciones GB300 indicada por separado."
+      }
+    }
+  },
+  {
+    "id": "cnai10",
+    "guide": "gpu-selection",
+    "date": "2026-10-10",
+    "kind": "server",
+    "target": "huawei-atlas-650e",
+    "copy": {
+      "fa": {
+        "title": "رایانه‌های کوچک چینی و سرورهای Atlas",
+        "summary": "EVO-X2 و MS-S1 MAX برای اجرای محلی؛ Atlas 650E و 800I A2/A3 برای رک. تفاوت حافظهٔ مشترک، NPU و پشتهٔ نرم‌افزاری در هر ردیف آمده است."
+      },
+      "en": {
+        "title": "Chinese compact PCs and Atlas servers",
+        "summary": "EVO-X2 and MS-S1 MAX for local inference; Atlas 650E and 800I A2/A3 for racks. Each row explains shared memory, NPUs and software-stack differences."
+      },
+      "es": {
+        "title": "Equipos compactos chinos y servidores Atlas",
+        "summary": "EVO-X2 y MS-S1 MAX para inferencia local; Atlas 650E y 800I A2/A3 para rack. Cada fila aclara memoria compartida, NPU y pila de software."
+      }
+    }
+  },
+  {
+    "id": "llama11532",
+    "guide": "llm",
+    "date": "2026-10-10",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "llama.cpp b11532؛ ایمنی حافظه و صحت ModernBERT",
+        "summary": "پیش‌انتشار شامل کنترل offset در ggml_acc و GELU دقیق ModernBERT؛ GGUF نیاز به تبدیل دوباره ندارد و خروجی نسخه‌های قدیمی باید بازآزمایی شود."
+      },
+      "en": {
+        "title": "llama.cpp b11532: memory safety and ModernBERT correctness",
+        "summary": "Prerelease with the ggml_acc offset check and exact ModernBERT GELU; no GGUF reconversion needed. Retest outputs from older builds."
+      },
+      "es": {
+        "title": "llama.cpp b11532: seguridad de memoria y precisión de ModernBERT",
+        "summary": "Prelanzamiento con comprobación del offset de ggml_acc y GELU exacto de ModernBERT; no requiere reconvertir GGUF. Repita las pruebas de versiones anteriores."
+      }
+    }
+  },
+  {
+    "id": "ollmlx40",
+    "guide": "llm",
+    "date": "2026-10-07",
+    "kind": "software",
+    "target": "Ollama",
+    "copy": {
+      "fa": {
+        "title": "ثبت مسیر MLX در Ollama v0.40.0",
+        "summary": "MLX پیش‌فرض روی Apple Silicon فقط برای معماری‌های تأییدشده؛ مسیرهای Qwen، مدل‌های تصمیم و EmbeddingGemma 2 ثبت شد. تگ هر اندازه و حافظهٔ اجرا جدا بررسی شوند."
+      },
+      "en": {
+        "title": "MLX routes recorded for Ollama v0.40.0",
+        "summary": "Default MLX on Apple Silicon is limited to approved architectures; Qwen, decision-model and EmbeddingGemma 2 routes added. Verify per-size tags and runtime memory separately."
+      },
+      "es": {
+        "title": "Vías MLX registradas para Ollama v0.40.0",
+        "summary": "MLX por defecto en Apple Silicon solo para arquitecturas aprobadas; añadidas vías Qwen, modelos de decisión y EmbeddingGemma 2. Verifique etiquetas por tamaño y memoria aparte."
+      }
+    }
+  },
+  {
+    "id": "eg2local",
+    "guide": "llm",
+    "date": "2026-10-07",
+    "kind": "model",
+    "target": "model:google-embeddinggemma-2",
+    "copy": {
+      "fa": {
+        "title": "EmbeddingGemma 2؛ بردارساز چندوجهی محلی",
+        "summary": "وزن رسمی Apache-2.0 و مسیر Transformers و Sentence Transformers ≥6.1 اضافه شد؛ شاهد فارسی ثبت نشده و تخمین حافظهٔ GPU تغییر نکرده است."
+      },
+      "en": {
+        "title": "EmbeddingGemma 2: local multimodal embeddings",
+        "summary": "Added official Apache-2.0 weights and Transformers / Sentence Transformers ≥6.1 routes; no Persian evidence recorded or GPU memory estimate change."
+      },
+      "es": {
+        "title": "EmbeddingGemma 2: embeddings multimodales locales",
+        "summary": "Añadidos pesos oficiales Apache-2.0 y vías Transformers / Sentence Transformers ≥6.1; sin evidencia registrada en persa ni cambios en memoria GPU estimada."
+      }
+    }
+  },
+  {
+    "id": "k2h11454",
+    "guide": "llm",
+    "date": "2026-10-07",
+    "kind": "model",
+    "target": "model:ifm-k2-horizon-7b",
+    "copy": {
+      "fa": {
+        "title": "پنج مدل K2 Horizon با GGUF رسمی",
+        "summary": "اجرای llama.cpp از b11454 پیش‌انتشار ثبت شد؛ بدون tensor parallel و شاهد کیفیت فارسی. حافظهٔ وزن، KV cache و سربار جدا برآورد می‌شوند."
+      },
+      "en": {
+        "title": "Five K2 Horizon models with official GGUF",
+        "summary": "llama.cpp execution starts with prerelease b11454; no tensor parallel or Persian-quality evidence. Weights, KV cache and reserve are estimated separately."
+      },
+      "es": {
+        "title": "Cinco modelos K2 Horizon con GGUF oficial",
+        "summary": "Ejecución con llama.cpp desde b11454 de prelanzamiento; sin tensor parallel ni evaluación en persa. Pesos, KV cache y reserva se estiman por separado."
+      }
+    }
+  },
+  {
+    "id": "llama060",
+    "guide": "llm",
+    "date": "2026-10-06",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "llama.cpp 0.6.0 پایدار و Clef تصویری",
+        "summary": "مسیر متن و تصویر با GGUF و projector سازگار ثبت شد؛ محدودیت فقط متن مربوط به b11371 است."
+      },
+      "en": {
+        "title": "Stable llama.cpp 0.6.0 and Clef image input",
+        "summary": "Text and image support requires compatible GGUF and projector files; the text-only limit belongs to b11371."
+      },
+      "es": {
+        "title": "llama.cpp 0.6.0 estable e imágenes para Clef",
+        "summary": "Texto e imágenes requieren GGUF y proyector compatibles; el límite de solo texto corresponde a b11371."
+      }
+    }
+  },
+  {
+    "id": "vkfa11424",
+    "guide": "llm",
+    "date": "2026-10-06",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "اصلاح crash در Vulkan FlashAttention",
+        "summary": "اصلاح حافظهٔ اشتراکی #29988 در b11424 و v0.6.0؛ بدون ادعای افزایش سرعت یا تغییر تخمین VRAM."
+      },
+      "en": {
+        "title": "Vulkan FlashAttention crash fix",
+        "summary": "Shared-memory fix #29988 is included in b11424 and v0.6.0; no speed claim or VRAM estimate change."
+      },
+      "es": {
+        "title": "Corrección de fallo en Vulkan FlashAttention",
+        "summary": "Corrección de memoria compartida #29988 en b11424 y v0.6.0; sin afirmar más velocidad ni cambiar la VRAM estimada."
+      }
+    }
+  },
+  {
+    "id": "beamann",
+    "guide": "llm",
+    "date": "2026-10-06",
+    "kind": "model",
+    "target": "model:reflection-beam",
+    "copy": {
+      "fa": {
+        "title": "Beam؛ ثبت معرفی و انتظار عرضهٔ وزن",
+        "summary": "مدل متنی MoE با اندازه‌های اعلامی ۵۰۱B کل و ۲۳B فعال؛ دسترسی محدود و خارج از پیشنهادهای آمادهٔ اجرای محلی."
+      },
+      "en": {
+        "title": "Beam: announcement recorded, weights pending",
+        "summary": "Text-only MoE with declared 501B total and 23B active parameters; limited access, excluded from ready local recommendations."
+      },
+      "es": {
+        "title": "Beam: anuncio registrado, pesos pendientes",
+        "summary": "MoE de texto con 501B totales y 23B activos declarados; acceso limitado, excluido de recomendaciones locales listas."
+      }
+    }
+  },
+  {
+    "id": "rtx4090x48",
+    "guide": "gpu-selection",
+    "date": "2026-10-04",
+    "kind": "gpu",
+    "target": "nvidia-rtx4090x",
+    "copy": {
+      "fa": {
+        "title": "RTX 4090 X به مقایسه و پیشنهادها برگشت",
+        "summary": "برد اصلاح‌شدهٔ غیررسمی ۴۸GB با منبع فروشنده و شروط بررسی همان کارت؛ مشخصات آن با RTX 4090 D رسمی یکی نیست."
+      },
+      "en": {
+        "title": "RTX 4090 X returns to comparison and recommendations",
+        "summary": "The unofficial modified 48 GB board is listed with supplier evidence and per-card checks; it differs from the official RTX 4090 D."
+      },
+      "es": {
+        "title": "RTX 4090 X vuelve a la comparación y las recomendaciones",
+        "summary": "La placa modificada no oficial de 48 GB figura con datos del vendedor y comprobaciones por tarjeta; difiere de la RTX 4090 D oficial."
+      }
+    }
+  },
+  {
+    "id": "auditmdl104",
+    "guide": "llm",
+    "date": "2026-10-04",
+    "kind": "model",
+    "target": "model:coherelabs-north-small-translate-1-0",
+    "copy": {
+      "fa": {
+        "title": "سه مدل تخصصی به اطلس LLM اضافه شد",
+        "summary": "North Translate، Bespoke Nimble و GLM-5.3-Flash با شرط مجوز، وزن پایه و عدم ارزیابی فارسی ثبت شدند."
+      },
+      "en": {
+        "title": "Three specialized models added to the LLM atlas",
+        "summary": "North Translate, Bespoke Nimble and GLM-5.3-Flash now include license, base-weight and Persian-evaluation caveats."
+      },
+      "es": {
+        "title": "Tres modelos especializados añadidos al atlas LLM",
+        "summary": "North Translate, Bespoke Nimble y GLM-5.3-Flash incluyen condiciones de licencia, pesos base y evaluación en persa."
+      }
+    }
+  },
+  {
+    "id": "gpusrv104",
+    "guide": "gpu-selection",
+    "date": "2026-10-04",
+    "kind": "gpu",
+    "target": "nvidia-rtx-pro-4500-server",
+    "copy": {
+      "fa": {
+        "title": "مشخصات RTX PRO 4500 Server و سقف سرورها اصلاح شد",
+        "summary": "کارت تک‌اسلات ۱۶۵W ثبت شد؛ سقف‌های QPL برای چند سرور از ظرفیت فیزیکی جدا شد."
+      },
+      "en": {
+        "title": "RTX PRO 4500 Server and server limits updated",
+        "summary": "Added the 165 W single-slot card and separated OEM QPL limits from physical slot capacity."
+      },
+      "es": {
+        "title": "Actualizados RTX PRO 4500 Server y límites de servidores",
+        "summary": "Añadida la tarjeta de una ranura y 165 W; los límites QPL se separan de la capacidad física."
+      }
+    }
+  },
+  {
+    "id": "swrel104",
+    "guide": "llm",
+    "date": "2026-10-04",
+    "kind": "software",
+    "target": "Text Embeddings Inference",
+    "copy": {
+      "fa": {
+        "title": "شش نسخهٔ نرم‌افزاری به جدول افزوده شد",
+        "summary": "TEI، Triton، Transformers، LiteLLM، Open WebUI و sentence-transformers با نسخه و محدودیت‌های تازه."
+      },
+      "en": {
+        "title": "Six software releases added to the guide",
+        "summary": "Updated TEI, Triton, Transformers, LiteLLM, Open WebUI and sentence-transformers with current caveats."
+      },
+      "es": {
+        "title": "Seis versiones de software añadidas a la guía",
+        "summary": "TEI, Triton, Transformers, LiteLLM, Open WebUI y sentence-transformers con condiciones actuales."
+      }
+    }
+  },
+  {
+    "id": "oll351clef",
+    "guide": "llm",
+    "date": "2026-10-04",
+    "kind": "software",
+    "target": "Ollama",
+    "copy": {
+      "fa": {
+        "title": "Ollama 0.35.1 پایدار و Clef چندوجهی",
+        "summary": "SystemOne برای Clef و Clef Flash متن و تصویر را می‌پذیرد؛ llama.cpp b11371 فعلاً فقط متن را پشتیبانی می‌کند."
+      },
+      "en": {
+        "title": "Stable Ollama 0.35.1 and multimodal Clef",
+        "summary": "SystemOne accepts text and images with Clef and Clef Flash; llama.cpp b11371 currently supports text only."
+      },
+      "es": {
+        "title": "Ollama 0.35.1 estable y Clef multimodal",
+        "summary": "SystemOne acepta texto e imágenes con Clef y Clef Flash; llama.cpp b11371 admite por ahora solo texto."
+      }
+    }
+  },
+  {
+    "id": "g61solapi",
+    "guide": "llm",
+    "date": "2026-10-03",
+    "kind": "api",
+    "target": "gpt-6.1-sol",
+    "copy": {
+      "fa": {
+        "title": "GPT-6.1 Sol به فهرست API اضافه شد",
+        "summary": "مدل اختصاصی OpenAI با زمینهٔ ۱٫۰۵ میلیون توکن؛ تعرفهٔ کل درخواست پس از ۲۷۲ هزار توکن بالاتر می‌رود."
+      },
+      "en": {
+        "title": "GPT-6.1 Sol added to the API catalog",
+        "summary": "OpenAI proprietary model with a 1.05M-token context; the whole request uses higher rates above 272K input tokens."
+      },
+      "es": {
+        "title": "GPT-6.1 Sol añadido al catálogo API",
+        "summary": "Modelo propietario de OpenAI con contexto de 1,05 M de tokens; toda la solicitud paga más si la entrada supera 272 000 tokens."
+      }
+    }
+  },
+  {
+    "id": "spark64",
+    "guide": "gpu-selection",
+    "date": "2026-10-03",
+    "kind": "gpu",
+    "target": "nvidia-dgx-spark-64gb",
+    "copy": {
+      "fa": {
+        "title": "DGX Spark 64GB به جدول اضافه شد",
+        "summary": "سامانهٔ GB10 با حافظهٔ یکپارچه؛ عرضهٔ برنامه‌ریزی‌شده از ۲۳ اکتبر و نیازمند بررسی SKU."
+      },
+      "en": {
+        "title": "DGX Spark 64GB added to the table",
+        "summary": "GB10 system with unified memory; scheduled from 23 October, with OEM SKU details to verify."
+      },
+      "es": {
+        "title": "DGX Spark 64GB añadido a la tabla",
+        "summary": "Sistema GB10 con memoria unificada; previsto desde el 23 de octubre, con SKU OEM por verificar."
+      }
+    }
+  },
+  {
+    "id": "embed5pair",
+    "guide": "llm",
+    "date": "2026-10-01",
+    "kind": "model",
+    "target": "model:cohere-embed-v5-pro",
+    "copy": {
+      "fa": {
+        "title": "Embed 5؛ نمایه‌سازی Pro و جست‌وجوی Fast",
+        "summary": "دو مدل چندوجهی با فضای مشترک؛ دسترسی تجاری، فارسی اعلامی و بدون وزن عمومی اعلام‌شده."
+      },
+      "en": {
+        "title": "Embed 5: Pro indexing and Fast queries",
+        "summary": "Two multimodal models with a shared space; commercial access, declared Persian support and no announced public weights."
+      },
+      "es": {
+        "title": "Embed 5: indexación Pro y consultas Fast",
+        "summary": "Dos modelos multimodales con espacio común; acceso comercial, persa declarado y sin pesos públicos anunciados."
+      }
+    }
+  },
+  {
+    "id": "iq4nl310",
+    "guide": "llm",
+    "date": "2026-10-01",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "پیش‌انتشار؛ اصلاح ایمنی حافظه و صحت اجرای IQ4_NL",
+        "summary": "b11310 · CUDA/HIP/MUSA؛ ردیف IQ4_NL با طول نامضرب QK_K"
+      },
+      "en": {
+        "title": "Prerelease; IQ4_NL memory safety and execution correctness",
+        "summary": "b11310 · CUDA/HIP/MUSA; IQ4_NL rows not divisible by QK_K"
+      },
+      "es": {
+        "title": "Prelanzamiento; seguridad de memoria y ejecución de IQ4_NL",
+        "summary": "b11310 · CUDA/HIP/MUSA; filas IQ4_NL no divisibles por QK_K"
+      }
+    }
+  },
+  {
+    "id": "dflash307",
+    "guide": "llm",
+    "date": "2026-10-01",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "پیش‌انتشار؛ DFlash/DFlash2 در اجرای هم‌زمان",
+        "summary": "b11307 · ترتیب layer input؛ KV streamهای جدا و tensor split"
+      },
+      "en": {
+        "title": "Prerelease; concurrent DFlash/DFlash2 execution",
+        "summary": "b11307 · Layer-input order; separate KV streams and tensor split"
+      },
+      "es": {
+        "title": "Prelanzamiento; ejecución simultánea de DFlash/DFlash2",
+        "summary": "b11307 · Orden de layer input; flujos KV separados y tensor split"
+      }
+    }
+  },
+  {
+    "id": "glmflash79",
+    "guide": "llm",
+    "date": "2026-09-30",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "پشتیبانی آزمایشی GLM-5.3-Flash در llama.cpp",
+        "summary": "یادداشت b11279 و اصلاح بعدی هم‌زمانی #29745؛ بدون تغییر GLM-5.3-BF16 یا پیشنهاد پیش‌فرض ویزارد."
+      },
+      "en": {
+        "title": "Experimental GLM-5.3-Flash support in llama.cpp",
+        "summary": "b11279 note and subsequent race fix #29745; no change to GLM-5.3-BF16 or wizard defaults."
+      },
+      "es": {
+        "title": "Soporte experimental de GLM-5.3-Flash en llama.cpp",
+        "summary": "Nota de b11279 y corrección posterior #29745; sin cambios en GLM-5.3-BF16 ni en las opciones predeterminadas."
+      }
+    }
+  },
+  {
+    "id": "cpuf16fix",
+    "guide": "llm",
+    "date": "2026-09-30",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "اصلاح صحت محاسبهٔ CPU در llama.cpp",
+        "summary": "b11262 پیش‌انتشار: انباشت FP32 در مسیر AVX512-FP16؛ خروجی buildهای قدیمی این مسیر نیازمند بازآزمایی است."
+      },
+      "en": {
+        "title": "llama.cpp CPU correctness fix",
+        "summary": "Prerelease b11262 uses FP32 accumulation on AVX512-FP16; retest older-build output on this path."
+      },
+      "es": {
+        "title": "Corrección del cálculo CPU en llama.cpp",
+        "summary": "b11262 preliminar acumula en FP32 en AVX512-FP16; repita las pruebas de versiones anteriores."
+      }
+    }
+  },
+  {
+    "id": "sysone351",
+    "guide": "llm",
+    "date": "2026-09-30",
+    "kind": "software",
+    "target": "Ollama",
+    "copy": {
+      "fa": {
+        "title": "شرط‌های SystemOne در Ollama روشن شد",
+        "summary": "پیش‌انتشار v0.35.1-rc0 به قابلیت decision و artifact سازگار GGUF نیاز دارد؛ Safetensors به‌تنهایی کافی نیست."
+      },
+      "en": {
+        "title": "Ollama SystemOne conditions clarified",
+        "summary": "Prerelease v0.35.1-rc0 requires decision capability and a supported GGUF artifact; Safetensors alone is insufficient."
+      },
+      "es": {
+        "title": "Condiciones de SystemOne en Ollama",
+        "summary": "v0.35.1-rc0 preliminar requiere capacidad decision y un artefacto GGUF compatible; Safetensors no basta."
+      }
+    }
+  },
+  {
+    "id": "glm53cyber",
+    "guide": "llm",
+    "date": "2026-09-30",
+    "kind": "model",
+    "target": "model:zai-org-glm-5-3-bf16",
+    "copy": {
+      "fa": {
+        "title": "هشدار امنیتی GLM-5.3",
+        "summary": "ملاحظات امنیتی شناسنامه و هشدار مشروط ویزارد بر پایهٔ ارزیابی‌های NIST و Anthropic اضافه شد."
+      },
+      "en": {
+        "title": "GLM-5.3 security advisory",
+        "summary": "Added profile security guidance and a conditional wizard warning based on NIST and Anthropic evaluations."
+      },
+      "es": {
+        "title": "Aviso de seguridad de GLM-5.3",
+        "summary": "Añadidas recomendaciones de seguridad y un aviso condicional basados en evaluaciones de NIST y Anthropic."
+      }
+    }
+  },
+  {
+    "id": "llemb40",
+    "guide": "llm",
+    "date": "2026-09-29",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "embedding چندوجهی آزمایشی در llama.cpp",
+        "summary": "مسیر b11240+ برای Qwen3-VL-Embedding-2B/8B و شرایط API ثبت شد؛ سرعت، حافظه و کیفیت فارسی تأیید نشده‌اند."
+      },
+      "en": {
+        "title": "Experimental multimodal embeddings in llama.cpp",
+        "summary": "Added the b11240+ route for Qwen3-VL-Embedding-2B/8B and API conditions; speed, memory and Persian quality remain unverified."
+      },
+      "es": {
+        "title": "Embeddings multimodales experimentales en llama.cpp",
+        "summary": "Ruta b11240+ para Qwen3-VL-Embedding-2B/8B y condiciones de API; velocidad, memoria y calidad en persa sin verificar."
+      }
+    }
+  },
+  {
+    "id": "vkfix24",
+    "guide": "llm",
+    "date": "2026-09-28",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "هشدار صحت خروجی Vulkan در llama.cpp",
+        "summary": "اصلاح آزمایشی b11224 برای viewهای strided؛ نتایج b11160 پیش از اتکا نیازمند بازآزمایی‌اند."
+      },
+      "en": {
+        "title": "Vulkan output correctness warning in llama.cpp",
+        "summary": "Experimental b11224 fixes strided views; retest b11160 results before relying on them."
+      },
+      "es": {
+        "title": "Aviso de resultados incorrectos en Vulkan de llama.cpp",
+        "summary": "b11224 experimental corrige vistas con stride; repita las pruebas de b11160 antes de confiar en sus resultados."
+      }
+    }
+  },
+  {
+    "id": "llrank23",
+    "guide": "llm",
+    "date": "2026-09-28",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "رفع محدودیت batch بازرتبه‌بندهای علّی در llama.cpp",
+        "summary": "یادداشت آزمایشی b11223 برای Qwen3 و Qwen3-VL؛ پشتیبانی کامل چندوجهی هنوز تأیید نشده است."
+      },
+      "en": {
+        "title": "Causal reranker batch limit lifted in llama.cpp",
+        "summary": "Experimental b11223 note for Qwen3 and Qwen3-VL; full multimodal support remains unconfirmed."
+      },
+      "es": {
+        "title": "llama.cpp elimina el límite de lote en rerankers causales",
+        "summary": "Nota experimental b11223 para Qwen3 y Qwen3-VL; soporte multimodal completo aún sin confirmar."
+      }
+    }
+  },
+  {
+    "id": "dsparkvl",
+    "guide": "llm",
+    "date": "2026-09-26",
+    "kind": "model",
+    "target": "model:liquidai-lfm2-5-vl-3b-dspark",
+    "copy": {
+      "fa": {
+        "title": "مدل بینایی LFM2.5 و مکمل وابستهٔ DSpark",
+        "summary": "مکمل فقط با LFM2.5-VL-3B؛ مجوز مشروط و شتاب نسبی ناشر با شرایط آزمون ثبت شد."
+      },
+      "en": {
+        "title": "LFM2.5 vision model and dependent DSpark drafter",
+        "summary": "Requires LFM2.5-VL-3B; conditional license and publisher relative speedup recorded with test conditions."
+      },
+      "es": {
+        "title": "Modelo visual LFM2.5 y complemento dependiente DSpark",
+        "summary": "Requiere LFM2.5-VL-3B; licencia condicionada y aceleración relativa del editor con condiciones del ensayo."
+      }
+    }
+  },
+  {
+    "id": "fp4b1182",
+    "guide": "llm",
+    "date": "2026-09-26",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "یادداشت پیش‌انتشار b11182 و دقت فعال‌سازی",
+        "summary": "وزن FP4 الزاماً فعال‌سازی چهاربیتی نیست؛ شرایط CUDA/Blackwell جدا از نسخهٔ پایدار آمده است."
+      },
+      "en": {
+        "title": "b11182 prerelease activation-precision note",
+        "summary": "FP4 weights do not imply four-bit activations; CUDA/Blackwell conditions are separate from stable capabilities."
+      },
+      "es": {
+        "title": "Nota de precisión de activaciones en b11182",
+        "summary": "Pesos FP4 no implican activaciones de cuatro bits; condiciones CUDA/Blackwell separadas de las capacidades estables."
+      }
+    }
+  },
+  {
+    "id": "runtime925",
+    "guide": "llm",
+    "date": "2026-09-25",
+    "kind": "software",
+    "target": "vLLM",
+    "copy": {
+      "fa": {
+        "title": "یادداشت‌های امنیتی vLLM به‌روز شد",
+        "summary": "نسخهٔ 0.30.0 و شرایط ارتقا؛ هشدارهای نسخهٔ تاریخی جدا ثبت شدند."
+      },
+      "en": {
+        "title": "vLLM security notes updated",
+        "summary": "Version 0.30.0 and upgrade conditions; historical-release advisories remain separate."
+      },
+      "es": {
+        "title": "Actualizados los avisos de vLLM",
+        "summary": "Versión 0.30.0 y condiciones de actualización; avisos históricos separados."
+      }
+    }
+  },
+  {
+    "id": "rpc7vk",
+    "guide": "llm",
+    "date": "2026-09-25",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "llama.cpp 0.5.0 و سازگاری RPC",
+        "summary": "پروتکل major 7؛ یادداشت Vulkan برای build آزمایشی b11160 جدا آمده است."
+      },
+      "en": {
+        "title": "llama.cpp 0.5.0 and RPC compatibility",
+        "summary": "Protocol major 7; a separate note covers experimental Vulkan build b11160."
+      },
+      "es": {
+        "title": "llama.cpp 0.5.0 y compatibilidad RPC",
+        "summary": "Protocolo major 7; nota separada para Vulkan experimental b11160."
+      }
+    }
+  },
+  {
+    "id": "ollmlxrc",
+    "guide": "llm",
+    "date": "2026-09-25",
+    "kind": "software",
+    "target": "Ollama",
+    "copy": {
+      "fa": {
+        "title": "یادداشت پیش‌انتشار Ollama با MLX",
+        "summary": "v0.40.0-rc0 برای معماری‌های پشتیبانی‌شده روی Apple Silicon؛ انتخاب پایدار تغییر نکرده است."
+      },
+      "en": {
+        "title": "Ollama MLX prerelease note",
+        "summary": "v0.40.0-rc0 for supported architectures on Apple Silicon; stable selection unchanged."
+      },
+      "es": {
+        "title": "Nota del prelanzamiento Ollama con MLX",
+        "summary": "v0.40.0-rc0 para arquitecturas admitidas en Apple Silicon; selección estable sin cambios."
+      }
+    }
+  },
+  {
+    "id": "smrubin72",
+    "guide": "gpu-selection",
+    "date": "2026-09-25",
+    "kind": "server",
+    "target": "supermicro-vera-rubin-nvl72",
+    "copy": {
+      "fa": {
+        "title": "رک Supermicro Vera Rubin NVL72 اضافه شد",
+        "summary": "آغاز ارسال سازنده؛ ۷۲ GPU یکپارچه با حافظه‌های GPU و CPU جداگانه."
+      },
+      "en": {
+        "title": "Supermicro Vera Rubin NVL72 rack added",
+        "summary": "Manufacturer shipping; 72 integrated GPUs with GPU and CPU memory listed separately."
+      },
+      "es": {
+        "title": "Añadido el rack Supermicro Vera Rubin NVL72",
+        "summary": "Envíos del fabricante; 72 GPU integradas y memorias GPU y CPU separadas."
+      }
+    }
+  },
+  {
+    "id": "mimo26p",
+    "guide": "llm",
+    "date": "2026-09-22",
+    "kind": "model",
+    "target": "model:mimo-v2-6-pro-rl",
+    "copy": {
+      "fa": {
+        "title": "MiMo-V2.6-Pro به جدول مدل‌ها اضافه شد",
+        "summary": "نسخهٔ RL با وزن‌های قابل دریافت، نتایج ارزیابی و راه‌های اجرا."
+      },
+      "en": {
+        "title": "MiMo-V2.6-Pro added to the model catalog",
+        "summary": "The RL checkpoint, downloadable weights, evaluation results and deployment options."
+      },
+      "es": {
+        "title": "MiMo-V2.6-Pro añadido al catálogo de modelos",
+        "summary": "La versión RL, pesos descargables, resultados de evaluación y opciones de ejecución."
+      }
+    }
+  },
+  {
+    "id": "qimg21",
+    "guide": "llm",
+    "date": "2026-09-22",
+    "kind": "model",
+    "target": "model:qwen-image-2-1",
+    "copy": {
+      "fa": {
+        "title": "Qwen-Image-2.1 به جدول مدل‌ها اضافه شد",
+        "summary": "تولید و ویرایش تصویر؛ مولد ۷ میلیاردی در کنار رمزگذار ۸ میلیاردی."
+      },
+      "en": {
+        "title": "Qwen-Image-2.1 added to the model catalog",
+        "summary": "Image generation and editing: a 7B generator alongside an 8B encoder."
+      },
+      "es": {
+        "title": "Qwen-Image-2.1 añadido al catálogo de modelos",
+        "summary": "Generación y edición de imágenes: generador de 7B y codificador de 8B."
+      }
+    }
+  },
+  {
+    "id": "sgl0520",
+    "guide": "llm",
+    "date": "2026-09-22",
+    "kind": "software",
+    "target": "SGLang",
+    "copy": {
+      "fa": {
+        "title": "شرایط نصب SGLang 0.5.20 به‌روز شد",
+        "summary": "توقف انتشار بسته‌های CUDA 12 و تغییر شرایط ذخیرهٔ پاسخ‌های API."
+      },
+      "en": {
+        "title": "SGLang 0.5.20 deployment notes updated",
+        "summary": "CUDA 12 packages discontinued; Responses API storage is now opt-in."
+      },
+      "es": {
+        "title": "Actualizadas las condiciones de SGLang 0.5.20",
+        "summary": "Fin de los paquetes CUDA 12 y almacenamiento de Responses API mediante activación explícita."
+      }
+    }
+  },
+  {
+    "id": "crescent",
+    "guide": "gpu-selection",
+    "date": "2026-09-08",
+    "kind": "gpu",
+    "target": "intel-crescent-island",
+    "copy": {
+      "fa": {
+        "title": "Crescent Island اینتل به جدول اضافه شد",
+        "summary": "مشخصات اولیهٔ شتاب‌دهنده ثبت شده؛ هنوز در ردهٔ محصولات اعلام‌شده است."
+      },
+      "en": {
+        "title": "Intel Crescent Island added to the table",
+        "summary": "Preliminary specifications recorded; listed as an announced product."
+      },
+      "es": {
+        "title": "Intel Crescent Island añadido a la tabla",
+        "summary": "Especificaciones preliminares registradas; figura como producto anunciado."
+      }
+    }
+  },
+  {
+    "id": "qctd75t",
+    "guide": "gpu-selection",
+    "date": "2026-09-08",
+    "kind": "server",
+    "target": "qct-d75t-7u",
+    "copy": {
+      "fa": {
+        "title": "مشخصات سرور QCT D75T-7U در جدول ثبت شد",
+        "summary": "سامانهٔ یکپارچه با هشت MI325X یا H200؛ همراه با شرایط برق و خنک‌کاری."
+      },
+      "en": {
+        "title": "QCT D75T-7U specifications added to the table",
+        "summary": "An integrated eight-MI325X or H200 system, including power and cooling requirements."
+      },
+      "es": {
+        "title": "Especificaciones del QCT D75T-7U añadidas a la tabla",
+        "summary": "Sistema integrado con ocho MI325X o H200, con requisitos de alimentación y refrigeración."
+      }
+    }
+  }
+]

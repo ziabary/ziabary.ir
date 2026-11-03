@@ -1,0 +1,65 @@
+{
+  "روزنامه ایران": {
+    "logo": "/images/news-agencies/iran-newspaper.webp"
+  },
+  "شهرآرانیوز": {
+    "logo": "/images/news-agencies/shahrara.jpg"
+  },
+  "مرکز نوآوری قوه مقننه": {
+    "logo": "/images/news-agencies/lcih.jpg"
+  },
+  "هومص": {
+    "logo": "/images/organizations/hoomas-logo.png"
+  },
+  "نصر تهران": {
+    "logo": "/images/organizations/nezamsenfi-ai.png"
+  },
+  "زاویه": {
+    "logo": "/images/news-agencies/zavieh.svg"
+  },
+  "راه پرداخت": {
+    "logo": "/images/news-agencies/way2pay.jpg"
+  },
+  "پیوست": {
+    "logo": "/images/news-agencies/peivast.png"
+  },
+  "اکوموتیو": {
+    "logo": "/images/news-agencies/ecomotive.png"
+  },
+  "توسعه برند": {
+    "logo": "/images/news-agencies/tosebrand.png"
+  },
+  "تسنیم": {
+    "logo": "/images/news-agencies/tasnim.png"
+  },
+  "دیجیاتو": {
+    "logo": "/images/news-agencies/digiato.svg"
+  },
+  "همشهری": {
+    "logo": "/images/news-agencies/hamshahri.png"
+  },
+  "خبرگزاری فارس": {
+    "logo": "/images/news-agencies/fars.png"
+  },
+  "خبرگزاری آنا": {
+    "logo": "/images/news-agencies/ana.svg"
+  },
+  "خبرگزاری فرهیختگان": {
+    "logo": "/images/news-agencies/farhikhtegan.jpg"
+  },
+  "خبرگزاری صداوسیما": {
+    "logo": "/images/news-agencies/irib.png"
+  },
+  "خبرگزاری مهر": {
+    "logo": "/images/news-agencies/mehr.jpg"
+  },
+  "ایسنا": {
+    "logo": "/images/news-agencies/isna.jpg"
+  },
+  "ایبنا": {
+    "logo": "/images/news-agencies/ibna.png"
+  },
+  "خبرگزاری هوشیو": {
+    "logo": "/images/news-agencies/hooshio.png"
+  }
+}

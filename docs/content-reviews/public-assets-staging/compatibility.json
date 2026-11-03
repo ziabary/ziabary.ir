@@ -1,0 +1,9 @@
+{
+  "preservedPublicAssets": 2974,
+  "comparedAgainst": [
+    ".build/public",
+    "build"
+  ],
+  "staticSourceEntries": 149,
+  "staticSourceUnchanged": true
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "zero-trust-ai",
+    "status": "published",
+    "title": "Zero Trust AI (ZTAI)",
+    "subtitle": "Secure the data, models and workflows of AI, from development to controlled execution and output release.",
+    "eyebrow": "AI security",
+    "image": "/images/guides/zero-trust-ai.webp",
+    "imageAlt": "An AI core connected to data and services through several security boundaries and access gates",
+    "intro": "Start with the zero trust principles, then follow the operational foundations, maturity stages and practical controls. Then examine indirect access through code, outputs and infrastructure administration, and how to keep autonomous agents within enforceable authority boundaries.",
+    "items": [
+      {
+        "id": "from-zero-trust-to-zero-trust-ai-en",
+        "title": "From Zero Trust Architecture to Zero Trust AI",
+        "subtitle": "Apply zero trust to data, models and the AI lifecycle.",
+        "kind": "article",
+        "href": "/en/articles/from-zero-trust-to-zero-trust-ai-en/"
+      },
+      {
+        "id": "mlops-foundation-of-zero-trust-ai-en",
+        "title": "MLOps as the foundation for Zero Trust AI",
+        "subtitle": "Make data, code, experiments and releases traceable.",
+        "kind": "article",
+        "href": "/en/articles/mlops-foundation-of-zero-trust-ai-en/"
+      },
+      {
+        "id": "zero-trust-ai-maturity-model-en",
+        "title": "A maturity model for Zero Trust AI",
+        "subtitle": "Move from manual work toward controlled automation.",
+        "kind": "article",
+        "href": "/en/articles/zero-trust-ai-maturity-model-en/"
+      },
+      {
+        "id": "zero-trust-ai-principles-and-controls-en",
+        "title": "Zero Trust AI: principles and practical controls",
+        "subtitle": "Enforce identity, data, model and output policies.",
+        "kind": "article",
+        "href": "/en/articles/zero-trust-ai-principles-and-controls-en/"
+      },
+      {
+        "id": "ztai-indirect-data-access-en",
+        "title": "When people cannot see the data, has their access really been removed?",
+        "subtitle": "Examine code changes, output release and administrator powers.",
+        "kind": "article",
+        "href": "/en/articles/ztai-indirect-data-access-en/"
+      },
+      {
+        "id": "ztai-autonomous-agents-bounded-authority-en",
+        "title": "ZTAI for autonomous agents: bounded authority throughout execution",
+        "subtitle": "Task permissions, delegation, retrieval, memory and tools, with independent evaluation and effective revocation.",
+        "kind": "article",
+        "href": "/en/articles/ztai-autonomous-agents-bounded-authority-en/"
+      }
+    ]
+  }
+]

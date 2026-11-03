@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "asOf": "2026-10-25",
+  "asOf": "2026-11-03",
   "repository": "repository.json",
   "supplement": "data/llm/v0.2.0/data",
   "sourceArchive": "ziabary-llm-data-upgrade-v0.3.0.zip",
@@ -205,5 +205,19 @@
     "memoryEstimateChanged": false,
     "hardwareChanged": false,
     "wizardCodeChanged": false
+  },
+  "tables20261103": {
+    "models": [
+      "model:mistral-large-4-1t-a52b",
+      "model:mage-vl-cowork"
+    ],
+    "softwareReleases": [
+      "software-release:ollama-v0-40-14",
+      "software-release:sglang-v0-5-23",
+      "software-release:vllm-v0-32-0",
+      "software-release:vllm-v0-33-0rc3",
+      "software-release:llama-cpp-b12065"
+    ],
+    "runtimeTested": false
   }
 }

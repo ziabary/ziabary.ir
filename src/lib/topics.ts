@@ -1,4 +1,4 @@
-import { articles, type ArticleMeta } from './content';
+import { articles, type ArticleMeta } from '$lib/content';
 import type { Locale } from './editions';
 
 // Editorial destinations: selection and order are manual, independent of translation groups.

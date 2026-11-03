@@ -1,0 +1,73 @@
+{
+  "the-firm-trapped-by-good-decisions": {
+    "pdf": "/slides/the-firm-trapped-by-good-decisions/the-firm-trapped-by-good-decisions-v2.pdf",
+    "cover": "/slides/the-firm-trapped-by-good-decisions/cover.webp",
+    "slideCount": 23
+  },
+  "behind-ai-dba": {
+    "pdf": "/slides/behind-ai-dba/Behind-AI.pdf",
+    "cover": "/slides/behind-ai-dba/cover.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 144
+  },
+  "enterprise-ai-governance-dba": {
+    "pdf": "/slides/enterprise-ai-governance-dba/AIGov-DBA.pdf",
+    "cover": "/slides/enterprise-ai-governance-dba/cover.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 114
+  },
+  "iran-ai-gpu-dba": {
+    "pdf": "/slides/facecup/IranGPUFarm.pdf",
+    "cover": "/slides/facecup/cover.png",
+    "version": "نسخه ۱",
+    "slideCount": 20
+  },
+  "ai-4-managers-part-4": {
+    "pdf": "/slides/ai-4-managers/AI4Managers-P4.pdf",
+    "cover": "/slides/ai-4-managers/cover-4.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 58
+  },
+  "ai-4-managers-part-3": {
+    "pdf": "/slides/ai-4-managers/AI4Managers-P3.pdf",
+    "cover": "/slides/ai-4-managers/cover-3.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 27
+  },
+  "ai-4-managers-part-1-2": {
+    "pdf": "/slides/ai-4-managers/AI4Managers-P1-P2.pdf",
+    "cover": "/slides/ai-4-managers/cover-1.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 22
+  },
+  "nlp4eas": {
+    "pdf": "/slides/nlp4eas/NLP4EAS.pdf",
+    "cover": "/slides/nlp4eas/cover.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 27
+  },
+  "data-governance-ai-pardis": {
+    "pdf": "/slides/data-governance/DataGovernance-Pardis.pdf",
+    "cover": "/slides/data-governance/cover-pardis.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 18
+  },
+  "international-ai-acts": {
+    "pdf": "/slides/ai-act/IntlAIAct-v2.pdf",
+    "cover": "/slides/ai-act/cover.png",
+    "version": "نسخه ۱",
+    "slideCount": 18
+  },
+  "data-governance-ai-bonyad": {
+    "pdf": "/slides/data-governance/DataGovernance-Bonyad.pdf",
+    "cover": "/slides/data-governance/cover-bonyad.jpg",
+    "version": "نسخه ۱",
+    "slideCount": 18
+  },
+  "llm-persian-culture": {
+    "pdf": "/slides/llm-persian-culture/LLM-PersianCulture.pdf",
+    "cover": "/slides/llm-persian-culture/cover.png",
+    "version": "نسخه ۱",
+    "slideCount": 22
+  }
+}

@@ -41,31 +41,24 @@ test('software version filtering preserves historical Clef limits and exposes th
   }
 });
 
-test('Beam is an announcement with no effective Apache license or ready local recommendation', () => {
+test('Beam release replaces its announcement with evidenced license and pinned weights', () => {
   for (const locale of ['fa','en','es']) {
     const {repo, adapters, views, filters} = edition(locale);
     const model = repo.models.find(row=>row.id==='model:reflection-beam');
-    assert.equal(model.releaseStatus, 'announced');
+    assert.equal(model.releaseStatus, 'available');
     assert.equal(model.announcedOn, '2026-10-05');
-    assert.equal(model.releasedOn, undefined);
-    assert.equal(model.license.name.state, 'unknown');
-    assert.equal(model.license.commercialUse.state, 'unknown');
-    assert.match(model.license.name.note, /Apache-2\.0/);
-    assert.equal(repo.modelProfiles.find(row=>row.modelVersionId===model.id).runGuides.length, 0);
-    for (const collection of ['artifacts','artifactListings','executionFeasibility','benchmarkRuns'])
-      assert.ok(!repo[collection].some(row=>row.modelVersionId===model.id));
+    assert.equal(model.releasedOn, '2026-10-16');
+    assert.equal(model.license.name.state, 'known');
+    assert.equal(model.license.name.value, 'Apache-2.0');
+    assert.equal(model.license.commercialUse.value, 'allowed');
+    assert.ok(model.license.evidenceIds.every(id => repo.evidence.some(e => e.id === id)));
+    assert.ok(repo.artifactListings.some(row => row.modelVersionId === model.id && row.repositoryRevision));
+    assert.ok(repo.modelProfiles.find(row=>row.modelVersionId===model.id).runGuides.length);
     const rows=adapters.buildLlmViewRows(repo)['model-catalog'];
     const config=views.llmViewConfigs.find(view=>view.id==='model-catalog');
-    assert.ok(filters.filterLlmRows(rows,config.filters,{'review-status':['announced']},'').some(row=>row.id===model.id));
-    assert.ok(!filters.filterLlmRows(rows,config.filters,{'review-status':['available']},'').some(row=>row.id===model.id));
-    assert.ok(!filters.filterLlmRows(rows,config.filters,{'license':'Apache-2.0'},'').some(row=>row.id===model.id));
-    for (const vram of ['24','48']) {
-      const input={...answers,vram};
-      const review=modules.wizard.assessWizardCatalog(repo,input,locale).find(row=>row.model.id===model.id);
-      assert.equal(review.status,'excluded');
-      assert.equal(review.memory,undefined);
-      assert.ok(!modules.wizard.wizardCandidates(repo,input,locale).some(row=>row.model.id===model.id));
-    }
+    assert.ok(!filters.filterLlmRows(rows,config.filters,{'review-status':['announced']},'').some(row=>row.id===model.id));
+    assert.ok(filters.filterLlmRows(rows,config.filters,{'review-status':['available']},'').some(row=>row.id===model.id));
+    assert.ok(filters.filterLlmRows(rows,config.filters,{'license':'Apache-2.0'},'').some(row=>row.id===model.id));
     if(locale!=='fa') assert.doesNotMatch(JSON.stringify([model,repo.modelProfiles.find(row=>row.modelVersionId===model.id)]),/[\u0600-\u06ff]/);
   }
 });

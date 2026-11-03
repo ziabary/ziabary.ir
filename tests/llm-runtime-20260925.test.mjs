@@ -1,3 +1,4 @@
+import { inlineJsonImports } from './helpers/json-imports.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -50,7 +51,7 @@ test('security warning follows selected vLLM, never diagnoses uncollected versio
 });
 const serverSource=fs.readFileSync('src/lib/server-data.ts','utf8');
 const transpile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
-const server=await import('data:text/javascript;base64,'+Buffer.from(transpile(serverSource)).toString('base64'));
+const server=await import('data:text/javascript;base64,'+Buffer.from(transpile(inlineJsonImports(serverSource, 'src/lib/server-data.ts'))).toString('base64'));
 const component=fs.readFileSync('src/lib/components/ServerComparison.svelte','utf8');
 const capacityCode=component.slice(component.indexOf('  function capacity('),component.indexOf('  function compatibility('));
 const {capacity}=await import('data:text/javascript;base64,'+Buffer.from(transpile('export '+capacityCode.trim())).toString('base64'));

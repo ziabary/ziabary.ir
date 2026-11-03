@@ -1,0 +1,16 @@
+{
+  "en": {
+    "title": "Choosing a language model: large or small?",
+    "subtitle": "Compare models, inference software and memory requirements for your workload, with published results and practical guides.",
+    "eyebrow": "Models and inference",
+    "imageAlt": "Language models of different sizes connected to chat, coding and document applications",
+    "intro": "A guide based on primary documentation, published results and explicit memory calculations."
+  },
+  "es": {
+    "title": "Cómo elegir un modelo de lenguaje grande o pequeño",
+    "subtitle": "Compara modelos, software de inferencia y requisitos de memoria según tu tarea, con resultados publicados y guías prácticas.",
+    "eyebrow": "Modelos e inferencia",
+    "imageAlt": "Modelos de lenguaje de distintos tamaños conectados a aplicaciones de conversación, programación y documentos",
+    "intro": "Una guía basada en documentación primaria, resultados publicados y cálculos explícitos de memoria."
+  }
+}

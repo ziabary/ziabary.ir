@@ -1,6 +1,6 @@
-import dataText from './gpu-data.en.json';
+import dataText from '../../../data/gpu/locales/en.json';
 import uiText from './gpu-ui.en.json';
-import spanishDataText from './gpu-data.es.json';
+import spanishDataText from '../../../data/gpu/locales/es.json';
 import spanishUiText from './gpu-ui.es.json';
 import { gpuRecords, type GpuRecord } from '$lib/gpu-data';
 import { serverGpuProfiles, serverRecords, type ServerRecord } from '$lib/server-data';

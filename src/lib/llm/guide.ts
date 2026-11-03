@@ -1,4 +1,4 @@
-import { llmDataset, llmDatasetUpdatedOn } from './data/repository.v1';
+import { llmDataset, llmDatasetUpdatedOn } from '../../../data/llm/generated/repository.v1';
 import type {
   ApplicationTaxon,
   ExistingContentLink,

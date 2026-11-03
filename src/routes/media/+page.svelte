@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
   import PageHero from '$lib/components/PageHero.svelte';
   import PaginatedArchive from '$lib/components/PaginatedArchive.svelte';
-  import { articles } from '$lib/content';
+  import { articles } from '../../lib/content/index';
   import { galleryItems } from '$lib/gallery';
   import MediaEntry from '$lib/components/MediaEntry.svelte';
   import MediaClip from '$lib/components/MediaClip.svelte';

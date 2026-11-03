@@ -49,7 +49,7 @@ test('future and stale announcements are not shown, including the date boundarie
 test('each translated announcement keeps its unique short ID and links to a real dataset record', () => {
   const repo=JSON.parse(fs.readFileSync('data/llm/v0.3.0/repository.json','utf8'));
   const apiModels=JSON.parse(fs.readFileSync('data/llm/api-models.json','utf8'));
-  const gpu=fs.readFileSync('src/lib/gpu-data.ts','utf8'), server=fs.readFileSync('src/lib/server-data.ts','utf8');
+  const gpu=fs.readFileSync('data/gpu/records.json','utf8'), server=fs.readFileSync('data/servers/records.json','utf8');
   assert.equal(new Set(guideUpdates.map(n=>n.id)).size,guideUpdates.length);
   for(const item of guideUpdates){
     assert.match(item.id,/^[a-z0-9-]{3,20}$/);

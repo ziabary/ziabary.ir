@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 // SVGs rendered through <img> cannot load external font files. Embed the
 // project's existing WOFF2 faces so downloaded diagrams also keep their font.
-const directory = new URL('../static/images/articles/', import.meta.url);
+const directory = new URL('../.build/public/images/articles/', import.meta.url);
 const fontRoot = new URL('../static/fonts/IranSansX/fonts/woff2/', import.meta.url);
 const faces = await Promise.all([['Regular', 400], ['Bold', 700]].map(async ([name, weight]) => {
   const data = await readFile(new URL(`IRANSansX-${name}.woff2`, fontRoot));

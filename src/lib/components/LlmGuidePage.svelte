@@ -33,7 +33,7 @@
   import { createLlmResearchViews } from '$lib/llm/research-views';
   import { imageAttributes } from '$lib/images';
   import { allArticleMetadata as articles, getArticle } from '$lib/content';
-  import groups from '$lib/translation-groups.json';
+  import groups from '../../../content/relationships/translations.json';
   import { llmCollection, llmEditionSlugs, llmTopicSlug, llmBase, llmEditionPolicy } from '$lib/llm/editions';
   import { localizeLlmRepository } from '$lib/llm/i18n/runtime';
   import { llmSelectionHref } from '$lib/llm/selection';

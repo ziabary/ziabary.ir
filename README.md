@@ -27,11 +27,10 @@ outputs are local assets, not repository content. Restore those media directorie
 from the maintained media copy before a production build or deployment. A source
 checkout alone does not contain the complete published media library.
 
-`npm run prepare:content` recreates `src/lib/generated/`, responsive images,
+`npm run prepare:content` recreates `.build/generated/`, responsive images,
 search indexes, the public short-link JSON and compatibility module, and
-`docs/deployment/short-link-redirects.json`. These outputs are ignored by Git and
-are still included in the static build where needed. Keep original article images,
-source code, content and generators tracked.
+`.build/deployment/short-link-redirects.json`. These outputs are ignored by Git and
+are still included in the static build where needed. Keep editable SVG/Mermaid/chart sources, text, structured records and generators tracked; raster originals are backed up outside Git.
 
 `config/short-links.json` is the permanent reservation registry, not a disposable
 build output. Commit its changes with content so existing short codes stay stable.
@@ -41,7 +40,7 @@ remove its copies from earlier commits.
 
 ## Writing an article
 
-Create a Markdown file under src/lib/content/articles. Frontmatter controls the
+Create a Markdown file under content/articles/<lang>/<slug>/index.md. Frontmatter controls the
 URL, language, metadata and the manually curated related-reading path:
 
     ---
@@ -60,7 +59,7 @@ URL, language, metadata and the manually curated related-reading path:
 
 Images belonging to a post should be placed under:
 
-    static/images/articles/<slug>/
+    content/articles/<lang>/<slug>/images/
 
 Then reference them with an absolute site path:
 
@@ -83,8 +82,8 @@ Direct folder writing uses the File System Access API and works best in current
 Chromium-based browsers on localhost or HTTPS. Select the repository root—the
 directory that contains `package.json`. The editor writes to:
 
-    src/lib/content/articles/<slug>.md
-    static/images/articles/<slug>/<image-name>
+    content/articles/<lang>/<slug>/index.md
+    content/articles/<lang>/<slug>/images/<image-name>
 
 The editor changes local files only. Review the diff, then commit and push with
 Git as usual. Firefox and Safari users can use the Markdown download fallback
@@ -104,3 +103,6 @@ S3_ENDPOINT and S3_REGION, then run:
     npm run deploy:s3
 
 See docs/content-model.md for the editorial structure.
+
+See [content/README.md](content/README.md) for the separated content workspace,
+media backup requirements, preserved asset URLs and generated data policy.

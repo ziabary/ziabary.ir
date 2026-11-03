@@ -1,3 +1,4 @@
+import { articleFiles } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
@@ -7,8 +8,8 @@ import { gunzipSync } from 'node:zlib';
 const baseline = JSON.parse(readFileSync('docs/reviews/local-2026-09-09/baseline.json','utf8'));
 const html = path => readFileSync(`build${path}index.html`, 'utf8');
 const publishedPaths = [];
-for(const file of readdirSync('src/lib/content/articles').filter(file=>file.endsWith('.md'))) {
-  const {data:{fm}} = await compile(readFileSync('src/lib/content/articles/'+file,'utf8'));
+for(const file of articleFiles()) {
+  const {data:{fm}} = await compile(readFileSync(file,'utf8'));
   if(isPublished(fm))publishedPaths.push(`${fm.lang==='fa'?'':'/'+fm.lang}/articles/${fm.slug}/`);
 }
 
@@ -68,7 +69,7 @@ test('published GPU editions include their chapters, tables, discovery links and
   for (const locale of ['en', 'es']) {
     const path = `/${locale}/guides/gpu-selection/`;
     const source = html(path);
-    const collection = JSON.parse(readFileSync(`docs/drafts/gpu-selection-${locale}/collection.json`, 'utf8'));
+    const collection = JSON.parse(readFileSync(`content/guides/${locale}/gpu-selection.json`, 'utf8'));
     assert.doesNotMatch(source, /<meta name="robots" content="noindex/);
     assert.doesNotMatch(source, /English draft|Borrador en español|Local preview|Vista previa local/);
     assert.ok(source.includes(`rel="canonical" href="https://ziabary.ir${path}"`));
@@ -92,9 +93,9 @@ test('published GPU editions include their chapters, tables, discovery links and
 });
 
 test('slide PDF sizes reflect the actual retained files', () => {
-  const sizes=JSON.parse(readFileSync('src/lib/generated/pdf-sizes.json'));
+  const sizes=JSON.parse(readFileSync('.build/generated/pdf-sizes.json'));
   assert.ok(Object.keys(sizes).length);
-  for(const [path,size] of Object.entries(sizes))assert.equal(statSync('static'+path).size,size);
+  for(const [path,size] of Object.entries(sizes))assert.equal(statSync('.build/public'+path).size,size);
   for(const locale of ['en','es']) {
     const source=html(`/${locale}/slides/enterprise-ai-governance-dba/`);
     assert.ok(source.includes(locale==='en'?'PDF in Persian':'PDF en persa'));

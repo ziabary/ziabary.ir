@@ -1,8 +1,8 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
   import PageHero from '$lib/components/PageHero.svelte';
-  import englishResume from '$lib/resumes/en.json';
-  import spanishResume from '$lib/resumes/es.json';
+  import englishResume from '../../../content/resumes/en.json';
+  import spanishResume from '../../../content/resumes/es.json';
 
   export let locale: 'en' | 'es';
   // Independent editorial editions sourced from their respective CV PDFs.

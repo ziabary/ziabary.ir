@@ -1,17 +1,50 @@
 node_modules
 .svelte-kit
 build
+/.build/
 .env
 .env.*
 !.env.example
 .DS_Store
 npm-debug.log*
 
+# Private local drafts: never commit or publish.
+/local-drafts/
+
 # Large media assets are maintained locally, outside Git.
+/content/**/images/**
+!/content/**/images/**/
+!/content/**/images/**/*.svg
+!/content/**/images/**/*.mmd
+!/content/**/images/**/*.csv
+/content/**/files/
+/static/images/articles/
+/static/images/guides/
+/static/images/media-covers/
+/static/images/news/
 /static/slides/
 /static/videos/
 /static/images/gallery/
 /static/images/responsive/
+
+# Large aggregate and typed catalogs are rebuilt from the tracked JSON collections.
+/data/llm/v0.3.0/repository.json
+/data/llm/generated/
+
+# Downloadable documents and archives are media, not repository source.
+*.pdf
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Visual review artifacts remain local; review notes and results stay versioned.
+/docs/reviews/**/*.png
+/docs/reviews/**/*.jpg
+/docs/reviews/**/*.webp
+/docs/content-reviews/**/*.png
+/docs/content-reviews/**/*.jpg
+/docs/content-reviews/**/*.webp
 
 # Generated English GPU editorial review; source drafts and generator are tracked.
 /docs/drafts/gpu-selection-en/review/

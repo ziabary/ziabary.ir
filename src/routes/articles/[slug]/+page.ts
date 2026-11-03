@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { allArticleMetadata, articles, getArticle, getArticleModule } from '$lib/content';
+import { allArticleMetadata, articles, getArticle, getArticleModule } from '../../../lib/content/index';
 
 export function entries() {
   return [...articles, ...allArticleMetadata.filter(article => article.draft === true)]

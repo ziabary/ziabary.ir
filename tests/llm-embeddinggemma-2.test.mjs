@@ -16,7 +16,7 @@ test('multimodal filtering includes embedders without changing their task or los
     const {repo,adapters,views,filters} = edition(locale);
     const rows = adapters.buildLlmViewRows(repo)['model-catalog'];
     const config = views.llmViewConfigs.find(view => view.id === 'model-catalog');
-    assert.equal(rows.length, 141);
+    assert.equal(rows.length, repo.models.length);
     assert.deepEqual(filters.filterLlmRows(rows,config.filters,{family:['EmbeddingGemma']},'').map(row=>row.id).sort(), ['model:google-embeddinggemma-300m',id].sort());
     const populated = filters.populateLlmFilterOptions(rows,config.filters,{},'');
     assert.equal(populated.find(filter=>filter.id==='family').options.find(option=>option.value==='EmbeddingGemma').count,2);

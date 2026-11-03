@@ -54,7 +54,7 @@ test('archive edge cases and same-date stable ordering', () => {
 });
 
 test('equivalent Persian spellings find the same real published articles', () => {
-  const records = JSON.parse(readFileSync('static/search/fa.json', 'utf8'));
+  const records = JSON.parse(readFileSync('.build/public/search/fa.json', 'utf8'));
   for (const [a,b,expected] of [
     ['عیار','عيار','ayar-hoomas-assistant-for-startups-and-investors'],
     ['کار','كار','noafarin-plan'],

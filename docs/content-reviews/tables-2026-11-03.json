@@ -1,0 +1,69 @@
+{
+  "reviewedOn": "2026-11-03",
+  "runtimeTested": false,
+  "sourcesFolder": "data/llm/sources/tables-2026-11-03",
+  "modelsAdded": [
+    "model:mistral-large-4-1t-a52b",
+    "model:mage-vl-cowork"
+  ],
+  "softwareReleasesAdded": [
+    "software-release:ollama-v0-40-14",
+    "software-release:sglang-v0-5-23",
+    "software-release:vllm-v0-32-0",
+    "software-release:vllm-v0-33-0rc3",
+    "software-release:llama-cpp-b12065"
+  ],
+  "gpuAdded": [
+    "nvidia-rtx-spark-n1x-laptop"
+  ],
+  "gpuUpdated": [
+    "nvidia-rubin"
+  ],
+  "serversAdded": [
+    "nvidia-vera-rubin-nvl72-oci",
+    "nvidia-hgx-rubin-nvl8-oci"
+  ],
+  "serverAvailabilityUpdated": [
+    "microsoft-surface-laptop-ultra",
+    "asus-proart-p16-rtx-spark",
+    "dell-xps16-creator-rtx-spark",
+    "hp-omnibook-ultra16-rtx-spark",
+    "msi-prestige-n16-rtx-spark"
+  ],
+  "resolutions": [
+    "Mistral Large 4 release date is October 29, not the September 30 repository creation date.",
+    "52B active includes embeddings and output layers; 49B without them is recorded separately.",
+    "Mistral Model-as-a-Service licensing condition retained; internal use is exempt from that condition.",
+    "NVFP4 distribution is a quantized variant of the same model, not a duplicate model row.",
+    "GGUF inventories include every shard of the selected quantization plus one BF16 projector; artifact byte sums describe downloads.",
+    "vLLM tag v0.33.0rc3 remains prerelease despite GitHub prerelease=false; 0.32.0 is the sole latest stable row.",
+    "RTX Spark laptop row is the 6144-core variant; 128GB is maximum shared memory and 45–80W covers the whole SoC. Memory bandwidth and unspecified matrix rates remain unpublished.",
+    "OCI NVL72 is generally available; OCI HGX Rubin NVL8 is planned. Integrated GPU counts never become PCIe-card capacity.",
+    "Existing records, historical measurements and manual article relationships are preserved. Only the old Ollama latest marker changes in prior LLM records."
+  ],
+  "verification": {
+    "datasetValidation": "passed",
+    "locales": [
+      "fa",
+      "en",
+      "es"
+    ],
+    "svelteCheck": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "sitemapIndexablePages": 273,
+    "structuredDataBlocks": 284,
+    "shortLinkDestinations": 330,
+    "existingTestFiles": [
+      "tests/guide-updates.test.mjs",
+      "tests/server-card-capacity.test.mjs"
+    ],
+    "existingTestFileFailures": 0,
+    "localizedRowAndStaticHtmlChecks": "passed in fa/en/es",
+    "downloadInventoryChecks": "complete GGUF shards, one compatible projector and exact byte sums passed",
+    "releaseChannelAndIntegratedCapacityChecks": "passed"
+  },
+  "publication": "Prepared in repository and build/; not deployed."
+}

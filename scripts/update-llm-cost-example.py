@@ -1,10 +1,11 @@
+from content_paths import article_file
 """Render the Persian worked example from dated, shared inputs; rental dates stay unchanged."""
 from pathlib import Path
 import json,re
 root=Path(__file__).resolve().parents[1];d=json.loads((root/'data/llm/cost-example.fa.json').read_text());parts=d['parts'];total=sum(x['amountToman'] for x in parts);months=d['amortizationMonths'];ram=next(x for x in parts if x['component']=='ram');gpu=next(x for x in parts if x['component']=='gpu')['amountToman'];old=total-ram['amountToman']+400000000
 tr=str.maketrans('0123456789,.','۰۱۲۳۴۵۶۷۸۹٬٫')
 def f(n,dp=0):return format(n,',.'+str(dp)+'f').translate(tr)
-p=root/'src/lib/content/articles/true-llm-cost-buy-rent-or-api.md';s=p.read_text()
+p=article_file('true-llm-cost-buy-rent-or-api');s=p.read_text()
 s=s.replace('قیمت‌ها در **۲۵ شهریور ۱۴۰۵، برابر با ۱۶ سپتامبر ۲۰۲۶** از صفحات عرضه‌کنندگان گردآوری شده‌اند.', 'قیمت‌ها را در **۲۵ شهریور ۱۴۰۵، برابر با ۱۶ سپتامبر ۲۰۲۶** از صفحات عرضه‌کنندگان گردآوری شده‌اند؛ فقط عرضهٔ RAM در **۲۸ شهریور، ۱۹ سپتامبر** به‌روزرسانی شده است.')
 s=re.sub(r'\| حافظهٔ میزبان \|.*',f'| حافظهٔ میزبان | <bdi dir="ltr">{ram["name"]}</bdi>، مشاهدهٔ ۲۸ شهریور ۱۴۰۵؛ موجود در انبار | [لیون کامپیوتر؛ {f(ram["amountToman"])}]({ram["sourceUrl"]}) |',s)
 s=re.sub(r'\| \*\*جمع قطعات\*\*.*',f'| **جمع قطعات** | **یک ایستگاه کاری با یک GPU** | **{f(total)}** |',s)

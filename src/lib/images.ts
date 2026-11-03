@@ -1,4 +1,4 @@
-import generated from './generated/image-sources.json';
+import generated from '../../.build/generated/image-sources.json';
 type ImageVariants = { width: number; height: number; base: string; widths: number[] };
 const images: Record<string, ImageVariants> = generated;
 export function imageAttributes(src: string | undefined | null, sizes = '(min-width: 1200px) 740px, calc(100vw - 32px)') {

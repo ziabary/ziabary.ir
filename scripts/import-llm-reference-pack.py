@@ -1,3 +1,4 @@
+from llm_repository import load_repository, write_repository, is_current_repository
 """Idempotent adapter from the reviewed 2026-09-16 pack into the current canonical repository.
 Never restores baseline fingerprints. Run generate:llm and verify:llm after importing.
 """
@@ -5,8 +6,10 @@ from pathlib import Path
 import json, hashlib, copy
 ROOT=Path(__file__).resolve().parents[1]
 BUNDLE=ROOT/'data/llm/v0.3.0'; PACK=BUNDLE/'research/reference-pack-2026-09-16'
-def read(p): return json.loads(p.read_text())
-def write(p,x): p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
+def read(p):return load_repository(p) if is_current_repository(p) else json.loads(p.read_text())
+def write(p,x):
+ if is_current_repository(p):write_repository(p,x)
+ else:p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
 r=read(BUNDLE/'repository.json'); before=copy.deepcopy(r)
 pack=lambda name:read(PACK/'data'/f'{name}.json')
 logs=[]

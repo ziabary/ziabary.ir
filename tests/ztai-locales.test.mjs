@@ -1,3 +1,5 @@
+import { inlineJsonImports } from './helpers/json-imports.mjs';
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -9,13 +11,13 @@ const read = name => readFile(new URL(name, root), 'utf8');
 const slugs = ['from-zero-trust-to-zero-trust-ai', 'mlops-foundation-of-zero-trust-ai', 'zero-trust-ai-maturity-model', 'zero-trust-ai-principles-and-controls', 'ztai-indirect-data-access'];
 const metadata = {};
 for (const locale of ['en', 'es']) for (const slug of slugs) {
-  const { data: { fm } } = await compile(await read(`src/lib/content/articles/${slug}-${locale}.md`));
+  const { data: { fm } } = await compile(await read(articleFile(`${slug}-${locale}`)));
   metadata[fm.slug] = fm;
 }
 const source = await read('src/lib/localized-guide-collections.ts');
-const gpuReviews = Object.fromEntries(await Promise.all(['en', 'es'].map(async locale => [locale, JSON.parse(await read(`docs/drafts/gpu-selection-${locale}/collection.json`))])));
+const gpuReviews = Object.fromEntries(await Promise.all(['en', 'es'].map(async locale => [locale, JSON.parse(await read(`content/guides/${locale}/gpu-selection.json`))])));
 async function collectionsFor(records) {
-  const js = ts.transpileModule(source.replace("import { guideCollections, type GuideCollection } from '$lib/guides';", "const guideCollections = []; ").replace("import { llmCollection, llmEditionSlugs } from '$lib/llm/editions';", "const llmCollection = () => ({ slug: 'llm', status: 'planned', items: [] }); const llmEditionSlugs = () => [];")
+  const js = ts.transpileModule(inlineJsonImports(source, 'src/lib/localized-guide-collections.ts').replace("import { guideCollections, type GuideCollection } from '$lib/guides';", "const guideCollections = []; ").replace("import { llmCollection, llmEditionSlugs } from '$lib/llm/editions';", "const llmCollection = () => ({ slug: 'llm', status: 'planned', items: [] }); const llmEditionSlugs = () => [];")
     .replace("import { gpuReviews } from '$lib/gpu-review';", `const gpuReviews = ${JSON.stringify(gpuReviews)};`).replace("import { getArticle } from '$lib/content';", `const records = ${JSON.stringify(records)}; const getArticle = slug => records[slug]?.draft ? undefined : records[slug];`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
   return import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
 }
@@ -45,21 +47,21 @@ test('missing, draft or wrong-language articles cannot expose a collection link 
 
 test('translated articles retain local figures, valid internal destinations and original external references', async () => {
   for (const slug of slugs) {
-    const original = await read(`src/lib/content/articles/${slug}.md`);
-    const translated = await read(`src/lib/content/articles/${slug}-${locale}.md`);
+    const original = await read(articleFile(`${slug}`));
+    const translated = await read(articleFile(`${slug}-${locale}`));
     const originalMeta = (await compile(original)).data.fm;
     assert.equal(String(metadata[`${slug}-${locale}`].date), String(originalMeta.date), `${slug}: retain original publication date`);
     assert.doesNotMatch(translated, /[\u0600-\u06ff]/u, slug);
     assert.doesNotMatch(translated, /\b(?:Iran(?:ian)?|Irán|iraní(?:es)?)\b/i, slug);
     for (const related of metadata[`${slug}-${locale}`].related) assert.ok(metadata[related], related);
     for (const match of translated.matchAll(/\]\(\/((?:en|es)\/)?articles\/([^/]+)\/\)/g)) {
-      const target = await read(`src/lib/content/articles/${match[2]}.md`);
+      const target = await read(articleFile(`${match[2]}`));
       const { data: { fm } } = await compile(target);
       assert.ok(!fm.draft, match[2]);
       assert.equal(fm.lang, match[1] ? locale : 'fa');
     }
     for (const match of translated.matchAll(/(?:cover: "|src=")(\/images\/[^"\s]+)/g)) {
-      const asset = await readFile(new URL(`static${match[1]}`, root));
+      const asset = await readFile(new URL(`.build/public${match[1]}`, root));
       if (match[1].endsWith('.svg')) assert.doesNotMatch(asset.toString(), /[\u0600-\u06ff]/u);
     }
     for (const match of original.matchAll(/https?:\/\/[^\s)"<>]+/g)) assert.ok(translated.includes(match[0]), match[0]);
@@ -72,8 +74,8 @@ test('translated articles retain local figures, valid internal destinations and 
 
 test('Spanish retains English references, figures and editorial relationships', async () => {
   for (const slug of slugs) {
-    const en = await read(`src/lib/content/articles/${slug}-en.md`);
-    const es = await read(`src/lib/content/articles/${slug}-es.md`);
+    const en = await read(articleFile(`${slug}-en`));
+    const es = await read(articleFile(`${slug}-es`));
     assert.deepEqual(metadata[`${slug}-es`].related, metadata[`${slug}-en`].related.map(id => id.replace(/-en$/, '-es')));
     const urls = text => [...text.matchAll(/https?:\/\/[^\s)"<>]+/g)].map(match => match[0]).sort();
     assert.deepEqual(urls(es), urls(en), slug);

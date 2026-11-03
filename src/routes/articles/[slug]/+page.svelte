@@ -2,7 +2,7 @@
   import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { tick } from 'svelte';
-  import { allArticleMetadata, getArticleModule } from '$lib/content';
+  import { allArticleMetadata, getArticleModule } from '../../../lib/content/index';
   import { draftReadingHref, hasDraftPreview } from '$lib/draft-preview.mjs';
   import ArticlePage from '$lib/components/ArticlePage.svelte';
   export let data;

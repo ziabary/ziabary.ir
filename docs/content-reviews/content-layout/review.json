@@ -1,0 +1,49 @@
+{
+  "branch": "refactor/content-layout",
+  "articles": 197,
+  "imageSets": 35,
+  "editionsUsingSharedImages": 103,
+  "duplicateArticleImageOriginals": 0,
+  "assetAliases": 2,
+  "compatibility": {
+    "publicPages": 273,
+    "linkOccurrences": 21653,
+    "headingAnchors": 1924,
+    "sitemap": "byte-identical"
+  },
+  "migrationComparison": {
+    "articles": 197,
+    "unchangedArticleBodies": 196,
+    "concurrentUserEditPreserved": "russian-ai-kazan-digital-week-2026",
+    "metadataAndDatasetExports": 17,
+    "preservedAssets": 482,
+    "shortLinks": "unchanged",
+    "llmSource": "unchanged"
+  },
+  "validation": {
+    "check": "0 errors, 0 warnings",
+    "unitTests": 379,
+    "unitFailures": 0,
+    "build": "passed; 273 sitemap pages, 284 JSON-LD blocks, 330 short-link destinations",
+    "llmDataset": "passed; regenerated from tracked collections with caches absent",
+    "browserCases": 22,
+    "articleViewports": 12,
+    "editorLanguages": [
+      "fa",
+      "en",
+      "es"
+    ],
+    "browserExceptions": 0,
+    "editorMetadataPreserved": true,
+    "editorAsyncFileLoad": "passed without browser exceptions"
+  },
+  "git": {
+    "mediaAndCachePathsRemovedFromIndex": 1522,
+    "physicalMediaPreserved": true,
+    "fileLimitMiB": 5,
+    "largeAggregateIsGenerated": true,
+    "historyRewritten": false
+  },
+  "guideBrowserReview": "passed: fa/en/es lazy imports, cached reopening, retry, deep links, math, tables, TOC, keyboard, search, no-JS discovery, draft noindex",
+  "productionDeployment": false
+}

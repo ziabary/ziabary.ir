@@ -4,7 +4,7 @@ from zipfile import ZipFile
 import csv, io, base64
 from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'static/images/articles/ai-talent-infrastructure'
+OUT = ROOT / 'content/articles/fa/ai-talent-infrastructure/images'
 NAVY, TEAL, ORANGE, MUTED = '#17283d', '#087f8c', '#f87916', '#536579'
 def fa(v): return str(v).translate(str.maketrans('0123456789.,','۰۱۲۳۴۵۶۷۸۹٫٬'))
 def data(name):

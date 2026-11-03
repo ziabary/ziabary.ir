@@ -11167,5 +11167,92 @@
     "targetScenario/value": "record.runtime1025.07",
     "backendSummary/value": "record.runtime1025.08",
     "selectionCaveat": "record.runtime1025.09"
+  },
+  "repository.models/model:mistral-large-4-1t-a52b": {
+    "license/restrictions/0": "record.tables1103.001",
+    "parameterCounts/0/label": "record.tables1103.002"
+  },
+  "repository.modelProfiles/model-profile:mistral-large-4-1t-a52b": {
+    "introduction": "record.tables1103.003",
+    "roleSummary": "record.tables1103.004",
+    "distinguishingFeatures/0": "record.tables1103.005",
+    "languageSummary": "record.tables1103.006",
+    "runGuides/0/conditions/0": "record.tables1103.007",
+    "runGuides/1/conditions/0": "record.tables1103.007",
+    "runGuides/2/conditions/0": "record.tables1103.008"
+  },
+  "repository.modelProfiles/model-profile:mage-vl-cowork": {
+    "introduction": "record.tables1103.009",
+    "roleSummary": "record.tables1103.010",
+    "distinguishingFeatures/0": "record.tables1103.011",
+    "languageSummary": "record.tables1103.012",
+    "runGuides/0/conditions/0": "record.tables1103.013"
+  },
+  "repository.modelUseGuidance/model-use:mistral-large-4-1t-a52b:agents-tools": {
+    "summary": "record.tables1103.004",
+    "description": "record.tables1103.003",
+    "distinguishingFeature": "record.tables1103.005",
+    "conditions/0": "record.tables1103.007"
+  },
+  "repository.modelUseGuidance/model-use:mistral-large-4-1t-a52b:reasoning-analysis": {
+    "summary": "record.tables1103.004",
+    "description": "record.tables1103.003",
+    "distinguishingFeature": "record.tables1103.005",
+    "conditions/0": "record.tables1103.007"
+  },
+  "repository.modelUseGuidance/model-use:mistral-large-4-1t-a52b:document-vision": {
+    "summary": "record.tables1103.004",
+    "description": "record.tables1103.003",
+    "distinguishingFeature": "record.tables1103.005",
+    "conditions/0": "record.tables1103.007"
+  },
+  "repository.modelUseGuidance/model-use:mage-vl-cowork:agents-tools": {
+    "summary": "record.tables1103.010",
+    "description": "record.tables1103.009",
+    "distinguishingFeature": "record.tables1103.011",
+    "conditions/0": "record.tables1103.013"
+  },
+  "repository.modelUseGuidance/model-use:mage-vl-cowork:document-vision": {
+    "summary": "record.tables1103.010",
+    "description": "record.tables1103.009",
+    "distinguishingFeature": "record.tables1103.011",
+    "conditions/0": "record.tables1103.013"
+  },
+  "repository.artifactListings/artifact-listing:mistral-large-4-1t-a52b-q4-k-m": {
+    "scopeNote": "record.tables1103.008"
+  },
+  "repository.artifactListings/artifact-listing:mistral-large-4-1t-a52b-iq2-xxs": {
+    "scopeNote": "record.tables1103.008"
+  },
+  "repository.softwareReleases/software-release:ollama-v0-40-14": {
+    "targetScenario/value": "record.tables1103.014",
+    "backendSummary/value": "record.tables1103.015",
+    "selectionCaveat": "record.tables1103.016"
+  },
+  "repository.softwareReleases/software-release:sglang-v0-5-23": {
+    "targetScenario/value": "record.tables1103.017",
+    "backendSummary/value": "record.tables1103.018",
+    "selectionCaveat": "record.tables1103.019"
+  },
+  "repository.softwareReleases/software-release:vllm-v0-32-0": {
+    "selectionCaveat": "record.tables1103.020",
+    "targetScenario/value": "record.tables1103.021",
+    "backendSummary/value": "record.tables1103.022"
+  },
+  "repository.softwareReleases/software-release:vllm-v0-33-0rc3": {
+    "selectionCaveat": "record.tables1103.023",
+    "targetScenario/value": "record.tables1103.024",
+    "backendSummary/value": "record.tables1103.025"
+  },
+  "repository.softwareReleases/software-release:llama-cpp-b12065": {
+    "targetScenario/value": "record.tables1103.026",
+    "backendSummary/value": "record.tables1103.027",
+    "selectionCaveat": "record.tables1103.028"
+  },
+  "repository.modelUseGuidance/model-use:mistral-large-4-1t-a52b:coding-assistant": {
+    "summary": "record.tables1103.004",
+    "description": "record.tables1103.003",
+    "distinguishingFeature": "record.tables1103.005",
+    "conditions/0": "record.tables1103.007"
   }
 }

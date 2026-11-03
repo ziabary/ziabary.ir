@@ -3,8 +3,8 @@
   import { page } from '$app/stores';
   import { hasLlmPreview } from '$lib/draft-preview.mjs';
   $: preview = browser && hasLlmPreview($page.url.searchParams) ? 'show-drafts=true&' : '';
-  import { referenceComparisons } from '$lib/llm/data/referenceComparisons.v1';
-  import { selectionGuidance } from '$lib/llm/data/selectionGuidance.v1';
+  import { referenceComparisons } from '../../../data/llm/generated/referenceComparisons.v1';
+  import { selectionGuidance } from '../../../data/llm/generated/selectionGuidance.v1';
   import type { LlmLocale } from '$lib/llm/i18n/runtime';
   export let locale: LlmLocale = 'fa';
   export let ids: string[] = [];

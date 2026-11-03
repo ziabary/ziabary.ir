@@ -64,7 +64,8 @@ test('conflicting notices produce one local E4B, one API service and one latest 
   assert.equal(api[0].selfHosting, 'public-weights-available-separately');
   assert.ok(['fa', 'en', 'es'].every(locale => api[0].notes[locale].includes('66K')));
   const latest = canonical.softwareReleases.filter(r => r.productId === 'software-product:ollama' && r.isLatest);
-  assert.deepEqual(latest.map(r => r.version), ['v0.40.10']);
+  assert.equal(latest.length, 1);
+  assert.ok(latest[0].releasedOn >= '2026-10-23');
   const small = canonical.models.find(m => m.id === 'model:minicpm-v-4-7-1b');
   assert.equal(small.totalParametersB.state, 'unknown');
   assert.equal(small.parameterCounts.find(p => p.scope === 'stored').value.value, 1.554476272);

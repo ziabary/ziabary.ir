@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
+import markdownArticleAssets from './scripts/article-assets.mjs';
 import markdownImages from './scripts/markdown-images.mjs';
 import markdownHeadings from './scripts/markdown-headings.mjs';
 import markdownLinks from './scripts/markdown-links.mjs';
@@ -8,9 +9,9 @@ import remarkMath from 'remark-math';
 import markdownMath from './scripts/markdown-math.mjs';
 import { buildVersion } from './scripts/build-version.mjs';
 
-const markdownOptions = { extensions: ['.svx', '.md'], remarkPlugins: [markdownHeadings, markdownImages], rehypePlugins: [markdownLinks, markdownTables] };
+const markdownOptions = { extensions: ['.svx', '.md'], remarkPlugins: [markdownArticleAssets, markdownHeadings, markdownImages], rehypePlugins: [markdownLinks, markdownTables] };
 const markdown = mdsvex(markdownOptions);
-const mathMarkdown = mdsvex({ ...markdownOptions, remarkPlugins: [remarkMath, markdownHeadings, markdownMath, markdownImages] });
+const mathMarkdown = mdsvex({ ...markdownOptions, remarkPlugins: [remarkMath, markdownArticleAssets, markdownHeadings, markdownMath, markdownImages] });
 
 export default {
   extensions: ['.svelte', '.svx', '.md'],
@@ -20,6 +21,8 @@ export default {
     return (/^math:\s*true\s*$/m.test(frontmatter) ? mathMarkdown : markdown).markup(options);
   } }],
   kit: {
+    files: { assets: '.build/public' },
+    alias: { $generated: './.build/generated' },
     // Stable for identical inputs, different for each changed release. SvelteKit
     // uses this ID to recover navigation when a tab still runs an older build.
     version: {

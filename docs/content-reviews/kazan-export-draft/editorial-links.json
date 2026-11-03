@@ -1,0 +1,226 @@
+{
+  "article": "/home/user/Projects/ziabary.ir/content/articles/fa/kazan-iran-technology-export/index.md",
+  "reviewedOn": "2026-11-03",
+  "articleSha256": "ca88a871e5410889f3a315eacbaf7ae4af6fdfbaa03097b3e8a4d584799f8a81",
+  "status": "draft",
+  "inlineArticleLinks": [
+    "kazan-travelogue",
+    "russian-ai-kazan-digital-week-2026",
+    "ayar-hoomas-assistant-for-startups-and-investors",
+    "what-does-95-percent-accuracy-mean-for-a-factory",
+    "national-ai-organization-from-law-to-impact",
+    "russian-ai-kazan-digital-week-2026",
+    "participatory-contracts-it-ai-01",
+    "national-ai-organization-central-core-or-federated-architecture",
+    "ai-contract-deliverables",
+    "elecomp-29-from-technology-to-synergy"
+  ],
+  "related": [
+    "ayar-hoomas-assistant-for-startups-and-investors",
+    "participatory-contracts-it-ai-01",
+    "national-ai-organization-central-core-or-federated-architecture",
+    "elecomp-29-from-technology-to-synergy",
+    "kazan-travelogue",
+    "russian-ai-kazan-digital-week-2026"
+  ],
+  "photoSlots": [
+    "01-mission",
+    "02-catalogues",
+    "03-ivf-meeting",
+    "04-technology-visits",
+    "05-geopager"
+  ],
+  "cover": "/images/articles/kazan-iran-technology-export/cover.png",
+  "headingTextsPreserved": true,
+  "singleH1ProvidedByLayout": true,
+  "ayarMentionedInExcerpt": true,
+  "sourceChecks": "passed",
+  "check": "0 errors, 0 warnings",
+  "tests": "384 passed",
+  "publication": "local branch; no deployment in this task",
+  "build": "passed, sitemap and short links validated",
+  "browser": {
+    "robots": "noindex,follow",
+    "h1": 1,
+    "slots": [
+      "01-mission",
+      "02-catalogues",
+      "03-ivf-meeting",
+      "04-technology-visits",
+      "05-geopager"
+    ],
+    "bodyImages": 0,
+    "links": [
+      {
+        "text": "«سفرنامه کازان؛ صد رحمت به چین!»",
+        "href": "/articles/kazan-travelogue/"
+      },
+      {
+        "text": "«هوش مصنوعی روسیه از نزدیک؛ GPUهای قدرتمند، مدل‌های بزرگ و مسئله معماری»",
+        "href": "/articles/russian-ai-kazan-digital-week-2026/?show-drafts=true"
+      },
+      {
+        "text": "عیار هومص",
+        "href": "https://ayar.hoomas.ai/"
+      },
+      {
+        "text": "یادداشت معرفی عیار",
+        "href": "/articles/ayar-hoomas-assistant-for-startups-and-investors/"
+      },
+      {
+        "text": "شرایط ارزیابی در محیط واقعی",
+        "href": "/articles/what-does-95-percent-accuracy-mean-for-a-factory/"
+      },
+      {
+        "text": "طراحی سازمان ملی هوش مصنوعی",
+        "href": "/articles/national-ai-organization-from-law-to-impact/"
+      },
+      {
+        "text": "صندوق سرمایه‌گذاری و خطرپذیر جمهوری تاتارستان (IVF RT)",
+        "href": "https://ivfrt.ru/"
+      },
+      {
+        "text": "Russian Venture Forum 2027",
+        "href": "https://russianventureforum.ru/"
+      },
+      {
+        "text": "معاون رئیس آژانس توسعه سرمایه‌گذاری تاتارستان",
+        "href": "https://tida.tatarstan.ru/eng/struktura.htm"
+      },
+      {
+        "text": "یادداشت فنی سفر کازان",
+        "href": "/articles/russian-ai-kazan-digital-week-2026/?show-drafts=true"
+      },
+      {
+        "text": "قرارداد مشارکتی ترگمان و آدان",
+        "href": "/articles/participatory-contracts-it-ai-01/"
+      },
+      {
+        "text": "تفکیک راهبری مشترک از تمرکز داده و اجرا",
+        "href": "/articles/national-ai-organization-central-core-or-federated-architecture/"
+      },
+      {
+        "text": "خروجی مورد انتظار و معیار پذیرش پروژه",
+        "href": "/articles/ai-contract-deliverables/"
+      },
+      {
+        "text": "Russian Venture Forum 2027",
+        "href": "https://russianventureforum.ru/"
+      },
+      {
+        "text": "نقش تسهیلگری صنف",
+        "href": "/articles/elecomp-29-from-technology-to-synergy/"
+      },
+      {
+        "text": " بله",
+        "href": "https://ble.ir/share/url?url=https%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F&text=%E2%9C%8D%EF%B8%8F+%D8%A7%D8%B2+%DA%86%D9%87%D8%A7%D8%B1+%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE+%D8%AA%D8%A7+%D9%BE%D9%86%D8%AC%D8%A7%D9%87+%D8%B4%D8%B1%DA%A9%D8%AA%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A8%D8%A7%D8%B2%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C+%D8%AF%D8%B1+%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%0A%0A%D8%A7%D8%B2+%D8%B9%DB%8C%D8%A7%D8%B1+%D9%87%D9%88%D9%85%D8%B5+%D8%AA%D8%A7+%D9%85%D8%B9%D8%B1%D9%81%DB%8C+%DB%B1%DB%B5%DB%B1+%D9%85%D8%AD%D8%B5%D9%88%D9%84+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C+%D8%AF%D8%B1+%DA%A9%D8%A7%D8%B2%D8%A7%D9%86%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87+%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7+%D9%88+%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%D9%87%D8%A7%DB%8C%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A7%D8%B7%D9%84%D8%B3+%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA+%D9%87%D9%88%D8%B4+%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C+%D9%88+%D8%AA%D9%88%D8%B3%D8%B9%D9%87+%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1+%D8%A7%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D8%A7"
+      },
+      {
+        "text": " ایتا",
+        "href": "https://eitaa.com/share/url?url=https%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F&text=%E2%9C%8D%EF%B8%8F+%D8%A7%D8%B2+%DA%86%D9%87%D8%A7%D8%B1+%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE+%D8%AA%D8%A7+%D9%BE%D9%86%D8%AC%D8%A7%D9%87+%D8%B4%D8%B1%DA%A9%D8%AA%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A8%D8%A7%D8%B2%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C+%D8%AF%D8%B1+%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%0A%0A%D8%A7%D8%B2+%D8%B9%DB%8C%D8%A7%D8%B1+%D9%87%D9%88%D9%85%D8%B5+%D8%AA%D8%A7+%D9%85%D8%B9%D8%B1%D9%81%DB%8C+%DB%B1%DB%B5%DB%B1+%D9%85%D8%AD%D8%B5%D9%88%D9%84+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C+%D8%AF%D8%B1+%DA%A9%D8%A7%D8%B2%D8%A7%D9%86%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87+%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7+%D9%88+%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%D9%87%D8%A7%DB%8C%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A7%D8%B7%D9%84%D8%B3+%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA+%D9%87%D9%88%D8%B4+%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C+%D9%88+%D8%AA%D9%88%D8%B3%D8%B9%D9%87+%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1+%D8%A7%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D8%A7"
+      },
+      {
+        "text": " تلگرام",
+        "href": "https://t.me/share/url?url=https%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F&text=%E2%9C%8D%EF%B8%8F+%D8%A7%D8%B2+%DA%86%D9%87%D8%A7%D8%B1+%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE+%D8%AA%D8%A7+%D9%BE%D9%86%D8%AC%D8%A7%D9%87+%D8%B4%D8%B1%DA%A9%D8%AA%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A8%D8%A7%D8%B2%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C+%D8%AF%D8%B1+%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%0A%0A%D8%A7%D8%B2+%D8%B9%DB%8C%D8%A7%D8%B1+%D9%87%D9%88%D9%85%D8%B5+%D8%AA%D8%A7+%D9%85%D8%B9%D8%B1%D9%81%DB%8C+%DB%B1%DB%B5%DB%B1+%D9%85%D8%AD%D8%B5%D9%88%D9%84+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C+%D8%AF%D8%B1+%DA%A9%D8%A7%D8%B2%D8%A7%D9%86%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87+%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7+%D9%88+%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%D9%87%D8%A7%DB%8C%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A7%D8%B7%D9%84%D8%B3+%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA+%D9%87%D9%88%D8%B4+%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C+%D9%88+%D8%AA%D9%88%D8%B3%D8%B9%D9%87+%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1+%D8%A7%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D8%A7"
+      },
+      {
+        "text": " واتس‌اپ",
+        "href": "https://wa.me/?text=%E2%9C%8D%EF%B8%8F+*%D8%A7%D8%B2+%DA%86%D9%87%D8%A7%D8%B1+%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE+%D8%AA%D8%A7+%D9%BE%D9%86%D8%AC%D8%A7%D9%87+%D8%B4%D8%B1%DA%A9%D8%AA%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A8%D8%A7%D8%B2%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C+%D8%AF%D8%B1+%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86*%0A%0A%D8%A7%D8%B2+%D8%B9%DB%8C%D8%A7%D8%B1+%D9%87%D9%88%D9%85%D8%B5+%D8%AA%D8%A7+%D9%85%D8%B9%D8%B1%D9%81%DB%8C+%DB%B1%DB%B5%DB%B1+%D9%85%D8%AD%D8%B5%D9%88%D9%84+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C+%D8%AF%D8%B1+%DA%A9%D8%A7%D8%B2%D8%A7%D9%86%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87+%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7+%D9%88+%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%D9%87%D8%A7%DB%8C%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A7%D8%B7%D9%84%D8%B3+%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA+%D9%87%D9%88%D8%B4+%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C+%D9%88+%D8%AA%D9%88%D8%B3%D8%B9%D9%87+%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1+%D8%A7%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D8%A7%0A%0Ahttps%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F"
+      },
+      {
+        "text": " لینکدین",
+        "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F"
+      },
+      {
+        "text": " X",
+        "href": "https://x.com/intent/tweet?text=%E2%9C%8D%EF%B8%8F+%D8%A7%D8%B2+%DA%86%D9%87%D8%A7%D8%B1+%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE+%D8%AA%D8%A7+%D9%BE%D9%86%D8%AC%D8%A7%D9%87+%D8%B4%D8%B1%DA%A9%D8%AA%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A8%D8%A7%D8%B2%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C+%D8%AF%D8%B1+%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%0A%0A%D8%A7%D8%B2+%D8%B9%DB%8C%D8%A7%D8%B1+%D9%87%D9%88%D9%85%D8%B5+%D8%AA%D8%A7+%D9%85%D8%B9%D8%B1%D9%81%DB%8C+%DB%B1%DB%B5%DB%B1+%D9%85%D8%AD%D8%B5%D9%88%D9%84+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C+%D8%AF%D8%B1+%DA%A9%D8%A7%D8%B2%D8%A7%D9%86%D8%9B+%D8%AA%D8%AC%D8%B1%D8%A8%D9%87+%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7+%D9%88+%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%D9%87%D8%A7%DB%8C%DB%8C+%D8%A8%D8%B1%D8%A7%DB%8C+%D8%A7%D8%B7%D9%84%D8%B3+%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA+%D9%87%D9%88%D8%B4+%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C+%D9%88+%D8%AA%D9%88%D8%B3%D8%B9%D9%87+%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1+%D8%A7%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D8%A7&url=https%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F"
+      },
+      {
+        "text": " ایمیل",
+        "href": "mailto:?subject=%D8%A7%D8%B2%20%DA%86%D9%87%D8%A7%D8%B1%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%20%D8%AA%D8%A7%20%D9%BE%D9%86%D8%AC%D8%A7%D9%87%20%D8%B4%D8%B1%DA%A9%D8%AA%D8%9B%20%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A8%D8%A7%D8%B2%D8%A7%D9%86%D8%AF%DB%8C%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA%20%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86&body=%D8%A7%D8%B2%20%D8%B9%DB%8C%D8%A7%D8%B1%20%D9%87%D9%88%D9%85%D8%B5%20%D8%AA%D8%A7%20%D9%85%D8%B9%D8%B1%D9%81%DB%8C%20%DB%B1%DB%B5%DB%B1%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C%20%D8%AF%D8%B1%20%DA%A9%D8%A7%D8%B2%D8%A7%D9%86%D8%9B%20%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%20%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C%20%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7%20%D9%88%20%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%D9%87%D8%A7%DB%8C%DB%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A7%D8%B7%D9%84%D8%B3%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%20%D9%88%20%D8%AA%D9%88%D8%B3%D8%B9%D9%87%20%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%20%D8%A7%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D8%A7%0A%0Ahttps%3A%2F%2Fziabary.ir%2Farticles%2Fkazan-iran-technology-export%2F"
+      },
+      {
+        "text": "دریافت تصویر",
+        "href": "/images/articles/kazan-iran-technology-export/cover.png"
+      }
+    ],
+    "cover": {
+      "complete": true,
+      "width": 748
+    },
+    "headings": [
+      {
+        "id": "مقدمه-آنچه-از-یک-مأموریت-خصوصی-فراتر-رفت",
+        "tag": "H2"
+      },
+      {
+        "id": "۱-وقتی-برنامه-اعزام-چهار-استارتاپ-تغییر-کرد",
+        "tag": "H2"
+      },
+      {
+        "id": "۲-از-کاتالوگ-های-پراکنده-تا-یک-سبد-حرفه-ای-فناوری",
+        "tag": "H2"
+      },
+      {
+        "id": "همکاری-به-جای-رقابت-تجربه-ای-که-جواب-داد",
+        "tag": "H3"
+      },
+      {
+        "id": "۳-ملاقات-های-کازان-از-سرمایه-گذاری-خطرپذیر-تا-تقاضای-صنعتی",
+        "tag": "H2"
+      },
+      {
+        "id": "۴-صادرات-فناوری-مسئله-ای-فراتر-از-معرفی-محصول",
+        "tag": "H2"
+      },
+      {
+        "id": "۵-پیشنهادی-به-معاونت-علمی-اطلس-جامع-محصولات-هوش-مصنوعی-ایران",
+        "tag": "H2"
+      },
+      {
+        "id": "۶-از-محصولات-هوش-مصنوعی-صنعتی-تا-پروژه-های-تاتارستان",
+        "tag": "H2"
+      },
+      {
+        "id": "۷-russian-venture-forum-2027-فرصتی-که-نباید-از-دست-برود",
+        "tag": "H2"
+      },
+      {
+        "id": "پیشنهادی-به-هیئت-مدیره-آینده-نصر",
+        "tag": "H3"
+      },
+      {
+        "id": "جمع-بندی-از-تجربه-کازان-تا-دو-برنامه-قابل-اجرا",
+        "tag": "H2"
+      }
+    ],
+    "screens": [
+      {
+        "filename": "editorial-1440-light.png",
+        "width": 1440,
+        "scrollWidth": 1425,
+        "dir": "rtl"
+      },
+      {
+        "filename": "editorial-1440-dark.png",
+        "width": 1440,
+        "scrollWidth": 1425,
+        "dir": "rtl"
+      },
+      {
+        "filename": "editorial-390-light.png",
+        "width": 390,
+        "scrollWidth": 390,
+        "dir": "rtl"
+      },
+      {
+        "filename": "editorial-390-dark.png",
+        "width": 390,
+        "scrollWidth": 390,
+        "dir": "rtl"
+      }
+    ],
+    "runtimeErrors": 0,
+    "failedLocalResponses": 0
+  }
+}

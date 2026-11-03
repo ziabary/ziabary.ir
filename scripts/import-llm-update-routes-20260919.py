@@ -1,7 +1,10 @@
+from llm_repository import load_repository, write_repository, is_current_repository
 from pathlib import Path
 import json,hashlib,sys
-root=Path(__file__).resolve().parents[1];rp=root/'data/llm/v0.3.0/repository.json';r=json.loads(rp.read_text());bd=root/'data/llm/locales/record-bindings.json';b=json.loads(bd.read_text());texts={l:json.loads((root/f'data/llm/locales/records.{l}.json').read_text()) for l in ['fa','en','es']};pack=Path(sys.argv[1]);copy=json.loads((pack/'data/localized-copy.json').read_text())
-def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+root=Path(__file__).resolve().parents[1];rp=root/'data/llm/v0.3.0/repository.json';r=load_repository(rp);bd=root/'data/llm/locales/record-bindings.json';b=json.loads(bd.read_text());texts={l:json.loads((root/f'data/llm/locales/records.{l}.json').read_text()) for l in ['fa','en','es']};pack=Path(sys.argv[1]);copy=json.loads((pack/'data/localized-copy.json').read_text())
+def write(p,d):
+ if is_current_repository(p):write_repository(p,d)
+ else:p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 def trans(collection,obj,path,values):
  v=obj;parts=path.split('/')
  for part in parts[:-1]:v=v[int(part)] if isinstance(v,list) else v[part]

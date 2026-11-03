@@ -2,9 +2,9 @@ import { createServer } from 'vite';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { allocateShortLinks } from '../src/lib/short-links.mjs';
 
-const server = await createServer({ server: { middlewareMode: true, hmr: false }, appType: 'custom', logLevel: 'error' });
+const server = await createServer({ optimizeDeps: { noDiscovery: true, include: [] }, server: { middlewareMode: true, hmr: false }, appType: 'custom', logLevel: 'error' });
 try {
-  const { articles } = await server.ssrLoadModule('/src/lib/content.ts');
+  const { articles } = await server.ssrLoadModule('/src/lib/content/index.ts');
   const { guideCollections } = await server.ssrLoadModule('/src/lib/guides.ts');
   const { getLocalizedGuideCollections } = await server.ssrLoadModule('/src/lib/localized-guide-collections.ts');
   const { presentations } = await server.ssrLoadModule('/src/lib/presentations.ts');
@@ -21,19 +21,19 @@ try {
   }
   const previous = JSON.parse(await readFile('config/short-links.json', 'utf8'));
   const { reservations, active } = allocateShortLinks(targets, previous);
-  await mkdir('src/lib/generated', { recursive: true });
+  await mkdir('.build/generated', { recursive: true });
   await writeFile('config/short-links.json', JSON.stringify(reservations, null, 2) + '\n');
-  await writeFile('src/lib/generated/short-links.json', JSON.stringify(active, null, 2) + '\n');
-  await writeFile('static/short-links.json', JSON.stringify(active) + '\n');
+  await writeFile('.build/generated/short-links.json', JSON.stringify(active, null, 2) + '\n');
+  await writeFile('.build/public/short-links.json', JSON.stringify(active) + '\n');
   // Keep the old module working for cached HTML; new HTML embeds the resolver.
-  await writeFile('static/short-link-core.js', await readFile('src/lib/short-links.mjs', 'utf8'));
-  await mkdir('docs/deployment', { recursive: true });
+  await writeFile('.build/public/short-link-core.js', await readFile('src/lib/short-links.mjs', 'utf8'));
+  await mkdir('.build/deployment', { recursive: true });
   const rules = Object.entries(active).map(([code, target]) => ({
     source: `https://ziabary.ir/?t=${code}`,
     destination: `https://ziabary.ir${target}`,
     status: 301,
     preserveQueryString: false
   }));
-  await writeFile('docs/deployment/short-link-redirects.json', JSON.stringify(rules, null, 2) + '\n');
+  await writeFile('.build/deployment/short-link-redirects.json', JSON.stringify(rules, null, 2) + '\n');
   console.log(`Short links: ${Object.keys(active).length} published destinations; ${Object.keys(reservations).length} reserved codes.`);
 } finally { await server.close(); }

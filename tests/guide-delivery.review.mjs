@@ -1,9 +1,11 @@
+import { readArticleMetadata } from '../scripts/article-metadata-plugin.mjs';
+import { articleSourceKey } from '../scripts/content-files.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {call,pause,events,socket} from '../scripts/browser-session.mjs';
 const out='docs/reviews/local-2026-09-20/guide-delivery',origin='http://127.0.0.1:5195';
 const manifest=JSON.parse(await fs.readFile('.svelte-kit/output/client/.vite/manifest.json'));
-const modulePaths=new Map(Object.entries(manifest).filter(([key])=>key.startsWith('src/lib/content/articles/')).map(([key,value])=>[key,origin+'/'+value.file]));
+const modulePaths=new Map(Object.entries(manifest).filter(([key])=>key.startsWith('content/articles/')).map(([key,value])=>[key,origin+'/'+value.file]));
 const E=async expression=>{const r=await call('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
 async function wait(expression){for(let i=0;i<160;i++){if(await E(expression))return;await pause(125)}throw Error('Timeout: '+expression)}
 async function nav(path){await call('Page.navigate',{url:'about:blank'});await wait("location.href==='about:blank'");await call('Page.navigate',{url:origin+path});await wait('!!document.querySelector("main")');await pause(1200)}
@@ -21,7 +23,7 @@ try{
   for(const url of modulePaths.values())assert.equal(count(url),before.get(url),'No chapter requested initially: '+url);
   await click('#'+slug+' summary');await wait(loaded(slug));
   assert.equal(await E("document.querySelectorAll('.llm-chapter [data-loaded=true]').length"),1);
-  const module=modulePaths.get('src/lib/content/articles/'+slug+'.md');assert.equal(count(module)-before.get(module),1,JSON.stringify({module,requests:events.filter(e=>e.method==='Network.requestWillBeSent'&&e.params.type==='Script').map(e=>e.params.request.url)}));
+  const module=modulePaths.get(articleSourceKey(slug));assert.equal(count(module)-before.get(module),1,JSON.stringify({module,requests:events.filter(e=>e.method==='Network.requestWillBeSent'&&e.params.type==='Script').map(e=>e.params.request.url)}));
   for(const url of modulePaths.values())if(url!==module)assert.equal(count(url),before.get(url),'Opening one article fetched another: '+url);
   assert.ok(await E(`document.getElementById(${JSON.stringify(slug)}).querySelector('.katex')`));assert.ok(await E(`document.getElementById(${JSON.stringify(slug)}).querySelector('table')`));
   const n=count(module);await click('#'+slug+' summary');await click('#'+slug+' summary');assert.equal(count(module),n);
@@ -41,7 +43,7 @@ try{
   console.log(locale+': no initial chapter imports; one module on open; cached reopen; deep link, math, table, TOC, mobile and contact events passed');
  }
  // Interrupt a never-loaded module, then retry with a fresh document and the same article open.
- const slug='airllm-layer-wise-inference',module=modulePaths.get('src/lib/content/articles/'+slug+'.md');
+ const slug='airllm-layer-wise-inference',module=modulePaths.get(articleSourceKey(slug));
  await nav('/guides/llm/');await call('Network.setBlockedURLs',{urls:['*googletagmanager.com*','*google-analytics.com*',module]});
  await click('#'+slug+' summary');await wait(`document.getElementById('${slug}').querySelector('[role=alert]')`);
  assert.equal(await E(`!!document.getElementById('${slug}').querySelector('[data-loaded=true]')`),false);
@@ -61,7 +63,9 @@ try{
  assert.ok(await E(`document.querySelector('#${rag} .reference-guidance a[href]')`));
  // Site search still finds article text and offers real standalone links.
  await click('.nav-tools button');await wait('!!document.querySelector(".search-results[aria-busy=false]")');
- await E(`{const input=document.querySelector('input[type=search]');input.value='4090';input.dispatchEvent(new Event('input',{bubbles:true}))}`);await pause(200);
+ const searchTitle=(await readArticleMetadata(await fs.readFile(articleSourceKey('llms-on-rtx-4090-24gb-vs-48gb'),'utf8'))).title;
+ await E(`{const input=document.querySelector('.search-panel input[type=search]');input.value=${JSON.stringify(searchTitle)};input.dispatchEvent(new Event('input',{bubbles:true}))}`);
+ await wait("[...document.querySelectorAll('.search-results a')].some(a=>a.getAttribute('href').includes('/articles/llms-on-rtx-4090-24gb-vs-48gb/'))");
  assert.ok(await E("[...document.querySelectorAll('.search-results a')].some(a=>a.getAttribute('href').includes('/articles/llms-on-rtx-4090-24gb-vs-48gb/'))"));
  await call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
  await call('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await pause(100);

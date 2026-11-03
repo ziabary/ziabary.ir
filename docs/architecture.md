@@ -20,7 +20,7 @@ the same check and build on every pull request and push to main.
 
 ## Content loading
 
-src/lib/content.ts imports Markdown modules with import.meta.glob and exposes
+src/lib/content/index.ts imports Markdown modules from content/articles/<lang>/<slug>/index.md with import.meta.glob and exposes
 serializable metadata for indexes and prerender entries. The dynamic article
 route resolves the matching mdsvex component at build time.
 
@@ -34,3 +34,13 @@ configuration should:
 - use a short cache lifetime for HTML;
 - use a long immutable cache lifetime for hashed _app assets;
 - return the generated 404.html for unknown paths.
+
+Editorial records live in `content/`, technical catalogs in `data/`, and types,
+loaders and UI in `src/`. Shared article images have one source in
+`content/articles/shared/<image-set>/images/`; explicit membership and stable
+public asset paths live in `content/relationships/`. See `content/README.md`.
+
+`static/` is a read-only source directory. Preparation assembles public inputs
+and generated content assets under `.build/public/`; `kit.files.assets` points
+there. Generated view metadata lives in `.build/generated/`. The adapter emits
+`build/` without changing existing public paths.

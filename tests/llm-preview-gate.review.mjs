@@ -7,7 +7,7 @@ async function wait(expression){for(let i=0;i<150;i++){if(await E(expression))re
 async function nav(path){await E('window.__leaving=true');await call('Page.navigate',{url:origin+path});await wait("window.__leaving===undefined&&document.readyState==='complete'");await pause(500);}
 try{
  await call('Page.enable');await call('Runtime.enable');
- const images=JSON.parse(await fs.readFile('src/lib/generated/image-sources.json','utf8'));
+ const images=JSON.parse(await fs.readFile('.build/generated/image-sources.json','utf8'));
  for(const locale of ['fa','en','es']){
   const base=locale==='fa'?'':'/'+locale,href=base+'/guides/llm/';
   await nav(base+'/guides/');

@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-03",
+  "slug": "kazan-investment-reality",
+  "author": "محمدرضا معبودیان",
+  "permanentDraft": true,
+  "bodyPreserved": true,
+  "bodyChanges": "Removed duplicate H1; linked two existing reference titles.",
+  "sections": 26,
+  "originalSha256": "1eb9029b28b3e603d3fee004c32e13285675c09d170616f86aa3daf6cf722bbb",
+  "check": "0 errors, 0 warnings",
+  "publication": "server-preview-verified",
+  "url": "https://ziabary.ir/articles/kazan-investment-reality/?show-drafts=true",
+  "build": "passed; sitemap and structured data validated",
+  "tests": "24 relevant assertions/tests passed",
+  "browser": "local and production; desktop/mobile, light/dark; zero exceptions",
+  "deployment": {
+    "uploaded": 1764,
+    "unchanged": 4302,
+    "deleted": 0
+  }
+}

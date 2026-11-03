@@ -1,6 +1,6 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
-  import resume from '$lib/resumes/fa.json';
+  import resume from '../../../content/resumes/fa.json';
   const { currentRoles, experience, publications, awards } = resume;
   import PageHero from '$lib/components/PageHero.svelte';
 

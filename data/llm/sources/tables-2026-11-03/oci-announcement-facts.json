@@ -1,0 +1,15 @@
+{
+  "accessedOn": "2026-11-03",
+  "retrieval": "Web source read; extracted facts, not a full-page archive",
+  "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Oracle-Expand-NVIDIA-Vera-Rubin-to-Multi-Gigawatt-Scale-and-Bring-NVIDIA-Vera-CPU-to-Oracle-Cloud-Infrastructure/default.aspx",
+  "publishedOn": "2026-10-27",
+  "facts": {
+    "nvl72Availability": "Generally available on OCI",
+    "nvl72GpuCount": 72,
+    "nvl8Availability": "Planned; no availability date stated",
+    "nvl8GpuCount": 8,
+    "nvl8Host": "2 \u00d7 64-core Intel Xeon 6",
+    "nvl8SystemMemory": "4TB DDR5",
+    "nvl8Networking": "6.4 Tbps RDMA"
+  }
+}
