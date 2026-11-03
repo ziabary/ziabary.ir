@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 let manifest;
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('{', '&#123;');
 export default function markdownImages() {
-  manifest ??= JSON.parse(readFileSync(new URL('../src/lib/generated/image-variants.json', import.meta.url), 'utf8'));
+  manifest ??= JSON.parse(readFileSync(new URL('../.build/generated/image-variants.json', import.meta.url), 'utf8'));
   const attributes = src => {
     const image = manifest[src];
     if (!image) return '';
@@ -15,7 +15,7 @@ export default function markdownImages() {
         const src = /\bsrc=["']([^"']+)["']/.exec(tag)?.[1];
         if (!src || !manifest[src] || tag.includes('srcset=')) return tag;
         tag = tag.replace(/\s(?:width|height)=["'][^"']*["']/g, '');
-        return tag.replace(/\s*\/?>$/, `${attributes(src)}${tag.includes('loading=') ? '' : ' loading="lazy"'} decoding="async" />`);
+        return tag.replace(/\s*\/?>$/, `${attributes(src)}${tag.includes('loading=') ? '' : ' loading="lazy"'}${tag.includes('decoding=') ? '' : ' decoding="async"'} />`);
       });
       for (const child of node.children ?? []) visit(child);
     };

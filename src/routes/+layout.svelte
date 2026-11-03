@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { isReturningVisit } from '$lib/visit-history.mjs';
-  import '$lib/generated/icons.css';
+  import '$generated/icons.css';
   import '../app.css';
   import '../refinement.css';
   import SiteShell from '$lib/components/SiteShell.svelte';

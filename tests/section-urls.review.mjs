@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { call, pause, events, socket } from '../scripts/browser-session.mjs';
 import { articleShareUrl } from '../src/lib/article-sharing.mjs';
-const registry=JSON.parse(await fs.readFile('src/lib/generated/short-links.json','utf8'));
+const registry=JSON.parse(await fs.readFile('.build/generated/short-links.json','utf8'));
 const output='docs/reviews/local-2026-09-16/section-urls';
 const origin='http://127.0.0.1:4189';
 const Q=JSON.stringify;

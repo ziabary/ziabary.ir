@@ -1,6 +1,6 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
-  import pdfSizes from '$lib/generated/pdf-sizes.json';
+  import pdfSizes from '$generated/pdf-sizes.json';
   import PageSeo from '$lib/components/PageSeo.svelte';
   import { onDestroy } from 'svelte';
   import { localizePresentation, presenterName, preparationNames, presentationStructuredData, type Presentation, type PresentationLocale } from '$lib/presentations';

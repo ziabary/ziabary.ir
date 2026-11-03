@@ -1,0 +1,61 @@
+{
+  "reviewedOn": "2026-11-03",
+  "article": "src/lib/content/articles/russian-ai-kazan-digital-week-2026.md",
+  "status": "draft",
+  "articleSha256": "5a2a9c5fd48881289358192f9eabf52f291d491ee650841c285b6ba16ab39976",
+  "previewPath": "/articles/russian-ai-kazan-digital-week-2026/?show-drafts=true",
+  "language": "fa",
+  "source": "User-supplied full draft; all 15 numbered sections, introduction, conclusion and references retained.",
+  "editorialChanges": [
+    "Added contextual links to the Kazan travelogue, GPU records, English guides and five technical notes.",
+    "Linked the 300 figure to the existing Targoman article and used concurrent requests, matching that article’s measured scenario.",
+    "Added the GLM-5 official model card alongside the supplied technical blog.",
+    "Added the university’s October 30 primary report as the source for the existing KFU paragraph.",
+    "Reserved seven inline photo slots and a cover path; no generated or third-party image was substituted."
+  ],
+  "sourceUrls": [
+    "https://icl.ru/press-center/events/kazan-digital-week-2026/",
+    "https://media.kpfu.ru/news/tekhnologicheskaya-nezavisimost-i-bespilotniki-kfu-predstavil-razrabotki-na-sekcii",
+    "https://huggingface.co/zai-org/GLM-5",
+    "https://recipes.vllm.ai/zai-org/GLM-5",
+    "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/components.html",
+    "https://openai.com/index/whisper/",
+    "https://martin.kleppmann.com/2019/10/23/local-first-at-onward.html",
+    "https://www.jonpeddie.com/techwatch/baikal-builds-russias-nvidia-alternative/",
+    "https://m.nami.ru/news/2116",
+    "https://digital.tatarstan.ru/eng/index.htm/news/2504583.htm",
+    "https://z.ai/blog/glm-5"
+  ],
+  "sourceReview": {
+    "glm5": "Publisher model card and vLLM recipe checked; 744B total / 40B active matches the recipe.",
+    "gpuMemory": "NVIDIA HGX reference table confirms 141GB / 180GB / 288GB.",
+    "whisper": "OpenAI introductory report confirms 680,000 hours for the original model.",
+    "icl": "Official October 29–31 event page checked.",
+    "kfu": "Official October 30 report checked.",
+    "localFirst": "Author’s Onward 2019 publication checked.",
+    "baikal": "Original Jon Peddie Research report teaser describes an FPGA prototype, not a shipping data-center GPU.",
+    "nami": "Official-page search extract checked; full page timed out.",
+    "geopager": "Official Tatar-language search extract for the same article confirms March 23 and 0.1m; English full page timed out."
+  },
+  "verification": {
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "sitemapExcluded": true,
+    "noindex": true,
+    "draftGate": true,
+    "browserReport": "browser.json",
+    "photoPlan": "photos.json",
+    "liveReport": "live.json",
+    "browser": "Live site: 18 sections, 7 photo slots, 12 internal links, 4 viewport/theme combinations, zero broken images and browser exceptions."
+  },
+  "publication": {
+    "status": "deployed-as-draft",
+    "url": "https://ziabary.ir/articles/russian-ai-kazan-digital-week-2026/?show-drafts=true",
+    "uploadedFiles": 1755,
+    "unchangedFiles": 4296,
+    "deletedFiles": 0
+  }
+}

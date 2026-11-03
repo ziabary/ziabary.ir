@@ -1,4 +1,4 @@
-import { getArticleModule } from '$lib/content';
+import { getArticleModule } from '../../../../lib/content/index';
 import { dev } from '$app/environment';
 import { error } from '@sveltejs/kit';
 import { gpuReviews } from '$lib/gpu-review';

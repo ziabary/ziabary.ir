@@ -1,5 +1,5 @@
 import type { Handle } from '@sveltejs/kit';
-import shortLinks from '$lib/generated/short-links.json';
+import shortLinks from '$generated/short-links.json';
 import { renderShortLinkBootstrap } from '$lib/server/short-link-bootstrap.mjs';
 
 const shortLinkBootstrap = renderShortLinkBootstrap(shortLinks);

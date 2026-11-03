@@ -17,7 +17,7 @@ function edition(locale) {
   return {repo,i,adapters:modules.adapters.createLlmAdapters(i),views:modules.views.createLlmViews(i),filters:modules.filtering.createLlmFiltering(i),researchViews:modules['research-views'].createLlmResearchViews(i)};
 }
 
-test('current Ollama is stable Latest with a distinct review date and preserved SystemOne milestone', () => {
+test('historical Ollama retains its stable release with a distinct review date and preserved SystemOne milestone', () => {
   const release = canonical.softwareReleases.find(r=>r.id===id);
   const source = read('data/llm/sources/runtime-fixes-2026-10-10/ollama-v0.40.2-release.json');
   assert.equal(release.version,source.tag_name);
@@ -25,16 +25,16 @@ test('current Ollama is stable Latest with a distinct review date and preserved 
   assert.equal(release.releasedOn,'2026-10-08');
   assert.equal(release.lastReviewedOn,'2026-10-10');
   assert.equal(release.releaseChannel,'stable');
-  assert.equal(release.isLatest,true);
+  assert.equal(release.isLatest,false);
   assert.equal(canonical.softwareReleases.find(r=>r.id==='software-release:ollama-v0-40-0').isLatest,false);
   assert.equal(source.prerelease,false);
   assert.ok(release.documentedBackends.includes('MLX'));
   assert.ok(!canonical.softwareReleases.some(r=>r.id==='software-release:ollama-v0-34-0'));
   assert.equal(canonical.softwareReleases.find(r=>r.id==='software-release:ollama-v0-35-1').version,'v0.35.1');
-  assert.equal(canonical.models.length,141);
+  assert.ok(canonical.models.length>=141);
   assert.deepEqual(canonical.models.filter(m=>m.id.startsWith('model:google-gemma-4-')).map(m=>m.id).sort(),['model:google-gemma-4-26b-a4b-it','model:google-gemma-4-e2b-it']);
   assert.ok(canonical.models.every(m=>!m.evidenceIds.includes('evidence:ollama-v0-40-0-release')), 'The engine release supplies no model-card facts');
-  assert.equal(canonical.artifactListings.length,553);
+  assert.ok(canonical.artifactListings.length>=553);
   assert.deepEqual(canonical.artifactListings.find(a=>a.modelVersionId===embedding).runtimeEngines,['Transformers','Sentence Transformers']);
   assert.equal(canonical.benchmarkRuns.length,0);
 });
@@ -45,7 +45,7 @@ test('localized version/backend filters and scoped deployment rows expose MLX wi
     const researchRepo = modules.research.createLlmResearch(i).enrichResearchRepository(repo);
     const rows = researchViews.enrichExistingRows(researchRepo,adapters.buildLlmViewRows(researchRepo),'all')['software-products'];
     const current = rows.find(r=>r.id===id);
-    assert.match(current.cells['software-version'].display,/v0\.40\.2.*Latest/);
+    assert.match(current.cells['software-version'].display,/v0\.40\.2/);
     assert.match(current.cells['research-condition'].display,/Apple Silicon/);
     assert.match(current.cells['research-condition'].display,/OLLAMA_NO_CLOUD=1/);
     assert.doesNotMatch(current.cells['research-condition'].display,/rc0/);

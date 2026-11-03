@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
@@ -23,7 +24,7 @@ test('preview navigation leaves external, published, unwritten and fragment link
 
 test('the completed LLM series is published with its editorial dates and local covers', async () => {
   for (const [slug, date, faDate] of drafts) {
-    const result = await compile(readFileSync(`src/lib/content/articles/${slug}.md`, 'utf8'));
+    const result = await compile(readFileSync(articleFile(`${slug}`), 'utf8'));
     const metadata = result.data.fm;
     assert.equal(metadata.slug, slug);
     assert.equal(metadata.date, date);
@@ -31,7 +32,7 @@ test('the completed LLM series is published with its editorial dates and local c
     assert.equal(metadata.draft, false);
     assert.equal(isPublished(metadata, '2026-09-16'), true);
     assert.equal(isPublished(metadata, '2027-09-15'), true);
-    assert.ok(existsSync(`static${metadata.cover}`));
+    assert.ok(existsSync(`.build/public${metadata.cover}`));
   }
 });
 
@@ -39,7 +40,7 @@ test('LLM article body links and manual related reading only reference existing,
   const cache = new Map();
   const readArticle = async slug => {
     if (!cache.has(slug)) {
-      const path = `src/lib/content/articles/${slug}.md`;
+      const path = articleFile(`${slug}`);
       assert.ok(existsSync(path), `Unwritten article: ${slug}`);
       const source = readFileSync(path, 'utf8');
       cache.set(slug, { source, metadata: (await compile(source)).data.fm });

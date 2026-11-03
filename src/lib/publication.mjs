@@ -19,9 +19,17 @@ export function publicationDay() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tehran', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 }
 
-/** @param {{draft?: boolean, status?: string, date: string | Date}} item @param {string} [today] */
+// Explicit editorial restriction: this note must remain a preview permanently.
+const permanentDraftSlugs = new Set(['kazan-investment-reality']);
+
+/** @template {{slug?: string, draft?: boolean}} T @param {T} article */
+export function applyPermanentDraftPolicy(article) {
+  return article.slug && permanentDraftSlugs.has(article.slug) ? { ...article, draft: true } : article;
+}
+
+/** @param {{slug?: string, draft?: boolean, status?: string, date: string | Date}} item @param {string} [today] */
 export function isPublished(item, today = publicationDay()) {
-  return !item.draft && item.status !== 'planned' && dateOnly(item.date) <= today;
+  return !applyPermanentDraftPolicy(item).draft && item.status !== 'planned' && dateOnly(item.date) <= today;
 }
 
 /** @param {{date:string, updated?:string, slug:string}} a @param {{date:string, updated?:string, slug:string}} b */

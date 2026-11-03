@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -46,11 +47,11 @@ test('unknown language, context conflicts and custom commercial restrictions rem
 });
 test('localized semantic inserts retain existing full articles, dates and connected destinations',()=>{
  for(const section of repo.articleSections)for(const lang of section.locales) {
-  const slug=section.articleKey+(lang==='fa'?'':`-${lang}`),text=fs.readFileSync(`src/lib/content/articles/${slug}.md`,'utf8');
+  const slug=section.articleKey+(lang==='fa'?'':`-${lang}`),text=fs.readFileSync(articleFile(`${slug}`),'utf8');
   assert.equal(text.split(`<!-- reference:${section.id.split(':')[1]}:start -->`).length,2);
   assert.ok(text.length>10000,slug);if(lang!=='fa')assert.doesNotMatch(text,/[\u0600-\u06ff]/);
  }
  for(const slug of ['evaluating-llms-for-your-language-and-workload','evaluar-llm-idioma-y-tarea','true-llm-cost-buy-rent-or-api-en','true-llm-cost-buy-rent-or-api-es']) {
-  const text=fs.readFileSync(`src/lib/content/articles/${slug}.md`,'utf8');assert.ok(text.length>12000);assert.match(text,/draft: false/);assert.match(text,/<!-- reference:/);
+  const text=fs.readFileSync(articleFile(`${slug}`),'utf8');assert.ok(text.length>12000);assert.match(text,/draft: false/);assert.match(text,/<!-- reference:/);
  }
 });

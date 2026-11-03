@@ -1,3 +1,4 @@
+import { articleFiles } from '../scripts/content-files.mjs';
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
@@ -35,8 +36,8 @@ test('all draft editions have static noindex gates and stay out of public discov
 }, async () => {
   const sitemap = readFileSync('build/sitemap.xml', 'utf8');
   const shortLinks = readFileSync('build/short-links.json', 'utf8');
-  for (const file of readdirSync('src/lib/content/articles').filter(file => file.endsWith('.md'))) {
-    const metadata = (await compile(readFileSync(`src/lib/content/articles/${file}`, 'utf8'))).data.fm;
+  for (const file of articleFiles()) {
+    const metadata = (await compile(readFileSync(file, 'utf8'))).data.fm;
     if (metadata.draft !== true) continue;
     const base = metadata.lang === 'fa' ? '' : `/${metadata.lang}`;
     const path = `${base}/articles/${metadata.slug}/`;

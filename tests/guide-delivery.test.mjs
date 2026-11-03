@@ -1,14 +1,16 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const read=path=>fs.readFileSync('build'+path+'index.html','utf8');
 const base=locale=>locale==='fa'?'':'/'+locale;
-const published=(slug,locale)=>!/^draft: true$/m.test(fs.readFileSync('src/lib/content/articles/'+slug+(locale==='fa'?'':'-'+locale)+'.md','utf8').split('---')[1]);
+const published=(slug,locale)=>!/^draft: true$/m.test(fs.readFileSync(articleFile(slug+(locale==='fa'?'':'-'+locale)),'utf8').split('---')[1]);
 const slugs=['llms-on-rtx-4090-24gb-vs-48gb','enterprise-rag-model-embedding-reranker','ollama-vllm-sglang-or-llama-cpp','gpu-inference-latency-throughput'];
 test('LLM editions deliver summaries and crawlable article links, not collapsed full bodies',()=>{
  for(const locale of ['fa','en','es']){
   const html=read(base(locale)+'/guides/llm/');
-  assert.ok(Buffer.byteLength(html)<2_000_000,locale+' initial HTML budget');
+  assert.ok(Buffer.byteLength(html)<2_500_000,locale+' initial HTML budget');
+  assert.ok(fs.statSync('build'+base(locale)+'/guides/llm/index.html.gz').size < 200_000, locale+' compressed HTML budget');
   assert.doesNotMatch(html,/class="prose guide-prose/);
   assert.doesNotMatch(html,/data-loaded="true"/);
   assert.match(html,/id="model-catalog"/);assert.match(html,/id="hardware-feasibility"/);

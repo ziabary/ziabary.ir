@@ -1,5 +1,5 @@
 <script lang="ts">
-  import registry from '$lib/generated/short-links.json';
+  import registry from '$generated/short-links.json';
   import { articleShareUrl, articleShareContent } from '$lib/article-sharing.mjs';
   import { prepareArticleShareImage } from '$lib/article-share-image';
   import { onDestroy, onMount } from 'svelte';

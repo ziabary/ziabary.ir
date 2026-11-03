@@ -5,7 +5,7 @@ import { join } from 'node:path';
 // Include local/uncommitted content as well as code. Identical inputs retain the
 // same version; build output and Git metadata must never feed back into it.
 const inputs = [
-  'src', 'static', 'data', 'scripts', 'package.json', 'package-lock.json',
+  'src', 'content', 'static', 'data', 'config', 'scripts', 'package.json', 'package-lock.json',
   'svelte.config.js', 'vite.config.ts', 'tsconfig.json'
 ];
 

@@ -1,0 +1,38 @@
+[
+  {
+    "html_url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+    "id": 432169781,
+    "tag_name": "v0.40.14",
+    "target_commitish": "main",
+    "name": "v0.40.14",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2026-11-03T00:59:50Z",
+    "published_at": "2026-11-03T01:40:40Z",
+    "body": "## What's Changed\r\n* `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap\r\n* Cloud web search responses on `/api/chat` are now decoded correctly, including compressed responses\r\n* OpenAI-compatible endpoints no longer override a model's packaged sampler defaults — clients that send no `temperature`/`top_p` get the model's own values instead of 1.0, matching `/api/chat`\r\n* `/v1/responses` now preserves readable input content, including prior assistant refusals, instead of flattening it\r\n* Ollama's app can now retry ChatGPT disconnect failures instead of leaving the connection in a broken state\r\n* `ollama launch codex` verifies ChatGPT routing before configuring, and reports a clear error when routing is unavailable\r\n* Faster top-k sampling on MLX for large vocabularies\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.13...v0.40.14"
+  },
+  {
+    "html_url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
+    "id": 427123529,
+    "tag_name": "v0.40.13",
+    "target_commitish": "main",
+    "name": "v0.40.13",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2026-10-28T22:20:04Z",
+    "published_at": "2026-10-28T19:55:04Z",
+    "body": "## LFM3 on Linux and Windows\r\n\r\nLiquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linux and Windows as well as Apple silicon.\r\n\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.12...v0.40.13"
+  },
+  {
+    "html_url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
+    "id": 424898500,
+    "tag_name": "v0.40.12",
+    "target_commitish": "main",
+    "name": "v0.40.12",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2026-10-27T15:47:18Z",
+    "published_at": "2026-10-27T00:07:12Z",
+    "body": "## Liquid AI LFM3\r\n\r\n[LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes:\r\n\r\n- [lfm3](https://ollama.com/library/lfm3): a 1.7B text model with a 256K-token context window\r\n- [lfm3-vl](https://ollama.com/library/lfm3-vl): adds image understanding\r\n- [lfm3-audio](https://ollama.com/library/lfm3-audio): speech recognition, translation, and text-to-speech in 18 languages\r\n- [lfm3-omni](https://ollama.com/library/lfm3-omni): text, images, and audio in one model\r\n\r\n```sh\r\nollama run lfm3\r\n```\r\n\r\n## d1 decision models\r\n\r\nLiquid AI's d1 models now come in a 2B size, built on LFM3. [d1](https://ollama.com/library/d1) makes decisions about text and images, and [d1-omni](https://ollama.com/library/d1-omni) adds audio.\r\n\r\n```sh\r\nollama run d1:2b \"I was charged twice for order 4417.\" --ask \"Is this a billing issue?\"\r\n```\r\n\r\nNote: lfm3 and d1 2b are supported on Apple hardware in this release.  Support for Linux/Windows coming soon.\r\n\r\n## What's Changed\r\n- Faster prompt processing on Apple silicon for Gemma 4, Flint and Laguna models\r\n- Speculative decoding now supports DFlash2 draft models on MLX\r\n- Gemma 4 keeps more detail in small images\r\n- `ollama launch` now works with OpenCode v2\r\n- Fixed tool-only assistant turns from Kimi CLI\r\n- Updated MLX and llama.cpp\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.11...v0.40.12"
+  }
+]

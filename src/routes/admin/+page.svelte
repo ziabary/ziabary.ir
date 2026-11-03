@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onDestroy, tick } from 'svelte';
   import { externalLinksHtml } from '$lib/external-links.mjs';
+  import { articleMarkdown, retainArticleFrontmatter } from '$lib/content/editor';
 
   type PendingImage = {
     file: File;
@@ -31,9 +32,14 @@
   let status = '';
   let statusKind: 'info' | 'success' | 'error' = 'info';
   let dragging = false;
+  let retainedFrontmatter = '';
 
   $: safeSlug = normalizeSlug(slug) || 'new-article';
-  $: markdown = createMarkdown();
+  $: markdown = articleMarkdown({
+    title, slug: safeSlug, lang, date, faDate, updated, faUpdated, category,
+    excerpt, readTime, related: relatedRaw.split(/[،,\n]/).map(normalizeSlug).filter(Boolean),
+    external, draft, body, retainedFrontmatter
+  });
   $: previewHtml = renderMarkdown(body);
 
   function normalizeSlug(value: string) {
@@ -51,36 +57,6 @@
     const base = dot > 0 ? value.slice(0, dot) : value;
     const extension = dot > 0 ? value.slice(dot).toLowerCase() : '';
     return `${normalizeSlug(base) || `image-${Date.now()}`}${extension}`;
-  }
-
-  function yaml(value: string) {
-    return JSON.stringify(value.trim());
-  }
-
-  function createMarkdown() {
-    const related = relatedRaw.split(/[،,\n]/).map((item) => normalizeSlug(item)).filter(Boolean);
-    const lines = [
-      '---',
-      `title: ${yaml(title || 'عنوان مقاله')}`,
-      `slug: ${safeSlug}`,
-      `lang: ${lang}`,
-      `date: ${date}`,
-      `faDate: ${yaml(faDate || 'تاریخ فارسی')}`,
-      ...(updated ? [`updated: ${updated}`] : []),
-      ...(updated && faUpdated.trim() ? [`faUpdated: ${yaml(faUpdated)}`] : []),
-      `category: ${yaml(category)}`,
-      `excerpt: ${yaml(excerpt || 'خلاصه مقاله')}`,
-      `readTime: ${yaml(readTime)}`,
-      'related:',
-      ...related.map((item) => `  - ${item}`),
-      ...(external.trim() ? [`external: ${yaml(external)}`] : []),
-      `draft: ${draft}`,
-      '---',
-      '',
-      body.trim(),
-      ''
-    ];
-    return lines.join('\n');
   }
 
   function updateSlug(event: Event) {
@@ -124,7 +100,7 @@
     });
 
     images = [...images, ...additions];
-    for (const image of additions) insertIntoBody(`![توضیح تصویر](/images/articles/${safeSlug}/${image.name})`);
+    for (const image of additions) insertIntoBody(`![توضیح تصویر](./images/${image.name})`);
     setStatus(`${additions.length.toLocaleString('fa-IR')} تصویر اضافه شد.`, 'success');
   }
 
@@ -148,7 +124,7 @@
     const image = images[index];
     URL.revokeObjectURL(image.url);
     images = images.filter((_, imageIndex) => imageIndex !== index);
-    body = body.replaceAll(`![توضیح تصویر](/images/articles/${safeSlug}/${image.name})`, '');
+    body = body.replaceAll(`![توضیح تصویر](./images/${image.name})`, '');
   }
 
   async function chooseRepository() {
@@ -204,11 +180,11 @@
     }
 
     try {
-      const articlesDirectory = await nestedDirectory(repoHandle, ['src', 'lib', 'content', 'articles']);
-      await writeFile(articlesDirectory, `${safeSlug}.md`, markdown);
+      const articlesDirectory = await nestedDirectory(repoHandle, ['content', 'articles', lang, safeSlug]);
+      await writeFile(articlesDirectory, 'index.md', markdown);
 
       if (images.length) {
-        const imagesDirectory = await nestedDirectory(repoHandle, ['static', 'images', 'articles', safeSlug]);
+        const imagesDirectory = await nestedDirectory(repoHandle, ['content', 'articles', lang, safeSlug, 'images']);
         for (const image of images) await writeFile(imagesDirectory, image.name, image.file);
       }
 
@@ -245,7 +221,8 @@
   }
 
   async function loadMarkdown(event: Event) {
-    const file = (event.currentTarget as HTMLInputElement).files?.[0];
+    const input = event.currentTarget as HTMLInputElement;
+    const file = input.files?.[0];
     if (!file) return;
     const source = await file.text();
     const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
@@ -255,6 +232,7 @@
     }
 
     const values: Record<string, string> = {};
+    retainedFrontmatter = retainArticleFrontmatter(match[1]);
     const related: string[] = [];
     let readingRelated = false;
     for (const line of match[1].split(/\r?\n/)) {
@@ -293,7 +271,7 @@
     draft = values.draft !== 'false';
     body = match[2].trim();
     setStatus(`فایل «${file.name}» برای ویرایش باز شد.`, 'success');
-    (event.currentTarget as HTMLInputElement).value = '';
+    input.value = '';
   }
 
   function escapeHtml(value: string) {
@@ -439,7 +417,7 @@
             {#each images as image, index}
               <article>
                 <img src={image.url} alt="" />
-                <div><b dir="ltr">{image.name}</b><small dir="ltr">/static/images/articles/{safeSlug}/</small></div>
+                <div><b dir="ltr">{image.name}</b><small dir="ltr">/content/articles/{lang}/{safeSlug}/images/</small></div>
                 <span class="pending-actions">
                   <button type="button" onclick={() => download(image.file, image.name)} aria-label="دانلود تصویر">↓</button>
                   <button type="button" onclick={() => removeImage(index)} aria-label="حذف تصویر">×</button>

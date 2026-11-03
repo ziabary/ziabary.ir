@@ -2,7 +2,7 @@ import { isPublished } from './publication.mjs';
 
 /**
  * Shared publication feed for the Persian home page and media archive.
- * @param {import('./content').ArticleMeta[]} articles
+ * @param {import('./content/index').ArticleMeta[]} articles
  * @param {import('./news').MediaItem[]} coverage
  * @param {string} [today]
  */

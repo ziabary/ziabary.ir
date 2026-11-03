@@ -1,0 +1,1823 @@
+{
+  "microsoft-maia-300": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "Compute chiplet",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Matrix engine",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null
+  },
+  "intel-crescent-island": {
+    "generalCoreCount": 32,
+    "generalCoreLabel": "Xe Core",
+    "matrixCoreCount": 256,
+    "matrixCoreLabel": "XMX Engine",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "computeFootnote": "۱٫۳ PFLOPS نظری FP8 اعلام شده، اما تفکیک dense/sparse مشخص نیست؛ نرخ dense ثبت نشده است. شمار Xe Core با CUDA Core قابل قیاس مستقیم نیست."
+  },
+  "nvidia-groq3-lpx": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "LPU",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Matrix Engine",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "matrixSourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform",
+    "matrixSourceLabel": "NVIDIA Groq 3 LPX architecture",
+    "computeFootnote": "این رکورد یک رک کامل است؛ مقادیر محاسباتی رک به نرخ یک GPU تبدیل نشده‌اند.",
+    "disclosure": {
+      "fp4": "not-applicable",
+      "fp8": "not-applicable",
+      "bf16": "not-applicable",
+      "fp16": "not-applicable",
+      "fp32": "not-applicable",
+      "fp64": "not-applicable",
+      "int8": "not-applicable",
+      "int4": "not-applicable"
+    }
+  },
+  "amd-mi430x": {
+    "generalCoreCount": 256,
+    "generalCoreLabel": "WGP",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": 288,
+    "computeFootnote": "FP64 سخت‌افزاری و اولیه است؛ عدد FP4 بدون تفکیک dense/sparse در مشخصات تکمیلی آمده است."
+  },
+  "google-tpu7x": {
+    "generalCoreCount": 4,
+    "generalCoreLabel": "SparseCore",
+    "matrixCoreCount": 2,
+    "matrixCoreLabel": "TensorCore",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": 4614
+    },
+    "bf16": {
+      "dense": 2307
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "اعداد برای یک تراشهٔ TPU7x شامل دو chiplet هستند. Google نرخ مستقل FP16، FP32، FP64، INT8 و INT4 را در برگهٔ انتخاب‌شده منتشر نکرده است.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "published",
+      "fp4": "not-published",
+      "fp8": "published",
+      "bf16": "published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "google-tpu-v6e": {
+    "generalCoreCount": 2,
+    "generalCoreLabel": "MXU",
+    "matrixCoreCount": 1,
+    "matrixCoreLabel": "TensorCore",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 918
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": 1836
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "Google نرخ ۹۱۸ TFLOPS را برای BF16 و ۱٬۸۳۶ TOPS را برای INT8 در سطح هر تراشه منتشر می‌کند؛ نرخ مستقل سایر دقت‌های این جدول اعلام نشده است.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "published",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "published",
+      "int4": "not-published"
+    }
+  },
+  "google-tpu-v5p": {
+    "generalCoreCount": 4,
+    "generalCoreLabel": "SparseCore",
+    "matrixCoreCount": 2,
+    "matrixCoreLabel": "TensorCore",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": 459
+    },
+    "bf16": {
+      "dense": 459
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "اعداد FP8 و BF16 برای هر تراشهٔ Cloud TPU v5p هستند. سایر نرخ‌ها در جدول رسمی مشخصات v5p منتشر نشده‌اند.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "published",
+      "fp4": "not-published",
+      "fp8": "published",
+      "bf16": "published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "aws-trainium2": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "NeuronCore",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Tensor Engine",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": 1300
+    },
+    "bf16": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "FP8 هر تراشه از مجموع رسمی ۲۰٫۸ PFLOPS نمونهٔ ۱۶‌تراشه‌ای Trn2 استخراج شده است. AWS پشتیبانی FP32/TF32/BF16/FP16/cFP8 را اعلام می‌کند، اما نرخ مستقل همهٔ قالب‌ها را در این منبع نمی‌دهد.",
+    "disclosure": {
+      "generalCoreCount": "not-published",
+      "matrixCoreCount": "not-published",
+      "fp4": "not-published",
+      "fp8": "derived",
+      "bf16": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "tenstorrent-blackhole-p150": {
+    "generalCoreCount": 120,
+    "generalCoreLabel": "Tensix Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "واحد ماتریسی مستقل",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "۶۶۴ TFLOPS اعلامی از نوع BLOCKFP8 است و عمداً در ستون FP8 استاندارد قرار نگرفته؛ نرخ‌های هم‌سنخ دیگر در صفحهٔ عمومی کارت منتشر نشده‌اند.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "not-applicable",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "tenstorrent-wormhole-n300d": {
+    "generalCoreCount": 128,
+    "generalCoreLabel": "Tensix Core فعال",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "واحد ماتریسی مستقل",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": 466
+    },
+    "bf16": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 131
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "۴۶۶ TFLOPS FP8 و ۱۳۱ TFLOPS FP16 برای کل کارت دوASIC هستند. نرخ ۲۶۲ TFLOPS BLOCKFP8 جداگانه در شناسنامه آمده و با FP8 ادغام نشده است.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "not-applicable",
+      "fp4": "not-published",
+      "fp8": "published",
+      "bf16": "not-published",
+      "fp16": "published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "qualcomm-cloud-ai-100-ultra": {
+    "generalCoreCount": 64,
+    "generalCoreLabel": "AI Core (تا)",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "واحد ماتریسی مستقل",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "Qualcomm اوج ۸۷۰ TOPS و ۲۸۸ TFLOPS را اعلام می‌کند، ولی در صفحهٔ محصول آن‌ها را به یک دقت مشخص از ستون‌های حاضر نگاشت نمی‌کند؛ بنابراین عددی به زور در FP8/FP16/INT8 قرار نگرفته است.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "not-applicable",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "cerebras-cs3": {
+    "generalCoreCount": 900000,
+    "generalCoreLabel": "AI Core روی ویفر",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "واحد ماتریسی مستقل",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 125000
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "۱۲۵٬۰۰۰ TFLOPS FP16 عدد سطح سامانهٔ CS-3/WSE-3 است، نه کارت یا تراشهٔ قابل‌تعویض. معماری wafer-scale با GPU یا TPU یک‌به‌یک هم‌سنخ نیست.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "not-applicable",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "groq-lpu": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "Functional Unit / LPU",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "واحد ماتریسی مستقل",
+    "fp4": {
+      "dense": null
+    },
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "منبع معماری عمومی Groq پهنای‌باند SRAM و مدل اجرای قطعی را توضیح می‌دهد، اما نرخ FLOPS/TOPS، ظرفیت و توان SKUمحور مستقل منتشر نمی‌کند.",
+    "disclosure": {
+      "generalCoreCount": "not-published",
+      "matrixCoreCount": "not-applicable",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "huawei-ascend-950dt": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "AI Core / Vector Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Cube / Matrix Engine",
+    "fp4": {
+      "dense": 1560
+    },
+    "fp8": {
+      "dense": 803.75
+    },
+    "bf16": {
+      "dense": 425
+    },
+    "fp16": {
+      "dense": 425
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": null
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "FP4 و FP8 از نرخ رسمی سامانهٔ هشت‌NPU Atlas 650E تقسیم بر ۸ استخراج شده‌اند. قالب‌ها mxFP4 و mxFP8/FP8/HiF8 هستند؛ شمار هسته و FP32/FP64 مستقل منتشر نشده است.",
+    "disclosure": {
+      "generalCoreCount": "not-published",
+      "matrixCoreCount": "not-published",
+      "fp4": "derived",
+      "fp8": "derived",
+      "bf16": "derived",
+      "fp16": "derived",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "huawei-atlas-350": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "AI Core / Vector Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Cube / Matrix Engine",
+    "fp4": {
+      "dense": 1561
+    },
+    "fp8": {
+      "dense": 804
+    },
+    "bf16": {
+      "dense": 425
+    },
+    "fp16": {
+      "dense": 425
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": 804
+    },
+    "int4": {
+      "dense": null
+    },
+    "computeFootnote": "Huawei مقدار ۸۰۴ را مشترکاً برای mxFP8/HiF8/mxFP6/INT8 اعلام کرده است؛ بنابراین قالب دقیق هر ستون را از یادداشت حذف نکنید. تعداد AI Core و نرخ FP32/FP64 عمومی اعلام نشده است.",
+    "disclosure": {
+      "generalCoreCount": "not-published",
+      "matrixCoreCount": "not-published",
+      "fp4": "published",
+      "fp8": "published",
+      "bf16": "published",
+      "fp16": "published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "published",
+      "int4": "not-published"
+    }
+  },
+  "huawei-ascend-910b3": {
+    "generalCoreCount": 20,
+    "generalCoreLabel": "AI Core فعال (SKU B3)",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Cube / Matrix Engine",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "computeFootnote": "مستند رسمی انتخاب‌شده ۲۰ AI Core و ۶۴GB HBM را برای 910B3 نشان می‌دهد، اما جدول کامل نرخ‌های محاسباتی SKUمحور را منتشر نمی‌کند.",
+    "disclosure": {
+      "generalCoreCount": "published",
+      "matrixCoreCount": "not-published",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "huawei-ascend-910c": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "AI Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Cube / Matrix Engine",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "computeFootnote": "اطلاعات عمومی Huawei عمدتاً در سطح Atlas A3 و CloudMatrix منتشر شده است. نرخ یا ظرفیت سطح سامانه بدون سند رسمی SKU به عدد هر NPU تبدیل نشده است.",
+    "disclosure": {
+      "generalCoreCount": "not-published",
+      "matrixCoreCount": "not-published",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "huawei-atlas-300i-duo": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "AI Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Cube / Matrix Engine",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 140
+    },
+    "fp32": null,
+    "fp64": null,
+    "int8": {
+      "dense": 280
+    },
+    "computeFootnote": "اعداد ۱۴۰ TFLOPS FP16 و ۲۸۰ TOPS INT8 برای کل کارت Atlas 300I Duo هستند. FP32/FP64 و شمار AI Core در صفحهٔ عمومی محصول اعلام نشده‌اند.",
+    "disclosure": {
+      "generalCoreCount": "not-published",
+      "matrixCoreCount": "not-published",
+      "fp4": "not-supported",
+      "fp8": "not-published",
+      "bf16": "not-published",
+      "fp16": "published",
+      "fp32": "not-published",
+      "fp64": "not-published",
+      "int8": "published",
+      "int4": "not-published"
+    }
+  },
+  "amd-mi455x": {
+    "generalCoreCount": 256,
+    "generalCoreLabel": "WGP",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Matrix Core",
+    "fp4": {
+      "dense": 40300
+    },
+    "fp8": {
+      "dense": 20100
+    },
+    "fp16": {
+      "dense": 5000,
+      "sparse": 10100
+    },
+    "bf16": {
+      "dense": 5000,
+      "sparse": 10100
+    },
+    "int8": {
+      "dense": 5000,
+      "sparse": 10100
+    },
+    "fp32": 315,
+    "fp64": 5,
+    "computeFootnote": "FP4 از نوع OCP MXFP4 و FP8 از نوع OCP است؛ مقادیر هر GPU از جدول رسمی SKU هستند. شمار Stream Processor یا Matrix Core اعلام نشده است."
+  },
+  "nvidia-rtx-spark-n1x-laptop": {
+    "generalCoreCount": 6144,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "disclosure": {
+      "matrixCoreCount": "not-published",
+      "fp4": "not-published",
+      "fp8": "not-published",
+      "fp16": "not-published",
+      "fp32": "not-published",
+      "fp64": "not-published"
+    }
+  },
+  "nvidia-rubin": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Tensor Core",
+    "fp4": {
+      "dense": null,
+      "sparse": 50000
+    },
+    "fp8": {
+      "dense": 17500
+    },
+    "fp16": {
+      "dense": 4000
+    },
+    "bf16": {
+      "dense": 4000
+    },
+    "int8": {
+      "dense": 250
+    },
+    "fp32": 130,
+    "fp64": 33,
+    "computeFootnote": "مشخصات هر GPU در جدول HGX: استنتاج NVFP4 پراکنده ۵۰ PFLOPS؛ آموزش NVFP4 متراکم ۳۵ PFLOPS. FP8/FP6، BF16/FP16 و INT8 مقادیر متراکم‌اند."
+  },
+  "nvidia-b300": {
+    "generalCoreCount": 20480,
+    "generalCoreLabel": "CUDA Core (تا)",
+    "matrixCoreCount": 640,
+    "matrixCoreLabel": "Tensor Core (تا)",
+    "fp4": {
+      "dense": 13500,
+      "sparse": 18000
+    },
+    "fp8": {
+      "dense": 4500,
+      "sparse": 9000
+    },
+    "fp16": {
+      "dense": 2250,
+      "sparse": 4500
+    },
+    "bf16": {
+      "dense": 2250,
+      "sparse": 4500
+    },
+    "int8": {
+      "dense": 187.5,
+      "sparse": 375
+    },
+    "fp32": 75,
+    "fp64": null,
+    "matrixSourceUrl": "https://www.nvidia.com/en-us/data-center/hgx/",
+    "matrixSourceLabel": "NVIDIA HGX B300 specifications",
+    "computeFootnote": "تعداد هسته از پیکربندی کامل ۱۶۰ SM استخراج شده است؛ نرخ‌های FP4 و INT8 از مجموع هشت‌GPU HGX به‌دست آمده‌اند. INT8 متراکم: ۳ POPS ÷ ۲ ÷ ۸ = ۱۸۷٫۵ TOPS؛ این عدد تضمین وجود کرنل مناسب در موتور استنتاج نیست.",
+    "disclosure": {
+      "generalCoreCount": "derived",
+      "matrixCoreCount": "derived",
+      "fp4": "derived",
+      "int8": "derived"
+    }
+  },
+  "nvidia-b200": {
+    "generalCoreCount": null,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 4500,
+      "sparse": 9000
+    },
+    "fp16": {
+      "dense": 2250,
+      "sparse": 4500
+    },
+    "bf16": {
+      "dense": 2250,
+      "sparse": 4500
+    },
+    "fp32": 75,
+    "fp64": 37,
+    "computeFootnote": "نرخ‌های هر GPU از مشخصات رسمی HGX B200 هشت‌GPU استخراج شده‌اند؛ تعداد هسته در برگهٔ SKU اعلام نشده است."
+  },
+  "amd-mi355x": {
+    "generalCoreCount": 16384,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": 1024,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": 5000,
+      "sparse": 10100
+    },
+    "fp16": {
+      "dense": 2500,
+      "sparse": 5000
+    },
+    "fp32": 157.3,
+    "fp64": 78.6
+  },
+  "amd-mi350x": {
+    "generalCoreCount": 16384,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": 1024,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": 4600,
+      "sparse": 9200
+    },
+    "fp16": {
+      "dense": 2300,
+      "sparse": 4600
+    },
+    "fp32": 144.2,
+    "fp64": 72.1
+  },
+  "amd-mi325x": {
+    "generalCoreCount": 19456,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": 1216,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": 2610,
+      "sparse": 5220
+    },
+    "fp16": {
+      "dense": 1300,
+      "sparse": 2610
+    },
+    "fp32": 163.4,
+    "fp64": 81.7
+  },
+  "amd-mi300x": {
+    "generalCoreCount": 19456,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": 1216,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": 2610,
+      "sparse": 5220
+    },
+    "fp16": {
+      "dense": 1300,
+      "sparse": 2610
+    },
+    "fp32": 163.4,
+    "fp64": 81.7
+  },
+  "nvidia-h200-sxm": {
+    "generalCoreCount": 16896,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 528,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 1979,
+      "sparse": 3958
+    },
+    "fp16": {
+      "dense": 989.5,
+      "sparse": 1979
+    },
+    "bf16": {
+      "dense": 989.5,
+      "sparse": 1979
+    },
+    "fp32": 67,
+    "fp64": 34,
+    "int8": {
+      "dense": 1979,
+      "sparse": 3958
+    },
+    "disclosure": {
+      "fp4": "not-supported",
+      "int4": "not-supported"
+    }
+  },
+  "nvidia-h200-nvl": {
+    "generalCoreCount": 14592,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 456,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 1670.5,
+      "sparse": 3341
+    },
+    "fp16": {
+      "dense": 835.5,
+      "sparse": 1671
+    },
+    "bf16": {
+      "dense": 835.5,
+      "sparse": 1671
+    },
+    "fp32": 60,
+    "fp64": 30,
+    "int8": {
+      "dense": 1670.5,
+      "sparse": 3341
+    },
+    "disclosure": {
+      "fp4": "not-supported",
+      "int4": "not-supported"
+    }
+  },
+  "intel-gaudi3-pcie": {
+    "generalCoreCount": 64,
+    "generalCoreLabel": "TPC",
+    "matrixCoreCount": 8,
+    "matrixCoreLabel": "MME",
+    "fp8": {
+      "dense": 1800
+    },
+    "fp16": {
+      "dense": null
+    },
+    "fp32": null,
+    "fp64": null,
+    "computeFootnote": "Intel توان ۱٫۸ PFLOPS را برای FP8 و BF16 اعلام می‌کند؛ نرخ مستقل FP16/FP32/FP64 در Product Brief درج نشده است."
+  },
+  "nvidia-h100-nvl": {
+    "generalCoreCount": 14592,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 456,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 1670.5,
+      "sparse": 3341
+    },
+    "fp16": {
+      "dense": 835.5,
+      "sparse": 1671
+    },
+    "bf16": {
+      "dense": 835.5,
+      "sparse": 1671
+    },
+    "fp32": 60,
+    "fp64": 30,
+    "int8": {
+      "dense": 1670.5,
+      "sparse": 3341
+    },
+    "disclosure": {
+      "fp4": "not-supported",
+      "int4": "not-supported"
+    }
+  },
+  "nvidia-rtx-pro-6000-server": {
+    "generalCoreCount": 24064,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 752,
+    "matrixCoreLabel": "Tensor Core",
+    "fp4": {
+      "dense": 2000,
+      "sparse": 4000
+    },
+    "fp8": {
+      "dense": 1000,
+      "sparse": 2000
+    },
+    "fp16": {
+      "dense": 500,
+      "sparse": 1000
+    },
+    "bf16": {
+      "dense": 500,
+      "sparse": 1000
+    },
+    "fp32": 120,
+    "fp64": 1.9,
+    "int8": {
+      "dense": 1000,
+      "sparse": 2000
+    },
+    "int4": {
+      "dense": 2000,
+      "sparse": 4000
+    },
+    "computeFootnote": "نرخ‌های Tensor به‌صورت dense/sparse نمایش داده شده‌اند؛ FP64 برای سازگاری است و ۱/۶۴ نرخ FP32 است."
+  },
+  "nvidia-h100-sxm": {
+    "generalCoreCount": 16896,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 528,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 1979,
+      "sparse": 3958
+    },
+    "fp16": {
+      "dense": 989.5,
+      "sparse": 1979
+    },
+    "bf16": {
+      "dense": 989.5,
+      "sparse": 1979
+    },
+    "fp32": 67,
+    "fp64": 34,
+    "int8": {
+      "dense": 1979,
+      "sparse": 3958
+    },
+    "disclosure": {
+      "fp4": "not-supported",
+      "int4": "not-supported"
+    }
+  },
+  "nvidia-a100-sxm": {
+    "generalCoreCount": 6912,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 432,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "bf16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp32": 19.5,
+    "fp64": 9.7,
+    "int8": {
+      "dense": 624,
+      "sparse": 1248
+    },
+    "int4": {
+      "dense": 1248,
+      "sparse": 2496
+    },
+    "disclosure": {
+      "fp8": "not-supported",
+      "fp4": "not-supported"
+    }
+  },
+  "nvidia-a100-pcie": {
+    "generalCoreCount": 6912,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 432,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "bf16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp32": 19.5,
+    "fp64": 9.7,
+    "int8": {
+      "dense": 624,
+      "sparse": 1248
+    },
+    "int4": {
+      "dense": 1248,
+      "sparse": 2496
+    },
+    "disclosure": {
+      "fp8": "not-supported",
+      "fp4": "not-supported"
+    }
+  },
+  "amd-mi210": {
+    "generalCoreCount": 6656,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 181
+    },
+    "fp32": 22.6,
+    "fp64": 22.6
+  },
+  "nvidia-l40s": {
+    "generalCoreCount": 18176,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 568,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 733,
+      "sparse": 1466
+    },
+    "fp16": {
+      "dense": 362.05,
+      "sparse": 733
+    },
+    "bf16": {
+      "dense": 362.05,
+      "sparse": 733
+    },
+    "fp32": 91.6,
+    "fp64": 1.43,
+    "int8": {
+      "dense": 733,
+      "sparse": 1466
+    },
+    "int4": {
+      "dense": 733,
+      "sparse": 1466
+    },
+    "matrixSourceUrl": "https://www.techpowerup.com/gpu-specs/l40s.c4173",
+    "matrixSourceLabel": "TechPowerUp GPU Database — L40S",
+    "computeFootnote": "کارایی Matrix با تفکیک دقت و dense/sparse ثبت شده است؛ منبع مکمل TechPowerUp برای محاسبات نظری و منبع رسمی NVIDIA برای نرخ‌های دیتاسنتری استفاده شده‌اند."
+  },
+  "nvidia-rtx6000-ada": {
+    "generalCoreCount": 18176,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 568,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 728.5,
+      "sparse": 1457
+    },
+    "fp16": {
+      "dense": 364,
+      "sparse": 728
+    },
+    "bf16": {
+      "dense": 182,
+      "sparse": 364
+    },
+    "fp32": 91.1,
+    "fp64": 1.4,
+    "int8": {
+      "dense": 728.5,
+      "sparse": 1457
+    },
+    "int4": {
+      "dense": 1457,
+      "sparse": 2914
+    },
+    "matrixSourceUrl": "https://www.techpowerup.com/gpu-specs/rtx-6000-ada-generation.c3933",
+    "matrixSourceLabel": "TechPowerUp GPU Database — RTX 6000 Ada",
+    "computeFootnote": "FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ نرخ‌های Matrix محاسبهٔ نظری TechPowerUp هستند و sparse برابر دو برابر مقدار پایه نمایش داده شده است."
+  },
+  "amd-r9700": {
+    "generalCoreCount": 4096,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": 128,
+    "matrixCoreLabel": "AI Accelerator",
+    "fp8": {
+      "dense": 383,
+      "sparse": 766
+    },
+    "fp16": {
+      "dense": 191,
+      "sparse": 383
+    },
+    "fp32": 47.8,
+    "fp64": null
+  },
+  "nvidia-rtx5090": {
+    "generalCoreCount": 21760,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 680,
+    "matrixCoreLabel": "Tensor Core",
+    "fp4": {
+      "dense": 1676,
+      "sparse": 3352
+    },
+    "fp8": {
+      "dense": 838,
+      "sparse": 1676
+    },
+    "fp16": {
+      "dense": 419,
+      "sparse": 838
+    },
+    "bf16": {
+      "dense": 419,
+      "sparse": 838
+    },
+    "fp32": 104.8,
+    "fp64": 1.6,
+    "int8": {
+      "dense": 838,
+      "sparse": 1676
+    },
+    "int4": {
+      "dense": 1676,
+      "sparse": 3352
+    },
+    "matrixSourceUrl": "https://www.techpowerup.com/gpu-specs/geforce-rtx-5090.c4216",
+    "matrixSourceLabel": "TechPowerUp GPU Database — GeForce RTX 5090",
+    "computeFootnote": "FP64 برای سازگاری است و تقریباً ۱/۶۴ نرخ FP32؛ نرخ‌های Matrix بر مبنای مشخصات نظری مرجع و با تفکیک dense/sparse ثبت شده‌اند."
+  },
+  "nvidia-rtx4090": {
+    "generalCoreCount": 16384,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 512,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 660.6,
+      "sparse": 1321.2
+    },
+    "fp16": {
+      "dense": 330.3,
+      "sparse": 660.6
+    },
+    "bf16": {
+      "dense": 165.2,
+      "sparse": 330.3
+    },
+    "fp32": 82.58,
+    "fp64": 1.29,
+    "int8": {
+      "dense": 660.6,
+      "sparse": 1321.2
+    },
+    "int4": {
+      "dense": 1321.2,
+      "sparse": 2642.4
+    },
+    "matrixSourceUrl": "https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889",
+    "matrixSourceLabel": "TechPowerUp GPU Database — GeForce RTX 4090",
+    "computeFootnote": "Matrix Performance از TechPowerUp: INT4 برابر ۱۳۲۱٫۲ TOPS، INT8 و FP8 برابر ۶۶۰٫۶، FP16 برابر ۳۳۰٫۳ و BF16 برابر ۱۶۵٫۲؛ Sparse Matrix تا دو برابر throughput پایه است."
+  },
+  "nvidia-rtx2080": {
+    "generalCoreCount": 2944,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 368,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 80.5
+    },
+    "fp32": 10.1,
+    "fp64": 0.315,
+    "int8": {
+      "dense": 161
+    },
+    "int4": {
+      "dense": 322
+    },
+    "computeFootnote": "نرخ‌های Tensor نظری و از تعداد Tensor Core و boost clock مرجع NVIDIA استخراج شده‌اند؛ FP8/BF16 سخت‌افزاری پشتیبانی نمی‌شود.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "not-supported",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx2080ti": {
+    "generalCoreCount": 4352,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 544,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 107.6
+    },
+    "fp32": 13.45,
+    "fp64": 0.42,
+    "int8": {
+      "dense": 215.2
+    },
+    "int4": {
+      "dense": 430.4
+    },
+    "computeFootnote": "نرخ‌های Tensor نظری‌اند؛ FP8/BF16 سخت‌افزاری در Turing پشتیبانی نمی‌شود.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "not-supported",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx-a6000": {
+    "generalCoreCount": 10752,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 336,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 154.8,
+      "sparse": 309.7
+    },
+    "fp16": {
+      "dense": 154.8,
+      "sparse": 309.7
+    },
+    "fp32": 38.7,
+    "fp64": 0.605,
+    "int8": {
+      "dense": 309.7,
+      "sparse": 619.4
+    },
+    "int4": {
+      "dense": 619.4,
+      "sparse": 1238.8
+    },
+    "computeFootnote": "Tensor throughput از اوج رسمی ۳۰۹٫۷ TFLOPS با sparsity تفکیک شده است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-quadro-rtx8000": {
+    "generalCoreCount": 4608,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 576,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 130.5
+    },
+    "fp32": 16.3,
+    "fp64": 0.255,
+    "int8": {
+      "dense": 261
+    },
+    "int4": {
+      "dense": 522
+    },
+    "computeFootnote": "اوج Tensor رسمی ۱۳۰٫۵ TFLOPS؛ FP8/BF16 سخت‌افزاری در Turing پشتیبانی نمی‌شود.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "not-supported",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-v100-pcie": {
+    "generalCoreCount": 5120,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 640,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 112
+    },
+    "fp32": 14,
+    "fp64": 7,
+    "computeFootnote": "Tensor Performance رسمی V100 PCIe؛ دقت‌های FP8/BF16 و sparsity ساختاری نسل‌های بعدی در دسترس نیستند.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "not-supported",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "nvidia-v100-sxm2": {
+    "generalCoreCount": 5120,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 640,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "fp16": {
+      "dense": 125
+    },
+    "fp32": 15.7,
+    "fp64": 7.8,
+    "computeFootnote": "Tensor Performance رسمی V100 SXM2؛ دقت‌های FP8/BF16 و sparsity ساختاری پشتیبانی نمی‌شوند.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "not-supported",
+      "int8": "not-published",
+      "int4": "not-published"
+    }
+  },
+  "nvidia-rtx3060": {
+    "generalCoreCount": 3584,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 112,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 51,
+      "sparse": 102
+    },
+    "fp16": {
+      "dense": 51,
+      "sparse": 102
+    },
+    "fp32": 12.74,
+    "fp64": 0.199,
+    "int8": {
+      "dense": 102,
+      "sparse": 204
+    },
+    "int4": {
+      "dense": 204,
+      "sparse": 408
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx3070": {
+    "generalCoreCount": 5888,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 184,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 81.3,
+      "sparse": 162.6
+    },
+    "fp16": {
+      "dense": 81.3,
+      "sparse": 162.6
+    },
+    "fp32": 20.31,
+    "fp64": 0.317,
+    "int8": {
+      "dense": 162.6,
+      "sparse": 325.2
+    },
+    "int4": {
+      "dense": 325.2,
+      "sparse": 650.4
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx3080": {
+    "generalCoreCount": 8704,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 272,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 119.1,
+      "sparse": 238.2
+    },
+    "fp16": {
+      "dense": 119.1,
+      "sparse": 238.2
+    },
+    "fp32": 29.77,
+    "fp64": 0.465,
+    "int8": {
+      "dense": 238.2,
+      "sparse": 476.4
+    },
+    "int4": {
+      "dense": 476.4,
+      "sparse": 952.8
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx3090": {
+    "generalCoreCount": 10496,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 328,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 142.3,
+      "sparse": 284.6
+    },
+    "fp16": {
+      "dense": 142.3,
+      "sparse": 284.6
+    },
+    "fp32": 35.58,
+    "fp64": 0.556,
+    "int8": {
+      "dense": 284.6,
+      "sparse": 569.2
+    },
+    "int4": {
+      "dense": 569.2,
+      "sparse": 1138.4
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx3090ti": {
+    "generalCoreCount": 10752,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 336,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 160,
+      "sparse": 320
+    },
+    "fp16": {
+      "dense": 160,
+      "sparse": 320
+    },
+    "fp32": 40,
+    "fp64": 0.625,
+    "int8": {
+      "dense": 320,
+      "sparse": 640
+    },
+    "int4": {
+      "dense": 640,
+      "sparse": 1280
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx4070": {
+    "generalCoreCount": 5888,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 184,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 233.2,
+      "sparse": 466.4
+    },
+    "bf16": {
+      "dense": 58.3,
+      "sparse": 116.6
+    },
+    "fp16": {
+      "dense": 116.6,
+      "sparse": 233.2
+    },
+    "fp32": 29.15,
+    "fp64": 0.455,
+    "int8": {
+      "dense": 233.2,
+      "sparse": 466.4
+    },
+    "int4": {
+      "dense": 466.4,
+      "sparse": 932.8
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core نسل چهارم و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "derived",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx4080": {
+    "generalCoreCount": 9728,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 304,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 389.9,
+      "sparse": 779.8
+    },
+    "bf16": {
+      "dense": 97.5,
+      "sparse": 195
+    },
+    "fp16": {
+      "dense": 195,
+      "sparse": 389.9
+    },
+    "fp32": 48.74,
+    "fp64": 0.761,
+    "int8": {
+      "dense": 389.9,
+      "sparse": 779.8
+    },
+    "int4": {
+      "dense": 779.8,
+      "sparse": 1559.6
+    },
+    "computeFootnote": "Matrix throughput نظری از Tensor Core نسل چهارم و boost رسمی مشتق شده است.",
+    "disclosure": {
+      "fp8": "derived",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-rtx4090d": {
+    "generalCoreCount": 14592,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 456,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 588.3,
+      "sparse": 1176.6
+    },
+    "bf16": {
+      "dense": 147.1,
+      "sparse": 294.2
+    },
+    "fp16": {
+      "dense": 294.2,
+      "sparse": 588.3
+    },
+    "fp32": 73.54,
+    "fp64": 1.149,
+    "int8": {
+      "dense": 588.3,
+      "sparse": 1176.6
+    },
+    "int4": {
+      "dense": 1176.6,
+      "sparse": 2353.2
+    },
+    "computeFootnote": "نرخ‌های Matrix از ۱۱۴ SM فعال و boost مرجع مشتق شده‌اند؛ SKU منطقه‌ای است.",
+    "disclosure": {
+      "generalCoreCount": "derived",
+      "matrixCoreCount": "derived",
+      "fp8": "derived",
+      "bf16": "derived",
+      "fp16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-l40": {
+    "generalCoreCount": 18176,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 568,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 362,
+      "sparse": 724
+    },
+    "bf16": {
+      "dense": 181.05,
+      "sparse": 362.1
+    },
+    "fp16": {
+      "dense": 181.05,
+      "sparse": 362.1
+    },
+    "fp32": 90.5,
+    "fp64": 1.414,
+    "int8": {
+      "dense": 362,
+      "sparse": 724
+    },
+    "int4": {
+      "dense": 724,
+      "sparse": 1448
+    },
+    "computeFootnote": "اعداد dense/sparse عین دیتاشیت رسمی NVIDIA L40 هستند؛ FP64 نسبت سازگاری ۱/۶۴ FP32 است.",
+    "disclosure": {
+      "fp64": "derived"
+    }
+  },
+  "nvidia-a100-40-pcie": {
+    "generalCoreCount": 6912,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 432,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp32": 19.5,
+    "fp64": 9.7,
+    "int8": {
+      "dense": 624,
+      "sparse": 1248
+    },
+    "int4": {
+      "dense": 1248,
+      "sparse": 2496
+    },
+    "computeFootnote": "نرخ‌های Tensor با تفکیک dense/sparse مطابق خانواده A100 ثبت شده‌اند.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "fp4": "not-supported"
+    }
+  },
+  "nvidia-a100x": {
+    "generalCoreCount": 6912,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 432,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp32": 19.5,
+    "fp64": 9.7,
+    "int8": {
+      "dense": 624,
+      "sparse": 1248
+    },
+    "int4": {
+      "dense": 1248,
+      "sparse": 2496
+    },
+    "computeFootnote": "بخش GPU همان A100 80GB است؛ DPU و شبکهٔ همگرا در مشخصات پایهٔ رکورد توضیح داده شده‌اند.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "fp4": "not-supported"
+    }
+  },
+  "nvidia-a800-80-pcie": {
+    "generalCoreCount": 6912,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 432,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp16": {
+      "dense": 312,
+      "sparse": 624
+    },
+    "fp32": 19.5,
+    "fp64": 9.7,
+    "int8": {
+      "dense": 624,
+      "sparse": 1248
+    },
+    "int4": {
+      "dense": 1248,
+      "sparse": 2496
+    },
+    "computeFootnote": "توان محاسباتی هسته از خانواده A100/A800؛ پارت‌نامبر منطقه‌ای و پهنای‌باند NVLink باید جداگانه کنترل شود.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "fp4": "not-supported",
+      "fp16": "derived",
+      "bf16": "derived",
+      "int8": "derived",
+      "int4": "derived"
+    }
+  },
+  "nvidia-h100-pcie-80": {
+    "generalCoreCount": 14592,
+    "generalCoreLabel": "CUDA Core",
+    "matrixCoreCount": 456,
+    "matrixCoreLabel": "Tensor Core",
+    "fp8": {
+      "dense": 1513,
+      "sparse": 3026
+    },
+    "bf16": {
+      "dense": 756.5,
+      "sparse": 1513
+    },
+    "fp16": {
+      "dense": 756.5,
+      "sparse": 1513
+    },
+    "fp32": 51,
+    "fp64": 26,
+    "int8": {
+      "dense": 1513,
+      "sparse": 3026
+    },
+    "computeFootnote": "اعداد SKU اولیه H100 PCIe 80GB؛ مقادیر Tensor به‌صورت dense/sparse تفکیک شده‌اند.",
+    "disclosure": {
+      "fp4": "not-supported",
+      "int4": "not-supported"
+    }
+  },
+  "amd-mi100": {
+    "generalCoreCount": 7680,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": 120,
+    "matrixCoreLabel": "Compute Unit با Matrix Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 92.3
+    },
+    "fp16": {
+      "dense": 184.6
+    },
+    "fp32": 23.1,
+    "fp64": 11.5,
+    "int8": {
+      "dense": 92.3
+    },
+    "int4": {
+      "dense": 92.3
+    },
+    "computeFootnote": "اعداد اوج رسمی AMD؛ FP8 در CDNA نسل نخست پشتیبانی نمی‌شود.",
+    "disclosure": {
+      "fp8": "not-supported"
+    }
+  },
+  "amd-mi250x": {
+    "generalCoreCount": 14080,
+    "generalCoreLabel": "Stream Processor",
+    "matrixCoreCount": null,
+    "matrixCoreLabel": "Matrix Core",
+    "fp8": {
+      "dense": null
+    },
+    "bf16": {
+      "dense": 383
+    },
+    "fp16": {
+      "dense": 383
+    },
+    "fp32": 47.9,
+    "fp64": 47.9,
+    "int8": {
+      "dense": 383
+    },
+    "int4": {
+      "dense": 383
+    },
+    "computeFootnote": "FP32/FP64 فیلد عمومی نرخ vector است؛ Matrix FP32/FP64 رسمی ۹۵٫۷ TFLOPS است و در مشخصات تکمیلی هنگام ادغام قابل افزودن است.",
+    "disclosure": {
+      "fp8": "not-supported",
+      "matrixCoreCount": "not-published"
+    }
+  }
+}

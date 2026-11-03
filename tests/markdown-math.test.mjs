@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -29,7 +30,7 @@ test('invalid formulas fail the build instead of publishing broken notation', as
 
 for (const suffix of ['', '-en', '-es']) {
   test(`the GPU latency article${suffix} includes all 19 formulas and a rendered diagram`, async () => {
-    const source = readFileSync(`src/lib/content/articles/gpu-inference-latency-throughput${suffix}.md`, 'utf8');
+    const source = readFileSync(articleFile(`gpu-inference-latency-throughput${suffix}`), 'utf8');
     const { code } = await preprocess(source);
     assert.equal((code.match(/class="katex"/g) ?? []).length, 19);
     assert.equal((code.match(/class="math-display"/g) ?? []).length, 8);

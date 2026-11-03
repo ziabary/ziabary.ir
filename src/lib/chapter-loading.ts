@@ -1,5 +1,5 @@
 import { tick } from 'svelte';
-import { getArticleModule, type ArticleMeta } from './content';
+import { getArticleModule, type ArticleMeta } from '$lib/content';
 
 const pending = new Map<string, ReturnType<typeof getArticleModule>>();
 /** One compiled Markdown module per article. Failed requests may be retried. */

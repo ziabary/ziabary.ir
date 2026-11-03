@@ -1,3 +1,4 @@
+from llm_repository import load_repository, write_repository, is_current_repository
 """Adapt the reviewed update into the canonical repository; input stays outside public assets.
 Usage: python3 scripts/import-llm-update-20260919.py /path/to/extracted-pack
 The sources/ subdirectory contains verified Hugging Face metadata snapshots.
@@ -5,8 +6,10 @@ The sources/ subdirectory contains verified Hugging Face metadata snapshots.
 from pathlib import Path
 import json,sys,re,hashlib
 root=Path(__file__).resolve().parents[1];pack=Path(sys.argv[1]);bundle=root/'data/llm/v0.3.0'
-def read(p):return json.loads(p.read_text())
-def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+def read(p):return load_repository(p) if is_current_repository(p) else json.loads(p.read_text())
+def write(p,d):
+ if is_current_repository(p):write_repository(p,d)
+ else:p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 r=read(bundle/'repository.json');bindings=read(root/'data/llm/locales/record-bindings.json')
 texts={lang:read(root/f'data/llm/locales/records.{lang}.json') for lang in ['fa','en','es']}
 def upsert(key,item):

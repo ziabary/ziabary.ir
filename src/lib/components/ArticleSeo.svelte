@@ -5,7 +5,7 @@
   export let article: ArticleMeta;
 
   $: localePath = article.lang === 'fa' ? '' : `/${article.lang}`;
-  $: authorName = article.lang === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary';
+  $: authorName = article.author ?? (article.lang === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary');
   $: pageTitle = `${article.title} | ${authorName}`;
 </script>
 
@@ -20,6 +20,7 @@
   publishedDate={article.date}
   updatedDate={article.updated}
   articleSection={article.category}
+  author={article.author && article.author !== 'مهران ضیابری' && article.author !== 'Mehran Ziabary' ? { name: article.author } : undefined}
   noindex={article.draft === true}
 />
 

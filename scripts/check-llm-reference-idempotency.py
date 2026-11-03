@@ -4,7 +4,7 @@ import json,hashlib,subprocess,sys
 root=Path(__file__).resolve().parents[1]
 def snapshot():
  paths=[root/'data/llm/v0.3.0/repository.json',root/'data/llm/v0.3.0/manifest.json',root/'data/llm/v0.3.0/research/reference-import-mapping.json']
- paths+=list((root/'data/llm/locales').glob('*.json'))+list((root/'src/lib/llm/data').glob('*.ts'))+list((root/'src/lib/content/articles').glob('*.md'))
+ paths+=list((root/'data/llm/locales').glob('*.json'))+list((root/'data/llm/generated').glob('*.ts'))+list((root/'content/articles').glob('*/*/index.md'))+list((root/'data/llm/v0.3.0/records').glob('*.json'))
  return {str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 before=snapshot()
 for script in ['import-llm-reference-pack.py','generate-llm-dataset.py','integrate-llm-reference-articles.py']:

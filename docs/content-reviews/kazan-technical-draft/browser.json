@@ -1,0 +1,94 @@
+{
+  "origin": "https://ziabary.ir",
+  "results": [
+    {
+      "draftGate": true,
+      "noindex": true
+    },
+    {
+      "title": "هوش مصنوعی روسیه از نزدیک؛ GPUهای قدرتمند، مدل‌های بزرگ و مسئله معماری",
+      "sections": 18,
+      "slots": [
+        {
+          "name": "01-exhibition",
+          "caption": "محصولات و غرفه‌های فناوری در Kazan Digital Week 2026"
+        },
+        {
+          "name": "02-shabanov-meeting",
+          "caption": "گفت‌وگوی فنی با علی شابانوف درباره مدل‌ها و زیرساخت سرویس‌دهی"
+        },
+        {
+          "name": "03-ai-platform",
+          "caption": "نمای سکوی خدمات هوش مصنوعی و امکانات پردازش سند و گفت‌وگو"
+        },
+        {
+          "name": "04-hardware",
+          "caption": "نمونه سخت‌افزار و اجزای بومی معرفی‌شده در غرفه‌های نمایشگاه"
+        },
+        {
+          "name": "05-robotics",
+          "caption": "ربات‌ها و سامانه‌های بدون سرنشین معرفی‌شده در Kazan Digital Week"
+        },
+        {
+          "name": "06-self-driving",
+          "caption": "خودرو یا تجهیزات سامانه رانندگی خودکار در بخش حمل‌ونقل هوشمند"
+        },
+        {
+          "name": "07-geopager",
+          "caption": "دیدار هومص و GEOPAGER و امضای تفاهم‌نامه همکاری"
+        }
+      ],
+      "internal": [
+        "/articles/kazan-travelogue/",
+        "/guides/gpu-selection/#gpu-nvidia-b200",
+        "/guides/gpu-selection/#gpu-nvidia-b300",
+        "/articles/right-model-size-for-the-task/",
+        "/en/articles/",
+        "/en/guides/llm/",
+        "/en/guides/gpu-selection/",
+        "/articles/targoman-300-concurrent-requests-one-rtx-4090/",
+        "/articles/what-does-100-concurrent-users-mean-for-an-ai-assistant/",
+        "/articles/ztai-autonomous-agents-bounded-authority/",
+        "/articles/kazan-travelogue/",
+        "/articles/ai-infrastructure-security-starts-with-kernel-and-gpu/"
+      ],
+      "robots": "noindex,follow",
+      "brokenImages": []
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1425,
+      "dir": "rtl",
+      "background": "rgb(230, 242, 239)"
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1425,
+      "dir": "rtl",
+      "background": "rgb(24, 57, 60)"
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "dir": "rtl",
+      "background": "rgb(230, 242, 239)"
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "dir": "rtl",
+      "background": "rgb(24, 57, 60)"
+    },
+    {
+      "browserExceptions": 0
+    }
+  ]
+}

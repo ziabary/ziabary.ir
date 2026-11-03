@@ -39,7 +39,7 @@ try{
  await E("document.querySelector('.benchmark-section .copy-selection').click()");await pause(250);assert.equal(await E('navigator.clipboard.readText()'),await E('location.href'));
  report.checks.push('Task shortlist survives reload; copy-selection button writes the actual reconstructible URL to the clipboard.');
  // All international articles are actual static routes with full local preview bodies.
- const groups=JSON.parse(await fs.readFile('src/lib/translation-groups.json','utf8'));
+ const groups=JSON.parse(await fs.readFile('content/relationships/translations.json','utf8'));
  const source=await fs.readFile('src/lib/llm/edition-manifest.ts','utf8');
  const topics=[...source.matchAll(/\{ id: '([^']+)', fa: '([^']+)', en: '([^']+)', es: '([^']+)' \}/g)];
  assert.equal(topics.length,10);

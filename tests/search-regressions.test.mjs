@@ -47,7 +47,7 @@ test('spaces do not change matches or ranking, and field boundaries do not creat
   assert.deepEqual(hrefs([{ title: 'C++', href: 'cpp' }, { title: 'C#', href: 'csharp' }], 'C#'), ['csharp']);
 });
 test('real governance articles match through their full text and category/topic index', () => {
-  const records = JSON.parse(readFileSync('static/search/fa.json', 'utf8')).filter(item => item.href.startsWith('/articles/'));
+  const records = JSON.parse(readFileSync('.build/public/search/fa.json', 'utf8')).filter(item => item.href.startsWith('/articles/'));
   const results = hrefs(records, 'حکمرانی');
   assert.ok(results.length > 1);
   assert.ok(records.some(item => results.includes(item.href) && !compactSearch(item.title + item.excerpt).includes('حکمرانی')), 'includes articles missed by title/summary search');

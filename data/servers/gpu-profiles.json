@@ -1,0 +1,128 @@
+[
+  {
+    "id": "h200-nvl",
+    "label": "NVIDIA H200 NVL PCIe",
+    "pcieGeneration": 5,
+    "widthSlots": 2,
+    "powerW": 600,
+    "cooling": "passive",
+    "note": "FHFL دو اسلات؛ برای ظرفیت کامل، شیار Gen5 x16 و کیت برق/خنک‌کاری تأییدشده لازم است."
+  },
+  {
+    "id": "h100-nvl",
+    "label": "NVIDIA H100 NVL PCIe",
+    "pcieGeneration": 5,
+    "widthSlots": 2,
+    "powerW": 400,
+    "cooling": "passive",
+    "note": "FHFL دو اسلات؛ پشتیبانی NVLink bridge به چیدمان و BOM سرور وابسته است."
+  },
+  {
+    "id": "h100-pcie",
+    "label": "NVIDIA H100 PCIe",
+    "pcieGeneration": 5,
+    "widthSlots": 2,
+    "powerW": 350,
+    "cooling": "passive",
+    "note": "FHFL دو اسلات و passive؛ وجود جریان هوای سروری الزامی است."
+  },
+  {
+    "id": "rtx-pro-6000-bse",
+    "label": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "pcieGeneration": 5,
+    "widthSlots": 2,
+    "powerW": 600,
+    "cooling": "passive",
+    "note": "نسخهٔ Server Edition دو اسلات است؛ با نسخه‌های Workstation و Max-Q یکی نیست."
+  },
+  {
+    "id": "rtx-pro-4500-bse",
+    "label": "NVIDIA RTX PRO 4500 Blackwell Server Edition",
+    "pcieGeneration": 5,
+    "widthSlots": 1,
+    "powerW": 165,
+    "cooling": "passive",
+    "note": "نسخهٔ Server تک‌اسلات و پسیو است؛ سقف تعداد، برق و دما به QPL سرور وابسته‌اند."
+  },
+  {
+    "id": "l40s",
+    "label": "NVIDIA L40S",
+    "pcieGeneration": 4,
+    "widthSlots": 2,
+    "powerW": 350,
+    "cooling": "passive",
+    "note": "FHFL دو اسلات و passive؛ در شیار Gen5 نیز با سرعت Gen4 کار می‌کند."
+  },
+  {
+    "id": "l4",
+    "label": "NVIDIA L4",
+    "pcieGeneration": 4,
+    "widthSlots": 1,
+    "powerW": 72,
+    "cooling": "passive",
+    "note": "تک‌اسلات و کم‌مصرف؛ تعداد قابل نصب همچنان به riser و محدودیت حرارتی وابسته است."
+  },
+  {
+    "id": "a100-pcie",
+    "label": "NVIDIA A100 PCIe",
+    "pcieGeneration": 4,
+    "widthSlots": 2,
+    "powerW": 300,
+    "cooling": "passive",
+    "note": "دو اسلات passive؛ برای سرورهای نسل PCIe 4 هنوز گزینهٔ رایج بازار دست‌دوم است."
+  },
+  {
+    "id": "a40",
+    "label": "NVIDIA A40",
+    "pcieGeneration": 4,
+    "widthSlots": 2,
+    "powerW": 300,
+    "cooling": "passive",
+    "note": "دو اسلات passive و بدون فن داخلی."
+  },
+  {
+    "id": "a10",
+    "label": "NVIDIA A10",
+    "pcieGeneration": 4,
+    "widthSlots": 1,
+    "powerW": 150,
+    "cooling": "passive",
+    "note": "تک‌اسلات passive؛ کابل برق و محدودیت تعداد باید در configurator سازنده بررسی شود."
+  },
+  {
+    "id": "rtx-6000-ada",
+    "label": "NVIDIA RTX 6000 Ada",
+    "pcieGeneration": 4,
+    "widthSlots": 2,
+    "powerW": 300,
+    "cooling": "active",
+    "note": "دو اسلات active؛ هر شاسی passive لزوماً خروجی تصویر و مسیر هوای مناسب آن را ندارد."
+  },
+  {
+    "id": "rtx-a6000",
+    "label": "NVIDIA RTX A6000",
+    "pcieGeneration": 4,
+    "widthSlots": 2,
+    "powerW": 300,
+    "cooling": "active",
+    "note": "دو اسلات active؛ پشتیبانی رسمی OEM را با part number همان سازنده کنترل کنید."
+  },
+  {
+    "id": "rtx-5090",
+    "label": "GeForce RTX 5090",
+    "pcieGeneration": 5,
+    "widthSlots": 3,
+    "powerW": 575,
+    "cooling": "active",
+    "note": "این پروفایل گونهٔ سه‌اسلاتی QPL است؛ Founders Edition دو اسلات است. ابعاد و کابل مدل دقیق را بررسی کنید."
+  },
+  {
+    "id": "rtx-4090",
+    "label": "GeForce RTX 4090",
+    "pcieGeneration": 4,
+    "widthSlots": 4,
+    "powerW": 450,
+    "cooling": "active",
+    "note": "بسته به سازنده ۳ تا ۴ اسلات؛ وجود شیار به معنی تأیید برق، ابعاد یا firmware نیست."
+  }
+]

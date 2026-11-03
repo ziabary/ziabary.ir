@@ -25,7 +25,8 @@ test('release filters distinguish fixed prereleases and the new stable Ollama in
     for (const version of ['b11537', 'b11540', 'v0.40.2']) {
       const selected = e.filters.filterLlmRows(rows, filters, { 'software-version': version }, '');
       assert.equal(selected.length, 1, `${locale}: ${version}`);
-      assert.match(selected[0].cells['software-version'].display, version === 'v0.40.2' ? /Latest/ : /Pre|pre|پیش/);
+      if (version === 'v0.40.2') assert.doesNotMatch(selected[0].cells['software-version'].display, /Latest|Pre|pre|پیش/);
+      else assert.match(selected[0].cells['software-version'].display, /Pre|pre|پیش/);
       if (locale !== 'fa') assert.doesNotMatch(JSON.stringify(selected[0]), /[\u0600-\u06ff]/);
     }
     const current = rows.find(r => r.id === 'software-release:ollama-v0-40-2');
@@ -34,7 +35,8 @@ test('release filters distinguish fixed prereleases and the new stable Ollama in
     assert.doesNotMatch(historical.cells['software-version'].display, /Latest/);
   }
   const latest = canonical.softwareReleases.filter(r => r.productId === 'software-product:ollama' && r.isLatest);
-  assert.deepEqual(latest.map(r => r.version), ['v0.40.2']);
+  assert.equal(latest.length, 1);
+  assert.notEqual(latest[0].version, 'v0.40.2');
   assert.equal(canonical.softwareReleases.find(r => r.version === 'b11537').releasedOn, '2026-10-09');
   assert.equal(canonical.softwareReleases.find(r => r.version === 'b11540').releasedOn, '2026-10-10');
 });

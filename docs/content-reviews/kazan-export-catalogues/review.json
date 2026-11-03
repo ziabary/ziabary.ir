@@ -1,0 +1,351 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "text": "\tصنعت، معدن و رباتیک\t۶۳",
+      "images": 1,
+      "alt": "جلد کاتالوگ صنعت، معدن و رباتیک؛ ۶۳ پروفایل محصول و راهکار",
+      "src": "/images/articles/kazan-iran-technology-export/catalogue-industrial-ai-mining-robotics.jpg"
+    },
+    {
+      "text": "\tانرژی، زیرساخت، شهر و حمل‌ونقل هوشمند\t۲۶",
+      "images": 1,
+      "alt": "جلد کاتالوگ انرژی، زیرساخت، شهر و حمل‌ونقل؛ ۲۶ پروفایل",
+      "src": "/images/articles/kazan-iran-technology-export/catalogue-energy-infrastructure-cities-mobility.jpg"
+    },
+    {
+      "text": "\tهوش سازمانی و نرم‌افزارهای کسب‌وکار\t۳۴",
+      "images": 1,
+      "alt": "جلد کاتالوگ هوش سازمانی و نرم‌افزارهای کسب‌وکار؛ ۳۴ پروفایل",
+      "src": "/images/articles/kazan-iran-technology-export/catalogue-enterprise-ai-business-software.jpg"
+    },
+    {
+      "text": "\tداده، زیرساخت ابری و سکوهای هوش مصنوعی\t۱۷",
+      "images": 1,
+      "alt": "جلد کاتالوگ داده، زیرساخت ابری و سکوهای هوش مصنوعی؛ ۱۷ پروفایل",
+      "src": "/images/articles/kazan-iran-technology-export/catalogue-data-cloud-ai-platforms.jpg"
+    },
+    {
+      "text": "\tکشاورزی، سلامت و آموزش\t۱۱",
+      "images": 1,
+      "alt": "جلد کاتالوگ کشاورزی، سلامت و آموزش؛ ۱۱ پروفایل",
+      "src": "/images/articles/kazan-iran-technology-export/catalogue-agriculture-health-learning.jpg"
+    },
+    {
+      "text": "\tمجموع\t۱۵۱",
+      "images": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "table-1440-light.png",
+      "smallImages": [
+        {
+          "src": "/images/articles/kazan-iran-technology-export/hoomas.jpg",
+          "width": 320,
+          "height": 400
+        },
+        {
+          "src": "/images/articles/kazan-iran-technology-export/inf.jpg",
+          "width": 320,
+          "height": 400
+        }
+      ],
+      "pageWidth": 1425,
+      "viewport": 1440,
+      "table": 738,
+      "container": 740,
+      "images": [
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        }
+      ]
+    },
+    {
+      "name": "table-1440-dark.png",
+      "smallImages": [
+        {
+          "src": "/images/articles/kazan-iran-technology-export/hoomas.jpg",
+          "width": 320,
+          "height": 400
+        },
+        {
+          "src": "/images/articles/kazan-iran-technology-export/inf.jpg",
+          "width": 320,
+          "height": 400
+        }
+      ],
+      "pageWidth": 1425,
+      "viewport": 1440,
+      "table": 738,
+      "container": 740,
+      "images": [
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        },
+        {
+          "width": 87,
+          "height": 123.0625,
+          "role": "button"
+        }
+      ]
+    },
+    {
+      "name": "table-390-light.png",
+      "smallImages": [
+        {
+          "src": "/images/articles/kazan-iran-technology-export/hoomas.jpg",
+          "width": 320,
+          "height": 400
+        },
+        {
+          "src": "/images/articles/kazan-iran-technology-export/inf.jpg",
+          "width": 320,
+          "height": 400
+        }
+      ],
+      "pageWidth": 390,
+      "viewport": 390,
+      "table": 356,
+      "container": 358,
+      "images": [
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        }
+      ]
+    },
+    {
+      "name": "table-390-dark.png",
+      "smallImages": [
+        {
+          "src": "/images/articles/kazan-iran-technology-export/hoomas.jpg",
+          "width": 320,
+          "height": 400
+        },
+        {
+          "src": "/images/articles/kazan-iran-technology-export/inf.jpg",
+          "width": 320,
+          "height": 400
+        }
+      ],
+      "pageWidth": 390,
+      "viewport": 390,
+      "table": 356,
+      "container": 358,
+      "images": [
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        }
+      ]
+    },
+    {
+      "name": "table-320-light.png",
+      "smallImages": [
+        {
+          "src": "/images/articles/kazan-iran-technology-export/hoomas.jpg",
+          "width": 288,
+          "height": 360
+        },
+        {
+          "src": "/images/articles/kazan-iran-technology-export/inf.jpg",
+          "width": 288,
+          "height": 360
+        }
+      ],
+      "pageWidth": 320,
+      "viewport": 320,
+      "table": 286,
+      "container": 288,
+      "images": [
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        }
+      ]
+    },
+    {
+      "name": "table-320-dark.png",
+      "smallImages": [
+        {
+          "src": "/images/articles/kazan-iran-technology-export/hoomas.jpg",
+          "width": 288,
+          "height": 360
+        },
+        {
+          "src": "/images/articles/kazan-iran-technology-export/inf.jpg",
+          "width": 288,
+          "height": 360
+        }
+      ],
+      "pageWidth": 320,
+      "viewport": 320,
+      "table": 286,
+      "container": 288,
+      "images": [
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        },
+        {
+          "width": 64,
+          "height": 90.53125,
+          "role": "button"
+        }
+      ]
+    }
+  ],
+  "zoomed": [
+    {
+      "src": "http://127.0.0.1:5195/images/articles/kazan-iran-technology-export/catalogue-industrial-ai-mining-robotics.jpg",
+      "alt": "جلد کاتالوگ صنعت، معدن و رباتیک؛ ۶۳ پروفایل محصول و راهکار",
+      "width": 1653
+    },
+    {
+      "src": "http://127.0.0.1:5195/images/articles/kazan-iran-technology-export/catalogue-energy-infrastructure-cities-mobility.jpg",
+      "alt": "جلد کاتالوگ انرژی، زیرساخت، شهر و حمل‌ونقل؛ ۲۶ پروفایل",
+      "width": 1653
+    },
+    {
+      "src": "http://127.0.0.1:5195/images/articles/kazan-iran-technology-export/catalogue-enterprise-ai-business-software.jpg",
+      "alt": "جلد کاتالوگ هوش سازمانی و نرم‌افزارهای کسب‌وکار؛ ۳۴ پروفایل",
+      "width": 1653
+    },
+    {
+      "src": "http://127.0.0.1:5195/images/articles/kazan-iran-technology-export/catalogue-data-cloud-ai-platforms.jpg",
+      "alt": "جلد کاتالوگ داده، زیرساخت ابری و سکوهای هوش مصنوعی؛ ۱۷ پروفایل",
+      "width": 1653
+    },
+    {
+      "src": "http://127.0.0.1:5195/images/articles/kazan-iran-technology-export/catalogue-agriculture-health-learning.jpg",
+      "alt": "جلد کاتالوگ کشاورزی، سلامت و آموزش؛ ۱۱ پروفایل",
+      "width": 1653
+    }
+  ],
+  "overviewViewer": true,
+  "robots": "noindex,follow",
+  "runtimeErrors": 0,
+  "failedLocalResponses": 0,
+  "check": "0 errors and 0 warnings",
+  "build": "passed, sitemap and short links validated",
+  "markdownTableTest": "passed"
+}

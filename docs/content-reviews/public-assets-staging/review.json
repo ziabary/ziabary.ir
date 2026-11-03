@@ -1,0 +1,47 @@
+{
+  "branch": "refactor/content-layout",
+  "layout": {
+    "declaredPublicSources": "static/",
+    "preparedPublicAssets": ".build/public/",
+    "generatedViewMetadata": ".build/generated/",
+    "deployableSite": "build/"
+  },
+  "generatedLegacyDirectoriesAbsent": [
+    "static/images/articles",
+    "static/images/responsive",
+    "static/slides",
+    "static/search",
+    "src/lib/generated"
+  ],
+  "validation": {
+    "check": "0 errors, 0 warnings",
+    "unitTests": 383,
+    "unitFailures": 0,
+    "productionBuild": "passed",
+    "identicalRepeatedBuilds": true,
+    "staticBuildGuard": "passed; also rejects an unexpected generated file in an isolated fixture",
+    "cleanMetadataPreparation": "passed with generated metadata removed before dev startup",
+    "productionBrowserCases": 22,
+    "articleViewportCases": 12,
+    "browserExceptions": 0,
+    "devBrowser": "hydration, search, image loading and lazy noindex draft preview passed",
+    "devPublicAssetPaths": 8
+  },
+  "compatibility": {
+    "preservedPublicAssets": 2974,
+    "comparedAgainst": [
+      ".build/public",
+      "build"
+    ],
+    "staticSourceEntries": 149,
+    "staticSourceUnchanged": true
+  },
+  "pageCompatibility": {
+    "publicPages": 273,
+    "linkOccurrences": 21653,
+    "headingAnchors": 1924,
+    "sitemap": "byte-identical"
+  },
+  "shortLinkDestinations": 330,
+  "productionDeployment": false
+}

@@ -1,6 +1,6 @@
 import { llmTopics } from './llm/edition-manifest';
-import { allArticleMetadata } from './content';
-import groups from './translation-groups.json';
+import { allArticleMetadata } from '$lib/content';
+import groups from '../../content/relationships/translations.json';
 import { translationIndex, articlePath } from './translations.mjs';
 import { guideCollections } from './guides';
 import { getLocalizedGuideCollections } from './localized-guide-collections';

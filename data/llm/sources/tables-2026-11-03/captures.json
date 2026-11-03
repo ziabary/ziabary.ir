@@ -1,0 +1,85 @@
+{
+  "capturedOn": "2026-11-03",
+  "files": {
+    "hgx-specifications.txt": {
+      "sha256": "fc0d6edbdb968b3f512b20f69ccfbc37721513d6298705981ffb8be38ee37a83",
+      "bytes": 3499
+    },
+    "llama-releases.json": {
+      "sha256": "180fa95debc13af1771e7a712cba5ede3be7a2829fff497c75d93cc41770027e",
+      "bytes": 21908
+    },
+    "mage-LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "mage-README.md": {
+      "sha256": "40ba50f7cdea886de5f5bddd0de2aae25d9fa2dff7a5e930f8ea49518968851e",
+      "bytes": 36975
+    },
+    "mage-api.json": {
+      "sha256": "a3e7623bb62dc84f896adbc91cf848451f758ce1b43bc8bb77aa6a28aeea0cde",
+      "bytes": 16570
+    },
+    "mage-config.json": {
+      "sha256": "b1af304453ea5af1a296aa012ab85402e2e811b693aebfb6a2bbaa8bdd908ee5",
+      "bytes": 2730
+    },
+    "mistral-LICENSE": {
+      "sha256": "d242ebedb53ffd7e26c220e3305665ca47e4e5267fa62ff4cdeb3953b8353c78",
+      "bytes": 2632
+    },
+    "mistral-README.md": {
+      "sha256": "498bf4121e75f5582ee276f8ad6c6d96eea78885c878819dd1551c2dd84dc92c",
+      "bytes": 19174
+    },
+    "mistral-api.json": {
+      "sha256": "93df0c63f35fb029957e0fafb388a057819db0e269dded79d44fb90a97c8981a",
+      "bytes": 31942
+    },
+    "mistral-config.json": {
+      "sha256": "3081fb94f5001f34a21e08437df710bb0b6423beada9184b566a8f5b1ee46277",
+      "bytes": 8220
+    },
+    "mistral-gguf-README.md": {
+      "sha256": "d23b486e6e19e423243ad615b92174ade1434ef9a2a12d5c8432f0cb1e039ca1",
+      "bytes": 2237
+    },
+    "mistral-gguf-api.json": {
+      "sha256": "d79c97a6860721bc4c27a981b0eb1fe6cabbc8ed95a8ccdae546ab5e0064a9b0",
+      "bytes": 41723
+    },
+    "mistral-nvfp4-LICENSE": {
+      "sha256": "d242ebedb53ffd7e26c220e3305665ca47e4e5267fa62ff4cdeb3953b8353c78",
+      "bytes": 2632
+    },
+    "mistral-nvfp4-README.md": {
+      "sha256": "25f7c255ebe5f63931061886bdce29d524e0ab505ac13500fd01e2e644c615d8",
+      "bytes": 7791
+    },
+    "mistral-nvfp4-api.json": {
+      "sha256": "a5fdf173c0fb138964213d96c946d079024a4ae5ccd71565bbbf41ce95ca77c9",
+      "bytes": 25331
+    },
+    "oci-announcement-facts.json": {
+      "sha256": "3066b3f04716fd5d2c1bd73e5d8366b0faa1e436277afdfb634610479390a28d",
+      "bytes": 663
+    },
+    "ollama-releases.json": {
+      "sha256": "ef1dce837c0e254e1630212dd8f9e044ecce026ecfad2cf36ee46edcb761fa3a",
+      "bytes": 3921
+    },
+    "rtx-spark-specifications.txt": {
+      "sha256": "514e2c95c6d06a562fb1adff4c4025687b26b56dcaff2a37dc08aaa34140c32a",
+      "bytes": 2642
+    },
+    "sglang-releases.json": {
+      "sha256": "b92588b388d3f1fad5c84b1c42b95fdc1fe61ad00a987b53a4b408deb8f7cea8",
+      "bytes": 302183
+    },
+    "vllm-releases.json": {
+      "sha256": "ddfea7aff4990e67c882ee3931454e8bab4196a6b57d66c12f6e5eb890939752",
+      "bytes": 124597
+    }
+  }
+}

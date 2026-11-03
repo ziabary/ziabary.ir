@@ -1,0 +1,39 @@
+{
+  "article": "kazan-iran-technology-export",
+  "status": "awaiting-body-photos",
+  "cover": "./images/cover.png",
+  "photos": [
+    {
+      "slot": "01-mission",
+      "path": "./images/01-mission.webp",
+      "caption": "معرفی سبد محصولات شرکت‌های ایرانی در مأموریت کازان"
+    },
+    {
+      "slot": "03-ivf-meeting",
+      "path": "./images/03-ivf-meeting.webp",
+      "caption": "جلسه با صندوق سرمایه‌گذاری و خطرپذیر تاتارستان و معرفی ظرفیت شرکت‌های ایرانی"
+    },
+    {
+      "slot": "04-technology-visits",
+      "path": "./images/04-technology-visits.webp",
+      "caption": "بازدید از مراکز فناوری و گفت‌وگو با شرکت‌های مستقر در IT Park کازان"
+    },
+    {
+      "slot": "05-geopager",
+      "path": "./images/05-geopager.webp",
+      "caption": "همکاری هومص و GEOPAGER برای پیگیری توسعه بازار و پروژه‌های مشترک"
+    }
+  ],
+  "catalogues": {
+    "layout": "five original covers in the corresponding table rows",
+    "originalCoversUnchanged": true,
+    "hashes": {
+      "industrial-ai-mining-robotics": "85b63f8b79025295117d8a4eba1c163f3b07a1e3adea4d536c55783bfbc4fe24",
+      "energy-infrastructure-cities-mobility": "4bc46b8ab5511786d5abc00ecc25a01aeae271e84dc514021c23c71298f75272",
+      "enterprise-ai-business-software": "0b8efdfc6f5ee34ea958fcdb7873a650e8721d7a90deaeffa552e64cbf0fd8ea",
+      "data-cloud-ai-platforms": "4ac08043ef4adf4a763adebf65001379b50033f2d89909096bc316dbd0ad9cf5",
+      "agriculture-health-learning": "b8375d3d3c2f8eef465c36447c6e068abd0c2f686888b9036c61490d5d320258"
+    },
+    "overview": "./images/co-investment-overviews.png"
+  }
+}

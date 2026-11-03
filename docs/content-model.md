@@ -31,10 +31,13 @@ local repository. It does not commit or push and it does not contain secrets.
 
 ## Courses and slide decks
 
-The current prototype stores course metadata in src/lib/data.ts. When real
+The current prototype stores course metadata in content/presentations/courses/index.json. When real
 files are added, use:
 
-    static/slides/<course-slug>/<version>.pdf
+    content/presentations/decks/files/<course-slug>/<version>.pdf
 
 Each delivery keeps its own date, venue, audience and notes while pointing to a
 versioned deck.
+
+Source content lives in `content/`; see `content/README.md`. Public URLs remain
+independent of source locations. Decks are still served from `/slides/`.

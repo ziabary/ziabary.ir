@@ -14,6 +14,7 @@
   export let articleSection: string | undefined = undefined;
   export let mainEntity: Record<string, unknown> | undefined = undefined;
   export let noindex = false;
+  export let author: { name: string; url?: string } | undefined = undefined;
 
   const siteUrl = 'https://ziabary.ir';
   $: canonicalUrl = new URL(path, siteUrl).href;
@@ -33,7 +34,7 @@
           url: canonicalUrl,
           mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
           image: [imageUrl],
-          author: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl },
+          author: { '@type': 'Person', ...(author ?? { name: 'Mehran Ziabary', url: siteUrl }) },
           publisher: { '@type': 'Person', name: 'Mehran Ziabary', url: siteUrl },
           ...(publishedDate ? { datePublished: publishedDate } : {}),
           ...(updatedDate ? { dateModified: updatedDate } : {}),

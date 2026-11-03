@@ -1,0 +1,14 @@
+{
+  "origin": "http://127.0.0.1:5196",
+  "paths": [
+    "/favicon.ico",
+    "/robots.txt",
+    "/images/articles/choosing-gpu-for-ai/cover.png",
+    "/images/responsive/fd4f553c37b90c7e-320.webp",
+    "/search/fa.json",
+    "/short-links.json",
+    "/short-link-core.js",
+    "/slides/ai-4-managers/AI4Managers-P1-P2.pdf"
+  ],
+  "contentMatchesPreparedAssets": true
+}

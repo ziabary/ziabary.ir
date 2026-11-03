@@ -1,0 +1,181 @@
+Source: https://www.nvidia.com/en-us/products/rtx-spark/
+Accessed: 2026-11-03
+Original HTML SHA-256: b1ee8b9d48b6a64fcf89bf0798ecbe642258212f5654c690bbf711ef4d3dcfca
+
+Specs
+Laptops
+Desktops
+RTX Spark N1X
+RTX Spark N1X
+GPU
+6144-core
+NVIDIA Blackwell RTX GPU
+5120-core
+NVIDIA Blackwell RTX GPU
+CPU
+20-core
+NVIDIA Grace CPU
+18-core
+NVIDIA Grace CPU
+Memory Type
+Unified
+Unified
+OS Support
+Windows 11
+Windows 11
+Superchip Specs:
+GPU
+6144-core
+NVIDIA Blackwell RTX GPU
+5120-core
+NVIDIA Blackwell RTX GPU
+CPU
+20-core NVIDIA Grace CPU
+18-core NVIDIA Grace CPU
+Power (TDP)
+45 - 80 W
+45 - 80 W
+Memory Specs:
+Memory Configuration
+Up to 128 GB LPDDR5X
+Up to 64 GB LPDDR5X
+Technology Support:
+Ray Tracing Cores
+Fourth Generation
+Fourth Generation
+Tensor Cores (AI)
+Fifth Generation
+Fifth Generation
+NVIDIA DLSS
+DLSS 5
+DLSS 5
+NVIDIA Reflex
+Reflex 2
+Low Latency Mode
+Frame Warp
+Reflex 2
+Low Latency Mode
+Frame Warp
+NVIDIA Broadcast
+✓
+✓
+RTX Remix
+✓
+✓
+NVIDIA App
+✓
+✓
+NVIDIA Studio Drivers
+✓
+✓
+Game Ready Drivers
+✓
+✓
+NVIDIA G-SYNC
+✓
+✓
+Microsoft DirectX 12 Ultimate
+✓
+✓
+NVIDIA GPU Boost
+✓
+✓
+PCI Express Gen 5
+(1)
+✓
+✓
+Vulkan RT API, OpenGL 4.6
+✓
+✓
+HDMI
+(2)
+✓
+✓
+DisplayPort
+(3)
+✓
+✓
+NVIDIA Encoder
+1x Ninth Generation
+1x Ninth Generation
+NVIDIA Decoder
+1x Sixth Generation
+1x Sixth Generation
+CUDA Capability
+✓
+✓
+View Full Specs
+View Fewer Specs
+RTX Spark N1X
+GPU
+6144-core
+NVIDIA Blackwell RTX GPU
+CPU
+20-core
+NVIDIA Grace CPU
+Memory Type
+Unified
+OS Support
+Windows 11
+Superchip Specs:
+GPU
+6144-core
+NVIDIA Blackwell RTX GPU
+CPU
+20-core NVIDIA Grace CPU
+Power (TDP)
+140 W
+Memory Specs:
+Memory Configuration
+Up to 128 GB LPDDR5X
+Technology Support:
+Ray Tracing Cores
+Fourth Generation
+Tensor Cores (AI)
+Fifth Generation
+NVIDIA DLSS
+DLSS 5
+NVIDIA Reflex
+Reflex 2
+Low Latency Mode
+Frame Warp
+NVIDIA Broadcast
+✓
+RTX Remix
+✓
+NVIDIA App
+✓
+NVIDIA Studio Drivers
+✓
+Game Ready Drivers
+✓
+NVIDIA G-SYNC
+✓
+Microsoft DirectX 12 Ultimate
+✓
+NVIDIA GPU Boost
+✓
+PCI Express Gen 5
+(1)
+✓
+Vulkan RT API, OpenGL 4.6
+✓
+HDMI
+(2)
+✓
+DisplayPort
+(3)
+✓
+NVIDIA Encoder
+1x Ninth Generation
+NVIDIA Decoder
+1x Sixth Generation
+CUDA Capability
+✓
+View Full Specs
+View Fewer Specs
+View Full Specs
+1 - Supports PCI Express Gen 5. Check with the laptop manufacturer about PCI Express configurations on specific laptop models.
+2 - Supports up to 4K 480Hz or 8K 120Hz with DSC, Gaming VRR, HDR as specified in HDMI 2.1b. Check with the laptop manufacturer about HDMI capabilities on specific laptop models.
+3 - DisplayPort 2.1b. Check with the laptop manufacturer about DisplayPort capabilities on specific laptop models.
+

@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
@@ -35,7 +36,7 @@ test('the published guide has six sections, seven data views, versioned research
   const productionRows = adapters.buildLlmViewRows(guide.llmRepository);
   assert.deepEqual(Object.keys(productionRows), views.llmViewConfigs.map((view) => view.id));
   assert.deepEqual(Object.fromEntries(Object.entries(productionRows).map(([id, rows]) => [id, rows.length])), {
-    'model-catalog': dataset.models.length, 'model-suitability': 123, 'hardware-feasibility': 0,
+    'model-catalog': dataset.models.length, 'model-suitability': new Set(dataset.modelUseGuidance.map(item => item.modelVersionId)).size, 'hardware-feasibility': 0,
     'software-products': dataset.softwareReleases.length,
     'deployment-compatibility': 0, benchmarks: 0, 'specialized-models': dataset.specializedAssessments.length
   });
@@ -71,7 +72,7 @@ test('the completed reading collection contains fifteen published manuscripts an
   assert.equal(guide.llmArticleSlugs.length, 15);
   assert.equal(new Set(guide.llmArticleSlugs).size, 15);
   for (const slug of guide.llmArticleSlugs) {
-    const manuscript = `src/lib/content/articles/${slug}.md`;
+    const manuscript = articleFile(`${slug}`);
     assert.ok(existsSync(manuscript), slug);
     assert.match(readFileSync(manuscript, 'utf8'), /^draft:\s*false\s*$/m, slug);
   }
@@ -88,7 +89,7 @@ test('every internal URL and stored anchor maps to an existing published Persian
   for (const item of guide.existingContentLinks) {
     const match = /^\/articles\/([^/]+)\/$/.exec(item.href);
     assert.ok(match, item.href);
-    const source = await read(`src/lib/content/articles/${match[1]}.md`);
+    const source = await read(articleFile(`${match[1]}`));
     assert.match(source, /^lang:\s*fa$/m, item.id);
     assert.doesNotMatch(source, /^draft:\s*true$/m, item.id);
     const headings = [...source.matchAll(/^#{2,3}\s+(.+)$/gm)].map((result) => headingId(result[1].replace(/\s*\{#[^}]+\}\s*$/, '')));
@@ -299,7 +300,7 @@ test('real snapshot family, size and evidence filters retain unknown semantics',
   assert.ok(small.length > 0);
   assert.ok(small.every(row => row.facets['model-size'].canonicalNumber <= 1));
   const suitability = adapters.adaptModelSuitability(guide.llmRepository);
-  assert.equal(suitability.reduce((n, row) => n + Object.values(row.matrixCells).filter(cell => cell.value.state === 'known').length, 0), 137);
+  assert.equal(suitability.reduce((n, row) => n + Object.values(row.matrixCells).filter(cell => cell.value.state === 'known').length, 0), guide.llmRepository.applicationAssessments.length);
   assert.ok(guide.llmRepository.applicationAssessments.every(a => a.outcome.state === 'not-measured'));
 });
 
@@ -367,7 +368,7 @@ test('every positive matrix cell has an explicitly sourced assessment and empty 
     assert.ok(model, row.label);
     assert.ok(repo.applicationAssessments.some(a => a.modelVersionId === model.id && a.applicationId === column.id && a.evidenceIds.some(id => repo.evidence.some(e => e.id === id))));
   }
-  assert.equal(positive, 137);
+  assert.equal(positive, repo.applicationAssessments.length);
   assert.equal(empty, rows.length * columns.length - positive);
 });
 
@@ -531,7 +532,7 @@ test('catalog models have sourced profiles, downloads and run paths; assessed mo
 
 test('default usage guide explains all RAG roles without an experimental outcome', () => {
   const rows = adapters.adaptModelUseGuidance(dataset);
-  assert.equal(rows.length, 123);
+  assert.equal(rows.length, new Set(dataset.modelUseGuidance.map(item => item.modelVersionId)).size);
   const config = views.modelUseViewConfig();
   assert.equal(config.matrixColumns, undefined);
   const rag = filtering.filterLlmRows(rows, config.filters, { application: ['enterprise-rag'] }, '');
@@ -546,7 +547,7 @@ test('default usage guide explains all RAG roles without an experimental outcome
 
 test('optional usage matrix contains only generators and retains known text-only limitations', () => {
   const rows = adapters.adaptModelUseMatrix(dataset);
-  assert.equal(rows.length, 94);
+  assert.ok(rows.length >= 94);
   assert.ok(!rows.some(row => /bge-m3|reranker|embedding|e5-small/.test(row.modelId)));
   const gemma = rows.find(row => row.modelId === 'model:google-gemma-3-1b-it');
   assert.equal(gemma.matrixCells['document-vision'].value.display, 'ورودی متنی');

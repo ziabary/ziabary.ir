@@ -1,9 +1,9 @@
 <script lang="ts">
   import { imageAttributes } from '$lib/images';
-  import resume from '$lib/resumes/fa.json';
+  import resume from '../../content/resumes/fa.json';
   const roles = ['commission', 'targoman', 'hoomas'].map(id => resume.currentRoles.find(role => role.id === id)!);
   import ArticleCard from '$lib/components/ArticleCard.svelte';
-  import { articles } from '$lib/content';
+  import { articles } from '../lib/content/index';
   import HomeTopics from '$lib/components/HomeTopics.svelte';
   import HomePresentation from '$lib/components/HomePresentation.svelte';
   import '$lib/components/home-previews.css';

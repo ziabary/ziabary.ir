@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -75,7 +76,7 @@ test('RAM substitution recalculates ownership examples while preserving historic
  assert.equal((gpu/sum*100).toFixed(2),'47.40');assert.equal((235000000/sum*100).toFixed(2),'21.06');
  for(const p of d.parts)assert.equal(p.sourcePriceDate,p.component==='ram'?'2026-09-19':'2026-09-16');
  assert.deepEqual(d.rentComparisons.map(r=>(r.monthlyToman??r.monthlyEquivalentToman)*24-sum),[1067900000,849500000,254204000]);
- const article=fs.readFileSync('src/lib/content/articles/true-llm-cost-buy-rent-or-api.md','utf8');assert.match(article,/۱٬۱۱۶٬۱۰۰٬۰۰۰/);assert.match(article,/V-Color/);assert.doesNotMatch(article,/۱٬۲۸۱٬۱۰۰٬۰۰۰/);
+ const article=fs.readFileSync(articleFile('true-llm-cost-buy-rent-or-api'),'utf8');assert.match(article,/۱٬۱۱۶٬۱۰۰٬۰۰۰/);assert.match(article,/V-Color/);assert.doesNotMatch(article,/۱٬۲۸۱٬۱۰۰٬۰۰۰/);
 });
 
 test('numeric wizard answers enforce physical limits, whole counts and localized digits',()=>{

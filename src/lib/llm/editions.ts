@@ -1,12 +1,10 @@
+import editorialContent from '../../../content/guides/llm-editions.json';
 import { resolveRecordTranslations } from './i18n/runtime';
 import type { LlmLocale } from './i18n/runtime';
 import { llmGuideCollection } from './collection';
 export * from './edition-manifest';
 import { llmEditionSlugs } from './edition-manifest';
-const editorial = {
-  en: { title: 'Choosing a language model: large or small?', subtitle: 'Compare models, inference software and memory requirements for your workload, with published results and practical guides.', eyebrow: 'Models and inference', imageAlt: 'Language models of different sizes connected to chat, coding and document applications', intro: 'A guide based on primary documentation, published results and explicit memory calculations.' },
-  es: { title: 'Cómo elegir un modelo de lenguaje grande o pequeño', subtitle: 'Compara modelos, software de inferencia y requisitos de memoria según tu tarea, con resultados publicados y guías prácticas.', eyebrow: 'Modelos e inferencia', imageAlt: 'Modelos de lenguaje de distintos tamaños conectados a aplicaciones de conversación, programación y documentos', intro: 'Una guía basada en documentación primaria, resultados publicados y cálculos explícitos de memoria.' }
-};
+const editorial = editorialContent;
 export function llmCollection(locale: LlmLocale) {
   return { ...llmGuideCollection, ...(locale === 'fa' ? {} : editorial[locale]), articleCount: llmEditionSlugs(locale).length };
 }

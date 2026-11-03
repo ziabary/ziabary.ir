@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import test, { after } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
@@ -10,7 +11,7 @@ const { capacityGpus } = await server.ssrLoadModule('/src/lib/llm/serving-capaci
 const { hardwareText } = await server.ssrLoadModule('/src/lib/i18n/gpu.ts');
 const { llmEditionSlugs, llmTopicSlug } = await server.ssrLoadModule('/src/lib/llm/edition-manifest.ts');
 const stem = 'what-does-100-concurrent-users-mean-for-an-ai-assistant';
-const fm = async slug => (await compile(await fs.readFile(`src/lib/content/articles/${slug}.md`, 'utf8'))).data.fm;
+const fm = async slug => (await compile(await fs.readFile(articleFile(`${slug}`), 'utf8'))).data.fm;
 
 test('each calculator edition has complete UI/status copy and translated hardware, without Persian fallback', () => {
   for (const locale of ['fa', 'en', 'es']) {
@@ -49,7 +50,7 @@ test('the guide’s manual reading manifest includes the active article in each 
 
 test('translated articles preserve reference calculations and route links to existing published editions', async () => {
   for (const locale of ['en', 'es']) {
-    const source = await fs.readFile(`src/lib/content/articles/${stem}-${locale}.md`, 'utf8');
+    const source = await fs.readFile(articleFile(`${stem}-${locale}`), 'utf8');
     assert.match(source, new RegExp(`locale="${locale}"`));
     for (const formula of ['\\boxed{\\bar I=4300}', '\\boxed{\\bar O=330}', 'm_{\\text{KV/token}}=131072', '\\lambda_{\\text{LLM}}=4']) {
       assert.ok(source.includes(formula), `${locale}: ${formula}`);

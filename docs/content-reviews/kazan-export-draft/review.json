@@ -1,0 +1,59 @@
+{
+  "article": "src/lib/content/articles/kazan-iran-technology-export.md",
+  "sourceAttachmentSha256": "ee2f893729a4de379774879917730e496a6e8acb8b5972e1215056a791976e99",
+  "articleSha256": "667b55ced262e40cb8c6b1100092984d856814bfda2e0d093d2c4ab22b5ad4ef",
+  "reviewedOn": "2026-11-03",
+  "status": "draft",
+  "originalProsePreserved": true,
+  "numberedSections": 10,
+  "photoSlots": 5,
+  "coverReserved": true,
+  "productProfiles": {
+    "counts": [
+      63,
+      26,
+      34,
+      17,
+      11
+    ],
+    "total": 151
+  },
+  "linksAdded": [
+    "[«سفرنامه کازان؛ صد رحمت به چین!»](/articles/kazan-travelogue/)",
+    "[از منظر فنی](/articles/russian-ai-kazan-digital-week-2026/) به آنچه",
+    "[صندوق سرمایه‌گذاری و خطرپذیر جمهوری تاتارستان (IVF RT)](https://ivfrt.ru/)",
+    "در [Russian Venture Forum 2027](https://russianventureforum.ru/) بود",
+    "[معاون رئیس آژانس توسعه سرمایه‌گذاری تاتارستان](https://tida.tatarstan.ru/eng/struktura.htm?department_id=54301)",
+    "شرکت روسی [GEOPAGER](/articles/russian-ai-kazan-digital-week-2026/)",
+    "[آشنایی با زبان، محیط تجاری و شبکه شرکت‌های محلی](/articles/kazan-travelogue/)",
+    "[عملکرد اندازه‌گیری‌شده](/articles/what-does-95-percent-accuracy-mean-for-a-factory/)، محدودیت‌های محصول و وضعیت پشتیبانی",
+    "[شاخص‌های عملکرد و مستندات قابل ارائه برای ارزیابی](/articles/ai-contract-deliverables/)"
+  ],
+  "sources": {
+    "rvf": "Official site confirms April 8–9, 2027.",
+    "ivf": "Official site and the fund’s partner-card PDF support the institution and director identity.",
+    "tida": "Official department search result supports the deputy role; full page timed out."
+  },
+  "publication": {
+    "status": "deployed-as-draft",
+    "url": "https://ziabary.ir/articles/kazan-iran-technology-export/?show-drafts=true",
+    "uploadedFiles": 1764,
+    "unchangedFiles": 4296,
+    "deletedFiles": 0
+  },
+  "verification": {
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "draftGate": true,
+    "noindex": true,
+    "sitemapExcluded": true,
+    "bootstrapVersionsMatch": true,
+    "browserReport": "browser.json",
+    "photoPlan": "photos.json",
+    "liveReport": "live.json",
+    "browser": "Live site: 12 sections, 5 photo slots, 6 internal links, table values 63/26/34/17/11 with total 151, working links to the prior draft, 4 viewport/theme combinations, zero broken images and browser exceptions."
+  }
+}

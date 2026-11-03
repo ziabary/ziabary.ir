@@ -1,5 +1,5 @@
-import englishCollection from '../../docs/drafts/gpu-selection-en/collection.json';
-import spanishCollection from '../../docs/drafts/gpu-selection-es/collection.json';
+import englishCollection from '../../content/guides/en/gpu-selection.json';
+import spanishCollection from '../../content/guides/es/gpu-selection.json';
 
 export type GpuReviewLocale = 'en' | 'es';
 export type GpuReviewCollection = typeof englishCollection;

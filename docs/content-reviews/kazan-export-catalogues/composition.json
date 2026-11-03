@@ -1,0 +1,10 @@
+{
+  "method": "built-in image_gen",
+  "asset": "content/articles/fa/kazan-iran-technology-export/images/co-investment-overviews.png",
+  "inputs": [
+    "HOOMAS-Co-Investment-Overview-EN.jpg",
+    "HOOMAS-Co-Investment-Overview-RU.jpg"
+  ],
+  "prompt": "Create ONE clean editorial composite image for a professional blog article using the attached catalogue covers as intact insert images. This is a layout/compositing task: preserve every cover's original artwork, HOOMAS logo, exact typography, numbers and all existing text, including fine footer text, without rewriting, translating, inventing or redrawing anything. Show all edges of every cover with its full original portrait aspect ratio. Front-facing flat covers, no rotation, no perspective, no book spines, no overlap. Arrange two equal full portrait covers side by side: English left, Russian right. Use narrow consistent gutters, restrained near-white warm neutral background, a little equal outer padding, and extremely subtle contact shadows. A neat premium catalogue presentation, compact composition without large empty margins. No extra labels, headings, captions, decorations, objects or text outside the original covers. Output highest available resolution with sharp legible titles. This composite must contain exactly 2 covers, each once.",
+  "catalogueLayout": "Five original JPG covers copied unchanged and displayed in the matching table rows, following the user's revised request."
+}

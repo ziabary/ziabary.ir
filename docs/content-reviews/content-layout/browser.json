@@ -1,0 +1,132 @@
+{
+  "origin": "http://127.0.0.1:5195",
+  "results": [
+    {
+      "locale": "fa",
+      "article": "/articles/choosing-gpu-for-ai/",
+      "sharedCover": "/images/responsive/fd4f553c37b90c7e-960.webp",
+      "viewports": 4
+    },
+    {
+      "locale": "en",
+      "article": "/en/articles/choosing-gpu-for-ai-en/",
+      "sharedCover": "/images/responsive/fd4f553c37b90c7e-960.webp",
+      "viewports": 4
+    },
+    {
+      "locale": "es",
+      "article": "/es/articles/choosing-gpu-for-ai-es/",
+      "sharedCover": "/images/responsive/fd4f553c37b90c7e-960.webp",
+      "viewports": 4
+    },
+    {
+      "technicalDraft": {
+        "cover": "/images/responsive/3e909e3e65ad02cb-960.webp",
+        "images": [],
+        "robots": "noindex,follow"
+      }
+    },
+    {
+      "permanentDraftGate": true,
+      "permanentDraftPreview": true
+    },
+    {
+      "page": "/resume/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/en/resume/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/es/resume/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/media/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/slides/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/gallery/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/en/media/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/es/media/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/guides/gpu-selection/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/en/guides/gpu-selection/",
+      "canonicalPreserved": true
+    },
+    {
+      "page": "/es/guides/gpu-selection/",
+      "canonicalPreserved": true
+    },
+    {
+      "shortCode": "akt",
+      "target": "/articles/kazan-travelogue/"
+    },
+    {
+      "shortCode": "eacgfae",
+      "target": "/en/articles/choosing-gpu-for-ai-en/"
+    },
+    {
+      "shortCode": "eacgfae2",
+      "target": "/es/articles/choosing-gpu-for-ai-es/"
+    },
+    {
+      "editorWrites": [
+        {
+          "path": "/content/articles/fa/migration-editor-check/index.md",
+          "bytes": 314
+        },
+        {
+          "path": "/content/articles/fa/migration-editor-check/images/editor-check.png",
+          "bytes": 68
+        }
+      ],
+      "editorMockOnly": true
+    },
+    {
+      "editorLocale": "en",
+      "writes": [
+        {
+          "path": "/content/articles/en/migration-editor-check-en/index.md",
+          "bytes": 317
+        },
+        {
+          "path": "/content/articles/en/migration-editor-check-en/images/editor-check.png",
+          "bytes": 68
+        }
+      ],
+      "metadataPreserved": true
+    },
+    {
+      "editorLocale": "es",
+      "writes": [
+        {
+          "path": "/content/articles/es/migration-editor-check-es/index.md",
+          "bytes": 317
+        },
+        {
+          "path": "/content/articles/es/migration-editor-check-es/images/editor-check.png",
+          "bytes": 68
+        }
+      ],
+      "metadataPreserved": true
+    }
+  ],
+  "browserExceptions": 0
+}

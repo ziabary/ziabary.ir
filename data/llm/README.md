@@ -1,6 +1,7 @@
 # LLM data: current source of truth
 
-Edit `v0.3.0/repository.json`. `src/lib/llm/data/*.v1.ts` are generated;
+Edit the small JSON collections in `v0.3.0/records/`.
+`v0.3.0/repository.json` and `data/llm/generated/*.v1.ts` are rebuilt caches;
 `v1` is a stable import name, not the dataset version. The guide also consumes
 `v0.2.0/data/*.json` plus `v0.3.0/planning-{artifacts,sources}.json`.
 
@@ -48,7 +49,7 @@ routes remain noindex and absent from the public sitemap.
 
 The 2026-09-16 reference pack is archived, unchanged, under
 `v0.3.0/research/reference-pack-2026-09-16/`. It is an import input, not a second
-runtime repository. The canonical `v0.3.0/repository.json` owns model facts,
+runtime repository. The canonical `v0.3.0/records/` collections own model facts,
 published results and their original report observations, comparison policies,
 selection guidance, article inserts and the ParetoQ quality study. The archived
 baseline fingerprints are not restoration targets.

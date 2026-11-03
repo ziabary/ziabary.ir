@@ -1,3 +1,4 @@
+import { articleFile } from '../scripts/content-files.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { compile } from 'mdsvex';
@@ -27,7 +28,7 @@ try {
     ['en', 'airllm-layer-wise-inference-en'],
     ['es', 'cuando-un-otp-por-sms-reduce-la-seguridad']
   ]) {
-    const metadata = (await compile(readFileSync(`src/lib/content/articles/${slug}.md`, 'utf8'))).data.fm;
+    const metadata = (await compile(readFileSync(articleFile(`${slug}`), 'utf8'))).data.fm;
     const base = locale === 'fa' ? '' : `/${locale}`;
     const articlePath = `${base}/articles/${slug}/`;
     const query = encodeURIComponent(metadata.title);

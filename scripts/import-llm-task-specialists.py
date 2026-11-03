@@ -1,9 +1,12 @@
+from llm_repository import load_repository, write_repository, is_current_repository
 """Import pinned translation packages and editorial task specializations; no generated benchmark scores."""
 from pathlib import Path
 import json,re,hashlib
 root=Path(__file__).resolve().parents[1];data=root/'data/llm';src=data/'sources/task-specialists-2026-09-20'
-def read(p):return json.loads(p.read_text())
-def write(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
+def read(p):return load_repository(p) if is_current_repository(p) else json.loads(p.read_text())
+def write(p,x):
+ if is_current_repository(p):write_repository(p,x)
+ else:p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
 r=read(data/'v0.3.0/repository.json');bindings=read(data/'locales/record-bindings.json');texts={l:read(data/('locales/records.'+l+'.json')) for l in ['fa','en','es']}
 def upsert(k,x):
  r[k]=[v for v in r[k] if v['id']!=x['id']]+[x];return x

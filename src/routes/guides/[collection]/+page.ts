@@ -1,4 +1,4 @@
-import { getArticleModule } from '$lib/content';
+import { getArticleModule } from '../../../lib/content/index';
 import { error } from '@sveltejs/kit';
 import { getGuideCollection, guideCollections } from '$lib/guides';
 

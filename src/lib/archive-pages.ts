@@ -1,5 +1,5 @@
 import { error, redirect } from '@sveltejs/kit';
-import { articles } from './content';
+import { articles } from '$lib/content';
 import { archivePath, pageCount, validPage } from './archive.mjs';
 import type { Locale } from './editions';
 

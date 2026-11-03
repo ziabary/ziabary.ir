@@ -23,19 +23,24 @@
 {/snippet}
 
 <aside class="article-toc" data-reading-navigation aria-label={title}>
-  <details class="desktop-toc" open><summary>{title}</summary><nav aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
-  <details class="mobile-toc"><summary>{title}</summary><nav aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
+  <details class="desktop-toc" open><summary>{title}</summary><nav class="themed-scroll" aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
+  <details class="mobile-toc"><summary>{title}</summary><nav class="themed-scroll" aria-label={title} use:keepCurrentVisible={active}>{@render links()}</nav></details>
 </aside>
 
 <style>
   .article-toc { min-width: 0; font-size: 13px; line-height: 1.85; }
   summary { cursor: pointer; font-weight: 700; padding-block: 10px; color: var(--ink); }
-  nav { display: block; position: static; inset: auto; margin: 0; padding: 0; background: transparent; border: 0; max-height: calc(100dvh - 170px); overflow: auto; overscroll-behavior: contain; }
+  nav { display: block; position: static; inset: auto; margin: 0; padding: 0; background: transparent; border: 0; max-height: calc(100dvh - 170px); overflow-y: auto; overflow-x: hidden; scrollbar-gutter: stable; overscroll-behavior: contain; }
   ol { list-style: none; padding: 0; margin: 0; }
   a { display: block; border-inline-start: 2px solid var(--line); padding: 7px 12px; color: var(--muted); white-space: normal; overflow-wrap: anywhere; font-size: inherit; }
   a.active, a[aria-current] { border-color: var(--link-ink); color: var(--link-ink); font-weight: 700; }
   a[aria-current] { background: var(--soft); }
   ol ol { margin-inline-start: 12px; font-size: 12px; }
   .mobile-toc { display: none; }
+  @media (forced-colors: none) {
+    @supports selector(::-webkit-scrollbar) {
+      nav::-webkit-scrollbar { width: 8px; height: 8px; }
+    }
+  }
   @media (max-width: 1199px) { .desktop-toc { display: none; } .mobile-toc { display: block; border-block: 1px solid var(--line); } nav { max-height: 50vh; } }
 </style>

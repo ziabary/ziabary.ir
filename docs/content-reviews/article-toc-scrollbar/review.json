@@ -1,0 +1,38 @@
+{
+  "reviewedOn": "2026-11-03",
+  "problem": "Article TOC navigation did not opt into the shared themed-scroll styles, so browser-native white tracks and arrow buttons appeared in dark mode.",
+  "change": "Reuse themed-scroll for both TOCs; scoped 8px WebKit track, stable gutter and vertical-only overflow. System controls are retained in forced-colors mode.",
+  "verification": {
+    "check": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": "passed",
+    "browserCases": 6,
+    "locales": [
+      "fa",
+      "en"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ],
+    "width": "8px",
+    "arrowButtons": "hidden",
+    "wheelScrolling": "passed",
+    "rtlAndLtr": "passed",
+    "browserExceptions": 0,
+    "liveBrowserCases": 6
+  },
+  "publication": {
+    "status": "deployed",
+    "uploadedFiles": 1758,
+    "unchangedFiles": 4302,
+    "deletedFiles": 0,
+    "liveVersionMatchesBuild": true
+  }
+}

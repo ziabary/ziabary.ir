@@ -1,0 +1,352 @@
+[
+  {
+    "id": "family:bge",
+    "name": "BGE",
+    "publisher": "BAAI",
+    "evidenceIds": [
+      "evidence:baai-bge-m3-card"
+    ]
+  },
+  {
+    "id": "family:aya-cohere",
+    "name": "Aya / Cohere",
+    "publisher": "Cohere Labs",
+    "evidenceIds": [
+      "evidence:coherelabs-aya-expanse-32b-card"
+    ]
+  },
+  {
+    "id": "family:smollm",
+    "name": "SmolLM",
+    "publisher": "Hugging Face",
+    "evidenceIds": [
+      "evidence:huggingfacetb-smollm2-1-7b-instruct-card"
+    ]
+  },
+  {
+    "id": "family:qwen",
+    "name": "Qwen",
+    "publisher": "Qwen / Alibaba Cloud",
+    "evidenceIds": [
+      "evidence:qwen-qwen3-0-6b-card"
+    ]
+  },
+  {
+    "id": "family:olmo",
+    "name": "OLMo",
+    "publisher": "Allen Institute for AI",
+    "evidenceIds": [
+      "evidence:allenai-olmo-3-7b-instruct-card"
+    ]
+  },
+  {
+    "id": "family:deepseek",
+    "name": "DeepSeek",
+    "publisher": "DeepSeek",
+    "evidenceIds": [
+      "evidence:deepseek-ai-deepseek-r1-0528-qwen3-8b-card"
+    ]
+  },
+  {
+    "id": "family:gemma",
+    "name": "Gemma",
+    "publisher": "Google DeepMind",
+    "evidenceIds": [
+      "evidence:google-gemma-3-12b-it-card"
+    ]
+  },
+  {
+    "id": "family:granite",
+    "name": "Granite",
+    "publisher": "IBM",
+    "evidenceIds": [
+      "evidence:ibm-granite-granite-3-3-2b-instruct-card"
+    ]
+  },
+  {
+    "id": "family:e5",
+    "name": "E5",
+    "publisher": "intfloat / multilingual E5 authors",
+    "evidenceIds": [
+      "evidence:intfloat-multilingual-e5-small-card"
+    ]
+  },
+  {
+    "id": "family:llama",
+    "name": "Llama",
+    "publisher": "Meta",
+    "evidenceIds": [
+      "evidence:meta-llama-llama-3-1-70b-instruct-card"
+    ]
+  },
+  {
+    "id": "family:phi",
+    "name": "Phi",
+    "publisher": "Microsoft",
+    "evidenceIds": [
+      "evidence:microsoft-phi-4-mini-instruct-card"
+    ]
+  },
+  {
+    "id": "family:mistral",
+    "name": "Mistral",
+    "publisher": "Mistral AI",
+    "evidenceIds": [
+      "evidence:mistralai-devstral-small-2-24b-instruct-2512-card"
+    ]
+  },
+  {
+    "id": "family:nemotron",
+    "name": "Nemotron",
+    "publisher": "NVIDIA",
+    "evidenceIds": [
+      "evidence:nvidia-nvidia-nemotron-nano-9b-v2-card"
+    ]
+  },
+  {
+    "id": "family:gpt-oss",
+    "name": "gpt-oss",
+    "publisher": "OpenAI",
+    "evidenceIds": [
+      "evidence:openai-gpt-oss-120b-card"
+    ]
+  },
+  {
+    "id": "family:glm",
+    "name": "GLM",
+    "publisher": "Z.ai",
+    "evidenceIds": [
+      "evidence:zai-org-glm-4-7-flash-card"
+    ]
+  },
+  {
+    "id": "family:kimi",
+    "name": "Kimi",
+    "publisher": "Moonshot AI"
+  },
+  {
+    "id": "family:minimax",
+    "name": "MiniMax",
+    "publisher": "MiniMax"
+  },
+  {
+    "id": "family:smolvlm",
+    "name": "SmolVLM",
+    "publisher": "Hugging Face"
+  },
+  {
+    "id": "family:minilm",
+    "name": "MiniLM",
+    "publisher": "Sentence Transformers"
+  },
+  {
+    "id": "family:embeddinggemma",
+    "name": "EmbeddingGemma",
+    "publisher": "Google DeepMind"
+  },
+  {
+    "id": "family:jina",
+    "name": "Jina",
+    "publisher": "Jina AI"
+  },
+  {
+    "id": "family:mixedbread",
+    "name": "Mixedbread",
+    "publisher": "Mixedbread"
+  },
+  {
+    "id": "family:nomic",
+    "name": "Nomic",
+    "publisher": "Nomic AI"
+  },
+  {
+    "id": "family:modernbert",
+    "name": "ModernBERT",
+    "publisher": "Answer.AI / LightOn"
+  },
+  {
+    "id": "family:starcoder2",
+    "name": "StarCoder2",
+    "publisher": "bigcode",
+    "evidenceIds": [
+      "evidence:audit-20260916-bigcode-starcoder2-3b"
+    ]
+  },
+  {
+    "id": "family:tooka",
+    "name": "Tooka",
+    "publisher": "PartAI",
+    "evidenceIds": [
+      "evidence:audit-20260916-partai-tooka-sbert-v2-small"
+    ]
+  },
+  {
+    "id": "family:parsbert",
+    "name": "ParsBERT",
+    "publisher": "HooshvareLab",
+    "evidenceIds": [
+      "evidence:audit-20260916-hooshvarelab-bert-base-parsbert-uncased"
+    ]
+  },
+  {
+    "id": "family:salamandra",
+    "name": "Salamandra",
+    "publisher": "BSC-LT",
+    "evidenceIds": [
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-json-ec00591718",
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-22881108b0",
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-config-json-47e785ca3a",
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-2365657aeb",
+      "evidence:reference-bsc-lt-salamandra-2b-instruct-readme-md-456890d7cc"
+    ]
+  },
+  {
+    "id": "family:minicpm",
+    "name": "MiniCPM",
+    "publisher": "openbmb",
+    "evidenceIds": [
+      "evidence:reference-openbmb-minicpm5-2b-json-ec00591718",
+      "evidence:reference-openbmb-minicpm5-2b-readme-md-22881108b0",
+      "evidence:reference-openbmb-minicpm5-2b-config-json-47e785ca3a",
+      "evidence:reference-openbmb-minicpm5-2b-readme-md-2365657aeb",
+      "evidence:reference-openbmb-minicpm5-2b-readme-md-456890d7cc"
+    ]
+  },
+  {
+    "id": "family:lfm",
+    "name": "LFM",
+    "publisher": "LiquidAI",
+    "evidenceIds": [
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-json-ec00591718",
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-22881108b0",
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-config-json-47e785ca3a",
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-2365657aeb",
+      "evidence:reference-liquidai-lfm2-5-1-2b-instruct-readme-md-456890d7cc",
+      "evidence:reference-lfm-license-txt-e8003a05ee"
+    ]
+  },
+  {
+    "id": "family:hy-mt",
+    "name": "HY-MT",
+    "publisher": "Tencent",
+    "evidenceIds": [
+      "evidence:tasks0920-tencent-hy-mt1-5-1-8b",
+      "evidence:tasks0920-tencent-hy-mt1-5-7b"
+    ]
+  },
+  {
+    "id": "family:madlad",
+    "name": "MADLAD",
+    "publisher": "Google",
+    "evidenceIds": [
+      "evidence:translation0920-google-madlad400-3b-mt"
+    ]
+  },
+  {
+    "id": "family:nllb",
+    "name": "NLLB",
+    "publisher": "Meta",
+    "evidenceIds": [
+      "evidence:translation0920-facebook-nllb-200-distilled-600m"
+    ]
+  },
+  {
+    "id": "family:qwen-image",
+    "name": "Qwen-Image",
+    "publisher": "Qwen / Alibaba",
+    "evidenceIds": [
+      "evidence:qwen-image-2-1-card"
+    ]
+  },
+  {
+    "id": "family:mimo",
+    "name": "MiMo",
+    "publisher": "Xiaomi MiMo",
+    "evidenceIds": [
+      "evidence:mimo-v2-6-pro-card"
+    ]
+  },
+  {
+    "id": "family:cohere-embed",
+    "name": "Cohere Embed",
+    "publisher": "Cohere",
+    "evidenceIds": [
+      "evidence:cohere-embed5-release",
+      "evidence:cohere-embed5-docs",
+      "evidence:cohere-embed5-usage"
+    ]
+  },
+  {
+    "id": "family:clef",
+    "name": "Clef",
+    "publisher": "Cloudflare",
+    "evidenceIds": [
+      "evidence:cloudflare-clef-release"
+    ]
+  },
+  {
+    "id": "family:north-translate",
+    "name": "North Small Translate",
+    "publisher": "Cohere Labs",
+    "evidenceIds": [
+      "evidence:coherelabs-north-small-translate-card"
+    ]
+  },
+  {
+    "id": "family:bespoke-nimble",
+    "name": "Bespoke Nimble",
+    "publisher": "Bespoke Labs",
+    "evidenceIds": [
+      "evidence:bespokelabs-nimble-9b-card"
+    ]
+  },
+  {
+    "id": "family:reflection-beam",
+    "name": "Beam",
+    "publisher": "Reflection",
+    "evidenceIds": [
+      "evidence:reflection-beam-announcement"
+    ]
+  },
+  {
+    "id": "family:k2-horizon",
+    "name": "K2 Horizon",
+    "publisher": "IFM",
+    "evidenceIds": [
+      "evidence:ifm-k2-horizon-launch",
+      "evidence:ifm-k2-horizon-gguf-collection"
+    ]
+  },
+  {
+    "id": "family:muse",
+    "name": "Muse",
+    "publisher": "Meta",
+    "evidenceIds": [
+      "evidence:catchup1017-muse"
+    ]
+  },
+  {
+    "id": "family:minicpm-v",
+    "name": "MiniCPM-V",
+    "publisher": "OpenBMB",
+    "evidenceIds": [
+      "evidence:tables1024-minicpm-news"
+    ]
+  },
+  {
+    "id": "family:d3",
+    "name": "d3",
+    "publisher": "vLLM Semantic Router",
+    "evidenceIds": [
+      "evidence:tables1024-vllm-sr-d3-nano-card"
+    ]
+  },
+  {
+    "id": "family:mage",
+    "name": "Mage",
+    "publisher": "Microsoft",
+    "evidenceIds": [
+      "evidence:tables1103-mage-card"
+    ]
+  }
+]

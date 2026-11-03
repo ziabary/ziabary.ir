@@ -1,0 +1,54 @@
+{
+  "article": "russian-ai-kazan-digital-week-2026",
+  "status": "awaiting-user-photos",
+  "photos": [
+    {
+      "slot": "cover",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/cover.webp",
+      "caption": "تصویر شاخص یادداشت؛ عکس اصلی از سفر کازان",
+      "placement": "frontmatter cover after photo delivery"
+    },
+    {
+      "slot": "01-exhibition",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/01-exhibition.webp",
+      "caption": "محصولات و غرفه‌های فناوری در Kazan Digital Week 2026",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    },
+    {
+      "slot": "02-shabanov-meeting",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/02-shabanov-meeting.webp",
+      "caption": "گفت‌وگوی فنی با علی شابانوف درباره مدل‌ها و زیرساخت سرویس‌دهی",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    },
+    {
+      "slot": "03-ai-platform",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/03-ai-platform.webp",
+      "caption": "نمای سکوی خدمات هوش مصنوعی و امکانات پردازش سند و گفت‌وگو",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    },
+    {
+      "slot": "04-hardware",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/04-hardware.webp",
+      "caption": "نمونه سخت‌افزار و اجزای بومی معرفی‌شده در غرفه‌های نمایشگاه",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    },
+    {
+      "slot": "05-robotics",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/05-robotics.webp",
+      "caption": "ربات‌ها و سامانه‌های بدون سرنشین معرفی‌شده در Kazan Digital Week",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    },
+    {
+      "slot": "06-self-driving",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/06-self-driving.webp",
+      "caption": "خودرو یا تجهیزات سامانه رانندگی خودکار در بخش حمل‌ونقل هوشمند",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    },
+    {
+      "slot": "07-geopager",
+      "path": "/images/articles/russian-ai-kazan-digital-week-2026/07-geopager.webp",
+      "caption": "دیدار هومص و GEOPAGER و امضای تفاهم‌نامه همکاری",
+      "placement": "Standard figure/figcaption in article Markdown; uncomment the prepared img line after adding the image file."
+    }
+  ]
+}

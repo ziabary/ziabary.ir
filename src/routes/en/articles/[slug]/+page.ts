@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import { dev } from '$app/environment';
-import { allArticleMetadata, articles, getArticle, getArticleModule } from '$lib/content';
+import { allArticleMetadata, articles, getArticle, getArticleModule } from '../../../../lib/content/index';
 import { isGpuReviewArticle } from '$lib/gpu-review';
 
 export function entries() {

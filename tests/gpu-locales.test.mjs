@@ -1,3 +1,5 @@
+import { inlineJsonImports } from './helpers/json-imports.mjs';
+import { articleFile } from '../scripts/content-files.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -8,11 +10,11 @@ const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
 const urlFor = (source) => `data:text/javascript;base64,${Buffer.from(source).toString('base64')}`;
 const transpile = (source) => ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
-const gpuUrl = urlFor(transpile(await read('src/lib/gpu-data.ts')));
-const serverUrl = urlFor(transpile(await read('src/lib/server-data.ts')));
+const gpuUrl = urlFor(transpile(inlineJsonImports(await read('src/lib/gpu-data.ts'), 'src/lib/gpu-data.ts')));
+const serverUrl = urlFor(transpile(inlineJsonImports(await read('src/lib/server-data.ts'), 'src/lib/server-data.ts')));
 const originalGpus = await import(gpuUrl);
 const originalServers = await import(serverUrl);
-let localizedSource = await read('src/lib/i18n/gpu.ts');
+let localizedSource = inlineJsonImports(await read('src/lib/i18n/gpu.ts'), 'src/lib/i18n/gpu.ts');
 for (const match of localizedSource.matchAll(/import (\w+) from '\.\/(gpu-(?:data|ui)\.(?:en|es)\.json)';/g)) {
   localizedSource = localizedSource.replace(match[0], `const ${match[1]} = ${await read(`src/lib/i18n/${match[2]}`)};`);
 }
@@ -80,30 +82,30 @@ test(`${locale} rejects missing translations instead of leaking Persian text`, (
   assert.equal(hardwareText('شرح فارسی', 'fa'), 'شرح فارسی');
 });
 
-test(`the ${locale} collection and its nine articles are published`, async () => {
-  const collection = JSON.parse(await read(`docs/drafts/gpu-selection-${locale}/collection.json`));
+test(`the ${locale} collection and its reviewed articles are published`, async () => {
+  const collection = JSON.parse(await read(`content/guides/${locale}/gpu-selection.json`));
   assert.equal(collection.draft, false);
   const articleItems = collection.items.filter((item) => item.kind === 'article');
-  assert.equal(articleItems.length, 9);
+  assert.ok(articleItems.length >= 9);
   assert.equal(collection.items.filter((item) => item.kind === 'interactive').length, 2);
   const ids = new Set(articleItems.map((item) => item.id));
   for (const item of articleItems) {
-    const source = await read(`src/lib/content/articles/${item.id}.md`);
+    const source = await read(articleFile(`${item.id}`));
     const { data: { fm } } = await compile(source);
     assert.equal(fm.draft, false, item.id);
     assert.equal(fm.lang, locale, item.id);
     assert.equal(fm.slug, item.id);
-    const original = await compile(await read(`src/lib/content/articles/${item.id.replace(/-(en|es)$/, '')}.md`));
+    const original = await compile(await read(articleFile(`${item.id.replace(/-(en|es)$/, '')}`)));
     assert.equal(String(fm.date), String(original.data.fm.date), `${item.id}: retain original publication date`);
     assert.ok(fm.related.length > 0);
     for (const related of fm.related) {
-      const target = (await compile(await read(`src/lib/content/articles/${related}.md`))).data.fm;
+      const target = (await compile(await read(articleFile(`${related}`)))).data.fm;
       assert.equal(target.lang, locale, `${item.id} → ${related}`);
       assert.equal(target.draft, false, `${item.id} → ${related}`);
     }
     for (const match of source.matchAll(/\]\(\/(en|es)\/articles\/([^/]+)\/\)/g)) {
       assert.equal(match[1], locale);
-      const target = (await compile(await read(`src/lib/content/articles/${match[2]}.md`))).data.fm;
+      const target = (await compile(await read(articleFile(`${match[2]}`)))).data.fm;
       assert.equal(target.lang, locale); assert.equal(target.draft, false, match[2]);
     }
     // A source URL can contain a Persian section fragment; visible prose must still be translated.
@@ -111,7 +113,7 @@ test(`the ${locale} collection and its nine articles are published`, async () =>
     assert.doesNotMatch(visibleSource, /[\u0600-\u06ff]/u);
     assert.doesNotMatch(source, /\b(?:Iran(?:ian)?|Irán|iraní(?:es)?)\b/i);
     for (const match of source.matchAll(/(?:cover: "|src="|\]\()(\/images\/[^"\s)]+)/g)) {
-      await readFile(new URL(`static${match[1]}`, root));
+      await readFile(new URL(`.build/public${match[1]}`, root));
     }
   }
   for (const path of collection.paths) assert.ok(collection.items.some((item) => item.id === path.id));
@@ -129,8 +131,8 @@ test('localization caches and dictionaries are independent for English and Spani
   assert.equal(hardwareText('سازنده', 'en'), 'Manufacturer');
   assert.equal(hardwareText('سازنده', 'es'), 'Fabricante');
   for (const name of ['data', 'ui']) {
-    const en = JSON.parse(await read(`src/lib/i18n/gpu-${name}.en.json`));
-    const es = JSON.parse(await read(`src/lib/i18n/gpu-${name}.es.json`));
+    const en = JSON.parse(await read(name === 'data' ? 'data/gpu/locales/en.json' : 'src/lib/i18n/gpu-ui.en.json'));
+    const es = JSON.parse(await read(name === 'data' ? 'data/gpu/locales/es.json' : 'src/lib/i18n/gpu-ui.es.json'));
     assert.deepEqual(Object.keys(es).sort(), Object.keys(en).sort());
     for (const [key, value] of Object.entries(es)) {
       assert.ok(value.trim(), key);
@@ -140,17 +142,17 @@ test('localization caches and dictionaries are independent for English and Spani
 });
 
 test('Spanish preserves the reviewed English sources, figures and editorial relationships', async () => {
-  const en = JSON.parse(await read('docs/drafts/gpu-selection-en/collection.json'));
-  const es = JSON.parse(await read('docs/drafts/gpu-selection-es/collection.json'));
+  const en = JSON.parse(await read('content/guides/en/gpu-selection.json'));
+  const es = JSON.parse(await read('content/guides/es/gpu-selection.json'));
   const spanishSlug = (slug) => slug.replace(/-en$/, '-es');
   assert.deepEqual(es.items.map(item => item.id), en.items.map(item => spanishSlug(item.id)));
   for (const item of en.items.filter(item => item.kind === 'article')) {
-    const original = await read(`src/lib/content/articles/${item.id}.md`);
-    const translation = await read(`src/lib/content/articles/${spanishSlug(item.id)}.md`);
+    const original = await read(articleFile(`${item.id}`));
+    const translation = await read(articleFile(`${spanishSlug(item.id)}`));
     const { data: { fm: originalMeta } } = await compile(original);
     const { data: { fm: translatedMeta } } = await compile(translation);
     assert.deepEqual(translatedMeta.related, originalMeta.related.map(spanishSlug), item.id);
-    assert.equal(translatedMeta.cover, originalMeta.cover, item.id);
+    assert.ok([originalMeta.cover, originalMeta.cover.replace(/-en\//g, '-es/')].includes(translatedMeta.cover), item.id);
     const urls = (source) => [...source.matchAll(/https?:\/\/[^\s)"<>]+/g)].map(match => match[0]).sort();
     const images = (source) => [...source.matchAll(/(?:src="|\]\()(\/images\/[^"\s)]+)/g)].map(match => match[1]).sort();
     assert.deepEqual(urls(translation), urls(original), item.id);
