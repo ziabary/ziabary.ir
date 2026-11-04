@@ -1,0 +1,19 @@
+name: Community service
+on:
+  pull_request:
+    paths: ['services/community/**', '.github/workflows/community.yml']
+  push:
+    branches: [main]
+    paths: ['services/community/**', '.github/workflows/community.yml']
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm test
+        working-directory: services/community
+      - run: docker build -t ziabary-community:test services/community

@@ -1,0 +1,8 @@
+.env
+config/secrets.json
+config/bootstrap.txt
+config/posts.json
+data/
+backups/
+*.sqlite*
+test-results/

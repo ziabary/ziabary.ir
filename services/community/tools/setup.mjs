@@ -1,0 +1,12 @@
+import { randomBytes } from 'node:crypto';
+import { mkdir, readFile, writeFile, chmod } from 'node:fs/promises';
+import { passwordHash, base32, random } from '../src/security.mjs';
+await mkdir('config',{recursive:true});
+const previous=await readFile('config/secrets.json','utf8').then(JSON.parse).catch(e=>{if(e.code==='ENOENT')return null;throw e;});
+if(previous&&!process.argv.includes('--rotate-admin'))throw Error('Credentials exist. Use --rotate-admin explicitly to replace only the administrator credentials.');
+const password=random(),totpSecret=base32(randomBytes(20));
+const secrets={...previous,username:previous?.username||'admin',passwordHash:await passwordHash(password),totpSecret,encryptionKey:previous?.encryptionKey||randomBytes(32).toString('base64'),identityKey:previous?.identityKey||randomBytes(32).toString('base64'),turnstileSecret:previous?.turnstileSecret||''};
+await writeFile('config/secrets.json',JSON.stringify(secrets,null,2)+'\n',{mode:0o600});await chmod('config/secrets.json',0o600);
+const uri=`otpauth://totp/${encodeURIComponent('Ziabary community:'+secrets.username)}?secret=${totpSecret}&issuer=Ziabary&algorithm=SHA1&digits=6&period=30`;
+await writeFile('config/bootstrap.txt',`Username: ${secrets.username}\nPassword: ${password}\nTOTP secret: ${totpSecret}\nAuthenticator URI: ${uri}\n\nStore these in your password manager, add the TOTP secret to your authenticator, then delete this bootstrap file.\n`,{mode:0o600});await chmod('config/bootstrap.txt',0o600);
+console.log('Created config/secrets.json and config/bootstrap.txt with mode 0600. No credentials are printed to logs.');

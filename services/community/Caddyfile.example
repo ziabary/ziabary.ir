@@ -1,0 +1,11 @@
+# Install on the host that runs Docker. DNS must point this hostname at that host.
+api.ziabary.ir {
+    encode zstd gzip
+    request_body {
+        max_size 16KB
+    }
+    reverse_proxy 127.0.0.1:8787 {
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto https
+    }
+}

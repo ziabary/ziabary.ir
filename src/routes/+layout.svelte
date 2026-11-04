@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import CommunityBridge from '../../services/community/client/CommunityBridge.svelte';
   import { isReturningVisit } from '$lib/visit-history.mjs';
   import '$generated/icons.css';
   import '../app.css';
@@ -47,3 +48,4 @@
   <slot />
 </SiteShell>
 <ImageLightbox />
+{#key data.pathname}<CommunityBridge path={data.pathname} locale={data.locale} />{/key}

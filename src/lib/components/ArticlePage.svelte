@@ -10,7 +10,7 @@
   import ArticleSeo from './ArticleSeo.svelte';
   import ArticleToc from './ArticleToc.svelte';
   import RelatedStream from './RelatedStream.svelte';
-  import { formatDate } from '$lib/publication.mjs';
+  import { formatDate, isPublished } from '$lib/publication.mjs';
   import { headingSections, readingPosition } from '$lib/contents-navigation';
   export let article: ArticleMeta;
   export let seo = true;
@@ -44,6 +44,7 @@
         <ReadingShare cover={article.cover} title={article.title} excerpt={article.excerpt} {locale} href={`${base}/articles/${article.slug}/`} />
       </div>
     </div>
+    {#if isPublished(article)}<div data-community-slot data-post={`${base}/articles/${article.slug}/`} hidden></div>{/if}
   </article>
   <RelatedStream related={article.related ?? []} currentSlug={article.slug} {locale} includeDrafts={preview} />
 </main>

@@ -1,0 +1,10 @@
+*
+!package.json
+!src/
+!src/**
+!public/
+!public/**
+!client/
+!client/loader.mjs
+!tools/
+!tools/**
