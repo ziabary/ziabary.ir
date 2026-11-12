@@ -55,6 +55,20 @@ export function buildWizardResult(repository:LlmGuideRepository,raw:WizardAnswer
   because:[],assumptions:[],answerIds:['phase','audience','users','concurrency','hardware','deployment','owner'],evidenceIds:['https://docs.vllm.ai/en/stable/']
  });
  const target=requestedSpecialty(a);
+ if(isLocal(a)&&a.hardware==='gpu'&&candidates.some(c=>c.runtime==='llama.cpp'))decisions.push({
+  id:'llama-gpu-allocation-1108',area:'deployment',status:'conditional',answerIds:['hardware','deployment'],because:[],assumptions:[],
+  evidenceIds:['https://github.com/ggml-org/llama.cpp/releases/tag/b12171','https://github.com/ggml-org/llama.cpp/blob/b12195/docs/backend/SYCL.md'],
+  conclusion:L('در مسیر Vulkan بدون ReBAR از b12171+ استفاده کنید تا تخصیص BAR محدود کنار گذاشته شود. برای Arc B-series روی SYCL، از b12195+ و مقدار پیش‌فرض GGML_SYCL_BMG_VRAM_CHECK=1 استفاده کنید؛ بافر بزرگ‌تر از حافظهٔ آزاد با خطای بارگذاری رد می‌شود. هر دو اصلاح در کانال پیش‌انتشارند.',
+   'For Vulkan without ReBAR, use b12171+ to avoid limited BAR allocations. For Arc B-series under SYCL, use b12195+ with the default GGML_SYCL_BMG_VRAM_CHECK=1; buffers exceeding free memory fail at load time. Both fixes are prereleases.',
+   'Para Vulkan sin ReBAR, use b12171+ para evitar asignaciones BAR limitadas. Para Arc B-series con SYCL, use b12195+ y GGML_SYCL_BMG_VRAM_CHECK=1 por defecto; los buffers que superen la memoria libre fallan al cargar. Ambas correcciones son preliminares.')
+ });
+ if(isLocal(a)&&a.hardware==='gpu'&&candidates.some(c=>c.runtime==='llama.cpp'&&c.model.architecture==='moe'))decisions.push({
+  id:'llama-moe-cpu-share',area:'deployment',status:'conditional',answerIds:['hardware','ram','deployment'],because:[],assumptions:[],
+  evidenceIds:['https://github.com/ggml-org/llama.cpp/releases/tag/b12191'],
+  conclusion:L('برای MoE با expertهای مستقر در RAM، پیش‌انتشار b12191 گزینهٔ --moe-cache-cpu-share F را اضافه می‌کند: پس از پرشدن کش، سهمی از expertهای غایب روی CPU محاسبه می‌شوند. scripts/moe-cache-tune.py اندازهٔ کش و سهم CPU را با اندازه‌گیری تنظیم می‌کند؛ حافظهٔ وزن‌ها و KV در برآورد فعلی حفظ می‌شود.',
+   'For MoE with RAM-resident experts, prerelease b12191 adds --moe-cache-cpu-share F: after the cache fills, a share of missing experts runs on the CPU. scripts/moe-cache-tune.py measures and tunes cache size and CPU share; weight and KV memory remain in the current estimate.',
+   'Para MoE con expertos en RAM, la versión preliminar b12191 añade --moe-cache-cpu-share F: tras llenarse la caché, una parte de los expertos ausentes se calcula en CPU. scripts/moe-cache-tune.py mide y ajusta caché y fracción CPU; la estimación mantiene la memoria de pesos y KV.')
+ });
  if(candidates.some(c=>c.runtime==='vLLM'))decisions.push({
   id:'vllm-security-review',area:'deployment',status:'conditional',answerIds:['hardware','deployment'],because:[],assumptions:[],
   evidenceIds:['https://github.com/vllm-project/vllm/security/advisories/GHSA-4xqp-c3mv-qff7','https://github.com/vllm-project/vllm/releases/tag/v0.31.0'],

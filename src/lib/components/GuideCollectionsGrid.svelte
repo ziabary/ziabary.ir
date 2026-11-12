@@ -2,7 +2,7 @@
   import { dev } from '$app/environment';
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
-  import { hasLlmPreview } from '$lib/draft-preview.mjs';
+  import { hasDraftPreview, hasLlmPreview, withDraftPreview } from '$lib/draft-preview.mjs';
   import GuideCollectionCard from '$lib/components/GuideCollectionCard.svelte';
   import type { GuideCollection } from '$lib/guides';
   import { getLocalizedGuideCollection } from '$lib/localized-guide-collections';
@@ -13,6 +13,7 @@
   export let label: string;
   let mounted = false;
   onMount(() => { mounted = true; });
+  $: draftPreview = mounted && locale === 'fa' && hasDraftPreview($page.url.searchParams);
   $: visibleCollections = collections.filter(collection => collection.slug !== 'llm' || collection.status === 'published' || (mounted && hasLlmPreview($page.url.searchParams)));
 </script>
 
@@ -23,7 +24,7 @@
       href={collection.status === 'draft' && locale === 'fa'
         ? `/guides/${collection.slug}/?show-drafts=true`
         : locale === 'fa'
-          ? `/guides/${collection.slug}/`
+          ? draftPreview ? withDraftPreview(`/guides/${collection.slug}/`) : `/guides/${collection.slug}/`
           : preview || getLocalizedGuideCollection(locale, collection.slug)
             ? `/${locale}/guides/${collection.slug}/`
             : null} />

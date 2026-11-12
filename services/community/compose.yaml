@@ -5,31 +5,32 @@ services:
     init: true
     read_only: true
     cap_drop: [ALL]
-    security_opt: [no-new-privileges:true]
+    security_opt: ["no-new-privileges:true"]
     pids_limit: 64
     mem_limit: 256m
     cpus: 1
-    tmpfs: [/tmp:rw,noexec,nosuid,size=16m]
+    tmpfs:
+      - "/tmp:rw,noexec,nosuid,size=16m"
     ports: ["127.0.0.1:${COMMUNITY_PORT:-8787}:8787"]
     environment:
       NODE_ENV: production
       PUBLIC_URL: ${PUBLIC_URL:?Set PUBLIC_URL}
       SITE_ORIGINS: ${SITE_ORIGINS:?Set SITE_ORIGINS}
-      TURNSTILE_SITE_KEY: ${TURNSTILE_SITE_KEY:?Set TURNSTILE_SITE_KEY}
+      SITE_URL: ${SITE_URL:-}
       TRUSTED_PROXY_CIDRS: ${TRUSTED_PROXY_CIDRS:-}
       COMMENTS_PER_SECOND: ${COMMENTS_PER_SECOND:-5}
       VISIT_RETENTION_DAYS: ${VISIT_RETENTION_DAYS:-90}
+      ANALYTICS_RETENTION_DAYS: ${ANALYTICS_RETENTION_DAYS:-1095}
       MAX_DATABASE_MIB: ${MAX_DATABASE_MIB:-512}
       ADMIN_DISPLAY_NAME: ${ADMIN_DISPLAY_NAME:-مهران ضیابری}
     volumes:
-      - community_data:/data
-      - ./config/posts.json:/app/config/posts.json:ro
-    secrets: [community]
+      - ./data:/data
+    secrets: [community, bootstrap]
     logging:
       driver: json-file
       options: {max-size: "5m", max-file: "3"}
 secrets:
   community:
     file: ./config/secrets.json
-volumes:
-  community_data:
+  bootstrap:
+    file: ./config/bootstrap.txt

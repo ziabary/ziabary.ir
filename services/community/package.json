@@ -7,7 +7,6 @@
   "scripts": {
     "start": "node src/main.mjs",
     "test": "node --test test/*.test.mjs",
-    "setup": "node tools/setup.mjs",
-    "catalogue": "node tools/export-posts.mjs ../../build config/posts.json"
+    "setup": "node tools/setup.mjs"
   }
 }

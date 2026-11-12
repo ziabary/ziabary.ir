@@ -1,5 +1,39 @@
 [
   {
+    "id": "gpt-6-cyber",
+    "name": "GPT-6 Cyber",
+    "provider": "OpenAI",
+    "snapshot": "gpt-6-cyber",
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "contextTokens": 1050000,
+    "outputLimitTokens": 128000,
+    "availability": "restricted-access",
+    "selfHosting": "not-available",
+    "catalogOnly": true,
+    "reviewedOn": "2026-11-08",
+    "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+    "platformUrl": "https://openai.com/index/introducing-gpt-6-cyber/",
+    "tasks": [
+      "security"
+    ],
+    "languages": [],
+    "regions": [],
+    "contract": "Daybreak Red approval required",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "persianEvidence": "not-independently-evaluated",
+    "notes": {
+      "fa": "مدل تخصصی پژوهش امنیت و اعتبارسنجی آسیب‌پذیری؛ دسترسی API به سازمان‌های تأییدشدهٔ Daybreak Red محدود است. ورودی متن و تصویر، خروجی متن؛ وزن دانلودی ندارد.",
+      "en": "Specialized security research and vulnerability validation model. API access is restricted to approved Daybreak Red organizations. Text/image input and text output; no downloadable weights.",
+      "es": "Modelo especializado en investigación de seguridad y validación de vulnerabilidades. API restringida a organizaciones Daybreak Red aprobadas. Entrada de texto/imagen y salida de texto; sin pesos descargables."
+    }
+  },
+  {
     "id": "gpt-6.1-sol",
     "name": "GPT-6.1 Sol",
     "provider": "OpenAI",

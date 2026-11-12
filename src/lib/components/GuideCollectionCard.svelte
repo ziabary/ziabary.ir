@@ -11,7 +11,8 @@
   const persianNumber = new Intl.NumberFormat('fa-IR');
   $: target = href === undefined ? `/guides/${collection.slug}/` : href;
   $: unpublished = locale === 'es' ? 'Contenido aún no publicado en español' : 'Content not yet published in English';
-  $: count = articleCount(collection);
+  $: supplementCount = collection.items.filter(item => item.kind === 'article' && item.role === 'supplement').length;
+  $: count = articleCount(collection) - supplementCount;
   $: extraCount = nonArticleCount(collection);
   $: planned = collection.status === 'planned';
   $: draft = collection.status === 'draft';
@@ -39,10 +40,12 @@
         {:else}
           <span>
             {#if locale === 'fa'}
-              {persianNumber.format(count)} مقاله
+              {persianNumber.format(count)} {collection.slug === 'enterprise-ai-governance' ? 'درس' : 'مقاله'}
+              {#if supplementCount} و {persianNumber.format(supplementCount)} مکمل{/if}
               {#if extraCount} · {persianNumber.format(extraCount)} محتوای تعاملی{/if}
             {:else}
               {count} {locale === 'en' ? (count === 1 ? 'article' : 'articles') : (count === 1 ? 'artículo' : 'artículos')}
+              {#if supplementCount} · {supplementCount} {locale === 'en' ? (supplementCount === 1 ? 'supplement' : 'supplements') : (supplementCount === 1 ? 'complemento' : 'complementos')}{/if}
               {#if extraCount} · {extraCount} {locale === 'en' ? 'interactive resources' : 'recursos interactivos'}{/if}
             {/if}
           </span>

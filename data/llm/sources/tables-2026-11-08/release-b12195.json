@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12195",
+  "tag": "b12195",
+  "published_at": "2026-11-08T01:11:25Z",
+  "prerelease": true,
+  "target_commitish": "818ac6b078e345e59ffa4b1ed3b1ce1b0ae83827",
+  "body": "<details open>\n\nsycl: refuse device buffers that would exceed VRAM (#31285)\n\n</details>"
+}

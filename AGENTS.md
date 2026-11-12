@@ -50,6 +50,11 @@ maps, political scenes or local symbols.
 - Edit LLM records in `data/llm/v0.3.0/records/*.json`; `repository.json` and
   `data/llm/generated/` are rebuilt caches. Import tools use `llm_repository.py`.
 - Draft content must set draft: true.
+- Enterprise AI governance lessons share a continuing story. Keep the opening
+  explanation «روایت بالا فقط یک قصه نیست.» in lesson one only. After each later
+  opening scene, link to and recap the preceding lesson, then connect the new
+  scene to the current question. Follow
+  `docs/content-reviews/enterprise-ai-governance/series.md` for the series format.
 - `kazan-investment-reality` is permanently a draft by explicit user instruction.
   Keep its restriction in `src/lib/publication.mjs`; server previews are allowed,
   promotion to publication is prohibited.

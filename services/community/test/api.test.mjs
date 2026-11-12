@@ -1,4 +1,4 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {fixture,password,posts} from './helpers.mjs';import {totp,decrypt} from '../src/security.mjs';import {createApplication,verifyTurnstile} from '../src/app.mjs';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {fixture,password,posts} from './helpers.mjs';import {decrypt} from '../src/security.mjs';import {createApplication,verifyARCaptcha} from '../src/app.mjs';
 test('CAPTCHA is mandatory, single-use, and comments remain private until reviewed',async t=>{const f=await fixture();t.after(f.cleanup);
  assert.equal((await f.call('/api/public/comments',{body:f.comment({captchaToken:''})})).status,400);
  assert.equal((await f.call('/api/public/comments',{body:f.comment({captchaToken:'wrong-token'})})).status,400);
@@ -6,11 +6,18 @@ test('CAPTCHA is mandatory, single-use, and comments remain private until review
  assert.equal((await f.call('/api/public/comments?post='+posts[1].path)).data.comments.length,0);
  const duplicate=await f.call('/api/public/comments',{body:input});assert.equal(duplicate.status,202);assert.equal(f.app.store.get('SELECT count(*) AS n FROM comments').n,1);
  assert.equal((await f.call('/api/public/comments',{body:f.comment({captchaToken:input.captchaToken})})).status,400);
- const auth=await f.login();assert.equal(auth.status,200);const pending=await f.call('/api/admin/comments',{cookie:auth.cookie});assert.equal(pending.data.comments[0].body,input.body);assert(!('ip' in pending.data.comments[0]));
+ const auth=await f.login();assert.equal(auth.status,200);const pending=await f.call('/api/admin/comments',{cookie:auth.cookie});assert.equal(pending.data.threads[0].comments[0].body,input.body);assert(!('ip' in pending.data.threads[0].comments[0]));
  assert.equal((await f.call('/api/admin/comments/1/moderate',{admin:true,cookie:auth.cookie,csrf:auth.csrf,body:{status:'approved'}})).status,200);
  const result=await f.call('/api/public/comments?post='+posts[1].path);assert.equal(result.data.comments[0].body,input.body);assert(!('ip_hash' in result.data.comments[0]));assert(!('request_key' in result.data.comments[0]));
 });
-test('origin, content type, body size, fields and post catalogue are enforced',async t=>{const f=await fixture();t.after(f.cleanup);
+test('official dummy CAPTCHA tokens can repeat only in loopback development',async t=>{
+ for(const [config,expected] of [[{allowTestCaptcha:true},202],[{production:true,allowTestCaptcha:true},400],[{allowTestCaptcha:false},400]]){
+  const f=await fixture({config,verifyCaptcha:async()=>true});t.after(f.cleanup);
+  assert.equal((await f.call('/api/public/comments',{body:f.comment({captchaToken:'000000000000000000000000000000'})})).status,202);
+  assert.equal((await f.call('/api/public/comments',{body:f.comment({captchaToken:'000000000000000000000000000000'})})).status,expected);
+ }
+});
+test('origin, content type, body size, fields and verified public pages are enforced',async t=>{const f=await fixture();t.after(f.cleanup);
  assert.equal((await f.call('/api/public/comments',{body:f.comment(),headers:{Origin:'https://attacker.test'}})).status,403);
  assert.equal((await f.call('/api/public/comments',{body:f.comment(),headers:{'Content-Type':'text/plain'}})).status,415);
  assert.equal((await f.call('/api/public/comments',{body:f.comment({body:'x'.repeat(17000)})})).status,413);
@@ -22,15 +29,16 @@ test('origin, content type, body size, fields and post catalogue are enforced',a
  assert.equal((await f.call('/health',{headers:{Origin:'https://attacker.test'}})).status,403);assert.equal((await f.call('/config/secrets.json')).status,404);
  const admin=await f.call('/admin/');assert.match(admin.headers.get('content-security-policy'),/script-src 'self'/);assert.equal(admin.headers.get('x-frame-options'),'DENY');assert.match(admin.headers.get('x-robots-tag'),/noindex/);
 });
-test('MFA, CSRF, secure cookies, session expiry, logout and TOTP replay protection',async t=>{const f=await fixture({config:{production:true,origin:'https://community.example.com'}});t.after(f.cleanup);
+test('password login, CSRF, secure cookies, session expiry and replacement',async t=>{const f=await fixture({config:{production:true,origin:'https://community.example.com'}});t.after(f.cleanup);
  assert.equal((await f.call('/api/admin/stats')).status,401);
- assert.equal((await f.call('/api/admin/login',{admin:true,body:{username:'admin',password,code:'000000'}})).status,401);
- const auth=await f.login();assert.equal(auth.status,200);assert.match(auth.headers.get('set-cookie'),/__Host-community_session=/);assert.match(auth.headers.get('set-cookie'),/HttpOnly; Secure; SameSite=Strict/);
- assert.equal((await f.login()).status,401);
+ assert.equal((await f.call('/api/admin/login',{admin:true,body:{username:'admin',password:'incorrect password'}})).status,401);
+ assert.equal((await f.call('/api/admin/login',{admin:true,body:{username:'admin',password,code:'123456'}})).status,400);
+ let auth=await f.login();assert.equal(auth.status,200);assert.match(auth.headers.get('set-cookie'),/__Host-community_session=/);assert.match(auth.headers.get('set-cookie'),/HttpOnly; Secure; SameSite=Strict/);
+ const previous=auth;auth=await f.login();assert.equal(auth.status,200);assert.equal((await f.call('/api/admin/stats',{cookie:previous.cookie})).status,401);
  assert.equal((await f.call('/api/admin/logout',{admin:true,cookie:auth.cookie,body:{}})).status,403);
  assert.equal((await f.call('/api/admin/logout',{admin:true,cookie:auth.cookie,csrf:auth.csrf,body:{},headers:{Origin:'https://attacker.test'}})).status,403);
  assert.equal((await f.call('/api/admin/logout',{admin:true,cookie:auth.cookie,csrf:auth.csrf,body:{}})).status,200);assert.equal((await f.call('/api/admin/stats',{cookie:auth.cookie})).status,401);
- f.advance(30001);const newer=await f.login();assert.equal(newer.status,200);f.advance(1800001);assert.equal((await f.call('/api/admin/stats',{cookie:newer.cookie})).status,401);
+ const newer=await f.login();assert.equal(newer.status,200);f.advance(1800001);assert.equal((await f.call('/api/admin/stats',{cookie:newer.cookie})).status,401);
 });
 test('replies are moderated, indented, scoped to their post and hidden with their ancestor',async t=>{const f=await fixture();t.after(f.cleanup);const auth=await f.login(),moderate=id=>f.call(`/api/admin/comments/${id}/moderate`,{admin:true,cookie:auth.cookie,csrf:auth.csrf,body:{status:'approved'}});
  await f.call('/api/public/comments',{body:f.comment()});await moderate(1);
@@ -67,5 +75,21 @@ test('parent eligibility is rechecked after asynchronous CAPTCHA validation',asy
  const pending=f.call('/api/public/comments',{body:f.comment({parent:1,captchaToken:'valid-delayed'})});while(!release)await new Promise(resolve=>setImmediate(resolve));await f.call('/api/admin/comments/1/moderate',{admin:true,cookie:auth.cookie,csrf:auth.csrf,body:{status:'rejected'}});release(true);assert.equal((await pending).data.error,'invalid_parent');assert.equal(f.app.store.get('SELECT count(*) AS n FROM comments').n,1);
 });
 test('missing CAPTCHA configuration fails readiness closed',async t=>{const f=await fixture({config:{siteKey:'',captchaSecret:''}});t.after(f.cleanup);assert.equal((await f.call('/health')).status,503);assert.equal((await f.call('/live')).status,200);assert.equal((await f.call('/api/public/comments',{body:f.comment()})).status,503);});
-test('moderation, rate limits and deduplication survive restart; withdrawn posts disappear publicly',async t=>{const f=await fixture({config:{commentsPerSecond:1}});t.after(f.cleanup);await f.call('/api/public/comments',{body:f.comment()});await f.app.close();const next=createApplication({...f.config,posts:f.config.posts.filter(p=>p.path!==posts[1].path)},{now:f.now,verifyCaptcha:async()=>true});await new Promise(r=>next.server.listen(0,'127.0.0.1',r));t.after(()=>next.close());assert.equal(next.store.get('SELECT count(*) AS n FROM comments').n,1);assert.equal(next.store.get('SELECT enabled FROM posts WHERE path=?',posts[1].path).enabled,0);assert.equal(next.store.limit('comment:second',1,1000,f.now()),false);const r=await fetch('http://127.0.0.1:'+next.server.address().port+'/api/public/comments?post='+posts[1].path);assert.equal(r.status,404);});
-test('CAPTCHA verification checks success, hostname and action and fails closed on provider error',async()=>{const original=globalThis.fetch;const config={captchaSecret:'secret',allowTestCaptcha:false,captchaHosts:['example.com']};try{for(const[data,expected]of [[{success:true,hostname:'example.com',action:'comment'},true],[{success:true,hostname:'evil.com',action:'comment'},false],[{success:true,hostname:'example.com',action:'login'},false],[{success:false,hostname:'example.com',action:'comment'},false]]){globalThis.fetch=async()=>({ok:true,json:async()=>data});assert.equal(await verifyTurnstile(config,'token','127.0.0.1'),expected);}globalThis.fetch=async()=>{throw Error('offline');};assert.equal(await verifyTurnstile(config,'token','127.0.0.1'),false);}finally{globalThis.fetch=original;}});
+test('moderation and limits survive restart; withdrawn pages are rechecked without a catalogue',async t=>{
+ const f=await fixture({config:{commentsPerSecond:1}});t.after(f.cleanup);
+ await f.call('/api/public/comments',{body:f.comment()});await f.app.close();
+ f.pages.delete(posts[1].path);
+ const next=createApplication(f.config,{now:f.now,fetchPage:f.fetchPage,verifyCaptcha:async()=>true});
+ await new Promise(r=>next.server.listen(0,'127.0.0.1',r));t.after(()=>next.close());
+ assert.equal(next.store.get('SELECT count(*) AS n FROM comments').n,1);
+ assert.equal(next.store.limit('comment:second',1,1000,f.now()),false);
+ const r=await fetch('http://127.0.0.1:'+next.server.address().port+'/api/public/comments?post='+posts[1].path);
+ assert.equal(r.status,404);assert.equal(next.store.get('SELECT enabled FROM posts WHERE path=?',posts[1].path).enabled,0);
+});
+test('ARCaptcha verification uses JSON, binds both keys and fails closed on invalid or failed responses',async()=>{const original=globalThis.fetch;const config={siteKey:'site-key',captchaSecret:'secret'};try{
+ for(const[data,expected]of [[{success:true},true],[{success:false},false],[{success:'true'},false],[{error:'invalid-input-sitekey'},false]]){
+  globalThis.fetch=async(url,options)=>{assert.equal(url,'https://api.arcaptcha.co/arcaptcha/api/verify');assert.equal(options.headers['Content-Type'],'application/json');assert.deepEqual(JSON.parse(options.body),{site_key:'site-key',secret_key:'secret',challenge_id:'token'});return {ok:true,json:async()=>data};};assert.equal(await verifyARCaptcha(config,'token','127.0.0.1'),expected);
+ }
+ globalThis.fetch=async()=>({ok:false});assert.equal(await verifyARCaptcha(config,'token','127.0.0.1'),false);
+ globalThis.fetch=async()=>{throw Error('offline');};assert.equal(await verifyARCaptcha(config,'token','127.0.0.1'),false);
+}finally{globalThis.fetch=original;}});

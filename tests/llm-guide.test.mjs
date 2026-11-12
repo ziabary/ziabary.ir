@@ -523,7 +523,7 @@ test('catalog models have sourced profiles, downloads and run paths; assessed mo
     }
     assert.ok(profile.runGuides.length && profile.runGuides.every(run => run.engine.trim() && run.label.trim() && run.href.startsWith('https://') && run.evidenceIds.length));
     const catalogOnly = ['model:liquidai-lfm2-5-vl-3b', 'model:liquidai-lfm2-5-vl-3b-dspark', 'model:qwen-image-2-1', 'model:zai-org-glm-5', 'model:zai-org-glm-5-1', 'model:zai-org-glm-5-2', 'model:zai-org-glm-5-3-bf16', 'model:moonshotai-kimi-k2-6', 'model:moonshotai-kimi-k2-7-code', 'model:moonshotai-kimi-k3', 'model:cohere-embed-v5-pro', 'model:cohere-embed-v5-fast', 'model:cloudflare-clef', 'model:cloudflare-clef-flash', 'model:coherelabs-north-small-translate-1-0', 'model:bespokelabs-bespoke-nimble-9b', 'model:zai-org-glm-5-3-flash'];
-    assert.equal(dataset.modelUseGuidance.some(item => item.modelVersionId === model.id && item.description.trim() && item.evidenceIds.length), !catalogOnly.includes(model.id), model.id);
+    assert.equal(dataset.modelUseGuidance.some(item => item.modelVersionId === model.id && item.description.trim() && item.evidenceIds.length), !model.dependency && !catalogOnly.includes(model.id), model.id);
     if (!['model:cohere-embed-v5-pro', 'model:cohere-embed-v5-fast', 'model:cloudflare-clef', 'model:cloudflare-clef-flash'].includes(model.id)) {
       assert.ok(dataset.artifactListings.some(item => item.modelVersionId === model.id && item.authority === 'official'), model.id);
     }

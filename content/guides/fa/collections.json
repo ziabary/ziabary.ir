@@ -191,6 +191,143 @@
     ]
   },
   {
+    "slug": "enterprise-ai-governance",
+    "status": "published",
+    "title": "حکمرانی هوش مصنوعی در سازمان",
+    "subtitle": "از تعریف مسئله و حق تصمیم تا معماری، کنترل ریسک و پذیرش سامانه",
+    "eyebrow": "درس‌های دورهٔ DBA",
+    "tag": "حکمرانی هوش مصنوعی در سازمان",
+    "image": "/images/guides/enterprise-ai-governance.png",
+    "imageAlt": "جلسهٔ تصمیم‌گیری مدیران در کنار تیم‌های فنی و پایش سامانه‌های هوش مصنوعی",
+    "intro": "این درس‌نامه‌ها بر پایهٔ مباحث و اسلایدهای درس «حکمرانی هوش مصنوعی در سازمان» در دورهٔ DBA هوش مصنوعی در کسب‌وکار دانشگاه تهران تدوین شده‌اند. کلیات موضوع با روایت جلسه‌های یک سازمان و دنبال‌کردن پروندهٔ یک دستیار هوش مصنوعی توضیح داده می‌شوند؛ به زبانی که برای خوانندگان فنی و غیرفنی قابل فهم باشد. مخاطب اصلی مجموعه مدیران سازمان‌ها، به‌ویژه مدیران ارشد و مدیران فناوری اطلاعات (IT) هستند. درس‌ها برای همهٔ کسانی که می‌خواهند نقش هوش مصنوعی و مسئولیت‌های پیرامون آن را در محیط کار بشناسند، چه مدیر باشند و چه نباشند، کاربرد دارند.\n\nمحور اصلی مجموعه، طراحی حق تصمیم، مسئولیت و سازوکار ارزیابی در کاربردهای سازمانی هوش مصنوعی است. پروندهٔ یک دستیار سازمانی، مسیر مشترک درس‌ها را می‌سازد؛ در کنار آن، نمونهٔ پیش‌بینی خرابی تجهیزات نشان می‌دهد کدام اصول میان کاربردها مشترک‌اند و کدام ارزیابی‌ها و کنترل‌ها باید متناسب با هر کاربرد تغییر کنند.\n\nاز تعریف مسئله و حق تصمیم تا داده، ریسک، معماری، قرارداد و بهره‌برداری پیش رفته و در هر درس، روایت را با توضیح مفاهیم، نکات کلیدی و تمرین همراه می‌شود. طبیعتا این درسنامه‌ها جایگزین کلاس حضوری نیستند. در کلاس، مباحث با مثال‌های عملی و انتقال تجربه بسط داده شده‌اند؛ به همین دلیل، تدریس این مجموعه در مجموع ۱۶ ساعت زمان برده است و امکان برگزاری تخصصی آن برای مجموعه‌هایی که درخواست داشته باشند میسر می‌باشد. ",
+    "source": {
+      "title": "اسلایدهای دورهٔ حکمرانی هوش مصنوعی در سازمان",
+      "href": "/slides/enterprise-ai-governance-dba/"
+    },
+    "items": [
+      {
+        "id": "enterprise-ai-governance-where-to-start",
+        "title": "حکمرانی هوش مصنوعی در سازمان از کجا آغاز می‌شود",
+        "subtitle": "درس اول؛ از درخواست یک دستیار تا تعریف مسئله، دامنه و یک آزمایش قابل ارزیابی.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-where-to-start/"
+      },
+      {
+        "id": "enterprise-ai-governance-roles-accountability",
+        "title": "چه کسی پاسخ‌گوی دستیار هوش مصنوعی سازمان است",
+        "subtitle": "درس دوم؛ چهار کلاه مسئولیت، تقسیم نقش‌ها میان افراد و گروه‌ها و پیگیری نتیجهٔ خدمت.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-roles-accountability/"
+      },
+      {
+        "id": "enterprise-ai-governance-decision-rights",
+        "title": "چه کسی حق تصمیم دارد",
+        "subtitle": "درس سوم؛ حق پیشنهاد، ارزیابی، تصویب و توقف، مدل‌های حکمرانی، مرکز تعالی و دروازه‌های تصمیم.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-decision-rights/"
+      },
+      {
+        "id": "enterprise-ai-governance-scope-screening",
+        "title": "چه چیزی واقعاً باید زیر حکمرانی هوش مصنوعی قرار گیرد",
+        "subtitle": "درس چهارم؛ تمایز هوشمندسازی، هوش تجاری و هوش مصنوعی و تشخیص قلمرو و شدت حکمرانی هر کاربرد.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-scope-screening/"
+      },
+      {
+        "id": "enterprise-ai-governance-problem-framing",
+        "title": "پیش از انتخاب هوش مصنوعی، مسئله را درست تعریف کنیم",
+        "subtitle": "درس پنجم؛ شناخت سازمان، تله‌های صورت‌بندی، بررسی علت‌ها و روشن‌کردن اعتبار اسناد و مسئولیت محتوا.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-problem-framing/"
+      },
+      {
+        "id": "enterprise-ai-governance-charter-portfolio-pilot",
+        "title": "پایلوت هوش مصنوعی چه چیزی را باید اثبات کند؟",
+        "subtitle": "درس ششم؛ منشور پروژه، اولویت سرمایه‌گذاری و اثبات امکان، ارزش و قابلیت بهره‌برداری در پایلوت.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-charter-portfolio-pilot/"
+      },
+      {
+        "id": "enterprise-ai-governance-impact-error-cost",
+        "title": "خطای هوش مصنوعی برای چه کسی گران تمام می‌شود؟",
+        "subtitle": "درس هفتم؛ پیامد استفاده، هزینهٔ خطا و سنجش شدت، گستره، برگشت‌پذیری و امکان اعتراض.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-impact-error-cost/"
+      },
+      {
+        "id": "enterprise-ai-governance-authority-oversight",
+        "title": "دستیار هوش مصنوعی تا کجا حق اقدام دارد؟",
+        "subtitle": "درس هشتم؛ حدود اختیار دستیار، شواهد متناسب با ریسک، تأیید انسانی و امکان توقف.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-authority-oversight/"
+      },
+      {
+        "id": "enterprise-ai-governance-architecture-control-ownership",
+        "title": "ساخت یا خرید هوش مصنوعی؛ کنترل چه چیزی باید دست سازمان بماند؟",
+        "subtitle": "درس نهم؛ انتخاب معماری و شیوهٔ تأمین، مسئولیت اجزا، کنترل دارایی‌ها و امکان تغییر تأمین‌کننده.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-architecture-control-ownership/"
+      },
+      {
+        "id": "enterprise-ai-governance-generative-fit",
+        "title": "آیا هر مسئله‌ای به هوش مصنوعی مولد نیاز دارد؟",
+        "subtitle": "درس دهم؛ انتخاب قابلیت مناسب، ارزیابی خروجی، ریسک تولید محتوا و الگوهای ادارهٔ دستیار سازمانی.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-generative-fit/"
+      },
+      {
+        "id": "enterprise-ai-governance-security-access-control",
+        "title": "امنیت دستیار را کجا و چگونه کنترل کنیم؟",
+        "subtitle": "درس یازدهم؛ امنیت در کل مسیر خدمت، پایش رفتار و کنترل مجوز پیش از خواندن منبع و اجرای اقدام.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-security-access-control/"
+      },
+      {
+        "id": "enterprise-ai-governance-maturity-zero-trust",
+        "title": "بلوغ مهندسی و کنترل در پشتیبانی از حکمرانی",
+        "subtitle": "درس دوازدهم؛ مسیر نسخه‌گذاری، ارزیابی، انتشار کنترل‌شده و حفاظت از داده چگونه اجرای تصمیم‌های حکمرانی را پشتیبانی می‌کند؟ صورت‌بندی سطوح این درس به بلوغ مهندسی و کنترل مربوط است و همهٔ ابعاد بلوغ حکمرانی سازمان را پوشش نمی‌دهد.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-maturity-zero-trust/"
+      },
+      {
+        "id": "enterprise-ai-governance-human-oversight-accountability",
+        "title": "ناظر انسانی چه زمانی واقعاً می‌تواند مداخله کند؟",
+        "subtitle": "درس سیزدهم؛ شرایط نظارت انسانی، حق توقف و پاسخ‌گویی؛ از رسیدگی به رخداد تا بازگشت خدمت.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-human-oversight-accountability/"
+      },
+      {
+        "id": "enterprise-ai-governance-contract-deliverables",
+        "title": "در قرارداد هوش مصنوعی، دقیقاً چه چیزی تحویل می‌گیریم؟",
+        "subtitle": "درس چهاردهم؛ موضوع تحویل، تعهد قابل آزمون، دارایی‌های لازم برای ادامهٔ خدمت و محل آموزش مدل.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-contract-deliverables/"
+      },
+      {
+        "id": "enterprise-ai-governance-evaluation-acceptance",
+        "title": "پذیرش دستیار هوش مصنوعی به چه شواهدی نیاز دارد؟",
+        "subtitle": "درس پانزدهم؛ صحت پاسخ، هزینهٔ خطا، آزمون مستقل و پذیرش چندلایه؛ از دمو تا استقرار مرحله‌ای.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-evaluation-acceptance/"
+      },
+      {
+        "id": "enterprise-ai-governance-audit-lifecycle-decision",
+        "title": "حکمرانی هوش مصنوعی با تحویل پروژه پایان نمی‌یابد",
+        "subtitle": "درس شانزدهم؛ پروندهٔ قابل حسابرسی، بهره‌برداری و تغییر، پایان عمر سامانه و مصوبهٔ نهایی دستیار سازمانی.",
+        "kind": "article",
+        "href": "/articles/enterprise-ai-governance-audit-lifecycle-decision/"
+      },
+      {
+        "id": "enterprise-ai-governance-from-decision-to-practice",
+        "title": "حکمرانی هوش مصنوعی با امکانات موجود؛ از مصوبه تا اجرا",
+        "subtitle": "مکمل و پایان‌بندی دوره؛ روایت اجرای مصوبه با امکانات موجود، همراه با کاربرگ‌های شروع، تقسیم مسئولیت و ثبت تصمیم.",
+        "kind": "article",
+        "role": "supplement",
+        "href": "/articles/enterprise-ai-governance-from-decision-to-practice/"
+      }
+    ]
+  },
+  {
     "slug": "secure-operating-system",
     "status": "published",
     "translations": {

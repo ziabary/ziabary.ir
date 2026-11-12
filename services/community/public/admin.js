@@ -1,40 +1,95 @@
 const $=id=>document.getElementById(id),number=new Intl.NumberFormat('fa-IR'),date=value=>new Intl.DateTimeFormat('fa-IR',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Tehran'}).format(new Date(value));
+const chartDate=new Intl.DateTimeFormat('fa-IR-u-ca-persian',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Asia/Tehran'});
+const chartShortDate=new Intl.DateTimeFormat('fa-IR-u-ca-persian',{month:'2-digit',day:'2-digit',timeZone:'Asia/Tehran'});
+const formatChartDay=(day,short=false)=>(short?chartShortDate:chartDate).format(new Date(day+'T12:00:00Z'));
 const el=(tag,text,attrs={})=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=String(text);for(const[k,v]of Object.entries(attrs))node.setAttribute(k,v);return node;};
-const labels={pending:'در انتظار بررسی',approved:'منتشرشده',rejected:'ردشده',spam:'هرزنامه',deleted:'حذف‌شده',login:'ورود مدیر',failed_login:'تلاش ناموفق ورود',logout:'خروج مدیر',moderate:'بررسی نظر',reply:'انتشار پاسخ',block:'محدودیت شبکه',unblock:'رفع محدودیت',view_visit_details:'مشاهده جزئیات بازدید'};
-let csrf='',tab='comments',commentCursor=null,visitCursor=null,posts=[];
+const labels={pending:'در انتظار بررسی',approved:'منتشرشده',rejected:'ردشده',spam:'هرزنامه',deleted:'حذف‌شده',login:'ورود مدیر',failed_login:'تلاش ناموفق ورود',logout:'خروج مدیر',moderate:'بررسی نظر',reply:'انتشار پاسخ',block:'محدودیت شبکه',unblock:'رفع محدودیت',view_visit_details:'مشاهده جزئیات بازدید',import_historical_views:'واردسازی بازدیدهای پیشین',import_historical_visitors:'واردسازی بازدیدکنندگان پیشین'};
+let csrf='',tab='comments',commentCursor=null,commentRequest=0,visitCursor=null,posts=[];
 try{document.documentElement.dataset.theme=localStorage.getItem('community-admin-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}catch{}
 $('theme').onclick=()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('community-admin-theme',theme);}catch{}};
 function showLogin(){csrf='';$('dashboard').hidden=true;$('logout').hidden=true;$('login-panel').hidden=false;}
-const messages={rate_limited:'تعداد درخواست‌ها زیاد است. کمی بعد تلاش کنید.',invalid_credentials:'نام کاربری، رمز یا کد دومرحله‌ای درست نیست؛ کد تازه را وارد کنید.',csrf_failed:'نشست تغییر کرده است؛ صفحه را دوباره باز کنید.',invalid_parent:'برای پاسخ، نظر باید منتشرشده و در عمق مجاز باشد.',invalid_input:'اطلاعات واردشده را بررسی کنید.',post_not_found:'این صفحه در فهرست انتشار فعال نیست.'};
+const messages={rate_limited:'تعداد درخواست‌ها زیاد است. کمی بعد تلاش کنید.',invalid_credentials:'نام کاربری یا رمز عبور درست نیست.',csrf_failed:'نشست تغییر کرده است؛ صفحه را دوباره باز کنید.',invalid_parent:'برای پاسخ، نظر باید منتشرشده و در عمق مجاز باشد.',invalid_input:'اطلاعات واردشده را بررسی کنید.',post_not_found:'این صفحه در فهرست انتشار فعال نیست.'};
 async function api(path,body){const response=await fetch('/api/admin/'+path,{method:body?'POST':'GET',credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json','X-CSRF-Token':csrf}:{},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const data=await response.json();if(!response.ok){if(response.status===401&&path!=='login')showLogin();throw Error(messages[data.error]||'درخواست انجام نشد. دوباره تلاش کنید.');}return data;}
 async function task(fn){$('message').textContent='';try{await fn();}catch(error){$('message').textContent=error.message||'ارتباط با سرویس برقرار نشد.';}}
 function button(text,action,className=''){const b=el('button',text,{type:'button',class:className});b.onclick=()=>task(async()=>{b.disabled=true;try{await action();}finally{b.disabled=false;}});return b;}
 function empty(container,text){container.replaceChildren(el('p',text,{class:'empty'}));}
 const filter=()=>$('post').value;
-$('login').onsubmit=event=>{event.preventDefault();task(async()=>{const submit=$('login').querySelector('[type=submit]');submit.disabled=true;try{const data=await api('login',{username:$('username').value,password:$('password').value,code:$('code').value});csrf=data.csrf;$('password').value='';$('code').value='';await authenticated();}finally{submit.disabled=false;}});};
+$('login').onsubmit=event=>{event.preventDefault();task(async()=>{const submit=$('login').querySelector('[type=submit]');submit.disabled=true;try{const data=await api('login',{username:$('username').value,password:$('password').value});csrf=data.csrf;$('password').value='';await authenticated();}finally{submit.disabled=false;}});};
 $('logout').onclick=()=>task(async()=>{await api('logout',{});showLogin();});
 async function authenticated(){ $('login-panel').hidden=true;$('dashboard').hidden=false;$('logout').hidden=false;await loadStats(false);await loadTab(); }
 for(const b of document.querySelectorAll('[data-tab]'))b.onclick=()=>task(async()=>{tab=b.dataset.tab;for(const n of document.querySelectorAll('[data-tab]')){n.classList.toggle('selected',n===b);if(n===b)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');}await loadTab();});
 async function loadTab(){for(const name of ['comments','analytics','audit','blocks'])$(name+'-panel').hidden=name!==tab;$('status-label').hidden=tab!=='comments';$('days-label').hidden=tab!=='analytics';$('post').parentElement.hidden=!['comments','analytics'].includes(tab);if(tab==='comments')await loadComments();else if(tab==='analytics')await loadStats();else if(tab==='audit')await loadAudit();else await loadBlocks();}
 $('refresh').onclick=()=>task(loadTab);$('status').onchange=()=>task(()=>loadComments());$('days').onchange=()=>task(()=>loadStats());$('post').onchange=()=>task(()=>tab==='comments'?loadComments():loadStats());
-async function loadComments(append=false){const data=await api('comments?status='+$('status').value+'&post='+encodeURIComponent(filter())+(append&&commentCursor?'&cursor='+commentCursor:''));commentCursor=data.nextCursor;const list=$('comments-list');if(!append)list.replaceChildren();
- for(const item of data.comments){const card=el('article',undefined,{class:'card'}),head=el('header',undefined,{class:'comment-head'});head.append(el('strong',item.author),el('span',date(item.created)+' · '+labels[item.status]));card.append(head,el('p',item.title+' · #'+number.format(item.id)+(item.parent?' · پاسخ به #'+number.format(item.parent):''),{class:'comment-context'}),el('p',item.body,{class:'comment-body'}));const actions=el('div',undefined,{class:'comment-actions'});
-  for(const[status,label]of [['approved','تأیید و انتشار'],['rejected','رد نظر'],['spam','هرزنامه'],['deleted','حذف از نمایش']])if(status!==item.status)actions.append(button(label,async()=>{if(status==='deleted'&&!confirm('این نظر و پاسخ‌های زیرمجموعه آن از نمایش عمومی خارج شوند؟'))return;await api(`comments/${item.id}/moderate`,{status});await loadComments();},status==='deleted'?'danger':''));
-  actions.append(button('محدودکردن این شبکه',async()=>{const reason=prompt('دلیل محدودیت هفت‌روزهٔ شبکه (حداقل سه حرف):');if(!reason)return;await api(`comments/${item.id}/block`,{reason,days:7});$('message').textContent='محدودیت هفت‌روزه ثبت شد.';}));card.append(actions);
-  if(item.status==='approved'&&item.depth<4){const reply=el('form',undefined,{class:'reply-form'}),label=el('label','پاسخ مدیر',{'for':'reply-'+item.id}),area=el('textarea',undefined,{id:'reply-'+item.id,required:'',minlength:'3',maxlength:'5000'}),submit=el('button','ثبت و انتشار پاسخ',{type:'submit'});reply.append(label,area,submit);reply.onsubmit=e=>{e.preventDefault();task(async()=>{submit.disabled=true;try{await api(`comments/${item.id}/reply`,{body:area.value});await loadComments();}finally{submit.disabled=false;}});};card.append(reply);}
-  list.append(card);
- }if(!list.children.length)empty(list,'نظری با این وضعیت وجود ندارد.');$('more-comments').hidden=!commentCursor;
+function renderComment(item,canReply){
+ const card=el('article',undefined,{class:'admin-comment'+($('status').value===item.status?' matches-filter':''),'data-comment-id':item.id}),head=el('header',undefined,{class:'comment-head'});
+ const author=el('strong',item.author);if(item.is_admin)author.append(el('span','مدیر',{class:'admin-badge'}));
+ head.append(author,el('span',date(item.created)+' · '+labels[item.status]));
+ card.append(head,el('p','#'+number.format(item.id)+(item.parent?' · پاسخ به #'+number.format(item.parent):' · آغاز گفتگو'),{class:'comment-context'}),el('p',item.body,{class:'comment-body'}));
+ const actions=el('div',undefined,{class:'comment-actions'});
+ for(const[status,label]of [['approved','تأیید و انتشار'],['rejected','رد نظر'],['spam','هرزنامه'],['deleted','حذف از نمایش']])if(status!==item.status)actions.append(button(label,async()=>{
+  if(status==='deleted'&&!confirm('این نظر و پاسخ‌های زیرمجموعه آن از نمایش عمومی خارج شوند؟'))return;
+  await api(`comments/${item.id}/moderate`,{status});await loadComments();
+ },status==='deleted'?'danger':''));
+ actions.append(button('محدودکردن این شبکه',async()=>{const reason=prompt('دلیل محدودیت هفت‌روزهٔ شبکه (حداقل سه حرف):');if(!reason)return;await api(`comments/${item.id}/block`,{reason,days:7});$('message').textContent='محدودیت هفت‌روزه ثبت شد.';}));card.append(actions);
+ if(canReply&&item.depth<4){
+  const composer=el('details',undefined,{class:'reply-composer'}),reply=el('form',undefined,{class:'reply-form'}),label=el('label','پاسخ مدیر',{'for':'reply-'+item.id}),area=el('textarea',undefined,{id:'reply-'+item.id,required:'',minlength:'3',maxlength:'5000'}),submit=el('button','ثبت و انتشار پاسخ',{type:'submit'});
+  reply.append(label,area,submit);reply.onsubmit=e=>{e.preventDefault();task(async()=>{submit.disabled=true;try{await api(`comments/${item.id}/reply`,{body:area.value});await loadComments();}finally{submit.disabled=false;}});};
+  composer.append(el('summary','پاسخ به این نظر'),reply);card.append(composer);
+ }
+ return card;
 }
-$('more-comments').onclick=()=>task(()=>loadComments(true));
-function metric(container,value,label){const card=el('div',undefined,{class:'metric'});card.append(el('strong',number.format(value)),el('span',label));container.append(card);}
+function renderThread(thread){
+ const card=el('article',undefined,{class:'card comment-thread','data-thread-id':thread.id}),heading=el('h2',thread.title,{id:'thread-title-'+thread.id});
+ card.setAttribute('aria-labelledby',heading.id);
+ card.append(heading,el('p','گفت‌وگوی #'+number.format(thread.id)+' · '+number.format(thread.count)+' نظر · آخرین تغییر: '+date(thread.updated),{class:'thread-meta'}));
+ const children=new Map();for(const item of thread.comments){if(!children.has(item.parent))children.set(item.parent,[]);children.get(item.parent).push(item);}
+ function branch(parent,ancestorsApproved){
+  const list=el('ol',undefined,{class:'thread-level'});
+  for(const item of children.get(parent)||[]){
+   const entry=el('li'),canReply=ancestorsApproved&&item.status==='approved';entry.append(renderComment(item,canReply));
+   if(children.has(item.id))entry.append(branch(item.id,canReply));list.append(entry);
+  }
+  return list;
+ }
+ card.append(branch(null,true));return card;
+}
+async function loadComments(append=false){
+ const request=++commentRequest,selectedPost=filter(),status=$('status').value;
+ const data=await api('comments?status='+status+'&post='+encodeURIComponent(selectedPost)+(append&&commentCursor?'&cursor='+encodeURIComponent(commentCursor):''));
+ if(request!==commentRequest||selectedPost!==filter()||status!==$('status').value)return;
+ commentCursor=data.nextCursor;const list=$('comments-list');if(!append)list.replaceChildren();
+ for(const thread of data.threads){const existing=[...list.children].find(card=>card.dataset.threadId===String(thread.id));if(existing)existing.replaceWith(renderThread(thread));else list.append(renderThread(thread));}
+ if(!list.children.length)empty(list,'گفت‌وگویی با این وضعیت وجود ندارد.');$('more-comments').hidden=!commentCursor;
+}
+$('more-comments').onclick=()=>task(async()=>{const button=$('more-comments');button.disabled=true;try{await loadComments(true);}finally{button.disabled=false;}});
+function metric(container,value,label){const card=el('div',undefined,{class:'metric'});card.append(el('strong',value==null?'—':number.format(value)),el('span',label));container.append(card);}
+function renderDailyChart(data){
+ const daily=$('daily');daily.replaceChildren();
+ const peak=Math.max(0,...data.daily.map(point=>point.views)),max=Math.max(1,peak),dense=data.daily.length>7;
+ daily.classList.toggle('dense',dense);
+ $('daily-scale').hidden=false;$('daily-scale').textContent='بیشترین بازدید روزانه: '+number.format(peak);
+ const axis=$('daily-axis');axis.hidden=false;
+ const current=el('span',undefined,{class:'chart-axis-current'});
+ current.append(el('time',formatChartDay(data.lastDay),{datetime:data.lastDay,dir:'ltr','aria-current':'date'}),el('span','امروز',{class:'today-badge'}));
+ axis.replaceChildren(el('time',formatChartDay(data.firstDay),{datetime:data.firstDay,dir:'ltr'}),current);
+ for(const point of data.daily){
+  const today=point.day===data.lastDay,label=formatChartDay(point.day)+' · '+number.format(point.views)+' بازدید'+(today?' · امروز':'');
+  const bar=el('div',undefined,{class:'bar'+(today?' is-today':''),role:'listitem',title:label,'aria-label':label,'data-day':point.day}),fill=el('div',undefined,{class:'bar-fill'});
+  fill.style.height=Math.max(3,Math.round(point.views/max*135))+'px';
+  bar.append(el('span',number.format(point.views)),fill,el('time',formatChartDay(point.day,true),{datetime:point.day,dir:'ltr'}));daily.append(bar);
+ }
+ if(!data.daily.length)empty(daily,'در این بازه بازدیدی ثبت نشده است.');
+}
 async function loadStats(render=true){const data=await api('stats?days='+$('days').value+'&post='+encodeURIComponent(filter()));posts=data.posts;
  const selected=filter();$('post').replaceChildren(el('option','همه صفحه‌ها',{value:''}));for(const post of posts)$('post').append(el('option',post.title+(post.enabled?'':' (غیرفعال)'),{value:post.path}));$('post').value=selected;
  for(const option of [...$('days').options])if(Number(option.value)>data.retentionDays)option.remove();
  if(!render)return;
- const metrics=$('metrics');metrics.replaceChildren();metric(metrics,data.summary.views,'بازدید در بازهٔ انتخابی');metric(metrics,data.summary.visitors,'بازدیدکنندهٔ تقریبی در بازه');metric(metrics,data.summary.ips,'نشانی شبکهٔ متفاوت در بازه');metric(metrics,data.lifetime.views,'کل بازدید ثبت‌شده از آغاز سرویس');metric(metrics,data.lifetime.visitors,'کل شناسه‌های مرورگر از آغاز سرویس');metric(metrics,data.lifetime.pending,'نظر در انتظار بررسی');
- const daily=$('daily');daily.replaceChildren();const max=Math.max(1,...data.daily.map(x=>x.views));for(const point of data.daily){const bar=el('div',undefined,{class:'bar',role:'listitem','aria-label':point.day+': '+number.format(point.views)+' بازدید'}),fill=el('div',undefined,{class:'bar-fill'});fill.style.height=Math.max(3,Math.round(point.views/max*135))+'px';bar.append(el('span',number.format(point.views)),fill,el('time',point.day.slice(5),{datetime:point.day}));daily.append(bar);}if(!data.daily.length)empty(daily,'در این بازه بازدیدی ثبت نشده است.');
+ $('analytics-note').hidden=data.breakdownsComplete!==false;
+ $('details-retention').textContent='ریز بازدیدها تا '+number.format(data.detailsRetentionDays)+' روز نگه‌داری می‌شوند؛ خلاصه‌های روزانه تا '+number.format(data.retentionDays)+' روز باقی می‌مانند.';
+ const metrics=$('metrics');metrics.replaceChildren();metric(metrics,data.summary.views,'بازدید در بازهٔ انتخابی');metric(metrics,data.summary.visitors,'بازدیدکنندهٔ تقریبی در بازه');metric(metrics,data.summary.ips,'نشانی شبکهٔ متفاوت در بازه');metric(metrics,data.lifetime.views,'کل بازدید');metric(metrics,data.lifetime.visitors,'کل شناسه‌های مرورگر از آغاز سرویس');metric(metrics,data.lifetime.pending,'نظر در انتظار بررسی');if(data.lifetime.historicalViews)metric(metrics,data.lifetime.historicalViews,'بازدیدهای پیش از راه‌اندازی سرویس');
+ renderDailyChart(data);
  const breakdowns=$('breakdowns');breakdowns.replaceChildren();for(const[key,title]of [['browsers','مرورگرها'],['systems','سیستم‌عامل‌ها'],['languages','زبان مرورگر'],['referrers','مبدأ ورود']]){const section=el('section',undefined,{class:'card'});section.append(el('h2',title));for(const row of data[key]){const line=el('div',undefined,{class:'breakdown-row'});line.append(el('span',row.label||'ورود مستقیم'),el('strong',number.format(row.count)));section.append(line);}breakdowns.append(section);}
- const table=$('posts-table');table.replaceChildren();for(const post of posts){const row=el('tr');const title=el('td');title.append(button(post.title,async()=>{$('post').value=post.path;await loadStats();}));row.append(title,...[post.views,post.visitors,post.periodViews,post.pending].map(n=>el('td',number.format(n))));table.append(row);}$('visits-table').replaceChildren();visitCursor=null;$('more-visits').hidden=true;
+ const table=$('posts-table');table.replaceChildren();for(const post of posts){const row=el('tr');const title=el('td');title.append(button(post.title,async()=>{$('post').value=post.path;await loadStats();}));row.append(title,...[post.views,post.historicalViews,post.visitors,post.historicalVisitors,post.periodViews,post.pending].map(n=>el('td',number.format(n))));table.append(row);}$('visits-table').replaceChildren();visitCursor=null;$('more-visits').hidden=true;
 }
 async function loadVisits(append=false){const data=await api('visits?post='+encodeURIComponent(filter())+(append&&visitCursor?'&cursor='+visitCursor:''));visitCursor=data.nextCursor;if(!append)$('visits-table').replaceChildren();for(const v of data.visits){const row=el('tr');for(const text of [date(v.created),posts.find(p=>p.path===v.post)?.title||v.post,v.ip,v.fingerprint,v.browser+' / '+v.os,v.language+' / '+v.timezone,v.screen,v.referrer||'ورود مستقیم'])row.append(el('td',text));$('visits-table').append(row);}$('more-visits').hidden=!visitCursor;}
 $('load-visits').onclick=()=>task(()=>loadVisits());$('more-visits').onclick=()=>task(()=>loadVisits(true));

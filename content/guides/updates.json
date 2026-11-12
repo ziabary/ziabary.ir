@@ -1,5 +1,131 @@
 [
   {
+    "id": "granite411",
+    "guide": "llm",
+    "date": "2026-11-08",
+    "kind": "model",
+    "target": "model:ibm-granite-granite-switch-4-1-8b",
+    "copy": {
+      "fa": {
+        "title": "Granite Switch 4.1.1؛ به‌روزرسانی اجزا",
+        "summary": "ASR و adapter تصمیم به‌روز شدند؛ مدل پایهٔ 4.1 و سازگاری با آن حفظ شده‌اند."
+      },
+      "en": {
+        "title": "Granite Switch 4.1.1 component update",
+        "summary": "Updated ASR and the Decision adapter; the 4.1 base model and backward compatibility are preserved."
+      },
+      "es": {
+        "title": "Actualización de componentes Granite Switch 4.1.1",
+        "summary": "Actualizados ASR y el adaptador Decision; se conservan el modelo base 4.1 y la compatibilidad anterior."
+      }
+    }
+  },
+  {
+    "id": "llama1108",
+    "guide": "llm",
+    "date": "2026-11-08",
+    "kind": "software",
+    "target": "llama.cpp",
+    "copy": {
+      "fa": {
+        "title": "مسیرهای تازه و اصلاحات llama.cpp",
+        "summary": "پشتیبانی متنی Kimi-K3.1-Pro، مسیر Mage، اجرای CPU برای MoE و اصلاحات Vulkan، SYCL و tensor split ثبت شدند."
+      },
+      "en": {
+        "title": "New llama.cpp routes and fixes",
+        "summary": "Added text-only Kimi-K3.1-Pro, Mage, CPU MoE cache misses and Vulkan, SYCL and tensor-split fixes."
+      },
+      "es": {
+        "title": "Nuevas rutas y correcciones de llama.cpp",
+        "summary": "Añadidos Kimi-K3.1-Pro solo texto, Mage, MoE en CPU y correcciones Vulkan, SYCL y tensor split."
+      }
+    }
+  },
+  {
+    "id": "gpt6cyber",
+    "guide": "llm",
+    "date": "2026-11-08",
+    "kind": "api",
+    "target": "gpt-6-cyber",
+    "copy": {
+      "fa": {
+        "title": "GPT-6 Cyber با دسترسی Daybreak Red",
+        "summary": "مدل تخصصی امنیت با زمینهٔ ۱٬۰۵۰٬۰۰۰ و خروجی حداکثر ۱۲۸٬۰۰۰ توکن به فهرست API اضافه شد."
+      },
+      "en": {
+        "title": "GPT-6 Cyber with Daybreak Red access",
+        "summary": "Added the restricted security model to the API catalogue: 1,050,000 context and up to 128,000 output tokens."
+      },
+      "es": {
+        "title": "GPT-6 Cyber con acceso Daybreak Red",
+        "summary": "Añadido al catálogo API el modelo de seguridad de acceso restringido: contexto de 1.050.000 y hasta 128.000 tokens de salida."
+      }
+    }
+  },
+  {
+    "id": "parse35",
+    "guide": "llm",
+    "date": "2026-11-08",
+    "kind": "model",
+    "target": "model:nemotron-3.5-parse",
+    "copy": {
+      "fa": {
+        "title": "Nemotron Parse با DFlash2 بومی",
+        "summary": "استخراج ساختار سند و مدل کمکی ۸۹٫۳M اضافه شدند؛ مسیر بومی DFlash2 از محیط MTP جداست."
+      },
+      "en": {
+        "title": "Nemotron Parse with native DFlash2",
+        "summary": "Added document parsing and the 89.3M companion; native DFlash2 is separate from the MTP environment."
+      },
+      "es": {
+        "title": "Nemotron Parse con DFlash2 nativo",
+        "summary": "Añadidos parsing documental y el auxiliar de 89,3M; DFlash2 nativo usa una ruta distinta del entorno MTP."
+      }
+    }
+  },
+  {
+    "id": "kanana2v",
+    "guide": "llm",
+    "date": "2026-11-08",
+    "kind": "model",
+    "target": "model:kanana-2-v-decide-3b-2611",
+    "copy": {
+      "fa": {
+        "title": "Kanana برای تصمیم‌گیری روی متن و تصویر",
+        "summary": "مدل ۳٫۶۷B با خروجی احتمال و امتیاز، ورودی حداکثر ۱۰ تصویر و شرایط مجوز تجاری اضافه شد."
+      },
+      "en": {
+        "title": "Kanana text and image decisions",
+        "summary": "Added the 3.67B probability/scoring model, up to 10 input images and its commercial license conditions."
+      },
+      "es": {
+        "title": "Decisiones Kanana sobre texto e imagen",
+        "summary": "Añadido el modelo de 3,67B de probabilidades y puntuación, hasta 10 imágenes de entrada y condiciones comerciales."
+      }
+    }
+  },
+  {
+    "id": "cola2",
+    "guide": "llm",
+    "date": "2026-11-08",
+    "kind": "model",
+    "target": "model:bytedance-seed-cola2",
+    "copy": {
+      "fa": {
+        "title": "Cola2؛ مدل پایه با معماری انتشار",
+        "summary": "وزن‌های F32 و مسیر Transformers اضافه شد؛ مجوز کد Apache-2.0 به وزن‌ها تعمیم داده نشده است."
+      },
+      "en": {
+        "title": "Cola2 continuous-latent base model",
+        "summary": "Added F32 weights and the Transformers route; the code’s Apache-2.0 license is kept separate from weight terms."
+      },
+      "es": {
+        "title": "Cola2, modelo base de latentes continuos",
+        "summary": "Añadidos pesos F32 y la ruta Transformers; la licencia Apache-2.0 del código se mantiene separada de los términos de los pesos."
+      }
+    }
+  },
+  {
     "id": "mlarge4",
     "guide": "llm",
     "date": "2026-11-03",

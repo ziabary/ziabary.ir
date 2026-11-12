@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12182",
+  "tag": "b12182",
+  "published_at": "2026-11-07T03:30:52Z",
+  "prerelease": true,
+  "target_commitish": "fd27b2034905f8dadd8bd6d2cc44595f4929d391",
+  "body": "<details open>\n\nmeta : raise the compute view limit for buffers with few tensors (#31447)\n\n* ggml-backend-meta : minimum number of compute views per buffer\n\nAssisted-by: Claude Opus 5.5\n\n* tests : revert the deepseek41 test model to 6 layers\n\nAssisted-by: Claude Opus 5.5\n\n</details>"
+}

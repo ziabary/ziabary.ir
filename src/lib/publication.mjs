@@ -32,9 +32,15 @@ export function isPublished(item, today = publicationDay()) {
   return !applyPermanentDraftPolicy(item).draft && item.status !== 'planned' && dateOnly(item.date) <= today;
 }
 
-/** @param {{date:string, updated?:string, slug:string}} a @param {{date:string, updated?:string, slug:string}} b */
+/** @param {{date:string, updated?:string, slug:string, series?:string, seriesOrder?:number}} a @param {{date:string, updated?:string, slug:string, series?:string, seriesOrder?:number}} b */
 export function compareArticles(a, b) {
-  return (b.updated ?? b.date).localeCompare(a.updated ?? a.date) || b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug, 'en');
+  const groupA = a.series && Number.isFinite(a.seriesOrder) ? a.series : a.slug;
+  const groupB = b.series && Number.isFinite(b.seriesOrder) ? b.series : b.slug;
+  return (b.updated ?? b.date).localeCompare(a.updated ?? a.date)
+    || b.date.localeCompare(a.date)
+    || groupA.localeCompare(groupB, 'en')
+    || (b.seriesOrder ?? 0) - (a.seriesOrder ?? 0)
+    || a.slug.localeCompare(b.slug, 'en');
 }
 
 /** Publication requires an explicit editorial decision and usable, published material. */

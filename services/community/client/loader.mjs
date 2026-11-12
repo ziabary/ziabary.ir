@@ -1,11 +1,11 @@
 /** @typedef {{refresh:()=>Promise<void>,destroy:()=>void}} Widget */
-/** @typedef {{mount:(host:HTMLElement,options:{api:string,post:string,locale:string,health:unknown,onUnavailable:()=>void})=>Promise<Widget>,recordVisit:(options:{api:string,post:string,signal:AbortSignal})=>Promise<void>}} CommunityModule */
+/** @typedef {{mount:(host:HTMLElement,options:{api:string,post:string,locale:string,health:unknown,onUnavailable:()=>void})=>Promise<Widget>,mountStats:(host:HTMLElement,options:{api:string,post:string,locale:string})=>Promise<Widget>,recordVisit:(options:{api:string,post:string,signal:AbortSignal})=>Promise<boolean|void>}} CommunityModule */
 /**
  * No network, font, CAPTCHA, fingerprint work or visible placeholder before load + idle.
- * @param {{api:string,post:string,locale?:string,host?:HTMLElement,window?:Window & typeof globalThis,document?:Document,loadModule?:(url:string)=>Promise<CommunityModule>}} options
+ * @param {{api:string,post:string,locale?:string,host?:HTMLElement,mode?:'comments'|'stats',window?:Window & typeof globalThis,document?:Document,loadModule?:(url:string)=>Promise<CommunityModule>}} options
  */
-export function startCommunity({api,post,locale='fa',host,window:win=window,document:doc=document,loadModule=url=>import(/* @vite-ignore */ url)}) {
-  if(!api || new URL(win.location.href).searchParams.has('show-drafts') || /\bnoindex\b/.test(doc.querySelector?.('meta[name="robots"]')?.getAttribute('content')||''))return ()=>{};
+export function startCommunity({api,post,locale='fa',host,mode='comments',window:win=window,document:doc=document,loadModule=url=>import(/* @vite-ignore */ url)}) {
+  if(!api || new URL(win.location.href).searchParams.has('show-drafts') || /\b(?:noindex|none)\b/i.test(doc.querySelector?.('meta[name="robots"]')?.getAttribute('content')||''))return ()=>{};
   let base;try{const url=new URL(api);if(url.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(url.hostname))return ()=>{};base=url.href.replace(/\/$/,'');}catch{return ()=>{};}
   let stopped=false,busy=false,ready=false,timer=0,idle=0,delay=30000,visitorStarted=false,visitorTimer=0;
   /** @type {AbortController|undefined} */ let controller;
@@ -26,14 +26,14 @@ export function startCommunity({api,post,locale='fa',host,window:win=window,docu
       win.clearTimeout(timeout);
       let moduleTimer=0;
       /** @type {Promise<never>} */ const moduleTimeout=new Promise((_,reject)=>{moduleTimer=win.setTimeout(()=>reject(Error('timeout')),4000);});
-      const module=await Promise.race([loadModule(base+'/widget.js'),moduleTimeout]).finally(()=>win.clearTimeout(moduleTimer));
+      const module=await Promise.race([loadModule(base+'/widget.js?provider='+encodeURIComponent(health.captcha?.provider||'')+'&v='+encodeURIComponent(health.widgetRevision||'')),moduleTimeout]).finally(()=>win.clearTimeout(moduleTimer));
       if(stopped)return;
       if(host){
-        if(!widget)widget=await module.mount(host,{api:base,post,locale,health,onUnavailable:unavailable});
+        if(!widget)widget=mode==='stats'?await module.mountStats(host,{api:base,post,locale}):await module.mount(host,{api:base,post,locale,health,onUnavailable:unavailable});
         if(stopped){widget.destroy();return;}
         await widget.refresh();if(stopped)return;host.hidden=false;
       }
-      if(!visitorStarted){visitorStarted=true;visitorTimer=win.setTimeout(()=>{if(!stopped)module.recordVisit({api:base,post,signal:visitorController.signal}).then(()=>{if(!stopped)return widget?.refresh();}).catch(()=>{});},0);}
+      if(!visitorStarted){visitorStarted=true;visitorTimer=win.setTimeout(()=>{if(!stopped)module.recordVisit({api:base,post,signal:visitorController.signal}).then(recorded=>{if(stopped)return;if(recorded===false)visitorStarted=false;else return widget?.refresh();}).catch(()=>{if(!stopped){visitorStarted=false;unavailable();}});},0);}
       delay=30000;schedule(60000);
     }catch{if(!stopped)unavailable();}finally{busy=false;win.clearTimeout(timeout);}
   };

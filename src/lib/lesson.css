@@ -1,0 +1,101 @@
+/* Course stories and teaching notes share this presentation in both reading views. */
+.course-lesson {
+  --story-paper: #fbf5e9;
+  --story-ink: #493d2c;
+  --story-line: #dfcfad;
+  --story-accent: #88612c;
+  --lesson-paper: #e9f4f2;
+  --lesson-ink: #174943;
+  --lesson-accent: #28796f;
+}
+
+:root[data-theme='dark'] .course-lesson {
+  --story-paper: #24231d;
+  --story-ink: #e7ddc8;
+  --story-line: #554b37;
+  --story-accent: #d0ac67;
+  --lesson-paper: #112e2d;
+  --lesson-ink: #d1e8e2;
+  --lesson-accent: #68b9ab;
+}
+
+.prose.course-lesson .lesson-story {
+  margin-block: 32px;
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px solid var(--story-line);
+  border-inline-start: 4px solid var(--story-accent);
+  border-radius: 12px;
+  background: var(--story-paper);
+  color: var(--story-ink);
+  overflow-wrap: anywhere;
+}
+
+.prose.course-lesson .lesson-story p {
+  margin-block: 0 18px;
+  color: inherit;
+  font-size: 17px;
+  line-height: 2.25;
+  text-align: start;
+}
+
+.prose.course-lesson .lesson-story p:last-child { margin-bottom: 0; }
+
+.prose.course-lesson .lesson-story .lesson-story-label {
+  width: fit-content;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--story-line);
+  color: var(--story-accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.prose.course-lesson blockquote {
+  margin: 30px 0;
+  padding: 20px 24px;
+  border: 0;
+  border-inline-start: 4px solid var(--lesson-accent);
+  border-radius: 0 10px 10px 0;
+  background: var(--lesson-paper);
+  color: var(--lesson-ink);
+}
+
+.prose.course-lesson blockquote p {
+  margin: 0;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.15;
+}
+
+.prose.course-lesson blockquote strong { color: inherit; }
+
+.prose.course-lesson .lesson-prompt {
+  margin-block: 30px;
+  padding: 20px 24px;
+  border: 1px solid var(--lesson-accent);
+  border-radius: 12px;
+  background: var(--lesson-paper);
+  color: var(--lesson-ink);
+}
+
+.prose.course-lesson .lesson-prompt p {
+  margin: 0;
+  color: inherit;
+  font-size: 17px;
+  line-height: 2.15;
+}
+
+.prose.course-lesson .lesson-prompt .lesson-prompt-label {
+  margin-bottom: 10px;
+  color: var(--lesson-accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .prose.course-lesson .lesson-story p { font-size: 16px; }
+  .prose.course-lesson blockquote { padding: 18px 20px; }
+  .prose.course-lesson blockquote p { font-size: 17px; }
+}

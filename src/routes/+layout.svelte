@@ -46,6 +46,6 @@
 
 <SiteShell locale={data.locale} pathname={data.pathname}>
   <slot />
+  {#key data.pathname}<CommunityBridge path={data.pathname} locale={data.locale} />{/key}
 </SiteShell>
 <ImageLightbox />
-{#key data.pathname}<CommunityBridge path={data.pathname} locale={data.locale} />{/key}

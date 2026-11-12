@@ -104,5 +104,8 @@ S3_ENDPOINT and S3_REGION, then run:
 
 See docs/content-model.md for the editorial structure.
 
+See [URL normalization](docs/deployment/url-normalization.md) for duplicate-slash
+redirects and the CDN configuration required by static hosting.
+
 See [content/README.md](content/README.md) for the separated content workspace,
 media backup requirements, preserved asset URLs and generated data policy.

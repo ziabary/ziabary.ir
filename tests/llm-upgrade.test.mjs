@@ -49,7 +49,7 @@ test('default columns preserve documented unknowns and model brands are local', 
         assert.equal(row.cells.context.state, 'not-applicable');
         continue;
       }
-      if (row.modelId === 'model:liquidai-lfm2-5-vl-3b-dspark' && column.key === 'modalities') {
+      if (d.models.find(model => model.id === row.modelId)?.dependency && column.key === 'modalities') {
         assert.equal(row.cells.modalities.state, 'not-applicable');
         continue;
       }
@@ -61,7 +61,7 @@ test('default columns preserve documented unknowns and model brands are local', 
   for (const model of d.models) {
     const brand = modules.brands.llmBrand(model.familyId);
     // The component omits the image when no verified local publisher asset exists.
-    if (['family:hy-mt','family:madlad','family:nllb','family:clef','family:north-translate','family:bespoke-nimble','family:k2-horizon','family:reflection-beam','family:muse','family:d3','family:mage'].includes(model.familyId)) { assert.equal(brand, undefined); continue; }
+    if (['family:hy-mt','family:madlad','family:nllb','family:clef','family:north-translate','family:bespoke-nimble','family:k2-horizon','family:reflection-beam','family:muse','family:d3','family:mage','family:cola2','family:kanana'].includes(model.familyId)) { assert.equal(brand, undefined); continue; }
     assert.ok(brand?.startsWith('/images/'), model.familyId);
     assert.ok(fs.existsSync('static' + brand), brand);
   }

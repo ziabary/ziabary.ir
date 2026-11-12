@@ -40656,5 +40656,157 @@
       "Transformers",
       "SGLang"
     ]
+  },
+  {
+    "id": "artifact-listing:bytedance-seed-cola2-f32",
+    "modelVersionId": "model:bytedance-seed-cola2",
+    "baseModelRepository": "ByteDance-Seed/Cola2",
+    "baseRevision": "db876b905cf719b60da33c12a75021ac111f7a67",
+    "publisher": "ByteDance Seed",
+    "authority": "official",
+    "format": "safetensors",
+    "precision": "F32",
+    "variant": "F32",
+    "repositoryUrl": "https://huggingface.co/ByteDance-Seed/Cola2",
+    "filesUrl": "https://huggingface.co/ByteDance-Seed/Cola2/tree/db876b905cf719b60da33c12a75021ac111f7a67",
+    "repositoryRevision": "db876b905cf719b60da33c12a75021ac111f7a67",
+    "files": [
+      {
+        "path": "model-00001-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00001-of-00008.safetensors",
+        "bytes": 4982015912
+      },
+      {
+        "path": "model-00002-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00002-of-00008.safetensors",
+        "bytes": 4981935960
+      },
+      {
+        "path": "model-00003-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00003-of-00008.safetensors",
+        "bytes": 4929556032
+      },
+      {
+        "path": "model-00004-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00004-of-00008.safetensors",
+        "bytes": 4995689400
+      },
+      {
+        "path": "model-00005-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00005-of-00008.safetensors",
+        "bytes": 4944309960
+      },
+      {
+        "path": "model-00006-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00006-of-00008.safetensors",
+        "bytes": 4996750576
+      },
+      {
+        "path": "model-00007-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00007-of-00008.safetensors",
+        "bytes": 4985453864
+      },
+      {
+        "path": "model-00008-of-00008.safetensors",
+        "url": "https://huggingface.co/ByteDance-Seed/Cola2/resolve/db876b905cf719b60da33c12a75021ac111f7a67/model-00008-of-00008.safetensors",
+        "bytes": 256494996
+      }
+    ],
+    "totalBytes": 35072206700,
+    "verifiedOn": "2026-11-08",
+    "evidenceIds": [
+      "evidence:tables1108-cola-files"
+    ],
+    "runtimeEngines": [
+      "Transformers"
+    ]
+  },
+  {
+    "id": "artifact-listing:kanana-2-v-decide-3b-2611-bf16",
+    "modelVersionId": "model:kanana-2-v-decide-3b-2611",
+    "baseModelRepository": "kakaocorp/kanana-2-v-decide-3b-2611",
+    "baseRevision": "1489062def4145ae3a0a9261fbac4f4d88a8c6d1",
+    "publisher": "Kakao",
+    "authority": "official",
+    "format": "safetensors",
+    "precision": "BF16",
+    "variant": "BF16",
+    "repositoryUrl": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611",
+    "filesUrl": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611/tree/1489062def4145ae3a0a9261fbac4f4d88a8c6d1",
+    "repositoryRevision": "1489062def4145ae3a0a9261fbac4f4d88a8c6d1",
+    "files": [
+      {
+        "path": "model.safetensors",
+        "url": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611/resolve/1489062def4145ae3a0a9261fbac4f4d88a8c6d1/model.safetensors",
+        "bytes": 7330945212
+      }
+    ],
+    "totalBytes": 7330945212,
+    "verifiedOn": "2026-11-08",
+    "evidenceIds": [
+      "evidence:tables1108-kanana-files"
+    ],
+    "runtimeEngines": [
+      "Transformers"
+    ]
+  },
+  {
+    "id": "artifact-listing:nemotron-3.5-parse-f32",
+    "modelVersionId": "model:nemotron-3.5-parse",
+    "baseModelRepository": "nvidia/Nemotron-3.5-Parse",
+    "baseRevision": "72ad4d71dd827135ee581502363e14748008900a",
+    "publisher": "NVIDIA",
+    "authority": "official",
+    "format": "safetensors",
+    "precision": "F32",
+    "variant": "F32",
+    "repositoryUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+    "filesUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/tree/72ad4d71dd827135ee581502363e14748008900a",
+    "repositoryRevision": "72ad4d71dd827135ee581502363e14748008900a",
+    "files": [
+      {
+        "path": "model.safetensors",
+        "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/resolve/72ad4d71dd827135ee581502363e14748008900a/model.safetensors",
+        "bytes": 2523266640
+      }
+    ],
+    "totalBytes": 2523266640,
+    "verifiedOn": "2026-11-08",
+    "evidenceIds": [
+      "evidence:tables1108-parse-files"
+    ],
+    "runtimeEngines": [
+      "Transformers",
+      "vLLM"
+    ]
+  },
+  {
+    "id": "artifact-listing:nemotron-3.5-parse-dflash2-bf16",
+    "modelVersionId": "model:nemotron-3.5-parse-dflash2",
+    "baseModelRepository": "nvidia/Nemotron-3.5-Parse",
+    "baseRevision": "72ad4d71dd827135ee581502363e14748008900a",
+    "publisher": "NVIDIA",
+    "authority": "official",
+    "format": "safetensors",
+    "precision": "BF16",
+    "variant": "BF16",
+    "repositoryUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+    "filesUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/tree/72ad4d71dd827135ee581502363e14748008900a",
+    "repositoryRevision": "72ad4d71dd827135ee581502363e14748008900a",
+    "files": [
+      {
+        "path": "dflash2/model.safetensors",
+        "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/resolve/72ad4d71dd827135ee581502363e14748008900a/dflash2/model.safetensors",
+        "bytes": 178657376
+      }
+    ],
+    "totalBytes": 178657376,
+    "verifiedOn": "2026-11-08",
+    "evidenceIds": [
+      "evidence:tables1108-parse-files"
+    ],
+    "runtimeEngines": [
+      "vLLM"
+    ]
   }
 ]

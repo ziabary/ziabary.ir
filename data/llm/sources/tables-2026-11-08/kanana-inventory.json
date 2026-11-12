@@ -1,0 +1,17 @@
+{
+  "id": "kakaocorp/kanana-2-v-decide-3b-2611",
+  "sha": "1489062def4145ae3a0a9261fbac4f4d88a8c6d1",
+  "safetensors": {
+    "parameters": {
+      "BF16": 3665430640
+    },
+    "total": 3665430640
+  },
+  "files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 7330945212,
+      "sha256": "528930fa261b31ed1f47eecbe7d08efd2e226207508124ae186e1a65dbbbda3b"
+    }
+  ]
+}

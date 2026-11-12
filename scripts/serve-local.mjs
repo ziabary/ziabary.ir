@@ -1,6 +1,7 @@
 import { createServer } from 'node:http';
 import { createReadStream } from 'node:fs';
 import { resolveShortLink } from '../src/lib/short-links.mjs';
+import { normalizedRequestTarget } from './normalize-request.mjs';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve(process.env.LOCAL_BUILD_DIR ?? 'build');
@@ -14,6 +15,8 @@ await stat(`${root}/index.html`);
 createServer(async (req, res) => {
   try {
     if (!['GET', 'HEAD'].includes(req.method)) { res.writeHead(405).end(); return; }
+    const normalized = normalizedRequestTarget(req.url ?? '/');
+    if (normalized) { res.writeHead(308, { Location: normalized }).end(); return; }
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
     let pathname;
     try { pathname = decodeURIComponent(url.pathname); } catch { res.writeHead(400).end(); return; }

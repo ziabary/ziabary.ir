@@ -5406,5 +5406,463 @@
     ],
     "documentedBackends": [],
     "isLatest": false
+  },
+  {
+    "id": "software-release:llama-cpp-b12171",
+    "productId": "software-product:llama-cpp",
+    "version": "b12171",
+    "releaseChannel": "prerelease",
+    "releasedOn": "2026-11-06",
+    "lastReviewedOn": "2026-11-08",
+    "roles": [
+      "inference-engine-library",
+      "api-server"
+    ],
+    "environments": [
+      "desktop",
+      "workstation",
+      "server"
+    ],
+    "operatingSystems": [],
+    "hardwareKinds": [
+      "CPU",
+      "GPU"
+    ],
+    "localOrCloud": [
+      "local"
+    ],
+    "offlineOperation": {
+      "state": "unknown"
+    },
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "MIT",
+        "evidenceIds": [
+          "evidence:tables1108-b12171-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://github.com/ggml-org/llama.cpp/blob/b12171/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-b12171-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-b12171-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-b12171-license"
+      ]
+    },
+    "maintenanceStatus": "active",
+    "targetScenario": {
+      "state": "known",
+      "value": "Vulkan؛ تخصیص حافظه بدون ReBAR",
+      "evidenceIds": [
+        "evidence:tables1108-b12171"
+      ]
+    },
+    "backendSummary": {
+      "state": "known",
+      "value": "ReBAR را تشخیص می‌دهد و در نبود آن از تخصیص BAR محدود صرف‌نظر می‌کند؛ وضعیت ReBAR در اطلاعات دستگاه نمایش داده می‌شود.",
+      "evidenceIds": [
+        "evidence:tables1108-b12171"
+      ]
+    },
+    "selectionCaveat": "مسیر Vulkan روی دستگاه بدون ReBAR.",
+    "evidenceIds": [
+      "evidence:tables1108-b12171",
+      "evidence:tables1108-b12171-license"
+    ],
+    "isLatest": false
+  },
+  {
+    "id": "software-release:llama-cpp-b12180",
+    "productId": "software-product:llama-cpp",
+    "version": "b12180",
+    "releaseChannel": "prerelease",
+    "releasedOn": "2026-11-06",
+    "lastReviewedOn": "2026-11-08",
+    "roles": [
+      "inference-engine-library",
+      "api-server"
+    ],
+    "environments": [
+      "desktop",
+      "workstation",
+      "server"
+    ],
+    "operatingSystems": [],
+    "hardwareKinds": [
+      "CPU",
+      "GPU"
+    ],
+    "localOrCloud": [
+      "local"
+    ],
+    "offlineOperation": {
+      "state": "unknown"
+    },
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "MIT",
+        "evidenceIds": [
+          "evidence:tables1108-b12180-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://github.com/ggml-org/llama.cpp/blob/b12180/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-b12180-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-b12180-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-b12180-license"
+      ]
+    },
+    "maintenanceStatus": "active",
+    "targetScenario": {
+      "state": "known",
+      "value": "Kimi-K3.1-Pro؛ مسیر متنی GGUF",
+      "evidenceIds": [
+        "evidence:tables1108-b12180"
+      ]
+    },
+    "backendSummary": {
+      "state": "known",
+      "value": "معماری kimi_k31 و تبدیل متن اضافه شده‌اند؛ expertهای MXFP4 حفظ و برج بینایی و mm_projector کنار گذاشته می‌شوند.",
+      "evidenceIds": [
+        "evidence:tables1108-b12180"
+      ]
+    },
+    "selectionCaveat": "cache ترکیبی MLA/KDA و indexer دارد؛ این مسیر ورودی تصویر را اجرا نمی‌کند.",
+    "evidenceIds": [
+      "evidence:tables1108-b12180",
+      "evidence:tables1108-b12180-license"
+    ],
+    "isLatest": false
+  },
+  {
+    "id": "software-release:llama-cpp-b12182",
+    "productId": "software-product:llama-cpp",
+    "version": "b12182",
+    "releaseChannel": "prerelease",
+    "releasedOn": "2026-11-07",
+    "lastReviewedOn": "2026-11-08",
+    "roles": [
+      "inference-engine-library",
+      "api-server"
+    ],
+    "environments": [
+      "desktop",
+      "workstation",
+      "server"
+    ],
+    "operatingSystems": [],
+    "hardwareKinds": [
+      "CPU",
+      "GPU"
+    ],
+    "localOrCloud": [
+      "local"
+    ],
+    "offlineOperation": {
+      "state": "unknown"
+    },
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "MIT",
+        "evidenceIds": [
+          "evidence:tables1108-b12182-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://github.com/ggml-org/llama.cpp/blob/b12182/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-b12182-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-b12182-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-b12182-license"
+      ]
+    },
+    "maintenanceStatus": "active",
+    "targetScenario": {
+      "state": "known",
+      "value": "DeepSeek-V4.1؛ رفع توقف tensor split",
+      "evidenceIds": [
+        "evidence:tables1108-b12182"
+      ]
+    },
+    "backendSummary": {
+      "state": "known",
+      "value": "حداقل ظرفیت compute-view در meta buffer به ۲۵۶ می‌رسد؛ توقف نخستین decode با KV مشترک و -sm tensor برطرف می‌شود.",
+      "evidenceIds": [
+        "evidence:tables1108-b12182"
+      ]
+    },
+    "selectionCaveat": "DeepSeek-V4.1، از جمله snapshot 1017؛ تغییر مربوط به metadata است.",
+    "evidenceIds": [
+      "evidence:tables1108-b12182",
+      "evidence:tables1108-b12182-license"
+    ],
+    "isLatest": false
+  },
+  {
+    "id": "software-release:llama-cpp-b12191",
+    "productId": "software-product:llama-cpp",
+    "version": "b12191",
+    "releaseChannel": "prerelease",
+    "releasedOn": "2026-11-07",
+    "lastReviewedOn": "2026-11-08",
+    "roles": [
+      "inference-engine-library",
+      "api-server"
+    ],
+    "environments": [
+      "desktop",
+      "workstation",
+      "server"
+    ],
+    "operatingSystems": [],
+    "hardwareKinds": [
+      "CPU",
+      "GPU"
+    ],
+    "localOrCloud": [
+      "local"
+    ],
+    "offlineOperation": {
+      "state": "unknown"
+    },
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "MIT",
+        "evidenceIds": [
+          "evidence:tables1108-b12191-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://github.com/ggml-org/llama.cpp/blob/b12191/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-b12191-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-b12191-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-b12191-license"
+      ]
+    },
+    "maintenanceStatus": "active",
+    "targetScenario": {
+      "state": "known",
+      "value": "اجرای expertهای MoE روی CPU در cache miss",
+      "evidenceIds": [
+        "evidence:tables1108-b12191"
+      ]
+    },
+    "backendSummary": {
+      "state": "known",
+      "value": "--moe-cache-cpu-share F سهم CPU از missهای پس از پرشدن کش را تعیین می‌کند؛ scripts/moe-cache-tune.py برای تنظیم کش و سهم CPU اضافه شده است.",
+      "evidenceIds": [
+        "evidence:tables1108-b12191"
+      ]
+    },
+    "selectionCaveat": "برای expertهای مستقر در RAM؛ نتیجه به RAM، اتصال GPU و حافظهٔ pinned وابسته است.",
+    "evidenceIds": [
+      "evidence:tables1108-b12191",
+      "evidence:tables1108-b12191-license"
+    ],
+    "isLatest": false
+  },
+  {
+    "id": "software-release:llama-cpp-b12192",
+    "productId": "software-product:llama-cpp",
+    "version": "b12192",
+    "releaseChannel": "prerelease",
+    "releasedOn": "2026-11-07",
+    "lastReviewedOn": "2026-11-08",
+    "roles": [
+      "inference-engine-library",
+      "api-server"
+    ],
+    "environments": [
+      "desktop",
+      "workstation",
+      "server"
+    ],
+    "operatingSystems": [],
+    "hardwareKinds": [
+      "CPU",
+      "GPU"
+    ],
+    "localOrCloud": [
+      "local"
+    ],
+    "offlineOperation": {
+      "state": "unknown"
+    },
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "MIT",
+        "evidenceIds": [
+          "evidence:tables1108-b12192-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://github.com/ggml-org/llama.cpp/blob/b12192/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-b12192-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-b12192-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-b12192-license"
+      ]
+    },
+    "maintenanceStatus": "active",
+    "targetScenario": {
+      "state": "known",
+      "value": "Mage-VL-Cowork در مسیر چندوجهی mtmd",
+      "evidenceIds": [
+        "evidence:tables1108-b12192"
+      ]
+    },
+    "backendSummary": {
+      "state": "known",
+      "value": "بارگذاری مدل و projector در مسیر mtmd اضافه شده است.",
+      "evidenceIds": [
+        "evidence:tables1108-b12192"
+      ]
+    },
+    "selectionCaveat": "در Metal، دو kernel ضرب ماتریس set_prec را رعایت نمی‌کنند و انحراف عددی گزارش شده است؛ پشتیبانی مدل شامل اجرای کامل عامل دسکتاپ نیست.",
+    "evidenceIds": [
+      "evidence:tables1108-b12192",
+      "evidence:tables1108-b12192-license"
+    ],
+    "isLatest": false
+  },
+  {
+    "id": "software-release:llama-cpp-b12195",
+    "productId": "software-product:llama-cpp",
+    "version": "b12195",
+    "releaseChannel": "prerelease",
+    "releasedOn": "2026-11-08",
+    "lastReviewedOn": "2026-11-08",
+    "roles": [
+      "inference-engine-library",
+      "api-server"
+    ],
+    "environments": [
+      "desktop",
+      "workstation",
+      "server"
+    ],
+    "operatingSystems": [],
+    "hardwareKinds": [
+      "CPU",
+      "GPU"
+    ],
+    "localOrCloud": [
+      "local"
+    ],
+    "offlineOperation": {
+      "state": "unknown"
+    },
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "MIT",
+        "evidenceIds": [
+          "evidence:tables1108-b12195-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://github.com/ggml-org/llama.cpp/blob/b12195/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-b12195-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-b12195-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-b12195-license"
+      ]
+    },
+    "maintenanceStatus": "active",
+    "targetScenario": {
+      "state": "known",
+      "value": "SYCL؛ کنترل حافظهٔ Arc B-series",
+      "evidenceIds": [
+        "evidence:tables1108-b12195"
+      ]
+    },
+    "backendSummary": {
+      "state": "known",
+      "value": "GGML_SYCL_BMG_VRAM_CHECK=1 پیش‌فرض است؛ بافر مدل یا split که در حافظهٔ آزاد BMG جا نشود رد می‌شود و بارگذاری با خطا پایان می‌یابد.",
+      "evidenceIds": [
+        "evidence:tables1108-b12195",
+        "evidence:tables1108-sycl-bmg"
+      ]
+    },
+    "selectionCaveat": "دامنهٔ کنترل Arc B-series در SYCL است؛ آن را برای جا دادن مدل بزرگ‌تر خاموش نکنید.",
+    "evidenceIds": [
+      "evidence:tables1108-b12195",
+      "evidence:tables1108-sycl-bmg",
+      "evidence:tables1108-b12195-license"
+    ],
+    "isLatest": false
   }
 ]

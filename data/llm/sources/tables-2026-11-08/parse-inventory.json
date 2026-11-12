@@ -1,0 +1,23 @@
+{
+  "id": "nvidia/Nemotron-3.5-Parse",
+  "sha": "72ad4d71dd827135ee581502363e14748008900a",
+  "safetensors": {
+    "parameters": {
+      "I64": 2,
+      "F32": 630800502
+    },
+    "total": 630800504
+  },
+  "files": [
+    {
+      "path": "dflash2/model.safetensors",
+      "bytes": 178657376,
+      "sha256": "4ee2cc5ebbe7d023af99197c09828b787086b91541f4de546e4418e65f3fe700"
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 2523266640,
+      "sha256": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9"
+    }
+  ]
+}

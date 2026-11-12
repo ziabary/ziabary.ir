@@ -7812,13 +7812,15 @@
         "instructions": "وزن snapshot 1017 و فایل‌های کمکی لازم را مطابق راهنمای ناشر آماده کنید؛ سپس تبدیل و صحت خروجی را روی backend موردنظر جداگانه بررسی کنید.",
         "conditions": [
           "پشتیبانی معماری deepseek41 در llama.cpp b11870 اضافه شده است؛ اجرای snapshot 1017 با artifact تبدیل‌شده و backend منتخب همچنان نیازمند اعتبارسنجی است.",
-          "تبدیل جدول Engram به BF16 بخشی از این مسیر است. فقط Safetensors رسمی در فهرست فایل‌ها ثبت شده است؛ فایل حاصل تبدیل کاربر است و GGUF رسمی یا اجرای مستقیم MXFP8 محسوب نمی‌شود. اندازهٔ artifact تبدیل‌شده و حافظهٔ اجرا اندازه‌گیری نشده‌اند."
+          "تبدیل جدول Engram به BF16 بخشی از این مسیر است. فقط Safetensors رسمی در فهرست فایل‌ها ثبت شده است؛ فایل حاصل تبدیل کاربر است و GGUF رسمی یا اجرای مستقیم MXFP8 محسوب نمی‌شود. اندازهٔ artifact تبدیل‌شده و حافظهٔ اجرا اندازه‌گیری نشده‌اند.",
+          "برای -sm tensor از b12182 یا جدیدتر استفاده کنید؛ حداقل ظرفیت view در meta buffer به ۲۵۶ افزایش یافته و توقف decode با KV مشترک رفع شده است."
         ],
         "softwareReleaseId": "software-release:llama-cpp-b11870",
         "compatibilityScope": "model",
         "evidenceIds": [
           "evidence:llama-b11870-release",
-          "evidence:llama-pr-31086"
+          "evidence:llama-pr-31086",
+          "evidence:tables1108-b12182"
         ]
       }
     ],
@@ -7826,7 +7828,8 @@
     "evidenceIds": [
       "evidence:catchup1017-deepseek1017",
       "evidence:llama-b11870-release",
-      "evidence:llama-pr-31086"
+      "evidence:llama-pr-31086",
+      "evidence:tables1108-b12182"
     ]
   },
   {
@@ -7865,7 +7868,8 @@
     "roleSummary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
     "distinguishingFeatures": [
       "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
-      "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+      "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود.",
+      "patch ‏4.1.1 مدل ASR و adapter تصمیم را به‌روز می‌کند؛ مدل پایهٔ 4.1 ثابت می‌ماند و سازگاری عقب‌رو حفظ می‌شود."
     ],
     "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
     "officialUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
@@ -7876,16 +7880,19 @@
         "href": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b/blob/0d1625d16df2d54cafb6bc5cb0650aec043f77d6/README.md",
         "conditions": [
           "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
-          "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+          "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود.",
+          "برای اجزای 4.1.1 از ASR و adapter تصمیم به‌روز در granitelib-core استفاده کنید؛ مخزن مدل پایه همان 4.1 است."
         ],
         "evidenceIds": [
-          "evidence:catchup1017-granite8"
+          "evidence:catchup1017-granite8",
+          "evidence:tables1108-granite411"
         ]
       }
     ],
     "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
     "evidenceIds": [
-      "evidence:catchup1017-granite8"
+      "evidence:catchup1017-granite8",
+      "evidence:tables1108-granite411"
     ]
   },
   {
@@ -7895,7 +7902,8 @@
     "roleSummary": "گفت‌وگو، تصمیم و تبدیل گفتار به متن",
     "distinguishingFeatures": [
       "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
-      "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+      "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود.",
+      "patch ‏4.1.1 مدل ASR و adapter تصمیم را به‌روز می‌کند؛ مدل پایهٔ 4.1 ثابت می‌ماند و سازگاری عقب‌رو حفظ می‌شود."
     ],
     "languageSummary": "پشتیبانی یا کیفیت فارسی برای این نسخه ارزیابی نشده است.",
     "officialUrl": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b",
@@ -7906,16 +7914,19 @@
         "href": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b/blob/70b75c6fd254db33418e490714769ef028d16166/README.md",
         "conditions": [
           "گفت‌وگو، تصمیم نوع‌دار و Guardian به مسیر adapter و encoder انتخابی وابسته‌اند؛ این مدل صرفاً classifier نیست.",
-          "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود."
+          "مسیر رسمی vLLM به افزونهٔ Granite Switch نیاز دارد. پشتیبانی تصمیم در llama.cpp b11700 پس از 0.7.0 افزوده شده؛ به 0.7.0 نسبت داده نمی‌شود.",
+          "برای اجزای 4.1.1 از ASR و adapter تصمیم به‌روز در granitelib-core استفاده کنید؛ مخزن مدل پایه همان 4.1 است."
         ],
         "evidenceIds": [
-          "evidence:catchup1017-granite30"
+          "evidence:catchup1017-granite30",
+          "evidence:tables1108-granite411"
         ]
       }
     ],
     "downloadSearchNote": "حجم فایل‌های وزن، حداقل حافظهٔ کل سرویس نیست؛ زمینه، هم‌زمانی و اجزای جانبی جداگانه بررسی شوند.",
     "evidenceIds": [
-      "evidence:catchup1017-granite30"
+      "evidence:catchup1017-granite30",
+      "evidence:tables1108-granite411"
     ]
   },
   {
@@ -8586,12 +8597,157 @@
         "evidenceIds": [
           "evidence:tables1103-mage-card"
         ]
+      },
+      {
+        "engine": "llama.cpp",
+        "label": "llama.cpp b12192+ · mtmd",
+        "href": "https://github.com/ggml-org/llama.cpp/releases/tag/b12192",
+        "conditions": [
+          "در Metal، دو kernel ضرب ماتریس set_prec را رعایت نمی‌کنند و انحراف عددی گزارش شده است؛ پشتیبانی مدل شامل اجرای کامل عامل دسکتاپ نیست."
+        ],
+        "softwareReleaseId": "software-release:llama-cpp-b12192",
+        "compatibilityScope": "model",
+        "evidenceIds": [
+          "evidence:tables1108-b12192",
+          "evidence:tables1108-mage-31819"
+        ]
       }
     ],
     "evidenceIds": [
       "evidence:tables1103-mage-card",
       "evidence:tables1103-mage-config",
-      "evidence:tables1103-mage-files"
+      "evidence:tables1103-mage-files",
+      "evidence:tables1108-b12192",
+      "evidence:tables1108-mage-31819"
+    ]
+  },
+  {
+    "id": "model-profile:bytedance-seed-cola2",
+    "modelVersionId": "model:bytedance-seed-cola2",
+    "introduction": "مدل پایهٔ پژوهشی با فشرده‌سازی معنایی پیوسته؛ VAE، مدل انتشار DiT و رمزگشای توکن را کنار هم قرار می‌دهد. وزن‌ها در هشت فایل F32 منتشر شده‌اند.",
+    "roleSummary": "تولید متن و پژوهش معماری‌های نهفتهٔ پیوسته",
+    "distinguishingFeatures": [],
+    "languageSummary": "ارزیابی‌های منتشرشده بر مجموعه‌های انگلیسی انجام شده‌اند.",
+    "officialUrl": "https://huggingface.co/ByteDance-Seed/Cola2",
+    "runGuides": [
+      {
+        "engine": "Transformers",
+        "label": "Transformers >=4.51,<5",
+        "href": "https://huggingface.co/ByteDance-Seed/Cola2",
+        "conditions": [
+          "اجرای مرجع با کد سفارشی Transformers و trust_remote_code؛ CUDA/BF16 توصیهٔ ناشر است. این checkpoint برای پیروی از دستور تنظیم نشده است."
+        ],
+        "instructions": "python -m pip install \"torch>=2.2\" \"transformers>=4.51,<5\" \"safetensors>=0.4\" accelerate",
+        "evidenceIds": [
+          "evidence:tables1108-cola-card"
+        ]
+      }
+    ],
+    "evidenceIds": [
+      "evidence:tables1108-cola-card",
+      "evidence:tables1108-cola-files"
+    ]
+  },
+  {
+    "id": "model-profile:kanana-2-v-decide-3b-2611",
+    "modelVersionId": "model:kanana-2-v-decide-3b-2611",
+    "introduction": "مدل تصمیم‌گیری Kakao با رمزگذار بینایی و برج زبانی؛ برای هر پرسش، توزیع احتمال گزینه‌ها را برمی‌گرداند. خروجی آن متن آزاد نیست.",
+    "roleSummary": "تصمیم نوع‌دار روی متن و تصویر",
+    "distinguishingFeatures": [],
+    "languageSummary": "زبان‌های اعلامی: کره‌ای و انگلیسی.",
+    "officialUrl": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611",
+    "runGuides": [
+      {
+        "engine": "Transformers",
+        "label": "Transformers · system_one",
+        "href": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611",
+        "conditions": [
+          "از متد system_one و پردازشگر همراه مخزن استفاده کنید؛ پرسش‌ها از نوع choice، noul یا score هستند. پیش از ورود تصویر، جهت EXIF و پس‌زمینهٔ شفاف را اصلاح کنید."
+        ],
+        "code": "model = AutoModel.from_pretrained(\"kakaocorp/kanana-2-v-decide-3b-2611\", trust_remote_code=True, dtype=torch.bfloat16).to(\"cuda\")",
+        "codeLanguage": "python",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      }
+    ],
+    "evidenceIds": [
+      "evidence:tables1108-kanana-card",
+      "evidence:tables1108-kanana-files"
+    ]
+  },
+  {
+    "id": "model-profile:nemotron-3.5-parse",
+    "modelVersionId": "model:nemotron-3.5-parse",
+    "introduction": "مدل ۰٫۶۳۱ میلیاردپارامتری NVIDIA برای استخراج متن، جدول، ترتیب خواندن و مختصات اجزای صفحه؛ تصویر RGB را به خروجی ساختاریافته تبدیل می‌کند.",
+    "roleSummary": "OCR و تبدیل صفحهٔ سند به دادهٔ ساختاریافته",
+    "distinguishingFeatures": [],
+    "languageSummary": "ارزیابی OCR ناشر ۱۶۳ ورودی زبان/خط را پوشش می‌دهد.",
+    "officialUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+    "runGuides": [
+      {
+        "engine": "Transformers",
+        "label": "Transformers · BF16",
+        "href": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+        "conditions": [
+          "PDF را ابتدا به صفحه‌های RGB تبدیل کنید؛ prompt کنترلی و پس‌پردازش مختصات همراه مدل را نگه دارید. Transformers از رمزگشایی عادی استفاده می‌کند."
+        ],
+        "evidenceIds": [
+          "evidence:tables1108-parse-card"
+        ]
+      },
+      {
+        "engine": "vLLM",
+        "label": "vLLM · native DFlash2",
+        "href": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/blob/72ad4d71dd827135ee581502363e14748008900a/docs/serving.md",
+        "conditions": [
+          "مسیر بومی Parse و DFlash2DraftModel در build توسعه‌ای vLLM 0.32.1rc1.dev505+g00b6c4c56 روی H200/BF16 آزموده شده است؛ افزونهٔ اختصاصی نمی‌خواهد. مسیر MTP یک‌توکنی محیط و افزونهٔ جدا دارد.",
+          "DFlash2 اختیاری است: ۸۹٫۳M پارامتر، زمینهٔ ۱۶٬۳۸۴ و حداکثر ۳۲ توکن پیشنهادی. وزن و cache آن حافظهٔ جدا می‌خواهند؛ نتایج سرعت تک‌گذر از کیفیت سه‌گذر جدا گزارش شده‌اند.",
+          "اجرای speculative می‌تواند خروجی greedy را به‌دلیل تفاوت شکل محاسبات attention تغییر دهد؛ نتایج سرعت، برابری دقیق خروجی parsing را نشان نمی‌دهند."
+        ],
+        "instructions": "hf download nvidia/Nemotron-3.5-Parse --local-dir ./parse35\nvllm serve ./parse35 --served-model-name nemotron-parse --trust-remote-code --speculative-config '{\"method\":\"dflash\",\"model\":\"./parse35/dflash2\",\"num_speculative_tokens\":32}'",
+        "evidenceIds": [
+          "evidence:tables1108-parse-dflash2",
+          "evidence:tables1108-parse-serving",
+          "evidence:tables1108-parse-dflash2-benchmark"
+        ]
+      }
+    ],
+    "evidenceIds": [
+      "evidence:tables1108-parse-card",
+      "evidence:tables1108-parse-files"
+    ]
+  },
+  {
+    "id": "model-profile:nemotron-3.5-parse-dflash2",
+    "modelVersionId": "model:nemotron-3.5-parse-dflash2",
+    "introduction": "مدل کمکی DFlash2 برای Nemotron 3.5 Parse؛ embedding و سر خروجی را از مدل اصلی می‌گیرد و مستقل اجرا نمی‌شود.",
+    "roleSummary": "مدل کمکی رمزگشایی speculative",
+    "distinguishingFeatures": [],
+    "languageSummary": "کیفیت خروجی تابع سامانهٔ Parse است.",
+    "officialUrl": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+    "runGuides": [
+      {
+        "engine": "vLLM",
+        "label": "vLLM · native DFlash2",
+        "href": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/blob/72ad4d71dd827135ee581502363e14748008900a/docs/serving.md",
+        "conditions": [
+          "مسیر بومی Parse و DFlash2DraftModel در build توسعه‌ای vLLM 0.32.1rc1.dev505+g00b6c4c56 روی H200/BF16 آزموده شده است؛ افزونهٔ اختصاصی نمی‌خواهد. مسیر MTP یک‌توکنی محیط و افزونهٔ جدا دارد.",
+          "DFlash2 اختیاری است: ۸۹٫۳M پارامتر، زمینهٔ ۱۶٬۳۸۴ و حداکثر ۳۲ توکن پیشنهادی. وزن و cache آن حافظهٔ جدا می‌خواهند؛ نتایج سرعت تک‌گذر از کیفیت سه‌گذر جدا گزارش شده‌اند.",
+          "اجرای speculative می‌تواند خروجی greedy را به‌دلیل تفاوت شکل محاسبات attention تغییر دهد؛ نتایج سرعت، برابری دقیق خروجی parsing را نشان نمی‌دهند."
+        ],
+        "instructions": "hf download nvidia/Nemotron-3.5-Parse --local-dir ./parse35\nvllm serve ./parse35 --served-model-name nemotron-parse --trust-remote-code --speculative-config '{\"method\":\"dflash\",\"model\":\"./parse35/dflash2\",\"num_speculative_tokens\":32}'",
+        "evidenceIds": [
+          "evidence:tables1108-parse-dflash2",
+          "evidence:tables1108-parse-serving",
+          "evidence:tables1108-parse-dflash2-benchmark"
+        ]
+      }
+    ],
+    "evidenceIds": [
+      "evidence:tables1108-parse-dflash2",
+      "evidence:tables1108-parse-dflash2-config",
+      "evidence:tables1108-parse-license"
     ]
   }
 ]

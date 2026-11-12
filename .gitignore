@@ -17,6 +17,8 @@ npm-debug.log*
 !/content/**/images/**/*.svg
 !/content/**/images/**/*.mmd
 !/content/**/images/**/*.csv
+# Generated lesson illustration; its formula is documented with the lesson review.
+/content/articles/fa/enterprise-ai-governance-problem-framing/images/fourier-reframing.svg
 /content/**/files/
 /static/images/articles/
 /static/images/guides/

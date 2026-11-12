@@ -1,4 +1,5 @@
 import { applyPermanentDraftPolicy, compareArticles, dateOnly, isPublished } from '../publication.mjs';
+import editorialCollections from '../../../content/guides/fa/collections.json';
 export type ArticleMeta = {
   id?: string;
   translationGroup?: string;
@@ -14,6 +15,8 @@ export type ArticleMeta = {
   updated?: string;
   faUpdated?: string;
   category: string;
+  series?: string;
+  seriesOrder?: number;
   topic?: string;
   format?: string;
   project?: string;
@@ -45,8 +48,16 @@ const metadata = import.meta.glob<ArticleMeta>('/content/articles/{fa,en,es}/*/i
   eager: true, import: 'default', query: '?article-metadata'
 });
 
+// Reuse the manually curated course order; dates stay calendar dates.
+const seriesPositions = new Map(editorialCollections.flatMap(collection => {
+  if (!collection.slug || !collection.items) return [];
+  return collection.items.map((item, index) => [`${collection.slug}:${item.id}`, index] as const);
+}));
+
 export const allArticleMetadata = Object.values(metadata).map(article => ({
   ...applyPermanentDraftPolicy(article), id: article.id ?? `${article.lang}:${article.slug}`, date: dateOnly(article.date),
+  ...(article.series && seriesPositions.has(`${article.series}:${article.slug}`)
+    ? { seriesOrder: seriesPositions.get(`${article.series}:${article.slug}`) } : {}),
   ...(article.updated ? { updated: dateOnly(article.updated) } : {})
 }));
 export const articles = allArticleMetadata.filter(article => isPublished(article)).sort(compareArticles);

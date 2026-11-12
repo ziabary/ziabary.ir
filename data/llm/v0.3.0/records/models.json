@@ -56116,5 +56116,406 @@
       "evidence:tables1103-mage-license"
     ],
     "releasedOn": "2026-10-30"
+  },
+  {
+    "id": "model:bytedance-seed-cola2",
+    "familyId": "family:cola2",
+    "exactName": "Cola2",
+    "publisher": "ByteDance Seed",
+    "version": "db876b905cf719b60da33c12a75021ac111f7a67",
+    "aliases": [
+      "ByteDance-Seed/Cola2"
+    ],
+    "stage": "base",
+    "architecture": "other",
+    "totalParametersB": {
+      "state": "known",
+      "value": 8.768019912,
+      "evidenceIds": [
+        "evidence:tables1108-cola-files"
+      ],
+      "unit": "billion-parameters"
+    },
+    "activeParametersB": {
+      "state": "not-applicable"
+    },
+    "kind": "generative",
+    "inputModalities": [
+      "text"
+    ],
+    "outputModalities": [
+      "text"
+    ],
+    "applications": [
+      "text-work"
+    ],
+    "languages": [],
+    "persianEvidenceStatus": "not-evaluated",
+    "declaredContext": {
+      "state": "unknown"
+    },
+    "evaluatedContext": {
+      "state": "not-measured"
+    },
+    "releaseStatus": "available",
+    "lastReviewedOn": "2026-11-08",
+    "accessMode": "public-weights",
+    "weightAccess": "public",
+    "license": {
+      "name": {
+        "state": "unknown"
+      },
+      "url": {
+        "state": "unknown"
+      },
+      "commercialUse": {
+        "state": "unknown"
+      },
+      "restrictions": [
+        "کد Apache-2.0 است؛ این مجوز شامل وزن‌ها و دارایی‌های tokenizer نمی‌شود."
+      ],
+      "evidenceIds": [
+        "evidence:tables1108-cola-card"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:tables1108-cola-card",
+      "evidence:tables1108-cola-files"
+    ],
+    "researchOnly": true,
+    "parameterCounts": [
+      {
+        "scope": "stored",
+        "label": "تعداد عناصر ذخیره‌شده در Safetensors",
+        "value": {
+          "state": "known",
+          "value": 8.768019912,
+          "evidenceIds": [
+            "evidence:tables1108-cola-files"
+          ],
+          "unit": "billion-parameters"
+        },
+        "approximate": false
+      }
+    ]
+  },
+  {
+    "id": "model:kanana-2-v-decide-3b-2611",
+    "familyId": "family:kanana",
+    "exactName": "Kanana-2-v-decide-3b-2611",
+    "publisher": "Kakao",
+    "version": "1489062def4145ae3a0a9261fbac4f4d88a8c6d1",
+    "aliases": [
+      "kakaocorp/kanana-2-v-decide-3b-2611"
+    ],
+    "stage": "other",
+    "architecture": "dense",
+    "totalParametersB": {
+      "state": "known",
+      "value": 3.66543064,
+      "evidenceIds": [
+        "evidence:tables1108-kanana-files"
+      ],
+      "unit": "billion-parameters"
+    },
+    "activeParametersB": {
+      "state": "not-applicable"
+    },
+    "kind": "decision",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "outputModalities": [
+      "structured-data"
+    ],
+    "applications": [
+      "structured-extraction",
+      "agents-tools"
+    ],
+    "languages": [
+      {
+        "language": "en",
+        "declared": {
+          "state": "known",
+          "value": true,
+          "evidenceIds": [
+            "evidence:tables1108-kanana-card"
+          ]
+        }
+      },
+      {
+        "language": "ko",
+        "declared": {
+          "state": "known",
+          "value": true,
+          "evidenceIds": [
+            "evidence:tables1108-kanana-card"
+          ]
+        }
+      }
+    ],
+    "persianEvidenceStatus": "not-evaluated",
+    "declaredContext": {
+      "state": "known",
+      "value": 20480,
+      "evidenceIds": [
+        "evidence:tables1108-kanana-card"
+      ],
+      "unit": "token"
+    },
+    "evaluatedContext": {
+      "state": "not-measured"
+    },
+    "releaseStatus": "available",
+    "lastReviewedOn": "2026-11-08",
+    "accessMode": "public-weights",
+    "weightAccess": "public",
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "Kanana Open License",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611/blob/1489062def4145ae3a0a9261fbac4f4d88a8c6d1/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "restricted",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-license"
+        ]
+      },
+      "restrictions": [
+        "عرضه به شخص ثالث از طریق API/ابر، SI یا on-premise و محصول on-device به مجوز تجاری جداگانهٔ Kakao نیاز دارد؛ خدمات خود شرکت خارج از موارد بند ۴٫۱ مشمول بند ۴٫۲ هستند.",
+        "شرایط بازتوزیع، انتساب و نشان Powered by Kanana نیز برقرارند."
+      ],
+      "evidenceIds": [
+        "evidence:tables1108-kanana-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:tables1108-kanana-card",
+      "evidence:tables1108-kanana-files"
+    ],
+    "specializedSpecs": {
+      "task": {
+        "state": "known",
+        "value": "تصمیم‌گیری چندوجهی؛ دسته‌بندی و امتیازدهی",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      },
+      "output": {
+        "state": "known",
+        "value": "گزینه، احتمال و امتیاز؛ بدون تولید متن",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      },
+      "embeddingDimensions": {
+        "state": "known",
+        "value": 2560,
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      },
+      "poolingOrScoring": {
+        "state": "known",
+        "value": "softmax شباهت کسینوسی حالت/پرسش و گزینه‌ها؛ احتمال به مجموعهٔ گزینه‌های ورودی وابسته است.",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      },
+      "features": {
+        "state": "known",
+        "value": "ورودی متن، JSON یا پیام؛ حداکثر ۱۰ تصویر و ۲۰٬۴۸۰ توکن؛ پرسش‌های choice، noul و score.",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      },
+      "languages": {
+        "state": "known",
+        "value": "کره‌ای و انگلیسی",
+        "evidenceIds": [
+          "evidence:tables1108-kanana-card"
+        ]
+      }
+    }
+  },
+  {
+    "id": "model:nemotron-3.5-parse",
+    "familyId": "family:nemotron",
+    "exactName": "Nemotron 3.5 Parse",
+    "publisher": "NVIDIA",
+    "version": "72ad4d71dd827135ee581502363e14748008900a",
+    "aliases": [
+      "nvidia/Nemotron-3.5-Parse"
+    ],
+    "stage": "instruct",
+    "architecture": "dense",
+    "totalParametersB": {
+      "state": "known",
+      "value": 0.630800496,
+      "evidenceIds": [
+        "evidence:tables1108-parse-card"
+      ],
+      "unit": "billion-parameters"
+    },
+    "activeParametersB": {
+      "state": "not-applicable"
+    },
+    "kind": "vision-language",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "outputModalities": [
+      "text"
+    ],
+    "applications": [
+      "document-vision",
+      "structured-extraction"
+    ],
+    "languages": [],
+    "persianEvidenceStatus": "not-evaluated",
+    "declaredContext": {
+      "state": "unknown"
+    },
+    "evaluatedContext": {
+      "state": "not-measured"
+    },
+    "releaseStatus": "available",
+    "lastReviewedOn": "2026-11-08",
+    "accessMode": "public-weights",
+    "weightAccess": "public",
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "OpenMDW-1.1",
+        "evidenceIds": [
+          "evidence:tables1108-parse-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/blob/72ad4d71dd827135ee581502363e14748008900a/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-parse-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-parse-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-parse-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:tables1108-parse-card",
+      "evidence:tables1108-parse-files"
+    ],
+    "releasedOn": "2026-10-17"
+  },
+  {
+    "id": "model:nemotron-3.5-parse-dflash2",
+    "familyId": "family:nemotron",
+    "exactName": "Nemotron 3.5 Parse · DFlash2",
+    "publisher": "NVIDIA",
+    "version": "72ad4d71dd827135ee581502363e14748008900a",
+    "aliases": [
+      "nvidia/Nemotron-3.5-Parse",
+      "nvidia/Nemotron-3.5-Parse/dflash2 (local subdirectory)"
+    ],
+    "stage": "other",
+    "architecture": "dense",
+    "totalParametersB": {
+      "state": "known",
+      "value": 0.0893,
+      "evidenceIds": [
+        "evidence:tables1108-parse-dflash2"
+      ],
+      "unit": "billion-parameters"
+    },
+    "activeParametersB": {
+      "state": "not-applicable"
+    },
+    "kind": "other",
+    "inputModalities": [
+      "text"
+    ],
+    "outputModalities": [
+      "text"
+    ],
+    "applications": [],
+    "languages": [],
+    "persianEvidenceStatus": "not-evaluated",
+    "declaredContext": {
+      "state": "known",
+      "value": 16384,
+      "evidenceIds": [
+        "evidence:tables1108-parse-dflash2-config"
+      ],
+      "unit": "token"
+    },
+    "evaluatedContext": {
+      "state": "not-measured"
+    },
+    "releaseStatus": "available",
+    "lastReviewedOn": "2026-11-08",
+    "accessMode": "public-weights",
+    "weightAccess": "public",
+    "license": {
+      "name": {
+        "state": "known",
+        "value": "OpenMDW-1.1",
+        "evidenceIds": [
+          "evidence:tables1108-parse-license"
+        ]
+      },
+      "url": {
+        "state": "known",
+        "value": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/blob/72ad4d71dd827135ee581502363e14748008900a/LICENSE",
+        "evidenceIds": [
+          "evidence:tables1108-parse-license"
+        ]
+      },
+      "commercialUse": {
+        "state": "known",
+        "value": "allowed",
+        "evidenceIds": [
+          "evidence:tables1108-parse-license"
+        ]
+      },
+      "restrictions": [],
+      "evidenceIds": [
+        "evidence:tables1108-parse-license"
+      ]
+    },
+    "evidenceIds": [
+      "evidence:tables1108-parse-dflash2",
+      "evidence:tables1108-parse-dflash2-config",
+      "evidence:tables1108-parse-license"
+    ],
+    "releasedOn": "2026-10-17",
+    "dependency": {
+      "kind": "speculative-drafter",
+      "targetModelId": "model:nemotron-3.5-parse",
+      "evidenceIds": [
+        "evidence:tables1108-parse-dflash2"
+      ]
+    }
   }
 ]

@@ -53,6 +53,24 @@ test('archive edge cases and same-date stable ordering', () => {
   assert.deepEqual([{slug:'b',date:'2026-01-01'},{slug:'a',date:'2026-01-01'}].sort(compareArticles).map(a=>a.slug), ['a','b']);
 });
 
+test('same-day series show later installments first and remain a contiguous archive group',()=>{
+ const day='2026-11-09';
+ const first={slug:'course-z-first',series:'course',seriesOrder:0,date:day};
+ const second={slug:'course-a-second',series:'course',seriesOrder:1,date:day};
+ const closing={slug:'course-m-supplement',series:'course',seriesOrder:16,date:day};
+ const ordinary={slug:'course-b-ordinary',date:day};
+ const later={slug:'later',date:'2026-11-10'};
+ const older={slug:'older',date:'2026-11-08'};
+ const updated={slug:'updated',date:'2026-10-01',updated:'2026-11-11'};
+ const expected=['updated','later','course-m-supplement','course-a-second','course-z-first','course-b-ordinary','older'];
+ const records=[ordinary,closing,older,first,later,updated,second];
+ for(let offset=0;offset<records.length;offset++){
+  const rotated=[...records.slice(offset),...records.slice(0,offset)];
+  assert.deepEqual(rotated.sort(compareArticles).map(record=>record.slug),expected);
+  assert.deepEqual(rotated.reverse().sort(compareArticles).map(record=>record.slug),expected);
+ }
+});
+
 test('equivalent Persian spellings find the same real published articles', () => {
   const records = JSON.parse(readFileSync('.build/public/search/fa.json', 'utf8'));
   for (const [a,b,expected] of [

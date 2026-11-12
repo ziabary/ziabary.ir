@@ -1,5 +1,6 @@
 <script lang="ts">
   import '$lib/math.css';
+  import '$lib/lesson.css';
   import LazyArticleContent from './LazyArticleContent.svelte';
   import ContactReveal from './ContactReveal.svelte';
   import { revealChapterFragment, type ChapterHandle } from '$lib/chapter-loading';
@@ -8,7 +9,8 @@
   import { onMount, tick } from 'svelte';
   import type { Component } from 'svelte';
   import type { GuideCollection } from '$lib/guides';
-  import { getArticle } from '$lib/content';
+  import { allArticleMetadata, getArticle } from '$lib/content';
+  import { draftReadingHref } from '$lib/draft-preview.mjs';
   import { headingSections, readingPosition, keepCurrentVisible } from '$lib/contents-navigation';
   import PageHero from './PageHero.svelte';
   import PageSeo from './PageSeo.svelte';
@@ -21,6 +23,9 @@
   export let collection: GuideCollection;
   export let chapters: Record<string, Component<{ headingPrefix?: string }>> = {};
   export let locale: 'fa' | 'en' | 'es' = 'fa';
+  export let preview = false;
+  const articleMetadata = (id: string) => getArticle(id, locale) ?? (preview ? allArticleMetadata.find(article => article.slug === id && article.lang === locale && article.draft) : undefined);
+  const readingHref = (href: string | undefined) => href ? draftReadingHref(href, preview ? allArticleMetadata.filter(article => article.draft && article.lang === locale).map(article => article.slug) : [], preview) : undefined;
   let main: HTMLElement;
   let continuous = false;
   let opened: Record<string, boolean> = {};
@@ -32,16 +37,30 @@
     en: { contents: 'In this collection', back: 'Explore other technical guides', planned: 'Planned', empty: 'No articles have been published in this collection yet.', read: 'Read chapter', standalone: 'Open the standalone article', continuous: 'Read chapters continuously', collapse: 'Collapse chapter texts', about: 'About this collection' },
     es: { contents: 'En esta colección', back: 'Ver otras guías técnicas', planned: 'En planificación', empty: 'Todavía no se han publicado artículos en esta colección.', read: 'Leer capítulo', standalone: 'Abrir el artículo independiente', continuous: 'Leer los capítulos de forma continua', collapse: 'Contraer los capítulos', about: 'Acerca de esta colección' }
   };
-  $: copy = copies[locale];
+  $: copy = locale === 'fa' && collection.slug === 'enterprise-ai-governance'
+    ? { ...copies.fa, contents: 'درس‌های این دوره', empty: 'هنوز درسی در این دوره منتشر نشده است.', read: 'مطالعهٔ درس', standalone: 'بازکردن صفحهٔ مستقل درس', continuous: 'مطالعهٔ پیوستهٔ درس‌ها', collapse: 'جمع‌کردن متن درس‌ها', about: 'دربارهٔ این دوره' }
+    : copies[locale];
   $: base = locale === 'fa' ? '' : `/${locale}`;
+  $: supplement = locale === 'fa'
+    ? { label: 'مکمل و پایان‌بندی', short: 'مکمل', read: 'مطالعهٔ مکمل' }
+    : locale === 'en'
+      ? { label: 'Closing supplement', short: 'Supplement', read: 'Read supplement' }
+      : { label: 'Complemento y cierre', short: 'Complemento', read: 'Leer complemento' };
   $: planned = collection.status === 'planned';
   $: hasTools = collection.items.some(item => item.kind !== 'article');
   $: gpuIntro = collection.slug === 'gpu-selection' && locale === 'fa' ? [
     { id: 'gpu-quick-selection', title: 'راهنمای مطالعه' }
   ] : [];
-  $: targetIds = [...gpuIntro.map(item => item.id), ...collection.items.flatMap(item => [item.id, ...(getArticle(item.id)?.headings ?? []).map(heading => `${item.id}--${heading.id}`)])];
+  $: targetIds = [...gpuIntro.map(item => item.id), ...collection.items.flatMap(item => [item.id, ...(articleMetadata(item.id)?.headings ?? []).map(heading => `${item.id}--${heading.id}`)])];
   $: active = collection.items.find(item => activeTarget === item.id || activeTarget.startsWith(`${item.id}--`))?.id ?? '';
-  $: legacyOwners = new Map(collection.items.flatMap(item => (getArticle(item.id)?.legacyAnchors ?? []).map(anchor => [anchor, item.id] as const)).reverse());
+  $: legacyOwners = new Map(collection.items.flatMap(item => (articleMetadata(item.id)?.legacyAnchors ?? []).map(anchor => [anchor, item.id] as const)).reverse());
+
+  function contentsLessonLabel(item: GuideCollection['items'][number]) {
+    if (item.role === 'supplement') return supplement.label;
+    return locale === 'fa' && collection.slug === 'enterprise-ai-governance'
+      ? item.subtitle?.match(/^(درس\s+[^؛:]+)[؛:]/)?.[1]
+      : undefined;
+  }
 
   function toggleContinuous() {
     continuous = !continuous;
@@ -67,13 +86,14 @@
     const fromHash = () => {
       try { revealFragment(decodeURIComponent(location.hash.slice(1))); } catch { /* Ignore malformed fragments. */ }
     };
+    if (new URLSearchParams(location.search).get('view') === 'continuous') toggleContinuous();
     fromHash(); window.addEventListener('hashchange', fromHash);
     return () => window.removeEventListener('hashchange', fromHash);
   });
 </script>
 
 <PageSeo title={`${collection.title} | ${locale === 'fa' ? 'مهران ضیابری' : 'Mehran Ziabary'}`} description={collection.subtitle}
-  path={`${base}/guides/${collection.slug}/`} image={collection.image} imageAlt={collection.imageAlt} {locale} noindex={planned} />
+  path={`${base}/guides/${collection.slug}/`} image={collection.image} imageAlt={collection.imageAlt} {locale} noindex={planned || preview} />
 <main class="guide-page" class:gpu-collection={collection.slug === 'gpu-selection'} dir={locale === 'fa' ? 'rtl' : 'ltr'} bind:this={main} use:readingPosition={{ ids: targetIds, onChange: followHeading }}>
   {#if gpuIntro.length}
     <GuideOpening title={collection.title} lead={collection.subtitle} eyebrow={collection.eyebrow} image={collection.image} imageAlt={collection.imageAlt} introId="gpu-in-practice">
@@ -85,13 +105,19 @@
   {:else}
     <PageHero eyebrow={planned ? copy.planned : collection.eyebrow} title={collection.title} lead={collection.subtitle} />
   {/if}
+  {#if collection.tag || collection.source}
+    <div class="wrap guide-series-meta">
+      {#if collection.tag}<span>#{collection.tag.replace(/\s+/g, '_')}</span>{/if}
+      {#if collection.source}<a href={collection.source.href}>{collection.source.title} ←</a>{/if}
+    </div>
+  {/if}
   {#if planned}
     <section class="wrap planned-intro"><p>{collection.intro}</p><p>{copy.empty}</p><a class="button ghost" href={`${base}/guides/`}>{copy.back} {locale === 'fa' ? '←' : '→'}</a></section>
   {:else}
     <div class="wrap guide-layout" class:has-tools={hasTools}>
       <aside class="guide-navigation" data-reading-navigation>
-        <details class="guide-desktop-toc" open><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
-        <details class="guide-mobile-toc"><summary>{copy.contents}</summary><nav aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
+        <details class="guide-desktop-toc" open><summary>{copy.contents}</summary><nav class="themed-scroll" aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
+        <details class="guide-mobile-toc"><summary>{copy.contents}</summary><nav class="themed-scroll" aria-label={copy.contents} use:keepCurrentVisible={activeTarget}>{@render contents()}</nav></details>
         <a class="guide-back" href={`${base}/guides/`}>{copy.back}</a>
       </aside>
       <div class="guide-main">
@@ -109,23 +135,24 @@
             {#if item.id === 'gpu-comparison-table'}<GpuComparison {locale} />
             {:else if item.id === 'server-comparison-table'}<ServerComparison {locale} />
             {:else}
-              {@const article = getArticle(item.id)}
+              {@const article = articleMetadata(item.id)}
               {@const Content = chapters[item.id]}
-              <header><small>{new Intl.NumberFormat(locale).format(index + 1)}</small><h2><a href={item.href} data-sveltekit-preload-data={collection.slug === 'gpu-selection' ? 'off' : undefined}>{item.title}</a></h2></header>
+              {@const inlineLesson = collection.slug === 'enterprise-ai-governance' && Boolean(Content)}
+              <header><small>{item.role === 'supplement' ? supplement.short : new Intl.NumberFormat(locale).format(index + 1)}</small><h2><a href={inlineLesson ? `#${item.id}` : readingHref(item.href)} onclick={inlineLesson ? () => revealFragment(item.id) : undefined} data-sveltekit-preload-data={collection.slug === 'gpu-selection' ? 'off' : undefined}>{item.title}</a></h2></header>
               <p class="chapter-intro">{item.subtitle}</p>
               {#each article?.legacyAnchors ?? [] as anchor}{#if legacyOwners.get(anchor) === item.id}<span id={anchor} class="legacy-anchor"></span>{/if}{/each}
               {#if Content || (collection.slug === 'gpu-selection' && article)}
                 <details class="chapter-details" ontoggle={event => opened = {...opened, [item.id]:event.currentTarget.open}}>
-                  <summary>{copy.read}: {item.title}</summary>
+                  <summary>{item.role === 'supplement' ? supplement.read : copy.read}: {item.title}</summary>
                   {#if collection.slug === 'gpu-selection' && article}
                     <div class="lazy-chapter"><LazyArticleContent {article} {locale} open={opened[item.id] ?? false} bind:this={handles[item.id]} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={item.href ?? `${base}/articles/${item.id}/`} /></div>
                   {:else}
                   {#if article?.cover}<img class="chapter-cover" {...imageAttributes(article.cover, '(min-width: 1200px) 740px, calc(100vw - 32px)')} alt="" loading="lazy" />{/if}
-                  <div class="prose guide-prose"><Content headingPrefix={`${item.id}--`} /><ReadingShare cover={article?.cover} title={item.title} excerpt={article?.excerpt ?? item.subtitle} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={item.href ?? `${base}/articles/${item.id}/`} /></div>
+                  <div class="prose guide-prose" class:course-lesson={article?.series === 'enterprise-ai-governance'}><Content headingPrefix={`${item.id}--`} /><ReadingShare cover={article?.cover} title={item.title} excerpt={article?.excerpt ?? item.subtitle} {locale} href={`${base}/guides/${collection.slug}/#${item.id}`} standaloneHref={readingHref(item.href) ?? `${base}/articles/${item.id}/`} /></div>
                   {/if}
                 </details>
               {/if}
-              {#if !Content && collection.slug !== 'gpu-selection'}<a class="standalone-link" href={item.href} target="_blank" rel="noopener noreferrer">{copy.standalone} ↗</a>{/if}
+              {#if !Content && collection.slug !== 'gpu-selection'}<a class="standalone-link" href={readingHref(item.href)} target="_blank" rel="noopener noreferrer">{copy.standalone} ↗</a>{/if}
             {/if}
           </article>
         {/each}
@@ -137,9 +164,10 @@
 
 {#snippet contents()}
   <ol>{#each gpuIntro as item}<li><a href={`#${item.id}`} aria-current={activeTarget === item.id ? 'location' : undefined}>{item.title}</a></li>{/each}{#each collection.items as item}
-    {@const sections = headingSections(getArticle(item.id)?.headings ?? [])}
-    <li><a href={`#${item.id}`} class:active-parent={active === item.id} aria-current={activeTarget === item.id ? 'location' : undefined} onclick={() => revealFragment(item.id)}>{item.title}</a>
-    {#if active === item.id}<ul>{#each sections as heading}
+    {@const sections = headingSections(articleMetadata(item.id)?.headings ?? [])}
+    {@const lessonLabel = contentsLessonLabel(item)}
+    <li><a href={`#${item.id}`} class:active-parent={active === item.id} aria-current={activeTarget === item.id ? 'location' : undefined} onclick={() => revealFragment(item.id)}>{#if lessonLabel}<strong>{lessonLabel}:</strong>{' '}{/if}{item.title}</a>
+    {#if active === item.id && opened[item.id]}<ul>{#each sections as heading}
       {@const id = `${item.id}--${heading.id}`}
       {@const inSection = activeTarget === id || heading.children.some(child => activeTarget === `${item.id}--${child.id}`)}
       <li><a href={`#${id}`} class:active-parent={inSection} aria-current={activeTarget === id ? 'location' : undefined} onclick={() => revealFragment(id)}>{heading.title}</a>
@@ -153,6 +181,8 @@
 {/snippet}
 
 <style>
+  .guide-series-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-bottom: 24px; color: var(--muted); font-size: 13px; }
+  .guide-series-meta a { color: var(--link-ink); }
   .lazy-chapter{max-width:740px;margin:0 auto;padding-block:20px}.model-path{line-height:1.9;font-size:15px}.model-path a{color:var(--link-ink);text-decoration:underline;text-underline-offset:3px}
   .planned-intro { max-width: 740px; padding-block: 0 64px; } .planned-intro p { line-height: 2; color: var(--muted); }
   .guide-layout { display: grid; grid-template-columns: minmax(0, 740px) 240px; gap: 32px; max-width: 1012px; align-items: start; padding-bottom: 60px; }
@@ -162,6 +192,7 @@
   nav { display: block; position: static; inset: auto; padding: 0; margin: 0; background: transparent; border: 0; max-height: calc(100dvh - 220px); overflow: auto; }
   nav ol, nav ul { list-style: none; padding: 0; margin: 0; } nav ul { padding-inline-start: 12px; }
   nav a { display: block; font-size: 12px; line-height: 1.8; white-space: normal; padding: 8px 12px; border-inline-start: 2px solid var(--line); color: var(--muted); }
+  nav strong { font-weight: 700; }
   nav a.active-parent, nav a[aria-current] { color: var(--link-ink); border-color: var(--link-ink); font-weight: 700; }
   nav a[aria-current] { background: var(--soft); }
   summary { padding-block: 12px; cursor: pointer; font-weight: 700; } .guide-mobile-toc { display: none; }

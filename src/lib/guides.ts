@@ -1,5 +1,5 @@
 import editorialGuideCollectionsContent from '../../content/guides/fa/collections.json';
-import { getArticle } from '$lib/content';
+import { allArticleMetadata, getArticle } from '$lib/content';
 import { collectionState } from './publication.mjs';
 import { llmGuideCollection } from './llm/collection';
 
@@ -10,6 +10,7 @@ export type GuideItem = {
   title: string;
   subtitle: string;
   kind: GuideItemKind;
+  role?: 'supplement';
   href?: string;
 };
 
@@ -24,6 +25,8 @@ export type GuideCollection = {
   image: string;
   imageAlt: string;
   intro: string;
+  tag?: string;
+  source?: { title: string; href: string };
   items: GuideItem[];
   translations?: Partial<Record<'en' | 'es', {
     title: string;
@@ -52,6 +55,14 @@ export const guideCollections: GuideCollection[] = editorialGuideCollections.map
 
 export function getGuideCollection(slug: string) {
   return guideCollections.find((collection) => collection.slug === slug);
+}
+
+/** Explicit browser previews retain editorial chapter order without publishing drafts. */
+export function getGuidePreviewCollection(slug: string) {
+  const collection = editorialGuideCollections.find(collection => collection.slug === slug);
+  if (!collection) return undefined;
+  const items = collection.items.filter(item => item.kind !== 'article' || getArticle(item.id) || allArticleMetadata.some(article => article.slug === item.id && article.lang === 'fa' && article.draft));
+  return { ...collection, items, status: items.length ? 'published' as const : 'planned' as const };
 }
 
 export function articleCount(collection: GuideCollection) {

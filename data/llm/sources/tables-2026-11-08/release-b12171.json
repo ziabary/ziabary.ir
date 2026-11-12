@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12171",
+  "tag": "b12171",
+  "published_at": "2026-11-06T14:19:29Z",
+  "prerelease": true,
+  "target_commitish": "80088fa60b439dd285206b9b665465a8337c59b6",
+  "body": "<details open>\n\nvulkan: detect ReBAR support, avoid BAR allocations if unavailable (#31658)\n\n</details>"
+}

@@ -1,0 +1,41 @@
+{
+  "reviewedOn": "2026-11-08",
+  "modelRevisions": {
+    "Cola2": "db876b905cf719b60da33c12a75021ac111f7a67",
+    "Kanana": "1489062def4145ae3a0a9261fbac4f4d88a8c6d1",
+    "Parse": "72ad4d71dd827135ee581502363e14748008900a"
+  },
+  "hardwareChanges": [],
+  "unchanged": [
+    {
+      "subject": "OCI Rubin",
+      "reason": "NVL72 general availability and planned HGX Rubin NVL8 already match the October 27 NVIDIA announcement.",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Oracle-Expand-NVIDIA-Vera-Rubin-to-Multi-Gigawatt-Scale-and-Bring-NVIDIA-Vera-CPU-to-Oracle-Cloud-Infrastructure/default.aspx"
+    },
+    {
+      "subject": "Nemotron Bolt",
+      "reason": "Ordering-only code change supplies no new weight, memory or capability specification."
+    }
+  ],
+  "runtimeBenchmarked": false,
+  "validation": {
+    "llmSchemaAndLocales": "passed",
+    "regressionTests": {
+      "passed": 397,
+      "failed": 0
+    },
+    "svelteCheck": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "productionBuild": "passed",
+    "sitemapUrls": 275,
+    "shortLinks": 332,
+    "staticSourcesUnchanged": 148,
+    "prerenderedModelPresence": [
+      "fa",
+      "en",
+      "es"
+    ]
+  }
+}

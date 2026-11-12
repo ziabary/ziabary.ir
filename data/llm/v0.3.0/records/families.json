@@ -348,5 +348,21 @@
     "evidenceIds": [
       "evidence:tables1103-mage-card"
     ]
+  },
+  {
+    "id": "family:cola2",
+    "name": "Cola2",
+    "publisher": "ByteDance Seed",
+    "evidenceIds": [
+      "evidence:tables1108-cola-card"
+    ]
+  },
+  {
+    "id": "family:kanana",
+    "name": "Kanana",
+    "publisher": "Kakao",
+    "evidenceIds": [
+      "evidence:tables1108-kanana-card"
+    ]
   }
 ]

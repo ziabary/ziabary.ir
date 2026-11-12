@@ -1,4 +1,4 @@
-import { randomBytes, createHash, createHmac, createCipheriv, createDecipheriv, timingSafeEqual, scrypt } from 'node:crypto';
+import { randomBytes, createHash, createHmac, createCipheriv, createDecipheriv, timingSafeEqual, scrypt, scryptSync } from 'node:crypto';
 import { promisify } from 'node:util';
 import { BlockList, isIP } from 'node:net';
 
@@ -16,24 +16,9 @@ export async function passwordHash(password, salt = randomBytes(16).toString('he
 export async function checkPassword(password, stored) {
   return equal(await passwordHash(password, stored.split('$')[1]), stored);
 }
-export function base32(bytes) {
-  let bits = 0, value = 0, result = '';
-  for (const byte of bytes) { value = (value << 8) | byte; bits += 8; while (bits >= 5) { result += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'[(value >>> (bits - 5)) & 31]; bits -= 5; } }
-  if (bits) result += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'[(value << (5 - bits)) & 31];
-  return result;
-}
-export function totp(secret, counter = Math.floor(Date.now() / 30000), digits = 6) {
-  let bits = 0, value = 0; const bytes = [];
-  for (const char of secret) { const n = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'.indexOf(char); if (n < 0) throw Error('Invalid TOTP secret'); value = (value << 5) | n; bits += 5; if (bits >= 8) { bytes.push((value >>> (bits - 8)) & 255); bits -= 8; } }
-  const buffer = Buffer.alloc(8); buffer.writeBigUInt64BE(BigInt(counter));
-  const hash = createHmac('sha1', Buffer.from(bytes)).update(buffer).digest(), offset = hash[hash.length - 1] & 15;
-  return String((hash.readUInt32BE(offset) & 0x7fffffff) % 10 ** digits).padStart(digits, '0');
-}
-export function verifyTotp(secret, code, now, previous = -1) {
-  if (!/^\d{6}$/.test(code)) return null;
-  const current = Math.floor(now / 30000);
-  for (const counter of [current - 1, current, current + 1]) if (counter > previous && equal(totp(secret, counter), code)) return counter;
-  return null;
+export function bootstrapPasswordHash(password, identityKey) {
+  const salt=mac(identityKey,'community-admin-password-v2').slice(0,32);
+  return `scrypt$${salt}$${scryptSync(password,salt,64,{N:32768,r:8,p:1,maxmem:64*1024*1024}).toString('hex')}`;
 }
 export function encrypt(key, text) {
   const iv = randomBytes(12), cipher = createCipheriv('aes-256-gcm', key, iv);

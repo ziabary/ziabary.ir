@@ -20,13 +20,13 @@
 </script>
 
 <article class:featured class="article-card">
-  <div class:has-image={Boolean(article.cover)} class="card-art">
+  <a href={articleHref} aria-label={article.title} class:has-image={Boolean(article.cover)} class="card-art">
     {#if article.cover}
       <img {...imageAttributes(article.cover, '(min-width: 980px) 400px, calc(100vw - 32px)')} style:object-position={article.coverPosition ?? 'center top'} alt="" loading="lazy" />
     {/if}
     <span>{article.category}</span>
     {#if !article.cover}<i>{article.slug.includes('ai') ? 'AI' : '⌁'}</i>{/if}
-  </div>
+  </a>
   <div class="card-body">
     <p>
       {#if article.draft}<strong>{draftLabel}</strong>{:else}{labels.published}{/if} {locale === 'fa' ? article.faDate : localizedDate(article.date)}

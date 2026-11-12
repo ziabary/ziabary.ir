@@ -8257,5 +8257,56 @@
       "evidence:tables1103-mage-config",
       "evidence:tables1103-mage-files"
     ]
+  },
+  {
+    "id": "model-use:bytedance-seed-cola2:text-work",
+    "modelVersionId": "model:bytedance-seed-cola2",
+    "applicationId": "text-work",
+    "role": "text-generation",
+    "summary": "تولید متن و پژوهش معماری‌های نهفتهٔ پیوسته",
+    "description": "مدل پایهٔ پژوهشی با فشرده‌سازی معنایی پیوسته؛ VAE، مدل انتشار DiT و رمزگشای توکن را کنار هم قرار می‌دهد. وزن‌ها در هشت فایل F32 منتشر شده‌اند.",
+    "distinguishingFeature": "اجرای مرجع با کد سفارشی Transformers و trust_remote_code؛ CUDA/BF16 توصیهٔ ناشر است. این checkpoint برای پیروی از دستور تنظیم نشده است.",
+    "conditions": [
+      "اجرای مرجع با کد سفارشی Transformers و trust_remote_code؛ CUDA/BF16 توصیهٔ ناشر است. این checkpoint برای پیروی از دستور تنظیم نشده است."
+    ],
+    "basis": "publisher-summary",
+    "evidenceIds": [
+      "evidence:tables1108-cola-card",
+      "evidence:tables1108-cola-files"
+    ]
+  },
+  {
+    "id": "model-use:kanana-2-v-decide-3b-2611:structured-extraction",
+    "modelVersionId": "model:kanana-2-v-decide-3b-2611",
+    "applicationId": "structured-extraction",
+    "role": "structured-output",
+    "summary": "تصمیم نوع‌دار روی متن و تصویر",
+    "description": "مدل تصمیم‌گیری Kakao با رمزگذار بینایی و برج زبانی؛ برای هر پرسش، توزیع احتمال گزینه‌ها را برمی‌گرداند. خروجی آن متن آزاد نیست.",
+    "distinguishingFeature": "از متد system_one و پردازشگر همراه مخزن استفاده کنید؛ پرسش‌ها از نوع choice، noul یا score هستند. پیش از ورود تصویر، جهت EXIF و پس‌زمینهٔ شفاف را اصلاح کنید.",
+    "conditions": [
+      "از متد system_one و پردازشگر همراه مخزن استفاده کنید؛ پرسش‌ها از نوع choice، noul یا score هستند. پیش از ورود تصویر، جهت EXIF و پس‌زمینهٔ شفاف را اصلاح کنید."
+    ],
+    "basis": "publisher-summary",
+    "evidenceIds": [
+      "evidence:tables1108-kanana-card",
+      "evidence:tables1108-kanana-files"
+    ]
+  },
+  {
+    "id": "model-use:nemotron-3.5-parse:document-vision",
+    "modelVersionId": "model:nemotron-3.5-parse",
+    "applicationId": "document-vision",
+    "role": "vision",
+    "summary": "OCR و تبدیل صفحهٔ سند به دادهٔ ساختاریافته",
+    "description": "مدل ۰٫۶۳۱ میلیاردپارامتری NVIDIA برای استخراج متن، جدول، ترتیب خواندن و مختصات اجزای صفحه؛ تصویر RGB را به خروجی ساختاریافته تبدیل می‌کند.",
+    "distinguishingFeature": "PDF را ابتدا به صفحه‌های RGB تبدیل کنید؛ prompt کنترلی و پس‌پردازش مختصات همراه مدل را نگه دارید. Transformers از رمزگشایی عادی استفاده می‌کند.",
+    "conditions": [
+      "PDF را ابتدا به صفحه‌های RGB تبدیل کنید؛ prompt کنترلی و پس‌پردازش مختصات همراه مدل را نگه دارید. Transformers از رمزگشایی عادی استفاده می‌کند."
+    ],
+    "basis": "publisher-summary",
+    "evidenceIds": [
+      "evidence:tables1108-parse-card",
+      "evidence:tables1108-parse-files"
+    ]
   }
 ]
